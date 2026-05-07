@@ -1,19 +1,47 @@
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
 import { withPayload } from '@payloadcms/next/withPayload'
+import createNextIntlPlugin from 'next-intl/plugin'
+
+import { redirects } from './redirects'
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+
+const projectRoot = path.dirname(fileURLToPath(import.meta.url))
+
+const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : process.env.__NEXT_PRIVATE_ORIGIN || 'http://localhost:3000'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Windows Turbopack + Payload UI SCSS (see Next.js issue #86431)
+  sassOptions: {
+    loadPaths: ['./node_modules/@payloadcms/ui/dist/scss/'],
+  },
+  turbopack: {
+    root: projectRoot,
+  },
   images: {
     localPatterns: [
       {
         pathname: '/api/media/file/**',
       },
     ],
+    qualities: [100],
+    remotePatterns: [
+      ...[NEXT_PUBLIC_SERVER_URL].map((item) => {
+        const url = new URL(item)
+        return {
+          hostname: url.hostname,
+          protocol: url.protocol.replace(':', '') as 'http' | 'https',
+        }
+      }),
+    ],
   },
-  // Packages with Cloudflare Workers (workerd) specific code
-  // Read more: https://opennext.js.org/cloudflare/howtos/workerd
+  // https://opennext.js.org/cloudflare/howtos/workerd
   serverExternalPackages: ['jose', 'pg-cloudflare'],
-
-  // Your Next.js config here
   webpack: (webpackConfig: any) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],
@@ -23,6 +51,8 @@ const nextConfig = {
 
     return webpackConfig
   },
+  reactStrictMode: true,
+  redirects,
 }
 
-export default withPayload(nextConfig, { devBundleServerPackages: false })
+export default withNextIntl(withPayload(nextConfig, { devBundleServerPackages: false }))

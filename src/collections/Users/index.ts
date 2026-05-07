@@ -1,0 +1,100 @@
+import type { CollectionConfig } from 'payload'
+import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
+
+import { isSuperAdmin } from '@/access/isSuperAdmin'
+
+import { createAccess } from './access/create'
+import { readAccess } from './access/read'
+import { updateAndDeleteAccess } from './access/updateAndDelete'
+import { externalUsersLogin } from './endpoints/externalUsersLogin'
+import { ensureUniqueUsername } from './hooks/ensureUniqueUsername'
+import { setCookieBasedOnDomain } from './hooks/setCookieBasedOnDomain'
+
+const defaultTenantArrayField = tenantsArrayField({
+  tenantsArrayFieldName: 'tenants',
+  tenantsArrayTenantFieldName: 'tenant',
+  tenantsCollectionSlug: 'tenants',
+  arrayFieldAccess: {},
+  tenantFieldAccess: {},
+  rowFields: [
+    {
+      name: 'roles',
+      type: 'select',
+      defaultValue: ['tenant-viewer'],
+      hasMany: true,
+      options: ['tenant-admin', 'tenant-viewer'],
+      required: true,
+      access: {
+        update: ({ req }) => Boolean(req.user),
+      },
+    },
+  ],
+})
+
+export const Users: CollectionConfig = {
+  slug: 'users',
+  access: {
+    create: createAccess,
+    delete: updateAndDeleteAccess,
+    read: readAccess,
+    update: updateAndDeleteAccess,
+  },
+  admin: {
+    defaultColumns: ['name', 'email'],
+    useAsTitle: 'name',
+  },
+  auth: true,
+  endpoints: [externalUsersLogin],
+  fields: [
+    {
+      type: 'text',
+      name: 'password',
+      hidden: true,
+      access: {
+        read: () => false,
+        update: ({ req, id }) => {
+          const { user } = req
+          if (!user) return false
+          if (id === user.id) return true
+          return isSuperAdmin(user)
+        },
+      },
+    },
+    {
+      name: 'name',
+      type: 'text',
+    },
+    {
+      admin: {
+        position: 'sidebar',
+      },
+      name: 'roles',
+      type: 'select',
+      defaultValue: ['user'],
+      hasMany: true,
+      options: ['super-admin', 'user'],
+      access: {
+        update: ({ req }) => isSuperAdmin(req.user),
+      },
+    },
+    {
+      name: 'username',
+      type: 'text',
+      hooks: {
+        beforeValidate: [ensureUniqueUsername],
+      },
+      index: true,
+    },
+    {
+      ...defaultTenantArrayField,
+      admin: {
+        ...(defaultTenantArrayField?.admin || {}),
+        position: 'sidebar',
+      },
+    },
+  ],
+  hooks: {
+    afterLogin: [setCookieBasedOnDomain],
+  },
+  timestamps: true,
+}

@@ -6,6 +6,13 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   {
+    files: ['src/providers/**/*.{ts,tsx}', 'src/Header/**/*.{ts,tsx}'],
+    rules: {
+      // Payload website template theme / header sync (React 19 compiler hook noise)
+      'react-hooks/set-state-in-effect': 'off',
+    },
+  },
+  {
     rules: {
       '@typescript-eslint/ban-ts-comment': 'warn',
       '@typescript-eslint/no-empty-object-type': 'warn',

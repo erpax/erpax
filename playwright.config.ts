@@ -35,7 +35,14 @@ export default defineConfig({
   ],
   webServer: {
     command: 'pnpm dev',
-    reuseExistingServer: true,
+    // CI must start the dev server with webServer.env (e.g. PAYLOAD_DEV_PUSH). Locally, reuse
+    // only when you know `pnpm dev` already matches this env.
+    reuseExistingServer: !process.env.CI,
     url: 'http://localhost:3000',
+    env: {
+      ...process.env,
+      // Same as integration tests: avoid interactive Drizzle push when the DB has drift.
+      PAYLOAD_DEV_PUSH: 'false',
+    },
   },
 })

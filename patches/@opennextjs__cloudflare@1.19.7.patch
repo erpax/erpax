@@ -1,8 +1,8 @@
 diff --git a/dist/cli/build/bundle-server.js b/dist/cli/build/bundle-server.js
-index be3f893561dab6ad635e71a9cbb49603bfa44534..4da5c9203889203cd83bf68cca7d01780341637d 100644
+index be3f893561dab6ad635e71a9cbb49603bfa44534..76bafc5e8a18f000978f33d4d8f38e5325ae0e36 100644
 --- a/dist/cli/build/bundle-server.js
 +++ b/dist/cli/build/bundle-server.js
-@@ -100,7 +100,18 @@ export async function bundleServer(buildOpts, projectOpts) {
+@@ -100,7 +100,20 @@ export async function bundleServer(buildOpts, projectOpts) {
              // Apply updater updates, must be the last plugin
              updater.plugin,
          ],
@@ -16,8 +16,10 @@ index be3f893561dab6ad635e71a9cbb49603bfa44534..4da5c9203889203cd83bf68cca7d0178
 +            "drizzle-kit-*/api",
 +            "jose",
 +            "jose-*",
++            "pino",
 +            "pino-*",
-+            "pino-pretty-*",
++            "pino-std-serializers",
++            "pino-abstract-transport",
 +        ],
          alias: {
              // When @vercel/og is not used, alias the edge entry to a throwing shim so the

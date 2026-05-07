@@ -2,13 +2,13 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
   "name": "erpax",
+  "account_id": "833ef8eaf4ae2d917549f76765477475",
   "compatibility_date": "2025-08-15",
   "compatibility_flags": [
-    // Enable Node.js API
-    // see https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag
+    // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag
     "nodejs_compat",
-    // Allow to fetch URLs in your app
-    // see https://developers.cloudflare.com/workers/configuration/compatibility-flags/#global-fetch-strictly-public
+    // Outbound fetch only to “public” destinations (recommended with Payload uploads + skipSafeFetch)
+    // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#global-fetch-strictly-public
     "global_fetch_strictly_public",
   ],
   "assets": {
@@ -36,10 +36,10 @@
   "r2_buckets": [
     {
       "binding": "R2",
-      "bucket_name": "erpax","preview_bucket_name": "erpax",
+      "bucket_name": "erpax",
+      "preview_bucket_name": "erpax",
     },
   ],
-  {
   "observability": {
     "enabled": false,
     "head_sampling_rate": 1,
@@ -55,5 +55,4 @@
       "head_sampling_rate": 1
     }
   }
-}
 }

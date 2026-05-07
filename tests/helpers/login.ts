@@ -18,11 +18,15 @@ export async function login({
   serverURL = 'http://localhost:3000',
   user,
 }: LoginOptions): Promise<void> {
-  await page.goto(`${serverURL}/admin/login`)
+  await page.goto(`${serverURL}/admin/login`, { waitUntil: 'domcontentloaded' })
 
-  await page.fill('#field-email', user.email)
-  await page.fill('#field-password', user.password)
-  await page.click('button[type="submit"]')
+  const email = page.getByRole('textbox', { name: 'Email *', exact: true })
+  const password = page.getByRole('textbox', { name: 'Password', exact: true })
+  await email.waitFor({ state: 'visible' })
+  await password.waitFor({ state: 'visible' })
+  await email.fill(user.email)
+  await password.fill(user.password)
+  await page.getByRole('button', { name: 'Login', exact: true }).click()
 
   await page.waitForURL(`${serverURL}/admin`)
 
