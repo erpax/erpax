@@ -4,6 +4,7 @@
   "description": "A blank template to get started with Payload 3.0",
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm@11.0.8",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
     "deploy": "pnpm run deploy:database && pnpm run deploy:app",
@@ -58,13 +59,14 @@
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
-    "pnpm": "^9 || ^10"
+    "pnpm": ">=9"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "sharp",
       "esbuild",
-      "unrs-resolver"
+      "unrs-resolver",
+      "workerd"
     ],
     "patchedDependencies": {
       "@opennextjs/cloudflare@1.19.7": "patches/@opennextjs__cloudflare@1.19.7.patch"
