@@ -18,7 +18,7 @@ export type LocalizedLabel = Record<SupportedLocale, string>
  * Convert flat keys (e.g., "tab.hero") to nested objects for next-intl compatibility.
  * next-intl doesn't accept dots in keys as it uses them for nesting.
  */
-function flattenToNested(obj: Record<string, string>): Record<string, unknown> {
+export function flattenToNested(obj: Record<string, string>): Record<string, unknown> {
   const result: Record<string, unknown> = {}
 
   // Sort keys by depth (number of dots) so parent paths are processed first

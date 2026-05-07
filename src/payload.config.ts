@@ -41,7 +41,7 @@ import { getServerSideURL } from './utilities/getURL'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
 import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
 import localization from './i18n/localization'
-import { messageByLocale, supportedMessageLocales, type SupportedLocale } from './i18n'
+import { flattenToNested, messageByLocale, supportedMessageLocales, type SupportedLocale } from './i18n'
 import arMessages from './i18n/messages/ar.json'
 import bgMessages from './i18n/messages/bg.json'
 import deMessages from './i18n/messages/de.json'
@@ -110,14 +110,17 @@ if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
 }
 
 const adminLabelLocale = localization.defaultLocale as SupportedLocale
-const localeMessages = {
-  ar: arMessages,
-  bg: bgMessages,
-  de: deMessages,
-  en: enMessages,
-  es: esMessages,
-  ja: jaMessages,
+
+// Convert flat message keys to nested format for Payload admin compatibility
+const localeMessagesNested = {
+  ar: flattenToNested(arMessages as Record<string, string>),
+  bg: flattenToNested(bgMessages as Record<string, string>),
+  de: flattenToNested(deMessages as Record<string, string>),
+  en: flattenToNested(enMessages as Record<string, string>),
+  es: flattenToNested(esMessages as Record<string, string>),
+  ja: flattenToNested(jaMessages as Record<string, string>),
 } as const
+
 const supportedAdminLocales = supportedMessageLocales
 const adminTranslations = Object.fromEntries(
   supportedAdminLocales.map((locale) => [
@@ -126,7 +129,7 @@ const adminTranslations = Object.fromEntries(
       ...(multiTenantTranslations?.[locale] || {}),
       ...(importExportTranslations?.[locale] || {}),
       ...(ecommerceTranslations?.[locale] || {}),
-      ...localeMessages[locale],
+      ...localeMessagesNested[locale],
     },
   ]),
 )
