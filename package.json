@@ -41,16 +41,16 @@
     "@payloadcms/plugin-ecommerce": "latest",
     "@payloadcms/plugin-form-builder": "latest",
     "@payloadcms/plugin-import-export": "latest",
-    "@payloadcms/plugin-mcp": "3.84.1",
+    "@payloadcms/plugin-mcp": "latest",
     "@payloadcms/plugin-multi-tenant": "latest",
     "@payloadcms/plugin-nested-docs": "latest",
-    "@payloadcms/plugin-redirects": "3.84.1",
+    "@payloadcms/plugin-redirects": "latest",
     "@payloadcms/plugin-search": "latest",
     "@payloadcms/plugin-seo": "latest",
     "@payloadcms/richtext-lexical": "latest",
-    "@payloadcms/sdk": "3.84.1",
+    "@payloadcms/sdk": "latest",
     "@payloadcms/storage-r2": "latest",
-    "@payloadcms/translations": "3.84.1",
+    "@payloadcms/translations": "latest",
     "@payloadcms/ui": "latest",
     "@radix-ui/react-checkbox": "latest",
     "@radix-ui/react-label": "latest",
@@ -74,7 +74,7 @@
     "react-dom": "latest",
     "react-hook-form": "latest",
     "sharp": "latest",
-    "stripe": "^22.1.0",
+    "stripe": "latest",
     "tailwind-merge": "latest"
   },
   "devDependencies": {
@@ -84,7 +84,7 @@
     "@tailwindcss/typography": "latest",
     "@testing-library/react": "latest",
     "@types/escape-html": "latest",
-    "@types/jsdom": "^28.0.1",
+    "@types/jsdom": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -108,6 +108,14 @@
     "pnpm": ">=9"
   },
   "pnpm": {
+    "overrides": {
+      "dompurify": "latest",
+      "uuid": "latest",
+      "esbuild": "latest",
+      "ip-address": "latest",
+      "@eslint/plugin-kit": "latest",
+      "postcss": "latest"
+    },
     "onlyBuiltDependencies": [
       "esbuild",
       "sharp",
