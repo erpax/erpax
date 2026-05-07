@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { PHASE_PRODUCTION_BUILD } from 'next/constants'
 import { sqliteD1Adapter } from '@payloadcms/db-d1-sqlite'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { buildConfig } from 'payload'
@@ -17,6 +18,10 @@ const realpath = (value: string) => (fs.existsSync(value) ? fs.realpathSync(valu
 
 const isCLI = process.argv.some((value) => realpath(value).endsWith(path.join('payload', 'bin.js')))
 const isProduction = process.env.NODE_ENV === 'production'
+// During `next build`, many workers run in parallel. Miniflare's local D1 (SQLite) from
+// getCloudflareContext() cannot handle concurrent opens → SQLITE_BUSY. Use Wrangler + remote
+// D1 in that phase (same as payload CLI) so workers do not share a single on-disk DB.
+const isNextProductionBuild = process.env.NEXT_PHASE === PHASE_PRODUCTION_BUILD
 
 const createLog =
   (level: string, fn: typeof console.log) => (objOrMsg: object | string, msg?: string) => {
@@ -39,7 +44,7 @@ const cloudflareLogger = {
 } as any // Use PayloadLogger type when it's exported
 
 const cloudflare =
-  isCLI || !isProduction
+  isCLI || !isProduction || isNextProductionBuild
     ? await getCloudflareContextFromWrangler()
     : await getCloudflareContext({ async: true })
 

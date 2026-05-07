@@ -16,7 +16,7 @@
     "generate:types:cloudflare": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "generate:types:payload": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "ii": "pnpm install --ignore-workspace",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint .",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview --env=$CLOUDFLARE_ENV",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
@@ -25,37 +25,36 @@
     "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.11.0",
-    "@payloadcms/db-d1-sqlite": "3.82.1",
-    "@payloadcms/next": "3.82.1",
-    "@payloadcms/richtext-lexical": "3.82.1",
-    "@payloadcms/storage-r2": "3.82.1",
-    "@payloadcms/ui": "3.82.1",
-    "cross-env": "^7.0.3",
-    "dotenv": "16.4.7",
-    "graphql": "^16.8.1",
-    "next": "15.4.11",
-    "payload": "3.82.1",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "@opennextjs/cloudflare": "^1.19.7",
+    "@payloadcms/db-d1-sqlite": "3.84.1",
+    "@payloadcms/next": "3.84.1",
+    "@payloadcms/richtext-lexical": "3.84.1",
+    "@payloadcms/storage-r2": "3.84.1",
+    "@payloadcms/ui": "3.84.1",
+    "cross-env": "^10.1.0",
+    "dotenv": "17.4.2",
+    "graphql": "^16.14.0",
+    "next": "16.2.5",
+    "payload": "3.84.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.2.0",
-    "@playwright/test": "1.58.2",
-    "@testing-library/react": "16.3.0",
-    "@types/node": "22.19.9",
-    "@types/react": "19.2.9",
+    "@playwright/test": "1.59.1",
+    "@testing-library/react": "16.3.2",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "4.5.2",
-    "eslint": "^9.16.0",
-    "eslint-config-next": "15.4.11",
-    "jsdom": "28.0.0",
-    "prettier": "^3.4.2",
+    "@vitejs/plugin-react": "5.2.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.5",
+    "jsdom": "29.1.1",
+    "prettier": "^3.8.3",
     "tsx": "4.21.0",
-    "typescript": "5.7.3",
-    "vite-tsconfig-paths": "6.0.5",
-    "vitest": "4.0.18",
-    "wrangler": "~4.61.1"
+    "typescript": "5.9.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.1.5",
+    "wrangler": "~4.88.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
@@ -66,7 +65,10 @@
       "sharp",
       "esbuild",
       "unrs-resolver"
-    ]
+    ],
+    "patchedDependencies": {
+      "@opennextjs/cloudflare@1.19.7": "patches/@opennextjs__cloudflare@1.19.7.patch"
+    }
   },
   "cloudflare": {
     "bindings": {

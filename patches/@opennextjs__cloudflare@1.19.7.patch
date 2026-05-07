@@ -1,0 +1,24 @@
+diff --git a/dist/cli/build/bundle-server.js b/dist/cli/build/bundle-server.js
+index be3f893561dab6ad635e71a9cbb49603bfa44534..4da5c9203889203cd83bf68cca7d01780341637d 100644
+--- a/dist/cli/build/bundle-server.js
++++ b/dist/cli/build/bundle-server.js
+@@ -100,7 +100,18 @@ export async function bundleServer(buildOpts, projectOpts) {
+             // Apply updater updates, must be the last plugin
+             updater.plugin,
+         ],
+-        external: ["./middleware/handler.mjs"],
++        external: [
++            "./middleware/handler.mjs",
++            // Next.js Turbopack rewrites some externals to hashed specifiers (e.g. drizzle-kit/api ->
++            // drizzle-kit-<hash>/api). Esbuild cannot resolve those unless they stay external.
++            "drizzle-kit",
++            "drizzle-kit/api",
++            "drizzle-kit-*/api",
++            "jose",
++            "jose-*",
++            "pino-*",
++            "pino-pretty-*",
++        ],
+         alias: {
+             // When @vercel/og is not used, alias the edge entry to a throwing shim so the
+             // dynamic `import("next/dist/compiled/@vercel/og/index.edge.js")` call site
