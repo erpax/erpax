@@ -164,6 +164,8 @@
   "tenants.mcpApiKey": "MCP API Key",
   "tenants.domainHelp": "Used for domain-based tenant handling",
   "tenants.slugHelp": "Used for url paths, example: /tenant-slug/page-slug",
+  "tenants.locales": "Locales",
+  "tenants.localesHelp": "Public site languages for this tenant. Leave empty to allow every configured language.",
   "tenants.allowPublicReadHelp": "If checked, logging in is not required to read. Useful for building public pages.",
   "tenants.publicSiteUrlHelp": "Optional canonical site URL for this tenant (overrides request Host when set). Leave empty to use the incoming request host.",
   "tenants.stripePublishableHelp": "Stripe publishable key for this tenant’s storefront (optional). Falls back to NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY when empty.",

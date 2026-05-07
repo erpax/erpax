@@ -148,8 +148,70 @@ export interface Config {
     | ('false' | 'none' | 'null')
     | false
     | null
-    | ('en' | 'bg' | 'es' | 'de' | 'ja' | 'ar')
-    | ('en' | 'bg' | 'es' | 'de' | 'ja' | 'ar')[];
+    | (
+        | 'en'
+        | 'ar'
+        | 'bg'
+        | 'cs'
+        | 'da'
+        | 'de'
+        | 'el'
+        | 'es'
+        | 'et'
+        | 'fi'
+        | 'fr'
+        | 'ga'
+        | 'hr'
+        | 'hu'
+        | 'is'
+        | 'it'
+        | 'ja'
+        | 'lt'
+        | 'lv'
+        | 'mt'
+        | 'nb'
+        | 'nl'
+        | 'pl'
+        | 'pt'
+        | 'ro'
+        | 'ru'
+        | 'sk'
+        | 'sl'
+        | 'sv'
+        | 'uk'
+      )
+    | (
+        | 'en'
+        | 'ar'
+        | 'bg'
+        | 'cs'
+        | 'da'
+        | 'de'
+        | 'el'
+        | 'es'
+        | 'et'
+        | 'fi'
+        | 'fr'
+        | 'ga'
+        | 'hr'
+        | 'hu'
+        | 'is'
+        | 'it'
+        | 'ja'
+        | 'lt'
+        | 'lv'
+        | 'mt'
+        | 'nb'
+        | 'nl'
+        | 'pl'
+        | 'pt'
+        | 'ro'
+        | 'ru'
+        | 'sk'
+        | 'sl'
+        | 'sv'
+        | 'uk'
+      )[];
   globals: {
     header: Header;
     footer: Footer;
@@ -158,7 +220,37 @@ export interface Config {
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
   };
-  locale: 'en' | 'bg' | 'es' | 'de' | 'ja' | 'ar';
+  locale:
+    | 'en'
+    | 'ar'
+    | 'bg'
+    | 'cs'
+    | 'da'
+    | 'de'
+    | 'el'
+    | 'es'
+    | 'et'
+    | 'fi'
+    | 'fr'
+    | 'ga'
+    | 'hr'
+    | 'hu'
+    | 'is'
+    | 'it'
+    | 'ja'
+    | 'lt'
+    | 'lv'
+    | 'mt'
+    | 'nb'
+    | 'nl'
+    | 'pl'
+    | 'pt'
+    | 'ro'
+    | 'ru'
+    | 'sk'
+    | 'sl'
+    | 'sv'
+    | 'uk';
   widgets: {
     collections: CollectionsWidget;
   };
@@ -243,6 +335,43 @@ export interface Tenant {
    * Used for url paths, example: /tenant-slug/page-slug
    */
   slug: string;
+  /**
+   * Public site languages for this tenant. Leave empty to allow every configured language.
+   */
+  locales?:
+    | (
+        | 'en'
+        | 'ar'
+        | 'bg'
+        | 'cs'
+        | 'da'
+        | 'de'
+        | 'el'
+        | 'es'
+        | 'et'
+        | 'fi'
+        | 'fr'
+        | 'ga'
+        | 'hr'
+        | 'hu'
+        | 'is'
+        | 'it'
+        | 'ja'
+        | 'lt'
+        | 'lv'
+        | 'mt'
+        | 'nb'
+        | 'nl'
+        | 'pl'
+        | 'pt'
+        | 'ro'
+        | 'ru'
+        | 'sk'
+        | 'sl'
+        | 'sv'
+        | 'uk'
+      )[]
+    | null;
   /**
    * If checked, logging in is not required to read. Useful for building public pages.
    */
@@ -1230,7 +1359,41 @@ export interface Export {
   page?: number | null;
   sort?: string | null;
   sortOrder?: ('asc' | 'desc') | null;
-  locale?: ('all' | 'en' | 'bg' | 'es' | 'de' | 'ja' | 'ar') | null;
+  locale?:
+    | (
+        | 'all'
+        | 'en'
+        | 'ar'
+        | 'bg'
+        | 'cs'
+        | 'da'
+        | 'de'
+        | 'el'
+        | 'es'
+        | 'et'
+        | 'fi'
+        | 'fr'
+        | 'ga'
+        | 'hr'
+        | 'hu'
+        | 'is'
+        | 'it'
+        | 'ja'
+        | 'lt'
+        | 'lv'
+        | 'mt'
+        | 'nb'
+        | 'nl'
+        | 'pl'
+        | 'pt'
+        | 'ro'
+        | 'ru'
+        | 'sk'
+        | 'sl'
+        | 'sv'
+        | 'uk'
+      )
+    | null;
   drafts?: ('yes' | 'no') | null;
   selectionToUse?: ('currentSelection' | 'currentFilters' | 'all') | null;
   fields?: string[] | null;
@@ -1765,6 +1928,7 @@ export interface TenantsSelect<T extends boolean = true> {
   name?: T;
   domain?: T;
   slug?: T;
+  locales?: T;
   allowPublicRead?: T;
   publicSiteUrl?: T;
   stripePublishableKey?: T;

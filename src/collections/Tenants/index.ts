@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/access/isSuperAdmin'
 import { localeRecord } from '@/i18n'
+import localization from '@/i18n/localization'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
 
 const superAdminSecretsAccess = {
@@ -48,6 +49,20 @@ export const Tenants: CollectionConfig = {
       },
       index: true,
       required: true,
+    },
+    {
+      name: 'locales',
+      type: 'select',
+      hasMany: true,
+      label: localeRecord('tenants.locales'),
+      admin: {
+        description: localeRecord('tenants.localesHelp'),
+        position: 'sidebar',
+      },
+      options: localization.locales.map((l) => ({
+        label: l.label,
+        value: l.code,
+      })),
     },
     {
       name: 'allowPublicRead',

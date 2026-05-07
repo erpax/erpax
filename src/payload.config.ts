@@ -16,10 +16,30 @@ import { translations as importExportTranslations } from '@payloadcms/plugin-imp
 import { translations as ecommerceTranslations } from '@payloadcms/plugin-ecommerce/translations/languages/all'
 import { ar } from '@payloadcms/translations/languages/ar'
 import { bg } from '@payloadcms/translations/languages/bg'
+import { cs } from '@payloadcms/translations/languages/cs'
+import { da } from '@payloadcms/translations/languages/da'
 import { de } from '@payloadcms/translations/languages/de'
 import { en } from '@payloadcms/translations/languages/en'
 import { es } from '@payloadcms/translations/languages/es'
+import { et } from '@payloadcms/translations/languages/et'
+import { fr } from '@payloadcms/translations/languages/fr'
+import { hr } from '@payloadcms/translations/languages/hr'
+import { hu } from '@payloadcms/translations/languages/hu'
+import { is } from '@payloadcms/translations/languages/is'
+import { it } from '@payloadcms/translations/languages/it'
 import { ja } from '@payloadcms/translations/languages/ja'
+import { lt } from '@payloadcms/translations/languages/lt'
+import { lv } from '@payloadcms/translations/languages/lv'
+import { nb } from '@payloadcms/translations/languages/nb'
+import { nl } from '@payloadcms/translations/languages/nl'
+import { pl } from '@payloadcms/translations/languages/pl'
+import { pt } from '@payloadcms/translations/languages/pt'
+import { ro } from '@payloadcms/translations/languages/ro'
+import { ru } from '@payloadcms/translations/languages/ru'
+import { sk } from '@payloadcms/translations/languages/sk'
+import { sl } from '@payloadcms/translations/languages/sl'
+import { sv } from '@payloadcms/translations/languages/sv'
+import { uk } from '@payloadcms/translations/languages/uk'
 
 import { isSuperAdmin, isSuperAdminAccess } from './access/isSuperAdmin'
 import { Categories } from './collections/Categories'
@@ -41,9 +61,18 @@ import { getServerSideURL } from './utilities/getURL'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
 import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
 import localization from './i18n/localization'
-import { defaultLocale, localeRecord, nestedMessages, supportedLocales } from './i18n'
+import {
+  defaultLocale,
+  localeRecord,
+  nestedMessages,
+  supportedLocales,
+  type SupportedLocale,
+} from './i18n'
 
 import type { Config } from './payload-types'
+
+/** Finnish, Greek, Irish, Maltese — no `@payloadcms/translations` pack; reuse English UI. */
+const payloadUiFallback = en
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -105,13 +134,29 @@ if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
 
 // Merge plugin translations with the project's own nested messages so the
 // Payload admin UI has a single, complete translation map per locale.
+function pluginTranslationsForLocale(
+  pack: Record<string, Record<string, unknown>> | undefined,
+  locale: SupportedLocale,
+): Record<string, unknown> {
+  return (pack?.[locale] as Record<string, unknown> | undefined) ?? {}
+}
+
 const adminTranslations = Object.fromEntries(
   supportedLocales.map((locale) => [
     locale,
     {
-      ...(multiTenantTranslations?.[locale] || {}),
-      ...(importExportTranslations?.[locale] || {}),
-      ...(ecommerceTranslations?.[locale] || {}),
+      ...pluginTranslationsForLocale(
+        multiTenantTranslations as Record<string, Record<string, unknown>>,
+        locale,
+      ),
+      ...pluginTranslationsForLocale(
+        importExportTranslations as Record<string, Record<string, unknown>>,
+        locale,
+      ),
+      ...pluginTranslationsForLocale(
+        ecommerceTranslations as Record<string, Record<string, unknown>>,
+        locale,
+      ),
       ...nestedMessages[locale],
     },
   ]),
@@ -272,7 +317,39 @@ export default buildConfig({
   logger: isProduction ? cloudflareLogger : undefined,
   localization,
   i18n: {
-    supportedLanguages: { ar, bg, de, en, es, ja },
+    /** Payload's `SupportedLanguages` type omits some ISO codes we ship (fi, el, ga, mt). */
+    supportedLanguages: {
+      ar,
+      bg,
+      cs,
+      da,
+      de,
+      el: payloadUiFallback,
+      en,
+      es,
+      et,
+      fi: payloadUiFallback,
+      fr,
+      ga: payloadUiFallback,
+      hr,
+      hu,
+      is,
+      it,
+      ja,
+      lt,
+      lv,
+      mt: payloadUiFallback,
+      nb,
+      nl,
+      pl,
+      pt,
+      ro,
+      ru,
+      sk,
+      sl,
+      sv,
+      uk,
+    } as Record<SupportedLocale, typeof en>,
     translations: adminTranslations,
   },
   jobs: {

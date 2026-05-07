@@ -1,9 +1,33 @@
 import ar from './messages/ar.json'
 import bg from './messages/bg.json'
+import cs from './messages/cs.json'
+import da from './messages/da.json'
 import de from './messages/de.json'
+import el from './messages/el.json'
 import en from './messages/en.json'
 import es from './messages/es.json'
+import et from './messages/et.json'
+import fi from './messages/fi.json'
+import fr from './messages/fr.json'
+import ga from './messages/ga.json'
+import hr from './messages/hr.json'
+import hu from './messages/hu.json'
+import is from './messages/is.json'
+import it from './messages/it.json'
 import ja from './messages/ja.json'
+import lt from './messages/lt.json'
+import lv from './messages/lv.json'
+import mt from './messages/mt.json'
+import nb from './messages/nb.json'
+import nl from './messages/nl.json'
+import pl from './messages/pl.json'
+import pt from './messages/pt.json'
+import ro from './messages/ro.json'
+import ru from './messages/ru.json'
+import sk from './messages/sk.json'
+import sl from './messages/sl.json'
+import sv from './messages/sv.json'
+import uk from './messages/uk.json'
 import localization, { supportedLocales, type SupportedLocale } from './localization'
 
 export { supportedLocales }
@@ -11,12 +35,36 @@ export type { SupportedLocale }
 export const defaultLocale = localization.defaultLocale
 
 const flatMessages: Record<SupportedLocale, Record<string, string>> = {
+  en,
   ar,
   bg,
+  cs,
+  da,
   de,
-  en,
+  el,
   es,
+  et,
+  fi,
+  fr,
+  ga,
+  hr,
+  hu,
+  is,
+  it,
   ja,
+  lt,
+  lv,
+  mt,
+  nb,
+  nl,
+  pl,
+  pt,
+  ro,
+  ru,
+  sk,
+  sl,
+  sv,
+  uk,
 }
 
 export type NestedMessages = Record<string, unknown>

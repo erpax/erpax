@@ -5,6 +5,9 @@ import { unstable_cache } from 'next/cache'
 
 import { getServerSideURL } from '@/utilities/getURL'
 
+/** D1/SQLite cannot tolerate concurrent opens during OpenNext/workerd static generation (SQLITE_BUSY). */
+export const dynamic = 'force-dynamic'
+
 const buildPagesSitemap = unstable_cache(
   async (siteUrl: string) => {
     const payload = await getPayload({ config })
