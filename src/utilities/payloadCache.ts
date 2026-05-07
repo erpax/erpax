@@ -3,7 +3,9 @@
  * Centralizes the pattern of fetching data and caching with appropriate tags
  */
 
-import type { Config, TypedLocale } from 'src/payload-types'
+import type { Config } from '@/payload-types'
+import type { SupportedLocale } from '@/i18n/localization'
+import type { TypedLocale } from 'payload'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 import { unstable_cache } from 'next/cache'
@@ -192,7 +194,10 @@ export function getCachedPayloadLocalizedDocument<T extends Collection>(
   locale: TypedLocale | string,
   depth = 0,
 ) {
-  const localeCode = typeof locale === 'object' ? locale.code : locale
+  const localeCode =
+    typeof locale === 'object' && locale !== null
+      ? String((locale as { code?: string | null }).code ?? '')
+      : String(locale)
   return createCachedPayloadFetcher(
     [collection, slug, localeCode],
     [`${collection}_${slug}_${localeCode}`],
@@ -201,7 +206,7 @@ export function getCachedPayloadLocalizedDocument<T extends Collection>(
       const result = await payload.find({
         collection,
         depth,
-        locale: localeCode,
+        locale: localeCode as SupportedLocale,
         where: {
           slug: {
             equals: slug,

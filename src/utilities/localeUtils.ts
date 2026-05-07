@@ -4,7 +4,7 @@
  */
 
 import type { Locale, PayloadRequest, TypedLocale } from 'payload'
-import localization from '@/i18n/localization'
+import localization, { supportedLocales } from '@/i18n/localization'
 
 export type LocaleInput = TypedLocale | string | Locale | null | undefined
 
@@ -56,7 +56,7 @@ export function resolveLocale(
  */
 export function isValidLocale(locale: unknown): locale is string {
   if (typeof locale !== 'string') return false
-  return localization.supportedLocales.includes(locale as any)
+  return (supportedLocales as readonly string[]).includes(locale)
 }
 
 /**
@@ -88,7 +88,7 @@ export function ensureValidLocale(
  * @example getSupportedLocales() → ['en', 'de', 'fr', ...]
  */
 export function getSupportedLocales(): string[] {
-  return localization.supportedLocales
+  return [...supportedLocales]
 }
 
 /**

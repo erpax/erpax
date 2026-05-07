@@ -16,7 +16,8 @@ export const externalUsersLogin: Endpoint = {
       }
     } catch (error) {
       // Log JSON parse errors for debugging
-      req.payload.logger.warn('Failed to parse JSON in external users login endpoint', {
+      req.payload.logger.warn({
+        msg: 'Failed to parse JSON in external users login endpoint',
         endpoint: '/api/users/external-users/login',
         error: error instanceof Error ? error.message : String(error),
         contentType: req.headers.get('content-type'),
@@ -36,7 +37,8 @@ export const externalUsersLogin: Endpoint = {
 
     if (!allowed) {
       const resetSeconds = getRateLimitResetSeconds(resetAt)
-      req.payload.logger.warn('Login attempt rate limited', {
+      req.payload.logger.warn({
+        msg: 'Login attempt rate limited',
         username,
         ip: clientIp,
         resetSeconds,
@@ -126,7 +128,8 @@ export const externalUsersLogin: Endpoint = {
             token: loginAttempt.token,
           })
 
-          req.payload.logger.info('User login successful', {
+          req.payload.logger.info({
+            msg: 'User login successful',
             userId: loginAttempt.user?.id,
             ip: clientIp,
           })

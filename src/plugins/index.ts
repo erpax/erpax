@@ -185,8 +185,13 @@ export const plugins: Plugin[] = [
   }),
   nestedDocsPlugin({
     collections: ['pages', 'categories'],
-    generateURL: (docs) => docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
-    generateTitle: (...segments) => segments.map((segment) => segment.title).join(' / '),
+    generateURL: (docs, _currentDoc, _collection, _req) =>
+      docs.reduce((url, doc) => `${url}/${String((doc as { slug?: unknown }).slug ?? '')}`, ''),
+    generateLabel: (docs, _currentDoc, _collection, _req) =>
+      docs
+        .map((doc) => String((doc as { title?: unknown }).title ?? ''))
+        .filter(Boolean)
+        .join(' / '),
     parentFieldSlug: 'parent',
     breadcrumbsFieldSlug: 'breadcrumbs',
   }),

@@ -3,7 +3,7 @@
  * Common mocking patterns and helpers for integration tests
  */
 
-import { vi } from 'vitest'
+import { afterEach, beforeEach, expect, vi } from 'vitest'
 
 /**
  * Mock a Payload response for a document
@@ -16,7 +16,7 @@ export function mockPayloadDocument<T extends Record<string, any>>(
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     ...overrides,
-  } as T
+  } as unknown as T
 }
 
 /**
@@ -35,8 +35,8 @@ export function mockPayloadCollection<T extends Record<string, any>>(
     pagingCounter: 1,
     hasPrevPage: false,
     hasNextPage: false,
-    prevPage: null,
-    nextPage: null,
+    prevPage: null as number | null,
+    nextPage: null as number | null,
   }
 }
 
@@ -69,7 +69,7 @@ export function createMockRequest(headers: Record<string, string> = {}) {
 export function createMockPayloadRequest(locale = 'en') {
   return {
     locale,
-    user: null,
+    user: null as null,
     payloadAPI: 'REST',
     transactionID: 'test-txn-1',
   }

@@ -26,8 +26,8 @@ export interface FormFieldProps {
   label?: ReactNode
   /** Whether the field is required (shows asterisk) */
   required?: boolean
-  /** Tailwind width class for field layout (e.g., 'full', 'half', 'one-third') */
-  width?: string
+  /** Layout width (Payload form-builder uses numeric %; legacy fields may use string tokens) */
+  width?: number | string
   /** Form errors from react-hook-form */
   errors: Partial<FieldErrorsImpl>
   /** The input component (Input, Textarea, Checkbox, Select, etc.) */
