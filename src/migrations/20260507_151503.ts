@@ -7,6 +7,15 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`domain\` text,
   	\`slug\` text NOT NULL,
   	\`allow_public_read\` integer DEFAULT false,
+  	\`public_site_url\` text,
+  	\`stripe_publishable_key\` text,
+  	\`stripe_secret_key\` text,
+  	\`stripe_webhook_secret\` text,
+  	\`integration_settings\` text,
+  	\`resend_api_key\` text,
+  	\`email_default_from_address\` text,
+  	\`email_default_from_name\` text,
+  	\`mcp_api_key\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL
   );
@@ -1334,6 +1343,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE TABLE \`transactions\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`tenant_id\` integer,
+  	\`payment_method\` text,
+  	\`stripe_customer_i_d\` text,
+  	\`stripe_payment_intent_i_d\` text,
   	\`billing_address_title\` text,
   	\`billing_address_first_name\` text,
   	\`billing_address_last_name\` text,
@@ -1822,6 +1834,46 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`search_rels_path_idx\` ON \`search_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`search_rels_posts_id_idx\` ON \`search_rels\` (\`posts_id\`);`)
   await db.run(sql`CREATE INDEX \`search_rels_products_id_idx\` ON \`search_rels\` (\`products_id\`);`)
+  await db.run(sql`CREATE TABLE \`payload_mcp_api_keys\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`user_id\` integer NOT NULL,
+  	\`label\` text,
+  	\`description\` text,
+  	\`pages_find\` integer DEFAULT false,
+  	\`pages_create\` integer DEFAULT false,
+  	\`pages_update\` integer DEFAULT false,
+  	\`pages_delete\` integer DEFAULT false,
+  	\`posts_find\` integer DEFAULT false,
+  	\`posts_create\` integer DEFAULT false,
+  	\`posts_update\` integer DEFAULT false,
+  	\`posts_delete\` integer DEFAULT false,
+  	\`media_find\` integer DEFAULT false,
+  	\`media_create\` integer DEFAULT false,
+  	\`media_update\` integer DEFAULT false,
+  	\`media_delete\` integer DEFAULT false,
+  	\`categories_find\` integer DEFAULT false,
+  	\`categories_create\` integer DEFAULT false,
+  	\`categories_update\` integer DEFAULT false,
+  	\`categories_delete\` integer DEFAULT false,
+  	\`products_find\` integer DEFAULT false,
+  	\`products_create\` integer DEFAULT false,
+  	\`products_update\` integer DEFAULT false,
+  	\`products_delete\` integer DEFAULT false,
+  	\`header_find\` integer DEFAULT false,
+  	\`header_update\` integer DEFAULT false,
+  	\`footer_find\` integer DEFAULT false,
+  	\`footer_update\` integer DEFAULT false,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`enable_a_p_i_key\` integer,
+  	\`api_key\` text,
+  	\`api_key_index\` text,
+  	FOREIGN KEY (\`user_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`payload_mcp_api_keys_user_idx\` ON \`payload_mcp_api_keys\` (\`user_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_mcp_api_keys_updated_at_idx\` ON \`payload_mcp_api_keys\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`payload_mcp_api_keys_created_at_idx\` ON \`payload_mcp_api_keys\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`payload_kv\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`key\` text NOT NULL,
@@ -1903,6 +1955,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`forms_id\` integer,
   	\`form_submissions_id\` integer,
   	\`search_id\` integer,
+  	\`payload_mcp_api_keys_id\` integer,
   	FOREIGN KEY (\`parent_id\`) REFERENCES \`payload_locked_documents\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`tenants_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`pages_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade,
@@ -1921,7 +1974,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`redirects_id\`) REFERENCES \`redirects\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`forms_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`form_submissions_id\`) REFERENCES \`form_submissions\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`search_id\`) REFERENCES \`search\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`search_id\`) REFERENCES \`search\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`payload_mcp_api_keys_id\`) REFERENCES \`payload_mcp_api_keys\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_order_idx\` ON \`payload_locked_documents_rels\` (\`order\`);`)
@@ -1945,6 +1999,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_forms_id_idx\` ON \`payload_locked_documents_rels\` (\`forms_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_form_submissions_id_idx\` ON \`payload_locked_documents_rels\` (\`form_submissions_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_search_id_idx\` ON \`payload_locked_documents_rels\` (\`search_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_payload_mcp_api_keys_id_idx\` ON \`payload_locked_documents_rels\` (\`payload_mcp_api_keys_id\`);`)
   await db.run(sql`CREATE TABLE \`payload_preferences\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`key\` text,
@@ -1962,14 +2017,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`parent_id\` integer NOT NULL,
   	\`path\` text NOT NULL,
   	\`users_id\` integer,
+  	\`payload_mcp_api_keys_id\` integer,
   	FOREIGN KEY (\`parent_id\`) REFERENCES \`payload_preferences\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`users_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`users_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`payload_mcp_api_keys_id\`) REFERENCES \`payload_mcp_api_keys\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
   await db.run(sql`CREATE INDEX \`payload_preferences_rels_order_idx\` ON \`payload_preferences_rels\` (\`order\`);`)
   await db.run(sql`CREATE INDEX \`payload_preferences_rels_parent_idx\` ON \`payload_preferences_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_preferences_rels_path_idx\` ON \`payload_preferences_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`payload_preferences_rels_users_id_idx\` ON \`payload_preferences_rels\` (\`users_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_preferences_rels_payload_mcp_api_keys_id_idx\` ON \`payload_preferences_rels\` (\`payload_mcp_api_keys_id\`);`)
   await db.run(sql`CREATE TABLE \`payload_migrations\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`name\` text,
@@ -2161,6 +2219,7 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`search\`;`)
   await db.run(sql`DROP TABLE \`search_locales\`;`)
   await db.run(sql`DROP TABLE \`search_rels\`;`)
+  await db.run(sql`DROP TABLE \`payload_mcp_api_keys\`;`)
   await db.run(sql`DROP TABLE \`payload_kv\`;`)
   await db.run(sql`DROP TABLE \`payload_jobs_log\`;`)
   await db.run(sql`DROP TABLE \`payload_jobs\`;`)

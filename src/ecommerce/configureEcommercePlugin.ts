@@ -4,10 +4,10 @@ import {
   GBP,
   USD,
 } from '@payloadcms/plugin-ecommerce'
-import { stripeAdapter } from '@payloadcms/plugin-ecommerce/payments/stripe'
 import type { Plugin } from 'payload'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 
+import { createTenantStripePaymentMethod } from '@/ecommerce/createTenantStripePaymentMethod'
 import { ProductsCollection } from '@/collections/Products'
 import { adminOnlyFieldAccess } from '@/ecommerce/access/adminOnlyFieldAccess'
 import { adminOrPublishedStatus } from '@/ecommerce/access/adminOrPublishedStatus'
@@ -27,8 +27,6 @@ const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({
 })
 
 export function createEcommercePlugin(): Plugin {
-  const stripeSecret = process.env.STRIPE_SECRET_KEY
-
   return ecommercePlugin({
     access: {
       adminOnlyFieldAccess,
@@ -88,22 +86,9 @@ export function createEcommercePlugin(): Plugin {
         ],
       }),
     },
-    payments: stripeSecret
-      ? {
-          paymentMethods: [
-            stripeAdapter({
-              secretKey: stripeSecret,
-              publishableKey: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || '',
-              webhookSecret:
-                process.env.STRIPE_WEBHOOK_SECRET ||
-                process.env.STRIPE_WEBHOOKS_SIGNING_SECRET ||
-                '',
-            }),
-          ],
-        }
-      : {
-          paymentMethods: [],
-        },
+    payments: {
+      paymentMethods: [createTenantStripePaymentMethod()],
+    },
     products: {
       productsCollectionOverride: ProductsCollection,
       validation: validateProductCheckout,

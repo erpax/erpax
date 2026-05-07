@@ -9,8 +9,12 @@
   "showing": "Showing",
   "of": "of",
   "search": "Search",
+  "products": "Products",
   "dashboard": "Dashboard",
   "previous": "Previous",
   "next": "Next",
-  "more-pages": "More pages"
+  "more-pages": "More pages",
+  "submit": "Submit",
+  "no-results": "No results found.",
+  "no-published-products": "No published products yet."
 }

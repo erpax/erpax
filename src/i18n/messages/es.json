@@ -9,8 +9,12 @@
   "showing": "Mostrando",
   "of": "de",
   "search": "Buscar",
+  "products": "Productos",
   "dashboard": "Panel de control",
   "previous": "Anterior",
   "next": "Siguiente",
-  "more-pages": "Más páginas"
+  "more-pages": "Más páginas",
+  "submit": "Enviar",
+  "no-results": "No se encontraron resultados.",
+  "no-published-products": "Aún no hay productos publicados."
 }

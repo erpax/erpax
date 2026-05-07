@@ -3,13 +3,11 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 import { unstable_cache } from 'next/cache'
 
-const getPagesSitemap = unstable_cache(
-  async () => {
+import { getServerSideURL } from '@/utilities/getURL'
+
+const buildPagesSitemap = unstable_cache(
+  async (siteUrl: string) => {
     const payload = await getPayload({ config })
-    const SITE_URL =
-      process.env.NEXT_PUBLIC_SERVER_URL ||
-      process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-      'https://example.com'
 
     const results = await payload.find({
       collection: 'pages',
@@ -33,11 +31,11 @@ const getPagesSitemap = unstable_cache(
 
     const defaultSitemap = [
       {
-        loc: `${SITE_URL}/search`,
+        loc: `${siteUrl}/search`,
         lastmod: dateFallback,
       },
       {
-        loc: `${SITE_URL}/posts`,
+        loc: `${siteUrl}/posts`,
         lastmod: dateFallback,
       },
     ]
@@ -47,7 +45,7 @@ const getPagesSitemap = unstable_cache(
           .filter((page) => Boolean(page?.slug))
           .map((page) => {
             return {
-              loc: page?.slug === 'home' ? `${SITE_URL}/` : `${SITE_URL}/${page?.slug}`,
+              loc: page?.slug === 'home' ? `${siteUrl}/` : `${siteUrl}/${page?.slug}`,
               lastmod: page.updatedAt || dateFallback,
             }
           })
@@ -55,14 +53,15 @@ const getPagesSitemap = unstable_cache(
 
     return [...defaultSitemap, ...sitemap]
   },
-  ['pages-sitemap'],
+  ['pages-sitemap-data'],
   {
     tags: ['pages-sitemap'],
   },
 )
 
-export async function GET() {
-  const sitemap = await getPagesSitemap()
+export async function GET(request: Request) {
+  const siteUrl = getServerSideURL({ headers: request.headers })
+  const sitemap = await buildPagesSitemap(siteUrl)
 
   return getServerSideSitemap(sitemap)
 }

@@ -4,7 +4,7 @@ import { PayloadRedirects } from '@/components/PayloadRedirects'
 import configPromise from '@payload-config'
 import type { Where } from 'payload'
 import { getPayload, type RequiredDataFromCollectionSlug, type TypedLocale } from 'payload'
-import { draftMode } from 'next/headers'
+import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
 import { homeStatic } from '@/endpoints/seed/home-static'
 
@@ -14,6 +14,8 @@ import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { routing } from '@/i18n/routing'
+import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG
 
@@ -100,8 +102,11 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
     slug: decodedSlug,
     locale,
   })
+  const h = await headers()
+  const tenant = await getTenantFromRequest(h)
+  const siteOrigin = resolvePublicSiteUrl(h, tenant)
 
-  return generateMeta({ doc: page })
+  return generateMeta({ doc: page, siteOrigin })
 }
 
 const queryPageBySlug = cache(

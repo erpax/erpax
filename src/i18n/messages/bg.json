@@ -9,8 +9,12 @@
   "showing": "Показани",
   "of": "от",
   "search": "Търсене",
+  "products": "Продукти",
   "dashboard": "Табло",
   "previous": "Предишна",
   "next": "Следваща",
-  "more-pages": "Още страници"
+  "more-pages": "Още страници",
+  "submit": "Изпрати",
+  "no-results": "Няма намерени резултати.",
+  "no-published-products": "Все още няма публикувани продукти."
 }

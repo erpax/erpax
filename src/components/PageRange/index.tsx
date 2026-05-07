@@ -1,20 +1,16 @@
+'use client'
+
 import React from 'react'
+import { useTranslations } from 'next-intl'
 
 const defaultLabels = {
-  plural: 'Docs',
-  singular: 'Doc',
-}
-
-const defaultCollectionLabels = {
-  posts: {
-    plural: 'Posts',
-    singular: 'Post',
-  },
+  plural: 'Items',
+  singular: 'Item',
 }
 
 export const PageRange: React.FC<{
   className?: string
-  collection?: keyof typeof defaultCollectionLabels
+  collection?: 'posts'
   collectionLabels?: {
     plural?: string
     singular?: string
@@ -23,6 +19,7 @@ export const PageRange: React.FC<{
   limit?: number
   totalDocs?: number
 }> = (props) => {
+  const t = useTranslations()
   const {
     className,
     collection,
@@ -38,18 +35,29 @@ export const PageRange: React.FC<{
   let indexEnd = (currentPage || 1) * (limit || 1)
   if (totalDocs && indexEnd > totalDocs) indexEnd = totalDocs
 
+  const defaultCollectionLabels = {
+    posts: {
+      plural: t('posts'),
+      singular: t('post'),
+    },
+  }
+
   const { plural, singular } =
     collectionLabelsFromProps ||
     (collection ? defaultCollectionLabels[collection] : undefined) ||
+    {
+      plural: t('posts'),
+      singular: t('post'),
+    } ||
     defaultLabels ||
     {}
 
   return (
     <div className={[className, 'font-semibold'].filter(Boolean).join(' ')}>
-      {(typeof totalDocs === 'undefined' || totalDocs === 0) && 'Search produced no results.'}
+      {(typeof totalDocs === 'undefined' || totalDocs === 0) && t('no-results')}
       {typeof totalDocs !== 'undefined' &&
         totalDocs > 0 &&
-        `Showing ${indexStart}${indexStart > 0 ? ` - ${indexEnd}` : ''} of ${totalDocs} ${
+        `${t('showing')} ${indexStart}${indexStart > 0 ? ` - ${indexEnd}` : ''} ${t('of')} ${totalDocs} ${
           totalDocs > 1 ? plural : singular
         }`}
     </div>

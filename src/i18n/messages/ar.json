@@ -9,8 +9,12 @@
   "showing": "عرض",
   "of": "من",
   "search": "بحث",
+  "products": "المنتجات",
   "dashboard": "لوحة التحكم",
   "previous": "السابق",
   "next": "التالي",
-  "more-pages": "المزيد من الصفحات"
+  "more-pages": "المزيد من الصفحات",
+  "submit": "إرسال",
+  "no-results": "لم يتم العثور على نتائج.",
+  "no-published-products": "لا توجد منتجات منشورة بعد."
 }

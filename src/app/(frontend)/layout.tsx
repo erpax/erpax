@@ -13,6 +13,7 @@ import { draftMode } from 'next/headers'
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
+import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
@@ -38,11 +39,15 @@ export default async function FrontendRootLayout({ children }: { children: React
   )
 }
 
-export const metadata: Metadata = {
-  metadataBase: new URL(getServerSideURL()),
-  openGraph: mergeOpenGraph(),
-  twitter: {
-    card: 'summary_large_image',
-    creator: '@payloadcms',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const h = await headers()
+  const base = getServerSideURL({ headers: h })
+  return {
+    metadataBase: new URL(base),
+    openGraph: mergeOpenGraph(undefined, base),
+    twitter: {
+      card: 'summary_large_image',
+      creator: '@payloadcms',
+    },
+  }
 }

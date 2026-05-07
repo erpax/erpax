@@ -148,8 +148,8 @@ export interface Config {
     | ('false' | 'none' | 'null')
     | false
     | null
-    | ('en' | 'es' | 'de' | 'bg' | 'ja' | 'ar')
-    | ('en' | 'es' | 'de' | 'bg' | 'ja' | 'ar')[];
+    | ('bg' | 'en' | 'es' | 'de' | 'ja' | 'ar')
+    | ('bg' | 'en' | 'es' | 'de' | 'ja' | 'ar')[];
   globals: {
     header: Header;
     footer: Footer;
@@ -158,7 +158,7 @@ export interface Config {
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
   };
-  locale: 'en' | 'es' | 'de' | 'bg' | 'ja' | 'ar';
+  locale: 'bg' | 'en' | 'es' | 'de' | 'ja' | 'ar';
   widgets: {
     collections: CollectionsWidget;
   };
@@ -247,6 +247,50 @@ export interface Tenant {
    * If checked, logging in is not required to read. Useful for building public pages.
    */
   allowPublicRead?: boolean | null;
+  /**
+   * Optional canonical site URL for this tenant (overrides request Host when set). Leave empty to use the incoming request host.
+   */
+  publicSiteUrl?: string | null;
+  /**
+   * Stripe publishable key for this tenant’s storefront (optional). Falls back to NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY when empty.
+   */
+  stripePublishableKey?: string | null;
+  /**
+   * Stripe secret key (super-admin only). Server checkout still uses STRIPE_SECRET_KEY unless you add custom payment routes per tenant.
+   */
+  stripeSecretKey?: string | null;
+  /**
+   * Stripe webhook signing secret for this tenant (super-admin only). Global STRIPE_WEBHOOK_SECRET is used by the default adapter.
+   */
+  stripeWebhookSecret?: string | null;
+  /**
+   * Arbitrary JSON for per-tenant integration settings (API keys, feature flags, etc.). Use in custom hooks or API routes.
+   */
+  integrationSettings?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Resend API key for transactional email for this tenant (super-admin only). Development may fall back to RESEND_API_KEY.
+   */
+  resendApiKey?: string | null;
+  /**
+   * Default From email address for Resend (this tenant). Falls back to onboarding@resend.dev when empty.
+   */
+  emailDefaultFromAddress?: string | null;
+  /**
+   * Default From display name for Resend (this tenant).
+   */
+  emailDefaultFromName?: string | null;
+  /**
+   * Optional MCP API key for tools/scripts scoped to this tenant (super-admin only). Prefer Admin → MCP keys when using Payload MCP.
+   */
+  mcpApiKey?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -826,6 +870,11 @@ export interface Transaction {
         id?: string | null;
       }[]
     | null;
+  paymentMethod?: 'stripe' | null;
+  stripe?: {
+    customerID?: string | null;
+    paymentIntentID?: string | null;
+  };
   billingAddress?: {
     title?: string | null;
     firstName?: string | null;
@@ -1181,7 +1230,7 @@ export interface Export {
   page?: number | null;
   sort?: string | null;
   sortOrder?: ('asc' | 'desc') | null;
-  locale?: ('all' | 'en' | 'es' | 'de' | 'bg' | 'ja' | 'ar') | null;
+  locale?: ('all' | 'bg' | 'en' | 'es' | 'de' | 'ja' | 'ar') | null;
   drafts?: ('yes' | 'no') | null;
   selectionToUse?: ('currentSelection' | 'currentFilters' | 'all') | null;
   fields?: string[] | null;
@@ -1717,6 +1766,15 @@ export interface TenantsSelect<T extends boolean = true> {
   domain?: T;
   slug?: T;
   allowPublicRead?: T;
+  publicSiteUrl?: T;
+  stripePublishableKey?: T;
+  stripeSecretKey?: T;
+  stripeWebhookSecret?: T;
+  integrationSettings?: T;
+  resendApiKey?: T;
+  emailDefaultFromAddress?: T;
+  emailDefaultFromName?: T;
+  mcpApiKey?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -2231,6 +2289,13 @@ export interface TransactionsSelect<T extends boolean = true> {
         variant?: T;
         quantity?: T;
         id?: T;
+      };
+  paymentMethod?: T;
+  stripe?:
+    | T
+    | {
+        customerID?: T;
+        paymentIntentID?: T;
       };
   billingAddress?:
     | T

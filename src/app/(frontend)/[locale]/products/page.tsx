@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 import configPromise from '@payload-config'
+import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
 
@@ -9,7 +10,7 @@ import type { Product } from '@/payload-types'
 import { buildPublishedProductsWhere } from '@/utilities/siteTenantWhere'
 
 export const metadata: Metadata = {
-  title: 'Products | erpax',
+  title: 'Products',
 }
 
 export default async function ProductsIndexPage({
@@ -17,6 +18,7 @@ export default async function ProductsIndexPage({
 }: {
   params: Promise<{ locale: TypedLocale }>
 }) {
+  const t = await getTranslations()
   const { locale } = await params
   const payload = await getPayload({ config: configPromise })
 
@@ -39,7 +41,7 @@ export default async function ProductsIndexPage({
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="mb-8 text-3xl font-semibold tracking-tight">Products</h1>
+      <h1 className="mb-8 text-3xl font-semibold tracking-tight">{t('products')}</h1>
       <ul className="divide-y divide-border">
         {products.map((p) => (
           <li key={p.id} className="flex items-center justify-between py-4">
@@ -58,7 +60,7 @@ export default async function ProductsIndexPage({
         ))}
       </ul>
       {products.length === 0 && (
-        <p className="text-muted-foreground">No published products yet.</p>
+        <p className="text-muted-foreground">{t('no-published-products')}</p>
       )}
     </main>
   )

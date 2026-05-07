@@ -3,13 +3,11 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 import { unstable_cache } from 'next/cache'
 
-const getPostsSitemap = unstable_cache(
-  async () => {
+import { getServerSideURL } from '@/utilities/getURL'
+
+const buildPostsSitemap = unstable_cache(
+  async (siteUrl: string) => {
     const payload = await getPayload({ config })
-    const SITE_URL =
-      process.env.NEXT_PUBLIC_SERVER_URL ||
-      process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-      'https://example.com'
 
     const results = await payload.find({
       collection: 'posts',
@@ -35,21 +33,22 @@ const getPostsSitemap = unstable_cache(
       ? results.docs
           .filter((post) => Boolean(post?.slug))
           .map((post) => ({
-            loc: `${SITE_URL}/posts/${post?.slug}`,
+            loc: `${siteUrl}/posts/${post?.slug}`,
             lastmod: post.updatedAt || dateFallback,
           }))
       : []
 
     return sitemap
   },
-  ['posts-sitemap'],
+  ['posts-sitemap-data'],
   {
     tags: ['posts-sitemap'],
   },
 )
 
-export async function GET() {
-  const sitemap = await getPostsSitemap()
+export async function GET(request: Request) {
+  const siteUrl = getServerSideURL({ headers: request.headers })
+  const sitemap = await buildPostsSitemap(siteUrl)
 
   return getServerSideSitemap(sitemap)
 }

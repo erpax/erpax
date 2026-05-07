@@ -3,6 +3,10 @@ const localization = {
   // fallback: true,
   locales: [
     {
+      code: 'bg',
+      label: 'Bulgarian (Български)',
+    },
+    {
       code: 'en',
       // Regarding the label, we are using the syntax "{lang. in English} - ({lang. in native})".
       // The consensus is that it's a good idea to have languages ​​listed in their own languages: https://ux.stackexchange.com/q/37017/144485
@@ -17,10 +21,6 @@ const localization = {
     {
       code: 'de',
       label: 'German (Deutsch)',
-    },
-    {
-      code: 'bg',
-      label: 'Bulgarian (Български)',
     },
     {
       code: 'ja',

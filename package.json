@@ -18,6 +18,8 @@
     "generate:types:cloudflare": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "generate:types:payload": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "jobs:run": "cross-env NODE_OPTIONS=--no-deprecation payload jobs:run --all-queues --limit 50",
+    "setup": "node scripts/setup-env.mjs",
+    "prepare": "node scripts/setup-env.mjs --if-needed",
     "ii": "pnpm install --ignore-workspace",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation eslint .",
     "lint:fix": "cross-env NODE_OPTIONS=--no-deprecation eslint . --fix",

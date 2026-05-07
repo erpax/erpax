@@ -1,9 +1,12 @@
 /**
  * Secret embedded in live-preview URLs (`previewSecret` query param) and validated by
- * `GET /next/preview`. Override with `PREVIEW_SECRET`; otherwise derived from `PAYLOAD_SECRET`.
+ * `GET /next/preview`. Derived from `PAYLOAD_SECRET` (same as other internal secrets).
  */
-import { deriveSecretFromPayloadSecret } from '@/utilities/deriveSecret'
+import {
+  deriveSecretFromPayloadSecret,
+  internalSecretPurpose,
+} from '@/utilities/deriveSecret'
 
 export function getPreviewSecret(): string {
-  return process.env.PREVIEW_SECRET || deriveSecretFromPayloadSecret('preview')
+  return deriveSecretFromPayloadSecret(internalSecretPurpose.preview)
 }

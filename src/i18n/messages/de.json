@@ -9,8 +9,12 @@
   "showing": "Anzeigen",
   "of": "von",
   "search": "Suche",
+  "products": "Produkte",
   "dashboard": "Dashboard",
   "previous": "Vorherige",
   "next": "Nächste",
-  "more-pages": "Weitere Seiten"
+  "more-pages": "Weitere Seiten",
+  "submit": "Senden",
+  "no-results": "Keine Ergebnisse gefunden.",
+  "no-published-products": "Noch keine veröffentlichten Produkte."
 }

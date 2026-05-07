@@ -4,7 +4,7 @@ import { RelatedPosts } from '@/components/blocks/RelatedPosts/Component'
 import { PayloadRedirects } from '@/components/PayloadRedirects'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
-import { draftMode } from 'next/headers'
+import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
 import RichText from '@/components/RichText'
 
@@ -14,6 +14,8 @@ import { PostHero } from '@/components/heros/PostHero'
 import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
+import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -82,8 +84,11 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   // Decode to support slugs with special characters
   const decodedSlug = decodeURIComponent(slug)
   const post = await queryPostBySlug({ slug: decodedSlug })
+  const h = await headers()
+  const tenant = await getTenantFromRequest(h)
+  const siteOrigin = resolvePublicSiteUrl(h, tenant)
 
-  return generateMeta({ doc: post })
+  return generateMeta({ doc: post, siteOrigin })
 }
 
 const queryPostBySlug = cache(async ({ slug }: { slug: string }) => {

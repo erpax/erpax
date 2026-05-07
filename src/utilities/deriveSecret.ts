@@ -4,8 +4,20 @@ import { createHmac } from 'node:crypto'
 const DERIVED_V1 = 'erpax:derived:v1:'
 
 /**
+ * Named purposes for app-internal secrets (preview URLs, job runners, etc.).
+ * All are deterministic HMAC-SHA256 keys — do **not** add separate env vars for these.
+ * Third-party keys (Stripe, Resend, …) stay as their own env vars.
+ */
+export const internalSecretPurpose = {
+  preview: 'preview',
+  cron: 'cron',
+} as const
+
+export type InternalSecretPurpose = (typeof internalSecretPurpose)[keyof typeof internalSecretPurpose]
+
+/**
  * Derive a deterministic secret from `PAYLOAD_SECRET` for a named purpose.
- * Never exposes the master secret; use explicit env overrides where listed below.
+ * Used for all internal auth tokens so only `PAYLOAD_SECRET` must be managed.
  */
 export function deriveSecretFromPayloadSecret(purpose: string): string {
   const master = process.env.PAYLOAD_SECRET

@@ -5,8 +5,11 @@ import type { Media, Page, Post, Product, Config } from '../payload-types'
 import { mergeOpenGraph } from './mergeOpenGraph'
 import { getServerSideURL } from './getURL'
 
-const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
-  const serverUrl = getServerSideURL()
+const getImageURL = (
+  image: Media | Config['db']['defaultIDType'] | null | undefined,
+  siteOrigin?: string,
+) => {
+  const serverUrl = siteOrigin ?? getServerSideURL()
 
   let url = serverUrl + '/website-template-OG.webp'
 
@@ -21,10 +24,12 @@ const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
 
 export const generateMeta = async (args: {
   doc: Partial<Page> | Partial<Post> | Partial<Product> | null
+  /** Request-derived or tenant canonical origin — defaults to env / localhost when omitted */
+  siteOrigin?: string
 }): Promise<Metadata> => {
-  const { doc } = args
+  const { doc, siteOrigin } = args
 
-  const ogImage = getImageURL(doc?.meta?.image)
+  const ogImage = getImageURL(doc?.meta?.image, siteOrigin)
 
   const title = doc?.meta?.title
     ? doc?.meta?.title + ' | erpax'
@@ -34,23 +39,26 @@ export const generateMeta = async (args: {
 
   return {
     description: doc?.meta?.description,
-    openGraph: mergeOpenGraph({
-      description: doc?.meta?.description || '',
-      images: ogImage
-        ? [
-            {
-              url: ogImage,
-            },
-          ]
-        : undefined,
-      title,
-      url:
-        doc && typeof doc.slug === 'string'
-          ? doc.slug
-          : Array.isArray(doc?.slug)
-            ? doc.slug.join('/')
-            : '/',
-    }),
+    openGraph: mergeOpenGraph(
+      {
+        description: doc?.meta?.description || '',
+        images: ogImage
+          ? [
+              {
+                url: ogImage,
+              },
+            ]
+          : undefined,
+        title,
+        url:
+          doc && typeof doc.slug === 'string'
+            ? doc.slug
+            : Array.isArray(doc?.slug)
+              ? doc.slug.join('/')
+              : '/',
+      },
+      siteOrigin,
+    ),
     title,
   }
 }

@@ -9,8 +9,12 @@
   "showing": "表示中",
   "of": "の",
   "search": "検索",
+  "products": "商品",
   "dashboard": "ダッシュボード",
   "previous": "前へ",
   "next": "次へ",
-  "more-pages": "さらにページを表示"
+  "more-pages": "さらにページを表示",
+  "submit": "送信",
+  "no-results": "結果が見つかりませんでした。",
+  "no-published-products": "公開済みの商品はまだありません。"
 }

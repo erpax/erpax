@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import { PHASE_PRODUCTION_BUILD } from 'next/constants'
 import { sqliteD1Adapter } from '@payloadcms/db-d1-sqlite'
-import { resendAdapter } from '@payloadcms/email-resend'
 import { buildConfig, PayloadRequest } from 'payload'
 import { fileURLToPath } from 'url'
 import type { CloudflareContext } from '@opennextjs/cloudflare'
@@ -31,9 +30,13 @@ import { Header } from './components/Header/config'
 import { plugins as payloadPlugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
-import { deriveSecretFromPayloadSecret } from './utilities/deriveSecret'
+import {
+  deriveSecretFromPayloadSecret,
+  internalSecretPurpose,
+} from './utilities/deriveSecret'
 import { getServerSideURL } from './utilities/getURL'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
+import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
 import { erpaxAdminTranslations } from './i18n/erpaxAdminTranslations'
 import localization from './i18n/localization'
 import { PL } from './i18n/payloadLabels'
@@ -89,8 +92,6 @@ async function getCloudflare(): Promise<CloudflareContext> {
   return _cloudflare
 }
 
-const resendApiKey = process.env.RESEND_API_KEY
-
 let sharp: typeof import('sharp') | undefined
 if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
   try {
@@ -102,15 +103,7 @@ if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
 
 export default buildConfig({
   ...(sharp ? { sharp } : {}),
-  ...(resendApiKey
-    ? {
-        email: resendAdapter({
-          apiKey: resendApiKey,
-          defaultFromAddress: process.env.EMAIL_DEFAULT_FROM_ADDRESS || 'onboarding@resend.dev',
-          defaultFromName: process.env.EMAIL_DEFAULT_FROM_NAME || 'erpax',
-        }),
-      }
-    : {}),
+  email: tenantAwareResendEmailAdapter,
   admin: {
     components: {
       beforeLogin: ['@/components/BeforeLogin'],
@@ -244,7 +237,7 @@ export default buildConfig({
     access: {
       run: ({ req }: { req: PayloadRequest }): boolean => {
         if (req.user) return true
-        const secret = process.env.CRON_SECRET || deriveSecretFromPayloadSecret('cron')
+        const secret = deriveSecretFromPayloadSecret(internalSecretPurpose.cron)
         if (!secret) return false
         const authHeader = req.headers.get('authorization')
         return authHeader === `Bearer ${secret}`

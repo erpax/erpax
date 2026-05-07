@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -13,6 +14,8 @@ import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
 } from '@/utilities/siteTenantWhere'
+import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -69,7 +72,11 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   if (!product) {
     return { title: 'Product | erpax' }
   }
-  return generateMeta({ doc: product })
+  const h = await headers()
+  const tenant = await getTenantFromRequest(h)
+  const siteOrigin = resolvePublicSiteUrl(h, tenant)
+
+  return generateMeta({ doc: product, siteOrigin })
 }
 
 export default async function ProductPage({ params: paramsPromise }: Args) {

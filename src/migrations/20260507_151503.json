@@ -41,6 +41,69 @@
           "autoincrement": false,
           "default": false
         },
+        "public_site_url": {
+          "name": "public_site_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "stripe_publishable_key": {
+          "name": "stripe_publishable_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "stripe_secret_key": {
+          "name": "stripe_secret_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "stripe_webhook_secret": {
+          "name": "stripe_webhook_secret",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "integration_settings": {
+          "name": "integration_settings",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "resend_api_key": {
+          "name": "resend_api_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "email_default_from_address": {
+          "name": "email_default_from_address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "email_default_from_name": {
+          "name": "email_default_from_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "mcp_api_key": {
+          "name": "mcp_api_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
         "updated_at": {
           "name": "updated_at",
           "type": "text",
@@ -9600,6 +9663,27 @@
           "notNull": false,
           "autoincrement": false
         },
+        "payment_method": {
+          "name": "payment_method",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "stripe_customer_i_d": {
+          "name": "stripe_customer_i_d",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "stripe_payment_intent_i_d": {
+          "name": "stripe_payment_intent_i_d",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
         "billing_address_title": {
           "name": "billing_address_title",
           "type": "text",
@@ -15010,6 +15094,6 @@
   "internal": {
     "indexes": {}
   },
-  "id": "8b9182de-b267-4650-8910-d484a1e85b87",
+  "id": "4d58377b-830c-4d08-88db-bac01efab858",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }

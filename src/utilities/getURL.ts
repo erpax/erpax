@@ -1,12 +1,50 @@
 import canUseDOM from './canUseDOM'
 
-export const getServerSideURL = () => {
-  return (
-    process.env.NEXT_PUBLIC_SERVER_URL ||
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL
-      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : 'http://localhost:3000')
-  )
+/** Optional headers from `next/headers` or Web `Request` — used when `NEXT_PUBLIC_SERVER_URL` is unset. */
+export type ServerOriginOptions = {
+  headers?: Headers
+}
+
+/**
+ * Best-effort origin from incoming request headers (Workers / Next).
+ * Prefer `NEXT_PUBLIC_SERVER_URL` via {@link getServerSideURL} when you need a stable canonical URL.
+ */
+export function getOriginFromHeaders(headers: Headers): string {
+  const host = headers.get('x-forwarded-host') ?? headers.get('host') ?? ''
+  if (!host) return ''
+
+  const forwardedProto = headers.get('x-forwarded-proto')
+  const proto =
+    forwardedProto?.split(',')[0]?.trim() ||
+    (process.env.NODE_ENV === 'production' ? 'https' : 'http')
+
+  try {
+    return new URL(`${proto}://${host}`).origin
+  } catch {
+    return `${proto}://${host}`.replace(/\/$/, '')
+  }
+}
+
+/**
+ * Server-side base URL for links, OG URLs, and ecommerce client `serverURL`.
+ * Order: explicit env → request Host / X-Forwarded-* → Vercel → localhost.
+ */
+export const getServerSideURL = (options?: ServerOriginOptions): string => {
+  const envUrl = process.env.NEXT_PUBLIC_SERVER_URL?.trim()
+  if (envUrl) {
+    return envUrl.replace(/\/$/, '')
+  }
+
+  if (options?.headers) {
+    const fromHeaders = getOriginFromHeaders(options.headers)
+    if (fromHeaders) return fromHeaders.replace(/\/$/, '')
+  }
+
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`.replace(/\/$/, '')
+  }
+
+  return 'http://localhost:3000'
 }
 
 export const getClientSideURL = () => {
@@ -23,4 +61,22 @@ export const getClientSideURL = () => {
   }
 
   return process.env.NEXT_PUBLIC_SERVER_URL || ''
+}
+
+/**
+ * Canonical public site origin for the current request: tenant override, else request host, else env fallbacks.
+ */
+export function resolvePublicSiteUrl(
+  headers: Headers,
+  tenant: { publicSiteUrl?: string | null } | null | undefined,
+): string {
+  const tenantUrl = tenant?.publicSiteUrl?.trim()
+  if (tenantUrl) {
+    try {
+      return new URL(tenantUrl).origin
+    } catch {
+      return tenantUrl.replace(/\/$/, '')
+    }
+  }
+  return getServerSideURL({ headers })
 }
