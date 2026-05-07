@@ -1,0 +1,52 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-staging
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare (Staging)
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Setup Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: --version
+
+      - name: Deploy database migrations
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
+        run: |
+          pnpm exec payload migrate
+
+      - name: Build and deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
+          CLOUDFLARE_ENV: staging
+        run: |
+          pnpm run deploy:app

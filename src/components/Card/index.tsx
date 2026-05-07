@@ -3,7 +3,7 @@
 import { cn } from '@/utilities/ui'
 import useClickableCard from '@/utilities/useClickableCard'
 import Link from 'next/link'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import React, { Fragment } from 'react'
 
 import type { Post } from '@/payload-types'
@@ -21,6 +21,8 @@ export const Card: React.FC<{
   title?: string
 }> = (props) => {
   const { card, link } = useClickableCard({})
+  const locale = useLocale()
+  const t = useTranslations()
   const { className, doc, relationTo, showCategories, title: titleFromProps } = props
 
   const { slug, categories, meta, title } = doc || {}
@@ -29,7 +31,7 @@ export const Card: React.FC<{
   const hasCategories = categories && Array.isArray(categories) && categories.length > 0
   const titleToUse = titleFromProps || title
   const sanitizedDescription = description?.replace(/\s/g, ' ') // replace non-breaking space with white space
-  const href = `/${relationTo}/${slug}`
+  const href = `/${locale}/${relationTo}/${slug}`
 
   return (
     <article
@@ -40,7 +42,7 @@ export const Card: React.FC<{
       ref={card.ref}
     >
       <div className="relative w-full ">
-        {!metaImage && <div className="">No image</div>}
+        {!metaImage && <div className="">{t('no-image')}</div>}
         {metaImage && typeof metaImage !== 'string' && <Media resource={metaImage} size="33vw" />}
       </div>
       <div className="p-4">
@@ -50,7 +52,7 @@ export const Card: React.FC<{
               if (typeof category === 'object') {
                 const { title: titleFromCategory } = category
 
-                const categoryTitle = titleFromCategory || 'Untitled category'
+                const categoryTitle = titleFromCategory || t('untitled-category')
 
                 const isLast = index === categories.length - 1
 

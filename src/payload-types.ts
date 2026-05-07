@@ -616,7 +616,7 @@ export interface Order {
   transactions?: (number | Transaction)[] | null;
   status?: OrderStatus;
   amount?: number | null;
-  currency?: ('USD' | 'EUR' | 'GBP') | null;
+  currency?: ('EUR' | 'GBP' | 'USD') | null;
   accessToken?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -660,12 +660,12 @@ export interface Product {
     hasNextPage?: boolean;
     totalDocs?: number;
   };
-  priceInUSDEnabled?: boolean | null;
-  priceInUSD?: number | null;
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
   priceInGBPEnabled?: boolean | null;
   priceInGBP?: number | null;
+  priceInUSDEnabled?: boolean | null;
+  priceInUSD?: number | null;
   relatedProducts?: (number | Product)[] | null;
   meta?: {
     title?: string | null;
@@ -844,12 +844,12 @@ export interface Variant {
   product: number | Product;
   options: (number | VariantOption)[];
   inventory?: number | null;
-  priceInUSDEnabled?: boolean | null;
-  priceInUSD?: number | null;
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
   priceInGBPEnabled?: boolean | null;
   priceInGBP?: number | null;
+  priceInUSDEnabled?: boolean | null;
+  priceInUSD?: number | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -894,7 +894,7 @@ export interface Transaction {
   order?: (number | null) | Order;
   cart?: (number | null) | Cart;
   amount?: number | null;
-  currency?: ('USD' | 'EUR' | 'GBP') | null;
+  currency?: ('EUR' | 'GBP' | 'USD') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -918,7 +918,7 @@ export interface Cart {
   purchasedAt?: string | null;
   status?: ('active' | 'purchased' | 'abandoned') | null;
   subtotal?: number | null;
-  currency?: ('USD' | 'EUR' | 'GBP') | null;
+  currency?: ('EUR' | 'GBP' | 'USD') | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1161,9 +1161,6 @@ export interface Form {
       )[]
     | null;
   submitButtonLabel?: string | null;
-  /**
-   * Choose whether to display an on-page message or redirect to a different page after they submit the form.
-   */
   confirmationType?: ('message' | 'redirect') | null;
   confirmationMessage?: {
     root: {
@@ -1183,9 +1180,6 @@ export interface Form {
   redirect?: {
     url: string;
   };
-  /**
-   * Send custom emails when the form submits. Use comma separated lists to send the same email to multiple recipients. To reference a value from this form, wrap that field's name with double curly brackets, i.e. {{firstName}}. You can use a wildcard {{*}} to output all data and {{*:table}} to format it as an HTML table in the email.
-   */
   emails?:
     | {
         emailTo?: string | null;
@@ -2128,12 +2122,12 @@ export interface VariantsSelect<T extends boolean = true> {
   product?: T;
   options?: T;
   inventory?: T;
-  priceInUSDEnabled?: T;
-  priceInUSD?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
   priceInGBPEnabled?: T;
   priceInGBP?: T;
+  priceInUSDEnabled?: T;
+  priceInUSD?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -2192,12 +2186,12 @@ export interface ProductsSelect<T extends boolean = true> {
   enableVariants?: T;
   variantTypes?: T;
   variants?: T;
-  priceInUSDEnabled?: T;
-  priceInUSD?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
   priceInGBPEnabled?: T;
   priceInGBP?: T;
+  priceInUSDEnabled?: T;
+  priceInUSD?: T;
   relatedProducts?: T;
   meta?:
     | T

@@ -5542,20 +5542,6 @@
           "autoincrement": false,
           "default": 0
         },
-        "price_in_u_s_d_enabled": {
-          "name": "price_in_u_s_d_enabled",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "price_in_u_s_d": {
-          "name": "price_in_u_s_d",
-          "type": "numeric",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "price_in_e_u_r_enabled": {
           "name": "price_in_e_u_r_enabled",
           "type": "integer",
@@ -5579,6 +5565,20 @@
         },
         "price_in_g_b_p": {
           "name": "price_in_g_b_p",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "price_in_u_s_d_enabled": {
+          "name": "price_in_u_s_d_enabled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "price_in_u_s_d": {
+          "name": "price_in_u_s_d",
           "type": "numeric",
           "primaryKey": false,
           "notNull": false,
@@ -5839,20 +5839,6 @@
           "autoincrement": false,
           "default": 0
         },
-        "version_price_in_u_s_d_enabled": {
-          "name": "version_price_in_u_s_d_enabled",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_price_in_u_s_d": {
-          "name": "version_price_in_u_s_d",
-          "type": "numeric",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "version_price_in_e_u_r_enabled": {
           "name": "version_price_in_e_u_r_enabled",
           "type": "integer",
@@ -5876,6 +5862,20 @@
         },
         "version_price_in_g_b_p": {
           "name": "version_price_in_g_b_p",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "version_price_in_u_s_d_enabled": {
+          "name": "version_price_in_u_s_d_enabled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "version_price_in_u_s_d": {
+          "name": "version_price_in_u_s_d",
           "type": "numeric",
           "primaryKey": false,
           "notNull": false,
@@ -7096,20 +7096,6 @@
           "notNull": false,
           "autoincrement": false
         },
-        "price_in_u_s_d_enabled": {
-          "name": "price_in_u_s_d_enabled",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "price_in_u_s_d": {
-          "name": "price_in_u_s_d",
-          "type": "numeric",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "price_in_e_u_r_enabled": {
           "name": "price_in_e_u_r_enabled",
           "type": "integer",
@@ -7133,6 +7119,20 @@
         },
         "price_in_g_b_p": {
           "name": "price_in_g_b_p",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "price_in_u_s_d_enabled": {
+          "name": "price_in_u_s_d_enabled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "price_in_u_s_d": {
+          "name": "price_in_u_s_d",
           "type": "numeric",
           "primaryKey": false,
           "notNull": false,
@@ -8255,20 +8255,6 @@
           "notNull": false,
           "autoincrement": false
         },
-        "version_price_in_u_s_d_enabled": {
-          "name": "version_price_in_u_s_d_enabled",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "version_price_in_u_s_d": {
-          "name": "version_price_in_u_s_d",
-          "type": "numeric",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
         "version_price_in_e_u_r_enabled": {
           "name": "version_price_in_e_u_r_enabled",
           "type": "integer",
@@ -8292,6 +8278,20 @@
         },
         "version_price_in_g_b_p": {
           "name": "version_price_in_g_b_p",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "version_price_in_u_s_d_enabled": {
+          "name": "version_price_in_u_s_d_enabled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "version_price_in_u_s_d": {
+          "name": "version_price_in_u_s_d",
           "type": "numeric",
           "primaryKey": false,
           "notNull": false,
@@ -8989,7 +8989,7 @@
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false,
-          "default": "'USD'"
+          "default": "'EUR'"
         },
         "updated_at": {
           "name": "updated_at",
@@ -9328,7 +9328,7 @@
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false,
-          "default": "'USD'"
+          "default": "'EUR'"
         },
         "access_token": {
           "name": "access_token",
@@ -9810,7 +9810,7 @@
           "primaryKey": false,
           "notNull": false,
           "autoincrement": false,
-          "default": "'USD'"
+          "default": "'EUR'"
         },
         "updated_at": {
           "name": "updated_at",
@@ -15094,6 +15094,6 @@
   "internal": {
     "indexes": {}
   },
-  "id": "4d58377b-830c-4d08-88db-bac01efab858",
+  "id": "9e0fc54f-029e-4548-8721-545644dee571",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }

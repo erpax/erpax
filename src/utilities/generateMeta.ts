@@ -32,10 +32,10 @@ export const generateMeta = async (args: {
   const ogImage = getImageURL(doc?.meta?.image, siteOrigin)
 
   const title = doc?.meta?.title
-    ? doc?.meta?.title + ' | erpax'
+    ? doc?.meta?.title + ' | site'
     : doc && 'title' in doc && doc.title
-      ? `${doc.title} | erpax`
-      : 'erpax'
+      ? `${doc.title} | site`
+      : 'site'
 
   return {
     description: doc?.meta?.description,

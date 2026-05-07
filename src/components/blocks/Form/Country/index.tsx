@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 import { Controller } from 'react-hook-form'
 
@@ -22,6 +23,8 @@ export const Country: React.FC<
     errors: Partial<FieldErrorsImpl>
   }
 > = ({ name, control, errors, label, required, width }) => {
+  const t = useTranslations()
+
   return (
     <Width width={width}>
       <Label className="" htmlFor={name}>
@@ -29,7 +32,7 @@ export const Country: React.FC<
 
         {required && (
           <span className="required">
-            * <span className="sr-only">(required)</span>
+            * <span className="sr-only">({t('required')})</span>
           </span>
         )}
       </Label>

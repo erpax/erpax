@@ -11,6 +11,9 @@ import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { r2Storage } from '@payloadcms/storage-r2'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
+import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
+import { translations as importExportTranslations } from '@payloadcms/plugin-import-export/translations/languages/all'
+import { translations as ecommerceTranslations } from '@payloadcms/plugin-ecommerce/translations/languages/all'
 import { ar } from '@payloadcms/translations/languages/ar'
 import { bg } from '@payloadcms/translations/languages/bg'
 import { de } from '@payloadcms/translations/languages/de'
@@ -37,9 +40,14 @@ import {
 import { getServerSideURL } from './utilities/getURL'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
 import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
-import { erpaxAdminTranslations } from './i18n/erpaxAdminTranslations'
 import localization from './i18n/localization'
-import { PL } from './i18n/payloadLabels'
+import { messageByLocale, supportedMessageLocales, type SupportedLocale } from './i18n'
+import arMessages from './i18n/messages/ar.json'
+import bgMessages from './i18n/messages/bg.json'
+import deMessages from './i18n/messages/de.json'
+import enMessages from './i18n/messages/en.json'
+import esMessages from './i18n/messages/es.json'
+import jaMessages from './i18n/messages/ja.json'
 
 import type { Config } from './payload-types'
 
@@ -101,6 +109,28 @@ if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
   }
 }
 
+const adminLabelLocale = localization.defaultLocale as SupportedLocale
+const localeMessages = {
+  ar: arMessages,
+  bg: bgMessages,
+  de: deMessages,
+  en: enMessages,
+  es: esMessages,
+  ja: jaMessages,
+} as const
+const supportedAdminLocales = supportedMessageLocales
+const adminTranslations = Object.fromEntries(
+  supportedAdminLocales.map((locale) => [
+    locale,
+    {
+      ...(multiTenantTranslations?.[locale] || {}),
+      ...(importExportTranslations?.[locale] || {}),
+      ...(ecommerceTranslations?.[locale] || {}),
+      ...localeMessages[locale],
+    },
+  ]),
+)
+
 export default buildConfig({
   ...(sharp ? { sharp } : {}),
   email: tenantAwareResendEmailAdapter,
@@ -115,9 +145,9 @@ export default buildConfig({
     user: Users.slug,
     livePreview: {
       breakpoints: [
-        { label: PL.livePreview.mobile.en, name: 'mobile', width: 375, height: 667 },
-        { label: PL.livePreview.tablet.en, name: 'tablet', width: 768, height: 1024 },
-        { label: PL.livePreview.desktop.en, name: 'desktop', width: 1440, height: 900 },
+        { label: messageByLocale('livePreview.mobile', adminLabelLocale), name: 'mobile', width: 375, height: 667 },
+        { label: messageByLocale('livePreview.tablet', adminLabelLocale), name: 'tablet', width: 768, height: 1024 },
+        { label: messageByLocale('livePreview.desktop', adminLabelLocale), name: 'desktop', width: 1440, height: 900 },
       ],
     },
   },
@@ -231,7 +261,7 @@ export default buildConfig({
   localization,
   i18n: {
     supportedLanguages: { ar, bg, de, en, es, ja },
-    translations: erpaxAdminTranslations,
+    translations: adminTranslations,
   },
   jobs: {
     access: {

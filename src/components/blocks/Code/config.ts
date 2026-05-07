@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 export const Code: Block = {
   slug: 'code',
@@ -12,15 +12,15 @@ export const Code: Block = {
       defaultValue: 'typescript',
       options: [
         {
-          label: PL.code.typescript,
+          label: t('code.typescript'),
           value: 'typescript',
         },
         {
-          label: PL.code.javascript,
+          label: t('code.javascript'),
           value: 'javascript',
         },
         {
-          label: PL.code.css,
+          label: t('code.css'),
           value: 'css',
         },
       ],

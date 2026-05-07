@@ -10,8 +10,8 @@ const BeforeLogin: React.FC = () => {
   return (
     <div>
       <p>
-        <b>{t('erpax:beforeLoginBold')}</b>
-        {t('erpax:beforeLoginRest')}
+        <b>{t('beforeLoginBold')}</b>
+        {t('beforeLoginRest')}
       </p>
     </div>
   )

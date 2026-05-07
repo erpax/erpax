@@ -16,58 +16,58 @@ const BeforeDashboard: React.FC = () => {
   return (
     <div className={baseClass}>
       <Banner className={`${baseClass}__banner`} type="success">
-        <h4>{t('erpax:dashboardTitle')}</h4>
+        <h4>{t('dashboardTitle')}</h4>
       </Banner>
-      {t('erpax:dashboardIntro')}
+      {t('dashboardIntro')}
       <ul className={`${baseClass}__instructions`}>
         <li>
           <SeedButton />
-          {t('erpax:dashboardSeedMid')}
+          {t('dashboardSeedMid')}
           <a href="/" target="_blank">
-            {t('erpax:dashboardVisitSite')}
+            {t('dashboardVisitSite')}
           </a>
-          {t('erpax:dashboardSeedEnd')}
+          {t('dashboardSeedEnd')}
         </li>
         <li>
-          {t('erpax:dashboardLi2a')}
+          {t('dashboardLi2a')}
           <a
             href="https://payloadcms.com/docs/configuration/collections"
             rel="noopener noreferrer"
             target="_blank"
           >
-            {t('erpax:dashboardLi2Collections')}
+            {t('dashboardLi2Collections')}
           </a>
-          {t('erpax:dashboardLi2b')}
+          {t('dashboardLi2b')}
           <a
             href="https://payloadcms.com/docs/fields/overview"
             rel="noopener noreferrer"
             target="_blank"
           >
-            {t('erpax:dashboardLi2Fields')}
+            {t('dashboardLi2Fields')}
           </a>
-          {t('erpax:dashboardLi2c')}
+          {t('dashboardLi2c')}
           <a
             href="https://payloadcms.com/docs/getting-started/what-is-payload"
             rel="noopener noreferrer"
             target="_blank"
           >
-            {t('erpax:dashboardLi2StartDocs')}
+            {t('dashboardLi2StartDocs')}
           </a>
-          {t('erpax:dashboardLi2d')}
+          {t('dashboardLi2d')}
         </li>
-        <li>{t('erpax:dashboardLi3')}</li>
+        <li>{t('dashboardLi3')}</li>
       </ul>
-      {t('erpax:dashboardProTip')}
+      {t('dashboardProTip')}
       <a
         href="https://payloadcms.com/docs/custom-components/overview"
         rel="noopener noreferrer"
         target="_blank"
       >
-        {t('erpax:dashboardCustomComponent')}
+        {t('dashboardCustomComponent')}
       </a>
-      {t('erpax:dashboardProTipEnd')}
-      <strong>{t('erpax:dashboardPayloadConfig')}</strong>
-      {t('erpax:dashboardProTipFinal')}
+      {t('dashboardProTipEnd')}
+      <strong>{t('dashboardPayloadConfig')}</strong>
+      {t('dashboardProTipFinal')}
     </div>
   )
 }

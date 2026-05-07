@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { getTranslations } from 'next-intl/server'
 
 import configPromise from '@payload-config'
 import { getPayload, type TypedLocale } from 'payload'
@@ -70,7 +71,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   const { slug, locale } = await paramsPromise
   const product = await queryProductBySlug({ slug, locale })
   if (!product) {
-    return { title: 'Product | erpax' }
+    return { title: 'Product | site' }
   }
   const h = await headers()
   const tenant = await getTenantFromRequest(h)
@@ -81,6 +82,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
 
 export default async function ProductPage({ params: paramsPromise }: Args) {
   const { slug: rawSlug, locale } = await paramsPromise
+  const t = await getTranslations()
   const slug = decodeURIComponent(rawSlug)
   const product = await queryProductBySlug({ slug, locale })
 
@@ -92,18 +94,18 @@ export default async function ProductPage({ params: paramsPromise }: Args) {
     <article className="mx-auto max-w-3xl px-4 py-16">
       <p className="mb-4">
         <Link className="text-muted-foreground hover:underline" href={`/${locale}/products`}>
-          ← Products
+          ← {t('products')}
         </Link>
       </p>
       <h1 className="mb-4 text-3xl font-semibold tracking-tight">{product.title}</h1>
       {typeof product.priceInUSD === 'number' && (
         <p className="mb-8 text-xl tabular-nums text-muted-foreground">
           ${product.priceInUSD.toFixed(2)}{' '}
-          <span className="text-sm">USD</span>
+          <span className="text-sm">{t('currency-usd')}</span>
         </p>
       )}
       <p className="text-muted-foreground text-sm">
-        Cart and checkout use the ecommerce provider; configure Stripe env vars to enable payments.
+        {t('product-checkout-note')}
       </p>
     </article>
   )

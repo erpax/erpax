@@ -3,6 +3,7 @@ import type { Form as FormType } from '@payloadcms/plugin-form-builder/types'
 
 import { PayloadSDKError } from '@payloadcms/sdk'
 import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import React, { useCallback, useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
 import RichText from '@/components/RichText'
@@ -48,6 +49,7 @@ export const FormBlock: React.FC<
   const [hasSubmitted, setHasSubmitted] = useState<boolean>()
   const [error, setError] = useState<{ message: string; status?: string } | undefined>()
   const router = useRouter()
+  const t = useTranslations()
 
   const onSubmit = useCallback(
     (data: Record<string, unknown>) => {
@@ -62,7 +64,7 @@ export const FormBlock: React.FC<
 
         if (typeof numericFormID !== 'number' || Number.isNaN(numericFormID)) {
           setError({
-            message: 'Invalid form id.',
+            message: t('invalid-form-id'),
           })
           return
         }
@@ -99,12 +101,12 @@ export const FormBlock: React.FC<
           setIsLoading(false)
           if (err instanceof PayloadSDKError) {
             setError({
-              message: err.errors?.[0]?.message || err.message || 'Internal Server Error',
+              message: err.errors?.[0]?.message || err.message || t('internal-server-error'),
               status: String(err.status),
             })
           } else {
             setError({
-              message: 'Something went wrong.',
+              message: t('something-went-wrong'),
             })
           }
         }
@@ -112,7 +114,7 @@ export const FormBlock: React.FC<
 
       void submitForm()
     },
-    [router, numericFormID, redirect, confirmationType],
+    [router, numericFormID, redirect, confirmationType, t],
   )
 
   return (
@@ -125,7 +127,7 @@ export const FormBlock: React.FC<
           {!isLoading && hasSubmitted && confirmationType === 'message' && (
             <RichText data={confirmationMessage} />
           )}
-          {isLoading && !hasSubmitted && <p>Loading, please wait...</p>}
+          {isLoading && !hasSubmitted && <p>{t('loading')}</p>}
           {error && <div>{`${error.status || '500'}: ${error.message || ''}`}</div>}
           {!hasSubmitted && (
             <form id={formElementID} onSubmit={handleSubmit(onSubmit)}>
@@ -154,7 +156,7 @@ export const FormBlock: React.FC<
               </div>
 
               <Button form={formElementID} type="submit" variant="default">
-                {submitButtonLabel}
+                {submitButtonLabel || t('submit')}
               </Button>
             </form>
           )}

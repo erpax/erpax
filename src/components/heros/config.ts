@@ -8,7 +8,7 @@ import {
 } from '@payloadcms/richtext-lexical'
 
 import { linkGroup } from '@/fields/linkGroup'
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 export const hero: Field = {
   name: 'hero',
@@ -19,22 +19,22 @@ export const hero: Field = {
       name: 'type',
       type: 'select',
       defaultValue: 'lowImpact',
-      label: PL.hero.type,
+      label: t('hero.type'),
       options: [
         {
-          label: PL.hero.none,
+          label: t('hero.none'),
           value: 'none',
         },
         {
-          label: PL.hero.highImpact,
+          label: t('hero.highImpact'),
           value: 'highImpact',
         },
         {
-          label: PL.hero.mediumImpact,
+          label: t('hero.mediumImpact'),
           value: 'mediumImpact',
         },
         {
-          label: PL.hero.lowImpact,
+          label: t('hero.lowImpact'),
           value: 'lowImpact',
         },
       ],

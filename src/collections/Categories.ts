@@ -3,9 +3,14 @@ import type { CollectionConfig } from 'payload'
 import { anyone } from '../access/anyone'
 import { authenticated } from '../access/authenticated'
 import { slugField } from 'payload'
+import { t } from '@/i18n'
 
 export const Categories: CollectionConfig = {
   slug: 'categories',
+  labels: {
+    singular: t('categories.singular'),
+    plural: t('categories.plural'),
+  },
   access: {
     create: authenticated,
     delete: authenticated,
@@ -19,6 +24,7 @@ export const Categories: CollectionConfig = {
     {
       name: 'title',
       type: 'text',
+      label: t('categories.title'),
       required: true,
     },
     slugField({

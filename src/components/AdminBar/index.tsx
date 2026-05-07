@@ -29,12 +29,25 @@ const collectionLabels = {
   },
 }
 
-const Title: React.FC = () => <span>Dashboard</span>
+type AdminBarLabels = {
+  dashboard: string
+  page: string
+  pages: string
+  post: string
+  posts: string
+  project: string
+  projects: string
+}
+
+const Title: React.FC<{ dashboardLabel: string }> = ({ dashboardLabel }) => (
+  <span>{dashboardLabel}</span>
+)
 
 export const AdminBar: React.FC<{
   adminBarProps?: PayloadAdminBarProps
+  labels?: AdminBarLabels
 }> = (props) => {
-  const { adminBarProps } = props || {}
+  const { adminBarProps, labels } = props || {}
   const segments = useSelectedLayoutSegments()
   const [show, setShow] = useState(false)
   const collection = (
@@ -65,10 +78,16 @@ export const AdminBar: React.FC<{
           cmsURL={getClientSideURL()}
           collectionSlug={collection}
           collectionLabels={{
-            plural: collectionLabels[collection]?.plural || 'Pages',
-            singular: collectionLabels[collection]?.singular || 'Page',
+            plural:
+              labels?.[collectionLabels[collection]?.plural.toLowerCase() as keyof AdminBarLabels] ||
+              collectionLabels[collection]?.plural ||
+              'Pages',
+            singular:
+              labels?.[collectionLabels[collection]?.singular.toLowerCase() as keyof AdminBarLabels] ||
+              collectionLabels[collection]?.singular ||
+              'Page',
           }}
-          logo={<Title />}
+          logo={<Title dashboardLabel={labels?.dashboard || 'Dashboard'} />}
           onAuthChange={onAuthChange}
           onPreviewExit={() => {
             fetch('/next/exit-preview').then(() => {

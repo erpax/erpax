@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
 
 import { isSuperAdmin } from '@/access/isSuperAdmin'
+import { t } from '@/i18n'
 
 import { createAccess } from './access/create'
 import { readAccess } from './access/read'
@@ -20,9 +21,13 @@ const defaultTenantArrayField = tenantsArrayField({
     {
       name: 'roles',
       type: 'select',
+      label: t('users.tenantRoles'),
       defaultValue: ['tenant-viewer'],
       hasMany: true,
-      options: ['tenant-admin', 'tenant-viewer'],
+      options: [
+        { label: t('users.tenantAdminRole'), value: 'tenant-admin' },
+        { label: t('users.tenantViewerRole'), value: 'tenant-viewer' },
+      ],
       required: true,
       access: {
         update: ({ req }) => Boolean(req.user),
@@ -33,6 +38,10 @@ const defaultTenantArrayField = tenantsArrayField({
 
 export const Users: CollectionConfig = {
   slug: 'users',
+  labels: {
+    singular: t('users.singular'),
+    plural: t('users.plural'),
+  },
   access: {
     create: createAccess,
     delete: updateAndDeleteAccess,
@@ -63,6 +72,7 @@ export const Users: CollectionConfig = {
     {
       name: 'name',
       type: 'text',
+      label: t('users.name'),
     },
     {
       admin: {
@@ -70,9 +80,15 @@ export const Users: CollectionConfig = {
       },
       name: 'roles',
       type: 'select',
+      label: t('users.roles'),
       defaultValue: ['user'],
       hasMany: true,
-      options: ['super-admin', 'admin', 'user', 'customer'],
+      options: [
+        { label: t('users.superAdminRole'), value: 'super-admin' },
+        { label: t('users.adminRole'), value: 'admin' },
+        { label: t('users.userRole'), value: 'user' },
+        { label: t('users.customerRole'), value: 'customer' },
+      ],
       access: {
         update: ({ req }) => isSuperAdmin(req.user),
       },
@@ -80,6 +96,7 @@ export const Users: CollectionConfig = {
     {
       name: 'username',
       type: 'text',
+      label: t('users.username'),
       hooks: {
         beforeValidate: [ensureUniqueUsername],
       },
@@ -95,6 +112,7 @@ export const Users: CollectionConfig = {
     {
       name: 'orders',
       type: 'join',
+      label: t('users.orders'),
       collection: 'orders',
       on: 'customer',
       admin: {
@@ -105,6 +123,7 @@ export const Users: CollectionConfig = {
     {
       name: 'cart',
       type: 'join',
+      label: t('users.cart'),
       collection: 'carts',
       on: 'customer',
       admin: {
@@ -115,6 +134,7 @@ export const Users: CollectionConfig = {
     {
       name: 'addresses',
       type: 'join',
+      label: t('users.addresses'),
       collection: 'addresses',
       on: 'customer',
       admin: {

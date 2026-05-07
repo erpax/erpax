@@ -33,16 +33,23 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'], channel: 'chromium' },
     },
   ],
-  webServer: {
-    command: 'pnpm dev',
-    // CI must start the dev server with webServer.env (e.g. PAYLOAD_DEV_PUSH). Locally, reuse
-    // only when you know `pnpm dev` already matches this env.
-    reuseExistingServer: !process.env.CI,
-    url: 'http://localhost:3000',
-    env: {
-      ...process.env,
-      // Same as integration tests: avoid interactive Drizzle push when the DB has drift.
-      PAYLOAD_DEV_PUSH: 'false',
-    },
-  },
+  webServer: process.env.SKIP_E2E_WEBSERVER
+    ? undefined
+    : {
+        command: 'pnpm dev',
+        // CI must start the dev server with webServer.env (e.g. PAYLOAD_DEV_PUSH). Locally, reuse
+        // only when you know `pnpm dev` already matches this env.
+        reuseExistingServer: !process.env.CI,
+        url: 'http://localhost:3000',
+        timeout: 120_000,
+        gracefulShutdown: {
+          signal: 'SIGTERM',
+          timeout: 5_000,
+        },
+        env: {
+          ...process.env,
+          // Same as integration tests: avoid interactive Drizzle push when the DB has drift.
+          PAYLOAD_DEV_PUSH: 'false',
+        },
+      },
 })

@@ -21,7 +21,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 import type { DefaultDocumentIDType, Where } from 'payload'
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 export const ProductsCollection: CollectionOverride = ({ defaultCollection }) => ({
   ...defaultCollection,
@@ -57,7 +57,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
     meta: true,
   },
   fields: [
-    { name: 'title', type: 'text', required: true },
+    { name: 'title', type: 'text', label: t('products.title'), required: true },
     {
       type: 'tabs',
       tabs: [
@@ -83,17 +83,20 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
             {
               name: 'gallery',
               type: 'array',
+              label: t('products.gallery'),
               minRows: 1,
               fields: [
                 {
                   name: 'image',
                   type: 'upload',
+                  label: t('products.image'),
                   relationTo: 'media',
                   required: true,
                 },
                 {
                   name: 'variantOption',
                   type: 'relationship',
+                  label: t('products.variantOption'),
                   relationTo: 'variantOptions',
                   admin: {
                     condition: (data) => {
@@ -141,7 +144,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
               blocks: [CallToAction, Content, MediaBlock],
             },
           ],
-          label: PL.tab.content,
+          label: t('tab.content'),
         },
         {
           fields: [
@@ -149,6 +152,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
             {
               name: 'relatedProducts',
               type: 'relationship',
+              label: t('products.relatedProducts'),
               filterOptions: ({ id }) => {
                 if (id) {
                   return {
@@ -168,11 +172,11 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
               relationTo: 'products',
             },
           ],
-          label: PL.tab.productDetails,
+          label: t('tab.productDetails'),
         },
         {
           name: 'meta',
-          label: PL.tab.seo,
+          label: t('tab.seo'),
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -199,6 +203,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
     {
       name: 'categories',
       type: 'relationship',
+      label: t('products.categories'),
       admin: {
         position: 'sidebar',
         sortOptions: 'title',

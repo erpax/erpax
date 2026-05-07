@@ -1,32 +1,46 @@
+/**
+ * Test User Seeding Utilities
+ *
+ * Helper functions for creating and cleaning up test users
+ * via Payload's Local API.
+ *
+ * @see https://payloadcms.com/docs/test/overview
+ */
+
 import type { Payload } from 'payload'
 
-import type configModule from '../../src/payload.config.js'
-
+/**
+ * Standard test user credentials.
+ * Use these for consistent test authentication across the test suite.
+ */
 export const testUser = {
   email: 'dev@payloadcms.com',
   password: 'test',
-  name: 'E2E',
-  username: 'e2e-user',
+  name: 'Test User',
+  username: 'test-user',
   roles: ['super-admin' as const, 'user' as const],
 }
 
-async function loadPayload(): Promise<{ getPayload: typeof import('payload').getPayload; config: typeof configModule }> {
-  process.env.PAYLOAD_DEV_PUSH = 'false'
-  const [{ getPayload }, { default: config }] = await Promise.all([
-    import('payload'),
-    import('../../src/payload.config.js'),
-  ])
-  return { getPayload, config }
-}
-
 /**
- * Seeds a test user for e2e admin tests.
+ * Seed a test user via Payload Local API.
+ *
+ * This function:
+ * 1. Deletes any existing user with the same email
+ * 2. Creates a fresh test user with super-admin privileges
+ *
+ * @param payload - Initialized Payload instance
+ * @returns Promise that resolves when seeding is complete
+ *
+ * @example
+ * ```ts
+ * beforeAll(async () => {
+ *   payload = await getPayload({ config })
+ *   await seedTestUser(payload)
+ * })
+ * ```
  */
-export async function seedTestUser(): Promise<void> {
-  const { getPayload, config } = await loadPayload()
-  const payload: Payload = await getPayload({ config })
-
-  // Delete existing test user if any
+export async function seedTestUser(payload: Payload): Promise<void> {
+  // Delete existing test user if any (idempotent)
   await payload.delete({
     collection: 'users',
     where: {
@@ -35,6 +49,8 @@ export async function seedTestUser(): Promise<void> {
       },
     },
     overrideAccess: true,
+  }).catch(() => {
+    // Ignore errors - user may not exist
   })
 
   // Create fresh test user
@@ -46,12 +62,15 @@ export async function seedTestUser(): Promise<void> {
 }
 
 /**
- * Cleans up test user after tests
+ * Clean up test user via Payload Local API.
+ *
+ * Call this in afterAll() to ensure test users don't pollute
+ * the database between test runs.
+ *
+ * @param payload - Initialized Payload instance
+ * @returns Promise that resolves when cleanup is complete
  */
-export async function cleanupTestUser(): Promise<void> {
-  const { getPayload, config } = await loadPayload()
-  const payload: Payload = await getPayload({ config })
-
+export async function cleanupTestUser(payload: Payload): Promise<void> {
   await payload.delete({
     collection: 'users',
     where: {
@@ -60,5 +79,7 @@ export async function cleanupTestUser(): Promise<void> {
       },
     },
     overrideAccess: true,
+  }).catch(() => {
+    // Ignore errors - user may not exist
   })
 }

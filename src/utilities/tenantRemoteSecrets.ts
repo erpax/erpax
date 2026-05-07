@@ -126,13 +126,13 @@ export async function resolveResendDefaultsForMessage(
       if (tenant?.emailDefaultFromAddress?.trim()) {
         return {
           address: tenant.emailDefaultFromAddress.trim(),
-          name: tenant.emailDefaultFromName?.trim() || 'erpax',
+          name: tenant.emailDefaultFromName?.trim() || 'site',
         }
       }
     }
   }
   return {
     address: process.env.EMAIL_DEFAULT_FROM_ADDRESS || 'onboarding@resend.dev',
-    name: process.env.EMAIL_DEFAULT_FROM_NAME || 'erpax',
+    name: process.env.EMAIL_DEFAULT_FROM_NAME || 'site',
   }
 }

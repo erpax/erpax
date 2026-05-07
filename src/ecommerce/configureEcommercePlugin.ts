@@ -37,8 +37,8 @@ export function createEcommercePlugin(): Plugin {
       isDocumentOwner,
     },
     currencies: {
-      defaultCurrency: 'USD',
-      supportedCurrencies: [USD, EUR, GBP],
+      defaultCurrency: 'EUR',
+      supportedCurrencies: [EUR, GBP, USD],
     },
     customers: {
       slug: 'users',

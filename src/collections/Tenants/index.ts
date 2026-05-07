@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/access/isSuperAdmin'
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
 
 const superAdminSecretsAccess = {
@@ -20,24 +20,31 @@ export const Tenants: CollectionConfig = {
   admin: {
     useAsTitle: 'name',
   },
+  labels: {
+    singular: t('tenants.singular'),
+    plural: t('tenants.plural'),
+  },
   fields: [
     {
       name: 'name',
       type: 'text',
+      label: t('tenants.name'),
       required: true,
     },
     {
       name: 'domain',
       type: 'text',
+      label: t('tenants.domain'),
       admin: {
-        description: PL.tenants.domainHelp,
+        description: t('tenants.domainHelp'),
       },
     },
     {
       name: 'slug',
       type: 'text',
+      label: t('tenants.slug'),
       admin: {
-        description: PL.tenants.slugHelp,
+        description: t('tenants.slugHelp'),
       },
       index: true,
       required: true,
@@ -45,8 +52,9 @@ export const Tenants: CollectionConfig = {
     {
       name: 'allowPublicRead',
       type: 'checkbox',
+      label: t('tenants.allowPublicRead'),
       admin: {
-        description: PL.tenants.allowPublicReadHelp,
+        description: t('tenants.allowPublicReadHelp'),
         position: 'sidebar',
       },
       defaultValue: false,
@@ -55,24 +63,27 @@ export const Tenants: CollectionConfig = {
     {
       name: 'publicSiteUrl',
       type: 'text',
+      label: t('tenants.publicSiteUrl'),
       admin: {
-        description: PL.tenants.publicSiteUrlHelp,
+        description: t('tenants.publicSiteUrlHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'stripePublishableKey',
       type: 'text',
+      label: t('tenants.stripePublishableKey'),
       admin: {
-        description: PL.tenants.stripePublishableHelp,
+        description: t('tenants.stripePublishableHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'stripeSecretKey',
       type: 'text',
+      label: t('tenants.stripeSecretKey'),
       admin: {
-        description: PL.tenants.stripeSecretHelp,
+        description: t('tenants.stripeSecretHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,
@@ -80,8 +91,9 @@ export const Tenants: CollectionConfig = {
     {
       name: 'stripeWebhookSecret',
       type: 'text',
+      label: t('tenants.stripeWebhookSecret'),
       admin: {
-        description: PL.tenants.stripeWebhookHelp,
+        description: t('tenants.stripeWebhookHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,
@@ -89,16 +101,18 @@ export const Tenants: CollectionConfig = {
     {
       name: 'integrationSettings',
       type: 'json',
+      label: t('tenants.integrationSettings'),
       admin: {
-        description: PL.tenants.integrationSettingsHelp,
+        description: t('tenants.integrationSettingsHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'resendApiKey',
       type: 'text',
+      label: t('tenants.resendApiKey'),
       admin: {
-        description: PL.tenants.resendApiKeyHelp,
+        description: t('tenants.resendApiKeyHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,
@@ -106,24 +120,27 @@ export const Tenants: CollectionConfig = {
     {
       name: 'emailDefaultFromAddress',
       type: 'text',
+      label: t('tenants.emailDefaultFromAddress'),
       admin: {
-        description: PL.tenants.emailDefaultFromAddressHelp,
+        description: t('tenants.emailDefaultFromAddressHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'emailDefaultFromName',
       type: 'text',
+      label: t('tenants.emailDefaultFromName'),
       admin: {
-        description: PL.tenants.emailDefaultFromNameHelp,
+        description: t('tenants.emailDefaultFromNameHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'mcpApiKey',
       type: 'text',
+      label: t('tenants.mcpApiKey'),
       admin: {
-        description: PL.tenants.mcpApiKeyHelp,
+        description: t('tenants.mcpApiKeyHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,

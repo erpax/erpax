@@ -9,8 +9,8 @@ export const RowLabel: React.FC<RowLabelProps> = () => {
   const data = useRowLabel<NonNullable<Header['navItems']>[number]>()
 
   const label = data?.data?.link?.label
-    ? `${t('erpax:rowLabelNav')} ${data.rowNumber !== undefined ? data.rowNumber + 1 : ''}: ${data?.data?.link?.label}`
-    : t('erpax:rowLabelEmpty')
+    ? `${t('rowLabelNav')} ${data.rowNumber !== undefined ? data.rowNumber + 1 : ''}: ${data?.data?.link?.label}`
+    : t('rowLabelEmpty')
 
   return <div>{label}</div>
 }

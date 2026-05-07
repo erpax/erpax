@@ -10,6 +10,7 @@ import { Providers } from '@/components/providers'
 import { InitTheme } from '@/components/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { draftMode } from 'next/headers'
+import { getTranslations } from 'next-intl/server'
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
@@ -17,6 +18,7 @@ import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
+  const t = await getTranslations()
 
   return (
     <html className={cn(GeistSans.variable, GeistMono.variable)} lang="en" suppressHydrationWarning>
@@ -30,6 +32,15 @@ export default async function FrontendRootLayout({ children }: { children: React
           <AdminBar
             adminBarProps={{
               preview: isEnabled,
+            }}
+            labels={{
+              dashboard: t('dashboard'),
+              page: t('page'),
+              pages: t('pages'),
+              post: t('post'),
+              posts: t('posts'),
+              project: t('project'),
+              projects: t('projects'),
             }}
           />
           {children}

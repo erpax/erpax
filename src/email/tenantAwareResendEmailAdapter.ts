@@ -15,7 +15,7 @@ import {
 export const tenantAwareResendEmailAdapter: EmailAdapter = ({ payload }) => ({
   name: 'tenant-resend',
   defaultFromAddress: process.env.EMAIL_DEFAULT_FROM_ADDRESS || 'onboarding@resend.dev',
-  defaultFromName: process.env.EMAIL_DEFAULT_FROM_NAME || 'erpax',
+  defaultFromName: process.env.EMAIL_DEFAULT_FROM_NAME || 'site',
   sendEmail: async (message) => {
     const apiKey = await resolveResendApiKeyForMessage(payload, message)
     if (!apiKey) {

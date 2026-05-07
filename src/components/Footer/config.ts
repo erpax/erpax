@@ -1,10 +1,12 @@
 import type { GlobalConfig } from 'payload'
 
 import { link } from '@/fields/link'
+import { t } from '@/i18n'
 import { revalidateFooter } from './hooks/revalidateFooter'
 
 export const Footer: GlobalConfig = {
   slug: 'footer',
+  label: t('footer.global'),
   access: {
     read: () => true,
   },
@@ -12,6 +14,7 @@ export const Footer: GlobalConfig = {
     {
       name: 'navItems',
       type: 'array',
+      label: t('footer.navItems'),
       fields: [
         link({
           appearances: false,

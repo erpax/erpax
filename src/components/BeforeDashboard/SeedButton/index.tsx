@@ -10,9 +10,9 @@ const SuccessMessage: React.FC = () => {
   const t = translate as (key: string) => string
   return (
     <div>
-      {t('erpax:successLead')}
+      {t('successLead')}
       <a target="_blank" href="/">
-        {t('erpax:successVisit')}
+        {t('successVisit')}
       </a>
     </div>
   )
@@ -30,15 +30,15 @@ export const SeedButton: React.FC = () => {
       e.preventDefault()
 
       if (seeded) {
-        toast.info(t('erpax:toastAlreadySeeded'))
+        toast.info(t('toastAlreadySeeded'))
         return
       }
       if (loading) {
-        toast.info(t('erpax:toastSeeding'))
+        toast.info(t('toastSeeding'))
         return
       }
       if (error) {
-        toast.error(t('erpax:toastGenericError'))
+        toast.error(t('toastGenericError'))
         return
       }
 
@@ -54,7 +54,7 @@ export const SeedButton: React.FC = () => {
                     resolve(true)
                     setSeeded(true)
                   } else {
-                    reject(new Error(t('erpax:toastSeedError')))
+                    reject(new Error(t('toastSeedError')))
                   }
                 })
                 .catch((err) => {
@@ -65,9 +65,9 @@ export const SeedButton: React.FC = () => {
             }
           }),
           {
-            loading: t('erpax:toastSeedingLoading'),
+            loading: t('toastSeedingLoading'),
             success: <SuccessMessage />,
-            error: t('erpax:toastSeedError'),
+            error: t('toastSeedError'),
           },
         )
       } catch (err) {
@@ -79,14 +79,14 @@ export const SeedButton: React.FC = () => {
   )
 
   let message = ''
-  if (loading) message = t('erpax:seeding')
-  if (seeded) message = t('erpax:seeded')
-  if (error) message = t('erpax:seedError').replace('{{error}}', error)
+  if (loading) message = t('seeding')
+  if (seeded) message = t('seeded')
+  if (error) message = t('seedError').replace('{{error}}', error)
 
   return (
     <Fragment>
       <button className="seedButton" onClick={handleClick} type="button">
-        {t('erpax:seedButton')}
+        {t('seedButton')}
       </button>
       {message}
     </Fragment>

@@ -1,11 +1,12 @@
 import { Field } from 'payload'
 
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 export const searchFields: Field[] = [
   {
     name: 'slug',
     type: 'text',
+    label: t('search.slug'),
     index: true,
     admin: {
       readOnly: true,
@@ -13,7 +14,7 @@ export const searchFields: Field[] = [
   },
   {
     name: 'meta',
-    label: PL.search.meta,
+    label: t('search.meta'),
     type: 'group',
     index: true,
     admin: {
@@ -23,23 +24,23 @@ export const searchFields: Field[] = [
       {
         type: 'text',
         name: 'title',
-        label: PL.search.title,
+        label: t('search.title'),
       },
       {
         type: 'text',
         name: 'description',
-        label: PL.search.description,
+        label: t('search.description'),
       },
       {
         name: 'image',
-        label: PL.search.image,
+        label: t('search.image'),
         type: 'upload',
         relationTo: 'media',
       },
     ],
   },
   {
-    label: PL.search.categories,
+    label: t('search.categories'),
     name: 'categories',
     type: 'array',
     admin: {
@@ -49,14 +50,17 @@ export const searchFields: Field[] = [
       {
         name: 'relationTo',
         type: 'text',
+        label: t('search.relationTo'),
       },
       {
         name: 'categoryID',
         type: 'text',
+        label: t('search.categoryID'),
       },
       {
         name: 'title',
         type: 'text',
+        label: t('search.categoryTitle'),
       },
     ],
   },

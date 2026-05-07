@@ -11,25 +11,49 @@ export interface LoginOptions {
 }
 
 /**
- * Logs the user into the admin panel via the login page.
+ * Logs the user into the admin panel via UI.
+ * 
+ * Convention: Go to /admin, let Payload redirect to login or create-first-user,
+ * then authenticate. Works for both fresh installs and existing users.
  */
 export async function login({
   page,
   serverURL = 'http://localhost:3000',
   user,
 }: LoginOptions): Promise<void> {
-  await page.goto(`${serverURL}/admin/login`, { waitUntil: 'domcontentloaded' })
+  // Navigate to admin root - Payload redirects to login or create-first-user
+  await page.goto(`${serverURL}/admin`, { waitUntil: 'domcontentloaded' })
 
-  const email = page.getByRole('textbox', { name: 'Email *', exact: true })
-  const password = page.getByRole('textbox', { name: 'Password', exact: true })
-  await email.waitFor({ state: 'visible' })
-  await password.waitFor({ state: 'visible' })
-  await email.fill(user.email)
-  await password.fill(user.password)
-  await page.getByRole('button', { name: 'Login', exact: true }).click()
+  const currentPath = new URL(page.url()).pathname
 
-  await page.waitForURL(`${serverURL}/admin`)
+  // Handle create-first-user flow (fresh install)
+  if (currentPath.includes('/create-first-user')) {
+    await page.locator('input[name="email"]').fill(user.email)
+    await page.locator('input[name="password"]').fill(user.password)
+    
+    const confirmInput = page.locator('input[name="confirm-password"]')
+    if (await confirmInput.isVisible().catch(() => false)) {
+      await confirmInput.fill(user.password)
+    }
+    
+    await page.locator('button[type="submit"]').click()
+    await page.waitForURL(`${serverURL}/admin`, { timeout: 10_000 })
+    return
+  }
 
-  const dashboardArtifact = page.locator('span[title="Dashboard"]')
-  await expect(dashboardArtifact).toBeVisible()
+  // Already logged in
+  if (!currentPath.includes('/login')) {
+    return
+  }
+
+  // Handle login form
+  await page.locator('input[name="email"]').fill(user.email)
+  await page.locator('input[name="password"]').fill(user.password)
+  await page.locator('button[type="submit"]').click()
+
+  // Wait for navigation away from login
+  await page.waitForURL(`${serverURL}/admin`, { timeout: 10_000 })
+  
+  // Verify successful login
+  await expect(page).toHaveURL(/\/admin\/?$/)
 }

@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 import {
   FixedToolbarFeature,
@@ -22,7 +22,7 @@ export const FormBlock: Block = {
     {
       name: 'enableIntro',
       type: 'checkbox',
-      label: PL.formBlock.enableIntro,
+      label: t('formBlock.enableIntro'),
     },
     {
       name: 'introContent',
@@ -40,14 +40,14 @@ export const FormBlock: Block = {
           ]
         },
       }),
-      label: PL.formBlock.introContent,
+      label: t('formBlock.introContent'),
     },
   ],
   graphQL: {
     singularName: 'FormBlock',
   },
   labels: {
-    plural: PL.formBlock.plural,
-    singular: PL.formBlock.singular,
+    plural: t('formBlock.plural'),
+    singular: t('formBlock.singular'),
   },
 }

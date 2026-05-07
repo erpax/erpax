@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 import {
   FixedToolbarFeature,
@@ -16,10 +16,10 @@ export const Banner: Block = {
       type: 'select',
       defaultValue: 'info',
       options: [
-        { label: PL.banner.info, value: 'info' },
-        { label: PL.banner.warning, value: 'warning' },
-        { label: PL.banner.error, value: 'error' },
-        { label: PL.banner.success, value: 'success' },
+        { label: t('banner.info'), value: 'info' },
+        { label: t('banner.warning'), value: 'warning' },
+        { label: t('banner.error'), value: 'error' },
+        { label: t('banner.success'), value: 'success' },
       ],
       required: true,
     },

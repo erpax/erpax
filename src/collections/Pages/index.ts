@@ -14,7 +14,7 @@ import { importRemoteMediaPagesHook } from '@/utilities/remoteMediaImport'
 import { superAdminOrTenantAdminAccess } from './access/superAdminOrTenantAdmin'
 import { ensureUniqueSlug } from './hooks/ensureUniqueSlug'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 import {
   MetaDescriptionField,
@@ -26,6 +26,10 @@ import {
 
 export const Pages: CollectionConfig<'pages'> = {
   slug: 'pages',
+  labels: {
+    singular: t('pages.singular'),
+    plural: t('pages.plural'),
+  },
   access: {
     create: superAdminOrTenantAdminAccess,
     delete: superAdminOrTenantAdminAccess,
@@ -61,6 +65,7 @@ export const Pages: CollectionConfig<'pages'> = {
     {
       name: 'title',
       type: 'text',
+      label: t('pages.title'),
       localized: true,
       required: true,
     },
@@ -69,13 +74,14 @@ export const Pages: CollectionConfig<'pages'> = {
       tabs: [
         {
           fields: [hero],
-          label: PL.tab.hero,
+          label: t('tab.hero'),
         },
         {
           fields: [
             {
               name: 'layout',
               type: 'blocks',
+              label: t('pages.layout'),
               localized: true,
               blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock],
               required: true,
@@ -84,11 +90,11 @@ export const Pages: CollectionConfig<'pages'> = {
               },
             },
           ],
-          label: PL.tab.content,
+          label: t('tab.content'),
         },
         {
           name: 'meta',
-          label: PL.tab.seo,
+          label: t('tab.seo'),
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -118,6 +124,7 @@ export const Pages: CollectionConfig<'pages'> = {
     {
       name: 'publishedAt',
       type: 'date',
+      label: t('pages.publishedAt'),
       admin: {
         position: 'sidebar',
       },

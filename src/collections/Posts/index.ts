@@ -27,10 +27,14 @@ import {
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 export const Posts: CollectionConfig<'posts'> = {
   slug: 'posts',
+  labels: {
+    singular: t('posts.singular'),
+    plural: t('posts.plural'),
+  },
   access: {
     create: authenticated,
     delete: authenticated,
@@ -71,6 +75,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'title',
       type: 'text',
+      label: t('posts.title'),
       localized: true,
       required: true,
     },
@@ -82,6 +87,7 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'heroImage',
               type: 'upload',
+              label: t('posts.heroImage'),
               relationTo: 'media',
             },
             {
@@ -104,13 +110,14 @@ export const Posts: CollectionConfig<'posts'> = {
               required: true,
             },
           ],
-          label: PL.tab.content,
+          label: t('tab.content'),
         },
         {
           fields: [
             {
               name: 'relatedPosts',
               type: 'relationship',
+              label: t('posts.relatedPosts'),
               admin: {
                 position: 'sidebar',
               },
@@ -127,6 +134,7 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'categories',
               type: 'relationship',
+              label: t('posts.categories'),
               admin: {
                 position: 'sidebar',
               },
@@ -134,11 +142,11 @@ export const Posts: CollectionConfig<'posts'> = {
               relationTo: 'categories',
             },
           ],
-          label: PL.tab.meta,
+          label: t('tab.meta'),
         },
         {
           name: 'meta',
-          label: PL.tab.seo,
+          label: t('tab.seo'),
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -168,6 +176,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'publishedAt',
       type: 'date',
+      label: t('posts.publishedAt'),
       admin: {
         date: {
           pickerAppearance: 'dayAndTime',
@@ -188,6 +197,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'authors',
       type: 'relationship',
+      label: t('posts.authors'),
       admin: {
         position: 'sidebar',
       },
@@ -200,6 +210,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'populatedAuthors',
       type: 'array',
+      label: t('posts.populatedAuthors'),
       access: {
         update: () => false,
       },
@@ -211,10 +222,12 @@ export const Posts: CollectionConfig<'posts'> = {
         {
           name: 'id',
           type: 'text',
+          label: t('posts.authorId'),
         },
         {
           name: 'name',
           type: 'text',
+          label: t('posts.authorName'),
         },
       ],
     },

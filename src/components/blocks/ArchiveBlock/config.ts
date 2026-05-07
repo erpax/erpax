@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 import {
   FixedToolbarFeature,
@@ -26,7 +26,7 @@ export const Archive: Block = {
           ]
         },
       }),
-      label: PL.archive.introContent,
+      label: t('archive.introContent'),
     },
     {
       name: 'populateBy',
@@ -34,11 +34,11 @@ export const Archive: Block = {
       defaultValue: 'collection',
       options: [
         {
-          label: PL.archive.collection,
+          label: t('archive.collection'),
           value: 'collection',
         },
         {
-          label: PL.archive.individualSelection,
+          label: t('archive.individualSelection'),
           value: 'selection',
         },
       ],
@@ -50,10 +50,10 @@ export const Archive: Block = {
         condition: (_, siblingData) => siblingData.populateBy === 'collection',
       },
       defaultValue: 'posts',
-      label: PL.archive.collectionsToShow,
+      label: t('archive.collectionsToShow'),
       options: [
         {
-          label: PL.archive.posts,
+          label: t('archive.posts'),
           value: 'posts',
         },
       ],
@@ -65,7 +65,7 @@ export const Archive: Block = {
         condition: (_, siblingData) => siblingData.populateBy === 'collection',
       },
       hasMany: true,
-      label: PL.archive.categoriesToShow,
+      label: t('archive.categoriesToShow'),
       relationTo: 'categories',
     },
     {
@@ -76,7 +76,7 @@ export const Archive: Block = {
         step: 1,
       },
       defaultValue: 10,
-      label: PL.archive.limit,
+      label: t('archive.limit'),
     },
     {
       name: 'selectedDocs',
@@ -85,12 +85,12 @@ export const Archive: Block = {
         condition: (_, siblingData) => siblingData.populateBy === 'selection',
       },
       hasMany: true,
-      label: PL.archive.selection,
+      label: t('archive.selection'),
       relationTo: ['posts'],
     },
   ],
   labels: {
-    plural: PL.archive.plural,
-    singular: PL.archive.singular,
+    plural: t('archive.plural'),
+    singular: t('archive.singular'),
   },
 }

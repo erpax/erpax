@@ -18,8 +18,14 @@ const baseClass = 'loginPage'
 type Props = {
   tenantSlug?: string
   tenantDomain?: string
+  labels: {
+    login: string
+    password: string
+    username: string
+    genericError: string
+  }
 }
-export const Login = ({ tenantSlug, tenantDomain }: Props) => {
+export const Login = ({ tenantSlug, tenantDomain, labels }: Props) => {
   const usernameRef = React.useRef<HTMLInputElement>(null)
   const passwordRef = React.useRef<HTMLInputElement>(null)
   const router = useRouter()
@@ -59,13 +65,13 @@ export const Login = ({ tenantSlug, tenantDomain }: Props) => {
           }
         }
       } else {
-        window.alert('Something went wrong, please try again.')
+        window.alert(labels.genericError)
       }
     } catch (err) {
       if (err instanceof PayloadSDKError && err.status === 400 && err.errors?.[0]?.message) {
         window.alert(err.errors[0].message)
       } else {
-        window.alert('Something went wrong, please try again.')
+        window.alert(labels.genericError)
       }
     }
   }
@@ -75,18 +81,18 @@ export const Login = ({ tenantSlug, tenantDomain }: Props) => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Username
+            {labels.username}
             <input name="username" ref={usernameRef} type="text" />
           </label>
         </div>
         <div>
           <label>
-            Password
+            {labels.password}
             <input name="password" ref={passwordRef} type="password" />
           </label>
         </div>
 
-        <button type="submit">Login</button>
+        <button type="submit">{labels.login}</button>
       </form>
     </div>
   )

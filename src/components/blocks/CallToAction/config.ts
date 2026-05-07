@@ -8,7 +8,7 @@ import {
 } from '@payloadcms/richtext-lexical'
 
 import { linkGroup } from '@/fields/linkGroup'
-import { PL } from '@/i18n/payloadLabels'
+import { t } from '@/i18n'
 
 export const CallToAction: Block = {
   slug: 'cta',
@@ -37,7 +37,7 @@ export const CallToAction: Block = {
     }),
   ],
   labels: {
-    plural: PL.cta.plural,
-    singular: PL.cta.singular,
+    plural: t('cta.plural'),
+    singular: t('cta.singular'),
   },
 }

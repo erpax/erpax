@@ -4,6 +4,7 @@ import { CollectionArchive } from '@/components/CollectionArchive'
 import { PageRange } from '@/components/PageRange'
 import { Pagination } from '@/components/Pagination'
 import configPromise from '@payload-config'
+import { getTranslations } from 'next-intl/server'
 import { getPayload } from 'payload'
 import React from 'react'
 import PageClient from './page.client'
@@ -19,6 +20,7 @@ type Args = {
 
 export default async function Page({ params: paramsPromise }: Args) {
   const { pageNumber } = await paramsPromise
+  const t = await getTranslations()
   const payload = await getPayload({ config: configPromise })
 
   const sanitizedPageNumber = Number(pageNumber)
@@ -38,7 +40,7 @@ export default async function Page({ params: paramsPromise }: Args) {
       <PageClient />
       <div className="container mb-16">
         <div className="prose dark:prose-invert max-w-none">
-          <h1>Posts</h1>
+          <h1>{t('posts')}</h1>
         </div>
       </div>
 
