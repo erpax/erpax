@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { isSuperAdminAccess } from '@/access/isSuperAdmin'
+import { PL } from '@/i18n/payloadLabels'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
 
 export const Tenants: CollectionConfig = {
@@ -24,14 +25,14 @@ export const Tenants: CollectionConfig = {
       name: 'domain',
       type: 'text',
       admin: {
-        description: 'Used for domain-based tenant handling',
+        description: PL.tenants.domainHelp,
       },
     },
     {
       name: 'slug',
       type: 'text',
       admin: {
-        description: 'Used for url paths, example: /tenant-slug/page-slug',
+        description: PL.tenants.slugHelp,
       },
       index: true,
       required: true,
@@ -40,8 +41,7 @@ export const Tenants: CollectionConfig = {
       name: 'allowPublicRead',
       type: 'checkbox',
       admin: {
-        description:
-          'If checked, logging in is not required to read. Useful for building public pages.',
+        description: PL.tenants.allowPublicReadHelp,
         position: 'sidebar',
       },
       defaultValue: false,

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import React from 'react'
 
+import { EcommerceClientProvider } from '@/components/EcommerceClientProvider'
 import { IntlChrome } from '@/components/IntlChrome'
 import { routing } from '@/i18n/routing'
 import localization from '@/i18n/localization'
@@ -24,7 +25,9 @@ export default async function LocaleLayout({ children, params }: Args) {
 
   return (
     <div dir={direction} lang={locale}>
-      <IntlChrome locale={locale}>{children}</IntlChrome>
+      <EcommerceClientProvider>
+        <IntlChrome locale={locale}>{children}</IntlChrome>
+      </EcommerceClientProvider>
     </div>
   )
 }

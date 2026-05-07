@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <entry>
+    <id>tag:blogger.com,1999:blog.post-1</id>
+    <published>2024-01-15T10:00:00.000Z</published>
+    <updated>2024-01-15T10:00:00.000Z</updated>
+    <title type="text">Hello from Blogger</title>
+    <content type="html">&lt;p&gt;First paragraph.&lt;/p&gt;&lt;h2&gt;Section&lt;/h2&gt;&lt;p&gt;Second &lt;b&gt;line&lt;/b&gt;.&lt;/p&gt;</content>
+    <summary type="html">Short summary.</summary>
+    <link rel="alternate" type="text/html" href="https://example.blogspot.com/2024/01/hello-from-blogger.html"/>
+    <category term="News"/>
+  </entry>
+</feed>

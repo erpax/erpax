@@ -19,6 +19,10 @@ const localization = {
       label: 'German (Deutsch)',
     },
     {
+      code: 'bg',
+      label: 'Bulgarian (Български)',
+    },
+    {
       code: 'ja',
       label: 'Japanese (日本語)',
     },

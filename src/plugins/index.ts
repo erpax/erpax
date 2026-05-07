@@ -7,18 +7,19 @@ import { Plugin } from 'payload'
 import { revalidateRedirects } from '@/hooks/revalidateRedirects'
 import { GenerateTitle, GenerateURL } from '@payloadcms/plugin-seo/types'
 import { FixedToolbarFeature, HeadingFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
-import { searchFields } from '@/search/fieldOverrides'
-import { beforeSyncWithSearch } from '@/search/beforeSync'
+import { searchFields } from '@/components/search/fieldOverrides'
+import { beforeSyncWithSearch } from '@/components/search/beforeSync'
 
 import localization from '@/i18n/localization'
-import { Page, Post } from '@/payload-types'
+import { PL } from '@/i18n/payloadLabels'
+import { Page, Post, Product } from '@/payload-types'
 import { getServerSideURL } from '@/utilities/getURL'
 
-const generateTitle: GenerateTitle<Post | Page> = ({ doc }) => {
+const generateTitle: GenerateTitle<Post | Page | Product> = ({ doc }) => {
   return doc?.title ? `${doc.title} | erpax` : 'erpax'
 }
 
-const generateURL: GenerateURL<Post | Page> = ({ doc }) => {
+const generateURL: GenerateURL<Post | Page | Product> = ({ doc }) => {
   const base = getServerSideURL()
   const loc = localization.defaultLocale
 
@@ -30,12 +31,16 @@ const generateURL: GenerateURL<Post | Page> = ({ doc }) => {
     return `${base}/${loc}/posts/${doc.slug}`
   }
 
+  if ('priceInUSD' in doc || 'enableVariants' in doc) {
+    return `${base}/${loc}/products/${doc.slug}`
+  }
+
   return doc.slug === 'home' ? `${base}/${loc}` : `${base}/${loc}/${doc.slug}`
 }
 
 export const plugins: Plugin[] = [
   redirectsPlugin({
-    collections: ['pages', 'posts'],
+    collections: ['pages', 'posts', 'products'],
     overrides: {
       // @ts-expect-error - This is a valid override, mapped fields don't resolve to the same type
       fields: ({ defaultFields }) => {
@@ -44,7 +49,7 @@ export const plugins: Plugin[] = [
             return {
               ...field,
               admin: {
-                description: 'You will need to rebuild the website when changing this field.',
+                description: PL.plugins.redirectFromHelp,
               },
             }
           }
@@ -91,7 +96,7 @@ export const plugins: Plugin[] = [
     },
   }),
   searchPlugin({
-    collections: ['posts'],
+    collections: ['posts', 'products'],
     beforeSync: beforeSyncWithSearch,
     searchOverrides: {
       fields: ({ defaultFields }) => {

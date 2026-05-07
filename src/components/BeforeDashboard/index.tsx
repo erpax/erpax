@@ -1,4 +1,7 @@
+'use client'
+
 import { Banner } from '@payloadcms/ui/elements/Banner'
+import { useTranslation } from '@payloadcms/ui'
 import React from 'react'
 
 import { SeedButton } from './SeedButton'
@@ -7,61 +10,63 @@ import './index.scss'
 const baseClass = 'before-dashboard'
 
 const BeforeDashboard: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <div className={baseClass}>
       <Banner className={`${baseClass}__banner`} type="success">
-        <h4>Welcome to your dashboard!</h4>
+        <h4>{t('erpax:dashboardTitle')}</h4>
       </Banner>
-      Here&apos;s what to do next:
+      {t('erpax:dashboardIntro')}
       <ul className={`${baseClass}__instructions`}>
         <li>
           <SeedButton />
-          {' with a few pages, posts, and projects to jump-start your new site, then '}
+          {t('erpax:dashboardSeedMid')}
           <a href="/" target="_blank">
-            visit your website
+            {t('erpax:dashboardVisitSite')}
           </a>
-          {' to see the results.'}
+          {t('erpax:dashboardSeedEnd')}
         </li>
         <li>
-          {'Modify your '}
+          {t('erpax:dashboardLi2a')}
           <a
             href="https://payloadcms.com/docs/configuration/collections"
             rel="noopener noreferrer"
             target="_blank"
           >
-            collections
+            {t('erpax:dashboardLi2Collections')}
           </a>
-          {' and add more '}
+          {t('erpax:dashboardLi2b')}
           <a
             href="https://payloadcms.com/docs/fields/overview"
             rel="noopener noreferrer"
             target="_blank"
           >
-            fields
+            {t('erpax:dashboardLi2Fields')}
           </a>
-          {' as needed. If you are new to Payload, we also recommend you check out the '}
+          {t('erpax:dashboardLi2c')}
           <a
             href="https://payloadcms.com/docs/getting-started/what-is-payload"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Getting Started
+            {t('erpax:dashboardLi2StartDocs')}
           </a>
-          {' docs.'}
+          {t('erpax:dashboardLi2d')}
         </li>
-        <li>
-          Commit and push your changes to the repository to trigger a redeployment of your project.
-        </li>
+        <li>{t('erpax:dashboardLi3')}</li>
       </ul>
-      {'Pro Tip: This block is a '}
+      {t('erpax:dashboardProTip')}
       <a
         href="https://payloadcms.com/docs/custom-components/overview"
         rel="noopener noreferrer"
         target="_blank"
       >
-        custom component
+        {t('erpax:dashboardCustomComponent')}
       </a>
-      , you can remove it at any time by updating your <strong>payload.config</strong>.
+      {t('erpax:dashboardProTipEnd')}
+      <strong>{t('erpax:dashboardPayloadConfig')}</strong>
+      {t('erpax:dashboardProTipFinal')}
     </div>
   )
 }

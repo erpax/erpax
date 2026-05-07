@@ -6,8 +6,8 @@ import { GeistSans } from 'geist/font/sans'
 import React from 'react'
 
 import { AdminBar } from '@/components/AdminBar'
-import { Providers } from '@/providers'
-import { InitTheme } from '@/providers/Theme/InitTheme'
+import { Providers } from '@/components/providers'
+import { InitTheme } from '@/components/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { draftMode } from 'next/headers'
 

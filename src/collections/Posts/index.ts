@@ -11,10 +11,11 @@ import {
 
 import { authenticated } from '../../access/authenticated'
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
-import { Banner } from '../../blocks/Banner/config'
-import { Code } from '../../blocks/Code/config'
-import { MediaBlock } from '../../blocks/MediaBlock/config'
+import { Banner } from '../../components/blocks/Banner/config'
+import { Code } from '../../components/blocks/Code/config'
+import { MediaBlock } from '../../components/blocks/MediaBlock/config'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
+import { importRemoteMediaPostsHook } from '@/utilities/remoteMediaImport'
 import { populateAuthors } from './hooks/populateAuthors'
 import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
 
@@ -26,6 +27,7 @@ import {
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
+import { PL } from '@/i18n/payloadLabels'
 
 export const Posts: CollectionConfig<'posts'> = {
   slug: 'posts',
@@ -54,14 +56,14 @@ export const Posts: CollectionConfig<'posts'> = {
         generatePreviewPath({
           slug: typeof data?.slug === 'string' ? data.slug : '',
           collection: 'posts',
-          locale: locale?.code ?? 'en',
+          locale,
         }),
     },
     preview: (data, { locale }) =>
       generatePreviewPath({
         slug: typeof data?.slug === 'string' ? data.slug : '',
         collection: 'posts',
-        locale: locale?.code ?? 'en',
+        locale,
       }),
     useAsTitle: 'title',
   },
@@ -102,7 +104,7 @@ export const Posts: CollectionConfig<'posts'> = {
               required: true,
             },
           ],
-          label: 'Content',
+          label: PL.tab.content,
         },
         {
           fields: [
@@ -132,11 +134,11 @@ export const Posts: CollectionConfig<'posts'> = {
               relationTo: 'categories',
             },
           ],
-          label: 'Meta',
+          label: PL.tab.meta,
         },
         {
           name: 'meta',
-          label: 'SEO',
+          label: PL.tab.seo,
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -219,6 +221,7 @@ export const Posts: CollectionConfig<'posts'> = {
     slugField(),
   ],
   hooks: {
+    beforeChange: [importRemoteMediaPostsHook],
     afterChange: [revalidatePost],
     afterRead: [populateAuthors],
     afterDelete: [revalidateDelete],

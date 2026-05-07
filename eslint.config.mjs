@@ -1,12 +1,36 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
 import nextTs from 'eslint-config-next/typescript'
 import nextVitals from 'eslint-config-next/core-web-vitals'
+import payloadEslintPlugin from '@payloadcms/eslint-plugin'
 
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   {
-    files: ['src/providers/**/*.{ts,tsx}', 'src/Header/**/*.{ts,tsx}'],
+    plugins: {
+      payload: payloadEslintPlugin,
+    },
+    rules: {
+      'payload/no-jsx-import-statements': 'warn',
+      'payload/no-relative-monorepo-imports': 'warn',
+      'payload/no-imports-from-exports-dir': 'warn',
+      'payload/no-imports-from-self': 'warn',
+      'payload/proper-payload-logger-usage': 'warn',
+      'payload/no-non-retryable-assertions': 'off',
+      'payload/no-flaky-assertions': 'off',
+      'payload/no-wait-function': 'off',
+    },
+  },
+  {
+    files: ['tests/e2e/**/*.{ts,tsx}'],
+    rules: {
+      'payload/no-non-retryable-assertions': 'warn',
+      'payload/no-flaky-assertions': 'warn',
+      'payload/no-wait-function': 'warn',
+    },
+  },
+  {
+    files: ['src/components/providers/**/*.{ts,tsx}', 'src/components/Header/**/*.{ts,tsx}'],
     rules: {
       // Payload website template theme / header sync (React 19 compiler hook noise)
       'react-hooks/set-state-in-effect': 'off',
@@ -33,6 +57,7 @@ const eslintConfig = defineConfig([
   },
   globalIgnores([
     '.next/**',
+    '.open-next/**',
     'out/**',
     'build/**',
     'next-env.d.ts',

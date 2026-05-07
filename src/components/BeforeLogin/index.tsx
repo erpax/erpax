@@ -1,11 +1,16 @@
+'use client'
+
 import React from 'react'
+import { useTranslation } from '@payloadcms/ui'
 
 const BeforeLogin: React.FC = () => {
+  const { t } = useTranslation()
+
   return (
     <div>
       <p>
-        <b>Welcome to your dashboard!</b>
-        {' This is where site admins will log in to manage your website.'}
+        <b>{t('erpax:beforeLoginBold')}</b>
+        {t('erpax:beforeLoginRest')}
       </p>
     </div>
   )

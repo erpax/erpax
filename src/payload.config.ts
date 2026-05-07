@@ -2,28 +2,41 @@ import fs from 'fs'
 import path from 'path'
 import { PHASE_PRODUCTION_BUILD } from 'next/constants'
 import { sqliteD1Adapter } from '@payloadcms/db-d1-sqlite'
+import { resendAdapter } from '@payloadcms/email-resend'
 import { buildConfig, PayloadRequest } from 'payload'
 import { fileURLToPath } from 'url'
 import type { CloudflareContext } from '@opennextjs/cloudflare'
 import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
+import { importExportPlugin } from '@payloadcms/plugin-import-export'
+import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { r2Storage } from '@payloadcms/storage-r2'
+import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
+import { ar } from '@payloadcms/translations/languages/ar'
+import { bg } from '@payloadcms/translations/languages/bg'
+import { de } from '@payloadcms/translations/languages/de'
+import { en } from '@payloadcms/translations/languages/en'
+import { es } from '@payloadcms/translations/languages/es'
+import { ja } from '@payloadcms/translations/languages/ja'
 
-import { isSuperAdmin } from './access/isSuperAdmin'
+import { isSuperAdmin, isSuperAdminAccess } from './access/isSuperAdmin'
 import { Categories } from './collections/Categories'
 import { Media } from './collections/Media'
 import { Pages } from './collections/Pages'
 import { Posts } from './collections/Posts'
 import { Tenants } from './collections/Tenants'
 import { Users } from './collections/Users'
-import { Footer } from './Footer/config'
-import { Header } from './Header/config'
+import { Footer } from './components/Footer/config'
+import { Header } from './components/Header/config'
 import { plugins as payloadPlugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
+import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
 import { deriveSecretFromPayloadSecret } from './utilities/deriveSecret'
 import { getServerSideURL } from './utilities/getURL'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
+import { erpaxAdminTranslations } from './i18n/erpaxAdminTranslations'
 import localization from './i18n/localization'
+import { PL } from './i18n/payloadLabels'
 
 import type { Config } from './payload-types'
 
@@ -76,7 +89,28 @@ async function getCloudflare(): Promise<CloudflareContext> {
   return _cloudflare
 }
 
+const resendApiKey = process.env.RESEND_API_KEY
+
+let sharp: typeof import('sharp') | undefined
+if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
+  try {
+    sharp = (await import('sharp')).default
+  } catch {
+    sharp = undefined
+  }
+}
+
 export default buildConfig({
+  ...(sharp ? { sharp } : {}),
+  ...(resendApiKey
+    ? {
+        email: resendAdapter({
+          apiKey: resendApiKey,
+          defaultFromAddress: process.env.EMAIL_DEFAULT_FROM_ADDRESS || 'onboarding@resend.dev',
+          defaultFromName: process.env.EMAIL_DEFAULT_FROM_NAME || 'erpax',
+        }),
+      }
+    : {}),
   admin: {
     components: {
       beforeLogin: ['@/components/BeforeLogin'],
@@ -88,9 +122,9 @@ export default buildConfig({
     user: Users.slug,
     livePreview: {
       breakpoints: [
-        { label: 'Mobile', name: 'mobile', width: 375, height: 667 },
-        { label: 'Tablet', name: 'tablet', width: 768, height: 1024 },
-        { label: 'Desktop', name: 'desktop', width: 1440, height: 900 },
+        { label: PL.livePreview.mobile, name: 'mobile', width: 375, height: 667 },
+        { label: PL.livePreview.tablet, name: 'tablet', width: 768, height: 1024 },
+        { label: PL.livePreview.desktop, name: 'desktop', width: 1440, height: 900 },
       ],
     },
   },
@@ -110,14 +144,42 @@ export default buildConfig({
       bucket: (await getCloudflare()).env.R2,
       collections: { media: true },
     }),
+    createEcommercePlugin(),
     multiTenantPlugin<Config>({
       collections: {
         pages: {},
         posts: {},
         media: {},
         categories: {},
+        products: {},
+        carts: {},
+        orders: {},
+        addresses: {},
+        transactions: {},
+        variantTypes: {},
+        variants: {},
+        variantOptions: {},
       },
       tenantField: {
+        defaultValue: async ({ req }) => {
+          const idType = req.payload.collections.tenants?.customIDType ?? req.payload.db.defaultIDType
+          const tenantFromCookie = getTenantFromCookie(req.headers, idType === 'number' ? 'number' : 'text')
+          if (!tenantFromCookie) return null
+
+          const { totalDocs } = await req.payload.count({
+            collection: 'tenants',
+            overrideAccess: false,
+            req,
+            user: req.user,
+            where: {
+              id: {
+                in: [tenantFromCookie],
+              },
+            },
+          })
+
+          return totalDocs > 0 ? tenantFromCookie : null
+        },
         access: {
           read: () => true,
           update: ({ req }) => {
@@ -131,6 +193,41 @@ export default buildConfig({
       },
       userHasAccessToAllTenants: (user) => isSuperAdmin(user),
     }),
+    importExportPlugin({
+      /** Empty list = enable import/export UI on every collection (see plugin runtime). */
+      collections: [],
+      overrideExportCollection: ({ collection }) => ({
+        ...collection,
+        access: {
+          ...collection.access,
+          create: isSuperAdminAccess,
+          read: isSuperAdminAccess,
+          delete: isSuperAdminAccess,
+        },
+      }),
+      overrideImportCollection: ({ collection }) => ({
+        ...collection,
+        access: {
+          ...collection.access,
+          create: isSuperAdminAccess,
+          read: isSuperAdminAccess,
+          delete: isSuperAdminAccess,
+        },
+      }),
+    }),
+    mcpPlugin({
+      collections: {
+        pages: { enabled: true },
+        posts: { enabled: true },
+        media: { enabled: true },
+        categories: { enabled: true },
+        products: { enabled: true },
+      },
+      globals: {
+        header: { enabled: true },
+        footer: { enabled: true },
+      },
+    }),
     ...payloadPlugins,
   ],
   secret: process.env.PAYLOAD_SECRET || '',
@@ -139,6 +236,10 @@ export default buildConfig({
   },
   logger: isProduction ? cloudflareLogger : undefined,
   localization,
+  i18n: {
+    supportedLanguages: { ar, bg, de, en, es, ja },
+    translations: erpaxAdminTranslations,
+  },
   jobs: {
     access: {
       run: ({ req }: { req: PayloadRequest }): boolean => {
@@ -150,15 +251,24 @@ export default buildConfig({
       },
     },
     tasks: [],
+    /** Dedicated/long-lived Node only. On Cloudflare Workers use `/api/payload-jobs/run` + Schedules/cron. */
+    ...(process.env.PAYLOAD_JOB_AUTORUN === 'true'
+      ? {
+          autoRun: [{ cron: '*/5 * * * *', queue: 'default', limit: 25 }],
+          shouldAutoRun: async () => true,
+        }
+      : {}),
   },
 })
 
 function getCloudflareContextFromWrangler(): Promise<CloudflareContext> {
+  const isNextProductionBuild = process.env.NEXT_PHASE === PHASE_PRODUCTION_BUILD
   return import(/* webpackIgnore: true */ `${'__wrangler'.replaceAll('_', '')}`).then(
     ({ getPlatformProxy }) =>
       getPlatformProxy({
         environment: process.env.CLOUDFLARE_ENV,
-        remoteBindings: isProduction,
+        // `next build` must not use remote D1/R2 (requires `wrangler login`); runtime uses OpenNext context.
+        remoteBindings: isProduction && !isNextProductionBuild,
       } satisfies GetPlatformProxyOptions),
   )
 }

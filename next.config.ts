@@ -16,6 +16,12 @@ const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    /** Local Wrangler/Miniflare D1 can SQLITE_BUSY when many workers hit the DB during prerender. */
+    staticGenerationRetryCount: 5,
+    staticGenerationMaxConcurrency: 1,
+    staticGenerationMinPagesPerWorker: 999,
+  },
   // Windows Turbopack + Payload UI SCSS (see Next.js issue #86431)
   sassOptions: {
     loadPaths: ['./node_modules/@payloadcms/ui/dist/scss/'],

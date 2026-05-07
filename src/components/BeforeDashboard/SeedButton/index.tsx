@@ -1,20 +1,24 @@
 'use client'
 
 import React, { Fragment, useCallback, useState } from 'react'
-import { toast } from '@payloadcms/ui'
+import { toast, useTranslation } from '@payloadcms/ui'
 
 import './index.scss'
 
-const SuccessMessage: React.FC = () => (
-  <div>
-    Database seeded! You can now{' '}
-    <a target="_blank" href="/">
-      visit your website
-    </a>
-  </div>
-)
+const SuccessMessage: React.FC = () => {
+  const { t } = useTranslation()
+  return (
+    <div>
+      {t('erpax:successLead')}
+      <a target="_blank" href="/">
+        {t('erpax:successVisit')}
+      </a>
+    </div>
+  )
+}
 
 export const SeedButton: React.FC = () => {
+  const { t } = useTranslation()
   const [loading, setLoading] = useState(false)
   const [seeded, setSeeded] = useState(false)
   const [error, setError] = useState<null | string>(null)
@@ -24,15 +28,15 @@ export const SeedButton: React.FC = () => {
       e.preventDefault()
 
       if (seeded) {
-        toast.info('Database already seeded.')
+        toast.info(t('erpax:toastAlreadySeeded'))
         return
       }
       if (loading) {
-        toast.info('Seeding already in progress.')
+        toast.info(t('erpax:toastSeeding'))
         return
       }
       if (error) {
-        toast.error(`An error occurred, please refresh and try again.`)
+        toast.error(t('erpax:toastGenericError'))
         return
       }
 
@@ -48,39 +52,39 @@ export const SeedButton: React.FC = () => {
                     resolve(true)
                     setSeeded(true)
                   } else {
-                    reject('An error occurred while seeding.')
+                    reject(new Error(t('erpax:toastSeedError')))
                   }
                 })
-                .catch((error) => {
-                  reject(error)
+                .catch((err) => {
+                  reject(err)
                 })
-            } catch (error) {
-              reject(error)
+            } catch (err) {
+              reject(err)
             }
           }),
           {
-            loading: 'Seeding with data....',
+            loading: t('erpax:toastSeedingLoading'),
             success: <SuccessMessage />,
-            error: 'An error occurred while seeding.',
+            error: t('erpax:toastSeedError'),
           },
         )
       } catch (err) {
-        const error = err instanceof Error ? err.message : String(err)
-        setError(error)
+        const errMessage = err instanceof Error ? err.message : String(err)
+        setError(errMessage)
       }
     },
-    [loading, seeded, error],
+    [loading, seeded, error, t],
   )
 
   let message = ''
-  if (loading) message = ' (seeding...)'
-  if (seeded) message = ' (done!)'
-  if (error) message = ` (error: ${error})`
+  if (loading) message = t('erpax:seeding')
+  if (seeded) message = t('erpax:seeded')
+  if (error) message = t('erpax:seedError').replace('{{error}}', error)
 
   return (
     <Fragment>
-      <button className="seedButton" onClick={handleClick}>
-        Seed your database
+      <button className="seedButton" onClick={handleClick} type="button">
+        {t('erpax:seedButton')}
       </button>
       {message}
     </Fragment>

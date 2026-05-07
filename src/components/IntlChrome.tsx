@@ -2,8 +2,8 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import React from 'react'
 
-import { Footer } from '@/Footer/Component'
-import { Header } from '@/Header/Component'
+import { Footer } from '@/components/Footer/Component'
+import { Header } from '@/components/Header/Component'
 
 export async function IntlChrome({
   locale,

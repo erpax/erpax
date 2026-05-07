@@ -1,18 +1,20 @@
 import type { CollectionConfig } from 'payload'
 
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
-import { Archive } from '../../blocks/ArchiveBlock/config'
-import { CallToAction } from '../../blocks/CallToAction/config'
-import { Content } from '../../blocks/Content/config'
-import { FormBlock } from '../../blocks/Form/config'
-import { MediaBlock } from '../../blocks/MediaBlock/config'
-import { hero } from '@/heros/config'
+import { Archive } from '../../components/blocks/ArchiveBlock/config'
+import { CallToAction } from '../../components/blocks/CallToAction/config'
+import { Content } from '../../components/blocks/Content/config'
+import { FormBlock } from '../../components/blocks/Form/config'
+import { MediaBlock } from '../../components/blocks/MediaBlock/config'
+import { hero } from '@/components/heros/config'
 import { slugField } from 'payload'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
+import { importRemoteMediaPagesHook } from '@/utilities/remoteMediaImport'
 import { superAdminOrTenantAdminAccess } from './access/superAdminOrTenantAdmin'
 import { ensureUniqueSlug } from './hooks/ensureUniqueSlug'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
+import { PL } from '@/i18n/payloadLabels'
 
 import {
   MetaDescriptionField,
@@ -44,14 +46,14 @@ export const Pages: CollectionConfig<'pages'> = {
         generatePreviewPath({
           slug: typeof data?.slug === 'string' ? data.slug : '',
           collection: 'pages',
-          locale: locale?.code ?? 'en',
+          locale,
         }),
     },
     preview: (data, { locale }) =>
       generatePreviewPath({
         slug: typeof data?.slug === 'string' ? data.slug : '',
         collection: 'pages',
-        locale: locale?.code ?? 'en',
+        locale,
       }),
     useAsTitle: 'title',
   },
@@ -67,7 +69,7 @@ export const Pages: CollectionConfig<'pages'> = {
       tabs: [
         {
           fields: [hero],
-          label: 'Hero',
+          label: PL.tab.hero,
         },
         {
           fields: [
@@ -82,11 +84,11 @@ export const Pages: CollectionConfig<'pages'> = {
               },
             },
           ],
-          label: 'Content',
+          label: PL.tab.content,
         },
         {
           name: 'meta',
-          label: 'SEO',
+          label: PL.tab.seo,
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -136,7 +138,7 @@ export const Pages: CollectionConfig<'pages'> = {
   ],
   hooks: {
     afterChange: [revalidatePage],
-    beforeChange: [populatePublishedAt],
+    beforeChange: [importRemoteMediaPagesHook, populatePublishedAt],
     afterDelete: [revalidateDelete],
   },
   versions: {

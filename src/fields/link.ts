@@ -1,16 +1,20 @@
 import type { Field, GroupField } from 'payload'
 
 import deepMerge from '@/utilities/deepMerge'
+import { PL } from '@/i18n/payloadLabels'
 
 export type LinkAppearances = 'default' | 'outline'
 
-export const appearanceOptions: Record<LinkAppearances, { label: string; value: string }> = {
+export const appearanceOptions: Record<
+  LinkAppearances,
+  { label: (typeof PL.link.appearanceDefault); value: string }
+> = {
   default: {
-    label: 'Default',
+    label: PL.link.appearanceDefault,
     value: 'default',
   },
   outline: {
-    label: 'Outline',
+    label: PL.link.appearanceOutline,
     value: 'outline',
   },
 }
@@ -42,11 +46,11 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
             defaultValue: 'reference',
             options: [
               {
-                label: 'Internal link',
+                label: PL.link.internal,
                 value: 'reference',
               },
               {
-                label: 'Custom URL',
+                label: PL.link.customUrl,
                 value: 'custom',
               },
             ],
@@ -60,7 +64,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
               },
               width: '50%',
             },
-            label: 'Open in new tab',
+            label: PL.link.openInNewTab,
           },
         ],
       },
@@ -74,7 +78,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
       admin: {
         condition: (_, siblingData) => siblingData?.type === 'reference',
       },
-      label: 'Document to link to',
+      label: PL.link.documentToLinkTo,
       relationTo: ['pages', 'posts'],
       required: true,
     },
@@ -84,7 +88,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
       admin: {
         condition: (_, siblingData) => siblingData?.type === 'custom',
       },
-      label: 'Custom URL',
+      label: PL.link.customUrl,
       required: true,
     },
   ]
@@ -108,7 +112,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
           admin: {
             width: '50%',
           },
-          label: 'Label',
+          label: PL.link.label,
           required: true,
         },
       ],
@@ -128,7 +132,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
       name: 'appearance',
       type: 'select',
       admin: {
-        description: 'Choose how the link should be rendered.',
+        description: PL.link.appearanceDescription,
       },
       defaultValue: 'default',
       options: appearanceOptionsToUse,
