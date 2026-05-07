@@ -94,6 +94,17 @@ type HtmlToLexicalOptions = {
   omitImages: boolean
 }
 
+type LexicalContent = {
+  root: {
+    type: 'root'
+    children: LexicalChild[]
+    direction: 'ltr' | 'rtl' | null
+    format: string
+    indent: number
+    version: number
+  }
+}
+
 function textNode(text: string, format = 0): LexicalText {
   return {
     type: 'text',
@@ -348,7 +359,7 @@ function loadJsonRecord(filePath: string): Record<string, number> {
   return out
 }
 
-function htmlToLexicalContent(html: string, options: HtmlToLexicalOptions) {
+function htmlToLexicalContent(html: string, options: HtmlToLexicalOptions): LexicalContent {
   const trimmed = html?.trim()
   if (!trimmed) {
     return {
@@ -473,16 +484,7 @@ type PostPayload = {
   publishedAt?: string | null
   authors?: number[]
   categories?: number[]
-  content: {
-    root: {
-      type: 'root'
-      children: LexicalChild[]
-      direction: 'ltr' | 'rtl' | null
-      format: string
-      indent: number
-      version: number
-    }
-  }
+  content: LexicalContent
   meta?: {
     title?: string | null
     description?: string | null

@@ -31,6 +31,10 @@ export const readAccess: Access<User> = ({ req, id }) => {
     getCollectionIDType({ payload: req.payload, collectionSlug: 'tenants' }),
   )
   const adminTenantAccessIDs = getUserTenantIDs(req.user, 'tenant-admin')
+  const currentUserID =
+    typeof req.user === 'object' && req.user && 'id' in req.user
+      ? (req.user as { id?: string | number }).id
+      : undefined
 
   if (selectedTenant) {
     const hasTenantAccess = adminTenantAccessIDs.some((tid) => tid === selectedTenant)
@@ -43,18 +47,21 @@ export const readAccess: Access<User> = ({ req, id }) => {
     }
   }
 
+  const or: Where[] = []
+  if (currentUserID !== undefined) {
+    or.push({
+      id: {
+        equals: currentUserID,
+      },
+    })
+  }
+  or.push({
+    'tenants.tenant': {
+      in: adminTenantAccessIDs,
+    },
+  })
+
   return {
-    or: [
-      {
-        id: {
-          equals: req.user.id,
-        },
-      },
-      {
-        'tenants.tenant': {
-          in: adminTenantAccessIDs,
-        },
-      },
-    ],
+    or,
   } as Where
 }

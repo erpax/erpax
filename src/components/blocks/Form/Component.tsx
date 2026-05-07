@@ -1,5 +1,5 @@
 'use client'
-import type { FormFieldBlock, Form as FormType } from '@payloadcms/plugin-form-builder/types'
+import type { Form as FormType } from '@payloadcms/plugin-form-builder/types'
 
 import { PayloadSDKError } from '@payloadcms/sdk'
 import { useRouter } from 'next/navigation'
@@ -31,9 +31,11 @@ export const FormBlock: React.FC<
     form: { id: formID, confirmationMessage, confirmationType, redirect, submitButtonLabel } = {},
     introContent,
   } = props
+  const numericFormID = typeof formID === 'string' ? Number(formID) : formID
+  const formElementID = String(formID ?? 'form')
 
-  const formMethods = useForm({
-    defaultValues: formFromProps.fields,
+  const formMethods = useForm<Record<string, unknown>>({
+    defaultValues: (formFromProps.fields as unknown as Record<string, unknown>) ?? {},
   })
   const {
     control,
@@ -48,15 +50,22 @@ export const FormBlock: React.FC<
   const router = useRouter()
 
   const onSubmit = useCallback(
-    (data: FormFieldBlock[]) => {
+    (data: Record<string, unknown>) => {
       let loadingTimerID: ReturnType<typeof setTimeout>
       const submitForm = async () => {
         setError(undefined)
 
         const dataToSend = Object.entries(data).map(([name, value]) => ({
           field: name,
-          value,
+          value: typeof value === 'string' ? value : JSON.stringify(value ?? ''),
         }))
+
+        if (typeof numericFormID !== 'number' || Number.isNaN(numericFormID)) {
+          setError({
+            message: 'Invalid form id.',
+          })
+          return
+        }
 
         // delay loading indicator by 1s
         loadingTimerID = setTimeout(() => {
@@ -67,7 +76,7 @@ export const FormBlock: React.FC<
           await getPayloadSdk().create({
             collection: 'form-submissions',
             data: {
-              form: formID!,
+              form: numericFormID,
               submissionData: dataToSend,
             },
           })
@@ -103,7 +112,7 @@ export const FormBlock: React.FC<
 
       void submitForm()
     },
-    [router, formID, redirect, confirmationType],
+    [router, numericFormID, redirect, confirmationType],
   )
 
   return (
@@ -119,7 +128,7 @@ export const FormBlock: React.FC<
           {isLoading && !hasSubmitted && <p>Loading, please wait...</p>}
           {error && <div>{`${error.status || '500'}: ${error.message || ''}`}</div>}
           {!hasSubmitted && (
-            <form id={formID} onSubmit={handleSubmit(onSubmit)}>
+            <form id={formElementID} onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4 last:mb-0">
                 {formFromProps &&
                   formFromProps.fields &&
@@ -144,7 +153,7 @@ export const FormBlock: React.FC<
                   })}
               </div>
 
-              <Button form={formID} type="submit" variant="default">
+              <Button form={formElementID} type="submit" variant="default">
                 {submitButtonLabel}
               </Button>
             </form>

@@ -10,7 +10,8 @@ import './index.scss'
 const baseClass = 'before-dashboard'
 
 const BeforeDashboard: React.FC = () => {
-  const { t } = useTranslation()
+  const { t: translate } = useTranslation()
+  const t = translate as (key: string) => string
 
   return (
     <div className={baseClass}>

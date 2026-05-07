@@ -122,9 +122,9 @@ export default buildConfig({
     user: Users.slug,
     livePreview: {
       breakpoints: [
-        { label: PL.livePreview.mobile, name: 'mobile', width: 375, height: 667 },
-        { label: PL.livePreview.tablet, name: 'tablet', width: 768, height: 1024 },
-        { label: PL.livePreview.desktop, name: 'desktop', width: 1440, height: 900 },
+        { label: PL.livePreview.mobile.en, name: 'mobile', width: 375, height: 667 },
+        { label: PL.livePreview.tablet.en, name: 'tablet', width: 768, height: 1024 },
+        { label: PL.livePreview.desktop.en, name: 'desktop', width: 1440, height: 900 },
       ],
     },
   },

@@ -2,6 +2,7 @@ import type { FieldHook, Where } from 'payload'
 
 import { ValidationError } from 'payload'
 
+import { isSuperAdmin } from '@/access/isSuperAdmin'
 import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
 import { extractID } from '@/utilities/extractID'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
@@ -45,7 +46,7 @@ export const ensureUniqueUsername: FieldHook = async ({ data, originalDoc, req, 
     const tenantIDs = getUserTenantIDs(req.user)
     // if the user is an admin or has access to more than 1 tenant
     // provide a more specific error message
-    if (req.user.roles?.includes('super-admin') || tenantIDs.length > 1) {
+    if (isSuperAdmin(req.user) || tenantIDs.length > 1) {
       const attemptedTenantChange = await req.payload.findByID({
         // @ts-ignore - selectedTenant will match DB ID type
         id: selectedTenant,

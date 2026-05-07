@@ -6,7 +6,8 @@ import { toast, useTranslation } from '@payloadcms/ui'
 import './index.scss'
 
 const SuccessMessage: React.FC = () => {
-  const { t } = useTranslation()
+  const { t: translate } = useTranslation()
+  const t = translate as (key: string) => string
   return (
     <div>
       {t('erpax:successLead')}
@@ -18,7 +19,8 @@ const SuccessMessage: React.FC = () => {
 }
 
 export const SeedButton: React.FC = () => {
-  const { t } = useTranslation()
+  const { t: translate } = useTranslation()
+  const t = translate as (key: string) => string
   const [loading, setLoading] = useState(false)
   const [seeded, setSeeded] = useState(false)
   const [error, setError] = useState<null | string>(null)

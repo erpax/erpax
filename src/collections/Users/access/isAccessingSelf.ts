@@ -1,5 +1,4 @@
-import { User } from '@/payload-types'
-
-export const isAccessingSelf = ({ id, user }: { user?: User; id?: string | number }): boolean => {
-  return user ? Boolean(user.id === id) : false
+export const isAccessingSelf = ({ id, user }: { user?: unknown; id?: string | number }): boolean => {
+  if (!user || typeof user !== 'object' || !('id' in user)) return false
+  return Boolean((user as { id?: string | number }).id === id)
 }

@@ -1,13 +1,14 @@
 import type { Field, GroupField } from 'payload'
 
 import deepMerge from '@/utilities/deepMerge'
+import type { PayloadLabel } from '@/i18n/payloadLabels'
 import { PL } from '@/i18n/payloadLabels'
 
 export type LinkAppearances = 'default' | 'outline'
 
 export const appearanceOptions: Record<
   LinkAppearances,
-  { label: (typeof PL.link.appearanceDefault); value: string }
+  { label: PayloadLabel; value: LinkAppearances }
 > = {
   default: {
     label: PL.link.appearanceDefault,

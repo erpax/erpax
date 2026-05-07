@@ -284,7 +284,7 @@ export function createImportRemoteMediaHook(
 
     const record = data as Record<string, unknown>
     const localization = req.payload.config.localization
-    const localeCodes = localization?.localeCodes ?? []
+    const localeCodes = localization ? localization.localeCodes : []
     const tenantId = tenantIdFromDoc(record)
     const resolveUrl = createResolveUrl(req, tenantId)
 
