@@ -52,7 +52,11 @@ export const Users: CollectionConfig = {
     defaultColumns: ['name', 'email'],
     useAsTitle: 'name',
   },
-  auth: true,
+  auth: {
+    // With no outbound email configured, avoid verification (and the send on create/first-user).
+    // Set `RESEND_API_KEY` to enable verify + verification emails.
+    verify: Boolean(process.env.RESEND_API_KEY?.trim()),
+  },
   endpoints: [externalUsersLogin],
   fields: [
     {
@@ -97,6 +101,7 @@ export const Users: CollectionConfig = {
       name: 'username',
       type: 'text',
       label: localeRecord('users.username'),
+      required: false,
       hooks: {
         beforeValidate: [ensureUniqueUsername],
       },

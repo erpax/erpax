@@ -4,20 +4,33 @@ import { ValidationError } from 'payload'
 
 import { isSuperAdmin } from '@/access/isSuperAdmin'
 import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
-import { extractID } from '@/utilities/extractID'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { getCollectionIDType } from '@/utilities/getCollectionIDType'
 
-export const ensureUniqueUsername: FieldHook = async ({ data, originalDoc, req, value }) => {
-  // if value is unchanged, skip validation
-  if (originalDoc.username === value) {
-    return value
+/** Blank / omitted username is allowed for any number of users; uniqueness applies only to non-empty values. */
+function normalizeUsername(value: unknown): string | null {
+  if (value === undefined || value === null) return null
+  if (typeof value !== 'string') return null
+  const t = value.trim()
+  return t === '' ? null : t
+}
+
+export const ensureUniqueUsername: FieldHook = async ({ originalDoc, req, value }) => {
+  const next = normalizeUsername(value)
+  const previous = normalizeUsername(originalDoc?.username)
+
+  if (previous === next) {
+    return next
+  }
+
+  if (next === null) {
+    return null
   }
 
   const constraints: Where[] = [
     {
       username: {
-        equals: value,
+        equals: next,
       },
     },
   ]
@@ -56,7 +69,7 @@ export const ensureUniqueUsername: FieldHook = async ({ data, originalDoc, req, 
       throw new ValidationError({
         errors: [
           {
-            message: `The "${attemptedTenantChange.name}" tenant already has a user with the username "${value}". Usernames must be unique per tenant.`,
+            message: `The "${attemptedTenantChange.name}" tenant already has a user with the username "${next}". Usernames must be unique per tenant.`,
             path: 'username',
           },
         ],
@@ -66,12 +79,12 @@ export const ensureUniqueUsername: FieldHook = async ({ data, originalDoc, req, 
     throw new ValidationError({
       errors: [
         {
-          message: `A user with the username ${value} already exists. Usernames must be unique per tenant.`,
+          message: `A user with the username ${next} already exists. Usernames must be unique per tenant.`,
           path: 'username',
         },
       ],
     })
   }
 
-  return value
+  return next
 }

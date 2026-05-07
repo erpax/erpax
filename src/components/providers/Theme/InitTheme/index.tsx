@@ -1,12 +1,20 @@
-import Script from 'next/script'
+'use client'
+
 import React from 'react'
 
 import { defaultTheme, themeLocalStorageKey } from '../ThemeSelector/types'
 
+/**
+ * Blocking theme script must only exist in the SSR tree. React 19 warns if a
+ * `<script>` is rendered while hydrating on the client (see next-themes #385).
+ */
 export const InitTheme: React.FC = () => {
+  if (typeof window !== 'undefined') {
+    return null
+  }
+
   return (
-    // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
-    <Script
+    <script
       dangerouslySetInnerHTML={{
         __html: `
   (function () {
@@ -44,7 +52,7 @@ export const InitTheme: React.FC = () => {
   `,
       }}
       id="theme-script"
-      strategy="beforeInteractive"
+      suppressHydrationWarning
     />
   )
 }

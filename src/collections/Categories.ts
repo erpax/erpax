@@ -30,5 +30,37 @@ export const Categories: CollectionConfig = {
     slugField({
       position: undefined,
     }),
+    {
+      name: 'parent',
+      type: 'relationship',
+      relationTo: 'categories',
+      label: 'Parent Category',
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
+      name: 'breadcrumbs',
+      type: 'array',
+      admin: {
+        hidden: true,
+        readOnly: true,
+      },
+      fields: [
+        {
+          name: 'doc',
+          type: 'relationship',
+          relationTo: 'categories',
+        },
+        {
+          name: 'title',
+          type: 'text',
+        },
+        {
+          name: 'url',
+          type: 'text',
+        },
+      ],
+    },
   ],
 }

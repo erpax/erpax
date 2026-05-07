@@ -184,9 +184,9 @@
   "plugins.mcpGroup": "MCP",
   "plugins.redirectsGroup": "Redirects",
   "plugins.searchGroup": "Search",
-  "categories.singular": "Category",
-  "categories.plural": "Categories",
-  "categories.title": "Title",
+  "categories.singular": "Категорија",
+  "categories.plural": "Категорије",
+  "categories.title": "Наслов",
   "form-submissions.singular": "Form Submission",
   "form-submissions.plural": "Form Submissions",
   "forms.singular": "Form",
@@ -199,9 +199,9 @@
   "header.navItems": "Navigation Items",
   "footer.global": "Footer",
   "footer.navItems": "Navigation Items",
-  "users.singular": "User",
-  "users.plural": "Users",
-  "users.name": "Name",
+  "users.singular": "Корисник",
+  "users.plural": "Корисници",
+  "users.name": "Име",
   "users.roles": "Roles",
   "users.username": "Username",
   "users.orders": "Orders",
@@ -218,9 +218,9 @@
   "formRedirectLabel": "Redirect",
   "formEmailsLabel": "Emails",
   "formConfirmationMessageLabel": "Confirmation Message",
-  "pages.singular": "Page",
-  "pages.plural": "Pages",
-  "pages.title": "Title",
+  "pages.singular": "Страница",
+  "pages.plural": "Странице",
+  "pages.title": "Наслов",
   "pages.layout": "Layout",
   "pages.publishedAt": "Published At",
   "payload-mcp-api-keys.singular": "API Key",
@@ -244,20 +244,5 @@
   "products.categories": "Categories",
   "contentBlock.columns": "Columns",
   "contentBlock.enableLink": "Enable Link",
-  "mediaBlock.media": "Media",
-  "categories": {
-    "singular": "Категорија",
-    "plural": "Категорије",
-    "title": "Наслов"
-  },
-  "pages": {
-    "singular": "Страница",
-    "plural": "Странице",
-    "title": "Наслов"
-  },
-  "users": {
-    "singular": "Корисник",
-    "plural": "Корисници",
-    "name": "Име"
-  }
+  "mediaBlock.media": "Media"
 }

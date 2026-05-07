@@ -184,9 +184,9 @@
   "plugins.mcpGroup": "MCP",
   "plugins.redirectsGroup": "Redirects",
   "plugins.searchGroup": "Search",
-  "categories.singular": "Category",
-  "categories.plural": "Categories",
-  "categories.title": "Title",
+  "categories.singular": "Kategorija",
+  "categories.plural": "Kategorije",
+  "categories.title": "Naslov",
   "form-submissions.singular": "Form Submission",
   "form-submissions.plural": "Form Submissions",
   "forms.singular": "Form",
@@ -199,9 +199,9 @@
   "header.navItems": "Navigation Items",
   "footer.global": "Footer",
   "footer.navItems": "Navigation Items",
-  "users.singular": "User",
-  "users.plural": "Users",
-  "users.name": "Name",
+  "users.singular": "Korisnik",
+  "users.plural": "Korisnici",
+  "users.name": "Ime",
   "users.roles": "Roles",
   "users.username": "Username",
   "users.orders": "Orders",
@@ -218,9 +218,9 @@
   "formRedirectLabel": "Redirect",
   "formEmailsLabel": "Emails",
   "formConfirmationMessageLabel": "Confirmation Message",
-  "pages.singular": "Page",
-  "pages.plural": "Pages",
-  "pages.title": "Title",
+  "pages.singular": "Stranica",
+  "pages.plural": "Stranice",
+  "pages.title": "Naslov",
   "pages.layout": "Layout",
   "pages.publishedAt": "Published At",
   "payload-mcp-api-keys.singular": "API Key",
@@ -244,20 +244,5 @@
   "products.categories": "Categories",
   "contentBlock.columns": "Columns",
   "contentBlock.enableLink": "Enable Link",
-  "mediaBlock.media": "Media",
-  "categories": {
-    "singular": "Kategorija",
-    "plural": "Kategorije",
-    "title": "Naslov"
-  },
-  "pages": {
-    "singular": "Stranica",
-    "plural": "Stranice",
-    "title": "Naslov"
-  },
-  "users": {
-    "singular": "Korisnik",
-    "plural": "Korisnici",
-    "name": "Ime"
-  }
+  "mediaBlock.media": "Media"
 }

@@ -142,6 +142,38 @@ export const Pages: CollectionConfig<'pages'> = {
         return field
       },
     }),
+    {
+      name: 'parent',
+      type: 'relationship',
+      relationTo: 'pages',
+      label: 'Parent Page',
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
+      name: 'breadcrumbs',
+      type: 'array',
+      admin: {
+        hidden: true,
+        readOnly: true,
+      },
+      fields: [
+        {
+          name: 'doc',
+          type: 'relationship',
+          relationTo: 'pages',
+        },
+        {
+          name: 'title',
+          type: 'text',
+        },
+        {
+          name: 'url',
+          type: 'text',
+        },
+      ],
+    },
   ],
   hooks: {
     afterChange: [revalidatePage],

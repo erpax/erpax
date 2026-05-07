@@ -184,8 +184,11 @@ export const plugins: Plugin[] = [
     },
   }),
   nestedDocsPlugin({
-    collections: ['categories'],
+    collections: ['pages', 'categories'],
     generateURL: (docs) => docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
+    generateTitle: (...segments) => segments.map((segment) => segment.title).join(' / '),
+    parentFieldSlug: 'parent',
+    breadcrumbsFieldSlug: 'breadcrumbs',
   }),
   seoPlugin({
     generateTitle,

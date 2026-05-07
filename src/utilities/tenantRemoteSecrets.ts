@@ -8,8 +8,12 @@ export function devStripeSecretFallback(): string {
   return process.env.STRIPE_SECRET_KEY?.trim() || ''
 }
 
-export function devResendKeyFallback(): string {
-  if (process.env.NODE_ENV === 'production') return ''
+/**
+ * Resend API key when no tenant-specific key applies (e.g. first admin user before any tenant
+ * exists, or verification email before `Users.tenants` is populated). Uses `RESEND_API_KEY`
+ * in **all** environments — unlike Stripe/tenant secrets we intentionally allow a platform key.
+ */
+export function globalResendApiKeyFallback(): string {
   return process.env.RESEND_API_KEY?.trim() || ''
 }
 
@@ -102,7 +106,7 @@ export async function resolveResendApiKeyForMessage(
       if (key) return key
     }
   }
-  return devResendKeyFallback()
+  return globalResendApiKeyFallback()
 }
 
 export async function resolveResendDefaultsForMessage(

@@ -2,6 +2,7 @@ import type { Collection, Endpoint } from 'payload'
 
 import { headersWithCors } from '@payloadcms/next/utilities'
 import { APIError, generatePayloadCookie } from 'payload'
+import { checkRateLimit, clearRateLimit, getRateLimitKey, getRateLimitResetSeconds } from '@/utilities/rateLimit'
 
 // A custom endpoint that can be reached by POST request
 // at: /api/users/external-users/login
@@ -14,12 +15,38 @@ export const externalUsersLogin: Endpoint = {
         data = await req.json()
       }
     } catch (error) {
-      // swallow error, data is already empty object
+      // Log JSON parse errors for debugging
+      req.payload.logger.warn('Failed to parse JSON in external users login endpoint', {
+        endpoint: '/api/users/external-users/login',
+        error: error instanceof Error ? error.message : String(error),
+        contentType: req.headers.get('content-type'),
+      })
+      // Continue with empty data object - will fail validation below
     }
     const { password, tenantSlug, tenantDomain, username } = data
 
     if (!username || !password) {
       throw new APIError('Username and Password are required for login.', 400, null, true)
+    }
+
+    // Rate limiting check
+    const clientIp = req.headers.get('cf-connecting-ip') || req.headers.get('x-forwarded-for') || 'unknown'
+    const rateLimitKey = getRateLimitKey(username, clientIp)
+    const { allowed, remaining, resetAt } = checkRateLimit(rateLimitKey)
+
+    if (!allowed) {
+      const resetSeconds = getRateLimitResetSeconds(resetAt)
+      req.payload.logger.warn('Login attempt rate limited', {
+        username,
+        ip: clientIp,
+        resetSeconds,
+      })
+      throw new APIError(
+        `Too many login attempts. Please try again in ${resetSeconds} seconds.`,
+        429, // Too Many Requests
+        null,
+        true,
+      )
     }
 
     const fullTenant = (
@@ -87,6 +114,9 @@ export const externalUsersLogin: Endpoint = {
         })
 
         if (loginAttempt?.token) {
+          // Clear rate limit on successful login
+          clearRateLimit(rateLimitKey)
+
           const collection: Collection = (req.payload.collections as { [key: string]: Collection })[
             'users'
           ]
@@ -94,6 +124,11 @@ export const externalUsersLogin: Endpoint = {
             collectionAuthConfig: collection.config.auth,
             cookiePrefix: req.payload.config.cookiePrefix,
             token: loginAttempt.token,
+          })
+
+          req.payload.logger.info('User login successful', {
+            userId: loginAttempt.user?.id,
+            ip: clientIp,
           })
 
           return Response.json(loginAttempt, {

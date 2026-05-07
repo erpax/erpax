@@ -199,9 +199,9 @@
   "header.navItems": "Navigation Items",
   "footer.global": "Footer",
   "footer.navItems": "Navigation Items",
-  "users.singular": "User",
-  "users.plural": "Users",
-  "users.name": "Name",
+  "users.singular": "Χρήστης",
+  "users.plural": "Χρήστες",
+  "users.name": "Όνομα",
   "users.roles": "Roles",
   "users.username": "Username",
   "users.orders": "Orders",
@@ -244,10 +244,5 @@
   "products.categories": "Categories",
   "contentBlock.columns": "Columns",
   "contentBlock.enableLink": "Enable Link",
-  "mediaBlock.media": "Media",
-  "users": {
-    "singular": "Χρήστης",
-    "plural": "Χρήστες",
-    "name": "Όνομα"
-  }
+  "mediaBlock.media": "Media"
 }

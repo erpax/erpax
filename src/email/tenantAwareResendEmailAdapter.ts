@@ -10,7 +10,8 @@ import {
 
 /**
  * Resend adapter: API key and default From address/name come from the tenant linked to the recipient user(s).
- * Development: falls back to `RESEND_API_KEY` / `EMAIL_DEFAULT_*` when no tenant key matches.
+ * Falls back to `RESEND_API_KEY` / `EMAIL_DEFAULT_*` when no tenant key matches (e.g. first admin before
+ * any tenant or `Users.tenants` row exists — required for verification email on first-user signup).
  */
 export const tenantAwareResendEmailAdapter: EmailAdapter = ({ payload }) => ({
   name: 'tenant-resend',

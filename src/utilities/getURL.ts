@@ -1,4 +1,5 @@
 import canUseDOM from './canUseDOM'
+import { buildOrigin, normalizeUrl, resolvePublicSiteUrl as resolvePublicSiteUrlUtil } from './urlUtils'
 
 /** Optional headers from `next/headers` or Web `Request` — used when `NEXT_PUBLIC_SERVER_URL` is unset. */
 export type ServerOriginOptions = {
@@ -18,11 +19,7 @@ export function getOriginFromHeaders(headers: Headers): string {
     forwardedProto?.split(',')[0]?.trim() ||
     (process.env.NODE_ENV === 'production' ? 'https' : 'http')
 
-  try {
-    return new URL(`${proto}://${host}`).origin
-  } catch {
-    return `${proto}://${host}`.replace(/\/$/, '')
-  }
+  return buildOrigin(proto, host)
 }
 
 /**
@@ -32,16 +29,16 @@ export function getOriginFromHeaders(headers: Headers): string {
 export const getServerSideURL = (options?: ServerOriginOptions): string => {
   const envUrl = process.env.NEXT_PUBLIC_SERVER_URL?.trim()
   if (envUrl) {
-    return envUrl.replace(/\/$/, '')
+    return normalizeUrl(envUrl)
   }
 
   if (options?.headers) {
     const fromHeaders = getOriginFromHeaders(options.headers)
-    if (fromHeaders) return fromHeaders.replace(/\/$/, '')
+    if (fromHeaders) return fromHeaders
   }
 
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
-    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`.replace(/\/$/, '')
+    return normalizeUrl(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`)
   }
 
   return 'http://localhost:3000'
@@ -70,13 +67,5 @@ export function resolvePublicSiteUrl(
   headers: Headers,
   tenant: { publicSiteUrl?: string | null } | null | undefined,
 ): string {
-  const tenantUrl = tenant?.publicSiteUrl?.trim()
-  if (tenantUrl) {
-    try {
-      return new URL(tenantUrl).origin
-    } catch {
-      return tenantUrl.replace(/\/$/, '')
-    }
-  }
-  return getServerSideURL({ headers })
+  return resolvePublicSiteUrlUtil(getServerSideURL({ headers }), tenant)
 }

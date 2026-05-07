@@ -5,9 +5,20 @@ import type { Tenant, User } from '../../../payload-types'
 import { isSuperAdmin } from '../../../access/isSuperAdmin'
 import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
 
-export const createAccess: Access<User> = ({ req }) => {
+export const createAccess: Access<User> = async ({ req }) => {
+  // Allow first user creation (no authentication required)
   if (!req.user) {
-    return false
+    try {
+      const { totalDocs } = await req.payload.count({
+        collection: 'users',
+        overrideAccess: true,
+      })
+      // If no users exist, allow creation of first user
+      return totalDocs === 0
+    } catch {
+      // If error checking users, allow creation (likely first user scenario)
+      return true
+    }
   }
 
   if (isSuperAdmin(req.user)) {
