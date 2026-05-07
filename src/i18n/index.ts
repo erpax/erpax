@@ -21,19 +21,38 @@ export type LocalizedLabel = Record<SupportedLocale, string>
 function flattenToNested(obj: Record<string, string>): Record<string, unknown> {
   const result: Record<string, unknown> = {}
 
-  for (const [key, value] of Object.entries(obj)) {
+  // Sort keys by depth (number of dots) so parent paths are processed first
+  const sortedKeys = Object.keys(obj).sort((a, b) => {
+    const depthA = a.split('.').length
+    const depthB = b.split('.').length
+    return depthA - depthB
+  })
+
+  for (const key of sortedKeys) {
+    const value = obj[key]
     const parts = key.split('.')
     let current: Record<string, unknown> = result
+    let valid = true
 
     for (let i = 0; i < parts.length - 1; i++) {
       const part = parts[i]
       if (!(part in current)) {
         current[part] = {}
       }
-      current = current[part] as Record<string, unknown>
+      const next = current[part]
+      if (typeof next === 'object' && next !== null) {
+        current = next as Record<string, unknown>
+      } else {
+        // Conflict: a leaf value exists where we need a branch
+        // Skip this key to avoid overwriting
+        valid = false
+        break
+      }
     }
 
-    current[parts[parts.length - 1]] = value
+    if (valid) {
+      current[parts[parts.length - 1]] = value
+    }
   }
 
   return result
@@ -50,7 +69,7 @@ const messages = {
 } as const
 
 const getMessage = (locale: SupportedLocale, key: string): string => {
-  // Handle nested key lookup (e.g., "tab.hero" -> messages[locale].tab.hero)
+  // First try nested key lookup (for next-intl compatibility)
   const parts = key.split('.')
   let current: unknown = messages[locale]
 
@@ -58,20 +77,29 @@ const getMessage = (locale: SupportedLocale, key: string): string => {
     if (current && typeof current === 'object' && part in current) {
       current = (current as Record<string, unknown>)[part]
     } else {
-      // Try fallback locale
-      current = messages[fallbackLocale]
-      for (const part of parts) {
-        if (current && typeof current === 'object' && part in current) {
-          current = (current as Record<string, unknown>)[part]
-        } else {
-          return key
-        }
-      }
-      return current as string
+      current = undefined
+      break
     }
   }
 
-  return typeof current === 'string' ? current : key
+  if (typeof current === 'string') {
+    return current
+  }
+
+  // Fallback: try flat key lookup directly from the raw messages
+  // This handles cases where nested keys were skipped due to conflicts
+  const flatValue = (flatMessages[locale] as Record<string, string>)[key]
+  if (typeof flatValue === 'string') {
+    return flatValue
+  }
+
+  // Try fallback locale with flat lookup
+  const fallbackValue = (flatMessages[fallbackLocale] as Record<string, string>)[key]
+  if (typeof fallbackValue === 'string') {
+    return fallbackValue
+  }
+
+  return key
 }
 
 export function t(key: string): LocalizedLabel {
