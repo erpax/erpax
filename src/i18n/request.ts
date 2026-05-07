@@ -1,9 +1,12 @@
 import { getRequestConfig } from 'next-intl/server'
 import { routing } from './routing'
+import messages, { type SupportedLocale } from './index'
 
-import en from './messages/en.json'
+// Import one JSON to derive the message type structure
+import type enMessages from './messages/en.json'
 
-type Messages = typeof en
+// The messages are already nested in our index.ts export
+type Messages = typeof enMessages
 
 declare global {
   // Use type safe message keys with `next-intl`
@@ -19,8 +22,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale
   }
 
+  // Use pre-transformed nested messages from index.ts
+  const localeMessages = messages[locale as SupportedLocale]
+
   return {
     locale,
-    messages: (await import(`./messages/${locale}.json`)).default,
+    messages: localeMessages,
   }
 })
