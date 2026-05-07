@@ -148,8 +148,8 @@ export interface Config {
     | ('false' | 'none' | 'null')
     | false
     | null
-    | ('bg' | 'en' | 'es' | 'de' | 'ja' | 'ar')
-    | ('bg' | 'en' | 'es' | 'de' | 'ja' | 'ar')[];
+    | ('en' | 'bg' | 'es' | 'de' | 'ja' | 'ar')
+    | ('en' | 'bg' | 'es' | 'de' | 'ja' | 'ar')[];
   globals: {
     header: Header;
     footer: Footer;
@@ -158,7 +158,7 @@ export interface Config {
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
   };
-  locale: 'bg' | 'en' | 'es' | 'de' | 'ja' | 'ar';
+  locale: 'en' | 'bg' | 'es' | 'de' | 'ja' | 'ar';
   widgets: {
     collections: CollectionsWidget;
   };
@@ -1161,6 +1161,9 @@ export interface Form {
       )[]
     | null;
   submitButtonLabel?: string | null;
+  /**
+   * Choose whether to show a message on the page or redirect to a different page after submission.
+   */
   confirmationType?: ('message' | 'redirect') | null;
   confirmationMessage?: {
     root: {
@@ -1180,6 +1183,9 @@ export interface Form {
   redirect?: {
     url: string;
   };
+  /**
+   * Send custom emails when the form is submitted. Use comma-separated recipient lists. Use {{fieldName}} to insert field values.
+   */
   emails?:
     | {
         emailTo?: string | null;
@@ -1224,7 +1230,7 @@ export interface Export {
   page?: number | null;
   sort?: string | null;
   sortOrder?: ('asc' | 'desc') | null;
-  locale?: ('all' | 'bg' | 'en' | 'es' | 'de' | 'ja' | 'ar') | null;
+  locale?: ('all' | 'en' | 'bg' | 'es' | 'de' | 'ja' | 'ar') | null;
   drafts?: ('yes' | 'no') | null;
   selectionToUse?: ('currentSelection' | 'currentFilters' | 'all') | null;
   fields?: string[] | null;

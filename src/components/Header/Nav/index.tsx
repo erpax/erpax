@@ -9,6 +9,8 @@ import Link from 'next/link'
 import { SearchIcon } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 
+import { FrontendLocaleSwitcher } from '@/components/LocaleSwitcher/Frontend'
+
 export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
   const navItems = data?.navItems || []
   const locale = useLocale()
@@ -20,9 +22,10 @@ export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
         return <CMSLink key={i} {...link} appearance="link" />
       })}
       <Link href={`/${locale}/search`}>
-        <span className="sr-only">{t('search')}</span>
+        <span className="sr-only">{t('searchLabel')}</span>
         <SearchIcon className="w-5 text-primary" />
       </Link>
+      <FrontendLocaleSwitcher />
     </nav>
   )
 }

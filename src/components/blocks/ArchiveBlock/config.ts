@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 import {
   FixedToolbarFeature,
@@ -26,7 +26,7 @@ export const Archive: Block = {
           ]
         },
       }),
-      label: t('archive.introContent'),
+      label: localeRecord('archive.introContent'),
     },
     {
       name: 'populateBy',
@@ -34,11 +34,11 @@ export const Archive: Block = {
       defaultValue: 'collection',
       options: [
         {
-          label: t('archive.collection'),
+          label: localeRecord('archive.collection'),
           value: 'collection',
         },
         {
-          label: t('archive.individualSelection'),
+          label: localeRecord('archive.individualSelection'),
           value: 'selection',
         },
       ],
@@ -50,10 +50,10 @@ export const Archive: Block = {
         condition: (_, siblingData) => siblingData.populateBy === 'collection',
       },
       defaultValue: 'posts',
-      label: t('archive.collectionsToShow'),
+      label: localeRecord('archive.collectionsToShow'),
       options: [
         {
-          label: t('archive.posts'),
+          label: localeRecord('archive.posts'),
           value: 'posts',
         },
       ],
@@ -65,7 +65,7 @@ export const Archive: Block = {
         condition: (_, siblingData) => siblingData.populateBy === 'collection',
       },
       hasMany: true,
-      label: t('archive.categoriesToShow'),
+      label: localeRecord('archive.categoriesToShow'),
       relationTo: 'categories',
     },
     {
@@ -76,7 +76,7 @@ export const Archive: Block = {
         step: 1,
       },
       defaultValue: 10,
-      label: t('archive.limit'),
+      label: localeRecord('archive.limit'),
     },
     {
       name: 'selectedDocs',
@@ -85,12 +85,12 @@ export const Archive: Block = {
         condition: (_, siblingData) => siblingData.populateBy === 'selection',
       },
       hasMany: true,
-      label: t('archive.selection'),
+      label: localeRecord('archive.selection'),
       relationTo: ['posts'],
     },
   ],
   labels: {
-    plural: t('archive.plural'),
-    singular: t('archive.singular'),
+    plural: localeRecord('archive.plural'),
+    singular: localeRecord('archive.singular'),
   },
 }

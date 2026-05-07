@@ -26,14 +26,14 @@ export const Search: React.FC = () => {
         }}
       >
         <Label htmlFor="search" className="sr-only">
-          {t('search')}
+          {t('searchLabel')}
         </Label>
         <Input
           id="search"
           onChange={(event) => {
             setValue(event.target.value)
           }}
-          placeholder={t('search')}
+          placeholder={t('searchLabel')}
         />
         <button type="submit" className="sr-only">
           {t('submit')}

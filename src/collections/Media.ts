@@ -7,13 +7,13 @@ import {
 } from '@payloadcms/richtext-lexical'
 import { anyone } from '../access/anyone'
 import { authenticated } from '../access/authenticated'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export const Media: CollectionConfig = {
   slug: 'media',
   labels: {
-    singular: t('media.singular'),
-    plural: t('media.plural'),
+    singular: localeRecord('media.singular'),
+    plural: localeRecord('media.plural'),
   },
   access: {
     create: authenticated,
@@ -25,12 +25,12 @@ export const Media: CollectionConfig = {
     {
       name: 'alt',
       type: 'text',
-      label: t('media.alt'),
+      label: localeRecord('media.alt'),
     },
     {
       name: 'caption',
       type: 'richText',
-      label: t('media.caption'),
+      label: localeRecord('media.caption'),
       editor: lexicalEditor({
         features: ({ rootFeatures }) => {
           return [...rootFeatures, FixedToolbarFeature(), InlineToolbarFeature()]

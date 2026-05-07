@@ -14,7 +14,7 @@ import { importRemoteMediaPagesHook } from '@/utilities/remoteMediaImport'
 import { superAdminOrTenantAdminAccess } from './access/superAdminOrTenantAdmin'
 import { ensureUniqueSlug } from './hooks/ensureUniqueSlug'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 import {
   MetaDescriptionField,
@@ -27,8 +27,8 @@ import {
 export const Pages: CollectionConfig<'pages'> = {
   slug: 'pages',
   labels: {
-    singular: t('pages.singular'),
-    plural: t('pages.plural'),
+    singular: localeRecord('pages.singular'),
+    plural: localeRecord('pages.plural'),
   },
   access: {
     create: superAdminOrTenantAdminAccess,
@@ -65,7 +65,7 @@ export const Pages: CollectionConfig<'pages'> = {
     {
       name: 'title',
       type: 'text',
-      label: t('pages.title'),
+      label: localeRecord('pages.title'),
       localized: true,
       required: true,
     },
@@ -74,14 +74,14 @@ export const Pages: CollectionConfig<'pages'> = {
       tabs: [
         {
           fields: [hero],
-          label: t('tab.hero'),
+          label: localeRecord('tab.hero'),
         },
         {
           fields: [
             {
               name: 'layout',
               type: 'blocks',
-              label: t('pages.layout'),
+              label: localeRecord('pages.layout'),
               localized: true,
               blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock],
               required: true,
@@ -90,11 +90,11 @@ export const Pages: CollectionConfig<'pages'> = {
               },
             },
           ],
-          label: t('tab.content'),
+          label: localeRecord('tab.content'),
         },
         {
           name: 'meta',
-          label: t('tab.seo'),
+          label: localeRecord('tab.seo'),
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -124,7 +124,7 @@ export const Pages: CollectionConfig<'pages'> = {
     {
       name: 'publishedAt',
       type: 'date',
-      label: t('pages.publishedAt'),
+      label: localeRecord('pages.publishedAt'),
       admin: {
         position: 'sidebar',
       },

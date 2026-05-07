@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
 import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/access/isSuperAdmin'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
 
 const superAdminSecretsAccess = {
@@ -21,30 +21,30 @@ export const Tenants: CollectionConfig = {
     useAsTitle: 'name',
   },
   labels: {
-    singular: t('tenants.singular'),
-    plural: t('tenants.plural'),
+    singular: localeRecord('tenants.singular'),
+    plural: localeRecord('tenants.plural'),
   },
   fields: [
     {
       name: 'name',
       type: 'text',
-      label: t('tenants.name'),
+      label: localeRecord('tenants.name'),
       required: true,
     },
     {
       name: 'domain',
       type: 'text',
-      label: t('tenants.domain'),
+      label: localeRecord('tenants.domain'),
       admin: {
-        description: t('tenants.domainHelp'),
+        description: localeRecord('tenants.domainHelp'),
       },
     },
     {
       name: 'slug',
       type: 'text',
-      label: t('tenants.slug'),
+      label: localeRecord('tenants.slug'),
       admin: {
-        description: t('tenants.slugHelp'),
+        description: localeRecord('tenants.slugHelp'),
       },
       index: true,
       required: true,
@@ -52,9 +52,9 @@ export const Tenants: CollectionConfig = {
     {
       name: 'allowPublicRead',
       type: 'checkbox',
-      label: t('tenants.allowPublicRead'),
+      label: localeRecord('tenants.allowPublicRead'),
       admin: {
-        description: t('tenants.allowPublicReadHelp'),
+        description: localeRecord('tenants.allowPublicReadHelp'),
         position: 'sidebar',
       },
       defaultValue: false,
@@ -63,27 +63,27 @@ export const Tenants: CollectionConfig = {
     {
       name: 'publicSiteUrl',
       type: 'text',
-      label: t('tenants.publicSiteUrl'),
+      label: localeRecord('tenants.publicSiteUrl'),
       admin: {
-        description: t('tenants.publicSiteUrlHelp'),
+        description: localeRecord('tenants.publicSiteUrlHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'stripePublishableKey',
       type: 'text',
-      label: t('tenants.stripePublishableKey'),
+      label: localeRecord('tenants.stripePublishableKey'),
       admin: {
-        description: t('tenants.stripePublishableHelp'),
+        description: localeRecord('tenants.stripePublishableHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'stripeSecretKey',
       type: 'text',
-      label: t('tenants.stripeSecretKey'),
+      label: localeRecord('tenants.stripeSecretKey'),
       admin: {
-        description: t('tenants.stripeSecretHelp'),
+        description: localeRecord('tenants.stripeSecretHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,
@@ -91,9 +91,9 @@ export const Tenants: CollectionConfig = {
     {
       name: 'stripeWebhookSecret',
       type: 'text',
-      label: t('tenants.stripeWebhookSecret'),
+      label: localeRecord('tenants.stripeWebhookSecret'),
       admin: {
-        description: t('tenants.stripeWebhookHelp'),
+        description: localeRecord('tenants.stripeWebhookHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,
@@ -101,18 +101,18 @@ export const Tenants: CollectionConfig = {
     {
       name: 'integrationSettings',
       type: 'json',
-      label: t('tenants.integrationSettings'),
+      label: localeRecord('tenants.integrationSettings'),
       admin: {
-        description: t('tenants.integrationSettingsHelp'),
+        description: localeRecord('tenants.integrationSettingsHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'resendApiKey',
       type: 'text',
-      label: t('tenants.resendApiKey'),
+      label: localeRecord('tenants.resendApiKey'),
       admin: {
-        description: t('tenants.resendApiKeyHelp'),
+        description: localeRecord('tenants.resendApiKeyHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,
@@ -120,27 +120,27 @@ export const Tenants: CollectionConfig = {
     {
       name: 'emailDefaultFromAddress',
       type: 'text',
-      label: t('tenants.emailDefaultFromAddress'),
+      label: localeRecord('tenants.emailDefaultFromAddress'),
       admin: {
-        description: t('tenants.emailDefaultFromAddressHelp'),
+        description: localeRecord('tenants.emailDefaultFromAddressHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'emailDefaultFromName',
       type: 'text',
-      label: t('tenants.emailDefaultFromName'),
+      label: localeRecord('tenants.emailDefaultFromName'),
       admin: {
-        description: t('tenants.emailDefaultFromNameHelp'),
+        description: localeRecord('tenants.emailDefaultFromNameHelp'),
         position: 'sidebar',
       },
     },
     {
       name: 'mcpApiKey',
       type: 'text',
-      label: t('tenants.mcpApiKey'),
+      label: localeRecord('tenants.mcpApiKey'),
       admin: {
-        description: t('tenants.mcpApiKeyHelp'),
+        description: localeRecord('tenants.mcpApiKeyHelp'),
         position: 'sidebar',
       },
       access: superAdminSecretsAccess,

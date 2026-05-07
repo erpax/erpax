@@ -11,7 +11,7 @@ import { searchFields } from '@/components/search/fieldOverrides'
 import { beforeSyncWithSearch } from '@/components/search/beforeSync'
 
 import localization from '@/i18n/localization'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 import { Page, Post, Product } from '@/payload-types'
 import { getServerSideURL } from '@/utilities/getURL'
 
@@ -38,11 +38,6 @@ const generateURL: GenerateURL<Post | Page | Product> = ({ doc }) => {
   return doc.slug === 'home' ? `${base}/${loc}` : `${base}/${loc}/${doc.slug}`
 }
 
-const translateKey =
-  (key: string) =>
-  ({ t }: { t: (k: string) => string }) =>
-    t(`${key}`)
-
 function localizeFormBuilderFields(defaultFields: any[]) {
   return defaultFields.map((field) => {
     if (!field || typeof field !== 'object') return field
@@ -50,17 +45,17 @@ function localizeFormBuilderFields(defaultFields: any[]) {
     if (field.name === 'confirmationType' && field.type === 'radio') {
       return {
         ...field,
-        label: translateKey('formConfirmationTypeLabel'),
+        label: localeRecord('formConfirmationTypeLabel'),
         admin: {
           ...field.admin,
-          description: translateKey('formConfirmationTypeDescription'),
+          description: localeRecord('formConfirmationTypeDescription'),
         },
         options: (field.options || []).map((option: any) => {
           if (option?.value === 'message') {
-            return { ...option, label: translateKey('formConfirmationMessageOption') }
+            return { ...option, label: localeRecord('formConfirmationMessageOption') }
           }
           if (option?.value === 'redirect') {
-            return { ...option, label: translateKey('formConfirmationRedirectOption') }
+            return { ...option, label: localeRecord('formConfirmationRedirectOption') }
           }
           return option
         }),
@@ -70,27 +65,27 @@ function localizeFormBuilderFields(defaultFields: any[]) {
     if (field.name === 'redirect' && field.type === 'group') {
       return {
         ...field,
-        label: translateKey('formRedirectLabel'),
+        label: localeRecord('formRedirectLabel'),
         fields: (field.fields || []).map((subField: any) => {
           if (subField?.name === 'type' && subField.type === 'radio') {
             return {
               ...subField,
               options: (subField.options || []).map((option: any) => {
                 if (option?.value === 'reference') {
-                  return { ...option, label: translateKey('formRedirectTypeInternal') }
+                  return { ...option, label: localeRecord('formRedirectTypeInternal') }
                 }
                 if (option?.value === 'custom') {
-                  return { ...option, label: translateKey('formRedirectTypeCustom') }
+                  return { ...option, label: localeRecord('formRedirectTypeCustom') }
                 }
                 return option
               }),
             }
           }
           if (subField?.name === 'reference') {
-            return { ...subField, label: translateKey('formRedirectReferenceLabel') }
+            return { ...subField, label: localeRecord('formRedirectReferenceLabel') }
           }
           if (subField?.name === 'url') {
-            return { ...subField, label: translateKey('formRedirectURLLabel') }
+            return { ...subField, label: localeRecord('formRedirectURLLabel') }
           }
           return subField
         }),
@@ -100,10 +95,10 @@ function localizeFormBuilderFields(defaultFields: any[]) {
     if (field.name === 'emails' && field.type === 'array') {
       return {
         ...field,
-        label: translateKey('formEmailsLabel'),
+        label: localeRecord('formEmailsLabel'),
         admin: {
           ...field.admin,
-          description: translateKey('formEmailsDescription'),
+          description: localeRecord('formEmailsDescription'),
         },
         fields: (field.fields || []).map((row: any) => {
           if (!row?.fields || !Array.isArray(row.fields)) return row
@@ -113,37 +108,37 @@ function localizeFormBuilderFields(defaultFields: any[]) {
               if (subField?.name === 'emailTo') {
                 return {
                   ...subField,
-                  label: translateKey('formEmailToLabel'),
+                  label: localeRecord('formEmailToLabel'),
                 }
               }
               if (subField?.name === 'cc') {
-                return { ...subField, label: translateKey('formCcLabel') }
+                return { ...subField, label: localeRecord('formCcLabel') }
               }
               if (subField?.name === 'bcc') {
-                return { ...subField, label: translateKey('formBccLabel') }
+                return { ...subField, label: localeRecord('formBccLabel') }
               }
               if (subField?.name === 'replyTo') {
                 return {
                   ...subField,
-                  label: translateKey('formReplyToLabel'),
+                  label: localeRecord('formReplyToLabel'),
                 }
               }
               if (subField?.name === 'emailFrom') {
                 return {
                   ...subField,
-                  label: translateKey('formEmailFromLabel'),
+                  label: localeRecord('formEmailFromLabel'),
                 }
               }
               if (subField?.name === 'subject') {
-                return { ...subField, label: translateKey('formSubjectLabel') }
+                return { ...subField, label: localeRecord('formSubjectLabel') }
               }
               if (subField?.name === 'message') {
                 return {
                   ...subField,
-                  label: translateKey('formMessageLabel'),
+                  label: localeRecord('formMessageLabel'),
                   admin: {
                     ...subField.admin,
-                    description: translateKey('formMessageDescription'),
+                    description: localeRecord('formMessageDescription'),
                   },
                 }
               }
@@ -162,6 +157,13 @@ export const plugins: Plugin[] = [
   redirectsPlugin({
     collections: ['pages', 'posts', 'products'],
     overrides: {
+      admin: {
+        group: localeRecord('plugins.redirectsGroup'),
+      },
+      labels: {
+        plural: localeRecord('redirects.plural'),
+        singular: localeRecord('redirects.singular'),
+      },
       // @ts-expect-error - This is a valid override, mapped fields don't resolve to the same type
       fields: ({ defaultFields }) => {
         return defaultFields.map((field) => {
@@ -169,7 +171,7 @@ export const plugins: Plugin[] = [
             return {
               ...field,
               admin: {
-                description: t('plugins.redirectFromHelp'),
+                description: localeRecord('plugins.redirectFromHelp'),
               },
             }
           }
@@ -194,13 +196,17 @@ export const plugins: Plugin[] = [
       payment: false,
     },
     formOverrides: {
+      labels: {
+        plural: localeRecord('forms.plural'),
+        singular: localeRecord('forms.singular'),
+      },
       fields: ({ defaultFields }) => {
         return localizeFormBuilderFields(
           defaultFields.map((field) => {
           if ('name' in field && field.name === 'confirmationMessage') {
             return {
               ...field,
-              label: translateKey('formConfirmationMessageLabel'),
+              label: localeRecord('formConfirmationMessageLabel'),
               editor: lexicalEditor({
                 features: ({ rootFeatures }) => {
                   return [
@@ -217,11 +223,24 @@ export const plugins: Plugin[] = [
         )
       },
     },
+    formSubmissionOverrides: {
+      labels: {
+        plural: localeRecord('form-submissions.plural'),
+        singular: localeRecord('form-submissions.singular'),
+      },
+    },
   }),
   searchPlugin({
     collections: ['posts', 'products'],
     beforeSync: beforeSyncWithSearch,
     searchOverrides: {
+      admin: {
+        group: localeRecord('plugins.searchGroup'),
+      },
+      labels: {
+        plural: localeRecord('search.plural'),
+        singular: localeRecord('search.singular'),
+      },
       fields: ({ defaultFields }) => {
         return [...defaultFields, ...searchFields]
       },

@@ -41,13 +41,7 @@ import { getServerSideURL } from './utilities/getURL'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
 import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
 import localization from './i18n/localization'
-import { flattenToNested, messageByLocale, supportedMessageLocales, type SupportedLocale } from './i18n'
-import arMessages from './i18n/messages/ar.json'
-import bgMessages from './i18n/messages/bg.json'
-import deMessages from './i18n/messages/de.json'
-import enMessages from './i18n/messages/en.json'
-import esMessages from './i18n/messages/es.json'
-import jaMessages from './i18n/messages/ja.json'
+import { defaultLocale, localeRecord, nestedMessages, supportedLocales } from './i18n'
 
 import type { Config } from './payload-types'
 
@@ -109,27 +103,16 @@ if (process.env.PAYLOAD_DISABLE_SHARP !== 'true') {
   }
 }
 
-const adminLabelLocale = localization.defaultLocale as SupportedLocale
-
-// Convert flat message keys to nested format for Payload admin compatibility
-const localeMessagesNested = {
-  ar: flattenToNested(arMessages as Record<string, string>),
-  bg: flattenToNested(bgMessages as Record<string, string>),
-  de: flattenToNested(deMessages as Record<string, string>),
-  en: flattenToNested(enMessages as Record<string, string>),
-  es: flattenToNested(esMessages as Record<string, string>),
-  ja: flattenToNested(jaMessages as Record<string, string>),
-} as const
-
-const supportedAdminLocales = supportedMessageLocales
+// Merge plugin translations with the project's own nested messages so the
+// Payload admin UI has a single, complete translation map per locale.
 const adminTranslations = Object.fromEntries(
-  supportedAdminLocales.map((locale) => [
+  supportedLocales.map((locale) => [
     locale,
     {
       ...(multiTenantTranslations?.[locale] || {}),
       ...(importExportTranslations?.[locale] || {}),
       ...(ecommerceTranslations?.[locale] || {}),
-      ...localeMessagesNested[locale],
+      ...nestedMessages[locale],
     },
   ]),
 )
@@ -148,9 +131,24 @@ export default buildConfig({
     user: Users.slug,
     livePreview: {
       breakpoints: [
-        { label: messageByLocale('livePreview.mobile', adminLabelLocale), name: 'mobile', width: 375, height: 667 },
-        { label: messageByLocale('livePreview.tablet', adminLabelLocale), name: 'tablet', width: 768, height: 1024 },
-        { label: messageByLocale('livePreview.desktop', adminLabelLocale), name: 'desktop', width: 1440, height: 900 },
+        {
+          label: localeRecord('livePreview.mobile')[defaultLocale],
+          name: 'mobile',
+          width: 375,
+          height: 667,
+        },
+        {
+          label: localeRecord('livePreview.tablet')[defaultLocale],
+          name: 'tablet',
+          width: 768,
+          height: 1024,
+        },
+        {
+          label: localeRecord('livePreview.desktop')[defaultLocale],
+          name: 'desktop',
+          width: 1440,
+          height: 900,
+        },
       ],
     },
   },
@@ -253,6 +251,17 @@ export default buildConfig({
         header: { enabled: true },
         footer: { enabled: true },
       },
+      overrideApiKeyCollection: (collection) => ({
+        ...collection,
+        admin: {
+          ...collection.admin,
+          group: localeRecord('plugins.mcpGroup'),
+        },
+        labels: {
+          plural: localeRecord('payload-mcp-api-keys.plural'),
+          singular: localeRecord('payload-mcp-api-keys.singular'),
+        },
+      }),
     }),
     ...payloadPlugins,
   ],

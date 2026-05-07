@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export const Code: Block = {
   slug: 'code',
@@ -12,15 +12,15 @@ export const Code: Block = {
       defaultValue: 'typescript',
       options: [
         {
-          label: t('code.typescript'),
+          label: localeRecord('code.typescript'),
           value: 'typescript',
         },
         {
-          label: t('code.javascript'),
+          label: localeRecord('code.javascript'),
           value: 'javascript',
         },
         {
-          label: t('code.css'),
+          label: localeRecord('code.css'),
           value: 'css',
         },
       ],

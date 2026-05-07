@@ -21,7 +21,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 import type { DefaultDocumentIDType, Where } from 'payload'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export const ProductsCollection: CollectionOverride = ({ defaultCollection }) => ({
   ...defaultCollection,
@@ -57,7 +57,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
     meta: true,
   },
   fields: [
-    { name: 'title', type: 'text', label: t('products.title'), required: true },
+    { name: 'title', type: 'text', label: localeRecord('products.title'), required: true },
     {
       type: 'tabs',
       tabs: [
@@ -83,20 +83,20 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
             {
               name: 'gallery',
               type: 'array',
-              label: t('products.gallery'),
+              label: localeRecord('products.gallery'),
               minRows: 1,
               fields: [
                 {
                   name: 'image',
                   type: 'upload',
-                  label: t('products.image'),
+                  label: localeRecord('products.image'),
                   relationTo: 'media',
                   required: true,
                 },
                 {
                   name: 'variantOption',
                   type: 'relationship',
-                  label: t('products.variantOption'),
+                  label: localeRecord('products.variantOption'),
                   relationTo: 'variantOptions',
                   admin: {
                     condition: (data) => {
@@ -144,7 +144,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
               blocks: [CallToAction, Content, MediaBlock],
             },
           ],
-          label: t('tab.content'),
+          label: localeRecord('tab.content'),
         },
         {
           fields: [
@@ -152,7 +152,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
             {
               name: 'relatedProducts',
               type: 'relationship',
-              label: t('products.relatedProducts'),
+              label: localeRecord('products.relatedProducts'),
               filterOptions: ({ id }) => {
                 if (id) {
                   return {
@@ -172,11 +172,11 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
               relationTo: 'products',
             },
           ],
-          label: t('tab.productDetails'),
+          label: localeRecord('tab.productDetails'),
         },
         {
           name: 'meta',
-          label: t('tab.seo'),
+          label: localeRecord('tab.seo'),
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -203,7 +203,7 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
     {
       name: 'categories',
       type: 'relationship',
-      label: t('products.categories'),
+      label: localeRecord('products.categories'),
       admin: {
         position: 'sidebar',
         sortOptions: 'title',

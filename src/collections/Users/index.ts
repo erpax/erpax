@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
 
 import { isSuperAdmin } from '@/access/isSuperAdmin'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 import { createAccess } from './access/create'
 import { readAccess } from './access/read'
@@ -21,12 +21,12 @@ const defaultTenantArrayField = tenantsArrayField({
     {
       name: 'roles',
       type: 'select',
-      label: t('users.tenantRoles'),
+      label: localeRecord('users.tenantRoles'),
       defaultValue: ['tenant-viewer'],
       hasMany: true,
       options: [
-        { label: t('users.tenantAdminRole'), value: 'tenant-admin' },
-        { label: t('users.tenantViewerRole'), value: 'tenant-viewer' },
+        { label: localeRecord('users.tenantAdminRole'), value: 'tenant-admin' },
+        { label: localeRecord('users.tenantViewerRole'), value: 'tenant-viewer' },
       ],
       required: true,
       access: {
@@ -39,8 +39,8 @@ const defaultTenantArrayField = tenantsArrayField({
 export const Users: CollectionConfig = {
   slug: 'users',
   labels: {
-    singular: t('users.singular'),
-    plural: t('users.plural'),
+    singular: localeRecord('users.singular'),
+    plural: localeRecord('users.plural'),
   },
   access: {
     create: createAccess,
@@ -72,7 +72,7 @@ export const Users: CollectionConfig = {
     {
       name: 'name',
       type: 'text',
-      label: t('users.name'),
+      label: localeRecord('users.name'),
     },
     {
       admin: {
@@ -80,14 +80,14 @@ export const Users: CollectionConfig = {
       },
       name: 'roles',
       type: 'select',
-      label: t('users.roles'),
+      label: localeRecord('users.roles'),
       defaultValue: ['user'],
       hasMany: true,
       options: [
-        { label: t('users.superAdminRole'), value: 'super-admin' },
-        { label: t('users.adminRole'), value: 'admin' },
-        { label: t('users.userRole'), value: 'user' },
-        { label: t('users.customerRole'), value: 'customer' },
+        { label: localeRecord('users.superAdminRole'), value: 'super-admin' },
+        { label: localeRecord('users.adminRole'), value: 'admin' },
+        { label: localeRecord('users.userRole'), value: 'user' },
+        { label: localeRecord('users.customerRole'), value: 'customer' },
       ],
       access: {
         update: ({ req }) => isSuperAdmin(req.user),
@@ -96,7 +96,7 @@ export const Users: CollectionConfig = {
     {
       name: 'username',
       type: 'text',
-      label: t('users.username'),
+      label: localeRecord('users.username'),
       hooks: {
         beforeValidate: [ensureUniqueUsername],
       },
@@ -112,7 +112,7 @@ export const Users: CollectionConfig = {
     {
       name: 'orders',
       type: 'join',
-      label: t('users.orders'),
+      label: localeRecord('users.orders'),
       collection: 'orders',
       on: 'customer',
       admin: {
@@ -123,7 +123,7 @@ export const Users: CollectionConfig = {
     {
       name: 'cart',
       type: 'join',
-      label: t('users.cart'),
+      label: localeRecord('users.cart'),
       collection: 'carts',
       on: 'customer',
       admin: {
@@ -134,7 +134,7 @@ export const Users: CollectionConfig = {
     {
       name: 'addresses',
       type: 'join',
-      label: t('users.addresses'),
+      label: localeRecord('users.addresses'),
       collection: 'addresses',
       on: 'customer',
       admin: {

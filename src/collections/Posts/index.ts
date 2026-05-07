@@ -27,13 +27,13 @@ import {
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export const Posts: CollectionConfig<'posts'> = {
   slug: 'posts',
   labels: {
-    singular: t('posts.singular'),
-    plural: t('posts.plural'),
+    singular: localeRecord('posts.singular'),
+    plural: localeRecord('posts.plural'),
   },
   access: {
     create: authenticated,
@@ -75,7 +75,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'title',
       type: 'text',
-      label: t('posts.title'),
+      label: localeRecord('posts.title'),
       localized: true,
       required: true,
     },
@@ -87,7 +87,7 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'heroImage',
               type: 'upload',
-              label: t('posts.heroImage'),
+              label: localeRecord('posts.heroImage'),
               relationTo: 'media',
             },
             {
@@ -110,14 +110,14 @@ export const Posts: CollectionConfig<'posts'> = {
               required: true,
             },
           ],
-          label: t('tab.content'),
+          label: localeRecord('tab.content'),
         },
         {
           fields: [
             {
               name: 'relatedPosts',
               type: 'relationship',
-              label: t('posts.relatedPosts'),
+              label: localeRecord('posts.relatedPosts'),
               admin: {
                 position: 'sidebar',
               },
@@ -134,7 +134,7 @@ export const Posts: CollectionConfig<'posts'> = {
             {
               name: 'categories',
               type: 'relationship',
-              label: t('posts.categories'),
+              label: localeRecord('posts.categories'),
               admin: {
                 position: 'sidebar',
               },
@@ -142,11 +142,11 @@ export const Posts: CollectionConfig<'posts'> = {
               relationTo: 'categories',
             },
           ],
-          label: t('tab.meta'),
+          label: localeRecord('tab.meta'),
         },
         {
           name: 'meta',
-          label: t('tab.seo'),
+          label: localeRecord('tab.seo'),
           fields: [
             OverviewField({
               titlePath: 'meta.title',
@@ -176,7 +176,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'publishedAt',
       type: 'date',
-      label: t('posts.publishedAt'),
+      label: localeRecord('posts.publishedAt'),
       admin: {
         date: {
           pickerAppearance: 'dayAndTime',
@@ -197,7 +197,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'authors',
       type: 'relationship',
-      label: t('posts.authors'),
+      label: localeRecord('posts.authors'),
       admin: {
         position: 'sidebar',
       },
@@ -210,7 +210,7 @@ export const Posts: CollectionConfig<'posts'> = {
     {
       name: 'populatedAuthors',
       type: 'array',
-      label: t('posts.populatedAuthors'),
+      label: localeRecord('posts.populatedAuthors'),
       access: {
         update: () => false,
       },
@@ -222,12 +222,12 @@ export const Posts: CollectionConfig<'posts'> = {
         {
           name: 'id',
           type: 'text',
-          label: t('posts.authorId'),
+          label: localeRecord('posts.authorId'),
         },
         {
           name: 'name',
           type: 'text',
-          label: t('posts.authorName'),
+          label: localeRecord('posts.authorName'),
         },
       ],
     },

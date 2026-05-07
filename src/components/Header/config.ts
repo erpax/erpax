@@ -1,12 +1,12 @@
 import type { GlobalConfig } from 'payload'
 
 import { link } from '@/fields/link'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 import { revalidateHeader } from './hooks/revalidateHeader'
 
 export const Header: GlobalConfig = {
   slug: 'header',
-  label: t('header.global'),
+  label: localeRecord('header.global'),
   access: {
     read: () => true,
   },
@@ -14,7 +14,7 @@ export const Header: GlobalConfig = {
     {
       name: 'navItems',
       type: 'array',
-      label: t('header.navItems'),
+      label: localeRecord('header.navItems'),
       fields: [
         link({
           appearances: false,

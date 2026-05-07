@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 import {
   FixedToolbarFeature,
@@ -16,10 +16,10 @@ export const Banner: Block = {
       type: 'select',
       defaultValue: 'info',
       options: [
-        { label: t('banner.info'), value: 'info' },
-        { label: t('banner.warning'), value: 'warning' },
-        { label: t('banner.error'), value: 'error' },
-        { label: t('banner.success'), value: 'success' },
+        { label: localeRecord('banner.info'), value: 'info' },
+        { label: localeRecord('banner.warning'), value: 'warning' },
+        { label: localeRecord('banner.error'), value: 'error' },
+        { label: localeRecord('banner.success'), value: 'success' },
       ],
       required: true,
     },

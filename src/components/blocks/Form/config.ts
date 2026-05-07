@@ -1,6 +1,6 @@
 import type { Block } from 'payload'
 
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 import {
   FixedToolbarFeature,
@@ -22,7 +22,7 @@ export const FormBlock: Block = {
     {
       name: 'enableIntro',
       type: 'checkbox',
-      label: t('formBlock.enableIntro'),
+      label: localeRecord('formBlock.enableIntro'),
     },
     {
       name: 'introContent',
@@ -40,14 +40,14 @@ export const FormBlock: Block = {
           ]
         },
       }),
-      label: t('formBlock.introContent'),
+      label: localeRecord('formBlock.introContent'),
     },
   ],
   graphQL: {
     singularName: 'FormBlock',
   },
   labels: {
-    plural: t('formBlock.plural'),
-    singular: t('formBlock.singular'),
+    plural: localeRecord('formBlock.plural'),
+    singular: localeRecord('formBlock.singular'),
   },
 }

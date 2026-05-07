@@ -3,13 +3,13 @@ import type { CollectionConfig } from 'payload'
 import { anyone } from '../access/anyone'
 import { authenticated } from '../access/authenticated'
 import { slugField } from 'payload'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export const Categories: CollectionConfig = {
   slug: 'categories',
   labels: {
-    singular: t('categories.singular'),
-    plural: t('categories.plural'),
+    singular: localeRecord('categories.singular'),
+    plural: localeRecord('categories.plural'),
   },
   access: {
     create: authenticated,
@@ -24,7 +24,7 @@ export const Categories: CollectionConfig = {
     {
       name: 'title',
       type: 'text',
-      label: t('categories.title'),
+      label: localeRecord('categories.title'),
       required: true,
     },
     slugField({

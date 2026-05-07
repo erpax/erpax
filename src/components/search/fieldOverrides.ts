@@ -1,12 +1,12 @@
 import { Field } from 'payload'
 
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export const searchFields: Field[] = [
   {
     name: 'slug',
     type: 'text',
-    label: t('search.slug'),
+    label: localeRecord('search.slug'),
     index: true,
     admin: {
       readOnly: true,
@@ -14,7 +14,7 @@ export const searchFields: Field[] = [
   },
   {
     name: 'meta',
-    label: t('search.meta'),
+    label: localeRecord('search.meta'),
     type: 'group',
     index: true,
     admin: {
@@ -24,23 +24,23 @@ export const searchFields: Field[] = [
       {
         type: 'text',
         name: 'title',
-        label: t('search.title'),
+        label: localeRecord('search.title'),
       },
       {
         type: 'text',
         name: 'description',
-        label: t('search.description'),
+        label: localeRecord('search.description'),
       },
       {
         name: 'image',
-        label: t('search.image'),
+        label: localeRecord('search.image'),
         type: 'upload',
         relationTo: 'media',
       },
     ],
   },
   {
-    label: t('search.categories'),
+    label: localeRecord('search.categories'),
     name: 'categories',
     type: 'array',
     admin: {
@@ -50,17 +50,17 @@ export const searchFields: Field[] = [
       {
         name: 'relationTo',
         type: 'text',
-        label: t('search.relationTo'),
+        label: localeRecord('search.relationTo'),
       },
       {
         name: 'categoryID',
         type: 'text',
-        label: t('search.categoryID'),
+        label: localeRecord('search.categoryID'),
       },
       {
         name: 'title',
         type: 'text',
-        label: t('search.categoryTitle'),
+        label: localeRecord('search.categoryTitle'),
       },
     ],
   },

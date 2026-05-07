@@ -1,20 +1,20 @@
 import type { Field, GroupField } from 'payload'
 
 import deepMerge from '@/utilities/deepMerge'
-import { t, type LocalizedLabel } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 export type LinkAppearances = 'default' | 'outline'
 
 export const appearanceOptions: Record<
   LinkAppearances,
-  { label: LocalizedLabel; value: LinkAppearances }
+  { label: Record<string, string>; value: LinkAppearances }
 > = {
   default: {
-    label: t('link.appearanceDefault'),
+    label: localeRecord('link.appearanceDefault'),
     value: 'default',
   },
   outline: {
-    label: t('link.appearanceOutline'),
+    label: localeRecord('link.appearanceOutline'),
     value: 'outline',
   },
 }
@@ -46,11 +46,11 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
             defaultValue: 'reference',
             options: [
               {
-                label: t('link.internal'),
+                label: localeRecord('link.internal'),
                 value: 'reference',
               },
               {
-                label: t('link.customUrl'),
+                label: localeRecord('link.customUrl'),
                 value: 'custom',
               },
             ],
@@ -64,7 +64,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
               },
               width: '50%',
             },
-            label: t('link.openInNewTab'),
+            label: localeRecord('link.openInNewTab'),
           },
         ],
       },
@@ -78,7 +78,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
       admin: {
         condition: (_, siblingData) => siblingData?.type === 'reference',
       },
-      label: t('link.documentToLinkTo'),
+      label: localeRecord('link.documentToLinkTo'),
       relationTo: ['pages', 'posts'],
       required: true,
     },
@@ -88,7 +88,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
       admin: {
         condition: (_, siblingData) => siblingData?.type === 'custom',
       },
-      label: t('link.customUrl'),
+      label: localeRecord('link.customUrl'),
       required: true,
     },
   ]
@@ -112,7 +112,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
           admin: {
             width: '50%',
           },
-          label: t('link.label'),
+          label: localeRecord('link.label'),
           required: true,
         },
       ],
@@ -132,7 +132,7 @@ export const link: LinkType = ({ appearances, disableLabel = false, overrides = 
       name: 'appearance',
       type: 'select',
       admin: {
-        description: t('link.appearanceDescription'),
+        description: localeRecord('link.appearanceDescription'),
       },
       defaultValue: 'default',
       options: appearanceOptionsToUse,

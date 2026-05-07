@@ -40,7 +40,7 @@ export default async function Page({ params: paramsPromise }: Args) {
       <PageClient />
       <div className="container mb-16">
         <div className="prose dark:prose-invert max-w-none">
-          <h1>{t('posts')}</h1>
+          <h1>{t('posts.plural')}</h1>
         </div>
       </div>
 

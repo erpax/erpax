@@ -37,8 +37,8 @@ export const PageRange: React.FC<{
 
   const defaultCollectionLabels = {
     posts: {
-      plural: t('posts'),
-      singular: t('post'),
+      plural: t('posts.plural'),
+      singular: t('posts.singular'),
     },
   }
 
@@ -46,8 +46,8 @@ export const PageRange: React.FC<{
     collectionLabelsFromProps ||
     (collection ? defaultCollectionLabels[collection] : undefined) ||
     {
-      plural: t('posts'),
-      singular: t('post'),
+      plural: t('posts.plural'),
+      singular: t('posts.singular'),
     } ||
     defaultLabels ||
     {}

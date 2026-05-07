@@ -8,7 +8,7 @@ import {
 } from '@payloadcms/richtext-lexical'
 
 import { link } from '@/fields/link'
-import { t } from '@/i18n'
+import { localeRecord } from '@/i18n'
 
 const columnFields: Field[] = [
   {
@@ -17,19 +17,19 @@ const columnFields: Field[] = [
     defaultValue: 'oneThird',
     options: [
       {
-        label: t('contentBlock.oneThird'),
+        label: localeRecord('contentBlock.oneThird'),
         value: 'oneThird',
       },
       {
-        label: t('contentBlock.half'),
+        label: localeRecord('contentBlock.half'),
         value: 'half',
       },
       {
-        label: t('contentBlock.twoThirds'),
+        label: localeRecord('contentBlock.twoThirds'),
         value: 'twoThirds',
       },
       {
-        label: t('contentBlock.full'),
+        label: localeRecord('contentBlock.full'),
         value: 'full',
       },
     ],
@@ -52,7 +52,7 @@ const columnFields: Field[] = [
   {
     name: 'enableLink',
     type: 'checkbox',
-    label: t('contentBlock.enableLink'),
+    label: localeRecord('contentBlock.enableLink'),
   },
   link({
     overrides: {
@@ -72,7 +72,7 @@ export const Content: Block = {
     {
       name: 'columns',
       type: 'array',
-      label: t('contentBlock.columns'),
+      label: localeRecord('contentBlock.columns'),
       admin: {
         initCollapsed: true,
       },

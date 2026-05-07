@@ -16,13 +16,14 @@ import { isCustomer } from '@/ecommerce/access/isCustomer'
 import { isAdmin } from '@/ecommerce/access/isAdmin'
 import { isDocumentOwner } from '@/ecommerce/access/isDocumentOwner'
 import { validateProductCheckout } from '@/ecommerce/productValidation'
+import { localeRecord } from '@/i18n'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
 const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({
   ...defaultCollection,
   admin: {
     ...defaultCollection.admin,
-    group: 'Ecommerce',
+    group: localeRecord('plugins.ecommerceGroup'),
   },
 })
 
@@ -50,7 +51,7 @@ export function createEcommercePlugin(): Plugin {
         admin: {
           ...defaultCollection.admin,
           hidden: false,
-          group: 'Ecommerce',
+          group: localeRecord('plugins.ecommerceGroup'),
         },
       }),
     },

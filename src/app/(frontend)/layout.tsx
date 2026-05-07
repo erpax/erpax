@@ -35,10 +35,10 @@ export default async function FrontendRootLayout({ children }: { children: React
             }}
             labels={{
               dashboard: t('dashboard'),
-              page: t('page'),
-              pages: t('pages'),
-              post: t('post'),
-              posts: t('posts'),
+              page: t('pages.singular'),
+              pages: t('pages.plural'),
+              post: t('posts.singular'),
+              posts: t('posts.plural'),
               project: t('project'),
               projects: t('projects'),
             }}
