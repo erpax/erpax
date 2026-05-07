@@ -18,23 +18,36 @@ import { resolvePublicSiteUrl } from '@/utilities/getURL'
 import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 export async function generateStaticParams() {
-  const payload = await getPayload({ config: configPromise })
-  const posts = await payload.find({
-    collection: 'posts',
-    draft: false,
-    limit: 1000,
-    overrideAccess: false,
-    pagination: false,
-    select: {
-      slug: true,
-    },
-  })
+  // During build/CI, the D1 database may not have tables yet.
+  // Return empty array to allow build to complete; pages will be
+  // dynamically rendered on first request (ISR-style).
+  if (process.env.CI || process.env.NEXT_PHASE === 'phase-production-build') {
+    return []
+  }
 
-  const params = posts.docs.map(({ slug }) => {
-    return { slug }
-  })
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const posts = await payload.find({
+      collection: 'posts',
+      draft: false,
+      limit: 1000,
+      overrideAccess: false,
+      pagination: false,
+      select: {
+        slug: true,
+      },
+    })
 
-  return params
+    const params = posts.docs.map(({ slug }) => {
+      return { slug }
+    })
+
+    return params
+  } catch {
+    // If DB query fails (e.g., no such table), return empty array
+    // Pages will be dynamically rendered
+    return []
+  }
 }
 
 type Args = {

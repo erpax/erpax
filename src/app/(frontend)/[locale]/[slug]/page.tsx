@@ -20,36 +20,46 @@ import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG
 
 export async function generateStaticParams() {
-  const payload = await getPayload({ config: configPromise })
-  const tenantWhere: Where | undefined = siteTenantSlug
-    ? { 'tenant.slug': { equals: siteTenantSlug } }
-    : undefined
-
-  const pages = await payload.find({
-    collection: 'pages',
-    draft: false,
-    limit: 1000,
-    overrideAccess: false,
-    pagination: false,
-    ...(tenantWhere ? { where: tenantWhere } : {}),
-    select: {
-      slug: true,
-    },
-  })
-
-  const slugParams =
-    pages.docs
-      ?.filter((doc) => doc.slug !== 'home')
-      .map(({ slug }) => ({ slug: slug as string })) ?? []
-
-  const params: { locale: string; slug: string }[] = []
-  for (const locale of routing.locales) {
-    for (const { slug } of slugParams) {
-      params.push({ locale, slug })
-    }
+  // During build/CI, the D1 database may not have tables yet.
+  // Return empty array to allow build to complete.
+  if (process.env.CI || process.env.NEXT_PHASE === 'phase-production-build') {
+    return []
   }
 
-  return params
+  try {
+    const payload = await getPayload({ config: configPromise })
+    const tenantWhere: Where | undefined = siteTenantSlug
+      ? { 'tenant.slug': { equals: siteTenantSlug } }
+      : undefined
+
+    const pages = await payload.find({
+      collection: 'pages',
+      draft: false,
+      limit: 1000,
+      overrideAccess: false,
+      pagination: false,
+      ...(tenantWhere ? { where: tenantWhere } : {}),
+      select: {
+        slug: true,
+      },
+    })
+
+    const slugParams =
+      pages.docs
+        ?.filter((doc) => doc.slug !== 'home')
+        .map(({ slug }) => ({ slug: slug as string })) ?? []
+
+    const params: { locale: string; slug: string }[] = []
+    for (const locale of routing.locales) {
+      for (const { slug } of slugParams) {
+        params.push({ locale, slug })
+      }
+    }
+
+    return params
+  } catch {
+    return []
+  }
 }
 
 type Args = {
