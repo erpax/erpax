@@ -1,6 +1,22 @@
 import { MigrateUpArgs, MigrateDownArgs, sql } from '@payloadcms/db-d1-sqlite'
 
+function rowsFromRun(result: unknown): { name?: string }[] {
+  if (result && typeof result === 'object') {
+    const r = result as { rows?: { name?: string }[]; results?: { name?: string }[] }
+    return r.rows ?? r.results ?? []
+  }
+  return []
+}
+
 export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
+  /** Remote DBs may already have full schema from legacy migrations (`20260507_225804`, …). */
+  const tenantsExists = rowsFromRun(
+    await db.run(sql`SELECT name FROM sqlite_master WHERE type = 'table' AND name = 'tenants'`),
+  ).length
+  if (tenantsExists > 0) {
+    return
+  }
+
   await db.run(sql`CREATE TABLE \`tenants\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`name\` text NOT NULL,
@@ -2147,6 +2163,16 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
+  /** Do not tear down schema if an older migration chain applied it (same DB, new migration name). */
+  const legacy = rowsFromRun(
+    await db.run(
+      sql`SELECT name FROM payload_migrations WHERE name IN ('20260507_225804', '20260508_030500')`,
+    ),
+  )
+  if (legacy.length > 0) {
+    return
+  }
+
   await db.run(sql`DROP TABLE \`tenants\`;`)
   await db.run(sql`DROP TABLE \`pages_hero_links\`;`)
   await db.run(sql`DROP TABLE \`pages_blocks_cta_links\`;`)
