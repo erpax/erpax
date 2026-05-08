@@ -375,12 +375,16 @@ export default buildConfig({
 
 function getCloudflareContextFromWrangler(): Promise<CloudflareContext> {
   const isNextProductionBuild = process.env.NEXT_PHASE === PHASE_PRODUCTION_BUILD
+  /** Default off during `next build` (Miniflare local SQLite). Enable on CI so Wrangler uses remote D1 and avoids SQLITE_BUSY under parallel workers. */
+  const remoteBindings =
+    isProduction &&
+    (!isNextProductionBuild || process.env.PAYLOAD_BUILD_USE_REMOTE_D1 === 'true')
+
   return import(/* webpackIgnore: true */ `${'__wrangler'.replaceAll('_', '')}`).then(
     ({ getPlatformProxy }) =>
       getPlatformProxy({
         environment: process.env.CLOUDFLARE_ENV,
-        // `next build` must not use remote D1/R2 (requires `wrangler login`); runtime uses OpenNext context.
-        remoteBindings: isProduction && !isNextProductionBuild,
+        remoteBindings,
       } satisfies GetPlatformProxyOptions),
   )
 }

@@ -89,6 +89,8 @@ Apply migrations to **remote D1** in a **separate step** (or script) **before** 
 
 Set **`PAYLOAD_SECRET`** (and Cloudflare API token / `wrangler` auth as needed) so the Payload CLI can reach your remote D1 during migrate.
 
+For **`next build`** on Cloudflare (OpenNext + Miniflare), set **`PAYLOAD_BUILD_USE_REMOTE_D1=true`** so prerender uses **remote D1** instead of a local SQLite file (avoids **`SQLITE_BUSY`** when multiple workers hit D1). The **`pnpm run build:workers`** script sets this for the build step after **`migrate:production`**.
+
 ## Enabling logs
 
 By default logs are not enabled for your API, we've made this decision because it does run against your quota so we've left it opt-in. But you can easily enable logs in one click in the Cloudflare panel, [see docs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs).
