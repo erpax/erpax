@@ -306,7 +306,7 @@ Runs before all tests:
 Tests run on:
 - **Local development:** `pnpm test:int`
 - **Pre-commit:** (recommend husky hook)
-- **CI/CD:** GitHub Actions / Cloudflare Pages
+- **CI/CD:** GitHub Actions · deploy: **Cloudflare Workers** (OpenNext + Wrangler)
 
 ### CI Configuration Example
 ```bash
