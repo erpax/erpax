@@ -80,6 +80,15 @@ This will spin up Wrangler in `production` mode, run any created migrations, bui
 
 That's it! You can if you wish move these steps into your CI pipeline as well.
 
+### CI / Workers Builds: migrate before build
+
+Apply migrations to **remote D1** in a **separate step** (or script) **before** `next build` when your pipeline runs both on the same machine with Wrangler credentials.
+
+- **Script:** `pnpm run migrate:production` (`NODE_ENV=production payload migrate`). Then `pnpm run build`, or use **`pnpm run build:workers`** (migrate + build + postbuild).
+- **GitHub Actions:** `.github/workflows/deploy-staging.yml` runs `migrate:production`, then `deploy:app` (OpenNext build + deploy).
+
+Set **`PAYLOAD_SECRET`** (and Cloudflare API token / `wrangler` auth as needed) so the Payload CLI can reach your remote D1 during migrate.
+
 ## Enabling logs
 
 By default logs are not enabled for your API, we've made this decision because it does run against your quota so we've left it opt-in. But you can easily enable logs in one click in the Cloudflare panel, [see docs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs).

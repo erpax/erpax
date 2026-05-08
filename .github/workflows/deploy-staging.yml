@@ -36,12 +36,12 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           command: --version
 
-      - name: Deploy database migrations
+      - name: Migrate remote D1 (before build)
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          NODE_ENV: production
           PAYLOAD_SECRET: ${{ secrets.PAYLOAD_SECRET }}
-        run: |
-          pnpm exec payload migrate
+        run: pnpm run migrate:production
 
       - name: Build and deploy
         env:
