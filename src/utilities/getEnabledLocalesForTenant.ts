@@ -6,8 +6,24 @@ import { defaultLocale, isValidLocale, supportedLocales, type SupportedLocale } 
  * Locales allowed for a tenant’s public site. If the tenant has no selection
  * (undefined / empty), all configured locales are allowed.
  */
+function normalizeTenantLocaleCodes(raw: Tenant['locales']): string[] | undefined {
+  if (raw == null) return undefined
+  if (Array.isArray(raw)) {
+    return raw.filter((x): x is string => typeof x === 'string')
+  }
+  if (typeof raw === 'string') {
+    try {
+      const parsed = JSON.parse(raw) as unknown
+      return Array.isArray(parsed) ? parsed.filter((x): x is string => typeof x === 'string') : undefined
+    } catch {
+      return undefined
+    }
+  }
+  return undefined
+}
+
 export function getEnabledLocalesForTenant(tenant: Tenant | null): SupportedLocale[] {
-  const raw = tenant?.locales
+  const raw = normalizeTenantLocaleCodes(tenant?.locales)
   if (!raw || raw.length === 0) {
     return [...supportedLocales]
   }

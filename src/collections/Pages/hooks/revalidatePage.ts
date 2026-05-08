@@ -9,6 +9,10 @@ export const revalidatePage: CollectionAfterChangeHook<Page> = ({
   previousDoc,
   req: { payload, context },
 }) => {
+  if (process.env.VITEST) {
+    return doc
+  }
+
   if (!context.disableRevalidate) {
     if (doc._status === 'published') {
       const path = doc.slug === 'home' ? '/' : `/${doc.slug}`
@@ -33,6 +37,10 @@ export const revalidatePage: CollectionAfterChangeHook<Page> = ({
 }
 
 export const revalidateDelete: CollectionAfterDeleteHook<Page> = ({ doc, req: { context } }) => {
+  if (process.env.VITEST) {
+    return doc
+  }
+
   if (!context.disableRevalidate) {
     const path = doc?.slug === 'home' ? '/' : `/${doc?.slug}`
     revalidatePath(path)

@@ -14,14 +14,12 @@ const TEST_TENANT_PREFIX = 'test-tenant-int'
 /**
  * Multi-tenant CRUD via `@payloadcms/sdk` (REST) + tenant bootstrap via Local API.
  *
- * **Currently skipped:** creating or querying `tenants` trips a Drizzle relational
- * schema error (`referencedTable`) with this project’s SQLite adapter — the same
- * failure affects Local API and REST. Re-enable this suite once that collection’s
- * Drizzle relations match the DB (regenerate migrations / fix schema drift).
+ * Tenant `locales` are stored as JSON on `tenants` (not a select/hasMany junction) so
+ * D1/Drizzle tenant writes stay compatible with this adapter.
  *
  * @see tests/int/payloadSdkRest.int.spec.ts — SDK smoke test without `tenants`
  */
-describe.skip('Tenant-scoped Operations (blocked: tenants + Drizzle relations)', () => {
+describe('Tenant-scoped Operations', () => {
   let payload: Payload
   let sdk: PayloadSDK<Config>
   let testTenantId: number

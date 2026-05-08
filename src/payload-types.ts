@@ -339,38 +339,13 @@ export interface Tenant {
    * Public site languages for this tenant. Leave empty to allow every configured language.
    */
   locales?:
-    | (
-        | 'en'
-        | 'bg'
-        | 'cs'
-        | 'da'
-        | 'de'
-        | 'el'
-        | 'es'
-        | 'et'
-        | 'fi'
-        | 'fr'
-        | 'ga'
-        | 'hr'
-        | 'hu'
-        | 'is'
-        | 'it'
-        | 'ja'
-        | 'lt'
-        | 'lv'
-        | 'mt'
-        | 'nb'
-        | 'nl'
-        | 'pl'
-        | 'pt'
-        | 'ro'
-        | 'ru'
-        | 'sk'
-        | 'sl'
-        | 'sv'
-        | 'uk'
-        | 'ar'
-      )[]
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
     | null;
   /**
    * If checked, logging in is not required to read. Useful for building public pages.
