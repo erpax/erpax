@@ -17,6 +17,8 @@ const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
+    /** Webpack otherwise defaults to ~CPU-count workers for page-data collection and overwhelms Miniflare D1. */
+    cpus: 1,
     /** Local Wrangler/Miniflare D1 can SQLITE_BUSY when many workers hit the DB during prerender. */
     staticGenerationRetryCount: 5,
     staticGenerationMaxConcurrency: 1,
@@ -57,7 +59,9 @@ const nextConfig = {
     ],
   },
   // https://opennext.js.org/cloudflare/howtos/workerd
-  serverExternalPackages: ['jose', 'pg-cloudflare'],
+  // Use webpack for `next build` (see build script) so server chunks use resolvable package names; Turbopack can emit
+  // hashed externals (sharp-*, drizzle-kit-*/api) that esbuild in `opennextjs-cloudflare` cannot resolve.
+  serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp'],
   webpack: (webpackConfig: any) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],

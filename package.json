@@ -6,7 +6,7 @@
   "type": "module",
   "packageManager": "pnpm@11.0.8",
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
+    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build --webpack",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "build:workers": "pnpm run migrate:production && pnpm run build",
     "deploy": "pnpm run deploy:database && pnpm run deploy:app",
