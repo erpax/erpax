@@ -1,21 +1,12 @@
 import { MigrateUpArgs, MigrateDownArgs, sql } from '@payloadcms/db-d1-sqlite'
 
 export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
-  await db.run(sql`CREATE TABLE \`tenants_locales\` (
-  	\`order\` integer NOT NULL,
-  	\`parent_id\` integer NOT NULL,
-  	\`value\` text,
-  	\`id\` integer PRIMARY KEY NOT NULL,
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`tenants_locales_order_idx\` ON \`tenants_locales\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`tenants_locales_parent_idx\` ON \`tenants_locales\` (\`parent_id\`);`)
   await db.run(sql`CREATE TABLE \`tenants\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`name\` text NOT NULL,
   	\`domain\` text,
   	\`slug\` text NOT NULL,
+  	\`locales\` text DEFAULT '[]',
   	\`allow_public_read\` integer DEFAULT false,
   	\`public_site_url\` text,
   	\`stripe_publishable_key\` text,
@@ -2156,7 +2147,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
 }
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
-  await db.run(sql`DROP TABLE \`tenants_locales\`;`)
   await db.run(sql`DROP TABLE \`tenants\`;`)
   await db.run(sql`DROP TABLE \`pages_hero_links\`;`)
   await db.run(sql`DROP TABLE \`pages_blocks_cta_links\`;`)

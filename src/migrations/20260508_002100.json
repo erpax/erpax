@@ -2,73 +2,6 @@
   "version": "6",
   "dialect": "sqlite",
   "tables": {
-    "tenants_locales": {
-      "name": "tenants_locales",
-      "columns": {
-        "order": {
-          "name": "order",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "parent_id": {
-          "name": "parent_id",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "value": {
-          "name": "value",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        }
-      },
-      "indexes": {
-        "tenants_locales_order_idx": {
-          "name": "tenants_locales_order_idx",
-          "columns": [
-            "order"
-          ],
-          "isUnique": false
-        },
-        "tenants_locales_parent_idx": {
-          "name": "tenants_locales_parent_idx",
-          "columns": [
-            "parent_id"
-          ],
-          "isUnique": false
-        }
-      },
-      "foreignKeys": {
-        "tenants_locales_parent_fk": {
-          "name": "tenants_locales_parent_fk",
-          "tableFrom": "tenants_locales",
-          "tableTo": "tenants",
-          "columnsFrom": [
-            "parent_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
     "tenants": {
       "name": "tenants",
       "columns": {
@@ -99,6 +32,14 @@
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
+        },
+        "locales": {
+          "name": "locales",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "'[]'"
         },
         "allow_public_read": {
           "name": "allow_public_read",
@@ -15410,6 +15351,6 @@
   "internal": {
     "indexes": {}
   },
-  "id": "d98a3787-67c0-4af2-b7c6-8c5be51dcfeb",
+  "id": "54baa8ec-13a1-451d-a9b7-f6a018f0e967",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }
