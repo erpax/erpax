@@ -13,8 +13,8 @@ type Args = {
   params: Promise<{ locale: TypedLocale }>
 }
 
-export const dynamic = 'force-static'
-export const revalidate = 600
+/** Avoid prerender at build: CI D1 often has no schema until `payload migrate` runs after build. */
+export const dynamic = 'force-dynamic'
 
 export default async function Page({ params: paramsPromise }: Args) {
   const { locale } = await paramsPromise
