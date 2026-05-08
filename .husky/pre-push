@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
-# Block push unless lint + typecheck + integration tests pass (same as CI).
-# Bypass (emergency only): git push --no-verify
-pnpm run check
+# Same checks as `pnpm run check`, without `pnpm run` (avoids pnpm install / approve-builds on some setups).
+# Bypass: git push --no-verify
+cd "$(dirname "$0")/.." || exit 1
+export PATH="$PWD/node_modules/.bin:$PATH"
+export NODE_OPTIONS=--no-deprecation
+set -e
+eslint . --quiet
+tsc --noEmit -p tsconfig.typecheck.json
+PAYLOAD_TEST_SKIP_MIGRATE=1 vitest run --config ./vitest.config.mts
