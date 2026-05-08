@@ -20,8 +20,9 @@ export default defineConfig({
   test: {
     name: 'payload-integration',
     environment: 'node',
+    environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],
     setupFiles: ['./vitest.setup.ts'],
-    include: ['tests/int/**/*.int.spec.ts'],
+    include: ['tests/int/**/*.int.spec.ts', 'tests/int/**/*.int.spec.tsx'],
     // Disable globals to enforce explicit imports (stricter, clearer tests)
     globals: false,
     // Run single-threaded to prevent D1/SQLite lock contention

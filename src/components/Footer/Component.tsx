@@ -1,13 +1,15 @@
+import type { SupportedLocale } from '@/i18n/localization'
+
 import { getCachedGlobal } from '@/utilities/getGlobals'
-import Link from 'next/link'
+import { Link } from '@/i18n/routing'
 import React from 'react'
 
 import { ThemeSelector } from '@/components/providers/Theme/ThemeSelector'
 import { CMSLink } from '@/components/Link'
 import { Logo } from '@/components/Logo/Logo'
 
-export async function Footer() {
-  const footerData = await getCachedGlobal('footer', 1)()
+export async function Footer({ locale }: { locale: SupportedLocale }) {
+  const footerData = await getCachedGlobal('footer', 1, locale)()
 
   const navItems = footerData?.navItems || []
 

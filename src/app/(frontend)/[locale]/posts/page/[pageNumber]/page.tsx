@@ -5,21 +5,24 @@ import { PageRange } from '@/components/PageRange'
 import { Pagination } from '@/components/Pagination'
 import configPromise from '@payload-config'
 import { getTranslations } from 'next-intl/server'
-import { getPayload } from 'payload'
+import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
 import PageClient from './page.client'
 import { notFound } from 'next/navigation'
+
+import { routing } from '@/i18n/routing'
 
 export const revalidate = 600
 
 type Args = {
   params: Promise<{
     pageNumber: string
+    locale: TypedLocale
   }>
 }
 
 export default async function Page({ params: paramsPromise }: Args) {
-  const { pageNumber } = await paramsPromise
+  const { pageNumber, locale } = await paramsPromise
   const t = await getTranslations()
   const payload = await getPayload({ config: configPromise })
 
@@ -32,6 +35,7 @@ export default async function Page({ params: paramsPromise }: Args) {
     depth: 1,
     limit: 12,
     page: sanitizedPageNumber,
+    locale,
     overrideAccess: false,
   })
 
@@ -85,12 +89,14 @@ export async function generateStaticParams() {
       overrideAccess: false,
     })
 
-    const totalPages = Math.ceil(totalDocs / 10)
+    const totalPages = Math.ceil(totalDocs / 12)
 
-    const pages: { pageNumber: string }[] = []
+    const pages: { locale: string; pageNumber: string }[] = []
 
-    for (let i = 1; i <= totalPages; i++) {
-      pages.push({ pageNumber: String(i) })
+    for (const locale of routing.locales) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push({ locale, pageNumber: String(i) })
+      }
     }
 
     return pages

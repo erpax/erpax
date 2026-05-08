@@ -1,3 +1,5 @@
+# Lint + TypeScript + Vitest must pass before production build.
+# `pnpm run typecheck` catches invalid imports/exports (same class of errors as `next build` / Turbopack).
 name: CI
 
 on:
@@ -23,9 +25,9 @@ jobs:
           node-version: '20'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 11
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -34,7 +36,7 @@ jobs:
         run: pnpm run lint
 
   typecheck:
-    name: Type Check
+    name: TypeScript
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,15 +47,15 @@ jobs:
           node-version: '20'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 11
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run TypeScript check
-        run: pnpm exec tsc --noEmit --ignoreDeprecations 6.0
+      - name: Typecheck (tsc --noEmit)
+        run: pnpm run typecheck
 
   test-int:
     name: Integration Tests
@@ -70,9 +72,9 @@ jobs:
           node-version: '20'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 11
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -81,9 +83,9 @@ jobs:
         run: pnpm run test:int
 
   build:
-    name: Build
+    name: Production build
     runs-on: ubuntu-latest
-    needs: [lint, typecheck]
+    needs: [lint, typecheck, test-int]
     steps:
       - uses: actions/checkout@v4
 
@@ -93,9 +95,9 @@ jobs:
           node-version: '20'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 11
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

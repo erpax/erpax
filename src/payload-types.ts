@@ -150,7 +150,6 @@ export interface Config {
     | null
     | (
         | 'en'
-        | 'ar'
         | 'bg'
         | 'cs'
         | 'da'
@@ -179,10 +178,10 @@ export interface Config {
         | 'sl'
         | 'sv'
         | 'uk'
+        | 'ar'
       )
     | (
         | 'en'
-        | 'ar'
         | 'bg'
         | 'cs'
         | 'da'
@@ -211,6 +210,7 @@ export interface Config {
         | 'sl'
         | 'sv'
         | 'uk'
+        | 'ar'
       )[];
   globals: {
     header: Header;
@@ -222,7 +222,6 @@ export interface Config {
   };
   locale:
     | 'en'
-    | 'ar'
     | 'bg'
     | 'cs'
     | 'da'
@@ -250,7 +249,8 @@ export interface Config {
     | 'sk'
     | 'sl'
     | 'sv'
-    | 'uk';
+    | 'uk'
+    | 'ar';
   widgets: {
     collections: CollectionsWidget;
   };
@@ -341,7 +341,6 @@ export interface Tenant {
   locales?:
     | (
         | 'en'
-        | 'ar'
         | 'bg'
         | 'cs'
         | 'da'
@@ -370,6 +369,7 @@ export interface Tenant {
         | 'sl'
         | 'sv'
         | 'uk'
+        | 'ar'
       )[]
     | null;
   /**
@@ -1372,7 +1372,6 @@ export interface Export {
     | (
         | 'all'
         | 'en'
-        | 'ar'
         | 'bg'
         | 'cs'
         | 'da'
@@ -1401,6 +1400,7 @@ export interface Export {
         | 'sl'
         | 'sv'
         | 'uk'
+        | 'ar'
       )
     | null;
   drafts?: ('yes' | 'no') | null;

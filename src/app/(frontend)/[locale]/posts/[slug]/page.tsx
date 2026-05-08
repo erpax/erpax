@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { RelatedPosts } from '@/components/blocks/RelatedPosts/Component'
 import { PayloadRedirects } from '@/components/PayloadRedirects'
 import configPromise from '@payload-config'
-import { getPayload } from 'payload'
+import { getPayload, type TypedLocale } from 'payload'
 import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
 import RichText from '@/components/RichText'
@@ -14,6 +14,8 @@ import { PostHero } from '@/components/heros/PostHero'
 import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
+import { routing } from '@/i18n/routing'
+import type { SupportedLocale } from '@/i18n/localization'
 import { resolvePublicSiteUrl } from '@/utilities/getURL'
 import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
@@ -38,9 +40,17 @@ export async function generateStaticParams() {
       },
     })
 
-    const params = posts.docs.map(({ slug }) => {
-      return { slug }
-    })
+    const slugParams =
+      posts.docs.map(({ slug }) => ({
+        slug: slug as string,
+      })) ?? []
+
+    const params: { locale: string; slug: string }[] = []
+    for (const locale of routing.locales) {
+      for (const { slug } of slugParams) {
+        params.push({ locale, slug })
+      }
+    }
 
     return params
   } catch {
@@ -53,16 +63,18 @@ export async function generateStaticParams() {
 type Args = {
   params: Promise<{
     slug?: string
+    locale: string
   }>
 }
 
 export default async function Post({ params: paramsPromise }: Args) {
   const { isEnabled: draft } = await draftMode()
-  const { slug = '' } = await paramsPromise
+  const { slug = '', locale: localeParam } = await paramsPromise
+  const locale = localeParam as SupportedLocale
   // Decode to support slugs with special characters
   const decodedSlug = decodeURIComponent(slug)
-  const url = '/posts/' + decodedSlug
-  const post = await queryPostBySlug({ slug: decodedSlug })
+  const url = `/${locale}/posts/${decodedSlug}`
+  const post = await queryPostBySlug({ slug: decodedSlug, locale })
 
   if (!post) return <PayloadRedirects url={url} />
 
@@ -93,10 +105,11 @@ export default async function Post({ params: paramsPromise }: Args) {
 }
 
 export async function generateMetadata({ params: paramsPromise }: Args): Promise<Metadata> {
-  const { slug = '' } = await paramsPromise
+  const { slug = '', locale: localeParam } = await paramsPromise
+  const locale = localeParam as SupportedLocale
   // Decode to support slugs with special characters
   const decodedSlug = decodeURIComponent(slug)
-  const post = await queryPostBySlug({ slug: decodedSlug })
+  const post = await queryPostBySlug({ slug: decodedSlug, locale })
   const h = await headers()
   const tenant = await getTenantFromRequest(h)
   const siteOrigin = resolvePublicSiteUrl(h, tenant)
@@ -104,7 +117,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   return generateMeta({ doc: post, siteOrigin })
 }
 
-const queryPostBySlug = cache(async ({ slug }: { slug: string }) => {
+const queryPostBySlug = cache(async ({ slug, locale }: { slug: string; locale: TypedLocale }) => {
   const { isEnabled: draft } = await draftMode()
 
   const payload = await getPayload({ config: configPromise })
@@ -113,6 +126,7 @@ const queryPostBySlug = cache(async ({ slug }: { slug: string }) => {
     collection: 'posts',
     draft,
     limit: 1,
+    locale,
     overrideAccess: draft,
     pagination: false,
     where: {

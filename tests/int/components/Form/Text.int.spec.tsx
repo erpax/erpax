@@ -1,12 +1,14 @@
+/** @vitest-environment jsdom */
+
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 import { Text } from '@/components/blocks/Form/Text'
-import { useForm } from 'react-hook-form'
 
-// Mock FormField component
+import { FormHarness, renderForm } from './renderWithRHF'
+
 vi.mock('@/components/blocks/Form/FormField', () => ({
-  FormField: ({ name, label, required, width, errors, children }: any) => (
+  FormField: ({ name, label, required, width: _width, errors, children }: any) => (
     <div data-testid={`form-field-${name}`}>
       {label && <label>{label}</label>}
       {required && <span className="required">*</span>}
@@ -16,25 +18,13 @@ vi.mock('@/components/blocks/Form/FormField', () => ({
   ),
 }))
 
-// Mock UI components
-vi.mock('@/components/ui/input', () => ({
-  Input: React.forwardRef(({ type, ...props }: any, ref) => (
+vi.mock('@/components/ui/input', () => {
+  const Input = React.forwardRef(({ type, ...props }: any, ref) => (
     <input {...props} type={type} ref={ref} data-testid={`input-${props.id || 'default'}`} />
-  )),
-}))
-
-// Wrapper component to provide form context
-const TextWrapper = (props: any) => {
-  const { register, formState: { errors } } = useForm()
-
-  return (
-    <Text
-      {...props}
-      register={register}
-      errors={errors}
-    />
-  )
-}
+  ))
+  Input.displayName = 'Input'
+  return { Input }
+})
 
 describe('Text Form Field', () => {
   const defaultProps = {
@@ -50,53 +40,32 @@ describe('Text Form Field', () => {
 
   describe('rendering', () => {
     it('renders text input', () => {
-      const { register, formState: { errors } } = useForm()
-      render(
-        <Text
-          {...defaultProps}
-          register={register}
-          errors={errors}
-        />
-      )
+      renderForm((register, errors) => (
+        <Text {...defaultProps} register={register} errors={errors} />
+      ))
       expect(screen.getByTestId('input-textField')).toBeInTheDocument()
     })
 
     it('renders FormField wrapper', () => {
-      const { register, formState: { errors } } = useForm()
-      render(
-        <Text
-          {...defaultProps}
-          register={register}
-          errors={errors}
-        />
-      )
+      renderForm((register, errors) => (
+        <Text {...defaultProps} register={register} errors={errors} />
+      ))
       expect(screen.getByTestId('form-field-textField')).toBeInTheDocument()
     })
 
     it('renders label', () => {
-      const { register, formState: { errors } } = useForm()
-      render(
-        <Text
-          {...defaultProps}
-          label="Full Name"
-          register={register}
-          errors={errors}
-        />
-      )
+      renderForm((register, errors) => (
+        <Text {...defaultProps} label="Full Name" register={register} errors={errors} />
+      ))
       expect(screen.getByText('Full Name')).toBeInTheDocument()
     })
   })
 
   describe('input type', () => {
     it('uses type="text"', () => {
-      const { register, formState: { errors } } = useForm()
-      const { container } = render(
-        <Text
-          {...defaultProps}
-          register={register}
-          errors={errors}
-        />
-      )
+      const { container } = renderForm((register, errors) => (
+        <Text {...defaultProps} register={register} errors={errors} />
+      ))
       const input = container.querySelector('input')
       expect(input?.type).toBe('text')
     })
@@ -104,63 +73,38 @@ describe('Text Form Field', () => {
 
   describe('required field', () => {
     it('shows required indicator when required is true', () => {
-      const { register, formState: { errors } } = useForm()
-      render(
-        <Text
-          {...defaultProps}
-          required
-          register={register}
-          errors={errors}
-        />
-      )
+      renderForm((register, errors) => (
+        <Text {...defaultProps} required register={register} errors={errors} />
+      ))
       expect(screen.getByText('*')).toBeInTheDocument()
     })
 
     it('passes required to register', () => {
-      const { register, formState: { errors } } = useForm()
-      const registerSpy = vi.spyOn({ register }, 'register')
-
-      render(
-        <Text
-          {...defaultProps}
-          required
-          register={register}
-          errors={errors}
-        />
-      )
-
-      // Register should be called with required: true
-      expect(register).toHaveBeenCalled()
+      const register = vi.fn(() => ({}))
+      render(<Text {...defaultProps} required register={register as any} errors={{}} />)
+      expect(register).toHaveBeenCalledWith('textField', { required: true })
     })
   })
 
   describe('width property', () => {
     it('passes width to FormField', () => {
-      const { register, formState: { errors } } = useForm()
-      const { container } = render(
-        <Text
-          {...defaultProps}
-          width="half"
-          register={register}
-          errors={errors}
-        />
-      )
-      // FormField receives width prop (verified through mock)
+      const { container } = renderForm((register, errors) => (
+        <Text {...defaultProps} width="half" register={register} errors={errors} />
+      ))
       expect(container).toBeTruthy()
     })
   })
 
   describe('default value', () => {
     it('uses defaultValue prop', () => {
-      const { register, formState: { errors } } = useForm()
-      const { container } = render(
+      const { container } = renderForm((register, errors) => (
         <Text
           {...defaultProps}
           defaultValue="Initial Value"
           register={register}
           errors={errors}
         />
-      )
+      ))
       const input = container.querySelector('input') as HTMLInputElement
       expect(input.defaultValue).toBe('Initial Value')
     })
@@ -168,15 +112,9 @@ describe('Text Form Field', () => {
 
   describe('field name', () => {
     it('uses field name from props', () => {
-      const { register, formState: { errors } } = useForm()
-      const { container } = render(
-        <Text
-          {...defaultProps}
-          name="userName"
-          register={register}
-          errors={errors}
-        />
-      )
+      const { container } = renderForm((register, errors) => (
+        <Text {...defaultProps} name="userName" register={register} errors={errors} />
+      ))
       const input = container.querySelector('input')
       expect(input?.id).toBe('userName')
     })
@@ -184,36 +122,29 @@ describe('Text Form Field', () => {
 
   describe('error handling', () => {
     it('displays error when field has validation error', () => {
-      const { register, formState: { errors } } = useForm()
       const mockErrors = { textField: { message: 'Field is required' } }
 
       render(
-        <Text
-          {...defaultProps}
-          register={register}
-          errors={mockErrors}
-        />
+        <FormHarness>
+          {(register) => (
+            <Text {...defaultProps} register={register} errors={mockErrors as any} />
+          )}
+        </FormHarness>,
       )
       expect(screen.getByTestId('error-textField')).toBeInTheDocument()
     })
 
     it('does not display error when field is valid', () => {
-      const { register, formState: { errors } } = useForm()
-      render(
-        <Text
-          {...defaultProps}
-          register={register}
-          errors={errors}
-        />
-      )
+      renderForm((register, errors) => (
+        <Text {...defaultProps} register={register} errors={errors} />
+      ))
       expect(screen.queryByTestId('error-textField')).not.toBeInTheDocument()
     })
   })
 
   describe('component composition', () => {
     it('properly composes all props', () => {
-      const { register, formState: { errors } } = useForm()
-      const { container } = render(
+      const { container } = renderForm((register, errors) => (
         <Text
           name="email"
           label="Email Address"
@@ -223,7 +154,7 @@ describe('Text Form Field', () => {
           register={register}
           errors={errors}
         />
-      )
+      ))
       expect(screen.getByTestId('form-field-email')).toBeInTheDocument()
       expect(screen.getByText('Email Address')).toBeInTheDocument()
       const input = container.querySelector('input') as HTMLInputElement

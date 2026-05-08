@@ -5,7 +5,6 @@
  */
 export const supportedLocales = [
   'en',
-  'ar',
   'bg',
   'cs',
   'da',
@@ -34,6 +33,7 @@ export const supportedLocales = [
   'sl',
   'sv',
   'uk',
+  'ar',
 ] as const
 export type SupportedLocale = (typeof supportedLocales)[number]
 
@@ -70,7 +70,8 @@ const localeMetadata: Record<SupportedLocale, { label: string; rtl?: true }> = {
   uk: { label: 'Ukrainian (Українська)' },
 }
 
-const defaultLocale: SupportedLocale = 'en'
+/** Default site / Payload locale (must stay aligned with `localization.defaultLocale`). */
+export const defaultLocale: SupportedLocale = 'en'
 
 const localization = {
   defaultLocale,

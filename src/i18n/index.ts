@@ -28,16 +28,19 @@ import sk from './messages/sk.json'
 import sl from './messages/sl.json'
 import sv from './messages/sv.json'
 import uk from './messages/uk.json'
-import localization, { supportedLocales, type SupportedLocale } from './localization'
+import localization, {
+  defaultLocale,
+  supportedLocales,
+  type SupportedLocale,
+} from './localization'
 
-export { supportedLocales }
+export { supportedLocales, defaultLocale }
 export type { SupportedLocale }
-export const defaultLocale = localization.defaultLocale
 
 const flatMessages: Record<SupportedLocale, Record<string, string>> = {
   en,
-  ar,
   bg,
+  ar,
   cs,
   da,
   de,
@@ -78,8 +81,12 @@ export type NestedMessages = Record<string, unknown>
  * sibling leaf collides with them (e.g. both `search.title` and a flat
  * `search`). Leaves that would overwrite an already-built branch are skipped.
  */
-function flattenToNested(obj: Record<string, string>): NestedMessages {
+function flattenToNested(obj: Record<string, string> | null | undefined): NestedMessages {
   const result: NestedMessages = {}
+
+  if (!obj || typeof obj !== 'object') {
+    return result
+  }
 
   const sortedKeys = Object.keys(obj).sort(
     (a, b) => b.split('.').length - a.split('.').length,
@@ -119,7 +126,12 @@ function flattenToNested(obj: Record<string, string>): NestedMessages {
  * JSON per locale, safe across the Next.js RSC boundary.
  */
 export const nestedMessages = Object.fromEntries(
-  supportedLocales.map((locale) => [locale, flattenToNested(flatMessages[locale])]),
+  supportedLocales.map((locale) => {
+    const flat = flatMessages[locale]
+    const source =
+      flat ?? flatMessages[defaultLocale] ?? ({} as Record<string, string>)
+    return [locale, flattenToNested(source)]
+  }),
 ) as Record<SupportedLocale, NestedMessages>
 
 /** Type guard / runtime validator for arbitrary locale strings. */

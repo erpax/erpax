@@ -1,11 +1,17 @@
 import { expect, test } from '@playwright/test'
 
+import { supportedLocales } from '@/i18n/localization'
+
+import { expectedAdminEmailLabel } from './adminPayloadUiEmailLabels'
+
 /**
  * i18n E2E tests.
  *
  *   1. **Admin:** Payload resolves UI language via `getRequestLanguage`
- *      (`payload-lng`, `Accept-Language`, fallback). Middleware does **not**
- *      strip `?locale=` on `/admin` (Payload uses it for content locale).
+ *      (`payload-lng`, `Accept-Language`, fallback). For `/admin` routes,
+ *      middleware sets `payload-lng` from `?locale=` when it matches a
+ *      supported site locale so the admin chrome matches that language on the
+ *      same navigation. `?locale=` remains available for Payload content locale.
  *   2. **Frontend:** next-intl `/<locale>/...` and `FrontendLocaleSwitcher`.
  */
 
@@ -99,7 +105,9 @@ test.describe('i18n: Payload admin (cookie + Accept-Language)', () => {
     }
   })
 
-  test('deep link keeps ?locale= in URL (middleware does not strip)', async ({ browser }) => {
+  test('deep link keeps ?locale= in URL and applies UI language via cookie', async ({
+    browser,
+  }) => {
     const context = await browser.newContext({ locale: 'en-US' })
     const page = await context.newPage()
     try {
@@ -108,7 +116,48 @@ test.describe('i18n: Payload admin (cookie + Accept-Language)', () => {
       })
       expect(response?.status()).toBeLessThan(500)
       await expect(page).toHaveURL(/locale=bg/)
-      await expect(page.locator('label[for="field-email"]')).toContainText(/Email/i)
+      await expect(page.locator('label[for="field-email"]')).toContainText(
+        expectedAdminEmailLabel.bg,
+      )
+    } finally {
+      await context.close()
+    }
+  })
+})
+
+test.describe('i18n: admin ?locale= sets Payload UI for every supported locale', () => {
+  test.describe.configure({ timeout: 120_000 })
+
+  for (const locale of supportedLocales) {
+    test(`login shows correct email label for ?locale=${locale}`, async ({ browser }) => {
+      const context = await browser.newContext({ locale: 'en-US' })
+      const page = await context.newPage()
+      try {
+        await page.goto(`${BASE_URL}/admin/login?locale=${locale}`, {
+          waitUntil: 'domcontentloaded',
+        })
+        await expect(page.locator('label[for="field-email"]')).toContainText(
+          expectedAdminEmailLabel[locale],
+        )
+      } finally {
+        await context.close()
+      }
+    })
+  }
+
+  test('root /admin?locale= drives login screen language', async ({ browser }) => {
+    const context = await browser.newContext({ locale: 'en-US' })
+    const page = await context.newPage()
+    try {
+      await page.goto(`${BASE_URL}/admin?locale=en`, { waitUntil: 'domcontentloaded' })
+      await expect(page.locator('label[for="field-email"]')).toContainText(
+        expectedAdminEmailLabel.en,
+      )
+
+      await page.goto(`${BASE_URL}/admin?locale=bg`, { waitUntil: 'domcontentloaded' })
+      await expect(page.locator('label[for="field-email"]')).toContainText(
+        expectedAdminEmailLabel.bg,
+      )
     } finally {
       await context.close()
     }

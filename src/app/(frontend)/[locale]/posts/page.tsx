@@ -5,14 +5,19 @@ import { PageRange } from '@/components/PageRange'
 import { Pagination } from '@/components/Pagination'
 import configPromise from '@payload-config'
 import { getTranslations } from 'next-intl/server'
-import { getPayload } from 'payload'
+import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
 import PageClient from './page.client'
+
+type Args = {
+  params: Promise<{ locale: TypedLocale }>
+}
 
 export const dynamic = 'force-static'
 export const revalidate = 600
 
-export default async function Page() {
+export default async function Page({ params: paramsPromise }: Args) {
+  const { locale } = await paramsPromise
   const t = await getTranslations()
   const payload = await getPayload({ config: configPromise })
 
@@ -20,6 +25,7 @@ export default async function Page() {
     collection: 'posts',
     depth: 1,
     limit: 12,
+    locale,
     overrideAccess: false,
     select: {
       title: true,

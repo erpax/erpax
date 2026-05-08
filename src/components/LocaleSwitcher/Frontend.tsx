@@ -10,10 +10,15 @@ import { usePathname, useRouter } from '@/i18n/routing'
  * Frontend locale switcher.
  *
  * Switches the active locale by routing to the same pathname under the chosen
- * locale. After `router.replace` we call `router.refresh()` to evict the
- * Next.js Router Cache for the previous locale's RSC payload — otherwise the
- * client would re-display stale translations until the staleTimes window
- * expires (default 30s for dynamic, 5min for static).
+ * locale. After `router.replace`, force a **fresh** RSC payload:
+ *
+ * - **`router.refresh()`** invalidates the Flight/Router cache so layouts pick up
+ *   new `next-intl` messages (shared shells otherwise reuse prefetched segments).
+ * - **`experimental.staleTimes`** in `next.config.ts` keeps the client router
+ *   from hanging onto static prefetches across navigations.
+ *
+ * Refresh is deferred with **`requestAnimationFrame`** so it runs after the
+ * navigation commits (microtasks alone can race the router cache update).
  *
  * We do not use the `pathnames` routing setting, so the simple string form of
  * `router.replace(pathname, { locale })` is correct (per next-intl docs).
@@ -31,7 +36,11 @@ export const FrontendLocaleSwitcher: React.FC<{ className?: string }> = ({ class
 
       startTransition(() => {
         router.replace(pathname, { locale: nextLocale })
-        router.refresh()
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            router.refresh()
+          })
+        })
       })
     },
     [pathname, router, currentLocale],

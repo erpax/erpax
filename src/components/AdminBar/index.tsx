@@ -7,6 +7,7 @@ import { useSelectedLayoutSegments } from 'next/navigation'
 import { PayloadAdminBar } from '@payloadcms/admin-bar'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 import './index.scss'
 
@@ -45,9 +46,21 @@ const Title: React.FC<{ dashboardLabel: string }> = ({ dashboardLabel }) => (
 
 export const AdminBar: React.FC<{
   adminBarProps?: PayloadAdminBarProps
+  /** @deprecated Prefer client `useTranslations` when rendered under `NextIntlClientProvider`. */
   labels?: AdminBarLabels
 }> = (props) => {
-  const { adminBarProps, labels } = props || {}
+  const { adminBarProps, labels: labelsProp } = props || {}
+  const t = useTranslations()
+  const labels: AdminBarLabels =
+    labelsProp ?? {
+      dashboard: t('dashboard'),
+      page: t('pages.singular'),
+      pages: t('pages.plural'),
+      post: t('posts.singular'),
+      posts: t('posts.plural'),
+      project: t('project'),
+      projects: t('projects'),
+    }
   const segments = useSelectedLayoutSegments()
   const [show, setShow] = useState(false)
   const collection = (
@@ -79,15 +92,15 @@ export const AdminBar: React.FC<{
           collectionSlug={collection}
           collectionLabels={{
             plural:
-              labels?.[collectionLabels[collection]?.plural.toLowerCase() as keyof AdminBarLabels] ||
+              labels[collectionLabels[collection]?.plural.toLowerCase() as keyof AdminBarLabels] ||
               collectionLabels[collection]?.plural ||
               'Pages',
             singular:
-              labels?.[collectionLabels[collection]?.singular.toLowerCase() as keyof AdminBarLabels] ||
+              labels[collectionLabels[collection]?.singular.toLowerCase() as keyof AdminBarLabels] ||
               collectionLabels[collection]?.singular ||
               'Page',
           }}
-          logo={<Title dashboardLabel={labels?.dashboard || 'Dashboard'} />}
+          logo={<Title dashboardLabel={labels.dashboard} />}
           onAuthChange={onAuthChange}
           onPreviewExit={() => {
             fetch('/next/exit-preview').then(() => {

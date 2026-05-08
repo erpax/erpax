@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Block push unless lint + typecheck + integration tests pass (same as CI).
+# Bypass (emergency only): git push --no-verify
+pnpm run check

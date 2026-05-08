@@ -2,11 +2,20 @@ import React from 'react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 import { Button } from '@/components/ui/button'
-import { Link } from '@/i18n/routing'
-import { defaultLocale } from '@/i18n'
+import { Link, routing } from '@/i18n/routing'
 
-export default async function NotFound() {
-  setRequestLocale(defaultLocale)
+type Args = {
+  params: Promise<{ locale: string }>
+}
+
+export default async function LocaleNotFound({ params }: Args) {
+  const { locale } = await params
+
+  const effectiveLocale = routing.locales.includes(locale as (typeof routing.locales)[number])
+    ? locale
+    : routing.defaultLocale
+
+  setRequestLocale(effectiveLocale)
   const t = await getTranslations()
 
   return (

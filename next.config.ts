@@ -21,6 +21,15 @@ const nextConfig = {
     staticGenerationRetryCount: 5,
     staticGenerationMaxConcurrency: 1,
     staticGenerationMinPagesPerWorker: 999,
+    /**
+     * Avoid reusing prefetched static segments across locale switches; otherwise
+     * shared layouts can briefly show the previous locale until `staleTimes` elapses.
+     * @see https://nextjs.org/docs/app/api-reference/config/next-config-js/staleTimes
+     */
+    staleTimes: {
+      dynamic: 0,
+      static: 0,
+    },
   },
   // Windows Turbopack + Payload UI SCSS (see Next.js issue #86431)
   sassOptions: {

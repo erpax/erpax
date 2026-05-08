@@ -5,6 +5,7 @@
 
 import type { Config } from '@/payload-types'
 import type { SupportedLocale } from '@/i18n/localization'
+import { defaultLocale } from '@/i18n/localization'
 import type { TypedLocale } from 'payload'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
@@ -68,25 +69,28 @@ export function getCachedPayloadDocument<T extends Collection>(
 }
 
 /**
- * Cache a global document
- * Tag: global_{slug}
+ * Cache a global document per locale (nav labels, localized globals).
+ * Tags include `global_{slug}` so a single {@link revalidateTag} clears all locales.
  *
  * @example
- * const getCachedHeader = getCachedPayloadGlobal('header')
+ * const getCachedHeader = getCachedPayloadGlobal('header', 1, 'de')
  * const header = await getCachedHeader()
  */
 export function getCachedPayloadGlobal<T extends Global>(
   slug: T,
   depth = 0,
+  locale: SupportedLocale | string = defaultLocale,
 ) {
+  const localeKey = locale
   return createCachedPayloadFetcher(
-    [slug],
-    [`global_${slug}`],
+    [slug, String(depth), localeKey],
+    [`global_${slug}`, `global_${slug}_${localeKey}`],
     async () => {
       const payload = await getPayload({ config: configPromise })
       return payload.findGlobal({
         slug,
         depth,
+        locale: localeKey as TypedLocale,
       })
     },
   )

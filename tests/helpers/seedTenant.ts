@@ -1,8 +1,7 @@
 /**
  * Test Tenant Seeding Utilities
  *
- * Helper functions for creating and cleaning up test tenants
- * via Payload's Local API. Essential for multi-tenant tests.
+ * Helpers for creating and cleaning up test tenants via Payload's Local API.
  *
  * @see https://payloadcms.com/docs/plugins/multi-tenant
  */
@@ -36,6 +35,7 @@ export async function seedTestTenant(
     collection: 'tenants',
     where: { slug: { equals: tenantData.slug } },
     limit: 1,
+    overrideAccess: true,
   })
 
   if (existing.docs.length > 0) {
@@ -49,6 +49,7 @@ export async function seedTestTenant(
       name: tenantData.name,
       slug: tenantData.slug,
     },
+    overrideAccess: true,
   })
 
   return tenant.id
@@ -69,14 +70,29 @@ export async function cleanupTestTenant(payload: Payload, slug: string): Promise
     collection: 'tenants',
     where: { slug: { equals: slug } },
     limit: 1,
+    overrideAccess: true,
   })
 
   if (existing.docs.length > 0) {
     await payload.delete({
       collection: 'tenants',
       id: existing.docs[0].id,
+      overrideAccess: true,
     }).catch(() => {
       // Ignore errors - tenant may have dependencies
     })
   }
+}
+
+/** Delete a tenant by ID (avoids a lookup query). */
+export async function cleanupTestTenantById(payload: Payload, id: number): Promise<void> {
+  await payload
+    .delete({
+      collection: 'tenants',
+      id,
+      overrideAccess: true,
+    })
+    .catch(() => {
+      // Ignore errors - tenant may have dependencies
+    })
 }

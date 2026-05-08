@@ -5,6 +5,8 @@ import localization from './localization'
 export const routing = defineRouting({
   locales: localization.locales.map((locale) => locale.code),
   defaultLocale: localization.defaultLocale,
+  /** Always prefix URLs with `/en`, `/de`, … — matches `(frontend)/[locale]` and avoids `as-needed` pathname/cookie edge cases when switching locale. */
+  localePrefix: 'always',
 })
 
 // Lightweight wrappers around Next.js' navigation APIs

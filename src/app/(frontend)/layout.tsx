@@ -5,21 +5,15 @@ import { GeistMono } from 'geist/font/mono'
 import { GeistSans } from 'geist/font/sans'
 import React from 'react'
 
-import { AdminBar } from '@/components/AdminBar'
 import { Providers } from '@/components/providers'
 import { InitTheme } from '@/components/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
-import { draftMode } from 'next/headers'
-import { getTranslations } from 'next-intl/server'
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
 import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {
-  const { isEnabled } = await draftMode()
-  const t = await getTranslations()
-
   return (
     <html className={cn(GeistSans.variable, GeistMono.variable)} lang="en" suppressHydrationWarning>
       <head>
@@ -28,23 +22,7 @@ export default async function FrontendRootLayout({ children }: { children: React
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
       </head>
       <body>
-        <Providers>
-          <AdminBar
-            adminBarProps={{
-              preview: isEnabled,
-            }}
-            labels={{
-              dashboard: t('dashboard'),
-              page: t('pages.singular'),
-              pages: t('pages.plural'),
-              post: t('posts.singular'),
-              posts: t('posts.plural'),
-              project: t('project'),
-              projects: t('projects'),
-            }}
-          />
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

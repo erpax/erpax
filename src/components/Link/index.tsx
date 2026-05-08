@@ -1,7 +1,13 @@
+'use client'
+
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { cn } from '@/utilities/ui'
 import Link from 'next/link'
+import { useLocale } from 'next-intl'
 import React from 'react'
+
+import type { SupportedLocale } from '@/i18n/localization'
+import { supportedLocales } from '@/i18n/localization'
 
 import type { Page, Post } from '@/payload-types'
 
@@ -20,7 +26,30 @@ type CMSLinkType = {
   url?: string | null
 }
 
+/** Prefix internal paths with `/[locale]/…` when using `localePrefix: 'always'`. */
+function withLocalePrefix(path: string, locale: string): string {
+  if (
+    !path ||
+    path.startsWith('http://') ||
+    path.startsWith('https://') ||
+    path.startsWith('mailto:') ||
+    path.startsWith('tel:') ||
+    path.startsWith('#')
+  ) {
+    return path
+  }
+
+  const normalized = path.startsWith('/') ? path : `/${path}`
+  const first = normalized.split('/').filter(Boolean)[0]
+  if (first !== undefined && supportedLocales.includes(first as SupportedLocale)) {
+    return normalized
+  }
+
+  return `/${locale}${normalized}`
+}
+
 export const CMSLink: React.FC<CMSLinkType> = (props) => {
+  const locale = useLocale()
   const {
     type,
     appearance = 'inline',
@@ -33,12 +62,14 @@ export const CMSLink: React.FC<CMSLinkType> = (props) => {
     url,
   } = props
 
-  const href =
+  const rawHref =
     type === 'reference' && typeof reference?.value === 'object' && reference.value.slug
       ? `${reference?.relationTo !== 'pages' ? `/${reference?.relationTo}` : ''}/${
           reference.value.slug
         }`
-      : url
+      : url ?? ''
+
+  const href = rawHref ? withLocalePrefix(rawHref, locale) : ''
 
   if (!href) return null
 
@@ -48,7 +79,7 @@ export const CMSLink: React.FC<CMSLinkType> = (props) => {
   /* Ensure we don't break any styles set by richText */
   if (appearance === 'inline') {
     return (
-      <Link className={cn(className)} href={href || url || ''} {...newTabProps}>
+      <Link className={cn(className)} href={href} {...newTabProps}>
         {label && label}
         {children && children}
       </Link>
@@ -57,7 +88,7 @@ export const CMSLink: React.FC<CMSLinkType> = (props) => {
 
   return (
     <Button asChild className={className} size={size} variant={appearance}>
-      <Link className={cn(className)} href={href || url || ''} {...newTabProps}>
+      <Link className={cn(className)} href={href} {...newTabProps}>
         {label && label}
         {children && children}
       </Link>

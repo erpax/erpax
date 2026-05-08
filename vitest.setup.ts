@@ -8,7 +8,14 @@
  */
 
 import 'dotenv/config'
+import '@testing-library/jest-dom/vitest'
+import { cleanup } from '@testing-library/react'
+import { afterEach } from 'vitest'
 import { spawnSync } from 'node:child_process'
+
+afterEach(() => {
+  cleanup()
+})
 
 // ============================================================================
 // Required Environment Variables

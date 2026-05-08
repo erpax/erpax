@@ -17,10 +17,15 @@ export function normalizeUrl(url: string): string {
  */
 export function buildOrigin(proto: string, host: string): string {
   try {
-    return new URL(`${proto}://${host}`).origin
+    const u = new URL(`${proto}://${host}`)
+    // Non-special schemes (e.g. `invalid-proto:`) yield opaque origins (`origin === 'null'`).
+    if (u.origin && u.origin !== 'null') {
+      return u.origin
+    }
   } catch {
-    return normalizeUrl(`${proto}://${host}`)
+    // fall through
   }
+  return normalizeUrl(`${proto}://${host}`)
 }
 
 /**

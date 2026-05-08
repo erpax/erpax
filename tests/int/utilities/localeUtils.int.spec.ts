@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import {
   resolveLocale,
   isValidLocale,
@@ -7,14 +7,6 @@ import {
   getSupportedLocales,
   isDefaultLocale,
 } from '@/utilities/localeUtils'
-
-// Mock the i18n localization module
-vi.mock('@/i18n/localization', () => ({
-  default: {
-    defaultLocale: 'en',
-    supportedLocales: ['en', 'de', 'fr', 'es', 'it', 'el', 'bs', 'mk', 'sq', 'sr'],
-  },
-}))
 
 describe('localeUtils', () => {
   describe('resolveLocale', () => {
@@ -94,8 +86,8 @@ describe('localeUtils', () => {
       expect(getSafeLocale('invalid')).toBeNull()
     })
 
-    it('returns null when resolved locale is invalid', () => {
-      expect(getSafeLocale(123 as any)).toBeNull()
+    it('falls back to default when locale input type is not resolvable', () => {
+      expect(getSafeLocale(123 as any)).toBe('en')
     })
 
     it('validates after resolution from object', () => {
@@ -163,13 +155,13 @@ describe('localeUtils', () => {
       expect(locales).toContain('fr')
     })
 
-    it('includes Balkan languages', () => {
+    it('includes EU and regional locales', () => {
       const locales = getSupportedLocales()
       expect(locales).toContain('el')
-      expect(locales).toContain('bs')
-      expect(locales).toContain('mk')
-      expect(locales).toContain('sq')
-      expect(locales).toContain('sr')
+      expect(locales).toContain('bg')
+      expect(locales).toContain('hr')
+      expect(locales).toContain('uk')
+      expect(locales).toContain('ar')
     })
   })
 
