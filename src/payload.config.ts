@@ -375,10 +375,18 @@ export default buildConfig({
 
 function getCloudflareContextFromWrangler(): Promise<CloudflareContext> {
   const isNextProductionBuild = process.env.NEXT_PHASE === PHASE_PRODUCTION_BUILD
-  /** Default off during `next build` (Miniflare local SQLite). Enable on CI so Wrangler uses remote D1 and avoids SQLITE_BUSY under parallel workers. */
+  /**
+   * During `next build`, Miniflare uses a local SQLite D1; parallel workers can hit SQLITE_BUSY.
+   * Cloudflare injects `WORKERS_CI=1` (Workers Builds) or `CF_PAGES=1` (Pages) — use remote D1 then.
+   * Elsewhere (e.g. GitHub Actions), set `PAYLOAD_BUILD_USE_REMOTE_D1=true`. Opt out: `=false`.
+   * @see https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/
+   */
+  const isCloudflareBuildEnv = process.env.CF_PAGES === '1' || process.env.WORKERS_CI === '1'
+  const useRemoteD1InNextBuild =
+    process.env.PAYLOAD_BUILD_USE_REMOTE_D1 === 'true' ||
+    (isCloudflareBuildEnv && process.env.PAYLOAD_BUILD_USE_REMOTE_D1 !== 'false')
   const remoteBindings =
-    isProduction &&
-    (!isNextProductionBuild || process.env.PAYLOAD_BUILD_USE_REMOTE_D1 === 'true')
+    isProduction && (!isNextProductionBuild || useRemoteD1InNextBuild)
 
   return import(/* webpackIgnore: true */ `${'__wrangler'.replaceAll('_', '')}`).then(
     ({ getPlatformProxy }) =>
