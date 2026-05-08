@@ -5,13 +5,16 @@ import { Button } from '@/components/ui/button'
 import { Link, routing } from '@/i18n/routing'
 
 type Args = {
-  params: Promise<{ locale: string }>
+  /** Missing during some static-generation paths (e.g. prerender retries); fall back below. */
+  params?: Promise<{ locale?: string }>
 }
 
 export default async function LocaleNotFound({ params }: Args) {
-  const { locale } = await params
+  const resolved = params ? await params : {}
+  const locale = resolved.locale
 
-  const effectiveLocale = routing.locales.includes(locale as (typeof routing.locales)[number])
+  const effectiveLocale =
+    locale && routing.locales.includes(locale as (typeof routing.locales)[number])
     ? locale
     : routing.defaultLocale
 

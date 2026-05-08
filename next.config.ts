@@ -28,7 +28,8 @@ const nextConfig = {
      */
     staleTimes: {
       dynamic: 0,
-      static: 0,
+      /** Next.js 16 requires static staleTime ≥ 30 (see invalid-next-config warning). */
+      static: 30,
     },
   },
   // Windows Turbopack + Payload UI SCSS (see Next.js issue #86431)
