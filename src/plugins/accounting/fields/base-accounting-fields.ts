@@ -11,15 +11,41 @@
 
 import type { Field } from 'payload'
 /**
- * Multi-tenancy field (hostId)
+ * Multi-tenancy field — single source of truth for the per-collection
+ * `tenant` foreign key that drives ISO 27001 A.5.23 / ISO 27002 §5.15
+ * cloud-tenant isolation.
+ *
+ * Defaults to a hidden admin field. Pass options to opt out of the
+ * defaults when a collection legitimately needs the field visible (e.g.
+ * billing-side collections where ops needs to see tenant assignment),
+ * unique (single-row-per-tenant pattern), or annotated.
+ *
+ * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @standard ISO-27002 §5.15 access-control
  */
-export const multiTenancyField = (): Field => ({
-  name: 'tenant',
-  type: 'relationship',
-  relationTo: 'tenants',
-  required: true,
-  admin: { hidden: true },
-});
+export const multiTenancyField = (
+  options: {
+    /** Enforce a single row per tenant (e.g. tenant-level subscription). */
+    unique?: boolean;
+    /** Admin-UI description shown next to the field. */
+    description?: string;
+    /** Override the default `hidden: true` admin behaviour. */
+    hidden?: boolean;
+  } = {},
+): Field => {
+  const hidden = options.hidden ?? true;
+  return {
+    name: 'tenant',
+    type: 'relationship',
+    relationTo: 'tenants',
+    required: true,
+    ...(options.unique ? { unique: true } : {}),
+    admin: {
+      hidden,
+      ...(options.description ? { description: options.description } : {}),
+    },
+  };
+};
 
 /**
  * GL Account reference with denormalized display fields

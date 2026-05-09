@@ -8,6 +8,7 @@ import { validateNotLocked } from '@/plugins/accounting/utilities/period-lock'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
 import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
@@ -659,13 +660,6 @@ export const Invoices: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
-    {
-      name: 'tenant',
-      type: 'relationship',
-      relationTo: 'tenants',
-      required: true,
-      index: true,
-      hidden: true,
-    },
+    multiTenancyField(),
   ],
 }

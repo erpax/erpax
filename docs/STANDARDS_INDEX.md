@@ -67,37 +67,37 @@ src/app/my-route/route.ts:6: * @standard OpenAPI 3.1 api-description
 src/collections/Categories/index.ts:15: * @standard schema.org Category
 src/collections/Categories/index.ts:16: * @standard schema.org DefinedTerm taxonomic-term
 src/collections/InvoiceLines/hooks/beforeValidate.ts:10: * @standard EN-16931:2017 §BG-25 invoice-line
-src/collections/InvoiceLines/index.ts:30: * @standard EN-16931:2017 §BG-25 invoice-line
-src/collections/InvoiceLines/index.ts:31: * @standard EN-16931:2017 §BG-29 price-details
-src/collections/InvoiceLines/index.ts:32: * @standard EN-16931:2017 §BG-30 line-vat-information
-src/collections/InvoiceLines/index.ts:33: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
-src/collections/InvoiceLines/index.ts:34: * @standard EN-16931:2017 §BG-28 invoice-line-charges
-src/collections/InvoiceLines/index.ts:35: * @standard EN-16931:2017 BT-126 invoice-line-identifier
-src/collections/InvoiceLines/index.ts:36: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
-src/collections/InvoiceLines/index.ts:37: * @standard EN-16931:2017 BT-151 vat-category-code
-src/collections/InvoiceLines/index.ts:38: * @standard Peppol-BIS-3.0 billing line-detail
-src/collections/InvoiceLines/index.ts:39: * @standard UN-EDIFACT INVOIC §LIN line-segment
-src/collections/InvoiceLines/index.ts:40: * @standard ISO-4217:2015 currency-codes
-src/collections/InvoiceLines/index.ts:41: * @standard UN-CEFACT-5305 tax-category-codes
+src/collections/InvoiceLines/index.ts:31: * @standard EN-16931:2017 §BG-25 invoice-line
+src/collections/InvoiceLines/index.ts:32: * @standard EN-16931:2017 §BG-29 price-details
+src/collections/InvoiceLines/index.ts:33: * @standard EN-16931:2017 §BG-30 line-vat-information
+src/collections/InvoiceLines/index.ts:34: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
+src/collections/InvoiceLines/index.ts:35: * @standard EN-16931:2017 §BG-28 invoice-line-charges
+src/collections/InvoiceLines/index.ts:36: * @standard EN-16931:2017 BT-126 invoice-line-identifier
+src/collections/InvoiceLines/index.ts:37: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
+src/collections/InvoiceLines/index.ts:38: * @standard EN-16931:2017 BT-151 vat-category-code
+src/collections/InvoiceLines/index.ts:39: * @standard Peppol-BIS-3.0 billing line-detail
+src/collections/InvoiceLines/index.ts:40: * @standard UN-EDIFACT INVOIC §LIN line-segment
+src/collections/InvoiceLines/index.ts:41: * @standard ISO-4217:2015 currency-codes
+src/collections/InvoiceLines/index.ts:42: * @standard UN-CEFACT-5305 tax-category-codes
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
-src/collections/Invoices/index.ts:37: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
-src/collections/Invoices/index.ts:38: * @standard EN-16931:2017 §BG-22 document-totals
-src/collections/Invoices/index.ts:39: * @standard EN-16931:2017 §BG-23 vat-breakdown
-src/collections/Invoices/index.ts:40: * @standard EN-16931:2017 BT-3 invoice-type-code
-src/collections/Invoices/index.ts:41: * @standard EN-16931:2017 BT-5 invoice-currency-code
-src/collections/Invoices/index.ts:42: * @standard Peppol-BIS-3.0 billing electronic-invoicing
-src/collections/Invoices/index.ts:43: * @standard UN-EDIFACT INVOIC d96a
-src/collections/Invoices/index.ts:44: * @standard UN-CEFACT 1001 document-name-code
-src/collections/Invoices/index.ts:45: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
-src/collections/Invoices/index.ts:46: * @standard UBL-2.1 universal-business-language
-src/collections/Invoices/index.ts:47: * @standard ISO-4217:2015 currency-codes
-src/collections/Invoices/index.ts:48: * @standard ISO-8601-1:2019 date-time invoice-date due-date
+src/collections/Invoices/index.ts:38: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+src/collections/Invoices/index.ts:39: * @standard EN-16931:2017 §BG-22 document-totals
+src/collections/Invoices/index.ts:40: * @standard EN-16931:2017 §BG-23 vat-breakdown
+src/collections/Invoices/index.ts:41: * @standard EN-16931:2017 BT-3 invoice-type-code
+src/collections/Invoices/index.ts:42: * @standard EN-16931:2017 BT-5 invoice-currency-code
+src/collections/Invoices/index.ts:43: * @standard Peppol-BIS-3.0 billing electronic-invoicing
+src/collections/Invoices/index.ts:44: * @standard UN-EDIFACT INVOIC d96a
+src/collections/Invoices/index.ts:45: * @standard UN-CEFACT 1001 document-name-code
+src/collections/Invoices/index.ts:46: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+src/collections/Invoices/index.ts:47: * @standard UBL-2.1 universal-business-language
+src/collections/Invoices/index.ts:48: * @standard ISO-4217:2015 currency-codes
+src/collections/Invoices/index.ts:49: * @standard ISO-8601-1:2019 date-time invoice-date due-date
 src/collections/Items/hooks/beforeValidate.ts:10: * @standard GS1 GTIN global-trade-item-number
 src/collections/Items/hooks/beforeValidate.ts:9: * @standard UN-CEFACT UNSPSC product-classification
-src/collections/Items/index.ts:10: * @standard UN-CEFACT UNSPSC product-classification
-src/collections/Items/index.ts:11: * @standard GS1 GTIN global-trade-item-number
-src/collections/Items/index.ts:12: * @standard ISO-4217:2015 currency-codes price-currency
-src/collections/Items/index.ts:13: * @standard EN-16931:2017 §BG-31 item-information
+src/collections/Items/index.ts:11: * @standard UN-CEFACT UNSPSC product-classification
+src/collections/Items/index.ts:12: * @standard GS1 GTIN global-trade-item-number
+src/collections/Items/index.ts:13: * @standard ISO-4217:2015 currency-codes price-currency
+src/collections/Items/index.ts:14: * @standard EN-16931:2017 §BG-31 item-information
 src/collections/Media/index.ts:18: * @standard ISO/IEC-23008 high-efficiency-coding
 src/collections/Media/index.ts:19: * @standard ISO/IEC-10918 jpeg
 src/collections/Media/index.ts:20: * @standard W3C PNG image
@@ -110,18 +110,18 @@ src/collections/Pages/index.ts:32: * @standard W3C HTML5 Living Standard
 src/collections/Pages/index.ts:33: * @standard BCP-47 language-tag i18n-routing
 src/collections/Pages/index.ts:34: * @standard ECMA-402 internationalization-api
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
-src/collections/PaymentMethods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
-src/collections/PaymentMethods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
-src/collections/PaymentMethods/index.ts:17: * @standard ISO-4217:2015 currency-codes
-src/collections/PaymentMethods/index.ts:22: * @standard NIST SP-800-38D aes-gcm
+src/collections/PaymentMethods/index.ts:16: * @standard ISO-13616-1:2020 iban bank-account-reference
+src/collections/PaymentMethods/index.ts:17: * @standard ISO-9362:2022 bic bank-routing
+src/collections/PaymentMethods/index.ts:18: * @standard ISO-4217:2015 currency-codes
+src/collections/PaymentMethods/index.ts:23: * @standard NIST SP-800-38D aes-gcm
 src/collections/Payments/hooks/beforeValidate.ts:4: * @standard ISO-20022 financial-messaging
-src/collections/Payments/index.ts:11: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
-src/collections/Payments/index.ts:12: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
-src/collections/Payments/index.ts:13: * @standard ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer
-src/collections/Payments/index.ts:14: * @standard ISO-4217:2015 currency-codes
-src/collections/Payments/index.ts:15: * @standard ISO-8601-1:2019 date-time payment-date value-date
-src/collections/Payments/index.ts:16: * @standard ISO-13616-1:2020 iban
-src/collections/Payments/index.ts:17: * @standard ISO-9362:2022 bic
+src/collections/Payments/index.ts:12: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
+src/collections/Payments/index.ts:13: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
+src/collections/Payments/index.ts:14: * @standard ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer
+src/collections/Payments/index.ts:15: * @standard ISO-4217:2015 currency-codes
+src/collections/Payments/index.ts:16: * @standard ISO-8601-1:2019 date-time payment-date value-date
+src/collections/Payments/index.ts:17: * @standard ISO-13616-1:2020 iban
+src/collections/Payments/index.ts:18: * @standard ISO-9362:2022 bic
 src/collections/Posts/hooks/populateAuthors.ts:12: * @standard schema.org Person author
 src/collections/Posts/hooks/populateAuthors.ts:13: * @standard schema.org Article author
 src/collections/Posts/hooks/revalidatePost.ts:12: * @standard W3C HTML5 Living Standard
@@ -143,8 +143,8 @@ src/collections/SubscriptionPlans/index.ts:8: * @standard ISO-4217:2015 currency
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:23: * @standard ISO-4217:2015 currency-codes
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:24: * @standard ISO-8601-1:2019 date-time period-boundaries
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
-src/collections/Subscriptions/index.ts:13: * @standard ISO-4217:2015 currency-codes
-src/collections/Subscriptions/index.ts:14: * @standard ISO-8601-1:2019 date-time period-start period-end
+src/collections/Subscriptions/index.ts:14: * @standard ISO-4217:2015 currency-codes
+src/collections/Subscriptions/index.ts:15: * @standard ISO-8601-1:2019 date-time period-start period-end
 src/collections/Tenants/access/updateAndDelete.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
 src/collections/Tenants/hooks/initializeTrial.ts:11: * @standard ISO-8601-1:2019 date-time trial-period
 src/collections/Tenants/index.ts:106:     * @standard ISO-3166-1:2020 country-codes alpha-2 identity.country
@@ -525,6 +525,8 @@ src/plugins/accounting/fields-money-fix.ts:9: * @standard ISO-4217:2015 currency
 src/plugins/accounting/fields.ts:4: * @standard ISO-4217:2015 currency-codes amount-fields
 src/plugins/accounting/fields.ts:5: * @standard ISO-8601-1:2019 date-time date-fields
 src/plugins/accounting/fields.ts:6: * @standard ISO-3166-1:2020 country-codes
+src/plugins/accounting/fields/base-accounting-fields.ts:23: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/accounting/fields/base-accounting-fields.ts:24: * @standard ISO-27002 §5.15 access-control
 src/plugins/accounting/fields/base-accounting-fields.ts:4: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/fields/base-accounting-fields.ts:5: * @standard ISO-8601-1:2019 date-time
 src/plugins/accounting/fields/index.ts:4: * @standard ISO-4217:2015 currency-codes
@@ -1365,7 +1367,7 @@ src/collections/Pages/hooks/revalidatePage.ts:10: * @rfc 9110 §13 caching
 src/collections/Pages/hooks/revalidatePage.ts:11: * @rfc 9111 http-caching
 src/collections/Pages/index.ts:30: * @rfc 3986 uri slug-to-url
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
-src/collections/PaymentMethods/index.ts:23: * @rfc 5116 authenticated-encryption-with-associated-data
+src/collections/PaymentMethods/index.ts:24: * @rfc 5116 authenticated-encryption-with-associated-data
 src/collections/Posts/hooks/beforeChange.ts:8: * @rfc 3986 uri remote-media-source
 src/collections/Posts/hooks/revalidatePost.ts:10: * @rfc 9110 §13 caching
 src/collections/Posts/hooks/revalidatePost.ts:11: * @rfc 9111 http-caching
@@ -1632,7 +1634,7 @@ src/app/(frontend)/tenant-domains/[tenant]/login/page.tsx:10: * @compliance WCAG
 src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx:8: * @compliance WCAG-2.1 level-AA
 src/app/(frontend)/tenant-slugs/[tenant]/login/page.tsx:10: * @compliance WCAG-2.1 level-AA
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
-src/collections/Invoices/index.ts:51: * @compliance SOX §404 internal-controls
+src/collections/Invoices/index.ts:52: * @compliance SOX §404 internal-controls
 src/collections/Items/hooks/afterChange.ts:13: * @compliance SOX §404 internal-controls
 src/collections/Media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) data-minimization
 src/collections/Media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
@@ -1642,12 +1644,12 @@ src/collections/Pages/index.ts:35: * @compliance WCAG-2.1 level-AA accessibility
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:11: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:12: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
-src/collections/PaymentMethods/index.ts:18: * @compliance PCI-DSS-4.0 §3.2 do-not-store-sensitive-authentication-data
-src/collections/PaymentMethods/index.ts:19: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data
-src/collections/PaymentMethods/index.ts:20: * @compliance GDPR Art.32 security-of-processing
+src/collections/PaymentMethods/index.ts:19: * @compliance PCI-DSS-4.0 §3.2 do-not-store-sensitive-authentication-data
+src/collections/PaymentMethods/index.ts:20: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data
+src/collections/PaymentMethods/index.ts:21: * @compliance GDPR Art.32 security-of-processing
 src/collections/Payments/hooks/afterChange.ts:16: * @compliance SOX §404 internal-controls
 src/collections/Payments/hooks/beforeChange.ts:9: * @compliance SOX §404 period-close-integrity
-src/collections/Payments/index.ts:20: * @compliance SOX §404 internal-controls
+src/collections/Payments/index.ts:21: * @compliance SOX §404 internal-controls
 src/collections/Posts/hooks/populateAuthors.ts:14: * @compliance GDPR Art.5(1)(c) data-minimization
 src/collections/Posts/hooks/populateAuthors.ts:15: * @compliance GDPR Art.32 security-of-processing
 src/collections/Posts/index.ts:43: * @compliance WCAG-2.1 level-AA accessibility
@@ -1658,8 +1660,8 @@ src/collections/Roles/index.ts:16: * @compliance SOX §404 internal-controls
 src/collections/SubscriptionPlans/index.ts:11: * @compliance SOX §404 internal-controls
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
-src/collections/Subscriptions/index.ts:18: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
-src/collections/Subscriptions/index.ts:19: * @compliance SOX §404 internal-controls
+src/collections/Subscriptions/index.ts:19: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
+src/collections/Subscriptions/index.ts:20: * @compliance SOX §404 internal-controls
 src/collections/Tenants/access/updateAndDelete.ts:12: * @compliance GDPR Art.28 processor-controls
 src/collections/Tenants/access/updateAndDelete.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/Tenants/hooks/initializeTrial.ts:14: * @compliance SOX §404 internal-controls
@@ -1994,19 +1996,19 @@ src/access/subscriptionGates.ts:9: * @accounting IFRS IFRS-15 revenue-from-contr
 src/app/(api)/api/subscriptions/create/route.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/app/(api)/api/subscriptions/create/route.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/app/(api)/api/subscriptions/create/route.ts:8: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
-src/collections/InvoiceLines/index.ts:42: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/InvoiceLines/index.ts:43: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/collections/Invoices/index.ts:49: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/Invoices/index.ts:50: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/index.ts:43: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/index.ts:44: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/Invoices/index.ts:50: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/Invoices/index.ts:51: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Items/hooks/afterChange.ts:10: * @accounting IFRS IAS-2 inventories
 src/collections/Items/hooks/afterChange.ts:11: * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
-src/collections/Items/index.ts:14: * @accounting IFRS IAS-2 inventories
-src/collections/Items/index.ts:15: * @accounting US-GAAP ASC-330 inventory
+src/collections/Items/index.ts:15: * @accounting IFRS IAS-2 inventories
+src/collections/Items/index.ts:16: * @accounting US-GAAP ASC-330 inventory
 src/collections/Payments/hooks/afterChange.ts:13: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/collections/Payments/hooks/afterChange.ts:14: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/collections/Payments/hooks/beforeChange.ts:8: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/collections/Payments/index.ts:18: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/collections/Payments/index.ts:19: * @accounting US-GAAP ASC-230 statement-of-cash-flows
+src/collections/Payments/index.ts:19: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/collections/Payments/index.ts:20: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/collections/SubscriptionPlans/hooks/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/SubscriptionPlans/hooks/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/SubscriptionPlans/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
@@ -2015,9 +2017,9 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:25: * @accounting IFR
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:26: * @accounting IFRS IFRS-15 §IFRS-15.31 revenue-recognition
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:27: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:28: * @accounting US-GAAP ASC-606-10-25 contract-modifications
-src/collections/Subscriptions/index.ts:15: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/Subscriptions/index.ts:16: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/collections/Subscriptions/index.ts:17: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
+src/collections/Subscriptions/index.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/Subscriptions/index.ts:17: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/Subscriptions/index.ts:18: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
 src/collections/Tenants/hooks/initializeTrial.ts:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
 src/collections/Tenants/hooks/initializeTrial.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Tenants/index.ts:110:     * @accounting IFRS IAS-1 presentation-of-financial-statements per-tenant-framework
@@ -2668,7 +2670,7 @@ src/collections/Pages/access/superAdminOrTenantAdmin.ts:8: * @security ISO-27002
 src/collections/Pages/hooks/beforeChange.ts:9: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:13: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/PaymentMethods/hooks/encryptSensitiveFields.ts:14: * @security ISO-27001 A.8.24 use-of-cryptography
-src/collections/PaymentMethods/index.ts:21: * @security ISO-27002 §8.24 use-of-cryptography
+src/collections/PaymentMethods/index.ts:22: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/Payments/hooks/beforeValidate.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Posts/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/collections/Posts/hooks/populateAuthors.ts:16: * @security ISO-27002 §8.11 data-masking
@@ -2679,7 +2681,7 @@ src/collections/Roles/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/collections/Roles/index.ts:14: * @security ISO-27002 §5.16 identity-management
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:11: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
-src/collections/Subscriptions/index.ts:20: * @security ISO-27002 §8.24 use-of-cryptography
+src/collections/Subscriptions/index.ts:21: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/Tenants/access/updateAndDelete.ts:10: * @security ISO-27001 A.5.23 information-security-for-cloud-services tenant-isolation
 src/collections/Tenants/access/updateAndDelete.ts:11: * @security ISO-27002 §5.15 access-control
 src/collections/Tenants/index.ts:111:     * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-sandbox-config
@@ -2941,7 +2943,7 @@ src/collections/Categories/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail
 src/collections/InvoiceLines/hooks/beforeValidate.ts:12: * @audit ISO-19011:2018 audit-trail
 src/collections/InvoiceLines/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Invoices/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/Invoices/index.ts:52: * @audit ISO-19011:2018 audit-trail
+src/collections/Invoices/index.ts:53: * @audit ISO-19011:2018 audit-trail
 src/collections/Items/hooks/afterChange.ts:12: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/collections/Items/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Media/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -2951,7 +2953,7 @@ src/collections/PaymentMethods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-t
 src/collections/Payments/hooks/afterChange.ts:15: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/collections/Payments/hooks/beforeChange.ts:10: * @audit ISO-19011:2018 audit-trail
 src/collections/Payments/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/Payments/index.ts:21: * @audit ISO-19011:2018 audit-trail
+src/collections/Payments/index.ts:22: * @audit ISO-19011:2018 audit-trail
 src/collections/Posts/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Products/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary

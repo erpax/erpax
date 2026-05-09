@@ -1,6 +1,7 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
+import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 import { itemsBeforeValidate } from './hooks/beforeValidate'
 import { itemsAfterChange } from './hooks/afterChange'
 
@@ -311,13 +312,6 @@ export const Items: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
-    {
-      name: 'tenant',
-      type: 'relationship',
-      relationTo: 'tenants',
-      required: true,
-      index: true,
-      hidden: true,
-    },
+    multiTenancyField(),
   ],
 }

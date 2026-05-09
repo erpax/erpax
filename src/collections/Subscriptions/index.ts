@@ -6,6 +6,7 @@ import {
 } from './hooks/encryptSensitiveFields'
 import { emitSubscriptionLifecycleEvents } from './hooks/emitLifecycleEvents'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 
 /**
  * Subscriptions — tenant-to-plan binding with period state and Stripe sync.
@@ -42,17 +43,11 @@ export const Subscriptions: CollectionConfig = {
     afterChange: [emitSubscriptionLifecycleEvents, auditTrailAfterChange('subscriptions')],
   },
   fields: [
-    {
-      name: 'tenant',
-      type: 'relationship',
-      relationTo: 'tenants',
-      required: true,
+    multiTenancyField({
       unique: true,
-      index: true,
-      admin: {
-        description: 'The tenant this subscription belongs to',
-      },
-    },
+      hidden: false,
+      description: 'The tenant this subscription belongs to',
+    }),
     {
       name: 'plan',
       type: 'relationship',

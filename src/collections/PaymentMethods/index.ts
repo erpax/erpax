@@ -4,6 +4,7 @@ import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,
 } from './hooks/encryptSensitiveFields'
+import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 
 /**
  * Payment Methods — tokenized card / bank-account references for billing.
@@ -40,13 +41,7 @@ export const PaymentMethods: CollectionConfig = {
     afterRead: [decryptPaymentMethodData],
   },
   fields: [
-    {
-      name: 'tenant',
-      type: 'relationship',
-      relationTo: 'tenants',
-      required: true,
-      index: true,
-    },
+    multiTenancyField({ hidden: false }),
     {
       name: 'stripePaymentMethodId',
       type: 'text',

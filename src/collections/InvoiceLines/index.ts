@@ -1,6 +1,7 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
+import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 
 /**
@@ -461,13 +462,6 @@ export const InvoiceLines: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
-    {
-      name: 'tenant',
-      type: 'relationship',
-      relationTo: 'tenants',
-      required: true,
-      index: true,
-      hidden: true,
-    },
+    multiTenancyField(),
   ],
 }
