@@ -1,6 +1,17 @@
 /**
  * Contracts — IFRS 15 / ASC 606 master contract record.
  *
+ * The canonical type lives in `@/standards/ifrs-15` (Contract). This
+ * collection's field set is the Payload projection of that type:
+ *
+ *   canonical.id              → doc.id (Payload-managed)
+ *   canonical.customerId      → doc.customer (relationship)
+ *   canonical.effectiveDate   → doc.effectiveFrom
+ *   canonical.endDate         → doc.effectiveTo
+ *   canonical.currency        → doc.currency
+ *   canonical.status          → doc.status
+ *   canonical.combinedWithContractIds → doc.combinedWithContracts
+ *
  * A contract groups one or more PerformanceObligations, each with its
  * own recognition timing. Subscriptions are one *kind* of contract; this
  * collection is the universal IFRS 15 §10 source of truth.
@@ -8,12 +19,16 @@
  * @standard ISO-4217:2015 currency-codes
  * @standard ISO-8601-1:2019 date-time effective-from effective-to
  * @accounting IFRS IFRS-15 §10 contract-with-customer
+ * @accounting IFRS IFRS-15 §17 contract-combination
+ * @accounting IFRS IFRS-15 §47 transaction-price
  * @accounting US-GAAP ASC-606-10-25 contract-existence
  * @accounting US-GAAP ASC-606-10-25-13 contract-modifications
+ * @accounting US-GAAP ASC-606-10-25-9 contract-combination
  * @audit ISO-19011:2018 audit-trail contract-lifecycle
  * @compliance SOX §404 internal-controls contract-approval
  * @security ISO-27002 §5.4 segregation-of-duties
  * @compliance GDPR Art.6(1)(b) lawful-basis-contract
+ * @see src/standards/ifrs-15/types.ts Contract / TransactionPrice
  */
 
 import type { CollectionConfig } from 'payload'
@@ -42,8 +57,66 @@ const Contracts: CollectionConfig = {
     { name: 'title', type: 'text', required: true },
     { name: 'effectiveFrom', type: 'date', required: true },
     { name: 'effectiveTo', type: 'date' },
-    { name: 'totalValue', type: 'number', defaultValue: 0, admin: { description: 'Aggregate transaction price (cents).' } },
+    {
+      name: 'totalValue',
+      type: 'number',
+      defaultValue: 0,
+      admin: {
+        description:
+          'Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.',
+      },
+    },
     currencyField(),
+    // ── IFRS 15 §47 transaction-price decomposition (canonical fields) ──
+    {
+      name: 'transactionPriceFixed',
+      type: 'number',
+      defaultValue: 0,
+      admin: {
+        description:
+          'Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.',
+      },
+    },
+    {
+      name: 'transactionPriceVariable',
+      type: 'number',
+      defaultValue: 0,
+      admin: {
+        description:
+          'Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.',
+      },
+    },
+    {
+      name: 'variableConsiderationMethod',
+      type: 'select',
+      options: [
+        { label: 'Expected value', value: 'expected_value' },
+        { label: 'Most likely amount', value: 'most_likely_amount' },
+      ],
+      admin: {
+        description:
+          'IFRS 15 §53 — estimation method when variable consideration is non-zero.',
+      },
+    },
+    {
+      name: 'financingComponent',
+      type: 'number',
+      defaultValue: 0,
+      admin: {
+        description:
+          'Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.',
+      },
+    },
+    {
+      name: 'combinedWithContracts',
+      type: 'relationship',
+      relationTo: 'contracts',
+      hasMany: true,
+      admin: {
+        description:
+          'IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.',
+      },
+    },
     {
       name: 'paymentTerms',
       type: 'select',
