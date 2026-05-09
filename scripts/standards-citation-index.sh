@@ -27,16 +27,21 @@ cd "$(dirname "$0")/.."
 
 mode="${1:-index}"
 
-# Tag → human label
-declare -A TAGS=(
-  [standard]='@standard'
-  [rfc]='@rfc'
-  [compliance]='@compliance'
-  [accounting]='@accounting'
-  [security]='@security'
-  [audit]='@audit'
-  [quality]='@quality'
-)
+# Tag → human label.
+# Implemented as a function (not `declare -A`) so the script stays compatible
+# with macOS's stock bash 3.2 — pre-push hooks run under the user's shell.
+tag_label() {
+  case "$1" in
+    standard)   echo '@standard' ;;
+    rfc)        echo '@rfc' ;;
+    compliance) echo '@compliance' ;;
+    accounting) echo '@accounting' ;;
+    security)   echo '@security' ;;
+    audit)      echo '@audit' ;;
+    quality)    echo '@quality' ;;
+    *)          echo "" ;;
+  esac
+}
 
 emit_section() {
   local tag="$1"
@@ -71,7 +76,7 @@ case "$mode" in
     echo "Tag totals (citation count, not unique standards):"
     echo
     for tag in standard rfc compliance accounting security audit quality; do
-      label="${TAGS[$tag]}"
+      label="$(tag_label "$tag")"
       printf "  %-13s %s\n" "$label" "$(count_tag "$label")"
     done
     ;;
@@ -80,7 +85,7 @@ case "$mode" in
     fail=0
     # Look for tag with no value (e.g. "* @standard" alone on a line).
     for tag in standard rfc compliance accounting security audit quality; do
-      label="${TAGS[$tag]}"
+      label="$(tag_label "$tag")"
       bad=$(grep -rEn --include='*.ts' --include='*.tsx' \
             "^\\s*\\*\\s*${label}\\s*$" src/ tests/ 2>/dev/null || true)
       if [ -n "$bad" ]; then
@@ -141,7 +146,7 @@ case "$mode" in
 > materialised output of `bash scripts/standards-citation-index.sh`.
 HEADER
       for tag in standard rfc compliance accounting security audit quality; do
-        emit_section "$tag" "${TAGS[$tag]}"
+        emit_section "$tag" "$(tag_label "$tag")"
       done
     } > "$out"
     echo "Wrote ${out} ($(wc -l < "$out" | tr -d ' ') lines)"
@@ -164,7 +169,7 @@ HEADER
 > materialised output of `bash scripts/standards-citation-index.sh`.
 HEADER
       for tag in standard rfc compliance accounting security audit quality; do
-        emit_section "$tag" "${TAGS[$tag]}"
+        emit_section "$tag" "$(tag_label "$tag")"
       done
     } > "$tmp"
     if [ ! -f "$out" ]; then
