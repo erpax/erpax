@@ -694,6 +694,9 @@ src/services/gl-posting.service.ts:8: * @standard ISO-8601-1:2019 date-time post
 src/services/gl-posting.service.ts:9: * @standard ISO-4217:2015 currency-codes
 src/services/journal-entry.service.ts:7: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/services/journal-entry.service.ts:8: * @standard ISO-4217:2015 currency-codes
+src/services/lease.service.ts:21: * @standard ISO-4217:2015 currency-codes
+src/services/lease.service.ts:22: * @standard ISO-8601-1:2019 date-time
+src/services/lease.service.ts:23: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
 src/services/multi-currency.service.ts:12: * @standard ISO-4217:2015 currency-codes
 src/services/multi-currency.service.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
 src/services/multi-currency.service.ts:14: * @standard ISO-8601-1:2019 date-time rate-date
@@ -994,6 +997,7 @@ tests/int/accounting/full-cycle-demo.int.spec.ts:13: * @standard ISO-4217:2015 c
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/lease-period-posting.int.spec.ts:16: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/lease-service.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/level-2-integration.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 tests/int/accounting/level-2-integration.int.spec.ts:6: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/level-2-integration.int.spec.ts:7: * @standard ISO-8601-1:2019 date-time
@@ -2211,6 +2215,18 @@ src/services/journal-entry.service.ts:11: * @accounting OECD SAF-T §3 journal-e
 src/services/journal-entry.service.ts:35:   * @accounting IFRS IFRS-8 operating-segments
 src/services/journal-entry.service.ts:36:   * @accounting US-GAAP ASC-280 segment-reporting
 src/services/journal-entry.service.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/services/lease.service.ts:148: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
+src/services/lease.service.ts:149: * @accounting IFRS IFRS-16 §26-§28 liability-initial-measurement
+src/services/lease.service.ts:213: * @accounting IFRS IFRS-16 §31 §36 §38 amortisation
+src/services/lease.service.ts:24: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
+src/services/lease.service.ts:25: * @accounting IFRS IFRS-16 §26-§28 liability-initial-measurement
+src/services/lease.service.ts:26: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
+src/services/lease.service.ts:271: * @accounting IFRS IFRS-16 §36-§38 effective-interest-method
+src/services/lease.service.ts:27: * @accounting IFRS IFRS-16 §36-§38 lease-liability-amortised-cost
+src/services/lease.service.ts:28: * @accounting US-GAAP ASC-842-20-30 initial-measurement
+src/services/lease.service.ts:29: * @accounting US-GAAP ASC-842-20-35 subsequent-measurement
+src/services/lease.service.ts:59: * @accounting IFRS IFRS-16 §36 effective-interest-method
+src/services/lease.service.ts:94: * @accounting IFRS IFRS-16 §26 present-value-of-payments
 src/services/multi-currency.service.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
 src/services/multi-currency.service.ts:17: * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
 src/services/multi-currency.service.ts:18: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
@@ -2354,6 +2370,8 @@ tests/int/accounting/inventory-adjusted-event.int.spec.ts:12: * @accounting IFRS
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:13: * @accounting US-GAAP ASC-330 inventory
 tests/int/accounting/lease-period-posting.int.spec.ts:17: * @accounting IFRS IFRS-16 §29-§31 §36-§38 leases
 tests/int/accounting/lease-period-posting.int.spec.ts:18: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
+tests/int/accounting/lease-service.int.spec.ts:10: * @accounting US-GAAP ASC-842-20-30 / -35
+tests/int/accounting/lease-service.int.spec.ts:9: * @accounting IFRS IFRS-16 §22-§38
 tests/int/accounting/level-2-integration.int.spec.ts:8: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/level-2-integration.int.spec.ts:9: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 tests/int/accounting/level-3-e2e.int.spec.ts:11: * @accounting IFRS IAS-1 IAS-7 IAS-16 IAS-21
@@ -2908,6 +2926,7 @@ src/services/gl-posting.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/gl-posting.service.ts:539:   * @audit ISO-19011:2018 audit-trail period-expense
 src/services/gl-posting.service.ts:609:   * @audit ISO-19011:2018 audit-trail stock-ledger
 src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
+src/services/lease.service.ts:30: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:33: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
@@ -2954,6 +2973,7 @@ tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 aud
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/lease-period-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
+tests/int/accounting/lease-service.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-2-integration.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-trail full-cycle
 tests/int/accounting/payroll-disbursement.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
