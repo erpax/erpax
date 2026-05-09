@@ -1,6 +1,31 @@
 /**
  * Leases — IFRS 16 / ASC 842 right-of-use asset + lease liability.
  *
+ * The canonical type lives in `@/standards/ifrs-16` (Lease + RouAsset +
+ * LeaseLiability + LeasePayment + LeaseModification). This collection's
+ * field set is the Payload projection of that type:
+ *
+ *   canonical.id                 → doc.id (Payload-managed)
+ *   canonical.tenantId           → doc.tenant
+ *   canonical.lessorId           → doc.lessor
+ *   canonical.classification     → doc.classification (LeaseClassification)
+ *   canonical.commencementDate   → doc.commencementDate
+ *   canonical.endDate            → doc.endDate
+ *   canonical.fixedPayment       → doc.fixedPayment
+ *   canonical.paymentFrequency   → doc.paymentFrequency
+ *   canonical.paymentTiming      → doc.paymentTiming
+ *   canonical.currency           → doc.currency
+ *   canonical.discountRatePercent → doc.discountRatePercent
+ *   canonical.discountRateBasis  → doc.discountRateBasis
+ *   canonical.rouAsset.initialCost     → doc.initialRouAsset
+ *   canonical.rouAsset.carryingAmount  → doc.rouAssetCarrying
+ *   canonical.rouAsset.impairmentReserve → doc.impairmentReserve
+ *   canonical.liability.initialAmount  → doc.initialLeaseLiability
+ *   canonical.liability.carryingAmount → doc.liabilityCarrying
+ *   canonical.modifications      → doc.modifications (LeaseModification[])
+ *   canonical.status             → doc.status
+ *   canonical.terminationDate    → doc.terminationDate
+ *
  * Under IFRS 16 (effective 2019) the lessee model recognises a single
  * accounting treatment for almost every lease: a right-of-use (ROU)
  * asset and a corresponding lease liability, with two recognition
@@ -30,6 +55,7 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls capital-asset-register
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @see src/standards/ifrs-16/types.ts
  * @see docs/STANDARDS.md §4.2
  */
 

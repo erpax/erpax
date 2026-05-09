@@ -25,6 +25,8 @@
  * @standard ISO-20022:2022 universal-financial-industry-message-scheme
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+ * @accounting IFRS IFRS-16 leases
+ * @accounting US-GAAP ASC-842-20 lessee-accounting
  * @standard ISO-27002:2022 information-security-controls
  * @standard ISO-27001:2022 isms-annex-a-controls
  * @rfc 5869 hkdf
@@ -130,6 +132,31 @@ export {
   getCachedGlobal,
   getCachedRedirects,
 } from './rfc-9110'
+
+// Leases (IFRS 16 / ASC 842 lessee model)
+export type {
+  LeaseClassification,
+  LeaseStatus,
+  DiscountRateBasis,
+  PaymentFrequency,
+  PaymentTiming,
+  LeaseModificationKind,
+  UnderlyingAssetCategory,
+  LeasePayment,
+  LeaseModification,
+  RouAsset,
+  LeaseLiability,
+  Lease,
+} from './ifrs-16'
+export {
+  isLeaseClassification,
+  isLeaseStatus,
+  isDiscountRateBasis,
+  isPaymentFrequency,
+  isPaymentTiming,
+  isLeaseModificationKind,
+  qualifiesForShortTermExemption,
+} from './ifrs-16'
 
 // Revenue from Contracts with Customers (IFRS 15 / ASC 606 five-step model)
 export type {

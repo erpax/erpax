@@ -435,8 +435,8 @@ src/plugins/accounting/collections/InventoryMovements.ts:12: * @standard ISO-316
 src/plugins/accounting/collections/JournalEntries.ts:35: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/plugins/accounting/collections/KycChecks.ts:4: * @standard ISO/IEC-19794 biometric-data-interchange-formats
 src/plugins/accounting/collections/KycChecks.ts:5: * @standard FATF-Recommendation-10 customer-due-diligence
-src/plugins/accounting/collections/Leases.ts:22: * @standard ISO-4217:2015 currency-codes
-src/plugins/accounting/collections/Leases.ts:23: * @standard ISO-8601-1:2019 date-time commencement-date end-date
+src/plugins/accounting/collections/Leases.ts:47: * @standard ISO-4217:2015 currency-codes
+src/plugins/accounting/collections/Leases.ts:48: * @standard ISO-8601-1:2019 date-time commencement-date end-date
 src/plugins/accounting/collections/PaymentRuns.ts:20: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 src/plugins/accounting/collections/PaymentRuns.ts:21: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 src/plugins/accounting/collections/PaymentRuns.ts:22: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
@@ -736,6 +736,10 @@ src/standards/ifrs-15/index.ts:6: * @standard ISO-4217:2015 currency-codes
 src/standards/ifrs-15/types.ts:7: * @standard ISO-4217:2015 currency-codes
 src/standards/ifrs-15/types.ts:8: * @standard ISO-8601-1:2019 date-time
 src/standards/ifrs-15/validate.ts:4: * @standard ECMA-262 ECMAScript-2024 baseline
+src/standards/ifrs-16/index.ts:6: * @standard ISO-4217:2015 currency-codes
+src/standards/ifrs-16/types.ts:7: * @standard ISO-4217:2015 currency-codes
+src/standards/ifrs-16/types.ts:8: * @standard ISO-8601-1:2019 date-time
+src/standards/ifrs-16/validate.ts:4: * @standard ISO/IEC-29119:2022 software-testing runtime-guards
 src/standards/index.ts:10: * @standard ISO-3166-2:2020 subdivision-codes
 src/standards/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/standards/index.ts:12: * @standard ISO-13616-1:2020 iban
@@ -750,10 +754,10 @@ src/standards/index.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/standards/index.ts:23: * @standard UN-CEFACT 1001 document-name-code
 src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
 src/standards/index.ts:25: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
-src/standards/index.ts:28: * @standard ISO-27002:2022 information-security-controls
-src/standards/index.ts:29: * @standard ISO-27001:2022 isms-annex-a-controls
-src/standards/index.ts:37: * @standard W3C CSP-3
-src/standards/index.ts:38: * @standard W3C Permissions-Policy
+src/standards/index.ts:30: * @standard ISO-27002:2022 information-security-controls
+src/standards/index.ts:31: * @standard ISO-27001:2022 isms-annex-a-controls
+src/standards/index.ts:39: * @standard W3C CSP-3
+src/standards/index.ts:40: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -1044,6 +1048,7 @@ tests/standards/en-16931/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 sof
 tests/standards/en-16931/types.int.spec.ts:8: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
 tests/standards/ifrs-15/collection-alignment.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/ifrs-15/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/ifrs-16/types.int.spec.ts:9: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
@@ -1265,13 +1270,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:30: * @rfc 5869 hkdf
-src/standards/index.ts:31: * @rfc 5116 aead
-src/standards/index.ts:32: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:33: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:34: * @rfc 9110 http-semantics
-src/standards/index.ts:35: * @rfc 9111 http-caching
-src/standards/index.ts:36: * @rfc 6797 hsts
+src/standards/index.ts:32: * @rfc 5869 hkdf
+src/standards/index.ts:33: * @rfc 5116 aead
+src/standards/index.ts:34: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:35: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:36: * @rfc 9110 http-semantics
+src/standards/index.ts:37: * @rfc 9111 http-caching
+src/standards/index.ts:38: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -1629,7 +1634,7 @@ src/plugins/accounting/collections/JournalEntries.ts:40: * @compliance SOX §404
 src/plugins/accounting/collections/KycChecks.ts:6: * @compliance EU-AMLD-6 Directive-2018/1673 anti-money-laundering
 src/plugins/accounting/collections/KycChecks.ts:7: * @compliance USA-PATRIOT-Act §326 customer-identification-program
 src/plugins/accounting/collections/KycChecks.ts:8: * @compliance EU-Regulation-2015/847 wire-transfers
-src/plugins/accounting/collections/Leases.ts:31: * @compliance SOX §404 internal-controls capital-asset-register
+src/plugins/accounting/collections/Leases.ts:56: * @compliance SOX §404 internal-controls capital-asset-register
 src/plugins/accounting/collections/PaymentRuns.ts:30: * @compliance SOX §404 internal-controls preparer-authoriser-segregation
 src/plugins/accounting/collections/PayrollRuns.ts:27: * @compliance SOX §302 disclosure-controls
 src/plugins/accounting/collections/PayrollRuns.ts:28: * @compliance SOX §404 internal-controls four-eyes
@@ -1921,12 +1926,12 @@ src/plugins/accounting/collections/InventoryMovements.ts:15: * @accounting US-GA
 src/plugins/accounting/collections/JournalEntries.ts:36: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/collections/JournalEntries.ts:37: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/plugins/accounting/collections/JournalEntries.ts:38: * @accounting OECD SAF-T §3 journal-entries
-src/plugins/accounting/collections/Leases.ts:24: * @accounting IFRS IFRS-16 leases lessee-recognition
-src/plugins/accounting/collections/Leases.ts:25: * @accounting IFRS IFRS-16 §22-§35 initial-measurement-rou-asset
-src/plugins/accounting/collections/Leases.ts:26: * @accounting IFRS IFRS-16 §26-§28 initial-measurement-lease-liability
-src/plugins/accounting/collections/Leases.ts:27: * @accounting IFRS IFRS-16 §29-§31 subsequent-measurement-rou
-src/plugins/accounting/collections/Leases.ts:28: * @accounting US-GAAP ASC-842-20 lessee-accounting
-src/plugins/accounting/collections/Leases.ts:29: * @accounting US-GAAP ASC-842-20-25 finance-vs-operating-lease
+src/plugins/accounting/collections/Leases.ts:49: * @accounting IFRS IFRS-16 leases lessee-recognition
+src/plugins/accounting/collections/Leases.ts:50: * @accounting IFRS IFRS-16 §22-§35 initial-measurement-rou-asset
+src/plugins/accounting/collections/Leases.ts:51: * @accounting IFRS IFRS-16 §26-§28 initial-measurement-lease-liability
+src/plugins/accounting/collections/Leases.ts:52: * @accounting IFRS IFRS-16 §29-§31 subsequent-measurement-rou
+src/plugins/accounting/collections/Leases.ts:53: * @accounting US-GAAP ASC-842-20 lessee-accounting
+src/plugins/accounting/collections/Leases.ts:54: * @accounting US-GAAP ASC-842-20-25 finance-vs-operating-lease
 src/plugins/accounting/collections/PaymentRuns.ts:27: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/plugins/accounting/collections/PaymentRuns.ts:28: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/plugins/accounting/collections/PayrollRuns.ts:22: * @accounting IFRS IAS-19 employee-benefits short-term
@@ -2212,8 +2217,31 @@ src/standards/ifrs-15/types.ts:79: * @accounting IFRS IFRS-15 §17 contract-comb
 src/standards/ifrs-15/types.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/standards/ifrs-15/validate.ts:5: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/standards/ifrs-15/validate.ts:6: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/ifrs-16/index.ts:4: * @accounting IFRS IFRS-16 leases
+src/standards/ifrs-16/index.ts:5: * @accounting US-GAAP ASC-842-20 lessee-accounting
+src/standards/ifrs-16/types.ts:103: * @accounting IFRS IFRS-16 §36 effective-interest-method
+src/standards/ifrs-16/types.ts:104: * @accounting US-GAAP ASC-842-20-35 subsequent-measurement-lessee
+src/standards/ifrs-16/types.ts:10: * @accounting US-GAAP ASC-842-20 lessee-accounting
+src/standards/ifrs-16/types.ts:130: * @accounting IFRS IFRS-16 §44-§46 modifications
+src/standards/ifrs-16/types.ts:156: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
+src/standards/ifrs-16/types.ts:157: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
+src/standards/ifrs-16/types.ts:192: * @accounting IFRS IFRS-16 §26-§28 liability-initial-measurement
+src/standards/ifrs-16/types.ts:193: * @accounting IFRS IFRS-16 §36-§38 liability-subsequent-measurement
+src/standards/ifrs-16/types.ts:212: * @accounting IFRS IFRS-16 leases
+src/standards/ifrs-16/types.ts:213: * @accounting US-GAAP ASC-842-20 lessee-accounting
+src/standards/ifrs-16/types.ts:31: * @accounting IFRS IFRS-16 §5 recognition-exemptions
+src/standards/ifrs-16/types.ts:32: * @accounting IFRS IFRS-16 §22 initial-recognition
+src/standards/ifrs-16/types.ts:33: * @accounting US-GAAP ASC-842-10-25-2 finance-vs-operating
+src/standards/ifrs-16/types.ts:56: * @accounting IFRS IFRS-16 §26 discount-rate-selection
+src/standards/ifrs-16/types.ts:74: * @accounting IFRS IFRS-16 §44-§46 modifications
+src/standards/ifrs-16/types.ts:75: * @accounting US-GAAP ASC-842-10-25-8 lease-modifications
+src/standards/ifrs-16/types.ts:9: * @accounting IFRS IFRS-16 leases lessee
+src/standards/ifrs-16/validate.ts:5: * @accounting IFRS IFRS-16 leases
+src/standards/ifrs-16/validate.ts:6: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/standards/index.ts:26: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/standards/index.ts:27: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/index.ts:28: * @accounting IFRS IFRS-16 leases
+src/standards/index.ts:29: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/standards/iso-20022/types.ts:14: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -2309,6 +2337,8 @@ tests/standards/ifrs-15/collection-alignment.int.spec.ts:13: * @accounting IFRS 
 tests/standards/ifrs-15/collection-alignment.int.spec.ts:14: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/standards/ifrs-15/types.int.spec.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/standards/ifrs-15/types.int.spec.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+tests/standards/ifrs-16/types.int.spec.ts:10: * @accounting IFRS IFRS-16 leases
+tests/standards/ifrs-16/types.int.spec.ts:11: * @accounting US-GAAP ASC-842-20 lessee-accounting
 tests/utilities/seedSubscriptionPlans.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 tests/utilities/seedSubscriptionPlans.test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/utilities/stripeWebhookHandlers.test.ts:8: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -2484,7 +2514,7 @@ src/plugins/accounting/collections/InventoryMovements.ts:18: * @security ISO-270
 src/plugins/accounting/collections/JournalEntries.ts:41: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/JournalEntries.ts:42: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/collections/KycChecks.ts:10: * @security ISO-27001 A.5.34 privacy-and-pii
-src/plugins/accounting/collections/Leases.ts:32: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/accounting/collections/Leases.ts:57: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/PaymentRuns.ts:31: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/collections/PayrollRuns.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/PayrollRuns.ts:32: * @security ISO-27002 §5.4 segregation-of-duties
@@ -2733,7 +2763,7 @@ src/plugins/accounting/collections/InventoryCostFlow.ts:17: * @audit ISO-19011:2
 src/plugins/accounting/collections/InventoryMovements.ts:16: * @audit ISO-19011:2018 audit-trail stock-ledger
 src/plugins/accounting/collections/JournalEntries.ts:39: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/KycChecks.ts:9: * @audit ISO-19011:2018 audit-trail kyc-evidence
-src/plugins/accounting/collections/Leases.ts:30: * @audit ISO-19011:2018 audit-trail
+src/plugins/accounting/collections/Leases.ts:55: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PaymentRuns.ts:29: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PayrollRuns.ts:26: * @audit ISO-19011:2018 audit-trail payroll-evidence
 src/plugins/accounting/collections/PerformanceObligations.ts:29: * @audit ISO-19011:2018 audit-trail po-satisfaction
@@ -2821,6 +2851,7 @@ src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:33: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:280: * @audit ISO-19011:2018 audit-trail revenue-evidence
+src/standards/ifrs-16/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/standards/iso-20022/types.ts:15: * @audit ISO-19011:2018 audit-trail
 src/standards/iso-27002/coverage.ts:12: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
@@ -2871,6 +2902,7 @@ tests/standards/en-16931/collection-alignment.int.spec.ts:11: * @audit ISO-19011
 tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/ifrs-15/collection-alignment.int.spec.ts:15: * @audit ISO-19011:2018 audit-trail
 tests/standards/ifrs-15/types.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
+tests/standards/ifrs-16/types.int.spec.ts:12: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/collection-alignment.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/collection-alignment.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
