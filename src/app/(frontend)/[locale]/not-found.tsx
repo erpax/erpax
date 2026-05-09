@@ -1,3 +1,13 @@
+/**
+ * Locale-scoped not-found page.
+ *
+ * @rfc 9110 §15.5.5 404-not-found
+ * @standard schema.org WebPage
+ * @standard BCP-47 language-tag
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import React from 'react'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 

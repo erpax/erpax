@@ -1,0 +1,459 @@
+/**
+ * Level 1: Minimal Unit Test Seeds for Accounting Plugin
+ * Fast setup (<500ms) with minimal dependencies for unit tests
+ * Creates only essential data needed for specific tests
+ * Uses config-aware validation for schema discovery
+ */
+
+import type { Payload } from 'payload';
+import { TestSeedFactory, type SeedResult } from '@/testing';
+
+/**
+ * Minimal Host Seed - Single tenant for testing
+ */
+export class MinimalHostSeed extends TestSeedFactory {
+  /**
+   * Validate host data using config-based schema discovery
+   * Calls parent validateData() for automatic required field checking
+   * Adds domain-specific validation as needed
+   */
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'hosts') {
+      // Call parent to validate against Payload config
+      await super.validateData(collection, data);
+
+      // Add domain-specific validation
+      if (data.code && !/^[A-Z0-9_]+$/.test(data.code)) {
+        throw new Error('Host: code must be uppercase alphanumeric with underscores only');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Create minimal host
+      const host = await this.createDocument('hosts', {
+        name: 'Test Host',
+        code: 'TEST_HOST',
+        status: 'active',
+      });
+
+      this.context.createdIds.set('hostId', new Set([host.id]));
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Minimal GL Accounts Seed - Chart of accounts skeleton
+ */
+export class MinimalGLAccountsSeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  /**
+   * Validate GL account data using config-based schema discovery
+   * Calls parent validateData() for automatic required field checking
+   * Adds domain-specific validation as needed
+   */
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'gl-accounts') {
+      // Call parent to validate against Payload config
+      await super.validateData(collection, data);
+
+      // Add domain-specific validation
+      const validAccountTypes = ['asset', 'liability', 'equity', 'revenue', 'expense'];
+      if (data.accountType && !validAccountTypes.includes(data.accountType)) {
+        throw new Error(
+          `GL account: accountType must be one of: ${validAccountTypes.join(', ')}`,
+        );
+      }
+
+      if (data.accountNumber && !/^\d+$/.test(data.accountNumber)) {
+        throw new Error('GL account: accountNumber must be numeric');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Create minimal chart of accounts (5 accounts)
+      const _accounts = await this.createDocuments('gl-accounts', [
+        {
+          tenant: this.hostId,
+          accountNumber: '1000',
+          accountName: 'Cash',
+          accountType: 'asset',
+          balance: 0,
+          status: 'active',
+        },
+        {
+          tenant: this.hostId,
+          accountNumber: '2000',
+          accountName: 'Accounts Payable',
+          accountType: 'liability',
+          balance: 0,
+          status: 'active',
+        },
+        {
+          tenant: this.hostId,
+          accountNumber: '3000',
+          accountName: 'Equity',
+          accountType: 'equity',
+          balance: 0,
+          status: 'active',
+        },
+        {
+          tenant: this.hostId,
+          accountNumber: '4000',
+          accountName: 'Revenue',
+          accountType: 'revenue',
+          balance: 0,
+          status: 'active',
+        },
+        {
+          tenant: this.hostId,
+          accountNumber: '5000',
+          accountName: 'Expenses',
+          accountType: 'expense',
+          balance: 0,
+          status: 'active',
+        },
+      ]);
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Minimal Users Seed - Test user accounts
+ */
+export class MinimalUsersSeed extends TestSeedFactory {
+  /**
+   * Validate user data using config-based schema discovery
+   * Calls parent validateData() for automatic required field checking
+   * Adds domain-specific validation as needed
+   */
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'users') {
+      // Call parent to validate against Payload config
+      await super.validateData(collection, data);
+
+      // Add domain-specific validation
+      if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+        throw new Error('User: email must be a valid email address');
+      }
+
+      const validRoles = ['admin', 'accountant', 'auditor'];
+      if (data.role && !validRoles.includes(data.role)) {
+        throw new Error(`User: role must be one of: ${validRoles.join(', ')}`);
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Create test users
+      const _users = await this.createDocuments('users', [
+        {
+          email: 'admin@test.local',
+          password: 'test123',
+          roles: ['admin'],
+          status: 'active',
+        },
+        {
+          email: 'accountant@test.local',
+          password: 'test123',
+          roles: ['accountant'],
+          status: 'active',
+        },
+        {
+          email: 'auditor@test.local',
+          password: 'test123',
+          roles: ['auditor'],
+          status: 'active',
+        },
+      ]);
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Minimal Currency Rates Seed - Base currencies
+ */
+export class MinimalCurrencyRatesSeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  /**
+   * Validate currency rate data using config-based schema discovery
+   * Calls parent validateData() for automatic required field checking
+   * Adds domain-specific validation as needed
+   */
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'currency-rates') {
+      // Call parent to validate against Payload config
+      await super.validateData(collection, data);
+
+      // Add domain-specific validation
+      if (data.rate !== undefined && (data.rate <= 0 || !Number.isFinite(data.rate))) {
+        throw new Error('Currency rate: rate must be a positive number');
+      }
+
+      if (data.fromCurrency && !/^[A-Z]{3}$/.test(data.fromCurrency)) {
+        throw new Error('Currency rate: fromCurrency must be a valid 3-letter currency code');
+      }
+
+      if (data.toCurrency && !/^[A-Z]{3}$/.test(data.toCurrency)) {
+        throw new Error('Currency rate: toCurrency must be a valid 3-letter currency code');
+      }
+
+      if (data.effectiveDate && !/^\d{4}-\d{2}-\d{2}/.test(data.effectiveDate)) {
+        throw new Error('Currency rate: effectiveDate must be a valid date (YYYY-MM-DD)');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Create minimal currency rates
+      const baseDate = new Date().toISOString().split('T')[0];
+
+      const _rates = await this.createDocuments('currency-rates', [
+        {
+          tenant: this.hostId,
+          fromCurrency: 'USD',
+          toCurrency: 'USD',
+          rate: 1.0,
+          effectiveDate: baseDate,
+          status: 'active',
+        },
+        {
+          tenant: this.hostId,
+          fromCurrency: 'EUR',
+          toCurrency: 'USD',
+          rate: 1.1,
+          effectiveDate: baseDate,
+          status: 'active',
+        },
+        {
+          tenant: this.hostId,
+          fromCurrency: 'GBP',
+          toCurrency: 'USD',
+          rate: 1.27,
+          effectiveDate: baseDate,
+          status: 'active',
+        },
+      ]);
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Combined Level 1 Seed Suite
+ * Creates all minimal seeds in optimized order
+ */
+export class Level1SeedSuite extends TestSeedFactory {
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+    const startTime = Date.now();
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // 1. Create host (required for all other data)
+      const hostSeed = new MinimalHostSeed(this.payload);
+      const hostResult = await hostSeed.seed();
+      if (!hostResult.success) throw hostResult.error;
+
+      const hostId = Array.from(hostSeed['context']!.createdIds.get('hostId') || new Set())[0];
+      if (!hostId) throw new Error('Failed to create host');
+
+      // Track host creation
+      this.trackCreatedId('hosts', hostId);
+
+      // 2. Create GL accounts
+      const glSeed = new MinimalGLAccountsSeed(this.payload, hostId);
+      const glResult = await glSeed.seed();
+      if (!glResult.success) throw glResult.error;
+
+      // 3. Create users
+      const userSeed = new MinimalUsersSeed(this.payload);
+      const userResult = await userSeed.seed();
+      if (!userResult.success) throw userResult.error;
+
+      // 4. Create currency rates
+      const rateSeed = new MinimalCurrencyRatesSeed(this.payload, hostId);
+      const rateResult = await rateSeed.seed();
+      if (!rateResult.success) throw rateResult.error;
+
+      // Aggregate all created IDs
+      for (const [collection, ids] of glSeed['context']!.createdIds) {
+        this.context.createdIds.set(collection, ids);
+      }
+      for (const [collection, ids] of userSeed['context']!.createdIds) {
+        if (!this.context.createdIds.has(collection)) {
+          this.context.createdIds.set(collection, new Set());
+        }
+        for (const id of ids) {
+          this.context.createdIds.get(collection)!.add(id);
+        }
+      }
+      for (const [collection, ids] of rateSeed['context']!.createdIds) {
+        if (!this.context.createdIds.has(collection)) {
+          this.context.createdIds.set(collection, new Set());
+        }
+        for (const id of ids) {
+          this.context.createdIds.get(collection)!.add(id);
+        }
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}

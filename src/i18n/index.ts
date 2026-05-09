@@ -1,3 +1,19 @@
+/**
+ * i18n entrypoint — supported locales, message bundle, helpers.
+ *
+ * 35 message bundles (one per supported locale) loaded as RFC 8259 JSON.
+ * Locale tags follow BCP 47; runtime formatting via ECMA-402 `Intl`.
+ *
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @rfc 4647 matching-of-language-tags
+ * @rfc 8259 json
+ * @standard ECMA-402 internationalization-api
+ * @standard Unicode-CLDR locale-data
+ * @standard W3C Internationalization-Best-Practices
+ * @see docs/STANDARDS.md §6 §4.3
+ */
+
 import ar from './messages/ar.json'
 import bg from './messages/bg.json'
 import cs from './messages/cs.json'
@@ -28,7 +44,7 @@ import sk from './messages/sk.json'
 import sl from './messages/sl.json'
 import sv from './messages/sv.json'
 import uk from './messages/uk.json'
-import localization, {
+import {
   defaultLocale,
   supportedLocales,
   type SupportedLocale,

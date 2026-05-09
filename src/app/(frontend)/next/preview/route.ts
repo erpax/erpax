@@ -1,3 +1,17 @@
+/**
+ * GET /next/preview — enable draft mode and redirect to the preview URL,
+ * gated by a signed preview secret.
+ *
+ * @rfc 9110 http-semantics
+ * @rfc 9110 §15.4 redirection-3xx
+ * @rfc 3986 uniform-resource-identifier
+ * @rfc 6265 cookies draft-mode-cookie
+ * @standard HMAC-SHA256 RFC 2104 preview-secret
+ * @security ISO-27002 §5.15 access-control preview-secret
+ * @security ISO-27001 A.5.17 authentication-information secret-management
+ * @see src/app/README.md
+ */
+
 import type { PayloadRequest } from 'payload'
 import { getPayload } from 'payload'
 
@@ -6,6 +20,7 @@ import { redirect } from 'next/navigation'
 import { NextRequest } from 'next/server'
 
 import configPromise from '@payload-config'
+import { apiErrorResponse, ERR } from '@/utilities/errors'
 import { getPreviewSecret } from '@/utilities/getPreviewSecret'
 
 export type PreviewSearchParams = {
@@ -22,15 +37,15 @@ export async function GET(req: NextRequest): Promise<Response> {
   const previewSecret = searchParams.get('previewSecret') ?? ''
   const expectedSecret = getPreviewSecret()
   if (previewSecret !== expectedSecret) {
-    return new Response('You are not allowed to preview this page', { status: 403 })
+    return apiErrorResponse(ERR.PREVIEW_SECRET_INVALID)
   }
 
   if (!path) {
-    return new Response('Insufficient search params', { status: 404 })
+    return apiErrorResponse(ERR.PREVIEW_PATH_MISSING)
   }
 
   if (!path.startsWith('/')) {
-    return new Response('This endpoint can only be used for relative previews', { status: 500 })
+    return apiErrorResponse(ERR.PREVIEW_PATH_INVALID)
   }
 
   let user
@@ -42,14 +57,14 @@ export async function GET(req: NextRequest): Promise<Response> {
     })
   } catch (error) {
     payload.logger.error({ err: error }, 'Error verifying token for live preview')
-    return new Response('You are not allowed to preview this page', { status: 403 })
+    return apiErrorResponse(ERR.PREVIEW_AUTH_FAILED)
   }
 
   const draft = await draftMode()
 
   if (!user) {
     draft.disable()
-    return new Response('You are not allowed to preview this page', { status: 403 })
+    return apiErrorResponse(ERR.PREVIEW_AUTH_FAILED)
   }
 
   // You can add additional checks here to see if the user is allowed to preview this page

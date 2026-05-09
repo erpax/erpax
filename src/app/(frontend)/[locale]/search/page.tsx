@@ -1,3 +1,13 @@
+/**
+ * Search results page — `/[locale]/search?q=...`.
+ *
+ * @standard schema.org SearchResultsPage
+ * @standard schema.org SearchAction
+ * @rfc 3986 uniform-resource-identifier query-component
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next/types'
 
 import { CollectionArchive } from '@/components/CollectionArchive'

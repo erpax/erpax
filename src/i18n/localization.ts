@@ -1,7 +1,16 @@
 /**
- * Locales: EU official languages (24) plus European Norwegian (`nb`), Icelandic
- * (`is`), Ukrainian (`uk`), Russian (`ru`), and international `ja`, `ar`.
- * Content strings start from English (`en.json` copies) until translated.
+ * Localization config — supported locales + Payload localization shape.
+ *
+ * 24 EU official languages plus European Norwegian (`nb`), Icelandic (`is`),
+ * Ukrainian (`uk`), Russian (`ru`), and international `ja`, `ar`. Content
+ * strings start from English (`en.json` copies) until translated.
+ *
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @standard ECMA-402 internationalization-api
+ * @standard Unicode-CLDR locale-data
+ * @standard EU 1958/1 official-languages-of-the-european-union
+ * @see docs/STANDARDS.md §6
  */
 export const supportedLocales = [
   'en',

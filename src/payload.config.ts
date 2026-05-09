@@ -42,12 +42,34 @@ import { sv } from '@payloadcms/translations/languages/sv'
 import { uk } from '@payloadcms/translations/languages/uk'
 
 import { isSuperAdmin, isSuperAdminAccess } from './access/isSuperAdmin'
-import { Categories } from './collections/Categories'
-import { Media } from './collections/Media'
-import { Pages } from './collections/Pages'
-import { Posts } from './collections/Posts'
-import { Tenants } from './collections/Tenants'
-import { Users } from './collections/Users'
+// All collections come from the single barrel — `src/collections/index.ts`.
+// Domain context (Core / Content / Billing / Inventory / Ledger) is documented
+// inside that barrel; this file just consumes it.
+//
+// The 20 accounting collections are NOT listed here — they are registered via
+// `accountingPlugin()` in `src/plugins/index.ts`, which lives within
+// `src/plugins/accounting/`.
+import {
+  // Core
+  Tenants,
+  Users,
+  Roles,
+  UserRoles,
+  // Content (CMS)
+  Categories,
+  Media,
+  Pages,
+  Posts,
+  // Billing
+  Invoices,
+  InvoiceLines,
+  PaymentMethods,
+  Payments,
+  SubscriptionPlans,
+  Subscriptions,
+  // Inventory
+  Items,
+} from './collections'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
 import { plugins as payloadPlugins } from './plugins'
@@ -56,8 +78,8 @@ import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
 import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
-} from './utilities/deriveSecret'
-import { getServerSideURL } from './utilities/getURL'
+} from './standards/nist-sp-800-108'
+import { getServerSideURL } from './standards/rfc-3986/get-url'
 import { getUserTenantIDs } from './utilities/getUserTenantIDs'
 import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
 import localization from './i18n/localization'
@@ -70,6 +92,9 @@ import {
 } from './i18n'
 
 import type { Config } from './payload-types'
+
+/** `buildConfig({ logger })` type — used so Workers can supply a non-pino logger without `any`. */
+type PayloadBuildConfigLogger = NonNullable<Parameters<typeof buildConfig>[0]['logger']>
 
 /** Finnish, Greek, Irish, Maltese — no `@payloadcms/translations` pack; reuse English UI. */
 const payloadUiFallback = en
@@ -102,7 +127,7 @@ const cloudflareLogger = {
   error: createLog('error', console.error),
   fatal: createLog('fatal', console.error),
   silent: () => {},
-} as any
+} as PayloadBuildConfigLogger
 
 let _cloudflare: CloudflareContext | undefined
 let _cloudflareInit = false
@@ -205,7 +230,26 @@ export default buildConfig({
     push:
       process.env.NODE_ENV !== 'test' && process.env.PAYLOAD_DEV_PUSH !== 'false',
   }),
-  collections: [Tenants, Pages, Posts, Media, Categories, Users],
+  collections: [
+    Tenants,
+    Pages,
+    Posts,
+    Media,
+    Categories,
+    Roles,
+    UserRoles,
+    Users,
+    SubscriptionPlans,
+    Subscriptions,
+    Items,
+    Invoices,
+    InvoiceLines,
+    PaymentMethods,
+    Payments,
+    // Ledger kernel (Accounts/Equations/Entries/Statements) was retired — canonical
+    // write-model is the accounting plugin (`gl-accounts`/`journal-entries`/`gl-postings`)
+    // registered via `accountingPlugin()` in src/plugins/index.ts.
+  ],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [
@@ -362,7 +406,32 @@ export default buildConfig({
         return authHeader === `Bearer ${secret}`
       },
     },
-    tasks: [],
+    tasks: [
+      /**
+       * Dunning cycle — past-due → suspend → cancel cascade for subscriptions.
+       * Implementation at `src/jobs/dunningJob.ts`. Wired here per Slice ZZ
+       * (was orphaned before — see CHANGELOG `[Unreleased]` Slice YY).
+       *
+       * Reachable via:
+       *   • Cloudflare Workers: `POST /api/payload-jobs/run` + a wrangler
+       *     `[[triggers]]` cron entry (recommended for the actual deploy).
+       *   • Long-lived Node: `PAYLOAD_JOB_AUTORUN=true` + the `autoRun`
+       *     block below; runs every 5 minutes from the default queue.
+       *
+       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+       * @audit ISO-19011:2018 audit-trail dunning-cycle
+       */
+      {
+        slug: 'dunning-cycle',
+        handler: async ({ req }: { req: PayloadRequest }) => {
+          const { processDunningCycle } = await import('./jobs/dunningJob')
+          await processDunningCycle(req.payload)
+          return { output: { status: 'completed' } }
+        },
+      },
+    ],
     /** Dedicated/long-lived Node only. On Cloudflare Workers use `/api/payload-jobs/run` + Schedules/cron. */
     ...(process.env.PAYLOAD_JOB_AUTORUN === 'true'
       ? {

@@ -1,5 +1,16 @@
 'use client'
 
+/**
+ * Custom link wrapper — internal Payload doc reference or external URL.
+ *
+ * @rfc 3986 uniform-resource-identifier
+ * @standard W3C HTML5 anchor-element
+ * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+ * @compliance WCAG-2.1 §2.4.9 link-purpose-link-only
+ * @standard BCP-47 language-tag locale-aware-routing
+ * @see src/components/README.md
+ */
+
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { cn } from '@/utilities/ui'
 import Link from 'next/link'

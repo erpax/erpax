@@ -244,20 +244,5 @@
   "products.categories": "Categories",
   "contentBlock.columns": "Columns",
   "contentBlock.enableLink": "Enable Link",
-  "mediaBlock.media": "Media",
-  "categories": {
-    "singular": "Kategori",
-    "plural": "Kategoriler",
-    "title": "Başlık"
-  },
-  "pages": {
-    "singular": "Sayfa",
-    "plural": "Sayfalar",
-    "title": "Başlık"
-  },
-  "users": {
-    "singular": "Kullanıcı",
-    "plural": "Kullanıcılar",
-    "name": "Ad"
-  }
+  "mediaBlock.media": "Media"
 }

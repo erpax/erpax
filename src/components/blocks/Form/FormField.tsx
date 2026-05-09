@@ -11,7 +11,7 @@
  * </FormField>
  */
 
-import type { FieldErrorsImpl, FieldValues } from 'react-hook-form'
+import type { FieldErrorsImpl } from 'react-hook-form'
 import type { ReactNode } from 'react'
 import React from 'react'
 import { Label } from '@/components/ui/label'

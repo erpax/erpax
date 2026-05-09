@@ -1,3 +1,16 @@
+/**
+ * Tenant-domain login page.
+ *
+ * @rfc 9110 http-semantics
+ * @rfc 7519 jwt session-token
+ * @rfc 6265 cookies
+ * @security ISO-27001 A.5.16 identity-management
+ * @security ISO-27001 A.5.17 authentication-information
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
 
@@ -7,7 +20,6 @@ type RouteParams = {
   tenant: string
 }
 
-// eslint-disable-next-line no-restricted-exports
 export default async function Page({ params: paramsPromise }: { params: Promise<RouteParams> }) {
   const params = await paramsPromise
   const t = await getTranslations()

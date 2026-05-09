@@ -1,16 +1,28 @@
+/**
+ * Integration tests for refactored utilities — Form blocks ↔ urlUtils,
+ * localeUtils, payloadCache, getURL.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing integration-test-level
+ * @rfc 3986 uniform-resource-identifier
+ * @rfc 9110 http-semantics
+ * @standard BCP-47 language-tag
+ * @standard ECMA-402 internationalization-api
+ * @see docs/STANDARDS.md §4.3 §7
+ */
+
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 
 import * as TextMod from '@/components/blocks/Form/Text'
 import * as EmailMod from '@/components/blocks/Form/Email'
 import * as NumberMod from '@/components/blocks/Form/Number'
 import * as TextareaMod from '@/components/blocks/Form/Textarea'
-import * as urlUtils from '@/utilities/urlUtils'
-import * as localeUtils from '@/utilities/localeUtils'
-import * as payloadCache from '@/utilities/payloadCache'
-import * as getURL from '@/utilities/getURL'
-import * as getDocument from '@/utilities/getDocument'
-import * as getGlobals from '@/utilities/getGlobals'
-import * as generatePreviewPath from '@/utilities/generatePreviewPath'
+import * as urlUtils from '@/standards/rfc-3986/url-utils'
+import * as localeUtils from '@/standards/bcp-47/locale-utils'
+import * as payloadCache from '@/standards/rfc-9110'
+import * as getURL from '@/standards/rfc-3986/get-url'
+import * as getDocument from '@/standards/rfc-9110/get-document'
+import * as getGlobals from '@/standards/rfc-9110/get-globals'
+import * as generatePreviewPath from '@/standards/rfc-3986/generate-preview-path'
 
 /**
  * Integration tests for refactored utilities

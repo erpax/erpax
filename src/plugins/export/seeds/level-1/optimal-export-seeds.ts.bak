@@ -1,0 +1,832 @@
+/**
+ * Level 1: OPTIMAL Unit Test Seeds for Export Plugin
+ * Fast setup (<500ms) with minimal dependencies for unit tests
+ * Comprehensive coverage: 10+ templates, 8+ API configs, format definitions, data mappings
+ * Real export format validation: PDF, Excel, CSV, JSON, HTML
+ */
+
+import type { Payload } from 'payload';
+import { TestSeedFactory, type SeedResult, type SeedContext } from '../../../../src/testing';
+
+/**
+ * Export Template Seed - 10+ realistic templates
+ * Covers all export formats: PDF, Excel, CSV, HTML, JSON
+ */
+export class OptimalExportTemplateSeed extends TestSeedFactory {
+  private environmentId: string = '';
+  private createdIds: Set<string> = new Set();
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'export-templates') {
+      await super.validateData(collection, data);
+      
+      const validFormats = ['pdf', 'excel', 'csv', 'json', 'html', 'xml'];
+      if (data.format && !validFormats.includes(data.format)) {
+        throw new Error(
+          `Export template: format must be one of: ${validFormats.join(', ')}`
+        );
+      }
+
+      if (data.pageSize && !['A4', 'Letter', 'A3', 'Tabloid'].includes(data.pageSize)) {
+        throw new Error('Export template: pageSize must be A4, Letter, A3, or Tabloid');
+      }
+
+      if (data.orientation && !['portrait', 'landscape'].includes(data.orientation)) {
+        throw new Error('Export template: orientation must be portrait or landscape');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+    this.environmentId = this.context.environmentId;
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Template 1: Financial Statement PDF
+      const financialPdf = await this.createDocument('export-templates', {
+        name: 'Financial Statement PDF',
+        code: 'FIN_STMT_PDF',
+        format: 'pdf',
+        description: 'Monthly financial statements in PDF format',
+        pageSize: 'A4',
+        orientation: 'portrait',
+        includeHeader: true,
+        includeFooter: true,
+        headerText: 'Financial Statements',
+        footerText: 'Page {page} of {pages}',
+        margins: { top: 20, bottom: 20, left: 15, right: 15 },
+        fontSize: 11,
+        fontFamily: 'Helvetica',
+        includePageNumbers: true,
+        status: 'active',
+      });
+      this.createdIds.add(financialPdf.id);
+
+      // Template 2: Balance Sheet Excel
+      const balanceSheetExcel = await this.createDocument('export-templates', {
+        name: 'Balance Sheet Excel',
+        code: 'BALANCE_SHEET_EXCEL',
+        format: 'excel',
+        description: 'Balance sheet with multiple sheets and formulas',
+        includeHeader: true,
+        sheetName: 'Balance Sheet',
+        freezeHeader: true,
+        autoColumnWidth: true,
+        numberFormat: '#,##0.00',
+        status: 'active',
+      });
+      this.createdIds.add(balanceSheetExcel.id);
+
+      // Template 3: GL Trial Balance CSV
+      const trialBalanceCsv = await this.createDocument('export-templates', {
+        name: 'GL Trial Balance CSV',
+        code: 'GL_TRIAL_CSV',
+        format: 'csv',
+        description: 'General ledger trial balance as CSV',
+        delimiter: ',',
+        quoteCharacter: '"',
+        includeHeader: true,
+        encoding: 'UTF-8',
+        lineTerminator: '\r\n',
+        status: 'active',
+      });
+      this.createdIds.add(trialBalanceCsv.id);
+
+      // Template 4: Income Statement Excel
+      const incomeExcel = await this.createDocument('export-templates', {
+        name: 'Income Statement Excel',
+        code: 'INCOME_STMT_EXCEL',
+        format: 'excel',
+        description: 'Income statement with year-over-year comparison',
+        sheetName: 'Income Statement',
+        includeCharts: true,
+        chartType: 'column',
+        numberFormat: '#,##0.00',
+        freezeHeader: true,
+        status: 'active',
+      });
+      this.createdIds.add(incomeExcel.id);
+
+      // Template 5: Transaction Details HTML
+      const transactionHtml = await this.createDocument('export-templates', {
+        name: 'Transaction Details HTML',
+        code: 'TXN_DETAILS_HTML',
+        format: 'html',
+        description: 'Transaction details in interactive HTML format',
+        includeHeader: true,
+        includeFooter: true,
+        includeTableOfContents: true,
+        responsive: true,
+        darkMode: false,
+        status: 'active',
+      });
+      this.createdIds.add(transactionHtml.id);
+
+      // Template 6: Journal Entries JSON
+      const journalJson = await this.createDocument('export-templates', {
+        name: 'Journal Entries JSON',
+        code: 'JOURNAL_JSON',
+        format: 'json',
+        description: 'Journal entries in JSON format for API integration',
+        includeMetadata: true,
+        prettyPrint: true,
+        includeTimestamps: true,
+        status: 'active',
+      });
+      this.createdIds.add(journalJson.id);
+
+      // Template 7: Cash Flow Statement PDF
+      const cashFlowPdf = await this.createDocument('export-templates', {
+        name: 'Cash Flow Statement PDF',
+        code: 'CASH_FLOW_PDF',
+        format: 'pdf',
+        description: 'Cash flow statement in PDF format',
+        pageSize: 'A4',
+        orientation: 'landscape',
+        includeHeader: true,
+        includeFooter: true,
+        includePageNumbers: true,
+        fontSize: 10,
+        status: 'active',
+      });
+      this.createdIds.add(cashFlowPdf.id);
+
+      // Template 8: Chart of Accounts CSV
+      const chartOfAccountsCsv = await this.createDocument('export-templates', {
+        name: 'Chart of Accounts CSV',
+        code: 'CHART_ACCOUNTS_CSV',
+        format: 'csv',
+        description: 'Complete chart of accounts listing',
+        delimiter: ',',
+        includeHeader: true,
+        encoding: 'UTF-8',
+        status: 'active',
+      });
+      this.createdIds.add(chartOfAccountsCsv.id);
+
+      // Template 9: Audit Report PDF
+      const auditPdf = await this.createDocument('export-templates', {
+        name: 'Audit Report PDF',
+        code: 'AUDIT_REPORT_PDF',
+        format: 'pdf',
+        description: 'Complete audit report with multiple sections',
+        pageSize: 'A4',
+        orientation: 'portrait',
+        includeHeader: true,
+        includeFooter: true,
+        includeTableOfContents: true,
+        includePageNumbers: true,
+        fontSize: 11,
+        status: 'active',
+      });
+      this.createdIds.add(auditPdf.id);
+
+      // Template 10: Compliance Export Excel
+      const complianceExcel = await this.createDocument('export-templates', {
+        name: 'Compliance Export Excel',
+        code: 'COMPLIANCE_EXCEL',
+        format: 'excel',
+        description: 'Regulatory compliance report with audit trails',
+        sheetName: 'Compliance Data',
+        freezeHeader: true,
+        autoColumnWidth: true,
+        numberFormat: '#,##0.00',
+        includeComments: true,
+        status: 'active',
+      });
+      this.createdIds.add(complianceExcel.id);
+
+      // Track all created IDs
+      this.createdIds.forEach(id => this.trackCreatedId('export-templates', id));
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+
+  private async createDocument(collection: string, data: Record<string, any>) {
+    await this.validateData(collection, data);
+    return await this.payload.create({
+      collection,
+      data,
+    });
+  }
+
+  private getStats() {
+    const stats: any = {
+      seedLevel: 'unit',
+      totalTime: Date.now() - this.context!.startTime,
+      itemsCreated: this.createdIds.size,
+      collections: {
+        'export-templates': this.createdIds.size,
+      },
+    };
+    return stats;
+  }
+}
+
+/**
+ * API Configuration Seed - 8+ API endpoints and authentication configs
+ */
+export class OptimalAPIConfigurationSeed extends TestSeedFactory {
+  private createdIds: Set<string> = new Set();
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'api-configurations') {
+      await super.validateData(collection, data);
+
+      const validAuthTypes = ['api-key', 'oauth2', 'basic-auth', 'bearer-token', 'webhook'];
+      if (data.authType && !validAuthTypes.includes(data.authType)) {
+        throw new Error(
+          `API config: authType must be one of: ${validAuthTypes.join(', ')}`
+        );
+      }
+
+      if (!data.endpoint || !/^https?:\/\//.test(data.endpoint)) {
+        throw new Error('API config: endpoint must be a valid HTTP(S) URL');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Config 1: REST API with API Key
+      const restApi = await this.createDocument('api-configurations', {
+        name: 'REST API - Financial Data Export',
+        code: 'REST_FINANCIAL_API',
+        endpoint: 'https://api.financial-system.com/v1/exports',
+        authType: 'api-key',
+        apiKey: 'test-key-12345-financial',
+        method: 'POST',
+        timeout: 30000,
+        retryAttempts: 3,
+        description: 'REST endpoint for exporting financial data',
+        status: 'active',
+      });
+      this.createdIds.add(restApi.id);
+
+      // Config 2: OAuth2 Integration
+      const oauth2 = await this.createDocument('api-configurations', {
+        name: 'OAuth2 - Cloud Storage',
+        code: 'OAUTH2_CLOUD_STORAGE',
+        endpoint: 'https://oauth.cloud-provider.com/v1/token',
+        authType: 'oauth2',
+        clientId: 'test-client-id-cloud',
+        clientSecret: 'test-client-secret-cloud',
+        scope: 'export:read export:write',
+        grantType: 'client_credentials',
+        tokenEndpoint: 'https://oauth.cloud-provider.com/v1/token',
+        description: 'OAuth2 for cloud storage integration',
+        status: 'active',
+      });
+      this.createdIds.add(oauth2.id);
+
+      // Config 3: Webhook Receiver
+      const webhook = await this.createDocument('api-configurations', {
+        name: 'Webhook Receiver - Export Complete',
+        code: 'WEBHOOK_EXPORT_COMPLETE',
+        endpoint: 'https://api.myapp.com/webhooks/export-complete',
+        authType: 'webhook',
+        method: 'POST',
+        expectedHttpStatus: 200,
+        timeout: 10000,
+        description: 'Webhook for export completion notifications',
+        status: 'active',
+      });
+      this.createdIds.add(webhook.id);
+
+      // Config 4: Basic Auth FTP
+      const ftpBasic = await this.createDocument('api-configurations', {
+        name: 'FTP Server - Secure',
+        code: 'FTP_SECURE_SERVER',
+        endpoint: 'sftp://ftp.partner-company.com:22/exports',
+        authType: 'basic-auth',
+        username: 'export-user',
+        password: 'secure-password-123',
+        protocol: 'sftp',
+        port: 22,
+        description: 'SFTP server for secure file transfers',
+        status: 'active',
+      });
+      this.createdIds.add(ftpBasic.id);
+
+      // Config 5: Bearer Token API
+      const bearerToken = await this.createDocument('api-configurations', {
+        name: 'Bearer Token - Data Warehouse',
+        code: 'BEARER_DATA_WAREHOUSE',
+        endpoint: 'https://warehouse.analytics.com/v1/exports',
+        authType: 'bearer-token',
+        token: 'bearer-token-test-123456',
+        method: 'POST',
+        timeout: 60000,
+        description: 'Data warehouse export API',
+        status: 'active',
+      });
+      this.createdIds.add(bearerToken.id);
+
+      // Config 6: REST API with Batch Processing
+      const batchApi = await this.createDocument('api-configurations', {
+        name: 'Batch Processing API',
+        code: 'BATCH_PROCESSING_API',
+        endpoint: 'https://batch.processor.com/v1/jobs',
+        authType: 'api-key',
+        apiKey: 'batch-api-key-789',
+        method: 'POST',
+        batchSize: 100,
+        timeout: 120000,
+        description: 'API for batch export processing',
+        status: 'active',
+      });
+      this.createdIds.add(batchApi.id);
+
+      // Config 7: Email Delivery API
+      const emailApi = await this.createDocument('api-configurations', {
+        name: 'Email Delivery Service',
+        code: 'EMAIL_DELIVERY_API',
+        endpoint: 'https://api.email-service.com/v1/send',
+        authType: 'api-key',
+        apiKey: 'email-api-key-456',
+        method: 'POST',
+        timeout: 15000,
+        description: 'Service for emailing exports',
+        status: 'active',
+      });
+      this.createdIds.add(emailApi.id);
+
+      // Config 8: S3 Compatible Storage
+      const s3Api = await this.createDocument('api-configurations', {
+        name: 'S3 Compatible Storage',
+        code: 'S3_COMPATIBLE_STORAGE',
+        endpoint: 'https://s3.storage-provider.com/exports',
+        authType: 'api-key',
+        apiKey: 'test-access-key-s3',
+        method: 'PUT',
+        region: 'us-east-1',
+        bucket: 'exports-bucket',
+        timeout: 30000,
+        description: 'S3 compatible object storage',
+        status: 'active',
+      });
+      this.createdIds.add(s3Api.id);
+
+      // Track all created IDs
+      this.createdIds.forEach(id => this.trackCreatedId('api-configurations', id));
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+
+  private async createDocument(collection: string, data: Record<string, any>) {
+    await this.validateData(collection, data);
+    return await this.payload.create({
+      collection,
+      data,
+    });
+  }
+
+  private getStats() {
+    const stats: any = {
+      seedLevel: 'unit',
+      totalTime: Date.now() - this.context!.startTime,
+      itemsCreated: this.createdIds.size,
+      collections: {
+        'api-configurations': this.createdIds.size,
+      },
+    };
+    return stats;
+  }
+}
+
+/**
+ * Format Definition Seed - Headers, footers, page breaks, fonts
+ */
+export class OptimalFormatDefinitionSeed extends TestSeedFactory {
+  private createdIds: Set<string> = new Set();
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Format 1: PDF Standard Format
+      const pdfFormat = await this.createDocument('format-definitions', {
+        name: 'PDF Standard Format',
+        code: 'PDF_STANDARD',
+        format: 'pdf',
+        pageSize: 'A4',
+        orientation: 'portrait',
+        margins: { top: 25, bottom: 25, left: 20, right: 20 },
+        fontSize: 11,
+        fontFamily: 'Helvetica',
+        lineHeight: 1.5,
+        headerText: 'Company Name - Financial Report',
+        headerHeight: 30,
+        footerText: 'Confidential - Page {page}',
+        footerHeight: 20,
+        pageBreakOn: 'section',
+        status: 'active',
+      });
+      this.createdIds.add(pdfFormat.id);
+
+      // Format 2: Excel Financial Format
+      const excelFormat = await this.createDocument('format-definitions', {
+        name: 'Excel Financial Format',
+        code: 'EXCEL_FINANCIAL',
+        format: 'excel',
+        numberFormat: '#,##0.00',
+        currencyFormat: '$#,##0.00',
+        percentFormat: '0.00%',
+        dateFormat: 'YYYY-MM-DD',
+        frozenColumns: 1,
+        frozenRows: 1,
+        autoColumnWidth: true,
+        columnWidths: { default: 15, numeric: 12, text: 20 },
+        status: 'active',
+      });
+      this.createdIds.add(excelFormat.id);
+
+      // Format 3: CSV Standard Format
+      const csvFormat = await this.createDocument('format-definitions', {
+        name: 'CSV Standard Format',
+        code: 'CSV_STANDARD',
+        format: 'csv',
+        delimiter: ',',
+        quoteCharacter: '"',
+        escapeCharacter: '"',
+        encoding: 'UTF-8',
+        lineTerminator: '\r\n',
+        includeHeader: true,
+        status: 'active',
+      });
+      this.createdIds.add(csvFormat.id);
+
+      // Format 4: JSON API Format
+      const jsonFormat = await this.createDocument('format-definitions', {
+        name: 'JSON API Format',
+        code: 'JSON_API_FORMAT',
+        format: 'json',
+        includeMetadata: true,
+        prettyPrint: true,
+        indentation: 2,
+        includeBOM: false,
+        status: 'active',
+      });
+      this.createdIds.add(jsonFormat.id);
+
+      // Format 5: HTML Report Format
+      const htmlFormat = await this.createDocument('format-definitions', {
+        name: 'HTML Report Format',
+        code: 'HTML_REPORT',
+        format: 'html',
+        includeTableOfContents: true,
+        includeHeaderFooter: true,
+        responsive: true,
+        darkMode: false,
+        cssFramework: 'tailwind',
+        status: 'active',
+      });
+      this.createdIds.add(htmlFormat.id);
+
+      // Track all created IDs
+      this.createdIds.forEach(id => this.trackCreatedId('format-definitions', id));
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+
+  private async createDocument(collection: string, data: Record<string, any>) {
+    await this.validateData(collection, data);
+    return await this.payload.create({
+      collection,
+      data,
+    });
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'format-definitions') {
+      await super.validateData(collection, data);
+    }
+  }
+
+  private getStats() {
+    const stats: any = {
+      seedLevel: 'unit',
+      totalTime: Date.now() - this.context!.startTime,
+      itemsCreated: this.createdIds.size,
+      collections: {
+        'format-definitions': this.createdIds.size,
+      },
+    };
+    return stats;
+  }
+}
+
+/**
+ * Data Mapping Seed - GL accounts, dimensions, hierarchies
+ */
+export class OptimalDataMappingSeed extends TestSeedFactory {
+  private createdIds: Set<string> = new Set();
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Mapping 1: GL Account Mapping
+      const glMapping = await this.createDocument('data-mappings', {
+        name: 'GL Account Export Mapping',
+        code: 'GL_ACCOUNT_MAPPING',
+        sourceType: 'gl-account',
+        targetFormat: 'csv',
+        fieldMappings: [
+          { sourceField: 'accountNumber', targetField: 'AccountCode', transform: 'uppercase' },
+          { sourceField: 'accountName', targetField: 'AccountName', transform: 'trim' },
+          { sourceField: 'accountType', targetField: 'Type', transform: 'lookup:accountTypes' },
+          { sourceField: 'balance', targetField: 'Balance', transform: 'currency:2' },
+          { sourceField: 'currency', targetField: 'Currency', transform: 'default:USD' },
+          { sourceField: 'status', targetField: 'Status', transform: 'uppercase' },
+        ],
+        status: 'active',
+      });
+      this.createdIds.add(glMapping.id);
+
+      // Mapping 2: Journal Entry Mapping
+      const journalMapping = await this.createDocument('data-mappings', {
+        name: 'Journal Entry Export Mapping',
+        code: 'JOURNAL_ENTRY_MAPPING',
+        sourceType: 'journal-entry',
+        targetFormat: 'excel',
+        fieldMappings: [
+          { sourceField: 'entryDate', targetField: 'Date', transform: 'date:YYYY-MM-DD' },
+          { sourceField: 'reference', targetField: 'Reference', transform: 'uppercase' },
+          { sourceField: 'debitAccount', targetField: 'DebitAccount', transform: 'lookup:accounts' },
+          { sourceField: 'creditAccount', targetField: 'CreditAccount', transform: 'lookup:accounts' },
+          { sourceField: 'amount', targetField: 'Amount', transform: 'currency:2' },
+          { sourceField: 'description', targetField: 'Description', transform: 'truncate:100' },
+        ],
+        status: 'active',
+      });
+      this.createdIds.add(journalMapping.id);
+
+      // Mapping 3: Dimension Mapping
+      const dimensionMapping = await this.createDocument('data-mappings', {
+        name: 'Dimension Hierarchy Mapping',
+        code: 'DIMENSION_MAPPING',
+        sourceType: 'dimension',
+        targetFormat: 'json',
+        fieldMappings: [
+          { sourceField: 'dimensionCode', targetField: 'code', transform: 'uppercase' },
+          { sourceField: 'dimensionName', targetField: 'name', transform: 'trim' },
+          { sourceField: 'parentCode', targetField: 'parent', transform: 'lookup:dimensions' },
+          { sourceField: 'level', targetField: 'hierarchyLevel', transform: 'number' },
+          { sourceField: 'isLeaf', targetField: 'isLeaf', transform: 'boolean' },
+        ],
+        status: 'active',
+      });
+      this.createdIds.add(dimensionMapping.id);
+
+      // Mapping 4: Cost Center Mapping
+      const costCenterMapping = await this.createDocument('data-mappings', {
+        name: 'Cost Center Export Mapping',
+        code: 'COST_CENTER_MAPPING',
+        sourceType: 'cost-center',
+        targetFormat: 'csv',
+        fieldMappings: [
+          { sourceField: 'costCenterCode', targetField: 'Code', transform: 'uppercase' },
+          { sourceField: 'costCenterName', targetField: 'Name', transform: 'trim' },
+          { sourceField: 'managerName', targetField: 'Manager', transform: 'title' },
+          { sourceField: 'budget', targetField: 'Budget', transform: 'currency:2' },
+          { sourceField: 'spent', targetField: 'Spent', transform: 'currency:2' },
+          { sourceField: 'variance', targetField: 'Variance', transform: 'currency:2' },
+        ],
+        status: 'active',
+      });
+      this.createdIds.add(costCenterMapping.id);
+
+      // Track all created IDs
+      this.createdIds.forEach(id => this.trackCreatedId('data-mappings', id));
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+
+  private async createDocument(collection: string, data: Record<string, any>) {
+    await this.validateData(collection, data);
+    return await this.payload.create({
+      collection,
+      data,
+    });
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'data-mappings') {
+      await super.validateData(collection, data);
+    }
+  }
+
+  private getStats() {
+    const stats: any = {
+      seedLevel: 'unit',
+      totalTime: Date.now() - this.context!.startTime,
+      itemsCreated: this.createdIds.size,
+      collections: {
+        'data-mappings': this.createdIds.size,
+      },
+    };
+    return stats;
+  }
+}
+
+/**
+ * Combined Level 1 Seed Suite
+ * Creates all unit test seeds in optimized order
+ */
+export class Level1ExportSuite extends TestSeedFactory {
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('unit');
+    const startTime = Date.now();
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // 1. Create export templates (base requirement for all other seeds)
+      const templateSeed = new OptimalExportTemplateSeed(this.payload);
+      const templateResult = await templateSeed.seed();
+      if (!templateResult.success) throw templateResult.error;
+
+      // 2. Create API configurations
+      const apiSeed = new OptimalAPIConfigurationSeed(this.payload);
+      const apiResult = await apiSeed.seed();
+      if (!apiResult.success) throw apiResult.error;
+
+      // 3. Create format definitions
+      const formatSeed = new OptimalFormatDefinitionSeed(this.payload);
+      const formatResult = await formatSeed.seed();
+      if (!formatResult.success) throw formatResult.error;
+
+      // 4. Create data mappings
+      const mappingSeed = new OptimalDataMappingSeed(this.payload);
+      const mappingResult = await mappingSeed.seed();
+      if (!mappingResult.success) throw mappingResult.error;
+
+      // Aggregate all created IDs
+      this.aggregateCreatedIds([templateSeed, apiSeed, formatSeed, mappingSeed]);
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'unit',
+        totalTime: Date.now() - startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+
+  private aggregateCreatedIds(seeds: TestSeedFactory[]): void {
+    seeds.forEach(seed => {
+      const seedContext = (seed as any).context;
+      if (seedContext && seedContext.createdIds) {
+        for (const [collection, ids] of seedContext.createdIds) {
+          if (!this.context!.createdIds.has(collection)) {
+            this.context!.createdIds.set(collection, new Set());
+          }
+          for (const id of ids) {
+            this.context!.createdIds.get(collection)!.add(id);
+          }
+        }
+      }
+    });
+  }
+
+  private getStats() {
+    const stats: any = {
+      seedLevel: 'unit',
+      totalTime: Date.now() - this.context!.startTime,
+      itemsCreated: 0,
+      collections: {},
+    };
+
+    for (const [collection, ids] of this.context!.createdIds) {
+      stats.collections[collection] = ids.size;
+      stats.itemsCreated += ids.size;
+    }
+
+    return stats;
+  }
+}

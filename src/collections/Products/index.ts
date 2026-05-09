@@ -3,8 +3,7 @@ import { Content } from '@/components/blocks/Content/config'
 import { MediaBlock } from '@/components/blocks/MediaBlock/config'
 import { slugField } from 'payload'
 import type { PayloadRequest } from 'payload'
-import { generatePreviewPath } from '@/utilities/generatePreviewPath'
-import { importRemoteMediaProductsHook } from '@/utilities/remoteMediaImport'
+import { generatePreviewPath } from '@/standards/rfc-3986/generate-preview-path'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 import {
   MetaDescriptionField,
@@ -23,6 +22,20 @@ import {
 import type { DefaultDocumentIDType, Where } from 'payload'
 import { localeRecord } from '@/i18n'
 
+import { productsBeforeChange } from './hooks/beforeChange'
+
+/**
+ * Products — ecommerce-plugin product override (variants, pricing, SEO).
+ *
+ * @standard schema.org Product
+ * @standard GS1 GTIN global-trade-item-number
+ * @standard UN-CEFACT UNSPSC product-classification
+ * @standard ISO-4217:2015 currency-codes
+ * @standard BCP-47 language-tag i18n
+ * @rfc 3986 uri slug-to-url
+ * @compliance WCAG-2.1 level-AA accessibility
+ * @see docs/STANDARDS.md §3
+ */
 export const ProductsCollection: CollectionOverride = ({ defaultCollection }) => ({
   ...defaultCollection,
   admin: {
@@ -215,13 +228,6 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
   ],
   hooks: {
     ...defaultCollection.hooks,
-    beforeChange: [
-      ...(Array.isArray(defaultCollection.hooks?.beforeChange)
-        ? defaultCollection.hooks.beforeChange
-        : defaultCollection.hooks?.beforeChange
-          ? [defaultCollection.hooks.beforeChange]
-          : []),
-      importRemoteMediaProductsHook,
-    ],
+    beforeChange: productsBeforeChange(defaultCollection),
   },
 })

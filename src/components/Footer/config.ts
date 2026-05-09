@@ -1,3 +1,14 @@
+/**
+ * Footer global config — site-wide colophon + secondary navigation.
+ *
+ * @standard schema.org WPFooter
+ * @standard W3C HTML5 footer-element
+ * @standard WAI-ARIA 1.2 contentinfo-landmark-role
+ * @standard BCP-47 language-tag
+ * @see src/components/README.md
+ * @see docs/STANDARDS.md §3
+ */
+
 import type { GlobalConfig } from 'payload'
 
 import { link } from '@/fields/link'

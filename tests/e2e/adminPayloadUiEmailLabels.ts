@@ -1,7 +1,14 @@
 /**
- * Expected Payload admin login email field label (`general.email`) per locale.
- * Must stay aligned with `src/payload.config.ts` `i18n.supportedLanguages`:
- * Finnish, Greek, Irish, Maltese reuse the English UI pack (`payloadUiFallback`).
+ * Expected Payload admin login email field label per locale (e2e fixture).
+ *
+ * Aligned with `src/payload.config.ts` `i18n.supportedLanguages`. Finnish,
+ * Greek, Irish, Maltese reuse the English UI pack (`payloadUiFallback`).
+ *
+ * @standard ISO/IEC-29119:2022 software-testing test-fixture
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @standard ECMA-402 internationalization-api
+ * @see docs/STANDARDS.md §6 §7
  */
 import { ar } from '@payloadcms/translations/languages/ar'
 import { bg } from '@payloadcms/translations/languages/bg'

@@ -1,8 +1,20 @@
+/**
+ * Payload REST SDK factory — resolves the API base URL per runtime, then
+ * issues a singleton in browser contexts and a fresh instance in server
+ * contexts.
+ *
+ * @rfc 3986 uri base-url-resolution
+ * @rfc 9110 http-semantics
+ * @rfc 6265 http-state-management cookies-credentials-include
+ * @security ISO-27002 §8.5 secure-authentication
+ * @see src/standards/rfc-3986/
+ */
+
 import { PayloadSDK } from '@payloadcms/sdk'
 
 import type { Config } from '@/payload-types'
 import canUseDOM from '@/utilities/canUseDOM'
-import { getClientSideURL, getServerSideURL } from '@/utilities/getURL'
+import { getClientSideURL, getServerSideURL } from '@/standards/rfc-3986/get-url'
 
 function apiBaseURL(): string {
   const origin = canUseDOM

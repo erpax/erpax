@@ -1,3 +1,14 @@
+/**
+ * Posts archive index — `/[locale]/posts` lists published posts.
+ *
+ * @standard schema.org Blog
+ * @standard schema.org CollectionPage
+ * @standard schema.org ItemList
+ * @rfc 5005 web-feed-paging-and-archiving
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next/types'
 
 import { CollectionArchive } from '@/components/CollectionArchive'

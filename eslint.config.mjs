@@ -22,6 +22,26 @@ const eslintConfig = defineConfig([
     },
   },
   {
+    files: [
+      'src/collections/**/*.{ts,tsx}',
+      'src/access/**/*.{ts,tsx}',
+      'src/payload.config.ts',
+      'src/plugins/**/*.{ts,tsx}',
+      'src/hooks/**/*.{ts,tsx}',
+      'src/endpoints/**/*.{ts,tsx}',
+      'src/ecommerce/**/*.{ts,tsx}',
+      'src/utilities/permissions/**/*.{ts,tsx}',
+      'src/utilities/scopes/**/*.{ts,tsx}',
+    ],
+    rules: {
+      'payload/no-jsx-import-statements': 'error',
+      'payload/no-relative-monorepo-imports': 'error',
+      'payload/no-imports-from-exports-dir': 'error',
+      'payload/no-imports-from-self': 'error',
+      'payload/proper-payload-logger-usage': 'error',
+    },
+  },
+  {
     files: ['tests/e2e/**/*.{ts,tsx}'],
     rules: {
       'payload/no-non-retryable-assertions': 'warn',
@@ -30,10 +50,27 @@ const eslintConfig = defineConfig([
     },
   },
   {
-    files: ['src/components/providers/**/*.{ts,tsx}', 'src/components/Header/**/*.{ts,tsx}'],
+    files: [
+      'src/components/providers/**/*.{ts,tsx}',
+      'src/components/Header/**/*.{ts,tsx}',
+      // Data-loading effects (fetch on mount/deps; setLoading/setData is the canonical pattern).
+      'src/components/admin/**/*.{ts,tsx}',
+      'src/components/analytics/**/*.{ts,tsx}',
+      'src/components/pages/**/*.{ts,tsx}',
+      'src/components/widgets/**/*.{ts,tsx}',
+      'src/components/Dashboard.{ts,tsx}',
+    ],
     rules: {
       // Payload website template theme / header sync (React 19 compiler hook noise)
       'react-hooks/set-state-in-effect': 'off',
+    },
+  },
+  // Payload `migrate:create` emits `up`/`down` with `{ db, payload, req }`; only `db` is always used.
+  // Do not hand-edit generated migrations for ESLint — keep CLI output conventional.
+  {
+    files: ['src/migrations/*_*.ts'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'off',
     },
   },
   {
@@ -58,6 +95,7 @@ const eslintConfig = defineConfig([
   globalIgnores([
     '.next/**',
     '.open-next/**',
+    '.claude/**',
     'out/**',
     'build/**',
     'next-env.d.ts',

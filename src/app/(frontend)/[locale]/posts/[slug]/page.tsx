@@ -1,3 +1,15 @@
+/**
+ * Post detail page — `/[locale]/posts/[slug]` renders a single article.
+ *
+ * @standard schema.org Article
+ * @standard schema.org BlogPosting
+ * @standard Open-Graph Protocol article-metadata
+ * @standard ISO-8601-1:2019 date-time published-at
+ * @standard BCP-47 language-tag
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next'
 
 import { RelatedPosts } from '@/components/blocks/RelatedPosts/Component'
@@ -16,7 +28,7 @@ import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { routing } from '@/i18n/routing'
 import type { SupportedLocale } from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
 import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 export async function generateStaticParams() {

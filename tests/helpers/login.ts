@@ -1,3 +1,14 @@
+/**
+ * Playwright login helper — fills the admin login form and asserts redirect.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
+ * @standard W3C WebDriver-BiDi browser-automation
+ * @rfc 6265 cookies session
+ * @rfc 7519 jwt session-token
+ * @security ISO-27001 A.5.17 authentication-information
+ * @see docs/STANDARDS.md §4.4 §7
+ */
+
 import type { Page } from '@playwright/test'
 import { expect } from '@playwright/test'
 

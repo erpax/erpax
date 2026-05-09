@@ -1,5 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
+import { authenticated } from '@/access/authenticated'
 import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/access/isSuperAdmin'
 import { localeRecord } from '@/i18n'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
@@ -9,12 +10,28 @@ const superAdminSecretsAccess = {
   update: isSuperAdminFieldAccess,
 } as const
 
+/**
+ * Tenants — multi-tenant root entity ("host" alias used in legacy types).
+ *
+ * Each tenant is a GDPR controller and the boundary of all access scoping.
+ *
+ * @standard ISO-17442-1:2020 lei legal-entity-identifier
+ * @standard ISO-3166-1:2020 country-codes alpha-2
+ * @standard ISO-4217:2015 currency-codes default-currency
+ * @standard BCP-47 language-tag default-locale
+ * @compliance GDPR Art.4(7) data-controller
+ * @compliance GDPR Art.30 records-of-processing-activities
+ * @security ISO-27001 A.5.23 information-security-for-cloud-services
+ * @security ISO-27002 §5.15 access-control
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §3
+ */
 export const Tenants: CollectionConfig = {
   slug: 'tenants',
   access: {
     create: isSuperAdminAccess,
     delete: updateAndDeleteAccess,
-    read: ({ req }) => Boolean(req.user),
+    read: authenticated,
     update: updateAndDeleteAccess,
   },
   admin: {
@@ -35,6 +52,8 @@ export const Tenants: CollectionConfig = {
       name: 'domain',
       type: 'text',
       label: localeRecord('tenants.domain'),
+      /** Tenant-domain routing lookup (`tenant-domains/...`) — fewer D1 rows scanned per request. */
+      index: true,
       admin: {
         description: localeRecord('tenants.domainHelp'),
       },

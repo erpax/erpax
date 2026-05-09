@@ -5,7 +5,7 @@
  * This is a wrapper that can be chained with other middleware
  */
 
-import { applySecurityHeaders, defaultSecurityHeaders } from '@/utilities/securityHeaders'
+import { applySecurityHeaders, defaultSecurityHeaders } from '@/standards/_security-headers'
 
 /**
  * Middleware function to apply security headers

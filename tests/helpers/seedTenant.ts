@@ -1,9 +1,14 @@
 /**
- * Test Tenant Seeding Utilities
+ * Test tenant seeding helpers — create and clean up test tenants via Local API.
  *
- * Helpers for creating and cleaning up test tenants via Payload's Local API.
- *
+ * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
+ * @standard ISO-17442-1:2020 lei
+ * @standard ISO-3166-1:2020 country-codes
+ * @standard ISO-4217:2015 currency-codes
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @audit ISO-19011:2018 audit-trail seed-cleanup
  * @see https://payloadcms.com/docs/plugins/multi-tenant
+ * @see docs/STANDARDS.md §7
  */
 
 import type { Payload } from 'payload'

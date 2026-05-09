@@ -1,5 +1,14 @@
 'use client'
 
+/**
+ * Page-range indicator — "Showing 1–10 of 42 Items".
+ *
+ * @standard ECMA-402 internationalization-api Intl.NumberFormat
+ * @standard BCP-47 language-tag
+ * @compliance WCAG-2.1 §1.3.1 info-and-relationships
+ * @see src/components/README.md
+ */
+
 import React from 'react'
 import { useTranslations } from 'next-intl'
 

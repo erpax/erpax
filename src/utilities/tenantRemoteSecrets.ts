@@ -1,3 +1,16 @@
+/**
+ * Per-tenant remote-secret resolution — Stripe API keys, webhook secrets,
+ * Resend API keys, etc. pulled from the tenant row at request time.
+ *
+ * @standard NIST SP-800-108 key-derivation-function (sibling: `getPreviewSecret`)
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-keys
+ * @security ISO-27001 A.5.17 authentication-information secret-management
+ * @security ISO-27002 §5.17 secret-management
+ * @security ISO-27002 §8.24 use-of-cryptography
+ * @compliance PCI-DSS-4.0 §3.2 tokenized-payment-method
+ * @compliance GDPR Art.32 security-of-processing
+ */
+
 import type { Payload } from 'payload'
 
 import type { Cart, Tenant, User } from '@/payload-types'

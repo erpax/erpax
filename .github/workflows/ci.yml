@@ -1,5 +1,6 @@
-# Lint + TypeScript + Vitest must pass before production build.
+# Standards-banner check + Lint + TypeScript + Vitest must pass before production build.
 # `pnpm run typecheck` catches invalid imports/exports (same class of errors as `next build` / Turbopack).
+# `pnpm run standards:check` catches malformed JSDoc standards banners (per docs/STANDARDS.md §3).
 name: CI
 
 on:
@@ -13,6 +14,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  standards:
+    name: Standards banner check
+    runs-on: ubuntu-latest
+    # No pnpm install needed — pure bash + grep over the working tree.
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify every @standard / @rfc / @compliance / @accounting / @security / @audit / @quality tag has a value
+        run: bash scripts/standards-citation-index.sh --check
+
+      - name: Verify every src/standards/<id>/ implementation file cites @standard or @rfc
+        run: bash scripts/standards-citation-index.sh --required
+
+      - name: Verify docs/STANDARDS_INDEX.md is in sync with current banners
+        run: bash scripts/standards-citation-index.sh --verify-index
+
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -35,9 +52,14 @@ jobs:
       - name: Run linter
         run: pnpm run lint
 
+      - name: Application src (zero ESLint warnings)
+        run: pnpm run lint:src
+
   typecheck:
     name: TypeScript
     runs-on: ubuntu-latest
+    env:
+      PAYLOAD_SECRET: test-secret-not-for-production-32-characters
     steps:
       - uses: actions/checkout@v4
 
@@ -53,6 +75,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      # Slice TTT: regenerate payload-types from the live config and fail if
+      # the committed payload-types.ts is out of sync. Stale types let tsc
+      # pass in dev but break in fresh checkouts.
+      - name: Verify payload-types.ts is fresh
+        run: pnpm run payload:verify-types
 
       - name: Typecheck (tsc --noEmit)
         run: pnpm run typecheck
@@ -85,7 +113,7 @@ jobs:
   build:
     name: Production build
     runs-on: ubuntu-latest
-    needs: [lint, typecheck, test-int]
+    needs: [standards, lint, typecheck, test-int]
     steps:
       - uses: actions/checkout@v4
 

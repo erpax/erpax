@@ -1,10 +1,12 @@
 /**
- * Test User Seeding Utilities
+ * Test user seeding helpers — create and clean up test users via Local API.
  *
- * Helper functions for creating and cleaning up test users
- * via Payload's Local API.
- *
+ * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
+ * @rfc 5322 internet-message-format email-fixture
+ * @security ISO-27001 A.5.16 identity-management
+ * @audit ISO-19011:2018 audit-trail seed-cleanup
  * @see https://payloadcms.com/docs/test/overview
+ * @see docs/STANDARDS.md §7
  */
 
 import type { Payload } from 'payload'

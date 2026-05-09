@@ -7,6 +7,20 @@ import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
 import { isAccessingSelf } from './isAccessingSelf'
 import { getCollectionIDType } from '@/utilities/getCollectionIDType'
 
+/**
+ * Users:read access predicate — self, super-admin, or admin of the user's tenant.
+ *
+ * Builds a tenant-scoped `Where` filter so the SQL layer enforces isolation —
+ * this is the load-bearing multi-tenant boundary for the `users` collection.
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @security ISO-27001 A.5.18 access-rights
+ * @security ISO-27001 A.5.23 information-security-for-cloud-services
+ * @security ISO-27002 §5.15 access-control
+ * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §4.4
+ */
 export const readAccess: Access<User> = ({ req, id }) => {
   if (!req?.user) {
     return false
@@ -30,7 +44,7 @@ export const readAccess: Access<User> = ({ req, id }) => {
     req.headers,
     getCollectionIDType({ payload: req.payload, collectionSlug: 'tenants' }),
   )
-  const adminTenantAccessIDs = getUserTenantIDs(req.user, 'tenant-admin')
+  const adminTenantAccessIDs = getUserTenantIDs(req.user, 'admin')
   const currentUserID =
     typeof req.user === 'object' && req.user && 'id' in req.user
       ? (req.user as { id?: string | number }).id

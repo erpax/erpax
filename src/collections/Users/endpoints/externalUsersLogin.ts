@@ -1,11 +1,31 @@
 import type { Collection, Endpoint } from 'payload'
 
 import { headersWithCors } from '@payloadcms/next/utilities'
-import { APIError, generatePayloadCookie } from 'payload'
-import { checkRateLimit, clearRateLimit, getRateLimitKey, getRateLimitResetSeconds } from '@/utilities/rateLimit'
+import { generatePayloadCookie } from 'payload'
+import { checkRateLimit, clearRateLimit, getRateLimitKey, getRateLimitResetSeconds } from '@/standards/rfc-6585'
+import { apiErr, ERR, isRegistryCodedApiError } from '@/utilities/errors'
 
-// A custom endpoint that can be reached by POST request
-// at: /api/users/external-users/login
+const authLoginFailed = () => apiErr(ERR.AUTH_LOGIN_FAILED)
+
+/**
+ * External-users login endpoint — POST `/api/users/external-users/login`.
+ *
+ * Authenticates a user against a tenant scope and issues a Payload session
+ * cookie. Rate-limited per IP per username via `checkRateLimit` to mitigate
+ * credential stuffing.
+ *
+ * @rfc 9110 http-semantics
+ * @rfc 7519 jwt session-payload
+ * @rfc 6265 http-state-management cookies
+ * @rfc 6585 §4 too-many-requests rate-limiting
+ * @standard OWASP-ASVS V2.2 authentication-throttling
+ * @security ISO-27001 A.5.16 identity-management
+ * @security ISO-27001 A.5.17 authentication-information
+ * @security ISO-27002 §8.5 secure-authentication
+ * @compliance GDPR Art.32 security-of-processing
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §4.4
+ */
 export const externalUsersLogin: Endpoint = {
   handler: async (req) => {
     let data: { [key: string]: string } = {}
@@ -27,13 +47,13 @@ export const externalUsersLogin: Endpoint = {
     const { password, tenantSlug, tenantDomain, username } = data
 
     if (!username || !password) {
-      throw new APIError('Username and Password are required for login.', 400, null, true)
+      throw apiErr(ERR.AUTH_CREDENTIALS_REQUIRED)
     }
 
     // Rate limiting check
     const clientIp = req.headers.get('cf-connecting-ip') || req.headers.get('x-forwarded-for') || 'unknown'
     const rateLimitKey = getRateLimitKey(username, clientIp)
-    const { allowed, remaining, resetAt } = checkRateLimit(rateLimitKey)
+    const { allowed, remaining: _remaining, resetAt } = checkRateLimit(rateLimitKey)
 
     if (!allowed) {
       const resetSeconds = getRateLimitResetSeconds(resetAt)
@@ -43,12 +63,10 @@ export const externalUsersLogin: Endpoint = {
         ip: clientIp,
         resetSeconds,
       })
-      throw new APIError(
-        `Too many login attempts. Please try again in ${resetSeconds} seconds.`,
-        429, // Too Many Requests
-        null,
-        true,
-      )
+      throw apiErr(ERR.AUTH_RATE_LIMITED, {
+        extra: { retryAfterSeconds: resetSeconds },
+        message: `Too many sign-in attempts. Try again in ${resetSeconds} seconds.`,
+      })
     }
 
     const fullTenant = (
@@ -67,6 +85,15 @@ export const externalUsersLogin: Endpoint = {
             },
       })
     ).docs[0]
+
+    if (!fullTenant) {
+      req.payload.logger.warn({
+        msg: 'External login: tenant not found',
+        tenantDomain,
+        tenantSlug,
+      })
+      throw authLoginFailed()
+    }
 
     const foundUser = await req.payload.find({
       collection: 'users',
@@ -145,23 +172,15 @@ export const externalUsersLogin: Endpoint = {
           })
         }
 
-        throw new APIError(
-          'Unable to login with the provided username and password.',
-          400,
-          null,
-          true,
-        )
+        throw authLoginFailed()
       } catch (e) {
-        throw new APIError(
-          'Unable to login with the provided username and password.',
-          400,
-          null,
-          true,
-        )
+        if (isRegistryCodedApiError(e)) throw e
+        req.payload.logger.warn({ err: e, msg: 'External login attempt failed' })
+        throw authLoginFailed()
       }
     }
 
-    throw new APIError('Unable to login with the provided username and password.', 400, null, true)
+    throw authLoginFailed()
   },
   method: 'post',
   path: '/external-users/login',

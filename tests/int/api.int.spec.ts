@@ -1,12 +1,13 @@
 /**
- * API Integration Tests
+ * API Integration Tests — Payload CMS Local API end-to-end.
  *
- * Tests core Payload CMS API functionality using the Local API.
- * These tests follow Payload's testing best practices:
- * - Use getPayload() to initialize the Payload instance
- * - Clean up resources in afterAll to prevent test pollution
- * - Test against the actual database (D1 in this case)
+ * Use `getPayload()` to initialize, clean up in `afterAll` to prevent test
+ * pollution, run against the actual D1 database.
  *
+ * @standard ISO/IEC-29119:2022 software-testing integration-test-level
+ * @rfc 9110 http-semantics
+ * @rfc 7807 problem-details-for-http-apis
+ * @standard OpenAPI 3.1 api-description
  * @see https://payloadcms.com/docs/test/overview
  */
 

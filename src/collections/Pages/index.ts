@@ -8,11 +8,11 @@ import { FormBlock } from '../../components/blocks/Form/config'
 import { MediaBlock } from '../../components/blocks/MediaBlock/config'
 import { hero } from '@/components/heros/config'
 import { slugField } from 'payload'
-import { populatePublishedAt } from '../../hooks/populatePublishedAt'
-import { generatePreviewPath } from '../../utilities/generatePreviewPath'
-import { importRemoteMediaPagesHook } from '@/utilities/remoteMediaImport'
+import { documentPreviewAdmin } from '@/collections/shared/documentPreviewAdmin'
+import { defaultVersionedDrafts } from '@/collections/shared/versionedDrafts'
 import { superAdminOrTenantAdminAccess } from './access/superAdminOrTenantAdmin'
-import { ensureUniqueSlug } from './hooks/ensureUniqueSlug'
+import { ensureUniqueSlugWithinTenant } from '@/hooks/ensureUniqueSlugWithinTenant'
+import { pagesBeforeChange } from './hooks/beforeChange'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
 import { localeRecord } from '@/i18n'
 
@@ -24,6 +24,17 @@ import {
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
 
+/**
+ * Pages — CMS pages with versioned drafts and per-tenant slug uniqueness.
+ *
+ * @rfc 3986 uri slug-to-url
+ * @standard schema.org WebPage
+ * @standard W3C HTML5 Living Standard
+ * @standard BCP-47 language-tag i18n-routing
+ * @standard ECMA-402 internationalization-api
+ * @compliance WCAG-2.1 level-AA accessibility
+ * @see docs/STANDARDS.md §3
+ */
 export const Pages: CollectionConfig<'pages'> = {
   slug: 'pages',
   labels: {
@@ -44,21 +55,9 @@ export const Pages: CollectionConfig<'pages'> = {
     slug: true,
   },
   admin: {
-    defaultColumns: ['title', 'slug', 'updatedAt'],
-    livePreview: {
-      url: ({ data, locale }) =>
-        generatePreviewPath({
-          slug: typeof data?.slug === 'string' ? data.slug : '',
-          collection: 'pages',
-          locale,
-        }),
-    },
-    preview: (data, { locale }) =>
-      generatePreviewPath({
-        slug: typeof data?.slug === 'string' ? data.slug : '',
-        collection: 'pages',
-        locale,
-      }),
+    enableQueryPresets: true,
+    defaultColumns: ['title', 'slug', '_status', 'updatedAt'],
+    ...documentPreviewAdmin('pages'),
     useAsTitle: 'title',
   },
   fields: [
@@ -125,6 +124,7 @@ export const Pages: CollectionConfig<'pages'> = {
       name: 'publishedAt',
       type: 'date',
       label: localeRecord('pages.publishedAt'),
+      index: true,
       admin: {
         position: 'sidebar',
       },
@@ -136,7 +136,10 @@ export const Pages: CollectionConfig<'pages'> = {
         if (slugText && slugText.type === 'text') {
           slugText.hooks = {
             ...slugText.hooks,
-            beforeValidate: [...(slugText.hooks?.beforeValidate || []), ensureUniqueSlug],
+            beforeValidate: [
+              ...(slugText.hooks?.beforeValidate || []),
+              ensureUniqueSlugWithinTenant('pages'),
+            ],
           }
         }
         return field
@@ -177,16 +180,8 @@ export const Pages: CollectionConfig<'pages'> = {
   ],
   hooks: {
     afterChange: [revalidatePage],
-    beforeChange: [importRemoteMediaPagesHook, populatePublishedAt],
+    beforeChange: pagesBeforeChange,
     afterDelete: [revalidateDelete],
   },
-  versions: {
-    drafts: {
-      autosave: {
-        interval: 100, // We set this interval for optimal live preview
-      },
-      schedulePublish: true,
-    },
-    maxPerDoc: 50,
-  },
+  versions: defaultVersionedDrafts,
 }

@@ -1,3 +1,19 @@
+/**
+ * Locale-scoped layout — validates `[locale]`, sets `<html lang>` + i18n chrome,
+ * tenant context, and ecommerce client provider.
+ *
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @rfc 4647 matching-of-language-tags
+ * @standard ECMA-402 internationalization-api
+ * @standard Unicode-CLDR locale-data
+ * @standard W3C HTML5 lang-attribute
+ * @compliance WCAG-2.1 §3.1.1 language-of-page
+ * @compliance WCAG-2.1 §3.1.2 language-of-parts
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-from-request
+ * @see src/app/README.md
+ */
+
 import { notFound } from 'next/navigation'
 import { headers } from 'next/headers'
 import React from 'react'
@@ -6,7 +22,7 @@ import { EcommerceClientProvider } from '@/components/EcommerceClientProvider'
 import { IntlChrome } from '@/components/IntlChrome'
 import { routing } from '@/i18n/routing'
 import localization from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
 import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 type Args = {

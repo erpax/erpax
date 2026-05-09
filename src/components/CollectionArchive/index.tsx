@@ -1,3 +1,13 @@
+/**
+ * Collection archive — paginated grid of post cards.
+ *
+ * @standard schema.org ItemList
+ * @standard schema.org CollectionPage
+ * @standard W3C HTML5 section-element
+ * @compliance WCAG-2.1 §2.4.1 bypass-blocks
+ * @see src/components/README.md
+ */
+
 import { cn } from '@/utilities/ui'
 import React from 'react'
 

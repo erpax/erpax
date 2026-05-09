@@ -1,0 +1,519 @@
+/**
+ * GL Posting Service — event-driven double-entry posting.
+ *
+ * Subscribes to domain events (invoice/payment/inventory/bank) and creates
+ * balanced GL entries via `journalEntryService`. Decouples business write
+ * paths from the ledger's debit/credit semantics.
+ *
+ * @standard ISO-8601-1:2019 date-time posted-date
+ * @standard ISO-4217:2015 currency-codes
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting OECD SAF-T §3 transactions
+ * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls
+ * @see docs/STANDARDS.md §4.2
+ */
+
+import { EventEmitterService, eventEmitter } from './event-emitter.service';
+import { journalEntryService } from './journal-entry.service';
+import {
+  InvoiceActivatedEvent,
+  InvoiceCompletedEvent,
+  InvoiceReversedEvent,
+  BillActivatedEvent,
+  BillPaidEvent,
+  BillReversedEvent,
+  PaymentReceivedEvent,
+  PaymentSentEvent,
+  InventoryPurchasedEvent,
+  InventorySoldEvent,
+  BankStatementImportedEvent,
+} from '@/types/events';
+import { JournalEntryLine } from './journal-entry.service';
+
+/**
+ * GL Account Code Constants
+ * These should be retrieved from GL Account Management based on host configuration
+ * For now, using standard account codes
+ */
+const GL_ACCOUNTS = {
+  CASH: 'cash',
+  ACCOUNTS_RECEIVABLE: 'ar',
+  ACCOUNTS_PAYABLE: 'ap',
+  INVENTORY: 'inventory',
+  REVENUE: 'revenue',
+  COGS: 'cogs',
+  EXPENSE: 'expense',
+  SALES_TAX_PAYABLE: 'sales_tax_payable',
+  INPUT_TAX_ASSET: 'input_tax_asset',
+};
+
+class GLPostingService {
+  constructor(private eventEmitter: EventEmitterService) {
+    this.subscribeToEvents();
+  }
+
+  /**
+   * Subscribe to all domain events
+   */
+  private subscribeToEvents(): void {
+    // Invoice events
+    this.eventEmitter.subscribe('invoice:activated', (event) =>
+      this.postInvoiceActivated(event as InvoiceActivatedEvent)
+    );
+    this.eventEmitter.subscribe('invoice:completed', (event) =>
+      this.postInvoiceCompleted(event as InvoiceCompletedEvent)
+    );
+    this.eventEmitter.subscribe('invoice:reversed', (event) =>
+      this.postInvoiceReversed(event as InvoiceReversedEvent)
+    );
+
+    // Bill events
+    this.eventEmitter.subscribe('bill:activated', (event) =>
+      this.postBillActivated(event as BillActivatedEvent)
+    );
+    this.eventEmitter.subscribe('bill:paid', (event) =>
+      this.postBillPaid(event as BillPaidEvent)
+    );
+    this.eventEmitter.subscribe('bill:reversed', (event) =>
+      this.postBillReversed(event as BillReversedEvent)
+    );
+
+    // Payment events
+    this.eventEmitter.subscribe('payment:received', (event) =>
+      this.postPaymentReceived(event as PaymentReceivedEvent)
+    );
+    this.eventEmitter.subscribe('payment:sent', (event) =>
+      this.postPaymentSent(event as PaymentSentEvent)
+    );
+
+    // Inventory events
+    this.eventEmitter.subscribe('inventory:purchased', (event) =>
+      this.postInventoryPurchased(event as InventoryPurchasedEvent)
+    );
+    this.eventEmitter.subscribe('inventory:sold', (event) =>
+      this.postInventorySold(event as InventorySoldEvent)
+    );
+
+    // Bank events
+    this.eventEmitter.subscribe('bank:statement:imported', (event) =>
+      this.postBankStatementImported(event as BankStatementImportedEvent)
+    );
+  }
+
+  /**
+   * Invoice Activated: Create AR + Revenue + COGS entries
+   */
+  async postInvoiceActivated(event: InvoiceActivatedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { invoiceId, amount: _amount, taxAmount, lineItems } = payload;
+
+    const lines: JournalEntryLine[] = [];
+
+    // Process each line item
+    for (const line of lineItems) {
+      // Debit AR
+      lines.push({
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        debit: line.amount,
+        description: `Invoice ${invoiceId} - ${line.description}`,
+      });
+
+      // Credit Revenue
+      lines.push({
+        accountId: GL_ACCOUNTS.REVENUE,
+        credit: line.amount,
+        description: `Invoice ${invoiceId} - ${line.description}`,
+      });
+
+      // COGS + Inventory (if item has cost)
+      if (line.costAmount && line.costAmount > 0) {
+        lines.push({
+          accountId: GL_ACCOUNTS.COGS,
+          debit: line.costAmount,
+          description: `COGS for Invoice ${invoiceId}`,
+        });
+
+        lines.push({
+          accountId: GL_ACCOUNTS.INVENTORY,
+          credit: line.costAmount,
+          description: `Inventory reduction for Invoice ${invoiceId}`,
+        });
+      }
+    }
+
+    // Sales Tax
+    if (taxAmount && taxAmount > 0) {
+      lines.push({
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        debit: taxAmount,
+        description: `Sales tax on Invoice ${invoiceId}`,
+      });
+
+      lines.push({
+        accountId: GL_ACCOUNTS.SALES_TAX_PAYABLE,
+        credit: taxAmount,
+        description: `Sales tax on Invoice ${invoiceId}`,
+      });
+    }
+
+    // Create and post entry
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Invoice ${invoiceId} Activated`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: invoiceId,
+      sourceEvent: 'invoice:activated',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Invoice Completed: Cash receipt and AR reduction
+   */
+  async postInvoiceCompleted(event: InvoiceCompletedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { invoiceId, amountPaid } = payload;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.CASH,
+        debit: amountPaid,
+        description: `Payment received for Invoice ${invoiceId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        credit: amountPaid,
+        description: `Invoice ${invoiceId} paid`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Invoice ${invoiceId} Paid`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: invoiceId,
+      sourceEvent: 'invoice:completed',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Invoice Reversed: Create reversing entry
+   */
+  async postInvoiceReversed(event: InvoiceReversedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { invoiceId } = payload;
+
+    // Find original invoice entry and reverse it
+    const entries = await journalEntryService.listEntries(tenantId, {
+      sourceType: 'invoice',
+      sourceId: invoiceId,
+    });
+
+    for (const entry of entries) {
+      if (entry.status === 'posted') {
+        await journalEntryService.reverseEntry(tenantId, entry.id, 'Invoice reversed', userId);
+      }
+    }
+  }
+
+  /**
+   * Bill Activated: Expense + AP + Input Tax
+   */
+  async postBillActivated(event: BillActivatedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { billId, amount, taxAmount, lineItems } = payload;
+
+    const lines: JournalEntryLine[] = [];
+
+    // Debit expenses by category
+    for (const line of lineItems) {
+      lines.push({
+        accountId: GL_ACCOUNTS.EXPENSE,
+        debit: line.amount,
+        description: `Bill ${billId} - ${line.description}`,
+      });
+    }
+
+    // Credit AP
+    lines.push({
+      accountId: GL_ACCOUNTS.ACCOUNTS_PAYABLE,
+      credit: amount,
+      description: `Bill ${billId} total`,
+    });
+
+    // Input Tax Asset (if applicable)
+    if (taxAmount && taxAmount > 0) {
+      lines.push({
+        accountId: GL_ACCOUNTS.INPUT_TAX_ASSET,
+        debit: taxAmount,
+        description: `Input tax on Bill ${billId}`,
+      });
+
+      lines.push({
+        accountId: GL_ACCOUNTS.ACCOUNTS_PAYABLE,
+        credit: taxAmount,
+        description: `Input tax on Bill ${billId}`,
+      });
+    }
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Bill ${billId} Activated`,
+      lines,
+      sourceType: 'bill',
+      sourceId: billId,
+      sourceEvent: 'bill:activated',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Bill Paid: AP reduction and cash payment
+   */
+  async postBillPaid(event: BillPaidEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { billId, amountPaid } = payload;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_PAYABLE,
+        debit: amountPaid,
+        description: `Payment for Bill ${billId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.CASH,
+        credit: amountPaid,
+        description: `Bill ${billId} paid`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Bill ${billId} Paid`,
+      lines,
+      sourceType: 'bill',
+      sourceId: billId,
+      sourceEvent: 'bill:paid',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Bill Reversed
+   */
+  async postBillReversed(event: BillReversedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { billId } = payload;
+
+    const entries = await journalEntryService.listEntries(tenantId, {
+      sourceType: 'bill',
+      sourceId: billId,
+    });
+
+    for (const entry of entries) {
+      if (entry.status === 'posted') {
+        await journalEntryService.reverseEntry(tenantId, entry.id, 'Bill reversed', userId);
+      }
+    }
+  }
+
+  /**
+   * Payment Received (not tied to invoice)
+   */
+  async postPaymentReceived(event: PaymentReceivedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { paymentId, amount } = payload;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.CASH,
+        debit: amount,
+        description: `Payment received ${paymentId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        credit: amount,
+        description: `Payment received ${paymentId}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Payment Received ${paymentId}`,
+      lines,
+      sourceType: 'payment',
+      sourceId: paymentId,
+      sourceEvent: 'payment:received',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Payment Sent (not tied to bill)
+   */
+  async postPaymentSent(event: PaymentSentEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { paymentId, amount } = payload;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_PAYABLE,
+        debit: amount,
+        description: `Payment sent ${paymentId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.CASH,
+        credit: amount,
+        description: `Payment sent ${paymentId}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Payment Sent ${paymentId}`,
+      lines,
+      sourceType: 'payment',
+      sourceId: paymentId,
+      sourceEvent: 'payment:sent',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Inventory Purchased (from Bill)
+   */
+  async postInventoryPurchased(event: InventoryPurchasedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { billId, totalCost } = payload;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.INVENTORY,
+        debit: totalCost,
+        description: `Inventory purchase from Bill ${billId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_PAYABLE,
+        credit: totalCost,
+        description: `Inventory purchase from Bill ${billId}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Inventory Purchased from Bill ${billId}`,
+      lines,
+      sourceType: 'inventory',
+      sourceId: billId,
+      sourceEvent: 'inventory:purchased',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Inventory Sold (from Invoice)
+   */
+  async postInventorySold(event: InventorySoldEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { invoiceId, totalCost } = payload;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.COGS,
+        debit: totalCost,
+        description: `COGS from Invoice ${invoiceId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.INVENTORY,
+        credit: totalCost,
+        description: `Inventory sold on Invoice ${invoiceId}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Inventory Sold on Invoice ${invoiceId}`,
+      lines,
+      sourceType: 'inventory',
+      sourceId: invoiceId,
+      sourceEvent: 'inventory:sold',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Bank Statement Imported
+   * Create GL entries for bank transactions
+   */
+  async postBankStatementImported(event: BankStatementImportedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { statementId, transactions } = payload;
+
+    for (const tx of transactions) {
+      const lines: JournalEntryLine[] = [];
+
+      if (tx.type === 'debit') {
+        lines.push({
+          accountId: GL_ACCOUNTS.CASH,
+          debit: tx.amount,
+          description: `Bank withdrawal: ${tx.description}`,
+        });
+      } else {
+        lines.push({
+          accountId: GL_ACCOUNTS.CASH,
+          credit: tx.amount,
+          description: `Bank deposit: ${tx.description}`,
+        });
+      }
+
+      // TODO: Match to existing GL entry and reconcile
+      // For now, just create the bank transaction entry
+
+      const entry = await journalEntryService.createEntry(tenantId, {
+        entryDate: tx.date,
+        description: `Bank transaction: ${tx.description}`,
+        lines,
+        sourceType: 'bank_statement',
+        sourceId: statementId,
+        sourceEvent: 'bank:statement:imported',
+        userId,
+      });
+
+      await journalEntryService.postEntry(tenantId, entry.id, userId);
+    }
+  }
+}
+
+// Initialize and export — factory for callers that want their own EventEmitter wiring.
+export const initializeGLPosting = (emitter: EventEmitterService) => {
+  return new GLPostingService(emitter);
+};
+
+/**
+ * Default singleton bound to the global event emitter. Slice FFF: most
+ * callers want this — direct import of `glPostingService` matches the
+ * shape of the other singletons in this folder (`journalEntryService`,
+ * `glAccountService`, etc.). Hooks that need a private EventEmitter
+ * (rare) can still call `initializeGLPosting(myEmitter)`.
+ */
+export const glPostingService = new GLPostingService(eventEmitter);

@@ -3,6 +3,7 @@ import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import { searchPlugin } from '@payloadcms/plugin-search'
+import type { Field } from 'payload'
 import { Plugin } from 'payload'
 import { revalidateRedirects } from '@/hooks/revalidateRedirects'
 import { GenerateTitle, GenerateURL } from '@payloadcms/plugin-seo/types'
@@ -13,7 +14,8 @@ import { beforeSyncWithSearch } from '@/components/search/beforeSync'
 import localization from '@/i18n/localization'
 import { localeRecord } from '@/i18n'
 import { Page, Post, Product } from '@/payload-types'
-import { getServerSideURL } from '@/utilities/getURL'
+import { getServerSideURL } from '@/standards/rfc-3986/get-url'
+import { accountingPlugin } from '@/plugins/accounting'
 
 const generateTitle: GenerateTitle<Post | Page | Product> = ({ doc }) => {
   return doc?.title ? `${doc.title} | site` : 'site'
@@ -38,7 +40,7 @@ const generateURL: GenerateURL<Post | Page | Product> = ({ doc }) => {
   return doc.slug === 'home' ? `${base}/${loc}` : `${base}/${loc}/${doc.slug}`
 }
 
-function localizeFormBuilderFields(defaultFields: any[]) {
+function localizeFormBuilderFields(defaultFields: Field[]): Field[] {
   return defaultFields.map((field) => {
     if (!field || typeof field !== 'object') return field
 
@@ -50,7 +52,7 @@ function localizeFormBuilderFields(defaultFields: any[]) {
           ...field.admin,
           description: localeRecord('formConfirmationTypeDescription'),
         },
-        options: (field.options || []).map((option: any) => {
+        options: (field.options || []).map((option: { value?: string; label?: unknown }) => {
           if (option?.value === 'message') {
             return { ...option, label: localeRecord('formConfirmationMessageOption') }
           }
@@ -66,11 +68,11 @@ function localizeFormBuilderFields(defaultFields: any[]) {
       return {
         ...field,
         label: localeRecord('formRedirectLabel'),
-        fields: (field.fields || []).map((subField: any) => {
+        fields: (field.fields || []).map((subField: Field) => {
           if (subField?.name === 'type' && subField.type === 'radio') {
             return {
               ...subField,
-              options: (subField.options || []).map((option: any) => {
+              options: (subField.options || []).map((option: { value?: string; label?: unknown }) => {
                 if (option?.value === 'reference') {
                   return { ...option, label: localeRecord('formRedirectTypeInternal') }
                 }
@@ -100,11 +102,11 @@ function localizeFormBuilderFields(defaultFields: any[]) {
           ...field.admin,
           description: localeRecord('formEmailsDescription'),
         },
-        fields: (field.fields || []).map((row: any) => {
+        fields: (field.fields || []).map((row: Field & { fields?: Field[] }) => {
           if (!row?.fields || !Array.isArray(row.fields)) return row
           return {
             ...row,
-            fields: row.fields.map((subField: any) => {
+            fields: row.fields.map((subField: Field) => {
               if (subField?.name === 'emailTo') {
                 return {
                   ...subField,
@@ -154,6 +156,8 @@ function localizeFormBuilderFields(defaultFields: any[]) {
 }
 
 export const plugins: Plugin[] = [
+  // Accounting plugin - Provides 20 collections for GL posting, A/R, A/P, Assets, and Financial Analysis
+  accountingPlugin(),
   redirectsPlugin({
     collections: ['pages', 'posts', 'products'],
     overrides: {

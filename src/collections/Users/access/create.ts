@@ -5,6 +5,17 @@ import type { Tenant, User } from '../../../payload-types'
 import { isSuperAdmin } from '../../../access/isSuperAdmin'
 import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
 
+/**
+ * Users:create access predicate — first-user bootstrap, super-admin, or
+ * tenant-admin scoped to the requested tenants.
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @security ISO-27001 A.5.18 access-rights
+ * @security ISO-27002 §5.15 access-control
+ * @security ISO-27002 §5.16 identity-management
+ * @compliance SOC-2 CC6.2 access-provisioning
+ * @see docs/STANDARDS.md §4.4
+ */
 export const createAccess: Access<User> = async ({ req }) => {
   // Allow first user creation (no authentication required)
   if (!req.user) {
@@ -29,7 +40,7 @@ export const createAccess: Access<User> = async ({ req }) => {
     return false
   }
 
-  const adminTenantAccessIDs = getUserTenantIDs(req.user, 'tenant-admin')
+  const adminTenantAccessIDs = getUserTenantIDs(req.user, 'admin')
 
   const requestedTenants: Tenant['id'][] =
     req.data?.tenants?.map((t: { tenant: Tenant['id'] }) => t.tenant) ?? []

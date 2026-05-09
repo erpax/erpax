@@ -13,6 +13,18 @@ function asHeaders(value: unknown): Headers {
   }
 }
 
+/**
+ * After-login hook — set the session cookie domain attribute based on the
+ * request `Host` header so per-tenant subdomains share a session correctly.
+ *
+ * @rfc 6265 http-state-management cookies
+ * @rfc 6265bis cookie-domain-attribute
+ * @rfc 9110 http-semantics host-header
+ * @security ISO-27001 A.5.17 authentication-information
+ * @security ISO-27002 §8.5 secure-authentication
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §4.4
+ */
 export const setCookieBasedOnDomain: CollectionAfterLoginHook = async ({ req, user }) => {
   try {
     const hostHeader = req.headers.get('host')

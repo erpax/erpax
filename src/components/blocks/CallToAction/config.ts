@@ -1,3 +1,15 @@
+/**
+ * Call-to-action block — promoted link group + supporting copy.
+ *
+ * @standard schema.org Action
+ * @standard W3C HTML5 anchor-element
+ * @rfc 3986 uniform-resource-identifier
+ * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+ * @compliance WCAG-2.1 §2.4.6 headings-and-labels
+ * @see src/components/README.md
+ * @see docs/STANDARDS.md §3
+ */
+
 import type { Block } from 'payload'
 
 import {

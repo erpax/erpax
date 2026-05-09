@@ -1,0 +1,48 @@
+/**
+ * Item GL Posting Hook — auto-creates GL entry on inventory adjustment.
+ *
+ * Debit 1300 (Inventory), Credit 5000 (COGS) or expense per adjustment type.
+ *
+ * @accounting IFRS IAS-2 inventories
+ * @accounting US-GAAP ASC-330 inventory
+ * @audit ISO-19011:2018 audit-trail double-entry-posting
+ * @compliance SOX §404 internal-controls
+ * @see docs/STANDARDS.md §4.2
+ */
+
+import type { CollectionAfterChangeHook } from 'payload'
+
+import { glPostingService } from '@/services/gl-posting.service'
+export const itemAccountingHook: CollectionAfterChangeHook = async ({
+  doc,
+  req,
+  operation,
+}) => {
+  if (!doc || (operation !== 'create' && operation !== 'update')) return doc;
+
+  try {
+    const tenant = doc.tenant;
+
+    if (glPostingService) {
+      const itemData = {
+        id: doc.id,
+        itemNumber: doc.itemNumber,
+        itemName: doc.itemName,
+        quantity: doc.quantity,
+        unitCost: doc.unitCost,
+        totalValue: (doc.quantity || 0) * (doc.unitCost || 0),
+        currency: doc.currency || 'EUR',
+        warehouseId: doc.warehouseId,
+        category: doc.category,
+        description: `Inventory adjustment for ${doc.itemName}`,
+      };
+
+      await glPostingService.postItem(tenant, itemData);
+      req.payload.logger.info(`✓ GL posting created for item ${doc.itemNumber}`);
+    }
+  } catch (error) {
+    req.payload.logger.error({ err: error }, `✗ Error creating GL posting for item:`);
+  }
+
+  return doc;
+};

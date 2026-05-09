@@ -1,0 +1,51 @@
+/**
+ * A/R Aging Hook — recalculates aging buckets on invoice/payment events.
+ *
+ * @deprecated Slice FFF: this hook delegates to `req.payload.services?.arAging`
+ * but **no `ar-aging.service.ts` exists** at `src/services/`. Currently
+ * silent no-op in production. Build the service or delete the hook —
+ * see `ap-aging.hook.ts` deprecation note for the same options.
+ *
+ * Buckets: current, 31-60, 61-90, 91+.
+ *
+ * @accounting IFRS IFRS-9 expected-credit-loss
+ * @accounting US-GAAP ASC-326 credit-losses-cecl
+ * @accounting US-GAAP ASC-310 receivables
+ * @standard ISO-8601-1:2019 date-time as-of-date
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §4.2 §5
+ */
+
+import type { CollectionAfterChangeHook } from 'payload'
+export const arAgingHook: CollectionAfterChangeHook = async ({
+  doc,
+  req,
+  operation,
+}) => {
+  if (!doc || (operation !== 'create' && operation !== 'update')) return doc;
+
+  try {
+    const arAgingService = req.payload.services?.arAging;
+    const tenant = doc.tenant;
+
+    if (arAgingService) {
+      const invoiceData = {
+        id: doc.id,
+        invoiceNumber: doc.invoiceNumber || doc.number,
+        invoiceDate: doc.invoiceDate || doc.date,
+        customerId: doc.customerId || doc.buyer,
+        amount: doc.totalAmount,
+        amountDue: doc.totalDue || doc.totalAmount,
+        currency: doc.currency || 'EUR',
+        status: doc.status,
+      };
+
+      await arAgingService.updateARAging(tenant, invoiceData);
+      req.payload.logger.info(`✓ AR aging updated for invoice ${invoiceData.invoiceNumber}`);
+    }
+  } catch (error) {
+    req.payload.logger.error({ err: error }, `✗ Error updating AR aging:`);
+  }
+
+  return doc;
+};

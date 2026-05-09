@@ -3,6 +3,8 @@
 import React, { Fragment, useCallback, useState } from 'react'
 import { toast, useTranslation } from '@payloadcms/ui'
 
+import { messageFromFailedJsonResponse } from '@/utilities/errors'
+
 import './index.scss'
 
 const SuccessMessage: React.FC = () => {
@@ -49,12 +51,13 @@ export const SeedButton: React.FC = () => {
           new Promise((resolve, reject) => {
             try {
               fetch('/next/seed', { method: 'POST', credentials: 'include' })
-                .then((res) => {
+                .then(async (res) => {
                   if (res.ok) {
                     resolve(true)
                     setSeeded(true)
                   } else {
-                    reject(new Error(t('toastSeedError')))
+                    const detail = await messageFromFailedJsonResponse(res, t('toastSeedError'))
+                    reject(new Error(detail))
                   }
                 })
                 .catch((err) => {

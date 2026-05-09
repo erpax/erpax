@@ -1,5 +1,19 @@
+/**
+ * Seed endpoint — populates a fresh tenant with example pages, posts, media.
+ *
+ * Per-seed data files (`home.ts`, `image-1.ts`, etc.) are static fixtures and
+ * inherit standards from this barrel.
+ *
+ * @rfc 9110 http-semantics seed-endpoint
+ * @standard ISO-8601-1:2019 date-time
+ * @standard BCP-47 language-tag locale-bundled-fixtures
+ * @audit ISO-19011:2018 audit-trail seed-runs
+ * @see docs/STANDARDS.md §3
+ */
+
 import type { CollectionSlug, GlobalSlug, Payload, PayloadRequest, File } from 'payload'
 
+import { codedFromRegistry, ERR } from '@/utilities/errors'
 import { contactForm as contactFormData } from './contact-form'
 import { contact as contactPageData } from './contact-page'
 import { home } from './home'
@@ -284,7 +298,7 @@ async function fetchFileByURL(url: string): Promise<File> {
   })
 
   if (!res.ok) {
-    throw new Error(`Failed to fetch file from ${url}, status: ${res.status}`)
+    throw codedFromRegistry(ERR.INTERNAL_SEED_REMOTE_FETCH, new Error(`status ${res.status}`))
   }
 
   const data = await res.arrayBuffer()

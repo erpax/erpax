@@ -1,3 +1,14 @@
+/**
+ * Dynamic page renderer — `/[locale]/[slug]` resolves to a `pages` row.
+ *
+ * @standard schema.org WebPage
+ * @standard W3C HTML5 Living Standard
+ * @standard Open-Graph Protocol metadata
+ * @rfc 9110 §15.4 redirection-3xx (via PayloadRedirects)
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next'
 
 import { PayloadRedirects } from '@/components/PayloadRedirects'
@@ -14,7 +25,7 @@ import { generateMeta } from '@/utilities/generateMeta'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { routing } from '@/i18n/routing'
-import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
 import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG

@@ -1,7 +1,7 @@
 import { HeaderClient } from './Component.client'
 import type { SupportedLocale } from '@/i18n/localization'
 
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobal } from '@/standards/rfc-9110/get-globals'
 import React from 'react'
 
 export async function Header({ locale }: { locale: SupportedLocale }) {

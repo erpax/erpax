@@ -1,3 +1,14 @@
+/**
+ * Products catalog — `/[locale]/products` lists published products.
+ *
+ * @standard schema.org Product
+ * @standard schema.org ItemList
+ * @standard ISO-4217:2015 currency-codes price
+ * @standard GS1 GTIN global-trade-item-number
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
 

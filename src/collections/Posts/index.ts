@@ -9,13 +9,15 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
-import { authenticated } from '../../access/authenticated'
-import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
+import { createMembershipAdminMutateAccess } from '@/access/membershipAdminMutateAccess'
+import { tenantScopedPostsReadAccess } from '@/access/tenantScopedRead'
+import { documentPreviewAdmin } from '@/collections/shared/documentPreviewAdmin'
+import { defaultVersionedDrafts } from '@/collections/shared/versionedDrafts'
 import { Banner } from '../../components/blocks/Banner/config'
 import { Code } from '../../components/blocks/Code/config'
 import { MediaBlock } from '../../components/blocks/MediaBlock/config'
-import { generatePreviewPath } from '../../utilities/generatePreviewPath'
-import { importRemoteMediaPostsHook } from '@/utilities/remoteMediaImport'
+import { ensureUniqueSlugWithinTenant } from '@/hooks/ensureUniqueSlugWithinTenant'
+import { postsBeforeChange } from './hooks/beforeChange'
 import { populateAuthors } from './hooks/populateAuthors'
 import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
 
@@ -29,6 +31,18 @@ import {
 import { slugField } from 'payload'
 import { localeRecord } from '@/i18n'
 
+/**
+ * Posts — CMS articles with versioned drafts and tenant-scoped read.
+ *
+ * @rfc 3986 uri slug-to-url
+ * @standard schema.org Article
+ * @standard schema.org BlogPosting
+ * @standard W3C HTML5 Living Standard
+ * @standard BCP-47 language-tag i18n-routing
+ * @standard ECMA-402 internationalization-api
+ * @compliance WCAG-2.1 level-AA accessibility
+ * @see docs/STANDARDS.md §3
+ */
 export const Posts: CollectionConfig<'posts'> = {
   slug: 'posts',
   labels: {
@@ -36,10 +50,10 @@ export const Posts: CollectionConfig<'posts'> = {
     plural: localeRecord('posts.plural'),
   },
   access: {
-    create: authenticated,
-    delete: authenticated,
-    read: authenticatedOrPublished,
-    update: authenticated,
+    create: createMembershipAdminMutateAccess('posts'),
+    delete: createMembershipAdminMutateAccess('posts'),
+    read: tenantScopedPostsReadAccess,
+    update: createMembershipAdminMutateAccess('posts'),
   },
   // This config controls what's populated by default when a post is referenced
   // https://payloadcms.com/docs/queries/select#defaultpopulate-collection-config-property
@@ -54,21 +68,10 @@ export const Posts: CollectionConfig<'posts'> = {
     },
   },
   admin: {
-    defaultColumns: ['title', 'slug', 'updatedAt'],
-    livePreview: {
-      url: ({ data, locale }) =>
-        generatePreviewPath({
-          slug: typeof data?.slug === 'string' ? data.slug : '',
-          collection: 'posts',
-          locale,
-        }),
-    },
-    preview: (data, { locale }) =>
-      generatePreviewPath({
-        slug: typeof data?.slug === 'string' ? data.slug : '',
-        collection: 'posts',
-        locale,
-      }),
+    /** Query presets on `_status`, `publishedAt` — future publishes use Payload scheduled publishing (see `versions.drafts`). */
+    enableQueryPresets: true,
+    defaultColumns: ['title', 'slug', '_status', 'publishedAt', 'updatedAt'],
+    ...documentPreviewAdmin('posts'),
     useAsTitle: 'title',
   },
   fields: [
@@ -177,6 +180,7 @@ export const Posts: CollectionConfig<'posts'> = {
       name: 'publishedAt',
       type: 'date',
       label: localeRecord('posts.publishedAt'),
+      index: true,
       admin: {
         date: {
           pickerAppearance: 'dayAndTime',
@@ -231,21 +235,28 @@ export const Posts: CollectionConfig<'posts'> = {
         },
       ],
     },
-    slugField(),
+    slugField({
+      disableUnique: true,
+      overrides: (field) => {
+        const slugText = field.fields?.[1]
+        if (slugText && slugText.type === 'text') {
+          slugText.hooks = {
+            ...slugText.hooks,
+            beforeValidate: [
+              ...(slugText.hooks?.beforeValidate || []),
+              ensureUniqueSlugWithinTenant('posts'),
+            ],
+          }
+        }
+        return field
+      },
+    }),
   ],
   hooks: {
-    beforeChange: [importRemoteMediaPostsHook],
+    beforeChange: postsBeforeChange,
     afterChange: [revalidatePost],
     afterRead: [populateAuthors],
     afterDelete: [revalidateDelete],
   },
-  versions: {
-    drafts: {
-      autosave: {
-        interval: 100, // We set this interval for optimal live preview
-      },
-      schedulePublish: true,
-    },
-    maxPerDoc: 50,
-  },
+  versions: defaultVersionedDrafts,
 }

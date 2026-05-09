@@ -1,5 +1,14 @@
 'use client'
 
+/**
+ * Admin pre-dashboard banner — first-run seed prompt.
+ *
+ * @standard WAI-ARIA 1.2 status-role
+ * @compliance WCAG-2.1 §1.4.3 contrast-minimum
+ * @standard BCP-47 language-tag
+ * @see src/components/README.md
+ */
+
 import { Banner } from '@payloadcms/ui/elements/Banner'
 import { useTranslation } from '@payloadcms/ui'
 import React from 'react'

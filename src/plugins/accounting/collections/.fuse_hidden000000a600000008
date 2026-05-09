@@ -1,0 +1,139 @@
+import type { CollectionConfig } from 'payload'
+/**
+ * Financial Statements — generated statement records (TB, BS, IS, CF, etc.).
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time fiscal-period-end generated-at
+ * @standard BCP-47 language-tag
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @compliance SOX §302 disclosure-controls
+ * @see docs/STANDARDS.md §4.2
+ */
+const FinancialStatements: CollectionConfig = {
+  slug: 'financial-statements',
+  labels: { singular: 'Financial Statement', plural: 'Financial Statements' },
+  admin: {
+    useAsTitle: 'statementId',
+    defaultColumns: ['statementId', 'statementType', 'fiscalPeriodEnd', 'language', 'generatedAt'],
+  },
+  access: {
+    read: async ({ req }) => {
+      if (req.user?.role === 'admin') return true;
+      return { 'hostId.id': { equals: req.user?.hostId } };
+    },
+    create: async ({ req }) => req.user?.role === 'admin' || req.user?.role === 'accountant',
+    update: async ({ req }) => req.user?.role === 'admin',
+    delete: async ({ req }) => req.user?.role === 'admin',
+  },
+  fields: [
+    { name: 'hostId', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    { name: 'statementId', type: 'text', required: true, unique: true },
+    {
+      name: 'statementType',
+      type: 'select',
+      required: true,
+      options: [
+        { label: 'Trial Balance', value: 'trial_balance' },
+        { label: 'Balance Sheet', value: 'balance_sheet' },
+        { label: 'Income Statement', value: 'income_statement' },
+        { label: 'Cash Flow Statement', value: 'cash_flow_statement' },
+        { label: 'Statement of Changes in Equity', value: 'equity_statement' },
+      ],
+    },
+    {
+      name: 'language',
+      type: 'select',
+      defaultValue: 'en',
+      options: [
+        { label: 'English', value: 'en' },
+        { label: 'Spanish', value: 'es' },
+        { label: 'French', value: 'fr' },
+        { label: 'German', value: 'de' },
+        { label: 'Italian', value: 'it' },
+        { label: 'Portuguese', value: 'pt' },
+        { label: 'Russian', value: 'ru' },
+        { label: 'Japanese', value: 'ja' },
+        { label: 'Chinese', value: 'zh' },
+        { label: 'Arabic', value: 'ar' },
+      ],
+    },
+    { name: 'fiscalPeriodStart', type: 'date', required: true },
+    { name: 'fiscalPeriodEnd', type: 'date', required: true },
+    {
+      name: 'currency',
+      type: 'select',
+      defaultValue: 'EUR',
+      options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
+    },
+    { name: 'statementContent', type: 'json', required: true },
+    {
+      name: 'financialRatios',
+      type: 'array',
+      fields: [
+        { name: 'ratioName', type: 'text', required: true },
+        { name: 'ratioValue', type: 'number', required: true },
+        {
+          name: 'category',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'Liquidity', value: 'liquidity' },
+            { label: 'Profitability', value: 'profitability' },
+            { label: 'Leverage', value: 'leverage' },
+            { label: 'Efficiency', value: 'efficiency' },
+          ],
+        },
+        { name: 'interpretation', type: 'text' },
+      ],
+    },
+    { name: 'comparativePeriod', type: 'date' },
+    { name: 'comparativeData', type: 'json' },
+    { name: 'notes', type: 'textarea' },
+    {
+      name: 'status',
+      type: 'select',
+      defaultValue: 'draft',
+      options: [
+        { label: 'Draft', value: 'draft' },
+        { label: 'Final', value: 'final' },
+        { label: 'Audited', value: 'audited' },
+        { label: 'Published', value: 'published' },
+      ],
+    },
+    {
+      name: 'exportFormats',
+      type: 'array',
+      fields: [
+        {
+          name: 'format',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'PDF', value: 'pdf' },
+            { label: 'Excel', value: 'excel' },
+            { label: 'CSV', value: 'csv' },
+            { label: 'JSON', value: 'json' },
+            { label: 'HTML', value: 'html' },
+          ],
+        },
+        { name: 'fileUrl', type: 'text' },
+        { name: 'generatedAt', type: 'date' },
+      ],
+    },
+    { name: 'generatedAt', type: 'date', required: true, admin: { disabled: true } },
+    { name: 'generatedBy', type: 'relationship', relationTo: 'users', admin: { disabled: true } },
+  ],
+  hooks: {
+    beforeChange: [
+      async ({ data, req }) => {
+        if (!data.hostId && req.payload.requestContext?.hostId) data.hostId = req.payload.requestContext.hostId;
+        if (!data.generatedAt) data.generatedAt = new Date();
+        return data;
+      },
+    ],
+  },
+  timestamps: true,
+};
+
+export default FinancialStatements;

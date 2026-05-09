@@ -1,3 +1,15 @@
+/**
+ * Default Lexical editor — base feature set + link validation rules.
+ *
+ * @standard W3C HTML5 Living Standard rich-text-output
+ * @standard CommonMark 0.31 markdown-fallback
+ * @rfc 3986 uniform-resource-identifier link-fields
+ * @standard BCP-47 language-tag locale-aware-content
+ * @compliance WCAG-2.1 level-AA accessibility
+ * @standard schema.org HTMLRichText
+ * @see docs/STANDARDS.md §3 §4.3
+ */
+
 import type { TextFieldSingleValidation } from 'payload'
 import {
   BoldFeature,

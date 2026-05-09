@@ -1,4 +1,14 @@
 'use client'
+/**
+ * Pagination — accessible numbered + prev/next nav for collection archives.
+ *
+ * @standard W3C HTML5 nav-element
+ * @standard WAI-ARIA 1.2 navigation-landmark-role
+ * @rfc 5005 web-feed-paging-and-archiving
+ * @rfc 3986 uniform-resource-identifier page-number-query
+ * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+ * @see src/components/README.md
+ */
 import {
   Pagination as PaginationComponent,
   PaginationContent,

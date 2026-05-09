@@ -1,3 +1,17 @@
+/**
+ * next-intl routing — locale-prefixed paths and navigation primitives.
+ *
+ * Always-prefix policy: `/en/...`, `/de/...`, etc. Avoids the `as-needed`
+ * cookie/pathname edge cases when switching locale.
+ *
+ * @standard BCP-47 language-tag
+ * @rfc 3986 uniform-resource-identifier locale-path-segment
+ * @rfc 9110 http-semantics
+ * @standard W3C URL Living Standard
+ * @standard ECMA-402 internationalization-api
+ * @see docs/STANDARDS.md §6 §4.3
+ */
+
 import { defineRouting } from 'next-intl/routing'
 import { createNavigation } from 'next-intl/navigation'
 import localization from './localization'

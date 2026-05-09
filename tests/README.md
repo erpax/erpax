@@ -305,6 +305,7 @@ Runs before all tests:
 
 Tests run on:
 - **Local development:** `pnpm test:int`
+- **Application source:** `pnpm run lint:src` — ESLint with `--max-warnings 0` on all `src/**/*.ts(x)` except Payload-generated migrations (runs in CI + pre-push; `lint:payload-app` aliases this)
 - **Pre-commit:** (recommend husky hook)
 - **CI/CD:** GitHub Actions · deploy: **Cloudflare Workers** (OpenNext + Wrangler)
 

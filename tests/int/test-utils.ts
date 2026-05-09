@@ -1,6 +1,9 @@
 /**
- * Test Utilities and Mock Helpers
- * Common mocking patterns and helpers for integration tests
+ * Test Utilities and Mock Helpers — shared mocking patterns for integration
+ * tests across the suite.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
+ * @see docs/STANDARDS.md §7
  */
 
 import { afterEach, beforeEach, expect, vi } from 'vitest'

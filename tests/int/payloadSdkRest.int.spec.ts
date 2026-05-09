@@ -1,3 +1,15 @@
+/**
+ * Payload SDK REST integration tests — verifies @payloadcms/sdk runs against
+ * the in-process Next REST handlers.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing integration-test-level
+ * @rfc 9110 http-semantics
+ * @rfc 7519 jwt session-token
+ * @rfc 8259 json
+ * @standard OpenAPI 3.1 api-description
+ * @see docs/STANDARDS.md §4.3 §7
+ */
+
 import { getPayload } from 'payload'
 
 import config from '@/payload.config'

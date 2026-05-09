@@ -1,3 +1,16 @@
+/**
+ * Frontend root layout — sets `<html>`, fonts, theme + ecommerce providers.
+ *
+ * @standard W3C HTML5 Living Standard
+ * @standard W3C CSS Living Standard
+ * @standard schema.org WebSite
+ * @standard BCP-47 language-tag html-lang-attribute
+ * @compliance WCAG-2.1 §1.4.3 contrast-minimum
+ * @compliance WCAG-2.1 §3.1.1 language-of-page
+ * @rfc 9110 http-semantics
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
@@ -10,7 +23,7 @@ import { InitTheme } from '@/components/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 
 import './globals.css'
-import { getServerSideURL } from '@/utilities/getURL'
+import { getServerSideURL } from '@/standards/rfc-3986/get-url'
 import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {

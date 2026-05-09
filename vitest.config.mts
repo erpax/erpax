@@ -22,7 +22,15 @@ export default defineConfig({
     environment: 'node',
     environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],
     setupFiles: ['./vitest.setup.ts'],
-    include: ['tests/int/**/*.int.spec.ts', 'tests/int/**/*.int.spec.tsx'],
+    include: [
+      // Domain-driven integration tests (existing convention).
+      'tests/int/**/*.int.spec.ts',
+      'tests/int/**/*.int.spec.tsx',
+      // Standards-keyed tests — mirror src/standards/<id>/ layout
+      // (per docs/STANDARDS.md §5 "Test files mirror their target").
+      'tests/standards/**/*.int.spec.ts',
+      'tests/standards/**/*.int.spec.tsx',
+    ],
     // Disable globals to enforce explicit imports (stricter, clearer tests)
     globals: false,
     // Run single-threaded to prevent D1/SQLite lock contention

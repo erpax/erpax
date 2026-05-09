@@ -1,3 +1,17 @@
+/**
+ * Remote-media import — fetch images/files from external URLs into Media
+ * collection during seed / Pages / Posts / Products beforeChange.
+ *
+ * @rfc 3986 uniform-resource-identifier remote-source
+ * @rfc 6838 mime-type media-type
+ * @rfc 9110 http-semantics fetch
+ * @standard ISO/IEC-23008 mpeg-image
+ * @standard ISO/IEC-10918 jpeg
+ * @compliance GDPR Art.5(1)(c) data-minimization
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @audit ISO-19011:2018 audit-trail
+ */
+
 import type { CollectionBeforeChangeHook, File as PayloadUploadFile, PayloadRequest } from 'payload'
 
 import { fetchRemoteFileForPayload } from '@/utilities/fetchRemoteFile'

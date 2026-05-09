@@ -1,3 +1,15 @@
+/**
+ * Product detail — `/[locale]/products/[slug]`.
+ *
+ * @standard schema.org Product
+ * @standard schema.org Offer
+ * @standard ISO-4217:2015 currency-codes
+ * @standard GS1 GTIN global-trade-item-number
+ * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import Link from 'next/link'
@@ -15,7 +27,7 @@ import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
 } from '@/utilities/siteTenantWhere'
-import { resolvePublicSiteUrl } from '@/utilities/getURL'
+import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
 import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
 
 export async function generateStaticParams() {

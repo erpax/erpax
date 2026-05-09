@@ -5,6 +5,7 @@ import { PayloadSDKError } from '@payloadcms/sdk'
 import { useRouter, useSearchParams } from 'next/navigation'
 import React from 'react'
 
+import { formatPayloadSdkUserMessage } from '@/utilities/errors'
 import { getPayloadSdk } from '@/utilities/payloadSdk'
 
 import './index.scss'
@@ -68,11 +69,11 @@ export const Login = ({ tenantSlug, tenantDomain, labels }: Props) => {
         window.alert(labels.genericError)
       }
     } catch (err) {
-      if (err instanceof PayloadSDKError && err.status === 400 && err.errors?.[0]?.message) {
-        window.alert(err.errors[0].message)
-      } else {
-        window.alert(labels.genericError)
+      if (err instanceof PayloadSDKError) {
+        window.alert(formatPayloadSdkUserMessage(err, labels.genericError))
+        return
       }
+      window.alert(labels.genericError)
     }
   }
 

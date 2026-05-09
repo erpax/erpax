@@ -1,3 +1,13 @@
+/**
+ * Posts archive paginated — `/[locale]/posts/page/[pageNumber]`.
+ *
+ * @standard schema.org CollectionPage
+ * @rfc 5005 web-feed-paging-and-archiving
+ * @rfc 3986 uniform-resource-identifier page-number-segment
+ * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+ * @see src/app/README.md
+ */
+
 import type { Metadata } from 'next/types'
 
 import { CollectionArchive } from '@/components/CollectionArchive'

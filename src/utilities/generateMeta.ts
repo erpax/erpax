@@ -1,9 +1,20 @@
+/**
+ * Builds Next.js `Metadata` (HTML `<meta>` + Open Graph properties) from a
+ * Payload document. Image URLs are absolutized against the request origin per
+ * RFC 3986 §5.3 reference resolution.
+ *
+ * @standard W3C-HTML5 §4.2.5 meta-element
+ * @standard OGP open-graph-protocol-1.0
+ * @rfc 3986 §5.3 reference-resolution
+ * @see src/standards/rfc-3986/
+ */
+
 import type { Metadata } from 'next'
 
 import type { Media, Page, Post, Product, Config } from '../payload-types'
 
 import { mergeOpenGraph } from './mergeOpenGraph'
-import { getServerSideURL } from './getURL'
+import { getServerSideURL } from '@/standards/rfc-3986/get-url'
 
 const getImageURL = (
   image: Media | Config['db']['defaultIDType'] | null | undefined,

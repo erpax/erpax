@@ -1,3 +1,14 @@
+/**
+ * Resolve the per-tenant enabled locale set — defaults to the global
+ * `supportedLocales` when the tenant doesn't restrict.
+ *
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @standard ECMA-402 internationalization-api
+ * @standard EU 1958/1 official-languages-of-the-european-union
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ */
+
 import type { Tenant } from '@/payload-types'
 
 import { defaultLocale, isValidLocale, supportedLocales, type SupportedLocale } from '@/i18n'

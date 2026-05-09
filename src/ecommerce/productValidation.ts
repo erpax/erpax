@@ -1,6 +1,17 @@
+/**
+ * Product validation — block checkout if quantity exceeds tracked inventory.
+ *
+ * @accounting IFRS IAS-2 inventories quantity-tracking
+ * @accounting US-GAAP ASC-330 inventory
+ * @standard GS1 GTIN global-trade-item-number
+ * @standard schema.org Product
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §3 §4.2
+ */
+
 import type { ProductsValidation } from '@payloadcms/plugin-ecommerce/types'
 
-/** Blocks checkout when inventory is tracked and quantity exceeds stock. */
+import { apiErr, ERR } from '@/utilities/errors'
 export const validateProductCheckout: ProductsValidation = async ({
   product,
   quantity,
@@ -17,6 +28,6 @@ export const validateProductCheckout: ProductsValidation = async ({
         : null
 
   if (stock != null && stock < quantity) {
-    throw new Error(`Insufficient stock (${stock} available).`)
+    throw apiErr(ERR.PAY_INSUFFICIENT_STOCK)
   }
 }

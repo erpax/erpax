@@ -3,9 +3,16 @@ import { login } from '../helpers/login'
 import { testUser } from '../helpers/seedUser'
 
 /**
- * Multi-tenant E2E Tests
- * 
- * Verifies tenant isolation, routing by domain/slug, and data separation.
+ * Multi-tenant E2E Tests — verifies tenant isolation, domain/slug routing,
+ * and data separation through the browser.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing system-test-level
+ * @standard W3C WebDriver-BiDi browser-automation
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.15 access-control
+ * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §3 §4.4 §7
  */
 test.describe('Multi-tenant', () => {
   test.describe.configure({ timeout: 60_000 })

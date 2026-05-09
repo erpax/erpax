@@ -1,6 +1,13 @@
 /**
  * Payload REST SDK wired to in-process Next REST handlers (no HTTP server).
+ *
+ * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
+ * @rfc 9110 http-semantics
+ * @rfc 8259 json
+ * @rfc 7519 jwt session-token
+ * @standard OpenAPI 3.1 api-description
  * @see https://github.com/payloadcms/payload/tree/main/packages/sdk (constructor `fetch` example)
+ * @see docs/STANDARDS.md §4.3 §7
  */
 
 import {
@@ -14,7 +21,7 @@ import { PayloadSDK } from '@payloadcms/sdk'
 
 import type { Config } from '@/payload-types'
 import config from '@/payload.config'
-import { getServerSideURL } from '@/utilities/getURL'
+import { getServerSideURL } from '@/standards/rfc-3986/get-url'
 
 import { testUser } from './seedUser'
 

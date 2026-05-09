@@ -5,7 +5,18 @@ import { supportedLocales } from '@/i18n/localization'
 import { expectedAdminEmailLabel } from './adminPayloadUiEmailLabels'
 
 /**
- * i18n E2E tests.
+ * i18n E2E tests — locale resolution + admin UI translation through the browser.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing system-test-level
+ * @standard W3C WebDriver-BiDi browser-automation
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @rfc 4647 matching-of-language-tags
+ * @rfc 9110 http-semantics accept-language
+ * @standard ECMA-402 internationalization-api
+ * @standard Unicode-CLDR locale-data
+ * @standard EU 1958/1 official-languages-of-the-european-union
+ * @see docs/STANDARDS.md §6 §7
  *
  *   1. **Admin:** Payload resolves UI language via `getRequestLanguage`
  *      (`payload-lng`, `Accept-Language`, fallback). For `/admin` routes,

@@ -1,9 +1,7 @@
 import type { FieldHook, Where } from 'payload'
 
-import { ValidationError } from 'payload'
-
-import { isSuperAdmin } from '@/access/isSuperAdmin'
-import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
+import { ERR, throwRegistryValidation } from '@/utilities/errors'
+import { tenantLabelForDuplicateAudit } from '@/utilities/tenantLabelForDuplicateAudit'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { getCollectionIDType } from '@/utilities/getCollectionIDType'
 
@@ -15,6 +13,18 @@ function normalizeUsername(value: unknown): string | null {
   return t === '' ? null : t
 }
 
+/**
+ * Field hook — enforce per-tenant uniqueness on a non-empty `username`.
+ *
+ * Uniqueness applies only to non-empty values (a blank username is allowed for
+ * any number of users). Multi-tenant boundary is enforced via cookie-derived
+ * tenant scope.
+ *
+ * @security ISO-27001 A.5.16 identity-management
+ * @security ISO-27002 §5.16 identity-management
+ * @standard W3C HTML5 input-validation client-side
+ * @see docs/STANDARDS.md §4.4
+ */
 export const ensureUniqueUsername: FieldHook = async ({ originalDoc, req, value }) => {
   const next = normalizeUsername(value)
   const previous = normalizeUsername(originalDoc?.username)
@@ -56,34 +66,14 @@ export const ensureUniqueUsername: FieldHook = async ({ originalDoc, req, value 
   })
 
   if (findDuplicateUsers.docs.length > 0 && req.user) {
-    const tenantIDs = getUserTenantIDs(req.user)
-    // if the user is an admin or has access to more than 1 tenant
-    // provide a more specific error message
-    if (isSuperAdmin(req.user) || tenantIDs.length > 1) {
-      const attemptedTenantChange = await req.payload.findByID({
-        // @ts-ignore - selectedTenant will match DB ID type
-        id: selectedTenant,
-        collection: 'tenants',
-      })
-
-      throw new ValidationError({
-        errors: [
-          {
-            message: `The "${attemptedTenantChange.name}" tenant already has a user with the username "${next}". Usernames must be unique per tenant.`,
-            path: 'username',
-          },
-        ],
-      })
-    }
-
-    throw new ValidationError({
-      errors: [
-        {
-          message: `A user with the username ${next} already exists. Usernames must be unique per tenant.`,
-          path: 'username',
-        },
-      ],
+    const tenantName = await tenantLabelForDuplicateAudit(req, selectedTenant || undefined)
+    req.payload.logger.warn({
+      code: ERR.VAL_USERNAME_DUPLICATE,
+      msg: 'Duplicate username for tenant',
+      username: next,
+      ...(tenantName && { tenantName }),
     })
+    throwRegistryValidation('username', ERR.VAL_USERNAME_DUPLICATE)
   }
 
   return next

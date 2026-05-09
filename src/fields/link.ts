@@ -1,3 +1,14 @@
+/**
+ * Reusable link field factory — internal references or external URLs.
+ *
+ * @rfc 3986 uniform-resource-identifier
+ * @standard W3C URL Living Standard
+ * @standard W3C HTML5 anchor-element
+ * @standard BCP-47 language-tag locale-aware
+ * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+ * @see docs/STANDARDS.md §3
+ */
+
 import type { Field, GroupField } from 'payload'
 
 import deepMerge from '@/utilities/deepMerge'

@@ -4,6 +4,17 @@ import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
 import { isSuperAdmin } from '@/access/isSuperAdmin'
 import { isAccessingSelf } from './isAccessingSelf'
 
+/**
+ * Users:update + delete access predicate — self, super-admin, or
+ * tenant-admin acting on co-tenants.
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @security ISO-27001 A.5.18 access-rights
+ * @security ISO-27002 §5.15 access-control
+ * @security ISO-27002 §5.4 segregation-of-duties
+ * @compliance SOC-2 CC6.3 access-removal
+ * @see docs/STANDARDS.md §4.4
+ */
 export const updateAndDeleteAccess: Access = ({ req, id }) => {
   const { user } = req
 
@@ -17,15 +28,15 @@ export const updateAndDeleteAccess: Access = ({ req, id }) => {
 
   /**
    * Constrains update and delete access to users that belong
-   * to the same tenant as the tenant-admin making the request
+   * to the same tenant as a membership admin making the request
    *
    * You may want to take this a step further with a beforeChange
-   * hook to ensure that the a tenant-admin can only remove users
+   * hook to ensure that a membership admin can only remove users
    * from their own tenant in the tenants array.
    */
   return {
     'tenants.tenant': {
-      in: getUserTenantIDs(user, 'tenant-admin'),
+      in: getUserTenantIDs(user, 'admin'),
     },
   }
 }

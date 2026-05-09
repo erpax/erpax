@@ -1,9 +1,21 @@
+/**
+ * GET /posts-sitemap.xml — Sitemaps Protocol XML for the `posts` collection.
+ *
+ * @standard sitemaps.org 0.9 sitemap-protocol
+ * @standard W3C XML 1.0
+ * @rfc 9110 http-semantics
+ * @rfc 9110 §13 caching
+ * @rfc 3986 uniform-resource-identifier
+ * @standard ISO-8601-1:2019 date-time lastmod
+ * @see src/app/README.md
+ */
+
 import { getServerSideSitemap } from 'next-sitemap'
 import { getPayload } from 'payload'
 import config from '@payload-config'
 import { unstable_cache } from 'next/cache'
 
-import { getServerSideURL } from '@/utilities/getURL'
+import { getServerSideURL } from '@/standards/rfc-3986/get-url'
 
 /** D1/SQLite cannot tolerate concurrent opens during OpenNext/workerd static generation (SQLITE_BUSY). */
 export const dynamic = 'force-dynamic'

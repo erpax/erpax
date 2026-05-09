@@ -1,0 +1,140 @@
+/**
+ * @erpax/hooks/common — reusable before/after hooks (autoPopulateHost, etc.).
+ *
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation autoPopulateHost
+ * @security ISO-27002 §5.15 access-control
+ * @audit ISO-19011:2018 audit-trail before-validate-hooks
+ * @compliance SOC-2 CC4.1 monitoring-and-evaluation
+ * @see docs/STANDARDS.md §5
+ */
+
+import type { CollectionBeforeChangeHook, CollectionBeforeValidateHook } from 'payload'
+
+/**
+ * Auto-populate the tenant field from user context.
+ *
+ * Slice CCC: derives `data.tenant` from the canonical
+ * `req.user.tenants[0]?.tenant` (multi-tenant plugin convention)
+ * rather than the fictional `req.user.host` field that was used
+ * pre-Slice-CCC. Name kept as `autoPopulateHost` for callsite
+ * stability; the field it sets is now `tenant` to match the
+ * post-Slice-CCC collection schemas.
+ */
+export const autoPopulateHost: CollectionBeforeValidateHook = async ({
+  data,
+  req,
+}) => {
+  if (req.user && data) {
+    const tenantsArr = (req.user as unknown as { tenants?: Array<{ tenant?: number | string }> }).tenants
+    const firstTenantRef = tenantsArr?.[0]?.tenant
+    if (firstTenantRef !== undefined && firstTenantRef !== null) {
+      ;(data as Record<string, unknown>).tenant = firstTenantRef
+    }
+  }
+  return data
+}
+
+/**
+ * Validate balanced accounting equations (debits = credits)
+ * PATTERN: Applied to Equations collection
+ */
+export const validateBalancedEquation: CollectionBeforeChangeHook = async ({
+  data,
+}) => {
+  if (data.debitAmount !== data.creditAmount) {
+    throw new Error(
+      `Equation must balance: debits ${data.debitAmount} ≠ credits ${data.creditAmount}`,
+    )
+  }
+  return data
+}
+
+/**
+ * Auto-calculate invoice line totals
+ * PATTERN: Applied to InvoiceLines collection
+ */
+export const autoCalculateLineTotal: CollectionBeforeChangeHook = async ({
+  data,
+}) => {
+  if (data.quantity && data.unitPrice) {
+    data.totalAmount = data.quantity * data.unitPrice
+  }
+  return data
+}
+
+/**
+ * Validate non-negative amounts
+ * PATTERN: Applied to Payments, Entries, Statements
+ */
+export const validateNonNegativeAmount: CollectionBeforeChangeHook = async ({
+  data,
+}) => {
+  if (data.amount !== undefined && data.amount < 0) {
+    throw new Error('Amount cannot be negative')
+  }
+  if (data.amountPaid !== undefined && data.amountPaid < 0) {
+    throw new Error('Amount paid cannot be negative')
+  }
+  return data
+}
+
+/**
+ * Prevent updates to finalized records
+ * PATTERN: Used for Invoices (prevent editing issued/confirmed), Payments (prevent editing authorized)
+ */
+export function preventStatusChanges(
+  statusField: string,
+  finalizedStatuses: string[],
+  errorMessage?: string,
+): CollectionBeforeChangeHook {
+  return async ({ data, originalDoc }) => {
+    // Only check on update, not create
+    if (!originalDoc) return data
+
+    const originalStatus = originalDoc[statusField]
+    if (finalizedStatuses.includes(originalStatus)) {
+      throw new Error(
+        errorMessage || `Cannot modify records with status: ${originalStatus}`,
+      )
+    }
+    return data
+  }
+}
+
+/**
+ * Builder: Require specific field values on update
+ * PATTERN: Used for status-dependent operations (e.g., must have authorizedAt to post)
+ */
+export function requireFieldOnUpdate(
+  fieldName: string,
+  errorMessage?: string,
+): CollectionBeforeChangeHook {
+  return async ({ data, originalDoc }) => {
+    if (!originalDoc) return data // Create is OK
+
+    if (!data[fieldName]) {
+      throw new Error(
+        errorMessage || `Field ${fieldName} is required to update this record`,
+      )
+    }
+    return data
+  }
+}
+
+/**
+ * Builder: Auto-set timestamp on condition
+ * PATTERN: Used for authorizedAt, postedAt, reconciledAt fields
+ * COMPLIANT: ISO 8601 UTC format (canonical from Payload)
+ */
+export function autoSetTimestamp(
+  timestampField: string,
+  condition: (data: any) => boolean,
+): CollectionBeforeChangeHook {
+  return async ({ data }) => {
+    if (condition(data) && !data[timestampField]) {
+      // ISO 8601 UTC format guaranteed
+      data[timestampField] = new Date().toISOString()
+    }
+    return data
+  }
+}

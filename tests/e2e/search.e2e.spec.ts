@@ -1,9 +1,14 @@
 import { test, expect } from '@playwright/test'
 
 /**
- * Search Plugin E2E Tests
- * 
- * Verifies search functionality across collections.
+ * Search Plugin E2E Tests — verifies search across collections via the UI.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing system-test-level
+ * @standard W3C WebDriver-BiDi browser-automation
+ * @rfc 3986 uniform-resource-identifier search-query-parameter
+ * @standard schema.org SearchAction
+ * @compliance WCAG-2.1 level-AA accessibility
+ * @see docs/STANDARDS.md §3 §7
  */
 test.describe('Search', () => {
   test.describe.configure({ timeout: 60_000 })

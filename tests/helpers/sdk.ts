@@ -1,3 +1,16 @@
+/**
+ * Payload REST SDK helper for e2e seeds — points at a running dev server.
+ *
+ * For Vitest without a server, use `createPayloadSdkRest` in `payloadSdkRest.ts`.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
+ * @rfc 9110 http-semantics
+ * @rfc 8259 json
+ * @rfc 7519 jwt session-token
+ * @standard OpenAPI 3.1 api-description
+ * @see docs/STANDARDS.md §4.3 §7
+ */
+
 import { PayloadSDK } from '@payloadcms/sdk'
 import type { Config } from '@/payload-types'
 

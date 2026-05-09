@@ -26,6 +26,7 @@ import path from 'node:path'
 import { JSDOM } from 'jsdom'
 
 const ATOM_NS = 'http://www.w3.org/2005/Atom'
+const BLOGGER_NS = 'http://schemas.google.com/blogger/2018'
 
 /** Lexical text format bitmask (matches @lexical/rich-text conventions). */
 const F_BOLD = 1
@@ -294,19 +295,54 @@ function alternateHref(entry: Element): string | null {
   )
 }
 
+/** Unicode-safe slug (Cyrillic, etc.) for paths and Blogger filenames. */
+export function slugifyUnicode(raw: string): string {
+  const s = raw
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\p{L}\p{N}_-]+/gu, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '')
+  return s || 'post'
+}
+
 function slugFromUrl(href: string): string {
   try {
     const u = new URL(href)
     const seg = u.pathname.split('/').filter(Boolean).pop() ?? 'post'
     const base = seg.replace(/\.html?$/i, '')
-    const slug = base
-      .replace(/[^a-zA-Z0-9-_]+/g, '-')
-      .replace(/^-+|-+$/g, '')
-      .toLowerCase()
-    return slug || 'post'
+    return slugifyUnicode(base)
   } catch {
     return 'post'
   }
+}
+
+function bloggerEl(entry: Element, local: string): Element | null {
+  const byNs = entry.getElementsByTagNameNS(BLOGGER_NS, local)
+  if (byNs.length) return byNs[0] ?? null
+  return null
+}
+
+/** `/2015/03/foo.html` → `foo` */
+function slugFromBloggerFilename(filename: string | null | undefined): string | null {
+  if (!filename?.trim()) return null
+  const base = filename.replace(/^.*\//, '').replace(/\.html?$/i, '')
+  if (!base.trim()) return null
+  const s = slugifyUnicode(base)
+  return s === 'post' && !base ? null : s
+}
+
+function entryIsBloggerPost(entry: Element): boolean {
+  const t = bloggerEl(entry, 'type')?.textContent?.trim()
+  if (!t) return true
+  return t === 'POST'
+}
+
+function entryBloggerPublicationStatus(entry: Element): 'draft' | 'published' {
+  const s = bloggerEl(entry, 'status')?.textContent?.trim().toUpperCase()
+  if (s === 'DRAFT' || s === 'SCHEDULED') return 'draft'
+  return 'published'
 }
 
 function ensureUniqueSlug(base: string, used: Map<string, number>): string {
@@ -475,20 +511,205 @@ function htmlToLexicalContent(html: string, options: HtmlToLexicalOptions): Lexi
   }
 }
 
-/** Minimal post shape for JSON import (omit `id` for create mode). */
-type PostPayload = {
+/** Minimal post shape for JSON import (omit `id` for create mode). Matches Payload localized posts + hooks. */
+export type PostImportPayload = {
   tenant?: number
-  title: string
+  title: string | Record<string, string>
   slug: string
   _status: 'draft' | 'published'
   publishedAt?: string | null
   authors?: number[]
   categories?: number[]
-  content: LexicalContent
+  content: LexicalContent | Record<string, LexicalContent>
+  /** Remote URL → `importRemoteMediaPostsHook` creates media and replaces with id */
+  heroImage?: string | null
+  generateSlug?: boolean
   meta?: {
     title?: string | null
     description?: string | null
   }
+}
+
+export type ConvertBloggerAtomOptions = {
+  reverse?: boolean
+  limit?: number
+  slugPrefix?: string
+  omitImages?: boolean
+  seoMetaTitle?: boolean
+  /** Force every post to draft (overrides Blogger status). */
+  forceDraft?: boolean
+  /** When false, ignore blogger:status (legacy). Default true. */
+  respectBloggerStatus?: boolean
+  categoryMap?: Record<string, number>
+  /** Output non-localized title/content (legacy JSON). */
+  flat?: boolean
+  /** Locale that holds the Blogger HTML (default `bg`). */
+  contentLocale?: string
+  /** Payload default locale (`en`) gets a copy of title/content when localized. */
+  fallbackLocale?: string
+  mirrorFallbackLocale?: boolean
+  tenant?: number
+  authorId?: number
+}
+
+export type ConvertBloggerAtomResult = {
+  posts: PostImportPayload[]
+  labelRows: { slug: string; labels: string[] }[]
+  heroRows: { slug: string; url: string | null }[]
+}
+
+/**
+ * Parse Blogger Atom XML into Payload-shaped post objects (localized fields by default).
+ */
+export function convertBloggerAtomXml(xml: string, opts: ConvertBloggerAtomOptions = {}): ConvertBloggerAtomResult {
+  const {
+    reverse,
+    limit,
+    slugPrefix,
+    omitImages = false,
+    seoMetaTitle,
+    forceDraft,
+    respectBloggerStatus = true,
+    categoryMap = {},
+    flat = false,
+    contentLocale = 'bg',
+    fallbackLocale = 'en',
+    mirrorFallbackLocale = true,
+    tenant,
+    authorId,
+  } = opts
+
+  const jsdom = new JSDOM(xml, { contentType: 'text/xml' })
+  const doc = jsdom.window.document
+
+  const parserErr = doc.getElementsByTagName('parsererror')[0]
+  if (parserErr?.textContent) {
+    throw new Error(`XML parse error: ${parserErr.textContent.slice(0, 500)}`)
+  }
+
+  let entries = [...doc.getElementsByTagNameNS(ATOM_NS, 'entry')]
+  if (entries.length === 0) {
+    entries = [...doc.getElementsByTagName('entry')]
+  }
+
+  if (entries.length === 0) {
+    throw new Error('No <entry> elements found. Is this an Atom feed?')
+  }
+
+  if (reverse) entries = [...entries].reverse()
+  if (typeof limit === 'number' && limit > 0) {
+    entries = entries.slice(0, limit)
+  }
+
+  const slugUsed = new Map<string, number>()
+  const posts: PostImportPayload[] = []
+  const labelRows: { slug: string; labels: string[] }[] = []
+  const heroRows: { slug: string; url: string | null }[] = []
+
+  const lexicalOpts: HtmlToLexicalOptions = { omitImages }
+
+  for (const entry of entries) {
+    if (!entryIsBloggerPost(entry)) continue
+
+    const titleEl = childEl(entry, 'title')
+    const title = innerHtmlOrText(titleEl)
+    if (!title) continue
+
+    const publishedEl = childEl(entry, 'published')
+    const publishedAt = publishedEl?.textContent?.trim() || null
+
+    const summaryEl = childEl(entry, 'summary')
+    const summaryPlain = innerHtmlOrText(summaryEl)
+
+    const contentEl = childEl(entry, 'content')
+    let html = htmlInner(contentEl)
+    if (!html.trim()) html = htmlInner(summaryEl)
+
+    const href = alternateHref(entry)
+    const filename = bloggerEl(entry, 'filename')?.textContent?.trim()
+
+    let baseSlug = slugFromBloggerFilename(filename)
+    if (!baseSlug && href) baseSlug = slugFromUrl(href)
+    if (!baseSlug) baseSlug = slugifyUnicode(title)
+    if (slugPrefix) {
+      const p = slugPrefix.replace(/-+$/, '').replace(/^-+/, '')
+      baseSlug = p ? `${p}-${baseSlug}` : baseSlug
+    }
+    const slug = ensureUniqueSlug(baseSlug, slugUsed)
+
+    const labels = entryCategoryTerms(entry)
+    if (labels.length) labelRows.push({ slug, labels })
+
+    const heroUrl = firstImageSrcFromHtml(html)
+    heroRows.push({ slug, url: heroUrl })
+
+    const lexical = htmlToLexicalContent(html, lexicalOpts)
+
+    let titleField: PostImportPayload['title']
+    let contentField: PostImportPayload['content']
+
+    if (flat) {
+      titleField = title
+      contentField = lexical
+    } else if (mirrorFallbackLocale && contentLocale !== fallbackLocale) {
+      titleField = {
+        [contentLocale]: title,
+        [fallbackLocale]: title,
+      }
+      contentField = {
+        [contentLocale]: lexical,
+        [fallbackLocale]: lexical,
+      }
+    } else {
+      titleField = { [contentLocale]: title }
+      contentField = { [contentLocale]: lexical }
+    }
+
+    let _status: 'draft' | 'published'
+    if (forceDraft) {
+      _status = 'draft'
+    } else if (respectBloggerStatus) {
+      _status = entryBloggerPublicationStatus(entry)
+    } else {
+      _status = 'published'
+    }
+
+    const docPayload: PostImportPayload = {
+      title: titleField,
+      slug,
+      _status,
+      publishedAt,
+      content: contentField,
+      generateSlug: false,
+    }
+
+    if (heroUrl) {
+      docPayload.heroImage = heroUrl
+    }
+
+    if (typeof tenant === 'number' && !Number.isNaN(tenant)) {
+      docPayload.tenant = tenant
+    }
+
+    if (typeof authorId === 'number' && !Number.isNaN(authorId)) {
+      docPayload.authors = [authorId]
+    }
+
+    const catIds = mapLabelsToCategoryIds(labels, categoryMap)
+    if (catIds.length) docPayload.categories = catIds
+
+    const meta: NonNullable<PostImportPayload['meta']> = {}
+    if (summaryPlain) meta.description = summaryPlain.slice(0, 500)
+    if (seoMetaTitle) {
+      const plainTitle = typeof titleField === 'string' ? titleField : titleField[contentLocale] ?? title
+      meta.title = plainTitle
+    }
+    if (Object.keys(meta).length) docPayload.meta = meta
+
+    posts.push(docPayload)
+  }
+
+  return { posts, labelRows, heroRows }
 }
 
 type CliOptions = {
@@ -505,6 +726,7 @@ type CliOptions = {
   slugPrefix: string
   omitImages: boolean
   seoMetaTitle: boolean
+  flat: boolean
 }
 
 function parseArgs(argv: string[]): CliOptions {
@@ -516,6 +738,7 @@ function parseArgs(argv: string[]): CliOptions {
     slugPrefix: '',
     omitImages: false,
     seoMetaTitle: false,
+    flat: false,
   }
 
   for (let i = 0; i < argv.length; i++) {
@@ -568,6 +791,10 @@ function parseArgs(argv: string[]): CliOptions {
       o.seoMetaTitle = true
       continue
     }
+    if (a === '--flat') {
+      o.flat = true
+      continue
+    }
     if (a.startsWith('-')) {
       console.error(`Unknown option: ${a}`)
       process.exit(1)
@@ -596,6 +823,7 @@ function main() {
     slugPrefix,
     omitImages,
     seoMetaTitle,
+    flat,
   } = opts
 
   if (!input) {
@@ -608,12 +836,16 @@ Options:
   --categories-map <path>   JSON map: Blogger label → category id
   --labels-out <path>       Sidecar: slug + label terms per post
   --hero-images-out <path>  Sidecar: slug + first <img src>
-  --reverse
-  --draft
+  --reverse                 Oldest-first order (recommended)
+  --draft                   Force all posts to draft
   --limit <n>
   --slug-prefix <str>
   --omit-images
   --seo-meta-title          Set meta.title from post title
+  --flat                    Non-localized title/content (legacy)
+
+Default export matches the app: only Blogger POST entries; blogger:status → _status;
+localized title/content (bg + en mirror); slug from blogger:filename when present.
 `)
     process.exit(1)
   }
@@ -635,91 +867,28 @@ Options:
   }
 
   const xml = fs.readFileSync(inputPath, 'utf8')
-  const jsdom = new JSDOM(xml, { contentType: 'text/xml' })
-  const doc = jsdom.window.document
 
-  const parserErr = doc.getElementsByTagName('parsererror')[0]
-  if (parserErr?.textContent) {
-    console.error('XML parse error:', parserErr.textContent.slice(0, 500))
+  let posts: PostImportPayload[]
+  let labelRows: { slug: string; labels: string[] }[]
+  let heroRows: { slug: string; url: string | null }[]
+
+  try {
+    ;({ posts, labelRows, heroRows } = convertBloggerAtomXml(xml, {
+      reverse,
+      limit,
+      slugPrefix,
+      omitImages,
+      seoMetaTitle,
+      forceDraft: draft,
+      respectBloggerStatus: true,
+      categoryMap,
+      flat,
+      tenant,
+      authorId,
+    }))
+  } catch (e) {
+    console.error(e instanceof Error ? e.message : e)
     process.exit(1)
-  }
-
-  let entries = [...doc.getElementsByTagNameNS(ATOM_NS, 'entry')]
-  if (entries.length === 0) {
-    entries = [...doc.getElementsByTagName('entry')]
-  }
-
-  if (entries.length === 0) {
-    console.error('No <entry> elements found. Is this an Atom feed?')
-    process.exit(1)
-  }
-
-  if (reverse) entries = [...entries].reverse()
-  if (typeof limit === 'number' && limit > 0) {
-    entries = entries.slice(0, limit)
-  }
-
-  const slugUsed = new Map<string, number>()
-  const posts: PostPayload[] = []
-  const labelRows: { slug: string; labels: string[] }[] = []
-  const heroRows: { slug: string; url: string | null }[] = []
-
-  const lexicalOpts: HtmlToLexicalOptions = { omitImages }
-
-  for (const entry of entries) {
-    const titleEl = childEl(entry, 'title')
-    const title = innerHtmlOrText(titleEl)
-    if (!title) continue
-
-    const publishedEl = childEl(entry, 'published')
-    const publishedAt = publishedEl?.textContent?.trim() || null
-
-    const summaryEl = childEl(entry, 'summary')
-    const summaryPlain = innerHtmlOrText(summaryEl)
-
-    const contentEl = childEl(entry, 'content')
-    let html = htmlInner(contentEl)
-    if (!html.trim()) html = htmlInner(summaryEl)
-
-    const href = alternateHref(entry)
-    let baseSlug = href ? slugFromUrl(href) : slugFromUrl(title.replace(/\s+/g, '-'))
-    if (slugPrefix) {
-      const p = slugPrefix.replace(/-+$/, '').replace(/^-+/, '')
-      baseSlug = p ? `${p}-${baseSlug}` : baseSlug
-    }
-    const slug = ensureUniqueSlug(baseSlug, slugUsed)
-
-    const labels = entryCategoryTerms(entry)
-    if (labels.length) labelRows.push({ slug, labels })
-
-    const heroUrl = firstImageSrcFromHtml(html)
-    heroRows.push({ slug, url: heroUrl })
-
-    const docPayload: PostPayload = {
-      title,
-      slug,
-      _status: draft ? 'draft' : 'published',
-      publishedAt,
-      content: htmlToLexicalContent(html, lexicalOpts),
-    }
-
-    if (typeof tenant === 'number' && !Number.isNaN(tenant)) {
-      docPayload.tenant = tenant
-    }
-
-    if (typeof authorId === 'number' && !Number.isNaN(authorId)) {
-      docPayload.authors = [authorId]
-    }
-
-    const catIds = mapLabelsToCategoryIds(labels, categoryMap)
-    if (catIds.length) docPayload.categories = catIds
-
-    const meta: NonNullable<PostPayload['meta']> = {}
-    if (summaryPlain) meta.description = summaryPlain.slice(0, 500)
-    if (seoMetaTitle) meta.title = title
-    if (Object.keys(meta).length) docPayload.meta = meta
-
-    posts.push(docPayload)
   }
 
   const outPath = path.resolve(process.cwd(), out)
@@ -744,9 +913,16 @@ Options:
   )
 }
 
-try {
-  main()
-} catch (e) {
-  console.error(e)
-  process.exit(1)
+const runCli =
+  typeof process.argv[1] === 'string' &&
+  (process.argv[1].includes('blogger-atom-to-posts-json') ||
+    process.argv[1].endsWith('blogger-atom-to-posts-json.ts'))
+
+if (runCli) {
+  try {
+    main()
+  } catch (e) {
+    console.error(e)
+    process.exit(1)
+  }
 }

@@ -43,7 +43,6 @@ next-env.d.ts
 /media
 
 # Playwright
-node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
@@ -52,3 +51,10 @@ node_modules/
 # OpenNext
 .open-next
 .wrangler
+
+# Claude Code
+.claude/worktrees/
+.claude/settings.local.json
+
+# Local probes / scratch
+.consolidate_probe

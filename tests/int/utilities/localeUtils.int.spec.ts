@@ -1,3 +1,14 @@
+/**
+ * localeUtils tests — BCP 47 resolution + fallback.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @rfc 4647 matching-of-language-tags
+ * @standard ECMA-402 internationalization-api
+ * @see docs/STANDARDS.md §6 §7
+ */
+
 import { describe, it, expect } from 'vitest'
 import {
   resolveLocale,
@@ -6,7 +17,7 @@ import {
   ensureValidLocale,
   getSupportedLocales,
   isDefaultLocale,
-} from '@/utilities/localeUtils'
+} from '@/standards/bcp-47/locale-utils'
 
 describe('localeUtils', () => {
   describe('resolveLocale', () => {

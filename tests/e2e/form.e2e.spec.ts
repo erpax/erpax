@@ -1,9 +1,15 @@
 import { test, expect } from '@playwright/test'
 
 /**
- * Form Builder E2E Tests
- * 
- * Verifies form submissions, validation, and confirmation flow.
+ * Form Builder E2E Tests — submissions, validation, confirmation flow.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing system-test-level
+ * @standard W3C WebDriver-BiDi browser-automation
+ * @standard W3C HTML5 form-validation
+ * @rfc 5322 internet-message-format email-field
+ * @compliance WCAG-2.1 level-AA accessibility
+ * @compliance GDPR Art.6(1)(a) consent
+ * @see docs/STANDARDS.md §3 §6 §7
  */
 test.describe('Form Builder', () => {
   test.describe.configure({ timeout: 60_000 })

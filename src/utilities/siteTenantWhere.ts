@@ -1,3 +1,12 @@
+/**
+ * Tenant-scope `Where` clause builders for the public storefront.
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control tenant-isolation
+ * @security ISO-27001 A.5.23 information-security-for-cloud-services
+ * @security ISO-27002 §8.3 information-access-restriction
+ * @see src/standards/nist-incits-359/
+ */
+
 import type { Where } from 'payload'
 
 /** Matches documents for `NEXT_PUBLIC_SITE_TENANT_SLUG` (same pattern as CMS pages). */

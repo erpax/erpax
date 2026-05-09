@@ -1,6 +1,6 @@
 import type { SupportedLocale } from '@/i18n/localization'
 
-import { getCachedGlobal } from '@/utilities/getGlobals'
+import { getCachedGlobal } from '@/standards/rfc-9110/get-globals'
 import { Link } from '@/i18n/routing'
 import React from 'react'
 

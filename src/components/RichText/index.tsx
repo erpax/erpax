@@ -1,3 +1,14 @@
+/**
+ * RichText — Lexical serialized state → HTML / React tree.
+ *
+ * @standard W3C HTML5 Living Standard rich-text-output
+ * @standard CommonMark 0.31 markdown-fallback
+ * @standard schema.org HTMLRichText
+ * @compliance WCAG-2.1 §1.3.1 info-and-relationships
+ * @compliance WCAG-2.1 §1.4.10 reflow
+ * @see src/components/README.md
+ */
+
 import { MediaBlock } from '@/components/blocks/MediaBlock/Component'
 import {
   DefaultNodeTypes,
@@ -20,6 +31,7 @@ import type {
 } from '@/payload-types'
 import { BannerBlock } from '@/components/blocks/Banner/Component'
 import { CallToActionBlock } from '@/components/blocks/CallToAction/Component'
+import { codedFromRegistry, ERR } from '@/utilities/errors'
 import { cn } from '@/utilities/ui'
 
 type NodeTypes =
@@ -29,7 +41,7 @@ type NodeTypes =
 const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
   const { value, relationTo } = linkNode.fields.doc!
   if (typeof value !== 'object') {
-    throw new Error('Expected value to be an object')
+    throw codedFromRegistry(ERR.INTERNAL_RICHTEXT_VALUE)
   }
   const slug = value.slug
   return relationTo === 'posts' ? `/posts/${slug}` : `/${slug}`

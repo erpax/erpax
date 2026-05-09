@@ -1,0 +1,152 @@
+import type { CollectionConfig } from 'payload'import { createAccountingCollection, createGLAccountFields } from '../factories';
+import { multiTenancyField, currencyField, statusField, notesField } from '../fields/index';
+import { depreciationHook } from '../hooks';
+import {
+  calculateDepreciableBase,
+  calculateStraightLineDepreciation,
+  calculateBookValue,
+} from '../utilities';
+
+/**
+ * Fixed Assets — capitalized PP&E with depreciation and book-value tracking.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time acquisition-date in-service-date
+ * @accounting IFRS IAS-16 property-plant-and-equipment
+ * @accounting IFRS IAS-36 impairment-of-assets
+ * @accounting US-GAAP ASC-360 property-plant-and-equipment
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §4.2
+ */
+const FixedAssets: CollectionConfig = {
+  ...createAccountingCollection(
+    {
+      slug: 'fixed-assets',
+      labels: { singular: 'Fixed Asset', plural: 'Fixed Assets' },
+      useAsTitle: 'assetNumber',
+      defaultColumns: ['assetNumber', 'description', 'assetCategory', 'acquisitionDate', 'assetCost', 'status'],
+      beforeChangeHooks: [
+        async ({ data }) => {
+          // Calculate depreciable base
+          if (data.assetCost !== undefined && data.residualValue !== undefined) {
+            data.depreciableBase = calculateDepreciableBase(data.assetCost, data.residualValue);
+          }
+
+          // Calculate annual depreciation for straight-line method
+          if (data.depreciationMethod === 'straight_line' && data.depreciableBase !== undefined && data.usefulLifeYears) {
+            data.annualDepreciationAmount = calculateStraightLineDepreciation(data.depreciableBase, data.usefulLifeYears);
+          }
+
+          // Calculate book value
+          if (data.assetCost !== undefined && data.accumulatedDepreciation !== undefined) {
+            data.bookValue = calculateBookValue(data.assetCost, data.accumulatedDepreciation);
+          }
+
+          // Set depreciation start date if not provided
+          if (!data.depreciationStartDate && data.acquisitionDate) {
+            data.depreciationStartDate = data.acquisitionDate;
+          }
+
+          return data;
+        },
+      ],
+    },
+    () => [
+      multiTenancyField(),
+      { name: 'assetNumber', type: 'text', required: true, unique: true, index: true },
+      { name: 'description', type: 'text', required: true },
+
+      // Asset classification
+      {
+        name: 'assetCategory',
+        type: 'select',
+        required: true,
+        options: [
+          { label: 'Land', value: 'land' },
+          { label: 'Building', value: 'building' },
+          { label: 'Equipment', value: 'equipment' },
+          { label: 'Machinery', value: 'machinery' },
+          { label: 'Vehicles', value: 'vehicles' },
+          { label: 'Furniture & Fixtures', value: 'furniture_fixtures' },
+          { label: 'Leasehold Improvements', value: 'leasehold_improvements' },
+          { label: 'Software', value: 'software' },
+          { label: 'Intangible Assets', value: 'intangible_assets' },
+          { label: 'Other', value: 'other' },
+        ],
+      },
+
+      // Acquisition details
+      { name: 'acquisitionDate', type: 'date', required: true },
+      { name: 'assetCost', type: 'number', required: true, min: 0 },
+      currencyField('EUR'),
+      { name: 'supplier', type: 'relationship', relationTo: 'addresses', admin: { description: 'Asset supplier/vendor' } },
+      { name: 'purchaseOrder', type: 'text', admin: { description: 'Reference PO number' } },
+
+      // Physical location
+      { name: 'location', type: 'text', admin: { description: 'Physical location/department' } },
+      { name: 'serialNumber', type: 'text', unique: true },
+      { name: 'barcode', type: 'text', unique: true },
+
+      // Depreciation configuration
+      {
+        name: 'depreciationMethod',
+        type: 'select',
+        defaultValue: 'straight_line',
+        options: [
+          { label: 'Straight Line', value: 'straight_line' },
+          { label: 'Declining Balance', value: 'declining_balance' },
+          { label: 'Double Declining Balance', value: 'double_declining_balance' },
+          { label: 'Units of Activity', value: 'units_of_activity' },
+          { label: 'Sum of Years Digits', value: 'sum_of_years_digits' },
+        ],
+      },
+      { name: 'usefulLifeYears', type: 'number', required: true, min: 0 },
+      { name: 'residualValue', type: 'number', defaultValue: 0, min: 0, admin: { description: 'Expected residual/salvage value' } },
+      { name: 'depreciableBase', type: 'number', admin: { disabled: true, description: 'Cost - Residual Value' } },
+      { name: 'annualDepreciationAmount', type: 'number', defaultValue: 0, admin: { disabled: true } },
+      { name: 'accumulatedDepreciation', type: 'number', defaultValue: 0, admin: { disabled: true } },
+      { name: 'bookValue', type: 'number', defaultValue: 0, admin: { disabled: true, description: 'Cost - Accumulated Depreciation' } },
+      { name: 'depreciationStartDate', type: 'date', admin: { description: 'Date depreciation begins' } },
+      { name: 'lastDepreciationDate', type: 'date', admin: { disabled: true } },
+
+      // Units of activity method
+      { name: 'totalUnitsExpected', type: 'number', admin: { description: 'Total units expected to produce' } },
+      { name: 'unitsProducedToDate', type: 'number', defaultValue: 0, admin: { description: 'Units produced so far' } },
+
+      // GL Account mapping
+      ...createGLAccountFields([
+        { name: 'assetAccount', description: 'Fixed asset GL account (1600+)' },
+        { name: 'accumulatedDepreciationAccount', description: 'Accumulated depreciation contra-asset account' },
+        { name: 'depreciationExpenseAccount', description: 'Depreciation expense account (6000+)' },
+      ]),
+
+      // Status & lifecycle
+      statusField(
+        [
+          { label: 'Active', value: 'active' },
+          { label: 'Inactive', value: 'inactive' },
+          { label: 'Fully Depreciated', value: 'fully_depreciated' },
+          { label: 'Disposed', value: 'disposed' },
+          { label: 'Held for Sale', value: 'held_for_sale' },
+        ],
+        'active',
+      ),
+      { name: 'disposalDate', type: 'date', admin: { description: 'Date when asset was disposed' } },
+      { name: 'disposalProceeds', type: 'number', admin: { description: 'Amount received from disposal' } },
+      { name: 'gainOnDisposal', type: 'number', admin: { disabled: true, description: 'Gain or loss on disposal' } },
+
+      // Maintenance tracking
+      { name: 'lastMaintenanceDate', type: 'date' },
+      { name: 'nextMaintenanceDate', type: 'date' },
+      { name: 'maintenanceNotes', type: 'textarea' },
+
+      notesField(),
+    ],
+  ) as CollectionConfig,
+  hooks: {
+    ...((createAccountingCollection as any)({} as any, () => []) as any).hooks,
+    afterChange: [depreciationHook],
+  },
+};
+
+export default FixedAssets;

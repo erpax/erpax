@@ -1,3 +1,14 @@
+/**
+ * Tenant-domain deep-slug page renderer.
+ *
+ * @standard schema.org WebPage
+ * @rfc 3986 uniform-resource-identifier
+ * @rfc 9110 http-semantics
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @compliance WCAG-2.1 level-AA
+ * @see src/app/README.md
+ */
+
 import type { Where } from 'payload'
 
 import configPromise from '@payload-config'
@@ -8,7 +19,6 @@ import React from 'react'
 
 import { RenderTenantPage } from '@/components/RenderTenantPage'
 
-// eslint-disable-next-line no-restricted-exports
 export default async function Page({
   params: paramsPromise,
 }: {
@@ -29,7 +39,11 @@ export default async function Page({
   try {
     const tenantsQuery = await payload.find({
       collection: 'tenants',
+      depth: 0,
+      limit: 1,
       overrideAccess: false,
+      pagination: false,
+      select: { id: true },
       user,
       where: {
         domain: {
@@ -47,7 +61,7 @@ export default async function Page({
         )}`,
       )
     }
-  } catch (e) {
+  } catch {
     // If the query fails, it means the user did not have access to query on the domain field
     // Show the login view
     redirect(
@@ -85,7 +99,9 @@ export default async function Page({
 
   const pageQuery = await payload.find({
     collection: 'pages',
+    limit: 1,
     overrideAccess: false,
+    pagination: false,
     user,
     where: {
       and: [

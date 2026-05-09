@@ -1,0 +1,139 @@
+/**
+ * @erpax/auth/access — reusable access-control predicates (multi-tenant + RBAC).
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @standard NIST SP-800-162 attribute-based-access-control
+ * @security ISO-27001 A.5.15 access-control
+ * @security ISO-27001 A.5.18 access-rights
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.15 access-control
+ * @security ISO-27002 §5.4 segregation-of-duties
+ * @standard OWASP-ASVS V4 access-control
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §4.4
+ */
+
+import type { Access, PayloadRequest } from 'payload'
+import type { UserContext, UserRole, AccessResult } from './types'
+
+/**
+ * Extract user context from request.
+ *
+ * Slice CCC: derives `tenant` from the canonical `req.user.tenants[]`
+ * array (multi-tenant plugin convention) rather than the fictional
+ * `req.user.host` field. Picks the first tenant; multi-tenant users
+ * with several memberships should switch active tenant via the
+ * payload-tenant cookie (handled by `getTenantFromRequest`).
+ */
+export function getUserContext(req: PayloadRequest): UserContext | null {
+  if (!req.user) return null
+
+  const tenantsArr = (req.user as unknown as { tenants?: Array<{ tenant?: number | string }> }).tenants
+  const firstTenantRef = tenantsArr?.[0]?.tenant
+  const tenant =
+    typeof firstTenantRef === 'number' || typeof firstTenantRef === 'string'
+      ? String(firstTenantRef)
+      : ''
+
+  return {
+    id: String(req.user.id),
+    tenant,
+    roles: (req.user.roles as UserRole[]) || [],
+  }
+}
+
+/**
+ * Check if user has required role
+ */
+export function hasRole(user: UserContext | null, ...requiredRoles: UserRole[]): boolean {
+  if (!user) return false
+  return requiredRoles.some((role) => user.roles.includes(role))
+}
+
+/**
+ * Multi-tenant read access (everyone can read their tenant's data)
+ * PATTERN: Applied to all collections for read access
+ */
+export const multiTenantRead: Access = async ({ req }) => {
+  const user = getUserContext(req)
+  if (!user) return false
+
+  return { tenant: { equals: user.tenant } }
+}
+
+/**
+ * Admin-only access (create/update/delete)
+ * PATTERN: Used for system-critical collections (Tenants, Roles, Users)
+ */
+export const adminOnly: Access = async ({ req }) => {
+  const user = getUserContext(req)
+  return hasRole(user, 'admin')
+}
+
+/**
+ * Admin or Accountant access
+ * PATTERN: Used for financial collections (Accounts, Equations, Entries, Payments)
+ */
+export const adminOrAccountant: Access = async ({ req }) => {
+  const user = getUserContext(req)
+  if (!hasRole(user, 'admin', 'accountant')) return false
+
+  return { tenant: { equals: user.tenant } }
+}
+
+/**
+ * Tenant-scoped admin access (admins can manage their own tenant's data)
+ * PATTERN: Used for collection management (Addresses, Items, Invoices)
+ */
+export const tenantAdmin: Access = async ({ req }) => {
+  const user = getUserContext(req)
+  if (!hasRole(user, 'admin')) return false
+
+  return { tenant: { equals: user.tenant } }
+}
+
+/**
+ * Builder: Combine multiple access rules with AND logic
+ * PATTERN: For complex access requirements
+ */
+export function andAccess(...accessFns: Access[]): Access {
+  return async (args) => {
+    for (const fn of accessFns) {
+      const result = await fn(args)
+      if (result === false) return false
+    }
+    return true
+  }
+}
+
+/**
+ * Builder: Create scoped access (returns query with host filter)
+ * PATTERN: For all scoped collections
+ */
+export function scopedAccess(additionalWhere?: Record<string, any>): Access {
+  return async ({ req }) => {
+    const user = getUserContext(req)
+    if (!user) return false
+
+    const query: AccessResult = { tenant: { equals: user.tenant } }
+
+    if (additionalWhere) {
+      return { and: [query, additionalWhere] }
+    }
+
+    return query
+  }
+}
+
+/**
+ * Builder: Role-gated scoped access
+ * PATTERN: For role-restricted collections
+ */
+export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
+  return async ({ req }) => {
+    const user = getUserContext(req)
+    if (!hasRole(user, ...allowedRoles)) return false
+
+    return { tenant: { equals: user.tenant } }
+  }
+}

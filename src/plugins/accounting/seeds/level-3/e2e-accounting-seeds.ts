@@ -1,0 +1,988 @@
+/**
+ * Level 3: E2E Test Seeds for Accounting Plugin
+ * Complete accounting workflows with advanced scenarios
+ * Setup time: 5-15 seconds
+ *
+ * Includes:
+ * - Full accounting cycles (GL, AR, AP, reconciliation)
+ * - Multi-entity scenarios with consolidation
+ * - Complex edge cases (negative balances, rounding, prior adjustments)
+ * - Large transaction volumes and concurrent scenarios
+ */
+
+import type { Payload } from 'payload';
+import { TestSeedFactory, type SeedResult } from '@/testing';
+
+/**
+ * Full Accounting Cycle Seed
+ * Complete one-month accounting workflow including:
+ * - GL transactions (20-30 entries)
+ * - Invoice creation and AR aging
+ * - Expense recognition and AP aging
+ * - Period-end reconciliation
+ * - Adjusting entries
+ * - Trial balance verification
+ * - Financial statement generation
+ */
+export class FullAccountingCycleSeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    // Call parent validation first
+    await super.validateData(collection, data);
+
+    // Domain-specific validation
+    if (collection === 'journal-entries') {
+      const debit = data.debitAmount || 0;
+      const credit = data.creditAmount || 0;
+      if (Math.abs(debit - credit) > 0.01) {
+        throw new Error('Journal entry: debits must equal credits');
+      }
+    }
+
+    if (collection === 'invoices') {
+      if (data.totalAmount < 0) {
+        throw new Error('Invoice: totalAmount must be positive');
+      }
+      if (data.status && !['draft', 'issued', 'paid', 'cancelled'].includes(data.status)) {
+        throw new Error('Invoice: invalid status');
+      }
+    }
+
+    if (collection === 'purchase-orders') {
+      if (data.totalAmount < 0) {
+        throw new Error('PO: totalAmount must be positive');
+      }
+      if (data.status && !['draft', 'ordered', 'received', 'invoiced', 'paid'].includes(data.status)) {
+        throw new Error('PO: invalid status');
+      }
+    }
+
+    if (collection === 'trial-balances') {
+      const totalDebits = data.totalDebits || 0;
+      const totalCredits = data.totalCredits || 0;
+      if (Math.abs(totalDebits - totalCredits) > 0.01) {
+        throw new Error('Trial balance: debits must equal credits');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('e2e');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Get GL accounts
+      const accounts = await this.queryDocuments('gl-accounts', {
+        tenant: this.hostId,
+      });
+
+      if (!accounts.docs || accounts.docs.length < 5) {
+        throw new Error('Not enough GL accounts. Please seed Level 1 first.');
+      }
+
+      const baseDate = new Date();
+      baseDate.setDate(1);
+      const monthStart = baseDate.toISOString().split('T')[0];
+
+      // 1. Opening Balance
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: monthStart,
+        reference: 'JE-OPENING',
+        description: 'Opening balances',
+        debitAccountId: accounts.docs[0].id, // Cash
+        creditAccountId: accounts.docs[2].id, // Equity
+        debitAmount: 500000,
+        creditAmount: 500000,
+        status: 'posted',
+      });
+
+      // 2. Create customers and invoices
+      const customers = [];
+      const invoices = [];
+
+      for (let i = 1; i <= 5; i++) {
+        const customer = await this.createDocument('customers', {
+          tenant: this.hostId,
+          name: `Customer ${i}`,
+          code: `CUST${String(i).padStart(3, '0')}`,
+          status: 'active',
+          creditLimit: 50000,
+        });
+        customers.push(customer);
+
+        // Create invoice for customer
+        const invoiceDate = new Date(baseDate);
+        invoiceDate.setDate(invoiceDate.getDate() + i);
+
+        const invoice = await this.createDocument('invoices', {
+          tenant: this.hostId,
+          customerId: customer.id,
+          invoiceNumber: `INV-${String(i).padStart(4, '0')}`,
+          invoiceDate: invoiceDate.toISOString().split('T')[0],
+          dueDate: new Date(invoiceDate.getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+          totalAmount: 10000 + i * 1000,
+          currency: 'EUR',
+          status: 'issued',
+        });
+        invoices.push(invoice);
+
+        // AR transaction
+        await this.createDocument('journal-entries', {
+          tenant: this.hostId,
+          entryDate: invoiceDate.toISOString().split('T')[0],
+          reference: `JE-AR-${String(i).padStart(3, '0')}`,
+          description: `Invoice ${invoice.invoiceNumber} from ${customer.name}`,
+          debitAccountId: accounts.docs[0].id, // Receivables (using Cash for demo)
+          creditAccountId: accounts.docs[3].id, // Revenue
+          debitAmount: invoice.totalAmount,
+          creditAmount: invoice.totalAmount,
+          status: 'posted',
+        });
+      }
+
+      // 3. Create vendors and purchase orders
+      const vendors = [];
+      const pos = [];
+
+      for (let i = 1; i <= 5; i++) {
+        const vendor = await this.createDocument('vendors', {
+          tenant: this.hostId,
+          name: `Vendor ${i}`,
+          code: `VEND${String(i).padStart(3, '0')}`,
+          status: 'active',
+        });
+        vendors.push(vendor);
+
+        // Create PO for vendor
+        const poDate = new Date(baseDate);
+        poDate.setDate(poDate.getDate() + i);
+
+        const po = await this.createDocument('purchase-orders', {
+          tenant: this.hostId,
+          vendorId: vendor.id,
+          poNumber: `PO-${String(i).padStart(4, '0')}`,
+          poDate: poDate.toISOString().split('T')[0],
+          dueDate: new Date(poDate.getTime() + 15 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+          totalAmount: 5000 + i * 500,
+          currency: 'USD',
+          status: 'ordered',
+        });
+        pos.push(po);
+
+        // AP transaction
+        await this.createDocument('journal-entries', {
+          tenant: this.hostId,
+          entryDate: poDate.toISOString().split('T')[0],
+          reference: `JE-AP-${String(i).padStart(3, '0')}`,
+          description: `PO ${po.poNumber} from ${vendor.name}`,
+          debitAccountId: accounts.docs[4].id, // Expenses
+          creditAccountId: accounts.docs[1].id, // Payables (using Payables for demo)
+          debitAmount: po.totalAmount,
+          creditAmount: po.totalAmount,
+          status: 'posted',
+        });
+      }
+
+      // 4. Additional GL transactions (20-30 entries total)
+      const transactionDates = [];
+      for (let i = 5; i <= 15; i++) {
+        const txDate = new Date(baseDate);
+        txDate.setDate(txDate.getDate() + i);
+        transactionDates.push(txDate.toISOString().split('T')[0]);
+      }
+
+      // Create various transaction types
+      for (let i = 0; i < transactionDates.length; i++) {
+        // Salary expenses
+        if (i % 3 === 0) {
+          await this.createDocument('journal-entries', {
+            tenant: this.hostId,
+            entryDate: transactionDates[i],
+            reference: `JE-SALARY-${String(i).padStart(3, '0')}`,
+            description: 'Salary expense',
+            debitAccountId: accounts.docs[4].id, // Expenses
+            creditAccountId: accounts.docs[0].id, // Cash
+            debitAmount: 15000,
+            creditAmount: 15000,
+            status: 'posted',
+          });
+        }
+
+        // Rent expenses
+        if (i % 3 === 1) {
+          await this.createDocument('journal-entries', {
+            tenant: this.hostId,
+            entryDate: transactionDates[i],
+            reference: `JE-RENT-${String(i).padStart(3, '0')}`,
+            description: 'Rent expense',
+            debitAccountId: accounts.docs[4].id, // Expenses
+            creditAccountId: accounts.docs[0].id, // Cash
+            debitAmount: 5000,
+            creditAmount: 5000,
+            status: 'posted',
+          });
+        }
+
+        // Utility expenses
+        if (i % 3 === 2) {
+          await this.createDocument('journal-entries', {
+            tenant: this.hostId,
+            entryDate: transactionDates[i],
+            reference: `JE-UTIL-${String(i).padStart(3, '0')}`,
+            description: 'Utility expense',
+            debitAccountId: accounts.docs[4].id, // Expenses
+            creditAccountId: accounts.docs[0].id, // Cash
+            debitAmount: 2000,
+            creditAmount: 2000,
+            status: 'posted',
+          });
+        }
+      }
+
+      // 5. Depreciation (adjusting entry)
+      const lastDay = new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0);
+      const lastDayStr = lastDay.toISOString().split('T')[0];
+
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: lastDayStr,
+        reference: 'JE-DEPR',
+        description: 'Monthly depreciation',
+        debitAccountId: accounts.docs[4].id, // Expenses
+        creditAccountId: accounts.docs[0].id, // Accumulated depreciation (using Cash for demo)
+        debitAmount: 5000,
+        creditAmount: 5000,
+        status: 'posted',
+      });
+
+      // 6. Accrual for unrecorded expenses
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: lastDayStr,
+        reference: 'JE-ACCR',
+        description: 'Accrual for unrecorded expenses',
+        debitAccountId: accounts.docs[4].id, // Expenses
+        creditAccountId: accounts.docs[1].id, // Payables
+        debitAmount: 10000,
+        creditAmount: 10000,
+        status: 'posted',
+      });
+
+      // 7. Prepaid expenses
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: lastDayStr,
+        reference: 'JE-PREP',
+        description: 'Record prepaid expense',
+        debitAccountId: accounts.docs[0].id, // Cash (prepaid)
+        creditAccountId: accounts.docs[4].id, // Expenses
+        debitAmount: 3000,
+        creditAmount: 3000,
+        status: 'posted',
+      });
+
+      // 8. Create trial balance
+      const _trialBalance = await this.createDocument('trial-balances', {
+        tenant: this.hostId,
+        periodDate: lastDayStr,
+        totalDebits: 500000 + 50000 + 25000 + 36000 + 13000 + 10000 + 3000,
+        totalCredits: 500000 + 50000 + 25000 + 36000 + 13000 + 10000 + 3000,
+        status: 'unapproved',
+      });
+
+      // 9. Create financial statements
+      const _incomeStatement = await this.createDocument('financial-statements', {
+        tenant: this.hostId,
+        statementType: 'income-statement',
+        periodStartDate: monthStart,
+        periodEndDate: lastDayStr,
+        currency: 'EUR',
+        revenue: 50000,
+        expenses: 36000,
+        netIncome: 14000,
+        status: 'draft',
+      });
+
+      const _balanceSheet = await this.createDocument('financial-statements', {
+        tenant: this.hostId,
+        statementType: 'balance-sheet',
+        periodDate: lastDayStr,
+        currency: 'EUR',
+        totalAssets: 500000 + 50000,
+        totalLiabilities: 100000,
+        totalEquity: 450000,
+        status: 'draft',
+      });
+
+      // 10. Bank reconciliation
+      const _bankRecon = await this.createDocument('bank-reconciliations', {
+        tenant: this.hostId,
+        reconciliationDate: lastDayStr,
+        bankStatementBalance: 450000,
+        bookBalance: 450000,
+        status: 'completed',
+      });
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'e2e',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Multi-Entity Seed
+ */
+export class MultiEntitySeed extends TestSeedFactory {
+  private parentHostId: string = '';
+
+  constructor(payload: Payload, parentHostId: string) {
+    super(payload);
+    this.parentHostId = parentHostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    await super.validateData(collection, data);
+
+    if (collection === 'intercompany-transactions') {
+      if (!data.fromHostId || !data.toHostId) {
+        throw new Error('Intercompany: both fromHostId and toHostId required');
+      }
+      if (data.fromHostId === data.toHostId) {
+        throw new Error('Intercompany: cannot be with same entity');
+      }
+      if ((data.debitAmount || 0) !== (data.creditAmount || 0)) {
+        throw new Error('Intercompany: debits must equal credits');
+      }
+    }
+
+    if (collection === 'consolidation-eliminations') {
+      if (!data.eliminationType) {
+        throw new Error('Elimination: eliminationType required');
+      }
+      if ((data.debitAmount || 0) !== (data.creditAmount || 0)) {
+        throw new Error('Elimination: debits must equal credits');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('e2e');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      const entityIds: string[] = [];
+      const baseDate = new Date();
+      baseDate.setDate(1);
+      const monthStart = baseDate.toISOString().split('T')[0];
+
+      // 1. Create 3 subsidiary entities
+      for (let i = 1; i <= 3; i++) {
+        const entity = await this.createDocument('hosts', {
+          name: `Subsidiary ${i}`,
+          code: `ENTITY${i}`,
+          parentHostId: this.parentHostId,
+          status: 'active',
+        });
+        entityIds.push(entity.id);
+      }
+
+      // 2. Create GL accounts for each entity
+      const chartOfAccounts = [
+        { number: '1000', name: 'Cash', type: 'asset' },
+        { number: '1500', name: 'Receivables from affiliate', type: 'asset' },
+        { number: '2000', name: 'Accounts Payable', type: 'liability' },
+        { number: '2500', name: 'Payables to affiliate', type: 'liability' },
+        { number: '3000', name: 'Equity', type: 'equity' },
+        { number: '4000', name: 'Revenue', type: 'revenue' },
+        { number: '4100', name: 'Intercompany revenue', type: 'revenue' },
+        { number: '5000', name: 'Expenses', type: 'expense' },
+        { number: '5100', name: 'Intercompany expenses', type: 'expense' },
+      ];
+
+      const accountsByEntity: Record<string, any[]> = {};
+
+      for (const entityId of entityIds) {
+        const accounts = [];
+        for (const account of chartOfAccounts) {
+          const glAccount = await this.createDocument('gl-accounts', {
+            tenant: entityId,
+            accountNumber: account.number,
+            accountName: account.name,
+            accountType: account.type,
+            balance: 0,
+            status: 'active',
+          });
+          accounts.push(glAccount);
+        }
+        accountsByEntity[entityId] = accounts;
+      }
+
+      // 3. Create opening balances for each entity
+      for (let i = 0; i < entityIds.length; i++) {
+        const entityId = entityIds[i];
+        const accounts = accountsByEntity[entityId];
+
+        await this.createDocument('journal-entries', {
+          tenant: entityId,
+          entryDate: monthStart,
+          reference: `JE-OPENING-${i + 1}`,
+          description: `Opening balance for ${i + 1}`,
+          debitAccountId: accounts[0].id,
+          creditAccountId: accounts[4].id,
+          debitAmount: 100000,
+          creditAmount: 100000,
+          status: 'posted',
+        });
+      }
+
+      // 4. Create inter-company transactions
+      for (let i = 0; i < entityIds.length - 1; i++) {
+        const fromEntityId = entityIds[i];
+        const toEntityId = entityIds[i + 1];
+        const fromAccounts = accountsByEntity[fromEntityId];
+        const toAccounts = accountsByEntity[toEntityId];
+
+        const txDate = new Date(baseDate);
+        txDate.setDate(txDate.getDate() + 10);
+        const txDateStr = txDate.toISOString().split('T')[0];
+
+        const amount = 50000;
+
+        await this.createDocument('journal-entries', {
+          tenant: fromEntityId,
+          entryDate: txDateStr,
+          reference: `JE-IC-${i + 1}`,
+          description: `Intercompany sale to Entity ${i + 2}`,
+          debitAccountId: fromAccounts[1].id,
+          creditAccountId: fromAccounts[6].id,
+          debitAmount: amount,
+          creditAmount: amount,
+          status: 'posted',
+        });
+
+        await this.createDocument('journal-entries', {
+          tenant: toEntityId,
+          entryDate: txDateStr,
+          reference: `JE-IC-${i + 2}`,
+          description: `Intercompany purchase from Entity ${i + 1}`,
+          debitAccountId: toAccounts[8].id,
+          creditAccountId: toAccounts[3].id,
+          debitAmount: amount,
+          creditAmount: amount,
+          status: 'posted',
+        });
+
+        await this.createDocument('intercompany-transactions', {
+          fromHostId: fromEntityId,
+          toHostId: toEntityId,
+          transactionDate: txDateStr,
+          reference: `IC-${String(i + 1).padStart(3, '0')}`,
+          description: `IC sale from Entity ${i + 1} to Entity ${i + 2}`,
+          debitAmount: amount,
+          creditAmount: amount,
+          status: 'posted',
+        });
+      }
+
+      // 5. Create consolidation trial balance
+      let consolidatedDebits = 0;
+      let consolidatedCredits = 0;
+
+      for (const entityId of entityIds) {
+        const _trialBalance = await this.createDocument('trial-balances', {
+          tenant: entityId,
+          periodDate: new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0).toISOString().split('T')[0],
+          totalDebits: 100000 + 50000,
+          totalCredits: 100000 + 50000,
+          status: 'unapproved',
+        });
+
+        consolidatedDebits += 100000 + 50000;
+        consolidatedCredits += 100000 + 50000;
+      }
+
+      // 6. Create elimination entries
+      const lastDay = new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0).toISOString().split('T')[0];
+
+      for (let i = 0; i < entityIds.length - 1; i++) {
+        const fromEntityId = entityIds[i];
+        const toEntityId = entityIds[i + 1];
+        const amount = 50000;
+
+        await this.createDocument('consolidation-eliminations', {
+          consolidationDate: lastDay,
+          eliminationType: 'intercompany-revenue-expense',
+          fromHostId: fromEntityId,
+          toHostId: toEntityId,
+          debitAmount: amount,
+          creditAmount: amount,
+          description: `Eliminate IC revenue/expense between Entity ${i + 1} and ${i + 2}`,
+          status: 'posted',
+        });
+
+        await this.createDocument('consolidation-eliminations', {
+          consolidationDate: lastDay,
+          eliminationType: 'intercompany-receivables-payables',
+          fromHostId: fromEntityId,
+          toHostId: toEntityId,
+          debitAmount: amount,
+          creditAmount: amount,
+          description: `Eliminate IC A/R and A/P between Entity ${i + 1} and ${i + 2}`,
+          status: 'posted',
+        });
+      }
+
+      // 7. Create consolidated trial balance
+      const _consolidatedTrialBalance = await this.createDocument('trial-balances', {
+        tenant: this.parentHostId,
+        periodDate: lastDay,
+        isConsolidated: true,
+        totalDebits: consolidatedDebits,
+        totalCredits: consolidatedCredits,
+        status: 'unapproved',
+      });
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'e2e',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Real-World Scenario Seed
+ */
+export class RealWorldScenarioSeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    await super.validateData(collection, data);
+
+    if (collection === 'journal-entries') {
+      const debit = data.debitAmount || 0;
+      const credit = data.creditAmount || 0;
+      if (Math.abs(debit - credit) > 0.01) {
+        throw new Error('Journal entry: debits must equal credits');
+      }
+    }
+
+    if (collection === 'prior-period-adjustments') {
+      if (!data.adjustmentDate) {
+        throw new Error('PPA: adjustmentDate required');
+      }
+      if (!data.reason) {
+        throw new Error('PPA: reason required');
+      }
+    }
+
+    if (collection === 'rounding-adjustments') {
+      if ((data.debitAmount || 0) !== (data.creditAmount || 0)) {
+        throw new Error('Rounding: debits must equal credits');
+      }
+      if (!data.reason || !data.reason.includes('rounding')) {
+        throw new Error('Rounding: reason must specify rounding');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('e2e');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      const accounts = await this.queryDocuments('gl-accounts', {
+        tenant: this.hostId,
+      });
+
+      if (!accounts.docs || accounts.docs.length < 5) {
+        throw new Error('Not enough GL accounts. Please seed Level 1 first.');
+      }
+
+      const baseDate = new Date();
+      baseDate.setDate(1);
+      const monthStart = baseDate.toISOString().split('T')[0];
+
+      // 1. Negative balance (overdraft)
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: monthStart,
+        reference: 'JE-OVERDRAFT',
+        description: 'Bank overdraft scenario',
+        debitAccountId: accounts.docs[0].id,
+        creditAccountId: accounts.docs[2].id,
+        debitAmount: -50000,
+        creditAmount: -50000,
+        status: 'posted',
+      });
+
+      // 2. Rounding errors
+      const roundingDate = new Date(baseDate);
+      roundingDate.setDate(10);
+
+      for (let i = 1; i <= 5; i++) {
+        const amount = 1234.567 * i;
+        await this.createDocument('journal-entries', {
+          tenant: this.hostId,
+          entryDate: roundingDate.toISOString().split('T')[0],
+          reference: `JE-ROUND-${String(i).padStart(3, '0')}`,
+          description: `Transaction with rounding ${i}`,
+          debitAccountId: accounts.docs[0].id,
+          creditAccountId: accounts.docs[3].id,
+          debitAmount: Math.round(amount * 100) / 100,
+          creditAmount: Math.round(amount * 100) / 100,
+          status: 'posted',
+        });
+      }
+
+      // 3. Rounding adjustment
+      const roundingAdjustment = await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0).toISOString().split('T')[0],
+        reference: 'JE-ROUND-ADJUST',
+        description: 'Rounding adjustment for forex conversions',
+        debitAccountId: accounts.docs[0].id,
+        creditAccountId: accounts.docs[1].id,
+        debitAmount: 0.15,
+        creditAmount: 0.15,
+        status: 'posted',
+      });
+
+      await this.createDocument('rounding-adjustments', {
+        tenant: this.hostId,
+        adjustmentDate: roundingAdjustment.entryDate,
+        fromCurrency: 'USD',
+        toCurrency: 'EUR',
+        roundingAmount: 0.15,
+        reason: 'Rounding on forex conversion for multiple transactions',
+        status: 'posted',
+      });
+
+      // 4. Prior period adjustment
+      const priorAdjustDate = new Date(baseDate);
+      priorAdjustDate.setMonth(priorAdjustDate.getMonth() - 1);
+      const priorAdjustDateStr = priorAdjustDate.toISOString().split('T')[0];
+
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: monthStart,
+        reference: 'JE-PPA',
+        description: 'Prior period adjustment for inventory',
+        debitAccountId: accounts.docs[4].id,
+        creditAccountId: accounts.docs[0].id,
+        debitAmount: 25000,
+        creditAmount: 25000,
+        status: 'posted',
+      });
+
+      await this.createDocument('prior-period-adjustments', {
+        tenant: this.hostId,
+        adjustmentDate: priorAdjustDateStr,
+        postDate: monthStart,
+        reference: 'JE-PPA',
+        reason: 'Correction of prior period inventory count',
+        impactedPeriods: ['2024-12'],
+        debitAccountId: accounts.docs[4].id,
+        creditAccountId: accounts.docs[0].id,
+        amount: 25000,
+        status: 'approved',
+      });
+
+      // 5. Large transaction volume
+      for (let i = 1; i <= 50; i++) {
+        const txDate = new Date(baseDate);
+        txDate.setDate(Math.min(baseDate.getDate() + Math.floor(i / 2), 28));
+
+        const amount = 1000 + i * 10;
+
+        await this.createDocument('journal-entries', {
+          tenant: this.hostId,
+          entryDate: txDate.toISOString().split('T')[0],
+          reference: `JE-BULK-${String(i).padStart(4, '0')}`,
+          description: `Bulk transaction ${i}`,
+          debitAccountId: accounts.docs[i % 2 === 0 ? 0 : 4].id,
+          creditAccountId: accounts.docs[i % 2 === 0 ? 4 : 0].id,
+          debitAmount: amount,
+          creditAmount: amount,
+          status: 'posted',
+        });
+      }
+
+      // 6. Failed transaction scenario
+      const _failedTx = await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: monthStart,
+        reference: 'JE-FAILED',
+        description: 'Failed transaction (pending reversal)',
+        debitAccountId: accounts.docs[0].id,
+        creditAccountId: accounts.docs[3].id,
+        debitAmount: 10000,
+        creditAmount: 10000,
+        status: 'error',
+      });
+
+      await this.createDocument('journal-entries', {
+        tenant: this.hostId,
+        entryDate: monthStart,
+        reference: 'JE-REVERSAL',
+        description: 'Reversal of failed transaction JE-FAILED',
+        debitAccountId: accounts.docs[3].id,
+        creditAccountId: accounts.docs[0].id,
+        debitAmount: 10000,
+        creditAmount: 10000,
+        status: 'posted',
+      });
+
+      await this.createDocument('transaction-failures', {
+        tenant: this.hostId,
+        transactionDate: monthStart,
+        reference: 'JE-FAILED',
+        reason: 'Insufficient funds',
+        statusCode: 'INSUFFICIENT_FUNDS',
+        reversalReference: 'JE-REVERSAL',
+        status: 'resolved',
+      });
+
+      // 7. Concurrent transactions
+      const concurrentDate = new Date(baseDate);
+      concurrentDate.setDate(15);
+      const concurrentDateStr = concurrentDate.toISOString().split('T')[0];
+
+      for (let i = 1; i <= 10; i++) {
+        await this.createDocument('journal-entries', {
+          tenant: this.hostId,
+          entryDate: concurrentDateStr,
+          reference: `JE-CONCURRENT-${String(i).padStart(3, '0')}`,
+          description: `Concurrent transaction ${i}`,
+          debitAccountId: accounts.docs[i % 5 === 0 ? 0 : 4].id,
+          creditAccountId: accounts.docs[i % 5 === 0 ? 4 : 0].id,
+          debitAmount: 5000,
+          creditAmount: 5000,
+          status: 'posted',
+        });
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'e2e',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Level 3 Seed Suite - Orchestrator
+ */
+export class Level3SeedSuite extends TestSeedFactory {
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('e2e');
+    const startTime = Date.now();
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      const hosts = await this.queryDocuments('hosts', {
+        code: 'TEST_HOST',
+      });
+
+      let hostId: string;
+      if (hosts.docs && hosts.docs.length > 0) {
+        hostId = hosts.docs[0].id;
+      } else {
+        const host = await this.createDocument('hosts', {
+          name: 'Level 3 Test Host',
+          code: 'TEST_HOST_L3',
+          status: 'active',
+        });
+        hostId = host.id;
+      }
+
+      const glAccounts = await this.queryDocuments('gl-accounts', {
+        hostId,
+      });
+
+      if (!glAccounts.docs || glAccounts.docs.length < 5) {
+        const chartOfAccounts = [
+          { accountNumber: '1000', accountName: 'Cash', accountType: 'asset', balance: 0 },
+          { accountNumber: '2000', accountName: 'Accounts Payable', accountType: 'liability', balance: 0 },
+          { accountNumber: '3000', accountName: 'Equity', accountType: 'equity', balance: 0 },
+          { accountNumber: '4000', accountName: 'Revenue', accountType: 'revenue', balance: 0 },
+          { accountNumber: '5000', accountName: 'Expenses', accountType: 'expense', balance: 0 },
+        ];
+
+        for (const account of chartOfAccounts) {
+          await this.createDocument('gl-accounts', {
+            hostId,
+            ...account,
+            status: 'active',
+          });
+        }
+      }
+
+      // Run all sub-seeds
+      const cycleSeed = new FullAccountingCycleSeed(this.payload, hostId);
+      const cycleResult = await cycleSeed.seed();
+
+      if (!cycleResult.success) {
+        throw cycleResult.error || new Error('Accounting Cycle Seed failed');
+      }
+
+      if (cycleSeed['context']) {
+        for (const [collection, ids] of cycleSeed['context'].createdIds) {
+          if (!this.context.createdIds.has(collection)) {
+            this.context.createdIds.set(collection, new Set());
+          }
+          for (const id of ids) {
+            this.context.createdIds.get(collection)!.add(id);
+          }
+        }
+      }
+
+      const multiEntitySeed = new MultiEntitySeed(this.payload, hostId);
+      const multiEntityResult = await multiEntitySeed.seed();
+
+      if (!multiEntityResult.success) {
+        throw multiEntityResult.error || new Error('Multi-Entity Seed failed');
+      }
+
+      if (multiEntitySeed['context']) {
+        for (const [collection, ids] of multiEntitySeed['context'].createdIds) {
+          if (!this.context.createdIds.has(collection)) {
+            this.context.createdIds.set(collection, new Set());
+          }
+          for (const id of ids) {
+            this.context.createdIds.get(collection)!.add(id);
+          }
+        }
+      }
+
+      const scenarioSeed = new RealWorldScenarioSeed(this.payload, hostId);
+      const scenarioResult = await scenarioSeed.seed();
+
+      if (!scenarioResult.success) {
+        throw scenarioResult.error || new Error('Real-World Scenario Seed failed');
+      }
+
+      if (scenarioSeed['context']) {
+        for (const [collection, ids] of scenarioSeed['context'].createdIds) {
+          if (!this.context.createdIds.has(collection)) {
+            this.context.createdIds.set(collection, new Set());
+          }
+          for (const id of ids) {
+            this.context.createdIds.get(collection)!.add(id);
+          }
+        }
+      }
+
+      const stats = this.getStats();
+      const totalTime = Date.now() - startTime;
+
+      if (this.hooks.afterSeed) {
+        const result: SeedResult = {
+          success: true,
+          seedLevel: 'e2e',
+          totalTime,
+          itemsCreated: stats.itemsCreated,
+          collections: stats.collections,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        seedLevel: 'e2e',
+        totalTime,
+        itemsCreated: stats.itemsCreated,
+        collections: stats.collections,
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'e2e',
+        totalTime: Date.now() - startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}

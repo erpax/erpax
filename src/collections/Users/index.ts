@@ -22,11 +22,11 @@ const defaultTenantArrayField = tenantsArrayField({
       name: 'roles',
       type: 'select',
       label: localeRecord('users.tenantRoles'),
-      defaultValue: ['tenant-viewer'],
+      defaultValue: ['viewer'],
       hasMany: true,
       options: [
-        { label: localeRecord('users.tenantAdminRole'), value: 'tenant-admin' },
-        { label: localeRecord('users.tenantViewerRole'), value: 'tenant-viewer' },
+        { label: localeRecord('users.tenantAdminRole'), value: 'admin' },
+        { label: localeRecord('users.tenantViewerRole'), value: 'viewer' },
       ],
       required: true,
       access: {
@@ -36,6 +36,25 @@ const defaultTenantArrayField = tenantsArrayField({
   ],
 })
 
+/**
+ * Users — authenticated identities (cross-tenant via tenants[] membership).
+ *
+ * Email is the login identity; password storage is delegated to Payload's
+ * auth subsystem (bcrypt). Tenant membership and per-tenant roles live on
+ * the `tenants[]` array field.
+ *
+ * @rfc 5322 internet-message-format email
+ * @rfc 5321 smtp envelope
+ * @rfc 6532 internationalized-email-addresses
+ * @standard BCP-47 language-tag user-locale
+ * @security ISO-27001 A.5.16 identity-management
+ * @security ISO-27001 A.5.17 authentication-information
+ * @security ISO-27002 §8.5 secure-authentication
+ * @compliance GDPR Art.6(1)(b) lawful-basis-contract
+ * @compliance GDPR Art.32 security-of-processing
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §3
+ */
 export const Users: CollectionConfig = {
   slug: 'users',
   labels: {
@@ -92,6 +111,14 @@ export const Users: CollectionConfig = {
         { label: localeRecord('users.adminRole'), value: 'admin' },
         { label: localeRecord('users.userRole'), value: 'user' },
         { label: localeRecord('users.customerRole'), value: 'customer' },
+        // Slice BBB — added per Decision B step 4 Option A2 so the accounting
+        // plugin's existing role checks (`req.user?.roles?.includes('accountant')`,
+        // `'auditor'`) resolve. The seeds at
+        // `src/plugins/accounting/seeds/level-{1,2,3}/*.ts` already create
+        // users with these role values; before this slice they were silently
+        // dropped on write.
+        { label: 'Accountant', value: 'accountant' },
+        { label: 'Auditor', value: 'auditor' },
       ],
       access: {
         update: ({ req }) => isSuperAdmin(req.user),

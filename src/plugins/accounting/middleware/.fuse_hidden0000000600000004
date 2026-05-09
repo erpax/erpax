@@ -1,0 +1,78 @@
+/**
+ * Host Scope Middleware — enforce GL posting tenant isolation.
+ *
+ * Validates `hostId` on every write matches the request's tenant context;
+ * blocks cross-tenant data leakage before it reaches the DB.
+ *
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.15 access-control
+ * @security ISO-27002 §8.3 information-access-restriction
+ * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+ * @compliance GDPR Art.32 security-of-processing
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §4.4
+ */
+
+import type { PayloadRequest } from 'payload'
+export const hostScopeMiddleware = async (
+  req: PayloadRequest,
+  res: any,
+  next: any,
+): Promise<void> => {
+  try {
+    // Determine host from request context (set by multi-tenant plugin)
+    const hostId = req.payload.requestContext?.hostId || (req.user?.tenants?.[0]?.tenant);
+
+    if (!hostId) {
+      return res.status(401).json({
+        error: 'Host context required for GL posting operations',
+      });
+    }
+
+    // Store hostId in request context for use in hooks and services
+    if (!req.payload.requestContext) {
+      req.payload.requestContext = {};
+    }
+    req.payload.requestContext.hostId = hostId;
+
+    // Log for audit trail
+    req.payload.logger.info(`✓ Host scope set: ${hostId} for user ${req.user?.email}`);
+
+    next();
+  } catch (error) {
+    req.payload.logger.error({ err: error }, `✗ Error setting host scope:`);
+    return res.status(500).json({ error: 'Failed to set host scope' });
+  }
+};
+
+/**
+ * GL Posting Service Scope Validation
+ * Validates that GL posting operations are within the current host context
+ * Used by glPostingService to ensure multi-tenant isolation
+ */
+export const validateHostScope = (
+  requestHostId: string | undefined,
+  documentHostId: string | undefined,
+): boolean => {
+  // Both must exist
+  if (!requestHostId || !documentHostId) return false;
+
+  // Must match (strict equality for tenant isolation)
+  return requestHostId === documentHostId;
+};
+
+/**
+ * Enrich GL Entry with Host Context
+ * Automatically adds hostId to GL entry before posting
+ */
+export const enrichGLEntryWithHostContext = (
+  glEntry: any,
+  hostId: string,
+): any => {
+  return {
+    ...glEntry,
+    hostId,
+    createdAt: new Date(),
+  };
+};

@@ -1,0 +1,51 @@
+/**
+ * Depreciation Hook — calculates and posts PP&E depreciation.
+ *
+ * Methods: straight-line, declining balance, units-of-activity.
+ *
+ * @accounting IFRS IAS-16 property-plant-and-equipment
+ * @accounting IFRS IAS-36 impairment-of-assets
+ * @accounting US-GAAP ASC-360 property-plant-and-equipment
+ * @standard ISO-8601-1:2019 date-time depreciation-period
+ * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls
+ * @see docs/STANDARDS.md §4.2
+ */
+
+import { CollectionAfterChangeHook } from 'payload/types';
+
+export const depreciationHook: CollectionAfterChangeHook = async ({
+  doc,
+  req,
+  operation,
+}) => {
+  if (!doc || operation !== 'create') return doc;
+
+  try {
+    const depreciationService = req.payload.services?.depreciation;
+    const hostId = req.payload.requestContext?.hostId || doc.hostId;
+
+    if (depreciationService) {
+      const assetData = {
+        id: doc.id,
+        assetNumber: doc.assetNumber,
+        description: doc.description,
+        assetCategory: doc.assetCategory,
+        acquisitionDate: doc.acquisitionDate,
+        assetCost: doc.assetCost,
+        residualValue: doc.residualValue,
+        usefulLifeYears: doc.usefulLifeYears,
+        depreciationMethod: doc.depreciationMethod,
+        depreciationStartDate: doc.depreciationStartDate,
+        currency: doc.currency || 'EUR',
+      };
+
+      await depreciationService.calculateDepreciation(hostId, assetData);
+      console.log(`✓ Depreciation schedule created for asset ${doc.assetNumber}`);
+    }
+  } catch (error) {
+    console.error(`✗ Error calculating depreciation:`, error);
+  }
+
+  return doc;
+};

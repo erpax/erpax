@@ -40,6 +40,21 @@
       "preview_bucket_name": "erpax",
     },
   ],
+  // Scheduled triggers for Payload v3 jobs queue.
+  // The Worker entrypoint (.open-next/worker.js) needs a `scheduled()` handler
+  // that POSTs to `/api/payload-jobs/run` with the Bearer token derived from
+  // PAYLOAD_SECRET (see payload.config.ts `jobs.access.run`). The dunning-cycle
+  // task is registered at payload.config.ts `jobs.tasks[]` (Slice ZZ).
+  //
+  // Cron format: minute hour day-of-month month day-of-week.
+  // "*/15 * * * *" = every 15 minutes — sufficient cadence for past-due
+  // detection on a daily-billing model. Bumped from `'*/5 * * * *'` (the
+  // payload.config.ts autoRun default) to reduce Worker invocations.
+  "triggers": {
+    "crons": [
+      "*/15 * * * *",
+    ],
+  },
   "observability": {
     "enabled": false,
     "head_sampling_rate": 1,

@@ -1,30 +1,13 @@
-import type { Access } from 'payload'
-
-import { isSuperAdmin } from '../../../access/isSuperAdmin'
-import { extractID } from '@/utilities/extractID'
-import { getUserTenantIDs } from '@/utilities/getUserTenantIDs'
+import { createMembershipAdminMutateAccess } from '@/access/membershipAdminMutateAccess'
 
 /**
- * Tenant admins and super admins are allowed access.
+ * Pages: only global super-admins or per-tenant membership **admin** can create / update / delete.
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @security ISO-27001 A.5.18 access-rights
+ * @security ISO-27002 §5.15 access-control
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see createMembershipAdminMutateAccess
+ * @see docs/STANDARDS.md §4.4
  */
-export const superAdminOrTenantAdminAccess: Access = ({ req }) => {
-  if (!req.user) {
-    return false
-  }
-
-  if (isSuperAdmin(req.user)) {
-    return true
-  }
-
-  const adminTenantAccessIDs = getUserTenantIDs(req.user, 'tenant-admin')
-  const requestedTenant =
-    req?.data?.tenant !== undefined && req?.data?.tenant !== null
-      ? extractID(req.data.tenant)
-      : undefined
-
-  if (requestedTenant && adminTenantAccessIDs.includes(requestedTenant)) {
-    return true
-  }
-
-  return false
-}
+export const superAdminOrTenantAdminAccess = createMembershipAdminMutateAccess('pages')

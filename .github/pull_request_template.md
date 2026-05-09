@@ -12,11 +12,17 @@
 
 ## Checklist
 
-- [ ] I have run `pnpm run lint` and fixed any issues
-- [ ] I have run `pnpm exec tsc --noEmit` and there are no type errors
+- [ ] I have run `pnpm check` (standards + lint + typecheck + tests) and it passes
 - [ ] I have tested my changes locally
 - [ ] My code follows the project's style guidelines
 - [ ] I have made corresponding changes to the documentation (if applicable)
+
+## Standards (per [`docs/STANDARDS.md`](../docs/STANDARDS.md) and [`CONTRIBUTING.md`](../CONTRIBUTING.md))
+
+- [ ] `pnpm standards:check` passes (no malformed `@standard` / `@rfc` / `@compliance` / `@accounting` / `@security` / `@audit` / `@quality` tags)
+- [ ] New files that implement or use a standard carry a JSDoc banner with the right tags
+- [ ] If this PR adds a new `src/standards/<id>/` folder: README + implementation + barrel re-export + matching `tests/standards/<id>/` + audit-doc rows are all present
+- [ ] If this PR relocates standards code, the old location either has a `@deprecated` re-export shim or is queued in `scripts/slice-f-delete-dead-stubs.sh`
 
 ## Testing
 

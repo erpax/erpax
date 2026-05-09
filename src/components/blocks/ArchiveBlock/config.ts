@@ -1,3 +1,14 @@
+/**
+ * Archive block — paginated list of posts/products/etc.
+ *
+ * @standard schema.org ItemList
+ * @standard schema.org CollectionPage
+ * @rfc 5005 web-feed-paging-and-archiving
+ * @rfc 3986 uniform-resource-identifier pagination-links
+ * @see src/components/README.md
+ * @see docs/STANDARDS.md §3
+ */
+
 import type { Block } from 'payload'
 
 import { localeRecord } from '@/i18n'

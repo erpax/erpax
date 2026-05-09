@@ -1,11 +1,35 @@
+/**
+ * Stripe order confirmation — finalize transaction with the per-tenant
+ * Stripe secret; on success, mark order paid and trigger downstream hooks.
+ *
+ * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data
+ * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
+ * @compliance PSD2 EU-2015/2366 strong-customer-authentication
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time confirmed-at
+ * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+ * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+ * @security ISO-27001 A.5.17 authentication-information secret-management
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @audit ISO-19011:2018 audit-trail
+ * @rfc 9110 http-semantics
+ * @see docs/STANDARDS.md §3 §4.4
+ */
+
 import Stripe from 'stripe'
 
 import type { PayloadRequest } from 'payload'
+import { APIError } from 'payload'
 
+import type { Config } from '@/payload-types'
+
+import { apiErr, ERR } from '@/utilities/errors'
 import {
   resolveStripeSecretForTransaction,
   tenantIdFromRelation,
 } from '@/utilities/tenantRemoteSecrets'
+
+type CollectionSlug = keyof Config['collections']
 
 type ConfirmArgs = {
   cartsSlug?: string
@@ -37,11 +61,11 @@ export function tenantConfirmOrder(props?: {
     const paymentIntentID = data.paymentIntentID
 
     if (!paymentIntentID) {
-      throw new Error('PaymentIntent ID is required')
+      throw apiErr(ERR.PAY_PAYMENT_INTENT_REQUIRED)
     }
 
     const transactionsResults = await payload.find({
-      collection: transactionsSlug as any,
+      collection: transactionsSlug as CollectionSlug,
       req,
       depth: 1,
       where: {
@@ -54,18 +78,17 @@ export function tenantConfirmOrder(props?: {
 
     const transaction = transactionsResults.docs[0]
     if (!transactionsResults.totalDocs || !transaction) {
-      throw new Error('No transaction found for the provided PaymentIntent ID')
+      throw apiErr(ERR.PAY_TRANSACTION_NOT_FOUND)
     }
 
     const secretKey = await resolveStripeSecretForTransaction(payload, transaction)
     if (!secretKey) {
-      throw new Error('Stripe secret key is required for this tenant (set on Tenants or STRIPE_SECRET_KEY in development).')
+      payload.logger.warn({ msg: 'confirmOrder: no Stripe secret for tenant' })
+      throw apiErr(ERR.PAY_STRIPE_SECRET_MISSING)
     }
 
     const stripe = new Stripe(secretKey, {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-expect-error Stripe apiVersion typing
-      apiVersion: apiVersion || '2025-03-31.basil',
+      apiVersion: (apiVersion ?? '2025-03-31.basil') as Stripe.StripeConfig['apiVersion'],
       appInfo: appInfo || {
         name: 'Stripe Payload Plugin',
         url: 'https://payloadcms.com',
@@ -86,7 +109,7 @@ export function tenantConfirmOrder(props?: {
 
       const paymentIntent = await stripe.paymentIntents.retrieve(paymentIntentID)
       if (paymentIntent.status !== 'succeeded') {
-        throw new Error(`Payment not completed.`)
+        throw apiErr(ERR.PAY_NOT_COMPLETED)
       }
       const cartID = paymentIntent.metadata.cartID
       const cartItemsSnapshot = paymentIntent.metadata.cartItemsSnapshot
@@ -96,16 +119,16 @@ export function tenantConfirmOrder(props?: {
         ? JSON.parse(paymentIntent.metadata.shippingAddress)
         : undefined
       if (!cartID) {
-        throw new Error('Cart ID not found in the PaymentIntent metadata')
+        throw apiErr(ERR.PAY_CART_METADATA_MISSING)
       }
       if (!cartItemsSnapshot || !Array.isArray(cartItemsSnapshot)) {
-        throw new Error('Cart items snapshot not found or invalid in the PaymentIntent metadata')
+        throw apiErr(ERR.PAY_CART_SNAPSHOT_INVALID)
       }
 
       const tenantField = tenantIdFromRelation(transaction.tenant)
 
       const order = await payload.create({
-        collection: ordersSlug as any,
+        collection: ordersSlug as CollectionSlug,
         data: {
           amount: paymentIntent.amount,
           currency: paymentIntent.currency.toUpperCase(),
@@ -128,7 +151,7 @@ export function tenantConfirmOrder(props?: {
       const timestamp = new Date().toISOString()
       await payload.update({
         id: cartID,
-        collection: cartsSlug as any,
+        collection: cartsSlug as CollectionSlug,
         data: {
           purchasedAt: timestamp,
         },
@@ -136,7 +159,7 @@ export function tenantConfirmOrder(props?: {
       })
       await payload.update({
         id: transaction.id,
-        collection: transactionsSlug as any,
+        collection: transactionsSlug as CollectionSlug,
         data: {
           order: order.id,
           status: 'succeeded',
@@ -150,11 +173,14 @@ export function tenantConfirmOrder(props?: {
         ...(order.accessToken ? { accessToken: order.accessToken } : {}),
       }
     } catch (error) {
+      if (error instanceof APIError) {
+        throw error
+      }
       payload.logger.error({
         err: error,
         msg: 'Error confirming order with Stripe',
       })
-      throw new Error(error instanceof Error ? error.message : 'Unknown error initiating payment')
+      throw apiErr(ERR.PAY_CONFIRM_FAILED)
     }
   }
 }

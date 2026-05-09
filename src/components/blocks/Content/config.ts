@@ -1,3 +1,15 @@
+/**
+ * Content block — multi-column rich-text + optional inline link.
+ *
+ * @standard W3C HTML5 article-section-elements
+ * @standard schema.org WebPageElement
+ * @standard CommonMark 0.31 markdown-fallback
+ * @compliance WCAG-2.1 §1.3.1 info-and-relationships
+ * @compliance WCAG-2.1 §1.4.10 reflow
+ * @see src/components/README.md
+ * @see docs/STANDARDS.md §3
+ */
+
 import type { Block, Field } from 'payload'
 
 import {

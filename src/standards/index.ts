@@ -1,0 +1,130 @@
+/**
+ * Master barrel — every standard erpax implements (validators, coercers,
+ * value types, security primitives, transport adapters). Domain code SHOULD
+ * import from `@/standards/<id>` directly for traceability; this barrel
+ * exists so agents can grep `@/standards` and see the full surface in one
+ * place.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-3166-1:2020 country-codes
+ * @standard ISO-3166-2:2020 subdivision-codes
+ * @standard ISO-8601-1:2019 date-time
+ * @standard ISO-13616-1:2020 iban
+ * @standard ISO-9362:2022 bic
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @rfc 4647 matching-of-language-tags
+ * @standard NIST SP-800-38D aes-gcm
+ * @standard NIST SP-800-108 key-derivation
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @rfc 5869 hkdf
+ * @rfc 5116 aead
+ * @rfc 3986 uniform-resource-identifier
+ * @rfc 6585 §4 too-many-requests
+ * @rfc 9110 http-semantics
+ * @rfc 9111 http-caching
+ * @rfc 6797 hsts
+ * @standard W3C CSP-3
+ * @standard W3C Permissions-Policy
+ * @see docs/STANDARDS.md
+ */
+
+// Domain identifier validators
+export { isIso4217 } from './iso-4217'
+export { isIso3166Alpha2, isIso3166Alpha3 } from './iso-3166-1'
+export { isIso3166_2 } from './iso-3166-2'
+export { isIso8601, toIso8601 } from './iso-8601'
+export { isIban } from './iso-13616'
+export { isSwiftBic } from './iso-9362'
+export { isBcp47 } from './bcp-47'
+export { isMoney } from './_money'
+
+// Security primitives (NIST)
+export {
+  encryptField,
+  decryptField,
+  encryptFields,
+  decryptFields,
+  isEncrypted,
+  generateEncryptionKey,
+} from './nist-sp-800-38'
+export {
+  deriveSecretFromPayloadSecret,
+  internalSecretPurpose,
+  type InternalSecretPurpose,
+} from './nist-sp-800-108'
+
+// Access control (RBAC)
+export {
+  hasRole,
+  hasStrictRole,
+  hasAnyRole,
+  hasAllRoles,
+  hasCachedRole,
+  addRole,
+  grant,
+  removeRole,
+  revoke,
+  scopeResourceCollections,
+  BIT_READ,
+  BIT_WRITE,
+  BIT_DELETE,
+  permissionTripletToString,
+  permissionStringToTriplet,
+  type AnyScope,
+  type RoleDefinition,
+  type RoleMatch,
+  type ScopedResource,
+  type ScopeResourceCollection,
+  type AddRoleResource,
+  type MutationArgs,
+  type PermissionDigit,
+  type PermissionTriplet,
+} from './nist-incits-359'
+
+// URI / URL primitives (RFC 3986)
+export {
+  normalizeUrl,
+  buildOrigin,
+  safeParseUrl,
+  getUrlOrigin,
+  ensureProtocol,
+  joinUrl,
+  resolvePublicSiteUrl,
+  getOriginFromHeaders,
+  getServerSideURL,
+  getClientSideURL,
+  resolvePublicSiteUrlFromHeaders,
+  generatePreviewPath,
+  type ServerOriginOptions,
+} from './rfc-3986'
+
+// Rate limiting (RFC 6585 §4 / RFC 9110 §15.5.29)
+export {
+  getRateLimitKey,
+  checkRateLimit,
+  clearRateLimit,
+  getRateLimitResetSeconds,
+} from './rfc-6585'
+
+// HTTP cache adapters (RFC 9110 / RFC 9111)
+export {
+  createCachedPayloadFetcher,
+  getCachedPayloadDocument,
+  getCachedPayloadGlobal,
+  getCachedPayloadCollection,
+  getCachedPayloadCollectionAll,
+  getCachedPayloadById,
+  getCachedPayloadLocalizedDocument,
+  getCachedDocument,
+  getCachedGlobal,
+  getCachedRedirects,
+} from './rfc-9110'
+
+// Composite security headers (CSP-3 / HSTS / Permissions-Policy / Referrer-Policy)
+export {
+  defaultSecurityHeaders,
+  buildSecurityHeaders,
+  applySecurityHeaders,
+  type SecurityHeadersConfig,
+} from './_security-headers'

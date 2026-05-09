@@ -1,3 +1,14 @@
+/**
+ * Super-admin access predicates — global role check (`super-admin`).
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
+ * @security ISO-27001 A.5.18 access-rights
+ * @security ISO-27002 §5.15 access-control
+ * @security ISO-27002 §8.2 privileged-access-rights
+ * @compliance SOC-2 CC6.3 privileged-access-management
+ * @see docs/STANDARDS.md §4.4
+ */
+
 import type { Access, FieldAccess } from 'payload'
 
 export const isSuperAdminAccess: Access = ({ req }): boolean => {

@@ -1,131 +1,67 @@
-# Payload Cloudflare Template
+# ERPAX — Automatic Accounting System
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/erpax/erpax)
+A multi-tenant accounting platform built on Payload CMS (Cloudflare D1 / R2 /
+OpenNext). Standards-anchored: every governing standard (ISO, RFC, IFRS,
+US-GAAP, NIST, GDPR, PCI-DSS, SOC 2, etc.) is declared via JSDoc banners
+on the files that implement or use it, and verified by `pnpm standards:check`.
 
-**This can only be deployed on Paid Workers right now due to size limits.** This template comes configured with the bare minimum to get started on anything you need.
+## Standards system
+
+This codebase is organised around the standards it implements. **Read
+[`docs/STANDARDS.md`](./docs/STANDARDS.md) before adding new code.**
+
+| Doc                                                       | Purpose                                                            |
+|-----------------------------------------------------------|--------------------------------------------------------------------|
+| [`docs/STANDARDS.md`](./docs/STANDARDS.md)                | Taxonomy + JSDoc grammar (the contract).                           |
+| [`docs/STANDARDS_AUDIT.md`](./docs/STANDARDS_AUDIT.md)    | Per-file map: what standard each file implements / cites.          |
+| [`docs/MIGRATION_WORKLIST.md`](./docs/MIGRATION_WORKLIST.md) | Slice ledger + recipe for adding new standards.                  |
+| [`src/standards/README.md`](./src/standards/README.md)    | Implementation conventions for `src/standards/<id>/` folders.      |
+| [`tests/standards/README.md`](./tests/standards/README.md)| Test layout (mirrors `src/standards/<id>/`).                       |
+
+Discoverability tooling:
+
+```bash
+pnpm standards:audit    # full citation index, grouped by tag
+pnpm standards:counts   # totals per tag (~1,900 citations across the repo)
+pnpm standards:check    # exit non-zero on malformed banners (CI gate)
+```
+
+`pnpm standards:check` is the first step of `pnpm check`, the pre-push
+hook, and the GitHub Actions CI workflow. Production builds cannot ship
+without it passing.
+
+## What's implemented
+
+- 100% GL automation — every transaction emits balanced double-entry GL postings.
+- Multi-tenancy with full host isolation (NIST INCITS-359 RBAC + ISO/IEC 27001 A.5.23).
+- Multi-currency: integer-cents `Money` value type (`src/standards/_money/`)
+  + foreign-currency translation per IFRS IAS 21 (`src/services/multi-currency.service.ts`).
+- Tax automation across 10+ jurisdictions (EN 16931 + OECD SAF-T + ISO 3166-1/-2).
+- Bank reconciliation against ISO 20022 camt.053 statements + IBAN (ISO 13616) +
+  BIC (ISO 9362).
+- Periodic financial statements (IFRS IAS 1 + US-GAAP ASC 205).
+- 15 standards-implementing modules under `src/standards/<id>/` with full
+  test parity at `tests/standards/<id>/`.
 
 ## Quick start
 
-This template can be deployed directly to Cloudflare Workers by clicking the button to take you to the setup screen.
-
-From there you can connect your code to a git provider such Github or Gitlab, name your Workers, D1 Database and R2 Bucket as well as attach any additional environment variables or services you need.
-
-## Quick Start - local setup
-
-To spin up this template locally, follow these steps:
-
-### Clone
-
-After you click the `Deploy` button above, you'll want to have standalone copy of this repo on your machine. Cloudflare will connect your app to a git provider such as Github and you can access your code from there.
-
-### Local Development
-
-## How it works
-
-Out of the box, using [`Wrangler`](https://developers.cloudflare.com/workers/wrangler/) will automatically create local bindings for you to connect to the remote services and it can even create a local mock of the services you're using with Cloudflare.
-
-We've pre-configured Payload for you with the following:
-
-### Collections
-
-See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
-
-- #### Users (Authentication)
-
-  Users are auth-enabled collections that have access to the admin panel.
-
-  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/main/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
-
-- #### Media
-
-  This is the uploads enabled collection.
-
-### Image Storage (R2)
-
-Images will be served from an R2 bucket which you can then further configure to use a CDN to serve for your frontend directly.
-
-### D1 Database
-
-The Worker will have direct access to a D1 SQLite database which Wrangler can connect locally to, just note that you won't have a connection string as you would typically with other providers.
-
-You can enable read replicas by adding `readReplicas: 'first-primary'` in the DB adapter and then enabling it on your D1 Cloudflare dashboard. Read more about this feature on [our docs](https://payloadcms.com/docs/database/sqlite#d1-read-replicas).
-
-## Working with Cloudflare
-
-Firstly, after installing dependencies locally you need to authenticate with Wrangler by running:
-
 ```bash
-pnpm wrangler login
+pnpm install
+pnpm setup          # one-time .env scaffold
+pnpm dev            # local Payload + Next.js
+pnpm payload migrate:create   # add a migration
+pnpm test           # vitest integration suite
+pnpm check          # standards + lint + typecheck + tests (the local gate)
 ```
 
-This will take you to Cloudflare to login and then you can use the Wrangler CLI locally for anything, use `pnpm wrangler help` to see all available options.
+For the full script surface see [`package.json`](./package.json) `scripts`.
 
-Wrangler is pretty smart so it will automatically bind your services for local development just by running `pnpm dev`.
+## Changelog
 
-## Deployments
+See [`CHANGELOG.md`](./CHANGELOG.md) for release notes. The most recent
+entry (1.0.0) records the standards taxonomy + enforcement work executed
+across Slices A–FF.
 
-When you're ready to deploy, first make sure you have created your migrations:
+## License
 
-```bash
-pnpm payload migrate:create
-```
-
-Then run the following command:
-
-```bash
-pnpm run deploy
-```
-
-This will spin up Wrangler in `production` mode, run any created migrations, build the app and then deploy the bundle up to Cloudflare.
-
-That's it! You can if you wish move these steps into your CI pipeline as well.
-
-### CI / Workers Builds: migrate before build
-
-Apply migrations to **remote D1** in a **separate step** (or script) **before** `next build` when your pipeline runs both on the same machine with Wrangler credentials.
-
-- **Script:** `pnpm run migrate:production` (`NODE_ENV=production payload migrate`). Then `pnpm run build`, or use **`pnpm run build:workers`** (migrate + build + postbuild).
-- **GitHub Actions:** `.github/workflows/deploy-staging.yml` runs `migrate:production`, then `deploy:app` (OpenNext build + deploy).
-
-Set **`PAYLOAD_SECRET`** (and Cloudflare API token / `wrangler` auth as needed) so the Payload CLI can reach your remote D1 during migrate.
-
-**`next build` and D1:** On **Cloudflare Workers Builds** (`WORKERS_CI=1`) or **Pages** (`CF_PAGES=1`), this project uses **remote D1** during the production build so prerender does not lock Miniflare’s local SQLite (avoids **`SQLITE_BUSY`**). Override with **`PAYLOAD_BUILD_USE_REMOTE_D1=false`**. Other CI (e.g. GitHub) should set **`PAYLOAD_BUILD_USE_REMOTE_D1=true`** for the OpenNext build step if you prerender against D1.
-## Enabling logs
-
-By default logs are not enabled for your API, we've made this decision because it does run against your quota so we've left it opt-in. But you can easily enable logs in one click in the Cloudflare panel, [see docs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs).
-
-### Logger Configuration
-
-This template includes a custom console-based logger compatible with Cloudflare Workers. Payload's default logger uses `pino-pretty`, which relies on Node.js APIs not available in Workers and would cause `fs.write is not implemented` errors.
-
-The custom logger in `payload.config.ts`:
-
-- Routes logs through `console.*` methods which Workers handles correctly
-- Outputs JSON-formatted logs for Cloudflare observability
-- Only active in production (development uses the default `pino-pretty` for better DX)
-
-You can control the log level via the `PAYLOAD_LOG_LEVEL` environment variable (e.g., `debug`, `info`, `warn`, `error`).
-
-### Diagnostic Channel Errors
-
-If you see "Failed to publish diagnostic channel message" errors in your observability logs, these typically come from the `undici` HTTP client library. The template includes `skipSafeFetch: true` in the Media collection to use native fetch instead of undici for file uploads, which helps reduce these errors.
-
-Cloudflare Workers runs in an [isolated environment that cannot access private IP ranges](https://developers.cloudflare.com/workers-vpc/examples/route-across-private-services/) by default, providing built-in SSRF protection. This makes `skipSafeFetch` safe to use.
-
-`wrangler.jsonc` enables **`global_fetch_strictly_public`** alongside **`nodejs_compat`** — the same pairing as the [official Payload Cloudflare D1 template](https://github.com/payloadcms/payload/tree/main/templates/with-cloudflare-d1).
-
-## Known issues
-
-### GraphQL
-
-We are currently waiting on some issues with GraphQL to be [fixed upstream in Workers](https://github.com/cloudflare/workerd/issues/5175) so full support for GraphQL is not currently guaranteed when deployed.
-
-### Worker size limits
-
-We currently recommend deploying this template to the Paid Workers plan due to bundle [size limits](https://developers.cloudflare.com/workers/platform/limits/#worker-size) of 3mb. We're actively trying to reduce our bundle footprint over time to better meet this metric.
-
-This also applies to your own code, in the case of importing a lot of libraries you may find yourself limited by the bundle.
-
-## Questions
-
-If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+MIT.

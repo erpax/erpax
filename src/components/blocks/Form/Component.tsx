@@ -10,8 +10,10 @@ import RichText from '@/components/RichText'
 import { Button } from '@/components/ui/button'
 import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 
-import { fields } from './fields'
+import { formatPayloadSdkUserMessage } from '@/utilities/errors'
 import { getPayloadSdk } from '@/utilities/payloadSdk'
+
+import { fields } from './fields'
 
 export type FormBlockType = {
   blockName?: string
@@ -101,7 +103,7 @@ export const FormBlock: React.FC<
           setIsLoading(false)
           if (err instanceof PayloadSDKError) {
             setError({
-              message: err.errors?.[0]?.message || err.message || t('internal-server-error'),
+              message: formatPayloadSdkUserMessage(err, t('internal-server-error')),
               status: String(err.status),
             })
           } else {
@@ -128,14 +130,18 @@ export const FormBlock: React.FC<
             <RichText data={confirmationMessage} />
           )}
           {isLoading && !hasSubmitted && <p>{t('loading')}</p>}
-          {error && <div>{`${error.status || '500'}: ${error.message || ''}`}</div>}
+          {error && (
+            <div className="text-red-600 text-sm mb-4" role="alert">
+              {error.status ? `${error.status}: ` : ''}
+              {error.message}
+            </div>
+          )}
           {!hasSubmitted && (
             <form id={formElementID} onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4 last:mb-0">
                 {formFromProps &&
                   formFromProps.fields &&
                   formFromProps.fields?.map((field, index) => {
-                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     const Field: React.FC<any> = fields?.[field.blockType as keyof typeof fields]
                     if (Field) {
                       return (

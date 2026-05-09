@@ -1,3 +1,14 @@
+/**
+ * Tenant-flow integration tests — sandbox isolation, role binding.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing integration-test-level
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.15 access-control
+ * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see docs/STANDARDS.md §3 §4.4 §7
+ */
+
 import type { PayloadSDK } from '@payloadcms/sdk'
 import { getPayload, Payload } from 'payload'
 

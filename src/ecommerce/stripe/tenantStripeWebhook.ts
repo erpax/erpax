@@ -1,6 +1,30 @@
+/**
+ * Stripe webhook receiver — verifies signature with per-tenant
+ * `stripeWebhookSecret`, then dispatches to subscription/invoice handlers.
+ *
+ * @compliance PCI-DSS-4.0 §3.6 strong-cryptography signature-verification
+ * @compliance PSD2 EU-2015/2366 strong-customer-authentication
+ * @rfc 9110 http-semantics webhook-delivery
+ * @rfc 8615 well-known-uri webhook-discovery
+ * @standard HMAC-SHA256 RFC 2104 signature-scheme
+ * @security ISO-27001 A.5.17 authentication-information webhook-secret
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §8.24 use-of-cryptography
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §3 §4.4
+ */
+
 import Stripe from 'stripe'
 
+import type { PayloadRequest } from 'payload'
+
+import { apiErrorResponseMerge, ERR } from '@/utilities/errors'
 import { devStripeWebhookFallback } from '@/utilities/tenantRemoteSecrets'
+
+/** Stripe webhook body/signature are read like a fetch Request; Payload attaches `payload`. */
+type StripeWebhookRequest = PayloadRequest & {
+  text?: () => Promise<string>
+}
 
 type WebhookProps = {
   apiVersion?: string
@@ -22,7 +46,7 @@ type WebhookProps = {
 export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
   const { apiVersion, appInfo, webhooks } = props || {}
 
-  const handler = async (req: any) => {
+  const handler = async (req: StripeWebhookRequest) => {
     let returnStatus = 200
     const payload = req.payload
     const body = typeof req.text === 'function' ? await req.text() : ''
@@ -30,7 +54,7 @@ export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
       typeof req.headers?.get === 'function' ? req.headers.get('stripe-signature') : null
 
     if (!body || !stripeSignature) {
-      return Response.json({ received: false }, { status: 400 })
+      return apiErrorResponseMerge(ERR.WEBHOOK_STRIPE_BAD_REQUEST, { received: false })
     }
 
     const tenants = await payload.find({
@@ -47,9 +71,7 @@ export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
       if (!webhookSecret || !secretKey) continue
 
       const stripe = new Stripe(secretKey, {
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-expect-error apiVersion
-        apiVersion: apiVersion || '2025-03-31.basil',
+        apiVersion: (apiVersion ?? '2025-03-31.basil') as Stripe.StripeConfig['apiVersion'],
         appInfo: appInfo || {
           name: 'Stripe Payload Plugin',
           url: 'https://payloadcms.com',
@@ -70,9 +92,7 @@ export function tenantStripeWebhookEndpoint(props?: WebhookProps) {
       const wh = devStripeWebhookFallback()
       if (sk && wh) {
         const stripe = new Stripe(sk, {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-expect-error apiVersion
-          apiVersion: apiVersion || '2025-03-31.basil',
+          apiVersion: (apiVersion ?? '2025-03-31.basil') as Stripe.StripeConfig['apiVersion'],
           appInfo: appInfo || {
             name: 'Stripe Payload Plugin',
             url: 'https://payloadcms.com',

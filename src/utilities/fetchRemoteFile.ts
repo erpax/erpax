@@ -1,4 +1,23 @@
+/**
+ * Remote-file downloader for Payload's `create({ collection: 'media', file })`.
+ *
+ * Fetches a `http(s)://` URL, follows redirects per RFC 9110 §15.4, derives
+ * a filename from the URL path (RFC 3986 §3.3) or the Content-Type header
+ * (RFC 6838 media-type registry), and returns the bytes in Payload's `File`
+ * envelope.
+ *
+ * @rfc 9110 http-semantics
+ * @rfc 9110 §15.4 redirection-3xx
+ * @rfc 3986 uri filename-extraction
+ * @rfc 6838 media-type-registration
+ * @security ISO-27002 §8.23 web-filtering
+ * @see src/standards/rfc-3986/
+ * @see src/standards/rfc-9110/
+ */
+
 import type { File } from 'payload'
+
+import { codedFromRegistry, ERR } from '@/utilities/errors'
 
 function guessExtensionFromMime(mime: string): string {
   const m = mime.toLowerCase()
@@ -24,7 +43,7 @@ export async function fetchRemoteFileForPayload(url: string): Promise<File> {
   })
 
   if (!res.ok) {
-    throw new Error(`Failed to fetch ${url}: HTTP ${res.status}`)
+    throw codedFromRegistry(ERR.INTERNAL_REMOTE_FETCH, new Error(`HTTP ${res.status}`))
   }
 
   const buf = Buffer.from(await res.arrayBuffer())

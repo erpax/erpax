@@ -1,3 +1,16 @@
+/**
+ * next-intl request config — pick the locale from the URL and load messages.
+ *
+ * Falls back to `defaultLocale` if the requested locale isn't in the supported
+ * list (defensive against invalid `[locale]` segments).
+ *
+ * @standard BCP-47 language-tag
+ * @rfc 5646 tags-for-identifying-languages
+ * @standard ECMA-402 internationalization-api
+ * @rfc 9110 http-semantics accept-language-fallback
+ * @see docs/STANDARDS.md §6
+ */
+
 import { getRequestConfig } from 'next-intl/server'
 
 import { defaultLocale, isValidLocale, nestedMessages } from './index'
@@ -8,8 +21,8 @@ import type enMessages from './messages/en.json'
 type Messages = typeof enMessages
 
 declare global {
-  // Use type safe message keys with `next-intl`
-  interface IntlMessages extends Messages {}
+  /** Message key paths for `next-intl` — mirrors `en.json` shape. */
+  type IntlMessages = Messages
 }
 
 export default getRequestConfig(async ({ requestLocale }) => {

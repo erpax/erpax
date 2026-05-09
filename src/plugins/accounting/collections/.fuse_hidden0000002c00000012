@@ -1,0 +1,99 @@
+import type { CollectionConfig } from 'payload'import { validateNotLocked } from '../utilities/period-lock';
+
+/**
+ * GL Postings — atomic debit/credit lines linked to a journal entry.
+ *
+ * @standard ISO-8601-1:2019 date-time posted-date
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting OECD SAF-T §3 transactions
+ * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls
+ * @see docs/STANDARDS.md §4.2
+ */
+const GLPostings: CollectionConfig = {
+  slug: 'gl-postings',
+  labels: { singular: 'GL Posting', plural: 'GL Postings' },
+  admin: {
+    useAsTitle: 'postingId',
+    defaultColumns: ['postingId', 'sourceType', 'sourceId', 'journalEntry', 'status', 'postedDate'],
+  },
+  access: {
+    read: async ({ req }) => {
+      if (req.user?.role === 'admin') return true;
+      return { 'hostId.id': { equals: req.user?.hostId } };
+    },
+    create: async ({ req }) => req.user?.role === 'admin' || req.user?.role === 'accountant',
+    update: async ({ req }) => req.user?.role === 'admin',
+    delete: async ({ req }) => req.user?.role === 'admin',
+  },
+  fields: [
+    { name: 'hostId', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    { name: 'postingId', type: 'text', required: true, unique: true },
+    {
+      name: 'sourceType',
+      type: 'select',
+      required: true,
+      options: [
+        { label: 'Invoice', value: 'invoice' },
+        { label: 'Bill', value: 'bill' },
+        { label: 'Payment', value: 'payment' },
+        { label: 'Bank Statement', value: 'bank_statement' },
+        { label: 'Period-End Adjustment', value: 'period_end_adjustment' },
+        { label: 'Tax Calculation', value: 'tax_calculation' },
+        { label: 'Currency Revaluation', value: 'currency_revaluation' },
+        { label: 'Manual Entry', value: 'manual_entry' },
+      ],
+    },
+    { name: 'sourceId', type: 'text', required: true },
+    { name: 'sourceDate', type: 'date', required: true },
+    { name: 'journalEntry', type: 'relationship', relationTo: 'journal-entries', required: true },
+    {
+      name: 'status',
+      type: 'select',
+      defaultValue: 'pending',
+      options: [
+        { label: 'Pending', value: 'pending' },
+        { label: 'Posted', value: 'posted' },
+        { label: 'Reversed', value: 'reversed' },
+        { label: 'Failed', value: 'failed' },
+      ],
+    },
+    { name: 'postedDate', type: 'date' },
+    {
+      name: 'accountsAffected',
+      type: 'array',
+      fields: [
+        { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
+        { name: 'debitAmount', type: 'number', defaultValue: 0 },
+        { name: 'creditAmount', type: 'number', defaultValue: 0 },
+        {
+          name: 'currency',
+          type: 'select',
+          defaultValue: 'EUR',
+          options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
+        },
+      ],
+    },
+    { name: 'totalDebits', type: 'number', defaultValue: 0, admin: { disabled: true } },
+    { name: 'totalCredits', type: 'number', defaultValue: 0, admin: { disabled: true } },
+    { name: 'errorMessage', type: 'textarea' },
+    { name: 'reversalPostingId', type: 'text' },
+    { name: 'metadata', type: 'json' },
+  ],
+  hooks: {
+    beforeChange: [
+      validateNotLocked,
+      async ({ data, req }) => {
+        if (!data.hostId && req.payload.requestContext?.hostId) data.hostId = req.payload.requestContext.hostId;
+        if (data.accountsAffected) {
+          data.totalDebits = data.accountsAffected.reduce((sum: number, line: any) => sum + (line.debitAmount || 0), 0);
+          data.totalCredits = data.accountsAffected.reduce((sum: number, line: any) => sum + (line.creditAmount || 0), 0);
+        }
+        return data;
+      },
+    ],
+  },
+  timestamps: true,
+};
+
+export default GLPostings;

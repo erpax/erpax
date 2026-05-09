@@ -1,0 +1,98 @@
+import type { CollectionConfig } from 'payload'
+/**
+ * Budget Planning — period-budgets by department / cost-center.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time fiscal-year period
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-270 interim-reporting
+ * @see docs/STANDARDS.md §4.2
+ */
+const BudgetPlanning: CollectionConfig = {
+  slug: 'budget-planning',
+  labels: { singular: 'Budget Plan', plural: 'Budget Plans' },
+  admin: {
+    useAsTitle: 'budgetId',
+    defaultColumns: ['budgetId', 'fiscalYear', 'department', 'totalBudget', 'status'],
+  },
+  access: {
+    read: async ({ req }) => {
+      if (req.user?.roles?.includes('admin')) return true;
+      return { 'hostId.id': { equals: req.user?.hostId } };
+    },
+    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
+    update: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
+    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+  },
+  fields: [
+    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    { name: 'budgetId', type: 'text', required: true, unique: true },
+    { name: 'fiscalYear', type: 'number', required: true, min: 2000, max: 2100 },
+    { name: 'department', type: 'text', required: true, admin: { description: 'Department or cost center' } },
+
+    // Budget periods
+    {
+      name: 'budgetPeriod',
+      type: 'select',
+      defaultValue: 'monthly',
+      options: [
+        { label: 'Monthly', value: 'monthly' },
+        { label: 'Quarterly', value: 'quarterly' },
+        { label: 'Annual', value: 'annual' },
+      ],
+    },
+
+    // Budget line items
+    {
+      name: 'budgetLineItems',
+      type: 'array',
+      minRows: 1,
+      fields: [
+        { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
+        { name: 'accountNumber', type: 'text', admin: { disabled: true } },
+        { name: 'accountName', type: 'text', admin: { disabled: true } },
+        { name: 'accountType', type: 'text', admin: { disabled: true } },
+        { name: 'budgetAmount', type: 'number', required: true, min: 0 },
+        { name: 'notes', type: 'textarea' },
+      ],
+    },
+
+    { name: 'totalBudget', type: 'number', defaultValue: 0, admin: { disabled: true } },
+    { name: 'currency', type: 'select', defaultValue: 'EUR', options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })) },
+
+    // Status
+    {
+      name: 'status',
+      type: 'select',
+      defaultValue: 'draft',
+      options: [
+        { label: 'Draft', value: 'draft' },
+        { label: 'Submitted', value: 'submitted' },
+        { label: 'Approved', value: 'approved' },
+        { label: 'Active', value: 'active' },
+        { label: 'Archived', value: 'archived' },
+      ],
+    },
+
+    { name: 'approvedBy', type: 'relationship', relationTo: 'users', admin: { description: 'User who approved budget' } },
+    { name: 'approvedAt', type: 'date', admin: { disabled: true } },
+    { name: 'notes', type: 'textarea' },
+  ],
+  hooks: {
+    beforeChange: [
+      async ({ data, req }) => {
+        if (!data.hostId && req.payload.requestContext?.hostId) data.hostId = req.payload.requestContext.hostId;
+
+        // Calculate total budget
+        if (data.budgetLineItems) {
+          data.totalBudget = data.budgetLineItems.reduce((sum: number, item: any) => sum + (item.budgetAmount || 0), 0);
+        }
+
+        return data;
+      },
+    ],
+  },
+  timestamps: true,
+};
+
+export default BudgetPlanning;

@@ -1,5 +1,15 @@
 'use client'
 /* eslint-disable react-hooks/refs -- useClickableCard attaches refs for whole-card hit targets */
+/**
+ * Card — clickable preview tile (post / product / page) with whole-card hit target.
+ *
+ * @standard schema.org Article
+ * @standard W3C HTML5 article-element
+ * @rfc 3986 uniform-resource-identifier
+ * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
+ * @compliance WCAG-2.1 §2.5.5 target-size
+ * @see src/components/README.md
+ */
 import { cn } from '@/utilities/ui'
 import useClickableCard from '@/utilities/useClickableCard'
 import Link from 'next/link'

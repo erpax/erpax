@@ -1,5 +1,14 @@
 'use client'
 
+/**
+ * Admin bar — bridges admin authentication state to the public site.
+ *
+ * @standard W3C HTML5 nav-element
+ * @standard WAI-ARIA 1.2 toolbar-role
+ * @compliance WCAG-2.1 §2.4.1 bypass-blocks
+ * @see src/components/README.md
+ */
+
 import type { PayloadAdminBarProps, PayloadMeUser } from '@payloadcms/admin-bar'
 
 import { cn } from '@/utilities/ui'
@@ -11,7 +20,7 @@ import { useTranslations } from 'next-intl'
 
 import './index.scss'
 
-import { getClientSideURL } from '@/utilities/getURL'
+import { getClientSideURL } from '@/standards/rfc-3986/get-url'
 
 const baseClass = 'admin-bar'
 

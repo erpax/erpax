@@ -1,0 +1,553 @@
+/**
+ * Level 2: Integration Test Seeds for Accounting Plugin
+ * Setup time: 2-5 seconds
+ * Creates realistic business data with multi-document relationships
+ * Includes GL transactions, journal entries, and accounting cycles
+ */
+
+import type { Payload } from 'payload';
+import { TestSeedFactory, type SeedResult } from '@/testing';
+
+/**
+ * Journal Entry Seed - GL transactions with matched debits/credits
+ * Creates complete transactions with proper GL posting
+ */
+export class JournalEntrySeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'journal-entries') {
+      await super.validateData(collection, data);
+
+      // Journal entries must have balanced debits/credits
+      const debitAmount = data.debitAmount || 0;
+      const creditAmount = data.creditAmount || 0;
+      if (Math.abs(debitAmount - creditAmount) > 0.01) {
+        throw new Error(
+          'Journal entry: debitAmount must equal creditAmount (balanced entry)',
+        );
+      }
+
+      // Entry date must be valid
+      if (data.entryDate && !/^\d{4}-\d{2}-\d{2}/.test(data.entryDate)) {
+        throw new Error('Journal entry: entryDate must be a valid date (YYYY-MM-DD)');
+      }
+
+      // Reference must be present
+      if (!data.reference) {
+        throw new Error('Journal entry: reference is required for audit trail');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('integration');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Get GL accounts for posting
+      const accounts = await this.queryDocuments('gl-accounts', {
+        tenant: this.hostId,
+      });
+
+      if (!accounts.docs || accounts.docs.length < 5) {
+        throw new Error(
+          'Not enough GL accounts available. Please seed GL accounts first.',
+        );
+      }
+
+      const baseDate = new Date();
+      baseDate.setDate(1); // Start of month
+
+      // Create sample journal entries (realistic business transactions)
+      const entries = [
+        {
+          tenant: this.hostId,
+          entryDate: baseDate.toISOString().split('T')[0],
+          reference: 'JE-001-OPENING',
+          description: 'Opening balance - Cash',
+          debitAccountId: accounts.docs[0].id, // Cash
+          creditAccountId: accounts.docs[2].id, // Equity
+          debitAmount: 100000,
+          creditAmount: 100000,
+          status: 'posted',
+        },
+        {
+          tenant: this.hostId,
+          entryDate: baseDate.toISOString().split('T')[0],
+          reference: 'JE-002-REVENUE',
+          description: 'Service revenue earned',
+          debitAccountId: accounts.docs[0].id, // Cash
+          creditAccountId: accounts.docs[3].id, // Revenue
+          debitAmount: 5000,
+          creditAmount: 5000,
+          status: 'posted',
+        },
+        {
+          tenant: this.hostId,
+          entryDate: baseDate.toISOString().split('T')[0],
+          reference: 'JE-003-EXPENSE',
+          description: 'Operating expenses',
+          debitAccountId: accounts.docs[4].id, // Expenses
+          creditAccountId: accounts.docs[0].id, // Cash
+          debitAmount: 1000,
+          creditAmount: 1000,
+          status: 'posted',
+        },
+      ];
+
+      for (const entry of entries) {
+        await this.createDocument('journal-entries', entry);
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'integration',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Accounting Cycle Seed - Complete accounting workflow
+ * Creates GL transactions, verifies posting, and tests reconciliation
+ */
+export class AccountingCycleSeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'accounting-cycles') {
+      await super.validateData(collection, data);
+
+      // Cycle period must be valid
+      const validPeriods = ['monthly', 'quarterly', 'yearly'];
+      if (data.periodType && !validPeriods.includes(data.periodType)) {
+        throw new Error(`Accounting cycle: periodType must be one of: ${validPeriods.join(', ')}`);
+      }
+
+      // Period dates must be valid
+      if (data.startDate && !/^\d{4}-\d{2}-\d{2}/.test(data.startDate)) {
+        throw new Error('Accounting cycle: startDate must be a valid date (YYYY-MM-DD)');
+      }
+
+      if (data.endDate && !/^\d{4}-\d{2}-\d{2}/.test(data.endDate)) {
+        throw new Error('Accounting cycle: endDate must be a valid date (YYYY-MM-DD)');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('integration');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const currentMonth = now.getMonth();
+
+      // Create accounting cycles for current and next 2 quarters
+      const cycles = [
+        {
+          tenant: this.hostId,
+          periodType: 'monthly',
+          periodNumber: currentMonth + 1,
+          year: currentYear,
+          startDate: `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-01`,
+          endDate: `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-28`,
+          status: 'open',
+        },
+        {
+          tenant: this.hostId,
+          periodType: 'quarterly',
+          periodNumber: Math.floor(currentMonth / 3) + 1,
+          year: currentYear,
+          startDate: `${currentYear}-${String(Math.floor(currentMonth / 3) * 3 + 1).padStart(2, '0')}-01`,
+          endDate: `${currentYear}-${String(Math.floor(currentMonth / 3) * 3 + 3).padStart(2, '0')}-30`,
+          status: 'open',
+        },
+        {
+          tenant: this.hostId,
+          periodType: 'yearly',
+          periodNumber: 1,
+          year: currentYear,
+          startDate: `${currentYear}-01-01`,
+          endDate: `${currentYear}-12-31`,
+          status: 'open',
+        },
+      ];
+
+      for (const cycle of cycles) {
+        await this.createDocument('accounting-cycles', cycle);
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'integration',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Multi-Currency Seed - Test data with FX transactions
+ * Creates transactions across multiple currencies with exchange differences
+ */
+export class MultiCurrencySeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'fx-transactions') {
+      await super.validateData(collection, data);
+
+      // Currencies must be different
+      if (data.fromCurrency === data.toCurrency) {
+        throw new Error('FX transaction: fromCurrency and toCurrency must be different');
+      }
+
+      // Exchange rate must be positive
+      if (data.exchangeRate && data.exchangeRate <= 0) {
+        throw new Error('FX transaction: exchangeRate must be positive');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('integration');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      const baseDate = new Date().toISOString().split('T')[0];
+
+      // Create FX transactions for multi-currency testing
+      const transactions = [
+        {
+          tenant: this.hostId,
+          transactionDate: baseDate,
+          fromCurrency: 'USD',
+          toCurrency: 'EUR',
+          fromAmount: 10000,
+          exchangeRate: 0.92,
+          toAmount: 9200,
+          description: 'Foreign purchase - EUR',
+          status: 'recorded',
+        },
+        {
+          tenant: this.hostId,
+          transactionDate: baseDate,
+          fromCurrency: 'USD',
+          toCurrency: 'GBP',
+          fromAmount: 8000,
+          exchangeRate: 0.79,
+          toAmount: 6320,
+          description: 'Foreign purchase - GBP',
+          status: 'recorded',
+        },
+        {
+          tenant: this.hostId,
+          transactionDate: baseDate,
+          fromCurrency: 'EUR',
+          toCurrency: 'USD',
+          fromAmount: 5000,
+          exchangeRate: 1.09,
+          toAmount: 5450,
+          description: 'Foreign sale - EUR to USD',
+          status: 'recorded',
+        },
+      ];
+
+      for (const txn of transactions) {
+        await this.createDocument('fx-transactions', txn);
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'integration',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Role-Scoped Data Seed - Test data segmented by user roles
+ * Creates test data with role-based access controls
+ */
+export class RoleScopedDataSeed extends TestSeedFactory {
+  private hostId: string = '';
+
+  constructor(payload: Payload, hostId: string) {
+    super(payload);
+    this.hostId = hostId;
+  }
+
+  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+    if (collection === 'role-scoped-access') {
+      await super.validateData(collection, data);
+
+      // Role must be valid
+      const validRoles = ['admin', 'accountant', 'auditor', 'manager'];
+      if (data.role && !validRoles.includes(data.role)) {
+        throw new Error(`Role-scoped access: role must be one of: ${validRoles.join(', ')}`);
+      }
+
+      // Resource type must be defined
+      if (!data.resourceType) {
+        throw new Error('Role-scoped access: resourceType is required');
+      }
+    }
+  }
+
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('integration');
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // Create role-based data access configurations
+      const configs = [
+        {
+          tenant: this.hostId,
+          roles: ['admin'],
+          resourceType: 'journal-entries',
+          canCreate: true,
+          canRead: true,
+          canUpdate: true,
+          canDelete: true,
+          scope: 'all',
+        },
+        {
+          tenant: this.hostId,
+          roles: ['accountant'],
+          resourceType: 'journal-entries',
+          canCreate: true,
+          canRead: true,
+          canUpdate: true,
+          canDelete: false,
+          scope: 'own',
+        },
+        {
+          tenant: this.hostId,
+          roles: ['auditor'],
+          resourceType: 'journal-entries',
+          canCreate: false,
+          canRead: true,
+          canUpdate: false,
+          canDelete: false,
+          scope: 'all',
+        },
+        {
+          tenant: this.hostId,
+          roles: ['accountant'],
+          resourceType: 'gl-accounts',
+          canCreate: false,
+          canRead: true,
+          canUpdate: false,
+          canDelete: false,
+          scope: 'all',
+        },
+      ];
+
+      for (const config of configs) {
+        await this.createDocument('role-scoped-access', config);
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'integration',
+        totalTime: Date.now() - this.context!.startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}
+
+/**
+ * Combined Level 2 Seed Suite
+ * Creates all integration seeds in optimized order
+ * Requires Level 1 seeds to be run first
+ */
+export class Level2SeedSuite extends TestSeedFactory {
+  async seed(): Promise<SeedResult> {
+    this.context = this.createContext('integration');
+    const startTime = Date.now();
+
+    try {
+      if (this.hooks.beforeSeed) {
+        await this.hooks.beforeSeed(this.context);
+      }
+
+      // First, ensure we have a host from Level 1
+      const hosts = await this.queryDocuments('hosts', {
+        code: 'TEST_HOST',
+      });
+
+      if (!hosts.docs || hosts.docs.length === 0) {
+        throw new Error(
+          'No test host found. Please run Level 1 seeds first to create required host.',
+        );
+      }
+
+      const hostId = hosts.docs[0].id;
+      this.trackCreatedId('hosts', hostId);
+
+      // 1. Create journal entries (GL transactions)
+      const journalSeed = new JournalEntrySeed(this.payload, hostId);
+      const journalResult = await journalSeed.seed();
+      if (!journalResult.success) throw journalResult.error;
+
+      // 2. Create accounting cycles
+      const cycleSeed = new AccountingCycleSeed(this.payload, hostId);
+      const cycleResult = await cycleSeed.seed();
+      if (!cycleResult.success) throw cycleResult.error;
+
+      // 3. Create multi-currency transactions
+      const fxSeed = new MultiCurrencySeed(this.payload, hostId);
+      const fxResult = await fxSeed.seed();
+      if (!fxResult.success) throw fxResult.error;
+
+      // 4. Create role-based access configs
+      const roleSeed = new RoleScopedDataSeed(this.payload, hostId);
+      const roleResult = await roleSeed.seed();
+      if (!roleResult.success) throw roleResult.error;
+
+      // Aggregate all created IDs
+      for (const [collection, ids] of journalSeed['context']!.createdIds) {
+        if (!this.context.createdIds.has(collection)) {
+          this.context.createdIds.set(collection, new Set());
+        }
+        for (const id of ids) {
+          this.context.createdIds.get(collection)!.add(id);
+        }
+      }
+
+      for (const seed of [cycleSeed, fxSeed, roleSeed]) {
+        for (const [collection, ids] of seed['context']!.createdIds) {
+          if (!this.context.createdIds.has(collection)) {
+            this.context.createdIds.set(collection, new Set());
+          }
+          for (const id of ids) {
+            this.context.createdIds.get(collection)!.add(id);
+          }
+        }
+      }
+
+      if (this.hooks.afterSeed) {
+        const stats = this.getStats();
+        const result: SeedResult = {
+          success: true,
+          ...stats,
+        };
+        await this.hooks.afterSeed(this.context, result);
+      }
+
+      return {
+        success: true,
+        ...this.getStats(),
+      };
+    } catch (error) {
+      return {
+        success: false,
+        seedLevel: 'integration',
+        totalTime: Date.now() - startTime,
+        itemsCreated: 0,
+        collections: {},
+        error: error instanceof Error ? error : new Error(String(error)),
+      };
+    }
+  }
+}

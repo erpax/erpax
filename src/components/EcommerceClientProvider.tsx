@@ -14,8 +14,8 @@ type Props = {
 }
 
 const currenciesConfig = {
-  defaultCurrency: 'USD',
-  supportedCurrencies: [USD, EUR, GBP],
+  defaultCurrency: 'EUR',
+  supportedCurrencies: [EUR, GBP, USD],
 }
 
 function resolvePublishableKey(explicit?: string): string {
