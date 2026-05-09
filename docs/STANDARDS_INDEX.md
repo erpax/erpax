@@ -686,8 +686,9 @@ src/standards/index.ts:21: * @standard EN-16931:2017+A1:2019 semantic-model-elec
 src/standards/index.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/standards/index.ts:23: * @standard UN-CEFACT 1001 document-name-code
 src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
-src/standards/index.ts:32: * @standard W3C CSP-3
-src/standards/index.ts:33: * @standard W3C Permissions-Policy
+src/standards/index.ts:25: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/standards/index.ts:33: * @standard W3C CSP-3
+src/standards/index.ts:34: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -700,6 +701,37 @@ src/standards/iso-19011/types.ts:10: * @standard ISO-19011:2018 §6.4.6 audit-ev
 src/standards/iso-19011/types.ts:11: * @standard ISO-19011:2018 §6.5 audit-conclusions
 src/standards/iso-19011/types.ts:24: * @standard ISO-19011:2018 §6.4.6 audit-evidence
 src/standards/iso-19011/types.ts:98:   * @standard ISO-8601-1:2019 date-time event-timestamp
+src/standards/iso-20022/index.ts:4: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/standards/iso-20022/types.ts:104: * @standard ISO-13616-1:2020 iban
+src/standards/iso-20022/types.ts:10: * @standard ISO-13616-1:2020 iban
+src/standards/iso-20022/types.ts:11: * @standard ISO-9362:2022 bic
+src/standards/iso-20022/types.ts:120: * @standard ISO-11649:2009 financial-services-creditor-reference
+src/standards/iso-20022/types.ts:12: * @standard ISO-4217:2015 currency-codes
+src/standards/iso-20022/types.ts:137: * @standard ISO-20022 RemittanceInformation16
+src/standards/iso-20022/types.ts:13: * @standard ISO-8601-1:2019 date-time
+src/standards/iso-20022/types.ts:155: * @standard ISO-20022 ReportEntry10
+src/standards/iso-20022/types.ts:156: * @standard ISO-20022 EntryTransaction10
+src/standards/iso-20022/types.ts:197: * @standard ISO-20022 BankToCustomerStatementV08
+src/standards/iso-20022/types.ts:230: * @standard ISO-20022 CustomerCreditTransferInitiationV09
+src/standards/iso-20022/types.ts:252: * @standard ISO-20022 PaymentInstruction30
+src/standards/iso-20022/types.ts:26: * @standard ISO-20022 ExternalBankTransactionDomain1Code
+src/standards/iso-20022/types.ts:276: * @standard ISO-20022 CreditTransferTransaction34
+src/standards/iso-20022/types.ts:27: * @standard ISO-20022 ExternalBankTransactionFamily1Code
+src/standards/iso-20022/types.ts:28: * @standard ISO-20022 ExternalBankTransactionSubFamily1Code
+src/standards/iso-20022/types.ts:296: * @standard ISO-20022 CustomerDirectDebitInitiationV08
+src/standards/iso-20022/types.ts:313: * @standard ISO-20022 PaymentInstruction23
+src/standards/iso-20022/types.ts:342: * @standard ISO-20022 DirectDebitTransactionInformation23
+src/standards/iso-20022/types.ts:367: * @standard ISO-20022 PaymentReturnV09
+src/standards/iso-20022/types.ts:384: * @standard ISO-20022 PaymentTransaction109
+src/standards/iso-20022/types.ts:42: * @standard ISO-20022 EntryStatus2Code
+src/standards/iso-20022/types.ts:49: * @standard ISO-20022 CreditDebitCode
+src/standards/iso-20022/types.ts:57: * @standard ISO-20022 ChargeBearerType1Code
+src/standards/iso-20022/types.ts:67: * @standard ISO-20022 PostalAddress24
+src/standards/iso-20022/types.ts:84: * @standard ISO-20022 PartyIdentification135
+src/standards/iso-20022/types.ts:85: * @standard ISO-9362:2022 bic
+src/standards/iso-20022/types.ts:86: * @standard ISO-17442-1:2020 lei
+src/standards/iso-20022/types.ts:9: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/standards/iso-20022/validate.ts:5: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 src/standards/iso-3166-1/index.ts:4: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-3166-1/validate.ts:14: * @standard ISO-3166-1:2020 §6 alpha-2
 src/standards/iso-3166-1/validate.ts:22: * @standard ISO-3166-1:2020 §7 alpha-3
@@ -937,6 +969,8 @@ tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
 tests/standards/iso-19011/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-19011/types.int.spec.ts:9: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
+tests/standards/iso-20022/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/iso-20022/types.int.spec.ts:8: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 tests/standards/iso-3166-1/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-3166-1/validate.int.spec.ts:5: * @standard ISO-3166-1:2020 country-codes
 tests/standards/iso-3166-2/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -1141,13 +1175,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:25: * @rfc 5869 hkdf
-src/standards/index.ts:26: * @rfc 5116 aead
-src/standards/index.ts:27: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:28: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:29: * @rfc 9110 http-semantics
-src/standards/index.ts:30: * @rfc 9111 http-caching
-src/standards/index.ts:31: * @rfc 6797 hsts
+src/standards/index.ts:26: * @rfc 5869 hkdf
+src/standards/index.ts:27: * @rfc 5116 aead
+src/standards/index.ts:28: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:29: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:30: * @rfc 9110 http-semantics
+src/standards/index.ts:31: * @rfc 9111 http-caching
+src/standards/index.ts:32: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -1992,6 +2026,7 @@ src/standards/_money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-tran
 src/standards/_money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
 src/standards/en-16931/types.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/standards/en-16931/types.ts:17: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/iso-20022/types.ts:14: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:240: * @accounting US-GAAP ASC-310 receivables returned-checks
@@ -2565,6 +2600,7 @@ src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:13: * @audit ISO-19011:2018 audit-trail
 src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evidence
+src/standards/iso-20022/types.ts:15: * @audit ISO-19011:2018 audit-trail
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
@@ -2609,6 +2645,7 @@ tests/int/receivables/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trai
 tests/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
+tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
 ## @quality

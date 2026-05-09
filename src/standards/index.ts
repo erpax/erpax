@@ -22,6 +22,7 @@
  * @standard UN-CEFACT 5305 duty-tax-fee-category-code
  * @standard UN-CEFACT 1001 document-name-code
  * @standard UN-CEFACT 4461 payment-means
+ * @standard ISO-20022:2022 universal-financial-industry-message-scheme
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -125,6 +126,35 @@ export {
   getCachedGlobal,
   getCachedRedirects,
 } from './rfc-9110'
+
+// Bank-payment messages (ISO 20022:2022 — camt.053 / pain.001 / pain.008 / pacs.004)
+export type {
+  BankTransactionCode,
+  BookingStatus,
+  CreditDebitIndicator,
+  ChargeBearerCode,
+  PostalAddress,
+  PartyIdentification,
+  AccountIdentification,
+  CreditorReference,
+  RemittanceInformation,
+  Camt053Statement,
+  Camt053Transaction,
+  Pain001Initiation,
+  Pain001Payment,
+  Pain001CreditTransfer,
+  Pain008Initiation,
+  Pain008Payment,
+  Pain008DirectDebit,
+  Pacs004Return,
+  Pacs004ReturnTransaction,
+} from './iso-20022'
+export {
+  isBookingStatus,
+  isCreditDebitIndicator,
+  isChargeBearerCode,
+  isBankTransactionCodeShape,
+} from './iso-20022'
 
 // E-invoice semantic data model (EN 16931:2017+A1:2019)
 export type {
