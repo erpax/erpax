@@ -63,7 +63,11 @@ const GL_ACCOUNTS = {
   ACCUMULATED_DEPRECIATION: 'accumulated_depreciation',
 };
 
-class GLPostingService {
+// Exported so consumers (hooks/tests) get a tight type — calling a phantom
+// method like `glPostingService.postInvoice(...)` now fails at compile time
+// instead of silently throwing TypeError at runtime (the bug Slice FFF
+// rewrites of invoice/bill/payment/item hooks introduced).
+export class GLPostingService {
   constructor(private eventEmitter: EventEmitterService) {
     this.subscribeToEvents();
   }
