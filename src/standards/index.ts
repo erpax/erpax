@@ -25,6 +25,8 @@
  * @standard ISO-20022:2022 universal-financial-industry-message-scheme
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+ * @standard ISO-27002:2022 information-security-controls
+ * @standard ISO-27001:2022 isms-annex-a-controls
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -204,6 +206,16 @@ export {
   isVatCategoryCode,
   isPaymentMeansCode,
 } from './en-16931'
+
+// Security control catalog (ISO 27002:2022 / ISO 27001:2022 Annex A)
+export type { Iso27002Theme, Iso27002ControlId } from './iso-27002'
+export {
+  iso27002Title,
+  iso27002Theme,
+  ISO_27002_CATALOG,
+  isIso27002ControlId,
+  parseIso27002ControlId,
+} from './iso-27002'
 
 // Audit-trail types (ISO 19011 §6.4.6 audit-evidence)
 export type {

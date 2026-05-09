@@ -714,8 +714,10 @@ src/standards/index.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/standards/index.ts:23: * @standard UN-CEFACT 1001 document-name-code
 src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
 src/standards/index.ts:25: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
-src/standards/index.ts:35: * @standard W3C CSP-3
-src/standards/index.ts:36: * @standard W3C Permissions-Policy
+src/standards/index.ts:28: * @standard ISO-27002:2022 information-security-controls
+src/standards/index.ts:29: * @standard ISO-27001:2022 isms-annex-a-controls
+src/standards/index.ts:37: * @standard W3C CSP-3
+src/standards/index.ts:38: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -759,6 +761,14 @@ src/standards/iso-20022/types.ts:85: * @standard ISO-9362:2022 bic
 src/standards/iso-20022/types.ts:86: * @standard ISO-17442-1:2020 lei
 src/standards/iso-20022/types.ts:9: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 src/standards/iso-20022/validate.ts:5: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/standards/iso-27002/index.ts:4: * @standard ISO-27002:2022 information-security-controls
+src/standards/iso-27002/index.ts:5: * @standard ISO-27001:2022 isms-annex-a-controls
+src/standards/iso-27002/types.ts:10: * @standard ISO-27002:2022 information-security-controls
+src/standards/iso-27002/types.ts:11: * @standard ISO-27001:2022 isms-annex-a-controls
+src/standards/iso-27002/types.ts:19: * @standard ISO-27002:2022 §4 themes
+src/standards/iso-27002/types.ts:28: * @standard ISO-27002:2022 information-security-controls
+src/standards/iso-27002/validate.ts:7: * @standard ISO-27002:2022 information-security-controls
+src/standards/iso-27002/validate.ts:8: * @standard ISO-27001:2022 isms-annex-a-controls
 src/standards/iso-3166-1/index.ts:4: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-3166-1/validate.ts:14: * @standard ISO-3166-1:2020 §6 alpha-2
 src/standards/iso-3166-1/validate.ts:22: * @standard ISO-3166-1:2020 §7 alpha-3
@@ -999,6 +1009,8 @@ tests/standards/iso-19011/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 so
 tests/standards/iso-19011/types.int.spec.ts:9: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
 tests/standards/iso-20022/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-20022/types.int.spec.ts:8: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+tests/standards/iso-27002/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/iso-27002/types.int.spec.ts:9: * @standard ISO-27002:2022 information-security-controls
 tests/standards/iso-3166-1/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-3166-1/validate.int.spec.ts:5: * @standard ISO-3166-1:2020 country-codes
 tests/standards/iso-3166-2/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -1203,13 +1215,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:28: * @rfc 5869 hkdf
-src/standards/index.ts:29: * @rfc 5116 aead
-src/standards/index.ts:30: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:31: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:32: * @rfc 9110 http-semantics
-src/standards/index.ts:33: * @rfc 9111 http-caching
-src/standards/index.ts:34: * @rfc 6797 hsts
+src/standards/index.ts:30: * @rfc 5869 hkdf
+src/standards/index.ts:31: * @rfc 5116 aead
+src/standards/index.ts:32: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:33: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:34: * @rfc 9110 http-semantics
+src/standards/index.ts:35: * @rfc 9111 http-caching
+src/standards/index.ts:36: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -1632,6 +1644,7 @@ src/standards/_security-headers/headers.ts:17: * @compliance SOC-2 CC6.6 boundar
 src/standards/iso-19011/types.ts:12: * @compliance SOX §404 internal-controls evidence-preservation
 src/standards/iso-19011/types.ts:13: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/standards/iso-19011/types.ts:14: * @compliance GDPR Art.30 records-of-processing-activities
+src/standards/iso-27002/types.ts:12: * @compliance SOC-2 trust-services-criteria
 src/standards/nist-incits-359/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/standards/nist-incits-359/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
 src/standards/nist-incits-359/index.ts:16: * @compliance SOX §404 internal-controls
@@ -2755,6 +2768,7 @@ tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trai
 tests/standards/ifrs-15/types.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
+tests/standards/iso-27002/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
 ## @quality
