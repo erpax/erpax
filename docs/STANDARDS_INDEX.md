@@ -769,8 +769,9 @@ src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
 src/standards/index.ts:25: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 src/standards/index.ts:30: * @standard ISO-27002:2022 information-security-controls
 src/standards/index.ts:31: * @standard ISO-27001:2022 isms-annex-a-controls
-src/standards/index.ts:39: * @standard W3C CSP-3
-src/standards/index.ts:40: * @standard W3C Permissions-Policy
+src/standards/index.ts:32: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/standards/index.ts:40: * @standard W3C CSP-3
+src/standards/index.ts:41: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -873,6 +874,36 @@ src/standards/rfc-6585/rate-limit.ts:11: * @standard NIST SP-800-63B §5.2.2 rat
 src/standards/rfc-9110/cache.ts:8: * @standard W3C HTTP-Cache stale-while-revalidate
 src/standards/rfc-9110/cache.ts:9: * @standard BCP-47 language-tag locale-keyed-cache
 src/standards/rfc-9110/get-globals.ts:6: * @standard BCP-47 language-tag locale-keyed-cache
+src/standards/saf-t/index.ts:4: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/standards/saf-t/types.ts:103: * @standard OECD SAF-T 2.0 Header
+src/standards/saf-t/types.ts:12: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/standards/saf-t/types.ts:139: * @standard OECD SAF-T 2.0 GeneralLedgerAccounts
+src/standards/saf-t/types.ts:13: * @standard ISO-3166-1:2020 country-codes
+src/standards/saf-t/types.ts:14: * @standard ISO-4217:2015 currency-codes
+src/standards/saf-t/types.ts:15: * @standard ISO-8601-1:2019 date-time
+src/standards/saf-t/types.ts:168: * @standard OECD SAF-T 2.0 Customer
+src/standards/saf-t/types.ts:183: * @standard OECD SAF-T 2.0 Supplier
+src/standards/saf-t/types.ts:195: * @standard OECD SAF-T 2.0 Product
+src/standards/saf-t/types.ts:211: * @standard OECD SAF-T 2.0 TaxTableEntry
+src/standards/saf-t/types.ts:227: * @standard OECD SAF-T 2.0 MasterFiles
+src/standards/saf-t/types.ts:243: * @standard OECD SAF-T 2.0 Line
+src/standards/saf-t/types.ts:266: * @standard OECD SAF-T 2.0 Transaction
+src/standards/saf-t/types.ts:28: * @standard OECD SAF-T 2.0 AddressStructure
+src/standards/saf-t/types.ts:291: * @standard OECD SAF-T 2.0 Journal
+src/standards/saf-t/types.ts:302: * @standard OECD SAF-T 2.0 GeneralLedgerEntries
+src/standards/saf-t/types.ts:318: * @standard OECD SAF-T 2.0 SourceDocuments
+src/standards/saf-t/types.ts:329: * @standard OECD SAF-T 2.0 InvoiceLine
+src/standards/saf-t/types.ts:351: * @standard OECD SAF-T 2.0 SalesInvoice
+src/standards/saf-t/types.ts:384: * @standard OECD SAF-T 2.0 Payment
+src/standards/saf-t/types.ts:414: * @standard OECD SAF-T 2.0 PaymentMechanism
+src/standards/saf-t/types.ts:440: * @standard OECD SAF-T 2.0 MovementOfGoods
+src/standards/saf-t/types.ts:44: * @standard OECD SAF-T 2.0 PartyInfoStructure
+src/standards/saf-t/types.ts:467: * @standard OECD SAF-T 2.0 SourceDocuments
+src/standards/saf-t/types.ts:500: * @standard OECD SAF-T 2.0 AuditFile
+src/standards/saf-t/types.ts:63: * @standard OECD SAF-T 2.0 AmountStructure
+src/standards/saf-t/types.ts:79: * @standard OECD SAF-T 2.0 TaxInformationStructure
+src/standards/saf-t/validate.ts:4: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/standards/saf-t/validate.ts:53: * @standard OECD SAF-T 2.0 GeneralLedgerEntries
 src/testing/config-discovery-types.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/config-discovery-types.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 src/testing/config-discovery.ts:7: * @standard ISO/IEC-29119:2022 software-testing
@@ -1119,6 +1150,8 @@ tests/standards/rfc-9110/get-document.int.spec.ts:4: * @standard ISO/IEC-29119:2
 tests/standards/rfc-9110/get-document.int.spec.ts:6: * @standard BCP-47 language-tag locale-keyed-cache
 tests/standards/rfc-9110/get-globals.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/rfc-9110/get-redirects.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/saf-t/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/saf-t/types.int.spec.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 tests/testing/config-discovery-advanced.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/testing/config-discovery-advanced.test.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 tests/testing/config-discovery.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
@@ -1289,13 +1322,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:32: * @rfc 5869 hkdf
-src/standards/index.ts:33: * @rfc 5116 aead
-src/standards/index.ts:34: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:35: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:36: * @rfc 9110 http-semantics
-src/standards/index.ts:37: * @rfc 9111 http-caching
-src/standards/index.ts:38: * @rfc 6797 hsts
+src/standards/index.ts:33: * @rfc 5869 hkdf
+src/standards/index.ts:34: * @rfc 5116 aead
+src/standards/index.ts:35: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:36: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:37: * @rfc 9110 http-semantics
+src/standards/index.ts:38: * @rfc 9111 http-caching
+src/standards/index.ts:39: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -1744,6 +1777,7 @@ src/standards/nist-sp-800-108/kdf.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-
 src/standards/nist-sp-800-38/aes-gcm.ts:16: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/standards/nist-sp-800-38/aes-gcm.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 src/standards/rfc-6585/rate-limit.ts:15: * @compliance SOC-2 CC6.1 logical-access-controls
+src/standards/saf-t/types.ts:19: * @compliance SOX §404 internal-controls
 src/types/bank-reconciliation.ts:163: * @compliance SOX §404 internal-controls
 src/types/events.ts:10: * @compliance SOX §404 internal-controls
 src/types/events.ts:267: * @compliance SOX §404 internal-controls cycle-count
@@ -2301,6 +2335,8 @@ src/standards/index.ts:27: * @accounting US-GAAP ASC-606 revenue-from-contracts-
 src/standards/index.ts:28: * @accounting IFRS IFRS-16 leases
 src/standards/index.ts:29: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/standards/iso-20022/types.ts:14: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/standards/saf-t/types.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/standards/saf-t/types.ts:17: * @accounting US-GAAP ASC-205 presentation
 src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:240: * @accounting US-GAAP ASC-310 receivables returned-checks
@@ -2936,6 +2972,7 @@ src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evide
 src/standards/iso-20022/types.ts:15: * @audit ISO-19011:2018 audit-trail
 src/standards/iso-27002/coverage.ts:12: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
+src/standards/saf-t/types.ts:18: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/test-seed-factory.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
@@ -2995,6 +3032,7 @@ tests/standards/iso-20022/collection-alignment.int.spec.ts:11: * @audit ISO-1901
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-27002/access-coverage.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
 tests/standards/iso-27002/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
+tests/standards/saf-t/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
 ## @quality

@@ -29,6 +29,7 @@
  * @accounting US-GAAP ASC-842-20 lessee-accounting
  * @standard ISO-27002:2022 information-security-controls
  * @standard ISO-27001:2022 isms-annex-a-controls
+ * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -246,6 +247,39 @@ export {
   coverageByTheme,
   aggregateCoverage,
 } from './iso-27002'
+
+// Tax-authority audit file (OECD SAF-T 2.0)
+export type {
+  SafTAddressStructure,
+  SafTPartyId,
+  SafTAmountStructure,
+  SafTTaxInformation,
+  SafTHeader,
+  SafTGeneralLedgerAccount,
+  SafTCustomer,
+  SafTSupplier,
+  SafTProduct,
+  SafTTaxTableEntry,
+  SafTMasterFiles,
+  SafTLine,
+  SafTTransaction,
+  SafTJournal,
+  SafTGeneralLedgerEntries,
+  SafTSourceDocumentType,
+  SafTSalesInvoiceLine,
+  SafTSalesInvoice,
+  SafTPaymentMechanism,
+  SafTPaymentMethod,
+  SafTPayment,
+  SafTMovementOfGoods,
+  SafTSourceDocuments,
+  SafTAuditFile,
+} from './saf-t'
+export {
+  isSafTSourceDocumentType,
+  isSafTPaymentMechanism,
+  isBalancedGeneralLedger,
+} from './saf-t'
 
 // Audit-trail types (ISO 19011 §6.4.6 audit-evidence)
 export type {
