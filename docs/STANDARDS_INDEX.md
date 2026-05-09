@@ -703,6 +703,10 @@ src/services/multi-currency.service.ts:14: * @standard ISO-8601-1:2019 date-time
 src/services/multi-currency.service.ts:15: * @standard BCP-47 language-tag locale-formatting
 src/services/period-end-adjustment.service.ts:21: * @standard ISO-8601-1:2019 date-time period
 src/services/period-end-adjustment.service.ts:22: * @standard ISO-4217:2015 currency-codes
+src/services/saf-t-export.service.ts:30: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/services/saf-t-export.service.ts:31: * @standard ISO-3166-1:2020 country-codes
+src/services/saf-t-export.service.ts:32: * @standard ISO-4217:2015 currency-codes
+src/services/saf-t-export.service.ts:33: * @standard ISO-8601-1:2019 date-time
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
 src/services/tax-automation.service.ts:19: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
@@ -1042,6 +1046,8 @@ tests/int/accounting/payroll-disbursement.int.spec.ts:8: * @standard ISO/IEC-291
 tests/int/accounting/payroll-disbursement.int.spec.ts:9: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 tests/int/accounting/payroll-run-posting.int.spec.ts:16: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/saf-t-export.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/saf-t-export.int.spec.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 tests/int/api.int.spec.ts:10: * @standard OpenAPI 3.1 api-description
 tests/int/api.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 tests/int/config/appCollectionsRegistry.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing configuration-test
@@ -1764,6 +1770,7 @@ src/services/host.service.ts:10: * @compliance GDPR Art.28 processor
 src/services/host.service.ts:11: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/journal-entry.service.ts:13: * @compliance SOX §404 internal-controls
 src/services/period-end-adjustment.service.ts:32: * @compliance SOX §404 internal-controls
+src/services/saf-t-export.service.ts:35: * @compliance SOX §404 internal-controls
 src/standards/_security-headers/headers.ts:17: * @compliance SOC-2 CC6.6 boundary-protection
 src/standards/iso-19011/types.ts:12: * @compliance SOX §404 internal-controls evidence-preservation
 src/standards/iso-19011/types.ts:13: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
@@ -2965,6 +2972,7 @@ src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/lease.service.ts:30: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:33: * @audit ISO-19011:2018 audit-trail
+src/services/saf-t-export.service.ts:34: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:280: * @audit ISO-19011:2018 audit-trail revenue-evidence
 src/standards/ifrs-16/types.ts:11: * @audit ISO-19011:2018 audit-trail
@@ -3016,6 +3024,7 @@ tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-t
 tests/int/accounting/payroll-disbursement.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/payroll-run-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail period-end-evidence
+tests/int/accounting/saf-t-export.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/config/appCollectionsRegistry.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-trail
 tests/int/parties/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
