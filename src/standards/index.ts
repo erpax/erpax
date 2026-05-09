@@ -23,6 +23,9 @@
  * @standard UN-CEFACT 1001 document-name-code
  * @standard UN-CEFACT 4461 payment-means
  * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+ * @standard Peppol-BIS-3.0 billing
+ * @standard ISO-6523-1:1998 participant-identifier-scheme
+ * @standard UBL-2.1 universal-business-language
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @accounting IFRS IFRS-16 leases
@@ -212,6 +215,25 @@ export {
   isChargeBearerCode,
   isBankTransactionCodeShape,
 } from './iso-20022'
+
+// Peppol BIS Billing 3.0 envelope (UBL profile of EN 16931)
+export type {
+  PeppolProfileId,
+  PeppolDocumentTypeId,
+  PeppolParticipantIdentifierScheme,
+  PeppolParticipantIdentifier,
+  PeppolEndpointId,
+  PeppolEnvelope,
+  PeppolBillingMessage,
+} from './peppol-bis-3'
+export {
+  PEPPOL_BIS_3_CUSTOMIZATION_ID,
+  isPeppolParticipantIdentifierScheme,
+  isPeppolDocumentTypeId,
+  isPeppolProfileId,
+  formatPeppolParticipantId,
+  parsePeppolParticipantId,
+} from './peppol-bis-3'
 
 // E-invoice semantic data model (EN 16931:2017+A1:2019)
 export type {

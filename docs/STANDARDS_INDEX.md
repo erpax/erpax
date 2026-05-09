@@ -771,11 +771,14 @@ src/standards/index.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/standards/index.ts:23: * @standard UN-CEFACT 1001 document-name-code
 src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
 src/standards/index.ts:25: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
-src/standards/index.ts:30: * @standard ISO-27002:2022 information-security-controls
-src/standards/index.ts:31: * @standard ISO-27001:2022 isms-annex-a-controls
-src/standards/index.ts:32: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
-src/standards/index.ts:40: * @standard W3C CSP-3
-src/standards/index.ts:41: * @standard W3C Permissions-Policy
+src/standards/index.ts:26: * @standard Peppol-BIS-3.0 billing
+src/standards/index.ts:27: * @standard ISO-6523-1:1998 participant-identifier-scheme
+src/standards/index.ts:28: * @standard UBL-2.1 universal-business-language
+src/standards/index.ts:33: * @standard ISO-27002:2022 information-security-controls
+src/standards/index.ts:34: * @standard ISO-27001:2022 isms-annex-a-controls
+src/standards/index.ts:35: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/standards/index.ts:43: * @standard W3C CSP-3
+src/standards/index.ts:44: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -868,6 +871,26 @@ src/standards/nist-sp-800-38/aes-gcm.ts:12: * @standard NIST FIPS-180-4 sha-256
 src/standards/nist-sp-800-38/aes-gcm.ts:46: * @standard NIST SP-800-38D §6 ghash + §7.1 encrypt
 src/standards/nist-sp-800-38/aes-gcm.ts:77: * @standard NIST SP-800-38D §7.2 decrypt-and-verify
 src/standards/nist-sp-800-38/index.ts:4: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
+src/standards/peppol-bis-3/index.ts:4: * @standard Peppol-BIS-3.0 billing
+src/standards/peppol-bis-3/index.ts:5: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/standards/peppol-bis-3/index.ts:6: * @standard UBL-2.1 universal-business-language
+src/standards/peppol-bis-3/index.ts:7: * @standard ISO-6523-1:1998 participant-identifier-scheme
+src/standards/peppol-bis-3/types.ts:101: * @standard Peppol-BIS-3.0 EndpointID
+src/standards/peppol-bis-3/types.ts:10: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/standards/peppol-bis-3/types.ts:111: * @standard Peppol-BIS-3.0 envelope
+src/standards/peppol-bis-3/types.ts:11: * @standard UBL-2.1 universal-business-language
+src/standards/peppol-bis-3/types.ts:12: * @standard ISO-6523-1:1998 participant-identifier-scheme
+src/standards/peppol-bis-3/types.ts:130: * @standard Peppol-BIS-3.0 billing
+src/standards/peppol-bis-3/types.ts:131: * @standard EN-16931:2017 semantic-model-electronic-invoice
+src/standards/peppol-bis-3/types.ts:25: * @standard Peppol-BIS-3.0 customization-id
+src/standards/peppol-bis-3/types.ts:35: * @standard Peppol-BIS-3.0 profile-id
+src/standards/peppol-bis-3/types.ts:45: * @standard Peppol-BIS-3.0 document-type-id
+src/standards/peppol-bis-3/types.ts:56: * @standard ISO-6523-1:1998 organization-identification-scheme
+src/standards/peppol-bis-3/types.ts:57: * @standard Peppol-BIS-3.0 participant-identifier-scheme
+src/standards/peppol-bis-3/types.ts:90: * @standard Peppol-BIS-3.0 EndpointID
+src/standards/peppol-bis-3/types.ts:9: * @standard Peppol-BIS-3.0 billing
+src/standards/peppol-bis-3/validate.ts:4: * @standard Peppol-BIS-3.0 billing
+src/standards/peppol-bis-3/validate.ts:5: * @standard ISO-6523-1:1998 participant-identifier-scheme
 src/standards/rfc-3986/generate-preview-path.ts:5: * @standard W3C URL Living Standard
 src/standards/rfc-3986/generate-preview-path.ts:6: * @standard BCP-47 language-tag locale
 src/standards/rfc-3986/get-url.ts:7: * @standard W3C URL Living Standard
@@ -1143,6 +1166,9 @@ tests/standards/nist-sp-800-108/derive-secret.int.spec.ts:7: * @standard NIST FI
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:5: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:6: * @standard NIST FIPS-197 aes-256
+tests/standards/peppol-bis-3/types.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/peppol-bis-3/types.int.spec.ts:5: * @standard Peppol-BIS-3.0 billing
+tests/standards/peppol-bis-3/types.int.spec.ts:6: * @standard ISO-6523-1:1998 participant-identifier-scheme
 tests/standards/rfc-3986/generate-preview-path.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/rfc-3986/generate-preview-path.int.spec.ts:6: * @standard W3C URL Living Standard
 tests/standards/rfc-3986/generate-preview-path.int.spec.ts:7: * @standard BCP-47 language-tag
@@ -1328,13 +1354,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:33: * @rfc 5869 hkdf
-src/standards/index.ts:34: * @rfc 5116 aead
-src/standards/index.ts:35: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:36: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:37: * @rfc 9110 http-semantics
-src/standards/index.ts:38: * @rfc 9111 http-caching
-src/standards/index.ts:39: * @rfc 6797 hsts
+src/standards/index.ts:36: * @rfc 5869 hkdf
+src/standards/index.ts:37: * @rfc 5116 aead
+src/standards/index.ts:38: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:39: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:40: * @rfc 9110 http-semantics
+src/standards/index.ts:41: * @rfc 9111 http-caching
+src/standards/index.ts:42: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -2337,10 +2363,10 @@ src/standards/ifrs-16/types.ts:75: * @accounting US-GAAP ASC-842-10-25-8 lease-m
 src/standards/ifrs-16/types.ts:9: * @accounting IFRS IFRS-16 leases lessee
 src/standards/ifrs-16/validate.ts:5: * @accounting IFRS IFRS-16 leases
 src/standards/ifrs-16/validate.ts:6: * @accounting US-GAAP ASC-842-20 lessee-accounting
-src/standards/index.ts:26: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/standards/index.ts:27: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/standards/index.ts:28: * @accounting IFRS IFRS-16 leases
-src/standards/index.ts:29: * @accounting US-GAAP ASC-842-20 lessee-accounting
+src/standards/index.ts:29: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/standards/index.ts:30: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/index.ts:31: * @accounting IFRS IFRS-16 leases
+src/standards/index.ts:32: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/standards/iso-20022/types.ts:14: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/standards/saf-t/types.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/standards/saf-t/types.ts:17: * @accounting US-GAAP ASC-205 presentation
@@ -2980,6 +3006,7 @@ src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evide
 src/standards/iso-20022/types.ts:15: * @audit ISO-19011:2018 audit-trail
 src/standards/iso-27002/coverage.ts:12: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
+src/standards/peppol-bis-3/types.ts:13: * @audit ISO-19011:2018 audit-trail
 src/standards/saf-t/types.ts:18: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
@@ -3041,6 +3068,7 @@ tests/standards/iso-20022/collection-alignment.int.spec.ts:11: * @audit ISO-1901
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-27002/access-coverage.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
 tests/standards/iso-27002/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
+tests/standards/peppol-bis-3/types.int.spec.ts:7: * @audit ISO-19011:2018 audit-trail
 tests/standards/saf-t/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
