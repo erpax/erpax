@@ -696,6 +696,10 @@ src/standards/en-16931/validate.ts:6: * @standard EN-16931:2017+A1:2019 semantic
 src/standards/en-16931/validate.ts:7: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/standards/en-16931/validate.ts:8: * @standard UN-CEFACT 1001 document-name-code
 src/standards/en-16931/validate.ts:9: * @standard UN-CEFACT 4461 payment-means
+src/standards/ifrs-15/index.ts:6: * @standard ISO-4217:2015 currency-codes
+src/standards/ifrs-15/types.ts:7: * @standard ISO-4217:2015 currency-codes
+src/standards/ifrs-15/types.ts:8: * @standard ISO-8601-1:2019 date-time
+src/standards/ifrs-15/validate.ts:4: * @standard ECMA-262 ECMAScript-2024 baseline
 src/standards/index.ts:10: * @standard ISO-3166-2:2020 subdivision-codes
 src/standards/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/standards/index.ts:12: * @standard ISO-13616-1:2020 iban
@@ -710,8 +714,8 @@ src/standards/index.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
 src/standards/index.ts:23: * @standard UN-CEFACT 1001 document-name-code
 src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
 src/standards/index.ts:25: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
-src/standards/index.ts:33: * @standard W3C CSP-3
-src/standards/index.ts:34: * @standard W3C Permissions-Policy
+src/standards/index.ts:35: * @standard W3C CSP-3
+src/standards/index.ts:36: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -987,6 +991,7 @@ tests/standards/bcp-47/language-tag.int.spec.ts:4: * @standard ISO/IEC-29119:202
 tests/standards/bcp-47/language-tag.int.spec.ts:5: * @standard BCP-47 language-tag
 tests/standards/en-16931/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/en-16931/types.int.spec.ts:8: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+tests/standards/ifrs-15/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
@@ -1198,13 +1203,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:26: * @rfc 5869 hkdf
-src/standards/index.ts:27: * @rfc 5116 aead
-src/standards/index.ts:28: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:29: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:30: * @rfc 9110 http-semantics
-src/standards/index.ts:31: * @rfc 9111 http-caching
-src/standards/index.ts:32: * @rfc 6797 hsts
+src/standards/index.ts:28: * @rfc 5869 hkdf
+src/standards/index.ts:29: * @rfc 5116 aead
+src/standards/index.ts:30: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:31: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:32: * @rfc 9110 http-semantics
+src/standards/index.ts:33: * @rfc 9111 http-caching
+src/standards/index.ts:34: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -2079,6 +2084,38 @@ src/standards/_money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-tran
 src/standards/_money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
 src/standards/en-16931/types.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/standards/en-16931/types.ts:17: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/ifrs-15/index.ts:4: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/standards/ifrs-15/index.ts:5: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/ifrs-15/types.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/ifrs-15/types.ts:123: * @accounting IFRS IFRS-15 §22 performance-obligation
+src/standards/ifrs-15/types.ts:124: * @accounting IFRS IFRS-15 §27 distinct-criteria
+src/standards/ifrs-15/types.ts:125: * @accounting US-GAAP ASC-606-10-25-14 performance-obligation
+src/standards/ifrs-15/types.ts:193: * @accounting IFRS IFRS-15 §47 transaction-price
+src/standards/ifrs-15/types.ts:194: * @accounting US-GAAP ASC-606-10-32 transaction-price
+src/standards/ifrs-15/types.ts:229: * @accounting IFRS IFRS-15 §50-§59 variable-consideration
+src/standards/ifrs-15/types.ts:230: * @accounting IFRS IFRS-15 §56 constraint
+src/standards/ifrs-15/types.ts:24: * @accounting IFRS IFRS-15 §32 recognition-timing
+src/standards/ifrs-15/types.ts:251: * @accounting IFRS IFRS-15 §73-§86 allocation
+src/standards/ifrs-15/types.ts:252: * @accounting US-GAAP ASC-606-10-32-28 allocation
+src/standards/ifrs-15/types.ts:25: * @accounting US-GAAP ASC-606-10-25-30 recognition-timing
+src/standards/ifrs-15/types.ts:278: * @accounting IFRS IFRS-15 §31-§38 recognition
+src/standards/ifrs-15/types.ts:279: * @accounting US-GAAP ASC-606-10-25 recognition
+src/standards/ifrs-15/types.ts:318: * @accounting IFRS IFRS-15 §107 contract-asset
+src/standards/ifrs-15/types.ts:319: * @accounting US-GAAP ASC-606-10-45-3 contract-asset
+src/standards/ifrs-15/types.ts:32: * @accounting IFRS IFRS-15 §41-§43 progress-measurement
+src/standards/ifrs-15/types.ts:335: * @accounting IFRS IFRS-15 §106 contract-liability
+src/standards/ifrs-15/types.ts:336: * @accounting US-GAAP ASC-606-10-45-2 contract-liability
+src/standards/ifrs-15/types.ts:33: * @accounting US-GAAP ASC-606-10-25-31 progress-measurement
+src/standards/ifrs-15/types.ts:353: * @accounting IFRS IFRS-15 §B22 refund-liability
+src/standards/ifrs-15/types.ts:354: * @accounting US-GAAP ASC-606-10-32-10 refund-liability
+src/standards/ifrs-15/types.ts:62: * @accounting IFRS IFRS-15 §53 variable-consideration-estimation
+src/standards/ifrs-15/types.ts:78: * @accounting IFRS IFRS-15 §10 contract-identification
+src/standards/ifrs-15/types.ts:79: * @accounting IFRS IFRS-15 §17 contract-combination
+src/standards/ifrs-15/types.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/standards/ifrs-15/validate.ts:5: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/standards/ifrs-15/validate.ts:6: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/standards/index.ts:26: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/standards/index.ts:27: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/standards/iso-20022/types.ts:14: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -2168,6 +2205,8 @@ tests/jobs/dunningJob.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contrac
 tests/jobs/dunningJob.test.ts:7: * @accounting US-GAAP ASC-326 credit-losses-cecl
 tests/jobs/dunningJob.test.ts:8: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/standards/_money/money.int.spec.ts:7: * @accounting IFRS IAS-21 foreign-currency-translation
+tests/standards/ifrs-15/types.int.spec.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+tests/standards/ifrs-15/types.int.spec.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 tests/utilities/seedSubscriptionPlans.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 tests/utilities/seedSubscriptionPlans.test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/utilities/stripeWebhookHandlers.test.ts:8: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -2666,6 +2705,8 @@ src/services/gl-posting.service.ts:526:   * @audit ISO-19011:2018 audit-trail pe
 src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:13: * @audit ISO-19011:2018 audit-trail
+src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
+src/standards/ifrs-15/types.ts:280: * @audit ISO-19011:2018 audit-trail revenue-evidence
 src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/standards/iso-20022/types.ts:15: * @audit ISO-19011:2018 audit-trail
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
@@ -2711,6 +2752,7 @@ tests/int/parties/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail st
 tests/int/receivables/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
 tests/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
+tests/standards/ifrs-15/types.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup

@@ -23,6 +23,8 @@
  * @standard UN-CEFACT 1001 document-name-code
  * @standard UN-CEFACT 4461 payment-means
  * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+ * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+ * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -126,6 +128,31 @@ export {
   getCachedGlobal,
   getCachedRedirects,
 } from './rfc-9110'
+
+// Revenue from Contracts with Customers (IFRS 15 / ASC 606 five-step model)
+export type {
+  RecognitionTiming,
+  OverTimeMeasurement,
+  OutputMethodKind,
+  InputMethodKind,
+  VariableConsiderationMethod,
+  Contract,
+  PerformanceObligation,
+  TransactionPrice,
+  VariableConsideration,
+  Allocation,
+  RevenueRecognition,
+  ContractAsset,
+  ContractLiability,
+  RefundLiability,
+} from './ifrs-15'
+export {
+  isRecognitionTiming,
+  isOverTimeMeasurement,
+  isOutputMethodKind,
+  isInputMethodKind,
+  isVariableConsiderationMethod,
+} from './ifrs-15'
 
 // Bank-payment messages (ISO 20022:2022 — camt.053 / pain.001 / pain.008 / pacs.004)
 export type {
