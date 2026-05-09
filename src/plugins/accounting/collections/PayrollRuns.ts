@@ -53,6 +53,7 @@ import {
 } from '../fields/base-accounting-fields'
 import { validateNotLocked } from '../utilities/period-lock'
 import { payrollRunPostingHook } from '../hooks/payroll-run.hook'
+import { payrollDisbursementHook } from '../hooks/payroll-disbursement.hook'
 
 const PayrollRuns: CollectionConfig = {
   slug: 'payroll-runs',
@@ -366,6 +367,11 @@ const PayrollRuns: CollectionConfig = {
       // ASC 710 wages JE and back-links the JE id. SOX §404 four-eyes
       // is enforced in beforeChange via enforceSegregationOfDuties.
       payrollRunPostingHook,
+      // Disbursement on status → 'disbursed' — creates a pain.001
+      // payment-runs row with one transaction per employee net pay,
+      // back-links the PaymentRuns id. Status starts at
+      // 'pending_review' so a treasury preparer reviews before export.
+      payrollDisbursementHook,
       auditTrailAfterChange('payroll-runs'),
     ],
   },
