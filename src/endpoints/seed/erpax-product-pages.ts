@@ -8,7 +8,7 @@
  *
  *   await seedErpaxProductPages(payload, { tenantId, parentSlug: 'products' })
  *
- * Pages produced (17 total):
+ * Pages produced (18 total):
  *   /products                       — index (matrix of all capabilities)
  *   /products/quote-to-cash         — Sales / order management
  *   /products/procure-to-pay        — Purchasing / vendor bills
@@ -24,6 +24,7 @@
  *   /products/leases                — IFRS 16 / ASC 842 ROU + lease liability
  *   /products/payment-runs          — ISO 20022 pain.001/008 batch + SEPA mandates
  *   /products/dunning               — IFRS 9 / CECL collections trail
+ *   /products/e-invoicing-and-tax-files — EN 16931 / Peppol / EDIFACT / SAF-T / ISO 20022 import + export
  *   /products/payroll               — IAS 19 / ASC 710 + ISO 20022 pain.001 disbursement
  *   /products/cost-centers          — IFRS 8 / ASC 280 segment dimension
  *
@@ -569,6 +570,38 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
     cta: { label: 'See dunning in action', url: '/contact' },
     metaDescription:
       'Dunning & Collections by erpax — IFRS 9 / CECL-grade evidence trail for every overdue invoice, scheduled stage progression, controller-approved write-offs.',
+  },
+  {
+    slug: 'e-invoicing-and-tax-files',
+    title: 'E-Invoicing & Tax-Authority Files',
+    tagline:
+      'EN 16931 / Peppol BIS 3.0 / UN-EDIFACT / OECD SAF-T / ISO 20022 — every wire format the EU + global tax authorities require, with bidirectional parsers + serializers.',
+    pitch:
+      'erpax ships a unified import/export plugin that handles every standards-bearing wire format your tenants need. Outbound: tenants generate UBL 2.1 invoices for the Peppol network, OECD SAF-T XML for monthly tax-authority submissions (PT / NO / RO / LU), pain.001 + pain.008 SEPA batches for the bank, and legacy EDIFACT INVOIC for trading partners on the old EDI rails. Inbound: incoming Peppol UBL invoices and camt.053 bank statements parse into typed collections so AP automation + bank reconciliation runs without manual data entry.',
+    standards: [
+      'EN 16931:2017+A1:2019 — semantic data model of the e-invoice (BG-25 line, BG-22 totals, BG-23 VAT)',
+      'Peppol BIS Billing 3.0 — UBL 2.1 profile + ISO 6523 participant identifiers (22-scheme catalogue)',
+      'OECD SAF-T 2.0 — Header + MasterFiles + GeneralLedgerEntries + SourceDocuments',
+      'UN/EDIFACT D.96A — INVOIC + DESADV + PAYMUL with ISO 9735 syntax',
+      'ISO 20022 — pain.001 (credit transfer) + pain.008 (direct debit) + camt.053 (statement)',
+      'UN/CEFACT 1001 + 5305 + 4461 code lists shared across formats',
+      'SOX §404 internal-controls evidence preservation on every export run',
+    ],
+    wired: [
+      '`POST /api/export/standards` — unified outbound: format ∈ saf-t-xml | peppol-ubl | edifact | pain-001-xml | pain-008-xml',
+      '`exportStandards(request)` — programmatic dispatcher returning content + RFC 6266 filename + RFC 6838 MIME type',
+      '`importStandards(request)` — inbound dispatcher: format ∈ camt.053 | camt.053-multi | peppol-ubl',
+      'OECD SAF-T XML: Header / MasterFiles (GL accounts + customers + suppliers + products + tax table) / GeneralLedgerEntries (per-journal grouping by sourceType) / SourceDocuments (sales invoices + purchase invoices + payments + movement of goods)',
+      'Peppol UBL: full BG-1/22/23/25 + BG-29/30 + cac:/cbc: namespaces + ClassifiedTaxCategory + 22 ISO 6523 schemes',
+      'EDIFACT INVOIC: UNB/UNH/BGM/DTM/NAD/LIN/IMD/QTY/PRI/MOA/TAX/UNS/UNT segments with ISO 9735 escape rules',
+      'ISO 20022 pain.001: GrpHdr + PmtInf + CdtTrfTxInf with structured RF (ISO 11649) creditor reference',
+      'ISO 20022 pain.008: SEPA SDD with MndtId + DtOfSgntr + LclInstrm CORE/B2B + SeqTp FRST/RCUR/OOFF/FNAL',
+      'camt.053 inbound: parses Stmt → Acct + balances + Ntry → BkTxCd triplet + RltdPties + RmtInf',
+      'Peppol UBL inbound: round-trips with the outbound serializer; CreditNote-2 vs Invoice-2 derived from invoice type code 380/381',
+    ],
+    cta: { label: 'See the export catalogue', url: '/contact' },
+    metaDescription:
+      'E-Invoicing & Tax Files by erpax — bidirectional Peppol BIS 3.0 / EN 16931 / UN-EDIFACT / OECD SAF-T / ISO 20022 with unified import + export plugin.',
   },
   {
     slug: 'payroll',

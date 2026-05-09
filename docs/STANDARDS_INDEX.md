@@ -323,9 +323,9 @@ src/ecommerce/stripe/tenantConfirmOrder.ts:8: * @standard ISO-4217:2015 currency
 src/ecommerce/stripe/tenantConfirmOrder.ts:9: * @standard ISO-8601-1:2019 date-time confirmed-at
 src/ecommerce/stripe/tenantStripeWebhook.ts:9: * @standard HMAC-SHA256 RFC 2104 signature-scheme
 src/email/tenantAwareResendEmailAdapter.ts:24: * @standard BCP-47 language-tag email-locale
-src/endpoints/seed/erpax-product-pages.ts:30: * @standard schema.org Product
-src/endpoints/seed/erpax-product-pages.ts:31: * @standard schema.org WebSite breadcrumb
-src/endpoints/seed/erpax-product-pages.ts:32: * @standard ISO-25010 usability marketing-content
+src/endpoints/seed/erpax-product-pages.ts:31: * @standard schema.org Product
+src/endpoints/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
+src/endpoints/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
 src/endpoints/seed/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/endpoints/seed/index.ts:9: * @standard BCP-47 language-tag locale-bundled-fixtures
 src/fields/defaultLexical.ts:4: * @standard W3C HTML5 Living Standard rich-text-output
@@ -740,8 +740,8 @@ src/services/peppol-import.service.ts:16: * @standard Peppol-BIS-3.0 billing
 src/services/peppol-import.service.ts:17: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
 src/services/peppol-import.service.ts:18: * @standard UBL-2.1 universal-business-language
 src/services/peppol-import.service.ts:19: * @standard ISO-6523-1:1998 participant-identifier-scheme
-src/services/peppol-import.service.ts:309: * @standard Peppol-BIS-3.0 billing
-src/services/peppol-import.service.ts:310: * @standard EN-16931:2017 semantic-model
+src/services/peppol-import.service.ts:303: * @standard Peppol-BIS-3.0 billing
+src/services/peppol-import.service.ts:304: * @standard EN-16931:2017 semantic-model
 src/services/period-end-adjustment.service.ts:21: * @standard ISO-8601-1:2019 date-time period
 src/services/period-end-adjustment.service.ts:22: * @standard ISO-4217:2015 currency-codes
 src/services/saf-t-export.service.ts:1218: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
@@ -1128,6 +1128,10 @@ tests/int/accounting/edifact-export.int.spec.ts:9: * @standard ISO-9735:2002 edi
 tests/int/accounting/full-cycle-demo.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/full-cycle-demo.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/import-collection-projection.int.spec.ts:14: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/import-collection-projection.int.spec.ts:15: * @standard ISO-20022 camt.053 bank-to-customer-statement
+tests/int/accounting/import-collection-projection.int.spec.ts:16: * @standard Peppol-BIS-3.0 billing
+tests/int/accounting/import-collection-projection.int.spec.ts:17: * @standard EN-16931:2017 semantic-model
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/iso20022-export.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/iso20022-export.int.spec.ts:5: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
@@ -1742,7 +1746,7 @@ src/ecommerce/stripe/tenantStripeWebhook.ts:5: * @compliance PCI-DSS-4.0 §3.6 s
 src/ecommerce/stripe/tenantStripeWebhook.ts:6: * @compliance PSD2 EU-2015/2366 strong-customer-authentication
 src/email/tenantAwareResendEmailAdapter.ts:27: * @compliance GDPR Art.32 security-of-processing
 src/email/tenantAwareResendEmailAdapter.ts:28: * @compliance CAN-SPAM US-15-USC-7701
-src/endpoints/seed/erpax-product-pages.ts:33: * @compliance WCAG-2.1 level-AA accessible-marketing-pages
+src/endpoints/seed/erpax-product-pages.ts:34: * @compliance WCAG-2.1 level-AA accessible-marketing-pages
 src/fields/defaultLexical.ts:8: * @compliance WCAG-2.1 level-AA accessibility
 src/fields/link.ts:8: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
 src/fields/linkGroup.ts:6: * @compliance WCAG-2.1 §2.4.4 link-purpose-in-context
@@ -2953,7 +2957,7 @@ src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audi
 src/ecommerce/productValidation.ts:8: * @audit ISO-19011:2018 audit-trail
 src/ecommerce/stripe/tenantConfirmOrder.ts:14: * @audit ISO-19011:2018 audit-trail
 src/ecommerce/stripe/tenantStripeWebhook.ts:13: * @audit ISO-19011:2018 audit-trail
-src/endpoints/seed/erpax-product-pages.ts:34: * @audit ISO-19011:2018 audit-trail seed-provenance
+src/endpoints/seed/erpax-product-pages.ts:35: * @audit ISO-19011:2018 audit-trail seed-provenance
 src/endpoints/seed/index.ts:10: * @audit ISO-19011:2018 audit-trail seed-runs
 src/hooks/auditTrailAfterChange.ts:10: * @audit ISO-19011:2018 §6.4.6 audit-evidence-collection
 src/hooks/autoPopulateCreatedBy.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
@@ -3151,6 +3155,7 @@ tests/int/accounting/depreciation-methods.int.spec.ts:16: * @audit ISO-19011:201
 tests/int/accounting/edifact-export.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail full-cycle-coverage
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
+tests/int/accounting/import-collection-projection.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/iso20022-export.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/lease-period-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
