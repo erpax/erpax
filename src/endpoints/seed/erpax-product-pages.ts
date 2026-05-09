@@ -8,7 +8,7 @@
  *
  *   await seedErpaxProductPages(payload, { tenantId, parentSlug: 'products' })
  *
- * Pages produced (16 total):
+ * Pages produced (17 total):
  *   /products                       — index (matrix of all capabilities)
  *   /products/quote-to-cash         — Sales / order management
  *   /products/procure-to-pay        — Purchasing / vendor bills
@@ -24,6 +24,7 @@
  *   /products/leases                — IFRS 16 / ASC 842 ROU + lease liability
  *   /products/payment-runs          — ISO 20022 pain.001/008 batch + SEPA mandates
  *   /products/dunning               — IFRS 9 / CECL collections trail
+ *   /products/payroll               — IAS 19 / ASC 710 + ISO 20022 pain.001 disbursement
  *   /products/cost-centers          — IFRS 8 / ASC 280 segment dimension
  *
  * @standard schema.org Product
@@ -568,6 +569,36 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
     cta: { label: 'See dunning in action', url: '/contact' },
     metaDescription:
       'Dunning & Collections by erpax — IFRS 9 / CECL-grade evidence trail for every overdue invoice, scheduled stage progression, controller-approved write-offs.',
+  },
+  {
+    slug: 'payroll',
+    title: 'Payroll & Workforce',
+    tagline:
+      'IAS 19 / ASC 710 — gross-to-net in one cycle, balanced JEs, SEPA batch disbursement.',
+    pitch:
+      'erpax models the full payroll cycle: a GDPR-classed Employees master, daily TimeEntries with overtime / leave / project allocation, and a PayrollRuns batch that goes gross-to-net (income tax + social security + pension + voluntary deductions), accrues employer-side costs (employer SS + pension + payroll taxes), books the canonical IAS 19 journal entry, and emits a pain.001 SEPA credit-transfer file the bank disburses to employee accounts on the pay date. SOX §404 four-eyes by construction — preparer ≠ authoriser.',
+    standards: [
+      'IFRS IAS-19 employee benefits (short-term + post-employment)',
+      'IFRS IAS-19 §51 defined-contribution vs defined-benefit pension treatment',
+      'US-GAAP ASC 710 compensation — general',
+      'US-GAAP ASC 715 compensation — retirement benefits',
+      'ISO 20022 pain.001 — credit-transfer initiation for net-pay disbursement',
+      'GDPR Art.6(1)(b) lawful basis (contract) + Art.30 records of processing + Art.9 special categories of personal data',
+      'ISO 27002 §5.34 privacy and protection of PII + §8.11 data masking',
+      'SOX §404 — preparer / authoriser segregation by enforceSegregationOfDuties hook',
+    ],
+    wired: [
+      '`employees` collection — workforce master with IAS 19 §51 pension plan classification, IBAN/BIC payroll account, tokenised tax + national-id refs (ISO 27002 §8.11 data-masking)',
+      '`time-entries` collection — daily records with 11 leave/work kinds (regular / OT 1.5× / OT 2× / night / holiday / PTO / sick / parental / bereavement / unpaid / training)',
+      '`payroll-runs` collection — batch shell with full gross-to-net line items (base + OT + bonus → income tax + SS + pension + other → net), employer-side accruals, and roll-up totals',
+      'Cost-center allocation per line — feeds IFRS 8 / ASC 280 segment P&L from labor costs',
+      'Status lifecycle: draft → calculated → pending_review → approved → posted (JE booked) → disbursed (pain.001 sent) → settled (bank ack)',
+      'Generated pay-slip PDF per line — distributable to employees',
+      'PayrollRunsPanel widget surface (planned) — gross / net / employer-accruals breakdown',
+    ],
+    cta: { label: 'See a payroll cycle', url: '/contact' },
+    metaDescription:
+      'Payroll & Workforce by erpax — IAS 19 / ASC 710 gross-to-net with SEPA pain.001 disbursement, GDPR-class personal data handling, and SOX §404 four-eyes by construction.',
   },
   {
     slug: 'cost-centers',

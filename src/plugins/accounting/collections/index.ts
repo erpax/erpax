@@ -113,6 +113,14 @@ export { default as SepaMandates } from './SepaMandates'
 export { default as DunningCycles } from './DunningCycles'
 export { default as CostCenters } from './CostCenters'
 
+// ─── Payroll cycle — IAS 19 / ASC 710 / ASC 715 / GDPR Art.9 ───────────
+// Employees (workforce master)
+// TimeEntries (per-day per-task)
+// PayrollRuns (batch gross-to-net + pain.001 disbursement)
+export { default as Employees } from './Employees'
+export { default as TimeEntries } from './TimeEntries'
+export { default as PayrollRuns } from './PayrollRuns'
+
 // Slice QQQ: retired report-shaped collection re-exports removed.
 // Per Payload's "create a collection only when structurally distinct"
 // guidance, derived data is service-generated (see
