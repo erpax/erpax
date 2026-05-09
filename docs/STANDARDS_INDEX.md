@@ -271,13 +271,17 @@ src/components/shared/index.ts:16: * @standard ISO-19160-4:2017 addressing
 src/components/shared/index.ts:17: * @standard ECMA-402 internationalization-api
 src/components/shared/index.ts:18: * @standard BCP-47 language-tag
 src/components/shared/index.ts:19: * @standard W3C HTML5 living-standard
+src/components/widgets/AccountReconciliationsPanel.tsx:7: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/widgets/AuditLogWidget.tsx:7: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/widgets/CostCentersPanel.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/widgets/DunningCyclesPanel.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
+src/components/widgets/EmployeesPanel.tsx:7: * @standard ECMA-262 ECMAScript-2024 baseline
+src/components/widgets/LeasePeriodPostingsPanel.tsx:14: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/widgets/LeasesPanel.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/widgets/PaymentRunsPanel.tsx:10: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/components/widgets/PaymentRunsPanel.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/widgets/PaymentRunsPanel.tsx:9: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
+src/components/widgets/PayrollRunsPanel.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/config/address-formats.ts:23: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/config/address-formats.ts:24: * @standard UPU-S42 international-postal-addressing
 src/config/address-formats.ts:25: * @standard ISO-3166-1:2020 country-codes alpha-2
@@ -1714,8 +1718,11 @@ src/components/shared/AddressBlock.tsx:18: * @compliance WCAG-2.1 §1.3.1 info-a
 src/components/shared/AuditedTimestamp.tsx:18: * @compliance WCAG-2.1 §1.3.1 info-and-relationships time-semantics
 src/components/shared/Money.tsx:20: * @compliance WCAG-2.1 §1.3.1 info-and-relationships tabular-num
 src/components/shared/index.ts:21: * @compliance WCAG-2.1 level-AA shared-atom-accessibility
+src/components/widgets/AccountReconciliationsPanel.tsx:10: * @compliance SOX §404 internal-controls reconciliation-sign-off
 src/components/widgets/AuditLogWidget.tsx:10: * @compliance SOX §404 internal-controls
 src/components/widgets/AuditLogWidget.tsx:9: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
+src/components/widgets/EmployeesPanel.tsx:10: * @compliance GDPR Art.9 special-categories
+src/components/widgets/LeasePeriodPostingsPanel.tsx:19: * @compliance SOX §404 internal-controls capital-asset-register
 src/config/address-formats.ts:28: * @compliance GDPR Art.5(1)(c) data-minimisation collect-only-fields-the-format-requires
 src/config/appCollections.ts:9: * @compliance SOX §404 internal-controls config-as-code
 src/config/country-apis.ts:23: * @compliance EU 2014/55 b2g-e-invoicing portals
@@ -2023,12 +2030,19 @@ src/components/modals/CreateJournalEntryModal.tsx:11: * @accounting IFRS double-
 src/components/modals/CreateJournalEntryModal.tsx:12: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/components/pages/AnalyticsPage.tsx:13: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/shared/Money.tsx:18: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/components/widgets/AccountReconciliationsPanel.tsx:8: * @accounting IFRS IAS-7 statement-of-cash-flows bank-reconciliation
 src/components/widgets/CostCentersPanel.tsx:10: * @accounting US-GAAP ASC-280 segment-reporting
 src/components/widgets/CostCentersPanel.tsx:9: * @accounting IFRS IFRS-8 operating-segments
 src/components/widgets/DunningCyclesPanel.tsx:10: * @accounting US-GAAP ASC-326-20 cecl-credit-losses
 src/components/widgets/DunningCyclesPanel.tsx:9: * @accounting IFRS IFRS-9 §5.5 expected-credit-loss
+src/components/widgets/EmployeesPanel.tsx:8: * @accounting IFRS IAS-19 employee-benefits
+src/components/widgets/LeasePeriodPostingsPanel.tsx:15: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
+src/components/widgets/LeasePeriodPostingsPanel.tsx:16: * @accounting IFRS IFRS-16 §36-§38 lease-liability-amortised-cost
+src/components/widgets/LeasePeriodPostingsPanel.tsx:17: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
 src/components/widgets/LeasesPanel.tsx:10: * @accounting US-GAAP ASC-842-20 lessee-accounting
 src/components/widgets/LeasesPanel.tsx:9: * @accounting IFRS IFRS-16 leases lessee-disclosure
+src/components/widgets/PayrollRunsPanel.tsx:10: * @accounting US-GAAP ASC-710 compensation-general
+src/components/widgets/PayrollRunsPanel.tsx:9: * @accounting IFRS IAS-19 employee-benefits
 src/config/country-specifics.ts:18: * @accounting IFRS IAS-1 §51 fiscal-period
 src/config/country-specifics.ts:19: * @accounting US-GAAP ASC-270 interim-reporting fiscal-year
 src/config/examples.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -2685,6 +2699,8 @@ src/collections/Users/index.ts:52: * @security ISO-27002 §8.5 secure-authentica
 src/components/admin/HostFilters.tsx:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation admin-interface
 src/components/admin/HostManagement.tsx:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation admin-CRUD
 src/components/admin/HostManagement.tsx:6: * @security ISO-27002 §5.15 access-control admin-interface
+src/components/widgets/AccountReconciliationsPanel.tsx:11: * @security ISO-27002 §5.4 segregation-of-duties
+src/components/widgets/EmployeesPanel.tsx:11: * @security ISO-27002 §5.34 privacy-and-protection-of-pii
 src/ecommerce/access/adminOnlyFieldAccess.ts:5: * @security ISO-27001 A.5.18 access-rights
 src/ecommerce/access/adminOnlyFieldAccess.ts:6: * @security ISO-27002 §5.15 access-control
 src/ecommerce/access/adminOrPublishedStatus.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -2947,11 +2963,15 @@ src/components/shared/AddressBlock.tsx:19: * @audit ISO-19011:2018 audit-trail c
 src/components/shared/AuditedTimestamp.tsx:17: * @audit ISO-19011:2018 audit-trail consistent-timestamps
 src/components/shared/Money.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-formatting
 src/components/shared/index.ts:20: * @audit ISO-19011:2018 audit-trail consistent-rendering
+src/components/widgets/AccountReconciliationsPanel.tsx:9: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/components/widgets/AuditLogWidget.tsx:8: * @audit ISO-19011:2018 audit-trail viewer
 src/components/widgets/CostCentersPanel.tsx:11: * @audit ISO-19011:2018 audit-trail
 src/components/widgets/DunningCyclesPanel.tsx:11: * @audit ISO-19011:2018 audit-trail
+src/components/widgets/EmployeesPanel.tsx:9: * @audit ISO-19011:2018 audit-trail
+src/components/widgets/LeasePeriodPostingsPanel.tsx:18: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/components/widgets/LeasesPanel.tsx:11: * @audit ISO-19011:2018 audit-trail
 src/components/widgets/PaymentRunsPanel.tsx:11: * @audit ISO-19011:2018 audit-trail
+src/components/widgets/PayrollRunsPanel.tsx:11: * @audit ISO-19011:2018 audit-trail
 src/config/appCollections.ts:8: * @audit ISO-19011:2018 audit-trail config-completeness
 src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/ecommerce/productValidation.ts:8: * @audit ISO-19011:2018 audit-trail

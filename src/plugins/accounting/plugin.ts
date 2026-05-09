@@ -70,12 +70,27 @@ import {
   WarehouseLocations,
   InventoryMovements,
   BankTransactions,
+  // ERP-completeness round (IFRS-16 / ISO-20022 / IFRS-9 / IFRS-8)
+  Leases,
+  PaymentRuns,
+  SepaMandates,
+  DunningCycles,
+  CostCenters,
+  // Reconciliation evidence pack
+  AccountReconciliations,
+  // Payroll cycle (IAS 19 / ASC 710 / ASC 715 / GDPR Art.9)
+  Employees,
+  TimeEntries,
+  PayrollRuns,
+  // IFRS 16 / ASC 842 lease period evidence
+  LeasePeriodPostings,
 } from './collections';
 
 /**
  * Accounting Plugin
  *
- * Registers 38 accounting-domain collections (15 original + 7 Round 1 + 16 Round 2):
+ * Registers 48 accounting-domain collections (15 original + 7 Round 1 +
+ * 16 Round 2 + 10 ERP-completeness):
  *   - Persistent audit / control evidence (AuditEvents, AuditFindings, ControlTests)
  *   - Double-entry GL (GLAccounts, JournalEntries, GLPostings)
  *   - Banking (BankAccounts, BankStatements, BankTransactions)
@@ -88,6 +103,11 @@ import {
  *   - GDPR data layer (ConsentRecords, DataSubjectRequests, DataProcessingActivities)
  *   - AML / KYC (KycChecks, BeneficialOwners)
  *   - Party masters (Customers, Vendors)
+ *   - Leases — IFRS 16 / ASC 842 (Leases, LeasePeriodPostings)
+ *   - Bank-side payment (SepaMandates, PaymentRuns, AccountReconciliations)
+ *   - AR risk (DunningCycles)
+ *   - Analytical dim (CostCenters)
+ *   - Payroll — IAS 19 / ASC 710 / GDPR (Employees, TimeEntries, PayrollRuns)
  *
  * Following Payload's collection-design guidance, derived/aggregate data is NOT
  * a write-collection — those are service-generated DTOs (see
@@ -154,6 +174,23 @@ export const accountingPlugin = (): Plugin => {
       // SOX §404 evidence layer (depends on AuditEvents being registered)
       AuditFindings,
       ControlTests,
+      // ─── ERP-completeness round ───────────────────────────────────────
+      // CostCenters before anything that references them (analytical dim).
+      CostCenters,
+      // Leases (IFRS 16) — master before period evidence
+      Leases,
+      LeasePeriodPostings,
+      // Bank-side payment infrastructure (PaymentRuns references SepaMandates)
+      SepaMandates,
+      PaymentRuns,
+      // Reconciliation evidence pack (references BankAccounts + GL accounts)
+      AccountReconciliations,
+      // AR risk + collections trail (IFRS-9 / CECL)
+      DunningCycles,
+      // Payroll cycle — Employees first (referenced by TimeEntries + PayrollRuns)
+      Employees,
+      TimeEntries,
+      PayrollRuns,
     ];
 
     return {

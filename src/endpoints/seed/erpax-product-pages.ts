@@ -389,6 +389,8 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'Auto-stamp closedAt / lockedAt / reopenedAt',
       'validateNotLocked rejects back-dated edits inside locked periods',
       'auditTrailAfterChange on every status change',
+      '`account-reconciliations` collection — IAS 7 evidence: bank / GL-to-subledger / intercompany with preparer→reviewer signoff and zero-difference enforcement',
+      'AccountReconciliationsPanel widget — open / approved / rejected counts + unbalanced-approved alert',
     ],
     cta: { label: 'Compliance walkthrough', url: '/contact' },
     metaDescription:
@@ -507,10 +509,12 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
     wired: [
       '`leases` collection — master register: term, payments, discount rate, GL accounts',
       'Initial-measurement service — PV of unpaid payments at commencement, plus IDC + prepayments − incentives',
-      'Period posting (next slice): Dr Interest Expense / Cr Lease Liability + Dr ROU Amortisation / Cr ROU Asset',
+      '`lease-period-postings` collection — one row per (lease × period): interest accretion + principal + ROU amortisation; JE fires on status → posted',
       'Modification handling — scope-increase-not-separate triggers remeasurement at the new IBR',
       'Recognition-exemption flag — short-term + low-value bypass the on-balance treatment',
       'IAS 36 impairment reserve carried on the ROU asset',
+      'LeasesPanel widget — active count, on-balance ROU + liability totals, recognition-exempt count',
+      'LeasePeriodPostingsPanel widget — Σ interest / principal / amortisation + closing carrying amounts',
     ],
     cta: { label: 'See a lease cycle', url: '/contact' },
     metaDescription:
@@ -627,7 +631,8 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'Cost-center allocation per line — feeds IFRS 8 / ASC 280 segment P&L from labor costs',
       'Status lifecycle: draft → calculated → pending_review → approved → posted (JE booked) → disbursed (pain.001 sent) → settled (bank ack)',
       'Generated pay-slip PDF per line — distributable to employees',
-      'PayrollRunsPanel widget surface (planned) — gross / net / employer-accruals breakdown',
+      'EmployeesPanel widget — active vs on-leave count, employment-type mix, IAS 19 §11 PTO accrued liability',
+      'PayrollRunsPanel widget — gross / net / employer-accruals roll-up with status filter',
     ],
     cta: { label: 'See a payroll cycle', url: '/contact' },
     metaDescription:
