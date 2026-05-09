@@ -22,17 +22,23 @@ import {
   parseCamt053,
   parseCamt053Multi,
 } from '@/services/camt053-import.service'
+import { parsePeppolInvoice } from '@/services/peppol-import.service'
 import type { Camt053Statement } from '@/standards/iso-20022'
+import type { PeppolBillingMessage } from '@/standards/peppol-bis-3'
 
 /**
  * Discriminator for inbound wire-format parsers. Mirrors
  * `StandardsExportFormat` but covers the inverse direction.
  */
-export type StandardsImportFormat = 'camt.053' | 'camt.053-multi'
+export type StandardsImportFormat =
+  | 'camt.053'
+  | 'camt.053-multi'
+  | 'peppol-ubl'
 
 export type StandardsImportRequest =
   | { format: 'camt.053'; xml: string }
   | { format: 'camt.053-multi'; xml: string }
+  | { format: 'peppol-ubl'; xml: string }
 
 export interface StandardsImportResult<T = unknown> {
   format: StandardsImportFormat
@@ -46,7 +52,11 @@ export interface StandardsImportResult<T = unknown> {
  */
 export const importStandards = async (
   request: StandardsImportRequest,
-): Promise<StandardsImportResult<Camt053Statement | Camt053Statement[]>> => {
+): Promise<
+  StandardsImportResult<
+    Camt053Statement | Camt053Statement[] | PeppolBillingMessage
+  >
+> => {
   switch (request.format) {
     case 'camt.053':
       return {
@@ -57,6 +67,11 @@ export const importStandards = async (
       return {
         format: 'camt.053-multi',
         data: parseCamt053Multi(request.xml),
+      }
+    case 'peppol-ubl':
+      return {
+        format: 'peppol-ubl',
+        data: parsePeppolInvoice(request.xml),
       }
   }
 }

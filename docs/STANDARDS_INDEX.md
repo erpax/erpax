@@ -736,6 +736,12 @@ src/services/peppol-export.service.ts:16: * @standard ISO-4217:2015 currency-cod
 src/services/peppol-export.service.ts:232: * @standard Peppol-BIS-3.0 billing
 src/services/peppol-export.service.ts:233: * @standard EN-16931:2017 semantic-model
 src/services/peppol-export.service.ts:234: * @standard UBL-2.1 universal-business-language
+src/services/peppol-import.service.ts:16: * @standard Peppol-BIS-3.0 billing
+src/services/peppol-import.service.ts:17: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/services/peppol-import.service.ts:18: * @standard UBL-2.1 universal-business-language
+src/services/peppol-import.service.ts:19: * @standard ISO-6523-1:1998 participant-identifier-scheme
+src/services/peppol-import.service.ts:309: * @standard Peppol-BIS-3.0 billing
+src/services/peppol-import.service.ts:310: * @standard EN-16931:2017 semantic-model
 src/services/period-end-adjustment.service.ts:21: * @standard ISO-8601-1:2019 date-time period
 src/services/period-end-adjustment.service.ts:22: * @standard ISO-4217:2015 currency-codes
 src/services/saf-t-export.service.ts:1218: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
@@ -1142,6 +1148,9 @@ tests/int/accounting/payroll-run-posting.int.spec.ts:16: * @standard ISO/IEC-291
 tests/int/accounting/peppol-export.int.spec.ts:10: * @standard UBL-2.1 universal-business-language
 tests/int/accounting/peppol-export.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/peppol-export.int.spec.ts:9: * @standard Peppol-BIS-3.0 billing
+tests/int/accounting/peppol-import.int.spec.ts:10: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+tests/int/accounting/peppol-import.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/peppol-import.int.spec.ts:9: * @standard Peppol-BIS-3.0 billing
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/saf-t-export.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/saf-t-export.int.spec.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
@@ -3092,6 +3101,7 @@ src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/lease.service.ts:30: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/peppol-export.service.ts:17: * @audit ISO-19011:2018 audit-trail
+src/services/peppol-import.service.ts:20: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:33: * @audit ISO-19011:2018 audit-trail
 src/services/saf-t-export.service.ts:34: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
@@ -3150,6 +3160,7 @@ tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-t
 tests/int/accounting/payroll-disbursement.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/payroll-run-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/peppol-export.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
+tests/int/accounting/peppol-import.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail period-end-evidence
 tests/int/accounting/saf-t-export.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/saf-t-source-documents.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail
