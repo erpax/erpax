@@ -36,6 +36,7 @@ import {
   OrderCancelledEvent,
   OrderRefundedEvent,
   DepreciationPostedEvent,
+  InventoryAdjustedEvent,
 } from '@/types/events';
 import { JournalEntryLine } from './journal-entry.service';
 
@@ -61,6 +62,11 @@ const GL_ACCOUNTS = {
   // Fixed assets / IAS 16 / ASC 360
   DEPRECIATION_EXPENSE: 'depreciation_expense',
   ACCUMULATED_DEPRECIATION: 'accumulated_depreciation',
+  // Inventory variance / write-off / WIP — IAS 2 / ASC 330
+  INVENTORY_VARIANCE_EXPENSE: 'inventory_variance_expense',
+  INVENTORY_VARIANCE_INCOME: 'inventory_variance_income',
+  INVENTORY_WRITEDOWN: 'inventory_writedown_expense',
+  WIP: 'work_in_progress',
 };
 
 // Exported so consumers (hooks/tests) get a tight type — calling a phantom
@@ -117,6 +123,13 @@ export class GLPostingService {
     // Fixed-asset depreciation — IAS 16 / ASC 360.
     this.eventEmitter.subscribe('depreciation:posted', (event) =>
       this.postDepreciation(event as DepreciationPostedEvent)
+    );
+
+    // Inventory adjustments (transfer / adjustment / write_off / consumption)
+    // — IAS 2 / ASC 330. Receipts + sales already covered by inventory:purchased
+    // / inventory:sold from bill:activated / invoice:activated.
+    this.eventEmitter.subscribe('inventory:adjusted', (event) =>
+      this.postInventoryAdjusted(event as InventoryAdjustedEvent)
     );
 
     // Bank events
@@ -567,6 +580,113 @@ export class GLPostingService {
       userId,
     });
 
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Inventory Adjusted — books the canonical IAS 2 / ASC 330 entry per
+   * movement kind:
+   *
+   *   transfer       Dr Inventory (toLocation)        absExtended
+   *                    Cr Inventory (fromLocation)        absExtended
+   *                  (both legs hit the same INVENTORY account today —
+   *                   per-location split is a future slice)
+   *
+   *   adjustment(+)  Dr Inventory                     absExtended
+   *                    Cr Inventory Variance Income      absExtended
+   *
+   *   adjustment(−)  Dr Inventory Variance Expense    absExtended
+   *                    Cr Inventory                       absExtended
+   *
+   *   write_off      Dr Inventory Writedown Expense   absExtended
+   *                    Cr Inventory                       absExtended
+   *
+   *   consumption    Dr WIP (or callerOverride)       absExtended
+   *                    Cr Inventory                       absExtended
+   *
+   * @accounting IFRS IAS-2 §10 §28 §36 inventories
+   * @accounting US-GAAP ASC-330-10-30 inventory-valuation
+   * @audit ISO-19011:2018 audit-trail stock-ledger
+   */
+  async postInventoryAdjusted(event: InventoryAdjustedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const {
+      movementId,
+      kind,
+      quantity,
+      extendedCost,
+      inventoryAccountCode,
+      consumptionAccountCode,
+    } = payload;
+
+    if (extendedCost <= 0) return;
+
+    const inventoryAccount = inventoryAccountCode ?? GL_ACCOUNTS.INVENTORY;
+
+    const description = `Inventory ${kind} — movement ${movementId}`;
+
+    let lines: JournalEntryLine[] = [];
+    switch (kind) {
+      case 'transfer':
+        lines = [
+          { accountId: inventoryAccount, debit: extendedCost, description },
+          { accountId: inventoryAccount, credit: extendedCost, description },
+        ];
+        break;
+      case 'adjustment':
+        if (quantity >= 0) {
+          // Count up — found more than expected.
+          lines = [
+            { accountId: inventoryAccount, debit: extendedCost, description },
+            {
+              accountId: GL_ACCOUNTS.INVENTORY_VARIANCE_INCOME,
+              credit: extendedCost,
+              description,
+            },
+          ];
+        } else {
+          // Count down — shrinkage.
+          lines = [
+            {
+              accountId: GL_ACCOUNTS.INVENTORY_VARIANCE_EXPENSE,
+              debit: extendedCost,
+              description,
+            },
+            { accountId: inventoryAccount, credit: extendedCost, description },
+          ];
+        }
+        break;
+      case 'write_off':
+        lines = [
+          {
+            accountId: GL_ACCOUNTS.INVENTORY_WRITEDOWN,
+            debit: extendedCost,
+            description,
+          },
+          { accountId: inventoryAccount, credit: extendedCost, description },
+        ];
+        break;
+      case 'consumption':
+        lines = [
+          {
+            accountId: consumptionAccountCode ?? GL_ACCOUNTS.WIP,
+            debit: extendedCost,
+            description,
+          },
+          { accountId: inventoryAccount, credit: extendedCost, description },
+        ];
+        break;
+    }
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description,
+      lines,
+      sourceType: 'inventory_movement',
+      sourceId: movementId,
+      sourceEvent: 'inventory:adjusted',
+      userId,
+    });
     await journalEntryService.postEntry(tenantId, entry.id, userId);
   }
 

@@ -26,6 +26,7 @@ import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import { validateNotLocked } from '../utilities/period-lock'
 import { multiTenancyField, currencyField, statusField, notesField, auditFields } from '../fields/base-accounting-fields'
+import { inventoryMovementPostingHook } from '../hooks/inventory-movement.hook'
 
 const InventoryMovements: CollectionConfig = {
   slug: 'inventory-movements',
@@ -101,7 +102,14 @@ const InventoryMovements: CollectionConfig = {
       autoPopulateCreatedBy,
       autoSetTimestamp('postedAt', (d) => (d as { status?: string }).status === 'posted'),
     ],
-    afterChange: [auditTrailAfterChange('inventory-movements')],
+    afterChange: [
+      // Emit inventory:adjusted on status → 'posted' for kinds without
+      // an upstream source-doc GL path (transfer / adjustment / write_off
+      // / consumption). Receipts + sales already covered by
+      // bill:activated / invoice:activated event paths.
+      inventoryMovementPostingHook,
+      auditTrailAfterChange('inventory-movements'),
+    ],
   },
   timestamps: true,
 }

@@ -40,3 +40,4 @@ export * from './item.hook'
 // Period-end hooks — schedule-row driven (status → 'posted' triggers GL).
 export * from './depreciation.hook'
 export * from './period-end-adjustment.hook'
+export * from './inventory-movement.hook'

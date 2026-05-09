@@ -247,6 +247,50 @@ export interface InventorySoldEvent extends DomainEvent {
 }
 
 /**
+ * Inventory Adjustment Events
+ *
+ * Emitted by `InventoryMovements.afterChange` on status → 'posted'
+ * for movement kinds that DON'T have an upstream source document
+ * already posting GL (those go through bill:activated / invoice:activated
+ * / order:* event paths instead). Covers:
+ *
+ *   transfer       — between two warehouse locations (zero net P&L)
+ *   adjustment     — cycle-count variance (signed: + count up / − count down)
+ *   write_off      — IAS 2 §28 NRV write-down or IAS 36 impairment
+ *   consumption    — production / WIP issue (Dr WIP / Cr Inventory)
+ *
+ * @accounting IFRS IAS-2 §10 §36 inventories cost-formulas
+ * @accounting IFRS IAS-2 §28 net-realisable-value
+ * @accounting US-GAAP ASC-330 inventory
+ * @accounting US-GAAP ASC-330-10-30 inventory-valuation
+ * @audit ISO-19011:2018 audit-trail stock-ledger-evidence
+ * @compliance SOX §404 internal-controls cycle-count
+ */
+export interface InventoryAdjustedEvent extends DomainEvent {
+  eventType: 'inventory:adjusted'
+  aggregateType: 'inventory_transfer'
+  payload: {
+    movementId: string
+    kind: 'transfer' | 'adjustment' | 'write_off' | 'consumption'
+    itemId: string
+    /** Signed quantity — positive = inbound to toLocation, negative = outbound. */
+    quantity: number
+    /** Per-unit cost in cents. */
+    unitCost: number
+    /** Σ |quantity| × unitCost — the absolute notional that hits the JE. */
+    extendedCost: number
+    fromLocationId?: string
+    toLocationId?: string
+    movementAt: Date
+    currencyCode: string
+    /** Optional GL-account overrides resolved on the item / movement. */
+    inventoryAccountCode?: string
+    /** For consumption — the WIP / COGS account. */
+    consumptionAccountCode?: string
+  }
+}
+
+/**
  * Fixed-Asset Depreciation Events
  *
  * Emitted by `depreciationService` when a period's depreciation expense has
@@ -531,6 +575,7 @@ export type AllDomainEvents =
   | InventoryTransferredEvent
   | InventoryPurchasedEvent
   | InventorySoldEvent
+  | InventoryAdjustedEvent
   | DepreciationPostedEvent
   | BankStatementImportedEvent
   | BankTransactionMatchedEvent
