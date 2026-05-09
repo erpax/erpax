@@ -694,6 +694,13 @@ src/services/gl-account-resolver.ts:24: * @standard ISO-4217:2015 currency-codes
 src/services/gl-account.service.ts:4: * @standard ISO-4217:2015 currency-codes account-currency
 src/services/gl-posting.service.ts:8: * @standard ISO-8601-1:2019 date-time posted-date
 src/services/gl-posting.service.ts:9: * @standard ISO-4217:2015 currency-codes
+src/services/iso20022-export.service.ts:17: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/services/iso20022-export.service.ts:18: * @standard ISO-13616-1:2020 iban
+src/services/iso20022-export.service.ts:19: * @standard ISO-9362:2022 bic
+src/services/iso20022-export.service.ts:20: * @standard ISO-4217:2015 currency-codes
+src/services/iso20022-export.service.ts:21: * @standard ISO-8601-1:2019 date-time
+src/services/iso20022-export.service.ts:254: * @standard ISO-20022 pain.001.001.09 customer-credit-transfer-initiation
+src/services/iso20022-export.service.ts:371: * @standard ISO-20022 pain.008.001.08 customer-direct-debit-initiation
 src/services/journal-entry.service.ts:7: * @standard ISO-8601-1:2019 date-time entry-date posted-date
 src/services/journal-entry.service.ts:8: * @standard ISO-4217:2015 currency-codes
 src/services/lease.service.ts:21: * @standard ISO-4217:2015 currency-codes
@@ -1095,6 +1102,8 @@ tests/int/accounting/full-cycle-demo.int.spec.ts:12: * @standard ISO/IEC-29119:2
 tests/int/accounting/full-cycle-demo.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/iso20022-export.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/iso20022-export.int.spec.ts:5: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 tests/int/accounting/lease-period-posting.int.spec.ts:16: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/lease-service.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/level-2-integration.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -3044,6 +3053,7 @@ src/services/gl-account.service.ts:8: * @audit ISO-19011:2018 audit-trail
 src/services/gl-posting.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/gl-posting.service.ts:539:   * @audit ISO-19011:2018 audit-trail period-expense
 src/services/gl-posting.service.ts:609:   * @audit ISO-19011:2018 audit-trail stock-ledger
+src/services/iso20022-export.service.ts:22: * @audit ISO-19011:2018 audit-trail
 src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/lease.service.ts:30: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
@@ -3097,6 +3107,7 @@ tests/int/accounting/edifact-export.int.spec.ts:10: * @audit ISO-19011:2018 audi
 tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail full-cycle-coverage
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail
+tests/int/accounting/iso20022-export.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/lease-period-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/lease-service.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-2-integration.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
