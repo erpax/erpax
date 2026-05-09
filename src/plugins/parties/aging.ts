@@ -21,14 +21,11 @@ import {
   PartyDocument,
 } from './types'
 
-const MS_PER_DAY = 24 * 60 * 60 * 1000
-
-/** Days between two dates (treats inputs as UTC midnights). */
-export function daysBetween(from: Date | string, to: Date | string): number {
-  const a = from instanceof Date ? from : new Date(from)
-  const b = to instanceof Date ? to : new Date(to)
-  return Math.floor((b.getTime() - a.getTime()) / MS_PER_DAY)
-}
+// DRY: single source of truth for date arithmetic lives in the
+// accounting utilities. Re-export here so existing parties consumers
+// (receivables/payables/reports) keep their import surface stable.
+import { daysBetween } from '@/plugins/accounting/utilities/calculations'
+export { daysBetween }
 
 /**
  * Compute aging buckets for a list of open party-side documents.

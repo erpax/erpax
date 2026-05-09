@@ -16,9 +16,18 @@
 /** Standard NET payment-term codes; both A/R and A/P use this set. */
 export type PaymentTerm = '0' | '15' | '30' | '60' | '90' | 'custom'
 
+// Canonical bucket key — same vocabulary used by bank-rec aging in
+// `src/services/bank-reconciliation.service.ts` and the
+// finance:reconciliation skill. Re-exported so consumers can import a
+// single name from `@/plugins/parties`.
+import type { AgingBucket as AgingBucketKey } from '@/plugins/accounting/utilities/calculations'
+export type { AgingBucket as AgingBucketKey } from '@/plugins/accounting/utilities/calculations'
+
 /** A single aging bucket — name + day-range + computed totals. */
 export interface AgingBucket {
   name: string
+  /** Canonical bucket key — `current | aging | overdue | stale`. */
+  key?: AgingBucketKey
   dayMin: number
   dayMax: number
   totalAmount: number  // cents
@@ -29,16 +38,25 @@ export interface AgingBucket {
 /** Bucket definition before computation (the inputs to the aging calculator). */
 export interface BucketDefinition {
   name: string
+  /** Canonical bucket key — `current | aging | overdue | stale`. */
+  key?: AgingBucketKey
   dayMin: number
   dayMax: number
 }
 
-/** Default set of aging buckets used by both A/R and A/P aging reports. */
+/**
+ * Default set of aging buckets used by both A/R and A/P aging reports.
+ * Matches the canonical buckets from finance:reconciliation skill +
+ * `bucketAgeDays()`. The `key` discriminator is the DRY connector that
+ * lets bank-rec / AR-aging / AP-aging share consumer code.
+ *
+ * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
+ */
 export const DEFAULT_AGING_BUCKETS: BucketDefinition[] = [
-  { name: 'Current', dayMin: 0, dayMax: 30 },
-  { name: '31-60 days', dayMin: 31, dayMax: 60 },
-  { name: '61-90 days', dayMin: 61, dayMax: 90 },
-  { name: '90+ days', dayMin: 91, dayMax: Infinity },
+  { name: 'Current', key: 'current', dayMin: 0, dayMax: 30 },
+  { name: '31-60 days', key: 'aging', dayMin: 31, dayMax: 60 },
+  { name: '61-90 days', key: 'overdue', dayMin: 61, dayMax: 90 },
+  { name: '90+ days', key: 'stale', dayMin: 91, dayMax: Infinity },
 ]
 
 /**

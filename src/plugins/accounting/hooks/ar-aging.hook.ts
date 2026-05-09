@@ -1,51 +1,33 @@
 /**
- * A/R Aging Hook — recalculates aging buckets on invoice/payment events.
+ * A/R Aging Hook — superseded by query-based reporting.
  *
- * @deprecated Slice FFF: this hook delegates to `req.payload.services?.arAging`
- * but **no `ar-aging.service.ts` exists** at `src/services/`. Currently
- * silent no-op in production. Build the service or delete the hook —
- * see `ap-aging.hook.ts` deprecation note for the same options.
+ * Aging is a *query* against open invoices as of a date — not an
+ * event-driven precomputation. Eagerly recalculating buckets on every
+ * invoice/payment write would shred caches and wedge the close calendar.
  *
- * Buckets: current, 31-60, 61-90, 91+.
+ * **Canonical replacement:**
+ *   import { generateARAgingReport } from '@/plugins/accounting/services/reports'
+ *   const dto = await generateARAgingReport(payload, tenantId, asOfDate)
+ *
+ * The DTO uses the canonical `BucketDefinition.key` discriminator
+ * (`current | aging | overdue | stale`) shared with bank-reconciliation
+ * aging. See `src/plugins/parties/types.ts` `DEFAULT_AGING_BUCKETS`.
+ *
+ * This file is preserved as a no-op so any straggler wiring keeps
+ * compiling. Safe to delete in a future cleanup slice once verified
+ * unused (`rg arAgingHook src/`).
  *
  * @accounting IFRS IFRS-9 expected-credit-loss
  * @accounting US-GAAP ASC-326 credit-losses-cecl
  * @accounting US-GAAP ASC-310 receivables
  * @standard ISO-8601-1:2019 date-time as-of-date
- * @audit ISO-19011:2018 audit-trail
- * @see docs/STANDARDS.md §4.2 §5
+ * @audit ISO-19011:2018 audit-trail aging-of-receivables
+ * @see src/plugins/accounting/services/reports.ts generateARAgingReport
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
-export const arAgingHook: CollectionAfterChangeHook = async ({
-  doc,
-  req,
-  operation,
-}) => {
-  if (!doc || (operation !== 'create' && operation !== 'update')) return doc;
 
-  try {
-    const arAgingService = req.payload.services?.arAging;
-    const tenant = doc.tenant;
-
-    if (arAgingService) {
-      const invoiceData = {
-        id: doc.id,
-        invoiceNumber: doc.invoiceNumber || doc.number,
-        invoiceDate: doc.invoiceDate || doc.date,
-        customerId: doc.customerId || doc.buyer,
-        amount: doc.totalAmount,
-        amountDue: doc.totalDue || doc.totalAmount,
-        currency: doc.currency || 'EUR',
-        status: doc.status,
-      };
-
-      await arAgingService.updateARAging(tenant, invoiceData);
-      req.payload.logger.info(`✓ AR aging updated for invoice ${invoiceData.invoiceNumber}`);
-    }
-  } catch (error) {
-    req.payload.logger.error({ err: error }, `✗ Error updating AR aging:`);
-  }
-
-  return doc;
-};
+/**
+ * @deprecated Use `generateARAgingReport(payload, tenant, asOfDate)`.
+ */
+export const arAgingHook: CollectionAfterChangeHook = ({ doc }) => doc

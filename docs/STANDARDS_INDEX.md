@@ -462,9 +462,9 @@ src/plugins/accounting/fields/index.ts:4: * @standard ISO-4217:2015 currency-cod
 src/plugins/accounting/fields/index.ts:5: * @standard ISO-8601-1:2019 date-time
 src/plugins/accounting/financial-analysis.ts:8: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/financial-analysis.ts:9: * @standard ISO-8601-1:2019 date-time as-of-date
-src/plugins/accounting/hooks/ap-aging.hook.ts:18: * @standard EN-16931:2017 §BG-20 document-level-allowances
-src/plugins/accounting/hooks/ap-aging.hook.ts:19: * @standard ISO-8601-1:2019 date-time as-of-date
-src/plugins/accounting/hooks/ar-aging.hook.ts:14: * @standard ISO-8601-1:2019 date-time as-of-date
+src/plugins/accounting/hooks/ap-aging.hook.ts:17: * @standard EN-16931:2017 §BG-20 document-level-allowances
+src/plugins/accounting/hooks/ap-aging.hook.ts:18: * @standard ISO-8601-1:2019 date-time as-of-date
+src/plugins/accounting/hooks/ar-aging.hook.ts:23: * @standard ISO-8601-1:2019 date-time as-of-date
 src/plugins/accounting/hooks/balanced-entry.hook.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
 src/plugins/accounting/hooks/balanced-entry.hook.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
 src/plugins/accounting/hooks/depreciation.hook.ts:23: * @standard ISO-8601-1:2019 date-time depreciation-period
@@ -499,6 +499,7 @@ src/plugins/accounting/seeds/level-2/integration-accounting-seeds.ts:4: * @stand
 src/plugins/accounting/seeds/level-3/e2e-accounting-seeds.ts:4: * @standard ECMA-262 ECMAScript-2024 baseline
 src/plugins/accounting/services/reports.ts:24: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/services/reports.ts:25: * @standard ISO-8601-1:2019 date-time as-of-date period
+src/plugins/accounting/utilities/calculations.ts:224: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/plugins/accounting/utilities/calculations.ts:7: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/utilities/calculations.ts:8: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
 src/plugins/accounting/utilities/period-lock.ts:8: * @standard ISO-8601-1:2019 date-time utc-canonical-form
@@ -823,6 +824,8 @@ tests/helpers/seedTenant.ts:7: * @standard ISO-4217:2015 currency-codes
 tests/helpers/seedUser.ts:4: * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
 tests/int/access/tenantScopedRead.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/access/tenantScopedRead.int.spec.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
+tests/int/accounting/aging-dry-keys.int.spec.ts:15: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/aging-dry-keys.int.spec.ts:16: * @standard ISO-8601-1:2019 date-time
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:23: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:24: * @standard ISO-20022 camt.053 bank-to-customer-statement
 tests/int/accounting/critical-gaps-verification.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing
@@ -1750,11 +1753,11 @@ src/plugins/accounting/financial-analysis.ts:4: * @accounting IFRS IAS-1 present
 src/plugins/accounting/financial-analysis.ts:5: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/plugins/accounting/financial-analysis.ts:6: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/plugins/accounting/financial-analysis.ts:7: * @accounting US-GAAP ASC-230 statement-of-cash-flows
-src/plugins/accounting/hooks/ap-aging.hook.ts:16: * @accounting IFRS IAS-37 provisions-contingent-liabilities
-src/plugins/accounting/hooks/ap-aging.hook.ts:17: * @accounting US-GAAP ASC-405 liabilities
-src/plugins/accounting/hooks/ar-aging.hook.ts:11: * @accounting IFRS IFRS-9 expected-credit-loss
-src/plugins/accounting/hooks/ar-aging.hook.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
-src/plugins/accounting/hooks/ar-aging.hook.ts:13: * @accounting US-GAAP ASC-310 receivables
+src/plugins/accounting/hooks/ap-aging.hook.ts:15: * @accounting IFRS IAS-37 provisions-contingent-liabilities
+src/plugins/accounting/hooks/ap-aging.hook.ts:16: * @accounting US-GAAP ASC-405 liabilities
+src/plugins/accounting/hooks/ar-aging.hook.ts:20: * @accounting IFRS IFRS-9 expected-credit-loss
+src/plugins/accounting/hooks/ar-aging.hook.ts:21: * @accounting US-GAAP ASC-326 credit-losses-cecl
+src/plugins/accounting/hooks/ar-aging.hook.ts:22: * @accounting US-GAAP ASC-310 receivables
 src/plugins/accounting/hooks/balanced-entry.hook.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/hooks/balanced-entry.hook.ts:24: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/plugins/accounting/hooks/balanced-entry.hook.ts:25: * @accounting OECD SAF-T §3 journal-entries
@@ -1983,6 +1986,8 @@ src/utilities/tenant-context.ts:42: * @accounting US-GAAP ASC-205 presentation-o
 tests/access/subscriptionGates.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 tests/access/subscriptionGates.test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/access/subscriptionGates.test.ts:8: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
+tests/int/accounting/aging-dry-keys.int.spec.ts:17: * @accounting IFRS IFRS-9 expected-credit-loss aging-buckets
+tests/int/accounting/aging-dry-keys.int.spec.ts:18: * @accounting US-GAAP ASC-326 credit-losses-cecl
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:25: * @accounting IFRS IAS-7 statement-of-cash-flows
 tests/int/accounting/critical-gaps-verification.int.spec.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/critical-gaps-verification.int.spec.ts:7: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
@@ -2440,8 +2445,8 @@ src/plugins/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail d
 src/plugins/accounting/factories/collection-factory.ts:6: * @audit ISO-19011:2018 audit-trail beforeValidate-tenant-populator
 src/plugins/accounting/fields-money-fix.ts:13: * @audit ISO-19011:2018 audit-trail integer-only-arithmetic
 src/plugins/accounting/financial-analysis.ts:10: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/hooks/ap-aging.hook.ts:20: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/hooks/ar-aging.hook.ts:15: * @audit ISO-19011:2018 audit-trail
+src/plugins/accounting/hooks/ap-aging.hook.ts:19: * @audit ISO-19011:2018 audit-trail aging-of-payables
+src/plugins/accounting/hooks/ar-aging.hook.ts:24: * @audit ISO-19011:2018 audit-trail aging-of-receivables
 src/plugins/accounting/hooks/balanced-entry.hook.ts:26: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/plugins/accounting/hooks/base-accounting-hook.ts:13: * @audit ISO-19011:2018 audit-trail logging
 src/plugins/accounting/hooks/bill.hook.ts:9: * @audit ISO-19011:2018 audit-trail double-entry-posting
@@ -2476,6 +2481,7 @@ src/plugins/hooks/common.ts:6: * @audit ISO-19011:2018 audit-trail relocation-re
 src/plugins/hooks/index.ts:18: * @audit ISO-19011:2018 audit-trail relocation-record
 src/plugins/parties/aging.ts:13: * @audit ISO-19011:2018 audit-trail
 src/plugins/parties/index.ts:24: * @audit ISO-19011:2018 audit-trail
+src/plugins/parties/types.ts:53: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 src/plugins/parties/workflow.ts:7: * @audit ISO-19011:2018 audit-trail state-transitions
 src/plugins/payables/aging.ts:12: * @audit ISO-19011:2018 audit-trail
 src/plugins/payables/index.ts:18: * @audit ISO-19011:2018 audit-trail
@@ -2530,6 +2536,7 @@ src/utilities/svg-hero-generator.ts:20: * @audit ISO-19011:2018 audit-trail seed
 src/utilities/tenant-context.ts:45: * @audit ISO-19011:2018 audit-trail config-cascade-resolution
 tests/helpers/seedTenant.ts:9: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/helpers/seedUser.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
+tests/int/accounting/aging-dry-keys.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:26: * @audit ISO-19011:2018 audit-trail bank-reconciliation
 tests/int/accounting/critical-gaps-verification.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/debit-credit.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-invariant

@@ -350,7 +350,7 @@ export async function generateARAgingReport(
     collection: 'invoices',
     where: {
       and: [
-        { host: { equals: hostId } },
+        { tenant: { equals: hostId } },
         { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
       ],
     },
@@ -395,7 +395,7 @@ export async function generateAPAgingReport(
     collection: 'invoices',
     where: {
       and: [
-        { host: { equals: hostId } },
+        { tenant: { equals: hostId } },
         { invoiceType: { equals: 'bill' } },
         { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
       ],
