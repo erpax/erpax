@@ -36,6 +36,9 @@ export { default as GLPostings } from './GLPostings'
 // Banking
 export { default as BankStatements } from './BankStatements'
 
+// Reconciliation evidence pack — IAS-7 sign-off + GL-to-subledger + intercompany
+export { default as AccountReconciliations } from './AccountReconciliations'
+
 // Closing-side
 export { default as FinancialStatements } from './FinancialStatements'
 export { default as PeriodEndAdjustments } from './PeriodEndAdjustments'

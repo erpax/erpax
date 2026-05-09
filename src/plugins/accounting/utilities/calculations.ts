@@ -188,10 +188,49 @@ export const calculateWeightedAverageCost = (
 };
 
 /**
- * Calculate aging bucket for a date
+ * Canonical aging buckets — consumed by AR/AP aging and bank-reconciliation
+ * outstanding-item aging. Per the finance:reconciliation skill:
+ *
+ *   current  : 0-30 days  (within normal processing cycle)
+ *   aging    : 31-60 days (investigate)
+ *   overdue  : 61-90 days (escalate)
+ *   stale    : 90+ days   (controller / management review)
+ *
+ * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
+ */
+export type AgingBucket = 'current' | 'aging' | 'overdue' | 'stale';
+
+/**
+ * Bucket an item's age in days into the canonical four buckets.
+ * Negative ages (future-dated) map to `current` so report rows still
+ * surface — caller can filter if needed.
+ */
+export const bucketAgeDays = (ageDays: number): AgingBucket => {
+  if (ageDays <= 30) return 'current';
+  if (ageDays <= 60) return 'aging';
+  if (ageDays <= 90) return 'overdue';
+  return 'stale';
+};
+
+/**
+ * Days between two dates, floored to whole days. `asOfDate − originated`.
+ * Pure helper — the single source of truth for "how old is this item".
+ */
+export const daysBetween = (originated: Date, asOfDate: Date): number =>
+  Math.floor(
+    (asOfDate.getTime() - originated.getTime()) / (1000 * 60 * 60 * 24),
+  );
+
+/**
+ * Legacy aging-bucket string codes — preserved for back-compat with the
+ * AR/AP aging report rendering that consumes the string keys
+ * `'current' | '30' | '60' | '90' | '90plus'`. New code should prefer
+ * `bucketAgeDays` (typed `AgingBucket`).
+ *
+ * @deprecated Use `bucketAgeDays(daysBetween(date, asOf))`.
  */
 export const calculateAgingBucket = (transactionDate: Date, asOfDate: Date): string => {
-  const diffDays = Math.floor((asOfDate.getTime() - transactionDate.getTime()) / (1000 * 60 * 60 * 24));
+  const diffDays = daysBetween(transactionDate, asOfDate);
 
   if (diffDays <= 0) return 'current';
   if (diffDays <= 30) return '30';

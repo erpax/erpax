@@ -140,6 +140,112 @@ export interface MatchingRule {
 }
 
 /**
+ * Bank reconciliation report — canonical "balance per bank" / "balance per
+ * GL" two-column format that resolves to a $0.00 difference for closure.
+ *
+ * Mirrors the textbook layout in finance:reconciliation skill:
+ *   Balance per bank statement
+ *   + Deposits in transit
+ *   - Outstanding checks
+ *   ± Bank errors
+ *   = Adjusted bank balance
+ *
+ *   Balance per general ledger
+ *   + Interest / credits not recorded
+ *   - Bank fees not recorded
+ *   ± GL errors
+ *   = Adjusted GL balance
+ *
+ *   Difference (must be 0 to sign off)
+ *
+ * @accounting IFRS IAS-7 statement-of-cash-flows
+ * @audit ISO-19011:2018 audit-trail bank-reconciliation
+ * @compliance SOX §404 internal-controls
+ */
+export interface OutstandingItem {
+  id: string;
+  description: string;
+  amount: number;
+  /** Date the item originated (issue date for checks, deposit date for DITs). */
+  originatedAt: Date;
+  /** GL entry id (for outstanding checks / DITs already in GL). */
+  glEntryId?: string;
+  /** Bank transaction id (for unrecorded bank items). */
+  bankTransactionId?: string;
+}
+
+export interface BankSideAdjustments {
+  depositsInTransit: OutstandingItem[];
+  outstandingChecks: OutstandingItem[];
+  bankErrors: OutstandingItem[];
+}
+
+export interface GLSideAdjustments {
+  unrecordedInterest: OutstandingItem[];
+  unrecordedFees: OutstandingItem[];
+  glErrors: OutstandingItem[];
+}
+
+export interface BankReconciliationReport {
+  tenantId: string;
+  accountNumber: string;
+  asOfDate: Date;
+  currencyCode: string;
+
+  // Bank side
+  balancePerBank: number;
+  bankAdjustments: BankSideAdjustments;
+  adjustedBankBalance: number;
+
+  // GL side
+  balancePerGL: number;
+  glAdjustments: GLSideAdjustments;
+  adjustedGLBalance: number;
+
+  // Closure check — must be 0 (within rounding tolerance) for sign-off.
+  difference: number;
+  reconciled: boolean;
+
+  generatedAt: Date;
+}
+
+/**
+ * Outstanding-item aging bucket counts (per skill: 0-30 / 31-60 / 61-90 / 90+).
+ *
+ * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
+ */
+export interface OutstandingItemsAging {
+  tenantId: string;
+  accountNumber: string;
+  asOfDate: Date;
+  buckets: {
+    current: { count: number; amount: number };          // 0-30 days
+    aging: { count: number; amount: number };            // 31-60 days
+    overdue: { count: number; amount: number };          // 61-90 days
+    stale: { count: number; amount: number };            // 90+ days
+  };
+  totalCount: number;
+  totalAmount: number;
+}
+
+/**
+ * Adjustment kinds the canonical Category-2 (adjusting JE required)
+ * helper supports. Each maps to a fixed JE shape:
+ *   • bank_fee       — Dr Bank Fee Expense   / Cr Cash
+ *   • interest_income — Dr Cash               / Cr Interest Income
+ *   • interest_expense — Dr Interest Expense  / Cr Cash
+ *   • returned_check  — Dr Accounts Receivable / Cr Cash
+ *
+ * @accounting IFRS IAS-7 statement-of-cash-flows
+ * @accounting US-GAAP ASC-310 receivables returned-checks
+ */
+export type BankAdjustmentKind =
+  | 'bank_fee'
+  | 'interest_income'
+  | 'interest_expense'
+  | 'returned_check';
+
+/**
  * Bank reconciliation statistics
  */
 export interface ReconciliationStats {

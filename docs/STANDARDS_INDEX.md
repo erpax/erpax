@@ -341,6 +341,8 @@ src/i18n/routing.ts:7: * @standard BCP-47 language-tag
 src/jobs/dunningJob.ts:14: * @standard EN-16931:2017 dunning-notice
 src/jobs/dunningJob.ts:15: * @standard ISO-8601-1:2019 date-time pastDueSinceAt gracePeriodEndsAt
 src/payload.config.ts:423:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/plugins/accounting/collections/AccountReconciliations.ts:21: * @standard ISO-8601-1:2019 date-time as-of-date approved-at
+src/plugins/accounting/collections/AccountReconciliations.ts:22: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/AuditEvents.ts:21: * @standard ISO-19011:2018 audit-trail change-event-emission
 src/plugins/accounting/collections/AuditEvents.ts:22: * @standard ISO/IEC 27037:2012 evidence-preservation
 src/plugins/accounting/collections/AuditFindings.ts:4: * @standard ISO-19011:2018 audit-finding
@@ -821,6 +823,8 @@ tests/helpers/seedTenant.ts:7: * @standard ISO-4217:2015 currency-codes
 tests/helpers/seedUser.ts:4: * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
 tests/int/access/tenantScopedRead.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/access/tenantScopedRead.int.spec.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
+tests/int/accounting/bank-reconciliation-report.int.spec.ts:23: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/bank-reconciliation-report.int.spec.ts:24: * @standard ISO-20022 camt.053 bank-to-customer-statement
 tests/int/accounting/critical-gaps-verification.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/debit-credit.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/depreciation-methods.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
@@ -1397,6 +1401,7 @@ src/hooks/enforceSegregationOfDuties.ts:11: * @compliance SOC-2 CC6.3 logical-ac
 src/hooks/validateAddress.ts:26: * @compliance GDPR Art.5(1)(c) data-minimisation
 src/jobs/dunningJob.ts:17: * @compliance SOX §404 internal-controls
 src/jobs/dunningJob.ts:18: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
+src/plugins/accounting/collections/AccountReconciliations.ts:26: * @compliance SOX §404 internal-controls reconciliation-sign-off
 src/plugins/accounting/collections/AuditEvents.ts:23: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/plugins/accounting/collections/AuditEvents.ts:24: * @compliance SOX §302 disclosure-controls
 src/plugins/accounting/collections/AuditEvents.ts:25: * @compliance SOX §404 internal-controls evidence-preservation
@@ -1493,6 +1498,8 @@ src/plugins/payables/workflow.ts:13: * @compliance SOX §404 internal-controls
 src/plugins/receivables/allowance.ts:9: * @compliance SOX §404 internal-controls
 src/plugins/receivables/index.ts:16: * @compliance SOX §404 internal-controls
 src/plugins/receivables/workflow.ts:11: * @compliance SOX §404 internal-controls
+src/services/bank-reconciliation.service.ts:486:   * @compliance SOX §404 internal-controls
+src/services/bank-reconciliation.service.ts:652:   * @compliance SOX §404 internal-controls bank-reconciliation
 src/services/country-context.ts:30: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
 src/services/depreciation.service.ts:28: * @compliance SOX §404 internal-controls capital-asset-register
 src/services/event-emitter.service.ts:11: * @compliance SOC-2 CC7.2 system-monitoring
@@ -1512,6 +1519,7 @@ src/standards/nist-sp-800-108/kdf.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-
 src/standards/nist-sp-800-38/aes-gcm.ts:16: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/standards/nist-sp-800-38/aes-gcm.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 src/standards/rfc-6585/rate-limit.ts:15: * @compliance SOC-2 CC6.1 logical-access-controls
+src/types/bank-reconciliation.ts:163: * @compliance SOX §404 internal-controls
 src/types/events.ts:10: * @compliance SOX §404 internal-controls
 src/types/events.ts:318: * @compliance SOX §404 internal-controls
 src/types/events.ts:406: * @compliance SOX §404 internal-controls quote-to-cash
@@ -1545,6 +1553,7 @@ tests/e2e/tenant.e2e.spec.ts:13: * @compliance GDPR Art.5(1)(f) integrity-and-co
 tests/e2e/tenant.e2e.spec.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 tests/int/access/tenantScopedRead.int.spec.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 tests/int/access/tenantScopedRead.int.spec.ts:9: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+tests/int/accounting/bank-reconciliation-report.int.spec.ts:27: * @compliance SOX §404 internal-controls
 tests/int/accounting/critical-gaps-verification.int.spec.ts:9: * @compliance SOX §404 internal-controls
 tests/int/accounting/debit-credit.int.spec.ts:9: * @compliance SOX §404 internal-controls
 tests/int/accounting/depreciation-methods.int.spec.ts:17: * @compliance SOX §404 internal-controls capital-asset-register
@@ -1641,6 +1650,7 @@ src/plugins/accounting/collections/APAgingReport.ts:15: * @accounting IFRS IAS-1
 src/plugins/accounting/collections/APAgingReport.ts:16: * @accounting US-GAAP ASC-405 liabilities accounts-payable
 src/plugins/accounting/collections/ARAgingReport.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/collections/ARAgingReport.ts:16: * @accounting US-GAAP ASC-310 receivables accounts-receivable
+src/plugins/accounting/collections/AccountReconciliations.ts:23: * @accounting IFRS IAS-7 statement-of-cash-flows bank-reconciliation
 src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:15: * @accounting IFRS IFRS-9 expected-credit-losses
 src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:16: * @accounting US-GAAP ASC-326 financial-instruments-credit-losses
 src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:17: * @accounting US-GAAP ASC-310-40 troubled-debt-restructurings
@@ -1891,6 +1901,9 @@ src/plugins/receivables/workflow.ts:8: * @accounting IFRS IFRS-9 written_off imp
 src/plugins/receivables/workflow.ts:9: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/services/bank-reconciliation.service.ts:484:   * @accounting IFRS IAS-7 statement-of-cash-flows
+src/services/bank-reconciliation.service.ts:649:   * @accounting IFRS IAS-7 statement-of-cash-flows
+src/services/bank-reconciliation.service.ts:650:   * @accounting US-GAAP ASC-310 receivables returned-checks
 src/services/bank-reconciliation.service.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/services/depreciation.service.ts:23: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/services/depreciation.service.ts:24: * @accounting IFRS IAS-36 impairment-of-assets
@@ -1925,6 +1938,9 @@ src/services/tax-automation.service.ts:20: * @accounting OECD SAF-T tax-table
 src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/standards/_money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/standards/_money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
+src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/types/bank-reconciliation.ts:240: * @accounting US-GAAP ASC-310 receivables returned-checks
 src/types/bank-reconciliation.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/events.ts:221: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/types/events.ts:222: * @accounting US-GAAP ASC-360-10-35 depreciation
@@ -1967,6 +1983,7 @@ src/utilities/tenant-context.ts:42: * @accounting US-GAAP ASC-205 presentation-o
 tests/access/subscriptionGates.test.ts:6: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 tests/access/subscriptionGates.test.ts:7: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/access/subscriptionGates.test.ts:8: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
+tests/int/accounting/bank-reconciliation-report.int.spec.ts:25: * @accounting IFRS IAS-7 statement-of-cash-flows
 tests/int/accounting/critical-gaps-verification.int.spec.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/critical-gaps-verification.int.spec.ts:7: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 tests/int/accounting/debit-credit.int.spec.ts:5: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -2145,6 +2162,7 @@ src/hooks/enforceSegregationOfDuties.ts:9: * @security ISO-27002 §5.4 segregati
 src/hooks/ensureUniqueSlugWithinTenant.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/hooks/ensureUniqueSlugWithinTenant.ts:18: * @security ISO-27002 §5.15 access-control
 src/hooks/validateAddress.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/accounting/collections/AccountReconciliations.ts:27: * @security ISO-27002 §5.4 segregation-of-duties preparer-vs-reviewer
 src/plugins/accounting/collections/AuditEvents.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/AuditEvents.ts:28: * @security ISO-27002 §8.15 logging
 src/plugins/accounting/collections/AuditFindings.ts:9: * @security ISO-27001 §9.2 internal-audit
@@ -2374,6 +2392,8 @@ src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:424:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/plugins/accounting/collections/APAgingReport.ts:17: * @audit ISO-19011:2018 audit-trail aging-report
 src/plugins/accounting/collections/ARAgingReport.ts:17: * @audit ISO-19011:2018 audit-trail aging-report
+src/plugins/accounting/collections/AccountReconciliations.ts:24: * @audit ISO-19011:2018 audit-trail period-end-evidence
+src/plugins/accounting/collections/AccountReconciliations.ts:25: * @audit ISO-19011:2018 audit-evidence preparer-reviewer-segregation
 src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:18: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/AuditEvents.ts:29: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/AuditFindings.ts:8: * @audit ISO-19011:2018 audit-trail finding-evidence
@@ -2440,6 +2460,7 @@ src/plugins/accounting/seeds/level-2/integration-accounting-seeds.ts:7: * @audit
 src/plugins/accounting/seeds/level-3/e2e-accounting-seeds.ts:7: * @audit ISO-19011:2018 audit-trail test-data
 src/plugins/accounting/services/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/services/reports.ts:26: * @audit ISO-19011:2018 audit-trail read-only-queries
+src/plugins/accounting/utilities/calculations.ts:199: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 src/plugins/accounting/utilities/period-lock.ts:14: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/api.ts:11: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/excel.ts:9: * @audit ISO-19011:2018 audit-trail
@@ -2465,6 +2486,9 @@ src/plugins/receivables/index.ts:15: * @audit ISO-19011:2018 audit-trail
 src/plugins/receivables/workflow.ts:10: * @audit ISO-19011:2018 audit-trail state-transitions
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/bank-reconciliation.service.ts:10: * @audit ISO-19011:2018 audit-trail
+src/services/bank-reconciliation.service.ts:485:   * @audit ISO-19011:2018 audit-trail bank-reconciliation
+src/services/bank-reconciliation.service.ts:593:   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
+src/services/bank-reconciliation.service.ts:651:   * @audit ISO-19011:2018 audit-trail adjusting-entry
 src/services/bank-statement-import.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-context.ts:29: * @audit ISO-19011:2018 audit-trail country-decision-evidence
@@ -2484,6 +2508,8 @@ src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/test-seed-factory.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/test-setup.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/types/bank-reconciliation.ts:10: * @audit ISO-19011:2018 audit-trail
+src/types/bank-reconciliation.ts:162: * @audit ISO-19011:2018 audit-trail bank-reconciliation
+src/types/bank-reconciliation.ts:215: * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
 src/types/events.ts:223: * @audit ISO-19011:2018 audit-trail period-expense
 src/types/events.ts:317: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
 src/types/events.ts:405: * @audit ISO-19011:2018 audit-trail order-lifecycle
@@ -2504,6 +2530,7 @@ src/utilities/svg-hero-generator.ts:20: * @audit ISO-19011:2018 audit-trail seed
 src/utilities/tenant-context.ts:45: * @audit ISO-19011:2018 audit-trail config-cascade-resolution
 tests/helpers/seedTenant.ts:9: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/helpers/seedUser.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
+tests/int/accounting/bank-reconciliation-report.int.spec.ts:26: * @audit ISO-19011:2018 audit-trail bank-reconciliation
 tests/int/accounting/critical-gaps-verification.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/debit-credit.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 tests/int/accounting/depreciation-methods.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence

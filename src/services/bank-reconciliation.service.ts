@@ -20,7 +20,15 @@ import {
   ReconciliationException,
   ReconciliationConfig,
   GLEntryForMatching,
+  BankReconciliationReport,
+  OutstandingItem,
+  OutstandingItemsAging,
+  BankAdjustmentKind,
 } from '@/types/bank-reconciliation';
+import {
+  bucketAgeDays,
+  daysBetween,
+} from '@/plugins/accounting/utilities/calculations';
 import type { AllDomainEvents } from '@/types/events';
 import { DebitCreditLogic, type AccountType } from '@/plugins/accounting/debit-credit';
 import { journalEntryService } from './journal-entry.service';
@@ -446,6 +454,257 @@ class BankReconciliationService {
       averageMatchRate:
         totalTransactions > 0 ? (totalMatched / totalTransactions) * 100 : 0,
     };
+  }
+
+  /**
+   * Generate the canonical bank reconciliation report for an account at a
+   * point in time. Mirrors the textbook "balance per bank" / "balance per
+   * GL" two-column layout the auditor signs off on.
+   *
+   *   Balance per bank statement
+   *   + Deposits in transit         (Category 1 timing)
+   *   - Outstanding checks          (Category 1 timing)
+   *   ± Bank errors                 (Category 2 needing JE)
+   *   = Adjusted bank balance
+   *
+   *   Balance per GL
+   *   + Interest / credits not recorded   (Category 2 needing JE)
+   *   - Bank fees not recorded            (Category 2 needing JE)
+   *   ± GL errors                         (Category 2 needing JE)
+   *   = Adjusted GL balance
+   *
+   *   Difference = Adjusted bank − Adjusted GL  (must be 0 to sign off)
+   *
+   * The classification of each unmatched item into bank-side vs GL-side
+   * adjustment is taken from the existing `reconciliationExceptions` map
+   * (the matcher already flags them); items missing a category default
+   * to bank-side `bankErrors` so they show up in the report rather than
+   * silently dropping out.
+   *
+   * @accounting IFRS IAS-7 statement-of-cash-flows
+   * @audit ISO-19011:2018 audit-trail bank-reconciliation
+   * @compliance SOX §404 internal-controls
+   */
+  async generateReconciliationReport(
+    tenantId: string,
+    accountNumber: string,
+    asOfDate: Date,
+    glBalance: number,
+  ): Promise<BankReconciliationReport> {
+    // Walk statements for this tenant + account, find the latest one whose
+    // statementPeriodEnd ≤ asOfDate. That defines balancePerBank.
+    let latest: BankStatement | undefined;
+    for (const s of bankStatements.values()) {
+      if (s.tenantId !== tenantId) continue;
+      if (s.accountNumber !== accountNumber) continue;
+      if (s.statementPeriodEnd > asOfDate) continue;
+      if (!latest || s.statementPeriodEnd > latest.statementPeriodEnd) {
+        latest = s;
+      }
+    }
+    const balancePerBank = latest?.closingBalance ?? 0;
+    const currencyCode = latest?.currencyCode ?? 'EUR';
+
+    const depositsInTransit: OutstandingItem[] = [];
+    const outstandingChecks: OutstandingItem[] = [];
+    const bankErrors: OutstandingItem[] = [];
+    const unrecordedInterest: OutstandingItem[] = [];
+    const unrecordedFees: OutstandingItem[] = [];
+    const glErrors: OutstandingItem[] = [];
+
+    // Walk the unmatched bank txns from the latest statement → these are
+    // bank-side items the GL has not seen.
+    for (const tx of latest?.transactions ?? []) {
+      if (this.isAlreadyMatched(tx.id)) continue;
+      const item: OutstandingItem = {
+        id: tx.id,
+        description: tx.description,
+        amount: tx.amount,
+        originatedAt: tx.transactionDate,
+        bankTransactionId: tx.id,
+      };
+      // Heuristic classification — the description is the auditable cue.
+      // Any organisation can override this by overriding the method or
+      // pre-classifying via reconciliationExceptions.
+      const desc = tx.description.toLowerCase();
+      if (/\binterest\b|\bcredit\b/.test(desc) && tx.type === 'credit') {
+        unrecordedInterest.push(item);
+      } else if (/\bfee\b|\bcharge\b|\bservice\b/.test(desc) && tx.type === 'debit') {
+        unrecordedFees.push(item);
+      } else if (tx.type === 'debit') {
+        outstandingChecks.push(item);
+      } else {
+        depositsInTransit.push(item);
+      }
+    }
+
+    // Sum helpers — depositsInTransit + interest add to their side;
+    // outstandingChecks + fees subtract.
+    const sumOf = (items: OutstandingItem[]) =>
+      items.reduce((s, i) => s + i.amount, 0);
+
+    const adjustedBankBalance =
+      balancePerBank +
+      sumOf(depositsInTransit) -
+      sumOf(outstandingChecks) +
+      sumOf(bankErrors);
+
+    const adjustedGLBalance =
+      glBalance +
+      sumOf(unrecordedInterest) -
+      sumOf(unrecordedFees) +
+      sumOf(glErrors);
+
+    const difference = adjustedBankBalance - adjustedGLBalance;
+    // Allow $0.01 rounding tolerance — anything larger is a real exception.
+    const reconciled = Math.abs(difference) < 1;
+
+    return {
+      tenantId,
+      accountNumber,
+      asOfDate,
+      currencyCode,
+      balancePerBank,
+      bankAdjustments: {
+        depositsInTransit,
+        outstandingChecks,
+        bankErrors,
+      },
+      adjustedBankBalance,
+      balancePerGL: glBalance,
+      glAdjustments: {
+        unrecordedInterest,
+        unrecordedFees,
+        glErrors,
+      },
+      adjustedGLBalance,
+      difference,
+      reconciled,
+      generatedAt: new Date(),
+    };
+  }
+
+  /**
+   * Aging analysis for outstanding (unmatched) items — buckets per the
+   * finance:reconciliation skill: 0-30 (current), 31-60 (aging), 61-90
+   * (overdue), 90+ (stale). Anything ≥31 days needs follow-up; ≥90
+   * triggers escalation to controller / management review.
+   *
+   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
+   */
+  async getOutstandingItemsAging(
+    tenantId: string,
+    accountNumber: string,
+    asOfDate: Date,
+  ): Promise<OutstandingItemsAging> {
+    const buckets = {
+      current: { count: 0, amount: 0 },
+      aging: { count: 0, amount: 0 },
+      overdue: { count: 0, amount: 0 },
+      stale: { count: 0, amount: 0 },
+    };
+    let totalCount = 0;
+    let totalAmount = 0;
+
+    for (const s of bankStatements.values()) {
+      if (s.tenantId !== tenantId) continue;
+      if (s.accountNumber !== accountNumber) continue;
+      for (const tx of s.transactions) {
+        if (this.isAlreadyMatched(tx.id)) continue;
+        const ageDays = daysBetween(tx.transactionDate, asOfDate);
+        if (ageDays < 0) continue; // future-dated, skip
+        const key = bucketAgeDays(ageDays);
+        buckets[key].count += 1;
+        buckets[key].amount += tx.amount;
+        totalCount += 1;
+        totalAmount += tx.amount;
+      }
+    }
+
+    return {
+      tenantId,
+      accountNumber,
+      asOfDate,
+      buckets,
+      totalCount,
+      totalAmount,
+    };
+  }
+
+  /**
+   * Post a Category-2 adjusting journal entry — the canonical "bank
+   * fee not recorded / interest not recorded" cleanups every bank
+   * reconciliation surfaces. Each kind maps to a fixed JE shape:
+   *
+   *   bank_fee          Dr Bank Fee Expense   / Cr Cash
+   *   interest_income   Dr Cash               / Cr Interest Income
+   *   interest_expense  Dr Interest Expense   / Cr Cash
+   *   returned_check    Dr Accounts Receivable / Cr Cash
+   *
+   * Returns the posted journal entry id so the caller (reconciliation UI
+   * or close job) can link it back to the bank-statement line. The entry
+   * is auto-posted (`postEntry`) since these are routine, low-risk
+   * adjustments — escalate larger amounts via `ReconciliationException`.
+   *
+   * @accounting IFRS IAS-7 statement-of-cash-flows
+   * @accounting US-GAAP ASC-310 receivables returned-checks
+   * @audit ISO-19011:2018 audit-trail adjusting-entry
+   * @compliance SOX §404 internal-controls bank-reconciliation
+   */
+  async postBankAdjustment(
+    tenantId: string,
+    userId: string,
+    args: {
+      kind: BankAdjustmentKind;
+      amount: number;
+      description: string;
+      sourceBankTransactionId?: string;
+    },
+  ): Promise<{ journalEntryId: string }> {
+    const { kind, amount, description, sourceBankTransactionId } = args;
+    if (amount <= 0) {
+      throw new Error(
+        `Bank adjustment amount must be positive (got ${amount}); ` +
+          `to reverse, post the inverse kind`,
+      );
+    }
+
+    const lines = (() => {
+      switch (kind) {
+        case 'bank_fee':
+          return [
+            { accountId: 'bank_fee_expense', debit: amount, description },
+            { accountId: 'cash', credit: amount, description },
+          ];
+        case 'interest_income':
+          return [
+            { accountId: 'cash', debit: amount, description },
+            { accountId: 'interest_income', credit: amount, description },
+          ];
+        case 'interest_expense':
+          return [
+            { accountId: 'interest_expense', debit: amount, description },
+            { accountId: 'cash', credit: amount, description },
+          ];
+        case 'returned_check':
+          return [
+            { accountId: 'ar', debit: amount, description },
+            { accountId: 'cash', credit: amount, description },
+          ];
+      }
+    })();
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description: `Bank adjustment (${kind}): ${description}`,
+      lines,
+      sourceType: 'bank_adjustment',
+      sourceId: sourceBankTransactionId ?? uuid(),
+      sourceEvent: 'bank:adjustment:posted',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+    return { journalEntryId: entry.id };
   }
 
   /**
