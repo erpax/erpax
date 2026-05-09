@@ -18,6 +18,11 @@ import { Request, Response } from 'express'
 import { PDFExporter } from './pdf'
 import { ExcelExporter } from './excel'
 import {
+  exportStandards,
+  type StandardsExportFormat,
+  type StandardsExportRequest,
+} from './standards-export'
+import {
   BalanceSheetGenerator,
   IncomeStatementGenerator,
   CashFlowStatementGenerator,
@@ -319,5 +324,72 @@ export const generateAllStatements = async (req: Request, res: Response) => {
     })
   } catch (error: unknown) {
     res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
+  }
+}
+
+/**
+ * Generate a standards-bearing wire-format export — SAF-T / Peppol UBL /
+ * EDIFACT / ISO 20022 pain.001 / pain.008.
+ *
+ * POST /api/export/standards
+ *
+ * Body shape mirrors {@link StandardsExportRequest}. The endpoint
+ * dispatches to {@link exportStandards} and streams the rendered
+ * content with the canonical MIME type + Content-Disposition.
+ *
+ * @standard OECD SAF-T 2.0
+ * @standard Peppol-BIS-3.0 billing
+ * @standard UN-EDIFACT D.96A
+ * @standard ISO-20022:2022
+ * @rfc 6266 content-disposition
+ * @rfc 6838 mime-type
+ */
+export const exportStandardsEndpoint = async (
+  req: Request & { payload?: unknown },
+  res: Response,
+) => {
+  try {
+    const body = req.body as Partial<StandardsExportRequest> & {
+      format?: StandardsExportFormat
+    }
+    if (!body || !body.format) {
+      return res
+        .status(400)
+        .json({ error: 'format is required (saf-t-xml / peppol-ubl / edifact / pain-001-xml / pain-008-xml)' })
+    }
+    if (
+      ![
+        'saf-t-xml',
+        'peppol-ubl',
+        'edifact',
+        'pain-001-xml',
+        'pain-008-xml',
+      ].includes(body.format)
+    ) {
+      return res.status(400).json({ error: `Unknown format: ${body.format}` })
+    }
+
+    // For the saf-t-xml format the request needs a Payload instance —
+    // accept the one attached to the request by the Payload middleware.
+    const enriched =
+      body.format === 'saf-t-xml'
+        ? ({
+            ...body,
+            payload: (req as { payload?: unknown }).payload,
+          } as StandardsExportRequest)
+        : (body as StandardsExportRequest)
+
+    const result = await exportStandards(enriched)
+
+    res.setHeader('Content-Type', result.mimeType)
+    res.setHeader(
+      'Content-Disposition',
+      `attachment; filename="${result.filename}"`,
+    )
+    res.status(200).send(result.content)
+  } catch (error: unknown) {
+    res.status(500).json({
+      error: error instanceof Error ? error.message : String(error),
+    })
   }
 }

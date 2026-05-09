@@ -580,6 +580,10 @@ src/plugins/auth/index.ts:23: * @standard OWASP-ASVS V4 access-control
 src/plugins/auth/index.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/index.ts:8: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/types.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/export/api.ts:340: * @standard OECD SAF-T 2.0
+src/plugins/export/api.ts:341: * @standard Peppol-BIS-3.0 billing
+src/plugins/export/api.ts:342: * @standard UN-EDIFACT D.96A
+src/plugins/export/api.ts:343: * @standard ISO-20022:2022
 src/plugins/export/api.ts:8: * @standard ISO-32000-2:2020 pdf
 src/plugins/export/api.ts:9: * @standard ISO/IEC-29500:2016 office-open-xml xlsx
 src/plugins/export/excel.ts:4: * @standard ISO/IEC-29500:2016 office-open-xml
@@ -606,6 +610,13 @@ src/plugins/export/seeds/level-2/optimal-export-integration-seeds.ts:6: * @stand
 src/plugins/export/seeds/level-3/optimal-export-advanced-seeds.ts:4: * @standard ECMA-262 ECMAScript-2024 baseline
 src/plugins/export/seeds/level-3/optimal-export-advanced-seeds.ts:5: * @standard ISO/IEC-29500:2016 office-open-xml export-format
 src/plugins/export/seeds/level-3/optimal-export-advanced-seeds.ts:6: * @standard ECMA-376 office-open-xml
+src/plugins/export/standards-export.ts:124: * @standard RFC-6838 mime-type
+src/plugins/export/standards-export.ts:20: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/plugins/export/standards-export.ts:21: * @standard Peppol-BIS-3.0 billing
+src/plugins/export/standards-export.ts:22: * @standard UBL-2.1 universal-business-language
+src/plugins/export/standards-export.ts:23: * @standard UN-EDIFACT D.96A
+src/plugins/export/standards-export.ts:24: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/plugins/export/standards-export.ts:25: * @standard ISO-9735:2002 edifact-syntax-rules
 src/plugins/export/statements-cents-aware.ts:7: * @standard ISO-4217:2015 currency-codes
 src/plugins/export/statements-cents-aware.ts:8: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
 src/plugins/export/statements.ts:8: * @standard ISO-4217:2015 currency-codes
@@ -1141,6 +1152,11 @@ tests/int/export/integration.int.spec.ts:7: * @standard ISO/IEC-29500:2016 offic
 tests/int/export/pdf.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/export/pdf.int.spec.ts:5: * @standard ISO-32000-2:2020 pdf
 tests/int/export/pdf.int.spec.ts:7: * @standard W3C HTML5 source-rendering
+tests/int/export/standards-export.int.spec.ts:10: * @standard Peppol-BIS-3.0 billing
+tests/int/export/standards-export.int.spec.ts:11: * @standard UN-EDIFACT D.96A
+tests/int/export/standards-export.int.spec.ts:12: * @standard ISO-20022:2022
+tests/int/export/standards-export.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/export/standards-export.int.spec.ts:9: * @standard OECD SAF-T 2.0
 tests/int/export/statements.int.spec.ts:10: * @standard ISO-8601-1:2019 date-time
 tests/int/export/statements.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/export/statements.int.spec.ts:9: * @standard ISO-4217:2015 currency-codes
@@ -1390,6 +1406,8 @@ src/plugins/auth/index.ts:12: * @rfc 6750 bearer-token-usage
 src/plugins/auth/index.ts:13: * @rfc 7636 pkce
 src/plugins/auth/index.ts:14: * @rfc 6265 cookies
 src/plugins/auth/index.ts:9: * @rfc 9700 oauth-2.1 best-current-practice
+src/plugins/export/api.ts:344: * @rfc 6266 content-disposition
+src/plugins/export/api.ts:345: * @rfc 6838 mime-type
 src/plugins/export/api.ts:4: * @rfc 9110 http-semantics
 src/plugins/export/api.ts:5: * @rfc 9110 §15 status-codes
 src/plugins/export/api.ts:6: * @rfc 6838 mime-type
@@ -1398,6 +1416,7 @@ src/plugins/export/excel.ts:6: * @rfc 6838 mime-type application/vnd.openxmlform
 src/plugins/export/index.ts:20: * @rfc 4180 csv
 src/plugins/export/index.ts:21: * @rfc 6838 mime-type
 src/plugins/export/pdf.ts:7: * @rfc 6838 mime-type application/pdf
+src/plugins/export/standards-export.ts:26: * @rfc 6838 mime-type
 src/sdk/accounting-client.ts:5: * @rfc 9110 http-semantics REST-client
 src/sdk/accounting-client.ts:6: * @rfc 8259 json payload-encoding
 src/sdk/accounting-client.ts:7: * @rfc 7519 json-web-token bearer-auth
@@ -3022,6 +3041,7 @@ src/plugins/export/pdf.ts:8: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/seeds/level-1/optimal-export-seeds.ts:7: * @audit ISO-19011:2018 audit-trail test-data
 src/plugins/export/seeds/level-2/optimal-export-integration-seeds.ts:7: * @audit ISO-19011:2018 audit-trail test-data
 src/plugins/export/seeds/level-3/optimal-export-advanced-seeds.ts:7: * @audit ISO-19011:2018 audit-trail test-data
+src/plugins/export/standards-export.ts:27: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/statements-cents-aware.ts:12: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/statements.ts:11: * @audit ISO-19011:2018 audit-trail
 src/plugins/hooks/address-validation.hook.ts:5: * @audit ISO-19011:2018 audit-trail relocation-record
@@ -3122,6 +3142,7 @@ tests/int/accounting/saf-t-export.int.spec.ts:10: * @audit ISO-19011:2018 audit-
 tests/int/accounting/saf-t-source-documents.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/saf-t-xml.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/int/config/appCollectionsRegistry.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
+tests/int/export/standards-export.int.spec.ts:13: * @audit ISO-19011:2018 audit-trail
 tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-trail
 tests/int/parties/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
 tests/int/receivables/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
