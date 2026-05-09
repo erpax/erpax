@@ -14,13 +14,17 @@
  */
 
 import { v4 as uuid } from 'uuid';
-import { AllDomainEvents, DomainEvent, EventHandler, EventMetadata } from '@/types/events';
+import { DomainEvent, EventHandler, EventMetadata } from '@/types/events';
 
 class EventEmitterService {
   private handlers: Map<string, EventHandler[]> = new Map();
   private eventLog: EventMetadata[] = [];
   private isProcessing = false;
-  private eventQueue: AllDomainEvents[] = [];
+  // Queue is typed against the base `DomainEvent` so non-union event
+  // types (e.g. period:adjustments:posted, bank:reconciliation:complete)
+  // can flow through without `as unknown as AllDomainEvents` launder
+  // casts. Listeners narrow via discriminated `event.eventType` matching.
+  private eventQueue: DomainEvent[] = [];
 
   /**
    * Subscribe to events of a specific type
@@ -60,9 +64,9 @@ class EventEmitterService {
    * Emit a domain event
    * Triggers all subscribed handlers asynchronously
    */
-  async emit(event: AllDomainEvents): Promise<void> {
+  async emit(event: DomainEvent): Promise<void> {
     // Enrich event with metadata
-    const enrichedEvent: AllDomainEvents = {
+    const enrichedEvent: DomainEvent = {
       ...event,
       eventId: event.eventId || uuid(),
       timestamp: event.timestamp || new Date(),
@@ -103,7 +107,7 @@ class EventEmitterService {
   /**
    * Execute all handlers for an event type
    */
-  private async executeHandlers(event: AllDomainEvents): Promise<void> {
+  private async executeHandlers(event: DomainEvent): Promise<void> {
     const handlers = this.handlers.get(event.eventType) || [];
 
     if (handlers.length === 0) {
@@ -132,7 +136,7 @@ class EventEmitterService {
   /**
    * Log event for audit trail and replay
    */
-  private logEvent(event: AllDomainEvents): void {
+  private logEvent(event: DomainEvent): void {
     const metadata: EventMetadata = {
       eventId: event.eventId,
       eventType: event.eventType,
@@ -153,11 +157,11 @@ class EventEmitterService {
    * Emit error event for failed handlers
    */
   private async emitErrorEvent(
-    originalEvent: AllDomainEvents,
+    originalEvent: DomainEvent,
     error: unknown
   ): Promise<void> {
     // Create error event
-    const errorEvent: AllDomainEvents = {
+    const errorEvent: DomainEvent = {
       ...originalEvent,
       eventType: `${originalEvent.eventType}:error`,
       payload: {
@@ -213,7 +217,7 @@ class EventEmitterService {
   async waitForEvent(
     eventType: string,
     timeoutMs: number = 5000
-  ): Promise<AllDomainEvents | null> {
+  ): Promise<DomainEvent | null> {
     return new Promise((resolve) => {
       const timer = setTimeout(() => {
         unsubscribe();
@@ -260,5 +264,5 @@ export async function emitEvent<_T extends DomainEvent>(
     payload,
   };
 
-  await eventEmitter.emit(event as unknown as AllDomainEvents);
+  await eventEmitter.emit(event);
 }

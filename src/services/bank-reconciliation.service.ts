@@ -29,7 +29,6 @@ import {
   bucketAgeDays,
   daysBetween,
 } from '@/plugins/accounting/utilities/calculations';
-import type { AllDomainEvents } from '@/types/events';
 import { DebitCreditLogic, type AccountType } from '@/plugins/accounting/debit-credit';
 import { journalEntryService } from './journal-entry.service';
 import { eventEmitter } from './event-emitter.service';
@@ -146,8 +145,8 @@ class BankReconciliationService {
       aggregateType: 'bank_statement',
       timestamp: new Date(),
       userId,
-      payload: result,
-    } as unknown as AllDomainEvents);
+      payload: { ...result },
+    });
 
     return result;
   }
@@ -344,7 +343,7 @@ class BankReconciliationService {
         matchType: match.matchType,
         matchDate: new Date(),
       },
-    } as unknown as AllDomainEvents);
+    });
   }
 
   /**

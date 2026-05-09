@@ -525,6 +525,7 @@ src/plugins/accounting/fields-money-fix.ts:9: * @standard ISO-4217:2015 currency
 src/plugins/accounting/fields.ts:4: * @standard ISO-4217:2015 currency-codes amount-fields
 src/plugins/accounting/fields.ts:5: * @standard ISO-8601-1:2019 date-time date-fields
 src/plugins/accounting/fields.ts:6: * @standard ISO-3166-1:2020 country-codes
+src/plugins/accounting/fields/base-accounting-fields.ts:135: * @standard ISO-19011:2018 audit-trail
 src/plugins/accounting/fields/base-accounting-fields.ts:23: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/fields/base-accounting-fields.ts:24: * @standard ISO-27002 §5.15 access-control
 src/plugins/accounting/fields/base-accounting-fields.ts:4: * @standard ISO-4217:2015 currency-codes
@@ -1903,8 +1904,8 @@ src/plugins/payables/workflow.ts:13: * @compliance SOX §404 internal-controls
 src/plugins/receivables/allowance.ts:9: * @compliance SOX §404 internal-controls
 src/plugins/receivables/index.ts:16: * @compliance SOX §404 internal-controls
 src/plugins/receivables/workflow.ts:11: * @compliance SOX §404 internal-controls
-src/services/bank-reconciliation.service.ts:486:   * @compliance SOX §404 internal-controls
-src/services/bank-reconciliation.service.ts:652:   * @compliance SOX §404 internal-controls bank-reconciliation
+src/services/bank-reconciliation.service.ts:485:   * @compliance SOX §404 internal-controls
+src/services/bank-reconciliation.service.ts:651:   * @compliance SOX §404 internal-controls bank-reconciliation
 src/services/country-context.ts:30: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
 src/services/depreciation.service.ts:28: * @compliance SOX §404 internal-controls capital-asset-register
 src/services/event-emitter.service.ts:11: * @compliance SOC-2 CC7.2 system-monitoring
@@ -2387,9 +2388,9 @@ src/plugins/receivables/workflow.ts:8: * @accounting IFRS IFRS-9 written_off imp
 src/plugins/receivables/workflow.ts:9: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/services/bank-reconciliation.service.ts:484:   * @accounting IFRS IAS-7 statement-of-cash-flows
-src/services/bank-reconciliation.service.ts:649:   * @accounting IFRS IAS-7 statement-of-cash-flows
-src/services/bank-reconciliation.service.ts:650:   * @accounting US-GAAP ASC-310 receivables returned-checks
+src/services/bank-reconciliation.service.ts:483:   * @accounting IFRS IAS-7 statement-of-cash-flows
+src/services/bank-reconciliation.service.ts:648:   * @accounting IFRS IAS-7 statement-of-cash-flows
+src/services/bank-reconciliation.service.ts:649:   * @accounting US-GAAP ASC-310 receivables returned-checks
 src/services/bank-reconciliation.service.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/services/depreciation.service.ts:23: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/services/depreciation.service.ts:24: * @accounting IFRS IAS-36 impairment-of-assets
@@ -2806,6 +2807,7 @@ src/plugins/accounting/collections/TimeEntries.ts:16: * @security ISO-27001 A.5.
 src/plugins/accounting/collections/WarehouseLocations.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/factories/collection-factory.ts:4: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-required
 src/plugins/accounting/factories/collection-factory.ts:5: * @security ISO-27002 §5.15 access-control role-required
+src/plugins/accounting/fields/base-accounting-fields.ts:136: * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
 src/plugins/accounting/fields/base-accounting-fields.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation hostId-field
 src/plugins/accounting/fields/base-accounting-fields.ts:7: * @security ISO-27002 §5.15 access-control
 src/plugins/accounting/hooks/base-accounting-hook.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -3125,9 +3127,9 @@ src/plugins/receivables/index.ts:15: * @audit ISO-19011:2018 audit-trail
 src/plugins/receivables/workflow.ts:10: * @audit ISO-19011:2018 audit-trail state-transitions
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/bank-reconciliation.service.ts:10: * @audit ISO-19011:2018 audit-trail
-src/services/bank-reconciliation.service.ts:485:   * @audit ISO-19011:2018 audit-trail bank-reconciliation
-src/services/bank-reconciliation.service.ts:593:   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
-src/services/bank-reconciliation.service.ts:651:   * @audit ISO-19011:2018 audit-trail adjusting-entry
+src/services/bank-reconciliation.service.ts:484:   * @audit ISO-19011:2018 audit-trail bank-reconciliation
+src/services/bank-reconciliation.service.ts:592:   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
+src/services/bank-reconciliation.service.ts:650:   * @audit ISO-19011:2018 audit-trail adjusting-entry
 src/services/bank-statement-import.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/camt053-import.service.ts:22: * @audit ISO-19011:2018 audit-trail
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence

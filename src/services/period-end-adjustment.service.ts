@@ -48,7 +48,6 @@ import {
   PeriodEndAdjustment,
   PeriodEndConfig,
 } from '@/types/period-end';
-import type { AllDomainEvents } from '@/types/events';
 import { journalEntryService, JournalEntryLine } from './journal-entry.service';
 import { eventEmitter } from './event-emitter.service';
 
@@ -443,7 +442,7 @@ class PeriodEndAdjustmentService {
       timestamp: new Date(),
       userId,
       payload: { adjustmentCount: adjustmentIds.length },
-    } as unknown as AllDomainEvents);
+    });
   }
 
   /**
