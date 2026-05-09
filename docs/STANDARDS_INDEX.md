@@ -435,6 +435,8 @@ src/plugins/accounting/collections/InventoryMovements.ts:12: * @standard ISO-316
 src/plugins/accounting/collections/JournalEntries.ts:35: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/plugins/accounting/collections/KycChecks.ts:4: * @standard ISO/IEC-19794 biometric-data-interchange-formats
 src/plugins/accounting/collections/KycChecks.ts:5: * @standard FATF-Recommendation-10 customer-due-diligence
+src/plugins/accounting/collections/LeasePeriodPostings.ts:21: * @standard ISO-8601-1:2019 date-time period-start period-end
+src/plugins/accounting/collections/LeasePeriodPostings.ts:22: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/Leases.ts:47: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/Leases.ts:48: * @standard ISO-8601-1:2019 date-time commencement-date end-date
 src/plugins/accounting/collections/PaymentRuns.ts:20: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
@@ -526,6 +528,7 @@ src/plugins/accounting/hooks/ar-aging.hook.ts:23: * @standard ISO-8601-1:2019 da
 src/plugins/accounting/hooks/balanced-entry.hook.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
 src/plugins/accounting/hooks/balanced-entry.hook.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
 src/plugins/accounting/hooks/depreciation.hook.ts:23: * @standard ISO-8601-1:2019 date-time depreciation-period
+src/plugins/accounting/hooks/lease-period-posting.hook.ts:32: * @standard ISO-8601-1:2019 date-time period-end posted-at
 src/plugins/accounting/hooks/payment.hook.ts:19: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 src/plugins/accounting/hooks/payment.hook.ts:20: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/plugins/accounting/hooks/payment.hook.ts:21: * @standard ISO-4217:2015 currency-codes
@@ -990,6 +993,7 @@ tests/int/accounting/full-cycle-demo.int.spec.ts:12: * @standard ISO/IEC-29119:2
 tests/int/accounting/full-cycle-demo.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/lease-period-posting.int.spec.ts:16: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/level-2-integration.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 tests/int/accounting/level-2-integration.int.spec.ts:6: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/level-2-integration.int.spec.ts:7: * @standard ISO-8601-1:2019 date-time
@@ -1645,6 +1649,7 @@ src/plugins/accounting/collections/JournalEntries.ts:40: * @compliance SOX §404
 src/plugins/accounting/collections/KycChecks.ts:6: * @compliance EU-AMLD-6 Directive-2018/1673 anti-money-laundering
 src/plugins/accounting/collections/KycChecks.ts:7: * @compliance USA-PATRIOT-Act §326 customer-identification-program
 src/plugins/accounting/collections/KycChecks.ts:8: * @compliance EU-Regulation-2015/847 wire-transfers
+src/plugins/accounting/collections/LeasePeriodPostings.ts:27: * @compliance SOX §404 internal-controls capital-asset-register
 src/plugins/accounting/collections/Leases.ts:56: * @compliance SOX §404 internal-controls capital-asset-register
 src/plugins/accounting/collections/PaymentRuns.ts:30: * @compliance SOX §404 internal-controls preparer-authoriser-segregation
 src/plugins/accounting/collections/PayrollRuns.ts:27: * @compliance SOX §302 disclosure-controls
@@ -1679,6 +1684,7 @@ src/plugins/accounting/hooks/index.ts:31: * @compliance SOX §404 internal-contr
 src/plugins/accounting/hooks/inventory-movement.hook.ts:21: * @compliance SOX §404 internal-controls cycle-count
 src/plugins/accounting/hooks/invoice.hook.ts:25: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/item.hook.ts:21: * @compliance SOX §404 internal-controls
+src/plugins/accounting/hooks/lease-period-posting.hook.ts:34: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payment.hook.ts:25: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:33: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payroll-run.hook.ts:48: * @compliance SOX §302 disclosure-controls
@@ -1942,6 +1948,9 @@ src/plugins/accounting/collections/InventoryMovements.ts:15: * @accounting US-GA
 src/plugins/accounting/collections/JournalEntries.ts:36: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/collections/JournalEntries.ts:37: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/plugins/accounting/collections/JournalEntries.ts:38: * @accounting OECD SAF-T §3 journal-entries
+src/plugins/accounting/collections/LeasePeriodPostings.ts:23: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
+src/plugins/accounting/collections/LeasePeriodPostings.ts:24: * @accounting IFRS IFRS-16 §36-§38 lease-liability-amortised-cost
+src/plugins/accounting/collections/LeasePeriodPostings.ts:25: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
 src/plugins/accounting/collections/Leases.ts:49: * @accounting IFRS IFRS-16 leases lessee-recognition
 src/plugins/accounting/collections/Leases.ts:50: * @accounting IFRS IFRS-16 §22-§35 initial-measurement-rou-asset
 src/plugins/accounting/collections/Leases.ts:51: * @accounting IFRS IFRS-16 §26-§28 initial-measurement-lease-liability
@@ -2034,6 +2043,9 @@ src/plugins/accounting/hooks/invoice.hook.ts:22: * @accounting US-GAAP ASC-310 r
 src/plugins/accounting/hooks/invoice.hook.ts:23: * @accounting US-GAAP ASC-330 inventory cogs-recognition
 src/plugins/accounting/hooks/item.hook.ts:18: * @accounting IFRS IAS-2 inventories
 src/plugins/accounting/hooks/item.hook.ts:19: * @accounting US-GAAP ASC-330 inventory cost-flow
+src/plugins/accounting/hooks/lease-period-posting.hook.ts:29: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
+src/plugins/accounting/hooks/lease-period-posting.hook.ts:30: * @accounting IFRS IFRS-16 §36-§38 lease-liability-amortised-cost
+src/plugins/accounting/hooks/lease-period-posting.hook.ts:31: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
 src/plugins/accounting/hooks/payment.hook.ts:22: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/plugins/accounting/hooks/payment.hook.ts:23: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:31: * @accounting IFRS IAS-7 statement-of-cash-flows payroll-disbursement
@@ -2340,6 +2352,8 @@ tests/int/accounting/gl-hooks-emit-events.int.spec.ts:16: * @accounting IFRS IAS
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:17: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:12: * @accounting IFRS IAS-2 §10 §28 §36 inventories
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:13: * @accounting US-GAAP ASC-330 inventory
+tests/int/accounting/lease-period-posting.int.spec.ts:17: * @accounting IFRS IFRS-16 §29-§31 §36-§38 leases
+tests/int/accounting/lease-period-posting.int.spec.ts:18: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
 tests/int/accounting/level-2-integration.int.spec.ts:8: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/level-2-integration.int.spec.ts:9: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 tests/int/accounting/level-3-e2e.int.spec.ts:11: * @accounting IFRS IAS-1 IAS-7 IAS-16 IAS-21
@@ -2552,6 +2566,7 @@ src/plugins/accounting/collections/InventoryMovements.ts:18: * @security ISO-270
 src/plugins/accounting/collections/JournalEntries.ts:41: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/JournalEntries.ts:42: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/collections/KycChecks.ts:10: * @security ISO-27001 A.5.34 privacy-and-pii
+src/plugins/accounting/collections/LeasePeriodPostings.ts:28: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/Leases.ts:57: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/PaymentRuns.ts:31: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/collections/PayrollRuns.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -2803,6 +2818,7 @@ src/plugins/accounting/collections/InventoryCostFlow.ts:17: * @audit ISO-19011:2
 src/plugins/accounting/collections/InventoryMovements.ts:16: * @audit ISO-19011:2018 audit-trail stock-ledger
 src/plugins/accounting/collections/JournalEntries.ts:39: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/KycChecks.ts:9: * @audit ISO-19011:2018 audit-trail kyc-evidence
+src/plugins/accounting/collections/LeasePeriodPostings.ts:26: * @audit ISO-19011:2018 audit-trail period-evidence
 src/plugins/accounting/collections/Leases.ts:55: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PaymentRuns.ts:29: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PayrollRuns.ts:26: * @audit ISO-19011:2018 audit-trail payroll-evidence
@@ -2836,6 +2852,7 @@ src/plugins/accounting/hooks/index.ts:29: * @audit ISO-19011:2018 audit-trail ev
 src/plugins/accounting/hooks/inventory-movement.hook.ts:20: * @audit ISO-19011:2018 audit-trail stock-ledger-evidence
 src/plugins/accounting/hooks/invoice.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/item.hook.ts:20: * @audit ISO-19011:2018 audit-trail
+src/plugins/accounting/hooks/lease-period-posting.hook.ts:33: * @audit ISO-19011:2018 audit-trail period-evidence
 src/plugins/accounting/hooks/payment.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:32: * @audit ISO-19011:2018 audit-trail payroll-disbursement
 src/plugins/accounting/hooks/payroll-run.hook.ts:47: * @audit ISO-19011:2018 audit-trail payroll-evidence
@@ -2936,6 +2953,7 @@ tests/int/accounting/depreciation-methods.int.spec.ts:16: * @audit ISO-19011:201
 tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail full-cycle-coverage
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail
+tests/int/accounting/lease-period-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-2-integration.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-trail full-cycle
 tests/int/accounting/payroll-disbursement.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail

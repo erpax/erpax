@@ -121,6 +121,13 @@ export { default as Employees } from './Employees'
 export { default as TimeEntries } from './TimeEntries'
 export { default as PayrollRuns } from './PayrollRuns'
 
+// ─── IFRS 16 / ASC 842 lease period evidence ─────────────────────────
+// LeasePeriodPostings — one row per (lease × period). Mirrors
+// DepreciationSchedules for fixed assets. Hook fires on status →
+// posted to book the canonical interest-accretion + ROU-amortisation
+// JE.
+export { default as LeasePeriodPostings } from './LeasePeriodPostings'
+
 // Slice QQQ: retired report-shaped collection re-exports removed.
 // Per Payload's "create a collection only when structurally distinct"
 // guidance, derived data is service-generated (see
