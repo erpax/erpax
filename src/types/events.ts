@@ -26,7 +26,8 @@ export interface DomainEvent {
     | 'inventory_transfer'
     | 'bank_statement'
     | 'subscription'
-    | 'order';
+    | 'order'
+    | 'fixed_asset';
   timestamp: Date;
   userId: string;
   payload: Record<string, unknown>;
@@ -205,6 +206,41 @@ export interface InventorySoldEvent extends DomainEvent {
     costPerUnit: number;
     totalCost: number;
     saleDate: Date;
+  };
+}
+
+/**
+ * Fixed-Asset Depreciation Events
+ *
+ * Emitted by `depreciationService` when a period's depreciation expense has
+ * been computed and a `depreciation-schedules` row has been created. The
+ * GL posting subscriber turns this into:
+ *   Dr Depreciation Expense        depreciationAmount
+ *     Cr Accumulated Depreciation     depreciationAmount
+ *
+ * @accounting IFRS IAS-16 §62 depreciation-methods
+ * @accounting US-GAAP ASC-360-10-35 depreciation
+ * @audit ISO-19011:2018 audit-trail period-expense
+ */
+export interface DepreciationPostedEvent extends DomainEvent {
+  eventType: 'depreciation:posted';
+  aggregateType: 'fixed_asset';
+  payload: {
+    fixedAssetId: string;
+    scheduleId: string;
+    periodStart: Date;
+    periodEnd: Date;
+    depreciationAmount: number;
+    method:
+      | 'straight_line'
+      | 'declining_balance'
+      | 'double_declining_balance'
+      | 'units_of_activity'
+      | 'sum_of_years_digits';
+    /** GL account overrides resolved on the asset, if any. */
+    expenseAccountCode?: string;
+    accumulatedAccountCode?: string;
+    currencyCode: string;
   };
 }
 
@@ -458,6 +494,7 @@ export type AllDomainEvents =
   | InventoryTransferredEvent
   | InventoryPurchasedEvent
   | InventorySoldEvent
+  | DepreciationPostedEvent
   | BankStatementImportedEvent
   | BankTransactionMatchedEvent
   | BankTransactionUnmatchedEvent

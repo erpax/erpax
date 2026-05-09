@@ -86,13 +86,91 @@ export const calculateStraightLineDepreciation = (
 };
 
 /**
- * Calculate declining balance depreciation
+ * Calculate declining balance depreciation.
+ *
+ * Per-period expense = book value × (rate / 100). Caller supplies an
+ * application-level rate (e.g. 1.5× straight-line for 150% DB, 2× for
+ * double declining — see calculateDoubleDecliningBalanceDepreciation
+ * for the canonical 2/N derivation).
+ *
+ * @accounting IFRS IAS-16 §62 depreciation-methods diminishing-balance
+ * @accounting US-GAAP ASC-360-10-35 depreciation declining-balance
  */
 export const calculateDecliningBalanceDepreciation = (
   bookValue: number,
   depreciationRate: number,
 ): number => {
   return bookValue * (depreciationRate / 100);
+};
+
+/**
+ * Calculate double declining balance (DDB) depreciation for a period.
+ *
+ * Rate = 2 / usefulLifeYears applied to current book value. The final
+ * period's expense is floored so book value never crosses below the
+ * residual value (the canonical DDB stop rule per IAS 16 / ASC 360).
+ *
+ * @accounting IFRS IAS-16 §62 depreciation-methods double-declining-balance
+ * @accounting US-GAAP ASC-360-10-35-7 declining-balance
+ */
+export const calculateDoubleDecliningBalanceDepreciation = (
+  bookValue: number,
+  usefulLifeYears: number,
+  residualValue = 0,
+): number => {
+  if (usefulLifeYears <= 0) return 0;
+  const rate = 2 / usefulLifeYears;
+  const raw = bookValue * rate;
+  // Stop rule: don't depreciate below residual.
+  const headroom = bookValue - residualValue;
+  if (headroom <= 0) return 0;
+  return raw > headroom ? headroom : raw;
+};
+
+/**
+ * Calculate sum-of-years-digits (SYD) depreciation for a single year.
+ *
+ * Year fraction = (usefulLife - currentYear + 1) / Σ(1..usefulLife).
+ * `currentYearOneIndexed` is 1 in the first year, 2 in the second, etc.
+ * Returns 0 outside the useful-life window.
+ *
+ * @accounting IFRS IAS-16 §62 depreciation-methods sum-of-years-digits
+ * @accounting US-GAAP ASC-360-10-35 depreciation
+ */
+export const calculateSumOfYearsDigitsDepreciation = (
+  depreciableBase: number,
+  usefulLifeYears: number,
+  currentYearOneIndexed: number,
+): number => {
+  if (usefulLifeYears <= 0) return 0;
+  if (currentYearOneIndexed < 1 || currentYearOneIndexed > usefulLifeYears) return 0;
+  // Σ(1..n) = n(n+1)/2 — exact, integer-safe for typical lives.
+  const sumOfYears = (usefulLifeYears * (usefulLifeYears + 1)) / 2;
+  const numerator = usefulLifeYears - currentYearOneIndexed + 1;
+  return depreciableBase * (numerator / sumOfYears);
+};
+
+/**
+ * Calculate units-of-activity (UOA, a.k.a. units-of-production) depreciation.
+ *
+ * Per-unit expense = depreciableBase / totalUnitsExpected.
+ * Period expense = perUnit × unitsProducedThisPeriod, capped so cumulative
+ * units never exceed totalUnitsExpected (canonical UOA stop rule).
+ *
+ * @accounting IFRS IAS-16 §62 depreciation-methods units-of-production
+ * @accounting US-GAAP ASC-360-10-35 depreciation activity-method
+ */
+export const calculateUnitsOfActivityDepreciation = (
+  depreciableBase: number,
+  totalUnitsExpected: number,
+  unitsProducedThisPeriod: number,
+  unitsProducedToDate = 0,
+): number => {
+  if (totalUnitsExpected <= 0 || unitsProducedThisPeriod <= 0) return 0;
+  const perUnit = depreciableBase / totalUnitsExpected;
+  const remainingUnits = Math.max(0, totalUnitsExpected - unitsProducedToDate);
+  const billableUnits = Math.min(unitsProducedThisPeriod, remainingUnits);
+  return perUnit * billableUnits;
 };
 
 /**

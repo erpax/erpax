@@ -35,6 +35,7 @@ import {
   OrderActivatedEvent,
   OrderCancelledEvent,
   OrderRefundedEvent,
+  DepreciationPostedEvent,
 } from '@/types/events';
 import { JournalEntryLine } from './journal-entry.service';
 
@@ -57,6 +58,9 @@ const GL_ACCOUNTS = {
   DEFERRED_REVENUE: 'deferred_revenue',
   SUBSCRIPTION_REVENUE: 'subscription_revenue',
   REFUNDS_PAYABLE: 'refunds_payable',
+  // Fixed assets / IAS 16 / ASC 360
+  DEPRECIATION_EXPENSE: 'depreciation_expense',
+  ACCUMULATED_DEPRECIATION: 'accumulated_depreciation',
 };
 
 class GLPostingService {
@@ -104,6 +108,11 @@ class GLPostingService {
     );
     this.eventEmitter.subscribe('inventory:sold', (event) =>
       this.postInventorySold(event as InventorySoldEvent)
+    );
+
+    // Fixed-asset depreciation — IAS 16 / ASC 360.
+    this.eventEmitter.subscribe('depreciation:posted', (event) =>
+      this.postDepreciation(event as DepreciationPostedEvent)
     );
 
     // Bank events
@@ -491,6 +500,66 @@ class GLPostingService {
       sourceType: 'inventory',
       sourceId: invoiceId,
       sourceEvent: 'inventory:sold',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Fixed-Asset Depreciation Posted — period-end PP&E expense recognition.
+   *
+   * Dr Depreciation Expense        depreciationAmount
+   *   Cr Accumulated Depreciation     depreciationAmount
+   *
+   * Per-asset GL account overrides on the FixedAssets row take precedence
+   * over the chart-of-accounts defaults — this matches the asset-level
+   * `expenseAccount` / `accumulatedDepreciationAccount` fields seeded on
+   * the collection.
+   *
+   * @accounting IFRS IAS-16 §62 depreciation-methods
+   * @accounting US-GAAP ASC-360-10-35 depreciation
+   * @audit ISO-19011:2018 audit-trail period-expense
+   */
+  async postDepreciation(event: DepreciationPostedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const {
+      fixedAssetId,
+      scheduleId,
+      depreciationAmount,
+      method,
+      expenseAccountCode,
+      accumulatedAccountCode,
+    } = payload;
+
+    if (depreciationAmount <= 0) return;
+
+    const expenseAccount = expenseAccountCode ?? GL_ACCOUNTS.DEPRECIATION_EXPENSE;
+    const accumulatedAccount =
+      accumulatedAccountCode ?? GL_ACCOUNTS.ACCUMULATED_DEPRECIATION;
+
+    const description = `Depreciation (${method}) for asset ${fixedAssetId} schedule ${scheduleId}`;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: expenseAccount,
+        debit: depreciationAmount,
+        description,
+      },
+      {
+        accountId: accumulatedAccount,
+        credit: depreciationAmount,
+        description,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: new Date(),
+      description,
+      lines,
+      sourceType: 'fixed_asset',
+      sourceId: fixedAssetId,
+      sourceEvent: 'depreciation:posted',
       userId,
     });
 

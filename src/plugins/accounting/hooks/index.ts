@@ -6,12 +6,15 @@
  *     `calculateTotal`, `HookHandler`) — zero callers (KKK), `ensureHostId`
  *     was a duplicate of canonical `autoPopulateHost` (PPP merge); file
  *     queued for deletion.
- *   • `ar-aging`, `ap-aging`, `cogs`, `depreciation` — each delegated to a
+ *   • `ar-aging`, `ap-aging`, `cogs` — each delegated to a
  *     `req.payload.services?.X` lookup against a service file that doesn't
  *     exist (FFF DOA); files queued for deletion. Aging now lives as a
  *     service-generated DTO via `financialReportingService`. COGS will
- *     fold into `gl-posting.service.ts`. Depreciation is scheduled-job
- *     territory (`dunningJob` pattern, Slice ZZ).
+ *     fold into `gl-posting.service.ts`.
+ *   • `depreciation` — CLOSED. `depreciation.hook.ts` is now a working
+ *     `DepreciationSchedules.afterChange` hook backed by the canonical
+ *     `depreciationService` singleton in `src/services/depreciation.service.ts`.
+ *     IAS-16 / ASC-360 expense recognition fires on status → 'posted'.
  *
  * Per-hook standards live in each file's banner.
  *
@@ -26,3 +29,5 @@ export * from './invoice.hook'
 export * from './bill.hook'
 export * from './payment.hook'
 export * from './item.hook'
+// Period-end hooks — schedule-row driven (status → 'posted' triggers GL).
+export * from './depreciation.hook'

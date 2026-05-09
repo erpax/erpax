@@ -22,6 +22,7 @@ import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import { multiTenancyField, currencyField, statusField, notesField, auditFields } from '../fields/base-accounting-fields'
 import { validateNotLocked } from '../utilities/period-lock'
+import { depreciationSchedulePostingHook } from '../hooks/depreciation.hook'
 
 const DepreciationSchedules: CollectionConfig = {
   slug: 'depreciation-schedules',
@@ -74,7 +75,12 @@ const DepreciationSchedules: CollectionConfig = {
       autoPopulateCreatedBy,
       autoSetTimestamp('postedAt', (d) => (d as { status?: string }).status === 'posted'),
     ],
-    afterChange: [auditTrailAfterChange('depreciation-schedules')],
+    afterChange: [
+      // GL post when status flips to 'posted' — emits depreciation:posted →
+      // glPostingService books Dr Depreciation Expense / Cr Accumulated Depreciation.
+      depreciationSchedulePostingHook,
+      auditTrailAfterChange('depreciation-schedules'),
+    ],
   },
   timestamps: true,
 }

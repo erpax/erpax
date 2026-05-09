@@ -465,7 +465,7 @@ src/plugins/accounting/hooks/ap-aging.hook.ts:19: * @standard ISO-8601-1:2019 da
 src/plugins/accounting/hooks/ar-aging.hook.ts:14: * @standard ISO-8601-1:2019 date-time as-of-date
 src/plugins/accounting/hooks/balanced-entry.hook.ts:21: * @standard ECMA-262 ECMAScript-2024 baseline
 src/plugins/accounting/hooks/balanced-entry.hook.ts:22: * @standard IEEE-754-2019 binary-floating-point integer-cents-only
-src/plugins/accounting/hooks/depreciation.hook.ts:15: * @standard ISO-8601-1:2019 date-time depreciation-period
+src/plugins/accounting/hooks/depreciation.hook.ts:23: * @standard ISO-8601-1:2019 date-time depreciation-period
 src/plugins/accounting/hooks/payment.hook.ts:6: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 src/plugins/accounting/hooks/payment.hook.ts:7: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/plugins/accounting/hooks/payment.hook.ts:8: * @standard ISO-4217:2015 currency-codes
@@ -610,6 +610,8 @@ src/services/bank-statement-import.service.ts:8: * @standard ISO-9362:2022 bic
 src/services/bank-statement-import.service.ts:9: * @standard ISO-4217:2015 currency-codes
 src/services/country-api-clients.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/country-context.ts:28: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
+src/services/depreciation.service.ts:21: * @standard ISO-8601-1:2019 date-time period-start period-end
+src/services/depreciation.service.ts:22: * @standard ISO-4217:2015 currency-codes
 src/services/event-emitter.service.ts:8: * @standard ISO-8601-1:2019 date-time event-timestamp
 src/services/financial-reporting.service.ts:4: * @standard ISO-4217:2015 currency-codes
 src/services/financial-reporting.service.ts:5: * @standard ISO-8601-1:2019 date-time fiscal-period
@@ -821,6 +823,8 @@ tests/int/access/tenantScopedRead.int.spec.ts:4: * @standard ISO/IEC-29119:2022 
 tests/int/access/tenantScopedRead.int.spec.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 tests/int/accounting/critical-gaps-verification.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/debit-credit.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/depreciation-methods.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/depreciation-methods.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/full-cycle-demo.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/full-cycle-demo.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/level-2-integration.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -1460,8 +1464,8 @@ src/plugins/accounting/hooks/balanced-entry.hook.ts:27: * @compliance SOX §404 
 src/plugins/accounting/hooks/base-accounting-hook.ts:14: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/plugins/accounting/hooks/bill.hook.ts:10: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/cogs.hook.ts:16: * @compliance SOX §404 internal-controls
-src/plugins/accounting/hooks/depreciation.hook.ts:17: * @compliance SOX §404 internal-controls
-src/plugins/accounting/hooks/index.ts:20: * @compliance SOX §404 internal-controls
+src/plugins/accounting/hooks/depreciation.hook.ts:25: * @compliance SOX §404 internal-controls capital-asset-register
+src/plugins/accounting/hooks/index.ts:23: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/invoice.hook.ts:12: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/item.hook.ts:9: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payment.hook.ts:12: * @compliance SOX §404 internal-controls
@@ -1490,6 +1494,7 @@ src/plugins/receivables/allowance.ts:9: * @compliance SOX §404 internal-control
 src/plugins/receivables/index.ts:16: * @compliance SOX §404 internal-controls
 src/plugins/receivables/workflow.ts:11: * @compliance SOX §404 internal-controls
 src/services/country-context.ts:30: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
+src/services/depreciation.service.ts:28: * @compliance SOX §404 internal-controls capital-asset-register
 src/services/event-emitter.service.ts:11: * @compliance SOC-2 CC7.2 system-monitoring
 src/services/event-emitter.service.ts:12: * @compliance SOX §404 internal-controls
 src/services/financial-reporting.service.ts:12: * @compliance SOX §302 disclosure-controls
@@ -1508,8 +1513,8 @@ src/standards/nist-sp-800-38/aes-gcm.ts:16: * @compliance GDPR Art.32(1)(a) pseu
 src/standards/nist-sp-800-38/aes-gcm.ts:17: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 src/standards/rfc-6585/rate-limit.ts:15: * @compliance SOC-2 CC6.1 logical-access-controls
 src/types/events.ts:10: * @compliance SOX §404 internal-controls
-src/types/events.ts:282: * @compliance SOX §404 internal-controls
-src/types/events.ts:370: * @compliance SOX §404 internal-controls quote-to-cash
+src/types/events.ts:318: * @compliance SOX §404 internal-controls
+src/types/events.ts:406: * @compliance SOX §404 internal-controls quote-to-cash
 src/types/events.ts:9: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/types/financial-statements.ts:11: * @compliance SOX §302 disclosure-controls
 src/types/host.ts:17: * @compliance GDPR Art.4(7) data-controller
@@ -1542,6 +1547,7 @@ tests/int/access/tenantScopedRead.int.spec.ts:10: * @compliance SOC-2 CC6.1 logi
 tests/int/access/tenantScopedRead.int.spec.ts:9: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 tests/int/accounting/critical-gaps-verification.int.spec.ts:9: * @compliance SOX §404 internal-controls
 tests/int/accounting/debit-credit.int.spec.ts:9: * @compliance SOX §404 internal-controls
+tests/int/accounting/depreciation-methods.int.spec.ts:17: * @compliance SOX §404 internal-controls capital-asset-register
 tests/int/accounting/full-cycle-demo.int.spec.ts:17: * @compliance SOX §404 internal-controls
 tests/int/accounting/level-3-e2e.int.spec.ts:14: * @compliance SOX §404 internal-controls
 tests/int/export/statements.int.spec.ts:11: * @compliance SOX §302 disclosure-controls
@@ -1748,10 +1754,10 @@ src/plugins/accounting/hooks/bill.hook.ts:8: * @accounting US-GAAP ASC-705 cost-
 src/plugins/accounting/hooks/cogs.hook.ts:12: * @accounting IFRS IAS-2 inventories
 src/plugins/accounting/hooks/cogs.hook.ts:13: * @accounting US-GAAP ASC-330 inventory
 src/plugins/accounting/hooks/cogs.hook.ts:14: * @accounting US-GAAP ASC-705 cost-of-sales-and-services
-src/plugins/accounting/hooks/depreciation.hook.ts:12: * @accounting IFRS IAS-16 property-plant-and-equipment
-src/plugins/accounting/hooks/depreciation.hook.ts:13: * @accounting IFRS IAS-36 impairment-of-assets
-src/plugins/accounting/hooks/depreciation.hook.ts:14: * @accounting US-GAAP ASC-360 property-plant-and-equipment
-src/plugins/accounting/hooks/index.ts:19: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/plugins/accounting/hooks/depreciation.hook.ts:20: * @accounting IFRS IAS-16 §62 depreciation-methods
+src/plugins/accounting/hooks/depreciation.hook.ts:21: * @accounting IFRS IAS-36 impairment-of-assets
+src/plugins/accounting/hooks/depreciation.hook.ts:22: * @accounting US-GAAP ASC-360-10-35 depreciation
+src/plugins/accounting/hooks/index.ts:22: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/hooks/invoice.hook.ts:10: * @accounting US-GAAP ASC-330 inventory cogs-recognition
 src/plugins/accounting/hooks/invoice.hook.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/plugins/accounting/hooks/invoice.hook.ts:8: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
@@ -1815,6 +1821,14 @@ src/plugins/accounting/services/reports.ts:20: * @accounting US-GAAP ASC-310 rec
 src/plugins/accounting/services/reports.ts:21: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/plugins/accounting/services/reports.ts:22: * @accounting US-GAAP ASC-405 liabilities ap-aging
 src/plugins/accounting/services/reports.ts:23: * @accounting OECD SAF-T 2.0 standard-audit-file-tax
+src/plugins/accounting/utilities/calculations.ts:113: * @accounting IFRS IAS-16 §62 depreciation-methods double-declining-balance
+src/plugins/accounting/utilities/calculations.ts:114: * @accounting US-GAAP ASC-360-10-35-7 declining-balance
+src/plugins/accounting/utilities/calculations.ts:137: * @accounting IFRS IAS-16 §62 depreciation-methods sum-of-years-digits
+src/plugins/accounting/utilities/calculations.ts:138: * @accounting US-GAAP ASC-360-10-35 depreciation
+src/plugins/accounting/utilities/calculations.ts:160: * @accounting IFRS IAS-16 §62 depreciation-methods units-of-production
+src/plugins/accounting/utilities/calculations.ts:161: * @accounting US-GAAP ASC-360-10-35 depreciation activity-method
+src/plugins/accounting/utilities/calculations.ts:96: * @accounting IFRS IAS-16 §62 depreciation-methods diminishing-balance
+src/plugins/accounting/utilities/calculations.ts:97: * @accounting US-GAAP ASC-360-10-35 depreciation declining-balance
 src/plugins/accounting/utilities/calculations.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/utilities/period-lock.ts:10: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/plugins/accounting/utilities/period-lock.ts:11: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
@@ -1878,6 +1892,10 @@ src/plugins/receivables/workflow.ts:9: * @accounting US-GAAP ASC-606 revenue-fro
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/bank-reconciliation.service.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/services/depreciation.service.ts:23: * @accounting IFRS IAS-16 §62 depreciation-methods
+src/services/depreciation.service.ts:24: * @accounting IFRS IAS-36 impairment-of-assets
+src/services/depreciation.service.ts:25: * @accounting US-GAAP ASC-360-10-35 depreciation
+src/services/depreciation.service.ts:26: * @accounting OECD SAF-T §3 fixed-asset-register
 src/services/financial-reporting.service.ts:10: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/services/financial-reporting.service.ts:7: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/financial-reporting.service.ts:8: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -1889,6 +1907,8 @@ src/services/gl-account.service.ts:6: * @accounting US-GAAP ASC-210 balance-shee
 src/services/gl-account.service.ts:7: * @accounting OECD SAF-T §2 general-ledger-accounts
 src/services/gl-posting.service.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/gl-posting.service.ts:11: * @accounting OECD SAF-T §3 transactions
+src/services/gl-posting.service.ts:520:   * @accounting IFRS IAS-16 §62 depreciation-methods
+src/services/gl-posting.service.ts:521:   * @accounting US-GAAP ASC-360-10-35 depreciation
 src/services/journal-entry.service.ts:10: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/services/journal-entry.service.ts:11: * @accounting OECD SAF-T §3 journal-entries
 src/services/journal-entry.service.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -1906,13 +1926,15 @@ src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-tran
 src/standards/_money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/standards/_money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
 src/types/bank-reconciliation.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/types/events.ts:278: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
-src/types/events.ts:279: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/types/events.ts:280: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
-src/types/events.ts:365: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/types/events.ts:366: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/types/events.ts:367: * @accounting IFRS IAS-2 inventories cogs-recognition
-src/types/events.ts:368: * @accounting US-GAAP ASC-330 inventory cogs-recognition
+src/types/events.ts:221: * @accounting IFRS IAS-16 §62 depreciation-methods
+src/types/events.ts:222: * @accounting US-GAAP ASC-360-10-35 depreciation
+src/types/events.ts:314: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
+src/types/events.ts:315: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/types/events.ts:316: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
+src/types/events.ts:401: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/types/events.ts:402: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/types/events.ts:403: * @accounting IFRS IAS-2 inventories cogs-recognition
+src/types/events.ts:404: * @accounting US-GAAP ASC-330 inventory cogs-recognition
 src/types/financial-statements.ts:10: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/types/financial-statements.ts:7: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/types/financial-statements.ts:8: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -1950,6 +1972,8 @@ tests/int/accounting/critical-gaps-verification.int.spec.ts:7: * @accounting US-
 tests/int/accounting/debit-credit.int.spec.ts:5: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/debit-credit.int.spec.ts:6: * @accounting IFRS Conceptual-Framework recognition-derecognition
 tests/int/accounting/debit-credit.int.spec.ts:7: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+tests/int/accounting/depreciation-methods.int.spec.ts:14: * @accounting IFRS IAS-16 §62 depreciation-methods
+tests/int/accounting/depreciation-methods.int.spec.ts:15: * @accounting US-GAAP ASC-360-10-35 depreciation
 tests/int/accounting/full-cycle-demo.int.spec.ts:14: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 tests/int/accounting/full-cycle-demo.int.spec.ts:15: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 tests/int/accounting/level-2-integration.int.spec.ts:8: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -2402,8 +2426,8 @@ src/plugins/accounting/hooks/balanced-entry.hook.ts:26: * @audit ISO-19011:2018 
 src/plugins/accounting/hooks/base-accounting-hook.ts:13: * @audit ISO-19011:2018 audit-trail logging
 src/plugins/accounting/hooks/bill.hook.ts:9: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/cogs.hook.ts:15: * @audit ISO-19011:2018 audit-trail double-entry-posting
-src/plugins/accounting/hooks/depreciation.hook.ts:16: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/hooks/index.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
+src/plugins/accounting/hooks/depreciation.hook.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
+src/plugins/accounting/hooks/index.ts:21: * @audit ISO-19011:2018 audit-trail event-driven-posting
 src/plugins/accounting/hooks/invoice.hook.ts:11: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/item.hook.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/payment.hook.ts:11: * @audit ISO-19011:2018 audit-trail double-entry-posting
@@ -2444,11 +2468,13 @@ src/services/bank-reconciliation.service.ts:10: * @audit ISO-19011:2018 audit-tr
 src/services/bank-statement-import.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-context.ts:29: * @audit ISO-19011:2018 audit-trail country-decision-evidence
+src/services/depreciation.service.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/services/event-emitter.service.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/financial-reporting.service.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/gl-account-resolver.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
 src/services/gl-account.service.ts:8: * @audit ISO-19011:2018 audit-trail
 src/services/gl-posting.service.ts:12: * @audit ISO-19011:2018 audit-trail
+src/services/gl-posting.service.ts:522:   * @audit ISO-19011:2018 audit-trail period-expense
 src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:13: * @audit ISO-19011:2018 audit-trail
@@ -2458,8 +2484,9 @@ src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/test-seed-factory.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/test-setup.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/types/bank-reconciliation.ts:10: * @audit ISO-19011:2018 audit-trail
-src/types/events.ts:281: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
-src/types/events.ts:369: * @audit ISO-19011:2018 audit-trail order-lifecycle
+src/types/events.ts:223: * @audit ISO-19011:2018 audit-trail period-expense
+src/types/events.ts:317: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
+src/types/events.ts:405: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/types/events.ts:8: * @audit ISO-19011:2018 audit-trail event-log
 src/types/gl-account.ts:10: * @audit ISO-19011:2018 audit-trail
 src/types/multi-currency.ts:15: * @audit ISO-19011:2018 audit-trail
@@ -2479,6 +2506,7 @@ tests/helpers/seedTenant.ts:9: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/helpers/seedUser.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/int/accounting/critical-gaps-verification.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/debit-credit.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-invariant
+tests/int/accounting/depreciation-methods.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence
 tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail full-cycle-coverage
 tests/int/accounting/level-2-integration.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-trail full-cycle
