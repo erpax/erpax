@@ -777,8 +777,10 @@ src/standards/index.ts:28: * @standard UBL-2.1 universal-business-language
 src/standards/index.ts:33: * @standard ISO-27002:2022 information-security-controls
 src/standards/index.ts:34: * @standard ISO-27001:2022 isms-annex-a-controls
 src/standards/index.ts:35: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
-src/standards/index.ts:43: * @standard W3C CSP-3
-src/standards/index.ts:44: * @standard W3C Permissions-Policy
+src/standards/index.ts:36: * @standard UN-EDIFACT D.96A invoic-desadv-paymul
+src/standards/index.ts:37: * @standard ISO-9735:2002 edifact-syntax-rules
+src/standards/index.ts:45: * @standard W3C CSP-3
+src/standards/index.ts:46: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -931,6 +933,32 @@ src/standards/saf-t/types.ts:63: * @standard OECD SAF-T 2.0 AmountStructure
 src/standards/saf-t/types.ts:79: * @standard OECD SAF-T 2.0 TaxInformationStructure
 src/standards/saf-t/validate.ts:4: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/standards/saf-t/validate.ts:53: * @standard OECD SAF-T 2.0 GeneralLedgerEntries
+src/standards/un-edifact/index.ts:4: * @standard UN-EDIFACT D.96A
+src/standards/un-edifact/index.ts:5: * @standard ISO-9735:2002 edifact-syntax-rules
+src/standards/un-edifact/types.ts:108: * @standard UN-EDIFACT D.96A BGM beginning-of-message
+src/standards/un-edifact/types.ts:10: * @standard ISO-9735:2002 edifact-syntax-rules
+src/standards/un-edifact/types.ts:131: * @standard UN-EDIFACT D.96A DTM date-time-period
+src/standards/un-edifact/types.ts:146: * @standard UN-EDIFACT D.96A NAD name-and-address
+src/standards/un-edifact/types.ts:178: * @standard UN-EDIFACT D.96A LIN line-item
+src/standards/un-edifact/types.ts:193: * @standard UN-EDIFACT D.96A IMD item-description
+src/standards/un-edifact/types.ts:206: * @standard UN-EDIFACT D.96A QTY quantity
+src/standards/un-edifact/types.ts:223: * @standard UN-EDIFACT D.96A PRI price-details
+src/standards/un-edifact/types.ts:237: * @standard UN-EDIFACT D.96A MOA monetary-amount
+src/standards/un-edifact/types.ts:251: * @standard UN-EDIFACT D.96A TAX tax-duty-fee
+src/standards/un-edifact/types.ts:25: * @standard ISO-9735:2002 syntax-identifier
+src/standards/un-edifact/types.ts:265: * @standard UN-EDIFACT D.96A invoic-line
+src/standards/un-edifact/types.ts:279: * @standard UN-EDIFACT D.96A INVOIC invoice
+src/standards/un-edifact/types.ts:297: * @standard UN-EDIFACT D.96A DESADV despatch-advice
+src/standards/un-edifact/types.ts:316: * @standard UN-EDIFACT D.96A PAYMUL multiple-payment-order
+src/standards/un-edifact/types.ts:32: * @standard UN-EDIFACT message-types
+src/standards/un-edifact/types.ts:337: * @standard UN-EDIFACT D.96A interchange
+src/standards/un-edifact/types.ts:41: * @standard UN-EDIFACT D.96A UNB interchange-header
+src/standards/un-edifact/types.ts:61: * @standard UN-EDIFACT D.96A UNH message-header
+src/standards/un-edifact/types.ts:78: * @standard UN-EDIFACT D.96A UNT message-trailer
+src/standards/un-edifact/types.ts:91: * @standard UN-EDIFACT D.96A UNZ interchange-trailer
+src/standards/un-edifact/types.ts:9: * @standard UN-EDIFACT D.96A invoice-message
+src/standards/un-edifact/validate.ts:4: * @standard UN-EDIFACT D.96A
+src/standards/un-edifact/validate.ts:5: * @standard ISO-9735:2002 edifact-syntax-rules
 src/testing/config-discovery-types.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/config-discovery-types.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 src/testing/config-discovery.ts:7: * @standard ISO/IEC-29119:2022 software-testing
@@ -1184,6 +1212,9 @@ tests/standards/rfc-9110/get-globals.int.spec.ts:4: * @standard ISO/IEC-29119:20
 tests/standards/rfc-9110/get-redirects.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/saf-t/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/saf-t/types.int.spec.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+tests/standards/un-edifact/types.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/un-edifact/types.int.spec.ts:5: * @standard UN-EDIFACT D.96A
+tests/standards/un-edifact/types.int.spec.ts:6: * @standard ISO-9735:2002 edifact-syntax-rules
 tests/testing/config-discovery-advanced.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/testing/config-discovery-advanced.test.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 tests/testing/config-discovery.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
@@ -1354,13 +1385,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:36: * @rfc 5869 hkdf
-src/standards/index.ts:37: * @rfc 5116 aead
-src/standards/index.ts:38: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:39: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:40: * @rfc 9110 http-semantics
-src/standards/index.ts:41: * @rfc 9111 http-caching
-src/standards/index.ts:42: * @rfc 6797 hsts
+src/standards/index.ts:38: * @rfc 5869 hkdf
+src/standards/index.ts:39: * @rfc 5116 aead
+src/standards/index.ts:40: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:41: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:42: * @rfc 9110 http-semantics
+src/standards/index.ts:43: * @rfc 9111 http-caching
+src/standards/index.ts:44: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -3008,6 +3039,7 @@ src/standards/iso-27002/coverage.ts:12: * @audit ISO-19011:2018 audit-trail cont
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/standards/peppol-bis-3/types.ts:13: * @audit ISO-19011:2018 audit-trail
 src/standards/saf-t/types.ts:18: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
+src/standards/un-edifact/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/testing/test-seed-factory.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
@@ -3070,6 +3102,7 @@ tests/standards/iso-27002/access-coverage.int.spec.ts:16: * @audit ISO-19011:201
 tests/standards/iso-27002/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/standards/peppol-bis-3/types.int.spec.ts:7: * @audit ISO-19011:2018 audit-trail
 tests/standards/saf-t/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
+tests/standards/un-edifact/types.int.spec.ts:7: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
 ## @quality

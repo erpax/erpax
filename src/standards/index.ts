@@ -33,6 +33,8 @@
  * @standard ISO-27002:2022 information-security-controls
  * @standard ISO-27001:2022 isms-annex-a-controls
  * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+ * @standard UN-EDIFACT D.96A invoic-desadv-paymul
+ * @standard ISO-9735:2002 edifact-syntax-rules
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -269,6 +271,35 @@ export {
   coverageByTheme,
   aggregateCoverage,
 } from './iso-27002'
+
+// UN/EDIFACT D.96A — INVOIC + DESADV + PAYMUL canonical message types
+export type {
+  EdifactSyntaxId,
+  EdifactMessageType,
+  EdifactUNB,
+  EdifactUNH,
+  EdifactUNT,
+  EdifactUNZ,
+  EdifactBGM,
+  EdifactDTM,
+  EdifactNAD,
+  EdifactLIN,
+  EdifactIMD,
+  EdifactQTY,
+  EdifactPRI,
+  EdifactMOA,
+  EdifactTAX,
+  EdifactInvoicLine,
+  EdifactInvoic,
+  EdifactDesadv,
+  EdifactPaymul,
+  EdifactInterchange,
+} from './un-edifact'
+export {
+  isEdifactSyntaxId,
+  isEdifactMessageType,
+  isBalancedInvoicNet,
+} from './un-edifact'
 
 // Tax-authority audit file (OECD SAF-T 2.0)
 export type {
