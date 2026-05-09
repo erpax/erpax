@@ -649,6 +649,30 @@ src/standards/bcp-47/language-tag.ts:4: * @standard BCP-47 language-tag
 src/standards/bcp-47/locale-utils.ts:5: * @standard BCP-47 language-tag
 src/standards/bcp-47/locale-utils.ts:8: * @standard ECMA-402 internationalization-api
 src/standards/bcp-47/locale-utils.ts:9: * @standard Unicode-CLDR locale-data
+src/standards/en-16931/index.ts:4: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/standards/en-16931/types.ts:106: * @standard EN-16931:2017 BG-30 line-vat-information
+src/standards/en-16931/types.ts:124: * @standard EN-16931:2017 BG-25 invoice-line
+src/standards/en-16931/types.ts:13: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/standards/en-16931/types.ts:14: * @standard ISO-4217:2015 currency-codes
+src/standards/en-16931/types.ts:15: * @standard ISO-8601-1:2019 date-time
+src/standards/en-16931/types.ts:173: * @standard EN-16931:2017 BG-27 invoice-line-allowances
+src/standards/en-16931/types.ts:187: * @standard EN-16931:2017 BG-28 invoice-line-charges
+src/standards/en-16931/types.ts:203: * @standard EN-16931:2017 BG-20 document-level-allowances
+src/standards/en-16931/types.ts:225: * @standard EN-16931:2017 BG-21 document-level-charges
+src/standards/en-16931/types.ts:243: * @standard EN-16931:2017 BG-23 vat-breakdown
+src/standards/en-16931/types.ts:265: * @standard EN-16931:2017 BG-22 document-totals
+src/standards/en-16931/types.ts:28: * @standard EN-16931:2017 BT-3 invoice-type-code
+src/standards/en-16931/types.ts:297: * @standard EN-16931:2017 BG-1 invoice
+src/standards/en-16931/types.ts:29: * @standard UN-CEFACT 1001 document-name-code
+src/standards/en-16931/types.ts:48: * @standard EN-16931:2017 BT-151 vat-category-code
+src/standards/en-16931/types.ts:49: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+src/standards/en-16931/types.ts:65: * @standard EN-16931:2017 BT-81 payment-means-type-code
+src/standards/en-16931/types.ts:66: * @standard UN-CEFACT 4461 payment-means
+src/standards/en-16931/types.ts:86: * @standard EN-16931:2017 BG-29 price-details
+src/standards/en-16931/validate.ts:6: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/standards/en-16931/validate.ts:7: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+src/standards/en-16931/validate.ts:8: * @standard UN-CEFACT 1001 document-name-code
+src/standards/en-16931/validate.ts:9: * @standard UN-CEFACT 4461 payment-means
 src/standards/index.ts:10: * @standard ISO-3166-2:2020 subdivision-codes
 src/standards/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/standards/index.ts:12: * @standard ISO-13616-1:2020 iban
@@ -658,8 +682,12 @@ src/standards/index.ts:17: * @standard NIST SP-800-38D aes-gcm
 src/standards/index.ts:18: * @standard NIST SP-800-108 key-derivation
 src/standards/index.ts:19: * @standard NIST INCITS-359-2012 role-based-access-control
 src/standards/index.ts:20: * @standard ISO-19011:2018 audit-trail
-src/standards/index.ts:28: * @standard W3C CSP-3
-src/standards/index.ts:29: * @standard W3C Permissions-Policy
+src/standards/index.ts:21: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/standards/index.ts:22: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+src/standards/index.ts:23: * @standard UN-CEFACT 1001 document-name-code
+src/standards/index.ts:24: * @standard UN-CEFACT 4461 payment-means
+src/standards/index.ts:32: * @standard W3C CSP-3
+src/standards/index.ts:33: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -739,6 +767,8 @@ src/types/bank-reconciliation.ts:5: * @standard ISO-13616-1:2020 iban
 src/types/bank-reconciliation.ts:6: * @standard ISO-9362:2022 bic
 src/types/bank-reconciliation.ts:7: * @standard ISO-4217:2015 currency-codes
 src/types/bank-reconciliation.ts:8: * @standard ISO-8601-1:2019 date-time
+src/types/events.ts:132: * @standard EN-16931:2017 BG-25 invoice-line
+src/types/events.ts:61: * @standard EN-16931:2017 BG-25 invoice-line
 src/types/events.ts:7: * @standard ISO-8601-1:2019 date-time event-timestamp
 src/types/financial-statements.ts:5: * @standard ISO-4217:2015 currency-codes
 src/types/financial-statements.ts:6: * @standard ISO-8601-1:2019 date-time fiscal-period
@@ -900,6 +930,8 @@ tests/standards/_security-headers/headers.int.spec.ts:8: * @standard W3C Permiss
 tests/standards/_security-headers/headers.int.spec.ts:9: * @standard OWASP-ASVS V14 configuration
 tests/standards/bcp-47/language-tag.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/bcp-47/language-tag.int.spec.ts:5: * @standard BCP-47 language-tag
+tests/standards/en-16931/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/en-16931/types.int.spec.ts:8: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
 tests/standards/iso-13616/iban.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
@@ -1109,13 +1141,13 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:21: * @rfc 5869 hkdf
-src/standards/index.ts:22: * @rfc 5116 aead
-src/standards/index.ts:23: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:24: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:25: * @rfc 9110 http-semantics
-src/standards/index.ts:26: * @rfc 9111 http-caching
-src/standards/index.ts:27: * @rfc 6797 hsts
+src/standards/index.ts:25: * @rfc 5869 hkdf
+src/standards/index.ts:26: * @rfc 5116 aead
+src/standards/index.ts:27: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:28: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:29: * @rfc 9110 http-semantics
+src/standards/index.ts:30: * @rfc 9111 http-caching
+src/standards/index.ts:31: * @rfc 6797 hsts
 src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
@@ -1539,8 +1571,8 @@ src/standards/nist-sp-800-38/aes-gcm.ts:17: * @compliance PCI-DSS-4.0 §3.6 stro
 src/standards/rfc-6585/rate-limit.ts:15: * @compliance SOC-2 CC6.1 logical-access-controls
 src/types/bank-reconciliation.ts:163: * @compliance SOX §404 internal-controls
 src/types/events.ts:10: * @compliance SOX §404 internal-controls
-src/types/events.ts:318: * @compliance SOX §404 internal-controls
-src/types/events.ts:406: * @compliance SOX §404 internal-controls quote-to-cash
+src/types/events.ts:355: * @compliance SOX §404 internal-controls
+src/types/events.ts:443: * @compliance SOX §404 internal-controls quote-to-cash
 src/types/events.ts:9: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/types/financial-statements.ts:11: * @compliance SOX §302 disclosure-controls
 src/types/host.ts:17: * @compliance GDPR Art.4(7) data-controller
@@ -1958,19 +1990,21 @@ src/services/tax-automation.service.ts:20: * @accounting OECD SAF-T tax-table
 src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/standards/_money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/standards/_money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
+src/standards/en-16931/types.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/standards/en-16931/types.ts:17: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:240: * @accounting US-GAAP ASC-310 receivables returned-checks
 src/types/bank-reconciliation.ts:9: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/types/events.ts:221: * @accounting IFRS IAS-16 §62 depreciation-methods
-src/types/events.ts:222: * @accounting US-GAAP ASC-360-10-35 depreciation
-src/types/events.ts:314: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
-src/types/events.ts:315: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/types/events.ts:316: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
-src/types/events.ts:401: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/types/events.ts:402: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/types/events.ts:403: * @accounting IFRS IAS-2 inventories cogs-recognition
-src/types/events.ts:404: * @accounting US-GAAP ASC-330 inventory cogs-recognition
+src/types/events.ts:258: * @accounting IFRS IAS-16 §62 depreciation-methods
+src/types/events.ts:259: * @accounting US-GAAP ASC-360-10-35 depreciation
+src/types/events.ts:351: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
+src/types/events.ts:352: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/types/events.ts:353: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
+src/types/events.ts:438: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/types/events.ts:439: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/types/events.ts:440: * @accounting IFRS IAS-2 inventories cogs-recognition
+src/types/events.ts:441: * @accounting US-GAAP ASC-330 inventory cogs-recognition
 src/types/financial-statements.ts:10: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/types/financial-statements.ts:7: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/types/financial-statements.ts:8: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -2539,9 +2573,9 @@ src/testing/test-setup.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 src/types/bank-reconciliation.ts:10: * @audit ISO-19011:2018 audit-trail
 src/types/bank-reconciliation.ts:162: * @audit ISO-19011:2018 audit-trail bank-reconciliation
 src/types/bank-reconciliation.ts:215: * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
-src/types/events.ts:223: * @audit ISO-19011:2018 audit-trail period-expense
-src/types/events.ts:317: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
-src/types/events.ts:405: * @audit ISO-19011:2018 audit-trail order-lifecycle
+src/types/events.ts:260: * @audit ISO-19011:2018 audit-trail period-expense
+src/types/events.ts:354: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
+src/types/events.ts:442: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/types/events.ts:8: * @audit ISO-19011:2018 audit-trail event-log
 src/types/gl-account.ts:10: * @audit ISO-19011:2018 audit-trail
 src/types/multi-currency.ts:15: * @audit ISO-19011:2018 audit-trail
@@ -2573,6 +2607,7 @@ tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-t
 tests/int/parties/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
 tests/int/receivables/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
 tests/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
+tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 

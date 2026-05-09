@@ -18,6 +18,10 @@
  * @standard NIST SP-800-108 key-derivation
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @standard ISO-19011:2018 audit-trail
+ * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+ * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+ * @standard UN-CEFACT 1001 document-name-code
+ * @standard UN-CEFACT 4461 payment-means
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -121,6 +125,28 @@ export {
   getCachedGlobal,
   getCachedRedirects,
 } from './rfc-9110'
+
+// E-invoice semantic data model (EN 16931:2017+A1:2019)
+export type {
+  InvoiceTypeCode,
+  VatCategoryCode,
+  PaymentMeansCode,
+  ItemPriceDetails,
+  LineVatInformation,
+  InvoiceLine,
+  LineAllowance,
+  LineCharge,
+  DocumentLevelAllowance,
+  DocumentLevelCharge,
+  VatBreakdown,
+  DocumentTotals,
+  InvoiceHeader,
+} from './en-16931'
+export {
+  isInvoiceTypeCode,
+  isVatCategoryCode,
+  isPaymentMeansCode,
+} from './en-16931'
 
 // Audit-trail types (ISO 19011 §6.4.6 audit-evidence)
 export type {

@@ -50,14 +50,38 @@ export interface InvoiceActivatedEvent extends DomainEvent {
   };
 }
 
+/**
+ * Project-internal invoice line shape — a thin projection of the
+ * canonical {@link import('@/standards/en-16931').InvoiceLine} (BG-25).
+ *
+ * Consumers (events, reports, hooks) MUST treat this as a derived view
+ * of EN 16931, not a parallel type system. When EN 16931 fields drift,
+ * this shape drifts with them.
+ *
+ * @standard EN-16931:2017 BG-25 invoice-line
+ */
 export interface InvoiceLineItem {
+  /** BT-126 — Invoice line identifier. */
   id: string;
+  /** BT-128 — Item id / SKU / GTIN. */
   itemId?: string;
+  /** BG-31 BT-153 — Item name / description. */
   description: string;
+  /** BT-129 — Invoiced quantity. */
   quantity: number;
+  /** BT-146 — Item net price (per unit). */
   unitPrice: number;
+  /** BT-131 — Invoice line net amount. */
   amount: number;
+  /**
+   * Item cost — used by COGS posting. Not part of the EN 16931 wire
+   * format; carried alongside for the GL handler.
+   */
   costAmount?: number;
+  /**
+   * Internal item category — distinct from EN 16931 BG-32 item attributes.
+   * Used by the GL handler to resolve the revenue / inventory account.
+   */
   category: string;
 }
 
@@ -100,13 +124,26 @@ export interface BillActivatedEvent extends DomainEvent {
   };
 }
 
+/**
+ * Project-internal bill line shape — analogue of {@link InvoiceLineItem}
+ * for AP. Same EN 16931 BG-25 line model with an `expenseCategory`
+ * discriminator for the AP-side GL account resolver.
+ *
+ * @standard EN-16931:2017 BG-25 invoice-line
+ */
 export interface BillLineItem {
+  /** BT-126 — Invoice line identifier. */
   id: string;
   itemId?: string;
+  /** BG-31 BT-153 — Item name / description. */
   description: string;
+  /** BT-129 — Invoiced quantity. */
   quantity: number;
+  /** BT-146 — Item net price. */
   unitPrice: number;
+  /** BT-131 — Invoice line net amount. */
   amount: number;
+  /** Internal: AP expense / inventory account discriminator. */
   expenseCategory: string;
 }
 
