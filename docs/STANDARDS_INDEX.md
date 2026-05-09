@@ -719,11 +719,11 @@ src/services/peppol-export.service.ts:233: * @standard EN-16931:2017 semantic-mo
 src/services/peppol-export.service.ts:234: * @standard UBL-2.1 universal-business-language
 src/services/period-end-adjustment.service.ts:21: * @standard ISO-8601-1:2019 date-time period
 src/services/period-end-adjustment.service.ts:22: * @standard ISO-4217:2015 currency-codes
+src/services/saf-t-export.service.ts:1218: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:30: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:31: * @standard ISO-3166-1:2020 country-codes
 src/services/saf-t-export.service.ts:32: * @standard ISO-4217:2015 currency-codes
 src/services/saf-t-export.service.ts:33: * @standard ISO-8601-1:2019 date-time
-src/services/saf-t-export.service.ts:690: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
 src/services/tax-automation.service.ts:19: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
@@ -1124,6 +1124,8 @@ tests/int/accounting/peppol-export.int.spec.ts:9: * @standard Peppol-BIS-3.0 bil
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/saf-t-export.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/saf-t-export.int.spec.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+tests/int/accounting/saf-t-source-documents.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/saf-t-source-documents.int.spec.ts:5: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 tests/int/accounting/saf-t-xml.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/saf-t-xml.int.spec.ts:8: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 tests/int/api.int.spec.ts:10: * @standard OpenAPI 3.1 api-description
@@ -3117,6 +3119,7 @@ tests/int/accounting/payroll-run-posting.int.spec.ts:19: * @audit ISO-19011:2018
 tests/int/accounting/peppol-export.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail period-end-evidence
 tests/int/accounting/saf-t-export.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
+tests/int/accounting/saf-t-source-documents.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/saf-t-xml.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/int/config/appCollectionsRegistry.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-trail

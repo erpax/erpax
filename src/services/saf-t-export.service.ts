@@ -430,14 +430,375 @@ export const buildGeneralLedgerEntries = async (
   }
 }
 
-// ─── 4. SourceDocuments — follow-up slice ─────────────────────────────
+// ─── 4. SourceDocuments ───────────────────────────────────────────────
 
-/**
- * @todo follow-up — buildSourceDocuments(payload, tenantId, period) →
- *   SafTSourceDocuments. Walks invoices / payments / inventory-movements
- *   for the period. Country-specific extensions (saf-t-pt) layer the
- *   PT hash chain on top.
- */
+interface InvoiceDoc {
+  id: string | number
+  number?: string
+  invoiceTypeCode?: string
+  invoiceType?: string
+  date?: string | Date
+  issuedAt?: string | Date
+  buyer?: string | { id?: string }
+  seller?: string | { id?: string }
+  buyerAddress?: import('@/standards/saf-t').SafTAddressStructure
+  amounts?: {
+    netTotal?: number
+    taxTotal?: number
+    totalAmount?: number
+  }
+  vatBreakdown?: Array<{
+    categoryCode?: string
+    rate?: number
+    taxableAmount?: number
+    taxAmount?: number
+    exemptionReasonCode?: string
+    exemptionReason?: string
+  }>
+  lines?: Array<{
+    code?: string
+    description?: string
+    quantity?: { quantity?: number; unit?: string }
+    pricing?: { unitPrice?: number; itemTotal?: number }
+    taxation?: {
+      vatCategoryCode?: string
+      taxRate?: number
+      netTotal?: number
+    }
+    items?: { sellerItem?: string | { id?: string } }
+  }>
+  createdAt?: string | Date
+  status?: string
+}
+
+const toIsoDate = (d: string | Date | undefined): string => {
+  if (!d) return ''
+  return typeof d === 'string'
+    ? d.length >= 10
+      ? d.slice(0, 10)
+      : d
+    : d.toISOString().slice(0, 10)
+}
+
+const toIsoDateTime = (d: string | Date | undefined): string => {
+  if (!d) return new Date().toISOString()
+  return typeof d === 'string' ? d : d.toISOString()
+}
+
+const idStr = (
+  rel: string | number | { id?: string | number } | undefined,
+): string => {
+  if (rel === undefined) return ''
+  if (typeof rel === 'string' || typeof rel === 'number') return String(rel)
+  if (typeof rel === 'object' && 'id' in rel && rel.id !== undefined) return String(rel.id)
+  return ''
+}
+
+const invoiceToSafT = (
+  doc: InvoiceDoc,
+): import('@/standards/saf-t').SafTSalesInvoice => {
+  const issueDate = toIsoDate(doc.issuedAt ?? doc.date)
+  const systemEntryDate = toIsoDateTime(doc.createdAt ?? doc.date)
+
+  const lines = (doc.lines ?? []).map((line, i) => ({
+    lineNumber: i + 1,
+    productCode: idStr(line.items?.sellerItem) || line.code,
+    productDescription: line.description ?? line.code ?? '—',
+    quantity: line.quantity?.quantity ?? 0,
+    unitOfMeasure: line.quantity?.unit,
+    unitPrice: line.pricing?.unitPrice ?? 0,
+    taxBase: line.taxation?.netTotal ?? line.pricing?.itemTotal ?? 0,
+    description: line.description ?? '',
+    creditAmount: line.taxation?.netTotal ?? line.pricing?.itemTotal ?? 0,
+    taxInformation: {
+      taxType: 'IVA',
+      taxCountryRegion: 'PT',
+      taxCode: line.taxation?.vatCategoryCode ?? 'NOR',
+      taxPercentage: line.taxation?.taxRate,
+      taxAmount: { amount: 0 }, // line-level tax computed from rate × base
+    },
+  }))
+
+  return {
+    invoiceNo: String(doc.number ?? doc.id),
+    invoiceType: doc.invoiceTypeCode === '381' ? 'NC' : 'FT', // PT-style
+    invoiceDate: issueDate,
+    systemEntryDate,
+    customerID: idStr(doc.buyer),
+    lines,
+    documentTotals: {
+      taxPayable: doc.amounts?.taxTotal ?? 0,
+      netTotal: doc.amounts?.netTotal ?? 0,
+      grossTotal: doc.amounts?.totalAmount ?? 0,
+    },
+  }
+}
+
+export const buildSalesInvoices = async (
+  payload: Payload,
+  tenantId: string | number,
+  startDate: string,
+  endDate: string,
+): Promise<NonNullable<import('@/standards/saf-t').SafTSourceDocuments['salesInvoices']>> => {
+  const result = await payload.find({
+    collection: 'invoices',
+    where: {
+      and: [
+        { tenant: { equals: tenantId } },
+        { invoiceType: { in: ['invoice', 'credit_note', 'debit_note'] } },
+        { 'dates.issuedAt': { greater_than_equal: startDate, less_than_equal: endDate } },
+      ],
+    },
+    limit: 100_000,
+    depth: 1,
+  })
+  const docs = result.docs as unknown as InvoiceDoc[]
+  const invoices = docs.map(invoiceToSafT)
+  const totalDebit = 0
+  let totalCredit = 0
+  for (const inv of invoices) {
+    totalCredit += inv.documentTotals.netTotal
+  }
+  return {
+    numberOfEntries: invoices.length,
+    totalDebit,
+    totalCredit,
+    invoices,
+  }
+}
+
+export const buildPurchaseInvoices = async (
+  payload: Payload,
+  tenantId: string | number,
+  startDate: string,
+  endDate: string,
+): Promise<NonNullable<import('@/standards/saf-t').SafTSourceDocuments['purchaseInvoices']>> => {
+  const result = await payload.find({
+    collection: 'invoices',
+    where: {
+      and: [
+        { tenant: { equals: tenantId } },
+        { invoiceType: { equals: 'bill' } },
+        { 'dates.issuedAt': { greater_than_equal: startDate, less_than_equal: endDate } },
+      ],
+    },
+    limit: 100_000,
+    depth: 1,
+  })
+  const docs = result.docs as unknown as InvoiceDoc[]
+  const invoices = docs.map(invoiceToSafT)
+  let totalDebit = 0
+  const totalCredit = 0
+  for (const inv of invoices) {
+    totalDebit += inv.documentTotals.netTotal
+  }
+  return {
+    numberOfEntries: invoices.length,
+    totalDebit,
+    totalCredit,
+    invoices,
+  }
+}
+
+interface PaymentDoc {
+  id: string | number
+  paymentNumber?: string
+  paymentType?: string
+  paymentDate?: string | Date
+  paymentMethod?: string
+  partyId?: string | { id?: string }
+  amount?: number
+  currency?: string
+  invoiceId?: string
+  billId?: string
+  createdAt?: string | Date
+  status?: string
+}
+
+const PAYMENT_MECH_MAP: Record<string, import('@/standards/saf-t').SafTPaymentMechanism> = {
+  cash: 'NU',
+  cheque: 'CH',
+  bank_transfer: 'TB',
+  wire: 'TB',
+  sepa_credit_transfer: 'TB',
+  sepa_direct_debit: 'MB',
+  credit_card: 'CC',
+  debit_card: 'CD',
+}
+
+const paymentToSafT = (
+  doc: PaymentDoc,
+): import('@/standards/saf-t').SafTPayment => {
+  const paymentDate = toIsoDate(doc.paymentDate)
+  const systemEntryDate = toIsoDateTime(doc.createdAt ?? doc.paymentDate)
+  const paymentMechanism =
+    PAYMENT_MECH_MAP[String(doc.paymentMethod ?? '').toLowerCase()] ?? 'OU'
+  const amount = Number(doc.amount ?? 0)
+  return {
+    paymentRefNo: String(doc.paymentNumber ?? doc.id),
+    paymentType: 'RG', // PT recibo geral
+    transactionDate: paymentDate,
+    customerID: doc.paymentType === 'incoming' ? idStr(doc.partyId) : undefined,
+    supplierID: doc.paymentType === 'outgoing' ? idStr(doc.partyId) : undefined,
+    paymentMethod: {
+      paymentMechanism,
+      paymentAmount: amount,
+      paymentDate,
+    },
+    documentStatus: { paymentStatus: 'N', paymentStatusDate: paymentDate },
+    systemEntryDate,
+    lines: [
+      {
+        lineNumber: 1,
+        sourceDocumentID: String(doc.invoiceId ?? doc.billId ?? doc.id),
+        creditAmount: doc.paymentType === 'incoming' ? amount : undefined,
+        debitAmount: doc.paymentType === 'outgoing' ? amount : undefined,
+      },
+    ],
+    documentTotals: {
+      taxPayable: 0,
+      netTotal: amount,
+      grossTotal: amount,
+    },
+  }
+}
+
+export const buildPayments = async (
+  payload: Payload,
+  tenantId: string | number,
+  startDate: string,
+  endDate: string,
+): Promise<NonNullable<import('@/standards/saf-t').SafTSourceDocuments['payments']>> => {
+  const result = await payload.find({
+    collection: 'payments',
+    where: {
+      and: [
+        { tenant: { equals: tenantId } },
+        { paymentDate: { greater_than_equal: startDate, less_than_equal: endDate } },
+      ],
+    },
+    limit: 100_000,
+    depth: 0,
+  })
+  const docs = result.docs as unknown as PaymentDoc[]
+  const payments = docs.map(paymentToSafT)
+  let totalDebit = 0
+  let totalCredit = 0
+  for (const p of payments) {
+    totalDebit += p.lines[0]?.debitAmount ?? 0
+    totalCredit += p.lines[0]?.creditAmount ?? 0
+  }
+  return {
+    numberOfEntries: payments.length,
+    totalDebit,
+    totalCredit,
+    payments,
+  }
+}
+
+interface InventoryMovementDoc {
+  id: string | number
+  movementId?: string
+  kind?: string
+  movementAt?: string | Date
+  item?: string | { id?: string; itemNumber?: string; itemName?: string }
+  quantity?: number
+  unitOfMeasure?: string
+  fromLocationName?: string
+  toLocationName?: string
+  fromCity?: string
+  toCity?: string
+  customer?: string | { id?: string }
+  vendor?: string | { id?: string }
+  createdAt?: string | Date
+}
+
+const movementToSafT = (
+  doc: InventoryMovementDoc,
+): import('@/standards/saf-t').SafTMovementOfGoods => ({
+  documentNumber: String(doc.movementId ?? doc.id),
+  movementType: doc.kind === 'shipment' ? 'GR' : 'GT',
+  movementDate: toIsoDate(doc.movementAt),
+  systemEntryDate: toIsoDateTime(doc.createdAt ?? doc.movementAt),
+  shipFrom: {
+    city: doc.fromCity ?? doc.fromLocationName ?? '',
+    postalCode: '',
+    country: '',
+  },
+  shipTo: {
+    city: doc.toCity ?? doc.toLocationName ?? '',
+    postalCode: '',
+    country: '',
+  },
+  customerID: idStr(doc.customer),
+  supplierID: idStr(doc.vendor),
+  lines: [
+    {
+      lineNumber: 1,
+      productCode:
+        typeof doc.item === 'object' && doc.item
+          ? String(doc.item.itemNumber ?? doc.item.id ?? '')
+          : idStr(doc.item),
+      productDescription:
+        typeof doc.item === 'object' && doc.item
+          ? String(doc.item.itemName ?? doc.item.id ?? '')
+          : '—',
+      quantity: doc.quantity ?? 0,
+      unitOfMeasure: doc.unitOfMeasure,
+    },
+  ],
+})
+
+export const buildMovementOfGoods = async (
+  payload: Payload,
+  tenantId: string | number,
+  startDate: string,
+  endDate: string,
+): Promise<NonNullable<import('@/standards/saf-t').SafTSourceDocuments['movementOfGoods']>> => {
+  const result = await payload.find({
+    collection: 'inventory-movements',
+    where: {
+      and: [
+        { tenant: { equals: tenantId } },
+        { movementAt: { greater_than_equal: startDate, less_than_equal: endDate } },
+      ],
+    },
+    limit: 100_000,
+    depth: 1,
+  })
+  const docs = result.docs as unknown as InventoryMovementDoc[]
+  const movements = docs.map(movementToSafT)
+  return {
+    numberOfMovementLines: movements.reduce((s, m) => s + m.lines.length, 0),
+    totalQuantityIssued: movements.reduce(
+      (s, m) => s + m.lines.reduce((ls, l) => ls + Math.abs(l.quantity), 0),
+      0,
+    ),
+    movements,
+  }
+}
+
+export const buildSourceDocuments = async (
+  payload: Payload,
+  tenantId: string | number,
+  startDate: string,
+  endDate: string,
+): Promise<import('@/standards/saf-t').SafTSourceDocuments> => ({
+  salesInvoices: await buildSalesInvoices(payload, tenantId, startDate, endDate),
+  purchaseInvoices: await buildPurchaseInvoices(
+    payload,
+    tenantId,
+    startDate,
+    endDate,
+  ),
+  payments: await buildPayments(payload, tenantId, startDate, endDate),
+  movementOfGoods: await buildMovementOfGoods(
+    payload,
+    tenantId,
+    startDate,
+    endDate,
+  ),
+})
 
 // ─── Top-level orchestrator ───────────────────────────────────────────
 
@@ -448,6 +809,12 @@ export const buildAuditFile = async (
   header: buildHeader(options),
   masterFiles: await buildMasterFiles(payload, options.tenantId),
   generalLedgerEntries: await buildGeneralLedgerEntries(
+    payload,
+    options.tenantId,
+    options.startDate,
+    options.endDate,
+  ),
+  sourceDocuments: await buildSourceDocuments(
     payload,
     options.tenantId,
     options.startDate,
@@ -682,6 +1049,167 @@ const renderGeneralLedgerEntries = (
     ...gle.journals.map(renderJournal),
   )
 
+// ─── SourceDocuments XML rendering ────────────────────────────────────
+
+const renderSalesInvoiceLine = (
+  l: import('@/standards/saf-t').SafTSalesInvoiceLine,
+): string =>
+  wrap(
+    'Line',
+    leaf('LineNumber', l.lineNumber),
+    leaf('ProductCode', l.productCode),
+    leaf('ProductDescription', l.productDescription),
+    leaf('Quantity', l.quantity),
+    leaf('UnitOfMeasure', l.unitOfMeasure),
+    leaf('UnitPrice', formatAmount(l.unitPrice)),
+    leaf('TaxBase', formatAmount(l.taxBase)),
+    leaf('Description', l.description),
+    l.creditAmount !== undefined
+      ? leaf('CreditAmount', formatAmount(l.creditAmount))
+      : '',
+    l.debitAmount !== undefined
+      ? leaf('DebitAmount', formatAmount(l.debitAmount))
+      : '',
+    wrap(
+      'Tax',
+      leaf('TaxType', l.taxInformation.taxType),
+      leaf('TaxCountryRegion', l.taxInformation.taxCountryRegion),
+      leaf('TaxCode', l.taxInformation.taxCode),
+      l.taxInformation.taxPercentage !== undefined
+        ? leaf('TaxPercentage', l.taxInformation.taxPercentage.toFixed(2))
+        : '',
+    ),
+  )
+
+const renderSalesInvoice = (
+  inv: import('@/standards/saf-t').SafTSalesInvoice,
+): string =>
+  wrap(
+    'Invoice',
+    leaf('InvoiceNo', inv.invoiceNo),
+    leaf('InvoiceType', inv.invoiceType),
+    leaf('InvoiceDate', inv.invoiceDate),
+    leaf('SystemEntryDate', inv.systemEntryDate),
+    leaf('CustomerID', inv.customerID),
+    ...inv.lines.map(renderSalesInvoiceLine),
+    wrap(
+      'DocumentTotals',
+      leaf('TaxPayable', formatAmount(inv.documentTotals.taxPayable)),
+      leaf('NetTotal', formatAmount(inv.documentTotals.netTotal)),
+      leaf('GrossTotal', formatAmount(inv.documentTotals.grossTotal)),
+    ),
+  )
+
+const renderPaymentSafT = (
+  p: import('@/standards/saf-t').SafTPayment,
+): string =>
+  wrap(
+    'Payment',
+    leaf('PaymentRefNo', p.paymentRefNo),
+    leaf('PaymentType', p.paymentType),
+    leaf('TransactionDate', p.transactionDate),
+    leaf('CustomerID', p.customerID),
+    leaf('SupplierID', p.supplierID),
+    wrap(
+      'PaymentMethod',
+      leaf('PaymentMechanism', p.paymentMethod.paymentMechanism),
+      leaf('PaymentAmount', formatAmount(p.paymentMethod.paymentAmount)),
+      leaf('PaymentDate', p.paymentMethod.paymentDate),
+    ),
+    wrap(
+      'DocumentStatus',
+      leaf('PaymentStatus', p.documentStatus.paymentStatus),
+      leaf('PaymentStatusDate', p.documentStatus.paymentStatusDate),
+    ),
+    leaf('SystemEntryDate', p.systemEntryDate),
+    ...p.lines.map((line) =>
+      wrap(
+        'Line',
+        leaf('LineNumber', line.lineNumber),
+        leaf('SourceDocumentID', line.sourceDocumentID),
+        line.creditAmount !== undefined
+          ? leaf('CreditAmount', formatAmount(line.creditAmount))
+          : '',
+        line.debitAmount !== undefined
+          ? leaf('DebitAmount', formatAmount(line.debitAmount))
+          : '',
+      ),
+    ),
+    wrap(
+      'DocumentTotals',
+      leaf('TaxPayable', formatAmount(p.documentTotals.taxPayable)),
+      leaf('NetTotal', formatAmount(p.documentTotals.netTotal)),
+      leaf('GrossTotal', formatAmount(p.documentTotals.grossTotal)),
+    ),
+  )
+
+const renderMovementOfGoods = (
+  m: import('@/standards/saf-t').SafTMovementOfGoods,
+): string =>
+  wrap(
+    'StockMovement',
+    leaf('DocumentNumber', m.documentNumber),
+    leaf('MovementType', m.movementType),
+    leaf('MovementDate', m.movementDate),
+    leaf('SystemEntryDate', m.systemEntryDate),
+    leaf('CustomerID', m.customerID),
+    leaf('SupplierID', m.supplierID),
+    renderAddress('ShipFrom', m.shipFrom),
+    renderAddress('ShipTo', m.shipTo),
+    ...m.lines.map((line) =>
+      wrap(
+        'Line',
+        leaf('LineNumber', line.lineNumber),
+        leaf('ProductCode', line.productCode),
+        leaf('ProductDescription', line.productDescription),
+        leaf('Quantity', line.quantity),
+        leaf('UnitOfMeasure', line.unitOfMeasure),
+        leaf('Description', line.description),
+      ),
+    ),
+  )
+
+const renderSourceDocuments = (
+  src: import('@/standards/saf-t').SafTSourceDocuments,
+): string => {
+  const sales = src.salesInvoices
+    ? wrap(
+        'SalesInvoices',
+        leaf('NumberOfEntries', src.salesInvoices.numberOfEntries),
+        leaf('TotalDebit', formatAmount(src.salesInvoices.totalDebit)),
+        leaf('TotalCredit', formatAmount(src.salesInvoices.totalCredit)),
+        ...src.salesInvoices.invoices.map(renderSalesInvoice),
+      )
+    : ''
+  const purchases = src.purchaseInvoices
+    ? wrap(
+        'PurchaseInvoices',
+        leaf('NumberOfEntries', src.purchaseInvoices.numberOfEntries),
+        leaf('TotalDebit', formatAmount(src.purchaseInvoices.totalDebit)),
+        leaf('TotalCredit', formatAmount(src.purchaseInvoices.totalCredit)),
+        ...src.purchaseInvoices.invoices.map(renderSalesInvoice),
+      )
+    : ''
+  const payments = src.payments
+    ? wrap(
+        'Payments',
+        leaf('NumberOfEntries', src.payments.numberOfEntries),
+        leaf('TotalDebit', formatAmount(src.payments.totalDebit)),
+        leaf('TotalCredit', formatAmount(src.payments.totalCredit)),
+        ...src.payments.payments.map(renderPaymentSafT),
+      )
+    : ''
+  const movements = src.movementOfGoods
+    ? wrap(
+        'MovementOfGoods',
+        leaf('NumberOfMovementLines', src.movementOfGoods.numberOfMovementLines),
+        leaf('TotalQuantityIssued', src.movementOfGoods.totalQuantityIssued),
+        ...src.movementOfGoods.movements.map(renderMovementOfGoods),
+      )
+    : ''
+  return wrap('SourceDocuments', sales, purchases, payments, movements)
+}
+
 /**
  * Render a complete SAF-T audit file as XSD-validated XML. Returns a
  * single string starting with the prolog `<?xml version="1.0"?>` and
@@ -701,7 +1229,7 @@ export const renderSafTXml = (file: SafTAuditFile): string => {
     file.generalLedgerEntries
       ? renderGeneralLedgerEntries(file.generalLedgerEntries)
       : '',
-    // SourceDocuments left for follow-up slice.
+    file.sourceDocuments ? renderSourceDocuments(file.sourceDocuments) : '',
   ]
     .filter(Boolean)
     .join('\n')
