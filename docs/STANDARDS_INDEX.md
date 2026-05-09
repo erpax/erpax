@@ -362,8 +362,9 @@ src/jobs/dunningJob.ts:15: * @standard ISO-8601-1:2019 date-time pastDueSinceAt 
 src/payload.config.ts:423:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
 src/plugins/accounting/collections/AccountReconciliations.ts:21: * @standard ISO-8601-1:2019 date-time as-of-date approved-at
 src/plugins/accounting/collections/AccountReconciliations.ts:22: * @standard ISO-4217:2015 currency-codes
-src/plugins/accounting/collections/AuditEvents.ts:21: * @standard ISO-19011:2018 audit-trail change-event-emission
-src/plugins/accounting/collections/AuditEvents.ts:22: * @standard ISO/IEC 27037:2012 evidence-preservation
+src/plugins/accounting/collections/AuditEvents.ts:41: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
+src/plugins/accounting/collections/AuditEvents.ts:42: * @standard ISO-19011:2018 §6.5 audit-conclusions
+src/plugins/accounting/collections/AuditEvents.ts:43: * @standard ISO/IEC 27037:2012 evidence-preservation
 src/plugins/accounting/collections/AuditFindings.ts:4: * @standard ISO-19011:2018 audit-finding
 src/plugins/accounting/collections/AuditFindings.ts:5: * @standard ISO/IEC-27007 ISMS-auditing
 src/plugins/accounting/collections/BankAccounts.ts:10: * @standard ISO-20022 financial-messaging account-identification
@@ -1028,6 +1029,8 @@ tests/standards/ifrs-15/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 soft
 tests/standards/iso-13616/iban.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
+tests/standards/iso-19011/collection-alignment.int.spec.ts:10: * @standard ISO-19011:2018 §6.4.6 audit-evidence
+tests/standards/iso-19011/collection-alignment.int.spec.ts:9: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-19011/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-19011/types.int.spec.ts:9: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
 tests/standards/iso-20022/collection-alignment.int.spec.ts:10: * @standard ISO-20022 camt.053 bank-to-customer-statement
@@ -1210,6 +1213,7 @@ src/i18n/request.ts:10: * @rfc 9110 http-semantics accept-language-fallback
 src/i18n/request.ts:8: * @rfc 5646 tags-for-identifying-languages
 src/i18n/routing.ts:8: * @rfc 3986 uniform-resource-identifier locale-path-segment
 src/i18n/routing.ts:9: * @rfc 9110 http-semantics
+src/plugins/accounting/collections/AuditEvents.ts:44: * @rfc 5424 §6.2.1 syslog-severity-levels
 src/plugins/auth/index.ts:10: * @rfc 7519 jwt
 src/plugins/auth/index.ts:11: * @rfc 6749 oauth-2.0 historic-base
 src/plugins/auth/index.ts:12: * @rfc 6750 bearer-token-usage
@@ -1548,10 +1552,10 @@ src/hooks/validateAddress.ts:26: * @compliance GDPR Art.5(1)(c) data-minimisatio
 src/jobs/dunningJob.ts:17: * @compliance SOX §404 internal-controls
 src/jobs/dunningJob.ts:18: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/plugins/accounting/collections/AccountReconciliations.ts:26: * @compliance SOX §404 internal-controls reconciliation-sign-off
-src/plugins/accounting/collections/AuditEvents.ts:23: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
-src/plugins/accounting/collections/AuditEvents.ts:24: * @compliance SOX §302 disclosure-controls
-src/plugins/accounting/collections/AuditEvents.ts:25: * @compliance SOX §404 internal-controls evidence-preservation
-src/plugins/accounting/collections/AuditEvents.ts:26: * @compliance GDPR Art.30 records-of-processing-activities
+src/plugins/accounting/collections/AuditEvents.ts:45: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
+src/plugins/accounting/collections/AuditEvents.ts:46: * @compliance SOX §302 disclosure-controls
+src/plugins/accounting/collections/AuditEvents.ts:47: * @compliance SOX §404 internal-controls evidence-preservation
+src/plugins/accounting/collections/AuditEvents.ts:48: * @compliance GDPR Art.30 records-of-processing-activities
 src/plugins/accounting/collections/AuditFindings.ts:6: * @compliance SOX §404 deficiency-classification
 src/plugins/accounting/collections/AuditFindings.ts:7: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/plugins/accounting/collections/BankAccounts.ts:14: * @compliance SOX §404 internal-controls cash-management
@@ -2395,8 +2399,8 @@ src/hooks/ensureUniqueSlugWithinTenant.ts:17: * @security ISO-27001 A.5.23 cloud
 src/hooks/ensureUniqueSlugWithinTenant.ts:18: * @security ISO-27002 §5.15 access-control
 src/hooks/validateAddress.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/AccountReconciliations.ts:27: * @security ISO-27002 §5.4 segregation-of-duties preparer-vs-reviewer
-src/plugins/accounting/collections/AuditEvents.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/plugins/accounting/collections/AuditEvents.ts:28: * @security ISO-27002 §8.15 logging
+src/plugins/accounting/collections/AuditEvents.ts:49: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/accounting/collections/AuditEvents.ts:50: * @security ISO-27002 §8.15 logging
 src/plugins/accounting/collections/AuditFindings.ts:9: * @security ISO-27001 §9.2 internal-audit
 src/plugins/accounting/collections/BankAccounts.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/BankAccounts.ts:16: * @security ISO-27002 §8.24 use-of-cryptography iban-bic-encryption
@@ -2637,7 +2641,7 @@ src/plugins/accounting/collections/ARAgingReport.ts:17: * @audit ISO-19011:2018 
 src/plugins/accounting/collections/AccountReconciliations.ts:24: * @audit ISO-19011:2018 audit-trail period-end-evidence
 src/plugins/accounting/collections/AccountReconciliations.ts:25: * @audit ISO-19011:2018 audit-evidence preparer-reviewer-segregation
 src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:18: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/collections/AuditEvents.ts:29: * @audit ISO-19011:2018 audit-trail
+src/plugins/accounting/collections/AuditEvents.ts:51: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/AuditFindings.ts:8: * @audit ISO-19011:2018 audit-trail finding-evidence
 src/plugins/accounting/collections/BankAccounts.ts:13: * @audit ISO-19011:2018 audit-trail bank-account-master
 src/plugins/accounting/collections/BankStatements.ts:24: * @audit ISO-19011:2018 audit-trail
@@ -2800,6 +2804,7 @@ tests/standards/en-16931/collection-alignment.int.spec.ts:11: * @audit ISO-19011
 tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/ifrs-15/collection-alignment.int.spec.ts:15: * @audit ISO-19011:2018 audit-trail
 tests/standards/ifrs-15/types.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
+tests/standards/iso-19011/collection-alignment.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/collection-alignment.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail

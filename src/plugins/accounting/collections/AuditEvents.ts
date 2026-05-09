@@ -1,6 +1,26 @@
 /**
  * Audit Events — persistent ISO 19011 / SOX §404 evidence trail.
  *
+ * The canonical type lives in `@/standards/iso-19011` (AuditEntry).
+ * This collection's field set is the Payload projection of that type:
+ *
+ *   canonical.id              → doc.id (Payload-managed, UUID)
+ *   canonical.timestamp       → doc.timestamp (ISO 8601 UTC)
+ *   canonical.collection      → doc.collectionSlug
+ *   canonical.operation       → doc.operation (create/update/delete/login/
+ *                                logout/export/import)
+ *   canonical.documentId      → doc.documentId
+ *   canonical.tenantId        → doc.tenant (relationship)
+ *   canonical.userId          → doc.user (relationship)
+ *   canonical.previousStatus  → doc.previousStatus
+ *   canonical.nextStatus      → doc.nextStatus
+ *   canonical.eventType       → doc.eventType
+ *   canonical.changeSummary   → doc.changeSummary
+ *   canonical.sources         → doc.sources
+ *   canonical.severity        → doc.severity
+ *   canonical.requestId       → doc.requestId
+ *   canonical.source          → doc.source (free-text actor context)
+ *
  * Today's `auditTrailAfterChange` hook emits structured events to
  * `req.payload.logger.info` — fine for streaming aggregators (Loki /
  * Datadog / CloudWatch) but not queryable from the admin UI and not
@@ -18,8 +38,10 @@
  *   relatedDoc   → polymorphic ID (target document — slug + id pair)
  *   approval     → audit-events   (links a SoD-bypass attempt to its review)
  *
- * @standard ISO-19011:2018 audit-trail change-event-emission
+ * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
+ * @standard ISO-19011:2018 §6.5 audit-conclusions
  * @standard ISO/IEC 27037:2012 evidence-preservation
+ * @rfc 5424 §6.2.1 syslog-severity-levels
  * @compliance SOC-2 CC4.1 monitoring-and-evaluation
  * @compliance SOX §302 disclosure-controls
  * @compliance SOX §404 internal-controls evidence-preservation
@@ -27,6 +49,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @security ISO-27002 §8.15 logging
  * @audit ISO-19011:2018 audit-trail
+ * @see src/standards/iso-19011/types.ts AuditEntry
  * @see src/hooks/auditTrailAfterChange.ts
  * @see docs/STANDARDS.md §4.4
  */
@@ -70,8 +93,17 @@ const AuditEvents: CollectionConfig = {
       required: true,
       index: true,
       admin: {
-        description: 'Domain event slug (e.g. order:activated, subscription:cancelled, period:locked).',
+        description:
+          'Domain event slug (e.g. order:activated, subscription:cancelled, period:locked). Maps to canonical AuditEntry.eventType.',
         readOnly: true,
+      },
+    },
+    {
+      name: 'source',
+      type: 'text',
+      admin: {
+        description:
+          'Free-text actor / source context (e.g. "close-job:2026-04", "admin-ui", "sox-control:CR-0042"). Maps to canonical AuditEntry.source.',
       },
     },
     {
@@ -79,7 +111,11 @@ const AuditEvents: CollectionConfig = {
       type: 'text',
       required: true,
       index: true,
-      admin: { description: 'Source collection slug.', readOnly: true },
+      admin: {
+        description:
+          'Source collection slug. Maps to canonical AuditEntry.collection.',
+        readOnly: true,
+      },
     },
     {
       name: 'operation',
@@ -94,7 +130,11 @@ const AuditEvents: CollectionConfig = {
         { label: 'Export', value: 'export' },
         { label: 'Import', value: 'import' },
       ],
-      admin: { readOnly: true },
+      admin: {
+        description:
+          'Maps to canonical AuditEntry.operation (AuditOperation enum).',
+        readOnly: true,
+      },
     },
     {
       name: 'documentId',
@@ -112,24 +152,50 @@ const AuditEvents: CollectionConfig = {
     {
       name: 'previousStatus',
       type: 'text',
-      admin: { description: 'Status before the change (for status transitions).', readOnly: true },
+      admin: {
+        description:
+          'Status before the change (for status transitions). Maps to canonical AuditEntry.previousStatus.',
+        readOnly: true,
+      },
     },
     {
       name: 'nextStatus',
       type: 'text',
-      admin: { description: 'Status after the change.', readOnly: true },
+      admin: {
+        description:
+          'Status after the change. Maps to canonical AuditEntry.nextStatus.',
+        readOnly: true,
+      },
+    },
+    {
+      name: 'changes',
+      type: 'array',
+      admin: {
+        description:
+          'Per-field diff (each item: { field, previousValue, nextValue }). Maps to canonical AuditEntry.changes (AuditChangeRecord[]).',
+        readOnly: true,
+      },
+      fields: [
+        { name: 'field', type: 'text', required: true },
+        { name: 'previousValue', type: 'json' },
+        { name: 'nextValue', type: 'json' },
+      ],
     },
     {
       name: 'changeSummary',
       type: 'json',
-      admin: { description: 'Field-level diff (sparse): {before:{…}, after:{…}}.', readOnly: true },
+      admin: {
+        description:
+          'Field-level diff (sparse): {before:{…}, after:{…}}. Compact alternative to `changes[]` — emitter populates one or the other. Maps to canonical AuditEntry.changeSummary.',
+        readOnly: true,
+      },
     },
     {
       name: 'sources',
       type: 'json',
       admin: {
         description:
-          'Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value).',
+          'Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value). Maps to canonical AuditEntry.sources.',
         readOnly: true,
       },
     },
@@ -137,7 +203,11 @@ const AuditEvents: CollectionConfig = {
       name: 'requestId',
       type: 'text',
       index: true,
-      admin: { description: 'Correlation ID — links events that originated from the same HTTP request.', readOnly: true },
+      admin: {
+        description:
+          'Correlation ID — links events that originated from the same HTTP request. Maps to canonical AuditEntry.requestId.',
+        readOnly: true,
+      },
     },
     {
       name: 'severity',
@@ -150,7 +220,11 @@ const AuditEvents: CollectionConfig = {
         { label: 'Error', value: 'error' },
         { label: 'Critical', value: 'critical' },
       ],
-      admin: { readOnly: true },
+      admin: {
+        description:
+          'RFC 5424-derived severity. Maps to canonical AuditEntry.severity (AuditSeverity enum).',
+        readOnly: true,
+      },
     },
   ],
   hooks: {
