@@ -1,0 +1,221 @@
+/**
+ * PayrollRuns posting hook — IAS 19 / ASC 710 wages JE.
+ *
+ * Asserts the canonical journal-entry shape booked when a payroll run's
+ * status flips to 'posted':
+ *
+ *   Dr Wages Expense + Dr employer-side accruals
+ *     Cr Income Tax Payable + Cr SS Payable + Cr Pension Payable +
+ *     Cr Other Deductions Payable + Cr Payroll Tax Payable +
+ *     Cr Net Payroll Payable
+ *
+ * The Cr Net Payroll Payable is what the pain.001 disbursement (a
+ * follow-up slice creating a PaymentRuns row) draws against on the
+ * pay date.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing
+ * @accounting IFRS IAS-19 employee-benefits
+ * @accounting US-GAAP ASC-710 compensation-general
+ * @audit ISO-19011:2018 audit-trail
+ * @see src/plugins/accounting/hooks/payroll-run.hook.ts
+ */
+
+import { describe, it, expect, beforeEach } from 'vitest'
+import { payrollRunPostingHook } from '@/plugins/accounting/hooks/payroll-run.hook'
+import { journalEntryService } from '@/services/journal-entry.service'
+
+const tenant = 'tenant-pr'
+const user = 'user-pr'
+
+const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
+  ({
+    user: { id: user },
+    payload: {
+      logger: {
+        info: () => undefined,
+        warn: () => undefined,
+        error: () => undefined,
+      },
+      update: async (args: { id: unknown; data: unknown }) => {
+        capturedUpdate.id = args.id
+        capturedUpdate.data = args.data
+        return { id: args.id }
+      },
+    },
+  }) as unknown as never
+
+describe('PayrollRuns posting hook — status → posted', () => {
+  beforeEach(() => {
+    journalEntryService.clearAllData()
+  })
+
+  it('books a balanced wages JE for a 2-employee monthly run', async () => {
+    const captured: { id?: unknown; data?: unknown } = {}
+    await payrollRunPostingHook({
+      doc: {
+        id: 'PR-001',
+        runId: 'PR-2026-04-MONTHLY',
+        tenant,
+        periodEnd: '2026-04-30',
+        status: 'posted',
+        lines: [
+          {
+            totalGross: 10_000_00,
+            netPay: 7_000_00,
+            incomeTaxWithheld: 2_000_00,
+            socialSecurityEmployee: 800_00,
+            socialSecurityEmployer: 1_200_00,
+            pensionEmployee: 200_00,
+            pensionEmployer: 500_00,
+            payrollTaxesEmployer: 100_00,
+            otherDeductions: 0,
+          },
+          {
+            totalGross: 5_000_00,
+            netPay: 3_500_00,
+            incomeTaxWithheld: 1_000_00,
+            socialSecurityEmployee: 400_00,
+            socialSecurityEmployer: 600_00,
+            pensionEmployee: 100_00,
+            pensionEmployer: 250_00,
+            payrollTaxesEmployer: 50_00,
+            otherDeductions: 0,
+          },
+        ],
+      },
+      previousDoc: { id: 'PR-001', status: 'approved' },
+      operation: 'update',
+      req: baseReq(captured),
+      collection: undefined as never,
+      context: {} as never,
+    })
+    await new Promise((r) => setTimeout(r, 0))
+
+    expect(captured.id).toBe('PR-001')
+    const linkedJeId = (captured.data as { journalEntry?: string })?.journalEntry
+    expect(linkedJeId).toBeDefined()
+
+    const entry = await journalEntryService.getEntry(tenant, String(linkedJeId))
+    expect(entry).toBeDefined()
+    expect(entry?.status).toBe('posted')
+
+    const totalDebits = entry!.lines.reduce((s, l) => s + (l.debit ?? 0), 0)
+    const totalCredits = entry!.lines.reduce((s, l) => s + (l.credit ?? 0), 0)
+    expect(totalDebits).toBe(totalCredits)
+
+    const lineFor = (account: string) =>
+      entry!.lines.find((l) => l.accountId === account)
+
+    // Dr side
+    expect(lineFor('wages_expense')?.debit).toBe(15_000_00) // gross sum
+    expect(lineFor('employer_social_security_expense')?.debit).toBe(1_800_00)
+    expect(lineFor('employer_pension_expense')?.debit).toBe(750_00)
+    expect(lineFor('employer_payroll_tax_expense')?.debit).toBe(150_00)
+
+    // Cr side
+    expect(lineFor('income_tax_payable')?.credit).toBe(3_000_00)
+    expect(lineFor('social_security_payable')?.credit).toBe(
+      // employee 1,200 + employer 1,800 = 3,000
+      3_000_00,
+    )
+    expect(lineFor('pension_payable')?.credit).toBe(
+      // employee 300 + employer 750 = 1,050
+      1_050_00,
+    )
+    expect(lineFor('payroll_tax_payable')?.credit).toBe(150_00)
+    expect(lineFor('net_payroll_payable')?.credit).toBe(10_500_00) // 7,000 + 3,500
+  })
+
+  it('skips zero-amount payable lines', async () => {
+    const captured: { id?: unknown; data?: unknown } = {}
+    await payrollRunPostingHook({
+      doc: {
+        id: 'PR-002',
+        tenant,
+        periodEnd: '2026-04-30',
+        status: 'posted',
+        lines: [
+          {
+            totalGross: 1_000_00,
+            netPay: 1_000_00, // no deductions, no employer accruals
+          },
+        ],
+      },
+      previousDoc: { id: 'PR-002', status: 'approved' },
+      operation: 'update',
+      req: baseReq(captured),
+      collection: undefined as never,
+      context: {} as never,
+    })
+    await new Promise((r) => setTimeout(r, 0))
+
+    const linkedJeId = (captured.data as { journalEntry?: string })?.journalEntry
+    expect(linkedJeId).toBeDefined()
+    const entry = await journalEntryService.getEntry(tenant, String(linkedJeId))
+    // Just two lines: Dr Wages 1,000 / Cr Net Payable 1,000.
+    expect(entry?.lines).toHaveLength(2)
+    expect(
+      entry!.lines.find((l) => l.accountId === 'wages_expense')?.debit,
+    ).toBe(1_000_00)
+    expect(
+      entry!.lines.find((l) => l.accountId === 'net_payroll_payable')?.credit,
+    ).toBe(1_000_00)
+  })
+
+  it('skips when status is not transitioning to posted', async () => {
+    const captured: { id?: unknown; data?: unknown } = {}
+    await payrollRunPostingHook({
+      doc: {
+        id: 'PR-003',
+        tenant,
+        status: 'approved', // not posted
+        lines: [{ totalGross: 1_000_00, netPay: 1_000_00 }],
+      },
+      previousDoc: { id: 'PR-003', status: 'pending_review' },
+      operation: 'update',
+      req: baseReq(captured),
+      collection: undefined as never,
+      context: {} as never,
+    })
+    await new Promise((r) => setTimeout(r, 0))
+    expect(captured.id).toBeUndefined()
+  })
+
+  it('idempotent — does not re-post if journalEntry already linked', async () => {
+    const captured: { id?: unknown; data?: unknown } = {}
+    await payrollRunPostingHook({
+      doc: {
+        id: 'PR-004',
+        tenant,
+        status: 'posted',
+        journalEntry: 'existing-je',
+        lines: [{ totalGross: 1_000_00, netPay: 1_000_00 }],
+      },
+      operation: 'update',
+      req: baseReq(captured),
+      collection: undefined as never,
+      context: {} as never,
+    })
+    await new Promise((r) => setTimeout(r, 0))
+    expect(captured.id).toBeUndefined()
+  })
+
+  it('skips and warns when zero gross / no lines', async () => {
+    const captured: { id?: unknown; data?: unknown } = {}
+    await payrollRunPostingHook({
+      doc: {
+        id: 'PR-005',
+        tenant,
+        status: 'posted',
+        lines: [],
+      },
+      previousDoc: { id: 'PR-005', status: 'approved' },
+      operation: 'update',
+      req: baseReq(captured),
+      collection: undefined as never,
+      context: {} as never,
+    })
+    await new Promise((r) => setTimeout(r, 0))
+    expect(captured.id).toBeUndefined()
+  })
+})

@@ -529,6 +529,8 @@ src/plugins/accounting/hooks/depreciation.hook.ts:23: * @standard ISO-8601-1:201
 src/plugins/accounting/hooks/payment.hook.ts:19: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 src/plugins/accounting/hooks/payment.hook.ts:20: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/plugins/accounting/hooks/payment.hook.ts:21: * @standard ISO-4217:2015 currency-codes
+src/plugins/accounting/hooks/payroll-run.hook.ts:34: * @standard ISO-8601-1:2019 date-time period payment-date
+src/plugins/accounting/hooks/payroll-run.hook.ts:35: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:31: * @standard ISO-8601-1:2019 date-time posted-date
 src/plugins/accounting/index.ts:42: * @standard ISO-3166-1:2020 country-codes
 src/plugins/accounting/index.ts:43: * @standard ISO-3166-2:2020 subdivision-codes
@@ -992,6 +994,7 @@ tests/int/accounting/level-3-e2e.int.spec.ts:9: * @standard ISO-4217:2015 curren
 tests/int/accounting/money-storage.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/money-storage.int.spec.ts:5: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/money-storage.int.spec.ts:6: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
+tests/int/accounting/payroll-run-posting.int.spec.ts:16: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/api.int.spec.ts:10: * @standard OpenAPI 3.1 api-description
 tests/int/api.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -1670,6 +1673,8 @@ src/plugins/accounting/hooks/inventory-movement.hook.ts:21: * @compliance SOX §
 src/plugins/accounting/hooks/invoice.hook.ts:25: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/item.hook.ts:21: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payment.hook.ts:25: * @compliance SOX §404 internal-controls
+src/plugins/accounting/hooks/payroll-run.hook.ts:37: * @compliance SOX §302 disclosure-controls
+src/plugins/accounting/hooks/payroll-run.hook.ts:38: * @compliance SOX §404 internal-controls four-eyes
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:33: * @compliance SOX §404 internal-controls four-eyes
 src/plugins/accounting/index.ts:59: * @compliance SOX §302 disclosure-controls
 src/plugins/accounting/index.ts:60: * @compliance SOX §404 internal-controls
@@ -2023,6 +2028,10 @@ src/plugins/accounting/hooks/item.hook.ts:18: * @accounting IFRS IAS-2 inventori
 src/plugins/accounting/hooks/item.hook.ts:19: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/plugins/accounting/hooks/payment.hook.ts:22: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/plugins/accounting/hooks/payment.hook.ts:23: * @accounting US-GAAP ASC-230 statement-of-cash-flows
+src/plugins/accounting/hooks/payroll-run.hook.ts:30: * @accounting IFRS IAS-19 employee-benefits short-term
+src/plugins/accounting/hooks/payroll-run.hook.ts:31: * @accounting IFRS IAS-19 §51 defined-contribution-plans
+src/plugins/accounting/hooks/payroll-run.hook.ts:32: * @accounting US-GAAP ASC-710 compensation-general
+src/plugins/accounting/hooks/payroll-run.hook.ts:33: * @accounting US-GAAP ASC-715 compensation-retirement-benefits
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:28: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:29: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:30: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
@@ -2324,6 +2333,8 @@ tests/int/accounting/level-3-e2e.int.spec.ts:11: * @accounting IFRS IAS-1 IAS-7 
 tests/int/accounting/level-3-e2e.int.spec.ts:12: * @accounting US-GAAP ASC-205 ASC-230 ASC-360 ASC-606 ASC-830
 tests/int/accounting/money-storage.int.spec.ts:7: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/money-storage.int.spec.ts:8: * @accounting US-GAAP ASC-210 balance-sheet
+tests/int/accounting/payroll-run-posting.int.spec.ts:17: * @accounting IFRS IAS-19 employee-benefits
+tests/int/accounting/payroll-run-posting.int.spec.ts:18: * @accounting US-GAAP ASC-710 compensation-general
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:12: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:13: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 tests/int/export/integration.int.spec.ts:8: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -2550,6 +2561,7 @@ src/plugins/accounting/fields/base-accounting-fields.ts:7: * @security ISO-27002
 src/plugins/accounting/hooks/base-accounting-hook.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/hooks/base-accounting-hook.ts:12: * @security ISO-27002 §5.15 access-control
 src/plugins/accounting/hooks/bill.hook.ts:22: * @security ISO-27002 §5.4 segregation-of-duties
+src/plugins/accounting/hooks/payroll-run.hook.ts:39: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/index.ts:61: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/index.ts:62: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/middleware/host-scope.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -2811,6 +2823,7 @@ src/plugins/accounting/hooks/inventory-movement.hook.ts:20: * @audit ISO-19011:2
 src/plugins/accounting/hooks/invoice.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/item.hook.ts:20: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/hooks/payment.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
+src/plugins/accounting/hooks/payroll-run.hook.ts:36: * @audit ISO-19011:2018 audit-trail payroll-evidence
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:32: * @audit ISO-19011:2018 audit-trail period-end-adjustment-evidence
 src/plugins/accounting/index.ts:58: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/middleware/host-scope.ts:19: * @audit ISO-19011:2018 audit-trail
@@ -2910,6 +2923,7 @@ tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:201
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-2-integration.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-trail full-cycle
+tests/int/accounting/payroll-run-posting.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/period-end-adjustment-posting.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail period-end-evidence
 tests/int/config/appCollectionsRegistry.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-trail

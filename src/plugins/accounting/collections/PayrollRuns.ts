@@ -52,6 +52,7 @@ import {
   auditFields,
 } from '../fields/base-accounting-fields'
 import { validateNotLocked } from '../utilities/period-lock'
+import { payrollRunPostingHook } from '../hooks/payroll-run.hook'
 
 const PayrollRuns: CollectionConfig = {
   slug: 'payroll-runs',
@@ -360,7 +361,13 @@ const PayrollRuns: CollectionConfig = {
         (d) => (d as { status?: string }).status === 'approved',
       ),
     ],
-    afterChange: [auditTrailAfterChange('payroll-runs')],
+    afterChange: [
+      // GL post on status → 'posted' — books the canonical IAS 19 /
+      // ASC 710 wages JE and back-links the JE id. SOX §404 four-eyes
+      // is enforced in beforeChange via enforceSegregationOfDuties.
+      payrollRunPostingHook,
+      auditTrailAfterChange('payroll-runs'),
+    ],
   },
   timestamps: true,
 }
