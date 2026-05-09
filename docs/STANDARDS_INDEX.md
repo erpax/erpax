@@ -657,8 +657,9 @@ src/standards/index.ts:14: * @standard BCP-47 language-tag
 src/standards/index.ts:17: * @standard NIST SP-800-38D aes-gcm
 src/standards/index.ts:18: * @standard NIST SP-800-108 key-derivation
 src/standards/index.ts:19: * @standard NIST INCITS-359-2012 role-based-access-control
-src/standards/index.ts:27: * @standard W3C CSP-3
-src/standards/index.ts:28: * @standard W3C Permissions-Policy
+src/standards/index.ts:20: * @standard ISO-19011:2018 audit-trail
+src/standards/index.ts:28: * @standard W3C CSP-3
+src/standards/index.ts:29: * @standard W3C Permissions-Policy
 src/standards/index.ts:8: * @standard ISO-4217:2015 currency-codes
 src/standards/index.ts:9: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-13616/iban.ts:19: * @standard ISO-13616-1:2020 §6 verification
@@ -666,6 +667,11 @@ src/standards/iso-13616/iban.ts:20: * @standard ISO-7064:2003 mod-97-10
 src/standards/iso-13616/iban.ts:4: * @standard ISO-13616-1:2020 iban
 src/standards/iso-13616/iban.ts:5: * @standard ISO-7064:2003 check-character-systems mod-97-10
 src/standards/iso-13616/index.ts:4: * @standard ISO-13616-1:2020 iban
+src/standards/iso-19011/index.ts:4: * @standard ISO-19011:2018 audit-trail
+src/standards/iso-19011/types.ts:10: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
+src/standards/iso-19011/types.ts:11: * @standard ISO-19011:2018 §6.5 audit-conclusions
+src/standards/iso-19011/types.ts:24: * @standard ISO-19011:2018 §6.4.6 audit-evidence
+src/standards/iso-19011/types.ts:98:   * @standard ISO-8601-1:2019 date-time event-timestamp
 src/standards/iso-3166-1/index.ts:4: * @standard ISO-3166-1:2020 country-codes
 src/standards/iso-3166-1/validate.ts:14: * @standard ISO-3166-1:2020 §6 alpha-2
 src/standards/iso-3166-1/validate.ts:22: * @standard ISO-3166-1:2020 §7 alpha-3
@@ -897,6 +903,8 @@ tests/standards/bcp-47/language-tag.int.spec.ts:5: * @standard BCP-47 language-t
 tests/standards/iso-13616/iban.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
+tests/standards/iso-19011/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/iso-19011/types.int.spec.ts:9: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
 tests/standards/iso-3166-1/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-3166-1/validate.int.spec.ts:5: * @standard ISO-3166-1:2020 country-codes
 tests/standards/iso-3166-2/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -1101,13 +1109,16 @@ src/standards/bcp-47/locale-utils.ts:6: * @rfc 5646 tags-for-identifying-languag
 src/standards/bcp-47/locale-utils.ts:7: * @rfc 4647 matching-of-language-tags
 src/standards/index.ts:15: * @rfc 5646 tags-for-identifying-languages
 src/standards/index.ts:16: * @rfc 4647 matching-of-language-tags
-src/standards/index.ts:20: * @rfc 5869 hkdf
-src/standards/index.ts:21: * @rfc 5116 aead
-src/standards/index.ts:22: * @rfc 3986 uniform-resource-identifier
-src/standards/index.ts:23: * @rfc 6585 §4 too-many-requests
-src/standards/index.ts:24: * @rfc 9110 http-semantics
-src/standards/index.ts:25: * @rfc 9111 http-caching
-src/standards/index.ts:26: * @rfc 6797 hsts
+src/standards/index.ts:21: * @rfc 5869 hkdf
+src/standards/index.ts:22: * @rfc 5116 aead
+src/standards/index.ts:23: * @rfc 3986 uniform-resource-identifier
+src/standards/index.ts:24: * @rfc 6585 §4 too-many-requests
+src/standards/index.ts:25: * @rfc 9110 http-semantics
+src/standards/index.ts:26: * @rfc 9111 http-caching
+src/standards/index.ts:27: * @rfc 6797 hsts
+src/standards/iso-19011/types.ts:147:   * @rfc 9110 §5.6 trace-context-correlation-id
+src/standards/iso-19011/types.ts:41: * @rfc 5424 §6.2.1 syslog-severity-levels
+src/standards/iso-19011/types.ts:76:   * @rfc 9110 §5.6 trace-context-correlation-id
 src/standards/nist-sp-800-108/kdf.ts:12: * @rfc 2104 hmac
 src/standards/nist-sp-800-108/kdf.ts:13: * @rfc 5869 hkdf hmac-based-key-derivation
 src/standards/nist-sp-800-38/aes-gcm.ts:13: * @rfc 5116 authenticated-encryption-with-associated-data
@@ -1516,6 +1527,9 @@ src/services/host.service.ts:11: * @compliance SOC-2 CC6.1 logical-access-contro
 src/services/journal-entry.service.ts:13: * @compliance SOX §404 internal-controls
 src/services/period-end-adjustment.service.ts:12: * @compliance SOX §404 internal-controls
 src/standards/_security-headers/headers.ts:17: * @compliance SOC-2 CC6.6 boundary-protection
+src/standards/iso-19011/types.ts:12: * @compliance SOX §404 internal-controls evidence-preservation
+src/standards/iso-19011/types.ts:13: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
+src/standards/iso-19011/types.ts:14: * @compliance GDPR Art.30 records-of-processing-activities
 src/standards/nist-incits-359/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/standards/nist-incits-359/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
 src/standards/nist-incits-359/index.ts:16: * @compliance SOX §404 internal-controls
@@ -1572,6 +1586,7 @@ tests/int/receivables/allowance.int.spec.ts:8: * @compliance SOX §404 internal-
 tests/int/tenant.int.spec.ts:7: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 tests/int/tenant.int.spec.ts:8: * @compliance SOC-2 CC6.1 logical-access-controls
 tests/jobs/dunningJob.test.ts:12: * @compliance SOX §404 internal-controls
+tests/standards/iso-19011/types.int.spec.ts:11: * @compliance SOX §404 internal-controls
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:11: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 tests/utilities/stripeWebhookHandlers.test.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data tokenized
@@ -2250,6 +2265,7 @@ src/services/host.service.ts:9: * @security ISO-27002 §8.30 outsourced-developm
 src/services/journal-entry.service.ts:14: * @security ISO-27002 §5.4 segregation-of-duties
 src/standards/_security-headers/headers.ts:15: * @security ISO-27001 A.8.20 networks-security
 src/standards/_security-headers/headers.ts:16: * @security ISO-27002 §8.20 networks-security
+src/standards/iso-19011/types.ts:25: * @security ISO-27002 §8.15 logging
 src/standards/nist-incits-359/conventions.ts:23: * @security ISO-27002 §5.15 access-control
 src/standards/nist-incits-359/index.ts:10: * @security ISO-27001 A.5.18 access-rights
 src/standards/nist-incits-359/index.ts:11: * @security ISO-27002 §5.15 access-control
@@ -2389,7 +2405,7 @@ src/ecommerce/stripe/tenantConfirmOrder.ts:14: * @audit ISO-19011:2018 audit-tra
 src/ecommerce/stripe/tenantStripeWebhook.ts:13: * @audit ISO-19011:2018 audit-trail
 src/endpoints/seed/erpax-product-pages.ts:29: * @audit ISO-19011:2018 audit-trail seed-provenance
 src/endpoints/seed/index.ts:10: * @audit ISO-19011:2018 audit-trail seed-runs
-src/hooks/auditTrailAfterChange.ts:10: * @audit ISO-19011:2018 audit-trail change-event-emission
+src/hooks/auditTrailAfterChange.ts:10: * @audit ISO-19011:2018 §6.4.6 audit-evidence-collection
 src/hooks/autoPopulateCreatedBy.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
 src/hooks/autoPopulateHost.ts:12: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 src/hooks/autoSetTimestamp.ts:8: * @audit ISO-19011:2018 audit-trail status-transition-timestamp
@@ -2514,6 +2530,7 @@ src/services/gl-posting.service.ts:526:   * @audit ISO-19011:2018 audit-trail pe
 src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/period-end-adjustment.service.ts:13: * @audit ISO-19011:2018 audit-trail
+src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
@@ -2556,6 +2573,7 @@ tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-t
 tests/int/parties/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
 tests/int/receivables/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions
 tests/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
+tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
 ## @quality

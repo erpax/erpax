@@ -17,6 +17,7 @@
  * @standard NIST SP-800-38D aes-gcm
  * @standard NIST SP-800-108 key-derivation
  * @standard NIST INCITS-359-2012 role-based-access-control
+ * @standard ISO-19011:2018 audit-trail
  * @rfc 5869 hkdf
  * @rfc 5116 aead
  * @rfc 3986 uniform-resource-identifier
@@ -120,6 +121,16 @@ export {
   getCachedGlobal,
   getCachedRedirects,
 } from './rfc-9110'
+
+// Audit-trail types (ISO 19011 §6.4.6 audit-evidence)
+export type {
+  AuditOperation,
+  AuditSeverity,
+  AuditChangeRecord,
+  AuditTrailContext,
+  AuditEntry,
+  AuditEntryInput,
+} from './iso-19011'
 
 // Composite security headers (CSP-3 / HSTS / Permissions-Policy / Referrer-Policy)
 export {
