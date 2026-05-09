@@ -24,6 +24,18 @@ export interface JournalEntryLine {
   debit?: number;
   credit?: number;
   description: string;
+  /**
+   * Optional analytical dimension — the cost-center the line allocates
+   * to. Drives IFRS 8 / ASC 280 segment-level P&L roll-ups without
+   * polluting the chart of accounts itself. The standard journal-entry
+   * service ignores this field at post time; downstream reporting joins
+   * `journal-entry-lines.costCenterId` to `cost-centers` for segment
+   * disclosure.
+   *
+   * @accounting IFRS IFRS-8 operating-segments
+   * @accounting US-GAAP ASC-280 segment-reporting
+   */
+  costCenterId?: string;
 }
 
 export interface JournalEntry {

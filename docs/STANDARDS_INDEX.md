@@ -534,8 +534,8 @@ src/plugins/accounting/hooks/payroll-disbursement.hook.ts:27: * @standard ISO-13
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:28: * @standard ISO-9362:2022 bic
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:29: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:30: * @standard ISO-8601-1:2019 date-time payment-date
-src/plugins/accounting/hooks/payroll-run.hook.ts:34: * @standard ISO-8601-1:2019 date-time period payment-date
-src/plugins/accounting/hooks/payroll-run.hook.ts:35: * @standard ISO-4217:2015 currency-codes
+src/plugins/accounting/hooks/payroll-run.hook.ts:45: * @standard ISO-8601-1:2019 date-time period payment-date
+src/plugins/accounting/hooks/payroll-run.hook.ts:46: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:31: * @standard ISO-8601-1:2019 date-time posted-date
 src/plugins/accounting/index.ts:42: * @standard ISO-3166-1:2020 country-codes
 src/plugins/accounting/index.ts:43: * @standard ISO-3166-2:2020 subdivision-codes
@@ -1681,8 +1681,8 @@ src/plugins/accounting/hooks/invoice.hook.ts:25: * @compliance SOX §404 interna
 src/plugins/accounting/hooks/item.hook.ts:21: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payment.hook.ts:25: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:33: * @compliance SOX §404 internal-controls
-src/plugins/accounting/hooks/payroll-run.hook.ts:37: * @compliance SOX §302 disclosure-controls
-src/plugins/accounting/hooks/payroll-run.hook.ts:38: * @compliance SOX §404 internal-controls four-eyes
+src/plugins/accounting/hooks/payroll-run.hook.ts:48: * @compliance SOX §302 disclosure-controls
+src/plugins/accounting/hooks/payroll-run.hook.ts:49: * @compliance SOX §404 internal-controls four-eyes
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:33: * @compliance SOX §404 internal-controls four-eyes
 src/plugins/accounting/index.ts:59: * @compliance SOX §302 disclosure-controls
 src/plugins/accounting/index.ts:60: * @compliance SOX §404 internal-controls
@@ -2037,10 +2037,12 @@ src/plugins/accounting/hooks/item.hook.ts:19: * @accounting US-GAAP ASC-330 inve
 src/plugins/accounting/hooks/payment.hook.ts:22: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/plugins/accounting/hooks/payment.hook.ts:23: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:31: * @accounting IFRS IAS-7 statement-of-cash-flows payroll-disbursement
-src/plugins/accounting/hooks/payroll-run.hook.ts:30: * @accounting IFRS IAS-19 employee-benefits short-term
-src/plugins/accounting/hooks/payroll-run.hook.ts:31: * @accounting IFRS IAS-19 §51 defined-contribution-plans
-src/plugins/accounting/hooks/payroll-run.hook.ts:32: * @accounting US-GAAP ASC-710 compensation-general
-src/plugins/accounting/hooks/payroll-run.hook.ts:33: * @accounting US-GAAP ASC-715 compensation-retirement-benefits
+src/plugins/accounting/hooks/payroll-run.hook.ts:39: * @accounting IFRS IAS-19 employee-benefits short-term
+src/plugins/accounting/hooks/payroll-run.hook.ts:40: * @accounting IFRS IAS-19 §51 defined-contribution-plans
+src/plugins/accounting/hooks/payroll-run.hook.ts:41: * @accounting IFRS IFRS-8 operating-segments
+src/plugins/accounting/hooks/payroll-run.hook.ts:42: * @accounting US-GAAP ASC-710 compensation-general
+src/plugins/accounting/hooks/payroll-run.hook.ts:43: * @accounting US-GAAP ASC-715 compensation-retirement-benefits
+src/plugins/accounting/hooks/payroll-run.hook.ts:44: * @accounting US-GAAP ASC-280 segment-reporting
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:28: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:29: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:30: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
@@ -2194,6 +2196,8 @@ src/services/gl-posting.service.ts:607:   * @accounting IFRS IAS-2 §10 §28 §3
 src/services/gl-posting.service.ts:608:   * @accounting US-GAAP ASC-330-10-30 inventory-valuation
 src/services/journal-entry.service.ts:10: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
 src/services/journal-entry.service.ts:11: * @accounting OECD SAF-T §3 journal-entries
+src/services/journal-entry.service.ts:35:   * @accounting IFRS IFRS-8 operating-segments
+src/services/journal-entry.service.ts:36:   * @accounting US-GAAP ASC-280 segment-reporting
 src/services/journal-entry.service.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/multi-currency.service.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
 src/services/multi-currency.service.ts:17: * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
@@ -2571,7 +2575,7 @@ src/plugins/accounting/hooks/base-accounting-hook.ts:11: * @security ISO-27001 A
 src/plugins/accounting/hooks/base-accounting-hook.ts:12: * @security ISO-27002 §5.15 access-control
 src/plugins/accounting/hooks/bill.hook.ts:22: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:34: * @security ISO-27002 §5.4 segregation-of-duties treasury-preparer
-src/plugins/accounting/hooks/payroll-run.hook.ts:39: * @security ISO-27002 §5.4 segregation-of-duties
+src/plugins/accounting/hooks/payroll-run.hook.ts:50: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/index.ts:61: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/index.ts:62: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/middleware/host-scope.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -2834,7 +2838,7 @@ src/plugins/accounting/hooks/invoice.hook.ts:24: * @audit ISO-19011:2018 audit-t
 src/plugins/accounting/hooks/item.hook.ts:20: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/hooks/payment.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/payroll-disbursement.hook.ts:32: * @audit ISO-19011:2018 audit-trail payroll-disbursement
-src/plugins/accounting/hooks/payroll-run.hook.ts:36: * @audit ISO-19011:2018 audit-trail payroll-evidence
+src/plugins/accounting/hooks/payroll-run.hook.ts:47: * @audit ISO-19011:2018 audit-trail payroll-evidence
 src/plugins/accounting/hooks/period-end-adjustment.hook.ts:32: * @audit ISO-19011:2018 audit-trail period-end-adjustment-evidence
 src/plugins/accounting/index.ts:58: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/middleware/host-scope.ts:19: * @audit ISO-19011:2018 audit-trail
