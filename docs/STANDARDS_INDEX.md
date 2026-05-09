@@ -617,6 +617,8 @@ src/plugins/export/standards-export.ts:22: * @standard UBL-2.1 universal-busines
 src/plugins/export/standards-export.ts:23: * @standard UN-EDIFACT D.96A
 src/plugins/export/standards-export.ts:24: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 src/plugins/export/standards-export.ts:25: * @standard ISO-9735:2002 edifact-syntax-rules
+src/plugins/export/standards-import.ts:14: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/plugins/export/standards-import.ts:15: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/plugins/export/statements-cents-aware.ts:7: * @standard ISO-4217:2015 currency-codes
 src/plugins/export/statements-cents-aware.ts:8: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
 src/plugins/export/statements.ts:8: * @standard ISO-4217:2015 currency-codes
@@ -691,6 +693,12 @@ src/services/bank-statement-import.service.ts:6: * @standard OFX-2.2 open-financ
 src/services/bank-statement-import.service.ts:7: * @standard ISO-13616-1:2020 iban
 src/services/bank-statement-import.service.ts:8: * @standard ISO-9362:2022 bic
 src/services/bank-statement-import.service.ts:9: * @standard ISO-4217:2015 currency-codes
+src/services/camt053-import.service.ts:17: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/services/camt053-import.service.ts:18: * @standard ISO-13616-1:2020 iban
+src/services/camt053-import.service.ts:19: * @standard ISO-9362:2022 bic
+src/services/camt053-import.service.ts:20: * @standard ISO-4217:2015 currency-codes
+src/services/camt053-import.service.ts:21: * @standard ISO-8601-1:2019 date-time
+src/services/camt053-import.service.ts:240: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/services/country-api-clients.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/country-context.ts:28: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/depreciation.service.ts:21: * @standard ISO-8601-1:2019 date-time period-start period-end
@@ -1102,6 +1110,8 @@ tests/int/accounting/aging-dry-keys.int.spec.ts:15: * @standard ISO/IEC-29119:20
 tests/int/accounting/aging-dry-keys.int.spec.ts:16: * @standard ISO-8601-1:2019 date-time
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:23: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:24: * @standard ISO-20022 camt.053 bank-to-customer-statement
+tests/int/accounting/camt053-import.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/camt053-import.int.spec.ts:8: * @standard ISO-20022 camt.053 bank-to-customer-statement
 tests/int/accounting/critical-gaps-verification.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/debit-credit.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/depreciation-methods.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
@@ -3042,6 +3052,7 @@ src/plugins/export/seeds/level-1/optimal-export-seeds.ts:7: * @audit ISO-19011:2
 src/plugins/export/seeds/level-2/optimal-export-integration-seeds.ts:7: * @audit ISO-19011:2018 audit-trail test-data
 src/plugins/export/seeds/level-3/optimal-export-advanced-seeds.ts:7: * @audit ISO-19011:2018 audit-trail test-data
 src/plugins/export/standards-export.ts:27: * @audit ISO-19011:2018 audit-trail
+src/plugins/export/standards-import.ts:16: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/statements-cents-aware.ts:12: * @audit ISO-19011:2018 audit-trail
 src/plugins/export/statements.ts:11: * @audit ISO-19011:2018 audit-trail
 src/plugins/hooks/address-validation.hook.ts:5: * @audit ISO-19011:2018 audit-trail relocation-record
@@ -3064,6 +3075,7 @@ src/services/bank-reconciliation.service.ts:485:   * @audit ISO-19011:2018 audit
 src/services/bank-reconciliation.service.ts:593:   * @audit ISO-19011:2018 audit-trail aging-of-reconciling-items
 src/services/bank-reconciliation.service.ts:651:   * @audit ISO-19011:2018 audit-trail adjusting-entry
 src/services/bank-statement-import.service.ts:12: * @audit ISO-19011:2018 audit-trail
+src/services/camt053-import.service.ts:22: * @audit ISO-19011:2018 audit-trail
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-context.ts:29: * @audit ISO-19011:2018 audit-trail country-decision-evidence
 src/services/depreciation.service.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
@@ -3122,6 +3134,7 @@ tests/helpers/seedTenant.ts:9: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/helpers/seedUser.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/int/accounting/aging-dry-keys.int.spec.ts:19: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 tests/int/accounting/bank-reconciliation-report.int.spec.ts:26: * @audit ISO-19011:2018 audit-trail bank-reconciliation
+tests/int/accounting/camt053-import.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/critical-gaps-verification.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/debit-credit.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 tests/int/accounting/depreciation-methods.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence

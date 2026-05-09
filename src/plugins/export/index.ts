@@ -49,3 +49,11 @@ export type {
   StandardsExportRequest,
   StandardsExportResult,
 } from './standards-export'
+
+// Standards-bearing wire-format importers (camt.053 → Camt053Statement[]).
+export { importStandards } from './standards-import'
+export type {
+  StandardsImportFormat,
+  StandardsImportRequest,
+  StandardsImportResult,
+} from './standards-import'
