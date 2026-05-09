@@ -1,4 +1,5 @@
 import type { Access } from 'payload'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
 
 import { isSuperAdmin } from '@/access/isSuperAdmin'
 import type { Tenant } from '@/payload-types'
@@ -20,8 +21,23 @@ import { getUserTenantIDs } from '@/utilities/getUserTenantIDs'
  * @security ISO-27002 §5.4 segregation-of-duties
  * @compliance SOC-2 CC6.1 logical-access-controls
  * @audit ISO-19011:2018 audit-trail
+ * @see src/standards/iso-27002/types.ts
  * @see docs/STANDARDS.md §4.4
  */
+
+/**
+ * Canonical ISO 27002 controls this predicate exercises:
+ *   5.4  — Segregation of duties (tenant-admin role gates mutations)
+ *   5.15 — Access control
+ *   5.18 — Access rights
+ *   5.23 — Cloud-service tenant isolation
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
+  '5.4',
+  '5.15',
+  '5.18',
+  '5.23',
+] as const
 export function createMembershipAdminMutateAccess(collectionSlug: string): Access {
   return async ({ req, id, data }) => {
     if (!req.user) return false

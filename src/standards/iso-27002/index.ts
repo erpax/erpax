@@ -9,3 +9,9 @@
 export type { Iso27002Theme, Iso27002ControlId } from './types'
 export { iso27002Title, iso27002Theme, ISO_27002_CATALOG } from './types'
 export { isIso27002ControlId, parseIso27002ControlId } from './validate'
+export type { ControlCoverageRow } from './coverage'
+export {
+  resolveCoverage,
+  coverageByTheme,
+  aggregateCoverage,
+} from './coverage'

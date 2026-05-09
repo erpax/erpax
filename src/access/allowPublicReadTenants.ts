@@ -7,10 +7,24 @@
  * @security ISO-27002 §8.3 information-access-restriction
  * @rfc 9110 §13 caching
  * @compliance GDPR Art.5(1)(c) data-minimization
+ * @see src/standards/iso-27002/types.ts
  * @see docs/STANDARDS.md §4.4
  */
 
 import type { Payload } from 'payload'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
+
+/**
+ * Canonical ISO 27002 controls this module exercises:
+ *   5.15 — Access control
+ *   5.23 — Cloud-service tenant isolation
+ *   8.3  — Information access restriction
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
+  '5.15',
+  '5.23',
+  '8.3',
+] as const
 
 type Cached = { ids: number[]; expiresAt: number }
 

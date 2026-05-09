@@ -6,10 +6,24 @@
  * @security ISO-27002 §5.15 access-control
  * @security ISO-27002 §8.2 privileged-access-rights
  * @compliance SOC-2 CC6.3 privileged-access-management
+ * @see src/standards/iso-27002/types.ts
  * @see docs/STANDARDS.md §4.4
  */
 
 import type { Access, FieldAccess } from 'payload'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
+
+/**
+ * Canonical ISO 27002 controls this predicate exercises:
+ *   5.15 — Access control
+ *   5.18 — Access rights (super-admin is the highest tier)
+ *   8.2  — Privileged access rights (the canonical control for super-admin)
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
+  '5.15',
+  '5.18',
+  '8.2',
+] as const
 
 export const isSuperAdminAccess: Access = ({ req }): boolean => {
   return isSuperAdmin(req.user)

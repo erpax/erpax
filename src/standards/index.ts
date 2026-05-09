@@ -208,13 +208,16 @@ export {
 } from './en-16931'
 
 // Security control catalog (ISO 27002:2022 / ISO 27001:2022 Annex A)
-export type { Iso27002Theme, Iso27002ControlId } from './iso-27002'
+export type { Iso27002Theme, Iso27002ControlId, ControlCoverageRow } from './iso-27002'
 export {
   iso27002Title,
   iso27002Theme,
   ISO_27002_CATALOG,
   isIso27002ControlId,
   parseIso27002ControlId,
+  resolveCoverage,
+  coverageByTheme,
+  aggregateCoverage,
 } from './iso-27002'
 
 // Audit-trail types (ISO 19011 §6.4.6 audit-evidence)

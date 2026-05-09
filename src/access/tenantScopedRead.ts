@@ -1,4 +1,5 @@
 import type { Access } from 'payload'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
 
 import { getAllowPublicReadTenantIds } from '@/access/allowPublicReadTenants'
 import { wherePublishedAnd } from '@/utilities/scopes'
@@ -15,8 +16,21 @@ import { wherePublishedAnd } from '@/utilities/scopes'
  * @security ISO-27002 §8.3 information-access-restriction
  * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
  * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see src/standards/iso-27002/types.ts
  * @see docs/STANDARDS.md §4.4
  */
+
+/**
+ * Canonical ISO 27002 controls these predicates exercise:
+ *   5.15 — Access control
+ *   5.23 — Cloud-service tenant isolation (the multi-tenant scope contract)
+ *   8.3  — Information access restriction
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = [
+  '5.15',
+  '5.23',
+  '8.3',
+] as const
 export const tenantScopedCollectionReadAccess: Access = async ({ req }) => {
   if (req.user) {
     return true

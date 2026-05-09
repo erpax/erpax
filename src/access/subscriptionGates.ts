@@ -12,11 +12,19 @@
  * @standard NIST INCITS-359-2012 role-based-access-control
  * @security ISO-27002 §5.15 access-control
  * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see src/standards/iso-27002/types.ts
  * @see docs/STANDARDS.md §3 §4.4
  */
 
 import { Access, PayloadRequest } from 'payload'
 import type { Subscription } from '@/payload-types'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
+
+/**
+ * Canonical ISO 27002 controls these gates exercise:
+ *   5.15 — Access control (feature-level gating beyond identity)
+ */
+export const controlsApplied: ReadonlyArray<Iso27002ControlId> = ['5.15'] as const
 
 /**
  * DRY: Core subscription lookup logic reused across all gate functions

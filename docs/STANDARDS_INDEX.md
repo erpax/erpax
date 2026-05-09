@@ -12,7 +12,7 @@
 docs/STANDARDS.md:52: * @standard ISO-4217:2015 currency-codes
 docs/STANDARDS.md:53: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/access/isSuperAdmin.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
-src/access/membershipAdminMutateAccess.ts:16: * @standard NIST INCITS-359-2012 role-based-access-control
+src/access/membershipAdminMutateAccess.ts:17: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/subscriptionGates.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control
 src/app/(api)/api/subscriptions/create/route.ts:5: * @standard ISO-4217:2015 currency-codes
 src/app/(api)/api/webhooks/stripe/route.ts:7: * @standard HMAC-SHA256 stripe-signature-scheme
@@ -782,6 +782,8 @@ src/standards/iso-20022/types.ts:85: * @standard ISO-9362:2022 bic
 src/standards/iso-20022/types.ts:86: * @standard ISO-17442-1:2020 lei
 src/standards/iso-20022/types.ts:9: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 src/standards/iso-20022/validate.ts:5: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+src/standards/iso-27002/coverage.ts:10: * @standard ISO-27002:2022 information-security-controls
+src/standards/iso-27002/coverage.ts:11: * @standard ISO-27001:2022 isms-annex-a-controls
 src/standards/iso-27002/index.ts:4: * @standard ISO-27002:2022 information-security-controls
 src/standards/iso-27002/index.ts:5: * @standard ISO-27001:2022 isms-annex-a-controls
 src/standards/iso-27002/types.ts:10: * @standard ISO-27002:2022 information-security-controls
@@ -1037,6 +1039,9 @@ tests/standards/iso-20022/collection-alignment.int.spec.ts:10: * @standard ISO-2
 tests/standards/iso-20022/collection-alignment.int.spec.ts:9: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-20022/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-20022/types.int.spec.ts:8: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
+tests/standards/iso-27002/access-coverage.int.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing
+tests/standards/iso-27002/access-coverage.int.spec.ts:14: * @standard ISO-27002:2022 information-security-controls
+tests/standards/iso-27002/access-coverage.int.spec.ts:15: * @standard ISO-27001:2022 isms-annex-a-controls
 tests/standards/iso-27002/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-27002/types.int.spec.ts:9: * @standard ISO-27002:2022 information-security-controls
 tests/standards/iso-3166-1/validate.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
@@ -1383,10 +1388,10 @@ docs/STANDARDS.md:54: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/access/allowPublicReadTenants.ts:9: * @compliance GDPR Art.5(1)(c) data-minimization
 src/access/authenticated.ts:7: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/isSuperAdmin.ts:8: * @compliance SOC-2 CC6.3 privileged-access-management
-src/access/membershipAdminMutateAccess.ts:21: * @compliance SOC-2 CC6.1 logical-access-controls
+src/access/membershipAdminMutateAccess.ts:22: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/subscriptionGates.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
-src/access/tenantScopedRead.ts:16: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/access/tenantScopedRead.ts:17: * @compliance SOC-2 CC6.1 logical-access-controls
+src/access/tenantScopedRead.ts:17: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/access/tenantScopedRead.ts:18: * @compliance SOC-2 CC6.1 logical-access-controls
 src/app/(api)/api/subscriptions/create/route.ts:10: * @compliance PSD2 EU-2015/2366 strong-customer-authentication
 src/app/(api)/api/subscriptions/create/route.ts:9: * @compliance PCI-DSS-4.0 §3.2 tokenized-card-data
 src/app/(api)/api/webhooks/stripe/route.ts:8: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
@@ -1673,6 +1678,7 @@ src/standards/_security-headers/headers.ts:17: * @compliance SOC-2 CC6.6 boundar
 src/standards/iso-19011/types.ts:12: * @compliance SOX §404 internal-controls evidence-preservation
 src/standards/iso-19011/types.ts:13: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/standards/iso-19011/types.ts:14: * @compliance GDPR Art.30 records-of-processing-activities
+src/standards/iso-27002/coverage.ts:13: * @compliance SOC-2 trust-services-criteria
 src/standards/iso-27002/types.ts:12: * @compliance SOC-2 trust-services-criteria
 src/standards/nist-incits-359/index.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/standards/nist-incits-359/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
@@ -1731,6 +1737,7 @@ tests/int/tenant.int.spec.ts:7: * @compliance GDPR Art.5(1)(f) integrity-and-con
 tests/int/tenant.int.spec.ts:8: * @compliance SOC-2 CC6.1 logical-access-controls
 tests/jobs/dunningJob.test.ts:12: * @compliance SOX §404 internal-controls
 tests/standards/iso-19011/types.int.spec.ts:11: * @compliance SOX §404 internal-controls
+tests/standards/iso-27002/access-coverage.int.spec.ts:17: * @compliance SOC-2 trust-services-criteria
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts:11: * @compliance PCI-DSS-4.0 §3.6 strong-cryptography
 tests/utilities/stripeWebhookHandlers.test.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data tokenized
@@ -2276,14 +2283,14 @@ src/access/authenticatedOrPublished.ts:7: * @security ISO-27002 §8.3 informatio
 src/access/isSuperAdmin.ts:5: * @security ISO-27001 A.5.18 access-rights
 src/access/isSuperAdmin.ts:6: * @security ISO-27002 §5.15 access-control
 src/access/isSuperAdmin.ts:7: * @security ISO-27002 §8.2 privileged-access-rights
-src/access/membershipAdminMutateAccess.ts:17: * @security ISO-27001 A.5.18 access-rights
-src/access/membershipAdminMutateAccess.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/access/membershipAdminMutateAccess.ts:19: * @security ISO-27002 §5.15 access-control
-src/access/membershipAdminMutateAccess.ts:20: * @security ISO-27002 §5.4 segregation-of-duties
+src/access/membershipAdminMutateAccess.ts:18: * @security ISO-27001 A.5.18 access-rights
+src/access/membershipAdminMutateAccess.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/access/membershipAdminMutateAccess.ts:20: * @security ISO-27002 §5.15 access-control
+src/access/membershipAdminMutateAccess.ts:21: * @security ISO-27002 §5.4 segregation-of-duties
 src/access/subscriptionGates.ts:13: * @security ISO-27002 §5.15 access-control
-src/access/tenantScopedRead.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/access/tenantScopedRead.ts:14: * @security ISO-27002 §5.15 access-control
-src/access/tenantScopedRead.ts:15: * @security ISO-27002 §8.3 information-access-restriction
+src/access/tenantScopedRead.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/access/tenantScopedRead.ts:15: * @security ISO-27002 §5.15 access-control
+src/access/tenantScopedRead.ts:16: * @security ISO-27002 §8.3 information-access-restriction
 src/app/(api)/api/subscriptions/create/route.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/app/(api)/api/webhooks/stripe/route.ts:10: * @security ISO-27001 A.5.17 authentication-information webhook-secret
 src/app/(api)/api/webhooks/stripe/route.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -2567,7 +2574,7 @@ tests/utilities/stripeWebhookHandlers.test.ts:11: * @security ISO-27001 A.5.17 a
 ## @audit
 
 src/access/authenticatedOrPublished.ts:8: * @audit ISO-19011:2018 audit-trail draft-vs-published
-src/access/membershipAdminMutateAccess.ts:22: * @audit ISO-19011:2018 audit-trail
+src/access/membershipAdminMutateAccess.ts:23: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/subscriptions/create/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/webhooks/stripe/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(frontend)/next/seed/route.ts:8: * @audit ISO-19011:2018 audit-trail seed-runs
@@ -2758,6 +2765,7 @@ src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:280: * @audit ISO-19011:2018 audit-trail revenue-evidence
 src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/standards/iso-20022/types.ts:15: * @audit ISO-19011:2018 audit-trail
+src/standards/iso-27002/coverage.ts:12: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
 src/testing/index.ts:13: * @audit ISO-19011:2018 audit-trail seed-cleanup
@@ -2808,6 +2816,7 @@ tests/standards/iso-19011/collection-alignment.int.spec.ts:11: * @audit ISO-1901
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/collection-alignment.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
+tests/standards/iso-27002/access-coverage.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail control-coverage-evidence
 tests/standards/iso-27002/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
 
