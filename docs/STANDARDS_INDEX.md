@@ -684,6 +684,8 @@ src/services/country-api-clients.ts:15: * @standard ISO-3166-1:2020 country-code
 src/services/country-context.ts:28: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/depreciation.service.ts:21: * @standard ISO-8601-1:2019 date-time period-start period-end
 src/services/depreciation.service.ts:22: * @standard ISO-4217:2015 currency-codes
+src/services/edifact-export.service.ts:16: * @standard UN-EDIFACT D.96A
+src/services/edifact-export.service.ts:17: * @standard ISO-9735:2002 edifact-syntax-rules
 src/services/event-emitter.service.ts:8: * @standard ISO-8601-1:2019 date-time event-timestamp
 src/services/financial-reporting.service.ts:4: * @standard ISO-4217:2015 currency-codes
 src/services/financial-reporting.service.ts:5: * @standard ISO-8601-1:2019 date-time fiscal-period
@@ -1078,6 +1080,9 @@ tests/int/accounting/critical-gaps-verification.int.spec.ts:5: * @standard ISO/I
 tests/int/accounting/debit-credit.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/depreciation-methods.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/depreciation-methods.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
+tests/int/accounting/edifact-export.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
+tests/int/accounting/edifact-export.int.spec.ts:8: * @standard UN-EDIFACT D.96A
+tests/int/accounting/edifact-export.int.spec.ts:9: * @standard ISO-9735:2002 edifact-syntax-rules
 tests/int/accounting/full-cycle-demo.int.spec.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/full-cycle-demo.int.spec.ts:13: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:13: * @standard ISO/IEC-29119:2022 software-testing
@@ -3018,6 +3023,7 @@ src/services/bank-statement-import.service.ts:12: * @audit ISO-19011:2018 audit-
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-context.ts:29: * @audit ISO-19011:2018 audit-trail country-decision-evidence
 src/services/depreciation.service.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
+src/services/edifact-export.service.ts:18: * @audit ISO-19011:2018 audit-trail
 src/services/event-emitter.service.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/financial-reporting.service.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/gl-account-resolver.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
@@ -3073,6 +3079,7 @@ tests/int/accounting/bank-reconciliation-report.int.spec.ts:26: * @audit ISO-190
 tests/int/accounting/critical-gaps-verification.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/debit-credit.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 tests/int/accounting/depreciation-methods.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence
+tests/int/accounting/edifact-export.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 audit-trail full-cycle-coverage
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 tests/int/accounting/inventory-adjusted-event.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail
