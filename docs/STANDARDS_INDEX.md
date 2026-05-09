@@ -362,11 +362,18 @@ src/plugins/accounting/collections/BankStatements.ts:19: * @standard ISO-13616-1
 src/plugins/accounting/collections/BankStatements.ts:20: * @standard ISO-9362:2022 bic
 src/plugins/accounting/collections/BankStatements.ts:21: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/BankStatements.ts:22: * @standard ISO-8601-1:2019 date-time statement-date period-start reconciled-at
-src/plugins/accounting/collections/BankTransactions.ts:10: * @standard ISO-20022 camt.053 bank-to-customer-statement
-src/plugins/accounting/collections/BankTransactions.ts:11: * @standard ISO-13616-1:2020 iban
-src/plugins/accounting/collections/BankTransactions.ts:12: * @standard ISO-9362:2022 bic
-src/plugins/accounting/collections/BankTransactions.ts:13: * @standard ISO-4217:2015 currency-codes
-src/plugins/accounting/collections/BankTransactions.ts:14: * @standard ISO-8601-1:2019 date-time value-date booking-date matched-at
+src/plugins/accounting/collections/BankTransactions.ts:31: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/plugins/accounting/collections/BankTransactions.ts:32: * @standard ISO-20022 ExternalBankTransactionDomain1Code
+src/plugins/accounting/collections/BankTransactions.ts:33: * @standard ISO-20022 ExternalBankTransactionFamily1Code
+src/plugins/accounting/collections/BankTransactions.ts:34: * @standard ISO-20022 ExternalBankTransactionSubFamily1Code
+src/plugins/accounting/collections/BankTransactions.ts:35: * @standard ISO-20022 EntryStatus2Code
+src/plugins/accounting/collections/BankTransactions.ts:36: * @standard ISO-20022 CreditDebitCode
+src/plugins/accounting/collections/BankTransactions.ts:37: * @standard ISO-20022 ChargeBearerType1Code
+src/plugins/accounting/collections/BankTransactions.ts:38: * @standard ISO-11649:2009 financial-services-creditor-reference
+src/plugins/accounting/collections/BankTransactions.ts:39: * @standard ISO-13616-1:2020 iban
+src/plugins/accounting/collections/BankTransactions.ts:40: * @standard ISO-9362:2022 bic
+src/plugins/accounting/collections/BankTransactions.ts:41: * @standard ISO-4217:2015 currency-codes
+src/plugins/accounting/collections/BankTransactions.ts:42: * @standard ISO-8601-1:2019 date-time value-date booking-date matched-at
 src/plugins/accounting/collections/BeneficialOwners.ts:4: * @standard ISO-17442-1:2020 lei
 src/plugins/accounting/collections/BudgetPlanning.ts:28: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/BudgetPlanning.ts:29: * @standard ISO-8601-1:2019 date-time fiscal-year period
@@ -1008,6 +1015,8 @@ tests/standards/iso-13616/iban.int.spec.ts:5: * @standard ISO-13616-1:2020 iban
 tests/standards/iso-13616/iban.int.spec.ts:6: * @standard ISO-7064:2003 check-character-systems mod-97-10
 tests/standards/iso-19011/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-19011/types.int.spec.ts:9: * @standard ISO-19011:2018 §6.4.6 audit-evidence-collection
+tests/standards/iso-20022/collection-alignment.int.spec.ts:10: * @standard ISO-20022 camt.053 bank-to-customer-statement
+tests/standards/iso-20022/collection-alignment.int.spec.ts:9: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-20022/types.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 tests/standards/iso-20022/types.int.spec.ts:8: * @standard ISO-20022:2022 universal-financial-industry-message-scheme
 tests/standards/iso-27002/types.int.spec.ts:8: * @standard ISO/IEC-29119:2022 software-testing
@@ -1532,7 +1541,7 @@ src/plugins/accounting/collections/AuditFindings.ts:6: * @compliance SOX §404 d
 src/plugins/accounting/collections/AuditFindings.ts:7: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/plugins/accounting/collections/BankAccounts.ts:14: * @compliance SOX §404 internal-controls cash-management
 src/plugins/accounting/collections/BankStatements.ts:25: * @compliance SOX §404 internal-controls reconciliation-evidence
-src/plugins/accounting/collections/BankTransactions.ts:18: * @compliance SOX §404 internal-controls bank-reconciliation
+src/plugins/accounting/collections/BankTransactions.ts:46: * @compliance SOX §404 internal-controls bank-reconciliation
 src/plugins/accounting/collections/BeneficialOwners.ts:5: * @compliance EU-AMLD-5 Directive-2018/843 ubo-register
 src/plugins/accounting/collections/BeneficialOwners.ts:6: * @compliance US-CTA Corporate-Transparency-Act-2021 beneficial-ownership
 src/plugins/accounting/collections/BeneficialOwners.ts:7: * @compliance FATF-Recommendation-24 transparency-of-legal-persons
@@ -1798,8 +1807,8 @@ src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:16: * @accoun
 src/plugins/accounting/collections/AllowanceForDoubtfulAccounts.ts:17: * @accounting US-GAAP ASC-310-40 troubled-debt-restructurings
 src/plugins/accounting/collections/BankAccounts.ts:12: * @accounting IFRS IAS-7 statement-of-cash-flows cash-and-equivalents
 src/plugins/accounting/collections/BankStatements.ts:23: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/plugins/accounting/collections/BankTransactions.ts:15: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/plugins/accounting/collections/BankTransactions.ts:16: * @accounting US-GAAP ASC-230 cash-flows
+src/plugins/accounting/collections/BankTransactions.ts:43: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/plugins/accounting/collections/BankTransactions.ts:44: * @accounting US-GAAP ASC-230 cash-flows
 src/plugins/accounting/collections/BudgetPlanning.ts:30: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/collections/BudgetPlanning.ts:31: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/plugins/accounting/collections/BudgetPlanning.ts:32: * @accounting US-GAAP ASC-270 interim-reporting
@@ -2377,7 +2386,7 @@ src/plugins/accounting/collections/AuditFindings.ts:9: * @security ISO-27001 §9
 src/plugins/accounting/collections/BankAccounts.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/BankAccounts.ts:16: * @security ISO-27002 §8.24 use-of-cryptography iban-bic-encryption
 src/plugins/accounting/collections/BankStatements.ts:26: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/plugins/accounting/collections/BankTransactions.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/accounting/collections/BankTransactions.ts:47: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/BeneficialOwners.ts:9: * @security ISO-27001 A.5.34 privacy-and-pii
 src/plugins/accounting/collections/BudgetPlanning.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/BudgetPlanning.ts:36: * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
@@ -2617,7 +2626,7 @@ src/plugins/accounting/collections/AuditEvents.ts:29: * @audit ISO-19011:2018 au
 src/plugins/accounting/collections/AuditFindings.ts:8: * @audit ISO-19011:2018 audit-trail finding-evidence
 src/plugins/accounting/collections/BankAccounts.ts:13: * @audit ISO-19011:2018 audit-trail bank-account-master
 src/plugins/accounting/collections/BankStatements.ts:24: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/collections/BankTransactions.ts:17: * @audit ISO-19011:2018 audit-trail reconciliation-line-evidence
+src/plugins/accounting/collections/BankTransactions.ts:45: * @audit ISO-19011:2018 audit-trail reconciliation-line-evidence
 src/plugins/accounting/collections/BeneficialOwners.ts:8: * @audit ISO-19011:2018 audit-trail ubo-evidence
 src/plugins/accounting/collections/BudgetPlanning.ts:33: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/BudgetVariance.ts:17: * @audit ISO-19011:2018 audit-trail variance-analysis
@@ -2776,6 +2785,7 @@ tests/standards/en-16931/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trai
 tests/standards/ifrs-15/collection-alignment.int.spec.ts:15: * @audit ISO-19011:2018 audit-trail
 tests/standards/ifrs-15/types.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-19011/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
+tests/standards/iso-20022/collection-alignment.int.spec.ts:11: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-20022/types.int.spec.ts:9: * @audit ISO-19011:2018 audit-trail
 tests/standards/iso-27002/types.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/testing/test-seed-factory.test.ts:6: * @audit ISO-19011:2018 audit-trail seed-cleanup
