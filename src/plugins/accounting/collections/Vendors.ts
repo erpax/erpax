@@ -3,6 +3,7 @@ import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
 import { autoPopulateHost } from '@/hooks/autoPopulateHost'
 import { classifyTaxId } from '@/hooks/classifyTaxId'
 import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
+import { multiTenancyField } from '../fields/base-accounting-fields'
 
 /**
  * Vendors — purchase-side party master.
@@ -210,6 +211,6 @@ export const Vendors: CollectionConfig = {
       ],
     },
     { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, index: true, hidden: true },
+    multiTenancyField(),
   ],
 }

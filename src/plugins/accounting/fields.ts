@@ -180,37 +180,10 @@ export const statementStatusField: Field = {
   },
 }
 
-/**
- * Currency field pattern
- * PATTERN: Applied to invoices and payments
- */
-export const currencyField: Field = {
-  name: 'currency',
-  type: 'select',
-  defaultValue: 'EUR',
-  options: [
-    { label: 'US Dollar', value: 'USD' },
-    { label: 'Euro', value: 'EUR' },
-    { label: 'British Pound', value: 'GBP' },
-    { label: 'Canadian Dollar', value: 'CAD' },
-  ],
-  admin: {
-    description: 'Transaction currency',
-  },
-}
-
-/**
- * Host field (multi-tenant isolation)
- * PATTERN: Applied to ALL collections for tenant scoping
- */
-export const hostField: Field = {
-  name: 'tenant',
-  type: 'relationship',
-  relationTo: 'tenants',
-  required: true,
-  index: true,
-  hidden: true,
-  admin: {
-    description: 'Tenant isolation (auto-populated from user)',
-  },
-}
+// Backwards-compat re-exports — canonical definitions live in
+// `./fields/base-accounting-fields`. Pre-existing inline duplicates
+// were removed (Slice purge: standard-DRY drift sweep).
+export {
+  multiTenancyField,
+  currencyField,
+} from './fields/base-accounting-fields'

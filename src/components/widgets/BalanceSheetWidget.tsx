@@ -1,3 +1,12 @@
+/**
+ * BalanceSheetWidget — IFRS IAS-1 / US-GAAP ASC 210 statement of financial position.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 §54 statement-of-financial-position
+ * @accounting US-GAAP ASC-210-10 balance-sheet-classification-of-current-assets-and-liabilities
+ * @audit ISO-19011:2018 audit-trail period-end-evidence
+ * @compliance SOX §404 internal-controls
+ */
 import React from 'react';
 import { formatCurrency } from '../Dashboard';
 

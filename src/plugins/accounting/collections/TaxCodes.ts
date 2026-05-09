@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
 import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { multiTenancyField } from '../fields/base-accounting-fields'
 
 /**
  * Tax Codes — tax-rate master.
@@ -138,6 +139,6 @@ export const TaxCodes: CollectionConfig = {
       ],
     },
     { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, index: true, hidden: true },
+    multiTenancyField(),
   ],
 }

@@ -1,3 +1,12 @@
+/**
+ * IncomeStatementWidget — IFRS IAS-1 / US-GAAP ASC 220 statement of profit or loss.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 §81A presentation-of-profit-or-loss-and-other-comprehensive-income
+ * @accounting US-GAAP ASC-220-10 income-statement-reporting-comprehensive-income
+ * @audit ISO-19011:2018 audit-trail period-end-evidence
+ * @compliance SOX §404 internal-controls
+ */
 import React from 'react';
 import { formatCurrency } from '../Dashboard';
 

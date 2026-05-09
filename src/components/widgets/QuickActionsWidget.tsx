@@ -1,3 +1,11 @@
+/**
+ * QuickActionsWidget — admin shortcut tile for common accounting workflows.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard WCAG-2.1 §2.1 keyboard-accessible
+ * @audit ISO-19011:2018 audit-trail user-action-traceability
+ * @compliance SOX §404 internal-controls
+ */
 import React, { useState } from 'react';
 import { AccountingClient } from '../../sdk/accounting-client';
 import CreateInvoiceModal from '../modals/CreateInvoiceModal';

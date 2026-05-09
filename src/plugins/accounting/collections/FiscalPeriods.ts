@@ -3,6 +3,7 @@ import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
 import { autoPopulateHost } from '@/hooks/autoPopulateHost'
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { multiTenancyField } from '../fields/base-accounting-fields'
 
 /**
  * Fiscal Periods — accounting calendar with period locking.
@@ -177,6 +178,6 @@ export const FiscalPeriods: CollectionConfig = {
       ],
     },
     { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, index: true, hidden: true },
+    multiTenancyField(),
   ],
 }

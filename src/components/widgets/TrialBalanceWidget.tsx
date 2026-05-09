@@ -1,3 +1,12 @@
+/**
+ * TrialBalanceWidget — pre-statement debit/credit symmetry evidence.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 §54 statement-of-financial-position
+ * @accounting US-GAAP ASC-205-10 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail debit-credit-symmetry
+ * @compliance SOX §404 internal-controls trial-balance-evidence
+ */
 import React from 'react';
 import { formatCurrency } from '../Dashboard';
 
