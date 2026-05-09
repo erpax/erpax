@@ -62,7 +62,7 @@ export interface Host {
   createdBy?: string;
 
   // Configuration
-  customAccountingRules?: Record<string, any>;
+  customAccountingRules?: Record<string, unknown>;
   seedTemplate?: string; // Which seed template was used
   seedsLoaded: boolean;
 }
@@ -92,7 +92,7 @@ export interface UpdateHostRequest {
   fiscalYearEnd?: FiscalYearEnd;
   defaultTaxRate?: number;
   domainName?: string;
-  customAccountingRules?: Record<string, any>;
+  customAccountingRules?: Record<string, unknown>;
 }
 
 /**
@@ -207,63 +207,28 @@ export const HOST_STATUS_COLORS: Record<HostStatus, string> = {
 };
 
 /**
- * Supported Countries & Their Standards
+ * Country / Currency / Locale tables — derived from the canonical
+ * `COUNTRY_PROFILES` in `@/config/regional-defaults`.
+ *
+ * These thin projections preserve the legacy `COUNTRY_TO_*` API for
+ * existing callers while collapsing the source of truth into one file.
+ * For new code, import `getTenantDefaults`, `getCountryCurrency`, or
+ * `getCountryLocale` directly from `@/config/regional-defaults`.
+ *
+ * Pre-Slice-WW: BG was missing from `COUNTRY_TO_LOCALE` (defaulted to
+ * undefined → string runtime errors); now `bg-BG` is present here as
+ * the house default per the canonical profile.
  */
-export const COUNTRY_TO_STANDARD: Record<string, AccountingStandard> = {
-  'BG': 'IFRS',
-  'CA': 'IFRS',
-  'DE': 'IFRS',
-  'FR': 'IFRS',
-  'GB': 'FRS',
-  'JP': 'JGAAP',
-  'CN': 'ASBE',
-  'IN': 'INDAS',
-  'AU': 'IFRS',
-  'NZ': 'IFRS',
-  'SG': 'IFRS',
-  'HK': 'IFRS',
-  'MX': 'IFRS',
-  'BR': 'IFRS',
-  'US': 'GAAP',
-};
+import { COUNTRY_PROFILES } from '@/config/regional-defaults';
 
-/**
- * Country to Currency Mapping
- */
-export const COUNTRY_TO_CURRENCY: Record<string, string> = {
-  'BG': 'EUR',
-  'CA': 'CAD',
-  'DE': 'EUR',
-  'FR': 'EUR',
-  'GB': 'GBP',
-  'JP': 'JPY',
-  'CN': 'CNY',
-  'IN': 'INR',
-  'AU': 'AUD',
-  'NZ': 'NZD',
-  'SG': 'SGD',
-  'HK': 'HKD',
-  'MX': 'MXN',
-  'BR': 'BRL',
-  'US': 'USD',
-};
+export const COUNTRY_TO_STANDARD: Record<string, AccountingStandard> = Object.fromEntries(
+  Object.entries(COUNTRY_PROFILES).map(([country, p]) => [country, p.accountingStandard]),
+) as Record<string, AccountingStandard>;
 
-/**
- * Country to Locale Mapping
- */
-export const COUNTRY_TO_LOCALE: Record<string, string> = {
-  'US': 'en-US',
-  'CA': 'en-CA',
-  'DE': 'de-DE',
-  'FR': 'fr-FR',
-  'GB': 'en-GB',
-  'JP': 'ja-JP',
-  'CN': 'zh-CN',
-  'IN': 'hi-IN',
-  'AU': 'en-AU',
-  'NZ': 'en-NZ',
-  'SG': 'en-SG',
-  'HK': 'zh-HK',
-  'MX': 'es-MX',
-  'BR': 'pt-BR',
-};
+export const COUNTRY_TO_CURRENCY: Record<string, string> = Object.fromEntries(
+  Object.entries(COUNTRY_PROFILES).map(([country, p]) => [country, p.currency]),
+);
+
+export const COUNTRY_TO_LOCALE: Record<string, string> = Object.fromEntries(
+  Object.entries(COUNTRY_PROFILES).map(([country, p]) => [country, p.locale]),
+);

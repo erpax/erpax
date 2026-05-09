@@ -21,6 +21,7 @@ import {
   handleInvoiceSync,
   handleInvoicePaid,
   handleInvoicePaymentFailed,
+  type StripeWebhookContext,
 } from '@/utilities/billing/stripeWebhookHandlers'
 
 /**
@@ -30,13 +31,23 @@ import {
 
 const stripeSecret = process.env.STRIPE_WEBHOOK_SECRET
 
-const webhookEventHandlers: Record<string, (context: any, event: any) => Promise<void>> = {
-  'customer.subscription.created': handleSubscriptionSync,
-  'customer.subscription.updated': handleSubscriptionSync,
-  'invoice.created': handleInvoiceSync,
-  'invoice.updated': handleInvoiceSync,
-  'invoice.paid': handleInvoicePaid,
-  'invoice.payment_failed': handleInvoicePaymentFailed,
+// Each Stripe webhook handler accepts its own narrow event payload
+// (Stripe.Subscription, Stripe.Invoice, etc.). The dictionary erases that
+// to a runtime-validated dispatch table — Stripe's event.type discriminator
+// guarantees the right handler receives the right shape, but TS can't see
+// that across the dictionary boundary, hence the structural cast.
+type WebhookHandler = (
+  context: StripeWebhookContext,
+  event: Stripe.Event.Data.Object,
+) => Promise<void>
+
+const webhookEventHandlers: Record<string, WebhookHandler> = {
+  'customer.subscription.created': handleSubscriptionSync as WebhookHandler,
+  'customer.subscription.updated': handleSubscriptionSync as WebhookHandler,
+  'invoice.created': handleInvoiceSync as WebhookHandler,
+  'invoice.updated': handleInvoiceSync as WebhookHandler,
+  'invoice.paid': handleInvoicePaid as WebhookHandler,
+  'invoice.payment_failed': handleInvoicePaymentFailed as WebhookHandler,
 }
 
 export async function POST(request: Request) {
@@ -85,11 +96,11 @@ export async function POST(request: Request) {
     const handler = webhookEventHandlers[event.type]
 
     if (handler) {
-      const eventData = event.data.object as any
+      const eventData = event.data.object as Stripe.Event.Data.Object
 
       try {
         await handler(
-          { event, payload },
+          { payload },
           eventData,
         )
       } catch (handlerError) {

@@ -16,13 +16,14 @@
  */
 
 import { Access, PayloadRequest } from 'payload'
+import type { Subscription } from '@/payload-types'
 
 /**
  * DRY: Core subscription lookup logic reused across all gate functions
  */
 async function getSubscriptionForRequest(
   req: PayloadRequest,
-): Promise<{ subscription: any; tenant: string } | null> {
+): Promise<{ subscription: Subscription; tenant: string } | null> {
   if (!req.user?.tenant) {
     return null
   }
@@ -183,7 +184,7 @@ export async function getFeatureLimit(
  * Get current subscription status for a tenant.
  * Returns subscription object or null.
  */
-export async function getSubscriptionStatus(req: PayloadRequest): Promise<any | null> {
+export async function getSubscriptionStatus(req: PayloadRequest): Promise<Subscription | null> {
   const subscriptionData = await getSubscriptionForRequest(req)
   return subscriptionData?.subscription ?? null
 }

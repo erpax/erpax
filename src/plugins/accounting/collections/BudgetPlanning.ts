@@ -1,11 +1,39 @@
 import type { CollectionConfig } from 'payload'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import {
+  multiTenancyField,
+  glAccountField,
+  currencyField,
+  statusField,
+  notesField,
+  auditFields,
+} from '../fields/base-accounting-fields'
+import { validateNotLocked } from '../utilities/period-lock'
+
 /**
  * Budget Planning — period-budgets by department / cost-center.
+ *
+ * Slice WW (post-cleanup): switched from inlined access/fields to the
+ * shared `@/plugins/auth/access` predicates and `@/plugins/accounting/fields`
+ * factories. Adds period-lock enforcement (was missing — IFRS IAS-8 / SOX
+ * §404 requires no back-dated edits inside a closed period), segregation
+ * of duties on approval, audit-trail emission, and ISO-8601 timestamp
+ * auto-set on `approvedAt` when `approvedBy` lands.
  *
  * @standard ISO-4217:2015 currency-codes
  * @standard ISO-8601-1:2019 date-time fiscal-year period
  * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
  * @accounting US-GAAP ASC-270 interim-reporting
+ * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls budget-approval-workflow
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
  * @see docs/STANDARDS.md §4.2
  */
 const BudgetPlanning: CollectionConfig = {
@@ -16,21 +44,16 @@ const BudgetPlanning: CollectionConfig = {
     defaultColumns: ['budgetId', 'fiscalYear', 'department', 'totalBudget', 'status'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: roleScopedAccess('admin', 'accountant'),
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'budgetId', type: 'text', required: true, unique: true },
     { name: 'fiscalYear', type: 'number', required: true, min: 2000, max: 2100 },
     { name: 'department', type: 'text', required: true, admin: { description: 'Department or cost center' } },
-
-    // Budget periods
     {
       name: 'budgetPeriod',
       type: 'select',
@@ -41,58 +64,53 @@ const BudgetPlanning: CollectionConfig = {
         { label: 'Annual', value: 'annual' },
       ],
     },
-
-    // Budget line items
     {
       name: 'budgetLineItems',
       type: 'array',
       minRows: 1,
       fields: [
-        { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
-        { name: 'accountNumber', type: 'text', admin: { disabled: true } },
-        { name: 'accountName', type: 'text', admin: { disabled: true } },
+        ...glAccountField(true),
         { name: 'accountType', type: 'text', admin: { disabled: true } },
         { name: 'budgetAmount', type: 'number', required: true, min: 0 },
         { name: 'notes', type: 'textarea' },
       ],
     },
-
     { name: 'totalBudget', type: 'number', defaultValue: 0, admin: { disabled: true } },
-    { name: 'currency', type: 'select', defaultValue: 'EUR', options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })) },
-
-    // Status
-    {
-      name: 'status',
-      type: 'select',
-      defaultValue: 'draft',
-      options: [
+    currencyField(),
+    statusField(
+      [
         { label: 'Draft', value: 'draft' },
         { label: 'Submitted', value: 'submitted' },
         { label: 'Approved', value: 'approved' },
         { label: 'Active', value: 'active' },
         { label: 'Archived', value: 'archived' },
       ],
-    },
-
-    { name: 'approvedBy', type: 'relationship', relationTo: 'users', admin: { description: 'User who approved budget' } },
-    { name: 'approvedAt', type: 'date', admin: { disabled: true } },
-    { name: 'notes', type: 'textarea' },
+      'draft',
+    ),
+    ...auditFields(),
+    notesField(),
   ],
   hooks: {
+    beforeValidate: [autoPopulateHost],
     beforeChange: [
-      async ({ data, req: _req }) => {
-        if (!data.tenant && undefined) data.tenant = undefined;
-
-        // Calculate total budget
+      validateNotLocked,
+      autoPopulateCreatedBy,
+      enforceSegregationOfDuties(),
+      autoSetTimestamp('approvedAt', (data) => Boolean((data as { approvedBy?: unknown }).approvedBy)),
+      async ({ data }) => {
+        // Calculate total budget from line items.
         if (data.budgetLineItems) {
-          data.totalBudget = data.budgetLineItems.reduce((sum: number, item: any) => sum + (item.budgetAmount || 0), 0);
+          data.totalBudget = (data.budgetLineItems as Array<{ budgetAmount?: number }>).reduce(
+            (sum: number, item) => sum + (item.budgetAmount || 0),
+            0,
+          )
         }
-
-        return data;
+        return data
       },
     ],
+    afterChange: [auditTrailAfterChange('budget-planning')],
   },
   timestamps: true,
-};
+}
 
-export default BudgetPlanning;
+export default BudgetPlanning

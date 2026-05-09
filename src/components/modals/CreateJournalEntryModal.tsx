@@ -2,6 +2,19 @@ import React, { useState } from 'react';
 import { AccountingClient } from '../../sdk/accounting-client';
 import Modal from './Modal';
 
+/**
+ * Modal for creating a balanced journal entry (debits = credits).
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-4217:2015 currency-codes monetary-amount
+ * @standard ISO-8601-1:2019 date-time entry-date
+ * @accounting IFRS double-entry-bookkeeping
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail journal-entry-creation
+ * @see docs/STANDARDS.md §4.2
+ */
+
+
 interface CreateJournalEntryModalProps {
   client: AccountingClient;
   onClose: () => void;
@@ -51,7 +64,7 @@ const CreateJournalEntryModal: React.FC<CreateJournalEntryModalProps> = ({
     value: string
   ) => {
     const newLines = [...formData.lines];
-    (newLines[index] as any)[field] = value;
+    (newLines[index] as Record<string, unknown>)[field] = value;
     setFormData((prev) => ({
       ...prev,
       lines: newLines,

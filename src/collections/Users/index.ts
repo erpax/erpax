@@ -174,6 +174,81 @@ export const Users: CollectionConfig = {
         defaultColumns: ['id'],
       },
     },
+    /**
+     * Per-user Payload-shaped sandbox config — same nested-Payload-Config
+     * shape as `tenant.config`, narrowed to what meaningfully varies per
+     * user (presentation + features). Legal/compliance fields like
+     * `accounting.standard` and `currency.reportingCurrency` deliberately
+     * live ONLY on the tenant — a user can't unilaterally change their
+     * employer's reporting framework — but they CAN choose UI language,
+     * date format, and personal display preferences.
+     *
+     * **International-first cascade** (most-specific wins):
+     *   1. Document field
+     *   2. **`user.config.<section>.<field>`** — explicit per-user override
+     *   3. `tenant.config.<section>.<field>` — explicit per-tenant override
+     *   4. `tenant.config.identity.country` → `COUNTRY_PROFILES` derived
+     *   5. Deployment defaults (`getRegionalDefaults`)
+     *
+     * @standard BCP-47 language-tag user-locale-preference
+     * @standard ECMA-402 internationalization-api
+     * @compliance GDPR Art.12 transparent-information user-language-of-choice
+     * @security ISO-27002 §5.15 access-control per-user-feature-flags
+     * @audit ISO-19011:2018 audit-trail user-config-change
+     */
+    {
+      name: 'config',
+      type: 'group',
+      admin: {
+        description:
+          'Per-user sandbox config (mirrors tenant.config shape, scoped to presentation + features).',
+      },
+      fields: [
+        {
+          name: 'localization',
+          type: 'group',
+          admin: { description: 'Personal locale preference. Overrides tenant.config.localization.' },
+          fields: [
+            {
+              name: 'defaultLocale',
+              type: 'text',
+              admin: {
+                description:
+                  'BCP 47 locale tag (e.g. bg-BG, en-US, de-DE). Drives admin UI language for this user.',
+              },
+            },
+            {
+              name: 'displayCurrency',
+              type: 'text',
+              admin: {
+                description:
+                  'ISO 4217 §5 currency code the user prefers to SEE amounts in. Independent from the tenant\'s reporting currency — viewing-only conversion via FX.',
+              },
+            },
+            {
+              name: 'dateFormat',
+              type: 'select',
+              options: [
+                { label: 'ISO 8601 (YYYY-MM-DD)', value: 'iso' },
+                { label: 'European (DD/MM/YYYY)', value: 'eu' },
+                { label: 'US (MM/DD/YYYY)', value: 'us' },
+                { label: 'Locale default', value: 'locale' },
+              ],
+              defaultValue: 'locale',
+              admin: { description: 'Personal date-format preference. Defaults to the BCP 47 locale\'s standard.' },
+            },
+          ],
+        },
+        {
+          name: 'features',
+          type: 'json',
+          admin: {
+            description:
+              'Per-user feature flags (e.g. {"betaUI": true, "darkMode": true}). Merged on top of tenant.config.features.',
+          },
+        },
+      ],
+    },
   ],
   hooks: {
     afterLogin: [setCookieBasedOnDomain],

@@ -1,14 +1,27 @@
 import type { CollectionConfig } from 'payload'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import { multiTenancyField } from '../fields/base-accounting-fields'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
 import { validateNotLocked } from '../utilities/period-lock';
 
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.
  *
- * @standard ISO-8601-1:2019 date-time period
+ * Slice ZZ: full canonical hook chain wired (autoPopulateHost +
+ * autoPopulateCreatedBy + validateNotLocked + segregation of duties on
+ * approval + ISO-8601 postedAt timestamp + audit-trail emission).
+ *
+ * @standard ISO-8601-1:2019 date-time period posted-at
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
  * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
  * @compliance SOX §404 internal-controls
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
  * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.2
  */
@@ -20,16 +33,13 @@ const PeriodEndAdjustments: CollectionConfig = {
     defaultColumns: ['adjustmentId', 'adjustmentType', 'period', 'adjustmentAmount', 'status'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: roleScopedAccess('admin', 'accountant'),
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'adjustmentId', type: 'text', required: true, unique: true },
     {
       name: 'adjustmentType',
@@ -67,13 +77,20 @@ const PeriodEndAdjustments: CollectionConfig = {
     { name: 'notes', type: 'textarea' },
   ],
   hooks: {
+    beforeValidate: [autoPopulateHost],
     beforeChange: [
       validateNotLocked,
-      async ({ data, req: _req }) => {
-        if (!data.tenant && undefined) data.tenant = undefined;
-        return data;
-      },
+      autoPopulateCreatedBy,
+      // SOX §404 four-eyes: the user who created the adjustment cannot
+      // also approve it. ISO-27002 §5.4 segregation of duties.
+      enforceSegregationOfDuties(),
+      // ISO-8601 stamp on `postedAt` when status flips to 'posted'.
+      autoSetTimestamp(
+        'postedAt',
+        (data) => (data as { status?: string }).status === 'posted',
+      ),
     ],
+    afterChange: [auditTrailAfterChange('period-end-adjustments')],
   },
   timestamps: true,
 };

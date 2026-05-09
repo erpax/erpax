@@ -35,7 +35,7 @@ interface Collection {
   admin?: {
     useAsTitle?: string
   }
-  access?: Record<string, any>
+  access?: Record<string, unknown>
 }
 
 interface Payload {

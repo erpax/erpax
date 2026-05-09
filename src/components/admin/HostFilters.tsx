@@ -1,4 +1,14 @@
 /**
+ * Admin filter UI for the host (tenant) management table.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-3166-1:2020 country-codes filter-vocab
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation admin-interface
+ * @quality ISO-25010 usability admin-tooling
+ * @see docs/STANDARDS.md §4.4
+ */
+
+/**
  * Host Filters Component
  * Provides filtering options similar to Ruby ERPAX scopes
  */
@@ -26,9 +36,9 @@ export default function HostFilters({ onFilterChange }: HostFiltersProps) {
   const handleApplyFilters = () => {
     const filters: HostFilterOptions = {};
 
-    if (status.length > 0) filters.status = status as any;
+    if (status.length > 0) filters.status = status as HostFilterOptions['status'];
     if (country.length > 0) filters.country = country;
-    if (standard.length > 0) filters.accountingStandard = standard as any;
+    if (standard.length > 0) filters.accountingStandard = standard as HostFilterOptions['accountingStandard'];
     if (searchTerm) filters.searchTerm = searchTerm;
 
     onFilterChange(filters);

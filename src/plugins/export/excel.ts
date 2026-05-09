@@ -12,6 +12,8 @@
 
 import * as fs from 'fs'
 
+import type ExcelJS from 'exceljs'
+
 import { ExportOptions, ExportResult, FinancialStatement } from './types'
 
 export class ExcelExporter {
@@ -76,20 +78,20 @@ export class ExcelExporter {
         format: 'excel',
         generatedAt: new Date(),
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       return {
         success: false,
         fileName: options.fileName || 'export.xlsx',
         size: 0,
         format: 'excel',
         generatedAt: new Date(),
-        error: error.message,
+        error: error instanceof Error ? error.message : String(error),
       }
     }
   }
 
   private static addHeader(
-    worksheet: any,
+    worksheet: ExcelJS.Worksheet,
     statement: FinancialStatement,
     _options: ExportOptions
   ): void {
@@ -126,7 +128,7 @@ export class ExcelExporter {
     }
   }
 
-  private static addStatementContent(worksheet: any, statement: FinancialStatement, startRow: number): number {
+  private static addStatementContent(worksheet: ExcelJS.Worksheet, statement: FinancialStatement, startRow: number): number {
     let currentRow = startRow
 
     statement.sections.forEach((section) => {
@@ -197,8 +199,8 @@ export class ExcelExporter {
     return currentRow
   }
 
-  private static formatNumberColumns(worksheet: any): void {
-    worksheet.eachRow((row: any) => {
+  private static formatNumberColumns(worksheet: ExcelJS.Worksheet): void {
+    worksheet.eachRow((row: ExcelJS.Row) => {
       const amountCell = row.getCell(2)
       if (typeof amountCell.value === 'number') {
         amountCell.numFmt = '#,##0.00'

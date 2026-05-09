@@ -98,21 +98,44 @@ export interface Config {
     transactions: Transaction;
     exports: Export;
     imports: Import;
+    'audit-events': AuditEvent;
     'tax-jurisdictions': TaxJurisdiction;
     'tax-codes': TaxCode;
     'fiscal-periods': FiscalPeriod;
     customers: Customer;
     vendors: Vendor;
+    'kyc-checks': KycCheck;
+    'beneficial-owners': BeneficialOwner;
     'gl-accounts': GlAccount;
     'journal-entries': JournalEntry;
     'gl-postings': GlPosting;
+    'bank-accounts': BankAccount;
     'bank-statements': BankStatement;
+    'bank-transactions': BankTransaction;
+    'purchase-orders': PurchaseOrder;
+    'goods-receipts': GoodsReceipt;
+    quotes: Quote;
+    contracts: Contract;
+    'performance-obligations': PerformanceObligation;
+    shipments: Shipment;
+    returns: Return;
+    'warehouse-locations': WarehouseLocation;
+    'inventory-movements': InventoryMovement;
     'financial-statements': FinancialStatement;
     'period-end-adjustments': PeriodEndAdjustment;
+    'depreciation-schedules': DepreciationSchedule;
     'tax-calculations': TaxCalculation;
+    'tax-returns': TaxReturn;
     'currency-rates': CurrencyRate;
+    'credit-memos': CreditMemo;
+    refunds: Refund;
     'fixed-assets': FixedAsset;
     'budget-planning': BudgetPlanning;
+    'consent-records': ConsentRecord;
+    'data-subject-requests': DataSubjectRequest;
+    'data-processing-activities': DataProcessingActivity;
+    'audit-findings': AuditFinding;
+    'control-tests': ControlTest;
     redirects: Redirect;
     forms: Form;
     'form-submissions': FormSubmission;
@@ -135,6 +158,18 @@ export interface Config {
     };
     products: {
       variants: 'variants';
+    };
+    'bank-accounts': {
+      statements: 'bank-statements';
+    };
+    'purchase-orders': {
+      receipts: 'goods-receipts';
+    };
+    contracts: {
+      performanceObligations: 'performance-obligations';
+    };
+    'control-tests': {
+      findings: 'audit-findings';
     };
   };
   collectionsSelect: {
@@ -163,21 +198,44 @@ export interface Config {
     transactions: TransactionsSelect<false> | TransactionsSelect<true>;
     exports: ExportsSelect<false> | ExportsSelect<true>;
     imports: ImportsSelect<false> | ImportsSelect<true>;
+    'audit-events': AuditEventsSelect<false> | AuditEventsSelect<true>;
     'tax-jurisdictions': TaxJurisdictionsSelect<false> | TaxJurisdictionsSelect<true>;
     'tax-codes': TaxCodesSelect<false> | TaxCodesSelect<true>;
     'fiscal-periods': FiscalPeriodsSelect<false> | FiscalPeriodsSelect<true>;
     customers: CustomersSelect<false> | CustomersSelect<true>;
     vendors: VendorsSelect<false> | VendorsSelect<true>;
+    'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
+    'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
     'gl-accounts': GlAccountsSelect<false> | GlAccountsSelect<true>;
     'journal-entries': JournalEntriesSelect<false> | JournalEntriesSelect<true>;
     'gl-postings': GlPostingsSelect<false> | GlPostingsSelect<true>;
+    'bank-accounts': BankAccountsSelect<false> | BankAccountsSelect<true>;
     'bank-statements': BankStatementsSelect<false> | BankStatementsSelect<true>;
+    'bank-transactions': BankTransactionsSelect<false> | BankTransactionsSelect<true>;
+    'purchase-orders': PurchaseOrdersSelect<false> | PurchaseOrdersSelect<true>;
+    'goods-receipts': GoodsReceiptsSelect<false> | GoodsReceiptsSelect<true>;
+    quotes: QuotesSelect<false> | QuotesSelect<true>;
+    contracts: ContractsSelect<false> | ContractsSelect<true>;
+    'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
+    shipments: ShipmentsSelect<false> | ShipmentsSelect<true>;
+    returns: ReturnsSelect<false> | ReturnsSelect<true>;
+    'warehouse-locations': WarehouseLocationsSelect<false> | WarehouseLocationsSelect<true>;
+    'inventory-movements': InventoryMovementsSelect<false> | InventoryMovementsSelect<true>;
     'financial-statements': FinancialStatementsSelect<false> | FinancialStatementsSelect<true>;
     'period-end-adjustments': PeriodEndAdjustmentsSelect<false> | PeriodEndAdjustmentsSelect<true>;
+    'depreciation-schedules': DepreciationSchedulesSelect<false> | DepreciationSchedulesSelect<true>;
     'tax-calculations': TaxCalculationsSelect<false> | TaxCalculationsSelect<true>;
+    'tax-returns': TaxReturnsSelect<false> | TaxReturnsSelect<true>;
     'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
+    'credit-memos': CreditMemosSelect<false> | CreditMemosSelect<true>;
+    refunds: RefundsSelect<false> | RefundsSelect<true>;
     'fixed-assets': FixedAssetsSelect<false> | FixedAssetsSelect<true>;
     'budget-planning': BudgetPlanningSelect<false> | BudgetPlanningSelect<true>;
+    'consent-records': ConsentRecordsSelect<false> | ConsentRecordsSelect<true>;
+    'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
+    'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
+    'audit-findings': AuditFindingsSelect<false> | AuditFindingsSelect<true>;
+    'control-tests': ControlTestsSelect<false> | ControlTestsSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
@@ -396,6 +454,63 @@ export interface Tenant {
     | number
     | boolean
     | null;
+  /**
+   * tenants.configHelp
+   */
+  config?: {
+    /**
+     * Legal-entity identity for this tenant.
+     */
+    identity?: {
+      /**
+       * ISO 3166-1 alpha-2 country code (e.g. BG, US, DE, JP, NO, SA). Any code accepted; drives derived currency / locale / accounting standard when those nested overrides are absent.
+       */
+      country?: string | null;
+      /**
+       * Registered legal name (may differ from the customer-facing brand name).
+       */
+      legalName?: string | null;
+      /**
+       * VAT / GST / EIN / GSTIN / etc. as printed on tax documents.
+       */
+      taxRegistration?: string | null;
+    };
+    /**
+     * Mirrors Payload's `localization` section, scoped per tenant. Drives admin UI language, date/number formatting, and document text.
+     */
+    localization?: {
+      /**
+       * BCP 47 locale tag (e.g. bg-BG, en-US, de-DE). Override of the country-derived locale.
+       */
+      defaultLocale?: string | null;
+      /**
+       * Fallback BCP 47 locale when a translation is missing.
+       */
+      fallbackLocale?: string | null;
+    };
+    /**
+     * Functional / reporting currency configuration.
+     */
+    currency?: {
+      /**
+       * ISO 4217 §5 alphabetic code used as this tenant's reporting / functional currency (e.g. EUR, USD, NOK, KRW). Any ISO 4217 code accepted.
+       */
+      reportingCurrency?: string | null;
+    };
+    /**
+     * Accounting framework + fiscal calendar.
+     */
+    accounting?: {
+      /**
+       * Drives statement structure, OCI placement, SAF-T variant, e-invoicing channel. Overrides the country-derived default.
+       */
+      standard?: ('IFRS' | 'GAAP' | 'FRS' | 'JGAAP' | 'ASBE' | 'INDAS') | null;
+      /**
+       * Calendar month (1–12) when this tenant's fiscal year begins. Calendar year = 1 (default); UK SME = 4; JP many = 4; AU = 7; US many = 1 or 10.
+       */
+      fiscalYearStartMonth?: number | null;
+    };
+  };
   /**
    * If checked, logging in is not required to read. Useful for building public pages.
    */
@@ -727,6 +842,40 @@ export interface User {
     hasNextPage?: boolean;
     totalDocs?: number;
   };
+  /**
+   * Per-user sandbox config (mirrors tenant.config shape, scoped to presentation + features).
+   */
+  config?: {
+    /**
+     * Personal locale preference. Overrides tenant.config.localization.
+     */
+    localization?: {
+      /**
+       * BCP 47 locale tag (e.g. bg-BG, en-US, de-DE). Drives admin UI language for this user.
+       */
+      defaultLocale?: string | null;
+      /**
+       * ISO 4217 §5 currency code the user prefers to SEE amounts in. Independent from the tenant's reporting currency — viewing-only conversion via FX.
+       */
+      displayCurrency?: string | null;
+      /**
+       * Personal date-format preference. Defaults to the BCP 47 locale's standard.
+       */
+      dateFormat?: ('iso' | 'eu' | 'us' | 'locale') | null;
+    };
+    /**
+     * Per-user feature flags (e.g. {"betaUI": true, "darkMode": true}). Merged on top of tenant.config.features.
+     */
+    features?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -778,7 +927,7 @@ export interface Order {
   transactions?: (number | Transaction)[] | null;
   status?: OrderStatus;
   amount?: number | null;
-  currency?: ('EUR' | 'GBP' | 'USD') | null;
+  currency?: 'EUR' | null;
   accessToken?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -824,10 +973,6 @@ export interface Product {
   };
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
-  priceInGBPEnabled?: boolean | null;
-  priceInGBP?: number | null;
-  priceInUSDEnabled?: boolean | null;
-  priceInUSD?: number | null;
   relatedProducts?: (number | Product)[] | null;
   meta?: {
     title?: string | null;
@@ -1008,10 +1153,6 @@ export interface Variant {
   inventory?: number | null;
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
-  priceInGBPEnabled?: boolean | null;
-  priceInGBP?: number | null;
-  priceInUSDEnabled?: boolean | null;
-  priceInUSD?: number | null;
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -1056,7 +1197,7 @@ export interface Transaction {
   order?: (number | null) | Order;
   cart?: (number | null) | Cart;
   amount?: number | null;
-  currency?: ('EUR' | 'GBP' | 'USD') | null;
+  currency?: 'EUR' | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1080,7 +1221,7 @@ export interface Cart {
   purchasedAt?: string | null;
   status?: ('active' | 'purchased' | 'abandoned') | null;
   subtotal?: number | null;
-  currency?: ('EUR' | 'GBP' | 'USD') | null;
+  currency?: 'EUR' | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -1172,7 +1313,7 @@ export interface Address {
    */
   ninCode?: string | null;
   /**
-   * ISO 4217 currency code (USD, EUR, GBP, etc.)
+   * ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).
    */
   currencyCode?: string | null;
   /**
@@ -1218,11 +1359,30 @@ export interface GlAccount {
   id: number;
   tenant: number | Tenant;
   /**
-   * Unique account code (e.g., 1000, 2100, 5001)
+   * Unique account code (e.g., 1000, 2100, 5001) — matches your jurisdiction's chart-of-accounts numbering.
    */
   accountNumber: string;
   accountName: string;
   accountType: 'asset' | 'liability' | 'equity' | 'revenue' | 'expense' | 'gain_loss';
+  /**
+   * Canonical accounting role — gl-posting handlers resolve this to the actual account ID via `resolveGlAccount`.
+   */
+  role?:
+    | (
+        | 'cash'
+        | 'ar'
+        | 'ap'
+        | 'inventory'
+        | 'revenue'
+        | 'cogs'
+        | 'expense'
+        | 'sales_tax_payable'
+        | 'input_tax_asset'
+        | 'deferred_revenue'
+        | 'subscription_revenue'
+        | 'refunds_payable'
+      )
+    | null;
   /**
    * Parent account for hierarchy
    */
@@ -2522,6 +2682,76 @@ export interface Import {
   focalY?: number | null;
 }
 /**
+ * Persistent ISO 19011 / SOX §404 audit trail. Append-only — never edited or deleted.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-events".
+ */
+export interface AuditEvent {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * ISO 8601 UTC timestamp the event was recorded.
+   */
+  timestamp: string;
+  /**
+   * Domain event slug (e.g. order:activated, subscription:cancelled, period:locked).
+   */
+  eventType: string;
+  /**
+   * Source collection slug.
+   */
+  collectionSlug: string;
+  operation: 'create' | 'update' | 'delete' | 'login' | 'logout' | 'export' | 'import';
+  /**
+   * ID of the affected document.
+   */
+  documentId: string;
+  /**
+   * Actor who performed the action.
+   */
+  user?: (number | null) | User;
+  /**
+   * Status before the change (for status transitions).
+   */
+  previousStatus?: string | null;
+  /**
+   * Status after the change.
+   */
+  nextStatus?: string | null;
+  /**
+   * Field-level diff (sparse): {before:{…}, after:{…}}.
+   */
+  changeSummary?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value).
+   */
+  sources?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Correlation ID — links events that originated from the same HTTP request.
+   */
+  requestId?: string | null;
+  severity?: ('debug' | 'info' | 'warn' | 'error' | 'critical') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "tax-jurisdictions".
  */
@@ -2799,6 +3029,10 @@ export interface Customer {
    * Display name
    */
   name: string;
+  /**
+   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).
+   */
+  country?: string | null;
   identity: {
     /**
      * Registered legal name (EN 16931 BT-27)
@@ -2843,9 +3077,13 @@ export interface Customer {
   };
   tax?: {
     /**
-     * VAT / Tax ID (EN 16931 BT-31)
+     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
      */
     vatNumber?: string | null;
+    /**
+     * Auto-stamped — e.g. "VAT (BG)", "EIN", "GSTIN", "EIK / Bulstat".
+     */
+    vatNumberType?: string | null;
     /**
      * Tax-exempt customer (e.g., resale certificate)
      */
@@ -2941,6 +3179,10 @@ export interface Vendor {
    * Display name
    */
   name: string;
+  /**
+   * ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, sanctions screening, e-invoicing).
+   */
+  country?: string | null;
   identity: {
     /**
      * Registered legal name (EN 16931 BT-27)
@@ -2981,9 +3223,13 @@ export interface Vendor {
   };
   tax?: {
     /**
-     * VAT / Tax ID (EN 16931 BT-31)
+     * VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.
      */
     vatNumber?: string | null;
+    /**
+     * Auto-stamped — e.g. "VAT (FR)", "EIN", "GSTIN", "EIK / Bulstat".
+     */
+    vatNumberType?: string | null;
     /**
      * Tax-exempt vendor
      */
@@ -3101,6 +3347,103 @@ export interface Vendor {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "kyc-checks".
+ */
+export interface KycCheck {
+  id: number;
+  tenant: number | Tenant;
+  checkId: string;
+  subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
+  subject: number | Address;
+  cddLevel: 'sdd' | 'cdd' | 'edd';
+  identityDocuments?:
+    | {
+        docType?: ('passport' | 'national_id' | 'driving_licence' | 'utility_bill' | 'bank_statement' | 'other') | null;
+        /**
+         * Encrypted at rest.
+         */
+        docNumber?: string | null;
+        /**
+         * ISO 3166-1 alpha-2.
+         */
+        issuingCountry?: string | null;
+        expiresAt?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  sanctionsScreening?: {
+    screenedAt?: string | null;
+    /**
+     * OFAC SDN, EU consolidated, UN, HMT, etc.
+     */
+    lists?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+    matchFound?: boolean | null;
+    matchDetails?: string | null;
+  };
+  /**
+   * Politically Exposed Person status.
+   */
+  pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
+  riskRating?: ('low' | 'medium' | 'high' | 'prohibited') | null;
+  status?: ('pending' | 'in_review' | 'approved' | 'rejected' | 'requires_reverification') | null;
+  completedAt?: string | null;
+  /**
+   * AMLD-6 ongoing monitoring.
+   */
+  nextReviewDue?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "beneficial-owners".
+ */
+export interface BeneficialOwner {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Legal entity whose UBO this is.
+   */
+  entity: number | Address;
+  fullName: string;
+  dateOfBirth?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 country code.
+   */
+  nationality?: string | null;
+  residenceCountry?: string | null;
+  residenceAddress?: (number | null) | Address;
+  /**
+   * AMLD threshold typically 25%.
+   */
+  ownershipPercent?: number | null;
+  controlType: 'direct_ownership' | 'indirect_ownership' | 'voting_rights' | 'board_appointment' | 'other_control';
+  pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
+  kycCheck?: (number | null) | KycCheck;
+  status?: ('active' | 'pending' | 'resigned') | null;
+  effectiveFrom?: string | null;
+  effectiveTo?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "journal-entries".
  */
 export interface JournalEntry {
@@ -3110,10 +3453,12 @@ export interface JournalEntry {
   entryDate: string;
   postedDate?: string | null;
   description: string;
-  status: 'draft' | 'pending_approval' | 'posted' | 'reversed' | 'void';
+  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
   lines: {
     lineNumber?: number | null;
     glAccount: number | GlAccount;
+    accountNumber?: string | null;
+    accountName?: string | null;
     description?: string | null;
     debit?: number | null;
     credit?: number | null;
@@ -3134,9 +3479,9 @@ export interface JournalEntry {
     | 'tax_calculation'
     | 'currency_adjustment';
   sourceId?: string | null;
-  approvedBy?: (number | null) | User;
-  approvalDate?: string | null;
   createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3165,6 +3510,8 @@ export interface GlPosting {
   accountsAffected?:
     | {
         glAccount: number | GlAccount;
+        accountNumber?: string | null;
+        accountName?: string | null;
         debitAmount?: number | null;
         creditAmount?: number | null;
         currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
@@ -3184,6 +3531,66 @@ export interface GlPosting {
     | number
     | boolean
     | null;
+  createdBy?: (number | null) | User;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-accounts".
+ */
+export interface BankAccount {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Friendly label, e.g. "Operating Account — Bulbank EUR".
+   */
+  accountName: string;
+  /**
+   * ISO 13616 IBAN. Encrypted at rest (NIST AES-GCM).
+   */
+  iban?: string | null;
+  /**
+   * ISO 9362 BIC / SWIFT code.
+   */
+  bic?: string | null;
+  /**
+   * Local account number (US/UK/etc. where IBAN is not standard).
+   */
+  accountNumber?: string | null;
+  /**
+   * ABA / sort-code / BSB — local routing identifier.
+   */
+  routingNumber?: string | null;
+  /**
+   * Bank name.
+   */
+  institution?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 of the bank, auto-derived from the IBAN if blank. Drives country-context API routing (open-banking, tax authority, sanctions screening).
+   */
+  country?: string | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * GL cash account this bank account posts to.
+   */
+  glAccount?: (number | null) | GlAccount;
+  purpose?: ('operating' | 'payroll' | 'tax' | 'reserve' | 'fx') | null;
+  status?: ('active' | 'inactive' | 'closed') | null;
+  openedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Bank statements imported for this account.
+   */
+  statements?: {
+    docs?: (number | BankStatement)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3229,6 +3636,516 @@ export interface BankStatement {
   reconciliationDate?: string | null;
   reconciliedBy?: (number | null) | User;
   importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-transactions".
+ */
+export interface BankTransaction {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Bank-side reference / EndToEndId.
+   */
+  externalId: string;
+  bankAccount: number | BankAccount;
+  /**
+   * Parent camt.053 statement, if imported as part of a batch.
+   */
+  statement?: (number | null) | BankStatement;
+  valueDate: string;
+  bookingDate?: string | null;
+  /**
+   * Signed amount in cents (positive = credit, negative = debit).
+   */
+  amount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  description?: string | null;
+  /**
+   * Remitter / beneficiary as reported on the statement line.
+   */
+  counterpartyName?: string | null;
+  /**
+   * ISO 13616 IBAN of the counterparty, when supplied.
+   */
+  counterpartyIban?: string | null;
+  /**
+   * ISO 9362 BIC of the counterparty, when supplied.
+   */
+  counterpartyBic?: string | null;
+  /**
+   * EndToEndId / RemittanceInfo / payment reference.
+   */
+  reference?: string | null;
+  /**
+   * ISO 20022 BankTransactionCode (e.g. PMNT/RCDT/SALA).
+   */
+  transactionCode?: string | null;
+  matchStatus?: ('unmatched' | 'auto_matched' | 'manual_matched' | 'excluded' | 'disputed') | null;
+  matchedJournalEntries?:
+    | {
+        journalEntry: number | JournalEntry;
+        /**
+         * Portion in cents matched to this JE (supports split matches).
+         */
+        matchedAmount: number;
+        /**
+         * 0-1 confidence for fuzzy matches.
+         */
+        matchScore?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  matchedAt?: string | null;
+  matchedBy?: (number | null) | User;
+  status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "purchase-orders".
+ */
+export interface PurchaseOrder {
+  id: number;
+  tenant: number | Tenant;
+  poNumber: string;
+  /**
+   * Vendor receiving the PO.
+   */
+  vendor: number | Address;
+  orderDate: string;
+  expectedDeliveryDate?: string | null;
+  lines: {
+    lineNumber?: number | null;
+    item?: (number | null) | Item;
+    description: string;
+    quantity: number;
+    unitPrice: number;
+    lineTotal?: number | null;
+    /**
+     * Expense / asset account to debit on receipt.
+     */
+    glAccount?: (number | null) | GlAccount;
+    /**
+     * Cumulative quantity received via goods-receipts.
+     */
+    quantityReceived?: number | null;
+    id?: string | null;
+  }[];
+  subtotal?: number | null;
+  taxAmount?: number | null;
+  totalAmount?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'sent' | 'partial' | 'received' | 'closed' | 'cancelled') | null;
+  submittedAt?: string | null;
+  sentAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Partial / full goods-receipts against this PO.
+   */
+  receipts?: {
+    docs?: (number | GoodsReceipt)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * Matched vendor bill (three-way-match anchor).
+   */
+  invoice?: (number | null) | Invoice;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-receipts".
+ */
+export interface GoodsReceipt {
+  id: number;
+  tenant: number | Tenant;
+  receiptNumber: string;
+  purchaseOrder: number | PurchaseOrder;
+  receivedDate: string;
+  lines: {
+    item?: (number | null) | Item;
+    description?: string | null;
+    quantityReceived: number;
+    quantityDamaged?: number | null;
+    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
+    id?: string | null;
+  }[];
+  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
+  inspectedAt?: string | null;
+  inspectedBy?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "quotes".
+ */
+export interface Quote {
+  id: number;
+  tenant: number | Tenant;
+  quoteNumber: string;
+  customer: number | Address;
+  issuedAt?: string | null;
+  expiresAt?: string | null;
+  lines: {
+    item?: (number | null) | Item;
+    description: string;
+    quantity: number;
+    unitPrice: number;
+    lineTotal?: number | null;
+    id?: string | null;
+  }[];
+  subtotal?: number | null;
+  taxAmount?: number | null;
+  totalAmount?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  status?: ('draft' | 'pending_approval' | 'sent' | 'accepted' | 'rejected' | 'expired' | 'converted') | null;
+  sentAt?: string | null;
+  acceptedAt?: string | null;
+  convertedToOrder?: (number | null) | Order;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts".
+ */
+export interface Contract {
+  id: number;
+  tenant: number | Tenant;
+  contractNumber: string;
+  customer: number | Address;
+  title: string;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  /**
+   * Aggregate transaction price (cents).
+   */
+  totalValue?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
+  /**
+   * IFRS 15 §22 distinct performance obligations.
+   */
+  performanceObligations?: {
+    docs?: (number | PerformanceObligation)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   */
+  modifications?:
+    | {
+        modifiedAt: string;
+        description: string;
+        priceImpact?: number | null;
+        modifiedBy?: (number | null) | User;
+        id?: string | null;
+      }[]
+    | null;
+  status?: ('draft' | 'pending_approval' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
+  activatedAt?: string | null;
+  terminatedAt?: string | null;
+  /**
+   * Linked subscription (if SaaS).
+   */
+  subscription?: (number | null) | Subscription;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations".
+ */
+export interface PerformanceObligation {
+  id: number;
+  tenant: number | Tenant;
+  contract: number | Contract;
+  description: string;
+  recognitionMethod: 'point_in_time' | 'over_time_input' | 'over_time_output';
+  /**
+   * In cents.
+   */
+  standaloneSellingPrice: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Portion of contract transaction price allocated to this PO (cents).
+   */
+  allocatedAmount?: number | null;
+  /**
+   * Cumulative recognised revenue (cents).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * For over-time methods: 0–100.
+   */
+  percentComplete?: number | null;
+  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  satisfiedAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shipments".
+ */
+export interface Shipment {
+  id: number;
+  tenant: number | Tenant;
+  shipmentNumber: string;
+  order: number | Order;
+  shipFromAddress?: (number | null) | Address;
+  shipToAddress: number | Address;
+  carrier?: ('dhl' | 'fedex' | 'ups' | 'usps' | 'royal_mail' | 'speedy' | 'econt' | 'local' | 'pickup') | null;
+  trackingNumber?: string | null;
+  trackingUrl?: string | null;
+  /**
+   * In cents.
+   */
+  shippingCost?: number | null;
+  lines?:
+    | {
+        item?: (number | null) | Item;
+        quantity: number;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    | (
+        | 'pending'
+        | 'picked'
+        | 'packed'
+        | 'shipped'
+        | 'in_transit'
+        | 'out_for_delivery'
+        | 'delivered'
+        | 'returned'
+        | 'lost'
+      )
+    | null;
+  shippedAt?: string | null;
+  deliveredAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "returns".
+ */
+export interface Return {
+  id: number;
+  tenant: number | Tenant;
+  rmaNumber: string;
+  order: number | Order;
+  customer?: (number | null) | Address;
+  reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
+  lines: {
+    item?: (number | null) | Item;
+    quantityReturned: number;
+    /**
+     * Return to inventory or write off?
+     */
+    restock?: boolean | null;
+    id?: string | null;
+  }[];
+  status?:
+    | ('requested' | 'authorised' | 'in_transit' | 'received' | 'restocked' | 'refunded' | 'closed' | 'rejected')
+    | null;
+  authorisedAt?: string | null;
+  receivedAt?: string | null;
+  restockedAt?: string | null;
+  /**
+   * Credit memo issued for the return.
+   */
+  creditMemo?: (number | null) | CreditMemo;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "credit-memos".
+ */
+export interface CreditMemo {
+  id: number;
+  tenant: number | Tenant;
+  memoNumber: string;
+  /**
+   * Party receiving the credit.
+   */
+  customer?: (number | null) | Address;
+  /**
+   * Original invoice being credited (optional for general write-offs).
+   */
+  invoice?: (number | null) | Invoice;
+  reason:
+    | 'refund_return'
+    | 'refund_service'
+    | 'pricing_adjustment'
+    | 'bad_debt_writeoff'
+    | 'goodwill'
+    | 'tax_adjustment'
+    | 'other';
+  reasonDetail?: string | null;
+  /**
+   * Credit amount in cents.
+   */
+  amount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  status?: ('draft' | 'pending_approval' | 'issued' | 'applied' | 'settled' | 'voided') | null;
+  /**
+   * When the credit memo was issued.
+   */
+  issuedAt?: string | null;
+  /**
+   * When applied against an invoice.
+   */
+  appliedAt?: string | null;
+  /**
+   * When cash refund was paid.
+   */
+  settledAt?: string | null;
+  /**
+   * GL posting that booked this credit.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "warehouse-locations".
+ */
+export interface WarehouseLocation {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Short code, e.g. SOF-MAIN, NYC-3PL.
+   */
+  code: string;
+  name: string;
+  type: 'warehouse' | '3pl' | 'retail' | 'consignment' | 'transit' | 'quarantine' | 'returns' | 'bonded' | 'virtual';
+  address?: (number | null) | Address;
+  /**
+   * ISO 3166-1 alpha-2.
+   */
+  country?: string | null;
+  /**
+   * ISO 3166-2 subdivision code.
+   */
+  region?: string | null;
+  /**
+   * Default inventory GL account for stock at this location.
+   */
+  glAccount?: (number | null) | GlAccount;
+  /**
+   * Optional bin/aisle/shelf detail for cycle-count granularity.
+   */
+  bins?:
+    | {
+        binCode: string;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  status?: ('active' | 'inactive' | 'closed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inventory-movements".
+ */
+export interface InventoryMovement {
+  id: number;
+  tenant: number | Tenant;
+  movementId: string;
+  kind:
+    | 'receipt'
+    | 'sale'
+    | 'consumption'
+    | 'transfer'
+    | 'return_in'
+    | 'return_out'
+    | 'adjustment'
+    | 'write_off'
+    | 'opening';
+  item: number | Item;
+  /**
+   * Lot / serial number for traceability.
+   */
+  lotOrSerial?: string | null;
+  /**
+   * Positive = inbound to toLocation; negative = outbound from fromLocation.
+   */
+  quantity: number;
+  /**
+   * In cents — used for cost-flow & GL valuation.
+   */
+  unitCost?: number | null;
+  /**
+   * quantity × unitCost; auto-computed.
+   */
+  extendedCost?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  fromLocation?: (number | null) | WarehouseLocation;
+  toLocation?: (number | null) | WarehouseLocation;
+  movementAt: string;
+  sourceDocumentType?: ('goods_receipt' | 'shipment' | 'return' | 'order' | 'adjustment' | 'manual') | null;
+  /**
+   * Free-form id of the originating document for traceability.
+   */
+  sourceDocumentId?: string | null;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('draft' | 'posted' | 'reversed') | null;
+  postedAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3318,49 +4235,34 @@ export interface PeriodEndAdjustment {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-calculations".
+ * via the `definition` "depreciation-schedules".
  */
-export interface TaxCalculation {
+export interface DepreciationSchedule {
   id: number;
   tenant: number | Tenant;
-  calculationId: string;
-  taxType: 'sales_tax' | 'vat' | 'gst' | 'income_tax' | 'payroll_tax';
-  jurisdiction: 'us_federal' | 'us_state' | 'eu' | 'ca_federal' | 'ca_provincial' | 'au' | 'jp' | 'cn' | 'in' | 'br';
-  period: string;
-  taxRate: number;
-  grossAmount: number;
-  taxableAmount: number;
-  taxAmount: number;
-  netAmount: number;
-  taxPayableAccount: number | GlAccount;
-  taxExpenseAccount?: (number | null) | GlAccount;
+  scheduleId: string;
+  fixedAsset: number | FixedAsset;
+  periodEnd: string;
+  periodStart: string;
+  depreciationAmount: number;
+  /**
+   * Accumulated depreciation after this entry (cents).
+   */
+  accumulatedAfter?: number | null;
+  /**
+   * Book value after this entry (cents).
+   */
+  bookValueAfter?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  method?:
+    | ('straight_line' | 'declining_balance' | 'double_declining' | 'units_of_activity' | 'sum_of_years_digits')
+    | null;
+  status?: ('calculated' | 'posted' | 'reversed') | null;
+  postedAt?: string | null;
   journalEntry?: (number | null) | JournalEntry;
-  status?: ('calculated' | 'approved' | 'posted' | 'filed' | 'paid') | null;
-  filingDeadline?: string | null;
-  paymentDeadline?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "currency-rates".
- */
-export interface CurrencyRate {
-  id: number;
-  tenant: number | Tenant;
-  rateId: string;
-  fromCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD';
-  toCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD';
-  rate: number;
-  rateDate: string;
-  source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
-  inverse?: number | null;
-  midMarketRate?: number | null;
-  bidRate?: number | null;
-  askRate?: number | null;
-  isActive?: boolean | null;
-  usedInTransactions?: number | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -3467,6 +4369,138 @@ export interface FixedAsset {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-calculations".
+ */
+export interface TaxCalculation {
+  id: number;
+  tenant: number | Tenant;
+  calculationId: string;
+  taxType: 'sales_tax' | 'vat' | 'gst' | 'income_tax' | 'payroll_tax';
+  jurisdiction: 'us_federal' | 'us_state' | 'eu' | 'ca_federal' | 'ca_provincial' | 'au' | 'jp' | 'cn' | 'in' | 'br';
+  period: string;
+  taxRate: number;
+  grossAmount: number;
+  taxableAmount: number;
+  taxAmount: number;
+  netAmount: number;
+  taxPayableAccount: number | GlAccount;
+  taxExpenseAccount?: (number | null) | GlAccount;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('calculated' | 'approved' | 'posted' | 'filed' | 'paid') | null;
+  filingDeadline?: string | null;
+  paymentDeadline?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-returns".
+ */
+export interface TaxReturn {
+  id: number;
+  tenant: number | Tenant;
+  returnId: string;
+  returnType:
+    | 'vat_monthly'
+    | 'vat_quarterly'
+    | 'vat_annual'
+    | 'esl'
+    | 'intrastat'
+    | 'sales_tax_us'
+    | 'gst'
+    | 'corporate_income'
+    | 'withholding'
+    | 'saft';
+  jurisdiction: number | TaxJurisdiction;
+  periodStart: string;
+  periodEnd: string;
+  taxableSales?: number | null;
+  taxableAcquisitions?: number | null;
+  outputTax?: number | null;
+  inputTax?: number | null;
+  netLiability?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Source TaxCalculation snapshots aggregated into this return.
+   */
+  taxCalculations?: (number | TaxCalculation)[] | null;
+  status?: ('draft' | 'in_review' | 'ready' | 'filed' | 'accepted' | 'rejected' | 'amended') | null;
+  filedAt?: string | null;
+  filedBy?: (number | null) | User;
+  /**
+   * Confirmation reference returned by the tax authority.
+   */
+  authorityReference?: string | null;
+  paidAt?: string | null;
+  attachments?:
+    | {
+        media?: (number | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "currency-rates".
+ */
+export interface CurrencyRate {
+  id: number;
+  tenant: number | Tenant;
+  rateId: string;
+  fromCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD';
+  toCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD';
+  rate: number;
+  rateDate: string;
+  source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
+  inverse?: number | null;
+  midMarketRate?: number | null;
+  bidRate?: number | null;
+  askRate?: number | null;
+  isActive?: boolean | null;
+  usedInTransactions?: number | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "refunds".
+ */
+export interface Refund {
+  id: number;
+  tenant: number | Tenant;
+  refundNumber: string;
+  creditMemo: number | CreditMemo;
+  invoice?: (number | null) | Invoice;
+  order?: (number | null) | Order;
+  amount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
+  /**
+   * Stripe refund ID for cross-system traceability.
+   */
+  stripeRefundId?: string | null;
+  status?: ('draft' | 'pending' | 'issued' | 'settled' | 'failed' | 'voided') | null;
+  refundedAt?: string | null;
+  settledAt?: string | null;
+  failureReason?: string | null;
+  journalEntry?: (number | null) | JournalEntry;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "budget-planning".
  */
 export interface BudgetPlanning {
@@ -3493,9 +4527,243 @@ export interface BudgetPlanning {
   totalBudget?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
   status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consent-records".
+ */
+export interface ConsentRecord {
+  id: number;
+  tenant: number | Tenant;
+  consentId: string;
+  dataSubject: number | User;
+  purpose: 'marketing' | 'analytics' | 'transactional' | 'profiling' | 'third_party_sharing' | 'cookies_optional';
+  lawfulBasis?:
+    | ('consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests')
+    | null;
   /**
-   * User who approved budget
+   * Exact text presented to the data subject at the moment of consent.
    */
+  consentText: string;
+  /**
+   * Version identifier of the consent text (for re-consent flows).
+   */
+  consentVersion?: string | null;
+  capturedVia?: ('web_form' | 'api' | 'paper' | 'verbal' | 'email_double_optin') | null;
+  /**
+   * Captured at consent time for evidence (Art.7(1)).
+   */
+  ipAddress?: string | null;
+  userAgent?: string | null;
+  status?: ('given' | 'withdrawn' | 'expired') | null;
+  givenAt?: string | null;
+  withdrawnAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-subject-requests".
+ */
+export interface DataSubjectRequest {
+  id: number;
+  tenant: number | Tenant;
+  requestId: string;
+  dataSubject: number | User;
+  requestType: 'access' | 'rectification' | 'erasure' | 'restriction' | 'portability' | 'object' | 'withdraw_consent';
+  requestDetail?: string | null;
+  submittedAt: string;
+  /**
+   * Art.12(3) deadline — submittedAt + 1 month (extensible by 2 months).
+   */
+  dueAt?: string | null;
+  status?:
+    | (
+        | 'submitted'
+        | 'identity_verification'
+        | 'in_progress'
+        | 'awaiting_customer'
+        | 'completed'
+        | 'rejected'
+        | 'escalated'
+      )
+    | null;
+  completedAt?: string | null;
+  rejectionReason?: string | null;
+  /**
+   * JSON record of what was exported/erased/restricted.
+   */
+  fulfilmentEvidence?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * DPO or staff member handling this request.
+   */
+  handler?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-processing-activities".
+ */
+export interface DataProcessingActivity {
+  id: number;
+  tenant: number | Tenant;
+  activityName: string;
+  purpose: string;
+  controllerOrProcessor: 'controller' | 'processor' | 'joint_controller';
+  lawfulBasis: 'consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests';
+  dataCategories?:
+    | {
+        category: string;
+        /**
+         * Art.9 special category data?
+         */
+        special?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  dataSubjectCategories?:
+    | {
+        /**
+         * e.g. customers, employees, prospects.
+         */
+        category: string;
+        id?: string | null;
+      }[]
+    | null;
+  recipientCategories?:
+    | {
+        recipient: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Art.44 transfers — list each destination + safeguard.
+   */
+  thirdCountryTransfers?:
+    | {
+        country: string;
+        safeguard?: ('adequacy_decision' | 'sccs' | 'bcrs' | 'derogation') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * How long we keep this data + basis.
+   */
+  retentionPeriod: string;
+  /**
+   * Technical + organisational measures (Art.32).
+   */
+  securityMeasures?: string | null;
+  status?: ('active' | 'suspended' | 'retired') | null;
+  /**
+   * Schedule a review at least annually.
+   */
+  reviewDueAt: string;
+  /**
+   * Data Protection Officer responsible for this activity.
+   */
+  dpo?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-findings".
+ */
+export interface AuditFinding {
+  id: number;
+  tenant: number | Tenant;
+  findingId: string;
+  title: string;
+  description: string;
+  severity: 'observation' | 'deficiency' | 'significant_deficiency' | 'material_weakness';
+  classification: 'design' | 'operating' | 'documentation' | 'compensating';
+  /**
+   * Originating control test (if any).
+   */
+  controlTest?: (number | null) | ControlTest;
+  reportedAt: string;
+  reportedBy?: (number | null) | User;
+  remediationPlan?: string | null;
+  remediationOwner?: (number | null) | User;
+  targetCloseDate?: string | null;
+  status?: ('open' | 'in_remediation' | 'closed_remediated' | 'closed_accepted' | 'closed_false_positive') | null;
+  closedAt?: string | null;
+  closedBy?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "control-tests".
+ */
+export interface ControlTest {
+  id: number;
+  tenant: number | Tenant;
+  testId: string;
+  /**
+   * e.g. "Period close — close-vs-creator SoD".
+   */
+  controlName: string;
+  controlObjective: string;
+  controlFrequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'event-driven') | null;
+  testType: 'inquiry' | 'observation' | 'inspection' | 'reperformance' | 'walkthrough' | 'automated';
+  periodStart: string;
+  periodEnd: string;
+  sampleSize?: number | null;
+  /**
+   * Sample units that failed the test.
+   */
+  exceptions?: number | null;
+  result?: ('effective' | 'effective_with_exceptions' | 'ineffective' | 'na') | null;
+  evidence?: string | null;
+  tester?: (number | null) | User;
+  /**
+   * Independent reviewer (≠ tester per SoD).
+   */
+  reviewer?: (number | null) | User;
+  /**
+   * Findings raised from this test.
+   */
+  findings?: {
+    docs?: (number | AuditFinding)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  status?: ('planned' | 'in_progress' | 'tester_complete' | 'reviewed' | 'signed_off') | null;
+  signedOffAt?: string | null;
+  createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
@@ -3933,6 +5201,10 @@ export interface PayloadLockedDocument {
         value: number | Transaction;
       } | null)
     | ({
+        relationTo: 'audit-events';
+        value: number | AuditEvent;
+      } | null)
+    | ({
         relationTo: 'tax-jurisdictions';
         value: number | TaxJurisdiction;
       } | null)
@@ -3953,6 +5225,14 @@ export interface PayloadLockedDocument {
         value: number | Vendor;
       } | null)
     | ({
+        relationTo: 'kyc-checks';
+        value: number | KycCheck;
+      } | null)
+    | ({
+        relationTo: 'beneficial-owners';
+        value: number | BeneficialOwner;
+      } | null)
+    | ({
         relationTo: 'gl-accounts';
         value: number | GlAccount;
       } | null)
@@ -3965,8 +5245,52 @@ export interface PayloadLockedDocument {
         value: number | GlPosting;
       } | null)
     | ({
+        relationTo: 'bank-accounts';
+        value: number | BankAccount;
+      } | null)
+    | ({
         relationTo: 'bank-statements';
         value: number | BankStatement;
+      } | null)
+    | ({
+        relationTo: 'bank-transactions';
+        value: number | BankTransaction;
+      } | null)
+    | ({
+        relationTo: 'purchase-orders';
+        value: number | PurchaseOrder;
+      } | null)
+    | ({
+        relationTo: 'goods-receipts';
+        value: number | GoodsReceipt;
+      } | null)
+    | ({
+        relationTo: 'quotes';
+        value: number | Quote;
+      } | null)
+    | ({
+        relationTo: 'contracts';
+        value: number | Contract;
+      } | null)
+    | ({
+        relationTo: 'performance-obligations';
+        value: number | PerformanceObligation;
+      } | null)
+    | ({
+        relationTo: 'shipments';
+        value: number | Shipment;
+      } | null)
+    | ({
+        relationTo: 'returns';
+        value: number | Return;
+      } | null)
+    | ({
+        relationTo: 'warehouse-locations';
+        value: number | WarehouseLocation;
+      } | null)
+    | ({
+        relationTo: 'inventory-movements';
+        value: number | InventoryMovement;
       } | null)
     | ({
         relationTo: 'financial-statements';
@@ -3977,12 +5301,28 @@ export interface PayloadLockedDocument {
         value: number | PeriodEndAdjustment;
       } | null)
     | ({
+        relationTo: 'depreciation-schedules';
+        value: number | DepreciationSchedule;
+      } | null)
+    | ({
         relationTo: 'tax-calculations';
         value: number | TaxCalculation;
       } | null)
     | ({
+        relationTo: 'tax-returns';
+        value: number | TaxReturn;
+      } | null)
+    | ({
         relationTo: 'currency-rates';
         value: number | CurrencyRate;
+      } | null)
+    | ({
+        relationTo: 'credit-memos';
+        value: number | CreditMemo;
+      } | null)
+    | ({
+        relationTo: 'refunds';
+        value: number | Refund;
       } | null)
     | ({
         relationTo: 'fixed-assets';
@@ -3991,6 +5331,26 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'budget-planning';
         value: number | BudgetPlanning;
+      } | null)
+    | ({
+        relationTo: 'consent-records';
+        value: number | ConsentRecord;
+      } | null)
+    | ({
+        relationTo: 'data-subject-requests';
+        value: number | DataSubjectRequest;
+      } | null)
+    | ({
+        relationTo: 'data-processing-activities';
+        value: number | DataProcessingActivity;
+      } | null)
+    | ({
+        relationTo: 'audit-findings';
+        value: number | AuditFinding;
+      } | null)
+    | ({
+        relationTo: 'control-tests';
+        value: number | ControlTest;
       } | null)
     | ({
         relationTo: 'redirects';
@@ -4073,6 +5433,34 @@ export interface TenantsSelect<T extends boolean = true> {
   domain?: T;
   slug?: T;
   locales?: T;
+  config?:
+    | T
+    | {
+        identity?:
+          | T
+          | {
+              country?: T;
+              legalName?: T;
+              taxRegistration?: T;
+            };
+        localization?:
+          | T
+          | {
+              defaultLocale?: T;
+              fallbackLocale?: T;
+            };
+        currency?:
+          | T
+          | {
+              reportingCurrency?: T;
+            };
+        accounting?:
+          | T
+          | {
+              standard?: T;
+              fiscalYearStartMonth?: T;
+            };
+      };
   allowPublicRead?: T;
   publicSiteUrl?: T;
   stripePublishableKey?: T;
@@ -4419,6 +5807,18 @@ export interface UsersSelect<T extends boolean = true> {
   orders?: T;
   cart?: T;
   addresses?: T;
+  config?:
+    | T
+    | {
+        localization?:
+          | T
+          | {
+              defaultLocale?: T;
+              displayCurrency?: T;
+              dateFormat?: T;
+            };
+        features?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   email?: T;
@@ -4854,10 +6254,6 @@ export interface VariantsSelect<T extends boolean = true> {
   inventory?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
-  priceInGBPEnabled?: T;
-  priceInGBP?: T;
-  priceInUSDEnabled?: T;
-  priceInUSD?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -4918,10 +6314,6 @@ export interface ProductsSelect<T extends boolean = true> {
   variants?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
-  priceInGBPEnabled?: T;
-  priceInGBP?: T;
-  priceInUSDEnabled?: T;
-  priceInUSD?: T;
   relatedProducts?: T;
   meta?:
     | T
@@ -5107,6 +6499,27 @@ export interface ImportsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-events_select".
+ */
+export interface AuditEventsSelect<T extends boolean = true> {
+  tenant?: T;
+  timestamp?: T;
+  eventType?: T;
+  collectionSlug?: T;
+  operation?: T;
+  documentId?: T;
+  user?: T;
+  previousStatus?: T;
+  nextStatus?: T;
+  changeSummary?: T;
+  sources?: T;
+  requestId?: T;
+  severity?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "tax-jurisdictions_select".
  */
 export interface TaxJurisdictionsSelect<T extends boolean = true> {
@@ -5237,6 +6650,7 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
 export interface CustomersSelect<T extends boolean = true> {
   code?: T;
   name?: T;
+  country?: T;
   identity?:
     | T
     | {
@@ -5262,6 +6676,7 @@ export interface CustomersSelect<T extends boolean = true> {
     | T
     | {
         vatNumber?: T;
+        vatNumberType?: T;
         taxExempt?: T;
         taxExemptionCertificate?: T;
         defaultTaxCode?: T;
@@ -5301,6 +6716,7 @@ export interface CustomersSelect<T extends boolean = true> {
 export interface VendorsSelect<T extends boolean = true> {
   code?: T;
   name?: T;
+  country?: T;
   identity?:
     | T
     | {
@@ -5325,6 +6741,7 @@ export interface VendorsSelect<T extends boolean = true> {
     | T
     | {
         vatNumber?: T;
+        vatNumberType?: T;
         taxExempt?: T;
         defaultTaxCode?: T;
         vendor1099Eligible?: T;
@@ -5371,6 +6788,71 @@ export interface VendorsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "kyc-checks_select".
+ */
+export interface KycChecksSelect<T extends boolean = true> {
+  tenant?: T;
+  checkId?: T;
+  subjectType?: T;
+  subject?: T;
+  cddLevel?: T;
+  identityDocuments?:
+    | T
+    | {
+        docType?: T;
+        docNumber?: T;
+        issuingCountry?: T;
+        expiresAt?: T;
+        id?: T;
+      };
+  sanctionsScreening?:
+    | T
+    | {
+        screenedAt?: T;
+        lists?: T;
+        matchFound?: T;
+        matchDetails?: T;
+      };
+  pepStatus?: T;
+  riskRating?: T;
+  status?: T;
+  completedAt?: T;
+  nextReviewDue?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "beneficial-owners_select".
+ */
+export interface BeneficialOwnersSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  fullName?: T;
+  dateOfBirth?: T;
+  nationality?: T;
+  residenceCountry?: T;
+  residenceAddress?: T;
+  ownershipPercent?: T;
+  controlType?: T;
+  pepStatus?: T;
+  kycCheck?: T;
+  status?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "gl-accounts_select".
  */
 export interface GlAccountsSelect<T extends boolean = true> {
@@ -5378,6 +6860,7 @@ export interface GlAccountsSelect<T extends boolean = true> {
   accountNumber?: T;
   accountName?: T;
   accountType?: T;
+  role?: T;
   parentAccount?: T;
   normalBalance?: T;
   balance?: T;
@@ -5411,6 +6894,8 @@ export interface JournalEntriesSelect<T extends boolean = true> {
     | {
         lineNumber?: T;
         glAccount?: T;
+        accountNumber?: T;
+        accountName?: T;
         description?: T;
         debit?: T;
         credit?: T;
@@ -5423,9 +6908,9 @@ export interface JournalEntriesSelect<T extends boolean = true> {
   isBalanced?: T;
   sourceType?: T;
   sourceId?: T;
-  approvedBy?: T;
-  approvalDate?: T;
   createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -5446,6 +6931,8 @@ export interface GlPostingsSelect<T extends boolean = true> {
     | T
     | {
         glAccount?: T;
+        accountNumber?: T;
+        accountName?: T;
         debitAmount?: T;
         creditAmount?: T;
         currency?: T;
@@ -5456,6 +6943,34 @@ export interface GlPostingsSelect<T extends boolean = true> {
   errorMessage?: T;
   reversalPostingId?: T;
   metadata?: T;
+  createdBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-accounts_select".
+ */
+export interface BankAccountsSelect<T extends boolean = true> {
+  tenant?: T;
+  accountName?: T;
+  iban?: T;
+  bic?: T;
+  accountNumber?: T;
+  routingNumber?: T;
+  institution?: T;
+  country?: T;
+  currency?: T;
+  glAccount?: T;
+  purpose?: T;
+  status?: T;
+  openedAt?: T;
+  closedAt?: T;
+  statements?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -5500,6 +7015,321 @@ export interface BankStatementsSelect<T extends boolean = true> {
   reconciliationDate?: T;
   reconciliedBy?: T;
   importSource?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-transactions_select".
+ */
+export interface BankTransactionsSelect<T extends boolean = true> {
+  tenant?: T;
+  externalId?: T;
+  bankAccount?: T;
+  statement?: T;
+  valueDate?: T;
+  bookingDate?: T;
+  amount?: T;
+  currency?: T;
+  description?: T;
+  counterpartyName?: T;
+  counterpartyIban?: T;
+  counterpartyBic?: T;
+  reference?: T;
+  transactionCode?: T;
+  matchStatus?: T;
+  matchedJournalEntries?:
+    | T
+    | {
+        journalEntry?: T;
+        matchedAmount?: T;
+        matchScore?: T;
+        id?: T;
+      };
+  matchedAt?: T;
+  matchedBy?: T;
+  status?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "purchase-orders_select".
+ */
+export interface PurchaseOrdersSelect<T extends boolean = true> {
+  tenant?: T;
+  poNumber?: T;
+  vendor?: T;
+  orderDate?: T;
+  expectedDeliveryDate?: T;
+  lines?:
+    | T
+    | {
+        lineNumber?: T;
+        item?: T;
+        description?: T;
+        quantity?: T;
+        unitPrice?: T;
+        lineTotal?: T;
+        glAccount?: T;
+        quantityReceived?: T;
+        id?: T;
+      };
+  subtotal?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  currency?: T;
+  status?: T;
+  submittedAt?: T;
+  sentAt?: T;
+  closedAt?: T;
+  receipts?: T;
+  invoice?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-receipts_select".
+ */
+export interface GoodsReceiptsSelect<T extends boolean = true> {
+  tenant?: T;
+  receiptNumber?: T;
+  purchaseOrder?: T;
+  receivedDate?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        description?: T;
+        quantityReceived?: T;
+        quantityDamaged?: T;
+        condition?: T;
+        id?: T;
+      };
+  status?: T;
+  inspectedAt?: T;
+  inspectedBy?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "quotes_select".
+ */
+export interface QuotesSelect<T extends boolean = true> {
+  tenant?: T;
+  quoteNumber?: T;
+  customer?: T;
+  issuedAt?: T;
+  expiresAt?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        description?: T;
+        quantity?: T;
+        unitPrice?: T;
+        lineTotal?: T;
+        id?: T;
+      };
+  subtotal?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  currency?: T;
+  status?: T;
+  sentAt?: T;
+  acceptedAt?: T;
+  convertedToOrder?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts_select".
+ */
+export interface ContractsSelect<T extends boolean = true> {
+  tenant?: T;
+  contractNumber?: T;
+  customer?: T;
+  title?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  totalValue?: T;
+  currency?: T;
+  paymentTerms?: T;
+  performanceObligations?: T;
+  modifications?:
+    | T
+    | {
+        modifiedAt?: T;
+        description?: T;
+        priceImpact?: T;
+        modifiedBy?: T;
+        id?: T;
+      };
+  status?: T;
+  activatedAt?: T;
+  terminatedAt?: T;
+  subscription?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations_select".
+ */
+export interface PerformanceObligationsSelect<T extends boolean = true> {
+  tenant?: T;
+  contract?: T;
+  description?: T;
+  recognitionMethod?: T;
+  standaloneSellingPrice?: T;
+  currency?: T;
+  allocatedAmount?: T;
+  recognisedToDate?: T;
+  percentComplete?: T;
+  status?: T;
+  satisfiedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shipments_select".
+ */
+export interface ShipmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  shipmentNumber?: T;
+  order?: T;
+  shipFromAddress?: T;
+  shipToAddress?: T;
+  carrier?: T;
+  trackingNumber?: T;
+  trackingUrl?: T;
+  shippingCost?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        quantity?: T;
+        id?: T;
+      };
+  status?: T;
+  shippedAt?: T;
+  deliveredAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "returns_select".
+ */
+export interface ReturnsSelect<T extends boolean = true> {
+  tenant?: T;
+  rmaNumber?: T;
+  order?: T;
+  customer?: T;
+  reason?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        quantityReturned?: T;
+        restock?: T;
+        id?: T;
+      };
+  status?: T;
+  authorisedAt?: T;
+  receivedAt?: T;
+  restockedAt?: T;
+  creditMemo?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "warehouse-locations_select".
+ */
+export interface WarehouseLocationsSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  type?: T;
+  address?: T;
+  country?: T;
+  region?: T;
+  glAccount?: T;
+  bins?:
+    | T
+    | {
+        binCode?: T;
+        description?: T;
+        id?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inventory-movements_select".
+ */
+export interface InventoryMovementsSelect<T extends boolean = true> {
+  tenant?: T;
+  movementId?: T;
+  kind?: T;
+  item?: T;
+  lotOrSerial?: T;
+  quantity?: T;
+  unitCost?: T;
+  extendedCost?: T;
+  currency?: T;
+  fromLocation?: T;
+  toLocation?: T;
+  movementAt?: T;
+  sourceDocumentType?: T;
+  sourceDocumentId?: T;
+  journalEntry?: T;
+  status?: T;
+  postedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -5563,6 +7393,31 @@ export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "depreciation-schedules_select".
+ */
+export interface DepreciationSchedulesSelect<T extends boolean = true> {
+  tenant?: T;
+  scheduleId?: T;
+  fixedAsset?: T;
+  periodEnd?: T;
+  periodStart?: T;
+  depreciationAmount?: T;
+  accumulatedAfter?: T;
+  bookValueAfter?: T;
+  currency?: T;
+  method?: T;
+  status?: T;
+  postedAt?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "tax-calculations_select".
  */
 export interface TaxCalculationsSelect<T extends boolean = true> {
@@ -5588,6 +7443,42 @@ export interface TaxCalculationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-returns_select".
+ */
+export interface TaxReturnsSelect<T extends boolean = true> {
+  tenant?: T;
+  returnId?: T;
+  returnType?: T;
+  jurisdiction?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  taxableSales?: T;
+  taxableAcquisitions?: T;
+  outputTax?: T;
+  inputTax?: T;
+  netLiability?: T;
+  currency?: T;
+  taxCalculations?: T;
+  status?: T;
+  filedAt?: T;
+  filedBy?: T;
+  authorityReference?: T;
+  paidAt?: T;
+  attachments?:
+    | T
+    | {
+        media?: T;
+        id?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "currency-rates_select".
  */
 export interface CurrencyRatesSelect<T extends boolean = true> {
@@ -5604,6 +7495,57 @@ export interface CurrencyRatesSelect<T extends boolean = true> {
   askRate?: T;
   isActive?: T;
   usedInTransactions?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "credit-memos_select".
+ */
+export interface CreditMemosSelect<T extends boolean = true> {
+  tenant?: T;
+  memoNumber?: T;
+  customer?: T;
+  invoice?: T;
+  reason?: T;
+  reasonDetail?: T;
+  amount?: T;
+  currency?: T;
+  status?: T;
+  issuedAt?: T;
+  appliedAt?: T;
+  settledAt?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "refunds_select".
+ */
+export interface RefundsSelect<T extends boolean = true> {
+  tenant?: T;
+  refundNumber?: T;
+  creditMemo?: T;
+  invoice?: T;
+  order?: T;
+  amount?: T;
+  currency?: T;
+  method?: T;
+  stripeRefundId?: T;
+  status?: T;
+  refundedAt?: T;
+  settledAt?: T;
+  failureReason?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
   notes?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -5674,6 +7616,160 @@ export interface BudgetPlanningSelect<T extends boolean = true> {
   totalBudget?: T;
   currency?: T;
   status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consent-records_select".
+ */
+export interface ConsentRecordsSelect<T extends boolean = true> {
+  tenant?: T;
+  consentId?: T;
+  dataSubject?: T;
+  purpose?: T;
+  lawfulBasis?: T;
+  consentText?: T;
+  consentVersion?: T;
+  capturedVia?: T;
+  ipAddress?: T;
+  userAgent?: T;
+  status?: T;
+  givenAt?: T;
+  withdrawnAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-subject-requests_select".
+ */
+export interface DataSubjectRequestsSelect<T extends boolean = true> {
+  tenant?: T;
+  requestId?: T;
+  dataSubject?: T;
+  requestType?: T;
+  requestDetail?: T;
+  submittedAt?: T;
+  dueAt?: T;
+  status?: T;
+  completedAt?: T;
+  rejectionReason?: T;
+  fulfilmentEvidence?: T;
+  handler?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-processing-activities_select".
+ */
+export interface DataProcessingActivitiesSelect<T extends boolean = true> {
+  tenant?: T;
+  activityName?: T;
+  purpose?: T;
+  controllerOrProcessor?: T;
+  lawfulBasis?: T;
+  dataCategories?:
+    | T
+    | {
+        category?: T;
+        special?: T;
+        id?: T;
+      };
+  dataSubjectCategories?:
+    | T
+    | {
+        category?: T;
+        id?: T;
+      };
+  recipientCategories?:
+    | T
+    | {
+        recipient?: T;
+        id?: T;
+      };
+  thirdCountryTransfers?:
+    | T
+    | {
+        country?: T;
+        safeguard?: T;
+        id?: T;
+      };
+  retentionPeriod?: T;
+  securityMeasures?: T;
+  status?: T;
+  reviewDueAt?: T;
+  dpo?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-findings_select".
+ */
+export interface AuditFindingsSelect<T extends boolean = true> {
+  tenant?: T;
+  findingId?: T;
+  title?: T;
+  description?: T;
+  severity?: T;
+  classification?: T;
+  controlTest?: T;
+  reportedAt?: T;
+  reportedBy?: T;
+  remediationPlan?: T;
+  remediationOwner?: T;
+  targetCloseDate?: T;
+  status?: T;
+  closedAt?: T;
+  closedBy?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "control-tests_select".
+ */
+export interface ControlTestsSelect<T extends boolean = true> {
+  tenant?: T;
+  testId?: T;
+  controlName?: T;
+  controlObjective?: T;
+  controlFrequency?: T;
+  testType?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  sampleSize?: T;
+  exceptions?: T;
+  result?: T;
+  evidence?: T;
+  tester?: T;
+  reviewer?: T;
+  findings?: T;
+  status?: T;
+  signedOffAt?: T;
+  createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;

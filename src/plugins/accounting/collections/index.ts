@@ -55,6 +55,49 @@ export { TaxJurisdictions } from './TaxJurisdictions'
 export { TaxCodes } from './TaxCodes'
 export { FiscalPeriods } from './FiscalPeriods'
 
+// ─── Sprint ZZ Round 1 — standards-required normalised collections ───
+// AuditEvents:    persistent ISO 19011 / SOX §404 evidence (was logger-only)
+// CreditMemos:    IFRS 15 §B22 contra-revenue (was just a type)
+// PurchaseOrders: SOX §404 three-way-match leg 1
+// GoodsReceipts:  SOX §404 three-way-match leg 2
+// Quotes:         IFRS 15 §10 quote-to-cash entry point
+// Refunds:        ISO 20022 pacs.004 cash-out side of CreditMemos
+// BankAccounts:   ISO 13616 IBAN / ISO 9362 BIC master (normalised from BankStatements)
+export { default as AuditEvents } from './AuditEvents'
+export { default as CreditMemos } from './CreditMemos'
+export { default as PurchaseOrders } from './PurchaseOrders'
+export { default as GoodsReceipts } from './GoodsReceipts'
+export { default as Quotes } from './Quotes'
+export { default as Refunds } from './Refunds'
+export { default as BankAccounts } from './BankAccounts'
+
+// ─── Sprint ZZ Round 2 — 16 standards-required normalised collections ───
+// Order-to-Cash: Returns, Shipments
+// Revenue contracts: Contracts, PerformanceObligations (IFRS 15 §22)
+// PP&E period detail: DepreciationSchedules (IAS 16)
+// GDPR data layer: ConsentRecords, DataSubjectRequests, DataProcessingActivities
+// SOX §404 evidence layer: AuditFindings, ControlTests
+// AML / KYC: KycChecks, BeneficialOwners (AMLD-5 / US CTA)
+// Tax filing: TaxReturns (separate from TaxCalculations snapshot)
+// Inventory: WarehouseLocations, InventoryMovements (IAS 2 / ASC 330 cost-flow)
+// Bank ledger: BankTransactions (ISO 20022 camt.053 line-level)
+export { default as Returns } from './Returns'
+export { default as Shipments } from './Shipments'
+export { default as Contracts } from './Contracts'
+export { default as PerformanceObligations } from './PerformanceObligations'
+export { default as DepreciationSchedules } from './DepreciationSchedules'
+export { default as ConsentRecords } from './ConsentRecords'
+export { default as DataSubjectRequests } from './DataSubjectRequests'
+export { default as DataProcessingActivities } from './DataProcessingActivities'
+export { default as AuditFindings } from './AuditFindings'
+export { default as ControlTests } from './ControlTests'
+export { default as KycChecks } from './KycChecks'
+export { default as BeneficialOwners } from './BeneficialOwners'
+export { default as TaxReturns } from './TaxReturns'
+export { default as WarehouseLocations } from './WarehouseLocations'
+export { default as InventoryMovements } from './InventoryMovements'
+export { default as BankTransactions } from './BankTransactions'
+
 // Slice QQQ: retired report-shaped collection re-exports removed.
 // Per Payload's "create a collection only when structurally distinct"
 // guidance, derived data is service-generated (see

@@ -25,6 +25,16 @@ import {
   FinancialRatios,
 } from '@/types/financial-statements';
 import { journalEntryService } from './journal-entry.service';
+import { DebitCreditLogic } from '@/plugins/accounting/debit-credit';
+
+/**
+ * GL balance bucket — debits and credits per account, plus optional metadata.
+ */
+interface AccountBalance {
+  debit?: number;
+  credit?: number;
+  [key: string]: unknown;
+}
 
 /**
  * Report-section labels. Only 5 are actually consumed by the service.
@@ -132,7 +142,7 @@ class FinancialReportingService {
   private async generateTrialBalance(
     tenantId: string,
     reportDate: Date,
-    balances: Map<string, any>
+    balances: Map<string, AccountBalance>
   ): Promise<TrialBalance> {
     const accounts: TrialBalanceAccount[] = [];
     let totalDebits = 0;
@@ -177,7 +187,7 @@ class FinancialReportingService {
   private async generateBalanceSheet(
     tenantId: string,
     reportDate: Date,
-    balances: Map<string, any>
+    balances: Map<string, AccountBalance>
   ): Promise<BalanceSheet> {
     // Categorize accounts by type
     const assets: BalanceSheetLine[] = [];
@@ -189,9 +199,14 @@ class FinancialReportingService {
     let totalEquity = 0;
 
     for (const [accountId, balance] of balances) {
-      const amount = balance.normalBalance === 'debit'
-        ? (balance.debit || 0) - (balance.credit || 0)
-        : (balance.credit || 0) - (balance.debit || 0);
+      // Use canonical DebitCreditLogic to compute normal-side balance.
+      // 'asset' is debit-normal; 'liability' is credit-normal — pick whichever
+      // matches the row's declared normalBalance and let the canonical math win.
+      const amount = DebitCreditLogic.getBalance(
+        balance.normalBalance === 'debit' ? 'asset' : 'liability',
+        balance.debit || 0,
+        balance.credit || 0,
+      );
 
       if (amount === 0) continue;
 
@@ -279,7 +294,7 @@ class FinancialReportingService {
     tenantId: string,
     periodStart: Date,
     periodEnd: Date,
-    balances: Map<string, any>
+    balances: Map<string, AccountBalance>
   ): Promise<IncomeStatement> {
     const revenue: IncomeStatementLine[] = [];
     const cogs: IncomeStatementLine[] = [];
@@ -398,7 +413,7 @@ class FinancialReportingService {
     tenantId: string,
     periodStart: Date,
     periodEnd: Date,
-    balances: Map<string, any>
+    balances: Map<string, AccountBalance>
   ): Promise<CashFlowStatement> {
     // Simplified indirect method
     const incomeStatement = await this.generateIncomeStatement(

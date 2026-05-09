@@ -1,17 +1,24 @@
 import type { CollectionConfig } from 'payload'
 import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 /**
  * Fiscal Periods — accounting calendar with period locking.
  *
  * Lifecycle: open → closed → locked (admin-only to lock or unlock).
  *
- * @standard ISO-8601-1:2019 date-time
+ * Slice ZZ: SoD enforcement now actually wired (the user who created the
+ * period cannot also close it or lock it); structured audit-trail event
+ * emitted on every status transition.
+ *
+ * @standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting US-GAAP ASC-210 balance-sheet
  * @compliance SOX §404 period-close-integrity
- * @security ISO-27002 §5.4 segregation-of-duties
+ * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
+ * @audit ISO-19011:2018 audit-trail status-transition
  * @see docs/STANDARDS.md §4.2
  *
  *
@@ -49,6 +56,11 @@ export const FiscalPeriods: CollectionConfig = {
       },
     ],
     beforeChange: [
+      // ISO-27002 §5.4 / SOX §404 four-eyes: the user who created the
+      // period cannot also be the user who closes it (`closedBy`) or
+      // locks it (`lockedBy`). Two enforcers, one per approval field.
+      enforceSegregationOfDuties('closedBy', 'createdBy'),
+      enforceSegregationOfDuties('lockedBy', 'createdBy'),
       async ({ data }) => {
         if (data.startDate && data.endDate) {
           const from = new Date(data.startDate).getTime()
@@ -89,6 +101,9 @@ export const FiscalPeriods: CollectionConfig = {
         return data
       },
     ],
+    // SOX §404 period-close-integrity: every fiscal-period status change
+    // (open → closed → locked → reopened) emits a structured audit event.
+    afterChange: [auditTrailAfterChange('fiscal-periods')],
   },
   fields: [
     // Identity — `label` kept at top level so `useAsTitle` can resolve it

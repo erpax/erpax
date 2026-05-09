@@ -2,10 +2,22 @@ import React from 'react';
 import { FinancialAnalysisEngine } from '../../plugins/accounting/financial-analysis';
 import { formatCurrency } from '../Dashboard';
 
+import type { IncomeStatementData } from './types';
+
+/**
+ * Cost structure card — fixed vs variable cost split, contribution margin.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-2 inventories cost-of-inventories
+ * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
+ * @see docs/STANDARDS.md §4.2
+ */
+
+
 interface CostAnalysisCardProps {
   data: {
-    balanceSheet: any;
-    incomeStatement: any;
+    balanceSheet?: unknown;
+    incomeStatement: IncomeStatementData;
   };
 }
 

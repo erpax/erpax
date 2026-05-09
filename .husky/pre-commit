@@ -1,0 +1,50 @@
+#!/usr/bin/env sh
+# pre-commit — auto-regenerate the artefacts the pre-push gate VERIFIES,
+# so devs never have to remember to run them by hand. Conditional on what's
+# staged so doc-only / script-only commits stay fast.
+#
+# Wired artefacts:
+#   • src/payload-types.ts          — when any Payload collection / config / field changes
+#   • src/app/(payload)/admin/importMap.js — same trigger
+#   • docs/STANDARDS_INDEX.md       — when any file carrying a standards banner changes
+#
+# Bypass (intentional skip): git commit --no-verify
+#
+# @standard ISO-19011:2018 audit-trail generated-artefacts-fresh-on-commit
+# @standard ISO-25010:2023 quality-model maintainability automation
+cd "$(dirname "$0")/.." || exit 1
+export PATH="$PWD/node_modules/.bin:$PATH"
+export NODE_OPTIONS=--no-deprecation
+set -e
+
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+[ -z "$staged" ] && exit 0
+
+# 1. Payload types + admin importmap — regen when any collection / payload-config /
+#    fields file changes. The verify gate (`payload-verify-types.sh`) runs in
+#    pre-push and would otherwise reject a stale `src/payload-types.ts`.
+if echo "$staged" | grep -E '^src/(plugins/.*/collections/|collections/|fields/|.*payload\.config\.ts$|.*payload-config\.ts$)' >/dev/null; then
+  echo "pre-commit: collection/config change — regenerating Payload types + importmap"
+  pnpm exec payload generate:types >/dev/null
+  pnpm exec payload generate:importmap >/dev/null
+  git add src/payload-types.ts src/app/'(payload)'/admin/importMap.js 2>/dev/null || true
+fi
+
+# 2. Standards citation index — regen when any file with a standards banner
+#    changes. The verify gate (`standards-citation-index.sh --verify-index`)
+#    runs in pre-push and would otherwise reject a stale `STANDARDS_INDEX.md`.
+if echo "$staged" | grep -E '\.(ts|tsx|js|jsx|md)$' >/dev/null; then
+  has_banner=0
+  for f in $staged; do
+    [ -f "$f" ] || continue
+    if grep -lE '@(standard|rfc|compliance|accounting|audit|security)\b' "$f" >/dev/null 2>&1; then
+      has_banner=1
+      break
+    fi
+  done
+  if [ "$has_banner" = 1 ]; then
+    echo "pre-commit: standards-banner change — regenerating docs/STANDARDS_INDEX.md"
+    bash scripts/standards-citation-index.sh --write-index >/dev/null
+    git add docs/STANDARDS_INDEX.md 2>/dev/null || true
+  fi
+fi

@@ -1,10 +1,19 @@
 import React from 'react';
 
+/**
+ * Application navigation shell — sidebar + page selector + role-aware menu items.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @quality ISO-25010 usability navigation
+ * @see docs/STANDARDS.md §4.3
+ */
+
+
 interface NavigationProps {
   isOpen: boolean;
   onToggle: () => void;
   currentPage: string;
-  onNavigate: (page: any) => void;
+  onNavigate: (page: string) => void;
   userRole: 'admin' | 'accountant' | 'auditor' | 'readonly';
   userName: string;
 }

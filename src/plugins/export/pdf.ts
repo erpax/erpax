@@ -67,14 +67,14 @@ export class PDFExporter {
         format: 'pdf',
         generatedAt: new Date(),
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       return {
         success: false,
         fileName: options.fileName || 'export.pdf',
         size: 0,
         format: 'pdf',
         generatedAt: new Date(),
-        error: error.message,
+        error: error instanceof Error ? error.message : String(error),
       }
     }
   }

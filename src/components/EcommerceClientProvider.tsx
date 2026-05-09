@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react'
 
-import { EcommerceProvider, EUR, GBP, USD } from '@payloadcms/plugin-ecommerce/client/react'
+import { EcommerceProvider, EUR } from '@payloadcms/plugin-ecommerce/client/react'
 import { stripeAdapterClient } from '@payloadcms/plugin-ecommerce/payments/stripe'
 
 type Props = {
@@ -13,9 +13,14 @@ type Props = {
   stripePublishableKey?: string
 }
 
+// Slice WW: canonical single-currency configuration (mirrors the server-side
+// `configureEcommercePlugin.ts`). EUR is the house default per
+// `@/config/regional-defaults`. Display in any other currency happens at
+// render time via FX (`multi-currency.service`); we don't generate
+// `priceInGBP` / `priceInUSD` columns for the cart math any more.
 const currenciesConfig = {
   defaultCurrency: 'EUR',
-  supportedCurrencies: [EUR, GBP, USD],
+  supportedCurrencies: [EUR],
 }
 
 function resolvePublishableKey(explicit?: string): string {

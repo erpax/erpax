@@ -58,3 +58,8 @@ next-env.d.ts
 
 # Local probes / scratch
 .consolidate_probe
+.audit-backups/
+
+# Filesystem leftovers / backups (never commit; clean with: find src -name "*.bak" -delete && find src -name ".fuse_hidden*" -delete)
+*.bak
+.fuse_hidden*

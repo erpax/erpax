@@ -1,4 +1,15 @@
 /**
+ * Level-2 integration accounting seed — multi-period fixtures for service-level integration tests.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail test-data
+ * @quality ISO-25010 maintainability test-fixtures
+ * @see docs/STANDARDS.md §4.2
+ */
+
+/**
  * Level 2: Integration Test Seeds for Accounting Plugin
  * Setup time: 2-5 seconds
  * Creates realistic business data with multi-document relationships
@@ -20,7 +31,7 @@ export class JournalEntrySeed extends TestSeedFactory {
     this.hostId = hostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'journal-entries') {
       await super.validateData(collection, data);
 
@@ -146,7 +157,7 @@ export class AccountingCycleSeed extends TestSeedFactory {
     this.hostId = hostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'accounting-cycles') {
       await super.validateData(collection, data);
 
@@ -252,7 +263,7 @@ export class MultiCurrencySeed extends TestSeedFactory {
     this.hostId = hostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'fx-transactions') {
       await super.validateData(collection, data);
 
@@ -357,7 +368,7 @@ export class RoleScopedDataSeed extends TestSeedFactory {
     this.hostId = hostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'role-scoped-access') {
       await super.validateData(collection, data);
 

@@ -1,4 +1,15 @@
 /**
+ * Level-1 export seed — single-template, single-format fixtures for unit tests.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO/IEC-29500:2016 office-open-xml export-format
+ * @standard ECMA-376 office-open-xml
+ * @audit ISO-19011:2018 audit-trail test-data
+ * @quality ISO-25010 maintainability test-fixtures
+ * @see docs/STANDARDS.md §4.3
+ */
+
+/**
  * Level 1: OPTIMAL Unit Test Seeds for Export Plugin
  * Fast setup (<500ms) with minimal dependencies for unit tests
  * Comprehensive coverage: 10+ templates, 8+ API configs, format definitions, data mappings
@@ -15,7 +26,7 @@ export class OptimalExportTemplateSeed extends TestSeedFactory {
   private environmentId: string = '';
   private createdIds: Set<string> = new Set();
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'export-templates') {
       await super.validateData(collection, data);
       
@@ -227,7 +238,7 @@ export class OptimalExportTemplateSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -236,7 +247,7 @@ export class OptimalExportTemplateSeed extends TestSeedFactory {
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'unit',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -254,7 +265,7 @@ export class OptimalExportTemplateSeed extends TestSeedFactory {
 export class OptimalAPIConfigurationSeed extends TestSeedFactory {
   private createdIds: Set<string> = new Set();
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'api-configurations') {
       await super.validateData(collection, data);
 
@@ -426,7 +437,7 @@ export class OptimalAPIConfigurationSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -435,7 +446,7 @@ export class OptimalAPIConfigurationSeed extends TestSeedFactory {
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'unit',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -568,7 +579,7 @@ export class OptimalFormatDefinitionSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -576,14 +587,14 @@ export class OptimalFormatDefinitionSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'format-definitions') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'unit',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -708,7 +719,7 @@ export class OptimalDataMappingSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -716,14 +727,14 @@ export class OptimalDataMappingSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'data-mappings') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'unit',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -799,7 +810,7 @@ export class Level1ExportSuite extends TestSeedFactory {
 
   private aggregateCreatedIds(seeds: TestSeedFactory[]): void {
     seeds.forEach(seed => {
-      const seedContext = (seed as any).context;
+      const seedContext = (seed as { context?: { createdIds?: Map<string, Set<string>> } }).context;
       if (seedContext && seedContext.createdIds) {
         for (const [collection, ids] of seedContext.createdIds) {
           if (!this.context!.createdIds.has(collection)) {
@@ -814,7 +825,7 @@ export class Level1ExportSuite extends TestSeedFactory {
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'unit',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: 0,

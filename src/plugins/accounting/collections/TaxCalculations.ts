@@ -1,14 +1,28 @@
 import type { CollectionConfig } from 'payload'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import { multiTenancyField } from '../fields/base-accounting-fields'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { validateNotLocked } from '../utilities/period-lock';
+
 /**
  * Tax Calculations — computed tax-liability snapshots per period.
+ *
+ * Slice ZZ: full canonical hook chain wired (autoPopulateHost +
+ * autoPopulateCreatedBy + validateNotLocked + ISO-8601 postedAt /
+ * filedAt / paidAt timestamps + audit-trail emission per write).
  *
  * @standard ISO-3166-1:2020 country-codes jurisdiction
  * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
  * @standard ISO-4217:2015 currency-codes
- * @standard ISO-8601-1:2019 date-time period
+ * @standard ISO-8601-1:2019 date-time period posted-at filed-at paid-at
  * @standard EN-16931:2017 §BG-23 vat-breakdown
  * @accounting OECD SAF-T tax-table
  * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls tax-position
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.1
  */
 const TaxCalculations: CollectionConfig = {
@@ -19,16 +33,13 @@ const TaxCalculations: CollectionConfig = {
     defaultColumns: ['calculationId', 'taxType', 'jurisdiction', 'period', 'taxAmount', 'status'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: roleScopedAccess('admin', 'accountant'),
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'calculationId', type: 'text', required: true, unique: true },
     {
       name: 'taxType',
@@ -84,6 +95,29 @@ const TaxCalculations: CollectionConfig = {
     { name: 'paymentDeadline', type: 'date' },
     { name: 'notes', type: 'textarea' },
   ],
+  // Slice ZZ: full canonical hook chain wired per banner declarations.
+  // Was: empty hooks (banner promised audit-trail, no implementation).
+  hooks: {
+    beforeValidate: [autoPopulateHost],
+    beforeChange: [
+      validateNotLocked,
+      autoPopulateCreatedBy,
+      // ISO-8601 status-transition timestamps.
+      autoSetTimestamp(
+        'postedAt',
+        (data) => (data as { status?: string }).status === 'posted',
+      ),
+      autoSetTimestamp(
+        'filedAt',
+        (data) => (data as { status?: string }).status === 'filed',
+      ),
+      autoSetTimestamp(
+        'paidAt',
+        (data) => (data as { status?: string }).status === 'paid',
+      ),
+    ],
+    afterChange: [auditTrailAfterChange('tax-calculations')],
+  },
   timestamps: true,
 };
 

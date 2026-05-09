@@ -54,7 +54,7 @@ export class AllowanceCalculator {
       return {
         bucketName: bucket.name,
         amount: allowance,
-        percentage: (rate * 100).toFixed(2) as any,
+        percentage: parseFloat((rate * 100).toFixed(2)),
         methodology: `${bucket.invoiceCount} invoices × ${(rate * 100).toFixed(1)}% = $${(allowance / 100).toFixed(2)}`,
       }
     })
@@ -103,12 +103,12 @@ export class AllowanceCalculator {
       totalAR,
       allowance,
       netAR: totalAR - allowance,
-      coverage: (lossRatio * 100).toFixed(2) as any,
+      coverage: parseFloat((lossRatio * 100).toFixed(2)),
       results: [
         {
           bucketName: 'All A/R',
           amount: allowance,
-          percentage: (lossRatio * 100).toFixed(2) as any,
+          percentage: parseFloat((lossRatio * 100).toFixed(2)),
           methodology: `Historical loss ratio: ${(lossRatio * 100).toFixed(2)}%`,
         },
       ],

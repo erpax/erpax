@@ -11,7 +11,14 @@
  *   const report = await generateCOGSCalculation({ hostId, periodStart, periodEnd })
  *
  * Safe to `git rm src/plugins/accounting/collections/COGSCalculation.ts` once verified.
+ *
+ * @accounting IFRS IAS-2 inventories cost-of-inventories
+ * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §4.2
  */
-const Stub: any = { slug: 'deprecated-report-stub-cogscalculation', fields: [] }
+import type { CollectionConfig } from 'payload'
+
+const Stub: CollectionConfig = { slug: 'deprecated-report-stub-cogscalculation', fields: [] }
 export default Stub
-export const COGSCalculation: any = Stub
+export const COGSCalculation: CollectionConfig = Stub

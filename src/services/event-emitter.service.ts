@@ -154,7 +154,7 @@ class EventEmitterService {
    */
   private async emitErrorEvent(
     originalEvent: AllDomainEvents,
-    error: any
+    error: unknown
   ): Promise<void> {
     // Create error event
     const errorEvent: AllDomainEvents = {
@@ -245,20 +245,20 @@ export async function emitEvent<_T extends DomainEvent>(
   eventType: string,
   tenantId: string,
   userId: string,
-  payload: any,
+  payload: Record<string, unknown>,
   aggregateId?: string,
   aggregateType?: string
 ): Promise<void> {
-  const event: any = {
+  const event = {
     eventId: uuid(),
     eventType,
     tenantId,
-    aggregateId: aggregateId || payload.id || uuid(),
+    aggregateId: aggregateId || (payload.id as string | undefined) || uuid(),
     aggregateType: aggregateType || 'invoice',
     timestamp: new Date(),
     userId,
     payload,
   };
 
-  await eventEmitter.emit(event);
+  await eventEmitter.emit(event as unknown as AllDomainEvents);
 }

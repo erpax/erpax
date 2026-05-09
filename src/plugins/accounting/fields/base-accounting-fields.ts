@@ -43,18 +43,34 @@ export const glAccountField = (required = false): Field[] => [
   },
 ];
 
+// Canonical regional defaults & SUPPORTED_CURRENCIES live in
+// `@/config/regional-defaults`. Re-exported here so existing collection-side
+// imports keep working while the canonical module remains the single source
+// of truth (Slice WW: regional-defaults consolidation).
+export { SUPPORTED_CURRENCIES, currencyOptions, DEFAULT_CURRENCY } from '@/config/regional-defaults';
+import { currencyOptions as canonicalCurrencyOptions, DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY } from '@/config/regional-defaults';
+
 /**
- * Currency field (10 currencies)
+ * Currency select field. Pass a custom `name` for FX-pair fields like
+ * `fromCurrency` / `toCurrency`; defaults to `currency` for the typical
+ * single-currency case. Default value is the canonical `DEFAULT_CURRENCY`
+ * (EUR by house default, env-overridable via `ERPAX_DEFAULT_CURRENCY`).
  */
-export const currencyField = (defaultValue = 'EUR'): Field => ({
-  name: 'currency',
-  type: 'select',
-  defaultValue,
-  options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({
-    label: c,
-    value: c,
-  })),
-});
+export const currencyField = (
+  defaultValueOrOptions: string | { name?: string; defaultValue?: string; required?: boolean } = CANON_DEFAULT_CURRENCY,
+): Field => {
+  const opts =
+    typeof defaultValueOrOptions === 'string'
+      ? { defaultValue: defaultValueOrOptions }
+      : defaultValueOrOptions;
+  return {
+    name: opts.name ?? 'currency',
+    type: 'select',
+    defaultValue: opts.defaultValue ?? CANON_DEFAULT_CURRENCY,
+    ...(opts.required ? { required: true } : {}),
+    options: [...canonicalCurrencyOptions],
+  };
+};
 
 /**
  * Status field with common accounting statuses

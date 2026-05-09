@@ -11,7 +11,14 @@
  *   const report = await generateFinancialRatios({ hostId, periodStart, periodEnd })
  *
  * Safe to `git rm src/plugins/accounting/collections/FinancialRatios.ts` once verified.
+ *
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @quality ISO-25010 functional-suitability derived-metric
+ * @see docs/STANDARDS.md §4.2
  */
-const Stub: any = { slug: 'deprecated-report-stub-financialratios', fields: [] }
+import type { CollectionConfig } from 'payload'
+
+const Stub: CollectionConfig = { slug: 'deprecated-report-stub-financialratios', fields: [] }
 export default Stub
-export const FinancialRatios: any = Stub
+export const FinancialRatios: CollectionConfig = Stub

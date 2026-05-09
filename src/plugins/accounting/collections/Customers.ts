@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { classifyTaxId } from '@/hooks/classifyTaxId'
 
 /**
  * Customers — sale-side party master.
@@ -31,6 +32,12 @@ export const Customers: CollectionConfig = {
   },
   hooks: {
     beforeValidate: [autoPopulateHost],
+    beforeChange: [
+      // Country-context: classify the VAT/Tax-ID against the per-country
+      // regex registry so downstream code (invoice e-invoice routing,
+      // VIES gating, sanctions screening) branches off a normalised label.
+      classifyTaxId({ taxIdField: 'tax.vatNumber', countryField: 'country', labelField: 'tax.vatNumberType' }),
+    ],
   },
   fields: [
     // Identity — `name` and `code` kept at top level so `useAsTitle` and
@@ -40,6 +47,8 @@ export const Customers: CollectionConfig = {
       admin: { description: 'Unique customer code (e.g., CUST-0001)' } },
     { name: 'name', type: 'text', required: true, index: true,
       admin: { description: 'Display name' } },
+    { name: 'country', type: 'text', index: true,
+      admin: { description: 'ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, e-invoicing).' } },
     {
       type: 'group',
       name: 'identity',
@@ -92,7 +101,9 @@ export const Customers: CollectionConfig = {
       label: 'Tax',
       fields: [
         { name: 'vatNumber', type: 'text', index: true,
-          admin: { description: 'VAT / Tax ID (EN 16931 BT-31)' } },
+          admin: { description: 'VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.' } },
+        { name: 'vatNumberType', type: 'text', admin: { readOnly: true,
+          description: 'Auto-stamped — e.g. "VAT (BG)", "EIN", "GSTIN", "EIK / Bulstat".' } },
         { name: 'taxExempt', type: 'checkbox', defaultValue: false,
           admin: { description: 'Tax-exempt customer (e.g., resale certificate)' } },
         { name: 'taxExemptionCertificate', type: 'text',

@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
 
 /**
  * Tax Codes — tax-rate master.

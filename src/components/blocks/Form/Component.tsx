@@ -15,6 +15,15 @@ import { getPayloadSdk } from '@/utilities/payloadSdk'
 
 import { fields } from './fields'
 
+/**
+ * Payload form-builder block renderer — react-hook-form-driven dynamic field rendering.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @rfc 5322 internet-message-format email-field-validation
+ * @quality ISO-25010 usability form-rendering
+ * @see docs/STANDARDS.md §4.3
+ */
+
 export type FormBlockType = {
   blockName?: string
   blockType?: 'formBlock'
@@ -50,6 +59,7 @@ export const FormBlock: React.FC<
   const [isLoading, setIsLoading] = useState(false)
   const [hasSubmitted, setHasSubmitted] = useState<boolean>()
   const [error, setError] = useState<{ message: string; status?: string } | undefined>()
+
   const router = useRouter()
   const t = useTranslations()
 
@@ -142,7 +152,7 @@ export const FormBlock: React.FC<
                 {formFromProps &&
                   formFromProps.fields &&
                   formFromProps.fields?.map((field, index) => {
-                    const Field: React.FC<any> = fields?.[field.blockType as keyof typeof fields]
+                    const Field: React.FC<Record<string, unknown>> = fields?.[field.blockType as keyof typeof fields]
                     if (Field) {
                       return (
                         <div className="mb-6 last:mb-0" key={index}>

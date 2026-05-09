@@ -15,11 +15,11 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-import type { CollectionAfterChangeHook } from 'payload'
+import type { CollectionAfterChangeHook, PayloadRequest } from 'payload'
 
 /** @deprecated Slice KKK: zero callers across `src/`. Kept for the type vocabulary only. */
 export interface GLPostingData {
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 /** @deprecated Slice KKK: zero callers. Used to be the contract for `createAccountingHook` handlers. */
@@ -38,7 +38,7 @@ export type HookHandler = (hostId: string, data: GLPostingData) => Promise<void>
 export const createAccountingHook = (
   serviceName: string,
   handler: HookHandler,
-  shouldProcess?: (doc: any, operation: string) => boolean,
+  shouldProcess?: (doc: GLPostingData, operation: string) => boolean,
 ): CollectionAfterChangeHook => {
   return async ({ doc, req, operation }) => {
     // Default: process on create and update
@@ -81,13 +81,16 @@ export const createAccountingHook = (
  * legacy `undefined` path is gone (it was
  * never wired; see CHANGELOG Slice PP).
  */
-export const ensureHostId = (data: any, req: any) => {
+export const ensureHostId = <T extends Record<string, unknown> | null | undefined>(
+  data: T,
+  req: Pick<PayloadRequest, 'user'> | null | undefined,
+): T => {
   if (!data) return data;
-  if (data.tenant) return data;
-  const tenantsArr = req?.user?.tenants as Array<{ tenant?: number | string }> | undefined;
+  if ((data as Record<string, unknown>).tenant) return data;
+  const tenantsArr = (req?.user as { tenants?: Array<{ tenant?: number | string }> } | null | undefined)?.tenants;
   const userTenant = tenantsArr?.[0]?.tenant;
   if (userTenant !== undefined && userTenant !== null) {
-    data.tenant = userTenant;
+    (data as Record<string, unknown>).tenant = userTenant;
   }
   return data;
 };
@@ -99,8 +102,8 @@ export const ensureHostId = (data: any, req: any) => {
  * computation lives in `journalEntryService` (which IS used). Delete
  * after the next maintenance pass.
  */
-export const calculateTotal = (items: any[], amountField = 'amount'): number => {
-  return items ? items.reduce((sum, item) => sum + (item?.[amountField] || 0), 0) : 0;
+export const calculateTotal = (items: Array<Record<string, unknown>>, amountField = 'amount'): number => {
+  return items ? items.reduce((sum, item) => sum + (Number(item?.[amountField]) || 0), 0) : 0;
 };
 
 /**

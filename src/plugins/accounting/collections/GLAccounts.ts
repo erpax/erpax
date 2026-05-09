@@ -1,14 +1,29 @@
 /**
  * GL Accounts — Chart of Accounts.
  *
+ * Slice WW-cleanup (this turn): switched to canonical access predicates +
+ * field factories + autoPopulateHost beforeValidate. Removed dead
+ * `if (!data.tenant && undefined)` code (always-false condition).
+ * Added `role` field so the new `gl-account-resolver` can map canonical
+ * roles (cash / ar / revenue / etc.) to this tenant's actual accounts.
+ *
  * @standard ISO-4217:2015 currency-codes account-currency
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting US-GAAP ASC-210 balance-sheet
  * @accounting OECD SAF-T §2 general-ledger-accounts
+ * @audit ISO-19011:2018 audit-trail chart-of-accounts-change
+ * @compliance SOX §404 internal-controls
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.2
+ * @see src/services/gl-account-resolver.ts
  */
 
 import type { CollectionConfig } from 'payload'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import { multiTenancyField, currencyField, statusField } from '../fields/base-accounting-fields'
+
 const GLAccounts: CollectionConfig = {
   slug: 'gl-accounts',
   labels: {
@@ -17,39 +32,24 @@ const GLAccounts: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'accountNumber',
-    defaultColumns: ['accountNumber', 'accountName', 'accountType', 'balance', 'status'],
+    defaultColumns: ['accountNumber', 'accountName', 'accountType', 'role', 'balance', 'status'],
     preview: (doc) => `${doc.accountNumber} - ${doc.accountName}`,
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return {
-        'hostId.id': {
-          equals: (req.user?.tenants?.[0]?.tenant),
-        },
-      };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: roleScopedAccess('admin', 'accountant'),
+    delete: tenantAdmin,
   },
   fields: [
-    {
-      name: 'tenant',
-      type: 'relationship',
-      relationTo: 'tenants',
-      required: true,
-      admin: {
-        hidden: true,
-      },
-    },
+    multiTenancyField(),
     {
       name: 'accountNumber',
       type: 'text',
       required: true,
       unique: true,
       admin: {
-        description: 'Unique account code (e.g., 1000, 2100, 5001)',
+        description: 'Unique account code (e.g., 1000, 2100, 5001) — matches your jurisdiction\'s chart-of-accounts numbering.',
       },
     },
     {
@@ -69,6 +69,27 @@ const GLAccounts: CollectionConfig = {
         { label: 'Expense', value: 'expense' },
         { label: 'Gain/Loss', value: 'gain_loss' },
       ],
+    },
+    {
+      name: 'role',
+      type: 'select',
+      options: [
+        { label: 'Cash', value: 'cash' },
+        { label: 'Accounts Receivable (A/R)', value: 'ar' },
+        { label: 'Accounts Payable (A/P)', value: 'ap' },
+        { label: 'Inventory', value: 'inventory' },
+        { label: 'Revenue', value: 'revenue' },
+        { label: 'Cost of Goods Sold', value: 'cogs' },
+        { label: 'Expense', value: 'expense' },
+        { label: 'Sales Tax Payable', value: 'sales_tax_payable' },
+        { label: 'Input Tax Asset', value: 'input_tax_asset' },
+        { label: 'Deferred Revenue', value: 'deferred_revenue' },
+        { label: 'Subscription Revenue', value: 'subscription_revenue' },
+        { label: 'Refunds Payable', value: 'refunds_payable' },
+      ],
+      admin: {
+        description: 'Canonical accounting role — gl-posting handlers resolve this to the actual account ID via `resolveGlAccount`.',
+      },
     },
     {
       name: 'parentAccount',
@@ -108,34 +129,15 @@ const GLAccounts: CollectionConfig = {
         description: 'Balance in base currency',
       },
     },
-    {
-      name: 'currency',
-      type: 'select',
-      defaultValue: 'EUR',
-      options: [
-        { label: 'EUR', value: 'EUR' },
-        { label: 'GBP', value: 'GBP' },
-        { label: 'JPY', value: 'JPY' },
-        { label: 'CNY', value: 'CNY' },
-        { label: 'INR', value: 'INR' },
-        { label: 'CAD', value: 'CAD' },
-        { label: 'AUD', value: 'AUD' },
-        { label: 'CHF', value: 'CHF' },
-        { label: 'SGD', value: 'SGD' },
-        { label: 'HKD', value: 'HKD' },
-        { label: 'USD', value: 'USD' },
-      ],
-    },
-    {
-      name: 'status',
-      type: 'select',
-      defaultValue: 'active',
-      options: [
+    currencyField(),
+    statusField(
+      [
         { label: 'Active', value: 'active' },
         { label: 'Inactive', value: 'inactive' },
         { label: 'Locked', value: 'locked' },
       ],
-    },
+      'active',
+    ),
     {
       name: 'description',
       type: 'textarea',
@@ -157,16 +159,10 @@ const GLAccounts: CollectionConfig = {
     },
   ],
   hooks: {
-    beforeChange: [
-      async ({ data, req: _req }) => {
-        if (!data.tenant && undefined) {
-          data.tenant = undefined;
-        }
-        return data;
-      },
-    ],
+    beforeValidate: [autoPopulateHost],
+    afterChange: [auditTrailAfterChange('gl-accounts')],
   },
   timestamps: true,
-};
+}
 
-export default GLAccounts;
+export default GLAccounts

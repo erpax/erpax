@@ -8,12 +8,12 @@
  * @see docs/STANDARDS.md §4.2
  */
 
-import type { CollectionConfig, CollectionBeforeChangeHook } from 'payload'
+import type { CollectionConfig, CollectionBeforeChangeHook, Field } from 'payload'
 // Slice PPP: dropped `ensureHostId` import — duplicated `autoPopulateHost`
-// from `@/plugins/hooks/common.ts` (both populate `data.tenant` from
+// from `@/hooks/` (both populate `data.tenant` from
 // `req.user.tenants[0].tenant`). Use the canonical hook from the
-// shared @/plugins/hooks barrel.
-import { autoPopulateHost } from '@/plugins/hooks'
+// shared @/hooks/* per-file modules.
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
 
 export interface AccountingCollectionOptions {
   slug: string;
@@ -29,7 +29,7 @@ export interface AccountingCollectionOptions {
  */
 export const createAccountingCollection = (
   options: AccountingCollectionOptions,
-  fieldsFactory: () => any[],
+  fieldsFactory: () => Field[],
 ): Partial<CollectionConfig> => {
   return {
     slug: options.slug,
@@ -74,7 +74,7 @@ export const createAccountingCollection = (
  */
 export const createCalculatedField = (
   fieldName: string,
-  calculator: (data: any) => number,
+  calculator: (data: Record<string, unknown>) => number,
   description?: string,
 ) => {
   return {
@@ -103,7 +103,7 @@ export const createGLAccountFields = (accounts: { name: string; description: str
  * Create line item array field with standard structure
  */
 export const createLineItemArray = (
-  lineItemFields: { name: string; type: string; required?: boolean; options?: any }[],
+  lineItemFields: { name: string; type: string; required?: boolean; options?: unknown }[],
 ) => {
   return {
     name: 'lineItems',

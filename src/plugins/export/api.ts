@@ -74,8 +74,8 @@ export const exportBalanceSheet = async (req: Request, res: Response) => {
       generatedAt: result.generatedAt,
       downloadUrl: `/api/export/download/${result.fileName}`,
     })
-  } catch (error: any) {
-    res.status(500).json({ error: error.message })
+  } catch (error: unknown) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
   }
 }
 
@@ -125,8 +125,8 @@ export const exportIncomeStatement = async (req: Request, res: Response) => {
       generatedAt: result.generatedAt,
       downloadUrl: `/api/export/download/${result.fileName}`,
     })
-  } catch (error: any) {
-    res.status(500).json({ error: error.message })
+  } catch (error: unknown) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
   }
 }
 
@@ -176,8 +176,8 @@ export const exportCashFlowStatement = async (req: Request, res: Response) => {
       generatedAt: result.generatedAt,
       downloadUrl: `/api/export/download/${result.fileName}`,
     })
-  } catch (error: any) {
-    res.status(500).json({ error: error.message })
+  } catch (error: unknown) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
   }
 }
 
@@ -203,8 +203,8 @@ export const downloadExport = async (req: Request, res: Response) => {
     const mimeType = fileName.endsWith('.pdf') ? 'application/pdf' : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 
     res.download(filePath, fileName, { type: mimeType })
-  } catch (error: any) {
-    res.status(500).json({ error: error.message })
+  } catch (error: unknown) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
   }
 }
 
@@ -236,8 +236,8 @@ export const getExportStatus = async (req: Request, res: Response) => {
       modifiedAt: stats.mtime,
       format: fileName.endsWith('.pdf') ? 'pdf' : 'excel',
     })
-  } catch (error: any) {
-    res.status(500).json({ error: error.message })
+  } catch (error: unknown) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
   }
 }
 
@@ -254,7 +254,7 @@ export const generateAllStatements = async (req: Request, res: Response) => {
     }
 
     const dateObj = new Date(asOfDate)
-    const results: any = {}
+    const results: Record<string, unknown> = {}
 
     // Generate Balance Sheet
     const bsGenerator = new BalanceSheetGenerator(data, dateObj)
@@ -317,7 +317,7 @@ export const generateAllStatements = async (req: Request, res: Response) => {
       format,
       generatedAt: new Date(),
     })
-  } catch (error: any) {
-    res.status(500).json({ error: error.message })
+  } catch (error: unknown) {
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) })
   }
 }

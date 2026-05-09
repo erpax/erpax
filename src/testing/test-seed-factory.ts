@@ -132,7 +132,7 @@ export abstract class TestSeedFactory {
    * Override in subclasses for additional custom validation
    * @throws Error if validation fails
    */
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     try {
       // Get config discovery instance
       const discovery = getDiscovery();
@@ -161,7 +161,7 @@ export abstract class TestSeedFactory {
    * Create document and track ID
    * Validates data against actual Payload configuration
    */
-  protected async createDocument<T extends Record<string, any>>(
+  protected async createDocument<T extends Record<string, unknown>>(
     collection: string,
     data: T,
   ): Promise<T & { id: string }> {
@@ -182,7 +182,7 @@ export abstract class TestSeedFactory {
   /**
    * Create multiple documents
    */
-  protected async createDocuments<T extends Record<string, any>>(
+  protected async createDocuments<T extends Record<string, unknown>>(
     collection: string,
     dataArray: T[],
   ): Promise<(T & { id: string })[]> {
@@ -199,7 +199,7 @@ export abstract class TestSeedFactory {
   /**
    * Query documents (useful for relationships)
    */
-  protected async queryDocuments(collection: string, query?: Record<string, any>) {
+  protected async queryDocuments(collection: string, query?: Record<string, unknown>) {
     return await this.payload.find({
       collection,
       where: query,

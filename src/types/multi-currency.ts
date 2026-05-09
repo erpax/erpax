@@ -1,16 +1,24 @@
 /**
  * Multi-Currency types — FX rate, conversion, gain/loss, revaluation.
  *
+ * `Currency` is derived from {@link SUPPORTED_CURRENCIES} in
+ * `@/config/regional-defaults` — single source of truth for the
+ * supported ISO 4217 vocabulary and its ordering invariant
+ * (EUR first, USD last). Add a new currency there and this type
+ * widens automatically.
+ *
  * @standard ISO-4217:2015 currency-codes
  * @standard ISO-8601-1:2019 date-time rate-date
- * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
  * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
- * @accounting US-GAAP ASC-830 foreign-currency-matters
+ * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
  * @audit ISO-19011:2018 audit-trail
- * @see docs/STANDARDS.md §4.2
+ * @see docs/STANDARDS.md §4.1 §4.2
+ * @see src/config/regional-defaults.ts
  */
 
-export type Currency = 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD';
+export type { Currency } from '@/config/regional-defaults';
+import type { Currency } from '@/config/regional-defaults';
 
 export interface ExchangeRate {
   id: string;
@@ -166,8 +174,8 @@ export interface MultiCurrencyReportPackage {
   companyName: string;
 
   trialBalance: MultiCurrencyTrialBalance;
-  balanceSheet: any; // Same structure, all values in base currency
-  incomeStatement: any; // Same structure, all values in base currency
+  balanceSheet: Record<string, unknown>; // Same structure, all values in base currency
+  incomeStatement: Record<string, unknown>; // Same structure, all values in base currency
 
   currencyGainLosses: CurrencyGainLoss[];
   revaluations: CurrencyRevaluation[];

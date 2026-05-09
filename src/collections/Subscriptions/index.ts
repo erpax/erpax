@@ -4,6 +4,8 @@ import {
   encryptSubscriptionData,
   decryptSubscriptionData,
 } from './hooks/encryptSensitiveFields'
+import { emitSubscriptionLifecycleEvents } from './hooks/emitLifecycleEvents'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 /**
  * Subscriptions — tenant-to-plan binding with period state and Stripe sync.
@@ -33,6 +35,11 @@ export const Subscriptions: CollectionConfig = {
   hooks: {
     beforeChange: [encryptSubscriptionData],
     afterRead: [decryptSubscriptionData],
+    // Slice ZZ: every status transition emits a domain event so the
+    // canonical `glPostingService` can post the IFRS 15 / ASC 606
+    // deferred-revenue / recognised-revenue / refund GL entries.
+    // Plus structured audit-trail emission per SOX §404.
+    afterChange: [emitSubscriptionLifecycleEvents, auditTrailAfterChange('subscriptions')],
   },
   fields: [
     {

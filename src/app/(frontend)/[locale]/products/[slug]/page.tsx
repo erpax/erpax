@@ -23,6 +23,8 @@ import React, { cache } from 'react'
 import { routing } from '@/i18n/routing'
 import type { Product } from '@/payload-types'
 import { generateMeta } from '@/utilities/generateMeta'
+import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
+import { getProductPrice, formatProductPrice } from '@/utilities/productPrice'
 import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
@@ -120,12 +122,20 @@ export default async function ProductPage({ params: paramsPromise }: Args) {
         </Link>
       </p>
       <h1 className="mb-4 text-3xl font-semibold tracking-tight">{product.title}</h1>
-      {typeof product.priceInUSD === 'number' && (
-        <p className="mb-8 text-xl tabular-nums text-muted-foreground">
-          ${product.priceInUSD.toFixed(2)}{' '}
-          <span className="text-sm">{t('currency-usd')}</span>
-        </p>
-      )}
+      {(() => {
+        // Currency-agnostic price display: pick whatever the storage offers,
+        // format with the active locale or the canonical default.
+        const price = getProductPrice(
+          product as unknown as Record<string, unknown>,
+          DEFAULT_CURRENCY,
+        )
+        const priceLocale = typeof locale === 'string' && locale.length > 0 ? locale : DEFAULT_LOCALE
+        return price ? (
+          <p className="mb-8 text-xl tabular-nums text-muted-foreground">
+            {formatProductPrice(price, priceLocale)}
+          </p>
+        ) : null
+      })()}
       <p className="text-muted-foreground text-sm">
         {t('product-checkout-note')}
       </p>

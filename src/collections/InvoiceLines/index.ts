@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 
 /**
  * Invoice Lines — line items (BG-25) for an invoice header.
@@ -32,7 +32,7 @@ export const InvoiceLines: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: invoiceLinesBeforeValidate,
   },
   fields: [
     {

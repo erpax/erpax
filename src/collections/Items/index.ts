@@ -1,8 +1,8 @@
 import { CollectionConfig } from 'payload'
-import { itemAccountingHook } from '@/plugins/accounting/hooks'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { itemsBeforeValidate } from './hooks/beforeValidate'
+import { itemsAfterChange } from './hooks/afterChange'
 
 /**
  * Items — sellable / purchasable inventory rows with GL posting.
@@ -32,8 +32,8 @@ export const Items: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateHost],
-    afterChange: [itemAccountingHook],
+    beforeValidate: itemsBeforeValidate,
+    afterChange: itemsAfterChange,
   },
   fields: [
     {

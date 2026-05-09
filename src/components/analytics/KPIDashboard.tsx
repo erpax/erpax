@@ -1,11 +1,24 @@
 import React from 'react';
 import { FinancialAnalysisEngine } from '../../plugins/accounting/financial-analysis';
 import { formatCurrency } from '../Dashboard';
+import type { AccountLine, BalanceSheetData, IncomeStatementData } from './types';
+
+/**
+ * Top-level KPI grid — derives ratios + health score from balance sheet + income statement.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-4217:2015 currency-codes monetary-display
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @quality ISO-25010 functional-suitability derived-metric
+ * @see docs/STANDARDS.md §4.2
+ */
+
 
 interface KPIDashboardProps {
   data: {
-    balanceSheet: any;
-    incomeStatement: any;
+    balanceSheet: BalanceSheetData;
+    incomeStatement: IncomeStatementData;
   };
 }
 
@@ -20,32 +33,32 @@ const KPIDashboard: React.FC<KPIDashboardProps> = ({ data }) => {
   const financialData = {
     asOfDate: data.balanceSheet.asOfDate,
     assets:
-      (data.balanceSheet.assets || []).reduce((sum: number, a: any) => sum + a.balance, 0) * 100,
+      (data.balanceSheet.assets || []).reduce((sum: number, a: AccountLine) => sum + a.balance, 0) * 100,
     currentAssets:
       (data.balanceSheet.assets || [])
-        .filter((a: any) => ['Cash', 'Accounts Receivable', 'Inventory'].includes(a.accountName))
-        .reduce((sum: number, a: any) => sum + a.balance, 0) * 100,
+        .filter((a: AccountLine) => ['Cash', 'Accounts Receivable', 'Inventory'].includes(a.accountName))
+        .reduce((sum: number, a: AccountLine) => sum + a.balance, 0) * 100,
     inventory:
       (data.balanceSheet.assets || [])
-        .find((a: any) => a.accountName === 'Inventory')?.balance || 0 * 100,
+        .find((a: AccountLine) => a.accountName === 'Inventory')?.balance || 0 * 100,
     receivables:
       (data.balanceSheet.assets || [])
-        .find((a: any) => a.accountName === 'Accounts Receivable')?.balance || 0 * 100,
+        .find((a: AccountLine) => a.accountName === 'Accounts Receivable')?.balance || 0 * 100,
     liabilities:
-      (data.balanceSheet.liabilities || []).reduce((sum: number, l: any) => sum + l.balance, 0) *
+      (data.balanceSheet.liabilities || []).reduce((sum: number, l: AccountLine) => sum + l.balance, 0) *
       100,
     currentLiabilities:
       (data.balanceSheet.liabilities || [])
-        .filter((l: any) => ['Accounts Payable', 'Short-term Debt'].includes(l.accountName))
-        .reduce((sum: number, l: any) => sum + l.balance, 0) * 100,
+        .filter((l: AccountLine) => ['Accounts Payable', 'Short-term Debt'].includes(l.accountName))
+        .reduce((sum: number, l: AccountLine) => sum + l.balance, 0) * 100,
     payables:
       (data.balanceSheet.liabilities || [])
-        .find((l: any) => l.accountName === 'Accounts Payable')?.balance || 0 * 100,
+        .find((l: AccountLine) => l.accountName === 'Accounts Payable')?.balance || 0 * 100,
     equity:
-      (data.balanceSheet.equity || []).reduce((sum: number, e: any) => sum + e.balance, 0) * 100,
+      (data.balanceSheet.equity || []).reduce((sum: number, e: AccountLine) => sum + e.balance, 0) * 100,
     retainedEarnings:
       (data.balanceSheet.equity || [])
-        .find((e: any) => e.accountName === 'Retained Earnings')?.balance || 0 * 100,
+        .find((e: AccountLine) => e.accountName === 'Retained Earnings')?.balance || 0 * 100,
     revenue: data.incomeStatement.totalRevenues * 100,
     cogs: data.incomeStatement.totalCOGS * 100,
     grossProfit: data.incomeStatement.grossProfit * 100,
@@ -54,7 +67,7 @@ const KPIDashboard: React.FC<KPIDashboardProps> = ({ data }) => {
     netIncome: data.incomeStatement.netIncome * 100,
     cash:
       (data.balanceSheet.assets || [])
-        .find((a: any) => a.accountName === 'Cash in Bank')?.balance || 0 * 100,
+        .find((a: AccountLine) => a.accountName === 'Cash in Bank')?.balance || 0 * 100,
     depreciation: 0,
     interestExpense: 0,
   };

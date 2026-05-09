@@ -11,7 +11,14 @@
  *   const report = await generateAPAgingReport({ hostId, periodStart, periodEnd })
  *
  * Safe to `git rm src/plugins/accounting/collections/APAgingReport.ts` once verified.
+ *
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-405 liabilities accounts-payable
+ * @audit ISO-19011:2018 audit-trail aging-report
+ * @see docs/STANDARDS.md §4.2
  */
-const Stub: any = { slug: 'deprecated-report-stub-apagingreport', fields: [] }
+import type { CollectionConfig } from 'payload'
+
+const Stub: CollectionConfig = { slug: 'deprecated-report-stub-apagingreport', fields: [] }
 export default Stub
-export const APAgingReport: any = Stub
+export const APAgingReport: CollectionConfig = Stub

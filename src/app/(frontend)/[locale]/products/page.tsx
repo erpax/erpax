@@ -19,6 +19,8 @@ import React from 'react'
 
 import type { Product } from '@/payload-types'
 import { buildPublishedProductsWhere } from '@/utilities/siteTenantWhere'
+import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
+import { getProductPrice, formatProductPrice } from '@/utilities/productPrice'
 
 export const metadata: Metadata = {
   title: 'Products',
@@ -33,6 +35,8 @@ export default async function ProductsIndexPage({
   const { locale } = await params
   const payload = await getPayload({ config: configPromise })
 
+  // Currency-agnostic: pull every `priceIn<CCY>` column the storage offers
+  // and let `getProductPrice` pick the right one for the active locale.
   const result = await payload.find({
     collection: 'products',
     draft: false,
@@ -41,34 +45,33 @@ export default async function ProductsIndexPage({
     pagination: false,
     locale,
     where: buildPublishedProductsWhere(),
-    select: {
-      title: true,
-      slug: true,
-      priceInUSD: true,
-    },
   })
 
-  const products = result.docs as Pick<Product, 'id' | 'title' | 'slug' | 'priceInUSD'>[]
+  const products = result.docs as Array<Product>
+  const priceLocale = typeof locale === 'string' && locale.length > 0 ? locale : DEFAULT_LOCALE
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
       <h1 className="mb-8 text-3xl font-semibold tracking-tight">{t('products')}</h1>
       <ul className="divide-y divide-border">
-        {products.map((p) => (
-          <li key={p.id} className="flex items-center justify-between py-4">
-            <Link
-              className="font-medium text-foreground hover:underline"
-              href={`/${locale}/products/${encodeURIComponent(p.slug)}`}
-            >
-              {p.title}
-            </Link>
-            {typeof p.priceInUSD === 'number' && (
-              <span className="text-muted-foreground tabular-nums">
-                ${p.priceInUSD.toFixed(2)}
-              </span>
-            )}
-          </li>
-        ))}
+        {products.map((p) => {
+          const price = getProductPrice(p as unknown as Record<string, unknown>, DEFAULT_CURRENCY)
+          return (
+            <li key={p.id} className="flex items-center justify-between py-4">
+              <Link
+                className="font-medium text-foreground hover:underline"
+                href={`/${locale}/products/${encodeURIComponent(p.slug)}`}
+              >
+                {p.title}
+              </Link>
+              {price && (
+                <span className="text-muted-foreground tabular-nums">
+                  {formatProductPrice(price, priceLocale)}
+                </span>
+              )}
+            </li>
+          )
+        })}
       </ul>
       {products.length === 0 && (
         <p className="text-muted-foreground">{t('no-published-products')}</p>

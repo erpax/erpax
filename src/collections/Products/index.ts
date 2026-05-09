@@ -65,7 +65,10 @@ export const ProductsCollection: CollectionOverride = ({ defaultCollection }) =>
     variants: true,
     enableVariants: true,
     gallery: true,
-    priceInUSD: true,
+    // Currency-agnostic: pull the canonical EUR column the ecommerce plugin
+    // generates per Slice WW (single supported currency = EUR). Application
+    // code reads via `getProductPrice()` from `@/utilities/productPrice`.
+    priceInEUR: true,
     inventory: true,
     meta: true,
   },

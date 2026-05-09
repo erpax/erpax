@@ -1,14 +1,9 @@
 import { CollectionConfig } from 'payload'
-// Slice PPP: arAgingHook + apAgingHook removed — they delegated to
-// services that don't exist in `src/services/` (silent no-ops). Aging
-// is now a service-generated DTO via `financialReportingService` per
-// the `accounting/index.ts` design note. Re-add when AP/AR aging
-// services are built.
-import { paymentAccountingHook } from '@/plugins/accounting/hooks'
-import { validateNotLocked } from '@/plugins/accounting/utilities/period-lock'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { paymentsBeforeValidate } from './hooks/beforeValidate'
+import { paymentsBeforeChange } from './hooks/beforeChange'
+import { paymentsAfterChange } from './hooks/afterChange'
 
 /**
  * Payments — money-movement records with GL posting + period-lock guard.
@@ -49,9 +44,9 @@ export const Payments: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateHost],
-    beforeChange: [validateNotLocked],
-    afterChange: [paymentAccountingHook],
+    beforeValidate: paymentsBeforeValidate,
+    beforeChange: paymentsBeforeChange,
+    afterChange: paymentsAfterChange,
   },
   fields: [
     {

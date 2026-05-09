@@ -11,7 +11,7 @@ import { afterEach, beforeEach, expect, vi } from 'vitest'
 /**
  * Mock a Payload response for a document
  */
-export function mockPayloadDocument<T extends Record<string, any>>(
+export function mockPayloadDocument<T extends Record<string, unknown>>(
   overrides?: Partial<T>,
 ): T {
   return {
@@ -25,7 +25,7 @@ export function mockPayloadDocument<T extends Record<string, any>>(
 /**
  * Mock a Payload collection response
  */
-export function mockPayloadCollection<T extends Record<string, any>>(
+export function mockPayloadCollection<T extends Record<string, unknown>>(
   docs: T[] = [],
   total = docs.length,
 ) {
@@ -143,7 +143,7 @@ export function mockUnstableCache() {
 /**
  * Create a mock Tenant object
  */
-export function createMockTenant(overrides?: Record<string, any>) {
+export function createMockTenant(overrides?: Record<string, unknown>) {
   return {
     id: '1',
     name: 'Test Tenant',
@@ -155,7 +155,7 @@ export function createMockTenant(overrides?: Record<string, any>) {
 /**
  * Wait for async operation to complete
  */
-export async function waitFor(callback: () => any, timeout = 1000) {
+export async function waitFor(callback: () => unknown, timeout = 1000) {
   return new Promise((resolve, reject) => {
     const startTime = Date.now()
     const interval = setInterval(() => {

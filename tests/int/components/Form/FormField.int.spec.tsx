@@ -17,7 +17,7 @@ vi.mock('next-intl', () => ({
 
 // Mock UI components
 vi.mock('@/components/ui/label', () => ({
-  Label: ({ children, htmlFor, className }: any) => (
+  Label: ({ children, htmlFor, className }: Record<string, unknown>) => (
     <label htmlFor={htmlFor} className={className}>
       {children}
     </label>
@@ -25,11 +25,11 @@ vi.mock('@/components/ui/label', () => ({
 }))
 
 vi.mock('@/components/blocks/Form/Error', () => ({
-  Error: ({ name }: any) => <div data-testid={`error-${name}`}>Error for {name}</div>,
+  Error: ({ name }: Record<string, unknown>) => <div data-testid={`error-${name}`}>Error for {name}</div>,
 }))
 
 vi.mock('@/components/blocks/Form/Width', () => ({
-  Width: ({ children, width }: any) => (
+  Width: ({ children, width }: Record<string, unknown>) => (
     <div data-testid={`width-${width || 'default'}`}>{children}</div>
   ),
 }))

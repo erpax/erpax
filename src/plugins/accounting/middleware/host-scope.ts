@@ -21,10 +21,16 @@
  */
 
 import type { PayloadRequest } from 'payload'
+
+interface MiddlewareResponse {
+  status: (code: number) => { json: (body: unknown) => void }
+}
+type MiddlewareNext = () => void
+
 export const hostScopeMiddleware = async (
   req: PayloadRequest,
-  res: any,
-  next: any,
+  res: MiddlewareResponse,
+  next: MiddlewareNext,
 ): Promise<void> => {
   try {
     // Active tenant from canonical multi-tenant plugin shape.
@@ -64,10 +70,10 @@ export const validateHostScope = (
  * Enrich a GL entry with tenant context — automatically adds `tenant`
  * before posting. Field name updated to match the post-Slice-CCC schema.
  */
-export const enrichGLEntryWithHostContext = (
-  glEntry: any,
+export const enrichGLEntryWithHostContext = <T extends Record<string, unknown>>(
+  glEntry: T,
   tenantId: string | number,
-): any => {
+): T & { tenant: string | number; createdAt: Date } => {
   return {
     ...glEntry,
     tenant: tenantId,

@@ -1,6 +1,17 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { AccountingClient } from '../../sdk/accounting-client';
 
+/**
+ * Audit log viewer widget — read-only timeline of administrative actions.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @audit ISO-19011:2018 audit-trail viewer
+ * @compliance SOC-2 CC4.1 monitoring-and-evaluation
+ * @compliance SOX §404 internal-controls
+ * @see docs/STANDARDS.md §4.4
+ */
+
+
 interface AuditLogEntry {
   id: string;
   timestamp: string;
@@ -10,8 +21,8 @@ interface AuditLogEntry {
   resourceType: string;
   resourceId: string;
   changes?: {
-    before?: any;
-    after?: any;
+    before?: Record<string, unknown>;
+    after?: Record<string, unknown>;
   };
   ipAddress?: string;
 }

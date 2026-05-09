@@ -1,6 +1,8 @@
 import type { CollectionConfig } from 'payload'
 import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { classifyTaxId } from '@/hooks/classifyTaxId'
+import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
 
 /**
  * Vendors — purchase-side party master.
@@ -33,6 +35,12 @@ export const Vendors: CollectionConfig = {
   },
   hooks: {
     beforeValidate: [autoPopulateHost],
+    beforeChange: [
+      // Country-context: classify VAT/Tax-ID against the per-country regex registry.
+      classifyTaxId({ taxIdField: 'tax.vatNumber', countryField: 'country', labelField: 'tax.vatNumberType' }),
+      // Bank-side jurisdiction comes from the IBAN if `bank.bankCountryCode` is blank.
+      deriveCountryFromIban({ ibanField: 'bank.bankIban', countryField: 'bank.bankCountryCode' }),
+    ],
   },
   fields: [
     // Identity — `name` and `code` kept at top level so `useAsTitle` and
@@ -42,6 +50,8 @@ export const Vendors: CollectionConfig = {
       admin: { description: 'Unique vendor code (e.g., VEND-0001)' } },
     { name: 'name', type: 'text', required: true, index: true,
       admin: { description: 'Display name' } },
+    { name: 'country', type: 'text', index: true,
+      admin: { description: 'ISO 3166-1 alpha-2 — drives country-context API routing (VIES, business-registry lookup, sanctions screening, e-invoicing).' } },
     {
       type: 'group',
       name: 'identity',
@@ -94,7 +104,9 @@ export const Vendors: CollectionConfig = {
       label: 'Tax',
       fields: [
         { name: 'vatNumber', type: 'text', index: true,
-          admin: { description: 'VAT / Tax ID (EN 16931 BT-31)' } },
+          admin: { description: 'VAT / Tax ID (EN 16931 BT-31). Auto-classified against the per-country regex registry on save.' } },
+        { name: 'vatNumberType', type: 'text', admin: { readOnly: true,
+          description: 'Auto-stamped — e.g. "VAT (FR)", "EIN", "GSTIN", "EIK / Bulstat".' } },
         { name: 'taxExempt', type: 'checkbox', defaultValue: false,
           admin: { description: 'Tax-exempt vendor' } },
         { name: 'defaultTaxCode', type: 'relationship', relationTo: 'tax-codes',

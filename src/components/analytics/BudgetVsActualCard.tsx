@@ -2,10 +2,23 @@ import React from 'react';
 import { FinancialAnalysisEngine } from '../../plugins/accounting/financial-analysis';
 import { formatCurrency } from '../Dashboard';
 
+import type { IncomeStatementData } from './types';
+
+/**
+ * Budget vs Actual variance card — IFRS IAS-1 presentation overlay.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-4217:2015 currency-codes monetary-display
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-270 interim-reporting variance-analysis
+ * @see docs/STANDARDS.md §4.2
+ */
+
+
 interface BudgetVsActualCardProps {
   data: {
-    balanceSheet: any;
-    incomeStatement: any;
+    balanceSheet?: unknown;
+    incomeStatement: IncomeStatementData;
   };
 }
 

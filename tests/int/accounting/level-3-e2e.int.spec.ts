@@ -1,3 +1,4 @@
+import type { Config } from '@/payload-types'
 /**
  * Level 3 E2E Test Suite — complete accounting workflows.
  *
@@ -28,10 +29,10 @@ import { initializeDiscovery } from '@/testing';
  * Mock Payload for testing
  */
 class MockPayload implements Partial<Payload> {
-  private documents: Map<string, any[]> = new Map();
+  private documents: Map<string, Array<Record<string, unknown>>> = new Map();
   private idCounter: Map<string, number> = new Map();
 
-  config: any = {
+  config: Partial<Config> = {
     collections: [
       {
         slug: 'hosts',
@@ -225,7 +226,7 @@ class MockPayload implements Partial<Payload> {
     ],
   };
 
-  async create({ collection, data }: { collection: string; data: any }): Promise<any> {
+  async create({ collection, data }: { collection: string; data: Record<string, unknown> }): Promise<unknown> {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, []);
     }
@@ -238,7 +239,7 @@ class MockPayload implements Partial<Payload> {
     return doc;
   }
 
-  async find({ collection, where }: { collection: string; where?: any }): Promise<any> {
+  async find({ collection, where }: { collection: string; where?: Record<string, unknown> }): Promise<unknown> {
     const docs = this.documents.get(collection) || [];
     if (!where) return { docs };
 
@@ -303,7 +304,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -335,7 +336,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const customers = await payload.find({ collection: 'customers', where: { tenant: host.id } });
@@ -368,7 +369,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const entries = await payload.find({ collection: 'journal-entries', where: { tenant: host.id } });
@@ -400,7 +401,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const trials = await payload.find({ collection: 'trial-balances', where: { tenant: host.id } });
@@ -434,7 +435,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const statements = await payload.find({
@@ -473,7 +474,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const reconsProperty = await payload.find({
@@ -495,7 +496,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -510,7 +511,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       await seed.seed();
 
       const entities = await payload.find({ collection: 'hosts', where: { parentHostId: parent.id } });
@@ -527,7 +528,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       await seed.seed();
 
       const icTxs = await payload.find({ collection: 'intercompany-transactions' });
@@ -544,7 +545,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       await seed.seed();
 
       const eliminations = await payload.find({ collection: 'consolidation-eliminations' });
@@ -561,7 +562,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       await seed.seed();
 
       const trials = await payload.find({ collection: 'trial-balances', where: { tenant: parent.id } });
@@ -595,7 +596,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const entries = await payload.find({ collection: 'journal-entries', where: { tenant: host.id } });
@@ -628,7 +629,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const adjustments = await payload.find({
@@ -665,7 +666,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const ppas = await payload.find({
@@ -703,7 +704,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const entries = await payload.find({ collection: 'journal-entries', where: { tenant: host.id } });
@@ -735,7 +736,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const failures = await payload.find({
@@ -772,7 +773,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       const result = await seed.seed();
 
       const bulkEntries = await payload.find({ collection: 'journal-entries', where: { tenant: host.id } });
@@ -784,7 +785,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
 
   describe('Level3SeedSuite', () => {
     it('should run all seeds and aggregate results', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -794,7 +795,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should create host and GL accounts if missing', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       await seed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
@@ -805,7 +806,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should track created IDs with set-based deduplication', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       const result = await seed.seed();
 
       expect(result.collections).toBeDefined();
@@ -817,7 +818,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should cleanup cascade delete in reverse order', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       await seed.seed();
 
       const result = await seed.cleanup();
@@ -830,7 +831,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
       let beforeCleanupCalled = false;
       let afterCleanupCalled = false;
 
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       seed.registerHooks({
         beforeCleanup: async () => {
           beforeCleanupCalled = true;
@@ -872,7 +873,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
 
       try {
         await (seed as any).validateData('journal-entries', {
@@ -891,7 +892,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
 
       try {
         await (seed as any).validateData('intercompany-transactions', {
@@ -910,7 +911,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Test Host', code: 'TEST', status: 'active' },
       });
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
 
       try {
         await (seed as any).validateData('rounding-adjustments', {
@@ -925,7 +926,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should complete within 15 second E2E timeout', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       const start = Date.now();
       const result = await seed.seed();
       const duration = Date.now() - start;
@@ -937,8 +938,8 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
 
   describe('Parallel Execution and Collisions', () => {
     it('should handle parallel seed execution without collisions', async () => {
-      const seed1 = new Level3SeedSuite(payload as any);
-      const seed2 = new Level3SeedSuite(payload as any);
+      const seed1 = new Level3SeedSuite(payload as unknown as Payload);
+      const seed2 = new Level3SeedSuite(payload as unknown as Payload);
 
       const [result1, result2] = await Promise.all([seed1.seed(), seed2.seed()]);
 
@@ -949,7 +950,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should maintain environment isolation with unique IDs', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -982,7 +983,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const entries = await payload.find({ collection: 'journal-entries', where: { tenant: host.id } });
@@ -1003,7 +1004,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       await seed.seed();
 
       const icTxs = await payload.find({ collection: 'intercompany-transactions' });
@@ -1019,7 +1020,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Parent', code: 'PARENT', status: 'active' },
       });
 
-      const seed = new MultiEntitySeed(payload as any, parent.id);
+      const seed = new MultiEntitySeed(payload as unknown as Payload, parent.id);
       await seed.seed();
 
       const eliminations = await payload.find({ collection: 'consolidation-eliminations' });
@@ -1032,7 +1033,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
 
   describe('Seed Cleanup and Lifecycle', () => {
     it('should cleanup all created documents in correct order', async () => {
-      const seed = new FullAccountingCycleSeed(payload as any, 'test-host-id');
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, 'test-host-id');
       const host = await payload.create({
         collection: 'hosts',
         data: { name: 'Test Host', code: 'TEST', status: 'active' },
@@ -1055,7 +1056,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const cycledSeed = new FullAccountingCycleSeed(payload as any, host.id);
+      const cycledSeed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await cycledSeed.seed();
 
       const cleanupResult = await cycledSeed.cleanup();
@@ -1067,7 +1068,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
       let beforeCalled = false;
       let afterCalled = false;
 
-      const seed = new FullAccountingCycleSeed(payload as any, 'test-host-id');
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, 'test-host-id');
       seed.registerHooks({
         beforeCleanup: async () => {
           beforeCalled = true;
@@ -1131,7 +1132,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const adjustments = await payload.find({
@@ -1169,7 +1170,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new RealWorldScenarioSeed(payload as any, host.id);
+      const seed = new RealWorldScenarioSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const failures = await payload.find({
@@ -1208,7 +1209,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         accounts.push(acc);
       }
 
-      const seed = new FullAccountingCycleSeed(payload as any, host.id);
+      const seed = new FullAccountingCycleSeed(payload as unknown as Payload, host.id);
       await seed.seed();
 
       const vendors = await payload.find({ collection: 'vendors', where: { tenant: host.id } });
@@ -1229,7 +1230,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         data: { name: 'Test Host', code: 'TEST', status: 'active' },
       });
 
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       await seed.seed();
 
       // Note: the suite creates its own host if needed
@@ -1241,7 +1242,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
 
   describe('Seed Aggregation and Results', () => {
     it('should aggregate statistics from all sub-seeds', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -1251,7 +1252,7 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should report correct collection item counts', async () => {
-      const seed = new Level3SeedSuite(payload as any);
+      const seed = new Level3SeedSuite(payload as unknown as Payload);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -1273,9 +1274,9 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
     });
 
     it('should maintain seedLevel consistency', async () => {
-      const cycleSeed = new FullAccountingCycleSeed(payload as any, 'test-host');
-      const multiSeed = new MultiEntitySeed(payload as any, 'test-host');
-      const scenarioSeed = new RealWorldScenarioSeed(payload as any, 'test-host');
+      const cycleSeed = new FullAccountingCycleSeed(payload as unknown as Payload, 'test-host');
+      const multiSeed = new MultiEntitySeed(payload as unknown as Payload, 'test-host');
+      const scenarioSeed = new RealWorldScenarioSeed(payload as unknown as Payload, 'test-host');
 
       const host = await payload.create({
         collection: 'hosts',
@@ -1297,8 +1298,8 @@ describe('Level 3 E2E Seeds - Accounting Plugin', () => {
         });
       }
 
-      const result1 = await new FullAccountingCycleSeed(payload as any, host.id).seed();
-      const result2 = await new RealWorldScenarioSeed(payload as any, host.id).seed();
+      const result1 = await new FullAccountingCycleSeed(payload as unknown as Payload, host.id).seed();
+      const result2 = await new RealWorldScenarioSeed(payload as unknown as Payload, host.id).seed();
 
       expect(result1.seedLevel).toBe('e2e');
       expect(result2.seedLevel).toBe('e2e');

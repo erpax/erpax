@@ -1,21 +1,59 @@
-import type { CollectionConfig } from 'payload'
-import { validateNotLocked } from '../utilities/period-lock';
+import type { Access, CollectionConfig } from 'payload'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { roleScopedAccess, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/plugins/auth/access'
+import {
+  multiTenancyField,
+  glAccountField,
+  currencyField,
+  statusField,
+  auditFields,
+} from '../fields/base-accounting-fields'
+import { validateNotLocked } from '../utilities/period-lock'
+import { validateBalancedEntry } from '../hooks/balanced-entry.hook'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.
  *
  * Invariant: total debits === total credits per entry. Period-locked entries
- * cannot be edited or back-dated.
+ * cannot be edited or back-dated. Posted entries are read-only except to
+ * admins. Segregation of duties: the user who created an entry cannot also
+ * approve it.
  *
- * @standard ISO-8601-1:2019 date-time entry-date posted-date
+ * Slice WW (post-cleanup): replaced inlined access predicates and field
+ * factories with the shared `@/plugins/auth/access` and
+ * `@/plugins/accounting/fields` infrastructure. Wired audit-trail emission
+ * (was declared via `@audit ISO-19011` but never implemented), the
+ * segregation-of-duties hook (declared via `@security ISO-27002 §5.4`,
+ * never implemented), and ISO-8601 timestamps on `postedDate` /
+ * `approvalDate` transitions (declared via `@compliance SOX §404`, never
+ * implemented).
+ *
+ * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
  * @accounting OECD SAF-T §3 journal-entries
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @security ISO-27002 §5.4 segregation-of-duties
  * @see docs/STANDARDS.md §4.2
  */
+
+/**
+ * Posted entries are immutable to non-admins. Combines the role+tenant
+ * gate (admin/accountant of own tenant) with a per-doc immutability check.
+ */
+const updateAccess: Access = async ({ req, doc }) => {
+  const user = getUserContext(req)
+  if (!hasRole(user, 'admin', 'accountant')) return false
+  if (doc?.status === 'posted' && !hasRole(user, 'admin')) return false
+  return { tenant: { equals: user!.tenant } }
+}
+
 const JournalEntries: CollectionConfig = {
   slug: 'journal-entries',
   labels: { singular: 'Journal Entry', plural: 'Journal Entries' },
@@ -24,36 +62,27 @@ const JournalEntries: CollectionConfig = {
     defaultColumns: ['entryNumber', 'entryDate', 'description', 'status', 'debitTotal', 'creditTotal'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req, doc }) => {
-      if (doc?.status === 'posted' && !req.user?.roles?.includes('admin')) return false;
-      return req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant');
-    },
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: updateAccess,
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'entryNumber', type: 'text', required: true, unique: true },
     { name: 'entryDate', type: 'date', required: true },
     { name: 'postedDate', type: 'date' },
     { name: 'description', type: 'textarea', required: true },
-    {
-      name: 'status',
-      type: 'select',
-      defaultValue: 'draft',
-      required: true,
-      options: [
+    statusField(
+      [
         { label: 'Draft', value: 'draft' },
         { label: 'Pending Approval', value: 'pending_approval' },
         { label: 'Posted', value: 'posted' },
         { label: 'Reversed', value: 'reversed' },
         { label: 'Void', value: 'void' },
       ],
-    },
+      'draft',
+    ),
     {
       name: 'lines',
       type: 'array',
@@ -61,16 +90,11 @@ const JournalEntries: CollectionConfig = {
       minRows: 2,
       fields: [
         { name: 'lineNumber', type: 'number', defaultValue: 1 },
-        { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
+        ...glAccountField(true),
         { name: 'description', type: 'text' },
         { name: 'debit', type: 'number', defaultValue: 0 },
         { name: 'credit', type: 'number', defaultValue: 0 },
-        {
-          name: 'currency',
-          type: 'select',
-          defaultValue: 'EUR',
-          options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
-        },
+        currencyField(),
         { name: 'exchangeRate', type: 'number', defaultValue: 1 },
       ],
     },
@@ -93,32 +117,29 @@ const JournalEntries: CollectionConfig = {
       ],
     },
     { name: 'sourceId', type: 'text' },
-    { name: 'approvedBy', type: 'relationship', relationTo: 'users' },
-    { name: 'approvalDate', type: 'date', admin: { disabled: true } },
-    { name: 'createdBy', type: 'relationship', relationTo: 'users', admin: { disabled: true } },
+    ...auditFields(),
   ],
   hooks: {
     beforeValidate: [
-      async ({ data }) => {
-        if (data.lines) {
-          data.debitTotal = data.lines.reduce((sum: number, line: any) => sum + (line.debit || 0), 0);
-          data.creditTotal = data.lines.reduce((sum: number, line: any) => sum + (line.credit || 0), 0);
-          data.isBalanced = Math.abs(data.debitTotal - data.creditTotal) < 0.01;
-          if (!data.isBalanced) throw new Error('Journal entry must balance');
-        }
-        return data;
-      },
+      autoPopulateHost,
+      // Single source of truth for the double-entry balance check.
+      validateBalancedEntry({
+        linesField: 'lines',
+        debitTotalField: 'debitTotal',
+        creditTotalField: 'creditTotal',
+        balancedField: 'isBalanced',
+      }),
     ],
     beforeChange: [
       validateNotLocked,
-      async ({ data, req }) => {
-        if (!data.tenant && undefined) data.tenant = undefined;
-        if (!data.createdBy) data.createdBy = req.user?.id;
-        return data;
-      },
+      autoPopulateCreatedBy,
+      enforceSegregationOfDuties(),
+      autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
+      autoSetTimestamp('approvedAt', (data) => Boolean((data as { approvedBy?: unknown }).approvedBy)),
     ],
+    afterChange: [auditTrailAfterChange('journal-entries')],
   },
   timestamps: true,
-};
+}
 
-export default JournalEntries;
+export default JournalEntries

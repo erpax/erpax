@@ -225,19 +225,19 @@ export class ParallelTestRunner {
  * Snapshot testing utilities
  */
 export class SeedSnapshot {
-  private snapshots: Map<string, any> = new Map();
+  private snapshots: Map<string, unknown> = new Map();
 
   /**
    * Save seed state as snapshot
    */
-  snapshot(name: string, data: any): void {
+  snapshot(name: string, data: unknown): void {
     this.snapshots.set(name, JSON.parse(JSON.stringify(data)));
   }
 
   /**
    * Compare with snapshot
    */
-  compare(name: string, data: any): { matches: boolean; diff?: any } {
+  compare(name: string, data: unknown): { matches: boolean; diff?: unknown } {
     const snapshot = this.snapshots.get(name);
     if (!snapshot) {
       return { matches: false, diff: 'Snapshot not found' };
@@ -269,8 +269,8 @@ export class SeedSnapshot {
   /**
    * Export snapshots for storage
    */
-  export(): Record<string, any> {
-    const result: Record<string, any> = {};
+  export(): Record<string, unknown> {
+    const result: Record<string, unknown> = {};
     for (const [key, value] of this.snapshots) {
       result[key] = value;
     }
@@ -280,7 +280,7 @@ export class SeedSnapshot {
   /**
    * Import snapshots from storage
    */
-  import(data: Record<string, any>): void {
+  import(data: Record<string, unknown>): void {
     for (const [key, value] of Object.entries(data)) {
       this.snapshots.set(key, value);
     }

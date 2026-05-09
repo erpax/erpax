@@ -1,13 +1,31 @@
 import type { CollectionConfig } from 'payload'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import { multiTenancyField } from '../fields/base-accounting-fields'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
+import { currencyField } from '../fields/base-accounting-fields';
+
 /**
  * Financial Statements — generated statement records (TB, BS, IS, CF, etc.).
  *
+ * Slice ZZ: SOX §302 disclosure-controls now actually enforced — the user
+ * who generated a statement cannot also certify/approve it (segregation of
+ * duties); ISO-8601 generatedAt/issuedAt/approvedAt are auto-stamped on
+ * status transitions; every write emits a structured audit-trail event.
+ *
  * @standard ISO-4217:2015 currency-codes
- * @standard ISO-8601-1:2019 date-time fiscal-period-end generated-at
+ * @standard ISO-8601-1:2019 date-time fiscal-period-end generated-at issued-at approved-at
  * @standard BCP-47 language-tag
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting US-GAAP ASC-205 presentation-of-financial-statements
  * @compliance SOX §302 disclosure-controls
+ * @compliance SOX §404 internal-controls
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.4 segregation-of-duties certifier-vs-preparer
+ * @audit ISO-19011:2018 audit-trail
  * @see docs/STANDARDS.md §4.2
  */
 const FinancialStatements: CollectionConfig = {
@@ -18,16 +36,13 @@ const FinancialStatements: CollectionConfig = {
     defaultColumns: ['statementId', 'statementType', 'fiscalPeriodEnd', 'language', 'generatedAt'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: tenantAdmin,
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'statementId', type: 'text', required: true, unique: true },
     {
       name: 'statementType',
@@ -60,12 +75,7 @@ const FinancialStatements: CollectionConfig = {
     },
     { name: 'fiscalPeriodStart', type: 'date', required: true },
     { name: 'fiscalPeriodEnd', type: 'date', required: true },
-    {
-      name: 'currency',
-      type: 'select',
-      defaultValue: 'EUR',
-      options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
-    },
+    currencyField(),
     { name: 'statementContent', type: 'json', required: true },
     {
       name: 'financialRatios',
@@ -125,13 +135,24 @@ const FinancialStatements: CollectionConfig = {
     { name: 'generatedBy', type: 'relationship', relationTo: 'users', admin: { disabled: true } },
   ],
   hooks: {
+    beforeValidate: [autoPopulateHost],
     beforeChange: [
-      async ({ data, req: _req }) => {
-        if (!data.tenant && undefined) data.tenant = undefined;
-        if (!data.generatedAt) data.generatedAt = new Date();
-        return data;
-      },
+      autoPopulateCreatedBy,
+      // SOX §302 disclosure-controls: the user who generated the statement
+      // cannot also be the user who certifies/approves it.
+      enforceSegregationOfDuties(),
+      // ISO-8601 generation/issuance/approval timestamps.
+      autoSetTimestamp('generatedAt', (data) => Boolean(data)),
+      autoSetTimestamp(
+        'issuedAt',
+        (data) => (data as { status?: string }).status === 'issued',
+      ),
+      autoSetTimestamp(
+        'approvedAt',
+        (data) => Boolean((data as { approvedBy?: unknown }).approvedBy),
+      ),
     ],
+    afterChange: [auditTrailAfterChange('financial-statements')],
   },
   timestamps: true,
 };

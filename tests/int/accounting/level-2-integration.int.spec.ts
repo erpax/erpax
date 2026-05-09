@@ -1,3 +1,4 @@
+import type { Config } from '@/payload-types'
 /**
  * Level 2 Integration Tests — multi-document relationships, realistic seeds.
  *
@@ -26,10 +27,10 @@ import { initializeDiscovery } from '@/testing';
  * Mock Payload instance for testing
  */
 class MockPayload implements Partial<Payload> {
-  private documents: Map<string, any[]> = new Map();
+  private documents: Map<string, Array<Record<string, unknown>>> = new Map();
   private idCounter: Map<string, number> = new Map();
 
-  config: any = {
+  config: Partial<Config> = {
     collections: [
       {
         slug: 'hosts',
@@ -112,7 +113,7 @@ class MockPayload implements Partial<Payload> {
     ],
   };
 
-  async create({ collection, data }: { collection: string; data: any }): Promise<any> {
+  async create({ collection, data }: { collection: string; data: Record<string, unknown> }): Promise<unknown> {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, []);
     }
@@ -125,7 +126,7 @@ class MockPayload implements Partial<Payload> {
     return doc;
   }
 
-  async find({ collection, where }: { collection: string; where?: any }): Promise<any> {
+  async find({ collection, where }: { collection: string; where?: Record<string, unknown> }): Promise<unknown> {
     const docs = this.documents.get(collection) || [];
     if (!where) return { docs };
 
@@ -158,25 +159,25 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
 
   beforeEach(() => {
     payload = new MockPayload();
-    initializeDiscovery(payload as any);
+    initializeDiscovery(payload as unknown as Payload);
   });
 
   describe('JournalEntrySeed', () => {
     it('should create balanced GL transactions', async () => {
       // Setup: Create host and GL accounts
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       const hostResult = await hostSeed.seed();
       expect(hostResult.success).toBe(true);
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const glSeed = new MinimalGLAccountsSeed(payload as any, hostId);
+      const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, hostId);
       const glResult = await glSeed.seed();
       expect(glResult.success).toBe(true);
 
       // Test: Create journal entries
-      const seed = new JournalEntrySeed(payload as any, hostId);
+      const seed = new JournalEntrySeed(payload as unknown as Payload, hostId);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -191,13 +192,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
     });
 
     it('should validate balanced debits and credits', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new JournalEntrySeed(payload as any, hostId);
+      const seed = new JournalEntrySeed(payload as unknown as Payload, hostId);
 
       // Should fail with unbalanced amounts
       await expect(
@@ -213,13 +214,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
     });
 
     it('should require valid entry dates', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new JournalEntrySeed(payload as any, hostId);
+      const seed = new JournalEntrySeed(payload as unknown as Payload, hostId);
 
       // Should fail with invalid date
       await expect(
@@ -237,13 +238,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
 
   describe('AccountingCycleSeed', () => {
     it('should create accounting cycles for different periods', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new AccountingCycleSeed(payload as any, hostId);
+      const seed = new AccountingCycleSeed(payload as unknown as Payload, hostId);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -260,13 +261,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
     });
 
     it('should validate period types', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new AccountingCycleSeed(payload as any, hostId);
+      const seed = new AccountingCycleSeed(payload as unknown as Payload, hostId);
 
       // Should fail with invalid period type
       await expect(
@@ -285,13 +286,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
 
   describe('MultiCurrencySeed', () => {
     it('should create FX transactions with proper exchange rates', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new MultiCurrencySeed(payload as any, hostId);
+      const seed = new MultiCurrencySeed(payload as unknown as Payload, hostId);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -308,13 +309,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
     });
 
     it('should validate different currencies', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new MultiCurrencySeed(payload as any, hostId);
+      const seed = new MultiCurrencySeed(payload as unknown as Payload, hostId);
 
       // Should fail with same currency
       await expect(
@@ -334,13 +335,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
 
   describe('RoleScopedDataSeed', () => {
     it('should create role-based access configurations', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new RoleScopedDataSeed(payload as any, hostId);
+      const seed = new RoleScopedDataSeed(payload as unknown as Payload, hostId);
       const result = await seed.seed();
 
       expect(result.success).toBe(true);
@@ -357,13 +358,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
     });
 
     it('should validate role values', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
       const hosts = await payload.find({ collection: 'hosts' });
       const hostId = hosts.docs[0].id;
 
-      const seed = new RoleScopedDataSeed(payload as any, hostId);
+      const seed = new RoleScopedDataSeed(payload as unknown as Payload, hostId);
 
       // Should fail with invalid role
       await expect(
@@ -384,14 +385,14 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
   describe('Level2SeedSuite', () => {
     it('should run complete Level 2 seed suite', async () => {
       // First, seed Level 1 data
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
-      const glSeed = new MinimalGLAccountsSeed(payload as any, 'host-1');
+      const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, 'host-1');
       await glSeed.seed();
 
       // Run Level 2 suite
-      const suite = new Level2SeedSuite(payload as any);
+      const suite = new Level2SeedSuite(payload as unknown as Payload);
       const result = await suite.seed();
 
       expect(result.success).toBe(true);
@@ -401,7 +402,7 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
 
     it('should require Level 1 seeds to be run first', async () => {
       // Don't seed Level 1 - just try Level 2
-      const suite = new Level2SeedSuite(payload as any);
+      const suite = new Level2SeedSuite(payload as unknown as Payload);
       const result = await suite.seed();
 
       expect(result.success).toBe(false);
@@ -410,14 +411,14 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
 
     it('should track all created IDs for cleanup', async () => {
       // Setup Level 1
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
-      const glSeed = new MinimalGLAccountsSeed(payload as any, 'host-1');
+      const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, 'host-1');
       await glSeed.seed();
 
       // Run Level 2
-      const suite = new Level2SeedSuite(payload as any);
+      const suite = new Level2SeedSuite(payload as unknown as Payload);
       const result = await suite.seed();
 
       expect(result.success).toBe(true);
@@ -434,13 +435,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
       let beforeCalled = false;
       let afterCalled = false;
 
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
-      const glSeed = new MinimalGLAccountsSeed(payload as any, 'host-1');
+      const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, 'host-1');
       await glSeed.seed();
 
-      const seed = new JournalEntrySeed(payload as any, 'host-1');
+      const seed = new JournalEntrySeed(payload as unknown as Payload, 'host-1');
       seed.registerHooks({
         beforeSeed: async () => {
           beforeCalled = true;
@@ -457,13 +458,13 @@ describe('Level 2 Integration Seeds - Accounting Plugin', () => {
     });
 
     it('should cleanup created documents on demand', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       await hostSeed.seed();
 
-      const glSeed = new MinimalGLAccountsSeed(payload as any, 'host-1');
+      const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, 'host-1');
       await glSeed.seed();
 
-      const seed = new JournalEntrySeed(payload as any, 'host-1');
+      const seed = new JournalEntrySeed(payload as unknown as Payload, 'host-1');
       await seed.seed();
 
       // Verify entries were created

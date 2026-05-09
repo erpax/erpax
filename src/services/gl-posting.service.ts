@@ -28,6 +28,13 @@ import {
   InventoryPurchasedEvent,
   InventorySoldEvent,
   BankStatementImportedEvent,
+  SubscriptionActivatedEvent,
+  SubscriptionInvoicedEvent,
+  SubscriptionCancelledEvent,
+  SubscriptionRefundedEvent,
+  OrderActivatedEvent,
+  OrderCancelledEvent,
+  OrderRefundedEvent,
 } from '@/types/events';
 import { JournalEntryLine } from './journal-entry.service';
 
@@ -46,6 +53,10 @@ const GL_ACCOUNTS = {
   EXPENSE: 'expense',
   SALES_TAX_PAYABLE: 'sales_tax_payable',
   INPUT_TAX_ASSET: 'input_tax_asset',
+  // Subscription / IFRS 15 / ASC 606
+  DEFERRED_REVENUE: 'deferred_revenue',
+  SUBSCRIPTION_REVENUE: 'subscription_revenue',
+  REFUNDS_PAYABLE: 'refunds_payable',
 };
 
 class GLPostingService {
@@ -98,6 +109,31 @@ class GLPostingService {
     // Bank events
     this.eventEmitter.subscribe('bank:statement:imported', (event) =>
       this.postBankStatementImported(event as BankStatementImportedEvent)
+    );
+
+    // Subscription lifecycle events — IFRS 15 / ASC 606 revenue recognition.
+    this.eventEmitter.subscribe('subscription:activated', (event) =>
+      this.postSubscriptionActivated(event as SubscriptionActivatedEvent)
+    );
+    this.eventEmitter.subscribe('subscription:invoiced', (event) =>
+      this.postSubscriptionInvoiced(event as SubscriptionInvoicedEvent)
+    );
+    this.eventEmitter.subscribe('subscription:cancelled', (event) =>
+      this.postSubscriptionCancelled(event as SubscriptionCancelledEvent)
+    );
+    this.eventEmitter.subscribe('subscription:refunded', (event) =>
+      this.postSubscriptionRefunded(event as SubscriptionRefundedEvent)
+    );
+
+    // Order lifecycle events — front-of-house quote-to-cash GL posting.
+    this.eventEmitter.subscribe('order:activated', (event) =>
+      this.postOrderActivated(event as OrderActivatedEvent)
+    );
+    this.eventEmitter.subscribe('order:cancelled', (event) =>
+      this.postOrderCancelled(event as OrderCancelledEvent)
+    );
+    this.eventEmitter.subscribe('order:refunded', (event) =>
+      this.postOrderRefunded(event as OrderRefundedEvent)
     );
   }
 
@@ -501,6 +537,331 @@ class GLPostingService {
 
       await journalEntryService.postEntry(tenantId, entry.id, userId);
     }
+  }
+
+  // ─── Subscription lifecycle handlers — IFRS 15 / ASC 606 ──────────────────
+
+  /**
+   * Subscription activated — record the contract liability (deferred revenue).
+   *
+   * Per IFRS 15 §31 / ASC 606-10-25: cash collected up-front for a
+   * performance obligation that has not yet been satisfied is recognised
+   * as a contract liability (deferred revenue), then released to revenue
+   * over the service period.
+   *
+   * Debit:  Cash / AR (depending on collection state — here we assume AR
+   *         pending the customer's payment of the first invoice)
+   * Credit: Deferred Revenue (contract liability)
+   */
+  async postSubscriptionActivated(event: SubscriptionActivatedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { subscriptionId, amount, periodStart, periodEnd } = payload;
+    if (!amount || amount <= 0) return; // free / trial — no GL impact
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        debit: amount,
+        description: `Subscription activated ${subscriptionId} — period ${periodStart.toISOString()}–${periodEnd.toISOString()}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.DEFERRED_REVENUE,
+        credit: amount,
+        description: `Deferred subscription revenue ${subscriptionId} (IFRS 15 §31 / ASC 606-10-25)`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: periodStart,
+      description: `Subscription ${subscriptionId} activated`,
+      lines,
+      sourceType: 'invoice', // subscription bookings flow through the invoice source-type union
+      sourceId: subscriptionId,
+      sourceEvent: 'subscription:activated',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Subscription invoiced — recognise revenue for the billed period.
+   *
+   * Per IFRS 15 §35 / ASC 606-10-25-30: as the entity transfers control of
+   * the good or service over time, revenue is recognised. For a periodic
+   * subscription, the period invoice marks the end of the deferral.
+   *
+   * Debit:  Deferred Revenue (contract liability ↓)
+   * Credit: Subscription Revenue (income ↑)
+   */
+  async postSubscriptionInvoiced(event: SubscriptionInvoicedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { subscriptionId, invoiceId, amount, periodStart, periodEnd } = payload;
+    if (!amount || amount <= 0) return;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.DEFERRED_REVENUE,
+        debit: amount,
+        description: `Recognise revenue for subscription ${subscriptionId} period ${periodStart.toISOString()}–${periodEnd.toISOString()}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.SUBSCRIPTION_REVENUE,
+        credit: amount,
+        description: `Subscription revenue ${invoiceId} (IFRS 15 §35 / ASC 606-10-25-30)`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: periodEnd,
+      description: `Subscription ${subscriptionId} invoiced`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: invoiceId,
+      sourceEvent: 'subscription:invoiced',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Subscription cancelled — reverse unrecognised deferred revenue and,
+   * if a refund was issued, recognise the refund liability.
+   *
+   * Per IFRS 15 §B47 / ASC 606-10-25-13: customer cancellation extinguishes
+   * the unsatisfied performance obligation. If consideration is refundable,
+   * the entity recognises a refund liability rather than revenue.
+   *
+   * For each cents-amount in the payload (`unrecognisedAmount`,
+   * `refundAmount`) we post the matching line; if both are zero the
+   * cancellation is a no-op for the GL (revenue already recognised in full).
+   */
+  async postSubscriptionCancelled(event: SubscriptionCancelledEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { subscriptionId, cancelledAt, unrecognisedAmount, refundAmount } = payload;
+    if (unrecognisedAmount <= 0 && refundAmount <= 0) return;
+
+    const lines: JournalEntryLine[] = [];
+    if (unrecognisedAmount > 0) {
+      // Reverse the deferred-revenue contract liability.
+      lines.push({
+        accountId: GL_ACCOUNTS.DEFERRED_REVENUE,
+        debit: unrecognisedAmount,
+        description: `Cancel deferred revenue for subscription ${subscriptionId} (IFRS 15 §B47)`,
+      });
+      lines.push({
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        credit: unrecognisedAmount,
+        description: `Reduce AR for cancelled subscription ${subscriptionId}`,
+      });
+    }
+    if (refundAmount > 0) {
+      // Recognise the refund liability — to be settled by the refund payment hook.
+      lines.push({
+        accountId: GL_ACCOUNTS.SUBSCRIPTION_REVENUE,
+        debit: refundAmount,
+        description: `Reverse recognised revenue for refund on subscription ${subscriptionId}`,
+      });
+      lines.push({
+        accountId: GL_ACCOUNTS.REFUNDS_PAYABLE,
+        credit: refundAmount,
+        description: `Refund liability for cancelled subscription ${subscriptionId} (IFRS 15 §B22)`,
+      });
+    }
+    if (lines.length === 0) return;
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: cancelledAt,
+      description: `Subscription ${subscriptionId} cancelled`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: subscriptionId,
+      sourceEvent: 'subscription:cancelled',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Subscription refunded — settle the refund liability against cash.
+   *
+   * Pairs with `postSubscriptionCancelled` (which booked the
+   * `Refunds Payable` liability). When the refund actually leaves the
+   * account, this debits the liability away and credits cash.
+   *
+   * Debit:  Refunds Payable (liability ↓)
+   * Credit: Cash (asset ↓)
+   */
+  async postSubscriptionRefunded(event: SubscriptionRefundedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { subscriptionId, amount, refundedAt } = payload;
+    if (!amount || amount <= 0) return;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.REFUNDS_PAYABLE,
+        debit: amount,
+        description: `Settle refund liability for subscription ${subscriptionId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.CASH,
+        credit: amount,
+        description: `Refund paid to customer for subscription ${subscriptionId}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: refundedAt,
+      description: `Subscription ${subscriptionId} refunded`,
+      lines,
+      sourceType: 'payment',
+      sourceId: subscriptionId,
+      sourceEvent: 'subscription:refunded',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  // ─── Order lifecycle handlers — IFRS 15 / ASC 606 + IAS 2 / ASC 330 ──────
+
+  /**
+   * Order activated — recognise revenue + book COGS at the same moment for
+   * shipped-goods sales (point-in-time recognition under IFRS 15 §38b /
+   * ASC 606-10-25-30c).
+   *
+   * Per line item:
+   *   Dr Accounts Receivable (subtotal + tax)
+   *   Cr Revenue              (subtotal)
+   *   Cr Sales Tax Payable    (tax, if > 0)
+   *   Dr COGS                 (costAmount, if > 0)
+   *   Cr Inventory            (costAmount, if > 0)
+   */
+  async postOrderActivated(event: OrderActivatedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { orderId, subtotal, taxAmount, total, activatedAt, lineItems } = payload;
+    if (!total || total <= 0) return;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        debit: total,
+        description: `AR for order ${orderId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.REVENUE,
+        credit: subtotal,
+        description: `Revenue for order ${orderId} (IFRS 15 §38b / ASC 606-10-25-30c)`,
+      },
+    ];
+    if (taxAmount && taxAmount > 0) {
+      lines.push({
+        accountId: GL_ACCOUNTS.SALES_TAX_PAYABLE,
+        credit: taxAmount,
+        description: `Sales tax on order ${orderId}`,
+      });
+    }
+    // COGS / inventory consumption per line that has cost data
+    for (const li of lineItems) {
+      if (li.costAmount && li.costAmount > 0) {
+        lines.push({
+          accountId: GL_ACCOUNTS.COGS,
+          debit: li.costAmount,
+          description: `COGS for order ${orderId} line ${li.itemId}`,
+        });
+        lines.push({
+          accountId: GL_ACCOUNTS.INVENTORY,
+          credit: li.costAmount,
+          description: `Inventory reduction for order ${orderId} line ${li.itemId}`,
+        });
+      }
+    }
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: activatedAt,
+      description: `Order ${orderId} activated`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: orderId,
+      sourceEvent: 'order:activated',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Order cancelled — reverse the activation entry.
+   *
+   * Single combined reversal (Dr Revenue + Cr AR) rather than per-line
+   * detail because the cancellation event carries only the aggregate
+   * `reversalAmount`. For a per-line reversal, fire one
+   * `order:refunded` event per line instead.
+   */
+  async postOrderCancelled(event: OrderCancelledEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { orderId, cancelledAt, reversalAmount } = payload;
+    if (!reversalAmount || reversalAmount <= 0) return;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.REVENUE,
+        debit: reversalAmount,
+        description: `Reverse recognised revenue for cancelled order ${orderId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.ACCOUNTS_RECEIVABLE,
+        credit: reversalAmount,
+        description: `Reduce AR for cancelled order ${orderId}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: cancelledAt,
+      description: `Order ${orderId} cancelled`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: orderId,
+      sourceEvent: 'order:cancelled',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Order refunded — full or partial customer refund.
+   *
+   * Books a Refunds Payable liability (settled by the matching
+   * `payment:sent` / cash-out event downstream).
+   *
+   *   Dr Revenue              (amount)
+   *   Cr Refunds Payable       (amount)
+   */
+  async postOrderRefunded(event: OrderRefundedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const { orderId, amount, refundedAt } = payload;
+    if (!amount || amount <= 0) return;
+
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: GL_ACCOUNTS.REVENUE,
+        debit: amount,
+        description: `Reverse recognised revenue for refunded order ${orderId}`,
+      },
+      {
+        accountId: GL_ACCOUNTS.REFUNDS_PAYABLE,
+        credit: amount,
+        description: `Refund liability for order ${orderId} (IFRS 15 §B22)`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: refundedAt,
+      description: `Order ${orderId} refunded`,
+      lines,
+      sourceType: 'invoice',
+      sourceId: orderId,
+      sourceEvent: 'order:refunded',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
   }
 }
 

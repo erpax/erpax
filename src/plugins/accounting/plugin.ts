@@ -29,6 +29,7 @@ import {
   JournalEntries,
   GLPostings,
   // Banking
+  BankAccounts,
   BankStatements,
   // Closing-side
   FinancialStatements,
@@ -45,12 +46,48 @@ import {
   TaxJurisdictions,
   TaxCodes,
   FiscalPeriods,
+  // Sprint ZZ Round 1 — standards-required normalised collections
+  AuditEvents,
+  CreditMemos,
+  PurchaseOrders,
+  GoodsReceipts,
+  Quotes,
+  Refunds,
+  // Sprint ZZ Round 2 — 16 more standards-required normalised collections
+  Returns,
+  Shipments,
+  Contracts,
+  PerformanceObligations,
+  DepreciationSchedules,
+  ConsentRecords,
+  DataSubjectRequests,
+  DataProcessingActivities,
+  AuditFindings,
+  ControlTests,
+  KycChecks,
+  BeneficialOwners,
+  TaxReturns,
+  WarehouseLocations,
+  InventoryMovements,
+  BankTransactions,
 } from './collections';
 
 /**
  * Accounting Plugin
  *
- * Registers 15 accounting-domain collections: 10 write-targets + 5 ERP masters.
+ * Registers 38 accounting-domain collections (15 original + 7 Round 1 + 16 Round 2):
+ *   - Persistent audit / control evidence (AuditEvents, AuditFindings, ControlTests)
+ *   - Double-entry GL (GLAccounts, JournalEntries, GLPostings)
+ *   - Banking (BankAccounts, BankStatements, BankTransactions)
+ *   - Closing (FinancialStatements, PeriodEndAdjustments, FiscalPeriods, DepreciationSchedules)
+ *   - Tax (TaxCalculations, TaxReturns, TaxJurisdictions, TaxCodes, CurrencyRates)
+ *   - PP&E + budgets (FixedAssets, BudgetPlanning)
+ *   - Order-to-Cash (Quotes, Contracts, PerformanceObligations, CreditMemos, Refunds, Returns, Shipments)
+ *   - Procure-to-Pay (PurchaseOrders, GoodsReceipts)
+ *   - Inventory (WarehouseLocations, InventoryMovements)
+ *   - GDPR data layer (ConsentRecords, DataSubjectRequests, DataProcessingActivities)
+ *   - AML / KYC (KycChecks, BeneficialOwners)
+ *   - Party masters (Customers, Vendors)
  *
  * Following Payload's collection-design guidance, derived/aggregate data is NOT
  * a write-collection — those are service-generated DTOs (see
@@ -63,6 +100,9 @@ import {
 export const accountingPlugin = (): Plugin => {
   return (incomingConfig) => {
     const accountingCollections: CollectionConfig[] = [
+      // Persistent audit trail (registered FIRST so other collections can write
+      // to it via afterChange hooks without ordering surprises).
+      AuditEvents,
       // Tax + fiscal calendar masters (FiscalPeriods must precede GL collections that hook validateNotLocked)
       TaxJurisdictions,
       TaxCodes,
@@ -70,21 +110,50 @@ export const accountingPlugin = (): Plugin => {
       // Party masters
       Customers,
       Vendors,
+      // KYC / UBO (party-adjacent, AMLD-5 / US CTA)
+      KycChecks,
+      BeneficialOwners,
       // Chart of accounts + double-entry write-targets
       GLAccounts,
       JournalEntries,
       GLPostings,
-      // Banking imports
+      // Banking — accounts (master) before statements (transactions); BankTransactions normalises camt.053 lines
+      BankAccounts,
       BankStatements,
+      BankTransactions,
+      // Procure-to-Pay (PO must precede GoodsReceipts which join-references it)
+      PurchaseOrders,
+      GoodsReceipts,
+      // Order-to-Cash — Quote → Contract → PerformanceObligation → Order → Shipment → Return
+      Quotes,
+      Contracts,
+      PerformanceObligations,
+      Shipments,
+      Returns,
+      // Inventory (WarehouseLocations master must precede InventoryMovements that reference it)
+      WarehouseLocations,
+      InventoryMovements,
       // Closing-side
       FinancialStatements,
       PeriodEndAdjustments,
+      DepreciationSchedules,
       // Tax + currency calculation masters
       TaxCalculations,
+      TaxReturns,
       CurrencyRates,
+      // Refund / credit lifecycle
+      CreditMemos,
+      Refunds,
       // Real entities
       FixedAssets,
       BudgetPlanning,
+      // GDPR data-layer (Art.6/Art.15-22/Art.30)
+      ConsentRecords,
+      DataSubjectRequests,
+      DataProcessingActivities,
+      // SOX §404 evidence layer (depends on AuditEvents being registered)
+      AuditFindings,
+      ControlTests,
     ];
 
     return {

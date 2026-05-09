@@ -196,7 +196,7 @@ export class ARAnalytics {
       currentBalance: customer.currentBalance,
       utilizationPercentage:
         customer.creditLimit > 0
-          ? ((customer.currentBalance / customer.creditLimit) * 100).toFixed(2) as any
+          ? parseFloat(((customer.currentBalance / customer.creditLimit) * 100).toFixed(2))
           : 0,
       availableCredit: customer.creditLimit - customer.currentBalance,
     }))

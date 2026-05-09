@@ -1,4 +1,15 @@
 /**
+ * Level-3 e2e accounting seed — multi-tenant intercompany fixtures for end-to-end tests.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail test-data
+ * @quality ISO-25010 maintainability test-fixtures
+ * @see docs/STANDARDS.md §4.2
+ */
+
+/**
  * Level 3: E2E Test Seeds for Accounting Plugin
  * Complete accounting workflows with advanced scenarios
  * Setup time: 5-15 seconds
@@ -32,7 +43,7 @@ export class FullAccountingCycleSeed extends TestSeedFactory {
     this.hostId = hostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     // Call parent validation first
     await super.validateData(collection, data);
 
@@ -370,7 +381,7 @@ export class MultiEntitySeed extends TestSeedFactory {
     this.parentHostId = parentHostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     await super.validateData(collection, data);
 
     if (collection === 'intercompany-transactions') {
@@ -432,7 +443,7 @@ export class MultiEntitySeed extends TestSeedFactory {
         { number: '5100', name: 'Intercompany expenses', type: 'expense' },
       ];
 
-      const accountsByEntity: Record<string, any[]> = {};
+      const accountsByEntity: Record<string, Array<Record<string, unknown>>> = {};
 
       for (const entityId of entityIds) {
         const accounts = [];
@@ -612,7 +623,7 @@ export class RealWorldScenarioSeed extends TestSeedFactory {
     this.hostId = hostId;
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     await super.validateData(collection, data);
 
     if (collection === 'journal-entries') {

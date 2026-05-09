@@ -27,7 +27,9 @@
  */
 
 import { Payload, PayloadRequest } from 'payload'
+import type { Subscription } from '@/payload-types'
 import Stripe from 'stripe'
+import { emitEvent } from '@/services/event-emitter.service'
 
 /**
  * Context object threaded through every webhook handler.
@@ -46,7 +48,7 @@ export interface StripeWebhookContext {
 export async function findPayloadSubscriptionByStripeId(
   payload: Payload,
   stripeSubscriptionId: string,
-): Promise<any | null> {
+): Promise<Subscription | null> {
   const result = await payload.find({
     collection: 'subscriptions',
     where: { stripeSubscriptionId: { equals: stripeSubscriptionId } },
@@ -299,6 +301,39 @@ export async function handleInvoicePaid(
       subscription.id,
       'active',
       `Invoice ${stripeInvoice.id} paid`,
+    )
+
+    // Slice ZZ-3: emit subscription:invoiced so glPostingService can
+    // recognise revenue (Dr Deferred Revenue / Cr Subscription Revenue
+    // per IFRS 15 §35 / ASC 606-10-25-30). Without this wire, every
+    // Stripe-driven invoice payment silently bypasses the GL.
+    const tenantRef = (subscription as { tenant?: number | string | { id: number | string } }).tenant
+    const tenantId =
+      typeof tenantRef === 'object' && tenantRef !== null && 'id' in tenantRef
+        ? String(tenantRef.id)
+        : String(tenantRef ?? '')
+
+    const periodStart = stripeInvoice.period_start
+      ? new Date(stripeInvoice.period_start * 1000)
+      : new Date()
+    const periodEnd = stripeInvoice.period_end
+      ? new Date(stripeInvoice.period_end * 1000)
+      : new Date()
+
+    await emitEvent(
+      'subscription:invoiced',
+      tenantId,
+      'system',
+      {
+        subscriptionId: String(subscription.id),
+        invoiceId: String(invoice.id),
+        amount: stripeInvoice.amount_paid ?? 0,
+        currencyCode: (stripeInvoice.currency || 'eur').toUpperCase(),
+        periodStart,
+        periodEnd,
+      },
+      String(invoice.id),
+      'subscription',
     )
   }
 

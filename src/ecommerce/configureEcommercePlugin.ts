@@ -26,8 +26,6 @@
 import {
   ecommercePlugin,
   EUR,
-  GBP,
-  USD,
 } from '@payloadcms/plugin-ecommerce'
 import type { Plugin } from 'payload'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
@@ -42,6 +40,10 @@ import { isAdmin } from '@/ecommerce/access/isAdmin'
 import { isDocumentOwner } from '@/ecommerce/access/isDocumentOwner'
 import { validateProductCheckout } from '@/ecommerce/productValidation'
 import { localeRecord } from '@/i18n'
+import { DEFAULT_COUNTRY, DEFAULT_CURRENCY } from '@/config/regional-defaults'
+import { validateAddressHook } from '@/hooks/validateAddress'
+import { emitOrderLifecycleEvents } from '@/ecommerce/hooks/emitOrderLifecycleEvents'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
 const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({
@@ -63,8 +65,15 @@ export function createEcommercePlugin(): Plugin {
       isDocumentOwner,
     },
     currencies: {
+      // Slice WW: canonical single-currency configuration. EUR is the house
+      // default per `@/config/regional-defaults`; the `priceInGBP` /
+      // `priceInUSD` columns the plugin would otherwise generate are dropped
+      // in favor of the standard `price` + `currencyCode` shape used by
+      // Items / Invoices / InvoiceLines. Foreign-currency display is handled
+      // at runtime via `multi-currency.service` (FX conversion), not via
+      // additional priceInXXX columns.
       defaultCurrency: 'EUR',
-      supportedCurrencies: [EUR, GBP, USD],
+      supportedCurrencies: [EUR],
     },
     customers: {
       slug: 'users',
@@ -134,8 +143,8 @@ export function createEcommercePlugin(): Plugin {
           {
             name: 'currencyCode',
             type: 'text',
-            defaultValue: 'EUR',
-            admin: { description: 'ISO 4217 currency code (USD, EUR, GBP, etc.)' },
+            defaultValue: DEFAULT_CURRENCY,
+            admin: { description: 'ISO 4217 currency code — defaults to the canonical DEFAULT_CURRENCY (derived from DEFAULT_COUNTRY).' },
           },
           {
             name: 'debitAccount',
@@ -172,6 +181,17 @@ export function createEcommercePlugin(): Plugin {
             admin: { description: 'Additional metadata' },
           },
         ],
+        // Slice XX: address-format validation. Enforces per-country required
+        // fields and postal-code patterns from `@/config/address-formats`.
+        // Falls back to `DEFAULT_COUNTRY` (BG) when the address has no
+        // explicit country — mirrors the regional-defaults cascade.
+        hooks: {
+          ...defaultCollection.hooks,
+          beforeValidate: [
+            ...(defaultCollection.hooks?.beforeValidate ?? []),
+            validateAddressHook({ fallbackCountry: DEFAULT_COUNTRY }),
+          ],
+        },
       }),
     },
     carts: {
@@ -204,6 +224,18 @@ export function createEcommercePlugin(): Plugin {
             },
           },
         ],
+        // Slice ZZ-3: every Order status transition emits the matching
+        // domain event so `glPostingService` can post the IFRS 15 / ASC 606
+        // revenue-recognition + COGS entries. Closes the "data is money"
+        // gap between front-of-house ecommerce and the GL.
+        hooks: {
+          ...defaultCollection.hooks,
+          afterChange: [
+            ...(defaultCollection.hooks?.afterChange ?? []),
+            emitOrderLifecycleEvents,
+            auditTrailAfterChange('orders'),
+          ],
+        },
       }),
     },
     payments: {

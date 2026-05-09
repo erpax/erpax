@@ -1,14 +1,22 @@
 /**
- * @erpax/hooks — common collection hooks and validation primitives.
+ * @deprecated DO NOT IMPORT FROM HERE. The "hooks plugin" anti-pattern was
+ * retired in Slice YY — generic hooks live in `@/hooks/*` (one file each),
+ * domain hooks under their owning collection or domain plugin
+ * (`@/collections/<Name>/hooks/`, `@/plugins/<domain>/hooks/`).
  *
- * Master citation index for `common.ts` and any future hook in this folder.
+ * Migration map:
+ *   `@/plugins/hooks` → `@/hooks/autoPopulateHost`
+ *                      `@/hooks/autoPopulateCreatedBy`
+ *                      `@/hooks/autoSetTimestamp`
+ *                      `@/hooks/auditTrailAfterChange`
+ *                      `@/hooks/enforceSegregationOfDuties`
+ *   `@/plugins/hooks/address-validation.hook` → `@/hooks/validateAddress`
  *
- * @audit ISO-19011:2018 audit-trail before-after-hook-instrumentation
- * @security ISO-27001 A.5.23 cloud-service-tenant-isolation autoPopulateHost
- * @security ISO-27002 §5.15 access-control
- * @compliance SOC-2 CC4.1 monitoring-and-evaluation
- * @compliance SOX §404 internal-controls
- * @see docs/STANDARDS.md §5
+ * Safe to `rm -rf src/plugins/hooks` once the user-side machine confirms
+ * no remaining imports (zero in this branch as of Slice YY).
+ *
+ * @audit ISO-19011:2018 audit-trail relocation-record
+ * @see docs/STANDARDS.md §3
  */
 
-export * from './common'
+export {}

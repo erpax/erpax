@@ -1,16 +1,29 @@
 import type { CollectionConfig } from 'payload'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import { multiTenancyField } from '../fields/base-accounting-fields'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { currencyField } from '../fields/base-accounting-fields';
 import { validateNotLocked } from '../utilities/period-lock';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.
  *
+ * Slice ZZ: full canonical hook chain wired (autoPopulateHost +
+ * autoPopulateCreatedBy + validateNotLocked + ISO-8601 reconciledAt
+ * timestamp + audit-trail emission per write).
+ *
  * @standard ISO-20022 camt.053 bank-to-customer-statement
  * @standard ISO-13616-1:2020 iban
  * @standard ISO-9362:2022 bic
  * @standard ISO-4217:2015 currency-codes
- * @standard ISO-8601-1:2019 date-time statement-date period-start
+ * @standard ISO-8601-1:2019 date-time statement-date period-start reconciled-at
  * @accounting IFRS IAS-7 statement-of-cash-flows
  * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls reconciliation-evidence
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.1
  */
 const BankStatements: CollectionConfig = {
@@ -21,26 +34,18 @@ const BankStatements: CollectionConfig = {
     defaultColumns: ['statementId', 'bankAccount', 'statementDate', 'reconciliationStatus', 'variance'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: roleScopedAccess('admin', 'accountant'),
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'statementId', type: 'text', required: true, unique: true },
     { name: 'bankAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
     { name: 'statementDate', type: 'date', required: true },
     { name: 'statementPeriodStart', type: 'date', required: true },
-    {
-      name: 'currency',
-      type: 'select',
-      defaultValue: 'EUR',
-      options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
-    },
+    currencyField(),
     { name: 'openingBalance', type: 'number', required: true },
     { name: 'closingBalance', type: 'number', required: true },
     {
@@ -107,7 +112,18 @@ const BankStatements: CollectionConfig = {
     },
   ],
   hooks: {
-    beforeChange: [validateNotLocked],
+    beforeValidate: [autoPopulateHost],
+    beforeChange: [
+      validateNotLocked,
+      autoPopulateCreatedBy,
+      // ISO-8601 reconciliation timestamp on status → 'reconciled' transition.
+      autoSetTimestamp(
+        'reconciledAt',
+        (data) => (data as { reconciliationStatus?: string }).reconciliationStatus === 'reconciled',
+      ),
+    ],
+    // SOX §404 / ISO-19011: structured event for every bank-statement write.
+    afterChange: [auditTrailAfterChange('bank-statements')],
   },
   timestamps: true,
 };

@@ -33,7 +33,13 @@ const generateURL: GenerateURL<Post | Page | Product> = ({ doc }) => {
     return `${base}/${loc}/posts/${doc.slug}`
   }
 
-  if ('priceInUSD' in doc || 'enableVariants' in doc) {
+  // Currency-agnostic product detector: any `priceIn<CCY>` column or the
+  // ecommerce `enableVariants` flag identifies a product. We don't bind
+  // to a specific currency suffix per Slice WW (canonical currency-defaults).
+  if (
+    'enableVariants' in doc ||
+    Object.keys(doc).some((k) => k.startsWith('priceIn'))
+  ) {
     return `${base}/${loc}/products/${doc.slug}`
   }
 

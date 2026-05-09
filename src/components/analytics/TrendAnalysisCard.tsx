@@ -2,6 +2,17 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { AccountingClient } from '../../sdk/accounting-client';
 import { FinancialAnalysisEngine } from '../../plugins/accounting/financial-analysis';
 
+/**
+ * Trend / forecast card — historical line + 3-month projection.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-8601-1:2019 date-time period
+ * @audit ISO-19011:2018 audit-trail trend-analysis
+ * @quality ISO-25010 functional-suitability historical-projection
+ * @see docs/STANDARDS.md §4.2
+ */
+
+
 interface TrendAnalysisCardProps {
   client: AccountingClient;
   dateRange: {
@@ -23,7 +34,13 @@ function getTrendIcon(trendType: string) {
   }
 }
 
-function TrendRow({ label, data }: { label: string; data: any }) {
+interface TrendData {
+  trend: string;
+  trendStrength: number;
+  forecast?: number[];
+}
+
+function TrendRow({ label, data }: { label: string; data: TrendData }) {
   return (
     <div className="border-b border-gray-100 last:border-b-0 py-3">
       <div className="flex justify-between items-start mb-2">
@@ -49,7 +66,11 @@ function TrendRow({ label, data }: { label: string; data: any }) {
 }
 
 const TrendAnalysisCard: React.FC<TrendAnalysisCardProps> = ({ client: _client, dateRange }) => {
-  const [trend, setTrend] = useState<any>(null);
+  const [trend, setTrend] = useState<{
+    revenue: TrendData;
+    expenses: TrendData;
+    profit: TrendData;
+  } | null>(null);
   const [loading, setLoading] = useState(true);
 
   const loadTrendData = useCallback(async () => {

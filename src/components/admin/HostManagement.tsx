@@ -1,4 +1,15 @@
 /**
+ * Admin host (tenant) management — CRUD table, filters, batch actions.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation admin-CRUD
+ * @security ISO-27002 §5.15 access-control admin-interface
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @audit ISO-19011:2018 audit-trail admin-actions
+ * @see docs/STANDARDS.md §4.4
+ */
+
+/**
  * Host Management Component
  * Admin interface for managing hosts (ERPAX instances)
  * Learned from Ruby ERPAX app/admin/system/domains.rb
@@ -13,6 +24,7 @@ import {
   HostStatusColors,
   HOST_STATUS_TRANSITIONS,
   HostFilterOptions,
+  BatchHostActionRequest,
 } from '@/types/host';
 import { hostService } from '@/services/host.service';
 import HostTable from './HostTable';
@@ -105,7 +117,7 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
     if (sortBy === field) {
       setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
-      setSortBy(field as any);
+      setSortBy(field as 'name' | 'createdAt' | 'status' | 'country');
       setSortOrder('asc');
     }
   };
@@ -188,8 +200,11 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
     try {
       setBatchLoading(true);
       const response = await hostService.batchAction({
-        hostIds: Array.from(selectedHostIds),
-        action: action as any,
+        // Slice CCC: API/type rename host→tenant. selectedHostIds keeps the
+        // legacy variable name for callsite stability; on the wire it is
+        // `tenantIds` per BatchHostActionRequest.
+        tenantIds: Array.from(selectedHostIds),
+        action: action as BatchHostActionRequest['action'],
       });
 
       // Reload hosts

@@ -14,7 +14,7 @@
 /**
  * Calculate total from items array
  */
-export const calculateArrayTotal = (items: any[], fieldName: string): number => {
+export const calculateArrayTotal = (items: Array<Record<string, unknown>>, fieldName: string): number => {
   if (!Array.isArray(items)) return 0;
   return items.reduce((sum, item) => sum + ((item?.[fieldName] as number) || 0), 0);
 };

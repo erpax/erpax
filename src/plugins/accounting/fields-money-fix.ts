@@ -38,10 +38,10 @@ export const createAmountField = (fieldName: string = 'amount') => {
     },
     hooks: {
       beforeValidate: [
-        async ({ data }: any) => {
+        async ({ data }: { data: Record<string, unknown> }) => {
           // If decimal value is provided, convert to cents
           if (data[fieldName] && typeof data[fieldName] === 'string') {
-            const decimal = parseFloat(data[fieldName])
+            const decimal = parseFloat(data[fieldName] as string)
             data[fieldName] = Math.round(decimal * 100)
           }
           return data

@@ -11,7 +11,14 @@
  *   const report = await generateCashFlowForecast({ hostId, periodStart, periodEnd })
  *
  * Safe to `git rm src/plugins/accounting/collections/CashFlowForecast.ts` once verified.
+ *
+ * @accounting IFRS IAS-7 statement-of-cash-flows
+ * @accounting US-GAAP ASC-230 statement-of-cash-flows
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §4.2
  */
-const Stub: any = { slug: 'deprecated-report-stub-cashflowforecast', fields: [] }
+import type { CollectionConfig } from 'payload'
+
+const Stub: CollectionConfig = { slug: 'deprecated-report-stub-cashflowforecast', fields: [] }
 export default Stub
-export const CashFlowForecast: any = Stub
+export const CashFlowForecast: CollectionConfig = Stub

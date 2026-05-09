@@ -49,7 +49,7 @@ export interface TenantConfig {
       prioritySupport?: boolean
       apiAccess?: boolean
       webhooks?: boolean
-      [key: string]: any
+      [key: string]: unknown
     }
     sortOrder: number
   }>
@@ -94,7 +94,7 @@ export interface TenantConfig {
   }
 
   // Metadata
-  metadata?: Record<string, any>
+  metadata?: Record<string, unknown>
 }
 
 /**

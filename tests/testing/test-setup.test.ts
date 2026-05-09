@@ -22,7 +22,7 @@ import type { Payload } from 'payload';
 class MockPayload implements Partial<Payload> {
   private documents: Map<string, Map<string, any>> = new Map();
 
-  async create({ collection, data }: any) {
+  async create({ collection, data }: Record<string, unknown>) {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, new Map());
     }
@@ -32,12 +32,12 @@ class MockPayload implements Partial<Payload> {
     return doc;
   }
 
-  async find({ collection }: any) {
+  async find({ collection }: Record<string, unknown>) {
     const docs = Array.from(this.documents.get(collection)?.values() || []);
     return { docs, totalDocs: docs.length };
   }
 
-  async delete({ collection, id }: any) {
+  async delete({ collection, id }: Record<string, unknown>) {
     this.documents.get(collection)?.delete(id);
     return { id };
   }
@@ -92,7 +92,7 @@ describe('IsolatedTestEnvironment', () => {
 
   beforeEach(() => {
     payload = new MockPayload();
-    env = new IsolatedTestEnvironment(payload as any);
+    env = new IsolatedTestEnvironment(payload as unknown as Payload);
   });
 
   afterEach(async () => {
@@ -101,7 +101,7 @@ describe('IsolatedTestEnvironment', () => {
 
   describe('Setup', () => {
     it('should setup with seed factory', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       const result = await env.setup(factory);
 
       expect(result.success).toBe(true);
@@ -109,13 +109,13 @@ describe('IsolatedTestEnvironment', () => {
     });
 
     it('should handle setup failures', async () => {
-      const factory = new SimpleSeed(null as any);
+      const factory = new SimpleSeed(null as unknown as Payload);
 
       await expect(env.setup(factory)).rejects.toThrow();
     });
 
     it('should track created document IDs', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       await env.setup(factory);
 
       const ids = env.getCreatedIds('items');
@@ -127,7 +127,7 @@ describe('IsolatedTestEnvironment', () => {
 
   describe('Document Access', () => {
     it('should retrieve created ID by collection', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       await env.setup(factory);
 
       const id = env.getCreatedId('items');
@@ -141,7 +141,7 @@ describe('IsolatedTestEnvironment', () => {
     });
 
     it('should retrieve all created documents', async () => {
-      const factory = new SimpleSeed(payload as any, 5);
+      const factory = new SimpleSeed(payload as unknown as Payload, 5);
       await env.setup(factory);
 
       const docs = await env.getCreatedDocuments('items');
@@ -150,7 +150,7 @@ describe('IsolatedTestEnvironment', () => {
     });
 
     it('should return empty array for non-existent collection', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       await env.setup(factory);
 
       const docs = await env.getCreatedDocuments('non-existent');
@@ -160,7 +160,7 @@ describe('IsolatedTestEnvironment', () => {
 
   describe('Cleanup', () => {
     it('should cleanup all documents', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       await env.setup(factory);
 
       expect(payload.getDocuments('items')).toHaveLength(3);
@@ -171,7 +171,7 @@ describe('IsolatedTestEnvironment', () => {
     });
 
     it('should handle multiple teardowns', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       await env.setup(factory);
 
       await env.teardown();
@@ -181,7 +181,7 @@ describe('IsolatedTestEnvironment', () => {
 
   describe('Statistics', () => {
     it('should return seed result statistics', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       await env.setup(factory);
 
       const stats = env.getStats();
@@ -195,7 +195,7 @@ describe('IsolatedTestEnvironment', () => {
     });
 
     it('should track execution time', async () => {
-      const factory = new SimpleSeed(payload as any);
+      const factory = new SimpleSeed(payload as unknown as Payload);
       const result = await env.setup(factory);
 
       expect(result.totalTime).toBeGreaterThan(0);
@@ -205,12 +205,12 @@ describe('IsolatedTestEnvironment', () => {
 
   describe('Multiple Setups', () => {
     it('should prevent multiple setups without teardown', async () => {
-      const factory1 = new SimpleSeed(payload as any, 2);
+      const factory1 = new SimpleSeed(payload as unknown as Payload, 2);
       await env.setup(factory1);
       expect(env.getCreatedIds('items')).toHaveLength(2);
 
       // Should throw on second setup
-      const factory2 = new SimpleSeed(payload as any, 3);
+      const factory2 = new SimpleSeed(payload as unknown as Payload, 3);
       await expect(env.setup(factory2)).rejects.toThrow(
         'Environment already set up',
       );
@@ -226,12 +226,12 @@ describe('ParallelTestRunner', () => {
   });
 
   it('should run tests sequentially when concurrency = 1', async () => {
-    const runner = new ParallelTestRunner(payload as any, 1);
+    const runner = new ParallelTestRunner(payload as unknown as Payload, 1);
 
     const results = await runner.runParallel([
       {
         name: 'Test 1',
-        factory: new SimpleSeed(payload as any, 1),
+        factory: new SimpleSeed(payload as unknown as Payload, 1),
         test: async (env) => {
           const docs = await env.getCreatedDocuments('items');
           return docs.length === 1;
@@ -239,7 +239,7 @@ describe('ParallelTestRunner', () => {
       },
       {
         name: 'Test 2',
-        factory: new SimpleSeed(payload as any, 2),
+        factory: new SimpleSeed(payload as unknown as Payload, 2),
         test: async (env) => {
           const docs = await env.getCreatedDocuments('items');
           return docs.length === 2;
@@ -253,13 +253,13 @@ describe('ParallelTestRunner', () => {
   });
 
   it('should run tests in parallel', async () => {
-    const runner = new ParallelTestRunner(payload as any, 2);
+    const runner = new ParallelTestRunner(payload as unknown as Payload, 2);
     const timestamps: number[] = [];
 
     const results = await runner.runParallel([
       {
         name: 'Parallel Test 1',
-        factory: new SimpleSeed(payload as any),
+        factory: new SimpleSeed(payload as unknown as Payload),
         test: async () => {
           timestamps.push(Date.now());
           return true;
@@ -267,7 +267,7 @@ describe('ParallelTestRunner', () => {
       },
       {
         name: 'Parallel Test 2',
-        factory: new SimpleSeed(payload as any),
+        factory: new SimpleSeed(payload as unknown as Payload),
         test: async () => {
           timestamps.push(Date.now());
           return true;
@@ -279,12 +279,12 @@ describe('ParallelTestRunner', () => {
   });
 
   it('should handle test failures', async () => {
-    const runner = new ParallelTestRunner(payload as any, 1);
+    const runner = new ParallelTestRunner(payload as unknown as Payload, 1);
 
     const results = await runner.runParallel([
       {
         name: 'Failing Test',
-        factory: new SimpleSeed(null as any),
+        factory: new SimpleSeed(null as unknown as Payload),
         test: async () => true,
       },
     ]);
@@ -293,14 +293,14 @@ describe('ParallelTestRunner', () => {
   });
 
   it('should respect max concurrency', async () => {
-    const runner = new ParallelTestRunner(payload as any, 2);
+    const runner = new ParallelTestRunner(payload as unknown as Payload, 2);
     let maxConcurrent = 0;
     let currentConcurrent = 0;
 
     const results = await runner.runParallel(
       Array.from({ length: 10 }, (_, i) => ({
         name: `Test ${i}`,
-        factory: new SimpleSeed(payload as any),
+        factory: new SimpleSeed(payload as unknown as Payload),
         test: async () => {
           currentConcurrent++;
           maxConcurrent = Math.max(maxConcurrent, currentConcurrent);
@@ -316,12 +316,12 @@ describe('ParallelTestRunner', () => {
   });
 
   it('should include test names in results', async () => {
-    const runner = new ParallelTestRunner(payload as any, 1);
+    const runner = new ParallelTestRunner(payload as unknown as Payload, 1);
 
     const results = await runner.runParallel([
       {
         name: 'My Test Name',
-        factory: new SimpleSeed(payload as any),
+        factory: new SimpleSeed(payload as unknown as Payload),
         test: async () => true,
       },
     ]);
@@ -494,11 +494,11 @@ describe('Integration: Multiple Environments', () => {
   });
 
   it('should maintain isolation between environments', async () => {
-    const env1 = new IsolatedTestEnvironment(payload as any);
-    const env2 = new IsolatedTestEnvironment(payload as any);
+    const env1 = new IsolatedTestEnvironment(payload as unknown as Payload);
+    const env2 = new IsolatedTestEnvironment(payload as unknown as Payload);
 
-    await env1.setup(new SimpleSeed(payload as any, 2));
-    await env2.setup(new SimpleSeed(payload as any, 3));
+    await env1.setup(new SimpleSeed(payload as unknown as Payload, 2));
+    await env2.setup(new SimpleSeed(payload as unknown as Payload, 3));
 
     const ids1 = env1.getCreatedIds('items');
     const ids2 = env2.getCreatedIds('items');

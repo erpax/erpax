@@ -14,7 +14,7 @@
 export type FieldType = 'text' | 'email' | 'number' | 'integer' | 'date' | 'boolean' | 'select' | 'relationship'
 
 export interface CoercionResult {
-  value: any
+  value: unknown
   success: boolean
   error?: string
   coerced?: boolean
@@ -28,9 +28,9 @@ export interface ValidationResult {
 }
 
 export interface FieldTypeValidator {
-  validate(value: any): ValidationResult
-  coerce(value: any): CoercionResult
-  canCoerce(value: any): boolean
+  validate(value: unknown): ValidationResult
+  coerce(value: unknown): CoercionResult
+  canCoerce(value: unknown): boolean
 }
 
 export interface AccessConfig {
@@ -54,7 +54,7 @@ export interface RelationshipInfo {
  * Coerce a value to the target field type with automatic type conversion
  * Supports compatible type conversions: "123" -> 123, "true" -> true, etc.
  */
-export function coerceValue(fieldType: FieldType, value: any): CoercionResult {
+export function coerceValue(fieldType: FieldType, value: unknown): CoercionResult {
   if (value === null || value === undefined) {
     return {
       value: value,
@@ -92,7 +92,7 @@ export function coerceValue(fieldType: FieldType, value: any): CoercionResult {
 /**
  * Validate a value against a field type without coercion
  */
-export function validateFieldType(fieldType: FieldType, value: any): ValidationResult {
+export function validateFieldType(fieldType: FieldType, value: unknown): ValidationResult {
   if (value === null || value === undefined) {
     return {
       valid: true,
@@ -131,7 +131,7 @@ export function validateFieldType(fieldType: FieldType, value: any): ValidationR
 // Text Field Validation & Coercion
 // =============================================================================
 
-function coerceText(value: any): CoercionResult {
+function coerceText(value: unknown): CoercionResult {
   if (typeof value === 'string') {
     return { value, success: true, coerced: false }
   }
@@ -155,7 +155,7 @@ function coerceText(value: any): CoercionResult {
   return { value, success: false, error: `Cannot coerce ${typeof value} to text` }
 }
 
-function validateText(value: any): ValidationResult {
+function validateText(value: unknown): ValidationResult {
   return {
     valid: typeof value === 'string',
     error: typeof value !== 'string' ? 'Must be a string' : undefined,
@@ -170,7 +170,7 @@ function validateText(value: any): ValidationResult {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-function coerceEmail(value: any): CoercionResult {
+function coerceEmail(value: unknown): CoercionResult {
   if (typeof value === 'string') {
     if (EMAIL_REGEX.test(value)) {
       return { value, success: true, coerced: false }
@@ -187,7 +187,7 @@ function coerceEmail(value: any): CoercionResult {
   return { value, success: false, error: 'Cannot coerce to valid email' }
 }
 
-function validateEmail(value: any): ValidationResult {
+function validateEmail(value: unknown): ValidationResult {
   if (typeof value !== 'string') {
     return {
       valid: false,
@@ -217,7 +217,7 @@ function validateEmail(value: any): ValidationResult {
 // Number Field Validation & Coercion
 // =============================================================================
 
-function coerceNumber(value: any): CoercionResult {
+function coerceNumber(value: unknown): CoercionResult {
   if (typeof value === 'number' && !isNaN(value)) {
     return { value, success: true, coerced: false }
   }
@@ -236,7 +236,7 @@ function coerceNumber(value: any): CoercionResult {
   return { value, success: false, error: `Cannot coerce ${typeof value} to number` }
 }
 
-function validateNumber(value: any): ValidationResult {
+function validateNumber(value: unknown): ValidationResult {
   const valid = typeof value === 'number' && !isNaN(value)
   return {
     valid,
@@ -250,7 +250,7 @@ function validateNumber(value: any): ValidationResult {
 // Integer Field Validation & Coercion
 // =============================================================================
 
-function coerceInteger(value: any): CoercionResult {
+function coerceInteger(value: unknown): CoercionResult {
   const numberResult = coerceNumber(value)
   if (!numberResult.success) {
     return numberResult
@@ -268,7 +268,7 @@ function coerceInteger(value: any): CoercionResult {
   return { value: num, success: true, coerced: numberResult.coerced }
 }
 
-function validateInteger(value: any): ValidationResult {
+function validateInteger(value: unknown): ValidationResult {
   if (typeof value !== 'number' || !Number.isInteger(value)) {
     return {
       valid: false,
@@ -289,7 +289,7 @@ function validateInteger(value: any): ValidationResult {
 // Date Field Validation & Coercion
 // =============================================================================
 
-function coerceDate(value: any): CoercionResult {
+function coerceDate(value: unknown): CoercionResult {
   if (value instanceof Date && !isNaN(value.getTime())) {
     return { value, success: true, coerced: false }
   }
@@ -313,7 +313,7 @@ function coerceDate(value: any): CoercionResult {
   return { value, success: false, error: 'Cannot coerce to valid date' }
 }
 
-function validateDate(value: any): ValidationResult {
+function validateDate(value: unknown): ValidationResult {
   const valid = value instanceof Date && !isNaN(value.getTime())
   return {
     valid,
@@ -327,7 +327,7 @@ function validateDate(value: any): ValidationResult {
 // Boolean Field Validation & Coercion
 // =============================================================================
 
-function coerceBoolean(value: any): CoercionResult {
+function coerceBoolean(value: unknown): CoercionResult {
   if (typeof value === 'boolean') {
     return { value, success: true, coerced: false }
   }
@@ -349,7 +349,7 @@ function coerceBoolean(value: any): CoercionResult {
   return { value, success: false, error: `Cannot coerce ${typeof value} to boolean` }
 }
 
-function validateBoolean(value: any): ValidationResult {
+function validateBoolean(value: unknown): ValidationResult {
   return {
     valid: typeof value === 'boolean',
     error: typeof value !== 'boolean' ? 'Must be a boolean' : undefined,
@@ -362,13 +362,13 @@ function validateBoolean(value: any): ValidationResult {
 // Select/Enum Field Validation & Coercion
 // =============================================================================
 
-function coerceSelect(value: any): CoercionResult {
+function coerceSelect(value: unknown): CoercionResult {
   // For select fields, we don't auto-coerce - the value must be exact
   // This is handled by the caller with knowledge of valid options
   return { value, success: true, coerced: false }
 }
 
-function validateSelect(value: any): ValidationResult {
+function validateSelect(value: unknown): ValidationResult {
   // Select validation depends on the options available
   // This is a basic check that the value is serializable
   if (typeof value === 'string' || typeof value === 'number') {
@@ -391,7 +391,7 @@ function validateSelect(value: any): ValidationResult {
 // Relationship Field Validation & Coercion
 // =============================================================================
 
-function coerceRelationship(value: any): CoercionResult {
+function coerceRelationship(value: unknown): CoercionResult {
   // Relationships can be IDs (string/number) or objects with id
   if (typeof value === 'string' || typeof value === 'number') {
     return { value, success: true, coerced: false }
@@ -404,7 +404,7 @@ function coerceRelationship(value: any): CoercionResult {
   return { value, success: false, error: 'Invalid relationship format' }
 }
 
-function validateRelationship(value: any): ValidationResult {
+function validateRelationship(value: unknown): ValidationResult {
   if (typeof value === 'string' || typeof value === 'number') {
     return {
       valid: true,
@@ -435,15 +435,15 @@ function validateRelationship(value: any): ValidationResult {
 
 export function createFieldValidator(fieldType: FieldType): FieldTypeValidator {
   return {
-    validate(value: any): ValidationResult {
+    validate(value: unknown): ValidationResult {
       return validateFieldType(fieldType, value)
     },
 
-    coerce(value: any): CoercionResult {
+    coerce(value: unknown): CoercionResult {
       return coerceValue(fieldType, value)
     },
 
-    canCoerce(value: any): boolean {
+    canCoerce(value: unknown): boolean {
       const result = coerceValue(fieldType, value)
       return result.success
     },

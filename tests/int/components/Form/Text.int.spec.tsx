@@ -8,7 +8,7 @@ import { Text } from '@/components/blocks/Form/Text'
 import { FormHarness, renderForm } from './renderWithRHF'
 
 vi.mock('@/components/blocks/Form/FormField', () => ({
-  FormField: ({ name, label, required, width: _width, errors, children }: any) => (
+  FormField: ({ name, label, required, width: _width, errors, children }: Record<string, unknown>) => (
     <div data-testid={`form-field-${name}`}>
       {label && <label>{label}</label>}
       {required && <span className="required">*</span>}

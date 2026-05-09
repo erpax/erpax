@@ -110,7 +110,7 @@ export function andAccess(...accessFns: Access[]): Access {
  * Builder: Create scoped access (returns query with host filter)
  * PATTERN: For all scoped collections
  */
-export function scopedAccess(additionalWhere?: Record<string, any>): Access {
+export function scopedAccess(additionalWhere?: Record<string, unknown>): Access {
   return async ({ req }) => {
     const user = getUserContext(req)
     if (!user) return false

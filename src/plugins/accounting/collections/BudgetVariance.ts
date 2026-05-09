@@ -11,7 +11,14 @@
  *   const report = await generateBudgetVariance({ hostId, periodStart, periodEnd })
  *
  * Safe to `git rm src/plugins/accounting/collections/BudgetVariance.ts` once verified.
+ *
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-270 interim-reporting
+ * @audit ISO-19011:2018 audit-trail variance-analysis
+ * @see docs/STANDARDS.md §4.2
  */
-const Stub: any = { slug: 'deprecated-report-stub-budgetvariance', fields: [] }
+import type { CollectionConfig } from 'payload'
+
+const Stub: CollectionConfig = { slug: 'deprecated-report-stub-budgetvariance', fields: [] }
 export default Stub
-export const BudgetVariance: any = Stub
+export const BudgetVariance: CollectionConfig = Stub

@@ -1,4 +1,15 @@
 /**
+ * Level-2 export integration seed — multi-template, multi-format fixtures.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO/IEC-29500:2016 office-open-xml export-format
+ * @standard ECMA-376 office-open-xml
+ * @audit ISO-19011:2018 audit-trail test-data
+ * @quality ISO-25010 maintainability test-fixtures
+ * @see docs/STANDARDS.md §4.3
+ */
+
+/**
  * Level 2: OPTIMAL Integration Test Seeds for Export Plugin
  * Realistic business data with multi-document relationships
  * Setup time: 2-5 seconds
@@ -221,7 +232,7 @@ export class OptimalBatchExportSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -229,14 +240,14 @@ export class OptimalBatchExportSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'batch-exports') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'integration',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -452,7 +463,7 @@ export class OptimalDataTransformationSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -460,14 +471,14 @@ export class OptimalDataTransformationSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'data-transformations') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'integration',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -554,7 +565,7 @@ export class OptimalExportExecutionSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -562,14 +573,14 @@ export class OptimalExportExecutionSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'export-executions') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'integration',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -639,7 +650,7 @@ export class Level2ExportSuite extends TestSeedFactory {
 
   private aggregateCreatedIds(seeds: TestSeedFactory[]): void {
     seeds.forEach(seed => {
-      const seedContext = (seed as any).context;
+      const seedContext = (seed as { context?: { createdIds?: Map<string, Set<string>> } }).context;
       if (seedContext && seedContext.createdIds) {
         for (const [collection, ids] of seedContext.createdIds) {
           if (!this.context!.createdIds.has(collection)) {
@@ -654,7 +665,7 @@ export class Level2ExportSuite extends TestSeedFactory {
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'integration',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: 0,

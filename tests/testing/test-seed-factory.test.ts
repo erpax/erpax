@@ -23,7 +23,7 @@ import {
 class MockPayload implements Partial<Payload> {
   private documents: Map<string, Map<string, any>> = new Map();
 
-  async create({ collection, data }: any) {
+  async create({ collection, data }: Record<string, unknown>) {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, new Map());
     }
@@ -33,18 +33,18 @@ class MockPayload implements Partial<Payload> {
     return doc;
   }
 
-  async find({ collection, where }: any) {
+  async find({ collection, where }: Record<string, unknown>) {
     const docs = Array.from(this.documents.get(collection)?.values() || []);
     return { docs, totalDocs: docs.length };
   }
 
-  async delete({ collection, id }: any) {
+  async delete({ collection, id }: Record<string, unknown>) {
     const doc = this.documents.get(collection)?.get(id);
     this.documents.get(collection)?.delete(id);
     return doc;
   }
 
-  async update({ collection, id, data }: any) {
+  async update({ collection, id, data }: Record<string, unknown>) {
     const doc = this.documents.get(collection)?.get(id);
     if (!doc) throw new Error('Not found');
     const updated = { ...doc, ...data };
@@ -141,7 +141,7 @@ describe('TestSeedFactory - Core Functionality', () => {
 
   beforeEach(() => {
     payload = new MockPayload();
-    factory = new TestImplementation(payload as any);
+    factory = new TestImplementation(payload as unknown as Payload);
   });
 
   afterEach(async () => {
@@ -173,7 +173,7 @@ describe('TestSeedFactory - Core Functionality', () => {
     });
 
     it('should handle errors gracefully', async () => {
-      const badFactory = new TestImplementation(null as any);
+      const badFactory = new TestImplementation(null as unknown as Payload);
       const result = await badFactory.seed();
 
       expect(result.success).toBe(false);
@@ -342,7 +342,7 @@ describe('TransactionalSeedFactory', () => {
 
   beforeEach(() => {
     payload = new MockPayload();
-    factory = new TestTransactionalImplementation(payload as any);
+    factory = new TestTransactionalImplementation(payload as unknown as Payload);
   });
 
   afterEach(async () => {
@@ -383,7 +383,7 @@ describe('Edge Cases & Error Handling', () => {
   });
 
   it('should handle null payload gracefully', async () => {
-    const factory = new TestImplementation(null as any);
+    const factory = new TestImplementation(null as unknown as Payload);
     const result = await factory.seed();
 
     expect(result.success).toBe(false);
@@ -391,14 +391,14 @@ describe('Edge Cases & Error Handling', () => {
   });
 
   it('should handle cleanup without seed', async () => {
-    const factory = new TestImplementation(payload as any);
+    const factory = new TestImplementation(payload as unknown as Payload);
 
     // Should not throw if cleanup called without seed
     await expect(factory.cleanup()).resolves.not.toThrow();
   });
 
   it('should handle multiple cleanups safely', async () => {
-    const factory = new TestImplementation(payload as any);
+    const factory = new TestImplementation(payload as unknown as Payload);
     await factory.seed();
 
     await factory.cleanup();

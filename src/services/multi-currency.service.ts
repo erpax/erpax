@@ -1,17 +1,27 @@
 /**
  * Multi-Currency GL Service — FX translation, gain/loss, revaluation.
  *
+ * Per-tenant defaults derive from the tenant's country via
+ * {@link getTenantDefaults} in `@/config/regional-defaults`. When no
+ * country is set, fall back to the main config (env-aware) and finally
+ * to the house defaults (`EUR` / `BG` / `bg-BG`).
+ *
+ * Balance-check duplications are eliminated — every debit/credit summation
+ * routes through the canonical `DebitCreditLogic` (see Slice WW notes).
+ *
  * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
  * @standard ISO-8601-1:2019 date-time rate-date
- * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+ * @standard BCP-47 language-tag locale-formatting
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
  * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
- * @accounting US-GAAP ASC-830 foreign-currency-matters
+ * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
  * @audit ISO-19011:2018 audit-trail
- * @see docs/STANDARDS.md §4.2
+ * @see docs/STANDARDS.md §4.1 §4.2
+ * @see src/config/regional-defaults.ts
  */
 
 import {
-  Currency,
   ExchangeRate,
   CurrencyConfig,
   CurrencyGainLoss,
@@ -21,7 +31,15 @@ import {
   CurrencyRevaluation,
   ExchangeRateHistory,
 } from '@/types/multi-currency';
+import {
+  type Currency,
+  SUPPORTED_CURRENCIES,
+  isIso4217Currency,
+  isSupportedCurrency,
+  getTenantDefaults,
+} from '@/config/regional-defaults';
 import { journalEntryService } from './journal-entry.service';
+import { DebitCreditLogic } from '@/plugins/accounting/debit-credit';
 
 interface _GLBalance {
   accountId: string;
@@ -37,15 +55,80 @@ class MultiCurrencyService {
   private currencyGainLosses: Map<string, CurrencyGainLoss> = new Map();
 
   /**
-   * Set up currency configuration for a host
+   * Set up currency configuration for a tenant.
+   *
+   * Derives missing fields from the tenant's country via the canonical
+   * `getTenantDefaults` (`@/config/regional-defaults`):
+   *   - `baseCurrency`     ← falls back to the country's preferred ISO 4217 code
+   *                         (or `DEFAULT_CURRENCY` if the country is unknown)
+   *   - `supportedCurrencies` ← falls back to the canonical full list
+   *                             (`SUPPORTED_CURRENCIES`, EUR-first / USD-last)
+   *
+   * Validates `baseCurrency` against {@link isSupportedCurrency}; throws on
+   * an unrecognised code. Use this everywhere a tenant currency profile
+   * is established — never inline `'EUR'` or hand-built currency arrays.
    */
   async setupCurrencyConfig(
     tenantId: string,
-    config: CurrencyConfig
+    config: Partial<CurrencyConfig> & { tenantId: string },
+    tenantCountry?: string | null
   ): Promise<CurrencyConfig> {
-    this.currencyConfigs.set(tenantId, config);
-    console.log(`✓ Currency config set for ${tenantId}: Base currency = ${config.baseCurrency}`);
-    return config;
+    const defaults = getTenantDefaults(tenantCountry);
+    const baseCurrency = (config.baseCurrency ?? defaults.currency) as Currency;
+
+    // International-first: any ISO 4217 §5 alphabetic code is accepted.
+    // The curated SUPPORTED_CURRENCIES list is just the admin-UI
+    // quick-select cohort; tenants in NOK / SEK / ZAR / KRW / etc. are
+    // welcome — only the regex-shape gate applies here.
+    if (!isIso4217Currency(baseCurrency)) {
+      throw new Error(
+        `Invalid base currency '${String(baseCurrency)}' for tenant ${tenantId}: must be an ISO 4217 §5 alphabetic code (e.g. EUR, USD, NOK).`,
+      );
+    }
+    if (!isSupportedCurrency(baseCurrency)) {
+      console.warn(
+        `[multi-currency] Tenant ${tenantId} configured with non-curated base currency '${baseCurrency}' — accepted, but no built-in admin-UI dropdown entry. Curated set: ${SUPPORTED_CURRENCIES.join(', ')}`,
+      );
+    }
+    const resolved: CurrencyConfig = {
+      tenantId: config.tenantId,
+      baseCurrency,
+      supportedCurrencies: (config.supportedCurrencies && config.supportedCurrencies.length > 0
+        ? config.supportedCurrencies
+        : [...SUPPORTED_CURRENCIES]) as Currency[],
+      unrealizedGainAccountId: config.unrealizedGainAccountId ?? '',
+      realizedGainAccountId: config.realizedGainAccountId ?? '',
+      exchangeRateSource: config.exchangeRateSource ?? 'manual',
+      rateUpdateFrequency: config.rateUpdateFrequency ?? 'daily',
+      status: config.status ?? 'active',
+    };
+    this.currencyConfigs.set(tenantId, resolved);
+    console.log(
+      `✓ Currency config set for ${tenantId}: base=${resolved.baseCurrency}, supported=[${resolved.supportedCurrencies.join(', ')}]`
+    );
+    return resolved;
+  }
+
+  /**
+   * Get the currency configuration for a tenant, lazy-initialising it
+   * from the tenant's country defaults if no explicit setup was done.
+   */
+  getOrInitConfig(tenantId: string, tenantCountry?: string | null): CurrencyConfig {
+    const existing = this.currencyConfigs.get(tenantId);
+    if (existing) return existing;
+    const defaults = getTenantDefaults(tenantCountry);
+    const lazyConfig: CurrencyConfig = {
+      tenantId,
+      baseCurrency: defaults.currency,
+      supportedCurrencies: [...SUPPORTED_CURRENCIES] as Currency[],
+      unrealizedGainAccountId: '',
+      realizedGainAccountId: '',
+      exchangeRateSource: 'manual',
+      rateUpdateFrequency: 'daily',
+      status: 'active',
+    };
+    this.currencyConfigs.set(tenantId, lazyConfig);
+    return lazyConfig;
   }
 
   /**
@@ -217,7 +300,7 @@ class MultiCurrencyService {
       throw new Error(`No currency config found for host ${tenantId}`);
     }
 
-    const lines: any[] = [];
+    const lines: Array<{ accountId: string; description: string; debit: number; credit: number }> = [];
 
     // Debit unrealized gain account
     if (adjustment.totalGain > 0) {
@@ -288,7 +371,13 @@ class MultiCurrencyService {
     );
 
     // Convert to multi-currency trial balance
-    const accountsInBaseCurrency: Array<any> = [];
+    const accountsInBaseCurrency: Array<{
+      accountId: string;
+      currency: string;
+      originalBalance: number;
+      exchangeRate: number;
+      balanceInBaseCurrency: number;
+    }> = [];
     let totalDebitsOriginal = 0;
     let totalCreditsOriginal = 0;
     let totalDebitsBase = 0;
@@ -301,14 +390,18 @@ class MultiCurrencyService {
       totalDebitsOriginal += debit;
       totalCreditsOriginal += credit;
 
-      // For now, assume GL balances are already in base currency
-      // In production: track currency per transaction and sum properly
+      // For now, assume GL balances are debit-normal (asset) and that all
+      // postings are already in base currency. In production this iteration
+      // should branch on the account's normalBalance — `DebitCreditLogic.getBalance`
+      // is the canonical implementation; pass `'asset'` for debit-normal,
+      // `'liability'` for credit-normal once account-type is plumbed through.
+      const baseBalance = DebitCreditLogic.getBalance('asset', debit, credit);
       accountsInBaseCurrency.push({
         accountId,
         currency: baseCurrency,
-        originalBalance: debit - credit,
+        originalBalance: baseBalance,
         exchangeRate: 1,
-        balanceInBaseCurrency: debit - credit,
+        balanceInBaseCurrency: baseBalance,
       });
 
       totalDebitsBase += debit;

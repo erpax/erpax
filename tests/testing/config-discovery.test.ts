@@ -1,3 +1,4 @@
+import type { Config } from '@/payload-types'
 /**
  * Config Discovery tests — dynamic Payload schema extraction.
  *
@@ -15,7 +16,7 @@ import { PayloadConfigDiscovery, initializeDiscovery, resetDiscovery } from '../
  * Mock Payload for testing config discovery
  */
 class MockPayload implements Partial<Payload> {
-  config: any = {
+  config: Partial<Config> = {
     collections: [
       {
         slug: 'users',
@@ -63,7 +64,7 @@ describe('PayloadConfigDiscovery', () => {
   beforeEach(() => {
     resetDiscovery();
     payload = new MockPayload();
-    discovery = new PayloadConfigDiscovery(payload as any);
+    discovery = new PayloadConfigDiscovery(payload as unknown as Payload);
   });
 
   describe('Initialization', () => {
@@ -241,21 +242,21 @@ describe('PayloadConfigDiscovery', () => {
   describe('Global Discovery Instance', () => {
     it('should initialize global discovery', async () => {
       resetDiscovery();
-      const instance = initializeDiscovery(payload as any);
+      const instance = initializeDiscovery(payload as unknown as Payload);
       expect(instance).toBeDefined();
     });
 
     it('should return same instance on subsequent calls', async () => {
-      const instance1 = initializeDiscovery(payload as any);
-      const instance2 = initializeDiscovery(payload as any);
+      const instance1 = initializeDiscovery(payload as unknown as Payload);
+      const instance2 = initializeDiscovery(payload as unknown as Payload);
       expect(instance1).toBe(instance2);
     });
 
     it('should reset discovery instance', async () => {
-      initializeDiscovery(payload as any);
+      initializeDiscovery(payload as unknown as Payload);
       resetDiscovery();
       // Reinitialize should create new instance
-      const newInstance = initializeDiscovery(payload as any);
+      const newInstance = initializeDiscovery(payload as unknown as Payload);
       expect(newInstance).toBeDefined();
     });
   });

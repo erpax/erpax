@@ -27,7 +27,7 @@ import type { Payload } from 'payload';
 class MockPayload implements Partial<Payload> {
   private documents: Map<string, Map<string, any>> = new Map();
 
-  async create({ collection, data }: any) {
+  async create({ collection, data }: Record<string, unknown>) {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, new Map());
     }
@@ -37,7 +37,7 @@ class MockPayload implements Partial<Payload> {
     return doc;
   }
 
-  async find({ collection, where }: any) {
+  async find({ collection, where }: Record<string, unknown>) {
     const docs = Array.from(this.documents.get(collection)?.values() || []);
     if (where?.id?.in) {
       return {
@@ -48,7 +48,7 @@ class MockPayload implements Partial<Payload> {
     return { docs, totalDocs: docs.length };
   }
 
-  async delete({ collection, id }: any) {
+  async delete({ collection, id }: Record<string, unknown>) {
     this.documents.get(collection)?.delete(id);
     return { id };
   }
@@ -70,8 +70,8 @@ describe('GAP 1: ID Collision Prevention (environmentId)', () => {
   });
 
   it('should generate unique environment IDs for parallel tests', async () => {
-    const seed1 = new MinimalHostSeed(payload as any);
-    const seed2 = new MinimalHostSeed(payload as any);
+    const seed1 = new MinimalHostSeed(payload as unknown as Payload);
+    const seed2 = new MinimalHostSeed(payload as unknown as Payload);
 
     const result1 = await seed1.seed();
     const result2 = await seed2.seed();
@@ -86,8 +86,8 @@ describe('GAP 1: ID Collision Prevention (environmentId)', () => {
   });
 
   it('should track created IDs separately in isolated environments', async () => {
-    const seed1 = new MinimalHostSeed(payload as any);
-    const seed2 = new MinimalHostSeed(payload as any);
+    const seed1 = new MinimalHostSeed(payload as unknown as Payload);
+    const seed2 = new MinimalHostSeed(payload as unknown as Payload);
 
     await seed1.seed();
     await seed2.seed();
@@ -113,7 +113,7 @@ describe('GAP 2: Multiple Setups Prevention', () => {
 
   beforeEach(() => {
     payload = new MockPayload();
-    env = new IsolatedTestEnvironment(payload as any);
+    env = new IsolatedTestEnvironment(payload as unknown as Payload);
   });
 
   afterEach(async () => {
@@ -121,21 +121,21 @@ describe('GAP 2: Multiple Setups Prevention', () => {
   });
 
   it('should prevent multiple setups in same environment', async () => {
-    const seed1 = new MinimalHostSeed(payload as any);
+    const seed1 = new MinimalHostSeed(payload as unknown as Payload);
     await env.setup(seed1);
 
-    const seed2 = new MinimalHostSeed(payload as any);
+    const seed2 = new MinimalHostSeed(payload as unknown as Payload);
     await expect(env.setup(seed2)).rejects.toThrow(
       'Environment already set up. Call teardown() before calling setup() again.',
     );
   });
 
   it('should allow setup after teardown', async () => {
-    const seed1 = new MinimalHostSeed(payload as any);
+    const seed1 = new MinimalHostSeed(payload as unknown as Payload);
     await env.setup(seed1);
     await env.teardown();
 
-    const seed2 = new MinimalHostSeed(payload as any);
+    const seed2 = new MinimalHostSeed(payload as unknown as Payload);
     await expect(env.setup(seed2)).resolves.not.toThrow();
   });
 });
@@ -148,7 +148,7 @@ describe('GAP 3: Cleanup Status Reporting', () => {
   });
 
   it('should return CleanupResult with success status', async () => {
-    const seed = new MinimalHostSeed(payload as any);
+    const seed = new MinimalHostSeed(payload as unknown as Payload);
     await seed.seed();
 
     const cleanupResult = await seed.cleanup();
@@ -161,7 +161,7 @@ describe('GAP 3: Cleanup Status Reporting', () => {
   });
 
   it('should track cleanup failures', async () => {
-    const seed = new MinimalHostSeed(payload as any);
+    const seed = new MinimalHostSeed(payload as unknown as Payload);
     await seed.seed();
 
     // Simulate a deletion failure by using a broken ID
@@ -174,7 +174,7 @@ describe('GAP 3: Cleanup Status Reporting', () => {
   });
 
   it('should report cleanup statistics', async () => {
-    const seed = new Level1SeedSuite(payload as any);
+    const seed = new Level1SeedSuite(payload as unknown as Payload);
     const seedResult = await seed.seed();
 
     if (seedResult.success) {
@@ -197,7 +197,7 @@ describe('GAP 4: Seed Data Validation', () => {
 
   describe('MinimalHostSeed validation', () => {
     it('should validate required host fields', async () => {
-      const seed = new MinimalHostSeed(payload as any);
+      const seed = new MinimalHostSeed(payload as unknown as Payload);
       seed['context'] = seed['createContext']('unit');
 
       // Missing name
@@ -228,11 +228,11 @@ describe('GAP 4: Seed Data Validation', () => {
 
   describe('MinimalGLAccountsSeed validation', () => {
     it('should validate required GL account fields', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       const hostResult = await hostSeed.seed();
       const hostId = Array.from(hostSeed['context']!.createdIds.get('hostId') || new Set())[0];
 
-      const glSeed = new MinimalGLAccountsSeed(payload as any, hostId);
+      const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, hostId);
       glSeed['context'] = glSeed['createContext']('unit');
 
       // Missing accountNumber
@@ -279,7 +279,7 @@ describe('GAP 4: Seed Data Validation', () => {
 
   describe('MinimalUsersSeed validation', () => {
     it('should validate required user fields', async () => {
-      const seed = new MinimalUsersSeed(payload as any);
+      const seed = new MinimalUsersSeed(payload as unknown as Payload);
       seed['context'] = seed['createContext']('unit');
 
       // Missing email
@@ -322,11 +322,11 @@ describe('GAP 4: Seed Data Validation', () => {
 
   describe('MinimalCurrencyRatesSeed validation', () => {
     it('should validate required currency rate fields', async () => {
-      const hostSeed = new MinimalHostSeed(payload as any);
+      const hostSeed = new MinimalHostSeed(payload as unknown as Payload);
       const hostResult = await hostSeed.seed();
       const hostId = Array.from(hostSeed['context']!.createdIds.get('hostId') || new Set())[0];
 
-      const rateSeed = new MinimalCurrencyRatesSeed(payload as any, hostId);
+      const rateSeed = new MinimalCurrencyRatesSeed(payload as unknown as Payload, hostId);
       rateSeed['context'] = rateSeed['createContext']('unit');
 
       // Missing fromCurrency
@@ -395,7 +395,7 @@ describe('GAP 4b: Duplicate ID Detection (Set-based tracking)', () => {
   });
 
   it('should prevent duplicate ID tracking with Set', async () => {
-    const seed = new MinimalHostSeed(payload as any);
+    const seed = new MinimalHostSeed(payload as unknown as Payload);
     await seed.seed();
 
     const hostIds = seed['context']?.createdIds.get('hosts');
@@ -410,7 +410,7 @@ describe('GAP 4b: Duplicate ID Detection (Set-based tracking)', () => {
   });
 
   it('should use Set for efficient ID tracking', async () => {
-    const seed = new Level1SeedSuite(payload as any);
+    const seed = new Level1SeedSuite(payload as unknown as Payload);
     const result = await seed.seed();
 
     if (result.success) {
@@ -429,7 +429,7 @@ describe('Integration: All Blocking Gaps Fixed', () => {
   });
 
   it('should complete full Level 1 seed suite with all fixes', async () => {
-    const suite = new Level1SeedSuite(payload as any);
+    const suite = new Level1SeedSuite(payload as unknown as Payload);
     const seedResult = await suite.seed();
 
     expect(seedResult.success).toBe(true);
@@ -444,9 +444,9 @@ describe('Integration: All Blocking Gaps Fixed', () => {
   });
 
   it('should handle complete seed lifecycle with isolation', async () => {
-    const env = new IsolatedTestEnvironment(payload as any);
+    const env = new IsolatedTestEnvironment(payload as unknown as Payload);
 
-    const suite = new Level1SeedSuite(payload as any);
+    const suite = new Level1SeedSuite(payload as unknown as Payload);
     const setupResult = await env.setup(suite);
 
     expect(setupResult.success).toBe(true);

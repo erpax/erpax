@@ -1,3 +1,4 @@
+import type { Payload } from 'payload'
 /**
  * Export Plugin Integration Tests — data → generator → file pipeline.
  *
@@ -114,9 +115,9 @@ describe('Export Plugin Integration', () => {
 
     test('should generate all three statements and export', async () => {
       const results = {
-        balanceSheet: null as any,
-        incomeStatement: null as any,
-        cashFlow: null as any,
+        balanceSheet: null as unknown as Payload,
+        incomeStatement: null as unknown as Payload,
+        cashFlow: null as unknown as Payload,
       }
 
       // Generate Balance Sheet

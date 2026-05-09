@@ -1,4 +1,15 @@
 /**
+ * Level-3 export advanced seed — large-volume, edge-case fixtures for end-to-end tests.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO/IEC-29500:2016 office-open-xml export-format
+ * @standard ECMA-376 office-open-xml
+ * @audit ISO-19011:2018 audit-trail test-data
+ * @quality ISO-25010 maintainability test-fixtures
+ * @see docs/STANDARDS.md §4.3
+ */
+
+/**
  * Level 3: OPTIMAL E2E Test Seeds for Export Plugin
  * Complete business cycles, real-time exports, streaming data
  * Setup time: 5-15 seconds
@@ -136,7 +147,7 @@ export class OptimalRealTimeExportSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -144,14 +155,14 @@ export class OptimalRealTimeExportSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'realtime-exports') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'e2e',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -271,7 +282,7 @@ export class OptimalScheduledExportSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -279,14 +290,14 @@ export class OptimalScheduledExportSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'scheduled-exports' || collection === 'scheduled-export-executions') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'e2e',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -504,7 +515,7 @@ export class OptimalMultiDestinationSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -512,14 +523,14 @@ export class OptimalMultiDestinationSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'export-destinations') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'e2e',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -691,7 +702,7 @@ export class OptimalErrorHandlingSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -699,14 +710,14 @@ export class OptimalErrorHandlingSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'error-logs') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'e2e',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -861,7 +872,7 @@ export class OptimalComplianceExportSeed extends TestSeedFactory {
     }
   }
 
-  private async createDocument(collection: string, data: Record<string, any>) {
+  private async createDocument(collection: string, data: Record<string, unknown>) {
     await this.validateData(collection, data);
     return await this.payload.create({
       collection,
@@ -869,14 +880,14 @@ export class OptimalComplianceExportSeed extends TestSeedFactory {
     });
   }
 
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'compliance-policies' || collection === 'compliance-audit-records') {
       await super.validateData(collection, data);
     }
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'e2e',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: this.createdIds.size,
@@ -957,7 +968,7 @@ export class Level3ExportSuite extends TestSeedFactory {
 
   private aggregateCreatedIds(seeds: TestSeedFactory[]): void {
     seeds.forEach(seed => {
-      const seedContext = (seed as any).context;
+      const seedContext = (seed as { context?: { createdIds?: Map<string, Set<string>> } }).context;
       if (seedContext && seedContext.createdIds) {
         for (const [collection, ids] of seedContext.createdIds) {
           if (!this.context!.createdIds.has(collection)) {
@@ -972,7 +983,7 @@ export class Level3ExportSuite extends TestSeedFactory {
   }
 
   private getStats() {
-    const stats: any = {
+    const stats: Record<string, unknown> = {
       seedLevel: 'e2e',
       totalTime: Date.now() - this.context!.startTime,
       itemsCreated: 0,

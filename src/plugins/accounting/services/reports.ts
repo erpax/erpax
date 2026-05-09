@@ -35,6 +35,7 @@
 
 import type { Payload } from 'payload'
 import { computeAgingBuckets, type AgingBucket, type BucketDefinition } from '@/plugins/parties'
+import { DebitCreditLogic } from '../debit-credit'
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -151,11 +152,19 @@ function aggregateActivity(
   return m
 }
 
-/** Net balance on the account's normal side: debits − credits for debit-normal, credits − debits for credit-normal. */
+/**
+ * Net balance on the account's normal side. Delegates to the canonical
+ * `DebitCreditLogic.getBalance` — `'asset'` is debit-normal and `'liability'`
+ * is credit-normal in the canonical rules table, so we pick whichever
+ * matches the row's declared normal balance and let the canonical math
+ * (debits − credits OR credits − debits) handle the sign.
+ */
 function netBalance(row: { totalDebits: number; totalCredits: number; normalBalance: 'debit' | 'credit' }): number {
-  return row.normalBalance === 'debit'
-    ? row.totalDebits - row.totalCredits
-    : row.totalCredits - row.totalDebits
+  return DebitCreditLogic.getBalance(
+    row.normalBalance === 'debit' ? 'asset' : 'liability',
+    row.totalDebits,
+    row.totalCredits,
+  )
 }
 
 // ─── Public report functions ──────────────────────────────────────────────

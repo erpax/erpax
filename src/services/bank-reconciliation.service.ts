@@ -21,8 +21,27 @@ import {
   ReconciliationConfig,
   GLEntryForMatching,
 } from '@/types/bank-reconciliation';
+import type { AllDomainEvents } from '@/types/events';
+import { DebitCreditLogic, type AccountType } from '@/plugins/accounting/debit-credit';
 import { journalEntryService } from './journal-entry.service';
 import { eventEmitter } from './event-emitter.service';
+
+/**
+ * Sum a journal entry's debit/credit columns via the canonical DebitCreditLogic.
+ * Returns the larger column (a balanced entry has equal sides; for matching we
+ * just need the entry's notional amount, which equals either side).
+ */
+function entryAmount(lines: Array<{ debit?: number; credit?: number; accountId?: string }>): number {
+  const result = DebitCreditLogic.validateEntry(
+    lines.map((l) => ({
+      accountCode: l.accountId ?? '',
+      accountType: 'asset' as AccountType,
+      debit: l.debit || 0,
+      credit: l.credit || 0,
+    })),
+  );
+  return result.totalDebits || result.totalCredits;
+}
 
 // Mock database
 const bankStatements = new Map<string, BankStatement>();
@@ -120,7 +139,7 @@ class BankReconciliationService {
       timestamp: new Date(),
       userId,
       payload: result,
-    } as any);
+    } as unknown as AllDomainEvents);
 
     return result;
   }
@@ -201,12 +220,10 @@ class BankReconciliationService {
 
     // Find matching entry
     for (const entry of entries) {
-      const totalDebit = entry.lines.reduce((sum, l) => sum + (l.debit || 0), 0);
-      const totalCredit = entry.lines.reduce((sum, l) => sum + (l.credit || 0), 0);
-      const entryAmount = totalDebit || totalCredit;
+      const amount = entryAmount(entry.lines);
 
       if (
-        Math.abs(entryAmount - bankTx.amount) <= config.exactMatchAmountTolerance &&
+        Math.abs(amount - bankTx.amount) <= config.exactMatchAmountTolerance &&
         !this.isAlreadyMatched(entry.id)
       ) {
         return {
@@ -214,7 +231,7 @@ class BankReconciliationService {
           entryNumber: entry.entryNumber,
           entryDate: entry.entryDate,
           description: entry.description,
-          amount: entryAmount,
+          amount,
           type: bankTx.type,
           sourceId: entry.sourceId,
           sourceType: entry.sourceType,
@@ -258,12 +275,10 @@ class BankReconciliationService {
     for (const entry of entries) {
       if (this.isAlreadyMatched(entry.id)) continue;
 
-      const totalDebit = entry.lines.reduce((sum, l) => sum + (l.debit || 0), 0);
-      const totalCredit = entry.lines.reduce((sum, l) => sum + (l.credit || 0), 0);
-      const entryAmount = totalDebit || totalCredit;
+      const amount = entryAmount(entry.lines);
 
       // Check if within fuzzy tolerance
-      const amountDiff = Math.abs(entryAmount - bankTx.amount);
+      const amountDiff = Math.abs(amount - bankTx.amount);
       if (amountDiff > config.fuzzyMatchAmountTolerance) continue;
 
       const dateDiff = Math.floor(
@@ -284,7 +299,7 @@ class BankReconciliationService {
           entryNumber: entry.entryNumber,
           entryDate: entry.entryDate,
           description: entry.description,
-          amount: entryAmount,
+          amount,
           type: bankTx.type,
           sourceId: entry.sourceId,
           sourceType: entry.sourceType,
@@ -321,7 +336,7 @@ class BankReconciliationService {
         matchType: match.matchType,
         matchDate: new Date(),
       },
-    } as any);
+    } as unknown as AllDomainEvents);
   }
 
   /**
@@ -387,7 +402,7 @@ class BankReconciliationService {
       if (statement.tenantId !== tenantId) continue;
 
       for (const tx of statement.transactions) {
-        if (!this.isAlreadyMatched(tx.id as any)) {
+        if (!this.isAlreadyMatched(tx.id as string)) {
           if (!days || tx.transactionDate < threshold) {
             unmatched.push(tx);
           }
@@ -418,7 +433,7 @@ class BankReconciliationService {
       totalTransactions += statement.transactions.length;
 
       for (const tx of statement.transactions) {
-        if (this.isAlreadyMatched(tx.id as any)) {
+        if (this.isAlreadyMatched(tx.id as string)) {
           totalMatched++;
         }
       }

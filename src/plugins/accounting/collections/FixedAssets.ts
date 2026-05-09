@@ -1,4 +1,7 @@
 import type { CollectionConfig } from 'payload'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { createAccountingCollection, createGLAccountFields } from '../factories';
 import { multiTenancyField, currencyField, statusField, notesField } from '../fields/index';
 // Slice PPP: depreciationHook removed — delegated to a `req.payload.services?.depreciation`
@@ -14,12 +17,18 @@ import {
 /**
  * Fixed Assets — capitalized PP&E with depreciation and book-value tracking.
  *
+ * Slice ZZ: autoPopulateCreatedBy threaded into the factory's beforeChange
+ * chain; ISO-8601 disposalDate auto-stamped on status → 'disposed';
+ * audit-trail emission wired at the post-factory composition point.
+ *
  * @standard ISO-4217:2015 currency-codes
- * @standard ISO-8601-1:2019 date-time acquisition-date in-service-date
+ * @standard ISO-8601-1:2019 date-time acquisition-date in-service-date disposal-date
  * @accounting IFRS IAS-16 property-plant-and-equipment
  * @accounting IFRS IAS-36 impairment-of-assets
  * @accounting US-GAAP ASC-360 property-plant-and-equipment
  * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls capital-asset-register
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.2
  */
 const _baseFixedAssets = createAccountingCollection(
@@ -29,6 +38,12 @@ const _baseFixedAssets = createAccountingCollection(
       useAsTitle: 'assetNumber',
       defaultColumns: ['assetNumber', 'description', 'assetCategory', 'acquisitionDate', 'assetCost', 'status'],
       beforeChangeHooks: [
+        autoPopulateCreatedBy,
+        // ISO-8601 disposalDate stamp on status → 'disposed' transition.
+        autoSetTimestamp(
+          'disposalDate',
+          (data) => (data as { status?: string }).status === 'disposed',
+        ),
         async ({ data }) => {
           // Calculate depreciable base
           if (data.assetCost !== undefined && data.residualValue !== undefined) {
@@ -147,6 +162,20 @@ const _baseFixedAssets = createAccountingCollection(
     ],
   ) as Partial<CollectionConfig>;
 
-const FixedAssets: CollectionConfig = _baseFixedAssets as CollectionConfig;
+// Compose afterChange chain on top of the factory output. The factory
+// doesn't (yet) expose `afterChangeHooks` as an option, so we wire the
+// audit-trail emission here per the canonical convention. Once the
+// factory grows an `afterChangeHooks` option, move this in.
+const FixedAssets: CollectionConfig = {
+  ..._baseFixedAssets,
+  hooks: {
+    ..._baseFixedAssets.hooks,
+    afterChange: [
+      ...(_baseFixedAssets.hooks?.afterChange ?? []),
+      // ISO-19011:2018 audit-trail per banner declaration.
+      auditTrailAfterChange('fixed-assets'),
+    ],
+  },
+} as CollectionConfig;
 
 export default FixedAssets;

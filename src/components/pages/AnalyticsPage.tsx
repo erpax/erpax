@@ -6,6 +6,16 @@ import BudgetVsActualCard from '../analytics/BudgetVsActualCard';
 import TrendAnalysisCard from '../analytics/TrendAnalysisCard';
 import CostAnalysisCard from '../analytics/CostAnalysisCard';
 
+/**
+ * Analytics page route — composes balance-sheet + income-statement loaders, renders cards.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @quality ISO-25010 usability page-composition
+ * @see docs/STANDARDS.md §4.2
+ */
+
+
 interface AnalyticsPageProps {
   client: AccountingClient;
   userRole: string;
@@ -23,7 +33,7 @@ const AnalyticsPage: React.FC<AnalyticsPageProps> = ({ client, userRole: _userRo
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<{ balanceSheet?: unknown; incomeStatement?: unknown } | null>(null);
 
   const loadAnalyticsData = useCallback(async () => {
     try {

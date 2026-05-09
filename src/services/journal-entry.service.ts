@@ -16,6 +16,7 @@
  */
 
 import { v4 as uuid } from 'uuid';
+import { DebitCreditLogic, type AccountType } from '@/plugins/accounting/debit-credit';
 
 export interface JournalEntryLine {
   id?: string;
@@ -291,19 +292,24 @@ class JournalEntryService {
   }
 
   /**
-   * Validate double-entry bookkeeping
-   * Sum of debits must equal sum of credits
+   * Validate double-entry bookkeeping using the canonical DebitCreditLogic.
+   * Sum of debits must equal sum of credits; no line may carry both.
+   *
+   * Single source of truth: see `src/plugins/accounting/debit-credit.ts`.
    */
   private validateDoubleEntry(lines: JournalEntryLine[]): void {
-    const debitTotal = lines.reduce((sum, line) => sum + (line.debit || 0), 0);
-    const creditTotal = lines.reduce((sum, line) => sum + (line.credit || 0), 0);
+    const result = DebitCreditLogic.validateEntry(
+      lines.map((l) => ({
+        accountCode: l.accountId,
+        accountType: 'asset' as AccountType, // accountType not tracked at service line; balance check is type-agnostic
+        debit: l.debit || 0,
+        credit: l.credit || 0,
+      })),
+    );
 
-    const difference = Math.abs(debitTotal - creditTotal);
-
-    // Allow for rounding errors (0.01)
-    if (difference > 0.01) {
+    if (!result.balanced) {
       throw new Error(
-        `Journal entry not balanced. Debits: ${debitTotal}, Credits: ${creditTotal}, Difference: ${difference}`
+        `Journal entry not balanced. Debits: ${result.totalDebits}, Credits: ${result.totalCredits}, Difference: ${result.variance}`,
       );
     }
 

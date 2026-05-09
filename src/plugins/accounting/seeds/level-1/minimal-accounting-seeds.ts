@@ -1,4 +1,15 @@
 /**
+ * Level-1 minimal accounting seed — single-tenant, single-period fixtures for unit tests.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail test-data
+ * @quality ISO-25010 maintainability test-fixtures
+ * @see docs/STANDARDS.md §4.2
+ */
+
+/**
  * Level 1: Minimal Unit Test Seeds for Accounting Plugin
  * Fast setup (<500ms) with minimal dependencies for unit tests
  * Creates only essential data needed for specific tests
@@ -17,7 +28,7 @@ export class MinimalHostSeed extends TestSeedFactory {
    * Calls parent validateData() for automatic required field checking
    * Adds domain-specific validation as needed
    */
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'hosts') {
       // Call parent to validate against Payload config
       await super.validateData(collection, data);
@@ -88,7 +99,7 @@ export class MinimalGLAccountsSeed extends TestSeedFactory {
    * Calls parent validateData() for automatic required field checking
    * Adds domain-specific validation as needed
    */
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'gl-accounts') {
       // Call parent to validate against Payload config
       await super.validateData(collection, data);
@@ -194,7 +205,7 @@ export class MinimalUsersSeed extends TestSeedFactory {
    * Calls parent validateData() for automatic required field checking
    * Adds domain-specific validation as needed
    */
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'users') {
       // Call parent to validate against Payload config
       await super.validateData(collection, data);
@@ -283,7 +294,7 @@ export class MinimalCurrencyRatesSeed extends TestSeedFactory {
    * Calls parent validateData() for automatic required field checking
    * Adds domain-specific validation as needed
    */
-  protected async validateData(collection: string, data: Record<string, any>): Promise<void> {
+  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
     if (collection === 'currency-rates') {
       // Call parent to validate against Payload config
       await super.validateData(collection, data);

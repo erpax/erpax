@@ -1,10 +1,22 @@
 import React from 'react';
 import { FinancialAnalysisEngine } from '../../plugins/accounting/financial-analysis';
+import type { AccountLine, BalanceSheetData, IncomeStatementData } from './types';
+
+/**
+ * Financial ratios card — liquidity, profitability, solvency.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @quality ISO-25010 functional-suitability derived-metric
+ * @see docs/STANDARDS.md §4.2
+ */
+
 
 interface FinancialRatiosCardProps {
   data: {
-    balanceSheet: any;
-    incomeStatement: any;
+    balanceSheet: BalanceSheetData;
+    incomeStatement: IncomeStatementData;
   };
 }
 
@@ -52,31 +64,31 @@ const FinancialRatiosCard: React.FC<FinancialRatiosCardProps> = ({ data }) => {
 
   // Extract financial data
   const assets =
-    (data.balanceSheet.assets || []).reduce((sum: number, a: any) => sum + a.balance, 0) * 100;
+    (data.balanceSheet.assets || []).reduce((sum: number, a: AccountLine) => sum + a.balance, 0) * 100;
   const currentAssets =
     (data.balanceSheet.assets || [])
-      .filter((a: any) => ['Cash', 'Accounts Receivable', 'Inventory'].includes(a.accountName))
-      .reduce((sum: number, a: any) => sum + a.balance, 0) * 100;
+      .filter((a: AccountLine) => ['Cash', 'Accounts Receivable', 'Inventory'].includes(a.accountName))
+      .reduce((sum: number, a: AccountLine) => sum + a.balance, 0) * 100;
   const inventory =
-    ((data.balanceSheet.assets || []).find((a: any) => a.accountName === 'Inventory')?.balance ||
+    ((data.balanceSheet.assets || []).find((a: AccountLine) => a.accountName === 'Inventory')?.balance ||
       0) * 100;
   const receivables =
-    ((data.balanceSheet.assets || []).find((a: any) => a.accountName === 'Accounts Receivable')
+    ((data.balanceSheet.assets || []).find((a: AccountLine) => a.accountName === 'Accounts Receivable')
       ?.balance || 0) * 100;
   const liabilities =
-    (data.balanceSheet.liabilities || []).reduce((sum: number, l: any) => sum + l.balance, 0) *
+    (data.balanceSheet.liabilities || []).reduce((sum: number, l: AccountLine) => sum + l.balance, 0) *
     100;
   const currentLiabilities =
     (data.balanceSheet.liabilities || [])
-      .filter((l: any) => ['Accounts Payable', 'Short-term Debt'].includes(l.accountName))
-      .reduce((sum: number, l: any) => sum + l.balance, 0) * 100;
+      .filter((l: AccountLine) => ['Accounts Payable', 'Short-term Debt'].includes(l.accountName))
+      .reduce((sum: number, l: AccountLine) => sum + l.balance, 0) * 100;
   const payables =
-    ((data.balanceSheet.liabilities || []).find((l: any) => l.accountName === 'Accounts Payable')
+    ((data.balanceSheet.liabilities || []).find((l: AccountLine) => l.accountName === 'Accounts Payable')
       ?.balance || 0) * 100;
   const equity =
-    (data.balanceSheet.equity || []).reduce((sum: number, e: any) => sum + e.balance, 0) * 100;
+    (data.balanceSheet.equity || []).reduce((sum: number, e: AccountLine) => sum + e.balance, 0) * 100;
   const cash =
-    ((data.balanceSheet.assets || []).find((a: any) => a.accountName === 'Cash in Bank')
+    ((data.balanceSheet.assets || []).find((a: AccountLine) => a.accountName === 'Cash in Bank')
       ?.balance || 0) * 100;
 
   const financialData = {

@@ -11,7 +11,14 @@
  *   const report = await generateTrendAnalysis({ hostId, periodStart, periodEnd })
  *
  * Safe to `git rm src/plugins/accounting/collections/TrendAnalysis.ts` once verified.
+ *
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail trend-analysis
+ * @quality ISO-25010 functional-suitability historical-projection
+ * @see docs/STANDARDS.md §4.2
  */
-const Stub: any = { slug: 'deprecated-report-stub-trendanalysis', fields: [] }
+import type { CollectionConfig } from 'payload'
+
+const Stub: CollectionConfig = { slug: 'deprecated-report-stub-trendanalysis', fields: [] }
 export default Stub
-export const TrendAnalysis: any = Stub
+export const TrendAnalysis: CollectionConfig = Stub

@@ -20,5 +20,5 @@ export interface UserContext {
 
 export interface AccessResult {
   tenant?: { equals: string }
-  [key: string]: any
+  [key: string]: unknown
 }

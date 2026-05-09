@@ -7,7 +7,7 @@ import { invoiceAccountingHook } from '@/plugins/accounting/hooks'
 import { validateNotLocked } from '@/plugins/accounting/utilities/period-lock'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
-import { autoPopulateHost } from '@/plugins/hooks'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.

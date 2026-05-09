@@ -1,11 +1,22 @@
 import type { CollectionConfig } from 'payload'
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import { multiTenancyField, currencyField } from '../fields/base-accounting-fields'
+
 /**
  * Currency Rates — FX rate master for multi-currency translation.
+ *
+ * Slice WW-cleanup: switched to canonical access predicates +
+ * field factories + autoPopulateHost. Removed dead `if (!data.tenant
+ * && undefined)` code. Inverse-rate calc preserved.
  *
  * @standard ISO-4217:2015 currency-codes from-currency to-currency
  * @standard ISO-8601-1:2019 date-time rate-date
  * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  * @accounting US-GAAP ASC-830 foreign-currency-matters
+ * @audit ISO-19011:2018 audit-trail rate-update
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.1
  */
 const CurrencyRates: CollectionConfig = {
@@ -16,29 +27,16 @@ const CurrencyRates: CollectionConfig = {
     defaultColumns: ['fromCurrency', 'toCurrency', 'rateDate', 'rate', 'source'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: tenantAdmin,
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'rateId', type: 'text', required: true, unique: true },
-    {
-      name: 'fromCurrency',
-      type: 'select',
-      required: true,
-      options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
-    },
-    {
-      name: 'toCurrency',
-      type: 'select',
-      required: true,
-      options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
-    },
+    currencyField({ name: 'fromCurrency', required: true }),
+    currencyField({ name: 'toCurrency', required: true }),
     { name: 'rate', type: 'number', required: true },
     { name: 'rateDate', type: 'date', required: true },
     {
@@ -63,15 +61,17 @@ const CurrencyRates: CollectionConfig = {
     { name: 'notes', type: 'textarea' },
   ],
   hooks: {
+    beforeValidate: [autoPopulateHost],
     beforeChange: [
-      async ({ data, req: _req }) => {
-        if (!data.tenant && undefined) data.tenant = undefined;
-        if (data.rate) data.inverse = 1 / data.rate;
-        return data;
+      async ({ data }) => {
+        // Preserve the inline inverse-rate auto-calc — domain-specific to FX.
+        if (data.rate) data.inverse = 1 / data.rate
+        return data
       },
     ],
+    afterChange: [auditTrailAfterChange('currency-rates')],
   },
   timestamps: true,
-};
+}
 
-export default CurrencyRates;
+export default CurrencyRates

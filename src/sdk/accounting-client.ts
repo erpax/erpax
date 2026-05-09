@@ -1,4 +1,18 @@
 /**
+ * ERPAX Accounting REST API client — strongly-typed access to all accounting endpoints.
+ * Wraps fetch with Bearer auth + tenant-id header; every endpoint returns ApiResponse<T>.
+ *
+ * @rfc 9110 http-semantics REST-client
+ * @rfc 8259 json payload-encoding
+ * @rfc 7519 json-web-token bearer-auth
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @audit ISO-19011:2018 audit-trail
+ * @see docs/STANDARDS.md §4.3 §4.2
+ */
+
+/**
  * ERPAX Accounting REST API Client (TypeScript SDK)
  * Provides strongly-typed access to all accounting endpoints
  */
@@ -87,7 +101,7 @@ export class AccountingClient {
   private async request<T>(
     method: string,
     path: string,
-    body?: any
+    body?: unknown
   ): Promise<T> {
     const headers: Record<string, string> = {
       'Content-Type': 'application/json',
@@ -107,7 +121,7 @@ export class AccountingClient {
     const response = await fetch(`${this.baseUrl}${path}`, options);
 
     if (!response.ok) {
-      const error = await response.json();
+      const error = (await response.json()) as { message?: string; error?: string };
       throw new Error(`${response.status}: ${error.message || error.error}`);
     }
 
@@ -117,27 +131,27 @@ export class AccountingClient {
   // Journal Entries
   async createJournalEntry(
     entry: JournalEntryRequest
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request('POST', '/api/accounting/journal-entries', entry);
   }
 
-  async getJournalEntry(id: string): Promise<ApiResponse<any>> {
+  async getJournalEntry(id: string): Promise<ApiResponse<unknown>> {
     return this.request('GET', `/api/accounting/journal-entries/${id}`);
   }
 
-  async reverseJournalEntry(id: string): Promise<ApiResponse<any>> {
+  async reverseJournalEntry(id: string): Promise<ApiResponse<unknown>> {
     return this.request('POST', `/api/accounting/journal-entries/${id}/reverse`);
   }
 
   // Sales Invoices
-  async createSalesInvoice(invoice: SalesInvoiceRequest): Promise<ApiResponse<any>> {
+  async createSalesInvoice(invoice: SalesInvoiceRequest): Promise<ApiResponse<unknown>> {
     return this.request('POST', '/api/accounting/sales-invoices', invoice);
   }
 
   async recordInvoicePayment(
     invoiceId: string,
     payment: PaymentRequest
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'POST',
       `/api/accounting/sales-invoices/${invoiceId}/payment`,
@@ -145,7 +159,7 @@ export class AccountingClient {
     );
   }
 
-  async writeOffInvoice(invoiceId: string): Promise<ApiResponse<any>> {
+  async writeOffInvoice(invoiceId: string): Promise<ApiResponse<unknown>> {
     return this.request(
       'POST',
       `/api/accounting/sales-invoices/${invoiceId}/write-off`
@@ -153,14 +167,14 @@ export class AccountingClient {
   }
 
   // Vendor Bills
-  async createVendorBill(bill: VendorBillRequest): Promise<ApiResponse<any>> {
+  async createVendorBill(bill: VendorBillRequest): Promise<ApiResponse<unknown>> {
     return this.request('POST', '/api/accounting/vendor-bills', bill);
   }
 
   async recordVendorPayment(
     billId: string,
     payment: VendorPaymentRequest
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'POST',
       `/api/accounting/vendor-bills/${billId}/payment`,
@@ -169,14 +183,14 @@ export class AccountingClient {
   }
 
   // Reports
-  async getTrialBalance(asOfDate: string): Promise<ApiResponse<any>> {
+  async getTrialBalance(asOfDate: string): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/reports/trial-balance?asOfDate=${asOfDate}`
     );
   }
 
-  async getBalanceSheet(asOfDate: string): Promise<ApiResponse<any>> {
+  async getBalanceSheet(asOfDate: string): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/reports/balance-sheet?asOfDate=${asOfDate}`
@@ -186,7 +200,7 @@ export class AccountingClient {
   async getIncomeStatement(
     startDate: string,
     endDate: string
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/reports/income-statement?startDate=${startDate}&endDate=${endDate}`
@@ -196,7 +210,7 @@ export class AccountingClient {
   async getCashFlowStatement(
     startDate: string,
     endDate: string
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/reports/cash-flow?startDate=${startDate}&endDate=${endDate}`
@@ -206,7 +220,7 @@ export class AccountingClient {
   async getAccountBalance(
     accountCode: string,
     asOfDate: string
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/accounts/${accountCode}/balance?asOfDate=${asOfDate}`
@@ -216,7 +230,7 @@ export class AccountingClient {
   // Bank Reconciliation
   async performBankReconciliation(
     request: BankReconciliationRequest
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request('POST', '/api/accounting/reconciliation/bank', request);
   }
 
@@ -225,7 +239,7 @@ export class AccountingClient {
     periodStart: string,
     periodEnd: string,
     periodType: string
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/closing/checklist?periodStart=${periodStart}&periodEnd=${periodEnd}&periodType=${periodType}`
@@ -234,7 +248,7 @@ export class AccountingClient {
 
   async generateClosingEntries(
     request: ClosingRequest
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request('POST', '/api/accounting/closing/entries', request);
   }
 
@@ -242,7 +256,7 @@ export class AccountingClient {
   async getAuditTrail(
     startDate: string,
     endDate: string
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request(
       'GET',
       `/api/accounting/audit-trail?startDate=${startDate}&endDate=${endDate}`
@@ -253,7 +267,7 @@ export class AccountingClient {
     startDate: string,
     endDate: string,
     format: 'json' | 'csv' = 'json'
-  ): Promise<ApiResponse<any>> {
+  ): Promise<ApiResponse<unknown>> {
     return this.request('POST', '/api/accounting/audit-trail/export', {
       startDate,
       endDate,

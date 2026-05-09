@@ -6,10 +6,30 @@ import IncomeStatementWidget from './widgets/IncomeStatementWidget';
 import QuickActionsWidget from './widgets/QuickActionsWidget';
 import AuditLogWidget from './widgets/AuditLogWidget';
 
+import type { AccountLine, BalanceSheetData, TrialBalanceData } from './analytics/types';
+
+/**
+ * Accounting Dashboard — top-level renderer for trial balance, balance sheet,
+ * income statement, KPIs, audit log, and quick actions.
+ *
+ * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-4217:2015 currency-codes monetary-display
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @quality ISO-25010 usability dashboard-presentation
+ * @see docs/STANDARDS.md §4.2
+ */
+
+
 interface DashboardProps {
   client: AccountingClient;
   userRole: 'admin' | 'accountant' | 'auditor' | 'readonly';
   tenantName: string;
+}
+
+// Local: Dashboard only reads `netIncome` from the income statement, so we use
+// a narrower projection of the canonical IncomeStatementData (Pick<>).
+interface DashboardIncomeStatement {
+  netIncome?: number;
 }
 
 const Dashboard: React.FC<DashboardProps> = ({
@@ -17,9 +37,9 @@ const Dashboard: React.FC<DashboardProps> = ({
   userRole,
   tenantName,
 }) => {
-  const [trialBalance, setTrialBalance] = useState<any>(null);
-  const [balanceSheet, setBalanceSheet] = useState<any>(null);
-  const [incomeStatement, setIncomeStatement] = useState<any>(null);
+  const [trialBalance, setTrialBalance] = useState<TrialBalanceData | null>(null);
+  const [balanceSheet, setBalanceSheet] = useState<BalanceSheetData | null>(null);
+  const [incomeStatement, setIncomeStatement] = useState<DashboardIncomeStatement | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedDate, setSelectedDate] = useState(
@@ -34,13 +54,13 @@ const Dashboard: React.FC<DashboardProps> = ({
       // Load trial balance
       const tbResponse = await client.getTrialBalance(selectedDate);
       if (tbResponse.success) {
-        setTrialBalance(tbResponse.data);
+        setTrialBalance(tbResponse.data as TrialBalanceData);
       }
 
       // Load balance sheet
       const bsResponse = await client.getBalanceSheet(selectedDate);
       if (bsResponse.success) {
-        setBalanceSheet(bsResponse.data);
+        setBalanceSheet(bsResponse.data as BalanceSheetData);
       }
 
       // Load income statement (for current period)
@@ -50,7 +70,7 @@ const Dashboard: React.FC<DashboardProps> = ({
         .split('T')[0];
       const isResponse = await client.getIncomeStatement(periodStart, selectedDate);
       if (isResponse.success) {
-        setIncomeStatement(isResponse.data);
+        setIncomeStatement(isResponse.data as DashboardIncomeStatement);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load dashboard');
@@ -67,15 +87,15 @@ const Dashboard: React.FC<DashboardProps> = ({
     if (!balanceSheet) return null;
 
     const assets = balanceSheet.assets?.reduce(
-      (sum: number, acc: any) => sum + acc.balance,
+      (sum: number, acc: AccountLine) => sum + acc.balance,
       0
     ) || 0;
     const liabilities = balanceSheet.liabilities?.reduce(
-      (sum: number, acc: any) => sum + acc.balance,
+      (sum: number, acc: AccountLine) => sum + acc.balance,
       0
     ) || 0;
     const equity = balanceSheet.equity?.reduce(
-      (sum: number, acc: any) => sum + acc.balance,
+      (sum: number, acc: AccountLine) => sum + acc.balance,
       0
     ) || 0;
     const netIncome = incomeStatement?.netIncome || 0;

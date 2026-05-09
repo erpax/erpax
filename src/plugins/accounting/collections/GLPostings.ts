@@ -1,14 +1,33 @@
 import type { CollectionConfig } from 'payload'
-import { validateNotLocked } from '../utilities/period-lock';
+import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
+import {
+  multiTenancyField,
+  glAccountField,
+  currencyField,
+  statusField,
+} from '../fields/base-accounting-fields'
+import { validateNotLocked } from '../utilities/period-lock'
+import { validateBalancedEntry } from '../hooks/balanced-entry.hook'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.
+ *
+ * Slice WW (post-cleanup): switched from inlined access/fields to the
+ * shared `@/plugins/auth/access` predicates and `@/plugins/accounting/fields`
+ * factories. Adds audit-trail emission and ISO-8601 `postedDate` auto-set
+ * on `status → 'posted'` transitions (was missing — SOX §404 demands a
+ * verifiable posting timestamp).
  *
  * @standard ISO-8601-1:2019 date-time posted-date
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting OECD SAF-T §3 transactions
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see docs/STANDARDS.md §4.2
  */
 const GLPostings: CollectionConfig = {
@@ -19,16 +38,13 @@ const GLPostings: CollectionConfig = {
     defaultColumns: ['postingId', 'sourceType', 'sourceId', 'journalEntry', 'status', 'postedDate'],
   },
   access: {
-    read: async ({ req }) => {
-      if (req.user?.roles?.includes('admin')) return true;
-      return { 'hostId.id': { equals: (req.user?.tenants?.[0]?.tenant) } };
-    },
-    create: async ({ req }) => req.user?.roles?.includes('admin') || req.user?.roles?.includes('accountant'),
-    update: async ({ req }) => req.user?.roles?.includes('admin'),
-    delete: async ({ req }) => req.user?.roles?.includes('admin'),
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: tenantAdmin,
+    delete: tenantAdmin,
   },
   fields: [
-    { name: 'tenant', type: 'relationship', relationTo: 'tenants', required: true, admin: { hidden: true } },
+    multiTenancyField(),
     { name: 'postingId', type: 'text', required: true, unique: true },
     {
       name: 'sourceType',
@@ -48,31 +64,24 @@ const GLPostings: CollectionConfig = {
     { name: 'sourceId', type: 'text', required: true },
     { name: 'sourceDate', type: 'date', required: true },
     { name: 'journalEntry', type: 'relationship', relationTo: 'journal-entries', required: true },
-    {
-      name: 'status',
-      type: 'select',
-      defaultValue: 'pending',
-      options: [
+    statusField(
+      [
         { label: 'Pending', value: 'pending' },
         { label: 'Posted', value: 'posted' },
         { label: 'Reversed', value: 'reversed' },
         { label: 'Failed', value: 'failed' },
       ],
-    },
+      'pending',
+    ),
     { name: 'postedDate', type: 'date' },
     {
       name: 'accountsAffected',
       type: 'array',
       fields: [
-        { name: 'glAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
+        ...glAccountField(true),
         { name: 'debitAmount', type: 'number', defaultValue: 0 },
         { name: 'creditAmount', type: 'number', defaultValue: 0 },
-        {
-          name: 'currency',
-          type: 'select',
-          defaultValue: 'EUR',
-          options: ['EUR', 'GBP', 'JPY', 'CNY', 'INR', 'CAD', 'AUD', 'CHF', 'SGD', 'HKD', 'USD'].map(c => ({ label: c, value: c })),
-        },
+        currencyField(),
       ],
     },
     { name: 'totalDebits', type: 'number', defaultValue: 0, admin: { disabled: true } },
@@ -80,21 +89,32 @@ const GLPostings: CollectionConfig = {
     { name: 'errorMessage', type: 'textarea' },
     { name: 'reversalPostingId', type: 'text' },
     { name: 'metadata', type: 'json' },
+    { name: 'createdBy', type: 'relationship', relationTo: 'users', admin: { disabled: true } },
   ],
   hooks: {
+    beforeValidate: [
+      autoPopulateHost,
+      // Single source of truth for the balance check, with field-name overrides
+      // for GLPostings' `accountsAffected[].{debitAmount, creditAmount}` shape
+      // (vs. JournalEntries' `lines[].{debit, credit}`).
+      validateBalancedEntry({
+        linesField: 'accountsAffected',
+        debitField: 'debitAmount',
+        creditField: 'creditAmount',
+        debitTotalField: 'totalDebits',
+        creditTotalField: 'totalCredits',
+        balancedField: false,
+        accountTypeFor: () => 'asset',
+      }),
+    ],
     beforeChange: [
       validateNotLocked,
-      async ({ data, req: _req }) => {
-        if (!data.tenant && undefined) data.tenant = undefined;
-        if (data.accountsAffected) {
-          data.totalDebits = data.accountsAffected.reduce((sum: number, line: any) => sum + (line.debitAmount || 0), 0);
-          data.totalCredits = data.accountsAffected.reduce((sum: number, line: any) => sum + (line.creditAmount || 0), 0);
-        }
-        return data;
-      },
+      autoPopulateCreatedBy,
+      autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
     ],
+    afterChange: [auditTrailAfterChange('gl-postings')],
   },
   timestamps: true,
-};
+}
 
-export default GLPostings;
+export default GLPostings

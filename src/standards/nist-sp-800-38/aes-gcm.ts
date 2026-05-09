@@ -110,7 +110,7 @@ export function decryptField(encrypted: string | null | undefined): string | nul
 /**
  * Check if a value is encrypted (has correct format).
  */
-export function isEncrypted(value: any): boolean {
+export function isEncrypted(value: unknown): boolean {
   if (typeof value !== 'string') {
     return false
   }
