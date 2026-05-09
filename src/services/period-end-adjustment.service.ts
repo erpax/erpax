@@ -1,16 +1,38 @@
 /**
  * Period-End Adjustment Service — depreciation, accruals, deferrals, allocations.
  *
+ * **Status (post tech-debt sweep)**: the calculation methods on this
+ * service (`generateDepreciation`, `generateInterestAccruals`,
+ * `generateSalaryAccruals`, `postInventoryAdjustment`) are substantively
+ * implemented and ready to be called by a future scheduled close-job.
+ * The in-memory `Map<>` storage is a TEST SEAM only — production
+ * depreciation now flows through the dedicated
+ * `src/services/depreciation.service.ts` (IAS 16/ASC 360 with the full
+ * canonical method set) and posts JEs via the canonical
+ * `period-end-adjustment.hook.ts` on `period-end-adjustments` rows
+ * transitioning to `status = 'posted'`.
+ *
+ * **DO NOT USE** the in-memory `createAsset / createInterestAccrual /
+ * createSalaryAccrual` paths in production — they're wiped on every
+ * Cloudflare Workers cold start. Persist the data in the `fixed-assets` /
+ * `period-end-adjustments` Payload collections and call this service's
+ * pure calculation methods to derive amounts.
+ *
  * @standard ISO-8601-1:2019 date-time period
  * @standard ISO-4217:2015 currency-codes
  * @accounting IFRS IAS-1 presentation-of-financial-statements
  * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
  * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
+ * @accounting IFRS IAS-19 employee-benefits payroll-accrual
+ * @accounting IFRS IAS-23 borrowing-costs interest-accrual
  * @accounting IFRS IAS-37 provisions-contingent-liabilities
  * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
  * @accounting US-GAAP ASC-360 property-plant-and-equipment
+ * @accounting US-GAAP ASC-405 liabilities accrued-expenses
  * @compliance SOX §404 internal-controls
  * @audit ISO-19011:2018 audit-trail
+ * @see src/services/depreciation.service.ts (production depreciation path)
+ * @see src/plugins/accounting/hooks/period-end-adjustment.hook.ts (production GL post)
  * @see docs/STANDARDS.md §4.2
  */
 

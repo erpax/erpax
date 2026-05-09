@@ -15,6 +15,14 @@
  *     `DepreciationSchedules.afterChange` hook backed by the canonical
  *     `depreciationService` singleton in `src/services/depreciation.service.ts`.
  *     IAS-16 / ASC-360 expense recognition fires on status → 'posted'.
+ *   • `period-end-adjustment` — CLOSED (tech-debt sweep).
+ *     `period-end-adjustment.hook.ts` is a `PeriodEndAdjustments.afterChange`
+ *     hook that books a balanced JE via `journalEntryService` on
+ *     status → 'posted' and back-links the JE id to the adjustment.
+ *     Closes the period-end-adjustment.service.ts DOA — accruals,
+ *     deferrals, depreciation, and inventory variance now post via
+ *     a single canonical path under SOX §404 four-eyes (the
+ *     `enforceSegregationOfDuties` hook on the same collection).
  *
  * Per-hook standards live in each file's banner.
  *
@@ -31,3 +39,4 @@ export * from './payment.hook'
 export * from './item.hook'
 // Period-end hooks — schedule-row driven (status → 'posted' triggers GL).
 export * from './depreciation.hook'
+export * from './period-end-adjustment.hook'

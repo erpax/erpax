@@ -439,7 +439,7 @@ src/plugins/accounting/collections/PaymentRuns.ts:25: * @standard ISO-4217:2015 
 src/plugins/accounting/collections/PaymentRuns.ts:26: * @standard ISO-8601-1:2019 date-time creation-execution
 src/plugins/accounting/collections/PerformanceObligations.ts:20: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/PerformanceObligations.ts:21: * @standard ISO-8601-1:2019 date-time satisfaction-date
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:18: * @standard ISO-8601-1:2019 date-time period posted-at
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:19: * @standard ISO-8601-1:2019 date-time period posted-at
 src/plugins/accounting/collections/PurchaseOrders.ts:20: * @standard ISO-8601-1:2019 date-time order-date due-date
 src/plugins/accounting/collections/PurchaseOrders.ts:21: * @standard ISO-4217:2015 currency-codes
 src/plugins/accounting/collections/PurchaseOrders.ts:22: * @standard EN-16931:2017 §BG-13 buyer-reference
@@ -515,6 +515,7 @@ src/plugins/accounting/hooks/depreciation.hook.ts:23: * @standard ISO-8601-1:201
 src/plugins/accounting/hooks/payment.hook.ts:19: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 src/plugins/accounting/hooks/payment.hook.ts:20: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
 src/plugins/accounting/hooks/payment.hook.ts:21: * @standard ISO-4217:2015 currency-codes
+src/plugins/accounting/hooks/period-end-adjustment.hook.ts:31: * @standard ISO-8601-1:2019 date-time posted-date
 src/plugins/accounting/index.ts:42: * @standard ISO-3166-1:2020 country-codes
 src/plugins/accounting/index.ts:43: * @standard ISO-3166-2:2020 subdivision-codes
 src/plugins/accounting/index.ts:44: * @standard ISO-4217:2015 currency-codes
@@ -673,8 +674,8 @@ src/services/multi-currency.service.ts:12: * @standard ISO-4217:2015 currency-co
 src/services/multi-currency.service.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
 src/services/multi-currency.service.ts:14: * @standard ISO-8601-1:2019 date-time rate-date
 src/services/multi-currency.service.ts:15: * @standard BCP-47 language-tag locale-formatting
-src/services/period-end-adjustment.service.ts:4: * @standard ISO-8601-1:2019 date-time period
-src/services/period-end-adjustment.service.ts:5: * @standard ISO-4217:2015 currency-codes
+src/services/period-end-adjustment.service.ts:21: * @standard ISO-8601-1:2019 date-time period
+src/services/period-end-adjustment.service.ts:22: * @standard ISO-4217:2015 currency-codes
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
 src/services/tax-automation.service.ts:19: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
@@ -972,6 +973,7 @@ tests/int/accounting/level-3-e2e.int.spec.ts:9: * @standard ISO-4217:2015 curren
 tests/int/accounting/money-storage.int.spec.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/accounting/money-storage.int.spec.ts:5: * @standard ISO-4217:2015 currency-codes
 tests/int/accounting/money-storage.int.spec.ts:6: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
+tests/int/accounting/period-end-adjustment-posting.int.spec.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 tests/int/api.int.spec.ts:10: * @standard OpenAPI 3.1 api-description
 tests/int/api.int.spec.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 tests/int/config/appCollectionsRegistry.int.spec.ts:5: * @standard ISO/IEC-29119:2022 software-testing configuration-test
@@ -1612,7 +1614,7 @@ src/plugins/accounting/collections/KycChecks.ts:8: * @compliance EU-Regulation-2
 src/plugins/accounting/collections/Leases.ts:31: * @compliance SOX §404 internal-controls capital-asset-register
 src/plugins/accounting/collections/PaymentRuns.ts:30: * @compliance SOX §404 internal-controls preparer-authoriser-segregation
 src/plugins/accounting/collections/PerformanceObligations.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:22: * @compliance SOX §404 internal-controls
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:23: * @compliance SOX §404 internal-controls
 src/plugins/accounting/collections/PurchaseOrders.ts:27: * @compliance SOX §404 internal-controls three-way-match
 src/plugins/accounting/collections/Quotes.ts:13: * @compliance SOX §404 internal-controls quote-approval
 src/plugins/accounting/collections/Refunds.ts:14: * @compliance SOX §404 internal-controls refund-approval
@@ -1633,10 +1635,11 @@ src/plugins/accounting/hooks/base-accounting-hook.ts:14: * @compliance SOC-2 CC4
 src/plugins/accounting/hooks/bill.hook.ts:21: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/cogs.hook.ts:16: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/depreciation.hook.ts:25: * @compliance SOX §404 internal-controls capital-asset-register
-src/plugins/accounting/hooks/index.ts:23: * @compliance SOX §404 internal-controls
+src/plugins/accounting/hooks/index.ts:31: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/invoice.hook.ts:25: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/item.hook.ts:21: * @compliance SOX §404 internal-controls
 src/plugins/accounting/hooks/payment.hook.ts:25: * @compliance SOX §404 internal-controls
+src/plugins/accounting/hooks/period-end-adjustment.hook.ts:33: * @compliance SOX §404 internal-controls four-eyes
 src/plugins/accounting/index.ts:59: * @compliance SOX §302 disclosure-controls
 src/plugins/accounting/index.ts:60: * @compliance SOX §404 internal-controls
 src/plugins/accounting/middleware/host-scope.ts:16: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
@@ -1673,7 +1676,7 @@ src/services/gl-posting.service.ts:13: * @compliance SOX §404 internal-controls
 src/services/host.service.ts:10: * @compliance GDPR Art.28 processor
 src/services/host.service.ts:11: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/journal-entry.service.ts:13: * @compliance SOX §404 internal-controls
-src/services/period-end-adjustment.service.ts:12: * @compliance SOX §404 internal-controls
+src/services/period-end-adjustment.service.ts:32: * @compliance SOX §404 internal-controls
 src/standards/_security-headers/headers.ts:17: * @compliance SOC-2 CC6.6 boundary-protection
 src/standards/iso-19011/types.ts:12: * @compliance SOX §404 internal-controls evidence-preservation
 src/standards/iso-19011/types.ts:13: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
@@ -1728,6 +1731,7 @@ tests/int/accounting/depreciation-methods.int.spec.ts:17: * @compliance SOX §40
 tests/int/accounting/full-cycle-demo.int.spec.ts:17: * @compliance SOX §404 internal-controls
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:19: * @compliance SOX §404 internal-controls
 tests/int/accounting/level-3-e2e.int.spec.ts:14: * @compliance SOX §404 internal-controls
+tests/int/accounting/period-end-adjustment-posting.int.spec.ts:15: * @compliance SOX §404 internal-controls four-eyes
 tests/int/export/statements.int.spec.ts:11: * @compliance SOX §302 disclosure-controls
 tests/int/multiTenantTenantAdmin.int.spec.ts:15: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 tests/int/multiTenantTenantAdmin.int.spec.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -1905,9 +1909,9 @@ src/plugins/accounting/collections/PerformanceObligations.ts:25: * @accounting I
 src/plugins/accounting/collections/PerformanceObligations.ts:26: * @accounting IFRS IFRS-15 §41-§43 progress-measurement
 src/plugins/accounting/collections/PerformanceObligations.ts:27: * @accounting US-GAAP ASC-606-10-25-14 distinct-goods-services
 src/plugins/accounting/collections/PerformanceObligations.ts:28: * @accounting US-GAAP ASC-606-10-25-31 progress-measurement
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:19: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:20: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:21: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:20: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:21: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:22: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
 src/plugins/accounting/collections/PurchaseOrders.ts:24: * @accounting IFRS IAS-37 provisions-and-contingent-liabilities commitment
 src/plugins/accounting/collections/PurchaseOrders.ts:25: * @accounting US-GAAP ASC 405 liabilities accounts-payable
 src/plugins/accounting/collections/Quotes.ts:10: * @accounting IFRS IFRS-15 §10 contract-with-customer
@@ -1965,7 +1969,7 @@ src/plugins/accounting/hooks/cogs.hook.ts:14: * @accounting US-GAAP ASC-705 cost
 src/plugins/accounting/hooks/depreciation.hook.ts:20: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/plugins/accounting/hooks/depreciation.hook.ts:21: * @accounting IFRS IAS-36 impairment-of-assets
 src/plugins/accounting/hooks/depreciation.hook.ts:22: * @accounting US-GAAP ASC-360-10-35 depreciation
-src/plugins/accounting/hooks/index.ts:22: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/plugins/accounting/hooks/index.ts:30: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/hooks/invoice.hook.ts:20: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/plugins/accounting/hooks/invoice.hook.ts:21: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/plugins/accounting/hooks/invoice.hook.ts:22: * @accounting US-GAAP ASC-310 receivables
@@ -1974,6 +1978,9 @@ src/plugins/accounting/hooks/item.hook.ts:18: * @accounting IFRS IAS-2 inventori
 src/plugins/accounting/hooks/item.hook.ts:19: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/plugins/accounting/hooks/payment.hook.ts:22: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/plugins/accounting/hooks/payment.hook.ts:23: * @accounting US-GAAP ASC-230 statement-of-cash-flows
+src/plugins/accounting/hooks/period-end-adjustment.hook.ts:28: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/plugins/accounting/hooks/period-end-adjustment.hook.ts:29: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+src/plugins/accounting/hooks/period-end-adjustment.hook.ts:30: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
 src/plugins/accounting/index.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/plugins/accounting/index.ts:17: * @accounting IFRS IAS-2 inventories
 src/plugins/accounting/index.ts:18: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -2126,12 +2133,15 @@ src/services/journal-entry.service.ts:9: * @accounting IFRS IAS-1 presentation-o
 src/services/multi-currency.service.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
 src/services/multi-currency.service.ts:17: * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
 src/services/multi-currency.service.ts:18: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
-src/services/period-end-adjustment.service.ts:10: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
-src/services/period-end-adjustment.service.ts:11: * @accounting US-GAAP ASC-360 property-plant-and-equipment
-src/services/period-end-adjustment.service.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/services/period-end-adjustment.service.ts:7: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/services/period-end-adjustment.service.ts:8: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
-src/services/period-end-adjustment.service.ts:9: * @accounting IFRS IAS-37 provisions-contingent-liabilities
+src/services/period-end-adjustment.service.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/services/period-end-adjustment.service.ts:24: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+src/services/period-end-adjustment.service.ts:25: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
+src/services/period-end-adjustment.service.ts:26: * @accounting IFRS IAS-19 employee-benefits payroll-accrual
+src/services/period-end-adjustment.service.ts:27: * @accounting IFRS IAS-23 borrowing-costs interest-accrual
+src/services/period-end-adjustment.service.ts:28: * @accounting IFRS IAS-37 provisions-contingent-liabilities
+src/services/period-end-adjustment.service.ts:29: * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
+src/services/period-end-adjustment.service.ts:30: * @accounting US-GAAP ASC-360 property-plant-and-equipment
+src/services/period-end-adjustment.service.ts:31: * @accounting US-GAAP ASC-405 liabilities accrued-expenses
 src/services/tax-automation.service.ts:20: * @accounting OECD SAF-T tax-table
 src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/standards/_money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
@@ -2238,6 +2248,8 @@ tests/int/accounting/level-3-e2e.int.spec.ts:11: * @accounting IFRS IAS-1 IAS-7 
 tests/int/accounting/level-3-e2e.int.spec.ts:12: * @accounting US-GAAP ASC-205 ASC-230 ASC-360 ASC-606 ASC-830
 tests/int/accounting/money-storage.int.spec.ts:7: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/accounting/money-storage.int.spec.ts:8: * @accounting US-GAAP ASC-210 balance-sheet
+tests/int/accounting/period-end-adjustment-posting.int.spec.ts:12: * @accounting IFRS IAS-1 presentation-of-financial-statements
+tests/int/accounting/period-end-adjustment-posting.int.spec.ts:13: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 tests/int/export/integration.int.spec.ts:8: * @accounting IFRS IAS-1 presentation-of-financial-statements
 tests/int/export/integration.int.spec.ts:9: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 tests/int/export/statements.int.spec.ts:5: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -2437,8 +2449,8 @@ src/plugins/accounting/collections/JournalEntries.ts:42: * @security ISO-27002 �
 src/plugins/accounting/collections/KycChecks.ts:10: * @security ISO-27001 A.5.34 privacy-and-pii
 src/plugins/accounting/collections/Leases.ts:32: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/accounting/collections/PaymentRuns.ts:31: * @security ISO-27002 §5.4 segregation-of-duties
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:24: * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:25: * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
 src/plugins/accounting/collections/PurchaseOrders.ts:28: * @security ISO-27002 §5.4 segregation-of-duties requester-vs-approver
 src/plugins/accounting/collections/Quotes.ts:14: * @security ISO-27002 §5.4 segregation-of-duties
 src/plugins/accounting/collections/Returns.ts:11: * @security ISO-27002 §5.4 segregation-of-duties
@@ -2681,7 +2693,7 @@ src/plugins/accounting/collections/KycChecks.ts:9: * @audit ISO-19011:2018 audit
 src/plugins/accounting/collections/Leases.ts:30: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PaymentRuns.ts:29: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PerformanceObligations.ts:29: * @audit ISO-19011:2018 audit-trail po-satisfaction
-src/plugins/accounting/collections/PeriodEndAdjustments.ts:25: * @audit ISO-19011:2018 audit-trail
+src/plugins/accounting/collections/PeriodEndAdjustments.ts:26: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/collections/PurchaseOrders.ts:26: * @audit ISO-19011:2018 audit-trail purchase-commitment
 src/plugins/accounting/collections/Quotes.ts:12: * @audit ISO-19011:2018 audit-trail quote-issuance
 src/plugins/accounting/collections/Refunds.ts:13: * @audit ISO-19011:2018 audit-trail refund-evidence
@@ -2705,10 +2717,11 @@ src/plugins/accounting/hooks/base-accounting-hook.ts:13: * @audit ISO-19011:2018
 src/plugins/accounting/hooks/bill.hook.ts:20: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/cogs.hook.ts:15: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/depreciation.hook.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
-src/plugins/accounting/hooks/index.ts:21: * @audit ISO-19011:2018 audit-trail event-driven-posting
+src/plugins/accounting/hooks/index.ts:29: * @audit ISO-19011:2018 audit-trail event-driven-posting
 src/plugins/accounting/hooks/invoice.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/plugins/accounting/hooks/item.hook.ts:20: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/hooks/payment.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
+src/plugins/accounting/hooks/period-end-adjustment.hook.ts:32: * @audit ISO-19011:2018 audit-trail period-end-adjustment-evidence
 src/plugins/accounting/index.ts:58: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/middleware/host-scope.ts:19: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/plugin.ts:16: * @audit ISO-19011:2018 audit-trail
@@ -2760,7 +2773,7 @@ src/services/gl-posting.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/gl-posting.service.ts:526:   * @audit ISO-19011:2018 audit-trail period-expense
 src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/multi-currency.service.ts:19: * @audit ISO-19011:2018 audit-trail
-src/services/period-end-adjustment.service.ts:13: * @audit ISO-19011:2018 audit-trail
+src/services/period-end-adjustment.service.ts:33: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/ifrs-15/types.ts:280: * @audit ISO-19011:2018 audit-trail revenue-evidence
 src/standards/iso-19011/types.ts:89: * @audit ISO-19011:2018 §6.4.6 audit-evidence
@@ -2803,6 +2816,7 @@ tests/int/accounting/full-cycle-demo.int.spec.ts:16: * @audit ISO-19011:2018 aud
 tests/int/accounting/gl-hooks-emit-events.int.spec.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 tests/int/accounting/level-2-integration.int.spec.ts:10: * @audit ISO-19011:2018 audit-trail
 tests/int/accounting/level-3-e2e.int.spec.ts:13: * @audit ISO-19011:2018 audit-trail full-cycle
+tests/int/accounting/period-end-adjustment-posting.int.spec.ts:14: * @audit ISO-19011:2018 audit-trail period-end-evidence
 tests/int/config/appCollectionsRegistry.int.spec.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 tests/int/multiTenantTenantAdmin.int.spec.ts:17: * @audit ISO-19011:2018 audit-trail
 tests/int/parties/workflow.int.spec.ts:8: * @audit ISO-19011:2018 audit-trail state-transitions

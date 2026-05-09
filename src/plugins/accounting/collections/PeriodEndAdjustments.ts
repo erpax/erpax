@@ -7,6 +7,7 @@ import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
 import { validateNotLocked } from '../utilities/period-lock';
+import { periodEndAdjustmentPostingHook } from '../hooks/period-end-adjustment.hook';
 
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.
@@ -90,7 +91,13 @@ const PeriodEndAdjustments: CollectionConfig = {
         (data) => (data as { status?: string }).status === 'posted',
       ),
     ],
-    afterChange: [auditTrailAfterChange('period-end-adjustments')],
+    afterChange: [
+      // GL post when status flips to 'posted' — closes the
+      // period-end-adjustment.service.ts DOA. Books a real JE via
+      // journalEntryService and back-links it to the adjustment doc.
+      periodEndAdjustmentPostingHook,
+      auditTrailAfterChange('period-end-adjustments'),
+    ],
   },
   timestamps: true,
 };
