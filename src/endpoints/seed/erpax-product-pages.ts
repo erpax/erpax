@@ -8,7 +8,7 @@
  *
  *   await seedErpaxProductPages(payload, { tenantId, parentSlug: 'products' })
  *
- * Pages produced (12 total):
+ * Pages produced (16 total):
  *   /products                       — index (matrix of all capabilities)
  *   /products/quote-to-cash         — Sales / order management
  *   /products/procure-to-pay        — Purchasing / vendor bills
@@ -21,6 +21,10 @@
  *   /products/tax-engine            — Per-country tax (VAT / GST / Sales Tax)
  *   /products/financial-reporting   — IFRS / US-GAAP statement generation
  *   /products/international         — Country/currency/locale cascade
+ *   /products/leases                — IFRS 16 / ASC 842 ROU + lease liability
+ *   /products/payment-runs          — ISO 20022 pain.001/008 batch + SEPA mandates
+ *   /products/dunning               — IFRS 9 / CECL collections trail
+ *   /products/cost-centers          — IFRS 8 / ASC 280 segment dimension
  *
  * @standard schema.org Product
  * @standard schema.org WebSite breadcrumb
@@ -482,6 +486,114 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
     cta: { label: 'Per-country walkthrough', url: '/contact' },
     metaDescription:
       'International by erpax — multi-tenant SaaS where every tenant\'s country drives currency, locale, accounting framework, and document format.',
+  },
+  // ─── ERP-completeness round — IFRS-16 / ISO-20022 / IFRS-9 / IFRS-8 ───
+  {
+    slug: 'leases',
+    title: 'Lease Accounting',
+    tagline: 'IFRS 16 / ASC 842 — every lease on the balance sheet, no off-book surprises.',
+    pitch:
+      'erpax models the lessee single-model: a right-of-use (ROU) asset and a lease liability per lease, period-end interest accretion + amortisation posted via the same event-driven GL pattern as depreciation. Recognition exemptions (short-term ≤ 12 months, low-value) and modifications (term extension, scope change, discount-rate reset) are first-class.',
+    standards: [
+      'IFRS 16 §22-§35 — initial measurement of ROU asset',
+      'IFRS 16 §26-§28 — initial measurement of lease liability (PV of unpaid payments)',
+      'IFRS 16 §29-§31 — subsequent measurement (cost model)',
+      'IFRS 16 §44-§46 — modifications and remeasurement',
+      'US-GAAP ASC 842-20 — lessee accounting (finance vs operating)',
+      'ISO 19011 audit-trail on every lease lifecycle event',
+    ],
+    wired: [
+      '`leases` collection — master register: term, payments, discount rate, GL accounts',
+      'Initial-measurement service — PV of unpaid payments at commencement, plus IDC + prepayments − incentives',
+      'Period posting (next slice): Dr Interest Expense / Cr Lease Liability + Dr ROU Amortisation / Cr ROU Asset',
+      'Modification handling — scope-increase-not-separate triggers remeasurement at the new IBR',
+      'Recognition-exemption flag — short-term + low-value bypass the on-balance treatment',
+      'IAS 36 impairment reserve carried on the ROU asset',
+    ],
+    cta: { label: 'See a lease cycle', url: '/contact' },
+    metaDescription:
+      'Lease accounting by erpax — IFRS 16 / ASC 842 lessee single-model with ROU asset, lease liability, and modification handling out of the box.',
+  },
+  {
+    slug: 'payment-runs',
+    title: 'Payment Runs (SEPA)',
+    tagline:
+      'ISO 20022 batch — pain.001 to pay vendors, pain.008 to collect from customers, pacs.004 returns auto-handled.',
+    pitch:
+      'A payment run aggregates AP bills (or AR direct-debit collections) into a single ISO 20022 message, signs off through preparer→authoriser segregation, and settles against the resulting bank statement automatically. SEPA Direct Debit mandates are first-class: every pain.008 transaction references an active mandate id, and the 36-month obsolescence rule is enforced.',
+    standards: [
+      'ISO 20022 pain.001 — Customer Credit Transfer Initiation',
+      'ISO 20022 pain.008 — Customer Direct Debit Initiation',
+      'ISO 20022 pacs.004 — Payment Return (auto-applied to Refunds)',
+      'EPC114-06 — SEPA Credit Transfer scheme rulebook',
+      'EPC130-08 — SEPA Direct Debit scheme rulebook (mandate validity)',
+      'IFRS IAS-7 — statement of cash flows',
+      'SOX §404 — preparer-authoriser segregation, ISO 27002 §5.4',
+    ],
+    wired: [
+      '`payment-runs` collection — batch shell with status lifecycle (draft → pending_review → approved → exported → submitted → settled)',
+      '`sepa-mandates` collection — mandate register with sequence-state (FRST/RCUR/FNAL) and 36-month obsolescence',
+      'pain.001 / pain.008 XML generators (next slice) — the export step produces the wire file',
+      'pacs.002 ack / pacs.004 return ingest — auto-flips run status + opens Refunds entries',
+      'Bank-statement reconciliation auto-matches `payment-runs.transactions[].endToEndId` to camt.053 entries',
+      'Preparer / authoriser fields with auto-stamped timestamps — SoD by construction',
+    ],
+    cta: { label: 'See a SEPA cycle', url: '/contact' },
+    metaDescription:
+      'Payment Runs by erpax — ISO 20022 SEPA batch payments (pain.001 / pain.008) with mandate register, preparer-authoriser segregation, and end-to-end reconciliation.',
+  },
+  {
+    slug: 'dunning',
+    title: 'Dunning & Collections',
+    tagline:
+      'IFRS 9 / CECL evidence layer — every overdue invoice has a stage, a timeline, and an audit trail.',
+    pitch:
+      'A scheduled job (Cloudflare cron, 15-minute tick) advances overdue invoices through a five-stage cycle: friendly reminder → first demand → second demand → legal handover → write-off. Each stage transition is appended to the cycle history with the communication sent (email / SMS / postal letter / phone call) — so the auditor querying ECL allowance evidence sees exactly what efforts were made before the bad-debt write-off.',
+    standards: [
+      'IFRS 9 §5.5 — expected credit loss (simplified approach for trade receivables)',
+      'US-GAAP ASC 326-20 — current expected credit loss (CECL)',
+      'US-GAAP ASC 310 — receivables (trade)',
+      'ISO 19011 audit-trail — every stage entry preserved as evidence',
+      'GDPR Art.6(1)(f) — collections under legitimate interest',
+      'SOX §404 — bad-debt write-off requires controller approval (segregation of duties)',
+    ],
+    wired: [
+      '`dunning-cycles` collection — one row per overdue invoice with stage history (append-only)',
+      'Scheduled job (`dunningJob`, every 15 minutes) advances stages on configured day thresholds',
+      'Pause flags — disputed / payment-plan / legal-hold / bankruptcy / manual review',
+      'ECL provision linked to each cycle — feeds AllowanceForDoubtfulAccounts',
+      'Write-off JE auto-created (Dr Bad Debt Expense / Cr AR or Allowance) and linked to the cycle',
+      'DunningCyclesPanel widget — stage breakdown + overdue total',
+    ],
+    cta: { label: 'See dunning in action', url: '/contact' },
+    metaDescription:
+      'Dunning & Collections by erpax — IFRS 9 / CECL-grade evidence trail for every overdue invoice, scheduled stage progression, controller-approved write-offs.',
+  },
+  {
+    slug: 'cost-centers',
+    title: 'Cost Centers & Segments',
+    tagline:
+      'IFRS 8 / ASC 280 — track every dollar by region, country, BU, department, team, or project.',
+    pitch:
+      'Cost centers are erpax\'s analytical dimension: a hierarchy that JE lines tag onto without polluting the chart of accounts. Roll-up at any level (region → country → BU → department → team) gives the controller segment P&L for IFRS 8 disclosure and the ops team a project-level burn rate. Cost-pool centers carry allocation rules (headcount / floor area / revenue %) so shared services get pushed onto consumers automatically.',
+    standards: [
+      'IFRS IAS-1 §99 — statement of comprehensive income (presentation)',
+      'IFRS 8 — operating segments',
+      'IFRS 8 §13 — 10% revenue / asset / loss reportable-segment threshold',
+      'US-GAAP ASC 280 — segment reporting',
+      'ISO 19011 audit-trail',
+    ],
+    wired: [
+      '`cost-centers` collection — hierarchical, with kind discriminator (region / country / BU / dept / team / project / cost_pool / profit_center)',
+      'Manager assignment — drives approval-routing for cost-center expenses',
+      'Revenue / expense / capex flags per center — JE lines validate against allowed kinds',
+      'Allocation rules (cost_pool only) — basis (headcount / floor area / revenue %) + percentages',
+      'Reportable-segment flag — drives the IFRS 8 / ASC 280 disclosure block',
+      'CostCentersPanel widget — hierarchy depth + kind breakdown + reportable count',
+    ],
+    cta: { label: 'See segment P&L', url: '/contact' },
+    metaDescription:
+      'Cost Centers & Segments by erpax — hierarchical analytical dimension with allocation rules and IFRS 8 / ASC 280 reportable-segment flagging.',
   },
 ]
 

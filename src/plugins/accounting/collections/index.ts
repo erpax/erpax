@@ -101,6 +101,18 @@ export { default as WarehouseLocations } from './WarehouseLocations'
 export { default as InventoryMovements } from './InventoryMovements'
 export { default as BankTransactions } from './BankTransactions'
 
+// ─── ERP-completeness round — IFRS-16 / ISO-20022 / IFRS-9 / IFRS-8 ────
+// Leases (IFRS 16 / ASC 842 ROU + liability)
+// PaymentRuns (ISO 20022 pain.001 / pain.008 batch)
+// SepaMandates (pain.008 mandate register)
+// DunningCycles (IFRS 9 / ASC 326 CECL collection trail)
+// CostCenters (IAS 1 §99 / IFRS 8 / ASC 280 segment dimension)
+export { default as Leases } from './Leases'
+export { default as PaymentRuns } from './PaymentRuns'
+export { default as SepaMandates } from './SepaMandates'
+export { default as DunningCycles } from './DunningCycles'
+export { default as CostCenters } from './CostCenters'
+
 // Slice QQQ: retired report-shaped collection re-exports removed.
 // Per Payload's "create a collection only when structurally distinct"
 // guidance, derived data is service-generated (see
