@@ -12,9 +12,37 @@ import { autoPopulateHost } from '@/hooks/autoPopulateHost'
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
  *
+ * The canonical types live in `@/standards/en-16931`:
+ *   InvoiceHeader (BG-1 subset)  — invoice envelope
+ *   DocumentTotals (BG-22)       — BT-106..BT-115 totals chain
+ *   VatBreakdown   (BG-23)       — per-category × rate VAT detail
+ *
+ * Field projection:
+ *   canonical.InvoiceHeader.invoiceNumber (BT-1) → doc.number
+ *   canonical.InvoiceHeader.issueDate     (BT-2) → doc.dates.issuedAt
+ *   canonical.InvoiceHeader.typeCode      (BT-3) → doc.invoiceTypeCode
+ *   canonical.InvoiceHeader.currencyCode  (BT-5) → doc.currencyCode
+ *   canonical.InvoiceHeader.dueDate       (BT-9) → doc.dates.dueAt
+ *   canonical.DocumentTotals.lineNetTotal       (BT-106) → doc.amounts.itemTotal
+ *   canonical.DocumentTotals.allowancesTotal    (BT-107) → doc.amounts.allowancesTotal
+ *   canonical.DocumentTotals.chargesTotal       (BT-108) → doc.amounts.chargesTotal
+ *   canonical.DocumentTotals.taxExclusiveTotal  (BT-109) → doc.amounts.netTotal
+ *   canonical.DocumentTotals.vatTotal           (BT-110) → doc.amounts.taxTotal
+ *   canonical.DocumentTotals.taxInclusiveTotal  (BT-112) → doc.amounts.totalAmount
+ *   canonical.DocumentTotals.prepaidAmount      (BT-113) → doc.amounts.prepaidAmount
+ *   canonical.DocumentTotals.roundingAmount     (BT-114) → doc.amounts.roundingAmount
+ *   canonical.DocumentTotals.amountDue          (BT-115) → doc.amounts.totalDue
+ *   canonical.VatBreakdown[]                    (BG-23)  → doc.vatBreakdown[]
+ *
  * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+ * @standard EN-16931:2017 §BG-22 document-totals
+ * @standard EN-16931:2017 §BG-23 vat-breakdown
+ * @standard EN-16931:2017 BT-3 invoice-type-code
+ * @standard EN-16931:2017 BT-5 invoice-currency-code
  * @standard Peppol-BIS-3.0 billing electronic-invoicing
  * @standard UN-EDIFACT INVOIC d96a
+ * @standard UN-CEFACT 1001 document-name-code
+ * @standard UN-CEFACT 5305 duty-tax-fee-category-code
  * @standard UBL-2.1 universal-business-language
  * @standard ISO-4217:2015 currency-codes
  * @standard ISO-8601-1:2019 date-time invoice-date due-date
@@ -22,6 +50,7 @@ import { autoPopulateHost } from '@/hooks/autoPopulateHost'
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
  * @compliance SOX §404 internal-controls
  * @audit ISO-19011:2018 audit-trail
+ * @see src/standards/en-16931/types.ts
  * @see docs/STANDARDS.md §3
  */
 export const Invoices: CollectionConfig = {
@@ -74,7 +103,28 @@ export const Invoices: CollectionConfig = {
             { label: 'Transfer', value: 'transfer' },
           ],
           admin: {
-            description: 'Document type',
+            description:
+              'Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).',
+          },
+        },
+        {
+          name: 'invoiceTypeCode',
+          type: 'select',
+          options: [
+            { label: '326 — Partial invoice', value: '326' },
+            { label: '380 — Commercial invoice', value: '380' },
+            { label: '381 — Credit note', value: '381' },
+            { label: '384 — Corrected invoice', value: '384' },
+            { label: '386 — Prepayment invoice', value: '386' },
+            { label: '388 — Tax invoice', value: '388' },
+            { label: '389 — Self-billed invoice', value: '389' },
+            { label: '393 — Factored invoice', value: '393' },
+            { label: '395 — Consignment invoice', value: '395' },
+            { label: '751 — Information for accounting', value: '751' },
+          ],
+          admin: {
+            description:
+              'BT-3 — UN/CEFACT 1001 document name code. Required for EN-16931 / Peppol BIS export. Maps to canonical InvoiceHeader.typeCode.',
           },
         },
         {
@@ -249,7 +299,7 @@ export const Invoices: CollectionConfig = {
     {
       type: 'group',
       name: 'amounts',
-      label: 'Amounts (in cents)',
+      label: 'Amounts — BG-22 totals chain (cents)',
       fields: [
         {
           name: 'itemTotal',
@@ -257,28 +307,66 @@ export const Invoices: CollectionConfig = {
           required: true,
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Items subtotal', step: 0.01 },
+          admin: {
+            description:
+              'BT-106 — Sum of invoice line net amounts. Maps to canonical DocumentTotals.lineNetTotal.',
+            step: 0.01,
+          },
         },
         {
           name: 'discountTotal',
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Total discounts', step: 0.01 },
+          admin: {
+            description:
+              'Total discounts applied. Includes line-level + document-level allowances; for the canonical breakdown see allowancesTotal (BT-107) below.',
+            step: 0.01,
+          },
+        },
+        {
+          name: 'allowancesTotal',
+          type: 'number',
+          defaultValue: 0,
+          min: 0,
+          admin: {
+            description:
+              'BT-107 — Sum of document-level allowances (BG-20). Maps to canonical DocumentTotals.allowancesTotal.',
+            step: 0.01,
+          },
+        },
+        {
+          name: 'chargesTotal',
+          type: 'number',
+          defaultValue: 0,
+          min: 0,
+          admin: {
+            description:
+              'BT-108 — Sum of document-level charges (BG-21). Maps to canonical DocumentTotals.chargesTotal.',
+            step: 0.01,
+          },
         },
         {
           name: 'netTotal',
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Net before tax', step: 0.01 },
+          admin: {
+            description:
+              'BT-109 — Invoice total amount without VAT (= itemTotal − allowancesTotal + chargesTotal). Maps to canonical DocumentTotals.taxExclusiveTotal.',
+            step: 0.01,
+          },
         },
         {
           name: 'taxTotal',
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Total tax', step: 0.01 },
+          admin: {
+            description:
+              'BT-110 — Invoice total VAT amount (sum of BG-23 BT-117). Maps to canonical DocumentTotals.vatTotal.',
+            step: 0.01,
+          },
         },
         {
           name: 'totalAmount',
@@ -286,21 +374,113 @@ export const Invoices: CollectionConfig = {
           required: true,
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Grand total', step: 0.01 },
+          admin: {
+            description:
+              'BT-112 — Invoice total amount with VAT. Maps to canonical DocumentTotals.taxInclusiveTotal.',
+            step: 0.01,
+          },
+        },
+        {
+          name: 'prepaidAmount',
+          type: 'number',
+          defaultValue: 0,
+          min: 0,
+          admin: {
+            description:
+              'BT-113 — Paid amount (prepayment). Maps to canonical DocumentTotals.prepaidAmount.',
+            step: 0.01,
+          },
+        },
+        {
+          name: 'roundingAmount',
+          type: 'number',
+          defaultValue: 0,
+          admin: {
+            description:
+              'BT-114 — Rounding amount (small-amount rounding to legal-tender minimum). Can be negative. Maps to canonical DocumentTotals.roundingAmount.',
+            step: 0.01,
+          },
         },
         {
           name: 'totalPaid',
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Amount paid', step: 0.01 },
+          admin: { description: 'Amount paid (running ledger of receipts).', step: 0.01 },
         },
         {
           name: 'totalDue',
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Amount due', step: 0.01 },
+          admin: {
+            description:
+              'BT-115 — Amount due for payment (= taxInclusiveTotal − prepaidAmount + roundingAmount). Maps to canonical DocumentTotals.amountDue.',
+            step: 0.01,
+          },
+        },
+      ],
+    },
+    {
+      name: 'vatBreakdown',
+      type: 'array',
+      label: 'VAT breakdown (BG-23)',
+      labels: { singular: 'VAT category', plural: 'VAT categories' },
+      admin: {
+        description:
+          'EN 16931 §BG-23 — one row per VAT category × rate. Required for EN-16931 / Peppol BIS export. Maps to canonical VatBreakdown[].',
+      },
+      fields: [
+        {
+          name: 'categoryCode',
+          type: 'select',
+          required: true,
+          options: [
+            { label: 'S — Standard rate', value: 'S' },
+            { label: 'Z — Zero rated', value: 'Z' },
+            { label: 'E — Exempt', value: 'E' },
+            { label: 'AE — Reverse charge', value: 'AE' },
+            { label: 'K — Intra-community', value: 'K' },
+            { label: 'G — Export outside EU', value: 'G' },
+            { label: 'O — Out of scope', value: 'O' },
+            { label: 'L — Canary IGIC', value: 'L' },
+            { label: 'M — Ceuta/Melilla IPSI', value: 'M' },
+          ],
+          admin: { description: 'BT-118 — VAT category code (UN/CEFACT 5305).' },
+        },
+        {
+          name: 'rate',
+          type: 'number',
+          min: 0,
+          max: 100,
+          admin: { description: 'BT-119 — VAT category rate (percent).' },
+        },
+        {
+          name: 'taxableAmount',
+          type: 'number',
+          required: true,
+          min: 0,
+          admin: { description: 'BT-116 — VAT category taxable amount (cents).' },
+        },
+        {
+          name: 'taxAmount',
+          type: 'number',
+          required: true,
+          min: 0,
+          admin: { description: 'BT-117 — VAT category tax amount (cents).' },
+        },
+        {
+          name: 'exemptionReasonCode',
+          type: 'text',
+          admin: {
+            description:
+              'BT-121 — Exemption reason code (required when categoryCode is E / AE / K / G / O).',
+          },
+        },
+        {
+          name: 'exemptionReason',
+          type: 'text',
+          admin: { description: 'BT-120 — Exemption reason free text.' },
         },
       ],
     },

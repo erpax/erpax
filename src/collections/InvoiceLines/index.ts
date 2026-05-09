@@ -6,13 +6,42 @@ import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 /**
  * Invoice Lines — line items (BG-25) for an invoice header.
  *
+ * The canonical type lives in `@/standards/en-16931` (InvoiceLine).
+ * This collection's field set is the Payload projection of that type:
+ *
+ *   canonical.id (BT-126)            → doc.code
+ *   canonical.note (BT-127)          → doc.lineNote
+ *   canonical.objectIdentifier (BT-128) → doc.objectIdentifier (under details)
+ *   canonical.quantity (BT-129)      → doc.quantity.quantity
+ *   canonical.unitCode (BT-130)      → doc.quantity.unit
+ *   canonical.netAmount (BT-131)     → doc.taxation.netTotal
+ *   canonical.description (BG-31 BT-153) → doc.description
+ *   canonical.priceDetails (BG-29):
+ *     BT-146 itemNetPrice            → doc.pricing.unitPrice
+ *     BT-147 itemPriceDiscount       → doc.discounting.discountTotal
+ *   canonical.vat (BG-30):
+ *     BT-151 categoryCode            → doc.taxation.vatCategoryCode
+ *     BT-152 rate                    → doc.taxation.taxRate
+ *     BT-120 exemptionReason         → doc.taxation.vatExemptionReason
+ *     BT-121 exemptionReasonCode     → doc.taxation.vatExemptionReasonCode
+ *   canonical.allowances (BG-27)     → doc.discounting.discountTotal (single)
+ *   canonical.itemId                 → doc.items.sellerItem
+ *
  * @standard EN-16931:2017 §BG-25 invoice-line
+ * @standard EN-16931:2017 §BG-29 price-details
+ * @standard EN-16931:2017 §BG-30 line-vat-information
+ * @standard EN-16931:2017 §BG-27 invoice-line-allowances
+ * @standard EN-16931:2017 §BG-28 invoice-line-charges
+ * @standard EN-16931:2017 BT-126 invoice-line-identifier
+ * @standard EN-16931:2017 BT-131 invoice-line-net-amount
+ * @standard EN-16931:2017 BT-151 vat-category-code
  * @standard Peppol-BIS-3.0 billing line-detail
  * @standard UN-EDIFACT INVOIC §LIN line-segment
  * @standard ISO-4217:2015 currency-codes
  * @standard UN-CEFACT-5305 tax-category-codes
  * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
  * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+ * @see src/standards/en-16931/types.ts InvoiceLine
  * @see docs/STANDARDS.md §3
  */
 export const InvoiceLines: CollectionConfig = {
@@ -53,7 +82,23 @@ export const InvoiceLines: CollectionConfig = {
       name: 'description',
       type: 'textarea',
       required: true,
-      admin: { description: 'Item description' },
+      admin: { description: 'Item description (BG-31 BT-153 item name).' },
+    },
+    {
+      name: 'lineNote',
+      type: 'textarea',
+      admin: {
+        description:
+          'BT-127 — Free-text note attached to the invoice line. Maps to canonical InvoiceLine.note.',
+      },
+    },
+    {
+      name: 'objectIdentifier',
+      type: 'text',
+      admin: {
+        description:
+          'BT-128 — Cross-reference to the buyer\'s or seller\'s document (e.g. PO line, GTIN, SKU). Maps to canonical InvoiceLine.objectIdentifier.',
+      },
     },
     {
       name: 'status',
@@ -176,7 +221,7 @@ export const InvoiceLines: CollectionConfig = {
     {
       type: 'group',
       name: 'taxation',
-      label: 'Taxation',
+      label: 'Taxation (BG-30 line VAT info)',
       fields: [
         {
           name: 'taxable',
@@ -185,11 +230,50 @@ export const InvoiceLines: CollectionConfig = {
           admin: { description: 'Apply tax to this line' },
         },
         {
+          name: 'vatCategoryCode',
+          type: 'select',
+          options: [
+            { label: 'S — Standard rate', value: 'S' },
+            { label: 'Z — Zero rated goods', value: 'Z' },
+            { label: 'E — Exempt from VAT', value: 'E' },
+            { label: 'AE — Reverse charge (recipient liable)', value: 'AE' },
+            { label: 'K — Intra-community supply (Art. 138)', value: 'K' },
+            { label: 'G — Export outside EU (Art. 146)', value: 'G' },
+            { label: 'O — Out of scope of VAT', value: 'O' },
+            { label: 'L — Canary Islands IGIC', value: 'L' },
+            { label: 'M — Ceuta & Melilla IPSI', value: 'M' },
+          ],
+          admin: {
+            description:
+              'BT-151 — VAT category code (UN/CEFACT 5305 EU subset). Required for EN-16931 / Peppol BIS export.',
+          },
+        },
+        {
           name: 'taxRate',
           type: 'number',
           min: 0,
           max: 100,
-          admin: { description: 'Tax rate %', step: 0.01 },
+          admin: {
+            description:
+              'BT-152 — VAT rate (percent, e.g. 20 for 20%). Maps to canonical LineVatInformation.rate.',
+            step: 0.01,
+          },
+        },
+        {
+          name: 'vatExemptionReasonCode',
+          type: 'text',
+          admin: {
+            description:
+              'BT-121 — VAT exemption reason code (when categoryCode is E / AE / K / G / O). Required for EN-16931 export when applicable.',
+          },
+        },
+        {
+          name: 'vatExemptionReason',
+          type: 'text',
+          admin: {
+            description:
+              'BT-120 — VAT exemption reason free text.',
+          },
         },
         {
           name: 'priceIncludesTax',
@@ -202,14 +286,18 @@ export const InvoiceLines: CollectionConfig = {
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Net total before tax (cents)', step: 0.01 },
+          admin: {
+            description:
+              'BT-131 — Invoice line net amount (cents). Canonical key.',
+            step: 0.01,
+          },
         },
         {
           name: 'taxTotal',
           type: 'number',
           defaultValue: 0,
           min: 0,
-          admin: { description: 'Total tax (cents)', step: 0.01 },
+          admin: { description: 'Total tax for this line (cents)', step: 0.01 },
         },
       ],
     },
