@@ -1,17 +1,18 @@
 import type { CollectionConfig } from 'payload'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import { multiTenancyField } from '../fields/base-accounting-fields'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { currencyField } from '../fields/base-accounting-fields';
 import { validateNotLocked } from '../utilities/period-lock';
+import { bankStatementImportedHook } from '../hooks/bank-statement.hook';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.
  *
- * Slice ZZ: full canonical hook chain wired (autoPopulateHost +
+ * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
  * autoPopulateCreatedBy + validateNotLocked + ISO-8601 reconciledAt
  * timestamp + audit-trail emission per write).
  *
@@ -112,7 +113,7 @@ const BankStatements: CollectionConfig = {
     },
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,
@@ -123,7 +124,9 @@ const BankStatements: CollectionConfig = {
       ),
     ],
     // SOX §404 / ISO-19011: structured event for every bank-statement write.
-    afterChange: [auditTrailAfterChange('bank-statements')],
+    // Slice LLL: emit `bank:statement:imported` so glPostingService books a
+    // JE for every transaction line (closes the IAS-7 cash-flow GL gap).
+    afterChange: [bankStatementImportedHook, auditTrailAfterChange('bank-statements')],
   },
   timestamps: true,
 };

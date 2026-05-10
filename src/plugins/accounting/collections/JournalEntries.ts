@@ -1,5 +1,5 @@
 import type { Access, CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
@@ -121,7 +121,7 @@ const JournalEntries: CollectionConfig = {
   ],
   hooks: {
     beforeValidate: [
-      autoPopulateHost,
+      autoPopulateTenant,
       // Single source of truth for the double-entry balance check.
       validateBalancedEntry({
         linesField: 'lines',

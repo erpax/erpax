@@ -1,12 +1,11 @@
 import type { CollectionConfig } from 'payload'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
-import { multiTenancyField } from '../fields/base-accounting-fields'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { tenantAdminWriteAccess } from '@/plugins/auth/access'
+import { multiTenancyField, currencyField, notesField } from '../fields/base-accounting-fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
-import { currencyField } from '../fields/base-accounting-fields';
 
 /**
  * Financial Statements — generated statement records (TB, BS, IS, CF, etc.).
@@ -20,7 +19,11 @@ import { currencyField } from '../fields/base-accounting-fields';
  * @standard ISO-8601-1:2019 date-time fiscal-period-end generated-at issued-at approved-at
  * @standard BCP-47 language-tag
  * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting IFRS IAS-34 §8 §10 interim-financial-reporting (when statementType ∈ Q1/Q2/Q3 the §10 condensed format applies)
+ * @accounting IFRS IFRS-18 §9 §10 §40 presentation-and-disclosure (effective 2027-01 — replaces IAS-1 with structured operating/investing/financing categories)
+ * @accounting IFRS IFRS-7 §31-§42 financial-instruments-disclosures (statement notes consume IFRS-7 risk-management disclosures)
  * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-270 interim-reporting
  * @compliance SOX §302 disclosure-controls
  * @compliance SOX §404 internal-controls
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -35,12 +38,7 @@ const FinancialStatements: CollectionConfig = {
     useAsTitle: 'statementId',
     defaultColumns: ['statementId', 'statementType', 'fiscalPeriodEnd', 'language', 'generatedAt'],
   },
-  access: {
-    read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: tenantAdmin,
-    delete: tenantAdmin,
-  },
+  access: tenantAdminWriteAccess(),
   fields: [
     multiTenancyField(),
     { name: 'statementId', type: 'text', required: true, unique: true },
@@ -99,7 +97,7 @@ const FinancialStatements: CollectionConfig = {
     },
     { name: 'comparativePeriod', type: 'date' },
     { name: 'comparativeData', type: 'json' },
-    { name: 'notes', type: 'textarea' },
+    notesField(),
     {
       name: 'status',
       type: 'select',
@@ -135,7 +133,7 @@ const FinancialStatements: CollectionConfig = {
     { name: 'generatedBy', type: 'relationship', relationTo: 'users', admin: { disabled: true } },
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       autoPopulateCreatedBy,
       // SOX §302 disclosure-controls: the user who generated the statement

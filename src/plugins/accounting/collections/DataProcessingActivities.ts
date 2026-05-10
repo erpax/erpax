@@ -15,7 +15,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
@@ -79,6 +79,11 @@ const DataProcessingActivities: CollectionConfig = {
     {
       name: 'thirdCountryTransfers',
       type: 'array',
+      // Shortened DB table name keeps the nested `safeguard` enum identifier
+      // under the 63-char Postgres/SQLite cap. Without this, the generated
+      // enum is `enum_data_processing_activities_third_country_transfers_safeguard`
+      // (65 chars) and `migrate:generate` throws.
+      dbName: 'transfers',
       admin: { description: 'Art.44 transfers — list each destination + safeguard.' },
       fields: [
         { name: 'country', type: 'text', required: true },
@@ -98,7 +103,7 @@ const DataProcessingActivities: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [autoPopulateCreatedBy],
     afterChange: [auditTrailAfterChange('data-processing-activities')],
   },

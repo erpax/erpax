@@ -19,7 +19,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
@@ -65,6 +65,28 @@ const InventoryMovements: CollectionConfig = {
     { name: 'quantity', type: 'number', required: true, admin: { description: 'Positive = inbound to toLocation; negative = outbound from fromLocation.' } },
     { name: 'unitCost', type: 'number', defaultValue: 0, admin: { description: 'In cents — used for cost-flow & GL valuation.' } },
     { name: 'extendedCost', type: 'number', defaultValue: 0, admin: { readOnly: true, description: 'quantity × unitCost; auto-computed.' } },
+    // Slice QQQ: explicit cost-formula election per IAS-2 §25 / ASC 330-10-30.
+    // Without this, the GL handler defaulted to weighted-average implicitly,
+    // which is non-conformant for tenants electing FIFO or specific
+    // identification (often a tax / disclosure choice).
+    //
+    // @accounting IFRS IAS-2 §25 cost-formulas
+    // @accounting US-GAAP ASC-330-10-30 inventory-valuation
+    {
+      name: 'valuationMethod',
+      type: 'select',
+      required: true,
+      defaultValue: 'weighted_average',
+      options: [
+        { label: 'FIFO (First-In First-Out)', value: 'fifo' },
+        { label: 'Weighted Average Cost', value: 'weighted_average' },
+        { label: 'Specific Identification', value: 'specific_identification' },
+      ],
+      admin: {
+        description:
+          'IAS-2 §25 / ASC 330-10-30 cost formula election. Drives how the GL handler picks unitCost when the source-doc cost basis differs from the on-hand average.',
+      },
+    },
     currencyField(),
     { name: 'fromLocation', type: 'relationship', relationTo: 'warehouse-locations' },
     { name: 'toLocation', type: 'relationship', relationTo: 'warehouse-locations' },
@@ -96,7 +118,7 @@ const InventoryMovements: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,

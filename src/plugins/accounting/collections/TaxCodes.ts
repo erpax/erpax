@@ -1,7 +1,9 @@
 import type { CollectionConfig } from 'payload'
-import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
-import { multiTenancyField } from '../fields/base-accounting-fields'
+import { tenantMasterDataAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { multiTenancyField, taxonomySelect } from '../fields/base-accounting-fields'
+import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
 
 /**
  * Tax Codes — tax-rate master.
@@ -21,17 +23,12 @@ export const TaxCodes: CollectionConfig = {
   slug: 'tax-codes',
   admin: {
     useAsTitle: 'code',
-    defaultColumns: ['code', 'label', 'taxType', 'ratePercent', 'jurisdiction', 'effectiveFrom', 'effectiveTo'],
+    defaultColumns: ['code', 'label', 'classification.taxType', 'rate.ratePercent', 'classification.jurisdiction', 'validity.effectiveFrom', 'validity.effectiveTo'],
     group: 'Tax',
   },
-  access: {
-    read: multiTenantRead,
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
-    delete: adminOnly,
-  },
+  access: tenantMasterDataAccess(),
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       async ({ data }) => {
         if (data.effectiveFrom && data.effectiveTo) {
@@ -44,7 +41,9 @@ export const TaxCodes: CollectionConfig = {
         return data
       },
     ],
+    afterChange: [auditTrailAfterChange('tax-codes')],
   },
+  timestamps: true,
   fields: [
     // Identity — `code` and `label` kept at top level so `useAsTitle` and
     // `defaultColumns` can resolve them (Payload's useAsTitle does not
@@ -79,19 +78,7 @@ export const TaxCodes: CollectionConfig = {
             { label: 'Customs / Duty', value: 'customs' },
           ], index: true,
           admin: { description: 'Tax regime' } },
-        { name: 'categoryCode', type: 'select', defaultValue: 'S',
-          options: [
-            { label: 'S — Standard rate', value: 'S' },
-            { label: 'Z — Zero rated goods', value: 'Z' },
-            { label: 'E — Exempt from tax', value: 'E' },
-            { label: 'AE — Reverse charge', value: 'AE' },
-            { label: 'K — Intra-community supply', value: 'K' },
-            { label: 'G — Export outside EU', value: 'G' },
-            { label: 'O — Outside scope of tax', value: 'O' },
-            { label: 'L — Canary Islands IGIC', value: 'L' },
-            { label: 'M — Ceuta/Melilla IPSI', value: 'M' },
-          ],
-          admin: { description: 'EN 16931 / UN/CEFACT 5305 tax category code' } },
+        taxonomySelect('categoryCode', VAT_CATEGORY_OPTIONS, { defaultValue: 'S', description: 'EN-16931 BT-151 / UN/CEFACT 5305 tax category code' }),
         { name: 'jurisdiction', type: 'relationship', relationTo: 'tax-jurisdictions',
           required: true, index: true,
           admin: { description: 'Issuing jurisdiction' } },

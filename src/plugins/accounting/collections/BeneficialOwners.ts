@@ -10,7 +10,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
@@ -67,7 +67,7 @@ const BeneficialOwners: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [autoPopulateCreatedBy],
     afterChange: [auditTrailAfterChange('beneficial-owners')],
   },

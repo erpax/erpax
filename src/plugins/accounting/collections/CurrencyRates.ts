@@ -1,14 +1,14 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { tenantAdminWriteAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
-import { multiTenancyField, currencyField } from '../fields/base-accounting-fields'
+import { multiTenancyField, currencyField, notesField } from '../fields/base-accounting-fields'
 
 /**
  * Currency Rates — FX rate master for multi-currency translation.
  *
  * Slice WW-cleanup: switched to canonical access predicates +
- * field factories + autoPopulateHost. Removed dead `if (!data.tenant
+ * field factories + autoPopulateTenant. Removed dead `if (!data.tenant
  * && undefined)` code. Inverse-rate calc preserved.
  *
  * @standard ISO-4217:2015 currency-codes from-currency to-currency
@@ -26,12 +26,7 @@ const CurrencyRates: CollectionConfig = {
     useAsTitle: 'rateId',
     defaultColumns: ['fromCurrency', 'toCurrency', 'rateDate', 'rate', 'source'],
   },
-  access: {
-    read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: tenantAdmin,
-    delete: tenantAdmin,
-  },
+  access: tenantAdminWriteAccess(),
   fields: [
     multiTenancyField(),
     { name: 'rateId', type: 'text', required: true, unique: true },
@@ -58,10 +53,10 @@ const CurrencyRates: CollectionConfig = {
     { name: 'askRate', type: 'number' },
     { name: 'isActive', type: 'checkbox', defaultValue: true },
     { name: 'usedInTransactions', type: 'number', defaultValue: 0, admin: { disabled: true } },
-    { name: 'notes', type: 'textarea' },
+    notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       async ({ data }) => {
         // Preserve the inline inverse-rate auto-calc — domain-specific to FX.

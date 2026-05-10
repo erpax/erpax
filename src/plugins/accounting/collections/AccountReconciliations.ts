@@ -31,7 +31,7 @@
 
 import type { CollectionConfig } from 'payload';
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access';
-import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
@@ -259,13 +259,7 @@ const AccountReconciliations: CollectionConfig = {
       admin: { readOnly: true },
     },
     { name: 'reviewedAt', type: 'date', admin: { readOnly: true } },
-    {
-      name: 'approvedBy',
-      type: 'relationship',
-      relationTo: 'users',
-      admin: { readOnly: true },
-    },
-    { name: 'approvedAt', type: 'date', admin: { readOnly: true } },
+    // approvedBy / approvedAt come from auditFields({ readOnly: true }) below.
     { name: 'rejectionReason', type: 'textarea' },
 
     statusField(
@@ -291,11 +285,11 @@ const AccountReconciliations: CollectionConfig = {
       },
     },
 
-    ...auditFields(),
+    ...auditFields({ readOnly: true }),
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,

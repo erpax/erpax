@@ -12,13 +12,14 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import { multiTenancyField, statusField, notesField, auditFields } from '../fields/base-accounting-fields'
+import { emitGrPosted } from '@/hooks/chainEventEmitters'
 
 const GoodsReceipts: CollectionConfig = {
   slug: 'goods-receipts',
@@ -69,13 +70,13 @@ const GoodsReceipts: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       autoPopulateCreatedBy,
       enforceSegregationOfDuties('inspectedBy', 'createdBy'),
       autoSetTimestamp('inspectedAt', (d) => Boolean((d as { inspectedBy?: unknown }).inspectedBy)),
     ],
-    afterChange: [auditTrailAfterChange('goods-receipts')],
+    afterChange: [emitGrPosted, auditTrailAfterChange('goods-receipts')],
   },
   timestamps: true,
 }

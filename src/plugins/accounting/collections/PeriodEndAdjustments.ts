@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
-import { multiTenancyField } from '../fields/base-accounting-fields'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { multiTenancyField, notesField } from '../fields/base-accounting-fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
@@ -12,7 +12,7 @@ import { periodEndAdjustmentPostingHook } from '../hooks/period-end-adjustment.h
 /**
  * Period-End Adjustments — accruals, deferrals, depreciation, allocation entries.
  *
- * Slice ZZ: full canonical hook chain wired (autoPopulateHost +
+ * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
  * autoPopulateCreatedBy + validateNotLocked + segregation of duties on
  * approval + ISO-8601 postedAt timestamp + audit-trail emission).
  *
@@ -75,10 +75,10 @@ const PeriodEndAdjustments: CollectionConfig = {
         { label: 'Reversed', value: 'reversed' },
       ],
     },
-    { name: 'notes', type: 'textarea' },
+    notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,

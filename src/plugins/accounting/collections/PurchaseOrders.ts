@@ -32,13 +32,14 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import {
+import { emitPoCreated } from '@/hooks/chainEventEmitters'
   multiTenancyField,
   currencyField,
   statusField,
@@ -135,7 +136,7 @@ const PurchaseOrders: CollectionConfig = {
   ],
   hooks: {
     beforeValidate: [
-      autoPopulateHost,
+      autoPopulateTenant,
       // Auto-calc line totals + PO totals on every write.
       async ({ data }) => {
         if (data?.lines && Array.isArray(data.lines)) {
@@ -161,7 +162,7 @@ const PurchaseOrders: CollectionConfig = {
         ['closed', 'cancelled'].includes(String((d as { status?: string }).status)),
       ),
     ],
-    afterChange: [auditTrailAfterChange('purchase-orders')],
+    afterChange: [emitPoCreated, auditTrailAfterChange('purchase-orders')],
   },
   timestamps: true,
 }

@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
-import { multiTenancyField } from '../fields/base-accounting-fields'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost';
+import { multiTenancyField, notesField } from '../fields/base-accounting-fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
@@ -10,7 +10,7 @@ import { validateNotLocked } from '../utilities/period-lock';
 /**
  * Tax Calculations — computed tax-liability snapshots per period.
  *
- * Slice ZZ: full canonical hook chain wired (autoPopulateHost +
+ * Slice ZZ: full canonical hook chain wired (autoPopulateTenant +
  * autoPopulateCreatedBy + validateNotLocked + ISO-8601 postedAt /
  * filedAt / paidAt timestamps + audit-trail emission per write).
  *
@@ -93,12 +93,12 @@ const TaxCalculations: CollectionConfig = {
     },
     { name: 'filingDeadline', type: 'date' },
     { name: 'paymentDeadline', type: 'date' },
-    { name: 'notes', type: 'textarea' },
+    notesField(),
   ],
   // Slice ZZ: full canonical hook chain wired per banner declarations.
   // Was: empty hooks (banner promised audit-trail, no implementation).
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,

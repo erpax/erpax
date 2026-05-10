@@ -19,7 +19,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
@@ -171,13 +171,6 @@ const TimeEntries: CollectionConfig = {
       admin: { readOnly: true },
     },
     {
-      name: 'approvedBy',
-      type: 'relationship',
-      relationTo: 'users',
-      admin: { readOnly: true },
-    },
-    { name: 'approvedAt', type: 'date', admin: { readOnly: true } },
-    {
       name: 'rejectionReason',
       type: 'textarea',
       admin: {
@@ -193,11 +186,12 @@ const TimeEntries: CollectionConfig = {
         description: 'Payroll run that consumed this entry — set when status flips to posted.',
       },
     },
-    ...auditFields(),
+    // approvedBy / approvedAt come from auditFields({ readOnly: true }) below.
+    ...auditFields({ readOnly: true }),
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       autoPopulateCreatedBy,
       autoSetTimestamp(

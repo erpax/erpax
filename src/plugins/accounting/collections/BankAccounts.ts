@@ -17,24 +17,19 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { tenantAdminWriteAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import { multiTenancyField, currencyField, statusField, notesField, auditFields } from '../fields/base-accounting-fields'
 
 const BankAccounts: CollectionConfig = {
   slug: 'bank-accounts',
   labels: { singular: 'Bank Account', plural: 'Bank Accounts' },
   admin: { useAsTitle: 'accountName', defaultColumns: ['accountName', 'iban', 'bic', 'currency', 'status'] },
-  access: {
-    read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: tenantAdmin,
-    delete: tenantAdmin,
-  },
+  access: tenantAdminWriteAccess(),
   fields: [
     multiTenancyField(),
     { name: 'accountName', type: 'text', required: true, admin: { description: 'Friendly label, e.g. "Operating Account — Bulbank EUR".' } },
@@ -91,7 +86,7 @@ const BankAccounts: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       autoPopulateCreatedBy,
       // Country comes from the IBAN if not explicitly set — single source of

@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
-import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { tenantMasterDataAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/classifyTaxId'
 import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
 import { multiTenancyField } from '../fields/base-accounting-fields'
@@ -25,24 +26,21 @@ export const Vendors: CollectionConfig = {
   slug: 'vendors',
   admin: {
     useAsTitle: 'name',
-    defaultColumns: ['code', 'name', 'vendorType', 'defaultCurrency', 'preferredPaymentMethod', 'status'],
+    defaultColumns: ['code', 'name', 'identity.vendorType', 'commercial.defaultCurrency', 'commercial.preferredPaymentMethod', 'identity.status'],
     group: 'Billing',
   },
-  access: {
-    read: multiTenantRead,
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
-    delete: adminOnly,
-  },
+  access: tenantMasterDataAccess(),
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       // Country-context: classify VAT/Tax-ID against the per-country regex registry.
       classifyTaxId({ taxIdField: 'tax.vatNumber', countryField: 'country', labelField: 'tax.vatNumberType' }),
       // Bank-side jurisdiction comes from the IBAN if `bank.bankCountryCode` is blank.
       deriveCountryFromIban({ ibanField: 'bank.bankIban', countryField: 'bank.bankCountryCode' }),
     ],
+    afterChange: [auditTrailAfterChange('vendors')],
   },
+  timestamps: true,
   fields: [
     // Identity — `name` and `code` kept at top level so `useAsTitle` and
     // `defaultColumns` can resolve them (Payload's useAsTitle does not

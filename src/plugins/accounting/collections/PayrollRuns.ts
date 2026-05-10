@@ -21,6 +21,7 @@
  * @standard ISO-8601-1:2019 date-time period payment-date
  * @accounting IFRS IAS-19 employee-benefits short-term
  * @accounting IFRS IAS-19 §51 defined-contribution-plans
+ * @accounting IFRS IAS-26 §13 §14 §17 retirement-benefit-plan-reporting (employer-side contributions feed the §17 plan-asset disclosures)
  * @accounting US-GAAP ASC-710 compensation-general
  * @accounting US-GAAP ASC-715 compensation-retirement-benefits
  * @audit ISO-19011:2018 audit-trail payroll-evidence
@@ -38,7 +39,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
@@ -347,7 +348,7 @@ const PayrollRuns: CollectionConfig = {
     notesField(),
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       validateNotLocked,
       autoPopulateCreatedBy,

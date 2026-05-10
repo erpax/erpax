@@ -1,14 +1,15 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { tenantAdminWriteAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import {
   multiTenancyField,
   glAccountField,
   currencyField,
   statusField,
+  auditFields,
 } from '../fields/base-accounting-fields'
 import { validateNotLocked } from '../utilities/period-lock'
 import { validateBalancedEntry } from '../hooks/balanced-entry.hook'
@@ -37,12 +38,7 @@ const GLPostings: CollectionConfig = {
     useAsTitle: 'postingId',
     defaultColumns: ['postingId', 'sourceType', 'sourceId', 'journalEntry', 'status', 'postedDate'],
   },
-  access: {
-    read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: tenantAdmin,
-    delete: tenantAdmin,
-  },
+  access: tenantAdminWriteAccess(),
   fields: [
     multiTenancyField(),
     { name: 'postingId', type: 'text', required: true, unique: true },
@@ -89,11 +85,11 @@ const GLPostings: CollectionConfig = {
     { name: 'errorMessage', type: 'textarea' },
     { name: 'reversalPostingId', type: 'text' },
     { name: 'metadata', type: 'json' },
-    { name: 'createdBy', type: 'relationship', relationTo: 'users', admin: { disabled: true } },
+    ...auditFields(),
   ],
   hooks: {
     beforeValidate: [
-      autoPopulateHost,
+      autoPopulateTenant,
       // Single source of truth for the balance check, with field-name overrides
       // for GLPostings' `accountsAffected[].{debitAmount, creditAmount}` shape
       // (vs. JournalEntries' `lines[].{debit, credit}`).

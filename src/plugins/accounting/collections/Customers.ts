@@ -1,6 +1,7 @@
 import type { CollectionConfig } from 'payload'
-import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { tenantMasterDataAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { classifyTaxId } from '@/hooks/classifyTaxId'
 import { multiTenancyField } from '../fields/base-accounting-fields'
 
@@ -22,24 +23,21 @@ export const Customers: CollectionConfig = {
   slug: 'customers',
   admin: {
     useAsTitle: 'name',
-    defaultColumns: ['code', 'name', 'customerType', 'defaultCurrency', 'creditLimit', 'status'],
+    defaultColumns: ['code', 'name', 'identity.customerType', 'commercial.defaultCurrency', 'commercial.creditLimit', 'identity.status'],
     group: 'Billing',
   },
-  access: {
-    read: multiTenantRead,
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
-    delete: adminOnly,
-  },
+  access: tenantMasterDataAccess(),
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [
       // Country-context: classify the VAT/Tax-ID against the per-country
       // regex registry so downstream code (invoice e-invoice routing,
       // VIES gating, sanctions screening) branches off a normalised label.
       classifyTaxId({ taxIdField: 'tax.vatNumber', countryField: 'country', labelField: 'tax.vatNumberType' }),
     ],
+    afterChange: [auditTrailAfterChange('customers')],
   },
+  timestamps: true,
   fields: [
     // Identity — `name` and `code` kept at top level so `useAsTitle` and
     // `defaultColumns` can resolve them (Payload's useAsTitle does not

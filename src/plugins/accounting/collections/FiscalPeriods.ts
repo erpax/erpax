@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
-import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { tenantMasterDataAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { multiTenancyField } from '../fields/base-accounting-fields'
@@ -36,18 +36,13 @@ export const FiscalPeriods: CollectionConfig = {
   slug: 'fiscal-periods',
   admin: {
     useAsTitle: 'label',
-    defaultColumns: ['label', 'fiscalYear', 'periodNumber', 'startDate', 'endDate', 'status', 'closedAt'],
+    defaultColumns: ['label', 'identity.fiscalYear', 'identity.periodNumber', 'dates.startDate', 'dates.endDate', 'lifecycle.status', 'lifecycle.closedAt'],
     group: 'Ledger',
   },
-  access: {
-    read: multiTenantRead,
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
-    delete: adminOnly,
-  },
+  access: tenantMasterDataAccess(),
   hooks: {
     beforeValidate: [
-      autoPopulateHost,
+      autoPopulateTenant,
       async ({ data }) => {
         if (data && !data.label && data.fiscalYear && data.periodNumber !== undefined) {
           const padded = String(data.periodNumber).padStart(2, '0')
@@ -180,4 +175,5 @@ export const FiscalPeriods: CollectionConfig = {
     { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
     multiTenancyField(),
   ],
+  timestamps: true,
 }

@@ -55,7 +55,7 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { scopedAccess, tenantAdmin, adminOnly } from '@/plugins/auth/access'
 import { multiTenancyField } from '../fields/base-accounting-fields'
 
@@ -77,6 +77,27 @@ const AuditEvents: CollectionConfig = {
   },
   fields: [
     multiTenancyField(),
+    // Slice PPP: persist the canonical `eventId` (RFC 9562 UUID) carried
+    // by every DomainEvent. Required by SOX §404 + ISO 19011 §6.4.6 for
+    // event traceability — without it, two emissions of the same
+    // (collection, documentId, operation, timestamp) can't be told apart
+    // and the audit trail becomes ambiguous.
+    //
+    // @standard rfc-9562 uuid event-id
+    // @audit ISO-19011:2018 §6.4.6 audit-evidence-collection unique-event-identifier
+    // @compliance SOX §404 internal-controls evidence-preservation
+    {
+      name: 'eventId',
+      type: 'text',
+      required: true,
+      unique: true,
+      index: true,
+      admin: {
+        description:
+          'RFC 9562 UUID v4 — canonical event identifier. Carried in DomainEvent.eventId from the emitter; persisted here for SOX §404 / ISO 19011 §6.4.6 unique traceability.',
+        readOnly: true,
+      },
+    },
     {
       name: 'timestamp',
       type: 'date',
@@ -226,9 +247,25 @@ const AuditEvents: CollectionConfig = {
         readOnly: true,
       },
     },
+    // Slice QQQQ — Merkle hash chain for tamper-evidence over time.
+    // Each row's `rowHash` = SHA-256 over canonical JSON (eventId, tenant,
+    // timestamp, eventType, collectionSlug, documentId, user, previousHash).
+    // `previousHash` is the rowHash of the IMMEDIATELY-PRIOR audit-events
+    // row for the same tenant. An auditor can replay every row and verify
+    // the chain is intact — any insert / delete / mutation in the
+    // historical log breaks it.
+    //
+    // @standard NIST FIPS-180-4 sha-256
+    // @standard ISO 27037:2012 evidence-preservation
+    // @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
+    // @compliance SOX §404 internal-controls audit-tamper-evidence
+    { name: 'previousHash', type: 'text', index: true,
+      admin: { readOnly: true, description: 'SHA-256 hex of the immediately prior audit-events row for this tenant. Empty for the first row. Drives Merkle integrity check at the architecture-invariant gate.' } },
+    { name: 'rowHash', type: 'text', index: true,
+      admin: { readOnly: true, description: 'SHA-256 hex of canonical JSON over (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user, previousHash). Computed at write time; verified at the integrity-check gate.' } },
   ],
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     // Append-only: no afterChange (avoids recursion since this IS the audit log).
   },
   timestamps: true,

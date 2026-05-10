@@ -1,7 +1,8 @@
 import type { CollectionConfig } from 'payload'
-import { multiTenantRead, adminOnly, roleScopedAccess } from '@/plugins/auth'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
-import { multiTenancyField } from '../fields/base-accounting-fields'
+import { tenantMasterDataAccess } from '@/plugins/auth/access'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { multiTenancyField, currencyField } from '../fields/base-accounting-fields'
 
 /**
  * Tax Jurisdictions — tax authority master.
@@ -21,18 +22,15 @@ export const TaxJurisdictions: CollectionConfig = {
   slug: 'tax-jurisdictions',
   admin: {
     useAsTitle: 'code',
-    defaultColumns: ['code', 'name', 'country', 'region', 'currency', 'filingFrequency'],
+    defaultColumns: ['code', 'name', 'geography.country', 'geography.region', 'filing.currency', 'filing.filingFrequency'],
     group: 'Tax',
   },
-  access: {
-    read: multiTenantRead,
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
-    delete: adminOnly,
-  },
+  access: tenantMasterDataAccess(),
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
+    afterChange: [auditTrailAfterChange('tax-jurisdictions')],
   },
+  timestamps: true,
   fields: [
     // Identity — kept at top level so `useAsTitle` and `defaultColumns`
     // can resolve them (Payload's useAsTitle does not traverse into groups).
@@ -93,8 +91,7 @@ export const TaxJurisdictions: CollectionConfig = {
           admin: { description: 'How often returns are filed' } },
         { name: 'filingDueDayOfMonth', type: 'number', min: 1, max: 31,
           admin: { description: 'Day of month return is due (e.g. 20)' } },
-        { name: 'currency', type: 'text', required: true, defaultValue: 'EUR',
-          admin: { description: 'ISO 4217 currency for filing' } },
+        currencyField({ required: true }),
       ],
     },
     {
