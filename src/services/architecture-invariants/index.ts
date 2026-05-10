@@ -105,6 +105,9 @@ export async function runAllInvariants(
     results.push(C.checkEventGraphConnected(ctx))      // Law 4
     results.push(C.checkAgentOwnsEveryStep(ctx))       // Law 7
   }
+  if (!skip.has('entropy')) {
+    results.push(await C.checkContentIntegrityProvable(ctx))  // Law 8 — RRRRR
+  }
 
   return {
     totalChecks: results.length,

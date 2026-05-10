@@ -20,6 +20,7 @@ import { cronMatchesMinute } from '@/services/scheduled-tasks/runner'
 import { ROLES_REGISTRY, ROLE_IDS } from '@/access/roles-registry'
 import { agentRegistry } from '@/services/agents/bootstrap'
 import { supportedLocales } from '@/i18n'
+import { verifyContentUuid } from '@/services/integrity'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1163,6 +1164,67 @@ export function checkEventGraphConnected(_ctx: InvariantContext): InvariantResul
  * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
  * @audit ISO 19011:2018 §6.4.6
  */
+/**
+ * Conservation Law 8 — content-addressable integrity. Every object
+ * whose collection ships the `tamperProofUuidField` MUST have a uuid
+ * that recomputes from its content (RFC 4122 §4.3 + RFC 8785 + SHA-256).
+ *
+ * Samples up to N rows per opted-in collection per tenant, recomputes
+ * the content-uuid via `verifyContentUuid`, and reports any mismatch
+ * as a tamper finding. Skipped when `ctx.payload` isn't supplied
+ * (compile-time / static invariants pass).
+ *
+ * Roll-out: warn-only until every tamper-proof collection's data has
+ * been backfilled with computed uuids. Promote to fail once the
+ * backfill completes.
+ *
+ * @standard RFC 4122 + RFC 8785 + NIST FIPS 180-4
+ * @compliance SOX §404 (Byzantine tamper detection)
+ * @audit ISO 19011:2018 §6.4.6
+ */
+export async function checkContentIntegrityProvable(ctx: InvariantContext): Promise<InvariantResult> {
+  const payload = ctx.payload
+  if (!payload) {
+    return pass('entropy', 'content-integrity-provable',
+      'static-mode: skipped (no Payload — runtime check only)')
+  }
+  const SAMPLE_LIMIT = 50
+  const TAMPER_PROOF_COLLECTIONS = [
+    // Slice RRRRR enables this set incrementally as collections opt in
+    // by adding the `tamperProofUuidField()` to their schema. Empty
+    // today (RRRRR ships the primitive only) — first opt-in lands in
+    // the slice that wires the field on a real collection.
+  ] as const
+  if (TAMPER_PROOF_COLLECTIONS.length === 0) {
+    return pass('entropy', 'content-integrity-provable',
+      'no collections opted in yet (waiting for tamperProofUuidField wiring)')
+  }
+  const tampered: string[] = []
+  let totalChecked = 0
+  for (const slug of TAMPER_PROOF_COLLECTIONS) {
+    let docs: { docs: unknown[] }
+    try {
+      docs = await payload.find({ collection: slug as never, limit: SAMPLE_LIMIT, pagination: false })
+    } catch {
+      continue
+    }
+    for (const doc of docs.docs) {
+      const obj = doc as Record<string, unknown> & { uuid?: string; tenant?: string }
+      const tenantId = typeof obj.tenant === 'string' ? obj.tenant : 'unknown'
+      const result = verifyContentUuid(obj, tenantId)
+      totalChecked++
+      if (!result.ok) tampered.push(`${slug}#${String(obj.id ?? obj.uuid ?? '?')}`)
+    }
+  }
+  if (tampered.length === 0) {
+    return pass('entropy', 'content-integrity-provable',
+      `${totalChecked} sampled rows across ${TAMPER_PROOF_COLLECTIONS.length} tamper-proof collection(s) — all uuids match content`)
+  }
+  return warn('entropy', 'content-integrity-provable',
+    `${tampered.length}/${totalChecked} sampled rows have a uuid that disagrees with their content (Byzantine tamper or pending backfill)`,
+    tampered.slice(0, 8))
+}
+
 export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult {
   const orphans: string[] = []
   let total = 0

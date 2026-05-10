@@ -92,6 +92,7 @@ Every law is an architecture invariant under `src/services/architecture-invarian
 5. **Audit chain continuous** — Merkle leaves form an unbroken chain; every state transition produces a leaf. `checkMerkleChainContinuous` (QQQQ).
 6. **DRY** — no duplicate slugs / array dbNames / chain ids; canonical paths only. `checkCollectionsAreUniformlyDRY` + `checkInvoicePaymentCanonicalAccess` + `checkNoDuplicate*`.
 7. **Agent ownership total** — every chain step's `collection=X` resolves to exactly one agent in the registry. `checkAgentOwnsEveryStep` (NEW).
+8. **Content-addressable integrity** — every object's `uuid` is `UUIDv5(JCS-canonicalize(obj-without-uuid), tenantNamespace)` over SHA-256 (RFC 4122 §4.3 + RFC 8785 + FIPS 180-4). Any in-place DB tamper changes the content → recomputed uuid disagrees with stored uuid → flagged. Together with the QQQQ Merkle audit chain (which proves the *history* of transitions is intact), this proves the *current state* matches what was committed — Byzantine fault tolerance against privileged DB access. `checkContentIntegrityProvable` (Slice RRRRR).
 
 When all seven hold, the three vortices are mutually self-sustaining and the system can reproduce its own marketing material, audit evidence and i18n bundles deterministically from the spec.
 
