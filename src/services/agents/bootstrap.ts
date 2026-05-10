@@ -18,17 +18,43 @@ import { createInProcessMcpClient } from './mcp/in-process-client'
 import { ERPAX_MCP_RESOURCES } from './mcp/resource-defs'
 import { ERPAX_MCP_PROMPTS } from './mcp/prompt-defs'
 import { FinanceAgent } from '@/plugins/accounting/agents/finance.agent'
+import { SalesAgent } from './registered/sales.agent'
+import { MarketingAgent } from './registered/marketing.agent'
+import { HrAgent } from './registered/hr.agent'
+import { LegalAgent } from './registered/legal.agent'
+import { OpsAgent } from './registered/ops.agent'
+import { EngineeringAgent } from './registered/engineering.agent'
+import { CustomerSupportAgent } from './registered/customer-support.agent'
+import { DataAgent } from './registered/data.agent'
+import { DesignAgent } from './registered/design.agent'
+import { ProductAgent } from './registered/product.agent'
+import { ProductivityAgent } from './registered/productivity.agent'
+import { EnterpriseSearchAgent } from './registered/enterprise-search.agent'
+import { PluginsAgent } from './registered/plugins.agent'
+import { MetaSkillAgent } from './registered/meta-skill.agent'
 import type { DomainAgent } from './types'
 
 /**
- * Static list of every registered DomainAgent. Append to this array as
- * each domain-agent slice lands (EEEEE finance → IIIII meta-skill).
+ * The 15 registered DomainAgents — one per skill-domain catalogue id.
+ * Append to this array when adding a new agent (e.g. for a tenant-role
+ * profile that introduces a new domain — slice LLLLL+).
  */
 const REGISTERED_AGENTS: ReadonlyArray<DomainAgent> = [
-  FinanceAgent,                    // Slice EEEEE — first agent
-  // GGGGG adds sales / marketing / hr / legal / ops.
-  // HHHHH adds engineering / customer-support / data / design / product.
-  // IIIII adds productivity / enterprise-search / plugins / meta-skill.
+  FinanceAgent,           // EEEEE
+  SalesAgent,             // GGGGG
+  MarketingAgent,         // GGGGG
+  HrAgent,                // GGGGG
+  LegalAgent,             // GGGGG
+  OpsAgent,               // GGGGG
+  EngineeringAgent,       // HHHHH
+  CustomerSupportAgent,   // HHHHH
+  DataAgent,              // HHHHH
+  DesignAgent,            // HHHHH
+  ProductAgent,           // HHHHH
+  ProductivityAgent,      // IIIII
+  EnterpriseSearchAgent,  // IIIII
+  PluginsAgent,           // IIIII
+  MetaSkillAgent,         // IIIII
 ]
 
 /** Single shared registry instance — import from this module. */
