@@ -1162,6 +1162,7 @@ src/plugins/receivables/workflow.test.ts:4: * @standard ISO/IEC-29119:2022 softw
 src/plugins/receivables/workflow.test.ts:5: * @standard EN-16931:2017 invoice-lifecycle
 src/plugins/receivables/workflow.ts:6: * @standard EN-16931:2017 invoice-lifecycle
 src/sdk/accounting-client.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
+src/services/agents/bootstrap.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
 src/services/agents/effect-processor.test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/services/agents/effect-processor.ts:25: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/agents/effect-processor.ts:26: * @standard ISO/IEC 12207 software-life-cycle (single substrate seam)
@@ -1203,20 +1204,24 @@ src/services/ai/semantic-search.ts:10: * @standard ISO/IEC 23894:2023 ai-risk-ma
 src/services/ai/tax-classification.ts:10: * @standard UN/CEFACT 5305 duty-tax-fee-category-coded
 src/services/ai/tax-classification.ts:11: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/services/ai/tax-classification.ts:9: * @standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code
-src/services/architecture-invariants/checks.ts:383: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
-src/services/architecture-invariants/checks.ts:400: * @standard ISO 27002:2022 §5.4 segregation-of-duties
-src/services/architecture-invariants/checks.ts:401: * @standard COBIT 5 PO4.11
-src/services/architecture-invariants/checks.ts:459: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
-src/services/architecture-invariants/checks.ts:545: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/services/architecture-invariants/checks.ts:546: * @standard IFRS Foundation issued-standards-as-of-2026-05
-src/services/architecture-invariants/checks.ts:615: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
-src/services/architecture-invariants/checks.ts:616: * @standard ISO 19011:2018 §6.4.6 audit-evidence
-src/services/architecture-invariants/checks.ts:828: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/services/architecture-invariants/checks.ts:856: * @standard ISO/IEC 25010:2023 performance-efficiency
-src/services/architecture-invariants/checks.ts:857: * @standard SQL-92 §5.4 indexing-strategy
-src/services/architecture-invariants/checks.ts:908: * @standard rfc-5545 icalendar-cron
-src/services/architecture-invariants/checks.ts:955: * @standard NIST FIPS-180-4 sha-256
-src/services/architecture-invariants/checks.ts:956: * @standard ISO 27037:2012 evidence-preservation
+src/services/architecture-invariants/checks.ts:1061: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:1094: * @standard BCP-47 + W3C i18n key-naming-best-practices
+src/services/architecture-invariants/checks.ts:1130: * @standard ISO/IEC 12207 software-life-cycle (event graph
+src/services/architecture-invariants/checks.ts:1163: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:385: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
+src/services/architecture-invariants/checks.ts:402: * @standard ISO 27002:2022 §5.4 segregation-of-duties
+src/services/architecture-invariants/checks.ts:403: * @standard COBIT 5 PO4.11
+src/services/architecture-invariants/checks.ts:461: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
+src/services/architecture-invariants/checks.ts:547: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/services/architecture-invariants/checks.ts:548: * @standard IFRS Foundation issued-standards-as-of-2026-05
+src/services/architecture-invariants/checks.ts:617: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+src/services/architecture-invariants/checks.ts:618: * @standard ISO 19011:2018 §6.4.6 audit-evidence
+src/services/architecture-invariants/checks.ts:830: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/services/architecture-invariants/checks.ts:858: * @standard ISO/IEC 25010:2023 performance-efficiency
+src/services/architecture-invariants/checks.ts:859: * @standard SQL-92 §5.4 indexing-strategy
+src/services/architecture-invariants/checks.ts:910: * @standard rfc-5545 icalendar-cron
+src/services/architecture-invariants/checks.ts:957: * @standard NIST FIPS-180-4 sha-256
+src/services/architecture-invariants/checks.ts:958: * @standard ISO 27037:2012 evidence-preservation
 src/services/architecture-invariants/index.ts:20: * @standard ISO/IEC 25010:2023 quality-model
 src/services/architecture-invariants/onInit.ts:20: * @standard ISO/IEC 25010:2023 reliability-fault-tolerance
 src/services/architecture-invariants/types.ts:27: * @standard ISO/IEC 25010:2023 functional-suitability + reliability
@@ -4543,10 +4548,11 @@ src/services/ai/anomaly-detection.ts:12: * @audit ISO-19011:2018 §6.4.6 audit-e
 src/services/ai/audit-summarisation.ts:11: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/services/ai/cloudflare-ai.ts:52: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
 src/services/ai/durable-objects.ts:20: * @audit ISO-19011:2018 audit-trail coordination-evidence
-src/services/architecture-invariants/checks.ts:460: * @audit ISO 19011:2018 §6.4 audit-evidence
-src/services/architecture-invariants/checks.ts:762: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
-src/services/architecture-invariants/checks.ts:829: * @audit  registry-vs-implementation traceability
-src/services/architecture-invariants/checks.ts:957: * @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
+src/services/architecture-invariants/checks.ts:1164: * @audit ISO 19011:2018 §6.4.6
+src/services/architecture-invariants/checks.ts:462: * @audit ISO 19011:2018 §6.4 audit-evidence
+src/services/architecture-invariants/checks.ts:764: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
+src/services/architecture-invariants/checks.ts:831: * @audit  registry-vs-implementation traceability
+src/services/architecture-invariants/checks.ts:959: * @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
 src/services/architecture-invariants/checks.ts:9: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/services/architecture-invariants/index.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/services/architecture-invariants/onInit.ts:18: * @audit ISO-19011:2018 §6.4 audit-evidence-runtime-gate
