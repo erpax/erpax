@@ -17,3 +17,16 @@ export type {
 export { createAgentRegistry } from './registry'
 export { processEffect, processEffects } from './effect-processor'
 export { createAgentRuntime } from './runtime'
+
+// MCP wiring — Slice DDDDD Phase B
+export type { McpClient, McpToolDescriptor } from './mcp/in-process-client'
+export { createInProcessMcpClient } from './mcp/in-process-client'
+export type { ErpaxMcpTool } from './mcp/tool-defs'
+export { buildErpaxMcpTools } from './mcp/tool-defs'
+export type { ErpaxMcpResource } from './mcp/resource-defs'
+export { ERPAX_MCP_RESOURCES } from './mcp/resource-defs'
+export type { ErpaxMcpPrompt } from './mcp/prompt-defs'
+export { ERPAX_MCP_PROMPTS } from './mcp/prompt-defs'
+
+// Bootstrap singletons
+export { agentRegistry, agentRuntime, erpaxMcpTools, erpaxMcpResources, erpaxMcpPrompts } from './bootstrap'

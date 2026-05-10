@@ -1167,6 +1167,12 @@ src/services/agents/effect-processor.test.ts:6: * @standard ISO/IEC 25010:2023 �
 src/services/agents/effect-processor.ts:25: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/agents/effect-processor.ts:26: * @standard ISO/IEC 12207 software-life-cycle (single substrate seam)
 src/services/agents/index.ts:8: * @standard ISO/IEC 25010:2023 §5.4 modularity
+src/services/agents/mcp/in-process-client.ts:10: * @standard MCP 0.6 — Model Context Protocol tools/list + tools/call
+src/services/agents/mcp/in-process-client.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability
+src/services/agents/mcp/prompt-defs.ts:8: * @standard MCP 0.6 — Model Context Protocol prompts/list + prompts/get
+src/services/agents/mcp/resource-defs.ts:8: * @standard MCP 0.6 — Model Context Protocol resources/list + resources/read
+src/services/agents/mcp/tool-defs.ts:13: * @standard MCP 0.6 — Model Context Protocol tools/list + tools/call
+src/services/agents/mcp/tool-defs.ts:14: * @standard ISO/IEC 25010:2023 §5.4 reusability (single tool surface)
 src/services/agents/registry.test.ts:5: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/services/agents/registry.ts:13: * @standard ISO/IEC 25010:2023 §5.4 reusability
 src/services/agents/registry.ts:14: * @standard ISO/IEC 12207 software-life-cycle (single-source-of-truth)

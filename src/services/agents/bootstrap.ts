@@ -13,6 +13,10 @@
 
 import { createAgentRegistry } from './registry'
 import { createAgentRuntime } from './runtime'
+import { buildErpaxMcpTools } from './mcp/tool-defs'
+import { createInProcessMcpClient } from './mcp/in-process-client'
+import { ERPAX_MCP_RESOURCES } from './mcp/resource-defs'
+import { ERPAX_MCP_PROMPTS } from './mcp/prompt-defs'
 import type { DomainAgent } from './types'
 
 /**
@@ -31,3 +35,19 @@ export const agentRegistry = createAgentRegistry(REGISTERED_AGENTS)
 
 /** Single shared runtime instance — wraps `agentRegistry`. */
 export const agentRuntime = createAgentRuntime(agentRegistry)
+
+/**
+ * Bound MCP tool list — fed to the @payloadcms/plugin-mcp plugin
+ * config (over-the-wire) AND the in-process McpClient on AgentContext.
+ * Single source of truth for the ERPax tool surface.
+ */
+export const erpaxMcpTools = buildErpaxMcpTools(agentRegistry)
+
+/** MCP resources — read-only data exposed via uri (erpax://...). */
+export const erpaxMcpResources = ERPAX_MCP_RESOURCES
+
+/** MCP prompts — canned reasoning templates. */
+export const erpaxMcpPrompts = ERPAX_MCP_PROMPTS
+
+/** Re-export the in-process client factory for AgentContext.mcp wiring. */
+export { createInProcessMcpClient }

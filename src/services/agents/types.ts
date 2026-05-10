@@ -19,9 +19,7 @@
 import type { Payload } from 'payload'
 import type { SupportedLocale } from '@/i18n'
 import type { Translator, SpecChainStep } from '@/services/spec-generator'
-
-// NOTE: `AgentContext.mcp: McpClient` is added by Task 11 (Phase B); the
-// import + field land together when `./mcp/in-process-client.ts` exists.
+import type { McpClient } from './mcp/in-process-client'
 
 export type AgentId =
   | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'
@@ -91,7 +89,13 @@ export interface AgentContext {
   readonly emit:     (ev: DomainEvent) => void
   readonly audit:    (leaf: AuditLeaf) => void
   readonly capture:  (frame: EvidenceFrame) => void
-  // Phase B (Task 11) adds: `readonly mcp: McpClient` (in-process MCP client).
+  /**
+   * In-process MCP client — same tool surface as the over-the-wire
+   * `@payloadcms/plugin-mcp` exposure. Agents call MCP tools the same
+   * way external clients (Claude Code, Cursor, IDEs) do.
+   * Added in slice DDDDD task 11.
+   */
+  readonly mcp:      McpClient
   /** Set when the context is dispatched as part of a chain step. */
   readonly chain?:   { id: string; step: SpecChainStep }
 }
