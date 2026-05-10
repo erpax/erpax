@@ -17,6 +17,7 @@ import { buildErpaxMcpTools } from './mcp/tool-defs'
 import { createInProcessMcpClient } from './mcp/in-process-client'
 import { ERPAX_MCP_RESOURCES } from './mcp/resource-defs'
 import { ERPAX_MCP_PROMPTS } from './mcp/prompt-defs'
+import { FinanceAgent } from '@/plugins/accounting/agents/finance.agent'
 import type { DomainAgent } from './types'
 
 /**
@@ -24,7 +25,7 @@ import type { DomainAgent } from './types'
  * each domain-agent slice lands (EEEEE finance → IIIII meta-skill).
  */
 const REGISTERED_AGENTS: ReadonlyArray<DomainAgent> = [
-  // EEEEE adds the FinanceAgent here.
+  FinanceAgent,                    // Slice EEEEE — first agent
   // GGGGG adds sales / marketing / hr / legal / ops.
   // HHHHH adds engineering / customer-support / data / design / product.
   // IIIII adds productivity / enterprise-search / plugins / meta-skill.
