@@ -92,6 +92,9 @@ import {
   recordUuid, queryUuidStream, snapshotFromRegistries,
   buildInfiniteFinitenessReport, checkInfiniteFiniteness, type UuidSource,
 } from '@/services/integrity/uuid-stream'
+import {
+  TRINITY, trinityGrouping, trinityForPriorLaw, rollUpToTrinity,
+} from '@/services/architecture-invariants/trinity'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1320,6 +1323,33 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       },
     },
     // ── Slice EEEEEEE — laws regrouped per-agent for efficiency (Law 45) ──
+    // ── Slice JJJJJJJJ — the Trinity of Conservation (3 generators) ──
+    {
+      name: 'erpax.platform.trinity',
+      description: 'Per user "the more laws less powerfull they are. remember the trinity brought then dimensions. what are their laws?" — return the THREE foundational laws (Identity / Causality / Closure) from which all 48 prior laws derive. Each carries dimension + statement + obligations + subsumed prior-law list (W3C JSON-LD 1.1).',
+      parameters: {},
+      async handler() { return json(TRINITY) },
+    },
+    {
+      name: 'erpax.platform.trinityGrouping',
+      description: 'Slice JJJJJJJJ — concise grouping: each Trinity law → list of prior law numbers it generalises. Used by the conservation-dashboard surface to collapse the 48-law view into 3 cards.',
+      parameters: {},
+      async handler() { return json(trinityGrouping()) },
+    },
+    {
+      name: 'erpax.platform.trinityForLaw',
+      description: 'Slice JJJJJJJJ — reverse map: prior Law N → which Trinity law it derives from (Identity / Causality / Closure / null if not yet mapped).',
+      parameters: { num: z.number().int().min(1).max(99) },
+      async handler({ num }) { return json({ trinityLaw: trinityForPriorLaw(num as number) }) },
+    },
+    {
+      name: 'erpax.platform.trinityRollup',
+      description: 'Slice JJJJJJJJ — given a list of prior law numbers that currently pass, return the per-Trinity-law verdict (% of derived theorems witnessed). Used to roll the 48-verdict boot suite into a 3-card dashboard.',
+      parameters: { passedPriorLawNums: z.array(z.number().int()) },
+      async handler({ passedPriorLawNums }) {
+        return json(rollUpToTrinity(passedPriorLawNums as number[]))
+      },
+    },
     {
       name: 'erpax.platform.lawCatalog',
       description: 'Per user "regroup the laws for maximum agent efficiency" — return the LAW_CATALOG: every conservation law with its category + which AgentEffect kinds it governs + applicableWhen trigger (W3C JSON-LD 1.1, ISO/IEC 25010:2023 §5.4 reusability).',
