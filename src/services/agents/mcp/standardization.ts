@@ -49,6 +49,8 @@ export const CANONICAL_AREAS: ReadonlyArray<string> = [
   'federation', 'platform', 'cloning',
   // Beyond / DID
   'beyond', 'did',
+  // PWA (slice NNNNNNNN)
+  'pwa',
   // Auto-generated (slice WWWWWW)
   'auto',
 ] as const
