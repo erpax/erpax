@@ -47,6 +47,109 @@ Five things and only five constitute ERPax core:
 
 The core is small: ~5,500 LoC across the agent runtime + spec generators + invariants + MCP surface + role registry. The periphery is unbounded: any tenant, any role, any standards bundle, any agent, any locale, any plugin. This unbounded periphery is what makes the platform "for anyone" — and the conservation laws are what keep "anyone" from breaking it.
 
+## 0b. The 10 vortices (post-FFFFFF) — system as coupled flow
+
+The original 3-vortex framing (A domains × B substrate × C chains) was the seed; what shipped through slices DDDDD → ZZZZZ → AAAAAA → FFFFFF grew the system to **10 interacting vortices in one phase space**:
+
+| # | Vortex | Spin axis | Population | Slice landed |
+|---|---|---|---|---|
+| **A** | Domain agents | role axis | 15 | DDDDD + EEEEE + GGGGG/HHHHH/IIIII |
+| **B** | Substrate layers | capability axis | 8 (spec / events / scheduler / audit / evidence / multimedia / i18n / **MCP**) | DDDDD wired the 8th layer |
+| **C** | Business chains | time axis | 22 | KKKK + NNNN + OOOO + PPPP + QQQQ + RRRR + TTTT |
+| **D** | Conservation laws | correctness axis | 22 (10 base + 12 beyond) | LLLL + DDDDD + RRRRR + UUUUU + ZZZZZ |
+| **E** | Tenant-role profiles | regulatory axis | 4 ref + open registry | LLLLL + MMMMM + NNNNN + OOOOO |
+| **F** | Integrity layers | provability axis | 4 (content-uuid / referential harmony / storage redundancy / federation) | RRRRR + SSSSS + TTTTT-stub + UUUUU |
+| **G** | Beyond primitives | future-readiness axis | 11 (provenance / replay / tenant-isolation / bitemporal / cost / carbon / agent-capability / pqc / explainability / reversibility / ai-audit) | ZZZZZ |
+| **H** | Client classes | access axis | 5 (humans / AI / regulators / integrations / internal agents) | DDDDD MCP wiring |
+| **I** | Federation peers | topology axis | N (open) | AAAAAA |
+| **J** | Meta-evolution | self-modification axis | 1 (MetaSkillAgent + spec generators + self-heal hooks) | IIIII (agent stub) + CCCCC pipeline + FFFFFF |
+
+### Coupling tensor (10 × 10 = 100 cells; populated ones below)
+
+```
+          A    B    C    D    E    F    G    H    I    J
+       ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+   A   │ ⤺ │ MCP│step│role│cert│  ✓ │cap │auth│DID │ ✓  │
+   B   │ MCP│ ⤺ │emit│inv │tool│hash│tmpl│srfc│fed │gen │
+   C   │step│emit│ ⤺ │run │act │uuid│cost│evt │bcst│auto│
+   D   │role│inv │run │ ⤺ │bind│verf│ext │evd │chk │heal│
+   E   │cert│tool│act │bind│ ⤺ │trst│reg │role│hare│ ⨯  │
+   F   │ ✓  │hash│uuid│verf│trst│ ⤺ │bey │qry │addr│reg │
+   G   │cap │tmpl│cost│ext │reg │bey │ ⤺ │vis │xfr │xpd │
+   H   │auth│srfc│evt │evd │role│qry │vis │ ⤺ │con │ ✓  │
+   I   │DID │fed │bcst│chk │hare│addr│xfr │con │ ⤺ │ ✓  │
+   J   │ ✓  │gen │auto│heal│ ⨯  │reg │xpd │ ✓  │ ✓  │ ⤺ │
+       └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+```
+
+Cell legend (each is a coupling already wired):
+
+- **A↔B**: agents call MCP tools; substrate routes effects (DDDDD)
+- **A↔C**: each chain step's `collection=X` resolves to an owning agent (Law 7)
+- **A↔D**: `checkAgentOwnsEveryStep` + `checkEventGraphConnected` (Laws 4 + 7)
+- **A↔E**: tenant-role profile declares `requiredAgents` (LLLLL)
+- **A↔F**: agent context carries `mcp.callTool('erpax.integrity.verifyObject')` (SSSSS)
+- **A↔G**: `agent-capability.ts` declares per-agent role + scopes (Law 17)
+- **A↔H**: MCP exposes agent surface to humans / AI / regulators / integrations / internal (DDDDD)
+- **A↔I**: agents publish to federation; peers ingest (AAAAAA)
+- **A↔J**: MetaSkillAgent observes other agents' invariant violations (IIIII)
+- **B↔C**: chain runner calls every substrate layer per step
+- **B↔D**: invariants live in the substrate's invariant suite (LLLL)
+- **B↔E**: tenant role auto-exposes its `mcpTools` set
+- **B↔F**: content-uuid hashes flow through audit chain
+- **B↔G**: spec-templates render type-shaped explanations
+- **B↔H**: MCP IS the substrate's universal client surface
+- **B↔I**: federation envelope wraps substrate-level rows
+- **B↔J**: `auto-heal-generated-artefacts.sh` regenerates substrate outputs
+- **C↔D**: chain step emits trigger conservation checks
+- **C↔E**: tenant role declares `requiredChains`
+- **C↔F**: chain audit leaves are uuid-keyed
+- **C↔G**: each step records `CostMetric` + `CarbonEstimate`
+- **C↔H**: chain executions visible to every client class
+- **C↔I**: chain results broadcast across federation
+- **C↔J**: spec-extractor regenerates chain registry from `@chain` JSDoc
+- **D↔E**: each role declares its `invariant` (e.g. `checkPspCoverage100Percent`)
+- **D↔F**: Laws 8 / 9 / 10 / 23 = the integrity axis
+- **D↔G**: Laws 11–22 extend D into the beyond axis
+- **D↔H**: every client sees the same conservation guarantees
+- **D↔I**: federation peers run their own invariant suites
+- **D↔J**: meta-agent reads invariant WARN/FAIL → proposes fixes
+- **E↔F**: trust graph anchors federated rows under tenant namespaces
+- **E↔G**: tenant role auto-applies its own beyond primitives (cost cap, PQC, etc.)
+- **E↔H**: client class × role determines visible MCP tool subset
+- **E↔I**: roles propagate across federation (e.g. PSP profile shared)
+- **F↔G**: content-uuid → bitemporal queries → cost-attributed at recompute
+- **F↔H**: every client can verify integrity (`erpax.integrity.verifyObject`)
+- **F↔I**: federated rows verify under source tenant's namespace
+- **F↔J**: meta-agent runs `erpax.integrity.auditTenant` on a schedule
+- **G↔H**: every client sees explanations + provenance + AI audit
+- **G↔I**: beyond primitives transmit through federation envelope
+- **G↔J**: meta-agent fills `AiProvenance`, `Explanation`, `Provenance` automatically
+- **H↔I**: federation surfaces peer activity to local clients
+- **H↔J**: MCP tool calls trigger meta-agent observations
+- **I↔J**: meta-agent ingests federation broadcasts as sources for its proposals
+- **⨯** marks: `E↔J` and `J↔E` are the two cells where meta-automation explicitly holds back — tenant-role policy is a human decision (the maintainer signs off when ERPax becomes a payment provider / bank / government / etc.). Everything else self-evolves.
+
+### Conservation laws span ALL vortices
+
+The 22 conservation laws are themselves a vortex (D) but they also act as the **gluing field** that makes the other 9 vortices' interactions provably consistent. A change in any vortex that would break a law triggers either:
+
+- **Self-heal at build time** (J via FFFFFF) when the law's drift is in a regenerable artefact (STANDARDS_INDEX, payload-types).
+- **Self-heal at runtime** (J via MetaSkillAgent's hourly cron) when the law's drift is in queryable state (i18n stubs, dangling refs, content tampers).
+- **Hard fail + human review** when the drift is at the spec layer (uncited standard, missing `@summary`, ambiguous role profile).
+
+### Energy flow
+
+Energy enters the system from any of these sources:
+
+1. A maintainer commits a JSDoc spec edit (most common).
+2. An external client calls an MCP tool that mutates state (regular operation).
+3. A peer ERPax instance broadcasts an updated row via federation (slice AAAAAA).
+4. The MetaSkillAgent's hourly cron runs the invariants (slice IIIII).
+5. A scheduled task fires (e.g. FX-rate sync, reindex — slices QQQQ + IIIII data agent).
+
+Each energy injection propagates through the coupling tensor: a single JSDoc edit can simultaneously regenerate seeds (B↔C), update i18n (B↔H), add MCP tools (A↔B↔H), trigger marketing renders (B↔H↔I), and broadcast to peers (B↔I) — all without further human action because the couplings are wired and the conservation laws keep the propagation honest.
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
