@@ -105,6 +105,7 @@ export async function runAllInvariants(
     results.push(C.checkMcpPresentationCoverageInvariant(ctx))  // Law 39 — YYYYYY
     results.push(C.checkDryProofPublishedInvariant(ctx))         // Law 44 — DDDDDDD
     results.push(C.checkUuidShortDisplayInvariant(ctx))          // Law 46 — FFFFFFF
+    results.push(C.checkTypeUuidCoverageInvariant(ctx))          // Law 47 — GGGGGGG
   }
   if (!skip.has('expansion')) {
     results.push(C.checkEventGraphConnected(ctx))      // Law 4

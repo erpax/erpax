@@ -1493,6 +1493,86 @@ displayUuid(uuid, kind)           → { display, full, copyable }   // UI render
 
 @standard RFC 4122 §4.3 — uuidv5 (full form for verification); ISO/IEC 25010:2023 §5.3 usability — discoverability; ISO/IEC 27001 §A.9.4.5 (information access restriction); ISO 19011:2018 §6.4.6 (UI surfaces audit-trailed for length compliance).
 
+## 0z. Any type has uuid — type-level content uuid
+
+Per user 'any type has uuid as well as any type object'. The deep generalization of slice RRRRR: not only every OBJECT has a content-uuid (Law 8); every TYPE itself has one too. Slice GGGGGGG ships `src/services/integrity/type-uuid.ts`.
+
+```
+Object uuid (RRRRR — Law 8) = uuidv5(content of an instance)
+Type uuid   (this slice)    = uuidv5(content of the type def)
+```
+
+### TypeDescriptor (canonical type body)
+
+The descriptor mirrors JSON Schema draft 2020-12 surface, JCS-canonicalised so two equivalent shapes produce the same uuid even if the surface generator differs:
+
+```ts
+interface TypeDescriptor {
+  kind: 'object' | 'array' | 'string' | 'number' | 'integer' | 'boolean'
+      | 'null' | 'enum' | 'union' | 'literal' | 'record' | 'tuple' | 'unknown'
+  properties?: Record<string, TypeDescriptor>
+  required?: string[]                    // sorted ascending — required for determinism
+  items?: TypeDescriptor                  // array element type
+  itemsTuple?: TypeDescriptor[]           // tuple positional types
+  enumValues?: (string | number | boolean)[]
+  literal?: string | number | boolean | null
+  unionMembers?: TypeDescriptor[]
+  recordValueType?: TypeDescriptor
+  description?: string                    // does NOT participate in uuid (docstring)
+}
+```
+
+### Six implications
+
+| # | Capability | Mechanism |
+|---|---|---|
+| 1 | **Type evolution tracking** | Schema migrations are transitions between two type-uuids; audit trail (Law 12) captures the type-uuid at each transition |
+| 2 | **Type federation** (slice AAAAAA) | Peer ERPax instances exchange type-uuids before exchanging instances — no field-meaning drift |
+| 3 | **Cross-language interop** | TS / Rust / Go / Python compute the same uuid from the same JSON-Schema-canonical shape |
+| 4 | **Backward-compat detection** | A migration's safety = old + new uuids both verify against the transformer; otherwise the migration breaks federation |
+| 5 | **Type registry as live object** | TYPE_REGISTRY is content-addressed (name → {uuid, descriptor}); registry changes themselves get an envelope uuid |
+| 6 | **Per-tenant type lock** | A tenant pins a type-uuid; foreign instances rejected upstream of Law 8 |
+
+### Conservation Law 47 — type uuid coverage
+
+`checkTypeUuidCoverageInvariant`: the platform-mandated baseline (`AgentEffect`, `DomainEvent`, `AuditLeaf`, `BallotKind`, `PageSeed`, `SeoVortexFace`, `CollectionSpec`) MUST be registered with type-uuids. Domain types extend the registry by calling `registerTypeFromZod({name, schema})`. `ensureBaselineTypesRegistered()` is idempotent — boot suite calls it before checking.
+
+### Zod ↔ TypeDescriptor adapter
+
+`descriptorFromZod(schema)` walks an existing Zod schema and emits a TypeDescriptor — used by every place that already declares Zod (MCP tool params, voting kinds, etc.) so a single source-of-truth produces both runtime validation AND the type-uuid. Convenience wrapper `registerTypeFromZod({name, schema})` does both in one call.
+
+### Verification
+
+```ts
+verifyType(name, candidateDescriptor) → {
+  ok: boolean
+  registeredUuid: string
+  recomputedUuid: string
+  drifted?: { fieldsAdded, fieldsRemoved }   // top-level drift hint on mismatch
+}
+```
+
+### MCP surface (slice GGGGGGG)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.integrity.computeTypeUuid` | Hash a TypeDescriptor → type-uuid |
+| `erpax.integrity.registerType` | Register a TypeDescriptor under a canonical name |
+| `erpax.integrity.getType` | Look up by name |
+| `erpax.integrity.getTypeByUuid` | Reverse lookup (federation pre-flight) |
+| `erpax.integrity.listTypes` | Enumerate registry |
+| `erpax.integrity.verifyType` | Verify candidate against registered |
+| `erpax.integrity.ensureBaselineTypes` | Idempotent baseline registration |
+| `erpax.integrity.checkTypeUuidCoverage` | Conservation Law 47 verdict |
+
+### What this enables
+
+The combined Laws 8 (object uuid) + 10 (referential harmony) + 35 (storage independence) + 36 (replication) + 47 (type uuid) collapse into a single property: **every byte in ERPax — instance OR type — is content-addressable, recomputable, and verifiable by any third party without trust in ERPax**. The platform is becoming a uuid-addressed substrate end-to-end.
+
+### Standards anchoring
+
+@standard W3C JSON-LD 1.1 + JSON Schema (draft 2020-12); RFC 4122 §4.3 + RFC 8785 (canonical type uuid); ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity; W3C Verifiable Credentials Data Model 2.0 (typed claims); ISO 19011:2018 §6.4.6 (type evolution audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

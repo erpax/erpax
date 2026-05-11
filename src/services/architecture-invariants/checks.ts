@@ -38,6 +38,7 @@ import { checkTorusBounded } from '@/services/topology/torus'
 import { publishDryProofBundle, checkDryProofPublished } from '@/services/proof/dry-proof'
 import { checkAgentLawCoverage } from '@/services/architecture-invariants/by-agent'
 import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
+import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/services/integrity/type-uuid'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1422,6 +1423,28 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 47 — `checkTypeUuidCoverageInvariant`. Slice
+ * GGGGGGG (2026-05-11). Per user 'any type has uuid as well as any
+ * type object'.
+ *
+ * Every domain type (AgentEffect, DomainEvent, AuditLeaf,
+ * BallotKind, PageSeed, SeoVortexFace, CollectionSpec, …) must be
+ * registered with a content-derived type-uuid. Boot probe ensures
+ * the baseline is registered + verifies coverage.
+ */
+export function checkTypeUuidCoverageInvariant(_ctx: InvariantContext): InvariantResult {
+  ensureBaselineTypesRegistered()
+  const result = checkTypeUuidCoverage()
+  if (result.ok) {
+    return pass('standards', 'type-uuid-coverage',
+      `${result.registeredCount} types registered (baseline + domain) — Law 47 satisfied`)
+  }
+  return fail('standards', 'type-uuid-coverage',
+    `${result.missingBaseline.length} baseline types missing from registry`,
+    [...result.missingBaseline])
 }
 
 /**

@@ -83,6 +83,11 @@ import {
   shortUuid, parseShortUuid, lookupShort, displayUuid,
   checkUuidShortDisplay, SHORT_UUID_POLICY, type ShortUuidKind,
 } from '@/services/integrity/uuid-short'
+import {
+  computeTypeUuid, registerType, registerTypeFromZod, descriptorFromZod,
+  getType, getTypeByUuid, listTypes, verifyType, ensureBaselineTypesRegistered,
+  checkTypeUuidCoverage, type TypeDescriptor,
+} from '@/services/integrity/type-uuid'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1388,6 +1393,76 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Slice FFFFFFF — return the per-kind SHORT_UUID_POLICY (prefix + length) so external clients can render short ids consistently across surfaces.',
       parameters: {},
       async handler() { return json(SHORT_UUID_POLICY) },
+    },
+    // ── Slice GGGGGGG — type-level content uuid (Law 47) ──
+    {
+      name: 'erpax.integrity.computeTypeUuid',
+      description: 'Per user "any type has uuid as well as any type object" — derive a uuidv5 from a TypeDescriptor (RFC 4122 §4.3 + JSON Schema draft 2020-12 + RFC 8785 canonicalisation). Two equivalent type shapes hash to the same uuid; any structural change shifts it.',
+      parameters: { descriptor: z.record(z.unknown()) },
+      async handler({ descriptor }) {
+        return json({ typeUuid: computeTypeUuid(descriptor as unknown as TypeDescriptor) })
+      },
+    },
+    {
+      name: 'erpax.integrity.registerType',
+      description: 'Slice GGGGGGG — register a TypeDescriptor under a canonical name; returns {name, uuid, descriptor, registeredAt, version?}. Subsequent verify/lookup uses the registered uuid (W3C VC Data Model 2.0 typed claims).',
+      parameters: {
+        name: z.string(),
+        descriptor: z.record(z.unknown()),
+        version: z.string().optional(),
+      },
+      async handler({ name, descriptor, version }) {
+        return json(registerType({
+          name: name as string,
+          descriptor: descriptor as unknown as TypeDescriptor,
+          version: version as string | undefined,
+        }))
+      },
+    },
+    {
+      name: 'erpax.integrity.getType',
+      description: 'Slice GGGGGGG — look up a registered type by canonical name. Returns full descriptor + type-uuid + registeredAt.',
+      parameters: { name: z.string() },
+      async handler({ name }) {
+        return json(getType(name as string) ?? { ok: false, reason: 'not registered' })
+      },
+    },
+    {
+      name: 'erpax.integrity.getTypeByUuid',
+      description: 'Slice GGGGGGG — reverse lookup: type-uuid → registered type. Federation peers use this after exchanging type-uuids (slice AAAAAA pre-flight).',
+      parameters: { uuid: z.string() },
+      async handler({ uuid }) {
+        return json(getTypeByUuid(uuid as string) ?? { ok: false, reason: 'unknown type-uuid' })
+      },
+    },
+    {
+      name: 'erpax.integrity.listTypes',
+      description: 'Slice GGGGGGG — return every registered type. Drives the conservation-dashboard surface\'s type-evolution view.',
+      parameters: {},
+      async handler() { return json(listTypes()) },
+    },
+    {
+      name: 'erpax.integrity.verifyType',
+      description: 'Slice GGGGGGG — verify a candidate descriptor matches the registered type\'s uuid. On mismatch returns drifted={fieldsAdded, fieldsRemoved} so migration scripts can detect breaking changes (W3C JSON Schema draft 2020-12).',
+      parameters: { name: z.string(), descriptor: z.record(z.unknown()) },
+      async handler({ name, descriptor }) {
+        return json(verifyType(name as string, descriptor as unknown as TypeDescriptor))
+      },
+    },
+    {
+      name: 'erpax.integrity.ensureBaselineTypes',
+      description: 'Slice GGGGGGG — eagerly register the platform-mandated baseline types (AgentEffect, DomainEvent, AuditLeaf, BallotKind, PageSeed, SeoVortexFace, CollectionSpec). Idempotent. Required for Law 47 to pass at boot.',
+      parameters: {},
+      async handler() { ensureBaselineTypesRegistered(); return json({ ok: true, registered: listTypes().length }) },
+    },
+    {
+      name: 'erpax.integrity.checkTypeUuidCoverage',
+      description: 'Conservation Law 47 — every domain type in use must be registered with a uuid. Boot-suite probe verifies the baseline (extend by calling registerTypeFromZod for your own types). RFC 4122 §4.3 + RFC 8785.',
+      parameters: {},
+      async handler() {
+        ensureBaselineTypesRegistered()
+        return json(checkTypeUuidCoverage())
+      },
     },
     {
       name: 'erpax.integrity.checkShortUuidDisplay',
