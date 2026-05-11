@@ -72,6 +72,12 @@ import {
 } from './rebuild-from-source'
 import { selfTestAll, selfTestOne, checkMcpSelfTestable } from './self-test'
 import { dryCleanScan, checkMcpDryCleanliness, MAX_DESCRIPTION_OVERLAP } from './dry-clean'
+import {
+  cacheAsset, listCachedAssets, evictAsset, totalCachedBytes,
+  enqueueMutation, listQueuedMutations, dequeueMutation,
+  publishManifest, verifyManifest, preparePush, dedupPush,
+  checkPwaUuidIntegrity, type AssetKind, type WebAppManifest,
+} from '@/services/pwa'
 import { checkTorusBounded, traceTorusRoundTrip, TORUS_DEFAULT_ENVELOPE, TORUS_VERTICES, TORUS_EDGES } from '@/services/topology/torus'
 import {
   buildDryProofBundle, publishDryProofBundle, getCurrentProofBundle,
@@ -1644,6 +1650,126 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       async handler() { return json(checkAgentLawCoverage()) },
     },
     // ── Slice BBBBBBB — MCP solves manual work by DRY cleaning (Law 50) ──
+    // ── Slice NNNNNNNN — uuid solves PWA (Law 52) ──
+    {
+      name: 'erpax.pwa.cacheAsset',
+      description: 'Per user "uuid solves pwa" — cache an asset keyed by its content-uuid (W3C Cache API + W3C Service Workers). The uuid IS the cache key — no manual cache-busting hash. RFC 4122 §4.3 + RFC 8785.',
+      parameters: {
+        url: z.string(),
+        kind: z.enum(['js', 'css', 'html', 'image', 'font', 'json', 'wasm', 'other']),
+        content: z.string(),
+        etag: z.string().optional(),
+      },
+      async handler({ url, kind, content, etag }) {
+        return json(cacheAsset({
+          url: url as string, kind: kind as AssetKind,
+          content: content as string, etag: etag as string | undefined,
+        }))
+      },
+    },
+    {
+      name: 'erpax.pwa.listCachedAssets',
+      description: 'Slice NNNNNNNN — enumerate every cached asset with its uuid + url + kind + bytes. Drives the PWA storage-quota dashboard (W3C IndexedDB 3.0).',
+      parameters: {},
+      async handler() { return json(listCachedAssets()) },
+    },
+    {
+      name: 'erpax.pwa.evictAsset',
+      description: 'Slice NNNNNNNN — evict an asset by uuid. Storage-independence (Law 35) means the asset remains recoverable from any other backend that holds it (IPFS / federation peer / etc.).',
+      parameters: { uuid: z.string() },
+      async handler({ uuid }) { return json({ ok: evictAsset(uuid as string) }) },
+    },
+    {
+      name: 'erpax.pwa.totalCachedBytes',
+      description: 'Slice NNNNNNNN — total bytes across the asset cache. Quota tracking + eviction trigger (W3C Cache API).',
+      parameters: {},
+      async handler() { return json({ bytes: totalCachedBytes() }) },
+    },
+    {
+      name: 'erpax.pwa.enqueueMutation',
+      description: 'Slice NNNNNNNN — uuid-chained background sync queue (Conservation Law 34 streamUuid echo). Each enqueue derives uuid from {tenantId, endpoint, body, prev}; replay order causally preserved + tamper-detectable.',
+      parameters: { tenantId: z.string(), endpoint: z.string(), body: z.unknown() },
+      async handler({ tenantId, endpoint, body }) {
+        return json(enqueueMutation({ tenantId: tenantId as string, endpoint: endpoint as string, body }))
+      },
+    },
+    {
+      name: 'erpax.pwa.listQueuedMutations',
+      description: 'Slice NNNNNNNN — list pending offline mutations (optionally tenant-scoped per Law 9). Each carries uuid + prevUuid + endpoint + body.',
+      parameters: { tenantId: z.string().optional() },
+      async handler({ tenantId }) { return json(listQueuedMutations(tenantId as string | undefined)) },
+    },
+    {
+      name: 'erpax.pwa.dequeueMutation',
+      description: 'Slice NNNNNNNN — dequeue a mutation by uuid (after successful replay).',
+      parameters: { uuid: z.string() },
+      async handler({ uuid }) { return json({ ok: dequeueMutation(uuid as string) }) },
+    },
+    {
+      name: 'erpax.pwa.publishManifest',
+      description: 'Slice NNNNNNNN — publish a Web App Manifest (W3C Web App Manifest) wrapped in a content-uuid envelope. Recompute on the client to verify integrity (Conservation Law 8 echo).',
+      parameters: {
+        manifest: z.object({
+          name: z.string(),
+          short_name: z.string().optional(),
+          start_url: z.string().optional(),
+          display: z.enum(['standalone', 'fullscreen', 'minimal-ui', 'browser']).optional(),
+          theme_color: z.string().optional(),
+          background_color: z.string().optional(),
+          icons: z.array(z.object({ src: z.string(), sizes: z.string(), type: z.string().optional() })).optional(),
+          assetUuids: z.array(z.string()).optional(),
+        }),
+      },
+      async handler({ manifest }) {
+        return json(publishManifest(manifest as unknown as WebAppManifest))
+      },
+    },
+    {
+      name: 'erpax.pwa.verifyManifest',
+      description: 'Slice NNNNNNNN — verify a manifest envelope by recomputing the content-uuid (RFC 4122 §4.3 + RFC 8785). Tampered manifest fails immediately.',
+      parameters: {
+        envelope: z.object({
+          uuid: z.string(),
+          manifest: z.record(z.unknown()),
+          publishedAt: z.string(),
+        }),
+      },
+      async handler({ envelope }) {
+        return json(verifyManifest(envelope as unknown as { uuid: string; manifest: WebAppManifest; publishedAt: string }))
+      },
+    },
+    {
+      name: 'erpax.pwa.preparePush',
+      description: 'Slice NNNNNNNN — derive a uuid-keyed push notification (W3C Push API + W3C Notifications API). uuid lets the SW dedup retries trivially.',
+      parameters: {
+        title: z.string(), body: z.string(),
+        url: z.string().optional(), tag: z.string().optional(),
+        tenantId: z.string(),
+      },
+      async handler({ title, body, url, tag, tenantId }) {
+        return json(preparePush({
+          title: title as string, body: body as string,
+          url: url as string | undefined, tag: tag as string | undefined,
+          tenantId: tenantId as string,
+        }))
+      },
+    },
+    {
+      name: 'erpax.pwa.dedupPush',
+      description: 'Slice NNNNNNNN — dedup-check a push notification by uuid. Returns {delivered, reason?} per W3C Push API guidance.',
+      parameters: {
+        notification: z.object({ uuid: z.string(), title: z.string(), body: z.string(), url: z.string().optional(), tag: z.string().optional() }),
+      },
+      async handler({ notification }) {
+        return json(dedupPush(notification as unknown as Parameters<typeof dedupPush>[0]))
+      },
+    },
+    {
+      name: 'erpax.pwa.checkUuidIntegrity',
+      description: 'Conservation Law 52 — verify cache map-key symmetry + queue chain integrity (Law 34 echo). Tamper-detect the SW cache + sync queue at any moment.',
+      parameters: {},
+      async handler() { return json(checkPwaUuidIntegrity()) },
+    },
     {
       name: 'erpax.platform.dryCleanScan',
       description: `Per user 'mcp solves manual work by dry cleaning' — scan the catalog for description duplicates (jaccard >= ${MAX_DESCRIPTION_OVERLAP}), parameter-shape clusters (>=3 tools sharing param names), verb inconsistencies (same verb / different shapes). Returns extraction proposals (W3C JSON-LD 1.1, ISO/IEC 25010:2023 §5.4 reusability).`,

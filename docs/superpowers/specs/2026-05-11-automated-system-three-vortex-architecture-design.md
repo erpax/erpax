@@ -2010,6 +2010,56 @@ metaEvolutionDimensionPlugin  (J — Meta-evolution)
 
 @standard W3C Web Components composition pattern; ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries; ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed).
 
+## 0ag. UUID solves PWA
+
+Per user 'uuid solves pwa'. Every Progressive Web App pain point collapses to a uuid problem. Slice NNNNNNNN ships `src/services/pwa/index.ts` covering all eight in one module.
+
+### The eight PWA pain points + their uuid solution
+
+| Pain | UUID solution |
+|---|---|
+| Cache invalidation | Asset content-uuid IS the cache key — no manual cache-busting hash; uuid mismatch = update available |
+| Sync conflicts on reconnect | Same uuid = same content, no conflict; different uuid = real divergence detected immediately |
+| Update push reliability | SW checks manifest's content-uuid; mismatch triggers update; bitemporal anchor (NNNNNN) tracks evolution |
+| Background sync queue durability | UUID-chained queue (Law 34 echo) preserves causal order + tamper detection across the offline window |
+| Push notification dedup | UUID-keyed; same notification arriving twice (delivered + retry) → trivial dedup |
+| Web App Manifest integrity | Manifest tampered? Recompute uuid (Law 8 echo); verify |
+| Storage quota management | UUID-based eviction keeps N most recent versions; storage independence (Law 35) means evicting locally doesn't lose data if it's also in IPFS / federation |
+| Cross-device handoff | Start on desktop, continue on mobile — same uuid'd state lives on both via federation envelope (AAAAAA) |
+
+### Conservation Law 52 — PWA uuid integrity
+
+`checkPwaUuidIntegrityInvariant`: cache map-key symmetry (every key matches its asset.uuid) + sync queue chain integrity (Law 34 echo). Boot probe trivially OK with empty caches; production caches accumulate, probe catches drift.
+
+### MCP surface (slice NNNNNNNN — 12 tools)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.pwa.cacheAsset` | Cache asset keyed by content-uuid |
+| `erpax.pwa.listCachedAssets` | Enumerate cached assets |
+| `erpax.pwa.evictAsset` | Evict by uuid |
+| `erpax.pwa.totalCachedBytes` | Quota tracking |
+| `erpax.pwa.enqueueMutation` | UUID-chained background sync enqueue |
+| `erpax.pwa.listQueuedMutations` | Pending offline mutations (tenant-scoped per Law 9) |
+| `erpax.pwa.dequeueMutation` | Dequeue after successful replay |
+| `erpax.pwa.publishManifest` | Publish W3C Web App Manifest in content-uuid envelope |
+| `erpax.pwa.verifyManifest` | Recompute envelope uuid → tamper-detect |
+| `erpax.pwa.preparePush` | Prepare uuid-keyed W3C Push notification |
+| `erpax.pwa.dedupPush` | SW dedup helper |
+| `erpax.pwa.checkUuidIntegrity` | Conservation Law 52 verdict |
+
+### Coupling with prior slices
+
+- **Slice RRRRR (Law 8)** — every cached asset is content-uuid'd → recoverable + tamper-proof.
+- **Slice TTTTT + UUUUUU** — assets are storage-independent; replication-by-uuid means the SW cache is one of N backends.
+- **Slice SSSSSS (Law 34)** — the sync queue is a streamUuid hash-chain; replay order causally preserved; tampering at any point breaks the chain at the corruption point.
+- **Slice NNNNNN (Law 29 SEO)** — manifest faces register as SeoVortexFaces; bitemporal anchor 301-redirects old uuids to canonical; search engines + AI crawlers see the temporal evolution.
+- **Slice AAAAAA (federation)** — cross-device handoff = federation envelope; uuid recompute proves the receiving device sees identical state.
+
+### Standards anchoring
+
+@standard W3C Service Workers; W3C Web App Manifest; W3C Push API + W3C Notifications API; W3C Cache API + W3C IndexedDB 3.0 + W3C OPFS; RFC 4122 §4.3 + RFC 8785; ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

@@ -40,6 +40,7 @@ import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/ag
 import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
 import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
 import { checkMcpDryCleanliness } from '@/services/agents/mcp/dry-clean'
+import { checkPwaUuidIntegrity } from '@/services/pwa'
 
 async function loadMcpTools(): Promise<ReadonlyArray<ErpaxMcpTool>> {
   const m = await import('@/services/agents/mcp/tool-defs')
@@ -1627,6 +1628,29 @@ export function checkTorusBoundedInvariant(_ctx: InvariantContext): InvariantRes
   return fail('entropy', 'torus-bounded',
     `${result.envelopeViolations.length} envelope violation(s)`,
     [...result.envelopeViolations])
+}
+
+/**
+ * Conservation Law 52 — `checkPwaUuidIntegrityInvariant`. Slice
+ * NNNNNNNN (2026-05-11). Per user 'uuid solves pwa'.
+ *
+ * Verify cache map-key symmetry (every key matches its asset.uuid)
+ * + sync queue chain integrity (Law 34 echo). Boot-time probe is
+ * trivially OK with empty caches; production caches accumulate,
+ * the probe catches drift.
+ */
+export function checkPwaUuidIntegrityInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkPwaUuidIntegrity()
+  if (result.ok) {
+    return pass('entropy', 'pwa-uuid-integrity',
+      `${result.cachedAssets} cached assets + ${result.queuedMutations} queued mutations all chain-coherent (Law 52 satisfied)`)
+  }
+  const reasons: string[] = []
+  if (result.orphanCacheKeys.length > 0) reasons.push(`${result.orphanCacheKeys.length} orphan cache key(s)`)
+  if (result.chainBroken.length > 0) reasons.push(`${result.chainBroken.length} chain break(s)`)
+  return fail('entropy', 'pwa-uuid-integrity',
+    `PWA integrity violated: ${reasons.join(' / ')}`,
+    [...result.orphanCacheKeys.slice(0, 4), ...result.chainBroken.slice(0, 4).map((c) => `at[${c.at}]`)])
 }
 
 /**
