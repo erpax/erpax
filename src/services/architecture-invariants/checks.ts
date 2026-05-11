@@ -435,6 +435,75 @@ export async function checkAccountingCollectionsAreTamperProofed(_ctx: Invariant
 }
 
 /**
+ * Slice XXXXXXXXX-cut1 (2026-05-11) — Conservation Law 62 made
+ * measurable. Samples chain leaves + share rows + audit-events to
+ * compute the platform's structured-uuid coverage. The tamper
+ * probability estimate `(1 - coverage)^N` is exposed in the result.
+ *
+ * Severity contract: WARN while coverage < 0.9; PASS at ≥ 0.9.
+ * (Future cut promotes to FAIL once coverage stabilises at ≥ 0.99.)
+ */
+export async function checkFeatureCoverage(ctx: InvariantContext): Promise<InvariantResult> {
+  if (!ctx.payload) {
+    return warn('entropy', 'feature-coverage', 'no payload context — skipped')
+  }
+  try {
+    const { computeCoverage } = await import('@/services/uuid-format/coverage')
+    // Sample up to 50 uuids from each of three high-signal collections.
+    // Best-effort: collection-missing → empty sample. Total ≤ 150.
+    const samples: Array<{ uuid: string; source: string }> = []
+    for (const slug of ['audit-events', 'shares', 'memories'] as const) {
+      try {
+        const res = await ctx.payload.find({
+          collection: slug as never,
+          limit: 50,
+          depth: 0,
+        }) as { docs: Array<Record<string, unknown>> }
+        for (const row of res.docs) {
+          // Prefer chainLeafUuid (audit-events / shares) → uuid (any tamper-proof row) → shareUuid (shares).
+          const candidate = (row.chainLeafUuid as string | undefined)
+            ?? (row.uuid as string | undefined)
+            ?? (row.shareUuid as string | undefined)
+          if (candidate) samples.push({ uuid: candidate, source: slug })
+        }
+      } catch {
+        /* collection missing or unsupported — skip */
+      }
+    }
+    if (samples.length === 0) {
+      return warn(
+        'entropy', 'feature-coverage',
+        'no sampleable uuid-carrying rows found — coverage indeterminate',
+      )
+    }
+    const report = computeCoverage({ samples })
+    const cov = Number(report.overallStructuredCoverage.toFixed(3))
+    const tamp = report.tamperProbabilityEstimate
+    const tampStr = tamp < 1e-9 ? tamp.toExponential(2) : tamp.toFixed(9)
+    if (cov >= 0.9) {
+      return pass(
+        'entropy', 'feature-coverage',
+        `${report.structuredCount}/${report.totalSamples} structured (coverage=${cov}; P(tamper)≈${tampStr})`,
+      )
+    }
+    return warn(
+      'entropy', 'feature-coverage',
+      `coverage ${cov} below 0.9 threshold — ${report.legacyCount}/${report.totalSamples} are legacy uuidv5 (P(tamper)≈${tampStr})`,
+      // Offer the top slot-coverage gaps as offender hints.
+      report.perSlot
+        .filter((s) => s.total > 0 && s.structuredCoverage < 1)
+        .slice(0, 5)
+        .map((s) => `${s.slot}: ${s.structuredCount}/${s.total} structured`),
+    )
+  } catch (err) {
+    return warn(
+      'entropy', 'feature-coverage',
+      `unable to compute coverage: ${err instanceof Error ? err.message : String(err)}`,
+    )
+  }
+}
+
+/**
  * Slice PPPPPPPPP-cut1 (2026-05-11) — Finding 2 of the tamper-surface
  * review. Scans the source for direct `payload.create({collection:
  * 'audit-events', ...})` callers that bypass `writeAuditEvent`.

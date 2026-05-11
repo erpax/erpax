@@ -94,6 +94,10 @@ export async function runAllInvariants(
     // audit-events write routes through writeAuditEvent (uuid-linked).
     results.push(await C.checkAccountingCollectionsAreTamperProofed(ctx))
     results.push(C.checkAuditEventsAreChainLinked(ctx))
+    // Slice XXXXXXXXX-cut1 (2026-05-11) — Conservation Law 62 made
+    // measurable. Coverage of structured uuidv8 across high-signal
+    // collections; warns when < 0.9.
+    results.push(await C.checkFeatureCoverage(ctx))
     results.push(C.checkNoDuplicateCollectionSlugs(ctx))
     results.push(C.checkNoDuplicateArrayDbNames(ctx))
     results.push(C.checkNoDuplicateChainIds(ctx))

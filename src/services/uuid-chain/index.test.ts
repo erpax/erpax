@@ -52,6 +52,42 @@ function payloadUuid(value: number): ContentUuid<TestPayload> {
   return `00000000-0000-5000-8000-${hex}` as ContentUuid<TestPayload>
 }
 
+// Slice XXXXXXXXX-cut1 (2026-05-11) — pinned structural metadata.
+describe('forged leaves carry slot=chainLeaf + CHAINED capability (Law 61 + 62)', () => {
+  it('genesis leafUuid decodes as a structured uuidv8 with slot=chainLeaf', async () => {
+    const { decodeStructured } = await import('@/services/uuid-format')
+    const g = forgeGenesisLink<TestPayload>({
+      payloadUuid: payloadUuid(0), tenantId: TENANT, occurredAt: '2026-05-11T08:00:00.000Z',
+    })
+    const parts = decodeStructured(g.leafUuid as unknown as string)
+    expect(parts.slotName).toBe('chainLeaf')
+    expect(parts.capabilityNames).toContain('CHAINED')
+    expect(parts.capabilityNames).not.toContain('SEALED')
+  })
+
+  it('sealed leaves carry CHAINED + SEALED capabilities', async () => {
+    const { decodeStructured } = await import('@/services/uuid-format')
+    const g = forgeGenesisLink<TestPayload>({
+      payloadUuid: payloadUuid(0), tenantId: TENANT, occurredAt: '2026-05-11T08:00:00.000Z',
+      sealed: true,
+    })
+    const parts = decodeStructured(g.leafUuid as unknown as string)
+    expect(parts.slotName).toBe('chainLeaf')
+    expect(parts.capabilityNames.sort()).toEqual(['CHAINED', 'SEALED'])
+  })
+
+  it('non-sealed and sealed leaves with otherwise-identical inputs are distinct (capability bit changes uuid)', async () => {
+    const a = forgeGenesisLink<TestPayload>({
+      payloadUuid: payloadUuid(0), tenantId: TENANT, occurredAt: '2026-05-11T08:00:00.000Z',
+    })
+    const b = forgeGenesisLink<TestPayload>({
+      payloadUuid: payloadUuid(0), tenantId: TENANT, occurredAt: '2026-05-11T08:00:00.000Z',
+      sealed: true,
+    })
+    expect(a.leafUuid).not.toBe(b.leafUuid)
+  })
+})
+
 describe('forgeGenesisLink', () => {
   it('produces depth=0 with the genesis sentinel as prev', () => {
     const g = forgeGenesisLink<TestPayload>({
@@ -62,7 +98,9 @@ describe('forgeGenesisLink', () => {
     expect(g.depth).toBe(0)
     expect(g.prevUuid).toBe(GENESIS_PREV_UUID)
     expect(g.payloadUuid).toBe(payloadUuid(0))
-    expect(g.leafUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    // Slice XXXXXXXXX-cut1 — leaves are now uuidv8 (version nibble = 8)
+// carrying slot=chainLeaf + CHAINED capability.
+expect(g.leafUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
   })
 
   it('two genesis links with the same payload + time → byte-equal leafUuid', () => {

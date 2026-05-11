@@ -53,6 +53,13 @@
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { computeKvBindingUuid } from '@/services/uuid-kv'
+// Slice XXXXXXXXX-cut1 (2026-05-11) — chain leaves now emit RFC 9562
+// structured uuidv8 with slot=chainLeaf + capabilities=CHAINED (+
+// SEALED when the caller signals a stream-pause leaf). Every leaf in
+// the platform's audit chain now contributes to Law 61/62 coverage.
+import {
+  encodeStructured, SLOT_TAGS, CAPABILITIES,
+} from '@/services/uuid-format'
 
 /**
  * Special sentinel for the genesis leaf's `prev`. UUIDv5 all-zeros
@@ -84,33 +91,46 @@ export interface ChainLink<P = unknown> {
 }
 
 /**
- * Compute the leaf-uuid for a new link. Identical math to Slice
- * TTTTTTTT's `leafUuid = sha256(prev || payload || ts)` but expressed
- * as a KvBinding so the Law 57 (uuid-kv) primitive can be reused.
+ * Compute the leaf-uuid for a new link. Slice XXXXXXXXX-cut1
+ * (2026-05-11): emits structured uuidv8 (Law 61) with slot=chainLeaf
+ * + CHAINED capability (+ SEALED when `sealed:true`). The leaf is
+ * SELF-DESCRIBING — `decodeStructured(leafUuid)` returns
+ * `slot=chainLeaf` so downstream coverage / federation / verification
+ * paths know what they're holding without consulting external tables.
  *
- * The `(prev, payload, ts, tenant)` tuple uniquely determines the
- * leaf-uuid. Two chains with identical genesis → identical step
- * payloads at identical timestamps produce identical leaf-uuids
- * (federation peers verify by uuid equality).
+ * The `(prev, payload, ts, tenant, sealed)` tuple uniquely determines
+ * the leaf-uuid. Federation peers compute byte-equal results from
+ * byte-equal inputs.
  */
 export function computeChainLinkUuid<P>(args: {
   prevUuid: ContentUuid<unknown>
   payloadUuid: ContentUuid<P>
   occurredAt: string
   tenantId: string
+  /** Set true for leaves at stream-pause / merged-unity meeting points (Slice PPPPPPPPP-cont). */
+  sealed?: boolean
 }): ContentUuid<ChainLink<P>> {
-  // Bind (prev, payload) under tenant — that's the kv-binding.
+  // Bind (prev, payload) under tenant via Law 57 — the binding-uuid
+  // becomes the inner digest input. Preserves the federation-
+  // determinism the prior implementation had.
   const bindingUuid = computeKvBindingUuid({
     keyUuid: args.prevUuid,
     valueUuid: args.payloadUuid,
     tenantId: args.tenantId,
   })
-  // Mix in the occurredAt so two links with the same (prev, payload)
-  // at different times don't collide (would otherwise enable replay).
-  return computeContentUuid(
-    { bindingUuid, occurredAt: args.occurredAt },
-    args.tenantId,
-  ) as ContentUuid<ChainLink<P>>
+  // Slice XXXXXXXXX-cut1 — replace the raw computeContentUuid with
+  // encodeStructured so the resulting leaf-uuid carries the
+  // slot+capability metadata in its bits (Law 61). Identity +
+  // verification + features fuse into one primitive.
+  let capabilities = CAPABILITIES.CHAINED
+  if (args.sealed === true) capabilities |= CAPABILITIES.SEALED
+  return encodeStructured({
+    slotTag: SLOT_TAGS.chainLeaf,
+    capabilities,
+    schemaVersion: 1,
+    content: { bindingUuid, occurredAt: args.occurredAt },
+    tenantId: args.tenantId,
+  }) as ContentUuid<ChainLink<P>>
 }
 
 /**
@@ -125,6 +145,13 @@ export function forgeChainLink<P>(args: {
   payloadUuid: ContentUuid<P>
   tenantId: string
   occurredAt?: string
+  /**
+   * Slice XXXXXXXXX-cut1 — when true, the leaf carries the SEALED
+   * capability bit (Law 61) in addition to CHAINED. Use for stream-
+   * pause / merged-unity meeting points where the writer has
+   * (or will) produce a signature attesting the leaf.
+   */
+  sealed?: boolean
 }): ChainLink<P> {
   const occurredAt = args.occurredAt ?? new Date().toISOString()
   const leafUuid = computeChainLinkUuid<P>({
@@ -132,6 +159,7 @@ export function forgeChainLink<P>(args: {
     payloadUuid: args.payloadUuid,
     occurredAt,
     tenantId: args.tenantId,
+    sealed: args.sealed === true,
   })
   return {
     leafUuid,
@@ -152,6 +180,7 @@ export function forgeGenesisLink<P>(args: {
   payloadUuid: ContentUuid<P>
   tenantId: string
   occurredAt?: string
+  sealed?: boolean
 }): ChainLink<P> {
   return forgeChainLink({
     prevUuid: GENESIS_PREV_UUID,
@@ -159,6 +188,7 @@ export function forgeGenesisLink<P>(args: {
     payloadUuid: args.payloadUuid,
     tenantId: args.tenantId,
     occurredAt: args.occurredAt,
+    sealed: args.sealed === true,
   })
 }
 
