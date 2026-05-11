@@ -56,6 +56,131 @@ export const CANONICAL_AREAS: ReadonlyArray<string> = [
 ] as const
 
 /**
+ * Slice QQQQQQQQ — runtime counterpart of `docs/standards/mcp.md`.
+ * Every standard the MCP layer cites, mapped to (a) the standards
+ * family per §0g (slice LLLLLL); (b) one or two ERPax modules that
+ * implement / cite it. Exposed via `erpax.platform.standardsIndex`
+ * so external clients can ask "what does ERPax claim to implement
+ * inside its MCP surface?" and get a typed answer.
+ */
+export interface McpStandardEntry {
+  readonly id: string                // canonical citation token
+  readonly family: 'mcp' | 'rfc-ietf' | 'w3c' | 'iso' | 'schema-org' | 'topology' | 'open-graph' | 'other'
+  readonly title: string
+  readonly modules: ReadonlyArray<string>     // file paths under src/
+  readonly conservationLaws?: ReadonlyArray<number>
+}
+
+export const MCP_STANDARDS_INDEX: ReadonlyArray<McpStandardEntry> = [
+  // §1 — Core MCP protocol
+  { id: 'MCP 0.6 — tools/list + tools/call', family: 'mcp', title: 'Model Context Protocol — core methods',
+    modules: ['agents/mcp/tool-defs.ts', 'agents/mcp/in-process-client.ts'], conservationLaws: [1, 37] },
+  { id: 'MCP 0.6 — tools/list naming convention', family: 'mcp', title: 'erpax.<area>.<verb> taxonomy',
+    modules: ['agents/mcp/standardization.ts'], conservationLaws: [38] },
+  { id: 'MCP 0.6 — tools/call result shape', family: 'mcp', title: '{content:[{type,text}]} envelope',
+    modules: ['agents/mcp/tool-defs.ts'] },
+  // §2 — JSON / serialization
+  { id: 'RFC 8259', family: 'rfc-ietf', title: 'JSON data interchange',
+    modules: ['agents/mcp/tool-defs.ts'] },
+  { id: 'RFC 8785', family: 'rfc-ietf', title: 'JCS — JSON Canonicalization Scheme',
+    modules: ['integrity/content-uuid.ts', 'voting/index.ts'], conservationLaws: [8, 30] },
+  { id: 'W3C JSON-LD 1.1', family: 'w3c', title: 'JSON for Linked Data',
+    modules: ['agents/mcp/presentation.ts', 'agents/mcp/standardization.ts', 'proof/dry-proof.ts'], conservationLaws: [39, 44] },
+  { id: 'W3C JSON Schema (draft 2020-12)', family: 'w3c', title: 'Structural type descriptors',
+    modules: ['integrity/type-uuid.ts'], conservationLaws: [47] },
+  // §3 — Identity / content addressing
+  { id: 'RFC 4122 §4.3', family: 'rfc-ietf', title: 'UUIDv5 (name-based)',
+    modules: ['integrity/content-uuid.ts', 'integrity/type-uuid.ts', 'integrity/uuid-stream.ts', 'integrity/uuid-short.ts'],
+    conservationLaws: [8, 10, 30, 31, 35, 36, 39, 46, 47] },
+  { id: 'FIPS 180-4', family: 'other', title: 'SHA-256',
+    modules: ['integrity/content-uuid.ts', 'streams/index.ts'], conservationLaws: [8, 34] },
+  { id: 'NIST SP 800-208', family: 'other', title: 'Stateful hash-based signatures (PQC future)',
+    modules: ['beyond/pqc.ts'], conservationLaws: [18] },
+  { id: 'W3C VC Data Model 2.0', family: 'w3c', title: 'Verifiable claims',
+    modules: ['agents/mcp/presentation.ts', 'proof/dry-proof.ts'], conservationLaws: [44] },
+  // §4 — Open Graph / Schema.org / SEO
+  { id: 'Schema.org Action', family: 'schema-org', title: 'Action vocabulary (every tool is an Action)',
+    modules: ['agents/mcp/presentation.ts'], conservationLaws: [39] },
+  { id: 'Schema.org Dataset', family: 'schema-org', title: 'Dataset vocabulary (proofs + bundles)',
+    modules: ['proof/dry-proof.ts', 'agents/mcp/standardization.ts'], conservationLaws: [44] },
+  { id: 'Schema.org SoftwareApplication', family: 'schema-org', title: '/mcp/ root face',
+    modules: ['agents/mcp/presentation.ts'] },
+  { id: 'Schema.org CollectionPage', family: 'schema-org', title: 'Per-area MCP page',
+    modules: ['agents/mcp/presentation.ts'] },
+  { id: 'W3C Microdata 1.1', family: 'w3c', title: 'Inline microdata format',
+    modules: ['agents/mcp/presentation.ts', 'website/seo-vortex.ts'], conservationLaws: [29, 39] },
+  { id: 'Open Graph protocol', family: 'open-graph', title: 'Social-share preview meta',
+    modules: ['agents/mcp/presentation.ts'], conservationLaws: [39] },
+  { id: 'Twitter Cards', family: 'open-graph', title: 'Twitter analog of Open Graph',
+    modules: ['agents/mcp/presentation.ts'] },
+  { id: 'Sitemap.xml protocol 0.9', family: 'w3c', title: 'sitemap.xml emission',
+    modules: ['website/seo-vortex.ts'], conservationLaws: [29] },
+  { id: 'RFC 9694', family: 'rfc-ietf', title: 'robots.txt + REP — opt-in for ClaudeBot/GPTBot/Google-Extended',
+    modules: ['website/seo-vortex.ts'] },
+  { id: 'BCP-47', family: 'w3c', title: 'Language tags (hreflang)',
+    modules: ['website/seo-vortex.ts', 'agents/mcp/presentation.ts'], conservationLaws: [3] },
+  // §5 — Quality / audit
+  { id: 'ISO/IEC 25010:2023 §5.2 performance', family: 'iso', title: 'Resource envelope',
+    modules: ['topology/torus.ts', 'streams/index.ts'], conservationLaws: [15, 16, 43] },
+  { id: 'ISO/IEC 25010:2023 §5.3 usability — discoverability', family: 'iso', title: 'Readiness manifest',
+    modules: ['platform-readiness/index.ts'] },
+  { id: 'ISO/IEC 25010:2023 §5.4 reusability', family: 'iso', title: 'DRY by detection + Trinity',
+    modules: ['agents/mcp/dry-clean.ts', 'architecture-invariants/trinity.ts'], conservationLaws: [50] },
+  { id: 'ISO/IEC 25010:2023 §5.5 testability', family: 'iso', title: 'Self-test smoke probe',
+    modules: ['agents/mcp/self-test.ts'], conservationLaws: [41] },
+  { id: 'ISO/IEC 25010:2023 §5.6 security — non-repudiation', family: 'iso', title: 'Signed ballots + content uuids',
+    modules: ['voting/index.ts', 'integrity/content-uuid.ts'], conservationLaws: [8, 30, 31] },
+  { id: 'ISO/IEC 25010:2023 §5.7 modularity', family: 'iso', title: '10 dimensional plugins + per-area MCP',
+    modules: ['plugins/dimensions.ts', 'agents/mcp/standardization.ts'], conservationLaws: [49, 51] },
+  { id: 'ISO/IEC/IEEE 29119-2', family: 'iso', title: 'Software testing process',
+    modules: ['agents/mcp/self-test.ts'], conservationLaws: [41] },
+  { id: 'ISO 19011:2018 §6.4.6', family: 'iso', title: 'Audit-evidence + traceability',
+    modules: ['architecture-invariants/checks.ts'], conservationLaws: [38, 44] },
+  { id: 'ISO/IEC 27001 §A.9.4.5', family: 'iso', title: 'Information access restriction (short uuids in UI)',
+    modules: ['integrity/uuid-short.ts'], conservationLaws: [46] },
+  { id: 'ISO/IEC 27040:2024', family: 'iso', title: 'Storage security',
+    modules: ['storage-independence/index.ts'], conservationLaws: [35, 36] },
+  { id: 'ISO/IEC 30134', family: 'iso', title: 'KPIs for resource efficiency (cost/carbon)',
+    modules: ['topology/torus.ts', 'beyond/cost.ts', 'beyond/carbon.ts'], conservationLaws: [15, 16, 43] },
+  // §6 — Streams / time / order
+  { id: 'Lamport 1978', family: 'other', title: 'Distributed-system causal ordering',
+    modules: ['streams/index.ts'], conservationLaws: [33, 34] },
+  { id: 'W3C Streams API + ReactiveX', family: 'w3c', title: 'AsyncIterable surface',
+    modules: ['streams/index.ts'] },
+  { id: 'W3C PROV-DM', family: 'w3c', title: 'Per-event provenance',
+    modules: ['beyond/provenance.ts'], conservationLaws: [12] },
+  // §7 — PWA
+  { id: 'W3C Service Workers', family: 'w3c', title: 'PWA cache + sync + push entry',
+    modules: ['pwa/index.ts'], conservationLaws: [52] },
+  { id: 'W3C Web App Manifest', family: 'w3c', title: 'PWA identity + display mode',
+    modules: ['pwa/index.ts'], conservationLaws: [52] },
+  { id: 'W3C Push API + Notifications API', family: 'w3c', title: 'UUID-dedup push',
+    modules: ['pwa/index.ts'], conservationLaws: [52] },
+  { id: 'W3C Cache API', family: 'w3c', title: 'UUID-keyed asset cache',
+    modules: ['pwa/index.ts'], conservationLaws: [52] },
+  { id: 'W3C IndexedDB 3.0 + W3C OPFS', family: 'w3c', title: 'Browser storage backends',
+    modules: ['pwa/index.ts'], conservationLaws: [52] },
+  // §8 — Topology
+  { id: 'Topology — torus / closed manifold (Hatcher 2002)', family: 'topology', title: 'Closed surface',
+    modules: ['topology/torus.ts'], conservationLaws: [43] },
+  { id: 'CAP theorem', family: 'topology', title: 'CP via uuid-consensus',
+    modules: ['storage-independence/index.ts'], conservationLaws: [36] },
+]
+
+/** Tool to enumerate the runtime standards index. */
+export function listMcpStandards(): ReadonlyArray<McpStandardEntry> { return MCP_STANDARDS_INDEX }
+
+/** Filter the index by standards family (the 8 high-level categories). */
+export function mcpStandardsByFamily(family: McpStandardEntry['family']): ReadonlyArray<McpStandardEntry> {
+  return MCP_STANDARDS_INDEX.filter((e) => e.family === family)
+}
+
+/** Reverse-lookup — which standards govern a given Conservation Law N? */
+export function standardsForLaw(num: number): ReadonlyArray<McpStandardEntry> {
+  return MCP_STANDARDS_INDEX.filter((e) => e.conservationLaws?.includes(num))
+}
+
+/**
  * Standards lexicon — token patterns that indicate a tool's
  * description cites at least one standard. The grammar is loose
  * (we can't parse arbitrary prose for citations), but the patterns
