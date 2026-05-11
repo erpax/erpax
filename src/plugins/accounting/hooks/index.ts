@@ -2,9 +2,9 @@
  * Accounting Hooks — barrel for transaction hooks (Invoice/Bill/Payment/Item).
  *
  * Slice PPP: removed all backward-compat exports —
- *   • `base-accounting-hook` (`createAccountingHook`, `ensureHostId`,
- *     `calculateTotal`, `HookHandler`) — zero callers (KKK), `ensureHostId`
- *     was a duplicate of canonical `autoPopulateHost` (PPP merge); file
+ *   • `base-accounting-hook` (`createAccountingHook`, `ensureTenant`,
+ *     `calculateTotal`, `HookHandler`) — zero callers (KKK), `ensureTenant`
+ *     was a duplicate of canonical `autoPopulateTenant` (PPP merge); file
  *     queued for deletion.
  *   • `ar-aging`, `ap-aging`, `cogs` — each delegated to a
  *     `req.payload.services?.X` lookup against a service file that doesn't
@@ -37,6 +37,8 @@ export * from './invoice.hook'
 export * from './bill.hook'
 export * from './payment.hook'
 export * from './item.hook'
+// Slice LLL: bank-statement import emission (closes the IAS-7 GL gap).
+export * from './bank-statement.hook'
 // Period-end hooks — schedule-row driven (status → 'posted' triggers GL).
 export * from './depreciation.hook'
 export * from './period-end-adjustment.hook'

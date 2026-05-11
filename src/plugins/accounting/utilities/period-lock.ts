@@ -1,9 +1,16 @@
 /**
  * Period-lock enforcement for GL-posting collections.
  *
- * Mirrors Ruby ERPAX's `host.accounting_locked_for_date?(date)`: once a fiscal
- * period's status === 'locked', no transaction with a posting date inside
- * that period may be created or updated.
+ * Mirrors Ruby ERPAX's `tenant.accounting_locked_for_date?(date)`: once a
+ * fiscal period's status === 'locked', no transaction with a posting date
+ * inside that period may be created or updated.
+ *
+ * Slice HHH (2026-05-10): rewired to the canonical `tenant` field. The
+ * previous `host` / `data.host` / `req.user.host` reads were post-Slice-CCC
+ * dead code — `host` no longer exists on user, document, or `fiscal-periods`
+ * row. The query silently returned empty result sets, so the period-lock
+ * was never enforced. Now uses the multi-tenant-plugin shape
+ * (`req.user.tenants[0]?.tenant`) and the `tenant` collection field.
  *
  * @standard ISO-8601-1:2019 date-time utc-canonical-form
  * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -20,13 +27,13 @@ import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'
 const POSTABLE_DATE_FIELDS = ['date', 'transactionDate', 'postingDate', 'effectiveDate'] as const
 
 /**
- * Returns the locked fiscal period covering `isoDate` for `host`,
+ * Returns the locked fiscal period covering `isoDate` for `tenantId`,
  * or `null` if no locked period covers that date.
  */
 export async function findLockedPeriodForDate(
   req: PayloadRequest,
   isoDate: string,
-  host: string | number,
+  tenantId: string | number,
 ): Promise<{ id: string | number; status: string; periodNumber: number; fiscalYear: number } | null> {
   const { docs } = await req.payload.find({
     collection: 'fiscal-periods',
@@ -34,7 +41,7 @@ export async function findLockedPeriodForDate(
     limit: 1,
     where: {
       and: [
-        { host: { equals: host } },
+        { tenant: { equals: tenantId } },
         { status: { equals: 'locked' } },
         { startDate: { less_than_equal: isoDate } },
         { endDate: { greater_than_equal: isoDate } },
@@ -53,16 +60,20 @@ export async function findLockedPeriodForDate(
  *
  *   1. Picks the posting date — first present of: `date`, `transactionDate`,
  *      `postingDate`, `effectiveDate`.
- *   2. Looks up a locked fiscal-period covering that date for the host.
+ *   2. Looks up a locked fiscal-period covering that date for the tenant.
  *   3. Throws if found, blocking the write.
  *
- * Skips silently when no date is set yet (drafts) or no host has been resolved.
+ * Skips silently when no date is set yet (drafts) or no tenant has been resolved.
  */
 export const validateNotLocked: CollectionBeforeChangeHook = async ({ data, req }) => {
   if (!data || !req.user) return data
 
-  const host = (data as Record<string, unknown>).host ?? (req.user as { host?: unknown }).host
-  if (!host) return data
+  // Tenant from doc field if set, else from canonical multi-tenant plugin shape.
+  const docTenant = (data as Record<string, unknown>).tenant
+  const userTenantsArr = (req.user as unknown as { tenants?: Array<{ tenant?: number | string }> }).tenants
+  const userTenant = userTenantsArr?.[0]?.tenant
+  const tenantId = (docTenant as string | number | undefined) ?? userTenant
+  if (tenantId === undefined || tenantId === null) return data
 
   let postingDate: string | undefined
   for (const f of POSTABLE_DATE_FIELDS) {
@@ -74,7 +85,7 @@ export const validateNotLocked: CollectionBeforeChangeHook = async ({ data, req 
   }
   if (!postingDate) return data
 
-  const locked = await findLockedPeriodForDate(req, postingDate, host as string | number)
+  const locked = await findLockedPeriodForDate(req, postingDate, tenantId as string | number)
   if (locked) {
     throw new Error(
       `Period is locked: cannot post on ${postingDate.slice(0, 10)} — ` +

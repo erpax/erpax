@@ -1,999 +1,532 @@
 /**
  * Level-3 e2e accounting seed — multi-tenant intercompany fixtures for end-to-end tests.
  *
+ * Three sub-seeds compose into `Level3SeedSuite`:
+ *
+ *   - `FullAccountingCycleSeed`   — open / post / close on a single tenant
+ *   - `MultiEntitySeed`           — three subsidiaries + intercompany + consolidation
+ *   - `RealWorldScenarioSeed`     — overdraft, rounding, prior-period adjustments,
+ *                                   bulk volume, failure + reversal
+ *
+ * Validation lives in `SEED_VALIDATION_REGISTRY` (`src/testing/test-seed-factory.ts`).
+ * Lifecycle (createContext / hooks / SeedResult) lives on `TestSeedFactory.runSeedLifecycle`.
+ * Cleanup-id aggregation across sub-seeds uses `TestSeedFactory.mergeChildContext`.
+ *
  * @standard ECMA-262 ECMAScript-2024 baseline
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time
  * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
  * @accounting US-GAAP ASC-205 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-810 consolidation
+ * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
  * @audit ISO-19011:2018 audit-trail test-data
  * @quality ISO-25010 maintainability test-fixtures
  * @see docs/STANDARDS.md §4.2
- */
-
-/**
- * Level 3: E2E Test Seeds for Accounting Plugin
- * Complete accounting workflows with advanced scenarios
- * Setup time: 5-15 seconds
- *
- * Includes:
- * - Full accounting cycles (GL, AR, AP, reconciliation)
- * - Multi-entity scenarios with consolidation
- * - Complex edge cases (negative balances, rounding, prior adjustments)
- * - Large transaction volumes and concurrent scenarios
+ * @see src/plugins/accounting/seeds/level-1/minimal-accounting-seeds.ts
  */
 
 import type { Payload } from 'payload';
-import { TestSeedFactory, type SeedResult } from '@/testing';
+import { TestSeedFactory, registerSeedCategory, type SeedResult } from '@/testing';
+import { MINIMAL_GL_ACCOUNTS_DATA } from '../level-1';
+
+// ─── Shared helpers ──────────────────────────────────────────────────────
+
+const pad3 = (n: number): string => String(n).padStart(3, '0');
+const pad4 = (n: number): string => String(n).padStart(4, '0');
+const ymd = (d: Date): string => d.toISOString().split('T')[0];
+const addDays = (d: Date, days: number): Date => new Date(d.getTime() + days * 86_400_000);
+const lastDayOfMonth = (d: Date): Date => new Date(d.getFullYear(), d.getMonth() + 1, 0);
 
 /**
- * Full Accounting Cycle Seed
- * Complete one-month accounting workflow including:
- * - GL transactions (20-30 entries)
- * - Invoice creation and AR aging
- * - Expense recognition and AP aging
- * - Period-end reconciliation
- * - Adjusting entries
- * - Trial balance verification
- * - Financial statement generation
+ * Single-tenant accounting cycle — opening balance through period-end
+ * (depreciation, accrual, prepaid) → trial balance → financial statements
+ * → bank reconciliation. Validation contracts pinned in the registry.
  */
 export class FullAccountingCycleSeed extends TestSeedFactory {
-  private hostId: string = '';
-
-  constructor(payload: Payload, hostId: string) {
+  constructor(payload: Payload, private readonly tenantId: string) {
     super(payload);
-    this.hostId = hostId;
-  }
-
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    // Call parent validation first
-    await super.validateData(collection, data);
-
-    // Domain-specific validation
-    if (collection === 'journal-entries') {
-      const debit = data.debitAmount || 0;
-      const credit = data.creditAmount || 0;
-      if (Math.abs(debit - credit) > 0.01) {
-        throw new Error('Journal entry: debits must equal credits');
-      }
-    }
-
-    if (collection === 'invoices') {
-      if (data.totalAmount < 0) {
-        throw new Error('Invoice: totalAmount must be positive');
-      }
-      if (data.status && !['draft', 'issued', 'paid', 'cancelled'].includes(data.status)) {
-        throw new Error('Invoice: invalid status');
-      }
-    }
-
-    if (collection === 'purchase-orders') {
-      if (data.totalAmount < 0) {
-        throw new Error('PO: totalAmount must be positive');
-      }
-      if (data.status && !['draft', 'ordered', 'received', 'invoiced', 'paid'].includes(data.status)) {
-        throw new Error('PO: invalid status');
-      }
-    }
-
-    if (collection === 'trial-balances') {
-      const totalDebits = data.totalDebits || 0;
-      const totalCredits = data.totalCredits || 0;
-      if (Math.abs(totalDebits - totalCredits) > 0.01) {
-        throw new Error('Trial balance: debits must equal credits');
-      }
-    }
   }
 
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('e2e');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      // Get GL accounts
-      const accounts = await this.queryDocuments('gl-accounts', {
-        tenant: this.hostId,
-      });
-
+    return this.runSeedLifecycle('e2e', async () => {
+      const accounts = await this.queryDocuments('gl-accounts', { tenant: this.tenantId });
       if (!accounts.docs || accounts.docs.length < 5) {
         throw new Error('Not enough GL accounts. Please seed Level 1 first.');
       }
 
       const baseDate = new Date();
       baseDate.setDate(1);
-      const monthStart = baseDate.toISOString().split('T')[0];
+      const monthStart = ymd(baseDate);
+      const monthEnd = ymd(lastDayOfMonth(baseDate));
+      const tenant = this.tenantId;
+      const cashId = accounts.docs[0].id;
+      const payablesId = accounts.docs[1].id;
+      const equityId = accounts.docs[2].id;
+      const revenueId = accounts.docs[3].id;
+      const expenseId = accounts.docs[4].id;
 
-      // 1. Opening Balance
+      // 1. Opening balance
       await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: monthStart,
-        reference: 'JE-OPENING',
-        description: 'Opening balances',
-        debitAccountId: accounts.docs[0].id, // Cash
-        creditAccountId: accounts.docs[2].id, // Equity
-        debitAmount: 500000,
-        creditAmount: 500000,
-        status: 'posted',
+        tenant, entryDate: monthStart, reference: 'JE-OPENING', description: 'Opening balances',
+        debitAccountId: cashId, creditAccountId: equityId,
+        debitAmount: 500000, creditAmount: 500000, status: 'posted',
       });
 
-      // 2. Create customers and invoices
-      const customers = [];
-      const invoices = [];
+      // 2. AR (5 customers + invoices + booking entries)
+      const customers = await Promise.all(
+        Array.from({ length: 5 }, (_, i) =>
+          this.createDocument('customers', {
+            tenant, name: `Customer ${i + 1}`, code: `CUST${pad3(i + 1)}`,
+            status: 'active', creditLimit: 50000,
+          }),
+        ),
+      );
+      for (let i = 0; i < customers.length; i++) {
+        const customer = customers[i];
+        const invoiceDate = ymd(addDays(baseDate, i + 1));
+        const dueDate = ymd(addDays(new Date(invoiceDate), 30));
+        const totalAmount = 10000 + (i + 1) * 1000;
 
-      for (let i = 1; i <= 5; i++) {
-        const customer = await this.createDocument('customers', {
-          tenant: this.hostId,
-          name: `Customer ${i}`,
-          code: `CUST${String(i).padStart(3, '0')}`,
-          status: 'active',
-          creditLimit: 50000,
+        await this.createDocument('invoices', {
+          tenant, customerId: customer.id, invoiceNumber: `INV-${pad4(i + 1)}`,
+          invoiceDate, dueDate, totalAmount, currency: 'EUR', status: 'issued',
         });
-        customers.push(customer);
-
-        // Create invoice for customer
-        const invoiceDate = new Date(baseDate);
-        invoiceDate.setDate(invoiceDate.getDate() + i);
-
-        const invoice = await this.createDocument('invoices', {
-          tenant: this.hostId,
-          customerId: customer.id,
-          invoiceNumber: `INV-${String(i).padStart(4, '0')}`,
-          invoiceDate: invoiceDate.toISOString().split('T')[0],
-          dueDate: new Date(invoiceDate.getTime() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-          totalAmount: 10000 + i * 1000,
-          currency: 'EUR',
-          status: 'issued',
-        });
-        invoices.push(invoice);
-
-        // AR transaction
         await this.createDocument('journal-entries', {
-          tenant: this.hostId,
-          entryDate: invoiceDate.toISOString().split('T')[0],
-          reference: `JE-AR-${String(i).padStart(3, '0')}`,
-          description: `Invoice ${invoice.invoiceNumber} from ${customer.name}`,
-          debitAccountId: accounts.docs[0].id, // Receivables (using Cash for demo)
-          creditAccountId: accounts.docs[3].id, // Revenue
-          debitAmount: invoice.totalAmount,
-          creditAmount: invoice.totalAmount,
-          status: 'posted',
+          tenant, entryDate: invoiceDate,
+          reference: `JE-AR-${pad3(i + 1)}`,
+          description: `Invoice INV-${pad4(i + 1)} from ${customer.name}`,
+          debitAccountId: cashId, creditAccountId: revenueId,
+          debitAmount: totalAmount, creditAmount: totalAmount, status: 'posted',
         });
       }
 
-      // 3. Create vendors and purchase orders
-      const vendors = [];
-      const pos = [];
+      // 3. AP (5 vendors + POs + booking entries)
+      const vendors = await Promise.all(
+        Array.from({ length: 5 }, (_, i) =>
+          this.createDocument('vendors', {
+            tenant, name: `Vendor ${i + 1}`, code: `VEND${pad3(i + 1)}`, status: 'active',
+          }),
+        ),
+      );
+      for (let i = 0; i < vendors.length; i++) {
+        const vendor = vendors[i];
+        const poDate = ymd(addDays(baseDate, i + 1));
+        const dueDate = ymd(addDays(new Date(poDate), 15));
+        const totalAmount = 5000 + (i + 1) * 500;
 
-      for (let i = 1; i <= 5; i++) {
-        const vendor = await this.createDocument('vendors', {
-          tenant: this.hostId,
-          name: `Vendor ${i}`,
-          code: `VEND${String(i).padStart(3, '0')}`,
-          status: 'active',
+        await this.createDocument('purchase-orders', {
+          tenant, vendorId: vendor.id, poNumber: `PO-${pad4(i + 1)}`,
+          poDate, dueDate, totalAmount, currency: 'USD', status: 'ordered',
         });
-        vendors.push(vendor);
-
-        // Create PO for vendor
-        const poDate = new Date(baseDate);
-        poDate.setDate(poDate.getDate() + i);
-
-        const po = await this.createDocument('purchase-orders', {
-          tenant: this.hostId,
-          vendorId: vendor.id,
-          poNumber: `PO-${String(i).padStart(4, '0')}`,
-          poDate: poDate.toISOString().split('T')[0],
-          dueDate: new Date(poDate.getTime() + 15 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-          totalAmount: 5000 + i * 500,
-          currency: 'USD',
-          status: 'ordered',
-        });
-        pos.push(po);
-
-        // AP transaction
         await this.createDocument('journal-entries', {
-          tenant: this.hostId,
-          entryDate: poDate.toISOString().split('T')[0],
-          reference: `JE-AP-${String(i).padStart(3, '0')}`,
-          description: `PO ${po.poNumber} from ${vendor.name}`,
-          debitAccountId: accounts.docs[4].id, // Expenses
-          creditAccountId: accounts.docs[1].id, // Payables (using Payables for demo)
-          debitAmount: po.totalAmount,
-          creditAmount: po.totalAmount,
-          status: 'posted',
+          tenant, entryDate: poDate,
+          reference: `JE-AP-${pad3(i + 1)}`,
+          description: `PO PO-${pad4(i + 1)} from ${vendor.name}`,
+          debitAccountId: expenseId, creditAccountId: payablesId,
+          debitAmount: totalAmount, creditAmount: totalAmount, status: 'posted',
         });
       }
 
-      // 4. Additional GL transactions (20-30 entries total)
-      const transactionDates = [];
-      for (let i = 5; i <= 15; i++) {
-        const txDate = new Date(baseDate);
-        txDate.setDate(txDate.getDate() + i);
-        transactionDates.push(txDate.toISOString().split('T')[0]);
+      // 4. Operating expenses spread across the month (salary / rent / utility)
+      const recurring = [
+        { kind: 'SALARY', amount: 15000 },
+        { kind: 'RENT',   amount: 5000  },
+        { kind: 'UTIL',   amount: 2000  },
+      ];
+      for (let i = 0; i <= 10; i++) {
+        const slot = recurring[i % recurring.length];
+        const txDate = ymd(addDays(baseDate, 5 + i));
+        await this.createDocument('journal-entries', {
+          tenant, entryDate: txDate,
+          reference: `JE-${slot.kind}-${pad3(i)}`,
+          description: `${slot.kind.toLowerCase()} expense`,
+          debitAccountId: expenseId, creditAccountId: cashId,
+          debitAmount: slot.amount, creditAmount: slot.amount, status: 'posted',
+        });
       }
 
-      // Create various transaction types
-      for (let i = 0; i < transactionDates.length; i++) {
-        // Salary expenses
-        if (i % 3 === 0) {
-          await this.createDocument('journal-entries', {
-            tenant: this.hostId,
-            entryDate: transactionDates[i],
-            reference: `JE-SALARY-${String(i).padStart(3, '0')}`,
-            description: 'Salary expense',
-            debitAccountId: accounts.docs[4].id, // Expenses
-            creditAccountId: accounts.docs[0].id, // Cash
-            debitAmount: 15000,
-            creditAmount: 15000,
-            status: 'posted',
-          });
-        }
-
-        // Rent expenses
-        if (i % 3 === 1) {
-          await this.createDocument('journal-entries', {
-            tenant: this.hostId,
-            entryDate: transactionDates[i],
-            reference: `JE-RENT-${String(i).padStart(3, '0')}`,
-            description: 'Rent expense',
-            debitAccountId: accounts.docs[4].id, // Expenses
-            creditAccountId: accounts.docs[0].id, // Cash
-            debitAmount: 5000,
-            creditAmount: 5000,
-            status: 'posted',
-          });
-        }
-
-        // Utility expenses
-        if (i % 3 === 2) {
-          await this.createDocument('journal-entries', {
-            tenant: this.hostId,
-            entryDate: transactionDates[i],
-            reference: `JE-UTIL-${String(i).padStart(3, '0')}`,
-            description: 'Utility expense',
-            debitAccountId: accounts.docs[4].id, // Expenses
-            creditAccountId: accounts.docs[0].id, // Cash
-            debitAmount: 2000,
-            creditAmount: 2000,
-            status: 'posted',
-          });
-        }
+      // 5. Period-end adjusting entries (depreciation / accrual / prepaid)
+      const adjustingEntries = [
+        { reference: 'JE-DEPR', description: 'Monthly depreciation',
+          debitAccountId: expenseId, creditAccountId: cashId,
+          debitAmount: 5000, creditAmount: 5000 },
+        { reference: 'JE-ACCR', description: 'Accrual for unrecorded expenses',
+          debitAccountId: expenseId, creditAccountId: payablesId,
+          debitAmount: 10000, creditAmount: 10000 },
+        { reference: 'JE-PREP', description: 'Record prepaid expense',
+          debitAccountId: cashId, creditAccountId: expenseId,
+          debitAmount: 3000, creditAmount: 3000 },
+      ];
+      for (const e of adjustingEntries) {
+        await this.createDocument('journal-entries', {
+          tenant, entryDate: monthEnd, ...e, status: 'posted',
+        });
       }
 
-      // 5. Depreciation (adjusting entry)
-      const lastDay = new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0);
-      const lastDayStr = lastDay.toISOString().split('T')[0];
-
-      await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: lastDayStr,
-        reference: 'JE-DEPR',
-        description: 'Monthly depreciation',
-        debitAccountId: accounts.docs[4].id, // Expenses
-        creditAccountId: accounts.docs[0].id, // Accumulated depreciation (using Cash for demo)
-        debitAmount: 5000,
-        creditAmount: 5000,
-        status: 'posted',
-      });
-
-      // 6. Accrual for unrecorded expenses
-      await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: lastDayStr,
-        reference: 'JE-ACCR',
-        description: 'Accrual for unrecorded expenses',
-        debitAccountId: accounts.docs[4].id, // Expenses
-        creditAccountId: accounts.docs[1].id, // Payables
-        debitAmount: 10000,
-        creditAmount: 10000,
-        status: 'posted',
-      });
-
-      // 7. Prepaid expenses
-      await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: lastDayStr,
-        reference: 'JE-PREP',
-        description: 'Record prepaid expense',
-        debitAccountId: accounts.docs[0].id, // Cash (prepaid)
-        creditAccountId: accounts.docs[4].id, // Expenses
-        debitAmount: 3000,
-        creditAmount: 3000,
-        status: 'posted',
-      });
-
-      // 8. Create trial balance
-      const _trialBalance = await this.createDocument('trial-balances', {
-        tenant: this.hostId,
-        periodDate: lastDayStr,
-        totalDebits: 500000 + 50000 + 25000 + 36000 + 13000 + 10000 + 3000,
-        totalCredits: 500000 + 50000 + 25000 + 36000 + 13000 + 10000 + 3000,
+      // 6. Trial balance + financial statements + bank reconciliation
+      const totals = 500000 + 50000 + 25000 + 36000 + 13000 + 10000 + 3000;
+      await this.createDocument('trial-balances', {
+        tenant, periodDate: monthEnd, totalDebits: totals, totalCredits: totals,
         status: 'unapproved',
       });
-
-      // 9. Create financial statements
-      const _incomeStatement = await this.createDocument('financial-statements', {
-        tenant: this.hostId,
-        statementType: 'income-statement',
-        periodStartDate: monthStart,
-        periodEndDate: lastDayStr,
-        currency: 'EUR',
-        revenue: 50000,
-        expenses: 36000,
-        netIncome: 14000,
+      await this.createDocument('financial-statements', {
+        tenant, statementType: 'income-statement',
+        periodStartDate: monthStart, periodEndDate: monthEnd,
+        currency: 'EUR', revenue: 50000, expenses: 36000, netIncome: 14000,
         status: 'draft',
       });
-
-      const _balanceSheet = await this.createDocument('financial-statements', {
-        tenant: this.hostId,
-        statementType: 'balance-sheet',
-        periodDate: lastDayStr,
-        currency: 'EUR',
-        totalAssets: 500000 + 50000,
-        totalLiabilities: 100000,
-        totalEquity: 450000,
-        status: 'draft',
+      await this.createDocument('financial-statements', {
+        tenant, statementType: 'balance-sheet', periodDate: monthEnd,
+        currency: 'EUR', totalAssets: 550000, totalLiabilities: 100000,
+        totalEquity: 450000, status: 'draft',
       });
-
-      // 10. Bank reconciliation
-      const _bankRecon = await this.createDocument('bank-reconciliations', {
-        tenant: this.hostId,
-        reconciliationDate: lastDayStr,
-        bankStatementBalance: 450000,
-        bookBalance: 450000,
-        status: 'completed',
+      await this.createDocument('bank-reconciliations', {
+        tenant, reconciliationDate: monthEnd,
+        bankStatementBalance: 450000, bookBalance: 450000, status: 'completed',
       });
-
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'e2e',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    });
   }
 }
 
 /**
- * Multi-Entity Seed
+ * Three subsidiaries + per-entity chart-of-accounts + intercompany sale +
+ * consolidation eliminations + consolidated trial balance. Used by the
+ * IFRS-10 / ASC-810 consolidation specs.
  */
 export class MultiEntitySeed extends TestSeedFactory {
-  private parentHostId: string = '';
-
-  constructor(payload: Payload, parentHostId: string) {
+  constructor(payload: Payload, private readonly parentTenantId: string) {
     super(payload);
-    this.parentHostId = parentHostId;
-  }
-
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    await super.validateData(collection, data);
-
-    if (collection === 'intercompany-transactions') {
-      if (!data.fromHostId || !data.toHostId) {
-        throw new Error('Intercompany: both fromHostId and toHostId required');
-      }
-      if (data.fromHostId === data.toHostId) {
-        throw new Error('Intercompany: cannot be with same entity');
-      }
-      if ((data.debitAmount || 0) !== (data.creditAmount || 0)) {
-        throw new Error('Intercompany: debits must equal credits');
-      }
-    }
-
-    if (collection === 'consolidation-eliminations') {
-      if (!data.eliminationType) {
-        throw new Error('Elimination: eliminationType required');
-      }
-      if ((data.debitAmount || 0) !== (data.creditAmount || 0)) {
-        throw new Error('Elimination: debits must equal credits');
-      }
-    }
   }
 
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('e2e');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      const entityIds: string[] = [];
+    return this.runSeedLifecycle('e2e', async () => {
       const baseDate = new Date();
       baseDate.setDate(1);
-      const monthStart = baseDate.toISOString().split('T')[0];
+      const monthStart = ymd(baseDate);
+      const lastDay = ymd(lastDayOfMonth(baseDate));
 
-      // 1. Create 3 subsidiary entities
+      // 1. Three subsidiaries
+      const entityIds: string[] = [];
       for (let i = 1; i <= 3; i++) {
-        const entity = await this.createDocument('hosts', {
-          name: `Subsidiary ${i}`,
-          code: `ENTITY${i}`,
-          parentHostId: this.parentHostId,
-          status: 'active',
+        const entity = await this.createDocument('tenants', {
+          name: `Subsidiary ${i}`, code: `ENTITY${i}`,
+          parentHostId: this.parentTenantId, status: 'active',
         });
         entityIds.push(entity.id);
       }
 
-      // 2. Create GL accounts for each entity
+      // 2. Per-entity chart of accounts (IFRS IAS-1 minimal + intercompany A/R, A/P, revenue, expense)
       const chartOfAccounts = [
-        { number: '1000', name: 'Cash', type: 'asset' },
-        { number: '1500', name: 'Receivables from affiliate', type: 'asset' },
-        { number: '2000', name: 'Accounts Payable', type: 'liability' },
-        { number: '2500', name: 'Payables to affiliate', type: 'liability' },
-        { number: '3000', name: 'Equity', type: 'equity' },
-        { number: '4000', name: 'Revenue', type: 'revenue' },
-        { number: '4100', name: 'Intercompany revenue', type: 'revenue' },
-        { number: '5000', name: 'Expenses', type: 'expense' },
-        { number: '5100', name: 'Intercompany expenses', type: 'expense' },
+        ...MINIMAL_GL_ACCOUNTS_DATA.map((row) => ({ ...row })),
+        { accountNumber: '1500', accountName: 'Receivables from affiliate', accountType: 'asset',     balance: 0, status: 'active' },
+        { accountNumber: '2500', accountName: 'Payables to affiliate',      accountType: 'liability', balance: 0, status: 'active' },
+        { accountNumber: '4100', accountName: 'Intercompany revenue',       accountType: 'revenue',   balance: 0, status: 'active' },
+        { accountNumber: '5100', accountName: 'Intercompany expenses',      accountType: 'expense',   balance: 0, status: 'active' },
       ];
 
-      const accountsByEntity: Record<string, Array<Record<string, unknown>>> = {};
-
+      const accountsByEntity: Record<string, Array<{ id: string; accountName: string }>> = {};
       for (const entityId of entityIds) {
-        const accounts = [];
-        for (const account of chartOfAccounts) {
-          const glAccount = await this.createDocument('gl-accounts', {
-            tenant: entityId,
-            accountNumber: account.number,
-            accountName: account.name,
-            accountType: account.type,
-            balance: 0,
-            status: 'active',
-          });
-          accounts.push(glAccount);
-        }
-        accountsByEntity[entityId] = accounts;
+        const created = await this.createDocuments(
+          'gl-accounts',
+          chartOfAccounts.map((a) => ({ ...a, tenant: entityId })),
+        );
+        accountsByEntity[entityId] = created.map((d) => ({ id: d.id, accountName: d.accountName }));
       }
 
-      // 3. Create opening balances for each entity
+      const find = (entityId: string, name: string): string => {
+        const acct = accountsByEntity[entityId].find((a) => a.accountName === name);
+        if (!acct) throw new Error(`Account "${name}" missing on ${entityId}`);
+        return acct.id;
+      };
+
+      // 3. Opening balances per entity
       for (let i = 0; i < entityIds.length; i++) {
         const entityId = entityIds[i];
-        const accounts = accountsByEntity[entityId];
-
         await this.createDocument('journal-entries', {
-          tenant: entityId,
-          entryDate: monthStart,
+          tenant: entityId, entryDate: monthStart,
           reference: `JE-OPENING-${i + 1}`,
           description: `Opening balance for ${i + 1}`,
-          debitAccountId: accounts[0].id,
-          creditAccountId: accounts[4].id,
-          debitAmount: 100000,
-          creditAmount: 100000,
-          status: 'posted',
+          debitAccountId: find(entityId, 'Cash'),
+          creditAccountId: find(entityId, 'Equity'),
+          debitAmount: 100000, creditAmount: 100000, status: 'posted',
         });
       }
 
-      // 4. Create inter-company transactions
+      // 4. Intercompany sales (entity i → entity i+1)
+      const icAmount = 50000;
+      const icDateStr = ymd(addDays(baseDate, 10));
       for (let i = 0; i < entityIds.length - 1; i++) {
-        const fromEntityId = entityIds[i];
-        const toEntityId = entityIds[i + 1];
-        const fromAccounts = accountsByEntity[fromEntityId];
-        const toAccounts = accountsByEntity[toEntityId];
-
-        const txDate = new Date(baseDate);
-        txDate.setDate(txDate.getDate() + 10);
-        const txDateStr = txDate.toISOString().split('T')[0];
-
-        const amount = 50000;
+        const fromId = entityIds[i];
+        const toId = entityIds[i + 1];
 
         await this.createDocument('journal-entries', {
-          tenant: fromEntityId,
-          entryDate: txDateStr,
-          reference: `JE-IC-${i + 1}`,
-          description: `Intercompany sale to Entity ${i + 2}`,
-          debitAccountId: fromAccounts[1].id,
-          creditAccountId: fromAccounts[6].id,
-          debitAmount: amount,
-          creditAmount: amount,
-          status: 'posted',
+          tenant: fromId, entryDate: icDateStr,
+          reference: `JE-IC-${i + 1}`, description: `Intercompany sale to Entity ${i + 2}`,
+          debitAccountId: find(fromId, 'Receivables from affiliate'),
+          creditAccountId: find(fromId, 'Intercompany revenue'),
+          debitAmount: icAmount, creditAmount: icAmount, status: 'posted',
         });
-
         await this.createDocument('journal-entries', {
-          tenant: toEntityId,
-          entryDate: txDateStr,
-          reference: `JE-IC-${i + 2}`,
-          description: `Intercompany purchase from Entity ${i + 1}`,
-          debitAccountId: toAccounts[8].id,
-          creditAccountId: toAccounts[3].id,
-          debitAmount: amount,
-          creditAmount: amount,
-          status: 'posted',
+          tenant: toId, entryDate: icDateStr,
+          reference: `JE-IC-${i + 2}`, description: `Intercompany purchase from Entity ${i + 1}`,
+          debitAccountId: find(toId, 'Intercompany expenses'),
+          creditAccountId: find(toId, 'Payables to affiliate'),
+          debitAmount: icAmount, creditAmount: icAmount, status: 'posted',
         });
-
         await this.createDocument('intercompany-transactions', {
-          fromHostId: fromEntityId,
-          toHostId: toEntityId,
-          transactionDate: txDateStr,
-          reference: `IC-${String(i + 1).padStart(3, '0')}`,
+          fromHostId: fromId, toHostId: toId, transactionDate: icDateStr,
+          reference: `IC-${pad3(i + 1)}`,
           description: `IC sale from Entity ${i + 1} to Entity ${i + 2}`,
-          debitAmount: amount,
-          creditAmount: amount,
-          status: 'posted',
+          debitAmount: icAmount, creditAmount: icAmount, status: 'posted',
         });
       }
 
-      // 5. Create consolidation trial balance
+      // 5. Per-entity trial balances + consolidated trial balance
       let consolidatedDebits = 0;
       let consolidatedCredits = 0;
-
       for (const entityId of entityIds) {
-        const _trialBalance = await this.createDocument('trial-balances', {
-          tenant: entityId,
-          periodDate: new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0).toISOString().split('T')[0],
-          totalDebits: 100000 + 50000,
-          totalCredits: 100000 + 50000,
-          status: 'unapproved',
+        await this.createDocument('trial-balances', {
+          tenant: entityId, periodDate: lastDay,
+          totalDebits: 150000, totalCredits: 150000, status: 'unapproved',
         });
-
-        consolidatedDebits += 100000 + 50000;
-        consolidatedCredits += 100000 + 50000;
+        consolidatedDebits += 150000;
+        consolidatedCredits += 150000;
       }
 
-      // 6. Create elimination entries
-      const lastDay = new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0).toISOString().split('T')[0];
-
+      // 6. Consolidation eliminations (revenue/expense + A/R-A/P)
       for (let i = 0; i < entityIds.length - 1; i++) {
-        const fromEntityId = entityIds[i];
-        const toEntityId = entityIds[i + 1];
-        const amount = 50000;
-
-        await this.createDocument('consolidation-eliminations', {
-          consolidationDate: lastDay,
-          eliminationType: 'intercompany-revenue-expense',
-          fromHostId: fromEntityId,
-          toHostId: toEntityId,
-          debitAmount: amount,
-          creditAmount: amount,
-          description: `Eliminate IC revenue/expense between Entity ${i + 1} and ${i + 2}`,
-          status: 'posted',
-        });
-
-        await this.createDocument('consolidation-eliminations', {
-          consolidationDate: lastDay,
-          eliminationType: 'intercompany-receivables-payables',
-          fromHostId: fromEntityId,
-          toHostId: toEntityId,
-          debitAmount: amount,
-          creditAmount: amount,
-          description: `Eliminate IC A/R and A/P between Entity ${i + 1} and ${i + 2}`,
-          status: 'posted',
-        });
+        const fromId = entityIds[i];
+        const toId = entityIds[i + 1];
+        for (const eliminationType of [
+          'intercompany-revenue-expense',
+          'intercompany-receivables-payables',
+        ]) {
+          await this.createDocument('consolidation-eliminations', {
+            consolidationDate: lastDay, eliminationType,
+            fromHostId: fromId, toHostId: toId,
+            debitAmount: icAmount, creditAmount: icAmount,
+            description: `Eliminate ${eliminationType} between Entity ${i + 1} and ${i + 2}`,
+            status: 'posted',
+          });
+        }
       }
 
-      // 7. Create consolidated trial balance
-      const _consolidatedTrialBalance = await this.createDocument('trial-balances', {
-        tenant: this.parentHostId,
-        periodDate: lastDay,
-        isConsolidated: true,
-        totalDebits: consolidatedDebits,
-        totalCredits: consolidatedCredits,
+      await this.createDocument('trial-balances', {
+        tenant: this.parentTenantId, periodDate: lastDay, isConsolidated: true,
+        totalDebits: consolidatedDebits, totalCredits: consolidatedCredits,
         status: 'unapproved',
       });
-
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'e2e',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    });
   }
 }
 
 /**
- * Real-World Scenario Seed
+ * Real-world edge cases: overdraft, FX rounding, prior-period adjustment,
+ * bulk transaction volume, failure + reversal, concurrent transactions.
  */
 export class RealWorldScenarioSeed extends TestSeedFactory {
-  private hostId: string = '';
-
-  constructor(payload: Payload, hostId: string) {
+  constructor(payload: Payload, private readonly tenantId: string) {
     super(payload);
-    this.hostId = hostId;
-  }
-
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    await super.validateData(collection, data);
-
-    if (collection === 'journal-entries') {
-      const debit = data.debitAmount || 0;
-      const credit = data.creditAmount || 0;
-      if (Math.abs(debit - credit) > 0.01) {
-        throw new Error('Journal entry: debits must equal credits');
-      }
-    }
-
-    if (collection === 'prior-period-adjustments') {
-      if (!data.adjustmentDate) {
-        throw new Error('PPA: adjustmentDate required');
-      }
-      if (!data.reason) {
-        throw new Error('PPA: reason required');
-      }
-    }
-
-    if (collection === 'rounding-adjustments') {
-      if ((data.debitAmount || 0) !== (data.creditAmount || 0)) {
-        throw new Error('Rounding: debits must equal credits');
-      }
-      if (!data.reason || !data.reason.includes('rounding')) {
-        throw new Error('Rounding: reason must specify rounding');
-      }
-    }
   }
 
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('e2e');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      const accounts = await this.queryDocuments('gl-accounts', {
-        tenant: this.hostId,
-      });
-
+    return this.runSeedLifecycle('e2e', async () => {
+      const accounts = await this.queryDocuments('gl-accounts', { tenant: this.tenantId });
       if (!accounts.docs || accounts.docs.length < 5) {
         throw new Error('Not enough GL accounts. Please seed Level 1 first.');
       }
 
       const baseDate = new Date();
       baseDate.setDate(1);
-      const monthStart = baseDate.toISOString().split('T')[0];
+      const monthStart = ymd(baseDate);
+      const monthEnd = ymd(lastDayOfMonth(baseDate));
+      const tenant = this.tenantId;
+      const cashId = accounts.docs[0].id;
+      const payablesId = accounts.docs[1].id;
+      const equityId = accounts.docs[2].id;
+      const revenueId = accounts.docs[3].id;
+      const expenseId = accounts.docs[4].id;
 
-      // 1. Negative balance (overdraft)
+      // 1. Overdraft (negative balance scenario)
       await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: monthStart,
-        reference: 'JE-OVERDRAFT',
+        tenant, entryDate: monthStart, reference: 'JE-OVERDRAFT',
         description: 'Bank overdraft scenario',
-        debitAccountId: accounts.docs[0].id,
-        creditAccountId: accounts.docs[2].id,
-        debitAmount: -50000,
-        creditAmount: -50000,
-        status: 'posted',
+        debitAccountId: cashId, creditAccountId: equityId,
+        debitAmount: -50000, creditAmount: -50000, status: 'posted',
       });
 
-      // 2. Rounding errors
-      const roundingDate = new Date(baseDate);
-      roundingDate.setDate(10);
-
+      // 2. FX rounding (5 transactions with 0.01-cent precision)
+      const roundingDate = ymd(addDays(baseDate, 9));
       for (let i = 1; i <= 5; i++) {
-        const amount = 1234.567 * i;
+        const amount = Math.round(1234.567 * i * 100) / 100;
         await this.createDocument('journal-entries', {
-          tenant: this.hostId,
-          entryDate: roundingDate.toISOString().split('T')[0],
-          reference: `JE-ROUND-${String(i).padStart(3, '0')}`,
+          tenant, entryDate: roundingDate,
+          reference: `JE-ROUND-${pad3(i)}`,
           description: `Transaction with rounding ${i}`,
-          debitAccountId: accounts.docs[0].id,
-          creditAccountId: accounts.docs[3].id,
-          debitAmount: Math.round(amount * 100) / 100,
-          creditAmount: Math.round(amount * 100) / 100,
-          status: 'posted',
+          debitAccountId: cashId, creditAccountId: revenueId,
+          debitAmount: amount, creditAmount: amount, status: 'posted',
         });
       }
 
-      // 3. Rounding adjustment
-      const roundingAdjustment = await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: new Date(baseDate.getFullYear(), baseDate.getMonth() + 1, 0).toISOString().split('T')[0],
-        reference: 'JE-ROUND-ADJUST',
+      // 3. Rounding adjustment + tracking row
+      await this.createDocument('journal-entries', {
+        tenant, entryDate: monthEnd, reference: 'JE-ROUND-ADJUST',
         description: 'Rounding adjustment for forex conversions',
-        debitAccountId: accounts.docs[0].id,
-        creditAccountId: accounts.docs[1].id,
-        debitAmount: 0.15,
-        creditAmount: 0.15,
-        status: 'posted',
+        debitAccountId: cashId, creditAccountId: payablesId,
+        debitAmount: 0.15, creditAmount: 0.15, status: 'posted',
       });
-
       await this.createDocument('rounding-adjustments', {
-        tenant: this.hostId,
-        adjustmentDate: roundingAdjustment.entryDate,
-        fromCurrency: 'USD',
-        toCurrency: 'EUR',
-        roundingAmount: 0.15,
+        tenant, adjustmentDate: monthEnd,
+        fromCurrency: 'USD', toCurrency: 'EUR', roundingAmount: 0.15,
         reason: 'Rounding on forex conversion for multiple transactions',
         status: 'posted',
       });
 
-      // 4. Prior period adjustment
-      const priorAdjustDate = new Date(baseDate);
-      priorAdjustDate.setMonth(priorAdjustDate.getMonth() - 1);
-      const priorAdjustDateStr = priorAdjustDate.toISOString().split('T')[0];
+      // 4. Prior-period adjustment (ASC-250 / IAS-8 §42)
+      const priorMonth = new Date(baseDate);
+      priorMonth.setMonth(priorMonth.getMonth() - 1);
+      const priorMonthStr = ymd(priorMonth);
 
       await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: monthStart,
-        reference: 'JE-PPA',
+        tenant, entryDate: monthStart, reference: 'JE-PPA',
         description: 'Prior period adjustment for inventory',
-        debitAccountId: accounts.docs[4].id,
-        creditAccountId: accounts.docs[0].id,
-        debitAmount: 25000,
-        creditAmount: 25000,
-        status: 'posted',
+        debitAccountId: expenseId, creditAccountId: cashId,
+        debitAmount: 25000, creditAmount: 25000, status: 'posted',
       });
-
       await this.createDocument('prior-period-adjustments', {
-        tenant: this.hostId,
-        adjustmentDate: priorAdjustDateStr,
-        postDate: monthStart,
+        tenant, adjustmentDate: priorMonthStr, postDate: monthStart,
         reference: 'JE-PPA',
         reason: 'Correction of prior period inventory count',
         impactedPeriods: ['2024-12'],
-        debitAccountId: accounts.docs[4].id,
-        creditAccountId: accounts.docs[0].id,
-        amount: 25000,
-        status: 'approved',
+        debitAccountId: expenseId, creditAccountId: cashId,
+        amount: 25000, status: 'approved',
       });
 
-      // 5. Large transaction volume
+      // 5. Bulk transaction volume (50 entries)
       for (let i = 1; i <= 50; i++) {
-        const txDate = new Date(baseDate);
-        txDate.setDate(Math.min(baseDate.getDate() + Math.floor(i / 2), 28));
-
+        const txDate = ymd(addDays(baseDate, Math.min(Math.floor(i / 2), 27)));
         const amount = 1000 + i * 10;
-
+        const debitFirst = i % 2 === 0;
         await this.createDocument('journal-entries', {
-          tenant: this.hostId,
-          entryDate: txDate.toISOString().split('T')[0],
-          reference: `JE-BULK-${String(i).padStart(4, '0')}`,
+          tenant, entryDate: txDate, reference: `JE-BULK-${pad4(i)}`,
           description: `Bulk transaction ${i}`,
-          debitAccountId: accounts.docs[i % 2 === 0 ? 0 : 4].id,
-          creditAccountId: accounts.docs[i % 2 === 0 ? 4 : 0].id,
-          debitAmount: amount,
-          creditAmount: amount,
-          status: 'posted',
+          debitAccountId: debitFirst ? cashId : expenseId,
+          creditAccountId: debitFirst ? expenseId : cashId,
+          debitAmount: amount, creditAmount: amount, status: 'posted',
         });
       }
 
-      // 6. Failed transaction scenario
-      const _failedTx = await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: monthStart,
-        reference: 'JE-FAILED',
-        description: 'Failed transaction (pending reversal)',
-        debitAccountId: accounts.docs[0].id,
-        creditAccountId: accounts.docs[3].id,
-        debitAmount: 10000,
-        creditAmount: 10000,
-        status: 'error',
-      });
-
+      // 6. Failure + reversal flow
       await this.createDocument('journal-entries', {
-        tenant: this.hostId,
-        entryDate: monthStart,
-        reference: 'JE-REVERSAL',
+        tenant, entryDate: monthStart, reference: 'JE-FAILED',
+        description: 'Failed transaction (pending reversal)',
+        debitAccountId: cashId, creditAccountId: revenueId,
+        debitAmount: 10000, creditAmount: 10000, status: 'error',
+      });
+      await this.createDocument('journal-entries', {
+        tenant, entryDate: monthStart, reference: 'JE-REVERSAL',
         description: 'Reversal of failed transaction JE-FAILED',
-        debitAccountId: accounts.docs[3].id,
-        creditAccountId: accounts.docs[0].id,
-        debitAmount: 10000,
-        creditAmount: 10000,
-        status: 'posted',
+        debitAccountId: revenueId, creditAccountId: cashId,
+        debitAmount: 10000, creditAmount: 10000, status: 'posted',
       });
-
       await this.createDocument('transaction-failures', {
-        tenant: this.hostId,
-        transactionDate: monthStart,
-        reference: 'JE-FAILED',
-        reason: 'Insufficient funds',
-        statusCode: 'INSUFFICIENT_FUNDS',
-        reversalReference: 'JE-REVERSAL',
-        status: 'resolved',
+        tenant, transactionDate: monthStart, reference: 'JE-FAILED',
+        reason: 'Insufficient funds', statusCode: 'INSUFFICIENT_FUNDS',
+        reversalReference: 'JE-REVERSAL', status: 'resolved',
       });
 
-      // 7. Concurrent transactions
-      const concurrentDate = new Date(baseDate);
-      concurrentDate.setDate(15);
-      const concurrentDateStr = concurrentDate.toISOString().split('T')[0];
-
+      // 7. Concurrent transactions (10 entries on the same date)
+      const concurrentDate = ymd(addDays(baseDate, 14));
       for (let i = 1; i <= 10; i++) {
+        const debitFirst = i % 5 === 0;
         await this.createDocument('journal-entries', {
-          tenant: this.hostId,
-          entryDate: concurrentDateStr,
-          reference: `JE-CONCURRENT-${String(i).padStart(3, '0')}`,
+          tenant, entryDate: concurrentDate,
+          reference: `JE-CONCURRENT-${pad3(i)}`,
           description: `Concurrent transaction ${i}`,
-          debitAccountId: accounts.docs[i % 5 === 0 ? 0 : 4].id,
-          creditAccountId: accounts.docs[i % 5 === 0 ? 4 : 0].id,
-          debitAmount: 5000,
-          creditAmount: 5000,
-          status: 'posted',
+          debitAccountId: debitFirst ? cashId : expenseId,
+          creditAccountId: debitFirst ? expenseId : cashId,
+          debitAmount: 5000, creditAmount: 5000, status: 'posted',
         });
       }
-
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'e2e',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    });
   }
 }
 
 /**
- * Level 3 Seed Suite - Orchestrator
+ * Level-3 orchestrator — looks up (or creates) the test tenant, ensures the
+ * Level-1 chart-of-accounts is present, then runs every sub-seed and
+ * aggregates their createdIds for unified cleanup.
  */
 export class Level3SeedSuite extends TestSeedFactory {
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('e2e');
-    const startTime = Date.now();
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      const hosts = await this.queryDocuments('hosts', {
-        code: 'TEST_HOST',
-      });
-
-      let hostId: string;
-      if (hosts.docs && hosts.docs.length > 0) {
-        hostId = hosts.docs[0].id;
+    return this.runSeedLifecycle('e2e', async () => {
+      // Tenant lookup — collection slug is `'tenants'` (Decision B + Slice HHH
+      // pending). The local var reflects the actual semantics.
+      const tenants = await this.queryDocuments('tenants', { code: 'TEST_TENANT' });
+      let tenantId: string;
+      if (tenants.docs && tenants.docs.length > 0) {
+        tenantId = tenants.docs[0].id;
       } else {
-        const host = await this.createDocument('hosts', {
-          name: 'Level 3 Test Host',
-          code: 'TEST_HOST_L3',
-          status: 'active',
+        const tenant = await this.createDocument('tenants', {
+          name: 'Level 3 Test Tenant', code: 'TEST_TENANT_L3', status: 'active',
         });
-        hostId = host.id;
+        tenantId = tenant.id;
       }
+      this.trackCreatedId('tenants', tenantId);
 
-      const glAccounts = await this.queryDocuments('gl-accounts', {
-        hostId,
-      });
-
+      // Ensure chart of accounts exists — reuse Level-1's canonical fixture
+      // so the schema for "minimal CoA" lives in one place.
+      const glAccounts = await this.queryDocuments('gl-accounts', { tenant: tenantId });
       if (!glAccounts.docs || glAccounts.docs.length < 5) {
-        const chartOfAccounts = [
-          { accountNumber: '1000', accountName: 'Cash', accountType: 'asset', balance: 0 },
-          { accountNumber: '2000', accountName: 'Accounts Payable', accountType: 'liability', balance: 0 },
-          { accountNumber: '3000', accountName: 'Equity', accountType: 'equity', balance: 0 },
-          { accountNumber: '4000', accountName: 'Revenue', accountType: 'revenue', balance: 0 },
-          { accountNumber: '5000', accountName: 'Expenses', accountType: 'expense', balance: 0 },
-        ];
-
-        for (const account of chartOfAccounts) {
-          await this.createDocument('gl-accounts', {
-            hostId,
-            ...account,
-            status: 'active',
-          });
-        }
+        await this.createDocuments(
+          'gl-accounts',
+          MINIMAL_GL_ACCOUNTS_DATA.map((row) => ({ ...row, tenant: tenantId })),
+        );
       }
 
-      // Run all sub-seeds
-      const cycleSeed = new FullAccountingCycleSeed(this.payload, hostId);
-      const cycleResult = await cycleSeed.seed();
-
-      if (!cycleResult.success) {
-        throw cycleResult.error || new Error('Accounting Cycle Seed failed');
+      // Sub-seeds in dependency order; mergeChildContext aggregates cleanup ids.
+      const children = [
+        new FullAccountingCycleSeed(this.payload, tenantId),
+        new MultiEntitySeed(this.payload, tenantId),
+        new RealWorldScenarioSeed(this.payload, tenantId),
+      ];
+      for (const child of children) {
+        const result = await child.seed();
+        if (!result.success) throw result.error;
+        this.mergeChildContext(child);
       }
-
-      if (cycleSeed['context']) {
-        for (const [collection, ids] of cycleSeed['context'].createdIds) {
-          if (!this.context.createdIds.has(collection)) {
-            this.context.createdIds.set(collection, new Set());
-          }
-          for (const id of ids) {
-            this.context.createdIds.get(collection)!.add(id);
-          }
-        }
-      }
-
-      const multiEntitySeed = new MultiEntitySeed(this.payload, hostId);
-      const multiEntityResult = await multiEntitySeed.seed();
-
-      if (!multiEntityResult.success) {
-        throw multiEntityResult.error || new Error('Multi-Entity Seed failed');
-      }
-
-      if (multiEntitySeed['context']) {
-        for (const [collection, ids] of multiEntitySeed['context'].createdIds) {
-          if (!this.context.createdIds.has(collection)) {
-            this.context.createdIds.set(collection, new Set());
-          }
-          for (const id of ids) {
-            this.context.createdIds.get(collection)!.add(id);
-          }
-        }
-      }
-
-      const scenarioSeed = new RealWorldScenarioSeed(this.payload, hostId);
-      const scenarioResult = await scenarioSeed.seed();
-
-      if (!scenarioResult.success) {
-        throw scenarioResult.error || new Error('Real-World Scenario Seed failed');
-      }
-
-      if (scenarioSeed['context']) {
-        for (const [collection, ids] of scenarioSeed['context'].createdIds) {
-          if (!this.context.createdIds.has(collection)) {
-            this.context.createdIds.set(collection, new Set());
-          }
-          for (const id of ids) {
-            this.context.createdIds.get(collection)!.add(id);
-          }
-        }
-      }
-
-      const stats = this.getStats();
-      const totalTime = Date.now() - startTime;
-
-      if (this.hooks.afterSeed) {
-        const result: SeedResult = {
-          success: true,
-          seedLevel: 'e2e',
-          totalTime,
-          itemsCreated: stats.itemsCreated,
-          collections: stats.collections,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        seedLevel: 'e2e',
-        totalTime,
-        itemsCreated: stats.itemsCreated,
-        collections: stats.collections,
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'e2e',
-        totalTime: Date.now() - startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    });
   }
 }
+
+// ─── UI-category registration ────────────────────────────────────────────
+//
+// Level-3 seeds are evidence-heavy by design — full accounting cycles,
+// multi-entity consolidation, real-world edge cases. They produce admin-data
+// rows but their primary purpose is the SOX §404 / ISO-19011 evidence pack.
+
+registerSeedCategory({
+  id: 'level-3.full-accounting-cycle',
+  category: 'compliance-evidence',
+  description: 'Open → AR → AP → adjusting entries → trial balance → IS/BS → bank reconciliation.',
+  ctor: FullAccountingCycleSeed,
+});
+registerSeedCategory({
+  id: 'level-3.multi-entity',
+  category: 'compliance-evidence',
+  description: 'Three subsidiaries + intercompany sales + consolidation eliminations.',
+  ctor: MultiEntitySeed,
+});
+registerSeedCategory({
+  id: 'level-3.real-world-scenario',
+  category: 'compliance-evidence',
+  description: 'Overdraft + FX rounding + prior-period adj + bulk volume + failure/reversal flow.',
+  ctor: RealWorldScenarioSeed,
+});
+registerSeedCategory({
+  id: 'level-3.suite',
+  category: 'compliance-evidence',
+  description: 'Composes all Level-3 e2e seeds; one cleanup tears the whole graph down.',
+  ctor: Level3SeedSuite,
+});

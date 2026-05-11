@@ -7,4 +7,4 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-export * from './host-scope';
+export * from './tenant-scope';

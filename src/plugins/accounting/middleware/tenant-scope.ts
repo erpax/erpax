@@ -1,5 +1,5 @@
 /**
- * Host Scope Middleware — enforce GL-posting tenant isolation.
+ * Tenant Scope Middleware — enforce GL-posting tenant isolation.
  *
  * @deprecated Slices PP+CCC+FFF: this middleware was the only writer to
  * `req.payload.requestContext.hostId`, but that property was never wired
@@ -27,7 +27,7 @@ interface MiddlewareResponse {
 }
 type MiddlewareNext = () => void
 
-export const hostScopeMiddleware = async (
+export const tenantScopeMiddleware = async (
   req: PayloadRequest,
   res: MiddlewareResponse,
   next: MiddlewareNext,
@@ -57,7 +57,7 @@ export const hostScopeMiddleware = async (
  * within the current tenant. Used by `glPostingService` to ensure
  * multi-tenant isolation.
  */
-export const validateHostScope = (
+export const validateTenantScope = (
   requestTenantId: string | number | undefined,
   documentTenantId: string | number | undefined,
 ): boolean => {
@@ -70,7 +70,7 @@ export const validateHostScope = (
  * Enrich a GL entry with tenant context — automatically adds `tenant`
  * before posting. Field name updated to match the post-Slice-CCC schema.
  */
-export const enrichGLEntryWithHostContext = <T extends Record<string, unknown>>(
+export const enrichGLEntryWithTenantContext = <T extends Record<string, unknown>>(
   glEntry: T,
   tenantId: string | number,
 ): T & { tenant: string | number; createdAt: Date } => {

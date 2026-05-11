@@ -1,6 +1,8 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 import { itemsBeforeValidate } from './hooks/beforeValidate'
 import { itemsAfterChange } from './hooks/afterChange'
@@ -20,7 +22,7 @@ export const Items: CollectionConfig = {
   slug: 'items',
   admin: {
     useAsTitle: 'code',
-    defaultColumns: ['code', 'address', 'price', 'unit', 'taxRate', 'inventoryQuantity'],
+    defaultColumns: ['code', 'address', 'pricing.price', 'taxation.taxRate', 'inventory.inventoryQuantity'],
     group: 'Inventory',
   },
   // Slice MMM (DRY): inline predicates replaced with canonical helpers.
@@ -33,9 +35,14 @@ export const Items: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: itemsBeforeValidate,
-    afterChange: itemsAfterChange,
+    // AAAAA-cont (2026-05-11): canonical hook chain — autoPopulateTenant
+    // first (so all subsequent hooks see ctx.tenant), then domain
+    // beforeValidate, then auditTrailAfterChange composed with the
+    // domain afterChange.
+    beforeValidate: [autoPopulateTenant, ...itemsBeforeValidate],
+    afterChange: [...itemsAfterChange, auditTrailAfterChange('items')],
   },
+  timestamps: true,
   fields: [
     {
       name: 'code',

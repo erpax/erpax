@@ -7,7 +7,7 @@
  * pure functions over `gl-accounts` + `journal-entries` queries.
  *
  * Each function:
- *   • takes a Payload instance, host id, and a date or period
+ *   • takes a Payload instance, tenant id, and a date or period
  *   • runs read-only queries (no side effects)
  *   • returns a typed DTO suitable for serving from a custom Payload endpoint
  *   • is independently testable with fixtures (no Map<>, no in-memory state)
@@ -53,7 +53,7 @@ export interface TrialBalanceRow {
 }
 
 export interface TrialBalanceDTO {
-  hostId: string | number
+  tenantId: string | number
   asOfDate: string                 // ISO 8601
   rows: TrialBalanceRow[]
   totalDebits: number
@@ -64,7 +64,7 @@ export interface TrialBalanceDTO {
 }
 
 export interface AgingReportDTO {
-  hostId: string | number
+  tenantId: string | number
   asOfDate: string
   buckets: AgingBucket[]
   totalOutstanding: number
@@ -80,7 +80,7 @@ export interface BalanceSheetSection {
 }
 
 export interface BalanceSheetDTO {
-  hostId: string | number
+  tenantId: string | number
   asOfDate: string
   assets: BalanceSheetSection
   liabilities: BalanceSheetSection
@@ -93,7 +93,7 @@ export interface BalanceSheetDTO {
 }
 
 export interface IncomeStatementDTO {
-  hostId: string | number
+  tenantId: string | number
   periodStart: string
   periodEnd: string
   revenue: BalanceSheetSection
@@ -175,14 +175,14 @@ function netBalance(row: { totalDebits: number; totalCredits: number; normalBala
  */
 export async function generateTrialBalance(
   payload: Payload,
-  hostId: string | number,
+  tenantId: string | number,
   asOfDate: Date,
   currency = 'EUR',
 ): Promise<TrialBalanceDTO> {
   const [accounts, entries] = await Promise.all([
     payload.find({
       collection: 'gl-accounts',
-      where: { and: [{ hostId: { equals: hostId } }] },
+      where: { and: [{ tenant: { equals: tenantId } }] },
       limit: 10000,
       depth: 0,
     }),
@@ -190,7 +190,7 @@ export async function generateTrialBalance(
       collection: 'journal-entries',
       where: {
         and: [
-          { hostId: { equals: hostId } },
+          { tenant: { equals: tenantId } },
           { status: { equals: 'posted' } },
           { entryDate: { less_than_equal: asOfDate.toISOString() } },
         ],
@@ -220,7 +220,7 @@ export async function generateTrialBalance(
   const totalDebits = rows.reduce((s, r) => s + r.totalDebits, 0)
   const totalCredits = rows.reduce((s, r) => s + r.totalCredits, 0)
   return {
-    hostId,
+    tenantId,
     asOfDate: asOfDate.toISOString(),
     rows: rows.sort((a, b) => a.accountNumber.localeCompare(b.accountNumber)),
     totalDebits,
@@ -234,11 +234,11 @@ export async function generateTrialBalance(
 /** Balance Sheet — Assets / Liabilities / Equity from the trial balance. */
 export async function generateBalanceSheet(
   payload: Payload,
-  hostId: string | number,
+  tenantId: string | number,
   asOfDate: Date,
   currency = 'EUR',
 ): Promise<BalanceSheetDTO> {
-  const tb = await generateTrialBalance(payload, hostId, asOfDate, currency)
+  const tb = await generateTrialBalance(payload, tenantId, asOfDate, currency)
 
   const section = (name: string, types: TrialBalanceRow['accountType'][]): BalanceSheetSection => {
     const accounts = tb.rows.filter((r) => types.includes(r.accountType) && r.balance !== 0)
@@ -250,7 +250,7 @@ export async function generateBalanceSheet(
   const equity = section('Equity', ['equity'])
 
   return {
-    hostId,
+    tenantId,
     asOfDate: asOfDate.toISOString(),
     assets,
     liabilities,
@@ -266,7 +266,7 @@ export async function generateBalanceSheet(
 /** Income Statement (P&L) — Revenue − Expenses for a period. */
 export async function generateIncomeStatement(
   payload: Payload,
-  hostId: string | number,
+  tenantId: string | number,
   periodStart: Date,
   periodEnd: Date,
   currency = 'EUR',
@@ -276,7 +276,7 @@ export async function generateIncomeStatement(
       collection: 'gl-accounts',
       where: {
         and: [
-          { hostId: { equals: hostId } },
+          { tenant: { equals: tenantId } },
           { accountType: { in: ['revenue', 'expense', 'gain_loss'] } },
         ],
       },
@@ -287,7 +287,7 @@ export async function generateIncomeStatement(
       collection: 'journal-entries',
       where: {
         and: [
-          { hostId: { equals: hostId } },
+          { tenant: { equals: tenantId } },
           { status: { equals: 'posted' } },
           { entryDate: { greater_than_equal: periodStart.toISOString() } },
           { entryDate: { less_than_equal: periodEnd.toISOString() } },
@@ -321,7 +321,7 @@ export async function generateIncomeStatement(
   const totalExpenses = expenseAccounts.reduce((s, a) => s + a.balance, 0)
 
   return {
-    hostId,
+    tenantId,
     periodStart: periodStart.toISOString(),
     periodEnd: periodEnd.toISOString(),
     revenue: { name: 'Revenue', accounts: revenueAccounts, total: totalRevenue },
@@ -342,7 +342,7 @@ export async function generateIncomeStatement(
  */
 export async function generateARAgingReport(
   payload: Payload,
-  hostId: string | number,
+  tenantId: string | number,
   asOfDate: Date,
   buckets?: BucketDefinition[],
 ): Promise<AgingReportDTO> {
@@ -350,7 +350,7 @@ export async function generateARAgingReport(
     collection: 'invoices',
     where: {
       and: [
-        { tenant: { equals: hostId } },
+        { tenant: { equals: tenantId } },
         { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
       ],
     },
@@ -371,7 +371,7 @@ export async function generateARAgingReport(
 
   const result = computeAgingBuckets(docs, asOfDate, buckets)
   return {
-    hostId,
+    tenantId,
     asOfDate: asOfDate.toISOString(),
     buckets: result.buckets,
     totalOutstanding: result.totalOutstanding,
@@ -387,7 +387,7 @@ export async function generateARAgingReport(
  */
 export async function generateAPAgingReport(
   payload: Payload,
-  hostId: string | number,
+  tenantId: string | number,
   asOfDate: Date,
   buckets?: BucketDefinition[],
 ): Promise<AgingReportDTO> {
@@ -395,7 +395,7 @@ export async function generateAPAgingReport(
     collection: 'invoices',
     where: {
       and: [
-        { tenant: { equals: hostId } },
+        { tenant: { equals: tenantId } },
         { invoiceType: { equals: 'bill' } },
         { status: { in: ['issued', 'open', 'past_due', 'grace_period'] } },
       ],
@@ -417,7 +417,7 @@ export async function generateAPAgingReport(
 
   const result = computeAgingBuckets(docs, asOfDate, buckets)
   return {
-    hostId,
+    tenantId,
     asOfDate: asOfDate.toISOString(),
     buckets: result.buckets,
     totalOutstanding: result.totalOutstanding,

@@ -7,11 +7,20 @@ import { invoiceAccountingHook } from '@/plugins/accounting/hooks'
 import { validateNotLocked } from '@/plugins/accounting/utilities/period-lock'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
+import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
+ *
+ * Slice YYYY (2026-05-10): `status` promoted from `typeStatus.status` to
+ * a top-level convenience field — every consumer (chain seeds, hooks,
+ * GL handlers, dunning) needs a flat `status` lookup, and the prior
+ * grouped-only form was the silent-bug source surfaced by the
+ * seed-vs-schema invariant. `typeStatus.invoiceType + .invoiceTypeCode +
+ * .confirmed` remain inside the canonical group.
  *
  * The canonical types live in `@/standards/en-16931`:
  *   InvoiceHeader (BG-1 subset)  — invoice envelope
@@ -58,7 +67,7 @@ export const Invoices: CollectionConfig = {
   slug: 'invoices',
   admin: {
     useAsTitle: 'number',
-    defaultColumns: ['number', 'invoiceType', 'seller', 'buyer', 'date', 'status', 'totalAmount'],
+    defaultColumns: ['number', 'typeStatus.invoiceType', 'parties.seller', 'parties.buyer', 'dates.date', 'status', 'amounts.totalAmount'],
     group: 'Billing',
   },
   // Slice MMM (DRY): inline predicates replaced with canonical helpers.
@@ -73,10 +82,16 @@ export const Invoices: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: [autoPopulateHost],
+    beforeValidate: [autoPopulateTenant],
     beforeChange: [validateNotLocked],
-    afterChange: [invoiceAccountingHook],
+    // AAAAA-cont (2026-05-11): wired the canonical audit-trail emission
+    // alongside the GL-posting hook. The auditTrailAfterChange call
+    // makes every invoice mutation queryable from the auditor's console
+    // (ISO 19011 §6.4.6 evidence) — was missing despite the JSDoc
+    // banner declaring `@audit ISO-19011:2018 audit-trail`.
+    afterChange: [invoiceAccountingHook, auditTrailAfterChange('invoices')],
   },
+  timestamps: true,
   fields: [
     {
       type: 'group',
@@ -129,28 +144,35 @@ export const Invoices: CollectionConfig = {
           },
         },
         {
-          name: 'status',
-          type: 'select',
-          options: [
-            { label: 'Draft', value: 'draft' },
-            { label: 'Issued', value: 'issued' },
-            { label: 'Confirmed', value: 'confirmed' },
-            { label: 'Open', value: 'open' },
-            { label: 'Past Due', value: 'past_due' },
-            { label: 'Grace Period', value: 'grace_period' },
-            { label: 'Cancelled', value: 'cancelled' },
-            { label: 'Complete', value: 'complete' },
-          ],
-          index: true,
-          admin: { description: 'Current status' },
-        },
-        {
           name: 'confirmed',
           type: 'checkbox',
           defaultValue: false,
           admin: { description: 'Confirmed by parties' },
         },
       ],
+    },
+    // Slice YYYY: `status` promoted to top-level. Every consumer (chain
+    // seeds, hooks, GL handlers, dunning, peppol-export) reads
+    // `invoice.status` directly — keeping it inside the `typeStatus`
+    // group meant `invoice.status === undefined` everywhere.
+    {
+      name: 'status',
+      type: 'select',
+      defaultValue: 'draft',
+      index: true,
+      options: [
+        { label: 'Draft', value: 'draft' },
+        { label: 'Issued', value: 'issued' },
+        { label: 'Confirmed', value: 'confirmed' },
+        { label: 'Open', value: 'open' },
+        { label: 'Active', value: 'active' },
+        { label: 'Past Due', value: 'past_due' },
+        { label: 'Grace Period', value: 'grace_period' },
+        { label: 'Paid', value: 'paid' },
+        { label: 'Cancelled', value: 'cancelled' },
+        { label: 'Complete', value: 'complete' },
+      ],
+      admin: { description: 'Current status (top-level for consumer access).' },
     },
     {
       name: 'number',
@@ -433,20 +455,11 @@ export const Invoices: CollectionConfig = {
       },
       fields: [
         {
+          // Canonical 9-code list lives in `src/standards/un-cefact-5305/`.
           name: 'categoryCode',
           type: 'select',
           required: true,
-          options: [
-            { label: 'S — Standard rate', value: 'S' },
-            { label: 'Z — Zero rated', value: 'Z' },
-            { label: 'E — Exempt', value: 'E' },
-            { label: 'AE — Reverse charge', value: 'AE' },
-            { label: 'K — Intra-community', value: 'K' },
-            { label: 'G — Export outside EU', value: 'G' },
-            { label: 'O — Out of scope', value: 'O' },
-            { label: 'L — Canary IGIC', value: 'L' },
-            { label: 'M — Ceuta/Melilla IPSI', value: 'M' },
-          ],
+          options: [...VAT_CATEGORY_OPTIONS],
           admin: { description: 'BT-118 — VAT category code (UN/CEFACT 5305).' },
         },
         {

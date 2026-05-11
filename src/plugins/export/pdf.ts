@@ -1,15 +1,38 @@
 /**
- * PDF Export Service — Puppeteer-driven PDF generation.
+ * PDF Export Service — Puppeteer-driven PDF generation with PDF/A archival
+ * profile + optional PDF/UA accessibility declarations sourced from the
+ * standards modules.
+ *
+ * Two-stage flow:
+ *
+ *   1. Puppeteer renders the HTML to PDF.
+ *   2. The XMP packet from `@/standards/iso-19005` is exposed via
+ *      `getPdfAMetadata()` so a downstream PDF/A converter (qpdf,
+ *      ghostscript, veraPDF Greenfield) can inject it into `/Metadata`.
+ *      Puppeteer alone does NOT produce a PDF/A-conforming file — the
+ *      post-process is operational infrastructure (per-deployment) but
+ *      the metadata it injects is governed here.
  *
  * @standard ISO-32000-2:2020 pdf
+ * @standard ISO-19005-2:2011 pdf-a-2
+ * @standard ISO-19005-3:2012 pdf-a-3
+ * @standard ISO-14289-1:2014 pdf-ua-1
  * @standard W3C HTML5 source-rendering
  * @standard W3C CSS Print
  * @rfc 6838 mime-type application/pdf
- * @audit ISO-19011:2018 audit-trail
+ * @audit ISO-19011:2018 audit-trail document-archival-evidence
+ * @compliance EU 2014/55 b2g-procurement-accessibility
  * @see docs/STANDARDS.md §5
+ * @see src/standards/iso-19005
+ * @see src/standards/iso-14289
  */
 
 import * as fs from 'fs'
+
+import { buildPdfAXmp, PDF_A_DEFAULT } from '@/standards/iso-19005'
+import type { PdfAProfile } from '@/standards/iso-19005'
+import { PDF_UA_DEFAULT } from '@/standards/iso-14289'
+import type { PdfUaProfile } from '@/standards/iso-14289'
 
 import { ExportOptions, ExportResult, FinancialStatement } from './types'
 
@@ -77,6 +100,37 @@ export class PDFExporter {
         error: error instanceof Error ? error.message : String(error),
       }
     }
+  }
+
+  /**
+   * Build the XMP metadata packet a downstream PDF/A converter must inject
+   * into the rendered PDF's `/Metadata` stream so the document declares
+   * its archival + accessibility profile per ISO 19005 / ISO 14289.
+   *
+   * Defaults to PDF/A-2b + PDF/UA-1 — the dual baseline B2G procurement
+   * accepts. Override via `options.pdfA` / `options.pdfUa` to opt into
+   * PDF/A-3 hybrid (for embedded e-invoice XML) or skip the accessibility
+   * declaration on docs that aren't user-facing.
+   *
+   * @standard ISO-19005-2:2011 pdf-a-2
+   * @standard ISO-14289-1:2014 pdf-ua-1
+   * @compliance EU 2014/55 b2g-procurement-accessibility
+   */
+  static buildArchivalMetadata(
+    statement: FinancialStatement,
+    options: ExportOptions & {
+      pdfA?: PdfAProfile | null
+      pdfUa?: PdfUaProfile | null
+    },
+  ): string {
+    const pdfA = options.pdfA === undefined ? PDF_A_DEFAULT : options.pdfA
+    const pdfUa = options.pdfUa === undefined ? PDF_UA_DEFAULT : options.pdfUa
+    return buildPdfAXmp({
+      title: statement.title,
+      description: statement.subtitle,
+      profile: pdfA ?? undefined,
+      accessibility: pdfUa ?? undefined,
+    })
   }
 
   /**

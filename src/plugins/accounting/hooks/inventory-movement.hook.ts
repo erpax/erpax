@@ -143,6 +143,12 @@ export const inventoryMovementPostingHook: CollectionAfterChangeHook = async ({
         toLocationId: idOf(mv.toLocation),
         movementAt: new Date(mv.movementAt ?? new Date()),
         currencyCode: String(mv.currency ?? 'EUR'),
+        // Slice QQQ: thread the IAS-2 §25 cost-formula election so the
+        // GL handler picks the right unitCost basis. Defaults to
+        // weighted_average when the movement row predates Slice QQQ.
+        valuationMethod:
+          (mv as { valuationMethod?: 'fifo' | 'weighted_average' | 'specific_identification' })
+            .valuationMethod ?? 'weighted_average',
       },
     }
 

@@ -6,6 +6,6 @@
  * @see docs/STANDARDS.md §4.1
  */
 
-import { autoPopulateHost } from '@/hooks/autoPopulateHost'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 
-export const paymentsBeforeValidate = [autoPopulateHost]
+export const paymentsBeforeValidate = [autoPopulateTenant]

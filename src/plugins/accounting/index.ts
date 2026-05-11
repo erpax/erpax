@@ -82,7 +82,7 @@ export * from './factories'
 export * from './utilities'
 
 // Multi-tenancy + request-context utilities — Slice PPP+SSS:
-// `./middleware` (host-scope) had zero callers (PP) and was queued for
+// `./middleware` (tenant-scope) had zero callers (PP) and was queued for
 // deletion, so the re-export is gone. Use `@/plugins/auth/access.ts`
 // `getUserContext` for the canonical request-tenant derivation.
 

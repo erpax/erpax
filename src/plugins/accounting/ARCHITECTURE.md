@@ -9,8 +9,8 @@ The Accounting Plugin implements strict DRY (Don't Repeat Yourself) principles a
 ### Before (Repetitive Code)
 
 Each collection definition repeated:
-- 200+ lines of common fields (hostId, currency, GL accounts, status, timestamps)
-- 50+ lines of hook boilerplate (error handling, hostId extraction, logging)
+- 200+ lines of common fields (tenantId, currency, GL accounts, status, timestamps)
+- 50+ lines of hook boilerplate (error handling, tenantId extraction, logging)
 - Calculation logic duplicated across multiple beforeChange hooks
 - Access control rules duplicated in every collection
 
@@ -37,7 +37,7 @@ Each collection definition repeated:
 ```typescript
 // Before: 30+ lines in each collection
 const fields = [
-  { name: 'hostId', type: 'relationship', relationTo: 'hosts', required: true, admin: { hidden: true } },
+  { name: 'tenantId', type: 'relationship', relationTo: 'hosts', required: true, admin: { hidden: true } },
   { name: 'currency', type: 'select', defaultValue: 'EUR', options: [...] },
   // ... repeated 20 times
 ];
@@ -50,16 +50,16 @@ const fields = [
 ```
 
 **Exports**:
-- `multiTenancyField()` - hostId relationship
+- `multiTenancyField()` - tenantId relationship
 - `glAccountField()` - GL account + denormalized fields
 - `currencyField()` - 10-currency selector
 - `statusField()` - Common accounting statuses
-- `auditFields()` - createdBy, approvedBy, approvedAt
+- `auditFields({ readOnly? })` - createdBy, approvedBy, approvedAt (pass `{ readOnly: true }` for collections that surface the approval lifecycle in the admin UI as visible-but-non-editable; default keeps approvedAt `disabled`)
 - `notesField()` - Standard notes textarea
 
 ### 2. Hooks Layer (`hooks/`)
 
-**Problem**: Hook logic duplicated (error handling, hostId extraction, logging)
+**Problem**: Hook logic duplicated (error handling, tenantId extraction, logging)
 
 **Solution**: Hook factory with consistent patterns
 
@@ -69,8 +69,8 @@ export const myHook: CollectionAfterChangeHook = async ({ doc, req, operation })
   if (!doc || operation !== 'create') return doc;
   try {
     const service = req.payload.services?.myService;
-    const hostId = req.payload.requestContext?.hostId || doc.hostId;
-    if (!hostId) return res.status(401).json(...);
+    const tenantId = req.payload.requestContext?.tenantId || doc.tenantId;
+    if (!tenantId) return res.status(401).json(...);
     // ... service call
   } catch (error) {
     console.error(`Error:`, error);
@@ -84,7 +84,7 @@ const myHook = createAccountingHook('myService', handler, shouldProcess);
 
 **Exports**:
 - `createAccountingHook()` - Factory for consistent hooks
-- `ensureHostId()` - Set hostId from request context
+- `ensureTenant()` - Set tenantId from request context
 - `calculateTotal()` - Sum array field
 - `calculatePercentage()` - Percentage calculation
 
@@ -96,14 +96,14 @@ const myHook = createAccountingHook('myService', handler, shouldProcess);
 
 ```typescript
 // Before: 100+ lines per collection
-const MyCollection: CollectionConfig = {
-  slug: 'my-collection',
-  labels: { singular: 'Item', plural: 'Items' },
+const TaxCodes: CollectionConfig = {
+  slug: 'tax-codes',
+  labels: { singular: 'Tax Code', plural: 'Tax Codes' },
   admin: { useAsTitle: 'id', defaultColumns: [...] },
   access: {
     read: async ({ req }) => {
       if (req.user?.role === 'admin') return true;
-      return { 'hostId.id': { equals: req.user?.hostId } };
+      return { 'tenantId.id': { equals: req.user?.tenantId } };
     },
     create: async ({ req }) => req.user?.role === 'admin' || req.user?.role === 'accountant',
     // ... repeated
@@ -114,10 +114,10 @@ const MyCollection: CollectionConfig = {
 };
 
 // After: 20 lines
-const MyCollection = {
+const TaxCodes = {
   ...createAccountingCollection({
-    slug: 'my-collection',
-    labels: { singular: 'Item', plural: 'Items' },
+    slug: 'tax-codes',
+    labels: { singular: 'Tax Code', plural: 'Tax Codes' },
     useAsTitle: 'id',
     defaultColumns: [...],
   }, () => [...fields]),
@@ -212,7 +212,7 @@ const BudgetPlanning = {
 ```typescript
 import {
   createAccountingHook,
-  ensureHostId,
+  ensureTenant,
 } from '@/plugins/accounting/hooks';
 import {
   calculateArrayTotal,
@@ -220,7 +220,7 @@ import {
 } from '@/plugins/accounting/utilities';
 
 const beforeChange = async ({ data, req }) => {
-  ensureHostId(data, req);
+  ensureTenant(data, req);
   data.totalBudget = calculateArrayTotal(data.items, 'amount');
   data.variancePercent = calculateVariancePercent(data.actual, data.budget);
   return data;

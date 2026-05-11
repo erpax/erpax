@@ -1,6 +1,8 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
 import { paymentsBeforeValidate } from './hooks/beforeValidate'
 import { paymentsBeforeChange } from './hooks/beforeChange'
@@ -8,6 +10,15 @@ import { paymentsAfterChange } from './hooks/afterChange'
 
 /**
  * Payments — money-movement records with GL posting + period-lock guard.
+ *
+ * Slice YYYY (2026-05-10): added top-level `paymentKind` (received|sent
+ * — drives the AR vs AP GL handler dispatch in `payment.hook.ts`) and
+ * top-level `status` (the lifecycle state — defaultColumns referenced
+ * `status` but the field was missing). These were the two missing
+ * top-level fields the seed-vs-schema invariant surfaced; everything
+ * else (`amounts.amount`, `parties.{sender,receiver}`, `dates.*`) lives
+ * inside the canonical groups and is accessed via `doc.amounts.amount`
+ * etc. — flat aliases at the consumer layer were the silent-bug source.
  *
  * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
  * @standard ISO-20022 pain.008 customer-direct-debit-initiation
@@ -26,7 +37,7 @@ export const Payments: CollectionConfig = {
   slug: 'payments',
   admin: {
     useAsTitle: 'transactionNumber',
-    defaultColumns: ['transactionNumber', 'invoice', 'amount', 'status', 'date'],
+    defaultColumns: ['transactionNumber', 'invoice', 'amounts.amount', 'status', 'dates.sentAt'],
     group: 'Billing',
   },
   // Slice MMM (DRY): inline predicates replaced with canonical helpers.
@@ -45,10 +56,19 @@ export const Payments: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: paymentsBeforeValidate,
+    // AAAAA-cont: prepend canonical autoPopulateTenant + append
+    // canonical auditTrailAfterChange to the existing domain hook arrays.
+    beforeValidate: [
+      autoPopulateTenant,
+      ...(Array.isArray(paymentsBeforeValidate) ? paymentsBeforeValidate : [paymentsBeforeValidate]),
+    ],
     beforeChange: paymentsBeforeChange,
-    afterChange: paymentsAfterChange,
+    afterChange: [
+      ...(Array.isArray(paymentsAfterChange) ? paymentsAfterChange : [paymentsAfterChange]),
+      auditTrailAfterChange('payments'),
+    ],
   },
+  timestamps: true,
   fields: [
     {
       name: 'transactionNumber',
@@ -56,6 +76,40 @@ export const Payments: CollectionConfig = {
       unique: true,
       index: true,
       admin: { description: 'Transaction reference number' },
+    },
+    {
+      name: 'paymentKind',
+      type: 'select',
+      required: true,
+      defaultValue: 'received',
+      index: true,
+      options: [
+        { label: 'Received (AR collection — Dr Cash / Cr AR)', value: 'received' },
+        { label: 'Sent (AP disbursement — Dr AP / Cr Cash)', value: 'sent' },
+      ],
+      admin: {
+        description:
+          'Slice YYYY: drives the AR-vs-AP GL handler dispatch in `payment.hook.ts`. Required because `parties.{sender,receiver}` alone cannot disambiguate (the tenant could be either side in intercompany).',
+      },
+    },
+    {
+      name: 'status',
+      type: 'select',
+      defaultValue: 'recorded',
+      index: true,
+      options: [
+        { label: 'Recorded (default)', value: 'recorded' },
+        { label: 'Authorised', value: 'authorised' },
+        { label: 'Sent', value: 'sent' },
+        { label: 'Received', value: 'received' },
+        { label: 'Settled', value: 'settled' },
+        { label: 'Reversed', value: 'reversed' },
+        { label: 'Failed', value: 'failed' },
+      ],
+      admin: {
+        description:
+          'Lifecycle state. defaultColumns referenced this; YYYY restored the field.',
+      },
     },
     {
       name: 'invoice',

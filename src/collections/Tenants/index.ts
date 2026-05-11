@@ -11,7 +11,7 @@ const superAdminSecretsAccess = {
 } as const
 
 /**
- * Tenants — multi-tenant root entity ("host" alias used in legacy types).
+ * Tenants — multi-tenant root entity (post-Slice-HHH the legacy "host" alias is fully retired).
  *
  * Each tenant is a GDPR controller and the boundary of all access scoping.
  *

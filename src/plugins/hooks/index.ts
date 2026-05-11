@@ -5,7 +5,7 @@
  * (`@/collections/<Name>/hooks/`, `@/plugins/<domain>/hooks/`).
  *
  * Migration map:
- *   `@/plugins/hooks` → `@/hooks/autoPopulateHost`
+ *   `@/plugins/hooks` → `@/hooks/autoPopulateTenant`
  *                      `@/hooks/autoPopulateCreatedBy`
  *                      `@/hooks/autoSetTimestamp`
  *                      `@/hooks/auditTrailAfterChange`

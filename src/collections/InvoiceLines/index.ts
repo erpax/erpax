@@ -1,7 +1,10 @@
 import { CollectionConfig } from 'payload'
 import { adminOnly, multiTenantRead } from '@/plugins/auth'
 import { authenticated } from '@/access/authenticated'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
+import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
 import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 
 /**
@@ -49,7 +52,7 @@ export const InvoiceLines: CollectionConfig = {
   slug: 'invoiceLines',
   admin: {
     useAsTitle: 'code',
-    defaultColumns: ['code', 'invoice', 'description', 'quantity', 'unitPrice', 'totalAmount'],
+    defaultColumns: ['code', 'invoice', 'description', 'quantity.quantity', 'pricing.unitPrice', 'totals.totalAmount'],
     group: 'Billing',
   },
   // Slice MMM (DRY): inline predicates replaced with canonical helpers.
@@ -62,8 +65,10 @@ export const InvoiceLines: CollectionConfig = {
     delete: adminOnly,
   },
   hooks: {
-    beforeValidate: invoiceLinesBeforeValidate,
+    beforeValidate: [autoPopulateTenant, ...invoiceLinesBeforeValidate],
+    afterChange: [auditTrailAfterChange('invoiceLines')],
   },
+  timestamps: true,
   fields: [
     {
       name: 'invoice',
@@ -231,19 +236,22 @@ export const InvoiceLines: CollectionConfig = {
           admin: { description: 'Apply tax to this line' },
         },
         {
+          // Slice RRR: promoted from optional → required per EN-16931
+          // BT-151 mandatory cardinality. Was de-facto-required for
+          // every Peppol BIS export but the schema was permissive.
+          // Default 'S' (standard rate) keeps backward-compat for existing
+          // rows during migration; tenants doing zero-rated / exempt /
+          // reverse-charge sales must explicitly set the right code.
+          //
+          // @standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code
+          // @standard UN/CEFACT 5305 duty-tax-fee-category-coded
           name: 'vatCategoryCode',
           type: 'select',
-          options: [
-            { label: 'S — Standard rate', value: 'S' },
-            { label: 'Z — Zero rated goods', value: 'Z' },
-            { label: 'E — Exempt from VAT', value: 'E' },
-            { label: 'AE — Reverse charge (recipient liable)', value: 'AE' },
-            { label: 'K — Intra-community supply (Art. 138)', value: 'K' },
-            { label: 'G — Export outside EU (Art. 146)', value: 'G' },
-            { label: 'O — Out of scope of VAT', value: 'O' },
-            { label: 'L — Canary Islands IGIC', value: 'L' },
-            { label: 'M — Ceuta & Melilla IPSI', value: 'M' },
-          ],
+          required: true,
+          defaultValue: 'S',
+          // Canonical 9-code list lives in `src/standards/un-cefact-5305/`.
+          // Spread here preserves the EN-16931 BT-151 leading comment.
+          options: [...VAT_CATEGORY_OPTIONS],
           admin: {
             description:
               'BT-151 — VAT category code (UN/CEFACT 5305 EU subset). Required for EN-16931 / Peppol BIS export.',

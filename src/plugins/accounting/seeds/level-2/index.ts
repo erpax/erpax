@@ -11,3 +11,5 @@ export {
   RoleScopedDataSeed,
   Level2SeedSuite,
 } from './integration-accounting-seeds';
+
+export { DocumentationPagesSeed, DOCUMENTATION_PAGES_DATA } from './documentation-pages';

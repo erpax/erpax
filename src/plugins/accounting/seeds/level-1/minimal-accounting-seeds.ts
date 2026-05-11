@@ -10,461 +10,349 @@
  */
 
 /**
- * Level 1: Minimal Unit Test Seeds for Accounting Plugin
- * Fast setup (<500ms) with minimal dependencies for unit tests
- * Creates only essential data needed for specific tests
- * Uses config-aware validation for schema discovery
+ * Level 1: Minimal Unit Test Seeds for Accounting Plugin.
+ *
+ * Fast (<500ms), minimal-deps fixtures for unit tests. Each Minimal*Seed
+ * is a thin shell over `TestSeedFactory.runSeedLifecycle` — the lifecycle
+ * boilerplate (context bootstrap, hook plumbing, success/failure SeedResult)
+ * lives on the base class, and field validation comes from
+ * `SEED_VALIDATION_REGISTRY` (`src/testing/test-seed-factory.ts`).
+ *
+ * The fixture data is exported as named constants so tests can assert against
+ * the same source of truth a seed produces (instead of re-typing the same
+ * literals in two places and watching them drift).
  */
 
 import type { Payload } from 'payload';
-import { TestSeedFactory, type SeedResult } from '@/testing';
+import { TestSeedFactory, registerSeedCategory, type SeedResult } from '@/testing';
+import { IFRS_MINIMUM_TEMPLATE } from '../templates';
+
+// ─── Fixture constants (derived from `IFRS_MINIMUM_TEMPLATE`) ────────────
+//
+// The industry template is the single source of truth. These named exports
+// are kept so existing tests can keep importing them, but they're now
+// computed projections of the template — change the template and every seed
+// + test using these constants picks the new shape up automatically.
 
 /**
- * Minimal Host Seed - Single tenant for testing
+ * Single tenant — root of every Level-1 seed graph. Derived from
+ * `IFRS_MINIMUM_TEMPLATE.tenant` so renaming the template's tenant.code
+ * (or switching country) propagates to every spec.
  */
-export class MinimalHostSeed extends TestSeedFactory {
-  /**
-   * Validate host data using config-based schema discovery
-   * Calls parent validateData() for automatic required field checking
-   * Adds domain-specific validation as needed
-   */
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    if (collection === 'hosts') {
-      // Call parent to validate against Payload config
-      await super.validateData(collection, data);
+export const MINIMAL_TENANT_DATA = {
+  name: IFRS_MINIMUM_TEMPLATE.tenant.name,
+  code: IFRS_MINIMUM_TEMPLATE.tenant.code,
+  status: 'active',
+} as const;
 
-      // Add domain-specific validation
-      if (data.code && !/^[A-Z0-9_]+$/.test(data.code)) {
-        throw new Error('Host: code must be uppercase alphanumeric with underscores only');
-      }
-    }
-  }
+/**
+ * Five-account chart skeleton — projection of the template's
+ * `chartOfAccounts` plus the runtime `balance` and `status` columns.
+ *
+ * `{ tenant }` is appended at seed time once the tenant id is known.
+ */
+export const MINIMAL_GL_ACCOUNTS_DATA = IFRS_MINIMUM_TEMPLATE.chartOfAccounts.map((row) => ({
+  ...row,
+  balance: 0,
+  status: 'active',
+}));
 
+/**
+ * Three test-only users — one per role exercised by the access-control tests.
+ */
+export const MINIMAL_USERS_DATA = [
+  { email: 'admin@test.local',      password: 'test123', roles: ['admin'],      status: 'active' },
+  { email: 'accountant@test.local', password: 'test123', roles: ['accountant'], status: 'active' },
+  { email: 'auditor@test.local',    password: 'test123', roles: ['auditor'],    status: 'active' },
+] as const;
+
+/**
+ * Three FX rates pegged to USD as of `effectiveDate` (defaults to today).
+ *
+ * `{ tenant, effectiveDate }` are stitched in at seed time.
+ */
+export const MINIMAL_CURRENCY_RATES_DATA = [
+  { fromCurrency: 'USD', toCurrency: 'USD', rate: 1.0,  status: 'active' },
+  { fromCurrency: 'EUR', toCurrency: 'USD', rate: 1.1,  status: 'active' },
+  { fromCurrency: 'GBP', toCurrency: 'USD', rate: 1.27, status: 'active' },
+] as const;
+
+// ─── Seed classes ────────────────────────────────────────────────────────
+
+/**
+ * Single-tenant root. The created id lives under the canonical `'tenants'` key
+ * (set by `createDocument` via `trackCreatedId`) — callers (`Level1SeedSuite`,
+ * `tests/int/accounting/critical-gaps-verification`) read from that key.
+ *
+ * Note: there is no `'tenantId'` alias key. A pre-DRY iteration used one, but
+ * it broke `cleanup()` once `MockPayload.delete` started throwing on missing
+ * collections (the alias isn't a real collection slug).
+ */
+export class MinimalTenantSeed extends TestSeedFactory {
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('unit');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      // Create minimal host
-      const host = await this.createDocument('hosts', {
-        name: 'Test Host',
-        code: 'TEST_HOST',
-        status: 'active',
-      });
-
-      this.context.createdIds.set('hostId', new Set([host.id]));
-
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'unit',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    return this.runSeedLifecycle('unit', async () => {
+      await this.createDocument('tenants', { ...MINIMAL_TENANT_DATA });
+    });
   }
 }
 
 /**
- * Minimal GL Accounts Seed - Chart of accounts skeleton
+ * Minimal chart of accounts — five rows, one per accounting element type.
  */
 export class MinimalGLAccountsSeed extends TestSeedFactory {
-  private hostId: string = '';
-
-  constructor(payload: Payload, hostId: string) {
+  constructor(payload: Payload, private readonly tenantId: string) {
     super(payload);
-    this.hostId = hostId;
-  }
-
-  /**
-   * Validate GL account data using config-based schema discovery
-   * Calls parent validateData() for automatic required field checking
-   * Adds domain-specific validation as needed
-   */
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    if (collection === 'gl-accounts') {
-      // Call parent to validate against Payload config
-      await super.validateData(collection, data);
-
-      // Add domain-specific validation
-      const validAccountTypes = ['asset', 'liability', 'equity', 'revenue', 'expense'];
-      if (data.accountType && !validAccountTypes.includes(data.accountType)) {
-        throw new Error(
-          `GL account: accountType must be one of: ${validAccountTypes.join(', ')}`,
-        );
-      }
-
-      if (data.accountNumber && !/^\d+$/.test(data.accountNumber)) {
-        throw new Error('GL account: accountNumber must be numeric');
-      }
-    }
   }
 
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('unit');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      // Create minimal chart of accounts (5 accounts)
-      const _accounts = await this.createDocuments('gl-accounts', [
-        {
-          tenant: this.hostId,
-          accountNumber: '1000',
-          accountName: 'Cash',
-          accountType: 'asset',
-          balance: 0,
-          status: 'active',
-        },
-        {
-          tenant: this.hostId,
-          accountNumber: '2000',
-          accountName: 'Accounts Payable',
-          accountType: 'liability',
-          balance: 0,
-          status: 'active',
-        },
-        {
-          tenant: this.hostId,
-          accountNumber: '3000',
-          accountName: 'Equity',
-          accountType: 'equity',
-          balance: 0,
-          status: 'active',
-        },
-        {
-          tenant: this.hostId,
-          accountNumber: '4000',
-          accountName: 'Revenue',
-          accountType: 'revenue',
-          balance: 0,
-          status: 'active',
-        },
-        {
-          tenant: this.hostId,
-          accountNumber: '5000',
-          accountName: 'Expenses',
-          accountType: 'expense',
-          balance: 0,
-          status: 'active',
-        },
-      ]);
-
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'unit',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    return this.runSeedLifecycle('unit', async () => {
+      await this.createDocuments(
+        'gl-accounts',
+        MINIMAL_GL_ACCOUNTS_DATA.map((row) => ({ ...row, tenant: this.tenantId })),
+      );
+    });
   }
 }
 
 /**
- * Minimal Users Seed - Test user accounts
+ * Three test users, one per role.
  */
 export class MinimalUsersSeed extends TestSeedFactory {
-  /**
-   * Validate user data using config-based schema discovery
-   * Calls parent validateData() for automatic required field checking
-   * Adds domain-specific validation as needed
-   */
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    if (collection === 'users') {
-      // Call parent to validate against Payload config
-      await super.validateData(collection, data);
-
-      // Add domain-specific validation
-      if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-        throw new Error('User: email must be a valid email address');
-      }
-
-      const validRoles = ['admin', 'accountant', 'auditor'];
-      if (data.role && !validRoles.includes(data.role)) {
-        throw new Error(`User: role must be one of: ${validRoles.join(', ')}`);
-      }
-    }
-  }
-
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('unit');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      // Create test users
-      const _users = await this.createDocuments('users', [
-        {
-          email: 'admin@test.local',
-          password: 'test123',
-          roles: ['admin'],
-          status: 'active',
-        },
-        {
-          email: 'accountant@test.local',
-          password: 'test123',
-          roles: ['accountant'],
-          status: 'active',
-        },
-        {
-          email: 'auditor@test.local',
-          password: 'test123',
-          roles: ['auditor'],
-          status: 'active',
-        },
-      ]);
-
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'unit',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    return this.runSeedLifecycle('unit', async () => {
+      await this.createDocuments(
+        'users',
+        MINIMAL_USERS_DATA.map((row) => ({ ...row })),
+      );
+    });
   }
 }
 
 /**
- * Minimal Currency Rates Seed - Base currencies
+ * Three USD-pegged FX rates effective today.
  */
 export class MinimalCurrencyRatesSeed extends TestSeedFactory {
-  private hostId: string = '';
-
-  constructor(payload: Payload, hostId: string) {
+  constructor(payload: Payload, private readonly tenantId: string) {
     super(payload);
-    this.hostId = hostId;
-  }
-
-  /**
-   * Validate currency rate data using config-based schema discovery
-   * Calls parent validateData() for automatic required field checking
-   * Adds domain-specific validation as needed
-   */
-  protected async validateData(collection: string, data: Record<string, unknown>): Promise<void> {
-    if (collection === 'currency-rates') {
-      // Call parent to validate against Payload config
-      await super.validateData(collection, data);
-
-      // Add domain-specific validation
-      if (data.rate !== undefined && (data.rate <= 0 || !Number.isFinite(data.rate))) {
-        throw new Error('Currency rate: rate must be a positive number');
-      }
-
-      if (data.fromCurrency && !/^[A-Z]{3}$/.test(data.fromCurrency)) {
-        throw new Error('Currency rate: fromCurrency must be a valid 3-letter currency code');
-      }
-
-      if (data.toCurrency && !/^[A-Z]{3}$/.test(data.toCurrency)) {
-        throw new Error('Currency rate: toCurrency must be a valid 3-letter currency code');
-      }
-
-      if (data.effectiveDate && !/^\d{4}-\d{2}-\d{2}/.test(data.effectiveDate)) {
-        throw new Error('Currency rate: effectiveDate must be a valid date (YYYY-MM-DD)');
-      }
-    }
   }
 
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('unit');
-
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      // Create minimal currency rates
+    return this.runSeedLifecycle('unit', async () => {
       const baseDate = new Date().toISOString().split('T')[0];
+      await this.createDocuments(
+        'currency-rates',
+        MINIMAL_CURRENCY_RATES_DATA.map((row) => ({
+          ...row,
+          tenant: this.tenantId,
+          effectiveDate: baseDate,
+        })),
+      );
+    });
+  }
+}
 
-      const _rates = await this.createDocuments('currency-rates', [
-        {
-          tenant: this.hostId,
-          fromCurrency: 'USD',
-          toCurrency: 'USD',
-          rate: 1.0,
-          effectiveDate: baseDate,
-          status: 'active',
-        },
-        {
-          tenant: this.hostId,
-          fromCurrency: 'EUR',
-          toCurrency: 'USD',
-          rate: 1.1,
-          effectiveDate: baseDate,
-          status: 'active',
-        },
-        {
-          tenant: this.hostId,
-          fromCurrency: 'GBP',
-          toCurrency: 'USD',
-          rate: 1.27,
-          effectiveDate: baseDate,
-          status: 'active',
-        },
-      ]);
+// ─── Pages — three-level nested structure ────────────────────────────────
 
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
+/**
+ * Page nesting fixture: `home` → `about` → `team` (three levels deep).
+ *
+ * The seed inserts each page in dependency order so the `parent` foreign-key
+ * resolves at insert time, then writes a `breadcrumbs` array consistent with
+ * the `Pages.breadcrumbs` field shape (`{ doc, title, url }` per ancestor).
+ *
+ * Each entry below documents what the seed *adds* on top of these literals
+ * (tenant, parent id, breadcrumbs, _status, publishedAt).
+ */
+export const MINIMAL_PAGES_DATA = [
+  {
+    /** Root page — no parent, breadcrumbs = `[self]`. */
+    title: 'Home',
+    slug: 'home',
+    parentSlug: null,
+  },
+  {
+    /** Mid-level — parent = `home`, breadcrumbs = `[home, self]`. */
+    title: 'About',
+    slug: 'about',
+    parentSlug: 'home',
+  },
+  {
+    /** Leaf — parent = `about`, breadcrumbs = `[home, about, self]`. */
+    title: 'Team',
+    slug: 'team',
+    parentSlug: 'about',
+  },
+] as const;
+
+/**
+ * Build the canonical breadcrumbs array for a page given its ancestor chain
+ * (root-first). Mirrors the shape Payload's afterChange hook would have
+ * produced — required because the MockPayload used in unit tests doesn't
+ * fire collection hooks.
+ */
+const buildBreadcrumbs = (
+  ancestors: ReadonlyArray<{ id: string; title: string; slug: string }>,
+  self: { id: string; title: string; slug: string },
+): Array<{ doc: string; title: string; url: string }> => {
+  const chain = [...ancestors, self];
+  return chain.map((node, idx) => ({
+    doc: node.id,
+    title: node.title,
+    url: '/' + chain.slice(0, idx + 1).map((n) => n.slug).join('/'),
+  }));
+};
+
+/**
+ * Seeds the canonical three-level page nest (`home` → `about` → `team`)
+ * with `parent` references and `breadcrumbs` arrays populated. Validation
+ * lives in `SEED_VALIDATION_REGISTRY['pages']`.
+ *
+ * Cleanup ordering: `TestSeedFactory.cleanup` walks `createdIds` entries in
+ * reverse — `team` is added last and deleted first, satisfying the FK
+ * dependency (parent must outlive its children).
+ */
+export class MinimalPagesSeed extends TestSeedFactory {
+  constructor(payload: Payload, private readonly tenantId: string) {
+    super(payload);
+  }
+
+  async seed(): Promise<SeedResult> {
+    return this.runSeedLifecycle('unit', async () => {
+      const publishedAt = new Date().toISOString();
+      const created = new Map<string, { id: string; title: string; slug: string }>();
+
+      for (const fixture of MINIMAL_PAGES_DATA) {
+        const ancestors: Array<{ id: string; title: string; slug: string }> = [];
+        let cursor = fixture.parentSlug as string | null;
+        while (cursor) {
+          const ancestor = created.get(cursor);
+          if (!ancestor) {
+            throw new Error(`Page nesting: parent '${cursor}' not yet created — fixture order violates dependency`);
+          }
+          ancestors.unshift(ancestor);
+          // Find the ancestor's own parent in the fixture array.
+          const ancestorFixture = MINIMAL_PAGES_DATA.find((p) => p.slug === ancestor.slug);
+          cursor = ancestorFixture?.parentSlug ?? null;
+        }
+
+        const parent = fixture.parentSlug ? created.get(fixture.parentSlug)?.id : undefined;
+        const selfPlaceholder = { id: 'pending', title: fixture.title, slug: fixture.slug };
+        const breadcrumbsForCreate = buildBreadcrumbs(ancestors, selfPlaceholder);
+
+        const doc = await this.createDocument('pages', {
+          tenant: this.tenantId,
+          title: fixture.title,
+          slug: fixture.slug,
+          ...(parent ? { parent } : {}),
+          breadcrumbs: breadcrumbsForCreate,
+          _status: 'published',
+          publishedAt,
+        });
+
+        // Patch the just-created `doc.id` into the trailing breadcrumb so the
+        // self-reference is correct for any consumer reading the seed result.
+        const finalBreadcrumbs = buildBreadcrumbs(ancestors, {
+          id: doc.id,
+          title: fixture.title,
+          slug: fixture.slug,
+        });
+        (doc as { breadcrumbs?: unknown }).breadcrumbs = finalBreadcrumbs;
+
+        created.set(fixture.slug, { id: doc.id, title: fixture.title, slug: fixture.slug });
       }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'unit',
-        totalTime: Date.now() - this.context!.startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+    });
   }
 }
 
 /**
- * Combined Level 1 Seed Suite
- * Creates all minimal seeds in optimized order
+ * Combined Level-1 suite — runs each Minimal*Seed in dependency order and
+ * merges every child's `createdIds` into this seed's context so a single
+ * `cleanup()` removes everything.
  */
 export class Level1SeedSuite extends TestSeedFactory {
   async seed(): Promise<SeedResult> {
-    this.context = this.createContext('unit');
-    const startTime = Date.now();
+    return this.runSeedLifecycle('unit', async () => {
+      // 1. Tenant (root of every other reference).
+      const tenantSeed = new MinimalTenantSeed(this.payload);
+      const tenantResult = await tenantSeed.seed();
+      if (!tenantResult.success) throw tenantResult.error;
+      const tenantId = Array.from(
+        tenantSeed['context']!.createdIds.get('tenants') ?? new Set<string>(),
+      )[0];
+      if (!tenantId) throw new Error('Failed to create tenant');
 
-    try {
-      if (this.hooks.beforeSeed) {
-        await this.hooks.beforeSeed(this.context);
-      }
-
-      // 1. Create host (required for all other data)
-      const hostSeed = new MinimalHostSeed(this.payload);
-      const hostResult = await hostSeed.seed();
-      if (!hostResult.success) throw hostResult.error;
-
-      const hostId = Array.from(hostSeed['context']!.createdIds.get('hostId') || new Set())[0];
-      if (!hostId) throw new Error('Failed to create host');
-
-      // Track host creation
-      this.trackCreatedId('hosts', hostId);
-
-      // 2. Create GL accounts
-      const glSeed = new MinimalGLAccountsSeed(this.payload, hostId);
+      // 2. GL accounts.
+      const glSeed = new MinimalGLAccountsSeed(this.payload, tenantId);
       const glResult = await glSeed.seed();
       if (!glResult.success) throw glResult.error;
 
-      // 3. Create users
+      // 3. Users.
       const userSeed = new MinimalUsersSeed(this.payload);
       const userResult = await userSeed.seed();
       if (!userResult.success) throw userResult.error;
 
-      // 4. Create currency rates
-      const rateSeed = new MinimalCurrencyRatesSeed(this.payload, hostId);
+      // 4. Currency rates.
+      const rateSeed = new MinimalCurrencyRatesSeed(this.payload, tenantId);
       const rateResult = await rateSeed.seed();
       if (!rateResult.success) throw rateResult.error;
 
-      // Aggregate all created IDs
-      for (const [collection, ids] of glSeed['context']!.createdIds) {
-        this.context.createdIds.set(collection, ids);
-      }
-      for (const [collection, ids] of userSeed['context']!.createdIds) {
-        if (!this.context.createdIds.has(collection)) {
-          this.context.createdIds.set(collection, new Set());
-        }
-        for (const id of ids) {
-          this.context.createdIds.get(collection)!.add(id);
-        }
-      }
-      for (const [collection, ids] of rateSeed['context']!.createdIds) {
-        if (!this.context.createdIds.has(collection)) {
-          this.context.createdIds.set(collection, new Set());
-        }
-        for (const id of ids) {
-          this.context.createdIds.get(collection)!.add(id);
-        }
-      }
+      // 5. Pages — three-level nest (home → about → team) so the e2e admin
+      // walk-through has populated rows + breadcrumbs to capture.
+      const pagesSeed = new MinimalPagesSeed(this.payload, tenantId);
+      const pagesResult = await pagesSeed.seed();
+      if (!pagesResult.success) throw pagesResult.error;
 
-      if (this.hooks.afterSeed) {
-        const stats = this.getStats();
-        const result: SeedResult = {
-          success: true,
-          ...stats,
-        };
-        await this.hooks.afterSeed(this.context, result);
-      }
-
-      return {
-        success: true,
-        ...this.getStats(),
-      };
-    } catch (error) {
-      return {
-        success: false,
-        seedLevel: 'unit',
-        totalTime: Date.now() - startTime,
-        itemsCreated: 0,
-        collections: {},
-        error: error instanceof Error ? error : new Error(String(error)),
-      };
-    }
+      // Aggregate every child's createdIds for unified cleanup.
+      this.mergeChildContext(tenantSeed);
+      this.mergeChildContext(glSeed);
+      this.mergeChildContext(userSeed);
+      this.mergeChildContext(rateSeed);
+      this.mergeChildContext(pagesSeed);
+    });
   }
 }
+
+// ─── UI-category registration ────────────────────────────────────────────
+//
+// Categorize each seed by which Payload UI surface it primarily populates.
+// `Tenants` and `Users` are cross-cutting (admin + frontend rely on both);
+// `gl-accounts` and `currency-rates` are admin-data only; `Pages` is
+// public-content; the suite spans cross-cutting + admin-data + public-content
+// depending on which sub-seed runs.
+
+registerSeedCategory({
+  id: 'level-1.minimal-tenant',
+  category: 'cross-cutting',
+  description: 'Single tenant — root reference for every other Level-1 seed.',
+  ctor: MinimalTenantSeed,
+});
+registerSeedCategory({
+  id: 'level-1.minimal-gl-accounts',
+  category: 'admin-data',
+  description: '5-account IFRS chart skeleton (one per IAS-1 §54 element type).',
+  ctor: MinimalGLAccountsSeed,
+});
+registerSeedCategory({
+  id: 'level-1.minimal-users',
+  category: 'cross-cutting',
+  description: 'Three role-tagged test users (admin / accountant / auditor).',
+  ctor: MinimalUsersSeed,
+});
+registerSeedCategory({
+  id: 'level-1.minimal-currency-rates',
+  category: 'admin-data',
+  description: 'Three USD-pegged FX rates for multi-currency tests.',
+  ctor: MinimalCurrencyRatesSeed,
+});
+registerSeedCategory({
+  id: 'level-1.minimal-pages',
+  category: 'public-content',
+  description: 'Three-level page nest (home → about → team) with breadcrumbs.',
+  ctor: MinimalPagesSeed,
+});
+registerSeedCategory({
+  id: 'level-1.suite',
+  category: 'cross-cutting',
+  description: 'Composes all Level-1 seeds in dependency order.',
+  ctor: Level1SeedSuite,
+});

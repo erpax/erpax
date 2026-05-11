@@ -107,7 +107,7 @@ export function andAccess(...accessFns: Access[]): Access {
 }
 
 /**
- * Builder: Create scoped access (returns query with host filter)
+ * Builder: Create scoped access (returns query with tenant filter)
  * PATTERN: For all scoped collections
  */
 export function scopedAccess(additionalWhere?: Record<string, unknown>): Access {
@@ -135,5 +135,102 @@ export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
     if (!hasRole(user, ...allowedRoles)) return false
 
     return { tenant: { equals: user.tenant } }
+  }
+}
+
+// ─── Bundle helpers (Slice KKK DRY) ──────────────────────────────────────
+//
+// The patterns below were extracted from the existing canonical
+// collections — each replaces a 4-key access block that recurs across N
+// collections with a single named bundle. Authoring rule: every new
+// collection should reach for one of these bundles first; only define a
+// bespoke `access:` block when none of the bundles fit.
+//
+// Frequency snapshot at extraction time:
+//   accountingCollectionAccess  → 32 collections
+//   tenantMasterDataAccess      →  5 collections
+//   tenantAdminWriteAccess      →  4 collections
+//   superAdminOnlyAccess        →  4 collections
+//
+// @standard NIST INCITS-359-2012 role-based-access-control
+// @security ISO-27001 A.5.15 access-control
+// @security ISO-27001 A.5.18 access-rights
+// @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+// @security ISO-27002 §5.15 access-control
+
+/**
+ * 4-key access bundle for the **accounting-domain** collections —
+ * tenant-scoped read for everyone in tenant, role-gated writes (default
+ * admin + accountant), tenant-admin delete. Replaces the 4-line block
+ * that recurs across 32 collections (JournalEntries, GLPostings, …).
+ *
+ * Slice VVV: `feature` option added — when set, every op is wrapped
+ * with `featureGuard(feature)` so the collection is hidden / blocked
+ * for tenants whose plan doesn't include the feature. The featureId
+ * MUST exist in `FEATURE_REGISTRY` (`@/access/feature-registry`).
+ *
+ * @example
+ *   access: accountingCollectionAccess(),                              // free + up
+ *   access: accountingCollectionAccess({ feature: 'manufacturing' }), // enterprise only
+ *   access: accountingCollectionAccess({ feature: 'leasing', writeRoles: ['admin'] }),
+ */
+export function accountingCollectionAccess(
+  options: { writeRoles?: UserRole[]; feature?: string } = {},
+): { read: Access; create: Access; update: Access; delete: Access } {
+  const writeRoles = options.writeRoles ?? (['admin', 'accountant'] as UserRole[])
+  const baseRead = scopedAccess()
+  const baseCreate = roleScopedAccess(...writeRoles)
+  const baseUpdate = roleScopedAccess(...writeRoles)
+  const baseDelete = tenantAdmin
+  if (!options.feature) {
+    return { read: baseRead, create: baseCreate, update: baseUpdate, delete: baseDelete }
+  }
+  // Wrap every op with the feature gate. We require both checks to pass.
+  // Lazy-import `featureGuard` to avoid a cycle (subscriptionGates imports
+  // from payload-types which transitively pulls collection schemas).
+  const guard = (op: Access): Access => async (args) => {
+    const { featureGuard } = await import('@/access/subscriptionGates')
+    const guarded = featureGuard(options.feature!)
+    const ok = await guarded(args)
+    if (ok === false) return false
+    return op(args)
+  }
+  return {
+    read: guard(baseRead),
+    create: guard(baseCreate),
+    update: guard(baseUpdate),
+    delete: guard(baseDelete),
+  }
+}
+
+/**
+ * 4-key access bundle for **tenant master data** collections (Customers,
+ * Vendors, TaxCodes, TaxJurisdictions, FiscalPeriods, …) — `multiTenantRead`
+ * for every authenticated tenant member, `adminOrAccountant` writes,
+ * `adminOnly` delete (master data should not be deletable by accountants).
+ */
+export function tenantMasterDataAccess(): { read: Access; create: Access; update: Access; delete: Access } {
+  return {
+    read: multiTenantRead,
+    create: adminOrAccountant,
+    update: adminOrAccountant,
+    delete: adminOnly,
+  }
+}
+
+/**
+ * 4-key access bundle for collections where **only tenant-admins write**
+ * (BankAccounts, CurrencyRates, FinancialStatements, GLPostings) — scoped
+ * read, role-gated create, tenant-admin update + delete.
+ */
+export function tenantAdminWriteAccess(
+  options: { createRoles?: UserRole[] } = {},
+): { read: Access; create: Access; update: Access; delete: Access } {
+  const createRoles = options.createRoles ?? (['admin', 'accountant'] as UserRole[])
+  return {
+    read: scopedAccess(),
+    create: roleScopedAccess(...createRoles),
+    update: tenantAdmin,
+    delete: tenantAdmin,
   }
 }

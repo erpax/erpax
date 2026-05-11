@@ -35,17 +35,30 @@ const fields = [
 ];
 ```
 
-### 2. Hook Factory Pattern
+### 2. Direct Hook Pattern
 
-Create consistent hooks with error handling and logging:
+Slice FFF/PPP/HHH retired the `createAccountingHook` factory — the
+8 sibling hooks (`invoice`, `bill`, `payment`, `item`,
+`depreciation`, `period-end-adjustment`, `inventory-movement`,
+`payroll-run`/`payroll-disbursement`/`lease-period-posting`) were
+written directly without it and the factory ended up with zero
+callers. Write hooks directly and import the relevant service
+singleton from `@/services/*`:
 
 ```typescript
-import { createAccountingHook } from '@/plugins/accounting/hooks';
+import type { CollectionAfterChangeHook } from 'payload';
+import { glPostingService } from '@/services/gl-posting.service';
 
-const myHook = createAccountingHook('myService', async (hostId, data) => {
-  // Your service logic here
-}, (doc, operation) => doc && operation === 'create');
+export const myHook: CollectionAfterChangeHook = async ({ doc, operation }) => {
+  if (operation !== 'create') return doc;
+  await glPostingService.postSomething(doc.tenant, doc);
+  return doc;
+};
 ```
+
+For tenant auto-population, the `multiTenancyField()` factory wires
+`autoPopulateTenant` (from `@/hooks/autoPopulateTenant`) into the
+`beforeValidate` chain automatically — no explicit hook needed.
 
 ### 3. Collection Factory Pattern
 
@@ -56,8 +69,8 @@ import { createAccountingCollection } from '@/plugins/accounting/factories';
 
 const myCollection = {
   ...createAccountingCollection({
-    slug: 'my-collection',
-    labels: { singular: 'Item', plural: 'Items' },
+    slug: 'tax-codes',
+    labels: { singular: 'Tax Code', plural: 'Tax Codes' },
     useAsTitle: 'itemId',
     defaultColumns: ['itemId', 'status'],
   }, () => [
@@ -101,7 +114,7 @@ import { calculateArrayTotal } from '@/plugins/accounting/utilities';
 
 const MyCollection = {
   ...createAccountingCollection({
-    slug: 'my-items',
+    slug: 'tax-codes',
     labels: { singular: 'My Item', plural: 'My Items' },
     useAsTitle: 'itemId',
     defaultColumns: ['itemId', 'totalAmount', 'status'],

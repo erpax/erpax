@@ -27,7 +27,13 @@
 import { v4 as uuid } from 'uuid'
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/services/event-emitter.service'
-import type { BillActivatedEvent, BillLineItem } from '@/types/events'
+import { emitDomainEvent } from '@/services/emit-domain-event'
+import type {
+  BillActivatedEvent,
+  BillReversedEvent,
+  BillLineItem,
+  InventoryPurchasedEvent,
+} from '@/types/events'
 
 const ACTIVE_STATUSES = new Set([
   'issued',
@@ -35,6 +41,12 @@ const ACTIVE_STATUSES = new Set([
   'approved',
   'active',
   'past_due',
+])
+
+const REVERSED_STATUSES = new Set([
+  'cancelled',
+  'reversed',
+  'voided',
 ])
 
 const justActivated = (
@@ -45,6 +57,16 @@ const justActivated = (
   if (!status || !ACTIVE_STATUSES.has(status)) return false
   if (!previousDoc) return true
   return !ACTIVE_STATUSES.has(previousDoc.status as string)
+}
+
+const justReversed = (
+  doc: Record<string, unknown>,
+  previousDoc?: Record<string, unknown>,
+): boolean => {
+  const status = doc.status as string | undefined
+  if (!status || !REVERSED_STATUSES.has(status)) return false
+  if (!previousDoc) return false
+  return ACTIVE_STATUSES.has(previousDoc.status as string)
 }
 
 const toLineItem = (line: Record<string, unknown>): BillLineItem => ({
@@ -66,55 +88,111 @@ export const billAccountingHook: CollectionAfterChangeHook = async ({
   operation,
 }) => {
   if (!doc || (operation !== 'create' && operation !== 'update')) return doc
-  if (
-    !justActivated(
-      doc as Record<string, unknown>,
-      previousDoc as Record<string, unknown> | undefined,
-    )
-  ) {
-    return doc
+
+  const docR = doc as Record<string, unknown>
+  const prevR = previousDoc as Record<string, unknown> | undefined
+
+  const tenant =
+    typeof doc.tenant === 'object' && doc.tenant !== null
+      ? (doc.tenant as { id?: string }).id
+      : doc.tenant
+  const userId = req.user?.id
+  if (!tenant || !userId) return doc
+
+  const tenantId = String(tenant)
+  const userIdStr = String(userId)
+
+  // ── bill:activated — first transition into an active state ─────────────
+  if (justActivated(docR, prevR)) {
+    try {
+      const lineItems = Array.isArray(doc.lineItems)
+        ? (doc.lineItems as Array<Record<string, unknown>>).map(toLineItem)
+        : []
+      const event: BillActivatedEvent = {
+        eventId: uuid(),
+        eventType: 'bill:activated',
+        tenantId,
+        aggregateId: String(doc.id),
+        aggregateType: 'bill',
+        timestamp: new Date(),
+        userId: userIdStr,
+        payload: {
+          billId: String(doc.id),
+          vendorId: String(doc.vendorId ?? doc.seller ?? ''),
+          amount: Number(doc.totalAmount ?? doc.amount ?? 0),
+          taxAmount: Number(doc.taxAmount ?? 0),
+          lineItems,
+          currencyCode: String(doc.currency ?? 'EUR'),
+          billDate: new Date((doc.billDate ?? doc.date ?? new Date()) as string | Date),
+        },
+      }
+      await eventEmitter.emit(event)
+      req.payload.logger.info(
+        `✓ bill:activated emitted for bill ${doc.billNumber ?? doc.id}`,
+      )
+
+      // Slice LLL: emit `inventory:purchased` for every line item that
+      // resolves to an inventory item. Closes the IAS-2 / ASC-330
+      // inventory-receipt GL gap. Lines without an `itemId` (pure
+      // expense lines) skip — only physical/inventory items book
+      // through the inventory ledger.
+      const billDate = new Date(
+        (doc.billDate ?? doc.date ?? new Date()) as string | Date,
+      )
+      for (const li of lineItems) {
+        if (!li.itemId || li.amount <= 0 || li.quantity <= 0) continue
+        // Heuristic: if expenseCategory is left at the default 'general_expense'
+        // we treat this as a non-inventory expense line and skip.
+        if (li.expenseCategory === 'general_expense' || li.expenseCategory === 'expense') continue
+        const purchased: InventoryPurchasedEvent = {
+          eventId: uuid(),
+          eventType: 'inventory:purchased',
+          tenantId,
+          aggregateId: li.itemId,
+          aggregateType: 'inventory_transfer',
+          timestamp: new Date(),
+          userId: userIdStr,
+          payload: {
+            billId: String(doc.id),
+            itemId: li.itemId,
+            quantity: li.quantity,
+            costPerUnit: li.amount / li.quantity,
+            totalCost: li.amount,
+            purchaseDate: billDate,
+          },
+        }
+        await emitDomainEvent(req, purchased, `bill ${doc.billNumber ?? doc.id} line ${li.id}`)
+      }
+    } catch (error) {
+      req.payload.logger.error(
+        { err: error },
+        `✗ Error emitting bill:activated for ${doc.id}:`,
+      )
+    }
   }
 
-  try {
-    const tenant =
-      typeof doc.tenant === 'object' && doc.tenant !== null
-        ? (doc.tenant as { id?: string }).id
-        : doc.tenant
-    const userId = req.user?.id
-    if (!tenant || !userId) return doc
-
-    const lineItems = Array.isArray(doc.lineItems)
-      ? (doc.lineItems as Array<Record<string, unknown>>).map(toLineItem)
-      : []
-
-    const event: BillActivatedEvent = {
+  // ── bill:reversed — active → cancelled/reversed/voided ─────────────────
+  // Slice LLL: closes the AP-side dead-handler gap. Symmetric to
+  // invoice:reversed; glPostingService.postBillReversed reverses the
+  // accrual entry.
+  if (justReversed(docR, prevR)) {
+    const reversed: BillReversedEvent = {
       eventId: uuid(),
-      eventType: 'bill:activated',
-      tenantId: String(tenant),
+      eventType: 'bill:reversed',
+      tenantId,
       aggregateId: String(doc.id),
       aggregateType: 'bill',
       timestamp: new Date(),
-      userId: String(userId),
+      userId: userIdStr,
       payload: {
         billId: String(doc.id),
-        vendorId: String(doc.vendorId ?? doc.seller ?? ''),
-        amount: Number(doc.totalAmount ?? doc.amount ?? 0),
-        taxAmount: Number(doc.taxAmount ?? 0),
-        lineItems,
-        currencyCode: String(doc.currency ?? 'EUR'),
-        billDate: new Date((doc.billDate ?? doc.date ?? new Date()) as string | Date),
+        reversalDate: new Date(),
+        reason: doc.cancellationReason
+          ? String(doc.cancellationReason)
+          : `status transition ${prevR?.status ?? '?'} → ${docR.status}`,
       },
     }
-
-    await eventEmitter.emit(event)
-    req.payload.logger.info(
-      `✓ bill:activated emitted for bill ${doc.billNumber ?? doc.id}`,
-    )
-  } catch (error) {
-    req.payload.logger.error(
-      { err: error },
-      `✗ Error emitting bill:activated for ${doc.id}:`,
-    )
+    await emitDomainEvent(req, reversed, String(doc.billNumber ?? doc.id))
   }
 
   return doc
