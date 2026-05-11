@@ -17,6 +17,10 @@ import { buildErpaxMcpTools } from './mcp/tool-defs'
 import { createInProcessMcpClient } from './mcp/in-process-client'
 import { ERPAX_MCP_RESOURCES } from './mcp/resource-defs'
 import { ERPAX_MCP_PROMPTS } from './mcp/prompt-defs'
+// Side-effect imports — register the erpax-platform self-tenant role + load
+// the rest of the substrate primitives so they're available at boot.
+import '@/services/self-reference'
+
 import { FinanceAgent } from '@/plugins/accounting/agents/finance.agent'
 import { SalesAgent } from './registered/sales.agent'
 import { MarketingAgent } from './registered/marketing.agent'

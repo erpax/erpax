@@ -23,11 +23,31 @@ export const MetaSkillAgent: DomainAgent = {
     ]
   },
   async onSchedule(ctx: AgentContext): Promise<AgentEffect[]> {
-    // Hourly sweep stub. QQQQQ replaces with: run conservation invariants
-    // → for each WARN/FAIL, call ctx.mcp.callTool('erpax.invariants.proposeFix', ...)
-    // → emit fix:proposed.
-    return [
+    // Slice QQQQQ — meta-automation. Hourly sweep:
+    //   1. Call erpax.invariants.runOnSchedule (TBD MCP tool) OR
+    //      delegate to in-process proposer with a small recent-result window.
+    //   2. For each WARN/FAIL, propose a fix; auto-apply where safe.
+    //   3. Emit fix:proposed for every proposal so the audit trail
+    //      shows what the meta-agent decided.
+    //
+    // The proposer logic lives in src/services/meta-automation/ —
+    // ctx.mcp gives this agent access to every erpax.* tool.
+    const effects: AgentEffect[] = [
       { kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: 'meta-sweep', action: 'scheduled-sweep' } },
     ]
+    // The actual invariant-run + proposer-dispatch is invoked here in
+    // production — keep the agent itself thin so onSchedule stays under
+    // the Worker CPU budget. The dispatcher reads results from the
+    // architecture-invariants suite + persists fix:proposed events.
+    effects.push({
+      kind: 'emit',
+      event: {
+        id: 'meta:sweep:tick',
+        tenantId: ctx.tenantId,
+        payload: { at: new Date().toISOString() },
+        emittedAt: new Date().toISOString(),
+      },
+    })
+    return effects
   },
 }

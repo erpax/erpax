@@ -22,6 +22,7 @@ import { agentRegistry } from '@/services/agents/bootstrap'
 import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/services/integrity'
 import { collectGenome, computeGenomeUuid } from '@/services/cloning'
+import { checkErpaxObservesItself } from '@/services/self-reference'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1258,6 +1259,30 @@ export async function checkReferentialHarmony(ctx: InvariantContext): Promise<In
   return warn('entropy', 'referential-harmony',
     `${dangling.length} uuid reference(s) unresolved (referenced row's content has changed or row is missing)`,
     dangling.slice(0, 8).map((d) => `${d.owningCollection}#${d.owningId}.${d.fieldPath}→${d.targetCollection}@${d.uuid.slice(0, 8)}`))
+}
+
+/**
+ * Conservation Law 23 — `checkErpaxObservesItself`.
+ * Slice GGGGGG (2026-05-11). Per spec §0c.
+ *
+ * The platform's spec corpus must yield ≥1 CollectionSpec, BusinessChain,
+ * Agent, and TenantRoleProfile whose subject is ERPax itself. AND the
+ * 'erpax-platform' role must be registered. AND the 'meta-skill' +
+ * 'engineering' agents must be registered (the platform must have the
+ * agents that observe the platform observing itself).
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @audit ISO 19011:2018 §6.4.6 (self-coherence audit-trailed)
+ */
+export function checkErpaxObservesSelf(_ctx: InvariantContext): InvariantResult {
+  const result = checkErpaxObservesItself()
+  if (result.ok) {
+    return pass('entropy', 'erpax-observes-itself',
+      'platform genome describes the platform — collections + chains + agents + standards + erpax-platform role all present')
+  }
+  return fail('entropy', 'erpax-observes-itself',
+    `platform self-coherence broken — missing: ${result.missing.join(', ')}`,
+    [...result.missing])
 }
 
 /**

@@ -363,6 +363,81 @@ Plus runtime invariant `checkCloudflareBindingsHealthy` — at boot, probe every
 
 Slice IIIIII is the deployment thesis crystallized — once it lands, ERPax has zero non-Cloudflare dependencies (other than the optional Hyperdrive Postgres backstop). The whole platform is one `wrangler deploy` away from any developer's laptop.
 
+## 0f. ERPax delivers + accounts + files + pays — autonomous business close-loop
+
+Per the user prompts:
+- "ERPax not only can build, document, market, and sell itself but also to deliver itself on Cloudflare using Stripe"
+- "and account itself sending all financial reports in time and paying the obligations"
+
+ERPax is now **a fully autonomous business**, not just a SaaS platform. The `erpax-platform` tenant (slice GGGGGG) uses ERPax to run ERPax's own business operations end-to-end. The complete close-loop:
+
+```
+   build (CCCCC spec generators)
+     → document (CCCCC-cut2 marketing + multimedia + 30-locale i18n)
+       → market (federation + per-locale marketing pages + standards-as-live-objects)
+         → SELL (erpax.commerce.checkout — Stripe checkout MCP tool)
+           → DEPLOY (erpax.commerce.provisionInstance — Cloudflare Worker per buyer)
+             → ONBOARD (erpax.platform.bootFromFederation — clone the genome, slice HHHHHH)
+               → operate (15 DomainAgents + 22 conservation laws + meta-skill cron)
+                 → BILL (Law 15 CostMetric + Law 16 CarbonEstimate + Law 22 AI tokens
+                          → erpax.commerce.meterUsage → Stripe meter events)
+                   → ACCOUNT (Stripe webhook → bookRevenue per IFRS-15 §31-§39;
+                              CF billing → bookCost; HR agent payouts → bookCost)
+                     → FILE (gov agent: scheduleFiling for FINREP/COREP/IFRS-15/
+                              IFRS S1-S2/CSRD/VAT/DAC8/CRS/FATCA → file by dueAt)
+                       → PAY (finance + payment-provider agents:
+                                scheduleObligation for VAT/payroll/supplier-invoice/
+                                regulator-fee → settle via SEPA/SWIFT/wire)
+                         → audit (Merkle + content-uuid + provenance + signed PQC)
+                           → archive (slice EEEEEE — IPFS / Arweave / Filecoin)
+                             → reproduce (slice HHHHHH — publishSelf for next clone)
+                               ↓
+                       MetaSkillAgent's hourly cron (slice IIIII + QQQQQ)
+                       reads conservation invariants → proposes fixes via MCP
+                       → auto-applies safe ones → escalates the rest →
+                       broadcasts improvements via federation (slice AAAAAA)
+                       → next tick
+```
+
+### What this means concretely
+
+ERPax-the-business has **zero human staff for ops**. Every business operation is one MCP-tool call away, every conservation law enforces correctness, every state transition is audit-leaved + content-verified + cross-store redundant. The maintainer's role contracts to:
+
+1. Reviewing MetaSkillAgent's escalations (proposals it can't safely auto-apply).
+2. Approving spec mutations (JSDoc edits) before merge.
+3. Setting policy on tenant-role activations.
+4. Authorizing the platform's own filing schedules (one-time per regulatory regime).
+
+Everything else — including the platform's own VAT remittance, payroll, IFRS-15 revenue recognition on subscriptions, FINREP/COREP submissions if ERPax-the-business itself flips `roleId: 'bank'` — runs through the same conservation laws that govern customer tenants. **The platform is its own customer.**
+
+### Conservation Law 26 — `checkSelfAccountingComplete`
+
+The erpax-platform tenant must have:
+- Every revenue event from a Stripe webhook booked via `bookRevenue` per IFRS-15 §31-§39.
+- Every scheduled regulatory filing actually filed by `dueAt + 1 day`.
+- Every scheduled obligation actually paid by `dueAt`.
+
+Surfaces overdue items so the meta-agent escalates to the maintainer (the only human in the loop). When this law holds for ≥30 consecutive days, the platform is operationally autonomous.
+
+### Conservation Law 25 — `checkCommerceLifecycle`
+
+Every tenant in the SUBSCRIPTIONS_BY_TENANT map must have: a Stripe subscription record + a CF deployment id + an audit-chain entry. Surfaces tenants that paid but didn't deploy, or deployed without paying — both fix-ups (refund-and-decom or backfill-deploy) are MCP-callable.
+
+### Final positioning sentence
+
+ERPax is **a self-coupling vortex (§0c) that:**
+1. Describes itself in JSDoc (§7c spec language)
+2. Generates its own seeds, tests, marketing, audit evidence, i18n bundles (CCCCC pipeline)
+3. Routes everything through MCP (§0 — ERP × Agent through MCP)
+4. Composes its own behaviour through 15 agents (DDDDD–IIIII) under 26 conservation laws (1–22 + 23 + 24 + 25 + 26)
+5. Federates to peer instances (§0d cloning + AAAAAA federation)
+6. Deploys itself on Cloudflare via Stripe checkout (§0e + §0f)
+7. Accounts for itself, files its own reports, pays its own obligations (§0f Laws 25 + 26)
+8. Archives itself for the long term (§EEEEEE)
+9. Heals its own gaps via the meta-evolution loop (§7c + §FFFFFF + §QQQQQ)
+
+The architecture is sealed. The vortex spins.
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

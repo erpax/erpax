@@ -1224,26 +1224,27 @@ src/services/ai/semantic-search.ts:10: * @standard ISO/IEC 23894:2023 ai-risk-ma
 src/services/ai/tax-classification.ts:10: * @standard UN/CEFACT 5305 duty-tax-fee-category-coded
 src/services/ai/tax-classification.ts:11: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/services/ai/tax-classification.ts:9: * @standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code
-src/services/architecture-invariants/checks.ts:1062: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:1095: * @standard BCP-47 + W3C i18n key-naming-best-practices
-src/services/architecture-invariants/checks.ts:1131: * @standard ISO/IEC 12207 software-life-cycle (event graph
-src/services/architecture-invariants/checks.ts:1164: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:1181: * @standard RFC 4122 + RFC 8785 + NIST FIPS 180-4
-src/services/architecture-invariants/checks.ts:1236: * @standard RFC 4122 §4.3 + RFC 8785
-src/services/architecture-invariants/checks.ts:386: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
-src/services/architecture-invariants/checks.ts:403: * @standard ISO 27002:2022 §5.4 segregation-of-duties
-src/services/architecture-invariants/checks.ts:404: * @standard COBIT 5 PO4.11
-src/services/architecture-invariants/checks.ts:462: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
-src/services/architecture-invariants/checks.ts:548: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/services/architecture-invariants/checks.ts:549: * @standard IFRS Foundation issued-standards-as-of-2026-05
-src/services/architecture-invariants/checks.ts:618: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
-src/services/architecture-invariants/checks.ts:619: * @standard ISO 19011:2018 §6.4.6 audit-evidence
-src/services/architecture-invariants/checks.ts:831: * @standard ISO 19011:2018 §6.4 audit-evidence
-src/services/architecture-invariants/checks.ts:859: * @standard ISO/IEC 25010:2023 performance-efficiency
-src/services/architecture-invariants/checks.ts:860: * @standard SQL-92 §5.4 indexing-strategy
-src/services/architecture-invariants/checks.ts:911: * @standard rfc-5545 icalendar-cron
-src/services/architecture-invariants/checks.ts:958: * @standard NIST FIPS-180-4 sha-256
-src/services/architecture-invariants/checks.ts:959: * @standard ISO 27037:2012 evidence-preservation
+src/services/architecture-invariants/checks.ts:1063: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:1096: * @standard BCP-47 + W3C i18n key-naming-best-practices
+src/services/architecture-invariants/checks.ts:1132: * @standard ISO/IEC 12207 software-life-cycle (event graph
+src/services/architecture-invariants/checks.ts:1165: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:1182: * @standard RFC 4122 + RFC 8785 + NIST FIPS 180-4
+src/services/architecture-invariants/checks.ts:1237: * @standard RFC 4122 §4.3 + RFC 8785
+src/services/architecture-invariants/checks.ts:1275: * @standard RFC 4122 §4.3 + RFC 8785
+src/services/architecture-invariants/checks.ts:387: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
+src/services/architecture-invariants/checks.ts:404: * @standard ISO 27002:2022 §5.4 segregation-of-duties
+src/services/architecture-invariants/checks.ts:405: * @standard COBIT 5 PO4.11
+src/services/architecture-invariants/checks.ts:463: * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
+src/services/architecture-invariants/checks.ts:549: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/services/architecture-invariants/checks.ts:550: * @standard IFRS Foundation issued-standards-as-of-2026-05
+src/services/architecture-invariants/checks.ts:619: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+src/services/architecture-invariants/checks.ts:620: * @standard ISO 19011:2018 §6.4.6 audit-evidence
+src/services/architecture-invariants/checks.ts:832: * @standard ISO 19011:2018 §6.4 audit-evidence
+src/services/architecture-invariants/checks.ts:860: * @standard ISO/IEC 25010:2023 performance-efficiency
+src/services/architecture-invariants/checks.ts:861: * @standard SQL-92 §5.4 indexing-strategy
+src/services/architecture-invariants/checks.ts:912: * @standard rfc-5545 icalendar-cron
+src/services/architecture-invariants/checks.ts:959: * @standard NIST FIPS-180-4 sha-256
+src/services/architecture-invariants/checks.ts:960: * @standard ISO 27037:2012 evidence-preservation
 src/services/architecture-invariants/index.ts:20: * @standard ISO/IEC 25010:2023 quality-model
 src/services/architecture-invariants/onInit.ts:20: * @standard ISO/IEC 25010:2023 reliability-fault-tolerance
 src/services/architecture-invariants/types.ts:27: * @standard ISO/IEC 25010:2023 functional-suitability + reliability
@@ -1311,6 +1312,13 @@ src/services/camt053-import.service.ts:19: * @standard ISO-9362:2022 bic
 src/services/camt053-import.service.ts:20: * @standard ISO-4217:2015 currency-codes
 src/services/camt053-import.service.ts:21: * @standard ISO-8601-1:2019 date-time
 src/services/camt053-import.service.ts:260: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/services/cloning/boot.ts:20: * @standard W3C Verifiable Credentials Data Model 2.0
+src/services/cloning/genome.ts:10: * @standard RFC 4122 §4.3 + RFC 8785 (genome-uuid is content-addressable)
+src/services/cloning/genome.ts:11: * @standard W3C PROV (genome carries source-instance lineage)
+src/services/cloning/index.ts:9: * @standard W3C Verifiable Credentials Data Model 2.0
+src/services/cloning/publish.ts:5: * @standard W3C Activity Streams 2.0 (federated content envelope)
+src/services/cloning/publish.ts:6: * @standard NIST FIPS 204 ML-DSA (when sign fn provided)
+src/services/cloning/verify.ts:10: * @standard RFC 4122 §4.3 + RFC 8785
 src/services/country-api-clients.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/country-api-clients.ts:338: * @standard ISO-4217:2015 currency-codes
 src/services/country-api-clients.ts:339: * @standard ISO-8601-1:2019 date-time
@@ -2936,8 +2944,8 @@ src/services/ai/sanctions-screening.ts:19: * @compliance GDPR Art.22 automated-i
 src/services/ai/sanctions-screening.ts:20: * @compliance GDPR Art.22(3) right-to-human-intervention
 src/services/ai/semantic-search.ts:13: * @compliance EU AI Act 2024 minimal-risk
 src/services/ai/tax-classification.ts:12: * @compliance EU AI Act 2024 limited-risk
-src/services/architecture-invariants/checks.ts:1182: * @compliance SOX §404 (Byzantine tamper detection)
-src/services/architecture-invariants/checks.ts:1238: * @compliance SOX §404 referential integrity
+src/services/architecture-invariants/checks.ts:1183: * @compliance SOX §404 (Byzantine tamper detection)
+src/services/architecture-invariants/checks.ts:1239: * @compliance SOX §404 referential integrity
 src/services/architecture-invariants/onInit.ts:19: * @compliance SOX §404 internal-controls boot-time-verification
 src/services/architecture-invariants/types.ts:29: * @compliance SOX §404 internal-controls invariants
 src/services/bank-reconciliation.service.ts:485:   * @compliance SOX §404 internal-controls
@@ -4634,13 +4642,14 @@ src/services/ai/anomaly-detection.ts:12: * @audit ISO-19011:2018 §6.4.6 audit-e
 src/services/ai/audit-summarisation.ts:11: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/services/ai/cloudflare-ai.ts:52: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
 src/services/ai/durable-objects.ts:20: * @audit ISO-19011:2018 audit-trail coordination-evidence
-src/services/architecture-invariants/checks.ts:1165: * @audit ISO 19011:2018 §6.4.6
-src/services/architecture-invariants/checks.ts:1183: * @audit ISO 19011:2018 §6.4.6
-src/services/architecture-invariants/checks.ts:1237: * @audit ISO 19011:2018 §6.4.6
-src/services/architecture-invariants/checks.ts:463: * @audit ISO 19011:2018 §6.4 audit-evidence
-src/services/architecture-invariants/checks.ts:765: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
-src/services/architecture-invariants/checks.ts:832: * @audit  registry-vs-implementation traceability
-src/services/architecture-invariants/checks.ts:960: * @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
+src/services/architecture-invariants/checks.ts:1166: * @audit ISO 19011:2018 §6.4.6
+src/services/architecture-invariants/checks.ts:1184: * @audit ISO 19011:2018 §6.4.6
+src/services/architecture-invariants/checks.ts:1238: * @audit ISO 19011:2018 §6.4.6
+src/services/architecture-invariants/checks.ts:1276: * @audit ISO 19011:2018 §6.4.6 (clone-integrity provable at build time)
+src/services/architecture-invariants/checks.ts:464: * @audit ISO 19011:2018 §6.4 audit-evidence
+src/services/architecture-invariants/checks.ts:766: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
+src/services/architecture-invariants/checks.ts:833: * @audit  registry-vs-implementation traceability
+src/services/architecture-invariants/checks.ts:961: * @audit ISO-19011:2018 §6.4.6 audit-evidence-immutability
 src/services/architecture-invariants/checks.ts:9: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/services/architecture-invariants/index.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/services/architecture-invariants/onInit.ts:18: * @audit ISO-19011:2018 §6.4 audit-evidence-runtime-gate
@@ -4656,6 +4665,9 @@ src/services/business-chains/run-chain.ts:11: * @audit ISO-19011:2018 §6.4.6 au
 src/services/business-chains/types.ts:21: * @audit ISO-19011:2018 §6.4.6 audit-evidence-process
 src/services/camt053-import.service.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/services/camt053-import.service.ts:22: * @audit ISO-19011:2018 audit-trail
+src/services/cloning/boot.ts:21: * @audit ISO 19011:2018 §6.4.6 (clone provenance preserved)
+src/services/cloning/index.ts:10: * @audit ISO 19011:2018 §6.4.6 (clone provenance + Conservation Law 24)
+src/services/cloning/verify.ts:11: * @audit ISO 19011:2018 §6.4.6
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-api-clients.ts:477: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-api-clients.ts:517: * @audit ISO-19011:2018 audit-trail external-system-evidence

@@ -109,6 +109,7 @@ export async function runAllInvariants(
     results.push(await C.checkContentIntegrityProvable(ctx))  // Law 8 — RRRRR
     results.push(await C.checkReferentialHarmony(ctx))        // Law 10 — UUUUU
     results.push(C.checkGenomeDeterministic(ctx))             // Law 24 — HHHHHH
+    results.push(C.checkErpaxObservesSelf(ctx))               // Law 23 — GGGGGG
   }
 
   return {
