@@ -23,31 +23,74 @@ export const MetaSkillAgent: DomainAgent = {
     ]
   },
   async onSchedule(ctx: AgentContext): Promise<AgentEffect[]> {
-    // Slice QQQQQ — meta-automation. Hourly sweep:
-    //   1. Call erpax.invariants.runOnSchedule (TBD MCP tool) OR
-    //      delegate to in-process proposer with a small recent-result window.
-    //   2. For each WARN/FAIL, propose a fix; auto-apply where safe.
-    //   3. Emit fix:proposed for every proposal so the audit trail
-    //      shows what the meta-agent decided.
-    //
-    // The proposer logic lives in src/services/meta-automation/ —
-    // ctx.mcp gives this agent access to every erpax.* tool.
+    // Slice QQQQQ — meta-automation production wiring.
+    // Hourly sweep:
+    //   1. Run all 26 conservation invariants via the runtime suite.
+    //   2. For each WARN/FAIL, proposeFixFor → MCP tool call.
+    //   3. Auto-apply safe proposals; escalate the rest.
+    //   4. Emit meta:sweep:tick + escalations (audit-trailed).
+    //   5. Run Law 25 (commerce) + Law 26 (self-accounting) against
+    //      the platform tenant — escalate overdue filings/obligations.
+    const sweptAt = new Date().toISOString()
     const effects: AgentEffect[] = [
       { kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: 'meta-sweep', action: 'scheduled-sweep' } },
     ]
-    // The actual invariant-run + proposer-dispatch is invoked here in
-    // production — keep the agent itself thin so onSchedule stays under
-    // the Worker CPU budget. The dispatcher reads results from the
-    // architecture-invariants suite + persists fix:proposed events.
-    effects.push({
-      kind: 'emit',
-      event: {
-        id: 'meta:sweep:tick',
-        tenantId: ctx.tenantId,
-        payload: { at: new Date().toISOString() },
-        emittedAt: new Date().toISOString(),
-      },
-    })
+
+    // 1. Run invariants suite + dispatch proposer
+    try {
+      const { runAllInvariants } = await import('@/services/architecture-invariants')
+      const { processInvariantResults } = await import('@/services/meta-automation')
+      const suite = await runAllInvariants({ payload: ctx.payload, repoRoot: process.cwd() })
+      const results = [...suite.fails, ...suite.warns]
+      const summary = await processInvariantResults({ results, mcp: ctx.mcp })
+      effects.push({
+        kind: 'emit',
+        event: {
+          id: 'meta:sweep:tick', tenantId: ctx.tenantId,
+          payload: { at: sweptAt, ...summary }, emittedAt: sweptAt,
+        },
+      })
+      if (summary.escalated > 0) {
+        effects.push({
+          kind: 'escalate', severity: 'major',
+          templateKey: 'meta.proposalsEscalated',
+          vars: { count: summary.escalated, sweepAt: sweptAt },
+        })
+      }
+    } catch (err) {
+      effects.push({
+        kind: 'escalate', severity: 'critical',
+        templateKey: 'meta.sweepFailed',
+        vars: { error: (err as Error).message, sweepAt: sweptAt },
+      })
+    }
+
+    // 2. Law 25 + Law 26 audits against the platform tenant
+    try {
+      const { checkCommerceLifecycle } = await import('@/services/commerce')
+      const { checkSelfAccountingComplete } = await import('@/services/self-accounting')
+      const lifecycle = checkCommerceLifecycle()
+      if (!lifecycle.ok) {
+        effects.push({
+          kind: 'escalate', severity: 'major', templateKey: 'meta.commerceOrphans',
+          vars: { count: lifecycle.orphans.length, sample: lifecycle.orphans.slice(0, 3).join(', ') },
+        })
+      }
+      const accounting = checkSelfAccountingComplete('erpax-platform')
+      if (!accounting.ok) {
+        effects.push({
+          kind: 'escalate', severity: 'blocker', templateKey: 'meta.selfAccountingOverdue',
+          vars: {
+            unbookedRevenues: accounting.unbookedRevenues,
+            overdueFilings: accounting.overdueFilings.length,
+            overdueObligations: accounting.overdueObligations.length,
+          },
+        })
+      }
+    } catch {
+      // Self-accounting may not be active on a fresh instance — non-fatal.
+    }
+
     return effects
   },
 }

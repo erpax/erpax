@@ -24,6 +24,14 @@ import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/services/integrity'
 import { publishSelf, bootFromFederation, type GenomePublication } from '@/services/cloning'
+import { checkout, provisionInstance, listSubscriptions, checkCommerceLifecycle } from '@/services/commerce'
+import { bookRevenue, bookCost, scheduleFiling, scheduleObligation, checkSelfAccountingComplete, listFilings, listObligations } from '@/services/self-accounting'
+import { createDid, resolveDid, listDids } from '@/services/did'
+import { publishStandard, resolveStandard, subscribeTenant, tenantSubscriptions } from '@/services/standards-registry'
+import { anchorRoot, listAnchors, NOTARY_STUB_BACKEND } from '@/services/anchoring'
+import { tenantPins } from '@/services/archival'
+import { listProposals } from '@/services/meta-automation'
+import { listAgentCapabilities } from '@/services/beyond'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -219,6 +227,217 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         })
         return json(result)
       },
+    },
+    // ── Slice JJJJJJ — Commerce: ERPax sells + deploys + bills itself ──
+    {
+      name: 'erpax.commerce.checkout',
+      description: 'Stripe checkout — initiate a subscription for a new tenant. Reserves a tenant id; activates on payment-success webhook → erpax.commerce.provisionInstance.',
+      parameters: {
+        tier: z.enum(['free', 'solo', 'team', 'business', 'enterprise']),
+        roleProfileId: z.string(),
+        email: z.string(),
+        companyName: z.string(),
+        billingJurisdiction: z.string(),
+        returnUrl: z.string(),
+      },
+      async handler(args) {
+        return json(await checkout(args as never))
+      },
+    },
+    {
+      name: 'erpax.commerce.provisionInstance',
+      description: 'Deploy a Cloudflare Worker for a paid tenant + ingest the canonical ERPax genome (slice HHHHHH bootFromFederation). Returns the new instance MCP endpoint + admin URL + clone DID.',
+      parameters: {
+        tenantId: z.string(),
+        roleProfileId: z.string(),
+        genomeBundleUuid: z.string(),
+        region: z.enum(['wnam', 'enam', 'eu', 'apac', 'sa', 'me-af']),
+        customDomain: z.string().optional(),
+      },
+      async handler(args) {
+        return json(await provisionInstance(args as never))
+      },
+    },
+    {
+      name: 'erpax.commerce.listSubscriptions',
+      description: 'List every active subscription registered with this ERPax instance (tier + role profile + MCP endpoint + clone DID).',
+      parameters: {},
+      async handler() { return json(listSubscriptions()) },
+    },
+    {
+      name: 'erpax.commerce.lifecycleAudit',
+      description: 'Conservation Law 25 — verify every active tenant has Stripe subscription + CF deployment + audit-chain entry. Surfaces orphans (paid-no-deploy, deploy-no-pay).',
+      parameters: {},
+      async handler() { return json(checkCommerceLifecycle()) },
+    },
+    // ── Slice KKKKKK — Self-accounting + filing + obligations ──
+    {
+      name: 'erpax.accounting.bookRevenue',
+      description: 'Book subscription revenue per IFRS-15 §31-§39 (point-in-time / over-time recognition). Called by Stripe webhook handler on the platform tenant.',
+      parameters: {
+        platformTenantId: z.string(),
+        booking: z.object({
+          source: z.enum(['stripe', 'manual']),
+          stripeInvoiceId: z.string().optional(),
+          tenantId: z.string(),
+          amountCents: z.number(),
+          currency: z.string(),
+          recognitionMethod: z.enum(['point-in-time', 'over-time']),
+          performanceObligationsSatisfied: z.array(z.string()),
+        }),
+      },
+      async handler({ platformTenantId, booking }) {
+        return json(bookRevenue(platformTenantId as string, booking as never))
+      },
+    },
+    {
+      name: 'erpax.accounting.bookCost',
+      description: 'Book a cost (Cloudflare infra / payroll / supplier / tax). Auto-called by the data agent for CF billing + HR agent for payroll.',
+      parameters: {
+        platformTenantId: z.string(),
+        cost: z.object({
+          source: z.enum(['cloudflare', 'payroll', 'supplier', 'tax']),
+          category: z.string(),
+          amountCents: z.number(),
+          currency: z.string(),
+          periodStart: z.string(),
+          periodEnd: z.string(),
+        }),
+      },
+      async handler({ platformTenantId, cost }) {
+        return json(bookCost(platformTenantId as string, cost as never))
+      },
+    },
+    {
+      name: 'erpax.accounting.scheduleFiling',
+      description: 'Schedule a regulatory filing (FINREP/COREP/IFRS-15/IFRS-S1/IFRS-S2/CSRD/VAT/DAC8/CRS/FATCA). Gov agent files it on dueAt - 1 day.',
+      parameters: {
+        platformTenantId: z.string(),
+        filing: z.object({
+          framework: z.enum(['FINREP','COREP','IFRS-15','IFRS-S1','IFRS-S2','CSRD','VAT','DAC8','CRS','FATCA']),
+          periodEnd: z.string(),
+          jurisdiction: z.string(),
+          dueAt: z.string(),
+        }),
+      },
+      async handler({ platformTenantId, filing }) {
+        return json(scheduleFiling(platformTenantId as string, filing as never))
+      },
+    },
+    {
+      name: 'erpax.accounting.scheduleObligation',
+      description: 'Schedule an obligation (VAT remittance / payroll / supplier invoice / regulator fee / tax prepayment). Finance + payment-provider agents settle it on dueAt via the declared payment rail.',
+      parameters: {
+        platformTenantId: z.string(),
+        obligation: z.object({
+          kind: z.enum(['vat-remittance','payroll','supplier-invoice','regulator-fee','tax-prepayment']),
+          amountCents: z.number(),
+          currency: z.string(),
+          dueAt: z.string(),
+          creditor: z.string(),
+          paymentRailHint: z.enum(['sepa','swift','card','wire','sepa-instant']).optional(),
+        }),
+      },
+      async handler({ platformTenantId, obligation }) {
+        return json(scheduleObligation(platformTenantId as string, obligation as never))
+      },
+    },
+    {
+      name: 'erpax.accounting.lifecycleAudit',
+      description: 'Conservation Law 26 — verify every revenue event booked + every filing filed by dueAt + every obligation paid by dueAt for the platform tenant. Returns overdue items for the meta-agent to escalate.',
+      parameters: { platformTenantId: z.string() },
+      async handler({ platformTenantId }) {
+        return json(checkSelfAccountingComplete(platformTenantId as string))
+      },
+    },
+    // ── Slice DDDDDD — DID resolver ──
+    {
+      name: 'erpax.did.create',
+      description: 'Create a W3C DID Core v1.0 document for a tenant or agent (did:erpax:<uuid>). Content-addressed; portable across federation.',
+      parameters: {
+        subject: z.record(z.unknown()),
+        publicKeyMultibase: z.string(),
+      },
+      async handler({ subject, publicKeyMultibase }) {
+        return json(createDid({ subject: subject as Record<string, unknown>, publicKeyMultibase: publicKeyMultibase as string }))
+      },
+    },
+    {
+      name: 'erpax.did.resolve',
+      description: 'Resolve a did:erpax:<uuid> identifier to its DID document.',
+      parameters: { did: z.string() },
+      async handler({ did }) { const d = resolveDid(did as string); return d ? json(d) : text(`unresolved: ${did as string}`) },
+    },
+    {
+      name: 'erpax.did.list',
+      description: 'List every DID registered with this instance.',
+      parameters: {},
+      async handler() { return json(listDids()) },
+    },
+    // ── Slice CCCCCC — Standards-as-live-objects ──
+    {
+      name: 'erpax.standards.publishLive',
+      description: 'Publish a standard as a uuid-keyed live object (body / id / version / paragraph / bodyText). Tenants subscribe by uuid; supersession proposes rebinds.',
+      parameters: {
+        body: z.string(), id: z.string(), version: z.string(), paragraph: z.string().optional(),
+        bodyText: z.string(), publisherDid: z.string(), supersedes: z.string().optional(),
+      },
+      async handler(args) {
+        return json(publishStandard(args as never))
+      },
+    },
+    {
+      name: 'erpax.standards.resolveLive',
+      description: 'Resolve a live-standard uuid to its content.',
+      parameters: { uuid: z.string() },
+      async handler({ uuid }) { const s = resolveStandard(uuid as string); return s ? json(s) : text(`unresolved: ${uuid as string}`) },
+    },
+    {
+      name: 'erpax.standards.subscribe',
+      description: 'Subscribe a tenant to a live-standard uuid. Future versions trigger Law 10 referential-harmony rebind proposals.',
+      parameters: { tenantId: z.string(), standardUuid: z.string() },
+      async handler({ tenantId, standardUuid }) {
+        subscribeTenant(tenantId as string, standardUuid as string)
+        return json({ ok: true, subscriptions: tenantSubscriptions(tenantId as string) })
+      },
+    },
+    // ── Slice BBBBBB — Blockchain anchoring ──
+    {
+      name: 'erpax.anchoring.anchorRoot',
+      description: 'Anchor a Merkle audit-chain root to a public chain (default: notary-signature stub). Regulators verify by resolving the chain anchor.',
+      parameters: { tenantId: z.string(), merkleRoot: z.string() },
+      async handler({ tenantId, merkleRoot }) {
+        const receipt = await anchorRoot({
+          tenantId: tenantId as string, merkleRoot: merkleRoot as string, backend: NOTARY_STUB_BACKEND,
+        })
+        return json(receipt)
+      },
+    },
+    {
+      name: 'erpax.anchoring.list',
+      description: 'List every audit anchor for a tenant — transaction ids on whatever chains were used.',
+      parameters: { tenantId: z.string() },
+      async handler({ tenantId }) { return json(listAnchors(tenantId as string)) },
+    },
+    // ── Slice EEEEEE — Long-term archival ──
+    {
+      name: 'erpax.archival.list',
+      description: 'List long-term archive pinning receipts for a tenant (IPFS / Arweave / Filecoin / R2-Glacier).',
+      parameters: { tenantId: z.string() },
+      async handler({ tenantId }) { return json(tenantPins(tenantId as string)) },
+    },
+    // ── Slice QQQQQ — Meta-automation ──
+    {
+      name: 'erpax.meta.listProposals',
+      description: 'List FixProposals the MetaSkillAgent has produced from invariant WARN/FAIL signals — what was auto-applied vs escalated to the maintainer.',
+      parameters: {},
+      async handler() { return json(listProposals()) },
+    },
+    {
+      name: 'erpax.agents.capabilities',
+      description: 'List every registered DomainAgent\'s capability matrix (Law 17 — roleId + readScopes + writeScopes + mcpToolPermissions + jurisdictions).',
+      parameters: {},
+      async handler() { return json([...listAgentCapabilities().entries()]) },
     },
     {
       name: 'erpax.standards.cite',
