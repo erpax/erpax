@@ -1,10 +1,17 @@
 /**
  * Leave Requests — vacation / sick / parental / unpaid leave register.
  *
- * Slice GGGG (2026-05-10): per IAS-19 §13 short-term employee benefits
- * (paid leave), the entity must accrue obligations for unused
- * compensated absences. Each request decrements the employee's
- * entitlement balance; the running balance feeds the IAS-19 accrual.
+ * Slice GGGG (2026-05-10) original; Slice BBBBB-cut1 (2026-05-11)
+ * migrated through `createAccountingCollection` factory — drops 25 lines
+ * of boilerplate (imports + access + hooks + base fields), leaves
+ * only the DOMAIN-SPECIFIC fields. The factory injects tenant + audit
+ * fields + status + notes + audit-trail hook automatically per the
+ * declarative metadata below.
+ *
+ * Per IAS-19 §13 short-term employee benefits (paid leave), the entity
+ * must accrue obligations for unused compensated absences. Each request
+ * decrements the employee's entitlement balance; the running balance
+ * feeds the IAS-19 accrual.
  *
  * National labour codes (BG Labour Code Art.155-176, EU Working Time
  * Directive 2003/88/EC, US FMLA, etc.) drive the leave-type
@@ -20,27 +27,41 @@
  * @audit ISO-19011:2018 audit-trail leave-evidence
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  * @see ./Employees.ts
+ * @see ../factories/collection-factory.ts
  */
 
-import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { accountingCollectionAccess } from '@/plugins/auth/access'
-import { multiTenancyField, statusField, notesField, auditFields, referenceField } from '../fields/base-accounting-fields'
+import { createAccountingCollection } from '../factories/collection-factory'
+import { referenceField } from '../fields/base-accounting-fields'
 
-const LeaveRequests: CollectionConfig = {
+export default createAccountingCollection({
   slug: 'leave-requests',
   labels: { singular: 'Leave Request', plural: 'Leave Requests' },
-  admin: {
-    useAsTitle: 'reference',
-    defaultColumns: ['reference', 'employee', 'leaveType', 'startDate', 'endDate', 'workingDays', 'status'],
-    description:
-      'Vacation / sick / parental / unpaid leave register. Approved requests decrement entitlement balance + feed IAS-19 accrual.',
-  },
-  access: accountingCollectionAccess(),
-  fields: [
-    multiTenancyField(),
+  useAsTitle: 'reference',
+  defaultColumns: ['reference', 'employee', 'leaveType', 'startDate', 'endDate', 'workingDays', 'status'],
+  description:
+    'Vacation / sick / parental / unpaid leave register. Approved requests decrement entitlement balance + feed IAS-19 accrual.',
+
+  // Declarative spec metadata — flows into MCP_STANDARDS_INDEX (Law 38) +
+  // event-graph closure (Law 4) + feature gating (Slice VVV).
+  standards: ['IAS-19', 'ISO-8601-1:2019', 'EU-Directive-2003/88/EC', 'US-FMLA', 'BG-Labour-Code'],
+  feature: 'hr-leave',
+  // No emits today — once an approval lifecycle is wired, add:
+  //   emits: ['leave:submitted', 'leave:approved', 'leave:rejected']
+
+  // Inject status with the request lifecycle states.
+  injectStatusField: true,
+  statusOptions: [
+    { label: 'Draft', value: 'draft' },
+    { label: 'Submitted (awaiting approval)', value: 'submitted' },
+    { label: 'Approved', value: 'approved' },
+    { label: 'Rejected', value: 'rejected' },
+    { label: 'In Progress (currently on leave)', value: 'in_progress' },
+    { label: 'Completed', value: 'completed' },
+    { label: 'Cancelled', value: 'cancelled' },
+  ],
+  statusDefault: 'draft',
+
+  fields: () => [
     referenceField(),
     { name: 'employee', type: 'relationship', relationTo: 'employees', required: true, index: true },
     {
@@ -92,7 +113,7 @@ const LeaveRequests: CollectionConfig = {
       type: 'group',
       fields: [
         { name: 'entitlementType', type: 'text',
-          admin: { description: 'Which entitlement bucket this draws from (e.g. "annual_2026").' } },
+          admin: { description: 'Which entitlement bucket this draws from (e.g. "annual_2026"). Future: relate to LeaveEntitlements collection.' } },
         { name: 'beforeBalance', type: 'number',
           admin: { description: 'Days remaining before this request.' } },
         { name: 'afterBalance', type: 'number',
@@ -101,38 +122,15 @@ const LeaveRequests: CollectionConfig = {
           admin: { description: 'Days drawn from prior-year carry-over.' } },
       ],
     },
-    // 'approver' is the manager assigned to action this request; distinct
-    // from 'approvedBy' (who actually clicked approve — comes from auditFields).
+    // 'approver' = manager assigned to action this request (distinct from
+    // 'approvedBy' from auditFields = who actually clicked approve).
     { name: 'approver', type: 'relationship', relationTo: 'users' },
-    // 'approvedAt' removed — comes from auditFields() below; was a duplicate
-    // that tripped Payload's DuplicateFieldName guard at config-load time.
     { name: 'rejectionReason', type: 'text' },
     { name: 'replacedByEmployee', type: 'relationship', relationTo: 'employees',
       admin: { description: 'Coverage employee during the absence (when applicable).' } },
     { name: 'isHandoverComplete', type: 'checkbox', defaultValue: false },
     { name: 'cancelledDate', type: 'date' },
     { name: 'cancelReason', type: 'text' },
-    statusField(
-      [
-        { label: 'Draft', value: 'draft' },
-        { label: 'Submitted (awaiting approval)', value: 'submitted' },
-        { label: 'Approved', value: 'approved' },
-        { label: 'Rejected', value: 'rejected' },
-        { label: 'In Progress (currently on leave)', value: 'in_progress' },
-        { label: 'Completed', value: 'completed' },
-        { label: 'Cancelled', value: 'cancelled' },
-      ],
-      'draft',
-    ),
-    ...auditFields({ readOnly: true }),
-    notesField(),
+    // Status / auditFields / notes injected by the factory below.
   ],
-  hooks: {
-    beforeValidate: [autoPopulateTenant],
-    beforeChange: [autoPopulateCreatedBy],
-    afterChange: [auditTrailAfterChange('leave-requests')],
-  },
-  timestamps: true,
-}
-
-export default LeaveRequests
+})
