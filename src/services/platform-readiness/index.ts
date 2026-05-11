@@ -151,8 +151,8 @@ export function buildReadinessManifest(args: {
       tenantRoleProfiles: listTenantRoles().length,
       locales: supportedLocales.length,
       standardsFamilies: 7,                                       // §0g
-      tamperProofCollections: TAMPER_PROOF_COLLECTIONS_REGISTRY.length,
-      uuidRefRegistry: UUID_REF_REGISTRY.length,
+      tamperProofCollections: TAMPER_PROOF_COLLECTIONS_REGISTRY.size,
+      uuidRefRegistry: UUID_REF_REGISTRY.size,
       siteSurfaces: SHADCN_SURFACE_MAP.length,
       storageBackends: listBackends().length,
       dimensions: dimensionsSnapshot?.length ?? 10,

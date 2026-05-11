@@ -288,10 +288,10 @@ export function rebuildMcpFromSource(args: {
  */
 export function emitToolDefsSkeleton(expected: ReadonlyArray<ExpectedTool>): string {
   const items = expected.map((e) => `    {
-      name: '${e.name}',
+      name: ${JSON.stringify(e.name)},
       description: ${JSON.stringify(e.description)},
       parameters: {} as z.ZodRawShape,
-      async handler() { return text('TODO: rebuild from source — ${e.sourcePath ?? '?'}') },
+      async handler() { return text(${JSON.stringify(`TODO: rebuild from source — ${e.sourcePath ?? '?'}`)}) },
     },`).join('\n')
   return `// Auto-generated skeleton — slice ZZZZZZ rebuild-from-source.
 // This is a STARTER POINT, not a literal replacement of tool-defs.ts.

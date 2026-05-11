@@ -88,7 +88,7 @@ function toolsForChains(): ErpaxMcpTool[] {
  * mismatch.
  */
 function toolsForCollections(): ErpaxMcpTool[] {
-  return TAMPER_PROOF_COLLECTIONS_REGISTRY.map((slug) => ({
+  return [...TAMPER_PROOF_COLLECTIONS_REGISTRY].map((slug) => ({
     name: `erpax.auto.collection.${slug}.verify`,
     description: `[generated] Conservation Law 8 — recompute the content uuid for one row of '${slug}' and report match/mismatch. Pass the row JSON + tenantId.`,
     parameters: { row: z.record(z.unknown()), tenantId: z.string() } as z.ZodRawShape,
@@ -168,13 +168,13 @@ export function checkAutoGenerationCoverage(
   const violations: string[] = []
   const agentsCount = registry.all().length
   const chainsCount = Object.keys(BUSINESS_CHAINS).length
-  const collectionsCount = TAMPER_PROOF_COLLECTIONS_REGISTRY.length
+  const collectionsCount = TAMPER_PROOF_COLLECTIONS_REGISTRY.size
   const rolesCount = listTenantRoles().length
   const familiesCount = STANDARDS_FAMILIES.length
 
   const agentTools = registry.all().filter((a) => toolNames.has(`erpax.auto.agent.${a.id}`)).length
   const chainTools = Object.values(BUSINESS_CHAINS).filter((c) => toolNames.has(`erpax.auto.chain.${c.id.toLowerCase().replace(/_/g, '-')}`)).length
-  const collectionTools = TAMPER_PROOF_COLLECTIONS_REGISTRY.filter((s) => toolNames.has(`erpax.auto.collection.${s}.verify`)).length
+  const collectionTools = [...TAMPER_PROOF_COLLECTIONS_REGISTRY].filter((s) => toolNames.has(`erpax.auto.collection.${s}.verify`)).length
   const roleTools = listTenantRoles().filter((r) => toolNames.has(`erpax.auto.role.${r.id.replace(/[^a-z0-9-]/g, '-')}`)).length
   const familyTools = STANDARDS_FAMILIES.filter((f) => toolNames.has(`erpax.auto.standards.${f}`)).length
 
