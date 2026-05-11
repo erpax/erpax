@@ -17,6 +17,8 @@ The deep docs are the **human-readable counterpart** of the runtime `MCP_STANDAR
 |---|---|---|---|
 | **[mcp.md](./mcp.md)** | MCP layer (8 self-properties) | DDDDD + VVVVVV..AAAAAAA + BBBBBBB | 1, 7, 37, 38, 39, 40, 41, 44, 45, 50, 52 |
 | **[integrity.md](./integrity.md)** | UUID family (content / type / short / stream / replication) | RRRRR, SSSSS, TTTTT, UUUUU, ZZZZZ, GGGGGGG, FFFFFFF, IIIIIIIII | 8, 10, 11, 12, 18, 19, 35, 36, 46, 47, 48 |
+| **[voting.md](./voting.md)** | Voting + rating uuid coupling (7 violations) | OOOOOO | 30, 31 |
+| **[streams.md](./streams.md)** | Quantum streams + Lamport + uuid hash-chain | RRRRRR, SSSSSS | 33, 34 |
 
 ## Coming next (per-domain stubs)
 
@@ -24,9 +26,7 @@ These references are planned. Until they land, the inline `@standard` tags at th
 
 | Planned doc | Domain | Slices | Conservation Laws |
 |---|---|---|---|
-| `voting.md` | Voting + rating uuid coupling | OOOOOO | 30, 31 |
 | `pwa.md` | Progressive Web App via uuid | NNNNNNNN | 52 |
-| `streams.md` | Quantum streams + Lamport + uuid hash-chain | RRRRRR, SSSSSS | 33, 34 |
 | `storage.md` | Storage independence + replication consensus | TTTTTT, UUUUUU | 35, 36 |
 | `topology.md` | Torus closure + infinite-within-finite | CCCCCCC, IIIIIIIII | 43, 48 |
 | `trinity.md` | Three generators (Identity / Causality / Closure) | JJJJJJJJ | (3 generators over 52 derived) |
