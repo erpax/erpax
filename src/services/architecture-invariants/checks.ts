@@ -39,6 +39,7 @@ import { checkMcpToolStandardization } from '@/services/agents/mcp/standardizati
 import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/agents/mcp/presentation'
 import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
 import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
+import { checkMcpDryCleanliness } from '@/services/agents/mcp/dry-clean'
 
 async function loadMcpTools(): Promise<ReadonlyArray<ErpaxMcpTool>> {
   const m = await import('@/services/agents/mcp/tool-defs')
@@ -1604,6 +1605,24 @@ export function checkTorusBoundedInvariant(_ctx: InvariantContext): InvariantRes
   return fail('entropy', 'torus-bounded',
     `${result.envelopeViolations.length} envelope violation(s)`,
     [...result.envelopeViolations])
+}
+
+/**
+ * Conservation Law 50 — `checkMcpDryCleanlinessInvariant`. Slice
+ * BBBBBBB (2026-05-11). Per user 'mcp solves manual work by dry
+ * cleaning'. No two non-generated tools share >MAX_DESCRIPTION_OVERLAP
+ * word overlap; shape + verb clusters reported as warn.
+ */
+export async function checkMcpDryCleanlinessInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+  const tools = await loadMcpTools()
+  const result = checkMcpDryCleanliness(tools)
+  if (result.ok) {
+    return pass('entropy', 'mcp-dry-cleanliness',
+      `${result.report.handCuratedCount} hand-curated tools clean — Law 50 satisfied (${result.report.shapeClusters.length} shape clusters + ${result.report.verbInconsistencies.length} verb inconsistencies as refactor opportunities)`)
+  }
+  return fail('entropy', 'mcp-dry-cleanliness',
+    `${result.report.descriptionDuplicates.length} description duplicates (Law 50 violation)`,
+    result.report.descriptionDuplicates.slice(0, 8).map((d) => `${d.toolA} <-> ${d.toolB} (overlap=${d.overlap})`))
 }
 
 /**

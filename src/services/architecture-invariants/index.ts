@@ -130,6 +130,7 @@ export async function runAllInvariants(
     results.push(await C.checkReplicationConsensusProbe(ctx)) // Law 36 — UUUUUU
     results.push(C.checkTorusBoundedInvariant(ctx))           // Law 43 — CCCCCCC
     results.push(C.checkInfiniteFinitenessInvariant(ctx))     // Law 48 — IIIIIIIII
+    results.push(await C.checkMcpDryCleanlinessInvariant(ctx))  // Law 50 — BBBBBBB
   }
 
   return {

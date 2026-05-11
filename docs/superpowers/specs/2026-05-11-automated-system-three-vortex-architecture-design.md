@@ -1914,6 +1914,54 @@ Slice BBBBB (split monolithic plugin into N composable per-domain DRY plugins) w
 
 @standard W3C JSON-LD 1.1 — typed dimensional manifests; ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries; Topology — 10 vortices form the torus surface (§0b + CCCCCCC); ISO 19011:2018 §6.4.6 (every collection traceable to a dimension).
 
+## 0ae. MCP solves manual work by DRY cleaning
+
+Per user 'mcp solves manual work by dry cleaning'. The MCP catalog has grown to ~190 tools across ~25 areas — manual review can't catch the gradual accretion of duplicate descriptions, copy-paste parameter shapes, near-identical handlers. Slice BBBBBBB ships `src/services/agents/mcp/dry-clean.ts` with an automated detector + extraction proposer.
+
+### Three checks
+
+| Check | Trigger | Recommendation |
+|---|---|---|
+| **Description duplication** | Pairs of tools with ≥80% Jaccard word-overlap on description (descriptions ≥8 tokens) | Extract a shared description template; tools likely differ only in subject |
+| **Parameter shape clusters** | ≥3 tools sharing identical parameter-name set | Extract `z.object({…})` as a shared const + reuse |
+| **Verb inconsistencies** | Same verb (`erpax.*.list`, `erpax.*.check`) with ≥2 different parameter shapes (≥4 tools total) | Normalize the parameter shape across the verb |
+
+Auto-generated tools (slice WWWWWW — `[generated]` prefix) are excluded from description duplication (they intentionally follow a single template); they're included in shape clustering since templates may still extract.
+
+### Conservation Law 50 — DRY cleanliness
+
+`checkMcpDryCleanlinessInvariant`:
+- **Fail** if any description-duplicate pair exceeds the threshold (Law 50 violation — copy-paste discipline broken).
+- **Pass with note** if shape clusters / verb inconsistencies exist (refactor opportunities, not build-blocks — extraction is a judgment call).
+
+### MCP surface (slice BBBBBBB)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.dryCleanScan` | Full scan: description duplicates + shape clusters + verb inconsistencies |
+| `erpax.platform.checkDryCleanliness` | Conservation Law 50 verdict |
+
+### Why this caps the seven self-properties
+
+The MCP self-properties stack now reads:
+
+| # | Property | Slice | Conservation Law |
+|---|---|---|---|
+| 1 | Discoverable | VVVVVV | (Law 1 spec-coverage extension) |
+| 2 | Self-built | WWWWWW | Law 37 |
+| 3 | Self-standardized | XXXXXX | Law 38 |
+| 4 | Self-presented | YYYYYY | Law 39 |
+| 5 | Self-rebuildable | ZZZZZZ | Law 40 |
+| 6 | Self-testable | AAAAAAA | Law 41 |
+| 7 | Self-proving | DDDDDDD | Law 44 |
+| 8 | **Self-DRY-cleaning** | **BBBBBBB** | **Law 50** |
+
+Eight self-properties: **the MCP layer now discovers itself, builds itself, standardizes itself, presents itself, rebuilds itself, tests itself, proves itself, and now actively detects + proposes its own DRY refactors**. Every operational concern of a software surface is internalized.
+
+### Standards anchoring
+
+@standard ISO/IEC 25010:2023 §5.4 reusability — DRY by detection; ISO/IEC 25010:2023 §5.7 modularity; ISO 19011:2018 §6.4.6 (every duplication finding audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

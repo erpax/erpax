@@ -71,6 +71,7 @@ import {
   compareExpectedVsLive, emitToolDefsSkeleton, checkMcpRebuildableFromSource,
 } from './rebuild-from-source'
 import { selfTestAll, selfTestOne, checkMcpSelfTestable } from './self-test'
+import { dryCleanScan, checkMcpDryCleanliness, MAX_DESCRIPTION_OVERLAP } from './dry-clean'
 import { checkTorusBounded, traceTorusRoundTrip, TORUS_DEFAULT_ENVELOPE, TORUS_VERTICES, TORUS_EDGES } from '@/services/topology/torus'
 import {
   buildDryProofBundle, publishDryProofBundle, getCurrentProofBundle,
@@ -1620,6 +1621,19 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Conservation Law 45 — every agent must have at least one law per emitted effect kind; average coverage ratio < 1.0 (otherwise regrouping isn\'t buying efficiency). ISO/IEC 25010:2023 §5.2 performance.',
       parameters: {},
       async handler() { return json(checkAgentLawCoverage()) },
+    },
+    // ── Slice BBBBBBB — MCP solves manual work by DRY cleaning (Law 50) ──
+    {
+      name: 'erpax.platform.dryCleanScan',
+      description: `Per user 'mcp solves manual work by dry cleaning' — scan the catalog for description duplicates (jaccard >= ${MAX_DESCRIPTION_OVERLAP}), parameter-shape clusters (>=3 tools sharing param names), verb inconsistencies (same verb / different shapes). Returns extraction proposals (W3C JSON-LD 1.1, ISO/IEC 25010:2023 §5.4 reusability).`,
+      parameters: {},
+      async handler() { return json(dryCleanScan(tools)) },
+    },
+    {
+      name: 'erpax.platform.checkDryCleanliness',
+      description: `Conservation Law 50 — no two non-generated tools share > ${MAX_DESCRIPTION_OVERLAP * 100}% word overlap; shape clusters + verb inconsistencies are warnings (refactor opportunities). ISO/IEC 25010:2023 §5.7 modularity.`,
+      parameters: {},
+      async handler() { return json(checkMcpDryCleanliness(tools)) },
     },
     {
       name: 'erpax.platform.checkSelfTestable',
