@@ -2219,7 +2219,6 @@ src/utilities/tenant-context.ts:38: * @standard ISO-4217:2015 currency-codes alp
 src/utilities/tenant-context.ts:39: * @standard BCP-47 language-tag locale-cascade
 src/utilities/tenant-context.ts:40: * @standard ECMA-402 internationalization-api
 src/utilities/tenantRemoteSecrets.ts:5: * @standard NIST SP-800-108 key-derivation-function (sibling: `getPreviewSecret`)
-tests/_attic/int-emptied/test-utils.ts:5: * @standard ISO/IEC-29119:2022 software-testing test-infrastructure
 tests/e2e/admin-evidence.e2e.spec.ts:25: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/admin-evidence.e2e.spec.ts:26: * @standard ISO/IEC-29119-3:2021 test-documentation
 tests/e2e/admin-evidence.e2e.spec.ts:27: * @standard W3C WebDriver-BiDi browser-automation
@@ -3566,26 +3565,6 @@ src/plugins/accounting/collections/WipSnapshots.ts:19: * @accounting US-GAAP ASC
 src/plugins/accounting/collections/WorkOrders.ts:12: * @accounting IFRS IAS-2 §10 §12 cost-of-conversion
 src/plugins/accounting/collections/WorkOrders.ts:13: * @accounting IFRS IAS-2 §13 normal-capacity-overhead-absorption
 src/plugins/accounting/collections/WorkOrders.ts:14: * @accounting US-GAAP ASC-330-10-30 inventory-cost
-src/plugins/accounting/collections/_attic/APAgingReport.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/APAgingReport.ts:16: * @accounting US-GAAP ASC-405 liabilities accounts-payable
-src/plugins/accounting/collections/_attic/ARAgingReport.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/ARAgingReport.ts:16: * @accounting US-GAAP ASC-310 receivables accounts-receivable
-src/plugins/accounting/collections/_attic/AllowanceForDoubtfulAccounts.ts:15: * @accounting IFRS IFRS-9 expected-credit-losses
-src/plugins/accounting/collections/_attic/AllowanceForDoubtfulAccounts.ts:16: * @accounting US-GAAP ASC-326 financial-instruments-credit-losses
-src/plugins/accounting/collections/_attic/AllowanceForDoubtfulAccounts.ts:17: * @accounting US-GAAP ASC-310-40 troubled-debt-restructurings
-src/plugins/accounting/collections/_attic/BudgetVariance.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/BudgetVariance.ts:16: * @accounting US-GAAP ASC-270 interim-reporting
-src/plugins/accounting/collections/_attic/COGSCalculation.ts:15: * @accounting IFRS IAS-2 inventories cost-of-inventories
-src/plugins/accounting/collections/_attic/COGSCalculation.ts:16: * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
-src/plugins/accounting/collections/_attic/CashFlowForecast.ts:15: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/plugins/accounting/collections/_attic/CashFlowForecast.ts:16: * @accounting US-GAAP ASC-230 statement-of-cash-flows
-src/plugins/accounting/collections/_attic/FinancialRatios.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/FinancialRatios.ts:16: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/InventoryCostFlow.ts:15: * @accounting IFRS IAS-2 inventories cost-formulas
-src/plugins/accounting/collections/_attic/InventoryCostFlow.ts:16: * @accounting US-GAAP ASC-330 inventory FIFO-LIFO-weighted-average
-src/plugins/accounting/collections/_attic/TrendAnalysis.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/TrialBalance.ts:15: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/plugins/accounting/collections/_attic/TrialBalance.ts:16: * @accounting US-GAAP ASC-205-10 overall-presentation
 src/plugins/accounting/collections/index.ts:23: * @accounting IFRS IAS-1 IAS-7 IAS-16 IAS-21 IAS-29 IAS-36 IAS-37 IFRS-9 IFRS-15
 src/plugins/accounting/collections/index.ts:24: * @accounting US-GAAP ASC-105 ASC-205 ASC-210 ASC-230 ASC-250 ASC-270 ASC-310 ASC-326 ASC-330 ASC-360 ASC-405 ASC-606 ASC-830
 src/plugins/accounting/collections/index.ts:25: * @accounting OECD SAF-T 2.0 standard-audit-file-tax
@@ -4663,15 +4642,6 @@ src/plugins/accounting/collections/WipSnapshots.ts:20: * @audit ISO-19011:2018 a
 src/plugins/accounting/collections/WorkOrders.ts:15: * @audit ISO-19011:2018 audit-trail production-execution
 src/plugins/accounting/collections/WorkflowDefinitions.ts:19: * @audit ISO-19011:2018 audit-trail workflow-evidence
 src/plugins/accounting/collections/WorkflowInstances.ts:15: * @audit ISO-19011:2018 §6.4.6 audit-evidence-workflow
-src/plugins/accounting/collections/_attic/APAgingReport.ts:17: * @audit ISO-19011:2018 audit-trail aging-report
-src/plugins/accounting/collections/_attic/ARAgingReport.ts:17: * @audit ISO-19011:2018 audit-trail aging-report
-src/plugins/accounting/collections/_attic/AllowanceForDoubtfulAccounts.ts:18: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/collections/_attic/BudgetVariance.ts:17: * @audit ISO-19011:2018 audit-trail variance-analysis
-src/plugins/accounting/collections/_attic/COGSCalculation.ts:17: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/collections/_attic/CashFlowForecast.ts:17: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/collections/_attic/InventoryCostFlow.ts:17: * @audit ISO-19011:2018 audit-trail
-src/plugins/accounting/collections/_attic/TrendAnalysis.ts:16: * @audit ISO-19011:2018 audit-trail trend-analysis
-src/plugins/accounting/collections/_attic/TrialBalance.ts:17: * @audit ISO-19011:2018 audit-trail trial-balance
 src/plugins/accounting/collections/index.ts:27: * @audit ISO-19011:2018 audit-trail
 src/plugins/accounting/debit-credit.test.ts:8: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/plugins/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
@@ -5003,8 +4973,6 @@ src/components/analytics/TrendAnalysisCard.tsx:11: * @quality ISO-25010 function
 src/components/analytics/types.ts:11: * @quality ISO-25010 maintainability shared-vocabulary
 src/components/blocks/Form/Component.tsx:23: * @quality ISO-25010 usability form-rendering
 src/components/pages/AnalyticsPage.tsx:14: * @quality ISO-25010 usability page-composition
-src/plugins/accounting/collections/_attic/FinancialRatios.ts:17: * @quality ISO-25010 functional-suitability derived-metric
-src/plugins/accounting/collections/_attic/TrendAnalysis.ts:17: * @quality ISO-25010 functional-suitability historical-projection
 src/plugins/accounting/seeds/demo/full-cycle-demo.ts:23: * @quality ISO-25010 maintainability test-fixtures
 src/plugins/accounting/seeds/level-1/minimal-accounting-seeds.ts:8: * @quality ISO-25010 maintainability test-fixtures
 src/plugins/accounting/seeds/level-2/integration-accounting-seeds.ts:8: * @quality ISO-25010 maintainability test-fixtures
