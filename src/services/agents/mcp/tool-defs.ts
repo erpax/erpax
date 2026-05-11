@@ -45,6 +45,11 @@ import {
   listBallots, listVotes, getBallot, getAggregate, exportBallotBundle,
   derivePseudoDid, checkNoDoubleVoting, type BallotKind, type VoteValue,
 } from '@/services/voting'
+import {
+  buildBlockCatalog, manifestOf, composeBlocks, validateComposition,
+  chainBlocks, checkRegistryCoupling, chainsAsBlockCompositions,
+  type AgentBlockManifest,
+} from '@/services/agents/blocks'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -681,6 +686,85 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       async handler({ surface }) {
         return json(shadcnSurfaceFor(surface as SiteSurface) ?? { ok: false, reason: 'unknown surface' })
       },
+    },
+    // ── Slice PPPPPP — agents-as-shadcn-blocks (Law 32) ──
+    {
+      name: 'erpax.blocks.list',
+      description: 'Per user "i realize the mcp agents are like the bloocks in shadcn. blocks of types as components" — return the block catalog: every agent as a typed AgentBlockManifest with accepts/emits surfaces + category + standards.',
+      parameters: {},
+      async handler() { return json(buildBlockCatalog(registry)) },
+    },
+    {
+      name: 'erpax.blocks.get',
+      description: 'Slice PPPPPP: look up a single agent block by id (e.g. "finance", "legal", "data") — its typed surface for use as a shadcn-style composable block.',
+      parameters: {
+        agentId: z.enum([
+          'finance', 'sales', 'marketing', 'hr', 'legal', 'ops', 'engineering',
+          'customer-support', 'data', 'design', 'product', 'productivity',
+          'enterprise-search', 'plugins', 'meta-skill',
+        ]),
+      },
+      async handler({ agentId }) {
+        const a = registry.byId(agentId as never)
+        if (!a) return json({ ok: false, reason: 'unknown agent' })
+        return json(manifestOf(a))
+      },
+    },
+    {
+      name: 'erpax.blocks.compose',
+      description: 'Slice PPPPPP: compose two agent blocks — A\'s emitted events feed into B\'s subscription set. Returns the composition + the shared event types at the boundary; ok=false if no shared types (Law 32 type-incoherent).',
+      parameters: {
+        upstreamId: z.enum([
+          'finance', 'sales', 'marketing', 'hr', 'legal', 'ops', 'engineering',
+          'customer-support', 'data', 'design', 'product', 'productivity',
+          'enterprise-search', 'plugins', 'meta-skill',
+        ]),
+        downstreamId: z.enum([
+          'finance', 'sales', 'marketing', 'hr', 'legal', 'ops', 'engineering',
+          'customer-support', 'data', 'design', 'product', 'productivity',
+          'enterprise-search', 'plugins', 'meta-skill',
+        ]),
+      },
+      async handler({ upstreamId, downstreamId }) {
+        const u = registry.byId(upstreamId as never)
+        const d = registry.byId(downstreamId as never)
+        if (!u || !d) return json({ ok: false, reason: 'unknown agent' })
+        const comp = composeBlocks(manifestOf(u), manifestOf(d))
+        return json(validateComposition(comp))
+      },
+    },
+    {
+      name: 'erpax.blocks.chain',
+      description: 'Slice PPPPPP: compose N blocks into a meta-block. Returns the composition path; on first type-incoherent boundary, returns the failure detail.',
+      parameters: {
+        agentIds: z.array(z.enum([
+          'finance', 'sales', 'marketing', 'hr', 'legal', 'ops', 'engineering',
+          'customer-support', 'data', 'design', 'product', 'productivity',
+          'enterprise-search', 'plugins', 'meta-skill',
+        ])).min(2),
+      },
+      async handler({ agentIds }) {
+        const ids = agentIds as string[]
+        const manifests: AgentBlockManifest[] = []
+        for (const id of ids) {
+          const a = registry.byId(id as never)
+          if (!a) return json({ ok: false, reason: `unknown agent ${id}` })
+          manifests.push(manifestOf(a))
+        }
+        return json(chainBlocks(manifests))
+      },
+    },
+    {
+      name: 'erpax.blocks.checkCoupling',
+      description: 'Conservation Law 32 — registry-wide audit: every emitted event has a consumer; every subscribed event has an emitter. Mirrors the shadcn rule "every block variant must be reachable from at least one composition example".',
+      parameters: {},
+      async handler() { return json(checkRegistryCoupling(registry)) },
+    },
+    {
+      name: 'erpax.blocks.chainsAsCompositions',
+      description: 'Per user "so erpax is chains of blocks" — derive every BUSINESS_CHAIN as a typed block composition path. Each step\'s owning agent is a node; consecutive steps form composeBlocks() boundaries. Returns { chainId, path, composition } for each chain so the UI can render flow diagrams and the boot suite can assert end-to-end type safety.',
+      parameters: {},
+      async handler() { return json(chainsAsBlockCompositions(registry)) },
     },
     // ── Slice OOOOOO — voting/rating uuid coupling (Laws 30 + 31) ──
     {

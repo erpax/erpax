@@ -104,6 +104,7 @@ export async function runAllInvariants(
   if (!skip.has('expansion')) {
     results.push(C.checkEventGraphConnected(ctx))      // Law 4
     results.push(C.checkAgentOwnsEveryStep(ctx))       // Law 7
+    results.push(C.checkBlockCompositionTypeSafety(ctx))  // Law 32 — PPPPPP
   }
   if (!skip.has('entropy')) {
     results.push(await C.checkContentIntegrityProvable(ctx))  // Law 8 — RRRRR

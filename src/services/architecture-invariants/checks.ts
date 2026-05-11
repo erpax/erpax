@@ -25,6 +25,7 @@ import { collectGenome, computeGenomeUuid } from '@/services/cloning'
 import { checkErpaxObservesItself } from '@/services/self-reference'
 import { listFaces, checkSeoVortexCoupling } from '@/services/website/seo-vortex'
 import { verifyAggregate, checkNoDoubleVoting, listBallots } from '@/services/voting'
+import { checkRegistryCoupling } from '@/services/agents/blocks'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1408,6 +1409,32 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 32 — `checkBlockCompositionTypeSafety`. Slice
+ * PPPPPP (2026-05-11). Per user 'i realize the mcp agents are like
+ * the bloocks in shadcn. blocks of types as components'.
+ *
+ * Every emitted event must have at least one consumer somewhere in
+ * the agent catalog (otherwise the emit is dead); every subscribed
+ * event must have at least one emitter (otherwise the subscription
+ * is dead). This is the agent-block analogue of the shadcn rule
+ * 'every block variant must be reachable from at least one
+ * composition example'.
+ *
+ * @standard W3C Web Components composition pattern
+ * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
+ */
+export function checkBlockCompositionTypeSafety(_ctx: InvariantContext): InvariantResult {
+  const result = checkRegistryCoupling(agentRegistry)
+  if (result.ok) {
+    return pass('expansion', 'block-composition-type-safety',
+      `every emitted event has a consumer; every subscribed event has an emitter (${result.emittersWithNoConsumer.length === 0 ? 0 : '?'} dead emits, ${result.subscribersWithNoEmitter.length === 0 ? 0 : '?'} dead subs)`)
+  }
+  return warn('expansion', 'block-composition-type-safety',
+    `${result.orphans.length} agent block(s) have type-incoherent boundaries (Law 32)`,
+    result.orphans.slice(0, 8).map((o) => `${o.id}: ${o.reason}`))
 }
 
 export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult {

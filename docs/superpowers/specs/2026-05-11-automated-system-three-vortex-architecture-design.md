@@ -614,6 +614,64 @@ Voting + rating surface across many ERPax domains: change-request approvals (ope
 
 @standard W3C VC Data Model 2.0 (votes/ratings as verifiable claims); W3C DID Core v1.0 (voter identity); RFC 4122 §4.3 + RFC 8785 (content-derived uuids); ISO/IEC 25010:2023 §5.6 security — non-repudiation; ISO 19011:2018 §6.4.6 (every vote/rating audit-trailed).
 
+## 0k. Agents are blocks — ERPax is chains of blocks
+
+Per user 'i realize the mcp agents are like the bloocks in shadcn. blocks of types as components' and 'so erpax is chains of blocks'. The two insights collapse together: just as shadcn ships **blocks** (composable, typed, drop-in UI components), MCP agents ARE blocks — composable, typed, drop-in BUSINESS components. And `BUSINESS_CHAINS` (e.g. O2C_GOODS, P2P_GOODS, R2R_INVENTORY, …) are not a separate primitive — **they are compositions of those blocks**. ERPax = chains of blocks.
+
+### The mental model
+
+| shadcn block (UI) | ERPax agent block (business) |
+|---|---|
+| props: `{ title, body, footer }` | accepts: chain steps + events + cron |
+| children: `<Slot />` | children: ownsCollections + subscribes |
+| emits: `onClick` / `onSubmit` | emits: `AgentEffect[]` (create / update / notify / audit / escalate / emit / capture) |
+| composes via JSX | composes via `composeBlocks(a, b, …)` |
+| styled by tokens (CSS vars) | governed by conservation laws |
+| browsable in the shadcn block library | browsable via `erpax.blocks.list` |
+
+### Typed surface (`AgentBlockManifest`)
+
+Every agent has a typed surface — its "block API":
+
+```ts
+interface AgentBlockManifest {
+  id: AgentId
+  category: 'commerce' | 'accounting' | 'risk' | 'people' | 'workflow' | 'data' | 'communication' | 'meta'
+  accepts: { events: string[]; collections: string[]; cron?: string; chainSteps: string[] }
+  emits:   { events: string[]; effectKinds: AgentEffect['kind'][] }
+  mcpTools: string[]
+  standards: string[]
+}
+```
+
+Composition rule: `composeBlocks(A, B)` succeeds iff `A.emits.events ∩ B.accepts.events ≠ ∅`. Otherwise the boundary is **type-incoherent** — A's outputs never reach B's inputs.
+
+### Conservation Law 32 — block composition type safety
+
+`checkBlockCompositionTypeSafety` (registry-wide): every emitted event has at least one consumer somewhere in the catalog (otherwise the emit is dead); every subscribed event has at least one emitter (otherwise the subscription is dead). The agent-block analogue of the shadcn rule "every block variant must be reachable from at least one composition example".
+
+### Chains are block compositions
+
+Every entry in `BUSINESS_CHAINS` walks a path through the block graph. `O2C_GOODS` for example: `Sales` → `Finance` → `Customer-Support` → `Data`. Each arrow in that path is a `composeBlocks(upstream, downstream)` call; the chain succeeds iff every arrow has a non-empty `sharedEvents` boundary. Slice QQQQQQ ships `chainsAsBlockCompositions()` deriving the typed composition path for every chain, and integrates Law 32 into the chain validator (so a chain with a type-incoherent boundary fails the boot suite).
+
+### MCP surface (slice PPPPPP)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.blocks.list` | Return the full block catalog — every agent as a typed block |
+| `erpax.blocks.get` | Look up a single block by agent id |
+| `erpax.blocks.compose` | Compose 2 blocks; returns shared events + Law 32 verdict |
+| `erpax.blocks.chain` | Compose N blocks into a meta-block; first type-incoherent boundary halts |
+| `erpax.blocks.checkCoupling` | Conservation Law 32 — registry-wide audit |
+
+### Why this matters
+
+The collapse — agents are blocks, chains are compositions of blocks — gives ERPax a single, unified composition primitive across **both** UI (shadcn surfaces) and business logic (agents + chains). The same mental model spans `<Card />` and `Sales → Finance`. New blocks slot in by declaring their typed surface; new chains slot in by composing existing blocks; type-safety at every boundary is enforced by Law 32.
+
+### Standards anchoring
+
+@standard W3C Web Components (composition pattern); ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity; ISO 19011:2018 §6.4.6 (every block composition audit-trailed); W3C JSON-LD 1.1 (typed block manifests).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
