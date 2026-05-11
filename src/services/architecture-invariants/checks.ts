@@ -35,6 +35,7 @@ import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/ag
 import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
 import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
 import { checkTorusBounded } from '@/services/topology/torus'
+import { publishDryProofBundle, checkDryProofPublished } from '@/services/proof/dry-proof'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1419,6 +1420,29 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 44 — `checkDryProofPublishedInvariant`. Slice
+ * DDDDDDD (2026-05-11). Per user 'now when al is dry clean in
+ * theory tests need to prove it and present it to the world'.
+ *
+ * Verify the public DRY proof bundle exists, is fresh, content-uuid
+ * verifies, and is registered as a public SeoVortexFace. Boot-time
+ * verdict is `warn` if no bundle is published yet (the QQQQQ
+ * scheduled task is responsible for publishing on a cadence); pass
+ * once a bundle is current.
+ */
+export function checkDryProofPublishedInvariant(_ctx: InvariantContext): InvariantResult {
+  // Use a probe origin — production probes pass the real public origin.
+  const result = checkDryProofPublished('https://erpax-probe.example')
+  if (result.ok) {
+    return pass('standards', 'dry-proof-published',
+      `proof bundle current (uuid=${result.bundle?.contentUuid?.slice(0, 8) ?? '?'}…) — Law 44 satisfied`)
+  }
+  return warn('standards', 'dry-proof-published',
+    `proof not yet current — schedule erpax.platform.dryProofPublish (QQQQQ cadence)`,
+    [...result.reasons])
 }
 
 /**

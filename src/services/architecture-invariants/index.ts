@@ -103,6 +103,7 @@ export async function runAllInvariants(
     results.push(C.checkI18nCoverageStrict(ctx))       // Law 3b
     results.push(C.checkMcpToolStandardizationInvariant(ctx))  // Law 38 — XXXXXX
     results.push(C.checkMcpPresentationCoverageInvariant(ctx))  // Law 39 — YYYYYY
+    results.push(C.checkDryProofPublishedInvariant(ctx))         // Law 44 — DDDDDDD
   }
   if (!skip.has('expansion')) {
     results.push(C.checkEventGraphConnected(ctx))      // Law 4

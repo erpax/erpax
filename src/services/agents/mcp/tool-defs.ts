@@ -72,6 +72,10 @@ import {
 } from './rebuild-from-source'
 import { selfTestAll, selfTestOne, checkMcpSelfTestable } from './self-test'
 import { checkTorusBounded, traceTorusRoundTrip, TORUS_DEFAULT_ENVELOPE, TORUS_VERTICES, TORUS_EDGES } from '@/services/topology/torus'
+import {
+  buildDryProofBundle, publishDryProofBundle, getCurrentProofBundle,
+  checkDryProofPublished, asFederationEnvelope, MAX_PROOF_AGE_HOURS,
+} from '@/services/proof/dry-proof'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1304,6 +1308,53 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Conservation Law 41 — every MCP tool must either pass the smoke test or be explicitly skipped (db-dependent). Returns failures list if any tool throws or returns malformed shape.',
       parameters: {},
       async handler() { return json(await checkMcpSelfTestable(tools)) },
+    },
+    // ── Slice DDDDDDD — public DRY conformance proof (Law 44) ──
+    {
+      name: 'erpax.platform.dryProofBuild',
+      description: 'Per user "now when al is dry clean in theory tests need to prove it and present it to the world" — run every conservation invariant + every MCP self-test; roll into a Schema.org Dataset JSON-LD bundle (W3C JSON-LD 1.1 + W3C VC Data Model 2.0); content-uuid the bundle (Conservation Law 8). Returns the bundle without publishing.',
+      parameters: { origin: z.string() },
+      async handler({ origin }, req) {
+        const bundle = await buildDryProofBundle({
+          invariantCtx: { payload: req.payload } as never,
+          tools, origin: origin as string,
+        })
+        return json(bundle)
+      },
+    },
+    {
+      name: 'erpax.platform.dryProofPublish',
+      description: 'Slice DDDDDDD — build the proof bundle AND register it as an SeoVortexFace at /proof/ (W3C Microdata 1.1 + Open Graph). After this, anyone hitting /proof/ can verify the conformance themselves; federation peers can ingest the bundle directly (slice AAAAAA).',
+      parameters: { origin: z.string() },
+      async handler({ origin }, req) {
+        const bundle = await publishDryProofBundle({
+          invariantCtx: { payload: req.payload } as never,
+          tools, origin: origin as string,
+        })
+        return json({ ok: true, contentUuid: bundle.contentUuid, summary: bundle.summary, publicUrl: bundle.publicUrl })
+      },
+    },
+    {
+      name: 'erpax.platform.dryProofGet',
+      description: 'Slice DDDDDDD — return the most recently published proof bundle. Anyone can recompute the bundle.contentUuid to verify it has not been tampered with (Law 8).',
+      parameters: {},
+      async handler() { return json(getCurrentProofBundle() ?? { ok: false, reason: 'no proof published yet — call erpax.platform.dryProofPublish first' }) },
+    },
+    {
+      name: 'erpax.platform.dryProofFederate',
+      description: 'Slice DDDDDDD — wrap the current proof bundle as a federation envelope (slice AAAAAA, kind=erpax/dry-proof). Peer ERPax instances can ingest + verify (uuid recomputes locally) without trusting our chain.',
+      parameters: { originDid: z.string() },
+      async handler({ originDid }) {
+        const bundle = getCurrentProofBundle()
+        if (!bundle) return json({ ok: false, reason: 'no proof published yet' })
+        return json(asFederationEnvelope(bundle, originDid as string))
+      },
+    },
+    {
+      name: 'erpax.platform.checkDryProofPublished',
+      description: `Conservation Law 44 — verify the proof bundle (a) exists, (b) generatedAt within ${MAX_PROOF_AGE_HOURS}h, (c) content-uuid recomputes (Law 8 echo), (d) public face registered at /proof/. Pass for the world to depend on the proof.`,
+      parameters: { origin: z.string() },
+      async handler({ origin }) { return json(checkDryProofPublished(origin as string)) },
     },
     {
       name: 'erpax.platform.checkRebuildable',

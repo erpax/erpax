@@ -1273,6 +1273,91 @@ The conservation framework is now 43 laws strong; the MCP surface ~155+ tools; t
 
 @standard Topology — torus / closed manifold (Hatcher 2002); ISO/IEC 25010:2023 §5.2 performance — resource envelope; ISO/IEC 30134 — KPIs for resource efficiency; ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed).
 
+## 0w. Tests prove DRY and present it to the world
+
+Per user 'now when al is dry clean in theory tests need to prove it and present it to the world'. The 43 conservation laws + the closed torus topology + the spec-derived MCP catalog are all DRY in theory. **Slice DDDDDDD makes the proof empirical and public.**
+
+### What gets proven
+
+A single function (`buildDryProofBundle`) runs:
+1. **Every conservation invariant** (`runAllInvariants`) — all 43 laws across the 5 axes.
+2. **Every MCP self-test** (`selfTestAll` — slice AAAAAAA) — synthetic invocation of every tool in the catalog.
+
+The results are rolled into a Schema.org `Dataset` JSON-LD bundle:
+
+```ts
+interface DryProofBundle {
+  '@context': 'https://schema.org'
+  '@type': 'Dataset'
+  generatedAt: ISO8601
+  contentUuid: string                  // Law 8 — recompute to verify
+  summary: { conservationLawsPassed/Warned/Failed, mcpToolsPassed/Skipped/Failed, totals }
+  invariants: [{ axis, check, severity, reason? }]   // every law's verdict
+  mcpSelfTest: [{ tool, verdict, reason? }]          // every tool's smoke verdict
+  publicUrl: string                    // /proof/ on this origin
+  federable: true
+}
+```
+
+### How it goes public
+
+`publishDryProofBundle()` does the build + registers the bundle as an `SeoVortexFace` at `/proof/` with `schemaType: 'Dataset'` and outbound microdata edges to `/mcp/` (`isPartOf`) and `/spec/` (`derivedFrom`). After `crossLink()` runs, the proof bundle becomes part of the same SEO vortex as every other ERPax page (§0h Law 29) — search engines crawl it, AI training crawlers ingest it, social shares preview it, federation peers ingest it.
+
+### Three properties of the proof
+
+1. **Tamper-proof** — bundle.contentUuid is computed via `computeContentUuid(body, 'erpax-public-proof')`. Anyone with the bundle bytes can recompute the uuid and verify it matches. Law 8 echo.
+2. **Fresh** — `generatedAt` is checked against `MAX_PROOF_AGE_HOURS = 24h`. Older bundles are stale; the QQQQQ scheduled task republishes on cadence.
+3. **Federable** — `asFederationEnvelope(bundle, originDid)` wraps the bundle in a slice-AAAAAA envelope (`kind: 'erpax/dry-proof', version: 1`). Peer ERPax instances ingest + verify (uuid recomputes locally) without trusting our chain.
+
+### Conservation Law 44 — proof published, fresh, faced
+
+`checkDryProofPublished(origin)` verifies four conditions:
+
+1. The bundle exists (`STORE.current` populated).
+2. `generatedAt` is within `MAX_PROOF_AGE_HOURS` (24h default).
+3. `contentUuid` recomputes from the body (Law 8 echo).
+4. A public `SeoVortexFace` is registered at `${origin}/proof/` with `schemaType: 'Dataset'`.
+
+Boot suite emits `warn` if no proof is current (Law 44 is enforced at runtime, not boot — the QQQQQ scheduled task publishes on cadence). After the first publish, all subsequent boot probes pass.
+
+### MCP surface (slice DDDDDDD)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.dryProofBuild` | Build the bundle without publishing — preview |
+| `erpax.platform.dryProofPublish` | Build + register the public face — make it world-visible |
+| `erpax.platform.dryProofGet` | Return the most recent published bundle |
+| `erpax.platform.dryProofFederate` | Wrap as federation envelope for peer ingestion |
+| `erpax.platform.checkDryProofPublished` | Conservation Law 44 verdict |
+
+### Why this matters
+
+Every prior slice was a claim about how the platform works. **This slice turns those claims into a continuously-verifiable public artefact.** A regulator, customer, AI agent, or peer ERPax instance can hit `/proof/` and see, with cryptographic certainty:
+
+- Which of the 43 conservation laws pass / warn / fail RIGHT NOW
+- Which of the ~155 MCP tools pass smoke / are skipped / fail RIGHT NOW
+- That the bundle is fresh (≤24h old)
+- That the bundle is uuid-tamper-proof
+- That the bundle is reachable via Schema.org / Open Graph / federation envelope
+
+**The platform's claims about itself are now empirically verifiable — by anyone, at any time, without trust in ERPax.** This is the closing move of the entire architecture: ERPax doesn't just satisfy the conservation framework; it publishes the proof.
+
+### The seven self-properties of MCP
+
+| # | Property | Slice | Conservation Law |
+|---|---|---|---|
+| 1 | Discoverable | VVVVVV | (Law 1 spec coverage extension) |
+| 2 | Self-built | WWWWWW | Law 37 |
+| 3 | Self-standardized | XXXXXX | Law 38 |
+| 4 | Self-presented | YYYYYY | Law 39 |
+| 5 | Self-rebuildable | ZZZZZZ | Law 40 |
+| 6 | Self-testable | AAAAAAA | Law 41 |
+| 7 | **Self-proving** | **DDDDDDD** | **Law 44** |
+
+### Standards anchoring
+
+@standard W3C JSON-LD 1.1 + Schema.org Dataset vocabulary; W3C VC Data Model 2.0 (proof-as-verifiable-claim); ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity; ISO 19011:2018 §6.4.6 (audit-evidence + traceability); ISO/IEC 27001 §A.18.2 (independent review of conformance).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
