@@ -29,3 +29,7 @@ export { buildIntegrityExtensionTools } from './integrity-extensions'
 // the Conservation Law 58 escape-hatch inventory for auditors +
 // deployment scripts.
 export { buildSecurityTools } from './security'
+// Slice SSSSSSSSS-cut1 (2026-05-11) — uuid-based RBAC sharing.
+// erpax.share.{uuid,grant,check,revoke,list} — every grant is a
+// chain-linked uuid binding; sign/admin grants are sealed.
+export { buildShareTools } from './share'
