@@ -79,6 +79,10 @@ import {
 import {
   LAW_CATALOG, buildAgentLawProfile, buildAllAgentLawProfiles, checkAgentLawCoverage,
 } from '@/services/architecture-invariants/by-agent'
+import {
+  shortUuid, parseShortUuid, lookupShort, displayUuid,
+  checkUuidShortDisplay, SHORT_UUID_POLICY, type ShortUuidKind,
+} from '@/services/integrity/uuid-short'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1334,6 +1338,62 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Slice EEEEEEE — derive law profiles for every registered agent. Drives the conservation-dashboard surface\'s per-agent breakdown (W3C JSON-LD 1.1).',
       parameters: {},
       async handler() { return json(buildAllAgentLawProfiles()) },
+    },
+    // ── Slice FFFFFFF — short uuids per case for UI/UX + search + security (Law 46) ──
+    {
+      name: 'erpax.integrity.shortUuid',
+      description: 'Per user "it is insecure to display the uuids in full. shorter version per case may significantly improve the ui/ux and search" — render a full uuid (RFC 4122 §4.3) as a short, kind-prefixed display id (e.g. aud_a1b2c3d4 for audit, vot_xy12z3 for vote). NEVER use as verification key — display-only (ISO/IEC 27001 §A.9.4.5).',
+      parameters: {
+        uuid: z.string(),
+        kind: z.enum([
+          'audit', 'vote', 'invoice', 'payment', 'chain', 'agent', 'collection',
+          'role', 'standard', 'stream', 'object', 'federation', 'proof', 'did',
+          'spec', 'page', 'ballot', 'block', 'tool',
+        ]),
+      },
+      async handler({ uuid, kind }) { return json({ short: shortUuid(uuid as string, kind as ShortUuidKind) }) },
+    },
+    {
+      name: 'erpax.integrity.parseShortUuid',
+      description: 'Slice FFFFFFF — parse a short id into its kind + hex prefix (no full uuid resolution; use erpax.integrity.lookupShortUuid for resolution).',
+      parameters: { short: z.string() },
+      async handler({ short }) { return json(parseShortUuid(short as string) ?? { ok: false, reason: 'unparseable' }) },
+    },
+    {
+      name: 'erpax.integrity.lookupShortUuid',
+      description: 'Slice FFFFFFF — resolve a short id back to one of a candidate full uuid set (typically tenant-scoped). Returns found / ambiguous / not-found per Law 9 multi-tenant isolation.',
+      parameters: { short: z.string(), candidates: z.array(z.string()) },
+      async handler({ short, candidates }) {
+        return json(lookupShort(short as string, candidates as string[]))
+      },
+    },
+    {
+      name: 'erpax.integrity.displayUuid',
+      description: 'Slice FFFFFFF — return {display, full, copyable} for UI rendering. UI shows display by default; reveals full on hover/click; copyFull controls clipboard target (W3C JSON-LD 1.1).',
+      parameters: {
+        uuid: z.string(),
+        kind: z.enum([
+          'audit', 'vote', 'invoice', 'payment', 'chain', 'agent', 'collection',
+          'role', 'standard', 'stream', 'object', 'federation', 'proof', 'did',
+          'spec', 'page', 'ballot', 'block', 'tool',
+        ]),
+        copyFull: z.boolean().optional(),
+      },
+      async handler({ uuid, kind, copyFull }) {
+        return json(displayUuid(uuid as string, kind as ShortUuidKind, { copyFull: copyFull as boolean | undefined }))
+      },
+    },
+    {
+      name: 'erpax.integrity.uuidShortPolicy',
+      description: 'Slice FFFFFFF — return the per-kind SHORT_UUID_POLICY (prefix + length) so external clients can render short ids consistently across surfaces.',
+      parameters: {},
+      async handler() { return json(SHORT_UUID_POLICY) },
+    },
+    {
+      name: 'erpax.integrity.checkShortUuidDisplay',
+      description: 'Conservation Law 46 — verify every kind in SHORT_UUID_POLICY produces parseable short ids (roundtrip). Production CI lints + runtime proxy logging catch UI surfaces that display full uuids in violation.',
+      parameters: {},
+      async handler() { return json(checkUuidShortDisplay()) },
     },
     {
       name: 'erpax.platform.checkAgentLawCoverage',

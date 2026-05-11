@@ -1413,6 +1413,86 @@ A pure read agent (`enterprise-search`) skips Laws 8/10/29/30/31/35/36 because i
 
 @standard ISO/IEC 25010:2023 §5.2 performance — selective evaluation; §5.4 reusability — law profile reuse; ISO 19011:2018 §6.4.6 (per-agent law audit-trailed).
 
+## 0y. Short uuids per case for UI/UX, search, and security
+
+Per user 'it is insecure to display the uuids in full. shorter version per case may significantly improve the ui/ux and search'. Full uuids (RFC 4122 §4.3 — 36 chars) are cryptographic identifiers. Displaying them in full UI surfaces leaks information, hurts UX, kills searchability, and increases correlation attack surface. Slice FFFFFFF ships `src/services/integrity/uuid-short.ts` with per-case truncation and kind prefixes.
+
+### Per-case policy (`SHORT_UUID_POLICY`)
+
+| Kind | Prefix | Length | Example |
+|---|---|---|---|
+| audit | `aud_` | 10 | `aud_6ba7b8119d` |
+| vote | `vot_` | 8 | `vot_6ba7b811` |
+| invoice | `inv_` | 8 | `inv_6ba7b811` |
+| payment | `pmt_` | 8 | `pmt_6ba7b811` |
+| chain | `chn_` | 4 | `chn_6ba7` |
+| agent | `agt_` | 4 | `agt_6ba7` |
+| collection | `col_` | 6 | `col_6ba7b8` |
+| role | `rol_` | 6 | `rol_6ba7b8` |
+| standard | `std_` | 8 | `std_6ba7b811` |
+| stream | `str_` | 12 | `str_6ba7b8119dad` |
+| object | `obj_` | 8 | `obj_6ba7b811` |
+| federation | `fed_` | 10 | `fed_6ba7b8119d` |
+| proof | `prf_` | 12 | `prf_6ba7b8119dad` |
+| did | `did_` | 12 | `did_6ba7b8119dad` |
+| spec / page / ballot / tool | `*_` | 8 | `…_6ba7b811` |
+| block | `blk_` | 6 | `blk_6ba7b8` |
+
+Lengths are tuned per-kind based on expected active-set size + UX density + search:
+- Streams need more entropy (`str_*` 12 chars) — high-throughput, many active.
+- Chains and agents are tiny finite sets (~28 + ~15) — 4 chars suffice.
+- Audit leaves are numerous but per-tenant — 10 chars hit ~10^12 distinguishable in 16-alphabet.
+
+### Three contracts
+
+```ts
+shortUuid(uuid, kind)             → 'aud_a1b2c3d4'
+parseShortUuid('aud_a1b2c3d4')    → { kind: 'audit', prefix: 'a1b2c3d4' }
+lookupShort(short, candidates)    → { status: 'found' | 'ambiguous' | 'not-found', fullUuid?, matches? }
+displayUuid(uuid, kind)           → { display, full, copyable }   // UI render-time
+```
+
+`displayUuid` is the canonical UI helper — surfaces show `display` by default, reveal `full` on hover/click, and copy `display` to clipboard (or `full` if `copyFull: true`).
+
+### Conservation Law 46 — short-uuid display compliance
+
+`checkUuidShortDisplayInvariant`: every kind in `SHORT_UUID_POLICY` produces parseable short ids (roundtrip via `parseShortUuid`). Boot smoke probe; production CI lints + runtime proxy logging catch UI surfaces that bypass `shortUuid()`. Full uuids reserved for:
+- `erpax.integrity.verify*` endpoints (Law 8)
+- Federation envelopes (slice AAAAAA)
+- Cross-tenant verification (Law 36)
+
+### Why this matters
+
+| Without short uuids | With short uuids (slice FFFFFFF) |
+|---|---|
+| `6ba7b811-9dad-11d1-80b4-00c04fd430c8` everywhere — leaks full content hash entropy | `aud_6ba7b8119d` — 10 chars, no fingerprint correlation |
+| Tables wrap awkwardly; command palettes overflow | Compact rows; Cmd+K typeable in 4-12 chars |
+| Search requires copy-paste of full uuid | Search by typed prefix |
+| Cross-surface correlation trivial | Per-kind prefix narrows attack surface |
+| Audit trail UI dominated by ids | Audit trail UI dominated by content |
+
+### Coupling with prior slices
+
+- **Slice NNNNNN (SEO vortex)** — page faces use `pag_*` short uuids in URL slugs; full uuids reserved for `<link rel="alternate" type="application/erpax-uuid" href="urn:erpax:content:<full>">` machine-readable links.
+- **Slice DDDDDD (DID)** — `did_*` short ids for human display; full DIDs in headers + signatures.
+- **Slice OOOOOO (voting)** — `vot_*` and `bal_*` short ids in ballot UI; full vote uuids in verification.
+- **Slice AAAAAAA (self-test)** — test result rows display `tol_*` short ids alongside test verdicts.
+
+### MCP surface (slice FFFFFFF)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.integrity.shortUuid` | Render full → short |
+| `erpax.integrity.parseShortUuid` | Parse short → kind + prefix |
+| `erpax.integrity.lookupShortUuid` | Resolve short + candidates → full uuid |
+| `erpax.integrity.displayUuid` | UI helper returning `{display, full, copyable}` |
+| `erpax.integrity.uuidShortPolicy` | Return SHORT_UUID_POLICY for clients |
+| `erpax.integrity.checkShortUuidDisplay` | Conservation Law 46 verdict |
+
+### Standards anchoring
+
+@standard RFC 4122 §4.3 — uuidv5 (full form for verification); ISO/IEC 25010:2023 §5.3 usability — discoverability; ISO/IEC 27001 §A.9.4.5 (information access restriction); ISO 19011:2018 §6.4.6 (UI surfaces audit-trailed for length compliance).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

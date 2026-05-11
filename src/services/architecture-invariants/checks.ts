@@ -37,6 +37,7 @@ import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
 import { checkTorusBounded } from '@/services/topology/torus'
 import { publishDryProofBundle, checkDryProofPublished } from '@/services/proof/dry-proof'
 import { checkAgentLawCoverage } from '@/services/architecture-invariants/by-agent'
+import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1421,6 +1422,27 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 46 — `checkUuidShortDisplayInvariant`. Slice
+ * FFFFFFF (2026-05-11). Per user 'it is insecure to display the
+ * uuids in full. shorter version per case may significantly improve
+ * the ui/ux and search'.
+ *
+ * Smoke probe — verifies every SHORT_UUID_POLICY kind produces
+ * parseable short ids (roundtrip). Production CI / runtime proxy
+ * catches UI surfaces that bypass shortUuid().
+ */
+export function checkUuidShortDisplayInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkUuidShortDisplay()
+  if (result.ok) {
+    return pass('standards', 'uuid-short-display',
+      `${result.checkedSurfaces} short-uuid kinds roundtrip parseable (Law 46 satisfied)`)
+  }
+  return fail('standards', 'uuid-short-display',
+    `${result.violations.length} short-uuid kind(s) failed roundtrip`,
+    result.violations.slice(0, 8).map((v) => `${v.surface}: ${v.reason}`))
 }
 
 /**
