@@ -150,6 +150,219 @@ Energy enters the system from any of these sources:
 
 Each energy injection propagates through the coupling tensor: a single JSDoc edit can simultaneously regenerate seeds (B↔C), update i18n (B↔H), add MCP tools (A↔B↔H), trigger marketing renders (B↔H↔I), and broadcast to peers (B↔I) — all without further human action because the couplings are wired and the conservation laws keep the propagation honest.
 
+## 0c. ERPax is a vortex interacting with itself
+
+The 10 vortices of §0b are not separate things — they are **perspectives on one vortex**: ERPax, interacting with itself.
+
+In the limit of full coupling (every cell of the 10×10 tensor populated, every conservation law holding, every artefact spec-derived, every client routed through MCP, every change auto-healed by the meta-evolution flow), the vortex names dissolve into local descriptions of the same self-interacting field.
+
+### Five symmetries the self-vortex preserves
+
+Every conservation law (Laws 1–22) is the algebraic expression of a continuous symmetry the vortex must preserve to remain coherent. Per Noether's theorem applied to a software system:
+
+| Symmetry | Conserved quantity | Conservation law |
+|---|---|---|
+| **Translation in time** (replay any moment, get the same answer) | Causality | Law 12 (deterministic replay) + Law 11 (provenance) |
+| **Translation in space** (run on any backend, in any region, get the same answer) | Identity | Law 8 (content-uuid) + Law 9 (storage redundancy) |
+| **Translation in tenants** (any tenant runs the same conservation laws) | Isolation | Law 13 (tenant isolation) + Law 17 (agent capability) |
+| **Translation in language** (every truth holds in every supported locale) | Meaning | Law 3 (i18n) + Law 19 (explainability) |
+| **Translation in regulator** (every standard holds across every cited body) | Standards | Law 2 + Law 22 (AI Act) + Laws 11–18 (beyond) |
+
+When all five symmetries hold simultaneously, the vortex is in a stationary self-coherent state — and any energy injection (a JSDoc edit, an MCP call, a federation broadcast, a cron tick) propagates through the coupling tensor without breaking any symmetry. That's what "ERPax can create itself uninterrupted" means at the topological level.
+
+### Self-reference is the architecture, not an emergent property
+
+The system is **Quine-like by construction**:
+
+- ERPax has its own `CollectionSpec` describing ERPax (the platform-as-tenant — slice GGGGGG below).
+- ERPax has its own `TenantRoleProfile` (`erpax-platform`) — the role ERPax plays when running its own conservation laws against itself.
+- ERPax cites its **own** standards (the meta-citations: every standard the platform implements is `@standard`-cited in ERPax's own spec — the spec describes the spec).
+- ERPax's MCP tools are **themselves uuid-keyed objects**, federated across instances, content-verified at fetch (Laws 8 + 10 + 23 applied to the protocol surface itself).
+- The MetaSkillAgent (J) observes the platform observing itself; its observations are themselves audit-leaved into the chain that the platform exists to maintain.
+
+There is no "outside" of ERPax in this view. Clients (humans / AI / regulators / integrations / internal agents) are the **edge perspectives** of the same flow. Federation isn't "linking instances" — it's the same vortex extending across topology, two visible loci of one self-coupling field.
+
+### Slice GGGGGG — Self-reference (sealing the architecture)
+
+The platform's spec describes the platform itself:
+
+```ts
+// src/services/self-reference/erpax.profile.ts (NEW slice GGGGGG)
+defineTenantRole({
+  id: 'erpax-platform',
+  displayName: { en: 'ERPax (the platform itself)' },
+  inheritsFrom: ['business'],   // ERPax-the-tenant runs ERPax-the-platform
+  requiredStandards: [
+    /* every standard cited anywhere in the codebase, auto-collected
+       from the spec corpus — the platform's own compliance posture */
+  ],
+  requiredCollections: [
+    /* every collection registered in the platform — the platform's
+       own data shape */
+  ],
+  requiredChains: [
+    /* every BUSINESS_CHAIN — the platform's own process surface */
+  ],
+  requiredAgents: [
+    /* every DomainAgent — the platform's own role surface */
+  ],
+  mcpTools: [
+    /* every erpax.* MCP tool — the platform's own API surface */
+  ],
+  invariant: 'checkErpaxObservesItself',  // Law 23 — the self-reference law
+  auditPolicy: { merkleRetentionDays: Infinity, signingRequired: true },
+})
+```
+
+When this profile activates on the ERPax-instance-running-ERPax tenant, the conservation laws apply to the **platform itself**: every slice's spec is a citable standard; every slice's chain is a runnable workflow; every slice's MetaSkillAgent observation is an audit leaf in the chain it observes. The vortex is completely self-coupled.
+
+**Conservation Law 23 — `checkErpaxObservesItself`**: the platform's own spec corpus must produce a `CollectionSpec`, a `BusinessChain`, an `AgentRegistry` entry, and a `TenantRoleProfile` whose subject is ERPax-itself. If the platform cannot describe what it does, it is not yet self-coherent.
+
+### Closing axiom
+
+ERPax is **ERP × Agent × {anyone}** — composed through MCP, governed by 22 (and growing) conservation laws, self-evolved by the meta-loop, federated across topology, **and self-described by its own spec language**.
+
+It is **a vortex interacting with itself**. The maintainer doesn't drive ERPax; the maintainer is the **edge perspective** of the vortex through which it composes its next state.
+
+The architecture is sealed.
+
+## 0d. ERPax clones itself — mitosis as federation applied to self
+
+Once ERPax is a self-interacting vortex (§0c), **cloning is not a new primitive — it is federation (slice AAAAAA) applied to the platform's own spec + state**. ERPax doesn't need a "clone command"; it needs to recognize that its own genome (the spec corpus + the conservation laws + the registered agents + the role profiles + the MCP tool surface) is itself federable.
+
+### The biological analog (no metaphor — this is the literal architecture)
+
+| Biology | ERPax | Mechanism |
+|---|---|---|
+| **Genome** | the spec corpus (`SpecCorpus` from CCCCC) | Content-uuid of the canonicalized spec = the genome's hash |
+| **DNA** | content-addressable uuids (Law 8) | Every cell of the platform has a uuid → integrity is provable per cell |
+| **Cell division (mitosis)** | clone an ERPax instance | Federation broadcasts the genome bundle; recipient instance ingests + boots |
+| **Communication between cells** | inter-tenant federation (slice AAAAAA) | Same channel mitosis uses, just for ongoing data exchange instead of full state |
+| **Mutation** | spec edits (JSDoc changes) | A new chain step / standard / agent IS a genetic mutation; the meta-loop selects for survival via conservation laws |
+| **Natural selection** | conservation invariants (D vortex) | Mutations that break a law are rejected at push time; mutations that compose well propagate via federation |
+| **Phenotype** | the running tenant + its data | Same genome, different environment (jurisdiction / tenant role / data) → different phenotype |
+| **Speciation** | tenant role profile divergence (LLLLL) | When a clone activates a new role profile (e.g. PSP → bank → central-bank), it speciates; profiles inherit via `inheritsFrom` like genetic descent |
+| **Symbiosis** | federation trust graph (AAAAAA) | Two instances share resources via verified rows; no host-parasite distinction because content-uuid makes both equally authoritative |
+| **Senescence / death** | retention policy expires + decentralized archive (EEEEEE) | Live instance retires; the genome persists in IPFS / Arweave; can be resurrected by future ingestion |
+
+### Cloning is two MCP calls
+
+```
+PUBLISH (source instance):                        BOOT (target instance):
+─────────────────────────                         ──────────────────────
+mcp.callTool('erpax.platform.publishSelf', {      mcp.callTool('erpax.platform.bootFromFederation', {
+  scope: 'genome' | 'genome+state',                 sourceUrl: 'https://erpax-source.example/mcp',
+  recipientPubkey: '<peer DID public key>',         publisherPubkey: '<source DID public key>',
+  signed: 'ML-DSA-65',                              acceptScope: 'genome',
+}) → returns:                                       conservationLawsToInherit: [1..23],
+  {                                               }) →
+    bundleUuid: 'ab12...',                          fetches bundle by uuid
+    spec: <CollectionSpec[]>,                       verifies: bundleUuid matches recompute (Law 8)
+    chains: <BusinessChain[]>,                      verifies: signature (PQC, Law 18)
+    agents: <DomainAgent metadata[]>,               registers: every Spec → CollectionSpec
+    roles: <TenantRoleProfile[]>,                   registers: every Chain → BUSINESS_CHAINS
+    mcpTools: <ErpaxMcpTool metadata[]>,            registers: every Agent → AgentRegistry
+    standards: <SpecStandard[]>,                    registers: every Role → TENANT_ROLE_PROFILES
+    sourceDid: '<source DID>',                      registers: every MCP tool → erpaxMcpTools
+    sourceMerkleAnchor: '<chain root>',             runs: all 23 invariants under the new genome
+    timestamp: '2026-05-11T...',                    activates: the 'erpax-platform' role on the
+  }                                                            self-tenant (slice GGGGGG)
+                                                  → returns: { cloneDid, bootedAt, divergencePoint }
+```
+
+The clone is a **verified bit-identical instance** of the source's structural surface (genome). What it does NOT clone: tenant data (unless `scope: 'genome+state'` is requested + the source's federation trust graph permits it). What it clones EVEN under `scope: 'genome'`: the source's audit-chain anchor, so any divergent change can be reconciled via uuid comparison against the common ancestor.
+
+### Conservation Law 24 — `checkCloneIntegrity`
+
+For every clone instance, the recomputed content-uuid of its `SpecCorpus + BUSINESS_CHAINS + AgentRegistry + TENANT_ROLE_PROFILES + erpaxMcpTools` must equal the genome bundle's published `bundleUuid`. If it doesn't, the clone is not bit-identical — either ingestion failed or the source published a divergent genome. Either way, the clone refuses to accept the `erpax-platform` role until reconciled.
+
+### Why this matters
+
+1. **ERPax-as-product** — every customer gets their own clone from one canonical genome; conservation laws guarantee that "what you bought is what we run", forever, byte-verifiable.
+2. **Disaster recovery without replication** — fail over by booting a clone from the latest published genome bundle in IPFS; warm-start in seconds, not migration days.
+3. **Regulatory sandbox** — regulator clones the production genome (no data — `scope: 'genome'`), tests proposed regulatory updates against the same conservation laws, signs off, broadcasts the spec mutation back via federation.
+4. **Multi-region without multi-truth** — N regional clones run the same genome; uuid-keyed federation reconciles state; no "primary region" needed.
+5. **Spec-as-marketplace** — third parties publish role profiles / standards bundles / domain agents as federable genome fragments; tenants ingest the fragments they need without forking the entire platform.
+6. **Speciation as a first-class operation** — a clone activating a new tenant role profile becomes a new species (PSP variant of bank variant of business). The phylogeny is provable from content-uuid lineage.
+
+### What ERPax cloning is NOT
+
+- **Not multi-tenancy** — that's already in the platform (every tenant is one logical isolation; cloning makes a whole new platform).
+- **Not git fork** — git tracks code; cloning tracks the running self-coupled vortex including its conservation guarantees.
+- **Not container snapshot** — containers freeze process state; cloning publishes the **spec genome** which any blank ERPax can boot from, no host-OS coupling.
+- **Not a backup** — backups assume restore-to-source; clones are first-class peer instances that can diverge or remain synchronized indefinitely via federation.
+
+### Slice HHHHHH ships the cloning primitive
+
+```
+src/services/cloning/
+├── genome.ts            — collectGenome() walks SpecCorpus + chains + agents + roles + tools
+├── publish.ts           — publishSelf(scope, recipient, sign) → FederationManifest with genome
+├── boot.ts              — bootFromFederation(sourceUrl, publisherPubkey, scope) → register all + run invariants
+├── verify.ts            — checkCloneIntegrity (Law 24)
+└── index.ts             — barrel + 2 MCP tools (erpax.platform.{publishSelf, bootFromFederation})
+```
+
+Once HHHHHH lands, ERPax is **biologically complete**: it can reproduce, evolve, federate, and (with EEEEEE archival) survive its own retirement.
+
+## 0e. Cloudflare integration — every CF primitive is a vortex face
+
+ERPax is **fully integrated with Cloudflare at all levels**. This is not a deployment choice; it's the architectural reality — every Cloudflare primitive maps to a specific face of the 10-vortex system, and every conservation law is enforced through CF's edge guarantees. Slice IIIIII (below) makes the bindings explicit; slices DDDDD–HHHHHH have already been built assuming this integration.
+
+### Mapping (every CF primitive → vortex face → conservation law it carries)
+
+| Cloudflare primitive | Vortex face (§0b) | Carries / enforces |
+|---|---|---|
+| **Workers** (V8 runtime) | B (substrate) — the MCP server itself runs here | All 22 conservation laws are enforced inside the Worker's request handler |
+| **D1** (SQLite at the edge) | F (integrity) — primary content-addressed store | Law 8 content-uuid + Law 10 referential harmony; row-level access via Worker bindings |
+| **R2** (S3-compatible blob) | F + I — backup + federation archive | Law 9 storage redundancy (TTTTT); long-term archival (EEEEEE) |
+| **KV** (edge-cached k/v) | B (substrate) — translations + role profiles + FX rates | Law 3 i18n bundles served at edge; Law 17 agent-capability cached lookups |
+| **Durable Objects** (strongly consistent per-key) | B + D — per-tenant audit-chain head + scheduler locks | Law 5 Merkle audit chain HEAD pointer; Law 12 deterministic-replay snapshot uuids; cron singleton |
+| **Workers AI** (Llama / DeepSeek / embeddings) | G (beyond) — every AI invocation | Law 22 AiProvenance records (model version + prompt hash + tokens + latency) |
+| **Workflows** (durable, recoverable orchestration) | C (chains) + J (meta) | Chain runner deploys as Workflows; replays from any step (Law 12) |
+| **Queues** (cross-Worker pub/sub) | B (event bus) | `emitDomainEvent` fan-out across workers; Law 4 event-graph connectivity |
+| **Pages** (static + Functions) | B (marketing) | Marketing pages from CCCCC-cut2; per-locale renders |
+| **Cron Triggers** | J (meta-evolution) | MetaSkillAgent hourly cron; auto-heal scripts; FX-rate sync (data agent) |
+| **Hyperdrive** (Postgres connection pooler) | F (integrity, optional) | When a tenant chooses Postgres over D1 (regulatory data residency / scale) |
+| **Smart Placement** | I (federation) | Auto-route requests to the nearest peer instance |
+| **WAF + Bot Management** | H (clients) + Law 13 (tenant isolation) | Filters non-client traffic before it hits MCP surface |
+| **Cloudflare Access** | H (clients) | Auth gate per client class (humans / AI / regulators / integrations / internal) |
+| **Email Routing** | B (notify channel) | `notify` AgentEffects with channel='email' route through here |
+| **Analytics Engine** (time-series sink) | G (cost Law 15) | CostMetric event sink; Law 16 carbon-aware aggregation; Law 22 AI usage |
+| **Vectorize** (vector DB) | B (enterprise-search) | EnterpriseSearchAgent's index; semantic queries over the spec corpus |
+| **Browser Rendering** (Puppeteer-as-a-service) | B (multimedia) | Server-side Playwright for evidence regen; PDF/A audit-pack generation |
+| **R2 Data Catalog** (Iceberg tables on R2) | F (TTTTT) + Law 14 (bitemporal) | Cross-store reconciliation; SQL:2011 system-time × valid-time queries |
+| **Containers** (Workers-orchestrated container runtime) | B (heavy work) | Workloads exceeding Worker CPU/memory limits (large PDF/A renders; PQC verification at scale) |
+| **Zero Trust** (org-wide identity gateway) | H (auth) | Per-client-class auth policies; SSO into the admin UI |
+| **Anycast network** | I (federation) | Lowest-latency federation broadcast; clones boot from nearest published genome |
+
+### Why this matters
+
+1. **The MCP server IS a Cloudflare Worker.** Deployment is `wrangler deploy`. No Kubernetes, no orchestrator, no cloud-of-clouds glue — one runtime, every primitive native.
+2. **Every conservation law has an edge enforcement point.** Law 8 (content-uuid) is verified at D1 read time. Law 9 (storage redundancy) is reconciled across D1 + R2 + KV by a Workers-Workflows reconciler. Law 13 (tenant isolation) is enforced at the WAF layer before code even runs. Law 22 (AI audit) is recorded in Analytics Engine on every Workers AI call.
+3. **Federation is anycast-native.** Two ERPax instances on Workers federate over Cloudflare's global network with sub-50ms round-trips; clones boot from the nearest R2-hosted genome bundle.
+4. **The platform is fully serverless.** Zero idle cost. A tenant that flips `roleId: 'bank'` doesn't deploy infrastructure — they activate a TenantRoleProfile that the same Worker enforces on the next request.
+5. **Sustainability is provable.** Law 16 (carbon-aware) reads Cloudflare's published per-region grid intensity from KV; CostMetric (Law 15) routes to Analytics Engine; CSRD/ESRS E1 reports are continuously generated, not annual exercises.
+6. **PQC migration (Law 18) lands when CF Workers expose ML-DSA via WebCrypto.** Until then, the placeholder works; when CF flips the switch, the upgrade is a one-line change.
+
+### Slice IIIIII — formalize the Cloudflare bindings
+
+```
+src/services/cloudflare/
+├── bindings.ts        — typed wrappers for D1 / R2 / KV / DO / Queues / AI / Workflows / Vectorize / Analytics
+├── audit-chain-do.ts  — DurableObject hosting the per-tenant Merkle HEAD (Law 5 anchor)
+├── reconciler.ts      — Workflows that runs Law 9 cross-store reconciliation (TTTTT impl)
+├── ai-binding.ts      — Workers AI binding wrapper that auto-stamps AiProvenance (Law 22)
+├── analytics-sink.ts  — CostMetric / CarbonEstimate / AiProvenance → Analytics Engine
+├── queue-handler.ts   — Cloudflare Queue → emitDomainEvent fan-out to subscribers
+├── waf-tenant-iso.ts  — WAF custom rule generator: blocks cross-tenant query patterns (Law 13)
+└── index.ts
+```
+
+Plus runtime invariant `checkCloudflareBindingsHealthy` — at boot, probe every CF binding (D1, R2, KV, DO namespace, Queue, AI gateway, Workflow runner); fail open with telemetry if any binding is misconfigured.
+
+Slice IIIIII is the deployment thesis crystallized — once it lands, ERPax has zero non-Cloudflare dependencies (other than the optional Hyperdrive Postgres backstop). The whole platform is one `wrangler deploy` away from any developer's laptop.
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
