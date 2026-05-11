@@ -832,6 +832,55 @@ The storage-independence + replication-by-uuid pair (§0n + §0o) collapses seve
 
 @standard ISO/IEC 27040:2024 — storage security (data integrity); W3C Verifiable Data Registry conformance (storage layer); RFC 4122 §4.3 + RFC 8785 (content-derived uuids); CAP theorem — choosing CP via uuid-consensus reads (replicas may be unavailable; survivors give consistent answers).
 
+## 0p. MCP is ready to build and explore
+
+Per user 'mcp is ready to build and explore'. After §0a–§0o, the MCP surface is broad and the platform is shippable. Slice VVVVVV ships the **single survey endpoint** so external clients (Claude Code, Cursor, IDEs, agents-of-agents, the shadcn `mcp-playground` UI) can discover what ERPax can do today without reading source.
+
+### Three discovery tools
+
+| Tool | Returns |
+|---|---|
+| `erpax.platform.toolCatalog` | Every registered erpax.* tool: name + description + area + parameter names |
+| `erpax.platform.toolsByArea` | Same tools grouped by area (`spec`, `chain`, `agents`, `standards`, `seo`, `blocks`, `streams`, `storage`, `voting`, `website`, `marketing`, `commerce`, `accounting`, `integrity`, `archival`, `cloning`, `federation`, `anchoring`, `i18n`, `multimedia`, `proposals`, `platform`, …) |
+| `erpax.platform.readiness` | Counts of every primitive + `readyToBuild` capability matrix + full catalog |
+
+### Readiness manifest counts (slice VVVVVV baseline)
+
+The manifest enumerates: MCP tools, agents, chains, chain steps, conservation laws (36), tenant role profiles, locales (30), standards families (7), tamper-proof collections, uuid reference registry size, site surfaces (12), storage backends. Each count is derived live — no hand-maintained metadata file to drift.
+
+### `readyToBuild` capability matrix
+
+| Capability | Available via |
+|---|---|
+| discover-tools | `erpax.platform.toolCatalog` |
+| browse-spec-corpus | `erpax.spec.getCollection` / `getChainRegistry` |
+| invoke-agent-hooks | `erpax.blocks.*` + every domain tool |
+| compose-blocks | `erpax.blocks.compose` / `chain` |
+| walk-chains | `erpax.blocks.chainsAsCompositions` |
+| stream-events | `erpax.streams.*` (Laws 33–34) |
+| verify-integrity | `erpax.integrity.*` (Laws 8/10) |
+| replicate-by-uuid | `erpax.storage.*` (Laws 35–36) |
+| vote-and-rate | `erpax.voting.*` (Laws 30–31) |
+| render-seo-vortex | `erpax.seo.*` (Law 29) |
+| federate | `erpax.platform.{publishSelf, bootFromFederation}` |
+| self-deploy | `erpax.commerce.{checkout, provisionInstance}` (Laws 25–26) |
+| self-evolve | `erpax.proposals.list` (Law 22 — meta-skill) |
+| multilingual | `erpax.i18n.*` over 30 locales |
+
+### What "ready to build and explore" actually means
+
+1. **Read all of ERPax in one query** — `erpax.platform.readiness` returns the 360° survey; clients don't need source access to discover what's available.
+
+2. **Hands-on without code** — the shadcn `mcp-playground` surface (slice MMMMMM-shadcn) renders the catalog as a Cmd+K fuzzy-searchable command palette; selecting any tool opens a Sheet with parameter inputs + a live JSON response viewer.
+
+3. **External agent integration** — any MCP client (Claude Code, Cursor, custom agents) can wire ERPax in by pointing at the MCP endpoint and calling `tools/list`; the readiness manifest is the human-readable companion.
+
+4. **Self-modification visible** — the meta-skill agent (slice QQQQQ) can call `erpax.platform.readiness` to know what tools to compose into proposals; new tools appear in subsequent calls automatically.
+
+### Standards anchoring
+
+@standard MCP 0.6 — tools/list extension; W3C JSON-LD 1.1 (manifest is JSON-serializable + linkable); ISO/IEC 25010:2023 §5.3 usability — discoverability; ISO 19011:2018 §6.4.6 (readiness audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

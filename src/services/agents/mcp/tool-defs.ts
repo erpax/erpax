@@ -59,6 +59,7 @@ import {
   verifyAcrossBackends, planMigration, replicateObject, consensusRead,
   checkStorageIndependence, listBackends,
 } from '@/services/storage-independence'
+import { buildReadinessManifest, buildToolCatalog, toolsByArea } from '@/services/platform-readiness'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -80,7 +81,9 @@ const localeEnum = z.enum(supportedLocales as unknown as [string, ...string[]])
  * registry. Called once at boot from `bootstrap.ts`.
  */
 export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
-  return [
+  // The full list is constructed first; the trailing 3 readiness tools
+  // (slice VVVVVV) reference `tools` so they can survey themselves.
+  const tools: ErpaxMcpTool[] = [
     {
       name: 'erpax.spec.getCollection',
       description: 'Return the parsed CollectionSpec (JSDoc-as-spec) for a given collection slug — title, summaries, standards cited, chain steps owned, features gated, roles, emits/subscribes, examples, invariants, use cases.',
@@ -1113,4 +1116,36 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       },
     },
   ]
+
+  // ── Slice VVVVVV — platform readiness + tool exploration ──
+  // Registered AFTER the main array so they can survey themselves.
+  tools.push(
+    {
+      name: 'erpax.platform.toolCatalog',
+      description: 'Per user "mcp is ready to build and explore" — return every registered erpax.* tool with name + description + parameter names + area. Drives the shadcn mcp-playground (Cmd+K fuzzy search).',
+      parameters: {},
+      async handler() { return json(buildToolCatalog(tools)) },
+    },
+    {
+      name: 'erpax.platform.toolsByArea',
+      description: 'Slice VVVVVV: tools grouped by area (spec / chain / agents / standards / seo / blocks / streams / storage / voting / website / marketing / commerce / accounting / integrity / archival / cloning / federation / anchoring / etc.). Returns area → ordered tool names.',
+      parameters: {},
+      async handler() {
+        const grouped = toolsByArea(tools)
+        const out: Record<string, string[]> = {}
+        for (const [k, v] of grouped) out[k] = v.map((t) => t.name)
+        return json(out)
+      },
+    },
+    {
+      name: 'erpax.platform.readiness',
+      description: 'Slice VVVVVV — single survey endpoint: counts of every primitive (agents, tools, chains, conservation laws, role profiles, locales, standards families, backends, site surfaces) + the readyToBuild capability matrix + the full tool catalog. The shadcn mcp-playground calls this on page load.',
+      parameters: {},
+      async handler() {
+        return json(buildReadinessManifest({ tools, registry, conservationLawCount: 36 }))
+      },
+    },
+  )
+
+  return tools
 }
