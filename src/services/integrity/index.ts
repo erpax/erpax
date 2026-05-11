@@ -14,3 +14,12 @@ export {
   jcsCanonicalize, stripNonContentFields,
   tenantNamespace, ERPAX_NAMESPACE_ROOT, NON_CONTENT_FIELDS,
 } from './content-uuid'
+
+// Slice SSSSS: opt-in registry + Payload field helper
+export {
+  TAMPER_PROOF_COLLECTIONS_REGISTRY,
+  registerTamperProofCollection,
+  isTamperProofCollection,
+  tamperProofUuidField,
+  tamperProofBeforeChangeHook,
+} from './tamper-proof-uuid-field'

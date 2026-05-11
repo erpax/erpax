@@ -22,6 +22,7 @@ import {
 } from '@/services/spec-generator'
 import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
+import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/services/integrity'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -188,6 +189,49 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         const corpus = extractCorpus(process.cwd())
         const spec = corpus.collections.find((c) => c.slug === target)
         return spec ? json(spec.standards) : text(`No spec for '${target as string}'`)
+      },
+    },
+    {
+      name: 'erpax.integrity.verifyObject',
+      description: 'Conservation Law 8: fetch a row from a tamper-proof collection, recompute its content-uuid (RFC 4122 §4.3 + RFC 8785 + SHA-256), and compare to the stored uuid. Returns {ok: true} on match or {ok: false, expected, actual} on Byzantine tamper.',
+      parameters: { collection: z.string(), id: z.string() },
+      async handler({ collection, id }, req) {
+        if (!TAMPER_PROOF_COLLECTIONS_REGISTRY.has(collection as string)) {
+          return text(`Collection '${collection as string}' has not opted into Law 8 (tamperProofUuidField).`)
+        }
+        const doc = await req.payload.findByID({ collection: collection as never, id: id as string })
+        if (!doc) return text(`Not found: ${collection as string}#${id as string}`)
+        const obj = doc as Record<string, unknown> & { uuid?: string; tenant?: string }
+        const tenantId = typeof obj.tenant === 'string' ? obj.tenant : 'unknown'
+        return json(verifyContentUuid(obj, tenantId))
+      },
+    },
+    {
+      name: 'erpax.integrity.auditTenant',
+      description: 'Conservation Law 8 bulk audit: for a given tenant, sample N rows from every tamper-proof collection, recompute uuids, return per-collection counts of {ok, tampered}. Use to confirm storage integrity end-to-end (and, with TTTTT, across redundant backends).',
+      parameters: { tenantId: z.string(), sampleSize: z.number().int().min(1).max(500).optional() },
+      async handler({ tenantId, sampleSize }, req) {
+        const limit = (sampleSize as number | undefined) ?? 50
+        const collections = [...TAMPER_PROOF_COLLECTIONS_REGISTRY]
+        const summary: Record<string, { ok: number; tampered: number; tamperedIds: string[] }> = {}
+        for (const slug of collections) {
+          const result = await req.payload.find({
+            collection: slug as never,
+            where: { tenant: { equals: tenantId } },
+            limit,
+            pagination: false,
+          })
+          let ok = 0
+          const tamperedIds: string[] = []
+          for (const doc of result.docs) {
+            const obj = doc as Record<string, unknown> & { uuid?: string; id?: string | number }
+            const v = verifyContentUuid(obj, tenantId as string)
+            if (v.ok) ok++
+            else tamperedIds.push(String(obj.id ?? obj.uuid ?? '?'))
+          }
+          summary[slug] = { ok, tampered: tamperedIds.length, tamperedIds }
+        }
+        return json({ tenantId, sampleSize: limit, collections: summary })
       },
     },
   ]

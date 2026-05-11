@@ -20,7 +20,7 @@ import { cronMatchesMinute } from '@/services/scheduled-tasks/runner'
 import { ROLES_REGISTRY, ROLE_IDS } from '@/access/roles-registry'
 import { agentRegistry } from '@/services/agents/bootstrap'
 import { supportedLocales } from '@/i18n'
-import { verifyContentUuid } from '@/services/integrity'
+import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/services/integrity'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1189,19 +1189,14 @@ export async function checkContentIntegrityProvable(ctx: InvariantContext): Prom
       'static-mode: skipped (no Payload — runtime check only)')
   }
   const SAMPLE_LIMIT = 50
-  const TAMPER_PROOF_COLLECTIONS = [
-    // Slice RRRRR enables this set incrementally as collections opt in
-    // by adding the `tamperProofUuidField()` to their schema. Empty
-    // today (RRRRR ships the primitive only) — first opt-in lands in
-    // the slice that wires the field on a real collection.
-  ] as const
-  if (TAMPER_PROOF_COLLECTIONS.length === 0) {
+  const optedIn = [...TAMPER_PROOF_COLLECTIONS_REGISTRY]
+  if (optedIn.length === 0) {
     return pass('entropy', 'content-integrity-provable',
-      'no collections opted in yet (waiting for tamperProofUuidField wiring)')
+      'no collections opted in yet (use tamperProofUuidField() to opt in)')
   }
   const tampered: string[] = []
   let totalChecked = 0
-  for (const slug of TAMPER_PROOF_COLLECTIONS) {
+  for (const slug of optedIn) {
     let docs: { docs: unknown[] }
     try {
       docs = await payload.find({ collection: slug as never, limit: SAMPLE_LIMIT, pagination: false })
@@ -1218,7 +1213,7 @@ export async function checkContentIntegrityProvable(ctx: InvariantContext): Prom
   }
   if (tampered.length === 0) {
     return pass('entropy', 'content-integrity-provable',
-      `${totalChecked} sampled rows across ${TAMPER_PROOF_COLLECTIONS.length} tamper-proof collection(s) — all uuids match content`)
+      `${totalChecked} sampled rows across ${optedIn.length} tamper-proof collection(s) — all uuids match content`)
   }
   return warn('entropy', 'content-integrity-provable',
     `${tampered.length}/${totalChecked} sampled rows have a uuid that disagrees with their content (Byzantine tamper or pending backfill)`,

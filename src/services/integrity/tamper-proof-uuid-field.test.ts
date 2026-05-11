@@ -1,0 +1,109 @@
+/**
+ * Tests for tamperProofUuidField + tamperProofBeforeChangeHook.
+ * Slice SSSSS.
+ */
+import { describe, it, expect, beforeEach } from 'vitest'
+import {
+  tamperProofUuidField,
+  tamperProofBeforeChangeHook,
+  TAMPER_PROOF_COLLECTIONS_REGISTRY,
+  isTamperProofCollection,
+  registerTamperProofCollection,
+} from './tamper-proof-uuid-field'
+import { computeContentUuid, verifyContentUuid } from './content-uuid'
+
+beforeEach(() => {
+  TAMPER_PROOF_COLLECTIONS_REGISTRY.clear()
+})
+
+describe('tamperProofUuidField', () => {
+  it('returns a single-field array for clean spread', () => {
+    const fields = tamperProofUuidField('invoices')
+    expect(fields).toHaveLength(1)
+    expect(fields[0]!.name).toBe('uuid')
+    expect(fields[0]!.type).toBe('text')
+  })
+
+  it('declares uuid as unique + index + required + read-only in admin', () => {
+    const [field] = tamperProofUuidField('invoices')
+    expect(field).toMatchObject({
+      name: 'uuid', type: 'text', unique: true, index: true, required: true,
+      admin: expect.objectContaining({ readOnly: true }),
+    })
+  })
+
+  it('registers the collection slug in the opt-in registry as a side effect', () => {
+    expect(TAMPER_PROOF_COLLECTIONS_REGISTRY.has('invoices')).toBe(false)
+    tamperProofUuidField('invoices')
+    expect(TAMPER_PROOF_COLLECTIONS_REGISTRY.has('invoices')).toBe(true)
+    expect(isTamperProofCollection('invoices')).toBe(true)
+  })
+
+  it('registry is idempotent across re-registration', () => {
+    registerTamperProofCollection('invoices')
+    registerTamperProofCollection('invoices')
+    expect(TAMPER_PROOF_COLLECTIONS_REGISTRY.size).toBe(1)
+  })
+})
+
+describe('tamperProofBeforeChangeHook — create', () => {
+  it('stamps a content-derived uuid on initial create', async () => {
+    const hook = tamperProofBeforeChangeHook('invoices')
+    const data = { tenant: 't1', amount: 100, currency: 'EUR' }
+    const result = await hook({
+      data, operation: 'create', req: {} as never, collection: {} as never,
+    } as never)
+    const expected = computeContentUuid({ tenant: 't1', amount: 100, currency: 'EUR' }, 't1')
+    expect((result as { uuid: string }).uuid).toBe(expected)
+  })
+
+  it('verifies — verifyContentUuid passes on the stamped row', async () => {
+    const hook = tamperProofBeforeChangeHook('invoices')
+    const stamped = await hook({
+      data: { tenant: 't1', amount: 100 }, operation: 'create',
+      req: {} as never, collection: {} as never,
+    } as never) as Record<string, unknown> & { uuid: string }
+    expect(verifyContentUuid(stamped, 't1').ok).toBe(true)
+  })
+
+  it('resolves tenantId from a relationship object too', async () => {
+    const hook = tamperProofBeforeChangeHook('invoices')
+    const result = await hook({
+      data: { tenant: { id: 't1', name: 'Acme' }, amount: 100 },
+      operation: 'create', req: {} as never, collection: {} as never,
+    } as never)
+    expect(typeof (result as { uuid: string }).uuid).toBe('string')
+  })
+})
+
+describe('tamperProofBeforeChangeHook — update', () => {
+  it('recomputes uuid from the MERGED post-update doc', async () => {
+    const hook = tamperProofBeforeChangeHook('invoices')
+    const original = { tenant: 't1', amount: 100, currency: 'EUR', uuid: 'old-uuid' }
+    const result = await hook({
+      data: { amount: 250 }, originalDoc: original,
+      operation: 'update', req: {} as never, collection: {} as never,
+    } as never) as { uuid: string }
+    const expected = computeContentUuid({ tenant: 't1', amount: 250, currency: 'EUR' }, 't1')
+    expect(result.uuid).toBe(expected)
+  })
+
+  it('throws when a user tries to override uuid manually', async () => {
+    const hook = tamperProofBeforeChangeHook('invoices')
+    await expect(hook({
+      data: { uuid: 'i-am-pretending' },
+      originalDoc: { uuid: 'real-uuid', tenant: 't1', amount: 100 },
+      operation: 'update', req: {} as never, collection: {} as never,
+    } as never)).rejects.toThrow(/Conservation Law 8 violation.*invoices.*manual uuid changes/)
+  })
+
+  it('does NOT throw when incoming uuid matches stored (idempotent re-save)', async () => {
+    const hook = tamperProofBeforeChangeHook('invoices')
+    const result = await hook({
+      data: { uuid: 'same', amount: 100 },
+      originalDoc: { uuid: 'same', tenant: 't1', amount: 100 },
+      operation: 'update', req: {} as never, collection: {} as never,
+    } as never)
+    expect((result as { uuid: string }).uuid).toBeDefined()
+  })
+})
