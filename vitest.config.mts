@@ -23,13 +23,14 @@ export default defineConfig({
     environmentMatchGlobs: [['**/tests/int/components/**', 'jsdom']],
     setupFiles: ['./vitest.setup.ts'],
     include: [
-      // Domain-driven integration tests (existing convention).
-      'tests/int/**/*.int.spec.ts',
-      'tests/int/**/*.int.spec.tsx',
-      // Standards-keyed tests — mirror src/standards/<id>/ layout
-      // (per docs/STANDARDS.md §5 "Test files mirror their target").
-      'tests/standards/**/*.int.spec.ts',
-      'tests/standards/**/*.int.spec.tsx',
+      // CCCCC-prep (2026-05-11): every spec is now co-located next to
+      // its source file as `<Name>.test.ts`. The legacy `tests/int/**`
+      // + `tests/standards/**` globs have been retired — those trees
+      // are empty (moved to tests/_attic/ for the local deletion pass).
+      // Playwright `*.e2e.spec.ts` lives in tests/e2e/ and runs through
+      // playwright.config, NOT vitest.
+      'src/**/*.test.ts',
+      'src/**/*.test.tsx',
     ],
     // Disable globals to enforce explicit imports (stricter, clearer tests)
     globals: false,

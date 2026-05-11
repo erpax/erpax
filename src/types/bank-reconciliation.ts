@@ -112,7 +112,7 @@ export interface ReconciliationException {
 }
 
 /**
- * Reconciliation configuration per host
+ * Reconciliation configuration per tenant
  */
 export interface ReconciliationConfig {
   tenantId: string;

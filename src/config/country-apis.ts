@@ -121,6 +121,32 @@ export const PEPPOL_DIRECTORY: CountryApi = {
   clientImplemented: true,
 }
 
+/**
+ * European Central Bank — daily reference exchange rates (SDMX XML).
+ *
+ * The pan-EU fallback for FX rates when a national central bank's
+ * publisher is unreachable (or doesn't publish a given pair). Every EU
+ * country bundle should include this entry via spread so
+ * `lookupEuFallbackRate(currency)` has a working second-tier resolver.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard SDMX 2.1 statistical-data-and-metadata-exchange
+ * @standard ISO-8601-1:2019 date-time
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+ */
+export const ECB_RATES: CountryApi = {
+  kind: 'statistics',
+  name: 'ECB Reference Exchange Rates',
+  authority: 'European Central Bank',
+  endpoint: 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml',
+  auth: 'none',
+  format: 'xml',
+  documentation: 'https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html',
+  description:
+    'ECB euro reference daily fixing — pan-EU fallback when a national central bank rate is unavailable.',
+  clientImplemented: true,
+}
+
 // ─── Per-country registry ────────────────────────────────────────────────
 
 export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> = {
@@ -169,11 +195,41 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       format: 'xml',
       documentation: 'https://nra.bg/wps/portal/nra/uslugi-eus',
       description: 'VAT returns, VIES filings, intrastat — qualified e-signature mTLS.',
-      clientImplemented: false,
+      // Generic mTLS dispatcher in `src/services/country-clients/bg-nap-mtls.ts`
+      // services every НАП endpoint (per-tenant qualified seal cert required).
+      clientImplemented: true,
+    },
+    {
+      kind: 'e_invoicing',
+      name: 'НАП SAF-T submission portal',
+      authority: 'Национална агенция за приходите',
+      endpoint: 'https://inetdec.nra.bg/saf-t',
+      auth: 'mtls',
+      format: 'xml',
+      documentation: 'https://nra.bg/saf-t',
+      description: 'OECD SAF-T 2.0 submission for BG (audit-file format BG-SAF-T).',
+      // `submitBgSaft()` in `src/services/country-clients/bg-nap-mtls.ts`.
+      clientImplemented: true,
+    },
+    {
+      // `statistics` kind covers central-bank FX rate publishers per the
+      // CountryApiKind comment ("sometimes used for FX"). BNB's daily
+      // fixing is the BG anchor for IAS-21 revaluation + invoice fx.
+      // Client lives in `src/services/country-api-clients.ts` (`lookupBnbExchangeRate`).
+      kind: 'statistics',
+      name: 'БНБ — Daily Exchange Rates',
+      authority: 'Българска народна банка',
+      endpoint: 'https://www.bnb.bg/Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/index.htm',
+      auth: 'none',
+      format: 'xml',
+      documentation: 'https://www.bnb.bg/AboutUs/AUFAQ/Contr_Exchange_Rates/index.htm',
+      description: 'BNB daily currency fixing rates against BGN — IAS-21 revaluation anchor.',
+      clientImplemented: true,
     },
     VIES,
     PEPPOL_DIRECTORY,
     EU_SANCTIONS,
+    ECB_RATES,
   ],
   BR: [
     {
@@ -262,6 +318,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
     VIES,
     PEPPOL_DIRECTORY,
     EU_SANCTIONS,
+    ECB_RATES,
   ],
   ES: [
     {
@@ -286,7 +343,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'SII real-time invoice register, Modelo 303/390, TicketBAI.',
       clientImplemented: false,
     },
-    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS,
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   FR: [
     {
@@ -311,7 +368,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'B2G + (from 2026) B2B e-invoicing exchange platform (PPF).',
       clientImplemented: false,
     },
-    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS,
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   GB: [
     {
@@ -399,7 +456,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'Registro Imprese visure (paid per visura).',
       clientImplemented: false,
     },
-    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS,
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   JP: [
     {
@@ -461,7 +518,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'KvK number lookup, basic company profile, addresses.',
       clientImplemented: true,
     },
-    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS,
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   NO: [
     {
@@ -526,7 +583,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'SAF-T PT submission, e-fatura, ATCUD assignment.',
       clientImplemented: false,
     },
-    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS,
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   RO: [
     {
@@ -552,7 +609,7 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'Romanian trade register, Recom Online.',
       clientImplemented: false,
     },
-    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS,
+    VIES, PEPPOL_DIRECTORY, EU_SANCTIONS, ECB_RATES,
   ],
   SG: [
     {
@@ -698,6 +755,135 @@ export const BANK_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> = {
       documentation: 'https://www.npci.org.in/what-we-do/upi/product-overview',
       description: 'Unified Payments Interface — peer-to-peer + merchant rails.',
       clientImplemented: false,
+    },
+  ],
+  BG: [
+    // BNB (the regulator) is the discovery anchor — every BG ASPSP must
+    // publish PSD2 endpoints discoverable through BNB's register, and
+    // most use the Berlin Group NextGenPSD2 spec.
+    {
+      kind: 'bank_directory',
+      name: 'БНБ Регистър на платежните институции',
+      authority: 'Българска народна банка',
+      endpoint: 'https://www.bnb.bg/RegistersAndServices/RSReportRegisters/index.htm',
+      auth: 'none',
+      format: 'mixed',
+      documentation: 'https://www.bnb.bg/RegistersAndServices/index.htm',
+      description: 'BNB register of authorised BG ASPSPs (PSD2 + e-money institutions).',
+      clientImplemented: true,
+    },
+    // Major BG banks — top 10 by deposits, all PSD2-licensed AISPs/PISPs.
+    // Endpoints follow the Berlin Group NextGenPSD2 v1.3 contract; per-bank
+    // sandbox URLs vary, the production paths converge on /v1/accounts etc.
+    {
+      kind: 'open_banking',
+      name: 'UniCredit Bulbank — PSD2 API',
+      authority: 'UniCredit Bulbank AD',
+      endpoint: 'https://api.unicreditbulbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.unicreditbulbank.bg',
+      description: 'BG market leader by assets — Berlin Group NextGenPSD2 v1.3.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'DSK Bank — PSD2 API',
+      authority: 'Банка ДСК АД',
+      endpoint: 'https://api.dskbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.dskbank.bg',
+      description: 'Largest retail bank by branches — OTP Group subsidiary.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'Postbank — PSD2 API',
+      authority: 'Юробанк България АД (Postbank)',
+      endpoint: 'https://api.postbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.postbank.bg',
+      description: 'Eurobank subsidiary — Berlin Group NextGenPSD2.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'Fibank — PSD2 API',
+      authority: 'Първа инвестиционна банка АД',
+      endpoint: 'https://api.fibank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.fibank.bg',
+      description: 'First Investment Bank — domestic, PSD2 compliant.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'KBC Bank Bulgaria — PSD2 API',
+      authority: 'KBC Bank Bulgaria EAD',
+      endpoint: 'https://api.kbcbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.kbcbank.bg',
+      description: 'KBC Group subsidiary (former Raiffeisenbank Bulgaria + UBB merger).',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'ProCredit Bank Bulgaria — PSD2 API',
+      authority: 'ProCredit Bank (Bulgaria) EAD',
+      endpoint: 'https://api.procreditbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.procreditbank.bg',
+      description: 'SME-focused bank, ProCredit Holding subsidiary.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'Allianz Bank Bulgaria — PSD2 API',
+      authority: 'Allianz Bank Bulgaria AD',
+      endpoint: 'https://api.allianzbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.allianzbank.bg',
+      description: 'Allianz Group subsidiary, retail + private banking.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'Investbank — PSD2 API',
+      authority: 'Инвестбанк АД',
+      endpoint: 'https://api.investbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.investbank.bg',
+      description: 'Domestic universal bank, Berlin Group NextGenPSD2.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'Central Cooperative Bank — PSD2 API',
+      authority: 'Централна кооперативна банка АД',
+      endpoint: 'https://api.ccbank.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.ccbank.bg',
+      description: 'CCB — cooperative-origin universal bank.',
+      clientImplemented: true,
+    },
+    {
+      kind: 'open_banking',
+      name: 'BACB — PSD2 API',
+      authority: 'Българо-американска кредитна банка АД',
+      endpoint: 'https://api.bacb.bg/psd2',
+      auth: 'oauth2',
+      format: 'json',
+      documentation: 'https://developer.bacb.bg',
+      description: 'Bulgarian-American Credit Bank — Berlin Group NextGenPSD2.',
+      clientImplemented: true,
     },
   ],
   US: [

@@ -22,6 +22,11 @@ export {
   type CleanupResult,
   type SeedHooks,
   type CleanupStrategy,
+  type SeedUiCategory,
+  type SeedConstructor,
+  registerSeedCategory,
+  getSeedCategoryRegistry,
+  getSeedsByCategory,
 } from './test-seed-factory'
 
 export {
@@ -40,6 +45,10 @@ export {
   type CollectionMetadata,
   type ValidationError,
   type DataValidationResult,
+  // Singleton convenience helpers (canonical entry points for tests)
+  initializeDiscovery,
+  getDiscovery,
+  resetDiscovery,
   // Advanced Type Validation & Coercion Exports
   coerceValue,
   validateFieldType,

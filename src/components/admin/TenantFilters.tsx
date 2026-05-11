@@ -1,5 +1,5 @@
 /**
- * Admin filter UI for the host (tenant) management table.
+ * Admin filter UI for the tenant (tenant) management table.
  *
  * @standard ECMA-262 ECMAScript-2024 baseline
  * @standard ISO-3166-1:2020 country-codes filter-vocab
@@ -9,22 +9,22 @@
  */
 
 /**
- * Host Filters Component
+ * Tenant Filters Component
  * Provides filtering options similar to Ruby ERPAX scopes
  */
 
 'use client';
 
 import React, { useState } from 'react';
-import { HostFilterOptions, HOST_STATUS_LABELS, COUNTRY_TO_STANDARD } from '@/types/host';
+import { TenantFilterOptions, TENANT_STATUS_LABELS, COUNTRY_TO_STANDARD } from '@/types/tenant';
 
 interface HostFiltersProps {
-  onFilterChange: (filters: HostFilterOptions) => void;
+  onFilterChange: (filters: TenantFilterOptions) => void;
 }
 
 const COUNTRIES = Object.keys(COUNTRY_TO_STANDARD).sort();
 const STANDARDS = Array.from(new Set(Object.values(COUNTRY_TO_STANDARD))).sort();
-const STATUSES = Object.keys(HOST_STATUS_LABELS) as Array<keyof typeof HOST_STATUS_LABELS>;
+const STATUSES = Object.keys(TENANT_STATUS_LABELS) as Array<keyof typeof TENANT_STATUS_LABELS>;
 
 export default function HostFilters({ onFilterChange }: HostFiltersProps) {
   const [showFilters, setShowFilters] = useState(false);
@@ -34,11 +34,11 @@ export default function HostFilters({ onFilterChange }: HostFiltersProps) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleApplyFilters = () => {
-    const filters: HostFilterOptions = {};
+    const filters: TenantFilterOptions = {};
 
-    if (status.length > 0) filters.status = status as HostFilterOptions['status'];
+    if (status.length > 0) filters.status = status as TenantFilterOptions['status'];
     if (country.length > 0) filters.country = country;
-    if (standard.length > 0) filters.accountingStandard = standard as HostFilterOptions['accountingStandard'];
+    if (standard.length > 0) filters.accountingStandard = standard as TenantFilterOptions['accountingStandard'];
     if (searchTerm) filters.searchTerm = searchTerm;
 
     onFilterChange(filters);
@@ -149,7 +149,7 @@ export default function HostFilters({ onFilterChange }: HostFiltersProps) {
                     }}
                     className="rounded border-gray-300"
                   />
-                  <span className="text-sm text-gray-700">{HOST_STATUS_LABELS[st]}</span>
+                  <span className="text-sm text-gray-700">{TENANT_STATUS_LABELS[st]}</span>
                 </label>
               ))}
             </div>

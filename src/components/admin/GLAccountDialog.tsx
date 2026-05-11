@@ -19,7 +19,7 @@ import { glAccountService } from '@/services/gl-account.service';
 interface GLAccountDialogProps {
   open: boolean;
   mode: 'create' | 'edit';
-  hostId: string;
+  tenantId: string;
   account?: GLAccount;
   parentId?: string;
   onClose: () => void;
@@ -49,7 +49,7 @@ const ANALYTIC_TYPES: AnalyticType[] = [
 export default function GLAccountDialog({
   open,
   mode,
-  hostId,
+  tenantId,
   account,
   parentId,
   onClose,
@@ -122,7 +122,7 @@ export default function GLAccountDialog({
 
     // Check uniqueness in backend
     try {
-      const isValid = await glAccountService.validateAccountCode(hostId, formData.code);
+      const isValid = await glAccountService.validateAccountCode(tenantId, formData.code);
       if (!isValid && mode === 'create') {
         setCodeError('This account code already exists');
         return false;
@@ -167,7 +167,7 @@ export default function GLAccountDialog({
         if (formData.taxCode) request.taxCode = formData.taxCode;
         if (formData.displayOrder !== undefined) request.displayOrder = formData.displayOrder;
 
-        savedAccount = await glAccountService.createAccount(hostId, request);
+        savedAccount = await glAccountService.createAccount(tenantId, request);
       } else if (account) {
         const request: UpdateGLAccountRequest = {};
 
@@ -184,7 +184,7 @@ export default function GLAccountDialog({
         if (formData.displayOrder !== account.displayOrder)
           request.displayOrder = formData.displayOrder;
 
-        savedAccount = await glAccountService.updateAccount(hostId, account.id, request);
+        savedAccount = await glAccountService.updateAccount(tenantId, account.id, request);
       } else {
         throw new Error('Invalid state');
       }

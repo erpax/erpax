@@ -1,0 +1,5 @@
+# Legacy evidence dir — moved to `public/evidence/`. See README.md.
+# Ignore everything stale that may already exist locally.
+*
+!.gitignore
+!README.md

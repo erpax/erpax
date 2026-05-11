@@ -1,28 +1,28 @@
 /**
- * Host Dialog Component
- * Modal for creating or editing hosts
+ * Tenant Dialog Component
+ * Modal for creating or editing tenants
  */
 
 'use client';
 
 import React, { useState, useEffect } from 'react';
 import {
-  Host,
-  CreateHostRequest,
-  UpdateHostRequest,
+  Tenant,
+  CreateTenantRequest,
+  UpdateTenantRequest,
   COUNTRY_TO_STANDARD,
   COUNTRY_TO_CURRENCY,
   COUNTRY_TO_LOCALE,
   FiscalYearEnd,
-} from '@/types/host';
-import { hostService } from '@/services/host.service';
+} from '@/types/tenant';
+import { tenantService } from '@/services/tenant.service';
 
 interface HostDialogProps {
   open: boolean;
   mode: 'create' | 'edit';
-  host?: Host;
+  tenant?: Tenant;
   onClose: () => void;
-  onSave: (host: Host) => void;
+  onSave: (tenant: Tenant) => void;
 }
 
 const MONTHS: FiscalYearEnd[] = [
@@ -42,9 +42,9 @@ const MONTHS: FiscalYearEnd[] = [
 
 const COUNTRIES = Object.keys(COUNTRY_TO_STANDARD).sort();
 
-export default function HostDialog({ open, mode, host, onClose, onSave }: HostDialogProps) {
+export default function HostDialog({ open, mode, tenant, onClose, onSave }: HostDialogProps) {
   const [formData, setFormData] = useState<
-    CreateHostRequest & { slug?: string; domainName?: string }
+    CreateTenantRequest & { slug?: string; domainName?: string }
   >({
     name: '',
     country: 'BG',
@@ -58,20 +58,20 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (mode === 'edit' && host) {
+    if (mode === 'edit' && tenant) {
       setFormData({
-        name: host.name,
-        slug: host.slug,
-        description: host.description,
-        country: host.country,
-        currency: host.currency,
-        locale: host.locale,
-        fiscalYearEnd: host.fiscalYearEnd,
-        defaultTaxRate: host.defaultTaxRate,
-        domainName: host.domainName,
+        name: tenant.name,
+        slug: tenant.slug,
+        description: tenant.description,
+        country: tenant.country,
+        currency: tenant.currency,
+        locale: tenant.locale,
+        fiscalYearEnd: tenant.fiscalYearEnd,
+        defaultTaxRate: tenant.defaultTaxRate,
+        domainName: tenant.domainName,
       });
     }
-  }, [mode, host, open]);
+  }, [mode, tenant, open]);
 
   const handleCountryChange = (country: string) => {
     setFormData({
@@ -88,10 +88,10 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
     setError(null);
 
     try {
-      let savedHost: Host;
+      let savedTenant: Tenant;
 
       if (mode === 'create') {
-        const request: CreateHostRequest = {
+        const request: CreateTenantRequest = {
           name: formData.name,
           country: formData.country,
           currency: formData.currency,
@@ -103,26 +103,26 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
         if (formData.description) request.description = formData.description;
         if (formData.domainName) request.domainName = formData.domainName;
 
-        savedHost = await hostService.createHost(request);
-      } else if (host) {
-        const request: UpdateHostRequest = {
+        savedTenant = await tenantService.createTenant(request);
+      } else if (tenant) {
+        const request: UpdateTenantRequest = {
           currency: formData.currency,
           locale: formData.locale,
           fiscalYearEnd: formData.fiscalYearEnd,
           defaultTaxRate: formData.defaultTaxRate,
         };
-        if (formData.name !== host.name) request.name = formData.name;
-        if (formData.description !== host.description) request.description = formData.description;
-        if (formData.domainName !== host.domainName) request.domainName = formData.domainName;
+        if (formData.name !== tenant.name) request.name = formData.name;
+        if (formData.description !== tenant.description) request.description = formData.description;
+        if (formData.domainName !== tenant.domainName) request.domainName = formData.domainName;
 
-        savedHost = await hostService.updateHost(host.id, request);
+        savedTenant = await tenantService.updateTenant(tenant.id, request);
       } else {
         throw new Error('Invalid state');
       }
 
-      onSave(savedHost);
+      onSave(savedTenant);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to save host');
+      setError(err instanceof Error ? err.message : 'Failed to save tenant');
     } finally {
       setLoading(false);
     }
@@ -138,7 +138,7 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b">
           <h2 className="text-2xl font-bold text-gray-900">
-            {mode === 'create' ? 'Create Host' : 'Edit Host'}
+            {mode === 'create' ? 'Create Tenant' : 'Edit Tenant'}
           </h2>
           <button
             onClick={onClose}
@@ -162,7 +162,7 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-900 mb-1">
-                  Host Name <span className="text-red-500">*</span>
+                  Tenant Name <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -320,7 +320,7 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
                 placeholder="e.g., beijing.erpax.app"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <p className="text-xs text-gray-500 mt-1">Optional. Custom domain for this host.</p>
+              <p className="text-xs text-gray-500 mt-1">Optional. Custom domain for this tenant.</p>
             </div>
           </div>
 
@@ -338,7 +338,7 @@ export default function HostDialog({ open, mode, host, onClose, onSave }: HostDi
               disabled={loading}
               className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium disabled:opacity-50"
             >
-              {loading ? 'Saving...' : mode === 'create' ? 'Create Host' : 'Update Host'}
+              {loading ? 'Saving...' : mode === 'create' ? 'Create Tenant' : 'Update Tenant'}
             </button>
           </div>
         </form>

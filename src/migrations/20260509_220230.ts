@@ -7,6 +7,14 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`domain\` text,
   	\`slug\` text NOT NULL,
   	\`locales\` text DEFAULT '[]',
+  	\`config_identity_country\` text,
+  	\`config_identity_legal_name\` text,
+  	\`config_identity_tax_registration\` text,
+  	\`config_localization_default_locale\` text,
+  	\`config_localization_fallback_locale\` text,
+  	\`config_currency_reporting_currency\` text,
+  	\`config_accounting_standard\` text,
+  	\`config_accounting_fiscal_year_start_month\` numeric DEFAULT 1,
   	\`allow_public_read\` integer DEFAULT false,
   	\`public_site_url\` text,
   	\`stripe_publishable_key\` text,
@@ -825,6 +833,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`password\` text,
   	\`name\` text,
   	\`username\` text,
+  	\`config_localization_default_locale\` text,
+  	\`config_localization_display_currency\` text,
+  	\`config_localization_date_format\` text DEFAULT 'locale',
+  	\`config_features\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`email\` text NOT NULL,
@@ -949,9 +961,25 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`items_tenant_idx\` ON \`items\` (\`tenant_id\`);`)
   await db.run(sql`CREATE INDEX \`items_updated_at_idx\` ON \`items\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`items_created_at_idx\` ON \`items\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`invoices_vat_breakdown\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`category_code\` text NOT NULL,
+  	\`rate\` numeric,
+  	\`taxable_amount\` numeric NOT NULL,
+  	\`tax_amount\` numeric NOT NULL,
+  	\`exemption_reason_code\` text,
+  	\`exemption_reason\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`invoices_vat_breakdown_order_idx\` ON \`invoices_vat_breakdown\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`invoices_vat_breakdown_parent_id_idx\` ON \`invoices_vat_breakdown\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`invoices\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`type_status_invoice_type\` text NOT NULL,
+  	\`type_status_invoice_type_code\` text,
   	\`type_status_status\` text,
   	\`type_status_confirmed\` integer DEFAULT false,
   	\`number\` text,
@@ -979,9 +1007,13 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`dates_suspension_scheduled_for\` text,
   	\`amounts_item_total\` numeric DEFAULT 0 NOT NULL,
   	\`amounts_discount_total\` numeric DEFAULT 0,
+  	\`amounts_allowances_total\` numeric DEFAULT 0,
+  	\`amounts_charges_total\` numeric DEFAULT 0,
   	\`amounts_net_total\` numeric DEFAULT 0,
   	\`amounts_tax_total\` numeric DEFAULT 0,
   	\`amounts_total_amount\` numeric DEFAULT 0 NOT NULL,
+  	\`amounts_prepaid_amount\` numeric DEFAULT 0,
+  	\`amounts_rounding_amount\` numeric DEFAULT 0,
   	\`amounts_total_paid\` numeric DEFAULT 0,
   	\`amounts_total_due\` numeric DEFAULT 0,
   	\`billing_tax_currency_code\` text DEFAULT 'EUR' NOT NULL,
@@ -1053,6 +1085,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`invoice_id\` integer NOT NULL,
   	\`code\` text,
   	\`description\` text NOT NULL,
+  	\`line_note\` text,
+  	\`object_identifier\` text,
   	\`status\` text,
   	\`items_buyer_item_id\` integer,
   	\`items_seller_item_id\` integer,
@@ -1067,7 +1101,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`discounting_discount_rate\` numeric,
   	\`discounting_discount_total\` numeric DEFAULT 0,
   	\`taxation_taxable\` integer DEFAULT true,
+  	\`taxation_vat_category_code\` text,
   	\`taxation_tax_rate\` numeric,
+  	\`taxation_vat_exemption_reason_code\` text,
+  	\`taxation_vat_exemption_reason\` text,
   	\`taxation_price_includes_tax\` integer DEFAULT false,
   	\`taxation_net_total\` numeric DEFAULT 0,
   	\`taxation_tax_total\` numeric DEFAULT 0,
@@ -1238,10 +1275,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`inventory\` numeric DEFAULT 0,
   	\`price_in_e_u_r_enabled\` integer,
   	\`price_in_e_u_r\` numeric,
-  	\`price_in_g_b_p_enabled\` integer,
-  	\`price_in_g_b_p\` numeric,
-  	\`price_in_u_s_d_enabled\` integer,
-  	\`price_in_u_s_d\` numeric,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`deleted_at\` text,
@@ -1279,10 +1312,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`version_inventory\` numeric DEFAULT 0,
   	\`version_price_in_e_u_r_enabled\` integer,
   	\`version_price_in_e_u_r\` numeric,
-  	\`version_price_in_g_b_p_enabled\` integer,
-  	\`version_price_in_g_b_p\` numeric,
-  	\`version_price_in_u_s_d_enabled\` integer,
-  	\`version_price_in_u_s_d\` numeric,
   	\`version_updated_at\` text,
   	\`version_created_at\` text,
   	\`version_deleted_at\` text,
@@ -1455,10 +1484,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`enable_variants\` integer,
   	\`price_in_e_u_r_enabled\` integer,
   	\`price_in_e_u_r\` numeric,
-  	\`price_in_g_b_p_enabled\` integer,
-  	\`price_in_g_b_p\` numeric,
-  	\`price_in_u_s_d_enabled\` integer,
-  	\`price_in_u_s_d\` numeric,
   	\`generate_slug\` integer DEFAULT true,
   	\`slug\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
@@ -1615,10 +1640,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`version_enable_variants\` integer,
   	\`version_price_in_e_u_r_enabled\` integer,
   	\`version_price_in_e_u_r\` numeric,
-  	\`version_price_in_g_b_p_enabled\` integer,
-  	\`version_price_in_g_b_p\` numeric,
-  	\`version_price_in_u_s_d_enabled\` integer,
-  	\`version_price_in_u_s_d\` numeric,
   	\`version_generate_slug\` integer DEFAULT true,
   	\`version_slug\` text,
   	\`version_updated_at\` text,
@@ -1902,6 +1923,49 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`imports_updated_at_idx\` ON \`imports\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`imports_created_at_idx\` ON \`imports\` (\`created_at\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`imports_filename_idx\` ON \`imports\` (\`filename\`);`)
+  await db.run(sql`CREATE TABLE \`audit_events_changes\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`field\` text NOT NULL,
+  	\`previous_value\` text,
+  	\`next_value\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_events\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`audit_events_changes_order_idx\` ON \`audit_events_changes\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_changes_parent_id_idx\` ON \`audit_events_changes\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`audit_events\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`timestamp\` text NOT NULL,
+  	\`event_type\` text NOT NULL,
+  	\`source\` text,
+  	\`collection_slug\` text NOT NULL,
+  	\`operation\` text NOT NULL,
+  	\`document_id\` text NOT NULL,
+  	\`user_id\` integer,
+  	\`previous_status\` text,
+  	\`next_status\` text,
+  	\`change_summary\` text,
+  	\`sources\` text,
+  	\`request_id\` text,
+  	\`severity\` text DEFAULT 'info',
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`user_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`audit_events_tenant_idx\` ON \`audit_events\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_timestamp_idx\` ON \`audit_events\` (\`timestamp\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_event_type_idx\` ON \`audit_events\` (\`event_type\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_collection_slug_idx\` ON \`audit_events\` (\`collection_slug\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_document_id_idx\` ON \`audit_events\` (\`document_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_user_idx\` ON \`audit_events\` (\`user_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_request_id_idx\` ON \`audit_events\` (\`request_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_updated_at_idx\` ON \`audit_events\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`audit_events_created_at_idx\` ON \`audit_events\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`tax_jurisdictions\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`code\` text NOT NULL,
@@ -2029,6 +2093,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`code\` text NOT NULL,
   	\`name\` text NOT NULL,
+  	\`country\` text,
   	\`identity_legal_name\` text,
   	\`identity_customer_type\` text DEFAULT 'company' NOT NULL,
   	\`identity_status\` text DEFAULT 'active' NOT NULL,
@@ -2038,6 +2103,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`addresses_billing_address_id\` integer,
   	\`addresses_shipping_address_id\` integer,
   	\`tax_vat_number\` text,
+  	\`tax_vat_number_type\` text,
   	\`tax_tax_exempt\` integer DEFAULT false,
   	\`tax_tax_exemption_certificate\` text,
   	\`tax_default_tax_code_id\` integer,
@@ -2067,6 +2133,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`customers_code_idx\` ON \`customers\` (\`code\`);`)
   await db.run(sql`CREATE INDEX \`customers_name_idx\` ON \`customers\` (\`name\`);`)
+  await db.run(sql`CREATE INDEX \`customers_country_idx\` ON \`customers\` (\`country\`);`)
   await db.run(sql`CREATE INDEX \`customers_identity_identity_customer_type_idx\` ON \`customers\` (\`identity_customer_type\`);`)
   await db.run(sql`CREATE INDEX \`customers_identity_identity_status_idx\` ON \`customers\` (\`identity_status\`);`)
   await db.run(sql`CREATE INDEX \`customers_contact_contact_email_idx\` ON \`customers\` (\`contact_email\`);`)
@@ -2098,6 +2165,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`code\` text NOT NULL,
   	\`name\` text NOT NULL,
+  	\`country\` text,
   	\`identity_legal_name\` text,
   	\`identity_vendor_type\` text DEFAULT 'company' NOT NULL,
   	\`identity_status\` text DEFAULT 'active' NOT NULL,
@@ -2106,6 +2174,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`contact_website\` text,
   	\`addresses_remit_to_address_id\` integer,
   	\`tax_vat_number\` text,
+  	\`tax_vat_number_type\` text,
   	\`tax_tax_exempt\` integer DEFAULT false,
   	\`tax_default_tax_code_id\` integer,
   	\`tax_vendor1099_eligible\` integer DEFAULT false,
@@ -2142,6 +2211,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`vendors_code_idx\` ON \`vendors\` (\`code\`);`)
   await db.run(sql`CREATE INDEX \`vendors_name_idx\` ON \`vendors\` (\`name\`);`)
+  await db.run(sql`CREATE INDEX \`vendors_country_idx\` ON \`vendors\` (\`country\`);`)
   await db.run(sql`CREATE INDEX \`vendors_identity_identity_vendor_type_idx\` ON \`vendors\` (\`identity_vendor_type\`);`)
   await db.run(sql`CREATE INDEX \`vendors_identity_identity_status_idx\` ON \`vendors\` (\`identity_status\`);`)
   await db.run(sql`CREATE INDEX \`vendors_contact_contact_email_idx\` ON \`vendors\` (\`contact_email\`);`)
@@ -2169,6 +2239,92 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`vendors_rels_parent_idx\` ON \`vendors_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`vendors_rels_path_idx\` ON \`vendors_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`vendors_rels_addresses_id_idx\` ON \`vendors_rels\` (\`addresses_id\`);`)
+  await db.run(sql`CREATE TABLE \`kyc_checks_identity_documents\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`doc_type\` text,
+  	\`doc_number\` text,
+  	\`issuing_country\` text,
+  	\`expires_at\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`kyc_checks\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`kyc_checks_identity_documents_order_idx\` ON \`kyc_checks_identity_documents\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`kyc_checks_identity_documents_parent_id_idx\` ON \`kyc_checks_identity_documents\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`kyc_checks\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`check_id\` text NOT NULL,
+  	\`subject_type\` text NOT NULL,
+  	\`subject_id\` integer NOT NULL,
+  	\`cdd_level\` text NOT NULL,
+  	\`sanctions_screening_screened_at\` text,
+  	\`sanctions_screening_lists\` text,
+  	\`sanctions_screening_match_found\` integer DEFAULT false,
+  	\`sanctions_screening_match_details\` text,
+  	\`pep_status\` text,
+  	\`risk_rating\` text,
+  	\`status\` text DEFAULT 'pending',
+  	\`completed_at\` text,
+  	\`next_review_due\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`subject_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`kyc_checks_tenant_idx\` ON \`kyc_checks\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`kyc_checks_check_id_idx\` ON \`kyc_checks\` (\`check_id\`);`)
+  await db.run(sql`CREATE INDEX \`kyc_checks_subject_idx\` ON \`kyc_checks\` (\`subject_id\`);`)
+  await db.run(sql`CREATE INDEX \`kyc_checks_created_by_idx\` ON \`kyc_checks\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`kyc_checks_approved_by_idx\` ON \`kyc_checks\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`kyc_checks_updated_at_idx\` ON \`kyc_checks\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`kyc_checks_created_at_idx\` ON \`kyc_checks\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`beneficial_owners\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`entity_id\` integer NOT NULL,
+  	\`full_name\` text NOT NULL,
+  	\`date_of_birth\` text,
+  	\`nationality\` text,
+  	\`residence_country\` text,
+  	\`residence_address_id\` integer,
+  	\`ownership_percent\` numeric,
+  	\`control_type\` text NOT NULL,
+  	\`pep_status\` text,
+  	\`kyc_check_id\` integer,
+  	\`status\` text DEFAULT 'active',
+  	\`effective_from\` text,
+  	\`effective_to\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`entity_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`residence_address_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`kyc_check_id\`) REFERENCES \`kyc_checks\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_tenant_idx\` ON \`beneficial_owners\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_entity_idx\` ON \`beneficial_owners\` (\`entity_id\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_residence_address_idx\` ON \`beneficial_owners\` (\`residence_address_id\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_kyc_check_idx\` ON \`beneficial_owners\` (\`kyc_check_id\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_created_by_idx\` ON \`beneficial_owners\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_approved_by_idx\` ON \`beneficial_owners\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_updated_at_idx\` ON \`beneficial_owners\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`beneficial_owners_created_at_idx\` ON \`beneficial_owners\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`gl_accounts_tags\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` integer NOT NULL,
@@ -2185,6 +2341,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`account_number\` text NOT NULL,
   	\`account_name\` text NOT NULL,
   	\`account_type\` text NOT NULL,
+  	\`role\` text,
   	\`parent_account_id\` integer,
   	\`normal_balance\` text NOT NULL,
   	\`balance\` numeric DEFAULT 0,
@@ -2210,6 +2367,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`line_number\` numeric DEFAULT 1,
   	\`gl_account_id\` integer NOT NULL,
+  	\`account_number\` text,
+  	\`account_name\` text,
   	\`description\` text,
   	\`debit\` numeric DEFAULT 0,
   	\`credit\` numeric DEFAULT 0,
@@ -2229,26 +2388,26 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`entry_date\` text NOT NULL,
   	\`posted_date\` text,
   	\`description\` text NOT NULL,
-  	\`status\` text DEFAULT 'draft' NOT NULL,
+  	\`status\` text DEFAULT 'draft',
   	\`debit_total\` numeric DEFAULT 0,
   	\`credit_total\` numeric DEFAULT 0,
   	\`is_balanced\` integer,
   	\`source_type\` text NOT NULL,
   	\`source_id\` text,
-  	\`approved_by_id\` integer,
-  	\`approval_date\` text,
   	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE INDEX \`journal_entries_tenant_idx\` ON \`journal_entries\` (\`tenant_id\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`journal_entries_entry_number_idx\` ON \`journal_entries\` (\`entry_number\`);`)
-  await db.run(sql`CREATE INDEX \`journal_entries_approved_by_idx\` ON \`journal_entries\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`journal_entries_created_by_idx\` ON \`journal_entries\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`journal_entries_approved_by_idx\` ON \`journal_entries\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`journal_entries_updated_at_idx\` ON \`journal_entries\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`journal_entries_created_at_idx\` ON \`journal_entries\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`gl_postings_accounts_affected\` (
@@ -2256,6 +2415,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`_parent_id\` integer NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`gl_account_id\` integer NOT NULL,
+  	\`account_number\` text,
+  	\`account_name\` text,
   	\`debit_amount\` numeric DEFAULT 0,
   	\`credit_amount\` numeric DEFAULT 0,
   	\`currency\` text DEFAULT 'EUR',
@@ -2281,17 +2442,56 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`error_message\` text,
   	\`reversal_posting_id\` text,
   	\`metadata\` text,
+  	\`created_by_id\` integer,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE INDEX \`gl_postings_tenant_idx\` ON \`gl_postings\` (\`tenant_id\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`gl_postings_posting_id_idx\` ON \`gl_postings\` (\`posting_id\`);`)
   await db.run(sql`CREATE INDEX \`gl_postings_journal_entry_idx\` ON \`gl_postings\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`gl_postings_created_by_idx\` ON \`gl_postings\` (\`created_by_id\`);`)
   await db.run(sql`CREATE INDEX \`gl_postings_updated_at_idx\` ON \`gl_postings\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`gl_postings_created_at_idx\` ON \`gl_postings\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`bank_accounts\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`account_name\` text NOT NULL,
+  	\`iban\` text,
+  	\`bic\` text,
+  	\`account_number\` text,
+  	\`routing_number\` text,
+  	\`institution\` text,
+  	\`country\` text,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`gl_account_id\` integer,
+  	\`purpose\` text,
+  	\`status\` text DEFAULT 'active',
+  	\`opened_at\` text,
+  	\`closed_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`gl_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`bank_accounts_tenant_idx\` ON \`bank_accounts\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_iban_idx\` ON \`bank_accounts\` (\`iban\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_country_idx\` ON \`bank_accounts\` (\`country\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_gl_account_idx\` ON \`bank_accounts\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_created_by_idx\` ON \`bank_accounts\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_approved_by_idx\` ON \`bank_accounts\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_updated_at_idx\` ON \`bank_accounts\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`bank_accounts_created_at_idx\` ON \`bank_accounts\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`bank_statements_transactions\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` integer NOT NULL,
@@ -2353,6 +2553,513 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`bank_statements_reconcilied_by_idx\` ON \`bank_statements\` (\`reconcilied_by_id\`);`)
   await db.run(sql`CREATE INDEX \`bank_statements_updated_at_idx\` ON \`bank_statements\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`bank_statements_created_at_idx\` ON \`bank_statements\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`bank_transactions_matched_journal_entries\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`journal_entry_id\` integer NOT NULL,
+  	\`matched_amount\` numeric NOT NULL,
+  	\`match_score\` numeric,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bank_transactions\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`bank_transactions_matched_journal_entries_order_idx\` ON \`bank_transactions_matched_journal_entries\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_matched_journal_entries_parent_id_idx\` ON \`bank_transactions_matched_journal_entries\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_matched_journal_entries_journal_entry_idx\` ON \`bank_transactions_matched_journal_entries\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE TABLE \`bank_transactions\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`external_id\` text NOT NULL,
+  	\`account_servicer_reference\` text,
+  	\`end_to_end_id\` text,
+  	\`bank_account_id\` integer NOT NULL,
+  	\`statement_id\` integer,
+  	\`value_date\` text NOT NULL,
+  	\`booking_date\` text,
+  	\`amount\` numeric NOT NULL,
+  	\`credit_debit_indicator\` text,
+  	\`booking_status\` text DEFAULT 'BOOK',
+  	\`currency\` text DEFAULT 'EUR',
+  	\`description\` text,
+  	\`counterparty_name\` text,
+  	\`counterparty_iban\` text,
+  	\`counterparty_bic\` text,
+  	\`reference\` text,
+  	\`bank_transaction_domain\` text,
+  	\`bank_transaction_family\` text,
+  	\`bank_transaction_sub_family\` text,
+  	\`transaction_code\` text,
+  	\`charge_bearer\` text,
+  	\`match_status\` text DEFAULT 'unmatched',
+  	\`matched_at\` text,
+  	\`matched_by_id\` integer,
+  	\`status\` text DEFAULT 'imported',
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`bank_account_id\`) REFERENCES \`bank_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`statement_id\`) REFERENCES \`bank_statements\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`matched_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`bank_transactions_tenant_idx\` ON \`bank_transactions\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`bank_transactions_external_id_idx\` ON \`bank_transactions\` (\`external_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_bank_account_idx\` ON \`bank_transactions\` (\`bank_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_statement_idx\` ON \`bank_transactions\` (\`statement_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_value_date_idx\` ON \`bank_transactions\` (\`value_date\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_matched_by_idx\` ON \`bank_transactions\` (\`matched_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_updated_at_idx\` ON \`bank_transactions\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`bank_transactions_created_at_idx\` ON \`bank_transactions\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`purchase_orders_lines\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`line_number\` numeric DEFAULT 1,
+  	\`item_id\` integer,
+  	\`description\` text NOT NULL,
+  	\`quantity\` numeric NOT NULL,
+  	\`unit_price\` numeric NOT NULL,
+  	\`line_total\` numeric DEFAULT 0,
+  	\`gl_account_id\` integer,
+  	\`quantity_received\` numeric DEFAULT 0,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`gl_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`purchase_orders\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`purchase_orders_lines_order_idx\` ON \`purchase_orders_lines\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_lines_parent_id_idx\` ON \`purchase_orders_lines\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_lines_item_idx\` ON \`purchase_orders_lines\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_lines_gl_account_idx\` ON \`purchase_orders_lines\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE TABLE \`purchase_orders\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`po_number\` text NOT NULL,
+  	\`vendor_id\` integer NOT NULL,
+  	\`order_date\` text NOT NULL,
+  	\`expected_delivery_date\` text,
+  	\`subtotal\` numeric DEFAULT 0,
+  	\`tax_amount\` numeric DEFAULT 0,
+  	\`total_amount\` numeric DEFAULT 0,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`status\` text DEFAULT 'draft',
+  	\`submitted_at\` text,
+  	\`sent_at\` text,
+  	\`closed_at\` text,
+  	\`invoice_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`vendor_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`invoice_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`purchase_orders_tenant_idx\` ON \`purchase_orders\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`purchase_orders_po_number_idx\` ON \`purchase_orders\` (\`po_number\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_vendor_idx\` ON \`purchase_orders\` (\`vendor_id\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_invoice_idx\` ON \`purchase_orders\` (\`invoice_id\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_created_by_idx\` ON \`purchase_orders\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_approved_by_idx\` ON \`purchase_orders\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_updated_at_idx\` ON \`purchase_orders\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`purchase_orders_created_at_idx\` ON \`purchase_orders\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`goods_receipts_lines\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`item_id\` integer,
+  	\`description\` text,
+  	\`quantity_received\` numeric NOT NULL,
+  	\`quantity_damaged\` numeric DEFAULT 0,
+  	\`condition\` text,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`goods_receipts\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`goods_receipts_lines_order_idx\` ON \`goods_receipts_lines\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_lines_parent_id_idx\` ON \`goods_receipts_lines\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_lines_item_idx\` ON \`goods_receipts_lines\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`goods_receipts\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`receipt_number\` text NOT NULL,
+  	\`purchase_order_id\` integer NOT NULL,
+  	\`received_date\` text NOT NULL,
+  	\`status\` text DEFAULT 'pending',
+  	\`inspected_at\` text,
+  	\`inspected_by_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`purchase_order_id\`) REFERENCES \`purchase_orders\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`inspected_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`goods_receipts_tenant_idx\` ON \`goods_receipts\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`goods_receipts_receipt_number_idx\` ON \`goods_receipts\` (\`receipt_number\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_purchase_order_idx\` ON \`goods_receipts\` (\`purchase_order_id\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_inspected_by_idx\` ON \`goods_receipts\` (\`inspected_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_created_by_idx\` ON \`goods_receipts\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_approved_by_idx\` ON \`goods_receipts\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_updated_at_idx\` ON \`goods_receipts\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`goods_receipts_created_at_idx\` ON \`goods_receipts\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`quotes_lines\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`item_id\` integer,
+  	\`description\` text NOT NULL,
+  	\`quantity\` numeric NOT NULL,
+  	\`unit_price\` numeric NOT NULL,
+  	\`line_total\` numeric DEFAULT 0,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`quotes\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`quotes_lines_order_idx\` ON \`quotes_lines\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_lines_parent_id_idx\` ON \`quotes_lines\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_lines_item_idx\` ON \`quotes_lines\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`quotes\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`quote_number\` text NOT NULL,
+  	\`customer_id\` integer NOT NULL,
+  	\`issued_at\` text,
+  	\`expires_at\` text,
+  	\`subtotal\` numeric DEFAULT 0,
+  	\`tax_amount\` numeric DEFAULT 0,
+  	\`total_amount\` numeric DEFAULT 0,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`status\` text DEFAULT 'draft',
+  	\`sent_at\` text,
+  	\`accepted_at\` text,
+  	\`converted_to_order_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`customer_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`converted_to_order_id\`) REFERENCES \`orders\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`quotes_tenant_idx\` ON \`quotes\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`quotes_quote_number_idx\` ON \`quotes\` (\`quote_number\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_customer_idx\` ON \`quotes\` (\`customer_id\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_converted_to_order_idx\` ON \`quotes\` (\`converted_to_order_id\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_created_by_idx\` ON \`quotes\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_approved_by_idx\` ON \`quotes\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_updated_at_idx\` ON \`quotes\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`quotes_created_at_idx\` ON \`quotes\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`contracts_modifications\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`modified_at\` text NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`price_impact\` numeric,
+  	\`modified_by_id\` integer,
+  	FOREIGN KEY (\`modified_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`contracts\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`contracts_modifications_order_idx\` ON \`contracts_modifications\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_modifications_parent_id_idx\` ON \`contracts_modifications\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_modifications_modified_by_idx\` ON \`contracts_modifications\` (\`modified_by_id\`);`)
+  await db.run(sql`CREATE TABLE \`contracts\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`contract_number\` text NOT NULL,
+  	\`customer_id\` integer NOT NULL,
+  	\`title\` text NOT NULL,
+  	\`effective_from\` text NOT NULL,
+  	\`effective_to\` text,
+  	\`total_value\` numeric DEFAULT 0,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`transaction_price_fixed\` numeric DEFAULT 0,
+  	\`transaction_price_variable\` numeric DEFAULT 0,
+  	\`variable_consideration_method\` text,
+  	\`financing_component\` numeric DEFAULT 0,
+  	\`payment_terms\` text,
+  	\`status\` text DEFAULT 'draft',
+  	\`activated_at\` text,
+  	\`terminated_at\` text,
+  	\`subscription_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`customer_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`subscription_id\`) REFERENCES \`subscriptions\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`contracts_tenant_idx\` ON \`contracts\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`contracts_contract_number_idx\` ON \`contracts\` (\`contract_number\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_customer_idx\` ON \`contracts\` (\`customer_id\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_subscription_idx\` ON \`contracts\` (\`subscription_id\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_created_by_idx\` ON \`contracts\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_approved_by_idx\` ON \`contracts\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_updated_at_idx\` ON \`contracts\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_created_at_idx\` ON \`contracts\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`contracts_rels\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`order\` integer,
+  	\`parent_id\` integer NOT NULL,
+  	\`path\` text NOT NULL,
+  	\`contracts_id\` integer,
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`contracts\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`contracts_id\`) REFERENCES \`contracts\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`contracts_rels_order_idx\` ON \`contracts_rels\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_rels_parent_idx\` ON \`contracts_rels\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_rels_path_idx\` ON \`contracts_rels\` (\`path\`);`)
+  await db.run(sql`CREATE INDEX \`contracts_rels_contracts_id_idx\` ON \`contracts_rels\` (\`contracts_id\`);`)
+  await db.run(sql`CREATE TABLE \`performance_obligations\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`contract_id\` integer NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`kind\` text DEFAULT 'distinct' NOT NULL,
+  	\`recognition_timing\` text DEFAULT 'point_in_time' NOT NULL,
+  	\`over_time_measurement\` text,
+  	\`measurement_kind\` text,
+  	\`recognition_method\` text,
+  	\`standalone_selling_price\` numeric NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`allocated_amount\` numeric DEFAULT 0,
+  	\`recognised_to_date\` numeric DEFAULT 0,
+  	\`percent_complete\` numeric DEFAULT 0,
+  	\`status\` text DEFAULT 'pending',
+  	\`satisfied_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`contract_id\`) REFERENCES \`contracts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`performance_obligations_tenant_idx\` ON \`performance_obligations\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`performance_obligations_contract_idx\` ON \`performance_obligations\` (\`contract_id\`);`)
+  await db.run(sql`CREATE INDEX \`performance_obligations_created_by_idx\` ON \`performance_obligations\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`performance_obligations_approved_by_idx\` ON \`performance_obligations\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`performance_obligations_updated_at_idx\` ON \`performance_obligations\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`performance_obligations_created_at_idx\` ON \`performance_obligations\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`shipments_lines\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`item_id\` integer,
+  	\`quantity\` numeric NOT NULL,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`shipments\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`shipments_lines_order_idx\` ON \`shipments_lines\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_lines_parent_id_idx\` ON \`shipments_lines\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_lines_item_idx\` ON \`shipments_lines\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`shipments\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`shipment_number\` text NOT NULL,
+  	\`order_id\` integer NOT NULL,
+  	\`ship_from_address_id\` integer,
+  	\`ship_to_address_id\` integer NOT NULL,
+  	\`carrier\` text,
+  	\`tracking_number\` text,
+  	\`tracking_url\` text,
+  	\`shipping_cost\` numeric DEFAULT 0,
+  	\`status\` text DEFAULT 'pending',
+  	\`shipped_at\` text,
+  	\`delivered_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`order_id\`) REFERENCES \`orders\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`ship_from_address_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`ship_to_address_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`shipments_tenant_idx\` ON \`shipments\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`shipments_shipment_number_idx\` ON \`shipments\` (\`shipment_number\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_order_idx\` ON \`shipments\` (\`order_id\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_ship_from_address_idx\` ON \`shipments\` (\`ship_from_address_id\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_ship_to_address_idx\` ON \`shipments\` (\`ship_to_address_id\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_tracking_number_idx\` ON \`shipments\` (\`tracking_number\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_created_by_idx\` ON \`shipments\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_approved_by_idx\` ON \`shipments\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_updated_at_idx\` ON \`shipments\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`shipments_created_at_idx\` ON \`shipments\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`returns_lines\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`item_id\` integer,
+  	\`quantity_returned\` numeric NOT NULL,
+  	\`restock\` integer DEFAULT true,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`returns\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`returns_lines_order_idx\` ON \`returns_lines\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`returns_lines_parent_id_idx\` ON \`returns_lines\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`returns_lines_item_idx\` ON \`returns_lines\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`returns\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`rma_number\` text NOT NULL,
+  	\`order_id\` integer NOT NULL,
+  	\`customer_id\` integer,
+  	\`reason\` text NOT NULL,
+  	\`status\` text DEFAULT 'requested',
+  	\`authorised_at\` text,
+  	\`received_at\` text,
+  	\`restocked_at\` text,
+  	\`credit_memo_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`order_id\`) REFERENCES \`orders\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`customer_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`credit_memo_id\`) REFERENCES \`credit_memos\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`returns_tenant_idx\` ON \`returns\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`returns_rma_number_idx\` ON \`returns\` (\`rma_number\`);`)
+  await db.run(sql`CREATE INDEX \`returns_order_idx\` ON \`returns\` (\`order_id\`);`)
+  await db.run(sql`CREATE INDEX \`returns_customer_idx\` ON \`returns\` (\`customer_id\`);`)
+  await db.run(sql`CREATE INDEX \`returns_credit_memo_idx\` ON \`returns\` (\`credit_memo_id\`);`)
+  await db.run(sql`CREATE INDEX \`returns_created_by_idx\` ON \`returns\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`returns_approved_by_idx\` ON \`returns\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`returns_updated_at_idx\` ON \`returns\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`returns_created_at_idx\` ON \`returns\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`warehouse_locations_bins\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`bin_code\` text NOT NULL,
+  	\`description\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_bins_order_idx\` ON \`warehouse_locations_bins\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_bins_parent_id_idx\` ON \`warehouse_locations_bins\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`warehouse_locations\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`code\` text NOT NULL,
+  	\`name\` text NOT NULL,
+  	\`type\` text DEFAULT 'warehouse' NOT NULL,
+  	\`address_id\` integer,
+  	\`country\` text,
+  	\`region\` text,
+  	\`gl_account_id\` integer,
+  	\`status\` text DEFAULT 'active',
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`address_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`gl_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_tenant_idx\` ON \`warehouse_locations\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`warehouse_locations_code_idx\` ON \`warehouse_locations\` (\`code\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_address_idx\` ON \`warehouse_locations\` (\`address_id\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_gl_account_idx\` ON \`warehouse_locations\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_created_by_idx\` ON \`warehouse_locations\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_approved_by_idx\` ON \`warehouse_locations\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_updated_at_idx\` ON \`warehouse_locations\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`warehouse_locations_created_at_idx\` ON \`warehouse_locations\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`inventory_movements\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`movement_id\` text NOT NULL,
+  	\`kind\` text NOT NULL,
+  	\`item_id\` integer NOT NULL,
+  	\`lot_or_serial\` text,
+  	\`quantity\` numeric NOT NULL,
+  	\`unit_cost\` numeric DEFAULT 0,
+  	\`extended_cost\` numeric DEFAULT 0,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`from_location_id\` integer,
+  	\`to_location_id\` integer,
+  	\`movement_at\` text NOT NULL,
+  	\`source_document_type\` text,
+  	\`source_document_id\` text,
+  	\`journal_entry_id\` integer,
+  	\`status\` text DEFAULT 'draft',
+  	\`posted_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`from_location_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`to_location_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`inventory_movements_tenant_idx\` ON \`inventory_movements\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`inventory_movements_movement_id_idx\` ON \`inventory_movements\` (\`movement_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_item_idx\` ON \`inventory_movements\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_from_location_idx\` ON \`inventory_movements\` (\`from_location_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_to_location_idx\` ON \`inventory_movements\` (\`to_location_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_movement_at_idx\` ON \`inventory_movements\` (\`movement_at\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_journal_entry_idx\` ON \`inventory_movements\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_created_by_idx\` ON \`inventory_movements\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_approved_by_idx\` ON \`inventory_movements\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_updated_at_idx\` ON \`inventory_movements\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`inventory_movements_created_at_idx\` ON \`inventory_movements\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`financial_statements_financial_ratios\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` integer NOT NULL,
@@ -2433,6 +3140,43 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`period_end_adjustments_journal_entry_idx\` ON \`period_end_adjustments\` (\`journal_entry_id\`);`)
   await db.run(sql`CREATE INDEX \`period_end_adjustments_updated_at_idx\` ON \`period_end_adjustments\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`period_end_adjustments_created_at_idx\` ON \`period_end_adjustments\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`depreciation_schedules\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`schedule_id\` text NOT NULL,
+  	\`fixed_asset_id\` integer NOT NULL,
+  	\`period_end\` text NOT NULL,
+  	\`period_start\` text NOT NULL,
+  	\`depreciation_amount\` numeric NOT NULL,
+  	\`accumulated_after\` numeric,
+  	\`book_value_after\` numeric,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`method\` text,
+  	\`status\` text DEFAULT 'calculated',
+  	\`posted_at\` text,
+  	\`journal_entry_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`fixed_asset_id\`) REFERENCES \`fixed_assets\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_tenant_idx\` ON \`depreciation_schedules\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`depreciation_schedules_schedule_id_idx\` ON \`depreciation_schedules\` (\`schedule_id\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_fixed_asset_idx\` ON \`depreciation_schedules\` (\`fixed_asset_id\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_period_end_idx\` ON \`depreciation_schedules\` (\`period_end\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_journal_entry_idx\` ON \`depreciation_schedules\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_created_by_idx\` ON \`depreciation_schedules\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_approved_by_idx\` ON \`depreciation_schedules\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_updated_at_idx\` ON \`depreciation_schedules\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`depreciation_schedules_created_at_idx\` ON \`depreciation_schedules\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`tax_calculations\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`tenant_id\` integer NOT NULL,
@@ -2467,12 +3211,79 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`tax_calculations_journal_entry_idx\` ON \`tax_calculations\` (\`journal_entry_id\`);`)
   await db.run(sql`CREATE INDEX \`tax_calculations_updated_at_idx\` ON \`tax_calculations\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`tax_calculations_created_at_idx\` ON \`tax_calculations\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`tax_returns_attachments\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`media_id\` integer,
+  	FOREIGN KEY (\`media_id\`) REFERENCES \`media\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`tax_returns\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`tax_returns_attachments_order_idx\` ON \`tax_returns_attachments\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_attachments_parent_id_idx\` ON \`tax_returns_attachments\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_attachments_media_idx\` ON \`tax_returns_attachments\` (\`media_id\`);`)
+  await db.run(sql`CREATE TABLE \`tax_returns\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`return_id\` text NOT NULL,
+  	\`return_type\` text NOT NULL,
+  	\`jurisdiction_id\` integer NOT NULL,
+  	\`period_start\` text NOT NULL,
+  	\`period_end\` text NOT NULL,
+  	\`taxable_sales\` numeric DEFAULT 0,
+  	\`taxable_acquisitions\` numeric DEFAULT 0,
+  	\`output_tax\` numeric DEFAULT 0,
+  	\`input_tax\` numeric DEFAULT 0,
+  	\`net_liability\` numeric DEFAULT 0,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`status\` text DEFAULT 'draft',
+  	\`filed_at\` text,
+  	\`filed_by_id\` integer,
+  	\`authority_reference\` text,
+  	\`paid_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`jurisdiction_id\`) REFERENCES \`tax_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`filed_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`tax_returns_tenant_idx\` ON \`tax_returns\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`tax_returns_return_id_idx\` ON \`tax_returns\` (\`return_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_jurisdiction_idx\` ON \`tax_returns\` (\`jurisdiction_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_period_end_idx\` ON \`tax_returns\` (\`period_end\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_filed_by_idx\` ON \`tax_returns\` (\`filed_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_created_by_idx\` ON \`tax_returns\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_approved_by_idx\` ON \`tax_returns\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_updated_at_idx\` ON \`tax_returns\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_created_at_idx\` ON \`tax_returns\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`tax_returns_rels\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`order\` integer,
+  	\`parent_id\` integer NOT NULL,
+  	\`path\` text NOT NULL,
+  	\`tax_calculations_id\` integer,
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`tax_returns\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`tax_calculations_id\`) REFERENCES \`tax_calculations\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`tax_returns_rels_order_idx\` ON \`tax_returns_rels\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_rels_parent_idx\` ON \`tax_returns_rels\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_rels_path_idx\` ON \`tax_returns_rels\` (\`path\`);`)
+  await db.run(sql`CREATE INDEX \`tax_returns_rels_tax_calculations_id_idx\` ON \`tax_returns_rels\` (\`tax_calculations_id\`);`)
   await db.run(sql`CREATE TABLE \`currency_rates\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`tenant_id\` integer NOT NULL,
   	\`rate_id\` text NOT NULL,
-  	\`from_currency\` text NOT NULL,
-  	\`to_currency\` text NOT NULL,
+  	\`from_currency\` text DEFAULT 'EUR' NOT NULL,
+  	\`to_currency\` text DEFAULT 'EUR' NOT NULL,
   	\`rate\` numeric NOT NULL,
   	\`rate_date\` text NOT NULL,
   	\`source\` text NOT NULL,
@@ -2492,6 +3303,85 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE UNIQUE INDEX \`currency_rates_rate_id_idx\` ON \`currency_rates\` (\`rate_id\`);`)
   await db.run(sql`CREATE INDEX \`currency_rates_updated_at_idx\` ON \`currency_rates\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`currency_rates_created_at_idx\` ON \`currency_rates\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`credit_memos\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`memo_number\` text NOT NULL,
+  	\`customer_id\` integer,
+  	\`invoice_id\` integer,
+  	\`reason\` text NOT NULL,
+  	\`reason_detail\` text,
+  	\`amount\` numeric NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`status\` text DEFAULT 'draft',
+  	\`issued_at\` text,
+  	\`applied_at\` text,
+  	\`settled_at\` text,
+  	\`journal_entry_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`customer_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`invoice_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`credit_memos_tenant_idx\` ON \`credit_memos\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`credit_memos_memo_number_idx\` ON \`credit_memos\` (\`memo_number\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_customer_idx\` ON \`credit_memos\` (\`customer_id\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_invoice_idx\` ON \`credit_memos\` (\`invoice_id\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_journal_entry_idx\` ON \`credit_memos\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_created_by_idx\` ON \`credit_memos\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_approved_by_idx\` ON \`credit_memos\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_updated_at_idx\` ON \`credit_memos\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`credit_memos_created_at_idx\` ON \`credit_memos\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`refunds\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`refund_number\` text NOT NULL,
+  	\`credit_memo_id\` integer NOT NULL,
+  	\`invoice_id\` integer,
+  	\`order_id\` integer,
+  	\`amount\` numeric NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`method\` text NOT NULL,
+  	\`stripe_refund_id\` text,
+  	\`status\` text DEFAULT 'draft',
+  	\`refunded_at\` text,
+  	\`settled_at\` text,
+  	\`failure_reason\` text,
+  	\`journal_entry_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`credit_memo_id\`) REFERENCES \`credit_memos\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`invoice_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`order_id\`) REFERENCES \`orders\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`refunds_tenant_idx\` ON \`refunds\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`refunds_refund_number_idx\` ON \`refunds\` (\`refund_number\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_credit_memo_idx\` ON \`refunds\` (\`credit_memo_id\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_invoice_idx\` ON \`refunds\` (\`invoice_id\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_order_idx\` ON \`refunds\` (\`order_id\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_journal_entry_idx\` ON \`refunds\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_created_by_idx\` ON \`refunds\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_approved_by_idx\` ON \`refunds\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_updated_at_idx\` ON \`refunds\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`refunds_created_at_idx\` ON \`refunds\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`fixed_assets\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`tenant_id\` integer NOT NULL,
@@ -2574,20 +3464,880 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`total_budget\` numeric DEFAULT 0,
   	\`currency\` text DEFAULT 'EUR',
   	\`status\` text DEFAULT 'draft',
+  	\`created_by_id\` integer,
   	\`approved_by_id\` integer,
   	\`approved_at\` text,
   	\`notes\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE INDEX \`budget_planning_tenant_idx\` ON \`budget_planning\` (\`tenant_id\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`budget_planning_budget_id_idx\` ON \`budget_planning\` (\`budget_id\`);`)
+  await db.run(sql`CREATE INDEX \`budget_planning_created_by_idx\` ON \`budget_planning\` (\`created_by_id\`);`)
   await db.run(sql`CREATE INDEX \`budget_planning_approved_by_idx\` ON \`budget_planning\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`budget_planning_updated_at_idx\` ON \`budget_planning\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`budget_planning_created_at_idx\` ON \`budget_planning\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`consent_records\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`consent_id\` text NOT NULL,
+  	\`data_subject_id\` integer NOT NULL,
+  	\`purpose\` text NOT NULL,
+  	\`lawful_basis\` text DEFAULT 'consent',
+  	\`consent_text\` text NOT NULL,
+  	\`consent_version\` text,
+  	\`captured_via\` text,
+  	\`ip_address\` text,
+  	\`user_agent\` text,
+  	\`status\` text DEFAULT 'given',
+  	\`given_at\` text,
+  	\`withdrawn_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`data_subject_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`consent_records_tenant_idx\` ON \`consent_records\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`consent_records_consent_id_idx\` ON \`consent_records\` (\`consent_id\`);`)
+  await db.run(sql`CREATE INDEX \`consent_records_data_subject_idx\` ON \`consent_records\` (\`data_subject_id\`);`)
+  await db.run(sql`CREATE INDEX \`consent_records_created_by_idx\` ON \`consent_records\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`consent_records_approved_by_idx\` ON \`consent_records\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`consent_records_updated_at_idx\` ON \`consent_records\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`consent_records_created_at_idx\` ON \`consent_records\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`data_subject_requests\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`request_id\` text NOT NULL,
+  	\`data_subject_id\` integer NOT NULL,
+  	\`request_type\` text NOT NULL,
+  	\`request_detail\` text,
+  	\`submitted_at\` text NOT NULL,
+  	\`due_at\` text,
+  	\`status\` text DEFAULT 'submitted',
+  	\`completed_at\` text,
+  	\`rejection_reason\` text,
+  	\`fulfilment_evidence\` text,
+  	\`handler_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`data_subject_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`handler_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_tenant_idx\` ON \`data_subject_requests\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`data_subject_requests_request_id_idx\` ON \`data_subject_requests\` (\`request_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_data_subject_idx\` ON \`data_subject_requests\` (\`data_subject_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_handler_idx\` ON \`data_subject_requests\` (\`handler_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_created_by_idx\` ON \`data_subject_requests\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_approved_by_idx\` ON \`data_subject_requests\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_updated_at_idx\` ON \`data_subject_requests\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`data_subject_requests_created_at_idx\` ON \`data_subject_requests\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`data_processing_activities_data_categories\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`category\` text NOT NULL,
+  	\`special\` integer DEFAULT false,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_data_categories_order_idx\` ON \`data_processing_activities_data_categories\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_data_categories_parent_id_idx\` ON \`data_processing_activities_data_categories\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`data_processing_activities_data_subject_categories\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`category\` text NOT NULL,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_data_subject_categories_order_idx\` ON \`data_processing_activities_data_subject_categories\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_data_subject_categories_parent_id_idx\` ON \`data_processing_activities_data_subject_categories\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`data_processing_activities_recipient_categories\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`recipient\` text NOT NULL,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_recipient_categories_order_idx\` ON \`data_processing_activities_recipient_categories\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_recipient_categories_parent_id_idx\` ON \`data_processing_activities_recipient_categories\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`transfers\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`country\` text NOT NULL,
+  	\`safeguard\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`transfers_order_idx\` ON \`transfers\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`transfers_parent_id_idx\` ON \`transfers\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`data_processing_activities\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`activity_name\` text NOT NULL,
+  	\`purpose\` text NOT NULL,
+  	\`controller_or_processor\` text NOT NULL,
+  	\`lawful_basis\` text NOT NULL,
+  	\`retention_period\` text NOT NULL,
+  	\`security_measures\` text,
+  	\`status\` text DEFAULT 'active',
+  	\`review_due_at\` text NOT NULL,
+  	\`dpo_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`dpo_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_tenant_idx\` ON \`data_processing_activities\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`data_processing_activities_activity_name_idx\` ON \`data_processing_activities\` (\`activity_name\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_dpo_idx\` ON \`data_processing_activities\` (\`dpo_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_created_by_idx\` ON \`data_processing_activities\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_approved_by_idx\` ON \`data_processing_activities\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_updated_at_idx\` ON \`data_processing_activities\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`data_processing_activities_created_at_idx\` ON \`data_processing_activities\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`audit_findings\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`finding_id\` text NOT NULL,
+  	\`title\` text NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`severity\` text NOT NULL,
+  	\`classification\` text NOT NULL,
+  	\`control_test_id\` integer,
+  	\`reported_at\` text NOT NULL,
+  	\`reported_by_id\` integer,
+  	\`remediation_plan\` text,
+  	\`remediation_owner_id\` integer,
+  	\`target_close_date\` text,
+  	\`status\` text DEFAULT 'open',
+  	\`closed_at\` text,
+  	\`closed_by_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`control_test_id\`) REFERENCES \`control_tests\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`reported_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`remediation_owner_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`closed_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`audit_findings_tenant_idx\` ON \`audit_findings\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`audit_findings_finding_id_idx\` ON \`audit_findings\` (\`finding_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_control_test_idx\` ON \`audit_findings\` (\`control_test_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_reported_by_idx\` ON \`audit_findings\` (\`reported_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_remediation_owner_idx\` ON \`audit_findings\` (\`remediation_owner_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_closed_by_idx\` ON \`audit_findings\` (\`closed_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_created_by_idx\` ON \`audit_findings\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_approved_by_idx\` ON \`audit_findings\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_updated_at_idx\` ON \`audit_findings\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_created_at_idx\` ON \`audit_findings\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`control_tests\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`test_id\` text NOT NULL,
+  	\`control_name\` text NOT NULL,
+  	\`control_objective\` text NOT NULL,
+  	\`control_frequency\` text,
+  	\`test_type\` text NOT NULL,
+  	\`period_start\` text NOT NULL,
+  	\`period_end\` text NOT NULL,
+  	\`sample_size\` numeric DEFAULT 0,
+  	\`exceptions\` numeric DEFAULT 0,
+  	\`result\` text,
+  	\`evidence\` text,
+  	\`tester_id\` integer,
+  	\`reviewer_id\` integer,
+  	\`status\` text DEFAULT 'planned',
+  	\`signed_off_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`tester_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`reviewer_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`control_tests_tenant_idx\` ON \`control_tests\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`control_tests_test_id_idx\` ON \`control_tests\` (\`test_id\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_tester_idx\` ON \`control_tests\` (\`tester_id\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_reviewer_idx\` ON \`control_tests\` (\`reviewer_id\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_created_by_idx\` ON \`control_tests\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_approved_by_idx\` ON \`control_tests\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_updated_at_idx\` ON \`control_tests\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_created_at_idx\` ON \`control_tests\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`cost_centers_allocation_rules\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`target_cost_center_id\` integer,
+  	\`basis\` text,
+  	\`percentage\` numeric,
+  	FOREIGN KEY (\`target_cost_center_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`cost_centers_allocation_rules_order_idx\` ON \`cost_centers_allocation_rules\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_allocation_rules_parent_id_idx\` ON \`cost_centers_allocation_rules\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_allocation_rules_target_cost_center_idx\` ON \`cost_centers_allocation_rules\` (\`target_cost_center_id\`);`)
+  await db.run(sql`CREATE TABLE \`cost_centers\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`cost_center_code\` text NOT NULL,
+  	\`name\` text NOT NULL,
+  	\`kind\` text DEFAULT 'department' NOT NULL,
+  	\`parent_id\` integer,
+  	\`country\` text,
+  	\`manager_id\` integer,
+  	\`reportable_segment\` integer DEFAULT false,
+  	\`allows_revenue\` integer DEFAULT true,
+  	\`allows_expense\` integer DEFAULT true,
+  	\`allows_capex\` integer DEFAULT false,
+  	\`effective_from\` text NOT NULL,
+  	\`effective_to\` text,
+  	\`status\` text DEFAULT 'active',
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`manager_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`cost_centers_tenant_idx\` ON \`cost_centers\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`cost_centers_cost_center_code_idx\` ON \`cost_centers\` (\`cost_center_code\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_parent_idx\` ON \`cost_centers\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_manager_idx\` ON \`cost_centers\` (\`manager_id\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_created_by_idx\` ON \`cost_centers\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_approved_by_idx\` ON \`cost_centers\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_updated_at_idx\` ON \`cost_centers\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`cost_centers_created_at_idx\` ON \`cost_centers\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`leases_modifications\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`effective_date\` text NOT NULL,
+  	\`kind\` text NOT NULL,
+  	\`new_discount_rate_percent\` numeric,
+  	\`new_fixed_payment\` numeric,
+  	\`new_end_date\` text,
+  	\`notes\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`leases\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`leases_modifications_order_idx\` ON \`leases_modifications\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`leases_modifications_parent_id_idx\` ON \`leases_modifications\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`leases\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`lease_number\` text NOT NULL,
+  	\`description\` text,
+  	\`lessor_id\` integer,
+  	\`classification\` text DEFAULT 'finance' NOT NULL,
+  	\`underlying_asset_category\` text,
+  	\`commencement_date\` text NOT NULL,
+  	\`end_date\` text NOT NULL,
+  	\`lease_term_months\` numeric,
+  	\`fixed_payment\` numeric NOT NULL,
+  	\`payment_frequency\` text DEFAULT 'monthly',
+  	\`payment_timing\` text DEFAULT 'in_advance',
+  	\`variable_payment_notes\` text,
+  	\`residual_value_guarantee\` numeric DEFAULT 0,
+  	\`termination_penalty\` numeric DEFAULT 0,
+  	\`discount_rate_basis\` text DEFAULT 'incremental_borrowing',
+  	\`discount_rate_percent\` numeric NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`initial_lease_liability\` numeric,
+  	\`initial_direct_costs\` numeric DEFAULT 0,
+  	\`lease_incentives_received\` numeric DEFAULT 0,
+  	\`prepaid_rent\` numeric DEFAULT 0,
+  	\`initial_rou_asset\` numeric,
+  	\`rou_asset_carrying\` numeric,
+  	\`liability_carrying\` numeric,
+  	\`last_posting_date\` text,
+  	\`impairment_reserve\` numeric DEFAULT 0,
+  	\`status\` text DEFAULT 'draft',
+  	\`termination_date\` text,
+  	\`rou_asset_account_id\` integer,
+  	\`lease_liability_account_id\` integer,
+  	\`rou_amortization_account_id\` integer,
+  	\`interest_expense_account_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`lessor_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`rou_asset_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`lease_liability_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`rou_amortization_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`interest_expense_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`leases_tenant_idx\` ON \`leases\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`leases_lease_number_idx\` ON \`leases\` (\`lease_number\`);`)
+  await db.run(sql`CREATE INDEX \`leases_lessor_idx\` ON \`leases\` (\`lessor_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_rou_asset_account_idx\` ON \`leases\` (\`rou_asset_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_lease_liability_account_idx\` ON \`leases\` (\`lease_liability_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_rou_amortization_account_idx\` ON \`leases\` (\`rou_amortization_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_interest_expense_account_idx\` ON \`leases\` (\`interest_expense_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_created_by_idx\` ON \`leases\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_approved_by_idx\` ON \`leases\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`leases_updated_at_idx\` ON \`leases\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`leases_created_at_idx\` ON \`leases\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`lease_period_postings\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`posting_id\` text NOT NULL,
+  	\`lease_id\` integer NOT NULL,
+  	\`period_start\` text NOT NULL,
+  	\`period_end\` text NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`opening_liability_carrying\` numeric NOT NULL,
+  	\`opening_rou_carrying\` numeric NOT NULL,
+  	\`interest\` numeric NOT NULL,
+  	\`principal_repayment\` numeric NOT NULL,
+  	\`cash_payment\` numeric NOT NULL,
+  	\`rou_amortisation\` numeric NOT NULL,
+  	\`closing_liability_carrying\` numeric,
+  	\`closing_rou_carrying\` numeric,
+  	\`interest_expense_account_id\` integer,
+  	\`lease_liability_account_id\` integer,
+  	\`rou_amortisation_account_id\` integer,
+  	\`accumulated_rou_amortisation_account_id\` integer,
+  	\`cash_account_id\` integer,
+  	\`cost_center_id\` integer,
+  	\`status\` text DEFAULT 'calculated',
+  	\`posted_at\` text,
+  	\`journal_entry_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`lease_id\`) REFERENCES \`leases\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`interest_expense_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`lease_liability_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`rou_amortisation_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`accumulated_rou_amortisation_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`cash_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`cost_center_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_tenant_idx\` ON \`lease_period_postings\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`lease_period_postings_posting_id_idx\` ON \`lease_period_postings\` (\`posting_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_lease_idx\` ON \`lease_period_postings\` (\`lease_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_period_end_idx\` ON \`lease_period_postings\` (\`period_end\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_interest_expense_account_idx\` ON \`lease_period_postings\` (\`interest_expense_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_lease_liability_account_idx\` ON \`lease_period_postings\` (\`lease_liability_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_rou_amortisation_account_idx\` ON \`lease_period_postings\` (\`rou_amortisation_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_accumulated_rou_amortisation_accou_idx\` ON \`lease_period_postings\` (\`accumulated_rou_amortisation_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_cash_account_idx\` ON \`lease_period_postings\` (\`cash_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_cost_center_idx\` ON \`lease_period_postings\` (\`cost_center_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_journal_entry_idx\` ON \`lease_period_postings\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_created_by_idx\` ON \`lease_period_postings\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_approved_by_idx\` ON \`lease_period_postings\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_updated_at_idx\` ON \`lease_period_postings\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`lease_period_postings_created_at_idx\` ON \`lease_period_postings\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`sepa_mandates\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`mandate_id\` text NOT NULL,
+  	\`local_instrument\` text DEFAULT 'CORE' NOT NULL,
+  	\`debtor_name\` text NOT NULL,
+  	\`debtor_iban\` text NOT NULL,
+  	\`debtor_bic\` text,
+  	\`debtor_id\` integer,
+  	\`creditor_identifier\` text NOT NULL,
+  	\`signature_date\` text NOT NULL,
+  	\`mandate_document_id\` integer,
+  	\`signature_method\` text DEFAULT 'wet_ink',
+  	\`sequence_state\` text DEFAULT 'pending_first',
+  	\`last_collection_at\` text,
+  	\`expiry_date\` text,
+  	\`revoked_at\` text,
+  	\`revocation_reason\` text,
+  	\`status\` text DEFAULT 'active',
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`debtor_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`mandate_document_id\`) REFERENCES \`media\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_tenant_idx\` ON \`sepa_mandates\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`sepa_mandates_mandate_id_idx\` ON \`sepa_mandates\` (\`mandate_id\`);`)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_debtor_idx\` ON \`sepa_mandates\` (\`debtor_id\`);`)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_mandate_document_idx\` ON \`sepa_mandates\` (\`mandate_document_id\`);`)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_created_by_idx\` ON \`sepa_mandates\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_approved_by_idx\` ON \`sepa_mandates\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_updated_at_idx\` ON \`sepa_mandates\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`sepa_mandates_created_at_idx\` ON \`sepa_mandates\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`payment_runs_transactions\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`end_to_end_id\` text NOT NULL,
+  	\`amount\` numeric NOT NULL,
+  	\`counterparty_name\` text NOT NULL,
+  	\`counterparty_iban\` text NOT NULL,
+  	\`counterparty_bic\` text,
+  	\`remittance_reference\` text,
+  	\`mandate_id\` text,
+  	\`source_bill_id\` integer,
+  	\`payment_record_id\` integer,
+  	FOREIGN KEY (\`source_bill_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`payment_record_id\`) REFERENCES \`payments\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`payment_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`payment_runs_transactions_order_idx\` ON \`payment_runs_transactions\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_transactions_parent_id_idx\` ON \`payment_runs_transactions\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_transactions_source_bill_idx\` ON \`payment_runs_transactions\` (\`source_bill_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_transactions_payment_record_idx\` ON \`payment_runs_transactions\` (\`payment_record_id\`);`)
+  await db.run(sql`CREATE TABLE \`payment_runs\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`run_id\` text NOT NULL,
+  	\`message_type\` text NOT NULL,
+  	\`sequence_type\` text,
+  	\`local_instrument\` text,
+  	\`source_bank_account_id\` integer NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`requested_execution_date\` text NOT NULL,
+  	\`number_of_transactions\` numeric,
+  	\`control_sum\` numeric,
+  	\`prepared_by_id\` integer,
+  	\`prepared_at\` text,
+  	\`authorised_by_id\` integer,
+  	\`authorised_at\` text,
+  	\`export_filename\` text,
+  	\`exported_at\` text,
+  	\`submitted_at\` text,
+  	\`settled_at\` text,
+  	\`bank_response_status\` text,
+  	\`bank_response_reason_code\` text,
+  	\`status\` text DEFAULT 'draft',
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`source_bank_account_id\`) REFERENCES \`bank_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`prepared_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`authorised_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`payment_runs_tenant_idx\` ON \`payment_runs\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`payment_runs_run_id_idx\` ON \`payment_runs\` (\`run_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_source_bank_account_idx\` ON \`payment_runs\` (\`source_bank_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_prepared_by_idx\` ON \`payment_runs\` (\`prepared_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_authorised_by_idx\` ON \`payment_runs\` (\`authorised_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_created_by_idx\` ON \`payment_runs\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_approved_by_idx\` ON \`payment_runs\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_updated_at_idx\` ON \`payment_runs\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`payment_runs_created_at_idx\` ON \`payment_runs\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`account_reconciliations_external_adjustments\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`category\` text NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`amount\` numeric NOT NULL,
+  	\`originated_at\` text NOT NULL,
+  	\`aging_bucket\` text,
+  	\`bank_transaction_id\` integer,
+  	\`journal_entry_id\` integer,
+  	FOREIGN KEY (\`bank_transaction_id\`) REFERENCES \`bank_transactions\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`account_reconciliations\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_external_adjustments_order_idx\` ON \`account_reconciliations_external_adjustments\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_external_adjustments_parent_id_idx\` ON \`account_reconciliations_external_adjustments\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_external_adjustments_bank_transa_idx\` ON \`account_reconciliations_external_adjustments\` (\`bank_transaction_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_external_adjustments_journal_ent_idx\` ON \`account_reconciliations_external_adjustments\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE TABLE \`account_reconciliations_gl_adjustments\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`category\` text NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`amount\` numeric NOT NULL,
+  	\`originated_at\` text NOT NULL,
+  	\`aging_bucket\` text,
+  	\`journal_entry_id\` integer,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`account_reconciliations\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_gl_adjustments_order_idx\` ON \`account_reconciliations_gl_adjustments\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_gl_adjustments_parent_id_idx\` ON \`account_reconciliations_gl_adjustments\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_gl_adjustments_journal_entry_idx\` ON \`account_reconciliations_gl_adjustments\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE TABLE \`account_reconciliations\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`reconciliation_id\` text NOT NULL,
+  	\`kind\` text DEFAULT 'bank' NOT NULL,
+  	\`gl_account_id\` integer NOT NULL,
+  	\`bank_account_id\` integer,
+  	\`as_of_date\` text NOT NULL,
+  	\`period_start\` text,
+  	\`period_end\` text,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`balance_per_external\` numeric NOT NULL,
+  	\`balance_per_g_l\` numeric NOT NULL,
+  	\`adjusted_external_balance\` numeric,
+  	\`adjusted_g_l_balance\` numeric,
+  	\`difference\` numeric,
+  	\`prepared_by_id\` integer,
+  	\`prepared_at\` text,
+  	\`reviewed_by_id\` integer,
+  	\`reviewed_at\` text,
+  	\`rejection_reason\` text,
+  	\`status\` text DEFAULT 'draft',
+  	\`source_statement_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`gl_account_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`bank_account_id\`) REFERENCES \`bank_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`prepared_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`reviewed_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`source_statement_id\`) REFERENCES \`bank_statements\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_tenant_idx\` ON \`account_reconciliations\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`account_reconciliations_reconciliation_id_idx\` ON \`account_reconciliations\` (\`reconciliation_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_gl_account_idx\` ON \`account_reconciliations\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_bank_account_idx\` ON \`account_reconciliations\` (\`bank_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_as_of_date_idx\` ON \`account_reconciliations\` (\`as_of_date\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_prepared_by_idx\` ON \`account_reconciliations\` (\`prepared_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_reviewed_by_idx\` ON \`account_reconciliations\` (\`reviewed_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_source_statement_idx\` ON \`account_reconciliations\` (\`source_statement_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_created_by_idx\` ON \`account_reconciliations\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_approved_by_idx\` ON \`account_reconciliations\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_updated_at_idx\` ON \`account_reconciliations\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`account_reconciliations_created_at_idx\` ON \`account_reconciliations\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`dunning_cycles_history\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`stage\` text NOT NULL,
+  	\`entered_at\` text NOT NULL,
+  	\`amount_overdue_at_entry\` numeric,
+  	\`communication_sent\` text,
+  	\`communication_reference\` text,
+  	\`notes\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`dunning_cycles\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_history_order_idx\` ON \`dunning_cycles_history\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_history_parent_id_idx\` ON \`dunning_cycles_history\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`dunning_cycles\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`cycle_id\` text NOT NULL,
+  	\`invoice_id\` integer NOT NULL,
+  	\`customer_id\` integer,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`amount_overdue\` numeric NOT NULL,
+  	\`invoice_due_date\` text NOT NULL,
+  	\`days_past_due\` numeric,
+  	\`current_stage\` text DEFAULT 'reminder' NOT NULL,
+  	\`current_stage_entered_at\` text,
+  	\`next_action_date\` text,
+  	\`paused\` integer DEFAULT false,
+  	\`pause_reason\` text,
+  	\`payment_plan_ref\` text,
+  	\`ecl_provision\` numeric,
+  	\`write_off_journal_entry_id\` integer,
+  	\`status\` text DEFAULT 'active',
+  	\`resolved_at\` text,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`invoice_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`customer_id\`) REFERENCES \`addresses\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`write_off_journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_tenant_idx\` ON \`dunning_cycles\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`dunning_cycles_cycle_id_idx\` ON \`dunning_cycles\` (\`cycle_id\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_invoice_idx\` ON \`dunning_cycles\` (\`invoice_id\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_customer_idx\` ON \`dunning_cycles\` (\`customer_id\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_write_off_journal_entry_idx\` ON \`dunning_cycles\` (\`write_off_journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_created_by_idx\` ON \`dunning_cycles\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_approved_by_idx\` ON \`dunning_cycles\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_updated_at_idx\` ON \`dunning_cycles\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`dunning_cycles_created_at_idx\` ON \`dunning_cycles\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`employees\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`employee_number\` text NOT NULL,
+  	\`display_name\` text NOT NULL,
+  	\`identity_given_name\` text NOT NULL,
+  	\`identity_family_name\` text NOT NULL,
+  	\`identity_date_of_birth\` text,
+  	\`identity_national_id_ref\` text,
+  	\`identity_citizenship_country\` text,
+  	\`contact_work_email\` text,
+  	\`contact_personal_email\` text,
+  	\`contact_phone\` text,
+  	\`job_title\` text NOT NULL,
+  	\`employment_type\` text DEFAULT 'full_time_indefinite' NOT NULL,
+  	\`department_id\` integer,
+  	\`manager_id\` integer,
+  	\`work_country\` text,
+  	\`hire_date\` text NOT NULL,
+  	\`probation_end_date\` text,
+  	\`contract_end_date\` text,
+  	\`termination_date\` text,
+  	\`termination_reason\` text,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`compensation_base_salary_annual\` numeric,
+  	\`compensation_fte_ratio\` numeric DEFAULT 1,
+  	\`compensation_pay_schedule\` text DEFAULT 'monthly',
+  	\`compensation_target_bonus_percent\` numeric,
+  	\`compensation_target_bonus_basis\` text,
+  	\`benefits_pension_plan\` text,
+  	\`benefits_pension_employer_contribution_percent\` numeric,
+  	\`benefits_health_insurance\` integer DEFAULT false,
+  	\`benefits_life_insurance\` integer DEFAULT false,
+  	\`benefits_paid_time_off_days_per_year\` numeric,
+  	\`benefits_paid_time_off_balance\` numeric DEFAULT 0,
+  	\`payroll_bank_account_iban\` text,
+  	\`payroll_bank_account_bic\` text,
+  	\`payroll_bank_account_account_holder\` text,
+  	\`tax_tax_id_ref\` text,
+  	\`tax_social_security_id_ref\` text,
+  	\`tax_tax_residence_country\` text,
+  	\`status\` text DEFAULT 'pre_hire',
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`department_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`manager_id\`) REFERENCES \`employees\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`employees_tenant_idx\` ON \`employees\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`employees_employee_number_idx\` ON \`employees\` (\`employee_number\`);`)
+  await db.run(sql`CREATE INDEX \`employees_department_idx\` ON \`employees\` (\`department_id\`);`)
+  await db.run(sql`CREATE INDEX \`employees_manager_idx\` ON \`employees\` (\`manager_id\`);`)
+  await db.run(sql`CREATE INDEX \`employees_created_by_idx\` ON \`employees\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`employees_approved_by_idx\` ON \`employees\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`employees_updated_at_idx\` ON \`employees\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`employees_created_at_idx\` ON \`employees\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`time_entries\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`entry_id\` text NOT NULL,
+  	\`employee_id\` integer NOT NULL,
+  	\`work_date\` text NOT NULL,
+  	\`minutes\` numeric NOT NULL,
+  	\`kind\` text DEFAULT 'regular' NOT NULL,
+  	\`cost_center_id\` integer,
+  	\`project\` text,
+  	\`task\` text,
+  	\`description\` text,
+  	\`billable\` integer DEFAULT false,
+  	\`billable_rate\` numeric,
+  	\`status\` text DEFAULT 'draft',
+  	\`submitted_at\` text,
+  	\`rejection_reason\` text,
+  	\`payroll_run_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`employee_id\`) REFERENCES \`employees\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`cost_center_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`payroll_run_id\`) REFERENCES \`payroll_runs\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`time_entries_tenant_idx\` ON \`time_entries\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`time_entries_entry_id_idx\` ON \`time_entries\` (\`entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_employee_idx\` ON \`time_entries\` (\`employee_id\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_work_date_idx\` ON \`time_entries\` (\`work_date\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_cost_center_idx\` ON \`time_entries\` (\`cost_center_id\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_payroll_run_idx\` ON \`time_entries\` (\`payroll_run_id\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_created_by_idx\` ON \`time_entries\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_approved_by_idx\` ON \`time_entries\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_updated_at_idx\` ON \`time_entries\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`time_entries_created_at_idx\` ON \`time_entries\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`payroll_runs_lines\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` integer NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`employee_id\` integer NOT NULL,
+  	\`regular_minutes\` numeric DEFAULT 0,
+  	\`overtime15_minutes\` numeric DEFAULT 0,
+  	\`overtime2_minutes\` numeric DEFAULT 0,
+  	\`night_shift_minutes\` numeric DEFAULT 0,
+  	\`holiday_work_minutes\` numeric DEFAULT 0,
+  	\`pto_minutes\` numeric DEFAULT 0,
+  	\`sick_minutes\` numeric DEFAULT 0,
+  	\`base_gross\` numeric NOT NULL,
+  	\`overtime_gross\` numeric DEFAULT 0,
+  	\`bonus_gross\` numeric DEFAULT 0,
+  	\`total_gross\` numeric NOT NULL,
+  	\`income_tax_withheld\` numeric DEFAULT 0,
+  	\`social_security_employee\` numeric DEFAULT 0,
+  	\`pension_employee\` numeric DEFAULT 0,
+  	\`other_deductions\` numeric DEFAULT 0,
+  	\`net_pay\` numeric NOT NULL,
+  	\`social_security_employer\` numeric DEFAULT 0,
+  	\`pension_employer\` numeric DEFAULT 0,
+  	\`payroll_taxes_employer\` numeric DEFAULT 0,
+  	\`cost_center_id\` integer,
+  	\`pay_slip_document_id\` integer,
+  	FOREIGN KEY (\`employee_id\`) REFERENCES \`employees\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`cost_center_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`pay_slip_document_id\`) REFERENCES \`media\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`payroll_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`payroll_runs_lines_order_idx\` ON \`payroll_runs_lines\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_lines_parent_id_idx\` ON \`payroll_runs_lines\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_lines_employee_idx\` ON \`payroll_runs_lines\` (\`employee_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_lines_cost_center_idx\` ON \`payroll_runs_lines\` (\`cost_center_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_lines_pay_slip_document_idx\` ON \`payroll_runs_lines\` (\`pay_slip_document_id\`);`)
+  await db.run(sql`CREATE TABLE \`payroll_runs\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`tenant_id\` integer NOT NULL,
+  	\`run_id\` text NOT NULL,
+  	\`pay_schedule\` text NOT NULL,
+  	\`period_start\` text NOT NULL,
+  	\`period_end\` text NOT NULL,
+  	\`payment_date\` text NOT NULL,
+  	\`currency\` text DEFAULT 'EUR',
+  	\`source_bank_account_id\` integer NOT NULL,
+  	\`employee_count\` numeric,
+  	\`total_gross\` numeric,
+  	\`total_deductions\` numeric,
+  	\`total_net\` numeric,
+  	\`total_employer_side_accruals\` numeric,
+  	\`prepared_by_id\` integer,
+  	\`prepared_at\` text,
+  	\`authorised_by_id\` integer,
+  	\`authorised_at\` text,
+  	\`status\` text DEFAULT 'draft',
+  	\`journal_entry_id\` integer,
+  	\`payment_run_id\` integer,
+  	\`created_by_id\` integer,
+  	\`approved_by_id\` integer,
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`source_bank_account_id\`) REFERENCES \`bank_accounts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`prepared_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`authorised_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`journal_entry_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`payment_run_id\`) REFERENCES \`payment_runs\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`payroll_runs_tenant_idx\` ON \`payroll_runs\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`payroll_runs_run_id_idx\` ON \`payroll_runs\` (\`run_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_period_start_idx\` ON \`payroll_runs\` (\`period_start\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_period_end_idx\` ON \`payroll_runs\` (\`period_end\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_source_bank_account_idx\` ON \`payroll_runs\` (\`source_bank_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_prepared_by_idx\` ON \`payroll_runs\` (\`prepared_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_authorised_by_idx\` ON \`payroll_runs\` (\`authorised_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_journal_entry_idx\` ON \`payroll_runs\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_payment_run_idx\` ON \`payroll_runs\` (\`payment_run_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_created_by_idx\` ON \`payroll_runs\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_approved_by_idx\` ON \`payroll_runs\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_updated_at_idx\` ON \`payroll_runs\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`payroll_runs_created_at_idx\` ON \`payroll_runs\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`redirects\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`from\` text NOT NULL,
@@ -3105,21 +4855,54 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`carts_id\` integer,
   	\`orders_id\` integer,
   	\`transactions_id\` integer,
+  	\`audit_events_id\` integer,
   	\`tax_jurisdictions_id\` integer,
   	\`tax_codes_id\` integer,
   	\`fiscal_periods_id\` integer,
   	\`customers_id\` integer,
   	\`vendors_id\` integer,
+  	\`kyc_checks_id\` integer,
+  	\`beneficial_owners_id\` integer,
   	\`gl_accounts_id\` integer,
   	\`journal_entries_id\` integer,
   	\`gl_postings_id\` integer,
+  	\`bank_accounts_id\` integer,
   	\`bank_statements_id\` integer,
+  	\`bank_transactions_id\` integer,
+  	\`purchase_orders_id\` integer,
+  	\`goods_receipts_id\` integer,
+  	\`quotes_id\` integer,
+  	\`contracts_id\` integer,
+  	\`performance_obligations_id\` integer,
+  	\`shipments_id\` integer,
+  	\`returns_id\` integer,
+  	\`warehouse_locations_id\` integer,
+  	\`inventory_movements_id\` integer,
   	\`financial_statements_id\` integer,
   	\`period_end_adjustments_id\` integer,
+  	\`depreciation_schedules_id\` integer,
   	\`tax_calculations_id\` integer,
+  	\`tax_returns_id\` integer,
   	\`currency_rates_id\` integer,
+  	\`credit_memos_id\` integer,
+  	\`refunds_id\` integer,
   	\`fixed_assets_id\` integer,
   	\`budget_planning_id\` integer,
+  	\`consent_records_id\` integer,
+  	\`data_subject_requests_id\` integer,
+  	\`data_processing_activities_id\` integer,
+  	\`audit_findings_id\` integer,
+  	\`control_tests_id\` integer,
+  	\`cost_centers_id\` integer,
+  	\`leases_id\` integer,
+  	\`lease_period_postings_id\` integer,
+  	\`sepa_mandates_id\` integer,
+  	\`payment_runs_id\` integer,
+  	\`account_reconciliations_id\` integer,
+  	\`dunning_cycles_id\` integer,
+  	\`employees_id\` integer,
+  	\`time_entries_id\` integer,
+  	\`payroll_runs_id\` integer,
   	\`redirects_id\` integer,
   	\`forms_id\` integer,
   	\`form_submissions_id\` integer,
@@ -3149,21 +4932,54 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`carts_id\`) REFERENCES \`carts\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`orders_id\`) REFERENCES \`orders\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`transactions_id\`) REFERENCES \`transactions\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`audit_events_id\`) REFERENCES \`audit_events\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`tax_jurisdictions_id\`) REFERENCES \`tax_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`tax_codes_id\`) REFERENCES \`tax_codes\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`fiscal_periods_id\`) REFERENCES \`fiscal_periods\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`customers_id\`) REFERENCES \`customers\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`vendors_id\`) REFERENCES \`vendors\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`kyc_checks_id\`) REFERENCES \`kyc_checks\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`beneficial_owners_id\`) REFERENCES \`beneficial_owners\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`gl_accounts_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`journal_entries_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`gl_postings_id\`) REFERENCES \`gl_postings\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`bank_accounts_id\`) REFERENCES \`bank_accounts\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`bank_statements_id\`) REFERENCES \`bank_statements\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`bank_transactions_id\`) REFERENCES \`bank_transactions\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`purchase_orders_id\`) REFERENCES \`purchase_orders\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`goods_receipts_id\`) REFERENCES \`goods_receipts\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`quotes_id\`) REFERENCES \`quotes\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`contracts_id\`) REFERENCES \`contracts\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`performance_obligations_id\`) REFERENCES \`performance_obligations\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`shipments_id\`) REFERENCES \`shipments\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`returns_id\`) REFERENCES \`returns\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`warehouse_locations_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`inventory_movements_id\`) REFERENCES \`inventory_movements\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`financial_statements_id\`) REFERENCES \`financial_statements\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`period_end_adjustments_id\`) REFERENCES \`period_end_adjustments\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`depreciation_schedules_id\`) REFERENCES \`depreciation_schedules\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`tax_calculations_id\`) REFERENCES \`tax_calculations\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`tax_returns_id\`) REFERENCES \`tax_returns\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`currency_rates_id\`) REFERENCES \`currency_rates\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`credit_memos_id\`) REFERENCES \`credit_memos\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`refunds_id\`) REFERENCES \`refunds\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`fixed_assets_id\`) REFERENCES \`fixed_assets\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`budget_planning_id\`) REFERENCES \`budget_planning\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`consent_records_id\`) REFERENCES \`consent_records\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`data_subject_requests_id\`) REFERENCES \`data_subject_requests\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`data_processing_activities_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`audit_findings_id\`) REFERENCES \`audit_findings\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`control_tests_id\`) REFERENCES \`control_tests\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`cost_centers_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`leases_id\`) REFERENCES \`leases\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`lease_period_postings_id\`) REFERENCES \`lease_period_postings\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`sepa_mandates_id\`) REFERENCES \`sepa_mandates\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`payment_runs_id\`) REFERENCES \`payment_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`account_reconciliations_id\`) REFERENCES \`account_reconciliations\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`dunning_cycles_id\`) REFERENCES \`dunning_cycles\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`employees_id\`) REFERENCES \`employees\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`time_entries_id\`) REFERENCES \`time_entries\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`payroll_runs_id\`) REFERENCES \`payroll_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`redirects_id\`) REFERENCES \`redirects\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`forms_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade,
   	FOREIGN KEY (\`form_submissions_id\`) REFERENCES \`form_submissions\`(\`id\`) ON UPDATE no action ON DELETE cascade,
@@ -3197,21 +5013,54 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_carts_id_idx\` ON \`payload_locked_documents_rels\` (\`carts_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_orders_id_idx\` ON \`payload_locked_documents_rels\` (\`orders_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_transactions_id_idx\` ON \`payload_locked_documents_rels\` (\`transactions_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_audit_events_id_idx\` ON \`payload_locked_documents_rels\` (\`audit_events_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_tax_jurisdictions_id_idx\` ON \`payload_locked_documents_rels\` (\`tax_jurisdictions_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_tax_codes_id_idx\` ON \`payload_locked_documents_rels\` (\`tax_codes_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_fiscal_periods_id_idx\` ON \`payload_locked_documents_rels\` (\`fiscal_periods_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_customers_id_idx\` ON \`payload_locked_documents_rels\` (\`customers_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_vendors_id_idx\` ON \`payload_locked_documents_rels\` (\`vendors_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_kyc_checks_id_idx\` ON \`payload_locked_documents_rels\` (\`kyc_checks_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_beneficial_owners_id_idx\` ON \`payload_locked_documents_rels\` (\`beneficial_owners_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_gl_accounts_id_idx\` ON \`payload_locked_documents_rels\` (\`gl_accounts_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_journal_entries_id_idx\` ON \`payload_locked_documents_rels\` (\`journal_entries_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_gl_postings_id_idx\` ON \`payload_locked_documents_rels\` (\`gl_postings_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_bank_accounts_id_idx\` ON \`payload_locked_documents_rels\` (\`bank_accounts_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_bank_statements_id_idx\` ON \`payload_locked_documents_rels\` (\`bank_statements_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_bank_transactions_id_idx\` ON \`payload_locked_documents_rels\` (\`bank_transactions_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_purchase_orders_id_idx\` ON \`payload_locked_documents_rels\` (\`purchase_orders_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_goods_receipts_id_idx\` ON \`payload_locked_documents_rels\` (\`goods_receipts_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_quotes_id_idx\` ON \`payload_locked_documents_rels\` (\`quotes_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_contracts_id_idx\` ON \`payload_locked_documents_rels\` (\`contracts_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_performance_obligations_id_idx\` ON \`payload_locked_documents_rels\` (\`performance_obligations_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_shipments_id_idx\` ON \`payload_locked_documents_rels\` (\`shipments_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_returns_id_idx\` ON \`payload_locked_documents_rels\` (\`returns_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_warehouse_locations_id_idx\` ON \`payload_locked_documents_rels\` (\`warehouse_locations_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_inventory_movements_id_idx\` ON \`payload_locked_documents_rels\` (\`inventory_movements_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_financial_statements_id_idx\` ON \`payload_locked_documents_rels\` (\`financial_statements_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_period_end_adjustments_id_idx\` ON \`payload_locked_documents_rels\` (\`period_end_adjustments_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_depreciation_schedules_id_idx\` ON \`payload_locked_documents_rels\` (\`depreciation_schedules_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_tax_calculations_id_idx\` ON \`payload_locked_documents_rels\` (\`tax_calculations_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_tax_returns_id_idx\` ON \`payload_locked_documents_rels\` (\`tax_returns_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_currency_rates_id_idx\` ON \`payload_locked_documents_rels\` (\`currency_rates_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_credit_memos_id_idx\` ON \`payload_locked_documents_rels\` (\`credit_memos_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_refunds_id_idx\` ON \`payload_locked_documents_rels\` (\`refunds_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_fixed_assets_id_idx\` ON \`payload_locked_documents_rels\` (\`fixed_assets_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_budget_planning_id_idx\` ON \`payload_locked_documents_rels\` (\`budget_planning_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_consent_records_id_idx\` ON \`payload_locked_documents_rels\` (\`consent_records_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_data_subject_requests_id_idx\` ON \`payload_locked_documents_rels\` (\`data_subject_requests_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_data_processing_activities_idx\` ON \`payload_locked_documents_rels\` (\`data_processing_activities_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_audit_findings_id_idx\` ON \`payload_locked_documents_rels\` (\`audit_findings_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_control_tests_id_idx\` ON \`payload_locked_documents_rels\` (\`control_tests_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_cost_centers_id_idx\` ON \`payload_locked_documents_rels\` (\`cost_centers_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_leases_id_idx\` ON \`payload_locked_documents_rels\` (\`leases_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_lease_period_postings_id_idx\` ON \`payload_locked_documents_rels\` (\`lease_period_postings_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_sepa_mandates_id_idx\` ON \`payload_locked_documents_rels\` (\`sepa_mandates_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_payment_runs_id_idx\` ON \`payload_locked_documents_rels\` (\`payment_runs_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_account_reconciliations_id_idx\` ON \`payload_locked_documents_rels\` (\`account_reconciliations_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_dunning_cycles_id_idx\` ON \`payload_locked_documents_rels\` (\`dunning_cycles_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_employees_id_idx\` ON \`payload_locked_documents_rels\` (\`employees_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_time_entries_id_idx\` ON \`payload_locked_documents_rels\` (\`time_entries_id\`);`)
+  await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_payroll_runs_id_idx\` ON \`payload_locked_documents_rels\` (\`payroll_runs_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_redirects_id_idx\` ON \`payload_locked_documents_rels\` (\`redirects_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_forms_id_idx\` ON \`payload_locked_documents_rels\` (\`forms_id\`);`)
   await db.run(sql`CREATE INDEX \`payload_locked_documents_rels_form_submissions_id_idx\` ON \`payload_locked_documents_rels\` (\`form_submissions_id\`);`)
@@ -3377,6 +5226,7 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`subscription_plans\`;`)
   await db.run(sql`DROP TABLE \`subscriptions\`;`)
   await db.run(sql`DROP TABLE \`items\`;`)
+  await db.run(sql`DROP TABLE \`invoices_vat_breakdown\`;`)
   await db.run(sql`DROP TABLE \`invoices\`;`)
   await db.run(sql`DROP TABLE \`invoice_lines\`;`)
   await db.run(sql`DROP TABLE \`payment_methods\`;`)
@@ -3416,6 +5266,8 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`exports\`;`)
   await db.run(sql`DROP TABLE \`exports_texts\`;`)
   await db.run(sql`DROP TABLE \`imports\`;`)
+  await db.run(sql`DROP TABLE \`audit_events_changes\`;`)
+  await db.run(sql`DROP TABLE \`audit_events\`;`)
   await db.run(sql`DROP TABLE \`tax_jurisdictions\`;`)
   await db.run(sql`DROP TABLE \`tax_codes\`;`)
   await db.run(sql`DROP TABLE \`tax_codes_rels\`;`)
@@ -3424,24 +5276,79 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`customers_rels\`;`)
   await db.run(sql`DROP TABLE \`vendors\`;`)
   await db.run(sql`DROP TABLE \`vendors_rels\`;`)
+  await db.run(sql`DROP TABLE \`kyc_checks_identity_documents\`;`)
+  await db.run(sql`DROP TABLE \`kyc_checks\`;`)
+  await db.run(sql`DROP TABLE \`beneficial_owners\`;`)
   await db.run(sql`DROP TABLE \`gl_accounts_tags\`;`)
   await db.run(sql`DROP TABLE \`gl_accounts\`;`)
   await db.run(sql`DROP TABLE \`journal_entries_lines\`;`)
   await db.run(sql`DROP TABLE \`journal_entries\`;`)
   await db.run(sql`DROP TABLE \`gl_postings_accounts_affected\`;`)
   await db.run(sql`DROP TABLE \`gl_postings\`;`)
+  await db.run(sql`DROP TABLE \`bank_accounts\`;`)
   await db.run(sql`DROP TABLE \`bank_statements_transactions\`;`)
   await db.run(sql`DROP TABLE \`bank_statements_matched_transactions\`;`)
   await db.run(sql`DROP TABLE \`bank_statements\`;`)
+  await db.run(sql`DROP TABLE \`bank_transactions_matched_journal_entries\`;`)
+  await db.run(sql`DROP TABLE \`bank_transactions\`;`)
+  await db.run(sql`DROP TABLE \`purchase_orders_lines\`;`)
+  await db.run(sql`DROP TABLE \`purchase_orders\`;`)
+  await db.run(sql`DROP TABLE \`goods_receipts_lines\`;`)
+  await db.run(sql`DROP TABLE \`goods_receipts\`;`)
+  await db.run(sql`DROP TABLE \`quotes_lines\`;`)
+  await db.run(sql`DROP TABLE \`quotes\`;`)
+  await db.run(sql`DROP TABLE \`contracts_modifications\`;`)
+  await db.run(sql`DROP TABLE \`contracts\`;`)
+  await db.run(sql`DROP TABLE \`contracts_rels\`;`)
+  await db.run(sql`DROP TABLE \`performance_obligations\`;`)
+  await db.run(sql`DROP TABLE \`shipments_lines\`;`)
+  await db.run(sql`DROP TABLE \`shipments\`;`)
+  await db.run(sql`DROP TABLE \`returns_lines\`;`)
+  await db.run(sql`DROP TABLE \`returns\`;`)
+  await db.run(sql`DROP TABLE \`warehouse_locations_bins\`;`)
+  await db.run(sql`DROP TABLE \`warehouse_locations\`;`)
+  await db.run(sql`DROP TABLE \`inventory_movements\`;`)
   await db.run(sql`DROP TABLE \`financial_statements_financial_ratios\`;`)
   await db.run(sql`DROP TABLE \`financial_statements_export_formats\`;`)
   await db.run(sql`DROP TABLE \`financial_statements\`;`)
   await db.run(sql`DROP TABLE \`period_end_adjustments\`;`)
+  await db.run(sql`DROP TABLE \`depreciation_schedules\`;`)
   await db.run(sql`DROP TABLE \`tax_calculations\`;`)
+  await db.run(sql`DROP TABLE \`tax_returns_attachments\`;`)
+  await db.run(sql`DROP TABLE \`tax_returns\`;`)
+  await db.run(sql`DROP TABLE \`tax_returns_rels\`;`)
   await db.run(sql`DROP TABLE \`currency_rates\`;`)
+  await db.run(sql`DROP TABLE \`credit_memos\`;`)
+  await db.run(sql`DROP TABLE \`refunds\`;`)
   await db.run(sql`DROP TABLE \`fixed_assets\`;`)
   await db.run(sql`DROP TABLE \`budget_planning_budget_line_items\`;`)
   await db.run(sql`DROP TABLE \`budget_planning\`;`)
+  await db.run(sql`DROP TABLE \`consent_records\`;`)
+  await db.run(sql`DROP TABLE \`data_subject_requests\`;`)
+  await db.run(sql`DROP TABLE \`data_processing_activities_data_categories\`;`)
+  await db.run(sql`DROP TABLE \`data_processing_activities_data_subject_categories\`;`)
+  await db.run(sql`DROP TABLE \`data_processing_activities_recipient_categories\`;`)
+  await db.run(sql`DROP TABLE \`transfers\`;`)
+  await db.run(sql`DROP TABLE \`data_processing_activities\`;`)
+  await db.run(sql`DROP TABLE \`audit_findings\`;`)
+  await db.run(sql`DROP TABLE \`control_tests\`;`)
+  await db.run(sql`DROP TABLE \`cost_centers_allocation_rules\`;`)
+  await db.run(sql`DROP TABLE \`cost_centers\`;`)
+  await db.run(sql`DROP TABLE \`leases_modifications\`;`)
+  await db.run(sql`DROP TABLE \`leases\`;`)
+  await db.run(sql`DROP TABLE \`lease_period_postings\`;`)
+  await db.run(sql`DROP TABLE \`sepa_mandates\`;`)
+  await db.run(sql`DROP TABLE \`payment_runs_transactions\`;`)
+  await db.run(sql`DROP TABLE \`payment_runs\`;`)
+  await db.run(sql`DROP TABLE \`account_reconciliations_external_adjustments\`;`)
+  await db.run(sql`DROP TABLE \`account_reconciliations_gl_adjustments\`;`)
+  await db.run(sql`DROP TABLE \`account_reconciliations\`;`)
+  await db.run(sql`DROP TABLE \`dunning_cycles_history\`;`)
+  await db.run(sql`DROP TABLE \`dunning_cycles\`;`)
+  await db.run(sql`DROP TABLE \`employees\`;`)
+  await db.run(sql`DROP TABLE \`time_entries\`;`)
+  await db.run(sql`DROP TABLE \`payroll_runs_lines\`;`)
+  await db.run(sql`DROP TABLE \`payroll_runs\`;`)
   await db.run(sql`DROP TABLE \`redirects\`;`)
   await db.run(sql`DROP TABLE \`redirects_rels\`;`)
   await db.run(sql`DROP TABLE \`forms_blocks_checkbox\`;`)

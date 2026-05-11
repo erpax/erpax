@@ -21,7 +21,7 @@
   "d1_databases": [
     {
       "binding": "D1",
-      "database_id": "16945233-56e9-4101-8438-353714c11cc3",
+      "database_id": "2971cdd6-8126-4d7f-b753-16a55d5f7968",
       "database_name": "erpax",
       "remote": true,
     },
@@ -40,6 +40,164 @@
       "preview_bucket_name": "erpax",
     },
   ],
+  // ─── Slice WWW (2026-05-10) — Cloudflare AI bindings ───────────────
+  // All AI inferences MUST go through `src/services/ai/cloudflare-ai.ts`
+  // `callWorkersAi(req, env.AI, options)` — never call `env.AI.run()` directly.
+  // The wrapper enforces the GDPR Art.22(3) human-in-the-loop trail +
+  // EU AI Act 2024 risk-class gating + per-tenant featureGuard (Slice VVV).
+  //
+  // @standard ISO/IEC 23894:2023 ai-risk-management
+  // @standard ISO/IEC 42001:2023 ai-management-system
+  // @compliance EU AI Act 2024
+  // @compliance GDPR Art.22 automated-individual-decision-making
+  "ai": {
+    "binding": "AI",
+  },
+  // Per-tenant Vectorize index for `ai_semantic_search`. ONE index;
+  // every vector carries `tenant_id` in metadata so cross-tenant queries
+  // are filtered out at query time (per ISO 27001 A.5.23). Index
+  // dimensions = 768 (matches `@cf/baai/bge-base-en-v1.5`).
+  "vectorize": [
+    {
+      "binding": "VECTORIZE_DOCS",
+      "index_name": "erpax-docs",
+    },
+  ],
+  // ─── Slice YYY (2026-05-10) — deep AI cost + security bindings ─────
+  // Workers KV — secondary cache for AI responses (idempotent calls
+  // dedupe at the KV layer before hitting AI Gateway), per-tenant
+  // feature-flag cache, rate-limit state. Cost: collapses many
+  // identical AI calls (e.g. same goods description → same HS code)
+  // to a single $0 KV read.
+  //
+  // @standard ISO-27002 §8.16 monitoring-activities cache-governance
+  // @audit ISO-19011:2018 §6.4.6 audit-evidence cache-traceability
+  "kv_namespaces": [
+    {
+      "binding": "AI_CACHE",
+      "id": "00000000000000000000000000000000",
+      "preview_id": "00000000000000000000000000000000",
+    },
+  ],
+  // Cloudflare Queues — async processing for: AI batch embeddings
+  // (`ai-batch`), e-invoice submission to НАП (`einvoice-out`),
+  // dunning emails (`dunning-out`), period-close fan-out
+  // (`period-close`). Replaces synchronous job-runner with at-least-
+  // once delivery + retry + DLQ.
+  //
+  // @standard ISO 20022 async-financial-messaging
+  // @accounting IFRS-15 §35 deferred-revenue-recognition
+  // @audit ISO-19011:2018 audit-trail at-least-once-evidence
+  "queues": {
+    "producers": [
+      { "binding": "QUEUE_AI_BATCH",      "queue": "erpax-ai-batch" },
+      { "binding": "QUEUE_EINVOICE_OUT",  "queue": "erpax-einvoice-out" },
+      { "binding": "QUEUE_DUNNING_OUT",   "queue": "erpax-dunning-out" },
+      { "binding": "QUEUE_PERIOD_CLOSE",  "queue": "erpax-period-close" },
+      { "binding": "QUEUE_EMAIL_OUT",     "queue": "erpax-email-out" },
+    ],
+    "consumers": [
+      { "queue": "erpax-ai-batch",      "max_batch_size": 25, "max_batch_timeout": 30, "max_retries": 3, "dead_letter_queue": "erpax-dlq" },
+      { "queue": "erpax-einvoice-out",  "max_batch_size": 10, "max_batch_timeout": 60, "max_retries": 5, "dead_letter_queue": "erpax-dlq" },
+      { "queue": "erpax-dunning-out",   "max_batch_size": 50, "max_batch_timeout": 30, "max_retries": 3, "dead_letter_queue": "erpax-dlq" },
+      { "queue": "erpax-period-close",  "max_batch_size": 1,  "max_batch_timeout": 5,  "max_retries": 1, "dead_letter_queue": "erpax-dlq" },
+      { "queue": "erpax-email-out",     "max_batch_size": 100,"max_batch_timeout": 30, "max_retries": 5, "dead_letter_queue": "erpax-dlq" },
+    ],
+  },
+  // Durable Objects — strict-coordination state. `TenantQuotaCounter`
+  // is the atomic AI quota counter (race-free per-tenant counter that
+  // beats the soft `usage-records` count in `getFeatureLimit`).
+  // `RateLimiter` enforces per-tenant per-feature rate limits with
+  // exponential backoff. `JobLock` serialises period-close + JE-post
+  // for SOX §404 race-free four-eyes.
+  //
+  // @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
+  // @compliance SOX §404 internal-controls atomic-state
+  // @security ISO-27002 §5.4 segregation-of-duties race-free
+  "durable_objects": {
+    "bindings": [
+      { "name": "TENANT_QUOTA",  "class_name": "TenantQuotaCounter" },
+      { "name": "RATE_LIMITER",  "class_name": "RateLimiter" },
+      { "name": "JOB_LOCK",      "class_name": "JobLock" },
+    ],
+  },
+  "migrations": [
+    { "tag": "v1-yyy", "new_sqlite_classes": ["TenantQuotaCounter", "RateLimiter", "JobLock"] },
+  ],
+  // Browser Rendering — server-side PDF/A invoice generation, signed
+  // PAdES attestation rendering from HTML, screenshot capture for
+  // evidence-attestation walk-throughs.
+  //
+  // @standard ISO 19005-{1,2,3} pdf-a
+  // @standard ISO 14289 pdf-ua
+  // @standard WCAG 2.1 AA accessibility
+  // @compliance ETSI EN 319 142-1 pades-baseline
+  "browser": {
+    "binding": "BROWSER",
+  },
+  // Analytics Engine — high-cardinality time-series telemetry. Every
+  // GL post / API call / AI inference / job run writes one data point;
+  // dashboards aggregate by (tenant, metric, period). SOX §404
+  // monitoring source.
+  //
+  // @audit ISO-19011:2018 §6.4.6 monitoring-evidence
+  // @compliance SOC-2 CC4.1 monitoring-and-evaluation
+  // @compliance SOX §404 internal-controls monitoring
+  "analytics_engine_datasets": [
+    { "binding": "ANALYTICS_AI",        "dataset": "erpax_ai_inferences" },
+    { "binding": "ANALYTICS_GL",        "dataset": "erpax_gl_postings" },
+    { "binding": "ANALYTICS_API",       "dataset": "erpax_api_calls" },
+    { "binding": "ANALYTICS_JOBS",      "dataset": "erpax_jobs" },
+  ],
+  // Cloudflare Email Workers — outbound transactional email (dunning
+  // notices, payment receipts, audit notifications, KYC confirmations).
+  // Routes through the tenant's verified domain when present;
+  // fallback to the platform domain otherwise.
+  //
+  // @rfc 5321 simple-mail-transfer-protocol
+  // @rfc 5322 internet-message-format
+  // @compliance GDPR Art.7 transactional-email-consent
+  "send_email": [
+    { "name": "EMAIL_SENDER", "destination_address": "noreply@erpax.com" },
+  ],
+  // Built-in Rate Limiting API — declarative per-route rate-limit
+  // (separate from the per-tenant Durable Object above; this is the
+  // ingress-level cap that protects the worker from spammy clients).
+  //
+  // @rfc 6585 §4 too-many-requests
+  // @standard NIST SP-800-63b authentication-rate-limiting
+  // @security OWASP-API4 unrestricted-resource-consumption
+  "unsafe": {
+    "bindings": [
+      {
+        "name": "RATE_LIMITER_API",
+        "type": "ratelimit",
+        "namespace_id": "1001",
+        "simple": { "limit": 100, "period": 60 },
+      },
+      {
+        "name": "RATE_LIMITER_AI",
+        "type": "ratelimit",
+        "namespace_id": "1002",
+        "simple": { "limit": 30, "period": 60 },
+      },
+    ],
+  },
+  // Hyperdrive — connection pool to external Postgres / MySQL when a
+  // tenant integrates their existing data warehouse / OLAP store.
+  // Slice YYY scaffolds; populate the connection per onboarding.
+  // Uncomment when the first external-DB tenant onboards.
+  // "hyperdrive": [
+  //   { "binding": "HYPERDRIVE_TENANT_DW", "id": "<provisioned-id>" },
+  // ],
+  // Workers AI Gateway URL — when set, every Workers AI call routes
+  // through the gateway for caching + rate-limit + secret-scanning +
+  // observability. Defined per-environment in `[env.production.vars]`
+  // / `[env.staging.vars]`.
+  // "vars": {
+  //   "AI_GATEWAY_URL": "https://gateway.ai.cloudflare.com/v1/<account>/erpax",
+  //   "AI_GATEWAY_ID":  "erpax",
+  // },
   // Scheduled triggers for Payload v3 jobs queue.
   // The Worker entrypoint (.open-next/worker.js) needs a `scheduled()` handler
   // that POSTs to `/api/payload-jobs/run` with the Bearer token derived from
@@ -52,9 +210,26 @@
   // payload.config.ts autoRun default) to reduce Worker invocations.
   "triggers": {
     "crons": [
+      // Default Payload jobs sweep (dunning-cycle + ad-hoc tasks). The
+      // scheduled() handler in .open-next/worker.js POSTs to
+      // /api/payload-jobs/run with the cron-bearer derived from PAYLOAD_SECRET.
       "*/15 * * * *",
+      // BG BNB rates sync — daily at 01:00 UTC. БНБ publishes the day's
+      // fixing around 16:00 EET; 01 UTC captures the prior business day.
+      // Handler: src/payload.config.ts jobs.tasks `bg-bnb-rates-sync`.
+      "0 1 * * *",
     ],
   },
+  // mTLS certificate bindings — bind a per-tenant qualified seal to the
+  // Worker so `bg-nap-mtls.ts` can post to НАП without proxying through
+  // a sidecar. Per-cert plumbing happens via
+  //   `wrangler mtls-certificate upload --name bg-nap-tenant-<id>`
+  // which creates the binding the dispatcher detects at runtime
+  // (`globalThis.CF_MTLS_BG_NAP`). Uncomment + populate when a tenant
+  // onboards a qualified seal cert.
+  // "mtls_certificates": [
+  //   { "binding": "CF_MTLS_BG_NAP", "certificate_id": "<provisioned-cert-id>" },
+  // ],
   "observability": {
     "enabled": false,
     "head_sampling_rate": 1,

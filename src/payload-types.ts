@@ -136,6 +136,16 @@ export interface Config {
     'data-processing-activities': DataProcessingActivity;
     'audit-findings': AuditFinding;
     'control-tests': ControlTest;
+    'cost-centers': CostCenter;
+    leases: Lease;
+    'lease-period-postings': LeasePeriodPosting;
+    'sepa-mandates': SepaMandate;
+    'payment-runs': PaymentRun;
+    'account-reconciliations': AccountReconciliation;
+    'dunning-cycles': DunningCycle;
+    employees: Employee;
+    'time-entries': TimeEntry;
+    'payroll-runs': PayrollRun;
     redirects: Redirect;
     forms: Form;
     'form-submissions': FormSubmission;
@@ -236,6 +246,16 @@ export interface Config {
     'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
     'audit-findings': AuditFindingsSelect<false> | AuditFindingsSelect<true>;
     'control-tests': ControlTestsSelect<false> | ControlTestsSelect<true>;
+    'cost-centers': CostCentersSelect<false> | CostCentersSelect<true>;
+    leases: LeasesSelect<false> | LeasesSelect<true>;
+    'lease-period-postings': LeasePeriodPostingsSelect<false> | LeasePeriodPostingsSelect<true>;
+    'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
+    'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
+    'account-reconciliations': AccountReconciliationsSelect<false> | AccountReconciliationsSelect<true>;
+    'dunning-cycles': DunningCyclesSelect<false> | DunningCyclesSelect<true>;
+    employees: EmployeesSelect<false> | EmployeesSelect<true>;
+    'time-entries': TimeEntriesSelect<false> | TimeEntriesSelect<true>;
+    'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
@@ -1962,7 +1982,7 @@ export interface Invoice {
   id: number;
   typeStatus: {
     /**
-     * Document type
+     * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
      */
     invoiceType:
       | 'cart'
@@ -1978,6 +1998,10 @@ export interface Invoice {
       | 'subscription'
       | 'lease'
       | 'transfer';
+    /**
+     * BT-3 — UN/CEFACT 1001 document name code. Required for EN-16931 / Peppol BIS export. Maps to canonical InvoiceHeader.typeCode.
+     */
+    invoiceTypeCode?: ('326' | '380' | '381' | '384' | '386' | '388' | '389' | '393' | '395' | '751') | null;
     /**
      * Current status
      */
@@ -2087,34 +2111,82 @@ export interface Invoice {
   };
   amounts: {
     /**
-     * Items subtotal
+     * BT-106 — Sum of invoice line net amounts. Maps to canonical DocumentTotals.lineNetTotal.
      */
     itemTotal: number;
     /**
-     * Total discounts
+     * Total discounts applied. Includes line-level + document-level allowances; for the canonical breakdown see allowancesTotal (BT-107) below.
      */
     discountTotal?: number | null;
     /**
-     * Net before tax
+     * BT-107 — Sum of document-level allowances (BG-20). Maps to canonical DocumentTotals.allowancesTotal.
+     */
+    allowancesTotal?: number | null;
+    /**
+     * BT-108 — Sum of document-level charges (BG-21). Maps to canonical DocumentTotals.chargesTotal.
+     */
+    chargesTotal?: number | null;
+    /**
+     * BT-109 — Invoice total amount without VAT (= itemTotal − allowancesTotal + chargesTotal). Maps to canonical DocumentTotals.taxExclusiveTotal.
      */
     netTotal?: number | null;
     /**
-     * Total tax
+     * BT-110 — Invoice total VAT amount (sum of BG-23 BT-117). Maps to canonical DocumentTotals.vatTotal.
      */
     taxTotal?: number | null;
     /**
-     * Grand total
+     * BT-112 — Invoice total amount with VAT. Maps to canonical DocumentTotals.taxInclusiveTotal.
      */
     totalAmount: number;
     /**
-     * Amount paid
+     * BT-113 — Paid amount (prepayment). Maps to canonical DocumentTotals.prepaidAmount.
+     */
+    prepaidAmount?: number | null;
+    /**
+     * BT-114 — Rounding amount (small-amount rounding to legal-tender minimum). Can be negative. Maps to canonical DocumentTotals.roundingAmount.
+     */
+    roundingAmount?: number | null;
+    /**
+     * Amount paid (running ledger of receipts).
      */
     totalPaid?: number | null;
     /**
-     * Amount due
+     * BT-115 — Amount due for payment (= taxInclusiveTotal − prepaidAmount + roundingAmount). Maps to canonical DocumentTotals.amountDue.
      */
     totalDue?: number | null;
   };
+  /**
+   * EN 16931 §BG-23 — one row per VAT category × rate. Required for EN-16931 / Peppol BIS export. Maps to canonical VatBreakdown[].
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * BT-118 — VAT category code (UN/CEFACT 5305).
+         */
+        categoryCode: 'S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M';
+        /**
+         * BT-119 — VAT category rate (percent).
+         */
+        rate?: number | null;
+        /**
+         * BT-116 — VAT category taxable amount (cents).
+         */
+        taxableAmount: number;
+        /**
+         * BT-117 — VAT category tax amount (cents).
+         */
+        taxAmount: number;
+        /**
+         * BT-121 — Exemption reason code (required when categoryCode is E / AE / K / G / O).
+         */
+        exemptionReasonCode?: string | null;
+        /**
+         * BT-120 — Exemption reason free text.
+         */
+        exemptionReason?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   billingTax: {
     /**
      * ISO 4217 currency
@@ -2252,9 +2324,17 @@ export interface InvoiceLine {
    */
   code?: string | null;
   /**
-   * Item description
+   * Item description (BG-31 BT-153 item name).
    */
   description: string;
+  /**
+   * BT-127 — Free-text note attached to the invoice line. Maps to canonical InvoiceLine.note.
+   */
+  lineNote?: string | null;
+  /**
+   * BT-128 — Cross-reference to the buyer's or seller's document (e.g. PO line, GTIN, SKU). Maps to canonical InvoiceLine.objectIdentifier.
+   */
+  objectIdentifier?: string | null;
   /**
    * Line status
    */
@@ -2321,19 +2401,31 @@ export interface InvoiceLine {
      */
     taxable?: boolean | null;
     /**
-     * Tax rate %
+     * BT-151 — VAT category code (UN/CEFACT 5305 EU subset). Required for EN-16931 / Peppol BIS export.
+     */
+    vatCategoryCode?: ('S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M') | null;
+    /**
+     * BT-152 — VAT rate (percent, e.g. 20 for 20%). Maps to canonical LineVatInformation.rate.
      */
     taxRate?: number | null;
+    /**
+     * BT-121 — VAT exemption reason code (when categoryCode is E / AE / K / G / O). Required for EN-16931 export when applicable.
+     */
+    vatExemptionReasonCode?: string | null;
+    /**
+     * BT-120 — VAT exemption reason free text.
+     */
+    vatExemptionReason?: string | null;
     /**
      * Unit price includes tax
      */
     priceIncludesTax?: boolean | null;
     /**
-     * Net total before tax (cents)
+     * BT-131 — Invoice line net amount (cents). Canonical key.
      */
     netTotal?: number | null;
     /**
-     * Total tax (cents)
+     * Total tax for this line (cents)
      */
     taxTotal?: number | null;
   };
@@ -2695,13 +2787,20 @@ export interface AuditEvent {
    */
   timestamp: string;
   /**
-   * Domain event slug (e.g. order:activated, subscription:cancelled, period:locked).
+   * Domain event slug (e.g. order:activated, subscription:cancelled, period:locked). Maps to canonical AuditEntry.eventType.
    */
   eventType: string;
   /**
-   * Source collection slug.
+   * Free-text actor / source context (e.g. "close-job:2026-04", "admin-ui", "sox-control:CR-0042"). Maps to canonical AuditEntry.source.
+   */
+  source?: string | null;
+  /**
+   * Source collection slug. Maps to canonical AuditEntry.collection.
    */
   collectionSlug: string;
+  /**
+   * Maps to canonical AuditEntry.operation (AuditOperation enum).
+   */
   operation: 'create' | 'update' | 'delete' | 'login' | 'logout' | 'export' | 'import';
   /**
    * ID of the affected document.
@@ -2712,15 +2811,42 @@ export interface AuditEvent {
    */
   user?: (number | null) | User;
   /**
-   * Status before the change (for status transitions).
+   * Status before the change (for status transitions). Maps to canonical AuditEntry.previousStatus.
    */
   previousStatus?: string | null;
   /**
-   * Status after the change.
+   * Status after the change. Maps to canonical AuditEntry.nextStatus.
    */
   nextStatus?: string | null;
   /**
-   * Field-level diff (sparse): {before:{…}, after:{…}}.
+   * Per-field diff (each item: { field, previousValue, nextValue }). Maps to canonical AuditEntry.changes (AuditChangeRecord[]).
+   */
+  changes?:
+    | {
+        field: string;
+        previousValue?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        nextValue?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Field-level diff (sparse): {before:{…}, after:{…}}. Compact alternative to `changes[]` — emitter populates one or the other. Maps to canonical AuditEntry.changeSummary.
    */
   changeSummary?:
     | {
@@ -2732,7 +2858,7 @@ export interface AuditEvent {
     | boolean
     | null;
   /**
-   * Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value).
+   * Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value). Maps to canonical AuditEntry.sources.
    */
   sources?:
     | {
@@ -2744,9 +2870,12 @@ export interface AuditEvent {
     | boolean
     | null;
   /**
-   * Correlation ID — links events that originated from the same HTTP request.
+   * Correlation ID — links events that originated from the same HTTP request. Maps to canonical AuditEntry.requestId.
    */
   requestId?: string | null;
+  /**
+   * RFC 5424-derived severity. Maps to canonical AuditEntry.severity (AuditSeverity enum).
+   */
   severity?: ('debug' | 'info' | 'warn' | 'error' | 'critical') | null;
   updatedAt: string;
   createdAt: string;
@@ -3647,42 +3776,83 @@ export interface BankTransaction {
   id: number;
   tenant: number | Tenant;
   /**
-   * Bank-side reference / EndToEndId.
+   * Stable unique id for this line. For ISO 20022, prefer accountServicerReference; fallback to endToEndId.
    */
   externalId: string;
+  /**
+   * Bank-assigned unique reference (camt.053 AcctSvcrRef). Maps to canonical Camt053Transaction.accountServicerReference.
+   */
+  accountServicerReference?: string | null;
+  /**
+   * End-to-end id propagated from the originating instruction (camt.053 EndToEndId / pain.001 EndToEndId). Joins this line to the originating PaymentRuns transaction.
+   */
+  endToEndId?: string | null;
   bankAccount: number | BankAccount;
   /**
    * Parent camt.053 statement, if imported as part of a batch.
    */
   statement?: (number | null) | BankStatement;
+  /**
+   * When the funds become available. Maps to canonical Camt053Transaction.valueDate.
+   */
   valueDate: string;
+  /**
+   * When the entry hit the ledger. Maps to canonical Camt053Transaction.bookingDate.
+   */
   bookingDate?: string | null;
   /**
-   * Signed amount in cents (positive = credit, negative = debit).
+   * Signed amount in cents (positive = credit, negative = debit). Maps to ABS(canonical.amount) — canonical separates value from creditDebitIndicator.
    */
   amount: number;
+  /**
+   * ISO 20022 CreditDebitCode. Maps to canonical Camt053Transaction.creditDebitIndicator. Derived from sign(amount) when not explicitly set.
+   */
+  creditDebitIndicator?: ('CRDT' | 'DBIT') | null;
+  /**
+   * ISO 20022 EntryStatus2Code. Most reconcilable items are BOOK. Maps to canonical Camt053Transaction.status.
+   */
+  bookingStatus?: ('BOOK' | 'PDNG' | 'INFO' | 'FUTR') | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Free-text narrative. Maps to canonical RemittanceInformation.unstructured.
+   */
   description?: string | null;
   /**
-   * Remitter / beneficiary as reported on the statement line.
+   * Remitter / beneficiary. Maps to canonical PartyIdentification.name.
    */
   counterpartyName?: string | null;
   /**
-   * ISO 13616 IBAN of the counterparty, when supplied.
+   * ISO 13616 IBAN. Maps to canonical AccountIdentification.iban.
    */
   counterpartyIban?: string | null;
   /**
-   * ISO 9362 BIC of the counterparty, when supplied.
+   * ISO 9362 BIC. Maps to canonical PartyIdentification.bic.
    */
   counterpartyBic?: string | null;
   /**
-   * EndToEndId / RemittanceInfo / payment reference.
+   * Structured creditor reference (ISO 11649 RF) or invoice number. Maps to canonical RemittanceInformation.structured.creditorReference.reference.
    */
   reference?: string | null;
   /**
-   * ISO 20022 BankTransactionCode (e.g. PMNT/RCDT/SALA).
+   * ExternalBankTransactionDomain1Code — top-level (e.g. PMNT, CAMT, ACMT). Part of the canonical 3-tuple.
+   */
+  bankTransactionDomain?: string | null;
+  /**
+   * ExternalBankTransactionFamily1Code — family within domain (e.g. RCDT, ICDT under PMNT).
+   */
+  bankTransactionFamily?: string | null;
+  /**
+   * ExternalBankTransactionSubFamily1Code — subfamily (e.g. SALA salary, BOOK book transfer).
+   */
+  bankTransactionSubFamily?: string | null;
+  /**
+   * DEPRECATED — slash-joined legacy form. New writes populate bankTransactionDomain / family / subFamily.
    */
   transactionCode?: string | null;
+  /**
+   * ISO 20022 ChargeBearerType1Code. Maps to canonical Camt053Transaction.chargeBearer.
+   */
+  chargeBearer?: ('DEBT' | 'CRED' | 'SHAR' | 'SLEV') | null;
   matchStatus?: ('unmatched' | 'auto_matched' | 'manual_matched' | 'excluded' | 'disputed') | null;
   matchedJournalEntries?:
     | {
@@ -3838,10 +4008,30 @@ export interface Contract {
   effectiveFrom: string;
   effectiveTo?: string | null;
   /**
-   * Aggregate transaction price (cents).
+   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
    */
   totalValue?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   */
+  transactionPriceFixed?: number | null;
+  /**
+   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   */
+  transactionPriceVariable?: number | null;
+  /**
+   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
+   */
+  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
+  /**
+   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
+   */
+  financingComponent?: number | null;
+  /**
+   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
+   */
+  combinedWithContracts?: (number | Contract)[] | null;
   paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
   /**
    * IFRS 15 §22 distinct performance obligations.
@@ -3886,22 +4076,54 @@ export interface PerformanceObligation {
   tenant: number | Tenant;
   contract: number | Contract;
   description: string;
-  recognitionMethod: 'point_in_time' | 'over_time_input' | 'over_time_output';
   /**
-   * In cents.
+   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
+   */
+  kind: 'distinct' | 'series';
+  /**
+   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
+   */
+  recognitionTiming: 'point_in_time' | 'over_time';
+  /**
+   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
+   */
+  overTimeMeasurement?: ('output_method' | 'input_method') | null;
+  /**
+   * Specific measurement kind under the chosen output/input method.
+   */
+  measurementKind?:
+    | (
+        | 'units_delivered'
+        | 'units_produced'
+        | 'milestones'
+        | 'time_elapsed'
+        | 'survey_of_work'
+        | 'cost_to_cost'
+        | 'labor_hours'
+        | 'machine_hours'
+        | 'resources_consumed'
+        | 'time_passed'
+      )
+    | null;
+  /**
+   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
+   */
+  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
+  /**
+   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
    */
   standaloneSellingPrice: number;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
   /**
-   * Portion of contract transaction price allocated to this PO (cents).
+   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
    */
   allocatedAmount?: number | null;
   /**
-   * Cumulative recognised revenue (cents).
+   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
    */
   recognisedToDate?: number | null;
   /**
-   * For over-time methods: 0–100.
+   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
    */
   percentComplete?: number | null;
   status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
@@ -4771,6 +4993,1037 @@ export interface ControlTest {
   createdAt: string;
 }
 /**
+ * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-centers".
+ */
+export interface CostCenter {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
+   */
+  costCenterCode: string;
+  name: string;
+  /**
+   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
+   */
+  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
+  /**
+   * Parent in the hierarchy. Null = root.
+   */
+  parent?: (number | null) | CostCenter;
+  /**
+   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
+   */
+  country?: string | null;
+  /**
+   * Cost-center owner / department head.
+   */
+  manager?: (number | null) | User;
+  /**
+   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
+   */
+  reportableSegment?: boolean | null;
+  /**
+   * JE lines may post revenue accounts to this CC.
+   */
+  allowsRevenue?: boolean | null;
+  /**
+   * JE lines may post expense accounts to this CC.
+   */
+  allowsExpense?: boolean | null;
+  /**
+   * JE lines may post capex (FixedAssets) to this CC.
+   */
+  allowsCapex?: boolean | null;
+  /**
+   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
+   */
+  allocationRules?:
+    | {
+        targetCostCenter: number | CostCenter;
+        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
+        percentage?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  effectiveFrom: string;
+  /**
+   * Null = open-ended; populate on retirement.
+   */
+  effectiveTo?: string | null;
+  status?: ('active' | 'inactive' | 'retired') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS 16 / ASC 842 lessee leases. ROU asset + lease liability with period-end carrying amounts.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leases".
+ */
+export interface Lease {
+  id: number;
+  tenant: number | Tenant;
+  leaseNumber: string;
+  /**
+   * Underlying asset description (e.g. "Office space — Sofia HQ Floor 3").
+   */
+  description?: string | null;
+  /**
+   * Counterparty / lessor.
+   */
+  lessor?: (number | null) | Address;
+  /**
+   * IFRS 16: lessee uses single model — "finance" maps to ROU+Liability. ASC 842 retains operating/finance distinction. Short-term and low-value are IFRS 16 exemptions (off-balance-sheet).
+   */
+  classification: 'finance' | 'operating' | 'short_term' | 'low_value';
+  underlyingAssetCategory?: ('real_estate' | 'vehicles' | 'equipment' | 'it_hardware' | 'software' | 'other') | null;
+  /**
+   * Date the lessor makes the underlying asset available — IFRS 16 §22.
+   */
+  commencementDate: string;
+  /**
+   * Lease end date including any reasonably certain extensions.
+   */
+  endDate: string;
+  /**
+   * Computed lease term in months (commencement → end including extension options reasonably certain — IFRS 16 §B37).
+   */
+  leaseTermMonths?: number | null;
+  /**
+   * Fixed periodic payment, integer cents. Per `paymentFrequency` cycle.
+   */
+  fixedPayment: number;
+  paymentFrequency?: ('monthly' | 'quarterly' | 'semi_annually' | 'annually') | null;
+  paymentTiming?: ('in_advance' | 'in_arrears') | null;
+  /**
+   * Variable lease payments (e.g. CPI-linked, performance-based). Per IFRS 16 §27, only those linked to an index/rate are included in the liability — capture the rules here for next-remeasurement.
+   */
+  variablePaymentNotes?: string | null;
+  /**
+   * Residual value guaranteed to lessor — included in liability per IFRS 16 §27.
+   */
+  residualValueGuarantee?: number | null;
+  /**
+   * Penalty for terminating, included in liability if termination is reasonably certain (IFRS 16 §27).
+   */
+  terminationPenalty?: number | null;
+  /**
+   * IFRS 16 §26 — use rate implicit in the lease if readily determinable; otherwise IBR.
+   */
+  discountRateBasis?: ('rate_implicit' | 'incremental_borrowing') | null;
+  /**
+   * Annual discount rate (percent, e.g. 4.5 for 4.5%).
+   */
+  discountRatePercent: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * PV of unpaid lease payments at commencement, discounted at the rate above. Computed by leaseService.calculateInitialMeasurement.
+   */
+  initialLeaseLiability?: number | null;
+  /**
+   * Initial direct costs incurred by the lessee — IFRS 16 §24(c).
+   */
+  initialDirectCosts?: number | null;
+  /**
+   * Lease incentives received from the lessor — IFRS 16 §24(b).
+   */
+  leaseIncentivesReceived?: number | null;
+  /**
+   * Lease payments made at or before commencement — IFRS 16 §24(b).
+   */
+  prepaidRent?: number | null;
+  /**
+   * = initialLeaseLiability + initialDirectCosts + prepaidRent − leaseIncentivesReceived. IFRS 16 §24.
+   */
+  initialRouAsset?: number | null;
+  /**
+   * ROU asset carrying amount as of last posting (after amortisation).
+   */
+  rouAssetCarrying?: number | null;
+  /**
+   * Lease liability carrying amount as of last posting (after interest + payment).
+   */
+  liabilityCarrying?: number | null;
+  lastPostingDate?: string | null;
+  /**
+   * Lease modifications (scope, payments, term). IFRS 16 §44-§46 / ASC 842-10-25-8 trigger remeasurement.
+   */
+  modifications?:
+    | {
+        effectiveDate: string;
+        kind:
+          | 'scope_increase_separate'
+          | 'scope_increase_combined'
+          | 'term_extension'
+          | 'term_reduction'
+          | 'payment_change'
+          | 'discount_rate_reset';
+        newDiscountRatePercent?: number | null;
+        newFixedPayment?: number | null;
+        newEndDate?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IAS 36 impairment reserve on the ROU asset.
+   */
+  impairmentReserve?: number | null;
+  status?: ('draft' | 'active' | 'modified' | 'terminated' | 'expired') | null;
+  /**
+   * Date the lease was terminated early (if applicable).
+   */
+  terminationDate?: string | null;
+  /**
+   * Right-of-use asset GL account.
+   */
+  rouAssetAccount?: (number | null) | GlAccount;
+  /**
+   * Lease liability GL account.
+   */
+  leaseLiabilityAccount?: (number | null) | GlAccount;
+  rouAmortizationAccount?: (number | null) | GlAccount;
+  interestExpenseAccount?: (number | null) | GlAccount;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Per-period IAS 16 / ASC 842 evidence. One row per (lease × period). JE fires on status → posted.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lease-period-postings".
+ */
+export interface LeasePeriodPosting {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Stable id (e.g. LPP-2026-04-LEASE-001).
+   */
+  postingId: string;
+  lease: number | Lease;
+  /**
+   * Inclusive start of the period.
+   */
+  periodStart: string;
+  /**
+   * Inclusive end of the period.
+   */
+  periodEnd: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Lease liability carrying at start of period (cents). Source of the §36 effective-interest accretion.
+   */
+  openingLiabilityCarrying: number;
+  /**
+   * ROU asset carrying at start of period (cents).
+   */
+  openingRouCarrying: number;
+  /**
+   * Interest accretion this period (cents). IFRS 16 §36 effective-interest method: openingLiability × periodicRate.
+   */
+  interest: number;
+  /**
+   * Principal portion of the cash payment (cents). = leasePayment − interest. Reduces the liability.
+   */
+  principalRepayment: number;
+  /**
+   * Total cash paid this period. = principalRepayment + interest.
+   */
+  cashPayment: number;
+  /**
+   * ROU asset amortisation booked this period (cents). IFRS 16 §31: typically straight-line over the lease term.
+   */
+  rouAmortisation: number;
+  /**
+   * = opening + interest − principalRepayment. Auditable evidence.
+   */
+  closingLiabilityCarrying?: number | null;
+  /**
+   * = opening − rouAmortisation.
+   */
+  closingRouCarrying?: number | null;
+  /**
+   * Overrides the lease.interestExpenseAccount.
+   */
+  interestExpenseAccount?: (number | null) | GlAccount;
+  leaseLiabilityAccount?: (number | null) | GlAccount;
+  rouAmortisationAccount?: (number | null) | GlAccount;
+  accumulatedRouAmortisationAccount?: (number | null) | GlAccount;
+  /**
+   * Cash account debited for the principal repayment. Drives the IAS 7 cash-flows financing-activities classification.
+   */
+  cashAccount?: (number | null) | GlAccount;
+  /**
+   * Cost-center the lease cost allocates to (IFRS 8 / ASC 280 segment).
+   */
+  costCenter?: (number | null) | CostCenter;
+  status?: ('calculated' | 'posted' | 'reversed') | null;
+  postedAt?: string | null;
+  journalEntry?: (number | null) | JournalEntry;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * SEPA Direct Debit mandate register. PaymentRuns of pain.008 reference these mandate ids.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sepa-mandates".
+ */
+export interface SepaMandate {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Unique mandate identifier carried in pain.008 MndtId.
+   */
+  mandateId: string;
+  localInstrument: 'CORE' | 'B2B';
+  debtorName: string;
+  /**
+   * ISO 13616 IBAN of the debtor.
+   */
+  debtorIban: string;
+  /**
+   * ISO 9362 BIC.
+   */
+  debtorBic?: string | null;
+  /**
+   * Optional link to the addresses register.
+   */
+  debtor?: (number | null) | Address;
+  /**
+   * Creditor identifier (CI) — country-specific format assigned by the regulator.
+   */
+  creditorIdentifier: string;
+  /**
+   * Date the debtor signed the mandate.
+   */
+  signatureDate: string;
+  /**
+   * Signed mandate file (PDF). Required evidence.
+   */
+  mandateDocument?: (number | null) | Media;
+  signatureMethod?: ('wet_ink' | 'qualified_electronic' | 'advanced_electronic' | 'click_accept') | null;
+  /**
+   * EPC130-08: a mandate becomes obsolete 36 months after the most recent collection. The auto-state-machine driven by lastCollectionAt.
+   */
+  sequenceState?: ('pending_first' | 'active_recurring' | 'final_submitted' | 'expired') | null;
+  /**
+   * Most recent direct-debit collection date — drives the 36-month rule.
+   */
+  lastCollectionAt?: string | null;
+  /**
+   * Computed: lastCollectionAt + 36 months (or signatureDate + 36 months if never collected).
+   */
+  expiryDate?: string | null;
+  revokedAt?: string | null;
+  revocationReason?: string | null;
+  status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * ISO 20022 batch payment initiation — pain.001 (AP credit transfer) or pain.008 (AR direct debit).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-runs".
+ */
+export interface PaymentRun {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Human-readable run id (e.g. PR-2026-05-AP-1). Maps to ISO 20022 GrpHdr/MsgId.
+   */
+  runId: string;
+  /**
+   * ISO 20022 message family. pain.001 pays vendors; pain.008 collects from customers (SDD).
+   */
+  messageType: 'pain_001' | 'pain_008';
+  /**
+   * pain.008 only. SEPA SDD sequence: FRST (first), RCUR (recurring), OOFF (one-off), FNAL (final).
+   */
+  sequenceType?: ('FRST' | 'RCUR' | 'OOFF' | 'FNAL') | null;
+  /**
+   * pain.008: CORE (B2C SDD), B2B (B2B SDD).
+   */
+  localInstrument?: ('CORE' | 'B2B') | null;
+  /**
+   * Debtor account for pain.001; creditor account for pain.008.
+   */
+  sourceBankAccount: number | BankAccount;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Bank-requested execution / collection date. Maps to PmtInf/ReqdExctnDt or ReqdColltnDt.
+   */
+  requestedExecutionDate: string;
+  /**
+   * One row per credit transfer (pain.001) or direct debit (pain.008). Maps to CdtTrfTxInf or DrctDbtTxInf.
+   */
+  transactions?:
+    | {
+        /**
+         * Unique end-to-end id, propagated through the chain.
+         */
+        endToEndId: string;
+        /**
+         * Amount in cents.
+         */
+        amount: number;
+        /**
+         * Vendor (pain.001) or customer (pain.008) name.
+         */
+        counterpartyName: string;
+        counterpartyIban: string;
+        counterpartyBic?: string | null;
+        /**
+         * Structured creditor reference (ISO 11649 RF) preferred; falls back to invoice/bill number.
+         */
+        remittanceReference?: string | null;
+        /**
+         * pain.008 only — the SEPA SDD mandate id.
+         */
+        mandateId?: string | null;
+        /**
+         * Originating bill (pain.001) or invoice (pain.008).
+         */
+        sourceBill?: (number | null) | Invoice;
+        /**
+         * Payment record created when this leg settles.
+         */
+        paymentRecord?: (number | null) | Payment;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Computed = transactions.length. Maps to GrpHdr/NbOfTxs.
+   */
+  numberOfTransactions?: number | null;
+  /**
+   * Computed = Σ transactions.amount. Maps to GrpHdr/CtrlSum.
+   */
+  controlSum?: number | null;
+  preparedBy?: (number | null) | User;
+  preparedAt?: string | null;
+  authorisedBy?: (number | null) | User;
+  authorisedAt?: string | null;
+  /**
+   * Generated pain.00X XML filename.
+   */
+  exportFilename?: string | null;
+  exportedAt?: string | null;
+  /**
+   * Bank acknowledged receipt.
+   */
+  submittedAt?: string | null;
+  /**
+   * All transactions matched on a bank statement.
+   */
+  settledAt?: string | null;
+  /**
+   * pain.002 status reason (ISO 20022 ExternalPaymentTransactionStatus1Code).
+   */
+  bankResponseStatus?: ('ACSC' | 'ACSP' | 'ACCP' | 'PDNG' | 'RJCT' | 'PART') | null;
+  /**
+   * pain.002 reason code (e.g. AC01 incorrect account, AM04 insufficient funds).
+   */
+  bankResponseReasonCode?: string | null;
+  status?:
+    | ('draft' | 'pending_review' | 'approved' | 'exported' | 'submitted' | 'settled' | 'rejected' | 'cancelled')
+    | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "account-reconciliations".
+ */
+export interface AccountReconciliation {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Human-readable id, e.g. REC-2026-04-OPS-1
+   */
+  reconciliationId: string;
+  /**
+   * Reconciliation type — drives which adjustments are valid. Bank uses the IAS-7 layout; GL→subledger compares control-account balance to subledger detail; intercompany compares paired entity balances.
+   */
+  kind: 'bank' | 'gl_to_subledger' | 'intercompany';
+  /**
+   * The control account being reconciled.
+   */
+  glAccount: number | GlAccount;
+  /**
+   * For kind = bank, the IBAN/BIC master being reconciled. Null for GL-to-subledger and intercompany.
+   */
+  bankAccount?: (number | null) | BankAccount;
+  /**
+   * Reconciliation point in time (period-end).
+   */
+  asOfDate: string;
+  periodStart?: string | null;
+  periodEnd?: string | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Bank statement closing balance / subledger total / counterparty balance. The "external" side.
+   */
+  balancePerExternal: number;
+  /**
+   * GL control-account balance as of asOfDate.
+   */
+  balancePerGL: number;
+  /**
+   * Bank-side / counterparty-side reconciling items: deposits in transit, outstanding checks, bank errors. Each item carries an aging bucket for the SOX evidence pack.
+   */
+  externalAdjustments?:
+    | {
+        category:
+          | 'deposit_in_transit'
+          | 'outstanding_check'
+          | 'bank_error'
+          | 'subledger_timing'
+          | 'intercompany_timing'
+          | 'other';
+        description: string;
+        amount: number;
+        originatedAt: string;
+        agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
+        bankTransaction?: (number | null) | BankTransaction;
+        journalEntry?: (number | null) | JournalEntry;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * GL-side reconciling items needing adjusting JEs: unrecorded interest, unrecorded bank fees, classification errors, missing entries.
+   */
+  glAdjustments?:
+    | {
+        category:
+          | 'unrecorded_interest'
+          | 'unrecorded_fee'
+          | 'classification_error'
+          | 'missing_entry'
+          | 'gl_error'
+          | 'other';
+        description: string;
+        amount: number;
+        originatedAt: string;
+        agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
+        journalEntry?: (number | null) | JournalEntry;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * balancePerExternal + Σ external adjustments (signed).
+   */
+  adjustedExternalBalance?: number | null;
+  /**
+   * balancePerGL + Σ GL adjustments (signed).
+   */
+  adjustedGLBalance?: number | null;
+  /**
+   * adjustedExternalBalance − adjustedGLBalance. Must be 0 (within rounding tolerance) to approve.
+   */
+  difference?: number | null;
+  preparedBy?: (number | null) | User;
+  preparedAt?: string | null;
+  reviewedBy?: (number | null) | User;
+  reviewedAt?: string | null;
+  rejectionReason?: string | null;
+  status?: ('draft' | 'pending_review' | 'approved' | 'rejected' | 'reopened') | null;
+  /**
+   * Originating bank statement for kind = bank. Null otherwise.
+   */
+  sourceStatement?: (number | null) | BankStatement;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Collection-process trail per overdue invoice. IFRS 9 / CECL evidence layer.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "dunning-cycles".
+ */
+export interface DunningCycle {
+  id: number;
+  tenant: number | Tenant;
+  cycleId: string;
+  invoice: number | Invoice;
+  /**
+   * Customer (denormalized from invoice for reporting).
+   */
+  customer?: (number | null) | Address;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Outstanding balance at cycle entry, integer cents. Recomputed on each job tick.
+   */
+  amountOverdue: number;
+  /**
+   * Original invoice due date (BT-9).
+   */
+  invoiceDueDate: string;
+  /**
+   * Days between invoiceDueDate and the most recent job tick.
+   */
+  daysPastDue?: number | null;
+  currentStage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off';
+  currentStageEnteredAt?: string | null;
+  /**
+   * Computed by the job — when the next stage transition is due.
+   */
+  nextActionDate?: string | null;
+  /**
+   * Append-only stage entries. Auditor queries this for ECL evidence — DO NOT delete prior entries.
+   */
+  history?:
+    | {
+        stage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
+        enteredAt: string;
+        amountOverdueAtEntry?: number | null;
+        communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
+        communicationReference?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Pause the auto-progression (e.g. customer disputed; finance held). Job skips paused cycles.
+   */
+  paused?: boolean | null;
+  pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
+  /**
+   * Reference to payment plan / agreement document.
+   */
+  paymentPlanRef?: string | null;
+  /**
+   * Allowance for doubtful accounts attributable to this invoice — feeds AllowanceForDoubtfulAccounts. Computed via IFRS 9 PD × LGD × EAD or simplified-approach lifetime ECL.
+   */
+  eclProvision?: number | null;
+  /**
+   * JE id when stage advances to written_off (Dr Bad Debt Expense / Cr AR or Allowance).
+   */
+  writeOffJournalEntry?: (number | null) | JournalEntry;
+  status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
+  resolvedAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Workforce master. GDPR-classified personal data — read access is admin / payroll-officer only.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "employees".
+ */
+export interface Employee {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Internal employee id (e.g. EMP-2026-001).
+   */
+  employeeNumber: string;
+  /**
+   * Full preferred-name display string.
+   */
+  displayName: string;
+  /**
+   * GDPR Art.9 special categories — collect only what payroll mandates require.
+   */
+  identity: {
+    givenName: string;
+    familyName: string;
+    /**
+     * Required for tax / benefits eligibility. Mask in non-payroll views.
+     */
+    dateOfBirth?: string | null;
+    /**
+     * Reference to a tokenised id stored elsewhere (do NOT store the raw national id here). ISO 27002 §8.11 data masking.
+     */
+    nationalIdRef?: string | null;
+    /**
+     * ISO 3166-1 alpha-2.
+     */
+    citizenshipCountry?: string | null;
+  };
+  contact?: {
+    /**
+     * Used for HR + payslip distribution.
+     */
+    workEmail?: string | null;
+    /**
+     * GDPR-sensitive. Required only when work email is decommissioned post-termination.
+     */
+    personalEmail?: string | null;
+    phone?: string | null;
+  };
+  jobTitle: string;
+  employmentType:
+    | 'full_time_indefinite'
+    | 'full_time_fixed_term'
+    | 'part_time_indefinite'
+    | 'part_time_fixed_term'
+    | 'apprentice'
+    | 'intern'
+    | 'contractor'
+    | 'director';
+  /**
+   * Cost-center the employee's payroll posts to. Drives IFRS 8 / ASC 280 segment reporting.
+   */
+  department?: (number | null) | CostCenter;
+  /**
+   * Reporting line; can be null for org root.
+   */
+  manager?: (number | null) | Employee;
+  /**
+   * ISO 3166-1 alpha-2. Drives the country-context cascade (tax codes, social-security regime, payroll calendar).
+   */
+  workCountry?: string | null;
+  hireDate: string;
+  /**
+   * Probation typically 3 / 6 months per local labour law.
+   */
+  probationEndDate?: string | null;
+  /**
+   * For fixed-term contracts. Required when employmentType ends in _fixed_term.
+   */
+  contractEndDate?: string | null;
+  /**
+   * Last working day. Triggers final payroll + benefits cessation.
+   */
+  terminationDate?: string | null;
+  terminationReason?:
+    | (
+        | 'resignation'
+        | 'end_of_fixed_term'
+        | 'retirement'
+        | 'mutual'
+        | 'performance'
+        | 'misconduct'
+        | 'redundancy'
+        | 'other'
+      )
+    | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  compensation?: {
+    /**
+     * Gross annual base salary (cents). Pro-rated by the employmentType FTE.
+     */
+    baseSalaryAnnual?: number | null;
+    /**
+     * Full-time equivalent ratio (0.5 = 50%). Used for part-time pro-ration.
+     */
+    fteRatio?: number | null;
+    paySchedule?: ('weekly' | 'biweekly' | 'semimonthly' | 'monthly') | null;
+    /**
+     * Annual bonus target as % of base.
+     */
+    targetBonusPercent?: number | null;
+    targetBonusBasis?: ('discretionary' | 'performance' | 'profit_share' | 'commission') | null;
+  };
+  benefits?: {
+    /**
+     * IAS 19 §51 distinguishes DC (employer pays a contribution) from DB (employer guarantees a benefit). DB triggers actuarial accounting.
+     */
+    pensionPlan?: ('none' | 'defined_contribution' | 'defined_benefit' | 'hybrid') | null;
+    /**
+     * Employer contribution as % of base salary.
+     */
+    pensionEmployerContributionPercent?: number | null;
+    healthInsurance?: boolean | null;
+    lifeInsurance?: boolean | null;
+    /**
+     * PTO accrual entitlement per year. Drives the IAS 19 §11 accumulating-PTO liability.
+     */
+    paidTimeOffDaysPerYear?: number | null;
+    /**
+     * Current accrued PTO balance (days). Decremented when leave is taken; resets per local policy.
+     */
+    paidTimeOffBalance?: number | null;
+  };
+  payrollBankAccount?: {
+    /**
+     * ISO 13616 IBAN.
+     */
+    iban?: string | null;
+    /**
+     * ISO 9362 BIC.
+     */
+    bic?: string | null;
+    /**
+     * Beneficiary name on the account; may differ from displayName for cultural / legal reasons.
+     */
+    accountHolder?: string | null;
+  };
+  tax?: {
+    /**
+     * Reference to a tokenised tax id stored elsewhere (do NOT store the raw id). ISO 27002 §8.11 data masking.
+     */
+    taxIdRef?: string | null;
+    /**
+     * Reference to a tokenised SSN / NI number / equivalent. Do NOT store raw.
+     */
+    socialSecurityIdRef?: string | null;
+    /**
+     * ISO 3166-1 alpha-2. May differ from workCountry for cross-border employees.
+     */
+    taxResidenceCountry?: string | null;
+  };
+  status?: ('pre_hire' | 'active' | 'on_leave' | 'suspended' | 'terminated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Daily time records. Drives payroll variable pay + project / cost-center cost allocation.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "time-entries".
+ */
+export interface TimeEntry {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Stable id (e.g. TE-2026-04-001).
+   */
+  entryId: string;
+  employee: number | Employee;
+  workDate: string;
+  /**
+   * Duration in minutes. Capped at 1,440 per day; multi-day blocks split into separate rows.
+   */
+  minutes: number;
+  /**
+   * Drives the payroll multiplier and which GL accounts the cost posts to. PTO / sick / parental decrement the employee's benefits.paidTimeOffBalance.
+   */
+  kind:
+    | 'regular'
+    | 'overtime_15'
+    | 'overtime_2'
+    | 'night_shift'
+    | 'holiday_work'
+    | 'pto'
+    | 'sick_leave'
+    | 'parental_leave'
+    | 'bereavement'
+    | 'unpaid_leave'
+    | 'training';
+  /**
+   * Cost-center the labor cost allocates to. Defaults to the employee's department; can override per-entry for cross-charges.
+   */
+  costCenter?: (number | null) | CostCenter;
+  /**
+   * Optional project / job code for project accounting. Free-text until a Projects collection lands.
+   */
+  project?: string | null;
+  /**
+   * Optional task / work breakdown structure ref.
+   */
+  task?: string | null;
+  /**
+   * What was done. Required for billable / chargeable hours.
+   */
+  description?: string | null;
+  /**
+   * Hours billable to a customer (project accounting / IFRS 15 input-method progress).
+   */
+  billable?: boolean | null;
+  /**
+   * Rate per hour in cents — for billable rows only. Drives the IFRS 15 over-time recognition when the PO uses labor_hours measurement.
+   */
+  billableRate?: number | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'rejected' | 'posted') | null;
+  submittedAt?: string | null;
+  rejectionReason?: string | null;
+  /**
+   * Payroll run that consumed this entry — set when status flips to posted.
+   */
+  payrollRun?: (number | null) | PayrollRun;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Periodic batch payroll. Aggregates approved TimeEntries, computes gross-to-net, posts JEs, and emits the pain.001 disbursement file.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payroll-runs".
+ */
+export interface PayrollRun {
+  id: number;
+  tenant: number | Tenant;
+  /**
+   * Human-readable id (e.g. PR-2026-04-MONTHLY).
+   */
+  runId: string;
+  paySchedule: 'weekly' | 'biweekly' | 'semimonthly' | 'monthly' | 'off_cycle';
+  periodStart: string;
+  periodEnd: string;
+  /**
+   * Date the bank releases the funds. Used as pain.001 ReqdExctnDt.
+   */
+  paymentDate: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD') | null;
+  /**
+   * Tenant bank account funding the disbursement.
+   */
+  sourceBankAccount: number | BankAccount;
+  /**
+   * One payroll line per employee. Computed by the close-job from approved TimeEntries + Employee.compensation.
+   */
+  lines?:
+    | {
+        employee: number | Employee;
+        regularMinutes?: number | null;
+        overtime15Minutes?: number | null;
+        overtime2Minutes?: number | null;
+        nightShiftMinutes?: number | null;
+        holidayWorkMinutes?: number | null;
+        ptoMinutes?: number | null;
+        sickMinutes?: number | null;
+        /**
+         * Base salary contribution for the period (cents).
+         */
+        baseGross: number;
+        /**
+         * Overtime + night-shift + holiday-work pay (cents).
+         */
+        overtimeGross?: number | null;
+        /**
+         * One-off bonus / commission for this period (cents).
+         */
+        bonusGross?: number | null;
+        /**
+         * = baseGross + overtimeGross + bonusGross. Hits Wages Expense.
+         */
+        totalGross: number;
+        /**
+         * Employee income-tax withholding (cents).
+         */
+        incomeTaxWithheld?: number | null;
+        /**
+         * Employee-side social security (cents).
+         */
+        socialSecurityEmployee?: number | null;
+        /**
+         * Employee pension contribution (cents).
+         */
+        pensionEmployee?: number | null;
+        /**
+         * Garnishments / repayments / voluntary deductions (cents).
+         */
+        otherDeductions?: number | null;
+        /**
+         * = totalGross − all employee deductions. The amount the pain.001 transfers to the employee.
+         */
+        netPay: number;
+        /**
+         * Employer-side social security expense (cents).
+         */
+        socialSecurityEmployer?: number | null;
+        /**
+         * Employer pension contribution (cents).
+         */
+        pensionEmployer?: number | null;
+        /**
+         * Other employer payroll taxes (FUTA / unemployment).
+         */
+        payrollTaxesEmployer?: number | null;
+        costCenter?: (number | null) | CostCenter;
+        /**
+         * Generated pay-slip PDF distributed to the employee.
+         */
+        paySlipDocument?: (number | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Computed = lines.length.
+   */
+  employeeCount?: number | null;
+  /**
+   * Σ lines[].totalGross. Hits Wages Expense in aggregate.
+   */
+  totalGross?: number | null;
+  /**
+   * Σ employee-side withholdings (taxes + SS + pension + other).
+   */
+  totalDeductions?: number | null;
+  /**
+   * Σ lines[].netPay. The pain.001 control sum.
+   */
+  totalNet?: number | null;
+  /**
+   * Σ employer-side payroll taxes + pension. Posts to Payroll Tax Expense + Pension Expense.
+   */
+  totalEmployerSideAccruals?: number | null;
+  preparedBy?: (number | null) | User;
+  preparedAt?: string | null;
+  authorisedBy?: (number | null) | User;
+  authorisedAt?: string | null;
+  status?:
+    | (
+        | 'draft'
+        | 'calculated'
+        | 'pending_review'
+        | 'approved'
+        | 'posted'
+        | 'disbursed'
+        | 'settled'
+        | 'reversed'
+        | 'cancelled'
+      )
+    | null;
+  /**
+   * JE booked when status flips to posted.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  /**
+   * pain.001 PaymentRun emitted when status flips to disbursed.
+   */
+  paymentRun?: (number | null) | PaymentRun;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
@@ -5351,6 +6604,46 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'control-tests';
         value: number | ControlTest;
+      } | null)
+    | ({
+        relationTo: 'cost-centers';
+        value: number | CostCenter;
+      } | null)
+    | ({
+        relationTo: 'leases';
+        value: number | Lease;
+      } | null)
+    | ({
+        relationTo: 'lease-period-postings';
+        value: number | LeasePeriodPosting;
+      } | null)
+    | ({
+        relationTo: 'sepa-mandates';
+        value: number | SepaMandate;
+      } | null)
+    | ({
+        relationTo: 'payment-runs';
+        value: number | PaymentRun;
+      } | null)
+    | ({
+        relationTo: 'account-reconciliations';
+        value: number | AccountReconciliation;
+      } | null)
+    | ({
+        relationTo: 'dunning-cycles';
+        value: number | DunningCycle;
+      } | null)
+    | ({
+        relationTo: 'employees';
+        value: number | Employee;
+      } | null)
+    | ({
+        relationTo: 'time-entries';
+        value: number | TimeEntry;
+      } | null)
+    | ({
+        relationTo: 'payroll-runs';
+        value: number | PayrollRun;
       } | null)
     | ({
         relationTo: 'redirects';
@@ -5960,6 +7253,7 @@ export interface InvoicesSelect<T extends boolean = true> {
     | T
     | {
         invoiceType?: T;
+        invoiceTypeCode?: T;
         status?: T;
         confirmed?: T;
       };
@@ -5999,11 +7293,26 @@ export interface InvoicesSelect<T extends boolean = true> {
     | {
         itemTotal?: T;
         discountTotal?: T;
+        allowancesTotal?: T;
+        chargesTotal?: T;
         netTotal?: T;
         taxTotal?: T;
         totalAmount?: T;
+        prepaidAmount?: T;
+        roundingAmount?: T;
         totalPaid?: T;
         totalDue?: T;
+      };
+  vatBreakdown?:
+    | T
+    | {
+        categoryCode?: T;
+        rate?: T;
+        taxableAmount?: T;
+        taxAmount?: T;
+        exemptionReasonCode?: T;
+        exemptionReason?: T;
+        id?: T;
       };
   billingTax?:
     | T
@@ -6060,6 +7369,8 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
   invoice?: T;
   code?: T;
   description?: T;
+  lineNote?: T;
+  objectIdentifier?: T;
   status?: T;
   items?:
     | T
@@ -6093,7 +7404,10 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
     | T
     | {
         taxable?: T;
+        vatCategoryCode?: T;
         taxRate?: T;
+        vatExemptionReasonCode?: T;
+        vatExemptionReason?: T;
         priceIncludesTax?: T;
         netTotal?: T;
         taxTotal?: T;
@@ -6505,12 +7819,21 @@ export interface AuditEventsSelect<T extends boolean = true> {
   tenant?: T;
   timestamp?: T;
   eventType?: T;
+  source?: T;
   collectionSlug?: T;
   operation?: T;
   documentId?: T;
   user?: T;
   previousStatus?: T;
   nextStatus?: T;
+  changes?:
+    | T
+    | {
+        field?: T;
+        previousValue?: T;
+        nextValue?: T;
+        id?: T;
+      };
   changeSummary?: T;
   sources?: T;
   requestId?: T;
@@ -7025,18 +8348,26 @@ export interface BankStatementsSelect<T extends boolean = true> {
 export interface BankTransactionsSelect<T extends boolean = true> {
   tenant?: T;
   externalId?: T;
+  accountServicerReference?: T;
+  endToEndId?: T;
   bankAccount?: T;
   statement?: T;
   valueDate?: T;
   bookingDate?: T;
   amount?: T;
+  creditDebitIndicator?: T;
+  bookingStatus?: T;
   currency?: T;
   description?: T;
   counterpartyName?: T;
   counterpartyIban?: T;
   counterpartyBic?: T;
   reference?: T;
+  bankTransactionDomain?: T;
+  bankTransactionFamily?: T;
+  bankTransactionSubFamily?: T;
   transactionCode?: T;
+  chargeBearer?: T;
   matchStatus?: T;
   matchedJournalEntries?:
     | T
@@ -7170,6 +8501,11 @@ export interface ContractsSelect<T extends boolean = true> {
   effectiveTo?: T;
   totalValue?: T;
   currency?: T;
+  transactionPriceFixed?: T;
+  transactionPriceVariable?: T;
+  variableConsiderationMethod?: T;
+  financingComponent?: T;
+  combinedWithContracts?: T;
   paymentTerms?: T;
   performanceObligations?: T;
   modifications?:
@@ -7200,6 +8536,10 @@ export interface PerformanceObligationsSelect<T extends boolean = true> {
   tenant?: T;
   contract?: T;
   description?: T;
+  kind?: T;
+  recognitionTiming?: T;
+  overTimeMeasurement?: T;
+  measurementKind?: T;
   recognitionMethod?: T;
   standaloneSellingPrice?: T;
   currency?: T;
@@ -7769,6 +9109,467 @@ export interface ControlTestsSelect<T extends boolean = true> {
   findings?: T;
   status?: T;
   signedOffAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-centers_select".
+ */
+export interface CostCentersSelect<T extends boolean = true> {
+  tenant?: T;
+  costCenterCode?: T;
+  name?: T;
+  kind?: T;
+  parent?: T;
+  country?: T;
+  manager?: T;
+  reportableSegment?: T;
+  allowsRevenue?: T;
+  allowsExpense?: T;
+  allowsCapex?: T;
+  allocationRules?:
+    | T
+    | {
+        targetCostCenter?: T;
+        basis?: T;
+        percentage?: T;
+        id?: T;
+      };
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leases_select".
+ */
+export interface LeasesSelect<T extends boolean = true> {
+  tenant?: T;
+  leaseNumber?: T;
+  description?: T;
+  lessor?: T;
+  classification?: T;
+  underlyingAssetCategory?: T;
+  commencementDate?: T;
+  endDate?: T;
+  leaseTermMonths?: T;
+  fixedPayment?: T;
+  paymentFrequency?: T;
+  paymentTiming?: T;
+  variablePaymentNotes?: T;
+  residualValueGuarantee?: T;
+  terminationPenalty?: T;
+  discountRateBasis?: T;
+  discountRatePercent?: T;
+  currency?: T;
+  initialLeaseLiability?: T;
+  initialDirectCosts?: T;
+  leaseIncentivesReceived?: T;
+  prepaidRent?: T;
+  initialRouAsset?: T;
+  rouAssetCarrying?: T;
+  liabilityCarrying?: T;
+  lastPostingDate?: T;
+  modifications?:
+    | T
+    | {
+        effectiveDate?: T;
+        kind?: T;
+        newDiscountRatePercent?: T;
+        newFixedPayment?: T;
+        newEndDate?: T;
+        notes?: T;
+        id?: T;
+      };
+  impairmentReserve?: T;
+  status?: T;
+  terminationDate?: T;
+  rouAssetAccount?: T;
+  leaseLiabilityAccount?: T;
+  rouAmortizationAccount?: T;
+  interestExpenseAccount?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lease-period-postings_select".
+ */
+export interface LeasePeriodPostingsSelect<T extends boolean = true> {
+  tenant?: T;
+  postingId?: T;
+  lease?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  currency?: T;
+  openingLiabilityCarrying?: T;
+  openingRouCarrying?: T;
+  interest?: T;
+  principalRepayment?: T;
+  cashPayment?: T;
+  rouAmortisation?: T;
+  closingLiabilityCarrying?: T;
+  closingRouCarrying?: T;
+  interestExpenseAccount?: T;
+  leaseLiabilityAccount?: T;
+  rouAmortisationAccount?: T;
+  accumulatedRouAmortisationAccount?: T;
+  cashAccount?: T;
+  costCenter?: T;
+  status?: T;
+  postedAt?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sepa-mandates_select".
+ */
+export interface SepaMandatesSelect<T extends boolean = true> {
+  tenant?: T;
+  mandateId?: T;
+  localInstrument?: T;
+  debtorName?: T;
+  debtorIban?: T;
+  debtorBic?: T;
+  debtor?: T;
+  creditorIdentifier?: T;
+  signatureDate?: T;
+  mandateDocument?: T;
+  signatureMethod?: T;
+  sequenceState?: T;
+  lastCollectionAt?: T;
+  expiryDate?: T;
+  revokedAt?: T;
+  revocationReason?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-runs_select".
+ */
+export interface PaymentRunsSelect<T extends boolean = true> {
+  tenant?: T;
+  runId?: T;
+  messageType?: T;
+  sequenceType?: T;
+  localInstrument?: T;
+  sourceBankAccount?: T;
+  currency?: T;
+  requestedExecutionDate?: T;
+  transactions?:
+    | T
+    | {
+        endToEndId?: T;
+        amount?: T;
+        counterpartyName?: T;
+        counterpartyIban?: T;
+        counterpartyBic?: T;
+        remittanceReference?: T;
+        mandateId?: T;
+        sourceBill?: T;
+        paymentRecord?: T;
+        id?: T;
+      };
+  numberOfTransactions?: T;
+  controlSum?: T;
+  preparedBy?: T;
+  preparedAt?: T;
+  authorisedBy?: T;
+  authorisedAt?: T;
+  exportFilename?: T;
+  exportedAt?: T;
+  submittedAt?: T;
+  settledAt?: T;
+  bankResponseStatus?: T;
+  bankResponseReasonCode?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "account-reconciliations_select".
+ */
+export interface AccountReconciliationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reconciliationId?: T;
+  kind?: T;
+  glAccount?: T;
+  bankAccount?: T;
+  asOfDate?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  currency?: T;
+  balancePerExternal?: T;
+  balancePerGL?: T;
+  externalAdjustments?:
+    | T
+    | {
+        category?: T;
+        description?: T;
+        amount?: T;
+        originatedAt?: T;
+        agingBucket?: T;
+        bankTransaction?: T;
+        journalEntry?: T;
+        id?: T;
+      };
+  glAdjustments?:
+    | T
+    | {
+        category?: T;
+        description?: T;
+        amount?: T;
+        originatedAt?: T;
+        agingBucket?: T;
+        journalEntry?: T;
+        id?: T;
+      };
+  adjustedExternalBalance?: T;
+  adjustedGLBalance?: T;
+  difference?: T;
+  preparedBy?: T;
+  preparedAt?: T;
+  reviewedBy?: T;
+  reviewedAt?: T;
+  rejectionReason?: T;
+  status?: T;
+  sourceStatement?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "dunning-cycles_select".
+ */
+export interface DunningCyclesSelect<T extends boolean = true> {
+  tenant?: T;
+  cycleId?: T;
+  invoice?: T;
+  customer?: T;
+  currency?: T;
+  amountOverdue?: T;
+  invoiceDueDate?: T;
+  daysPastDue?: T;
+  currentStage?: T;
+  currentStageEnteredAt?: T;
+  nextActionDate?: T;
+  history?:
+    | T
+    | {
+        stage?: T;
+        enteredAt?: T;
+        amountOverdueAtEntry?: T;
+        communicationSent?: T;
+        communicationReference?: T;
+        notes?: T;
+        id?: T;
+      };
+  paused?: T;
+  pauseReason?: T;
+  paymentPlanRef?: T;
+  eclProvision?: T;
+  writeOffJournalEntry?: T;
+  status?: T;
+  resolvedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "employees_select".
+ */
+export interface EmployeesSelect<T extends boolean = true> {
+  tenant?: T;
+  employeeNumber?: T;
+  displayName?: T;
+  identity?:
+    | T
+    | {
+        givenName?: T;
+        familyName?: T;
+        dateOfBirth?: T;
+        nationalIdRef?: T;
+        citizenshipCountry?: T;
+      };
+  contact?:
+    | T
+    | {
+        workEmail?: T;
+        personalEmail?: T;
+        phone?: T;
+      };
+  jobTitle?: T;
+  employmentType?: T;
+  department?: T;
+  manager?: T;
+  workCountry?: T;
+  hireDate?: T;
+  probationEndDate?: T;
+  contractEndDate?: T;
+  terminationDate?: T;
+  terminationReason?: T;
+  currency?: T;
+  compensation?:
+    | T
+    | {
+        baseSalaryAnnual?: T;
+        fteRatio?: T;
+        paySchedule?: T;
+        targetBonusPercent?: T;
+        targetBonusBasis?: T;
+      };
+  benefits?:
+    | T
+    | {
+        pensionPlan?: T;
+        pensionEmployerContributionPercent?: T;
+        healthInsurance?: T;
+        lifeInsurance?: T;
+        paidTimeOffDaysPerYear?: T;
+        paidTimeOffBalance?: T;
+      };
+  payrollBankAccount?:
+    | T
+    | {
+        iban?: T;
+        bic?: T;
+        accountHolder?: T;
+      };
+  tax?:
+    | T
+    | {
+        taxIdRef?: T;
+        socialSecurityIdRef?: T;
+        taxResidenceCountry?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "time-entries_select".
+ */
+export interface TimeEntriesSelect<T extends boolean = true> {
+  tenant?: T;
+  entryId?: T;
+  employee?: T;
+  workDate?: T;
+  minutes?: T;
+  kind?: T;
+  costCenter?: T;
+  project?: T;
+  task?: T;
+  description?: T;
+  billable?: T;
+  billableRate?: T;
+  status?: T;
+  submittedAt?: T;
+  rejectionReason?: T;
+  payrollRun?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payroll-runs_select".
+ */
+export interface PayrollRunsSelect<T extends boolean = true> {
+  tenant?: T;
+  runId?: T;
+  paySchedule?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  paymentDate?: T;
+  currency?: T;
+  sourceBankAccount?: T;
+  lines?:
+    | T
+    | {
+        employee?: T;
+        regularMinutes?: T;
+        overtime15Minutes?: T;
+        overtime2Minutes?: T;
+        nightShiftMinutes?: T;
+        holidayWorkMinutes?: T;
+        ptoMinutes?: T;
+        sickMinutes?: T;
+        baseGross?: T;
+        overtimeGross?: T;
+        bonusGross?: T;
+        totalGross?: T;
+        incomeTaxWithheld?: T;
+        socialSecurityEmployee?: T;
+        pensionEmployee?: T;
+        otherDeductions?: T;
+        netPay?: T;
+        socialSecurityEmployer?: T;
+        pensionEmployer?: T;
+        payrollTaxesEmployer?: T;
+        costCenter?: T;
+        paySlipDocument?: T;
+        id?: T;
+      };
+  employeeCount?: T;
+  totalGross?: T;
+  totalDeductions?: T;
+  totalNet?: T;
+  totalEmployerSideAccruals?: T;
+  preparedBy?: T;
+  preparedAt?: T;
+  authorisedBy?: T;
+  authorisedAt?: T;
+  status?: T;
+  journalEntry?: T;
+  paymentRun?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;

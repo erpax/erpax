@@ -2,7 +2,7 @@
  * Auto-populate `createdBy` from the request user on create.
  *
  * Drop into `beforeChange` to set the authoring user on first save without
- * trusting client input. Companion to {@link autoPopulateHost}.
+ * trusting client input. Companion to {@link autoPopulateTenant}.
  *
  * @audit ISO-19011:2018 audit-trail authorship-attribution
  * @compliance SOC-2 CC4.1 monitoring-and-evaluation

@@ -1,26 +1,26 @@
 /**
- * Host Table Component
- * Display hosts in a filterable, sortable table with inline actions
+ * Tenant Table Component
+ * Display tenants in a filterable, sortable table with inline actions
  */
 
 'use client';
 
 import React from 'react';
-import { Host, HostStatusLabel, HostStatusColors } from '@/types/host';
+import { Tenant, TenantStatusLabel, TenantStatusColors } from '@/types/tenant';
 import { ChevronDown, Edit2, MoreVertical, Eye } from 'lucide-react';
 
 interface HostTableProps {
-  hosts: Host[];
+  tenants: Tenant[];
   selectedHostIds: Set<string>;
   loading: boolean;
   sortBy: 'name' | 'createdAt' | 'status' | 'country';
   sortOrder: 'asc' | 'desc';
-  onSelectHost: (hostId: string, selected: boolean) => void;
+  onSelectTenant: (tenantId: string, selected: boolean) => void;
   onSelectAll: (selected: boolean) => void;
   onSort: (field: string) => void;
-  onViewDetails: (host: Host) => void;
-  onEdit: (host: Host) => void;
-  onHostAction: (hostId: string, action: string) => Promise<void>;
+  onViewDetails: (tenant: Tenant) => void;
+  onEdit: (tenant: Tenant) => void;
+  onTenantAction: (tenantId: string, action: string) => Promise<void>;
 }
 
 type SortField = 'name' | 'createdAt' | 'status' | 'country';
@@ -55,27 +55,27 @@ function SortableHeader({
 }
 
 export default function HostTable({
-  hosts,
+  tenants,
   selectedHostIds,
   loading,
   sortBy,
   sortOrder,
-  onSelectHost,
+  onSelectTenant,
   onSelectAll,
   onSort,
   onViewDetails,
   onEdit,
-  onHostAction,
+  onTenantAction,
 }: HostTableProps) {
-  const allSelected = hosts.length > 0 && selectedHostIds.size === hosts.length;
+  const allSelected = tenants.length > 0 && selectedHostIds.size === tenants.length;
   const someSelected = selectedHostIds.size > 0 && !allSelected;
 
-  if (loading && hosts.length === 0) {
-    return <div className="text-center py-12 text-gray-500">Loading hosts...</div>;
+  if (loading && tenants.length === 0) {
+    return <div className="text-center py-12 text-gray-500">Loading tenants...</div>;
   }
 
-  if (hosts.length === 0) {
-    return <div className="text-center py-12 text-gray-500">No hosts found</div>;
+  if (tenants.length === 0) {
+    return <div className="text-center py-12 text-gray-500">No tenants found</div>;
   }
 
   return (
@@ -110,46 +110,46 @@ export default function HostTable({
           </tr>
         </thead>
         <tbody>
-          {hosts.map((host, index) => (
+          {tenants.map((tenant, index) => (
             <tr
-              key={host.id}
-              className={`border-b ${selectedHostIds.has(host.id) ? 'bg-blue-50' : index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
+              key={tenant.id}
+              className={`border-b ${selectedHostIds.has(tenant.id) ? 'bg-blue-50' : index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
             >
               <td className="px-6 py-4">
                 <input
                   type="checkbox"
-                  checked={selectedHostIds.has(host.id)}
-                  onChange={(e) => onSelectHost(host.id, e.target.checked)}
+                  checked={selectedHostIds.has(tenant.id)}
+                  onChange={(e) => onSelectTenant(tenant.id, e.target.checked)}
                   className="rounded border-gray-300"
                 />
               </td>
               <td className="px-6 py-4">
                 <div>
                   <p className="font-medium text-gray-900 hover:text-blue-600 cursor-pointer">
-                    {host.name}
+                    {tenant.name}
                   </p>
-                  <p className="text-sm text-gray-500">{host.slug}</p>
+                  <p className="text-sm text-gray-500">{tenant.slug}</p>
                 </div>
               </td>
-              <td className="px-6 py-4 text-sm text-gray-600">{host.country}</td>
-              <td className="px-6 py-4 text-sm text-gray-600">{host.accountingStandard}</td>
-              <td className="px-6 py-4 text-sm text-gray-600">{host.currency}</td>
+              <td className="px-6 py-4 text-sm text-gray-600">{tenant.country}</td>
+              <td className="px-6 py-4 text-sm text-gray-600">{tenant.accountingStandard}</td>
+              <td className="px-6 py-4 text-sm text-gray-600">{tenant.currency}</td>
               <td className="px-6 py-4">
                 <span
-                  className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${HostStatusColors[host.status]}-600`}
+                  className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${TenantStatusColors[tenant.status]}-600`}
                 >
-                  {HostStatusLabel[host.status]}
+                  {TenantStatusLabel[tenant.status]}
                 </span>
               </td>
               <td className="px-6 py-4 text-sm text-gray-600">
-                {new Date(host.createdAt).toLocaleDateString()}
+                {new Date(tenant.createdAt).toLocaleDateString()}
               </td>
               <td className="px-6 py-4 text-right">
                 <HostActionsMenu
-                  host={host}
+                  tenant={tenant}
                   onViewDetails={onViewDetails}
                   onEdit={onEdit}
-                  onAction={onHostAction}
+                  onAction={onTenantAction}
                 />
               </td>
             </tr>
@@ -161,18 +161,18 @@ export default function HostTable({
 }
 
 /**
- * Host Actions Menu Component
+ * Tenant Actions Menu Component
  */
 function HostActionsMenu({
-  host,
+  tenant,
   onViewDetails,
   onEdit,
   onAction,
 }: {
-  host: Host;
-  onViewDetails: (host: Host) => void;
-  onEdit: (host: Host) => void;
-  onAction: (hostId: string, action: string) => Promise<void>;
+  tenant: Tenant;
+  onViewDetails: (tenant: Tenant) => void;
+  onEdit: (tenant: Tenant) => void;
+  onAction: (tenantId: string, action: string) => Promise<void>;
 }) {
   const [showMenu, setShowMenu] = React.useState(false);
   const menuRef = React.useRef<HTMLDivElement>(null);
@@ -203,7 +203,7 @@ function HostActionsMenu({
         <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10">
           <button
             onClick={() => {
-              onViewDetails(host);
+              onViewDetails(tenant);
               setShowMenu(false);
             }}
             className="w-full text-left px-4 py-2 hover:bg-gray-50 flex items-center gap-2 text-gray-700"
@@ -213,7 +213,7 @@ function HostActionsMenu({
           </button>
           <button
             onClick={() => {
-              onEdit(host);
+              onEdit(tenant);
               setShowMenu(false);
             }}
             className="w-full text-left px-4 py-2 hover:bg-gray-50 flex items-center gap-2 text-gray-700"
@@ -222,10 +222,10 @@ function HostActionsMenu({
             Edit
           </button>
           <div className="border-t my-1" />
-          {host.status === 'draft' && (
+          {tenant.status === 'draft' && (
             <button
               onClick={() => {
-                onAction(host.id, 'activate');
+                onAction(tenant.id, 'activate');
                 setShowMenu(false);
               }}
               className="w-full text-left px-4 py-2 hover:bg-green-50 text-green-700"
@@ -233,10 +233,10 @@ function HostActionsMenu({
               Activate
             </button>
           )}
-          {host.status === 'active' && (
+          {tenant.status === 'active' && (
             <button
               onClick={() => {
-                onAction(host.id, 'suspend');
+                onAction(tenant.id, 'suspend');
                 setShowMenu(false);
               }}
               className="w-full text-left px-4 py-2 hover:bg-yellow-50 text-yellow-700"
@@ -244,10 +244,10 @@ function HostActionsMenu({
               Suspend
             </button>
           )}
-          {host.status === 'suspended' && (
+          {tenant.status === 'suspended' && (
             <button
               onClick={() => {
-                onAction(host.id, 'reset');
+                onAction(tenant.id, 'reset');
                 setShowMenu(false);
               }}
               className="w-full text-left px-4 py-2 hover:bg-blue-50 text-blue-700"
@@ -257,13 +257,13 @@ function HostActionsMenu({
           )}
           <button
             onClick={() => {
-              const action = host.sslEnabled ? 'disableSSL' : 'enableSSL';
-              onAction(host.id, action);
+              const action = tenant.sslEnabled ? 'disableSSL' : 'enableSSL';
+              onAction(tenant.id, action);
               setShowMenu(false);
             }}
             className="w-full text-left px-4 py-2 hover:bg-gray-50 text-gray-700"
           >
-            {host.sslEnabled ? 'Disable' : 'Enable'} SSL
+            {tenant.sslEnabled ? 'Disable' : 'Enable'} SSL
           </button>
         </div>
       )}

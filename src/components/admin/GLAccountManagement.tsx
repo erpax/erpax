@@ -1,6 +1,6 @@
 /**
  * GL Account Management Component
- * Hierarchical chart of accounts per host with tree visualization
+ * Hierarchical chart of accounts per tenant with tree visualization
  * Patterns learned from Ruby ERPAX GL management
  */
 
@@ -21,13 +21,13 @@ import GLAccountFilters from './GLAccountFilters';
 import GLAccountDetailDialog from './GLAccountDetailDialog';
 
 interface GLAccountManagementProps {
-  hostId: string;
+  tenantId: string;
   onAccountCreated?: (account: GLAccount) => void;
   onAccountUpdated?: (account: GLAccount) => void;
 }
 
 export default function GLAccountManagement({
-  hostId,
+  tenantId,
   onAccountCreated,
   onAccountUpdated,
 }: GLAccountManagementProps) {
@@ -52,9 +52,9 @@ export default function GLAccountManagement({
 
     try {
       const [accountsData, treeData, statsData] = await Promise.all([
-        glAccountService.listAccounts(hostId, scope),
-        glAccountService.getAccountTree(hostId),
-        glAccountService.getAccountStatistics(hostId),
+        glAccountService.listAccounts(tenantId, scope),
+        glAccountService.getAccountTree(tenantId),
+        glAccountService.getAccountStatistics(tenantId),
       ]);
 
       setAccounts(accountsData);
@@ -65,7 +65,7 @@ export default function GLAccountManagement({
     } finally {
       setLoading(false);
     }
-  }, [hostId, scope]);
+  }, [tenantId, scope]);
 
   useEffect(() => {
     loadData();
@@ -110,9 +110,9 @@ export default function GLAccountManagement({
   const handleToggleLock = async (account: GLAccount) => {
     try {
       if (account.locked) {
-        await glAccountService.unlockAccounts(hostId, [account.id]);
+        await glAccountService.unlockAccounts(tenantId, [account.id]);
       } else {
-        await glAccountService.lockAccounts(hostId, [account.id], 'Locked via UI');
+        await glAccountService.lockAccounts(tenantId, [account.id], 'Locked via UI');
       }
 
       // Reload data
@@ -129,7 +129,7 @@ export default function GLAccountManagement({
     }
 
     try {
-      await glAccountService.deleteAccount(hostId, account.id);
+      await glAccountService.deleteAccount(tenantId, account.id);
 
       // Reload data
       await loadData();
@@ -319,7 +319,7 @@ export default function GLAccountManagement({
       <GLAccountDialog
         open={dialogOpen}
         mode={dialogMode}
-        hostId={hostId}
+        tenantId={tenantId}
         account={selectedAccount || undefined}
         onClose={() => setDialogOpen(false)}
         onSave={handleSave}

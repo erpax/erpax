@@ -1,8 +1,10 @@
 /**
- * Host (tenant) types — configuration shape for each independent app instance.
+ * Tenant types — configuration shape for each independent app instance.
  *
- * Learned from Ruby ERPAX Domain model. `AccountingStandard` enumerates the
- * supported accounting frameworks per host.
+ * Slice HHH (2026-05-10): renamed from `Host*` to `Tenant*` lexically;
+ * no backward compat. The "host" alias coined in the Ruby ERPAX port is
+ * fully retired. `AccountingStandard` enumerates the supported
+ * accounting frameworks per tenant.
  *
  * @standard ISO-17442-1:2020 lei legal-entity-identifier
  * @standard ISO-3166-1:2020 country-codes
@@ -19,17 +21,16 @@
  * @see docs/STANDARDS.md §3 §4.2
  */
 
-export type HostStatus = 'draft' | 'active' | 'suspended' | 'archived';
+export type TenantStatus = 'draft' | 'active' | 'suspended' | 'archived';
 export type AccountingStandard = 'IFRS' | 'GAAP' | 'ASBE' | 'INDAS' | 'JGAAP' | 'FRS' | 'CUSTOM';
 export type FiscalYearEnd = 'January' | 'February' | 'March' | 'April' | 'May' | 'June' |
                             'July' | 'August' | 'September' | 'October' | 'November' | 'December';
 
 /**
- * Host Configuration
- * Each host represents a separate, configurable application instance
- * Like WordPress multisite or Shopify - each site is independent
+ * Tenant configuration — one row per independent app instance.
+ * Like WordPress multisite or Shopify: each tenant is its own configurable site.
  */
-export interface Host {
+export interface Tenant {
   id: string;
   name: string;
   slug: string;
@@ -51,7 +52,7 @@ export interface Host {
   sslCertificatePath?: string;
 
   // Status & Lifecycle
-  status: HostStatus;
+  status: TenantStatus;
   activatedAt?: Date;
   suspendedAt?: Date;
   archivedAt?: Date;
@@ -67,10 +68,8 @@ export interface Host {
   seedsLoaded: boolean;
 }
 
-/**
- * Host Create/Update DTO
- */
-export interface CreateHostRequest {
+/** Tenant create DTO. */
+export interface CreateTenantRequest {
   name: string;
   slug?: string;
   description?: string;
@@ -84,7 +83,8 @@ export interface CreateHostRequest {
   seedTemplate?: string;
 }
 
-export interface UpdateHostRequest {
+/** Tenant update DTO. */
+export interface UpdateTenantRequest {
   name?: string;
   description?: string;
   currency?: string;
@@ -95,19 +95,15 @@ export interface UpdateHostRequest {
   customAccountingRules?: Record<string, unknown>;
 }
 
-/**
- * Host Batch Operation Request
- */
-export interface BatchHostActionRequest {
+/** Tenant batch operation request. */
+export interface BatchTenantActionRequest {
   tenantIds: string[];
   action: 'activate' | 'suspend' | 'resetStatus' | 'enableSSL' | 'disableSSL' | 'archive';
   reason?: string; // For audit trail
 }
 
-/**
- * Host Batch Operation Response
- */
-export interface BatchHostActionResponse {
+/** Tenant batch operation response. */
+export interface BatchTenantActionResponse {
   action: string;
   totalRequested: number;
   successful: number;
@@ -116,37 +112,32 @@ export interface BatchHostActionResponse {
   timestamp: Date;
 }
 
-/**
- * Host Statistics
- */
-export interface HostStatistics {
+/** Tenant statistics snapshot. */
+export interface TenantStatistics {
   tenantId: string;
-  status: HostStatus;
+  status: TenantStatus;
   accountCount: number;
   invoiceCount: number;
   billCount: number;
   journalEntryCount: number;
-  totalAmount: number; // In host's currency
+  totalAmount: number; // In tenant's currency
   lastActivityAt: Date;
 }
 
 /**
- * Host Scope Context
- * Attached to requests for multi-tenant isolation
+ * Tenant scope context attached to requests for multi-tenant isolation.
  */
-export interface HostContext {
+export interface TenantContext {
   tenantId: string;
-  host: Host;
+  tenant: Tenant;
   userId: string;
   userRole: string;
   permissions: string[];
 }
 
-/**
- * Host Filter Options
- */
-export interface HostFilterOptions {
-  status?: HostStatus | HostStatus[];
+/** Tenant filter options for list queries. */
+export interface TenantFilterOptions {
+  status?: TenantStatus | TenantStatus[];
   country?: string | string[];
   accountingStandard?: AccountingStandard | AccountingStandard[];
   currency?: string | string[];
@@ -155,51 +146,41 @@ export interface HostFilterOptions {
   createdBefore?: Date;
 }
 
-/**
- * Host Pagination
- */
-export interface HostPaginationOptions {
+/** Tenant pagination options. */
+export interface TenantPaginationOptions {
   page: number;
   pageSize: number;
   sortBy?: 'name' | 'createdAt' | 'status' | 'country';
   sortOrder?: 'asc' | 'desc';
 }
 
-/**
- * Host List Response
- */
-export interface HostListResponse {
-  hosts: Host[];
+/** Tenant list response envelope. */
+export interface TenantListResponse {
+  tenants: Tenant[];
   total: number;
   page: number;
   pageSize: number;
   hasMore: boolean;
 }
 
-/**
- * Host Status Transitions (State Machine)
- */
-export const HOST_STATUS_TRANSITIONS: Record<HostStatus, HostStatus[]> = {
+/** Tenant lifecycle state machine. */
+export const TENANT_STATUS_TRANSITIONS: Record<TenantStatus, TenantStatus[]> = {
   draft: ['active', 'archived'],
   active: ['suspended', 'archived'],
   suspended: ['active', 'archived'],
   archived: [], // Terminal state
 };
 
-/**
- * Host Status Labels for UI
- */
-export const HOST_STATUS_LABELS: Record<HostStatus, string> = {
+/** Status labels for the admin UI. */
+export const TENANT_STATUS_LABELS: Record<TenantStatus, string> = {
   draft: 'Draft',
   active: 'Active',
   suspended: 'Suspended',
   archived: 'Archived',
 };
 
-/**
- * Host Status Colors for UI
- */
-export const HOST_STATUS_COLORS: Record<HostStatus, string> = {
+/** Status colors for the admin UI. */
+export const TENANT_STATUS_COLORS: Record<TenantStatus, string> = {
   draft: 'gray',
   active: 'green',
   suspended: 'yellow',

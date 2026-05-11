@@ -27,14 +27,20 @@ interface SubscriptionForDunning {
   status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled'
 }
 
-/** Subset of the `invoices` collection that the dunning job touches. */
+/** Subset of the `invoices` collection that the dunning job touches.
+ *  YYYY: nested under canonical `dates` + `recurring` groups. */
 interface InvoiceForDunning {
   id: DocId
-  dueAt?: string | null
-  pastDueSinceAt?: string | null
-  gracePeriodEndsAt?: string | null
-  suspensionScheduledFor?: string | null
-  subscription?: SubscriptionForDunning | DocId | null
+  status?: string | null
+  dates?: {
+    dueAt?: string | null
+    pastDueSinceAt?: string | null
+    gracePeriodEndsAt?: string | null
+    suspensionScheduledFor?: string | null
+  }
+  recurring?: {
+    subscription?: SubscriptionForDunning | DocId | null
+  }
 }
 
 interface DunningStage {
@@ -122,17 +128,20 @@ async function processInvoiceDunning(
   const invoiceId = invoice.id
   const subscriptionId = subscription.id
 
-  // If no pastDueSinceAt, mark it now (initial past due)
-  if (!invoice.pastDueSinceAt) {
+  // YYYY: invoice.dates.pastDueSinceAt is the canonical path.
+  const pastDueSinceAt = invoice.dates?.pastDueSinceAt
+  if (!pastDueSinceAt) {
     const now = new Date()
     const sevenDaysOut = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000).toISOString()
     await payload.update({
       collection: 'invoices',
       id: invoiceId,
       data: {
-        pastDueSinceAt: now.toISOString(),
-        gracePeriodEndsAt: sevenDaysOut,
-        suspensionScheduledFor: sevenDaysOut,
+        dates: {
+          pastDueSinceAt: now.toISOString(),
+          gracePeriodEndsAt: sevenDaysOut,
+          suspensionScheduledFor: sevenDaysOut,
+        },
       } as Record<string, unknown>,
     })
 
@@ -148,7 +157,7 @@ async function processInvoiceDunning(
   }
 
   // Get days since past due and check which stage to transition to
-  const daysSincePastDue = getDaysSincePastDue(invoice.pastDueSinceAt)
+  const daysSincePastDue = getDaysSincePastDue(pastDueSinceAt)
 
   // Find the appropriate stage
   for (const stage of DUNNING_STAGES) {
@@ -186,13 +195,14 @@ export async function processDunningCycle(payload: Payload): Promise<void> {
   payload.logger.info('[Dunning] Starting dunning cycle')
 
   try {
-    // Find all open invoices that are past due
+    // Find all open invoices that are past due. YYYY: top-level `status`
+    // (promoted from typeStatus.status) + canonical `dates.dueAt` filter.
     const pastDueInvoices = await payload.find({
       collection: 'invoices',
       where: {
         and: [
           { status: { equals: 'open' } },
-          { dueAt: { less_than: new Date().toISOString() } },
+          { 'dates.dueAt': { less_than: new Date().toISOString() } },
         ],
       } as Record<string, unknown>,
       limit: 1000,
@@ -208,14 +218,15 @@ export async function processDunningCycle(payload: Payload): Promise<void> {
       // which is currently `Invoice` (regenerate `payload-types.ts` for the real shape).
       // Until then, narrow through our local schema-aware view.
       const invoice = rawInvoice as unknown as InvoiceForDunning
-      const sub = invoice.subscription
+      // YYYY: subscription FK lives under `recurring.subscription`.
+      const sub = invoice.recurring?.subscription
       const subscription: SubscriptionForDunning | null =
         sub && typeof sub === 'object'
           ? (sub as SubscriptionForDunning)
           : sub != null
             ? ((await payload.findByID({
                 collection: 'subscriptions',
-                id: sub,
+                id: sub as DocId,
               })) as unknown as SubscriptionForDunning | null)
             : null
 

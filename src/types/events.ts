@@ -287,6 +287,15 @@ export interface InventoryAdjustedEvent extends DomainEvent {
     inventoryAccountCode?: string
     /** For consumption — the WIP / COGS account. */
     consumptionAccountCode?: string
+    /**
+     * Cost-formula election per IAS-2 §25 / ASC 330-10-30.
+     * Slice QQQ — drives unitCost selection when the source-doc cost basis
+     * differs from the on-hand running average.
+     *
+     * @accounting IFRS IAS-2 §25 cost-formulas
+     * @accounting US-GAAP ASC-330-10-30 inventory-valuation
+     */
+    valuationMethod?: 'fifo' | 'weighted_average' | 'specific_identification'
   }
 }
 
@@ -610,4 +619,122 @@ export interface EventMetadata {
   userId: string;
   version: number;
   retryCount: number;
+}
+
+/* ─── Slice NNNN — chain emits that move money ──────────────────────── */
+
+/**
+ * Production receipt — finished good completed at absorbed cost.
+ *
+ * @standard IAS-2 §10 absorbed-cost
+ * @standard ISA-95 §B.5 production-order-completion
+ */
+export interface ProductionCompletedEvent extends DomainEvent {
+  eventType: 'prod:completed';
+  aggregateType: 'inventory_transfer';
+  payload: {
+    workOrderId: string;
+    productionReceiptId: string;
+    finishedGoodSku: string;
+    receivedQuantity: number;
+    absorbedUnitCost: number;
+    totalAbsorbedCost: number;
+    standardTotalCost?: number;
+    currencyCode: string;
+    finishedGoodsAccountCode?: string;
+    wipAccountCode?: string;
+  };
+}
+
+/**
+ * Cost variance computed — IAS-2 §21 standard-vs-actual.
+ *
+ * @standard IAS-2 §21 cost-formulas-variances
+ */
+export interface CostVarianceComputedEvent extends DomainEvent {
+  eventType: 'variance:computed';
+  aggregateType: 'inventory_transfer';
+  payload: {
+    workOrderId: string;
+    varianceCategory:
+      | 'material_price' | 'material_quantity'
+      | 'labour_rate'    | 'labour_efficiency'
+      | 'overhead_spending' | 'overhead_volume';
+    standardCost: number;
+    actualCost: number;
+    /** Positive = unfavourable (DR variance / CR WIP); negative = favourable. */
+    varianceAmount: number;
+    isFavourable: boolean;
+    currencyCode: string;
+    varianceAccountCode?: string;
+  };
+}
+
+/**
+ * Lease modification — IFRS-16 §44-46 remeasurement.
+ *
+ * @standard IFRS-16 §44 §45(c) §46(a) lease-modification
+ */
+export interface LeaseRemeasuredEvent extends DomainEvent {
+  eventType: 'lease:remeasured';
+  aggregateType: 'fixed_asset';
+  payload: {
+    leaseId: string;
+    modificationId: string;
+    classification: 'separate_lease' | 'not_separate_scope_increase' | 'not_separate_other' | 'termination_full' | 'termination_partial';
+    /** Change in lease liability (post − pre). Positive = increase. */
+    liabilityRemeasurement: number;
+    /** Mirror ROU adjustment per IFRS-16 §39(b). */
+    rouAdjustment: number;
+    /** Positive = gain (CR P&L); negative = loss. Typically zero except partial / full termination. */
+    gainLossOnModification: number;
+    currencyCode: string;
+    rouAccountCode?: string;
+    leaseLiabilityAccountCode?: string;
+    pnlGainLossAccountCode?: string;
+  };
+}
+
+/**
+ * Project milestone achieved — IFRS-15 §126 milestone billing.
+ *
+ * @standard IFRS-15 §126 milestone-billing
+ */
+export interface MilestoneAchievedEvent extends DomainEvent {
+  eventType: 'milestone:achieved';
+  aggregateType: 'invoice';
+  payload: {
+    projectId: string;
+    milestoneId: string;
+    milestoneType: 'billing' | 'acceptance' | 'payment' | 'internal';
+    amount: number;
+    currencyCode: string;
+    invoiceId?: string;
+    contractAssetAccountCode?: string;
+    revenueAccountCode?: string;
+  };
+}
+
+/**
+ * WIP snapshot posted — IFRS-15 §B14-B19 cost-to-cost period accrual.
+ *
+ * @standard IFRS-15 §B14 §B18 cost-to-cost
+ * @standard IFRS-15 §107 §108 contract-asset-contract-liability
+ */
+export interface WipSnapshotPostedEvent extends DomainEvent {
+  eventType: 'wip:snapshot:posted';
+  aggregateType: 'invoice';
+  payload: {
+    projectId: string;
+    snapshotId: string;
+    period: string;
+    /** Positive = unbilled WIP (DR contract asset / CR revenue);
+        negative = deferred revenue (DR revenue / CR contract liability). */
+    unbilledOrDeferred: number;
+    recognisedRevenueDelta: number;
+    currencyCode: string;
+    contractAssetAccountCode?: string;
+    contractLiabilityAccountCode?: string;
+    revenueAccountCode?: string;
+  };
 }

@@ -223,6 +223,28 @@ export default buildConfig({
     },
   },
   editor: defaultLexical,
+  // Slice MMMM (2026-05-10) — architecture invariants gate at boot.
+  // Runs the 5-axis self-check (standards / expansion / compression /
+  // entropy; fallback axis is advisory + skipped at boot). Default is
+  // warn-only; set `STRICT_INVARIANTS=1` to refuse boot on failure.
+  // @see src/services/architecture-invariants/onInit.ts
+  onInit: async (payload) => {
+    try {
+      const { runInvariantsAtBoot } = await import('@/services/architecture-invariants/onInit')
+      await runInvariantsAtBoot(payload)
+    } catch (err) {
+      // STRICT_INVARIANTS=1 propagates to refuse boot.
+      throw err
+    }
+    // Slice PPPP — declarative event → notification fan-out.
+    // Idempotent; safe on hot reload.
+    try {
+      const { wireNotificationSubscriber } = await import('@/services/notifications/subscriber')
+      wireNotificationSubscriber(payload)
+    } catch {
+      // Never refuse boot on notification wiring failure.
+    }
+  },
   db: sqliteD1Adapter({
     binding: (await getCloudflare()).env.D1,
     // NODE_ENV=test + non-TTY: Drizzle dev push can hang on interactive column prompts.
@@ -429,6 +451,26 @@ export default buildConfig({
           const { processDunningCycle } = await import('./jobs/dunningJob')
           await processDunningCycle(req.payload)
           return { output: { status: 'completed' } }
+        },
+      },
+      /**
+       * BG BNB rates sync — pulls БНБ daily fixing for every BG-resident
+       * tenant's reporting-currency pairs and upserts into `currency-rates`.
+       * Implementation at `src/jobs/bnbRatesSync.ts`. Cadence: nightly via
+       * cron (`0 1 * * *` recommended — БНБ publishes the day's fixing
+       * around 16:00 EET, so a 1am UTC run captures the prior business day).
+       *
+       * @standard ISO-3166-1:2020 BG country-code
+       * @standard ISO-4217:2015 currency-codes
+       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+       * @audit ISO-19011:2018 audit-trail external-system-evidence
+       */
+      {
+        slug: 'bg-bnb-rates-sync',
+        handler: async ({ req }: { req: PayloadRequest }) => {
+          const { processBnbRatesSync } = await import('./jobs/bnbRatesSync')
+          const result = await processBnbRatesSync(req.payload)
+          return { output: { status: 'completed', ...result } }
         },
       },
     ],

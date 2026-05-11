@@ -327,7 +327,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
     title: 'Multi-Tenant',
     tagline: 'Per-tenant Payload-config sandbox. Tenant isolation enforced at every hook.',
     pitch:
-      'Each tenant carries its own currency, locale, country, accounting standard, and feature flags. Cross-tenant data leakage is prevented by `autoPopulateHost` + `scopedAccess` on every collection.',
+      'Each tenant carries its own currency, locale, country, accounting standard, and feature flags. Cross-tenant data leakage is prevented by `autoPopulateTenant` + `scopedAccess` on every collection.',
     standards: [
       'ISO 27001 A.5.23 — cloud-service tenant isolation',
       'ISO 27002 §5.15 — access control',
@@ -340,7 +340,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'user.config = same shape, narrowed to presentation',
       'resolveRequestConfig(req) — single canonical cascade resolver',
       'scopedAccess() / roleScopedAccess() / tenantAdmin — three-tier access',
-      'autoPopulateHost on every multi-tenant collection',
+      'autoPopulateTenant on every multi-tenant collection',
     ],
     cta: { label: 'Architecture details', url: '/contact' },
     metaDescription:

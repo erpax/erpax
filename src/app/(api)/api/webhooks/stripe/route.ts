@@ -21,6 +21,7 @@ import {
   handleInvoiceSync,
   handleInvoicePaid,
   handleInvoicePaymentFailed,
+  handleChargeRefunded,
   type StripeWebhookContext,
 } from '@/utilities/billing/stripeWebhookHandlers'
 
@@ -48,6 +49,10 @@ const webhookEventHandlers: Record<string, WebhookHandler> = {
   'invoice.updated': handleInvoiceSync as WebhookHandler,
   'invoice.paid': handleInvoicePaid as WebhookHandler,
   'invoice.payment_failed': handleInvoicePaymentFailed as WebhookHandler,
+  // Slice SSS — closes the last LLL dead-handler gap. Stripe fires
+  // `charge.refunded` for both full + partial refunds; the handler emits
+  // `subscription:refunded` so glPostingService books the cash leg.
+  'charge.refunded': handleChargeRefunded as WebhookHandler,
 }
 
 export async function POST(request: Request) {

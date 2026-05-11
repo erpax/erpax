@@ -1,5 +1,5 @@
 /**
- * Admin host (tenant) management — CRUD table, filters, batch actions.
+ * Admin tenant (tenant) management — CRUD table, filters, batch actions.
  *
  * @standard ECMA-262 ECMAScript-2024 baseline
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation admin-CRUD
@@ -10,8 +10,8 @@
  */
 
 /**
- * Host Management Component
- * Admin interface for managing hosts (ERPAX instances)
+ * Tenant Management Component
+ * Admin interface for managing tenants (ERPAX instances)
  * Learned from Ruby ERPAX app/admin/system/domains.rb
  */
 
@@ -19,36 +19,36 @@
 
 import React, { useCallback, useEffect, useState } from 'react';
 import {
-  Host,
-  HostStatusLabel,
-  HostStatusColors,
-  HOST_STATUS_TRANSITIONS,
-  HostFilterOptions,
-  BatchHostActionRequest,
-} from '@/types/host';
-import { hostService } from '@/services/host.service';
-import HostTable from './HostTable';
-import HostFilters from './HostFilters';
-import HostDialog from './HostDialog';
+  Tenant,
+  TenantStatusLabel,
+  TenantStatusColors,
+  TENANT_STATUS_TRANSITIONS,
+  TenantFilterOptions,
+  BatchTenantActionRequest,
+} from '@/types/tenant';
+import { tenantService } from '@/services/tenant.service';
+import HostTable from './TenantTable';
+import HostFilters from './TenantFilters';
+import HostDialog from './TenantDialog';
 import BatchActionsBar from './BatchActionsBar';
 
 interface HostManagementProps {
-  onHostCreated?: (host: Host) => void;
-  onHostUpdated?: (host: Host) => void;
+  onTenantCreated?: (tenant: Tenant) => void;
+  onTenantUpdated?: (tenant: Tenant) => void;
 }
 
 /**
- * HostManagement - Main admin interface for host management
+ * HostManagement - Main admin interface for tenant management
  * Features:
- * - List all hosts with filtering and pagination
- * - Create new hosts
- * - View host details
- * - Edit host configuration
+ * - List all tenants with filtering and pagination
+ * - Create new tenants
+ * - View tenant details
+ * - Edit tenant configuration
  * - Batch actions (activate, suspend, reset, enable/disable SSL)
- * - Host statistics and status tracking
+ * - Tenant statistics and status tracking
  */
-export default function HostManagement({ onHostCreated, onHostUpdated }: HostManagementProps) {
-  const [hosts, setHosts] = useState<Host[]>([]);
+export default function HostManagement({ onTenantCreated, onTenantUpdated }: HostManagementProps) {
+  const [tenants, setTenants] = useState<Tenant[]>([]);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -61,13 +61,13 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
   const [pageSize, _setPageSize] = useState(20);
 
   // Filter state
-  const [filters, setFilters] = useState<HostFilterOptions>({});
+  const [filters, setFilters] = useState<TenantFilterOptions>({});
   const [sortBy, setSortBy] = useState<'name' | 'createdAt' | 'status' | 'country'>('createdAt');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
 
   // Dialog state
   const [showCreateDialog, setShowCreateDialog] = useState(false);
-  const [selectedHost, setSelectedHost] = useState<Host | null>(null);
+  const [selectedTenant, setSelectedTenant] = useState<Tenant | null>(null);
   const [showEditDialog, setShowEditDialog] = useState(false);
   const [showDetailDialog, setShowDetailDialog] = useState(false);
 
@@ -75,24 +75,24 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
   const [batchLoading, setBatchLoading] = useState(false);
 
   /**
-   * Load hosts from API
+   * Load tenants from API
    */
   const loadHosts = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
 
-      const response = await hostService.listHosts(filters, {
+      const response = await tenantService.listTenants(filters, {
         page,
         pageSize,
         sortBy,
         sortOrder,
       });
 
-      setHosts(response.hosts);
+      setTenants(response.tenants);
       setTotal(response.total);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load hosts');
+      setError(err instanceof Error ? err.message : 'Failed to load tenants');
     } finally {
       setLoading(false);
     }
@@ -105,7 +105,7 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
   /**
    * Handle filter changes
    */
-  const handleFilterChange = (newFilters: HostFilterOptions) => {
+  const handleFilterChange = (newFilters: TenantFilterOptions) => {
     setFilters(newFilters);
     setPage(1); // Reset to first page
   };
@@ -125,12 +125,12 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
   /**
    * Handle row selection
    */
-  const handleSelectHost = (hostId: string, selected: boolean) => {
+  const handleSelectTenant = (tenantId: string, selected: boolean) => {
     const newSelected = new Set(selectedHostIds);
     if (selected) {
-      newSelected.add(hostId);
+      newSelected.add(tenantId);
     } else {
-      newSelected.delete(hostId);
+      newSelected.delete(tenantId);
     }
     setSelectedHostIds(newSelected);
   };
@@ -140,45 +140,45 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
    */
   const handleSelectAll = (selected: boolean) => {
     if (selected) {
-      setSelectedHostIds(new Set(hosts.map(h => h.id)));
+      setSelectedHostIds(new Set(tenants.map(h => h.id)));
     } else {
       setSelectedHostIds(new Set());
     }
   };
 
   /**
-   * Handle host action
+   * Handle tenant action
    */
-  const handleHostAction = async (hostId: string, action: string) => {
+  const handleTenantAction = async (tenantId: string, action: string) => {
     try {
-      let updatedHost: Host;
+      let updatedTenant: Tenant;
 
       switch (action) {
         case 'activate':
-          updatedHost = await hostService.activateHost(hostId);
+          updatedTenant = await tenantService.activateTenant(tenantId);
           break;
         case 'suspend':
-          updatedHost = await hostService.suspendHost(hostId);
+          updatedTenant = await tenantService.suspendTenant(tenantId);
           break;
         case 'reset':
-          updatedHost = await hostService.resetHostStatus(hostId);
+          updatedTenant = await tenantService.resetTenantStatus(tenantId);
           break;
         case 'archive':
-          updatedHost = await hostService.archiveHost(hostId);
+          updatedTenant = await tenantService.archiveTenant(tenantId);
           break;
         case 'enableSSL':
-          updatedHost = await hostService.enableSSL(hostId);
+          updatedTenant = await tenantService.enableSSL(tenantId);
           break;
         case 'disableSSL':
-          updatedHost = await hostService.disableSSL(hostId);
+          updatedTenant = await tenantService.disableSSL(tenantId);
           break;
         default:
           throw new Error(`Unknown action: ${action}`);
       }
 
       // Update local state
-      setHosts(hosts.map(h => (h.id === hostId ? updatedHost : h)));
-      onHostUpdated?.(updatedHost);
+      setTenants(tenants.map(h => (h.id === tenantId ? updatedTenant : h)));
+      onTenantUpdated?.(updatedTenant);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Action failed');
     }
@@ -189,30 +189,30 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
    */
   const handleBatchAction = async (action: string) => {
     if (selectedHostIds.size === 0) {
-      setError('Please select at least one host');
+      setError('Please select at least one tenant');
       return;
     }
 
-    if (!confirm(`Are you sure you want to ${action} ${selectedHostIds.size} host(s)?`)) {
+    if (!confirm(`Are you sure you want to ${action} ${selectedHostIds.size} tenant(s)?`)) {
       return;
     }
 
     try {
       setBatchLoading(true);
-      const response = await hostService.batchAction({
-        // Slice CCC: API/type rename host→tenant. selectedHostIds keeps the
+      const response = await tenantService.batchAction({
+        // Slice CCC: API/type rename tenant→tenant. selectedHostIds keeps the
         // legacy variable name for callsite stability; on the wire it is
-        // `tenantIds` per BatchHostActionRequest.
+        // `tenantIds` per BatchTenantActionRequest.
         tenantIds: Array.from(selectedHostIds),
-        action: action as BatchHostActionRequest['action'],
+        action: action as BatchTenantActionRequest['action'],
       });
 
-      // Reload hosts
+      // Reload tenants
       await loadHosts();
       setSelectedHostIds(new Set());
 
       if (response.failed > 0) {
-        setError(`${response.failed} host(s) failed to ${action}`);
+        setError(`${response.failed} tenant(s) failed to ${action}`);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Batch action failed');
@@ -222,22 +222,22 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
   };
 
   /**
-   * Handle create host
+   * Handle create tenant
    */
-  const handleCreateHost = async (newHost: Host) => {
+  const handleCreateTenant = async (newTenant: Tenant) => {
     setShowCreateDialog(false);
     await loadHosts();
-    onHostCreated?.(newHost);
+    onTenantCreated?.(newTenant);
   };
 
   /**
-   * Handle update host
+   * Handle update tenant
    */
-  const handleUpdateHost = async (updatedHost: Host) => {
+  const handleUpdateTenant = async (updatedTenant: Tenant) => {
     setShowEditDialog(false);
-    setSelectedHost(null);
+    setSelectedTenant(null);
     await loadHosts();
-    onHostUpdated?.(updatedHost);
+    onTenantUpdated?.(updatedTenant);
   };
 
   return (
@@ -245,7 +245,7 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Host Management</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Tenant Management</h1>
           <p className="mt-2 text-sm text-gray-600">
             Manage independent ERPAX instances configured for different countries and accounting standards
           </p>
@@ -254,7 +254,7 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
           onClick={() => setShowCreateDialog(true)}
           className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
         >
-          Create Host
+          Create Tenant
         </button>
       </div>
 
@@ -277,21 +277,21 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
         />
       )}
 
-      {/* Host table */}
+      {/* Tenant table */}
       <HostTable
-        hosts={hosts}
+        tenants={tenants}
         selectedHostIds={selectedHostIds}
         loading={loading}
-        onSelectHost={handleSelectHost}
+        onSelectTenant={handleSelectTenant}
         onSelectAll={handleSelectAll}
         onSort={handleSort}
-        onHostAction={handleHostAction}
-        onViewDetails={(host) => {
-          setSelectedHost(host);
+        onTenantAction={handleTenantAction}
+        onViewDetails={(tenant) => {
+          setSelectedTenant(tenant);
           setShowDetailDialog(true);
         }}
-        onEdit={(host) => {
-          setSelectedHost(host);
+        onEdit={(tenant) => {
+          setSelectedTenant(tenant);
           setShowEditDialog(true);
         }}
         sortBy={sortBy}
@@ -329,34 +329,34 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
         open={showCreateDialog}
         mode="create"
         onClose={() => setShowCreateDialog(false)}
-        onSave={handleCreateHost}
+        onSave={handleCreateTenant}
       />
 
       {/* Edit dialog */}
-      {selectedHost && (
+      {selectedTenant && (
         <HostDialog
           open={showEditDialog}
           mode="edit"
-          host={selectedHost}
+          tenant={selectedTenant}
           onClose={() => {
             setShowEditDialog(false);
-            setSelectedHost(null);
+            setSelectedTenant(null);
           }}
-          onSave={handleUpdateHost}
+          onSave={handleUpdateTenant}
         />
       )}
 
       {/* Detail dialog */}
-      {selectedHost && (
+      {selectedTenant && (
         <HostDetailDialog
           open={showDetailDialog}
-          host={selectedHost}
+          tenant={selectedTenant}
           onClose={() => {
             setShowDetailDialog(false);
-            setSelectedHost(null);
+            setSelectedTenant(null);
           }}
           onEdit={() => setShowEditDialog(true)}
-          onAction={handleHostAction}
+          onAction={handleTenantAction}
         />
       )}
     </div>
@@ -364,25 +364,25 @@ export default function HostManagement({ onHostCreated, onHostUpdated }: HostMan
 }
 
 /**
- * Host Detail Dialog Component
+ * Tenant Detail Dialog Component
  */
 function HostDetailDialog({
   open,
-  host,
+  tenant,
   onClose,
   onEdit,
   onAction,
 }: {
   open: boolean;
-  host: Host;
+  tenant: Tenant;
   onClose: () => void;
   onEdit: () => void;
-  onAction: (hostId: string, action: string) => Promise<void>;
+  onAction: (tenantId: string, action: string) => Promise<void>;
 }) {
   if (!open) return null;
 
-  const validActions = HOST_STATUS_TRANSITIONS[host.status] || [];
-  const statusColor = HostStatusColors[host.status];
+  const validActions = TENANT_STATUS_TRANSITIONS[tenant.status] || [];
+  const statusColor = TenantStatusColors[tenant.status];
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -390,8 +390,8 @@ function HostDetailDialog({
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">{host.name}</h2>
-            <p className="text-sm text-gray-600 mt-1">{host.slug}</p>
+            <h2 className="text-2xl font-bold text-gray-900">{tenant.name}</h2>
+            <p className="text-sm text-gray-600 mt-1">{tenant.slug}</p>
           </div>
           <button
             onClick={onClose}
@@ -410,7 +410,7 @@ function HostDetailDialog({
               <span
                 className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${statusColor}-600`}
               >
-                {HostStatusLabel[host.status]}
+                {TenantStatusLabel[tenant.status]}
               </span>
             </div>
           </div>
@@ -419,48 +419,48 @@ function HostDetailDialog({
           <div className="grid grid-cols-2 gap-6">
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Country</h4>
-              <p className="text-gray-600 mt-1">{host.country}</p>
+              <p className="text-gray-600 mt-1">{tenant.country}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Accounting Standard</h4>
-              <p className="text-gray-600 mt-1">{host.accountingStandard}</p>
+              <p className="text-gray-600 mt-1">{tenant.accountingStandard}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Currency</h4>
-              <p className="text-gray-600 mt-1">{host.currency}</p>
+              <p className="text-gray-600 mt-1">{tenant.currency}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Locale</h4>
-              <p className="text-gray-600 mt-1">{host.locale}</p>
+              <p className="text-gray-600 mt-1">{tenant.locale}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Fiscal Year End</h4>
-              <p className="text-gray-600 mt-1">{host.fiscalYearEnd}</p>
+              <p className="text-gray-600 mt-1">{tenant.fiscalYearEnd}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Default Tax Rate</h4>
-              <p className="text-gray-600 mt-1">{host.defaultTaxRate}%</p>
+              <p className="text-gray-600 mt-1">{tenant.defaultTaxRate}%</p>
             </div>
-            {host.domainName && (
+            {tenant.domainName && (
               <div className="col-span-2">
                 <h4 className="text-sm font-semibold text-gray-900">Domain</h4>
-                <p className="text-gray-600 mt-1">{host.domainName}</p>
+                <p className="text-gray-600 mt-1">{tenant.domainName}</p>
               </div>
             )}
             <div>
               <h4 className="text-sm font-semibold text-gray-900">SSL</h4>
-              <p className="text-gray-600 mt-1">{host.sslEnabled ? 'Enabled' : 'Disabled'}</p>
+              <p className="text-gray-600 mt-1">{tenant.sslEnabled ? 'Enabled' : 'Disabled'}</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Created</h4>
-              <p className="text-gray-600 mt-1">{new Date(host.createdAt).toLocaleDateString()}</p>
+              <p className="text-gray-600 mt-1">{new Date(tenant.createdAt).toLocaleDateString()}</p>
             </div>
           </div>
 
-          {host.description && (
+          {tenant.description && (
             <div>
               <h4 className="text-sm font-semibold text-gray-900">Description</h4>
-              <p className="text-gray-600 mt-2">{host.description}</p>
+              <p className="text-gray-600 mt-2">{tenant.description}</p>
             </div>
           )}
         </div>
@@ -470,7 +470,7 @@ function HostDetailDialog({
           <div className="flex gap-2">
             {validActions.includes('activate') && (
               <button
-                onClick={() => onAction(host.id, 'activate')}
+                onClick={() => onAction(tenant.id, 'activate')}
                 className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
               >
                 Activate
@@ -478,7 +478,7 @@ function HostDetailDialog({
             )}
             {validActions.includes('suspend') && (
               <button
-                onClick={() => onAction(host.id, 'suspend')}
+                onClick={() => onAction(tenant.id, 'suspend')}
                 className="px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700 text-sm"
               >
                 Suspend
@@ -486,7 +486,7 @@ function HostDetailDialog({
             )}
             {validActions.includes('archived') && (
               <button
-                onClick={() => onAction(host.id, 'archive')}
+                onClick={() => onAction(tenant.id, 'archive')}
                 className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 text-sm"
               >
                 Archive

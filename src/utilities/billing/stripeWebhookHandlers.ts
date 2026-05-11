@@ -391,3 +391,109 @@ export async function handleInvoicePaymentFailed(
 
   payload.logger.warn(`Invoice ${stripeInvoice.id} payment failed, attempt ${(invoice.attemptCount || 0) + 1}`)
 }
+
+/**
+ * Slice SSS — Handle Stripe `charge.refunded` (full or partial refund).
+ *
+ * Closes the last dead-handler gap from Slice LLL: `glPostingService`
+ * subscribes to `subscription:refunded` (which books `Dr Refunds Payable
+ * / Cr Cash` — the cash-leg of a previously-recognised refund liability)
+ * but no producer fires the event. This handler is symmetric to the
+ * existing `handleInvoicePaid` → `subscription:invoiced` path: when
+ * Stripe reports a refund, we look up the source subscription and emit.
+ *
+ * Per IFRS 15 §B22 / ASC 606-10-25-13, customer cancellation with refund
+ * extinguishes the unsatisfied performance obligation. The
+ * `subscription:cancelled` event already books the refund LIABILITY at
+ * cancel-time; this handler books the cash MOVEMENT when the refund
+ * actually leaves the bank account (Stripe → customer's card).
+ *
+ * @standard ISO-4217:2015 currency-codes refund-amount
+ * @standard ISO-8601-1:2019 date-time refunded-at
+ * @accounting IFRS IFRS-15 §B22 customer-options-for-refund
+ * @accounting US-GAAP ASC-606-10-25-13 contract-modification-with-refund
+ * @audit ISO-19011:2018 audit-trail refund-cash-leg
+ * @compliance SOX §404 internal-controls refund-control
+ * @see src/services/gl-posting.service.ts postSubscriptionRefunded
+ */
+export async function handleChargeRefunded(
+  context: StripeWebhookContext,
+  stripeCharge: Stripe.Charge,
+): Promise<void> {
+  const { payload } = context
+
+  // Stripe charge → invoice → subscription resolution chain.
+  // We only emit subscription:refunded for charges tied to a subscription
+  // invoice. One-off charges (non-subscription) skip — those go through
+  // the order:refunded path on the front-of-house orders collection.
+  const invoiceRef = stripeCharge.invoice
+  if (!invoiceRef) {
+    payload.logger.info(
+      `charge.refunded ${stripeCharge.id}: no invoice reference — skipping (likely one-off charge)`,
+    )
+    return
+  }
+  const invoiceId = typeof invoiceRef === 'string' ? invoiceRef : invoiceRef.id
+
+  const matchingInvoices = await payload.find({
+    collection: 'invoices',
+    where: { stripeInvoiceId: { equals: invoiceId } },
+    limit: 1,
+    depth: 1,
+  })
+  if (!matchingInvoices.docs.length) {
+    payload.logger.warn(
+      `charge.refunded ${stripeCharge.id}: invoice ${invoiceId} not found locally`,
+    )
+    return
+  }
+  const invoice = matchingInvoices.docs[0]
+  const subscription =
+    typeof invoice.subscription === 'object'
+      ? invoice.subscription
+      : invoice.subscription
+        ? await payload.findByID({
+            collection: 'subscriptions',
+            id: invoice.subscription,
+          })
+        : null
+
+  if (!subscription) {
+    payload.logger.info(
+      `charge.refunded ${stripeCharge.id}: invoice ${invoiceId} has no subscription — emitting nothing (one-off invoice refund)`,
+    )
+    return
+  }
+
+  // `amount_refunded` is in Stripe minor units (cents).
+  const refundAmount = stripeCharge.amount_refunded ?? 0
+  if (refundAmount <= 0) {
+    return
+  }
+
+  const tenantRef = (subscription as { tenant?: number | string | { id: number | string } }).tenant
+  const tenantId =
+    typeof tenantRef === 'object' && tenantRef !== null && 'id' in tenantRef
+      ? String(tenantRef.id)
+      : String(tenantRef ?? '')
+
+  const refundedAt = new Date()
+
+  await emitEvent(
+    'subscription:refunded',
+    tenantId,
+    'system',
+    {
+      subscriptionId: String(subscription.id),
+      amount: refundAmount,
+      currencyCode: (stripeCharge.currency || 'eur').toUpperCase(),
+      refundedAt,
+    },
+    String(subscription.id),
+    'subscription',
+  )
+
+  payload.logger.info(
+    `subscription:refunded emitted for ${subscription.id} (charge ${stripeCharge.id}, amount ${refundAmount})`,
+  )
+}

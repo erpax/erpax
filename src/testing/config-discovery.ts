@@ -1146,3 +1146,51 @@ class PayloadConfigDiscovery {
 
 export { PayloadConfigDiscovery, Collection, Field, Payload }
 export type { CollectionMetadata, ValidationError, DataValidationResult }
+
+// =============================================================================
+// Singleton convenience helpers — `initializeDiscovery` / `getDiscovery` /
+// `resetDiscovery` are the canonical entry points used by `test-seed-factory`,
+// `tests/testing/config-discovery.test.ts`, and the Level-2/Level-3 e2e
+// suites. They wrap `PayloadConfigDiscovery.getInstance()` so callers don't
+// need to know about the static-singleton pattern.
+//
+// `initializeDiscovery` is overloaded:
+//   - `initializeDiscovery(payload)` → bind the singleton to a payload instance
+//     and pre-cache its collections (the typical flow for integration tests)
+//   - `initializeDiscovery()`        → return the singleton without rebinding;
+//     used by Level-3 e2e tests that mock payload via their own surface and
+//     only need the discovery instance to *exist* (validation calls degrade
+//     gracefully when no payload is bound — see `validateData`).
+// =============================================================================
+
+/**
+ * Initialize (or return) the global PayloadConfigDiscovery singleton.
+ *
+ * @standard ISO/IEC-29119:2022 software-testing
+ */
+export function initializeDiscovery(payload?: Payload): PayloadConfigDiscovery {
+  const instance = PayloadConfigDiscovery.getInstance()
+  if (payload) {
+    instance.initialize(payload)
+  }
+  return instance
+}
+
+/**
+ * Get the global PayloadConfigDiscovery singleton (creating it lazily).
+ *
+ * @standard ISO/IEC-29119:2022 software-testing
+ */
+export function getDiscovery(): PayloadConfigDiscovery {
+  return PayloadConfigDiscovery.getInstance()
+}
+
+/**
+ * Reset the global PayloadConfigDiscovery singleton — used by tests that
+ * need a fresh instance per scenario (collection set, validation cache, etc.).
+ *
+ * @standard ISO/IEC-29119:2022 software-testing
+ */
+export function resetDiscovery(): void {
+  PayloadConfigDiscovery.resetInstance()
+}

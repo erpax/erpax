@@ -1,0 +1,109 @@
+/**
+ * Chain event emitters — Slice KKKK after-change hooks that fire the
+ * business-chain events the BUSINESS_CHAINS registry declares.
+ *
+ * Each emitter is a thin Payload `afterChange` hook that maps a status
+ * transition (e.g. PR draft → submitted, PR submitted → approved, RFQ
+ * received → awarded, lease-modification posted, production-receipt
+ * posted, project-milestone achieved, wip-snapshot posted) to an
+ * `emitDomainEvent()` call on the canonical event channel.
+ *
+ * This is the wiring layer Slice KKKK adds so the chain registry's
+ * declared `emits:` value matches what actually fires at runtime.
+ *
+ * @audit ISO-19011:2018 audit-trail event-emit
+ * @compliance SOX §404 internal-controls process-evidence
+ */
+
+import type { CollectionAfterChangeHook } from 'payload'
+import { emitDomainEvent } from '@/services/emit-domain-event'
+
+type StatusBearing = { status?: string; id: string; tenant?: string | { id: string } }
+
+/** Fire `<event>` when `previousDoc.status !== doc.status === <toStatus>`. */
+function emitOnStatusTransition(
+  toStatus: string,
+  eventType: string,
+  aggregateType: 'invoice' | 'bill' | 'payment' | 'inventory_transfer' | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset',
+): CollectionAfterChangeHook {
+  return async ({ doc, previousDoc, req }) => {
+    const next = doc as StatusBearing
+    const prev = previousDoc as StatusBearing | null
+    if (next.status !== toStatus) return doc
+    if (prev && prev.status === toStatus) return doc
+    const tenantId = typeof next.tenant === 'object' && next.tenant ? next.tenant.id : (next.tenant ?? '')
+    if (!tenantId) return doc
+    await emitDomainEvent(
+      req,
+      {
+        eventId: crypto.randomUUID(),
+        eventType: eventType as never, // typed via DomainEvent contract
+        tenantId,
+        aggregateId: next.id,
+        aggregateType,
+        timestamp: new Date(),
+        userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+        payload: { status: next.status },
+      } as never,
+      `${eventType}: ${next.id}`,
+    )
+    return doc
+  }
+}
+
+/** Fire `<event>` once on row-create regardless of status. */
+function emitOnCreate(
+  eventType: string,
+  aggregateType: 'invoice' | 'bill' | 'payment' | 'inventory_transfer' | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset',
+): CollectionAfterChangeHook {
+  return async ({ doc, operation, req }) => {
+    if (operation !== 'create') return doc
+    const next = doc as StatusBearing
+    const tenantId = typeof next.tenant === 'object' && next.tenant ? next.tenant.id : (next.tenant ?? '')
+    if (!tenantId) return doc
+    await emitDomainEvent(
+      req,
+      {
+        eventId: crypto.randomUUID(),
+        eventType: eventType as never,
+        tenantId,
+        aggregateId: next.id,
+        aggregateType,
+        timestamp: new Date(),
+        userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+        payload: {},
+      } as never,
+      `${eventType}: ${next.id}`,
+    )
+    return doc
+  }
+}
+
+/* ─── Concrete hooks per Slice KKKK chain ─────────────────────────── */
+
+// P2P
+export const emitPrSubmitted     = emitOnStatusTransition('submitted', 'pr:submitted',     'order')
+export const emitPrApproved      = emitOnStatusTransition('approved',  'pr:approved',      'order')
+export const emitRfqReceived     = emitOnStatusTransition('received',  'rfq:received',     'order')
+export const emitRfqAwarded      = emitOnStatusTransition('awarded',   'rfq:awarded',      'order')
+export const emitPoCreated       = emitOnCreate('po:created',          'order')
+export const emitGrPosted        = emitOnStatusTransition('posted',    'gr:posted',        'inventory_transfer')
+
+// Manufacturing
+export const emitWoReleased      = emitOnStatusTransition('released',  'wo:released',      'inventory_transfer')
+export const emitProdCompleted   = emitOnStatusTransition('posted',    'prod:completed',   'inventory_transfer')
+export const emitQcComplete      = emitOnStatusTransition('completed', 'qc:complete',      'inventory_transfer')
+
+// Project + IFRS-15 over-time
+export const emitMilestoneAchieved = emitOnStatusTransition('achieved', 'milestone:achieved', 'invoice')
+export const emitWipSnapshotPosted = emitOnStatusTransition('posted',  'wip:snapshot:posted', 'invoice')
+
+// IFRS-16 lease modifications
+export const emitLeaseRemeasured = emitOnStatusTransition('posted',    'lease:remeasured', 'fixed_asset')
+
+// Subscription metered usage
+export const emitUsageRecorded   = emitOnCreate('usage:recorded',      'subscription')
+
+// CRM
+export const emitLeadQualified   = emitOnStatusTransition('sql',       'lead:sql',         'order')
+export const emitOpportunityWon  = emitOnStatusTransition('won',       'opp:won',          'order')

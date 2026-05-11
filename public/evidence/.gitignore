@@ -1,0 +1,18 @@
+# Multimedia evidence artifacts produced by the e2e tests.
+# Lives under public/ so the deployed Worker serves these as static assets,
+# accessible at /evidence/... on the live URL. Per-file binary churn is
+# heavy, so the artifacts themselves are gitignored — regenerate locally
+# with:
+#   pnpm test:e2e:erp                            # ERP workflow walk-throughs
+#   pnpm test:e2e --project=chromium             # standard e2e (admin-evidence + others)
+#
+# What lives here when the suite has run:
+#   workflows/<workflow>/<step>.png              # per-step PNG snapshots
+#   admin-pages/<route>.png                      # per-admin-page PNG snapshots
+#   test-results/<spec>/<test>/video.webm        # per-test recording
+#   test-results/<spec>/<test>/trace.zip         # per-test Playwright trace
+#   _report/                                     # HTML reporter root
+
+*
+!.gitignore
+!README.md

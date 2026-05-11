@@ -221,7 +221,7 @@ export interface PeriodClosingChecklist {
 }
 
 /**
- * Period-End Configuration per Host
+ * Period-End Configuration per Tenant
  */
 export interface PeriodEndConfig {
   tenantId: string;

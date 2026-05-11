@@ -14,3 +14,16 @@ allowBuilds:
   sqlite3: true
   unrs-resolver: true
   workerd: true
+
+# Suppress upstream peer-range bugs that pnpm 11's stricter checker surfaces.
+# Both flagged peers are runtime-compatible — only the peer spec is wrong:
+#   - @tailwindcss/typography@0.5.19's peer range only lists v4 prereleases
+#     (>=4.0.0-alpha.20 || >=4.0.0-beta.1), missing stable v4.x. The plugin
+#     itself works fine with v4 stable; tailwindlabs/tailwindcss#16135.
+#   - mcp-handler@1.1.0 pins @modelcontextprotocol/sdk to exactly 1.26.0, but
+#     its actual requirement is >=1.26.0 (1.26 was a security fix). 1.27.1+
+#     is compatible.
+peerDependencyRules:
+  allowedVersions:
+    '@tailwindcss/typography>tailwindcss': '4'
+    'mcp-handler>@modelcontextprotocol/sdk': '1'
