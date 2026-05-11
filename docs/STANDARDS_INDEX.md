@@ -1412,21 +1412,21 @@ src/services/architecture-invariants/checks.ts:1616: * @standard W3C VC Data Mod
 src/services/architecture-invariants/checks.ts:1940: * @standard W3C JSON-LD 1.1 + Schema.org Action
 src/services/architecture-invariants/checks.ts:1967: * @standard MCP 0.6 — tools/list naming convention
 src/services/architecture-invariants/checks.ts:1998: * @standard ISO 27001 A.5.10 access-control-policy
-src/services/architecture-invariants/checks.ts:2074: * @standard MCP 0.6 — tools/list naming convention
-src/services/architecture-invariants/checks.ts:2256: * @standard Lamport 1978 — distributed-system causal ordering
-src/services/architecture-invariants/checks.ts:2289: * @standard W3C Web Components composition pattern
-src/services/architecture-invariants/checks.ts:2358: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2418: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2454: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2594: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2640: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2699: * @standard ISO 27001:2022 A.5.10 access-control-policy
-src/services/architecture-invariants/checks.ts:2700: * @standard ISO 27002:2022 §5.4 segregation-of-duties
-src/services/architecture-invariants/checks.ts:2701: * @standard ISO 19011:2018 §6.4.6 audit-evidence
-src/services/architecture-invariants/checks.ts:2763: * @standard ISO 27001 A.5.15 access-control
-src/services/architecture-invariants/checks.ts:2764: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
-src/services/architecture-invariants/checks.ts:2869: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/services/architecture-invariants/checks.ts:2870: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
+src/services/architecture-invariants/checks.ts:2076: * @standard MCP 0.6 — tools/list naming convention
+src/services/architecture-invariants/checks.ts:2260: * @standard Lamport 1978 — distributed-system causal ordering
+src/services/architecture-invariants/checks.ts:2293: * @standard W3C Web Components composition pattern
+src/services/architecture-invariants/checks.ts:2362: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2422: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2458: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2598: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2644: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2703: * @standard ISO 27001:2022 A.5.10 access-control-policy
+src/services/architecture-invariants/checks.ts:2704: * @standard ISO 27002:2022 §5.4 segregation-of-duties
+src/services/architecture-invariants/checks.ts:2705: * @standard ISO 19011:2018 §6.4.6 audit-evidence
+src/services/architecture-invariants/checks.ts:2767: * @standard ISO 27001 A.5.15 access-control
+src/services/architecture-invariants/checks.ts:2768: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
+src/services/architecture-invariants/checks.ts:2873: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/services/architecture-invariants/checks.ts:2874: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
 src/services/architecture-invariants/checks.ts:633: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
 src/services/architecture-invariants/checks.ts:650: * @standard ISO 27002:2022 §5.4 segregation-of-duties
 src/services/architecture-invariants/checks.ts:651: * @standard COBIT 5 PO4.11
@@ -5144,17 +5144,17 @@ src/services/architecture-invariants/checks.ts:1617: * @audit ISO 19011:2018 §6
 src/services/architecture-invariants/checks.ts:1941: * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
 src/services/architecture-invariants/checks.ts:1968: * @audit ISO 19011:2018 §6.4.6 (every tool standards-traceable)
 src/services/architecture-invariants/checks.ts:1999: * @audit ISO 27002 §5.4 segregation-of-duties
-src/services/architecture-invariants/checks.ts:2075: * @audit ISO 19011:2018 §6.4.6 (every barrel-exported factory traceable to live surface)
-src/services/architecture-invariants/checks.ts:2257: * @audit ISO 19011:2018 §6.4.6 (stream windows audit-trailed)
-src/services/architecture-invariants/checks.ts:2290: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
-src/services/architecture-invariants/checks.ts:2359: * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
-src/services/architecture-invariants/checks.ts:2419: * @audit Law 10 referential-harmony
-src/services/architecture-invariants/checks.ts:2455: * @audit Law 10 referential-harmony (static counterpart)
-src/services/architecture-invariants/checks.ts:2595: * @audit Law 10 referential-harmony (slug-uniqueness)
-src/services/architecture-invariants/checks.ts:2641: * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
-src/services/architecture-invariants/checks.ts:2702: * @audit Conservation Law 38 mcp-tool-standardization
-src/services/architecture-invariants/checks.ts:2765: * @audit Conservation Law 38 mcp-tool-standardization
-src/services/architecture-invariants/checks.ts:2871: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
+src/services/architecture-invariants/checks.ts:2077: * @audit ISO 19011:2018 §6.4.6 (every barrel-exported factory traceable to live surface)
+src/services/architecture-invariants/checks.ts:2261: * @audit ISO 19011:2018 §6.4.6 (stream windows audit-trailed)
+src/services/architecture-invariants/checks.ts:2294: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
+src/services/architecture-invariants/checks.ts:2363: * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
+src/services/architecture-invariants/checks.ts:2423: * @audit Law 10 referential-harmony
+src/services/architecture-invariants/checks.ts:2459: * @audit Law 10 referential-harmony (static counterpart)
+src/services/architecture-invariants/checks.ts:2599: * @audit Law 10 referential-harmony (slug-uniqueness)
+src/services/architecture-invariants/checks.ts:2645: * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
+src/services/architecture-invariants/checks.ts:2706: * @audit Conservation Law 38 mcp-tool-standardization
+src/services/architecture-invariants/checks.ts:2769: * @audit Conservation Law 38 mcp-tool-standardization
+src/services/architecture-invariants/checks.ts:2875: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
 src/services/architecture-invariants/checks.ts:710: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/services/architecture-invariants/checks.ts:9: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/services/architecture-invariants/index.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants

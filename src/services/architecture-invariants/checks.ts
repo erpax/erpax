@@ -2001,7 +2001,9 @@ export async function checkMcpToolStandardizationInvariant(_ctx: InvariantContex
 export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+    // eslint-disable-next-line @typescript-eslint/no-require-imports -- matches pre-existing pattern in this file (Cloudflare workerd runtime compatibility — top-level node:fs import would bundle fs into worker contexts that don't ship it)
     const fs = require('node:fs') as typeof import('node:fs')
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('node:path') as typeof import('node:path')
     const toolDefsPath = path.join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')
     if (!fs.existsSync(toolDefsPath)) {
@@ -2077,7 +2079,9 @@ export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): 
 export async function checkMcpBarrelWired(ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+    // eslint-disable-next-line @typescript-eslint/no-require-imports -- pre-existing pattern in this file for workerd runtime compatibility
     const fs = require('node:fs') as typeof import('node:fs')
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const path = require('node:path') as typeof import('node:path')
     const barrelPath = path.join(repoRoot, 'src/services/agents/mcp/tools/index.ts')
     if (!fs.existsSync(barrelPath)) {
