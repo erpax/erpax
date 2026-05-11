@@ -16,19 +16,18 @@
  * @see /src/services/error-uuid/index.ts
  */
 import { z } from 'zod'
-import type { PayloadRequest } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import { computeErrorUuid, wrapError } from '@/services/error-uuid'
+import { assertTenantMatch } from './_guards'
+// Slice EEEEEEEEEE (2026-05-11) — import canonical ErpaxMcpTool instead
+// of redeclaring inline. Eliminates the structural-drift risk between
+// the per-file interface and the type used by tool-defs.ts; the wrapper
+// in buildErpaxMcpTools can now consume these tools without the
+// `as ErpaxMcpTool` casts added in BBBBBBBBBB-cut1.
+import type { ErpaxMcpTool } from '../tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
-
-interface ErpaxMcpTool {
-  readonly name: string
-  readonly description: string
-  readonly parameters: Record<string, z.ZodTypeAny>
-  readonly handler: (args: Record<string, unknown>, req: PayloadRequest) => Promise<{ content: Array<{ type: 'text'; text: string }> }>
-}
 
 const CATEGORY_ENUM = z.enum(['transient', 'permanent', 'validation', 'security', 'unknown'])
 
@@ -67,7 +66,8 @@ export function buildErrorTools(): ReadonlyArray<ErpaxMcpTool> {
         category: CATEGORY_ENUM.optional(),
         sealed: z.boolean().optional().describe('When true, the uuid carries the SEALED capability — use for critical errors at chain seal points.'),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const errorUuid = computeErrorUuid({
           info: {
             code: String(args.code),
@@ -92,7 +92,8 @@ export function buildErrorTools(): ReadonlyArray<ErpaxMcpTool> {
         category: CATEGORY_ENUM.optional(),
         sealed: z.boolean().optional(),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const result = wrapError({
           err: String(args.message),
           tenantId: String(args.tenantId),

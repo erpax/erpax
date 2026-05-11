@@ -14,22 +14,19 @@
  * @see /src/services/uuid-governance/index.ts
  */
 import { z } from 'zod'
-import type { PayloadRequest } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
+import type { ErpaxMcpTool } from '../tool-defs'
 import {
   establishGovernance, attestWithinGovernance, governanceHasCapability,
+  verifyGovernance,
 } from '@/services/uuid-governance'
+import type { ChainLink, LinkStore } from '@/services/uuid-chain'
+import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { SLOT_TAGS, CAPABILITIES, type SlotTag } from '@/services/uuid-format'
+import { assertTenantMatch } from './_guards'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
-
-interface ErpaxMcpTool {
-  readonly name: string
-  readonly description: string
-  readonly parameters: Record<string, z.ZodTypeAny>
-  readonly handler: (args: Record<string, unknown>, req: PayloadRequest) => Promise<{ content: Array<{ type: 'text'; text: string }> }>
-}
 
 const SLOT_ENUM = z.enum([
   'currency', 'locale', 'country', 'user', 'tenant', 'role',
@@ -54,6 +51,12 @@ const I18N: Record<string, LocalizedString> = {
     de: 'Bestätigt ein Event innerhalb eines Governance-Scopes durch Erweiterung der Chain. Liefert neues Link + aktualisierten Scope.',
     fr: 'Atteste un événement dans un scope de gouvernance en étendant sa chaîne. Retourne le nouveau maillon + scope mis à jour.',
   },
+  verify: {
+    en: 'Walk a governance scope end-to-end (Slice GGGGGGGGGG — 2026-05-11). Caller passes the scope + the full ChainLink[] from genesis to HEAD; the tool builds an in-memory LinkStore, walks the chain backwards recomputing every leaf-uuid (Law 60 verifier — O(N) cost), AND decodes the rootUuid to read back the declared capabilities (Law 61). Returns { ok, verifiedLeaves, headDepth, capabilities, firstFailureLeaf?, firstFailureReason? }. Asymmetric: verification O(N); tamper exponential per Law 55.',
+    bg: 'Обхожда scope за самоуправление от край до край. Подайте scope + всички ChainLink от genesis до HEAD; инструментът ги верифицира и декодира capabilities от rootUuid.',
+    de: 'Durchläuft einen Governance-Scope vollständig (Slice GGGGGGGGGG). Der Aufrufer übergibt Scope + ChainLink[] von Genesis bis HEAD; das Tool verifiziert die Kette und dekodiert die Capabilities aus der rootUuid.',
+    fr: 'Parcourt un scope de gouvernance de bout en bout (Slice GGGGGGGGGG). Le caller passe le scope + ChainLink[] de genesis à HEAD ; l\'outil vérifie la chaîne et décode les capacités depuis rootUuid.',
+  },
 }
 
 for (const [k, v] of Object.entries(I18N)) {
@@ -67,6 +70,7 @@ function slotTagFromName(name: keyof typeof SLOT_TAGS): SlotTag {
 export function buildGovernanceTools(): ReadonlyArray<ErpaxMcpTool> {
   const tEstablish = makeToolI18n('erpax.governance.establish')
   const tAttest = makeToolI18n('erpax.governance.attest')
+  const tVerify = makeToolI18n('erpax.governance.verify')
 
   return [
     {
@@ -80,7 +84,8 @@ export function buildGovernanceTools(): ReadonlyArray<ErpaxMcpTool> {
         schemaVersion: z.number().int().min(0).max(15).optional(),
         establishedAt: z.string().optional(),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const scope = establishGovernance({
           entity: args.entity,
           tenantId: String(args.tenantId),
@@ -116,11 +121,62 @@ export function buildGovernanceTools(): ReadonlyArray<ErpaxMcpTool> {
         attestation: z.unknown(),
         occurredAt: z.string().optional(),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        const scope = args.scope as { tenantId?: unknown } | undefined
+        assertTenantMatch(String(scope?.tenantId ?? ''), req)
         const result = attestWithinGovernance({
           scope: args.scope as never,
           attestation: args.attestation,
           occurredAt: args.occurredAt as string | undefined,
+        })
+        return json(result)
+      },
+    },
+    {
+      name: 'erpax.governance.verify',
+      description: tVerify.desc(I18N.verify!),
+      parameters: {
+        scope: z.object({
+          rootUuid: z.string(),
+          tenantId: z.string(),
+          headLeafUuid: z.string(),
+          chainDepth: z.number().int().min(0),
+          genesisLeafUuid: z.string(),
+          slotName: z.string(),
+          capabilities: z.number().int(),
+          schemaVersion: z.number().int(),
+          establishedAt: z.string(),
+        }),
+        links: z.array(z.object({
+          leafUuid: z.string(),
+          prevUuid: z.string(),
+          payloadUuid: z.string(),
+          depth: z.number().int().min(0),
+          occurredAt: z.string(),
+          tenantId: z.string(),
+        })).describe('Chain links from genesis (depth=0) to HEAD. Order is not required; the verifier walks by prevUuid lookup.'),
+        maxDepth: z.number().int().min(1).optional().describe('Optional verification cap — defaults to the scope.chainDepth.'),
+      },
+      async handler(args, req) {
+        const scope = args.scope as { tenantId?: unknown } | undefined
+        assertTenantMatch(String(scope?.tenantId ?? ''), req)
+        // Build an in-memory LinkStore. Caller-supplied; the tool itself
+        // doesn't reach into any backing collection. Same pattern as
+        // establish/attest — caller owns persistence; the tool computes.
+        const supplied = (args.links as ReadonlyArray<ChainLink<unknown>>) ?? []
+        const byUuid = new Map<string, ChainLink<unknown>>()
+        for (const link of supplied) {
+          byUuid.set(String(link.leafUuid), link)
+        }
+        const store: LinkStore<unknown> = {
+          async getLink(leafUuid) {
+            return byUuid.get(String(leafUuid as ContentUuid<ChainLink<unknown>>)) ?? null
+          },
+        }
+        const result = await verifyGovernance({
+          scope: args.scope as never,
+          store: store as never,
+          maxDepth: args.maxDepth as number | undefined,
         })
         return json(result)
       },

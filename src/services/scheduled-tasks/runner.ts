@@ -39,7 +39,7 @@ export function getScheduledTaskHandler(key: string): ScheduledTaskHandler | nul
 
 /**
  * Match a 5-field cron expression against a `Date` (minute precision).
- * Supports `*`, `*/N`, comma lists, and ranges. Designed for the
+ * Supports `*`, `*\/N`, comma lists, and ranges. Designed for the
  * Cloudflare cron syntax — does NOT support seconds (CF cron is minute
  * granularity).
  */

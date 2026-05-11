@@ -21,22 +21,15 @@
  * @see /src/services/safety-mode/index.ts
  */
 import { z } from 'zod'
-import type { PayloadRequest } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import {
   attackSurfaceReport, assertMinimumMode, getSafetyMode,
   type SafetyMode,
 } from '@/services/safety-mode'
+import type { ErpaxMcpTool } from '../tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
-
-interface ErpaxMcpTool {
-  readonly name: string
-  readonly description: string
-  readonly parameters: Record<string, z.ZodTypeAny>
-  readonly handler: (args: Record<string, unknown>, req: PayloadRequest) => Promise<{ content: Array<{ type: 'text'; text: string }> }>
-}
 
 const I18N: Record<string, LocalizedString> = {
   attackSurface: {

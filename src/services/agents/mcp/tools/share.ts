@@ -17,22 +17,16 @@
  * @see /src/services/uuid-share/index.ts
  */
 import { z } from 'zod'
-import type { PayloadRequest } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import {
   grantShare, checkShare, revokeShare, listShares, computeShareUuid,
   type AccessRole, type GranteeUuid, type TargetUuid, type ShareUuid,
 } from '@/services/uuid-share'
+import { assertTenantMatch, assertAdminOnTenant } from './_guards'
+import type { ErpaxMcpTool } from '../tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
-
-interface ErpaxMcpTool {
-  readonly name: string
-  readonly description: string
-  readonly parameters: Record<string, z.ZodTypeAny>
-  readonly handler: (args: Record<string, unknown>, req: PayloadRequest) => Promise<{ content: Array<{ type: 'text'; text: string }> }>
-}
 
 const ROLE_ENUM = z.enum(['read', 'write', 'sign', 'admin', 'audit'])
 
@@ -90,7 +84,8 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
         accessRole: ROLE_ENUM,
         tenantId: z.string(),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const shareUuid = computeShareUuid({
           granteeUuid: args.granteeUuid as GranteeUuid<unknown>,
           targetUuid: args.targetUuid as TargetUuid<unknown>,
@@ -112,6 +107,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
         grantedByUserId: z.string().optional(),
       },
       async handler(args, req) {
+        assertAdminOnTenant(String(args.tenantId), req)
         const out = await grantShare(
           {
             tenantId: String(args.tenantId),
@@ -136,6 +132,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
         requiredRole: ROLE_ENUM,
       },
       async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const result = await checkShare(
           {
             tenantId: String(args.tenantId),
@@ -158,6 +155,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
         reason: z.string().optional(),
       },
       async handler(args, req) {
+        assertAdminOnTenant(String(args.tenantId), req)
         const result = await revokeShare(
           {
             tenantId: String(args.tenantId),
@@ -181,6 +179,7 @@ export function buildShareTools(): ReadonlyArray<ErpaxMcpTool> {
         limit: z.number().int().min(1).max(500).optional(),
       },
       async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const list = await listShares(
           {
             tenantId: String(args.tenantId),

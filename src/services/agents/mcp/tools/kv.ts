@@ -22,22 +22,16 @@
  * @see /src/services/uuid-kv/index.ts (the runtime surface this exposes)
  */
 import { z } from 'zod'
-import type { PayloadRequest } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import {
   computeKvBindingUuid, resolveKeyUuid, UuidMap, toUuidMap,
 } from '@/services/uuid-kv'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
+import { assertTenantMatch } from './_guards'
+import type { ErpaxMcpTool } from '../tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
-
-interface ErpaxMcpTool {
-  readonly name: string
-  readonly description: string
-  readonly parameters: Record<string, z.ZodTypeAny>
-  readonly handler: (args: Record<string, unknown>, req: PayloadRequest) => Promise<{ content: Array<{ type: 'text'; text: string }> }>
-}
 
 const I18N: Record<string, LocalizedString> = {
   bindingUuid: {
@@ -78,7 +72,8 @@ export function buildKvTools(): ReadonlyArray<ErpaxMcpTool> {
         valueUuid: z.string().describe('Content-uuid of the value'),
         tenantId: z.string().describe('Tenant namespace (use "platform" for cross-tenant)'),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const bindingUuid = computeKvBindingUuid({
           keyUuid: args.keyUuid as ContentUuid<unknown>,
           valueUuid: args.valueUuid as ContentUuid<unknown>,
@@ -95,7 +90,8 @@ export function buildKvTools(): ReadonlyArray<ErpaxMcpTool> {
         key: z.string().describe('Raw string key within the slot'),
         tenantId: z.string().describe('Tenant namespace'),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const keyUuid = resolveKeyUuid({
           slot: String(args.slot),
           key: String(args.key),
@@ -112,7 +108,8 @@ export function buildKvTools(): ReadonlyArray<ErpaxMcpTool> {
         entries: z.array(z.tuple([z.string(), z.unknown()])).describe('Array of [key, value] pairs to materialise into the UuidMap'),
         tenantId: z.string().describe('Tenant namespace'),
       },
-      async handler(args, _req) {
+      async handler(args, req) {
+        assertTenantMatch(String(args.tenantId), req)
         const entries = args.entries as Array<readonly [string, unknown]>
         const m = toUuidMap({
           slot: String(args.slot),

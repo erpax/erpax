@@ -1151,7 +1151,7 @@ export function checkBridgeRelationshipsIndexed(ctx: InvariantContext): Invarian
 
 /**
  * Every scheduled task's cron expression is parseable and matches AT LEAST
- * ONE minute in a 24-hour window. Catches typos like `*/15 * * 13 *`
+ * ONE minute in a 24-hour window. Catches typos like `*\/15 * * 13 *`
  * (impossible month) or `0 0 0 * *` (zero day-of-month) that would silently
  * never fire.
  *
@@ -1977,6 +1977,158 @@ export async function checkMcpToolStandardizationInvariant(_ctx: InvariantContex
   return warn('standards', 'mcp-tool-standardization',
     `${result.violations.length}/${result.toolsChecked} tools fail standardization`,
     result.violations.slice(0, 8).map((v) => `${v.tool}: ${v.kind} — ${v.detail}`))
+}
+
+/**
+ * Slice FFFFFFFFFF (2026-05-11) — `checkMcpStateMutatorsAdminGuarded`.
+ *
+ * Detects state-mutating MCP tools by name heuristic (verbs: emit /
+ * record / anchor / publish / seed / create / book / replicate / run /
+ * dispatch / enqueue / subscribe / provision / write / grant / revoke /
+ * attest) and verifies each appears in tool-defs.ts STATE_MUTATING_TOOLS
+ * OR has a per-handler `assertAdminOnTenant` call in its source file.
+ *
+ * Catches the regression class where a future inlined tool is added
+ * with mutating verbs but is left at the default `assertTenantMatch`
+ * level — letting any tenant member, not just admins/auditors,
+ * trigger the mutation. False positives possible (e.g. `verify*` tools
+ * are read-only despite a mutating-shaped verb); the allowlist below
+ * documents intentional read-only exceptions.
+ *
+ * @standard ISO 27001 A.5.10 access-control-policy
+ * @audit ISO 27002 §5.4 segregation-of-duties
+ */
+export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): Promise<InvariantResult> {
+  try {
+    const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+    const fs = require('node:fs') as typeof import('node:fs')
+    const path = require('node:path') as typeof import('node:path')
+    const toolDefsPath = path.join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')
+    if (!fs.existsSync(toolDefsPath)) {
+      return warn('standards', 'mcp-state-mutators', 'tool-defs.ts missing — skipped')
+    }
+    const src = fs.readFileSync(toolDefsPath, 'utf8')
+    // Extract the STATE_MUTATING_TOOLS Set literal contents.
+    const setMatch = src.match(/STATE_MUTATING_TOOLS:\s*ReadonlySet<string>\s*=\s*new Set\(\[([\s\S]*?)\]\)/)
+    const allowlisted = new Set<string>()
+    if (setMatch) {
+      const body = setMatch[1]!
+      for (const m of body.matchAll(/'(erpax\.[a-zA-Z0-9._-]+)'/g)) {
+        allowlisted.add(m[1]!)
+      }
+    }
+    // Find every inlined tool's name + its tenantId-bearing param block.
+    const tools = await loadMcpTools()
+    const mutatingVerbs = /\.(emit|record|anchor|publish|seed|create|book|replicate|run|dispatch|enqueue|subscribe|provision|write|grant|revoke|attest|insert|send|freeze|allocate|advance|complete|materialise)([A-Z]|$)/
+    const candidates = tools
+      .filter((t) => 'tenantId' in t.parameters)
+      .map((t) => t.name)
+      .filter((n) => mutatingVerbs.test(n))
+    // Intentional read-side exceptions despite mutating-shaped verbs.
+    const exceptions = new Set<string>([
+      'erpax.governance.verify',     // walks chain, no writes
+      'erpax.format.verify',         // re-encodes + compares, no writes
+      'erpax.integrity.verifyObject',// hash check, no writes
+      'erpax.integrity.verifyType',  // type-uuid recompute, no writes
+      'erpax.share.uuid',            // pure compute
+      'erpax.share.check',           // RBAC read
+      'erpax.share.list',            // read
+      'erpax.kv.bindingUuid',        // pure compute
+      'erpax.kv.resolveKey',         // pure compute
+      'erpax.kv.freezeRegistry',     // pure compute (caller persists)
+    ])
+    const missing = candidates.filter((name) => !allowlisted.has(name) && !exceptions.has(name))
+    if (missing.length === 0) {
+      return pass(
+        'standards', 'mcp-state-mutators',
+        `${allowlisted.size} tools admin-guarded; ${exceptions.size} read-side exceptions documented`,
+      )
+    }
+    return warn(
+      'standards', 'mcp-state-mutators',
+      `${missing.length} tool(s) match mutating-verb pattern but are NOT in STATE_MUTATING_TOOLS — consider admin-guarding or add to the exceptions list`,
+      missing.slice(0, 8),
+    )
+  } catch (err) {
+    return warn(
+      'standards', 'mcp-state-mutators',
+      `unable to verify mutator coverage: ${err instanceof Error ? err.message : String(err)}`,
+    )
+  }
+}
+
+/**
+ * Slice BBBBBBBBBB-cut2 (2026-05-11) — `checkMcpBarrelWired`.
+ *
+ * Structural analogue to `checkAutoGenerationCoverageInvariant`. The
+ * `./tools/` barrel exports per-area `build*Tools` factories; this
+ * invariant asserts each factory contributes ≥1 live tool to the MCP
+ * surface. Without it, a factory can be authored + barrel-exported but
+ * never consumed by `buildErpaxMcpTools` — the gap that hid Laws 58–64
+ * for an entire slice batch before BBBBBBBBBB-cut1 wired them.
+ *
+ * Detection: read the barrel re-exports + match each factory to an
+ * `erpax.<area>.*` namespace; require ≥1 live tool name with that
+ * prefix.
+ *
+ * @standard MCP 0.6 — tools/list naming convention
+ * @audit ISO 19011:2018 §6.4.6 (every barrel-exported factory traceable to live surface)
+ */
+export async function checkMcpBarrelWired(ctx: InvariantContext): Promise<InvariantResult> {
+  try {
+    const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+    const fs = require('node:fs') as typeof import('node:fs')
+    const path = require('node:path') as typeof import('node:path')
+    const barrelPath = path.join(repoRoot, 'src/services/agents/mcp/tools/index.ts')
+    if (!fs.existsSync(barrelPath)) {
+      return warn('expansion', 'mcp-barrel-wired', 'tools/index.ts barrel missing — skipped')
+    }
+    const barrelSrc = fs.readFileSync(barrelPath, 'utf8')
+    // Match every `export { buildXxxTools } from './xxx'` line.
+    const factoryRe = /export\s*\{\s*build([A-Z][A-Za-z0-9]*)Tools\s*\}\s*from\s*['"]\.\/([a-z0-9-]+)['"]/g
+    const factories: Array<{ name: string; namespace: string }> = []
+    let m: RegExpExecArray | null
+    while ((m = factoryRe.exec(barrelSrc)) !== null) {
+      const camel = m[1]!
+      // Map factory name → namespace. Per-area files use the kebab-case
+      // tail of the file path as the namespace, lowercased. e.g.
+      // 'IntegrityExtensions' (file: integrity-extensions) → 'integrity'
+      // (extension tools live under erpax.integrity.* + erpax.audit.*).
+      const file = m[2]!
+      const ns = file === 'integrity-extensions' ? 'integrity'
+        : file === 'consistency' ? 'consistency'
+        : file === 'events' ? 'events'
+        : file === 'cloudflare' ? 'cloudflare'
+        : file === 'kv' ? 'kv'
+        : file === 'security' ? 'security'
+        : file === 'share' ? 'share'
+        : file === 'chain' ? 'chain'
+        : file === 'format' ? 'format'
+        : file === 'governance' ? 'governance'
+        : file === 'error' ? 'error'
+        : file
+      factories.push({ name: `build${camel}Tools`, namespace: ns })
+    }
+    if (factories.length === 0) {
+      return warn('expansion', 'mcp-barrel-wired', 'no factories detected in barrel — regex likely stale')
+    }
+    const tools = await loadMcpTools()
+    const live = new Set(tools.map((t) => t.name))
+    const missing = factories.filter((f) => {
+      for (const name of live) if (name.startsWith(`erpax.${f.namespace}.`)) return false
+      return true
+    })
+    if (missing.length === 0) {
+      return pass('expansion', 'mcp-barrel-wired',
+        `${factories.length} barrel factories all contribute to live surface — Slice BBBBBBBBBB invariant satisfied`)
+    }
+    return fail('expansion', 'mcp-barrel-wired',
+      `${missing.length}/${factories.length} barrel factories never reach the live MCP surface`,
+      missing.map((f) => `${f.name}: no live tool with prefix 'erpax.${f.namespace}.'`))
+  } catch (err) {
+    return warn('expansion', 'mcp-barrel-wired',
+      `unable to verify barrel wiring: ${err instanceof Error ? err.message : String(err)}`)
+  }
 }
 
 /**

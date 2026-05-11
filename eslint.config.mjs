@@ -101,6 +101,13 @@ const eslintConfig = defineConfig([
     'next-env.d.ts',
     'src/payload-types.ts',
     'src/payload-generated-schema.ts',
+    // Playwright + auto-generated test artefacts — minified third-party bundles
+    // shipped inside trace viewers. Never hand-authored; lint rules don't apply.
+    'tests/evidence/_report/**',
+    'tests/**/playwright-report/**',
+    'tests/**/test-results/**',
+    'playwright-report/**',
+    'test-results/**',
   ]),
 ])
 
