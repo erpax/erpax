@@ -17,3 +17,10 @@
 export { buildConsistencyTools } from './consistency'
 export { buildEventsTools } from './events'
 export { buildCloudflareTools } from './cloudflare'
+// Slice QQQQQQQQQ-cut1 (2026-05-11) — every key-value is uuid → uuid.
+// MCP-side surfacing of the new services so external clients
+// (Claude Code, IDE agents, federation peers) compute the same uuids
+// as the in-process surface. Per user 'implement in mcp and erpax in
+// sync'.
+export { buildKvTools } from './kv'
+export { buildIntegrityExtensionTools } from './integrity-extensions'
