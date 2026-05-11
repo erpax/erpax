@@ -34,7 +34,7 @@ interface ErpaxMcpTool {
 const SLOT_ENUM = z.enum([
   'currency', 'locale', 'country', 'user', 'tenant', 'role',
   'chainLeaf', 'share', 'auditEvent', 'query', 'rateQuote',
-  'signature', 'envelope', 'kvBinding', 'collectionRow', 'reserved',
+  'signature', 'envelope', 'kvBinding', 'collectionRow', 'error',
 ])
 const CAP_ENUM = z.enum([
   'SIGNED', 'SEALED', 'ENCRYPTED', 'FEDERATED',

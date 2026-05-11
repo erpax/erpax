@@ -66,7 +66,15 @@
 
 import { createHash } from 'node:crypto'
 
-/** Slot tags — 4 bits, 16 categories. */
+/**
+ * Slot tags — 4 bits, 16 categories.
+ *
+ * Slice AAAAAAAAAA-cut1 (2026-05-11) — `error` (0xf) replaces the
+ * placeholder `reserved` slot. Per user "error handling is also
+ * part of the uuid": errors are first-class structured uuid entities
+ * that flow through the chain alongside auditEvents and chainLeaves.
+ * Conservation Law 64.
+ */
 export const SLOT_TAGS = {
   currency:        0x0,
   locale:          0x1,
@@ -83,7 +91,7 @@ export const SLOT_TAGS = {
   envelope:        0xc,
   kvBinding:       0xd,
   collectionRow:   0xe,
-  reserved:        0xf,
+  error:           0xf,   // Slice AAAAAAAAAA — was 'reserved'
 } as const
 
 export type SlotTag = (typeof SLOT_TAGS)[keyof typeof SLOT_TAGS]
@@ -122,7 +130,7 @@ function slotNameFor(tag: SlotTag): SlotName {
   for (const [name, t] of Object.entries(SLOT_TAGS)) {
     if (t === tag) return name as SlotName
   }
-  return 'reserved'
+  return 'error'
 }
 
 /** Hex helpers for the 16-byte buffer. */

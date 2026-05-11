@@ -38,7 +38,7 @@ interface ErpaxMcpTool {
 const SLOT_ENUM = z.enum([
   'currency', 'locale', 'country', 'user', 'tenant', 'role',
   'chainLeaf', 'share', 'auditEvent', 'query', 'rateQuote',
-  'signature', 'envelope', 'kvBinding', 'collectionRow', 'reserved',
+  'signature', 'envelope', 'kvBinding', 'collectionRow', 'error',
 ])
 
 const I18N: Record<string, LocalizedString> = {

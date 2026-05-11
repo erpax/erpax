@@ -51,7 +51,7 @@ export const SLOT_EXPECTED_CAPABILITIES: ReadonlyMap<SlotName, ReadonlyArray<key
   ['country',    []],
   ['query',      []],
   ['rateQuote',  []],
-  ['reserved',   []],
+  ['error',      ['CHAINED']],
 ])
 
 /** One uuid in the sample with optional metadata about what it SHOULD be. */

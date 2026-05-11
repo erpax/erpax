@@ -46,3 +46,8 @@ export { buildFormatTools } from './format'
 // erpax.governance.{establish, attest} surface Conservation Law 63:
 // any entity with a uuid can be self-governing without central authority.
 export { buildGovernanceTools } from './governance'
+// Slice AAAAAAAAAA-cut1 (2026-05-11) — errors are first-class uuids.
+// erpax.error.{compute, wrap} surface Conservation Law 64: every error
+// in the platform has a deterministic structured uuid; federation peers
+// and replay tools verify error histories by uuid equality.
+export { buildErrorTools } from './error'
