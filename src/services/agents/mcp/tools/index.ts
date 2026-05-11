@@ -33,3 +33,7 @@ export { buildSecurityTools } from './security'
 // erpax.share.{uuid,grant,check,revoke,list} — every grant is a
 // chain-linked uuid binding; sign/admin grants are sealed.
 export { buildShareTools } from './share'
+// Slice TTTTTTTTT-cut1 (2026-05-11) — uuid:uuid IS the blockchain leaf.
+// erpax.chain.{computeLeafUuid, forgeGenesis, forgeLink, verifyOne}
+// surfaces Conservation Law 60: chains are recursive uuid bindings.
+export { buildChainTools } from './chain'
