@@ -39,7 +39,13 @@
  */
 
 import type { Field, CollectionBeforeChangeHook } from 'payload'
-import { computeContentUuid } from './content-uuid'
+import { computeContentUuid, stripNonContentFields } from './content-uuid'
+// Slice ZZZZZZZZZ-cut1 (2026-05-11) — collection rows now carry
+// structured uuidv8 (Law 61) with slot=collectionRow + TAMPER_PROOF
+// capability. Every accounting collection's `uuid` field
+// self-describes; coverage (Law 62) rises platform-wide after this
+// edit because every row written via the factory contributes.
+import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/services/uuid-format'
 
 /**
  * Mutable Set of collection slugs that have opted into Law 8.
@@ -134,8 +140,25 @@ export function tamperProofBeforeChangeHook(collectionSlug: string): CollectionB
       : { ...(data as Record<string, unknown>) }
 
     const tenantId = resolveTenantId(merged)
-    const uuid = computeContentUuid(merged, tenantId)
+    // Slice ZZZZZZZZZ-cut1 — strip storage-managed fields (was
+    // implicit in computeContentUuid's stripNonContentFields call)
+    // BEFORE emitting the structured uuidv8 so the hash input is
+    // the row's true content, not the old uuid + storage timestamps.
+    const content = stripNonContentFields(merged)
+    const uuid = encodeStructured({
+      slotTag: SLOT_TAGS.collectionRow,
+      capabilities: CAPABILITIES.TAMPER_PROOF,
+      schemaVersion: 1,
+      content,
+      tenantId,
+    })
 
     return { ...(data as Record<string, unknown>), uuid }
   }
 }
+
+// `computeContentUuid` is imported but no longer called directly in
+// this hook — kept for backwards compatibility with other callers of
+// the integrity barrel. The verifier (`verifyContentUuid`) handles
+// both v5 (legacy) and v8 (post-Slice ZZZZZZZZZ) forms.
+void computeContentUuid

@@ -10,7 +10,8 @@ import {
   isTamperProofCollection,
   registerTamperProofCollection,
 } from './tamper-proof-uuid-field'
-import { computeContentUuid, verifyContentUuid } from './content-uuid'
+import { verifyContentUuid } from './content-uuid'
+import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/services/uuid-format'
 
 beforeEach(() => {
   TAMPER_PROOF_COLLECTIONS_REGISTRY.clear()
@@ -47,14 +48,25 @@ describe('tamperProofUuidField', () => {
 })
 
 describe('tamperProofBeforeChangeHook — create', () => {
-  it('stamps a content-derived uuid on initial create', async () => {
+  it('stamps a structured uuidv8 (slot=collectionRow + TAMPER_PROOF) on initial create', async () => {
     const hook = tamperProofBeforeChangeHook('invoices')
     const data = { tenant: 't1', amount: 100, currency: 'EUR' }
     const result = await hook({
       data, operation: 'create', req: {} as never, collection: {} as never,
     } as never)
-    const expected = computeContentUuid({ tenant: 't1', amount: 100, currency: 'EUR' }, 't1')
+    // Slice ZZZZZZZZZ-cut1 — expected uuid is structured uuidv8 with
+    // slot=collectionRow + TAMPER_PROOF capability, content =
+    // stripped(data), tenant from the row's tenant field.
+    const expected = encodeStructured({
+      slotTag: SLOT_TAGS.collectionRow,
+      capabilities: CAPABILITIES.TAMPER_PROOF,
+      schemaVersion: 1,
+      content: { tenant: 't1', amount: 100, currency: 'EUR' },
+      tenantId: 't1',
+    })
     expect((result as { uuid: string }).uuid).toBe(expected)
+    // Sanity: it's v8, not v5.
+    expect((result as { uuid: string }).uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
   })
 
   it('verifies — verifyContentUuid passes on the stamped row', async () => {
@@ -77,14 +89,20 @@ describe('tamperProofBeforeChangeHook — create', () => {
 })
 
 describe('tamperProofBeforeChangeHook — update', () => {
-  it('recomputes uuid from the MERGED post-update doc', async () => {
+  it('recomputes uuid from the MERGED post-update doc (structured uuidv8)', async () => {
     const hook = tamperProofBeforeChangeHook('invoices')
     const original = { tenant: 't1', amount: 100, currency: 'EUR', uuid: 'old-uuid' }
     const result = await hook({
       data: { amount: 250 }, originalDoc: original,
       operation: 'update', req: {} as never, collection: {} as never,
     } as never) as { uuid: string }
-    const expected = computeContentUuid({ tenant: 't1', amount: 250, currency: 'EUR' }, 't1')
+    const expected = encodeStructured({
+      slotTag: SLOT_TAGS.collectionRow,
+      capabilities: CAPABILITIES.TAMPER_PROOF,
+      schemaVersion: 1,
+      content: { tenant: 't1', amount: 250, currency: 'EUR' },
+      tenantId: 't1',
+    })
     expect(result.uuid).toBe(expected)
   })
 

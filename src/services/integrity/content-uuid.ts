@@ -174,8 +174,33 @@ export function verifyContentUuid<T extends Record<string, unknown>>(
   obj: T & { uuid?: string },
   tenantId: string,
 ): { ok: true } | { ok: false; expected: string; actual: string | undefined } {
-  const expected = computeContentUuid(obj, tenantId)
   const actual = obj.uuid
+  if (typeof actual !== 'string') {
+    const expected = computeContentUuid(obj, tenantId)
+    return { ok: false, expected, actual }
+  }
+  // Slice ZZZZZZZZZ-cut1 (2026-05-11) — collection rows now emit RFC
+  // 9562 uuidv8 (Law 61). Position 14 in canonical 8-4-4-4-12 is the
+  // version nibble. v8 → recompute via encodeStructured; v5 → legacy
+  // path. Rows persisted under either format still verify correctly.
+  if (actual.charAt(14) === '8') {
+    // Lazy require avoids the uuid-format → content-uuid cycle.
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { encodeStructured, SLOT_TAGS, CAPABILITIES } =
+      require('@/services/uuid-format') as typeof import('@/services/uuid-format')
+    const content = stripNonContentFields(obj)
+    const expected = encodeStructured({
+      slotTag: SLOT_TAGS.collectionRow,
+      capabilities: CAPABILITIES.TAMPER_PROOF,
+      schemaVersion: 1,
+      content,
+      tenantId,
+    })
+    if (actual === expected) return { ok: true }
+    return { ok: false, expected, actual }
+  }
+  // Legacy uuidv5 path preserved.
+  const expected = computeContentUuid(obj, tenantId)
   if (actual === expected) return { ok: true }
   return { ok: false, expected, actual }
 }
