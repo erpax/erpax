@@ -56,7 +56,14 @@ export const MetaSkillAgent: DomainAgent = {
       const { buildErpaxMcpTools } = await import('@/services/agents/mcp/tool-defs')
       const { agentRegistry } = await import('@/services/agents/bootstrap')
 
-      const invariantCtx = { payload: ctx.payload, repoRoot: process.cwd() }
+      // process.cwd() is Node-only; CF Workers don't expose it. Guard
+      // so the meta-skill cron works in both runtimes (the boot suite
+      // sees the value when run locally; production CF Worker leaves
+      // repoRoot undefined → checks fall back to spec corpus loading
+      // via the lazily-imported extractCorpus(...) which itself falls
+      // back when fs is unavailable).
+      const repoRoot = typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : undefined
+      const invariantCtx = { payload: ctx.payload, repoRoot }
       const suite = await runAllInvariants(invariantCtx)
       const results = [...suite.fails, ...suite.warns]
       const summary = await processInvariantResults({ results, mcp: ctx.mcp })
@@ -78,7 +85,12 @@ export const MetaSkillAgent: DomainAgent = {
       // Slice OOOOOOOO — publish DRY-proof bundle (Law 44) once per
       // sweep; emit Trinity rollup over the same suite (no second run).
       const tools = buildErpaxMcpTools(agentRegistry)
-      const origin = process.env.PLATFORM_ORIGIN ?? 'https://erpax.local'
+      // process.env is gated by runtime — CF Workers replace it via
+      // wrangler bindings; Node + Vitest read it directly. Optional
+      // chain + typeof guard covers both.
+      const origin =
+        (typeof process !== 'undefined' && process.env?.PLATFORM_ORIGIN) ||
+        'https://erpax.local'
       const bundle = await publishDryProofBundle({ invariantCtx, tools, origin })
       effects.push({
         kind: 'emit',

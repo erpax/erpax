@@ -35,7 +35,7 @@
  * @audit ISO 19011:2018 §6.4.6 (every test result audit-trailed)
  */
 
-import { z, type ZodTypeAny, type ZodRawShape } from 'zod'
+import type { ZodTypeAny, ZodRawShape } from 'zod'
 import type { ErpaxMcpTool } from './tool-defs'
 
 export type SelfTestVerdict = 'pass' | 'skip' | 'fail'
