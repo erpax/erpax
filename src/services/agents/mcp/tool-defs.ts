@@ -23,6 +23,7 @@ import {
 import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/services/integrity'
+import { publishSelf, bootFromFederation, type GenomePublication } from '@/services/cloning'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -179,6 +180,44 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       async handler({ event }) {
         // Wired in EEEEE once FinanceAgent ships (full round-trip test).
         return text(`(stub) dispatch event=${(event as { id: string }).id}`)
+      },
+    },
+    {
+      name: 'erpax.platform.publishSelf',
+      description: 'Conservation Laws 23 + 24 (HHHHHH): collect this ERPax instance\'s genome (spec corpus + chains + agents + roles + MCP tools + standards) as a deterministic content-addressed bundle. Returns GenomePublication with bundleUuid, scope, sourceDid, the bundle itself, and (when sign fn configured) a signature. The bundle can be ingested by any blank ERPax instance via erpax.platform.bootFromFederation to produce a verified bit-identical clone.',
+      parameters: {
+        sourceDid: z.string(),
+        scope: z.enum(['genome', 'genome+state']),
+        tenantId: z.string().optional(),
+      },
+      async handler({ sourceDid, scope, tenantId }) {
+        const pub = publishSelf({
+          tenantId: (tenantId as string | undefined) ?? 'erpax-self',
+          sourceDid: sourceDid as string,
+          scope: scope as 'genome' | 'genome+state',
+        })
+        return json(pub)
+      },
+    },
+    {
+      name: 'erpax.platform.bootFromFederation',
+      description: 'Conservation Law 24: ingest a published genome (from erpax.platform.publishSelf) into this clone instance. Verifies Law 24 checkCloneIntegrity (uuid recompute), runs all 23 invariants under the new genome, activates the erpax-platform role on the clone\'s self-tenant. Returns { cloneDid, bootedAt, divergencePoint } on success. Sandbox mode: validate the genome without mutating registries (used in tests + dry-runs).',
+      parameters: {
+        publication: z.record(z.unknown()),
+        cloneTenantId: z.string(),
+        cloneDid: z.string(),
+        sandbox: z.boolean().optional(),
+        requireScope: z.enum(['genome', 'genome+state']).optional(),
+      },
+      async handler({ publication, cloneTenantId, cloneDid, sandbox, requireScope }) {
+        const result = await bootFromFederation({
+          publication: publication as unknown as GenomePublication,
+          cloneTenantId: cloneTenantId as string,
+          cloneDid: cloneDid as string,
+          sandbox: sandbox as boolean | undefined,
+          requireScope: requireScope as 'genome' | 'genome+state' | undefined,
+        })
+        return json(result)
       },
     },
     {

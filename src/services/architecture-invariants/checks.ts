@@ -21,6 +21,7 @@ import { ROLES_REGISTRY, ROLE_IDS } from '@/access/roles-registry'
 import { agentRegistry } from '@/services/agents/bootstrap'
 import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/services/integrity'
+import { collectGenome, computeGenomeUuid } from '@/services/cloning'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1257,6 +1258,42 @@ export async function checkReferentialHarmony(ctx: InvariantContext): Promise<In
   return warn('entropy', 'referential-harmony',
     `${dangling.length} uuid reference(s) unresolved (referenced row's content has changed or row is missing)`,
     dangling.slice(0, 8).map((d) => `${d.owningCollection}#${d.owningId}.${d.fieldPath}→${d.targetCollection}@${d.uuid.slice(0, 8)}`))
+}
+
+/**
+ * Conservation Law 24 — Clone integrity / genome self-coherence.
+ * Slice HHHHHH (2026-05-11). Per spec §0d.
+ *
+ * The platform must be able to publish its own genome AND recompute
+ * the same content-uuid from the bundle. If `computeGenomeUuid(bundle)`
+ * is non-deterministic (e.g. a non-canonicalizable field slipped in),
+ * cloning would silently break — clones could never verify they're
+ * bit-identical to the source.
+ *
+ * Probe: collect the genome twice, hash twice; the two uuids must match.
+ *
+ * @standard RFC 4122 §4.3 + RFC 8785
+ * @audit ISO 19011:2018 §6.4.6 (clone-integrity provable at build time)
+ */
+export function checkGenomeDeterministic(_ctx: InvariantContext): InvariantResult {
+  try {
+    const tenantId = 'erpax-self-coherence-probe'
+    const b1 = collectGenome({ tenantId })
+    const b2 = collectGenome({ tenantId })
+    const u1 = computeGenomeUuid(b1, tenantId)
+    const u2 = computeGenomeUuid(b2, tenantId)
+    if (u1 === u2) {
+      return pass('entropy', 'genome-deterministic',
+        `genome bundle hashes deterministically — clones can verify (uuid=${u1.slice(0, 8)}…)`)
+    }
+    return fail('entropy', 'genome-deterministic',
+      `genome bundle hashes differently across runs (${u1} vs ${u2}) — cloning would silently break`,
+      [u1, u2])
+  } catch (err) {
+    return warn('entropy', 'genome-deterministic',
+      `genome collection threw: ${(err as Error).message}`,
+      [(err as Error).stack ?? ''])
+  }
 }
 
 export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult {
