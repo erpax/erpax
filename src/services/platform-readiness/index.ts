@@ -26,6 +26,11 @@ import { supportedLocales } from '@/i18n'
 import { TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY } from '@/services/integrity'
 import { SHADCN_SURFACE_MAP } from '@/services/website/shadcn-components'
 import { listBackends } from '@/services/storage-independence'
+// Slice PPPPPPPP — comprehensive observability surface.
+import { TRINITY, rollUpToTrinity } from '@/services/architecture-invariants/trinity'
+import { getCurrentProofBundle } from '@/services/proof/dry-proof'
+import { checkPwaUuidIntegrity, totalCachedBytes } from '@/services/pwa'
+import { DIMENSIONAL_PLUGINS } from '@/services/plugins/dimensions'
 
 export interface ToolCatalogEntry {
   readonly name: string
@@ -62,9 +67,32 @@ export interface ReadinessManifest {
     readonly uuidRefRegistry: number
     readonly siteSurfaces: number
     readonly storageBackends: number
+    /** Slice PPPPPPPP additions. */
+    readonly dimensions: number
+    readonly trinityLaws: 3
   }
   readonly readyToBuild: ReadonlyArray<{ capability: string; available: boolean; via: string }>
   readonly toolCatalog: ReadonlyArray<ToolCatalogEntry>
+  /** Slice PPPPPPPP — Trinity rollup over current law passes (best-effort). */
+  readonly trinity?: ReadonlyArray<{
+    law: string; title: string; dimension: string;
+    priorLawsCovered: number; priorLawsTotal: number; note: string
+  }>
+  /** Slice PPPPPPPP — current DRY-proof bundle status (Law 44). */
+  readonly dryProof?: {
+    published: boolean; contentUuid?: string; generatedAt?: string;
+    publicUrl?: string; ageHours?: number
+  }
+  /** Slice PPPPPPPP — PWA cache + queue snapshot (Law 52). */
+  readonly pwa?: {
+    cachedAssets: number; queuedMutations: number;
+    totalCachedBytes: number; integrityOk: boolean
+  }
+  /** Slice PPPPPPPP — dimensional taxonomy snapshot (Law 49). */
+  readonly dimensions?: ReadonlyArray<{
+    id: string; trinityLaw: string;
+    canonicalCount: number; newCount: number
+  }>
 }
 
 /**
@@ -83,16 +111,43 @@ export function buildReadinessManifest(args: {
   const toolAreas = [...areas.entries()].map(([area, count]) => ({ area, count })).sort((a, b) => b.count - a.count)
   const chains = Object.values(BUSINESS_CHAINS)
   const chainSteps = chains.reduce((sum, c) => sum + c.steps.length, 0)
+
+  // Slice PPPPPPPP — extend the manifest with the now-richer telemetry.
+  // All modules statically imported above; the cycle through dry-proof
+  // is broken by the lazy import in architecture-invariants/checks.ts.
+  const allLawNums = TRINITY.flatMap((t) => t.subsumes.map((s) => s.num))
+  const trinity = rollUpToTrinity(allLawNums)
+  const proofBundle = getCurrentProofBundle()
+  const dryProof: ReadinessManifest['dryProof'] = proofBundle
+    ? {
+        published: true, contentUuid: proofBundle.contentUuid,
+        generatedAt: proofBundle.generatedAt, publicUrl: proofBundle.publicUrl,
+        ageHours: Number(((Date.now() - new Date(proofBundle.generatedAt).getTime()) / 3_600_000).toFixed(2)),
+      }
+    : { published: false }
+  const pwaIntegrity = checkPwaUuidIntegrity()
+  const pwa: ReadinessManifest['pwa'] = {
+    cachedAssets: pwaIntegrity.cachedAssets,
+    queuedMutations: pwaIntegrity.queuedMutations,
+    totalCachedBytes: totalCachedBytes(),
+    integrityOk: pwaIntegrity.ok,
+  }
+  const dimensionsSnapshot: ReadinessManifest['dimensions'] = DIMENSIONAL_PLUGINS.map((d) => ({
+    id: d.id, trinityLaw: d.trinityLaw,
+    canonicalCount: d.canonicalCollections.length,
+    newCount: d.newCollections.length,
+  }))
+
   return {
     generatedAt: new Date().toISOString(),
-    version: 'slice-VVVVVV (2026-05-11)',
+    version: 'slice-PPPPPPPP (2026-05-11)',
     counts: {
       mcpTools: args.tools.length,
       toolAreas,
       agents: args.registry.all().length,
       chains: chains.length,
       chainSteps,
-      conservationLaws: args.conservationLawCount ?? 36,
+      conservationLaws: args.conservationLawCount ?? 52,
       tenantRoleProfiles: listTenantRoles().length,
       locales: supportedLocales.length,
       standardsFamilies: 7,                                       // §0g
@@ -100,7 +155,10 @@ export function buildReadinessManifest(args: {
       uuidRefRegistry: UUID_REF_REGISTRY.length,
       siteSurfaces: SHADCN_SURFACE_MAP.length,
       storageBackends: listBackends().length,
+      dimensions: dimensionsSnapshot?.length ?? 10,
+      trinityLaws: 3 as const,
     },
+    trinity, dryProof, pwa, dimensions: dimensionsSnapshot,
     readyToBuild: [
       { capability: 'discover-tools',     available: true, via: 'erpax.platform.toolCatalog' },
       { capability: 'browse-spec-corpus', available: true, via: 'erpax.spec.getCollection / getChainRegistry' },
@@ -116,6 +174,14 @@ export function buildReadinessManifest(args: {
       { capability: 'self-deploy',        available: true, via: 'erpax.commerce.{checkout, provisionInstance} (Laws 25-26)' },
       { capability: 'self-evolve',        available: true, via: 'erpax.proposals.list (Law 22 — meta-skill)' },
       { capability: 'multilingual',       available: true, via: `${supportedLocales.length} locales + erpax.i18n.*` },
+      // Slice PPPPPPPP additions:
+      { capability: 'serve-pwa',          available: true, via: 'erpax.pwa.* (Law 52)' },
+      { capability: 'publish-dry-proof',  available: true, via: 'erpax.platform.dryProofPublish (Law 44)' },
+      { capability: 'see-trinity-rollup', available: true, via: 'erpax.platform.trinityRollup (3 generators)' },
+      { capability: 'register-types',     available: true, via: 'erpax.integrity.registerType (Law 47)' },
+      { capability: 'short-uuid-display', available: true, via: 'erpax.integrity.{shortUuid, displayUuid} (Law 46)' },
+      { capability: 'inspect-dimensions', available: true, via: 'erpax.platform.dimensions (Law 49)' },
+      { capability: 'self-DRY-clean',     available: true, via: 'erpax.platform.dryCleanScan (Law 50)' },
     ],
     toolCatalog: catalog,
   }
