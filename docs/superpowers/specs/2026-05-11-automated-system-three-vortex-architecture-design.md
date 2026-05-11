@@ -1174,6 +1174,105 @@ The trade-off is intentional: a probe that runs in <500ms across 150+ tools at e
 
 @standard MCP 0.6 — tools/list (self-test extension); ISO/IEC 25010:2023 §5.5 testability; ISO/IEC/IEEE 29119-2 — software testing process; ISO 19011:2018 §6.4.6 (every test result audit-trailed).
 
+## 0v. ERPax + MCP interact to infinity within a torus
+
+Per user 'erpax and mcp are interacting to infinity within the limitations of a torus'. **The synthesis statement of every prior slice.** ERPax + MCP form a finite-but-unbounded closed system — a torus. Slice CCCCCCC ships `src/services/topology/torus.ts` formalizing the topology + Conservation Law 43.
+
+### Two topological properties
+
+1. **Closed surface** — every action emitted by ERPax stays within the system or federates (slice AAAAAA) to a peer torus with full provenance. Nothing escapes into untraced space. Platform-level analog of the closed event graph (Law 4) and content-uuid coupling (Law 8).
+
+2. **Bounded resource envelope** — every long-running process can iterate "to infinity" along the torus surface (the loop has no end), but at every instant it stays inside a bounded envelope. Platform-level analog of cost (Law 15) + carbon (Law 16) caps + CF Worker CPU/memory/queue limits (slice IIIIII).
+
+### The 11 vertices of the torus
+
+| Vertex | Slice origin |
+|---|---|
+| `spec-corpus` | CCCCC — JSDoc-as-spec extractor |
+| `mcp-tools` | VVVVVV..AAAAAAA — 6 self-properties |
+| `agent-blocks` | PPPPPP — typed blocks |
+| `chain-of-blocks` | QQQQQQ — BUSINESS_CHAIN compositions |
+| `event-streams` | RRRRRR — quantum streams + Lamport |
+| `audit-trail` | QQQQ + RRRRR + SSSSSS — Merkle + uuid hash-chain |
+| `archival` | EEEEEE — IPFS / Arweave / Filecoin |
+| `federation` | AAAAAA — inter-tenant uuid exchange |
+| `cloning` | HHHHHH — genome publish + boot |
+| `standards-corpus` | LLLLLL + CCCCCC — 7 families as live objects |
+| `website` | MMMMMM + NNNNNN + YYYYYY — SEO vortex |
+
+### The 14 directed edges (the loop + cross-loop shortcuts)
+
+```
+spec-corpus → mcp-tools           (WWWWWW auto-generation + ZZZZZZ rebuild)
+mcp-tools → agent-blocks          (PPPPPP block manifests via mcp.invoke)
+agent-blocks → chain-of-blocks    (QQQQQQ chainsAsBlockCompositions)
+chain-of-blocks → event-streams   (RRRRRR streamFromBus + Lamport clock)
+event-streams → audit-trail       (QQQQ Merkle + SSSSSS streamUuid)
+audit-trail → archival            (EEEEEE IPFS / Arweave / Filecoin pinning)
+archival → federation             (AAAAAA envelope broadcast — uuid + provenance)
+federation → cloning              (HHHHHH bootFromFederation — genome bundle)
+cloning → spec-corpus             (GGGGGG self-reference — clone reads own spec)
+spec-corpus → standards-corpus    (CCCCCC publish + LLLLLL classify)
+standards-corpus → mcp-tools      (XXXXXX standardization lexicon)
+mcp-tools → website               (YYYYYY presentation + NNNNNN crossLink)
+website → federation              (NNNNNN faces broadcast + MMMMMM media bundle)
+website → spec-corpus             (MMMMMM seedFromSpec round-trip)
+```
+
+The graph is **closed** — every vertex has both an incoming and outgoing edge. Tracing any vertex returns to it within ≤9 hops.
+
+### Bounded resource envelope (defaults)
+
+| Envelope dimension | Default cap | Conservation Law |
+|---|---|---|
+| `maxCostUsdMicrosPerMin` | 100 000 (0.10 USD/min/tenant) | Law 15 (cost) + JJJJJJ |
+| `maxCarbonGCO2ePerMin` | 5 gCO2e/min/tenant | Law 16 (carbon) |
+| `maxMemoryBytes` | 128 MiB | CF Worker |
+| `maxCpuMs` | 30 000 | CF Worker (paid) |
+| `maxQueueDepth` | 10 000 | CF Queues (slice IIIIII) |
+| `maxChainStepsPerWorkflow` | **42** | Soft circumference cap; longer = QQQQQ refactor proposal |
+
+The number 42 is not coincidence — it's the upper bound on chain-of-blocks composition per business workflow. Any chain longer than 42 steps is suspicious and triggers a refactor proposal via the meta-skill agent (slice QQQQQ).
+
+### Conservation Law 43 — torus closure & envelope
+
+`checkTorusBoundedInvariant` (boot suite, entropy axis):
+1. Every vertex of the 11-vertex torus must have both incoming and outgoing edges (topology check).
+2. Current resource usage stays at or below envelope (production probes pass live `cost` / `carbon` / `memory` from the per-tenant audit pipeline — slice KKKKKK).
+
+### What this means architecturally
+
+The torus framing **caps the architecture**. Every prior slice added a primitive; this slice declares those primitives form a closed loop. Implications:
+
+- **No leakage** — there is no untraced action surface; nothing happens that isn't either consumed within the system or federated with provenance. This is the synthesis of Laws 4 (event graph closed) + 8 (content-uuid coupling) + 23 (self-reference) + 24 (clone integrity).
+- **No infinite divergence** — every iteration stays inside the resource envelope. No process can crash the system by spinning unboundedly; envelope checks are first-class invariants.
+- **Round-trip is finite** — any single round-trip around the torus is ≤ a known hop count (currently 9 along the main loop, ≤32 with cross-loop shortcuts). Latency bounds are derivable from the topology.
+- **Federation = torus-to-torus coupling** — peer ERPax instances are themselves tori; the `federation` vertex is the coupling face between them. This is the platform-level analog of slice GGGGGG (self-interacting vortex).
+- **Cloning preserves topology** — the genome (slice HHHHHH) carries the torus topology; clones rebuild the same vertex set + edge set; Law 43 holds across clones.
+
+### MCP surface (slice CCCCCCC)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.torusTopology` | Return the 11 vertices + 14 edges + default envelope |
+| `erpax.platform.torusTrace` | Trace a round-trip from any vertex; verify closure |
+| `erpax.platform.checkTorusBounded` | Conservation Law 43 verdict |
+
+### The architecture closes
+
+| Slice family | Outcome |
+|---|---|
+| **uuid family** (RRRRR, SSSSS, TTTTT, UUUUU, RRRRR-OOOOOO, SSSSSS, TTTTTT, UUUUUU) | Every object identifies itself; storage-independent; replicable; tamper-proof |
+| **MCP family** (DDDDD, VVVVVV, WWWWWW, XXXXXX, YYYYYY, ZZZZZZ, AAAAAAA) | MCP discovers / builds / standardizes / presents / rebuilds / tests itself |
+| **Vortex family** (GGGGGG, HHHHHH, LLLLLL, MMMMMM, NNNNNN) | Platform describes itself; clones itself; standards spin coupled; SEO vortex |
+| **Closure** (CCCCCCC) | All of the above form one closed torus surface |
+
+The conservation framework is now 43 laws strong; the MCP surface ~155+ tools; the spec primitives ~150+ collections + 28 chains + 15 agents + 7 standards families + 12 site surfaces. ERPax + MCP, interacting to infinity within a torus.
+
+### Standards anchoring
+
+@standard Topology — torus / closed manifold (Hatcher 2002); ISO/IEC 25010:2023 §5.2 performance — resource envelope; ISO/IEC 30134 — KPIs for resource efficiency; ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

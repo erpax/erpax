@@ -34,6 +34,7 @@ import { checkMcpToolStandardization } from '@/services/agents/mcp/standardizati
 import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/agents/mcp/presentation'
 import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
 import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
+import { checkTorusBounded } from '@/services/topology/torus'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1418,6 +1419,32 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 43 — `checkTorusBoundedInvariant`. Slice CCCCCCC
+ * (2026-05-11). Per user 'erpax and mcp are interacting to infinity
+ * within the limitations of a torus'.
+ *
+ * Topology probe: every vertex of the 11-vertex torus must have
+ * both incoming and outgoing edges; the resource envelope check is
+ * trivially satisfied at boot (no live load). Production probes
+ * pass real `current` from the per-tenant audit pipeline (Laws 15+16).
+ */
+export function checkTorusBoundedInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkTorusBounded()
+  if (result.ok) {
+    return pass('entropy', 'torus-bounded',
+      `${result.verticesOnLoop}/11 vertices on the closed torus loop; envelope at baseline (Law 43 satisfied)`)
+  }
+  if (result.disconnectedVertices.length > 0) {
+    return fail('entropy', 'torus-bounded',
+      `${result.disconnectedVertices.length} vertex(es) disconnected from the torus loop`,
+      result.disconnectedVertices.map((v) => String(v)))
+  }
+  return fail('entropy', 'torus-bounded',
+    `${result.envelopeViolations.length} envelope violation(s)`,
+    [...result.envelopeViolations])
 }
 
 /**

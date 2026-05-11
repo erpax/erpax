@@ -71,6 +71,7 @@ import {
   compareExpectedVsLive, emitToolDefsSkeleton, checkMcpRebuildableFromSource,
 } from './rebuild-from-source'
 import { selfTestAll, selfTestOne, checkMcpSelfTestable } from './self-test'
+import { checkTorusBounded, traceTorusRoundTrip, TORUS_DEFAULT_ENVELOPE, TORUS_VERTICES, TORUS_EDGES } from '@/services/topology/torus'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1261,6 +1262,41 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         const tool = tools.find((t) => t.name === toolName)
         if (!tool) return json({ ok: false, reason: `unknown tool ${toolName as string}` })
         return json(await selfTestOne(tool))
+      },
+    },
+    // ── Slice CCCCCCC — torus topology (Law 43) ──
+    {
+      name: 'erpax.platform.torusTopology',
+      description: 'Per user "erpax and mcp are interacting to infinity within the limitations of a torus" — return the 11 torus vertices + 14 directed edges + default resource envelope. The closed-system synthesis (Topology / closed manifold; ISO/IEC 25010:2023 §5.2 performance).',
+      parameters: {},
+      async handler() { return json({ vertices: TORUS_VERTICES, edges: TORUS_EDGES, envelope: TORUS_DEFAULT_ENVELOPE }) },
+    },
+    {
+      name: 'erpax.platform.torusTrace',
+      description: 'Slice CCCCCCC — trace a round-trip around the torus from a starting vertex; verify the loop closes (Conservation Law 43 closure property). Returns the hop sequence + closedLoop boolean.',
+      parameters: {
+        start: z.enum(['spec-corpus', 'mcp-tools', 'agent-blocks', 'chain-of-blocks', 'event-streams', 'audit-trail', 'archival', 'federation', 'cloning', 'standards-corpus', 'website']),
+        maxHops: z.number().int().min(1).max(64).optional(),
+      },
+      async handler({ start, maxHops }) {
+        return json(traceTorusRoundTrip(start as never, (maxHops as number | undefined) ?? 32))
+      },
+    },
+    {
+      name: 'erpax.platform.checkTorusBounded',
+      description: 'Conservation Law 43 — verify the torus is closed (every vertex has incoming + outgoing edges) and current resource usage is within envelope (cost / carbon — Laws 15+16; CF Worker memory + CPU + queues — slice IIIIII; chain-step circumference soft cap 42).',
+      parameters: {
+        current: z.object({
+          costUsdMicrosPerMin: z.number().optional(),
+          carbonGCO2ePerMin: z.number().optional(),
+          memoryBytes: z.number().optional(),
+          cpuMs: z.number().optional(),
+          queueDepth: z.number().optional(),
+          chainStepsPerWorkflow: z.number().optional(),
+        }).optional(),
+      },
+      async handler({ current }) {
+        return json(checkTorusBounded({ current: current as never }))
       },
     },
     {

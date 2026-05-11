@@ -123,6 +123,7 @@ export async function runAllInvariants(
     results.push(await C.checkStreamUuidChainProbe(ctx))      // Law 34 — SSSSSS
     results.push(await C.checkStorageIndependenceProbe(ctx))  // Law 35 — TTTTTT
     results.push(await C.checkReplicationConsensusProbe(ctx)) // Law 36 — UUUUUU
+    results.push(C.checkTorusBoundedInvariant(ctx))           // Law 43 — CCCCCCC
   }
 
   return {
