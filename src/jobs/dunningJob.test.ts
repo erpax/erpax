@@ -20,7 +20,19 @@ import {
   suspendSubscription,
 } from '@/jobs/dunningJob'
 
-const createMockPayload = (overrides: any = {}) => ({
+/** Minimal Payload mock — methods this dunning job exercises. */
+type MockPayload = {
+  find: ReturnType<typeof vi.fn>
+  update: ReturnType<typeof vi.fn>
+  findByID: ReturnType<typeof vi.fn>
+  logger: {
+    info: ReturnType<typeof vi.fn>
+    warn: ReturnType<typeof vi.fn>
+    error: ReturnType<typeof vi.fn>
+  }
+} & Record<string, unknown>
+
+const createMockPayload = (overrides: Partial<MockPayload> = {}): MockPayload => ({
   find: vi.fn(),
   update: vi.fn(),
   findByID: vi.fn(),
@@ -32,7 +44,7 @@ const createMockPayload = (overrides: any = {}) => ({
   ...overrides,
 })
 
-const createMockInvoice = (overrides: any = {}) => ({
+const createMockInvoice = (overrides: Record<string, unknown> = {}) => ({
   id: 'invoice-123',
   status: 'open',
   dueAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000), // 5 days ago
@@ -41,14 +53,14 @@ const createMockInvoice = (overrides: any = {}) => ({
   ...overrides,
 })
 
-const createMockSubscription = (overrides: any = {}) => ({
+const createMockSubscription = (overrides: Record<string, unknown> = {}) => ({
   id: 'subscription-123',
   status: 'active',
   ...overrides,
 })
 
 describe('dunningJob', () => {
-  let mockPayload: any
+  let mockPayload: MockPayload
 
   beforeEach(() => {
     mockPayload = createMockPayload()

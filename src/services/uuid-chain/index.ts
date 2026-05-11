@@ -50,7 +50,6 @@
  * @see /src/services/integrity/tamper-reverse-cost.ts (Law 55 cost calculator)
  */
 
-import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { computeKvBindingUuid } from '@/services/uuid-kv'
 // Slice XXXXXXXXX-cut1 (2026-05-11) — chain leaves now emit RFC 9562

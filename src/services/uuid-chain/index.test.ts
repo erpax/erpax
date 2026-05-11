@@ -20,7 +20,6 @@ import {
   GENESIS_PREV_UUID,
   forgeGenesisLink,
   forgeChainLink,
-  computeChainLinkUuid,
   verifyChain,
   walkChain,
   type ChainLink,
@@ -222,8 +221,6 @@ describe('verifyChain — intact + tamper detection', () => {
     const { store, headUuid } = buildChain(3)
     const allLinks: ChainLink<TestPayload>[] = []
     for await (const link of walkChain({ headUuid, store })) allLinks.push(link)
-    // Remove the genesis link.
-    const inner = (store as unknown as { mutate(uuid: string, fn: (l: ChainLink<TestPayload>) => ChainLink<TestPayload>): void })
     // We can't delete via the public API; emulate via direct map access.
     const map = (store as unknown as { getLink(u: ContentUuid<ChainLink<TestPayload>>): Promise<ChainLink<TestPayload> | null> })
     // Hack: replace getLink so it returns null for genesis depth.

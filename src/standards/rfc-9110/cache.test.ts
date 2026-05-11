@@ -18,9 +18,10 @@ import {
   getCachedPayloadLocalizedDocument,
 } from '@/standards/rfc-9110'
 
-// Mock Next.js cache
+// Mock Next.js cache — passthrough fetcher; keys/options are ignored
+// by this mock because the test isn't exercising cache invalidation.
 vi.mock('next/cache', () => ({
-  unstable_cache: vi.fn((fetcher, keys, options) => fetcher),
+  unstable_cache: vi.fn((fetcher, _keys, _options) => fetcher),
 }))
 
 // Mock Payload
@@ -194,7 +195,7 @@ describe('payloadCache', () => {
 
     it('handles Locale object with code property', () => {
       const locale = { code: 'es' }
-      const fetcher = getCachedPayloadLocalizedDocument('pages', 'home', locale as any)
+      const fetcher = getCachedPayloadLocalizedDocument('pages', 'home', locale)
       expect(typeof fetcher).toBe('function')
     })
 
@@ -221,7 +222,7 @@ describe('payloadCache', () => {
 
     it('extracts code from locale object', () => {
       const locale = { code: 'it', label: 'Italian' }
-      const fetcher = getCachedPayloadLocalizedDocument('pages', 'home', locale as any)
+      const fetcher = getCachedPayloadLocalizedDocument('pages', 'home', locale)
       expect(typeof fetcher).toBe('function')
     })
   })

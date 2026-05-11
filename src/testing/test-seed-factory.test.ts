@@ -12,43 +12,50 @@ import type { Payload } from 'payload';
 import {
   TestSeedFactory,
   TransactionalSeedFactory,
-  type SeedContext,
   type SeedResult,
-  type SeedHooks,
 } from '../../src/testing';
 
 /**
  * Mock Payload instance for testing
  */
 class MockPayload implements Partial<Payload> {
-  private documents: Map<string, Map<string, any>> = new Map();
+  private documents: Map<string, Map<string, Record<string, unknown>>> = new Map();
 
   async create({ collection, data }: Record<string, unknown>) {
-    if (!this.documents.has(collection)) {
-      this.documents.set(collection, new Map());
+    if (!this.documents.has(collection as string)) {
+      this.documents.set(collection as string, new Map());
     }
     const id = Math.random().toString(36).substr(2, 9);
-    const doc = { ...data, id };
-    this.documents.get(collection)!.set(id, doc);
+    const doc = { ...(data as Record<string, unknown>), id };
+    this.documents.get(collection as string)!.set(id, doc);
     return doc;
   }
 
   async find({ collection, where }: Record<string, unknown>) {
-    const docs = Array.from(this.documents.get(collection)?.values() || []);
+    let docs = Array.from(this.documents.get(collection as string)?.values() || []);
+    // Minimal where filter — supports `where: { field: { equals: value } }`
+    // which is the most common Payload predicate.
+    if (where && typeof where === 'object') {
+      for (const [field, condition] of Object.entries(where as Record<string, { equals?: unknown }>)) {
+        if (condition && typeof condition === 'object' && 'equals' in condition) {
+          docs = docs.filter((d) => d[field] === condition.equals);
+        }
+      }
+    }
     return { docs, totalDocs: docs.length };
   }
 
   async delete({ collection, id }: Record<string, unknown>) {
-    const doc = this.documents.get(collection)?.get(id);
-    this.documents.get(collection)?.delete(id);
+    const doc = this.documents.get(collection as string)?.get(id as string);
+    this.documents.get(collection as string)?.delete(id as string);
     return doc;
   }
 
   async update({ collection, id, data }: Record<string, unknown>) {
-    const doc = this.documents.get(collection)?.get(id);
+    const doc = this.documents.get(collection as string)?.get(id as string);
     if (!doc) throw new Error('Not found');
-    const updated = { ...doc, ...data };
-    this.documents.get(collection)!.set(id, updated);
+    const updated = { ...doc, ...(data as Record<string, unknown>) };
+    this.documents.get(collection as string)!.set(id as string, updated);
     return updated;
   }
 
@@ -69,10 +76,13 @@ class TestImplementation extends TestSeedFactory {
     this.context = this.createContext('unit');
 
     try {
-      // Create test documents
+      // Create a test document + track its id so the seed context's
+      // createdIds map reflects what we just inserted (proves the
+      // factory's tracking surface is wired).
       const doc = await this.createDocument('test-collection', {
         name: 'Test Doc',
       });
+      this.trackCreatedId('test-collection', (doc as { id: string }).id);
 
       return {
         success: true,
@@ -117,6 +127,7 @@ class TestTransactionalImplementation extends TransactionalSeedFactory {
 
     try {
       const doc = await this.createDocument('test-collection', { name: 'Test' });
+      this.trackCreatedId('test-collection', (doc as { id: string }).id);
 
       return {
         success: true,

@@ -21,7 +21,7 @@ import type { ChainImpls, ChainStepImpl } from '@/services/business-chains/run-c
 
 const ts = () => Date.now().toString(36)
 
-const onboardCustomer: ChainStepImpl = async (payload, ctx, _state) => {
+const onboardCustomer: ChainStepImpl = async (_payload, _ctx, _state) => {
   // Customer is already created in createChainContext — emit-only step.
   return 'customer:onboard'
 }

@@ -34,9 +34,9 @@
  * @compliance ISO-27001 A.5.36 conformance-with-policies
  */
 
-import type { EvidenceArtefact, EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
+import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
 import {
-  workflowKeys, workflowStepKey, chainKeys, defaultEnglishFor, humaniseSlug,
+  workflowKeys, workflowStepKey, chainKeys, humaniseSlug,
   STUB_PREFIX,
 } from './i18n-keys'
 

@@ -13,6 +13,7 @@
  * @standard WCAG 2.1 AA
  */
 import * as React from 'react'
+import Link from 'next/link'
 
 export function McpNavLinks(): React.JSX.Element {
   return (
@@ -22,32 +23,32 @@ export function McpNavLinks(): React.JSX.Element {
       </h3>
       <ul className="space-y-1">
         <li>
-          <a href="/admin/mcp/tools" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
+          <Link href="/admin/mcp/tools" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
             Tools
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/admin/mcp/invoke" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
+          <Link href="/admin/mcp/invoke" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
             Invoke
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/admin/mcp/status" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
+          <Link href="/admin/mcp/status" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
             Status
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/admin/mcp/translations" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
+          <Link href="/admin/mcp/translations" className="block px-3 py-1.5 text-sm hover:bg-accent rounded">
             Translations
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/admin/collections/translations"
             className="block px-3 py-1 pl-6 text-xs text-muted-foreground hover:text-foreground hover:bg-accent rounded"
           >
             ↳ Raw rows
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

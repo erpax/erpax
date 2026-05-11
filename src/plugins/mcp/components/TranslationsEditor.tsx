@@ -42,6 +42,7 @@
 'use client'
 
 import * as React from 'react'
+import { createOnDemandStore } from './createPollingStore'
 
 /** Per-locale value map for a `localized: true` field. */
 type LocaleMap = Record<string, string>
@@ -86,44 +87,41 @@ function pickLocale(v: string | LocaleMap | undefined, locale: string): string {
   return v[locale] ?? ''
 }
 
+/** Scope-keyed on-demand store factory — one store per scope, cached. */
+function storeForScope(scope: string) {
+  return createOnDemandStore<ListResponse>(`translations:${scope}`, async () => {
+    const qs = new URLSearchParams({
+      locale: 'all',
+      'where[scope][equals]': scope,
+      limit: '100',
+      depth: '0',
+    })
+    const res = await fetch(`/api/translations?${qs.toString()}`, { credentials: 'include' })
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
+    return (await res.json()) as ListResponse
+  })
+}
+
 export function TranslationsEditor(): React.JSX.Element {
   const [scope, setScope] = React.useState<string>('mcp-tool')
   const [locales, setLocales] = React.useState<ReadonlyArray<string>>(DEFAULT_LOCALES)
   const [search, setSearch] = React.useState('')
-  const [rows, setRows] = React.useState<ReadonlyArray<TranslationRow>>([])
-  const [total, setTotal] = React.useState(0)
-  const [loading, setLoading] = React.useState(false)
-  const [error, setError] = React.useState<string | null>(null)
   const [toast, setToast] = React.useState<string | null>(null)
   const [savingCell, setSavingCell] = React.useState<string | null>(null) // `${id}:${locale}`
   const [drafts, setDrafts] = React.useState<Record<string, string>>({})  // key = `${id}:${locale}`
 
-  // --- fetch ----------------------------------------------------------
-  const fetchPage = React.useCallback(async () => {
-    setLoading(true)
-    setError(null)
-    try {
-      const qs = new URLSearchParams({
-        locale: 'all',
-        'where[scope][equals]': scope,
-        limit: '100',
-        depth: '0',
-      })
-      const res = await fetch(`/api/translations?${qs.toString()}`, {
-        credentials: 'include',
-      })
-      if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-      const body = (await res.json()) as ListResponse
-      setRows(body.docs ?? [])
-      setTotal(body.totalDocs ?? body.docs?.length ?? 0)
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e))
-    } finally {
-      setLoading(false)
-    }
-  }, [scope])
-
-  React.useEffect(() => { fetchPage() }, [fetchPage])
+  // --- fetch via useSyncExternalStore (canonical React 19 pattern) ----
+  const store = React.useMemo(() => storeForScope(scope), [scope])
+  const { data, error, refreshing } = React.useSyncExternalStore(
+    store.subscribe,
+    store.getSnapshot,
+    store.getServerSnapshot,
+  )
+  // Memoise so identity is stable across re-renders when `data` is unchanged.
+  const rows = React.useMemo<ReadonlyArray<TranslationRow>>(() => data?.docs ?? [], [data])
+  const total = data?.totalDocs ?? rows.length
+  const loading = refreshing && data === null
+  const fetchPage = React.useCallback(() => store.refetch(), [store])
 
   // Auto-dismiss toast after 3s.
   React.useEffect(() => {
@@ -150,15 +148,9 @@ export function TranslationsEditor(): React.JSX.Element {
           },
         )
         if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-        // Optimistic patch into local rows so the locale map reflects
-        // the new value without another network round-trip.
-        setRows((prev) =>
-          prev.map((r) => {
-            if (r.id !== id) return r
-            const existing = (typeof r.value === 'object' && r.value !== null) ? r.value : {}
-            return { ...r, value: { ...existing, [locale]: next } }
-          }),
-        )
+        // Refetch from the store so the row reflects the canonical
+        // server-side value (Payload merges locale maps on PATCH).
+        await store.refetch()
         setDrafts((d) => {
           const { [draftKey]: _omit, ...rest } = d
           return rest
@@ -170,7 +162,7 @@ export function TranslationsEditor(): React.JSX.Element {
         setSavingCell(null)
       }
     },
-    [drafts],
+    [drafts, store],
   )
 
   // --- derived --------------------------------------------------------

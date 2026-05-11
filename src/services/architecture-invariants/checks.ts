@@ -9,8 +9,8 @@
  * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
  */
 
-import { readFileSync, readdirSync, existsSync } from 'node:fs'
-import { resolve, join, basename } from 'node:path'
+import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
+import { join, basename } from 'node:path'
 import type { InvariantResult, InvariantContext } from './types'
 
 import { FEATURE_REGISTRY, TIERS, featuresForTier, type Tier } from '@/access/feature-registry'
@@ -513,13 +513,11 @@ export function checkAuditEventsAreChainLinked(ctx: InvariantContext): Invariant
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
     const srcRoot = `${repoRoot}/src`
-    const fs = require('node:fs') as typeof import('node:fs')
-    const path = require('node:path') as typeof import('node:path')
     const offenders: string[] = []
     const walk = (dir: string): void => {
-      if (!fs.existsSync(dir)) return
-      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        const full = path.join(dir, entry.name)
+      if (!existsSync(dir)) return
+      for (const entry of readdirSync(dir, { withFileTypes: true })) {
+        const full = join(dir, entry.name)
         if (entry.isDirectory()) {
           if (entry.name === 'node_modules' || entry.name.startsWith('.')) continue
           walk(full)
@@ -530,7 +528,7 @@ export function checkAuditEventsAreChainLinked(ctx: InvariantContext): Invariant
         // Skip the helper itself + the architecture-invariants checker.
         if (full.endsWith('write-audit-event.ts')) continue
         if (full.endsWith('architecture-invariants/checks.ts')) continue
-        const src = fs.readFileSync(full, 'utf8')
+        const src = readFileSync(full, 'utf8')
         // Heuristic: direct .create call on the audit-events slug.
         const re = /\.create\s*\(\s*\{[^}]*collection\s*:\s*['"]audit-events['"]/m
         if (re.test(src)) offenders.push(full.replace(`${repoRoot}/`, ''))
@@ -1617,8 +1615,12 @@ export function checkSeoVortexCouplingInvariant(_ctx: InvariantContext): Invaria
  * @audit ISO 19011:2018 §6.4.6 (vote aggregates audit-trailed)
  */
 export function checkVoteAggregateAuthenticity(ctx: InvariantContext): InvariantResult {
-  const tenants = new Set<string>()
-  for (const t of ['probe-tenant']) tenants.add(t)
+  // Discover live tenants from the Payload context when available; fall
+  // back to the probe-tenant used by the in-memory store tests.
+  const tenants = new Set<string>(['probe-tenant'])
+  const liveTenants = (ctx.payload as undefined | { config?: { tenants?: ReadonlyArray<{ id: string }> } })
+    ?.config?.tenants
+  if (liveTenants) for (const t of liveTenants) tenants.add(t.id)
   // Walk every known ballot across every known tenant; we only have
   // an in-memory store so this is fast; real persistence layer can
   // page through Payload's votes collection.
@@ -2001,13 +2003,11 @@ export async function checkMcpToolStandardizationInvariant(_ctx: InvariantContex
 export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-    const fs = require('node:fs') as typeof import('node:fs')
-    const path = require('node:path') as typeof import('node:path')
-    const toolDefsPath = path.join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')
-    if (!fs.existsSync(toolDefsPath)) {
+    const toolDefsPath = join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')
+    if (!existsSync(toolDefsPath)) {
       return warn('standards', 'mcp-state-mutators', 'tool-defs.ts missing — skipped')
     }
-    const src = fs.readFileSync(toolDefsPath, 'utf8')
+    const src = readFileSync(toolDefsPath, 'utf8')
     // Extract the STATE_MUTATING_TOOLS Set literal contents.
     const setMatch = src.match(/STATE_MUTATING_TOOLS:\s*ReadonlySet<string>\s*=\s*new Set\(\[([\s\S]*?)\]\)/)
     const allowlisted = new Set<string>()
@@ -2077,13 +2077,11 @@ export async function checkMcpStateMutatorsAdminGuarded(ctx: InvariantContext): 
 export async function checkMcpBarrelWired(ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-    const fs = require('node:fs') as typeof import('node:fs')
-    const path = require('node:path') as typeof import('node:path')
-    const barrelPath = path.join(repoRoot, 'src/services/agents/mcp/tools/index.ts')
-    if (!fs.existsSync(barrelPath)) {
+    const barrelPath = join(repoRoot, 'src/services/agents/mcp/tools/index.ts')
+    if (!existsSync(barrelPath)) {
       return warn('expansion', 'mcp-barrel-wired', 'tools/index.ts barrel missing — skipped')
     }
-    const barrelSrc = fs.readFileSync(barrelPath, 'utf8')
+    const barrelSrc = readFileSync(barrelPath, 'utf8')
     // Match every `export { buildXxxTools } from './xxx'` line.
     const factoryRe = /export\s*\{\s*build([A-Z][A-Za-z0-9]*)Tools\s*\}\s*from\s*['"]\.\/([a-z0-9-]+)['"]/g
     const factories: Array<{ name: string; namespace: string }> = []
@@ -2499,7 +2497,7 @@ function listAllSourceFiles(repoRoot: string): ReadonlyArray<string> {
       const full = join(d, e)
       let stat: { isDirectory: () => boolean; isFile: () => boolean }
       try {
-        stat = require('node:fs').statSync(full)
+        stat = statSync(full)
       } catch {
         continue
       }
@@ -2529,7 +2527,7 @@ function listServiceFiles(repoRoot: string): ReadonlyArray<string> {
         const full = join(dir, e)
         let stat: { isDirectory: () => boolean; isFile: () => boolean }
         try {
-          stat = require('node:fs').statSync(full)
+          stat = statSync(full)
         } catch {
           continue
         }
@@ -2582,7 +2580,7 @@ export const PLUGIN_OWNED_SLUGS: ReadonlyArray<string> = [
 
 /**
  * Slice FFFFFFFF (2026-05-11) — fail if the accounting plugin (or any
- * `src/plugins/*/collections/*` barrel) registers a collection at a
+ * `src/plugins/*\/collections/*` barrel) registers a collection at a
  * slug already owned by an upstream Payload plugin. Catches the
  * Slice EEEEEEEE-fix class of failure statically, before runtime
  * `DuplicateCollection`.

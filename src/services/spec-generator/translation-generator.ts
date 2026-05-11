@@ -73,7 +73,7 @@
  */
 
 import type { SpecCorpus, CollectionSpec } from './types'
-import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
+import type { EvidenceCorpus } from './evidence-collector'
 import type { E2eSpecCorpus } from './e2e-spec-extractor'
 import {
   collectionKeys, chainKeys, chainStepKey,

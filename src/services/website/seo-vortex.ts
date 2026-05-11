@@ -151,14 +151,19 @@ export function renderOgMeta(face: SeoVortexFace): string {
   return tags.join('\n')
 }
 
-/** Render sitemap.xml for every registered face. */
+/** Render sitemap.xml for every registered face. Resolves any
+ *  relative face/hreflang URLs against `siteOrigin` so the sitemap
+ *  always emits absolute URIs (RFC 3986 §4.3 + sitemaps.org §1.3). */
 export function generateSitemap(siteOrigin: string): string {
+  const origin = siteOrigin.replace(/\/$/, '')
+  const absolutise = (url: string): string =>
+    /^https?:\/\//i.test(url) ? url : `${origin}${url.startsWith('/') ? '' : '/'}${url}`
   const urls = [...FACES_BY_URL.values()].map((face) => {
     const alts = face.hreflang.map((h) =>
-      `    <xhtml:link rel="alternate" hreflang="${h.locale}" href="${h.url}" />`
+      `    <xhtml:link rel="alternate" hreflang="${h.locale}" href="${absolutise(h.url)}" />`
     ).join('\n')
     return `  <url>
-    <loc>${face.url}</loc>
+    <loc>${absolutise(face.url)}</loc>
     <lastmod>${face.ogUpdatedTime.slice(0, 10)}</lastmod>
 ${alts}
   </url>`

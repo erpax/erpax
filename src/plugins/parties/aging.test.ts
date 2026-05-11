@@ -24,7 +24,6 @@ import {
   DEFAULT_AGING_BUCKETS,
 } from '@/plugins/parties'
 
-const MS_DAY = 24 * 60 * 60 * 1000
 const day = (n: number) => new Date(2026, 0, 1 + n)
 
 describe('parties/aging — daysBetween', () => {

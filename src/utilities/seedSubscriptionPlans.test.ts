@@ -12,8 +12,19 @@ import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { seedSubscriptionPlans, getOrCreatePlan } from '@/utilities/seeding/seedSubscriptionPlans'
 import type { TenantConfig } from '@/config/types'
 
+/** Minimal Payload mock — methods this test exercises. */
+type MockPayload = {
+  find: ReturnType<typeof vi.fn>
+  create: ReturnType<typeof vi.fn>
+  delete: ReturnType<typeof vi.fn>
+  logger: {
+    info: ReturnType<typeof vi.fn>
+    error: ReturnType<typeof vi.fn>
+  }
+} & Record<string, unknown>
+
 // Mock Payload instance
-const createMockPayload = (overrides: any = {}) => ({
+const createMockPayload = (overrides: Partial<MockPayload> = {}): MockPayload => ({
   find: vi.fn(),
   create: vi.fn(),
   delete: vi.fn(),
@@ -72,7 +83,7 @@ const createMockConfig = (): TenantConfig => ({
 })
 
 describe('seedSubscriptionPlans', () => {
-  let mockPayload: any
+  let mockPayload: MockPayload
 
   beforeEach(() => {
     mockPayload = createMockPayload()
@@ -152,7 +163,7 @@ describe('seedSubscriptionPlans', () => {
 })
 
 describe('getOrCreatePlan', () => {
-  let mockPayload: any
+  let mockPayload: MockPayload
 
   beforeEach(() => {
     mockPayload = createMockPayload()

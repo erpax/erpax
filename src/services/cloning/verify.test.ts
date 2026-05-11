@@ -4,7 +4,6 @@
  */
 import { describe, it, expect } from 'vitest'
 import { publishSelf } from './publish'
-import { collectGenome, computeGenomeUuid } from './genome'
 import { checkCloneIntegrity } from './verify'
 
 describe('checkCloneIntegrity (Conservation Law 24)', () => {

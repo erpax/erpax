@@ -227,7 +227,7 @@ async function resolveShortUuid<T>(
   short: string,
   ctx: IdentifyContext,
 ): Promise<IdentificationResult<T>> {
-  const { parseShortUuid, lookupShort, SHORT_UUID_POLICY } = await import('../integrity/uuid-short')
+  const { parseShortUuid, lookupShort } = await import('../integrity/uuid-short')
   const parsed = parseShortUuid(short)
   if (!parsed || parsed.kind === 'unknown') {
     return { kind: 'short-uuid', row: null, matchedRule: 'short-uuid:unknown-prefix' }

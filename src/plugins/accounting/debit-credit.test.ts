@@ -17,6 +17,7 @@ import {
   AccountingEntryBuilder,
   StandardTransactions,
   AccountQueries,
+  type AccountType,
 } from '@/plugins/accounting/debit-credit'
 
 describe('DebitCreditLogic - Canonical Module', () => {
@@ -71,7 +72,7 @@ describe('DebitCreditLogic - Canonical Module', () => {
 
     test('should throw for unknown account type', () => {
       expect(() => {
-        DebitCreditLogic.getRule('unknown' as any)
+        DebitCreditLogic.getRule('unknown' as AccountType)
       }).toThrow()
     })
   })

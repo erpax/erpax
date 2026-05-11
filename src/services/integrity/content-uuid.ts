@@ -43,6 +43,7 @@
  */
 
 import { createHash } from 'node:crypto'
+import { encodeStructured, SLOT_TAGS, CAPABILITIES } from '@/services/uuid-format'
 
 /**
  * Branded uuid type: a string that's STATICALLY known to be the
@@ -184,10 +185,6 @@ export function verifyContentUuid<T extends Record<string, unknown>>(
   // version nibble. v8 → recompute via encodeStructured; v5 → legacy
   // path. Rows persisted under either format still verify correctly.
   if (actual.charAt(14) === '8') {
-    // Lazy require avoids the uuid-format → content-uuid cycle.
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { encodeStructured, SLOT_TAGS, CAPABILITIES } =
-      require('@/services/uuid-format') as typeof import('@/services/uuid-format')
     const content = stripNonContentFields(obj)
     const expected = encodeStructured({
       slotTag: SLOT_TAGS.collectionRow,

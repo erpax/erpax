@@ -20,7 +20,7 @@ import type { Payload } from 'payload';
  * Mock implementations for testing
  */
 class MockPayload implements Partial<Payload> {
-  private documents: Map<string, Map<string, any>> = new Map();
+  private documents: Map<string, Map<string, Record<string, unknown>>> = new Map();
 
   async create({ collection, data }: Record<string, unknown>) {
     if (!this.documents.has(collection)) {

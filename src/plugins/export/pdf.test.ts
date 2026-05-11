@@ -13,7 +13,6 @@ import { afterEach, beforeEach, describe, expect, test } from 'vitest'
 import { PDFExporter } from '@/plugins/export/pdf'
 import { FinancialStatement, ExportOptions } from '@/plugins/export/types'
 import fs from 'fs'
-import path from 'path'
 
 describe('PDFExporter', () => {
   const mockStatement: FinancialStatement = {
@@ -193,10 +192,10 @@ describe('PDFExporter', () => {
     })
 
     test('should return proper error structure on failure', async () => {
-      const invalidStatement: any = {
+      const invalidStatement = {
         title: null, // Invalid data
         sections: 'invalid', // Should be array
-      }
+      } as unknown as FinancialStatement
 
       const result = await PDFExporter.exportStatement(invalidStatement, mockOptions)
 

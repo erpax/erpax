@@ -38,7 +38,7 @@
  * @standard ISO/IEC 12207 software-life-cycle
  */
 
-import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import type {
   CollectionSpec, SpecCorpus, SpecStandard, SpecChainStep, SpecFeature,

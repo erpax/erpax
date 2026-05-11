@@ -13,7 +13,7 @@
 import type { Config } from '@/payload-types'
 import type { SupportedLocale } from '@/i18n/localization'
 import { defaultLocale } from '@/i18n/localization'
-import type { TypedLocale } from 'payload'
+import type { Locale, TypedLocale } from 'payload'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 import { unstable_cache } from 'next/cache'
@@ -209,7 +209,7 @@ export function getCachedPayloadById<T extends Collection>(
 export function getCachedPayloadLocalizedDocument<T extends Collection>(
   collection: T,
   slug: string,
-  locale: TypedLocale | string,
+  locale: TypedLocale | string | Locale,
   depth = 0,
 ) {
   const localeCode =

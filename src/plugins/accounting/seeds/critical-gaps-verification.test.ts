@@ -190,6 +190,7 @@ describe('GAP 4: Seed Data Validation', () => {
     it('should validate required GL account fields', async () => {
       const tenantSeed = new MinimalTenantSeed(payload as unknown as Payload);
       const hostResult = await tenantSeed.seed();
+      expect(hostResult.success).toBe(true);
       const tenantId = Array.from(tenantSeed['context']!.createdIds.get('hosts') || new Set())[0];
 
       const glSeed = new MinimalGLAccountsSeed(payload as unknown as Payload, tenantId);
@@ -286,6 +287,7 @@ describe('GAP 4: Seed Data Validation', () => {
     it('should validate required currency rate fields', async () => {
       const tenantSeed = new MinimalTenantSeed(payload as unknown as Payload);
       const hostResult = await tenantSeed.seed();
+      expect(hostResult.success).toBe(true);
       const tenantId = Array.from(tenantSeed['context']!.createdIds.get('hosts') || new Set())[0];
 
       const rateSeed = new MinimalCurrencyRatesSeed(payload as unknown as Payload, tenantId);
@@ -377,7 +379,7 @@ describe('GAP 4b: Duplicate ID Detection (Set-based tracking)', () => {
 
     if (result.success) {
       for (const [collection, ids] of seed['context']!.createdIds.entries()) {
-        expect(ids).toBeInstanceOf(Set);
+        expect(ids, `collection ${collection} should track created IDs as a Set`).toBeInstanceOf(Set);
       }
     }
   });

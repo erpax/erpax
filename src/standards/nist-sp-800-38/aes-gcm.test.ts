@@ -12,7 +12,7 @@
  * @see src/standards/nist-sp-800-38/aes-gcm.ts
  */
 
-import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import {
   encryptField,
   decryptField,

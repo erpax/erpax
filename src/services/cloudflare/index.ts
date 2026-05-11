@@ -10,7 +10,6 @@
  * @standard W3C Service Worker §4 (Workers compat)
  */
 
-import type { Payload } from 'payload'
 // Slice UUUUUUUU (2026-05-11) — side-effect import so the OpenNext
 // bundle includes every DO class declared in wrangler.jsonc. Without
 // this, wrangler logs "A DurableObjectNamespace ... is not exported
@@ -604,9 +603,9 @@ export function makeMediator(ctx: MediatorContext): {
   // four wrappers route through the per-tenant key resolver so RBAC +
   // audit + rate-limit hold at the same gradient as the rest of the
   // binding surface.
-  signUuid: <T>(uuid: string, kid?: string) => Promise<unknown>
-  verifyUuid: <T>(signed: { uuid: string; alg: 'EdDSA' | 'PS256' | 'ES256'; kid: string; sig: string; signedAt: string }) => Promise<boolean>
-  encryptEnvelope: <T>(plaintext: T, uuid: string, kid?: string) => Promise<unknown>
+  signUuid: (uuid: string, kid?: string) => Promise<unknown>
+  verifyUuid: (signed: { uuid: string; alg: 'EdDSA' | 'PS256' | 'ES256'; kid: string; sig: string; signedAt: string }) => Promise<boolean>
+  encryptEnvelope: (plaintext: unknown, uuid: string, kid?: string) => Promise<unknown>
   decryptEnvelope: <T>(envelope: { uuid: string; alg: 'AES-GCM-256' | 'AES-GCM-128'; iv: string; ciphertext: string; authTag: string; kid: string }) => Promise<T>
   // ── Slice KKKKKKKKK-cut2 (2026-05-11) — query fingerprinting ────
   // Wraps any DB executor with queryUuid + resultUuid + timing. Every

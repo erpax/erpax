@@ -32,6 +32,7 @@
  * @audit ISO 19011:2018 §6.4.6 (every duplication finding audit-trailed)
  */
 
+import { createHash } from 'node:crypto'
 import type { ErpaxMcpTool } from './tool-defs'
 
 // Slice OOOOOOOO (2026-05-11) — per user "the stable amount of drift is
@@ -563,13 +564,10 @@ export function dryCleanScan(tools: ReadonlyArray<ErpaxMcpTool>): DryCleanReport
       }
       return gaps
     })(),
-    cycleUuid: (() => {
-      const { createHash } = require('node:crypto') as typeof import('node:crypto')
-      return createHash('sha256')
-        .update(`${tools.length}|${stableDriftCeiling.toFixed(6)}|${realDriftFloor.toFixed(6)}|${driftEntropy.toFixed(6)}`)
-        .digest('hex')
-        .slice(0, 16)
-    })(),
+    cycleUuid: createHash('sha256')
+      .update(`${tools.length}|${stableDriftCeiling.toFixed(6)}|${realDriftFloor.toFixed(6)}|${driftEntropy.toFixed(6)}`)
+      .digest('hex')
+      .slice(0, 16),
   }
 }
 

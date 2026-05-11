@@ -19,6 +19,7 @@
 'use client'
 
 import * as React from 'react'
+import { createPollingStore } from './createPollingStore'
 
 interface StatusResponse {
   readonly at: string
@@ -36,31 +37,20 @@ interface StatusResponse {
 
 const POLL_MS = 30_000
 
+// Module-singleton polling store. Polling starts on first mount and
+// stops when the last component unmounts (see createPollingStore.ts).
+const statusStore = createPollingStore<StatusResponse>('/api/mcp/status', POLL_MS)
+
 export function ConsistencyStatus(): React.JSX.Element {
-  const [data, setData] = React.useState<StatusResponse | null>(null)
-  const [error, setError] = React.useState<string | null>(null)
-  const [refreshing, setRefreshing] = React.useState(false)
-
-  const fetchStatus = React.useCallback(async () => {
-    setRefreshing(true)
-    try {
-      const res = await fetch('/api/mcp/status', { credentials: 'include' })
-      if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-      const body = (await res.json()) as StatusResponse
-      setData(body)
-      setError(null)
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e))
-    } finally {
-      setRefreshing(false)
-    }
-  }, [])
-
-  React.useEffect(() => {
-    fetchStatus()
-    const id = setInterval(fetchStatus, POLL_MS)
-    return () => clearInterval(id)
-  }, [fetchStatus])
+  // useSyncExternalStore is React 19's canonical pattern for subscribing
+  // to mutable external state. setState happens inside the store, not
+  // in any effect — no lint rule fires.
+  const { data, error, refreshing } = React.useSyncExternalStore(
+    statusStore.subscribe,
+    statusStore.getSnapshot,
+    statusStore.getServerSnapshot,
+  )
+  const fetchStatus = React.useCallback(() => statusStore.refetch(), [])
 
   if (error && !data) {
     return (

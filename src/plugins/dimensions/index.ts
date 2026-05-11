@@ -42,13 +42,26 @@ import { DIMENSIONAL_PLUGINS, type DimensionId } from '@/services/plugins/dimens
  * so the dimension entry-points slot directly into `payload.config.ts`'s
  * `plugins:` array without further wiring.
  */
+/** Registry of dimension plugins attached to a Payload config.
+ *  Populated lazily by `makeDimensionPlugin`. Lets the
+ *  `checkDimensionalPluginScaffolded` invariant + observability see
+ *  which dimensions are wired before Slice BBBBBB lands the real
+ *  collection/hook wiring. */
+const ATTACHED_DIMENSIONS: Set<DimensionId> = new Set()
+
+export function listAttachedDimensions(): ReadonlySet<DimensionId> {
+  return ATTACHED_DIMENSIONS
+}
+
 function makeDimensionPlugin(id: DimensionId): Plugin {
   return (config: Config): Config => {
-    // No-op today. Slice BBBBBB will:
+    // Record attachment so observability + invariants confirm the
+    // dimension is wired. Slice BBBBBB will additionally:
     //   1. Import the dimension's collections (per DIMENSIONAL_PLUGINS).
     //   2. Append them to config.collections (deduped against the legacy
     //      monolithic plugin until the migration completes).
     //   3. Register the dimension's hooks / scheduled tasks / agents.
+    ATTACHED_DIMENSIONS.add(id)
     return config
   }
 }

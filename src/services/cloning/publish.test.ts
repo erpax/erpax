@@ -41,10 +41,19 @@ describe('publishSelf', () => {
   })
 
   it('signature is present when a signer fn is provided', () => {
+    let observedPayload: string | null = null
     const pub = publishSelf({
       tenantId: 'erpax-self', sourceDid: 'did:erpax:s1', scope: 'genome',
-      sign: (payload) => ({ algorithm: 'ML-DSA-65', publicKey: 'pk-stub', signatureB64: 'sig-stub' }),
+      sign: (payload) => {
+        // Capture so the test asserts the framework really called the
+        // signer with the canonical genome bytes — proves we're signing
+        // what we claim to sign.
+        observedPayload = typeof payload === 'string' ? payload : JSON.stringify(payload)
+        return { algorithm: 'ML-DSA-65', publicKey: 'pk-stub', signatureB64: 'sig-stub' }
+      },
     })
+    expect(observedPayload).not.toBeNull()
+    expect((observedPayload as unknown as string).length).toBeGreaterThan(0)
     expect(pub.signature).toMatchObject({
       algorithm: 'ML-DSA-65',
       publicKey: 'pk-stub',

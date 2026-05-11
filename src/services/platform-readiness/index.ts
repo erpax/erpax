@@ -196,7 +196,8 @@ export function toolsByArea(tools: ReadonlyArray<ErpaxMcpTool>): ReadonlyMap<str
     list.push(t)
     out.set(area, list)
   }
-  // Sort tools within each area alphabetically.
-  for (const [k, v] of out) v.sort((a, b) => a.name.localeCompare(b.name))
+  // Sort tools within each area alphabetically (values only — the area
+  // keys are already grouped above).
+  for (const tools of out.values()) tools.sort((a, b) => a.name.localeCompare(b.name))
   return out
 }

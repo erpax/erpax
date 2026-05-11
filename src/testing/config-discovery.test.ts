@@ -9,7 +9,7 @@ import type { Config } from '@/payload-types'
  */
 
 import { describe, it, expect, beforeEach } from 'vitest';
-import type { Payload, CollectionConfig } from 'payload';
+import type { Payload, Field } from 'payload';
 import { PayloadConfigDiscovery, initializeDiscovery, resetDiscovery } from '../../src/testing';
 
 /**
@@ -275,7 +275,7 @@ describe('PayloadConfigDiscovery', () => {
       const usersConfig = config['users'];
 
       expect(usersConfig.fields.length).toBeGreaterThan(0);
-      expect(usersConfig.fields.map((f: any) => f.name)).toContain('email');
+      expect(usersConfig.fields.map((f: Field) => 'name' in f ? f.name : undefined)).toContain('email');
     });
   });
 

@@ -11,7 +11,8 @@
  * @see docs/STANDARDS.md §3 §4.4 §7
  */
 
-import { describe, it, expect, beforeEach, vi } from 'vitest'
+import { describe, it, expect, vi } from 'vitest'
+import type { PayloadRequest } from 'payload'
 import {
   requireSubscriptionPlan,
   blockWriteIfSuspended,
@@ -21,8 +22,15 @@ import {
   getSubscriptionStatus,
 } from '@/access/subscriptionGates'
 
-// Mock Payload request
-const createMockRequest = (overrides: any = {}) => ({
+/** Partial-shape overrides used by createMockRequest. */
+interface MockRequestOverrides {
+  readonly user?: Record<string, unknown>
+  readonly payload?: Record<string, unknown>
+}
+
+// Mock Payload request — cast to PayloadRequest at call sites; the
+// runtime mock is intentionally narrower than the full interface.
+const createMockRequest = (overrides: MockRequestOverrides = {}): PayloadRequest => ({
   user: {
     tenant: 'tenant-123',
     ...overrides.user,
@@ -32,10 +40,11 @@ const createMockRequest = (overrides: any = {}) => ({
     ...overrides.payload,
   },
   ...overrides,
-})
+} as unknown as PayloadRequest)
 
-// Mock subscription
-const createMockSubscription = (overrides: any = {}) => ({
+// Mock subscription — structural; full type lives in payload-types.ts
+// (auto-generated) which evolves with schema.
+const createMockSubscription = (overrides: Record<string, unknown> = {}) => ({
   id: 'sub-123',
   tenant: 'tenant-123',
   status: 'active',

@@ -244,8 +244,11 @@ describe('IncomeStatementGenerator', () => {
       const statement = generator.generate()
 
       const expectedGrossProfit = 650000 - 325000 // 325,000
-      // Gross profit should be in the statement sections
-      expect(statement.sections.length).toBeGreaterThan(2)
+      // The statement should contain a row with the expected gross profit.
+      const allRows = statement.sections.flatMap((s) => s.rows)
+      const grossProfitRow = allRows.find((r) => /gross profit/i.test(r.label))
+      expect(grossProfitRow).toBeDefined()
+      expect(grossProfitRow?.amount).toBe(expectedGrossProfit)
     })
 
     test('should calculate operating expenses correctly', () => {

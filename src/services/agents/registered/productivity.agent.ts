@@ -4,7 +4,7 @@
  *
  * @feature workflow_engine
  */
-import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '../types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '../types'
 import type { SpecChainStep } from '@/services/spec-generator'
 
 export const ProductivityAgent: DomainAgent = {

@@ -20,8 +20,13 @@
  * @audit ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited
  * @standard ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path
  */
-import { readFileSync, writeFileSync, existsSync } from 'node:fs'
-import { resolve } from 'node:path'
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, statSync } from 'node:fs'
+import { resolve, join } from 'node:path'
+import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
+import { harvestPlatformTranslations } from '@/services/i18n-harvest'
+import { dryCleanScan } from '@/services/agents/mcp/dry-clean'
+import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
+import { agentRegistry } from '@/services/agents/bootstrap'
 
 const REPO_ROOT_FALLBACK = (): string =>
   typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : '.'
@@ -229,8 +234,6 @@ export function applyEmitsLegacyToStructured(opts: { repoRoot?: string; dryRun?:
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
   const collDir = resolve(repoRoot, 'src/plugins/accounting/collections')
   if (!existsSync(collDir)) return { applied: 0, skipped: 0, changes: [] }
-  // Lazy import — only used when applying.
-  const { readdirSync, statSync } = require('node:fs') as typeof import('node:fs')
   const changes: AppliedChange[] = []
   let applied = 0
   let skipped = 0
@@ -306,20 +309,8 @@ function titleCaseFromSlug(slug: string): string {
  */
 export function applyChainE2eSeedScaffold(opts: { repoRoot?: string; dryRun?: boolean } = {}): ApplySummary {
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-  // Lazy-load to avoid pulling the registry module into the apply lib's
-  // import graph (keeps the apply lib node:test-friendly).
-  const { existsSync, mkdirSync, writeFileSync } = require('node:fs') as typeof import('node:fs')
-  const { join } = require('node:path') as typeof import('node:path')
-  let chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> = []
-  try {
-    // Use require for sync access; ts-strip handles the import.
-    const reg = require(join(repoRoot, 'src/services/business-chains/registry.ts')) as {
-      BUSINESS_CHAINS: Record<string, { id: string; workflowSlug?: string; name: string; description: string }>
-    }
-    chains = Object.values(reg.BUSINESS_CHAINS)
-  } catch {
-    return { applied: 0, skipped: 0, changes: [] }
-  }
+  const chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> =
+    Object.values(BUSINESS_CHAINS as Record<string, { id: string; workflowSlug?: string; name: string; description: string }>)
   const e2eDir = join(repoRoot, 'tests/e2e/erp-workflows')
   if (!existsSync(e2eDir)) {
     if (!opts.dryRun) mkdirSync(e2eDir, { recursive: true })
@@ -445,17 +436,8 @@ function pascal(slug: string): string {
  */
 export function applyChainShadcnSurfaceScaffold(opts: { repoRoot?: string; dryRun?: boolean } = {}): ApplySummary {
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-  const { existsSync, mkdirSync, writeFileSync } = require('node:fs') as typeof import('node:fs')
-  const { join } = require('node:path') as typeof import('node:path')
-  let chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> = []
-  try {
-    const reg = require(join(repoRoot, 'src/services/business-chains/registry.ts')) as {
-      BUSINESS_CHAINS: Record<string, { id: string; workflowSlug?: string; name: string; description: string }>
-    }
-    chains = Object.values(reg.BUSINESS_CHAINS)
-  } catch {
-    return { applied: 0, skipped: 0, changes: [] }
-  }
+  const chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> =
+    Object.values(BUSINESS_CHAINS as Record<string, { id: string; workflowSlug?: string; name: string; description: string }>)
   const componentsDir = join(repoRoot, 'src/components/chains')
   if (!existsSync(componentsDir) && !opts.dryRun) mkdirSync(componentsDir, { recursive: true })
   const changes: AppliedChange[] = []
@@ -559,8 +541,6 @@ export function applyEmergingGapScaffold(args: {
   gaps: ReadonlyArray<EmergingGapHint>
 }): ApplySummary {
   const repoRoot = args.repoRoot ?? REPO_ROOT_FALLBACK()
-  const { existsSync, mkdirSync, writeFileSync } = require('node:fs') as typeof import('node:fs')
-  const { join } = require('node:path') as typeof import('node:path')
   const baseDir = join(repoRoot, 'src/services/agents/mcp/generated')
   if (!existsSync(baseDir) && !args.dryRun) mkdirSync(baseDir, { recursive: true })
   let applied = 0
@@ -607,8 +587,6 @@ export function applyI18nHarvestDryRun(
   let applied = 0
   const changes: AppliedChange[] = []
   try {
-    // Lazy import to avoid cross-package coupling in test sandboxes.
-    const { harvestPlatformTranslations } = require('@/services/i18n-harvest') as typeof import('@/services/i18n-harvest')
     const harvested = harvestPlatformTranslations(repoRoot)
     applied = harvested.length
     if (harvested.length > 0) {
@@ -654,8 +632,6 @@ export function applyLocalizedTrueFlag(
   opts: { repoRoot?: string; dryRun?: boolean } = {},
 ): ApplySummary {
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-  const { readdirSync, statSync } = require('node:fs') as typeof import('node:fs')
-  const { join } = require('node:path') as typeof import('node:path')
   const collDir = join(repoRoot, 'src/plugins/accounting/collections')
   if (!existsSync(collDir)) return { applied: 0, skipped: 0, changes: [] }
   const changes: AppliedChange[] = []
@@ -714,21 +690,8 @@ export function applyAllConsistencyFixes(opts: { repoRoot?: string; dryRun?: boo
   // existing stubs are skipped.
   let l3: ApplySummary = { applied: 0, skipped: 0, changes: [] }
   try {
-    // Lazy import to avoid pulling tool-defs at module-load time.
-    const dryClean = require('@/services/agents/mcp/dry-clean') as {
-      dryCleanScan: (tools: unknown[]) => {
-        emergingGaps: ReadonlyArray<{
-          suggestedTool: string; area: string; evidence: ReadonlyArray<string>;
-          anchorPair: readonly [string, string]; anchorScore: number;
-        }>
-      }
-    }
-    const { buildErpaxMcpTools } = require('@/services/agents/mcp/tool-defs') as {
-      buildErpaxMcpTools: (registry: unknown) => unknown[]
-    }
-    const { agentRegistry } = require('@/services/agents/bootstrap') as { agentRegistry: unknown }
-    const tools = buildErpaxMcpTools(agentRegistry)
-    const report = dryClean.dryCleanScan(tools)
+    const tools = buildErpaxMcpTools(agentRegistry as Parameters<typeof buildErpaxMcpTools>[0])
+    const report = dryCleanScan(tools)
     const hints: EmergingGapHint[] = report.emergingGaps.map((g) => ({
       suggestedTool: g.suggestedTool,
       area: g.area,

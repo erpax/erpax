@@ -20,7 +20,7 @@ vi.mock('@/utilities/canUseDOM', () => ({
 vi.mock('@/utilities/urlUtils', () => ({
   buildOrigin: (proto: string, host: string) => `${proto}://${host}`,
   normalizeUrl: (url: string) => url.replace(/\/$/, ''),
-  resolvePublicSiteUrl: (url: string, tenant: any) => {
+  resolvePublicSiteUrl: (url: string, tenant: { publicSiteUrl?: string | null } | null | undefined) => {
     if (tenant?.publicSiteUrl) return tenant.publicSiteUrl
     return url
   },

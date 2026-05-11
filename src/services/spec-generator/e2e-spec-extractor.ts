@@ -73,8 +73,6 @@ const WORKFLOW_DECL = /^\s*const\s+WORKFLOW\s*=\s*['"]([a-z][a-z0-9-]*)['"]/m
  * with `${BASE}`-style interpolation (the description is the human-readable
  * trailing string).
  */
-const STRING_LITERAL = /(['"`])((?:(?!\1)[\s\S])*?)\1/g
-
 interface SpecCallSite {
   fn: 'captureWorkflowStep' | 'safeCaptureRoute' | 'recordUxGap'
   args: string[]

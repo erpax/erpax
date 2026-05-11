@@ -7,7 +7,7 @@
  * @see docs/STANDARDS.md §4.3 §7
  */
 
-import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import {
   PayloadConfigDiscovery,
   coerceValue,
@@ -15,6 +15,8 @@ import {
   createFieldValidator,
   registerCustomValidator,
   getCustomFieldValidator,
+  type FieldTypeValidator,
+  type FieldType,
 } from '../../src/testing/config-discovery'
 
 // =============================================================================
@@ -758,16 +760,16 @@ describe('FEATURE 5: Custom Fields & Extensibility', () => {
 
   describe('Custom Validator Registration', () => {
     it('should register custom validators', () => {
-      const customValidator = {
-        validate: (value: any) => ({
+      const customValidator: FieldTypeValidator = {
+        validate: (value: unknown) => ({
           valid: value === 'custom',
-          targetType: 'custom' as any,
+          targetType: 'custom' as FieldType,
         }),
-        coerce: (value: any) => ({
+        coerce: (value: unknown) => ({
           value: value,
           success: value === 'custom',
         }),
-        canCoerce: (value: any) => value === 'custom',
+        canCoerce: (value: unknown) => value === 'custom',
       }
 
       registerCustomValidator('customType', customValidator)
@@ -776,16 +778,16 @@ describe('FEATURE 5: Custom Fields & Extensibility', () => {
     })
 
     it('should use custom validators for validation', () => {
-      const customValidator = {
-        validate: (value: any) => ({
-          valid: typeof value === 'object' && value.customField !== undefined,
-          targetType: 'custom' as any,
+      const customValidator: FieldTypeValidator = {
+        validate: (value: unknown) => ({
+          valid: typeof value === 'object' && value !== null && (value as Record<string, unknown>).customField !== undefined,
+          targetType: 'custom' as FieldType,
         }),
-        coerce: (value: any) => ({
+        coerce: (value: unknown) => ({
           value: value,
           success: typeof value === 'object',
         }),
-        canCoerce: (value: any) => typeof value === 'object',
+        canCoerce: (value: unknown) => typeof value === 'object',
       }
 
       registerCustomValidator('customObject', customValidator)

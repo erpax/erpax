@@ -10,6 +10,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
+import type { PayloadRequest } from 'payload'
 import { generatePreviewPath } from '@/standards/rfc-3986/generate-preview-path'
 
 vi.mock('@/utilities/getPreviewSecret', () => ({
@@ -208,7 +209,7 @@ describe('generatePreviewPath', () => {
 
   describe('request context', () => {
     it('accepts request parameter', () => {
-      const req = { locale: 'es' } as any
+      const req = { locale: 'es' } as unknown as PayloadRequest
       const result = generatePreviewPath({
         collection: 'pages',
         slug: 'contact',
@@ -218,7 +219,7 @@ describe('generatePreviewPath', () => {
     })
 
     it('uses explicit locale over request locale', () => {
-      const req = { locale: 'es' } as any
+      const req = { locale: 'es' } as unknown as PayloadRequest
       const result = generatePreviewPath({
         collection: 'pages',
         slug: 'about',

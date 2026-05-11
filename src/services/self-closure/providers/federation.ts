@@ -58,6 +58,12 @@ export interface FederationPushResult {
   readonly completedAt: string
   /** When self-mode is used, the operator may want to retry the real peer later. */
   readonly retryPeerWhenReachable?: boolean
+  /** Original push target — preserved for retry + audit. Mirrors `params.peerUrl`. */
+  readonly originalPeerUrl?: string
+  /** Content-uuid the self-equivalence asserts. Mirrors `params.contentUuid`. */
+  readonly contentUuid?: string
+  /** Collection slug supplied at push time — audit context. */
+  readonly collection?: string
 }
 
 export const InternalFederationProvider: InternalProvider<FederationPushParams, FederationPushResult> = {
@@ -75,6 +81,9 @@ export const InternalFederationProvider: InternalProvider<FederationPushParams, 
       peerId: 'self',
       completedAt: new Date().toISOString(),
       retryPeerWhenReachable: true,
+      originalPeerUrl: params.peerUrl,
+      contentUuid: params.contentUuid,
+      collection: params.collection,
     }
   },
 }

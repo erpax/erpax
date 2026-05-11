@@ -35,7 +35,7 @@
  * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
  */
 
-import type { CollectionSpec, SpecCorpus, SpecExample } from './types'
+import type { SpecCorpus, SpecExample } from './types'
 import { generateChains } from './chain-registry-generator'
 
 /** Output of `generateSeed()` — the rendered TS source + provenance. */
@@ -96,14 +96,6 @@ function resolvePlaceholderToken(tok: string): string {
 function camelImplsName(chainId: string): string {
   const parts = chainId.toLowerCase().split('_')
   return parts[0] + parts.slice(1).map((p) => p[0].toUpperCase() + p.slice(1)).join('') + 'Impls'
-}
-
-/**
- * Convert a chain id to a kebab-case file basename.
- * `CONSIGNMENT_CYCLE` → `consignment-cycle`
- */
-function kebabFile(chainId: string): string {
-  return chainId.toLowerCase().replace(/_/g, '-')
 }
 
 /** Per-step impl block. */

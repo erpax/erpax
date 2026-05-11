@@ -10,6 +10,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
+import type { PayloadRequest } from 'payload'
 import {
   resolveLocale,
   isValidLocale,
@@ -17,7 +18,14 @@ import {
   ensureValidLocale,
   getSupportedLocales,
   isDefaultLocale,
+  type LocaleInput,
 } from '@/standards/bcp-47/locale-utils'
+
+/** Build a minimal `PayloadRequest`-shaped mock supplying only the
+ *  `locale` field these utilities read. The cast is honest: the
+ *  function only consults one field, and the test exercises that. */
+const mockReq = (locale: unknown): PayloadRequest =>
+  ({ locale } as unknown as PayloadRequest)
 
 describe('localeUtils', () => {
   describe('resolveLocale', () => {
@@ -39,22 +47,22 @@ describe('localeUtils', () => {
     })
 
     it('extracts locale from request context', () => {
-      const req = { locale: 'es' } as any
+      const req = mockReq('es')
       expect(resolveLocale(null, req)).toBe('es')
     })
 
     it('prefers explicit locale over request context', () => {
-      const req = { locale: 'es' } as any
+      const req = mockReq('es')
       expect(resolveLocale('de', req)).toBe('de')
     })
 
     it('falls back to default when request locale is invalid type', () => {
-      const req = { locale: 123 } as any
+      const req = mockReq(123)
       expect(resolveLocale(null, req)).toBe('en')
     })
 
     it('prioritizes: string > locale object > request > default', () => {
-      const req = { locale: 'it' } as any
+      const req = mockReq('it')
       const locale = { code: 'fr' }
 
       expect(resolveLocale('es', req)).toBe('es')
@@ -98,7 +106,7 @@ describe('localeUtils', () => {
     })
 
     it('falls back to default when locale input type is not resolvable', () => {
-      expect(getSafeLocale(123 as any)).toBe('en')
+      expect(getSafeLocale(123 as unknown as LocaleInput)).toBe('en')
     })
 
     it('validates after resolution from object', () => {
@@ -107,12 +115,12 @@ describe('localeUtils', () => {
     })
 
     it('validates after resolution from request', () => {
-      const req = { locale: 'es' } as any
+      const req = mockReq('es')
       expect(getSafeLocale(null, req)).toBe('es')
     })
 
     it('returns null when resolved locale from request is invalid', () => {
-      const req = { locale: 'invalid' } as any
+      const req = mockReq('invalid')
       expect(getSafeLocale(null, req)).toBeNull()
     })
   })
@@ -127,7 +135,7 @@ describe('localeUtils', () => {
     })
 
     it('returns default locale when resolved is invalid', () => {
-      expect(ensureValidLocale(123 as any)).toBe('en')
+      expect(ensureValidLocale(123 as unknown as LocaleInput)).toBe('en')
     })
 
     it('never returns null or undefined', () => {
@@ -142,12 +150,12 @@ describe('localeUtils', () => {
     })
 
     it('returns valid locale from request', () => {
-      const req = { locale: 'it' } as any
+      const req = mockReq('it')
       expect(ensureValidLocale(null, req)).toBe('it')
     })
 
     it('returns default for invalid locale from request', () => {
-      const req = { locale: 'invalid' } as any
+      const req = mockReq('invalid')
       expect(ensureValidLocale(null, req)).toBe('en')
     })
   })

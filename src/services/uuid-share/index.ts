@@ -184,7 +184,7 @@ export interface GrantContext {
   readonly payload: Payload
   readonly mediator?: {
     auditChainAppendLinked(payload: Record<string, unknown>): Promise<UuidLinkedLeaf | null>
-    signUuid?: <T>(uuid: string, kid?: string) => Promise<unknown>
+    signUuid?: (uuid: string, kid?: string) => Promise<unknown>
   }
 }
 

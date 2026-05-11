@@ -22,7 +22,7 @@
  */
 
 import { decodeStructured, CAPABILITIES, SLOT_TAGS } from './index'
-import type { SlotTag, SlotName } from './index'
+import type { SlotName } from './index'
 
 /**
  * Expected capability profile per slot. When a uuid's slot tag falls

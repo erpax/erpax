@@ -24,7 +24,7 @@
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import {
-  computeKvBindingUuid, resolveKeyUuid, UuidMap, toUuidMap,
+  computeKvBindingUuid, resolveKeyUuid, toUuidMap,
 } from '@/services/uuid-kv'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { assertTenantMatch } from './_guards'

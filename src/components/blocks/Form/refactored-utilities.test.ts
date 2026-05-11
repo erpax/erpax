@@ -11,6 +11,7 @@
  */
 
 import { describe, it, expect, beforeEach, vi } from 'vitest'
+import type { PayloadRequest } from 'payload'
 
 import * as TextMod from '@/components/blocks/Form/Text'
 import * as EmailMod from '@/components/blocks/Form/Email'
@@ -82,7 +83,7 @@ describe('Refactored Utilities Integration', () => {
 
       expect(resolveLocale(stringLocale)).toBe('de')
       expect(resolveLocale(objectLocale)).toBe('fr')
-      expect(resolveLocale(null, request as any)).toBe('es')
+      expect(resolveLocale(null, request as unknown as PayloadRequest)).toBe('es')
     })
 
     it('locale validation works across different sources', () => {
@@ -119,7 +120,7 @@ describe('Refactored Utilities Integration', () => {
       ] as const
 
       functions.forEach((fn) => {
-        expect(typeof (payloadCache as any)[fn]).toBe('function')
+        expect(typeof (payloadCache as Record<string, unknown>)[fn]).toBe('function')
       })
     })
 

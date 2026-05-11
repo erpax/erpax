@@ -58,14 +58,14 @@ export const EVENT_NOTIFICATIONS: ReadonlyArray<NotificationTemplate> = [
     category: 'transactional',
     channels: ['in_app'],
     subject: (e) => `Bill received: ${(e.payload as { billId?: string }).billId ?? ''}`,
-    body:    (e) => `A new vendor bill has been received and requires approval.`,
+    body:    (e) => `Vendor bill ${(e.payload as { billId?: string }).billId ?? ''} has been received and requires approval.`,
   },
   {
     eventType: 'bill:paid',
     category: 'transactional',
     channels: ['email', 'in_app'],
     subject: (e) => `Bill paid: ${(e.payload as { billId?: string }).billId ?? ''}`,
-    body:    (e) => `Vendor bill payment has been sent.`,
+    body:    (e) => `Vendor bill payment ${(e.payload as { billId?: string }).billId ?? ''} has been sent.`,
   },
   {
     eventType: 'subscription:invoiced',
@@ -85,7 +85,7 @@ export const EVENT_NOTIFICATIONS: ReadonlyArray<NotificationTemplate> = [
     eventType: 'milestone:achieved',
     category: 'transactional',
     channels: ['email', 'in_app'],
-    subject: (e) => `Project milestone achieved`,
+    subject: (e) => `Project milestone achieved: ${(e.payload as { milestoneName?: string }).milestoneName ?? ''}`,
     body:    (e) => `Milestone for project ${(e.payload as { projectId?: string }).projectId ?? ''} has been achieved.`,
   },
   {

@@ -137,7 +137,7 @@ export async function applyI18nHarvestToPayload(args: {
   harvested: ReadonlyArray<HarvestedTranslation>
 }): Promise<{ inserted: number; updated: number; skipped: number }> {
   let inserted = 0
-  let updated = 0
+  const updated = 0
   let skipped = 0
   for (const h of args.harvested) {
     const contentUuid = harvestContentUuid(h)

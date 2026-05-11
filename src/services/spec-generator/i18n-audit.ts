@@ -21,7 +21,6 @@ import {
   workflowKeys, workflowStepKey, defaultEnglishFor,
   STUB_PREFIX,
 } from './i18n-keys'
-import { chainIdForWorkflow } from './multimedia-generator'
 
 /** A single missing-key row. */
 export interface MissingKey {

@@ -76,19 +76,22 @@ const postPeriodEnd: ChainStepImpl = async (payload, ctx) => {
   return 'pea:posted'
 }
 
-const postDepreciation: ChainStepImpl = async (payload, ctx) => {
-  // DepreciationSchedules requires `fixedAsset`. Without one in the chain
-  // context, emit silently rather than violate the FK contract.
+const postDepreciation: ChainStepImpl = async (_payload, _ctx) => {
+  // DepreciationSchedules requires `fixedAsset` (FK) + IFRS-16 schedule.
+  // Without a fixed-asset fixture in the chain context, emit silently
+  // for chain symmetry. The depreciation service handles the real path.
   return 'depreciation:posted'
 }
 
-const postLeasePeriod: ChainStepImpl = async (payload, ctx) => {
-  // Skipped lease assumed; emit silently for chain symmetry.
+const postLeasePeriod: ChainStepImpl = async (_payload, _ctx) => {
+  // LeasePeriodPostings requires lease + 6 GL-account FKs + amortisation
+  // math. The lease-period-posting hook does the real path.
   return 'lpp:posted'
 }
 
-const snapshotWip: ChainStepImpl = async (payload, ctx) => {
-  // Without a project setup, post a zero-snapshot for chain symmetry.
+const snapshotWip: ChainStepImpl = async (_payload, _ctx) => {
+  // WipSnapshots requires project + period + percent-complete math.
+  // The WIP-snapshot service does the real path.
   return 'wip:snapshot:posted'
 }
 
@@ -113,7 +116,7 @@ const revalueFx: ChainStepImpl = async (payload, ctx) => {
   return 'fx:revalued'
 }
 
-const reconcileBank: ChainStepImpl = async (payload, ctx) => {
+const reconcileBank: ChainStepImpl = async (_payload, _ctx) => {
   // BankReconciliations requires `bankAccount` (FK). Without one in the
   // chain context, emit silently rather than violate the FK contract.
   return 'bank:reconciled'
@@ -140,13 +143,16 @@ const reconcileAcct: ChainStepImpl = async (payload, ctx) => {
   return 'acct:reconciled'
 }
 
-const postIntercompany: ChainStepImpl = async (payload, ctx) => {
-  // Single-entity tenant — emit silently.
+const postIntercompany: ChainStepImpl = async (_payload, _ctx) => {
+  // IntercompanyTransactions requires `fromTenant`/`toTenant` (or
+  // `fromLegalEntity`/`toLegalEntity`) and matching JE pairs. Single-
+  // entity tenant — emit silently.
   return 'ic:posted'
 }
 
-const postConsolElim: ChainStepImpl = async (payload, ctx) => {
-  // Single-entity tenant — emit silently.
+const postConsolElim: ChainStepImpl = async (_payload, _ctx) => {
+  // ConsolidationEliminations requires the subsidiaries array + a
+  // sourceIntercompany FK. Single-entity tenant — emit silently.
   return 'consol:elim:posted'
 }
 
@@ -168,8 +174,10 @@ const postRounding: ChainStepImpl = async (payload, ctx) => {
   return 'round:posted'
 }
 
-const postPpa: ChainStepImpl = async (payload, ctx) => {
-  // No prior-period error to correct in happy path.
+const postPpa: ChainStepImpl = async (_payload, _ctx) => {
+  // PriorPeriodAdjustments requires `priorPeriod` (FK to fiscal-periods)
+  // + restatement JE. No prior-period error in happy path — emit
+  // silently for chain symmetry.
   return 'ppa:posted'
 }
 

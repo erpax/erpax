@@ -19,7 +19,7 @@ import {
   IncomeStatementGenerator,
   CashFlowStatementGenerator,
 } from '@/plugins/export/statements'
-import { FinancialData, ExportOptions } from '@/plugins/export/types'
+import { FinancialData, FinancialStatement, ExportOptions } from '@/plugins/export/types'
 
 describe('Export Plugin Integration', () => {
   const sampleFinancialData: FinancialData = {
@@ -162,6 +162,8 @@ describe('Export Plugin Integration', () => {
       let totalAccounts = 0
       statement.sections.forEach((section) => {
         section.rows.forEach((row) => {
+          // Each row tracks an account; verify it's structurally present.
+          expect(row).toBeDefined()
           totalAccounts++
         })
       })
@@ -213,6 +215,9 @@ describe('Export Plugin Integration', () => {
 
       const end = performance.now()
       const duration = end - start
+      // Sanity-check the generator produced output before claiming the
+      // timing measurement is meaningful.
+      expect(statement.sections.length).toBeGreaterThan(0)
 
       expect(duration).toBeLessThan(100) // Should generate in <100ms
     })
@@ -306,10 +311,10 @@ describe('Export Plugin Integration', () => {
 
   describe('Error Recovery', () => {
     test('should handle export failure gracefully', async () => {
-      const invalidStatement: any = {
+      const invalidStatement = {
         title: null,
         sections: 'invalid',
-      }
+      } as unknown as FinancialStatement
 
       const result = await PDFExporter.exportStatement(invalidStatement, {
         format: 'pdf',
@@ -321,7 +326,7 @@ describe('Export Plugin Integration', () => {
     })
 
     test('should provide meaningful error messages', async () => {
-      const generator = new BalanceSheetGenerator({} as any, testDate)
+      const generator = new BalanceSheetGenerator({} as unknown as FinancialData, testDate)
 
       // Should not throw, should handle gracefully
       expect(() => generator.generate()).not.toThrow()

@@ -232,7 +232,7 @@ export interface StreamCoherenceResult {
  */
 export function checkWindowCoherence(events: ReadonlyArray<ClockedEvent>): StreamCoherenceResult {
   let last = -Infinity
-  let windowsChecked = 1
+  const windowsChecked = 1
   const violations: { at: number; expected: number; got: number }[] = []
   for (let i = 0; i < events.length; i++) {
     const cur = events[i]!.lamport

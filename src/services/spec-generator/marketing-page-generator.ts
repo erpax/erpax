@@ -49,9 +49,8 @@ import type { SpecCorpus, CollectionSpec, SpecStandard } from './types'
 import type { EvidenceCorpus, WorkflowEvidence } from './evidence-collector'
 import type { E2eSpecCorpus, E2eWorkflowSpec, UxGap } from './e2e-spec-extractor'
 import type { Translator } from './multimedia-generator'
-import { chainIdForWorkflow, generateMultimediaForWorkflow } from './multimedia-generator'
-import { workflowKeys, chainKeys, collectionKeys, humaniseSlug } from './i18n-keys'
-import { SPEC_TEMPLATES, compose } from './spec-templates'
+import { chainIdForWorkflow } from './multimedia-generator'
+import { workflowKeys, chainKeys, humaniseSlug } from './i18n-keys'
 
 export interface MarketingPageOptions {
   readonly locale: string
@@ -142,11 +141,6 @@ export function generateMarketingPage(args: {
   const description = tt(t, wKeys.description, locale, defaultLocale, `${title} — process walk-through`)
   const heroCaption = tt(t, wKeys.videoCaption, locale, defaultLocale, 'Process walk-through')
   const chainTitle = cKeys ? tt(t, cKeys.title, locale, defaultLocale, humaniseSlug(chainId!)) : undefined
-
-  // Pull the underlying multimedia HTML — re-use the i18n-aware generator.
-  const mm = wf
-    ? generateMultimediaForWorkflow(wf, { locale, defaultLocale, t })
-    : { htmlSnippet: '<p>No multimedia evidence captured yet.</p>' } as { htmlSnippet: string }
 
   // Filter the standards corpus down to specs that actually reference this
   // workflow's chain (else every standard from every collection floods the

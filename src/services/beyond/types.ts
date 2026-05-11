@@ -15,7 +15,7 @@
  * @standard XBRL inline-XBRL (machine-explainability of financial values)
  */
 
-import type { AgentEffect, AuditLeaf } from '@/services/agents/types'
+import type { AgentEffect } from '@/services/agents/types'
 
 // ── Law 11: Causal provenance (W3C PROV) ─────────────────────────────
 

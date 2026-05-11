@@ -121,6 +121,7 @@ describe('ExcelExporter', () => {
 
     test('should handle statements with multiple sections', async () => {
       const result = await ExcelExporter.exportStatement(mockStatement, mockOptions)
+      expect(result.success).toBe(true)
 
       // Verify file was created and has content
       const filePath = '/tmp/exports/test_income_statement.xlsx'
@@ -258,10 +259,12 @@ describe('ExcelExporter', () => {
 
   describe('Error Handling', () => {
     test('should handle invalid statement data', async () => {
-      const invalidStatement: any = {
+      // Intentionally malformed — exercises the error path of the
+      // exporter. Cast through `unknown` to bypass the type guard.
+      const invalidStatement = {
         title: null,
         sections: 'invalid',
-      }
+      } as unknown as FinancialStatement
 
       const result = await ExcelExporter.exportStatement(invalidStatement, mockOptions)
 
@@ -270,10 +273,10 @@ describe('ExcelExporter', () => {
     })
 
     test('should return proper error structure on failure', async () => {
-      const invalidStatement: any = {
+      const invalidStatement = {
         title: 123, // Invalid type
         sections: null, // Should be array
-      }
+      } as unknown as FinancialStatement
 
       const result = await ExcelExporter.exportStatement(invalidStatement, mockOptions)
 

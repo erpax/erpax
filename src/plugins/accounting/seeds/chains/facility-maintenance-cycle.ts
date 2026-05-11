@@ -241,7 +241,7 @@ const completeWorkOrder: ChainStepImpl = async (payload, ctx, state) => {
   return 'wo:completed'
 }
 
-const inspect: ChainStepImpl = async (payload, ctx, state) => {
+const inspect: ChainStepImpl = async (payload, ctx, _state) => {
   await payload.create({
     collection: 'quality-inspections',
     data: {
