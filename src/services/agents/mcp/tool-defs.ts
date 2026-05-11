@@ -32,6 +32,8 @@ import { anchorRoot, listAnchors, NOTARY_STUB_BACKEND } from '@/services/anchori
 import { tenantPins } from '@/services/archival'
 import { listProposals } from '@/services/meta-automation'
 import { listAgentCapabilities } from '@/services/beyond'
+import { seedFromE2e, seedFromSpec, exportMediaBundle, importMediaBundle } from '@/services/website'
+import { deriveSeoMeta, generateChannelVariants, reviewBrandVoice, auditSeo, buildOnboardingDrip, checkMarketingTransparency, ERPAX_MARKETING_STRATEGY } from '@/services/website/marketing-skills'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -456,6 +458,92 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Conservation Law 28: list every tenant subscription whose subscribed-uuid has been superseded in the tenant\'s jurisdiction. The MetaSkillAgent auto-applies safe rebinds.',
       parameters: { tenantId: z.string(), jurisdiction: z.string() },
       async handler({ tenantId, jurisdiction }) { return json(checkStandardSupersessionsResolved(tenantId as string, jurisdiction as string)) },
+    },
+    // ── Slice MMMMMM — interactive website (Pages from e2e + spec; import/export) ──
+    {
+      name: 'erpax.website.seedFromE2e',
+      description: 'Slice MMMMMM: walk marketing/*.<locale>.html (Playwright e2e multimedia output) and return PageSeed[] ready for Payload\'s pages collection. The seeds carry the full per-locale walkthrough HTML — hero + storyboard + UX-gap callouts + audit-trail footer.',
+      parameters: {},
+      async handler() { return json(seedFromE2e({ repoRoot: process.cwd() })) },
+    },
+    {
+      name: 'erpax.website.seedFromSpec',
+      description: 'Slice MMMMMM: every CollectionSpec / Chain / Agent / TenantRoleProfile / standard family becomes a PageSeed for the public website. Browseable spec corpus + try-it-via-MCP CTA on every page.',
+      parameters: {
+        tenantId: z.string(),
+        include: z.array(z.enum(['collection', 'chain', 'agent', 'role', 'standard'])).optional(),
+      },
+      async handler({ tenantId, include }) {
+        return json(await seedFromSpec({ tenantId: tenantId as string, include: include as never }))
+      },
+    },
+    {
+      name: 'erpax.website.exportMediaBundle',
+      description: 'Slice MMMMMM: serialise an array of PageSeed as ndjson — federation-friendly bundle that any peer ERPax instance can importMediaBundle.',
+      parameters: { seeds: z.array(z.record(z.unknown())) },
+      async handler({ seeds }) { return text(exportMediaBundle(seeds as never)) },
+    },
+    {
+      name: 'erpax.marketing.strategy',
+      description: 'Slice MMMMMM: return ERPax\'s declared marketing strategy + the 7 operationalised rules. Per user "transparency without security compromise".',
+      parameters: {},
+      async handler() { return json(ERPAX_MARKETING_STRATEGY) },
+    },
+    {
+      name: 'erpax.marketing.deriveSeo',
+      description: 'Auto-derive SEO meta (title + description + OG + Schema.org JSON-LD + keyword set) from a page title + body + axis hint.',
+      parameters: {
+        title: z.string(), description: z.string(),
+        axis: z.enum(['collection', 'chain', 'agent', 'role', 'standard', 'walkthrough']),
+        url: z.string().optional(), ogImage: z.string().optional(),
+      },
+      async handler(args) { return json(deriveSeoMeta(args as never)) },
+    },
+    {
+      name: 'erpax.marketing.channelVariants',
+      description: 'Generate channel-specific copy (blog post / email / press release / social X / social LinkedIn) from a base hero + body + standards count.',
+      parameters: {
+        title: z.string(), hero: z.string(), body: z.string(),
+        citationCount: z.number(),
+        cta: z.object({ url: z.string(), label: z.string() }),
+      },
+      async handler(args) { return json(generateChannelVariants(args as never)) },
+    },
+    {
+      name: 'erpax.marketing.reviewBrandVoice',
+      description: 'Brand-voice review against ERPax\'s plain-precise default voice. Flags marketing fluff (revolutionary / leverage / synergy) + sentences > 250 chars.',
+      parameters: { text: z.string(), voice: z.enum(['plain-precise','bold-confident','measured-regulatory','community-warm']).optional() },
+      async handler({ text, voice }) {
+        return json(reviewBrandVoice(text as string, voice as never ?? 'plain-precise'))
+      },
+    },
+    {
+      name: 'erpax.marketing.auditSeo',
+      description: 'SEO audit on a SeoMeta + body — title length / description length / keyword density / first-3 keywords appear in body.',
+      parameters: { meta: z.record(z.unknown()), body: z.string() },
+      async handler({ meta, body }) { return json(auditSeo(meta as never, body as string)) },
+    },
+    {
+      name: 'erpax.marketing.transparencyCheck',
+      description: 'Per "transparency without security compromise" strategy: verify a page about to publish carries no PII, sources only from erpax-platform/synthetic-* tenants, every standards claim resolves. Critical findings escalate; pages NEVER auto-publish if this fails.',
+      parameters: {
+        pageBody: z.string(),
+        declaredStandards: z.array(z.object({ body: z.string(), id: z.string() })),
+        sourceTenant: z.string(),
+      },
+      async handler(args) { return json(checkMarketingTransparency(args as never)) },
+    },
+    {
+      name: 'erpax.marketing.buildOnboardingDrip',
+      description: 'Generate the 5-email post-checkout onboarding sequence for a new tenant role (welcome / first MCP call / first audit pack / standards posture / quarterly filing).',
+      parameters: { roleProfileId: z.string() },
+      async handler({ roleProfileId }) { return json(buildOnboardingDrip(roleProfileId as string)) },
+    },
+    {
+      name: 'erpax.website.importMediaBundle',
+      description: 'Slice MMMMMM: parse a federation-broadcast ndjson bundle into PageSeed[] and return it for ingestion into the local Payload pages collection.',
+      parameters: { ndjson: z.string() },
+      async handler({ ndjson }) { return json(importMediaBundle(ndjson as string)) },
     },
     {
       name: 'erpax.standards.classify',
