@@ -100,6 +100,9 @@ import {
   DIMENSIONAL_PLUGINS, checkDimensionalCoverage, dimensionForCollection,
   totalCollectionCount, type DimensionId,
 } from '@/services/plugins/dimensions'
+import {
+  DIMENSION_PLUGIN_FACTORIES, allDimensionalPlugins, checkDimensionalPluginScaffolded,
+} from '@/plugins/dimensions'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1348,6 +1351,24 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Slice LLLLLLLL — total collection counts: canonical + new + total across all 10 dimensions. Drives the conservation-dashboard surface\'s dimensional breakdown card (W3C JSON-LD 1.1).',
       parameters: {},
       async handler() { return json(totalCollectionCount()) },
+    },
+    {
+      name: 'erpax.platform.dimensionalPluginFactories',
+      description: 'Slice MMMMMMMM — return the 10 dimension plugin factory ids (BBBBB cut-prep). Each is a no-op today; slice BBBBB will fill them with collection moves on the local machine. ISO/IEC 25010:2023 §5.7 modularity.',
+      parameters: {},
+      async handler() { return json(Object.keys(DIMENSION_PLUGIN_FACTORIES)) },
+    },
+    {
+      name: 'erpax.platform.allDimensionalPluginsCount',
+      description: 'Slice MMMMMMMM — return the count of declared dimension plugin factories (should be 10, one per §0b vortex).',
+      parameters: {},
+      async handler() { return json({ count: allDimensionalPlugins().length }) },
+    },
+    {
+      name: 'erpax.platform.checkDimensionalPluginScaffolded',
+      description: 'Conservation Law 51 — every dimension declared in DIMENSIONAL_PLUGINS has a matching plugin factory in DIMENSION_PLUGIN_FACTORIES. Symmetry catches drift (dimension added without factory, or vice versa).',
+      parameters: {},
+      async handler() { return json(checkDimensionalPluginScaffolded()) },
     },
     {
       name: 'erpax.platform.checkDimensionalCoverage',

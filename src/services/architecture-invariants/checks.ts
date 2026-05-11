@@ -57,6 +57,7 @@ import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
 import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/services/integrity/type-uuid'
 import { checkInfiniteFiniteness } from '@/services/integrity/uuid-stream'
 import { checkDimensionalCoverage } from '@/services/plugins/dimensions'
+import { checkDimensionalPluginScaffolded } from '@/plugins/dimensions'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1441,6 +1442,27 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 51 — `checkDimensionalPluginScaffoldedInvariant`.
+ * Slice MMMMMMMM (2026-05-11). Symmetry between LLLLLLLL's
+ * dimensional declarations and the plugin factory entry-points
+ * scaffolded in `src/plugins/dimensions/index.ts`. BBBBB will fill
+ * each factory body on the local machine.
+ */
+export function checkDimensionalPluginScaffoldedInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkDimensionalPluginScaffolded()
+  if (result.ok) {
+    return pass('expansion', 'dimensional-plugin-scaffolded',
+      `10 plugin factories symmetric with 10 dimension declarations (Law 51 satisfied)`)
+  }
+  const reasons: string[] = []
+  if (result.missingFactories.length > 0) reasons.push(`missing factories: ${result.missingFactories.join(',')}`)
+  if (result.orphanFactories.length > 0) reasons.push(`orphan factories: ${result.orphanFactories.join(',')}`)
+  return fail('expansion', 'dimensional-plugin-scaffolded',
+    `dimension/plugin asymmetry: ${reasons.join(' / ')}`,
+    [...result.missingFactories, ...result.orphanFactories])
 }
 
 /**

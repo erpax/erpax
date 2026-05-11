@@ -1962,6 +1962,54 @@ Eight self-properties: **the MCP layer now discovers itself, builds itself, stan
 
 @standard ISO/IEC 25010:2023 §5.4 reusability — DRY by detection; ISO/IEC 25010:2023 §5.7 modularity; ISO 19011:2018 §6.4.6 (every duplication finding audit-trailed).
 
+## 0af. Dimensional plugin scaffolding (BBBBB cut-prep)
+
+Slice MMMMMMMM ships `src/plugins/dimensions/index.ts` — the 10 plugin factory entry-points predicted by §0ad's dimensional taxonomy. Each is a **no-op factory today**; the long-pending **Slice BBBBB** (split monolithic plugin into N composable per-domain DRY plugins) will fill them with the actual collection moves on the local machine.
+
+### Why scaffold first
+
+Splitting a 150+ collection monolithic plugin into 10 dimensional plugins is a multi-day file-move migration that benefits from a **typed landing site**. By declaring all 10 factory exports up front:
+
+1. `payload.config.ts` can already wire `allDimensionalPlugins()` into its `plugins:` array — slot is reserved.
+2. Each BBBBB cut moves a few collections at a time; `tsc` validates the cut without anyone needing to refactor the wiring.
+3. Conservation Law 51 enforces symmetry — a new dimension declared without a factory (or vice versa) breaks the boot suite.
+
+### The 10 factories
+
+```ts
+domainDimensionPlugin         (A — Domain)
+substrateDimensionPlugin      (B — Substrate)
+processDimensionPlugin        (C — Process)
+conservationDimensionPlugin   (D — Conservation)
+tenantRoleDimensionPlugin     (E — Tenant Role)
+integrityDimensionPlugin      (F — Integrity)
+beyondDimensionPlugin         (G — Beyond)
+clientsDimensionPlugin        (H — Clients)
+federationDimensionPlugin     (I — Federation)
+metaEvolutionDimensionPlugin  (J — Meta-evolution)
+```
+
+`DIMENSION_PLUGIN_FACTORIES` exposes the map; `allDimensionalPlugins()` returns them in declared order.
+
+### Conservation Law 51 — scaffolding symmetry
+
+`checkDimensionalPluginScaffoldedInvariant`: every dimension declared in `DIMENSIONAL_PLUGINS` (slice LLLLLLLL) MUST have a matching factory in `DIMENSION_PLUGIN_FACTORIES`. Symmetry check:
+
+- `missingFactories`: dimension declared, no factory → BBBBB hasn't caught up.
+- `orphanFactories`: factory declared, no dimension → leftover after a removal.
+
+### MCP surface (slice MMMMMMMM)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.dimensionalPluginFactories` | Return the 10 factory ids |
+| `erpax.platform.allDimensionalPluginsCount` | Count (should be 10) |
+| `erpax.platform.checkDimensionalPluginScaffolded` | Conservation Law 51 verdict |
+
+### Standards anchoring
+
+@standard W3C Web Components composition pattern; ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries; ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
