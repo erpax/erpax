@@ -100,6 +100,7 @@ export async function runAllInvariants(
   if (!skip.has('standards')) {
     results.push(C.checkSpecCoverage100Percent(ctx))   // Law 1
     results.push(C.checkI18nCoverageStrict(ctx))       // Law 3b
+    results.push(C.checkMcpToolStandardizationInvariant(ctx))  // Law 38 — XXXXXX
   }
   if (!skip.has('expansion')) {
     results.push(C.checkEventGraphConnected(ctx))      // Law 4
