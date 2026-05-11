@@ -390,6 +390,72 @@ The platform is the compliance because:
 
 Slice LLLLL slots in after the agent rollout (DDDDD–IIIII) and before the plugin split (BBBBB), so domain agents already exist to handle the new PSP-specific chains.
 
+## 7c. Self-evolution — ERPax creates itself
+
+After slices DDDDD–ZZZZZ + AAAAAA, the platform is **architecturally self-sufficient**: every primitive needed to extend itself without human intervention is in place. The self-evolution loop:
+
+```
+                    ┌──────────────────────────────────────────────────┐
+                    │  ERPax self-evolution loop (post-AAAAAA)         │
+                    └──────────────────────────────────────────────────┘
+
+      MetaSkillAgent                Conservation                 Spec generators
+      hourly cron                   invariants                   (CCCCC pipeline)
+            │                            │                            │
+            │ ① runAllInvariants()       │                            │
+            ├───────────────────────────▶│                            │
+            │                            │                            │
+            │ ② warn/fail per Law        │                            │
+            │◀───────────────────────────┤                            │
+            │                            │                            │
+            │ ③ ctx.mcp.callTool('erpax.spec.fillBanner', {…})        │
+            ├────────────────────────────────────────────────────────▶│
+            │                                                         │
+            │ ④ regenerated artefacts (seeds, tests, marketing, i18n) │
+            │◀────────────────────────────────────────────────────────┤
+            │                                                         │
+            │ ⑤ Federation broadcast — peer ERPax instances           │
+            ├──────────────────────────────▶ (other tenants pull)     │
+            │                                                         │
+            │ ⑥ Audit trail + Merkle anchor (QQQQ + BBBBBB)           │
+            ├────────────────────▶ public chain / IPFS                │
+            │                                                         │
+            │ ⑦ next tick — Law 11 traces the causal chain            │
+            └─────────────────────────── loop continues ──────────────┘
+```
+
+**Five primitives carry this loop:**
+
+1. **MetaSkillAgent** (slice IIIII) — hourly `onSchedule` that sweeps + acts.
+2. **Conservation invariants** (Laws 1–22) — provide the WARN/FAIL signal the meta-agent acts on.
+3. **MCP tools** (16+) — the meta-agent's effectors; same surface external clients use.
+4. **Spec generators** (CCCCC pipeline) — turn JSDoc edits into seeds/tests/marketing/i18n auto-magically.
+5. **Federation** (AAAAAA) — peer ERPax instances pull each other's improvements (a meta-agent in one tenant fixes a gap; the federation manifest broadcasts the uuid; peers ingest under their own trust policies).
+
+**What the meta-agent can do autonomously today** (with no further human work):
+
+- Detect any of 22 conservation-law violations (`erpax.invariants.runOnSchedule`).
+- For Law 1 violations → propose `@standard` citations via `erpax.spec.suggestStandards` + `erpax.spec.fillBanner`.
+- For Law 3b (i18n strict) → enqueue translation tasks via `erpax.i18n.translateBatch`.
+- For Law 4 (event graph) → propose `@subscribes` declarations in agents that should listen.
+- For Law 7 (agent ownership) → propose new agents for unowned chain steps.
+- For Law 8 (content integrity) → trigger reconciliation via `erpax.integrity.auditTenant`.
+- For Law 10 (referential harmony) → propose rebinds via `erpax.refs.findDangling` + rebind suggestion.
+- For Law 11 (provenance) → backfill missing causal links from audit chain.
+- For Law 12 (replay) → flag chain steps that aren't replay-stable.
+- For Law 13 (tenant isolation) → audit query traces.
+- For Law 15 (cost) / Law 16 (carbon) → throttle expensive agents.
+- For Law 17 (capability) → propose minimal capability matrix for new agents.
+- For Law 19 (explainability) → auto-generate explanations on missing fields.
+- For Law 20 (reversibility) → plan rollback paths for risky migrations.
+- For Law 22 (AI audit) → flag AI-touched fields without `AiProvenance`.
+
+**The hand-off contract:**
+
+The maintainer's job becomes **declare the spec, set the policy, sign off on the meta-agent's proposals**. The platform handles regeneration, propagation, verification, audit, marketing, i18n, federation, anchoring, archival. New compliance regimes land by adding a new `TenantRoleProfile` (slice LLLLL pattern); new domain capabilities by adding a `DomainAgent` (slice EEEEE pattern); new conservation properties by adding a `Law N` (slice DDDDD/RRRRR/ZZZZZ pattern). All composable; all spec-derived; all auto-tested; all auto-marketed; all auto-federated.
+
+**Slices AAAAAA → EEEEEE are the substrate's own evolution roadmap** — not human work but platform work, surfaced through the MetaSkillAgent's proposals once each substrate primitive lands. The maintainer reviews; the platform builds.
+
 ## 8. Out of scope (this design)
 
 - LLM integration for the agents (they're rule-driven first; LLM hooks come later as separate effect kind `'llm-call'`)
