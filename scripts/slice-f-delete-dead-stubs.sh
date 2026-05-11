@@ -248,6 +248,22 @@ rm -f \
 echo "==> Slice NN: deleting fuse_hidden cruft from perl -i rewrites"
 find src tests scripts -name '.fuse_hidden*' -type f -delete 2>/dev/null || true
 
+echo "==> Slice CCCCC-prep (2026-05-11): deleting tests/_attic/ — emptied test subdirs after co-location"
+# Every spec moved to its sibling src/ position; the now-empty
+# tests/{access,utilities,jobs,testing,int,standards,architecture}
+# subdirs were staged at tests/_attic/. Drop them now that we have unlink.
+rm -rf tests/_attic 2>/dev/null || true
+
+echo "==> Slice AAAAA-cont (2026-05-11): deleting _attic/ — dead stubs + .bak files staged for removal"
+# The Cowork sandbox FUSE mount blocks unlink (only rename works), so
+# AAAAA-cont moved 10 retired report-shape stubs (APAgingReport, ARAgingReport,
+# AllowanceForDoubtfulAccounts, BudgetVariance, CashFlowForecast,
+# COGSCalculation, FinancialRatios, InventoryCostFlow, TrendAnalysis,
+# TrialBalance) + 13 *.ts.bak factory-helper-migration backups into
+# src/plugins/accounting/collections/_attic/ instead of deleting them.
+# Now that we're running locally with full unlink, drop the whole folder.
+rm -rf src/plugins/accounting/collections/_attic 2>/dev/null || true
+
 echo "==> Slice HH: deleting top-level legacy dev-notes from earlier cleanup passes"
 rm -f \
   CLEANUP_INSTRUCTIONS.md \

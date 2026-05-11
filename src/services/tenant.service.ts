@@ -1,8 +1,11 @@
 /**
- * Host Service — multi-tenant host (tenant) management API client.
+ * Tenant Service — multi-tenant management API client.
  *
- * "Host" is the project's tenant alias. This service is the boundary
- * enforcement layer; all writes are scoped to the caller's host.
+ * Slice HHH (2026-05-10): renamed from `HostService` → `TenantService`,
+ * URL prefix flipped from `/api/admin/hosts` → `/api/admin/tenants`,
+ * methods renamed `*Host` → `*Tenant`. No backward compat — the legacy
+ * `host` alias coined in the Ruby ERPAX port is fully retired in favour
+ * of the canonical "tenant" term.
  *
  * @security ISO-27001 A.5.23 information-security-for-cloud-services
  * @security ISO-27002 §5.15 access-control
@@ -14,32 +17,30 @@
  */
 
 import {
-  Host,
-  CreateHostRequest,
-  UpdateHostRequest,
-  BatchHostActionRequest,
-  BatchHostActionResponse,
-  HostListResponse,
-  HostFilterOptions,
-  HostPaginationOptions,
-  HostStatistics,
-} from '@/types/host';
+  Tenant,
+  CreateTenantRequest,
+  UpdateTenantRequest,
+  BatchTenantActionRequest,
+  BatchTenantActionResponse,
+  TenantListResponse,
+  TenantFilterOptions,
+  TenantPaginationOptions,
+  TenantStatistics,
+} from '@/types/tenant';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || '/api';
 
 /**
- * HostService - Handles all host-related API operations
+ * TenantService — handles all tenant-related API operations.
  */
-export class HostService {
-  private baseUrl = `${API_BASE}/admin/hosts`;
+export class TenantService {
+  private baseUrl = `${API_BASE}/admin/tenants`;
 
-  /**
-   * List all hosts with filtering and pagination
-   */
-  async listHosts(
-    filters?: HostFilterOptions,
-    pagination?: HostPaginationOptions,
-  ): Promise<HostListResponse> {
+  /** List all tenants with filtering and pagination. */
+  async listTenants(
+    filters?: TenantFilterOptions,
+    pagination?: TenantPaginationOptions,
+  ): Promise<TenantListResponse> {
     const params = new URLSearchParams();
 
     if (filters?.status) {
@@ -69,95 +70,79 @@ export class HostService {
     if (pagination?.sortOrder) params.append('sortOrder', pagination.sortOrder);
 
     const response = await fetch(`${this.baseUrl}?${params.toString()}`);
-    if (!response.ok) throw new Error(`Failed to list hosts: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to list tenants: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Get a specific host by ID
-   */
-  async getHost(tenantId: string): Promise<Host> {
+  /** Get a specific tenant by ID. */
+  async getTenant(tenantId: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}`);
-    if (!response.ok) throw new Error(`Failed to get host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to get tenant: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Create a new host
-   */
-  async createHost(request: CreateHostRequest): Promise<Host> {
+  /** Create a new tenant. */
+  async createTenant(request: CreateTenantRequest): Promise<Tenant> {
     const response = await fetch(this.baseUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(request),
     });
-    if (!response.ok) throw new Error(`Failed to create host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to create tenant: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Update an existing host
-   */
-  async updateHost(tenantId: string, request: UpdateHostRequest): Promise<Host> {
+  /** Update an existing tenant. */
+  async updateTenant(tenantId: string, request: UpdateTenantRequest): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(request),
     });
-    if (!response.ok) throw new Error(`Failed to update host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to update tenant: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Activate a host
-   */
-  async activateHost(tenantId: string): Promise<Host> {
+  /** Activate a tenant. */
+  async activateTenant(tenantId: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/activate`, {
       method: 'POST',
     });
-    if (!response.ok) throw new Error(`Failed to activate host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to activate tenant: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Suspend a host
-   */
-  async suspendHost(tenantId: string, reason?: string): Promise<Host> {
+  /** Suspend a tenant (with optional reason captured for audit). */
+  async suspendTenant(tenantId: string, reason?: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/suspend`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ reason }),
     });
-    if (!response.ok) throw new Error(`Failed to suspend host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to suspend tenant: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Reset host status to active
-   */
-  async resetHostStatus(tenantId: string): Promise<Host> {
+  /** Reset a tenant's status to active. */
+  async resetTenantStatus(tenantId: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/reset`, {
       method: 'POST',
     });
-    if (!response.ok) throw new Error(`Failed to reset host status: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to reset tenant status: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Archive a host (terminal state)
-   */
-  async archiveHost(tenantId: string): Promise<Host> {
+  /** Archive a tenant (terminal state). */
+  async archiveTenant(tenantId: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/archive`, {
       method: 'POST',
     });
-    if (!response.ok) throw new Error(`Failed to archive host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to archive tenant: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Enable SSL for a host
-   */
-  async enableSSL(tenantId: string): Promise<Host> {
+  /** Enable SSL for a tenant. */
+  async enableSSL(tenantId: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/ssl/enable`, {
       method: 'POST',
     });
@@ -165,10 +150,8 @@ export class HostService {
     return response.json();
   }
 
-  /**
-   * Disable SSL for a host
-   */
-  async disableSSL(tenantId: string): Promise<Host> {
+  /** Disable SSL for a tenant. */
+  async disableSSL(tenantId: string): Promise<Tenant> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/ssl/disable`, {
       method: 'POST',
     });
@@ -176,10 +159,8 @@ export class HostService {
     return response.json();
   }
 
-  /**
-   * Perform batch action on multiple hosts
-   */
-  async batchAction(request: BatchHostActionRequest): Promise<BatchHostActionResponse> {
+  /** Perform a batch action on multiple tenants. */
+  async batchAction(request: BatchTenantActionRequest): Promise<BatchTenantActionResponse> {
     const response = await fetch(`${this.baseUrl}/batch`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -189,25 +170,21 @@ export class HostService {
     return response.json();
   }
 
-  /**
-   * Get host statistics
-   */
-  async getHostStatistics(tenantId: string): Promise<HostStatistics> {
+  /** Get tenant-level statistics. */
+  async getTenantStatistics(tenantId: string): Promise<TenantStatistics> {
     const response = await fetch(`${this.baseUrl}/${tenantId}/statistics`);
-    if (!response.ok) throw new Error(`Failed to get host statistics: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to get tenant statistics: ${response.statusText}`);
     return response.json();
   }
 
-  /**
-   * Delete a host (only if in draft status)
-   */
-  async deleteHost(tenantId: string): Promise<void> {
+  /** Delete a tenant (only if in draft status). */
+  async deleteTenant(tenantId: string): Promise<void> {
     const response = await fetch(`${this.baseUrl}/${tenantId}`, {
       method: 'DELETE',
     });
-    if (!response.ok) throw new Error(`Failed to delete host: ${response.statusText}`);
+    if (!response.ok) throw new Error(`Failed to delete tenant: ${response.statusText}`);
   }
 }
 
 // Singleton instance
-export const hostService = new HostService();
+export const tenantService = new TenantService();

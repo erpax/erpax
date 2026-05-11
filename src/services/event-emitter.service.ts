@@ -16,7 +16,7 @@
 import { v4 as uuid } from 'uuid';
 import { DomainEvent, EventHandler, EventMetadata } from '@/types/events';
 
-class EventEmitterService {
+export class EventEmitterService {
   private handlers: Map<string, EventHandler[]> = new Map();
   private eventLog: EventMetadata[] = [];
   private isProcessing = false;
@@ -198,6 +198,25 @@ class EventEmitterService {
    */
   clearEventLog(): void {
     this.eventLog = [];
+  }
+
+  /**
+   * Clear registered handlers — by event type if provided, or all of them.
+   *
+   * Tests that `subscribe()` without retaining the unsubscribe callback will
+   * otherwise leak handlers into the next test (the emitter is a process-wide
+   * singleton). Call this in `beforeEach` / `afterEach` to keep test state
+   * isolated. Production code should prefer the per-call unsubscribe returned
+   * by `subscribe`.
+   *
+   * @standard ISO/IEC-29119:2022 software-testing test-isolation
+   */
+  clearHandlers(eventType?: string): void {
+    if (eventType) {
+      this.handlers.delete(eventType);
+    } else {
+      this.handlers.clear();
+    }
   }
 
   /**

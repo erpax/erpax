@@ -196,3 +196,33 @@ export async function getSubscriptionStatus(req: PayloadRequest): Promise<Subscr
   const subscriptionData = await getSubscriptionForRequest(req)
   return subscriptionData?.subscription ?? null
 }
+
+/**
+ * Slice VVV — `featureGuard(featureId)` Access predicate.
+ *
+ * Wraps `checkFeatureAccess` as an Access predicate so collections can
+ * be entitlement-gated declaratively in their `access:` block. Pairs
+ * with `accountingCollectionAccess({ feature: 'manufacturing' })` —
+ * when `feature` is set, the per-op predicates AND the feature gate
+ * must both pass.
+ *
+ * Pattern (per "no entropy"): combine featureGuard + an existing
+ * tenant-scoped access bundle via `andAccess()`.
+ *
+ * Usage:
+ *   access: {
+ *     ...accountingCollectionAccess(),
+ *     read: andAccess(featureGuard('manufacturing'), scopedAccess()),
+ *   }
+ *
+ * @standard NIST INCITS-359-2012 role-based-access-control
+ * @security ISO-27002 §5.15 access-control feature-entitlement
+ * @compliance SOC-2 CC6.1 logical-access-controls
+ * @see ./feature-registry.ts FEATURE_REGISTRY
+ */
+export const featureGuard = (featureId: string): Access => {
+  return async ({ req }) => {
+    const result = await checkFeatureAccess(req, featureId)
+    return result.allowed
+  }
+}

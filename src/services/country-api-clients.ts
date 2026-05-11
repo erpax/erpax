@@ -305,6 +305,340 @@ export async function lookupSecEdgar(cik: string): Promise<ApiResult<Record<stri
   }
 }
 
+// ─── BG: BNB daily exchange rates ────────────────────────────────────────
+
+/**
+ * One row of the BNB daily fixing — currency code + value in BGN per
+ * `n` units of the foreign currency (BNB publishes rates as "1 USD = X BGN"
+ * or "100 JPY = X BGN" depending on the currency's typical magnitude).
+ */
+export interface BnbRate {
+  /** ISO-4217 currency code. */
+  readonly currency: string
+  /** Number of foreign-currency units the rate is quoted for (1 / 100 / etc.). */
+  readonly units: number
+  /** Rate in BGN per `units` of the foreign currency. */
+  readonly rate: number
+  /** Date the rate is valid for, ISO-8601 `YYYY-MM-DD`. */
+  readonly date: string
+}
+
+/**
+ * Fetch a single foreign-currency rate from БНБ's daily fixing publisher.
+ * No auth required — the BNB endpoint is a public XML feed used as the
+ * IAS-21 revaluation anchor for BG-resident entities.
+ *
+ * BG joined the eurozone effective 2026-01-01 (per the official Council
+ * decision); legacy historical rates remain published at the BNB endpoint
+ * for back-dated revaluation.
+ *
+ * @param currency  ISO-4217 code (e.g. `'USD'`, `'GBP'`, `'JPY'`)
+ * @param date      Optional ISO-8601 `YYYY-MM-DD`. Defaults to today.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-8601-1:2019 date-time
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+ */
+export async function lookupBnbExchangeRate(
+  currency: string,
+  date?: string,
+): Promise<ApiResult<BnbRate>> {
+  const cur = currency.toUpperCase()
+  const day = (date ?? new Date().toISOString().slice(0, 10)).replace(/-/g, '')
+  // BNB publishes a download endpoint for one currency, one day:
+  //   /Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/StERFCDownload.aspx
+  //   ?download=xml&group1=second&periodStartDays=DD&periodStartMonths=MM&periodStartYear=YYYY
+  //   &periodEndDays=DD&periodEndMonths=MM&periodEndYear=YYYY&valutes=USD&search=true
+  const yyyy = day.slice(0, 4)
+  const mm = day.slice(4, 6)
+  const dd = day.slice(6, 8)
+  const url =
+    'https://www.bnb.bg/Statistics/StExternalSector/StExchangeRates/StERForeignCurrencies/' +
+    `StERFCDownload.aspx?download=xml&group1=second&periodStartDays=${dd}&periodStartMonths=${mm}` +
+    `&periodStartYear=${yyyy}&periodEndDays=${dd}&periodEndMonths=${mm}&periodEndYear=${yyyy}` +
+    `&valutes=${cur}&search=true`
+  try {
+    const r = await fetch(url, { headers: { Accept: 'application/xml' } })
+    if (!r.ok) return err('БНБ', `HTTP ${r.status}`)
+    const text = await r.text()
+    // BNB XML shape: <ROW><CODE>USD</CODE><RATIO>1</RATIO><RATE>1.83456</RATE>...</ROW>
+    const code = /<CODE>([\s\S]*?)<\/CODE>/i.exec(text)?.[1]?.trim()
+    const ratio = /<RATIO>([\s\S]*?)<\/RATIO>/i.exec(text)?.[1]?.trim()
+    const rate = /<RATE>([\s\S]*?)<\/RATE>/i.exec(text)?.[1]?.trim()
+    if (!code || !rate) return err('БНБ', `No fixing for ${cur} on ${yyyy}-${mm}-${dd}`)
+    const parsedRate = Number(rate.replace(',', '.'))
+    if (!Number.isFinite(parsedRate)) return err('БНБ', `Unparseable rate "${rate}"`)
+    return ok('БНБ', {
+      currency: code,
+      units: ratio ? Number(ratio) : 1,
+      rate: parsedRate,
+      date: `${yyyy}-${mm}-${dd}`,
+    })
+  } catch (e) {
+    return err('БНБ', String(e))
+  }
+}
+
+// ─── EU: ECB reference daily exchange rates ──────────────────────────────
+
+/**
+ * One row of the ECB reference fixing — currency code + rate against EUR.
+ * Mirrors the {@link BnbRate} shape so EU-fallback consumers can branch on
+ * the source label without reshaping the data.
+ */
+export interface EcbRate {
+  /** ISO-4217 currency code. */
+  readonly currency: string
+  /** Always 1 — ECB always quotes "1 unit foreign = X EUR". */
+  readonly units: number
+  /** Rate quoted as foreign-currency-per-EUR (ECB SDMX convention). */
+  readonly rate: number
+  /** Date the rate is valid for, ISO-8601 `YYYY-MM-DD`. */
+  readonly date: string
+}
+
+/**
+ * Fetch a foreign-currency rate from the ECB euro reference daily fixing.
+ * No auth, public XML SDMX feed. Used as the EU pan-fallback when a
+ * national central bank's publisher returns no fixing for the requested
+ * (currency, date).
+ *
+ * The ECB endpoint always serves *the latest* fixing — historical dates
+ * use the 90-day-history feed (`eurofxref-hist-90d.xml`) which this
+ * client falls back to when a non-current date is requested.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard SDMX 2.1 statistical-data-and-metadata-exchange
+ * @standard ISO-8601-1:2019 date-time
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+ */
+export async function lookupEcbExchangeRate(
+  currency: string,
+  date?: string,
+): Promise<ApiResult<EcbRate>> {
+  const cur = currency.toUpperCase()
+  const today = new Date().toISOString().slice(0, 10)
+  const target = date ?? today
+  const url =
+    target === today
+      ? 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml'
+      : 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml'
+  try {
+    const r = await fetch(url, { headers: { Accept: 'application/xml' } })
+    if (!r.ok) return err('ECB', `HTTP ${r.status}`)
+    const xml = await r.text()
+    // ECB SDMX shape: `<Cube time="YYYY-MM-DD"><Cube currency="USD" rate="1.08" />…`.
+    // For the daily feed there's a single `<Cube time>`; the 90d history has many.
+    const day = target
+    const dayBlockRe = new RegExp(`<Cube time="${day}">([\\s\\S]*?)</Cube>`)
+    const dayBlock =
+      dayBlockRe.exec(xml)?.[1] ??
+      // Fallback: take the latest `<Cube time>` block.
+      /<Cube time="[\d-]+">([\s\S]*?)<\/Cube>/.exec(xml)?.[1]
+    if (!dayBlock) return err('ECB', `No ECB fixing block for ${day}`)
+    const rateRe = new RegExp(`<Cube currency="${cur}" rate="([\\d.]+)"`)
+    const rateMatch = rateRe.exec(dayBlock)
+    if (!rateMatch) return err('ECB', `No ECB fixing for ${cur} on ${day}`)
+    const rate = Number(rateMatch[1])
+    if (!Number.isFinite(rate)) return err('ECB', `Unparseable ECB rate "${rateMatch[1]}"`)
+    return ok('ECB', { currency: cur, units: 1, rate, date: day })
+  } catch (e) {
+    return err('ECB', String(e))
+  }
+}
+
+// ─── EU fallback chain (national → ECB) ─────────────────────────────────
+
+/**
+ * Per-country FX-rate resolvers. The fallback chain tries each in order
+ * until one returns a successful result. Adding a new EU country = add
+ * its national resolver to this map.
+ */
+type CurrencyRateResolver = (
+  currency: string,
+  date?: string,
+) => Promise<ApiResult<{ currency: string; units: number; rate: number; date: string }>>
+
+const NATIONAL_RATE_RESOLVERS: Readonly<Record<string, CurrencyRateResolver>> = {
+  BG: lookupBnbExchangeRate,
+}
+
+/**
+ * EU-fallback rate resolver — tries the country-specific publisher
+ * (BNB / Banque de France / Banca d'Italia / etc.), falls back to ECB
+ * when the national one returns no fixing, returns the first success.
+ *
+ * Result `source` field carries `'БНБ'` / `'ECB'` / etc. so callers can
+ * audit-trail which publisher answered.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-3166-1:2020 country-codes alpha-2
+ * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+ * @audit ISO-19011:2018 audit-trail external-system-evidence
+ */
+export async function lookupEuFallbackRate(
+  country: string,
+  currency: string,
+  date?: string,
+): Promise<ApiResult<{ currency: string; units: number; rate: number; date: string }>> {
+  const national = NATIONAL_RATE_RESOLVERS[country.toUpperCase()]
+  if (national) {
+    const result = await national(currency, date)
+    if (result.ok && result.data) return result
+  }
+  // Fallback to ECB (pan-EU).
+  return lookupEcbExchangeRate(currency, date)
+}
+
+// ─── EU fallback chain — VAT validation (national → VIES) ───────────────
+
+/**
+ * Per-country VAT-validation resolvers. Empty by default — most EU
+ * national VAT registers don't expose a public API (BG НАП, IT
+ * Agenzia delle Entrate, ES AEAT all sit behind mTLS). Tenants with
+ * provisioned national-register access plug a resolver in via the
+ * standard `(country, vatNumber) → ApiResult<ViesResult>` shape.
+ */
+type VatValidationResolver = (vatNumber: string) => Promise<ApiResult<ViesResult>>
+const NATIONAL_VAT_RESOLVERS: Readonly<Record<string, VatValidationResolver>> = {
+  // BG: НАП VAT register requires mTLS — adapter plugs in here.
+  // DE: Bundeszentralamt für Steuern — qualified mTLS.
+  // IT: Agenzia delle Entrate ricerca PIVA — public web, throttled.
+}
+
+/**
+ * EU-fallback VAT-validation resolver — tries the country-specific
+ * register first, falls back to VIES (pan-EU SOAP). Returns the first
+ * success.
+ *
+ * @standard ISO-4217:2015 currency-codes
+ * @standard ISO-3166-1:2020 country-codes alpha-2
+ * @compliance EU 2006/112/EC vat-system-directive Art.214
+ * @audit ISO-19011:2018 audit-trail external-system-evidence
+ */
+export async function lookupVatValidationFallback(
+  country: string,
+  vatNumber: string,
+): Promise<ApiResult<ViesResult>> {
+  const cc = country.toUpperCase()
+  const national = NATIONAL_VAT_RESOLVERS[cc]
+  if (national) {
+    const result = await national(vatNumber)
+    if (result.ok && result.data) return result
+  }
+  return checkVies(cc, vatNumber)
+}
+
+// ─── EU fallback chain — sanctions screening ────────────────────────────
+
+/**
+ * Per-country sanctions resolvers. Empty by default — the EU
+ * consolidated CFSP list already supersedes most national lists for
+ * EU member states. Add a national resolver only when the country
+ * maintains a strictly broader screen (e.g. UK HMT post-Brexit).
+ */
+type SanctionsResolver = () => Promise<ApiResult<string>>
+const NATIONAL_SANCTIONS_RESOLVERS: Readonly<Record<string, SanctionsResolver>> = {}
+
+/**
+ * EU-fallback sanctions resolver — returns the consolidated list when
+ * no national broader-screen resolver is registered. Result `data` is
+ * the raw XML the caller parses.
+ *
+ * @compliance AMLD-5 ubo-screening
+ * @compliance EU 2580/2001 cfsp-restrictive-measures
+ * @audit ISO-19011:2018 audit-trail external-system-evidence
+ */
+export async function lookupSanctionsFallback(
+  country: string,
+): Promise<ApiResult<string>> {
+  const national = NATIONAL_SANCTIONS_RESOLVERS[country.toUpperCase()]
+  if (national) {
+    const result = await national()
+    if (result.ok && result.data) return result
+  }
+  return fetchEuSanctionsXml()
+}
+
+// ─── EU fallback chain — e-invoicing participant discovery ──────────────
+
+/**
+ * Per-country e-invoicing-discovery resolvers. National e-invoicing
+ * portals (IT SDI, FR Chorus Pro, PL KSeF) maintain their own receiver
+ * directories; the PEPPOL Directory is the pan-EU baseline.
+ */
+type EInvoicingDiscoveryResolver = (
+  participantId: string,
+) => Promise<ApiResult<PeppolParticipant>>
+const NATIONAL_EINVOICING_RESOLVERS: Readonly<Record<string, EInvoicingDiscoveryResolver>> = {}
+
+/**
+ * EU-fallback e-invoicing discovery — tries the national directory
+ * first, falls back to the PEPPOL Directory.
+ *
+ * @standard EN-16931:2017 §B2G semantic-model
+ * @standard Peppol-BIS-3.0 billing
+ * @compliance EU 2014/55 b2g-e-invoicing-mandate
+ * @audit ISO-19011:2018 audit-trail external-system-evidence
+ */
+export async function lookupEInvoicingParticipantFallback(
+  country: string,
+  participantId: string,
+): Promise<ApiResult<PeppolParticipant>> {
+  const national = NATIONAL_EINVOICING_RESOLVERS[country.toUpperCase()]
+  if (national) {
+    const result = await national(participantId)
+    if (result.ok && result.data) return result
+  }
+  return lookupPeppolParticipant(participantId)
+}
+
+// ─── BG: syntactic validators (no API call needed) ───────────────────────
+
+/**
+ * Validate a BG VAT identifier syntactically. Format: `BG` prefix +
+ * 9 or 10 digits (per `COUNTRY_SPECIFICS.BG.taxIdFormats[2].pattern`).
+ *
+ * @standard ISO-3166-1:2020 BG country-code
+ * @standard EN-16931:2017 §BT-31 seller-vat-identifier
+ */
+export function validateBgVatId(value: unknown): boolean {
+  return typeof value === 'string' && /^BG\d{9,10}$/.test(value.trim().toUpperCase())
+}
+
+/**
+ * Validate a Bulgarian EIK / Bulstat number syntactically. Format:
+ * 9 digits (legal entity) or 13 digits (sole-proprietor / branch).
+ * EGN (10 digits) is a personal identifier, not a business id.
+ *
+ * Does not perform the full check-digit computation (BG spec calls it the
+ * "tens-of-digit checksum"); for a deeper validation use the trade-register
+ * client (`lookupBgTradeRegister`) which actually resolves the number.
+ *
+ * @standard ISO-3166-1:2020 BG country-code
+ */
+export function validateBgEik(value: unknown): boolean {
+  return typeof value === 'string' && /^\d{9}(\d{4})?$/.test(value.trim())
+}
+
+// ─── BG: ASPSP discovery (PSD2 / Berlin Group NextGenPSD2) ───────────────
+
+/**
+ * Discover authorised BG ASPSPs catalogued in `BANK_APIS.BG`. Returns the
+ * subset with `kind === 'open_banking'` (skips the BNB register entry,
+ * which is `kind === 'bank_directory'`). Used by the tenant-onboarding
+ * flow to populate the bank-account creation form's ASPSP dropdown.
+ *
+ * @standard PSD2 EU 2015/2366 ais-pis
+ * @standard Berlin Group NextGenPSD2 v1.3
+ */
+export function discoverBgAspsps(): ReadonlyArray<{ name: string; endpoint: string; authority: string }> {
+  const all = BANK_APIS['BG'] ?? []
+  return all
+    .filter((api) => api.kind === 'open_banking')
+    .map((api) => ({ name: api.name, endpoint: api.endpoint, authority: api.authority }))
+}
+
 // ─── Catalogue dispatcher ────────────────────────────────────────────────
 
 /**

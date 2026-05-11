@@ -375,7 +375,7 @@ class BankReconciliationService {
   }
 
   /**
-   * Get reconciliation config for host
+   * Get reconciliation config for tenant
    */
   private getConfig(tenantId: string): ReconciliationConfig {
     return (

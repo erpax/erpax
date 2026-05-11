@@ -140,7 +140,7 @@ class JournalEntryService {
     }
 
     if (entry.tenantId !== tenantId) {
-      throw new Error(`Journal entry does not belong to host ${tenantId}`);
+      throw new Error(`Journal entry does not belong to tenant ${tenantId}`);
     }
 
     if (entry.status === 'posted') {

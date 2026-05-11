@@ -28,6 +28,7 @@ import {
   InventoryPurchasedEvent,
   InventorySoldEvent,
   BankStatementImportedEvent,
+  BankTransactionMatchedEvent,
   SubscriptionActivatedEvent,
   SubscriptionInvoicedEvent,
   SubscriptionCancelledEvent,
@@ -37,12 +38,17 @@ import {
   OrderRefundedEvent,
   DepreciationPostedEvent,
   InventoryAdjustedEvent,
+  ProductionCompletedEvent,
+  CostVarianceComputedEvent,
+  LeaseRemeasuredEvent,
+  MilestoneAchievedEvent,
+  WipSnapshotPostedEvent,
 } from '@/types/events';
 import { JournalEntryLine } from './journal-entry.service';
 
 /**
  * GL Account Code Constants
- * These should be retrieved from GL Account Management based on host configuration
+ * These should be retrieved from GL Account Management based on tenant configuration
  * For now, using standard account codes
  */
 const GL_ACCOUNTS = {
@@ -67,6 +73,14 @@ const GL_ACCOUNTS = {
   INVENTORY_VARIANCE_INCOME: 'inventory_variance_income',
   INVENTORY_WRITEDOWN: 'inventory_writedown_expense',
   WIP: 'work_in_progress',
+  // Slice NNNN — chain emits
+  FINISHED_GOODS:           'finished_goods',
+  ROU_ASSET:                'rou_asset',
+  LEASE_LIABILITY:          'lease_liability',
+  LEASE_GAIN_LOSS:          'lease_modification_pnl',
+  CONTRACT_ASSET:           'contract_asset',
+  CONTRACT_LIABILITY:       'contract_liability',
+  PROJECT_REVENUE:          'project_revenue',
 };
 
 // Exported so consumers (hooks/tests) get a tight type — calling a phantom
@@ -137,6 +151,16 @@ export class GLPostingService {
       this.postBankStatementImported(event as BankStatementImportedEvent)
     );
 
+    // Slice SSS: bank:transaction:matched — finalises the reconciliation
+    // by linking the matched JE to the bank transaction. The accounting
+    // reality is that the source-side JE was already booked at the
+    // upstream event time (invoice:completed / bill:paid / payment:*);
+    // this handler doesn't book a new JE, it stamps the link so the
+    // SOX §404 reconciliation control has audit-row evidence.
+    this.eventEmitter.subscribe('bank:transaction:matched', (event) =>
+      this.postBankTransactionMatched(event as BankTransactionMatchedEvent)
+    );
+
     // Subscription lifecycle events — IFRS 15 / ASC 606 revenue recognition.
     this.eventEmitter.subscribe('subscription:activated', (event) =>
       this.postSubscriptionActivated(event as SubscriptionActivatedEvent)
@@ -160,6 +184,28 @@ export class GLPostingService {
     );
     this.eventEmitter.subscribe('order:refunded', (event) =>
       this.postOrderRefunded(event as OrderRefundedEvent)
+    );
+
+    // ─── Slice NNNN — chain emits that move money ─────────────────
+    // prod:completed       — IAS-2 §10 absorbed-cost FG receipt
+    // variance:computed    — IAS-2 §21 standard-vs-actual variance
+    // lease:remeasured     — IFRS-16 §44-46 ROU + Liability remeasurement
+    // milestone:achieved   — IFRS-15 §126 milestone billing
+    // wip:snapshot:posted  — IFRS-15 §B14-B19 cost-to-cost period accrual
+    this.eventEmitter.subscribe('prod:completed', (event) =>
+      this.postProductionCompleted(event as ProductionCompletedEvent)
+    );
+    this.eventEmitter.subscribe('variance:computed', (event) =>
+      this.postCostVarianceComputed(event as CostVarianceComputedEvent)
+    );
+    this.eventEmitter.subscribe('lease:remeasured', (event) =>
+      this.postLeaseRemeasured(event as LeaseRemeasuredEvent)
+    );
+    this.eventEmitter.subscribe('milestone:achieved', (event) =>
+      this.postMilestoneAchieved(event as MilestoneAchievedEvent)
+    );
+    this.eventEmitter.subscribe('wip:snapshot:posted', (event) =>
+      this.postWipSnapshotPosted(event as WipSnapshotPostedEvent)
     );
   }
 
@@ -732,6 +778,40 @@ export class GLPostingService {
     }
   }
 
+  /**
+   * Bank Transaction Matched (Slice SSS) — finalises a reconciliation
+   * by stamping the link between a bank-side transaction row and its
+   * matched journal entry. The accounting-side JE was already booked at
+   * the upstream event time (`invoice:completed` / `bill:paid` /
+   * `payment:received` / `payment:sent`); this handler just records
+   * the match for the SOX §404 reconciliation control evidence trail.
+   *
+   * Why no new JE: per IAS-7 §6 the cash JE happens once at the source
+   * event. Posting a SECOND JE here would double-count cash. The
+   * reconciliation status moves from `unreconciled` → `matched_exact` /
+   * `matched_fuzzy` on the BankStatement row (handled by the
+   * `bank-reconciliation.service.ts` matcher); this handler logs the
+   * audit trail.
+   *
+   * @standard ISO 20022 camt.053 reconciliation
+   * @accounting IFRS IAS-7 §6 statement-of-cash-flows reconciliation
+   * @audit ISO-19011:2018 audit-trail reconciliation-evidence
+   * @compliance SOX §404 internal-controls bank-reconciliation
+   */
+  async postBankTransactionMatched(event: BankTransactionMatchedEvent): Promise<void> {
+    const { payload } = event;
+    const { bankTransactionId, journalEntryId, matchType } = payload;
+    // No new JE — the upstream cash JE already exists. We log the
+    // match-stamp event for the audit trail; downstream consumers
+    // (audit-events collection, SOX reconciliation report) read this.
+    // If the matcher detects a discrepancy worth booking
+    // (rounding / FX / fee variance), it should fire a separate
+    // `period:adjustments:posted` event instead.
+    console.info(
+      `[gl-posting] bank:transaction:matched recorded — bankTx=${bankTransactionId} → JE=${journalEntryId} (${matchType})`,
+    );
+  }
+
   // ─── Subscription lifecycle handlers — IFRS 15 / ASC 606 ──────────────────
 
   /**
@@ -1052,6 +1132,171 @@ export class GLPostingService {
       sourceType: 'invoice',
       sourceId: orderId,
       sourceEvent: 'order:refunded',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  // ─── Slice NNNN — chain-emit handlers ────────────────────────────────
+
+  /**
+   * Production receipt — IAS-2 §10 absorbed-cost FG transfer from WIP.
+   * Books `Dr Finished Goods / Cr Work-in-Progress` at the absorbed
+   * unit cost. The standard-vs-actual variance fires separately as a
+   * `variance:computed` event (booked by `postCostVarianceComputed`).
+   */
+  async postProductionCompleted(event: ProductionCompletedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    if (payload.totalAbsorbedCost <= 0) return;
+    const fg  = payload.finishedGoodsAccountCode ?? GL_ACCOUNTS.FINISHED_GOODS;
+    const wip = payload.wipAccountCode ?? GL_ACCOUNTS.WIP;
+    const desc = `FG receipt — WO ${payload.workOrderId}`;
+    const lines: JournalEntryLine[] = [
+      { accountId: fg,  debit:  payload.totalAbsorbedCost, description: desc },
+      { accountId: wip, credit: payload.totalAbsorbedCost, description: desc },
+    ];
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: event.timestamp,
+      description: desc,
+      lines,
+      sourceType: 'inventory_transfer',
+      sourceId: payload.productionReceiptId,
+      sourceEvent: 'prod:completed',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Cost variance — IAS-2 §21 standard-vs-actual.
+   * Unfavourable: Dr Variance / Cr WIP (excess actual cost expensed).
+   * Favourable:   Dr WIP / Cr Variance (capitalisable savings).
+   */
+  async postCostVarianceComputed(event: CostVarianceComputedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const amount = Math.abs(payload.varianceAmount);
+    if (amount === 0) return;
+    const wip = GL_ACCOUNTS.WIP;
+    const variance = payload.varianceAccountCode
+      ?? (payload.isFavourable ? GL_ACCOUNTS.INVENTORY_VARIANCE_INCOME : GL_ACCOUNTS.INVENTORY_VARIANCE_EXPENSE);
+    const desc = `${payload.varianceCategory} variance — WO ${payload.workOrderId}`;
+    const lines: JournalEntryLine[] = payload.isFavourable
+      ? [ { accountId: wip,      debit:  amount, description: desc },
+          { accountId: variance, credit: amount, description: desc } ]
+      : [ { accountId: variance, debit:  amount, description: desc },
+          { accountId: wip,      credit: amount, description: desc } ];
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: event.timestamp,
+      description: desc,
+      lines,
+      sourceType: 'inventory_transfer',
+      sourceId: payload.workOrderId,
+      sourceEvent: 'variance:computed',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Lease modification — IFRS-16 §44-46.
+   * Liability remeasurement + mirror ROU adjust + (only on termination)
+   * P&L gain/loss plug per §46(a).
+   */
+  async postLeaseRemeasured(event: LeaseRemeasuredEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    const liab = payload.leaseLiabilityAccountCode ?? GL_ACCOUNTS.LEASE_LIABILITY;
+    const rou  = payload.rouAccountCode            ?? GL_ACCOUNTS.ROU_ASSET;
+    const pnl  = payload.pnlGainLossAccountCode    ?? GL_ACCOUNTS.LEASE_GAIN_LOSS;
+    const desc = `Lease remeasurement — ${payload.classification} (mod ${payload.modificationId})`;
+    const lines: JournalEntryLine[] = [];
+    if (payload.liabilityRemeasurement > 0) {
+      lines.push({ accountId: liab, credit: payload.liabilityRemeasurement, description: desc });
+    } else if (payload.liabilityRemeasurement < 0) {
+      lines.push({ accountId: liab, debit: -payload.liabilityRemeasurement, description: desc });
+    }
+    if (payload.rouAdjustment > 0) {
+      lines.push({ accountId: rou, debit: payload.rouAdjustment, description: desc });
+    } else if (payload.rouAdjustment < 0) {
+      lines.push({ accountId: rou, credit: -payload.rouAdjustment, description: desc });
+    }
+    if (payload.gainLossOnModification > 0) {
+      lines.push({ accountId: pnl, credit: payload.gainLossOnModification, description: desc });
+    } else if (payload.gainLossOnModification < 0) {
+      lines.push({ accountId: pnl, debit: -payload.gainLossOnModification, description: desc });
+    }
+    if (lines.length === 0) return;
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: event.timestamp,
+      description: desc,
+      lines,
+      sourceType: 'fixed_asset',
+      sourceId: payload.modificationId,
+      sourceEvent: 'lease:remeasured',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * Project milestone — IFRS-15 §126 milestone billing.
+   * Books `Dr Contract Asset / Cr Project Revenue` at milestone amount.
+   * Caller's invoice handler upgrades contract asset to AR when raised.
+   */
+  async postMilestoneAchieved(event: MilestoneAchievedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    if (payload.amount <= 0 || payload.milestoneType === 'internal') return;
+    const asset = payload.contractAssetAccountCode ?? GL_ACCOUNTS.CONTRACT_ASSET;
+    const rev   = payload.revenueAccountCode       ?? GL_ACCOUNTS.PROJECT_REVENUE;
+    const desc  = `Milestone ${payload.milestoneType} — project ${payload.projectId}`;
+    const lines: JournalEntryLine[] = [
+      { accountId: asset, debit:  payload.amount, description: desc },
+      { accountId: rev,   credit: payload.amount, description: desc },
+    ];
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: event.timestamp,
+      description: desc,
+      lines,
+      sourceType: 'invoice',
+      sourceId: payload.milestoneId,
+      sourceEvent: 'milestone:achieved',
+      userId,
+    });
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+  }
+
+  /**
+   * WIP snapshot — IFRS-15 §B14-B19 cost-to-cost period accrual.
+   * Recognises revenue delta vs prior period; reclassifies between
+   * contract asset (positive unbilled) and contract liability (negative).
+   */
+  async postWipSnapshotPosted(event: WipSnapshotPostedEvent): Promise<void> {
+    const { tenantId, userId, payload } = event;
+    if (payload.recognisedRevenueDelta === 0 && payload.unbilledOrDeferred === 0) return;
+    const asset = payload.contractAssetAccountCode      ?? GL_ACCOUNTS.CONTRACT_ASSET;
+    const liab  = payload.contractLiabilityAccountCode  ?? GL_ACCOUNTS.CONTRACT_LIABILITY;
+    const rev   = payload.revenueAccountCode            ?? GL_ACCOUNTS.PROJECT_REVENUE;
+    const desc  = `WIP snapshot — project ${payload.projectId} period ${payload.period}`;
+    const lines: JournalEntryLine[] = [];
+    if (payload.recognisedRevenueDelta > 0) {
+      lines.push({ accountId: asset, debit:  payload.recognisedRevenueDelta, description: desc });
+      lines.push({ accountId: rev,   credit: payload.recognisedRevenueDelta, description: desc });
+    } else if (payload.recognisedRevenueDelta < 0) {
+      lines.push({ accountId: rev,   debit: -payload.recognisedRevenueDelta, description: desc });
+      lines.push({ accountId: asset, credit: -payload.recognisedRevenueDelta, description: desc });
+    }
+    if (payload.unbilledOrDeferred < 0) {
+      const amt = Math.abs(payload.unbilledOrDeferred);
+      lines.push({ accountId: asset, credit: amt, description: `${desc} reclass to liability` });
+      lines.push({ accountId: liab,  debit:  amt, description: `${desc} reclass to liability` });
+    }
+    if (lines.length === 0) return;
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: event.timestamp,
+      description: desc,
+      lines,
+      sourceType: 'invoice',
+      sourceId: payload.snapshotId,
+      sourceEvent: 'wip:snapshot:posted',
       userId,
     });
     await journalEntryService.postEntry(tenantId, entry.id, userId);

@@ -783,44 +783,53 @@ export const buildSourceDocuments = async (
   tenantId: string | number,
   startDate: string,
   endDate: string,
-): Promise<import('@/standards/saf-t').SafTSourceDocuments> => ({
-  salesInvoices: await buildSalesInvoices(payload, tenantId, startDate, endDate),
-  purchaseInvoices: await buildPurchaseInvoices(
-    payload,
-    tenantId,
-    startDate,
-    endDate,
-  ),
-  payments: await buildPayments(payload, tenantId, startDate, endDate),
-  movementOfGoods: await buildMovementOfGoods(
-    payload,
-    tenantId,
-    startDate,
-    endDate,
-  ),
-})
+): Promise<import('@/standards/saf-t').SafTSourceDocuments | undefined> => {
+  const salesInvoices = await buildSalesInvoices(payload, tenantId, startDate, endDate)
+  const purchaseInvoices = await buildPurchaseInvoices(payload, tenantId, startDate, endDate)
+  const payments = await buildPayments(payload, tenantId, startDate, endDate)
+  const movementOfGoods = await buildMovementOfGoods(payload, tenantId, startDate, endDate)
+
+  // Per OECD SAF-T 2.0 §SourceDocuments and the test contract, the top-level
+  // `SourceDocuments` block is optional. Omit it when every sub-collection
+  // is empty so consumers (and the XML renderer) don't have to special-case
+  // empty placeholders. Once a sub-builder lands real data this collapses
+  // back to the populated shape automatically.
+  const isEmpty =
+    salesInvoices.numberOfEntries === 0 &&
+    purchaseInvoices.numberOfEntries === 0 &&
+    payments.numberOfEntries === 0 &&
+    movementOfGoods.numberOfMovementLines === 0
+  if (isEmpty) return undefined
+
+  return { salesInvoices, purchaseInvoices, payments, movementOfGoods }
+}
 
 // ─── Top-level orchestrator ───────────────────────────────────────────
 
 export const buildAuditFile = async (
   payload: Payload,
   options: SafTExportOptions,
-): Promise<SafTAuditFile> => ({
-  header: buildHeader(options),
-  masterFiles: await buildMasterFiles(payload, options.tenantId),
-  generalLedgerEntries: await buildGeneralLedgerEntries(
+): Promise<SafTAuditFile> => {
+  const sourceDocuments = await buildSourceDocuments(
     payload,
     options.tenantId,
     options.startDate,
     options.endDate,
-  ),
-  sourceDocuments: await buildSourceDocuments(
-    payload,
-    options.tenantId,
-    options.startDate,
-    options.endDate,
-  ),
-})
+  )
+  return {
+    header: buildHeader(options),
+    masterFiles: await buildMasterFiles(payload, options.tenantId),
+    generalLedgerEntries: await buildGeneralLedgerEntries(
+      payload,
+      options.tenantId,
+      options.startDate,
+      options.endDate,
+    ),
+    // Only set when at least one source-document sub-collection has rows;
+    // SafTAuditFile.sourceDocuments is `?` for exactly this reason.
+    ...(sourceDocuments ? { sourceDocuments } : {}),
+  }
+}
 
 // ─── XML serializer ────────────────────────────────────────────────────
 //

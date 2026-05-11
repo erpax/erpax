@@ -256,7 +256,7 @@ class MultiCurrencyService {
   ): Promise<MonthEndCurrencyAdjustment> {
     const config = this.currencyConfigs.get(tenantId);
     if (!config) {
-      throw new Error(`No currency config found for host ${tenantId}`);
+      throw new Error(`No currency config found for tenant ${tenantId}`);
     }
 
     const adjustments: CurrencyGainLoss[] = [];
@@ -297,7 +297,7 @@ class MultiCurrencyService {
   ): Promise<string> {
     const config = this.currencyConfigs.get(tenantId);
     if (!config) {
-      throw new Error(`No currency config found for host ${tenantId}`);
+      throw new Error(`No currency config found for tenant ${tenantId}`);
     }
 
     const lines: Array<{ accountId: string; description: string; debit: number; credit: number }> = [];
@@ -360,7 +360,7 @@ class MultiCurrencyService {
   ): Promise<MultiCurrencyTrialBalance> {
     const config = this.currencyConfigs.get(tenantId);
     if (!config) {
-      throw new Error(`No currency config found for host ${tenantId}`);
+      throw new Error(`No currency config found for tenant ${tenantId}`);
     }
 
     // Get trial balance from GL service
@@ -475,7 +475,7 @@ class MultiCurrencyService {
   ): Promise<CurrencyRevaluation> {
     const config = this.currencyConfigs.get(tenantId);
     if (!config) {
-      throw new Error(`No currency config found for host ${tenantId}`);
+      throw new Error(`No currency config found for tenant ${tenantId}`);
     }
 
     const revaluation: CurrencyRevaluation = {

@@ -176,12 +176,27 @@ export const serializeMOA = (moa: EdifactMOA): string =>
   segment('MOA', composite(moa.qualifier, formatAmount(moa.value), moa.currency))
 
 export const serializeTAX = (tax: EdifactTAX): string =>
+  // UN/EDIFACT D96A TAX segment data elements (8 total):
+  //   1. Function qualifier (e.g. '7' = VAT)
+  //   2. Tax type (composite C241 — we only emit the first sub-element)
+  //   3. Country code (composite C533) — usually empty
+  //   4. Tax account info — usually empty
+  //   5. Tax assessment basis monetary value — usually empty
+  //   6. Tax details (composite C243: typeCode + listQualifier + agency + rate)
+  //   7. Tax category code (e.g. 'S' = standard rate)
+  //   8. (party tax identifier, calculation sequence — emitted as nothing)
+  //
+  // Expected wire form for a 20% standard VAT line:
+  //   TAX+7+VAT++++:::20+S'
+  //   ^^^ ^ ^^^ ^^^ ^^^^^^ ^
+  //    1  2  3   4   5+6   7
   segment(
     'TAX',
     tax.functionQualifier,
     tax.type,
-    '', // BG-23 country code — usually empty here
-    '', // tax-account info — empty
+    '', // 3. country code (BG-23) — usually empty
+    '', // 4. tax-account info — usually empty
+    '', // 5. tax assessment basis — usually empty
     composite('', '', '', tax.rate !== undefined ? String(tax.rate) : ''),
     tax.categoryCode ?? '',
   )

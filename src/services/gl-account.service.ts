@@ -31,7 +31,7 @@ class GLAccountService {
     if (scope) params.append('scope', scope);
 
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts?${params}`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts?${params}`,
       {
         method: 'GET',
         headers: this.getHeaders(tenantId),
@@ -43,7 +43,7 @@ class GLAccountService {
   }
 
   async getAccount(tenantId: string, accountId: string): Promise<GLAccount> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts/${accountId}`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts/${accountId}`, {
       method: 'GET',
       headers: this.getHeaders(tenantId),
     });
@@ -56,7 +56,7 @@ class GLAccountService {
     tenantId: string,
     request: CreateGLAccountRequest
   ): Promise<GLAccount> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts`, {
       method: 'POST',
       headers: this.getHeaders(tenantId),
       body: JSON.stringify(request),
@@ -72,7 +72,7 @@ class GLAccountService {
     request: UpdateGLAccountRequest
   ): Promise<GLAccount> {
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts/${accountId}`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts/${accountId}`,
       {
         method: 'PATCH',
         headers: this.getHeaders(tenantId),
@@ -86,7 +86,7 @@ class GLAccountService {
 
   async deleteAccount(tenantId: string, accountId: string): Promise<void> {
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts/${accountId}`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts/${accountId}`,
       {
         method: 'DELETE',
         headers: this.getHeaders(tenantId),
@@ -101,7 +101,7 @@ class GLAccountService {
    */
 
   async getAccountTree(tenantId: string): Promise<GLAccountNode[]> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts/tree`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts/tree`, {
       method: 'GET',
       headers: this.getHeaders(tenantId),
     });
@@ -111,7 +111,7 @@ class GLAccountService {
   }
 
   async getRootAccounts(tenantId: string): Promise<GLAccount[]> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts?level=0`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts?level=0`, {
       method: 'GET',
       headers: this.getHeaders(tenantId),
     });
@@ -122,7 +122,7 @@ class GLAccountService {
 
   async getAccountChildren(tenantId: string, parentId: string): Promise<GLAccount[]> {
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts/${parentId}/children`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts/${parentId}/children`,
       {
         method: 'GET',
         headers: this.getHeaders(tenantId),
@@ -142,7 +142,7 @@ class GLAccountService {
     accountIds: string[],
     reason?: string
   ): Promise<GLAccount[]> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts/lock`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts/lock`, {
       method: 'POST',
       headers: this.getHeaders(tenantId),
       body: JSON.stringify({ accountIds, reason }),
@@ -153,7 +153,7 @@ class GLAccountService {
   }
 
   async unlockAccounts(tenantId: string, accountIds: string[]): Promise<GLAccount[]> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts/unlock`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts/unlock`, {
       method: 'POST',
       headers: this.getHeaders(tenantId),
       body: JSON.stringify({ accountIds }),
@@ -169,7 +169,7 @@ class GLAccountService {
     targetId: string,
     transferBalance: boolean = true
   ): Promise<GLAccount> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts/merge`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts/merge`, {
       method: 'POST',
       headers: this.getHeaders(tenantId),
       body: JSON.stringify({ sourceId, targetId, transferBalance }),
@@ -205,7 +205,7 @@ class GLAccountService {
 
   async applyTemplate(tenantId: string, templateId: string): Promise<GLAccount[]> {
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts/apply-template`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts/apply-template`,
       {
         method: 'POST',
         headers: this.getHeaders(tenantId),
@@ -222,7 +222,7 @@ class GLAccountService {
    */
 
   async getAccountStatistics(tenantId: string): Promise<GLAccountStatistics> {
-    const response = await fetch(`${API_BASE}/admin/hosts/${tenantId}/gl-accounts/statistics`, {
+    const response = await fetch(`${API_BASE}/admin/tenants/${tenantId}/gl-accounts/statistics`, {
       method: 'GET',
       headers: this.getHeaders(tenantId),
     });
@@ -236,7 +236,7 @@ class GLAccountService {
     if (asOfDate) params.append('asOfDate', asOfDate.toISOString());
 
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts/balances?${params}`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts/balances?${params}`,
       {
         method: 'GET',
         headers: this.getHeaders(tenantId),
@@ -254,7 +254,7 @@ class GLAccountService {
 
   async validateAccountCode(tenantId: string, code: string): Promise<boolean> {
     const response = await fetch(
-      `${API_BASE}/admin/hosts/${tenantId}/gl-accounts/validate-code`,
+      `${API_BASE}/admin/tenants/${tenantId}/gl-accounts/validate-code`,
       {
         method: 'POST',
         headers: this.getHeaders(tenantId),
@@ -268,13 +268,13 @@ class GLAccountService {
   }
 
   /**
-   * Helper: Get auth headers with host context
+   * Helper: Get auth headers with tenant context
    */
   private getHeaders(tenantId: string): Record<string, string> {
     const token = this.getAuthToken();
     return {
       'Content-Type': 'application/json',
-      'x-host-id': tenantId,
+      'x-tenant-id': tenantId,
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     };
   }

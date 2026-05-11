@@ -66,6 +66,15 @@ export const periodicRate = (
 /**
  * Total number of periods in a lease given start + end + frequency.
  * Fractional periods at the tail round to a whole period.
+ *
+ * Uses a day-precision calculation rather than (year × 12 + month) deltas,
+ * because the year/month delta drops the day component — a lease running
+ * `2026-05-01` → `2029-04-30` (36 months by industry convention) computes
+ * a month delta of 35 even though the trailing partial month is the full
+ * 30-day extent of April. Day-precision + ceil round-trips correctly:
+ *   - `2026-05-01 → 2029-04-30` = 1095 days / 30.4375 ≈ 35.97 → 36 ✓
+ *   - `2026-05-15 → 2027-05-14` = 364 days  / 30.4375 ≈ 11.96 → 12 ✓
+ *   - `2026-05-01 → 2026-05-01` = 0 days     → max(1) → 1 ✓
  */
 export const totalPeriods = (
   commencementDate: Date | string,
@@ -74,10 +83,11 @@ export const totalPeriods = (
 ): number => {
   const start = commencementDate instanceof Date ? commencementDate : new Date(commencementDate)
   const end = endDate instanceof Date ? endDate : new Date(endDate)
-  const months =
-    (end.getFullYear() - start.getFullYear()) * 12 +
-    (end.getMonth() - start.getMonth())
-  return Math.max(1, Math.ceil(months / (12 / PERIODS_PER_YEAR[frequency])))
+  const MS_PER_DAY = 86_400_000
+  const AVG_DAYS_PER_YEAR = 365.25
+  const days = Math.max(0, (end.getTime() - start.getTime()) / MS_PER_DAY)
+  const daysPerPeriod = AVG_DAYS_PER_YEAR / PERIODS_PER_YEAR[frequency]
+  return Math.max(1, Math.ceil(days / daysPerPeriod))
 }
 
 // ─── Present value ────────────────────────────────────────────────────

@@ -66,14 +66,34 @@ const extractAttr = (
  * Extract all top-level occurrences of `<tag>...</tag>` from `xml`.
  * Greedy-aware via balanced tag counting (handles nested `<Ntry>`
  * inside `<Stmt>` correctly).
+ *
+ * `findOpen` ensures we don't conflate prefix-overlapping tags like
+ * `<Ntry>` and `<NtryDtls>` — a plain `indexOf('<Ntry')` would match
+ * both, so the depth counter would over-count nested entries and the
+ * parser would walk off the end of the document with `depth > 0`, yielding
+ * zero transactions. The qualifier checks the character right after the
+ * tag name and only accepts `>`, whitespace, or `/`.
  */
 const extractAll = (xml: string, tag: string): string[] => {
   const out: string[] = []
   const open = `<${tag}`
   const close = `</${tag}>`
+  const isTagBoundary = (ch: string | undefined): boolean =>
+    ch === '>' || ch === ' ' || ch === '\t' || ch === '\n' || ch === '\r' || ch === '/'
+  const findOpen = (from: number): number => {
+    let i = from
+    while (i < xml.length) {
+      const idx = xml.indexOf(open, i)
+      if (idx === -1) return -1
+      if (isTagBoundary(xml[idx + open.length])) return idx
+      i = idx + open.length
+    }
+    return -1
+  }
+
   let pos = 0
   while (pos < xml.length) {
-    const start = xml.indexOf(open, pos)
+    const start = findOpen(pos)
     if (start === -1) break
     // Find the end of the opening tag.
     const tagEnd = xml.indexOf('>', start)
@@ -87,7 +107,7 @@ const extractAll = (xml: string, tag: string): string[] => {
     let depth = 1
     let cursor = tagEnd + 1
     while (depth > 0 && cursor < xml.length) {
-      const nextOpen = xml.indexOf(open, cursor)
+      const nextOpen = findOpen(cursor)
       const nextClose = xml.indexOf(close, cursor)
       if (nextClose === -1) return out
       if (nextOpen !== -1 && nextOpen < nextClose) {

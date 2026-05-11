@@ -66,6 +66,33 @@ outcome). The ledger below is a one-liner index only.
 | VV    | **Bug-hunt:** **positive** — broken pattern is contained to accounting plugin only.|
 | WW    | Persistent memory refreshed with audit findings.                                  |
 | XX    | This pending-actions update.                                                      |
+| YY    | BG country bundle (`iso-3166-1/countries/bg.ts`) + 11 BG ASPSPs + БНБ rates.      |
+| ZZ    | BG generic clients: Berlin Group PSD2 + НАП mTLS + `clientImplemented:true` × 15. |
+| AAA   | BG runtime standards: ЕГН (ISO 7064 mod-11), VAT calc, holiday calendar.          |
+| BBB   | PDF stack: ISO 19005 (PDF/A) + ISO 14289 (PDF/UA) + ETSI EN 319 142 (PAdES).      |
+| CCC   | BG hybrid invoice (PDF/A-3 + EN-16931 XML) + bg-pades-signer + evidence-attestation.|
+| DDD   | BG bank-statement PDF parser + UniCredit + Fibank registry.                       |
+| EEE   | EU pan-fallback wiring: ECB rates + VIES + EU CFSP + PEPPOL routed by country.    |
+| FFF   | Merged-API schema: `ApiAuditEvents` + `EvidenceAttestations` + persistence helper.|
+| GGG   | Master-barrel re-exports + STANDARDS_AUDIT rows for slices YY-FFF (this slice).   |
+| HHH   | Host → Tenant unification, no backward compat (closes Decision B from STANDARDS).|
+| III   | `defaultColumns` dotted-refs across 11 collections (closes Decision A); audit upgraded.|
+| JJJ   | Per-field standards audit — 649 fields/66 collections classified, 0 unjustified; `docs/FIELD_STANDARDS_AUDIT.md` published.|
+| KKK   | Strict access DRY — 3 bundle helpers added; 9 collections collapsed from 4-line access blocks to one-liners.|
+| LLL   | Event-bridge DRY — 7 of 8 GL handlers wired (invoice:completed/reversed, bill:paid/reversed, inventory:purchased/sold, bank:statement:imported); `emitDomainEvent` helper extracted.|
+| MMM   | Handler audit — 1 dead handler wired (`buildDefaultSignCms` → `bg-pades-signer.ts` fallback); 0 missing, 0 redundant after investigation.|
+| NNN   | Standards × schema audit — 9 mandatory + 54 recommended field gaps identified; `docs/FIELD_ADD_REMOVE_AUDIT.md` + `docs/REFACTORING_PLAN_TO_COMPLETE.md` published.|
+| OOO   | eIDAS/PAdES — 5 signing fields on evidence-attestations + signer envelope.|
+| PPP   | SOX/ISO-19011 — `eventId` on audit-events + persistence in `auditTrailAfterChange`.|
+| QQQ   | IAS-2 §25 — `valuationMethod` on inventory-movements + threaded through GL.|
+| RRR   | EN-16931 BT-151 — `vatCategoryCode` promoted to required (default 'S').|
+| SSS   | Last 2 GL handlers wired — `bank:transaction:matched` + `subscription:refunded`. **0 dead handlers.**|
+| TTT   | **8 missing collections created** — bank-reconciliations, intercompany-transactions, consolidation-eliminations, prior-period-adjustments, rounding-adjustments, transaction-failures, fx-transactions, payment-allocations. Stale `'hosts'` slug + `'my-collection'` examples purged.|
+| UUU   | **8 first-principles ERP collections created** (manufacturing + logistics). Manufacturing: bills-of-materials, work-orders, production-receipts, cost-variances, quality-inspections (IAS-2 §10-14, ISA-95). Logistics: carriers, tracking-events, customs-declarations (INCOTERMS 2020, WCO HS, EU UCC).|
+| VVV   | **Agnostic ERPax** — `feature-registry.ts` (16 features × 5 tiers), `featureGuard()` Access predicate, `accountingCollectionAccess({ feature })` extension, 13 collections tagged, `usage-records` collection for IFRS-15 §B16 metered billing.|
+| WWW   | **Cloudflare AI** — `services/ai/cloudflare-ai.ts` single entry-point with 5-gate enforcement, `ai-suggestions` audit collection (GDPR Art.22 + EU AI Act + SOX §404), 9 AI feature flags, wrangler.jsonc AI + Vectorize bindings.|
+| XXX   | **9 AI use-case handlers** — invoice-OCR, bank-matching, sanctions-screening (high-risk, no auto-accept), anomaly-detection, tax-classification, hs-code, document-classification, embed+semantic-search, audit-summarisation. Barrel + per-feature thin wrappers.|
+| YYY   | **Deep AI integration** — 9-gate `callWorkersAi` (PII strip + injection detect + token quota + AI Gateway cache + output validation + audit hash); `ai-security.ts` + Durable Objects (`TenantQuotaCounter` / `RateLimiter` / `JobLock`); all Cloudflare bindings wired (KV, Queues×5, DO×3, Browser, Analytics×4, Email, Rate-Limiter×2).|
 
 ## Pending — local execution only
 
@@ -93,65 +120,37 @@ pnpm vitest run
 ## Pending — design decisions before further code changes
 
 The bug-hunt phase (Slices LL–VV) surfaced two distinct decisions that
-require maintainer judgment before applying mechanical fixes. Full per-
-finding detail is in `CHANGELOG.md` `[Unreleased]`.
+required maintainer judgment before applying mechanical fixes. Both
+are now closed.
 
-### Decision A — `defaultColumns` nested-field strategy (Slice MM)
+### Decision A — `defaultColumns` nested-field strategy (Slice MM → III)
 
-42 entries across 11 collections reference fields nested in `type:
-'group'` containers. Payload's admin-UI behaviour depends on the
-version. Two strategies:
+**CLOSED by Slice III (2026-05-10).** Payload v3.84.1 supports dotted
+refs, so the chosen strategy is **dotted refs** (`'identity.code'`) —
+non-invasive, version-appropriate, preserves the data shape. 36 entries
+rewritten across 11 collections; `scripts/audit-default-columns.sh`
+upgraded to grok dotted refs + factory-injected fields. Final audit:
+0 findings.
 
-- **Hoist** — same pattern as Slice LL. Pulls each named field to top
-  level. Invasive but version-agnostic.
-- **Dotted refs** — change `'code'` to `'identity.code'`. Only safe on
-  Payload versions that support dotted column references.
+### Decision B — accounting-plugin host/role/tenant unification (Slices PP+QQ+SS+TT+UU → HHH)
 
-Re-run `bash scripts/audit-default-columns.sh` after each batch.
-
-### Decision B — accounting-plugin host/role/tenant unification (Slices PP+QQ+SS+TT+UU)
-
-Five compounding architectural findings, **single root cause**: the
-accounting plugin was authored against a different user/access/tenant
-model than the canonical app. Slice VV confirmed the broken pattern is
-**contained** to `src/plugins/accounting/**`, `src/plugins/auth/**`,
-and `src/plugins/hooks/**`; the canonical `src/access/*.ts` predicates
-and core collections work correctly.
-
-Six-step unified fix scope (~60 source files + 7 seed files in one
-tree):
-
-1. Rename `host` / `hostId` → `tenant` across `src/plugins/accounting/`
-   and 4 core collections (Payments, Invoices, InvoiceLines, Items).
-2. Rewrite `@/plugins/auth/access.ts` to derive active tenant from
-   `req.user.tenants[].tenant` (canonical multi-tenant plugin shape),
-   not `req.user.host`.
-3. Rewrite `@/plugins/hooks/common.ts` `autoPopulateHost` similarly.
-4. Replace `req.user.role === 'accountant'` checks with either: a
-   query against the `roles` collection (NIST INCITS-359, per
-   `STANDARDS.md` §4.4), or extending the `User.roles` enum at
-   `src/collections/Users/index.ts` with `'accountant'`.
-5. Drop `req.payload.requestContext` and `req.payload.services`
-   indirection (Slice RR confirmed the services exist as real
-   singletons — direct imports work).
-6. Realign 3 seed files at
-   `src/plugins/accounting/seeds/level-{1,2,3}/*.ts` with whichever
-   role model step 4 picks.
-
-Standards gates (`pnpm standards:{check,required,verify-index}`) should
-continue passing throughout — the unification is field-name and shape,
-not banner-affecting.
+**CLOSED by Slice HHH (2026-05-10).** Both decisions are now
+mechanically resolved. Slice CCC + PP + FFF had already migrated the
+schema (`tenant` field, `req.user.tenants[]` shape, direct service
+singletons); Slice HHH (no backward compat) finished the lexical
+unification — file/symbol/path renames, the dead `'hosts'` collection
+slug in seeds → canonical `'tenants'`, two genuine bugs fixed
+(`reports.ts` and `period-lock.ts` were querying non-existent fields),
+and one tombstoned dead file (`base-accounting-hook.ts`).
 
 ### Recommended order
 
 ```
 1. bash scripts/slice-f-delete-dead-stubs.sh   (cleanup)
 2. pnpm standards:check                        (sanity)
-3. Decide on Decision A, apply                 (small)
-4. Decide on Decision B, apply 6-step plan     (substantial)
-5. pnpm tsc --noEmit                           (full type check)
-6. pnpm payload migrate:create                 (initial migration)
-7. pnpm vitest run                             (full suite)
+3. pnpm tsc --noEmit                           (full type check)
+4. pnpm payload migrate:create                 (initial migration)
+5. pnpm vitest run                             (full suite)
 ```
 
 ## Reserved future builder slots
