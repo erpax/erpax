@@ -28,6 +28,8 @@ import { verifyAggregate, checkNoDoubleVoting, listBallots } from '@/services/vo
 import { checkRegistryCoupling } from '@/services/agents/blocks'
 import { checkWindowCoherence, checkStreamUuidChain, makeStream, type ClockedEvent } from '@/services/streams'
 import { checkStorageIndependence, consensusRead, memoryPut } from '@/services/storage-independence'
+import { checkAutoGenerationCoverage } from '@/services/agents/mcp/auto-generated'
+import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1411,6 +1413,30 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 37 — `checkAutoGenerationCoverageInvariant`.
+ * Slice WWWWWW (2026-05-11). Per user 'let mcp build itself'.
+ *
+ * Every spec primitive (agent / BUSINESS_CHAIN / tamper-proof
+ * collection / tenant role / standards family) must be exposed by
+ * at least one MCP tool. The auto-generated layer guarantees the
+ * floor; this check verifies it (regression-proof when someone adds
+ * a new primitive without touching MCP wiring).
+ */
+export function checkAutoGenerationCoverageInvariant(_ctx: InvariantContext): InvariantResult {
+  const tools = buildErpaxMcpTools(agentRegistry)
+  const toolNames = new Set(tools.map((t) => t.name))
+  const result = checkAutoGenerationCoverage(agentRegistry, toolNames)
+  if (result.ok) {
+    const c = result.counts
+    return pass('expansion', 'auto-generation-coverage',
+      `every primitive exposed (agents=${c.agents.tools}/${c.agents.primitive}, chains=${c.chains.tools}/${c.chains.primitive}, collections=${c.collections.tools}/${c.collections.primitive}, roles=${c.roles.tools}/${c.roles.primitive}, families=${c.families.tools}/${c.families.primitive}) — Law 37 satisfied`)
+  }
+  return fail('expansion', 'auto-generation-coverage',
+    `${result.violations.length} primitive class(es) under-exposed by MCP`,
+    [...result.violations])
 }
 
 /**

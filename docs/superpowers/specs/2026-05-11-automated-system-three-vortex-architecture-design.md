@@ -881,6 +881,58 @@ The manifest enumerates: MCP tools, agents, chains, chain steps, conservation la
 
 @standard MCP 0.6 — tools/list extension; W3C JSON-LD 1.1 (manifest is JSON-serializable + linkable); ISO/IEC 25010:2023 §5.3 usability — discoverability; ISO 19011:2018 §6.4.6 (readiness audit-trailed).
 
+## 0q. Let MCP build itself — auto-generation from spec primitives
+
+Per user 'let mcp build itself'. The MCP layer is no longer hand-curated. Slice WWWWWW ships `src/services/agents/mcp/auto-generated.ts` that derives MCP tools from the existing spec primitives. Adding a new agent / chain / tamper-proof collection / role / standards family yields new MCP tools immediately, with zero hand-edit to `tool-defs.ts`.
+
+### What gets auto-generated
+
+| Primitive | Auto-generated tool name | Returns |
+|---|---|---|
+| Every registered DomainAgent | `erpax.auto.agent.<id>` | `AgentBlockManifest` (PPPPPP typed surface) |
+| Every BUSINESS_CHAIN | `erpax.auto.chain.<id>` | Typed chain definition + steps + standards |
+| Every tamper-proof collection | `erpax.auto.collection.<slug>.verify` | Conservation Law 8 verifier — pass row + tenantId, recompute uuid |
+| Every TenantRoleProfile | `erpax.auto.role.<id>` | required-standards bundle + invariant |
+| Every standards family (7) | `erpax.auto.standards.<family>` | Family enumeration via `familyOf()` lookup |
+
+Generated tools carry `[generated]` in their description so external clients can distinguish them from hand-curated ones.
+
+### Conservation Law 37 — auto-generation coverage
+
+`checkAutoGenerationCoverageInvariant`: every primitive class (agents / chains / collections / roles / standards families) MUST be exposed by at least one MCP tool — either hand-curated OR auto-generated. The auto-generated layer guarantees the floor; the invariant verifies it. Regression-proof: someone adds a new collection but forgets to wire MCP → Law 37 fails the boot suite, shipping is blocked until either the hand-curated tool lands or the collection is added to `TAMPER_PROOF_COLLECTIONS_REGISTRY` so the auto-generator picks it up.
+
+### The closed loop
+
+The seven uuid + composition slices stack into a closed loop:
+
+1. Slice CCCCC — JSDoc-as-spec extracts the spec corpus from the source.
+2. Slice DDDDD — agents subscribe to chain steps + emit AgentEffect[].
+3. Slice PPPPPP — agents have typed block manifests.
+4. Slice QQQQQQ — BUSINESS_CHAINS are compositions of those blocks.
+5. Slice RRRRRR + SSSSSS — events flow as uuid-chained streams.
+6. Slice TTTTTT + UUUUUU — every uuid'd object is storage-independent + replicable.
+7. Slice VVVVVV — `erpax.platform.readiness` returns the survey of all of the above.
+8. **Slice WWWWWW** (this) — the MCP tools that drive (1)–(7) are themselves derived from (1)–(7). The platform builds its own surface.
+
+Every new primitive — a new agent, a new chain, a new collection, a new role, a new standards family — flows through (1) → (2) → … → (7) → (8) automatically. No hand-edit to MCP wiring; the spec corpus IS the MCP catalog.
+
+### MCP coverage at slice WWWWWW
+
+| Layer | Tool count |
+|---|---|
+| Hand-curated | 96 |
+| Auto-generated (from agents) | 15 |
+| Auto-generated (from chains) | 28 |
+| Auto-generated (from tamper-proof collections) | varies (depends on `TAMPER_PROOF_COLLECTIONS_REGISTRY` size) |
+| Auto-generated (from tenant roles) | varies |
+| Auto-generated (from standards families) | 7 |
+
+Total approximately 150+ tools at boot, growing as primitives are added.
+
+### Standards anchoring
+
+@standard MCP 0.6 — tools/list (auto-generation extension); ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity; ISO 19011:2018 §6.4.6 (auto-generation traceable to spec); W3C Web Components composition pattern (PPPPPP).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
