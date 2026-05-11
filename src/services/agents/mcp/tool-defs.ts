@@ -27,7 +27,7 @@ import { publishSelf, bootFromFederation, type GenomePublication } from '@/servi
 import { checkout, provisionInstance, listSubscriptions, checkCommerceLifecycle } from '@/services/commerce'
 import { bookRevenue, bookCost, scheduleFiling, scheduleObligation, checkSelfAccountingComplete, listFilings, listObligations } from '@/services/self-accounting'
 import { createDid, resolveDid, listDids } from '@/services/did'
-import { publishStandard, resolveStandard, subscribeTenant, tenantSubscriptions } from '@/services/standards-registry'
+import { publishStandard, resolveStandard, subscribeTenant, tenantSubscriptions, addCitation, listCitations, declareConflict, listConflicts, declareSupersession, traceSupersession, checkStandardCitationsConsistent, checkStandardSupersessionsResolved, familyOf } from '@/services/standards-registry'
 import { anchorRoot, listAnchors, NOTARY_STUB_BACKEND } from '@/services/anchoring'
 import { tenantPins } from '@/services/archival'
 import { listProposals } from '@/services/meta-automation'
@@ -400,6 +400,68 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         subscribeTenant(tenantId as string, standardUuid as string)
         return json({ ok: true, subscriptions: tenantSubscriptions(tenantId as string) })
       },
+    },
+    // ── Slice LLLLLL — Standards-as-vortices: citation graph + conflict + supersession ──
+    {
+      name: 'erpax.standards.addCitation',
+      description: 'Slice LLLLLL: declare that standard X cites standard Y (e.g. IFRS-15 §B77 → IAS-2 §6). Builds the cross-standard coupling graph.',
+      parameters: { citerUuid: z.string(), citedUuid: z.string() },
+      async handler({ citerUuid, citedUuid }) {
+        addCitation(citerUuid as string, citedUuid as string)
+        return json({ ok: true })
+      },
+    },
+    {
+      name: 'erpax.standards.listCitations',
+      description: 'Return the outgoing + incoming citation edges for a standard uuid (which standards it cites; which standards cite it).',
+      parameters: { uuid: z.string() },
+      async handler({ uuid }) { return json(listCitations(uuid as string)) },
+    },
+    {
+      name: 'erpax.standards.declareConflict',
+      description: 'Slice LLLLLL: declare that two standards are mutually exclusive (e.g. UK-IFRS-15 ⨯ IFRS-EU-15 post-Brexit).',
+      parameters: { uuidA: z.string(), uuidB: z.string(), reason: z.string().optional() },
+      async handler({ uuidA, uuidB, reason }) {
+        declareConflict(uuidA as string, uuidB as string, reason as string | undefined)
+        return json({ ok: true })
+      },
+    },
+    {
+      name: 'erpax.standards.declareSupersession',
+      description: 'Slice LLLLLL: declare that standard X is superseded by standard Y in jurisdiction Z effective from a date (e.g. IAS-18 → IFRS-15 globally; AMLD5 → AMLD6 in EU).',
+      parameters: {
+        oldUuid: z.string(), newUuid: z.string(),
+        jurisdiction: z.string(), effectiveDate: z.string(),
+        notes: z.string().optional(),
+      },
+      async handler(args) {
+        declareSupersession(args as never)
+        return json({ ok: true })
+      },
+    },
+    {
+      name: 'erpax.standards.traceSupersession',
+      description: 'Walk a standard\'s supersession chain in a jurisdiction. Returns ordered list of edges from the input uuid forward to the latest version.',
+      parameters: { uuid: z.string(), jurisdiction: z.string() },
+      async handler({ uuid, jurisdiction }) { return json(traceSupersession(uuid as string, jurisdiction as string)) },
+    },
+    {
+      name: 'erpax.standards.lawConsistency',
+      description: 'Conservation Law 27: verify a tenant\'s subscribed standards have no mutual conflicts. Surfaces pairs that the tenant must elect between.',
+      parameters: { tenantId: z.string() },
+      async handler({ tenantId }) { return json(checkStandardCitationsConsistent(tenantId as string)) },
+    },
+    {
+      name: 'erpax.standards.lawSupersessions',
+      description: 'Conservation Law 28: list every tenant subscription whose subscribed-uuid has been superseded in the tenant\'s jurisdiction. The MetaSkillAgent auto-applies safe rebinds.',
+      parameters: { tenantId: z.string(), jurisdiction: z.string() },
+      async handler({ tenantId, jurisdiction }) { return json(checkStandardSupersessionsResolved(tenantId as string, jurisdiction as string)) },
+    },
+    {
+      name: 'erpax.standards.classify',
+      description: 'Classify a standards body into one of the 7 standard families: ifrs-ias / iso / eu-directive / us-fed / w3c-ietf / cloudflare / un-oecd-wco. Used by the standards-as-vortices coupling matrix (§0g).',
+      parameters: { body: z.string() },
+      async handler({ body }) { return json({ family: familyOf(body as string) }) },
     },
     // ── Slice BBBBBB — Blockchain anchoring ──
     {

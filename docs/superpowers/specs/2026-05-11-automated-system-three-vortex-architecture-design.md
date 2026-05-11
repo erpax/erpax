@@ -438,6 +438,44 @@ ERPax is **a self-coupling vortex (§0c) that:**
 
 The architecture is sealed. The vortex spins.
 
+## 0g. Standards as vortices — 7 families + their coupling tensor
+
+Per user 'review the standards as vortices as well'. Standards aren't static citations — each is a vortex in its own right; ERPax's 1294 cited standards form a coupling graph where citations are spinning forces between them. Slice LLLLLL ships the citation/conflict/supersession graph + Laws 27/28.
+
+### The 7 standard families ERPax cites
+
+| Family | Examples | Spin axis |
+|---|---|---|
+| **`ifrs-ias`** | IFRS 1–18, IAS 1–41, IFRS S1/S2 | accounting-period evolution |
+| **`iso`** | ISO/IEC 25010, 27001, 27002, 19011, 20022, 13616, 3166-1, 4217, 8601, 9001, 9241, 41001, 55000 | management-system depth |
+| **`eu-directive`** | PSD2/PSD3, GDPR, AI Act 2024/1689, CSRD 2022/2464, EBA RTS, MiFID II, EMIR, BRRD, DGSD, DAC6/7/8, AMLD6, eIDAS, EU 2014/24-25 | regulatory-regime evolution |
+| **`us-fed`** | SOX §404, COSO 2013, US-GAAP/ASC, FATCA, NIST FIPS 180-4 + 203 + 204, SP 800-208, BCBS Basel III/IV, PCI-DSS v4 | federal-rule horizon |
+| **`w3c-ietf`** | W3C DID Core v1.0, W3C PROV-DM, W3C VC Data Model 2.0, W3C ActivityPub, RFC 4122, RFC 8259, RFC 8785, RFC 9110 | protocol-version timeline |
+| **`cloudflare`** | Workers Runtime, MCP 0.6, WebCrypto, Workers AI, R2, D1, KV, DO, Workflows | platform-capability frontier |
+| **`un-oecd-wco`** | UN/CEFACT, OECD BEPS Pillar 2, WCO HS, IMF GFSM 2014, Berlin Group NextGenPSD2, UN SDG | global-cooperation cycle |
+
+### Coupling forces between standard vortices
+
+| Coupling | Type | Mechanism (slice LLLLLL ships the wiring) |
+|---|---|---|
+| **Citation** | A → B | `addCitation(a, b)` — IFRS-15 §B77 cites IAS-2 §6 |
+| **Conflict** | A ⨯ B | `declareConflict(a, b)` — UK-IFRS-15 ⨯ IFRS-EU-15 (post-Brexit divergence) |
+| **Supersession** | A ↦ B in jurisdiction Z | `declareSupersession({oldUuid, newUuid, jurisdiction})` — IAS-18 ↦ IFRS-15 globally; AMLD5 ↦ AMLD6 in EU |
+| **Inheritance** | role X requires standards bundle Y | `TenantRoleProfile.requiredStandards` (LLLLL) |
+| **Composition** | role X inheritsFrom role Y → standard union | `getEffectiveProfile()` (LLLLL) |
+
+### Two new conservation laws
+
+**Law 27 — `checkStandardCitationsConsistent`:** for every tenant, no two subscribed standards may be in declared CONFLICT. When a divergence emerges (UK-IFRS-15 vs IFRS-EU-15 post-Brexit), the tenant must elect one and the law surfaces the choice.
+
+**Law 28 — `checkStandardSupersessionsResolved`:** every active tenant subscription whose subscribed-uuid has been superseded in the tenant's jurisdiction triggers a rebind proposal (Law 10 referential-harmony pattern, applied to the standards graph). The MetaSkillAgent's hourly cron auto-applies safe rebinds; jurisdictional ambiguity escalates.
+
+### Energy flow across the standards graph
+
+When a regulator publishes a new version (e.g. IASB releases IFRS-18 effective 2027), the standards-as-live-objects registry (CCCCCC) ingests it under a new uuid; `declareSupersession({old: IAS-1-uuid, new: IFRS-18-uuid, jurisdiction: 'global', effectiveDate: '2027-01-01'})` fires; every tenant subscribed to IAS-1 gets a Law 28 rebind proposal at the next hourly meta-sweep; the proposal is auto-applied for any tenant role whose `requiredStandards` referenced IAS-1 generically; manual review for jurisdiction-specific overrides.
+
+The 7 standard families spinning together — coupled by citation, separated by conflict, evolving via supersession — form a higher-order vortex that the platform's 26 conservation laws keep coherent across every tenant role + every jurisdiction + every regulatory cycle.
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
