@@ -21,6 +21,8 @@ The deep docs are the **human-readable counterpart** of the runtime `MCP_STANDAR
 | **[streams.md](./streams.md)** | Quantum streams + Lamport + uuid hash-chain | RRRRRR, SSSSSS | 33, 34 |
 | **[pwa.md](./pwa.md)** | Progressive Web App via uuid (8 pain points) | NNNNNNNN | 52 |
 | **[storage.md](./storage.md)** | Storage independence + replication consensus | TTTTTT, UUUUUU | 35, 36, 48 |
+| **[topology.md](./topology.md)** | Torus closure + infinite-within-finite | CCCCCCC, IIIIIIIII | 43, 48 |
+| **[trinity.md](./trinity.md)** | Three generators (Identity / Causality / Closure) | JJJJJJJJ | (3 generators over 52 derived) |
 
 ## Coming next (per-domain stubs)
 
@@ -28,8 +30,6 @@ These references are planned. Until they land, the inline `@standard` tags at th
 
 | Planned doc | Domain | Slices | Conservation Laws |
 |---|---|---|---|
-| `topology.md` | Torus closure + infinite-within-finite | CCCCCCC, IIIIIIIII | 43, 48 |
-| `trinity.md` | Three generators (Identity / Causality / Closure) | JJJJJJJJ | (3 generators over 52 derived) |
 | `seo.md` | SEO vortex + microdata + Open Graph | NNNNNN | 29 |
 | `website.md` | Interactive website + shadcn + Schema.org | MMMMMM, MMMMMM-shadcn | (covers Schema.org coupling) |
 | `dimensions.md` | 10 dimensional plugins + tenant-role hierarchy | LLLLLLLL, MMMMMMMM, KKKKKKKK | 49, 51 |
