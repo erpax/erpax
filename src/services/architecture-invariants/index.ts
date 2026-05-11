@@ -101,9 +101,9 @@ export async function runAllInvariants(
   if (!skip.has('standards')) {
     results.push(C.checkSpecCoverage100Percent(ctx))   // Law 1
     results.push(C.checkI18nCoverageStrict(ctx))       // Law 3b
-    results.push(C.checkMcpToolStandardizationInvariant(ctx))  // Law 38 — XXXXXX
-    results.push(C.checkMcpPresentationCoverageInvariant(ctx))  // Law 39 — YYYYYY
-    results.push(C.checkDryProofPublishedInvariant(ctx))         // Law 44 — DDDDDDD
+    results.push(await C.checkMcpToolStandardizationInvariant(ctx))  // Law 38 — XXXXXX
+    results.push(await C.checkMcpPresentationCoverageInvariant(ctx))  // Law 39 — YYYYYY
+    results.push(await C.checkDryProofPublishedInvariant(ctx))   // Law 44 — DDDDDDD
     results.push(C.checkUuidShortDisplayInvariant(ctx))          // Law 46 — FFFFFFF
     results.push(C.checkTypeUuidCoverageInvariant(ctx))          // Law 47 — GGGGGGG
   }
@@ -111,8 +111,8 @@ export async function runAllInvariants(
     results.push(C.checkEventGraphConnected(ctx))      // Law 4
     results.push(C.checkAgentOwnsEveryStep(ctx))       // Law 7
     results.push(C.checkBlockCompositionTypeSafety(ctx))  // Law 32 — PPPPPP
-    results.push(C.checkAutoGenerationCoverageInvariant(ctx))  // Law 37 — WWWWWW
-    results.push(C.checkMcpRebuildableFromSourceInvariant(ctx))  // Law 40 — ZZZZZZ
+    results.push(await C.checkAutoGenerationCoverageInvariant(ctx))  // Law 37 — WWWWWW
+    results.push(await C.checkMcpRebuildableFromSourceInvariant(ctx))  // Law 40 — ZZZZZZ
     results.push(C.checkAgentLawCoverageInvariant(ctx))         // Law 45 — EEEEEEE
     results.push(C.checkDimensionalCoverageInvariant(ctx))      // Law 49 — LLLLLLLL
   }

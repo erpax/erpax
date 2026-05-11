@@ -172,7 +172,9 @@ export function checkDryProofPublished(origin: string): DryProofPublishedResult 
     reasons.push(`proof stale: ${(ageMs / 3_600_000).toFixed(1)}h > ${MAX_PROOF_AGE_HOURS}h`)
   }
   // Recompute the content-uuid and verify (Law 8 echo).
-  const { contentUuid: _, ...body } = bundle
+  // Strip stored uuid before recomputing — Law 8 echo (RRRRR).
+  const { contentUuid: _stored, ...body } = bundle
+  void _stored
   const recomputed = computeContentUuid(body as unknown as Record<string, unknown>, PROOF_TENANT_NS)
   if (recomputed !== bundle.contentUuid) {
     reasons.push(`content-uuid mismatch: recomputed=${recomputed.slice(0, 8)}… stored=${bundle.contentUuid.slice(0, 8)}…`)

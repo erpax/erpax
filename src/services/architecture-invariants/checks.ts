@@ -28,14 +28,29 @@ import { verifyAggregate, checkNoDoubleVoting, listBallots } from '@/services/vo
 import { checkRegistryCoupling } from '@/services/agents/blocks'
 import { checkWindowCoherence, checkStreamUuidChain, makeStream, type ClockedEvent } from '@/services/streams'
 import { checkStorageIndependence, consensusRead, memoryPut } from '@/services/storage-independence'
+// Slice CCCCCCC cleanup: break the import cycle by lazily loading
+// `buildErpaxMcpTools` inside each MCP-self invariant. The static
+// chain checks → tool-defs → dry-proof → architecture-invariants →
+// checks would otherwise leave undefined exports at module-load.
+// Type-only imports stay static (no runtime cycle).
 import { checkAutoGenerationCoverage } from '@/services/agents/mcp/auto-generated'
-import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
+import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
 import { checkMcpToolStandardization } from '@/services/agents/mcp/standardization'
 import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/agents/mcp/presentation'
 import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
 import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
+
+async function loadMcpTools(): Promise<ReadonlyArray<ErpaxMcpTool>> {
+  const m = await import('@/services/agents/mcp/tool-defs')
+  return m.buildErpaxMcpTools(agentRegistry)
+}
 import { checkTorusBounded } from '@/services/topology/torus'
-import { publishDryProofBundle, checkDryProofPublished } from '@/services/proof/dry-proof'
+// Lazy — `proof/dry-proof.ts` imports `runAllInvariants` from this
+// module's barrel, so a static import here would close the cycle.
+async function loadCheckDryProofPublished(origin: string) {
+  const m = await import('@/services/proof/dry-proof')
+  return m.checkDryProofPublished(origin)
+}
 import { checkAgentLawCoverage } from '@/services/architecture-invariants/by-agent'
 import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
 import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/services/integrity/type-uuid'
@@ -1553,9 +1568,9 @@ export function checkAgentLawCoverageInvariant(_ctx: InvariantContext): Invarian
  * scheduled task is responsible for publishing on a cadence); pass
  * once a bundle is current.
  */
-export function checkDryProofPublishedInvariant(_ctx: InvariantContext): InvariantResult {
+export async function checkDryProofPublishedInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
   // Use a probe origin — production probes pass the real public origin.
-  const result = checkDryProofPublished('https://erpax-probe.example')
+  const result = await loadCheckDryProofPublished('https://erpax-probe.example')
   if (result.ok) {
     return pass('standards', 'dry-proof-published',
       `proof bundle current (uuid=${result.bundle?.contentUuid?.slice(0, 8) ?? '?'}…) — Law 44 satisfied`)
@@ -1602,7 +1617,7 @@ export function checkTorusBoundedInvariant(_ctx: InvariantContext): InvariantRes
  * skipped.
  */
 export async function checkMcpSelfTestableInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
-  const tools = buildErpaxMcpTools(agentRegistry)
+  const tools = await loadMcpTools()
   const result = await checkMcpSelfTestable(tools)
   if (result.ok) {
     return pass('fallback', 'mcp-self-testable',
@@ -1622,8 +1637,8 @@ export async function checkMcpSelfTestableInvariant(_ctx: InvariantContext): Pro
  * compare with live → fail if any expected tool is missing. Mismatch
  * count is reported as warn (handled by Law 38 / regen pipeline).
  */
-export function checkMcpRebuildableFromSourceInvariant(_ctx: InvariantContext): InvariantResult {
-  const tools = buildErpaxMcpTools(agentRegistry)
+export async function checkMcpRebuildableFromSourceInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+  const tools = await loadMcpTools()
   const result = checkMcpRebuildableFromSource({ liveTools: tools })
   if (result.ok) {
     return pass('expansion', 'mcp-rebuildable-from-source',
@@ -1646,8 +1661,8 @@ export function checkMcpRebuildableFromSourceInvariant(_ctx: InvariantContext): 
  * @standard W3C JSON-LD 1.1 + Schema.org Action
  * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
  */
-export function checkMcpPresentationCoverageInvariant(_ctx: InvariantContext): InvariantResult {
-  const tools = buildErpaxMcpTools(agentRegistry)
+export async function checkMcpPresentationCoverageInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+  const tools = await loadMcpTools()
   const origin = 'https://erpax-presentation-probe.example'
   const snapshot = tools.map((t) => ({ name: t.name, description: t.description, params: Object.keys(t.parameters) }))
   const contentUuid = _computeContentUuid({ snapshot } as Record<string, unknown>, 'mcp-catalog')
@@ -1673,8 +1688,8 @@ export function checkMcpPresentationCoverageInvariant(_ctx: InvariantContext): I
  * @standard MCP 0.6 — tools/list naming convention
  * @audit ISO 19011:2018 §6.4.6 (every tool standards-traceable)
  */
-export function checkMcpToolStandardizationInvariant(_ctx: InvariantContext): InvariantResult {
-  const tools = buildErpaxMcpTools(agentRegistry)
+export async function checkMcpToolStandardizationInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+  const tools = await loadMcpTools()
   const result = checkMcpToolStandardization(tools)
   if (result.ok) {
     return pass('standards', 'mcp-tool-standardization',
@@ -1695,8 +1710,8 @@ export function checkMcpToolStandardizationInvariant(_ctx: InvariantContext): In
  * floor; this check verifies it (regression-proof when someone adds
  * a new primitive without touching MCP wiring).
  */
-export function checkAutoGenerationCoverageInvariant(_ctx: InvariantContext): InvariantResult {
-  const tools = buildErpaxMcpTools(agentRegistry)
+export async function checkAutoGenerationCoverageInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+  const tools = await loadMcpTools()
   const toolNames = new Set(tools.map((t) => t.name))
   const result = checkAutoGenerationCoverage(agentRegistry, toolNames)
   if (result.ok) {

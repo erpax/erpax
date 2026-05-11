@@ -1634,7 +1634,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       parameters: { origin: z.string() },
       async handler({ origin }, req) {
         const bundle = await buildDryProofBundle({
-          invariantCtx: { payload: req.payload } as never,
+          invariantCtx: { payload: req.payload },
           tools, origin: origin as string,
         })
         return json(bundle)
@@ -1646,7 +1646,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       parameters: { origin: z.string() },
       async handler({ origin }, req) {
         const bundle = await publishDryProofBundle({
-          invariantCtx: { payload: req.payload } as never,
+          invariantCtx: { payload: req.payload },
           tools, origin: origin as string,
         })
         return json({ ok: true, contentUuid: bundle.contentUuid, summary: bundle.summary, publicUrl: bundle.publicUrl })
