@@ -1,18 +1,47 @@
 #!/usr/bin/env sh
-# Same checks as `pnpm run check`, without `pnpm run` (avoids pnpm install / approve-builds on some setups).
+# pre-push — Slice FFFFFF self-healing edition (2026-05-11).
+#
+# Same checks as `pnpm run check`, but with auto-heal of regenerable
+# artefacts BEFORE the verify gates run. Regenerable artefacts that
+# are stale auto-regen + auto-commit a `chore(auto-heal): pre-push
+# regen — …` commit; non-regenerable failures (lint / tsc / vitest /
+# missing @standard / untranslated i18n) still fail the gate.
+#
+# Why: commits with --no-verify (sandbox, rebase, cherry-pick, amend)
+# bypass the pre-commit auto-regen hook. Without this self-heal, devs
+# would have to: (a) push, (b) see gate fail, (c) run `pnpm
+# standards:write-index`, (d) commit, (e) push again. With it, the
+# gate self-heals + the push goes through on the first try.
+#
 # Bypass: git push --no-verify
+#
+# @standard ISO 19011:2018 §6.4.6 audit-trail self-heal-visible-in-git-log
+# @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 reusability
+# @audit deterministic-regeneration-of-artefacts-only
+
 cd "$(dirname "$0")/.." || exit 1
 export PATH="$PWD/node_modules/.bin:$PATH"
 export NODE_OPTIONS=--no-deprecation
 set -e
+
+# ── 1. Auto-heal regenerable artefacts FIRST ─────────────────────────
+# Runs unconditionally — fast (~200ms when nothing's stale; ~2s when
+# regenerating). Commits the heal so the rest of the gate sees a clean
+# tree. Handles: docs/STANDARDS_INDEX.md, src/payload-types.ts,
+# src/app/(payload)/admin/importMap.js.
+bash scripts/auto-heal-generated-artefacts.sh
+
+# ── 2. Verify gates (must pass after auto-heal) ─────────────────────
 # Cheapest gate first: malformed @standard / @rfc / @compliance banners.
 bash scripts/standards-citation-index.sh --check
 # Every src/standards/<id>/ + tests/standards/<id>/ file MUST cite a standard.
 bash scripts/standards-citation-index.sh --required
 # docs/STANDARDS_INDEX.md must be in sync with current banners.
+# (Auto-healed above; this is the assert that the heal worked.)
 bash scripts/standards-citation-index.sh --verify-index
 # src/payload-types.ts must be in sync with the live Payload config —
 # stale types let tsc pass in dev but fail in fresh checkouts.
+# (Auto-healed above when pnpm is available; this is the assert.)
 bash scripts/payload-verify-types.sh
 eslint . --quiet
 pnpm run lint:src
