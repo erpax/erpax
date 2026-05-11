@@ -19,9 +19,11 @@ export {
   __resetRegistryForTests,
 } from './registry'
 
-// Side-effect imports — register the 4 reference profiles at module load.
-// Order matters: parents before children (business → payment-provider → bank).
+// Side-effect imports — register the 5 reference profiles at module load.
+// Order matters: parents before children
+// (business → payment-provider → bank ; business → government → country).
 import './profiles/business.profile'
 import './profiles/payment-provider.profile'
 import './profiles/bank.profile'
 import './profiles/government.profile'
+import './profiles/country.profile'

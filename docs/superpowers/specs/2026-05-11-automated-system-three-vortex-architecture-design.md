@@ -1787,6 +1787,53 @@ The other 7 vortices (D Conservation, E Tenant Role, F Integrity, G Beyond, H Cl
 
 @standard ISO/IEC 25010:2023 §5.4 reusability — generator sets; W3C JSON-LD 1.1 — typed law manifests; ISO 19011:2018 §6.4.6 (Trinity verdict at every audit); RFC 4122 §4.3 + RFC 8785 (Identity); Lamport 1978 (Causality); Topology — torus / closed manifold (Hatcher 2002 — Closure).
 
+## 0ac. Any can be ERPax tenant — even its own country
+
+Per user 'remember any can be erpax tenant even its own country'. Extends the open tenant role registry (LLLLL — anyone can declare a role) all the way up to the **sovereign-country level**. Slice KKKKKKKK ships `src/services/tenant-roles/profiles/country.profile.ts`.
+
+### The role hierarchy (5 reference profiles)
+
+```
+business              (LLLLL — base)
+  ├─ payment-provider (MMMMM — PSD2/PSD3/EBA RTS/EMD2)
+  ├─ bank             (NNNNN — Basel + CRR/CRD + IFRS 9 + AnaCredit + FINREP/COREP)
+  └─ government       (OOOOO — IPSAS + GFS + Peppol + EU procurement)
+       └─ country     (KKKKKKKK — sovereign + treaties + sub-tenants)   ← new
+```
+
+A country tenant carries the sovereign-specific standards stack: ISO 3166-1 country codes, UN M49, IMF GFSM 2014, World Bank IDS, OECD GovDB / Pillar 2 / CRS, WCO HS, WTO GATS / TRIPS, UN/CEFACT, INTERPOL UMF, SWIFT BIC, ISO 13616 IBAN, ISO 20022, W3C DID Core 1.0 (sovereign DID for treaty signing), W3C VC Data Model 2.0, EU eIDAS QTSP, IPSAS 22 (general government sector), OECD TIWB, UN A/RES/68/261 (Fundamental Principles of Official Statistics).
+
+### Federation = treaties
+
+**Bilateral treaties are federation envelopes** (slice AAAAAA) carrying content uuid + sovereign DID signature. Multilateral treaties are N-of-K consensus envelopes (slice UUUUUU `consensusRead` with `minAgreement = N`). The treaty itself is a uuid'd content-addressable object (Law 8); changes to the treaty (amendments) are bitemporal evolutions (Law 11) with old-uuid → new-uuid transitions.
+
+### Sub-tenant hierarchy
+
+A country tenant aggregates its operational sub-tenants:
+
+```
+country                         (this slice)
+  ├─ central-bank               (NNNNN inherited)
+  ├─ treasury                   (OOOOO + IPSAS 22 + GFSM)
+  ├─ ministry-of-finance        (OOOOO + IPSAS 1-42)
+  ├─ statistical-office         (UN SDG + ESA 2010 + ESS)
+  ├─ tax-administration         (OECD CRS + DAC6/7/8 + Pillar 2)
+  ├─ customs                    (WCO HS + UCC + GVCs)
+  ├─ procurement-authority      (EU 2014/24 + 2014/25 + Peppol BIS)
+  ├─ social-security            (ISSA standards + IPSAS 25)
+  └─ ministry-of-*              (sectoral — health/transport/energy/...)
+```
+
+Each sub-tenant is itself a tenant (LLLLL); each carries its own uuid (Law 8 / Trinity I); the country tenant aggregates via federation envelopes; treaties cross country boundaries via AAAAAA.
+
+### Conservation invariant
+
+A country tenant respects all three Trinity laws at sovereign scale: every treaty is a federation envelope (AAAAAA) signed by a sovereign DID; every domestic action stays within the country torus or federates with bilateral provenance; every sub-tenant carries its own uuid and aggregates into the country aggregate uuid via consensus reads (Law 36).
+
+### Standards anchoring
+
+@standard ISO 3166-1 alpha-2/3/numeric; UN M49 + UN SDG; IMF GFSM 2014; World Bank IDS; OECD GovDB / BEPS Pillar 2 / CRS; WCO HS; WTO GATS / TRIPS; UN/CEFACT BRS + UN/EDIFACT; SWIFT BIC + ISO 13616 IBAN + ISO 20022; W3C DID Core 1.0 + W3C VC Data Model 2.0; EU eIDAS QTSP; IFRS IPSAS 22; OECD TIWB; UN A/RES/68/261.
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
