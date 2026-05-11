@@ -55,10 +55,16 @@
  */
 
 import type { Payload } from 'payload'
-import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { writeAuditEvent } from '@/services/audit-trail/write-audit-event'
 import type { UuidLinkedLeaf } from '@/services/integrity/uuid-linked-chain'
+// Slice YYYYYYYYY-cut1 (2026-05-11) — share grants emit structured
+// uuidv8 (Law 61) so the shareUuid self-describes: slot=share +
+// SHARED + (SIGNED|SEALED for sign/admin grants). Federation peers
+// + auditors decode the uuid to know the expected verification axes.
+import {
+  encodeStructured, SLOT_TAGS, CAPABILITIES,
+} from '@/services/uuid-format'
 
 /** RBAC access roles — a lattice ordered read < write < sign < admin; audit orthogonal. */
 export type AccessRole = 'read' | 'write' | 'sign' | 'admin' | 'audit'
@@ -118,9 +124,29 @@ export function rolesCompatible(held: AccessRole, required: AccessRole): boolean
 // ─── Share-uuid computation ─────────────────────────────────────────
 
 /**
+ * Capability flags derived from accessRole. Slice YYYYYYYYY-cut1.
+ * Every share carries SHARED. sign/admin grants additionally carry
+ * SIGNED + SEALED — the grant declares "this share's chain leaf is
+ * sealed at a stream-pause point". Federation peers decoding the
+ * shareUuid (Law 61) know the verification axes to expect.
+ */
+function capabilitiesForRole(role: AccessRole): number {
+  let caps = CAPABILITIES.SHARED
+  if (role === 'sign' || role === 'admin') {
+    caps |= CAPABILITIES.SIGNED | CAPABILITIES.SEALED
+  }
+  return caps
+}
+
+/**
  * Compute the deterministic content-uuid of a share binding. Per-
  * tenant namespaced — the same (grantee, role, target) in two
  * tenants produce distinct ShareUuids.
+ *
+ * Slice YYYYYYYYY-cut1 — now emits structured uuidv8 (Law 61) with
+ * slot=share + capabilities derived from accessRole. `decodeStructured
+ * (shareUuid)` returns slot=share so downstream code knows what kind
+ * of binding it's holding without consulting an external table.
  */
 export function computeShareUuid<G, T>(args: {
   granteeUuid: GranteeUuid<G>
@@ -128,14 +154,17 @@ export function computeShareUuid<G, T>(args: {
   accessRole: AccessRole
   tenantId: string
 }): ShareUuid {
-  return computeContentUuid(
-    {
+  return encodeStructured({
+    slotTag: SLOT_TAGS.share,
+    capabilities: capabilitiesForRole(args.accessRole),
+    schemaVersion: 1,
+    content: {
       grantee: args.granteeUuid,
       accessRole: args.accessRole,
       target: args.targetUuid,
     },
-    args.tenantId,
-  ) as ShareUuid
+    tenantId: args.tenantId,
+  }) as ShareUuid
 }
 
 // ─── Grant ──────────────────────────────────────────────────────────

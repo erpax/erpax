@@ -144,6 +144,46 @@ describe('rolesCompatible — RBAC lattice', () => {
   })
 })
 
+// Slice YYYYYYYYY-cut1 (2026-05-11) — structured shareUuid (Law 61).
+describe('computeShareUuid emits structured uuidv8 with slot=share + capabilities derived from accessRole', () => {
+  it('write share decodes as slot=share + SHARED only', async () => {
+    const { decodeStructured } = await import('@/services/uuid-format')
+    const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'write', tenantId: 't' })
+    const parts = decodeStructured(u)
+    expect(parts.slotName).toBe('share')
+    expect(parts.capabilityNames).toContain('SHARED')
+    expect(parts.capabilityNames).not.toContain('SIGNED')
+    expect(parts.capabilityNames).not.toContain('SEALED')
+  })
+
+  it('admin share decodes as slot=share + SHARED + SIGNED + SEALED', async () => {
+    const { decodeStructured } = await import('@/services/uuid-format')
+    const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'admin', tenantId: 't' })
+    const parts = decodeStructured(u)
+    expect(parts.slotName).toBe('share')
+    expect(parts.capabilityNames.sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
+  })
+
+  it('sign share matches admin capability set', async () => {
+    const { decodeStructured } = await import('@/services/uuid-format')
+    const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'sign', tenantId: 't' })
+    const parts = decodeStructured(u)
+    expect(parts.capabilityNames.sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
+  })
+
+  it('audit share decodes as slot=share + SHARED only (audit is observation-only)', async () => {
+    const { decodeStructured } = await import('@/services/uuid-format')
+    const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'audit', tenantId: 't' })
+    const parts = decodeStructured(u)
+    expect(parts.capabilityNames).toEqual(['SHARED'])
+  })
+
+  it('shareUuid is uuidv8 (version nibble = 8)', () => {
+    const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'read', tenantId: 't' })
+    expect(u).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
+  })
+})
+
 describe('computeShareUuid — stable + per-tenant + role-distinct', () => {
   it('is stable for the same inputs', () => {
     const a = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'read', tenantId: 't-1' })
