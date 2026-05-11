@@ -5,9 +5,35 @@
 **Author:** maintainer (Tsvetan) + Claude
 **Date:** 2026-05-11
 
-## 0. What ERPax is (post-LLLLL positioning)
+## 0. What ERPax is
 
-Once **any tenant can be anyone** (open `TENANT_ROLE_PROFILES` registry, slice LLLLL) and **any agent can be anyone** (open `AgentRegistry`, slice DDDDD), ERPax is no longer "an ERP", "a CMS", "a payment platform", or "a bank platform". It's **the substrate that makes any composition provably compliant** — the regulated-substrate-as-platform.
+**ERPax = ERP × Agent.** The name is the architecture: any ERP function multiplied by any agent (human, AI, regulator, integration), composed through MCP. The `x` is the multiplication operator; the conservation laws are what make the cross-product associative.
+
+**ERPax is an MCP server for agents.** The Model Context Protocol IS the product; everything else is incidental.
+
+Every business operation is one `mcp.callTool('erpax.…', args)` call away. The 16 (and growing) ERPax MCP tools — `erpax.spec.*` · `erpax.chain.*` · `erpax.i18n.*` · `erpax.multimedia.*` · `erpax.marketing.*` · `erpax.audit.*` · `erpax.agents.*` · `erpax.integrity.*` · `erpax.refs.*` · `erpax.standards.*` — are the SDK. Internal `DomainAgents` and external clients (Claude Code, Cursor, automated pipelines, regulators with read-only API keys, the human-facing Payload admin UI, third-party apps) **all consume the same surface**. There is one handler per tool, used by both paths (slice DDDDD's in-process `McpClient` ≡ the over-the-wire `@payloadcms/plugin-mcp` exposure).
+
+This collapses what would otherwise be five separate concerns:
+
+- "How do humans run business operations?" → an MCP client (the admin UI is one).
+- "How do AI agents drive workflows?" → another MCP client.
+- "How do regulators audit?" → a read-only MCP client with `erpax.audit.*` + `erpax.integrity.*` + `erpax.refs.*` access.
+- "How do third-party integrations write back?" → an MCP client with scoped tool permissions.
+- "How do internal `DomainAgents` reason?" → `AgentContext.mcp` — the same in-process client.
+
+The "ERP" part becomes **incidental** — the SAME MCP server runs a payment provider (slice MMMMM), a bank (NNNNN), a government (OOOOO), a healthcare provider (PPPPP+), a sovereign fund — anyone the open `TENANT_ROLE_PROFILES` registry describes (slice LLLLL). What's invariant across all those is the MCP protocol and the conservation laws.
+
+### The five things that constitute ERPax core
+
+Once **any tenant can be anyone** (open `TENANT_ROLE_PROFILES`, LLLLL) and **any agent can be anyone** (open `AgentRegistry`, DDDDD), ERPax core is exactly five things:
+
+1. **An MCP-shaped coupling tensor** — the agent runtime + chain registry + spec extractor + audit chain + i18n engine, all exposed via the MCP tool surface so any client (human / AI / regulator / integration) drives the system the same way.
+2. **Conservation laws** (10 today, 10 more in slice ZZZZZ — total 20+) — proved on every push, hold regardless of tenant role / agent set / standards bundle.
+3. **A spec language** (15 SpecXxx types, JSDoc-as-spec) — anyone declares a collection / chain / agent / role / standard citation; the platform generates seeds, tests, marketing, audit-evidence, i18n keys, and **MCP tools** from the declarations.
+4. **An evidence machine** — every state transition → Merkle leaf; every workflow → multimedia walkthrough; every collection → ≥1 standards citation; every value → causal-provenance chain (Law 11). Output: "every claim is provable, in every locale, against every regulator's framework, by replay (Law 12) if challenged."
+5. **An open composability primitive** — plugins, agents, roles, chains, standards, MCP tools all compose. New plugin = new agent = new role = new standards = new MCP tools = no core changes.
+
+**Positioning sentence:** ERPax is **the MCP server your AI agents talk to your business through** — and the conservation laws keep what they say to it provably consistent. The core is small; the periphery is unbounded; the protocol is universal.
 
 Five things and only five constitute ERPax core:
 
@@ -95,6 +121,22 @@ Every law is an architecture invariant under `src/services/architecture-invarian
 8. **Content-addressable integrity** — every object's `uuid` is `UUIDv5(JCS-canonicalize(obj-without-uuid), tenantNamespace)` over SHA-256 (RFC 4122 §4.3 + RFC 8785 + FIPS 180-4). Any in-place DB tamper changes the content → recomputed uuid disagrees with stored uuid → flagged. Together with the QQQQ Merkle audit chain (which proves the *history* of transitions is intact), this proves the *current state* matches what was committed — Byzantine fault tolerance against privileged DB access. `checkContentIntegrityProvable` (Slice RRRRR + per-collection opt-in via `tamperProofUuidField()` in Slice SSSSS).
 9. **Storage redundancy converges** (emergent property of Law 8 — Slice TTTTT) — once each row's uuid IS a content hash, redundant copies across heterogeneous stores (D1 / R2 / KV / Durable Objects / IPFS / Git) become trivially reconcilable: equal uuid = bit-identical content; different uuid = one is stale or tampered, fix by pulling from a peer that verifies. ERPax storage layer becomes "any combination of stores" — the conservation laws keep them consistent without requiring a consistent storage layer. `checkStorageRedundancyConverges`.
 10. **Referential harmony** (Slice UUUUU) — every uuid-typed reference (`uuidRef` field) resolves to a row whose recomputed content-uuid matches the pointer. References APPEAR when matching content exists; DISAPPEAR when it doesn't — automatically, without cascade rules. Mutated content invalidates old-uuid pointers; identical content reappearing re-attaches old pointers (graceful resurrection). `checkReferentialHarmony`. Together with Laws 8 + 9 forms the full spacetime integrity model: per-row + cross-store + referential.
+
+### Beyond current standards (Slice ZZZZZ — Laws 11–22)
+
+11. **Causal provenance** (W3C PROV) — every audit leaf records its causal upstream; ancestry is walkable in O(n).
+12. **Deterministic replay** (ISRS 4400) — `replayLeaf({leafHash, snapshotUuid})` reproduces byte-identical effects; mismatch flags non-determinism.
+13. **Tenant isolation provability** (NIST INCITS 359, GDPR Art. 32) — every query trace records (where-clause-tenantId, result-row-tenantIds); leak detection in O(1).
+14. **Bitemporal queries** (SQL:2011 §4.15.10) — `asOf({recordedAt, validAt})` for system-time × valid-time queries (stub; full impl pending temporal-table extension).
+15. **Cost accountability** (CF Workers price list) — every chain step records `CostMetric` (cpuMs / storage / egress / AI tokens); `setBudget` enforces tenant cap; runaway agents get throttled.
+16. **Carbon-aware execution** (ESRS E1 + GHG Scope-2) — gCO2e per chain step using grid-intensity + IEA network factor; aggregates for CSRD reporting.
+17. **Agent capability matrix** (NIST INCITS 359 RBAC) — every agent declares `(roleId, readScopes, writeScopes, mcpToolPermissions, jurisdictions, maxCostPerOpMicroUsd)`; runtime refuses out-of-scope reads/writes/tool-calls. Default deny.
+18. **Post-quantum signatures** (NIST FIPS 204 ML-DSA) — audit-leaf signing migrates from SHA-256 to ML-DSA-65 (stub; full impl pending Workers-friendly liboqs).
+19. **Self-explainability** (EU AI Act Art. 13 + ISO/IEC 23053) — `autoExplain()` emits per-locale narrative citing standards + chain path + sources; deterministic (no LLM in the path so Law 12 holds).
+20. **Reversibility** (GDPR Art. 17) — `inverseOf(effect)` returns typed inverse; `isFullyReversible(effects)` for cascade-undo workflows.
+22. **AI-decision audit** (EU AI Act Annex IV) — every AI invocation records `(modelVersion, modelProvider, promptHash SHA-256 over JCS-canonicalized prompt, parameters, seed, in/out tokens, latency, humanReview)`. Reproducibility is the contract.
+
+(Law 21 reserved for forward-compatibility — bidirectional schema migrations — to be filled in a future cut.)
 
 ### Corruption resilience — meta-property of Laws 8 + 9 + 10
 
