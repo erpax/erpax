@@ -31,6 +31,8 @@ import { checkStorageIndependence, consensusRead, memoryPut } from '@/services/s
 import { checkAutoGenerationCoverage } from '@/services/agents/mcp/auto-generated'
 import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
 import { checkMcpToolStandardization } from '@/services/agents/mcp/standardization'
+import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/agents/mcp/presentation'
+import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1414,6 +1416,34 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 39 — `checkMcpPresentationCoverageInvariant`.
+ * Slice YYYYYY (2026-05-11). Per user 'let mcp present itself as
+ * microdata open graphs'.
+ *
+ * Probe: register every MCP tool as an SeoVortexFace at a synthetic
+ * origin; verify each tool has a face with schemaType Action and ≥1
+ * outbound microdata edge.
+ *
+ * @standard W3C JSON-LD 1.1 + Schema.org Action
+ * @audit ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable)
+ */
+export function checkMcpPresentationCoverageInvariant(_ctx: InvariantContext): InvariantResult {
+  const tools = buildErpaxMcpTools(agentRegistry)
+  const origin = 'https://erpax-presentation-probe.example'
+  const snapshot = tools.map((t) => ({ name: t.name, description: t.description, params: Object.keys(t.parameters) }))
+  const contentUuid = _computeContentUuid({ snapshot } as Record<string, unknown>, 'mcp-catalog')
+  registerAllMcpFaces({ tools, origin, contentUuidForCatalog: contentUuid })
+  const result = checkMcpPresentationCoverage(tools, origin)
+  if (result.ok) {
+    return pass('standards', 'mcp-presentation-coverage',
+      `${result.toolsRegistered}/${result.toolsTotal} MCP tools registered as Schema.org Action faces — Law 39 satisfied`)
+  }
+  return fail('standards', 'mcp-presentation-coverage',
+    `${result.violations.length} MCP tools fail presentation coverage`,
+    result.violations.slice(0, 8))
 }
 
 /**
