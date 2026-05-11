@@ -88,6 +88,10 @@ import {
   getType, getTypeByUuid, listTypes, verifyType, ensureBaselineTypesRegistered,
   checkTypeUuidCoverage, type TypeDescriptor,
 } from '@/services/integrity/type-uuid'
+import {
+  recordUuid, queryUuidStream, snapshotFromRegistries,
+  buildInfiniteFinitenessReport, checkInfiniteFiniteness, type UuidSource,
+} from '@/services/integrity/uuid-stream'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1454,6 +1458,84 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Slice GGGGGGG — eagerly register the platform-mandated baseline types (AgentEffect, DomainEvent, AuditLeaf, BallotKind, PageSeed, SeoVortexFace, CollectionSpec). Idempotent. Required for Law 47 to pass at boot.',
       parameters: {},
       async handler() { ensureBaselineTypesRegistered(); return json({ ok: true, registered: listTypes().length }) },
+    },
+    // ── Slice IIIIIIIII — infinite-within-finite spacetime (Law 48) ──
+    {
+      name: 'erpax.integrity.uuidStreamSnapshot',
+      description: 'Per user "no. much more than this. with the replication it is infinite within the finite spacetime" — snapshot every uuid from live registries (faces + types) into the unified UUID_STREAM. Returns counts added (W3C JSON-LD 1.1).',
+      parameters: {},
+      async handler() { return json(snapshotFromRegistries()) },
+    },
+    {
+      name: 'erpax.integrity.uuidStreamQuery',
+      description: 'Slice IIIIIIIII — unified query interface across every uuid source (object/type/stream/audit/vote/aggregate/page/face/standard/clone/federation/proof/did/tool-catalog/platform-genome). Filter by source + tenant + limit (RFC 4122 §4.3).',
+      parameters: {
+        source: z.union([
+          z.enum(['object', 'type', 'stream', 'audit', 'vote', 'aggregate', 'page', 'face', 'standard', 'clone', 'federation', 'proof', 'did', 'tool-catalog', 'platform-genome']),
+          z.array(z.enum(['object', 'type', 'stream', 'audit', 'vote', 'aggregate', 'page', 'face', 'standard', 'clone', 'federation', 'proof', 'did', 'tool-catalog', 'platform-genome'])),
+        ]).optional(),
+        tenantId: z.string().optional(),
+        limit: z.number().int().min(1).max(1000).optional(),
+      },
+      async handler({ source, tenantId, limit }) {
+        return json(queryUuidStream({
+          source: source as UuidSource | UuidSource[] | undefined,
+          tenantId: tenantId as string | undefined,
+          limit: limit as number | undefined,
+        }))
+      },
+    },
+    {
+      name: 'erpax.integrity.uuidStreamRecord',
+      description: 'Slice IIIIIIIII — record a uuid into the unified stream (manually push when a subsystem produces a uuid outside the auto-snapshot path). For testing + production extensions.',
+      parameters: {
+        uuid: z.string(),
+        source: z.enum(['object', 'type', 'stream', 'audit', 'vote', 'aggregate', 'page', 'face', 'standard', 'clone', 'federation', 'proof', 'did', 'tool-catalog', 'platform-genome']),
+        tenantId: z.string().optional(),
+        metadata: z.record(z.unknown()).optional(),
+      },
+      async handler({ uuid, source, tenantId, metadata }) {
+        recordUuid({
+          uuid: uuid as string,
+          source: source as UuidSource,
+          tenantId: tenantId as string | undefined,
+          metadata: metadata as Record<string, unknown> | undefined,
+          registeredAt: new Date().toISOString(),
+        })
+        return json({ ok: true })
+      },
+    },
+    {
+      name: 'erpax.integrity.infiniteFinitenessReport',
+      description: 'Slice IIIIIIIII — quantify infinite-within-finite: totalUuids × (backends × federationPeers × bitemporalVersions) = totalLogicalUuids; physical_bytes vs envelope; richness ratio (logical_extent / physical_bytes). Topology — torus + Hilbert-space replicas (Hatcher 2002).',
+      parameters: {
+        federationPeersConfigured: z.number().int().min(1).optional(),
+        bitemporalVersionsAvg: z.number().min(1).optional(),
+        bytesEstimate: z.number().int().min(0).optional(),
+      },
+      async handler({ federationPeersConfigured, bitemporalVersionsAvg, bytesEstimate }) {
+        return json(buildInfiniteFinitenessReport({
+          federationPeersConfigured: federationPeersConfigured as number | undefined,
+          bitemporalVersionsAvg: bitemporalVersionsAvg as number | undefined,
+          bytesEstimate: bytesEstimate as number | undefined,
+        }))
+      },
+    },
+    {
+      name: 'erpax.integrity.checkInfiniteFiniteness',
+      description: 'Conservation Law 48 — physical_bytes <= envelope (Law 43 echo); logical_extent unbounded; every uuid has a known source. Returns verdict + full report (W3C VC Data Model 2.0 verifiable replicas).',
+      parameters: {
+        federationPeersConfigured: z.number().int().min(1).optional(),
+        bitemporalVersionsAvg: z.number().min(1).optional(),
+        bytesEstimate: z.number().int().min(0).optional(),
+      },
+      async handler({ federationPeersConfigured, bitemporalVersionsAvg, bytesEstimate }) {
+        return json(checkInfiniteFiniteness({
+          federationPeersConfigured: federationPeersConfigured as number | undefined,
+          bitemporalVersionsAvg: bitemporalVersionsAvg as number | undefined,
+          bytesEstimate: bytesEstimate as number | undefined,
+        }))
+      },
     },
     {
       name: 'erpax.integrity.checkTypeUuidCoverage',

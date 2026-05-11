@@ -39,6 +39,7 @@ import { publishDryProofBundle, checkDryProofPublished } from '@/services/proof/
 import { checkAgentLawCoverage } from '@/services/architecture-invariants/by-agent'
 import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
 import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/services/integrity/type-uuid'
+import { checkInfiniteFiniteness } from '@/services/integrity/uuid-stream'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1423,6 +1424,27 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 48 — `checkInfiniteFinitenessInvariant`. Slice
+ * IIIIIIIII (2026-05-11). Per user 'no. much more than this. with
+ * the replication it is infinite within the finite spacetime'.
+ *
+ * Probe: physical_bytes <= envelope; logical_extent unbounded;
+ * every recorded uuid has a known source. Reports the richness
+ * ratio (logical_extent / physical_bytes) as a system-health metric.
+ */
+export function checkInfiniteFinitenessInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkInfiniteFiniteness()
+  if (result.ok) {
+    const r = result.report
+    return pass('entropy', 'infinite-finiteness',
+      `${r.totalUuids} uuids × ${r.logicalExtent.multiplier}x replication = ${r.logicalExtent.totalLogicalUuids} logical replicas in ${r.physical.utilizationPercent.toFixed(1)}% of envelope (Law 48 satisfied; richness=${r.richness.ratio.toFixed(2)})`)
+  }
+  return fail('entropy', 'infinite-finiteness',
+    `${result.violations.length} violation(s)`,
+    [...result.violations])
 }
 
 /**
