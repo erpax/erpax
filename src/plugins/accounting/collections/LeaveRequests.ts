@@ -101,8 +101,11 @@ const LeaveRequests: CollectionConfig = {
           admin: { description: 'Days drawn from prior-year carry-over.' } },
       ],
     },
+    // 'approver' is the manager assigned to action this request; distinct
+    // from 'approvedBy' (who actually clicked approve — comes from auditFields).
     { name: 'approver', type: 'relationship', relationTo: 'users' },
-    { name: 'approvedAt', type: 'date' },
+    // 'approvedAt' removed — comes from auditFields() below; was a duplicate
+    // that tripped Payload's DuplicateFieldName guard at config-load time.
     { name: 'rejectionReason', type: 'text' },
     { name: 'replacedByEmployee', type: 'relationship', relationTo: 'employees',
       admin: { description: 'Coverage employee during the absence (when applicable).' } },
