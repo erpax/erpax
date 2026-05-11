@@ -98,15 +98,26 @@ const REGISTRY = new Map<string, IdentitySlotDef>()
 /**
  * Register a slot's identity definition. Throws on duplicate
  * registration unless `{ replace: true }` is supplied (tests).
+ *
+ * Slice RRRRRRRRR-cut1 — `{ replace: true }` is a uuid-family
+ * escape hatch (Conservation Law 58). Production mode rejects the
+ * override; test/dev modes admit it.
  */
 export function registerIdentitySlot<C extends string>(
   def: IdentitySlotDef<C>,
   opts: { replace?: boolean } = {},
 ): void {
-  if (REGISTRY.has(def.slot) && !opts.replace) {
-    throw new Error(
-      `[identity-element] slot '${def.slot}' already registered (blank=${REGISTRY.get(def.slot)!.blank}). Pass { replace: true } to override.`,
-    )
+  if (REGISTRY.has(def.slot)) {
+    if (!opts.replace) {
+      throw new Error(
+        `[identity-element] slot '${def.slot}' already registered (blank=${REGISTRY.get(def.slot)!.blank}). Pass { replace: true } to override.`,
+      )
+    }
+    // Lazy import to avoid circular module-load between identity-element
+    // and safety-mode (both load at boot, safety-mode has no deps).
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+    requireSafetyMode(['test', 'dev'], `registerIdentitySlot('${def.slot}', { replace: true })`)
   }
   REGISTRY.set(def.slot, def as IdentitySlotDef<string>)
 }
@@ -121,8 +132,11 @@ export function listIdentitySlots(): ReadonlyArray<IdentitySlotDef> {
   return [...REGISTRY.values()]
 }
 
-/** Test-only: clear the registry. Never call from production code. */
+/** Test-only: clear the registry. Production-mode invocations throw. */
 export function __resetIdentitySlotRegistryForTests(): void {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  requireSafetyMode(['test', 'dev'], '__resetIdentitySlotRegistryForTests')
   REGISTRY.clear()
 }
 

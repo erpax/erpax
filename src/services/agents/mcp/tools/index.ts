@@ -24,3 +24,8 @@ export { buildCloudflareTools } from './cloudflare'
 // sync'.
 export { buildKvTools } from './kv'
 export { buildIntegrityExtensionTools } from './integrity-extensions'
+// Slice RRRRRRRRR-cut1 (2026-05-11) — uuid family self-protection.
+// erpax.security.attackSurface / erpax.security.assertMode surface
+// the Conservation Law 58 escape-hatch inventory for auditors +
+// deployment scripts.
+export { buildSecurityTools } from './security'

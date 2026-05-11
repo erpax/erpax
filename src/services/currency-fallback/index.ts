@@ -276,6 +276,12 @@ export function getDefaultRateProvider(): RealtimeRateProvider {
 }
 
 export function setDefaultRateProvider(p: RealtimeRateProvider): void {
+  // Slice RRRRRRRRR-cut1 — guarded escape hatch. Production wires the
+  // exchange-rates collection provider at boot; runtime swaps are
+  // test-only (Conservation Law 58).
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  requireSafetyMode(['test', 'dev'], 'setDefaultRateProvider')
   _defaultRateProvider = p
 }
 

@@ -166,6 +166,11 @@ export function getDefaultKeyResolver(): TenantKeyResolver {
 }
 
 export function setDefaultKeyResolver(r: TenantKeyResolver): void {
+  // Slice RRRRRRRRR-cut1 — guarded escape hatch. Production wires the
+  // KV-backed resolver at boot; runtime swaps are test-only.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  requireSafetyMode(['test', 'dev'], 'setDefaultKeyResolver')
   _defaultResolver = r
 }
 
@@ -177,6 +182,10 @@ export async function provisionTestSigningKey(args: {
   tenantId: string
   kid: string
 }): Promise<{ kid: string; publicKey: CryptoKey; privateKey: CryptoKey }> {
+  // Slice RRRRRRRRR-cut1 — guarded; production rejects.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  requireSafetyMode(['test', 'dev'], 'provisionTestSigningKey')
   const pair = await globalThis.crypto.subtle.generateKey(
     { name: 'Ed25519' }, true, ['sign', 'verify'],
   ) as CryptoKeyPair
@@ -199,6 +208,10 @@ export async function provisionTestKek(args: {
   tenantId: string
   kid: string
 }): Promise<{ kid: string; kek: CryptoKey }> {
+  // Slice RRRRRRRRR-cut1 — guarded; production rejects.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  requireSafetyMode(['test', 'dev'], 'provisionTestKek')
   const raw = globalThis.crypto.getRandomValues(new Uint8Array(32))
   const kek = await globalThis.crypto.subtle.importKey(
     'raw', raw, { name: 'HKDF' }, false, ['deriveKey'],

@@ -73,11 +73,17 @@ export function registerInternalProvider<P, R>(
   provider: InternalProvider<P, R>,
   opts: { replace?: boolean } = {},
 ): void {
-  if (REGISTRY.has(provider.role) && !opts.replace) {
-    throw new Error(
-      `[self-closure] provider already registered for role '${provider.role}' (id=${REGISTRY.get(provider.role)!.id}); ` +
-      `pass { replace: true } to override`,
-    )
+  if (REGISTRY.has(provider.role)) {
+    if (!opts.replace) {
+      throw new Error(
+        `[self-closure] provider already registered for role '${provider.role}' (id=${REGISTRY.get(provider.role)!.id}); ` +
+        `pass { replace: true } to override`,
+      )
+    }
+    // Slice RRRRRRRRR-cut1 — escape hatch guarded by safety mode.
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+    requireSafetyMode(['test', 'dev'], `registerInternalProvider('${provider.role}', { replace: true })`)
   }
   REGISTRY.set(provider.role, provider)
 }
@@ -175,9 +181,12 @@ export async function withInternalFallback<TParams, TResult>(args: {
 }
 
 /**
- * Test-only: clear the registry. NEVER call from production code.
- * Exported so unit tests can isolate registration state between cases.
+ * Test-only: clear the registry. Slice RRRRRRRRR-cut1 — production
+ * mode rejects this call; test/dev admit it.
  */
 export function __resetInternalProviderRegistryForTests(): void {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  requireSafetyMode(['test', 'dev'], '__resetInternalProviderRegistryForTests')
   REGISTRY.clear()
 }
