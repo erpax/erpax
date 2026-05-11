@@ -45,7 +45,7 @@ const CommitmentsAndContingencies: CollectionConfig = {
   fields: [
     multiTenancyField(),
     referenceField(),
-    { name: 'description', type: 'textarea', required: true },
+    { name: 'description', type: 'textarea', localized: true, required: true },
     {
       name: 'kind',
       type: 'select',

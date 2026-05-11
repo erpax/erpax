@@ -52,7 +52,7 @@ const PerformanceObligations: CollectionConfig = {
   fields: [
     multiTenancyField(),
     { name: 'contract', type: 'relationship', relationTo: 'contracts', required: true, index: true },
-    { name: 'description', type: 'text', required: true },
+    { name: 'description', type: 'text', localized: true, required: true },
     {
       name: 'kind',
       type: 'select',

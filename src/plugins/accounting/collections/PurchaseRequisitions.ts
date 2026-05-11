@@ -56,7 +56,7 @@ const PurchaseRequisitions: CollectionConfig = {
       labels: { singular: 'Line', plural: 'Lines' },
       dbName: 'pr_lines',
       fields: [
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'item', type: 'relationship', relationTo: 'items' },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'uom', type: 'text', defaultValue: 'EA' },
@@ -110,7 +110,7 @@ const PurchaseRequisitions: CollectionConfig = {
           defaultValue: 'pending',
         },
         { name: 'decidedAt', type: 'date' },
-        { name: 'comment', type: 'text' },
+        { name: 'comment', type: 'text', localized: true },
       ],
     },
     { name: 'createdPurchaseOrder', type: 'relationship', relationTo: 'purchase-orders',

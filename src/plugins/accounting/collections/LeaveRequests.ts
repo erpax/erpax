@@ -133,12 +133,12 @@ export default createAccountingCollection({
     // 'approver' = manager assigned to action this request (distinct from
     // 'approvedBy' from auditFields = who actually clicked approve).
     { name: 'approver', type: 'relationship', relationTo: 'users' },
-    { name: 'rejectionReason', type: 'text' },
+    { name: 'rejectionReason', type: 'text', localized: true },
     { name: 'replacedByEmployee', type: 'relationship', relationTo: 'employees',
       admin: { description: 'Coverage employee during the absence (when applicable).' } },
     { name: 'isHandoverComplete', type: 'checkbox', defaultValue: false },
     { name: 'cancelledDate', type: 'date' },
-    { name: 'cancelReason', type: 'text' },
+    { name: 'cancelReason', type: 'text', localized: true },
     // Status / auditFields / notes injected by the factory below.
   ],
 })

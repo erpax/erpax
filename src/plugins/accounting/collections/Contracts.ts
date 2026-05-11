@@ -57,7 +57,7 @@ const Contracts: CollectionConfig = {
     // IFRS-15 §10 contract-with-customer requires the customer party itself.
     // The address sits on the customer row (billingAddress / shippingAddress).
     { name: 'customer', type: 'relationship', relationTo: 'customers', required: true },
-    { name: 'title', type: 'text', required: true },
+    { name: 'title', type: 'text', localized: true, required: true },
     { name: 'effectiveFrom', type: 'date', required: true },
     { name: 'effectiveTo', type: 'date' },
     {
@@ -145,7 +145,7 @@ const Contracts: CollectionConfig = {
       admin: { description: 'IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.' },
       fields: [
         { name: 'modifiedAt', type: 'date', required: true },
-        { name: 'description', type: 'textarea', required: true },
+        { name: 'description', type: 'textarea', localized: true, required: true },
         { name: 'priceImpact', type: 'number' },
         { name: 'modifiedBy', type: 'relationship', relationTo: 'users' },
       ],

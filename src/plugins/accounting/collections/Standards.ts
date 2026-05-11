@@ -132,7 +132,7 @@ export default createAccountingCollection({
       admin: { description: 'Other standards this one materially conflicts with (Law 27). Each conflict carries a one-line rationale + the conservation-law id the conflict triggers.' },
       fields: [
         { name: 'otherStandard', type: 'relationship', relationTo: 'standards', required: true },
-        { name: 'rationale', type: 'text', required: true },
+        { name: 'rationale', type: 'text', localized: true, required: true },
         { name: 'lawId', type: 'text',
           admin: { description: 'Optional Conservation Law id that this conflict trips (e.g. "Law-27").' } },
         { name: 'severity', type: 'select',

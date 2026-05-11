@@ -49,7 +49,7 @@ const GoodsReceipts: CollectionConfig = {
       minRows: 1,
       fields: [
         { name: 'item', type: 'relationship', relationTo: 'items' },
-        { name: 'description', type: 'text' },
+        { name: 'description', type: 'text', localized: true },
         { name: 'quantityReceived', type: 'number', required: true, min: 0 },
         { name: 'quantityDamaged', type: 'number', defaultValue: 0, min: 0 },
         { name: 'condition', type: 'select', options: ['good', 'damaged', 'partial', 'rejected'].map(v => ({ label: v, value: v })) },

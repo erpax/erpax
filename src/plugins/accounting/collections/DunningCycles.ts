@@ -172,7 +172,7 @@ const DunningCycles: CollectionConfig = {
           ],
         },
         { name: 'communicationReference', type: 'text' },
-        { name: 'notes', type: 'textarea' },
+        { name: 'notes', type: 'textarea', localized: true },
       ],
     },
 

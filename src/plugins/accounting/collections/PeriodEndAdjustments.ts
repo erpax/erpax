@@ -58,7 +58,7 @@ const PeriodEndAdjustments: CollectionConfig = {
       ],
     },
     { name: 'period', type: 'date', required: true },
-    { name: 'description', type: 'textarea', required: true },
+    { name: 'description', type: 'textarea', localized: true, required: true },
     { name: 'adjustmentAmount', type: 'number', required: true },
     { name: 'debitAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },
     { name: 'creditAccount', type: 'relationship', relationTo: 'gl-accounts', required: true },

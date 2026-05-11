@@ -161,7 +161,7 @@ const AccountReconciliations: CollectionConfig = {
             { label: 'Other', value: 'other' },
           ],
         },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'amount', type: 'number', required: true },
         { name: 'originatedAt', type: 'date', required: true },
         {
@@ -200,7 +200,7 @@ const AccountReconciliations: CollectionConfig = {
             { label: 'Other', value: 'other' },
           ],
         },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'amount', type: 'number', required: true },
         { name: 'originatedAt', type: 'date', required: true },
         {
@@ -260,7 +260,7 @@ const AccountReconciliations: CollectionConfig = {
     },
     { name: 'reviewedAt', type: 'date', admin: { readOnly: true } },
     // approvedBy / approvedAt come from auditFields({ readOnly: true }) below.
-    { name: 'rejectionReason', type: 'textarea' },
+    { name: 'rejectionReason', type: 'textarea', localized: true },
 
     statusField(
       [

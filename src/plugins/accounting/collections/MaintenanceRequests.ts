@@ -42,7 +42,7 @@ const MaintenanceRequests: CollectionConfig = {
     referenceField({ description: 'Sequential request reference (e.g. `MR-2026-04-001`).' }),
     { name: 'subject', type: 'text', required: true,
       admin: { description: 'Short summary (e.g. "Leaking tap room 201").' } },
-    { name: 'description', type: 'textarea', required: true },
+    { name: 'description', type: 'textarea', localized: true, required: true },
     {
       name: 'requestType',
       type: 'select',
@@ -97,7 +97,7 @@ const MaintenanceRequests: CollectionConfig = {
       admin: { description: 'Optional photo evidence (URLs in R2 / object storage).' },
       fields: [
         { name: 'url', type: 'text', required: true },
-        { name: 'caption', type: 'text' },
+        { name: 'caption', type: 'text', localized: true },
       ],
     },
     { name: 'workOrder', type: 'relationship', relationTo: 'maintenance-work-orders',

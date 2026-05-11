@@ -69,7 +69,7 @@ const DataSubjectRequests: CollectionConfig = {
       'submitted',
     ),
     { name: 'completedAt', type: 'date', admin: { readOnly: true } },
-    { name: 'rejectionReason', type: 'textarea' },
+    { name: 'rejectionReason', type: 'textarea', localized: true },
     { name: 'fulfilmentEvidence', type: 'json', admin: { description: 'JSON record of what was exported/erased/restricted.' } },
     { name: 'handler', type: 'relationship', relationTo: 'users', admin: { description: 'DPO or staff member handling this request.' } },
     ...auditFields(),

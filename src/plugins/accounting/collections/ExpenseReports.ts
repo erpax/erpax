@@ -75,7 +75,7 @@ const ExpenseReports: CollectionConfig = {
             { label: 'Other', value: 'other' },
           ],
         },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'merchant', type: 'text' },
         currencyField({ name: 'currency', defaultValue: 'EUR' }),
         { name: 'amount', type: 'number', required: true,
@@ -119,7 +119,7 @@ const ExpenseReports: CollectionConfig = {
           { label: 'Returned for Clarification', value: 'returned' },
         ]},
         { name: 'decidedAt', type: 'date' },
-        { name: 'comment', type: 'text' },
+        { name: 'comment', type: 'text', localized: true },
       ],
     },
     { name: 'reimbursementMethod', type: 'select', defaultValue: 'payroll', options: [

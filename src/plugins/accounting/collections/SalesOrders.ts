@@ -133,7 +133,7 @@ export default createAccountingCollection({
           admin: { description: 'Position within the order. Stable for cross-document trace.' } },
         { name: 'item', type: 'relationship', relationTo: 'items',
           admin: { description: 'Catalogue item (when ordering from the item master).' } },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'unitOfMeasure', type: 'text',
           admin: { description: 'UN/CEFACT Rec 20 unit code (PCE, KGM, LTR, …). EN-16931 §BT-130.' } },
@@ -156,6 +156,6 @@ export default createAccountingCollection({
 
     // Termination signals
     { name: 'cancellationDate', type: 'date' },
-    { name: 'cancellationReason', type: 'text' },
+    { name: 'cancellationReason', type: 'text', localized: true },
   ],
 })

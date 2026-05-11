@@ -42,8 +42,8 @@ const ProjectTasks: CollectionConfig = {
       admin: { description: 'Optional parent task for hierarchical WBS (task → subtask).' } },
     { name: 'taskCode', type: 'text', required: true, index: true,
       admin: { description: 'Project-unique task code (e.g. T-001 / WBS 1.2.3).' } },
-    { name: 'name', type: 'text', required: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'name', type: 'text', localized: true, required: true },
+    { name: 'description', type: 'textarea', localized: true },
     { name: 'assignee', type: 'relationship', relationTo: 'users' },
     {
       name: 'taskType',

@@ -136,7 +136,7 @@ const Bookings: CollectionConfig = {
     { name: 'checkedInAt', type: 'date', admin: { readOnly: true } },
     { name: 'checkedOutAt', type: 'date', admin: { readOnly: true } },
     { name: 'cancelledAt', type: 'date', admin: { readOnly: true } },
-    { name: 'cancelReason', type: 'text' },
+    { name: 'cancelReason', type: 'text', localized: true },
     ...auditFields({ readOnly: true }),
     notesField(),
   ],

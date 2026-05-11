@@ -72,7 +72,7 @@ const BudgetPlanning: CollectionConfig = {
         ...glAccountField(true),
         { name: 'accountType', type: 'text', admin: { disabled: true } },
         { name: 'budgetAmount', type: 'number', required: true, min: 0 },
-        { name: 'notes', type: 'textarea' },
+        { name: 'notes', type: 'textarea', localized: true },
       ],
     },
     { name: 'totalBudget', type: 'number', defaultValue: 0, admin: { disabled: true } },

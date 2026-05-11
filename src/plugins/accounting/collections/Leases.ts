@@ -348,7 +348,7 @@ const Leases: CollectionConfig = {
         { name: 'newDiscountRatePercent', type: 'number' },
         { name: 'newFixedPayment', type: 'number' },
         { name: 'newEndDate', type: 'date' },
-        { name: 'notes', type: 'textarea' },
+        { name: 'notes', type: 'textarea', localized: true },
       ],
     },
     {

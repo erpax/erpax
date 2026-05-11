@@ -31,8 +31,8 @@ const AuditFindings: CollectionConfig = {
   fields: [
     multiTenancyField(),
     { name: 'findingId', type: 'text', required: true, unique: true, index: true },
-    { name: 'title', type: 'text', required: true },
-    { name: 'description', type: 'textarea', required: true },
+    { name: 'title', type: 'text', localized: true, required: true },
+    { name: 'description', type: 'textarea', localized: true, required: true },
     {
       name: 'severity',
       type: 'select',

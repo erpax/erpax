@@ -42,3 +42,7 @@ export { buildChainTools } from './chain'
 // layout (RFC 9562 §6.4): slot + capabilities + version + 106-bit
 // content digest fused into one 128-bit primitive.
 export { buildFormatTools } from './format'
+// Slice WWWWWWWWW-cut1 (2026-05-11) — uuid self-governance.
+// erpax.governance.{establish, attest} surface Conservation Law 63:
+// any entity with a uuid can be self-governing without central authority.
+export { buildGovernanceTools } from './governance'

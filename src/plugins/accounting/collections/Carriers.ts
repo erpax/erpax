@@ -71,7 +71,7 @@ const Carriers: CollectionConfig = {
       fields: [
         { name: 'code', type: 'text', required: true,
           admin: { description: 'Carrier service code (e.g. `EXPRESS_WORLDWIDE`).' } },
-        { name: 'label', type: 'text', required: true },
+        { name: 'label', type: 'text', localized: true, required: true },
         taxonomySelect('incoterm', INCOTERM_OPTIONS),
         { name: 'transitDays', type: 'number',
           admin: { description: 'Typical end-to-end transit time in days.' } },

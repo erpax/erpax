@@ -43,8 +43,8 @@ const BookableResources: CollectionConfig = {
     multiTenancyField(),
     { name: 'code', type: 'text', required: true, unique: true, index: true,
       admin: { description: 'Short code (e.g. `ROOM-201`, `VAN-03`, `LATHE-A`).' } },
-    { name: 'name', type: 'text', required: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'name', type: 'text', localized: true, required: true },
+    { name: 'description', type: 'textarea', localized: true },
     {
       name: 'kind',
       type: 'select',

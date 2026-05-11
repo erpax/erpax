@@ -61,7 +61,7 @@ const CostCenters: CollectionConfig = {
     },
     {
       name: 'name',
-      type: 'text',
+      type: 'text', localized: true,
       required: true,
     },
     {

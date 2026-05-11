@@ -140,7 +140,7 @@ const GLAccounts: CollectionConfig = {
     ),
     {
       name: 'description',
-      type: 'textarea',
+      type: 'textarea', localized: true,
     },
     {
       name: 'isTaxAccount',

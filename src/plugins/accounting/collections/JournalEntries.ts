@@ -72,7 +72,7 @@ const JournalEntries: CollectionConfig = {
     { name: 'entryNumber', type: 'text', required: true, unique: true },
     { name: 'entryDate', type: 'date', required: true },
     { name: 'postedDate', type: 'date' },
-    { name: 'description', type: 'textarea', required: true },
+    { name: 'description', type: 'textarea', localized: true, required: true },
     statusField(
       [
         { label: 'Draft', value: 'draft' },
@@ -91,7 +91,7 @@ const JournalEntries: CollectionConfig = {
       fields: [
         { name: 'lineNumber', type: 'number', defaultValue: 1 },
         ...glAccountField(true),
-        { name: 'description', type: 'text' },
+        { name: 'description', type: 'text', localized: true },
         { name: 'debit', type: 'number', defaultValue: 0 },
         { name: 'credit', type: 'number', defaultValue: 0 },
         currencyField(),

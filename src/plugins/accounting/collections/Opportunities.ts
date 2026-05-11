@@ -35,7 +35,7 @@ const Opportunities: CollectionConfig = {
   access: accountingCollectionAccess({ feature: 'crm' }),
   fields: [
     multiTenancyField(),
-    { name: 'name', type: 'text', required: true, index: true },
+    { name: 'name', type: 'text', localized: true, required: true, index: true },
     { name: 'lead', type: 'relationship', relationTo: 'leads' },
     { name: 'customer', type: 'relationship', relationTo: 'customers',
       admin: { description: 'Existing customer (for upsell/cross-sell). Null for net-new from lead.' } },

@@ -83,7 +83,7 @@ const BillsOfMaterials: CollectionConfig = {
       fields: [
         { name: 'sequence', type: 'number', required: true,
           admin: { description: 'Order in routing (10, 20, 30 — leave gaps for inserts).' } },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'workCenter', type: 'text',
           admin: { description: 'Work-centre identifier — e.g. `MILL-01`, `ASSEMBLY-LINE-3`.' } },
         { name: 'standardLabourMinutes', type: 'number', defaultValue: 0,

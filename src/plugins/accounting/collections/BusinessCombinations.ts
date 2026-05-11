@@ -98,7 +98,7 @@ const BusinessCombinations: CollectionConfig = {
           { label: 'Other identifiable', value: 'other' },
         ] },
         { name: 'fairValue', type: 'number', required: true },
-        { name: 'description', type: 'text' },
+        { name: 'description', type: 'text', localized: true },
         { name: 'usefulLifeYears', type: 'number', admin: { description: 'For amortisable intangibles.' } },
       ],
     },

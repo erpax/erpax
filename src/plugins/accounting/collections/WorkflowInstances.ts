@@ -80,7 +80,7 @@ const WorkflowInstances: CollectionConfig = {
           ],
         },
         { name: 'decidedAt', type: 'date', required: true },
-        { name: 'comment', type: 'text' },
+        { name: 'comment', type: 'text', localized: true },
         { name: 'delegatedTo', type: 'relationship', relationTo: 'users' },
         { name: 'auditEventId', type: 'text',
           admin: { description: 'audit-events.eventId for the cross-collection trail.' } },

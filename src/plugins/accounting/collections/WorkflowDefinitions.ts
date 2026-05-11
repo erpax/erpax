@@ -40,8 +40,8 @@ const WorkflowDefinitions: CollectionConfig = {
   access: accountingCollectionAccess(),
   fields: [
     multiTenancyField(),
-    { name: 'name', type: 'text', required: true, index: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'name', type: 'text', localized: true, required: true, index: true },
+    { name: 'description', type: 'textarea', localized: true },
     { name: 'version', type: 'number', required: true, defaultValue: 1,
       admin: { description: 'Version number — bump on edit; older versions remain referenced by historical instances.' } },
     { name: 'targetCollection', type: 'text', required: true, index: true,
@@ -70,7 +70,7 @@ const WorkflowDefinitions: CollectionConfig = {
       dbName: 'wf_steps',
       fields: [
         { name: 'order', type: 'number', required: true },
-        { name: 'name', type: 'text', required: true },
+        { name: 'name', type: 'text', localized: true, required: true },
         {
           name: 'kind',
           type: 'select',

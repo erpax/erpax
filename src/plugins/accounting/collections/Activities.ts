@@ -34,7 +34,7 @@ const Activities: CollectionConfig = {
   access: accountingCollectionAccess({ feature: 'crm' }),
   fields: [
     multiTenancyField(),
-    { name: 'subject', type: 'text', required: true },
+    { name: 'subject', type: 'text', localized: true, required: true },
     {
       name: 'activityType',
       type: 'select',
@@ -81,7 +81,7 @@ const Activities: CollectionConfig = {
     { name: 'customer', type: 'relationship', relationTo: 'customers' },
     { name: 'vendor', type: 'relationship', relationTo: 'vendors' },
     { name: 'project', type: 'relationship', relationTo: 'projects' },
-    { name: 'description', type: 'textarea' },
+    { name: 'description', type: 'textarea', localized: true },
     { name: 'outcome', type: 'select', options: [
       { label: 'Positive — moved forward', value: 'positive' },
       { label: 'Neutral — informational', value: 'neutral' },

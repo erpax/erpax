@@ -40,8 +40,8 @@ const ProjectMilestones: CollectionConfig = {
     { name: 'project', type: 'relationship', relationTo: 'projects', required: true, index: true },
     { name: 'milestoneNumber', type: 'number', required: true,
       admin: { description: 'Sequential ordinal within the project (1, 2, 3, …).' } },
-    { name: 'name', type: 'text', required: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'name', type: 'text', localized: true, required: true },
+    { name: 'description', type: 'textarea', localized: true },
     {
       name: 'milestoneType',
       type: 'select',

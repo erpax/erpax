@@ -33,8 +33,8 @@ const CustomerSegments: CollectionConfig = {
   access: accountingCollectionAccess({ feature: 'crm' }),
   fields: [
     multiTenancyField(),
-    { name: 'name', type: 'text', required: true, unique: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'name', type: 'text', localized: true, required: true, unique: true },
+    { name: 'description', type: 'textarea', localized: true },
     {
       name: 'segmentType',
       type: 'select',

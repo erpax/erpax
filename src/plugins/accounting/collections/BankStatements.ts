@@ -56,7 +56,7 @@ const BankStatements: CollectionConfig = {
       fields: [
         { name: 'transactionDate', type: 'date', required: true },
         { name: 'amount', type: 'number', required: true },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'reference', type: 'text' },
         { name: 'balanceAfter', type: 'number' },
       ],

@@ -44,8 +44,8 @@ const RecurringJournals: CollectionConfig = {
   access: accountingCollectionAccess({ feature: 'period_end_closing' }),
   fields: [
     multiTenancyField(),
-    { name: 'name', type: 'text', required: true, index: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'name', type: 'text', localized: true, required: true, index: true },
+    { name: 'description', type: 'textarea', localized: true },
     {
       name: 'recurrenceKind',
       type: 'select',

@@ -76,7 +76,7 @@ const BankReconciliations: CollectionConfig = {
           { label: 'Other Variance', value: 'other' },
         ] },
         { name: 'amount', type: 'number', required: true, admin: { description: 'Signed amount in cents.' } },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'reference', type: 'text' },
       ],
     },

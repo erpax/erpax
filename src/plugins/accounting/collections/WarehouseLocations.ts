@@ -40,7 +40,7 @@ const WarehouseLocations: CollectionConfig = {
   fields: [
     multiTenancyField(),
     { name: 'code', type: 'text', required: true, unique: true, index: true, admin: { description: 'Short code, e.g. SOF-MAIN, NYC-3PL.' } },
-    { name: 'name', type: 'text', required: true },
+    { name: 'name', type: 'text', localized: true, required: true },
     {
       name: 'type',
       type: 'select',
@@ -68,7 +68,7 @@ const WarehouseLocations: CollectionConfig = {
       admin: { description: 'Optional bin/aisle/shelf detail for cycle-count granularity.' },
       fields: [
         { name: 'binCode', type: 'text', required: true },
-        { name: 'description', type: 'text' },
+        { name: 'description', type: 'text', localized: true },
       ],
     },
     statusField(

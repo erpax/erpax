@@ -55,7 +55,7 @@ const VendorQuotes: CollectionConfig = {
       labels: { singular: 'Line', plural: 'Lines' },
       dbName: 'vq_lines',
       fields: [
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'item', type: 'relationship', relationTo: 'items' },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'uom', type: 'text', defaultValue: 'EA' },

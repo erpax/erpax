@@ -54,7 +54,7 @@ const Projects: CollectionConfig = {
       admin: { description: 'Tenant-unique project code (e.g. PRJ-2026-001).' } },
     { name: 'name', type: 'text', required: true,
       admin: { description: 'Customer-facing project name.' } },
-    { name: 'description', type: 'textarea' },
+    { name: 'description', type: 'textarea', localized: true },
     { name: 'customer', type: 'relationship', relationTo: 'customers', required: true, index: true },
     { name: 'contract', type: 'relationship', relationTo: 'contracts',
       admin: { description: 'Master contract this project executes against (one contract may have many projects).' } },

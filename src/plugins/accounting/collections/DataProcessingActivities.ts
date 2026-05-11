@@ -74,7 +74,7 @@ const DataProcessingActivities: CollectionConfig = {
     {
       name: 'recipientCategories',
       type: 'array',
-      fields: [{ name: 'recipient', type: 'text', required: true }],
+      fields: [{ name: 'recipient', type: 'text', localized: true, required: true }],
     },
     {
       name: 'thirdCountryTransfers',

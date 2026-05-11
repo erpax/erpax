@@ -40,7 +40,7 @@ const Spaces: CollectionConfig = {
     multiTenancyField(),
     { name: 'code', type: 'text', required: true, unique: true, index: true,
       admin: { description: 'Short code (e.g. `HQ-SOF-F03-R201`).' } },
-    { name: 'name', type: 'text', required: true },
+    { name: 'name', type: 'text', localized: true, required: true },
     { name: 'property', type: 'relationship', relationTo: 'properties', required: true, index: true },
     { name: 'parentSpace', type: 'relationship', relationTo: 'spaces',
       admin: { description: 'Optional parent — supports hierarchical spaces (floor → wing → room → desk).' } },

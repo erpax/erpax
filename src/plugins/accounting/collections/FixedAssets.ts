@@ -72,7 +72,7 @@ const _baseFixedAssets = createAccountingCollection(
     () => [
       multiTenancyField(),
       { name: 'assetNumber', type: 'text', required: true, unique: true, index: true },
-      { name: 'description', type: 'text', required: true },
+      { name: 'description', type: 'text', localized: true, required: true },
 
       // Asset classification
       {

@@ -50,8 +50,8 @@ const MaintenanceWorkOrders: CollectionConfig = {
     referenceField({ description: 'Sequential work-order reference (e.g. `WO-2026-04-001`).' }),
     { name: 'request', type: 'relationship', relationTo: 'maintenance-requests', index: true,
       admin: { description: 'Source request (when promoted from a ticket).' } },
-    { name: 'subject', type: 'text', required: true },
-    { name: 'description', type: 'textarea' },
+    { name: 'subject', type: 'text', localized: true, required: true },
+    { name: 'description', type: 'textarea', localized: true },
     {
       name: 'workType',
       type: 'select',
@@ -116,7 +116,7 @@ const MaintenanceWorkOrders: CollectionConfig = {
       dbName: 'mwo_parts',
       fields: [
         { name: 'itemSku', type: 'text', required: true },
-        { name: 'description', type: 'text' },
+        { name: 'description', type: 'text', localized: true },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'unitOfMeasure', type: 'text', defaultValue: 'EA' },
         { name: 'unitCost', type: 'number', defaultValue: 0, min: 0 },

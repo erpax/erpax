@@ -51,7 +51,7 @@ const Quotes: CollectionConfig = {
       minRows: 1,
       fields: [
         { name: 'item', type: 'relationship', relationTo: 'items' },
-        { name: 'description', type: 'text', required: true },
+        { name: 'description', type: 'text', localized: true, required: true },
         { name: 'quantity', type: 'number', required: true, min: 0 },
         { name: 'unitPrice', type: 'number', required: true, min: 0 },
         { name: 'lineTotal', type: 'number', defaultValue: 0, admin: { readOnly: true } },

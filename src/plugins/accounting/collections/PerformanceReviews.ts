@@ -107,7 +107,7 @@ const PerformanceReviews: CollectionConfig = {
       fields: [
         { name: 'competency', type: 'text', required: true },
         { name: 'rating', type: 'number', min: 1, max: 5, required: true },
-        { name: 'comment', type: 'text' },
+        { name: 'comment', type: 'text', localized: true },
       ],
     },
     {
