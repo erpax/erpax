@@ -12,7 +12,10 @@ export const MetaSkillAgent: DomainAgent = {
   id: 'meta-skill',
   ownsCollections: [],
   subscribesTo: ['invariant:failed', 'invariant:warned', 'gap:detected', 'spec:coverage:warned', 'i18n:stub:detected'],
-  emits: ['fix:proposed', 'spec:tag:suggested', 'i18n:translation:requested'],
+  emits: [
+    'fix:proposed', 'spec:tag:suggested', 'i18n:translation:requested',
+    'meta:sweep:tick', 'meta:dry-proof:tick', 'meta:trinity:tick',  // slice OOOOOOOO
+  ],
   cron: '0 */1 * * *',  // hourly — sweep for new gaps, propose fixes (QQQQQ)
   async onEvent(ctx: AgentContext, ev: DomainEvent): Promise<AgentEffect[]> {
     // Today: just record the event for traceability.
@@ -36,11 +39,19 @@ export const MetaSkillAgent: DomainAgent = {
       { kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: 'meta-sweep', action: 'scheduled-sweep' } },
     ]
 
-    // 1. Run invariants suite + dispatch proposer
+    // 1. Run invariants suite ONCE; reuse for proposer + DRY-proof
+    //    publish (slice OOOOOOOO) + Trinity rollup. Single sweep,
+    //    multiple downstream consumers.
     try {
       const { runAllInvariants } = await import('@/services/architecture-invariants')
       const { processInvariantResults } = await import('@/services/meta-automation')
-      const suite = await runAllInvariants({ payload: ctx.payload, repoRoot: process.cwd() })
+      const { publishDryProofBundle } = await import('@/services/proof/dry-proof')
+      const { rollUpToTrinity } = await import('@/services/architecture-invariants/trinity')
+      const { buildErpaxMcpTools } = await import('@/services/agents/mcp/tool-defs')
+      const { agentRegistry } = await import('@/services/agents/bootstrap')
+
+      const invariantCtx = { payload: ctx.payload, repoRoot: process.cwd() }
+      const suite = await runAllInvariants(invariantCtx)
       const results = [...suite.fails, ...suite.warns]
       const summary = await processInvariantResults({ results, mcp: ctx.mcp })
       effects.push({
@@ -57,6 +68,34 @@ export const MetaSkillAgent: DomainAgent = {
           vars: { count: summary.escalated, sweepAt: sweptAt },
         })
       }
+
+      // Slice OOOOOOOO — publish DRY-proof bundle (Law 44) once per
+      // sweep; emit Trinity rollup over the same suite (no second run).
+      const tools = buildErpaxMcpTools(agentRegistry)
+      const origin = process.env.PLATFORM_ORIGIN ?? 'https://erpax.local'
+      const bundle = await publishDryProofBundle({ invariantCtx, tools, origin })
+      effects.push({
+        kind: 'emit',
+        event: {
+          id: 'meta:dry-proof:tick', tenantId: ctx.tenantId,
+          payload: {
+            at: sweptAt, contentUuid: bundle.contentUuid,
+            publicUrl: bundle.publicUrl, laws: bundle.summary,
+          },
+          emittedAt: sweptAt,
+        },
+      })
+      const passedLawNums = suite.passes
+        .map((p) => Number(p.check.match(/\d+/)?.[0]))
+        .filter((n) => Number.isFinite(n))
+      const trinity = rollUpToTrinity(passedLawNums)
+      effects.push({
+        kind: 'emit',
+        event: {
+          id: 'meta:trinity:tick', tenantId: ctx.tenantId,
+          payload: { at: sweptAt, trinity }, emittedAt: sweptAt,
+        },
+      })
     } catch (err) {
       effects.push({
         kind: 'escalate', severity: 'critical',
