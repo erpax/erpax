@@ -36,6 +36,7 @@ import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-fro
 import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
 import { checkTorusBounded } from '@/services/topology/torus'
 import { publishDryProofBundle, checkDryProofPublished } from '@/services/proof/dry-proof'
+import { checkAgentLawCoverage } from '@/services/architecture-invariants/by-agent'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1420,6 +1421,27 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 45 — `checkAgentLawCoverageInvariant`. Slice
+ * EEEEEEE (2026-05-11). Per user 'regroup the laws for maximum
+ * agent efficiency'.
+ *
+ * Every agent must have at least one law per emitted effect kind;
+ * average coverage ratio < 1.0 (otherwise regrouping isn't buying
+ * efficiency).
+ */
+export function checkAgentLawCoverageInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkAgentLawCoverage()
+  if (result.ok) {
+    const pct = (result.averageCoverageRatio * 100).toFixed(0)
+    return pass('expansion', 'agent-law-coverage',
+      `${result.profilesChecked} agent profiles all governed; avg coverage ratio ${pct}% (Law 45 satisfied — efficiency win)`)
+  }
+  return fail('expansion', 'agent-law-coverage',
+    `${result.violations.length} agents have ungoverned effects`,
+    result.violations.slice(0, 8).map((v) => `${v.agent}: ${v.reason}`))
 }
 
 /**

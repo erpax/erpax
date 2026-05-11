@@ -76,6 +76,9 @@ import {
   buildDryProofBundle, publishDryProofBundle, getCurrentProofBundle,
   checkDryProofPublished, asFederationEnvelope, MAX_PROOF_AGE_HOURS,
 } from '@/services/proof/dry-proof'
+import {
+  LAW_CATALOG, buildAgentLawProfile, buildAllAgentLawProfiles, checkAgentLawCoverage,
+} from '@/services/architecture-invariants/by-agent'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1302,6 +1305,41 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       async handler({ current }) {
         return json(checkTorusBounded({ current: current as never }))
       },
+    },
+    // ── Slice EEEEEEE — laws regrouped per-agent for efficiency (Law 45) ──
+    {
+      name: 'erpax.platform.lawCatalog',
+      description: 'Per user "regroup the laws for maximum agent efficiency" — return the LAW_CATALOG: every conservation law with its category + which AgentEffect kinds it governs + applicableWhen trigger (W3C JSON-LD 1.1, ISO/IEC 25010:2023 §5.4 reusability).',
+      parameters: {},
+      async handler() { return json(LAW_CATALOG) },
+    },
+    {
+      name: 'erpax.platform.agentLawProfile',
+      description: 'Slice EEEEEEE — derive a single agent\'s law profile: which laws are applicable based on its emitted AgentEffect kinds + grouped by category + skipped-laws list. Coverage ratio shows the efficiency win (W3C Web Components composition + Conservation Law 32).',
+      parameters: {
+        agentId: z.enum([
+          'finance', 'sales', 'marketing', 'hr', 'legal', 'ops', 'engineering',
+          'customer-support', 'data', 'design', 'product', 'productivity',
+          'enterprise-search', 'plugins', 'meta-skill',
+        ]),
+      },
+      async handler({ agentId }) {
+        const a = registry.byId(agentId as never)
+        if (!a) return json({ ok: false, reason: 'unknown agent' })
+        return json(buildAgentLawProfile(a))
+      },
+    },
+    {
+      name: 'erpax.platform.allAgentLawProfiles',
+      description: 'Slice EEEEEEE — derive law profiles for every registered agent. Drives the conservation-dashboard surface\'s per-agent breakdown (W3C JSON-LD 1.1).',
+      parameters: {},
+      async handler() { return json(buildAllAgentLawProfiles()) },
+    },
+    {
+      name: 'erpax.platform.checkAgentLawCoverage',
+      description: 'Conservation Law 45 — every agent must have at least one law per emitted effect kind; average coverage ratio < 1.0 (otherwise regrouping isn\'t buying efficiency). ISO/IEC 25010:2023 §5.2 performance.',
+      parameters: {},
+      async handler() { return json(checkAgentLawCoverage()) },
     },
     {
       name: 'erpax.platform.checkSelfTestable',

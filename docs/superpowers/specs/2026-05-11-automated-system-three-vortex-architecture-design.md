@@ -1358,6 +1358,61 @@ Every prior slice was a claim about how the platform works. **This slice turns t
 
 @standard W3C JSON-LD 1.1 + Schema.org Dataset vocabulary; W3C VC Data Model 2.0 (proof-as-verifiable-claim); ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity; ISO 19011:2018 §6.4.6 (audit-evidence + traceability); ISO/IEC 27001 §A.18.2 (independent review of conformance).
 
+## 0x. Regroup laws for maximum agent efficiency
+
+Per user 'regroup the laws for maximum agent efficiency'. After 44 conservation laws across 5 axes, each agent shouldn't evaluate ALL laws on every dispatch — only the subset that governs ITS effects. Slice EEEEEEE ships `src/services/architecture-invariants/by-agent.ts` mapping each law to the AgentEffect kinds it constrains, then deriving per-agent law profiles.
+
+### Per-effect law mapping (LAW_CATALOG entries)
+
+| Effect kind | Governing laws |
+|---|---|
+| `create` / `update` | 8 (content uuid) + 10 (refs harmony) + 11 (bitemporal) + 15+16 (cost+carbon) + 29 (SEO if publishable) + 30+31 (vote integrity) + 35+36 (storage independent + replicable) + 43 (torus) |
+| `notify` | 3 (i18n) + 13 (notification fallback) + 17 (PII) + 22 (explainability) + 43 |
+| `audit` | 4 (event graph) + 8 + 11 + 12 (PROV) + 18 (PQC) + 19 (anchor) + 43 |
+| `escalate` | 17 + 22 + 38 (mcp standards citation) + 43 |
+| `emit` | 4 + 32 (block composition type-safe) + 33 (stream coherence) + 34 (uuid chain) + 43 |
+| `capture` | 12 (PROV) + 16 (carbon) + 18 (PQC frame signature) + 43 |
+| (always) | 1, 7, 23, 24, 25-28, 37, 39, 40, 41, 44 (platform-self + standards-corpus + commerce-self) |
+
+### Per-agent law profile
+
+```ts
+buildAgentLawProfile(agent) → {
+  applicableLaws: LawDescriptor[]                       // subset agent must satisfy
+  groupedByCategory: Record<LawCategory, …>             // 15 categories
+  skippedLaws: { num, reason }[]                        // efficiency proof
+  coverageRatio: number                                 // < 1.0 = win
+}
+```
+
+A pure read agent (`enterprise-search`) skips Laws 8/10/29/30/31/35/36 because it never writes; its coverageRatio drops to ~0.55. A write-heavy agent (`finance`) keeps those laws but skips Law 13 (notification fallback) since it doesn't notify; coverageRatio ~0.78.
+
+### Conservation Law 45 — agent law coverage
+
+`checkAgentLawCoverageInvariant`: every agent must have at least one law per emitted effect kind (no ungoverned effects); average coverage ratio < 1.0 (otherwise regrouping isn't buying efficiency). Production agent runtime can dispatch only the agent's `applicableLaws` instead of the full 44.
+
+### Efficiency win
+
+| Without regrouping | With regrouping (slice EEEEEEE) |
+|---|---|
+| Every agent runs all 44 laws on every dispatch | Each agent runs only its `applicableLaws` subset (avg ~60–80% of total) |
+| Per-dispatch cost = 44 × per-law evaluation time | Per-dispatch cost = N × per-law evaluation time, N < 44 |
+| New laws added → all agents pay the cost | New laws added → only agents emitting affected effects pay |
+| Hard to reason about which laws matter for which agent | `agentLawProfile` returns the explicit subset |
+
+### MCP surface (slice EEEEEEE)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.lawCatalog` | Full LAW_CATALOG with per-law category + governsEffects + applicableWhen |
+| `erpax.platform.agentLawProfile` | Single agent's law profile + coverage ratio |
+| `erpax.platform.allAgentLawProfiles` | All 15 agents' profiles |
+| `erpax.platform.checkAgentLawCoverage` | Conservation Law 45 verdict |
+
+### Standards anchoring
+
+@standard ISO/IEC 25010:2023 §5.2 performance — selective evaluation; §5.4 reusability — law profile reuse; ISO 19011:2018 §6.4.6 (per-agent law audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
