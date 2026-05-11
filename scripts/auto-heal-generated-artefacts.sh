@@ -59,8 +59,30 @@ else
   if command -v pnpm >/dev/null 2>&1; then
     echo "auto-heal: src/payload-types.ts is stale — regenerating"
     if [ "$DRY_RUN" = 0 ]; then
-      pnpm exec payload generate:types >/dev/null 2>&1 || true
-      pnpm exec payload generate:importmap >/dev/null 2>&1 || true
+      # Capture full output so a failure shows what payload actually said,
+      # instead of the silent 'ERROR: ... Run it manually' that hid the
+      # cause for slices NNNNNN..MMMMMMMM. Tail keeps the message compact;
+      # the exit code is propagated.
+      tmp_types_log=$(mktemp)
+      if ! pnpm exec payload generate:types >"$tmp_types_log" 2>&1; then
+        echo "  ↳ payload generate:types FAILED — last 40 lines of output:"
+        tail -40 "$tmp_types_log" | sed 's/^/    /'
+        echo "  ↳ full log: $tmp_types_log"
+        rm -f "$tmp_types_log"
+        echo "ERROR: pnpm exec payload generate:types failed for Payload types."
+        exit 1
+      fi
+      rm -f "$tmp_types_log"
+      tmp_imp_log=$(mktemp)
+      if ! pnpm exec payload generate:importmap >"$tmp_imp_log" 2>&1; then
+        echo "  ↳ payload generate:importmap FAILED — last 40 lines of output:"
+        tail -40 "$tmp_imp_log" | sed 's/^/    /'
+        echo "  ↳ full log: $tmp_imp_log"
+        rm -f "$tmp_imp_log"
+        echo "ERROR: pnpm exec payload generate:importmap failed for Payload admin importmap."
+        exit 1
+      fi
+      rm -f "$tmp_imp_log"
       git add src/payload-types.ts "src/app/(payload)/admin/importMap.js" 2>/dev/null || true
       healed+=("src/payload-types.ts")
     fi
