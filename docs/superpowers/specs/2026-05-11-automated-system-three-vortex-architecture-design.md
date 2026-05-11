@@ -1048,6 +1048,64 @@ Combined with §0h's SEO vortex (Law 29) over the website pages, ERPax's entire 
 
 @standard W3C JSON-LD 1.1 + Schema.org Action vocabulary; W3C Microdata 1.1 + Open Graph protocol + Twitter Cards; MCP 0.6 — tools/list (presentation extension); ISO 19011:2018 §6.4.6 (MCP surface SEO-traceable).
 
+## 0t. Let MCP rebuild itself from the source
+
+Per user 'let mcp rebuild itself from the source'. After VVVVVV (discoverable) + WWWWWW (self-built) + XXXXXX (self-standardized) + YYYYYY (self-presented), the MCP layer is now **self-rebuildable**. Slice ZZZZZZ ships `src/services/agents/mcp/rebuild-from-source.ts`: walk the JSDoc-as-spec corpus (slice CCCCC) → derive the expected MCP catalog → compare with live → drift report + rebuild plan + skeleton `tool-defs.ts`.
+
+### Source code IS the manifest
+
+`tool-defs.ts` is **one cached projection** of the source code, not the source of truth. The actual source of truth is the union of:
+- `src/services/spec-generator` — JSDoc-as-spec extractor (CCCCC)
+- `src/services/business-chains/registry.ts` — chain registry
+- `src/services/agents/registered/*.agent.ts` — agent files
+- `src/services/integrity/*` — tamper-proof contract
+- `src/services/standards-registry/index.ts` — standards corpus
+
+Slice ZZZZZZ closes the loop: if `tool-defs.ts` is deleted, corrupted, or drifts from spec, `rebuildMcpFromSource()` regenerates the expected catalog. Combined with FFFFFF (self-healing pre-push) and HHHHHH (clone integrity), this is the platform-level analog of "the genome can be replanted".
+
+### Drift bucketing (4 kinds)
+
+| Kind | Meaning | Action |
+|---|---|---|
+| `add` | In source corpus, missing from live `tool-defs.ts` | Wire it (pre-push hook can stub it) |
+| `remove` | In live, no source backing | Reserved for future explicit `@mcp-tool` JSDoc tag |
+| `mismatch` | Same name, divergent description signature | Update description OR source |
+| `intact` | Same name, same signature | No action |
+
+Description signature uses a coarse hash (lowercase + alphanum-only + first 80 chars) so harmless wording tweaks don't trigger churn.
+
+### Conservation Law 40 — rebuildable from source
+
+`checkMcpRebuildableFromSourceInvariant` (boot suite, expansion axis): no `add` entries allowed. `mismatch` is reported as warn (handled by Law 38 + regen pipeline). Regression-proof: a contributor adds a new collection without exposing it via MCP → Law 40 fails the boot suite, the pre-push hook can stub the missing tool, the contributor wires its handler.
+
+### Why a skeleton (not a literal regen)?
+
+The expected tools carry name + description + area + sourcePath, but NOT handler bodies. Handler bodies are domain-specific and not derivable mechanically from JSDoc. The skeleton is **a starting point**: each tool gets a `// TODO: rebuild from source — <path>` body the contributor fills in. This keeps the rebuild deterministic for naming/descriptions while preserving handler-level intent.
+
+### MCP surface (slice ZZZZZZ)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.rebuildFromSource` | Full pipeline — derive expected, compare with live, return plan + skeleton |
+| `erpax.platform.rebuildExpected` | Expected catalog only (used by clones during boot — HHHHHH) |
+| `erpax.platform.rebuildDrift` | Per-tool drift entries (Law 40 detail) |
+| `erpax.platform.rebuildSkeleton` | Starter `tool-defs.ts` text — paste-ready |
+| `erpax.platform.checkRebuildable` | Conservation Law 40 verdict |
+
+### Five self-properties of MCP
+
+| # | Property | Slice | Conservation Law |
+|---|---|---|---|
+| 1 | Discoverable | VVVVVV | (Law 1 spec coverage extension) |
+| 2 | Self-built | WWWWWW | Law 37 |
+| 3 | Self-standardized | XXXXXX | Law 38 |
+| 4 | Self-presented | YYYYYY | Law 39 |
+| 5 | **Self-rebuildable** | **ZZZZZZ** | **Law 40** |
+
+### Standards anchoring
+
+@standard MCP 0.6 — tools/list (rebuild extension); ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity; JSDoc-as-spec (slice CCCCC); ISO 19011:2018 §6.4.6 (rebuild plan audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

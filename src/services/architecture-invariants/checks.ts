@@ -32,6 +32,7 @@ import { checkAutoGenerationCoverage } from '@/services/agents/mcp/auto-generate
 import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
 import { checkMcpToolStandardization } from '@/services/agents/mcp/standardization'
 import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/agents/mcp/presentation'
+import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1416,6 +1417,27 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 40 — `checkMcpRebuildableFromSourceInvariant`.
+ * Slice ZZZZZZ (2026-05-11). Per user 'let mcp rebuild itself from
+ * the source'.
+ *
+ * Walk the JSDoc-as-spec corpus → derive expected MCP catalog →
+ * compare with live → fail if any expected tool is missing. Mismatch
+ * count is reported as warn (handled by Law 38 / regen pipeline).
+ */
+export function checkMcpRebuildableFromSourceInvariant(_ctx: InvariantContext): InvariantResult {
+  const tools = buildErpaxMcpTools(agentRegistry)
+  const result = checkMcpRebuildableFromSource({ liveTools: tools })
+  if (result.ok) {
+    return pass('expansion', 'mcp-rebuildable-from-source',
+      `${result.intactCount} expected tools present, ${result.mismatchCount} signature mismatch (warn) — Law 40 satisfied`)
+  }
+  return fail('expansion', 'mcp-rebuildable-from-source',
+    `${result.missingFromLive.length} expected tools missing from live`,
+    result.missingFromLive.slice(0, 8))
 }
 
 /**

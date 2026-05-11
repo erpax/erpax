@@ -66,6 +66,10 @@ import {
   mcpToolAsAction, mcpToolAsOg, renderToolHead, areaAsCollectionPage,
   registerAllMcpFaces, checkMcpPresentationCoverage,
 } from './presentation'
+import {
+  rebuildMcpFromSource, deriveExpectedToolsFromCorpus,
+  compareExpectedVsLive, emitToolDefsSkeleton, checkMcpRebuildableFromSource,
+} from './rebuild-from-source'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1202,6 +1206,52 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Conservation Law 39 — every MCP tool must have a registered SeoVortexFace with schemaType Action and >=1 outbound microdata edge. Run after erpax.platform.registerAsSeoFaces.',
       parameters: { origin: z.string() },
       async handler({ origin }) { return json(checkMcpPresentationCoverage(tools, origin as string)) },
+    },
+    // ── Slice ZZZZZZ — MCP rebuilds itself from the source (Law 40) ──
+    {
+      name: 'erpax.platform.rebuildFromSource',
+      description: 'Per user "let mcp rebuild itself from the source" — walk the JSDoc-as-spec corpus (slice CCCCC), derive the expected MCP catalog, compare with live, return rebuild plan + skeleton tool-defs.ts (W3C JSON-LD 1.1, MCP 0.6 + JSDoc-as-spec).',
+      parameters: { cwd: z.string().optional() },
+      async handler({ cwd }) {
+        return json(rebuildMcpFromSource({ cwd: cwd as string | undefined, liveTools: tools }))
+      },
+    },
+    {
+      name: 'erpax.platform.rebuildExpected',
+      description: 'Slice ZZZZZZ — derive the expected MCP catalog from the spec corpus alone (does not compare with live). Useful for clones that boot from genome (slice HHHHHH) and want to know what tools they should expose (Conservation Law 1 spec coverage).',
+      parameters: { cwd: z.string().optional() },
+      async handler({ cwd }) {
+        const corpus = (await import('@/services/spec-generator')).extractCorpus((cwd as string | undefined) ?? process.cwd())
+        return json(deriveExpectedToolsFromCorpus(corpus))
+      },
+    },
+    {
+      name: 'erpax.platform.rebuildDrift',
+      description: 'Slice ZZZZZZ — compare an expected catalog against the live one and return per-tool drift entries (add/remove/mismatch/intact) per Conservation Law 40.',
+      parameters: { cwd: z.string().optional() },
+      async handler({ cwd }) {
+        const corpus = (await import('@/services/spec-generator')).extractCorpus((cwd as string | undefined) ?? process.cwd())
+        const expected = deriveExpectedToolsFromCorpus(corpus)
+        return json(compareExpectedVsLive(expected, tools))
+      },
+    },
+    {
+      name: 'erpax.platform.rebuildSkeleton',
+      description: 'Slice ZZZZZZ — emit a starter tool-defs.ts skeleton from the source-derived expected tools (RFC-style code template, MCP 0.6). Use as the regeneration starting point if tool-defs.ts is corrupted or deleted.',
+      parameters: { cwd: z.string().optional() },
+      async handler({ cwd }) {
+        const corpus = (await import('@/services/spec-generator')).extractCorpus((cwd as string | undefined) ?? process.cwd())
+        const expected = deriveExpectedToolsFromCorpus(corpus)
+        return text(emitToolDefsSkeleton(expected))
+      },
+    },
+    {
+      name: 'erpax.platform.checkRebuildable',
+      description: 'Conservation Law 40 — verify the live MCP catalog can be rebuilt from the spec corpus (no missing expected tools). Returns ok + missingFromLive list. Pre-push gate (FFFFFF) regenerates when this fails.',
+      parameters: { cwd: z.string().optional() },
+      async handler({ cwd }) {
+        return json(checkMcpRebuildableFromSource({ liveTools: tools, cwd: cwd as string | undefined }))
+      },
     },
   )
 

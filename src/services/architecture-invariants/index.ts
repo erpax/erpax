@@ -108,6 +108,7 @@ export async function runAllInvariants(
     results.push(C.checkAgentOwnsEveryStep(ctx))       // Law 7
     results.push(C.checkBlockCompositionTypeSafety(ctx))  // Law 32 — PPPPPP
     results.push(C.checkAutoGenerationCoverageInvariant(ctx))  // Law 37 — WWWWWW
+    results.push(C.checkMcpRebuildableFromSourceInvariant(ctx))  // Law 40 — ZZZZZZ
   }
   if (!skip.has('entropy')) {
     results.push(await C.checkContentIntegrityProvable(ctx))  // Law 8 — RRRRR
