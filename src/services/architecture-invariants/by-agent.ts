@@ -135,10 +135,27 @@ export interface AgentLawProfile {
  * already exposes this; we read the union).
  */
 export function inferEmittedEffectKinds(agent: DomainAgent): ReadonlyArray<AgentEffect['kind']> {
-  // Default: an agent is assumed to emit ALL kinds unless narrowed.
-  // Future refinement reads the agent's declared block manifest.
-  const kinds: AgentEffect['kind'][] = ['create', 'update', 'notify', 'audit', 'escalate', 'emit', 'capture']
-  return kinds
+  // Inference heuristic — narrow the kind set based on signals from
+  // the agent's declared surface. Without this, every agent claims
+  // all 7 kinds, defeating the per-agent narrowing in Law 45.
+  //
+  //   - Emits any event id           → 'emit'
+  //   - Owns any collection          → 'create' + 'update'
+  //   - Cron declared                → 'audit' (scheduled sweeps audit-trail)
+  //   - subscribesTo ≥ 1 event       → 'audit' (observes events)
+  //
+  // The remaining kinds (notify / escalate / capture) require deeper
+  // introspection of the handler bodies, which we don't do at this
+  // layer; production agents will declare via the forthcoming
+  // BlockManifest.emits.effectKinds field (slice PPPPPP).
+  const kinds = new Set<AgentEffect['kind']>()
+  if (agent.emits.length > 0) kinds.add('emit')
+  if (agent.ownsCollections.length > 0) { kinds.add('create'); kinds.add('update') }
+  if (agent.cron) kinds.add('audit')
+  if (agent.subscribesTo.length > 0) kinds.add('audit')
+  // Floor: every agent emits at least 'audit' (every dispatch leaves a leaf).
+  if (kinds.size === 0) kinds.add('audit')
+  return [...kinds]
 }
 
 export function buildAgentLawProfile(agent: DomainAgent): AgentLawProfile {
