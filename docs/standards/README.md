@@ -23,18 +23,13 @@ The deep docs are the **human-readable counterpart** of the runtime `MCP_STANDAR
 | **[storage.md](./storage.md)** | Storage independence + replication consensus | TTTTTT, UUUUUU | 35, 36, 48 |
 | **[topology.md](./topology.md)** | Torus closure + infinite-within-finite | CCCCCCC, IIIIIIIII | 43, 48 |
 | **[trinity.md](./trinity.md)** | Three generators (Identity / Causality / Closure) | JJJJJJJJ | (3 generators over 52 derived) |
+| **[seo.md](./seo.md)** | SEO vortex + microdata + Open Graph + bitemporal | NNNNNN | 29 |
+| **[website.md](./website.md)** | Interactive website + shadcn 12 surfaces + Payload plugins | MMMMMM, MMMMMM-shadcn | (Schema.org coupling) |
+| **[dimensions.md](./dimensions.md)** | 10 dimensional plugins + sovereign sub-tenant hierarchy | LLLLLLLL, MMMMMMMM, KKKKKKKK | 49, 51 |
+| **[proof.md](./proof.md)** | Public DRY conformance proof (continuously fresh) | DDDDDDD, OOOOOOOO | 44 |
+| **[cloning.md](./cloning.md)** | Federation + cloning + self-reference + anchoring + DID + archival | AAAAAA, BBBBBB, CCCCCC, DDDDDD, EEEEEE, FFFFFF, GGGGGG, HHHHHH | 19, 23, 24 |
 
-## Coming next (per-domain stubs)
-
-These references are planned. Until they land, the inline `@standard` tags at the file-banner level inside each module are the authoritative source.
-
-| Planned doc | Domain | Slices | Conservation Laws |
-|---|---|---|---|
-| `seo.md` | SEO vortex + microdata + Open Graph | NNNNNN | 29 |
-| `website.md` | Interactive website + shadcn + Schema.org | MMMMMM, MMMMMM-shadcn | (covers Schema.org coupling) |
-| `dimensions.md` | 10 dimensional plugins + tenant-role hierarchy | LLLLLLLL, MMMMMMMM, KKKKKKKK | 49, 51 |
-| `proof.md` | Public DRY conformance proof | DDDDDDD, OOOOOOOO | 44 |
-| `cloning.md` | Federation + cloning + self-reference | AAAAAA, BBBBBB, CCCCCC, DDDDDD, GGGGGG, HHHHHH | 19, 23, 24 |
+**All 12 planned domain references landed.** Every standard ERPax cites traces back to one of these 12 docs + the runtime `MCP_STANDARDS_INDEX` (slice QQQQQQQQ).
 
 ## How a deep standards reference is structured
 
