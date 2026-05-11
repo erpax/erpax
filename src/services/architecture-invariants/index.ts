@@ -79,6 +79,7 @@ export async function runAllInvariants(
   if (!skip.has('fallback')) {
     results.push(await C.checkAiFallbackReturnsError(ctx))
     results.push(await C.checkNotificationFallback(ctx))
+    results.push(await C.checkMcpSelfTestableInvariant(ctx))  // Law 41 — AAAAAAA
   }
 
   // ── Axis 5: entropy ─────────────────────────────────────────────

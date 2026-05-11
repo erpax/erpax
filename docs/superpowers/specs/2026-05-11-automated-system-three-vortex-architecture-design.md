@@ -1106,6 +1106,74 @@ The expected tools carry name + description + area + sourcePath, but NOT handler
 
 @standard MCP 0.6 — tools/list (rebuild extension); ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity; JSDoc-as-spec (slice CCCCC); ISO 19011:2018 §6.4.6 (rebuild plan audit-trailed).
 
+## 0u. MCP interacts with itself by testing
+
+Per user 'mcp interacts with itself by testing'. After the five MCP self-properties (VVVVVV through ZZZZZZ), the MCP layer adds the **sixth self-property: self-testability**. Slice AAAAAAA ships `src/services/agents/mcp/self-test.ts`: every tool gets a smoke test, derived from its own Zod parameter schema, run against its own handler, classified as `pass / skip / fail`.
+
+### Each tool is its own minimum test
+
+```
+liveTools.forEach(tool => {
+  args = synthArgsFromZod(tool.parameters)   // probe-strings, 1, false, [first enum], etc.
+  try { result = await tool.handler(args, fakeReq) }
+  verify result.content[0].text exists       // shape contract from MCP 0.6
+  classify pass/skip/fail
+})
+```
+
+The synth generator is Zod-aware: handles `ZodString → 'probe'`, `ZodNumber → 1`, `ZodEnum → first option`, `ZodArray → [synth(inner)]`, `ZodObject → {synth(each)}`, `ZodOptional → undefined`, `ZodLiteral → literal value`, `ZodRecord → {}`, `ZodUnion → first option`. Production property tests (fast-check etc.) are out of scope for the smoke probe.
+
+### Three verdicts
+
+| Verdict | Meaning | Example |
+|---|---|---|
+| `pass` | Handler returned well-formed `{content: [{text, type}]}` | Pure tools (no DB), helpers, formatters |
+| `skip` | Handler heuristically requires Payload `req` (db / user) | `erpax.integrity.auditTenant` (queries Payload) |
+| `fail` | Handler threw OR returned malformed shape | A tool that crashes on synthetic args |
+
+The skip heuristic detects `req.payload` / `req.user` substrings in the handler source — these tools are exercised in integration tests, not the smoke probe.
+
+### Conservation Law 41 — self-testable
+
+`checkMcpSelfTestableInvariant` (boot suite, fallback axis): no `fail` entries allowed. Regression-proof: a contributor adds a tool that throws `ReferenceError` on its first call → Law 41 fails the boot suite, the failure is localized to the tool, the contributor fixes before merge.
+
+### Six self-properties of MCP
+
+| # | Property | Slice | Conservation Law |
+|---|---|---|---|
+| 1 | Discoverable | VVVVVV | (Law 1 spec coverage extension) |
+| 2 | Self-built | WWWWWW | Law 37 |
+| 3 | Self-standardized | XXXXXX | Law 38 |
+| 4 | Self-presented | YYYYYY | Law 39 |
+| 5 | Self-rebuildable | ZZZZZZ | Law 40 |
+| 6 | **Self-testable** | **AAAAAAA** | **Law 41** |
+
+### MCP surface (slice AAAAAAA)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.selfTestAll` | Full smoke suite over every tool |
+| `erpax.platform.selfTestOne` | Smoke-test a single tool (debug aid) |
+| `erpax.platform.checkSelfTestable` | Conservation Law 41 verdict |
+
+### What this is NOT
+
+This is a **smoke probe**, not a property test or contract test. It catches:
+- Handlers that crash on minimal valid input
+- Handlers that return a wrong shape (no `content[]`, content[0].text not string)
+- Handlers that have unhandled rejections
+
+It does NOT catch:
+- Logical bugs (returns wrong value but well-formed shape) → property tests / fast-check
+- Concurrency bugs → race-condition harnesses
+- Cross-tool invariants → integration tests
+
+The trade-off is intentional: a probe that runs in <500ms across 150+ tools at every boot, catching the most common regression class (handler crashes) without slowing the boot.
+
+### Standards anchoring
+
+@standard MCP 0.6 — tools/list (self-test extension); ISO/IEC 25010:2023 §5.5 testability; ISO/IEC/IEEE 29119-2 — software testing process; ISO 19011:2018 §6.4.6 (every test result audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

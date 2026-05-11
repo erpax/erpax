@@ -33,6 +33,7 @@ import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
 import { checkMcpToolStandardization } from '@/services/agents/mcp/standardization'
 import { registerAllMcpFaces, checkMcpPresentationCoverage } from '@/services/agents/mcp/presentation'
 import { checkMcpRebuildableFromSource } from '@/services/agents/mcp/rebuild-from-source'
+import { checkMcpSelfTestable } from '@/services/agents/mcp/self-test'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1417,6 +1418,28 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 41 — `checkMcpSelfTestableInvariant`. Slice
+ * AAAAAAA (2026-05-11). Per user 'mcp interacts with itself by
+ * testing'.
+ *
+ * Invoke every MCP tool with synthetic args derived from its Zod
+ * schema; verify response shape; fail if any tool throws or returns
+ * malformed `{content: [{text, type}]}`. DB-dependent tools are
+ * skipped.
+ */
+export async function checkMcpSelfTestableInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+  const tools = buildErpaxMcpTools(agentRegistry)
+  const result = await checkMcpSelfTestable(tools)
+  if (result.ok) {
+    return pass('fallback', 'mcp-self-testable',
+      `${result.summary.pass}/${result.summary.total} tools pass smoke (${result.summary.skip} skipped, db-dependent) — Law 41 satisfied`)
+  }
+  return fail('fallback', 'mcp-self-testable',
+    `${result.failures.length} MCP tools failed smoke test`,
+    result.failures.slice(0, 8).map((f) => `${f.tool}: ${f.reason}`))
 }
 
 /**

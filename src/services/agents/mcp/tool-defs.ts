@@ -70,6 +70,7 @@ import {
   rebuildMcpFromSource, deriveExpectedToolsFromCorpus,
   compareExpectedVsLive, emitToolDefsSkeleton, checkMcpRebuildableFromSource,
 } from './rebuild-from-source'
+import { selfTestAll, selfTestOne, checkMcpSelfTestable } from './self-test'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1244,6 +1245,29 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         const expected = deriveExpectedToolsFromCorpus(corpus)
         return text(emitToolDefsSkeleton(expected))
       },
+    },
+    // ── Slice AAAAAAA — MCP self-testing (Law 41) ──
+    {
+      name: 'erpax.platform.selfTestAll',
+      description: 'Per user "mcp interacts with itself by testing" — synthetic per-tool invocation derived from each tool\'s Zod schema; verify response shape; report pass/skip/fail per Conservation Law 41. ISO/IEC/IEEE 29119-2.',
+      parameters: {},
+      async handler() { return json(await selfTestAll(tools)) },
+    },
+    {
+      name: 'erpax.platform.selfTestOne',
+      description: 'Slice AAAAAAA — smoke-test a single tool. Returns {tool, verdict, reason?, elapsedMs}. Use to debug a Law 41 boot failure (W3C Web Tracing convention).',
+      parameters: { toolName: z.string() },
+      async handler({ toolName }) {
+        const tool = tools.find((t) => t.name === toolName)
+        if (!tool) return json({ ok: false, reason: `unknown tool ${toolName as string}` })
+        return json(await selfTestOne(tool))
+      },
+    },
+    {
+      name: 'erpax.platform.checkSelfTestable',
+      description: 'Conservation Law 41 — every MCP tool must either pass the smoke test or be explicitly skipped (db-dependent). Returns failures list if any tool throws or returns malformed shape.',
+      parameters: {},
+      async handler() { return json(await checkMcpSelfTestable(tools)) },
     },
     {
       name: 'erpax.platform.checkRebuildable',
