@@ -23,3 +23,10 @@ export {
   tamperProofUuidField,
   tamperProofBeforeChangeHook,
 } from './tamper-proof-uuid-field'
+
+// Slice UUUUU: uuid-driven references (Conservation Law 10)
+export type { DanglingRef } from './uuid-ref'
+export {
+  uuidRef, registerUuidRef, UUID_REF_REGISTRY,
+  resolveByUuid, findDanglingRefs,
+} from './uuid-ref'

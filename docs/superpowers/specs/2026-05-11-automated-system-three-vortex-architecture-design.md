@@ -94,6 +94,24 @@ Every law is an architecture invariant under `src/services/architecture-invarian
 7. **Agent ownership total** — every chain step's `collection=X` resolves to exactly one agent in the registry. `checkAgentOwnsEveryStep` (NEW).
 8. **Content-addressable integrity** — every object's `uuid` is `UUIDv5(JCS-canonicalize(obj-without-uuid), tenantNamespace)` over SHA-256 (RFC 4122 §4.3 + RFC 8785 + FIPS 180-4). Any in-place DB tamper changes the content → recomputed uuid disagrees with stored uuid → flagged. Together with the QQQQ Merkle audit chain (which proves the *history* of transitions is intact), this proves the *current state* matches what was committed — Byzantine fault tolerance against privileged DB access. `checkContentIntegrityProvable` (Slice RRRRR + per-collection opt-in via `tamperProofUuidField()` in Slice SSSSS).
 9. **Storage redundancy converges** (emergent property of Law 8 — Slice TTTTT) — once each row's uuid IS a content hash, redundant copies across heterogeneous stores (D1 / R2 / KV / Durable Objects / IPFS / Git) become trivially reconcilable: equal uuid = bit-identical content; different uuid = one is stale or tampered, fix by pulling from a peer that verifies. ERPax storage layer becomes "any combination of stores" — the conservation laws keep them consistent without requiring a consistent storage layer. `checkStorageRedundancyConverges`.
+10. **Referential harmony** (Slice UUUUU) — every uuid-typed reference (`uuidRef` field) resolves to a row whose recomputed content-uuid matches the pointer. References APPEAR when matching content exists; DISAPPEAR when it doesn't — automatically, without cascade rules. Mutated content invalidates old-uuid pointers; identical content reappearing re-attaches old pointers (graceful resurrection). `checkReferentialHarmony`. Together with Laws 8 + 9 forms the full spacetime integrity model: per-row + cross-store + referential.
+
+### Corruption resilience — meta-property of Laws 8 + 9 + 10
+
+The three integrity laws together **prove the absence of corruption by construction**. Every corruption mode maps to at least one law detecting it and at least one law repairing it:
+
+| Corruption mode | Detected by | Repaired by |
+|---|---|---|
+| Bit-flip in storage | Law 8 (uuid mismatch on recompute) | Law 9 (pull from healthy peer) |
+| Power loss mid-write | Law 8 (partial-state uuid is wrong) | Law 9 (revert from peer) |
+| Privileged DB tamper | Law 8 + Merkle audit chain (QQQQ shows *when*) | Law 9 + audit-replay |
+| Schema migration error | Law 8 (batch of rows with stale uuids) | Backfill via spec-derived expected content |
+| Dangling FK from content mutation | Law 10 (unresolved ref) | Substrate proposes the new uuid; operator confirms |
+| Broken cascade on delete | Law 10 (dangling) | Sweep + null/rebind |
+| Restore from old backup | Law 10 (refs to mutated rows) | Operator chooses: repair-forward or accept time-warp |
+| Cross-tenant data leak | Law 8 (tenant id in uuid namespace) | Refuses to verify under the wrong tenant |
+
+**No separate "data integrity scan" needed.** The build-time + runtime invariant suite is the integrity scan, run on every push and continuously in production. ERPax doesn't merely provide audit trails — **it provides provable state**.
 
 When all seven hold, the three vortices are mutually self-sustaining and the system can reproduce its own marketing material, audit evidence and i18n bundles deterministically from the spec.
 

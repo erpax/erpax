@@ -107,6 +107,7 @@ export async function runAllInvariants(
   }
   if (!skip.has('entropy')) {
     results.push(await C.checkContentIntegrityProvable(ctx))  // Law 8 — RRRRR
+    results.push(await C.checkReferentialHarmony(ctx))        // Law 10 — UUUUU
   }
 
   return {

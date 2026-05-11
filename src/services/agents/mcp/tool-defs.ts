@@ -22,7 +22,7 @@ import {
 } from '@/services/spec-generator'
 import { localeRecord, supportedLocales, type SupportedLocale } from '@/i18n'
 import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
-import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/services/integrity'
+import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, resolveByUuid, findDanglingRefs } from '@/services/integrity'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -204,6 +204,33 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
         const obj = doc as Record<string, unknown> & { uuid?: string; tenant?: string }
         const tenantId = typeof obj.tenant === 'string' ? obj.tenant : 'unknown'
         return json(verifyContentUuid(obj, tenantId))
+      },
+    },
+    {
+      name: 'erpax.refs.resolve',
+      description: 'Conservation Law 10: resolve a uuid reference to its row + verify content integrity (Law 8). Returns the row when its recomputed uuid matches the pointer, or null on the harmony "disappear" case (referenced content has changed or row is missing).',
+      parameters: { collection: z.string(), uuid: z.string(), tenantId: z.string() },
+      async handler({ collection, uuid, tenantId }, req) {
+        const row = await resolveByUuid({
+          payload: req.payload,
+          collection: collection as string,
+          uuid: uuid as string,
+          tenantId: tenantId as string,
+        })
+        return row ? json(row) : text(`unresolved: ${collection as string}@${(uuid as string).slice(0, 8)} for tenant ${tenantId as string}`)
+      },
+    },
+    {
+      name: 'erpax.refs.findDangling',
+      description: 'Conservation Law 10 sweep: walk every uuidRef field on every opted-in collection for a tenant; return the list of unresolved pointers ({owningCollection, owningId, fieldPath, targetCollection, uuid}). Empty list = full referential harmony for that tenant.',
+      parameters: { tenantId: z.string(), sampleSize: z.number().int().min(1).max(500).optional() },
+      async handler({ tenantId, sampleSize }, req) {
+        const dangling = await findDanglingRefs({
+          payload: req.payload,
+          tenantId: tenantId as string,
+          sampleSize: sampleSize as number | undefined,
+        })
+        return json({ tenantId, sampled: UUID_REF_REGISTRY.size, dangling })
       },
     },
     {
