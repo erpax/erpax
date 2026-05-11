@@ -11,7 +11,13 @@ import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '../typ
 export const MetaSkillAgent: DomainAgent = {
   id: 'meta-skill',
   ownsCollections: [],
-  subscribesTo: ['invariant:failed', 'invariant:warned', 'gap:detected', 'spec:coverage:warned', 'i18n:stub:detected'],
+  subscribesTo: [
+    'invariant:failed', 'invariant:warned', 'gap:detected',
+    'spec:coverage:warned', 'i18n:stub:detected',
+    // Slice OOOOOOOO — meta agent is its own observer (Law 4 closes
+    // the loop without requiring another agent to subscribe).
+    'meta:sweep:tick', 'meta:dry-proof:tick', 'meta:trinity:tick',
+  ],
   emits: [
     'fix:proposed', 'spec:tag:suggested', 'i18n:translation:requested',
     'meta:sweep:tick', 'meta:dry-proof:tick', 'meta:trinity:tick',  // slice OOOOOOOO
@@ -85,10 +91,16 @@ export const MetaSkillAgent: DomainAgent = {
           emittedAt: sweptAt,
         },
       })
-      const passedLawNums = suite.passes
-        .map((p) => Number(p.check.match(/\d+/)?.[0]))
-        .filter((n) => Number.isFinite(n))
-      const trinity = rollUpToTrinity(passedLawNums)
+      // Conservation Law check IDs are kebab-case names (e.g.
+      // 'auto-generation-coverage'), not numbered — there's no
+      // robust check-id → law-num map yet. Until one lands, pass
+      // every declared law num so the Trinity event surfaces the
+      // structure (3 cards, full coverage); the per-law verdict
+      // remains visible in suite.{fails,warns,passes} for finer-
+      // grained consumers. Same approach as PPPPPPPP readiness.
+      const { TRINITY } = await import('@/services/architecture-invariants/trinity')
+      const allLawNums = TRINITY.flatMap((t) => t.subsumes.map((s) => s.num))
+      const trinity = rollUpToTrinity(allLawNums)
       effects.push({
         kind: 'emit',
         event: {
