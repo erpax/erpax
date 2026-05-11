@@ -114,6 +114,10 @@ export async function runAllInvariants(
     results.push(C.checkSeoVortexCouplingInvariant(ctx))      // Law 29 — NNNNNN
     results.push(C.checkVoteAggregateAuthenticity(ctx))       // Law 30 — OOOOOO
     results.push(C.checkNoDoubleVotingInvariant(ctx))         // Law 31 — OOOOOO
+    results.push(C.checkStreamCoherenceProbe(ctx))            // Law 33 — RRRRRR
+    results.push(await C.checkStreamUuidChainProbe(ctx))      // Law 34 — SSSSSS
+    results.push(await C.checkStorageIndependenceProbe(ctx))  // Law 35 — TTTTTT
+    results.push(await C.checkReplicationConsensusProbe(ctx)) // Law 36 — UUUUUU
   }
 
   return {

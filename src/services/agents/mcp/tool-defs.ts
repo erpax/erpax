@@ -50,6 +50,15 @@ import {
   chainBlocks, checkRegistryCoupling, chainsAsBlockCompositions,
   type AgentBlockManifest,
 } from '@/services/agents/blocks'
+import {
+  makeStream, mapStream, filterStream, tumblingWindow, slidingWindow,
+  sessionWindow, checkWindowCoherence, checkStreamUuidChain, pipeBlocks,
+  type ClockedEvent,
+} from '@/services/streams'
+import {
+  verifyAcrossBackends, planMigration, replicateObject, consensusRead,
+  checkStorageIndependence, listBackends,
+} from '@/services/storage-independence'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -759,6 +768,130 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Conservation Law 32 — registry-wide audit: every emitted event has a consumer; every subscribed event has an emitter. Mirrors the shadcn rule "every block variant must be reachable from at least one composition example".',
       parameters: {},
       async handler() { return json(checkRegistryCoupling(registry)) },
+    },
+    // ── Slice RRRRRR — quantum-stream layer (Law 33) ──
+    {
+      name: 'erpax.streams.probeWindow',
+      description: 'Per user "in the quantum world it is stream" — synthetic 16-event burst through a tumbling window; returns the per-window Lamport-coherence verdict. Conservation Law 33 baseline.',
+      parameters: { windowMs: z.number().int().min(1).max(60_000).optional() },
+      async handler({ windowMs }) {
+        const stream = makeStream({ id: 'probe-stream' })
+        const ms = (windowMs as number | undefined) ?? 50
+        const win = tumblingWindow(stream, ms)
+        for (let i = 0; i < 16; i++) {
+          stream.push({ id: `probe.${i}`, tenantId: 'probe', payload: { i }, emittedAt: new Date().toISOString() })
+        }
+        stream.close()
+        const buckets: Array<{ start: number; end: number; coherent: boolean }> = []
+        for await (const b of win) {
+          const c = checkWindowCoherence(b.events)
+          buckets.push({ start: b.window.start, end: b.window.end, coherent: c.ok })
+        }
+        return json({ buckets, allCoherent: buckets.every((b) => b.coherent) })
+      },
+    },
+    {
+      name: 'erpax.streams.checkCoherence',
+      description: 'Conservation Law 33 — verify a list of {event, lamport} pairs are in monotonically non-decreasing Lamport order. Out-of-order pairs are causal-coherence violations.',
+      parameters: {
+        events: z.array(z.object({ id: z.string(), tenantId: z.string(), lamport: z.number().int() })),
+      },
+      async handler({ events }) {
+        const arr = (events as Array<{ id: string; tenantId: string; lamport: number }>).map((e) => ({
+          event: { id: e.id, tenantId: e.tenantId, payload: {}, emittedAt: new Date().toISOString() },
+          lamport: e.lamport,
+        }))
+        return json(checkWindowCoherence(arr))
+      },
+    },
+    {
+      name: 'erpax.streams.checkUuidChain',
+      description: 'Conservation Law 34 — per user "uuid protects the stream from tampering": verify a list of ClockedEvent (event + lamport + streamUuid + prevStreamUuid). Any tampering — re-ordering, mutation, insertion, deletion — breaks the chain at the point of corruption and downstream.',
+      parameters: {
+        events: z.array(z.object({
+          event: z.object({ id: z.string(), tenantId: z.string(), payload: z.record(z.unknown()), emittedAt: z.string() }),
+          lamport: z.number().int(),
+          streamUuid: z.string(),
+          prevStreamUuid: z.union([z.string(), z.null()]),
+        })),
+        tenantNs: z.string().optional(),
+      },
+      async handler({ events, tenantNs }) {
+        return json(checkStreamUuidChain(events as unknown as ClockedEvent[], tenantNs as string | undefined))
+      },
+    },
+    // ── Slice TTTTTT + UUUUUU — storage independence + replication ──
+    {
+      name: 'erpax.storage.listBackends',
+      description: 'Per user "this way any object is storage independent" — list every registered storage backend (memory always present; production adds D1/R2/KV/DO/IPFS/Arweave/Filecoin/peer-erpax).',
+      parameters: {},
+      async handler() { return json({ backends: listBackends() }) },
+    },
+    {
+      name: 'erpax.storage.verifyAcrossBackends',
+      description: 'Slice TTTTTT: read an object from every registered backend; recompute its content uuid; verify all match the input. Returns per-backend verdict so missing replicas / tampered bytes are localizable.',
+      parameters: { collection: z.string(), uuid: z.string(), tenantId: z.string() },
+      async handler({ collection, uuid, tenantId }) {
+        return json(await verifyAcrossBackends({
+          collection: collection as string, uuid: uuid as string, tenantId: tenantId as string,
+        }))
+      },
+    },
+    {
+      name: 'erpax.storage.planMigration',
+      description: 'Slice TTTTTT: compute which uuids need to be copied from source to target backend (toCopy / alreadyPresent / missingFromSource). The actual byte-copy is delegated to the backend driver.',
+      parameters: { source: z.string(), target: z.string(), collection: z.string(), uuids: z.array(z.string()), tenantId: z.string() },
+      async handler({ source, target, collection, uuids, tenantId }) {
+        return json(await planMigration({
+          source: source as string, target: target as string, collection: collection as string,
+          uuids: uuids as string[], tenantId: tenantId as string,
+        }))
+      },
+    },
+    {
+      name: 'erpax.storage.replicate',
+      description: 'Conservation Law 36 — per user "uuid solves any replication": copy bytes from source backend to N target backends; recompute uuid at each target; report per-target ok/mismatch. No master/slave coordination.',
+      parameters: { source: z.string(), targets: z.array(z.string()), collection: z.string(), uuid: z.string(), tenantId: z.string() },
+      async handler({ source, targets, collection, uuid, tenantId }) {
+        return json(await replicateObject({
+          source: source as string, targets: targets as string[],
+          collection: collection as string, uuid: uuid as string, tenantId: tenantId as string,
+        }))
+      },
+    },
+    {
+      name: 'erpax.storage.consensusRead',
+      description: 'Conservation Law 36 — Byzantine-fault-tolerant read: query up to K backends; if at least minAgreement return matching uuids, succeed. Tampered backends fail alone; consensus continues.',
+      parameters: { collection: z.string(), uuid: z.string(), tenantId: z.string(), minAgreement: z.number().int().min(1) },
+      async handler({ collection, uuid, tenantId, minAgreement }) {
+        return json(await consensusRead({
+          collection: collection as string, uuid: uuid as string,
+          tenantId: tenantId as string, minAgreement: minAgreement as number,
+        }))
+      },
+    },
+    {
+      name: 'erpax.storage.checkIndependence',
+      description: 'Conservation Law 35 — synthetic content-uuid object recomputes the same uuid across every registered backend. Boot-suite probe; raise per-tenant when production backends online.',
+      parameters: { tenantId: z.string().optional() },
+      async handler({ tenantId }) { return json(await checkStorageIndependence((tenantId as string | undefined) ?? 'storage-probe')) },
+    },
+    {
+      name: 'erpax.streams.tumblingDemo',
+      description: 'Slice RRRRRR demo: push N events through a tumblingWindow(ms) and return the per-window event counts + total. Useful for clients implementing high-throughput dashboards.',
+      parameters: { events: z.number().int().min(1).max(1000), windowMs: z.number().int().min(1).max(60_000) },
+      async handler({ events, windowMs }) {
+        const stream = makeStream({ id: 'tumbling-demo' })
+        const win = tumblingWindow(stream, windowMs as number)
+        const total = events as number
+        for (let i = 0; i < total; i++) {
+          stream.push({ id: 'tick', tenantId: 'demo', payload: { i }, emittedAt: new Date().toISOString() })
+        }
+        stream.close()
+        const buckets: Array<{ start: number; end: number; count: number }> = []
+        for await (const b of win) buckets.push({ start: b.window.start, end: b.window.end, count: b.events.length })
+        return json({ buckets, total })
+      },
     },
     {
       name: 'erpax.blocks.chainsAsCompositions',

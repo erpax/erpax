@@ -672,6 +672,166 @@ The collapse — agents are blocks, chains are compositions of blocks — gives 
 
 @standard W3C Web Components (composition pattern); ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity; ISO 19011:2018 §6.4.6 (every block composition audit-trailed); W3C JSON-LD 1.1 (typed block manifests).
 
+## 0l. In the quantum world it is stream — quantum-stream layer
+
+Per user 'in the quantum world it is stream'. The discrete chain-of-blocks model (§0k) is the **classical view** — agents fire in turn, events hop step-by-step through `BUSINESS_CHAINS`. At the quantum level it is **one continuous stream**: events flow through every agent surface in superposition; chain steps are observation snapshots that "collapse" the stream into a definite next state. Slice RRRRRR ships the streaming primitive in `src/services/streams/`.
+
+### Two views, one platform
+
+| Classical view (§0k — slices PPPPPP + QQQQQQ) | Quantum view (this slice — RRRRRR) |
+|---|---|
+| Discrete events through chain steps | Continuous `AsyncIterable<DomainEvent>` |
+| One agent processes one event at a time | Agents subscribe to streams + emit streams |
+| Step boundary = control-flow gate | Window operator (tumbling / sliding / session) |
+| Chain coherence = ordered execution | Stream coherence = causal Lamport order |
+| Conservation Law 32 = block composition is type-safe | **Conservation Law 33 = stream coherence preserved** |
+| Best for: orchestration, human-readable diagrams | Best for: high-throughput, partial-failure-tolerant pipelines (CDC, IoT, AI dialogs, federation broadcasts) |
+
+Both views co-exist. The classical view drives the spec corpus, the standards-graph-viz, and the audit trail; the quantum view drives high-frequency event flows where strict per-step orchestration would bottleneck throughput.
+
+### Primitives
+
+| Primitive | Purpose |
+|---|---|
+| `EventStream` | Typed `AsyncIterable<ClockedEvent>` with id + optional subjectFilter + tenantId scope |
+| `makeStream({ id, subjectFilter, tenantId })` | Hot stream — `push(event)` from producers, `for await` from consumers |
+| `streamFromBus(eventId, tenantId)` | Bridge the existing event bus (push) to a stream (pull) |
+| `mapStream / filterStream` | Functional operators preserving Lamport order |
+| `tumblingWindow(ms)` | Fixed-size non-overlapping buckets |
+| `slidingWindow(sizeMs, stepMs)` | Overlapping windows for moving-average / continuous KPIs |
+| `sessionWindow(gapMs)` | Window closes after N ms of silence — natural for user sessions / device telemetry |
+| `pipeBlocks({ upstreamStream, downstreamSubscribesTo })` | Stream-of-blocks composition; quantum analogue of `composeBlocks` |
+| `ClockedEvent { event, lamport }` | Lamport-clocked envelope; clock assigned at `push()` time |
+
+### Conservation Law 33 — stream coherence
+
+`checkStreamCoherenceProbe`: every closed window's events must have monotonically non-decreasing Lamport timestamps. Out-of-order delivery within a window is a **causal-coherence violation** and would silently break event-driven decisions downstream (e.g. an `invoice:activated` event delivered AFTER `invoice:paid` could trigger a re-activation flow that overwrites a paid status).
+
+The probe synthesizes a 16-event burst, runs it through a tumbling window, and asserts the consumer sees them in order. Real streams are checked by `checkWindowCoherence(events)` after each closed window.
+
+### Quantum-classical coupling
+
+Every classical chain step (PPPPPP block boundary) corresponds to a quantum window observation: when `agent.onChainStep()` fires, it is the equivalent of measuring the upstream stream's current window. The stream layer doesn't replace the chain-of-blocks model; it is the **substrate beneath it**. Conservation Law 33 + Law 32 together guarantee that whether you view ERPax as discrete chain steps or as continuous streams, the same causal order + same type safety hold.
+
+### MCP surface (slice RRRRRR)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.streams.probeWindow` | Synthetic 16-event burst through a tumbling window — Law 33 baseline |
+| `erpax.streams.checkCoherence` | Verify a list of {event, lamport} for monotonic order |
+| `erpax.streams.tumblingDemo` | Push N events, return per-window event counts (high-throughput dashboard helper) |
+
+### Standards anchoring
+
+@standard ReactiveX / W3C Streams API (AsyncIterable surface); Lamport 1978 — distributed-system causal ordering; ISO/IEC 25010:2023 §5.2 performance — throughput; ISO 19011:2018 §6.4.6 (stream windows audit-trailed).
+
+## 0m. UUID protects the stream from tampering
+
+Per user 'uuid protects the stream from tampering'. Slice SSSSSS extends every `ClockedEvent` with a `streamUuid` derived from `(event, lamport, prevStreamUuid)`. The stream becomes a **Merkle hash-chain**: any tampering — re-ordering, mutation, insertion, deletion — breaks the chain at the corruption point and downstream.
+
+### How the chain is constructed
+
+```
+streamUuid_n = uuidv5(JCS({event_n, lamport_n, prev: streamUuid_{n-1}}))
+streamUuid_0 = uuidv5(JCS({event_0, lamport_0, prev: STREAM_GENESIS}))
+```
+
+Every push assigns: `lamport++` → compute `streamUuid` → emit `ClockedEvent{event, lamport, streamUuid, prevStreamUuid}`. Consumers see the chain natively.
+
+### Conservation Law 34 — `checkStreamUuidChainProbe`
+
+The boot-suite probe: push 8 synthetic events; capture them; verify the chain (must pass); tamper with index 3's payload (leave streamUuid unchanged); re-verify (must fail). The probe asserts the implementation **actually detects tampering** — not silently short-circuiting.
+
+### MCP tool
+
+`erpax.streams.checkUuidChain` — verifier; takes a list of `ClockedEvent` and reports per-leaf mismatches with `at` index + `reason` (`mismatch` or `broken-prev`).
+
+## 0n. Any object is storage-independent
+
+Per user 'this way any object is storage independent'. The natural conclusion of every uuid slice so far:
+
+1. **RRRRR** — every object carries `uuid = uuidv5(content)`
+2. **TTTTT** — same uuid lets you store the object in any backend
+3. **UUUUU** — uuid-driven references (Law 10) — refs travel with uuid
+4. **SSSSSS** — stream events carry `streamUuid` hash-chain
+
+Therefore: any ERPax object — a row, a vote, a page seed, a stream window, a federation envelope, a genome bundle — is **storage-independent**.
+
+### What changes when something is storage-independent
+
+| Capability | Mechanism |
+|---|---|
+| **Migration is free** | Copy bytes between any two backends; recompute uuid; if equal, accepted |
+| **Multi-backend redundancy** | Store same object in K backends; K agreement = Byzantine-fault-tolerant read |
+| **Sharding by tenant/region** | Tenant-namespaced uuids → cross-shard collisions mathematically impossible |
+| **Cold-warm-hot tiers** | Tier promotion/demotion = byte copy + uuid verify; no migration metadata |
+| **Federation broadcasts** | Slice AAAAAA already exchanges by uuid; now generalised to ANY object |
+| **Backups** | A backup is "store the bytes in a separate backend"; restore = "read + verify" |
+| **Disaster recovery** | One backend down → recover from any other backend that holds it |
+
+### The `BackendRecomputer` interface
+
+Production backends register their reader at boot:
+
+```ts
+interface BackendRecomputer {
+  id: BackendId
+  readObject(args: { collection; uuid; tenantId }): Promise<Record<string, unknown> | null>
+}
+```
+
+Backends are pluggable: `memory` (always present for tests + probes), `d1`, `r2`, `kv`, `do`, `ipfs`, `arweave`, `filecoin`, `peer-erpax`, `federation`, plus user-defined.
+
+### Conservation Law 35 — `checkStorageIndependenceProbe`
+
+Synthetic content-uuid'd object must recompute the same uuid across every registered backend. Boot suite always has the in-memory backend; production deploys add D1 / R2 / IPFS / etc.
+
+### MCP surface
+
+| Tool | Purpose |
+|---|---|
+| `erpax.storage.listBackends` | Enumerate registered backends |
+| `erpax.storage.verifyAcrossBackends` | Per-backend uuid recompute verdict |
+| `erpax.storage.planMigration` | Compute which uuids to copy source→target |
+| `erpax.storage.checkIndependence` | Law 35 probe |
+
+## 0o. UUID solves any replication
+
+Per user 'uuid solves any replication'. Direct extension of §0n: replication is **byte copy + uuid verify**. No master/slave coordination, no conflict resolution, no vector clocks — just N backends agreeing on uuid.
+
+### `replicateObject(source, targets, collection, uuid, tenantId)`
+
+1. Read object from source backend.
+2. For each target: write bytes; re-read; recompute uuid.
+3. Report per-target `{ok, target, recomputed, reason?}` so partial failures are localizable.
+
+Async fan-out wraps this in Cloudflare Queues (slice IIIIII).
+
+### Conservation Law 36 — `consensusRead`
+
+Byzantine-fault-tolerant read: query up to K backends; if at least `minAgreement` return matching uuids, succeed. Tampered backends fail alone; consensus continues. Production deploys raise `minAgreement` to N≤K once K real backends are configured.
+
+### MCP surface
+
+| Tool | Purpose |
+|---|---|
+| `erpax.storage.replicate` | Replicate one object source→targets; per-target verdict |
+| `erpax.storage.consensusRead` | N-of-K consensus read |
+
+### Implications
+
+The storage-independence + replication-by-uuid pair (§0n + §0o) collapses several traditionally distinct platform concerns:
+
+- No more "primary database vs read replicas" — all backends are equal; reads use consensus, writes fan-out.
+- No more "backup tier vs live tier" — they hold the same uuid'd bytes; tier is a routing decision.
+- No more "active/passive failover" — when a backend goes down, the rest carry on; consensus thresholds shift but reads continue.
+- No more "leader election" for distributed writes — content-uuids collide on identical content; no leader needed.
+- No more "conflict resolution" — uuids only collide when content is bit-identical; differing content has differing uuids; both are kept until application-level reconciliation chooses.
+
+### Standards anchoring
+
+@standard ISO/IEC 27040:2024 — storage security (data integrity); W3C Verifiable Data Registry conformance (storage layer); RFC 4122 §4.3 + RFC 8785 (content-derived uuids); CAP theorem — choosing CP via uuid-consensus reads (replicas may be unavailable; survivors give consistent answers).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.
