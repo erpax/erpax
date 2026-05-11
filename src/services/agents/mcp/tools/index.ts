@@ -37,3 +37,8 @@ export { buildShareTools } from './share'
 // erpax.chain.{computeLeafUuid, forgeGenesis, forgeLink, verifyOne}
 // surfaces Conservation Law 60: chains are recursive uuid bindings.
 export { buildChainTools } from './chain'
+// Slice UUUUUUUUU-cut1 (2026-05-11) — uuid carries its own features.
+// erpax.format.{encode, decode, verify} surface the structured uuidv8
+// layout (RFC 9562 §6.4): slot + capabilities + version + 106-bit
+// content digest fused into one 128-bit primitive.
+export { buildFormatTools } from './format'
