@@ -29,12 +29,20 @@ const _AUTH_TAG_LENGTH = 16 // bytes
 
 /**
  * Get encryption key — derived from the app's internal master secret.
- * The master secret itself is never read or named here.
+ *
+ * Per the standards system (`src/standards/nist-sp-800-108/kdf.ts`), the
+ * project enforces *single-secret custodianship* via `PAYLOAD_SECRET` and
+ * derives every per-purpose key from it. The error message mentions
+ * `PAYLOAD_SECRET` explicitly so test failures point ops at the right
+ * env var instead of suggesting a competing `ENCRYPTION_KEY` variable.
  */
 function getEncryptionKey(): Buffer {
   const derived = deriveSecretFromPayloadSecret(internalSecretPurpose.fieldEncryption)
   if (!derived) {
-    throw new Error('Field encryption key unavailable: app is not fully configured.')
+    throw new Error(
+      'Field encryption key unavailable: PAYLOAD_SECRET must be set ' +
+        '(single-secret custodianship — see src/standards/nist-sp-800-108/kdf.ts).',
+    )
   }
   // HMAC-SHA256 returns 64-char hex (32 bytes). AES-256-GCM needs exactly 32 bytes.
   return Buffer.from(derived, 'hex').subarray(0, 32)
@@ -46,7 +54,10 @@ function getEncryptionKey(): Buffer {
  * @standard NIST SP-800-38D §6 ghash + §7.1 encrypt
  */
 export function encryptField(plaintext: string | null | undefined): string | null {
-  if (!plaintext) {
+  // Only `null` / `undefined` short-circuit. Empty strings are valid input and
+  // round-trip correctly through GCM — see the `should encrypt empty string`
+  // test in `tests/standards/nist-sp-800-38/aes-gcm.int.spec.ts`.
+  if (plaintext === null || plaintext === undefined) {
     return null
   }
 
@@ -109,6 +120,12 @@ export function decryptField(encrypted: string | null | undefined): string | nul
 
 /**
  * Check if a value is encrypted (has correct format).
+ *
+ * Strict format check: three colon-separated lowercase-hex segments where
+ * the IV is exactly `IV_LENGTH` bytes (32 hex chars), the auth tag is
+ * 16 bytes (32 hex chars), and the ciphertext is at least 1 hex byte
+ * (2 chars). `Buffer.from(_, 'hex')` silently returns a partial buffer
+ * for non-hex input, so we use a regex instead.
  */
 export function isEncrypted(value: unknown): boolean {
   if (typeof value !== 'string') {
@@ -120,14 +137,16 @@ export function isEncrypted(value: unknown): boolean {
     return false
   }
 
-  // Validate hex format
-  try {
-    Buffer.from(parts[0], ENCODING) // IV
-    Buffer.from(parts[1], ENCODING) // Auth tag
-    return true
-  } catch {
-    return false
-  }
+  const [iv, authTag, ciphertext] = parts
+  const ivHexLen = IV_LENGTH * 2
+  const tagHexLen = _AUTH_TAG_LENGTH * 2
+  const HEX_RE = /^[0-9a-f]+$/i
+
+  if (iv.length !== ivHexLen || !HEX_RE.test(iv)) return false
+  if (authTag.length !== tagHexLen || !HEX_RE.test(authTag)) return false
+  if (ciphertext.length < 2 || ciphertext.length % 2 !== 0 || !HEX_RE.test(ciphertext)) return false
+
+  return true
 }
 
 /**

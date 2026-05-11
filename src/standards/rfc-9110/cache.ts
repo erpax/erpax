@@ -25,6 +25,13 @@ type Global = keyof Config['globals']
  * Generic factory for creating cached Payload fetchers.
  * Handles Next.js `unstable_cache` pattern with appropriate cache keys + tags.
  *
+ * Under Vitest (`process.env.VITEST`) the cache layer is bypassed and the
+ * raw fetcher is returned. `unstable_cache` requires Next.js's incremental
+ * cache provider, which only exists inside a Next.js request context — calling
+ * it from a unit/integration test throws `Invariant: incrementalCache missing`.
+ * The same `process.env.VITEST` short-circuit is used in
+ * `src/collections/Posts/hooks/revalidatePost.ts` and Pages' equivalent.
+ *
  * @example
  * const getCachedUsers = createCachedPayloadFetcher(
  *   ['users'],
@@ -40,6 +47,9 @@ export function createCachedPayloadFetcher<T>(
   cacheTags: string[],
   fetcher: () => Promise<T>,
 ) {
+  if (process.env.VITEST) {
+    return fetcher
+  }
   return unstable_cache(fetcher, cacheKeys, { tags: cacheTags })
 }
 

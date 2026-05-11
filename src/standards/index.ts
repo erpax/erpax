@@ -351,3 +351,58 @@ export {
   applySecurityHeaders,
   type SecurityHeadersConfig,
 } from './_security-headers'
+
+// ─── Per-country canonical bundles (ISO-3166-1 alpha-2 dispatch) ────────
+// Adds the per-country merged view of profile + specifics + apis + bank
+// apis. Callers SHOULD import from `@/standards/iso-3166-1/countries`
+// directly; the master barrel re-exports for grep-traceability per
+// docs/MIGRATION_WORKLIST.md "Adding a new slice" §5.
+export {
+  type CountryBundle,
+  BG_COUNTRY_BUNDLE,
+  COUNTRY_BUNDLES,
+  getCountryBundle,
+} from './iso-3166-1/countries'
+
+// ─── ISO 7064 — check-character systems (mod-11 / mod-97-10) ────────────
+// BG ЕГН (Единен граждански номер) personal-id check-digit + birth-date
+// decoder. Adjacent to the IBAN mod-97-10 already handled in iso-13616.
+export { isBgEgn, decodeBgEgn, type EgnDecoded } from './iso-7064'
+
+// ─── ISO 19005 — PDF/A archival profiles ────────────────────────────────
+// XMP packet builder + profile constants for the long-term archival
+// declarations (PDF/A-2b default, PDF/A-3b for hybrid e-invoices).
+export {
+  type PdfAPart,
+  type PdfAConformance,
+  type PdfAProfile,
+  PDF_A_DEFAULT,
+  PDF_A_HYBRID_INVOICE,
+  pdfAProfileToXmp,
+  buildPdfAXmp,
+  type PdfAMetadataInput,
+} from './iso-19005'
+
+// ─── ISO 14289 — PDF/UA accessibility profiles ──────────────────────────
+// `pdfuaid:part` declaration helper combined with PDF/A via the iso-19005
+// metadata builder for the PDF/A-2a + PDF/UA-1 B2G dual baseline.
+export {
+  type PdfUaPart,
+  type PdfUaProfile,
+  PDF_UA_DEFAULT,
+  pdfUaProfileToXmp,
+} from './iso-14289'
+
+// ─── ETSI EN 319 142 — PAdES baseline profiles + signature dictionary ───
+// PDF Advanced Electronic Signatures — eIDAS qualified-signature wire
+// format. Two-pass `/Sig` dictionary builder for the per-country signers.
+export {
+  type PadesLevel,
+  type PadesSubFilter,
+  PADES_DEFAULT_LEVEL,
+  PADES_DEFAULT_SUBFILTER,
+  padesLevelOid,
+  buildPadesSignatureDictionary,
+  type PadesSignatureDictionaryInput,
+  type PadesSignatureDictionary,
+} from './etsi-en-319-142'

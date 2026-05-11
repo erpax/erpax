@@ -41,23 +41,18 @@ export type InvoiceTypeCode =
   | '751' // Invoice information for accounting purposes (DE / Buchhaltungsbeleg)
 
 /**
- * VAT category code — BT-151. Subset of UN/CEFACT 5305 covering the
- * categories EN 16931 admits in the EU; non-EU jurisdictions may model
- * their tax categories under separate standards modules.
+ * VAT category code — BT-151. Canonical implementation lives in
+ * `src/standards/un-cefact-5305/` (Slice JJJJ taxonomy consolidation
+ * — same code list is referenced from tax-codes master, AI tax
+ * classifier, SAF-T tax table, etc.). Re-exported here for source-compat.
  *
  * @standard EN-16931:2017 BT-151 vat-category-code
  * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+ * @see ../un-cefact-5305/index.ts
  */
-export type VatCategoryCode =
-  | 'S'  // Standard rate
-  | 'Z'  // Zero rated goods
-  | 'E'  // Exempt from VAT
-  | 'AE' // Reverse charge (recipient liable)
-  | 'K'  // Intra-community supply (Article 138 of the VAT Directive)
-  | 'G'  // Export outside the EU (Article 146 of the VAT Directive)
-  | 'O'  // Out of scope of VAT
-  | 'L'  // Canary Islands IGIC tax
-  | 'M'  // Ceuta and Melilla tax (IPSI)
+export { VAT_CATEGORY_CODES, VAT_CATEGORY_LABEL, VAT_CATEGORY_OPTIONS, isVatCategoryCode, requiresVatRate, requiresExemptionReason } from '../un-cefact-5305'
+export type { VatCategoryCode } from '../un-cefact-5305'
+import type { VatCategoryCode } from '../un-cefact-5305'
 
 /**
  * Payment means code — BT-81. Subset of UN/CEFACT 4461 that EN 16931 admits.
