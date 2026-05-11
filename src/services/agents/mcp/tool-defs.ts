@@ -34,6 +34,12 @@ import { listProposals } from '@/services/meta-automation'
 import { listAgentCapabilities } from '@/services/beyond'
 import { seedFromE2e, seedFromSpec, exportMediaBundle, importMediaBundle } from '@/services/website'
 import { deriveSeoMeta, generateChannelVariants, reviewBrandVoice, auditSeo, buildOnboardingDrip, checkMarketingTransparency, ERPAX_MARKETING_STRATEGY } from '@/services/website/marketing-skills'
+import {
+  registerFace, listFaces, crossLink, renderJsonLd, renderOgMeta,
+  generateSitemap, generateRobots, checkSeoVortexCoupling, bitemporalAnchor,
+  validateMicrodata, type SeoVortexFace, type SchemaType, type OgType,
+} from '@/services/website/seo-vortex'
+import { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents, type SiteSurface } from '@/services/website/shadcn-components'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -544,6 +550,132 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'Slice MMMMMM: parse a federation-broadcast ndjson bundle into PageSeed[] and return it for ingestion into the local Payload pages collection.',
       parameters: { ndjson: z.string() },
       async handler({ ndjson }) { return json(importMediaBundle(ndjson as string)) },
+    },
+    // ── Slice NNNNNN — SEO-as-vortices (Law 29) ──
+    {
+      name: 'erpax.seo.registerFace',
+      description: 'Slice NNNNNN: register a SeoVortexFace for a published page. The face carries Schema.org type + Open Graph type + content uuid + outgoing edges to related pages. Run after each PageSeed is persisted.',
+      parameters: {
+        url: z.string(), title: z.string(), description: z.string(),
+        schemaType: z.enum(['WebPage', 'Article', 'SoftwareApplication', 'Organization', 'Dataset', 'Action', 'TechArticle', 'CreativeWork', 'CollectionPage']),
+        ogType: z.enum(['website', 'article', 'product', 'profile', 'video']),
+        contentUuid: z.string(), ogImage: z.string().optional(),
+        hreflang: z.array(z.object({ locale: z.string(), url: z.string() })).optional(),
+        outgoing: z.array(z.object({
+          relation: z.enum(['isPartOf', 'mentions', 'cites', 'derivedFrom', 'subjectOf', 'workExample', 'hasPart']),
+          targetUrl: z.string(), targetType: z.string(), targetName: z.string(),
+        })).optional(),
+        axisHint: z.enum(['collection', 'chain', 'agent', 'role', 'standard', 'walkthrough']).optional(),
+      },
+      async handler(args) {
+        const face: SeoVortexFace = {
+          url: args.url as string, title: args.title as string, description: args.description as string,
+          schemaType: args.schemaType as SchemaType, ogType: args.ogType as OgType,
+          ogImage: args.ogImage as string | undefined,
+          ogUpdatedTime: new Date().toISOString(),
+          contentUuid: args.contentUuid as string, previousContentUuids: [],
+          hreflang: (args.hreflang as Array<{ locale: string; url: string }>) ?? [],
+          outgoing: ((args.outgoing as Array<{ relation: string; targetUrl: string; targetType: string; targetName: string }>) ?? []).map((e) => ({
+            relation: e.relation as 'isPartOf' | 'mentions' | 'cites' | 'derivedFrom' | 'subjectOf' | 'workExample' | 'hasPart',
+            targetUrl: e.targetUrl, targetType: e.targetType as SchemaType, targetName: e.targetName,
+          })),
+          incoming: [],
+          axisHint: args.axisHint as SeoVortexFace['axisHint'],
+        }
+        registerFace(face)
+        return json({ ok: true, registered: face.url })
+      },
+    },
+    {
+      name: 'erpax.seo.crossLink',
+      description: 'Slice NNNNNN: build the citation graph — for every face, populate its incoming edges from the outgoing edges of every other face. Required before checkCoupling / generateSitemap.',
+      parameters: {},
+      async handler() { return json(crossLink()) },
+    },
+    {
+      name: 'erpax.seo.renderJsonLd',
+      description: 'Slice NNNNNN: render the Schema.org JSON-LD <script> for a face URL. Embed this in the page <head>.',
+      parameters: { url: z.string() },
+      async handler({ url }) {
+        const face = listFaces().find((f) => f.url === url)
+        if (!face) return text(`(no face registered at ${url})`)
+        return text(renderJsonLd(face))
+      },
+    },
+    {
+      name: 'erpax.seo.renderOgMeta',
+      description: 'Slice NNNNNN: render the Open Graph + Twitter + alternate hreflang <meta>/<link> tags for a face URL. Embed this in the page <head>.',
+      parameters: { url: z.string() },
+      async handler({ url }) {
+        const face = listFaces().find((f) => f.url === url)
+        if (!face) return text(`(no face registered at ${url})`)
+        return text(renderOgMeta(face))
+      },
+    },
+    {
+      name: 'erpax.seo.generateSitemap',
+      description: 'Slice NNNNNN: generate sitemap.xml for every registered SEO face, with xhtml:link alternates for every locale. Serve at /sitemap.xml.',
+      parameters: { siteOrigin: z.string() },
+      async handler({ siteOrigin }) { return text(generateSitemap(siteOrigin as string)) },
+    },
+    {
+      name: 'erpax.seo.generateRobots',
+      description: 'Slice NNNNNN: generate robots.txt — exposes the audit trail + spec corpus to crawlers (transparency strategy MMMMMM); explicitly opts in ClaudeBot/GPTBot/Google-Extended for AI training.',
+      parameters: { siteOrigin: z.string() },
+      async handler({ siteOrigin }) { return text(generateRobots(siteOrigin as string)) },
+    },
+    {
+      name: 'erpax.seo.checkCoupling',
+      description: 'Conservation Law 29 — every published SEO face must have ≥minDegree inbound + outbound microdata edges. Returns under-coupled pages so the platform can refuse to publish them or mark them as scope:pending-coupling.',
+      parameters: { minDegree: z.number().int().min(1).max(10).optional() },
+      async handler({ minDegree }) { return json(checkSeoVortexCoupling((minDegree as number | undefined) ?? 2)) },
+    },
+    {
+      name: 'erpax.seo.bitemporalAnchor',
+      description: 'Slice NNNNNN: when a page content-uuid changes, register the old uuid so requests to historical URLs 301 to the canonical URL and og:updated_time is bumped.',
+      parameters: { url: z.string(), oldUuid: z.string(), newUuid: z.string() },
+      async handler({ url, oldUuid, newUuid }) {
+        const updated = bitemporalAnchor({ url: url as string, oldUuid: oldUuid as string, newUuid: newUuid as string })
+        return json(updated ?? { ok: false, reason: 'face not registered' })
+      },
+    },
+    {
+      name: 'erpax.seo.validateMicrodata',
+      description: 'Slice NNNNNN: validate a face — Schema.org-required fields present, BCP-47 hreflang, no orphan edges. Major issues block publish; minor issues are warnings.',
+      parameters: { url: z.string() },
+      async handler({ url }) {
+        const face = listFaces().find((f) => f.url === url)
+        if (!face) return json({ ok: false, issues: [{ field: 'url', severity: 'major', detail: 'no face registered' }] })
+        return json(validateMicrodata(face))
+      },
+    },
+    // ── shadcn extension (slice MMMMMM cont.) ──
+    {
+      name: 'erpax.website.shadcnInventory',
+      description: 'Per user "and here you can use the whole power of shadcn for anything beyond payload" — return the SHADCN_SURFACE_MAP describing every interactive surface (12 site surfaces) and which shadcn components they require, plus the union of all required components.',
+      parameters: {},
+      async handler() {
+        return json({
+          surfaces: SHADCN_SURFACE_MAP,
+          allComponents: allRequiredShadcnComponents(),
+          totalSurfaces: SHADCN_SURFACE_MAP.length,
+        })
+      },
+    },
+    {
+      name: 'erpax.website.shadcnSurface',
+      description: 'Look up a single SiteSurface (e.g. "mcp-playground", "conservation-dashboard", "cloning-ui") and return its shadcn component requirements + MCP tools + Schema.org type + description.',
+      parameters: {
+        surface: z.enum([
+          'mcp-playground', 'conservation-dashboard', 'spec-corpus-browser',
+          'tenant-role-activator', 'federation-explorer', 'audit-trail-viewer',
+          'cloning-ui', 'stripe-checkout-embed', 'standards-graph-viz',
+          'walkthrough-player', 'i18n-coverage-heatmap', 'cost-carbon-meter',
+        ]),
+      },
+      async handler({ surface }) {
+        return json(shadcnSurfaceFor(surface as SiteSurface) ?? { ok: false, reason: 'unknown surface' })
+      },
     },
     {
       name: 'erpax.standards.classify',

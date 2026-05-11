@@ -110,6 +110,7 @@ export async function runAllInvariants(
     results.push(await C.checkReferentialHarmony(ctx))        // Law 10 — UUUUU
     results.push(C.checkGenomeDeterministic(ctx))             // Law 24 — HHHHHH
     results.push(C.checkErpaxObservesSelf(ctx))               // Law 23 — GGGGGG
+    results.push(C.checkSeoVortexCouplingInvariant(ctx))      // Law 29 — NNNNNN
   }
 
   return {

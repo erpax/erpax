@@ -476,6 +476,98 @@ When a regulator publishes a new version (e.g. IASB releases IFRS-18 effective 2
 
 The 7 standard families spinning together — coupled by citation, separated by conflict, evolving via supersession — form a higher-order vortex that the platform's 26 conservation laws keep coherent across every tenant role + every jurisdiction + every regulatory cycle.
 
+## 0h. SEO as vortices — microdata + OG indexed and linked in time
+
+Per user 'erpax seo strategy is microdata og vortices indexed and linked in time interacting with each other'. SEO is **not metadata-on-pages**; it's a coupled vortex system parallel to the 10 architectural vortices (§0b). Every published page (PageSeed from MMMMMM) becomes an `SeoVortexFace` registered in `src/services/website/seo-vortex.ts`.
+
+### What an SEO face carries
+
+| Property | Source | Vortex coupling |
+|---|---|---|
+| **`schemaType`** + **`ogType`** | derived from PageSeed `axis` (collection / chain / agent / role / standard / walkthrough) | classifies the face by domain vortex (A) |
+| **`contentUuid`** | tamper-proof uuid of the rendered HTML (Law 8 — RRRRR) | binds the SEO face to the integrity vortex (F) |
+| **`previousContentUuids`** | bitemporal trail — old uuids 301 to canonical | binds the SEO face to the time vortex (Substrate B + Law 11 bitemporal) |
+| **`hreflang`** | every supported locale URL (Law 3 i18n + BCP-47) | binds the SEO face to the i18n vortex (CCCCC + Law 3) |
+| **`outgoing` edges** | `isPartOf` / `mentions` / `cites` / `derivedFrom` / `hasPart` | wires faces to one another — the SEO citation graph |
+| **`incoming` edges** | populated by `crossLink()` from peers' `outgoing` | force-directed coupling, surfaced for crawlers as Schema.org |
+
+### Conservation Law 29 — SEO vortex coupling
+
+Every published face must have **≥2 inbound + ≥2 outbound microdata edges**. Isolated pages dilute the vortex; the platform refuses to publish them without an explicit `scope:'pending-coupling'` override (e.g. a brand-new entity that hasn't accumulated citers yet).
+
+`checkSeoVortexCouplingInvariant` runs in the entropy axis of the boot suite (alongside Law 24 genome determinism and Law 23 self-observation). When the suite warns, the offenders list pinpoints exactly which page URLs are dangling.
+
+### MCP surface (slice NNNNNN)
+
+Eight new tools — all callable both internally (agents wire them in their effects) and externally (MCP clients):
+
+| Tool | Purpose |
+|---|---|
+| `erpax.seo.registerFace` | Register an SeoVortexFace after a PageSeed is persisted |
+| `erpax.seo.crossLink` | Build the citation graph — populate every face's `incoming` from peers' `outgoing` |
+| `erpax.seo.renderJsonLd` | Render the Schema.org JSON-LD `<script>` for a face |
+| `erpax.seo.renderOgMeta` | Render Open Graph + Twitter + alternate hreflang `<meta>`/`<link>` |
+| `erpax.seo.generateSitemap` | Emit `sitemap.xml` for every registered face with xhtml:link alternates per locale |
+| `erpax.seo.generateRobots` | Emit `robots.txt` — opens spec/audit trail to crawlers (transparency strategy MMMMMM); explicitly opts in ClaudeBot/GPTBot/Google-Extended |
+| `erpax.seo.checkCoupling` | Conservation Law 29 — return under-coupled pages |
+| `erpax.seo.bitemporalAnchor` | When content-uuid changes, record the old uuid → 301 redirect + bump `og:updated_time` |
+| `erpax.seo.validateMicrodata` | Per-face validation: required fields, BCP-47 hreflang, no orphan edges |
+
+### Bitemporal indexing — search engines see the evolution
+
+When a Page's rendered HTML changes its content-uuid (Law 8 — RRRRR), `bitemporalAnchor` records the previous uuid in `previousContentUuids`. The page rendering layer:
+1. Emits HTTP 301 from the old uuid-suffixed URL to the canonical URL.
+2. Bumps `og:updated_time` so federation peers + search engines see the temporal evolution.
+3. Registers the change as a `PROV:wasRevisionOf` edge in the audit trail (Law 12 W3C-PROV alignment).
+
+The result: the SEO graph is **time-aware** — search engines can crawl historical states; AI training crawlers (ClaudeBot, GPTBot, Google-Extended) get the canonical evolving artefact instead of stale snapshots.
+
+### Standards anchoring
+
+@standard W3C JSON-LD 1.1 + Microdata 1.1; Open Graph protocol; Schema.org WebPage / Article / SoftwareApplication / Organization / Dataset / Action; Sitemap.xml protocol 0.9; RFC 9694 robots.txt + REP; ISO/IEC 25010:2023 §5.3 usability/discoverability.
+
+## 0i. shadcn for everything beyond Payload
+
+Per user 'and here you can use the whole power of shadcn for anything beyond payload'. Payload owns the data + admin + lexical content; **shadcn owns every interactive surface beyond it**. Slice MMMMMM-shadcn ships the surface map (`src/services/website/shadcn-components.ts`) declaring 12 site surfaces and the shadcn components each requires.
+
+### The 12 site surfaces
+
+| Surface | Schema.org | Required shadcn primitives | MCP tools wired |
+|---|---|---|---|
+| **`mcp-playground`** | WebApplication | Command + Sheet + ScrollArea + Tabs + Combobox | `*` (every erpax.* tool) |
+| **`conservation-dashboard`** | Dataset | Card + Badge + Progress + Chart + HoverCard | `erpax.standards.lawConsistency`, `lawSupersessions`, lifecycle audits, `auditTenant`, `findDangling` |
+| **`spec-corpus-browser`** | Dataset | DataTable + DropdownMenu + Combobox + Sheet + Pagination | `erpax.spec.getCollection`, `getChainRegistry`, `agents.list`, `standards.classify` |
+| **`tenant-role-activator`** | BuyAction | Stepper + RadioGroup + Form + Toast + Card | `erpax.commerce.checkout`, `provisionInstance`, `platform.bootFromFederation` |
+| **`federation-explorer`** | Dataset | NetworkChart + Sheet + HoverCard + Avatar | `erpax.platform.publishSelf`, `refs.resolve` |
+| **`audit-trail-viewer`** | Action | Timeline + Drawer + JsonViewer + Tabs | `erpax.audit.getEvidence`, `integrity.verifyObject`, `anchoring.list` |
+| **`cloning-ui`** | CreateAction | Dialog + Progress + Stepper + Card | `erpax.platform.publishSelf` + `bootFromFederation` |
+| **`stripe-checkout-embed`** | BuyAction | Dialog + Form + Skeleton + Toast | `erpax.commerce.checkout` + `marketing.buildOnboardingDrip` |
+| **`standards-graph-viz`** | Dataset | NetworkChart + Sheet + HoverCard + Combobox | `erpax.standards.listCitations`, `listConflicts`, `traceSupersession`, `classify` |
+| **`walkthrough-player`** | VideoObject | Card + AspectRatio + Tabs + Badge + ScrollArea | `erpax.multimedia.render`, `marketing.transparencyCheck` |
+| **`i18n-coverage-heatmap`** | Dataset | Chart + HoverCard + Combobox + Badge | `erpax.i18n.audit`, `i18n.translate` |
+| **`cost-carbon-meter`** | Dataset | Card + Chart + Progress + Badge | `erpax.commerce.lifecycleAudit`, `accounting.lifecycleAudit` |
+
+### Why shadcn
+
+shadcn components are **copied into the repo** (not bundled), Radix-based, Tailwind-styled, and theme via CSS variables — same pattern as ERPax's own design tokens, so light/dark mode + i18n + RTL (for `ar` locale) come for free. Radix handles keyboard nav + ARIA so WCAG 2.2 AA is automatic for keyboard + screen reader; we audit colour contrast via Law 16's tenant-role audit policy.
+
+### Coupling with Payload
+
+Payload's interactive surfaces stop at the admin panel + lexical-content rendering. Everything else — the live MCP playground, conservation-laws dashboard, audit-trail Merkle viewer, federation network graph, cloning wizard, Stripe checkout, standards graph viz, walkthrough player, i18n heatmap, cost+carbon meter — uses shadcn. The 12 surfaces share a single Tailwind theme + the 12 surfaces all consume MCP tools, so adding a new tool surfaces it everywhere automatically (Law 1 spec-derivation applied to UI).
+
+### MCP surface (slice MMMMMM-shadcn)
+
+Two new tools so agents + external clients can introspect the UI inventory:
+
+| Tool | Purpose |
+|---|---|
+| `erpax.website.shadcnInventory` | Return the SHADCN_SURFACE_MAP + the union of all required shadcn components across all 12 surfaces |
+| `erpax.website.shadcnSurface` | Look up a single surface — its component requirements + MCP tools + Schema.org type + description |
+
+### Standards anchoring
+
+@standard shadcn/ui (Radix UI + Tailwind CSS); W3C WAI-ARIA 1.2 + WCAG 2.2 AA; W3C Open Graph + Schema.org (carried by surrounding pages).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

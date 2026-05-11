@@ -23,6 +23,7 @@ import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/services/integrity'
 import { collectGenome, computeGenomeUuid } from '@/services/cloning'
 import { checkErpaxObservesItself } from '@/services/self-reference'
+import { listFaces, checkSeoVortexCoupling } from '@/services/website/seo-vortex'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1319,6 +1320,37 @@ export function checkGenomeDeterministic(_ctx: InvariantContext): InvariantResul
       `genome collection threw: ${(err as Error).message}`,
       [(err as Error).stack ?? ''])
   }
+}
+
+/**
+ * Conservation Law 29 — `checkSeoVortexCoupling`. Slice NNNNNN (2026-05-11).
+ *
+ * Per user 'erpax seo strategy is microdata og vortices indexed and
+ * linked in time interacting with each other'. Every published SEO
+ * face must have ≥2 inbound + ≥2 outbound microdata edges; isolated
+ * pages dilute the SEO vortex. The platform refuses to publish them
+ * (or marks them scope:'pending-coupling').
+ *
+ * Probe: walk every registered face; require both incoming and
+ * outgoing degrees ≥2. Pages with zero faces (no SEO surface yet)
+ * pass trivially since the vortex hasn't been registered.
+ *
+ * @standard Schema.org JSON-LD 1.1 + Open Graph + Microdata 1.1
+ * @audit ISO 19011:2018 §6.4.6 (SEO coupling provable per publish)
+ */
+export function checkSeoVortexCouplingInvariant(_ctx: InvariantContext): InvariantResult {
+  const total = listFaces().length
+  if (total === 0) {
+    return pass('entropy', 'seo-vortex-coupling', 'no SEO faces registered yet (rollout in progress)')
+  }
+  const result = checkSeoVortexCoupling(2)
+  if (result.ok) {
+    return pass('entropy', 'seo-vortex-coupling',
+      `${total}/${total} SEO faces meet the ≥2 in/out edge minimum (Law 29 satisfied)`)
+  }
+  return warn('entropy', 'seo-vortex-coupling',
+    `${result.underCoupled.length}/${total} SEO faces under-coupled (each needs ≥2 inbound + ≥2 outbound microdata edges)`,
+    result.underCoupled.slice(0, 8).map((u) => `${u.url} (in=${u.incoming}, out=${u.outgoing})`))
 }
 
 export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult {
