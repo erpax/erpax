@@ -38,8 +38,8 @@ import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
-import {
 import { emitPoCreated } from '@/hooks/chainEventEmitters'
+import {
   multiTenancyField,
   currencyField,
   statusField,
