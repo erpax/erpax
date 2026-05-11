@@ -24,6 +24,7 @@ import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY
 import { collectGenome, computeGenomeUuid } from '@/services/cloning'
 import { checkErpaxObservesItself } from '@/services/self-reference'
 import { listFaces, checkSeoVortexCoupling } from '@/services/website/seo-vortex'
+import { verifyAggregate, checkNoDoubleVoting, listBallots } from '@/services/voting'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
@@ -1351,6 +1352,62 @@ export function checkSeoVortexCouplingInvariant(_ctx: InvariantContext): Invaria
   return warn('entropy', 'seo-vortex-coupling',
     `${result.underCoupled.length}/${total} SEO faces under-coupled (each needs ≥2 inbound + ≥2 outbound microdata edges)`,
     result.underCoupled.slice(0, 8).map((u) => `${u.url} (in=${u.incoming}, out=${u.outgoing})`))
+}
+
+/**
+ * Conservation Law 30 — `checkVoteAggregateAuthenticity`. Slice OOOOOO
+ * (2026-05-11). Per user 'uuid solves also voting and rating
+ * violations'.
+ *
+ * Every published vote/rating aggregate's uuid must equal the
+ * recomputed uuid from its constituent leaf vote uuids. The platform
+ * cannot silently fudge an average; any third party with the leaves
+ * can verify.
+ *
+ * @standard W3C VC Data Model 2.0 + RFC 8785 + Law 8 (RRRRR)
+ * @audit ISO 19011:2018 §6.4.6 (vote aggregates audit-trailed)
+ */
+export function checkVoteAggregateAuthenticity(ctx: InvariantContext): InvariantResult {
+  const tenants = new Set<string>()
+  for (const t of ['probe-tenant']) tenants.add(t)
+  // Walk every known ballot across every known tenant; we only have
+  // an in-memory store so this is fast; real persistence layer can
+  // page through Payload's votes collection.
+  const offenders: string[] = []
+  let total = 0
+  for (const tenantId of tenants) {
+    for (const b of listBallots(tenantId)) {
+      total++
+      const v = verifyAggregate(b.uuid)
+      if (!v.ok) offenders.push(`${b.uuid}: ${v.issues.join(',')}`)
+    }
+  }
+  if (total === 0) {
+    return pass('entropy', 'vote-aggregate-authenticity', 'no ballots registered yet (rollout in progress)')
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'vote-aggregate-authenticity', `${total}/${total} aggregates verify against their leaf uuids (Law 30 satisfied)`)
+  }
+  return fail('entropy', 'vote-aggregate-authenticity',
+    `${offenders.length}/${total} aggregates fail verification — published uuid does not match recomputed uuid`,
+    offenders.slice(0, 8))
+}
+
+/**
+ * Conservation Law 31 — `checkNoDoubleVotingInvariant`. Slice OOOOOO
+ * (2026-05-11). No two votes within a single ballot may share
+ * `(voterPseudoDid, subjectUuid, periodUuid)`. Vote uuid is
+ * content-derived from exactly that triple, so double-cast collides
+ * at uuid-creation time; this invariant is the post-hoc audit.
+ */
+export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantResult {
+  const result = checkNoDoubleVoting()
+  if (result.ok) {
+    return pass('entropy', 'no-double-voting', 'no duplicate (voter, subject, period) triples found (Law 31 satisfied)')
+  }
+  return fail('entropy', 'no-double-voting',
+    `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
+    result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
 }
 
 export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult {

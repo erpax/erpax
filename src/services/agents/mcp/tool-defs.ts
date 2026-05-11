@@ -40,6 +40,11 @@ import {
   validateMicrodata, type SeoVortexFace, type SchemaType, type OgType,
 } from '@/services/website/seo-vortex'
 import { SHADCN_SURFACE_MAP, shadcnSurfaceFor, allRequiredShadcnComponents, type SiteSurface } from '@/services/website/shadcn-components'
+import {
+  createBallot, castVote, computeAggregate, verifyAggregate,
+  listBallots, listVotes, getBallot, getAggregate, exportBallotBundle,
+  derivePseudoDid, checkNoDoubleVoting, type BallotKind, type VoteValue,
+} from '@/services/voting'
 import type { AgentRegistry } from '@/services/agents/types'
 
 export interface ErpaxMcpTool {
@@ -675,6 +680,95 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       },
       async handler({ surface }) {
         return json(shadcnSurfaceFor(surface as SiteSurface) ?? { ok: false, reason: 'unknown surface' })
+      },
+    },
+    // ── Slice OOOOOO — voting/rating uuid coupling (Laws 30 + 31) ──
+    {
+      name: 'erpax.voting.createBallot',
+      description: 'Slice OOOOOO: create a content-addressable ballot. Returns the ballot uuid. Subject can be any tamper-proof object uuid; periodUuid separates voting rounds (also drives the per-period pseudo-DID).',
+      parameters: {
+        tenantId: z.string(), subjectUuid: z.string(), periodUuid: z.string(),
+        kind: z.enum(['binary', 'choice-one', 'rank', 'rating-1to5', 'rating-1to10', 'sentiment-pos-neg']),
+        choices: z.array(z.string()).optional(),
+        opensAt: z.string(), closesAt: z.string(),
+      },
+      async handler(args) {
+        const ballot = createBallot({
+          tenantId: args.tenantId as string,
+          subjectUuid: args.subjectUuid as string,
+          periodUuid: args.periodUuid as string,
+          kind: args.kind as BallotKind,
+          choices: (args.choices as string[]) ?? [],
+          opensAt: args.opensAt as string,
+          closesAt: args.closesAt as string,
+        })
+        return json(ballot)
+      },
+    },
+    {
+      name: 'erpax.voting.castVote',
+      description: 'Slice OOOOOO: cast a vote against a ballot. Vote uuid is derived from (ballotUuid, voterPseudoDid, subjectUuid, periodUuid, value); double-cast returns duplicate-vote (Law 31). Voter master DID is hashed with periodUuid to a pseudo-DID — cross-period unlinkability.',
+      parameters: {
+        ballotUuid: z.string(),
+        voterMasterDid: z.string(),
+        value: z.record(z.unknown()),
+        signature: z.string(),
+        castAt: z.string().optional(),
+      },
+      async handler(args) {
+        return json(castVote({
+          ballotUuid: args.ballotUuid as string,
+          voterMasterDid: args.voterMasterDid as string,
+          value: args.value as unknown as VoteValue,
+          signature: args.signature as string,
+          castAt: args.castAt as string | undefined,
+        }))
+      },
+    },
+    {
+      name: 'erpax.voting.computeAggregate',
+      description: 'Slice OOOOOO: compute and persist the ballot aggregate. Aggregate uuid = content-uuid({tenantId, ballotUuid, sorted leaf uuids, tally, weightedAverage, closedAt}). Anyone with the leaves can recompute (Law 30).',
+      parameters: { ballotUuid: z.string(), closedAt: z.string().optional() },
+      async handler({ ballotUuid, closedAt }) {
+        return json(computeAggregate(ballotUuid as string, closedAt as string | undefined))
+      },
+    },
+    {
+      name: 'erpax.voting.verifyAggregate',
+      description: 'Conservation Law 30 — verify a published aggregate by re-deriving its uuid from leaves. Returns ok=false + issue list if any leaf is tampered (Law 8) or if the aggregate uuid does not match.',
+      parameters: { ballotUuid: z.string() },
+      async handler({ ballotUuid }) { return json(verifyAggregate(ballotUuid as string)) },
+    },
+    {
+      name: 'erpax.voting.checkNoDoubleVoting',
+      description: 'Conservation Law 31 — scan every recorded vote and report duplicate (ballot, voterPseudoDid, subjectUuid) triples. Should always return ok=true since vote uuid derivation collides at cast-time; this is the post-hoc auditor.',
+      parameters: {},
+      async handler() { return json(checkNoDoubleVoting()) },
+    },
+    {
+      name: 'erpax.voting.listBallots',
+      description: 'List all ballots for a tenant (in-memory store; production layer pages through Payload).',
+      parameters: { tenantId: z.string() },
+      async handler({ tenantId }) { return json(listBallots(tenantId as string)) },
+    },
+    {
+      name: 'erpax.voting.listVotes',
+      description: 'List all votes for a ballot (with their content uuids — verifiable individually via Law 8).',
+      parameters: { ballotUuid: z.string() },
+      async handler({ ballotUuid }) { return json(listVotes(ballotUuid as string)) },
+    },
+    {
+      name: 'erpax.voting.exportBallotBundle',
+      description: 'Slice OOOOOO: emit a JCS-canonicalised JSON bundle of {ballot, votes, aggregate} for federation broadcast (slice AAAAAA) or external audit. Receivers can re-derive every uuid.',
+      parameters: { ballotUuid: z.string() },
+      async handler({ ballotUuid }) { return text(exportBallotBundle(ballotUuid as string)) },
+    },
+    {
+      name: 'erpax.voting.derivePseudoDid',
+      description: 'Slice OOOOOO: HKDF-style derivation of a voter\'s per-period pseudo-DID. Two votes by the same master DID in two different periods are statistically unlinkable without the master DID.',
+      parameters: { voterMasterDid: z.string(), ballotPeriodUuid: z.string() },
+      async handler({ voterMasterDid, ballotPeriodUuid }) {
+        return json({ pseudoDid: derivePseudoDid(voterMasterDid as string, ballotPeriodUuid as string) })
       },
     },
     {

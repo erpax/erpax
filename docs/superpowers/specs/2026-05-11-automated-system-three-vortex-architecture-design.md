@@ -568,6 +568,52 @@ Two new tools so agents + external clients can introspect the UI inventory:
 
 @standard shadcn/ui (Radix UI + Tailwind CSS); W3C WAI-ARIA 1.2 + WCAG 2.2 AA; W3C Open Graph + Schema.org (carried by surrounding pages).
 
+## 0j. UUID solves voting + rating violations
+
+Per user 'uuid solves also voting and rating violations'. Voting and rating systems are notoriously gameable: double-voting, sockpuppet stuffing, post-cast tampering, retroactive rating drift, aggregate fudging, anonymity collisions, cross-tenant pollution. **Content-addressable uuids (Law 8 — RRRRR) make every one of those violations a uuid mismatch** — i.e. detectable by any third party with read access, without trusting the platform.
+
+### The seven violations and how uuid solves each
+
+| Violation | uuid mechanism | Conservation law |
+|---|---|---|
+| **Double-voting** | Vote uuid = uuidv5({voterPseudoDid, subjectUuid, periodUuid, value}); a second cast collides at uuid creation; storage uniqueness is the duplicate guard | Law 31 |
+| **Vote tampering** | Vote uuid recomputable from value; mutation breaks uuid (Law 8 applied to votes) | Law 8 (RRRRR) |
+| **Vote stuffing** | Each vote requires voter's DID signature (DDDDDD); stuffed votes lack the signature or reference a non-existent voter | Law 8 + DDDDDD |
+| **Rating drift** | Rating series is append-only by uuid; bitemporal trail via Law 11; optional BBBBBB anchoring for high-stakes (credit/ESG ratings) | Law 11 |
+| **Aggregate fudging** | Aggregate uuid is content-derived from sorted leaf uuids; recomputable by anyone with the leaves | **Law 30 (NEW)** |
+| **Anonymity collisions** | voterDid is hashed with periodUuid (HKDF-style) → per-period pseudo-DID; cross-period correlation requires breaking SHA-256 | derivePseudoDid (`crypto.createHash('sha256')`) |
+| **Cross-tenant pollution** | tenantId is part of vote-uuid content; cross-tenant votes have different uuids by construction | Law 9 (multi-tenant isolation) |
+
+### Two new conservation laws
+
+**Law 30 — `checkVoteAggregateAuthenticity`**: every published aggregate's uuid must equal the recomputed uuid from its constituent leaves. The platform cannot silently fudge an average; any third party with the leaves can verify. Ships in slice OOOOOO via `verifyAggregate(ballotUuid)`.
+
+**Law 31 — `checkNoDoubleVotingInvariant`**: no two votes within a single ballot may share `(voterPseudoDid, subjectUuid, periodUuid)`. Vote uuid is derived from exactly that triple, so double-cast collides at uuid creation; this invariant is the post-hoc audit.
+
+### MCP surface (slice OOOOOO)
+
+Nine new tools, all callable from internal agents and external MCP clients:
+
+| Tool | Purpose |
+|---|---|
+| `erpax.voting.createBallot` | Open a content-addressable ballot (kind: binary / choice-one / rank / rating-1to5/10 / sentiment) |
+| `erpax.voting.castVote` | Cast a vote — uuid-collision protects against duplicates (Law 31) |
+| `erpax.voting.computeAggregate` | Compute and persist the published aggregate (uuid derived from sorted leaves) |
+| `erpax.voting.verifyAggregate` | Conservation Law 30 — re-derive aggregate uuid from leaves |
+| `erpax.voting.checkNoDoubleVoting` | Conservation Law 31 — post-hoc duplicate scan |
+| `erpax.voting.listBallots` | List ballots per tenant |
+| `erpax.voting.listVotes` | List votes for a ballot (each vote uuid individually verifiable via Law 8) |
+| `erpax.voting.exportBallotBundle` | JCS-canonicalised {ballot, votes, aggregate} bundle for federation (AAAAAA) / external audit |
+| `erpax.voting.derivePseudoDid` | HKDF derivation of per-period pseudo-DID for a voter — cross-period unlinkability |
+
+### Why this matters for ERPax
+
+Voting + rating surface across many ERPax domains: change-request approvals (operations), board votes (governance), supplier ratings (procurement), customer satisfaction (CRM), workflow approvals (HHHH), feature-flag rollout consensus (engineering), proposal-prioritisation (meta-skill agent — QQQQQ). Each one historically required a trusted aggregator. With slice OOOOOO, the aggregator is replaced by **a uuid that recomputes the same value from the same leaves on every machine** — the platform becomes verifiable instead of trusted.
+
+### Standards anchoring
+
+@standard W3C VC Data Model 2.0 (votes/ratings as verifiable claims); W3C DID Core v1.0 (voter identity); RFC 4122 §4.3 + RFC 8785 (content-derived uuids); ISO/IEC 25010:2023 §5.6 security — non-repudiation; ISO 19011:2018 §6.4.6 (every vote/rating audit-trailed).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

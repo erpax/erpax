@@ -111,6 +111,8 @@ export async function runAllInvariants(
     results.push(C.checkGenomeDeterministic(ctx))             // Law 24 — HHHHHH
     results.push(C.checkErpaxObservesSelf(ctx))               // Law 23 — GGGGGG
     results.push(C.checkSeoVortexCouplingInvariant(ctx))      // Law 29 — NNNNNN
+    results.push(C.checkVoteAggregateAuthenticity(ctx))       // Law 30 — OOOOOO
+    results.push(C.checkNoDoubleVotingInvariant(ctx))         // Law 31 — OOOOOO
   }
 
   return {
