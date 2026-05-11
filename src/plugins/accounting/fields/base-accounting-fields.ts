@@ -81,20 +81,38 @@ import { currencyOptions as canonicalCurrencyOptions, DEFAULT_CURRENCY as CANON_
  * `fromCurrency` / `toCurrency`; defaults to `currency` for the typical
  * single-currency case. Default value is the canonical `DEFAULT_CURRENCY`
  * (EUR by house default, env-overridable via `ERPAX_DEFAULT_CURRENCY`).
+ *
+ * Slice LLLLLLLLL (2026-05-11) — `allowBlank: true` adds ISO 4217 XXX
+ * (No currency) to the option list AND forces `required: false`. The
+ * field's runtime fallback is `resolveCurrency()` from
+ * `@/services/currency-fallback` — null/empty inputs round-trip to XXX
+ * rather than throwing. Use `allowBlank: true` on collections where a
+ * provisional or non-monetary row is legitimate (drafts, imports,
+ * non-monetary lines).
  */
 export const currencyField = (
-  defaultValueOrOptions: string | { name?: string; defaultValue?: string; required?: boolean } = CANON_DEFAULT_CURRENCY,
+  defaultValueOrOptions: string | { name?: string; defaultValue?: string; required?: boolean; allowBlank?: boolean } = CANON_DEFAULT_CURRENCY,
 ): Field => {
   const opts =
     typeof defaultValueOrOptions === 'string'
       ? { defaultValue: defaultValueOrOptions }
       : defaultValueOrOptions;
+  // Slice LLLLLLLLL — when allowBlank is set, XXX joins the options
+  // and required is forced off (a required+blank-allowed pair would
+  // contradict each other). The XXX option's display label is the
+  // ISO 4217 §6.5 short name; the admin UI's translations collection
+  // override (Slice AAAAAAAAA) supplies locale-specific text.
+  const blankOption = { label: 'XXX — No currency (ISO 4217)', value: 'XXX' };
+  const includeBlank = opts.allowBlank === true;
+  const optionsList = includeBlank
+    ? [...canonicalCurrencyOptions.filter((o) => o.value !== 'XXX'), blankOption]
+    : [...canonicalCurrencyOptions];
   return {
     name: opts.name ?? 'currency',
     type: 'select',
     defaultValue: opts.defaultValue ?? CANON_DEFAULT_CURRENCY,
-    ...(opts.required ? { required: true } : {}),
-    options: [...canonicalCurrencyOptions],
+    ...(opts.required && !includeBlank ? { required: true } : {}),
+    options: optionsList,
   };
 };
 

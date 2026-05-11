@@ -68,7 +68,15 @@ export const SUPPORTED_CURRENCIES = [
   'CHF',
   'SGD',
   'HKD',
-  'USD', // ← always last
+  'USD', // ← last of the real currencies
+  // Slice LLLLLLLLL (2026-05-11) — per user 'blank currency_code still
+  // makes all work by defining the blank currency and use it as a
+  // fallback'. ISO 4217 §6.5 designates XXX (numeric 999) as 'No
+  // currency / Transactions where no currency is involved'. Including
+  // it in the canonical list lets every currency-using path treat
+  // missing/null/empty as a typed value rather than an error condition.
+  // The identity element of the currency category.
+  'XXX',
 ] as const
 
 /**

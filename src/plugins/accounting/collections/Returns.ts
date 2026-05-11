@@ -33,8 +33,14 @@ const Returns: CollectionConfig = {
   fields: [
     multiTenancyField(),
     { name: 'rmaNumber', type: 'text', required: true, unique: true, index: true },
-    { name: 'order', type: 'relationship', relationTo: 'orders', required: true },
-    { name: 'customer', type: 'relationship', relationTo: 'addresses' },
+    // Slice XXXXXXXX-c (2026-05-11): retargeted from 'orders' → 'sales-orders'.
+    // IFRS-15 §B25 right-of-return links the return RMA back to the
+    // originating customer-side sales order.
+    { name: 'order', type: 'relationship', relationTo: 'sales-orders', required: true },
+    // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
+    // Returns counterparty is the original buyer (IFRS-15 §B25 right-of-
+    // return). Address can be resolved via customer.shippingAddress.
+    { name: 'customer', type: 'relationship', relationTo: 'customers' },
     {
       name: 'reason',
       type: 'select',

@@ -20,11 +20,25 @@ import { emitDomainEvent } from '@/services/emit-domain-event'
 
 type StatusBearing = { status?: string; id: string; tenant?: string | { id: string } }
 
-/** Fire `<event>` when `previousDoc.status !== doc.status === <toStatus>`. */
-function emitOnStatusTransition(
+/** AggregateType envelope shared by every chain emit. */
+export type AggregateType =
+  | 'invoice' | 'bill' | 'payment' | 'inventory_transfer'
+  | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset'
+
+/**
+ * Fire `<event>` when `previousDoc.status !== doc.status === <toStatus>`.
+ *
+ * Exported (Slice AAAAAAAA 2026-05-11) so the accounting collection
+ * factory can build per-collection emit hooks from a structured
+ * `emits:` declaration without each collection having to author its
+ * own emitter export. The free-standing const exports below remain —
+ * they're the explicit Slice KKKK wirings used by the originally-
+ * declared business-chains.
+ */
+export function emitOnStatusTransition(
   toStatus: string,
   eventType: string,
-  aggregateType: 'invoice' | 'bill' | 'payment' | 'inventory_transfer' | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset',
+  aggregateType: AggregateType,
 ): CollectionAfterChangeHook {
   return async ({ doc, previousDoc, req }) => {
     const next = doc as StatusBearing
@@ -51,10 +65,16 @@ function emitOnStatusTransition(
   }
 }
 
-/** Fire `<event>` once on row-create regardless of status. */
-function emitOnCreate(
+/**
+ * Fire `<event>` once on row-create regardless of status.
+ *
+ * Exported (Slice AAAAAAAA 2026-05-11) for the same reason as
+ * `emitOnStatusTransition` — the factory consumes structured `emits:`
+ * declarations and dispatches to the appropriate helper.
+ */
+export function emitOnCreate(
   eventType: string,
-  aggregateType: 'invoice' | 'bill' | 'payment' | 'inventory_transfer' | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset',
+  aggregateType: AggregateType,
 ): CollectionAfterChangeHook {
   return async ({ doc, operation, req }) => {
     if (operation !== 'create') return doc

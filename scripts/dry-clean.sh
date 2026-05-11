@@ -8,7 +8,14 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 echo "=== Listing residue ==="
-find src tests -name "*.bak" -o -name "*.old" -o -name "*.orig" -o -name "*~" 2>/dev/null | tee /tmp/erpax-dry-clean-bak.txt
+# Slice XXXXXXXX (2026-05-11) — include `.fuse_hidden*` artifacts. These are
+# left by FUSE mounts (Cowork sandbox uses one) when a file is unlinked while
+# still open. Not tracked by git but they break esbuild's recursive scan
+# during `payload generate:types` (the loader trips on the zero-byte stubs).
+find src tests \
+  -name "*.bak" -o -name "*.old" -o -name "*.orig" -o -name "*~" \
+  -o -name ".fuse_hidden*" \
+  2>/dev/null | tee /tmp/erpax-dry-clean-bak.txt
 find src tests -type d \( -name "_attic" -o -name "_old" -o -name "_dead" \) 2>/dev/null | tee /tmp/erpax-dry-clean-dirs.txt
 
 count_bak=$(wc -l < /tmp/erpax-dry-clean-bak.txt | tr -d ' ')

@@ -36,6 +36,32 @@ export interface SocraticCheck {
   readonly note?: string
 }
 
+/**
+ * Producer wiring — added in Slice BBBBBBBB (2026-05-11).
+ *
+ * The chain step's `emits:` field declares WHAT event fires; the
+ * `producer:` field tells the factory HOW to fire it. When present,
+ * the accounting collection factory auto-injects the matching
+ * `emitOnCreate` / `emitOnStatusTransition` into `afterChange` for
+ * any collection whose slug matches the step's collection slug. This
+ * collapses 80+ orphan emits into one single-source-of-truth path.
+ *
+ * Omit `producer:` to mark the step as intentionally bespoke (the
+ * collection wires it manually). `checkChainEmitsHaveProducer` still
+ * warns until either a producer is added here OR the literal event
+ * id appears in `chainEventEmitters` / a direct `emitDomainEvent`.
+ */
+export interface ChainStepProducer {
+  /** Aggregate envelope on the DomainEvent. */
+  readonly aggregate:
+    | 'invoice' | 'bill' | 'payment' | 'inventory_transfer'
+    | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset'
+  /** Fire on first row-create regardless of status. Mutually exclusive with `onStatus`. */
+  readonly onCreate?: true
+  /** Fire when the doc transitions to this status value. */
+  readonly onStatus?: string
+}
+
 /** A single step in a chain. */
 export interface ChainStep {
   /** Slug of the Payload collection the step writes/reads. */
@@ -48,12 +74,28 @@ export interface ChainStep {
   readonly requires: ReadonlyArray<string>
   /** Optional human note (one line, shown in BUSINESS_CHAINS.md). */
   readonly note?: string
+  /**
+   * Slice BBBBBBBB (2026-05-11) — producer wiring. When set, the
+   * accounting collection factory auto-injects the matching hook
+   * into the step's collection. See `ChainStepProducer` above.
+   */
+  readonly producer?: ChainStepProducer
 }
 
 /** A canonical business chain entry. */
 export interface BusinessChain {
   /** UPPERCASE_SNAKE id — stable across history. */
   readonly id: string
+  /**
+   * Slice LLLLLLLL (2026-05-11) — kebab-case workflow slug used by the
+   * Playwright e2e walk-throughs + marketing/multimedia generators
+   * (erpax.marketing.generatePage, erpax.multimedia.render). When omitted,
+   * derived from `id.toLowerCase().replace(/_/g, '-')`. Provide explicitly
+   * when the historical e2e spec used a different name (e.g.
+   * P2P_THREE_WAY_MATCH used `procure-to-pay`, R2R_PERIOD_CLOSE used
+   * `record-to-report`).
+   */
+  readonly workflowSlug?: string
   /** Human-readable chain name. */
   readonly name: string
   /** Single-paragraph description shown in admin + docs. */

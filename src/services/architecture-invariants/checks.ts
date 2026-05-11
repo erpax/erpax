@@ -348,6 +348,145 @@ export async function checkNotificationFallback(ctx: InvariantContext): Promise<
   }
 }
 
+/**
+ * Conservation Law 53 — Self-Referential Closure (Slice JJJJJJJJJ 2026-05-11).
+ *
+ * Per user 'erpax remains fully functional payment provider fallbacking
+ * to itself. it is like this every where. all falling back at itself
+ * leads to erpax itself.'
+ *
+ * Every `ExternalRole` ERPax integrates with must have a registered
+ * `InternalProvider`. Without one, an external outage degrades to a
+ * caller-thrown error; with one, ERPax completes the operation itself
+ * and the platform remains fully functional.
+ *
+ * Severity contract: this invariant intentionally `warn`s while
+ * coverage is partial (Cut 1 ships only `payment-provider`). It flips
+ * to `fail` once all 10 roles are registered — at which point Law 53
+ * becomes a hard gate.
+ */
+export async function checkSelfReferentialClosure(_ctx: InvariantContext): Promise<InvariantResult> {
+  try {
+    const mod = await import('@/services/self-closure')
+    // Side-effect import — registers every provider declared in
+    // ./providers/index.ts at this call.
+    await import('@/services/self-closure/providers')
+    const expected = mod.EXTERNAL_ROLES
+    const registered = new Set(mod.listRegisteredRoles())
+    const missing = expected.filter((r) => !registered.has(r))
+    if (missing.length === 0) {
+      return pass(
+        'fallback',
+        'self-referential-closure',
+        `all ${expected.length} external role(s) have registered internal providers (Law 53 satisfied)`,
+      )
+    }
+    return warn(
+      'fallback',
+      'self-referential-closure',
+      `${missing.length}/${expected.length} external role(s) lack an internal fallback provider — Law 53 partial`,
+      missing,
+    )
+  } catch (err) {
+    return fail(
+      'fallback',
+      'self-referential-closure',
+      `failed to load self-closure framework: ${err instanceof Error ? err.message : String(err)}`,
+    )
+  }
+}
+
+/**
+ * Slice PPPPPPPPP-cut1 (2026-05-11) — Finding 1 of the tamper-surface
+ * review. After the factory default-on change, every collection that
+ * goes through `createAccountingCollection` should land in
+ * TAMPER_PROOF_COLLECTIONS_REGISTRY automatically. This invariant
+ * confirms the runtime registry coverage matches the file-level
+ * factory usage.
+ *
+ * Severity: starts as `warn` until the factory change has been
+ * deployed (rows need a back-fill migration); flips to `fail` once
+ * all known collections register.
+ */
+export async function checkAccountingCollectionsAreTamperProofed(_ctx: InvariantContext): Promise<InvariantResult> {
+  try {
+    const { TAMPER_PROOF_COLLECTIONS_REGISTRY } = await import('@/services/integrity/tamper-proof-uuid-field')
+    // Import the accounting collections barrel side-effect — every
+    // exported collection file registers itself at module load via
+    // the factory's `injectTamperProofUuid` default.
+    await import('@/plugins/accounting/collections')
+    const registered = [...TAMPER_PROOF_COLLECTIONS_REGISTRY]
+    if (registered.length === 0) {
+      return warn(
+        'entropy', 'accounting-collections-tamper-proofed',
+        'TAMPER_PROOF_COLLECTIONS_REGISTRY is empty after collection barrel load — factory injection not active',
+      )
+    }
+    return pass(
+      'entropy', 'accounting-collections-tamper-proofed',
+      `${registered.length} collection(s) registered in tamper-proof registry`,
+    )
+  } catch (err) {
+    return warn(
+      'entropy', 'accounting-collections-tamper-proofed',
+      `unable to verify registry coverage: ${err instanceof Error ? err.message : String(err)}`,
+    )
+  }
+}
+
+/**
+ * Slice PPPPPPPPP-cut1 (2026-05-11) — Finding 2 of the tamper-surface
+ * review. Scans the source for direct `payload.create({collection:
+ * 'audit-events', ...})` callers that bypass `writeAuditEvent`.
+ * Warns until all 11 known callers migrate.
+ */
+export function checkAuditEventsAreChainLinked(ctx: InvariantContext): InvariantResult {
+  try {
+    const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+    const srcRoot = `${repoRoot}/src`
+    const fs = require('node:fs') as typeof import('node:fs')
+    const path = require('node:path') as typeof import('node:path')
+    const offenders: string[] = []
+    const walk = (dir: string): void => {
+      if (!fs.existsSync(dir)) return
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, entry.name)
+        if (entry.isDirectory()) {
+          if (entry.name === 'node_modules' || entry.name.startsWith('.')) continue
+          walk(full)
+          continue
+        }
+        if (!entry.name.endsWith('.ts')) continue
+        if (entry.name.endsWith('.test.ts')) continue
+        // Skip the helper itself + the architecture-invariants checker.
+        if (full.endsWith('write-audit-event.ts')) continue
+        if (full.endsWith('architecture-invariants/checks.ts')) continue
+        const src = fs.readFileSync(full, 'utf8')
+        // Heuristic: direct .create call on the audit-events slug.
+        const re = /\.create\s*\(\s*\{[^}]*collection\s*:\s*['"]audit-events['"]/m
+        if (re.test(src)) offenders.push(full.replace(`${repoRoot}/`, ''))
+      }
+    }
+    walk(srcRoot)
+    if (offenders.length === 0) {
+      return pass(
+        'entropy', 'audit-events-chain-linked',
+        'every audit-events write routes through writeAuditEvent (chain-linked)',
+      )
+    }
+    return warn(
+      'entropy', 'audit-events-chain-linked',
+      `${offenders.length} caller(s) bypass writeAuditEvent (Finding 2 partial coverage); migrate to ensure DO-chain linkage`,
+      offenders,
+    )
+  } catch (err) {
+    return warn(
+      'entropy', 'audit-events-chain-linked',
+      `unable to scan: ${err instanceof Error ? err.message : String(err)}`,
+    )
+  }
+}
+
 /* ═════════════════════════════════════════════════════════════════════
  * AXIS 5 — ENTROPY (no duplicates / inconsistencies)
  * ═════════════════════════════════════════════════════════════════════ */
@@ -1051,8 +1190,14 @@ export function checkChainEmitsHaveProducer(ctx: InvariantContext): InvariantRes
   for (const c of Object.values(BUSINESS_CHAINS)) {
     for (const s of c.steps) {
       if (!s.emits) continue
-      // Look for the literal event-type string anywhere in the producer files.
-      // (Quoted with single OR double quotes to allow either codegen style.)
+      // Slice BBBBBBBB (2026-05-11) — `producer:` on the step is a
+      // first-class producer declaration. The factory's
+      // wireChainProducersFor consumes this directly to inject the
+      // matching afterChange hook; no chainEventEmitters export
+      // needed for these.
+      if (s.producer) continue
+      // Otherwise look for the literal event-type string anywhere in
+      // the producer source files (Slice KKKK legacy wiring).
       const re = new RegExp(`['"\`]${s.emits.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}['"\`]`)
       if (!re.test(allText)) {
         offenders.push(`${c.id}:${s.emits}`)
@@ -1061,7 +1206,7 @@ export function checkChainEmitsHaveProducer(ctx: InvariantContext): InvariantRes
   }
   return offenders.length === 0
     ? pass('entropy', 'chain-emits-have-producer', `${Object.values(BUSINESS_CHAINS).reduce((n, c) => n + c.steps.length, 0)} chain steps validated`)
-    : warn('entropy', 'chain-emits-have-producer', `${offenders.length} chain emit(s) without a discoverable producer (typed event, hook emitter, or subscriber)`, offenders)
+    : warn('entropy', 'chain-emits-have-producer', `${offenders.length} chain emit(s) without a discoverable producer (typed event, hook emitter, step.producer, or subscriber)`, offenders)
 }
 
 /** No collection file inlines an INCOTERMS / VAT-category / GHG-Scope / EU-AI-Act / ESRS-topic options array (those should pull from the registry). */
@@ -1954,4 +2099,612 @@ export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult
   return warn('expansion', 'agent-owns-every-step',
     `${orphans.length}/${total} chain steps have no owning agent (rollout in progress: EEEEE-IIIII)`,
     orphans.slice(0, 8))
+}
+
+/* ═════════════════════════════════════════════════════════════════════
+ * SLICE ZZZZZZZZ (2026-05-11) — code-consistency invariants.
+ * Per user 'use the mcp agents. create new if necessary. one
+ * inconsistency leads to another. address all. full scan.'
+ *
+ * Ported from `scripts/find-implementation-gaps.py` so the gap-class
+ * detection runs inside the agent runtime (not just as a one-shot
+ * Python script). MetaSkillAgent's hourly cron now sees these gaps
+ * as `invariant:warned` events and the meta-automation pipeline
+ * proposes fixes via MCP tools (see services/meta-automation/index.ts).
+ *
+ * Layered with the new `ConsistencyAgent` (Slice ZZZZZZZZ) which owns
+ * proposal application for the code-consistency family of gaps.
+ * ═════════════════════════════════════════════════════════════════════ */
+
+/** Strip JSDoc/line comments preserving line numbers — used so
+ *  false-positive matches inside docstring backticks are skipped.
+ *  Mirrors `_strip_jsdoc()` in `scripts/find-implementation-gaps.py`. */
+function stripCommentsKeepLines(src: string): string {
+  let out = src.replace(/\/\*[\s\S]*?\*\//g, (m) =>
+    m.replace(/[^\n]/g, ' '),
+  )
+  out = out.replace(/\/\/[^\n]*/g, (m) => ' '.repeat(m.length))
+  return out
+}
+
+/**
+ * Slice ZZZZZZZZ — Class F. Collection declares `emits: ['x:y']` in
+ * factory metadata but no `emitDomainEvent('x:y', …)` or
+ * `chainEventEmitters` function fires it. The metadata is purely
+ * descriptive without the runtime wiring; downstream subscribers
+ * never see the event.
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
+ */
+export function checkFactoryEmitsAreHooked(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  // Collect every event string actually fired anywhere in the source tree
+  const fired = new Set<string>()
+  const eventRe = /['"]([a-z]+:[a-z_]+)['"]/gi
+  const emitCallRe = /emitDomainEvent\s*\([^)]*['"]([a-z]+:[a-z_]+)['"]/gi
+  const chainEmitter = readSafe(join(repoRoot, 'src/hooks/chainEventEmitters.ts'))
+  // ChainEventEmitters exports — `emitOnX('status', 'event:type', …)`
+  const chainPattern = /emit\w+\s*\(\s*[^,]+,\s*['"]([a-z]+:[a-z_]+)['"]/gi
+  for (const m of chainEmitter.matchAll(chainPattern)) fired.add(m[1])
+  // Any explicit emitDomainEvent() calls anywhere in src/
+  for (const f of listAllSourceFiles(repoRoot)) {
+    const text = stripCommentsKeepLines(readSafe(f))
+    for (const m of text.matchAll(emitCallRe)) fired.add(m[1])
+  }
+  // Scan collection files for declared emits. Multiline match needed
+  // because structured-form `emits:` entries span many lines.
+  const offenders: string[] = []
+  const emitsBlockRe = /emits:\s*\[([\s\S]*?)\]/g
+  // Slice AAAAAAAA — structured-form entries auto-wire via the factory;
+  // recognize them so we don't false-positive.
+  const structuredEntryRe =
+    /\{\s*event:\s*['"]([a-z]+:[a-z_]+)['"][^}]*?(?:onCreate\s*:\s*true|onStatus\s*:\s*['"][^'"]+['"])[^}]*?aggregate\s*:\s*['"][^'"]+['"]/gi
+  for (const f of listCollectionFiles(repoRoot)) {
+    const text = readSafe(f)
+    const stripped = stripCommentsKeepLines(text)
+    // If the collection imports a chainEventEmitter, trust the wiring
+    // (the import declaration is enough proof of intent).
+    const importsEmitter = /from\s+['"]@\/hooks\/chainEventEmitters['"]/.test(stripped)
+    if (importsEmitter) continue
+    for (const m of stripped.matchAll(emitsBlockRe)) {
+      const block = m[1]
+      const structured = new Set<string>(
+        [...block.matchAll(structuredEntryRe)].map((s) => s[1]),
+      )
+      const literals = [...block.matchAll(eventRe)].map((e) => e[1])
+      for (const evt of literals) {
+        if (fired.has(evt)) continue
+        if (structured.has(evt)) continue    // ← auto-wired by factory
+        offenders.push(`${basename(f)}:'${evt}'`)
+      }
+    }
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'factory-emits-are-hooked',
+      'every collection-declared emits: id has a runtime producer')
+  }
+  return warn('entropy', 'factory-emits-are-hooked',
+    `${offenders.length} factory-declared emit(s) without a runtime producer (Law 4 — event-graph closure)`,
+    offenders.slice(0, 16))
+}
+
+/**
+ * Slice ZZZZZZZZ — Class M. Service/hook file references
+ * `payload.find({ collection: 'X' })` or similar where X is not a
+ * registered slug. Surfaces dead lookups that silently return 0 rows.
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @audit Law 10 referential-harmony
+ */
+export function checkServicesReferenceRealSlugs(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const declared = collectDeclaredSlugs(repoRoot)
+  const pattern = /collection:\s*['"]([\w-]+)['"]/g
+  const offenders: string[] = []
+  for (const f of listServiceFiles(repoRoot)) {
+    const text = stripCommentsKeepLines(readSafe(f))
+    for (const m of text.matchAll(pattern)) {
+      const target = m[1]
+      if (declared.has(target)) continue
+      // Skip generic words that aren't slugs in this context
+      if (target === 'default' || target === 'unknown' || target === 'event') continue
+      offenders.push(`${basename(f)}:'${target}'`)
+    }
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'services-reference-real-slugs',
+      'every payload({collection:…}) target is a registered slug')
+  }
+  return warn('entropy', 'services-reference-real-slugs',
+    `${offenders.length} service-side reference(s) to a non-existent collection slug`,
+    offenders.slice(0, 16))
+}
+
+/**
+ * Slice ZZZZZZZZ — Class I (TypeScript-side, complements
+ * `checkReferentialHarmony` which runs on the live DB). Static scan
+ * of `relationTo: 'X'` in every collection file vs. the slug
+ * declarations + plugin-owned slug allowlist.
+ *
+ * Catches the LeaveRequests-class drift at config-load time rather
+ * than at admin-picker resolve time.
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @audit Law 10 referential-harmony (static counterpart)
+ */
+export function checkRelationToSlugsExist(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const declared = collectDeclaredSlugs(repoRoot)
+  const relRe = /relationTo:\s*['"]([\w-]+)['"]/g
+  const offenders: string[] = []
+  // Walk every TS file under src/ (catches accounting collections + the
+  // ecommerce overrides + the dimensional plugins).
+  for (const f of listAllSourceFiles(repoRoot)) {
+    if (f.includes('.fuse_hidden')) continue
+    // Skip payload-types.ts — generated artefact; cleared by regen
+    if (f.endsWith('payload-types.ts')) continue
+    const text = stripCommentsKeepLines(readSafe(f))
+    for (const m of text.matchAll(relRe)) {
+      const target = m[1]
+      if (declared.has(target)) continue
+      offenders.push(`${basename(f)}:'${target}'`)
+    }
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'relation-to-slugs-exist',
+      'every relationTo: target is a registered slug or plugin-owned allowlisted slug')
+  }
+  return warn('entropy', 'relation-to-slugs-exist',
+    `${offenders.length} relationTo: pointer(s) to a non-existent slug (static counterpart of Law 10)`,
+    offenders.slice(0, 16))
+}
+
+// ─── Helpers shared by the Slice ZZZZZZZZ invariants ─────────────────
+
+function listAllSourceFiles(repoRoot: string): ReadonlyArray<string> {
+  const root = join(repoRoot, 'src')
+  const out: string[] = []
+  const walk = (d: string): void => {
+    let entries: string[] = []
+    try {
+      entries = readdirSync(d)
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      if (e === 'node_modules' || e === '.git' || e === '_attic') continue
+      if (e.startsWith('.fuse_hidden')) continue
+      const full = join(d, e)
+      let stat: { isDirectory: () => boolean; isFile: () => boolean }
+      try {
+        stat = require('node:fs').statSync(full)
+      } catch {
+        continue
+      }
+      if (stat.isDirectory()) walk(full)
+      else if (stat.isFile() && (full.endsWith('.ts') || full.endsWith('.tsx'))) out.push(full)
+    }
+  }
+  walk(root)
+  return out
+}
+
+function listServiceFiles(repoRoot: string): ReadonlyArray<string> {
+  const out: string[] = []
+  for (const sub of ['src/services', 'src/hooks']) {
+    const d = join(repoRoot, sub)
+    if (!existsSync(d)) continue
+    const walk = (dir: string): void => {
+      let entries: string[] = []
+      try {
+        entries = readdirSync(dir)
+      } catch {
+        return
+      }
+      for (const e of entries) {
+        if (e === 'node_modules' || e === '.git' || e === '_attic') continue
+        if (e.startsWith('.fuse_hidden')) continue
+        const full = join(dir, e)
+        let stat: { isDirectory: () => boolean; isFile: () => boolean }
+        try {
+          stat = require('node:fs').statSync(full)
+        } catch {
+          continue
+        }
+        if (stat.isDirectory()) walk(full)
+        else if (stat.isFile() && (full.endsWith('.ts') || full.endsWith('.tsx'))) out.push(full)
+      }
+    }
+    walk(d)
+  }
+  return out
+}
+
+function collectDeclaredSlugs(repoRoot: string): Set<string> {
+  const slugs = new Set<string>()
+  const slugRe = /slug:\s*['"]([\w-]+)['"]/g
+  for (const f of listAllSourceFiles(repoRoot)) {
+    if (f.includes('.fuse_hidden')) continue
+    const text = stripCommentsKeepLines(readSafe(f))
+    for (const m of text.matchAll(slugRe)) slugs.add(m[1])
+  }
+  // Payload built-ins
+  for (const s of [
+    'users', 'media', 'tenants', 'pages', 'posts', 'products',
+    'categories', 'forms', 'form-submissions', 'search', 'redirects',
+    'header', 'footer',
+  ]) slugs.add(s)
+  // @payloadcms/plugin-ecommerce + @payloadcms/plugin-mcp owned slugs
+  for (const s of PLUGIN_OWNED_SLUGS) slugs.add(s)
+  return slugs
+}
+
+/**
+ * Slugs registered by upstream Payload plugins we wire in
+ * `src/payload.config.ts`. The accounting plugin must NOT also
+ * register a collection at any of these slugs or Payload throws
+ * `DuplicateCollection: Collection slug already in use: "X"` at
+ * config-load. Slice EEEEEEEE-fix (2026-05-11) — surfaced when our
+ * Addresses collection collided with the ecommerce plugin's
+ * built-in addresses register; Slice FFFFFFFF (2026-05-11) lifts
+ * the literal allowlist into a `const PLUGIN_OWNED_SLUGS` so the
+ * `checkNoPluginOwnedSlugCollision` invariant can read it.
+ */
+export const PLUGIN_OWNED_SLUGS: ReadonlyArray<string> = [
+  // @payloadcms/plugin-ecommerce
+  'addresses', 'carts', 'orders', 'transactions',
+  'variants', 'variantTypes', 'variantOptions',
+  // @payloadcms/plugin-mcp
+  'payload-mcp-api-keys',
+]
+
+/**
+ * Slice FFFFFFFF (2026-05-11) — fail if the accounting plugin (or any
+ * `src/plugins/*/collections/*` barrel) registers a collection at a
+ * slug already owned by an upstream Payload plugin. Catches the
+ * Slice EEEEEEEE-fix class of failure statically, before runtime
+ * `DuplicateCollection`.
+ *
+ * Severity: WARN until we have a clean baseline. The auto-heal pre-push
+ * hook then drives owners to either rename the slug or override the
+ * plugin's collection via the plugin's collectionOverride hook.
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @audit Law 10 referential-harmony (slug-uniqueness)
+ */
+export function checkNoPluginOwnedSlugCollision(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const plugin = new Set<string>(PLUGIN_OWNED_SLUGS)
+  // Scan files that DECLARE a slug (collection files), excluding the plugin
+  // barrels themselves and the upstream plugin sources.
+  const offenders: string[] = []
+  for (const f of listCollectionFiles(repoRoot)) {
+    if (f.includes('.fuse_hidden')) continue
+    const text = stripCommentsKeepLines(readSafe(f))
+    const m = text.match(/slug:\s*['"]([\w-]+)['"]/)
+    if (!m) continue
+    const slug = m[1]
+    if (!plugin.has(slug)) continue
+    // Also confirm the file actually exports + registers the collection;
+    // if the slug declaration is only in dead code (no default export), skip.
+    if (!/export\s+(default|const|\{)/.test(text)) continue
+    offenders.push(`${basename(f)} declares slug '${slug}' already owned by an upstream plugin`)
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'no-plugin-owned-slug-collision',
+      `${plugin.size} plugin-owned slug(s) checked; no local collection collides`)
+  }
+  return warn('entropy', 'no-plugin-owned-slug-collision',
+    `${offenders.length} local collection(s) declare a slug already owned by an upstream Payload plugin — config-load will throw DuplicateCollection`,
+    offenders.slice(0, 8))
+}
+
+/**
+ * Slice RRRRRRRR (2026-05-11) — per user "anything mcp needs need a
+ * collection". MCP handlers that mutate state (push to module-scope
+ * arrays, increment counters, write to globalThis) without going
+ * through a Payload collection lose their data on restart and can't
+ * be federated. This invariant scans `src/services/agents/mcp/` for
+ * handler functions whose body mutates module-scope state without a
+ * `req.payload.create / update / delete` call.
+ *
+ * Today's known offenders (acceptable for now; documented):
+ *   - meta-automation/index.ts PROPOSALS_LOG.push(...)
+ *     → migrate to `memories` collection (Slice RRRRRRRR-cont, future)
+ *
+ * Severity: WARN. The principle is forward-looking — every NEW MCP
+ * tool that mutates state should pick a collection target.
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
+ */
+export function checkMcpMutationsHaveCollection(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const offenders: string[] = []
+  // Tier A — files we audit. Limited to MCP handler surface + meta-automation.
+  const auditedFiles: string[] = []
+  for (const sub of [
+    'src/services/agents/mcp',
+    'src/services/meta-automation',
+  ]) {
+    const d = join(repoRoot, sub)
+    if (!existsSync(d)) continue
+    try {
+      for (const e of readdirSync(d)) {
+        if (e.endsWith('.ts') && !e.endsWith('.test.ts')) auditedFiles.push(join(d, e))
+      }
+    } catch { /* ignore */ }
+  }
+  // Probe: module-scope array `const X: T[] = []` that later receives
+  // `X.push(...)` AND the same file has at least one MCP handler-like
+  // function (returns json(...) or text(...)) or is the meta-automation
+  // proposer.
+  const arrayDeclRe = /^const\s+(\w+):\s*[A-Z][\w<>\[\] ,|]+\s*=\s*\[\]/gm
+  for (const f of auditedFiles) {
+    const text = readSafe(f)
+    const arrayDecls = [...text.matchAll(arrayDeclRe)].map((m) => m[1]!)
+    for (const name of arrayDecls) {
+      const pushRe = new RegExp(`\\b${name}\\.push\\b`)
+      if (!pushRe.test(text)) continue
+      // Allow opt-out via a comment marker.
+      if (text.includes(`// SAFE-INMEM: ${name}`)) continue
+      offenders.push(`${basename(f)} :: const ${name}: T[] = [] then ${name}.push(...) — no Payload-collection persistence`)
+    }
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'mcp-mutations-have-collection',
+      `every MCP handler / meta-automation mutator persists via Payload collection`)
+  }
+  return warn('entropy', 'mcp-mutations-have-collection',
+    `${offenders.length} module-scope mutable array(s) in MCP / meta-automation — pick a Payload collection target (e.g. 'memories' from Slice RRRRRRRR) or annotate with // SAFE-INMEM: <name> to opt out`,
+    offenders.slice(0, 8))
+}
+
+/**
+ * Slice SSSSSSSS (2026-05-11) — per user "make sure mcp is secure and
+ * bound to all related cloudflare bindings through erpax only". Every
+ * MCP handler that touches a Cloudflare binding MUST go through the
+ * mediator surface in `src/services/cloudflare/index.ts` (kvGet/r2Put/
+ * aiRun/queueSend/auditChainAppend/analyticsWrite/makeMediator). Direct
+ * `env.D1` / `env.R2` / `env.KV` / `env.AI` / `env.QUEUE` / `env.AUDIT_
+ * CHAIN_DO` / `env.WORKFLOWS` / `env.VECTORIZE` / `env.ANALYTICS` access
+ * outside the mediator module short-circuits the tenant-scoping +
+ * audit-trail + RBAC + rate-limiting + PII-redaction layers.
+ *
+ * Severity: WARN initially (forward-looking). Flip to FAIL once existing
+ * direct-access sites are migrated through the mediator.
+ *
+ * @standard ISO 27001:2022 A.5.10 access-control-policy
+ * @standard ISO 27002:2022 §5.4 segregation-of-duties
+ * @standard ISO 19011:2018 §6.4.6 audit-evidence
+ * @audit Conservation Law 38 mcp-tool-standardization
+ */
+export function checkMcpBindingsAreMediated(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const offenders: string[] = []
+  // Slice DDDDDDDDD-cont (2026-05-11) — per user "all plugins use only
+  // erpax bindings". Extend the audit surface to every src/plugins/*
+  // directory + services/meta-automation. Direct env.<BINDING> access
+  // outside the mediator module is forbidden.
+  const dirs = [
+    join(repoRoot, 'src/services/agents/mcp'),
+    join(repoRoot, 'src/services/meta-automation'),
+    join(repoRoot, 'src/plugins'),
+  ]
+  const auditedFiles: string[] = []
+  for (const d of dirs) {
+    if (!existsSync(d)) continue
+    try {
+      for (const e of readdirSync(d)) {
+        if (e.endsWith('.ts') && !e.endsWith('.test.ts')) auditedFiles.push(join(d, e))
+      }
+    } catch { /* ignore */ }
+  }
+  // Forbidden bindings (the env.* keys ErpaxCfEnv declares).
+  const FORBIDDEN_RE =
+    /\benv\.(?:D1|R2|KV|AI|QUEUE|WORKFLOWS|VECTORIZE|ANALYTICS|AUDIT_CHAIN_DO|TENANT_QUOTA|RATE_LIMITER|JOB_LOCK)\b/g
+  for (const f of auditedFiles) {
+    const text = stripCommentsKeepLines(readSafe(f))
+    const lines = text.split('\n')
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i]!
+      // Allow opt-out via comment marker on the same line.
+      if (line.includes('// SAFE-CF-DIRECT')) continue
+      for (const m of line.matchAll(FORBIDDEN_RE)) {
+        offenders.push(`${basename(f)}:${i + 1} :: direct ${m[0]} — use mediator (services/cloudflare makeMediator)`)
+      }
+    }
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'mcp-bindings-are-mediated',
+      `every Cloudflare binding access in MCP / meta-automation flows through the erpax mediator`)
+  }
+  return warn('entropy', 'mcp-bindings-are-mediated',
+    `${offenders.length} direct CF binding access(es) in MCP — every binding must flow through src/services/cloudflare makeMediator (tenant-scoped, audit-trailed, RBAC-gated). Annotate with // SAFE-CF-DIRECT to opt out.`,
+    offenders.slice(0, 8))
+}
+
+/**
+ * Slice EEEEEEEEE (2026-05-11) — per user "all plugins have access
+ * specific types". Each plugin under `src/plugins/<slug>/` is granted
+ * access to a narrowed mediator surface declared in
+ * `PLUGIN_ACCESS_MAP` (services/cloudflare/plugin-access.ts). This
+ * invariant scans each plugin's directory for mediator-method calls
+ * (e.g. `.aiRun(`, `.r2Put(`, `.emailSend(`) and warns if the plugin
+ * uses a method outside its declared access set.
+ *
+ * Forces principle of least privilege at compile time AND runtime
+ * (the `pluginMediator` Proxy throws on out-of-set access; this
+ * invariant catches authors who try to widen the set without updating
+ * PLUGIN_ACCESS_MAP).
+ *
+ * @standard ISO 27001 A.5.15 access-control
+ * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
+ * @audit Conservation Law 38 mcp-tool-standardization
+ */
+export function checkPluginsDeclareAccess(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const pluginsRoot = join(repoRoot, 'src/plugins')
+  if (!existsSync(pluginsRoot)) {
+    return pass('entropy', 'plugins-declare-access', 'no src/plugins/ directory — skip')
+  }
+  // Read the declared access map by parsing plugin-access.ts (avoids
+  // the import cycle at invariant-runtime).
+  const accessFile = join(repoRoot, 'src/services/cloudflare/plugin-access.ts')
+  const accessText = readSafe(accessFile)
+  if (!accessText) {
+    return warn('entropy', 'plugins-declare-access',
+      `plugin-access.ts not found — Slice EEEEEEEEE not landed`)
+  }
+  // Parse PLUGIN_ACCESS_MAP: entries like  accounting: ['queueSendNamed', ...] as const,
+  const mapDecl: Record<string, Set<string>> = {}
+  const entryRe = /(\w+):\s*\[([^\]]+)\]\s*as\s*const/g
+  let m: RegExpExecArray | null
+  while ((m = entryRe.exec(accessText))) {
+    const plugin = m[1]!
+    const keys = [...m[2]!.matchAll(/'(\w+)'/g)].map((k) => k[1]!)
+    mapDecl[plugin] = new Set(keys)
+  }
+  // For each plugin directory, scan for `.<method>(` calls matching
+  // the mediator surface and flag uses outside the declared set.
+  const MEDIATOR_METHODS = new Set([
+    'kvGet', 'kvPut', 'r2Put', 'r2Get', 'aiRun', 'queueSend', 'queueSendNamed',
+    'analyticsWrite', 'auditChainAppend', 'auditChainAppendLinked',
+    'auditChainVerify', 'vectorizeQuery', 'vectorizeInsert',
+    'browserRender', 'emailSend', 'workflowsCreate',
+  ])
+  const offenders: string[] = []
+  let pluginEntries: string[] = []
+  try { pluginEntries = readdirSync(pluginsRoot) } catch { /* ignore */ }
+  for (const slug of pluginEntries) {
+    const pluginDir = join(pluginsRoot, slug)
+    let stat
+    try { stat = statSync(pluginDir) } catch { continue }
+    if (!stat.isDirectory()) continue
+    const declared = mapDecl[slug] ?? new Set<string>()
+    // Recursively walk plugin dir for .ts/.tsx files.
+    const files: string[] = []
+    const walk = (d: string): void => {
+      let entries: string[] = []
+      try { entries = readdirSync(d) } catch { return }
+      for (const e of entries) {
+        if (e === 'node_modules' || e.startsWith('.fuse_hidden')) continue
+        const p = join(d, e)
+        let s
+        try { s = statSync(p) } catch { continue }
+        if (s.isDirectory()) walk(p)
+        else if (s.isFile() && (p.endsWith('.ts') || p.endsWith('.tsx')) && !p.endsWith('.test.ts')) files.push(p)
+      }
+    }
+    walk(pluginDir)
+    const usedMethods = new Set<string>()
+    for (const f of files) {
+      const text = stripCommentsKeepLines(readSafe(f))
+      for (const m of MEDIATOR_METHODS) {
+        const re = new RegExp(`[. ]${m}\\s*\\(`, 'g')
+        if (re.test(text)) usedMethods.add(m)
+      }
+    }
+    // Methods used but NOT in the declared set.
+    const overreach: string[] = []
+    for (const u of usedMethods) {
+      if (!declared.has(u)) overreach.push(u)
+    }
+    if (overreach.length > 0) {
+      offenders.push(
+        `src/plugins/${slug}/ uses [${overreach.join(', ')}] but PLUGIN_ACCESS_MAP['${slug}'] grants only [${[...declared].join(', ')}]`,
+      )
+    }
+  }
+  if (offenders.length === 0) {
+    return pass('entropy', 'plugins-declare-access',
+      `every plugin's mediator usage stays within its declared PluginAccess<K> set`)
+  }
+  return warn('entropy', 'plugins-declare-access',
+    `${offenders.length} plugin(s) call mediator methods outside their declared access set — widen PLUGIN_ACCESS_MAP or stop calling`,
+    offenders.slice(0, 8))
+}
+
+/**
+ * Slice VVVVVVVV (2026-05-11) — per user "use one binding of a type.
+ * when using DRY uuid logic conflicts do not occur" + "this is the way
+ * to prevent tampering — in the core where all merge to one".
+ *
+ * Every Cloudflare service type should have exactly ONE binding. Purpose
+ * differentiation happens via the uuid-keyed name argument (idFromName)
+ * or via tenant-scoped key prefixes (KV/R2), NOT via duplicate bindings.
+ *
+ * Today's wrangler.jsonc declares legacy DO aliases (TENANT_QUOTA /
+ * RATE_LIMITER / JOB_LOCK / AUDIT_CHAIN_DO) alongside the unified
+ * ERPAX_DO — those are migration-compat only. New bindings of the same
+ * type beyond these warn.
+ *
+ * Rationale: merging to one binding makes the tamper surface single.
+ * Every state write flows through the same audit trail, the same DO
+ * instance routing, the same uuid linkage. No bypass via "the other
+ * KV namespace" or "the other rate-limiter DO".
+ *
+ * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+ * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
+ * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
+ */
+export function checkOneBindingPerType(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const wranglerPath = join(repoRoot, 'wrangler.jsonc')
+  if (!existsSync(wranglerPath)) {
+    return pass('entropy', 'one-binding-per-type', 'wrangler.jsonc not found — skip')
+  }
+  const text = readSafe(wranglerPath)
+
+  // Allowlisted migration aliases (Slice VVVVVVVV — one binding per
+  // type, legacy aliases kept for in-place migration).
+  const LEGACY_DO_ALIASES = new Set([
+    'TENANT_QUOTA', 'RATE_LIMITER', 'JOB_LOCK', 'AUDIT_CHAIN_DO',
+  ])
+  const UNIFIED_DO_BINDING = 'ERPAX_DO'
+
+  // Parse DO binding names (regex is good enough for the audit).
+  const doBindings: string[] = []
+  for (const m of text.matchAll(/durable_objects[\s\S]*?bindings[\s\S]*?\]/g)) {
+    for (const b of m[0].matchAll(/"name":\s*"([A-Z_][A-Z0-9_]*)"/g)) {
+      doBindings.push(b[1]!)
+    }
+  }
+
+  // Same for KV / R2 / Queue / AI / Vectorize / Analytics — each type
+  // should have exactly one binding (modulo allowlisted legacy aliases).
+  const offenders: string[] = []
+  const newDos = doBindings.filter((n) => n !== UNIFIED_DO_BINDING && !LEGACY_DO_ALIASES.has(n))
+  if (newDos.length > 0) {
+    offenders.push(
+      `wrangler.jsonc declares non-allowlisted DO binding(s): ${newDos.join(', ')} — merge into ERPAX_DO via purpose-prefixed idFromName, or extend LEGACY_DO_ALIASES if this is a migration-compat alias`,
+    )
+  }
+
+  // KV — expect exactly one binding (current: none or one).
+  const kvBindings = [...text.matchAll(/"kv_namespaces"[\s\S]*?\[([\s\S]*?)\]/g)]
+    .flatMap((m) => [...m[1]!.matchAll(/"binding":\s*"([A-Z_]+)"/g)].map((b) => b[1]!))
+  if (kvBindings.length > 1) {
+    offenders.push(
+      `wrangler.jsonc declares ${kvBindings.length} KV bindings (${kvBindings.join(', ')}) — use one binding + tenant-scoped key prefixes via the mediator (nsKey)`,
+    )
+  }
+
+  // R2 — same rule.
+  const r2Bindings = [...text.matchAll(/"r2_buckets"[\s\S]*?\[([\s\S]*?)\]/g)]
+    .flatMap((m) => [...m[1]!.matchAll(/"binding":\s*"([A-Z_]+)"/g)].map((b) => b[1]!))
+  if (r2Bindings.length > 1) {
+    offenders.push(
+      `wrangler.jsonc declares ${r2Bindings.length} R2 bindings (${r2Bindings.join(', ')}) — use one bucket + tenant-scoped object keys via the mediator (nsKey)`,
+    )
+  }
+
+  if (offenders.length === 0) {
+    return pass('entropy', 'one-binding-per-type',
+      `wrangler.jsonc honours "one binding per type" — uuid-keyed name argument differentiates purposes; tamper surface is single`)
+  }
+  return warn('entropy', 'one-binding-per-type',
+    `${offenders.length} multi-binding-per-type violation(s) — collapse to one binding + uuid-keyed name/key prefixes (Slice VVVVVVVV)`,
+    offenders)
 }

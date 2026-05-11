@@ -39,6 +39,12 @@ export const CURRENCY_DECIMALS: Readonly<Record<string, number>> = {
   BHD: 3, IQD: 3, JOD: 3, KWD: 3, LYD: 3, OMR: 3, TND: 3,
   // Four-decimal (rare — funds / non-cash)
   CLF: 4, UYW: 4,
+  // Slice LLLLLLLLL (2026-05-11) — ISO 4217 §6.5 'No currency'. The
+  // identity element: no fractional units because there are no units.
+  // Formatters output the amount without a currency symbol; rounding
+  // is to integer. Anywhere a missing/null currency would have thrown,
+  // resolveCurrency() routes to XXX and the math degenerates cleanly.
+  XXX: 0,
 }
 
 /**

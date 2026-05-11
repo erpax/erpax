@@ -122,3 +122,193 @@ export class JobLock {
     return new Response('not_found', { status: 404 })
   }
 }
+
+// ─── Slice VVVVVVVV (2026-05-11) — unified DO binding ────────────────
+//
+// Per user "use one binding of a type. when using DRY uuid logic
+// conflicts do not occur". Instead of 4 separate DO bindings
+// (TENANT_QUOTA / RATE_LIMITER / JOB_LOCK / AUDIT_CHAIN_DO), one binding
+// (ERPAX_DO) hosts all behaviors. The DO INSTANCE is selected via
+// `idFromName('<purpose>:<scoped-key>')` so:
+//
+//   counter:t:<tenantId>/feature/<feature>   → counter behavior
+//   ratelimit:t:<tenantId>/feature/<feature> → token-bucket
+//   joblock:<jobId>                           → distributed lock
+//   chain:t:<tenantId>                        → audit chain
+//
+// The URL path inside the DO `fetch()` handler routes to the right
+// behavior implementation. Each instance only ever sees one purpose
+// (its name encodes it), so storage keys don't collide.
+//
+// Migration: old class names (TenantQuotaCounter / RateLimiter /
+// JobLock / AuditChain) remain as no-op aliases pointing at the same
+// unified class so existing migration tags stay valid.
+//
+// @standard ISO/IEC 25010:2023 §5.4 reusability — one class, four purposes
+// @audit ISO 27001 A.5.23 cloud-service-tenant-isolation
+//        (tenant boundary in the name argument, not the binding)
+
+/**
+ * AuditChain — Slice UUUUUUUU (2026-05-11).
+ *
+ * Per-tenant uuid-linked tamper-evident log. Implements the wire
+ * protocol declared by `services/cloudflare/auditChainAppendLinked`
+ * (Slice TTTTTTTT):
+ *
+ *   GET  /head             → { leafUuid, seq } | null
+ *   POST /append-linked    { leaf, payload } → 200/4xx
+ *   GET  /chain            → { leaves: UuidLinkedLeaf[] }
+ *   GET  /chain?fromSeq=&toSeq=  → range
+ *
+ * Storage layout:
+ *   leaf:<seq>         → UuidLinkedLeaf (the chain link)
+ *   payload:<seq>      → original payload bytes (canonical JSON)
+ *   head               → { leafUuid, seq }
+ *
+ * Atomicity: every `append-linked` validates that the incoming leaf
+ * links to the *current* head (read inside the same fetch handler;
+ * Durable Object single-thread guarantee). If two concurrent appends
+ * try to use the same prev, the second one is rejected with 409 —
+ * the caller can re-read /head and retry.
+ *
+ * @standard FIPS 180-4 sha-256 (leaf hashing)
+ * @standard RFC 8785 JSON canonicalization
+ * @audit Conservation Law 8 content-uuid (per-leaf)
+ * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail
+ */
+interface UuidLinkedLeaf {
+  readonly leafUuid: string
+  readonly prevLeafUuid: string
+  readonly payloadUuid: string
+  readonly timestampIso: string
+  readonly seq: number
+  readonly signature?: string
+}
+
+interface ChainHead {
+  readonly leafUuid: string
+  readonly seq: number
+}
+
+export class AuditChain {
+  constructor(private state: DurableObjectState) {}
+
+  async fetch(request: Request): Promise<Response> {
+    const url = new URL(request.url)
+    const path = url.pathname
+
+    // GET /head — return { leafUuid, seq } | null
+    if (request.method === 'GET' && path === '/head') {
+      const head = (await this.state.storage.get<ChainHead>('head')) ?? null
+      return Response.json(head)
+    }
+
+    // POST /append-linked — validate prev → store leaf+payload → update head
+    if (request.method === 'POST' && path === '/append-linked') {
+      const body = (await request.json()) as { leaf: UuidLinkedLeaf; payload: unknown }
+      const { leaf, payload } = body
+      if (!leaf || typeof leaf.leafUuid !== 'string' || typeof leaf.prevLeafUuid !== 'string') {
+        return new Response('malformed leaf', { status: 400 })
+      }
+      const head = (await this.state.storage.get<ChainHead>('head')) ?? null
+      const expectedPrev = head?.leafUuid ?? 'GENESIS'
+      const expectedSeq = head ? head.seq + 1 : 0
+      if (leaf.prevLeafUuid !== expectedPrev) {
+        return Response.json(
+          { error: 'prev-mismatch', expected: expectedPrev, got: leaf.prevLeafUuid, currentHead: head },
+          { status: 409 },
+        )
+      }
+      if (leaf.seq !== expectedSeq) {
+        return Response.json(
+          { error: 'seq-mismatch', expected: expectedSeq, got: leaf.seq },
+          { status: 409 },
+        )
+      }
+      // Persist atomically — DO single-threaded execution model means
+      // these three writes are an effective transaction.
+      await this.state.storage.put(`leaf:${leaf.seq}`, leaf)
+      await this.state.storage.put(`payload:${leaf.seq}`, payload)
+      const newHead: ChainHead = { leafUuid: leaf.leafUuid, seq: leaf.seq }
+      await this.state.storage.put('head', newHead)
+      return Response.json({ ok: true, head: newHead, leaf })
+    }
+
+    // GET /chain?fromSeq=&toSeq= — return UuidLinkedLeaf[] in order
+    if (request.method === 'GET' && path === '/chain') {
+      const head = (await this.state.storage.get<ChainHead>('head')) ?? null
+      if (!head) return Response.json({ leaves: [] })
+      const fromSeq = Math.max(0, Number(url.searchParams.get('fromSeq') ?? 0))
+      const toSeq = Math.min(head.seq, Number(url.searchParams.get('toSeq') ?? head.seq))
+      const leaves: UuidLinkedLeaf[] = []
+      for (let s = fromSeq; s <= toSeq; s++) {
+        const leaf = await this.state.storage.get<UuidLinkedLeaf>(`leaf:${s}`)
+        if (leaf) leaves.push(leaf)
+      }
+      return Response.json({ leaves, head })
+    }
+
+    // GET /leaf/<seq> — return one leaf + its payload
+    const leafMatch = path.match(/^\/leaf\/(\d+)$/)
+    if (request.method === 'GET' && leafMatch) {
+      const seq = Number(leafMatch[1])
+      const leaf = await this.state.storage.get<UuidLinkedLeaf>(`leaf:${seq}`)
+      if (!leaf) return new Response('not_found', { status: 404 })
+      const payload = await this.state.storage.get(`payload:${seq}`)
+      return Response.json({ leaf, payload })
+    }
+
+    return new Response('not_found', { status: 404 })
+  }
+}
+
+/**
+ * ErpaxStateDO — Slice VVVVVVVV (2026-05-11).
+ *
+ * Unified DurableObject class. ONE binding (ERPAX_DO) hosts every kind
+ * of strict-coordination state. The instance's PURPOSE is encoded in
+ * the name argument passed to `idFromName(<purpose>:<scoped-key>)`:
+ *
+ *   counter:<scope>     — atomic per-key counter (was TenantQuotaCounter)
+ *                          URL: /counter/incr | /counter/get | /counter/reset
+ *
+ *   ratelimit:<scope>   — token bucket (was RateLimiter)
+ *                          URL: /ratelimit/consume | /ratelimit/refill | /ratelimit/get
+ *
+ *   joblock:<jobId>     — distributed lock (was JobLock)
+ *                          URL: /joblock/acquire | /joblock/release | /joblock/status
+ *
+ *   chain:<tenantId>    — uuid-linked audit log (was AuditChain)
+ *                          URL: /head | /append-linked | /chain | /leaf/<seq>
+ *
+ * Storage layout per instance is namespaced by purpose (the prefix
+ * never collides because each instance only sees one purpose). The
+ * DO routes by URL path inside `fetch()`.
+ *
+ * Per user "when using DRY uuid logic conflicts do not occur": the
+ * uuid produced by `idFromName('counter:t:T123/feature/ai_assist')`
+ * is globally unique and lives in a deterministic, replayable place.
+ * No need for 4 bindings to keep purposes apart.
+ */
+export class ErpaxStateDO {
+  private counter: TenantQuotaCounter
+  private rateLimiter: RateLimiter
+  private jobLock: JobLock
+  private auditChain: AuditChain
+  constructor(state: DurableObjectState) {
+    this.counter = new TenantQuotaCounter(state)
+    this.rateLimiter = new RateLimiter(state)
+    this.jobLock = new JobLock(state)
+    this.auditChain = new AuditChain(state)
+  }
+  async fetch(request: Request): Promise<Response> {
+    const url = new URL(request.url)
+    const path = url.pathname
+    if (path.startsWith('/counter/')) return this.counter.fetch(request)
+    if (path.startsWith('/ratelimit/')) return this.rateLimiter.fetch(request)
+    if (path.startsWith('/joblock/')) return this.jobLock.fetch(request)
+    // Audit chain has multiple top-level routes (/head, /append-linked,
+    // /chain, /leaf/<seq>) — anything else falls through to it.
+    return this.auditChain.fetch(request)
+  }
+}

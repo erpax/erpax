@@ -36,10 +36,19 @@ import { ProductivityAgent } from './registered/productivity.agent'
 import { EnterpriseSearchAgent } from './registered/enterprise-search.agent'
 import { PluginsAgent } from './registered/plugins.agent'
 import { MetaSkillAgent } from './registered/meta-skill.agent'
+// Slice ZZZZZZZZ (2026-05-11) — ConsistencyAgent owns code-consistency
+// gap closure: factory `emits:` not hooked, services pointing at
+// missing slugs, static relationTo orphans, chain emits without
+// producers. Subscribes to invariant:warned/failed; cron offset 30min
+// from MetaSkillAgent so they don't contend on the invariant suite.
+import { ConsistencyAgent } from './registered/consistency.agent'
 import type { DomainAgent } from './types'
 
 /**
- * The 15 registered DomainAgents — one per skill-domain catalogue id.
+ * The 16 registered DomainAgents — one per skill-domain catalogue id,
+ * plus ConsistencyAgent (Slice ZZZZZZZZ) which spans every domain by
+ * owning structural-drift detection across the codebase.
+ *
  * Append to this array when adding a new agent (e.g. for a tenant-role
  * profile that introduces a new domain — slice LLLLL+).
  */
@@ -59,6 +68,7 @@ const REGISTERED_AGENTS: ReadonlyArray<DomainAgent> = [
   EnterpriseSearchAgent,  // IIIII
   PluginsAgent,           // IIIII
   MetaSkillAgent,         // IIIII
+  ConsistencyAgent,       // ZZZZZZZZ
 ]
 
 /** Single shared registry instance — import from this module. */

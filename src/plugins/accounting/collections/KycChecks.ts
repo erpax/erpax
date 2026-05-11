@@ -43,7 +43,14 @@ const KycChecks: CollectionConfig = {
         { label: 'Authorised signatory', value: 'signatory' },
       ],
     },
-    { name: 'subject', type: 'relationship', relationTo: 'addresses', required: true },
+    // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
+    // AMLD-5 Art.13(1) "customer due diligence" — the screened subject is
+    // the customer party itself, not their address. The polymorphic
+    // address-as-subject shape inherited from the deleted ecommerce
+    // plugin masked this. Vendor / beneficial-owner / signatory screening
+    // happens via separate KycCheck rows (subjectType select drives
+    // join-time interpretation).
+    { name: 'subject', type: 'relationship', relationTo: 'customers', required: true },
     {
       name: 'cddLevel',
       type: 'select',

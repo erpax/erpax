@@ -63,8 +63,14 @@ const CreditMemos: CollectionConfig = {
     {
       name: 'customer',
       type: 'relationship',
-      relationTo: 'addresses', // ecommerce plugin's customer/address collection
-      admin: { description: 'Party receiving the credit.' },
+      // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
+      // The legacy comment ('ecommerce plugin's customer/address collection')
+      // captured the bug: the deleted ecommerce plugin used a polymorphic
+      // address-as-customer shape that never matched IFRS-15 §B22 reality.
+      // EN-16931 §BG-7 buyer + IFRS-15 §B22 contra-revenue both need the
+      // customer party itself.
+      relationTo: 'customers',
+      admin: { description: 'Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).' },
     },
     {
       name: 'invoice',

@@ -80,16 +80,52 @@ export async function runAllInvariants(
     results.push(await C.checkAiFallbackReturnsError(ctx))
     results.push(await C.checkNotificationFallback(ctx))
     results.push(await C.checkMcpSelfTestableInvariant(ctx))  // Law 41 — AAAAAAA
+    // Slice JJJJJJJJJ (2026-05-11) — Law 53 self-referential-closure.
+    // Every ExternalRole ERPax consumes has a registered InternalProvider
+    // so the dependency graph terminates at ERPax itself.
+    results.push(await C.checkSelfReferentialClosure(ctx))    // Law 53 — JJJJJJJJJ
   }
 
   // ── Axis 5: entropy ─────────────────────────────────────────────
   if (!skip.has('entropy')) {
+    // Slice PPPPPPPPP-cut1 (2026-05-11) — tamper-surface review Batch 1.
+    // Findings 1 + 2 from the review: ensure factory default-on
+    // tamper-proofing reaches every accounting collection AND every
+    // audit-events write routes through writeAuditEvent (uuid-linked).
+    results.push(await C.checkAccountingCollectionsAreTamperProofed(ctx))
+    results.push(C.checkAuditEventsAreChainLinked(ctx))
     results.push(C.checkNoDuplicateCollectionSlugs(ctx))
     results.push(C.checkNoDuplicateArrayDbNames(ctx))
     results.push(C.checkNoDuplicateChainIds(ctx))
     results.push(C.checkFeatureRegistryKeyMatchesId(ctx))
     results.push(C.checkNoInlineTaxonomyArrays(ctx))
     results.push(C.checkChainEmitsHaveProducer(ctx))
+    // Slice ZZZZZZZZ (2026-05-11) — code-consistency invariants ported
+    // from `scripts/find-implementation-gaps.py` so MetaSkillAgent's
+    // hourly cron sees them as `invariant:warned` events and the
+    // meta-automation proposer attaches fix proposals.
+    results.push(C.checkFactoryEmitsAreHooked(ctx))             // Class F
+    results.push(C.checkServicesReferenceRealSlugs(ctx))        // Class M
+    results.push(C.checkRelationToSlugsExist(ctx))              // Class I (static)
+    // Slice FFFFFFFF (2026-05-11) — surface duplicate-collection collisions
+    // BEFORE Payload's config-load throws. Class N.
+    results.push(C.checkNoPluginOwnedSlugCollision(ctx))        // Class N (plugin-owned slug)
+    // Slice RRRRRRRR (2026-05-11) — anything mcp needs needs a collection;
+    // module-scope mutable arrays in MCP handlers / meta-automation
+    // surface as warnings until they migrate to the memories collection
+    // (or opt out via // SAFE-INMEM:).
+    results.push(C.checkMcpMutationsHaveCollection(ctx))        // Class O (MCP mutations need persistence)
+    // Slice SSSSSSSS (2026-05-11) — every CF binding access in MCP /
+    // meta-automation must flow through the erpax mediator (tenant-
+    // scoped, audit-trailed, RBAC-gated, rate-limited, PII-redacted).
+    results.push(C.checkMcpBindingsAreMediated(ctx))            // Class P (MCP CF-bindings security)
+    // Slice VVVVVVVV (2026-05-11) — one binding per CF service type.
+    // Tamper surface is single → audit + uuid-link guarantees hold.
+    results.push(C.checkOneBindingPerType(ctx))                 // Class Q (one binding per type)
+    // Slice EEEEEEEEE (2026-05-11) — every plugin's mediator usage stays
+    // within its declared PluginAccess<K> set. Principle of least
+    // privilege at compile time + runtime.
+    results.push(C.checkPluginsDeclareAccess(ctx))              // Class R (plugin typed access)
     results.push(await C.checkAuditChainIntegrity(ctx))
     results.push(C.checkBridgeRelationshipsIndexed(ctx))
     results.push(C.checkSoDSymmetric(ctx))

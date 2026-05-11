@@ -40,7 +40,26 @@ import {
   // Real entities
   FixedAssets,
   BudgetPlanning,
+  // Slice QQQQQQQQ (2026-05-11) — Standards collection (per-tenant citation
+  // graph + conflict + supersession trail) — backs the 12 erpax.standards.*
+  // MCP tools with persistence.
+  Standards,
+  // Slice RRRRRRRR (2026-05-11) — Memories collection: generic persistence
+  // for MCP tool + agent in-memory state.
+  Memories,
+  // Slice ZZZZZZZZ (2026-05-11) — McpToolMetadata: localized overlay for
+  // every erpax.* MCP tool. Admin UI translators fill description.<locale>;
+  // catalog overlays automatically via Payload i18n.
+  McpToolMetadata,
+  // Slice AAAAAAAAA (2026-05-11) — Translations: per-tenant override
+  // layer above McpToolMetadata. Bank/government/multi-jurisdiction
+  // tenants pin custom phrasing without forking platform defaults.
+  Translations,
   // ERP master data (live in this plugin per Payload convention — accounting concepts)
+  // Slice EEEEEEEE-fix (2026-05-11) — Addresses NOT imported here.
+  // @payloadcms/plugin-ecommerce owns the `addresses` slug; registering
+  // ours too caused `DuplicateCollection`. References resolve against
+  // the plugin's version.
   Customers,
   Vendors,
   TaxJurisdictions,
@@ -52,6 +71,9 @@ import {
   PurchaseOrders,
   GoodsReceipts,
   Quotes,
+  // SalesOrders — Slice XXXXXXXX-c (2026-05-11) — owns the 'sales-orders'
+  // slug consumed by Quotes/Returns/Shipments/Refunds. Closes the O2C gap.
+  SalesOrders,
   Refunds,
   // Sprint ZZ Round 2 — 16 more standards-required normalised collections
   Returns,
@@ -213,6 +235,28 @@ export const accountingPlugin = (): Plugin => {
       TaxJurisdictions,
       TaxCodes,
       FiscalPeriods,
+      // Slice QQQQQQQQ (2026-05-11) — Standards registered EARLY so the
+      // citation graph (referenced by everything cited via JSDoc) is
+      // resolvable before downstream collections that may store standard
+      // refs (Tax / KYC / ESG / etc.).
+      Standards,
+      // Slice RRRRRRRR (2026-05-11) — Memories registered EARLY (right
+      // after Standards) so DomainAgent observations + meta-automation
+      // proposals can persist from the first hourly cron tick.
+      Memories,
+      // Slice ZZZZZZZZ (2026-05-11) — McpToolMetadata registered after
+      // Memories. Translators populate descriptions per locale; catalog
+      // overlays at request time (Payload i18n resolves automatically).
+      McpToolMetadata,
+      // Slice AAAAAAAAA (2026-05-11) — Translations registered right
+      // after McpToolMetadata. The runtime resolver consults this row
+      // FIRST (highest precedence); falls back to McpToolMetadata; then
+      // to the code default. No layer requires a redeploy.
+      Translations,
+      // Slice EEEEEEEE-fix (2026-05-11) — Addresses NOT registered here.
+      // @payloadcms/plugin-ecommerce already owns the 'addresses' slug;
+      // registering both produced DuplicateCollection at config-load.
+      // Refs to 'addresses' resolve against the plugin's collection.
       // Party masters
       Customers,
       Vendors,
@@ -230,10 +274,13 @@ export const accountingPlugin = (): Plugin => {
       // Procure-to-Pay (PO must precede GoodsReceipts which join-references it)
       PurchaseOrders,
       GoodsReceipts,
-      // Order-to-Cash — Quote → Contract → PerformanceObligation → Order → Shipment → Return
+      // Order-to-Cash — Quote → Contract → PerformanceObligation → SalesOrder → Shipment → Return
+      // SalesOrders must precede Shipments/Returns (those reference 'sales-orders').
+      // Slice XXXXXXXX-c (2026-05-11) — owns the 'sales-orders' slug.
       Quotes,
       Contracts,
       PerformanceObligations,
+      SalesOrders,
       Shipments,
       Returns,
       // Inventory (WarehouseLocations master must precede InventoryMovements that reference it)

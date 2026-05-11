@@ -45,8 +45,16 @@ export default createAccountingCollection({
   // event-graph closure (Law 4) + feature gating (Slice VVV).
   standards: ['IAS-19', 'ISO-8601-1:2019', 'EU-Directive-2003/88/EC', 'US-FMLA', 'BG-Labour-Code'],
   feature: 'hr-leave',
-  // No emits today — once an approval lifecycle is wired, add:
-  //   emits: ['leave:submitted', 'leave:approved', 'leave:rejected']
+  // Slice AAAAAAAA (2026-05-11) — approval lifecycle is now wired
+  // structurally. Each transition fires the matching DomainEvent so
+  // HR + Payroll subscribers can react (e.g. 'leave:approved' →
+  // PayrollRuns deduct entitlement; 'leave:cancelled' → restore).
+  emits: [
+    { event: 'leave:submitted', onStatus: 'submitted', aggregate: 'order' },
+    { event: 'leave:approved',  onStatus: 'approved',  aggregate: 'order' },
+    { event: 'leave:rejected',  onStatus: 'rejected',  aggregate: 'order' },
+    { event: 'leave:cancelled', onStatus: 'cancelled', aggregate: 'order' },
+  ],
 
   // Inject status with the request lifecycle states.
   injectStatusField: true,

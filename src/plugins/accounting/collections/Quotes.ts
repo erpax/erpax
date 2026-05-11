@@ -36,7 +36,12 @@ const Quotes: CollectionConfig = {
   fields: [
     multiTenancyField(),
     { name: 'quoteNumber', type: 'text', required: true, unique: true, index: true },
-    { name: 'customer', type: 'relationship', relationTo: 'addresses', required: true },
+    // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'customers'.
+    // The field name said `customer` but the relation pointed at the address
+    // master — a leftover from the deleted ecommerce plugin's polymorphic
+    // customer-as-address shape. EN-16931 §BG-7 (buyer) requires the buyer
+    // party itself, not the address; addresses live on the customer row.
+    { name: 'customer', type: 'relationship', relationTo: 'customers', required: true },
     { name: 'issuedAt', type: 'date', admin: { readOnly: true } },
     { name: 'expiresAt', type: 'date' },
     {
@@ -70,7 +75,11 @@ const Quotes: CollectionConfig = {
     ),
     { name: 'sentAt', type: 'date', admin: { readOnly: true } },
     { name: 'acceptedAt', type: 'date', admin: { readOnly: true } },
-    { name: 'convertedToOrder', type: 'relationship', relationTo: 'orders' },
+    // Slice XXXXXXXX-c (2026-05-11): retargeted from 'orders' → 'sales-orders'.
+    // 'orders' was an orphan slug (no collection ever owned it). The
+    // canonical O2C target is the new sales-orders collection
+    // (distinct from purchase-orders / P2P).
+    { name: 'convertedToOrder', type: 'relationship', relationTo: 'sales-orders' },
     ...auditFields(),
     notesField(),
   ],

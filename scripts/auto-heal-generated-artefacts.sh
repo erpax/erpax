@@ -52,6 +52,57 @@ else
   fi
 fi
 
+# ── Artefact 1.5: consistency-apply (Slice IIIIIIII 2026-05-11) ──────
+#
+# Before regenerating payload-types, run the ConsistencyAgent's
+# deterministic transforms to close any structural drift the most
+# recent commits introduced:
+#   - applyChainProducerBackfill — adds producer:{} to BUSINESS_CHAINS
+#     steps with a known action→status mapping (Class J).
+#   - applyEmitsLegacyToStructured — upgrades string-form `emits:` to
+#     structured wiring so the factory auto-injects producer hooks
+#     (Class F).
+#
+# Idempotent: re-running on already-clean source is a no-op (the
+# Slice DDDDDDDD apply functions skip entries with `producer:` /
+# structured entries already present).
+#
+# Why BEFORE payload generate:types: the Slice EEEEEEEE / GGGGGGGG /
+# HHHHHHHH errors all surfaced inside the payload sanitizer. The
+# applyAll transforms close the upstream cause (e.g. a chain step
+# whose emit literal isn't wired anywhere) so the regen can succeed.
+# When applyAll is a no-op, this section adds zero latency.
+if command -v node >/dev/null 2>&1 && [ -f src/services/consistency-apply/index.ts ]; then
+  if [ "$DRY_RUN" = 0 ]; then
+    tmp_apply_log=$(mktemp)
+    if node --experimental-strip-types -e "
+      import('./src/services/consistency-apply/index.ts')
+        .then((m) => {
+          const r = m.applyAllConsistencyFixes({ repoRoot: process.cwd() });
+          if (r.applied > 0) {
+            console.log('auto-heal: applyAll fixed ' + r.applied + ' drift item(s)');
+            for (const c of r.changes) console.log('  - ' + c.action + ' | ' + c.detail);
+          }
+        })
+        .catch((e) => { console.error(e); process.exit(1); });
+    " >"$tmp_apply_log" 2>&1; then
+      if grep -q "applyAll fixed" "$tmp_apply_log"; then
+        cat "$tmp_apply_log"
+        # Stage anything the apply functions rewrote.
+        git add src/services/business-chains/registry.ts 2>/dev/null || true
+        git add 'src/plugins/accounting/collections/*.ts' 2>/dev/null || true
+        healed+=("consistency-apply (Class F + J drift)")
+      fi
+    else
+      # Apply errored — log + continue (don't block the gate on apply itself;
+      # payload generate:types will produce the real error message below).
+      echo "auto-heal: applyAllConsistencyFixes errored (non-blocking):"
+      tail -20 "$tmp_apply_log" | sed 's/^/    /'
+    fi
+    rm -f "$tmp_apply_log"
+  fi
+fi
+
 # ── Artefact 2: src/payload-types.ts ─────────────────────────────────
 if bash scripts/payload-verify-types.sh >/dev/null 2>&1; then
   :

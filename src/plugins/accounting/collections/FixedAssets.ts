@@ -97,7 +97,11 @@ const _baseFixedAssets = createAccountingCollection(
       { name: 'acquisitionDate', type: 'date', required: true },
       { name: 'assetCost', type: 'number', required: true, min: 0 },
       currencyField('EUR'),
-      { name: 'supplier', type: 'relationship', relationTo: 'addresses', admin: { description: 'Asset supplier/vendor' } },
+      // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'vendors'.
+      // The field's description already said "Asset supplier/vendor" — the
+      // relation should always have pointed at the vendor master, not the
+      // address book. Address can be resolved via vendor.billingAddress.
+      { name: 'supplier', type: 'relationship', relationTo: 'vendors', admin: { description: 'Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).' } },
       { name: 'purchaseOrder', type: 'text', admin: { description: 'Reference PO number' } },
 
       // Physical location

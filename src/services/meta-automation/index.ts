@@ -38,6 +38,13 @@ export interface FixProposal {
   readonly rationale: string                               // human-readable why
 }
 
+// SAFE-INMEM: PROPOSALS_LOG  (Slice XXXXXXXX 2026-05-11)
+// Canonical proposal history now lives in the `memories` collection
+// (kind=fix_proposal) — see ConsistencyAgent's onSchedule. This array
+// is retained as a per-process cache so listProposals() returns
+// quickly without a Payload round-trip; it does NOT need to survive
+// restarts. The `mcp-mutations-have-collection` invariant respects
+// the `// SAFE-INMEM:` opt-out marker.
 const PROPOSALS_LOG: FixProposal[] = []
 
 /** Translate one InvariantResult into a FixProposal (or null if no auto-action). */
@@ -107,6 +114,86 @@ export function proposeFixFor(result: InvariantResult): FixProposal | null {
         proposedArgs: { sourceDid: 'erpax-self-test', scope: 'genome' },
         autoApply: false,    // ESCALATE — non-determinism breaks cloning
         rationale: 'Genome bundle hashes non-deterministically; cloning would silently break — investigate which field varies between runs',
+      }
+
+    // ─── Slice ZZZZZZZZ (2026-05-11) — code-consistency invariants ──
+    // Each maps to a ConsistencyAgent-owned tool. autoApply stays false
+    // for now: every proposal goes to the proposals log + an audit
+    // event; the engineer applies after reviewing the offender list.
+    // Once the proposer matures (semantic patches that round-trip
+    // through tsc), flip to autoApply: true.
+
+    case 'factory-emits-are-hooked':
+      // Slice DDDDDDDD — auto-apply via erpax.consistency.applyAll. The
+      // applyEmitsLegacyToStructured transform is idempotent and
+      // deterministic: read offender file, rewrite string-form emits to
+      // structured form using the slug → aggregate map. Safe to run
+      // unattended.
+      return {
+        invariant: result.check, severity: result.severity as 'warn' | 'fail',
+        proposedTool: 'erpax.consistency.applyAll',
+        proposedArgs: {},
+        autoApply: true,
+        rationale: `${offenders.length} collection 'emits:' declaration(s) lack a runtime producer — applyAll upgrades string→structured form`,
+      }
+
+    case 'chain-emits-have-producer':
+      // Slice DDDDDDDD — auto-apply via erpax.consistency.applyAll. The
+      // applyChainProducerBackfill transform is idempotent: read each
+      // BUSINESS_CHAINS step, infer (status, aggregate) from
+      // (action, collection), rewrite step to include producer: {...}.
+      // 97/127 steps auto-wire; the rest are bespoke and need human review.
+      return {
+        invariant: result.check, severity: result.severity as 'warn' | 'fail',
+        proposedTool: 'erpax.consistency.applyAll',
+        proposedArgs: {},
+        autoApply: true,
+        rationale: `${offenders.length} BUSINESS_CHAINS step emit(s) without a producer — applyAll backfills producer: { onStatus | onCreate, aggregate } via the standard action→status map`,
+      }
+
+    case 'services-reference-real-slugs':
+      // Stays manual: slug rebind needs human judgment (is the right
+      // fix to redirect to an existing slug, or scaffold a new one?).
+      return {
+        invariant: result.check, severity: result.severity as 'warn' | 'fail',
+        proposedTool: 'erpax.consistency.proposeSlugRebind',
+        proposedArgs: { offenders: offenders.slice(0, 8) },
+        autoApply: false,
+        rationale: `${offenders.length} service/hook lookups target a non-existent slug — propose rebind or scaffold the missing collection`,
+      }
+
+    case 'relation-to-slugs-exist':
+      return {
+        invariant: result.check, severity: result.severity as 'warn' | 'fail',
+        proposedTool: 'erpax.consistency.proposeSlugRebind',
+        proposedArgs: { offenders: offenders.slice(0, 8) },
+        autoApply: false,
+        rationale: `${offenders.length} relationTo: pointer(s) to a non-existent slug — propose rebind or scaffold the missing collection`,
+      }
+
+    case 'no-plugin-owned-slug-collision':
+      // Slice FFFFFFFF — escalate; not auto-applied because the fix is a
+      // judgment call (rename our slug vs. override the plugin's
+      // collection via its collectionOverride hook). Surface it loud.
+      return {
+        invariant: result.check, severity: result.severity as 'warn' | 'fail',
+        proposedTool: 'erpax.consistency.proposeSlugRebind',
+        proposedArgs: { offenders: offenders.slice(0, 8) },
+        autoApply: false,
+        rationale: `${offenders.length} collection(s) re-register a slug already owned by an upstream Payload plugin — config-load throws DuplicateCollection. Either rename our slug or override the plugin's collection.`,
+      }
+
+    case 'mcp-mutations-have-collection':
+      // Slice RRRRRRRR — anything mcp needs needs a collection. Module-
+      // scope mutable arrays surface as proposals. Migrate target is the
+      // memories collection (or annotate // SAFE-INMEM:). Escalate;
+      // migration is a per-array judgment call.
+      return {
+        invariant: result.check, severity: result.severity as 'warn' | 'fail',
+        proposedTool: 'erpax.consistency.proposeSlugRebind',  // re-uses the slug-rebind proposer surface; actual fix is per-handler code change
+        proposedArgs: { offenders: offenders.slice(0, 8) },
+        autoApply: false,
+        rationale: `${offenders.length} module-scope mutable array(s) in MCP / meta-automation — migrate to 'memories' collection (Slice RRRRRRRR) or opt out via // SAFE-INMEM: <name>`,
       }
 
     default:

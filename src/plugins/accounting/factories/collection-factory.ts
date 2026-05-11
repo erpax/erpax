@@ -42,7 +42,14 @@
  *     labels: { singular: 'Invoice', plural: 'Invoices' },
  *     useAsTitle: 'invoiceNumber',
  *     defaultColumns: ['invoiceNumber', 'customer', 'totalAmount', 'status'],
- *     emits: ['invoice:activated', 'invoice:paid'],
+ *     // Slice AAAAAAAA structured form — factory auto-wires the
+ *     // afterChange producer per entry. The legacy `string[]` form
+ *     // (metadata-only) is still accepted but ConsistencyAgent flags
+ *     // it as Class F until upgraded.
+ *     emits: [
+ *       { event: 'invoice:activated', onStatus: 'activated', aggregate: 'invoice' },
+ *       { event: 'invoice:paid',      onStatus: 'paid',      aggregate: 'invoice' },
+ *     ],
  *     subscribesTo: ['payment:received'],
  *     standards: ['IFRS-15', 'EN-16931', 'PEPPOL-BIS-3.0'],
  *     feature: 'accounts-receivable',
@@ -78,15 +85,58 @@ import type {
 import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+// Slice AAAAAAAA (2026-05-11) — factory auto-wires structured `emits:` into
+// afterChange hooks. Single source of truth for the chain-emit producers.
+import {
+  emitOnStatusTransition, emitOnCreate, type AggregateType,
+} from '@/hooks/chainEventEmitters'
+// Slice BBBBBBBB (2026-05-11) — pull chain-declared producers from the
+// BUSINESS_CHAINS registry. Any chain step with `producer: { onStatus | onCreate, aggregate }`
+// scoped to this collection's slug gets auto-wired into afterChange.
+import { wireChainProducersFor } from '@/services/business-chains/wire-producers'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/plugins/auth/access'
 import type { UserRole } from '@/plugins/auth/access'
 import {
   multiTenancyField, statusField, notesField, auditFields,
 } from '../fields/base-accounting-fields'
+// Slice PPPPPPPPP (2026-05-11) — tamper-surface review Batch 1.
+// Factory now injects tamperProofUuidField + tamperProofBeforeChangeHook
+// by default so every accounting collection automatically opts into
+// Law 8 (content-uuid). Closes Finding 1 of the tamper-surface review.
+import {
+  tamperProofUuidField, tamperProofBeforeChangeHook,
+} from '@/services/integrity'
 
 export interface StatusOption {
   readonly label: string
   readonly value: string
+}
+
+/**
+ * Structured emit wiring (Slice AAAAAAAA 2026-05-11).
+ *
+ * Legacy form (`emits: ['address:created']`) was metadata-only —
+ * ConsistencyAgent flagged it as gap class F because no runtime
+ * producer fires. New structured form auto-wires the matching
+ * `emitOnCreate` / `emitOnStatusTransition` into `afterChange`.
+ *
+ * Either kind of `emits:` entry is accepted; the factory dispatches
+ * on shape (string = legacy metadata; object = active wiring).
+ */
+export interface EmitWiring {
+  /** Event id e.g. 'invoice:activated' (`<aggregate>:<verb>`). */
+  readonly event: string
+  /** Aggregate envelope for the DomainEvent payload. */
+  readonly aggregate: AggregateType
+  /**
+   * Either:
+   *   `onCreate: true`           — fire once on row creation, or
+   *   `onStatus: '<value>'`      — fire on a status-transition
+   *                                  matching the given status value.
+   * Exactly one of these must be set.
+   */
+  readonly onCreate?: true
+  readonly onStatus?: string
 }
 
 export interface AccountingCollectionOptions {
@@ -104,9 +154,17 @@ export interface AccountingCollectionOptions {
    */
   readonly roleRequired?: UserRole
 
-  // ─── Declarative spec metadata (Slice BBBBB-cut1) ─────────────────
-  /** Event ids this collection emits — feed to the chain-event emitters. */
-  readonly emits?: ReadonlyArray<string>
+  // ─── Declarative spec metadata (Slice BBBBB-cut1 + AAAAAAAA) ─────
+  /**
+   * Event ids this collection emits.
+   *
+   *   - `string`     — metadata-only (the legacy form). ConsistencyAgent
+   *                    flags as Class F until a runtime producer exists.
+   *   - `EmitWiring` — auto-wired: factory injects the matching
+   *                    `emitOnCreate` / `emitOnStatusTransition` into
+   *                    `afterChange`, so the event actually fires.
+   */
+  readonly emits?: ReadonlyArray<string | EmitWiring>
   /** Event ids this collection consumes — Law 4 closure verifier reads these. */
   readonly subscribesTo?: ReadonlyArray<string>
   /** Standards lexicon citations (Conservation Law 38). */
@@ -118,6 +176,21 @@ export interface AccountingCollectionOptions {
   readonly injectMultiTenancy?: boolean    // default true
   readonly injectAuditFields?: boolean     // default true
   readonly injectNotesField?: boolean      // default true
+  /**
+   * Slice PPPPPPPPP (2026-05-11) — closes Finding 1 of the tamper-
+   * surface review. Every accounting collection now opts into Law 8
+   * tamper-proofing BY DEFAULT: the factory injects a `uuid` field +
+   * a `beforeChange` hook that recomputes the content-uuid on every
+   * write. Side-effect: registers the slug in
+   * `TAMPER_PROOF_COLLECTIONS_REGISTRY` so the existing
+   * `checkContentIntegrityProvable` invariant samples the collection.
+   *
+   * Set `false` ONLY for collections that legitimately can't carry a
+   * content-uuid (rare — placeholder collections, ephemeral state).
+   * Doing so requires a JSDoc rationale and is flagged by the new
+   * `checkEveryAccountingCollectionIsTamperProofed` invariant.
+   */
+  readonly injectTamperProofUuid?: boolean // default true
   /** Inject `status` select (needs `statusOptions` + optional `statusDefault`). */
   readonly injectStatusField?: boolean     // default false
   readonly statusOptions?: ReadonlyArray<StatusOption>
@@ -129,17 +202,35 @@ export interface AccountingCollectionOptions {
   readonly beforeChangeHooks?: CollectionBeforeChangeHook[]
   readonly afterChangeHooks?: CollectionAfterChangeHook[]
 
-  /** Domain-specific fields — the only thing the collection author writes. */
-  readonly fields: () => Field[]
+  /**
+   * Domain-specific fields — the only thing the collection author writes.
+   *
+   * Optional in the type to support the legacy 2-arg call form
+   * `createAccountingCollection(opts, () => [...fields])` used by
+   * pre-BBBBB-cut1 collections (FixedAssets, etc.). At runtime the
+   * factory accepts either `opts.fields` (modern) or a separate
+   * `fieldsThunk` second argument (legacy). One of the two MUST be
+   * provided; if neither is present the factory throws.
+   */
+  readonly fields?: () => Field[]
 }
 
 /**
  * Build a complete `CollectionConfig` from declarative metadata.
  * Authors only write domain-specific fields; everything else is
  * wired by the factory.
+ *
+ * Signature (Slice BBBBBBBB-fix 2026-05-11): accepts BOTH the modern
+ * 1-arg form `{ ..., fields: () => [...] }` AND the legacy 2-arg form
+ * `(opts, () => [...])`. The latter is for pre-BBBBB-cut1 collections
+ * that pass the field thunk as a separate argument (FixedAssets, etc.).
+ *
+ * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
+ *                                  not yet migrated to BBBBB-cut1 shape
  */
 export const createAccountingCollection = (
   opts: AccountingCollectionOptions,
+  legacyFieldsThunk?: () => Field[],
 ): CollectionConfig => {
   const writeRole: UserRole = opts.roleRequired ?? ('accountant' as UserRole)
   const injectMultiTenancy = opts.injectMultiTenancy !== false
@@ -148,12 +239,63 @@ export const createAccountingCollection = (
   const injectStatusField = opts.injectStatusField === true
   const injectAuditTrail = opts.injectAuditTrail !== false
   const injectCreatedBy = opts.injectCreatedBy !== false
+  // Slice PPPPPPPPP-cut1 (2026-05-11) — closes Finding 1 of the
+  // tamper-surface review. Default-on so every accounting collection
+  // gets a recomputed content-uuid on every write. Opt-out is
+  // explicit (`injectTamperProofUuid: false`) and discoverable via
+  // the new invariant.
+  const injectTamperProofUuid = opts.injectTamperProofUuid !== false
+
+  // Slice BBBBBBBB-fix: prefer `opts.fields` (modern); fall back to
+  // the legacy `(opts, fieldsThunk)` 2-arg form. Exactly one must be
+  // present.
+  const fieldsThunk: (() => Field[]) | undefined = opts.fields ?? legacyFieldsThunk
+  if (!fieldsThunk) {
+    throw new Error(
+      `[createAccountingCollection ${opts.slug}] no fields provided — pass either ` +
+        `{ fields: () => [...] } in opts or a () => [...] as the 2nd argument`,
+    )
+  }
 
   // ── Assemble fields: shared helpers around the domain-specific block ──
+  //
+  // Slice GGGGGGGG (2026-05-11): the factory DEDUPES every shared-field
+  // injection against names the user thunk already provides. Legacy
+  // collections (FixedAssets, etc.) inline `multiTenancyField()`,
+  // `notesField()`, sometimes `...auditFields()` and `statusField()`;
+  // the factory injects the same by default. Without dedup, Payload's
+  // sanitizeFields throws `DuplicateFieldName: 'tenant'` (or notes /
+  // approvedAt). With dedup, the user's inline takes precedence and
+  // the factory injection is skipped silently.
+  //
+  // This makes the factory backward-compatible with EVERY existing
+  // collection shape — modern (factory does all the work) AND legacy
+  // (user thunk inlines whatever, factory fills gaps only).
+  const userFields = fieldsThunk()
+  const userFieldNames = new Set<string>()
+  const collectFieldNames = (arr: ReadonlyArray<Field>): void => {
+    for (const f of arr) {
+      if ('name' in f && typeof f.name === 'string') userFieldNames.add(f.name)
+    }
+  }
+  collectFieldNames(userFields)
+
   const fields: Field[] = []
-  if (injectMultiTenancy) fields.push(multiTenancyField())
-  fields.push(...opts.fields())
-  if (injectStatusField) {
+  // 0. Slice PPPPPPPPP-cut1 — content-addressable tamper-proof uuid
+  //    (Law 8). Goes first so it appears at the top of the admin form
+  //    + database schema. Dedupe: user collections that already inline
+  //    a `uuid` field keep their version (legacy / migration path).
+  if (injectTamperProofUuid && !userFieldNames.has('uuid')) {
+    fields.push(...tamperProofUuidField(opts.slug))
+  }
+  // 1. Multi-tenancy field
+  if (injectMultiTenancy && !userFieldNames.has('tenant')) {
+    fields.push(multiTenancyField())
+  }
+  // 2. User's domain-specific fields (verbatim)
+  fields.push(...userFields)
+  // 3. Status field
+  if (injectStatusField && !userFieldNames.has('status')) {
     if (!opts.statusOptions) {
       throw new Error(
         `[createAccountingCollection ${opts.slug}] injectStatusField=true requires statusOptions`,
@@ -164,17 +306,59 @@ export const createAccountingCollection = (
       opts.statusDefault ?? opts.statusOptions[0]?.value ?? 'draft',
     ))
   }
-  if (injectAuditFields) fields.push(...auditFields({ readOnly: true }))
-  if (injectNotesField) fields.push(notesField())
+  // 4. Audit fields (createdBy / approvedBy / approvedAt) — only inject
+  //    the entries the user didn't already provide. Slice GGGGGGGG.
+  if (injectAuditFields) {
+    for (const f of auditFields({ readOnly: true })) {
+      const n = (f as { name?: string }).name
+      if (typeof n === 'string' && !userFieldNames.has(n)) fields.push(f)
+    }
+  }
+  // 5. Notes field
+  if (injectNotesField && !userFieldNames.has('notes')) {
+    fields.push(notesField())
+  }
 
   // ── Assemble hooks: tenant + createdBy + audit-trail by default ──
   const beforeValidate = [autoPopulateTenant]
   const beforeChange = [
     ...(injectCreatedBy ? [autoPopulateCreatedBy] : []),
     ...(opts.beforeChangeHooks ?? []),
+    // Slice PPPPPPPPP-cut1 — uuid recompute is the LAST beforeChange
+    // hook so it sees the merged final state every prior hook (user
+    // mutations, autoPopulateCreatedBy, autoPopulateTenant via the
+    // beforeValidate pass) has produced. Manual uuid overrides throw.
+    ...(injectTamperProofUuid ? [tamperProofBeforeChangeHook(opts.slug)] : []),
   ]
+  // Slice AAAAAAAA (2026-05-11) — translate structured `emits:` entries
+  // into runtime producer hooks. The string-form entries stay as pure
+  // metadata (ConsistencyAgent's hourly sweep keeps a list of Class F
+  // offenders for those, so the gap remains visible until the author
+  // upgrades to the structured form).
+  const structuredEmits: CollectionAfterChangeHook[] = []
+  for (const e of opts.emits ?? []) {
+    if (typeof e === 'string') continue
+    if (e.onCreate === true) {
+      structuredEmits.push(emitOnCreate(e.event, e.aggregate))
+    } else if (typeof e.onStatus === 'string' && e.onStatus.length > 0) {
+      structuredEmits.push(emitOnStatusTransition(e.onStatus, e.event, e.aggregate))
+    } else {
+      throw new Error(
+        `[createAccountingCollection ${opts.slug}] emits: entry for '${e.event}' must set onCreate:true OR onStatus:'<value>'`,
+      )
+    }
+  }
+  // Slice BBBBBBBB (2026-05-11) — pull chain-declared producers from
+  // BUSINESS_CHAINS. Any chain step `producer:` field scoped to this
+  // slug becomes an afterChange hook automatically. This is on top of
+  // the per-collection structured `emits:` declared in opts (those
+  // remain for events not yet expressed in BUSINESS_CHAINS, e.g.
+  // collection-internal events like `address:erased`).
+  const chainProducers = wireChainProducersFor(opts.slug)
   const afterChange = [
     ...(injectAuditTrail ? [auditTrailAfterChange(opts.slug)] : []),
+    ...chainProducers,
+    ...structuredEmits,
     ...(opts.afterChangeHooks ?? []),
   ]
 

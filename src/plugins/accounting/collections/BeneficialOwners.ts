@@ -28,7 +28,12 @@ const BeneficialOwners: CollectionConfig = {
   },
   fields: [
     multiTenancyField(),
-    { name: 'entity', type: 'relationship', relationTo: 'addresses', required: true, admin: { description: 'Legal entity whose UBO this is.' } },
+    // Slice XXXXXXXX-b (2026-05-11): retargeted from 'addresses' → 'legal-entities'.
+    // The field's description ("Legal entity whose UBO this is") was already
+    // correct — only the relation was misaimed (legacy ecommerce-plugin
+    // address-as-entity shape). AMLD-5 Art.30 + US CTA both register the
+    // ultimate beneficial owner of a *legal entity*, not an address.
+    { name: 'entity', type: 'relationship', relationTo: 'legal-entities', required: true, admin: { description: 'Legal entity whose UBO this is (AMLD-5 Art.30 / US CTA register subject).' } },
     { name: 'fullName', type: 'text', required: true },
     { name: 'dateOfBirth', type: 'date' },
     { name: 'nationality', type: 'text', admin: { description: 'ISO 3166-1 alpha-2 country code.' } },

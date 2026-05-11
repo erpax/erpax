@@ -115,14 +115,38 @@
   // @compliance SOX §404 internal-controls atomic-state
   // @security ISO-27002 §5.4 segregation-of-duties race-free
   "durable_objects": {
+    // Slice VVVVVVVV (2026-05-11) — one DO binding per type.
+    // Per user "use one binding of a type. when using DRY uuid logic
+    // conflicts do not occur".
+    //
+    // ERPAX_DO hosts every kind of strict-coordination state. The
+    // INSTANCE's purpose is encoded in the name argument passed to
+    // `idFromName('<purpose>:<scoped-key>')`:
+    //
+    //   counter:t:<tenantId>/feature/<feature>   → atomic counter
+    //   ratelimit:t:<tenantId>/feature/<feature> → token bucket
+    //   joblock:<jobId>                           → distributed lock
+    //   chain:t:<tenantId>                        → uuid-linked audit chain
+    //
+    // The old 4-binding aliases (TENANT_QUOTA / RATE_LIMITER /
+    // JOB_LOCK / AUDIT_CHAIN_DO) stay declared but point at the same
+    // unified class so existing migrations remain valid and existing
+    // tenants don't lose state. New code uses ERPAX_DO exclusively.
     "bindings": [
-      { "name": "TENANT_QUOTA",  "class_name": "TenantQuotaCounter" },
-      { "name": "RATE_LIMITER",  "class_name": "RateLimiter" },
-      { "name": "JOB_LOCK",      "class_name": "JobLock" },
+      { "name": "ERPAX_DO",         "class_name": "ErpaxStateDO" },
+      { "name": "TENANT_QUOTA",     "class_name": "TenantQuotaCounter" },
+      { "name": "RATE_LIMITER",     "class_name": "RateLimiter" },
+      { "name": "JOB_LOCK",         "class_name": "JobLock" },
+      { "name": "AUDIT_CHAIN_DO",   "class_name": "AuditChain" },
     ],
   },
   "migrations": [
     { "tag": "v1-yyy", "new_sqlite_classes": ["TenantQuotaCounter", "RateLimiter", "JobLock"] },
+    { "tag": "v2-uuuuuuuu", "new_sqlite_classes": ["AuditChain"] },
+    // Slice VVVVVVVV — unified ErpaxStateDO class. New deployments use
+    // ERPAX_DO; legacy bindings keep working against the original
+    // classes (their migration tags above still apply).
+    { "tag": "v3-vvvvvvvv", "new_sqlite_classes": ["ErpaxStateDO"] },
   ],
   // Browser Rendering — server-side PDF/A invoice generation, signed
   // PAdES attestation rendering from HTML, screenshot capture for

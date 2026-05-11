@@ -157,6 +157,29 @@ export interface ErpaxMcpTool {
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
+
+/** PascalCase a kebab- or colon-delimited string. Used by the
+ *  ConsistencyAgent (Slice ZZZZZZZZ) to suggest emitter function names. */
+const toPascal = (s: string): string =>
+  s
+    .replace(/[:_-]+/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+    .join('')
+
+/**
+ * Slice YYYYYYYY — small helper types for the cloudflare.* tool family.
+ * The full ErpaxCfEnv type lives in services/cloudflare; here we only
+ * need a structural placeholder for the `(req as ErpaxCfEnvLite)` cast.
+ */
+type ErpaxCfEnvLite = Record<string, unknown>
+
+/** Read the tenantId off the request user (or 'platform' fallback). */
+function tenantOf(req: PayloadRequest): string {
+  const u = req.user as { tenant?: string } | undefined
+  return u?.tenant ?? 'platform'
+}
 const localeEnum = z.enum(supportedLocales as unknown as [string, ...string[]])
 
 /**
@@ -290,7 +313,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.agents.dispatch',
-      description: 'Dispatch a domain event to every subscribed agent. Returns the AgentEffect[] each agent produced. Gated by super-admin role at the plugin layer.',
+      description: 'Dispatch a synthetic DomainEvent to every subscribed agent via agentRuntime.dispatchEvent. Returns the AgentEffect[] each agent produced. Slice MMMMMMMM (2026-05-11) — replaces the EEEEE-era stub with the real round-trip. Gated by super-admin role at the plugin layer.',
       parameters: {
         event: z.object({
           id: z.string(),
@@ -298,9 +321,159 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
           payload: z.record(z.unknown()),
         }),
       },
-      async handler({ event }) {
-        // Wired in EEEEE once FinanceAgent ships (full round-trip test).
-        return text(`(stub) dispatch event=${(event as { id: string }).id}`)
+      async handler({ event }, req) {
+        const { agentRuntime } = await import('@/services/agents/bootstrap')
+        const { createInProcessMcpClient } = await import('@/services/agents/mcp/in-process-client')
+        const e = event as { id: string; tenantId: string; payload: Record<string, unknown> }
+        const ctx = {
+          tenantId: e.tenantId,
+          payload: req.payload,
+          mcp: createInProcessMcpClient(buildErpaxMcpTools(registry), req),
+          chain: undefined,
+        }
+        const effects = await agentRuntime.dispatchEvent(ctx as never, {
+          id: e.id, tenantId: e.tenantId, payload: e.payload,
+          emittedAt: new Date().toISOString(),
+        } as never)
+        return json({
+          dispatched: { event: e.id, tenant: e.tenantId },
+          subscribers: agentRuntime.registry.bySubscribedEvent(e.id).map((a) => a.id),
+          effectCount: effects.length,
+          effects,
+        })
+      },
+    },
+    // ─── Slice MMMMMMMM (2026-05-11) — erpax.events.* family ──────────
+    // Event system exposed via MCP. Closes the observability + control
+    // gap on the agent runtime: callers can list recent events, fire
+    // synthetic ones, see who subscribes to a given event id, and
+    // replay a stored event back through the subscriber graph.
+    {
+      name: 'erpax.events.list',
+      description: 'List recent audit-events for a tenant (or all tenants if super-admin). Sorted by createdAt desc. Slice MMMMMMMM — observability into the live event stream the agent runtime drives.',
+      parameters: {
+        tenantId: z.string().optional(),
+        eventType: z.string().optional(),
+        chainId: z.string().optional(),
+        limit: z.number().int().min(1).max(500).optional(),
+      },
+      async handler({ tenantId, eventType, chainId, limit }, req) {
+        const where: Record<string, unknown> = {}
+        if (typeof tenantId === 'string') where.tenant = { equals: tenantId }
+        if (typeof eventType === 'string') where.eventType = { equals: eventType }
+        if (typeof chainId === 'string') where.chainId = { equals: chainId }
+        const events = await req.payload.find({
+          collection: 'audit-events' as never,
+          where: Object.keys(where).length > 0 ? where : undefined,
+          sort: '-createdAt',
+          limit: (limit as number | undefined) ?? 50,
+        })
+        return json({
+          total: events.totalDocs,
+          page: events.page,
+          docs: events.docs.map((d: Record<string, unknown>) => ({
+            id: d.id,
+            eventType: d.eventType,
+            tenantId: d.tenant,
+            chainId: d.chainId,
+            aggregateType: d.aggregateType,
+            aggregateId: d.aggregateId,
+            createdAt: d.createdAt,
+          })),
+        })
+      },
+    },
+    {
+      name: 'erpax.events.emit',
+      description: 'Emit a real DomainEvent through emitDomainEvent — persists to audit-events + drives the subscriber graph + records the Merkle leaf. Use for testing the event-driven path end-to-end. Slice MMMMMMMM.',
+      parameters: {
+        eventType: z.string(),
+        tenantId: z.string(),
+        aggregateType: z.enum(['invoice', 'bill', 'payment', 'inventory_transfer', 'bank_statement', 'subscription', 'order', 'fixed_asset']),
+        aggregateId: z.string(),
+        payload: z.record(z.unknown()).optional(),
+        label: z.string().optional(),
+      },
+      async handler({ eventType, tenantId, aggregateType, aggregateId, payload, label }, req) {
+        const { emitDomainEvent } = await import('@/services/emit-domain-event')
+        const eventId = (globalThis as { crypto?: { randomUUID: () => string } }).crypto?.randomUUID?.() ?? `evt_${Date.now()}`
+        await emitDomainEvent(
+          req as never,
+          {
+            eventId,
+            eventType: eventType as never,
+            tenantId: tenantId as string,
+            aggregateId: aggregateId as string,
+            aggregateType: aggregateType as never,
+            timestamp: new Date(),
+            userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+            payload: (payload as Record<string, unknown>) ?? {},
+          } as never,
+          (label as string | undefined) ?? `${eventType}: ${aggregateId}`,
+        )
+        return json({ ok: true, eventId, eventType, tenantId, aggregateId })
+      },
+    },
+    {
+      name: 'erpax.events.subscribers',
+      description: 'List every registered DomainAgent that subscribes to the given event id (or all subscriptions if no event id is provided). Slice MMMMMMMM — surfaces the event-graph closure used by Law 4.',
+      parameters: { eventId: z.string().optional() },
+      async handler({ eventId }) {
+        const all = registry.all()
+        if (typeof eventId === 'string') {
+          return json({
+            eventId,
+            subscribers: registry.bySubscribedEvent(eventId).map((a) => ({
+              id: a.id,
+              ownsCollections: a.ownsCollections,
+              emits: a.emits,
+            })),
+          })
+        }
+        // Aggregate: event id → [agent ids]
+        const byEvent: Record<string, string[]> = {}
+        for (const a of all) {
+          for (const ev of a.subscribesTo) {
+            ;(byEvent[ev] ??= []).push(a.id)
+          }
+        }
+        return json({
+          totalEvents: Object.keys(byEvent).length,
+          byEvent,
+        })
+      },
+    },
+    {
+      name: 'erpax.events.replay',
+      description: 'Re-fire a stored audit-event back through the subscriber graph. Useful for testing a handler change against historical traffic. Does NOT re-persist (the original audit-event stays canonical). Slice MMMMMMMM.',
+      parameters: { eventDocId: z.string() },
+      async handler({ eventDocId }, req) {
+        const doc = (await req.payload.findByID({
+          collection: 'audit-events' as never,
+          id: eventDocId as string,
+        })) as Record<string, unknown>
+        if (!doc) return text(`audit-event ${String(eventDocId)} not found`)
+        const { agentRuntime } = await import('@/services/agents/bootstrap')
+        const { createInProcessMcpClient } = await import('@/services/agents/mcp/in-process-client')
+        const tenantId = typeof doc.tenant === 'string' ? doc.tenant : 'unknown'
+        const ctx = {
+          tenantId,
+          payload: req.payload,
+          mcp: createInProcessMcpClient(buildErpaxMcpTools(registry), req),
+          chain: undefined,
+        }
+        const effects = await agentRuntime.dispatchEvent(ctx as never, {
+          id: doc.eventType as string,
+          tenantId,
+          payload: (doc.payload as Record<string, unknown> | undefined) ?? {},
+          emittedAt: doc.createdAt as string,
+        } as never)
+        return json({
+          replayed: doc.eventType,
+          subscribers: agentRuntime.registry.bySubscribedEvent(doc.eventType as string).map((a) => a.id),
+          effectCount: effects.length,
+          effects,
+        })
       },
     },
     {
@@ -1491,7 +1664,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.platform.allAgentLawProfiles',
-      description: 'Slice EEEEEEE — derive law profiles for every registered agent. Drives the conservation-dashboard surface\'s per-agent breakdown (W3C JSON-LD 1.1).',
+      description: 'Slice EEEEEEE — agent×Conservation-Law coverage matrix. For each of the 16 DomainAgents (Finance/Consistency/etc.), reports which subset of the 52 laws it owns / observes / emits. Powers per-agent accountability breakdowns. Output: ndjson rows {agentId, ownsLaws, observesLaws, emitsLaws}.',
       parameters: {},
       async handler() { return json(buildAllAgentLawProfiles()) },
     },
@@ -1588,7 +1761,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.listTypes',
-      description: 'Slice GGGGGGG — return every registered type. Drives the conservation-dashboard surface\'s type-evolution view.',
+      description: 'Slice GGGGGGG — TypeRegistry inventory. Returns each content-addressed type definition (collection field-shape, hook signature, MCP-tool parameter schema) with its baseline uuid. Used by federation peers to verify type compatibility before exchanging rows.',
       parameters: {},
       async handler() { return json(listTypes()) },
     },
@@ -1897,6 +2070,340 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       parameters: { cwd: z.string().optional() },
       async handler({ cwd }) {
         return json(checkMcpRebuildableFromSource({ liveTools: tools, cwd: cwd as string | undefined }))
+      },
+    },
+  )
+
+  // ── Slice TTTTTTTT (2026-05-11) — uuid-linked DO chains ──────────
+  // Every append carries leafUuid = sha256(prev || payload || ts);
+  // tampering breaks every subsequent leaf detectably. Per user
+  // "using durable objects linked using uuid would prevent tampering".
+  tools.push(
+    {
+      name: 'erpax.audit.chainAppend',
+      description: 'Append a uuid-linked leaf to the tenant\'s AUDIT_CHAIN_DO. Leaf carries prevLeafUuid + payloadUuid + timestamp → leafUuid; any mutation breaks the chain at the mutated index. Tenant-scoped per Slice SSSSSSSS mediator. Returns the appended UuidLinkedLeaf.',
+      parameters: { payload: z.record(z.unknown()) },
+      async handler({ payload }, req) {
+        const env = (req as { env?: unknown }).env as { AUDIT_CHAIN_DO?: unknown } | undefined
+        if (!env?.AUDIT_CHAIN_DO) {
+          return text('AUDIT_CHAIN_DO binding not available in this runtime')
+        }
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never,
+          tenantId: (req.user as { tenant?: string } | undefined)?.tenant ?? 'platform',
+          payload: req.payload,
+          user: req.user as never,
+        })
+        const leaf = await m.auditChainAppendLinked(payload as Record<string, unknown>)
+        return json(leaf)
+      },
+    },
+    {
+      name: 'erpax.audit.chainVerify',
+      description: 'Walk the tenant\'s AUDIT_CHAIN_DO leaves end-to-end (or a fromSeq/toSeq sub-range) and verify every uuid link. Returns ChainVerifyResult with brokenAtSeq pinpointing the first tampered leaf, or ok:true with chainLength when intact. Slice TTTTTTTT.',
+      parameters: { fromSeq: z.number().int().min(0).optional(), toSeq: z.number().int().min(0).optional() },
+      async handler({ fromSeq, toSeq }, req) {
+        const env = (req as { env?: unknown }).env as { AUDIT_CHAIN_DO?: unknown } | undefined
+        if (!env?.AUDIT_CHAIN_DO) {
+          return text('AUDIT_CHAIN_DO binding not available in this runtime')
+        }
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never,
+          tenantId: (req.user as { tenant?: string } | undefined)?.tenant ?? 'platform',
+          payload: req.payload,
+          user: req.user as never,
+        })
+        const result = await m.auditChainVerify({
+          fromSeq: fromSeq as number | undefined,
+          toSeq: toSeq as number | undefined,
+        })
+        return json(result)
+      },
+    },
+  )
+
+  // ── Slice YYYYYYYY (2026-05-11) — erpax.cloudflare.* MCP surface ──
+  // Every remaining CF binding routed through the tenant-scoped +
+  // audit-trailed + RBAC-gated mediator (Slice SSSSSSSS makeMediator).
+  // No direct env.<BINDING> access from MCP handlers (Slice SSSSSSSS
+  // invariant checkMcpBindingsAreMediated enforces this).
+  tools.push(
+    {
+      name: 'erpax.cloudflare.vectorizeQuery',
+      description: 'Semantic search over the tenant\'s document vectors via VECTORIZE_DOCS index. Tenant scoping enforced in the filter (tenant_id added automatically). Returns top-K matches with scores + metadata. Slice YYYYYYYY.',
+      parameters: {
+        vector: z.array(z.number()),
+        topK: z.number().int().min(1).max(50).optional(),
+        filter: z.record(z.unknown()).optional(),
+      },
+      async handler({ vector, topK, filter }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        return json(await m.vectorizeQuery({ vector: vector as number[], topK: topK as number | undefined, filter: filter as Record<string, unknown> | undefined }))
+      },
+    },
+    {
+      name: 'erpax.cloudflare.vectorizeInsert',
+      description: 'Insert vectors into VECTORIZE_DOCS. tenant_id is forced into every vector\'s metadata so cross-tenant queries are filterable + audit-trail proves provenance.',
+      parameters: {
+        vectors: z.array(z.object({
+          id: z.string(),
+          values: z.array(z.number()),
+          metadata: z.record(z.unknown()).optional(),
+        })),
+      },
+      async handler({ vectors }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        await m.vectorizeInsert(vectors as never)
+        return json({ ok: true, inserted: (vectors as unknown[]).length })
+      },
+    },
+    {
+      name: 'erpax.cloudflare.queueSendNamed',
+      description: 'Send to one of the five named queues (ai-batch / einvoice-out / dunning-out / period-close / email-out) via the mediator. tenantId + mediatorAt are auto-stamped. Slice YYYYYYYY.',
+      parameters: {
+        queueName: z.enum(['ai-batch', 'einvoice-out', 'dunning-out', 'period-close', 'email-out', 'generic']),
+        event: z.record(z.unknown()),
+      },
+      async handler({ queueName, event }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        await m.queueSendNamed(queueName as never, event as Record<string, unknown>)
+        return json({ ok: true, queueName })
+      },
+    },
+    {
+      name: 'erpax.cloudflare.browserRender',
+      description: 'Server-side render a URL or raw HTML to PDF/PNG via the Browser Rendering binding. Used for invoice PDFs, PAdES attestation rendering, e2e walkthrough screenshots. Tenant-scoped + audit-trailed. Slice YYYYYYYY.',
+      parameters: {
+        url: z.string().optional(),
+        html: z.string().optional(),
+        format: z.enum(['pdf', 'png']),
+        opts: z.record(z.unknown()).optional(),
+      },
+      async handler({ url, html, format, opts }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        const bytes = await m.browserRender({
+          url: url as string | undefined,
+          html: html as string | undefined,
+          format: format as 'pdf' | 'png',
+          opts: opts as Record<string, unknown> | undefined,
+        })
+        if (!bytes) return text('browser render unavailable or failed')
+        return json({ ok: true, format, bytes: bytes.byteLength })
+      },
+    },
+    {
+      name: 'erpax.cloudflare.emailSend',
+      description: 'Send outbound transactional email via the EMAIL_SEND binding. Tenant-scoped (from-address must be a tenant-verified domain or platform fallback). Audit-trailed per RFC 5321 + GDPR Art.7 consent.',
+      parameters: {
+        from: z.string(),
+        to: z.string(),
+        raw: z.string(),
+      },
+      async handler({ from, to, raw }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        await m.emailSend({ from: from as string, to: to as string, raw: raw as string })
+        return json({ ok: true, to })
+      },
+    },
+    {
+      name: 'erpax.cloudflare.workflowsCreate',
+      description: 'Trigger a Cloudflare Workflow run via the WORKFLOWS binding. tenantId is auto-stamped on the workflow input. Slice YYYYYYYY.',
+      parameters: { workflowId: z.string(), input: z.unknown() },
+      async handler({ workflowId, input }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        return json(await m.workflowsCreate({ workflowId: workflowId as string, input }))
+      },
+    },
+    {
+      name: 'erpax.cloudflare.analyticsWrite',
+      description: 'Write a data point to an Analytics Engine dataset (default or ai). Tenant-tagged automatically; pass a redactor for PII when writing user-facing fields. Slice YYYYYYYY.',
+      parameters: {
+        dataPoint: z.record(z.unknown()),
+        dataset: z.enum(['default', 'ai']).optional(),
+      },
+      async handler({ dataPoint, dataset }, req) {
+        const env = (req as { env?: unknown }).env as ErpaxCfEnvLite | undefined
+        if (!env) return text('CF env not available in this runtime')
+        const { makeMediator } = await import('@/services/cloudflare')
+        const m = makeMediator({
+          env: env as never, tenantId: tenantOf(req), payload: req.payload, user: req.user as never,
+        })
+        m.analyticsWrite(dataPoint as Record<string, unknown>, undefined, (dataset as 'default' | 'ai' | undefined) ?? 'default')
+        return json({ ok: true })
+      },
+    },
+  )
+
+  // ── Slice ZZZZZZZZ (2026-05-11) — ConsistencyAgent tool surface ──
+  // Per user 'use the mcp agents. create new if necessary. one
+  // inconsistency leads to another. address all.' These are the
+  // proposal-only tools the ConsistencyAgent calls when an invariant
+  // raises a code-consistency gap. They emit a proposal record but
+  // don't mutate source — the engineer applies after review (or, in
+  // a future cut, after the proposer round-trips through tsc).
+  tools.push(
+    {
+      name: 'erpax.consistency.scan',
+      description: 'Run the architecture-invariant suite focused on code-consistency drift (Class F/I/J/M from scripts/find-implementation-gaps.py). Returns the offender list keyed by check id. Audit-trailed per ISO 19011 §6.4.6.',
+      parameters: {},
+      async handler(_args, req) {
+        const { runAllInvariants } = await import('@/services/architecture-invariants')
+        const repoRoot = typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : undefined
+        const suite = await runAllInvariants({ payload: req.payload, repoRoot })
+        const handled = new Set([
+          'factory-emits-are-hooked',
+          'services-reference-real-slugs',
+          'relation-to-slugs-exist',
+          'chain-emits-have-producer',
+          'referential-harmony',
+          'no-plugin-owned-slug-collision',
+        ])
+        const results = [...suite.fails, ...suite.warns].filter((r) => handled.has(r.check))
+        return json({
+          inspected: results.length,
+          byCheck: Object.fromEntries(
+            results.map((r) => [r.check, { severity: r.severity, count: r.offenders?.length ?? 0, sample: (r.offenders ?? []).slice(0, 8) }]),
+          ),
+        })
+      },
+    },
+    {
+      name: 'erpax.consistency.status',
+      description: 'Single-endpoint observability snapshot for ConsistencyAgent: runs the invariant suite live, reports current gap counts by class, the most recent N applied fixes from the meta-automation proposals log, and a top-level readiness flag (clean / drift-detected / errors). Any external observer can poll this. Slice KKKKKKKK (2026-05-11) — closes the observability gap on the autonomous loop. Audit-trailed per ISO 19011 §6.4.6.',
+      parameters: { recentApplyLimit: z.number().int().min(1).max(50).optional() },
+      async handler({ recentApplyLimit }, req) {
+        const { runAllInvariants } = await import('@/services/architecture-invariants')
+        const { listProposals } = await import('@/services/meta-automation')
+        const repoRoot = typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : undefined
+        const limit = (recentApplyLimit as number | undefined) ?? 10
+        // Run live invariant suite; pivot results into a per-class summary.
+        const consistencyChecks = new Set([
+          'factory-emits-are-hooked',
+          'services-reference-real-slugs',
+          'relation-to-slugs-exist',
+          'chain-emits-have-producer',
+          'referential-harmony',
+          'no-plugin-owned-slug-collision',
+        ])
+        let suite
+        let suiteError: string | undefined
+        try {
+          suite = await runAllInvariants({ payload: req.payload, repoRoot })
+        } catch (err) {
+          suiteError = err instanceof Error ? err.message : String(err)
+        }
+        const consistencyResults = suite
+          ? [...suite.fails, ...suite.warns].filter((r) => consistencyChecks.has(r.check))
+          : []
+        const byClass: Record<string, { severity: 'warn' | 'fail'; count: number; sample: ReadonlyArray<string> }> = {}
+        for (const r of consistencyResults) {
+          byClass[r.check] = {
+            severity: r.severity as 'warn' | 'fail',
+            count: r.offenders?.length ?? 0,
+            sample: (r.offenders ?? []).slice(0, 4),
+          }
+        }
+        // Pull the last N proposals from meta-automation's in-memory log.
+        const allProposals = listProposals()
+        const recent = allProposals.slice(-limit).reverse()
+        // Readiness flag.
+        const hasFails = (suite?.fails.length ?? 0) > 0
+        const hasConsistencyWarns = consistencyResults.some((r) => r.severity === 'warn')
+        const readiness: 'clean' | 'drift-detected' | 'errors' = suiteError
+          ? 'errors'
+          : hasFails || hasConsistencyWarns
+            ? 'drift-detected'
+            : 'clean'
+        return json({
+          at: new Date().toISOString(),
+          readiness,
+          suiteError,
+          consistencyGaps: {
+            totalCount: consistencyResults.reduce((n, r) => n + (r.offenders?.length ?? 0), 0),
+            byClass,
+          },
+          recentApplies: recent.map((p) => ({
+            invariant: p.invariant,
+            severity: p.severity,
+            proposedTool: p.proposedTool,
+            autoApply: p.autoApply,
+            rationale: p.rationale,
+          })),
+          suiteSummary: suite
+            ? { fails: suite.fails.length, warns: suite.warns.length, passes: suite.passes.length }
+            : null,
+        })
+      },
+    },
+    {
+      name: 'erpax.consistency.applyAll',
+      description: 'Apply every safe deterministic consistency fix in bulk: (1) backfill BUSINESS_CHAINS step.producer via wireChainProducersFor, (2) upgrade legacy string-form `emits:` to structured wiring. Idempotent. Returns AppliedChange[] for the audit log. Called hourly by ConsistencyAgent (autoApply:true on the underlying proposals). Per user 2026-05-11: "mcp should immediately handle all in bulk".',
+      parameters: { dryRun: z.boolean().optional() },
+      async handler({ dryRun }) {
+        const { applyAllConsistencyFixes } = await import('@/services/consistency-apply')
+        const repoRoot = typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : undefined
+        return json(applyAllConsistencyFixes({ repoRoot, dryRun: dryRun === true }))
+      },
+    },
+    {
+      name: 'erpax.consistency.proposeEmitterWiring',
+      description: 'For collections that declared `emits: ["x:y"]` without a producer (Class F / Law 4 — event-graph closure), propose the chainEventEmitters wiring — which emitOnStatusTransition shape + which aggregate type to bind. Returns a list of FixProposal records; does NOT mutate source.',
+      parameters: { offenders: z.array(z.string()).optional() },
+      async handler({ offenders }) {
+        const proposals = (offenders ?? []).map((o) => ({
+          offender: o,
+          // Heuristic: parse `FileName.ts:'event:type'` and propose
+          //   `export const emit<PascalEvent> = emitOnStatusTransition('<status>', '<event:type>', '<aggregate>')`
+          // where <status> = event-suffix, <aggregate> = guessed from the collection family.
+          suggestedHook: `add to src/hooks/chainEventEmitters.ts: emit${toPascal(o.split("'")[1] ?? 'event')} = emitOnStatusTransition('<status>', '${o.split("'")[1] ?? ''}', '<aggregateType>')`,
+          applyVia: 'manual review + tsc; round-tripping proposer lands in a later cut',
+        }))
+        return json({ count: proposals.length, proposals })
+      },
+    },
+    {
+      name: 'erpax.consistency.proposeSlugRebind',
+      description: 'For relationTo: or payload.find({collection:}) targets pointing at non-existent slugs (Class I/M / Law 10 — referential harmony), propose either (a) a rebind to the right existing slug (Levenshtein-near match) or (b) scaffolding a new collection. Returns FixProposal records; does NOT mutate source.',
+      parameters: { offenders: z.array(z.string()).optional() },
+      async handler({ offenders }) {
+        const proposals = (offenders ?? []).map((o) => ({
+          offender: o,
+          suggestion: 'manual: choose existing slug or scaffold collection via Slice XXXXXXXX pattern (factory + register barrel + register plugin order)',
+          applyVia: 'human review',
+        }))
+        return json({ count: proposals.length, proposals })
       },
     },
   )

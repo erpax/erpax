@@ -40,7 +40,10 @@ const Refunds: CollectionConfig = {
     { name: 'refundNumber', type: 'text', required: true, unique: true, index: true },
     { name: 'creditMemo', type: 'relationship', relationTo: 'credit-memos', required: true },
     { name: 'invoice', type: 'relationship', relationTo: 'invoices' },
-    { name: 'order', type: 'relationship', relationTo: 'orders' },
+    // Slice XXXXXXXX-c (2026-05-11): retargeted from 'orders' → 'sales-orders'.
+    // ISO-20022 pacs.004 cash-out can reference an originating sales order
+    // for end-to-end O2C audit traceability when refunds skip the invoice.
+    { name: 'order', type: 'relationship', relationTo: 'sales-orders' },
     { name: 'amount', type: 'number', required: true, min: 0 },
     currencyField(),
     {

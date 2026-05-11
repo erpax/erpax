@@ -51,7 +51,45 @@ export { default as CurrencyRates } from './CurrencyRates'
 export { default as FixedAssets } from './FixedAssets'
 export { default as BudgetPlanning } from './BudgetPlanning'
 
+// Slice QQQQQQQQ (2026-05-11) — Standards collection backs the 12
+// erpax.standards.* MCP tools with a persistent data layer (per-tenant
+// citation graph + conflict / supersession trail). Conservation Laws
+// 27 + 28 + 38.
+export { default as Standards } from './Standards'
+
+// Slice RRRRRRRR (2026-05-11) — Memories collection: generic
+// persistence for MCP tool + DomainAgent in-memory state (proposals,
+// strategy decisions, drift snapshots, emerging gaps, observations).
+// Conservation Laws 8 (content-uuid) + 10 (relatedTo graph).
+export { default as Memories } from './Memories'
+
+// Slice ZZZZZZZZ (2026-05-11) — McpToolMetadata: localized + tenant-
+// extensible overlay for every erpax.* MCP tool. Translators fill
+// description.<locale> via the admin UI; the catalog overlays at
+// request time. Per user "in payload even data is translatable so
+// translations are automatic".
+export { default as McpToolMetadata } from './McpToolMetadata'
+
+// Slice AAAAAAAAA (2026-05-11) — Translations: per-tenant override
+// layer ABOVE McpToolMetadata. Resolution order:
+//   tenant translation > mcp-tool-metadata > code default.
+// Per user "tenants may override app translations using the
+// translations collection".
+export { default as Translations } from './Translations'
+
 // ─── ERP Master Data (referenced from Invoices/Payments/etc.) ────────
+// Slice EEEEEEEE-fix (2026-05-11) — Addresses NOT exported.
+// @payloadcms/plugin-ecommerce already registers an `addresses`
+// collection at the same slug; registering our richer version causes
+// `DuplicateCollection: Collection slug already in use: "addresses"`
+// at config-load. The 23+ relationTo: 'addresses' refs resolve against
+// the plugin's collection. If the GDPR-erasure fields are ever needed,
+// either:
+//   (a) override the ecommerce plugin's addresses via its collectionOverride
+//       hook in configureEcommercePlugin.ts, OR
+//   (b) rename our slug to 'accounting-addresses' + update all consumers.
+// The source file is retained for the (b) path; barrel export is suppressed.
+// export { default as Addresses } from './Addresses'
 export { Customers } from './Customers'
 export { Vendors } from './Vendors'
 export { TaxJurisdictions } from './TaxJurisdictions'
@@ -71,6 +109,12 @@ export { default as CreditMemos } from './CreditMemos'
 export { default as PurchaseOrders } from './PurchaseOrders'
 export { default as GoodsReceipts } from './GoodsReceipts'
 export { default as Quotes } from './Quotes'
+// SalesOrders — Slice XXXXXXXX-c (2026-05-11) — closes the O2C gap.
+// Quote → SalesOrder → Shipment → Invoice (distinct from purchase-orders
+// which is P2P / vendor-side). Owns the 'sales-orders' slug; 4 consumers
+// (Quotes.convertedToOrder, Returns.order, Shipments.order, Refunds.order)
+// retargeted from the orphan 'orders' slug to this canonical target.
+export { default as SalesOrders } from './SalesOrders'
 export { default as Refunds } from './Refunds'
 export { default as BankAccounts } from './BankAccounts'
 
