@@ -114,7 +114,7 @@ export function manifestOf(agent: DomainAgent): AgentBlockManifest {
       events: [...agent.emits],
       // Default: every agent can emit any AgentEffect kind. Specific
       // agents can be narrowed by inspecting their handler bodies.
-      effectKinds: ['create', 'update', 'notify', 'audit', 'escalate', 'emit', 'capture'],
+      effectKinds: ['create', 'update', 'notify', 'audit', 'escalate', 'emit', 'capture'] as const,
     },
     mcpTools: [],   // populated externally by scanning tool-defs registry
     standards: [],  // populated externally by reading agent JSDoc @standard tags
