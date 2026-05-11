@@ -1834,6 +1834,86 @@ A country tenant respects all three Trinity laws at sovereign scale: every treat
 
 @standard ISO 3166-1 alpha-2/3/numeric; UN M49 + UN SDG; IMF GFSM 2014; World Bank IDS; OECD GovDB / BEPS Pillar 2 / CRS; WCO HS; WTO GATS / TRIPS; UN/CEFACT BRS + UN/EDIFACT; SWIFT BIC + ISO 13616 IBAN + ISO 20022; W3C DID Core 1.0 + W3C VC Data Model 2.0; EU eIDAS QTSP; IFRS IPSAS 22; OECD TIWB; UN A/RES/68/261.
 
+## 0ad. Missing collections stored in 10 dimensional plugins
+
+Per user 'start by creating the missing collections stored in 10 dimensional plugins'. The architecture finally splits along the 10 vortex axes from §0b. Each vortex becomes a **dimensional plugin** holding its collections, agents, hooks, and MCP tools. Slice LLLLLLLL ships `src/services/plugins/dimensions.ts` with the 10-dimension declaration + the missing country-level collections from §0ac.
+
+### The 10 dimensional plugins
+
+| # | Dimension | Trinity Law | Description |
+|---|---|---|---|
+| 1 | `A-domain` | Identity | Domain entities — every business object that exists |
+| 2 | `B-substrate` | Identity | Storage substrate + content uuid + type registry + streams |
+| 3 | `C-process` | Causality | Events + chains + streams + agent dispatch |
+| 4 | `D-conservation` | Closure | Conservation laws + invariants + Trinity verdicts |
+| 5 | `E-tenant-role` | Closure | Open tenant role registry + role profiles + sub-tenant hierarchy |
+| 6 | `F-integrity` | Identity | Content uuid verification + tamper-detection + DID + signatures |
+| 7 | `G-beyond` | Closure | Beyond-current-standards primitives (provenance/replay/cost/carbon/PQC/etc.) |
+| 8 | `H-clients` | Closure | External surfaces (browser / Cloudflare / federation peers) |
+| 9 | `I-federation` | Closure | Inter-tenant federation envelopes + trust graph + treaties |
+| 10 | `J-meta-evolution` | Causality | Self-reference + cloning + meta-skill proposals + auto-generation |
+
+### Missing country-level collections distributed per dimension
+
+Slice KKKKKKKK introduced the country profile but left collection slots open. Slice LLLLLLLL fills them, distributing per dimension:
+
+| New collection | Dimension | Origin |
+|---|---|---|
+| `central-bank-policies` | A-domain | KKKKKKKK |
+| `sovereign-debt-issuances` | A-domain | KKKKKKKK |
+| `sdg-progress-indicators` | A-domain | KKKKKKKK |
+| `type-registrations` | B-substrate | GGGGGGG (Law 47) |
+| `stream-windows` | B-substrate | RRRRRR |
+| `agent-block-compositions` | C-process | PPPPPP+QQQQQQ |
+| `stream-uuid-chains` | C-process | SSSSSS |
+| `trinity-rollups` | D-conservation | JJJJJJJJ |
+| `agent-law-profiles` | D-conservation | EEEEEEE |
+| `dry-proof-bundles` | D-conservation | DDDDDDD (Law 44) |
+| `sub-tenant-relationships` | E-tenant-role | KKKKKKKK |
+| `role-derivations` | E-tenant-role | PPPPP+ |
+| `sovereign-did-registrations` | F-integrity | KKKKKKKK |
+| `short-uuid-mappings` | F-integrity | FFFFFFF |
+| `tax-treaty-network` | G-beyond | KKKKKKKK |
+| `customs-tariffs` | G-beyond | KKKKKKKK |
+| `cross-border-payments` | H-clients | KKKKKKKK |
+| `browser-session-receipts` | H-clients | (Cowork) |
+| `sovereign-treaties` | I-federation | KKKKKKKK |
+| `multilateral-envelopes` | I-federation | KKKKKKKK |
+| `treaty-signing-events` | I-federation | KKKKKKKK |
+| `mcp-rebuild-runs` | J-meta-evolution | ZZZZZZ |
+| `mcp-self-test-runs` | J-meta-evolution | AAAAAAA |
+
+### Conservation Law 49 — dimensional coverage
+
+`checkDimensionalCoverageInvariant`:
+1. **10 dimensions** exist (no missing).
+2. **No empty dimension** (every vortex carries at least one collection).
+3. **No duplicate assignments** (every collection in exactly one dimension).
+4. **No orphan collections** (every declared collection in `TAMPER_PROOF_COLLECTIONS_REGISTRY` appears in some dimension).
+
+Boot probe checks #1-#3 unconditionally; #4 is checked when the live tamper-proof registry is supplied. Production wires the orphan check into the boot suite.
+
+### Why split now (relation to Slice BBBBB)
+
+Slice BBBBB (split monolithic plugin into N composable per-domain DRY plugins) was queued as PENDING since the AAAAA DRY audit. This slice provides the **dimensional taxonomy** that BBBBB needed to know how to split. With the 10 dimensions declared:
+
+- Each dimension becomes its own Payload plugin in `src/plugins/dimension-<id>/`.
+- Cross-dimension dependencies are explicit (e.g. `D-conservation` depends on `B-substrate` for the type registry; `J-meta-evolution` depends on every other dimension for the genome).
+- Tenants opt-in to dimensions per their role (Law 7 + Law 45 — agent law profile already declares which dimensions it touches).
+
+### MCP surface (slice LLLLLLLL)
+
+| Tool | Purpose |
+|---|---|
+| `erpax.platform.dimensions` | Return all 10 dimensional plugins with collections |
+| `erpax.platform.dimensionForCollection` | Lookup which dimension a slug belongs to |
+| `erpax.platform.dimensionalCounts` | canonical + new + total collection counts |
+| `erpax.platform.checkDimensionalCoverage` | Conservation Law 49 verdict |
+
+### Standards anchoring
+
+@standard W3C JSON-LD 1.1 — typed dimensional manifests; ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries; Topology — 10 vortices form the torus surface (§0b + CCCCCCC); ISO 19011:2018 §6.4.6 (every collection traceable to a dimension).
+
 ## 1. Problem statement
 
 ERPax is now a multi-domain platform: 131 collections, 22 business chains, 43 IFRS standards cited, 30 supported locales, 10 e2e workflows, 6 substrate generators (chain registry / seed / test / multimedia / marketing / i18n). The CCCCC slice family proved that **the JSDoc spec is the single source of truth** — tests, seeds, registries, multimedia, marketing pages and i18n bundles are all generated from it.

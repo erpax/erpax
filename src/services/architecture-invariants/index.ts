@@ -114,6 +114,7 @@ export async function runAllInvariants(
     results.push(C.checkAutoGenerationCoverageInvariant(ctx))  // Law 37 — WWWWWW
     results.push(C.checkMcpRebuildableFromSourceInvariant(ctx))  // Law 40 — ZZZZZZ
     results.push(C.checkAgentLawCoverageInvariant(ctx))         // Law 45 — EEEEEEE
+    results.push(C.checkDimensionalCoverageInvariant(ctx))      // Law 49 — LLLLLLLL
   }
   if (!skip.has('entropy')) {
     results.push(await C.checkContentIntegrityProvable(ctx))  // Law 8 — RRRRR

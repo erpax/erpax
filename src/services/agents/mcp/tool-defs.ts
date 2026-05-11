@@ -95,6 +95,10 @@ import {
 import {
   TRINITY, trinityGrouping, trinityForPriorLaw, rollUpToTrinity,
 } from '@/services/architecture-invariants/trinity'
+import {
+  DIMENSIONAL_PLUGINS, checkDimensionalCoverage, dimensionForCollection,
+  totalCollectionCount, type DimensionId,
+} from '@/services/plugins/dimensions'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 
@@ -1323,6 +1327,35 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       },
     },
     // ── Slice EEEEEEE — laws regrouped per-agent for efficiency (Law 45) ──
+    // ── Slice LLLLLLLL — 10 dimensional plugins + missing collections (Law 49) ──
+    {
+      name: 'erpax.platform.dimensions',
+      description: 'Per user "start by creating the missing collections stored in 10 dimensional plugins" — return the 10 dimensional plugins (A-domain / B-substrate / C-process / D-conservation / E-tenant-role / F-integrity / G-beyond / H-clients / I-federation / J-meta-evolution per §0b vortices). Each carries its trinityLaw + canonicalCollections + newCollections (W3C JSON-LD 1.1).',
+      parameters: {},
+      async handler() { return json(DIMENSIONAL_PLUGINS) },
+    },
+    {
+      name: 'erpax.platform.dimensionForCollection',
+      description: 'Slice LLLLLLLL — look up which dimension a collection slug belongs to (or null if unassigned). Conservation Law 49 requires every collection to have exactly one dimension.',
+      parameters: { slug: z.string() },
+      async handler({ slug }) {
+        return json({ dimension: dimensionForCollection(slug as string) })
+      },
+    },
+    {
+      name: 'erpax.platform.dimensionalCounts',
+      description: 'Slice LLLLLLLL — total collection counts: canonical + new + total across all 10 dimensions. Drives the conservation-dashboard surface\'s dimensional breakdown card (W3C JSON-LD 1.1).',
+      parameters: {},
+      async handler() { return json(totalCollectionCount()) },
+    },
+    {
+      name: 'erpax.platform.checkDimensionalCoverage',
+      description: 'Conservation Law 49 — verify the 10-dimension taxonomy is well-formed: 10 dimensions exist, none empty, no duplicate assignments, no orphan collections (when declaredCollections passed). ISO/IEC 25010:2023 §5.7 modularity.',
+      parameters: { declaredCollections: z.array(z.string()).optional() },
+      async handler({ declaredCollections }) {
+        return json(checkDimensionalCoverage(declaredCollections as string[] | undefined))
+      },
+    },
     // ── Slice JJJJJJJJ — the Trinity of Conservation (3 generators) ──
     {
       name: 'erpax.platform.trinity',

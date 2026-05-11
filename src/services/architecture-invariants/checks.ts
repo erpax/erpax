@@ -40,6 +40,7 @@ import { checkAgentLawCoverage } from '@/services/architecture-invariants/by-age
 import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
 import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/services/integrity/type-uuid'
 import { checkInfiniteFiniteness } from '@/services/integrity/uuid-stream'
+import { checkDimensionalCoverage } from '@/services/plugins/dimensions'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -1424,6 +1425,36 @@ export function checkNoDoubleVotingInvariant(_ctx: InvariantContext): InvariantR
   return fail('entropy', 'no-double-voting',
     `${result.duplicates.length} ballot/voter/subject triples have multiple votes`,
     result.duplicates.slice(0, 8).map((d) => `${d.key} → ${d.voteUuids.length} votes`))
+}
+
+/**
+ * Conservation Law 49 — `checkDimensionalCoverageInvariant`. Slice
+ * LLLLLLLL (2026-05-11). Per user 'start by creating the missing
+ * collections stored in 10 dimensional plugins'.
+ *
+ * Verify the 10-dimension taxonomy is well-formed: 10 dimensions
+ * exist, none empty, no collection assigned to two dimensions.
+ * Orphan check is performed at runtime against the live tamper-
+ * proof registry.
+ */
+export function checkDimensionalCoverageInvariant(_ctx: InvariantContext): InvariantResult {
+  const declared = [...TAMPER_PROOF_COLLECTIONS_REGISTRY]
+  const result = checkDimensionalCoverage(declared)
+  if (result.ok) {
+    return pass('expansion', 'dimensional-coverage',
+      `${result.dimensionsCount}/10 dimensions populated, no orphans, no duplicates (Law 49 satisfied)`)
+  }
+  const reasons: string[] = []
+  if (result.emptyDimensions.length > 0) reasons.push(`empty: ${result.emptyDimensions.join(',')}`)
+  if (result.duplicateAssignments.length > 0) reasons.push(`duplicates: ${result.duplicateAssignments.length}`)
+  if (result.orphanCollections.length > 0) reasons.push(`orphans: ${result.orphanCollections.length}`)
+  return warn('expansion', 'dimensional-coverage',
+    `dimensional taxonomy issues: ${reasons.join(' / ')}`,
+    [
+      ...result.emptyDimensions,
+      ...result.duplicateAssignments.map((d) => `${d.slug} in [${d.dimensions.join(',')}]`),
+      ...result.orphanCollections.slice(0, 8),
+    ])
 }
 
 /**
