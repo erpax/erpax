@@ -41,16 +41,16 @@ export type EdifactMessageType = 'INVOIC' | 'DESADV' | 'PAYMUL'
  * @standard UN-EDIFACT D.96A UNB interchange-header
  */
 export interface EdifactUNB {
-  syntaxIdentifier: EdifactSyntaxId
-  syntaxVersion: number
+  readonly syntaxIdentifier: EdifactSyntaxId
+  readonly syntaxVersion: number
   /** Sender id + qualifier (e.g. '14' = EAN, 'ZZZ' = mutually defined). */
-  sender: { id: string; qualifier?: string }
-  receiver: { id: string; qualifier?: string }
+  readonly sender: { readonly id: string; readonly qualifier?: string }
+  readonly receiver: { readonly id: string; readonly qualifier?: string }
   /** YYMMDD:HHMM. */
-  preparationDate: string
-  preparationTime: string
+  readonly preparationDate: string
+  readonly preparationTime: string
   /** Interchange control reference — must match UNZ. */
-  interchangeControlReference: string
+  readonly interchangeControlReference: string
 }
 
 /**
@@ -62,12 +62,12 @@ export interface EdifactUNB {
  */
 export interface EdifactUNH {
   /** Message reference number — must match UNT. */
-  messageReferenceNumber: string
-  messageType: EdifactMessageType
+  readonly messageReferenceNumber: string
+  readonly messageType: EdifactMessageType
   /** D.96A → version='D', release='96A', controllingAgency='UN'. */
-  version: string
-  release: string
-  controllingAgency: string
+  readonly version: string
+  readonly release: string
+  readonly controllingAgency: string
 }
 
 /**
@@ -78,9 +78,9 @@ export interface EdifactUNH {
  * @standard UN-EDIFACT D.96A UNT message-trailer
  */
 export interface EdifactUNT {
-  numberOfSegments: number
+  readonly numberOfSegments: number
   /** Must match UNH.messageReferenceNumber. */
-  messageReferenceNumber: string
+  readonly messageReferenceNumber: string
 }
 
 /**
@@ -91,9 +91,9 @@ export interface EdifactUNT {
  * @standard UN-EDIFACT D.96A UNZ interchange-trailer
  */
 export interface EdifactUNZ {
-  numberOfMessages: number
+  readonly numberOfMessages: number
   /** Must match UNB.interchangeControlReference. */
-  interchangeControlReference: string
+  readonly interchangeControlReference: string
 }
 
 // ─── INVOIC d96a ──────────────────────────────────────────────────────
@@ -109,9 +109,9 @@ export interface EdifactUNZ {
  */
 export interface EdifactBGM {
   /** UN/CEFACT 1001 document name code. */
-  documentNameCode: string
+  readonly documentNameCode: string
   /** Document number. */
-  documentNumber: string
+  readonly documentNumber: string
   /**
    * Message function code:
    *   `9`  = original
@@ -120,7 +120,7 @@ export interface EdifactBGM {
    *   `13` = correction
    *   `31` = copy
    */
-  messageFunctionCode: string
+  readonly messageFunctionCode: string
 }
 
 /**
@@ -132,10 +132,10 @@ export interface EdifactBGM {
  */
 export interface EdifactDTM {
   /** UN/CEFACT 2005 — qualifier (137 = doc date, 35 = delivery, etc.). */
-  qualifier: string
-  value: string
+  readonly qualifier: string
+  readonly value: string
   /** UN/CEFACT 2379 — format code (102 = CCYYMMDD, 203 = CCYYMMDDHHMM). */
-  formatQualifier: string
+  readonly formatQualifier: string
 }
 
 /**
@@ -155,16 +155,16 @@ export interface EdifactNAD {
    *   `CN` = consignee
    *   `CZ` = consignor
    */
-  partyQualifier: 'SE' | 'BY' | 'IV' | 'DP' | 'CN' | 'CZ' | string
+  readonly partyQualifier: 'SE' | 'BY' | 'IV' | 'DP' | 'CN' | 'CZ' | string
   /** Optional party id + scheme. */
-  partyId?: { id: string; codeListAgency?: string; codeListIdentifier?: string }
-  name: string
+  readonly partyId?: { readonly id: string; readonly codeListAgency?: string; readonly codeListIdentifier?: string }
+  readonly name: string
   /** Tax id. */
-  taxId?: string
-  street?: string
-  city?: string
-  country?: string
-  postalCode?: string
+  readonly taxId?: string
+  readonly street?: string
+  readonly city?: string
+  readonly country?: string
+  readonly postalCode?: string
 }
 
 /**
@@ -178,9 +178,9 @@ export interface EdifactNAD {
  * @standard UN-EDIFACT D.96A LIN line-item
  */
 export interface EdifactLIN {
-  lineNumber: number
+  readonly lineNumber: number
   /** Optional item id + qualifier (NA / SA / SRV / GTIN / SK). */
-  itemId?: { id: string; codeListIdentifier?: string }
+  readonly itemId?: { readonly id: string; readonly codeListIdentifier?: string }
 }
 
 /**
@@ -194,8 +194,8 @@ export interface EdifactLIN {
  */
 export interface EdifactIMD {
   /** Description format code (F / A / B / C / E / S / X). */
-  descriptionFormat: 'F' | 'A' | 'B' | 'C' | 'E' | 'S' | 'X'
-  description: string
+  readonly descriptionFormat: 'F' | 'A' | 'B' | 'C' | 'E' | 'S' | 'X'
+  readonly description: string
 }
 
 /**
@@ -207,10 +207,10 @@ export interface EdifactIMD {
  */
 export interface EdifactQTY {
   /** UN/CEFACT 6063 — qualifier (47 = invoiced, 12 = despatched, 21 = ordered). */
-  qualifier: string
-  value: number
+  readonly qualifier: string
+  readonly value: number
   /** Unit code (UN/ECE Rec 20 — EA, KGM, LTR, etc.). */
-  unitCode?: string
+  readonly unitCode?: string
 }
 
 /**
@@ -224,8 +224,8 @@ export interface EdifactQTY {
  */
 export interface EdifactPRI {
   /** Price qualifier (AAA = calculation net, AAB = calculation gross). */
-  qualifier: 'AAA' | 'AAB' | 'AAE' | string
-  value: number
+  readonly qualifier: 'AAA' | 'AAB' | 'AAE' | string
+  readonly value: number
 }
 
 /**
@@ -238,9 +238,9 @@ export interface EdifactPRI {
  */
 export interface EdifactMOA {
   /** UN/CEFACT 5025 (9 = total payable, 125 = net invoiced, 124 = tax). */
-  qualifier: string
-  value: number
-  currency?: string
+  readonly qualifier: string
+  readonly value: number
+  readonly currency?: string
 }
 
 /**
@@ -252,11 +252,11 @@ export interface EdifactMOA {
  */
 export interface EdifactTAX {
   /** Function qualifier (7 = tax). */
-  functionQualifier: '7' | string
-  type: 'VAT' | 'GST' | 'IVA' | string
-  rate?: number
+  readonly functionQualifier: '7' | string
+  readonly type: 'VAT' | 'GST' | 'IVA' | string
+  readonly rate?: number
   /** UN/CEFACT 5305 category code (S/Z/E/AE/K/G/O/L/M). */
-  categoryCode?: string
+  readonly categoryCode?: string
 }
 
 /**
@@ -265,12 +265,12 @@ export interface EdifactTAX {
  * @standard UN-EDIFACT D.96A invoic-line
  */
 export interface EdifactInvoicLine {
-  lin: EdifactLIN
-  description?: EdifactIMD
-  quantity: EdifactQTY
-  price: EdifactPRI
-  lineNetAmount: EdifactMOA
-  tax?: EdifactTAX
+  readonly lin: EdifactLIN
+  readonly description?: EdifactIMD
+  readonly quantity: EdifactQTY
+  readonly price: EdifactPRI
+  readonly lineNetAmount: EdifactMOA
+  readonly tax?: EdifactTAX
 }
 
 /**
@@ -279,14 +279,14 @@ export interface EdifactInvoicLine {
  * @standard UN-EDIFACT D.96A INVOIC invoice
  */
 export interface EdifactInvoic {
-  unh: EdifactUNH
-  bgm: EdifactBGM
-  dates: EdifactDTM[]
-  parties: EdifactNAD[]
-  currency?: { code: string; qualifier: '4' | '11' }
-  lines: EdifactInvoicLine[]
-  documentTotals: { netAmount: EdifactMOA; taxAmount: EdifactMOA; grossAmount: EdifactMOA; amountDue: EdifactMOA }
-  unt: EdifactUNT
+  readonly unh: EdifactUNH
+  readonly bgm: EdifactBGM
+  readonly dates: readonly EdifactDTM[]
+  readonly parties: readonly EdifactNAD[]
+  readonly currency?: { readonly code: string; readonly qualifier: '4' | '11' }
+  readonly lines: readonly EdifactInvoicLine[]
+  readonly documentTotals: { readonly netAmount: EdifactMOA; readonly taxAmount: EdifactMOA; readonly grossAmount: EdifactMOA; readonly amountDue: EdifactMOA }
+  readonly unt: EdifactUNT
 }
 
 // ─── DESADV (despatch advice) ─────────────────────────────────────────
@@ -297,13 +297,13 @@ export interface EdifactInvoic {
  * @standard UN-EDIFACT D.96A DESADV despatch-advice
  */
 export interface EdifactDesadv {
-  unh: EdifactUNH
-  bgm: EdifactBGM
-  dates: EdifactDTM[]
-  parties: EdifactNAD[]
+  readonly unh: EdifactUNH
+  readonly bgm: EdifactBGM
+  readonly dates: readonly EdifactDTM[]
+  readonly parties: readonly EdifactNAD[]
   /** Each line carries a LIN + QTY (despatched 12 / received 13). */
-  lines: Array<{ lin: EdifactLIN; quantity: EdifactQTY }>
-  unt: EdifactUNT
+  readonly lines: readonly Array<{ readonly lin: EdifactLIN; readonly quantity: EdifactQTY }>
+  readonly unt: EdifactUNT
 }
 
 // ─── PAYMUL (multiple-payment instruction) ────────────────────────────
@@ -316,17 +316,17 @@ export interface EdifactDesadv {
  * @standard UN-EDIFACT D.96A PAYMUL multiple-payment-order
  */
 export interface EdifactPaymul {
-  unh: EdifactUNH
-  bgm: EdifactBGM
-  dates: EdifactDTM[]
+  readonly unh: EdifactUNH
+  readonly bgm: EdifactBGM
+  readonly dates: readonly EdifactDTM[]
   /** Each leg carries a payee NAD + monetary amount + remittance ref. */
-  legs: Array<{
-    payee: EdifactNAD
-    amount: EdifactMOA
-    paymentMeans: { code: string }
-    remittanceReference?: string
+  readonly legs: readonly Array<{
+    readonly payee: EdifactNAD
+    readonly amount: EdifactMOA
+    readonly paymentMeans: { readonly code: string }
+    readonly remittanceReference?: string
   }>
-  unt: EdifactUNT
+  readonly unt: EdifactUNT
 }
 
 // ─── Top-level interchange ────────────────────────────────────────────
@@ -337,7 +337,7 @@ export interface EdifactPaymul {
  * @standard UN-EDIFACT D.96A interchange
  */
 export interface EdifactInterchange {
-  unb: EdifactUNB
-  messages: Array<EdifactInvoic | EdifactDesadv | EdifactPaymul>
-  unz: EdifactUNZ
+  readonly unb: EdifactUNB
+  readonly messages: readonly Array<EdifactInvoic | EdifactDesadv | EdifactPaymul>
+  readonly unz: EdifactUNZ
 }

@@ -8,12 +8,12 @@
  *
  * Mirrors the BUSINESS_CHAINS / SCHEDULED_TASKS / FEATURE_REGISTRY
  * pattern for the SUBJECT axis (who-does-what) — the missing layer
- * between the canonical access bundles in `@/plugins/auth/access` and
+ * between the canonical access bundles in `@/access/auth` and
  * the per-collection / per-chain feature gates.
  *
  * Adding a new role:
  *   1. Append an entry below with id + standards + competencies + SoD.
- *   2. Add the id to `UserRole` in `@/plugins/auth/types.ts`.
+ *   2. Add the id to `UserRole` in `@/types/auth/types.ts`.
  *   3. The architecture invariants check the registry stays consistent.
  *
  * @standard ISO 27002:2022 §5.4 segregation-of-duties
@@ -23,7 +23,7 @@
  * @audit ISO-19011:2018 §6.4.6 audit-evidence-role-traceability
  */
 
-import type { UserRole } from '@/plugins/auth/types'
+import type { UserRole } from '@/types/auth/types'
 
 /** A single role entry. */
 export interface RoleEntry {

@@ -2,7 +2,7 @@
  * Items `afterChange` chain — auto-emits inventory GL postings.
  *
  * Currently delegates to the canonical `itemAccountingHook`
- * (`@/plugins/accounting/hooks/item.hook.ts`), which routes through
+ * (`@/services/accounting/hooks/item.hook.ts`), which routes through
  * `journalEntryService.createEntry` → `validateDoubleEntry` →
  * `DebitCreditLogic.validateEntry`. New per-item afterChange behaviour
  * (e.g. cache busts, search re-index) gets composed here.
@@ -14,6 +14,6 @@
  * @see src/plugins/accounting/hooks/item.hook.ts
  */
 
-import { itemAccountingHook } from '@/plugins/accounting/hooks'
+import { itemAccountingHook } from '@/services/accounting/hooks'
 
 export const itemsAfterChange = [itemAccountingHook]

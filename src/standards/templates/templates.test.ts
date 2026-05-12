@@ -30,7 +30,7 @@ import {
   getIndustryTemplate,
   findTemplateByCountry,
   resolveTenantCompliance,
-} from '@/plugins/accounting/seeds/templates'
+} from '@/services/accounting/seeds/templates'
 import { BG_COUNTRY_BUNDLE } from '@/standards/iso-3166-1/countries'
 
 const ELEMENT_TYPES = ['asset', 'liability', 'equity', 'revenue', 'expense'] as const

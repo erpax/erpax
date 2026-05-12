@@ -4,7 +4,7 @@ import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,
 } from './hooks/encryptSensitiveFields'
-import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
+import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
 
 /**
  * Payment Methods — tokenized card / bank-account references for billing.

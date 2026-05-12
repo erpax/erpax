@@ -1,7 +1,7 @@
 /**
  * Payments `afterChange` chain — auto-emits cash-flow GL postings.
  *
- * Delegates to `paymentAccountingHook` (`@/plugins/accounting/hooks/payment.hook.ts`),
+ * Delegates to `paymentAccountingHook` (`@/services/accounting/hooks/payment.hook.ts`),
  * which routes through `journalEntryService.createEntry` →
  * `validateDoubleEntry` → `DebitCreditLogic.validateEntry`.
  *
@@ -17,6 +17,6 @@
  * @see src/plugins/accounting/hooks/payment.hook.ts
  */
 
-import { paymentAccountingHook } from '@/plugins/accounting/hooks'
+import { paymentAccountingHook } from '@/services/accounting/hooks'
 
 export const paymentsAfterChange = [paymentAccountingHook]

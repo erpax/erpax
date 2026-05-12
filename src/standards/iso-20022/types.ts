@@ -29,11 +29,11 @@
  */
 export interface BankTransactionCode {
   /** Top-level domain — e.g. `'PMNT'` (payments), `'CAMT'` (cash management). */
-  domain: string
+  readonly domain: string
   /** Family — e.g. `'RCDT'` (received credit transfer), `'ICDT'` (issued credit transfer). */
-  family: string
+  readonly family: string
   /** Subfamily — e.g. `'BOOK'` (interbank book transfer), `'SALA'` (salary). */
-  subFamily: string
+  readonly subFamily: string
 }
 
 /**
@@ -67,14 +67,14 @@ export type ChargeBearerCode = 'DEBT' | 'CRED' | 'SHAR' | 'SLEV'
  * @standard ISO-20022 PostalAddress24
  */
 export interface PostalAddress {
-  streetName?: string
-  buildingNumber?: string
-  postCode?: string
-  townName?: string
+  readonly streetName?: string
+  readonly buildingNumber?: string
+  readonly postCode?: string
+  readonly townName?: string
   /** Country subdivision (region / state / Bundesland) if applicable. */
-  countrySubDivision?: string
+  readonly countrySubDivision?: string
   /** Two-letter ISO 3166-1 alpha-2. */
-  country: string
+  readonly country: string
 }
 
 /**
@@ -86,15 +86,15 @@ export interface PostalAddress {
  * @standard ISO-17442-1:2020 lei
  */
 export interface PartyIdentification {
-  name?: string
-  postalAddress?: PostalAddress
+  readonly name?: string
+  readonly postalAddress?: PostalAddress
   /** BIC (ISO 9362) when known. */
-  bic?: string
+  readonly bic?: string
   /** LEI (ISO 17442) when known. */
-  lei?: string
+  readonly lei?: string
   /** Free-text organisation / private identifier (issuer + id). */
-  otherIdIssuer?: string
-  otherId?: string
+  readonly otherIdIssuer?: string
+  readonly otherId?: string
 }
 
 /**
@@ -105,11 +105,11 @@ export interface PartyIdentification {
  */
 export interface AccountIdentification {
   /** IBAN — primary id in SEPA. */
-  iban?: string
+  readonly iban?: string
   /** Country-specific account number when IBAN doesn't apply. */
-  otherId?: string
+  readonly otherId?: string
   /** Currency of the account (ISO 4217). */
-  currency?: string
+  readonly currency?: string
 }
 
 // ─── Remittance information ────────────────────────────────────────────
@@ -121,12 +121,12 @@ export interface AccountIdentification {
  */
 export interface CreditorReference {
   /** Reference — typically prefixed `"RF"` per ISO 11649. */
-  reference: string
+  readonly reference: string
   /**
    * Type code — `'SCOR'` (structured creditor reference), `'CINV'`
    * (commercial invoice), `'CREF'` (credit memo), etc.
    */
-  typeCode?: string
+  readonly typeCode?: string
 }
 
 /**
@@ -138,11 +138,11 @@ export interface CreditorReference {
  */
 export interface RemittanceInformation {
   /** Free-text narrative (used when structured isn't available). */
-  unstructured?: string
-  structured?: {
-    creditorReference?: CreditorReference
+  readonly unstructured?: string
+  readonly structured?: {
+    readonly creditorReference?: CreditorReference
     /** Referred document(s) — invoice numbers, etc. */
-    referredDocumentNumbers?: string[]
+    readonly referredDocumentNumbers?: readonly string[]
   }
 }
 
@@ -157,38 +157,38 @@ export interface RemittanceInformation {
  */
 export interface Camt053Transaction {
   /** Account servicer reference (bank's unique tx id). */
-  accountServicerReference?: string
+  readonly accountServicerReference?: string
   /** End-to-end identification echoed from the originating instruction. */
-  endToEndId?: string
+  readonly endToEndId?: string
 
   /** BookingDate — when the entry hit the ledger. */
-  bookingDate: Date
+  readonly bookingDate: Date
   /** ValueDate — when the funds become available (≠ booking for FX, holds). */
-  valueDate?: Date
+  readonly valueDate?: Date
 
   /** Amount, integer cents. */
-  amount: number
+  readonly amount: number
   /** Currency (ISO 4217). */
-  currency: string
+  readonly currency: string
   /** Direction (Credit / Debit). */
-  creditDebitIndicator: CreditDebitIndicator
+  readonly creditDebitIndicator: CreditDebitIndicator
 
   /** Booking status. Most reconciliable items are 'BOOK'. */
-  status: BookingStatus
+  readonly status: BookingStatus
 
   /** 3-tuple bank transaction classification. */
-  bankTransactionCode?: BankTransactionCode
+  readonly bankTransactionCode?: BankTransactionCode
 
   /** Counterparty — when it's a credit, this is the debtor; vice versa. */
-  counterparty?: PartyIdentification
-  counterpartyAccount?: AccountIdentification
+  readonly counterparty?: PartyIdentification
+  readonly counterpartyAccount?: AccountIdentification
 
   /** Charge / fee detail when applicable. */
-  charges?: Array<{ amount: number; currency: string; type?: string }>
-  chargeBearer?: ChargeBearerCode
+  readonly charges?: readonly Array<{ readonly amount: number; readonly currency: string; readonly type?: string }>
+  readonly chargeBearer?: ChargeBearerCode
 
   /** Remittance info — may be structured or unstructured. */
-  remittanceInformation?: RemittanceInformation
+  readonly remittanceInformation?: RemittanceInformation
 }
 
 /**
@@ -198,28 +198,28 @@ export interface Camt053Transaction {
  */
 export interface Camt053Statement {
   /** `Stmt/Id` — statement identifier. */
-  id: string
+  readonly id: string
   /** `Stmt/CreDtTm` — when the statement was generated. */
-  createdAt: Date
+  readonly createdAt: Date
   /** `Stmt/Acct` — the account being statemented. */
-  account: AccountIdentification
+  readonly account: AccountIdentification
   /** `Stmt/Acct/Ownr` — account owner. */
-  owner?: PartyIdentification
+  readonly owner?: PartyIdentification
 
   /** `Stmt/FrToDt/FrDtTm` — period start. */
-  fromDateTime: Date
+  readonly fromDateTime: Date
   /** `Stmt/FrToDt/ToDtTm` — period end. */
-  toDateTime: Date
+  readonly toDateTime: Date
 
   /** Opening balance (booked). */
-  openingBalance: number
+  readonly openingBalance: number
   /** Closing balance (booked). */
-  closingBalance: number
+  readonly closingBalance: number
   /** Currency of the statement (ISO 4217). */
-  currency: string
+  readonly currency: string
 
   /** All transaction entries in the period. */
-  transactions: Camt053Transaction[]
+  readonly transactions: readonly Camt053Transaction[]
 }
 
 // ─── pain.001 — Customer credit transfer initiation ────────────────────
@@ -231,19 +231,19 @@ export interface Camt053Statement {
  */
 export interface Pain001Initiation {
   /** `MsgId` — message id. Unique per message, idempotency key. */
-  messageId: string
+  readonly messageId: string
   /** `CreDtTm` — message creation timestamp. */
-  creationDateTime: Date
+  readonly creationDateTime: Date
   /** Number of transactions in the message (= `payments.length`). */
-  numberOfTransactions: number
+  readonly numberOfTransactions: number
   /** Sum of all amounts (control total). */
-  controlSum: number
+  readonly controlSum: number
 
   /** Initiating party (debtor in the simple case). */
-  initiatingParty: PartyIdentification
+  readonly initiatingParty: PartyIdentification
 
   /** Payments — typically one batch but spec allows N. */
-  payments: Pain001Payment[]
+  readonly payments: readonly Pain001Payment[]
 }
 
 /**
@@ -252,22 +252,22 @@ export interface Pain001Initiation {
  * @standard ISO-20022 PaymentInstruction30
  */
 export interface Pain001Payment {
-  paymentInformationId: string
+  readonly paymentInformationId: string
   /**
    * Payment method — `'TRF'` (credit transfer) or `'CHK'` (cheque).
    * Most callers always emit `'TRF'`.
    */
-  paymentMethod: 'TRF' | 'CHK'
+  readonly paymentMethod: 'TRF' | 'CHK'
   /** Requested execution date. */
-  requestedExecutionDate: Date
+  readonly requestedExecutionDate: Date
 
-  debtor: PartyIdentification
-  debtorAccount: AccountIdentification
+  readonly debtor: PartyIdentification
+  readonly debtorAccount: AccountIdentification
   /** Debtor agent (BIC). */
-  debtorAgentBic?: string
+  readonly debtorAgentBic?: string
 
   /** One or more credit transfer transactions. */
-  creditTransfers: Pain001CreditTransfer[]
+  readonly creditTransfers: readonly Pain001CreditTransfer[]
 }
 
 /**
@@ -276,16 +276,16 @@ export interface Pain001Payment {
  * @standard ISO-20022 CreditTransferTransaction34
  */
 export interface Pain001CreditTransfer {
-  endToEndId: string
-  amount: number
-  currency: string
+  readonly endToEndId: string
+  readonly amount: number
+  readonly currency: string
 
-  creditor: PartyIdentification
-  creditorAccount: AccountIdentification
-  creditorAgentBic?: string
+  readonly creditor: PartyIdentification
+  readonly creditorAccount: AccountIdentification
+  readonly creditorAgentBic?: string
 
-  remittanceInformation?: RemittanceInformation
-  chargeBearer?: ChargeBearerCode
+  readonly remittanceInformation?: RemittanceInformation
+  readonly chargeBearer?: ChargeBearerCode
 }
 
 // ─── pain.008 — Customer direct debit initiation ───────────────────────
@@ -296,15 +296,15 @@ export interface Pain001CreditTransfer {
  * @standard ISO-20022 CustomerDirectDebitInitiationV08
  */
 export interface Pain008Initiation {
-  messageId: string
-  creationDateTime: Date
-  numberOfTransactions: number
-  controlSum: number
+  readonly messageId: string
+  readonly creationDateTime: Date
+  readonly numberOfTransactions: number
+  readonly controlSum: number
 
   /** Initiating party (creditor in the SEPA SDD case). */
-  initiatingParty: PartyIdentification
+  readonly initiatingParty: PartyIdentification
 
-  payments: Pain008Payment[]
+  readonly payments: readonly Pain008Payment[]
 }
 
 /**
@@ -313,27 +313,27 @@ export interface Pain008Initiation {
  * @standard ISO-20022 PaymentInstruction23
  */
 export interface Pain008Payment {
-  paymentInformationId: string
+  readonly paymentInformationId: string
   /** Direct-debit always `'DD'`. */
-  paymentMethod: 'DD'
-  requestedCollectionDate: Date
+  readonly paymentMethod: 'DD'
+  readonly requestedCollectionDate: Date
 
   /**
    * Local instrument — `'CORE'` (B2C SDD), `'B2B'` (B2B SDD), `'COR1'`
    * (legacy core, deprecated).
    */
-  localInstrument?: 'CORE' | 'B2B' | 'COR1'
+  readonly localInstrument?: 'CORE' | 'B2B' | 'COR1'
   /**
    * Sequence type — `'FRST'` (first), `'RCUR'` (recurring), `'OOFF'`
    * (one-off), `'FNAL'` (final).
    */
-  sequenceType: 'FRST' | 'RCUR' | 'OOFF' | 'FNAL'
+  readonly sequenceType: 'FRST' | 'RCUR' | 'OOFF' | 'FNAL'
 
-  creditor: PartyIdentification
-  creditorAccount: AccountIdentification
-  creditorAgentBic?: string
+  readonly creditor: PartyIdentification
+  readonly creditorAccount: AccountIdentification
+  readonly creditorAgentBic?: string
 
-  directDebits: Pain008DirectDebit[]
+  readonly directDebits: readonly Pain008DirectDebit[]
 }
 
 /**
@@ -342,20 +342,20 @@ export interface Pain008Payment {
  * @standard ISO-20022 DirectDebitTransactionInformation23
  */
 export interface Pain008DirectDebit {
-  endToEndId: string
-  amount: number
-  currency: string
+  readonly endToEndId: string
+  readonly amount: number
+  readonly currency: string
 
   /** Mandate identification — primary key into the SDD mandate register. */
-  mandateId: string
+  readonly mandateId: string
   /** Date the mandate was originally signed. */
-  dateOfSignature: Date
+  readonly dateOfSignature: Date
 
-  debtor: PartyIdentification
-  debtorAccount: AccountIdentification
-  debtorAgentBic?: string
+  readonly debtor: PartyIdentification
+  readonly debtorAccount: AccountIdentification
+  readonly debtorAgentBic?: string
 
-  remittanceInformation?: RemittanceInformation
+  readonly remittanceInformation?: RemittanceInformation
 }
 
 // ─── pacs.004 — Payment return ─────────────────────────────────────────
@@ -367,15 +367,15 @@ export interface Pain008DirectDebit {
  * @standard ISO-20022 PaymentReturnV09
  */
 export interface Pacs004Return {
-  messageId: string
-  creationDateTime: Date
-  numberOfTransactions: number
-  controlSum: number
+  readonly messageId: string
+  readonly creationDateTime: Date
+  readonly numberOfTransactions: number
+  readonly controlSum: number
   /**
    * One or more return transactions referencing the original
    * pacs.008 / pain.001.
    */
-  returns: Pacs004ReturnTransaction[]
+  readonly returns: readonly Pacs004ReturnTransaction[]
 }
 
 /**
@@ -385,17 +385,17 @@ export interface Pacs004Return {
  */
 export interface Pacs004ReturnTransaction {
   /** Return-side end-to-end id (new). */
-  endToEndId: string
+  readonly endToEndId: string
   /** Original end-to-end id (the payment being returned). */
-  originalEndToEndId?: string
-  amount: number
-  currency: string
+  readonly originalEndToEndId?: string
+  readonly amount: number
+  readonly currency: string
 
   /**
    * Return reason code — `ExternalReturnReason1Code` (e.g. `AC01`
    * incorrect account number, `AM04` insufficient funds, `MD06`
    * refund request by debtor, `BE05` unrecognised initiating party).
    */
-  reasonCode?: string
-  reasonAdditionalInformation?: string
+  readonly reasonCode?: string
+  readonly reasonAdditionalInformation?: string
 }

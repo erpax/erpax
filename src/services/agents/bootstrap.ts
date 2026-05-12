@@ -21,7 +21,7 @@ import { ERPAX_MCP_PROMPTS } from './mcp/prompt-defs'
 // the rest of the substrate primitives so they're available at boot.
 import '@/services/self-reference'
 
-import { FinanceAgent } from '@/plugins/accounting/agents/finance.agent'
+import { FinanceAgent } from '@/services/accounting/agents/finance.agent'
 import { SalesAgent } from './registered/sales.agent'
 import { MarketingAgent } from './registered/marketing.agent'
 import { HrAgent } from './registered/hr.agent'

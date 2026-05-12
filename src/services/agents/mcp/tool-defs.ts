@@ -203,7 +203,7 @@ import {
 } from '@/services/plugins/dimensions'
 import {
   DIMENSION_PLUGIN_FACTORIES, allDimensionalPlugins, checkDimensionalPluginScaffolded,
-} from '@/plugins/dimensions'
+} from '@/services/dimensions'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
 

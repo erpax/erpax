@@ -6,7 +6,7 @@ import {
 } from './hooks/encryptSensitiveFields'
 import { emitSubscriptionLifecycleEvents } from './hooks/emitLifecycleEvents'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
+import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
 
 /**
  * Subscriptions — tenant-to-plan binding with period state and Stripe sync.

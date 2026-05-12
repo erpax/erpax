@@ -16,7 +16,7 @@
  */
 
 import { v4 as uuid } from 'uuid';
-import { DebitCreditLogic, type AccountType } from '@/plugins/accounting/debit-credit';
+import { DebitCreditLogic, type AccountType } from '@/services/accounting/debit-credit';
 
 export interface JournalEntryLine {
   id?: string;

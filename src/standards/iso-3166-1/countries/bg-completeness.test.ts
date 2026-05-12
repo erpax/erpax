@@ -46,7 +46,7 @@ import {
   initiateSepaCreditTransfer,
 } from '@/services/country-clients/berlin-group-psd2'
 import { postBgNapMtls, submitBgSaft } from '@/services/country-clients/bg-nap-mtls'
-import { INDUSTRY_TEMPLATES, BG_NSS_TEMPLATE } from '@/plugins/accounting/seeds/templates'
+import { INDUSTRY_TEMPLATES, BG_NSS_TEMPLATE } from '@/services/accounting/seeds/templates'
 import { isBgEgn, decodeBgEgn } from '@/standards/iso-7064'
 import {
   BG_VAT_RATES,

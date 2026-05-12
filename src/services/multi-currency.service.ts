@@ -39,7 +39,7 @@ import {
   getTenantDefaults,
 } from '@/config/regional-defaults';
 import { journalEntryService } from './journal-entry.service';
-import { DebitCreditLogic } from '@/plugins/accounting/debit-credit';
+import { DebitCreditLogic } from '@/services/accounting/debit-credit';
 
 interface _GLBalance {
   accountId: string;

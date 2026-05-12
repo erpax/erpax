@@ -34,16 +34,8 @@ export { Subscriptions } from './Subscriptions'
 // Inventory Collections
 export { Items } from './Items'
 
-// Party Masters (sale-side / purchase-side)
-
-// Tax Masters (ISO 3166-2 jurisdictions + EN 16931 tax-codes)
-
-// Fiscal Calendar (period locking — GAAP/IFRS/SOX)
-
-// NOTE: The Ledger kernel (Accounts/Equations/Entries/Statements) was retired.
-// Canonical write-model is the accounting plugin (`gl-accounts`, `journal-entries`,
-// `gl-postings`) registered via `accountingPlugin()` in `src/plugins/index.ts`.
-// All 20 accounting collections have been moved to src/plugins/accounting/collections/
-// They are now registered via the accountingPlugin() in src/plugins/index.ts
-// This follows conventional Payload plugin patterns with harmonized file locations
-// See src/plugins/accounting/ for the complete accounting plugin structure
+// ===== ACCOUNTING COLLECTIONS (60+ canonical collections) =====
+// Fully integrated GL, banking, reconciliation, tax, and compliance domains.
+// Per Phase 11 canonical migration from src/plugins/accounting/ → src/collections/accounting/
+// See src/collections/accounting/index.ts for complete standards coverage (IFRS/US-GAAP/SOX/SAF-T)
+export * from './accounting'

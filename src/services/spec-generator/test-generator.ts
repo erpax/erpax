@@ -170,7 +170,7 @@ import {
   runChain,
   type ChainContext,
 } from '@/services/business-chains'
-import { ${exportName} } from '@/plugins/accounting/seeds/chains/${kebabBase}'
+import { ${exportName} } from '@/services/accounting/seeds/chains/${kebabBase}'
 
 describe('Chain — ${chain.name.replace(/\b\w/g, (c) => c.toUpperCase())}', () => {
   let payload: Payload

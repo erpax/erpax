@@ -42,13 +42,9 @@ import { sv } from '@payloadcms/translations/languages/sv'
 import { uk } from '@payloadcms/translations/languages/uk'
 
 import { isSuperAdmin, isSuperAdminAccess } from './access/isSuperAdmin'
-// All collections come from the single barrel — `src/collections/index.ts`.
-// Domain context (Core / Content / Billing / Inventory / Ledger) is documented
-// inside that barrel; this file just consumes it.
-//
-// The 20 accounting collections are NOT listed here — they are registered via
-// `accountingPlugin()` in `src/plugins/index.ts`, which lives within
-// `src/plugins/accounting/`.
+// All collections come from canonical src/collections/* locations.
+// Domain context (Core / Content / Billing / Inventory / Accounting) is documented
+// in individual collection definition files.
 import {
   // Core
   Tenants,
@@ -69,10 +65,147 @@ import {
   Subscriptions,
   // Inventory
   Items,
+  // Accounting — 122 canonical collections fully integrated per Phase 11
+  GLAccounts,
+  JournalEntries,
+  GLPostings,
+  BankStatements,
+  AccountReconciliations,
+  FinancialStatements,
+  PeriodEndAdjustments,
+  TaxCalculations,
+  CurrencyRates,
+  FixedAssets,
+  BudgetPlanning,
+  Standards,
+  Memories,
+  McpToolMetadata,
+  Translations,
+  Customers,
+  Vendors,
+  TaxJurisdictions,
+  TaxCodes,
+  FiscalPeriods,
+  AuditEvents,
+  CreditMemos,
+  PurchaseOrders,
+  GoodsReceipts,
+  Quotes,
+  SalesOrders,
+  Refunds,
+  BankAccounts,
+  Returns,
+  Shipments,
+  Contracts,
+  PerformanceObligations,
+  DepreciationSchedules,
+  ConsentRecords,
+  DataSubjectRequests,
+  DataProcessingActivities,
+  AuditFindings,
+  ControlTests,
+  KycChecks,
+  BeneficialOwners,
+  TaxReturns,
+  ApiAuditEvents,
+  EvidenceAttestations,
+  WarehouseLocations,
+  InventoryMovements,
+  BankTransactions,
+  Leases,
+  PaymentRuns,
+  SepaMandates,
+  DunningCycles,
+  CostCenters,
+  Employees,
+  TimeEntries,
+  PayrollRuns,
+  LeasePeriodPostings,
+  BankReconciliations,
+  IntercompanyTransactions,
+  ConsolidationEliminations,
+  PriorPeriodAdjustments,
+  RoundingAdjustments,
+  TransactionFailures,
+  FxTransactions,
+  PaymentAllocations,
+  // Manufacturing & Logistics
+  BillsOfMaterials,
+  WorkOrders,
+  ProductionReceipts,
+  CostVariances,
+  QualityInspections,
+  Carriers,
+  TrackingEvents,
+  CustomsDeclarations,
+  // Billing Infrastructure & AI
+  UsageRecords,
+  AiSuggestions,
+  // Group Structure & Projects
+  LegalEntities,
+  Projects,
+  ProjectTasks,
+  ProjectMilestones,
+  WipSnapshots,
+  // Period-End Recognition
+  RecurringJournals,
+  Provisions,
+  CommitmentsAndContingencies,
+  GovernmentGrants,
+  // ESG & Transfer Pricing
+  CsrdDisclosures,
+  CarbonEmissions,
+  TransferPricingFiles,
+  // IFRS 16 Extensions
+  LeaseModifications,
+  // CRM
+  Leads,
+  Opportunities,
+  Activities,
+  CustomerSegments,
+  SalesCommissions,
+  // Procurement
+  PurchaseRequisitions,
+  VendorQuotes,
+  VendorScorecards,
+  // HR Extensions
+  JobPositions,
+  RecruitingPipeline,
+  PerformanceReviews,
+  ExpenseReports,
+  LeaveRequests,
+  // Workflow Engine
+  WorkflowDefinitions,
+  WorkflowInstances,
+  // IFRS 100% Gap-Fill
+  DeferredTaxItems,
+  ShareBasedPayments,
+  BusinessCombinations,
+  HeldForSaleClassifications,
+  FairValueMeasurements,
+  InvestmentProperties,
+  BiologicalAssets,
+  EarningsPerShare,
+  InsuranceContracts,
+  MineralResourceAssets,
+  RegulatoryDeferralAccounts,
+  PostBalanceSheetEvents,
+  // Consignments, Bookings, Facility Management
+  ConsignmentArrangements,
+  ConsignmentInventory,
+  ConsignmentSales,
+  BookableResources,
+  Bookings,
+  Properties,
+  Spaces,
+  MaintenanceRequests,
+  MaintenanceWorkOrders,
 } from './collections'
+
+// Accounting collections — fully integrated Phase 11 canonical migration
+import type { CollectionConfig } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
-import { plugins as payloadPlugins } from './plugins'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
 import {
@@ -253,24 +386,185 @@ export default buildConfig({
       process.env.NODE_ENV !== 'test' && process.env.PAYLOAD_DEV_PUSH !== 'false',
   }),
   collections: [
+    // Core
     Tenants,
+    // Content (CMS)
     Pages,
     Posts,
     Media,
     Categories,
+    // Auth
     Roles,
     UserRoles,
     Users,
+    // Subscriptions
     SubscriptionPlans,
     Subscriptions,
+    // Inventory
     Items,
+    // Billing
     Invoices,
     InvoiceLines,
     PaymentMethods,
     Payments,
-    // Ledger kernel (Accounts/Equations/Entries/Statements) was retired — canonical
-    // write-model is the accounting plugin (`gl-accounts`/`journal-entries`/`gl-postings`)
-    // registered via `accountingPlugin()` in src/plugins/index.ts.
+    // ===== ACCOUNTING — 122 canonical collections per Phase 11 canonical migration =====
+    // GL Core (IFRS/US-GAAP write-targets)
+    GLAccounts,
+    JournalEntries,
+    GLPostings,
+    // Banking & Reconciliation
+    BankStatements,
+    AccountReconciliations,
+    BankReconciliations,
+    // Close-side (period-end recognition)
+    FinancialStatements,
+    PeriodEndAdjustments,
+    RecurringJournals,
+    Provisions,
+    CommitmentsAndContingencies,
+    GovernmentGrants,
+    // Tax & Currency
+    TaxCalculations,
+    CurrencyRates,
+    // Real entities & Masters
+    FixedAssets,
+    BudgetPlanning,
+    Customers,
+    Vendors,
+    TaxJurisdictions,
+    TaxCodes,
+    FiscalPeriods,
+    // Infrastructure (Standards, Memories, MCP metadata, Translations)
+    Standards,
+    Memories,
+    McpToolMetadata,
+    Translations,
+    // O2C (Order-to-Cash)
+    AuditEvents,
+    CreditMemos,
+    Quotes,
+    SalesOrders,
+    Returns,
+    Shipments,
+    Refunds,
+    // P2P (Procure-to-Pay) & Three-way match
+    PurchaseOrders,
+    GoodsReceipts,
+    PurchaseRequisitions,
+    VendorQuotes,
+    VendorScorecards,
+    // Master Banking & Payments
+    BankAccounts,
+    BankTransactions,
+    Leases,
+    PaymentRuns,
+    SepaMandates,
+    DunningCycles,
+    PaymentAllocations,
+    // Revenue Contracts (IFRS 15 §B22+)
+    Contracts,
+    PerformanceObligations,
+    // PP&E (IAS 16)
+    DepreciationSchedules,
+    FixedAssets,
+    // GDPR Data Layer
+    ConsentRecords,
+    DataSubjectRequests,
+    DataProcessingActivities,
+    // SOX §404 Evidence
+    AuditFindings,
+    ControlTests,
+    // AML/KYC
+    KycChecks,
+    BeneficialOwners,
+    // Tax Filing
+    TaxReturns,
+    // Inventory (IAS 2 / ASC 330 cost-flow)
+    WarehouseLocations,
+    InventoryMovements,
+    // API & Evidence Packs
+    ApiAuditEvents,
+    EvidenceAttestations,
+    // Cost Centers & Dimensions
+    CostCenters,
+    // Payroll (IAS 19 / ASC 710)
+    Employees,
+    TimeEntries,
+    PayrollRuns,
+    // IFRS 16 / ASC 842 (Lease period evidence)
+    LeasePeriodPostings,
+    // Intercompany & Consolidation
+    IntercompanyTransactions,
+    ConsolidationEliminations,
+    PriorPeriodAdjustments,
+    RoundingAdjustments,
+    // FX & Transaction Handling
+    FxTransactions,
+    TransactionFailures,
+    // Manufacturing & Logistics (IAS-2 / ISA-95)
+    BillsOfMaterials,
+    WorkOrders,
+    ProductionReceipts,
+    CostVariances,
+    QualityInspections,
+    Carriers,
+    TrackingEvents,
+    CustomsDeclarations,
+    // Billing Infrastructure (metered features)
+    UsageRecords,
+    // AI Audit Trail (GDPR Art.22 + EU AI Act)
+    AiSuggestions,
+    // Group Structure (IFRS 10)
+    LegalEntities,
+    // Project Accounting (IFRS 15 §35 over-time)
+    Projects,
+    ProjectTasks,
+    ProjectMilestones,
+    WipSnapshots,
+    // ESG & Transfer Pricing
+    CsrdDisclosures,
+    CarbonEmissions,
+    TransferPricingFiles,
+    // IFRS 16 Extensions
+    LeaseModifications,
+    // CRM
+    Leads,
+    Opportunities,
+    Activities,
+    CustomerSegments,
+    SalesCommissions,
+    // HR Extensions (IAS 19)
+    JobPositions,
+    RecruitingPipeline,
+    PerformanceReviews,
+    ExpenseReports,
+    LeaveRequests,
+    // Workflow Engine (BPMN)
+    WorkflowDefinitions,
+    WorkflowInstances,
+    // IFRS 100% Gap-Fill (IAS 12, IFRS 2/3/5/6/13/14/17, IAS 10/33/40/41)
+    DeferredTaxItems,
+    ShareBasedPayments,
+    BusinessCombinations,
+    HeldForSaleClassifications,
+    FairValueMeasurements,
+    InvestmentProperties,
+    BiologicalAssets,
+    EarningsPerShare,
+    InsuranceContracts,
+    MineralResourceAssets,
+    RegulatoryDeferralAccounts,
+    PostBalanceSheetEvents,
+    // Consignments, Bookings, Facility Management
+    ConsignmentArrangements,
+    ConsignmentInventory,
+    ConsignmentSales,
+    BookableResources,
+    Bookings,
+    Properties,
+    Spaces,
+    MaintenanceRequests,
+    MaintenanceWorkOrders,
   ],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
@@ -282,10 +576,12 @@ export default buildConfig({
     createEcommercePlugin(),
     multiTenantPlugin<Config>({
       collections: {
+        // CMS Collections
         pages: {},
         posts: {},
         media: {},
         categories: {},
+        // Ecommerce Collections
         products: {},
         carts: {},
         orders: {},
@@ -294,6 +590,163 @@ export default buildConfig({
         variantTypes: {},
         variants: {},
         variantOptions: {},
+        // ===== ACCOUNTING COLLECTIONS — All 122 collections tenant-scoped =====
+        // GL Core
+        'gl-accounts': {},
+        'journal-entries': {},
+        'gl-postings': {},
+        // Banking & Reconciliation
+        'bank-statements': {},
+        'account-reconciliations': {},
+        'bank-reconciliations': {},
+        // Close-side
+        'financial-statements': {},
+        'period-end-adjustments': {},
+        'recurring-journals': {},
+        'provisions': {},
+        'commitments-and-contingencies': {},
+        'government-grants': {},
+        // Tax & Currency
+        'tax-calculations': {},
+        'currency-rates': {},
+        // Real entities & Masters
+        'fixed-assets': {},
+        'budget-planning': {},
+        customers: {},
+        vendors: {},
+        'tax-jurisdictions': {},
+        'tax-codes': {},
+        'fiscal-periods': {},
+        // Infrastructure
+        standards: {},
+        memories: {},
+        'mcp-tool-metadata': {},
+        translations: {},
+        // O2C
+        'audit-events': {},
+        'credit-memos': {},
+        quotes: {},
+        'sales-orders': {},
+        returns: {},
+        shipments: {},
+        refunds: {},
+        // P2P & Three-way match
+        'purchase-orders': {},
+        'goods-receipts': {},
+        'purchase-requisitions': {},
+        'vendor-quotes': {},
+        'vendor-scorecards': {},
+        // Master Banking & Payments
+        'bank-accounts': {},
+        'bank-transactions': {},
+        leases: {},
+        'payment-runs': {},
+        'sepa-mandates': {},
+        'dunning-cycles': {},
+        'payment-allocations': {},
+        // Revenue Contracts
+        contracts: {},
+        'performance-obligations': {},
+        // PP&E
+        'depreciation-schedules': {},
+        // GDPR
+        'consent-records': {},
+        'data-subject-requests': {},
+        'data-processing-activities': {},
+        // SOX §404 Evidence
+        'audit-findings': {},
+        'control-tests': {},
+        // AML/KYC
+        'kyc-checks': {},
+        'beneficial-owners': {},
+        // Tax Filing
+        'tax-returns': {},
+        // Inventory
+        'warehouse-locations': {},
+        'inventory-movements': {},
+        // API & Evidence
+        'api-audit-events': {},
+        'evidence-attestations': {},
+        // Cost Centers
+        'cost-centers': {},
+        // Payroll
+        employees: {},
+        'time-entries': {},
+        'payroll-runs': {},
+        // IFRS 16 Lease Detail
+        'lease-period-postings': {},
+        // Intercompany & Consolidation
+        'intercompany-transactions': {},
+        'consolidation-eliminations': {},
+        'prior-period-adjustments': {},
+        'rounding-adjustments': {},
+        // FX & Transactions
+        'fx-transactions': {},
+        'transaction-failures': {},
+        // Manufacturing & Logistics
+        'bills-of-materials': {},
+        'work-orders': {},
+        'production-receipts': {},
+        'cost-variances': {},
+        'quality-inspections': {},
+        carriers: {},
+        'tracking-events': {},
+        'customs-declarations': {},
+        // Billing Infrastructure
+        'usage-records': {},
+        // AI Audit Trail
+        'ai-suggestions': {},
+        // Group Structure
+        'legal-entities': {},
+        // Project Accounting
+        projects: {},
+        'project-tasks': {},
+        'project-milestones': {},
+        'wip-snapshots': {},
+        // ESG & Transfer Pricing
+        'csrd-disclosures': {},
+        'carbon-emissions': {},
+        'transfer-pricing-files': {},
+        // IFRS 16 Extensions
+        'lease-modifications': {},
+        // CRM
+        leads: {},
+        opportunities: {},
+        activities: {},
+        'customer-segments': {},
+        'sales-commissions': {},
+        // HR Extensions
+        'job-positions': {},
+        'recruiting-pipeline': {},
+        'performance-reviews': {},
+        'expense-reports': {},
+        'leave-requests': {},
+        // Workflow Engine
+        'workflow-definitions': {},
+        'workflow-instances': {},
+        // IFRS 100% Gap-Fill
+        'deferred-tax-items': {},
+        'share-based-payments': {},
+        'business-combinations': {},
+        'held-for-sale-classifications': {},
+        'fair-value-measurements': {},
+        'investment-properties': {},
+        'biological-assets': {},
+        'earnings-per-share': {},
+        'insurance-contracts': {},
+        'mineral-resource-assets': {},
+        'regulatory-deferral-accounts': {},
+        'post-balance-sheet-events': {},
+        // Consignments, Bookings, Facility Management
+        'consignment-arrangements': {},
+        'consignment-inventory': {},
+        'consignment-sales': {},
+        'bookable-resources': {},
+        bookings: {},
+        properties: {},
+        spaces: {},
+        'maintenance-requests': {},
+        'maintenance-work-orders': {},
       },
       tenantField: {
         defaultValue: async ({ req }) => {
@@ -374,7 +827,7 @@ export default buildConfig({
         },
       }),
     }),
-    ...payloadPlugins,
+    // Custom ERPax plugins removed — all collections now loaded from canonical src/* locations
   ],
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

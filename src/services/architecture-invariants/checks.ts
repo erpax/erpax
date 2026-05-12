@@ -58,7 +58,7 @@ import { checkUuidShortDisplay } from '@/services/integrity/uuid-short'
 import { checkTypeUuidCoverage, ensureBaselineTypesRegistered } from '@/services/integrity/type-uuid'
 import { checkInfiniteFiniteness } from '@/services/integrity/uuid-stream'
 import { checkDimensionalCoverage } from '@/services/plugins/dimensions'
-import { checkDimensionalPluginScaffolded } from '@/plugins/dimensions'
+import { checkDimensionalPluginScaffolded } from '@/services/dimensions'
 import { computeContentUuid as _computeContentUuid } from '@/services/integrity/content-uuid'
 
 const REPO_ROOT_FALLBACK = (): string => process.cwd()
@@ -414,7 +414,7 @@ export async function checkAccountingCollectionsAreTamperProofed(_ctx: Invariant
     // Import the accounting collections barrel side-effect — every
     // exported collection file registers itself at module load via
     // the factory's `injectTamperProofUuid` default.
-    await import('@/plugins/accounting/collections')
+    await import('@/collections/accounting')
     const registered = [...TAMPER_PROOF_COLLECTIONS_REGISTRY]
     if (registered.length === 0) {
       return warn(

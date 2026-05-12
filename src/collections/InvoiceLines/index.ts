@@ -1,9 +1,9 @@
 import { CollectionConfig } from 'payload'
-import { adminOnly, multiTenantRead } from '@/plugins/auth'
+import { adminOnly, multiTenantRead } from '@/types/auth'
 import { authenticated } from '@/access/authenticated'
 import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
 import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField } from '@/plugins/accounting/fields/base-accounting-fields'
+import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
 import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
 import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 

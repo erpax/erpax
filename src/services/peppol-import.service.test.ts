@@ -15,7 +15,7 @@
 import { describe, it, expect } from 'vitest'
 import { parsePeppolInvoice } from '@/services/peppol-import.service'
 import { renderPeppolInvoice } from '@/services/peppol-export.service'
-import { importStandards } from '@/plugins/export/standards-import'
+import { importStandards } from '@/services/export/standards-import'
 import {
   PEPPOL_BIS_3_CUSTOMIZATION_ID,
   type PeppolBillingMessage,

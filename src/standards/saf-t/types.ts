@@ -28,14 +28,14 @@
  * @standard OECD SAF-T 2.0 AddressStructure
  */
 export interface SafTAddressStructure {
-  buildingNumber?: string
-  streetName?: string
-  addressDetail?: string
-  city: string
-  postalCode: string
-  region?: string
+  readonly buildingNumber?: string
+  readonly streetName?: string
+  readonly addressDetail?: string
+  readonly city: string
+  readonly postalCode: string
+  readonly region?: string
   /** ISO 3166-1 alpha-2. */
-  country: string
+  readonly country: string
 }
 
 /**
@@ -45,15 +45,15 @@ export interface SafTAddressStructure {
  */
 export interface SafTPartyId {
   /** Tax registration id (e.g. NIF in PT, CIF in RO). */
-  taxRegistrationNumber?: string
+  readonly taxRegistrationNumber?: string
   /** Country of issue for the tax id. ISO 3166-1 alpha-2. */
-  taxRegistrationCountry?: string
+  readonly taxRegistrationCountry?: string
   /** Counterparty name (legal entity name). */
-  companyName: string
+  readonly companyName: string
   /** Optional contact person. */
-  contact?: string
-  billingAddress: SafTAddressStructure
-  shipToAddress?: SafTAddressStructure
+  readonly contact?: string
+  readonly billingAddress: SafTAddressStructure
+  readonly shipToAddress?: SafTAddressStructure
 }
 
 /**
@@ -64,13 +64,13 @@ export interface SafTPartyId {
  */
 export interface SafTAmountStructure {
   /** Amount in the document's currency, integer cents. */
-  amount: number
+  readonly amount: number
   /** ISO 4217 currency code. Required when ≠ functional currency. */
-  currencyCode?: string
+  readonly currencyCode?: string
   /** Exchange rate to functional currency (decimal). */
-  exchangeRate?: number
+  readonly exchangeRate?: number
   /** Amount restated in functional currency (integer cents). */
-  amountInFunctionalCurrency?: number
+  readonly amountInFunctionalCurrency?: number
 }
 
 /**
@@ -80,18 +80,18 @@ export interface SafTAmountStructure {
  */
 export interface SafTTaxInformation {
   /** Tax type (e.g. 'IVA', 'VAT', 'GST'). */
-  taxType: string
+  readonly taxType: string
   /** Country of the tax. ISO 3166-1 alpha-2. */
-  taxCountryRegion: string
+  readonly taxCountryRegion: string
   /** Tax code (national catalogue, e.g. PT 'NOR' / 'INT' / 'RED' / 'ISE'). */
-  taxCode: string
+  readonly taxCode: string
   /** Tax percentage (decimal, e.g. 23 for 23%). */
-  taxPercentage?: number
+  readonly taxPercentage?: number
   /** Tax amount in document currency. */
-  taxAmount: SafTAmountStructure
+  readonly taxAmount: SafTAmountStructure
   /** Exemption reason code (national catalogue). Required when amount = 0 and code differs from standard. */
-  taxExemptionReason?: string
-  taxExemptionCode?: string
+  readonly taxExemptionReason?: string
+  readonly taxExemptionCode?: string
 }
 
 // ─── 1. Header ─────────────────────────────────────────────────────────
@@ -104,31 +104,31 @@ export interface SafTTaxInformation {
  */
 export interface SafTHeader {
   /** Schema version — '2.00' for OECD baseline; PT '1.04', NO '1.10', etc. */
-  auditFileVersion: string
-  companyID: string
+  readonly auditFileVersion: string
+  readonly companyID: string
   /** Tax registration number (NIF / CIF / VAT id). */
-  taxRegistrationNumber: string
+  readonly taxRegistrationNumber: string
   /** ISO 4217 currency code of the entity's functional / reporting currency. */
-  taxAccountingBasis: 'F' | 'C' | 'I' | 'P' | 'R' | 'S' | 'T' | 'O'
-  companyName: string
-  businessName?: string
-  companyAddress: SafTAddressStructure
+  readonly taxAccountingBasis: 'F' | 'C' | 'I' | 'P' | 'R' | 'S' | 'T' | 'O'
+  readonly companyName: string
+  readonly businessName?: string
+  readonly companyAddress: SafTAddressStructure
   /** Fiscal year being audited. */
-  fiscalYear: number
+  readonly fiscalYear: number
   /** Period start (ISO 8601). */
-  startDate: string
+  readonly startDate: string
   /** Period end (ISO 8601). */
-  endDate: string
+  readonly endDate: string
   /** ISO 4217 functional currency. */
-  currencyCode: string
+  readonly currencyCode: string
   /** ISO 8601 date the file was generated. */
-  dateCreated: string
+  readonly dateCreated: string
   /** Software house name + version (the entity that produced the file). */
-  productCompanyTaxID?: string
-  softwareCertificateNumber?: number
-  productID: string
-  productVersion: string
-  headerComment?: string
+  readonly productCompanyTaxID?: string
+  readonly softwareCertificateNumber?: number
+  readonly productID: string
+  readonly productVersion: string
+  readonly headerComment?: string
 }
 
 // ─── 2. MasterFiles ────────────────────────────────────────────────────
@@ -140,26 +140,26 @@ export interface SafTHeader {
  */
 export interface SafTGeneralLedgerAccount {
   /** Account id (e.g. '1100' or '11.01.001'). */
-  accountID: string
-  accountDescription: string
+  readonly accountID: string
+  readonly accountDescription: string
   /** Standard account taxonomy id (e.g. PT-SNC '11', '21', '71'). */
-  standardAccountID?: string
+  readonly standardAccountID?: string
   /**
    * Account taxonomy code — `M` (movement / transactional),
    * `A` (analytical / sub-ledger), `S` (synthesis / roll-up).
    */
-  accountType: 'M' | 'A' | 'S'
+  readonly accountType: 'M' | 'A' | 'S'
   /**
    * Opening / closing balance flag — the file carries debit + credit
    * opening balances (year-start) and closing balances (period-end).
    */
-  openingDebitBalance?: number
-  openingCreditBalance?: number
-  closingDebitBalance?: number
-  closingCreditBalance?: number
+  readonly openingDebitBalance?: number
+  readonly openingCreditBalance?: number
+  readonly closingDebitBalance?: number
+  readonly closingCreditBalance?: number
   /** Parent account in the synthesis hierarchy. */
-  groupingCategory?: string
-  groupingCode?: string
+  readonly groupingCategory?: string
+  readonly groupingCode?: string
 }
 
 /**
@@ -168,13 +168,13 @@ export interface SafTGeneralLedgerAccount {
  * @standard OECD SAF-T 2.0 Customer
  */
 export interface SafTCustomer {
-  customerID: string
+  readonly customerID: string
   /** SAF-T `AccountID` — the AR control account or sub-account. */
-  accountID: string
+  readonly accountID: string
   /** Country of the customer's tax id. */
-  party: SafTPartyId
+  readonly party: SafTPartyId
   /** Tax-relevant flag — false = self-billing prohibited. */
-  selfBillingIndicator: 0 | 1
+  readonly selfBillingIndicator: 0 | 1
 }
 
 /**
@@ -183,10 +183,10 @@ export interface SafTCustomer {
  * @standard OECD SAF-T 2.0 Supplier
  */
 export interface SafTSupplier {
-  supplierID: string
-  accountID: string
-  party: SafTPartyId
-  selfBillingIndicator: 0 | 1
+  readonly supplierID: string
+  readonly accountID: string
+  readonly party: SafTPartyId
+  readonly selfBillingIndicator: 0 | 1
 }
 
 /**
@@ -195,14 +195,14 @@ export interface SafTSupplier {
  * @standard OECD SAF-T 2.0 Product
  */
 export interface SafTProduct {
-  productCode: string
-  productGroup?: string
-  productDescription: string
+  readonly productCode: string
+  readonly productGroup?: string
+  readonly productDescription: string
   /** Code list: `P` (product), `S` (service), `O` (other), `I` (impostos). */
-  productType: 'P' | 'S' | 'O' | 'I'
-  productNumberCode?: string
+  readonly productType: 'P' | 'S' | 'O' | 'I'
+  readonly productNumberCode?: string
   /** Default unit of measure (UN/ECE Rec 20). */
-  unitOfMeasure?: string
+  readonly unitOfMeasure?: string
 }
 
 /**
@@ -211,14 +211,14 @@ export interface SafTProduct {
  * @standard OECD SAF-T 2.0 TaxTableEntry
  */
 export interface SafTTaxTableEntry {
-  taxType: string
-  taxCountryRegion: string
-  taxCode: string
-  description: string
-  taxExpirationDate?: string
+  readonly taxType: string
+  readonly taxCountryRegion: string
+  readonly taxCode: string
+  readonly description: string
+  readonly taxExpirationDate?: string
   /** Either taxPercentage OR taxAmount is set, not both. */
-  taxPercentage?: number
-  taxAmount?: number
+  readonly taxPercentage?: number
+  readonly taxAmount?: number
 }
 
 /**
@@ -227,11 +227,11 @@ export interface SafTTaxTableEntry {
  * @standard OECD SAF-T 2.0 MasterFiles
  */
 export interface SafTMasterFiles {
-  generalLedgerAccounts: SafTGeneralLedgerAccount[]
-  customers: SafTCustomer[]
-  suppliers: SafTSupplier[]
-  products: SafTProduct[]
-  taxTable: SafTTaxTableEntry[]
+  readonly generalLedgerAccounts: readonly SafTGeneralLedgerAccount[]
+  readonly customers: readonly SafTCustomer[]
+  readonly suppliers: readonly SafTSupplier[]
+  readonly products: readonly SafTProduct[]
+  readonly taxTable: readonly SafTTaxTableEntry[]
 }
 
 // ─── 3. GeneralLedgerEntries ───────────────────────────────────────────
@@ -244,20 +244,20 @@ export interface SafTMasterFiles {
  */
 export interface SafTLine {
   /** SAF-T `RecordID` — line sequence within transaction. */
-  recordID: string
-  accountID: string
+  readonly recordID: string
+  readonly accountID: string
   /** ISO 8601 line-level posting date (may differ from transaction date). */
-  systemEntryDate: string
+  readonly systemEntryDate: string
   /** `D` (debit) or `C` (credit). */
-  debitCreditIndicator: 'D' | 'C'
-  amount: SafTAmountStructure
-  description?: string
+  readonly debitCreditIndicator: 'D' | 'C'
+  readonly amount: SafTAmountStructure
+  readonly description?: string
   /** Optional reference to the source document (invoice / payment). */
-  sourceDocumentID?: string
-  taxInformation?: SafTTaxInformation
+  readonly sourceDocumentID?: string
+  readonly taxInformation?: SafTTaxInformation
   /** Customer / supplier id when the line touches a sub-ledger. */
-  customerID?: string
-  supplierID?: string
+  readonly customerID?: string
+  readonly supplierID?: string
 }
 
 /**
@@ -266,23 +266,23 @@ export interface SafTLine {
  * @standard OECD SAF-T 2.0 Transaction
  */
 export interface SafTTransaction {
-  transactionID: string
+  readonly transactionID: string
   /** Transaction period (e.g. '2026-04'). */
-  period: string
+  readonly period: string
   /** ISO 8601. */
-  transactionDate: string
-  sourceID: string
-  description: string
+  readonly transactionDate: string
+  readonly sourceID: string
+  readonly description: string
   /**
    * `S` = Sales, `P` = Purchases, `R` = Receipts, `M` = Manual,
    * `C` = Closing, `O` = Opening, `J` = Adjustment.
    */
-  documentType?: string
-  documentNumber?: string
-  systemEntryDate: string
-  customerID?: string
-  supplierID?: string
-  lines: SafTLine[]
+  readonly documentType?: string
+  readonly documentNumber?: string
+  readonly systemEntryDate: string
+  readonly customerID?: string
+  readonly supplierID?: string
+  readonly lines: readonly SafTLine[]
 }
 
 /**
@@ -291,9 +291,9 @@ export interface SafTTransaction {
  * @standard OECD SAF-T 2.0 Journal
  */
 export interface SafTJournal {
-  journalID: string
-  description: string
-  transactions: SafTTransaction[]
+  readonly journalID: string
+  readonly description: string
+  readonly transactions: readonly SafTTransaction[]
 }
 
 /**
@@ -302,10 +302,10 @@ export interface SafTJournal {
  * @standard OECD SAF-T 2.0 GeneralLedgerEntries
  */
 export interface SafTGeneralLedgerEntries {
-  numberOfEntries: number
-  totalDebit: number
-  totalCredit: number
-  journals: SafTJournal[]
+  readonly numberOfEntries: number
+  readonly totalDebit: number
+  readonly totalCredit: number
+  readonly journals: readonly SafTJournal[]
 }
 
 // ─── 4. SourceDocuments ────────────────────────────────────────────────
@@ -329,20 +329,20 @@ export type SafTSourceDocumentType =
  * @standard OECD SAF-T 2.0 InvoiceLine
  */
 export interface SafTSalesInvoiceLine {
-  lineNumber: number
-  productCode?: string
-  productDescription: string
-  quantity: number
-  unitOfMeasure?: string
-  unitPrice: number
-  taxBase: number
-  description: string
+  readonly lineNumber: number
+  readonly productCode?: string
+  readonly productDescription: string
+  readonly quantity: number
+  readonly unitOfMeasure?: string
+  readonly unitPrice: number
+  readonly taxBase: number
+  readonly description: string
   /** Pre-tax line amount (cents). */
-  creditAmount?: number
-  debitAmount?: number
-  taxInformation: SafTTaxInformation
+  readonly creditAmount?: number
+  readonly debitAmount?: number
+  readonly taxInformation: SafTTaxInformation
   /** Reference to the originating order / shipment. */
-  references?: Array<{ reference: string; reason?: string }>
+  readonly references?: readonly Array<{ readonly reference: string; readonly reason?: string }>
 }
 
 /**
@@ -351,30 +351,30 @@ export interface SafTSalesInvoiceLine {
  * @standard OECD SAF-T 2.0 SalesInvoice
  */
 export interface SafTSalesInvoice {
-  invoiceNo: string
+  readonly invoiceNo: string
   /**
    * Invoice type — local catalogue (PT 'FT' = Fatura, 'FS' = Fatura
    * simplificada, 'NC' = Nota de crédito, 'ND' = Nota de débito, etc.).
    */
-  invoiceType: string
+  readonly invoiceType: string
   /** PT-style hash chain (or empty for OECD baseline). */
-  hash?: string
-  hashControl?: string
-  invoiceDate: string
-  systemEntryDate: string
-  customerID: string
-  shipTo?: SafTAddressStructure
-  shipFrom?: SafTAddressStructure
-  movementStartTime?: string
+  readonly hash?: string
+  readonly hashControl?: string
+  readonly invoiceDate: string
+  readonly systemEntryDate: string
+  readonly customerID: string
+  readonly shipTo?: SafTAddressStructure
+  readonly shipFrom?: SafTAddressStructure
+  readonly movementStartTime?: string
   /** Line array. */
-  lines: SafTSalesInvoiceLine[]
+  readonly lines: readonly SafTSalesInvoiceLine[]
   /** Total tax amount + total amount with tax. */
-  documentTotals: {
-    taxPayable: number
-    netTotal: number
-    grossTotal: number
+  readonly documentTotals: {
+    readonly taxPayable: number
+    readonly netTotal: number
+    readonly grossTotal: number
     /** Currency the invoice was issued in. */
-    currency?: { currencyCode: string; currencyAmount: number; exchangeRate: number }
+    readonly currency?: { readonly currencyCode: string; readonly currencyAmount: number; readonly exchangeRate: number }
   }
 }
 
@@ -384,27 +384,27 @@ export interface SafTSalesInvoice {
  * @standard OECD SAF-T 2.0 Payment
  */
 export interface SafTPayment {
-  paymentRefNo: string
+  readonly paymentRefNo: string
   /** PT 'RG' = recibo geral, 'RC' = recibo de caixa, etc. */
-  paymentType: string
-  hash?: string
-  transactionDate: string
-  customerID?: string
-  supplierID?: string
-  paymentMethod: SafTPaymentMethod
-  documentStatus: { paymentStatus: 'N' | 'A' | 'F'; paymentStatusDate: string }
-  systemEntryDate: string
+  readonly paymentType: string
+  readonly hash?: string
+  readonly transactionDate: string
+  readonly customerID?: string
+  readonly supplierID?: string
+  readonly paymentMethod: SafTPaymentMethod
+  readonly documentStatus: { readonly paymentStatus: 'N' | 'A' | 'F'; readonly paymentStatusDate: string }
+  readonly systemEntryDate: string
   /** Allocations to the invoices being settled. */
-  lines: Array<{
-    lineNumber: number
-    sourceDocumentID: string
-    creditAmount?: number
-    debitAmount?: number
+  readonly lines: readonly Array<{
+    readonly lineNumber: number
+    readonly sourceDocumentID: string
+    readonly creditAmount?: number
+    readonly debitAmount?: number
   }>
-  documentTotals: {
-    taxPayable: number
-    netTotal: number
-    grossTotal: number
+  readonly documentTotals: {
+    readonly taxPayable: number
+    readonly netTotal: number
+    readonly grossTotal: number
   }
 }
 
@@ -429,9 +429,9 @@ export type SafTPaymentMechanism =
   | 'TR' // Restaurant / sodexo voucher
 
 export interface SafTPaymentMethod {
-  paymentMechanism: SafTPaymentMechanism
-  paymentAmount: number
-  paymentDate: string
+  readonly paymentMechanism: SafTPaymentMechanism
+  readonly paymentAmount: number
+  readonly paymentDate: string
 }
 
 /**
@@ -440,24 +440,24 @@ export interface SafTPaymentMethod {
  * @standard OECD SAF-T 2.0 MovementOfGoods
  */
 export interface SafTMovementOfGoods {
-  documentNumber: string
+  readonly documentNumber: string
   /** PT 'GR' = guia de remessa, 'GT' = guia de transporte, etc. */
-  movementType: string
-  hash?: string
-  movementDate: string
-  systemEntryDate: string
+  readonly movementType: string
+  readonly hash?: string
+  readonly movementDate: string
+  readonly systemEntryDate: string
   /** Locations as ISO 3166-2 subdivision + free-text. */
-  shipFrom: SafTAddressStructure
-  shipTo: SafTAddressStructure
-  customerID?: string
-  supplierID?: string
-  lines: Array<{
-    lineNumber: number
-    productCode: string
-    productDescription: string
-    quantity: number
-    unitOfMeasure?: string
-    description?: string
+  readonly shipFrom: SafTAddressStructure
+  readonly shipTo: SafTAddressStructure
+  readonly customerID?: string
+  readonly supplierID?: string
+  readonly lines: readonly Array<{
+    readonly lineNumber: number
+    readonly productCode: string
+    readonly productDescription: string
+    readonly quantity: number
+    readonly unitOfMeasure?: string
+    readonly description?: string
   }>
 }
 
@@ -467,28 +467,28 @@ export interface SafTMovementOfGoods {
  * @standard OECD SAF-T 2.0 SourceDocuments
  */
 export interface SafTSourceDocuments {
-  salesInvoices?: {
-    numberOfEntries: number
-    totalDebit: number
-    totalCredit: number
-    invoices: SafTSalesInvoice[]
+  readonly salesInvoices?: {
+    readonly numberOfEntries: number
+    readonly totalDebit: number
+    readonly totalCredit: number
+    readonly invoices: readonly SafTSalesInvoice[]
   }
-  purchaseInvoices?: {
-    numberOfEntries: number
-    totalDebit: number
-    totalCredit: number
-    invoices: SafTSalesInvoice[] // Same shape, different journal
+  readonly purchaseInvoices?: {
+    readonly numberOfEntries: number
+    readonly totalDebit: number
+    readonly totalCredit: number
+    readonly invoices: readonly SafTSalesInvoice[] // Same shape, different journal
   }
-  payments?: {
-    numberOfEntries: number
-    totalDebit: number
-    totalCredit: number
-    payments: SafTPayment[]
+  readonly payments?: {
+    readonly numberOfEntries: number
+    readonly totalDebit: number
+    readonly totalCredit: number
+    readonly payments: readonly SafTPayment[]
   }
-  movementOfGoods?: {
-    numberOfMovementLines: number
-    totalQuantityIssued: number
-    movements: SafTMovementOfGoods[]
+  readonly movementOfGoods?: {
+    readonly numberOfMovementLines: number
+    readonly totalQuantityIssued: number
+    readonly movements: readonly SafTMovementOfGoods[]
   }
 }
 
@@ -500,8 +500,8 @@ export interface SafTSourceDocuments {
  * @standard OECD SAF-T 2.0 AuditFile
  */
 export interface SafTAuditFile {
-  header: SafTHeader
-  masterFiles: SafTMasterFiles
-  generalLedgerEntries?: SafTGeneralLedgerEntries
-  sourceDocuments?: SafTSourceDocuments
+  readonly header: SafTHeader
+  readonly masterFiles: SafTMasterFiles
+  readonly generalLedgerEntries?: SafTGeneralLedgerEntries
+  readonly sourceDocuments?: SafTSourceDocuments
 }

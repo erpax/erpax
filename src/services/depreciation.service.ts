@@ -13,7 +13,7 @@
  *   • sum_of_years_digits     (per-year fraction)
  *   • units_of_activity       (per-unit, with cumulative stop)
  *
- * Canonical math lives in `@/plugins/accounting/utilities/calculations.ts`
+ * Canonical math lives in `@/services/accounting/utilities/calculations.ts`
  * — this service composes those primitives, picks the method, and is the
  * one place a hook or job calls. Pure-math test coverage stays on the
  * utilities; this service is integration-tested via the hook.
@@ -37,7 +37,7 @@ import {
   calculateSumOfYearsDigitsDepreciation,
   calculateUnitsOfActivityDepreciation,
   calculateDepreciableBase,
-} from '@/plugins/accounting/utilities/calculations';
+} from '@/services/accounting/utilities/calculations';
 import { EventEmitterService, eventEmitter } from './event-emitter.service';
 import type { DepreciationPostedEvent } from '@/types/events';
 

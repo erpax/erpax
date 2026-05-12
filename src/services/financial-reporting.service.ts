@@ -25,7 +25,7 @@ import {
   FinancialRatios,
 } from '@/types/financial-statements';
 import { journalEntryService } from './journal-entry.service';
-import { DebitCreditLogic } from '@/plugins/accounting/debit-credit';
+import { DebitCreditLogic } from '@/services/accounting/debit-credit';
 
 /**
  * GL balance bucket — debits and credits per account, plus optional metadata.

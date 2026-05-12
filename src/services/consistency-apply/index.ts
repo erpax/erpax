@@ -22,11 +22,23 @@
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, statSync } from 'node:fs'
 import { resolve, join } from 'node:path'
-import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
-import { harvestPlatformTranslations } from '@/services/i18n-harvest'
-import { dryCleanScan } from '@/services/agents/mcp/dry-clean'
-import { buildErpaxMcpTools } from '@/services/agents/mcp/tool-defs'
-import { agentRegistry } from '@/services/agents/bootstrap'
+import { createRequire } from 'node:module'
+
+/**
+ * This module is loaded two ways:
+ *
+ *   1. Webpack/Next bundler at app boot — `@/`-aliased imports work.
+ *   2. Raw Node with `--experimental-strip-types` from
+ *      scripts/auto-heal-generated-artefacts.sh — path aliases do NOT
+ *      resolve in that context.
+ *
+ * To keep BOTH paths working, the apply* functions resolve their
+ * helper modules via filesystem paths against the caller-supplied
+ * `repoRoot`. `createRequire(import.meta.url)` is the ESM-safe
+ * accessor for that — it satisfies `@typescript-eslint/no-require-imports`
+ * because the require fn is an explicit local, not the CJS global.
+ */
+const requireFromHere = createRequire(import.meta.url)
 
 const REPO_ROOT_FALLBACK = (): string =>
   typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : '.'
@@ -309,8 +321,15 @@ function titleCaseFromSlug(slug: string): string {
  */
 export function applyChainE2eSeedScaffold(opts: { repoRoot?: string; dryRun?: boolean } = {}): ApplySummary {
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-  const chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> =
-    Object.values(BUSINESS_CHAINS as Record<string, { id: string; workflowSlug?: string; name: string; description: string }>)
+  let chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> = []
+  try {
+    const reg = requireFromHere(join(repoRoot, 'src/services/business-chains/registry.ts')) as {
+      BUSINESS_CHAINS: Record<string, { id: string; workflowSlug?: string; name: string; description: string }>
+    }
+    chains = Object.values(reg.BUSINESS_CHAINS)
+  } catch {
+    return { applied: 0, skipped: 0, changes: [] }
+  }
   const e2eDir = join(repoRoot, 'tests/e2e/erp-workflows')
   if (!existsSync(e2eDir)) {
     if (!opts.dryRun) mkdirSync(e2eDir, { recursive: true })
@@ -436,8 +455,15 @@ function pascal(slug: string): string {
  */
 export function applyChainShadcnSurfaceScaffold(opts: { repoRoot?: string; dryRun?: boolean } = {}): ApplySummary {
   const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
-  const chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> =
-    Object.values(BUSINESS_CHAINS as Record<string, { id: string; workflowSlug?: string; name: string; description: string }>)
+  let chains: ReadonlyArray<{ id: string; workflowSlug?: string; name: string; description: string }> = []
+  try {
+    const reg = requireFromHere(join(repoRoot, 'src/services/business-chains/registry.ts')) as {
+      BUSINESS_CHAINS: Record<string, { id: string; workflowSlug?: string; name: string; description: string }>
+    }
+    chains = Object.values(reg.BUSINESS_CHAINS)
+  } catch {
+    return { applied: 0, skipped: 0, changes: [] }
+  }
   const componentsDir = join(repoRoot, 'src/components/chains')
   if (!existsSync(componentsDir) && !opts.dryRun) mkdirSync(componentsDir, { recursive: true })
   const changes: AppliedChange[] = []
@@ -587,7 +613,10 @@ export function applyI18nHarvestDryRun(
   let applied = 0
   const changes: AppliedChange[] = []
   try {
-    const harvested = harvestPlatformTranslations(repoRoot)
+    const mod = requireFromHere(join(repoRoot, 'src/services/i18n-harvest/index.ts')) as {
+      harvestPlatformTranslations: (repoRoot: string) => ReadonlyArray<unknown>
+    }
+    const harvested = mod.harvestPlatformTranslations(repoRoot)
     applied = harvested.length
     if (harvested.length > 0) {
       changes.push({
@@ -690,8 +719,21 @@ export function applyAllConsistencyFixes(opts: { repoRoot?: string; dryRun?: boo
   // existing stubs are skipped.
   let l3: ApplySummary = { applied: 0, skipped: 0, changes: [] }
   try {
-    const tools = buildErpaxMcpTools(agentRegistry as Parameters<typeof buildErpaxMcpTools>[0])
-    const report = dryCleanScan(tools)
+    const repoRoot = opts.repoRoot ?? REPO_ROOT_FALLBACK()
+    const dryClean = requireFromHere(join(repoRoot, 'src/services/agents/mcp/dry-clean.ts')) as {
+      dryCleanScan: (tools: unknown[]) => {
+        emergingGaps: ReadonlyArray<{
+          suggestedTool: string; area: string; evidence: ReadonlyArray<string>;
+          anchorPair: readonly [string, string]; anchorScore: number;
+        }>
+      }
+    }
+    const toolDefs = requireFromHere(join(repoRoot, 'src/services/agents/mcp/tool-defs.ts')) as {
+      buildErpaxMcpTools: (registry: unknown) => unknown[]
+    }
+    const boot = requireFromHere(join(repoRoot, 'src/services/agents/bootstrap.ts')) as { agentRegistry: unknown }
+    const tools = toolDefs.buildErpaxMcpTools(boot.agentRegistry)
+    const report = dryClean.dryCleanScan(tools)
     const hints: EmergingGapHint[] = report.emergingGaps.map((g) => ({
       suggestedTool: g.suggestedTool,
       area: g.area,

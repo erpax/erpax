@@ -53,6 +53,17 @@ import type {
   SafTAddressStructure,
   SafTPartyId,
 } from '@/standards/saf-t'
+import type {
+  GlAccount,
+  Customer,
+  Vendor,
+  Item,
+  TaxCode,
+  JournalEntry,
+  Invoice,
+  Payment,
+  InventoryMovement,
+} from '@/payload-types'
 
 export interface SafTExportOptions {
   /** Tenant id whose data to export. */
@@ -97,27 +108,14 @@ export const buildHeader = (options: SafTExportOptions): SafTHeader => ({
 
 // ─── 2. MasterFiles ────────────────────────────────────────────────────
 
-interface GLAccountDoc {
-  id: string | number
-  accountId?: string
-  accountName?: string
-  parentAccount?: string | { id?: string }
-  accountClass?: string
-  isMovementAccount?: boolean
-  openingDebitBalance?: number
-  openingCreditBalance?: number
-  closingDebitBalance?: number
-  closingCreditBalance?: number
-}
-
 const accountTypeOf = (
-  doc: GLAccountDoc,
+  doc: GlAccount,
 ): SafTGeneralLedgerAccount['accountType'] => {
   // Movement accounts (transactional) ↔ M.
   // Synthesis accounts (group / parent) ↔ S.
   // Analytical / sub-ledger ↔ A (rare in this schema).
-  if (doc.isMovementAccount === true) return 'M'
-  if (doc.isMovementAccount === false) return 'S'
+  if ((doc.isMovementAccount as boolean | undefined) === true) return 'M'
+  if ((doc.isMovementAccount as boolean | undefined) === false) return 'S'
   return 'M' // safe default — most accounts are transactional
 }
 
@@ -131,14 +129,14 @@ export const buildGeneralLedgerAccounts = async (
     limit: 100_000,
     depth: 0,
   })
-  return (result.docs as unknown as GLAccountDoc[]).map((d) => ({
-    accountID: String(d.accountId ?? d.id),
-    accountDescription: String(d.accountName ?? d.id),
+  return (result.docs as GlAccount[]).map((d) => ({
+    accountID: String((d.accountId as string | undefined) ?? d.id),
+    accountDescription: String((d.accountName as string | undefined) ?? d.id),
     accountType: accountTypeOf(d),
-    openingDebitBalance: d.openingDebitBalance,
-    openingCreditBalance: d.openingCreditBalance,
-    closingDebitBalance: d.closingDebitBalance,
-    closingCreditBalance: d.closingCreditBalance,
+    openingDebitBalance: (d.openingDebitBalance as number | undefined),
+    openingCreditBalance: (d.openingCreditBalance as number | undefined),
+    closingDebitBalance: (d.closingDebitBalance as number | undefined),
+    closingCreditBalance: (d.closingCreditBalance as number | undefined),
   }))
 }
 
@@ -178,8 +176,8 @@ export const buildCustomers = async (
     limit: 100_000,
     depth: 1,
   })
-  return (result.docs as unknown as CustomerDoc[]).map((d) => ({
-    customerID: String(d.customerId ?? d.id),
+  return (result.docs as Customer[]).map((d) => ({
+    customerID: String((d.customerId as string | undefined) ?? d.id),
     accountID:
       typeof d.arAccount === 'string'
         ? d.arAccount
@@ -187,7 +185,7 @@ export const buildCustomers = async (
             (d.arAccount as { id?: string } | undefined)?.id ?? '21.1',
           ),
     selfBillingIndicator: 0,
-    party: partyIdOf(d.identity, d.billingAddress, d.shipToAddress),
+    party: partyIdOf(d.identity as any, d.billingAddress as any, d.shipToAddress as any),
   }))
 }
 
@@ -201,24 +199,16 @@ export const buildSuppliers = async (
     limit: 100_000,
     depth: 1,
   })
-  interface VendorDoc {
-    id: string | number
-    vendorId?: string
-    apAccount?: string | { id?: string }
-    identity?: CustomerDoc['identity']
-    billingAddress?: SafTAddressStructure
-    shipToAddress?: SafTAddressStructure
-  }
-  return (result.docs as unknown as VendorDoc[]).map((d) => ({
-    supplierID: String(d.vendorId ?? d.id),
+  return (result.docs as Vendor[]).map((d) => ({
+    supplierID: String((d.vendorId as string | undefined) ?? d.id),
     accountID:
       typeof d.apAccount === 'string'
-        ? d.apAccount
+        ? (d.apAccount as string)
         : String(
             (d.apAccount as { id?: string } | undefined)?.id ?? '22.1',
           ),
     selfBillingIndicator: 0,
-    party: partyIdOf(d.identity, d.billingAddress, d.shipToAddress),
+    party: partyIdOf(d.identity as any, d.billingAddress as any, d.shipToAddress as any),
   }))
 }
 
@@ -232,19 +222,11 @@ export const buildProducts = async (
     limit: 100_000,
     depth: 0,
   })
-  interface ItemDoc {
-    id: string | number
-    itemNumber?: string
-    itemName?: string
-    description?: string
-    productType?: 'P' | 'S' | 'O' | 'I'
-    unitOfMeasure?: string
-  }
-  return (result.docs as unknown as ItemDoc[]).map((d) => ({
-    productCode: String(d.itemNumber ?? d.id),
-    productDescription: String(d.itemName ?? d.description ?? d.id),
-    productType: d.productType ?? 'P',
-    unitOfMeasure: d.unitOfMeasure,
+  return (result.docs as Item[]).map((d) => ({
+    productCode: String((d.itemNumber as string | undefined) ?? d.id),
+    productDescription: String(((d.itemName as string | undefined) ?? (d.description as string | undefined) ?? d.id) ?? d.id),
+    productType: ((d.productType as 'P' | 'S' | 'O' | 'I' | undefined) ?? 'P') as 'P' | 'S' | 'O' | 'I',
+    unitOfMeasure: (d.unitOfMeasure as string | undefined),
   }))
 }
 
@@ -258,24 +240,14 @@ export const buildTaxTable = async (
     limit: 1_000,
     depth: 0,
   })
-  interface TaxCodeDoc {
-    id: string | number
-    taxType?: string
-    taxCountryRegion?: string
-    taxCode?: string
-    description?: string
-    taxPercentage?: number
-    taxAmount?: number
-    expirationDate?: string
-  }
-  return (result.docs as unknown as TaxCodeDoc[]).map((d) => ({
-    taxType: String(d.taxType ?? 'IVA'),
-    taxCountryRegion: String(d.taxCountryRegion ?? 'PT'),
-    taxCode: String(d.taxCode ?? d.id),
-    description: String(d.description ?? d.taxCode ?? '—'),
-    taxPercentage: d.taxPercentage,
-    taxAmount: d.taxAmount,
-    taxExpirationDate: d.expirationDate,
+  return (result.docs as TaxCode[]).map((d) => ({
+    taxType: String((d.taxType as string | undefined) ?? 'IVA'),
+    taxCountryRegion: String((d.taxCountryRegion as string | undefined) ?? 'PT'),
+    taxCode: String(((d.taxCode as string | undefined) ?? d.id) ?? d.id),
+    description: String((((d.description as string | undefined) ?? (d.taxCode as string | undefined) ?? '—') ?? '—')),
+    taxPercentage: (d.taxPercentage as number | undefined),
+    taxAmount: (d.taxAmount as number | undefined),
+    taxExpirationDate: (d.expirationDate as string | undefined),
   }))
 }
 
@@ -363,7 +335,7 @@ export const buildGeneralLedgerEntries = async (
     limit: 100_000,
     depth: 0,
   })
-  const docs = result.docs as unknown as JournalEntryDoc[]
+  const docs = result.docs as JournalEntry[]
 
   // Group docs by canonical journal id.
   const journalsMap = new Map<string, SafTTransaction[]>()
@@ -552,7 +524,7 @@ export const buildSalesInvoices = async (
     limit: 100_000,
     depth: 1,
   })
-  const docs = result.docs as unknown as InvoiceDoc[]
+  const docs = result.docs as Invoice[]
   const invoices = docs.map(invoiceToSafT)
   const totalDebit = 0
   let totalCredit = 0
@@ -585,7 +557,7 @@ export const buildPurchaseInvoices = async (
     limit: 100_000,
     depth: 1,
   })
-  const docs = result.docs as unknown as InvoiceDoc[]
+  const docs = result.docs as Invoice[]
   const invoices = docs.map(invoiceToSafT)
   let totalDebit = 0
   const totalCredit = 0
@@ -680,7 +652,7 @@ export const buildPayments = async (
     limit: 100_000,
     depth: 0,
   })
-  const docs = result.docs as unknown as PaymentDoc[]
+  const docs = result.docs as Payment[]
   const payments = docs.map(paymentToSafT)
   let totalDebit = 0
   let totalCredit = 0
@@ -766,7 +738,7 @@ export const buildMovementOfGoods = async (
     limit: 100_000,
     depth: 1,
   })
-  const docs = result.docs as unknown as InventoryMovementDoc[]
+  const docs = result.docs as InventoryMovement[]
   const movements = docs.map(movementToSafT)
   return {
     numberOfMovementLines: movements.reduce((s, m) => s + m.lines.length, 0),

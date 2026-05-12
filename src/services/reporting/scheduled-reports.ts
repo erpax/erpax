@@ -20,8 +20,8 @@
 
 import type { Payload, PayloadRequest } from 'payload'
 import { sendNotification } from '@/services/notifications'
-import { PDFExporter } from '@/plugins/export/pdf'
-import type { FinancialStatement } from '@/plugins/export/types'
+import { PDFExporter } from '@/services/export/pdf'
+import type { FinancialStatement } from '@/services/export/types'
 
 export type ReportKind =
   | 'trial_balance'

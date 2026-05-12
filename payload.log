@@ -1,0 +1,64 @@
+[ELIFECYCLE] Command failed with exit code 1.
+
+ ⛅️ wrangler 4.90.0
+───────────────────
+Generating project types...
+
+declare namespace Cloudflare {
+	interface GlobalProps {
+		mainModule: typeof import("./.open-next/worker");
+		durableNamespaces: "TenantQuotaCounter" | "RateLimiter" | "JobLock" | "AuditChain" | "ErpaxStateDO";
+	}
+	interface Env {
+		AI_CACHE: KVNamespace;
+		R2: R2Bucket;
+		D1: D1Database;
+		VECTORIZE_DOCS: VectorizeIndex;
+		EMAIL_SENDER: SendEmail;
+		ANALYTICS_AI: AnalyticsEngineDataset;
+		ANALYTICS_GL: AnalyticsEngineDataset;
+		ANALYTICS_API: AnalyticsEngineDataset;
+		ANALYTICS_JOBS: AnalyticsEngineDataset;
+		QUEUE_AI_BATCH: Queue;
+		QUEUE_EINVOICE_OUT: Queue;
+		QUEUE_DUNNING_OUT: Queue;
+		QUEUE_PERIOD_CLOSE: Queue;
+		QUEUE_EMAIL_OUT: Queue;
+		BROWSER: Fetcher;
+		AI: Ai;
+		IMAGES: ImagesBinding;
+		ASSETS: Fetcher;
+		PAYLOAD_SECRET: string;
+		PAYLOAD_MCP_API_KEY: string;
+		ERPAX_DO: DurableObjectNamespace /* ErpaxStateDO */;
+		TENANT_QUOTA: DurableObjectNamespace /* TenantQuotaCounter */;
+		RATE_LIMITER: DurableObjectNamespace /* RateLimiter */;
+		JOB_LOCK: DurableObjectNamespace /* JobLock */;
+		AUDIT_CHAIN_DO: DurableObjectNamespace /* AuditChain */;
+		WORKER_SELF_REFERENCE: Service<typeof import("./.open-next/worker").default>;
+		RATE_LIMITER_API: RateLimit;
+		RATE_LIMITER_AI: RateLimit;
+	}
+}
+interface CloudflareEnv extends Cloudflare.Env {}
+type StringifyValues<EnvType extends Record<string, unknown>> = {
+	[Binding in keyof EnvType]: EnvType[Binding] extends string ? EnvType[Binding] : string;
+};
+declare namespace NodeJS {
+	interface ProcessEnv extends StringifyValues<Pick<Cloudflare.Env, "PAYLOAD_SECRET" | "PAYLOAD_MCP_API_KEY">> {}
+}
+
+Generating runtime types...
+
+Runtime types generated.
+
+
+✨ Types written to cloudflare-env.d.ts
+
+📖 Read about runtime types
+https://developers.cloudflare.com/workers/languages/typescript/#generate-types
+📣 Remember to rerun 'wrangler types' after you change your wrangler.jsonc file.
+
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Command failed with exit code 1.
+[ELIFECYCLE] Command failed with exit code 1.

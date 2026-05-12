@@ -28,8 +28,8 @@ import {
 import {
   bucketAgeDays,
   daysBetween,
-} from '@/plugins/accounting/utilities/calculations';
-import { DebitCreditLogic, type AccountType } from '@/plugins/accounting/debit-credit';
+} from '@/services/accounting/utilities/calculations';
+import { DebitCreditLogic, type AccountType } from '@/services/accounting/debit-credit';
 import { journalEntryService } from './journal-entry.service';
 import { eventEmitter } from './event-emitter.service';
 
