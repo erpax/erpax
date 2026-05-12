@@ -10,6 +10,7 @@ import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { r2Storage } from '@payloadcms/storage-r2'
+import { accountingPlugin } from './plugins/accounting'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
 import { translations as importExportTranslations } from '@payloadcms/plugin-import-export/translations/languages/all'
@@ -574,6 +575,7 @@ export default buildConfig({
       collections: { media: true },
     }),
     createEcommercePlugin(),
+    accountingPlugin(),
     multiTenantPlugin<Config>({
       collections: {
         // CMS Collections
