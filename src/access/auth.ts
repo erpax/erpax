@@ -14,7 +14,7 @@
  */
 
 import type { Access, PayloadRequest } from 'payload'
-import type { UserContext, UserRole, AccessResult } from './types'
+import type { UserContext, UserRole, AccessResult } from '@/types/auth'
 
 /**
  * Extract user context from request.

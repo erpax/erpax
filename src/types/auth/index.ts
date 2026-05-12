@@ -9,7 +9,9 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-export type UserRole = 'super-admin' | 'admin' | 'user' | 'customer' | 'accountant' | 'auditor' | 'viewer'
+export const SUPER_ADMIN_ROLE = 'super-admin' as const
+
+export type UserRole = typeof SUPER_ADMIN_ROLE | 'admin' | 'user' | 'customer' | 'accountant' | 'auditor' | 'viewer'
 
 export interface UserContext {
   id: string
@@ -27,6 +29,7 @@ export interface AccessResult {
  * Type guard: narrow unknown to Payload user shape.
  *
  * Used to safely access `req.user` properties without `as any` casts.
+ * Validates both presence and element types of arrays.
  */
 export const isPayloadUser = (user: unknown): user is {
   readonly id: string
@@ -37,9 +40,16 @@ export const isPayloadUser = (user: unknown): user is {
   if (!('id' in user && 'tenants' in user && 'roles' in user)) return false
 
   const u = user as Record<string, unknown>
+  if (typeof u.id !== 'string' || !Array.isArray(u.tenants) || !Array.isArray(u.roles)) {
+    return false
+  }
+
+  // Validate array element types
   return (
-    typeof u.id === 'string' &&
-    Array.isArray(u.tenants) &&
-    Array.isArray(u.roles)
+    u.tenants.every((t) =>
+      typeof t === 'object' && t !== null &&
+      (('tenant' in t && typeof (t as any).tenant === 'string') || !('tenant' in t))
+    ) &&
+    u.roles.every((r) => typeof r === 'string')
   )
 }

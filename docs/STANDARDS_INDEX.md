@@ -38,6 +38,17 @@ docs/superpowers/plans/2026-05-11-slice-DDDDD-agent-coupling-layer.md:279: * @st
 docs/superpowers/plans/2026-05-11-slice-DDDDD-agent-coupling-layer.md:431: * @standard ISO/IEC 25010:2023 §5.5 testability
 docs/superpowers/plans/2026-05-11-slice-DDDDD-agent-coupling-layer.md:568: * @standard ISO/IEC 25010:2023 §5.4 reusability
 docs/superpowers/plans/2026-05-11-slice-DDDDD-agent-coupling-layer.md:690: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1170: * @standard IAS-1 Presentation of Financial Statements
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1415: * @standard IFRS-1 Presentation of Financial Statements
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1416: * @standard US-GAAP ASC-210 Balance Sheet
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1505: * @standard ISO-19011:2018 audit-trail
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1661: * @standard ISO-19011:2018 audit-trail
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1754: * @standard IAS-1:2021 Presentation of Financial Statements
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1755: * @standard IAS-2:2022 Inventories
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1756: * @standard IFRS-15:2018 Revenue from Contracts with Customers
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1785: * @standard IAS-1 Presentation of Financial Statements
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:351: * @standard NIST INCITS-359-2012 role-based-access-control
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:420: * @standard NIST INCITS-359-2012 role-based-access-control
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:226: * @standard IAS-1:2021 Presentation of Financial Statements
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:227: * @standard IAS-2:2022 Inventories
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:228: * @standard IFRS-9:2014 Financial Instruments
@@ -1008,6 +1019,29 @@ src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-tes
 src/payload.config.ts:898:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
 src/payload.config.ts:916:       * @standard ISO-3166-1:2020 BG country-code
 src/payload.config.ts:917:       * @standard ISO-4217:2015 currency-codes
+src/plugins/accounting/README.md:136: * @standard SAF-T:2.0 master-account-list
+src/plugins/accounting/README.md:137: * @standard ISO-20022:2013 account-structure
+src/plugins/accounting/collections/index.ts:4: * @standard SAF-T:2.0 master-data
+src/plugins/accounting/collections/index.ts:5: * @standard ISO-20022:2013 financial-messaging
+src/plugins/accounting/components/index.ts:8: * @standard SAF-T:2.0 reporting
+src/plugins/accounting/hooks/index.ts:7: * @standard SAF-T:2.0 audit-trail
+src/plugins/accounting/index.ts:13: * @standard SAF-T:2.0 general-ledger
+src/plugins/accounting/index.ts:14: * @standard ISO-20022:2013 financial-messaging
+src/plugins/accounting/plugin.ts:10: * @standard SAF-T:2.0 plugin-registration
+src/plugins/accounting/plugin.ts:11: * @standard ISO-20022:2013 accounting-master-data
+src/plugins/accounting/services/index.ts:4: * @standard ISO-20022:2013 payment-workflows
+src/plugins/accounting/services/index.ts:5: * @standard SAF-T:2.0 accounting-functions
+src/plugins/accounting/types/index.ts:4: * @standard ISO-20022:2013 financial-messaging
+src/plugins/accounting/types/index.ts:5: * @standard SAF-T:2.0 accounting-master-data
+src/plugins/accounting/validators/index.ts:4: * @standard ISO-20022:2013 validation-rules
+src/plugins/accounting/validators/index.ts:5: * @standard SAF-T:2.0 chart-of-accounts
+src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
+src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/auth/access/predicates.ts:123: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/auth/access/predicates.ts:48: * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
+src/plugins/auth/access/predicates.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/auth/access/predicates.ts:91: * @standard NIST INCITS-359-2012 role-based-access-control
 src/sdk/accounting-client.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/seeds/accounting/critical-gaps-verification.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/seeds/accounting/index.ts:18: * @standard ISO-3166-1:2020 country-codes alpha-2
@@ -2736,6 +2770,9 @@ tests/helpers/seedUser.ts:5: * @rfc 5322 internet-message-format email-fixture
 docs/PLUGIN_ARCHITECTURE.md:258: * @compliance VAT VAT-directive-2006-112-EC
 docs/STANDARDS.md:54: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 docs/TYPE_HIERARCHY_EXAMPLES.md:228: * @compliance VAT Directive 2006/112/EC
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1662: * @compliance SOX § 404 internal-controls
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1759: * @compliance SOX § 404 internal-controls
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:563: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/access/allowPublicReadTenants.ts:9: * @compliance GDPR Art.5(1)(c) data-minimization
 src/access/auth.ts:12: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/authenticated.ts:7: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -3122,6 +3159,7 @@ src/hooks/enforceDocumentTenantForUser.ts:18: * @compliance GDPR Art.5(1)(f) int
 src/hooks/enforceDocumentTenantForUser.ts:19: * @compliance SOC-2 CC6.1 logical-access-controls
 src/hooks/enforceSegregationOfDuties.ts:10: * @compliance SOX §404 internal-controls four-eyes-principle
 src/hooks/enforceSegregationOfDuties.ts:11: * @compliance SOC-2 CC6.3 logical-access-controls
+src/hooks/factories/auto-populate-tenant.ts:10: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/hooks/middleware/accounting/tenant-scope.ts:16: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/hooks/middleware/accounting/tenant-scope.ts:17: * @compliance GDPR Art.32 security-of-processing
 src/hooks/middleware/accounting/tenant-scope.ts:18: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -3134,6 +3172,14 @@ src/payload.config.multi-tenant-admin.test.ts:15: * @compliance GDPR Art.5(1)(f)
 src/payload.config.multi-tenant-admin.test.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
 src/payload.config.tenant.test.ts:7: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/payload.config.tenant.test.ts:8: * @compliance SOC-2 CC6.1 logical-access-controls
+src/plugins/auth/access/field-access.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
+src/plugins/auth/access/field-access.ts:41: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/plugins/auth/access/field-access.ts:77: * @compliance SOC-2 CC7.2 system-monitoring
+src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
+src/plugins/auth/access/predicates.ts:126: * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
+src/plugins/auth/access/predicates.ts:50: * @compliance SOC-2 CC6.3 privileged-access-management
+src/plugins/auth/access/predicates.ts:95: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/plugins/auth/access/predicates.ts:96: * @compliance SOC-2 CC6.1 logical-access-controls
 src/seeds/accounting/critical-gaps-verification.test.ts:9: * @compliance SOX §404 internal-controls
 src/seeds/accounting/level-3-e2e.test.ts:13: * @compliance SOX §404 internal-controls
 src/services/accounting/debit-credit.ts:15: * @compliance SOX §404 internal-controls
@@ -3350,6 +3396,12 @@ docs/TYPE_HIERARCHY_EXAMPLES.md:105: * @accounting IFRS-15 revenue-recognition
 docs/TYPE_HIERARCHY_EXAMPLES.md:348: * @accounting IFRS-15 revenue-recognition
 docs/TYPE_HIERARCHY_EXAMPLES.md:772: * @accounting IFRS IAS-1 presentation-of-financial-statements
 docs/TYPE_HIERARCHY_EXAMPLES.md:795: * @accounting IFRS IAS-1 chart-of-accounts
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1285: * @accounting IFRS-15 revenue-recognition
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1286: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1324: * @accounting IFRS-9 Financial Instruments
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1358: * @accounting IFRS-1 Presentation of Financial Statements
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1757: * @accounting gl-accounts [or other domain]
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1786: * @accounting gl-posting
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:229: * @accounting gl-accounts
 src/access/feature-registry.ts:30: * @accounting IFRS IFRS-15 §22 performance-obligations
 src/access/feature-registry.ts:31: * @accounting IFRS IFRS-15 §B16 usage-based-revenue
@@ -3760,6 +3812,16 @@ src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-
 src/payload.config.ts:896:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
 src/payload.config.ts:897:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
 src/payload.config.ts:918:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/plugins/accounting/README.md:138: * @accounting IFRS-16 chart-of-accounts
+src/plugins/accounting/access/index.ts:5: * @accounting IFRS-16 audit-trail
+src/plugins/accounting/collections/index.ts:6: * @accounting IFRS-16 general-ledger
+src/plugins/accounting/components/index.ts:9: * @accounting IFRS-16 presentation
+src/plugins/accounting/hooks/index.ts:8: * @accounting IFRS-16 period-closing
+src/plugins/accounting/index.ts:15: * @accounting IFRS-16 complete
+src/plugins/accounting/plugin.ts:12: * @accounting IFRS-16 general-ledger
+src/plugins/accounting/services/index.ts:6: * @accounting IFRS-16 period-closing
+src/plugins/accounting/types/index.ts:6: * @accounting IFRS-16 financial-reporting
+src/plugins/accounting/validators/index.ts:6: * @accounting IFRS-16 compliance
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/seeds/accounting/critical-gaps-verification.test.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4050,6 +4112,19 @@ tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:14: * @accounting IF
 
 ## @security
 
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1760: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:290: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:291: * @security ISO-27002 § 5.15 access-control
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:352: * @security ISO-27001 A.5.16 identity-management
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:353: * @security ISO-27001 A.5.18 access-rights
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:354: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:355: * @security ISO-27002 §5.15 access-control
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:421: * @security ISO-27001 A.5.18 access-rights
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:422: * @security ISO-27002 § 5.15 access-control
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:485: * @security ISO-27001 A.5.18 access-rights
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:486: * @security ISO-27002 § 5.15 access-control
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:560: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:561: * @security ISO-27002 § 5.15 access-control
 src/access/allowPublicReadTenants.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/access/allowPublicReadTenants.ts:6: * @security ISO-27002 §5.15 access-control
 src/access/allowPublicReadTenants.ts:7: * @security ISO-27002 §8.3 information-access-restriction
@@ -4333,6 +4408,8 @@ src/hooks/enforceDocumentTenantForUser.ts:17: * @security ISO-27002 §8.3 inform
 src/hooks/enforceSegregationOfDuties.ts:9: * @security ISO-27002 §5.4 segregation-of-duties
 src/hooks/ensureUniqueSlugWithinTenant.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/hooks/ensureUniqueSlugWithinTenant.ts:18: * @security ISO-27002 §5.15 access-control
+src/hooks/factories/auto-populate-tenant.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/hooks/factories/auto-populate-tenant.ts:8: * @security ISO-27002 § 5.15 access-control
 src/hooks/middleware/accounting/index.ts:4: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/hooks/middleware/accounting/index.ts:5: * @security ISO-27002 §5.15 access-control
 src/hooks/middleware/accounting/tenant-scope.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4344,6 +4421,36 @@ src/payload.config.multi-tenant-admin.test.ts:13: * @security ISO-27002 §5.15 a
 src/payload.config.multi-tenant-admin.test.ts:14: * @security ISO-27002 §8.3 information-access-restriction
 src/payload.config.tenant.test.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/payload.config.tenant.test.ts:6: * @security ISO-27002 §5.15 access-control
+src/plugins/accounting/access/index.ts:4: * @security SOX-404:2002 access-controls
+src/plugins/auth/access/field-access.ts:10: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/field-access.ts:11: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/field-access.ts:12: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/field-access.ts:39: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/field-access.ts:40: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/field-access.ts:75: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/field-access.ts:76: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/field-access.ts:9: * @security ISO-27001 A.5.18 access-rights
+src/plugins/auth/access/index.ts:11: * @security ISO-27001 A.5.15 access-control
+src/plugins/auth/access/index.ts:12: * @security ISO-27001 A.5.18 access-rights
+src/plugins/auth/access/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/index.ts:14: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/index.ts:15: * @security ISO-27002 § 5.4 segregation-of-duties
+src/plugins/auth/access/predicates.ts:10: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:11: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/predicates.ts:124: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:125: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/predicates.ts:12: * @security ISO-27002 § 8.2 privileged-access-rights
+src/plugins/auth/access/predicates.ts:49: * @security ISO-27002 § 8.2 privileged-access-rights
+src/plugins/auth/access/predicates.ts:70: * @security ISO-27001 A.5.16 identity-management
+src/plugins/auth/access/predicates.ts:71: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:72: * @security ISO-27002 § 8.5 secure-authentication
+src/plugins/auth/access/predicates.ts:8: * @security ISO-27001 A.5.18 access-rights
+src/plugins/auth/access/predicates.ts:92: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/predicates.ts:93: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:94: * @security ISO-27002 § 8.3 information-access-restriction
+src/plugins/auth/access/predicates.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/context/tenant-context.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/context/tenant-context.ts:7: * @security ISO-27002 § 5.15 access-control
 src/services/accounting/factories/collection-factory.ts:72: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-required
 src/services/accounting/factories/collection-factory.ts:73: * @security ISO-27002 §5.15 access-control role-required
 src/services/accounting/utilities/period-lock.ts:20: * @security ISO-27002 §5.4 segregation-of-duties
@@ -4472,6 +4579,9 @@ docs/PLUGIN_ARCHITECTURE.md:677: * @audit ISO-19011:2018 audit-trail
 docs/standards/integrity.md:126: * @audit ISO 19011:2018 §6.4.6 (uuid audit-trailed)
 docs/superpowers/plans/2026-05-11-slice-DDDDD-agent-coupling-layer.md:103: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 docs/superpowers/plans/2026-05-11-slice-DDDDD-agent-coupling-layer.md:691: * @audit ISO 19011:2018 §6.4.6
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1758: * @audit ISO-19011:2018 § 6.5 audit-evidence-preservation
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1787: * @audit Conservation Law 26 (self-accounting completeness)
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:562: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:230: * @audit ISO-19011:2018 § 6.5 audit-evidence-preservation
 src/access/authenticatedOrPublished.ts:8: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/access/membershipAdminMutateAccess.ts:23: * @audit ISO-19011:2018 audit-trail
@@ -4728,6 +4838,7 @@ src/hooks/collections/shared/common.ts:6: * @audit ISO-19011:2018 audit-trail re
 src/hooks/enforceDocumentTenantForUser.ts:20: * @audit ISO-19011:2018 audit-trail
 src/hooks/enforceSegregationOfDuties.ts:12: * @audit ISO-19011:2018 audit-trail
 src/hooks/ensureUniqueSlugWithinTenant.ts:19: * @audit ISO-19011:2018 audit-trail
+src/hooks/factories/auto-populate-tenant.ts:9: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 src/hooks/middleware/accounting/tenant-scope.ts:19: * @audit ISO-19011:2018 audit-trail
 src/hooks/populatePublishedAt.ts:5: * @audit ISO-19011:2018 audit-trail publication-timestamp
 src/hooks/validateAddress.ts:25: * @audit ISO-19011:2018 audit-trail address-validation
@@ -4737,6 +4848,7 @@ src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:899:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:919:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/plugins/accounting/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/critical-gaps-verification.test.ts:8: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-evidence
@@ -5137,6 +5249,9 @@ tests/helpers/standards-fixtures.ts:26: * @audit ISO-19011:2018 audit-trail stan
 
 ## @quality
 
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1417: * @quality shadcn/ui + Recharts
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1585: * @quality shadcn/ui Checkbox + Progress
+docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:802: * @quality No unsafe casts in production code
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:421: * @quality shadcn/ui accessibility (WCAG 2.1 AA)
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:459: * @quality shadcn/ui + Recharts
 src/components/Dashboard.tsx:18: * @quality ISO-25010 usability dashboard-presentation

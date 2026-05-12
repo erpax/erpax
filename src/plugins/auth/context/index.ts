@@ -2,5 +2,5 @@
  * @erpax/auth/context — tenant context derivation.
  */
 
-export { getTenantContext }
+export { getTenantContext, SUPER_ADMIN_ROLE }
 export type { TenantContext }
