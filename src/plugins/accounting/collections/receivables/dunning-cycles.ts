@@ -13,7 +13,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Invoice relationship links to the original sale. Customer relationship denormalized from invoice
+ * Multi-tenant isolation via `tenant`. Invoice relationship links to the original sale. Customer relationship denormalized from invoice
  * for reporting efficiency (avoids join at query time). Stages are operator-configurable per tenant; defaults shown above.
  * An append-only `history` array logs every stage transition with timestamp, amount-overdue-at-entry, communication-sent (email/SMS/letter),
  * and reason. Pause/hold flags allow business logic (dispute, payment-plan agreement, bankruptcy) to suspend auto-escalation without deleting
@@ -50,7 +50,7 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who modified status/pause flags.
  * - **modifiedAt (date, readOnly):** Last modification timestamp.
  * - **note (textarea):** Internal notes (collection strategy, customer communication context, hold reasons).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
@@ -73,7 +73,7 @@
  * ```javascript
  * {
  *   "_id": "dun_uuid_2026_001",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "cycleId": "DUNNC-2026-0001",
  *   "invoice": "inv_uuid_54321",
  *   "customer": "cust_uuid_12345",
@@ -165,8 +165,8 @@ const DunningCycles: CollectionConfig = {
     {
       name: 'customer',
       type: 'relationship',
-      relationTo: 'addresses',
-      admin: { description: 'Customer (denormalized from invoice for reporting).' },
+      relationTo: 'customers',
+      admin: { description: 'Party responsible (denormalized from invoice for reporting).' },
     },
     currencyField('EUR'),
     {

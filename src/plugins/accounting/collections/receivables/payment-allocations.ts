@@ -14,7 +14,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Payment relationship links to the cash-side payment row; targetType discriminator (invoice, bill,
+ * Multi-tenant isolation via `tenant`. Payment relationship links to the cash-side payment row; targetType discriminator (invoice, bill,
  * credit_memo, on_account) gates the invoice relationship. FX conversion field (allocatedFx) tracks foreign-exchange impacts when
  * payment.currency ≠ invoice.currency; the difference vs. allocatedAmount × rate is FX gain/loss. AllocationKind (manual, auto_fifo,
  * auto_reference, bank_match, stripe_webhook) documents allocation mechanism for audit context. ReverseOf field tracks un-allocation
@@ -45,7 +45,7 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who modified the allocation (status → reversed).
  * - **modifiedAt (date, readOnly):** Last modification timestamp.
  * - **note (textarea):** Internal notes (FX explanation, manual allocation reason, reference breakdown).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
@@ -53,7 +53,7 @@
  * - **CurrencyConsistency:** When allocatedFx is set, invoice.currency ≠ payment.currency. When null, currencies match.
  * - **ImmutablePosted:** Posted allocations cannot be modified; reversal is via reverseOf → new row with status = reversed.
  * - **InvoiceCompleteness:** When isFullySettling = true, payment.hook verifies Σ(allocations) ≥ invoice.totalAmount before cascading invoice:completed.
- * - **TenantIsolation:** Queries filtered by tenantId; cross-tenant access denied. @standard SOX §302
+ * - **TenantIsolation:** Queries filtered by tenant; cross-tenant access denied. @standard SOX §302
  *
  * ## Audit Trail
  *
@@ -67,7 +67,7 @@
  * ```javascript
  * {
  *   "_id": "alloc_uuid_2026_001",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "reference": "INV-2026-001 + INV-2026-002 (partial)",
  *   "payment": "pmt_uuid_wire_20260510",
  *   "targetType": "invoice",

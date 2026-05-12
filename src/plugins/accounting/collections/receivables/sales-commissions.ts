@@ -13,7 +13,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Opportunity relationship links to the closed-won deal; contract relationship (if present)
+ * Multi-tenant isolation via `tenant`. Opportunity relationship links to the closed-won deal; contract relationship (if present)
  * provides the contract-life basis for amortization. Salesperson and employee relationships track compensation routing (payroll vs. direct payment).
  * Customer relationship denormalized from opportunity for reporting. RecognitionTreatment (capitalise_amortise, expense_immediately, renewal)
  * determines GL posting logic and amortization schedule. Amortization is tracked via cumulative amortisedToDate and remaining capitalisedAssetBalance.
@@ -55,7 +55,7 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who approved/posted the commission.
  * - **modifiedAt (date, readOnly):** Last modification timestamp.
  * - **note (textarea):** Internal notes (approval justification, clawback risk assessment, amortization schedule notes).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
@@ -64,7 +64,7 @@
  * - **ClawbackWindow:** clawbackProvision.triggerDate must be within 12 months of closedWonDate (typical clawback window). IAS-37 obligation.
  * - **PaymentConsistency:** paymentStatus = paid → paymentDate must be set. Null paymentDate until approved.
  * - **UniquePerOpportunity:** Only one commission per opportunity (assumes single-deal-path; if multiple salespeople, use splitter logic upstream).
- * - **TenantIsolation:** Queries filtered by tenantId; cross-tenant access denied. @standard SOX §302
+ * - **TenantIsolation:** Queries filtered by tenant; cross-tenant access denied. @standard SOX §302
  *
  * ## Audit Trail
  *
@@ -78,7 +78,7 @@
  * ```javascript
  * {
  *   "_id": "comm_uuid_2026_001",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "reference": "COMM-2026-0001",
  *   "salesperson": "user_uuid_rep_alice",
  *   "employee": "emp_uuid_alice",

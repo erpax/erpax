@@ -13,7 +13,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Customers link to segments via many-to-one relationship (a customer may belong
+ * Multi-tenant isolation via `tenant`. Customers link to segments via many-to-one relationship (a customer may belong
  * to one or more segments; query logic applies intersection/union rules per business rule). Segments are tagged with
  * type (commercial tier, industry, geographic, lifecycle, behavioral, strategic). The `isPortfolioForIfrs15` flag
  * marks segments that represent "similar contracts" under IFRS-15 §4 practical expedient, enabling financial reporting
@@ -43,15 +43,15 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who modified the segment.
  * - **modifiedAt (date, readOnly):** Last modification timestamp (ISO-8601).
  * - **note (textarea):** Internal notes (operator flags, business justification for segment, sunset plans).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
- * - **UniquenessPerTenant:** (name, tenantId) is unique. No duplicate segment names within a tenant.
+ * - **UniquenessPerTenant:** (name, tenant) is unique. No duplicate segment names within a tenant.
  * - **PortfolioExclusivity:** Segments marked `isPortfolioForIfrs15 = true` must have explicit criteria; cannot be empty or "all customers".
  * - **PriorityConsistency:** priorityRank must be non-null when a customer is assigned to multiple overlapping segments.
  * - **DiscountCap:** discountPercent ≤ 100; negative discounts (premiums) blocked at schema level (min: 0).
- * - **TenantIsolation:** Queries filtered by tenantId; cross-tenant access denied. @standard SOX §302
+ * - **TenantIsolation:** Queries filtered by tenant; cross-tenant access denied. @standard SOX §302
  *
  * ## Audit Trail
  *
@@ -65,7 +65,7 @@
  * ```javascript
  * {
  *   "_id": "seg_uuid_enterprise",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "name": "Enterprise Tech",
  *   "nameLocalized": { "bg": "Елитни технологични", "en": "Enterprise Tech" },
  *   "description": "ARR ≥ €100k, strategic accounts with dedicated support",
@@ -93,7 +93,7 @@
  * @accounting IFRS IFRS-8 §22 disclosure-of-segment-information
  * @audit ISO-19011:2018 audit-trail crm-segmentation
  * @compliance SOX §302 §404 pricing control
- * @security Multi-tenant isolation via tenantId; role-based access (admin/accountant)
+ * @security Multi-tenant isolation via tenant; role-based access (admin/accountant)
  * @see ./Customers.ts (customer-to-segment linkage)
  * @see ./SalesOrders.ts (pricing-rule application per segment)
  */

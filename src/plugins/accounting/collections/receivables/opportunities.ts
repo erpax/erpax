@@ -13,7 +13,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Lead and customer relationships allow lead-origin or upsell paths. OpportunityOwner (sales rep) drives
+ * Multi-tenant isolation via `tenant`. Lead and customer relationships allow lead-origin or upsell paths. OpportunityOwner (sales rep) drives
  * assignment and forecasting rollup. ForecastCategory (pipeline, best_case, commit, closed, omitted) aligns with sales-forecast conventions (Siebel-style).
  * Segment relationship enables IFRS-15 §4 portfolio grouping (if segment is marked isPortfolioForIfrs15). ChainEventEmitters (emitOpportunityWon)
  * trigger GL and contract creation on status → closed_won. Activity relationship (optional) links contact logs, emails, calls for deal-progression tracking.
@@ -49,7 +49,7 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who updated stage/probability/amount.
  * - **modifiedAt (date, readOnly):** Last modification timestamp.
  * - **note (textarea):** Internal notes (decision-criteria, objection handling, next steps, risk flags).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
@@ -58,7 +58,7 @@
  * - **ForecastAmountUpdate:** weightedAmount = amount × probability/100. Read-only; auto-computed on amount or probability change.
  * - **CloseDateValidation:** actualCloseDate ≤ today (cannot close in future); expectedCloseDate ≥ today (future forecast).
  * - **NetNewVsUpsell:** Either lead OR customer is set, not both. Upsells have customer; net-new conversions have lead.
- * - **TenantIsolation:** Queries filtered by tenantId; cross-tenant access denied. @standard SOX §302
+ * - **TenantIsolation:** Queries filtered by tenant; cross-tenant access denied. @standard SOX §302
  *
  * ## Audit Trail
  *
@@ -73,7 +73,7 @@
  * ```javascript
  * {
  *   "_id": "opp_uuid_acme_ent",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "name": "Acme Corp — Enterprise License (3-year)",
  *   "nameLocalized": { "bg": "ООО Акме — Лицензиране на предприятие (3-годишно)", "en": "Acme Corp — Enterprise License (3-year)" },
  *   "lead": "lead_uuid_2026_001",

@@ -20,7 +20,7 @@ import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId` ensures customers belong to their owning org.
+ * Multi-tenant isolation via `tenant` ensures customers belong to their owning org.
  * Addresses are linked via relationship (1 customer → many addresses; distinct billing/shipping defaults).
  * VAT classification (classifyTaxId hook) normalizes tax-id types against per-country regex registry,
  * driving e-invoice routing and VIES validation. Role-based access enforces master-data sovereignty:
@@ -37,7 +37,6 @@ import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
  *
  * - **code (text, required, unique):** Unique customer code (e.g. CUST-0001 or 10003456). Index for fast lookup.
  * - **name (text, required):** Display name used in invoices and reports. @standard EN-16931:2017 §BG-7 name
- * - **nameLocalized (text, localized):** Customer name in multiple languages/regions. @standard ISO-639-1 language-tags
  * - **legalName (text, group: identity):** Registered legal name (EN-16931 BT-27). May differ from trade name.
  * - **customerType (select: individual | company):** Party legal form. Drives validation rules, tax treatment, address cardinality.
  * - **status (select: active | on_hold | inactive | archived):** Lifecycle status; on_hold blocks invoice issuance.
@@ -54,14 +53,14 @@ import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
  * - **defaultDiscountAccount (relationship → gl-accounts, group: ledger):** Contra-revenue for early-payment or negotiated discounts.
  * - **country (text, index):** ISO-3166-1 alpha-2 (e.g. BG, DE, NL). Drives country-context API routing (VIES, business-registry, e-invoicing).
  * - **note (textarea, group: notes):** Internal notes (operator flags, credit history, special handling).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
- * - **UniquenessPerTenant:** (code, tenantId) is unique. No duplicate customer codes within a tenant; prevents invoice routing ambiguity.
+ * - **UniquenessPerTenant:** (code, tenant) is unique. No duplicate customer codes within a tenant; prevents invoice routing ambiguity.
  * - **CreditLimitEnforcement:** Invoices blocked if (total open AR + new invoice) > creditLimit. @standard IAS-39 customer-credit-risk
  * - **VATClassification:** vatNumberType auto-populated via classifyTaxId; updated on save. Null vatNumber → vatNumberType remains null.
- * - **TenantIsolation:** Queries filtered by tenantId; cross-tenant reads denied. Enforced by scopedAccess and tenantMasterDataAccess.
+ * - **TenantIsolation:** Queries filtered by tenant; cross-tenant reads denied. Enforced by scopedAccess and tenantMasterDataAccess.
  * - **ARAgingBasis:** Customer record is the source-of-truth for payment terms; invoice due-date = issueDate + paymentTermsDays.
  *
  * ## Audit Trail
@@ -76,10 +75,9 @@ import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
  * ```javascript
  * {
  *   "_id": "cust_uuid_12345",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "code": "CUST-0001",
  *   "name": "ООО Интех Лтд",
- *   "nameLocalized": { "bg": "ООО Интех Лтд", "en": "Intech LLC (Bulgaria)" },
  *   "country": "BG",
  *   "identity": {
  *     "legalName": "ООО Интех Лтд (ЕООД 123456789)",
@@ -124,7 +122,7 @@ import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
  * @audit SOX §302 §404 AR control activity
  * @compliance GDPR Art.6(1)(b) lawful-basis-contract
  * @compliance GDPR Art.5 data-minimization
- * @security Multi-tenant isolation via tenantId; role-based write access (admin/accountant only)
+ * @security Multi-tenant isolation via tenant; role-based write access (admin/accountant only)
  * @see ./CustomerSegments.ts (customer grouping for pricing/targeting)
  * @see ./DunningCycles.ts (AR aging escalation)
  * @see src/services/country-context.ts (VAT classification entry point)

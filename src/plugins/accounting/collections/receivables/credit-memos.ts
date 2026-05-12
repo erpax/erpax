@@ -14,7 +14,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Customer (party owed the credit) and invoice (original sale) are explicit
+ * Multi-tenant isolation via `tenant`. Customer (party owed the credit) and invoice (original sale) are explicit
  * relationships. Journal entry relationship captures the GL posting; created/updated by afterChange hook.
  * Role-based access restricts creation/updates to admin and accountant. Reason taxonomy (refund_return, refund_service,
  * pricing_adjustment, bad_debt_writeoff, goodwill, tax_adjustment) enables financial reporting rollup.
@@ -45,7 +45,7 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who modified status/amount.
  * - **modifiedAt (date, readOnly):** Last modification timestamp.
  * - **note (textarea):** Internal notes (audit trail, customer communication, dispute resolution steps).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
@@ -54,7 +54,7 @@
  * - **GLPostingChain:** GL posting created on status → issued; reversed on voided. Journal entry remains immutable (readOnly) after creation.
  * - **PeriodLockEnforcement:** validateNotLocked prevents posting to closed fiscal periods. @standard SOX §302
  * - **CurrencyConsistency:** memo.currency must match invoice.currency if invoice linked.
- * - **UniquePerTenant:** (memoNumber, tenantId) is unique within the tenant.
+ * - **UniquePerTenant:** (memoNumber, tenant) is unique within the tenant.
  *
  * ## Audit Trail
  *
@@ -68,7 +68,7 @@
  * ```javascript
  * {
  *   "_id": "cm_uuid_2026_0001",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "memoNumber": "CM-2026-0001",
  *   "customer": "cust_uuid_12345",
  *   "invoice": "inv_uuid_54321",

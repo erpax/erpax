@@ -14,7 +14,7 @@
  *
  * ## Architecture
  *
- * Multi-tenant isolation via `tenantId`. Leads are CRM-domain records; address/location stored as country code (not full address)
+ * Multi-tenant isolation via `tenant`. Leads are CRM-domain records; address/location stored as country code (not full address)
  * to minimize storage. Lead source (website form, demo request, cold email, event, partner referral, etc.) tracks acquisition channel.
  * Lead score (0-100) combines BANT / MEDDIC criteria; may be AI-suggested. Status lifecycle (new → contacted → engaged → MQL/SQL → converted/disqualified)
  * gates progression. ConvertedOpportunity and convertedCustomer relationships (readOnly) record conversion outcome. ConsentRecord relationship
@@ -38,7 +38,7 @@
  * - **website (text):** Company website URL. Sourced from lead-gen / intent data.
  * - **industry (text):** Industry classification (e.g., "SaaS", "FinTech", "Manufacturing"). Segment filter.
  * - **companySize (select):** Employee count bucket: 1-10, 11-50, 51-200, 201-1000, 1000+. Qualification sizing.
- * - **country (text, from countryCodeField):** ISO-3166-1 alpha-2 (e.g. BG, DE). Region targeting for localized outreach.
+ * - **countryCode (text, from countryCodeField):** ISO-3166-1 alpha-2 (e.g. BG, DE). Region targeting for localized outreach.
  * - **preferredLanguage (text):** BCP-47 language tag (e.g. en, de, bg-BG). Communication preference.
  * - **leadSource (select):** Acquisition channel: website_form, demo_request, content_download, cold_email, cold_call, event, partner, webinar, social, paid_ad, organic_search, other. Attribution.
  * - **campaign (text):** Campaign identifier (e.g., "Q2-2026-Webinar", "SpringEvent2026"). Marketing attribution.
@@ -56,7 +56,7 @@
  * - **modifiedBy (relationship → users, readOnly):** Last user who updated status/assignment.
  * - **modifiedAt (date, readOnly):** Last modification timestamp.
  * - **note (textarea):** Internal notes (qualification reason, disqualification reason, follow-up actions).
- * - **tenantId (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
+ * - **tenant (relationship → tenants, required, index):** Multi-tenant isolation; set by autoPopulateTenant.
  *
  * ## Core Invariants
  *
@@ -65,7 +65,7 @@
  * - **ConversionConsistency:** convertedOpportunity is readOnly; set by opportunity-creation logic (emitLeadQualified chain event).
  * - **LeadSourceAccuracy:** leadSource must match actual acquisition channel; no fabricated sources for false attribution.
  * - **ScoreValidity:** leadScore ∈ [0, 100]; MQL/SQL status typically ≥ 50 (configurable per tenant).
- * - **TenantIsolation:** Queries filtered by tenantId; cross-tenant access denied. @standard SOX §302
+ * - **TenantIsolation:** Queries filtered by tenant; cross-tenant access denied. @standard SOX §302
  *
  * ## Audit Trail
  *
@@ -79,7 +79,7 @@
  * ```javascript
  * {
  *   "_id": "lead_uuid_2026_001",
- *   "tenantId": "tenant_bg_ltd",
+ *   "tenant": "tenant_bg_ltd",
  *   "fullName": "Иван Петров",
  *   "firstName": "Иван",
  *   "lastName": "Петров",
@@ -89,7 +89,7 @@
  *   "phone": "+359 2 555 1234",
  *   "industry": "FinTech",
  *   "companySize": "201_1000",
- *   "country": "BG",
+ *   "countryCode": "BG",
  *   "preferredLanguage": "bg",
  *   "leadSource": "event",
  *   "campaign": "FinTechSummit2026",
