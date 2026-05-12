@@ -13,6 +13,11 @@ import {
 } from '@/fields/accounting/base-accounting-fields'
 import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
 import { validateBalancedEntry } from '@/hooks/collections/accounting/balanced-entry.hook'
+import {
+  validateGLPostingTenant,
+  validateGLPostingStatusTransition,
+  validateGLPostingReversal,
+} from '../hooks'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.
@@ -90,6 +95,8 @@ const GLPostings: CollectionConfig = {
   hooks: {
     beforeValidate: [
       autoPopulateTenant,
+      validateGLPostingTenant,
+      validateGLPostingReversal,
       // Single source of truth for the balance check, with field-name overrides
       // for GLPostings' `accountsAffected[].{debitAmount, creditAmount}` shape
       // (vs. JournalEntries' `lines[].{debit, credit}`).
@@ -105,6 +112,7 @@ const GLPostings: CollectionConfig = {
     ],
     beforeChange: [
       validateNotLocked,
+      validateGLPostingStatusTransition,
       autoPopulateCreatedBy,
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
     ],

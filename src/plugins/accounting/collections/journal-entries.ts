@@ -14,6 +14,7 @@ import {
 } from '@/fields/accounting/base-accounting-fields'
 import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
 import { validateBalancedEntry } from '@/hooks/collections/accounting/balanced-entry.hook'
+import { validateGLPostingTenant } from '../hooks'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.
@@ -122,6 +123,7 @@ const JournalEntries: CollectionConfig = {
   hooks: {
     beforeValidate: [
       autoPopulateTenant,
+      validateGLPostingTenant,
       // Single source of truth for the double-entry balance check.
       validateBalancedEntry({
         linesField: 'lines',
