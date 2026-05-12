@@ -1,12 +1,3 @@
-import type { CollectionConfig } from 'payload'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/auth'
-import { multiTenancyField, notesField } from '@/fields/accounting/base-accounting-fields'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
-import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
-import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
-import { validateNotLocked } from '@/services/accounting/utilities/period-lock';
-
 /**
  * # Tax Calculations
  *
@@ -135,6 +126,17 @@ import { validateNotLocked } from '@/services/accounting/utilities/period-lock';
  * @see gl-accounts (GL posting targets for tax payable/receivable)
  * @see journal-entries (GL posting detail)
  */
+
+import type { CollectionConfig } from 'payload'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/auth'
+import { multiTenancyField, notesField } from '@/fields/accounting/base-accounting-fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock';
+
+
 const TaxCalculations: CollectionConfig = {
   slug: 'tax-calculations',
   labels: { singular: 'Tax Calculation', plural: 'Tax Calculations' },

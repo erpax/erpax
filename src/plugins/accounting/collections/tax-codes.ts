@@ -1,10 +1,3 @@
-import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '@/access/auth'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField, taxonomySelect } from '@/fields/accounting/base-accounting-fields'
-import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
-
 /**
  * # Tax Codes
  *
@@ -147,6 +140,15 @@ import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
  * @see tax-calculations (rate consumer; lookup tax-code for calculation)
  * @see gl-accounts (GL posting targets referenced in ledger group)
  */
+
+import type { CollectionConfig } from 'payload'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { multiTenancyField, taxonomySelect } from '@/fields/accounting/base-accounting-fields'
+import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
+
+
 export const TaxCodes: CollectionConfig = {
   slug: 'tax-codes',
   admin: {

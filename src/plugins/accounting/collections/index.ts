@@ -30,16 +30,16 @@ import CommitmentsAndContingencies from './commitments-and-contingencies'
 import GovernmentGrants from './government-grants'
 
 // Tax & Currency
-import TaxCalculations from './taxcalculations'
+import TaxCalculations from './tax-calculations'
 import CurrencyRates from './currency-rates'
 
 // Masters & Real Entities
 import FixedAssets from './fixed-assets'
-import BudgetPlanning from './budgetplanning'
+import BudgetPlanning from './budget-planning'
 import Customers from './receivables/customers'
 import Vendors from './vendors'
-import TaxJurisdictions from './taxjurisdictions'
-import TaxCodes from './taxcodes'
+import TaxJurisdictions from './tax-jurisdictions'
+import TaxCodes from './tax-codes'
 import FiscalPeriods from './fiscal-periods'
 import CostCenters from './cost-centers'
 import LegalEntities from './legal-entities'
@@ -51,10 +51,10 @@ import McpToolMetadata from './mcp-tool-metadata'
 import Translations from './translations'
 
 // O2C (Order to Cash)
-import AuditEvents from './auditevents'
+import AuditEvents from './audit-events'
 import CreditMemos from './receivables/credit-memos'
 import Quotes from './quotes'
-import SalesOrders from './salesorders'
+import SalesOrders from './sales-orders'
 import Returns from './returns'
 import Shipments from './shipments'
 import Refunds from './refunds'
@@ -68,7 +68,7 @@ import VendorScorecards from './vendor-scorecards'
 
 // Master Banking & Payments
 import PaymentRuns from './payment-runs'
-import SepaMandates from './sepamandates'
+import SepaMandates from './sepa-mandates'
 import DunningCycles from './receivables/dunning-cycles'
 import PaymentAllocations from './receivables/payment-allocations'
 import Leases from './leases'
@@ -86,22 +86,22 @@ import DataSubjectRequests from './data-subject-requests'
 import DataProcessingActivities from './data-processing-activities'
 
 // SOX §404
-import AuditFindings from './auditfindings'
+import AuditFindings from './audit-findings'
 import ControlTests from './control-tests'
 
 // AML/KYC
 import KycChecks from './kyc-checks'
-import BeneficialOwners from './beneficialowners'
+import BeneficialOwners from './beneficial-owners'
 
 // Tax Filing
-import TaxReturns from './taxreturns'
+import TaxReturns from './tax-returns'
 
 // Inventory
 import WarehouseLocations from './warehouse-locations'
 import InventoryMovements from './inventory-movements'
 
 // API & Evidence
-import ApiAuditEvents from './apiauditevents'
+import ApiAuditEvents from './api-audit-events'
 import EvidenceAttestations from './evidence-attestations'
 
 // Payroll
@@ -136,7 +136,7 @@ import CustomsDeclarations from './customs-declarations'
 import UsageRecords from './usage-records'
 
 // AI Audit Trail
-import AiSuggestions from './aisuggestions'
+import AiSuggestions from './ai-suggestions'
 
 // Group Structure
 import Projects from './projects'

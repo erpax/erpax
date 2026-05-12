@@ -1,9 +1,3 @@
-import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '@/access/auth'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField, currencyField } from '@/fields/accounting/base-accounting-fields'
-
 /**
  * # Tax Jurisdictions
  *
@@ -139,6 +133,14 @@ import { multiTenancyField, currencyField } from '@/fields/accounting/base-accou
  * @see tax-returns (tax-returns inherit jurisdiction for filing schedule)
  * @see customs-declarations (customs declarations reference jurisdiction for trade compliance)
  */
+
+import type { CollectionConfig } from 'payload'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { multiTenancyField, currencyField } from '@/fields/accounting/base-accounting-fields'
+
+
 export const TaxJurisdictions: CollectionConfig = {
   slug: 'tax-jurisdictions',
   admin: {
