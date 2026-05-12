@@ -66,10 +66,8 @@ import {
   Subscriptions,
   // Inventory
   Items,
-  // Accounting — 122 canonical collections fully integrated per Phase 11
-  GLAccounts,
-  JournalEntries,
-  GLPostings,
+  // Accounting — GL core (GLAccounts, JournalEntries, GLPostings) now provided by accountingPlugin
+  // Remaining 119 collections loaded canonically; Phase 2.2+ will migrate to plugin barrels
   BankStatements,
   AccountReconciliations,
   FinancialStatements,
@@ -408,11 +406,8 @@ export default buildConfig({
     InvoiceLines,
     PaymentMethods,
     Payments,
-    // ===== ACCOUNTING — 122 canonical collections per Phase 11 canonical migration =====
-    // GL Core (IFRS/US-GAAP write-targets)
-    GLAccounts,
-    JournalEntries,
-    GLPostings,
+    // ===== ACCOUNTING — 119 canonical collections (GL core provided by accountingPlugin) =====
+    // GL Core (GLAccounts, JournalEntries, GLPostings) moved to plugin in Phase 2.1
     // Banking & Reconciliation
     BankStatements,
     AccountReconciliations,
