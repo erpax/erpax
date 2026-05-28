@@ -21,7 +21,7 @@ Set via `config.db` with an adapter. erpax uses `@payloadcms/db-d1-sqlite` (Clou
 Migrations are Payload-generated — no hand-written DB backward-compat. Clean slate: drop the local DB + `src/migrations/*`, finish schema changes, then `migrate:create`.
 
 ## Schema knobs
-- `defaultIDType` (`text`/`number` for SQL).
+- **uuid ids (position 0).** erpax sets the d1-sqlite adapter arg **`idType: 'uuid'`** so every doc id is a generated **uuid** (`id: string`), not an auto-increment integer. GOTCHA: the adapter maps `idType: 'uuid'|'uuidv7'` → payload `defaultIDType: 'text'`; `idType: 'text'`/`'integer'`/`'numeric'` all map to `'number'` (integer id) — so **use `'uuid'`, not `'text'`**, to get string/uuid ids. This is what makes ids content/oid-addressed → collision-free merge + federation + the etrima `oidUuid` migration (see [[identity]]). Do not revert. Per-collection override via `customIDType`.
 - `index: true` on fields; `dbName` on fields/groups/collections to control column/table/enum names.
 
 ## Common mistakes

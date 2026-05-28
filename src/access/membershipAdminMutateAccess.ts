@@ -45,7 +45,7 @@ export function createMembershipAdminMutateAccess(collectionSlug: string): Acces
 
     const adminTenants = getUserTenantIDs(req.user, 'admin')
 
-    let tenantId: number | undefined
+    let tenantId: string | undefined
 
     if (data && typeof data === 'object' && 'tenant' in data && data.tenant !== undefined && data.tenant !== null) {
       tenantId = extractID(data.tenant as Tenant | Tenant['id'])

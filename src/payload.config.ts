@@ -422,6 +422,12 @@ export default buildConfig({
   },
   db: sqliteD1Adapter({
     binding: (await getCloudflare()).env.D1,
+    // Position 0 — identity is the uuid. Text ids so every doc id is a
+    // content/oid-addressed uuid (the 0), enabling collision-free merge,
+    // federation, and the etrima migration's oidUuid ids. See `identity`.
+    // (d1-sqlite arg `idType: 'uuid'` → payloadIDType 'text' → string ids +
+    // the DB generates a uuid per row. `'text'` maps to number — use 'uuid'.)
+    idType: 'uuid',
     // NODE_ENV=test + non-TTY: Drizzle dev push can hang on interactive column prompts.
     // Vitest runs migrate in vitest.setup.ts; Playwright seeds set PAYLOAD_DEV_PUSH=false.
     push:

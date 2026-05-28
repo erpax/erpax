@@ -1104,9 +1104,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1057:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1075:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1076:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1063:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1081:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1082:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -3935,9 +3935,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1055:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1056:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1077:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1061:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1062:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1083:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/seeds/accounting/critical-gaps-verification.test.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4972,8 +4972,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1058:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1078:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1064:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1084:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/critical-gaps-verification.test.ts:8: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-evidence

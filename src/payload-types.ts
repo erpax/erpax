@@ -505,7 +505,7 @@ export interface Config {
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: number;
+    defaultIDType: string;
   };
   fallbackLocale:
     | ('false' | 'none' | 'null')
@@ -690,7 +690,7 @@ export interface PayloadMcpApiKeyAuthOperations {
  * via the `definition` "tenants".
  */
 export interface Tenant {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -829,7 +829,7 @@ export interface Tenant {
  * via the `definition` "users".
  */
 export interface User {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -853,23 +853,23 @@ export interface User {
   username?: string | null;
   tenants?:
     | {
-        tenant: number | Tenant;
+        tenant: string | Tenant;
         roles: ('admin' | 'viewer')[];
         id?: string | null;
       }[]
     | null;
   orders?: {
-    docs?: (number | Order)[];
+    docs?: (string | Order)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
   cart?: {
-    docs?: (number | Cart)[];
+    docs?: (string | Cart)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
   addresses?: {
-    docs?: (number | Address)[];
+    docs?: (string | Address)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
@@ -930,16 +930,16 @@ export interface User {
  * via the `definition` "orders".
  */
 export interface Order {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   items?:
     | {
-        product?: (number | null) | Product;
-        variant?: (number | null) | Variant;
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
         quantity: number;
         id?: string | null;
       }[]
@@ -957,9 +957,9 @@ export interface Order {
     country?: string | null;
     phone?: string | null;
   };
-  customer?: (number | null) | User;
+  customer?: (string | null) | User;
   customerEmail?: string | null;
-  transactions?: (number | Transaction)[] | null;
+  transactions?: (string | Transaction)[] | null;
   status?: OrderStatus;
   amount?: number | null;
   currency?: 'EUR' | null;
@@ -972,12 +972,12 @@ export interface Order {
  * via the `definition` "products".
  */
 export interface Product {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   title: string;
   description?: {
     root: {
@@ -996,32 +996,32 @@ export interface Product {
   } | null;
   gallery?:
     | {
-        image: number | Media;
-        variantOption?: (number | null) | VariantOption;
+        image: string | Media;
+        variantOption?: (string | null) | VariantOption;
         id?: string | null;
       }[]
     | null;
   layout?: (CallToActionBlock | ContentBlock | MediaBlock)[] | null;
   inventory?: number | null;
   enableVariants?: boolean | null;
-  variantTypes?: (number | VariantType)[] | null;
+  variantTypes?: (string | VariantType)[] | null;
   variants?: {
-    docs?: (number | Variant)[];
+    docs?: (string | Variant)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
-  relatedProducts?: (number | Product)[] | null;
+  relatedProducts?: (string | Product)[] | null;
   meta?: {
     title?: string | null;
     /**
      * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
      */
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
     description?: string | null;
   };
-  categories?: (number | Category)[] | null;
+  categories?: (string | Category)[] | null;
   /**
    * When enabled, the slug will auto-generate from the title field on save and autosave.
    */
@@ -1037,12 +1037,12 @@ export interface Product {
  * via the `definition` "media".
  */
 export interface Media {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   alt?: string | null;
   caption?: {
     root: {
@@ -1134,14 +1134,14 @@ export interface Media {
  * via the `definition` "variantOptions".
  */
 export interface VariantOption {
-  id: number;
+  id: string;
   _variantOptions_options_order?: string | null;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  variantType: number | VariantType;
+  tenant?: (string | null) | Tenant;
+  variantType: string | VariantType;
   label: string;
   /**
    * should be defaulted or dynamic based on label
@@ -1156,16 +1156,16 @@ export interface VariantOption {
  * via the `definition` "variantTypes".
  */
 export interface VariantType {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   label: string;
   name: string;
   options?: {
-    docs?: (number | VariantOption)[];
+    docs?: (string | VariantOption)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
@@ -1201,11 +1201,11 @@ export interface CallToActionBlock {
           reference?:
             | ({
                 relationTo: 'pages';
-                value: number | Page;
+                value: string | Page;
               } | null)
             | ({
                 relationTo: 'posts';
-                value: number | Post;
+                value: string | Post;
               } | null);
           url?: string | null;
           label: string;
@@ -1226,12 +1226,12 @@ export interface CallToActionBlock {
  * via the `definition` "pages".
  */
 export interface Page {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   title: string;
   hero: {
     type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
@@ -1258,11 +1258,11 @@ export interface Page {
             reference?:
               | ({
                   relationTo: 'pages';
-                  value: number | Page;
+                  value: string | Page;
                 } | null)
               | ({
                   relationTo: 'posts';
-                  value: number | Post;
+                  value: string | Post;
                 } | null);
             url?: string | null;
             label: string;
@@ -1274,7 +1274,7 @@ export interface Page {
           id?: string | null;
         }[]
       | null;
-    media?: (number | null) | Media;
+    media?: (string | null) | Media;
   };
   layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[];
   meta?: {
@@ -1282,7 +1282,7 @@ export interface Page {
     /**
      * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
      */
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
     description?: string | null;
   };
   publishedAt?: string | null;
@@ -1291,10 +1291,10 @@ export interface Page {
    */
   generateSlug?: boolean | null;
   slug: string;
-  parent?: (number | null) | Page;
+  parent?: (string | null) | Page;
   breadcrumbs?:
     | {
-        doc?: (number | null) | Page;
+        doc?: (string | null) | Page;
         title?: string | null;
         url?: string | null;
         id?: string | null;
@@ -1309,14 +1309,14 @@ export interface Page {
  * via the `definition` "posts".
  */
 export interface Post {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   title: string;
-  heroImage?: (number | null) | Media;
+  heroImage?: (string | null) | Media;
   content: {
     root: {
       type: string;
@@ -1332,18 +1332,18 @@ export interface Post {
     };
     [k: string]: unknown;
   };
-  relatedPosts?: (number | Post)[] | null;
-  categories?: (number | Category)[] | null;
+  relatedPosts?: (string | Post)[] | null;
+  categories?: (string | Category)[] | null;
   meta?: {
     title?: string | null;
     /**
      * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
      */
-    image?: (number | null) | Media;
+    image?: (string | null) | Media;
     description?: string | null;
   };
   publishedAt?: string | null;
-  authors?: (number | User)[] | null;
+  authors?: (string | User)[] | null;
   populatedAuthors?:
     | {
         id?: string | null;
@@ -1364,22 +1364,22 @@ export interface Post {
  * via the `definition` "categories".
  */
 export interface Category {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   title: string;
   /**
    * When enabled, the slug will auto-generate from the title field on save and autosave.
    */
   generateSlug?: boolean | null;
   slug: string;
-  parent?: (number | null) | Category;
+  parent?: (string | null) | Category;
   breadcrumbs?:
     | {
-        doc?: (number | null) | Category;
+        doc?: (string | null) | Category;
         title?: string | null;
         url?: string | null;
         id?: string | null;
@@ -1418,11 +1418,11 @@ export interface ContentBlock {
           reference?:
             | ({
                 relationTo: 'pages';
-                value: number | Page;
+                value: string | Page;
               } | null)
             | ({
                 relationTo: 'posts';
-                value: number | Post;
+                value: string | Post;
               } | null);
           url?: string | null;
           label: string;
@@ -1443,7 +1443,7 @@ export interface ContentBlock {
  * via the `definition` "MediaBlock".
  */
 export interface MediaBlock {
-  media: number | Media;
+  media: string | Media;
   id?: string | null;
   blockName?: string | null;
   blockType: 'mediaBlock';
@@ -1470,12 +1470,12 @@ export interface ArchiveBlock {
   } | null;
   populateBy?: ('collection' | 'selection') | null;
   relationTo?: 'posts' | null;
-  categories?: (number | Category)[] | null;
+  categories?: (string | Category)[] | null;
   limit?: number | null;
   selectedDocs?:
     | {
         relationTo: 'posts';
-        value: number | Post;
+        value: string | Post;
       }[]
     | null;
   id?: string | null;
@@ -1487,7 +1487,7 @@ export interface ArchiveBlock {
  * via the `definition` "FormBlock".
  */
 export interface FormBlock {
-  form: number | Form;
+  form: string | Form;
   enableIntro?: boolean | null;
   introContent?: {
     root: {
@@ -1513,7 +1513,7 @@ export interface FormBlock {
  * via the `definition` "forms".
  */
 export interface Form {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -1691,18 +1691,18 @@ export interface Form {
  * via the `definition` "variants".
  */
 export interface Variant {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Used for administrative purposes, not shown to customers. This is populated by default.
    */
   title?: string | null;
-  product: number | Product;
-  options: (number | VariantOption)[];
+  product: string | Product;
+  options: (string | VariantOption)[];
   inventory?: number | null;
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
@@ -1716,16 +1716,16 @@ export interface Variant {
  * via the `definition` "transactions".
  */
 export interface Transaction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   items?:
     | {
-        product?: (number | null) | Product;
-        variant?: (number | null) | Variant;
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
         quantity: number;
         id?: string | null;
       }[]
@@ -1749,10 +1749,10 @@ export interface Transaction {
     phone?: string | null;
   };
   status: 'pending' | 'succeeded' | 'failed' | 'cancelled' | 'expired' | 'refunded';
-  customer?: (number | null) | User;
+  customer?: (string | null) | User;
   customerEmail?: string | null;
-  order?: (number | null) | Order;
-  cart?: (number | null) | Cart;
+  order?: (string | null) | Order;
+  cart?: (string | null) | Cart;
   amount?: number | null;
   currency?: 'EUR' | null;
   updatedAt: string;
@@ -1763,22 +1763,22 @@ export interface Transaction {
  * via the `definition` "carts".
  */
 export interface Cart {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   items?:
     | {
-        product?: (number | null) | Product;
-        variant?: (number | null) | Variant;
+        product?: (string | null) | Product;
+        variant?: (string | null) | Variant;
         quantity: number;
         id?: string | null;
       }[]
     | null;
   secret?: string | null;
-  customer?: (number | null) | User;
+  customer?: (string | null) | User;
   purchasedAt?: string | null;
   status?: ('active' | 'purchased' | 'abandoned') | null;
   subtotal?: number | null;
@@ -1791,13 +1791,13 @@ export interface Cart {
  * via the `definition` "addresses".
  */
 export interface Address {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  customer?: (number | null) | User;
+  tenant?: (string | null) | Tenant;
+  customer?: (string | null) | User;
   title?: string | null;
   firstName?: string | null;
   lastName?: string | null;
@@ -1884,15 +1884,15 @@ export interface Address {
   /**
    * Default debit account for transactions
    */
-  debitAccount?: (number | null) | GlAccount;
+  debitAccount?: (string | null) | GlAccount;
   /**
    * Default credit account for transactions
    */
-  creditAccount?: (number | null) | GlAccount;
+  creditAccount?: (string | null) | GlAccount;
   /**
    * Cash/bank account for payments
    */
-  cashAccount?: (number | null) | GlAccount;
+  cashAccount?: (string | null) | GlAccount;
   /**
    * Internal notes
    */
@@ -1921,12 +1921,12 @@ export interface Address {
  * via the `definition` "gl-accounts".
  */
 export interface GlAccount {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Unique account code (e.g., 1000, 2100, 5001) — matches your jurisdiction's chart-of-accounts numbering.
    */
@@ -1955,7 +1955,7 @@ export interface GlAccount {
   /**
    * Parent account for hierarchy
    */
-  parentAccount?: (number | null) | GlAccount;
+  parentAccount?: (string | null) | GlAccount;
   /**
    * Normal balance side for this account
    */
@@ -1988,7 +1988,7 @@ export interface GlAccount {
  * via the `definition` "roles".
  */
 export interface Role {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -2008,27 +2008,27 @@ export interface Role {
   resource?:
     | ({
         relationTo: 'tenants';
-        value: number | Tenant;
+        value: string | Tenant;
       } | null)
     | ({
         relationTo: 'pages';
-        value: number | Page;
+        value: string | Page;
       } | null)
     | ({
         relationTo: 'posts';
-        value: number | Post;
+        value: string | Post;
       } | null)
     | ({
         relationTo: 'media';
-        value: number | Media;
+        value: string | Media;
       } | null)
     | ({
         relationTo: 'categories';
-        value: number | Category;
+        value: string | Category;
       } | null)
     | ({
         relationTo: 'products';
-        value: number | Product;
+        value: string | Product;
       } | null);
   updatedAt: string;
   createdAt: string;
@@ -2040,13 +2040,13 @@ export interface Role {
  * via the `definition` "user-roles".
  */
 export interface UserRole {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  user: number | User;
-  role: number | Role;
+  user: string | User;
+  role: string | Role;
   updatedAt: string;
   createdAt: string;
 }
@@ -2055,12 +2055,12 @@ export interface UserRole {
  * via the `definition` "invoices".
  */
 export interface Invoice {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   typeStatus: {
     /**
      * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
@@ -2125,27 +2125,27 @@ export interface Invoice {
     /**
      * Selling party
      */
-    seller: number | Address;
+    seller: string | Address;
     /**
      * Seller agent
      */
-    sellerAgent?: (number | null) | Address;
+    sellerAgent?: (string | null) | Address;
     /**
      * Buying party
      */
-    buyer: number | Address;
+    buyer: string | Address;
     /**
      * Buyer agent
      */
-    buyerAgent?: (number | null) | Address;
+    buyerAgent?: (string | null) | Address;
     /**
      * Supplier
      */
-    supplier?: (number | null) | Address;
+    supplier?: (string | null) | Address;
     /**
      * Delivery recipient
      */
-    consignee?: (number | null) | Address;
+    consignee?: (string | null) | Address;
   };
   dates?: {
     /**
@@ -2321,17 +2321,17 @@ export interface Invoice {
     /**
      * Owning subscription (used by dunning cycle)
      */
-    subscription?: (number | null) | Subscription;
+    subscription?: (string | null) | Subscription;
   };
   ledger?: {
     /**
      * Debit account
      */
-    debitAccount?: (number | null) | GlAccount;
+    debitAccount?: (string | null) | GlAccount;
     /**
      * Credit account
      */
-    creditAccount?: (number | null) | GlAccount;
+    creditAccount?: (string | null) | GlAccount;
   };
   notes?: {
     /**
@@ -2371,15 +2371,15 @@ export interface Invoice {
     /**
      * Parent invoice
      */
-    parent?: (number | null) | Invoice;
+    parent?: (string | null) | Invoice;
     /**
      * Related order
      */
-    order?: (number | null) | Invoice;
+    order?: (string | null) | Invoice;
     /**
      * Domain context
      */
-    domain?: (number | null) | Tenant;
+    domain?: (string | null) | Tenant;
   };
   /**
    * Test invoice
@@ -2405,16 +2405,16 @@ export interface Invoice {
  * via the `definition` "subscriptions".
  */
 export interface Subscription {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Current subscription plan
    */
-  plan: number | SubscriptionPlan;
+  plan: string | SubscriptionPlan;
   /**
    * Current subscription state in billing cycle
    */
@@ -2445,7 +2445,7 @@ export interface Subscription {
  * via the `definition` "subscription-plans".
  */
 export interface SubscriptionPlan {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -2495,16 +2495,16 @@ export interface SubscriptionPlan {
  * via the `definition` "invoice-lines".
  */
 export interface InvoiceLine {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Parent invoice
    */
-  invoice: number | Invoice;
+  invoice: string | Invoice;
   /**
    * Line item code
    */
@@ -2529,19 +2529,19 @@ export interface InvoiceLine {
     /**
      * Buyer item reference
      */
-    buyerItem?: (number | null) | Item;
+    buyerItem?: (string | null) | Item;
     /**
      * Seller item reference
      */
-    sellerItem?: (number | null) | Item;
+    sellerItem?: (string | null) | Item;
     /**
      * Source item/inventory
      */
-    source?: (number | null) | Item;
+    source?: (string | null) | Item;
     /**
      * Destination
      */
-    destination?: (number | null) | Address;
+    destination?: (string | null) | Address;
   };
   quantity: {
     /**
@@ -2633,19 +2633,19 @@ export interface InvoiceLine {
     /**
      * Debit account
      */
-    debitAccount?: (number | null) | GlAccount;
+    debitAccount?: (string | null) | GlAccount;
     /**
      * Credit account
      */
-    creditAccount?: (number | null) | GlAccount;
+    creditAccount?: (string | null) | GlAccount;
     /**
      * Tax debit account
      */
-    taxDebitAccount?: (number | null) | GlAccount;
+    taxDebitAccount?: (string | null) | GlAccount;
     /**
      * Tax credit account
      */
-    taxCreditAccount?: (number | null) | GlAccount;
+    taxCreditAccount?: (string | null) | GlAccount;
   };
   dates?: {
     /**
@@ -2735,12 +2735,12 @@ export interface InvoiceLine {
  * via the `definition` "items".
  */
 export interface Item {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Item code
    */
@@ -2756,7 +2756,7 @@ export interface Item {
   /**
    * Owner/seller
    */
-  address: number | Address;
+  address: string | Address;
   pricing: {
     /**
      * Selling price
@@ -2799,21 +2799,21 @@ export interface Item {
     /**
      * Tax debit account
      */
-    taxDebitAccount?: (number | null) | GlAccount;
+    taxDebitAccount?: (string | null) | GlAccount;
     /**
      * Tax credit account
      */
-    taxCreditAccount?: (number | null) | GlAccount;
+    taxCreditAccount?: (string | null) | GlAccount;
   };
   ledger?: {
     /**
      * Debit account
      */
-    debitAccount?: (number | null) | GlAccount;
+    debitAccount?: (string | null) | GlAccount;
     /**
      * Credit account
      */
-    creditAccount?: (number | null) | GlAccount;
+    creditAccount?: (string | null) | GlAccount;
   };
   inventory: {
     /**
@@ -2901,12 +2901,12 @@ export interface Item {
  * via the `definition` "payment-methods".
  */
 export interface PaymentMethod {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   stripePaymentMethodId: string;
   type: 'card' | 'bank_account';
   /**
@@ -2936,12 +2936,12 @@ export interface PaymentMethod {
  * via the `definition` "payments".
  */
 export interface Payment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Transaction reference number
    */
@@ -2957,16 +2957,16 @@ export interface Payment {
   /**
    * Related invoice
    */
-  invoice: number | Invoice;
+  invoice: string | Invoice;
   parties: {
     /**
      * Payment sender (payer)
      */
-    sender: number | Address;
+    sender: string | Address;
     /**
      * Payment receiver (payee)
      */
-    receiver: number | Address;
+    receiver: string | Address;
   };
   amounts: {
     /**
@@ -3004,7 +3004,7 @@ export interface Payment {
     /**
      * User who authorized payment
      */
-    authorizedBy?: (number | null) | User;
+    authorizedBy?: (string | null) | User;
   };
   payment?: {
     /**
@@ -3036,12 +3036,12 @@ export interface Payment {
  * via the `definition` "gl-posting-rules".
  */
 export interface GlPostingRule {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Account classification for validation & reporting
    */
@@ -3093,7 +3093,7 @@ export interface GlPostingRule {
   /**
    * Link to GL accounts using this rule set
    */
-  relatedGLAccounts?: (number | GlAccount)[] | null;
+  relatedGLAccounts?: (string | GlAccount)[] | null;
   /**
    * Accounting guidance for this account type
    */
@@ -3120,12 +3120,12 @@ export interface GlPostingRule {
  * via the `definition` "journal-entries".
  */
 export interface JournalEntry {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   entryNumber: string;
   entryDate: string;
   postedDate?: string | null;
@@ -3133,7 +3133,7 @@ export interface JournalEntry {
   status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
   lines: {
     lineNumber?: number | null;
-    glAccount: number | GlAccount;
+    glAccount: string | GlAccount;
     accountNumber?: string | null;
     accountName?: string | null;
     description?: string | null;
@@ -3156,8 +3156,8 @@ export interface JournalEntry {
     | 'tax_calculation'
     | 'currency_adjustment';
   sourceId?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -3167,12 +3167,12 @@ export interface JournalEntry {
  * via the `definition` "gl-postings".
  */
 export interface GlPosting {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   postingId: string;
   sourceType:
     | 'invoice'
@@ -3185,12 +3185,12 @@ export interface GlPosting {
     | 'manual_entry';
   sourceId: string;
   sourceDate: string;
-  journalEntry: number | JournalEntry;
+  journalEntry: string | JournalEntry;
   status?: ('pending' | 'posted' | 'reversed' | 'failed') | null;
   postedDate?: string | null;
   accountsAffected?:
     | {
-        glAccount: number | GlAccount;
+        glAccount: string | GlAccount;
         accountNumber?: string | null;
         accountName?: string | null;
         debitAmount?: number | null;
@@ -3214,8 +3214,8 @@ export interface GlPosting {
     | number
     | boolean
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -3225,12 +3225,12 @@ export interface GlPosting {
  * via the `definition` "period-locks".
  */
 export interface PeriodLock {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * E.g., "FY 2026 Period 5" or "FY 2026 Q2"
    */
@@ -3259,7 +3259,7 @@ export interface PeriodLock {
   /**
    * User who closed this period
    */
-  closedBy?: (number | null) | User;
+  closedBy?: (string | null) | User;
   /**
    * Date period was closed
    */
@@ -3297,7 +3297,7 @@ export interface PeriodLock {
   /**
    * Closing entries generated for this period
    */
-  relatedClosingEntries?: (number | ClosingEntry)[] | null;
+  relatedClosingEntries?: (string | ClosingEntry)[] | null;
   /**
    * Additional notes for this period
    */
@@ -3310,16 +3310,16 @@ export interface PeriodLock {
  * via the `definition` "closing-entries".
  */
 export interface ClosingEntry {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Entity for which period is being closed
    */
-  entity: number | LegalEntity;
+  entity: string | LegalEntity;
   /**
    * Unique ID: e.g., "CLOSE-FY2026-P12" (fiscal year, period)
    */
@@ -3327,11 +3327,11 @@ export interface ClosingEntry {
   /**
    * Period lock record for this closing
    */
-  periodLock: number | PeriodLock;
+  periodLock: string | PeriodLock;
   /**
    * Phase B2: Fiscal period configuration (enables all period types: monthly, quarterly, custom, etc.)
    */
-  fiscalPeriod: number | FiscalPeriod;
+  fiscalPeriod: string | FiscalPeriod;
   /**
    * Fiscal year of closing entry
    */
@@ -3359,11 +3359,11 @@ export interface ClosingEntry {
   /**
    * User who initiated closing
    */
-  closedBy: number | User;
+  closedBy: string | User;
   /**
    * Finance manager/CFO who approved closing
    */
-  approvedBy?: (number | null) | User;
+  approvedBy?: (string | null) | User;
   /**
    * Individual closing entries that make up this close
    */
@@ -3376,7 +3376,7 @@ export interface ClosingEntry {
         /**
          * Link to actual GL posting
          */
-        journalEntryId: number | JournalEntry;
+        journalEntryId: string | JournalEntry;
         /**
          * E.g., "Close revenue accounts" or "Close expense accounts to retained earnings"
          */
@@ -3404,7 +3404,7 @@ export interface ClosingEntry {
         /**
          * Link to auto-reversal entry (posted in next period start)
          */
-        reversingEntryId?: (number | null) | JournalEntry;
+        reversingEntryId?: (string | null) | JournalEntry;
         /**
          * Entry-specific notes
          */
@@ -3496,12 +3496,12 @@ export interface ClosingEntry {
  * via the `definition` "legal-entities".
  */
 export interface LegalEntity {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
    */
@@ -3557,7 +3557,7 @@ export interface LegalEntity {
   /**
    * Direct parent in the group structure (null for the head entity).
    */
-  parent?: (number | null) | LegalEntity;
+  parent?: (string | null) | LegalEntity;
   /**
    * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
    */
@@ -3611,8 +3611,8 @@ export interface LegalEntity {
    */
   effectiveTo?: string | null;
   status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -3623,12 +3623,12 @@ export interface LegalEntity {
  * via the `definition` "fiscal-periods".
  */
 export interface FiscalPeriod {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Auto-derived label (e.g., FY2026-P05). Editable.
    */
@@ -3669,7 +3669,7 @@ export interface FiscalPeriod {
     /**
      * Actor who closed
      */
-    closedBy?: (number | null) | User;
+    closedBy?: (string | null) | User;
     /**
      * When period was hard-locked
      */
@@ -3677,7 +3677,7 @@ export interface FiscalPeriod {
     /**
      * Admin who locked
      */
-    lockedBy?: (number | null) | User;
+    lockedBy?: (string | null) | User;
     /**
      * Last unlock timestamp
      */
@@ -3685,7 +3685,7 @@ export interface FiscalPeriod {
     /**
      * Admin who reopened
      */
-    reopenedBy?: (number | null) | User;
+    reopenedBy?: (string | null) | User;
   };
   notes?: {
     /**
@@ -3713,14 +3713,14 @@ export interface FiscalPeriod {
  * via the `definition` "bank-statements".
  */
 export interface BankStatement {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   statementId: string;
-  bankAccount: number | GlAccount;
+  bankAccount: string | GlAccount;
   statementDate: string;
   statementPeriodStart: string;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
@@ -3740,7 +3740,7 @@ export interface BankStatement {
   matchedTransactions?:
     | {
         bankStatementLineIndex: number;
-        journalEntry: number | JournalEntry;
+        journalEntry: string | JournalEntry;
         matchType: 'exact' | 'fuzzy' | 'manual';
         matchScore?: number | null;
         varianceAmount?: number | null;
@@ -3752,7 +3752,7 @@ export interface BankStatement {
   variance?: number | null;
   reconciliationNotes?: string | null;
   reconciliationDate?: string | null;
-  reconciliedBy?: (number | null) | User;
+  reconciliedBy?: (string | null) | User;
   importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
   updatedAt: string;
   createdAt: string;
@@ -3762,12 +3762,12 @@ export interface BankStatement {
  * via the `definition` "bank-transactions".
  */
 export interface BankTransaction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Stable unique id for this line. For ISO 20022, prefer accountServicerReference; fallback to endToEndId.
    */
@@ -3780,11 +3780,11 @@ export interface BankTransaction {
    * End-to-end id propagated from the originating instruction (camt.053 EndToEndId / pain.001 EndToEndId). Joins this line to the originating PaymentRuns transaction.
    */
   endToEndId?: string | null;
-  bankAccount: number | BankAccount;
+  bankAccount: string | BankAccount;
   /**
    * Parent camt.053 statement, if imported as part of a batch.
    */
-  statement?: (number | null) | BankStatement;
+  statement?: (string | null) | BankStatement;
   /**
    * When the funds become available. Maps to canonical Camt053Transaction.valueDate.
    */
@@ -3849,7 +3849,7 @@ export interface BankTransaction {
   matchStatus?: ('unmatched' | 'auto_matched' | 'manual_matched' | 'excluded' | 'disputed') | null;
   matchedJournalEntries?:
     | {
-        journalEntry: number | JournalEntry;
+        journalEntry: string | JournalEntry;
         /**
          * Portion in cents matched to this JE (supports split matches).
          */
@@ -3862,7 +3862,7 @@ export interface BankTransaction {
       }[]
     | null;
   matchedAt?: string | null;
-  matchedBy?: (number | null) | User;
+  matchedBy?: (string | null) | User;
   status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
   notes?: string | null;
   updatedAt: string;
@@ -3873,12 +3873,12 @@ export interface BankTransaction {
  * via the `definition` "bank-accounts".
  */
 export interface BankAccount {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Friendly label, e.g. "Operating Account — Bulbank EUR".
    */
@@ -3911,7 +3911,7 @@ export interface BankAccount {
   /**
    * GL cash account this bank account posts to.
    */
-  glAccount?: (number | null) | GlAccount;
+  glAccount?: (string | null) | GlAccount;
   purpose?: ('operating' | 'payroll' | 'tax' | 'reserve' | 'fx') | null;
   status?: ('active' | 'inactive' | 'closed') | null;
   openedAt?: string | null;
@@ -3920,12 +3920,12 @@ export interface BankAccount {
    * Bank statements imported for this account.
    */
   statements?: {
-    docs?: (number | BankStatement)[];
+    docs?: (string | BankStatement)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -3936,12 +3936,12 @@ export interface BankAccount {
  * via the `definition` "account-reconciliations".
  */
 export interface AccountReconciliation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Human-readable id, e.g. REC-2026-04-OPS-1
    */
@@ -3953,11 +3953,11 @@ export interface AccountReconciliation {
   /**
    * The control account being reconciled.
    */
-  glAccount: number | GlAccount;
+  glAccount: string | GlAccount;
   /**
    * For kind = bank, the IBAN/BIC master being reconciled. Null for GL-to-subledger and intercompany.
    */
-  bankAccount?: (number | null) | BankAccount;
+  bankAccount?: (string | null) | BankAccount;
   /**
    * Reconciliation point in time (period-end).
    */
@@ -3989,8 +3989,8 @@ export interface AccountReconciliation {
         amount: number;
         originatedAt: string;
         agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
-        bankTransaction?: (number | null) | BankTransaction;
-        journalEntry?: (number | null) | JournalEntry;
+        bankTransaction?: (string | null) | BankTransaction;
+        journalEntry?: (string | null) | JournalEntry;
         id?: string | null;
       }[]
     | null;
@@ -4010,7 +4010,7 @@ export interface AccountReconciliation {
         amount: number;
         originatedAt: string;
         agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
-        journalEntry?: (number | null) | JournalEntry;
+        journalEntry?: (string | null) | JournalEntry;
         id?: string | null;
       }[]
     | null;
@@ -4026,18 +4026,18 @@ export interface AccountReconciliation {
    * adjustedExternalBalance − adjustedGLBalance. Must be 0 (within rounding tolerance) to approve.
    */
   difference?: number | null;
-  preparedBy?: (number | null) | User;
+  preparedBy?: (string | null) | User;
   preparedAt?: string | null;
-  reviewedBy?: (number | null) | User;
+  reviewedBy?: (string | null) | User;
   reviewedAt?: string | null;
   rejectionReason?: string | null;
   status?: ('draft' | 'pending_review' | 'approved' | 'rejected' | 'reopened') | null;
   /**
    * Originating bank statement for kind = bank. Null otherwise.
    */
-  sourceStatement?: (number | null) | BankStatement;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  sourceStatement?: (string | null) | BankStatement;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4050,17 +4050,17 @@ export interface AccountReconciliation {
  * via the `definition` "bank-reconciliations".
  */
 export interface BankReconciliation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reconciliation reference (e.g. `REC-2026-04-EUR-MAIN`).
    */
   reference: string;
-  bankAccount: number | BankAccount;
+  bankAccount: string | BankAccount;
   /**
    * ISO 8601 — the as-of date the reconciliation proves.
    */
@@ -4076,7 +4076,7 @@ export interface BankReconciliation {
   /**
    * The camt.053 statement this reconciliation proves out against.
    */
-  bankStatement?: (number | null) | BankStatement;
+  bankStatement?: (string | null) | BankStatement;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
    * Closing balance per bank statement (camt.053 CLBD), in cents.
@@ -4106,8 +4106,8 @@ export interface BankReconciliation {
       }[]
     | null;
   status?: ('draft' | 'reconciled' | 'reconciled_with_variance' | 'discrepancy') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4118,12 +4118,12 @@ export interface BankReconciliation {
  * via the `definition` "financial-statements".
  */
 export interface FinancialStatement {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   statementId: string;
   statementType: 'trial_balance' | 'balance_sheet' | 'income_statement' | 'cash_flow_statement' | 'equity_statement';
   language?: ('en' | 'es' | 'fr' | 'de' | 'it' | 'pt' | 'ru' | 'ja' | 'zh' | 'ar') | null;
@@ -4169,7 +4169,7 @@ export interface FinancialStatement {
       }[]
     | null;
   generatedAt: string;
-  generatedBy?: (number | null) | User;
+  generatedBy?: (string | null) | User;
   updatedAt: string;
   createdAt: string;
 }
@@ -4178,12 +4178,12 @@ export interface FinancialStatement {
  * via the `definition` "period-end-adjustments".
  */
 export interface PeriodEndAdjustment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   adjustmentId: string;
   adjustmentType:
     | 'depreciation'
@@ -4197,9 +4197,9 @@ export interface PeriodEndAdjustment {
   period: string;
   description: string;
   adjustmentAmount: number;
-  debitAccount: number | GlAccount;
-  creditAccount: number | GlAccount;
-  journalEntry?: (number | null) | JournalEntry;
+  debitAccount: string | GlAccount;
+  creditAccount: string | GlAccount;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'calculated' | 'approved' | 'posted' | 'reversed') | null;
   notes?: string | null;
   updatedAt: string;
@@ -4212,12 +4212,12 @@ export interface PeriodEndAdjustment {
  * via the `definition` "recurring-journals".
  */
 export interface RecurringJournal {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   description?: string | null;
   recurrenceKind?:
@@ -4255,7 +4255,7 @@ export interface RecurringJournal {
   /**
    * Last materialised JE (for audit + reverse).
    */
-  lastRunJournalEntry?: (number | null) | JournalEntry;
+  lastRunJournalEntry?: (string | null) | JournalEntry;
   /**
    * Optional cap on total runs (e.g. 12 for a 12-month amortisation schedule).
    */
@@ -4270,14 +4270,14 @@ export interface RecurringJournal {
    */
   amountFormula?: string | null;
   lines: {
-    glAccount: number | GlAccount;
+    glAccount: string | GlAccount;
     side: 'debit' | 'credit';
     /**
      * Per-line cents. Σ debits must equal Σ credits.
      */
     amount: number;
-    costCenter?: (number | null) | CostCenter;
-    project?: (number | null) | Project;
+    costCenter?: (string | null) | CostCenter;
+    project?: (string | null) | Project;
     memo?: string | null;
     id?: string | null;
   }[];
@@ -4286,8 +4286,8 @@ export interface RecurringJournal {
    */
   autoPost?: boolean | null;
   status?: ('active' | 'paused' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4300,12 +4300,12 @@ export interface RecurringJournal {
  * via the `definition` "cost-centers".
  */
 export interface CostCenter {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Short alphanumeric code (e.g. EU-DE-ENG-FE).
    */
@@ -4318,7 +4318,7 @@ export interface CostCenter {
   /**
    * Parent in the hierarchy. Null = root.
    */
-  parent?: (number | null) | CostCenter;
+  parent?: (string | null) | CostCenter;
   /**
    * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
    */
@@ -4326,7 +4326,7 @@ export interface CostCenter {
   /**
    * Cost-center owner / department head.
    */
-  manager?: (number | null) | User;
+  manager?: (string | null) | User;
   /**
    * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
    */
@@ -4348,7 +4348,7 @@ export interface CostCenter {
    */
   allocationRules?:
     | {
-        targetCostCenter: number | CostCenter;
+        targetCostCenter: string | CostCenter;
         basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
         percentage?: number | null;
         id?: string | null;
@@ -4360,8 +4360,8 @@ export interface CostCenter {
    */
   effectiveTo?: string | null;
   status?: ('active' | 'inactive' | 'retired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4374,12 +4374,12 @@ export interface CostCenter {
  * via the `definition` "projects".
  */
 export interface Project {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Tenant-unique project code (e.g. PRJ-2026-001).
    */
@@ -4389,19 +4389,19 @@ export interface Project {
    */
   name: string;
   description?: string | null;
-  customer: number | Customer;
+  customer: string | Customer;
   /**
    * Master contract this project executes against (one contract may have many projects).
    */
-  contract?: (number | null) | Contract;
+  contract?: (string | null) | Contract;
   /**
    * Reporting legal entity that books this project's revenue + costs.
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   /**
    * Internal project owner (responsible for delivery + status).
    */
-  projectManager?: (number | null) | User;
+  projectManager?: (string | null) | User;
   projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
   /**
    * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
@@ -4455,8 +4455,8 @@ export interface Project {
    */
   isOnerous?: boolean | null;
   status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4467,12 +4467,12 @@ export interface Project {
  * via the `definition` "customers".
  */
 export interface Customer {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Unique customer code (e.g., CUST-0001)
    */
@@ -4517,15 +4517,15 @@ export interface Customer {
     /**
      * All known addresses for this customer
      */
-    addresses?: (number | Address)[] | null;
+    addresses?: (string | Address)[] | null;
     /**
      * Default billing address
      */
-    billingAddress?: (number | null) | Address;
+    billingAddress?: (string | null) | Address;
     /**
      * Default shipping address
      */
-    shippingAddress?: (number | null) | Address;
+    shippingAddress?: (string | null) | Address;
   };
   tax?: {
     /**
@@ -4547,7 +4547,7 @@ export interface Customer {
     /**
      * Default tax code applied on invoices
      */
-    defaultTaxCode?: (number | null) | TaxCode;
+    defaultTaxCode?: (string | null) | TaxCode;
   };
   commercial: {
     /**
@@ -4585,15 +4585,15 @@ export interface Customer {
     /**
      * Default AR control account (asset)
      */
-    defaultReceivableAccount?: (number | null) | GlAccount;
+    defaultReceivableAccount?: (string | null) | GlAccount;
     /**
      * Default revenue account on invoices
      */
-    defaultRevenueAccount?: (number | null) | GlAccount;
+    defaultRevenueAccount?: (string | null) | GlAccount;
     /**
      * Default sales-discount contra-revenue account
      */
-    defaultDiscountAccount?: (number | null) | GlAccount;
+    defaultDiscountAccount?: (string | null) | GlAccount;
   };
   notes?: {
     /**
@@ -4621,12 +4621,12 @@ export interface Customer {
  * via the `definition` "tax-codes".
  */
 export interface TaxCode {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Tax code (e.g., EU-DE-VAT-19, US-CA-SALES-7.25)
    */
@@ -4653,7 +4653,7 @@ export interface TaxCode {
     /**
      * Issuing jurisdiction
      */
-    jurisdiction: number | TaxJurisdiction;
+    jurisdiction: string | TaxJurisdiction;
   };
   rate: {
     /**
@@ -4663,7 +4663,7 @@ export interface TaxCode {
     /**
      * Other tax codes this rate is applied on top of (compound tax)
      */
-    compoundedOn?: (number | TaxCode)[] | null;
+    compoundedOn?: (string | TaxCode)[] | null;
     /**
      * EN 16931: tax shifts to buyer (e.g., EU intra-community B2B services)
      */
@@ -4691,15 +4691,15 @@ export interface TaxCode {
     /**
      * Output-tax payable / collected account (sales side)
      */
-    defaultCollectionAccount?: (number | null) | GlAccount;
+    defaultCollectionAccount?: (string | null) | GlAccount;
     /**
      * Input-tax recoverable / remittance account (purchase side)
      */
-    defaultRemittanceAccount?: (number | null) | GlAccount;
+    defaultRemittanceAccount?: (string | null) | GlAccount;
     /**
      * Non-recoverable tax expense account (when recoverable = false)
      */
-    defaultExpenseAccount?: (number | null) | GlAccount;
+    defaultExpenseAccount?: (string | null) | GlAccount;
   };
   /**
    * Additional metadata
@@ -4721,12 +4721,12 @@ export interface TaxCode {
  * via the `definition` "tax-jurisdictions".
  */
 export interface TaxJurisdiction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
    */
@@ -4804,14 +4804,14 @@ export interface TaxJurisdiction {
  * via the `definition` "contracts".
  */
 export interface Contract {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   contractNumber: string;
-  customer: number | Customer;
+  customer: string | Customer;
   title: string;
   effectiveFrom: string;
   effectiveTo?: string | null;
@@ -4839,13 +4839,13 @@ export interface Contract {
   /**
    * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
    */
-  combinedWithContracts?: (number | Contract)[] | null;
+  combinedWithContracts?: (string | Contract)[] | null;
   paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
   /**
    * IFRS 15 §22 distinct performance obligations.
    */
   performanceObligations?: {
-    docs?: (number | PerformanceObligation)[];
+    docs?: (string | PerformanceObligation)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
@@ -4857,7 +4857,7 @@ export interface Contract {
         modifiedAt: string;
         description: string;
         priceImpact?: number | null;
-        modifiedBy?: (number | null) | User;
+        modifiedBy?: (string | null) | User;
         id?: string | null;
       }[]
     | null;
@@ -4869,7 +4869,7 @@ export interface Contract {
   /**
    * Linked subscription (if SaaS).
    */
-  subscription?: (number | null) | Subscription;
+  subscription?: (string | null) | Subscription;
   zkod?: {
     /**
      * Bulgaria ZKOD contract registry number (unique per ZKOD)
@@ -4884,8 +4884,8 @@ export interface Contract {
      */
     mandatoryArbitrationClause?: boolean | null;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4896,13 +4896,13 @@ export interface Contract {
  * via the `definition` "performance-obligations".
  */
 export interface PerformanceObligation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  contract: number | Contract;
+  tenant?: (string | null) | Tenant;
+  contract: string | Contract;
   description: string;
   /**
    * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
@@ -4956,8 +4956,8 @@ export interface PerformanceObligation {
   percentComplete?: number | null;
   status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
   satisfiedAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -4970,12 +4970,12 @@ export interface PerformanceObligation {
  * via the `definition` "prior-period-adjustments".
  */
 export interface PriorPeriodAdjustment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * PPA reference (e.g. `PPA-2026-001`).
    */
@@ -4991,7 +4991,7 @@ export interface PriorPeriodAdjustment {
   /**
    * The closed fiscal period being restated.
    */
-  priorPeriod?: (number | null) | FiscalPeriod;
+  priorPeriod?: (string | null) | FiscalPeriod;
   /**
    * Description of the error — required for IAS-8 §49 disclosure.
    */
@@ -5008,14 +5008,14 @@ export interface PriorPeriodAdjustment {
   /**
    * The current-period JE booking the opening-balance restatement.
    */
-  restatementJournalEntry?: (number | null) | JournalEntry;
+  restatementJournalEntry?: (string | null) | JournalEntry;
   /**
    * IAS-8 §49(b) — nature + amount of the correction text for the financial statement notes.
    */
   disclosureText?: string | null;
   status?: ('draft' | 'pending_review' | 'approved' | 'posted' | 'disclosed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5028,12 +5028,12 @@ export interface PriorPeriodAdjustment {
  * via the `definition` "rounding-adjustments".
  */
 export interface RoundingAdjustment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential rounding-adjustment reference (e.g. `RND-2026-04-001`).
    */
@@ -5065,10 +5065,10 @@ export interface RoundingAdjustment {
   /**
    * JE booking the rounding plug.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5079,12 +5079,12 @@ export interface RoundingAdjustment {
  * via the `definition` "tax-calculations".
  */
 export interface TaxCalculation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   calculationId: string;
   taxType: 'sales_tax' | 'vat' | 'gst' | 'income_tax' | 'payroll_tax';
   jurisdiction: 'us_federal' | 'us_state' | 'eu' | 'ca_federal' | 'ca_provincial' | 'au' | 'jp' | 'cn' | 'in' | 'br';
@@ -5094,9 +5094,9 @@ export interface TaxCalculation {
   taxableAmount: number;
   taxAmount: number;
   netAmount: number;
-  taxPayableAccount: number | GlAccount;
-  taxExpenseAccount?: (number | null) | GlAccount;
-  journalEntry?: (number | null) | JournalEntry;
+  taxPayableAccount: string | GlAccount;
+  taxExpenseAccount?: (string | null) | GlAccount;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('calculated' | 'approved' | 'posted' | 'filed' | 'paid') | null;
   filingDeadline?: string | null;
   paymentDeadline?: string | null;
@@ -5109,12 +5109,12 @@ export interface TaxCalculation {
  * via the `definition` "tax-returns".
  */
 export interface TaxReturn {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   returnId: string;
   returnType:
     | 'vat_monthly'
@@ -5127,7 +5127,7 @@ export interface TaxReturn {
     | 'corporate_income'
     | 'withholding'
     | 'saft';
-  jurisdiction: number | TaxJurisdiction;
+  jurisdiction: string | TaxJurisdiction;
   periodStart: string;
   periodEnd: string;
   taxableSales?: number | null;
@@ -5139,10 +5139,10 @@ export interface TaxReturn {
   /**
    * Source TaxCalculation snapshots aggregated into this return.
    */
-  taxCalculations?: (number | TaxCalculation)[] | null;
+  taxCalculations?: (string | TaxCalculation)[] | null;
   status?: ('draft' | 'in_review' | 'ready' | 'filed' | 'accepted' | 'rejected' | 'amended') | null;
   filedAt?: string | null;
-  filedBy?: (number | null) | User;
+  filedBy?: (string | null) | User;
   /**
    * Confirmation reference returned by the tax authority.
    */
@@ -5150,12 +5150,12 @@ export interface TaxReturn {
   paidAt?: string | null;
   attachments?:
     | {
-        media?: (number | null) | Media;
+        media?: (string | null) | Media;
         id?: string | null;
       }[]
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5166,12 +5166,12 @@ export interface TaxReturn {
  * via the `definition` "currency-rates".
  */
 export interface CurrencyRate {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   rateId: string;
   fromCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
   toCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
@@ -5193,16 +5193,16 @@ export interface CurrencyRate {
  * via the `definition` "fiscal-calendars".
  */
 export interface FiscalCalendar {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Entity this calendar applies to
    */
-  entity: number | LegalEntity;
+  entity: string | LegalEntity;
   /**
    * Calendar date (RFC 3339, e.g., 2026-05-12). Indexed for O(1) period lookup via FiscalCalendars.query(tenantId, entityId, calendarDate).
    */
@@ -5254,7 +5254,7 @@ export interface FiscalCalendar {
   /**
    * FiscalPeriods record used to generate this calendar. Immutable origin for audit trail and amendment tracking.
    */
-  generatedFrom: number | FiscalPeriod;
+  generatedFrom: string | FiscalPeriod;
   /**
    * Law 60: Chain leaf for this calendar entry. Computed as sha256(JCS-canonical(FiscalCalendar) || generatedFrom.chainLeafUuid). Enables detection of tampering or generation drift.
    */
@@ -5271,16 +5271,16 @@ export interface FiscalCalendar {
  * via the `definition` "fiscal-period-snapshots".
  */
 export interface FiscalPeriodSnapshot {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * FiscalPeriods record for which this snapshot was created
    */
-  fiscalPeriods: number | FiscalPeriod;
+  fiscalPeriods: string | FiscalPeriod;
   /**
    * Human-readable label (e.g., "FY2026-Creation", "FY2026-Amendment-2026-05-12", "FY2026-YearEndClose-2026-12-31")
    */
@@ -5304,7 +5304,7 @@ export interface FiscalPeriodSnapshot {
   /**
    * Previous snapshot of this FiscalPeriods (null if creation). Creates immutable chain for diff analysis.
    */
-  priorSnapshot?: (number | null) | FiscalPeriodSnapshot;
+  priorSnapshot?: (string | null) | FiscalPeriodSnapshot;
   /**
    * Only if eventType=amendment. JSON object of {field: {prior, new}} showing what changed. Null for other events.
    */
@@ -5320,7 +5320,7 @@ export interface FiscalPeriodSnapshot {
   /**
    * User who triggered this snapshot event
    */
-  triggeredBy: number | User;
+  triggeredBy: string | User;
   /**
    * Timestamp of event
    */
@@ -5363,8 +5363,8 @@ export interface FiscalPeriodSnapshot {
  * via the `definition` "fixed-assets".
  */
 export interface FixedAsset {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -5388,7 +5388,7 @@ export interface FixedAsset {
   /**
    * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
    */
-  supplier?: (number | null) | Vendor;
+  supplier?: (string | null) | Vendor;
   /**
    * Reference PO number
    */
@@ -5433,15 +5433,15 @@ export interface FixedAsset {
   /**
    * Fixed asset GL account (1600+)
    */
-  assetAccount: number | GlAccount;
+  assetAccount: string | GlAccount;
   /**
    * Accumulated depreciation contra-asset account
    */
-  accumulatedDepreciationAccount: number | GlAccount;
+  accumulatedDepreciationAccount: string | GlAccount;
   /**
    * Depreciation expense account (6000+)
    */
-  depreciationExpenseAccount: number | GlAccount;
+  depreciationExpenseAccount: string | GlAccount;
   status?: ('active' | 'inactive' | 'fully_depreciated' | 'disposed' | 'held_for_sale') | null;
   /**
    * Date when asset was disposed
@@ -5459,8 +5459,8 @@ export interface FixedAsset {
   nextMaintenanceDate?: string | null;
   maintenanceNotes?: string | null;
   notes?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -5470,12 +5470,12 @@ export interface FixedAsset {
  * via the `definition` "vendors".
  */
 export interface Vendor {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Unique vendor code (e.g., VEND-0001)
    */
@@ -5520,11 +5520,11 @@ export interface Vendor {
     /**
      * All known addresses for this vendor
      */
-    addresses?: (number | Address)[] | null;
+    addresses?: (string | Address)[] | null;
     /**
      * Default remit-to address
      */
-    remitToAddress?: (number | null) | Address;
+    remitToAddress?: (string | null) | Address;
   };
   tax?: {
     /**
@@ -5542,7 +5542,7 @@ export interface Vendor {
     /**
      * Default tax code applied on bills
      */
-    defaultTaxCode?: (number | null) | TaxCode;
+    defaultTaxCode?: (string | null) | TaxCode;
     /**
      * US: subject to IRS Form 1099 reporting
      */
@@ -5618,15 +5618,15 @@ export interface Vendor {
     /**
      * Default AP control account (liability)
      */
-    defaultPayableAccount?: (number | null) | GlAccount;
+    defaultPayableAccount?: (string | null) | GlAccount;
     /**
      * Default expense account on bills
      */
-    defaultExpenseAccount?: (number | null) | GlAccount;
+    defaultExpenseAccount?: (string | null) | GlAccount;
     /**
      * Withholding tax payable account
      */
-    defaultWithholdingAccount?: (number | null) | GlAccount;
+    defaultWithholdingAccount?: (string | null) | GlAccount;
   };
   notes?: {
     /**
@@ -5654,14 +5654,14 @@ export interface Vendor {
  * via the `definition` "depreciation-schedules".
  */
 export interface DepreciationSchedule {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   scheduleId: string;
-  fixedAsset: number | FixedAsset;
+  fixedAsset: string | FixedAsset;
   periodEnd: string;
   periodStart: string;
   depreciationAmount: number;
@@ -5679,9 +5679,9 @@ export interface DepreciationSchedule {
     | null;
   status?: ('calculated' | 'posted' | 'reversed') | null;
   postedAt?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  journalEntry?: (string | null) | JournalEntry;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5694,12 +5694,12 @@ export interface DepreciationSchedule {
  * via the `definition` "leads".
  */
 export interface Lead {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   fullName: string;
   firstName?: string | null;
   lastName?: string | null;
@@ -5741,17 +5741,17 @@ export interface Lead {
    */
   estimatedValue?: number | null;
   estimatedCloseDate?: string | null;
-  assignedTo?: (number | null) | User;
-  convertedOpportunity?: (number | null) | Opportunity;
-  convertedCustomer?: (number | null) | Customer;
+  assignedTo?: (string | null) | User;
+  convertedOpportunity?: (string | null) | Opportunity;
+  convertedCustomer?: (string | null) | Customer;
   convertedAt?: string | null;
   /**
    * GDPR Art.7 marketing-consent record (if applicable).
    */
-  consentRecord?: (number | null) | ConsentRecord;
+  consentRecord?: (string | null) | ConsentRecord;
   status?: ('new' | 'contacted' | 'engaged' | 'mql' | 'sql' | 'converted' | 'disqualified' | 'recycled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5764,19 +5764,19 @@ export interface Lead {
  * via the `definition` "opportunities".
  */
 export interface Opportunity {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
-  lead?: (number | null) | Lead;
+  lead?: (string | null) | Lead;
   /**
    * Existing customer (for upsell/cross-sell). Null for net-new from lead.
    */
-  customer?: (number | null) | Customer;
-  opportunityOwner: number | User;
+  customer?: (string | null) | Customer;
+  opportunityOwner: string | User;
   stage:
     | 'qualification'
     | 'discovery'
@@ -5807,15 +5807,15 @@ export interface Opportunity {
     | null;
   competitor?: string | null;
   forecastCategory?: ('pipeline' | 'best_case' | 'commit' | 'closed' | 'omitted') | null;
-  segment?: (number | null) | CustomerSegment;
+  segment?: (string | null) | CustomerSegment;
   campaign?: string | null;
   /**
    * Contract created on close-won.
    */
-  contractCreated?: (number | null) | Contract;
+  contractCreated?: (string | null) | Contract;
   status?: ('open' | 'won' | 'lost' | 'abandoned') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5828,12 +5828,12 @@ export interface Opportunity {
  * via the `definition` "customer-segments".
  */
 export interface CustomerSegment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   description?: string | null;
   segmentType: 'commercial' | 'industry' | 'geographic' | 'lifecycle' | 'behavioural' | 'strategic' | 'other';
@@ -5863,8 +5863,8 @@ export interface CustomerSegment {
    */
   isPortfolioForIfrs15?: boolean | null;
   status?: ('active' | 'inactive' | 'deprecated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5875,14 +5875,14 @@ export interface CustomerSegment {
  * via the `definition` "consent-records".
  */
 export interface ConsentRecord {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   consentId: string;
-  dataSubject: number | User;
+  dataSubject: string | User;
   purpose: 'marketing' | 'analytics' | 'transactional' | 'profiling' | 'third_party_sharing' | 'cookies_optional';
   lawfulBasis?:
     | ('consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests')
@@ -5904,8 +5904,8 @@ export interface ConsentRecord {
   status?: ('given' | 'withdrawn' | 'expired') | null;
   givenAt?: string | null;
   withdrawnAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5916,18 +5916,18 @@ export interface ConsentRecord {
  * via the `definition` "quotes".
  */
 export interface Quote {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   quoteNumber: string;
-  customer: number | Customer;
+  customer: string | Customer;
   issuedAt?: string | null;
   expiresAt?: string | null;
   lines: {
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     description: string;
     quantity: number;
     unitPrice: number;
@@ -5941,9 +5941,9 @@ export interface Quote {
   status?: ('draft' | 'pending_approval' | 'sent' | 'accepted' | 'rejected' | 'expired' | 'converted') | null;
   sentAt?: string | null;
   acceptedAt?: string | null;
-  convertedToOrder?: (number | null) | SalesOrder;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  convertedToOrder?: (string | null) | SalesOrder;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -5956,8 +5956,8 @@ export interface Quote {
  * via the `definition` "sales-orders".
  */
 export interface SalesOrder {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -5966,7 +5966,7 @@ export interface SalesOrder {
    * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
    */
   orderNumber: string;
-  customer: number | Customer;
+  customer: string | Customer;
   /**
    * Buyer-side PO number / reference. EN-16931 §BT-13 / Peppol cbc:BuyerReference.
    */
@@ -5974,11 +5974,11 @@ export interface SalesOrder {
   /**
    * Originating quote (when this order converts a quote — IFRS-15 §10 contract inception).
    */
-  quote?: (number | null) | Quote;
+  quote?: (string | null) | Quote;
   /**
    * Parent contract (when the order draws from a master contract — IFRS-15 §17 combined contracts).
    */
-  contract?: (number | null) | Contract;
+  contract?: (string | null) | Contract;
   /**
    * Buyer submission / acceptance date. Drives revenue-period determination.
    */
@@ -5994,11 +5994,11 @@ export interface SalesOrder {
   /**
    * Deliver-to address — EN-16931 §BG-15 / UBL Delivery/DeliveryLocation.
    */
-  shippingAddress?: (number | null) | Address;
+  shippingAddress?: (string | null) | Address;
   /**
    * Bill-to address (when distinct from buyer registered address). EN-16931 §BG-8.
    */
-  billingAddress?: (number | null) | Address;
+  billingAddress?: (string | null) | Address;
   /**
    * ISO 4217 alpha-3 code.
    */
@@ -6024,7 +6024,7 @@ export interface SalesOrder {
         /**
          * Catalogue item (when ordering from the item master).
          */
-        item?: (number | null) | Item;
+        item?: (string | null) | Item;
         description: string;
         quantity: number;
         /**
@@ -6036,7 +6036,7 @@ export interface SalesOrder {
          * quantity × unitPrice net of tax. EN-16931 §BT-131.
          */
         lineNet?: number | null;
-        taxCategory?: (number | null) | TaxCode;
+        taxCategory?: (string | null) | TaxCode;
         /**
          * Line-level discount amount (negative impact on lineNet).
          */
@@ -6071,8 +6071,8 @@ export interface SalesOrder {
         | 'on_hold'
       )
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -6085,24 +6085,24 @@ export interface SalesOrder {
  * via the `definition` "sales-commissions".
  */
 export interface SalesCommission {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
-  salesperson: number | User;
+  salesperson: string | User;
   /**
    * When commission flows through payroll.
    */
-  employee?: (number | null) | Employee;
-  opportunity: number | Opportunity;
+  employee?: (string | null) | Employee;
+  opportunity: string | Opportunity;
   /**
    * Contract created on close-won (drives the amortisation period).
    */
-  contract?: (number | null) | Contract;
-  customer?: (number | null) | Customer;
+  contract?: (string | null) | Contract;
+  customer?: (string | null) | Customer;
   closedWonDate: string;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   commissionRule?: {
@@ -6139,15 +6139,15 @@ export interface SalesCommission {
   capitalisedAssetBalance?: number | null;
   paymentStatus?: ('pending' | 'approved' | 'paid' | 'clawed_back' | 'disputed') | null;
   paymentDate?: string | null;
-  paidViaPayrollRun?: (number | null) | PayrollRun;
+  paidViaPayrollRun?: (string | null) | PayrollRun;
   /**
    * IAS-37 clawback-risk provision (when contract churns / refunds within clawback window).
    */
-  clawbackProvision?: (number | null) | Provision;
-  journalEntry?: (number | null) | JournalEntry;
+  clawbackProvision?: (string | null) | Provision;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'approved' | 'posted' | 'amortising' | 'fully_amortised' | 'clawed_back') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -6160,12 +6160,12 @@ export interface SalesCommission {
  * via the `definition` "employees".
  */
 export interface Employee {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Internal employee id (e.g. EMP-2026-001).
    */
@@ -6217,11 +6217,11 @@ export interface Employee {
   /**
    * Cost-center the employee's payroll posts to. Drives IFRS 8 / ASC 280 segment reporting.
    */
-  department?: (number | null) | CostCenter;
+  department?: (string | null) | CostCenter;
   /**
    * Reporting line; can be null for org root.
    */
-  manager?: (number | null) | Employee;
+  manager?: (string | null) | Employee;
   /**
    * ISO 3166-1 alpha-2. Drives the country-context cascade (tax codes, social-security regime, payroll calendar).
    */
@@ -6317,8 +6317,8 @@ export interface Employee {
     taxResidenceCountry?: string | null;
   };
   status?: ('pre_hire' | 'active' | 'on_leave' | 'suspended' | 'terminated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -6331,12 +6331,12 @@ export interface Employee {
  * via the `definition` "payroll-runs".
  */
 export interface PayrollRun {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Human-readable id (e.g. PR-2026-04-MONTHLY).
    */
@@ -6352,13 +6352,13 @@ export interface PayrollRun {
   /**
    * Tenant bank account funding the disbursement.
    */
-  sourceBankAccount: number | BankAccount;
+  sourceBankAccount: string | BankAccount;
   /**
    * One payroll line per employee. Computed by the close-job from approved TimeEntries + Employee.compensation.
    */
   lines?:
     | {
-        employee: number | Employee;
+        employee: string | Employee;
         regularMinutes?: number | null;
         overtime15Minutes?: number | null;
         overtime2Minutes?: number | null;
@@ -6414,11 +6414,11 @@ export interface PayrollRun {
          * Other employer payroll taxes (FUTA / unemployment).
          */
         payrollTaxesEmployer?: number | null;
-        costCenter?: (number | null) | CostCenter;
+        costCenter?: (string | null) | CostCenter;
         /**
          * Generated pay-slip PDF distributed to the employee.
          */
-        paySlipDocument?: (number | null) | Media;
+        paySlipDocument?: (string | null) | Media;
         id?: string | null;
       }[]
     | null;
@@ -6442,9 +6442,9 @@ export interface PayrollRun {
    * Σ employer-side payroll taxes + pension. Posts to Payroll Tax Expense + Pension Expense.
    */
   totalEmployerSideAccruals?: number | null;
-  preparedBy?: (number | null) | User;
+  preparedBy?: (string | null) | User;
   preparedAt?: string | null;
-  authorisedBy?: (number | null) | User;
+  authorisedBy?: (string | null) | User;
   authorisedAt?: string | null;
   status?:
     | (
@@ -6462,13 +6462,13 @@ export interface PayrollRun {
   /**
    * JE booked when status flips to posted.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   /**
    * pain.001 PaymentRun emitted when status flips to disbursed.
    */
-  paymentRun?: (number | null) | PaymentRun;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  paymentRun?: (string | null) | PaymentRun;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -6481,12 +6481,12 @@ export interface PayrollRun {
  * via the `definition` "payment-runs".
  */
 export interface PaymentRun {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Human-readable run id (e.g. PR-2026-05-AP-1). Maps to ISO 20022 GrpHdr/MsgId.
    */
@@ -6506,7 +6506,7 @@ export interface PaymentRun {
   /**
    * Debtor account for pain.001; creditor account for pain.008.
    */
-  sourceBankAccount: number | BankAccount;
+  sourceBankAccount: string | BankAccount;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
    * Bank-requested execution / collection date. Maps to PmtInf/ReqdExctnDt or ReqdColltnDt.
@@ -6542,11 +6542,11 @@ export interface PaymentRun {
         /**
          * Originating bill (pain.001) or invoice (pain.008).
          */
-        sourceBill?: (number | null) | Invoice;
+        sourceBill?: (string | null) | Invoice;
         /**
          * Payment record created when this leg settles.
          */
-        paymentRecord?: (number | null) | Payment;
+        paymentRecord?: (string | null) | Payment;
         id?: string | null;
       }[]
     | null;
@@ -6558,9 +6558,9 @@ export interface PaymentRun {
    * Computed = Σ transactions.amount. Maps to GrpHdr/CtrlSum.
    */
   controlSum?: number | null;
-  preparedBy?: (number | null) | User;
+  preparedBy?: (string | null) | User;
   preparedAt?: string | null;
-  authorisedBy?: (number | null) | User;
+  authorisedBy?: (string | null) | User;
   authorisedAt?: string | null;
   /**
    * Generated pain.00X XML filename.
@@ -6586,8 +6586,8 @@ export interface PaymentRun {
   status?:
     | ('draft' | 'pending_review' | 'approved' | 'exported' | 'submitted' | 'settled' | 'rejected' | 'cancelled')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -6600,12 +6600,12 @@ export interface PaymentRun {
  * via the `definition` "provisions".
  */
 export interface Provision {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Tenant-unique provision reference (e.g. PROV-2026-001).
    */
@@ -6627,12 +6627,12 @@ export interface Provision {
   /**
    * Reporting entity that recognises this provision.
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   /**
    * Date the obligation was first recognised on the balance sheet.
    */
   recognitionDate: string;
-  period: number | FiscalPeriod;
+  period: string | FiscalPeriod;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
    * IAS-37 §36 best-estimate of expenditure required to settle (cents).
@@ -6665,10 +6665,10 @@ export interface Provision {
   };
   movementHistory?:
     | {
-        period: number | FiscalPeriod;
+        period: string | FiscalPeriod;
         movementType: 'additional' | 'used' | 'reversed' | 'unwind_discount' | 'fx_revaluation';
         amount: number;
-        journalEntry?: (number | null) | JournalEntry;
+        journalEntry?: (string | null) | JournalEntry;
         movementDate: string;
         memo?: string | null;
         id?: string | null;
@@ -6681,11 +6681,11 @@ export interface Provision {
   /**
    * Audit finding that triggered the recognition (when applicable).
    */
-  sourceFinding?: (number | null) | AuditFinding;
+  sourceFinding?: (string | null) | AuditFinding;
   requiresLegalReview?: boolean | null;
   status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -6696,12 +6696,12 @@ export interface Provision {
  * via the `definition` "audit-findings".
  */
 export interface AuditFinding {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   findingTitle: string;
   findingType:
     | 'control-deficiency'
@@ -6759,8 +6759,8 @@ export interface AuditFinding {
   frequencyOfOccurrence?: ('isolated' | 'occasional' | 'recurring' | 'pervasive') | null;
   riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
   status?: ('open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed') | null;
-  evidence?: (number | AuditEvidence)[] | null;
-  remediationPlan?: (number | null) | RemediationPlan;
+  evidence?: (string | AuditEvidence)[] | null;
+  remediationPlan?: (string | null) | RemediationPlan;
   updatedAt: string;
   createdAt: string;
 }
@@ -6769,12 +6769,12 @@ export interface AuditFinding {
  * via the `definition` "audit-evidence".
  */
 export interface AuditEvidence {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   evidenceTitle: string;
   documentType:
     | 'pdf'
@@ -6787,7 +6787,7 @@ export interface AuditEvidence {
     | 'audit-log'
     | 'policy'
     | 'other';
-  documentFile?: (number | null) | Media;
+  documentFile?: (string | null) | Media;
   evidenceChain?:
     | {
         actor?: string | null;
@@ -6807,15 +6807,15 @@ export interface AuditEvidence {
  * via the `definition` "remediation-plans".
  */
 export interface RemediationPlan {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   planTitle: string;
-  finding?: (number | null) | AuditFinding;
-  gap?: (number | null) | ComplianceGap;
+  finding?: (string | null) | AuditFinding;
+  gap?: (string | null) | ComplianceGap;
   remediationType:
     | 'design-change'
     | 'process-change'
@@ -6879,13 +6879,13 @@ export interface RemediationPlan {
  * via the `definition` "compliance-gaps".
  */
 export interface ComplianceGap {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  requirement: number | ComplianceRequirement;
+  tenant?: (string | null) | Tenant;
+  requirement: string | ComplianceRequirement;
   gapTitle: string;
   gapType:
     | 'missing-control'
@@ -6911,7 +6911,7 @@ export interface ComplianceGap {
     [k: string]: unknown;
   } | null;
   status?: ('identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed') | null;
-  remediationPlan?: (number | null) | RemediationPlan;
+  remediationPlan?: (string | null) | RemediationPlan;
   updatedAt: string;
   createdAt: string;
 }
@@ -6920,14 +6920,14 @@ export interface ComplianceGap {
  * via the `definition` "compliance-requirements".
  */
 export interface ComplianceRequirement {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   requirementName: string;
-  framework: number | ComplianceFramework;
+  framework: string | ComplianceFramework;
   requirementType: 'disclosure' | 'accounting' | 'control' | 'reporting' | 'policy' | 'attestation';
   description?: {
     root: {
@@ -6959,7 +6959,7 @@ export interface ComplianceRequirement {
     };
     [k: string]: unknown;
   } | null;
-  applicableEntityTypes?: (number | EntityType)[] | null;
+  applicableEntityTypes?: (string | EntityType)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -6968,12 +6968,12 @@ export interface ComplianceRequirement {
  * via the `definition` "compliance-frameworks".
  */
 export interface ComplianceFramework {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   frameworkType: 'gaap' | 'ifrs' | 'sox' | 'coso' | 'gdpr' | 'iso' | 'regulatory' | 'other';
   issuingBody?: string | null;
@@ -6994,7 +6994,7 @@ export interface ComplianceFramework {
     };
     [k: string]: unknown;
   } | null;
-  applicableJurisdictions?: (number | TaxingJurisdiction)[] | null;
+  applicableJurisdictions?: (string | TaxingJurisdiction)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7003,18 +7003,18 @@ export interface ComplianceFramework {
  * via the `definition` "taxing-jurisdictions".
  */
 export interface TaxingJurisdiction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   jurisdictionType: 'country' | 'state' | 'local' | 'special-zone';
   isoCountryCode?: string | null;
   isoRegionCode?: string | null;
   currency?: string | null;
-  parent?: (number | null) | TaxingJurisdiction;
+  parent?: (string | null) | TaxingJurisdiction;
   filingDeadlines?:
     | {
         description?: string | null;
@@ -7030,12 +7030,12 @@ export interface TaxingJurisdiction {
  * via the `definition` "entity-types".
  */
 export interface EntityType {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   code: string;
   description?: {
@@ -7053,7 +7053,7 @@ export interface EntityType {
     };
     [k: string]: unknown;
   } | null;
-  applicableFrameworks?: (number | ComplianceFramework)[] | null;
+  applicableFrameworks?: (string | ComplianceFramework)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7062,21 +7062,21 @@ export interface EntityType {
  * via the `definition` "credit-memos".
  */
 export interface CreditMemo {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   memoNumber: string;
   /**
    * Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).
    */
-  customer?: (number | null) | Customer;
+  customer?: (string | null) | Customer;
   /**
    * Original invoice being credited (optional for general write-offs).
    */
-  invoice?: (number | null) | Invoice;
+  invoice?: (string | null) | Invoice;
   reason:
     | 'refund_return'
     | 'refund_service'
@@ -7107,9 +7107,9 @@ export interface CreditMemo {
   /**
    * GL posting that booked this credit.
    */
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  journalEntry?: (string | null) | JournalEntry;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7120,18 +7120,18 @@ export interface CreditMemo {
  * via the `definition` "returns".
  */
 export interface Return {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   rmaNumber: string;
-  order: number | SalesOrder;
-  customer?: (number | null) | Customer;
+  order: string | SalesOrder;
+  customer?: (string | null) | Customer;
   reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
   lines: {
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     quantityReturned: number;
     /**
      * Return to inventory or write off?
@@ -7148,9 +7148,9 @@ export interface Return {
   /**
    * Credit memo issued for the return.
    */
-  creditMemo?: (number | null) | CreditMemo;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  creditMemo?: (string | null) | CreditMemo;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7161,16 +7161,16 @@ export interface Return {
  * via the `definition` "shipments".
  */
 export interface Shipment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   shipmentNumber: string;
-  order: number | SalesOrder;
-  shipFromAddress?: (number | null) | Address;
-  shipToAddress: number | Address;
+  order: string | SalesOrder;
+  shipFromAddress?: (string | null) | Address;
+  shipToAddress: string | Address;
   carrier?: ('dhl' | 'fedex' | 'ups' | 'usps' | 'royal_mail' | 'speedy' | 'econt' | 'local' | 'pickup') | null;
   trackingNumber?: string | null;
   trackingUrl?: string | null;
@@ -7180,7 +7180,7 @@ export interface Shipment {
   shippingCost?: number | null;
   lines?:
     | {
-        item?: (number | null) | Item;
+        item?: (string | null) | Item;
         quantity: number;
         id?: string | null;
       }[]
@@ -7200,8 +7200,8 @@ export interface Shipment {
     | null;
   shippedAt?: string | null;
   deliveredAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7212,16 +7212,16 @@ export interface Shipment {
  * via the `definition` "refunds".
  */
 export interface Refund {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   refundNumber: string;
-  creditMemo: number | CreditMemo;
-  invoice?: (number | null) | Invoice;
-  order?: (number | null) | SalesOrder;
+  creditMemo: string | CreditMemo;
+  invoice?: (string | null) | Invoice;
+  order?: (string | null) | SalesOrder;
   amount: number;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
@@ -7233,9 +7233,9 @@ export interface Refund {
   refundedAt?: string | null;
   settledAt?: string | null;
   failureReason?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  journalEntry?: (string | null) | JournalEntry;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7248,12 +7248,12 @@ export interface Refund {
  * via the `definition` "payment-allocations".
  */
 export interface PaymentAllocation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Optional human-readable reference; auto-populated from payment+invoice when omitted.
    */
@@ -7261,7 +7261,7 @@ export interface PaymentAllocation {
   /**
    * The cash-side payment row this allocation draws from.
    */
-  payment: number | Payment;
+  payment: string | Payment;
   /**
    * What the allocation lands against. Most common: customer invoices for AR, vendor bills for AP.
    */
@@ -7269,7 +7269,7 @@ export interface PaymentAllocation {
   /**
    * Target invoice / bill / credit memo (uses the same `invoices` collection with `invoiceType` discriminator).
    */
-  invoice?: (number | null) | Invoice;
+  invoice?: (string | null) | Invoice;
   /**
    * ISO 8601 — date the allocation takes effect (typically equals payment.paymentDate).
    */
@@ -7289,15 +7289,15 @@ export interface PaymentAllocation {
   /**
    * User (or `system` for auto-allocation) who performed this allocation.
    */
-  allocatedBy?: (number | null) | User;
+  allocatedBy?: (string | null) | User;
   allocationKind?: ('manual' | 'auto_fifo' | 'auto_reference' | 'bank_match' | 'stripe_webhook') | null;
   /**
    * When un-allocating: the original allocation this row reverses.
    */
-  reverseOf?: (number | null) | PaymentAllocation;
+  reverseOf?: (string | null) | PaymentAllocation;
   status?: ('draft' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7310,18 +7310,18 @@ export interface PaymentAllocation {
  * via the `definition` "dunning-cycles".
  */
 export interface DunningCycle {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   cycleId: string;
-  invoice: number | Invoice;
+  invoice: string | Invoice;
   /**
    * Customer (denormalized from invoice for reporting).
    */
-  customer?: (number | null) | Address;
+  customer?: (string | null) | Address;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
    * Outstanding balance at cycle entry, integer cents. Recomputed on each job tick.
@@ -7371,11 +7371,11 @@ export interface DunningCycle {
   /**
    * JE id when stage advances to written_off (Dr Bad Debt Expense / Cr AR or Allowance).
    */
-  writeOffJournalEntry?: (number | null) | JournalEntry;
+  writeOffJournalEntry?: (string | null) | JournalEntry;
   status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
   resolvedAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7388,21 +7388,21 @@ export interface DunningCycle {
  * via the `definition` "vendor-quotes".
  */
 export interface VendorQuote {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
    */
   quoteNumber: string;
-  vendor: number | Vendor;
+  vendor: string | Vendor;
   /**
    * Source requisition (one PR may have many vendor quotes).
    */
-  requisition?: (number | null) | PurchaseRequisition;
+  requisition?: (string | null) | PurchaseRequisition;
   rfqIssuedDate?: string | null;
   quoteReceivedDate: string;
   /**
@@ -7411,7 +7411,7 @@ export interface VendorQuote {
   validUntil?: string | null;
   lines: {
     description: string;
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     quantity: number;
     uom?: string | null;
     unitPrice: number;
@@ -7442,7 +7442,7 @@ export interface VendorQuote {
    */
   isAwarded?: boolean | null;
   awardedDate?: string | null;
-  awardedBy?: (number | null) | User;
+  awardedBy?: (string | null) | User;
   /**
    * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
    */
@@ -7450,11 +7450,11 @@ export interface VendorQuote {
   /**
    * PO created from the awarded quote.
    */
-  createdPurchaseOrder?: (number | null) | PurchaseOrder;
+  createdPurchaseOrder?: (string | null) | PurchaseOrder;
   qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
   status?: ('requested' | 'received' | 'under_review' | 'awarded' | 'not_awarded' | 'expired' | 'withdrawn') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7467,17 +7467,17 @@ export interface VendorQuote {
  * via the `definition` "purchase-requisitions".
  */
 export interface PurchaseRequisition {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   requisitionNumber: string;
-  requisitioner: number | User;
+  requisitioner: string | User;
   department?: string | null;
-  costCenter?: (number | null) | CostCenter;
-  project?: (number | null) | Project;
+  costCenter?: (string | null) | CostCenter;
+  project?: (string | null) | Project;
   requestedDate: string;
   /**
    * When the goods/services are needed.
@@ -7489,7 +7489,7 @@ export interface PurchaseRequisition {
   businessJustification: string;
   lines: {
     description: string;
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     quantity: number;
     uom?: string | null;
     /**
@@ -7500,8 +7500,8 @@ export interface PurchaseRequisition {
      * quantity × estimatedUnitPrice (cents).
      */
     estimatedAmount: number;
-    glAccount?: (number | null) | GlAccount;
-    preferredVendor?: (number | null) | Vendor;
+    glAccount?: (string | null) | GlAccount;
+    preferredVendor?: (string | null) | Vendor;
     id?: string | null;
   }[];
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
@@ -7518,7 +7518,7 @@ export interface PurchaseRequisition {
   approvalChain?:
     | {
         step: number;
-        approver: number | User;
+        approver: string | User;
         /**
          * e.g. Department Head, CFO, CEO.
          */
@@ -7532,16 +7532,16 @@ export interface PurchaseRequisition {
   /**
    * PO created when requisition fully approved.
    */
-  createdPurchaseOrder?: (number | null) | PurchaseOrder;
+  createdPurchaseOrder?: (string | null) | PurchaseOrder;
   /**
    * Selected vendor quote that led to PO award.
    */
-  awardedQuote?: (number | null) | VendorQuote;
+  awardedQuote?: (string | null) | VendorQuote;
   status?:
     | ('draft' | 'submitted' | 'in_approval' | 'approved' | 'rejected' | 'returned' | 'po_created' | 'cancelled')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7552,17 +7552,17 @@ export interface PurchaseRequisition {
  * via the `definition` "purchase-orders".
  */
 export interface PurchaseOrder {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   poNumber: string;
   /**
    * Vendor receiving the PO.
    */
-  vendor: number | Address;
+  vendor: string | Address;
   orderDate: string;
   expectedDeliveryDate?: string | null;
   /**
@@ -7575,7 +7575,7 @@ export interface PurchaseOrder {
   incotermsLocation?: string | null;
   lines: {
     lineNumber?: number | null;
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     description: string;
     quantity: number;
     unitPrice: number;
@@ -7583,7 +7583,7 @@ export interface PurchaseOrder {
     /**
      * Expense / asset account to debit on receipt.
      */
-    glAccount?: (number | null) | GlAccount;
+    glAccount?: (string | null) | GlAccount;
     /**
      * Cumulative quantity received via goods-receipts.
      */
@@ -7602,16 +7602,16 @@ export interface PurchaseOrder {
    * Partial / full goods-receipts against this PO.
    */
   receipts?: {
-    docs?: (number | GoodsReceipt)[];
+    docs?: (string | GoodsReceipt)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
   /**
    * Matched vendor bill (three-way-match anchor).
    */
-  invoice?: (number | null) | Invoice;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  invoice?: (string | null) | Invoice;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7622,17 +7622,17 @@ export interface PurchaseOrder {
  * via the `definition` "goods-receipts".
  */
 export interface GoodsReceipt {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   receiptNumber: string;
-  purchaseOrder: number | PurchaseOrder;
+  purchaseOrder: string | PurchaseOrder;
   receivedDate: string;
   lines: {
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     description?: string | null;
     quantityReceived: number;
     quantityDamaged?: number | null;
@@ -7641,9 +7641,9 @@ export interface GoodsReceipt {
   }[];
   status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
   inspectedAt?: string | null;
-  inspectedBy?: (number | null) | User;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  inspectedBy?: (string | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7656,14 +7656,14 @@ export interface GoodsReceipt {
  * via the `definition` "vendor-scorecards".
  */
 export interface VendorScorecard {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
-  vendor: number | Vendor;
+  vendor: string | Vendor;
   /**
    * e.g. 2026-Q1, 2026-FY.
    */
@@ -7673,7 +7673,7 @@ export interface VendorScorecard {
   /**
    * Procurement / quality manager who completed the scorecard.
    */
-  evaluator: number | User;
+  evaluator: string | User;
   metrics?: {
     /**
      * OTD % across the period.
@@ -7726,8 +7726,8 @@ export interface VendorScorecard {
   reviewedWithVendor?: boolean | null;
   reviewMeetingDate?: string | null;
   status?: ('draft' | 'reviewed' | 'shared' | 'acknowledged' | 'closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7738,12 +7738,12 @@ export interface VendorScorecard {
  * via the `definition` "inventory-movements".
  */
 export interface InventoryMovement {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   movementId: string;
   kind:
     | 'receipt'
@@ -7755,7 +7755,7 @@ export interface InventoryMovement {
     | 'adjustment'
     | 'write_off'
     | 'opening';
-  item: number | Item;
+  item: string | Item;
   /**
    * Lot / serial number for traceability.
    */
@@ -7777,19 +7777,19 @@ export interface InventoryMovement {
    */
   valuationMethod: 'fifo' | 'weighted_average' | 'specific_identification';
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  fromLocation?: (number | null) | WarehouseLocation;
-  toLocation?: (number | null) | WarehouseLocation;
+  fromLocation?: (string | null) | WarehouseLocation;
+  toLocation?: (string | null) | WarehouseLocation;
   movementAt: string;
   sourceDocumentType?: ('goods_receipt' | 'shipment' | 'return' | 'order' | 'adjustment' | 'manual') | null;
   /**
    * Free-form id of the originating document for traceability.
    */
   sourceDocumentId?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'posted' | 'reversed') | null;
   postedAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7800,19 +7800,19 @@ export interface InventoryMovement {
  * via the `definition` "warehouse-locations".
  */
 export interface WarehouseLocation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Short code, e.g. SOF-MAIN, NYC-3PL.
    */
   code: string;
   name: string;
   type: 'warehouse' | '3pl' | 'retail' | 'consignment' | 'transit' | 'quarantine' | 'returns' | 'bonded' | 'virtual';
-  address?: (number | null) | Address;
+  address?: (string | null) | Address;
   /**
    * ISO 3166-1 alpha-2.
    */
@@ -7824,7 +7824,7 @@ export interface WarehouseLocation {
   /**
    * Default inventory GL account for stock at this location.
    */
-  glAccount?: (number | null) | GlAccount;
+  glAccount?: (string | null) | GlAccount;
   /**
    * Optional bin/aisle/shelf detail for cycle-count granularity.
    */
@@ -7836,8 +7836,8 @@ export interface WarehouseLocation {
       }[]
     | null;
   status?: ('active' | 'inactive' | 'closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7848,12 +7848,12 @@ export interface WarehouseLocation {
  * via the `definition` "budget-planning".
  */
 export interface BudgetPlanning {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   budgetId: string;
   fiscalYear: number;
   /**
@@ -7863,7 +7863,7 @@ export interface BudgetPlanning {
   budgetPeriod?: ('monthly' | 'quarterly' | 'annual') | null;
   budgetLineItems?:
     | {
-        glAccount: number | GlAccount;
+        glAccount: string | GlAccount;
         accountNumber?: string | null;
         accountName?: string | null;
         accountType?: string | null;
@@ -7875,8 +7875,8 @@ export interface BudgetPlanning {
   totalBudget?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7889,17 +7889,17 @@ export interface BudgetPlanning {
  * via the `definition` "cost-variances".
  */
 export interface CostVariance {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Variance reference (e.g. `VAR-2026-04-0001`).
    */
   reference: string;
-  workOrder: number | WorkOrder;
+  workOrder: string | WorkOrder;
   /**
    * ISO 8601 — date the variance was computed (typically WO close).
    */
@@ -7942,10 +7942,10 @@ export interface CostVariance {
   /**
    * JE that books the variance disposition.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'pending_disposition' | 'disposed' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -7958,12 +7958,12 @@ export interface CostVariance {
  * via the `definition` "work-orders".
  */
 export interface WorkOrder {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Work-order reference (e.g. `WO-2026-04-0123`).
    */
@@ -7971,11 +7971,11 @@ export interface WorkOrder {
   /**
    * BOM version this order executes against.
    */
-  bom: number | BillsOfMaterial;
+  bom: string | BillsOfMaterial;
   /**
    * Finished-good item the order produces (denormalised from BOM for fast filter).
    */
-  finishedGood: number | Item;
+  finishedGood: string | Item;
   /**
    * Planned output quantity.
    */
@@ -8008,7 +8008,7 @@ export interface WorkOrder {
   /**
    * Where the finished good is received.
    */
-  targetWarehouse?: (number | null) | WarehouseLocation;
+  targetWarehouse?: (string | null) | WarehouseLocation;
   standardCosts?: {
     /**
      * Σ(component qty × component standard cost) per BOM. In cents.
@@ -8028,8 +8028,8 @@ export interface WorkOrder {
     standardTotalCost?: number | null;
   };
   status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'closed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8042,12 +8042,12 @@ export interface WorkOrder {
  * via the `definition` "bills-of-materials".
  */
 export interface BillsOfMaterial {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * BOM reference (e.g. `BOM-WIDGET-001-v3`).
    */
@@ -8055,7 +8055,7 @@ export interface BillsOfMaterial {
   /**
    * The finished-good item this BOM produces.
    */
-  finishedGood: number | Item;
+  finishedGood: string | Item;
   /**
    * Version label (e.g. `v3`, `2026-Q1`). Bumped per ECO.
    */
@@ -8079,7 +8079,7 @@ export interface BillsOfMaterial {
     /**
      * Component item (raw material / sub-assembly).
      */
-    item: number | Item;
+    item: string | Item;
     /**
      * Quantity consumed per BOM run.
      */
@@ -8111,7 +8111,7 @@ export interface BillsOfMaterial {
         /**
          * Work-center performing this standard operation (relational — the capacity unit).
          */
-        workCenter?: (number | null) | WorkCenter;
+        workCenter?: (string | null) | WorkCenter;
         /**
          * Standard labour-minutes per BOM run — drives direct-labour absorption.
          */
@@ -8128,8 +8128,8 @@ export interface BillsOfMaterial {
    */
   engineeringChangeOrder?: string | null;
   status?: ('draft' | 'active' | 'superseded' | 'obsolete') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8142,12 +8142,12 @@ export interface BillsOfMaterial {
  * via the `definition` "work-centers".
  */
 export interface WorkCenter {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Work-center code (e.g. `WC-CUT-01`).
    */
@@ -8163,7 +8163,7 @@ export interface WorkCenter {
   /**
    * Parent work-center — the ISA-95 resource hierarchy (replaces code-prefix process buckets).
    */
-  parent?: (number | null) | WorkCenter;
+  parent?: (string | null) | WorkCenter;
   /**
    * Throughput per hour, in `capacityUnitOfMeasure`.
    */
@@ -8186,8 +8186,8 @@ export interface WorkCenter {
   payPerHour?: number | null;
   rateCurrency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8200,12 +8200,12 @@ export interface WorkCenter {
  * via the `definition` "intercompany-transactions".
  */
 export interface IntercompanyTransaction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Pair reference — both legs of the intercompany pair carry the same reference for join.
    */
@@ -8213,19 +8213,19 @@ export interface IntercompanyTransaction {
   /**
    * Tenant booking the debit leg (from-side of the intercompany pair).
    */
-  fromTenant: number | Tenant;
+  fromTenant: string | Tenant;
   /**
    * Tenant booking the credit leg (to-side of the intercompany pair).
    */
-  toTenant: number | Tenant;
+  toTenant: string | Tenant;
   /**
    * IFRS-10 §B86 reporting entity for the debit leg (single-tenant multi-entity hierarchy).
    */
-  fromLegalEntity?: (number | null) | LegalEntity;
+  fromLegalEntity?: (string | null) | LegalEntity;
   /**
    * IFRS-10 §B86 reporting entity for the credit leg (single-tenant multi-entity hierarchy).
    */
-  toLegalEntity?: (number | null) | LegalEntity;
+  toLegalEntity?: (string | null) | LegalEntity;
   /**
    * ISO 8601 — transaction effective date.
    */
@@ -8245,18 +8245,18 @@ export interface IntercompanyTransaction {
   /**
    * JE booked on fromTenant — links source-document to GL.
    */
-  fromJournalEntry?: (number | null) | JournalEntry;
+  fromJournalEntry?: (string | null) | JournalEntry;
   /**
    * JE booked on toTenant — links source-document to GL.
    */
-  toJournalEntry?: (number | null) | JournalEntry;
+  toJournalEntry?: (string | null) | JournalEntry;
   /**
    * BEPS Action 13 — local file / master file reference for transfer-pricing-bearing pairs.
    */
   transferPricingDoc?: string | null;
   status?: ('draft' | 'pending_ack' | 'posted' | 'eliminated' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8269,12 +8269,12 @@ export interface IntercompanyTransaction {
  * via the `definition` "consolidation-eliminations".
  */
 export interface ConsolidationElimination {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential elimination reference (e.g. `ELIM-2026-Q1-001`).
    */
@@ -8313,14 +8313,14 @@ export interface ConsolidationElimination {
   /**
    * The actual elimination JE booked on the consolidation-tenant ledger.
    */
-  sourceJournalEntry?: (number | null) | JournalEntry;
+  sourceJournalEntry?: (string | null) | JournalEntry;
   /**
    * The intercompany pair this elimination resolves (if elimination_type ∈ {ic_balance, ic_pl}).
    */
-  sourceIntercompany?: (number | null) | IntercompanyTransaction;
+  sourceIntercompany?: (string | null) | IntercompanyTransaction;
   status?: ('draft' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8333,12 +8333,12 @@ export interface ConsolidationElimination {
  * via the `definition` "fx-transactions".
  */
 export interface FxTransaction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.
    */
@@ -8375,11 +8375,11 @@ export interface FxTransaction {
   /**
    * The rate-table row that was the source of `exchangeRate` (audit traceability).
    */
-  currencyRate?: (number | null) | CurrencyRate;
+  currencyRate?: (string | null) | CurrencyRate;
   /**
    * JE that booked the FX gain/loss + the converted amount.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   /**
    * Slug of the source document this conversion serves (e.g. `invoices`, `payments`).
    */
@@ -8393,8 +8393,8 @@ export interface FxTransaction {
    */
   description?: string | null;
   status?: ('recorded' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8407,12 +8407,12 @@ export interface FxTransaction {
  * via the `definition` "commitments-and-contingencies".
  */
 export interface CommitmentsAndContingency {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
   description: string;
   kind: 'commitment' | 'contingent_liability' | 'contingent_asset' | 'guarantee';
@@ -8431,7 +8431,7 @@ export interface CommitmentsAndContingency {
   /**
    * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   /**
    * Name of supplier / claimant / beneficiary.
    */
@@ -8462,14 +8462,14 @@ export interface CommitmentsAndContingency {
   /**
    * Set when likelihood reaches probable and a provision is booked.
    */
-  recognisedAsProvision?: (number | null) | Provision;
+  recognisedAsProvision?: (string | null) | Provision;
   /**
    * IAS-37 §86 disclosure narrative — copy-pasteable into financial-statement notes.
    */
   noteText?: string | null;
   status?: ('active' | 'settled' | 'released' | 'reclassified') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8482,12 +8482,12 @@ export interface CommitmentsAndContingency {
  * via the `definition` "leases".
  */
 export interface Lease {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   leaseNumber: string;
   /**
    * Underlying asset description (e.g. "Office space — Sofia HQ Floor 3").
@@ -8496,7 +8496,7 @@ export interface Lease {
   /**
    * Counterparty / lessor.
    */
-  lessor?: (number | null) | Address;
+  lessor?: (string | null) | Address;
   /**
    * IFRS 16: lessee uses single model — "finance" maps to ROU+Liability. ASC 842 retains operating/finance distinction. Short-term and low-value are IFRS 16 exemptions (off-balance-sheet).
    */
@@ -8602,15 +8602,15 @@ export interface Lease {
   /**
    * Right-of-use asset GL account.
    */
-  rouAssetAccount?: (number | null) | GlAccount;
+  rouAssetAccount?: (string | null) | GlAccount;
   /**
    * Lease liability GL account.
    */
-  leaseLiabilityAccount?: (number | null) | GlAccount;
-  rouAmortizationAccount?: (number | null) | GlAccount;
-  interestExpenseAccount?: (number | null) | GlAccount;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  leaseLiabilityAccount?: (string | null) | GlAccount;
+  rouAmortizationAccount?: (string | null) | GlAccount;
+  interestExpenseAccount?: (string | null) | GlAccount;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8623,14 +8623,14 @@ export interface Lease {
  * via the `definition` "lease-modifications".
  */
 export interface LeaseModification {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
-  lease: number | Lease;
+  lease: string | Lease;
   /**
    * Effective date of the modification — drives the remeasurement reference rate.
    */
@@ -8642,7 +8642,7 @@ export interface LeaseModification {
   /**
    * Fiscal period the modification is recognised in.
    */
-  period?: (number | null) | FiscalPeriod;
+  period?: (string | null) | FiscalPeriod;
   modificationKind:
     | 'term_extension'
     | 'term_reduction'
@@ -8714,15 +8714,15 @@ export interface LeaseModification {
   /**
    * JE that booked the modification accounting entries.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   /**
    * Reference to the signed amendment in `evidence-attestations`.
    */
   agreementDocumentRef?: string | null;
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
   status?: ('draft' | 'reviewed' | 'approved' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8735,12 +8735,12 @@ export interface LeaseModification {
  * via the `definition` "evidence-attestations".
  */
 export interface EvidenceAttestation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Filename-style id (e.g. `2026-05-09-order-to-cash-tenant-42`).
    */
@@ -8770,7 +8770,7 @@ export interface EvidenceAttestation {
   /**
    * The PDF/A-2b + PDF/UA-1 attestation bytes (uploaded to R2 via the Media collection).
    */
-  pdfFile?: (number | null) | Media;
+  pdfFile?: (string | null) | Media;
   /**
    * CMS SignedData blob (hex-encoded) — eIDAS Art.28 qualified-seal evidence. Populated by `signBgPadesPdf`.
    */
@@ -8800,8 +8800,8 @@ export interface EvidenceAttestation {
    */
   gapsCount?: number | null;
   status?: ('generated' | 'signed' | 'filed' | 'superseded') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8814,17 +8814,17 @@ export interface EvidenceAttestation {
  * via the `definition` "lease-period-postings".
  */
 export interface LeasePeriodPosting {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Stable id (e.g. LPP-2026-04-LEASE-001).
    */
   postingId: string;
-  lease: number | Lease;
+  lease: string | Lease;
   /**
    * Inclusive start of the period.
    */
@@ -8869,23 +8869,23 @@ export interface LeasePeriodPosting {
   /**
    * Overrides the lease.interestExpenseAccount.
    */
-  interestExpenseAccount?: (number | null) | GlAccount;
-  leaseLiabilityAccount?: (number | null) | GlAccount;
-  rouAmortisationAccount?: (number | null) | GlAccount;
-  accumulatedRouAmortisationAccount?: (number | null) | GlAccount;
+  interestExpenseAccount?: (string | null) | GlAccount;
+  leaseLiabilityAccount?: (string | null) | GlAccount;
+  rouAmortisationAccount?: (string | null) | GlAccount;
+  accumulatedRouAmortisationAccount?: (string | null) | GlAccount;
   /**
    * Cash account debited for the principal repayment. Drives the IAS 7 cash-flows financing-activities classification.
    */
-  cashAccount?: (number | null) | GlAccount;
+  cashAccount?: (string | null) | GlAccount;
   /**
    * Cost-center the lease cost allocates to (IFRS 8 / ASC 280 segment).
    */
-  costCenter?: (number | null) | CostCenter;
+  costCenter?: (string | null) | CostCenter;
   status?: ('calculated' | 'posted' | 'reversed') | null;
   postedAt?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  journalEntry?: (string | null) | JournalEntry;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8898,12 +8898,12 @@ export interface LeasePeriodPosting {
  * via the `definition` "sepa-mandates".
  */
 export interface SepaMandate {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Unique mandate identifier carried in pain.008 MndtId.
    */
@@ -8921,7 +8921,7 @@ export interface SepaMandate {
   /**
    * Optional link to the addresses register.
    */
-  debtor?: (number | null) | Address;
+  debtor?: (string | null) | Address;
   /**
    * Creditor identifier (CI) — country-specific format assigned by the regulator.
    */
@@ -8933,7 +8933,7 @@ export interface SepaMandate {
   /**
    * Signed mandate file (PDF). Required evidence.
    */
-  mandateDocument?: (number | null) | Media;
+  mandateDocument?: (string | null) | Media;
   signatureMethod?: ('wet_ink' | 'qualified_electronic' | 'advanced_electronic' | 'click_accept') | null;
   /**
    * EPC130-08: a mandate becomes obsolete 36 months after the most recent collection. The auto-state-machine driven by lastCollectionAt.
@@ -8950,8 +8950,8 @@ export interface SepaMandate {
   revokedAt?: string | null;
   revocationReason?: string | null;
   status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -8964,24 +8964,24 @@ export interface SepaMandate {
  * via the `definition` "job-positions".
  */
 export interface JobPosition {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   positionCode: string;
   positionTitle: string;
   department?: string | null;
-  costCenter?: (number | null) | CostCenter;
+  costCenter?: (string | null) | CostCenter;
   /**
    * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   /**
    * Manager position (org-chart parent).
    */
-  reportsTo?: (number | null) | JobPosition;
+  reportsTo?: (string | null) | JobPosition;
   level?:
     | (
         | 'intern'
@@ -9025,7 +9025,7 @@ export interface JobPosition {
   /**
    * Current incumbent (null = vacant).
    */
-  currentEmployee?: (number | null) | Employee;
+  currentEmployee?: (string | null) | Employee;
   effectiveStartDate: string;
   /**
    * Date position is closed / removed from headcount.
@@ -9036,8 +9036,8 @@ export interface JobPosition {
    */
   isApprovedHeadcount?: boolean | null;
   status?: ('planned' | 'approved' | 'open' | 'filled' | 'on_hold' | 'closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9050,17 +9050,17 @@ export interface JobPosition {
  * via the `definition` "time-entries".
  */
 export interface TimeEntry {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Stable id (e.g. TE-2026-04-001).
    */
   entryId: string;
-  employee: number | Employee;
+  employee: string | Employee;
   workDate: string;
   /**
    * Duration in minutes. Capped at 1,440 per day; multi-day blocks split into separate rows.
@@ -9084,7 +9084,7 @@ export interface TimeEntry {
   /**
    * Cost-center the labor cost allocates to. Defaults to the employee's department; can override per-entry for cross-charges.
    */
-  costCenter?: (number | null) | CostCenter;
+  costCenter?: (string | null) | CostCenter;
   /**
    * Optional project / job code for project accounting. Free-text until a Projects collection lands.
    */
@@ -9111,9 +9111,9 @@ export interface TimeEntry {
   /**
    * Payroll run that consumed this entry — set when status flips to posted.
    */
-  payrollRun?: (number | null) | PayrollRun;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  payrollRun?: (string | null) | PayrollRun;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9126,14 +9126,14 @@ export interface TimeEntry {
  * via the `definition` "leave-requests".
  */
 export interface LeaveRequest {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   reference: string;
-  employee: number | Employee;
+  employee: string | Employee;
   leaveType:
     | 'annual'
     | 'sick'
@@ -9189,18 +9189,18 @@ export interface LeaveRequest {
      */
     carryOverApplied?: number | null;
   };
-  approver?: (number | null) | User;
+  approver?: (string | null) | User;
   rejectionReason?: string | null;
   /**
    * Coverage employee during the absence (when applicable).
    */
-  replacedByEmployee?: (number | null) | Employee;
+  replacedByEmployee?: (string | null) | Employee;
   isHandoverComplete?: boolean | null;
   cancelledDate?: string | null;
   cancelReason?: string | null;
   status?: ('draft' | 'submitted' | 'approved' | 'rejected' | 'in_progress' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9213,18 +9213,18 @@ export interface LeaveRequest {
  * via the `definition` "performance-reviews".
  */
 export interface PerformanceReview {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
-  employee: number | Employee;
+  employee: string | Employee;
   /**
    * Manager / reviewing leader.
    */
-  reviewer: number | User;
+  reviewer: string | User;
   reviewType: 'annual' | 'mid_year' | 'quarterly' | 'probation' | 'promotion' | 'pip' | '360' | 'project_closeout';
   /**
    * e.g. 2026-FY, 2026-H1, 2026-Q1.
@@ -9260,7 +9260,7 @@ export interface PerformanceReview {
     | null;
   outcome?: {
     recommendsPromotion?: boolean | null;
-    newJobPosition?: (number | null) | JobPosition;
+    newJobPosition?: (string | null) | JobPosition;
     recommendsMeritIncrease?: boolean | null;
     currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
     meritIncreasePercent?: number | null;
@@ -9289,8 +9289,8 @@ export interface PerformanceReview {
   status?:
     | ('draft' | 'self_in_progress' | 'mgr_in_progress' | 'calibration' | 'awaiting_ack' | 'acknowledged' | 'disputed')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9303,22 +9303,22 @@ export interface PerformanceReview {
  * via the `definition` "expense-reports".
  */
 export interface ExpenseReport {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reportNumber: string;
-  employee: number | Employee;
+  employee: string | Employee;
   submissionDate: string;
   periodStartDate?: string | null;
   periodEndDate?: string | null;
   /**
    * When expenses are billable to a customer project.
    */
-  project?: (number | null) | Project;
-  costCenter?: (number | null) | CostCenter;
+  project?: (string | null) | Project;
+  costCenter?: (string | null) | CostCenter;
   /**
    * Why the trip / spend was needed (substantiation evidence).
    */
@@ -9353,8 +9353,8 @@ export interface ExpenseReport {
      * amount × fxRate (cents) in reimbursementCurrency.
      */
     reimbursementAmount?: number | null;
-    glAccount?: (number | null) | GlAccount;
-    taxCode?: (number | null) | TaxCode;
+    glAccount?: (string | null) | GlAccount;
+    taxCode?: (string | null) | TaxCode;
     isBillableToCustomer?: boolean | null;
     /**
      * Distance in km (when category = mileage).
@@ -9365,7 +9365,7 @@ export interface ExpenseReport {
      */
     mileageRate?: number | null;
     receiptAttached?: boolean | null;
-    receiptMedia?: (number | null) | Media;
+    receiptMedia?: (string | null) | Media;
     isPolicyCompliant?: boolean | null;
     policyExceptionReason?: string | null;
     id?: string | null;
@@ -9385,7 +9385,7 @@ export interface ExpenseReport {
   approvalChain?:
     | {
         step: number;
-        approver: number | User;
+        approver: string | User;
         role?: string | null;
         decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
         decidedAt?: string | null;
@@ -9395,14 +9395,14 @@ export interface ExpenseReport {
     | null;
   reimbursementMethod?: ('payroll' | 'ap_payment' | 'corporate_card' | 'cash_advance') | null;
   reimbursementDate?: string | null;
-  reimbursedViaPayrollRun?: (number | null) | PayrollRun;
-  reimbursedViaPayment?: (number | null) | Payment;
-  journalEntry?: (number | null) | JournalEntry;
+  reimbursedViaPayrollRun?: (string | null) | PayrollRun;
+  reimbursedViaPayment?: (string | null) | Payment;
+  journalEntry?: (string | null) | JournalEntry;
   status?:
     | ('draft' | 'submitted' | 'in_approval' | 'approved' | 'reimbursed' | 'rejected' | 'returned' | 'cancelled')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9415,21 +9415,21 @@ export interface ExpenseReport {
  * via the `definition` "recruiting-pipeline".
  */
 export interface RecruitingPipeline {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   candidateName: string;
   firstName?: string | null;
   lastName?: string | null;
   email: string;
   phone?: string | null;
   linkedinUrl?: string | null;
-  position: number | JobPosition;
-  recruiter?: (number | null) | User;
-  hiringManager?: (number | null) | User;
+  position: string | JobPosition;
+  recruiter?: (string | null) | User;
+  hiringManager?: (string | null) | User;
   applicationDate: string;
   source?:
     | ('job_board' | 'company_website' | 'referral' | 'agency' | 'internal' | 'university' | 'sourced' | 'reapplied')
@@ -9437,7 +9437,7 @@ export interface RecruitingPipeline {
   /**
    * Referring employee (when source = referral).
    */
-  referrer?: (number | null) | Employee;
+  referrer?: (string | null) | Employee;
   stage:
     | 'applied'
     | 'screening'
@@ -9455,7 +9455,7 @@ export interface RecruitingPipeline {
     | {
         round?: string | null;
         scheduledDate?: string | null;
-        interviewers?: (number | User)[] | null;
+        interviewers?: (string | User)[] | null;
         feedback?: ('strong_hire' | 'hire' | 'no_hire' | 'strong_no_hire') | null;
         feedbackNotes?: string | null;
         id?: string | null;
@@ -9487,7 +9487,7 @@ export interface RecruitingPipeline {
   /**
    * GDPR Art.6 consent for retention beyond standard retention period.
    */
-  consentRecord?: (number | null) | ConsentRecord;
+  consentRecord?: (string | null) | ConsentRecord;
   /**
    * GDPR Art.5(1)(e) — date after which PII must be purged unless consent renewed.
    */
@@ -9495,10 +9495,10 @@ export interface RecruitingPipeline {
   /**
    * Employee record created on hire.
    */
-  createdEmployee?: (number | null) | Employee;
+  createdEmployee?: (string | null) | Employee;
   status?: ('active' | 'hired' | 'rejected' | 'withdrawn' | 'on_hold' | 'pii_purged') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9511,12 +9511,12 @@ export interface RecruitingPipeline {
  * via the `definition` "activities".
  */
 export interface Activity {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   subject: string;
   activityType:
     | 'call'
@@ -9532,20 +9532,20 @@ export interface Activity {
   direction?: ('outbound' | 'inbound' | 'internal') | null;
   activityDate: string;
   durationMinutes?: number | null;
-  assignedTo: number | User;
+  assignedTo: string | User;
   relatedTo: 'lead' | 'opportunity' | 'customer' | 'vendor' | 'project';
-  lead?: (number | null) | Lead;
-  opportunity?: (number | null) | Opportunity;
-  customer?: (number | null) | Customer;
-  vendor?: (number | null) | Vendor;
-  project?: (number | null) | Project;
+  lead?: (string | null) | Lead;
+  opportunity?: (string | null) | Opportunity;
+  customer?: (string | null) | Customer;
+  vendor?: (string | null) | Vendor;
+  project?: (string | null) | Project;
   description?: string | null;
   outcome?: ('positive' | 'neutral' | 'negative' | 'action_required') | null;
   nextStep?: string | null;
   nextStepDate?: string | null;
   status?: ('planned' | 'in_progress' | 'completed' | 'cancelled' | 'deferred') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9558,24 +9558,24 @@ export interface Activity {
  * via the `definition` "project-tasks".
  */
 export interface ProjectTask {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  project: number | Project;
+  tenant?: (string | null) | Tenant;
+  project: string | Project;
   /**
    * Optional parent task for hierarchical WBS (task → subtask).
    */
-  parentTask?: (number | null) | ProjectTask;
+  parentTask?: (string | null) | ProjectTask;
   /**
    * Project-unique task code (e.g. T-001 / WBS 1.2.3).
    */
   taskCode: string;
   name: string;
   description?: string | null;
-  assignee?: (number | null) | User;
+  assignee?: (string | null) | User;
   taskType?: ('work' | 'milestone' | 'summary' | 'deliverable') | null;
   /**
    * Estimated effort hours.
@@ -9598,14 +9598,14 @@ export interface ProjectTask {
   /**
    * Predecessor tasks (finish-to-start by default).
    */
-  dependencyTasks?: (number | ProjectTask)[] | null;
+  dependencyTasks?: (string | ProjectTask)[] | null;
   /**
    * When true, time-entries posted here flow into customer invoicing.
    */
   isBillable?: boolean | null;
   status?: ('not_started' | 'in_progress' | 'blocked' | 'in_review' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9618,13 +9618,13 @@ export interface ProjectTask {
  * via the `definition` "project-milestones".
  */
 export interface ProjectMilestone {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  project: number | Project;
+  tenant?: (string | null) | Tenant;
+  project: string | Project;
   /**
    * Sequential ordinal within the project (1, 2, 3, …).
    */
@@ -9649,11 +9649,11 @@ export interface ProjectMilestone {
   /**
    * User who marked the milestone achieved (SOX §404 four-eyes evidence).
    */
-  achievedBy?: (number | null) | User;
+  achievedBy?: (string | null) | User;
   /**
    * Invoice raised for this milestone (set by the milestone:achieved handler).
    */
-  invoice?: (number | null) | Invoice;
+  invoice?: (string | null) | Invoice;
   /**
    * Customer acceptance document reference (e.g. signed sign-off PDF in `evidence-attestations`).
    */
@@ -9661,8 +9661,8 @@ export interface ProjectMilestone {
   status?:
     | ('planned' | 'in_progress' | 'pending_acceptance' | 'achieved' | 'invoiced' | 'rejected' | 'cancelled')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9675,12 +9675,12 @@ export interface ProjectMilestone {
  * via the `definition` "workflow-definitions".
  */
 export interface WorkflowDefinition {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   description?: string | null;
   /**
@@ -9710,7 +9710,7 @@ export interface WorkflowDefinition {
           | 'top_of_chain'
         )
       | null;
-    assigneeUser?: (number | null) | User;
+    assigneeUser?: (string | null) | User;
     assigneeRole?: string | null;
     /**
      * Step is skipped when document amount < threshold (cents). Allows tiered approval.
@@ -9720,7 +9720,7 @@ export interface WorkflowDefinition {
      * Hours before this step escalates if not actioned.
      */
     slaHours?: number | null;
-    escalateTo?: (number | null) | User;
+    escalateTo?: (string | null) | User;
     allowDelegation?: boolean | null;
     /**
      * Optional JSON-Logic — when present, step is conditional.
@@ -9738,11 +9738,11 @@ export interface WorkflowDefinition {
   isActive?: boolean | null;
   effectiveFrom?: string | null;
   effectiveTo?: string | null;
-  supersededBy?: (number | null) | WorkflowDefinition;
+  supersededBy?: (string | null) | WorkflowDefinition;
   onTimeoutBehavior?: ('escalate' | 'auto_approve' | 'auto_reject' | 'notify_only') | null;
   status?: ('draft' | 'active' | 'inactive' | 'superseded' | 'archived') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9755,24 +9755,24 @@ export interface WorkflowDefinition {
  * via the `definition` "workflow-instances".
  */
 export interface WorkflowInstance {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency key.
    */
   instanceId: string;
-  definition: number | WorkflowDefinition;
+  definition: string | WorkflowDefinition;
   /**
    * Frozen version snapshot — historical instances reference the version that started them.
    */
   definitionVersion: number;
   targetCollection: string;
   targetId: string;
-  submittedBy: number | User;
+  submittedBy: string | User;
   submittedAt: string;
   /**
    * Index of the active step (0 = first).
@@ -9781,7 +9781,7 @@ export interface WorkflowInstance {
   /**
    * User currently expected to act.
    */
-  currentAssignee?: (number | null) | User;
+  currentAssignee?: (string | null) | User;
   currentAssigneeRole?: string | null;
   /**
    * When the current step SLA expires (drives escalation).
@@ -9791,7 +9791,7 @@ export interface WorkflowInstance {
     | {
         stepIndex: number;
         stepName: string;
-        assignee?: (number | null) | User;
+        assignee?: (string | null) | User;
         decision:
           | 'approved'
           | 'rejected'
@@ -9805,7 +9805,7 @@ export interface WorkflowInstance {
           | 'service_failure';
         decidedAt: string;
         comment?: string | null;
-        delegatedTo?: (number | null) | User;
+        delegatedTo?: (string | null) | User;
         /**
          * audit-events.eventId for the cross-collection trail.
          */
@@ -9822,8 +9822,8 @@ export interface WorkflowInstance {
   status?:
     | ('pending_start' | 'in_progress' | 'awaiting_action' | 'escalated' | 'completed' | 'cancelled' | 'errored')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9836,12 +9836,12 @@ export interface WorkflowInstance {
  * via the `definition` "work-shifts".
  */
 export interface WorkShift {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Work-shift reference (e.g. `WS-2026-04-0042`).
    */
@@ -9849,15 +9849,15 @@ export interface WorkShift {
   /**
    * Employee who worked the shift.
    */
-  worker: number | Employee;
+  worker: string | Employee;
   /**
    * Work-center the labor was performed at.
    */
-  workCenter: number | WorkCenter;
+  workCenter: string | WorkCenter;
   /**
    * Production order the shift contributed to (optional).
    */
-  workOrder?: (number | null) | WorkOrder;
+  workOrder?: (string | null) | WorkOrder;
   /**
    * ISO 8601 — shift start.
    */
@@ -9892,8 +9892,8 @@ export interface WorkShift {
   wage?: number | null;
   wageCurrency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   status?: ('open' | 'closed' | 'approved') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9906,12 +9906,12 @@ export interface WorkShift {
  * via the `definition` "operations".
  */
 export interface Operation {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Operation code (e.g. `OP-SEW`).
    */
@@ -9923,14 +9923,14 @@ export interface Operation {
   /**
    * Default work-center this operation runs on (a routing step may override).
    */
-  defaultWorkCenter?: (number | null) | WorkCenter;
+  defaultWorkCenter?: (string | null) | WorkCenter;
   /**
    * Parent operation — the operation-type hierarchy.
    */
-  parent?: (number | null) | Operation;
+  parent?: (string | null) | Operation;
   status?: ('active' | 'inactive') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9943,12 +9943,12 @@ export interface Operation {
  * via the `definition` "routings".
  */
 export interface Routing {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Routing-step reference (e.g. `WO-…/10`).
    */
@@ -9956,15 +9956,15 @@ export interface Routing {
   /**
    * Production order this step belongs to.
    */
-  workOrder: number | WorkOrder;
+  workOrder: string | WorkOrder;
   /**
    * Operation type executed at this step.
    */
-  operation: number | Operation;
+  operation: string | Operation;
   /**
    * Work-center performing the step (defaults from the operation).
    */
-  workCenter?: (number | null) | WorkCenter;
+  workCenter?: (string | null) | WorkCenter;
   /**
    * Step order within the routing (ascending).
    */
@@ -9982,8 +9982,8 @@ export interface Routing {
    */
   unitOfMeasure?: string | null;
   status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -9996,12 +9996,12 @@ export interface Routing {
  * via the `definition` "operation-runs".
  */
 export interface OperationRun {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Operation-run reference.
    */
@@ -10009,23 +10009,23 @@ export interface OperationRun {
   /**
    * Production order this run belongs to.
    */
-  workOrder: number | WorkOrder;
+  workOrder: string | WorkOrder;
   /**
    * Routing step executed (carries seq + run time).
    */
-  routing?: (number | null) | Routing;
+  routing?: (string | null) | Routing;
   /**
    * Operation type (denormalised from the routing for fast filter).
    */
-  operation?: (number | null) | Operation;
+  operation?: (string | null) | Operation;
   /**
    * Work-center the run was performed at.
    */
-  workCenter?: (number | null) | WorkCenter;
+  workCenter?: (string | null) | WorkCenter;
   /**
    * Labor shift that performed the run (optional).
    */
-  workShift?: (number | null) | WorkShift;
+  workShift?: (string | null) | WorkShift;
   /**
    * Quantity released to this run.
    */
@@ -10079,8 +10079,8 @@ export interface OperationRun {
    */
   completedAt?: string | null;
   status?: ('draft' | 'ordered' | 'in_progress' | 'completed' | 'backordered' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10093,23 +10093,23 @@ export interface OperationRun {
  * via the `definition` "production-receipts".
  */
 export interface ProductionReceipt {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Receipt reference (e.g. `PR-2026-04-0001`).
    */
   reference: string;
-  workOrder: number | WorkOrder;
+  workOrder: string | WorkOrder;
   /**
    * Denormalised from work-order for fast filter.
    */
-  finishedGood: number | Item;
+  finishedGood: string | Item;
   receivedQuantity: number;
-  targetWarehouse: number | WarehouseLocation;
+  targetWarehouse: string | WarehouseLocation;
   /**
    * Production lot number — required for traceability per FDA / EU food / pharma.
    */
@@ -10153,14 +10153,14 @@ export interface ProductionReceipt {
   /**
    * Auto-created `inventory-movements` row of kind=`receipt` (production source).
    */
-  inventoryMovement?: (number | null) | InventoryMovement;
+  inventoryMovement?: (string | null) | InventoryMovement;
   /**
    * JE that books Dr Finished Goods / Cr WIP.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10173,18 +10173,18 @@ export interface ProductionReceipt {
  * via the `definition` "quality-inspections".
  */
 export interface QualityInspection {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Inspection reference (e.g. `QC-2026-04-0001`).
    */
   reference: string;
   inspectionType: 'incoming' | 'in_process' | 'final' | 'complaint' | 'calibration';
-  item: number | Item;
+  item: string | Item;
   inspectedQuantity: number;
   /**
    * For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.
@@ -10197,20 +10197,20 @@ export interface QualityInspection {
   /**
    * For in-process inspection — the WO this inspection ran against.
    */
-  workOrder?: (number | null) | WorkOrder;
+  workOrder?: (string | null) | WorkOrder;
   /**
    * For incoming inspection — the GRN this inspection covers.
    */
-  goodsReceipt?: (number | null) | GoodsReceipt;
+  goodsReceipt?: (string | null) | GoodsReceipt;
   /**
    * For final inspection — the shipment this inspection releases.
    */
-  shipment?: (number | null) | Shipment;
+  shipment?: (string | null) | Shipment;
   inspectionDate: string;
   /**
    * Inspector who performed the check.
    */
-  inspector?: (number | null) | User;
+  inspector?: (string | null) | User;
   outcome: 'pending' | 'passed' | 'failed' | 'conditional' | 'quarantined';
   /**
    * NCR detail — required when outcome = failed/conditional/quarantined.
@@ -10223,10 +10223,10 @@ export interface QualityInspection {
   /**
    * Auto-created `kind=write_off` movement for failed quantities.
    */
-  inventoryMovement?: (number | null) | InventoryMovement;
+  inventoryMovement?: (string | null) | InventoryMovement;
   status?: ('draft' | 'in_progress' | 'completed' | 'disputed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10239,18 +10239,18 @@ export interface QualityInspection {
  * via the `definition` "wip-snapshots".
  */
 export interface WipSnapshot {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Tenant-unique snapshot reference (e.g. WIP-2026-04-PRJ-001).
    */
   snapshotRef: string;
-  project: number | Project;
-  period: number | FiscalPeriod;
+  project: string | Project;
+  period: string | FiscalPeriod;
   /**
    * ISO 8601 — period-end date the snapshot freezes.
    */
@@ -10295,10 +10295,10 @@ export interface WipSnapshot {
   /**
    * The accrual JE that booked this snapshot's movement.
    */
-  periodEndAdjustment?: (number | null) | PeriodEndAdjustment;
+  periodEndAdjustment?: (string | null) | PeriodEndAdjustment;
   status?: ('draft' | 'reviewed' | 'posted' | 'reversed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10311,12 +10311,12 @@ export interface WipSnapshot {
  * via the `definition` "properties".
  */
 export interface Property {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Short code (e.g. `HQ-SOF`, `WHS-BER-01`).
    */
@@ -10339,7 +10339,7 @@ export interface Property {
    * Drives IAS-16 vs IFRS-16 vs management-revenue accounting.
    */
   tenure: 'owned' | 'leased' | 'managed' | 'sublet';
-  address: number | Address;
+  address: string | Address;
   /**
    * ISO 3166-1 alpha-2.
    */
@@ -10410,11 +10410,11 @@ export interface Property {
   /**
    * For owned property: the IAS-16 row that capitalises this property.
    */
-  fixedAsset?: (number | null) | FixedAsset;
+  fixedAsset?: (string | null) | FixedAsset;
   /**
    * For leased property: the IFRS-16 lease record.
    */
-  lease?: (number | null) | Lease;
+  lease?: (string | null) | Lease;
   energyCertificate?: {
     /**
      * EU EPBD energy-performance certificate band.
@@ -10431,8 +10431,8 @@ export interface Property {
    */
   bimReference?: string | null;
   status?: ('active' | 'construction' | 'vacant' | 'decommissioned' | 'disposed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10445,22 +10445,22 @@ export interface Property {
  * via the `definition` "spaces".
  */
 export interface Space {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Short code (e.g. `HQ-SOF-F03-R201`).
    */
   code: string;
   name: string;
-  property: number | Property;
+  property: string | Property;
   /**
    * Optional parent — supports hierarchical spaces (floor → wing → room → desk).
    */
-  parentSpace?: (number | null) | Space;
+  parentSpace?: (string | null) | Space;
   kind:
     | 'floor'
     | 'wing'
@@ -10529,14 +10529,14 @@ export interface Space {
   /**
    * Default cost-allocation GL account (e.g. for utility cross-charges).
    */
-  glAccount?: (number | null) | GlAccount;
+  glAccount?: (string | null) | GlAccount;
   /**
    * Cost-centre that absorbs occupancy costs for this space.
    */
-  costCenter?: (number | null) | CostCenter;
+  costCenter?: (string | null) | CostCenter;
   status?: ('active' | 'renovation' | 'vacant' | 'restricted' | 'decommissioned') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10549,12 +10549,12 @@ export interface Space {
  * via the `definition` "maintenance-requests".
  */
 export interface MaintenanceRequest {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential request reference (e.g. `MR-2026-04-001`).
    */
@@ -10578,23 +10578,23 @@ export interface MaintenanceRequest {
   /**
    * Property the issue is at.
    */
-  property?: (number | null) | Property;
+  property?: (string | null) | Property;
   /**
    * Specific space (room / desk / zone), if known.
    */
-  space?: (number | null) | Space;
+  space?: (string | null) | Space;
   /**
    * Specific asset (HVAC, lift, machinery) the issue concerns.
    */
-  fixedAsset?: (number | null) | FixedAsset;
+  fixedAsset?: (string | null) | FixedAsset;
   /**
    * When a bookable resource is impacted (vehicle / equipment / room).
    */
-  bookableResource?: (number | null) | BookableResource;
+  bookableResource?: (string | null) | BookableResource;
   /**
    * User who raised the request (occupant / FM operator / sensor-fed system user).
    */
-  reportedBy?: (number | null) | User;
+  reportedBy?: (string | null) | User;
   /**
    * Free-text name (for anonymous portal submissions).
    */
@@ -10624,11 +10624,11 @@ export interface MaintenanceRequest {
   /**
    * Work order this request was promoted to (set by triage).
    */
-  workOrder?: (number | null) | MaintenanceWorkOrder;
+  workOrder?: (string | null) | MaintenanceWorkOrder;
   /**
    * FM operator who triaged the request.
    */
-  triagedBy?: (number | null) | User;
+  triagedBy?: (string | null) | User;
   triagedAt?: string | null;
   closedAt?: string | null;
   /**
@@ -10636,8 +10636,8 @@ export interface MaintenanceRequest {
    */
   closureNote?: string | null;
   status?: ('new' | 'triaged' | 'assigned' | 'on_hold' | 'resolved' | 'rejected' | 'duplicate' | 'closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10650,12 +10650,12 @@ export interface MaintenanceRequest {
  * via the `definition` "bookable-resources".
  */
 export interface BookableResource {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Short code (e.g. `ROOM-201`, `VAN-03`, `LATHE-A`).
    */
@@ -10681,11 +10681,11 @@ export interface BookableResource {
   /**
    * For room-like resources, the FM space this resource lives in.
    */
-  space?: (number | null) | Space;
+  space?: (string | null) | Space;
   /**
    * For tangible bookables (vehicle / equipment / machinery), the underlying IAS-16 asset row.
    */
-  fixedAsset?: (number | null) | FixedAsset;
+  fixedAsset?: (string | null) | FixedAsset;
   /**
    * Concurrent occupancy (people for room, kg/m³ for storage, hours for time slot).
    */
@@ -10738,18 +10738,18 @@ export interface BookableResource {
   /**
    * Default revenue GL account for bookings of this resource.
    */
-  glAccount?: (number | null) | GlAccount;
+  glAccount?: (string | null) | GlAccount;
   /**
    * Default VAT / sales-tax code for bookings.
    */
-  taxCode?: (number | null) | TaxCode;
+  taxCode?: (string | null) | TaxCode;
   /**
    * ISO 3166-1 alpha-2 — drives tax + holiday calendar.
    */
   country?: string | null;
   status?: ('active' | 'out_of_service' | 'maintenance' | 'retired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10762,12 +10762,12 @@ export interface BookableResource {
  * via the `definition` "maintenance-work-orders".
  */
 export interface MaintenanceWorkOrder {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential work-order reference (e.g. `WO-2026-04-001`).
    */
@@ -10775,7 +10775,7 @@ export interface MaintenanceWorkOrder {
   /**
    * Source request (when promoted from a ticket).
    */
-  request?: (number | null) | MaintenanceRequest;
+  request?: (string | null) | MaintenanceRequest;
   subject: string;
   description?: string | null;
   workType:
@@ -10793,24 +10793,24 @@ export interface MaintenanceWorkOrder {
    * IAS-16 §12 vs §13 — drives whether cost hits OPEX or CAPEX (and thus depreciation schedule).
    */
   capitalisationTreatment: 'expense' | 'capitalise' | 'mixed';
-  property?: (number | null) | Property;
-  space?: (number | null) | Space;
+  property?: (string | null) | Property;
+  space?: (string | null) | Space;
   /**
    * When work targets a specific asset (HVAC, lift, machinery).
    */
-  fixedAsset?: (number | null) | FixedAsset;
+  fixedAsset?: (string | null) | FixedAsset;
   /**
    * When work targets a bookable resource (vehicle / equipment / room) — drives blocking of bookings during the window.
    */
-  bookableResource?: (number | null) | BookableResource;
+  bookableResource?: (string | null) | BookableResource;
   /**
    * FM technician or maintenance lead.
    */
-  assignedTo?: (number | null) | Employee;
+  assignedTo?: (string | null) | Employee;
   /**
    * External contractor (when outsourced).
    */
-  vendor?: (number | null) | Vendor;
+  vendor?: (string | null) | Vendor;
   /**
    * Planned start.
    */
@@ -10829,7 +10829,7 @@ export interface MaintenanceWorkOrder {
         unitOfMeasure?: string | null;
         unitCost?: number | null;
         lineCost?: number | null;
-        inventoryMovement?: (number | null) | InventoryMovement;
+        inventoryMovement?: (string | null) | InventoryMovement;
         id?: string | null;
       }[]
     | null;
@@ -10838,11 +10838,11 @@ export interface MaintenanceWorkOrder {
    */
   labour?:
     | {
-        employee?: (number | null) | Employee;
+        employee?: (string | null) | Employee;
         hours: number;
         hourlyCost?: number | null;
         lineCost?: number | null;
-        timeEntry?: (number | null) | TimeEntry;
+        timeEntry?: (string | null) | TimeEntry;
         id?: string | null;
       }[]
     | null;
@@ -10874,11 +10874,11 @@ export interface MaintenanceWorkOrder {
   /**
    * Optional FK to the post-work QC inspection.
    */
-  qualityInspection?: (number | null) | QualityInspection;
+  qualityInspection?: (string | null) | QualityInspection;
   /**
    * JE posted on completion (Dr Maintenance Expense / Cr Inventory + Accruals; or Dr PPE for capitalised).
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?:
     | (
         | 'planned'
@@ -10892,8 +10892,8 @@ export interface MaintenanceWorkOrder {
         | 'closed'
       )
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -10906,30 +10906,30 @@ export interface MaintenanceWorkOrder {
  * via the `definition` "bookings".
  */
 export interface Booking {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential booking reference (e.g. `BK-2026-04-001` or PMS confirmation number).
    */
   reference: string;
-  resource: number | BookableResource;
+  resource: string | BookableResource;
   guestType: 'customer' | 'employee' | 'address';
   /**
    * Required when guestType = `customer`.
    */
-  customer?: (number | null) | Customer;
+  customer?: (string | null) | Customer;
   /**
    * Required when guestType = `employee`.
    */
-  employee?: (number | null) | Employee;
+  employee?: (string | null) | Employee;
   /**
    * Required when guestType = `address`.
    */
-  address?: (number | null) | Address;
+  address?: (string | null) | Address;
   /**
    * Display name (denormalised for fast list views).
    */
@@ -10991,11 +10991,11 @@ export interface Booking {
   /**
    * Invoice raised at check-out (or pre-paid at confirmation).
    */
-  invoice?: (number | null) | Invoice;
+  invoice?: (string | null) | Invoice;
   /**
    * JE booked at check-out / no-show recognition.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?:
     | ('requested' | 'held' | 'confirmed' | 'checked_in' | 'checked_out' | 'settled' | 'no_show' | 'cancelled')
     | null;
@@ -11004,8 +11004,8 @@ export interface Booking {
   checkedOutAt?: string | null;
   cancelledAt?: string | null;
   cancelReason?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11018,12 +11018,12 @@ export interface Booking {
  * via the `definition` "carriers".
  */
 export interface Carrier {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Carrier code (e.g. `DHL`, `UPS`, `FEDEX`, `BG-POST`).
    */
@@ -11076,8 +11076,8 @@ export interface Carrier {
    */
   effectiveTo?: string | null;
   status?: ('active' | 'suspended' | 'terminated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11090,17 +11090,17 @@ export interface Carrier {
  * via the `definition` "tracking-events".
  */
 export interface TrackingEvent {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  shipment: number | Shipment;
+  tenant?: (string | null) | Tenant;
+  shipment: string | Shipment;
   /**
    * Denormalised from shipment for fast filter.
    */
-  carrier?: (number | null) | Carrier;
+  carrier?: (string | null) | Carrier;
   /**
    * Carrier-side tracking number (denormalised).
    */
@@ -11155,8 +11155,8 @@ export interface TrackingEvent {
    * Set to true when this `delivered` event triggered IFRS-15 §38 revenue recognition.
    */
   triggeredRevenueRecognition?: boolean | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11169,12 +11169,12 @@ export interface TrackingEvent {
  * via the `definition` "customs-declarations".
  */
 export interface CustomsDeclaration {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Movement Reference Number (UCC). Issued by customs after acceptance.
    */
@@ -11187,7 +11187,7 @@ export interface CustomsDeclaration {
     | 'temporary_admission'
     | 'inward_processing'
     | 'outward_processing';
-  shipment: number | Shipment;
+  shipment: string | Shipment;
   declarationDate: string;
   /**
    * ISO 3166-1 alpha-2 — country goods leave from.
@@ -11221,7 +11221,7 @@ export interface CustomsDeclaration {
     /**
      * The internal item — denormalised hsCode flows into `hsCode` for the declaration.
      */
-    item?: (number | null) | Item;
+    item?: (string | null) | Item;
     /**
      * Goods description per WCO HS (must match commercial invoice).
      */
@@ -11274,8 +11274,8 @@ export interface CustomsDeclaration {
    */
   releasedAt?: string | null;
   status?: ('draft' | 'submitted' | 'accepted' | 'held' | 'released' | 'rejected') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11288,12 +11288,12 @@ export interface CustomsDeclaration {
  * via the `definition` "consignment-arrangements".
  */
 export interface ConsignmentArrangement {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential arrangement reference (e.g. `CONS-2026-001`).
    */
@@ -11301,7 +11301,7 @@ export interface ConsignmentArrangement {
   /**
    * Counterparty holding the consigned goods on our behalf (distributor, retailer, 3PL).
    */
-  consignee: number | Address;
+  consignee: string | Address;
   /**
    * Denormalised name for fast filter / list display.
    */
@@ -11309,7 +11309,7 @@ export interface ConsignmentArrangement {
   /**
    * Optional FK if the consignee location is also tracked in `warehouse-locations` (type=`consignment`).
    */
-  consigneeWarehouseLocation?: (number | null) | WarehouseLocation;
+  consigneeWarehouseLocation?: (string | null) | WarehouseLocation;
   /**
    * ISO 8601 — start of the arrangement.
    */
@@ -11350,14 +11350,14 @@ export interface ConsignmentArrangement {
   /**
    * Optional FK to the IFRS-15 master contract that governs this arrangement.
    */
-  contract?: (number | null) | Contract;
+  contract?: (string | null) | Contract;
   /**
    * Signed PDF agreement (eIDAS PAdES) — auditor walk-through anchor.
    */
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
   status?: ('draft' | 'active' | 'suspended' | 'terminated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11370,21 +11370,21 @@ export interface ConsignmentArrangement {
  * via the `definition` "consignment-inventory".
  */
 export interface ConsignmentInventory {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Stable line id (e.g. `CINV-2026-04-001`).
    */
   lineId: string;
-  arrangement: number | ConsignmentArrangement;
+  arrangement: string | ConsignmentArrangement;
   /**
    * Specific consignee location for multi-location consignees.
    */
-  consigneeWarehouseLocation?: (number | null) | WarehouseLocation;
+  consigneeWarehouseLocation?: (string | null) | WarehouseLocation;
   /**
    * Item SKU / material code. Free-text until an items collection lands.
    */
@@ -11426,10 +11426,10 @@ export interface ConsignmentInventory {
   /**
    * Inventory GL account this consignment row maps to (typically a sub-account of 1300 — Inventory at Consignee).
    */
-  glAccount?: (number | null) | GlAccount;
+  glAccount?: (string | null) | GlAccount;
   status?: ('active' | 'frozen' | 'reconciled' | 'written_off') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11442,21 +11442,21 @@ export interface ConsignmentInventory {
  * via the `definition` "consignment-sales".
  */
 export interface ConsignmentSale {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sale reference reported by the consignee (e.g. `CSALE-2026-04-001`).
    */
   reference: string;
-  arrangement: number | ConsignmentArrangement;
+  arrangement: string | ConsignmentArrangement;
   /**
    * Source inventory row this sale draws from.
    */
-  consignmentInventory: number | ConsignmentInventory;
+  consignmentInventory: string | ConsignmentInventory;
   /**
    * ISO 8601 — date the consignee sold to the end-customer (this is the IFRS-15 §B78 control-transfer date).
    */
@@ -11499,14 +11499,14 @@ export interface ConsignmentSale {
   /**
    * Invoice the consignor raises against the consignee for the sale.
    */
-  invoice?: (number | null) | Invoice;
+  invoice?: (string | null) | Invoice;
   /**
    * JE that booked the revenue + COGS + commission entries.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('reported' | 'validated' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11519,12 +11519,12 @@ export interface ConsignmentSale {
  * via the `definition` "audit-events".
  */
 export interface AuditEvent {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — canonical event identifier. Carried in DomainEvent.eventId from the emitter; persisted here for SOX §404 / ISO 19011 §6.4.6 unique traceability.
    */
@@ -11556,7 +11556,7 @@ export interface AuditEvent {
   /**
    * Actor who performed the action.
    */
-  user?: (number | null) | User;
+  user?: (string | null) | User;
   /**
    * Status before the change (for status transitions). Maps to canonical AuditEntry.previousStatus.
    */
@@ -11642,12 +11642,12 @@ export interface AuditEvent {
  * via the `definition` "api-audit-events".
  */
 export interface ApiAuditEvent {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Stable id (e.g. APIE-2026-05-09-001 or a UUID).
    */
@@ -11705,8 +11705,8 @@ export interface ApiAuditEvent {
     | number
     | boolean
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -11717,16 +11717,16 @@ export interface ApiAuditEvent {
  * via the `definition` "entity-legal-structures".
  */
 export interface EntityLegalStructure {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
   legalCode: string;
-  entityType: number | EntityType;
-  jurisdiction: number | TaxingJurisdiction;
+  entityType: string | EntityType;
+  jurisdiction: string | TaxingJurisdiction;
   description?: {
     root: {
       type: string;
@@ -11751,12 +11751,12 @@ export interface EntityLegalStructure {
  * via the `definition` "internal-controls".
  */
 export interface InternalControl {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   controlName: string;
   controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
   controlCategory:
@@ -11796,13 +11796,13 @@ export interface InternalControl {
  * via the `definition` "control-tests".
  */
 export interface ControlTest {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  control: number | InternalControl;
+  tenant?: (string | null) | Tenant;
+  control: string | InternalControl;
   testName: string;
   testDesign?: {
     root: {
@@ -11833,13 +11833,13 @@ export interface ControlTest {
  * via the `definition` "audit-samples".
  */
 export interface AuditSample {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  controlTest: number | ControlTest;
+  tenant?: (string | null) | Tenant;
+  controlTest: string | ControlTest;
   itemIdentifier: string;
   sampleItemType:
     | 'invoice'
@@ -11871,7 +11871,7 @@ export interface AuditSample {
     };
     [k: string]: unknown;
   } | null;
-  evidence?: (number | AuditEvidence)[] | null;
+  evidence?: (string | AuditEvidence)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11880,12 +11880,12 @@ export interface AuditSample {
  * via the `definition` "audit-trail-events".
  */
 export interface AuditTrailEvent {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   operation: 'create' | 'update' | 'delete';
   collectionName: string;
   documentId: string;
@@ -11949,19 +11949,19 @@ export interface AuditTrailEvent {
  * via the `definition` "audit-committees".
  */
 export interface AuditCommittee {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   name: string;
-  entity: number | LegalEntity;
-  charter?: (number | null) | Media;
+  entity: string | LegalEntity;
+  charter?: (string | null) | Media;
   establishedDate: string;
   meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
   status?: ('active' | 'inactive' | 'dissolved') | null;
-  members?: (number | AuditCommitteeMember)[] | null;
+  members?: (string | AuditCommitteeMember)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -11970,13 +11970,13 @@ export interface AuditCommittee {
  * via the `definition` "audit-committee-members".
  */
 export interface AuditCommitteeMember {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  committee: number | AuditCommittee;
+  tenant?: (string | null) | Tenant;
+  committee: string | AuditCommittee;
   memberName: string;
   title?: string | null;
   affiliation: 'internal' | 'external' | 'independent';
@@ -11998,13 +11998,13 @@ export interface AuditCommitteeMember {
  * via the `definition` "board-actions".
  */
 export interface BoardAction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   actionTitle: string;
   description?: {
     root: {
@@ -12036,8 +12036,8 @@ export interface BoardAction {
     votesAgainst?: number | null;
     abstentions?: number | null;
   };
-  minutes?: (number | null) | Media;
-  relatedControls?: (number | InternalControl)[] | null;
+  minutes?: (string | null) | Media;
+  relatedControls?: (string | InternalControl)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12046,13 +12046,13 @@ export interface BoardAction {
  * via the `definition` "management-certifications".
  */
 export interface ManagementCertification {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   certificationName: string;
   certifyingOfficer: string;
   certificationDate: string;
@@ -12079,8 +12079,8 @@ export interface ManagementCertification {
         id?: string | null;
       }[]
     | null;
-  relatedFindings?: (number | AuditFinding)[] | null;
-  signedDocument?: (number | null) | Media;
+  relatedFindings?: (string | AuditFinding)[] | null;
+  signedDocument?: (string | null) | Media;
   status?: ('current' | 'expired' | 'superseded') | null;
   updatedAt: string;
   createdAt: string;
@@ -12090,16 +12090,16 @@ export interface ManagementCertification {
  * via the `definition` "regulatory-reports".
  */
 export interface RegulatoryReport {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   reportName: string;
-  reportingStandard?: (number | null) | ComplianceFramework;
-  jurisdiction: number | TaxingJurisdiction;
+  reportingStandard?: (string | null) | ComplianceFramework;
+  jurisdiction: string | TaxingJurisdiction;
   reportType:
     | 'annual-filing'
     | 'quarterly-filing'
@@ -12114,7 +12114,7 @@ export interface RegulatoryReport {
   dueDate: string;
   submissionDate?: string | null;
   status: 'draft' | 'in-review' | 'submitted' | 'accepted' | 'rejected' | 'overdue';
-  reportDocument?: (number | null) | Media;
+  reportDocument?: (string | null) | Media;
   regulatoryFeedback?: {
     root: {
       type: string;
@@ -12130,7 +12130,7 @@ export interface RegulatoryReport {
     };
     [k: string]: unknown;
   } | null;
-  findings?: (number | AuditFinding)[] | null;
+  findings?: (string | AuditFinding)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12139,12 +12139,12 @@ export interface RegulatoryReport {
  * via the `definition` "internal-policies".
  */
 export interface InternalPolicy {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   policyName: string;
   policyNumber: string;
   description?: {
@@ -12176,8 +12176,8 @@ export interface InternalPolicy {
   lastReviewDate?: string | null;
   nextReviewDate?: string | null;
   status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
-  policyDocument?: (number | null) | Media;
-  applicableControls?: (number | InternalControl)[] | null;
+  policyDocument?: (string | null) | Media;
+  applicableControls?: (string | InternalControl)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12186,16 +12186,16 @@ export interface InternalPolicy {
  * via the `definition` "statutory-report-templates".
  */
 export interface StatutoryReportTemplate {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   templateName: string;
-  jurisdiction: number | TaxingJurisdiction;
+  jurisdiction: string | TaxingJurisdiction;
   reportType: 'annual-report' | 'tax-return' | 'regulatory-filing' | 'financial-statements' | 'audit-report';
-  entityType?: (number | null) | EntityType;
+  entityType?: (string | null) | EntityType;
   sections?:
     | {
         sectionName?: string | null;
@@ -12204,7 +12204,7 @@ export interface StatutoryReportTemplate {
         id?: string | null;
       }[]
     | null;
-  templateDocument?: (number | null) | Media;
+  templateDocument?: (string | null) | Media;
   effectiveFrom: string;
   effectiveTo?: string | null;
   updatedAt: string;
@@ -12215,14 +12215,14 @@ export interface StatutoryReportTemplate {
  * via the `definition` "statutory-field-mappings".
  */
 export interface StatutoryFieldMapping {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   mappingName: string;
-  reportTemplate: number | StatutoryReportTemplate;
+  reportTemplate: string | StatutoryReportTemplate;
   fieldName: string;
   fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
   sourceCollection?: string | null;
@@ -12266,13 +12266,13 @@ export interface StatutoryFieldMapping {
  * via the `definition` "policy-versions".
  */
 export interface PolicyVersion {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  policy: number | InternalPolicy;
+  tenant?: (string | null) | Tenant;
+  policy: string | InternalPolicy;
   versionNumber: string;
   versionName: string;
   releaseDate: string;
@@ -12291,7 +12291,7 @@ export interface PolicyVersion {
     };
     [k: string]: unknown;
   } | null;
-  documentUrl?: (number | null) | Media;
+  documentUrl?: (string | null) | Media;
   status?: ('draft' | 'final' | 'superseded' | 'archived') | null;
   updatedAt: string;
   createdAt: string;
@@ -12301,19 +12301,19 @@ export interface PolicyVersion {
  * via the `definition` "policy-acknowledgments".
  */
 export interface PolicyAcknowledgment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  policy: number | InternalPolicy;
-  policyVersion?: (number | null) | PolicyVersion;
+  tenant?: (string | null) | Tenant;
+  policy: string | InternalPolicy;
+  policyVersion?: (string | null) | PolicyVersion;
   employeeName: string;
   employeeId?: string | null;
   acknowledgedDate: string;
   acknowledgedBy?: string | null;
-  signedDocument?: (number | null) | Media;
+  signedDocument?: (string | null) | Media;
   status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
   updatedAt: string;
   createdAt: string;
@@ -12323,13 +12323,13 @@ export interface PolicyAcknowledgment {
  * via the `definition` "compliance-deadlines".
  */
 export interface ComplianceDeadline {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   deadlineName: string;
   deadlineType:
     | 'filing-deadline'
@@ -12338,8 +12338,8 @@ export interface ComplianceDeadline {
     | 'reporting-deadline'
     | 'payment-deadline'
     | 'disclosure-deadline';
-  jurisdiction?: (number | null) | TaxingJurisdiction;
-  requirement?: (number | null) | ComplianceRequirement;
+  jurisdiction?: (string | null) | TaxingJurisdiction;
+  requirement?: (string | null) | ComplianceRequirement;
   dueDate: string;
   submissionDate?: string | null;
   status?: ('on-track' | 'at-risk' | 'overdue' | 'submitted' | 'completed') | null;
@@ -12353,13 +12353,13 @@ export interface ComplianceDeadline {
  * via the `definition` "compliance-notifications".
  */
 export interface ComplianceNotification {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  deadline: number | ComplianceDeadline;
+  tenant?: (string | null) | Tenant;
+  deadline: string | ComplianceDeadline;
   notificationTitle: string;
   notificationContent?: {
     root: {
@@ -12395,16 +12395,16 @@ export interface ComplianceNotification {
  * via the `definition` "reporting-standards".
  */
 export interface ReportingStandard {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   standardName: string;
   standardCode: string;
   standardType: 'gaap' | 'ifrs' | 'sox' | 'tax' | 'other';
-  jurisdiction?: (number | null) | TaxingJurisdiction;
+  jurisdiction?: (string | null) | TaxingJurisdiction;
   description?: {
     root: {
       type: string;
@@ -12422,7 +12422,7 @@ export interface ReportingStandard {
   } | null;
   version?: string | null;
   effectiveDate: string;
-  referenceMaterial?: (number | null) | Media;
+  referenceMaterial?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -12431,15 +12431,15 @@ export interface ReportingStandard {
  * via the `definition` "reporting-mappings".
  */
 export interface ReportingMapping {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   mappingName: string;
-  fromStandard: number | ReportingStandard;
-  toStandard: number | ReportingStandard;
+  fromStandard: string | ReportingStandard;
+  toStandard: string | ReportingStandard;
   mappingType: 'account-mapping' | 'line-item-mapping' | 'disclosure-mapping' | 'metric-mapping';
   mappingRules?:
     | {
@@ -12472,13 +12472,13 @@ export interface ReportingMapping {
  * via the `definition` "related-party-transactions".
  */
 export interface RelatedPartyTransaction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   relatedPartyName: string;
   relatedPartyType:
     | 'key-management'
@@ -12584,8 +12584,8 @@ export interface RelatedPartyTransaction {
   /**
    * Controls designed to prevent unauthorized related party transactions.
    */
-  relatedControls?: (number | InternalControl)[] | null;
-  evidence?: (number | AuditEvidence)[] | null;
+  relatedControls?: (string | InternalControl)[] | null;
+  evidence?: (string | AuditEvidence)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12594,13 +12594,13 @@ export interface RelatedPartyTransaction {
  * via the `definition` "management-assessment-icfr".
  */
 export interface ManagementAssessmentIcfr {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   /**
    * Fiscal period (e.g., "FY 2026", "Q4 2026").
    */
@@ -12797,16 +12797,16 @@ export interface ManagementAssessmentIcfr {
         title: string;
         name: string;
         signatureDate: string;
-        signatureDocument?: (number | null) | Media;
+        signatureDocument?: (string | null) | Media;
         id?: string | null;
       }[]
     | null;
   /**
    * Auditor attestation report (SOX 404(b) for accelerated filers).
    */
-  attestationDocument?: (number | null) | Media;
-  relatedAuditFindings?: (number | AuditFinding)[] | null;
-  relatedControlTests?: (number | ControlTest)[] | null;
+  attestationDocument?: (string | null) | Media;
+  relatedAuditFindings?: (string | AuditFinding)[] | null;
+  relatedControlTests?: (string | ControlTest)[] | null;
   status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
   updatedAt: string;
   createdAt: string;
@@ -12816,18 +12816,18 @@ export interface ManagementAssessmentIcfr {
  * via the `definition` "disclosure-checklists".
  */
 export interface DisclosureChecklist {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   /**
    * E.g., "IFRS 12 Group Disclosure Checklist - FY 2026".
    */
   checklistName: string;
-  standard: number | ComplianceFramework;
+  standard: string | ComplianceFramework;
   /**
    * IFRS standard reference (e.g., "IFRS 12 §B4-B6", "IAS 1 §138").
    */
@@ -12893,7 +12893,7 @@ export interface DisclosureChecklist {
     /**
      * Supporting documentation (note reference, GL printout, etc.).
      */
-    relatedEvidence?: (number | AuditEvidence)[] | null;
+    relatedEvidence?: (string | AuditEvidence)[] | null;
     id?: string | null;
   }[];
   /**
@@ -12909,7 +12909,7 @@ export interface DisclosureChecklist {
   /**
    * Formal checklist workpaper (PDF).
    */
-  checklistDocument?: (number | null) | Media;
+  checklistDocument?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -12918,14 +12918,14 @@ export interface DisclosureChecklist {
  * via the `definition` "audit-committee-minutes".
  */
 export interface AuditCommitteeMinute {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  auditCommittee: number | AuditCommittee;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  auditCommittee: string | AuditCommittee;
+  entity: string | LegalEntity;
   /**
    * E.g., "Audit Committee Meeting - Q4 2026".
    */
@@ -13109,15 +13109,15 @@ export interface AuditCommitteeMinute {
   /**
    * Resolutions or actions resulting from this meeting.
    */
-  relatedBoardActions?: (number | BoardAction)[] | null;
+  relatedBoardActions?: (string | BoardAction)[] | null;
   /**
    * Audit findings discussed.
    */
-  relatedAuditFindings?: (number | AuditFinding)[] | null;
+  relatedAuditFindings?: (string | AuditFinding)[] | null;
   /**
    * Compliance gaps discussed.
    */
-  relatedComplianceGaps?: (number | ComplianceGap)[] | null;
+  relatedComplianceGaps?: (string | ComplianceGap)[] | null;
   minutesStatus: 'draft' | 'pending-approval' | 'approved' | 'filed';
   /**
    * Chair or designated approver.
@@ -13127,7 +13127,7 @@ export interface AuditCommitteeMinute {
   /**
    * Formal minutes document (PDF).
    */
-  minutesDocument?: (number | null) | Media;
+  minutesDocument?: (string | null) | Media;
   confidentiality?: ('confidential' | 'internal' | 'public') | null;
   updatedAt: string;
   createdAt: string;
@@ -13137,13 +13137,13 @@ export interface AuditCommitteeMinute {
  * via the `definition` "risk-register".
  */
 export interface RiskRegister {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   /**
    * Unique risk identifier (e.g., "FIN-001", "OPS-022").
    */
@@ -13201,7 +13201,7 @@ export interface RiskRegister {
   /**
    * Controls in place to mitigate this risk.
    */
-  mitigatingControls: (number | InternalControl)[];
+  mitigatingControls: (string | InternalControl)[];
   residualRiskLikelihood: 'remote' | 'low' | 'moderate' | 'high' | 'almost-certain';
   residualRiskImpact: 'negligible' | 'minor' | 'moderate' | 'major' | 'catastrophic';
   /**
@@ -13246,15 +13246,15 @@ export interface RiskRegister {
     };
     [k: string]: unknown;
   } | null;
-  relatedComplianceRequirements?: (number | ComplianceRequirement)[] | null;
-  relatedAuditFindings?: (number | AuditFinding)[] | null;
+  relatedComplianceRequirements?: (string | ComplianceRequirement)[] | null;
+  relatedAuditFindings?: (string | AuditFinding)[] | null;
   lastAssessmentDate: string;
   nextAssessmentDate: string;
   riskStatus: 'active' | 'monitoring' | 'under-mitigation' | 'mitigated' | 'closed';
   /**
    * Heat map or formal risk register extract (PDF).
    */
-  riskRegisterDocument?: (number | null) | Media;
+  riskRegisterDocument?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -13263,13 +13263,13 @@ export interface RiskRegister {
  * via the `definition` "debt-schedule".
  */
 export interface DebtSchedule {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   /**
    * E.g., "Senior Term Loan Facility", "10-Year Bonds 2030".
    */
@@ -13444,11 +13444,11 @@ export interface DebtSchedule {
   /**
    * Subsidiaries or parent guaranteeing this debt.
    */
-  guarantees?: (number | LegalEntity)[] | null;
+  guarantees?: (string | LegalEntity)[] | null;
   /**
    * FX hedging instruments if multi-currency.
    */
-  fxHedges?: (number | FxTransaction)[] | null;
+  fxHedges?: (string | FxTransaction)[] | null;
   'lastCovenant ComplianceTest'?: string | null;
   nextCovenantTest?: string | null;
   /**
@@ -13469,12 +13469,12 @@ export interface DebtSchedule {
     };
     [k: string]: unknown;
   } | null;
-  relatedControls?: (number | InternalControl)[] | null;
+  relatedControls?: (string | InternalControl)[] | null;
   debtStatus: 'active' | 'performing' | 'breach-cure' | 'breach-waived' | 'repaid' | 'refinanced';
   /**
    * Loan agreement, bond indenture, lease agreement (PDF).
    */
-  debtAgreement?: (number | null) | Media;
+  debtAgreement?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -13483,13 +13483,13 @@ export interface DebtSchedule {
  * via the `definition` "internal-audit-function".
  */
 export interface InternalAuditFunction {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   /**
    * E.g., "Internal Audit Department".
    */
@@ -13529,7 +13529,7 @@ export interface InternalAuditFunction {
   /**
    * Primary audit committee for governance oversight.
    */
-  auditCommittee?: (number | null) | AuditCommittee;
+  auditCommittee?: (string | null) | AuditCommittee;
   /**
    * Number of internal audit staff.
    */
@@ -13564,7 +13564,7 @@ export interface InternalAuditFunction {
   /**
    * Annual audit plan (PDF).
    */
-  auditPlanDocument?: (number | null) | Media;
+  auditPlanDocument?: (string | null) | Media;
   auditEngagements?:
     | {
         engagementName: string;
@@ -13594,11 +13594,11 @@ export interface InternalAuditFunction {
   /**
    * Links to minutes where audit reports were presented.
    */
-  auditReports?: (number | AuditCommitteeMinute)[] | null;
+  auditReports?: (string | AuditCommitteeMinute)[] | null;
   /**
    * Findings from internal audit engagements.
    */
-  auditFindings?: (number | AuditFinding)[] | null;
+  auditFindings?: (string | AuditFinding)[] | null;
   followUpTracking?:
     | {
         findingReference: string;
@@ -13741,7 +13741,7 @@ export interface InternalAuditFunction {
   /**
    * Formal audit charter (PDF).
    */
-  charterDocument?: (number | null) | Media;
+  charterDocument?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -13750,13 +13750,13 @@ export interface InternalAuditFunction {
  * via the `definition` "segment-reporting".
  */
 export interface SegmentReporting {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  entity: number | LegalEntity;
+  tenant?: (string | null) | Tenant;
+  entity: string | LegalEntity;
   segmentationBasis: 'operating' | 'geographic' | 'business-line' | 'customer-product';
   reportingStandard: 'ifrs-8' | 'asc-280';
   /**
@@ -13913,11 +13913,11 @@ export interface SegmentReporting {
   /**
    * Links to IFRS 8 disclosure checklists for this segment.
    */
-  relatedDisclosures?: (number | DisclosureChecklist)[] | null;
+  relatedDisclosures?: (string | DisclosureChecklist)[] | null;
   /**
    * Segment reporting note or schedule (PDF).
    */
-  segmentReportingDocument?: (number | null) | Media;
+  segmentReportingDocument?: (string | null) | Media;
   reportingStatus: 'under-preparation' | 'pending-review' | 'reviewed' | 'reported';
   updatedAt: string;
   createdAt: string;
@@ -13927,14 +13927,14 @@ export interface SegmentReporting {
  * via the `definition` "data-subject-requests".
  */
 export interface DataSubjectRequest {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   requestId: string;
-  dataSubject: number | User;
+  dataSubject: string | User;
   requestType: 'access' | 'rectification' | 'erasure' | 'restriction' | 'portability' | 'object' | 'withdraw_consent';
   requestDetail?: string | null;
   submittedAt: string;
@@ -13970,9 +13970,9 @@ export interface DataSubjectRequest {
   /**
    * DPO or staff member handling this request.
    */
-  handler?: (number | null) | User;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  handler?: (string | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -13983,12 +13983,12 @@ export interface DataSubjectRequest {
  * via the `definition` "data-processing-activities".
  */
 export interface DataProcessingActivity {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   activityName: string;
   purpose: string;
   controllerOrProcessor: 'controller' | 'processor' | 'joint_controller';
@@ -14044,9 +14044,9 @@ export interface DataProcessingActivity {
   /**
    * Data Protection Officer responsible for this activity.
    */
-  dpo?: (number | null) | User;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  dpo?: (string | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14057,15 +14057,15 @@ export interface DataProcessingActivity {
  * via the `definition` "kyc-checks".
  */
 export interface KycCheck {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   checkId: string;
   subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
-  subject: number | Customer;
+  subject: string | Customer;
   cddLevel: 'sdd' | 'cdd' | 'edd';
   identityDocuments?:
     | {
@@ -14110,8 +14110,8 @@ export interface KycCheck {
    * AMLD-6 ongoing monitoring.
    */
   nextReviewDue?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14122,16 +14122,16 @@ export interface KycCheck {
  * via the `definition` "beneficial-owners".
  */
 export interface BeneficialOwner {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Legal entity whose UBO this is (AMLD-5 Art.30 / US CTA register subject).
    */
-  entity: number | LegalEntity;
+  entity: string | LegalEntity;
   fullName: string;
   dateOfBirth?: string | null;
   /**
@@ -14139,19 +14139,19 @@ export interface BeneficialOwner {
    */
   nationality?: string | null;
   residenceCountry?: string | null;
-  residenceAddress?: (number | null) | Address;
+  residenceAddress?: (string | null) | Address;
   /**
    * AMLD threshold typically 25%.
    */
   ownershipPercent?: number | null;
   controlType: 'direct_ownership' | 'indirect_ownership' | 'voting_rights' | 'board_appointment' | 'other_control';
   pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
-  kycCheck?: (number | null) | KycCheck;
+  kycCheck?: (string | null) | KycCheck;
   status?: ('active' | 'pending' | 'resigned') | null;
   effectiveFrom?: string | null;
   effectiveTo?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14164,16 +14164,16 @@ export interface BeneficialOwner {
  * via the `definition` "csrd-disclosures".
  */
 export interface CsrdDisclosure {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Reporting legal entity (CSRD applies at consolidated + subsidiary level under different conditions).
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   /**
    * EFRAG ESRS datapoint identifier (e.g. ESRS-E1-6-1, ESRS-S1-9-2).
    */
@@ -14231,15 +14231,15 @@ export interface CsrdDisclosure {
   /**
    * Signed PDF evidence pack for the disclosure (audit walk-through anchor).
    */
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
   /**
    * EU Taxonomy 2020/852 eligibility flag (for E1-E2 environmental KPIs).
    */
   isEUTaxonomyEligible?: boolean | null;
   isEUTaxonomyAligned?: boolean | null;
   status?: ('draft' | 'under_review' | 'approved' | 'filed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14252,19 +14252,19 @@ export interface CsrdDisclosure {
  * via the `definition` "carbon-emissions".
  */
 export interface CarbonEmission {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
   /**
    * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   reportingYear: number;
-  reportingPeriod?: (number | null) | FiscalPeriod;
+  reportingPeriod?: (string | null) | FiscalPeriod;
   /**
    * GHG Protocol scope per Corporate Standard §6.
    */
@@ -14348,14 +14348,14 @@ export interface CarbonEmission {
   isVerified?: boolean | null;
   verifierName?: string | null;
   verificationDate?: string | null;
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
   /**
    * EU CBAM (Carbon Border Adjustment Mechanism) relevance flag for cross-border carbon-intensive goods.
    */
   cbamRelevant?: boolean | null;
   status?: ('draft' | 'submitted' | 'verified' | 'filed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14368,12 +14368,12 @@ export interface CarbonEmission {
  * via the `definition` "biological-assets".
  */
 export interface BiologicalAsset {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. BIO-2026-001).
    */
@@ -14418,11 +14418,11 @@ export interface BiologicalAsset {
   priceChangeGainLoss?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   maturityStage?: ('immature' | 'mature' | 'old') | null;
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
+  fairValueMeasurement?: (string | null) | FairValueMeasurement;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('active' | 'harvested' | 'sold' | 'lost') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14435,12 +14435,12 @@ export interface BiologicalAsset {
  * via the `definition` "fair-value-measurements".
  */
 export interface FairValueMeasurement {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. FV-2026-Q1-001).
    */
@@ -14500,11 +14500,11 @@ export interface FairValueMeasurement {
   /**
    * Signed PDF valuation report (eIDAS PAdES).
    */
-  valuationReport?: (number | null) | EvidenceAttestation;
-  journalEntry?: (number | null) | JournalEntry;
+  valuationReport?: (string | null) | EvidenceAttestation;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'validated' | 'posted' | 'superseded') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14517,12 +14517,12 @@ export interface FairValueMeasurement {
  * via the `definition` "mineral-resource-assets".
  */
 export interface MineralResourceAsset {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. EE-2026-001).
    */
@@ -14563,8 +14563,8 @@ export interface MineralResourceAsset {
   impairmentLoss?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   status?: ('exploring' | 'evaluating' | 'reclassified' | 'impaired' | 'abandoned') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14577,17 +14577,17 @@ export interface MineralResourceAsset {
  * via the `definition` "investment-properties".
  */
 export interface InvestmentProperty {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. IP-2026-001).
    */
   reference: string;
-  property: number | Property;
+  property: string | Property;
   acquisitionDate: string;
   /**
    * IAS 40 §20-§29 — purchase price + directly attributable costs (cents).
@@ -14623,15 +14623,15 @@ export interface InvestmentProperty {
   /**
    * When the IP is leased OUT to a tenant (lessor side).
    */
-  lease?: (number | null) | Lease;
+  lease?: (string | null) | Lease;
   /**
    * IFRS 13 hierarchy classification (Level 1/2/3).
    */
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
+  fairValueMeasurement?: (string | null) | FairValueMeasurement;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('active' | 'construction' | 'vacant' | 'transferred_out' | 'disposed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14644,12 +14644,12 @@ export interface InvestmentProperty {
  * via the `definition` "government-grants".
  */
 export interface GovernmentGrant {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
   grantName: string;
   /**
@@ -14663,7 +14663,7 @@ export interface GovernmentGrant {
   /**
    * Recipient legal entity.
    */
-  legalEntity?: (number | null) | LegalEntity;
+  legalEntity?: (string | null) | LegalEntity;
   grantType:
     | 'cash_income'
     | 'cash_capital'
@@ -14720,7 +14720,7 @@ export interface GovernmentGrant {
   /**
    * IAS-20 §32 — provision for repayment when condition-breach probability ≥ 50%.
    */
-  clawbackProvision?: (number | null) | Provision;
+  clawbackProvision?: (string | null) | Provision;
   /**
    * EU CSRD ESRS 2 traceability — flags grants requiring EU traceability disclosure.
    */
@@ -14732,10 +14732,10 @@ export interface GovernmentGrant {
   /**
    * For capital grants under net-against-asset method, the asset whose carrying amount is reduced.
    */
-  relatedAsset?: (number | null) | FixedAsset;
+  relatedAsset?: (string | null) | FixedAsset;
   status?: ('awarded' | 'active' | 'conditions_met' | 'fully_recognised' | 'repayable' | 'repaid' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14748,12 +14748,12 @@ export interface GovernmentGrant {
  * via the `definition` "deferred-tax-items".
  */
 export interface DeferredTaxItem {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. DT-2026-04-001).
    */
@@ -14774,7 +14774,7 @@ export interface DeferredTaxItem {
   /**
    * Tax jurisdiction whose rate applies.
    */
-  jurisdiction: number | TaxJurisdiction;
+  jurisdiction: string | TaxJurisdiction;
   /**
    * Carrying amount − Tax base (cents). Positive ⇒ taxable; negative ⇒ deductible.
    */
@@ -14800,10 +14800,10 @@ export interface DeferredTaxItem {
   /**
    * JE that booked the deferred-tax accrual or reversal.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'recognised' | 'reversed' | 'derecognised') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14816,17 +14816,17 @@ export interface DeferredTaxItem {
  * via the `definition` "share-based-payments".
  */
 export interface ShareBasedPayment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential grant reference (e.g. EQ-2026-001).
    */
   reference: string;
-  employee: number | Employee;
+  employee: string | Employee;
   awardType: 'stock_option' | 'rsu' | 'rsa' | 'psu' | 'espp' | 'sar' | 'phantom';
   settlementType: 'equity' | 'cash';
   grantDate: string;
@@ -14890,10 +14890,10 @@ export interface ShareBasedPayment {
   unitsExercised?: number | null;
   unitsForfeited?: number | null;
   unitsCancelled?: number | null;
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('granted' | 'vesting' | 'vested' | 'exercised' | 'forfeited' | 'cancelled' | 'expired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -14906,12 +14906,12 @@ export interface ShareBasedPayment {
  * via the `definition` "business-combinations".
  */
 export interface BusinessCombination {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential deal reference (e.g. MA-2026-001).
    */
@@ -14920,7 +14920,7 @@ export interface BusinessCombination {
   /**
    * Acquired entity once registered in legal-entities (post-close).
    */
-  acquireeLegalEntity?: (number | null) | LegalEntity;
+  acquireeLegalEntity?: (string | null) | LegalEntity;
   dealType: 'asset_deal' | 'share_deal' | 'reverse' | 'step' | 'common_control';
   /**
    * IFRS 3 §8 — date control is obtained.
@@ -14995,14 +14995,14 @@ export interface BusinessCombination {
    * IFRS 3 §53 — expensed (NOT capitalised into goodwill).
    */
   transactionCosts?: number | null;
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   /**
    * Signed PPA report (eIDAS PAdES) — auditor walk-through anchor.
    */
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
   status?: ('signed' | 'closed' | 'ppa_provisional' | 'ppa_final' | 'measurement_closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15015,12 +15015,12 @@ export interface BusinessCombination {
  * via the `definition` "held-for-sale-classifications".
  */
 export interface HeldForSaleClassification {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. HFS-2026-Q1-001).
    */
@@ -15059,11 +15059,11 @@ export interface HeldForSaleClassification {
   actualSaleDate?: string | null;
   actualSaleProceeds?: number | null;
   gainLossOnDisposal?: number | null;
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
+  fairValueMeasurement?: (string | null) | FairValueMeasurement;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('classified' | 'remeasured' | 'sale_pending' | 'sold' | 'reclassified') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15076,17 +15076,17 @@ export interface HeldForSaleClassification {
  * via the `definition` "earnings-per-share".
  */
 export interface EarningsPerShare {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. EPS-2026-Q1).
    */
   reference: string;
-  period: number | FiscalPeriod;
+  period: string | FiscalPeriod;
   periodEnd: string;
   /**
    * IAS 33 §12 — net profit/loss attributable to ordinary equity holders (cents).
@@ -15149,8 +15149,8 @@ export interface EarningsPerShare {
       }[]
     | null;
   status?: ('draft' | 'computed' | 'published' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15163,12 +15163,12 @@ export interface EarningsPerShare {
  * via the `definition` "insurance-contracts".
  */
 export interface InsuranceContract {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. INS-2026-001).
    */
@@ -15222,12 +15222,12 @@ export interface InsuranceContract {
   /**
    * For reinsurance-held: link to the underlying gross contract.
    */
-  reinsuranceContract?: (number | null) | InsuranceContract;
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
+  reinsuranceContract?: (string | null) | InsuranceContract;
+  fairValueMeasurement?: (string | null) | FairValueMeasurement;
+  journalEntry?: (string | null) | JournalEntry;
   status?: ('recognised' | 'in_coverage' | 'runoff' | 'derecognised') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15240,12 +15240,12 @@ export interface InsuranceContract {
  * via the `definition` "regulatory-deferral-accounts".
  */
 export interface RegulatoryDeferralAccount {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. RDA-2026-001).
    */
@@ -15270,8 +15270,8 @@ export interface RegulatoryDeferralAccount {
   movementInPeriod?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   status?: ('active' | 'recovering' | 'recovered') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15284,17 +15284,17 @@ export interface RegulatoryDeferralAccount {
  * via the `definition` "post-balance-sheet-events".
  */
 export interface PostBalanceSheetEvent {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Sequential reference (e.g. PBE-2026-Q1-001).
    */
   reference: string;
-  period: number | FiscalPeriod;
+  period: string | FiscalPeriod;
   eventDate: string;
   description: string;
   classification: 'adjusting' | 'non_adjusting' | 'going_concern';
@@ -15323,14 +15323,14 @@ export interface PostBalanceSheetEvent {
   /**
    * JE booked when classification = adjusting.
    */
-  journalEntry?: (number | null) | JournalEntry;
+  journalEntry?: (string | null) | JournalEntry;
   /**
    * IAS 10 §21 — disclosed in financial-statement notes when material.
    */
   disclosedInFS?: boolean | null;
   status?: ('identified' | 'assessed' | 'adjusted' | 'disclosed' | 'not_material') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15343,12 +15343,12 @@ export interface PostBalanceSheetEvent {
  * via the `definition` "transaction-failures".
  */
 export interface TransactionFailure {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Failure reference (e.g. `FAIL-2026-04-001`).
    */
@@ -15410,14 +15410,14 @@ export interface TransactionFailure {
   /**
    * Operator who marked the failure resolved (manually or via successful retry).
    */
-  resolvedBy?: (number | null) | User;
+  resolvedBy?: (string | null) | User;
   /**
    * How the failure was resolved (e.g. "card retried after customer update", "manually re-entered", "abandoned per business decision").
    */
   resolution?: string | null;
   status?: ('open' | 'retrying' | 'escalated' | 'resolved' | 'abandoned') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15430,12 +15430,12 @@ export interface TransactionFailure {
  * via the `definition` "transfer-pricing-files".
  */
 export interface TransferPricingFile {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   reference: string;
   reportingYear: number;
   fileType: 'master_file' | 'local_file' | 'cbcr' | 'benchmark' | 'apa' | 'tp_adjustment';
@@ -15446,11 +15446,11 @@ export interface TransferPricingFile {
   /**
    * Entity whose Local File this is (only set when fileType = local_file).
    */
-  localFileEntity?: (number | null) | LegalEntity;
+  localFileEntity?: (string | null) | LegalEntity;
   /**
    * Ultimate parent / surrogate parent for Master File + CbCR.
    */
-  consolidatedHeadEntity?: (number | null) | LegalEntity;
+  consolidatedHeadEntity?: (string | null) | LegalEntity;
   /**
    * OECD TPG Annex I to Chapter V — Master File sections.
    */
@@ -15527,14 +15527,14 @@ export interface TransferPricingFile {
         | 'adjustment'
       )
     | null;
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  evidenceAttestation?: (string | null) | EvidenceAttestation;
   /**
    * Advance Pricing Agreement reference (when applicable).
    */
   apaReference?: string | null;
   status?: ('draft' | 'approved' | 'filed' | 'closed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15547,8 +15547,8 @@ export interface TransferPricingFile {
  * via the `definition` "standards".
  */
 export interface Standard {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -15603,11 +15603,11 @@ export interface Standard {
   /**
    * The newer standard that replaces this one. Forms the supersession DAG traversed by erpax.standards.traceSupersession.
    */
-  supersededBy?: (number | null) | Standard;
+  supersededBy?: (string | null) | Standard;
   /**
    * Older standards this one replaces (inverse of supersededBy for queryability).
    */
-  supersedes?: (number | Standard)[] | null;
+  supersedes?: (string | Standard)[] | null;
   /**
    * One-paragraph rationale captured when supersededBy is set.
    */
@@ -15617,7 +15617,7 @@ export interface Standard {
    */
   conflicts?:
     | {
-        otherStandard: number | Standard;
+        otherStandard: string | Standard;
         rationale: string;
         /**
          * Optional Conservation Law id that this conflict trips (e.g. "Law-27").
@@ -15658,8 +15658,8 @@ export interface Standard {
    */
   didUri?: string | null;
   status?: ('draft' | 'published' | 'superseded' | 'withdrawn' | 'proposed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15672,8 +15672,8 @@ export interface Standard {
  * via the `definition` "memories".
  */
 export interface Memory {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -15759,8 +15759,8 @@ export interface Memory {
    */
   emittedFromEvent?: string | null;
   status?: ('active' | 'archived' | 'superseded' | 'expired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15773,8 +15773,8 @@ export interface Memory {
  * via the `definition` "mcp-tool-metadata".
  */
 export interface McpToolMetadatum {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -15845,8 +15845,8 @@ export interface McpToolMetadatum {
    */
   lastSyncedFromCatalogAt?: string | null;
   status?: ('enabled' | 'disabled' | 'pending_review') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15859,8 +15859,8 @@ export interface McpToolMetadatum {
  * via the `definition` "translations".
  */
 export interface Translation {
-  id: number;
-  tenant?: (number | null) | Tenant;
+  id: string;
+  tenant?: (string | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -15931,8 +15931,8 @@ export interface Translation {
    */
   sharedAcrossRoleProfile?: string | null;
   status?: ('enabled' | 'disabled' | 'pending_approval' | 'archived') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -15943,12 +15943,12 @@ export interface Translation {
  * via the `definition` "commitments".
  */
 export interface Commitment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Auto-generated commitment ID (e.g., COMM-2026-001). SOX §302 audit trail.
    */
@@ -15969,7 +15969,7 @@ export interface Commitment {
   /**
    * User granting the authorization (must have sufficient spendingAuthority)
    */
-  authorizedBy: number | User;
+  authorizedBy: string | User;
   /**
    * Date authorization was granted (must be <= today). SOX §302.
    */
@@ -16017,11 +16017,11 @@ export interface Commitment {
   /**
    * Purchase order created from this commitment
    */
-  linkedPurchaseOrder?: (number | null) | PurchaseOrder;
+  linkedPurchaseOrder?: (string | null) | PurchaseOrder;
   /**
    * Contract created from this commitment (formal commitment phase)
    */
-  linkedContract?: (number | null) | Contract;
+  linkedContract?: (string | null) | Contract;
   zkod?: {
     /**
      * Bulgaria Labor Code Art. 331: mandatory arbitration clause included. Required for all commitments involving labor or services.
@@ -16036,8 +16036,8 @@ export interface Commitment {
      */
     zkodNotarized?: boolean | null;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   /**
    * Approver comments on authorization
@@ -16051,12 +16051,12 @@ export interface Commitment {
  * via the `definition` "contract-amendments".
  */
 export interface ContractAmendment {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Display title for this amendment (e.g., "Price increase to 6k BGN/month")
    */
@@ -16064,7 +16064,7 @@ export interface ContractAmendment {
   /**
    * Parent contract being amended (IFRS-15 §10)
    */
-  contract: number | Contract;
+  contract: string | Contract;
   /**
    * Effective date of the amendment (must be >= contract.effectiveFrom)
    */
@@ -16129,8 +16129,8 @@ export interface ContractAmendment {
      */
     mandatoryArbitration?: boolean | null;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   /**
    * Internal accounting notes on the amendment (not visible to customer)
@@ -16144,16 +16144,16 @@ export interface ContractAmendment {
  * via the `definition` "contract-performance".
  */
 export interface ContractPerformance {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Parent contract (IFRS-15 §10)
    */
-  contract: number | Contract;
+  contract: string | Contract;
   /**
    * Index into contract.performanceObligations array (IFRS-15 §22)
    */
@@ -16197,7 +16197,7 @@ export interface ContractPerformance {
   /**
    * Invoice created upon revenue recognition (null until revenue recognized)
    */
-  associatedInvoice?: (number | null) | Invoice;
+  associatedInvoice?: (string | null) | Invoice;
   /**
    * Amount of revenue recognized in cents (IFRS-15 recognition)
    */
@@ -16210,7 +16210,7 @@ export interface ContractPerformance {
   /**
    * Associated sales order (pre-contract commitment phase)
    */
-  associatedSalesOrder?: (number | null) | SalesOrder;
+  associatedSalesOrder?: (string | null) | SalesOrder;
   zkod?: {
     /**
      * Date of formal acceptance protocol (Bulgaria contract registry)
@@ -16225,8 +16225,8 @@ export interface ContractPerformance {
      */
     mandatoryArbitration?: boolean | null;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   /**
    * Internal notes on milestone completion, issues, variance explanations
@@ -16240,12 +16240,12 @@ export interface ContractPerformance {
  * via the `definition` "contract-signatures".
  */
 export interface ContractSignature {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * Display title (auto-generated from contract + signatory)
    */
@@ -16253,7 +16253,7 @@ export interface ContractSignature {
   /**
    * Parent contract being signed (IFRS-15 §10 execution)
    */
-  contract: number | Contract;
+  contract: string | Contract;
   /**
    * Position in approval chain (1-N, must be sequential)
    */
@@ -16306,7 +16306,7 @@ export interface ContractSignature {
     /**
      * User who rejected (if applicable)
      */
-    rejectedBy?: (number | null) | User;
+    rejectedBy?: (string | null) | User;
     /**
      * Rejection timestamp
      */
@@ -16330,8 +16330,8 @@ export interface ContractSignature {
      */
     bulgariaEidVerified?: boolean | null;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   /**
    * Internal comments on the signature (e.g., "director approval pending legal review")
@@ -16345,7 +16345,7 @@ export interface ContractSignature {
  * via the `definition` "contract-templates".
  */
 export interface ContractTemplate {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -16482,8 +16482,8 @@ export interface ContractTemplate {
      */
     zkodRegistryCategory?: string | null;
   };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   /**
    * Internal notes on template purpose, history, and customization guidance
@@ -16499,12 +16499,12 @@ export interface ContractTemplate {
  * via the `definition` "ai-suggestions".
  */
 export interface AiSuggestion {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency + cross-system correlation.
    */
@@ -16568,7 +16568,7 @@ export interface AiSuggestion {
   /**
    * Human who made the accept/reject decision (Art.22(3) right-to-human-intervention evidence).
    */
-  decisionMaker?: (number | null) | User;
+  decisionMaker?: (string | null) | User;
   /**
    * ISO 8601 — timestamp of the human decision.
    */
@@ -16599,11 +16599,11 @@ export interface AiSuggestion {
     /**
      * Linked usage-record for metered AI billing (Slice VVV).
      */
-    usageRecord?: (number | null) | UsageRecord;
+    usageRecord?: (string | null) | UsageRecord;
   };
   status?: ('recorded' | 'applied' | 'rejected' | 'reversed' | 'quarantined') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -16616,12 +16616,12 @@ export interface AiSuggestion {
  * via the `definition` "usage-records".
  */
 export interface UsageRecord {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  tenant?: (number | null) | Tenant;
+  tenant?: (string | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency key. Re-emission with the same eventId is a no-op.
    */
@@ -16646,7 +16646,7 @@ export interface UsageRecord {
   /**
    * The subscription this usage rolls into.
    */
-  subscription?: (number | null) | Subscription;
+  subscription?: (string | null) | Subscription;
   /**
    * Slug of the collection that generated the event (e.g. `invoices`, `evidence-attestations`).
    */
@@ -16667,10 +16667,10 @@ export interface UsageRecord {
   /**
    * Invoice that consumed this usage (set when the billing job runs).
    */
-  invoice?: (number | null) | Invoice;
+  invoice?: (string | null) | Invoice;
   status?: ('recorded' | 'billed' | 'reversed' | 'disputed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
@@ -16681,12 +16681,12 @@ export interface UsageRecord {
  * via the `definition` "form-submissions".
  */
 export interface FormSubmission {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
-  form: number | Form;
+  form: string | Form;
   submissionData?:
     | {
         field: string;
@@ -16702,7 +16702,7 @@ export interface FormSubmission {
  * via the `definition` "exports".
  */
 export interface Export {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -16778,7 +16778,7 @@ export interface Export {
  * via the `definition` "imports".
  */
 export interface Import {
-  id: number;
+  id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
@@ -16821,11 +16821,11 @@ export interface Import {
  * via the `definition` "payload-mcp-api-keys".
  */
 export interface PayloadMcpApiKey {
-  id: number;
+  id: string;
   /**
    * The user that the API key is associated with.
    */
-  user: number | User;
+  user: string | User;
   /**
    * A useful label for the API key.
    */
@@ -16956,7 +16956,7 @@ export interface PayloadMcpApiKey {
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
-  id: number;
+  id: string;
   key: string;
   data:
     | {
@@ -16973,7 +16973,7 @@ export interface PayloadKv {
  * via the `definition` "payload-jobs".
  */
 export interface PayloadJob {
-  id: number;
+  id: string;
   /**
    * Input data provided to the job
    */
@@ -17080,801 +17080,801 @@ export interface PayloadJob {
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: number;
+  id: string;
   document?:
     | ({
         relationTo: 'tenants';
-        value: number | Tenant;
+        value: string | Tenant;
       } | null)
     | ({
         relationTo: 'users';
-        value: number | User;
+        value: string | User;
       } | null)
     | ({
         relationTo: 'roles';
-        value: number | Role;
+        value: string | Role;
       } | null)
     | ({
         relationTo: 'user-roles';
-        value: number | UserRole;
+        value: string | UserRole;
       } | null)
     | ({
         relationTo: 'pages';
-        value: number | Page;
+        value: string | Page;
       } | null)
     | ({
         relationTo: 'posts';
-        value: number | Post;
+        value: string | Post;
       } | null)
     | ({
         relationTo: 'media';
-        value: number | Media;
+        value: string | Media;
       } | null)
     | ({
         relationTo: 'categories';
-        value: number | Category;
+        value: string | Category;
       } | null)
     | ({
         relationTo: 'invoices';
-        value: number | Invoice;
+        value: string | Invoice;
       } | null)
     | ({
         relationTo: 'invoice-lines';
-        value: number | InvoiceLine;
+        value: string | InvoiceLine;
       } | null)
     | ({
         relationTo: 'payment-methods';
-        value: number | PaymentMethod;
+        value: string | PaymentMethod;
       } | null)
     | ({
         relationTo: 'payments';
-        value: number | Payment;
+        value: string | Payment;
       } | null)
     | ({
         relationTo: 'subscription-plans';
-        value: number | SubscriptionPlan;
+        value: string | SubscriptionPlan;
       } | null)
     | ({
         relationTo: 'subscriptions';
-        value: number | Subscription;
+        value: string | Subscription;
       } | null)
     | ({
         relationTo: 'items';
-        value: number | Item;
+        value: string | Item;
       } | null)
     | ({
         relationTo: 'gl-accounts';
-        value: number | GlAccount;
+        value: string | GlAccount;
       } | null)
     | ({
         relationTo: 'gl-posting-rules';
-        value: number | GlPostingRule;
+        value: string | GlPostingRule;
       } | null)
     | ({
         relationTo: 'journal-entries';
-        value: number | JournalEntry;
+        value: string | JournalEntry;
       } | null)
     | ({
         relationTo: 'gl-postings';
-        value: number | GlPosting;
+        value: string | GlPosting;
       } | null)
     | ({
         relationTo: 'period-locks';
-        value: number | PeriodLock;
+        value: string | PeriodLock;
       } | null)
     | ({
         relationTo: 'closing-entries';
-        value: number | ClosingEntry;
+        value: string | ClosingEntry;
       } | null)
     | ({
         relationTo: 'bank-statements';
-        value: number | BankStatement;
+        value: string | BankStatement;
       } | null)
     | ({
         relationTo: 'bank-transactions';
-        value: number | BankTransaction;
+        value: string | BankTransaction;
       } | null)
     | ({
         relationTo: 'bank-accounts';
-        value: number | BankAccount;
+        value: string | BankAccount;
       } | null)
     | ({
         relationTo: 'account-reconciliations';
-        value: number | AccountReconciliation;
+        value: string | AccountReconciliation;
       } | null)
     | ({
         relationTo: 'bank-reconciliations';
-        value: number | BankReconciliation;
+        value: string | BankReconciliation;
       } | null)
     | ({
         relationTo: 'financial-statements';
-        value: number | FinancialStatement;
+        value: string | FinancialStatement;
       } | null)
     | ({
         relationTo: 'period-end-adjustments';
-        value: number | PeriodEndAdjustment;
+        value: string | PeriodEndAdjustment;
       } | null)
     | ({
         relationTo: 'recurring-journals';
-        value: number | RecurringJournal;
+        value: string | RecurringJournal;
       } | null)
     | ({
         relationTo: 'prior-period-adjustments';
-        value: number | PriorPeriodAdjustment;
+        value: string | PriorPeriodAdjustment;
       } | null)
     | ({
         relationTo: 'rounding-adjustments';
-        value: number | RoundingAdjustment;
+        value: string | RoundingAdjustment;
       } | null)
     | ({
         relationTo: 'tax-calculations';
-        value: number | TaxCalculation;
+        value: string | TaxCalculation;
       } | null)
     | ({
         relationTo: 'tax-codes';
-        value: number | TaxCode;
+        value: string | TaxCode;
       } | null)
     | ({
         relationTo: 'tax-jurisdictions';
-        value: number | TaxJurisdiction;
+        value: string | TaxJurisdiction;
       } | null)
     | ({
         relationTo: 'tax-returns';
-        value: number | TaxReturn;
+        value: string | TaxReturn;
       } | null)
     | ({
         relationTo: 'currency-rates';
-        value: number | CurrencyRate;
+        value: string | CurrencyRate;
       } | null)
     | ({
         relationTo: 'fiscal-periods';
-        value: number | FiscalPeriod;
+        value: string | FiscalPeriod;
       } | null)
     | ({
         relationTo: 'fiscal-calendars';
-        value: number | FiscalCalendar;
+        value: string | FiscalCalendar;
       } | null)
     | ({
         relationTo: 'fiscal-period-snapshots';
-        value: number | FiscalPeriodSnapshot;
+        value: string | FiscalPeriodSnapshot;
       } | null)
     | ({
         relationTo: 'fixed-assets';
-        value: number | FixedAsset;
+        value: string | FixedAsset;
       } | null)
     | ({
         relationTo: 'depreciation-schedules';
-        value: number | DepreciationSchedule;
+        value: string | DepreciationSchedule;
       } | null)
     | ({
         relationTo: 'customers';
-        value: number | Customer;
+        value: string | Customer;
       } | null)
     | ({
         relationTo: 'leads';
-        value: number | Lead;
+        value: string | Lead;
       } | null)
     | ({
         relationTo: 'opportunities';
-        value: number | Opportunity;
+        value: string | Opportunity;
       } | null)
     | ({
         relationTo: 'customer-segments';
-        value: number | CustomerSegment;
+        value: string | CustomerSegment;
       } | null)
     | ({
         relationTo: 'quotes';
-        value: number | Quote;
+        value: string | Quote;
       } | null)
     | ({
         relationTo: 'sales-orders';
-        value: number | SalesOrder;
+        value: string | SalesOrder;
       } | null)
     | ({
         relationTo: 'sales-commissions';
-        value: number | SalesCommission;
+        value: string | SalesCommission;
       } | null)
     | ({
         relationTo: 'credit-memos';
-        value: number | CreditMemo;
+        value: string | CreditMemo;
       } | null)
     | ({
         relationTo: 'returns';
-        value: number | Return;
+        value: string | Return;
       } | null)
     | ({
         relationTo: 'shipments';
-        value: number | Shipment;
+        value: string | Shipment;
       } | null)
     | ({
         relationTo: 'refunds';
-        value: number | Refund;
+        value: string | Refund;
       } | null)
     | ({
         relationTo: 'payment-allocations';
-        value: number | PaymentAllocation;
+        value: string | PaymentAllocation;
       } | null)
     | ({
         relationTo: 'dunning-cycles';
-        value: number | DunningCycle;
+        value: string | DunningCycle;
       } | null)
     | ({
         relationTo: 'vendors';
-        value: number | Vendor;
+        value: string | Vendor;
       } | null)
     | ({
         relationTo: 'vendor-quotes';
-        value: number | VendorQuote;
+        value: string | VendorQuote;
       } | null)
     | ({
         relationTo: 'vendor-scorecards';
-        value: number | VendorScorecard;
+        value: string | VendorScorecard;
       } | null)
     | ({
         relationTo: 'purchase-orders';
-        value: number | PurchaseOrder;
+        value: string | PurchaseOrder;
       } | null)
     | ({
         relationTo: 'purchase-requisitions';
-        value: number | PurchaseRequisition;
+        value: string | PurchaseRequisition;
       } | null)
     | ({
         relationTo: 'goods-receipts';
-        value: number | GoodsReceipt;
+        value: string | GoodsReceipt;
       } | null)
     | ({
         relationTo: 'inventory-movements';
-        value: number | InventoryMovement;
+        value: string | InventoryMovement;
       } | null)
     | ({
         relationTo: 'warehouse-locations';
-        value: number | WarehouseLocation;
+        value: string | WarehouseLocation;
       } | null)
     | ({
         relationTo: 'cost-centers';
-        value: number | CostCenter;
+        value: string | CostCenter;
       } | null)
     | ({
         relationTo: 'budget-planning';
-        value: number | BudgetPlanning;
+        value: string | BudgetPlanning;
       } | null)
     | ({
         relationTo: 'cost-variances';
-        value: number | CostVariance;
+        value: string | CostVariance;
       } | null)
     | ({
         relationTo: 'intercompany-transactions';
-        value: number | IntercompanyTransaction;
+        value: string | IntercompanyTransaction;
       } | null)
     | ({
         relationTo: 'consolidation-eliminations';
-        value: number | ConsolidationElimination;
+        value: string | ConsolidationElimination;
       } | null)
     | ({
         relationTo: 'fx-transactions';
-        value: number | FxTransaction;
+        value: string | FxTransaction;
       } | null)
     | ({
         relationTo: 'contracts';
-        value: number | Contract;
+        value: string | Contract;
       } | null)
     | ({
         relationTo: 'performance-obligations';
-        value: number | PerformanceObligation;
+        value: string | PerformanceObligation;
       } | null)
     | ({
         relationTo: 'commitments-and-contingencies';
-        value: number | CommitmentsAndContingency;
+        value: string | CommitmentsAndContingency;
       } | null)
     | ({
         relationTo: 'leases';
-        value: number | Lease;
+        value: string | Lease;
       } | null)
     | ({
         relationTo: 'lease-modifications';
-        value: number | LeaseModification;
+        value: string | LeaseModification;
       } | null)
     | ({
         relationTo: 'lease-period-postings';
-        value: number | LeasePeriodPosting;
+        value: string | LeasePeriodPosting;
       } | null)
     | ({
         relationTo: 'payment-runs';
-        value: number | PaymentRun;
+        value: string | PaymentRun;
       } | null)
     | ({
         relationTo: 'sepa-mandates';
-        value: number | SepaMandate;
+        value: string | SepaMandate;
       } | null)
     | ({
         relationTo: 'payroll-runs';
-        value: number | PayrollRun;
+        value: string | PayrollRun;
       } | null)
     | ({
         relationTo: 'employees';
-        value: number | Employee;
+        value: string | Employee;
       } | null)
     | ({
         relationTo: 'job-positions';
-        value: number | JobPosition;
+        value: string | JobPosition;
       } | null)
     | ({
         relationTo: 'time-entries';
-        value: number | TimeEntry;
+        value: string | TimeEntry;
       } | null)
     | ({
         relationTo: 'leave-requests';
-        value: number | LeaveRequest;
+        value: string | LeaveRequest;
       } | null)
     | ({
         relationTo: 'performance-reviews';
-        value: number | PerformanceReview;
+        value: string | PerformanceReview;
       } | null)
     | ({
         relationTo: 'expense-reports';
-        value: number | ExpenseReport;
+        value: string | ExpenseReport;
       } | null)
     | ({
         relationTo: 'recruiting-pipeline';
-        value: number | RecruitingPipeline;
+        value: string | RecruitingPipeline;
       } | null)
     | ({
         relationTo: 'activities';
-        value: number | Activity;
+        value: string | Activity;
       } | null)
     | ({
         relationTo: 'projects';
-        value: number | Project;
+        value: string | Project;
       } | null)
     | ({
         relationTo: 'project-tasks';
-        value: number | ProjectTask;
+        value: string | ProjectTask;
       } | null)
     | ({
         relationTo: 'project-milestones';
-        value: number | ProjectMilestone;
+        value: string | ProjectMilestone;
       } | null)
     | ({
         relationTo: 'work-orders';
-        value: number | WorkOrder;
+        value: string | WorkOrder;
       } | null)
     | ({
         relationTo: 'workflow-definitions';
-        value: number | WorkflowDefinition;
+        value: string | WorkflowDefinition;
       } | null)
     | ({
         relationTo: 'workflow-instances';
-        value: number | WorkflowInstance;
+        value: string | WorkflowInstance;
       } | null)
     | ({
         relationTo: 'bills-of-materials';
-        value: number | BillsOfMaterial;
+        value: string | BillsOfMaterial;
       } | null)
     | ({
         relationTo: 'work-centers';
-        value: number | WorkCenter;
+        value: string | WorkCenter;
       } | null)
     | ({
         relationTo: 'work-shifts';
-        value: number | WorkShift;
+        value: string | WorkShift;
       } | null)
     | ({
         relationTo: 'operations';
-        value: number | Operation;
+        value: string | Operation;
       } | null)
     | ({
         relationTo: 'routings';
-        value: number | Routing;
+        value: string | Routing;
       } | null)
     | ({
         relationTo: 'operation-runs';
-        value: number | OperationRun;
+        value: string | OperationRun;
       } | null)
     | ({
         relationTo: 'production-receipts';
-        value: number | ProductionReceipt;
+        value: string | ProductionReceipt;
       } | null)
     | ({
         relationTo: 'quality-inspections';
-        value: number | QualityInspection;
+        value: string | QualityInspection;
       } | null)
     | ({
         relationTo: 'wip-snapshots';
-        value: number | WipSnapshot;
+        value: string | WipSnapshot;
       } | null)
     | ({
         relationTo: 'properties';
-        value: number | Property;
+        value: string | Property;
       } | null)
     | ({
         relationTo: 'spaces';
-        value: number | Space;
+        value: string | Space;
       } | null)
     | ({
         relationTo: 'maintenance-requests';
-        value: number | MaintenanceRequest;
+        value: string | MaintenanceRequest;
       } | null)
     | ({
         relationTo: 'maintenance-work-orders';
-        value: number | MaintenanceWorkOrder;
+        value: string | MaintenanceWorkOrder;
       } | null)
     | ({
         relationTo: 'bookable-resources';
-        value: number | BookableResource;
+        value: string | BookableResource;
       } | null)
     | ({
         relationTo: 'bookings';
-        value: number | Booking;
+        value: string | Booking;
       } | null)
     | ({
         relationTo: 'carriers';
-        value: number | Carrier;
+        value: string | Carrier;
       } | null)
     | ({
         relationTo: 'tracking-events';
-        value: number | TrackingEvent;
+        value: string | TrackingEvent;
       } | null)
     | ({
         relationTo: 'customs-declarations';
-        value: number | CustomsDeclaration;
+        value: string | CustomsDeclaration;
       } | null)
     | ({
         relationTo: 'consignment-arrangements';
-        value: number | ConsignmentArrangement;
+        value: string | ConsignmentArrangement;
       } | null)
     | ({
         relationTo: 'consignment-inventory';
-        value: number | ConsignmentInventory;
+        value: string | ConsignmentInventory;
       } | null)
     | ({
         relationTo: 'consignment-sales';
-        value: number | ConsignmentSale;
+        value: string | ConsignmentSale;
       } | null)
     | ({
         relationTo: 'audit-events';
-        value: number | AuditEvent;
+        value: string | AuditEvent;
       } | null)
     | ({
         relationTo: 'api-audit-events';
-        value: number | ApiAuditEvent;
+        value: string | ApiAuditEvent;
       } | null)
     | ({
         relationTo: 'evidence-attestations';
-        value: number | EvidenceAttestation;
+        value: string | EvidenceAttestation;
       } | null)
     | ({
         relationTo: 'entity-types';
-        value: number | EntityType;
+        value: string | EntityType;
       } | null)
     | ({
         relationTo: 'taxing-jurisdictions';
-        value: number | TaxingJurisdiction;
+        value: string | TaxingJurisdiction;
       } | null)
     | ({
         relationTo: 'entity-legal-structures';
-        value: number | EntityLegalStructure;
+        value: string | EntityLegalStructure;
       } | null)
     | ({
         relationTo: 'compliance-frameworks';
-        value: number | ComplianceFramework;
+        value: string | ComplianceFramework;
       } | null)
     | ({
         relationTo: 'compliance-requirements';
-        value: number | ComplianceRequirement;
+        value: string | ComplianceRequirement;
       } | null)
     | ({
         relationTo: 'internal-controls';
-        value: number | InternalControl;
+        value: string | InternalControl;
       } | null)
     | ({
         relationTo: 'control-tests';
-        value: number | ControlTest;
+        value: string | ControlTest;
       } | null)
     | ({
         relationTo: 'audit-samples';
-        value: number | AuditSample;
+        value: string | AuditSample;
       } | null)
     | ({
         relationTo: 'compliance-gaps';
-        value: number | ComplianceGap;
+        value: string | ComplianceGap;
       } | null)
     | ({
         relationTo: 'audit-evidence';
-        value: number | AuditEvidence;
+        value: string | AuditEvidence;
       } | null)
     | ({
         relationTo: 'audit-findings';
-        value: number | AuditFinding;
+        value: string | AuditFinding;
       } | null)
     | ({
         relationTo: 'audit-trail-events';
-        value: number | AuditTrailEvent;
+        value: string | AuditTrailEvent;
       } | null)
     | ({
         relationTo: 'remediation-plans';
-        value: number | RemediationPlan;
+        value: string | RemediationPlan;
       } | null)
     | ({
         relationTo: 'audit-committees';
-        value: number | AuditCommittee;
+        value: string | AuditCommittee;
       } | null)
     | ({
         relationTo: 'audit-committee-members';
-        value: number | AuditCommitteeMember;
+        value: string | AuditCommitteeMember;
       } | null)
     | ({
         relationTo: 'board-actions';
-        value: number | BoardAction;
+        value: string | BoardAction;
       } | null)
     | ({
         relationTo: 'management-certifications';
-        value: number | ManagementCertification;
+        value: string | ManagementCertification;
       } | null)
     | ({
         relationTo: 'regulatory-reports';
-        value: number | RegulatoryReport;
+        value: string | RegulatoryReport;
       } | null)
     | ({
         relationTo: 'internal-policies';
-        value: number | InternalPolicy;
+        value: string | InternalPolicy;
       } | null)
     | ({
         relationTo: 'statutory-report-templates';
-        value: number | StatutoryReportTemplate;
+        value: string | StatutoryReportTemplate;
       } | null)
     | ({
         relationTo: 'statutory-field-mappings';
-        value: number | StatutoryFieldMapping;
+        value: string | StatutoryFieldMapping;
       } | null)
     | ({
         relationTo: 'policy-versions';
-        value: number | PolicyVersion;
+        value: string | PolicyVersion;
       } | null)
     | ({
         relationTo: 'policy-acknowledgments';
-        value: number | PolicyAcknowledgment;
+        value: string | PolicyAcknowledgment;
       } | null)
     | ({
         relationTo: 'compliance-deadlines';
-        value: number | ComplianceDeadline;
+        value: string | ComplianceDeadline;
       } | null)
     | ({
         relationTo: 'compliance-notifications';
-        value: number | ComplianceNotification;
+        value: string | ComplianceNotification;
       } | null)
     | ({
         relationTo: 'reporting-standards';
-        value: number | ReportingStandard;
+        value: string | ReportingStandard;
       } | null)
     | ({
         relationTo: 'reporting-mappings';
-        value: number | ReportingMapping;
+        value: string | ReportingMapping;
       } | null)
     | ({
         relationTo: 'related-party-transactions';
-        value: number | RelatedPartyTransaction;
+        value: string | RelatedPartyTransaction;
       } | null)
     | ({
         relationTo: 'management-assessment-icfr';
-        value: number | ManagementAssessmentIcfr;
+        value: string | ManagementAssessmentIcfr;
       } | null)
     | ({
         relationTo: 'disclosure-checklists';
-        value: number | DisclosureChecklist;
+        value: string | DisclosureChecklist;
       } | null)
     | ({
         relationTo: 'audit-committee-minutes';
-        value: number | AuditCommitteeMinute;
+        value: string | AuditCommitteeMinute;
       } | null)
     | ({
         relationTo: 'risk-register';
-        value: number | RiskRegister;
+        value: string | RiskRegister;
       } | null)
     | ({
         relationTo: 'debt-schedule';
-        value: number | DebtSchedule;
+        value: string | DebtSchedule;
       } | null)
     | ({
         relationTo: 'internal-audit-function';
-        value: number | InternalAuditFunction;
+        value: string | InternalAuditFunction;
       } | null)
     | ({
         relationTo: 'segment-reporting';
-        value: number | SegmentReporting;
+        value: string | SegmentReporting;
       } | null)
     | ({
         relationTo: 'consent-records';
-        value: number | ConsentRecord;
+        value: string | ConsentRecord;
       } | null)
     | ({
         relationTo: 'data-subject-requests';
-        value: number | DataSubjectRequest;
+        value: string | DataSubjectRequest;
       } | null)
     | ({
         relationTo: 'data-processing-activities';
-        value: number | DataProcessingActivity;
+        value: string | DataProcessingActivity;
       } | null)
     | ({
         relationTo: 'kyc-checks';
-        value: number | KycCheck;
+        value: string | KycCheck;
       } | null)
     | ({
         relationTo: 'beneficial-owners';
-        value: number | BeneficialOwner;
+        value: string | BeneficialOwner;
       } | null)
     | ({
         relationTo: 'csrd-disclosures';
-        value: number | CsrdDisclosure;
+        value: string | CsrdDisclosure;
       } | null)
     | ({
         relationTo: 'carbon-emissions';
-        value: number | CarbonEmission;
+        value: string | CarbonEmission;
       } | null)
     | ({
         relationTo: 'biological-assets';
-        value: number | BiologicalAsset;
+        value: string | BiologicalAsset;
       } | null)
     | ({
         relationTo: 'mineral-resource-assets';
-        value: number | MineralResourceAsset;
+        value: string | MineralResourceAsset;
       } | null)
     | ({
         relationTo: 'investment-properties';
-        value: number | InvestmentProperty;
+        value: string | InvestmentProperty;
       } | null)
     | ({
         relationTo: 'provisions';
-        value: number | Provision;
+        value: string | Provision;
       } | null)
     | ({
         relationTo: 'government-grants';
-        value: number | GovernmentGrant;
+        value: string | GovernmentGrant;
       } | null)
     | ({
         relationTo: 'deferred-tax-items';
-        value: number | DeferredTaxItem;
+        value: string | DeferredTaxItem;
       } | null)
     | ({
         relationTo: 'share-based-payments';
-        value: number | ShareBasedPayment;
+        value: string | ShareBasedPayment;
       } | null)
     | ({
         relationTo: 'business-combinations';
-        value: number | BusinessCombination;
+        value: string | BusinessCombination;
       } | null)
     | ({
         relationTo: 'held-for-sale-classifications';
-        value: number | HeldForSaleClassification;
+        value: string | HeldForSaleClassification;
       } | null)
     | ({
         relationTo: 'fair-value-measurements';
-        value: number | FairValueMeasurement;
+        value: string | FairValueMeasurement;
       } | null)
     | ({
         relationTo: 'earnings-per-share';
-        value: number | EarningsPerShare;
+        value: string | EarningsPerShare;
       } | null)
     | ({
         relationTo: 'insurance-contracts';
-        value: number | InsuranceContract;
+        value: string | InsuranceContract;
       } | null)
     | ({
         relationTo: 'regulatory-deferral-accounts';
-        value: number | RegulatoryDeferralAccount;
+        value: string | RegulatoryDeferralAccount;
       } | null)
     | ({
         relationTo: 'post-balance-sheet-events';
-        value: number | PostBalanceSheetEvent;
+        value: string | PostBalanceSheetEvent;
       } | null)
     | ({
         relationTo: 'transaction-failures';
-        value: number | TransactionFailure;
+        value: string | TransactionFailure;
       } | null)
     | ({
         relationTo: 'transfer-pricing-files';
-        value: number | TransferPricingFile;
+        value: string | TransferPricingFile;
       } | null)
     | ({
         relationTo: 'standards';
-        value: number | Standard;
+        value: string | Standard;
       } | null)
     | ({
         relationTo: 'memories';
-        value: number | Memory;
+        value: string | Memory;
       } | null)
     | ({
         relationTo: 'mcp-tool-metadata';
-        value: number | McpToolMetadatum;
+        value: string | McpToolMetadatum;
       } | null)
     | ({
         relationTo: 'translations';
-        value: number | Translation;
+        value: string | Translation;
       } | null)
     | ({
         relationTo: 'commitments';
-        value: number | Commitment;
+        value: string | Commitment;
       } | null)
     | ({
         relationTo: 'contract-amendments';
-        value: number | ContractAmendment;
+        value: string | ContractAmendment;
       } | null)
     | ({
         relationTo: 'contract-performance';
-        value: number | ContractPerformance;
+        value: string | ContractPerformance;
       } | null)
     | ({
         relationTo: 'contract-signatures';
-        value: number | ContractSignature;
+        value: string | ContractSignature;
       } | null)
     | ({
         relationTo: 'contract-templates';
-        value: number | ContractTemplate;
+        value: string | ContractTemplate;
       } | null)
     | ({
         relationTo: 'legal-entities';
-        value: number | LegalEntity;
+        value: string | LegalEntity;
       } | null)
     | ({
         relationTo: 'ai-suggestions';
-        value: number | AiSuggestion;
+        value: string | AiSuggestion;
       } | null)
     | ({
         relationTo: 'usage-records';
-        value: number | UsageRecord;
+        value: string | UsageRecord;
       } | null)
     | ({
         relationTo: 'addresses';
-        value: number | Address;
+        value: string | Address;
       } | null)
     | ({
         relationTo: 'variants';
-        value: number | Variant;
+        value: string | Variant;
       } | null)
     | ({
         relationTo: 'variantTypes';
-        value: number | VariantType;
+        value: string | VariantType;
       } | null)
     | ({
         relationTo: 'variantOptions';
-        value: number | VariantOption;
+        value: string | VariantOption;
       } | null)
     | ({
         relationTo: 'products';
-        value: number | Product;
+        value: string | Product;
       } | null)
     | ({
         relationTo: 'carts';
-        value: number | Cart;
+        value: string | Cart;
       } | null)
     | ({
         relationTo: 'orders';
-        value: number | Order;
+        value: string | Order;
       } | null)
     | ({
         relationTo: 'transactions';
-        value: number | Transaction;
+        value: string | Transaction;
       } | null)
     | ({
         relationTo: 'forms';
-        value: number | Form;
+        value: string | Form;
       } | null)
     | ({
         relationTo: 'form-submissions';
-        value: number | FormSubmission;
+        value: string | FormSubmission;
       } | null)
     | ({
         relationTo: 'payload-mcp-api-keys';
-        value: number | PayloadMcpApiKey;
+        value: string | PayloadMcpApiKey;
       } | null);
   globalSlug?: string | null;
   user:
     | {
         relationTo: 'users';
-        value: number | User;
+        value: string | User;
       }
     | {
         relationTo: 'payload-mcp-api-keys';
-        value: number | PayloadMcpApiKey;
+        value: string | PayloadMcpApiKey;
       };
   updatedAt: string;
   createdAt: string;
@@ -17884,15 +17884,15 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: number;
+  id: string;
   user:
     | {
         relationTo: 'users';
-        value: number | User;
+        value: string | User;
       }
     | {
         relationTo: 'payload-mcp-api-keys';
-        value: number | PayloadMcpApiKey;
+        value: string | PayloadMcpApiKey;
       };
   key?: string | null;
   value?:
@@ -17912,7 +17912,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: number;
+  id: string;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
@@ -25401,7 +25401,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  * via the `definition` "header".
  */
 export interface Header {
-  id: number;
+  id: string;
   navItems?:
     | {
         link: {
@@ -25410,11 +25410,11 @@ export interface Header {
           reference?:
             | ({
                 relationTo: 'pages';
-                value: number | Page;
+                value: string | Page;
               } | null)
             | ({
                 relationTo: 'posts';
-                value: number | Post;
+                value: string | Post;
               } | null);
           url?: string | null;
           label: string;
@@ -25430,7 +25430,7 @@ export interface Header {
  * via the `definition` "footer".
  */
 export interface Footer {
-  id: number;
+  id: string;
   navItems?:
     | {
         link: {
@@ -25439,11 +25439,11 @@ export interface Footer {
           reference?:
             | ({
                 relationTo: 'pages';
-                value: number | Page;
+                value: string | Page;
               } | null)
             | ({
                 relationTo: 'posts';
-                value: number | Post;
+                value: string | Post;
               } | null);
           url?: string | null;
           label: string;
@@ -25784,14 +25784,14 @@ export interface TaskSchedulePublish {
     doc?:
       | ({
           relationTo: 'pages';
-          value: number | Page;
+          value: string | Page;
         } | null)
       | ({
           relationTo: 'posts';
-          value: number | Post;
+          value: string | Post;
         } | null);
     global?: string | null;
-    user?: (number | null) | User;
+    user?: (string | null) | User;
   };
   output?: unknown;
 }
