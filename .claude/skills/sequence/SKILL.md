@@ -13,7 +13,7 @@ The basic skills are single-word atoms. Real work composes several of them; the 
 | **0** | root/axis | `config` · `identity` (content-addressed uuid — same content ⇒ same id ⇒ seamless merge) |
 | **3·6·9** | control triad (governs) | `access` · `hooks` · `auth` |
 | **1·2·4·8·7·5** | material/flow cycle (data in→out) | `fields` · `collections` · `database` · `queries` · `api` · `admin` |
-| cycle ↻ | features & cross-cutting | `plugins` `types` `versions` `jobs` `upload` `optimize` `harden` `deploy` `recover` |
+| cycle ↻ | features & cross-cutting | `plugins` `types` `versions` `jobs` `upload` `optimize` `harden` `deploy` `bindings` `recover` |
 
 ## Interaction graph (each skill names its neighbors via `[[links]]`)
 - **self** (a concept reaching back into the root): every skill ↔ `config`; the cycle skills ↔ `fields` (fields are the substrate of `collections`, `queries`, `api`, `admin`).
