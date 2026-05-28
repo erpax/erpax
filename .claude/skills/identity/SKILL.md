@@ -7,6 +7,17 @@ description: Use when working with erpax object identity or content-addressed UU
 
 Every erpax object presents itself under a **deterministic UUID derived from a SHA-256 of its own content**. Identical content ⇒ identical id on every erpax instance ("quantum entanglement"): merging two erpax databases is a set-union with no id remapping, and `relationTo` links still resolve because targets are content-addressed too. UUID-only identity (no auto-increment ints) is what makes federation + dedup free. **DRY storage:** a file keyed by its content-uuid filename cannot be stored twice. Identity is the root axis (with [[config]]) that lets "all agents be one erpax" — ordered by the [[sequence]].
 
+## One 128-bit `.uuid` does three jobs at once (why all coexist)
+The uuid is not an opaque pointer — it simultaneously carries:
+- **content** — the sha of the body ⇒ *no duplication* (same object, same id, everywhere);
+- **coordinate** — per-slot + per-tenant namespace ⇒ *no collision* (different axes never clash even when codes coincide — `(currency,EUR)` ≠ `(locale,EUR)` ≠ same code in another tenant);
+- **metadata** — structured **uuidv8** flags ⇒ *lookup-free behavior*.
+
+So if *anything* can be expressed as `.uuid`, all of it coexists in one space — deduplicated, collision-free, self-describing. A single uniform `.uuid` field is the universal coordinate ("all dimensions merge into unity").
+
+## The uuid holds information (uuidv8) — lookup-free realtime
+`uuid-format` packs **slot tag + capability flags (SIGNED/SEALED/SHARED) + schema version** into the 128 bits (RFC 9562 §6.4 uuidv8). `decodeStructured(uuid)` / `hasCapability(uuid, flag)` read all of that **from the string alone — zero DB round-trips**. That is the realtime-efficiency win: route, authorize, filter, and reconcile by uuid without fetching the object. Federation peers + auditors decode the uuid to know the expected verification axes; access checks short-circuit on `hasCapability` before any query.
+
 ## Where the knowledge lives (the map — read these, don't re-derive)
 | Concern | Module | Key exports |
 |---|---|---|
@@ -24,7 +35,7 @@ The "Conservation Laws" cited in those files: **8** content-addressable integrit
 4. format as **UUIDv5** (RFC 4122 §4.3) under a per-tenant namespace (`tenantNamespace(tenantId)`). Same tenant + same content ⇒ same uuid; different tenant ⇒ different uuid.
 
 ## Immutability discipline (why content-addressing is safe for mutable records)
-Hashing a *mutable* record means an edit changes its id → dangling refs. erpax resolves this: only **identity-defining content** is hashed (id/timestamps stripped) and the uuid is **frozen when the object seals** — posted / locked / `SEALED` documents are immutable (see [[accounting]]: `enforcePostingImmutability`, locked periods); drafts may recompute until sealed (compose with [[versions]]). Reference/master data (countries, currencies, tax codes) is universal ⇒ entangles across instances automatically. The structured uuidv8 carries SIGNED/SEALED flags so peers know the verification axes without a lookup.
+Hashing a *mutable* record means an edit changes its id → dangling refs. erpax resolves this: only **identity-defining content** is hashed (id/timestamps stripped) and the uuid is **frozen when the object seals** — posted / locked / `SEALED` documents are immutable (see [[accounting]]: `enforcePostingImmutability`, locked periods); drafts may recompute until sealed (compose with [[versions]]). Reference/master data (countries, currencies, tax codes) is universal ⇒ entangles across instances automatically. The seal state rides in the uuidv8 flags (see above) so peers verify without a lookup.
 
 ## Applying it
 - **Files / uploads:** stored object key = content hash → automatic dedup ("dry storage"). See [[upload]] (R2/S3 adapter filename = content-uuid).
