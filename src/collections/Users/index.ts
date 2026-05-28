@@ -124,6 +124,14 @@ export const Users: CollectionConfig = {
         // dropped on write.
         { label: 'Accountant', value: 'accountant' },
         { label: 'Auditor', value: 'auditor' },
+        // Audit/compliance personas — merged from the Phase audit-governance
+        // collections (RegulatoryReports, AuditCommittees, …) which gate on
+        // these roles, plus the read-only stakeholder `viewer`. Single
+        // canonical superset; see `@/access/roles-registry` (SoD matrix).
+        { label: 'Audit Staff', value: 'audit-staff' },
+        { label: 'Compliance Officer', value: 'compliance-officer' },
+        { label: 'Finance', value: 'finance' },
+        { label: 'Viewer', value: 'viewer' },
       ],
       access: {
         update: ({ req }) => isSuperAdmin(req.user),

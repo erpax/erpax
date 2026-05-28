@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '../access/auth'
+import { tenantMasterDataAccess, getUser } from '../access/auth'
 import { autoPopulateTenant } from '../hooks/autoPopulateTenant'
 import { enforceSegregationOfDuties } from '../hooks/enforceSegregationOfDuties'
 import { auditTrailAfterChange } from '../hooks/auditTrailAfterChange'
@@ -75,7 +75,7 @@ export const FiscalPeriods: CollectionConfig = {
         const movingOutOfLocked = prev === 'locked' && next !== 'locked'
 
         if (movingIntoLocked || movingOutOfLocked) {
-          const isAdmin = (req.user?.roles as string[] | undefined)?.includes('admin')
+          const isAdmin = getUser(req)?.roles?.includes('admin')
           if (!isAdmin) {
             throw new Error('Only admins may lock or unlock a fiscal period')
           }

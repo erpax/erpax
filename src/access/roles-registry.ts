@@ -23,7 +23,7 @@
  * @audit ISO-19011:2018 §6.4.6 audit-evidence-role-traceability
  */
 
-import type { UserRole } from '../types/auth/types'
+import type { UserRole } from '../types/auth'
 
 /** A single role entry. */
 export interface RoleEntry {
@@ -119,6 +119,39 @@ export const ROLES_REGISTRY: RolesRegistry = {
     competencies: ['report-consumption'],
     mutuallyExclusiveWith: [],
     availableInTiers: null,
+  },
+  'audit-staff': {
+    id: 'audit-staff',
+    name: 'Audit Staff',
+    description: 'Junior audit personnel working under auditor supervision — gathers evidence, executes control tests, drafts findings. Read access to GL + audit trail. Per ISO 27002 §5.4 + SOX §404, cannot also prepare the records being audited.',
+    standards: ['ISA 200-720 international-standards-on-auditing', 'ISO 19011:2018 §7 auditor-competence', 'IIA IPPF', 'ISO 27002 §5.4 segregation-of-duties'],
+    competencies: ['evidence-gathering', 'control-testing', 'working-paper-prep'],
+    recognisedCertifications: ['CIA candidate', 'CISA candidate', 'audit-trainee'],
+    mutuallyExclusiveWith: ['admin', 'accountant', 'customer'],
+    availableInTiers: ['business', 'enterprise'],
+    canDecide: ['approve', 'reject'],
+  },
+  'compliance-officer': {
+    id: 'compliance-officer',
+    name: 'Compliance Officer',
+    description: 'Owns regulatory compliance — policies, GDPR records, SOX/statutory filings, remediation plans. Read/write on compliance + governance collections. Per ISO 27002 §5.4, kept distinct from the accountant who prepares the underlying records.',
+    standards: ['SOX §302 officer-certifications', 'SOX §404 internal-controls', 'GDPR Art.37-39 data-protection-officer', 'ISO 37301:2021 compliance-management', 'ISO 27002 §5.4 segregation-of-duties'],
+    competencies: ['regulatory-compliance', 'policy-management', 'data-protection', 'remediation-tracking'],
+    recognisedCertifications: ['CCEP', 'CIPP', 'national compliance-licence'],
+    mutuallyExclusiveWith: ['accountant'],
+    availableInTiers: ['business', 'enterprise'],
+    canDecide: ['approve', 'reject', 'escalate'],
+  },
+  'finance': {
+    id: 'finance',
+    name: 'Finance (FP&A / Treasury)',
+    description: 'Finance-team member beyond bookkeeping — budgeting, forecasting, treasury/cash management, financial analysis. Reads GL + financial statements; writes budgets, forecasts, cash positions. Per ISO 27002 §5.4, kept distinct from the independent auditor.',
+    standards: ['IFRS Conceptual Framework', 'IFAC Code of Ethics §100', 'ISO 27002 §5.4 segregation-of-duties'],
+    competencies: ['budgeting', 'forecasting', 'treasury-management', 'financial-analysis'],
+    recognisedCertifications: ['CFA', 'CTP', 'FMVA'],
+    mutuallyExclusiveWith: ['auditor'],
+    availableInTiers: ['team', 'business', 'enterprise'],
+    canDecide: ['approve', 'reject'],
   },
 } as const
 

@@ -1,41 +1,35 @@
 import { Access } from 'payload'
-
-type Role = 'superadmin' | 'admin' | 'audit-staff' | 'compliance-officer' | 'finance' | 'user'
+import type { UserRole } from '@/types/auth'
+import { getUser } from './auth'
 
 export interface RoleAccessConfig {
-  read?: Role[]
-  create?: Role[]
-  update?: Role[]
-  delete?: Role[]
+  read?: UserRole[]
+  create?: UserRole[]
+  update?: UserRole[]
+  delete?: UserRole[]
 }
 
 /**
  * Factory function for role-based access control.
- * Specify which roles can perform which operations.
+ * Specify which roles can perform which operations. A user passes when
+ * any role they hold (`User.roles[]`) is in the allowed list. `allowed`
+ * omitted → use `fallback` (read defaults open for authenticated users;
+ * writes default closed).
  */
 export const roleBasedAccess = (
-  config: RoleAccessConfig
+  config: RoleAccessConfig,
 ): Record<'read' | 'create' | 'update' | 'delete', Access> => {
+  const check = (allowed: UserRole[] | undefined, fallback: boolean): Access => ({ req }) => {
+    const user = getUser(req)
+    if (!user) return false
+    if (!allowed) return fallback
+    const roles = (user.roles ?? []) as UserRole[]
+    return allowed.some((r) => roles.includes(r))
+  }
   return {
-    read: ({ req }) => {
-      if (!req.user) return false
-      if (!config.read) return true // If no restriction, allow all authenticated users
-      return config.read.includes(req.user.role as Role)
-    },
-    create: ({ req }) => {
-      if (!req.user) return false
-      if (!config.create) return false // If not specified, deny creation
-      return config.create.includes(req.user.role as Role)
-    },
-    update: ({ req }) => {
-      if (!req.user) return false
-      if (!config.update) return false
-      return config.update.includes(req.user.role as Role)
-    },
-    delete: ({ req }) => {
-      if (!req.user) return false
-      if (!config.delete) return false
-      return config.delete.includes(req.user.role as Role)
-    },
+    read: check(config.read, true),
+    create: check(config.create, false),
+    update: check(config.update, false),
+    delete: check(config.delete, false),
   }
 }

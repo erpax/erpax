@@ -30,6 +30,7 @@
  */
 import type { PayloadRequest } from 'payload'
 import { makeMediator, type ErpaxCfEnv } from './index'
+import { getUserContext } from '@/access/auth'
 
 /**
  * Default authorizer — checks the user has a non-empty role. Plugin
@@ -58,8 +59,7 @@ export function erpaxMediator(req: PayloadRequest, opts?: {
   if (!env) {
     throw new Error('[erpaxMediator] CF env unavailable in this runtime — plugin requires Workers / wrangler context')
   }
-  const u = req.user as { id?: string; role?: string; tenant?: string } | undefined
-  const tenantId = u?.tenant ?? 'platform'
+  const tenantId = getUserContext(req)?.tenant ?? 'platform'
   return makeMediator({
     env,
     tenantId,

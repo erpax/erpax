@@ -586,7 +586,7 @@ describe('FEATURE 3: Enum Validation', () => {
     })
 
     it('should fail validation for invalid enum values', async () => {
-      const errors = await discovery.validateEnumValue('users', 'role', 'superadmin')
+      const errors = await discovery.validateEnumValue('users', 'role', 'super-admin')
       expect(errors.length).toBeGreaterThan(0)
       expect(errors[0]).toContain('not in valid enum')
     })

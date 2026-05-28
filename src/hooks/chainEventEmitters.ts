@@ -18,6 +18,7 @@
 import type { CollectionAfterChangeHook } from 'payload'
 import { eventEmitter } from '@/services/event-emitter.service'
 import type { DomainEvent } from '@/types/events'
+import { getActorId } from '@/access/auth'
 
 type StatusBearing = { status?: string; id: string; tenant?: string | { id: string } }
 
@@ -77,7 +78,7 @@ export function emitOnStatusTransition(
         aggregateId: next.id,
         aggregateType,
         timestamp: new Date(),
-        userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+        userId: getActorId(req) ?? 'system',
         payload: { status: next.status },
       } as never,
       `${eventType}: ${next.id}`,
@@ -111,7 +112,7 @@ export function emitOnCreate(
         aggregateId: next.id,
         aggregateType,
         timestamp: new Date(),
-        userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+        userId: getActorId(req) ?? 'system',
         payload: {},
       } as never,
       `${eventType}: ${next.id}`,

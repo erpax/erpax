@@ -12,6 +12,7 @@
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import type { ErpaxMcpTool } from '../tool-defs'
+import { getActorId } from '@/access/auth'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
@@ -106,7 +107,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
             aggregateId: aggregateId as string,
             aggregateType: aggregateType as never,
             timestamp: new Date(),
-            userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+            userId: getActorId(req) ?? 'system',
             payload: (payload as Record<string, unknown>) ?? {},
           } as never,
           (label as string | undefined) ?? `${eventType}: ${aggregateId}`,

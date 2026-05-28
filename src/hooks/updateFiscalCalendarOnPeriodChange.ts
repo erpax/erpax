@@ -26,6 +26,7 @@
 
 import { CollectionBeforeChangeHook } from 'payload'
 import { FiscalPeriodResolver } from '../services/FiscalPeriodResolver'
+import { getUser } from '@/access/auth'
 
 interface FiscalPeriodsData {
   id?: string
@@ -116,14 +117,14 @@ export const updateFiscalCalendarOnPeriodChange: CollectionBeforeChangeHook<Fisc
     data.governanceScope = {
       entitySelfGoverns: true,
       approvalRequired: true,
-      amendmentAuthority: ['superadmin', 'admin'],
+      amendmentAuthority: ['super-admin', 'admin'],
       auditLevel: 'full',
     }
   }
 
   // Prepare user context for audit trail
   const userId = req.user?.id || 'system'
-  const userName = req.user?.email || 'system'
+  const userName = getUser(req)?.email || 'system'
 
   // Update notes with amendment context if this is an update
   if (isAmendment && operation === 'update') {

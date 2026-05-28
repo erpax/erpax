@@ -129,7 +129,7 @@ export class PeriodLockChecker {
     }
 
     // Admin can override locked periods
-    if (userRole === 'superadmin' || userRole === 'admin') {
+    if (userRole === 'super-admin' || userRole === 'admin') {
       return true
     }
 

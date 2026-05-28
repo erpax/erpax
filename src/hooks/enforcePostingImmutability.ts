@@ -10,6 +10,7 @@
 
 import { CollectionBeforeChangeHook } from 'payload'
 import { PostingImmutabilityEnforcer } from '../services/PostingImmutabilityEnforcer'
+import { getUser } from '@/access/auth'
 
 export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({
   req,
@@ -30,11 +31,9 @@ export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({
     return data
   }
 
-  // Check if user is superadmin or admin
+  // Check if user is super-admin or admin
   const isSuperAdminOrAdmin =
-    req.user?.roles?.some(
-      (role: any) => role === 'superadmin' || role === 'admin' || role.slug === 'superadmin' || role.slug === 'admin'
-    ) || false
+    getUser(req)?.roles?.some((role) => role === 'super-admin' || role === 'admin') ?? false
 
   // If not admin, throw immutability error
   if (!isSuperAdminOrAdmin) {

@@ -7,10 +7,10 @@ export const ReportingStandards: CollectionConfig = {
     useAsTitle: 'standardName',
   },
   access: roleBasedAccess({
-    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer', 'finance'],
-    create: ['superadmin'],
-    update: ['superadmin'],
-    delete: ['superadmin'],
+    read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer', 'finance'],
+    create: ['super-admin'],
+    update: ['super-admin'],
+    delete: ['super-admin'],
   }),
   fields: [
     {

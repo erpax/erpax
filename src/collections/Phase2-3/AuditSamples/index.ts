@@ -7,10 +7,10 @@ export const AuditSamples: CollectionConfig = {
     useAsTitle: 'itemIdentifier',
   },
   access: roleBasedAccess({
-    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer'],
-    create: ['superadmin', 'admin', 'audit-staff'],
-    update: ['superadmin', 'admin', 'audit-staff'],
-    delete: ['superadmin'],
+    read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer'],
+    create: ['super-admin', 'admin', 'audit-staff'],
+    update: ['super-admin', 'admin', 'audit-staff'],
+    delete: ['super-admin'],
   }),
   fields: [
     {

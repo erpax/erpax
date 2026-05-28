@@ -15,32 +15,55 @@
 
 import type { Access, PayloadRequest } from 'payload'
 import type { UserContext, UserRole, AccessResult } from '../types/auth'
+import type { User } from '../payload-types'
 
 export { isSuperAdminAccess as superAdminOnly } from './isSuperAdmin'
 
 /**
+ * Narrow `req.user` (the `User | PayloadMcpApiKey` auth union) to the
+ * app `User`. Machine identities (MCP API keys) carry no `roles` and
+ * resolve to `null`. The single canonical touch-point for `req.user`:
+ * access predicates, hooks, and services all compose with this atom
+ * instead of poking the union directly.
+ */
+export function getUser(req: PayloadRequest): User | null {
+  const u = req.user
+  if (!u || !('roles' in u)) return null
+  return u as User
+}
+
+/**
+ * The acting identity's id as a string, for ANY auth type (app `User`
+ * OR machine `PayloadMcpApiKey`). Use this — not `getUser` — when you
+ * only need the actor id (audit events, mediator context), since API
+ * keys are legitimate actors there.
+ */
+export function getActorId(req?: PayloadRequest): string | undefined {
+  return req?.user ? String(req.user.id) : undefined
+}
+
+/**
  * Extract user context from request.
  *
- * Slice CCC: derives `tenant` from the canonical `req.user.tenants[]`
- * array (multi-tenant plugin convention) rather than the fictional
- * `(req.user?.tenants?.[0]?.tenant)` field. Picks the first tenant; multi-tenant users
- * with several memberships should switch active tenant via the
+ * Derives `tenant` from the canonical `User.tenants[]` array
+ * (multi-tenant plugin convention). Picks the first tenant; multi-tenant
+ * users with several memberships switch active tenant via the
  * payload-tenant cookie (handled by `getTenantFromRequest`).
  */
 export function getUserContext(req: PayloadRequest): UserContext | null {
-  if (!req.user) return null
+  const user = getUser(req)
+  if (!user) return null
 
-  const tenantsArr = (req.user as unknown as { tenants?: Array<{ tenant?: number | string }> }).tenants
-  const firstTenantRef = tenantsArr?.[0]?.tenant
+  const firstTenantRef = user.tenants?.[0]?.tenant
   const tenant =
     typeof firstTenantRef === 'number' || typeof firstTenantRef === 'string'
       ? String(firstTenantRef)
       : ''
 
   return {
-    id: String(req.user.id),
+    id: String(user.id),
     tenant,
-    roles: (req.user.roles as UserRole[]) || [],
+    roles: (user.roles as UserRole[]) ?? [],
   }
 }
 

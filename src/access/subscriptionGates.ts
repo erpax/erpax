@@ -19,6 +19,7 @@
 import { Access, PayloadRequest } from 'payload'
 import type { Subscription } from '../payload-types'
 import type { Iso27002ControlId } from '../standards/iso-27002'
+import { getUserContext } from './auth'
 
 /**
  * Canonical ISO 27002 controls these gates exercise:
@@ -32,18 +33,19 @@ export const controlsApplied: ReadonlyArray<Iso27002ControlId> = ['5.15'] as con
 async function getSubscriptionForRequest(
   req: PayloadRequest,
 ): Promise<{ subscription: Subscription; tenant: string } | null> {
-  if (!req.user?.tenant) {
+  const tenant = getUserContext(req)?.tenant
+  if (!tenant) {
     return null
   }
 
   try {
     const subscription = await req.payload.findByID({
       collection: 'subscriptions',
-      id: req.user.tenant as string,
+      id: tenant,
       depth: 1,
     })
 
-    return subscription ? { subscription, tenant: req.user.tenant } : null
+    return subscription ? { subscription, tenant } : null
   } catch {
     return null
   }

@@ -25,6 +25,7 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
+import { getActorId } from '@/access/auth'
 
 export type WorkflowDecision =
   | 'approved'
@@ -129,7 +130,7 @@ export async function evaluateWorkflowsForDocument(
         definitionVersion: def.version,
         targetCollection: collectionSlug,
         targetId: String(docId),
-        submittedBy: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : undefined,
+        submittedBy: getActorId(req),
         submittedAt: new Date().toISOString(),
         currentStep: 0,
         status: 'pending_start',
@@ -176,7 +177,7 @@ export async function advanceWorkflowInstance(
     {
       stepIndex: instance.currentStep,
       stepName: `Step ${instance.currentStep + 1}`,
-      assignee: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : undefined,
+      assignee: getActorId(req),
       decision,
       decidedAt: new Date().toISOString(),
       comment,

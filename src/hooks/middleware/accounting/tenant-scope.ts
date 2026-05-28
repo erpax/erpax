@@ -21,6 +21,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
+import { getUser } from '@/access/auth'
 
 interface MiddlewareResponse {
   status: (code: number) => { json: (body: unknown) => void }
@@ -34,7 +35,8 @@ export const tenantScopeMiddleware = async (
 ): Promise<void> => {
   try {
     // Active tenant from canonical multi-tenant plugin shape.
-    const tenantId = req.user?.tenants?.[0]?.tenant;
+    const user = getUser(req);
+    const tenantId = user?.tenants?.[0]?.tenant;
 
     if (tenantId === undefined || tenantId === null) {
       return res.status(401).json({
@@ -43,7 +45,7 @@ export const tenantScopeMiddleware = async (
     }
 
     // Log for audit trail.
-    req.payload.logger.info(`✓ Tenant scope verified: ${tenantId} for user ${req.user?.email}`);
+    req.payload.logger.info(`✓ Tenant scope verified: ${tenantId} for user ${user?.email}`);
 
     next();
   } catch (error) {

@@ -206,6 +206,7 @@ import {
 } from '@/services/dimensions'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { AgentRegistry } from '@/services/agents/types'
+import { getActorId } from '@/access/auth'
 
 export interface ErpaxMcpTool {
   readonly name: string
@@ -468,7 +469,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
             aggregateId: aggregateId as string,
             aggregateType: aggregateType as never,
             timestamp: new Date(),
-            userId: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+            userId: getActorId(req) ?? 'system',
             payload: (payload as Record<string, unknown>) ?? {},
           } as never,
           (label as string | undefined) ?? `${eventType}: ${aggregateId}`,

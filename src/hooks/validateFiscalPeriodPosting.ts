@@ -28,6 +28,7 @@
 
 import { CollectionBeforeValidateHook } from 'payload'
 import { FiscalPeriodResolver } from '../services/FiscalPeriodResolver'
+import { getUserContext } from '@/access/auth'
 
 interface GLPostingsData {
   id?: string
@@ -69,13 +70,13 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
   const entityId =
     typeof data.entity === 'string'
       ? data.entity
-      : data.entity?.id || req.user?.currentEntity
+      : data.entity?.id || getUserContext(req)?.tenant
 
   if (!entityId) {
     throw new Error('entity required to resolve fiscal period')
   }
 
-  const tenantId = req.user?.tenantId || 'default'
+  const tenantId = getUserContext(req)?.tenant || 'default'
 
   // Query FiscalCalendars for this date
   // Note: In production, this would be a Payload query with indexing on (entity, calendarDate)

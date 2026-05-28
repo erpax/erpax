@@ -7,10 +7,10 @@ export const TaxingJurisdictions: CollectionConfig = {
     useAsTitle: 'name',
   },
   access: roleBasedAccess({
-    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer'],
-    create: ['superadmin'],
-    update: ['superadmin'],
-    delete: ['superadmin'],
+    read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer'],
+    create: ['super-admin'],
+    update: ['super-admin'],
+    delete: ['super-admin'],
   }),
   fields: [
     {

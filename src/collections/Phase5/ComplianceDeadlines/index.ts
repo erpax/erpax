@@ -7,10 +7,10 @@ export const ComplianceDeadlines: CollectionConfig = {
     useAsTitle: 'deadlineName',
   },
   access: roleBasedAccess({
-    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer', 'finance'],
-    create: ['superadmin', 'admin'],
-    update: ['superadmin', 'admin'],
-    delete: ['superadmin'],
+    read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer', 'finance'],
+    create: ['super-admin', 'admin'],
+    update: ['super-admin', 'admin'],
+    delete: ['super-admin'],
   }),
   fields: [
     {

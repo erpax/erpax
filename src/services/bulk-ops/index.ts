@@ -19,6 +19,7 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
+import { getActorId } from '@/access/auth'
 
 export type BulkFormat =
   | 'csv'
@@ -84,7 +85,7 @@ export async function enqueueBulkOperation(
       data: {
         eventId: operationId,
         eventType: `bulk:${input.kind}:queued`,
-        actor: typeof req?.user === 'object' && req?.user && 'id' in req.user ? (req.user as { id: string }).id : 'system',
+        actor: getActorId(req) ?? 'system',
         targetCollection: input.targetCollection,
         targetId: operationId,
         before: undefined,

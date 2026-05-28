@@ -48,7 +48,7 @@ export class PostingImmutabilityEnforcer {
     }
 
     // Posting has been posted
-    if (userRole === 'superadmin' || userRole === 'admin') {
+    if (userRole === 'super-admin' || userRole === 'admin') {
       return {
         isPosted: true,
         isModifiable: true,
@@ -86,7 +86,7 @@ export class PostingImmutabilityEnforcer {
     }
 
     // If admin override, require reason field
-    if (check.isPosted && (userRole === 'superadmin' || userRole === 'admin')) {
+    if (check.isPosted && (userRole === 'super-admin' || userRole === 'admin')) {
       // Reason will be captured in separate AdminOverride collection
       // This is enforced by the collection's beforeChange hook
     }

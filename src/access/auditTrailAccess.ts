@@ -1,33 +1,35 @@
 import { Access } from 'payload'
+import { isSuperAdmin } from './isSuperAdmin'
+import { getUserContext } from './auth'
 
 /**
  * Audit trail read access — authenticated users can read audit events,
- * but only for their own tenant. Superadmins can read all.
+ * but only for their own tenant. Super-admins can read all.
  */
 export const auditTrailRead: Access<'read'> = ({ req }) => {
   if (!req.user) {
     return false
   }
 
-  // Superadmins can read all audit trails
-  if (req.user.role === 'superadmin') {
+  // Super-admins can read all audit trails
+  if (isSuperAdmin(req.user)) {
     return true
   }
 
   // Other users can only read audit trails for their tenant
   return {
     tenant: {
-      equals: req.user.tenant,
+      equals: getUserContext(req)?.tenant ?? '',
     },
   }
 }
 
 /**
- * Audit trail create access — only superadmins can create audit events.
+ * Audit trail create access — only super-admins can create audit events.
  * In practice, audit events are created automatically via hooks.
  */
 export const auditTrailCreate: Access<'create'> = ({ req }) => {
-  return req.user?.role === 'superadmin' || false
+  return isSuperAdmin(req.user)
 }
 
 /**

@@ -7,10 +7,10 @@ export const ManagementAssessmentICFR: CollectionConfig = {
     useAsTitle: 'assessmentPeriod',
   },
   access: roleBasedAccess({
-    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer'],
-    create: ['superadmin', 'admin'],
-    update: ['superadmin', 'admin'],
-    delete: ['superadmin'],
+    read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer'],
+    create: ['super-admin', 'admin'],
+    update: ['super-admin', 'admin'],
+    delete: ['super-admin'],
   }),
   fields: [
     {

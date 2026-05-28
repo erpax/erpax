@@ -818,7 +818,20 @@ export interface User {
   id: number;
   password?: string | null;
   name?: string | null;
-  roles?: ('super-admin' | 'admin' | 'user' | 'customer' | 'accountant' | 'auditor')[] | null;
+  roles?:
+    | (
+        | 'super-admin'
+        | 'admin'
+        | 'user'
+        | 'customer'
+        | 'accountant'
+        | 'auditor'
+        | 'audit-staff'
+        | 'compliance-officer'
+        | 'finance'
+        | 'viewer'
+      )[]
+    | null;
   username?: string | null;
   tenants?:
     | {

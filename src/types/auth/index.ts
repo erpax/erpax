@@ -9,9 +9,17 @@
  * @see docs/STANDARDS.md §4.4
  */
 
+import type { User } from '../../payload-types'
+
 export const SUPER_ADMIN_ROLE = 'super-admin' as const
 
-export type UserRole = typeof SUPER_ADMIN_ROLE | 'admin' | 'user' | 'customer' | 'accountant' | 'auditor' | 'viewer'
+/**
+ * Canonical global role union — DERIVED from the generated schema
+ * (`User.roles[]`) so it can never drift from `src/collections/Users`.
+ * The single source of truth for the role vocabulary; the SoD-aware
+ * registry (`@/access/roles-registry`) keys off this same union.
+ */
+export type UserRole = NonNullable<User['roles']>[number]
 
 export interface UserContext {
   id: string

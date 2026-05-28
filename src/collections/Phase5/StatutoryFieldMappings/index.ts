@@ -7,10 +7,10 @@ export const StatutoryFieldMappings: CollectionConfig = {
     useAsTitle: 'mappingName',
   },
   access: roleBasedAccess({
-    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer'],
-    create: ['superadmin'],
-    update: ['superadmin'],
-    delete: ['superadmin'],
+    read: ['super-admin', 'admin', 'audit-staff', 'compliance-officer'],
+    create: ['super-admin'],
+    update: ['super-admin'],
+    delete: ['super-admin'],
   }),
   fields: [
     {
