@@ -671,8 +671,15 @@ src/collections/WarehouseLocations.ts:12: * @standard EN-16931:2017 §BG-15 deli
 src/collections/WarehouseLocations.ts:9: * @standard ISO-3166-1:2020 country-codes location-country
 src/collections/WipSnapshots.ts:15: * @standard ISO-8601-1:2019 date-time
 src/collections/WipSnapshots.ts:16: * @standard ISO-4217:2015 currency-codes
+src/collections/WorkCenters.ts:11: * @standard ISA-95:2013 / IEC-62264-1 §B.5 production-resources equipment-hierarchy
+src/collections/WorkCenters.ts:12: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (capacity, availability, utilization)
+src/collections/WorkCenters.ts:13: * @standard ISO-8601-1:2019 date-time
 src/collections/WorkOrders.ts:10: * @standard ISO-8601-1:2019 date-time release-due-completion-dates
 src/collections/WorkOrders.ts:11: * @standard ISA-95:2013 §B.5 production-operations-management
+src/collections/WorkShifts.ts:10: * @standard ISA-95:2013 / IEC-62264-1 §B.5 personnel + production-performance
+src/collections/WorkShifts.ts:11: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (labor utilization, OEE)
+src/collections/WorkShifts.ts:12: * @standard ISO-8601-1:2019 date-time shift-start-end
+src/collections/WorkShifts.ts:13: * @standard ILO C001 hours-of-work
 src/collections/WorkflowDefinitions.ts:15: * @standard ISO/IEC 19510:2013 BPMN-2.0
 src/collections/WorkflowDefinitions.ts:16: * @standard ISO-8601-1:2019 date-time
 src/collections/WorkflowInstances.ts:13: * @standard ISO/IEC 19510:2013 BPMN-2.0
@@ -1089,9 +1096,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1042:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1060:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1061:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1048:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1066:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1067:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1530,12 +1537,6 @@ src/services/evidence-attestation.ts:21: * @standard ISO-19005-2:2011 pdf-a-2
 src/services/evidence-attestation.ts:22: * @standard ISO-14289-1:2014 pdf-ua-1
 src/services/evidence-attestation.ts:23: * @standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile
 src/services/evidence-attestation.ts:24: * @standard ISO-8601-1:2019 date-time
-src/services/export/api.service.ts:340: * @standard OECD SAF-T 2.0
-src/services/export/api.service.ts:341: * @standard Peppol-BIS-3.0 billing
-src/services/export/api.service.ts:342: * @standard UN-EDIFACT D.96A
-src/services/export/api.service.ts:343: * @standard ISO-20022:2022
-src/services/export/api.service.ts:8: * @standard ISO-32000-2:2020 pdf
-src/services/export/api.service.ts:9: * @standard ISO/IEC-29500:2016 office-open-xml xlsx
 src/services/export/excel.service.ts:4: * @standard ISO/IEC-29500:2016 office-open-xml
 src/services/export/excel.service.ts:5: * @standard ECMA-376 office-open-xml
 src/services/export/excel.service.ts:7: * @standard ISO-4217:2015 currency-codes cell-formatting
@@ -1723,10 +1724,6 @@ src/services/receivables/allowance.service.ts:7: * @standard ISO-4217:2015 curre
 src/services/receivables/analytics.service.ts:7: * @standard ISO-4217:2015 currency-codes
 src/services/receivables/analytics.service.ts:8: * @standard ISO-8601-1:2019 date-time period
 src/services/receivables/workflow.service.ts:6: * @standard EN-16931:2017 invoice-lifecycle
-src/services/reporting/scheduled-reports.ts:12: * @standard ISO 19005-{1,2,3} pdf-a
-src/services/reporting/scheduled-reports.ts:13: * @standard ISO 14289 pdf-ua
-src/services/reporting/scheduled-reports.ts:14: * @standard rfc-5545 icalendar-rrule
-src/services/reporting/scheduled-reports.ts:15: * @standard rfc-5322 internet-message-format
 src/services/saf-t-export.service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/services/saf-t-export.service.test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:1199: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
@@ -2735,12 +2732,6 @@ src/services/country-clients/berlin-group-psd2.ts:15: * @rfc 6749 oauth-2.0
 src/services/country-clients/berlin-group-psd2.ts:16: * @rfc 7519 jwt
 src/services/emit-domain-event.ts:14: * @rfc 9562 uuid event-id
 src/services/event-emitter.service.ts:9: * @rfc 9562 uuid event-id
-src/services/export/api.service.ts:344: * @rfc 6266 content-disposition
-src/services/export/api.service.ts:345: * @rfc 6838 mime-type
-src/services/export/api.service.ts:4: * @rfc 9110 http-semantics
-src/services/export/api.service.ts:5: * @rfc 9110 §15 status-codes
-src/services/export/api.service.ts:6: * @rfc 6838 mime-type
-src/services/export/api.service.ts:7: * @rfc 6266 content-disposition attachment
 src/services/export/excel.service.ts:6: * @rfc 6838 mime-type application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 src/services/export/pdf.service.ts:22: * @rfc 6838 mime-type application/pdf
 src/services/export/standards.service.ts:26: * @rfc 6838 mime-type
@@ -3155,7 +3146,9 @@ src/collections/VendorScorecards.ts:13: * @compliance SOX §404 internal-control
 src/collections/Vendors.ts:21: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/collections/WarehouseLocations.ts:16: * @compliance SOX §404 internal-controls inventory-segregation
 src/collections/WipSnapshots.ts:21: * @compliance SOX §404 internal-controls revenue-recognition
+src/collections/WorkCenters.ts:18: * @compliance SOX §404 internal-controls production-control
 src/collections/WorkOrders.ts:16: * @compliance SOX §404 internal-controls production-control TOM-PROD-01
+src/collections/WorkShifts.ts:17: * @compliance SOX §404 internal-controls payroll-and-production-control
 src/collections/WorkflowDefinitions.ts:17: * @compliance SOX §404 internal-controls multi-step-approval
 src/collections/WorkflowDefinitions.ts:18: * @compliance ISO-27002 §5.4 segregation-of-duties
 src/collections/WorkflowInstances.ts:16: * @compliance SOX §404 internal-controls workflow-execution
@@ -3388,7 +3381,6 @@ src/services/period-end-adjustment.service.ts:32: * @compliance SOX §404 intern
 src/services/persist-api-audit-event.ts:18: * @compliance SOX §404 internal-controls external-system-traceability
 src/services/receivables/allowance.service.ts:9: * @compliance SOX §404 internal-controls
 src/services/receivables/workflow.service.ts:11: * @compliance SOX §404 internal-controls
-src/services/reporting/scheduled-reports.ts:17: * @compliance SOX §404 internal-controls reporting-completeness
 src/services/saf-t-export.service.ts:35: * @compliance SOX §404 internal-controls
 src/services/scheduled-tasks/registry.ts:23: * @compliance SOX §404 internal-controls automated-controls
 src/services/scheduled-tasks/registry.ts:24: * @compliance GDPR Art.5(1)(e) storage-limitation (retention purges)
@@ -3794,9 +3786,14 @@ src/collections/WarehouseLocations.ts:14: * @accounting US-GAAP ASC-330 inventor
 src/collections/WipSnapshots.ts:17: * @accounting IFRS IFRS-15 §B14 §B15 §B16 §B17 §B18 §B19 measurement-of-progress
 src/collections/WipSnapshots.ts:18: * @accounting IFRS IFRS-15 §107 §108 §109 contract-asset-contract-liability
 src/collections/WipSnapshots.ts:19: * @accounting US-GAAP ASC-606-10-45-1 contract-asset
+src/collections/WorkCenters.ts:14: * @accounting IFRS IAS-2 §12 cost-of-conversion fixed-and-variable-production-overhead
+src/collections/WorkCenters.ts:15: * @accounting IFRS IAS-2 §13 normal-capacity-overhead-absorption
+src/collections/WorkCenters.ts:16: * @accounting US-GAAP ASC-330-10-30 inventory-cost
 src/collections/WorkOrders.ts:12: * @accounting IFRS IAS-2 §10 §12 cost-of-conversion
 src/collections/WorkOrders.ts:13: * @accounting IFRS IAS-2 §13 normal-capacity-overhead-absorption
 src/collections/WorkOrders.ts:14: * @accounting US-GAAP ASC-330-10-30 inventory-cost
+src/collections/WorkShifts.ts:14: * @accounting IFRS IAS-2 §12 cost-of-conversion direct-labor
+src/collections/WorkShifts.ts:15: * @accounting US-GAAP ASC-330-10-30 inventory-cost
 src/components/Dashboard.tsx:17: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/analytics/BudgetVsActualCard.tsx:12: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/analytics/BudgetVsActualCard.tsx:13: * @accounting US-GAAP ASC-270 interim-reporting variance-analysis
@@ -3923,9 +3920,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1040:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1041:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1062:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1046:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1047:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1068:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/seeds/accounting/critical-gaps-verification.test.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -3985,7 +3982,6 @@ src/services/depreciation.service.ts:23: * @accounting IFRS IAS-16 §62 deprecia
 src/services/depreciation.service.ts:24: * @accounting IFRS IAS-36 impairment-of-assets
 src/services/depreciation.service.ts:25: * @accounting US-GAAP ASC-360-10-35 depreciation
 src/services/depreciation.service.ts:26: * @accounting OECD SAF-T §3 fixed-asset-register
-src/services/export/api.service.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/financial-reporting.service.ts:10: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/services/financial-reporting.service.ts:7: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/financial-reporting.service.ts:8: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -4456,7 +4452,9 @@ src/collections/VendorScorecards.ts:14: * @security ISO-27001 A.5.23 cloud-servi
 src/collections/VendorScorecards.ts:15: * @security ISO-27001 A.5.19 information-security-supplier-relationships
 src/collections/WarehouseLocations.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/WipSnapshots.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/WorkCenters.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/WorkOrders.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/WorkShifts.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/WorkflowDefinitions.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/WorkflowInstances.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/components/admin/TenantFilters.tsx:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation admin-interface
@@ -4578,7 +4576,6 @@ src/services/journal-entry.service.ts:14: * @security ISO-27002 §5.4 segregatio
 src/services/notifications/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/services/parties/workflow.service.ts:8: * @security ISO-27002 §5.4 segregation-of-duties
 src/services/payables/workflow.service.ts:12: * @security ISO-27002 §5.4 segregation-of-duties three-way-match
-src/services/reporting/scheduled-reports.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/services/spec-generator/extractor.ts:17: *   @security      <body> <id> [free-text]      ← alias for @standard
 src/services/tenant.service.ts:10: * @security ISO-27001 A.5.23 information-security-for-cloud-services
 src/services/tenant.service.ts:11: * @security ISO-27002 §5.15 access-control
@@ -4843,7 +4840,9 @@ src/collections/VendorQuotes.ts:15: * @audit ISO-19011:2018 audit-trail rfq-evid
 src/collections/VendorScorecards.ts:12: * @audit ISO-19011:2018 audit-trail vendor-evaluation
 src/collections/WarehouseLocations.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
 src/collections/WipSnapshots.ts:20: * @audit ISO-19011:2018 audit-trail wip-evidence
+src/collections/WorkCenters.ts:17: * @audit ISO-19011:2018 audit-trail capacity-resource-changes
 src/collections/WorkOrders.ts:15: * @audit ISO-19011:2018 audit-trail production-execution
+src/collections/WorkShifts.ts:16: * @audit ISO-19011:2018 audit-trail labor-recording
 src/collections/WorkflowDefinitions.ts:19: * @audit ISO-19011:2018 audit-trail workflow-evidence
 src/collections/WorkflowInstances.ts:15: * @audit ISO-19011:2018 §6.4.6 audit-evidence-workflow
 src/collections/commitments.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
@@ -4952,8 +4951,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1043:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1063:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1049:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1069:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/critical-gaps-verification.test.ts:8: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-evidence
@@ -5096,7 +5095,6 @@ src/services/error-uuid/index.test.ts:16: * @audit Conservation Law 64 errors-ar
 src/services/error-uuid/index.ts:51: * @audit Conservation Law 64 errors-are-first-class-uuids
 src/services/event-emitter.service.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/evidence-attestation.ts:25: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
-src/services/export/api.service.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/export/excel.service.ts:9: * @audit ISO-19011:2018 audit-trail
 src/services/export/pdf.service.ts:23: * @audit ISO-19011:2018 audit-trail document-archival-evidence
 src/services/export/standards.service.ts:27: * @audit ISO-19011:2018 audit-trail
@@ -5169,7 +5167,6 @@ src/services/query-fingerprint/index.ts:62: * @audit Conservation Law 53 self-re
 src/services/receivables/aging.service.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/receivables/allowance.service.ts:8: * @audit ISO-19011:2018 audit-trail
 src/services/receivables/workflow.service.ts:10: * @audit ISO-19011:2018 audit-trail state-transitions
-src/services/reporting/scheduled-reports.ts:16: * @audit ISO-19011:2018 audit-trail report-evidence
 src/services/saf-t-export.service.test.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/saf-t-export.service.ts:34: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
 src/services/saf-t-export.source-documents.test.ts:6: * @audit ISO-19011:2018 audit-trail

@@ -166,6 +166,8 @@ export { default as BillsOfMaterials } from './BillsOfMaterials'
 export { default as ProductionReceipts } from './ProductionReceipts'
 export { default as QualityInspections } from './QualityInspections'
 export { default as WipSnapshots } from './WipSnapshots'
+export { default as WorkCenters } from './WorkCenters'
+export { default as WorkShifts } from './WorkShifts'
 
 // Facilities & Resources
 export { default as Properties } from './Properties'

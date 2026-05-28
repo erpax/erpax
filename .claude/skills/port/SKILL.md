@@ -37,6 +37,12 @@ A Rails **concern** = a Payload **reusable field-object** = an erpax **skill**: 
 - `~/github/ceccec/erpax` — canonical Rails erpax: concerns, `accounting_equation.rb`, `invoice.rb` (self-referential tree), `application_controller.rb` (tenant + 402 gate).
 - `~/github/ceccec/etrima` — garment manufacturing: `work_order.rb` (option_1..12 → port via [[manufacturing]]), `app/admin/production/*`, `app/admin/reports/*`.
 
+## Strictly implement the standards (the multi-agent collision monitor)
+Every ported collection MUST carry its real `@standard`/`@accounting`/`@audit`/`@compliance`/`@security` JSDoc banners and comply with them — not decoration (see `WorkOrders.ts`: ISA-95, IAS-2 §10-13, ISO-8601, SOX §404, ISO-27001 A.5.23). Why strict:
+- **Involve all applicable standards, including NEW ones** not yet used in the repo (ISA-95/IEC 62264, ISO 22400-2, ILO, etc.). Don't limit to the existing banner set.
+- **The sequence makes them mutually compliant.** Because every standard attaches to composable atoms applied in `0·3·6·9·1·2·4·8·7·5` order (see [[sequence]]), many standards coexist on one collection without conflict — the sequence reconciles them.
+- **Standards + sequence = the multi-agent coordinate + collision detector.** Many agents can generate features simultaneously; the architecture-invariants (`services/architecture-invariants`), the generated `docs/STANDARDS_INDEX.md`, and `payload-types.ts` surface exactly where two agents' skills collide. Strict banners are what make that monitoring possible.
+
 ## Common mistakes
 - Porting ActiveAdmin per-resource tweaks into bespoke admin React instead of Payload's declarative `admin` config.
 - Re-implementing a concern in each collection instead of ONE shared field-factory (the concern's whole point — DRY).

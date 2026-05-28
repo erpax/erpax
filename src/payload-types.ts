@@ -165,6 +165,8 @@ export interface Config {
     'workflow-definitions': WorkflowDefinition;
     'workflow-instances': WorkflowInstance;
     'bills-of-materials': BillsOfMaterial;
+    'work-centers': WorkCenter;
+    'work-shifts': WorkShift;
     'production-receipts': ProductionReceipt;
     'quality-inspections': QualityInspection;
     'wip-snapshots': WipSnapshot;
@@ -387,6 +389,8 @@ export interface Config {
     'workflow-definitions': WorkflowDefinitionsSelect<false> | WorkflowDefinitionsSelect<true>;
     'workflow-instances': WorkflowInstancesSelect<false> | WorkflowInstancesSelect<true>;
     'bills-of-materials': BillsOfMaterialsSelect<false> | BillsOfMaterialsSelect<true>;
+    'work-centers': WorkCentersSelect<false> | WorkCentersSelect<true>;
+    'work-shifts': WorkShiftsSelect<false> | WorkShiftsSelect<true>;
     'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
@@ -9762,6 +9766,134 @@ export interface WorkflowInstance {
   createdAt: string;
 }
 /**
+ * Capacity unit (machine/line/cell/vat/workstation/crew) production flows through. Self-referential hierarchy (ISA-95); rates feed IAS-2 cost-of-conversion.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-centers".
+ */
+export interface WorkCenter {
+  id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Work-center code (e.g. `WC-CUT-01`).
+   */
+  reference: string;
+  /**
+   * Human-readable work-center name.
+   */
+  name: string;
+  /**
+   * Capacity-unit kind — keeps the model industry-agnostic (discrete and process).
+   */
+  type: 'machine' | 'line' | 'cell' | 'vat' | 'workstation' | 'crew';
+  /**
+   * Parent work-center — the ISA-95 resource hierarchy (replaces code-prefix process buckets).
+   */
+  parent?: (number | null) | WorkCenter;
+  /**
+   * Throughput per hour, in `capacityUnitOfMeasure`.
+   */
+  capacityPerHour?: number | null;
+  /**
+   * UoM of capacity (pcs/kg/L/m…) — process + discrete.
+   */
+  capacityUnitOfMeasure?: string | null;
+  /**
+   * Units a single worker runs in parallel (machines-per-worker). Divides labor wage.
+   */
+  parallelism?: number | null;
+  /**
+   * Machine/overhead cost per minute (IAS-2 conversion cost).
+   */
+  costPerMinute?: number | null;
+  /**
+   * Direct-labor pay rate per hour (feeds work-shift wage roll-up).
+   */
+  payPerHour?: number | null;
+  rateCurrency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Labor/time/cost roll-up: worker × work-center × time → wage (parallelism-aware), feeding IAS-2 cost-of-conversion.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-shifts".
+ */
+export interface WorkShift {
+  id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Work-shift reference (e.g. `WS-2026-04-0042`).
+   */
+  reference: string;
+  /**
+   * Employee who worked the shift.
+   */
+  worker: number | Employee;
+  /**
+   * Work-center the labor was performed at.
+   */
+  workCenter: number | WorkCenter;
+  /**
+   * Production order the shift contributed to (optional).
+   */
+  workOrder?: (number | null) | WorkOrder;
+  /**
+   * ISO 8601 — shift start.
+   */
+  shiftStart: string;
+  /**
+   * ISO 8601 — shift end.
+   */
+  shiftEnd?: string | null;
+  /**
+   * Productive run time in minutes (drives wage).
+   */
+  runTimeMinutes?: number | null;
+  /**
+   * Good units produced this shift.
+   */
+  qtyProduced?: number | null;
+  /**
+   * Scrapped (NCR) units this shift.
+   */
+  qtyScrap?: number | null;
+  /**
+   * Labor pay rate per hour (defaults from the work-center `payPerHour`).
+   */
+  rate?: number | null;
+  /**
+   * Units run in parallel by one worker (machines-per-worker) — divides the wage.
+   */
+  parallelism?: number | null;
+  /**
+   * Derived = runTimeMinutes/60 · rate / parallelism. Do not edit.
+   */
+  wage?: number | null;
+  wageCurrency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('open' | 'closed' | 'approved') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Finished-good receipt from a work-order into inventory. Booked at absorbed cost per IAS-2 §10. The variance vs standard lands in `cost-variances`.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -17126,6 +17258,14 @@ export interface PayloadLockedDocument {
         value: number | BillsOfMaterial;
       } | null)
     | ({
+        relationTo: 'work-centers';
+        value: number | WorkCenter;
+      } | null)
+    | ({
+        relationTo: 'work-shifts';
+        value: number | WorkShift;
+      } | null)
+    | ({
         relationTo: 'production-receipts';
         value: number | ProductionReceipt;
       } | null)
@@ -21357,6 +21497,59 @@ export interface BillsOfMaterialsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-centers_select".
+ */
+export interface WorkCentersSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  reference?: T;
+  name?: T;
+  type?: T;
+  parent?: T;
+  capacityPerHour?: T;
+  capacityUnitOfMeasure?: T;
+  parallelism?: T;
+  costPerMinute?: T;
+  payPerHour?: T;
+  rateCurrency?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-shifts_select".
+ */
+export interface WorkShiftsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  reference?: T;
+  worker?: T;
+  workCenter?: T;
+  workOrder?: T;
+  shiftStart?: T;
+  shiftEnd?: T;
+  runTimeMinutes?: T;
+  qtyProduced?: T;
+  qtyScrap?: T;
+  rate?: T;
+  parallelism?: T;
+  wage?: T;
+  wageCurrency?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "production-receipts_select".
  */
 export interface ProductionReceiptsSelect<T extends boolean = true> {
@@ -25150,6 +25343,8 @@ export interface TaskCreateCollectionExport {
       | 'workflow-definitions'
       | 'workflow-instances'
       | 'bills-of-materials'
+      | 'work-centers'
+      | 'work-shifts'
       | 'production-receipts'
       | 'quality-inspections'
       | 'wip-snapshots'

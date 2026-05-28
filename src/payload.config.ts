@@ -150,6 +150,8 @@ const {
   WorkflowInstances,
   BillsOfMaterials,
   ProductionReceipts,
+  WorkCenters,
+  WorkShifts,
   QualityInspections,
   WipSnapshots,
   Properties,
@@ -540,8 +542,10 @@ export default buildConfig({
     WorkOrders,
     WorkflowDefinitions,
     WorkflowInstances,
-    // Manufacturing (4)
+    // Manufacturing (6)
     BillsOfMaterials,
+    WorkCenters,
+    WorkShifts,
     ProductionReceipts,
     QualityInspections,
     WipSnapshots,
@@ -771,6 +775,8 @@ export default buildConfig({
         // Manufacturing & Logistics
         'bills-of-materials': {},
         'work-orders': {},
+        'work-centers': {},
+        'work-shifts': {},
         'production-receipts': {},
         'cost-variances': {},
         'quality-inspections': {},
