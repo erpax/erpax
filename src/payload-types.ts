@@ -8109,9 +8109,9 @@ export interface BillsOfMaterial {
         sequence: number;
         description: string;
         /**
-         * Work-centre identifier — e.g. `MILL-01`, `ASSEMBLY-LINE-3`.
+         * Work-center performing this standard operation (relational — the capacity unit).
          */
-        workCenter?: string | null;
+        workCenter?: (number | null) | WorkCenter;
         /**
          * Standard labour-minutes per BOM run — drives direct-labour absorption.
          */
@@ -8128,6 +8128,64 @@ export interface BillsOfMaterial {
    */
   engineeringChangeOrder?: string | null;
   status?: ('draft' | 'active' | 'superseded' | 'obsolete') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Capacity unit (machine/line/cell/vat/workstation/crew) production flows through. Self-referential hierarchy (ISA-95); rates feed IAS-2 cost-of-conversion.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-centers".
+ */
+export interface WorkCenter {
+  id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Work-center code (e.g. `WC-CUT-01`).
+   */
+  reference: string;
+  /**
+   * Human-readable work-center name.
+   */
+  name: string;
+  /**
+   * Capacity-unit kind — keeps the model industry-agnostic (discrete and process).
+   */
+  type: 'machine' | 'line' | 'cell' | 'vat' | 'workstation' | 'crew';
+  /**
+   * Parent work-center — the ISA-95 resource hierarchy (replaces code-prefix process buckets).
+   */
+  parent?: (number | null) | WorkCenter;
+  /**
+   * Throughput per hour, in `capacityUnitOfMeasure`.
+   */
+  capacityPerHour?: number | null;
+  /**
+   * UoM of capacity (pcs/kg/L/m…) — process + discrete.
+   */
+  capacityUnitOfMeasure?: string | null;
+  /**
+   * Units a single worker runs in parallel (machines-per-worker). Divides labor wage.
+   */
+  parallelism?: number | null;
+  /**
+   * Machine/overhead cost per minute (IAS-2 conversion cost).
+   */
+  costPerMinute?: number | null;
+  /**
+   * Direct-labor pay rate per hour (feeds work-shift wage roll-up).
+   */
+  payPerHour?: number | null;
+  rateCurrency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -9764,64 +9822,6 @@ export interface WorkflowInstance {
   status?:
     | ('pending_start' | 'in_progress' | 'awaiting_action' | 'escalated' | 'completed' | 'cancelled' | 'errored')
     | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Capacity unit (machine/line/cell/vat/workstation/crew) production flows through. Self-referential hierarchy (ISA-95); rates feed IAS-2 cost-of-conversion.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "work-centers".
- */
-export interface WorkCenter {
-  id: number;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (number | null) | Tenant;
-  /**
-   * Work-center code (e.g. `WC-CUT-01`).
-   */
-  reference: string;
-  /**
-   * Human-readable work-center name.
-   */
-  name: string;
-  /**
-   * Capacity-unit kind — keeps the model industry-agnostic (discrete and process).
-   */
-  type: 'machine' | 'line' | 'cell' | 'vat' | 'workstation' | 'crew';
-  /**
-   * Parent work-center — the ISA-95 resource hierarchy (replaces code-prefix process buckets).
-   */
-  parent?: (number | null) | WorkCenter;
-  /**
-   * Throughput per hour, in `capacityUnitOfMeasure`.
-   */
-  capacityPerHour?: number | null;
-  /**
-   * UoM of capacity (pcs/kg/L/m…) — process + discrete.
-   */
-  capacityUnitOfMeasure?: string | null;
-  /**
-   * Units a single worker runs in parallel (machines-per-worker). Divides labor wage.
-   */
-  parallelism?: number | null;
-  /**
-   * Machine/overhead cost per minute (IAS-2 conversion cost).
-   */
-  costPerMinute?: number | null;
-  /**
-   * Direct-labor pay rate per hour (feeds work-shift wage roll-up).
-   */
-  payPerHour?: number | null;
-  rateCurrency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  status?: ('active' | 'idle' | 'maintenance' | 'retired') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;

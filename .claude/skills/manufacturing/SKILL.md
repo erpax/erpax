@@ -26,6 +26,8 @@ operation-runs.variants: [{ attributes: { size:'M', colour:'red' }, qtyOrdered, 
 ```
 A few atomic dimensions generate an unbounded variant space — the same generative/self-similar principle the [[sequence]] embodies. One UoM-aware array everywhere (run, order, summaries) — no eval, no 12-fold duplication.
 
+**Realized in erpax (don't duplicate — verified against `db/schema.rb`):** the product "dimensions" ARE the `@payloadcms/plugin-ecommerce` `variantTypes` (axes) + `variantOptions` (values) → generated `variants` — do NOT build a custom `Products.dimensions` field. `bills-of-materials` already carries `components[]` (`item`/`quantity`/`unitOfMeasure`/`wasteAllowance`=scrap%/`isOptional`) — etrima's `unit_consumption` ≈ `quantity` per `producedQuantity`; sub-assembly = a component whose item has its own BOM. Built as flat collections (`src/collections/*`, registered via the config): `work-centers`, `work-shifts`, `operations`, `routings`, `operation-runs` — standards-strict, content-uuid-bearing, accounting-hooked. `operation-runs.variants[].attributes` (open json) is the production-side variant grid replacing `option_1..12` (which in etrima lived only on `lots`/`consumptions`/`work_variants`, never on products).
+
 ## Universal levers (why it fits every industry)
 - **Unit of Measure everywhere** → process/continuous, not just piece-count.
 - **Composable dimensions** → any variation scheme.
