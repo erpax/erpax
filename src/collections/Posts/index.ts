@@ -43,7 +43,7 @@ import { localeRecord } from '../../i18n'
  * @compliance WCAG-2.1 level-AA accessibility
  * @see docs/STANDARDS.md §3
  */
-export const Posts: CollectionConfig<'posts'> = {
+export const Posts: CollectionConfig = {
   slug: 'posts',
   labels: {
     singular: localeRecord('posts.singular'),

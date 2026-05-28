@@ -16,7 +16,7 @@ import { validateRoleDefinition } from './hooks/validateRoleDefinition'
  * @compliance SOX §404 internal-controls
  * @see docs/STANDARDS.md §4.4
  */
-export const Roles: CollectionConfig<'roles'> = {
+export const Roles: CollectionConfig = {
   slug: 'roles',
   labels: {
     singular: 'Role',

@@ -296,7 +296,7 @@ const cloudflareLogger = {
   error: createLog('error', console.error),
   fatal: createLog('fatal', console.error),
   silent: () => {},
-} as PayloadBuildConfigLogger
+} as unknown as PayloadBuildConfigLogger
 
 let _cloudflare: CloudflareContext | undefined
 let _cloudflareInit = false
@@ -387,190 +387,6 @@ export default buildConfig({
           name: 'desktop',
           width: 1440,
           height: 900,
-        },
-      ],
-    },
-    sidebar: {
-      groups: [
-        {
-          label: 'Core & Multi-Tenancy',
-          collections: ['tenants', 'users', 'roles', 'user-roles'],
-        },
-        {
-          label: 'Content & CMS',
-          collections: ['pages', 'posts', 'media', 'categories'],
-        },
-        {
-          label: 'Billing & Subscriptions',
-          collections: ['invoices', 'invoice-lines', 'payment-methods', 'payments', 'subscription-plans', 'subscriptions'],
-        },
-        {
-          label: 'Inventory',
-          collections: ['items'],
-        },
-        {
-          label: 'GL Core',
-          collections: ['gl-accounts', 'gl-posting-rules', 'journal-entries', 'gl-postings'],
-        },
-        {
-          label: 'GL Lifecycle & Closing (Phase A1)',
-          collections: ['period-locks', 'closing-entries'],
-        },
-        {
-          label: 'Banking & Reconciliation',
-          collections: ['bank-statements', 'bank-transactions', 'bank-accounts', 'account-reconciliations', 'bank-reconciliations'],
-        },
-        {
-          label: 'Period Closing & Adjustments',
-          collections: ['financial-statements', 'period-end-adjustments', 'recurring-journals', 'prior-period-adjustments', 'rounding-adjustments'],
-        },
-        {
-          label: 'Tax & Currency',
-          collections: ['tax-calculations', 'tax-codes', 'tax-jurisdictions', 'tax-returns', 'currency-rates'],
-        },
-        {
-          label: 'Fiscal Period Management (Phase B1)',
-          collections: ['fiscal-periods', 'fiscal-calendars', 'fiscal-period-snapshots'],
-        },
-        {
-          label: 'Fixed Assets & Depreciation',
-          collections: ['fixed-assets', 'depreciation-schedules'],
-        },
-        {
-          label: 'Customers & Revenue',
-          collections: ['customers', 'leads', 'opportunities', 'customer-segments', 'quotes', 'sales-orders', 'sales-commissions'],
-        },
-        {
-          label: 'Order-to-Cash',
-          collections: ['credit-memos', 'returns', 'shipments', 'refunds', 'payment-allocations'],
-        },
-        {
-          label: 'Dunning & Collections',
-          collections: ['dunning-cycles'],
-        },
-        {
-          label: 'Vendors & Master Data',
-          collections: ['vendors', 'vendor-quotes', 'vendor-scorecards'],
-        },
-        {
-          label: 'Procurement & Purchase-to-Pay',
-          collections: ['purchase-orders', 'purchase-requisitions', 'goods-receipts'],
-        },
-        {
-          label: 'Inventory & Warehouse',
-          collections: ['inventory-movements', 'warehouse-locations'],
-        },
-        {
-          label: 'Cost & Budget',
-          collections: ['cost-centers', 'budget-planning', 'cost-variances'],
-        },
-        {
-          label: 'Intercompany & Consolidation',
-          collections: ['intercompany-transactions', 'consolidation-eliminations'],
-        },
-        {
-          label: 'Foreign Exchange',
-          collections: ['fx-transactions'],
-        },
-        {
-          label: 'Contracts & Obligations',
-          collections: ['contracts', 'performance-obligations', 'commitments-and-contingencies'],
-        },
-        {
-          label: 'Leases',
-          collections: ['leases', 'lease-modifications', 'lease-period-postings'],
-        },
-        {
-          label: 'Payments & Settlements',
-          collections: ['payment-runs', 'sepa-mandates'],
-        },
-        {
-          label: 'Payroll',
-          collections: ['payroll-runs'],
-        },
-        {
-          label: 'People & HR',
-          collections: ['employees', 'job-positions', 'time-entries', 'leave-requests', 'performance-reviews', 'expense-reports', 'recruiting-pipeline', 'activities'],
-        },
-        {
-          label: 'Operations & Projects',
-          collections: ['projects', 'project-tasks', 'project-milestones', 'work-orders', 'workflow-definitions', 'workflow-instances'],
-        },
-        {
-          label: 'Manufacturing',
-          collections: ['bills-of-materials', 'production-receipts', 'quality-inspections', 'wip-snapshots'],
-        },
-        {
-          label: 'Facilities & Resources',
-          collections: ['properties', 'spaces', 'maintenance-requests', 'maintenance-work-orders', 'bookable-resources', 'bookings'],
-        },
-        {
-          label: 'Logistics & Tracking',
-          collections: ['carriers', 'tracking-events', 'customs-declarations', 'consignment-arrangements', 'consignment-inventory', 'consignment-sales'],
-        },
-        {
-          label: 'Compliance, Audit & Evidence (Legacy)',
-          collections: ['audit-events', 'api-audit-events', 'evidence-attestations'],
-        },
-        {
-          label: 'Compliance Foundation (Phase 1)',
-          collections: ['entity-types', 'taxing-jurisdictions', 'entity-legal-structures', 'compliance-frameworks', 'compliance-requirements', 'internal-controls', 'control-tests'],
-        },
-        {
-          label: 'Control Testing & Evidence (Phase 2-3)',
-          collections: ['audit-samples', 'compliance-gaps', 'audit-evidence', 'audit-findings', 'audit-trail-events', 'remediation-plans'],
-        },
-        {
-          label: 'Audit Governance & Reporting (Phase 4)',
-          collections: ['audit-committees', 'audit-committee-members', 'board-actions', 'management-certifications', 'regulatory-reports'],
-        },
-        {
-          label: 'Compliance Policies & Calendars (Phase 5)',
-          collections: ['internal-policies', 'statutory-report-templates', 'statutory-field-mappings', 'policy-versions', 'policy-acknowledgments', 'compliance-deadlines', 'compliance-notifications', 'fiscal-calendars', 'reporting-standards', 'reporting-mappings'],
-        },
-        {
-          label: 'Risk, Disclosure & Audit Extension (Phase 6)',
-          collections: ['related-party-transactions', 'management-assessment-icfr', 'disclosure-checklists', 'audit-committee-minutes', 'risk-register', 'debt-schedule', 'internal-audit-function', 'segment-reporting'],
-        },
-        {
-          label: 'GDPR & Data Privacy',
-          collections: ['consent-records', 'data-subject-requests', 'data-processing-activities'],
-        },
-        {
-          label: 'AML / KYC',
-          collections: ['kyc-checks', 'beneficial-owners'],
-        },
-        {
-          label: 'Sustainability & ESG',
-          collections: ['csrd-disclosures', 'carbon-emissions'],
-        },
-        {
-          label: 'Specialized Assets',
-          collections: ['biological-assets', 'mineral-resource-assets', 'investment-properties'],
-        },
-        {
-          label: 'Financial Accounting Specialties',
-          collections: ['provisions', 'government-grants', 'deferred-tax-items', 'share-based-payments', 'business-combinations', 'held-for-sale-classifications', 'fair-value-measurements', 'earnings-per-share', 'insurance-contracts', 'regulatory-deferral-accounts', 'post-balance-sheet-events', 'transaction-failures'],
-        },
-        {
-          label: 'Transfer Pricing',
-          collections: ['transfer-pricing-files'],
-        },
-        {
-          label: 'Infrastructure & Metadata',
-          collections: ['standards', 'memories', 'mcp-tool-metadata', 'translations'],
-        },
-        {
-          label: 'CRM & Addresses',
-          collections: ['addresses'],
-        },
-        {
-          label: 'Contract Management',
-          collections: ['commitments', 'contract-amendments', 'contract-performance', 'contract-signatures', 'contract-templates'],
-        },
-        {
-          label: 'Miscellaneous',
-          collections: ['legal-entities', 'ai-suggestions', 'usage-records'],
         },
       ],
     },
@@ -1066,12 +882,7 @@ export default buildConfig({
         'gl-posting-rules': {},
         'closing-entries': {},
         'period-locks': {},
-        'tax-periods': {},
         'fiscal-period-snapshots': {},
-        consolidations: {},
-        'post-close-analytics-reports': {},
-        'audit-reports': {},
-        'transfer-pricing-adjustments': {},
         commitments: {},
         'contract-amendments': {},
         'contract-signatures': {},

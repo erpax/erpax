@@ -15,7 +15,7 @@ import { preventDuplicateAssignment } from './hooks/preventDuplicateAssignment'
  * @compliance SOC-2 CC6.3 access-removal
  * @see docs/STANDARDS.md §4.4
  */
-export const UserRoles: CollectionConfig<'user-roles'> = {
+export const UserRoles: CollectionConfig = {
   slug: 'user-roles',
   labels: {
     singular: 'User role assignment',

@@ -1,5 +1,5 @@
 import { CollectionBeforeChangeHook, CollectionAfterChangeHook } from 'payload'
-import type { Tenants } from '../../../payload-types'
+import type { Tenant } from '../../../payload-types'
 
 /**
  * BeforeCreate hook — assign a free / trial plan to a brand-new tenant so
@@ -14,14 +14,14 @@ import type { Tenants } from '../../../payload-types'
  * @compliance SOX §404 internal-controls
  * @see docs/STANDARDS.md §3
  */
-export const initializeTrialSubscription: CollectionBeforeChangeHook<Tenants> = async ({
+export const initializeTrialSubscription: CollectionBeforeChangeHook<Tenant> = async ({
   data,
   req,
 }) => {
   try {
     // Find free or trial plan
     const plans = await req.payload.find({
-      collection: 'subscriptionPlans',
+      collection: 'subscription-plans',
       where: {
         or: [
           { slug: { equals: 'free' } },
@@ -45,7 +45,7 @@ export const initializeTrialSubscription: CollectionBeforeChangeHook<Tenants> = 
     req.context = req.context || {}
     req.context.newTenant = true
     req.context.planId = plan.id
-    req.context.trialEnd = trialEnd
+    req.context.trialEnd = trialEnd.toISOString()
 
     return data
   } catch (error) {
@@ -57,7 +57,7 @@ export const initializeTrialSubscription: CollectionBeforeChangeHook<Tenants> = 
 /**
  * Create subscription after tenant is created
  */
-export const createTrialSubscriptionAfter: CollectionAfterChangeHook<Tenants> = async ({
+export const createTrialSubscriptionAfter: CollectionAfterChangeHook<Tenant> = async ({
   doc,
   req,
 }) => {
@@ -71,12 +71,12 @@ export const createTrialSubscriptionAfter: CollectionAfterChangeHook<Tenants> = 
       collection: 'subscriptions',
       data: {
         tenant: doc.id,
-        plan: req.context.planId,
+        plan: req.context.planId as number,
         status: 'trial',
-        trialStartedAt: new Date(),
-        trialEndsAt: req.context.trialEnd,
-        currentPeriodStart: new Date(),
-        currentPeriodEnd: req.context.trialEnd,
+        trialStartedAt: new Date().toISOString(),
+        trialEndsAt: req.context.trialEnd as string,
+        currentPeriodStart: new Date().toISOString(),
+        currentPeriodEnd: req.context.trialEnd as string,
       },
     })
 

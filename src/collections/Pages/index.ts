@@ -35,7 +35,7 @@ import {
  * @compliance WCAG-2.1 level-AA accessibility
  * @see docs/STANDARDS.md §3
  */
-export const Pages: CollectionConfig<'pages'> = {
+export const Pages: CollectionConfig = {
   slug: 'pages',
   labels: {
     singular: localeRecord('pages.singular'),
