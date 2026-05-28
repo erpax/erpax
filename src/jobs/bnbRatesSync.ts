@@ -129,7 +129,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
           await payload.create({
             collection: 'currency-rates',
             data: {
-              tenant: tenant.id,
+              tenant: String(tenant.id),
               fromCurrency,
               toCurrency: 'BGN',
               rate: ratePerUnit,
