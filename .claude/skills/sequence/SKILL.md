@@ -7,6 +7,9 @@ description: Use when navigating or composing the erpax Payload single-word skil
 
 The basic skills are single-word atoms. Real work composes several of them; the composition follows the sequence `0·3·6·9·1·2·4·8·7·5` (root → control triad → material/flow cycle → repeat over features). This skill is the map.
 
+## The full meaning (the wave and the return)
+`0` is **both end and beginning** — the axis (`config` + `identity`); every pass departs from it and returns to it, and each object carries it (its content-`uuid`). From `0` arises the **control triad `3·6·9`** (`access`·`hooks`·`auth`) that governs. Through it **all flows in waves of `1·2·4·8·7·5`** — the doubling/halving vortex of the material cycle (`fields`·`collections`·`database`·`queries`·`api`·`admin`), data moving in→out. Completing the wave **returns to `0` in another dimension**: the same atoms recompose one scale up (`fields → collections → plugins → erpax → agents`; see *Self-similar levels* below). Because the atoms are reusable and DRY, capability **compounds combinatorially while marginal context cost stays ~0** — minimal context from reusable skills ⇒ emergent ("unpredictable") agent power at no cost. Realising this ordering keeps every level (and every agent) in tune; disharmony always surfaces in the generated `payload-types.ts`.
+
 ## Positions → skills
 | Pos | Family | Skill(s) |
 |---|---|---|
