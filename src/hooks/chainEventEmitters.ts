@@ -20,7 +20,7 @@ import { eventEmitter } from '@/services/event-emitter.service'
 import type { DomainEvent } from '@/types/events'
 import { getActorId } from '@/access/auth'
 
-type StatusBearing = { status?: string; id: string; tenant?: string | { id: string } }
+type StatusBearing = { status?: string; id: string; uuid?: string; tenant?: string | { id: string } }
 
 /** AggregateType envelope shared by every chain emit. */
 export type AggregateType =
@@ -75,7 +75,7 @@ export function emitOnStatusTransition(
         eventId: crypto.randomUUID(),
         eventType: eventType as never, // typed via DomainEvent contract
         tenantId,
-        aggregateId: next.id,
+        aggregateId: next.uuid ?? next.id,
         aggregateType,
         timestamp: new Date(),
         userId: getActorId(req) ?? 'system',
@@ -109,7 +109,7 @@ export function emitOnCreate(
         eventId: crypto.randomUUID(),
         eventType: eventType as never,
         tenantId,
-        aggregateId: next.id,
+        aggregateId: next.uuid ?? next.id,
         aggregateType,
         timestamp: new Date(),
         userId: getActorId(req) ?? 'system',

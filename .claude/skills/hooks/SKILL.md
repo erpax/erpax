@@ -32,6 +32,9 @@ Hooks run side effects/mutations at precise points in the document lifecycle. Fo
 - Encryption/decryption pattern: encrypt in `beforeChange`, decrypt in `afterRead`.
 - `req.context` carries data between hooks within one request.
 
+## Hooks are where multiverses connect
+`afterChange` hooks that emit domain events (`chainEventEmitters`) are the membrane between universes: an instance writes → the hook fires a content-uuid-keyed event → other subsystems (accounting/audit) AND other erpax instances (federation peers) consume it and reconcile. The emitted event's aggregate identity MUST be the content-`uuid` (the 0 — see [[identity]]), not the instance-local integer `id`, or the connection can't reconcile across instances. Hooks (position 6, the control triad) govern this seam.
+
 ## Common mistakes
 - Forgetting to return `data`/`value` (mutation lost).
 - Wrong v3 type name — use `CollectionBeforeChangeHook` etc. (v4).
