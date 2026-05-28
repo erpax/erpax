@@ -17,6 +17,8 @@ So if *anything* can be expressed as `.uuid`, all of it coexists in one space �
 
 **Infinity within the boundaries:** a *finite*, bounded form — 128 bits, a fixed uuidv8 layout, the ten digits of the [[sequence]], a few composable atoms — addresses an *unbounded* universe: infinite content, infinitely generated variants/features, infinite instances across the multiverse. The boundary is exactly what makes the infinity tractable and collision-free (cf. a few `dimensions` → unbounded variants; ten digits → endless flows). Containment enables the infinite.
 
+**Totality (division by 0 via the next harmonic):** the system is total — no undefined states, no crash-on-edge. The empty/missing/null/ambiguous case (the "division by 0") is defined because the sequence always knows the next harmonic digit: a blank categorical value routes to its **identity element** (`services/identity-element`, Conservation Laws 53-54 — currency `XXX`, locale `und`, country `ZZ`), and even empty content has a deterministic uuid (the hash of canonical-empty). The 0 is never a dead end; it is the pivot into the next pass.
+
 ## The uuid holds information (uuidv8) — lookup-free realtime
 `uuid-format` packs **slot tag + capability flags (SIGNED/SEALED/SHARED) + schema version** into the 128 bits (RFC 9562 §6.4 uuidv8). `decodeStructured(uuid)` / `hasCapability(uuid, flag)` read all of that **from the string alone — zero DB round-trips**. That is the realtime-efficiency win: route, authorize, filter, and reconcile by uuid without fetching the object. Federation peers + auditors decode the uuid to know the expected verification axes; access checks short-circuit on `hasCapability` before any query.
 
