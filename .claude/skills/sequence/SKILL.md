@@ -10,7 +10,7 @@ The basic skills are single-word atoms. Real work composes several of them; the 
 ## Positions → skills
 | Pos | Family | Skill(s) |
 |---|---|---|
-| **0** | root/axis | `config` |
+| **0** | root/axis | `config` · `identity` (content-addressed uuid — same content ⇒ same id ⇒ seamless merge) |
 | **3·6·9** | control triad (governs) | `access` · `hooks` · `auth` |
 | **1·2·4·8·7·5** | material/flow cycle (data in→out) | `fields` · `collections` · `database` · `queries` · `api` · `admin` |
 | cycle ↻ | features & cross-cutting | `plugins` `types` `versions` `jobs` `upload` `optimize` `harden` `deploy` `recover` |
