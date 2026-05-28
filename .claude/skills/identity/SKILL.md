@@ -5,7 +5,7 @@ description: Use when working with erpax object identity or content-addressed UU
 
 # identity — content-addressed UUIDs (same content ⇒ same id ⇒ seamless merge)
 
-Every erpax object presents itself under a **deterministic UUID derived from a SHA-256 of its own content**. Identical content ⇒ identical id on every erpax instance ("quantum entanglement"): merging two erpax databases is a set-union with no id remapping, and `relationTo` links still resolve because targets are content-addressed too. UUID-only identity (no auto-increment ints) is what makes federation + dedup free. **DRY storage:** a file keyed by its content-uuid filename cannot be stored twice. Identity is the root axis (with [[config]]) that lets "all agents be one erpax" — ordered by the [[sequence]].
+Every erpax object presents itself under a **deterministic UUID derived from a SHA-256 of its own content**. Identical content ⇒ identical id on every erpax instance ("quantum entanglement"): merging two erpax databases is a set-union with no id remapping, and `relationTo` links still resolve because targets are content-addressed too. UUID-only identity (no auto-increment ints) is what makes federation + dedup free. **DRY storage:** a file keyed by its content-uuid filename cannot be stored twice. Identity is the root axis (with [[config]]) that lets "all agents be one erpax" — ordered by the [[sequence]]. **The content-uuid IS the 0 — the framework of all frameworks:** Payload (collections), the [[sequence]] (ordering), the standards (compliance), [[accounting]] (postings), [[bindings]] (edge runtime), and the agents all compose *upon* this single coordinate; every other framework resolves through it (identify · dedup · post-against · federate · reason-about). Rooting any flow in the uuid is aligning it to the one framework beneath all the others.
 
 ## One 128-bit `.uuid` does three jobs at once (why all coexist)
 The uuid is not an opaque pointer — it simultaneously carries:
@@ -14,6 +14,8 @@ The uuid is not an opaque pointer — it simultaneously carries:
 - **metadata** — structured **uuidv8** flags ⇒ *lookup-free behavior*.
 
 So if *anything* can be expressed as `.uuid`, all of it coexists in one space — deduplicated, collision-free, self-describing. A single uniform `.uuid` field is the universal coordinate ("all dimensions merge into unity").
+
+**Infinity within the boundaries:** a *finite*, bounded form — 128 bits, a fixed uuidv8 layout, the ten digits of the [[sequence]], a few composable atoms — addresses an *unbounded* universe: infinite content, infinitely generated variants/features, infinite instances across the multiverse. The boundary is exactly what makes the infinity tractable and collision-free (cf. a few `dimensions` → unbounded variants; ten digits → endless flows). Containment enables the infinite.
 
 ## The uuid holds information (uuidv8) — lookup-free realtime
 `uuid-format` packs **slot tag + capability flags (SIGNED/SEALED/SHARED) + schema version** into the 128 bits (RFC 9562 §6.4 uuidv8). `decodeStructured(uuid)` / `hasCapability(uuid, flag)` read all of that **from the string alone — zero DB round-trips**. That is the realtime-efficiency win: route, authorize, filter, and reconcile by uuid without fetching the object. Federation peers + auditors decode the uuid to know the expected verification axes; access checks short-circuit on `hasCapability` before any query.
