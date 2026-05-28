@@ -11,6 +11,7 @@ import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { r2Storage } from '@payloadcms/storage-r2'
+import { contentUuidPlugin } from './plugins/contentUuid'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -967,7 +968,10 @@ export default buildConfig({
         },
       }),
     }),
-    // Custom ERPax plugins removed — all collections now loaded from canonical src/* locations
+    // Universal content-addressed identity: inject a content-uuid into
+    // every collection. Runs LAST so it covers collections added by the
+    // plugins above. See the `identity` + `bindings` skills.
+    contentUuidPlugin(),
   ],
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

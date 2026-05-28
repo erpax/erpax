@@ -1089,9 +1089,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1038:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1056:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1057:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1042:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1060:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1061:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1407,8 +1407,8 @@ src/services/cloning/index.ts:9: * @standard W3C Verifiable Credentials Data Mod
 src/services/cloning/publish.ts:5: * @standard W3C Activity Streams 2.0 (federated content envelope)
 src/services/cloning/publish.ts:6: * @standard NIST FIPS 204 ML-DSA (when sign fn provided)
 src/services/cloning/verify.ts:10: * @standard RFC 4122 §4.3 + RFC 8785
+src/services/cloudflare/index.ts:102: * @standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot
 src/services/cloudflare/index.ts:10: * @standard W3C Service Worker §4 (Workers compat)
-src/services/cloudflare/index.ts:110: * @standard ISO/IEC 25010:2023 §5.2 reliability — fail-fast at boot
 src/services/cloudflare/index.ts:9: * @standard Cloudflare Workers Runtime API
 src/services/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST SP 800-38D AES-GCM, NIST SP 800-57 §5.6
 src/services/cloudflare/plugin-access.ts:41: * @standard ISO 27001 A.5.15 access-control
@@ -2494,7 +2494,6 @@ src/utilities/tenant-context.ts:38: * @standard ISO-4217:2015 currency-codes alp
 src/utilities/tenant-context.ts:39: * @standard BCP-47 language-tag locale-cascade
 src/utilities/tenant-context.ts:40: * @standard ECMA-402 internationalization-api
 src/utilities/tenantRemoteSecrets.ts:5: * @standard NIST SP-800-108 key-derivation-function (sibling: `getPreviewSecret`)
-src/workers/index.ts:19: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation
 tests/e2e/admin-evidence.e2e.spec.ts:25: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/admin-evidence.e2e.spec.ts:26: * @standard ISO/IEC-29119-3:2021 test-documentation
 tests/e2e/admin-evidence.e2e.spec.ts:27: * @standard W3C WebDriver-BiDi browser-automation
@@ -3924,9 +3923,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1036:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1037:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1058:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1040:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1041:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1062:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/seeds/accounting/critical-gaps-verification.test.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4953,8 +4952,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1039:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1059:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1043:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1063:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/critical-gaps-verification.test.ts:8: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-evidence
@@ -5310,7 +5309,6 @@ src/utilities/scopes/constants.ts:7: * @audit ISO-19011:2018 audit-trail draft-v
 src/utilities/scopes/filters.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/utilities/svg-hero-generator.ts:20: * @audit ISO-19011:2018 audit-trail seed-media-provenance
 src/utilities/tenant-context.ts:45: * @audit ISO-19011:2018 audit-trail config-cascade-resolution
-src/workers/index.ts:20: * @audit ISO 19011:2018 §6.4.6 (audit-chain tamper-evidence)
 tests/e2e/admin-evidence.e2e.spec.ts:28: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/categories/admin-data.e2e.spec.ts:11: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/categories/compliance-evidence.e2e.spec.ts:12: * @audit ISO-19011:2018 audit-trail visual-evidence

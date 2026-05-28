@@ -681,6 +681,10 @@ export interface PayloadMcpApiKeyAuthOperations {
  */
 export interface Tenant {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   name: string;
   /**
    * Used for domain-based tenant handling
@@ -816,6 +820,10 @@ export interface Tenant {
  */
 export interface User {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   password?: string | null;
   name?: string | null;
   roles?:
@@ -913,6 +921,10 @@ export interface User {
  */
 export interface Order {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   items?:
     | {
@@ -951,6 +963,10 @@ export interface Order {
  */
 export interface Product {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   title: string;
   description?: {
@@ -1012,6 +1028,10 @@ export interface Product {
  */
 export interface Media {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   alt?: string | null;
   caption?: {
@@ -1106,6 +1126,10 @@ export interface Media {
 export interface VariantOption {
   id: number;
   _variantOptions_options_order?: string | null;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   variantType: number | VariantType;
   label: string;
@@ -1123,6 +1147,10 @@ export interface VariantOption {
  */
 export interface VariantType {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   label: string;
   name: string;
@@ -1189,6 +1217,10 @@ export interface CallToActionBlock {
  */
 export interface Page {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   title: string;
   hero: {
@@ -1268,6 +1300,10 @@ export interface Page {
  */
 export interface Post {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   title: string;
   heroImage?: (number | null) | Media;
@@ -1319,6 +1355,10 @@ export interface Post {
  */
 export interface Category {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   title: string;
   /**
@@ -1464,6 +1504,10 @@ export interface FormBlock {
  */
 export interface Form {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   title: string;
   fields?:
     | (
@@ -1638,6 +1682,10 @@ export interface Form {
  */
 export interface Variant {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Used for administrative purposes, not shown to customers. This is populated by default.
@@ -1659,6 +1707,10 @@ export interface Variant {
  */
 export interface Transaction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   items?:
     | {
@@ -1702,6 +1754,10 @@ export interface Transaction {
  */
 export interface Cart {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   items?:
     | {
@@ -1726,6 +1782,10 @@ export interface Cart {
  */
 export interface Address {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   customer?: (number | null) | User;
   title?: string | null;
@@ -1852,6 +1912,10 @@ export interface Address {
  */
 export interface GlAccount {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Unique account code (e.g., 1000, 2100, 5001) — matches your jurisdiction's chart-of-accounts numbering.
@@ -1915,6 +1979,10 @@ export interface GlAccount {
  */
 export interface Role {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   name: string;
   /**
    * Matches stored role rows: global → no resource; collection → slug only; document → polymorphic reference.
@@ -1963,6 +2031,10 @@ export interface Role {
  */
 export interface UserRole {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   user: number | User;
   role: number | Role;
   updatedAt: string;
@@ -1974,6 +2046,10 @@ export interface UserRole {
  */
 export interface Invoice {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   typeStatus: {
     /**
@@ -2320,6 +2396,10 @@ export interface Invoice {
  */
 export interface Subscription {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Current subscription plan
@@ -2356,6 +2436,10 @@ export interface Subscription {
  */
 export interface SubscriptionPlan {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   name: string;
   slug: string;
   /**
@@ -2402,6 +2486,10 @@ export interface SubscriptionPlan {
  */
 export interface InvoiceLine {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Parent invoice
@@ -2638,6 +2726,10 @@ export interface InvoiceLine {
  */
 export interface Item {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Item code
@@ -2800,6 +2892,10 @@ export interface Item {
  */
 export interface PaymentMethod {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   stripePaymentMethodId: string;
   type: 'card' | 'bank_account';
@@ -2831,6 +2927,10 @@ export interface PaymentMethod {
  */
 export interface Payment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Transaction reference number
@@ -2927,6 +3027,10 @@ export interface Payment {
  */
 export interface GlPostingRule {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Account classification for validation & reporting
@@ -3007,6 +3111,10 @@ export interface GlPostingRule {
  */
 export interface JournalEntry {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entryNumber: string;
   entryDate: string;
@@ -3050,6 +3158,10 @@ export interface JournalEntry {
  */
 export interface GlPosting {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   postingId: string;
   sourceType:
@@ -3104,6 +3216,10 @@ export interface GlPosting {
  */
 export interface PeriodLock {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * E.g., "FY 2026 Period 5" or "FY 2026 Q2"
@@ -3185,6 +3301,10 @@ export interface PeriodLock {
  */
 export interface ClosingEntry {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Entity for which period is being closed
@@ -3367,6 +3487,10 @@ export interface ClosingEntry {
  */
 export interface LegalEntity {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
@@ -3490,6 +3614,10 @@ export interface LegalEntity {
  */
 export interface FiscalPeriod {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Auto-derived label (e.g., FY2026-P05). Editable.
@@ -3576,6 +3704,10 @@ export interface FiscalPeriod {
  */
 export interface BankStatement {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   statementId: string;
   bankAccount: number | GlAccount;
@@ -3621,6 +3753,10 @@ export interface BankStatement {
  */
 export interface BankTransaction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Stable unique id for this line. For ISO 20022, prefer accountServicerReference; fallback to endToEndId.
@@ -3728,6 +3864,10 @@ export interface BankTransaction {
  */
 export interface BankAccount {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Friendly label, e.g. "Operating Account — Bulbank EUR".
@@ -3787,6 +3927,10 @@ export interface BankAccount {
  */
 export interface AccountReconciliation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Human-readable id, e.g. REC-2026-04-OPS-1
@@ -3897,6 +4041,10 @@ export interface AccountReconciliation {
  */
 export interface BankReconciliation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reconciliation reference (e.g. `REC-2026-04-EUR-MAIN`).
@@ -3961,6 +4109,10 @@ export interface BankReconciliation {
  */
 export interface FinancialStatement {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   statementId: string;
   statementType: 'trial_balance' | 'balance_sheet' | 'income_statement' | 'cash_flow_statement' | 'equity_statement';
@@ -4017,6 +4169,10 @@ export interface FinancialStatement {
  */
 export interface PeriodEndAdjustment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   adjustmentId: string;
   adjustmentType:
@@ -4047,6 +4203,10 @@ export interface PeriodEndAdjustment {
  */
 export interface RecurringJournal {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   description?: string | null;
@@ -4131,6 +4291,10 @@ export interface RecurringJournal {
  */
 export interface CostCenter {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Short alphanumeric code (e.g. EU-DE-ENG-FE).
@@ -4201,6 +4365,10 @@ export interface CostCenter {
  */
 export interface Project {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Tenant-unique project code (e.g. PRJ-2026-001).
@@ -4290,6 +4458,10 @@ export interface Project {
  */
 export interface Customer {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Unique customer code (e.g., CUST-0001)
@@ -4440,6 +4612,10 @@ export interface Customer {
  */
 export interface TaxCode {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Tax code (e.g., EU-DE-VAT-19, US-CA-SALES-7.25)
@@ -4536,6 +4712,10 @@ export interface TaxCode {
  */
 export interface TaxJurisdiction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
@@ -4615,6 +4795,10 @@ export interface TaxJurisdiction {
  */
 export interface Contract {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   contractNumber: string;
   customer: number | Customer;
@@ -4703,6 +4887,10 @@ export interface Contract {
  */
 export interface PerformanceObligation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   contract: number | Contract;
   description: string;
@@ -4773,6 +4961,10 @@ export interface PerformanceObligation {
  */
 export interface PriorPeriodAdjustment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * PPA reference (e.g. `PPA-2026-001`).
@@ -4827,6 +5019,10 @@ export interface PriorPeriodAdjustment {
  */
 export interface RoundingAdjustment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential rounding-adjustment reference (e.g. `RND-2026-04-001`).
@@ -4874,6 +5070,10 @@ export interface RoundingAdjustment {
  */
 export interface TaxCalculation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   calculationId: string;
   taxType: 'sales_tax' | 'vat' | 'gst' | 'income_tax' | 'payroll_tax';
@@ -4900,6 +5100,10 @@ export interface TaxCalculation {
  */
 export interface TaxReturn {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   returnId: string;
   returnType:
@@ -4953,6 +5157,10 @@ export interface TaxReturn {
  */
 export interface CurrencyRate {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   rateId: string;
   fromCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
@@ -4976,6 +5184,10 @@ export interface CurrencyRate {
  */
 export interface FiscalCalendar {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Entity this calendar applies to
@@ -5050,6 +5262,10 @@ export interface FiscalCalendar {
  */
 export interface FiscalPeriodSnapshot {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * FiscalPeriods record for which this snapshot was created
@@ -5245,6 +5461,10 @@ export interface FixedAsset {
  */
 export interface Vendor {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Unique vendor code (e.g., VEND-0001)
@@ -5425,6 +5645,10 @@ export interface Vendor {
  */
 export interface DepreciationSchedule {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   scheduleId: string;
   fixedAsset: number | FixedAsset;
@@ -5461,6 +5685,10 @@ export interface DepreciationSchedule {
  */
 export interface Lead {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   fullName: string;
   firstName?: string | null;
@@ -5527,6 +5755,10 @@ export interface Lead {
  */
 export interface Opportunity {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   lead?: (number | null) | Lead;
@@ -5587,6 +5819,10 @@ export interface Opportunity {
  */
 export interface CustomerSegment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   description?: string | null;
@@ -5630,6 +5866,10 @@ export interface CustomerSegment {
  */
 export interface ConsentRecord {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   consentId: string;
   dataSubject: number | User;
@@ -5667,6 +5907,10 @@ export interface ConsentRecord {
  */
 export interface Quote {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   quoteNumber: string;
   customer: number | Customer;
@@ -5832,6 +6076,10 @@ export interface SalesOrder {
  */
 export interface SalesCommission {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   salesperson: number | User;
@@ -5903,6 +6151,10 @@ export interface SalesCommission {
  */
 export interface Employee {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Internal employee id (e.g. EMP-2026-001).
@@ -6070,6 +6322,10 @@ export interface Employee {
  */
 export interface PayrollRun {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Human-readable id (e.g. PR-2026-04-MONTHLY).
@@ -6216,6 +6472,10 @@ export interface PayrollRun {
  */
 export interface PaymentRun {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Human-readable run id (e.g. PR-2026-05-AP-1). Maps to ISO 20022 GrpHdr/MsgId.
@@ -6331,6 +6591,10 @@ export interface PaymentRun {
  */
 export interface Provision {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Tenant-unique provision reference (e.g. PROV-2026-001).
@@ -6423,6 +6687,10 @@ export interface Provision {
  */
 export interface AuditFinding {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   findingTitle: string;
   findingType:
@@ -6492,6 +6760,10 @@ export interface AuditFinding {
  */
 export interface AuditEvidence {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   evidenceTitle: string;
   documentType:
@@ -6526,6 +6798,10 @@ export interface AuditEvidence {
  */
 export interface RemediationPlan {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   planTitle: string;
   finding?: (number | null) | AuditFinding;
@@ -6594,6 +6870,10 @@ export interface RemediationPlan {
  */
 export interface ComplianceGap {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   requirement: number | ComplianceRequirement;
   gapTitle: string;
@@ -6631,6 +6911,10 @@ export interface ComplianceGap {
  */
 export interface ComplianceRequirement {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   requirementName: string;
   framework: number | ComplianceFramework;
@@ -6675,6 +6959,10 @@ export interface ComplianceRequirement {
  */
 export interface ComplianceFramework {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   frameworkType: 'gaap' | 'ifrs' | 'sox' | 'coso' | 'gdpr' | 'iso' | 'regulatory' | 'other';
@@ -6706,6 +6994,10 @@ export interface ComplianceFramework {
  */
 export interface TaxingJurisdiction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   jurisdictionType: 'country' | 'state' | 'local' | 'special-zone';
@@ -6729,6 +7021,10 @@ export interface TaxingJurisdiction {
  */
 export interface EntityType {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   code: string;
@@ -6757,6 +7053,10 @@ export interface EntityType {
  */
 export interface CreditMemo {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   memoNumber: string;
   /**
@@ -6811,6 +7111,10 @@ export interface CreditMemo {
  */
 export interface Return {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   rmaNumber: string;
   order: number | SalesOrder;
@@ -6848,6 +7152,10 @@ export interface Return {
  */
 export interface Shipment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   shipmentNumber: string;
   order: number | SalesOrder;
@@ -6895,6 +7203,10 @@ export interface Shipment {
  */
 export interface Refund {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   refundNumber: string;
   creditMemo: number | CreditMemo;
@@ -6927,6 +7239,10 @@ export interface Refund {
  */
 export interface PaymentAllocation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Optional human-readable reference; auto-populated from payment+invoice when omitted.
@@ -6985,6 +7301,10 @@ export interface PaymentAllocation {
  */
 export interface DunningCycle {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   cycleId: string;
   invoice: number | Invoice;
@@ -7059,6 +7379,10 @@ export interface DunningCycle {
  */
 export interface VendorQuote {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
@@ -7134,6 +7458,10 @@ export interface VendorQuote {
  */
 export interface PurchaseRequisition {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   requisitionNumber: string;
   requisitioner: number | User;
@@ -7215,6 +7543,10 @@ export interface PurchaseRequisition {
  */
 export interface PurchaseOrder {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   poNumber: string;
   /**
@@ -7281,6 +7613,10 @@ export interface PurchaseOrder {
  */
 export interface GoodsReceipt {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   receiptNumber: string;
   purchaseOrder: number | PurchaseOrder;
@@ -7311,6 +7647,10 @@ export interface GoodsReceipt {
  */
 export interface VendorScorecard {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   vendor: number | Vendor;
@@ -7389,6 +7729,10 @@ export interface VendorScorecard {
  */
 export interface InventoryMovement {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   movementId: string;
   kind:
@@ -7447,6 +7791,10 @@ export interface InventoryMovement {
  */
 export interface WarehouseLocation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Short code, e.g. SOF-MAIN, NYC-3PL.
@@ -7491,6 +7839,10 @@ export interface WarehouseLocation {
  */
 export interface BudgetPlanning {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   budgetId: string;
   fiscalYear: number;
@@ -7528,6 +7880,10 @@ export interface BudgetPlanning {
  */
 export interface CostVariance {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Variance reference (e.g. `VAR-2026-04-0001`).
@@ -7593,6 +7949,10 @@ export interface CostVariance {
  */
 export interface WorkOrder {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Work-order reference (e.g. `WO-2026-04-0123`).
@@ -7673,6 +8033,10 @@ export interface WorkOrder {
  */
 export interface BillsOfMaterial {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * BOM reference (e.g. `BOM-WIDGET-001-v3`).
@@ -7769,6 +8133,10 @@ export interface BillsOfMaterial {
  */
 export interface IntercompanyTransaction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Pair reference — both legs of the intercompany pair carry the same reference for join.
@@ -7834,6 +8202,10 @@ export interface IntercompanyTransaction {
  */
 export interface ConsolidationElimination {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential elimination reference (e.g. `ELIM-2026-Q1-001`).
@@ -7894,6 +8266,10 @@ export interface ConsolidationElimination {
  */
 export interface FxTransaction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.
@@ -7964,6 +8340,10 @@ export interface FxTransaction {
  */
 export interface CommitmentsAndContingency {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   description: string;
@@ -8035,6 +8415,10 @@ export interface CommitmentsAndContingency {
  */
 export interface Lease {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   leaseNumber: string;
   /**
@@ -8172,6 +8556,10 @@ export interface Lease {
  */
 export interface LeaseModification {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   lease: number | Lease;
@@ -8280,6 +8668,10 @@ export interface LeaseModification {
  */
 export interface EvidenceAttestation {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Filename-style id (e.g. `2026-05-09-order-to-cash-tenant-42`).
@@ -8355,6 +8747,10 @@ export interface EvidenceAttestation {
  */
 export interface LeasePeriodPosting {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Stable id (e.g. LPP-2026-04-LEASE-001).
@@ -8435,6 +8831,10 @@ export interface LeasePeriodPosting {
  */
 export interface SepaMandate {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Unique mandate identifier carried in pain.008 MndtId.
@@ -8497,6 +8897,10 @@ export interface SepaMandate {
  */
 export interface JobPosition {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   positionCode: string;
   positionTitle: string;
@@ -8579,6 +8983,10 @@ export interface JobPosition {
  */
 export interface TimeEntry {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Stable id (e.g. TE-2026-04-001).
@@ -8738,6 +9146,10 @@ export interface LeaveRequest {
  */
 export interface PerformanceReview {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   employee: number | Employee;
@@ -8824,6 +9236,10 @@ export interface PerformanceReview {
  */
 export interface ExpenseReport {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reportNumber: string;
   employee: number | Employee;
@@ -8932,6 +9348,10 @@ export interface ExpenseReport {
  */
 export interface RecruitingPipeline {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   candidateName: string;
   firstName?: string | null;
@@ -9024,6 +9444,10 @@ export interface RecruitingPipeline {
  */
 export interface Activity {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   subject: string;
   activityType:
@@ -9067,6 +9491,10 @@ export interface Activity {
  */
 export interface ProjectTask {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   project: number | Project;
   /**
@@ -9123,6 +9551,10 @@ export interface ProjectTask {
  */
 export interface ProjectMilestone {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   project: number | Project;
   /**
@@ -9176,6 +9608,10 @@ export interface ProjectMilestone {
  */
 export interface WorkflowDefinition {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   description?: string | null;
@@ -9252,6 +9688,10 @@ export interface WorkflowDefinition {
  */
 export interface WorkflowInstance {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency key.
@@ -9329,6 +9769,10 @@ export interface WorkflowInstance {
  */
 export interface ProductionReceipt {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Receipt reference (e.g. `PR-2026-04-0001`).
@@ -9405,6 +9849,10 @@ export interface ProductionReceipt {
  */
 export interface QualityInspection {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Inspection reference (e.g. `QC-2026-04-0001`).
@@ -9467,6 +9915,10 @@ export interface QualityInspection {
  */
 export interface WipSnapshot {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Tenant-unique snapshot reference (e.g. WIP-2026-04-PRJ-001).
@@ -9535,6 +9987,10 @@ export interface WipSnapshot {
  */
 export interface Property {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Short code (e.g. `HQ-SOF`, `WHS-BER-01`).
@@ -9665,6 +10121,10 @@ export interface Property {
  */
 export interface Space {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Short code (e.g. `HQ-SOF-F03-R201`).
@@ -9765,6 +10225,10 @@ export interface Space {
  */
 export interface MaintenanceRequest {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential request reference (e.g. `MR-2026-04-001`).
@@ -9862,6 +10326,10 @@ export interface MaintenanceRequest {
  */
 export interface BookableResource {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Short code (e.g. `ROOM-201`, `VAN-03`, `LATHE-A`).
@@ -9970,6 +10438,10 @@ export interface BookableResource {
  */
 export interface MaintenanceWorkOrder {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential work-order reference (e.g. `WO-2026-04-001`).
@@ -10110,6 +10582,10 @@ export interface MaintenanceWorkOrder {
  */
 export interface Booking {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential booking reference (e.g. `BK-2026-04-001` or PMS confirmation number).
@@ -10218,6 +10694,10 @@ export interface Booking {
  */
 export interface Carrier {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Carrier code (e.g. `DHL`, `UPS`, `FEDEX`, `BG-POST`).
@@ -10286,6 +10766,10 @@ export interface Carrier {
  */
 export interface TrackingEvent {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   shipment: number | Shipment;
   /**
@@ -10361,6 +10845,10 @@ export interface TrackingEvent {
  */
 export interface CustomsDeclaration {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Movement Reference Number (UCC). Issued by customs after acceptance.
@@ -10476,6 +10964,10 @@ export interface CustomsDeclaration {
  */
 export interface ConsignmentArrangement {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential arrangement reference (e.g. `CONS-2026-001`).
@@ -10554,6 +11046,10 @@ export interface ConsignmentArrangement {
  */
 export interface ConsignmentInventory {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Stable line id (e.g. `CINV-2026-04-001`).
@@ -10622,6 +11118,10 @@ export interface ConsignmentInventory {
  */
 export interface ConsignmentSale {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sale reference reported by the consignee (e.g. `CSALE-2026-04-001`).
@@ -10695,6 +11195,10 @@ export interface ConsignmentSale {
  */
 export interface AuditEvent {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — canonical event identifier. Carried in DomainEvent.eventId from the emitter; persisted here for SOX §404 / ISO 19011 §6.4.6 unique traceability.
@@ -10814,6 +11318,10 @@ export interface AuditEvent {
  */
 export interface ApiAuditEvent {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Stable id (e.g. APIE-2026-05-09-001 or a UUID).
@@ -10885,6 +11393,10 @@ export interface ApiAuditEvent {
  */
 export interface EntityLegalStructure {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   legalCode: string;
@@ -10915,6 +11427,10 @@ export interface EntityLegalStructure {
  */
 export interface InternalControl {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   controlName: string;
   controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
@@ -10956,6 +11472,10 @@ export interface InternalControl {
  */
 export interface ControlTest {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   control: number | InternalControl;
   testName: string;
@@ -10989,6 +11509,10 @@ export interface ControlTest {
  */
 export interface AuditSample {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   controlTest: number | ControlTest;
   itemIdentifier: string;
@@ -11032,6 +11556,10 @@ export interface AuditSample {
  */
 export interface AuditTrailEvent {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   operation: 'create' | 'update' | 'delete';
   collectionName: string;
@@ -11097,6 +11625,10 @@ export interface AuditTrailEvent {
  */
 export interface AuditCommittee {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   name: string;
   entity: number | LegalEntity;
@@ -11114,6 +11646,10 @@ export interface AuditCommittee {
  */
 export interface AuditCommitteeMember {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   committee: number | AuditCommittee;
   memberName: string;
@@ -11138,6 +11674,10 @@ export interface AuditCommitteeMember {
  */
 export interface BoardAction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   actionTitle: string;
@@ -11182,6 +11722,10 @@ export interface BoardAction {
  */
 export interface ManagementCertification {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   certificationName: string;
@@ -11222,6 +11766,10 @@ export interface ManagementCertification {
  */
 export interface RegulatoryReport {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   reportName: string;
@@ -11267,6 +11815,10 @@ export interface RegulatoryReport {
  */
 export interface InternalPolicy {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   policyName: string;
   policyNumber: string;
@@ -11310,6 +11862,10 @@ export interface InternalPolicy {
  */
 export interface StatutoryReportTemplate {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   templateName: string;
   jurisdiction: number | TaxingJurisdiction;
@@ -11335,6 +11891,10 @@ export interface StatutoryReportTemplate {
  */
 export interface StatutoryFieldMapping {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   mappingName: string;
   reportTemplate: number | StatutoryReportTemplate;
@@ -11382,6 +11942,10 @@ export interface StatutoryFieldMapping {
  */
 export interface PolicyVersion {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   policy: number | InternalPolicy;
   versionNumber: string;
@@ -11413,6 +11977,10 @@ export interface PolicyVersion {
  */
 export interface PolicyAcknowledgment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   policy: number | InternalPolicy;
   policyVersion?: (number | null) | PolicyVersion;
@@ -11431,6 +11999,10 @@ export interface PolicyAcknowledgment {
  */
 export interface ComplianceDeadline {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   deadlineName: string;
@@ -11457,6 +12029,10 @@ export interface ComplianceDeadline {
  */
 export interface ComplianceNotification {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   deadline: number | ComplianceDeadline;
   notificationTitle: string;
@@ -11495,6 +12071,10 @@ export interface ComplianceNotification {
  */
 export interface ReportingStandard {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   standardName: string;
   standardCode: string;
@@ -11527,6 +12107,10 @@ export interface ReportingStandard {
  */
 export interface ReportingMapping {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   mappingName: string;
   fromStandard: number | ReportingStandard;
@@ -11564,6 +12148,10 @@ export interface ReportingMapping {
  */
 export interface RelatedPartyTransaction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   relatedPartyName: string;
@@ -11682,6 +12270,10 @@ export interface RelatedPartyTransaction {
  */
 export interface ManagementAssessmentIcfr {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   /**
@@ -11900,6 +12492,10 @@ export interface ManagementAssessmentIcfr {
  */
 export interface DisclosureChecklist {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   /**
@@ -11998,6 +12594,10 @@ export interface DisclosureChecklist {
  */
 export interface AuditCommitteeMinute {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   auditCommittee: number | AuditCommittee;
   entity: number | LegalEntity;
@@ -12213,6 +12813,10 @@ export interface AuditCommitteeMinute {
  */
 export interface RiskRegister {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   /**
@@ -12335,6 +12939,10 @@ export interface RiskRegister {
  */
 export interface DebtSchedule {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   /**
@@ -12551,6 +13159,10 @@ export interface DebtSchedule {
  */
 export interface InternalAuditFunction {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   /**
@@ -12814,6 +13426,10 @@ export interface InternalAuditFunction {
  */
 export interface SegmentReporting {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   entity: number | LegalEntity;
   segmentationBasis: 'operating' | 'geographic' | 'business-line' | 'customer-product';
@@ -12987,6 +13603,10 @@ export interface SegmentReporting {
  */
 export interface DataSubjectRequest {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   requestId: string;
   dataSubject: number | User;
@@ -13039,6 +13659,10 @@ export interface DataSubjectRequest {
  */
 export interface DataProcessingActivity {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   activityName: string;
   purpose: string;
@@ -13109,6 +13733,10 @@ export interface DataProcessingActivity {
  */
 export interface KycCheck {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   checkId: string;
   subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
@@ -13170,6 +13798,10 @@ export interface KycCheck {
  */
 export interface BeneficialOwner {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Legal entity whose UBO this is (AMLD-5 Art.30 / US CTA register subject).
@@ -13208,6 +13840,10 @@ export interface BeneficialOwner {
  */
 export interface CsrdDisclosure {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Reporting legal entity (CSRD applies at consolidated + subsidiary level under different conditions).
@@ -13292,6 +13928,10 @@ export interface CsrdDisclosure {
  */
 export interface CarbonEmission {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   /**
@@ -13404,6 +14044,10 @@ export interface CarbonEmission {
  */
 export interface BiologicalAsset {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. BIO-2026-001).
@@ -13467,6 +14111,10 @@ export interface BiologicalAsset {
  */
 export interface FairValueMeasurement {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. FV-2026-Q1-001).
@@ -13545,6 +14193,10 @@ export interface FairValueMeasurement {
  */
 export interface MineralResourceAsset {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. EE-2026-001).
@@ -13601,6 +14253,10 @@ export interface MineralResourceAsset {
  */
 export interface InvestmentProperty {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. IP-2026-001).
@@ -13664,6 +14320,10 @@ export interface InvestmentProperty {
  */
 export interface GovernmentGrant {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   grantName: string;
@@ -13764,6 +14424,10 @@ export interface GovernmentGrant {
  */
 export interface DeferredTaxItem {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. DT-2026-04-001).
@@ -13828,6 +14492,10 @@ export interface DeferredTaxItem {
  */
 export interface ShareBasedPayment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential grant reference (e.g. EQ-2026-001).
@@ -13914,6 +14582,10 @@ export interface ShareBasedPayment {
  */
 export interface BusinessCombination {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential deal reference (e.g. MA-2026-001).
@@ -14019,6 +14691,10 @@ export interface BusinessCombination {
  */
 export interface HeldForSaleClassification {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. HFS-2026-Q1-001).
@@ -14076,6 +14752,10 @@ export interface HeldForSaleClassification {
  */
 export interface EarningsPerShare {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. EPS-2026-Q1).
@@ -14159,6 +14839,10 @@ export interface EarningsPerShare {
  */
 export interface InsuranceContract {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. INS-2026-001).
@@ -14232,6 +14916,10 @@ export interface InsuranceContract {
  */
 export interface RegulatoryDeferralAccount {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. RDA-2026-001).
@@ -14272,6 +14960,10 @@ export interface RegulatoryDeferralAccount {
  */
 export interface PostBalanceSheetEvent {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. PBE-2026-Q1-001).
@@ -14327,6 +15019,10 @@ export interface PostBalanceSheetEvent {
  */
 export interface TransactionFailure {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Failure reference (e.g. `FAIL-2026-04-001`).
@@ -14410,6 +15106,10 @@ export interface TransactionFailure {
  */
 export interface TransferPricingFile {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   reference: string;
   reportingYear: number;
@@ -14919,6 +15619,10 @@ export interface Translation {
  */
 export interface Commitment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Auto-generated commitment ID (e.g., COMM-2026-001). SOX §302 audit trail.
@@ -15023,6 +15727,10 @@ export interface Commitment {
  */
 export interface ContractAmendment {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Display title for this amendment (e.g., "Price increase to 6k BGN/month")
@@ -15112,6 +15820,10 @@ export interface ContractAmendment {
  */
 export interface ContractPerformance {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Parent contract (IFRS-15 §10)
@@ -15204,6 +15916,10 @@ export interface ContractPerformance {
  */
 export interface ContractSignature {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * Display title (auto-generated from contract + signatory)
@@ -15305,6 +16021,10 @@ export interface ContractSignature {
  */
 export interface ContractTemplate {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   /**
    * Unique template name (e.g., "SaaS 3-Year License Template v2.1")
    */
@@ -15455,6 +16175,10 @@ export interface ContractTemplate {
  */
 export interface AiSuggestion {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency + cross-system correlation.
@@ -15568,6 +16292,10 @@ export interface AiSuggestion {
  */
 export interface UsageRecord {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   tenant?: (number | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency key. Re-emission with the same eventId is a no-op.
@@ -15629,6 +16357,10 @@ export interface UsageRecord {
  */
 export interface FormSubmission {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   form: number | Form;
   submissionData?:
     | {
@@ -15646,6 +16378,10 @@ export interface FormSubmission {
  */
 export interface Export {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   name?: string | null;
   format: 'csv' | 'json';
   limit?: number | null;
@@ -15718,6 +16454,10 @@ export interface Export {
  */
 export interface Import {
   id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
   collectionSlug: string;
   importMode?: ('create' | 'update' | 'upsert') | null;
   matchField?: string | null;
@@ -16838,6 +17578,7 @@ export interface PayloadMigration {
  * via the `definition` "tenants_select".
  */
 export interface TenantsSelect<T extends boolean = true> {
+  uuid?: T;
   name?: T;
   domain?: T;
   slug?: T;
@@ -16888,6 +17629,7 @@ export interface TenantsSelect<T extends boolean = true> {
  * via the `definition` "users_select".
  */
 export interface UsersSelect<T extends boolean = true> {
+  uuid?: T;
   password?: T;
   name?: T;
   roles?: T;
@@ -16936,6 +17678,7 @@ export interface UsersSelect<T extends boolean = true> {
  * via the `definition` "roles_select".
  */
 export interface RolesSelect<T extends boolean = true> {
+  uuid?: T;
   name?: T;
   binding?: T;
   scopedCollection?: T;
@@ -16948,6 +17691,7 @@ export interface RolesSelect<T extends boolean = true> {
  * via the `definition` "user-roles_select".
  */
 export interface UserRolesSelect<T extends boolean = true> {
+  uuid?: T;
   user?: T;
   role?: T;
   updatedAt?: T;
@@ -16958,6 +17702,7 @@ export interface UserRolesSelect<T extends boolean = true> {
  * via the `definition` "pages_select".
  */
 export interface PagesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   title?: T;
   hero?:
@@ -17103,6 +17848,7 @@ export interface FormBlockSelect<T extends boolean = true> {
  * via the `definition` "posts_select".
  */
 export interface PostsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   title?: T;
   heroImage?: T;
@@ -17135,6 +17881,7 @@ export interface PostsSelect<T extends boolean = true> {
  * via the `definition` "media_select".
  */
 export interface MediaSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   alt?: T;
   caption?: T;
@@ -17229,6 +17976,7 @@ export interface MediaSelect<T extends boolean = true> {
  * via the `definition` "categories_select".
  */
 export interface CategoriesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   title?: T;
   generateSlug?: T;
@@ -17250,6 +17998,7 @@ export interface CategoriesSelect<T extends boolean = true> {
  * via the `definition` "invoices_select".
  */
 export interface InvoicesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   typeStatus?:
     | T
@@ -17367,6 +18116,7 @@ export interface InvoicesSelect<T extends boolean = true> {
  * via the `definition` "invoice-lines_select".
  */
 export interface InvoiceLinesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   invoice?: T;
   code?: T;
@@ -17462,6 +18212,7 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
  * via the `definition` "payment-methods_select".
  */
 export interface PaymentMethodsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   stripePaymentMethodId?: T;
   type?: T;
@@ -17483,6 +18234,7 @@ export interface PaymentMethodsSelect<T extends boolean = true> {
  * via the `definition` "payments_select".
  */
 export interface PaymentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   transactionNumber?: T;
   paymentKind?: T;
@@ -17529,6 +18281,7 @@ export interface PaymentsSelect<T extends boolean = true> {
  * via the `definition` "subscription-plans_select".
  */
 export interface SubscriptionPlansSelect<T extends boolean = true> {
+  uuid?: T;
   name?: T;
   slug?: T;
   stripeProductId?: T;
@@ -17548,6 +18301,7 @@ export interface SubscriptionPlansSelect<T extends boolean = true> {
  * via the `definition` "subscriptions_select".
  */
 export interface SubscriptionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   plan?: T;
   status?: T;
@@ -17571,6 +18325,7 @@ export interface SubscriptionsSelect<T extends boolean = true> {
  * via the `definition` "items_select".
  */
 export interface ItemsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   sku?: T;
@@ -17644,6 +18399,7 @@ export interface ItemsSelect<T extends boolean = true> {
  * via the `definition` "gl-accounts_select".
  */
 export interface GlAccountsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   accountNumber?: T;
   accountName?: T;
@@ -17671,6 +18427,7 @@ export interface GlAccountsSelect<T extends boolean = true> {
  * via the `definition` "gl-posting-rules_select".
  */
 export interface GlPostingRulesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   accountType?: T;
   normalPolarity?: T;
@@ -17689,6 +18446,7 @@ export interface GlPostingRulesSelect<T extends boolean = true> {
  * via the `definition` "journal-entries_select".
  */
 export interface JournalEntriesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entryNumber?: T;
   entryDate?: T;
@@ -17725,6 +18483,7 @@ export interface JournalEntriesSelect<T extends boolean = true> {
  * via the `definition` "gl-postings_select".
  */
 export interface GlPostingsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   postingId?: T;
   sourceType?: T;
@@ -17760,6 +18519,7 @@ export interface GlPostingsSelect<T extends boolean = true> {
  * via the `definition` "period-locks_select".
  */
 export interface PeriodLocksSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   periodLabel?: T;
   fiscalYear?: T;
@@ -17784,6 +18544,7 @@ export interface PeriodLocksSelect<T extends boolean = true> {
  * via the `definition` "closing-entries_select".
  */
 export interface ClosingEntriesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   closingEntryNumber?: T;
@@ -17831,6 +18592,7 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
  * via the `definition` "bank-statements_select".
  */
 export interface BankStatementsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   statementId?: T;
   bankAccount?: T;
@@ -17875,6 +18637,7 @@ export interface BankStatementsSelect<T extends boolean = true> {
  * via the `definition` "bank-transactions_select".
  */
 export interface BankTransactionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   externalId?: T;
   accountServicerReference?: T;
@@ -17918,6 +18681,7 @@ export interface BankTransactionsSelect<T extends boolean = true> {
  * via the `definition` "bank-accounts_select".
  */
 export interface BankAccountsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   accountName?: T;
   iban?: T;
@@ -17945,6 +18709,7 @@ export interface BankAccountsSelect<T extends boolean = true> {
  * via the `definition` "account-reconciliations_select".
  */
 export interface AccountReconciliationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reconciliationId?: T;
   kind?: T;
@@ -18001,6 +18766,7 @@ export interface AccountReconciliationsSelect<T extends boolean = true> {
  * via the `definition` "bank-reconciliations_select".
  */
 export interface BankReconciliationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   bankAccount?: T;
@@ -18034,6 +18800,7 @@ export interface BankReconciliationsSelect<T extends boolean = true> {
  * via the `definition` "financial-statements_select".
  */
 export interface FinancialStatementsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   statementId?: T;
   statementType?: T;
@@ -18073,6 +18840,7 @@ export interface FinancialStatementsSelect<T extends boolean = true> {
  * via the `definition` "period-end-adjustments_select".
  */
 export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   adjustmentId?: T;
   adjustmentType?: T;
@@ -18092,6 +18860,7 @@ export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
  * via the `definition` "recurring-journals_select".
  */
 export interface RecurringJournalsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   description?: T;
@@ -18132,6 +18901,7 @@ export interface RecurringJournalsSelect<T extends boolean = true> {
  * via the `definition` "prior-period-adjustments_select".
  */
 export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   adjustmentDate?: T;
@@ -18156,6 +18926,7 @@ export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
  * via the `definition` "rounding-adjustments_select".
  */
 export interface RoundingAdjustmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   adjustmentDate?: T;
@@ -18183,6 +18954,7 @@ export interface RoundingAdjustmentsSelect<T extends boolean = true> {
  * via the `definition` "tax-calculations_select".
  */
 export interface TaxCalculationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   calculationId?: T;
   taxType?: T;
@@ -18208,6 +18980,7 @@ export interface TaxCalculationsSelect<T extends boolean = true> {
  * via the `definition` "tax-codes_select".
  */
 export interface TaxCodesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   label?: T;
@@ -18254,6 +19027,7 @@ export interface TaxCodesSelect<T extends boolean = true> {
  * via the `definition` "tax-jurisdictions_select".
  */
 export interface TaxJurisdictionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -18293,6 +19067,7 @@ export interface TaxJurisdictionsSelect<T extends boolean = true> {
  * via the `definition` "tax-returns_select".
  */
 export interface TaxReturnsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   returnId?: T;
   returnType?: T;
@@ -18329,6 +19104,7 @@ export interface TaxReturnsSelect<T extends boolean = true> {
  * via the `definition` "currency-rates_select".
  */
 export interface CurrencyRatesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   rateId?: T;
   fromCurrency?: T;
@@ -18351,6 +19127,7 @@ export interface CurrencyRatesSelect<T extends boolean = true> {
  * via the `definition` "fiscal-periods_select".
  */
 export interface FiscalPeriodsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   label?: T;
   identity?:
@@ -18391,6 +19168,7 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
  * via the `definition` "fiscal-calendars_select".
  */
 export interface FiscalCalendarsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   calendarDate?: T;
@@ -18416,6 +19194,7 @@ export interface FiscalCalendarsSelect<T extends boolean = true> {
  * via the `definition` "fiscal-period-snapshots_select".
  */
 export interface FiscalPeriodSnapshotsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   fiscalPeriods?: T;
   snapshotLabel?: T;
@@ -18483,6 +19262,7 @@ export interface FixedAssetsSelect<T extends boolean = true> {
  * via the `definition` "depreciation-schedules_select".
  */
 export interface DepreciationSchedulesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   scheduleId?: T;
   fixedAsset?: T;
@@ -18508,6 +19288,7 @@ export interface DepreciationSchedulesSelect<T extends boolean = true> {
  * via the `definition` "customers_select".
  */
 export interface CustomersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -18574,6 +19355,7 @@ export interface CustomersSelect<T extends boolean = true> {
  * via the `definition` "leads_select".
  */
 export interface LeadsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   fullName?: T;
   firstName?: T;
@@ -18610,6 +19392,7 @@ export interface LeadsSelect<T extends boolean = true> {
  * via the `definition` "opportunities_select".
  */
 export interface OpportunitiesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   lead?: T;
@@ -18641,6 +19424,7 @@ export interface OpportunitiesSelect<T extends boolean = true> {
  * via the `definition` "customer-segments_select".
  */
 export interface CustomerSegmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   description?: T;
@@ -18665,6 +19449,7 @@ export interface CustomerSegmentsSelect<T extends boolean = true> {
  * via the `definition` "quotes_select".
  */
 export interface QuotesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   quoteNumber?: T;
   customer?: T;
@@ -18748,6 +19533,7 @@ export interface SalesOrdersSelect<T extends boolean = true> {
  * via the `definition` "sales-commissions_select".
  */
 export interface SalesCommissionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   salesperson?: T;
@@ -18788,6 +19574,7 @@ export interface SalesCommissionsSelect<T extends boolean = true> {
  * via the `definition` "credit-memos_select".
  */
 export interface CreditMemosSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   memoNumber?: T;
   customer?: T;
@@ -18813,6 +19600,7 @@ export interface CreditMemosSelect<T extends boolean = true> {
  * via the `definition` "returns_select".
  */
 export interface ReturnsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   rmaNumber?: T;
   order?: T;
@@ -18843,6 +19631,7 @@ export interface ReturnsSelect<T extends boolean = true> {
  * via the `definition` "shipments_select".
  */
 export interface ShipmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   shipmentNumber?: T;
   order?: T;
@@ -18874,6 +19663,7 @@ export interface ShipmentsSelect<T extends boolean = true> {
  * via the `definition` "refunds_select".
  */
 export interface RefundsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   refundNumber?: T;
   creditMemo?: T;
@@ -18900,6 +19690,7 @@ export interface RefundsSelect<T extends boolean = true> {
  * via the `definition` "payment-allocations_select".
  */
 export interface PaymentAllocationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   payment?: T;
@@ -18925,6 +19716,7 @@ export interface PaymentAllocationsSelect<T extends boolean = true> {
  * via the `definition` "dunning-cycles_select".
  */
 export interface DunningCyclesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   cycleId?: T;
   invoice?: T;
@@ -18966,6 +19758,7 @@ export interface DunningCyclesSelect<T extends boolean = true> {
  * via the `definition` "vendors_select".
  */
 export interface VendorsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -19043,6 +19836,7 @@ export interface VendorsSelect<T extends boolean = true> {
  * via the `definition` "vendor-quotes_select".
  */
 export interface VendorQuotesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   quoteNumber?: T;
   vendor?: T;
@@ -19090,6 +19884,7 @@ export interface VendorQuotesSelect<T extends boolean = true> {
  * via the `definition` "vendor-scorecards_select".
  */
 export interface VendorScorecardsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   vendor?: T;
@@ -19135,6 +19930,7 @@ export interface VendorScorecardsSelect<T extends boolean = true> {
  * via the `definition` "purchase-orders_select".
  */
 export interface PurchaseOrdersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   poNumber?: T;
   vendor?: T;
@@ -19177,6 +19973,7 @@ export interface PurchaseOrdersSelect<T extends boolean = true> {
  * via the `definition` "purchase-requisitions_select".
  */
 export interface PurchaseRequisitionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   requisitionNumber?: T;
   requisitioner?: T;
@@ -19230,6 +20027,7 @@ export interface PurchaseRequisitionsSelect<T extends boolean = true> {
  * via the `definition` "goods-receipts_select".
  */
 export interface GoodsReceiptsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   receiptNumber?: T;
   purchaseOrder?: T;
@@ -19259,6 +20057,7 @@ export interface GoodsReceiptsSelect<T extends boolean = true> {
  * via the `definition` "inventory-movements_select".
  */
 export interface InventoryMovementsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   movementId?: T;
   kind?: T;
@@ -19289,6 +20088,7 @@ export interface InventoryMovementsSelect<T extends boolean = true> {
  * via the `definition` "warehouse-locations_select".
  */
 export interface WarehouseLocationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -19317,6 +20117,7 @@ export interface WarehouseLocationsSelect<T extends boolean = true> {
  * via the `definition` "cost-centers_select".
  */
 export interface CostCentersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   costCenterCode?: T;
   name?: T;
@@ -19351,6 +20152,7 @@ export interface CostCentersSelect<T extends boolean = true> {
  * via the `definition` "budget-planning_select".
  */
 export interface BudgetPlanningSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   budgetId?: T;
   fiscalYear?: T;
@@ -19382,6 +20184,7 @@ export interface BudgetPlanningSelect<T extends boolean = true> {
  * via the `definition` "cost-variances_select".
  */
 export interface CostVariancesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   workOrder?: T;
@@ -19413,6 +20216,7 @@ export interface CostVariancesSelect<T extends boolean = true> {
  * via the `definition` "intercompany-transactions_select".
  */
 export interface IntercompanyTransactionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   fromTenant?: T;
@@ -19440,6 +20244,7 @@ export interface IntercompanyTransactionsSelect<T extends boolean = true> {
  * via the `definition` "consolidation-eliminations_select".
  */
 export interface ConsolidationEliminationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   consolidationDate?: T;
@@ -19468,6 +20273,7 @@ export interface ConsolidationEliminationsSelect<T extends boolean = true> {
  * via the `definition` "fx-transactions_select".
  */
 export interface FxTransactionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   transactionDate?: T;
@@ -19496,6 +20302,7 @@ export interface FxTransactionsSelect<T extends boolean = true> {
  * via the `definition` "contracts_select".
  */
 export interface ContractsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   contractNumber?: T;
   customer?: T;
@@ -19543,6 +20350,7 @@ export interface ContractsSelect<T extends boolean = true> {
  * via the `definition` "performance-obligations_select".
  */
 export interface PerformanceObligationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   contract?: T;
   description?: T;
@@ -19570,6 +20378,7 @@ export interface PerformanceObligationsSelect<T extends boolean = true> {
  * via the `definition` "commitments-and-contingencies_select".
  */
 export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   description?: T;
@@ -19600,6 +20409,7 @@ export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
  * via the `definition` "leases_select".
  */
 export interface LeasesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   leaseNumber?: T;
   description?: T;
@@ -19656,6 +20466,7 @@ export interface LeasesSelect<T extends boolean = true> {
  * via the `definition` "lease-modifications_select".
  */
 export interface LeaseModificationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   lease?: T;
@@ -19702,6 +20513,7 @@ export interface LeaseModificationsSelect<T extends boolean = true> {
  * via the `definition` "lease-period-postings_select".
  */
 export interface LeasePeriodPostingsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   postingId?: T;
   lease?: T;
@@ -19737,6 +20549,7 @@ export interface LeasePeriodPostingsSelect<T extends boolean = true> {
  * via the `definition` "payment-runs_select".
  */
 export interface PaymentRunsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   runId?: T;
   messageType?: T;
@@ -19784,6 +20597,7 @@ export interface PaymentRunsSelect<T extends boolean = true> {
  * via the `definition` "sepa-mandates_select".
  */
 export interface SepaMandatesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   mandateId?: T;
   localInstrument?: T;
@@ -19813,6 +20627,7 @@ export interface SepaMandatesSelect<T extends boolean = true> {
  * via the `definition` "payroll-runs_select".
  */
 export interface PayrollRunsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   runId?: T;
   paySchedule?: T;
@@ -19872,6 +20687,7 @@ export interface PayrollRunsSelect<T extends boolean = true> {
  * via the `definition` "employees_select".
  */
 export interface EmployeesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   employeeNumber?: T;
   displayName?: T;
@@ -19948,6 +20764,7 @@ export interface EmployeesSelect<T extends boolean = true> {
  * via the `definition` "job-positions_select".
  */
 export interface JobPositionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   positionCode?: T;
   positionTitle?: T;
@@ -19988,6 +20805,7 @@ export interface JobPositionsSelect<T extends boolean = true> {
  * via the `definition` "time-entries_select".
  */
 export interface TimeEntriesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entryId?: T;
   employee?: T;
@@ -20057,6 +20875,7 @@ export interface LeaveRequestsSelect<T extends boolean = true> {
  * via the `definition` "performance-reviews_select".
  */
 export interface PerformanceReviewsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   employee?: T;
@@ -20132,6 +20951,7 @@ export interface PerformanceReviewsSelect<T extends boolean = true> {
  * via the `definition` "expense-reports_select".
  */
 export interface ExpenseReportsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reportNumber?: T;
   employee?: T;
@@ -20196,6 +21016,7 @@ export interface ExpenseReportsSelect<T extends boolean = true> {
  * via the `definition` "recruiting-pipeline_select".
  */
 export interface RecruitingPipelineSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   candidateName?: T;
   firstName?: T;
@@ -20248,6 +21069,7 @@ export interface RecruitingPipelineSelect<T extends boolean = true> {
  * via the `definition` "activities_select".
  */
 export interface ActivitiesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   subject?: T;
   activityType?: T;
@@ -20278,6 +21100,7 @@ export interface ActivitiesSelect<T extends boolean = true> {
  * via the `definition` "projects_select".
  */
 export interface ProjectsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   projectCode?: T;
   name?: T;
@@ -20314,6 +21137,7 @@ export interface ProjectsSelect<T extends boolean = true> {
  * via the `definition` "project-tasks_select".
  */
 export interface ProjectTasksSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   project?: T;
   parentTask?: T;
@@ -20346,6 +21170,7 @@ export interface ProjectTasksSelect<T extends boolean = true> {
  * via the `definition` "project-milestones_select".
  */
 export interface ProjectMilestonesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   project?: T;
   milestoneNumber?: T;
@@ -20373,6 +21198,7 @@ export interface ProjectMilestonesSelect<T extends boolean = true> {
  * via the `definition` "work-orders_select".
  */
 export interface WorkOrdersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   bom?: T;
@@ -20407,6 +21233,7 @@ export interface WorkOrdersSelect<T extends boolean = true> {
  * via the `definition` "workflow-definitions_select".
  */
 export interface WorkflowDefinitionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   description?: T;
@@ -20449,6 +21276,7 @@ export interface WorkflowDefinitionsSelect<T extends boolean = true> {
  * via the `definition` "workflow-instances_select".
  */
 export interface WorkflowInstancesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   instanceId?: T;
   definition?: T;
@@ -20490,6 +21318,7 @@ export interface WorkflowInstancesSelect<T extends boolean = true> {
  * via the `definition` "bills-of-materials_select".
  */
 export interface BillsOfMaterialsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   finishedGood?: T;
@@ -20531,6 +21360,7 @@ export interface BillsOfMaterialsSelect<T extends boolean = true> {
  * via the `definition` "production-receipts_select".
  */
 export interface ProductionReceiptsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   workOrder?: T;
@@ -20565,6 +21395,7 @@ export interface ProductionReceiptsSelect<T extends boolean = true> {
  * via the `definition` "quality-inspections_select".
  */
 export interface QualityInspectionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   inspectionType?: T;
@@ -20594,6 +21425,7 @@ export interface QualityInspectionsSelect<T extends boolean = true> {
  * via the `definition` "wip-snapshots_select".
  */
 export interface WipSnapshotsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   snapshotRef?: T;
   project?: T;
@@ -20623,6 +21455,7 @@ export interface WipSnapshotsSelect<T extends boolean = true> {
  * via the `definition` "properties_select".
  */
 export interface PropertiesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -20681,6 +21514,7 @@ export interface PropertiesSelect<T extends boolean = true> {
  * via the `definition` "spaces_select".
  */
 export interface SpacesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -20722,6 +21556,7 @@ export interface SpacesSelect<T extends boolean = true> {
  * via the `definition` "maintenance-requests_select".
  */
 export interface MaintenanceRequestsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   subject?: T;
@@ -20762,6 +21597,7 @@ export interface MaintenanceRequestsSelect<T extends boolean = true> {
  * via the `definition` "maintenance-work-orders_select".
  */
 export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   request?: T;
@@ -20832,6 +21668,7 @@ export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
  * via the `definition` "bookable-resources_select".
  */
 export interface BookableResourcesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -20887,6 +21724,7 @@ export interface BookableResourcesSelect<T extends boolean = true> {
  * via the `definition` "bookings_select".
  */
 export interface BookingsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   resource?: T;
@@ -20930,6 +21768,7 @@ export interface BookingsSelect<T extends boolean = true> {
  * via the `definition` "carriers_select".
  */
 export interface CarriersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   code?: T;
   name?: T;
@@ -20962,6 +21801,7 @@ export interface CarriersSelect<T extends boolean = true> {
  * via the `definition` "tracking-events_select".
  */
 export interface TrackingEventsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   shipment?: T;
   carrier?: T;
@@ -20987,6 +21827,7 @@ export interface TrackingEventsSelect<T extends boolean = true> {
  * via the `definition` "customs-declarations_select".
  */
 export interface CustomsDeclarationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   mrn?: T;
   declarationType?: T;
@@ -21031,6 +21872,7 @@ export interface CustomsDeclarationsSelect<T extends boolean = true> {
  * via the `definition` "consignment-arrangements_select".
  */
 export interface ConsignmentArrangementsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   consignee?: T;
@@ -21061,6 +21903,7 @@ export interface ConsignmentArrangementsSelect<T extends boolean = true> {
  * via the `definition` "consignment-inventory_select".
  */
 export interface ConsignmentInventorySelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   lineId?: T;
   arrangement?: T;
@@ -21090,6 +21933,7 @@ export interface ConsignmentInventorySelect<T extends boolean = true> {
  * via the `definition` "consignment-sales_select".
  */
 export interface ConsignmentSalesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   arrangement?: T;
@@ -21121,6 +21965,7 @@ export interface ConsignmentSalesSelect<T extends boolean = true> {
  * via the `definition` "audit-events_select".
  */
 export interface AuditEventsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   eventId?: T;
   timestamp?: T;
@@ -21154,6 +21999,7 @@ export interface AuditEventsSelect<T extends boolean = true> {
  * via the `definition` "api-audit-events_select".
  */
 export interface ApiAuditEventsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   eventId?: T;
   kind?: T;
@@ -21175,6 +22021,7 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
  * via the `definition` "evidence-attestations_select".
  */
 export interface EvidenceAttestationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   attestationId?: T;
   workflow?: T;
@@ -21205,6 +22052,7 @@ export interface EvidenceAttestationsSelect<T extends boolean = true> {
  * via the `definition` "entity-types_select".
  */
 export interface EntityTypesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   code?: T;
@@ -21218,6 +22066,7 @@ export interface EntityTypesSelect<T extends boolean = true> {
  * via the `definition` "taxing-jurisdictions_select".
  */
 export interface TaxingJurisdictionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   jurisdictionType?: T;
@@ -21240,6 +22089,7 @@ export interface TaxingJurisdictionsSelect<T extends boolean = true> {
  * via the `definition` "entity-legal-structures_select".
  */
 export interface EntityLegalStructuresSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   legalCode?: T;
@@ -21255,6 +22105,7 @@ export interface EntityLegalStructuresSelect<T extends boolean = true> {
  * via the `definition` "compliance-frameworks_select".
  */
 export interface ComplianceFrameworksSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   frameworkType?: T;
@@ -21271,6 +22122,7 @@ export interface ComplianceFrameworksSelect<T extends boolean = true> {
  * via the `definition` "compliance-requirements_select".
  */
 export interface ComplianceRequirementsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   requirementName?: T;
   framework?: T;
@@ -21286,6 +22138,7 @@ export interface ComplianceRequirementsSelect<T extends boolean = true> {
  * via the `definition` "internal-controls_select".
  */
 export interface InternalControlsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   controlName?: T;
   controlType?: T;
@@ -21302,6 +22155,7 @@ export interface InternalControlsSelect<T extends boolean = true> {
  * via the `definition` "control-tests_select".
  */
 export interface ControlTestsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   control?: T;
   testName?: T;
@@ -21320,6 +22174,7 @@ export interface ControlTestsSelect<T extends boolean = true> {
  * via the `definition` "audit-samples_select".
  */
 export interface AuditSamplesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   controlTest?: T;
   itemIdentifier?: T;
@@ -21336,6 +22191,7 @@ export interface AuditSamplesSelect<T extends boolean = true> {
  * via the `definition` "compliance-gaps_select".
  */
 export interface ComplianceGapsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   requirement?: T;
   gapTitle?: T;
@@ -21351,6 +22207,7 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
  * via the `definition` "audit-evidence_select".
  */
 export interface AuditEvidenceSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   evidenceTitle?: T;
   documentType?: T;
@@ -21374,6 +22231,7 @@ export interface AuditEvidenceSelect<T extends boolean = true> {
  * via the `definition` "audit-findings_select".
  */
 export interface AuditFindingsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   findingTitle?: T;
   findingType?: T;
@@ -21394,6 +22252,7 @@ export interface AuditFindingsSelect<T extends boolean = true> {
  * via the `definition` "audit-trail-events_select".
  */
 export interface AuditTrailEventsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   operation?: T;
   collectionName?: T;
@@ -21414,6 +22273,7 @@ export interface AuditTrailEventsSelect<T extends boolean = true> {
  * via the `definition` "remediation-plans_select".
  */
 export interface RemediationPlansSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   planTitle?: T;
   finding?: T;
@@ -21445,6 +22305,7 @@ export interface RemediationPlansSelect<T extends boolean = true> {
  * via the `definition` "audit-committees_select".
  */
 export interface AuditCommitteesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   name?: T;
   entity?: T;
@@ -21461,6 +22322,7 @@ export interface AuditCommitteesSelect<T extends boolean = true> {
  * via the `definition` "audit-committee-members_select".
  */
 export interface AuditCommitteeMembersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   committee?: T;
   memberName?: T;
@@ -21484,6 +22346,7 @@ export interface AuditCommitteeMembersSelect<T extends boolean = true> {
  * via the `definition` "board-actions_select".
  */
 export interface BoardActionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   actionTitle?: T;
@@ -21509,6 +22372,7 @@ export interface BoardActionsSelect<T extends boolean = true> {
  * via the `definition` "management-certifications_select".
  */
 export interface ManagementCertificationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   certificationName?: T;
@@ -21534,6 +22398,7 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
  * via the `definition` "regulatory-reports_select".
  */
 export interface RegulatoryReportsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   reportName?: T;
@@ -21556,6 +22421,7 @@ export interface RegulatoryReportsSelect<T extends boolean = true> {
  * via the `definition` "internal-policies_select".
  */
 export interface InternalPoliciesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   policyName?: T;
   policyNumber?: T;
@@ -21576,6 +22442,7 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
  * via the `definition` "statutory-report-templates_select".
  */
 export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   templateName?: T;
   jurisdiction?: T;
@@ -21600,6 +22467,7 @@ export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
  * via the `definition` "statutory-field-mappings_select".
  */
 export interface StatutoryFieldMappingsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   mappingName?: T;
   reportTemplate?: T;
@@ -21618,6 +22486,7 @@ export interface StatutoryFieldMappingsSelect<T extends boolean = true> {
  * via the `definition` "policy-versions_select".
  */
 export interface PolicyVersionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   policy?: T;
   versionNumber?: T;
@@ -21634,6 +22503,7 @@ export interface PolicyVersionsSelect<T extends boolean = true> {
  * via the `definition` "policy-acknowledgments_select".
  */
 export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   policy?: T;
   policyVersion?: T;
@@ -21651,6 +22521,7 @@ export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
  * via the `definition` "compliance-deadlines_select".
  */
 export interface ComplianceDeadlinesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   deadlineName?: T;
@@ -21670,6 +22541,7 @@ export interface ComplianceDeadlinesSelect<T extends boolean = true> {
  * via the `definition` "compliance-notifications_select".
  */
 export interface ComplianceNotificationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   deadline?: T;
   notificationTitle?: T;
@@ -21693,6 +22565,7 @@ export interface ComplianceNotificationsSelect<T extends boolean = true> {
  * via the `definition` "reporting-standards_select".
  */
 export interface ReportingStandardsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   standardName?: T;
   standardCode?: T;
@@ -21710,6 +22583,7 @@ export interface ReportingStandardsSelect<T extends boolean = true> {
  * via the `definition` "reporting-mappings_select".
  */
 export interface ReportingMappingsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   mappingName?: T;
   fromStandard?: T;
@@ -21732,6 +22606,7 @@ export interface ReportingMappingsSelect<T extends boolean = true> {
  * via the `definition` "related-party-transactions_select".
  */
 export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   relatedPartyName?: T;
@@ -21760,6 +22635,7 @@ export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
  * via the `definition` "management-assessment-icfr_select".
  */
 export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   assessmentPeriod?: T;
@@ -21798,6 +22674,7 @@ export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
  * via the `definition` "disclosure-checklists_select".
  */
 export interface DisclosureChecklistsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   checklistName?: T;
@@ -21833,6 +22710,7 @@ export interface DisclosureChecklistsSelect<T extends boolean = true> {
  * via the `definition` "audit-committee-minutes_select".
  */
 export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   auditCommittee?: T;
   entity?: T;
@@ -21898,6 +22776,7 @@ export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
  * via the `definition` "risk-register_select".
  */
 export interface RiskRegisterSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   riskId?: T;
@@ -21932,6 +22811,7 @@ export interface RiskRegisterSelect<T extends boolean = true> {
  * via the `definition` "debt-schedule_select".
  */
 export interface DebtScheduleSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   debtInstrumentName?: T;
@@ -21989,6 +22869,7 @@ export interface DebtScheduleSelect<T extends boolean = true> {
  * via the `definition` "internal-audit-function_select".
  */
 export interface InternalAuditFunctionSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   functionName?: T;
@@ -22048,6 +22929,7 @@ export interface InternalAuditFunctionSelect<T extends boolean = true> {
  * via the `definition` "segment-reporting_select".
  */
 export interface SegmentReportingSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   segmentationBasis?: T;
@@ -22101,6 +22983,7 @@ export interface SegmentReportingSelect<T extends boolean = true> {
  * via the `definition` "consent-records_select".
  */
 export interface ConsentRecordsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   consentId?: T;
   dataSubject?: T;
@@ -22126,6 +23009,7 @@ export interface ConsentRecordsSelect<T extends boolean = true> {
  * via the `definition` "data-subject-requests_select".
  */
 export interface DataSubjectRequestsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   requestId?: T;
   dataSubject?: T;
@@ -22150,6 +23034,7 @@ export interface DataSubjectRequestsSelect<T extends boolean = true> {
  * via the `definition` "data-processing-activities_select".
  */
 export interface DataProcessingActivitiesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   activityName?: T;
   purpose?: T;
@@ -22198,6 +23083,7 @@ export interface DataProcessingActivitiesSelect<T extends boolean = true> {
  * via the `definition` "kyc-checks_select".
  */
 export interface KycChecksSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   checkId?: T;
   subjectType?: T;
@@ -22237,6 +23123,7 @@ export interface KycChecksSelect<T extends boolean = true> {
  * via the `definition` "beneficial-owners_select".
  */
 export interface BeneficialOwnersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   entity?: T;
   fullName?: T;
@@ -22263,6 +23150,7 @@ export interface BeneficialOwnersSelect<T extends boolean = true> {
  * via the `definition` "csrd-disclosures_select".
  */
 export interface CsrdDisclosuresSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   legalEntity?: T;
   datapointId?: T;
@@ -22306,6 +23194,7 @@ export interface CsrdDisclosuresSelect<T extends boolean = true> {
  * via the `definition` "carbon-emissions_select".
  */
 export interface CarbonEmissionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   legalEntity?: T;
@@ -22360,6 +23249,7 @@ export interface CarbonEmissionsSelect<T extends boolean = true> {
  * via the `definition` "biological-assets_select".
  */
 export interface BiologicalAssetsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   name?: T;
@@ -22387,6 +23277,7 @@ export interface BiologicalAssetsSelect<T extends boolean = true> {
  * via the `definition` "mineral-resource-assets_select".
  */
 export interface MineralResourceAssetsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   concessionType?: T;
@@ -22412,6 +23303,7 @@ export interface MineralResourceAssetsSelect<T extends boolean = true> {
  * via the `definition` "investment-properties_select".
  */
 export interface InvestmentPropertiesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   property?: T;
@@ -22440,6 +23332,7 @@ export interface InvestmentPropertiesSelect<T extends boolean = true> {
  * via the `definition` "provisions_select".
  */
 export interface ProvisionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   description?: T;
@@ -22488,6 +23381,7 @@ export interface ProvisionsSelect<T extends boolean = true> {
  * via the `definition` "government-grants_select".
  */
 export interface GovernmentGrantsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   grantName?: T;
@@ -22531,6 +23425,7 @@ export interface GovernmentGrantsSelect<T extends boolean = true> {
  * via the `definition` "deferred-tax-items_select".
  */
 export interface DeferredTaxItemsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   kind?: T;
@@ -22559,6 +23454,7 @@ export interface DeferredTaxItemsSelect<T extends boolean = true> {
  * via the `definition` "share-based-payments_select".
  */
 export interface ShareBasedPaymentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   employee?: T;
@@ -22608,6 +23504,7 @@ export interface ShareBasedPaymentsSelect<T extends boolean = true> {
  * via the `definition` "business-combinations_select".
  */
 export interface BusinessCombinationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   acquireeName?: T;
@@ -22651,6 +23548,7 @@ export interface BusinessCombinationsSelect<T extends boolean = true> {
  * via the `definition` "held-for-sale-classifications_select".
  */
 export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   classificationKind?: T;
@@ -22684,6 +23582,7 @@ export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
  * via the `definition` "fair-value-measurements_select".
  */
 export interface FairValueMeasurementsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   sourceCollection?: T;
@@ -22723,6 +23622,7 @@ export interface FairValueMeasurementsSelect<T extends boolean = true> {
  * via the `definition` "earnings-per-share_select".
  */
 export interface EarningsPerShareSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   period?: T;
@@ -22766,6 +23666,7 @@ export interface EarningsPerShareSelect<T extends boolean = true> {
  * via the `definition` "insurance-contracts_select".
  */
 export interface InsuranceContractsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   measurementModel?: T;
@@ -22797,6 +23698,7 @@ export interface InsuranceContractsSelect<T extends boolean = true> {
  * via the `definition` "regulatory-deferral-accounts_select".
  */
 export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   kind?: T;
@@ -22819,6 +23721,7 @@ export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
  * via the `definition` "post-balance-sheet-events_select".
  */
 export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   period?: T;
@@ -22845,6 +23748,7 @@ export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
  * via the `definition` "transaction-failures_select".
  */
 export interface TransactionFailuresSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   transactionDate?: T;
@@ -22873,6 +23777,7 @@ export interface TransactionFailuresSelect<T extends boolean = true> {
  * via the `definition` "transfer-pricing-files_select".
  */
 export interface TransferPricingFilesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   reference?: T;
   reportingYear?: T;
@@ -23086,6 +23991,7 @@ export interface TranslationsSelect<T extends boolean = true> {
  * via the `definition` "commitments_select".
  */
 export interface CommitmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   commitmentNumber?: T;
   commitmentAmount?: T;
@@ -23132,6 +24038,7 @@ export interface CommitmentsSelect<T extends boolean = true> {
  * via the `definition` "contract-amendments_select".
  */
 export interface ContractAmendmentsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   amendmentTitle?: T;
   contract?: T;
@@ -23169,6 +24076,7 @@ export interface ContractAmendmentsSelect<T extends boolean = true> {
  * via the `definition` "contract-performance_select".
  */
 export interface ContractPerformanceSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   contract?: T;
   performanceObligationIndex?: T;
@@ -23205,6 +24113,7 @@ export interface ContractPerformanceSelect<T extends boolean = true> {
  * via the `definition` "contract-signatures_select".
  */
 export interface ContractSignaturesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   signatureTitle?: T;
   contract?: T;
@@ -23246,6 +24155,7 @@ export interface ContractSignaturesSelect<T extends boolean = true> {
  * via the `definition` "contract-templates_select".
  */
 export interface ContractTemplatesSelect<T extends boolean = true> {
+  uuid?: T;
   templateName?: T;
   templateCategory?: T;
   description?: T;
@@ -23311,6 +24221,7 @@ export interface ContractTemplatesSelect<T extends boolean = true> {
  * via the `definition` "legal-entities_select".
  */
 export interface LegalEntitiesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   legalName?: T;
   tradeName?: T;
@@ -23356,6 +24267,7 @@ export interface LegalEntitiesSelect<T extends boolean = true> {
  * via the `definition` "ai-suggestions_select".
  */
 export interface AiSuggestionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   suggestionId?: T;
   feature?: T;
@@ -23395,6 +24307,7 @@ export interface AiSuggestionsSelect<T extends boolean = true> {
  * via the `definition` "usage-records_select".
  */
 export interface UsageRecordsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   eventId?: T;
   feature?: T;
@@ -23422,6 +24335,7 @@ export interface UsageRecordsSelect<T extends boolean = true> {
  * via the `definition` "addresses_select".
  */
 export interface AddressesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   customer?: T;
   title?: T;
@@ -23457,6 +24371,7 @@ export interface AddressesSelect<T extends boolean = true> {
  * via the `definition` "variants_select".
  */
 export interface VariantsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   title?: T;
   product?: T;
@@ -23474,6 +24389,7 @@ export interface VariantsSelect<T extends boolean = true> {
  * via the `definition` "variantTypes_select".
  */
 export interface VariantTypesSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   label?: T;
   name?: T;
@@ -23488,6 +24404,7 @@ export interface VariantTypesSelect<T extends boolean = true> {
  */
 export interface VariantOptionsSelect<T extends boolean = true> {
   _variantOptions_options_order?: T;
+  uuid?: T;
   tenant?: T;
   variantType?: T;
   label?: T;
@@ -23501,6 +24418,7 @@ export interface VariantOptionsSelect<T extends boolean = true> {
  * via the `definition` "products_select".
  */
 export interface ProductsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   title?: T;
   description?: T;
@@ -23545,6 +24463,7 @@ export interface ProductsSelect<T extends boolean = true> {
  * via the `definition` "carts_select".
  */
 export interface CartsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   items?:
     | T
@@ -23568,6 +24487,7 @@ export interface CartsSelect<T extends boolean = true> {
  * via the `definition` "orders_select".
  */
 export interface OrdersSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   items?:
     | T
@@ -23607,6 +24527,7 @@ export interface OrdersSelect<T extends boolean = true> {
  * via the `definition` "transactions_select".
  */
 export interface TransactionsSelect<T extends boolean = true> {
+  uuid?: T;
   tenant?: T;
   items?:
     | T
@@ -23653,6 +24574,7 @@ export interface TransactionsSelect<T extends boolean = true> {
  * via the `definition` "forms_select".
  */
 export interface FormsSelect<T extends boolean = true> {
+  uuid?: T;
   title?: T;
   fields?:
     | T
@@ -23786,6 +24708,7 @@ export interface FormsSelect<T extends boolean = true> {
  * via the `definition` "form-submissions_select".
  */
 export interface FormSubmissionsSelect<T extends boolean = true> {
+  uuid?: T;
   form?: T;
   submissionData?:
     | T
@@ -23802,6 +24725,7 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
  * via the `definition` "exports_select".
  */
 export interface ExportsSelect<T extends boolean = true> {
+  uuid?: T;
   name?: T;
   format?: T;
   limit?: T;
@@ -23831,6 +24755,7 @@ export interface ExportsSelect<T extends boolean = true> {
  * via the `definition` "imports_select".
  */
 export interface ImportsSelect<T extends boolean = true> {
+  uuid?: T;
   collectionSlug?: T;
   importMode?: T;
   matchField?: T;
