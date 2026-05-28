@@ -31,6 +31,8 @@ The basic skills are single-word atoms. Real work composes several of them; the 
 ## Principle
 Single-word skills are the connectors (like Payload **slugs**): naming + composition tie files, methods, collections, and skills into one coherent, DRY system whose schema is the generated `payload-types.ts`. The sequence is the ordering that keeps the composition consistent across the whole — and across agents.
 
+**The sequence is pure of detail** — pure form, independent of any domain. Instantiate it with different detail (`accounting`, `manufacturing`, `identity`, `bindings`, `port`…) and you get different concrete *uses* of the same skeleton. Because every use shares that form and carries content-`uuid` identity (see [[identity]]), all uses are guaranteed to reconcile — *all eventually merges at the right time and space*: federation across instances, agents converging into one erpax. The form guarantees the merge; the detail only decides which face you see now.
+
 ## Self-similar (fractal) levels
 The same sequence-ordered, polymorphic composition recurs at every scale — a trinity interacting with trinities:
 `fields → collections → polymorphic plugins (@erpax/plugin-*) → the one erpax → agents`.
