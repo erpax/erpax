@@ -32,6 +32,22 @@ A few atomic dimensions generate an unbounded variant space — the same generat
 - **BOM + Routing** = the two primitives every industry shares ("consume materials through process steps at capacity").
 - **Polymorphic outward refs**; accounting/audit consume wage/efficiency/events via `relationTo:[...]`.
 
+## Strategies mined from etrima models (port the useful)
+The etrima Rails models (`lot`, `lot_work_phase`, `consumption`, `work_variant`) encode reusable patterns — see [[port]]:
+- **Stage-quantity counters + DERIVED status** — track `qty` and monotonic `qty{Ordered,Produced,Packed,Shipped,Delivered}`; don't store status, derive it by comparing (`qty ≤ qtyDelivered` → delivered). "remaining = qty − max(downstream)". Every workable/pending/producing list is a `where` filter, not a state machine ([[queries]]).
+- **Timestamp-driven lifecycle** — nullable `startedAt`/`completedAt`/`confirmedAt` mark transitions; startable/completable derive from them.
+- **Labor-minute economics** — `runTimePerUnit(s)` → `minutesRequired = qty·s/60`; three per-minute rates (`costPerMinute`, `pricePerMinute`, `payPerHour`); `wage = s/3600·payPerHour / machinesPerWorker` (UoM- + parallelism-aware). `unitCost = max(wage,cost,price) + materialsCost/qty`.
+- **BOM `unitConsumption`** (per-unit material qty) with UoM-aware rounding — piece-like (`pc/box/nr`) → ceil, continuous → round(3); bidirectional required↔consumption. Vendor is an accounting `Account` ([[accounting]]).
+- **Denormalized rollups up the tree** (run → operation → order), recomputed in a `beforeChange`/`afterChange` [[hooks]] — but via Payload hooks/[[jobs]], NOT `save(validate:false)`. Cache derived collections (etrima's 5-min TTL) in the KV `AI_CACHE` binding ([[bindings]]).
+- **Generative creation** — operation × orderable variants → operation-runs.
+
+## Obsolete (do NOT port — the immune system drops these)
+- `eval`'d `option_1..12` grids (recur in `lot`/`work_variant`) → composable `dimensions`.
+- Hardcoded `team.code ILIKE '1221%'` process scopes (knitting/cutting/sewing/steaming/packing) → work-center `type`/category, not magic code prefixes.
+- `save(validate:false)` / `fast_save` denormalization bypass → Payload hooks/jobs.
+- Raw-SQL summary strings + a real `@pi` shared-memo bug → query presets / Analytics Engine.
+- `define_method` getter delegation → relationship population / virtual fields.
+
 ## Common mistakes
 - Fixed option/size columns (the etrima flaw) — use composable `dimensions` + generated `variants`.
 - Integer-only units — carry `unitOfMeasure` (kills process-industry support).
