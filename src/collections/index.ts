@@ -168,6 +168,8 @@ export { default as QualityInspections } from './QualityInspections'
 export { default as WipSnapshots } from './WipSnapshots'
 export { default as WorkCenters } from './WorkCenters'
 export { default as WorkShifts } from './WorkShifts'
+export { default as Operations } from './Operations'
+export { default as Routings } from './Routings'
 
 // Facilities & Resources
 export { default as Properties } from './Properties'

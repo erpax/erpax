@@ -455,6 +455,8 @@ src/collections/MineralResourceAssets.ts:14: * @standard IFRS IFRS-6 §18-§22 i
 src/collections/MineralResourceAssets.ts:15: * @standard IFRS IFRS-6 §23-§25 disclosure
 src/collections/MineralResourceAssets.ts:16: * @standard ISO-4217:2015 currency-codes
 src/collections/MineralResourceAssets.ts:17: * @standard ISO-8601-1:2019 date-time
+src/collections/Operations.ts:10: * @standard ISA-95:2013 / IEC-62264-1 §B.4 operations-definition process-segment
+src/collections/Operations.ts:11: * @standard ISO-22400-2:2014 manufacturing-operations KPIs
 src/collections/Opportunities.ts:10: * @standard ISO-4217:2015 currency-codes
 src/collections/Opportunities.ts:9: * @standard ISO-8601-1:2019 date-time
 src/collections/Pages/access/superAdminOrTenantAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -566,6 +568,9 @@ src/collections/Roles/hooks/validateRoleDefinition.ts:9: * @standard NIST INCITS
 src/collections/Roles/index.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/collections/RoundingAdjustments.ts:10: * @standard ISO-4217:2015 currency-codes from-to-currency-pair
 src/collections/RoundingAdjustments.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
+src/collections/Routings.ts:12: * @standard ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing
+src/collections/Routings.ts:13: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (cycle time)
+src/collections/Routings.ts:14: * @standard ISO-8601-1:2019 date-time
 src/collections/SalesCommissions.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/SalesCommissions.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/SalesOrders.ts:25: * @standard UBL-2.1 Order document-schema
@@ -1096,9 +1101,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1048:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1066:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1067:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1054:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1072:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1073:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -3041,6 +3046,7 @@ src/collections/Media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) da
 src/collections/Media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
 src/collections/Media/index.ts:23: * @compliance GDPR Art.32 security-of-processing
 src/collections/MineralResourceAssets.ts:19: * @compliance SOX §404 internal-controls
+src/collections/Operations.ts:13: * @compliance SOX §404 internal-controls production-control
 src/collections/Pages/access/superAdminOrTenantAdmin.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/Pages/index.ts:35: * @compliance WCAG-2.1 level-AA accessibility
 src/collections/PaymentAllocations.ts:23: * @compliance SOX §404 internal-controls cash-allocation TOM-AR-02
@@ -3092,6 +3098,7 @@ src/collections/Roles/hooks/validateRoleDefinition.ts:12: * @compliance SOX §40
 src/collections/Roles/index.ts:15: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/Roles/index.ts:16: * @compliance SOX §404 internal-controls
 src/collections/RoundingAdjustments.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
+src/collections/Routings.ts:18: * @compliance SOX §404 internal-controls production-control
 src/collections/SalesCommissions.ts:17: * @compliance SOX §404 internal-controls commission-completeness
 src/collections/SalesOrders.ts:34: * @compliance EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
 src/collections/SepaMandates.ts:21: * @compliance SOX §404 internal-controls
@@ -3745,6 +3752,8 @@ src/collections/Returns.ts:8: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/collections/RoundingAdjustments.ts:12: * @accounting IFRS IAS-1 §51(e) level-of-rounding-disclosure
 src/collections/RoundingAdjustments.ts:13: * @accounting IFRS IAS-21 §39 foreign-currency-translation
 src/collections/RoundingAdjustments.ts:14: * @accounting US-GAAP ASC-205-10-45 presentation-rounding
+src/collections/Routings.ts:15: * @accounting IFRS IAS-2 §12 cost-of-conversion operation-time
+src/collections/Routings.ts:16: * @accounting US-GAAP ASC-330-10-30 inventory-cost
 src/collections/SalesCommissions.ts:13: * @accounting IFRS IFRS-15 §91 §92 §93 §94 incremental-costs-of-obtaining
 src/collections/SalesCommissions.ts:14: * @accounting IFRS IFRS-15 §99 §103 §104 §105 §106 amortisation
 src/collections/SalesCommissions.ts:15: * @accounting US-GAAP ASC-340-40-25-1 incremental-costs
@@ -3920,9 +3929,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1046:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1047:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1068:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1052:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1053:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1074:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/seeds/accounting/critical-gaps-verification.test.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4359,6 +4368,7 @@ src/collections/MaintenanceRequests.ts:16: * @security ISO-27001 A.5.23 cloud-se
 src/collections/MaintenanceWorkOrders.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Media/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/collections/MineralResourceAssets.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/collections/Operations.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Opportunities.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Pages/access/superAdminOrTenantAdmin.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/collections/Pages/access/superAdminOrTenantAdmin.ts:8: * @security ISO-27002 §5.15 access-control
@@ -4401,6 +4411,7 @@ src/collections/Roles/index.ts:12: * @security ISO-27001 A.5.18 access-rights
 src/collections/Roles/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/collections/Roles/index.ts:14: * @security ISO-27002 §5.16 identity-management
 src/collections/RoundingAdjustments.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/Routings.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SalesCommissions.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SalesOrders.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SepaMandates.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4769,6 +4780,7 @@ src/collections/Media/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail coll
 src/collections/Memories.ts:32: * @audit Conservation Law 8 content-uuid (per-memory contentUuid)
 src/collections/Memories.ts:33: * @audit Conservation Law 10 referential-harmony (relatedTo graph)
 src/collections/MineralResourceAssets.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-EE-assets
+src/collections/Operations.ts:12: * @audit ISO-19011:2018 audit-trail operation-definition-changes
 src/collections/Opportunities.ts:12: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/collections/Pages/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Pages/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -4805,6 +4817,7 @@ src/collections/RegulatoryDeferralAccounts.ts:15: * @audit ISO 19011:2018 §6.4.
 src/collections/Returns.ts:9: * @audit ISO-19011:2018 audit-trail rma-evidence
 src/collections/Roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/RoundingAdjustments.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
+src/collections/Routings.ts:17: * @audit ISO-19011:2018 audit-trail routing-changes
 src/collections/SalesCommissions.ts:16: * @audit ISO-19011:2018 audit-trail commission-evidence
 src/collections/SalesOrders.ts:35: * @audit ISO-19011:2018 audit-trail
 src/collections/SepaMandates.ts:20: * @audit ISO-19011:2018 audit-trail mandate-evidence
@@ -4951,8 +4964,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1049:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1069:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1055:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1075:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/critical-gaps-verification.test.ts:8: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-evidence

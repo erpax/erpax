@@ -135,6 +135,10 @@ export const emitGrPosted        = emitOnStatusTransition('posted',    'gr:poste
 export const emitWoReleased      = emitOnStatusTransition('released',  'wo:released',      'inventory_transfer')
 export const emitProdCompleted   = emitOnStatusTransition('posted',    'prod:completed',   'inventory_transfer')
 export const emitQcComplete      = emitOnStatusTransition('completed', 'qc:complete',      'inventory_transfer')
+// Cost-of-conversion (IAS-2 §12): labor (work-shift approved) + operation
+// time (routing completed) post to WIP. Accounting consumes polymorphically.
+export const emitShiftApproved    = emitOnStatusTransition('approved',  'shift:approved',   'inventory_transfer')
+export const emitRoutingCompleted = emitOnStatusTransition('completed', 'routing:completed', 'inventory_transfer')
 
 // Project + IFRS-15 over-time
 export const emitMilestoneAchieved = emitOnStatusTransition('achieved', 'milestone:achieved', 'invoice')

@@ -26,6 +26,7 @@ import { autoPopulateCreatedBy } from '../hooks/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '../hooks/auditTrailAfterChange'
 import { accountingCollectionAccess } from '../access/auth'
 import { referenceField, statusField, auditFields, notesField, currencyField } from '../fields/base-accounting-fields'
+import { emitShiftApproved } from '../hooks/chainEventEmitters'
 
 /**
  * Derive `wage` from run time, rate, and parallelism (machines-per-worker).
@@ -89,7 +90,7 @@ const WorkShifts: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [autoPopulateCreatedBy, computeWage],
-    afterChange: [auditTrailAfterChange('work-shifts')],
+    afterChange: [emitShiftApproved, auditTrailAfterChange('work-shifts')],
   },
   timestamps: true,
 }

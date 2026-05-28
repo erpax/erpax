@@ -167,6 +167,8 @@ export interface Config {
     'bills-of-materials': BillsOfMaterial;
     'work-centers': WorkCenter;
     'work-shifts': WorkShift;
+    operations: Operation;
+    routings: Routing;
     'production-receipts': ProductionReceipt;
     'quality-inspections': QualityInspection;
     'wip-snapshots': WipSnapshot;
@@ -391,6 +393,8 @@ export interface Config {
     'bills-of-materials': BillsOfMaterialsSelect<false> | BillsOfMaterialsSelect<true>;
     'work-centers': WorkCentersSelect<false> | WorkCentersSelect<true>;
     'work-shifts': WorkShiftsSelect<false> | WorkShiftsSelect<true>;
+    operations: OperationsSelect<false> | OperationsSelect<true>;
+    routings: RoutingsSelect<false> | RoutingsSelect<true>;
     'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
@@ -9894,6 +9898,96 @@ export interface WorkShift {
   createdAt: string;
 }
 /**
+ * Reusable operation-type catalog (Cut/Sew/Mix/Assemble/Inspect/Pack). Industry-agnostic; routings compose these.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operations".
+ */
+export interface Operation {
+  id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Operation code (e.g. `OP-SEW`).
+   */
+  reference: string;
+  /**
+   * Operation name.
+   */
+  name: string;
+  /**
+   * Default work-center this operation runs on (a routing step may override).
+   */
+  defaultWorkCenter?: (number | null) | WorkCenter;
+  /**
+   * Parent operation — the operation-type hierarchy.
+   */
+  parent?: (number | null) | Operation;
+  status?: ('active' | 'inactive') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Ordered process step on a work-order: operation × work-center × time. With BOM, the second universal manufacturing primitive; drives IAS-2 cost-of-conversion.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "routings".
+ */
+export interface Routing {
+  id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Routing-step reference (e.g. `WO-…/10`).
+   */
+  reference: string;
+  /**
+   * Production order this step belongs to.
+   */
+  workOrder: number | WorkOrder;
+  /**
+   * Operation type executed at this step.
+   */
+  operation: number | Operation;
+  /**
+   * Work-center performing the step (defaults from the operation).
+   */
+  workCenter?: (number | null) | WorkCenter;
+  /**
+   * Step order within the routing (ascending).
+   */
+  seq: number;
+  /**
+   * One-off setup time for the step (minutes).
+   */
+  setupTimeMinutes?: number | null;
+  /**
+   * Run time per unit (seconds) — drives minutes-required + IAS-2 conversion cost.
+   */
+  runTimeSecondsPerUnit?: number | null;
+  /**
+   * UoM the run time is per (pcs/kg/L/m…) — discrete and process.
+   */
+  unitOfMeasure?: string | null;
+  status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'cancelled') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Finished-good receipt from a work-order into inventory. Booked at absorbed cost per IAS-2 §10. The variance vs standard lands in `cost-variances`.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -17266,6 +17360,14 @@ export interface PayloadLockedDocument {
         value: number | WorkShift;
       } | null)
     | ({
+        relationTo: 'operations';
+        value: number | Operation;
+      } | null)
+    | ({
+        relationTo: 'routings';
+        value: number | Routing;
+      } | null)
+    | ({
         relationTo: 'production-receipts';
         value: number | ProductionReceipt;
       } | null)
@@ -21550,6 +21652,48 @@ export interface WorkShiftsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operations_select".
+ */
+export interface OperationsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  reference?: T;
+  name?: T;
+  defaultWorkCenter?: T;
+  parent?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "routings_select".
+ */
+export interface RoutingsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  reference?: T;
+  workOrder?: T;
+  operation?: T;
+  workCenter?: T;
+  seq?: T;
+  setupTimeMinutes?: T;
+  runTimeSecondsPerUnit?: T;
+  unitOfMeasure?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "production-receipts_select".
  */
 export interface ProductionReceiptsSelect<T extends boolean = true> {
@@ -25345,6 +25489,8 @@ export interface TaskCreateCollectionExport {
       | 'bills-of-materials'
       | 'work-centers'
       | 'work-shifts'
+      | 'operations'
+      | 'routings'
       | 'production-receipts'
       | 'quality-inspections'
       | 'wip-snapshots'
