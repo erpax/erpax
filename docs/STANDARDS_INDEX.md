@@ -455,6 +455,9 @@ src/collections/MineralResourceAssets.ts:14: * @standard IFRS IFRS-6 §18-§22 i
 src/collections/MineralResourceAssets.ts:15: * @standard IFRS IFRS-6 §23-§25 disclosure
 src/collections/MineralResourceAssets.ts:16: * @standard ISO-4217:2015 currency-codes
 src/collections/MineralResourceAssets.ts:17: * @standard ISO-8601-1:2019 date-time
+src/collections/OperationRuns.ts:14: * @standard ISA-95:2013 / IEC-62264-1 §B.5 production-performance work-response
+src/collections/OperationRuns.ts:15: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)
+src/collections/OperationRuns.ts:16: * @standard ISO-8601-1:2019 date-time start-completion
 src/collections/Operations.ts:10: * @standard ISA-95:2013 / IEC-62264-1 §B.4 operations-definition process-segment
 src/collections/Operations.ts:11: * @standard ISO-22400-2:2014 manufacturing-operations KPIs
 src/collections/Opportunities.ts:10: * @standard ISO-4217:2015 currency-codes
@@ -1101,9 +1104,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1054:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1072:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1073:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1057:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1075:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1076:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -3046,6 +3049,7 @@ src/collections/Media/hooks/beforeChange.ts:8: * @compliance GDPR Art.5(1)(c) da
 src/collections/Media/index.ts:22: * @compliance GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
 src/collections/Media/index.ts:23: * @compliance GDPR Art.32 security-of-processing
 src/collections/MineralResourceAssets.ts:19: * @compliance SOX §404 internal-controls
+src/collections/OperationRuns.ts:20: * @compliance SOX §404 internal-controls production-control
 src/collections/Operations.ts:13: * @compliance SOX §404 internal-controls production-control
 src/collections/Pages/access/superAdminOrTenantAdmin.ts:9: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/Pages/index.ts:35: * @compliance WCAG-2.1 level-AA accessibility
@@ -3684,6 +3688,8 @@ src/collections/LegalEntities.ts:32: * @accounting US-GAAP ASC-280 segment-repor
 src/collections/MaintenanceWorkOrders.ts:18: * @accounting IFRS IAS-16 §12 §13 capitalisable-vs-expense routine-maintenance
 src/collections/MaintenanceWorkOrders.ts:19: * @accounting IFRS IAS-2 §10 cost-of-purchase materials-issued
 src/collections/MaintenanceWorkOrders.ts:20: * @accounting US-GAAP ASC-360 ppe-maintenance
+src/collections/OperationRuns.ts:17: * @accounting IFRS IAS-2 §12 cost-of-conversion
+src/collections/OperationRuns.ts:18: * @accounting US-GAAP ASC-330-10-30 inventory-cost
 src/collections/Opportunities.ts:11: * @accounting IFRS IFRS-15 §9 contract-existence-criteria
 src/collections/PaymentAllocations.ts:19: * @accounting IFRS IFRS-15 §47 §53 transaction-price-allocation
 src/collections/PaymentAllocations.ts:20: * @accounting US-GAAP ASC-606-10-32 transaction-price
@@ -3929,9 +3935,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1052:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1053:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1074:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1055:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1056:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1077:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/seeds/accounting/critical-gaps-verification.test.ts:6: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4368,6 +4374,7 @@ src/collections/MaintenanceRequests.ts:16: * @security ISO-27001 A.5.23 cloud-se
 src/collections/MaintenanceWorkOrders.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Media/hooks/beforeChange.ts:7: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/collections/MineralResourceAssets.ts:20: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/collections/OperationRuns.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Operations.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Opportunities.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Pages/access/superAdminOrTenantAdmin.ts:7: * @security ISO-27001 A.5.18 access-rights
@@ -4780,6 +4787,7 @@ src/collections/Media/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail coll
 src/collections/Memories.ts:32: * @audit Conservation Law 8 content-uuid (per-memory contentUuid)
 src/collections/Memories.ts:33: * @audit Conservation Law 10 referential-harmony (relatedTo graph)
 src/collections/MineralResourceAssets.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-EE-assets
+src/collections/OperationRuns.ts:19: * @audit ISO-19011:2018 audit-trail production-execution
 src/collections/Operations.ts:12: * @audit ISO-19011:2018 audit-trail operation-definition-changes
 src/collections/Opportunities.ts:12: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/collections/Pages/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -4964,8 +4972,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1055:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1075:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1058:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1078:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/critical-gaps-verification.test.ts:8: * @audit ISO-19011:2018 audit-trail
 src/seeds/accounting/index.ts:21: * @audit ISO-19011:2018 audit-trail seed-evidence

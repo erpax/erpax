@@ -139,6 +139,7 @@ export const emitQcComplete      = emitOnStatusTransition('completed', 'qc:compl
 // time (routing completed) post to WIP. Accounting consumes polymorphically.
 export const emitShiftApproved    = emitOnStatusTransition('approved',  'shift:approved',   'inventory_transfer')
 export const emitRoutingCompleted = emitOnStatusTransition('completed', 'routing:completed', 'inventory_transfer')
+export const emitOpRunCompleted   = emitOnStatusTransition('completed', 'oprun:completed',  'inventory_transfer')
 
 // Project + IFRS-15 over-time
 export const emitMilestoneAchieved = emitOnStatusTransition('achieved', 'milestone:achieved', 'invoice')

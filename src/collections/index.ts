@@ -170,6 +170,7 @@ export { default as WorkCenters } from './WorkCenters'
 export { default as WorkShifts } from './WorkShifts'
 export { default as Operations } from './Operations'
 export { default as Routings } from './Routings'
+export { default as OperationRuns } from './OperationRuns'
 
 // Facilities & Resources
 export { default as Properties } from './Properties'

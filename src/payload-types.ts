@@ -169,6 +169,7 @@ export interface Config {
     'work-shifts': WorkShift;
     operations: Operation;
     routings: Routing;
+    'operation-runs': OperationRun;
     'production-receipts': ProductionReceipt;
     'quality-inspections': QualityInspection;
     'wip-snapshots': WipSnapshot;
@@ -395,6 +396,7 @@ export interface Config {
     'work-shifts': WorkShiftsSelect<false> | WorkShiftsSelect<true>;
     operations: OperationsSelect<false> | OperationsSelect<true>;
     routings: RoutingsSelect<false> | RoutingsSelect<true>;
+    'operation-runs': OperationRunsSelect<false> | OperationRunsSelect<true>;
     'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
@@ -9988,6 +9990,103 @@ export interface Routing {
   createdAt: string;
 }
 /**
+ * Per-operation production record: produced/scrap/backorder at one operation × work-center. Unbounded `variants` replace option_1..12.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operation-runs".
+ */
+export interface OperationRun {
+  id: number;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Operation-run reference.
+   */
+  reference: string;
+  /**
+   * Production order this run belongs to.
+   */
+  workOrder: number | WorkOrder;
+  /**
+   * Routing step executed (carries seq + run time).
+   */
+  routing?: (number | null) | Routing;
+  /**
+   * Operation type (denormalised from the routing for fast filter).
+   */
+  operation?: (number | null) | Operation;
+  /**
+   * Work-center the run was performed at.
+   */
+  workCenter?: (number | null) | WorkCenter;
+  /**
+   * Labor shift that performed the run (optional).
+   */
+  workShift?: (number | null) | WorkShift;
+  /**
+   * Quantity released to this run.
+   */
+  qtyOrdered?: number | null;
+  /**
+   * Good quantity produced.
+   */
+  qtyProduced?: number | null;
+  /**
+   * Scrapped (NCR) quantity.
+   */
+  qtyScrap?: number | null;
+  /**
+   * Quantity still owed (ordered − produced).
+   */
+  qtyBackordered?: number | null;
+  /**
+   * UoM of the quantities (pcs/kg/L/m…) — discrete and process.
+   */
+  unitOfMeasure?: string | null;
+  /**
+   * Generated variant rows — the unbounded replacement for the option_1..12 grid.
+   */
+  variants?:
+    | {
+        /**
+         * Open dimension map, e.g. { "size": "M", "colour": "red" }. A blank axis → its identity element.
+         */
+        attributes?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        qtyOrdered?: number | null;
+        qtyProduced?: number | null;
+        qtyBackordered?: number | null;
+        unitOfMeasure?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * ISO 8601 — run start (first production).
+   */
+  startedAt?: string | null;
+  /**
+   * ISO 8601 — run completion.
+   */
+  completedAt?: string | null;
+  status?: ('draft' | 'ordered' | 'in_progress' | 'completed' | 'backordered' | 'cancelled') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Finished-good receipt from a work-order into inventory. Booked at absorbed cost per IAS-2 §10. The variance vs standard lands in `cost-variances`.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -17368,6 +17467,10 @@ export interface PayloadLockedDocument {
         value: number | Routing;
       } | null)
     | ({
+        relationTo: 'operation-runs';
+        value: number | OperationRun;
+      } | null)
+    | ({
         relationTo: 'production-receipts';
         value: number | ProductionReceipt;
       } | null)
@@ -21694,6 +21797,44 @@ export interface RoutingsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operation-runs_select".
+ */
+export interface OperationRunsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  reference?: T;
+  workOrder?: T;
+  routing?: T;
+  operation?: T;
+  workCenter?: T;
+  workShift?: T;
+  qtyOrdered?: T;
+  qtyProduced?: T;
+  qtyScrap?: T;
+  qtyBackordered?: T;
+  unitOfMeasure?: T;
+  variants?:
+    | T
+    | {
+        attributes?: T;
+        qtyOrdered?: T;
+        qtyProduced?: T;
+        qtyBackordered?: T;
+        unitOfMeasure?: T;
+        id?: T;
+      };
+  startedAt?: T;
+  completedAt?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "production-receipts_select".
  */
 export interface ProductionReceiptsSelect<T extends boolean = true> {
@@ -25491,6 +25632,7 @@ export interface TaskCreateCollectionExport {
       | 'work-shifts'
       | 'operations'
       | 'routings'
+      | 'operation-runs'
       | 'production-receipts'
       | 'quality-inspections'
       | 'wip-snapshots'
