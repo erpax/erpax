@@ -43,6 +43,15 @@ Every ported collection MUST carry its real `@standard`/`@accounting`/`@audit`/`
 - **The sequence makes them mutually compliant.** Because every standard attaches to composable atoms applied in `0·3·6·9·1·2·4·8·7·5` order (see [[sequence]]), many standards coexist on one collection without conflict — the sequence reconciles them.
 - **Standards + sequence = the multi-agent coordinate + collision detector.** Many agents can generate features simultaneously; the architecture-invariants (`services/architecture-invariants`), the generated `docs/STANDARDS_INDEX.md`, and `payload-types.ts` surface exactly where two agents' skills collide. Strict banners are what make that monitoring possible.
 
+## Data migration (dump → import-export plugin)
+Port the *data*, not just the schema: `scripts/etrima-to-import.mjs` streams the source pg_dump (gzipped plain SQL, read straight from the zip) and emits one JSON array of documents per collection for `@payloadcms/plugin-import-export` to import (CSV or JSON; JSON handles nested arrays cleanly). Rules:
+- **Preserve source PKs** as the erpax doc `id` so foreign keys map 1:1 — no id remapping; the content-uuid plugin stamps `uuid` on import. Import in dependency order.
+- The COPY parser is **self-describing** — it reads each block's own column list, so the mapping config is column-order-independent.
+- **Sample** huge transactional tables (etrima `work_orders` 2M, `work_shifts` 377K, `lot_work_phases` 291K); take master data in full. **Skip** paper-trail (`versions`/`version_associations`) + dated archive tables.
+- **Anonymise PII** (employees `egn`/name/DOB/phone/email, account contacts) — never seed real PII.
+- **Drop/collapse obsolete**: `option_1..12` → the `variants[]` array (see [[manufacturing]]).
+- Output is gitignored (`seed/import/`) — regenerable from dump + converter.
+
 ## Common mistakes
 - Porting ActiveAdmin per-resource tweaks into bespoke admin React instead of Payload's declarative `admin` config.
 - Re-implementing a concern in each collection instead of ONE shared field-factory (the concern's whole point — DRY).
