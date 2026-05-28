@@ -1,0 +1,85 @@
+import { CollectionConfig } from 'payload'
+import { roleBasedAccess } from '../../../access/roleBasedAccess'
+
+export const BoardActions: CollectionConfig = {
+  slug: 'board-actions',
+  admin: {
+    useAsTitle: 'actionTitle',
+  },
+  access: roleBasedAccess({
+    read: ['superadmin', 'admin', 'audit-staff', 'compliance-officer'],
+    create: ['superadmin', 'admin'],
+    update: ['superadmin', 'admin'],
+    delete: ['superadmin'],
+  }),
+  fields: [
+    {
+      name: 'entity',
+      type: 'relationship',
+      relationTo: 'legal-entities',
+      required: true,
+    },
+    {
+      name: 'actionTitle',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'description',
+      type: 'richText',
+    },
+    {
+      name: 'actionType',
+      type: 'select',
+      options: [
+        { label: 'Resolution', value: 'resolution' },
+        { label: 'Policy Approval', value: 'policy-approval' },
+        { label: 'Risk Assessment', value: 'risk-assessment' },
+        { label: 'Control Enhancement', value: 'control-enhancement' },
+        { label: 'Committee Report', value: 'committee-report' },
+        { label: 'Attestation', value: 'attestation' },
+      ],
+      required: true,
+    },
+    {
+      name: 'meetingDate',
+      type: 'date',
+      required: true,
+    },
+    {
+      name: 'actionDate',
+      type: 'date',
+    },
+    {
+      name: 'status',
+      type: 'select',
+      options: [
+        { label: 'Approved', value: 'approved' },
+        { label: 'Rejected', value: 'rejected' },
+        { label: 'Tabled', value: 'tabled' },
+        { label: 'Withdrawn', value: 'withdrawn' },
+      ],
+      required: true,
+    },
+    {
+      name: 'voteTally',
+      type: 'group',
+      fields: [
+        { name: 'votesFor', type: 'number' },
+        { name: 'votesAgainst', type: 'number' },
+        { name: 'abstentions', type: 'number' },
+      ],
+    },
+    {
+      name: 'minutes',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
+      name: 'relatedControls',
+      type: 'relationship',
+      relationTo: 'internal-controls',
+      hasMany: true,
+    },
+  ],
+}

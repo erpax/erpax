@@ -1,7 +1,7 @@
 import type { CollectionConfig } from 'payload'
 
-import { isSuperAdminAccess } from '@/access/isSuperAdmin'
-import { scopeResourceCollections } from '@/standards/nist-incits-359'
+import { isSuperAdminAccess } from '../../access/isSuperAdmin'
+import { scopeResourceCollections } from '../../standards/nist-incits-359'
 
 import { validateRoleDefinition } from './hooks/validateRoleDefinition'
 

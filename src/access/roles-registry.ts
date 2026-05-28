@@ -23,7 +23,7 @@
  * @audit ISO-19011:2018 §6.4.6 audit-evidence-role-traceability
  */
 
-import type { UserRole } from '@/types/auth/types'
+import type { UserRole } from '../types/auth/types'
 
 /** A single role entry. */
 export interface RoleEntry {

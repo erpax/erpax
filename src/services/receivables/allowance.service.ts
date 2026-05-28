@@ -10,7 +10,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { AgingBucket, AllowanceCalculation, AllowanceResult } from './types'
+import { AgingBucket, AllowanceCalculation, AllowanceResult } from '@/types/receivables'
 
 export class AllowanceCalculator {
   /**

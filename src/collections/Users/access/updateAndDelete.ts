@@ -1,7 +1,7 @@
 import type { Access } from 'payload'
 
 import { getUserTenantIDs } from '../../../utilities/getUserTenantIDs'
-import { isSuperAdmin } from '@/access/isSuperAdmin'
+import { isSuperAdmin } from '../../../access/isSuperAdmin'
 import { isAccessingSelf } from './isAccessingSelf'
 
 /**

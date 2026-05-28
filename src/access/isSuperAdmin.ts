@@ -11,7 +11,7 @@
  */
 
 import type { Access, FieldAccess } from 'payload'
-import type { Iso27002ControlId } from '@/standards/iso-27002'
+import type { Iso27002ControlId } from '../standards/iso-27002'
 
 /**
  * Canonical ISO 27002 controls this predicate exercises:

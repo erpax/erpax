@@ -1,9 +1,8 @@
 import { CollectionConfig } from 'payload'
-import { adminOnly, multiTenantRead } from '@/types/auth'
-import { authenticated } from '@/access/authenticated'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
+import { adminOnly, multiTenantRead } from '../../access/auth'
+import { authenticated } from '../../access/authenticated'
+import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { paymentsBeforeValidate } from './hooks/beforeValidate'
 import { paymentsBeforeChange } from './hooks/beforeChange'
 import { paymentsAfterChange } from './hooks/afterChange'
@@ -229,6 +228,5 @@ export const Payments: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
-    multiTenancyField(),
   ],
 }

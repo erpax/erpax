@@ -9,8 +9,9 @@ import { GetPlatformProxyOptions } from 'wrangler'
 import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
+import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { r2Storage } from '@payloadcms/storage-r2'
-import { accountingPlugin } from './plugins/accounting'
+// Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
 import { translations as importExportTranslations } from '@payloadcms/plugin-import-export/translations/languages/all'
@@ -43,10 +44,11 @@ import { sv } from '@payloadcms/translations/languages/sv'
 import { uk } from '@payloadcms/translations/languages/uk'
 
 import { isSuperAdmin, isSuperAdminAccess } from './access/isSuperAdmin'
-// All collections come from canonical src/collections/* locations.
-// Domain context (Core / Content / Billing / Inventory / Accounting) is documented
-// in individual collection definition files.
-import {
+// All 145+ collections come from canonical src/collections/* locations (flat, agnostic organization).
+// No domain silos: organizing by actual data type/concern, not business domain.
+// Collections are self-contained with clear boundaries for future plugin extraction.
+import * as allCollections from './collections'
+const {
   // Core
   Tenants,
   Users,
@@ -66,11 +68,177 @@ import {
   Subscriptions,
   // Inventory
   Items,
-  // Accounting — All 122 collections (GL core + 119 others) provided by accountingPlugin.
-  // Removed from canonical src/collections/accounting/ → plugin barrels in Phase 2.2-2.9.
-} from './collections'
-
-// Accounting collections — fully integrated Phase 11 canonical migration
+  // Financial & Operational (145+ collections total)
+  GLAccounts,
+  GLPostingRules,
+  JournalEntries,
+  GLPostings,
+  // GL Lifecycle & Closing (Phase A1: Double-Entry & Period Locks)
+  PeriodLocks,
+  ClosingEntries,
+  BankStatements,
+  BankTransactions,
+  BankAccounts,
+  AccountReconciliations,
+  BankReconciliations,
+  FinancialStatements,
+  PeriodEndAdjustments,
+  RecurringJournals,
+  PriorPeriodAdjustments,
+  RoundingAdjustments,
+  TaxCalculations,
+  TaxCodes,
+  TaxJurisdictions,
+  TaxReturns,
+  CurrencyRates,
+  // Fiscal Period Management (Phase B1: Fiscal Period Flexibility)
+  FiscalPeriods,
+  FiscalCalendars,
+  FiscalPeriodSnapshots,
+  FixedAssets,
+  DepreciationSchedules,
+  Customers,
+  Leads,
+  Opportunities,
+  CustomerSegments,
+  Quotes,
+  SalesOrders,
+  SalesCommissions,
+  CreditMemos,
+  Returns,
+  Shipments,
+  Refunds,
+  PaymentAllocations,
+  DunningCycles,
+  Vendors,
+  VendorQuotes,
+  VendorScorecards,
+  PurchaseOrders,
+  PurchaseRequisitions,
+  GoodsReceipts,
+  InventoryMovements,
+  WarehouseLocations,
+  CostCenters,
+  BudgetPlanning,
+  CostVariances,
+  IntercompanyTransactions,
+  ConsolidationEliminations,
+  FxTransactions,
+  Contracts,
+  PerformanceObligations,
+  CommitmentsAndContingencies,
+  Leases,
+  LeaseModifications,
+  LeasePeriodPostings,
+  PaymentRuns,
+  SepaMandates,
+  PayrollRuns,
+  Employees,
+  JobPositions,
+  TimeEntries,
+  LeaveRequests,
+  PerformanceReviews,
+  ExpenseReports,
+  RecruitingPipeline,
+  Activities,
+  Projects,
+  ProjectTasks,
+  ProjectMilestones,
+  WorkOrders,
+  WorkflowDefinitions,
+  WorkflowInstances,
+  BillsOfMaterials,
+  ProductionReceipts,
+  QualityInspections,
+  WipSnapshots,
+  Properties,
+  Spaces,
+  MaintenanceRequests,
+  MaintenanceWorkOrders,
+  BookableResources,
+  Bookings,
+  Carriers,
+  TrackingEvents,
+  CustomsDeclarations,
+  ConsignmentArrangements,
+  ConsignmentInventory,
+  ConsignmentSales,
+  AuditEvents,
+  ApiAuditEvents,
+  EvidenceAttestations,
+  // New Phase 1-5 Compliance & Audit Framework (28 collections)
+  EntityTypes,
+  TaxingJurisdictions,
+  EntityLegalStructures,
+  ComplianceFrameworks,
+  ComplianceRequirements,
+  InternalControls,
+  ControlTests,
+  AuditSamples,
+  ComplianceGaps,
+  AuditEvidence,
+  AuditFindings,
+  AuditTrailEvents,
+  RemediationPlans,
+  AuditCommittees,
+  AuditCommitteeMembers,
+  BoardActions,
+  ManagementCertifications,
+  RegulatoryReports,
+  InternalPolicies,
+  StatutoryReportTemplates,
+  StatutoryFieldMappings,
+  PolicyVersions,
+  PolicyAcknowledgments,
+  ComplianceDeadlines,
+  ComplianceNotifications,
+  ReportingStandards,
+  ReportingMappings,
+  // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
+  RelatedPartyTransactions,
+  ManagementAssessmentICFR,
+  DisclosureChecklists,
+  AuditCommitteeMinutes,
+  RiskRegister,
+  DebtSchedule,
+  InternalAuditFunction,
+  SegmentReporting,
+  ConsentRecords,
+  DataSubjectRequests,
+  DataProcessingActivities,
+  KycChecks,
+  BeneficialOwners,
+  CsrdDisclosures,
+  CarbonEmissions,
+  BiologicalAssets,
+  MineralResourceAssets,
+  InvestmentProperties,
+  Provisions,
+  GovernmentGrants,
+  DeferredTaxItems,
+  ShareBasedPayments,
+  BusinessCombinations,
+  HeldForSaleClassifications,
+  FairValueMeasurements,
+  EarningsPerShare,
+  InsuranceContracts,
+  RegulatoryDeferralAccounts,
+  PostBalanceSheetEvents,
+  TransactionFailures,
+  TransferPricingFiles,
+  Standards,
+  Memories,
+  McpToolMetadata,
+  Translations,
+  commitments,
+  contractAmendments,
+  contractPerformance,
+  contractSignatures,
+  contractTemplates,
+  LegalEntities,
+  AiSuggestions,
+  UsageRecords,
+} = allCollections
 import type { CollectionConfig } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
@@ -222,6 +390,190 @@ export default buildConfig({
         },
       ],
     },
+    sidebar: {
+      groups: [
+        {
+          label: 'Core & Multi-Tenancy',
+          collections: ['tenants', 'users', 'roles', 'user-roles'],
+        },
+        {
+          label: 'Content & CMS',
+          collections: ['pages', 'posts', 'media', 'categories'],
+        },
+        {
+          label: 'Billing & Subscriptions',
+          collections: ['invoices', 'invoice-lines', 'payment-methods', 'payments', 'subscription-plans', 'subscriptions'],
+        },
+        {
+          label: 'Inventory',
+          collections: ['items'],
+        },
+        {
+          label: 'GL Core',
+          collections: ['gl-accounts', 'gl-posting-rules', 'journal-entries', 'gl-postings'],
+        },
+        {
+          label: 'GL Lifecycle & Closing (Phase A1)',
+          collections: ['period-locks', 'closing-entries'],
+        },
+        {
+          label: 'Banking & Reconciliation',
+          collections: ['bank-statements', 'bank-transactions', 'bank-accounts', 'account-reconciliations', 'bank-reconciliations'],
+        },
+        {
+          label: 'Period Closing & Adjustments',
+          collections: ['financial-statements', 'period-end-adjustments', 'recurring-journals', 'prior-period-adjustments', 'rounding-adjustments'],
+        },
+        {
+          label: 'Tax & Currency',
+          collections: ['tax-calculations', 'tax-codes', 'tax-jurisdictions', 'tax-returns', 'currency-rates'],
+        },
+        {
+          label: 'Fiscal Period Management (Phase B1)',
+          collections: ['fiscal-periods', 'fiscal-calendars', 'fiscal-period-snapshots'],
+        },
+        {
+          label: 'Fixed Assets & Depreciation',
+          collections: ['fixed-assets', 'depreciation-schedules'],
+        },
+        {
+          label: 'Customers & Revenue',
+          collections: ['customers', 'leads', 'opportunities', 'customer-segments', 'quotes', 'sales-orders', 'sales-commissions'],
+        },
+        {
+          label: 'Order-to-Cash',
+          collections: ['credit-memos', 'returns', 'shipments', 'refunds', 'payment-allocations'],
+        },
+        {
+          label: 'Dunning & Collections',
+          collections: ['dunning-cycles'],
+        },
+        {
+          label: 'Vendors & Master Data',
+          collections: ['vendors', 'vendor-quotes', 'vendor-scorecards'],
+        },
+        {
+          label: 'Procurement & Purchase-to-Pay',
+          collections: ['purchase-orders', 'purchase-requisitions', 'goods-receipts'],
+        },
+        {
+          label: 'Inventory & Warehouse',
+          collections: ['inventory-movements', 'warehouse-locations'],
+        },
+        {
+          label: 'Cost & Budget',
+          collections: ['cost-centers', 'budget-planning', 'cost-variances'],
+        },
+        {
+          label: 'Intercompany & Consolidation',
+          collections: ['intercompany-transactions', 'consolidation-eliminations'],
+        },
+        {
+          label: 'Foreign Exchange',
+          collections: ['fx-transactions'],
+        },
+        {
+          label: 'Contracts & Obligations',
+          collections: ['contracts', 'performance-obligations', 'commitments-and-contingencies'],
+        },
+        {
+          label: 'Leases',
+          collections: ['leases', 'lease-modifications', 'lease-period-postings'],
+        },
+        {
+          label: 'Payments & Settlements',
+          collections: ['payment-runs', 'sepa-mandates'],
+        },
+        {
+          label: 'Payroll',
+          collections: ['payroll-runs'],
+        },
+        {
+          label: 'People & HR',
+          collections: ['employees', 'job-positions', 'time-entries', 'leave-requests', 'performance-reviews', 'expense-reports', 'recruiting-pipeline', 'activities'],
+        },
+        {
+          label: 'Operations & Projects',
+          collections: ['projects', 'project-tasks', 'project-milestones', 'work-orders', 'workflow-definitions', 'workflow-instances'],
+        },
+        {
+          label: 'Manufacturing',
+          collections: ['bills-of-materials', 'production-receipts', 'quality-inspections', 'wip-snapshots'],
+        },
+        {
+          label: 'Facilities & Resources',
+          collections: ['properties', 'spaces', 'maintenance-requests', 'maintenance-work-orders', 'bookable-resources', 'bookings'],
+        },
+        {
+          label: 'Logistics & Tracking',
+          collections: ['carriers', 'tracking-events', 'customs-declarations', 'consignment-arrangements', 'consignment-inventory', 'consignment-sales'],
+        },
+        {
+          label: 'Compliance, Audit & Evidence (Legacy)',
+          collections: ['audit-events', 'api-audit-events', 'evidence-attestations'],
+        },
+        {
+          label: 'Compliance Foundation (Phase 1)',
+          collections: ['entity-types', 'taxing-jurisdictions', 'entity-legal-structures', 'compliance-frameworks', 'compliance-requirements', 'internal-controls', 'control-tests'],
+        },
+        {
+          label: 'Control Testing & Evidence (Phase 2-3)',
+          collections: ['audit-samples', 'compliance-gaps', 'audit-evidence', 'audit-findings', 'audit-trail-events', 'remediation-plans'],
+        },
+        {
+          label: 'Audit Governance & Reporting (Phase 4)',
+          collections: ['audit-committees', 'audit-committee-members', 'board-actions', 'management-certifications', 'regulatory-reports'],
+        },
+        {
+          label: 'Compliance Policies & Calendars (Phase 5)',
+          collections: ['internal-policies', 'statutory-report-templates', 'statutory-field-mappings', 'policy-versions', 'policy-acknowledgments', 'compliance-deadlines', 'compliance-notifications', 'fiscal-calendars', 'reporting-standards', 'reporting-mappings'],
+        },
+        {
+          label: 'Risk, Disclosure & Audit Extension (Phase 6)',
+          collections: ['related-party-transactions', 'management-assessment-icfr', 'disclosure-checklists', 'audit-committee-minutes', 'risk-register', 'debt-schedule', 'internal-audit-function', 'segment-reporting'],
+        },
+        {
+          label: 'GDPR & Data Privacy',
+          collections: ['consent-records', 'data-subject-requests', 'data-processing-activities'],
+        },
+        {
+          label: 'AML / KYC',
+          collections: ['kyc-checks', 'beneficial-owners'],
+        },
+        {
+          label: 'Sustainability & ESG',
+          collections: ['csrd-disclosures', 'carbon-emissions'],
+        },
+        {
+          label: 'Specialized Assets',
+          collections: ['biological-assets', 'mineral-resource-assets', 'investment-properties'],
+        },
+        {
+          label: 'Financial Accounting Specialties',
+          collections: ['provisions', 'government-grants', 'deferred-tax-items', 'share-based-payments', 'business-combinations', 'held-for-sale-classifications', 'fair-value-measurements', 'earnings-per-share', 'insurance-contracts', 'regulatory-deferral-accounts', 'post-balance-sheet-events', 'transaction-failures'],
+        },
+        {
+          label: 'Transfer Pricing',
+          collections: ['transfer-pricing-files'],
+        },
+        {
+          label: 'Infrastructure & Metadata',
+          collections: ['standards', 'memories', 'mcp-tool-metadata', 'translations'],
+        },
+        {
+          label: 'CRM & Addresses',
+          collections: ['addresses'],
+        },
+        {
+          label: 'Contract Management',
+          collections: ['commitments', 'contract-amendments', 'contract-performance', 'contract-signatures', 'contract-templates'],
+        },
+        {
+          label: 'Miscellaneous',
+          collections: ['legal-entities', 'ai-suggestions', 'usage-records'],
+        },
+      ],
+    },
   },
   editor: defaultLexical,
   // Slice MMMM (2026-05-10) — architecture invariants gate at boot.
@@ -254,29 +606,232 @@ export default buildConfig({
       process.env.NODE_ENV !== 'test' && process.env.PAYLOAD_DEV_PUSH !== 'false',
   }),
   collections: [
-    // Core
+    // Core (4)
     Tenants,
-    // Content (CMS)
+    Users,
+    Roles,
+    UserRoles,
+    // Content (4)
     Pages,
     Posts,
     Media,
     Categories,
-    // Auth
-    Roles,
-    UserRoles,
-    Users,
-    // Subscriptions
-    SubscriptionPlans,
-    Subscriptions,
-    // Inventory
-    Items,
-    // Billing
+    // Billing (6)
     Invoices,
     InvoiceLines,
     PaymentMethods,
     Payments,
-    // Accounting: All 122 collections (GL core + 119 others) provided by accountingPlugin().
-    // They are registered with tenant scoping in multiTenantPlugin configuration below.
+    SubscriptionPlans,
+    Subscriptions,
+    // Inventory (1)
+    Items,
+    // Financial & Operational (130 collections total)
+    // GL Core (4)
+    GLAccounts,
+    GLPostingRules,
+    JournalEntries,
+    GLPostings,
+    // GL Lifecycle & Closing (Phase A1: Double-Entry & Period Locks) (3)
+    PeriodLocks,
+    ClosingEntries,
+    // Banking & Reconciliation (5)
+    BankStatements,
+    BankTransactions,
+    BankAccounts,
+    AccountReconciliations,
+    BankReconciliations,
+    // Period Closing & Adjustments (5)
+    FinancialStatements,
+    PeriodEndAdjustments,
+    RecurringJournals,
+    PriorPeriodAdjustments,
+    RoundingAdjustments,
+    // Tax, Currency (4)
+    TaxCalculations,
+    TaxCodes,
+    TaxJurisdictions,
+    TaxReturns,
+    CurrencyRates,
+    // Fiscal Period Management (Phase B1: Fiscal Period Flexibility) (3)
+    FiscalPeriods,
+    FiscalCalendars,
+    FiscalPeriodSnapshots,
+    // Fixed Assets & Depreciation (2)
+    FixedAssets,
+    DepreciationSchedules,
+    // Customers & Revenue (7)
+    Customers,
+    Leads,
+    Opportunities,
+    CustomerSegments,
+    Quotes,
+    SalesOrders,
+    SalesCommissions,
+    // Order-to-Cash (5)
+    CreditMemos,
+    Returns,
+    Shipments,
+    Refunds,
+    PaymentAllocations,
+    // Dunning & Collections (1)
+    DunningCycles,
+    // Vendors & Procurement (6)
+    Vendors,
+    VendorQuotes,
+    VendorScorecards,
+    PurchaseOrders,
+    PurchaseRequisitions,
+    GoodsReceipts,
+    // Inventory & Warehouse (2)
+    InventoryMovements,
+    WarehouseLocations,
+    // Cost & Budget (3)
+    CostCenters,
+    BudgetPlanning,
+    CostVariances,
+    // Intercompany & Consolidation (2)
+    IntercompanyTransactions,
+    ConsolidationEliminations,
+    // Foreign Exchange (1)
+    FxTransactions,
+    // Contracts & Obligations (3)
+    Contracts,
+    PerformanceObligations,
+    CommitmentsAndContingencies,
+    // Leases (3)
+    Leases,
+    LeaseModifications,
+    LeasePeriodPostings,
+    // Payments & Settlements (2)
+    PaymentRuns,
+    SepaMandates,
+    // Payroll (1)
+    PayrollRuns,
+    // People & HR (8)
+    Employees,
+    JobPositions,
+    TimeEntries,
+    LeaveRequests,
+    PerformanceReviews,
+    ExpenseReports,
+    RecruitingPipeline,
+    Activities,
+    // Operations & Projects (6)
+    Projects,
+    ProjectTasks,
+    ProjectMilestones,
+    WorkOrders,
+    WorkflowDefinitions,
+    WorkflowInstances,
+    // Manufacturing (4)
+    BillsOfMaterials,
+    ProductionReceipts,
+    QualityInspections,
+    WipSnapshots,
+    // Facilities & Resources (6)
+    Properties,
+    Spaces,
+    MaintenanceRequests,
+    MaintenanceWorkOrders,
+    BookableResources,
+    Bookings,
+    // Logistics & Tracking (6)
+    Carriers,
+    TrackingEvents,
+    CustomsDeclarations,
+    ConsignmentArrangements,
+    ConsignmentInventory,
+    ConsignmentSales,
+    // Compliance, Audit & Evidence (Legacy) (2)
+    AuditEvents,
+    ApiAuditEvents,
+    EvidenceAttestations,
+    // ===== COMPREHENSIVE COMPLIANCE & AUDIT FRAMEWORK (Phase 1-5) (28 collections) =====
+    // Phase 1: Compliance Foundation (7)
+    EntityTypes,
+    TaxingJurisdictions,
+    EntityLegalStructures,
+    ComplianceFrameworks,
+    ComplianceRequirements,
+    InternalControls,
+    ControlTests,
+    // Phase 2-3: Control & Testing, Evidence & Findings (6)
+    AuditSamples,
+    ComplianceGaps,
+    AuditEvidence,
+    AuditFindings,
+    AuditTrailEvents,
+    RemediationPlans,
+    // Phase 4: Audit Governance & Reporting (5)
+    AuditCommittees,
+    AuditCommitteeMembers,
+    BoardActions,
+    ManagementCertifications,
+    RegulatoryReports,
+    // Phase 5: Compliance Policies & Calendars (10)
+    InternalPolicies,
+    StatutoryReportTemplates,
+    StatutoryFieldMappings,
+    PolicyVersions,
+    PolicyAcknowledgments,
+    ComplianceDeadlines,
+    ComplianceNotifications,
+    ReportingStandards,
+    ReportingMappings,
+    // Phase 6: Risk, Disclosure & Audit Extension (8)
+    RelatedPartyTransactions,
+    ManagementAssessmentICFR,
+    DisclosureChecklists,
+    AuditCommitteeMinutes,
+    RiskRegister,
+    DebtSchedule,
+    InternalAuditFunction,
+    SegmentReporting,
+    // GDPR & Data Privacy (3)
+    ConsentRecords,
+    DataSubjectRequests,
+    DataProcessingActivities,
+    // AML / KYC (2)
+    KycChecks,
+    BeneficialOwners,
+    // Sustainability & ESG (2)
+    CsrdDisclosures,
+    CarbonEmissions,
+    // Specialized Assets (3)
+    BiologicalAssets,
+    MineralResourceAssets,
+    InvestmentProperties,
+    // Financial Accounting Specialties (12)
+    Provisions,
+    GovernmentGrants,
+    DeferredTaxItems,
+    ShareBasedPayments,
+    BusinessCombinations,
+    HeldForSaleClassifications,
+    FairValueMeasurements,
+    EarningsPerShare,
+    InsuranceContracts,
+    RegulatoryDeferralAccounts,
+    PostBalanceSheetEvents,
+    TransactionFailures,
+    // Transfer Pricing (1)
+    TransferPricingFiles,
+    // Infrastructure: Metadata, Standards, Translations (4)
+    Standards,
+    Memories,
+    McpToolMetadata,
+    Translations,
+    // CRM-related (1)
+    // Contract Extensions (5)
+    commitments,
+    contractAmendments,
+    contractPerformance,
+    contractSignatures,
+    contractTemplates,
+    // Miscellaneous (3)
+    LegalEntities,
+    AiSuggestions,
+    UsageRecords,
   ],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
@@ -286,7 +841,7 @@ export default buildConfig({
       collections: { media: true },
     }),
     createEcommercePlugin(),
-    accountingPlugin(),
+    formBuilderPlugin({}),
     multiTenantPlugin<Config>({
       collections: {
         // CMS Collections
@@ -460,6 +1015,67 @@ export default buildConfig({
         spaces: {},
         'maintenance-requests': {},
         'maintenance-work-orders': {},
+        // ===== COMPREHENSIVE COMPLIANCE & AUDIT FRAMEWORK (Phase 1-5) (28 collections) =====
+        // Phase 1: Compliance Foundation
+        'entity-types': {},
+        'taxing-jurisdictions': {},
+        'entity-legal-structures': {},
+        'compliance-frameworks': {},
+        'compliance-requirements': {},
+        'internal-controls': {},
+        // Phase 2-3: Control & Testing, Evidence & Findings
+        'audit-samples': {},
+        'compliance-gaps': {},
+        'audit-evidence': {},
+        'audit-trail-events': {},
+        'remediation-plans': {},
+        // Phase 4: Audit Governance & Reporting
+        'audit-committees': {},
+        'audit-committee-members': {},
+        'board-actions': {},
+        'management-certifications': {},
+        'regulatory-reports': {},
+        // Phase 5: Compliance Policies & Calendars
+        'internal-policies': {},
+        'statutory-report-templates': {},
+        'statutory-field-mappings': {},
+        'policy-versions': {},
+        'policy-acknowledgments': {},
+        'compliance-deadlines': {},
+        'compliance-notifications': {},
+        'fiscal-calendars': {},
+        'reporting-standards': {},
+        'reporting-mappings': {},
+        // Phase 6: Risk, Disclosure & Audit Extension
+        'related-party-transactions': {},
+        'management-assessment-icfr': {},
+        'disclosure-checklists': {},
+        'audit-committee-minutes': {},
+        'risk-register': {},
+        'debt-schedule': {},
+        'internal-audit-function': {},
+        'segment-reporting': {},
+        // Billing, GL lifecycle, contracts & period collections (tenant-scoped;
+        // previously carried a manual tenant field — now plugin-owned).
+        invoices: {},
+        'invoice-lines': {},
+        payments: {},
+        'payment-methods': {},
+        subscriptions: {},
+        items: {},
+        'gl-posting-rules': {},
+        'closing-entries': {},
+        'period-locks': {},
+        'tax-periods': {},
+        'fiscal-period-snapshots': {},
+        consolidations: {},
+        'post-close-analytics-reports': {},
+        'audit-reports': {},
+        'transfer-pricing-adjustments': {},
+        commitments: {},
+        'contract-amendments': {},
+        'contract-signatures': {},
+        'contract-performance': {},
       },
       tenantField: {
         defaultValue: async ({ req }) => {

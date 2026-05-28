@@ -12,7 +12,7 @@
  */
 
 export type BillStatus = 'draft' | 'received' | 'approved' | 'scheduled' | 'partial' | 'paid' | 'disputed'
-export type { PaymentTerm } from '@/services/parties'
+export type { PaymentTerm } from '../../services/parties'
 
 export interface Bill {
   id: string

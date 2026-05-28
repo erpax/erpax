@@ -1,12 +1,11 @@
 import { CollectionConfig } from 'payload'
-import { isSuperAdminAccess } from '@/access/isSuperAdmin'
+import { isSuperAdminAccess } from '../../access/isSuperAdmin'
 import {
   encryptSubscriptionData,
   decryptSubscriptionData,
 } from './hooks/encryptSensitiveFields'
 import { emitSubscriptionLifecycleEvents } from './hooks/emitLifecycleEvents'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
+import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 
 /**
  * Subscriptions — tenant-to-plan binding with period state and Stripe sync.
@@ -43,15 +42,10 @@ export const Subscriptions: CollectionConfig = {
     afterChange: [emitSubscriptionLifecycleEvents, auditTrailAfterChange('subscriptions')],
   },
   fields: [
-    multiTenancyField({
-      unique: true,
-      hidden: false,
-      description: 'The tenant this subscription belongs to',
-    }),
     {
       name: 'plan',
       type: 'relationship',
-      relationTo: 'subscriptionPlans',
+      relationTo: 'subscription-plans',
       required: true,
       admin: {
         description: 'Current subscription plan',

@@ -730,10 +730,8 @@ export function checkCollectionsAreUniformlyDRY(ctx: InvariantContext): Invarian
     if (!slug) continue
     const usesFactory = /\bcreateAccountingCollection\s*\(/.test(text)
 
-    // 1. multiTenancyField
-    if (!/\bmultiTenancyField\s*\(/.test(text)) {
-      offenders.push(`${entry} :: missing multiTenancyField()`)
-    }
+    // 1. Tenant scoping is owned by @payloadcms/plugin-multi-tenant (registered
+    //    in payload.config.ts), not a per-collection field — no inline check here.
     // 3. inline TOP-LEVEL status select
     const statusInGroupOnly = !/^\s*\{\s*name:\s*'status',\s*\n\s*type:\s*'select'/m.test(text)
     if (!statusInGroupOnly && !/\bstatusField\s*\(/.test(text)) {
@@ -931,7 +929,6 @@ export function checkInvoicePaymentCanonicalAccess(ctx: InvariantContext): Invar
  * inline). Keep this list in sync with `base-accounting-fields.ts`.
  */
 const FACTORY_INJECTED_FIELDS: Readonly<Record<string, ReadonlyArray<string>>> = {
-  multiTenancyField: ['tenant'],
   currencyField:     ['currency'],
   referenceField:    ['reference'],
   legalEntityField:  ['legalEntity'],
@@ -943,7 +940,7 @@ const FACTORY_INJECTED_FIELDS: Readonly<Record<string, ReadonlyArray<string>>> =
 }
 
 const ALWAYS_ALLOWED = new Set([
-  'tenant',          // injected by multiTenancyField + autoPopulateTenant
+  'tenant',          // injected by plugin-multi-tenant + autoPopulateTenant
   'createdAt',       // Payload built-in
   'updatedAt',       // Payload built-in
   'id',              // Payload built-in

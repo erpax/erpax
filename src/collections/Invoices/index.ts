@@ -3,14 +3,13 @@ import { CollectionConfig } from 'payload'
 // that don't exist in `src/services/` (silent no-ops). Aging is now a
 // service-generated DTO via `financialReportingService`; COGS will fold
 // into `gl-posting.service.ts`'s invoice handler when built.
-import { invoiceAccountingHook } from '@/services/accounting/hooks'
-import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
-import { adminOnly, multiTenantRead } from '@/types/auth'
-import { authenticated } from '@/access/authenticated'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
-import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
+import { invoiceAccountingHook } from '../../services/accounting/hooks'
+import { validateNotLocked } from '../../services/accounting/utilities/period-lock'
+import { adminOnly, multiTenantRead } from '../../access/auth'
+import { authenticated } from '../../access/authenticated'
+import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
+import { VAT_CATEGORY_OPTIONS } from '../../standards/un-cefact-5305'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
@@ -673,6 +672,5 @@ export const Invoices: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
-    multiTenancyField(),
   ],
 }

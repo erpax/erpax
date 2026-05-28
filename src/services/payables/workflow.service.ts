@@ -14,7 +14,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { Bill, BillStatus } from './types'
+import { Bill, BillStatus } from '@/types/payables'
 
 export class BillStatusWorkflow {
   /**

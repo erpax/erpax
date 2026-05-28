@@ -12,7 +12,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { Invoice, InvoiceStatus, CollectionEvent } from './types'
+import { Invoice, InvoiceStatus, CollectionEvent } from '@/types/receivables'
 
 export class InvoiceStatusWorkflow {
   /**

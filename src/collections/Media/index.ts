@@ -1,13 +1,13 @@
 import type { CollectionConfig } from 'payload'
 
-import { createMembershipAdminMutateAccess } from '@/access/membershipAdminMutateAccess'
-import { tenantScopedCollectionReadAccess } from '@/access/tenantScopedRead'
+import { createMembershipAdminMutateAccess } from '../../access/membershipAdminMutateAccess'
+import { tenantScopedCollectionReadAccess } from '../../access/tenantScopedRead'
 import {
   FixedToolbarFeature,
   InlineToolbarFeature,
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
-import { localeRecord } from '@/i18n'
+import { localeRecord } from '../../i18n'
 
 import { mediaBeforeChange } from './hooks/beforeChange'
 

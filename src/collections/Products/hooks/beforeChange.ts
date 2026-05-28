@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { importRemoteMediaProductsHook } from '@/utilities/remoteMediaImport'
+import { importRemoteMediaProductsHook } from '../../../utilities/remoteMediaImport'
 
 /**
  * Ecommerce default `beforeChange` hooks plus remote media import for product gallery.

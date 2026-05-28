@@ -1,10 +1,9 @@
 import { CollectionConfig } from 'payload'
-import { adminOnly, multiTenantRead } from '@/types/auth'
-import { authenticated } from '@/access/authenticated'
-import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
-import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
-import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
+import { adminOnly, multiTenantRead } from '../../access/auth'
+import { authenticated } from '../../access/authenticated'
+import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
+import { VAT_CATEGORY_OPTIONS } from '../../standards/un-cefact-5305'
 import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 
 /**
@@ -49,7 +48,7 @@ import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
  * @see docs/STANDARDS.md §3
  */
 export const InvoiceLines: CollectionConfig = {
-  slug: 'invoiceLines',
+  slug: 'invoice-lines',
   admin: {
     useAsTitle: 'code',
     defaultColumns: ['code', 'invoice', 'description', 'quantity.quantity', 'pricing.unitPrice', 'totals.totalAmount'],
@@ -470,6 +469,5 @@ export const InvoiceLines: CollectionConfig = {
       type: 'json',
       admin: { description: 'Additional metadata' },
     },
-    multiTenancyField(),
   ],
 }

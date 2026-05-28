@@ -17,6 +17,6 @@
  * @see src/plugins/accounting/hooks/payment.hook.ts
  */
 
-import { paymentAccountingHook } from '@/services/accounting/hooks'
+import { paymentAccountingHook } from '../../../services/accounting/hooks'
 
 export const paymentsAfterChange = [paymentAccountingHook]

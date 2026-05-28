@@ -12,7 +12,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { Bill, DiscountResult } from './types'
+import { Bill, DiscountResult } from '@/types/payables'
 
 export class EarlyPaymentDiscountCalculator {
   /**

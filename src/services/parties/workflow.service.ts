@@ -10,7 +10,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { TransitionTable } from './types'
+import { TransitionTable } from '@/types/parties'
 
 /**
  * Returns true iff `from -> to` is a legal transition under `table`.

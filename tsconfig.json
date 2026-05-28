@@ -31,8 +31,7 @@
         "./src/payload.config.ts"
       ]
     },
-    "target": "ES2022",
-    "ignoreDeprecations": "6.0"
+    "target": "ES2022"
   },
   "include": [
     "next-env.d.ts",

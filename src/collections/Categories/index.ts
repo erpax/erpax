@@ -1,11 +1,11 @@
 import type { CollectionConfig } from 'payload'
 
-import { createMembershipAdminMutateAccess } from '@/access/membershipAdminMutateAccess'
-import { tenantScopedCollectionReadAccess } from '@/access/tenantScopedRead'
+import { createMembershipAdminMutateAccess } from '../../access/membershipAdminMutateAccess'
+import { tenantScopedCollectionReadAccess } from '../../access/tenantScopedRead'
 import { slugField } from 'payload'
-import { localeRecord } from '@/i18n'
+import { localeRecord } from '../../i18n'
 
-import { ensureUniqueSlugWithinTenant } from '@/hooks/ensureUniqueSlugWithinTenant'
+import { ensureUniqueSlugWithinTenant } from '../../hooks/ensureUniqueSlugWithinTenant'
 import { categoriesBeforeChange } from './hooks/beforeChange'
 
 /**

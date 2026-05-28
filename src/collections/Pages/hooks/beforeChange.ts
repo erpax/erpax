@@ -1,6 +1,6 @@
-import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
-import { populatePublishedAt } from '@/hooks/populatePublishedAt'
-import { importRemoteMediaPagesHook } from '@/utilities/remoteMediaImport'
+import { enforceDocumentTenantForUser } from '../../../hooks/enforceDocumentTenantForUser'
+import { populatePublishedAt } from '../../../hooks/populatePublishedAt'
+import { importRemoteMediaPagesHook } from '../../../utilities/remoteMediaImport'
 
 /**
  * Pages beforeChange chain — tenant scoping, remote-media import, publishedAt.

@@ -15,7 +15,7 @@
 
 import { headers } from 'next/headers'
 import Stripe from 'stripe'
-import { getPayloadHMC } from '@payloadcms/next/utilities'
+import { getPayloadHMR } from '@payloadcms/next/utilities'
 import {
   handleSubscriptionSync,
   handleInvoiceSync,
@@ -95,7 +95,7 @@ export async function POST(request: Request) {
     }
 
     // Get Payload CMS instance
-    const { payload } = await getPayloadHMC()
+    const { payload } = await getPayloadHMR()
 
     // Route event to appropriate handler
     const handler = webhookEventHandlers[event.type]

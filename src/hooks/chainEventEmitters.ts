@@ -16,7 +16,8 @@
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
-import { emitDomainEvent } from '@/services/emit-domain-event'
+import { eventEmitter } from '@/services/event-emitter.service'
+import type { DomainEvent } from '@/types/events'
 
 type StatusBearing = { status?: string; id: string; tenant?: string | { id: string } }
 
@@ -24,6 +25,26 @@ type StatusBearing = { status?: string; id: string; tenant?: string | { id: stri
 export type AggregateType =
   | 'invoice' | 'bill' | 'payment' | 'inventory_transfer'
   | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset'
+
+/**
+ * Emit a domain event with Payload-native logging (no custom service layer).
+ * Inlined here to break circular dependency: hooks no longer need to import from services.
+ */
+async function emitDomainEventPayloadNative(
+  req: Parameters<CollectionAfterChangeHook>[0]['req'],
+  event: DomainEvent,
+  subject: string,
+): Promise<void> {
+  try {
+    await eventEmitter.emit(event)
+    req.payload.logger.info(`✓ ${event.eventType} emitted for ${event.aggregateType} ${subject}`)
+  } catch (error) {
+    req.payload.logger.error(
+      { err: error },
+      `✗ Error emitting ${event.eventType} for ${event.aggregateType} ${subject}`,
+    )
+  }
+}
 
 /**
  * Fire `<event>` when `previousDoc.status !== doc.status === <toStatus>`.
@@ -47,7 +68,7 @@ export function emitOnStatusTransition(
     if (prev && prev.status === toStatus) return doc
     const tenantId = typeof next.tenant === 'object' && next.tenant ? next.tenant.id : (next.tenant ?? '')
     if (!tenantId) return doc
-    await emitDomainEvent(
+    await emitDomainEventPayloadNative(
       req,
       {
         eventId: crypto.randomUUID(),
@@ -81,7 +102,7 @@ export function emitOnCreate(
     const next = doc as StatusBearing
     const tenantId = typeof next.tenant === 'object' && next.tenant ? next.tenant.id : (next.tenant ?? '')
     if (!tenantId) return doc
-    await emitDomainEvent(
+    await emitDomainEventPayloadNative(
       req,
       {
         eventId: crypto.randomUUID(),

@@ -1,5 +1,5 @@
-import { enforceDocumentTenantForUser } from '@/hooks/enforceDocumentTenantForUser'
-import { importRemoteMediaPostsHook } from '@/utilities/remoteMediaImport'
+import { enforceDocumentTenantForUser } from '../../../hooks/enforceDocumentTenantForUser'
+import { importRemoteMediaPostsHook } from '../../../utilities/remoteMediaImport'
 
 /**
  * Posts beforeChange chain — tenant scoping + remote-media import.

@@ -9,14 +9,14 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 
-import { createMembershipAdminMutateAccess } from '@/access/membershipAdminMutateAccess'
-import { tenantScopedPostsReadAccess } from '@/access/tenantScopedRead'
-import { documentPreviewAdmin } from '@/collections/shared/documentPreviewAdmin'
-import { defaultVersionedDrafts } from '@/collections/shared/versionedDrafts'
+import { createMembershipAdminMutateAccess } from '../../access/membershipAdminMutateAccess'
+import { tenantScopedPostsReadAccess } from '../../access/tenantScopedRead'
+import { documentPreviewAdmin } from '../../collections/shared/documentPreviewAdmin'
+import { defaultVersionedDrafts } from '../../collections/shared/versionedDrafts'
 import { Banner } from '../../components/blocks/Banner/config'
 import { Code } from '../../components/blocks/Code/config'
 import { MediaBlock } from '../../components/blocks/MediaBlock/config'
-import { ensureUniqueSlugWithinTenant } from '@/hooks/ensureUniqueSlugWithinTenant'
+import { ensureUniqueSlugWithinTenant } from '../../hooks/ensureUniqueSlugWithinTenant'
 import { postsBeforeChange } from './hooks/beforeChange'
 import { populateAuthors } from './hooks/populateAuthors'
 import { revalidateDelete, revalidatePost } from './hooks/revalidatePost'
@@ -29,7 +29,7 @@ import {
   PreviewField,
 } from '@payloadcms/plugin-seo/fields'
 import { slugField } from 'payload'
-import { localeRecord } from '@/i18n'
+import { localeRecord } from '../../i18n'
 
 /**
  * Posts — CMS articles with versioned drafts and tenant-scoped read.

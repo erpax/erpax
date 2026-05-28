@@ -17,8 +17,8 @@
  * @see src/config/regional-defaults.ts
  */
 
-export type { Currency } from '@/config/regional-defaults';
-import type { Currency } from '@/config/regional-defaults';
+export type { Currency } from '../config/regional-defaults';
+import type { Currency } from '../config/regional-defaults';
 
 export interface ExchangeRate {
   id: string;

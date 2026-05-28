@@ -1,6 +1,6 @@
 import type { CollectionBeforeChangeHook, CollectionAfterReadHook } from 'payload'
-import { encryptFields, decryptFields } from '@/standards/nist-sp-800-38'
-import type { PaymentMethod } from '@/payload-types'
+import { encryptFields, decryptFields } from '../../../standards/nist-sp-800-38'
+import type { PaymentMethod } from '../../../payload-types'
 
 /**
  * Encryption hooks for PaymentMethods — encrypt-at-rest for tokenized payment refs.

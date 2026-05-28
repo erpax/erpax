@@ -19,7 +19,7 @@ import {
   BucketDefinition,
   DEFAULT_AGING_BUCKETS,
   PartyDocument,
-} from './types'
+} from '@/types/parties'
 
 // DRY: single source of truth for date arithmetic lives in the
 // accounting utilities. Re-export here so existing parties consumers

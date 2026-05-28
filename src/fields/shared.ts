@@ -17,47 +17,27 @@
 import type { Field } from 'payload'
 
 /**
- * Multi-tenancy field — single source of truth for the per-collection
- * `tenant` foreign key that drives ISO 27001 A.5.23 / ISO 27002 §5.15
- * cloud-tenant isolation.
- *
- * Defaults to a hidden admin field. Pass options to opt out of the
- * defaults when a collection legitimately needs the field visible (e.g.
- * billing-side collections where ops needs to see tenant assignment),
- * unique (single-row-per-tenant pattern), or annotated.
- *
- * @standard ISO-27001:2022 A.5.23 cloud-service-tenant-isolation
- * @standard ISO-27002:2022 §5.15 access-control
+ * Canonical regional defaults & SUPPORTED_CURRENCIES live in
+ * `@/config/regional-defaults`. Re-exported here so existing collection-side
+ * imports keep working while the canonical module remains the single source
+ * of truth (Slice WW: regional-defaults consolidation).
  */
-export const multiTenancyField = (
-  options: {
-    /** Enforce a single row per tenant (e.g. tenant-level subscription). */
-    unique?: boolean
-    /** Admin-UI description shown next to the field. */
-    description?: string
-    /** Override the default `hidden: true` admin behaviour. */
-    hidden?: boolean
-  } = {},
-): Field => {
-  const hidden = options.hidden ?? true
-  return {
-    name: 'tenant',
-    type: 'relationship',
-    relationTo: 'tenants',
-    required: true,
-    ...(options.unique ? { unique: true } : {}),
-    admin: {
-      hidden,
-      ...(options.description ? { description: options.description } : {}),
-    },
-  }
-}
+export { SUPPORTED_CURRENCIES, currencyOptions, DEFAULT_CURRENCY } from '../config/regional-defaults'
+import { currencyOptions as canonicalCurrencyOptions, DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY } from '../config/regional-defaults'
 
 /**
  * Currency select field. Pass a custom `name` for FX-pair fields like
  * `fromCurrency` / `toCurrency`; defaults to `currency` for the typical
  * single-currency case. Default value is the canonical `DEFAULT_CURRENCY`
  * (EUR by house default, env-overridable via `ERPAX_DEFAULT_CURRENCY`).
+ *
+ * Slice LLLLLLLLL (2026-05-11) — `allowBlank: true` adds ISO 4217 XXX
+ * (No currency) to the option list AND forces `required: false`. The
+ * field's runtime fallback is `resolveCurrency()` from
+ * `@/services/currency-fallback` — null/empty inputs round-trip to XXX
+ * rather than throwing. Use `allowBlank: true` on collections where a
+ * provisional or non-monetary row is legitimate (drafts, imports,
+ * non-monetary lines).
  *
  * @standard ISO-4217:2015 currency-codes
  */
@@ -69,37 +49,28 @@ export const currencyField = (
         defaultValue?: string
         required?: boolean
         allowBlank?: boolean
-      } = 'EUR',
+      } = CANON_DEFAULT_CURRENCY,
 ): Field => {
   const opts =
     typeof defaultValueOrOptions === 'string'
       ? { defaultValue: defaultValueOrOptions }
       : defaultValueOrOptions
 
-  const currencyOptions = [
-    { label: 'EUR — Euro', value: 'EUR' },
-    { label: 'USD — US Dollar', value: 'USD' },
-    { label: 'GBP — British Pound', value: 'GBP' },
-    { label: 'JPY — Japanese Yen', value: 'JPY' },
-    { label: 'CHF — Swiss Franc', value: 'CHF' },
-    { label: 'AUD — Australian Dollar', value: 'AUD' },
-    { label: 'CAD — Canadian Dollar', value: 'CAD' },
-    { label: 'SEK — Swedish Krona', value: 'SEK' },
-    { label: 'NOK — Norwegian Krone', value: 'NOK' },
-    { label: 'DKK — Danish Krone', value: 'DKK' },
-    { label: 'BGN — Bulgarian Lev', value: 'BGN' },
-  ]
-
+  // Slice LLLLLLLLL — when allowBlank is set, XXX joins the options
+  // and required is forced off (a required+blank-allowed pair would
+  // contradict each other). The XXX option's display label is the
+  // ISO 4217 §6.5 short name; the admin UI's translations collection
+  // override (Slice AAAAAAAAA) supplies locale-specific text.
   const blankOption = { label: 'XXX — No currency (ISO 4217)', value: 'XXX' }
   const includeBlank = opts.allowBlank === true
   const optionsList = includeBlank
-    ? [...currencyOptions.filter((o) => o.value !== 'XXX'), blankOption]
-    : [...currencyOptions]
+    ? [...canonicalCurrencyOptions.filter((o) => o.value !== 'XXX'), blankOption]
+    : [...canonicalCurrencyOptions]
 
   return {
     name: opts.name ?? 'currency',
     type: 'select',
-    defaultValue: opts.defaultValue ?? 'EUR',
+    defaultValue: opts.defaultValue ?? CANON_DEFAULT_CURRENCY,
     ...(opts.required && !includeBlank ? { required: true } : {}),
     options: optionsList,
   }
@@ -221,41 +192,257 @@ export const timestampFields = (): Field[] => [
 ]
 
 /**
- * Audit trail fields (who did what and when)
+ * Audit trail fields (who did what and when).
+ *
+ * Pass `{ readOnly: true }` for collections that expose the approval lifecycle
+ * to the admin UI (the approver should *see* who/when, just not edit it).
+ * Default keeps the historical hidden/disabled admin UI for fully-system-managed
+ * audit columns.
+ *
+ * @standard ISO-19011:2018 audit-trail
+ * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
  */
-export const auditTrailFields = (options: { readOnly?: boolean } = {}): Field[] => [
+export const auditFields = (
+  options: {
+    /** Show `approvedBy` / `approvedAt` as readOnly in admin UI instead of disabled. */
+    readOnly?: boolean
+  } = {},
+): Field[] => [
   {
     name: 'createdBy',
     type: 'relationship',
     relationTo: 'users',
-    admin: {
-      readOnly: options.readOnly ?? true,
-      disabled: true,
-    },
+    admin: { disabled: true },
   },
   {
-    name: 'updatedBy',
+    name: 'approvedBy',
     type: 'relationship',
     relationTo: 'users',
-    admin: {
-      readOnly: options.readOnly ?? true,
-      disabled: true,
-    },
+    ...(options.readOnly ? { admin: { readOnly: true } } : {}),
   },
   {
-    name: 'createdAt',
+    name: 'approvedAt',
     type: 'date',
-    admin: {
-      readOnly: options.readOnly ?? true,
-      disabled: true,
-    },
-  },
-  {
-    name: 'updatedAt',
-    type: 'date',
-    admin: {
-      readOnly: options.readOnly ?? true,
-      disabled: true,
-    },
+    admin: options.readOnly ? { readOnly: true } : { disabled: true },
   },
 ]
+
+/**
+ * Notes field for additional context
+ */
+export const notesField = (label = 'Notes'): Field => ({
+  name: 'notes',
+  type: 'textarea',
+  label,
+})
+
+/**
+ * Account type field — standard GL account classifications
+ * @accounting IAS-1 financial-position reporting-entities
+ */
+export const accountTypeField: Field = {
+  name: 'type',
+  type: 'select',
+  required: true,
+  options: [
+    { label: 'Asset', value: 'asset' },
+    { label: 'Liability', value: 'liability' },
+    { label: 'Equity', value: 'equity' },
+    { label: 'Income', value: 'income' },
+    { label: 'Expense', value: 'expense' },
+    { label: 'Cost of Goods Sold', value: 'cogs' },
+  ],
+  index: true,
+  admin: {
+    description: 'Account classification for reporting',
+  },
+}
+
+/**
+ * Debit/Credit entry type field
+ */
+export const debitCreditField: Field = {
+  name: 'type',
+  type: 'select',
+  required: true,
+  options: [
+    { label: 'Debit', value: 'debit' },
+    { label: 'Credit', value: 'credit' },
+  ],
+  admin: {
+    description: 'Debit or Credit to account',
+  },
+}
+
+/**
+ * Invoice status field — standard workflow progression
+ */
+export const invoiceStatusField: Field = {
+  name: 'status',
+  type: 'select',
+  required: true,
+  defaultValue: 'draft',
+  options: [
+    { label: 'Draft', value: 'draft' },
+    { label: 'Review', value: 'review' },
+    { label: 'Issued', value: 'issued' },
+    { label: 'Confirmed', value: 'confirmed' },
+    { label: 'Complete', value: 'complete' },
+    { label: 'Cancelled', value: 'cancelled' },
+  ],
+  index: true,
+  admin: {
+    description: 'Invoice workflow status',
+  },
+}
+
+/**
+ * Payment status field — standard payment lifecycle
+ */
+export const paymentStatusField: Field = {
+  name: 'status',
+  type: 'select',
+  required: true,
+  defaultValue: 'pending',
+  options: [
+    { label: 'Pending', value: 'pending' },
+    { label: 'Authorized', value: 'authorized' },
+    { label: 'Posted', value: 'posted' },
+    { label: 'Completed', value: 'completed' },
+    { label: 'Failed', value: 'failed' },
+    { label: 'Cancelled', value: 'cancelled' },
+  ],
+  index: true,
+  admin: {
+    description: 'Payment processing status',
+  },
+}
+
+/**
+ * Statement status field — bank reconciliation workflow
+ */
+export const statementStatusField: Field = {
+  name: 'status',
+  type: 'select',
+  required: true,
+  defaultValue: 'pending',
+  options: [
+    { label: 'Pending', value: 'pending' },
+    { label: 'Cleared', value: 'cleared' },
+    { label: 'Reconciled', value: 'reconciled' },
+  ],
+  index: true,
+  admin: {
+    description: 'Bank statement line status',
+  },
+}
+
+/**
+ * Build a Payload `select` field driven by a standards-registry options
+ * array. Pass any `*_OPTIONS` constant from `src/standards/<id>/index.ts`.
+ *
+ * @example
+ *   taxonomySelect('scope', GHG_SCOPE_OPTIONS, { defaultValue: 'scope_1' })
+ *   taxonomySelect('incoterms', INCOTERM_OPTIONS, { required: true })
+ */
+export const taxonomySelect = <T extends string>(
+  name: string,
+  options: ReadonlyArray<{ label: string; value: T }>,
+  opts: {
+    required?: boolean
+    defaultValue?: T
+    description?: string
+    hasMany?: boolean
+    index?: boolean
+  } = {},
+): Field => ({
+  name,
+  type: 'select',
+  ...(opts.required ? { required: true } : {}),
+  ...(opts.defaultValue !== undefined ? { defaultValue: opts.defaultValue } : {}),
+  ...(opts.hasMany ? { hasMany: true } : {}),
+  ...(opts.index ? { index: true } : {}),
+  options: options.map((o) => ({ label: o.label, value: o.value })),
+  ...(opts.description ? { admin: { description: opts.description } } : {}),
+})
+
+/**
+ * Tenant-unique human-readable reference (e.g. `INV-2026-001`,
+ * `PROV-2026-001`, `WIP-2026-04-PRJ-001`). Recurs in 30+ collections.
+ *
+ * Defaults: `text`, required, unique, indexed.
+ */
+export const referenceField = (
+  opts: { name?: string; description?: string; required?: boolean } = {},
+): Field => ({
+  name: opts.name ?? 'reference',
+  type: 'text',
+  required: opts.required ?? true,
+  unique: true,
+  index: true,
+  ...(opts.description
+    ? { admin: { description: opts.description } }
+    : {}),
+})
+
+/**
+ * Reference to the IFRS-10 §B86 reporting legal entity. Recurs across
+ * accounting / consolidation / ESG / TP collections; should always be
+ * the same shape so consolidation can join unambiguously.
+ */
+export const legalEntityField = (
+  opts: { required?: boolean; description?: string } = {},
+): Field => ({
+  name: 'legalEntity',
+  type: 'relationship',
+  relationTo: 'legal-entities',
+  ...(opts.required ? { required: true } : {}),
+  admin: {
+    description:
+      opts.description ??
+      'Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).',
+  },
+})
+
+/**
+ * ISO 3166-1 alpha-2 country code as a text field with the standard
+ * description + indexing. Recurs across 20+ collections (legal-entities,
+ * customers, vendors, tax-jurisdictions, tracking-events, customs-
+ * declarations, etc.).
+ *
+ * Validation against the canonical alpha-2 set lives in
+ * `src/standards/iso-3166-1/validate.ts`; collections SHOULD invoke it
+ * from a `validate` hook when strict checking is needed.
+ *
+ * @standard ISO 3166-1:2020 country-codes
+ */
+export const countryCodeField = (
+  opts: { name?: string; required?: boolean; description?: string } = {},
+): Field => ({
+  name: opts.name ?? 'countryCode',
+  type: 'text',
+  ...(opts.required ? { required: true } : {}),
+  index: true,
+  admin: {
+    description:
+      opts.description ?? 'ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).',
+  },
+})
+
+/**
+ * NACE Rev.2 economic activity code text field (e.g. `62.01`).
+ * Companion section enum lives in `src/standards/nace-rev2/`.
+ *
+ * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+ */
+export const naceCodeField = (
+  opts: { name?: string; description?: string } = {},
+): Field => ({
+  name: opts.name ?? 'naceCode',
+  type: 'text',
+  admin: {
+    description:
+      opts.description ??
+      'NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.',
+  },
+})

@@ -14,6 +14,6 @@
  * @see src/plugins/accounting/hooks/item.hook.ts
  */
 
-import { itemAccountingHook } from '@/services/accounting/hooks'
+import { itemAccountingHook } from '../../../services/accounting/hooks'
 
 export const itemsAfterChange = [itemAccountingHook]

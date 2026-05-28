@@ -1,5 +1,5 @@
-import { BeforeCreateHook } from 'payload'
-import type { Tenants } from '@/payload-types'
+import { CollectionBeforeChangeHook, CollectionAfterChangeHook } from 'payload'
+import type { Tenants } from '../../../payload-types'
 
 /**
  * BeforeCreate hook — assign a free / trial plan to a brand-new tenant so
@@ -14,7 +14,7 @@ import type { Tenants } from '@/payload-types'
  * @compliance SOX §404 internal-controls
  * @see docs/STANDARDS.md §3
  */
-export const initializeTrialSubscription: BeforeCreateHook<Tenants> = async ({
+export const initializeTrialSubscription: CollectionBeforeChangeHook<Tenants> = async ({
   data,
   req,
 }) => {
@@ -57,7 +57,7 @@ export const initializeTrialSubscription: BeforeCreateHook<Tenants> = async ({
 /**
  * Create subscription after tenant is created
  */
-export const createTrialSubscriptionAfter: BeforeCreateHook<Tenants> = async ({
+export const createTrialSubscriptionAfter: CollectionAfterChangeHook<Tenants> = async ({
   doc,
   req,
 }) => {

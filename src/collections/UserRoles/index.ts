@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { isSuperAdminAccess } from '@/access/isSuperAdmin'
+import { isSuperAdminAccess } from '../../access/isSuperAdmin'
 
 import { preventDuplicateAssignment } from './hooks/preventDuplicateAssignment'
 
@@ -15,8 +15,8 @@ import { preventDuplicateAssignment } from './hooks/preventDuplicateAssignment'
  * @compliance SOC-2 CC6.3 access-removal
  * @see docs/STANDARDS.md §4.4
  */
-export const UserRoles: CollectionConfig<'user_roles'> = {
-  slug: 'user_roles',
+export const UserRoles: CollectionConfig<'user-roles'> = {
+  slug: 'user-roles',
   labels: {
     singular: 'User role assignment',
     plural: 'User role assignments',

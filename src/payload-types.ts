@@ -74,20 +74,185 @@ export interface Config {
   blocks: {};
   collections: {
     tenants: Tenant;
+    users: User;
+    roles: Role;
+    'user-roles': UserRole;
     pages: Page;
     posts: Post;
     media: Media;
     categories: Category;
-    roles: Role;
-    user_roles: UserRole;
-    users: User;
-    subscriptionPlans: SubscriptionPlan;
+    invoices: Invoice;
+    'invoice-lines': InvoiceLine;
+    'payment-methods': PaymentMethod;
+    payments: Payment;
+    'subscription-plans': SubscriptionPlan;
     subscriptions: Subscription;
     items: Item;
-    invoices: Invoice;
-    invoiceLines: InvoiceLine;
-    paymentMethods: PaymentMethod;
-    payments: Payment;
+    'gl-accounts': GlAccount;
+    'gl-posting-rules': GlPostingRule;
+    'journal-entries': JournalEntry;
+    'gl-postings': GlPosting;
+    'period-locks': PeriodLock;
+    'closing-entries': ClosingEntry;
+    'bank-statements': BankStatement;
+    'bank-transactions': BankTransaction;
+    'bank-accounts': BankAccount;
+    'account-reconciliations': AccountReconciliation;
+    'bank-reconciliations': BankReconciliation;
+    'financial-statements': FinancialStatement;
+    'period-end-adjustments': PeriodEndAdjustment;
+    'recurring-journals': RecurringJournal;
+    'prior-period-adjustments': PriorPeriodAdjustment;
+    'rounding-adjustments': RoundingAdjustment;
+    'tax-calculations': TaxCalculation;
+    'tax-codes': TaxCode;
+    'tax-jurisdictions': TaxJurisdiction;
+    'tax-returns': TaxReturn;
+    'currency-rates': CurrencyRate;
+    'fiscal-periods': FiscalPeriod;
+    'fiscal-calendars': FiscalCalendar;
+    'fiscal-period-snapshots': FiscalPeriodSnapshot;
+    'fixed-assets': FixedAsset;
+    'depreciation-schedules': DepreciationSchedule;
+    customers: Customer;
+    leads: Lead;
+    opportunities: Opportunity;
+    'customer-segments': CustomerSegment;
+    quotes: Quote;
+    'sales-orders': SalesOrder;
+    'sales-commissions': SalesCommission;
+    'credit-memos': CreditMemo;
+    returns: Return;
+    shipments: Shipment;
+    refunds: Refund;
+    'payment-allocations': PaymentAllocation;
+    'dunning-cycles': DunningCycle;
+    vendors: Vendor;
+    'vendor-quotes': VendorQuote;
+    'vendor-scorecards': VendorScorecard;
+    'purchase-orders': PurchaseOrder;
+    'purchase-requisitions': PurchaseRequisition;
+    'goods-receipts': GoodsReceipt;
+    'inventory-movements': InventoryMovement;
+    'warehouse-locations': WarehouseLocation;
+    'cost-centers': CostCenter;
+    'budget-planning': BudgetPlanning;
+    'cost-variances': CostVariance;
+    'intercompany-transactions': IntercompanyTransaction;
+    'consolidation-eliminations': ConsolidationElimination;
+    'fx-transactions': FxTransaction;
+    contracts: Contract;
+    'performance-obligations': PerformanceObligation;
+    'commitments-and-contingencies': CommitmentsAndContingency;
+    leases: Lease;
+    'lease-modifications': LeaseModification;
+    'lease-period-postings': LeasePeriodPosting;
+    'payment-runs': PaymentRun;
+    'sepa-mandates': SepaMandate;
+    'payroll-runs': PayrollRun;
+    employees: Employee;
+    'job-positions': JobPosition;
+    'time-entries': TimeEntry;
+    'leave-requests': LeaveRequest;
+    'performance-reviews': PerformanceReview;
+    'expense-reports': ExpenseReport;
+    'recruiting-pipeline': RecruitingPipeline;
+    activities: Activity;
+    projects: Project;
+    'project-tasks': ProjectTask;
+    'project-milestones': ProjectMilestone;
+    'work-orders': WorkOrder;
+    'workflow-definitions': WorkflowDefinition;
+    'workflow-instances': WorkflowInstance;
+    'bills-of-materials': BillsOfMaterial;
+    'production-receipts': ProductionReceipt;
+    'quality-inspections': QualityInspection;
+    'wip-snapshots': WipSnapshot;
+    properties: Property;
+    spaces: Space;
+    'maintenance-requests': MaintenanceRequest;
+    'maintenance-work-orders': MaintenanceWorkOrder;
+    'bookable-resources': BookableResource;
+    bookings: Booking;
+    carriers: Carrier;
+    'tracking-events': TrackingEvent;
+    'customs-declarations': CustomsDeclaration;
+    'consignment-arrangements': ConsignmentArrangement;
+    'consignment-inventory': ConsignmentInventory;
+    'consignment-sales': ConsignmentSale;
+    'audit-events': AuditEvent;
+    'api-audit-events': ApiAuditEvent;
+    'evidence-attestations': EvidenceAttestation;
+    'entity-types': EntityType;
+    'taxing-jurisdictions': TaxingJurisdiction;
+    'entity-legal-structures': EntityLegalStructure;
+    'compliance-frameworks': ComplianceFramework;
+    'compliance-requirements': ComplianceRequirement;
+    'internal-controls': InternalControl;
+    'control-tests': ControlTest;
+    'audit-samples': AuditSample;
+    'compliance-gaps': ComplianceGap;
+    'audit-evidence': AuditEvidence;
+    'audit-findings': AuditFinding;
+    'audit-trail-events': AuditTrailEvent;
+    'remediation-plans': RemediationPlan;
+    'audit-committees': AuditCommittee;
+    'audit-committee-members': AuditCommitteeMember;
+    'board-actions': BoardAction;
+    'management-certifications': ManagementCertification;
+    'regulatory-reports': RegulatoryReport;
+    'internal-policies': InternalPolicy;
+    'statutory-report-templates': StatutoryReportTemplate;
+    'statutory-field-mappings': StatutoryFieldMapping;
+    'policy-versions': PolicyVersion;
+    'policy-acknowledgments': PolicyAcknowledgment;
+    'compliance-deadlines': ComplianceDeadline;
+    'compliance-notifications': ComplianceNotification;
+    'reporting-standards': ReportingStandard;
+    'reporting-mappings': ReportingMapping;
+    'related-party-transactions': RelatedPartyTransaction;
+    'management-assessment-icfr': ManagementAssessmentIcfr;
+    'disclosure-checklists': DisclosureChecklist;
+    'audit-committee-minutes': AuditCommitteeMinute;
+    'risk-register': RiskRegister;
+    'debt-schedule': DebtSchedule;
+    'internal-audit-function': InternalAuditFunction;
+    'segment-reporting': SegmentReporting;
+    'consent-records': ConsentRecord;
+    'data-subject-requests': DataSubjectRequest;
+    'data-processing-activities': DataProcessingActivity;
+    'kyc-checks': KycCheck;
+    'beneficial-owners': BeneficialOwner;
+    'csrd-disclosures': CsrdDisclosure;
+    'carbon-emissions': CarbonEmission;
+    'biological-assets': BiologicalAsset;
+    'mineral-resource-assets': MineralResourceAsset;
+    'investment-properties': InvestmentProperty;
+    provisions: Provision;
+    'government-grants': GovernmentGrant;
+    'deferred-tax-items': DeferredTaxItem;
+    'share-based-payments': ShareBasedPayment;
+    'business-combinations': BusinessCombination;
+    'held-for-sale-classifications': HeldForSaleClassification;
+    'fair-value-measurements': FairValueMeasurement;
+    'earnings-per-share': EarningsPerShare;
+    'insurance-contracts': InsuranceContract;
+    'regulatory-deferral-accounts': RegulatoryDeferralAccount;
+    'post-balance-sheet-events': PostBalanceSheetEvent;
+    'transaction-failures': TransactionFailure;
+    'transfer-pricing-files': TransferPricingFile;
+    standards: Standard;
+    memories: Memory;
+    'mcp-tool-metadata': McpToolMetadatum;
+    translations: Translation;
+    commitments: Commitment;
+    'contract-amendments': ContractAmendment;
+    'contract-performance': ContractPerformance;
+    'contract-signatures': ContractSignature;
+    'contract-templates': ContractTemplate;
+    'legal-entities': LegalEntity;
+    'ai-suggestions': AiSuggestion;
+    'usage-records': UsageRecord;
     addresses: Address;
     variants: Variant;
     variantTypes: VariantType;
@@ -96,134 +261,10 @@ export interface Config {
     carts: Cart;
     orders: Order;
     transactions: Transaction;
-    exports: Export;
-    imports: Import;
-    'audit-events': AuditEvent;
-    'tax-jurisdictions': TaxJurisdiction;
-    'tax-codes': TaxCode;
-    'fiscal-periods': FiscalPeriod;
-    standards: Standard;
-    memories: Memory;
-    'mcp-tool-metadata': McpToolMetadatum;
-    translations: Translation;
-    customers: Customer;
-    vendors: Vendor;
-    'kyc-checks': KycCheck;
-    'beneficial-owners': BeneficialOwner;
-    'gl-accounts': GlAccount;
-    'journal-entries': JournalEntry;
-    'gl-postings': GlPosting;
-    'bank-accounts': BankAccount;
-    'bank-statements': BankStatement;
-    'bank-transactions': BankTransaction;
-    'purchase-orders': PurchaseOrder;
-    'goods-receipts': GoodsReceipt;
-    quotes: Quote;
-    contracts: Contract;
-    'performance-obligations': PerformanceObligation;
-    'sales-orders': SalesOrder;
-    shipments: Shipment;
-    returns: Return;
-    'warehouse-locations': WarehouseLocation;
-    'inventory-movements': InventoryMovement;
-    'financial-statements': FinancialStatement;
-    'period-end-adjustments': PeriodEndAdjustment;
-    'depreciation-schedules': DepreciationSchedule;
-    'tax-calculations': TaxCalculation;
-    'tax-returns': TaxReturn;
-    'currency-rates': CurrencyRate;
-    'credit-memos': CreditMemo;
-    refunds: Refund;
-    'fixed-assets': FixedAsset;
-    'budget-planning': BudgetPlanning;
-    'consent-records': ConsentRecord;
-    'data-subject-requests': DataSubjectRequest;
-    'data-processing-activities': DataProcessingActivity;
-    'audit-findings': AuditFinding;
-    'control-tests': ControlTest;
-    'api-audit-events': ApiAuditEvent;
-    'evidence-attestations': EvidenceAttestation;
-    'cost-centers': CostCenter;
-    leases: Lease;
-    'lease-period-postings': LeasePeriodPosting;
-    'sepa-mandates': SepaMandate;
-    'payment-runs': PaymentRun;
-    'account-reconciliations': AccountReconciliation;
-    'dunning-cycles': DunningCycle;
-    employees: Employee;
-    'time-entries': TimeEntry;
-    'payroll-runs': PayrollRun;
-    'bank-reconciliations': BankReconciliation;
-    'intercompany-transactions': IntercompanyTransaction;
-    'consolidation-eliminations': ConsolidationElimination;
-    'prior-period-adjustments': PriorPeriodAdjustment;
-    'rounding-adjustments': RoundingAdjustment;
-    'transaction-failures': TransactionFailure;
-    'fx-transactions': FxTransaction;
-    'payment-allocations': PaymentAllocation;
-    'bills-of-materials': BillsOfMaterial;
-    'work-orders': WorkOrder;
-    'production-receipts': ProductionReceipt;
-    'cost-variances': CostVariance;
-    'quality-inspections': QualityInspection;
-    carriers: Carrier;
-    'tracking-events': TrackingEvent;
-    'customs-declarations': CustomsDeclaration;
-    'usage-records': UsageRecord;
-    'ai-suggestions': AiSuggestion;
-    'legal-entities': LegalEntity;
-    projects: Project;
-    'project-tasks': ProjectTask;
-    'project-milestones': ProjectMilestone;
-    'wip-snapshots': WipSnapshot;
-    'recurring-journals': RecurringJournal;
-    provisions: Provision;
-    'commitments-and-contingencies': CommitmentsAndContingency;
-    'government-grants': GovernmentGrant;
-    'csrd-disclosures': CsrdDisclosure;
-    'carbon-emissions': CarbonEmission;
-    'transfer-pricing-files': TransferPricingFile;
-    'lease-modifications': LeaseModification;
-    leads: Lead;
-    'customer-segments': CustomerSegment;
-    opportunities: Opportunity;
-    activities: Activity;
-    'sales-commissions': SalesCommission;
-    'purchase-requisitions': PurchaseRequisition;
-    'vendor-quotes': VendorQuote;
-    'vendor-scorecards': VendorScorecard;
-    'job-positions': JobPosition;
-    'recruiting-pipeline': RecruitingPipeline;
-    'performance-reviews': PerformanceReview;
-    'expense-reports': ExpenseReport;
-    'leave-requests': LeaveRequest;
-    'workflow-definitions': WorkflowDefinition;
-    'workflow-instances': WorkflowInstance;
-    properties: Property;
-    spaces: Space;
-    'bookable-resources': BookableResource;
-    bookings: Booking;
-    'consignment-arrangements': ConsignmentArrangement;
-    'consignment-inventory': ConsignmentInventory;
-    'consignment-sales': ConsignmentSale;
-    'maintenance-requests': MaintenanceRequest;
-    'maintenance-work-orders': MaintenanceWorkOrder;
-    'fair-value-measurements': FairValueMeasurement;
-    'deferred-tax-items': DeferredTaxItem;
-    'share-based-payments': ShareBasedPayment;
-    'business-combinations': BusinessCombination;
-    'investment-properties': InvestmentProperty;
-    'biological-assets': BiologicalAsset;
-    'mineral-resource-assets': MineralResourceAsset;
-    'regulatory-deferral-accounts': RegulatoryDeferralAccount;
-    'insurance-contracts': InsuranceContract;
-    'held-for-sale-classifications': HeldForSaleClassification;
-    'earnings-per-share': EarningsPerShare;
-    'post-balance-sheet-events': PostBalanceSheetEvent;
-    redirects: Redirect;
     forms: Form;
     'form-submissions': FormSubmission;
-    search: Search;
+    exports: Export;
+    imports: Import;
     'payload-mcp-api-keys': PayloadMcpApiKey;
     'payload-kv': PayloadKv;
     'payload-jobs': PayloadJob;
@@ -237,12 +278,6 @@ export interface Config {
       cart: 'carts';
       addresses: 'addresses';
     };
-    variantTypes: {
-      options: 'variantOptions';
-    };
-    products: {
-      variants: 'variants';
-    };
     'bank-accounts': {
       statements: 'bank-statements';
     };
@@ -252,26 +287,194 @@ export interface Config {
     contracts: {
       performanceObligations: 'performance-obligations';
     };
-    'control-tests': {
-      findings: 'audit-findings';
+    variantTypes: {
+      options: 'variantOptions';
+    };
+    products: {
+      variants: 'variants';
     };
   };
   collectionsSelect: {
     tenants: TenantsSelect<false> | TenantsSelect<true>;
+    users: UsersSelect<false> | UsersSelect<true>;
+    roles: RolesSelect<false> | RolesSelect<true>;
+    'user-roles': UserRolesSelect<false> | UserRolesSelect<true>;
     pages: PagesSelect<false> | PagesSelect<true>;
     posts: PostsSelect<false> | PostsSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
-    roles: RolesSelect<false> | RolesSelect<true>;
-    user_roles: UserRolesSelect<false> | UserRolesSelect<true>;
-    users: UsersSelect<false> | UsersSelect<true>;
-    subscriptionPlans: SubscriptionPlansSelect<false> | SubscriptionPlansSelect<true>;
+    invoices: InvoicesSelect<false> | InvoicesSelect<true>;
+    'invoice-lines': InvoiceLinesSelect<false> | InvoiceLinesSelect<true>;
+    'payment-methods': PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
+    payments: PaymentsSelect<false> | PaymentsSelect<true>;
+    'subscription-plans': SubscriptionPlansSelect<false> | SubscriptionPlansSelect<true>;
     subscriptions: SubscriptionsSelect<false> | SubscriptionsSelect<true>;
     items: ItemsSelect<false> | ItemsSelect<true>;
-    invoices: InvoicesSelect<false> | InvoicesSelect<true>;
-    invoiceLines: InvoiceLinesSelect<false> | InvoiceLinesSelect<true>;
-    paymentMethods: PaymentMethodsSelect<false> | PaymentMethodsSelect<true>;
-    payments: PaymentsSelect<false> | PaymentsSelect<true>;
+    'gl-accounts': GlAccountsSelect<false> | GlAccountsSelect<true>;
+    'gl-posting-rules': GlPostingRulesSelect<false> | GlPostingRulesSelect<true>;
+    'journal-entries': JournalEntriesSelect<false> | JournalEntriesSelect<true>;
+    'gl-postings': GlPostingsSelect<false> | GlPostingsSelect<true>;
+    'period-locks': PeriodLocksSelect<false> | PeriodLocksSelect<true>;
+    'closing-entries': ClosingEntriesSelect<false> | ClosingEntriesSelect<true>;
+    'bank-statements': BankStatementsSelect<false> | BankStatementsSelect<true>;
+    'bank-transactions': BankTransactionsSelect<false> | BankTransactionsSelect<true>;
+    'bank-accounts': BankAccountsSelect<false> | BankAccountsSelect<true>;
+    'account-reconciliations': AccountReconciliationsSelect<false> | AccountReconciliationsSelect<true>;
+    'bank-reconciliations': BankReconciliationsSelect<false> | BankReconciliationsSelect<true>;
+    'financial-statements': FinancialStatementsSelect<false> | FinancialStatementsSelect<true>;
+    'period-end-adjustments': PeriodEndAdjustmentsSelect<false> | PeriodEndAdjustmentsSelect<true>;
+    'recurring-journals': RecurringJournalsSelect<false> | RecurringJournalsSelect<true>;
+    'prior-period-adjustments': PriorPeriodAdjustmentsSelect<false> | PriorPeriodAdjustmentsSelect<true>;
+    'rounding-adjustments': RoundingAdjustmentsSelect<false> | RoundingAdjustmentsSelect<true>;
+    'tax-calculations': TaxCalculationsSelect<false> | TaxCalculationsSelect<true>;
+    'tax-codes': TaxCodesSelect<false> | TaxCodesSelect<true>;
+    'tax-jurisdictions': TaxJurisdictionsSelect<false> | TaxJurisdictionsSelect<true>;
+    'tax-returns': TaxReturnsSelect<false> | TaxReturnsSelect<true>;
+    'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
+    'fiscal-periods': FiscalPeriodsSelect<false> | FiscalPeriodsSelect<true>;
+    'fiscal-calendars': FiscalCalendarsSelect<false> | FiscalCalendarsSelect<true>;
+    'fiscal-period-snapshots': FiscalPeriodSnapshotsSelect<false> | FiscalPeriodSnapshotsSelect<true>;
+    'fixed-assets': FixedAssetsSelect<false> | FixedAssetsSelect<true>;
+    'depreciation-schedules': DepreciationSchedulesSelect<false> | DepreciationSchedulesSelect<true>;
+    customers: CustomersSelect<false> | CustomersSelect<true>;
+    leads: LeadsSelect<false> | LeadsSelect<true>;
+    opportunities: OpportunitiesSelect<false> | OpportunitiesSelect<true>;
+    'customer-segments': CustomerSegmentsSelect<false> | CustomerSegmentsSelect<true>;
+    quotes: QuotesSelect<false> | QuotesSelect<true>;
+    'sales-orders': SalesOrdersSelect<false> | SalesOrdersSelect<true>;
+    'sales-commissions': SalesCommissionsSelect<false> | SalesCommissionsSelect<true>;
+    'credit-memos': CreditMemosSelect<false> | CreditMemosSelect<true>;
+    returns: ReturnsSelect<false> | ReturnsSelect<true>;
+    shipments: ShipmentsSelect<false> | ShipmentsSelect<true>;
+    refunds: RefundsSelect<false> | RefundsSelect<true>;
+    'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
+    'dunning-cycles': DunningCyclesSelect<false> | DunningCyclesSelect<true>;
+    vendors: VendorsSelect<false> | VendorsSelect<true>;
+    'vendor-quotes': VendorQuotesSelect<false> | VendorQuotesSelect<true>;
+    'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
+    'purchase-orders': PurchaseOrdersSelect<false> | PurchaseOrdersSelect<true>;
+    'purchase-requisitions': PurchaseRequisitionsSelect<false> | PurchaseRequisitionsSelect<true>;
+    'goods-receipts': GoodsReceiptsSelect<false> | GoodsReceiptsSelect<true>;
+    'inventory-movements': InventoryMovementsSelect<false> | InventoryMovementsSelect<true>;
+    'warehouse-locations': WarehouseLocationsSelect<false> | WarehouseLocationsSelect<true>;
+    'cost-centers': CostCentersSelect<false> | CostCentersSelect<true>;
+    'budget-planning': BudgetPlanningSelect<false> | BudgetPlanningSelect<true>;
+    'cost-variances': CostVariancesSelect<false> | CostVariancesSelect<true>;
+    'intercompany-transactions': IntercompanyTransactionsSelect<false> | IntercompanyTransactionsSelect<true>;
+    'consolidation-eliminations': ConsolidationEliminationsSelect<false> | ConsolidationEliminationsSelect<true>;
+    'fx-transactions': FxTransactionsSelect<false> | FxTransactionsSelect<true>;
+    contracts: ContractsSelect<false> | ContractsSelect<true>;
+    'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
+    'commitments-and-contingencies': CommitmentsAndContingenciesSelect<false> | CommitmentsAndContingenciesSelect<true>;
+    leases: LeasesSelect<false> | LeasesSelect<true>;
+    'lease-modifications': LeaseModificationsSelect<false> | LeaseModificationsSelect<true>;
+    'lease-period-postings': LeasePeriodPostingsSelect<false> | LeasePeriodPostingsSelect<true>;
+    'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
+    'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
+    'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
+    employees: EmployeesSelect<false> | EmployeesSelect<true>;
+    'job-positions': JobPositionsSelect<false> | JobPositionsSelect<true>;
+    'time-entries': TimeEntriesSelect<false> | TimeEntriesSelect<true>;
+    'leave-requests': LeaveRequestsSelect<false> | LeaveRequestsSelect<true>;
+    'performance-reviews': PerformanceReviewsSelect<false> | PerformanceReviewsSelect<true>;
+    'expense-reports': ExpenseReportsSelect<false> | ExpenseReportsSelect<true>;
+    'recruiting-pipeline': RecruitingPipelineSelect<false> | RecruitingPipelineSelect<true>;
+    activities: ActivitiesSelect<false> | ActivitiesSelect<true>;
+    projects: ProjectsSelect<false> | ProjectsSelect<true>;
+    'project-tasks': ProjectTasksSelect<false> | ProjectTasksSelect<true>;
+    'project-milestones': ProjectMilestonesSelect<false> | ProjectMilestonesSelect<true>;
+    'work-orders': WorkOrdersSelect<false> | WorkOrdersSelect<true>;
+    'workflow-definitions': WorkflowDefinitionsSelect<false> | WorkflowDefinitionsSelect<true>;
+    'workflow-instances': WorkflowInstancesSelect<false> | WorkflowInstancesSelect<true>;
+    'bills-of-materials': BillsOfMaterialsSelect<false> | BillsOfMaterialsSelect<true>;
+    'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
+    'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
+    'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
+    properties: PropertiesSelect<false> | PropertiesSelect<true>;
+    spaces: SpacesSelect<false> | SpacesSelect<true>;
+    'maintenance-requests': MaintenanceRequestsSelect<false> | MaintenanceRequestsSelect<true>;
+    'maintenance-work-orders': MaintenanceWorkOrdersSelect<false> | MaintenanceWorkOrdersSelect<true>;
+    'bookable-resources': BookableResourcesSelect<false> | BookableResourcesSelect<true>;
+    bookings: BookingsSelect<false> | BookingsSelect<true>;
+    carriers: CarriersSelect<false> | CarriersSelect<true>;
+    'tracking-events': TrackingEventsSelect<false> | TrackingEventsSelect<true>;
+    'customs-declarations': CustomsDeclarationsSelect<false> | CustomsDeclarationsSelect<true>;
+    'consignment-arrangements': ConsignmentArrangementsSelect<false> | ConsignmentArrangementsSelect<true>;
+    'consignment-inventory': ConsignmentInventorySelect<false> | ConsignmentInventorySelect<true>;
+    'consignment-sales': ConsignmentSalesSelect<false> | ConsignmentSalesSelect<true>;
+    'audit-events': AuditEventsSelect<false> | AuditEventsSelect<true>;
+    'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
+    'evidence-attestations': EvidenceAttestationsSelect<false> | EvidenceAttestationsSelect<true>;
+    'entity-types': EntityTypesSelect<false> | EntityTypesSelect<true>;
+    'taxing-jurisdictions': TaxingJurisdictionsSelect<false> | TaxingJurisdictionsSelect<true>;
+    'entity-legal-structures': EntityLegalStructuresSelect<false> | EntityLegalStructuresSelect<true>;
+    'compliance-frameworks': ComplianceFrameworksSelect<false> | ComplianceFrameworksSelect<true>;
+    'compliance-requirements': ComplianceRequirementsSelect<false> | ComplianceRequirementsSelect<true>;
+    'internal-controls': InternalControlsSelect<false> | InternalControlsSelect<true>;
+    'control-tests': ControlTestsSelect<false> | ControlTestsSelect<true>;
+    'audit-samples': AuditSamplesSelect<false> | AuditSamplesSelect<true>;
+    'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
+    'audit-evidence': AuditEvidenceSelect<false> | AuditEvidenceSelect<true>;
+    'audit-findings': AuditFindingsSelect<false> | AuditFindingsSelect<true>;
+    'audit-trail-events': AuditTrailEventsSelect<false> | AuditTrailEventsSelect<true>;
+    'remediation-plans': RemediationPlansSelect<false> | RemediationPlansSelect<true>;
+    'audit-committees': AuditCommitteesSelect<false> | AuditCommitteesSelect<true>;
+    'audit-committee-members': AuditCommitteeMembersSelect<false> | AuditCommitteeMembersSelect<true>;
+    'board-actions': BoardActionsSelect<false> | BoardActionsSelect<true>;
+    'management-certifications': ManagementCertificationsSelect<false> | ManagementCertificationsSelect<true>;
+    'regulatory-reports': RegulatoryReportsSelect<false> | RegulatoryReportsSelect<true>;
+    'internal-policies': InternalPoliciesSelect<false> | InternalPoliciesSelect<true>;
+    'statutory-report-templates': StatutoryReportTemplatesSelect<false> | StatutoryReportTemplatesSelect<true>;
+    'statutory-field-mappings': StatutoryFieldMappingsSelect<false> | StatutoryFieldMappingsSelect<true>;
+    'policy-versions': PolicyVersionsSelect<false> | PolicyVersionsSelect<true>;
+    'policy-acknowledgments': PolicyAcknowledgmentsSelect<false> | PolicyAcknowledgmentsSelect<true>;
+    'compliance-deadlines': ComplianceDeadlinesSelect<false> | ComplianceDeadlinesSelect<true>;
+    'compliance-notifications': ComplianceNotificationsSelect<false> | ComplianceNotificationsSelect<true>;
+    'reporting-standards': ReportingStandardsSelect<false> | ReportingStandardsSelect<true>;
+    'reporting-mappings': ReportingMappingsSelect<false> | ReportingMappingsSelect<true>;
+    'related-party-transactions': RelatedPartyTransactionsSelect<false> | RelatedPartyTransactionsSelect<true>;
+    'management-assessment-icfr': ManagementAssessmentIcfrSelect<false> | ManagementAssessmentIcfrSelect<true>;
+    'disclosure-checklists': DisclosureChecklistsSelect<false> | DisclosureChecklistsSelect<true>;
+    'audit-committee-minutes': AuditCommitteeMinutesSelect<false> | AuditCommitteeMinutesSelect<true>;
+    'risk-register': RiskRegisterSelect<false> | RiskRegisterSelect<true>;
+    'debt-schedule': DebtScheduleSelect<false> | DebtScheduleSelect<true>;
+    'internal-audit-function': InternalAuditFunctionSelect<false> | InternalAuditFunctionSelect<true>;
+    'segment-reporting': SegmentReportingSelect<false> | SegmentReportingSelect<true>;
+    'consent-records': ConsentRecordsSelect<false> | ConsentRecordsSelect<true>;
+    'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
+    'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
+    'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
+    'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
+    'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
+    'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
+    'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
+    'mineral-resource-assets': MineralResourceAssetsSelect<false> | MineralResourceAssetsSelect<true>;
+    'investment-properties': InvestmentPropertiesSelect<false> | InvestmentPropertiesSelect<true>;
+    provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
+    'government-grants': GovernmentGrantsSelect<false> | GovernmentGrantsSelect<true>;
+    'deferred-tax-items': DeferredTaxItemsSelect<false> | DeferredTaxItemsSelect<true>;
+    'share-based-payments': ShareBasedPaymentsSelect<false> | ShareBasedPaymentsSelect<true>;
+    'business-combinations': BusinessCombinationsSelect<false> | BusinessCombinationsSelect<true>;
+    'held-for-sale-classifications': HeldForSaleClassificationsSelect<false> | HeldForSaleClassificationsSelect<true>;
+    'fair-value-measurements': FairValueMeasurementsSelect<false> | FairValueMeasurementsSelect<true>;
+    'earnings-per-share': EarningsPerShareSelect<false> | EarningsPerShareSelect<true>;
+    'insurance-contracts': InsuranceContractsSelect<false> | InsuranceContractsSelect<true>;
+    'regulatory-deferral-accounts': RegulatoryDeferralAccountsSelect<false> | RegulatoryDeferralAccountsSelect<true>;
+    'post-balance-sheet-events': PostBalanceSheetEventsSelect<false> | PostBalanceSheetEventsSelect<true>;
+    'transaction-failures': TransactionFailuresSelect<false> | TransactionFailuresSelect<true>;
+    'transfer-pricing-files': TransferPricingFilesSelect<false> | TransferPricingFilesSelect<true>;
+    standards: StandardsSelect<false> | StandardsSelect<true>;
+    memories: MemoriesSelect<false> | MemoriesSelect<true>;
+    'mcp-tool-metadata': McpToolMetadataSelect<false> | McpToolMetadataSelect<true>;
+    translations: TranslationsSelect<false> | TranslationsSelect<true>;
+    commitments: CommitmentsSelect<false> | CommitmentsSelect<true>;
+    'contract-amendments': ContractAmendmentsSelect<false> | ContractAmendmentsSelect<true>;
+    'contract-performance': ContractPerformanceSelect<false> | ContractPerformanceSelect<true>;
+    'contract-signatures': ContractSignaturesSelect<false> | ContractSignaturesSelect<true>;
+    'contract-templates': ContractTemplatesSelect<false> | ContractTemplatesSelect<true>;
+    'legal-entities': LegalEntitiesSelect<false> | LegalEntitiesSelect<true>;
+    'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
+    'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
     addresses: AddressesSelect<false> | AddressesSelect<true>;
     variants: VariantsSelect<false> | VariantsSelect<true>;
     variantTypes: VariantTypesSelect<false> | VariantTypesSelect<true>;
@@ -280,134 +483,10 @@ export interface Config {
     carts: CartsSelect<false> | CartsSelect<true>;
     orders: OrdersSelect<false> | OrdersSelect<true>;
     transactions: TransactionsSelect<false> | TransactionsSelect<true>;
-    exports: ExportsSelect<false> | ExportsSelect<true>;
-    imports: ImportsSelect<false> | ImportsSelect<true>;
-    'audit-events': AuditEventsSelect<false> | AuditEventsSelect<true>;
-    'tax-jurisdictions': TaxJurisdictionsSelect<false> | TaxJurisdictionsSelect<true>;
-    'tax-codes': TaxCodesSelect<false> | TaxCodesSelect<true>;
-    'fiscal-periods': FiscalPeriodsSelect<false> | FiscalPeriodsSelect<true>;
-    standards: StandardsSelect<false> | StandardsSelect<true>;
-    memories: MemoriesSelect<false> | MemoriesSelect<true>;
-    'mcp-tool-metadata': McpToolMetadataSelect<false> | McpToolMetadataSelect<true>;
-    translations: TranslationsSelect<false> | TranslationsSelect<true>;
-    customers: CustomersSelect<false> | CustomersSelect<true>;
-    vendors: VendorsSelect<false> | VendorsSelect<true>;
-    'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
-    'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
-    'gl-accounts': GlAccountsSelect<false> | GlAccountsSelect<true>;
-    'journal-entries': JournalEntriesSelect<false> | JournalEntriesSelect<true>;
-    'gl-postings': GlPostingsSelect<false> | GlPostingsSelect<true>;
-    'bank-accounts': BankAccountsSelect<false> | BankAccountsSelect<true>;
-    'bank-statements': BankStatementsSelect<false> | BankStatementsSelect<true>;
-    'bank-transactions': BankTransactionsSelect<false> | BankTransactionsSelect<true>;
-    'purchase-orders': PurchaseOrdersSelect<false> | PurchaseOrdersSelect<true>;
-    'goods-receipts': GoodsReceiptsSelect<false> | GoodsReceiptsSelect<true>;
-    quotes: QuotesSelect<false> | QuotesSelect<true>;
-    contracts: ContractsSelect<false> | ContractsSelect<true>;
-    'performance-obligations': PerformanceObligationsSelect<false> | PerformanceObligationsSelect<true>;
-    'sales-orders': SalesOrdersSelect<false> | SalesOrdersSelect<true>;
-    shipments: ShipmentsSelect<false> | ShipmentsSelect<true>;
-    returns: ReturnsSelect<false> | ReturnsSelect<true>;
-    'warehouse-locations': WarehouseLocationsSelect<false> | WarehouseLocationsSelect<true>;
-    'inventory-movements': InventoryMovementsSelect<false> | InventoryMovementsSelect<true>;
-    'financial-statements': FinancialStatementsSelect<false> | FinancialStatementsSelect<true>;
-    'period-end-adjustments': PeriodEndAdjustmentsSelect<false> | PeriodEndAdjustmentsSelect<true>;
-    'depreciation-schedules': DepreciationSchedulesSelect<false> | DepreciationSchedulesSelect<true>;
-    'tax-calculations': TaxCalculationsSelect<false> | TaxCalculationsSelect<true>;
-    'tax-returns': TaxReturnsSelect<false> | TaxReturnsSelect<true>;
-    'currency-rates': CurrencyRatesSelect<false> | CurrencyRatesSelect<true>;
-    'credit-memos': CreditMemosSelect<false> | CreditMemosSelect<true>;
-    refunds: RefundsSelect<false> | RefundsSelect<true>;
-    'fixed-assets': FixedAssetsSelect<false> | FixedAssetsSelect<true>;
-    'budget-planning': BudgetPlanningSelect<false> | BudgetPlanningSelect<true>;
-    'consent-records': ConsentRecordsSelect<false> | ConsentRecordsSelect<true>;
-    'data-subject-requests': DataSubjectRequestsSelect<false> | DataSubjectRequestsSelect<true>;
-    'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
-    'audit-findings': AuditFindingsSelect<false> | AuditFindingsSelect<true>;
-    'control-tests': ControlTestsSelect<false> | ControlTestsSelect<true>;
-    'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
-    'evidence-attestations': EvidenceAttestationsSelect<false> | EvidenceAttestationsSelect<true>;
-    'cost-centers': CostCentersSelect<false> | CostCentersSelect<true>;
-    leases: LeasesSelect<false> | LeasesSelect<true>;
-    'lease-period-postings': LeasePeriodPostingsSelect<false> | LeasePeriodPostingsSelect<true>;
-    'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
-    'payment-runs': PaymentRunsSelect<false> | PaymentRunsSelect<true>;
-    'account-reconciliations': AccountReconciliationsSelect<false> | AccountReconciliationsSelect<true>;
-    'dunning-cycles': DunningCyclesSelect<false> | DunningCyclesSelect<true>;
-    employees: EmployeesSelect<false> | EmployeesSelect<true>;
-    'time-entries': TimeEntriesSelect<false> | TimeEntriesSelect<true>;
-    'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
-    'bank-reconciliations': BankReconciliationsSelect<false> | BankReconciliationsSelect<true>;
-    'intercompany-transactions': IntercompanyTransactionsSelect<false> | IntercompanyTransactionsSelect<true>;
-    'consolidation-eliminations': ConsolidationEliminationsSelect<false> | ConsolidationEliminationsSelect<true>;
-    'prior-period-adjustments': PriorPeriodAdjustmentsSelect<false> | PriorPeriodAdjustmentsSelect<true>;
-    'rounding-adjustments': RoundingAdjustmentsSelect<false> | RoundingAdjustmentsSelect<true>;
-    'transaction-failures': TransactionFailuresSelect<false> | TransactionFailuresSelect<true>;
-    'fx-transactions': FxTransactionsSelect<false> | FxTransactionsSelect<true>;
-    'payment-allocations': PaymentAllocationsSelect<false> | PaymentAllocationsSelect<true>;
-    'bills-of-materials': BillsOfMaterialsSelect<false> | BillsOfMaterialsSelect<true>;
-    'work-orders': WorkOrdersSelect<false> | WorkOrdersSelect<true>;
-    'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
-    'cost-variances': CostVariancesSelect<false> | CostVariancesSelect<true>;
-    'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
-    carriers: CarriersSelect<false> | CarriersSelect<true>;
-    'tracking-events': TrackingEventsSelect<false> | TrackingEventsSelect<true>;
-    'customs-declarations': CustomsDeclarationsSelect<false> | CustomsDeclarationsSelect<true>;
-    'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
-    'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
-    'legal-entities': LegalEntitiesSelect<false> | LegalEntitiesSelect<true>;
-    projects: ProjectsSelect<false> | ProjectsSelect<true>;
-    'project-tasks': ProjectTasksSelect<false> | ProjectTasksSelect<true>;
-    'project-milestones': ProjectMilestonesSelect<false> | ProjectMilestonesSelect<true>;
-    'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
-    'recurring-journals': RecurringJournalsSelect<false> | RecurringJournalsSelect<true>;
-    provisions: ProvisionsSelect<false> | ProvisionsSelect<true>;
-    'commitments-and-contingencies': CommitmentsAndContingenciesSelect<false> | CommitmentsAndContingenciesSelect<true>;
-    'government-grants': GovernmentGrantsSelect<false> | GovernmentGrantsSelect<true>;
-    'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
-    'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
-    'transfer-pricing-files': TransferPricingFilesSelect<false> | TransferPricingFilesSelect<true>;
-    'lease-modifications': LeaseModificationsSelect<false> | LeaseModificationsSelect<true>;
-    leads: LeadsSelect<false> | LeadsSelect<true>;
-    'customer-segments': CustomerSegmentsSelect<false> | CustomerSegmentsSelect<true>;
-    opportunities: OpportunitiesSelect<false> | OpportunitiesSelect<true>;
-    activities: ActivitiesSelect<false> | ActivitiesSelect<true>;
-    'sales-commissions': SalesCommissionsSelect<false> | SalesCommissionsSelect<true>;
-    'purchase-requisitions': PurchaseRequisitionsSelect<false> | PurchaseRequisitionsSelect<true>;
-    'vendor-quotes': VendorQuotesSelect<false> | VendorQuotesSelect<true>;
-    'vendor-scorecards': VendorScorecardsSelect<false> | VendorScorecardsSelect<true>;
-    'job-positions': JobPositionsSelect<false> | JobPositionsSelect<true>;
-    'recruiting-pipeline': RecruitingPipelineSelect<false> | RecruitingPipelineSelect<true>;
-    'performance-reviews': PerformanceReviewsSelect<false> | PerformanceReviewsSelect<true>;
-    'expense-reports': ExpenseReportsSelect<false> | ExpenseReportsSelect<true>;
-    'leave-requests': LeaveRequestsSelect<false> | LeaveRequestsSelect<true>;
-    'workflow-definitions': WorkflowDefinitionsSelect<false> | WorkflowDefinitionsSelect<true>;
-    'workflow-instances': WorkflowInstancesSelect<false> | WorkflowInstancesSelect<true>;
-    properties: PropertiesSelect<false> | PropertiesSelect<true>;
-    spaces: SpacesSelect<false> | SpacesSelect<true>;
-    'bookable-resources': BookableResourcesSelect<false> | BookableResourcesSelect<true>;
-    bookings: BookingsSelect<false> | BookingsSelect<true>;
-    'consignment-arrangements': ConsignmentArrangementsSelect<false> | ConsignmentArrangementsSelect<true>;
-    'consignment-inventory': ConsignmentInventorySelect<false> | ConsignmentInventorySelect<true>;
-    'consignment-sales': ConsignmentSalesSelect<false> | ConsignmentSalesSelect<true>;
-    'maintenance-requests': MaintenanceRequestsSelect<false> | MaintenanceRequestsSelect<true>;
-    'maintenance-work-orders': MaintenanceWorkOrdersSelect<false> | MaintenanceWorkOrdersSelect<true>;
-    'fair-value-measurements': FairValueMeasurementsSelect<false> | FairValueMeasurementsSelect<true>;
-    'deferred-tax-items': DeferredTaxItemsSelect<false> | DeferredTaxItemsSelect<true>;
-    'share-based-payments': ShareBasedPaymentsSelect<false> | ShareBasedPaymentsSelect<true>;
-    'business-combinations': BusinessCombinationsSelect<false> | BusinessCombinationsSelect<true>;
-    'investment-properties': InvestmentPropertiesSelect<false> | InvestmentPropertiesSelect<true>;
-    'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
-    'mineral-resource-assets': MineralResourceAssetsSelect<false> | MineralResourceAssetsSelect<true>;
-    'regulatory-deferral-accounts': RegulatoryDeferralAccountsSelect<false> | RegulatoryDeferralAccountsSelect<true>;
-    'insurance-contracts': InsuranceContractsSelect<false> | InsuranceContractsSelect<true>;
-    'held-for-sale-classifications': HeldForSaleClassificationsSelect<false> | HeldForSaleClassificationsSelect<true>;
-    'earnings-per-share': EarningsPerShareSelect<false> | EarningsPerShareSelect<true>;
-    'post-balance-sheet-events': PostBalanceSheetEventsSelect<false> | PostBalanceSheetEventsSelect<true>;
-    redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
-    search: SearchSelect<false> | SearchSelect<true>;
+    exports: ExportsSelect<false> | ExportsSelect<true>;
+    imports: ImportsSelect<false> | ImportsSelect<true>;
     'payload-mcp-api-keys': PayloadMcpApiKeysSelect<false> | PayloadMcpApiKeysSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-jobs': PayloadJobsSelect<false> | PayloadJobsSelect<true>;
@@ -733,254 +812,6 @@ export interface Tenant {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "pages".
- */
-export interface Page {
-  id: number;
-  tenant?: (number | null) | Tenant;
-  title: string;
-  hero: {
-    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
-    richText?: {
-      root: {
-        type: string;
-        children: {
-          type: any;
-          version: number;
-          [k: string]: unknown;
-        }[];
-        direction: ('ltr' | 'rtl') | null;
-        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-        indent: number;
-        version: number;
-      };
-      [k: string]: unknown;
-    } | null;
-    links?:
-      | {
-          link: {
-            type?: ('reference' | 'custom') | null;
-            newTab?: boolean | null;
-            reference?:
-              | ({
-                  relationTo: 'pages';
-                  value: number | Page;
-                } | null)
-              | ({
-                  relationTo: 'posts';
-                  value: number | Post;
-                } | null);
-            url?: string | null;
-            label: string;
-            /**
-             * Choose how the link should be rendered.
-             */
-            appearance?: ('default' | 'outline') | null;
-          };
-          id?: string | null;
-        }[]
-      | null;
-    media?: (number | null) | Media;
-  };
-  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[];
-  meta?: {
-    title?: string | null;
-    /**
-     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
-     */
-    image?: (number | null) | Media;
-    description?: string | null;
-  };
-  publishedAt?: string | null;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
-  slug: string;
-  parent?: (number | null) | Page;
-  breadcrumbs?:
-    | {
-        doc?: (number | null) | Page;
-        title?: string | null;
-        url?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  updatedAt: string;
-  createdAt: string;
-  _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "posts".
- */
-export interface Post {
-  id: number;
-  tenant?: (number | null) | Tenant;
-  title: string;
-  heroImage?: (number | null) | Media;
-  content: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
-  relatedPosts?: (number | Post)[] | null;
-  categories?: (number | Category)[] | null;
-  meta?: {
-    title?: string | null;
-    /**
-     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
-     */
-    image?: (number | null) | Media;
-    description?: string | null;
-  };
-  publishedAt?: string | null;
-  authors?: (number | User)[] | null;
-  populatedAuthors?:
-    | {
-        id?: string | null;
-        name?: string | null;
-      }[]
-    | null;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
-  slug: string;
-  updatedAt: string;
-  createdAt: string;
-  _status?: ('draft' | 'published') | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "media".
- */
-export interface Media {
-  id: number;
-  tenant?: (number | null) | Tenant;
-  alt?: string | null;
-  caption?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-  sizes?: {
-    thumbnail?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    square?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    small?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    medium?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    large?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    xlarge?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    og?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-  };
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "categories".
- */
-export interface Category {
-  id: number;
-  tenant?: (number | null) | Tenant;
-  title: string;
-  /**
-   * When enabled, the slug will auto-generate from the title field on save and autosave.
-   */
-  generateSlug?: boolean | null;
-  slug: string;
-  parent?: (number | null) | Category;
-  breadcrumbs?:
-    | {
-        doc?: (number | null) | Category;
-        title?: string | null;
-        url?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
  */
 export interface User {
@@ -1164,6 +995,99 @@ export interface Product {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+export interface Media {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  alt?: string | null;
+  caption?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    square?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    small?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    medium?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    large?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    xlarge?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    og?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "variantOptions".
  */
 export interface VariantOption {
@@ -1248,6 +1172,161 @@ export interface CallToActionBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pages".
+ */
+export interface Page {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  title: string;
+  hero: {
+    type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
+    richText?: {
+      root: {
+        type: string;
+        children: {
+          type: any;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    } | null;
+    links?:
+      | {
+          link: {
+            type?: ('reference' | 'custom') | null;
+            newTab?: boolean | null;
+            reference?:
+              | ({
+                  relationTo: 'pages';
+                  value: number | Page;
+                } | null)
+              | ({
+                  relationTo: 'posts';
+                  value: number | Post;
+                } | null);
+            url?: string | null;
+            label: string;
+            /**
+             * Choose how the link should be rendered.
+             */
+            appearance?: ('default' | 'outline') | null;
+          };
+          id?: string | null;
+        }[]
+      | null;
+    media?: (number | null) | Media;
+  };
+  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[];
+  meta?: {
+    title?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (number | null) | Media;
+    description?: string | null;
+  };
+  publishedAt?: string | null;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  parent?: (number | null) | Page;
+  breadcrumbs?:
+    | {
+        doc?: (number | null) | Page;
+        title?: string | null;
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts".
+ */
+export interface Post {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  title: string;
+  heroImage?: (number | null) | Media;
+  content: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  relatedPosts?: (number | Post)[] | null;
+  categories?: (number | Category)[] | null;
+  meta?: {
+    title?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (number | null) | Media;
+    description?: string | null;
+  };
+  publishedAt?: string | null;
+  authors?: (number | User)[] | null;
+  populatedAuthors?:
+    | {
+        id?: string | null;
+        name?: string | null;
+      }[]
+    | null;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "categories".
+ */
+export interface Category {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  title: string;
+  /**
+   * When enabled, the slug will auto-generate from the title field on save and autosave.
+   */
+  generateSlug?: boolean | null;
+  slug: string;
+  parent?: (number | null) | Category;
+  breadcrumbs?:
+    | {
+        doc?: (number | null) | Category;
+        title?: string | null;
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ContentBlock".
  */
 export interface ContentBlock {
@@ -1305,6 +1384,240 @@ export interface MediaBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'mediaBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ArchiveBlock".
+ */
+export interface ArchiveBlock {
+  introContent?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  populateBy?: ('collection' | 'selection') | null;
+  relationTo?: 'posts' | null;
+  categories?: (number | Category)[] | null;
+  limit?: number | null;
+  selectedDocs?:
+    | {
+        relationTo: 'posts';
+        value: number | Post;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'archive';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "FormBlock".
+ */
+export interface FormBlock {
+  form: number | Form;
+  enableIntro?: boolean | null;
+  introContent?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'formBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "forms".
+ */
+export interface Form {
+  id: number;
+  title: string;
+  fields?:
+    | (
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            required?: boolean | null;
+            defaultValue?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'checkbox';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'country';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'email';
+          }
+        | {
+            message?: {
+              root: {
+                type: string;
+                children: {
+                  type: any;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'message';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            defaultValue?: number | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'number';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            defaultValue?: string | null;
+            placeholder?: string | null;
+            options?:
+              | {
+                  label: string;
+                  value: string;
+                  id?: string | null;
+                }[]
+              | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'select';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'state';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            defaultValue?: string | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'text';
+          }
+        | {
+            name: string;
+            label?: string | null;
+            width?: number | null;
+            defaultValue?: string | null;
+            required?: boolean | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'textarea';
+          }
+      )[]
+    | null;
+  submitButtonLabel?: string | null;
+  /**
+   * Choose whether to display an on-page message or redirect to a different page after they submit the form.
+   */
+  confirmationType?: ('message' | 'redirect') | null;
+  confirmationMessage?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  redirect?: {
+    url: string;
+  };
+  /**
+   * Send custom emails when the form submits. Use comma separated lists to send the same email to multiple recipients. To reference a value from this form, wrap that field's name with double curly brackets, i.e. {{firstName}}. You can use a wildcard {{*}} to output all data and {{*:table}} to format it as an HTML table in the email.
+   */
+  emails?:
+    | {
+        emailTo?: string | null;
+        cc?: string | null;
+        bcc?: string | null;
+        replyTo?: string | null;
+        emailFrom?: string | null;
+        subject: string;
+        /**
+         * Enter the message that should be sent in this email.
+         */
+        message?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1526,7 +1839,7 @@ export interface Address {
  */
 export interface GlAccount {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Unique account code (e.g., 1000, 2100, 5001) — matches your jurisdiction's chart-of-accounts numbering.
    */
@@ -1575,240 +1888,6 @@ export interface GlAccount {
   tags?:
     | {
         tag?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "ArchiveBlock".
- */
-export interface ArchiveBlock {
-  introContent?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  populateBy?: ('collection' | 'selection') | null;
-  relationTo?: 'posts' | null;
-  categories?: (number | Category)[] | null;
-  limit?: number | null;
-  selectedDocs?:
-    | {
-        relationTo: 'posts';
-        value: number | Post;
-      }[]
-    | null;
-  id?: string | null;
-  blockName?: string | null;
-  blockType: 'archive';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "FormBlock".
- */
-export interface FormBlock {
-  form: number | Form;
-  enableIntro?: boolean | null;
-  introContent?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  id?: string | null;
-  blockName?: string | null;
-  blockType: 'formBlock';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "forms".
- */
-export interface Form {
-  id: number;
-  title: string;
-  fields?:
-    | (
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            defaultValue?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'checkbox';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'country';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'email';
-          }
-        | {
-            message?: {
-              root: {
-                type: string;
-                children: {
-                  type: any;
-                  version: number;
-                  [k: string]: unknown;
-                }[];
-                direction: ('ltr' | 'rtl') | null;
-                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-                indent: number;
-                version: number;
-              };
-              [k: string]: unknown;
-            } | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'message';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'number';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: string | null;
-            placeholder?: string | null;
-            options?:
-              | {
-                  label: string;
-                  value: string;
-                  id?: string | null;
-                }[]
-              | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'select';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'state';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: string | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'text';
-          }
-        | {
-            name: string;
-            label?: string | null;
-            width?: number | null;
-            defaultValue?: string | null;
-            required?: boolean | null;
-            id?: string | null;
-            blockName?: string | null;
-            blockType: 'textarea';
-          }
-      )[]
-    | null;
-  submitButtonLabel?: string | null;
-  /**
-   * Choose whether to show a message on the page or redirect to a different page after submission.
-   */
-  confirmationType?: ('message' | 'redirect') | null;
-  confirmationMessage?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  redirect?: {
-    url: string;
-  };
-  /**
-   * Send custom emails when the form is submitted. Use comma-separated recipient lists. Use {{fieldName}} to insert field values.
-   */
-  emails?:
-    | {
-        emailTo?: string | null;
-        cc?: string | null;
-        bcc?: string | null;
-        replyTo?: string | null;
-        emailFrom?: string | null;
-        subject: string;
-        /**
-         * Enter the message that should be sent in this email.
-         */
-        message?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
         id?: string | null;
       }[]
     | null;
@@ -1867,7 +1946,7 @@ export interface Role {
  * Assigns users to role definitions.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "user_roles".
+ * via the `definition` "user-roles".
  */
 export interface UserRole {
   id: number;
@@ -1878,257 +1957,11 @@ export interface UserRole {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptionPlans".
- */
-export interface SubscriptionPlan {
-  id: number;
-  name: string;
-  slug: string;
-  /**
-   * Stripe Product ID for this plan
-   */
-  stripeProductId?: string | null;
-  /**
-   * Stripe Price ID (recurring) for this plan
-   */
-  stripePriceId?: string | null;
-  /**
-   * Monthly price in USD cents (0 for free tier)
-   */
-  monthlyUSD: number;
-  /**
-   * Yearly price in USD cents (optional, for annual billing)
-   */
-  yearlyUSD?: number | null;
-  billingCycle: 'monthly' | 'yearly';
-  /**
-   * Feature limits as JSON. null = unlimited
-   */
-  limits:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  isActive?: boolean | null;
-  description?: string | null;
-  /**
-   * Display order in pricing pages (lower = first)
-   */
-  sortOrder?: number | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptions".
- */
-export interface Subscription {
-  id: number;
-  /**
-   * The tenant this subscription belongs to
-   */
-  tenant: number | Tenant;
-  /**
-   * Current subscription plan
-   */
-  plan: number | SubscriptionPlan;
-  /**
-   * Current subscription state in billing cycle
-   */
-  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
-  trialStartedAt?: string | null;
-  trialEndsAt?: string | null;
-  currentPeriodStart?: string | null;
-  currentPeriodEnd?: string | null;
-  /**
-   * Stripe subscription object ID
-   */
-  stripeSubscriptionId?: string | null;
-  /**
-   * Stripe customer ID
-   */
-  stripeCustomerId?: string | null;
-  cancelledAt?: string | null;
-  cancellationReason?: string | null;
-  pausedAt?: string | null;
-  resumeAt?: string | null;
-  lastStatusChange?: string | null;
-  lastStatusChangeReason?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "items".
- */
-export interface Item {
-  id: number;
-  /**
-   * Item code
-   */
-  code: string;
-  /**
-   * SKU
-   */
-  sku?: string | null;
-  /**
-   * Barcode
-   */
-  barcode?: string | null;
-  /**
-   * Owner/seller
-   */
-  address: number | Address;
-  pricing: {
-    /**
-     * Selling price
-     */
-    price?: number | null;
-    /**
-     * Cost price
-     */
-    cost?: number | null;
-    /**
-     * Compare at price
-     */
-    compareAtPrice?: number | null;
-    /**
-     * Vendor price
-     */
-    vendorPrice?: number | null;
-    /**
-     * Minimum price
-     */
-    minPrice?: number | null;
-    /**
-     * Currency
-     */
-    currencyCode: string;
-    /**
-     * Price includes tax
-     */
-    priceIncludesTax?: boolean | null;
-  };
-  taxation?: {
-    /**
-     * Is taxable
-     */
-    taxable?: boolean | null;
-    /**
-     * Tax rate %
-     */
-    taxRate?: number | null;
-    /**
-     * Tax debit account
-     */
-    taxDebitAccount?: (number | null) | GlAccount;
-    /**
-     * Tax credit account
-     */
-    taxCreditAccount?: (number | null) | GlAccount;
-  };
-  ledger?: {
-    /**
-     * Debit account
-     */
-    debitAccount?: (number | null) | GlAccount;
-    /**
-     * Credit account
-     */
-    creditAccount?: (number | null) | GlAccount;
-  };
-  inventory: {
-    /**
-     * Current inventory
-     */
-    inventoryQuantity: number;
-    /**
-     * Inventory management
-     */
-    inventoryManagement?: ('shopify' | 'manual' | 'none') | null;
-    /**
-     * Out of stock policy
-     */
-    inventoryPolicy?: ('deny' | 'continue') | null;
-  };
-  physical?: {
-    /**
-     * Weight
-     */
-    weight?: number | null;
-    /**
-     * Weight unit (kg, lbs)
-     */
-    weightUnit?: string | null;
-    /**
-     * Weight in grams
-     */
-    grams?: number | null;
-    /**
-     * HS Code
-     */
-    hsCode?: string | null;
-    /**
-     * Requires shipping
-     */
-    requiresShipping?: boolean | null;
-  };
-  discounts?: {
-    /**
-     * Max discount %
-     */
-    maxDiscountRate?: number | null;
-    /**
-     * Min profit %
-     */
-    minProfitRate?: number | null;
-    /**
-     * Max profit %
-     */
-    maxProfitRate?: number | null;
-  };
-  fulfillment?: {
-    /**
-     * Fulfillment service
-     */
-    fulfillmentService?: string | null;
-    /**
-     * Billing period (if recurring)
-     */
-    period?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
-  };
-  visibility?: {
-    /**
-     * Item visibility
-     */
-    visibility?: ('public' | 'private' | 'wholesale') | null;
-  };
-  /**
-   * Additional metadata
-   */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  tenant: number | Tenant;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "invoices".
  */
 export interface Invoice {
   id: number;
+  tenant?: (number | null) | Tenant;
   typeStatus: {
     /**
      * Internal document type. For EN-16931 export, see invoiceTypeCode (BT-3) — the canonical UN/CEFACT 1001 code (commercial invoice = 380, credit note = 381, etc.).
@@ -2465,16 +2298,98 @@ export interface Invoice {
     | number
     | boolean
     | null;
-  tenant: number | Tenant;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "invoiceLines".
+ * via the `definition` "subscriptions".
+ */
+export interface Subscription {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Current subscription plan
+   */
+  plan: number | SubscriptionPlan;
+  /**
+   * Current subscription state in billing cycle
+   */
+  status: 'trial' | 'active' | 'past_due' | 'grace_period' | 'suspended' | 'cancelled';
+  trialStartedAt?: string | null;
+  trialEndsAt?: string | null;
+  currentPeriodStart?: string | null;
+  currentPeriodEnd?: string | null;
+  /**
+   * Stripe subscription object ID
+   */
+  stripeSubscriptionId?: string | null;
+  /**
+   * Stripe customer ID
+   */
+  stripeCustomerId?: string | null;
+  cancelledAt?: string | null;
+  cancellationReason?: string | null;
+  pausedAt?: string | null;
+  resumeAt?: string | null;
+  lastStatusChange?: string | null;
+  lastStatusChangeReason?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscription-plans".
+ */
+export interface SubscriptionPlan {
+  id: number;
+  name: string;
+  slug: string;
+  /**
+   * Stripe Product ID for this plan
+   */
+  stripeProductId?: string | null;
+  /**
+   * Stripe Price ID (recurring) for this plan
+   */
+  stripePriceId?: string | null;
+  /**
+   * Monthly price in USD cents (0 for free tier)
+   */
+  monthlyUSD: number;
+  /**
+   * Yearly price in USD cents (optional, for annual billing)
+   */
+  yearlyUSD?: number | null;
+  billingCycle: 'monthly' | 'yearly';
+  /**
+   * Feature limits as JSON. null = unlimited
+   */
+  limits:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  isActive?: boolean | null;
+  description?: string | null;
+  /**
+   * Display order in pricing pages (lower = first)
+   */
+  sortOrder?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "invoice-lines".
  */
 export interface InvoiceLine {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
    * Parent invoice
    */
@@ -2701,17 +2616,178 @@ export interface InvoiceLine {
     | number
     | boolean
     | null;
-  tenant: number | Tenant;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "paymentMethods".
+ * via the `definition` "items".
+ */
+export interface Item {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Item code
+   */
+  code: string;
+  /**
+   * SKU
+   */
+  sku?: string | null;
+  /**
+   * Barcode
+   */
+  barcode?: string | null;
+  /**
+   * Owner/seller
+   */
+  address: number | Address;
+  pricing: {
+    /**
+     * Selling price
+     */
+    price?: number | null;
+    /**
+     * Cost price
+     */
+    cost?: number | null;
+    /**
+     * Compare at price
+     */
+    compareAtPrice?: number | null;
+    /**
+     * Vendor price
+     */
+    vendorPrice?: number | null;
+    /**
+     * Minimum price
+     */
+    minPrice?: number | null;
+    /**
+     * Currency
+     */
+    currencyCode: string;
+    /**
+     * Price includes tax
+     */
+    priceIncludesTax?: boolean | null;
+  };
+  taxation?: {
+    /**
+     * Is taxable
+     */
+    taxable?: boolean | null;
+    /**
+     * Tax rate %
+     */
+    taxRate?: number | null;
+    /**
+     * Tax debit account
+     */
+    taxDebitAccount?: (number | null) | GlAccount;
+    /**
+     * Tax credit account
+     */
+    taxCreditAccount?: (number | null) | GlAccount;
+  };
+  ledger?: {
+    /**
+     * Debit account
+     */
+    debitAccount?: (number | null) | GlAccount;
+    /**
+     * Credit account
+     */
+    creditAccount?: (number | null) | GlAccount;
+  };
+  inventory: {
+    /**
+     * Current inventory
+     */
+    inventoryQuantity: number;
+    /**
+     * Inventory management
+     */
+    inventoryManagement?: ('shopify' | 'manual' | 'none') | null;
+    /**
+     * Out of stock policy
+     */
+    inventoryPolicy?: ('deny' | 'continue') | null;
+  };
+  physical?: {
+    /**
+     * Weight
+     */
+    weight?: number | null;
+    /**
+     * Weight unit (kg, lbs)
+     */
+    weightUnit?: string | null;
+    /**
+     * Weight in grams
+     */
+    grams?: number | null;
+    /**
+     * HS Code
+     */
+    hsCode?: string | null;
+    /**
+     * Requires shipping
+     */
+    requiresShipping?: boolean | null;
+  };
+  discounts?: {
+    /**
+     * Max discount %
+     */
+    maxDiscountRate?: number | null;
+    /**
+     * Min profit %
+     */
+    minProfitRate?: number | null;
+    /**
+     * Max profit %
+     */
+    maxProfitRate?: number | null;
+  };
+  fulfillment?: {
+    /**
+     * Fulfillment service
+     */
+    fulfillmentService?: string | null;
+    /**
+     * Billing period (if recurring)
+     */
+    period?: ('second' | 'minute' | 'hour' | 'day' | 'week' | 'month' | 'year') | null;
+  };
+  visibility?: {
+    /**
+     * Item visibility
+     */
+    visibility?: ('public' | 'private' | 'wholesale') | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-methods".
  */
 export interface PaymentMethod {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   stripePaymentMethodId: string;
   type: 'card' | 'bank_account';
   /**
@@ -2742,6 +2818,7 @@ export interface PaymentMethod {
  */
 export interface Payment {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
    * Transaction reference number
    */
@@ -2828,199 +2905,172 @@ export interface Payment {
     | number
     | boolean
     | null;
-  tenant: number | Tenant;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "exports".
+ * via the `definition` "gl-posting-rules".
  */
-export interface Export {
+export interface GlPostingRule {
   id: number;
-  name?: string | null;
-  format: 'csv' | 'json';
-  limit?: number | null;
-  page?: number | null;
-  sort?: string | null;
-  sortOrder?: ('asc' | 'desc') | null;
-  locale?:
-    | (
-        | 'all'
-        | 'en'
-        | 'bg'
-        | 'cs'
-        | 'da'
-        | 'de'
-        | 'el'
-        | 'es'
-        | 'et'
-        | 'fi'
-        | 'fr'
-        | 'ga'
-        | 'hr'
-        | 'hu'
-        | 'is'
-        | 'it'
-        | 'ja'
-        | 'lt'
-        | 'lv'
-        | 'mt'
-        | 'nb'
-        | 'nl'
-        | 'pl'
-        | 'pt'
-        | 'ro'
-        | 'ru'
-        | 'sk'
-        | 'sl'
-        | 'sv'
-        | 'uk'
-        | 'ar'
-      )
-    | null;
-  drafts?: ('yes' | 'no') | null;
-  selectionToUse?: ('currentSelection' | 'currentFilters' | 'all') | null;
-  fields?: string[] | null;
-  collectionSlug: string;
-  where?:
-    | {
+  tenant?: (number | null) | Tenant;
+  /**
+   * Account classification for validation & reporting
+   */
+  accountType:
+    | 'asset'
+    | 'current-asset'
+    | 'fixed-asset'
+    | 'accumulated-depreciation'
+    | 'liability'
+    | 'current-liability'
+    | 'long-term-liability'
+    | 'equity'
+    | 'retained-earnings'
+    | 'common-stock'
+    | 'revenue'
+    | 'operating-revenue'
+    | 'expense'
+    | 'operating-expense'
+    | 'cogs'
+    | 'administrative-expense'
+    | 'other-income'
+    | 'other-expense'
+    | 'gain'
+    | 'loss';
+  /**
+   * Debit-normal or credit-normal per double-entry rules
+   */
+  normalPolarity: 'debit' | 'credit';
+  /**
+   * Whether account appears on balance sheet or P&L
+   */
+  balanceSheetCategory: 'balance-sheet' | 'pl' | 'retained-earnings';
+  /**
+   * Check if account must be reconciled monthly (e.g., bank, AR, AP, inventory)
+   */
+  requiresReconciliation?: boolean | null;
+  /**
+   * How often account must be reconciled
+   */
+  reconciliationFrequency?: ('monthly' | 'quarterly' | 'annual' | 'none') | null;
+  /**
+   * Check if account affects cash flow statement
+   */
+  isCashFlowRelevant?: boolean | null;
+  /**
+   * Check if account closes to retained earnings at period-end (P&L accounts only)
+   */
+  closesAtPeriodEnd?: boolean | null;
+  /**
+   * Link to GL accounts using this rule set
+   */
+  relatedGLAccounts?: (number | GlAccount)[] | null;
+  /**
+   * Accounting guidance for this account type
+   */
+  notes?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
         [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   updatedAt: string;
   createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "imports".
+ * via the `definition` "journal-entries".
  */
-export interface Import {
+export interface JournalEntry {
   id: number;
-  collectionSlug: string;
-  importMode?: ('create' | 'update' | 'upsert') | null;
-  matchField?: string | null;
-  status?: ('pending' | 'completed' | 'partial' | 'failed') | null;
-  summary?: {
-    imported?: number | null;
-    updated?: number | null;
-    total?: number | null;
-    issues?: number | null;
-    issueDetails?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-  };
+  tenant?: (number | null) | Tenant;
+  entryNumber: string;
+  entryDate: string;
+  postedDate?: string | null;
+  description: string;
+  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
+  lines: {
+    lineNumber?: number | null;
+    glAccount: number | GlAccount;
+    accountNumber?: string | null;
+    accountName?: string | null;
+    description?: string | null;
+    debit?: number | null;
+    credit?: number | null;
+    currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+    exchangeRate?: number | null;
+    id?: string | null;
+  }[];
+  debitTotal?: number | null;
+  creditTotal?: number | null;
+  isBalanced?: boolean | null;
+  sourceType:
+    | 'manual'
+    | 'invoice'
+    | 'bill'
+    | 'payment'
+    | 'bank_reconciliation'
+    | 'period_end_adjustment'
+    | 'tax_calculation'
+    | 'currency_adjustment';
+  sourceId?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
 }
 /**
- * Persistent ISO 19011 / SOX §404 audit trail. Append-only — never edited or deleted.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-events".
+ * via the `definition` "gl-postings".
  */
-export interface AuditEvent {
+export interface GlPosting {
   id: number;
-  tenant: number | Tenant;
-  /**
-   * RFC 9562 UUID v4 — canonical event identifier. Carried in DomainEvent.eventId from the emitter; persisted here for SOX §404 / ISO 19011 §6.4.6 unique traceability.
-   */
-  eventId: string;
-  /**
-   * ISO 8601 UTC timestamp the event was recorded.
-   */
-  timestamp: string;
-  /**
-   * Domain event slug (e.g. order:activated, subscription:cancelled, period:locked). Maps to canonical AuditEntry.eventType.
-   */
-  eventType: string;
-  /**
-   * Free-text actor / source context (e.g. "close-job:2026-04", "admin-ui", "sox-control:CR-0042"). Maps to canonical AuditEntry.source.
-   */
-  source?: string | null;
-  /**
-   * Source collection slug. Maps to canonical AuditEntry.collection.
-   */
-  collectionSlug: string;
-  /**
-   * Maps to canonical AuditEntry.operation (AuditOperation enum).
-   */
-  operation: 'create' | 'update' | 'delete' | 'login' | 'logout' | 'export' | 'import';
-  /**
-   * ID of the affected document.
-   */
-  documentId: string;
-  /**
-   * Actor who performed the action.
-   */
-  user?: (number | null) | User;
-  /**
-   * Status before the change (for status transitions). Maps to canonical AuditEntry.previousStatus.
-   */
-  previousStatus?: string | null;
-  /**
-   * Status after the change. Maps to canonical AuditEntry.nextStatus.
-   */
-  nextStatus?: string | null;
-  /**
-   * Per-field diff (each item: { field, previousValue, nextValue }). Maps to canonical AuditEntry.changes (AuditChangeRecord[]).
-   */
-  changes?:
+  tenant?: (number | null) | Tenant;
+  postingId: string;
+  sourceType:
+    | 'invoice'
+    | 'bill'
+    | 'payment'
+    | 'bank_statement'
+    | 'period_end_adjustment'
+    | 'tax_calculation'
+    | 'currency_revaluation'
+    | 'manual_entry';
+  sourceId: string;
+  sourceDate: string;
+  journalEntry: number | JournalEntry;
+  status?: ('pending' | 'posted' | 'reversed' | 'failed') | null;
+  postedDate?: string | null;
+  accountsAffected?:
     | {
-        field: string;
-        previousValue?:
-          | {
-              [k: string]: unknown;
-            }
-          | unknown[]
-          | string
-          | number
-          | boolean
-          | null;
-        nextValue?:
-          | {
-              [k: string]: unknown;
-            }
-          | unknown[]
-          | string
-          | number
-          | boolean
+        glAccount: number | GlAccount;
+        accountNumber?: string | null;
+        accountName?: string | null;
+        debitAmount?: number | null;
+        creditAmount?: number | null;
+        currency?:
+          | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
           | null;
         id?: string | null;
       }[]
     | null;
-  /**
-   * Field-level diff (sparse): {before:{…}, after:{…}}. Compact alternative to `changes[]` — emitter populates one or the other. Maps to canonical AuditEntry.changeSummary.
-   */
-  changeSummary?:
+  totalDebits?: number | null;
+  totalCredits?: number | null;
+  errorMessage?: string | null;
+  reversalPostingId?: string | null;
+  metadata?:
     | {
         [k: string]: unknown;
       }
@@ -3029,209 +3079,395 @@ export interface AuditEvent {
     | number
     | boolean
     | null;
-  /**
-   * Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value). Maps to canonical AuditEntry.sources.
-   */
-  sources?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Correlation ID — links events that originated from the same HTTP request. Maps to canonical AuditEntry.requestId.
-   */
-  requestId?: string | null;
-  /**
-   * RFC 5424-derived severity. Maps to canonical AuditEntry.severity (AuditSeverity enum).
-   */
-  severity?: ('debug' | 'info' | 'warn' | 'error' | 'critical') | null;
-  /**
-   * SHA-256 hex of the immediately prior audit-events row for this tenant. Empty for the first row. Drives Merkle integrity check at the architecture-invariant gate.
-   */
-  previousHash?: string | null;
-  /**
-   * SHA-256 hex of canonical JSON over (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user, previousHash). Computed at write time; verified at the integrity-check gate.
-   */
-  rowHash?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-jurisdictions".
+ * via the `definition` "period-locks".
  */
-export interface TaxJurisdiction {
+export interface PeriodLock {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
-   * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
+   * E.g., "FY 2026 Period 5" or "FY 2026 Q2"
    */
-  code: string;
+  periodLabel: string;
   /**
-   * Human-readable name (e.g., "Germany VAT")
+   * Fiscal year (e.g., 2026)
    */
-  name: string;
+  fiscalYear: number;
   /**
-   * Tax authority name (e.g., "Bundeszentralamt für Steuern")
+   * Period number: 1-12 for monthly, 1-4 for quarterly
    */
-  authorityName?: string | null;
-  geography: {
-    /**
-     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
-     */
-    country: string;
-    /**
-     * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
-     */
+  fiscalPeriod: number;
+  periodType: 'monthly' | 'quarterly' | 'annual';
+  /**
+   * First day of period
+   */
+  periodStartDate: string;
+  /**
+   * Last day of period
+   */
+  periodEndDate: string;
+  /**
+   * Open = normal posting allowed. Locked = only reversals/adjustments. Archived = read-only.
+   */
+  lockStatus: 'open' | 'locked' | 'archived';
+  /**
+   * User who closed this period
+   */
+  closedBy?: (number | null) | User;
+  /**
+   * Date period was closed
+   */
+  closedDate?: string | null;
+  /**
+   * Notes on why period was closed (e.g., "Q1 close, audited and filed")
+   */
+  closeReason?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * If locked, check to allow reversal entries (standard for closed periods)
+   */
+  allowReversals?: boolean | null;
+  /**
+   * If locked, check to allow prior-period adjustments (requires approval)
+   */
+  allowPriorPeriodAdjustments?: boolean | null;
+  /**
+   * If locked, require admin approval for non-reversal/non-adjustment postings (safety flag)
+   */
+  requiresAdminOverride?: boolean | null;
+  /**
+   * Closing entries generated for this period
+   */
+  relatedClosingEntries?: (number | ClosingEntry)[] | null;
+  /**
+   * Additional notes for this period
+   */
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "closing-entries".
+ */
+export interface ClosingEntry {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Entity for which period is being closed
+   */
+  entity: number | LegalEntity;
+  /**
+   * Unique ID: e.g., "CLOSE-FY2026-P12" (fiscal year, period)
+   */
+  closingEntryNumber: string;
+  /**
+   * Period lock record for this closing
+   */
+  periodLock: number | PeriodLock;
+  /**
+   * Phase B2: Fiscal period configuration (enables all period types: monthly, quarterly, custom, etc.)
+   */
+  fiscalPeriod: number | FiscalPeriod;
+  /**
+   * Fiscal year of closing entry
+   */
+  fiscalYear: number;
+  /**
+   * Period number (1-12 monthly, 1-4 quarterly, 1-N custom)
+   */
+  fiscalPeriodNumber: number;
+  /**
+   * Period label (denormalized from FiscalCalendars, e.g., "May 2026", "Q2 2026")
+   */
+  periodLabel?: string | null;
+  /**
+   * Phase B2: SAF-T/XBRL regulatory period code (P05_2026, Q2_2026). Deterministic from fiscal config.
+   */
+  regulatoryCode?: string | null;
+  /**
+   * Date closing entries were created/posted
+   */
+  closingDate: string;
+  /**
+   * Type of closing being performed
+   */
+  closingType: 'monthly' | 'quarterly' | 'year-end' | 'interim';
+  /**
+   * User who initiated closing
+   */
+  closedBy: number | User;
+  /**
+   * Finance manager/CFO who approved closing
+   */
+  approvedBy?: (number | null) | User;
+  /**
+   * Individual closing entries that make up this close
+   */
+  closingEntries?:
+    | {
+        /**
+         * Order in which entry posted (for control)
+         */
+        sequenceNumber: number;
+        /**
+         * Link to actual GL posting
+         */
+        journalEntryId: number | JournalEntry;
+        /**
+         * E.g., "Close revenue accounts" or "Close expense accounts to retained earnings"
+         */
+        entryDescription: string;
+        /**
+         * GL account range or list (e.g., "4000-4999" for revenue)
+         */
+        accountsClosed?: string | null;
+        /**
+         * Total debits or credits (net of close)
+         */
+        netAmount: number;
+        /**
+         * Impact to retained earnings (usually equals netAmount)
+         */
+        retainedEarningsImpact?: number | null;
+        /**
+         * Check once entry posted to GL
+         */
+        posted?: boolean | null;
+        /**
+         * Date posted
+         */
+        postedDate?: string | null;
+        /**
+         * Link to auto-reversal entry (posted in next period start)
+         */
+        reversingEntryId?: (number | null) | JournalEntry;
+        /**
+         * Entry-specific notes
+         */
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Sum of all revenue accounts closed (calculated)
+   */
+  totalRevenuesClosed?: number | null;
+  /**
+   * Sum of all expense accounts closed (calculated)
+   */
+  totalExpensesClosed?: number | null;
+  /**
+   * Net income for period (revenues - expenses)
+   */
+  netIncome?: number | null;
+  /**
+   * Closing workflow status
+   */
+  closingStatus: 'in-progress' | 'pending-approval' | 'approved' | 'posted' | 'finalized';
+  /**
+   * Check once reversal entries created for next period start
+   */
+  reversalEntriesGenerated?: boolean | null;
+  /**
+   * Date when reversing entries were auto-created
+   */
+  reversalGeneratedDate?: string | null;
+  /**
+   * Phase B2: Law 63 self-governance metadata. Stores entity closing authority, approval thresholds, audit level. Auto-populated from entity profile.
+   */
+  governanceScope?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Phase B2: Law 60 audit chain leaf. Computed as sha256(JCS-canonical(ClosingEntries) || prior_leaf_uuid). Enables tamper detection.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * Phase B3: Multi-currency reconciliation results (balance per currency, unrealized FX gains/losses, exchange rates). Auto-populated by validateMultiCurrencyClosing hook.
+   */
+  multiCurrencyReconciliation?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Immutable audit trail of closing activities (who did what, when). Append-only.
+   */
+  auditTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * General notes on this period close
+   */
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Per IFRS-10 §B86 reporting entity (subsidiary / associate / joint-venture / head). Distinct from `tenants` (DB partition). Drives consolidation-eliminations + intercompany pairing.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "legal-entities".
+ */
+export interface LegalEntity {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
+   */
+  legalName: string;
+  /**
+   * Trading / brand name when different from the legal name.
+   */
+  tradeName?: string | null;
+  /**
+   * Statutory legal form per the home jurisdiction commerce code.
+   */
+  legalForm?:
+    | (
+        | 'sole_proprietor'
+        | 'llc'
+        | 'jsc'
+        | 'partnership'
+        | 'limited_partnership'
+        | 'cooperative'
+        | 'branch'
+        | 'rep_office'
+        | 'non_profit'
+        | 'other'
+      )
+    | null;
+  /**
+   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
+   */
+  countryCode: string;
+  /**
+   * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
+   */
+  registrationNumber: string;
+  /**
+   * EU VAT identifier (BG123456789 / DE123456789 / etc.) — VIES-validatable.
+   */
+  vatNumber?: string | null;
+  /**
+   * ISO 17442-1:2020 Legal Entity Identifier (20-char) — required for derivatives + securities reporting.
+   */
+  lei?: string | null;
+  /**
+   * IFRS-10 §B86 / IAS-28 §16 / IFRS-11 §20 consolidation method for this entity in the group accounts.
+   */
+  consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
+  consolidationStatus?:
+    | ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment')
+    | null;
+  /**
+   * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
+   */
+  isHeadEntity?: boolean | null;
+  /**
+   * Direct parent in the group structure (null for the head entity).
+   */
+  parent?: (number | null) | LegalEntity;
+  /**
+   * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
+   */
+  ownershipPercent?: number | null;
+  /**
+   * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
+   */
+  votingPercent?: number | null;
+  functionalCurrency?:
+    | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
+    | null;
+  presentationCurrency?:
+    | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
+    | null;
+  /**
+   * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
+   */
+  reportingFramework?: ('ifrs' | 'ifrs_sme' | 'us_gaap' | 'local_gaap') | null;
+  /**
+   * IFRS 1 first-time-adoption transition date.
+   */
+  ifrsAdoptionDate?: string | null;
+  /**
+   * MM-DD format (e.g. `12-31`, `06-30`). Drives the entity's fiscal-period calendar.
+   */
+  statutoryYearEnd?: string | null;
+  /**
+   * Statutory registered office (IAS-1 §138(a)).
+   */
+  registeredAddress?: {
+    street?: string | null;
+    city?: string | null;
+    postalCode?: string | null;
     region?: string | null;
-    /**
-     * Administrative level
-     */
-    level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
-  };
-  registration?: {
-    /**
-     * Tenant registration / VAT / sales-tax permit number
-     */
-    registrationNumber?: string | null;
-    /**
-     * Date of registration with the authority
-     */
-    registrationDate?: string | null;
-    /**
-     * Date of deregistration (if any)
-     */
-    deregistrationDate?: string | null;
-  };
-  filing: {
-    /**
-     * How often returns are filed
-     */
-    filingFrequency?: ('monthly' | 'bimonthly' | 'quarterly' | 'semiannual' | 'annual' | 'on_demand') | null;
-    /**
-     * Day of month return is due (e.g. 20)
-     */
-    filingDueDayOfMonth?: number | null;
-    currency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
-  };
-  notes?: {
-    /**
-     * Internal notes
-     */
-    note?: string | null;
+    countryCode?: string | null;
   };
   /**
-   * Additional metadata
+   * US Standard Industrial Classification code (US SIC).
    */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  tenant: number | Tenant;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-codes".
- */
-export interface TaxCode {
-  id: number;
+  sicCode?: string | null;
   /**
-   * Tax code (e.g., EU-DE-VAT-19, US-CA-SALES-7.25)
+   * NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.
    */
-  code: string;
+  naceCode?: string | null;
   /**
-   * Human-readable label (e.g., "DE VAT 19% standard rate")
+   * Date entity was incorporated / acquired into the group.
    */
-  label: string;
-  identity?: {
-    /**
-     * Description shown on documents
-     */
-    description?: string | null;
-  };
-  classification: {
-    /**
-     * Tax regime
-     */
-    taxType: 'vat' | 'gst' | 'sales' | 'use' | 'withholding' | 'income' | 'excise' | 'customs';
-    /**
-     * EN-16931 BT-151 / UN/CEFACT 5305 tax category code
-     */
-    categoryCode?: ('S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M') | null;
-    /**
-     * Issuing jurisdiction
-     */
-    jurisdiction: number | TaxJurisdiction;
-  };
-  rate: {
-    /**
-     * Tax rate as percentage (e.g., 19 for 19%)
-     */
-    ratePercent: number;
-    /**
-     * Other tax codes this rate is applied on top of (compound tax)
-     */
-    compoundedOn?: (number | TaxCode)[] | null;
-    /**
-     * EN 16931: tax shifts to buyer (e.g., EU intra-community B2B services)
-     */
-    reverseChargeEligible?: boolean | null;
-    /**
-     * Input tax is recoverable (deductible) for the buyer
-     */
-    recoverable?: boolean | null;
-  };
-  validity: {
-    /**
-     * ISO 8601 first day this rate applies
-     */
-    effectiveFrom: string;
-    /**
-     * ISO 8601 last day this rate applies (open-ended if blank)
-     */
-    effectiveTo?: string | null;
-    /**
-     * Enabled for selection on new documents
-     */
-    isActive?: boolean | null;
-  };
-  ledger?: {
-    /**
-     * Output-tax payable / collected account (sales side)
-     */
-    defaultCollectionAccount?: (number | null) | GlAccount;
-    /**
-     * Input-tax recoverable / remittance account (purchase side)
-     */
-    defaultRemittanceAccount?: (number | null) | GlAccount;
-    /**
-     * Non-recoverable tax expense account (when recoverable = false)
-     */
-    defaultExpenseAccount?: (number | null) | GlAccount;
-  };
+  effectiveFrom: string;
   /**
-   * Additional metadata
+   * Date entity was deconsolidated / sold / dissolved (null = active).
    */
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  tenant: number | Tenant;
+  effectiveTo?: string | null;
+  status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3241,6 +3477,7 @@ export interface TaxCode {
  */
 export interface FiscalPeriod {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
    * Auto-derived label (e.g., FY2026-P05). Editable.
    */
@@ -3317,128 +3554,213 @@ export interface FiscalPeriod {
     | number
     | boolean
     | null;
-  tenant: number | Tenant;
   updatedAt: string;
   createdAt: string;
 }
 /**
- * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "standards".
+ * via the `definition` "bank-statements".
  */
-export interface Standard {
+export interface BankStatement {
   id: number;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  tenant: number | Tenant;
-  /**
-   * Canonical standard id — e.g. "IFRS-15", "ISO-19011:2018", "RFC-8259", "EU-Directive-2014/95/EU". Stable across versions; supersession captures version transitions.
-   */
-  standardId: string;
-  /**
-   * Full standard title in its publishing language (or en).
-   */
-  title: string;
-  family:
-    | 'ifrs'
-    | 'us_gaap'
-    | 'iso'
-    | 'iec'
-    | 'w3c'
-    | 'rfc'
-    | 'eu'
-    | 'oecd'
-    | 'nist'
-    | 'etsi'
-    | 'wcag'
-    | 'sox'
-    | 'gdpr'
-    | 'un'
-    | 'upu'
-    | 'en'
-    | 'national'
-    | 'other';
-  /**
-   * Issuing body — "IASB" / "ISO/TC 46" / "W3C TAG" / "ETSI ESI". Free-text; the family already implies the publisher in most cases.
-   */
-  publisher?: string | null;
-  /**
-   * Specific edition / year — "2017", "1.1", "rev:2023-09".
-   */
-  version?: string | null;
-  /**
-   * Canonical URL to the public spec (or a stable mirror).
-   */
-  url?: string | null;
-  /**
-   * Date the standard is mandatory or generally applicable.
-   */
-  effectiveFrom?: string | null;
-  /**
-   * Set when the standard is withdrawn or formally superseded.
-   */
-  effectiveUntil?: string | null;
-  /**
-   * The newer standard that replaces this one. Forms the supersession DAG traversed by erpax.standards.traceSupersession.
-   */
-  supersededBy?: (number | null) | Standard;
-  /**
-   * Older standards this one replaces (inverse of supersededBy for queryability).
-   */
-  supersedes?: (number | Standard)[] | null;
-  /**
-   * One-paragraph rationale captured when supersededBy is set.
-   */
-  supersessionRationale?: string | null;
-  /**
-   * Other standards this one materially conflicts with (Law 27). Each conflict carries a one-line rationale + the conservation-law id the conflict triggers.
-   */
-  conflicts?:
+  tenant?: (number | null) | Tenant;
+  statementId: string;
+  bankAccount: number | GlAccount;
+  statementDate: string;
+  statementPeriodStart: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  openingBalance: number;
+  closingBalance: number;
+  transactions: {
+    transactionDate: string;
+    amount: number;
+    description: string;
+    reference?: string | null;
+    balanceAfter?: number | null;
+    id?: string | null;
+  }[];
+  reconciliationStatus?:
+    | ('unreconciled' | 'matched_exact' | 'matched_fuzzy' | 'in_progress' | 'reconciled' | 'discrepancy')
+    | null;
+  matchedTransactions?:
     | {
-        otherStandard: number | Standard;
-        rationale: string;
-        /**
-         * Optional Conservation Law id that this conflict trips (e.g. "Law-27").
-         */
-        lawId?: string | null;
-        severity?: ('info' | 'caution' | 'block') | null;
+        bankStatementLineIndex: number;
+        journalEntry: number | JournalEntry;
+        matchType: 'exact' | 'fuzzy' | 'manual';
+        matchScore?: number | null;
+        varianceAmount?: number | null;
         id?: string | null;
       }[]
     | null;
+  totalMatched?: number | null;
+  totalUnmatched?: number | null;
+  variance?: number | null;
+  reconciliationNotes?: string | null;
+  reconciliationDate?: string | null;
+  reconciliedBy?: (number | null) | User;
+  importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-transactions".
+ */
+export interface BankTransaction {
+  id: number;
+  tenant?: (number | null) | Tenant;
   /**
-   * Cross-reference index: every src/* file that contains a JSDoc @standard tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).
+   * Stable unique id for this line. For ISO 20022, prefer accountServicerReference; fallback to endToEndId.
    */
-  citingModules?:
+  externalId: string;
+  /**
+   * Bank-assigned unique reference (camt.053 AcctSvcrRef). Maps to canonical Camt053Transaction.accountServicerReference.
+   */
+  accountServicerReference?: string | null;
+  /**
+   * End-to-end id propagated from the originating instruction (camt.053 EndToEndId / pain.001 EndToEndId). Joins this line to the originating PaymentRuns transaction.
+   */
+  endToEndId?: string | null;
+  bankAccount: number | BankAccount;
+  /**
+   * Parent camt.053 statement, if imported as part of a batch.
+   */
+  statement?: (number | null) | BankStatement;
+  /**
+   * When the funds become available. Maps to canonical Camt053Transaction.valueDate.
+   */
+  valueDate: string;
+  /**
+   * When the entry hit the ledger. Maps to canonical Camt053Transaction.bookingDate.
+   */
+  bookingDate?: string | null;
+  /**
+   * Signed amount in cents (positive = credit, negative = debit). Maps to ABS(canonical.amount) — canonical separates value from creditDebitIndicator.
+   */
+  amount: number;
+  /**
+   * ISO 20022 CreditDebitCode. Maps to canonical Camt053Transaction.creditDebitIndicator. Derived from sign(amount) when not explicitly set.
+   */
+  creditDebitIndicator?: ('CRDT' | 'DBIT') | null;
+  /**
+   * ISO 20022 EntryStatus2Code. Most reconcilable items are BOOK. Maps to canonical Camt053Transaction.status.
+   */
+  bookingStatus?: ('BOOK' | 'PDNG' | 'INFO' | 'FUTR') | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Free-text narrative. Maps to canonical RemittanceInformation.unstructured.
+   */
+  description?: string | null;
+  /**
+   * Remitter / beneficiary. Maps to canonical PartyIdentification.name.
+   */
+  counterpartyName?: string | null;
+  /**
+   * ISO 13616 IBAN. Maps to canonical AccountIdentification.iban.
+   */
+  counterpartyIban?: string | null;
+  /**
+   * ISO 9362 BIC. Maps to canonical PartyIdentification.bic.
+   */
+  counterpartyBic?: string | null;
+  /**
+   * Structured creditor reference (ISO 11649 RF) or invoice number. Maps to canonical RemittanceInformation.structured.creditorReference.reference.
+   */
+  reference?: string | null;
+  /**
+   * ExternalBankTransactionDomain1Code — top-level (e.g. PMNT, CAMT, ACMT). Part of the canonical 3-tuple.
+   */
+  bankTransactionDomain?: string | null;
+  /**
+   * ExternalBankTransactionFamily1Code — family within domain (e.g. RCDT, ICDT under PMNT).
+   */
+  bankTransactionFamily?: string | null;
+  /**
+   * ExternalBankTransactionSubFamily1Code — subfamily (e.g. SALA salary, BOOK book transfer).
+   */
+  bankTransactionSubFamily?: string | null;
+  /**
+   * DEPRECATED — slash-joined legacy form. New writes populate bankTransactionDomain / family / subFamily.
+   */
+  transactionCode?: string | null;
+  /**
+   * ISO 20022 ChargeBearerType1Code. Maps to canonical Camt053Transaction.chargeBearer.
+   */
+  chargeBearer?: ('DEBT' | 'CRED' | 'SHAR' | 'SLEV') | null;
+  matchStatus?: ('unmatched' | 'auto_matched' | 'manual_matched' | 'excluded' | 'disputed') | null;
+  matchedJournalEntries?:
     | {
+        journalEntry: number | JournalEntry;
         /**
-         * Repo-relative path. Stable across renames via Slice CCCCC JSDoc-as-spec extraction.
+         * Portion in cents matched to this JE (supports split matches).
          */
-        modulePath: string;
-        banner?: ('standard' | 'accounting' | 'compliance' | 'audit' | 'security' | 'rfc') | null;
+        matchedAmount: number;
         /**
-         * Optional section pin — "§4.2", "Art.13(1)", "BG-7".
+         * 0-1 confidence for fuzzy matches.
          */
-        section?: string | null;
+        matchScore?: number | null;
         id?: string | null;
       }[]
     | null;
-  adoptionStatus?: ('required' | 'recommended' | 'optional' | 'exempted') | null;
+  matchedAt?: string | null;
+  matchedBy?: (number | null) | User;
+  status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-accounts".
+ */
+export interface BankAccount {
+  id: number;
+  tenant?: (number | null) | Tenant;
   /**
-   * Required when adoptionStatus = exempted. Captures the maintainer + reason for audit.
+   * Friendly label, e.g. "Operating Account — Bulbank EUR".
    */
-  exemptionRationale?: string | null;
+  accountName: string;
   /**
-   * Content-uuid of the standards-as-vortices live object (Law 27). Lets federation peers verify they have the same canonical record.
+   * ISO 13616 IBAN. Encrypted at rest (NIST AES-GCM).
    */
-  liveContentUuid?: string | null;
+  iban?: string | null;
   /**
-   * Optional decentralised-identifier URI for the publisher entity (Slice DDDDDD).
+   * ISO 9362 BIC / SWIFT code.
    */
-  didUri?: string | null;
-  status?: ('draft' | 'published' | 'superseded' | 'withdrawn' | 'proposed') | null;
+  bic?: string | null;
+  /**
+   * Local account number (US/UK/etc. where IBAN is not standard).
+   */
+  accountNumber?: string | null;
+  /**
+   * ABA / sort-code / BSB — local routing identifier.
+   */
+  routingNumber?: string | null;
+  /**
+   * Bank name.
+   */
+  institution?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 of the bank, auto-derived from the IBAN if blank. Drives country-context API routing (open-banking, tax authority, sanctions screening).
+   */
+  country?: string | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * GL cash account this bank account posts to.
+   */
+  glAccount?: (number | null) | GlAccount;
+  purpose?: ('operating' | 'payroll' | 'tax' | 'reserve' | 'fx') | null;
+  status?: ('active' | 'inactive' | 'closed') | null;
+  openedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Bank statements imported for this account.
+   */
+  statements?: {
+    docs?: (number | BankStatement)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -3447,49 +3769,193 @@ export interface Standard {
   createdAt: string;
 }
 /**
- * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "account-reconciliations".
+ */
+export interface AccountReconciliation {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Human-readable id, e.g. REC-2026-04-OPS-1
+   */
+  reconciliationId: string;
+  /**
+   * Reconciliation type — drives which adjustments are valid. Bank uses the IAS-7 layout; GL→subledger compares control-account balance to subledger detail; intercompany compares paired entity balances.
+   */
+  kind: 'bank' | 'gl_to_subledger' | 'intercompany';
+  /**
+   * The control account being reconciled.
+   */
+  glAccount: number | GlAccount;
+  /**
+   * For kind = bank, the IBAN/BIC master being reconciled. Null for GL-to-subledger and intercompany.
+   */
+  bankAccount?: (number | null) | BankAccount;
+  /**
+   * Reconciliation point in time (period-end).
+   */
+  asOfDate: string;
+  periodStart?: string | null;
+  periodEnd?: string | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Bank statement closing balance / subledger total / counterparty balance. The "external" side.
+   */
+  balancePerExternal: number;
+  /**
+   * GL control-account balance as of asOfDate.
+   */
+  balancePerGL: number;
+  /**
+   * Bank-side / counterparty-side reconciling items: deposits in transit, outstanding checks, bank errors. Each item carries an aging bucket for the SOX evidence pack.
+   */
+  externalAdjustments?:
+    | {
+        category:
+          | 'deposit_in_transit'
+          | 'outstanding_check'
+          | 'bank_error'
+          | 'subledger_timing'
+          | 'intercompany_timing'
+          | 'other';
+        description: string;
+        amount: number;
+        originatedAt: string;
+        agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
+        bankTransaction?: (number | null) | BankTransaction;
+        journalEntry?: (number | null) | JournalEntry;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * GL-side reconciling items needing adjusting JEs: unrecorded interest, unrecorded bank fees, classification errors, missing entries.
+   */
+  glAdjustments?:
+    | {
+        category:
+          | 'unrecorded_interest'
+          | 'unrecorded_fee'
+          | 'classification_error'
+          | 'missing_entry'
+          | 'gl_error'
+          | 'other';
+        description: string;
+        amount: number;
+        originatedAt: string;
+        agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
+        journalEntry?: (number | null) | JournalEntry;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * balancePerExternal + Σ external adjustments (signed).
+   */
+  adjustedExternalBalance?: number | null;
+  /**
+   * balancePerGL + Σ GL adjustments (signed).
+   */
+  adjustedGLBalance?: number | null;
+  /**
+   * adjustedExternalBalance − adjustedGLBalance. Must be 0 (within rounding tolerance) to approve.
+   */
+  difference?: number | null;
+  preparedBy?: (number | null) | User;
+  preparedAt?: string | null;
+  reviewedBy?: (number | null) | User;
+  reviewedAt?: string | null;
+  rejectionReason?: string | null;
+  status?: ('draft' | 'pending_review' | 'approved' | 'rejected' | 'reopened') | null;
+  /**
+   * Originating bank statement for kind = bank. Null otherwise.
+   */
+  sourceStatement?: (number | null) | BankStatement;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Period-end bank-balance proof — SOX §404 TOM-CSH-01 evidence. Pairs the GL cash balance against the bank-statement closing balance and quantifies the variance.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "memories".
+ * via the `definition` "bank-reconciliations".
  */
-export interface Memory {
+export interface BankReconciliation {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Sequential reconciliation reference (e.g. `REC-2026-04-EUR-MAIN`).
    */
-  uuid: string;
-  tenant: number | Tenant;
+  reference: string;
+  bankAccount: number | BankAccount;
   /**
-   * Stable tenant-unique memory id (e.g. MEM-2026-05-001). Cross-cycle navigation key.
+   * ISO 8601 — the as-of date the reconciliation proves.
    */
-  memoryRef: string;
+  reconciliationDate: string;
   /**
-   * One-line human-readable label.
+   * Statement period the reconciliation covers — start.
    */
-  title: string;
-  ownerType: 'agent' | 'tool' | 'tenant' | 'platform' | 'cycle';
+  periodStart?: string | null;
   /**
-   * Stable id of the owner — agent.id, tool name, tenant id, cycleUuid, etc.
+   * Statement period the reconciliation covers — end.
    */
-  ownerId: string;
-  kind:
-    | 'fix_proposal'
-    | 'strategy_decision'
-    | 'drift_snapshot'
-    | 'emerging_gap'
-    | 'agent_observation'
-    | 'tool_cache'
-    | 'feedback'
-    | 'fact'
-    | 'reference';
+  periodEnd?: string | null;
   /**
-   * Sluggable key within (ownerType, ownerId, kind). Reusing the same key with a new payload triggers supersession.
+   * The camt.053 statement this reconciliation proves out against.
    */
-  key: string;
+  bankStatement?: (number | null) | BankStatement;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * Structured memory data — exact shape depends on kind. JSON-LD-friendly when the kind defines a @context.
+   * Closing balance per bank statement (camt.053 CLBD), in cents.
    */
-  payload?:
+  bankStatementBalance: number;
+  /**
+   * GL cash account balance as of `reconciliationDate`, in cents.
+   */
+  bookBalance: number;
+  /**
+   * bookBalance − bankStatementBalance — must be explained by reconcilingItems.
+   */
+  difference?: number | null;
+  /**
+   * Outstanding deposits, in-transit cheques, bank fees not yet booked, etc.
+   */
+  reconcilingItems?:
+    | {
+        kind: 'outstanding_deposit' | 'outstanding_cheque' | 'bank_fee' | 'interest_earned' | 'nsf_return' | 'other';
+        /**
+         * Signed amount in cents.
+         */
+        amount: number;
+        description: string;
+        reference?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  status?: ('draft' | 'reconciled' | 'reconciled_with_variance' | 'discrepancy') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "financial-statements".
+ */
+export interface FinancialStatement {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  statementId: string;
+  statementType: 'trial_balance' | 'balance_sheet' | 'income_statement' | 'cash_flow_statement' | 'equity_statement';
+  language?: ('en' | 'es' | 'fr' | 'de' | 'it' | 'pt' | 'ru' | 'ja' | 'zh' | 'ar') | null;
+  fiscalPeriodStart: string;
+  fiscalPeriodEnd: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  statementContent:
     | {
         [k: string]: unknown;
       }
@@ -3498,134 +3964,145 @@ export interface Memory {
     | number
     | boolean
     | null;
-  /**
-   * Why this memory exists — for human review + supersession diff context.
-   */
-  rationale?: string | null;
-  /**
-   * ISO 8601-1:2019 timestamp the memory was first written.
-   */
-  recordedAt: string;
-  /**
-   * Optional TTL — when set, scheduled job transitions status → expired.
-   */
-  expiresAt?: string | null;
-  /**
-   * Sha-256 of the canonical (ownerType|ownerId|kind|key|payload) — federation peers verify match.
-   */
-  contentUuid?: string | null;
-  /**
-   * Edges to other rows this memory references. Forms the navigable memory graph.
-   */
-  relatedTo?:
+  financialRatios?:
     | {
-        /**
-         * Target collection slug — "audit-events", "memories", "standards", etc.
-         */
-        collection: string;
-        /**
-         * Target document id.
-         */
-        docId: string;
-        edgeKind?: ('about' | 'caused_by' | 'supersedes' | 'refers') | null;
+        ratioName: string;
+        ratioValue: number;
+        category: 'liquidity' | 'profitability' | 'leverage' | 'efficiency';
+        interpretation?: string | null;
         id?: string | null;
       }[]
     | null;
-  /**
-   * The harmonic-cycle uuid (Slice PPPPPPPP) this memory was produced in. Lets observers join all memories from the same sweep.
-   */
-  cycleUuid?: string | null;
-  /**
-   * Event id that caused this memory (when applicable) — e.g. "consistency:scan:complete".
-   */
-  emittedFromEvent?: string | null;
-  status?: ('active' | 'archived' | 'superseded' | 'expired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
+  comparativePeriod?: string | null;
+  comparativeData?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
   notes?: string | null;
+  status?: ('draft' | 'final' | 'audited' | 'published') | null;
+  exportFormats?:
+    | {
+        format: 'pdf' | 'excel' | 'csv' | 'json' | 'html';
+        fileUrl?: string | null;
+        generatedAt?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  generatedAt: string;
+  generatedBy?: (number | null) | User;
   updatedAt: string;
   createdAt: string;
 }
 /**
- * Localized + tenant-extensible metadata overlay for every registered erpax.* MCP tool. Translators fill description.<locale> via the admin UI; the catalog overlays the row's values at request time.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mcp-tool-metadata".
+ * via the `definition` "period-end-adjustments".
  */
-export interface McpToolMetadatum {
+export interface PeriodEndAdjustment {
   id: number;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  tenant: number | Tenant;
-  /**
-   * Canonical MCP tool id — e.g. "erpax.consistency.scan". Must match a registered tool in the catalog; orphan rows are flagged by the checkMcpToolMetadataOrphans invariant.
-   */
-  toolName: string;
-  /**
-   * Tool family — derived from the second segment of the toolName. Used for grouping in the admin UI.
-   */
-  area:
-    | 'accounting'
-    | 'agents'
-    | 'anchoring'
-    | 'archival'
-    | 'audit'
-    | 'blocks'
-    | 'chain'
-    | 'cloudflare'
-    | 'commerce'
-    | 'consistency'
-    | 'did'
-    | 'events'
-    | 'i18n'
-    | 'integrity'
-    | 'marketing'
-    | 'meta'
-    | 'multimedia'
-    | 'platform'
-    | 'pwa'
-    | 'refs'
-    | 'seo'
-    | 'spec'
-    | 'standards'
-    | 'storage'
-    | 'streams'
-    | 'voting'
-    | 'website'
+  tenant?: (number | null) | Tenant;
+  adjustmentId: string;
+  adjustmentType:
+    | 'depreciation'
+    | 'interest_accrual'
+    | 'salary_accrual'
+    | 'inventory_variance'
+    | 'allowance_doubtful'
+    | 'accrued_expenses'
+    | 'deferred_income'
     | 'other';
-  /**
-   * Tool description; localizable. The MCP catalog overlays this on the code default at request time.
-   */
+  period: string;
   description: string;
-  /**
-   * Optional friendly name for admin UI panels (e.g. "Run consistency check" vs. "erpax.consistency.scan").
-   */
-  displayName?: string | null;
-  /**
-   * Free-form tags for grouping / filtering — "observability", "tamper-evident", "experimental", etc.
-   */
-  tags?:
-    | {
-        tag: string;
-        id?: string | null;
-      }[]
+  adjustmentAmount: number;
+  debitAccount: number | GlAccount;
+  creditAccount: number | GlAccount;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('draft' | 'calculated' | 'approved' | 'posted' | 'reversed') | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-1 §27 recurring accrual template. The scheduled job materialises one journal-entry per (template × period) per schedule.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recurring-journals".
+ */
+export interface RecurringJournal {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  description?: string | null;
+  recurrenceKind?:
+    | (
+        | 'rent_expense'
+        | 'depreciation'
+        | 'amortisation'
+        | 'prepaid_release'
+        | 'deferred_revenue_release'
+        | 'insurance'
+        | 'loan_interest'
+        | 'subscription_revenue'
+        | 'salary_allocation'
+        | 'custom'
+      )
     | null;
+  frequency: 'daily' | 'weekly' | 'biweekly' | 'monthly' | 'quarterly' | 'semiannual' | 'annual' | 'rrule';
   /**
-   * Optional URL to a per-locale documentation page that expands on the description.
+   * When frequency=rrule: RFC 5545 RRULE string (e.g. FREQ=MONTHLY;BYMONTHDAY=-1 for last-of-month).
    */
-  documentationUrl?: string | null;
+  rrule?: string | null;
+  startDate: string;
   /**
-   * When false, the catalog falls back to the code default; the tool itself is NOT disabled (that's the feature-registry job — see access/feature-registry.ts).
+   * Optional end of recurrence (null = open-ended).
    */
-  enabled?: boolean | null;
+  endDate?: string | null;
   /**
-   * Timestamp the row was last reconciled against the live tool catalog (by erpax.i18n.audit). Stale rows surface in the orphan-check.
+   * Date the scheduler should next materialise. Auto-advanced after each successful run.
    */
-  lastSyncedFromCatalogAt?: string | null;
-  status?: ('enabled' | 'disabled' | 'pending_review') | null;
+  nextRunDate: string;
+  /**
+   * Date of the most recent materialisation.
+   */
+  lastRunDate?: string | null;
+  /**
+   * Last materialised JE (for audit + reverse).
+   */
+  lastRunJournalEntry?: (number | null) | JournalEntry;
+  /**
+   * Optional cap on total runs (e.g. 12 for a 12-month amortisation schedule).
+   */
+  remainingRuns?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * JE total in cents. For variable amounts, leave 0 and use `amountFormula`.
+   */
+  amount: number;
+  /**
+   * Optional expression for variable amounts (e.g. `prepaid_balance / remaining_periods`).
+   */
+  amountFormula?: string | null;
+  lines: {
+    glAccount: number | GlAccount;
+    side: 'debit' | 'credit';
+    /**
+     * Per-line cents. Σ debits must equal Σ credits.
+     */
+    amount: number;
+    costCenter?: (number | null) | CostCenter;
+    project?: (number | null) | Project;
+    memo?: string | null;
+    id?: string | null;
+  }[];
+  /**
+   * When true, the scheduler posts the JE directly. When false, it stages a draft for human approval (SOX §404 four-eyes).
+   */
+  autoPost?: boolean | null;
+  status?: ('active' | 'paused' | 'completed' | 'cancelled') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -3634,84 +4111,159 @@ export interface McpToolMetadatum {
   createdAt: string;
 }
 /**
- * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
+ * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "translations".
+ * via the `definition` "cost-centers".
  */
-export interface Translation {
+export interface CostCenter {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
    */
-  uuid: string;
-  tenant: number | Tenant;
+  costCenterCode: string;
+  name: string;
   /**
-   * Composite key: `<scope>:<key>` — e.g. `mcp-tool:erpax.consistency.scan.description`, `ui-surface:dashboard.welcome.heading`, `event-label:invoice.activated`.
+   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
    */
-  translationKey: string;
+  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
   /**
-   * Namespace of the override. Determines which platform layer this row supersedes.
+   * Parent in the hierarchy. Null = root.
    */
-  scope:
-    | 'mcp-tool'
-    | 'ui-surface'
-    | 'event-label'
-    | 'notification-template'
-    | 'standard-citation'
-    | 'chain-step'
-    | 'other';
+  parent?: (number | null) | CostCenter;
   /**
-   * Scope-local key. For MCP tools, the tool name (e.g. `erpax.consistency.scan`). For UI, the surface key (e.g. `dashboard.welcome.heading`).
+   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
    */
-  key: string;
+  country?: string | null;
   /**
-   * The localized value. Switch the admin UI locale to add per-language variants.
+   * Cost-center owner / department head.
    */
-  value: string;
+  manager?: (number | null) | User;
   /**
-   * Optional translator note explaining the override (regulatory rationale, branding choice, glossary alignment, etc.).
+   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
    */
-  note?: string | null;
+  reportableSegment?: boolean | null;
   /**
-   * Which platform-layer row this overrides. Optional — populated by the resolver when an override is created from the admin UI.
+   * JE lines may post revenue accounts to this CC.
    */
-  overrides?: {
-    /**
-     * e.g. "mcp-tool-metadata" or "_static" when overriding a code default.
-     */
-    collection?: string | null;
-    /**
-     * Document id of the platform-default row, when applicable.
-     */
-    docId?: string | null;
-    /**
-     * Snapshot of the platform-default value at the time the override was created — for diff review.
-     */
-    platformDefault?: string | null;
-  };
-  effectiveFrom?: string | null;
-  effectiveUntil?: string | null;
+  allowsRevenue?: boolean | null;
   /**
-   * Sha-256 of (tenant, scope, key, locale-map). Federation peers verify match when sharing overrides across tenants of the same role-profile.
+   * JE lines may post expense accounts to this CC.
    */
-  contentUuid?: string | null;
+  allowsExpense?: boolean | null;
   /**
-   * Edges to other rows this translation describes — the standard / tool / chain / event the override is about.
+   * JE lines may post capex (FixedAssets) to this CC.
    */
-  relatedTo?:
+  allowsCapex?: boolean | null;
+  /**
+   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
+   */
+  allocationRules?:
     | {
-        collection: string;
-        docId: string;
-        edgeKind?: ('translates' | 'about' | 'refers') | null;
+        targetCostCenter: number | CostCenter;
+        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
+        percentage?: number | null;
         id?: string | null;
       }[]
     | null;
+  effectiveFrom: string;
   /**
-   * Optional role-profile id (e.g. "government", "bank") this override is intended to be shared across. Federation peers with the same role profile can adopt it.
+   * Null = open-ended; populate on retirement.
    */
-  sharedAcrossRoleProfile?: string | null;
-  status?: ('enabled' | 'disabled' | 'pending_approval' | 'archived') | null;
+  effectiveTo?: string | null;
+  status?: ('active' | 'inactive' | 'retired') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects".
+ */
+export interface Project {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Tenant-unique project code (e.g. PRJ-2026-001).
+   */
+  projectCode: string;
+  /**
+   * Customer-facing project name.
+   */
+  name: string;
+  description?: string | null;
+  customer: number | Customer;
+  /**
+   * Master contract this project executes against (one contract may have many projects).
+   */
+  contract?: (number | null) | Contract;
+  /**
+   * Reporting legal entity that books this project's revenue + costs.
+   */
+  legalEntity?: (number | null) | LegalEntity;
+  /**
+   * Internal project owner (responsible for delivery + status).
+   */
+  projectManager?: (number | null) | User;
+  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
+  /**
+   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
+   */
+  recognitionMethod?:
+    | (
+        | 'point_in_time'
+        | 'cost_to_cost'
+        | 'output_units'
+        | 'output_time'
+        | 'output_survey'
+        | 'milestone'
+        | 'right_to_invoice'
+      )
+    | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
+   */
+  contractedAmount?: number | null;
+  /**
+   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
+   */
+  budgetedCost?: number | null;
+  /**
+   * Estimated total labour hours (used by output-time method).
+   */
+  budgetedHours?: number | null;
+  /**
+   * contractedAmount − budgetedCost (auto-derived).
+   */
+  budgetedMargin?: number | null;
+  /**
+   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
+   */
+  actualCostToDate?: number | null;
+  /**
+   * Cumulative recognised revenue (auto-summed from period postings).
+   */
+  recognisedRevenueToDate?: number | null;
+  /**
+   * Snapshot of latest period progress measurement.
+   */
+  percentComplete?: number | null;
+  plannedStartDate?: string | null;
+  plannedEndDate?: string | null;
+  actualStartDate?: string | null;
+  actualEndDate?: string | null;
+  /**
+   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
+   */
+  isOnerous?: boolean | null;
+  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -3725,6 +4277,7 @@ export interface Translation {
  */
 export interface Customer {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
    * Unique customer code (e.g., CUST-0001)
    */
@@ -3865,7 +4418,811 @@ export interface Customer {
     | number
     | boolean
     | null;
-  tenant: number | Tenant;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-codes".
+ */
+export interface TaxCode {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Tax code (e.g., EU-DE-VAT-19, US-CA-SALES-7.25)
+   */
+  code: string;
+  /**
+   * Human-readable label (e.g., "DE VAT 19% standard rate")
+   */
+  label: string;
+  identity?: {
+    /**
+     * Description shown on documents
+     */
+    description?: string | null;
+  };
+  classification: {
+    /**
+     * Tax regime
+     */
+    taxType: 'vat' | 'gst' | 'sales' | 'use' | 'withholding' | 'income' | 'excise' | 'customs';
+    /**
+     * EN-16931 BT-151 / UN/CEFACT 5305 tax category code
+     */
+    categoryCode?: ('S' | 'Z' | 'E' | 'AE' | 'K' | 'G' | 'O' | 'L' | 'M') | null;
+    /**
+     * Issuing jurisdiction
+     */
+    jurisdiction: number | TaxJurisdiction;
+  };
+  rate: {
+    /**
+     * Tax rate as percentage (e.g., 19 for 19%)
+     */
+    ratePercent: number;
+    /**
+     * Other tax codes this rate is applied on top of (compound tax)
+     */
+    compoundedOn?: (number | TaxCode)[] | null;
+    /**
+     * EN 16931: tax shifts to buyer (e.g., EU intra-community B2B services)
+     */
+    reverseChargeEligible?: boolean | null;
+    /**
+     * Input tax is recoverable (deductible) for the buyer
+     */
+    recoverable?: boolean | null;
+  };
+  validity: {
+    /**
+     * ISO 8601 first day this rate applies
+     */
+    effectiveFrom: string;
+    /**
+     * ISO 8601 last day this rate applies (open-ended if blank)
+     */
+    effectiveTo?: string | null;
+    /**
+     * Enabled for selection on new documents
+     */
+    isActive?: boolean | null;
+  };
+  ledger?: {
+    /**
+     * Output-tax payable / collected account (sales side)
+     */
+    defaultCollectionAccount?: (number | null) | GlAccount;
+    /**
+     * Input-tax recoverable / remittance account (purchase side)
+     */
+    defaultRemittanceAccount?: (number | null) | GlAccount;
+    /**
+     * Non-recoverable tax expense account (when recoverable = false)
+     */
+    defaultExpenseAccount?: (number | null) | GlAccount;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-jurisdictions".
+ */
+export interface TaxJurisdiction {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Jurisdiction code (e.g., EU-DE, US-CA, US-FED) — should align with ISO 3166-2 where applicable
+   */
+  code: string;
+  /**
+   * Human-readable name (e.g., "Germany VAT")
+   */
+  name: string;
+  /**
+   * Tax authority name (e.g., "Bundeszentralamt für Steuern")
+   */
+  authorityName?: string | null;
+  geography: {
+    /**
+     * ISO 3166-1 alpha-2 country code (e.g., US, DE, GB)
+     */
+    country: string;
+    /**
+     * ISO 3166-2 subdivision (e.g., CA, BY, NSW)
+     */
+    region?: string | null;
+    /**
+     * Administrative level
+     */
+    level: 'national' | 'state' | 'county' | 'city' | 'special_district' | 'supranational';
+  };
+  registration?: {
+    /**
+     * Tenant registration / VAT / sales-tax permit number
+     */
+    registrationNumber?: string | null;
+    /**
+     * Date of registration with the authority
+     */
+    registrationDate?: string | null;
+    /**
+     * Date of deregistration (if any)
+     */
+    deregistrationDate?: string | null;
+  };
+  filing: {
+    /**
+     * How often returns are filed
+     */
+    filingFrequency?: ('monthly' | 'bimonthly' | 'quarterly' | 'semiannual' | 'annual' | 'on_demand') | null;
+    /**
+     * Day of month return is due (e.g. 20)
+     */
+    filingDueDayOfMonth?: number | null;
+    currency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
+  };
+  notes?: {
+    /**
+     * Internal notes
+     */
+    note?: string | null;
+  };
+  /**
+   * Additional metadata
+   */
+  metadata?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts".
+ */
+export interface Contract {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  contractNumber: string;
+  customer: number | Customer;
+  title: string;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  /**
+   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   */
+  totalValue?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   */
+  transactionPriceFixed?: number | null;
+  /**
+   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
+   */
+  transactionPriceVariable?: number | null;
+  /**
+   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
+   */
+  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
+  /**
+   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
+   */
+  financingComponent?: number | null;
+  /**
+   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
+   */
+  combinedWithContracts?: (number | Contract)[] | null;
+  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
+  /**
+   * IFRS 15 §22 distinct performance obligations.
+   */
+  performanceObligations?: {
+    docs?: (number | PerformanceObligation)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
+   */
+  modifications?:
+    | {
+        modifiedAt: string;
+        description: string;
+        priceImpact?: number | null;
+        modifiedBy?: (number | null) | User;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    | ('draft' | 'pending_approval' | 'pending_signatures' | 'active' | 'suspended' | 'completed' | 'terminated')
+    | null;
+  activatedAt?: string | null;
+  terminatedAt?: string | null;
+  /**
+   * Linked subscription (if SaaS).
+   */
+  subscription?: (number | null) | Subscription;
+  zkod?: {
+    /**
+     * Bulgaria ZKOD contract registry number (unique per ZKOD)
+     */
+    zkodContractNumber?: string | null;
+    /**
+     * Contract notarized per Bulgaria registry (required for contracts > 10k BGN)
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present (required for employment-related contracts)
+     */
+    mandatoryArbitrationClause?: boolean | null;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations".
+ */
+export interface PerformanceObligation {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  contract: number | Contract;
+  description: string;
+  /**
+   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
+   */
+  kind: 'distinct' | 'series';
+  /**
+   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
+   */
+  recognitionTiming: 'point_in_time' | 'over_time';
+  /**
+   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
+   */
+  overTimeMeasurement?: ('output_method' | 'input_method') | null;
+  /**
+   * Specific measurement kind under the chosen output/input method.
+   */
+  measurementKind?:
+    | (
+        | 'units_delivered'
+        | 'units_produced'
+        | 'milestones'
+        | 'time_elapsed'
+        | 'survey_of_work'
+        | 'cost_to_cost'
+        | 'labor_hours'
+        | 'machine_hours'
+        | 'resources_consumed'
+        | 'time_passed'
+      )
+    | null;
+  /**
+   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
+   */
+  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
+  /**
+   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
+   */
+  standaloneSellingPrice: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
+   */
+  allocatedAmount?: number | null;
+  /**
+   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
+   */
+  percentComplete?: number | null;
+  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
+  satisfiedAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-8 §42 retrospective corrections of material errors discovered after a period was closed. Restates opening balances; never re-opens the prior period.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "prior-period-adjustments".
+ */
+export interface PriorPeriodAdjustment {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * PPA reference (e.g. `PPA-2026-001`).
+   */
+  reference: string;
+  /**
+   * ISO 8601 — original date of the misstatement (the prior-period transaction date).
+   */
+  adjustmentDate: string;
+  /**
+   * ISO 8601 — current-period date the restatement entry is booked. Per IAS-8 §42, restatement adjusts opening balances of the earliest period presented.
+   */
+  postDate: string;
+  /**
+   * The closed fiscal period being restated.
+   */
+  priorPeriod?: (number | null) | FiscalPeriod;
+  /**
+   * Description of the error — required for IAS-8 §49 disclosure.
+   */
+  reason: string;
+  /**
+   * IAS-8 §41 categorisation — drives §49 disclosure depth.
+   */
+  errorCategory?: ('mathematical' | 'policy_misapplication' | 'oversight' | 'fraud') | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Net adjustment amount in cents (signed: + restates equity up, − restates equity down).
+   */
+  amount: number;
+  /**
+   * The current-period JE booking the opening-balance restatement.
+   */
+  restatementJournalEntry?: (number | null) | JournalEntry;
+  /**
+   * IAS-8 §49(b) — nature + amount of the correction text for the financial statement notes.
+   */
+  disclosureText?: string | null;
+  status?: ('draft' | 'pending_review' | 'approved' | 'posted' | 'disclosed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-1 §51(e) presentation rounding plugs + IAS-21 §39 FX-translation rounding fragments. The small ±0.01 entries that keep statement totals tied.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "rounding-adjustments".
+ */
+export interface RoundingAdjustment {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential rounding-adjustment reference (e.g. `RND-2026-04-001`).
+   */
+  reference: string;
+  /**
+   * ISO 8601 — the date the rounding plug applies to.
+   */
+  adjustmentDate: string;
+  /**
+   * ISO 4217 source currency (functional / underlying ledger currency). Required by IAS-21 §39 when rounding crosses currency.
+   */
+  fromCurrency: string;
+  /**
+   * ISO 4217 target currency (presentation currency). Equals fromCurrency for pure presentation-rounding plugs (IAS-1 §51(e)).
+   */
+  toCurrency: string;
+  /**
+   * Signed rounding amount in cents (typically ±1 to ±100 cents). Hits a designated Rounding GL account.
+   */
+  roundingAmount: number;
+  rounding?: {
+    roundingType?: ('presentation' | 'fx_translation' | 'tax' | 'cash') | null;
+    precisionUnit?: ('cents' | 'units' | 'thousands' | 'millions') | null;
+  };
+  /**
+   * Free-text reason — must include the word "rounding" per the seed-validation rule.
+   */
+  reason: string;
+  /**
+   * JE booking the rounding plug.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('draft' | 'posted' | 'reversed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-calculations".
+ */
+export interface TaxCalculation {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  calculationId: string;
+  taxType: 'sales_tax' | 'vat' | 'gst' | 'income_tax' | 'payroll_tax';
+  jurisdiction: 'us_federal' | 'us_state' | 'eu' | 'ca_federal' | 'ca_provincial' | 'au' | 'jp' | 'cn' | 'in' | 'br';
+  period: string;
+  taxRate: number;
+  grossAmount: number;
+  taxableAmount: number;
+  taxAmount: number;
+  netAmount: number;
+  taxPayableAccount: number | GlAccount;
+  taxExpenseAccount?: (number | null) | GlAccount;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('calculated' | 'approved' | 'posted' | 'filed' | 'paid') | null;
+  filingDeadline?: string | null;
+  paymentDeadline?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-returns".
+ */
+export interface TaxReturn {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  returnId: string;
+  returnType:
+    | 'vat_monthly'
+    | 'vat_quarterly'
+    | 'vat_annual'
+    | 'esl'
+    | 'intrastat'
+    | 'sales_tax_us'
+    | 'gst'
+    | 'corporate_income'
+    | 'withholding'
+    | 'saft';
+  jurisdiction: number | TaxJurisdiction;
+  periodStart: string;
+  periodEnd: string;
+  taxableSales?: number | null;
+  taxableAcquisitions?: number | null;
+  outputTax?: number | null;
+  inputTax?: number | null;
+  netLiability?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Source TaxCalculation snapshots aggregated into this return.
+   */
+  taxCalculations?: (number | TaxCalculation)[] | null;
+  status?: ('draft' | 'in_review' | 'ready' | 'filed' | 'accepted' | 'rejected' | 'amended') | null;
+  filedAt?: string | null;
+  filedBy?: (number | null) | User;
+  /**
+   * Confirmation reference returned by the tax authority.
+   */
+  authorityReference?: string | null;
+  paidAt?: string | null;
+  attachments?:
+    | {
+        media?: (number | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "currency-rates".
+ */
+export interface CurrencyRate {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  rateId: string;
+  fromCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
+  toCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
+  rate: number;
+  rateDate: string;
+  source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
+  inverse?: number | null;
+  midMarketRate?: number | null;
+  bidRate?: number | null;
+  askRate?: number | null;
+  isActive?: boolean | null;
+  usedInTransactions?: number | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-calendars".
+ */
+export interface FiscalCalendar {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Entity this calendar applies to
+   */
+  entity: number | LegalEntity;
+  /**
+   * Calendar date (RFC 3339, e.g., 2026-05-12). Indexed for O(1) period lookup via FiscalCalendars.query(tenantId, entityId, calendarDate).
+   */
+  calendarDate: string;
+  /**
+   * Fiscal year containing this date (e.g., 2026 for calendar year entity, or 2027 for entity with fiscal year start July 1). Computed from FiscalPeriods config.
+   */
+  fiscalYear: number;
+  /**
+   * Period within fiscal year (1-12 for monthly, 1-4 for quarterly, 1-52/53 for weekly/ISO-week, 1-N for custom). Computed from periodType.
+   */
+  fiscalPeriod: number;
+  /**
+   * First day of this period
+   */
+  periodStartDate: string;
+  /**
+   * Last day of this period
+   */
+  periodEndDate: string;
+  /**
+   * Human-readable period label (e.g., "May 2026", "Q2 2026", "Week 19 2026"). Localized per FiscalPeriods.localeCode.
+   */
+  periodLabel: string;
+  /**
+   * ISO 8601 week number (1-53). Week 1 is the first week with a Thursday. Null if periodType not weekly/iso-week.
+   */
+  weekNumber?: number | null;
+  /**
+   * Calendar quarter (Q1=1..Q4=4) for this calendar date, independent of fiscal period. Used for IAS 34 interim reporting alignment.
+   */
+  quarterNumber?: number | null;
+  /**
+   * Calendar month (1=January, 12=December). Independent of fiscal period; used for reporting context.
+   */
+  monthNumber?: number | null;
+  /**
+   * ISO 8601 day of week (0=Sunday, 1=Monday, ..., 6=Saturday)
+   */
+  dayOfWeek?: ('1' | '2' | '3' | '4' | '5' | '6' | '0') | null;
+  /**
+   * True if this date is part of a leap year adjustment (e.g., Feb 29 handling). Set per FiscalPeriods.leapYearAdjustment.
+   */
+  isLeapAdjusted?: boolean | null;
+  /**
+   * Regulatory period coding per SAF-T (e.g., P05_2026 for May 2026, or Q2_2026 for Q2). Deterministic from FiscalPeriods.regulatoryFramework + fiscalYear/period.
+   */
+  regulatoryCode: string;
+  /**
+   * FiscalPeriods record used to generate this calendar. Immutable origin for audit trail and amendment tracking.
+   */
+  generatedFrom: number | FiscalPeriod;
+  /**
+   * Law 60: Chain leaf for this calendar entry. Computed as sha256(JCS-canonical(FiscalCalendar) || generatedFrom.chainLeafUuid). Enables detection of tampering or generation drift.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * Notes on this calendar entry (e.g., holiday adjustments, special closure dates)
+   */
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-period-snapshots".
+ */
+export interface FiscalPeriodSnapshot {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * FiscalPeriods record for which this snapshot was created
+   */
+  fiscalPeriods: number | FiscalPeriod;
+  /**
+   * Human-readable label (e.g., "FY2026-Creation", "FY2026-Amendment-2026-05-12", "FY2026-YearEndClose-2026-12-31")
+   */
+  snapshotLabel: string;
+  /**
+   * Type of event that triggered this snapshot
+   */
+  eventType: 'creation' | 'amendment' | 'validation' | 'closing' | 'regulatory-audit' | 'status-change';
+  /**
+   * Full FiscalPeriods state at snapshot time (JSON copy). Immutable for audit trail reconstruction.
+   */
+  snapshotData:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Previous snapshot of this FiscalPeriods (null if creation). Creates immutable chain for diff analysis.
+   */
+  priorSnapshot?: (number | null) | FiscalPeriodSnapshot;
+  /**
+   * Only if eventType=amendment. JSON object of {field: {prior, new}} showing what changed. Null for other events.
+   */
+  changes?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * User who triggered this snapshot event
+   */
+  triggeredBy: number | User;
+  /**
+   * Timestamp of event
+   */
+  triggeredAt: string;
+  /**
+   * Why was this snapshot created? (e.g., "Annual fiscal policy review", "Regulatory compliance amendment", "Bug fix in period boundaries")
+   */
+  reason?: string | null;
+  /**
+   * Optional eIDAS QES signature on snapshotData (for amendments, regulatory audits). Base64-encoded SignedUuid envelope.
+   */
+  signedUuid?: string | null;
+  /**
+   * Immutable audit trail: who viewed/reviewed this snapshot, forensic notes. Append-only.
+   */
+  auditTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Snapshot-specific notes
+   */
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fixed-assets".
+ */
+export interface FixedAsset {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  assetNumber: string;
+  description: string;
+  assetCategory:
+    | 'land'
+    | 'building'
+    | 'equipment'
+    | 'machinery'
+    | 'vehicles'
+    | 'furniture_fixtures'
+    | 'leasehold_improvements'
+    | 'software'
+    | 'intangible_assets'
+    | 'other';
+  acquisitionDate: string;
+  assetCost: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
+   */
+  supplier?: (number | null) | Vendor;
+  /**
+   * Reference PO number
+   */
+  purchaseOrder?: string | null;
+  /**
+   * Physical location/department
+   */
+  location?: string | null;
+  serialNumber?: string | null;
+  barcode?: string | null;
+  depreciationMethod?:
+    | ('straight_line' | 'declining_balance' | 'double_declining_balance' | 'units_of_activity' | 'sum_of_years_digits')
+    | null;
+  usefulLifeYears: number;
+  /**
+   * Expected residual/salvage value
+   */
+  residualValue?: number | null;
+  /**
+   * Cost - Residual Value
+   */
+  depreciableBase?: number | null;
+  annualDepreciationAmount?: number | null;
+  accumulatedDepreciation?: number | null;
+  /**
+   * Cost - Accumulated Depreciation
+   */
+  bookValue?: number | null;
+  /**
+   * Date depreciation begins
+   */
+  depreciationStartDate?: string | null;
+  lastDepreciationDate?: string | null;
+  /**
+   * Total units expected to produce
+   */
+  totalUnitsExpected?: number | null;
+  /**
+   * Units produced so far
+   */
+  unitsProducedToDate?: number | null;
+  /**
+   * Fixed asset GL account (1600+)
+   */
+  assetAccount: number | GlAccount;
+  /**
+   * Accumulated depreciation contra-asset account
+   */
+  accumulatedDepreciationAccount: number | GlAccount;
+  /**
+   * Depreciation expense account (6000+)
+   */
+  depreciationExpenseAccount: number | GlAccount;
+  status?: ('active' | 'inactive' | 'fully_depreciated' | 'disposed' | 'held_for_sale') | null;
+  /**
+   * Date when asset was disposed
+   */
+  disposalDate?: string | null;
+  /**
+   * Amount received from disposal
+   */
+  disposalProceeds?: number | null;
+  /**
+   * Gain or loss on disposal
+   */
+  gainOnDisposal?: number | null;
+  lastMaintenanceDate?: string | null;
+  nextMaintenanceDate?: string | null;
+  maintenanceNotes?: string | null;
+  notes?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -3875,6 +5232,7 @@ export interface Customer {
  */
 export interface Vendor {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
    * Unique vendor code (e.g., VEND-0001)
    */
@@ -4045,64 +5403,36 @@ export interface Vendor {
     | number
     | boolean
     | null;
-  tenant: number | Tenant;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "kyc-checks".
+ * via the `definition` "depreciation-schedules".
  */
-export interface KycCheck {
+export interface DepreciationSchedule {
   id: number;
-  tenant: number | Tenant;
-  checkId: string;
-  subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
-  subject: number | Customer;
-  cddLevel: 'sdd' | 'cdd' | 'edd';
-  identityDocuments?:
-    | {
-        docType?: ('passport' | 'national_id' | 'driving_licence' | 'utility_bill' | 'bank_statement' | 'other') | null;
-        /**
-         * Encrypted at rest.
-         */
-        docNumber?: string | null;
-        /**
-         * ISO 3166-1 alpha-2.
-         */
-        issuingCountry?: string | null;
-        expiresAt?: string | null;
-        id?: string | null;
-      }[]
+  tenant?: (number | null) | Tenant;
+  scheduleId: string;
+  fixedAsset: number | FixedAsset;
+  periodEnd: string;
+  periodStart: string;
+  depreciationAmount: number;
+  /**
+   * Accumulated depreciation after this entry (cents).
+   */
+  accumulatedAfter?: number | null;
+  /**
+   * Book value after this entry (cents).
+   */
+  bookValueAfter?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  method?:
+    | ('straight_line' | 'declining_balance' | 'double_declining' | 'units_of_activity' | 'sum_of_years_digits')
     | null;
-  sanctionsScreening?: {
-    screenedAt?: string | null;
-    /**
-     * OFAC SDN, EU consolidated, UN, HMT, etc.
-     */
-    lists?:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-    matchFound?: boolean | null;
-    matchDetails?: string | null;
-  };
-  /**
-   * Politically Exposed Person status.
-   */
-  pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
-  riskRating?: ('low' | 'medium' | 'high' | 'prohibited') | null;
-  status?: ('pending' | 'in_review' | 'approved' | 'rejected' | 'requires_reverification') | null;
-  completedAt?: string | null;
-  /**
-   * AMLD-6 ongoing monitoring.
-   */
-  nextReviewDue?: string | null;
+  status?: ('calculated' | 'posted' | 'reversed') | null;
+  postedAt?: string | null;
+  journalEntry?: (number | null) | JournalEntry;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -4111,159 +5441,64 @@ export interface KycCheck {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "beneficial-owners".
- */
-export interface BeneficialOwner {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Legal entity whose UBO this is (AMLD-5 Art.30 / US CTA register subject).
-   */
-  entity: number | LegalEntity;
-  fullName: string;
-  dateOfBirth?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 country code.
-   */
-  nationality?: string | null;
-  residenceCountry?: string | null;
-  residenceAddress?: (number | null) | Address;
-  /**
-   * AMLD threshold typically 25%.
-   */
-  ownershipPercent?: number | null;
-  controlType: 'direct_ownership' | 'indirect_ownership' | 'voting_rights' | 'board_appointment' | 'other_control';
-  pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
-  kycCheck?: (number | null) | KycCheck;
-  status?: ('active' | 'pending' | 'resigned') | null;
-  effectiveFrom?: string | null;
-  effectiveTo?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Per IFRS-10 §B86 reporting entity (subsidiary / associate / joint-venture / head). Distinct from `tenants` (DB partition). Drives consolidation-eliminations + intercompany pairing.
+ * Pre-customer prospect (qualified lead). Converts to an opportunity → customer on close-won.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "legal-entities".
+ * via the `definition` "leads".
  */
-export interface LegalEntity {
+export interface Lead {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
+  fullName: string;
+  firstName?: string | null;
+  lastName?: string | null;
+  jobTitle?: string | null;
+  companyName: string;
+  email?: string | null;
+  phone?: string | null;
+  website?: string | null;
+  industry?: string | null;
+  companySize?: ('1_10' | '11_50' | '51_200' | '201_1000' | '1000_plus') | null;
   /**
-   * Full legal name as registered in the home jurisdiction (IAS-1 §138(a)).
+   * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
    */
-  legalName: string;
-  /**
-   * Trading / brand name when different from the legal name.
-   */
-  tradeName?: string | null;
-  /**
-   * Statutory legal form per the home jurisdiction commerce code.
-   */
-  legalForm?:
+  countryCode?: string | null;
+  preferredLanguage?: string | null;
+  leadSource?:
     | (
-        | 'sole_proprietor'
-        | 'llc'
-        | 'jsc'
-        | 'partnership'
-        | 'limited_partnership'
-        | 'cooperative'
-        | 'branch'
-        | 'rep_office'
-        | 'non_profit'
+        | 'website_form'
+        | 'demo_request'
+        | 'content_download'
+        | 'cold_email'
+        | 'cold_call'
+        | 'event'
+        | 'partner'
+        | 'webinar'
+        | 'social'
+        | 'paid_ad'
+        | 'organic_search'
         | 'other'
       )
     | null;
+  campaign?: string | null;
   /**
-   * ISO 3166-1 alpha-2 — country of registration (BG / DE / RO / etc.).
+   * BANT / MEDDIC composite score (0-100). May be AI-suggested.
    */
-  countryCode: string;
+  leadScore?: number | null;
   /**
-   * Statutory company / commercial-register number (BG EIK, DE HRB, RO J-number, etc.).
+   * Operator estimate of contract value if won (cents).
    */
-  registrationNumber: string;
+  estimatedValue?: number | null;
+  estimatedCloseDate?: string | null;
+  assignedTo?: (number | null) | User;
+  convertedOpportunity?: (number | null) | Opportunity;
+  convertedCustomer?: (number | null) | Customer;
+  convertedAt?: string | null;
   /**
-   * EU VAT identifier (BG123456789 / DE123456789 / etc.) — VIES-validatable.
+   * GDPR Art.7 marketing-consent record (if applicable).
    */
-  vatNumber?: string | null;
-  /**
-   * ISO 17442-1:2020 Legal Entity Identifier (20-char) — required for derivatives + securities reporting.
-   */
-  lei?: string | null;
-  /**
-   * IFRS-10 §B86 / IAS-28 §16 / IFRS-11 §20 consolidation method for this entity in the group accounts.
-   */
-  consolidationMethod?: ('full' | 'equity' | 'proportionate' | 'cost' | 'not_consolidated') | null;
-  consolidationStatus?:
-    | ('head' | 'subsidiary' | 'associate' | 'joint_venture' | 'joint_operation' | 'investment')
-    | null;
-  /**
-   * Mark the reporting parent — exactly one head per consolidation group; used by `consolidation-eliminations` to anchor eliminations.
-   */
-  isHeadEntity?: boolean | null;
-  /**
-   * Direct parent in the group structure (null for the head entity).
-   */
-  parent?: (number | null) | LegalEntity;
-  /**
-   * Direct ownership of this entity by `parent` (0-100%). For NCI calculation per IFRS-10 §22.
-   */
-  ownershipPercent?: number | null;
-  /**
-   * Direct voting rights — may differ from ownership when dual-class shares exist (IFRS-10 §B36).
-   */
-  votingPercent?: number | null;
-  functionalCurrency?:
-    | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
-    | null;
-  presentationCurrency?:
-    | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
-    | null;
-  /**
-   * Standalone (statutory) reporting framework. Group consolidation may translate up to a different parent framework.
-   */
-  reportingFramework?: ('ifrs' | 'ifrs_sme' | 'us_gaap' | 'local_gaap') | null;
-  /**
-   * IFRS 1 first-time-adoption transition date.
-   */
-  ifrsAdoptionDate?: string | null;
-  /**
-   * MM-DD format (e.g. `12-31`, `06-30`). Drives the entity's fiscal-period calendar.
-   */
-  statutoryYearEnd?: string | null;
-  /**
-   * Statutory registered office (IAS-1 §138(a)).
-   */
-  registeredAddress?: {
-    street?: string | null;
-    city?: string | null;
-    postalCode?: string | null;
-    region?: string | null;
-    countryCode?: string | null;
-  };
-  /**
-   * US Standard Industrial Classification code (US SIC).
-   */
-  sicCode?: string | null;
-  /**
-   * NACE Rev.2 economic activity code (e.g. `62.01`). Used by EU CSRD ESRS 2 §80(b) sector classification.
-   */
-  naceCode?: string | null;
-  /**
-   * Date entity was incorporated / acquired into the group.
-   */
-  effectiveFrom: string;
-  /**
-   * Date entity was deconsolidated / sold / dissolved (null = active).
-   */
-  effectiveTo?: string | null;
-  status?: ('active' | 'dormant' | 'in_liquidation' | 'dissolved' | 'acquired') | null;
+  consentRecord?: (number | null) | ConsentRecord;
+  status?: ('new' | 'contacted' | 'engaged' | 'mql' | 'sql' | 'converted' | 'disqualified' | 'recycled') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -4272,364 +5507,103 @@ export interface LegalEntity {
   createdAt: string;
 }
 /**
+ * Sales-pipeline deal with weighted forecast. Close-won creates a contract + (if needed) a customer.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "journal-entries".
+ * via the `definition` "opportunities".
  */
-export interface JournalEntry {
+export interface Opportunity {
   id: number;
-  tenant: number | Tenant;
-  entryNumber: string;
-  entryDate: string;
-  postedDate?: string | null;
-  description: string;
-  status?: ('draft' | 'pending_approval' | 'posted' | 'reversed' | 'void') | null;
-  lines: {
-    lineNumber?: number | null;
-    glAccount: number | GlAccount;
-    accountNumber?: string | null;
-    accountName?: string | null;
-    description?: string | null;
-    debit?: number | null;
-    credit?: number | null;
-    currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-    exchangeRate?: number | null;
-    id?: string | null;
-  }[];
-  debitTotal?: number | null;
-  creditTotal?: number | null;
-  isBalanced?: boolean | null;
-  sourceType:
-    | 'manual'
-    | 'invoice'
-    | 'bill'
-    | 'payment'
-    | 'bank_reconciliation'
-    | 'period_end_adjustment'
-    | 'tax_calculation'
-    | 'currency_adjustment';
-  sourceId?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gl-postings".
- */
-export interface GlPosting {
-  id: number;
-  tenant: number | Tenant;
-  postingId: string;
-  sourceType:
-    | 'invoice'
-    | 'bill'
-    | 'payment'
-    | 'bank_statement'
-    | 'period_end_adjustment'
-    | 'tax_calculation'
-    | 'currency_revaluation'
-    | 'manual_entry';
-  sourceId: string;
-  sourceDate: string;
-  journalEntry: number | JournalEntry;
-  status?: ('pending' | 'posted' | 'reversed' | 'failed') | null;
-  postedDate?: string | null;
-  accountsAffected?:
-    | {
-        glAccount: number | GlAccount;
-        accountNumber?: string | null;
-        accountName?: string | null;
-        debitAmount?: number | null;
-        creditAmount?: number | null;
-        currency?:
-          | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
-          | null;
-        id?: string | null;
-      }[]
-    | null;
-  totalDebits?: number | null;
-  totalCredits?: number | null;
-  errorMessage?: string | null;
-  reversalPostingId?: string | null;
-  metadata?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-accounts".
- */
-export interface BankAccount {
-  id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  lead?: (number | null) | Lead;
   /**
-   * Friendly label, e.g. "Operating Account — Bulbank EUR".
+   * Existing customer (for upsell/cross-sell). Null for net-new from lead.
    */
-  accountName: string;
+  customer?: (number | null) | Customer;
+  opportunityOwner: number | User;
+  stage:
+    | 'qualification'
+    | 'discovery'
+    | 'solution'
+    | 'quote_sent'
+    | 'negotiation'
+    | 'verbal_commit'
+    | 'closed_won'
+    | 'closed_lost'
+    | 'closed_no_decision';
   /**
-   * ISO 13616 IBAN. Encrypted at rest (NIST AES-GCM).
+   * Snapshot probability (0-100%). Defaults map to stage but operator can override.
    */
-  iban?: string | null;
-  /**
-   * ISO 9362 BIC / SWIFT code.
-   */
-  bic?: string | null;
-  /**
-   * Local account number (US/UK/etc. where IBAN is not standard).
-   */
-  accountNumber?: string | null;
-  /**
-   * ABA / sort-code / BSB — local routing identifier.
-   */
-  routingNumber?: string | null;
-  /**
-   * Bank name.
-   */
-  institution?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 of the bank, auto-derived from the IBAN if blank. Drives country-context API routing (open-banking, tax authority, sanctions screening).
-   */
-  country?: string | null;
+  probability?: number | null;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * GL cash account this bank account posts to.
-   */
-  glAccount?: (number | null) | GlAccount;
-  purpose?: ('operating' | 'payroll' | 'tax' | 'reserve' | 'fx') | null;
-  status?: ('active' | 'inactive' | 'closed') | null;
-  openedAt?: string | null;
-  closedAt?: string | null;
-  /**
-   * Bank statements imported for this account.
-   */
-  statements?: {
-    docs?: (number | BankStatement)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-statements".
- */
-export interface BankStatement {
-  id: number;
-  tenant: number | Tenant;
-  statementId: string;
-  bankAccount: number | GlAccount;
-  statementDate: string;
-  statementPeriodStart: string;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  openingBalance: number;
-  closingBalance: number;
-  transactions: {
-    transactionDate: string;
-    amount: number;
-    description: string;
-    reference?: string | null;
-    balanceAfter?: number | null;
-    id?: string | null;
-  }[];
-  reconciliationStatus?:
-    | ('unreconciled' | 'matched_exact' | 'matched_fuzzy' | 'in_progress' | 'reconciled' | 'discrepancy')
-    | null;
-  matchedTransactions?:
-    | {
-        bankStatementLineIndex: number;
-        journalEntry: number | JournalEntry;
-        matchType: 'exact' | 'fuzzy' | 'manual';
-        matchScore?: number | null;
-        varianceAmount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  totalMatched?: number | null;
-  totalUnmatched?: number | null;
-  variance?: number | null;
-  reconciliationNotes?: string | null;
-  reconciliationDate?: string | null;
-  reconciliedBy?: (number | null) | User;
-  importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-transactions".
- */
-export interface BankTransaction {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Stable unique id for this line. For ISO 20022, prefer accountServicerReference; fallback to endToEndId.
-   */
-  externalId: string;
-  /**
-   * Bank-assigned unique reference (camt.053 AcctSvcrRef). Maps to canonical Camt053Transaction.accountServicerReference.
-   */
-  accountServicerReference?: string | null;
-  /**
-   * End-to-end id propagated from the originating instruction (camt.053 EndToEndId / pain.001 EndToEndId). Joins this line to the originating PaymentRuns transaction.
-   */
-  endToEndId?: string | null;
-  bankAccount: number | BankAccount;
-  /**
-   * Parent camt.053 statement, if imported as part of a batch.
-   */
-  statement?: (number | null) | BankStatement;
-  /**
-   * When the funds become available. Maps to canonical Camt053Transaction.valueDate.
-   */
-  valueDate: string;
-  /**
-   * When the entry hit the ledger. Maps to canonical Camt053Transaction.bookingDate.
-   */
-  bookingDate?: string | null;
-  /**
-   * Signed amount in cents (positive = credit, negative = debit). Maps to ABS(canonical.amount) — canonical separates value from creditDebitIndicator.
+   * Annual contract value (ARR for SaaS) or one-time TCV (cents).
    */
   amount: number;
   /**
-   * ISO 20022 CreditDebitCode. Maps to canonical Camt053Transaction.creditDebitIndicator. Derived from sign(amount) when not explicitly set.
+   * amount × probability/100. Aggregated for the pipeline forecast.
    */
-  creditDebitIndicator?: ('CRDT' | 'DBIT') | null;
-  /**
-   * ISO 20022 EntryStatus2Code. Most reconcilable items are BOOK. Maps to canonical Camt053Transaction.status.
-   */
-  bookingStatus?: ('BOOK' | 'PDNG' | 'INFO' | 'FUTR') | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Free-text narrative. Maps to canonical RemittanceInformation.unstructured.
-   */
-  description?: string | null;
-  /**
-   * Remitter / beneficiary. Maps to canonical PartyIdentification.name.
-   */
-  counterpartyName?: string | null;
-  /**
-   * ISO 13616 IBAN. Maps to canonical AccountIdentification.iban.
-   */
-  counterpartyIban?: string | null;
-  /**
-   * ISO 9362 BIC. Maps to canonical PartyIdentification.bic.
-   */
-  counterpartyBic?: string | null;
-  /**
-   * Structured creditor reference (ISO 11649 RF) or invoice number. Maps to canonical RemittanceInformation.structured.creditorReference.reference.
-   */
-  reference?: string | null;
-  /**
-   * ExternalBankTransactionDomain1Code — top-level (e.g. PMNT, CAMT, ACMT). Part of the canonical 3-tuple.
-   */
-  bankTransactionDomain?: string | null;
-  /**
-   * ExternalBankTransactionFamily1Code — family within domain (e.g. RCDT, ICDT under PMNT).
-   */
-  bankTransactionFamily?: string | null;
-  /**
-   * ExternalBankTransactionSubFamily1Code — subfamily (e.g. SALA salary, BOOK book transfer).
-   */
-  bankTransactionSubFamily?: string | null;
-  /**
-   * DEPRECATED — slash-joined legacy form. New writes populate bankTransactionDomain / family / subFamily.
-   */
-  transactionCode?: string | null;
-  /**
-   * ISO 20022 ChargeBearerType1Code. Maps to canonical Camt053Transaction.chargeBearer.
-   */
-  chargeBearer?: ('DEBT' | 'CRED' | 'SHAR' | 'SLEV') | null;
-  matchStatus?: ('unmatched' | 'auto_matched' | 'manual_matched' | 'excluded' | 'disputed') | null;
-  matchedJournalEntries?:
-    | {
-        journalEntry: number | JournalEntry;
-        /**
-         * Portion in cents matched to this JE (supports split matches).
-         */
-        matchedAmount: number;
-        /**
-         * 0-1 confidence for fuzzy matches.
-         */
-        matchScore?: number | null;
-        id?: string | null;
-      }[]
+  weightedAmount?: number | null;
+  expectedCloseDate: string;
+  actualCloseDate?: string | null;
+  closeReason?:
+    | ('price' | 'product_fit' | 'timing' | 'competitor' | 'internal_politics' | 'budget_cut' | 'other')
     | null;
-  matchedAt?: string | null;
-  matchedBy?: (number | null) | User;
-  status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
+  competitor?: string | null;
+  forecastCategory?: ('pipeline' | 'best_case' | 'commit' | 'closed' | 'omitted') | null;
+  segment?: (number | null) | CustomerSegment;
+  campaign?: string | null;
+  /**
+   * Contract created on close-won.
+   */
+  contractCreated?: (number | null) | Contract;
+  status?: ('open' | 'won' | 'lost' | 'abandoned') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
   notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
+ * Pricing / marketing / portfolio segment. Customers tag-link to segments; pricing rules + campaigns target the segment.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-orders".
+ * via the `definition` "customer-segments".
  */
-export interface PurchaseOrder {
+export interface CustomerSegment {
   id: number;
-  tenant: number | Tenant;
-  poNumber: string;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  description?: string | null;
+  segmentType: 'commercial' | 'industry' | 'geographic' | 'lifecycle' | 'behavioural' | 'strategic' | 'other';
   /**
-   * Vendor receiving the PO.
+   * Operator-readable criteria (e.g. "ARR ≥ €100k AND industry = SaaS").
    */
-  vendor: number | Address;
-  orderDate: string;
-  expectedDeliveryDate?: string | null;
-  lines: {
-    lineNumber?: number | null;
-    item?: (number | null) | Item;
-    description: string;
-    quantity: number;
-    unitPrice: number;
-    lineTotal?: number | null;
-    /**
-     * Expense / asset account to debit on receipt.
-     */
-    glAccount?: (number | null) | GlAccount;
-    /**
-     * Cumulative quantity received via goods-receipts.
-     */
-    quantityReceived?: number | null;
-    id?: string | null;
-  }[];
-  subtotal?: number | null;
-  taxAmount?: number | null;
-  totalAmount?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  status?: ('draft' | 'submitted' | 'approved' | 'sent' | 'partial' | 'received' | 'closed' | 'cancelled') | null;
-  submittedAt?: string | null;
-  sentAt?: string | null;
-  closedAt?: string | null;
+  criteria?: string | null;
   /**
-   * Partial / full goods-receipts against this PO.
+   * Tie-breaker when a customer fits multiple segments (lower = higher priority).
    */
-  receipts?: {
-    docs?: (number | GoodsReceipt)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
+  priorityRank?: number | null;
   /**
-   * Matched vendor bill (three-way-match anchor).
+   * Default discount % off list price for this segment.
    */
-  invoice?: (number | null) | Invoice;
+  discountPercent?: number | null;
+  /**
+   * Default Net-N payment terms (days).
+   */
+  paymentTermDays?: number | null;
+  /**
+   * Default per-customer credit limit (cents) — operator can override per customer.
+   */
+  creditLimit?: number | null;
+  pricingTier?: ('list' | 'volume' | 'negotiated' | 'strategic') | null;
+  /**
+   * IFRS-15 §4 portfolio practical expedient — group similar contracts for revenue recognition.
+   */
+  isPortfolioForIfrs15?: boolean | null;
+  status?: ('active' | 'inactive' | 'deprecated') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -4639,25 +5613,34 @@ export interface PurchaseOrder {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "goods-receipts".
+ * via the `definition` "consent-records".
  */
-export interface GoodsReceipt {
+export interface ConsentRecord {
   id: number;
-  tenant: number | Tenant;
-  receiptNumber: string;
-  purchaseOrder: number | PurchaseOrder;
-  receivedDate: string;
-  lines: {
-    item?: (number | null) | Item;
-    description?: string | null;
-    quantityReceived: number;
-    quantityDamaged?: number | null;
-    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
-    id?: string | null;
-  }[];
-  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
-  inspectedAt?: string | null;
-  inspectedBy?: (number | null) | User;
+  tenant?: (number | null) | Tenant;
+  consentId: string;
+  dataSubject: number | User;
+  purpose: 'marketing' | 'analytics' | 'transactional' | 'profiling' | 'third_party_sharing' | 'cookies_optional';
+  lawfulBasis?:
+    | ('consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests')
+    | null;
+  /**
+   * Exact text presented to the data subject at the moment of consent.
+   */
+  consentText: string;
+  /**
+   * Version identifier of the consent text (for re-consent flows).
+   */
+  consentVersion?: string | null;
+  capturedVia?: ('web_form' | 'api' | 'paper' | 'verbal' | 'email_double_optin') | null;
+  /**
+   * Captured at consent time for evidence (Art.7(1)).
+   */
+  ipAddress?: string | null;
+  userAgent?: string | null;
+  status?: ('given' | 'withdrawn' | 'expired') | null;
+  givenAt?: string | null;
+  withdrawnAt?: string | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -4671,7 +5654,7 @@ export interface GoodsReceipt {
  */
 export interface Quote {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   quoteNumber: string;
   customer: number | Customer;
   issuedAt?: string | null;
@@ -4707,11 +5690,11 @@ export interface Quote {
  */
 export interface SalesOrder {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
-  tenant: number | Tenant;
   /**
    * Tenant-unique order number (e.g. SO-2026-001). Stable identifier for downstream documents.
    */
@@ -4829,1800 +5812,69 @@ export interface SalesOrder {
   createdAt: string;
 }
 /**
+ * IFRS-15 §91-94 commission record. Capitalised + amortised when contract life makes amortisation ≥ 1 year; otherwise expensed.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contracts".
+ * via the `definition` "sales-commissions".
  */
-export interface Contract {
+export interface SalesCommission {
   id: number;
-  tenant: number | Tenant;
-  contractNumber: string;
-  customer: number | Customer;
-  title: string;
-  effectiveFrom: string;
-  effectiveTo?: string | null;
+  tenant?: (number | null) | Tenant;
+  reference: string;
+  salesperson: number | User;
   /**
-   * Aggregate transaction price (cents). = transactionPriceFixed + transactionPriceVariable + financingComponent − considerationPayableToCustomer. Maps to canonical TransactionPrice.total.
+   * When commission flows through payroll.
    */
-  totalValue?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  employee?: (number | null) | Employee;
+  opportunity: number | Opportunity;
   /**
-   * Fixed consideration component (cents). IFRS 15 §47. Maps to canonical TransactionPrice.fixed.
+   * Contract created on close-won (drives the amortisation period).
    */
-  transactionPriceFixed?: number | null;
-  /**
-   * Estimated variable consideration after constraint (cents). IFRS 15 §50-§59. Maps to canonical VariableConsideration.estimate − constraint.
-   */
-  transactionPriceVariable?: number | null;
-  /**
-   * IFRS 15 §53 — estimation method when variable consideration is non-zero.
-   */
-  variableConsiderationMethod?: ('expected_value' | 'most_likely_amount') | null;
-  /**
-   * Significant financing component (cents). IFRS 15 §60-§65. Positive when entity is financier; negative when customer is financed.
-   */
-  financingComponent?: number | null;
-  /**
-   * IFRS 15 §17 — other contracts this one is accounted for as part of (combined-contract group). Maps to canonical Contract.combinedWithContractIds.
-   */
-  combinedWithContracts?: (number | Contract)[] | null;
-  paymentTerms?: ('net0' | 'net15' | 'net30' | 'net60' | 'net90' | 'custom') | null;
-  /**
-   * IFRS 15 §22 distinct performance obligations.
-   */
-  performanceObligations?: {
-    docs?: (number | PerformanceObligation)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  /**
-   * IFRS 15 §B47 / ASC 606-10-25-13 contract modifications.
-   */
-  modifications?:
-    | {
-        modifiedAt: string;
-        description: string;
-        priceImpact?: number | null;
-        modifiedBy?: (number | null) | User;
-        id?: string | null;
-      }[]
-    | null;
-  status?: ('draft' | 'pending_approval' | 'active' | 'suspended' | 'completed' | 'terminated') | null;
-  activatedAt?: string | null;
-  terminatedAt?: string | null;
-  /**
-   * Linked subscription (if SaaS).
-   */
-  subscription?: (number | null) | Subscription;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations".
- */
-export interface PerformanceObligation {
-  id: number;
-  tenant: number | Tenant;
-  contract: number | Contract;
-  description: string;
-  /**
-   * IFRS 15 §22(a): one distinct promise. §22(b): a series of substantially-the-same distinct goods/services with the same pattern of transfer (typical for SaaS subscriptions).
-   */
-  kind: 'distinct' | 'series';
-  /**
-   * When the customer obtains control. Most goods → point-in-time at delivery; services that meet §35 criteria → over-time.
-   */
-  recognitionTiming: 'point_in_time' | 'over_time';
-  /**
-   * Required when recognitionTiming = over_time. Output methods measure value transferred; input methods measure inputs consumed.
-   */
-  overTimeMeasurement?: ('output_method' | 'input_method') | null;
-  /**
-   * Specific measurement kind under the chosen output/input method.
-   */
-  measurementKind?:
-    | (
-        | 'units_delivered'
-        | 'units_produced'
-        | 'milestones'
-        | 'time_elapsed'
-        | 'survey_of_work'
-        | 'cost_to_cost'
-        | 'labor_hours'
-        | 'machine_hours'
-        | 'resources_consumed'
-        | 'time_passed'
-      )
-    | null;
-  /**
-   * DEPRECATED — superseded by recognitionTiming + overTimeMeasurement + measurementKind. Kept for back-compat.
-   */
-  recognitionMethod?: ('point_in_time' | 'over_time_input' | 'over_time_output') | null;
-  /**
-   * In cents. Maps to canonical PerformanceObligation.standaloneSellingPrice.
-   */
-  standaloneSellingPrice: number;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Portion of contract transaction price allocated to this PO (cents). Computed by IFRS 15 §73 relative-SSP. Maps to canonical PerformanceObligation.allocatedAmount.
-   */
-  allocatedAmount?: number | null;
-  /**
-   * Cumulative recognised revenue (cents). Maps to canonical PerformanceObligation.recognizedAmount (note spelling — collection preserves British spelling for back-compat with seed data).
-   */
-  recognisedToDate?: number | null;
-  /**
-   * For over-time methods: 0–100. Maps to canonical PerformanceObligation.progress × 100 (canonical type uses 0..1 fraction).
-   */
-  percentComplete?: number | null;
-  status?: ('pending' | 'in_progress' | 'satisfied' | 'cancelled') | null;
-  satisfiedAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "shipments".
- */
-export interface Shipment {
-  id: number;
-  tenant: number | Tenant;
-  shipmentNumber: string;
-  order: number | SalesOrder;
-  shipFromAddress?: (number | null) | Address;
-  shipToAddress: number | Address;
-  carrier?: ('dhl' | 'fedex' | 'ups' | 'usps' | 'royal_mail' | 'speedy' | 'econt' | 'local' | 'pickup') | null;
-  trackingNumber?: string | null;
-  trackingUrl?: string | null;
-  /**
-   * In cents.
-   */
-  shippingCost?: number | null;
-  lines?:
-    | {
-        item?: (number | null) | Item;
-        quantity: number;
-        id?: string | null;
-      }[]
-    | null;
-  status?:
-    | (
-        | 'pending'
-        | 'picked'
-        | 'packed'
-        | 'shipped'
-        | 'in_transit'
-        | 'out_for_delivery'
-        | 'delivered'
-        | 'returned'
-        | 'lost'
-      )
-    | null;
-  shippedAt?: string | null;
-  deliveredAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "returns".
- */
-export interface Return {
-  id: number;
-  tenant: number | Tenant;
-  rmaNumber: string;
-  order: number | SalesOrder;
+  contract?: (number | null) | Contract;
   customer?: (number | null) | Customer;
-  reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
-  lines: {
-    item?: (number | null) | Item;
-    quantityReturned: number;
+  closedWonDate: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  commissionRule?: {
+    planName?: string | null;
     /**
-     * Return to inventory or write off?
+     * Commission % on contract value.
      */
-    restock?: boolean | null;
-    id?: string | null;
-  }[];
-  status?:
-    | ('requested' | 'authorised' | 'in_transit' | 'received' | 'restocked' | 'refunded' | 'closed' | 'rejected')
-    | null;
-  authorisedAt?: string | null;
-  receivedAt?: string | null;
-  restockedAt?: string | null;
-  /**
-   * Credit memo issued for the return.
-   */
-  creditMemo?: (number | null) | CreditMemo;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "credit-memos".
- */
-export interface CreditMemo {
-  id: number;
-  tenant: number | Tenant;
-  memoNumber: string;
-  /**
-   * Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).
-   */
-  customer?: (number | null) | Customer;
-  /**
-   * Original invoice being credited (optional for general write-offs).
-   */
-  invoice?: (number | null) | Invoice;
-  reason:
-    | 'refund_return'
-    | 'refund_service'
-    | 'pricing_adjustment'
-    | 'bad_debt_writeoff'
-    | 'goodwill'
-    | 'tax_adjustment'
-    | 'other';
-  reasonDetail?: string | null;
-  /**
-   * Credit amount in cents.
-   */
-  amount: number;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  status?: ('draft' | 'pending_approval' | 'issued' | 'applied' | 'settled' | 'voided') | null;
-  /**
-   * When the credit memo was issued.
-   */
-  issuedAt?: string | null;
-  /**
-   * When applied against an invoice.
-   */
-  appliedAt?: string | null;
-  /**
-   * When cash refund was paid.
-   */
-  settledAt?: string | null;
-  /**
-   * GL posting that booked this credit.
-   */
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "warehouse-locations".
- */
-export interface WarehouseLocation {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Short code, e.g. SOF-MAIN, NYC-3PL.
-   */
-  code: string;
-  name: string;
-  type: 'warehouse' | '3pl' | 'retail' | 'consignment' | 'transit' | 'quarantine' | 'returns' | 'bonded' | 'virtual';
-  address?: (number | null) | Address;
-  /**
-   * ISO 3166-1 alpha-2.
-   */
-  country?: string | null;
-  /**
-   * ISO 3166-2 subdivision code.
-   */
-  region?: string | null;
-  /**
-   * Default inventory GL account for stock at this location.
-   */
-  glAccount?: (number | null) | GlAccount;
-  /**
-   * Optional bin/aisle/shelf detail for cycle-count granularity.
-   */
-  bins?:
-    | {
-        binCode: string;
-        description?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  status?: ('active' | 'inactive' | 'closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "inventory-movements".
- */
-export interface InventoryMovement {
-  id: number;
-  tenant: number | Tenant;
-  movementId: string;
-  kind:
-    | 'receipt'
-    | 'sale'
-    | 'consumption'
-    | 'transfer'
-    | 'return_in'
-    | 'return_out'
-    | 'adjustment'
-    | 'write_off'
-    | 'opening';
-  item: number | Item;
-  /**
-   * Lot / serial number for traceability.
-   */
-  lotOrSerial?: string | null;
-  /**
-   * Positive = inbound to toLocation; negative = outbound from fromLocation.
-   */
-  quantity: number;
-  /**
-   * In cents — used for cost-flow & GL valuation.
-   */
-  unitCost?: number | null;
-  /**
-   * quantity × unitCost; auto-computed.
-   */
-  extendedCost?: number | null;
-  /**
-   * IAS-2 §25 / ASC 330-10-30 cost formula election. Drives how the GL handler picks unitCost when the source-doc cost basis differs from the on-hand average.
-   */
-  valuationMethod: 'fifo' | 'weighted_average' | 'specific_identification';
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  fromLocation?: (number | null) | WarehouseLocation;
-  toLocation?: (number | null) | WarehouseLocation;
-  movementAt: string;
-  sourceDocumentType?: ('goods_receipt' | 'shipment' | 'return' | 'order' | 'adjustment' | 'manual') | null;
-  /**
-   * Free-form id of the originating document for traceability.
-   */
-  sourceDocumentId?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('draft' | 'posted' | 'reversed') | null;
-  postedAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "financial-statements".
- */
-export interface FinancialStatement {
-  id: number;
-  tenant: number | Tenant;
-  statementId: string;
-  statementType: 'trial_balance' | 'balance_sheet' | 'income_statement' | 'cash_flow_statement' | 'equity_statement';
-  language?: ('en' | 'es' | 'fr' | 'de' | 'it' | 'pt' | 'ru' | 'ja' | 'zh' | 'ar') | null;
-  fiscalPeriodStart: string;
-  fiscalPeriodEnd: string;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  statementContent:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  financialRatios?:
-    | {
-        ratioName: string;
-        ratioValue: number;
-        category: 'liquidity' | 'profitability' | 'leverage' | 'efficiency';
-        interpretation?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  comparativePeriod?: string | null;
-  comparativeData?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  notes?: string | null;
-  status?: ('draft' | 'final' | 'audited' | 'published') | null;
-  exportFormats?:
-    | {
-        format: 'pdf' | 'excel' | 'csv' | 'json' | 'html';
-        fileUrl?: string | null;
-        generatedAt?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  generatedAt: string;
-  generatedBy?: (number | null) | User;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "period-end-adjustments".
- */
-export interface PeriodEndAdjustment {
-  id: number;
-  tenant: number | Tenant;
-  adjustmentId: string;
-  adjustmentType:
-    | 'depreciation'
-    | 'interest_accrual'
-    | 'salary_accrual'
-    | 'inventory_variance'
-    | 'allowance_doubtful'
-    | 'accrued_expenses'
-    | 'deferred_income'
-    | 'other';
-  period: string;
-  description: string;
-  adjustmentAmount: number;
-  debitAccount: number | GlAccount;
-  creditAccount: number | GlAccount;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('draft' | 'calculated' | 'approved' | 'posted' | 'reversed') | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "depreciation-schedules".
- */
-export interface DepreciationSchedule {
-  id: number;
-  tenant: number | Tenant;
-  scheduleId: string;
-  fixedAsset: number | FixedAsset;
-  periodEnd: string;
-  periodStart: string;
-  depreciationAmount: number;
-  /**
-   * Accumulated depreciation after this entry (cents).
-   */
-  accumulatedAfter?: number | null;
-  /**
-   * Book value after this entry (cents).
-   */
-  bookValueAfter?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  method?:
-    | ('straight_line' | 'declining_balance' | 'double_declining' | 'units_of_activity' | 'sum_of_years_digits')
-    | null;
-  status?: ('calculated' | 'posted' | 'reversed') | null;
-  postedAt?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fixed-assets".
- */
-export interface FixedAsset {
-  id: number;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid: string;
-  tenant: number | Tenant;
-  assetNumber: string;
-  description: string;
-  assetCategory:
-    | 'land'
-    | 'building'
-    | 'equipment'
-    | 'machinery'
-    | 'vehicles'
-    | 'furniture_fixtures'
-    | 'leasehold_improvements'
-    | 'software'
-    | 'intangible_assets'
-    | 'other';
-  acquisitionDate: string;
-  assetCost: number;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Asset supplier/vendor (IAS-16 §16(a) — directly attributable cost source).
-   */
-  supplier?: (number | null) | Vendor;
-  /**
-   * Reference PO number
-   */
-  purchaseOrder?: string | null;
-  /**
-   * Physical location/department
-   */
-  location?: string | null;
-  serialNumber?: string | null;
-  barcode?: string | null;
-  depreciationMethod?:
-    | ('straight_line' | 'declining_balance' | 'double_declining_balance' | 'units_of_activity' | 'sum_of_years_digits')
-    | null;
-  usefulLifeYears: number;
-  /**
-   * Expected residual/salvage value
-   */
-  residualValue?: number | null;
-  /**
-   * Cost - Residual Value
-   */
-  depreciableBase?: number | null;
-  annualDepreciationAmount?: number | null;
-  accumulatedDepreciation?: number | null;
-  /**
-   * Cost - Accumulated Depreciation
-   */
-  bookValue?: number | null;
-  /**
-   * Date depreciation begins
-   */
-  depreciationStartDate?: string | null;
-  lastDepreciationDate?: string | null;
-  /**
-   * Total units expected to produce
-   */
-  totalUnitsExpected?: number | null;
-  /**
-   * Units produced so far
-   */
-  unitsProducedToDate?: number | null;
-  /**
-   * Fixed asset GL account (1600+)
-   */
-  assetAccount: number | GlAccount;
-  /**
-   * Accumulated depreciation contra-asset account
-   */
-  accumulatedDepreciationAccount: number | GlAccount;
-  /**
-   * Depreciation expense account (6000+)
-   */
-  depreciationExpenseAccount: number | GlAccount;
-  status?: ('active' | 'inactive' | 'fully_depreciated' | 'disposed' | 'held_for_sale') | null;
-  /**
-   * Date when asset was disposed
-   */
-  disposalDate?: string | null;
-  /**
-   * Amount received from disposal
-   */
-  disposalProceeds?: number | null;
-  /**
-   * Gain or loss on disposal
-   */
-  gainOnDisposal?: number | null;
-  lastMaintenanceDate?: string | null;
-  nextMaintenanceDate?: string | null;
-  maintenanceNotes?: string | null;
-  notes?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-calculations".
- */
-export interface TaxCalculation {
-  id: number;
-  tenant: number | Tenant;
-  calculationId: string;
-  taxType: 'sales_tax' | 'vat' | 'gst' | 'income_tax' | 'payroll_tax';
-  jurisdiction: 'us_federal' | 'us_state' | 'eu' | 'ca_federal' | 'ca_provincial' | 'au' | 'jp' | 'cn' | 'in' | 'br';
-  period: string;
-  taxRate: number;
-  grossAmount: number;
-  taxableAmount: number;
-  taxAmount: number;
-  netAmount: number;
-  taxPayableAccount: number | GlAccount;
-  taxExpenseAccount?: (number | null) | GlAccount;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('calculated' | 'approved' | 'posted' | 'filed' | 'paid') | null;
-  filingDeadline?: string | null;
-  paymentDeadline?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-returns".
- */
-export interface TaxReturn {
-  id: number;
-  tenant: number | Tenant;
-  returnId: string;
-  returnType:
-    | 'vat_monthly'
-    | 'vat_quarterly'
-    | 'vat_annual'
-    | 'esl'
-    | 'intrastat'
-    | 'sales_tax_us'
-    | 'gst'
-    | 'corporate_income'
-    | 'withholding'
-    | 'saft';
-  jurisdiction: number | TaxJurisdiction;
-  periodStart: string;
-  periodEnd: string;
-  taxableSales?: number | null;
-  taxableAcquisitions?: number | null;
-  outputTax?: number | null;
-  inputTax?: number | null;
-  netLiability?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Source TaxCalculation snapshots aggregated into this return.
-   */
-  taxCalculations?: (number | TaxCalculation)[] | null;
-  status?: ('draft' | 'in_review' | 'ready' | 'filed' | 'accepted' | 'rejected' | 'amended') | null;
-  filedAt?: string | null;
-  filedBy?: (number | null) | User;
-  /**
-   * Confirmation reference returned by the tax authority.
-   */
-  authorityReference?: string | null;
-  paidAt?: string | null;
-  attachments?:
-    | {
-        media?: (number | null) | Media;
-        id?: string | null;
-      }[]
-    | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "currency-rates".
- */
-export interface CurrencyRate {
-  id: number;
-  tenant: number | Tenant;
-  rateId: string;
-  fromCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
-  toCurrency: 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX';
-  rate: number;
-  rateDate: string;
-  source: 'manual' | 'bank_api' | 'ecb' | 'fed' | 'xe' | 'other';
-  inverse?: number | null;
-  midMarketRate?: number | null;
-  bidRate?: number | null;
-  askRate?: number | null;
-  isActive?: boolean | null;
-  usedInTransactions?: number | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "refunds".
- */
-export interface Refund {
-  id: number;
-  tenant: number | Tenant;
-  refundNumber: string;
-  creditMemo: number | CreditMemo;
-  invoice?: (number | null) | Invoice;
-  order?: (number | null) | SalesOrder;
-  amount: number;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
-  /**
-   * Stripe refund ID for cross-system traceability.
-   */
-  stripeRefundId?: string | null;
-  status?: ('draft' | 'pending' | 'issued' | 'settled' | 'failed' | 'voided') | null;
-  refundedAt?: string | null;
-  settledAt?: string | null;
-  failureReason?: string | null;
-  journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "budget-planning".
- */
-export interface BudgetPlanning {
-  id: number;
-  tenant: number | Tenant;
-  budgetId: string;
-  fiscalYear: number;
-  /**
-   * Department or cost center
-   */
-  department: string;
-  budgetPeriod?: ('monthly' | 'quarterly' | 'annual') | null;
-  budgetLineItems?:
-    | {
-        glAccount: number | GlAccount;
-        accountNumber?: string | null;
-        accountName?: string | null;
-        accountType?: string | null;
-        budgetAmount: number;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  totalBudget?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consent-records".
- */
-export interface ConsentRecord {
-  id: number;
-  tenant: number | Tenant;
-  consentId: string;
-  dataSubject: number | User;
-  purpose: 'marketing' | 'analytics' | 'transactional' | 'profiling' | 'third_party_sharing' | 'cookies_optional';
-  lawfulBasis?:
-    | ('consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests')
-    | null;
-  /**
-   * Exact text presented to the data subject at the moment of consent.
-   */
-  consentText: string;
-  /**
-   * Version identifier of the consent text (for re-consent flows).
-   */
-  consentVersion?: string | null;
-  capturedVia?: ('web_form' | 'api' | 'paper' | 'verbal' | 'email_double_optin') | null;
-  /**
-   * Captured at consent time for evidence (Art.7(1)).
-   */
-  ipAddress?: string | null;
-  userAgent?: string | null;
-  status?: ('given' | 'withdrawn' | 'expired') | null;
-  givenAt?: string | null;
-  withdrawnAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "data-subject-requests".
- */
-export interface DataSubjectRequest {
-  id: number;
-  tenant: number | Tenant;
-  requestId: string;
-  dataSubject: number | User;
-  requestType: 'access' | 'rectification' | 'erasure' | 'restriction' | 'portability' | 'object' | 'withdraw_consent';
-  requestDetail?: string | null;
-  submittedAt: string;
-  /**
-   * Art.12(3) deadline — submittedAt + 1 month (extensible by 2 months).
-   */
-  dueAt?: string | null;
-  status?:
-    | (
-        | 'submitted'
-        | 'identity_verification'
-        | 'in_progress'
-        | 'awaiting_customer'
-        | 'completed'
-        | 'rejected'
-        | 'escalated'
-      )
-    | null;
-  completedAt?: string | null;
-  rejectionReason?: string | null;
-  /**
-   * JSON record of what was exported/erased/restricted.
-   */
-  fulfilmentEvidence?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * DPO or staff member handling this request.
-   */
-  handler?: (number | null) | User;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "data-processing-activities".
- */
-export interface DataProcessingActivity {
-  id: number;
-  tenant: number | Tenant;
-  activityName: string;
-  purpose: string;
-  controllerOrProcessor: 'controller' | 'processor' | 'joint_controller';
-  lawfulBasis: 'consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests';
-  dataCategories?:
-    | {
-        category: string;
-        /**
-         * Art.9 special category data?
-         */
-        special?: boolean | null;
-        id?: string | null;
-      }[]
-    | null;
-  dataSubjectCategories?:
-    | {
-        /**
-         * e.g. customers, employees, prospects.
-         */
-        category: string;
-        id?: string | null;
-      }[]
-    | null;
-  recipientCategories?:
-    | {
-        recipient: string;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Art.44 transfers — list each destination + safeguard.
-   */
-  thirdCountryTransfers?:
-    | {
-        country: string;
-        safeguard?: ('adequacy_decision' | 'sccs' | 'bcrs' | 'derogation') | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * How long we keep this data + basis.
-   */
-  retentionPeriod: string;
-  /**
-   * Technical + organisational measures (Art.32).
-   */
-  securityMeasures?: string | null;
-  status?: ('active' | 'suspended' | 'retired') | null;
-  /**
-   * Schedule a review at least annually.
-   */
-  reviewDueAt: string;
-  /**
-   * Data Protection Officer responsible for this activity.
-   */
-  dpo?: (number | null) | User;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-findings".
- */
-export interface AuditFinding {
-  id: number;
-  tenant: number | Tenant;
-  findingId: string;
-  title: string;
-  description: string;
-  severity: 'observation' | 'deficiency' | 'significant_deficiency' | 'material_weakness';
-  classification: 'design' | 'operating' | 'documentation' | 'compensating';
-  /**
-   * Originating control test (if any).
-   */
-  controlTest?: (number | null) | ControlTest;
-  reportedAt: string;
-  reportedBy?: (number | null) | User;
-  remediationPlan?: string | null;
-  remediationOwner?: (number | null) | User;
-  targetCloseDate?: string | null;
-  status?: ('open' | 'in_remediation' | 'closed_remediated' | 'closed_accepted' | 'closed_false_positive') | null;
-  closedAt?: string | null;
-  closedBy?: (number | null) | User;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "control-tests".
- */
-export interface ControlTest {
-  id: number;
-  tenant: number | Tenant;
-  testId: string;
-  /**
-   * e.g. "Period close — close-vs-creator SoD".
-   */
-  controlName: string;
-  controlObjective: string;
-  controlFrequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'event-driven') | null;
-  testType: 'inquiry' | 'observation' | 'inspection' | 'reperformance' | 'walkthrough' | 'automated';
-  periodStart: string;
-  periodEnd: string;
-  sampleSize?: number | null;
-  /**
-   * Sample units that failed the test.
-   */
-  exceptions?: number | null;
-  result?: ('effective' | 'effective_with_exceptions' | 'ineffective' | 'na') | null;
-  evidence?: string | null;
-  tester?: (number | null) | User;
-  /**
-   * Independent reviewer (≠ tester per SoD).
-   */
-  reviewer?: (number | null) | User;
-  /**
-   * Findings raised from this test.
-   */
-  findings?: {
-    docs?: (number | AuditFinding)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
+    ratePercent?: number | null;
+    /**
+     * Optional tiered-plan detail (e.g. 5% to quota, 10% over quota).
+     */
+    tieredOverride?: string | null;
   };
-  status?: ('planned' | 'in_progress' | 'tester_complete' | 'reviewed' | 'signed_off') | null;
-  signedOffAt?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Every external-API call (FX / VAT / sanctions / e-invoicing / mTLS filing) — one row per call, source-attributed for SOX §404 traceability.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "api-audit-events".
- */
-export interface ApiAuditEvent {
-  id: number;
-  tenant: number | Tenant;
   /**
-   * Stable id (e.g. APIE-2026-05-09-001 or a UUID).
+   * Contract value the commission was calculated on (cents).
    */
-  eventId: string;
-  kind:
-    | 'fx_rate'
-    | 'vat_validation'
-    | 'sanctions'
-    | 'e_invoicing'
-    | 'business_registry'
-    | 'tax_authority'
-    | 'bank_directory'
-    | 'open_banking'
-    | 'address_validation'
-    | 'payroll'
-    | 'statistics'
-    | 'other';
+  contractValue: number;
   /**
-   * ISO-3166-1 alpha-2 the call was made for.
+   * Gross commission (cents).
    */
-  country: string;
+  commissionAmount: number;
+  recognitionTreatment: 'capitalise_amortise' | 'expense_immediately' | 'renewal';
   /**
-   * Authority label from the resolver result (`БНБ`, `ECB`, `VIES`, `EU CFSP`, `Peppol Directory`, `НАП`, …).
+   * Months over which capitalised commission is amortised (typically the contract life including expected renewals per IFRS-15 §99).
    */
-  source: string;
+  amortisationPeriodMonths?: number | null;
   /**
-   * Mirrors `ApiResult.ok` — false rows are diagnostic.
+   * Cumulative amortisation expense recognised.
    */
-  resultOk: boolean;
+  amortisedToDate?: number | null;
   /**
-   * Populated when `resultOk` is false — copied from `ApiResult.error`.
+   * Outstanding capitalised commission asset (cents).
    */
-  errorMessage?: string | null;
+  capitalisedAssetBalance?: number | null;
+  paymentStatus?: ('pending' | 'approved' | 'paid' | 'clawed_back' | 'disputed') | null;
+  paymentDate?: string | null;
+  paidViaPayrollRun?: (number | null) | PayrollRun;
   /**
-   * Request envelope — sanitise before persisting (never carries secrets). Optional.
+   * IAS-37 clawback-risk provision (when contract churns / refunds within clawback window).
    */
-  payloadIn?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Response data — copied from `ApiResult.data`. Optional.
-   */
-  payloadOut?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Signed PDF cover sheets per completed e2e walk-through — SOX §404 evidence pack with optional eIDAS qualified seal.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "evidence-attestations".
- */
-export interface EvidenceAttestation {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Filename-style id (e.g. `2026-05-09-order-to-cash-tenant-42`).
-   */
-  attestationId: string;
-  /**
-   * Workflow slug (`order-to-cash`, `procure-to-pay`, `record-to-report`).
-   */
-  workflow: string;
-  /**
-   * ISO-3166-1 alpha-2 the walk-through ran against.
-   */
-  country: string;
-  /**
-   * ISO-8601 timestamp the walk-through completed.
-   */
-  capturedAt: string;
-  pdfA: '1b' | '2b' | '2a' | '3b';
-  pdfUa?: ('none' | '1' | '2') | null;
-  /**
-   * True when the attestation carries a PAdES qualified signature.
-   */
-  signed?: boolean | null;
-  /**
-   * PAdES baseline level the signature claims (declared in `/Prop_Build`).
-   */
-  padesLevel?: ('B-B' | 'B-T' | 'B-LT' | 'B-LTA') | null;
-  /**
-   * The PDF/A-2b + PDF/UA-1 attestation bytes (uploaded to R2 via the Media collection).
-   */
-  pdfFile?: (number | null) | Media;
-  /**
-   * CMS SignedData blob (hex-encoded) — eIDAS Art.28 qualified-seal evidence. Populated by `signBgPadesPdf`.
-   */
-  signatureValue?: string | null;
-  /**
-   * ISO 8601-1:2019 signature creation time (distinct from `capturedAt` and `approvedAt`).
-   */
-  signedAt?: string | null;
-  /**
-   * eIDAS qualified-seal certificate chain (PEM-encoded). Subject DN is denormalised in `signedBy`.
-   */
-  signingCertificate?: string | null;
-  /**
-   * Subject distinguished name (DN) of the signer — denormalised from the signingCertificate for filtering.
-   */
-  signedBy?: string | null;
-  /**
-   * SHA-256 (NIST FIPS-180-4) hex digest of the signed bytes — message-digest for tamper-detection.
-   */
-  signatureDigest?: string | null;
-  /**
-   * Number of walk-through steps captured in the attestation body.
-   */
-  stepsCount?: number | null;
-  /**
-   * Number of UX gaps recorded during the walk-through.
-   */
-  gapsCount?: number | null;
-  status?: ('generated' | 'signed' | 'filed' | 'superseded') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Analytical dimension for segment reporting (IFRS 8 / ASC 280). JE lines reference these.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cost-centers".
- */
-export interface CostCenter {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Short alphanumeric code (e.g. EU-DE-ENG-FE).
-   */
-  costCenterCode: string;
-  name: string;
-  /**
-   * Drives presentation: regions/countries roll up to consolidated; departments/teams roll up to their parent BU; profit centers carry both revenue and expense.
-   */
-  kind: 'region' | 'country' | 'business_unit' | 'department' | 'team' | 'project' | 'cost_pool' | 'profit_center';
-  /**
-   * Parent in the hierarchy. Null = root.
-   */
-  parent?: (number | null) | CostCenter;
-  /**
-   * ISO 3166-1 alpha-2 — populated for kind = country, optional otherwise. Used by IFRS 8 / ASC 280 geographic disclosure.
-   */
-  country?: string | null;
-  /**
-   * Cost-center owner / department head.
-   */
-  manager?: (number | null) | User;
-  /**
-   * IFRS 8 §13: meets the 10% revenue / asset / loss threshold for reportable segments.
-   */
-  reportableSegment?: boolean | null;
-  /**
-   * JE lines may post revenue accounts to this CC.
-   */
-  allowsRevenue?: boolean | null;
-  /**
-   * JE lines may post expense accounts to this CC.
-   */
-  allowsExpense?: boolean | null;
-  /**
-   * JE lines may post capex (FixedAssets) to this CC.
-   */
-  allowsCapex?: boolean | null;
-  /**
-   * When this is a cost pool (kind = cost_pool), describe the periodic allocation to consumer cost-centers (basis + percentages).
-   */
-  allocationRules?:
-    | {
-        targetCostCenter: number | CostCenter;
-        basis?: ('headcount' | 'floor_area' | 'revenue_pct' | 'manual_pct' | 'direct_costs_pct') | null;
-        percentage?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  effectiveFrom: string;
-  /**
-   * Null = open-ended; populate on retirement.
-   */
-  effectiveTo?: string | null;
-  status?: ('active' | 'inactive' | 'retired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 16 / ASC 842 lessee leases. ROU asset + lease liability with period-end carrying amounts.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leases".
- */
-export interface Lease {
-  id: number;
-  tenant: number | Tenant;
-  leaseNumber: string;
-  /**
-   * Underlying asset description (e.g. "Office space — Sofia HQ Floor 3").
-   */
-  description?: string | null;
-  /**
-   * Counterparty / lessor.
-   */
-  lessor?: (number | null) | Address;
-  /**
-   * IFRS 16: lessee uses single model — "finance" maps to ROU+Liability. ASC 842 retains operating/finance distinction. Short-term and low-value are IFRS 16 exemptions (off-balance-sheet).
-   */
-  classification: 'finance' | 'operating' | 'short_term' | 'low_value';
-  underlyingAssetCategory?: ('real_estate' | 'vehicles' | 'equipment' | 'it_hardware' | 'software' | 'other') | null;
-  /**
-   * Date the lessor makes the underlying asset available — IFRS 16 §22.
-   */
-  commencementDate: string;
-  /**
-   * Lease end date including any reasonably certain extensions.
-   */
-  endDate: string;
-  /**
-   * Computed lease term in months (commencement → end including extension options reasonably certain — IFRS 16 §B37).
-   */
-  leaseTermMonths?: number | null;
-  /**
-   * Fixed periodic payment, integer cents. Per `paymentFrequency` cycle.
-   */
-  fixedPayment: number;
-  paymentFrequency?: ('monthly' | 'quarterly' | 'semi_annually' | 'annually') | null;
-  paymentTiming?: ('in_advance' | 'in_arrears') | null;
-  /**
-   * Variable lease payments (e.g. CPI-linked, performance-based). Per IFRS 16 §27, only those linked to an index/rate are included in the liability — capture the rules here for next-remeasurement.
-   */
-  variablePaymentNotes?: string | null;
-  /**
-   * Residual value guaranteed to lessor — included in liability per IFRS 16 §27.
-   */
-  residualValueGuarantee?: number | null;
-  /**
-   * Penalty for terminating, included in liability if termination is reasonably certain (IFRS 16 §27).
-   */
-  terminationPenalty?: number | null;
-  /**
-   * IFRS 16 §26 — use rate implicit in the lease if readily determinable; otherwise IBR.
-   */
-  discountRateBasis?: ('rate_implicit' | 'incremental_borrowing') | null;
-  /**
-   * Annual discount rate (percent, e.g. 4.5 for 4.5%).
-   */
-  discountRatePercent: number;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * PV of unpaid lease payments at commencement, discounted at the rate above. Computed by leaseService.calculateInitialMeasurement.
-   */
-  initialLeaseLiability?: number | null;
-  /**
-   * Initial direct costs incurred by the lessee — IFRS 16 §24(c).
-   */
-  initialDirectCosts?: number | null;
-  /**
-   * Lease incentives received from the lessor — IFRS 16 §24(b).
-   */
-  leaseIncentivesReceived?: number | null;
-  /**
-   * Lease payments made at or before commencement — IFRS 16 §24(b).
-   */
-  prepaidRent?: number | null;
-  /**
-   * = initialLeaseLiability + initialDirectCosts + prepaidRent − leaseIncentivesReceived. IFRS 16 §24.
-   */
-  initialRouAsset?: number | null;
-  /**
-   * ROU asset carrying amount as of last posting (after amortisation).
-   */
-  rouAssetCarrying?: number | null;
-  /**
-   * Lease liability carrying amount as of last posting (after interest + payment).
-   */
-  liabilityCarrying?: number | null;
-  lastPostingDate?: string | null;
-  /**
-   * Lease modifications (scope, payments, term). IFRS 16 §44-§46 / ASC 842-10-25-8 trigger remeasurement.
-   */
-  modifications?:
-    | {
-        effectiveDate: string;
-        kind:
-          | 'scope_increase_separate'
-          | 'scope_increase_combined'
-          | 'term_extension'
-          | 'term_reduction'
-          | 'payment_change'
-          | 'discount_rate_reset';
-        newDiscountRatePercent?: number | null;
-        newFixedPayment?: number | null;
-        newEndDate?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * IAS 36 impairment reserve on the ROU asset.
-   */
-  impairmentReserve?: number | null;
-  status?: ('draft' | 'active' | 'modified' | 'terminated' | 'expired') | null;
-  /**
-   * Date the lease was terminated early (if applicable).
-   */
-  terminationDate?: string | null;
-  /**
-   * Right-of-use asset GL account.
-   */
-  rouAssetAccount?: (number | null) | GlAccount;
-  /**
-   * Lease liability GL account.
-   */
-  leaseLiabilityAccount?: (number | null) | GlAccount;
-  rouAmortizationAccount?: (number | null) | GlAccount;
-  interestExpenseAccount?: (number | null) | GlAccount;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Per-period IAS 16 / ASC 842 evidence. One row per (lease × period). JE fires on status → posted.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "lease-period-postings".
- */
-export interface LeasePeriodPosting {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Stable id (e.g. LPP-2026-04-LEASE-001).
-   */
-  postingId: string;
-  lease: number | Lease;
-  /**
-   * Inclusive start of the period.
-   */
-  periodStart: string;
-  /**
-   * Inclusive end of the period.
-   */
-  periodEnd: string;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Lease liability carrying at start of period (cents). Source of the §36 effective-interest accretion.
-   */
-  openingLiabilityCarrying: number;
-  /**
-   * ROU asset carrying at start of period (cents).
-   */
-  openingRouCarrying: number;
-  /**
-   * Interest accretion this period (cents). IFRS 16 §36 effective-interest method: openingLiability × periodicRate.
-   */
-  interest: number;
-  /**
-   * Principal portion of the cash payment (cents). = leasePayment − interest. Reduces the liability.
-   */
-  principalRepayment: number;
-  /**
-   * Total cash paid this period. = principalRepayment + interest.
-   */
-  cashPayment: number;
-  /**
-   * ROU asset amortisation booked this period (cents). IFRS 16 §31: typically straight-line over the lease term.
-   */
-  rouAmortisation: number;
-  /**
-   * = opening + interest − principalRepayment. Auditable evidence.
-   */
-  closingLiabilityCarrying?: number | null;
-  /**
-   * = opening − rouAmortisation.
-   */
-  closingRouCarrying?: number | null;
-  /**
-   * Overrides the lease.interestExpenseAccount.
-   */
-  interestExpenseAccount?: (number | null) | GlAccount;
-  leaseLiabilityAccount?: (number | null) | GlAccount;
-  rouAmortisationAccount?: (number | null) | GlAccount;
-  accumulatedRouAmortisationAccount?: (number | null) | GlAccount;
-  /**
-   * Cash account debited for the principal repayment. Drives the IAS 7 cash-flows financing-activities classification.
-   */
-  cashAccount?: (number | null) | GlAccount;
-  /**
-   * Cost-center the lease cost allocates to (IFRS 8 / ASC 280 segment).
-   */
-  costCenter?: (number | null) | CostCenter;
-  status?: ('calculated' | 'posted' | 'reversed') | null;
-  postedAt?: string | null;
+  clawbackProvision?: (number | null) | Provision;
   journalEntry?: (number | null) | JournalEntry;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * SEPA Direct Debit mandate register. PaymentRuns of pain.008 reference these mandate ids.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sepa-mandates".
- */
-export interface SepaMandate {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Unique mandate identifier carried in pain.008 MndtId.
-   */
-  mandateId: string;
-  localInstrument: 'CORE' | 'B2B';
-  debtorName: string;
-  /**
-   * ISO 13616 IBAN of the debtor.
-   */
-  debtorIban: string;
-  /**
-   * ISO 9362 BIC.
-   */
-  debtorBic?: string | null;
-  /**
-   * Optional link to the addresses register.
-   */
-  debtor?: (number | null) | Address;
-  /**
-   * Creditor identifier (CI) — country-specific format assigned by the regulator.
-   */
-  creditorIdentifier: string;
-  /**
-   * Date the debtor signed the mandate.
-   */
-  signatureDate: string;
-  /**
-   * Signed mandate file (PDF). Required evidence.
-   */
-  mandateDocument?: (number | null) | Media;
-  signatureMethod?: ('wet_ink' | 'qualified_electronic' | 'advanced_electronic' | 'click_accept') | null;
-  /**
-   * EPC130-08: a mandate becomes obsolete 36 months after the most recent collection. The auto-state-machine driven by lastCollectionAt.
-   */
-  sequenceState?: ('pending_first' | 'active_recurring' | 'final_submitted' | 'expired') | null;
-  /**
-   * Most recent direct-debit collection date — drives the 36-month rule.
-   */
-  lastCollectionAt?: string | null;
-  /**
-   * Computed: lastCollectionAt + 36 months (or signatureDate + 36 months if never collected).
-   */
-  expiryDate?: string | null;
-  revokedAt?: string | null;
-  revocationReason?: string | null;
-  status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * ISO 20022 batch payment initiation — pain.001 (AP credit transfer) or pain.008 (AR direct debit).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-runs".
- */
-export interface PaymentRun {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Human-readable run id (e.g. PR-2026-05-AP-1). Maps to ISO 20022 GrpHdr/MsgId.
-   */
-  runId: string;
-  /**
-   * ISO 20022 message family. pain.001 pays vendors; pain.008 collects from customers (SDD).
-   */
-  messageType: 'pain_001' | 'pain_008';
-  /**
-   * pain.008 only. SEPA SDD sequence: FRST (first), RCUR (recurring), OOFF (one-off), FNAL (final).
-   */
-  sequenceType?: ('FRST' | 'RCUR' | 'OOFF' | 'FNAL') | null;
-  /**
-   * pain.008: CORE (B2C SDD), B2B (B2B SDD).
-   */
-  localInstrument?: ('CORE' | 'B2B') | null;
-  /**
-   * Debtor account for pain.001; creditor account for pain.008.
-   */
-  sourceBankAccount: number | BankAccount;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Bank-requested execution / collection date. Maps to PmtInf/ReqdExctnDt or ReqdColltnDt.
-   */
-  requestedExecutionDate: string;
-  /**
-   * One row per credit transfer (pain.001) or direct debit (pain.008). Maps to CdtTrfTxInf or DrctDbtTxInf.
-   */
-  transactions?:
-    | {
-        /**
-         * Unique end-to-end id, propagated through the chain.
-         */
-        endToEndId: string;
-        /**
-         * Amount in cents.
-         */
-        amount: number;
-        /**
-         * Vendor (pain.001) or customer (pain.008) name.
-         */
-        counterpartyName: string;
-        counterpartyIban: string;
-        counterpartyBic?: string | null;
-        /**
-         * Structured creditor reference (ISO 11649 RF) preferred; falls back to invoice/bill number.
-         */
-        remittanceReference?: string | null;
-        /**
-         * pain.008 only — the SEPA SDD mandate id.
-         */
-        mandateId?: string | null;
-        /**
-         * Originating bill (pain.001) or invoice (pain.008).
-         */
-        sourceBill?: (number | null) | Invoice;
-        /**
-         * Payment record created when this leg settles.
-         */
-        paymentRecord?: (number | null) | Payment;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Computed = transactions.length. Maps to GrpHdr/NbOfTxs.
-   */
-  numberOfTransactions?: number | null;
-  /**
-   * Computed = Σ transactions.amount. Maps to GrpHdr/CtrlSum.
-   */
-  controlSum?: number | null;
-  preparedBy?: (number | null) | User;
-  preparedAt?: string | null;
-  authorisedBy?: (number | null) | User;
-  authorisedAt?: string | null;
-  /**
-   * Generated pain.00X XML filename.
-   */
-  exportFilename?: string | null;
-  exportedAt?: string | null;
-  /**
-   * Bank acknowledged receipt.
-   */
-  submittedAt?: string | null;
-  /**
-   * All transactions matched on a bank statement.
-   */
-  settledAt?: string | null;
-  /**
-   * pain.002 status reason (ISO 20022 ExternalPaymentTransactionStatus1Code).
-   */
-  bankResponseStatus?: ('ACSC' | 'ACSP' | 'ACCP' | 'PDNG' | 'RJCT' | 'PART') | null;
-  /**
-   * pain.002 reason code (e.g. AC01 incorrect account, AM04 insufficient funds).
-   */
-  bankResponseReasonCode?: string | null;
-  status?:
-    | ('draft' | 'pending_review' | 'approved' | 'exported' | 'submitted' | 'settled' | 'rejected' | 'cancelled')
-    | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "account-reconciliations".
- */
-export interface AccountReconciliation {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Human-readable id, e.g. REC-2026-04-OPS-1
-   */
-  reconciliationId: string;
-  /**
-   * Reconciliation type — drives which adjustments are valid. Bank uses the IAS-7 layout; GL→subledger compares control-account balance to subledger detail; intercompany compares paired entity balances.
-   */
-  kind: 'bank' | 'gl_to_subledger' | 'intercompany';
-  /**
-   * The control account being reconciled.
-   */
-  glAccount: number | GlAccount;
-  /**
-   * For kind = bank, the IBAN/BIC master being reconciled. Null for GL-to-subledger and intercompany.
-   */
-  bankAccount?: (number | null) | BankAccount;
-  /**
-   * Reconciliation point in time (period-end).
-   */
-  asOfDate: string;
-  periodStart?: string | null;
-  periodEnd?: string | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Bank statement closing balance / subledger total / counterparty balance. The "external" side.
-   */
-  balancePerExternal: number;
-  /**
-   * GL control-account balance as of asOfDate.
-   */
-  balancePerGL: number;
-  /**
-   * Bank-side / counterparty-side reconciling items: deposits in transit, outstanding checks, bank errors. Each item carries an aging bucket for the SOX evidence pack.
-   */
-  externalAdjustments?:
-    | {
-        category:
-          | 'deposit_in_transit'
-          | 'outstanding_check'
-          | 'bank_error'
-          | 'subledger_timing'
-          | 'intercompany_timing'
-          | 'other';
-        description: string;
-        amount: number;
-        originatedAt: string;
-        agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
-        bankTransaction?: (number | null) | BankTransaction;
-        journalEntry?: (number | null) | JournalEntry;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * GL-side reconciling items needing adjusting JEs: unrecorded interest, unrecorded bank fees, classification errors, missing entries.
-   */
-  glAdjustments?:
-    | {
-        category:
-          | 'unrecorded_interest'
-          | 'unrecorded_fee'
-          | 'classification_error'
-          | 'missing_entry'
-          | 'gl_error'
-          | 'other';
-        description: string;
-        amount: number;
-        originatedAt: string;
-        agingBucket?: ('current' | 'aging' | 'overdue' | 'stale') | null;
-        journalEntry?: (number | null) | JournalEntry;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * balancePerExternal + Σ external adjustments (signed).
-   */
-  adjustedExternalBalance?: number | null;
-  /**
-   * balancePerGL + Σ GL adjustments (signed).
-   */
-  adjustedGLBalance?: number | null;
-  /**
-   * adjustedExternalBalance − adjustedGLBalance. Must be 0 (within rounding tolerance) to approve.
-   */
-  difference?: number | null;
-  preparedBy?: (number | null) | User;
-  preparedAt?: string | null;
-  reviewedBy?: (number | null) | User;
-  reviewedAt?: string | null;
-  rejectionReason?: string | null;
-  status?: ('draft' | 'pending_review' | 'approved' | 'rejected' | 'reopened') | null;
-  /**
-   * Originating bank statement for kind = bank. Null otherwise.
-   */
-  sourceStatement?: (number | null) | BankStatement;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Collection-process trail per overdue invoice. IFRS 9 / CECL evidence layer.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "dunning-cycles".
- */
-export interface DunningCycle {
-  id: number;
-  tenant: number | Tenant;
-  cycleId: string;
-  invoice: number | Invoice;
-  /**
-   * Customer (denormalized from invoice for reporting).
-   */
-  customer?: (number | null) | Address;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Outstanding balance at cycle entry, integer cents. Recomputed on each job tick.
-   */
-  amountOverdue: number;
-  /**
-   * Original invoice due date (BT-9).
-   */
-  invoiceDueDate: string;
-  /**
-   * Days between invoiceDueDate and the most recent job tick.
-   */
-  daysPastDue?: number | null;
-  currentStage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off';
-  currentStageEnteredAt?: string | null;
-  /**
-   * Computed by the job — when the next stage transition is due.
-   */
-  nextActionDate?: string | null;
-  /**
-   * Append-only stage entries. Auditor queries this for ECL evidence — DO NOT delete prior entries.
-   */
-  history?:
-    | {
-        stage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
-        enteredAt: string;
-        amountOverdueAtEntry?: number | null;
-        communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
-        communicationReference?: string | null;
-        notes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Pause the auto-progression (e.g. customer disputed; finance held). Job skips paused cycles.
-   */
-  paused?: boolean | null;
-  pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
-  /**
-   * Reference to payment plan / agreement document.
-   */
-  paymentPlanRef?: string | null;
-  /**
-   * Allowance for doubtful accounts attributable to this invoice — feeds AllowanceForDoubtfulAccounts. Computed via IFRS 9 PD × LGD × EAD or simplified-approach lifetime ECL.
-   */
-  eclProvision?: number | null;
-  /**
-   * JE id when stage advances to written_off (Dr Bad Debt Expense / Cr AR or Allowance).
-   */
-  writeOffJournalEntry?: (number | null) | JournalEntry;
-  status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
-  resolvedAt?: string | null;
+  status?: ('draft' | 'approved' | 'posted' | 'amortising' | 'fully_amortised' | 'clawed_back') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -6638,7 +5890,7 @@ export interface DunningCycle {
  */
 export interface Employee {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Internal employee id (e.g. EMP-2026-001).
    */
@@ -6798,78 +6050,6 @@ export interface Employee {
   createdAt: string;
 }
 /**
- * Daily time records. Drives payroll variable pay + project / cost-center cost allocation.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "time-entries".
- */
-export interface TimeEntry {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Stable id (e.g. TE-2026-04-001).
-   */
-  entryId: string;
-  employee: number | Employee;
-  workDate: string;
-  /**
-   * Duration in minutes. Capped at 1,440 per day; multi-day blocks split into separate rows.
-   */
-  minutes: number;
-  /**
-   * Drives the payroll multiplier and which GL accounts the cost posts to. PTO / sick / parental decrement the employee's benefits.paidTimeOffBalance.
-   */
-  kind:
-    | 'regular'
-    | 'overtime_15'
-    | 'overtime_2'
-    | 'night_shift'
-    | 'holiday_work'
-    | 'pto'
-    | 'sick_leave'
-    | 'parental_leave'
-    | 'bereavement'
-    | 'unpaid_leave'
-    | 'training';
-  /**
-   * Cost-center the labor cost allocates to. Defaults to the employee's department; can override per-entry for cross-charges.
-   */
-  costCenter?: (number | null) | CostCenter;
-  /**
-   * Optional project / job code for project accounting. Free-text until a Projects collection lands.
-   */
-  project?: string | null;
-  /**
-   * Optional task / work breakdown structure ref.
-   */
-  task?: string | null;
-  /**
-   * What was done. Required for billable / chargeable hours.
-   */
-  description?: string | null;
-  /**
-   * Hours billable to a customer (project accounting / IFRS 15 input-method progress).
-   */
-  billable?: boolean | null;
-  /**
-   * Rate per hour in cents — for billable rows only. Drives the IFRS 15 over-time recognition when the PO uses labor_hours measurement.
-   */
-  billableRate?: number | null;
-  status?: ('draft' | 'submitted' | 'approved' | 'rejected' | 'posted') | null;
-  submittedAt?: string | null;
-  rejectionReason?: string | null;
-  /**
-   * Payroll run that consumed this entry — set when status flips to posted.
-   */
-  payrollRun?: (number | null) | PayrollRun;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Periodic batch payroll. Aggregates approved TimeEntries, computes gross-to-net, posts JEs, and emits the pain.001 disbursement file.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -6877,7 +6057,7 @@ export interface TimeEntry {
  */
 export interface PayrollRun {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Human-readable id (e.g. PR-2026-04-MONTHLY).
    */
@@ -7016,129 +6196,113 @@ export interface PayrollRun {
   createdAt: string;
 }
 /**
- * Period-end bank-balance proof — SOX §404 TOM-CSH-01 evidence. Pairs the GL cash balance against the bank-statement closing balance and quantifies the variance.
+ * ISO 20022 batch payment initiation — pain.001 (AP credit transfer) or pain.008 (AR direct debit).
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-reconciliations".
+ * via the `definition` "payment-runs".
  */
-export interface BankReconciliation {
+export interface PaymentRun {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
-   * Sequential reconciliation reference (e.g. `REC-2026-04-EUR-MAIN`).
+   * Human-readable run id (e.g. PR-2026-05-AP-1). Maps to ISO 20022 GrpHdr/MsgId.
    */
-  reference: string;
-  bankAccount: number | BankAccount;
+  runId: string;
   /**
-   * ISO 8601 — the as-of date the reconciliation proves.
+   * ISO 20022 message family. pain.001 pays vendors; pain.008 collects from customers (SDD).
    */
-  reconciliationDate: string;
+  messageType: 'pain_001' | 'pain_008';
   /**
-   * Statement period the reconciliation covers — start.
+   * pain.008 only. SEPA SDD sequence: FRST (first), RCUR (recurring), OOFF (one-off), FNAL (final).
    */
-  periodStart?: string | null;
+  sequenceType?: ('FRST' | 'RCUR' | 'OOFF' | 'FNAL') | null;
   /**
-   * Statement period the reconciliation covers — end.
+   * pain.008: CORE (B2C SDD), B2B (B2B SDD).
    */
-  periodEnd?: string | null;
+  localInstrument?: ('CORE' | 'B2B') | null;
   /**
-   * The camt.053 statement this reconciliation proves out against.
+   * Debtor account for pain.001; creditor account for pain.008.
    */
-  bankStatement?: (number | null) | BankStatement;
+  sourceBankAccount: number | BankAccount;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * Closing balance per bank statement (camt.053 CLBD), in cents.
+   * Bank-requested execution / collection date. Maps to PmtInf/ReqdExctnDt or ReqdColltnDt.
    */
-  bankStatementBalance: number;
+  requestedExecutionDate: string;
   /**
-   * GL cash account balance as of `reconciliationDate`, in cents.
+   * One row per credit transfer (pain.001) or direct debit (pain.008). Maps to CdtTrfTxInf or DrctDbtTxInf.
    */
-  bookBalance: number;
-  /**
-   * bookBalance − bankStatementBalance — must be explained by reconcilingItems.
-   */
-  difference?: number | null;
-  /**
-   * Outstanding deposits, in-transit cheques, bank fees not yet booked, etc.
-   */
-  reconcilingItems?:
+  transactions?:
     | {
-        kind: 'outstanding_deposit' | 'outstanding_cheque' | 'bank_fee' | 'interest_earned' | 'nsf_return' | 'other';
         /**
-         * Signed amount in cents.
+         * Unique end-to-end id, propagated through the chain.
+         */
+        endToEndId: string;
+        /**
+         * Amount in cents.
          */
         amount: number;
-        description: string;
-        reference?: string | null;
+        /**
+         * Vendor (pain.001) or customer (pain.008) name.
+         */
+        counterpartyName: string;
+        counterpartyIban: string;
+        counterpartyBic?: string | null;
+        /**
+         * Structured creditor reference (ISO 11649 RF) preferred; falls back to invoice/bill number.
+         */
+        remittanceReference?: string | null;
+        /**
+         * pain.008 only — the SEPA SDD mandate id.
+         */
+        mandateId?: string | null;
+        /**
+         * Originating bill (pain.001) or invoice (pain.008).
+         */
+        sourceBill?: (number | null) | Invoice;
+        /**
+         * Payment record created when this leg settles.
+         */
+        paymentRecord?: (number | null) | Payment;
         id?: string | null;
       }[]
     | null;
-  status?: ('draft' | 'reconciled' | 'reconciled_with_variance' | 'discrepancy') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "intercompany-transactions".
- */
-export interface IntercompanyTransaction {
-  id: number;
-  tenant: number | Tenant;
   /**
-   * Pair reference — both legs of the intercompany pair carry the same reference for join.
+   * Computed = transactions.length. Maps to GrpHdr/NbOfTxs.
    */
-  reference: string;
+  numberOfTransactions?: number | null;
   /**
-   * Tenant booking the debit leg (from-side of the intercompany pair).
+   * Computed = Σ transactions.amount. Maps to GrpHdr/CtrlSum.
    */
-  fromTenant: number | Tenant;
+  controlSum?: number | null;
+  preparedBy?: (number | null) | User;
+  preparedAt?: string | null;
+  authorisedBy?: (number | null) | User;
+  authorisedAt?: string | null;
   /**
-   * Tenant booking the credit leg (to-side of the intercompany pair).
+   * Generated pain.00X XML filename.
    */
-  toTenant: number | Tenant;
+  exportFilename?: string | null;
+  exportedAt?: string | null;
   /**
-   * IFRS-10 §B86 reporting entity for the debit leg (single-tenant multi-entity hierarchy).
+   * Bank acknowledged receipt.
    */
-  fromLegalEntity?: (number | null) | LegalEntity;
+  submittedAt?: string | null;
   /**
-   * IFRS-10 §B86 reporting entity for the credit leg (single-tenant multi-entity hierarchy).
+   * All transactions matched on a bank statement.
    */
-  toLegalEntity?: (number | null) | LegalEntity;
+  settledAt?: string | null;
   /**
-   * ISO 8601 — transaction effective date.
+   * pain.002 status reason (ISO 20022 ExternalPaymentTransactionStatus1Code).
    */
-  transactionDate: string;
-  pairKind?:
-    | ('transfer' | 'service_charge' | 'goods_transfer' | 'loan' | 'capital' | 'cost_allocation' | 'other')
+  bankResponseStatus?: ('ACSC' | 'ACSP' | 'ACCP' | 'PDNG' | 'RJCT' | 'PART') | null;
+  /**
+   * pain.002 reason code (e.g. AC01 incorrect account, AM04 insufficient funds).
+   */
+  bankResponseReasonCode?: string | null;
+  status?:
+    | ('draft' | 'pending_review' | 'approved' | 'exported' | 'submitted' | 'settled' | 'rejected' | 'cancelled')
     | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Debit leg amount, in cents (booked on fromTenant).
-   */
-  debitAmount: number;
-  /**
-   * Credit leg amount, in cents (booked on toTenant). Must equal debitAmount on the same currency.
-   */
-  creditAmount: number;
-  /**
-   * JE booked on fromTenant — links source-document to GL.
-   */
-  fromJournalEntry?: (number | null) | JournalEntry;
-  /**
-   * JE booked on toTenant — links source-document to GL.
-   */
-  toJournalEntry?: (number | null) | JournalEntry;
-  /**
-   * BEPS Action 13 — local file / master file reference for transfer-pricing-bearing pairs.
-   */
-  transferPricingDoc?: string | null;
-  status?: ('draft' | 'pending_ack' | 'posted' | 'eliminated' | 'reversed') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -7147,62 +6311,92 @@ export interface IntercompanyTransaction {
   createdAt: string;
 }
 /**
- * Group-level elimination JEs applied at consolidation per IFRS 10 §B86 / ASC 810. Replayed each consolidation cycle.
+ * IAS-37 §14 register of recognised provisions (warranty / restructuring / onerous / environmental / litigation / decommissioning). Each row is a recognised liability whose timing / amount is uncertain.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consolidation-eliminations".
+ * via the `definition` "provisions".
  */
-export interface ConsolidationElimination {
+export interface Provision {
   id: number;
+  tenant?: (number | null) | Tenant;
   /**
-   * The group / parent tenant that owns the consolidation. Eliminations cross subsidiary tenants.
-   */
-  tenant: number | Tenant;
-  /**
-   * Sequential elimination reference (e.g. `ELIM-2026-Q1-001`).
+   * Tenant-unique provision reference (e.g. PROV-2026-001).
    */
   reference: string;
   /**
-   * ISO 8601 — consolidation-period as-of date the elimination applies to.
+   * Nature of the obligation (IAS-37 §85(a) disclosure).
    */
-  consolidationDate: string;
-  eliminationType:
-    | 'investment'
-    | 'ic_balance'
-    | 'ic_pl'
-    | 'unrealised_profit'
-    | 'ic_loan'
-    | 'ic_dividend'
-    | 'fctr'
+  description: string;
+  provisionType:
+    | 'warranty'
+    | 'restructuring'
+    | 'onerous_contract'
+    | 'environmental'
+    | 'decommissioning'
+    | 'litigation'
+    | 'refund'
+    | 'restoration'
     | 'other';
+  /**
+   * Reporting entity that recognises this provision.
+   */
+  legalEntity?: (number | null) | LegalEntity;
+  /**
+   * Date the obligation was first recognised on the balance sheet.
+   */
+  recognitionDate: string;
+  period: number | FiscalPeriod;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * Debit leg of the elimination JE (cents). Must equal creditAmount.
+   * IAS-37 §36 best-estimate of expenditure required to settle (cents).
    */
-  debitAmount: number;
+  bestEstimate: number;
   /**
-   * Credit leg of the elimination JE (cents).
+   * Sum of undiscounted future cash outflows (when timing extends beyond a year).
    */
-  creditAmount: number;
+  undiscountedAmount?: number | null;
   /**
-   * Subsidiary tenants whose balances this elimination touches.
+   * Pre-tax discount rate per IAS-37 §47 (decimal, e.g. 0.045 = 4.5%).
    */
-  subsidiaries?:
+  discountRate?: number | null;
+  /**
+   * Present value (cents) — what hits the balance sheet.
+   */
+  discountedAmount?: number | null;
+  /**
+   * Best estimate of when the obligation will be settled (drives current vs non-current split).
+   */
+  expectedSettlementDate?: string | null;
+  expectedSettlementWindow?: ('within_12m' | 'beyond_12m' | 'indeterminate') | null;
+  /**
+   * IAS-37 §53-58 — expected reimbursement (e.g. insurance recovery) recognised as a separate asset only when virtually certain.
+   */
+  reimbursementExpected?: {
+    amount?: number | null;
+    isVirtuallyCertain?: boolean | null;
+    reimbursingParty?: string | null;
+  };
+  movementHistory?:
     | {
-        tenant: number | Tenant;
-        role?: ('subsidiary' | 'joint_venture' | 'associate') | null;
+        period: number | FiscalPeriod;
+        movementType: 'additional' | 'used' | 'reversed' | 'unwind_discount' | 'fx_revaluation';
+        amount: number;
+        journalEntry?: (number | null) | JournalEntry;
+        movementDate: string;
+        memo?: string | null;
         id?: string | null;
       }[]
     | null;
   /**
-   * The actual elimination JE booked on the consolidation-tenant ledger.
+   * Method used to derive bestEstimate (IAS-37 §36-39 disclosure).
    */
-  sourceJournalEntry?: (number | null) | JournalEntry;
+  uncertaintySource?: ('single_estimate' | 'range_midpoint' | 'expected_value' | 'most_likely') | null;
   /**
-   * The intercompany pair this elimination resolves (if elimination_type ∈ {ic_balance, ic_pl}).
+   * Audit finding that triggered the recognition (when applicable).
    */
-  sourceIntercompany?: (number | null) | IntercompanyTransaction;
-  status?: ('draft' | 'posted' | 'reversed') | null;
+  sourceFinding?: (number | null) | AuditFinding;
+  requiresLegalReview?: boolean | null;
+  status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -7211,101 +6405,386 @@ export interface ConsolidationElimination {
   createdAt: string;
 }
 /**
- * IAS-8 §42 retrospective corrections of material errors discovered after a period was closed. Restates opening balances; never re-opens the prior period.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "prior-period-adjustments".
+ * via the `definition` "audit-findings".
  */
-export interface PriorPeriodAdjustment {
+export interface AuditFinding {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
+  findingTitle: string;
+  findingType:
+    | 'control-deficiency'
+    | 'significant-deficiency'
+    | 'material-weakness'
+    | 'misstatement'
+    | 'exception'
+    | 'observation';
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  rootCause?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  potentialImpact?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  frequencyOfOccurrence?: ('isolated' | 'occasional' | 'recurring' | 'pervasive') | null;
+  riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
+  status?: ('open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed') | null;
+  evidence?: (number | AuditEvidence)[] | null;
+  remediationPlan?: (number | null) | RemediationPlan;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-evidence".
+ */
+export interface AuditEvidence {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  evidenceTitle: string;
+  documentType:
+    | 'pdf'
+    | 'screenshot'
+    | 'signed-approval'
+    | 'bank-statement'
+    | 'gl-printout'
+    | 'reconciliation'
+    | 'workpaper'
+    | 'audit-log'
+    | 'policy'
+    | 'other';
+  documentFile?: (number | null) | Media;
+  evidenceChain?:
+    | {
+        actor?: string | null;
+        action?: string | null;
+        actionDate?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
+  retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "remediation-plans".
+ */
+export interface RemediationPlan {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  planTitle: string;
+  finding?: (number | null) | AuditFinding;
+  gap?: (number | null) | ComplianceGap;
+  remediationType:
+    | 'design-change'
+    | 'process-change'
+    | 'system-implementation'
+    | 'training'
+    | 'documentation'
+    | 'resource-addition'
+    | 'policy-update'
+    | 'organizational-change';
+  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+  owner?: string | null;
+  actionSteps?:
+    | {
+        sequence?: number | null;
+        description?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        stepOwner?: string | null;
+        targetDate?: string | null;
+        status?: ('not-started' | 'in-progress' | 'completed' | 'delayed') | null;
+        completedDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  targetDate: string;
+  completionDate?: string | null;
+  status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
+  budget?: number | null;
+  riskOfDelay?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-gaps".
+ */
+export interface ComplianceGap {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  requirement: number | ComplianceRequirement;
+  gapTitle: string;
+  gapType:
+    | 'missing-control'
+    | 'design-deficiency'
+    | 'operating-deficiency'
+    | 'documentation-gap'
+    | 'resource-gap'
+    | 'system-gap'
+    | 'process-gap';
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  status?: ('identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed') | null;
+  remediationPlan?: (number | null) | RemediationPlan;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-requirements".
+ */
+export interface ComplianceRequirement {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  requirementName: string;
+  framework: number | ComplianceFramework;
+  requirementType: 'disclosure' | 'accounting' | 'control' | 'reporting' | 'policy' | 'attestation';
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  testableStatement?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  applicableEntityTypes?: (number | EntityType)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-frameworks".
+ */
+export interface ComplianceFramework {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  frameworkType: 'gaap' | 'ifrs' | 'sox' | 'coso' | 'gdpr' | 'iso' | 'regulatory' | 'other';
+  issuingBody?: string | null;
+  version?: string | null;
+  effectiveDate: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  applicableJurisdictions?: (number | TaxingJurisdiction)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "taxing-jurisdictions".
+ */
+export interface TaxingJurisdiction {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  jurisdictionType: 'country' | 'state' | 'local' | 'special-zone';
+  isoCountryCode?: string | null;
+  isoRegionCode?: string | null;
+  currency?: string | null;
+  parent?: (number | null) | TaxingJurisdiction;
+  filingDeadlines?:
+    | {
+        description?: string | null;
+        dueDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "entity-types".
+ */
+export interface EntityType {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  code: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  applicableFrameworks?: (number | ComplianceFramework)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "credit-memos".
+ */
+export interface CreditMemo {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  memoNumber: string;
   /**
-   * PPA reference (e.g. `PPA-2026-001`).
+   * Party receiving the credit (IFRS-15 §B22 contra-revenue counterparty).
    */
-  reference: string;
+  customer?: (number | null) | Customer;
   /**
-   * ISO 8601 — original date of the misstatement (the prior-period transaction date).
+   * Original invoice being credited (optional for general write-offs).
    */
-  adjustmentDate: string;
+  invoice?: (number | null) | Invoice;
+  reason:
+    | 'refund_return'
+    | 'refund_service'
+    | 'pricing_adjustment'
+    | 'bad_debt_writeoff'
+    | 'goodwill'
+    | 'tax_adjustment'
+    | 'other';
+  reasonDetail?: string | null;
   /**
-   * ISO 8601 — current-period date the restatement entry is booked. Per IAS-8 §42, restatement adjusts opening balances of the earliest period presented.
-   */
-  postDate: string;
-  /**
-   * The closed fiscal period being restated.
-   */
-  priorPeriod?: (number | null) | FiscalPeriod;
-  /**
-   * Description of the error — required for IAS-8 §49 disclosure.
-   */
-  reason: string;
-  /**
-   * IAS-8 §41 categorisation — drives §49 disclosure depth.
-   */
-  errorCategory?: ('mathematical' | 'policy_misapplication' | 'oversight' | 'fraud') | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Net adjustment amount in cents (signed: + restates equity up, − restates equity down).
+   * Credit amount in cents.
    */
   amount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('draft' | 'pending_approval' | 'issued' | 'applied' | 'settled' | 'voided') | null;
   /**
-   * The current-period JE booking the opening-balance restatement.
+   * When the credit memo was issued.
    */
-  restatementJournalEntry?: (number | null) | JournalEntry;
+  issuedAt?: string | null;
   /**
-   * IAS-8 §49(b) — nature + amount of the correction text for the financial statement notes.
+   * When applied against an invoice.
    */
-  disclosureText?: string | null;
-  status?: ('draft' | 'pending_review' | 'approved' | 'posted' | 'disclosed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS-1 §51(e) presentation rounding plugs + IAS-21 §39 FX-translation rounding fragments. The small ±0.01 entries that keep statement totals tied.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "rounding-adjustments".
- */
-export interface RoundingAdjustment {
-  id: number;
-  tenant: number | Tenant;
+  appliedAt?: string | null;
   /**
-   * Sequential rounding-adjustment reference (e.g. `RND-2026-04-001`).
+   * When cash refund was paid.
    */
-  reference: string;
+  settledAt?: string | null;
   /**
-   * ISO 8601 — the date the rounding plug applies to.
-   */
-  adjustmentDate: string;
-  /**
-   * ISO 4217 source currency (functional / underlying ledger currency). Required by IAS-21 §39 when rounding crosses currency.
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 target currency (presentation currency). Equals fromCurrency for pure presentation-rounding plugs (IAS-1 §51(e)).
-   */
-  toCurrency: string;
-  /**
-   * Signed rounding amount in cents (typically ±1 to ±100 cents). Hits a designated Rounding GL account.
-   */
-  roundingAmount: number;
-  rounding?: {
-    roundingType?: ('presentation' | 'fx_translation' | 'tax' | 'cash') | null;
-    precisionUnit?: ('cents' | 'units' | 'thousands' | 'millions') | null;
-  };
-  /**
-   * Free-text reason — must include the word "rounding" per the seed-validation rule.
-   */
-  reason: string;
-  /**
-   * JE booking the rounding plug.
+   * GL posting that booked this credit.
    */
   journalEntry?: (number | null) | JournalEntry;
-  status?: ('draft' | 'posted' | 'reversed') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -7314,81 +6793,35 @@ export interface RoundingAdjustment {
   createdAt: string;
 }
 /**
- * Error queue for payment retries, e-invoice rejections, bank-import errors, GL-post failures. Operator console drains this; SOX §404 control TOM-FAIL-01 audits the disposition trail.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transaction-failures".
+ * via the `definition` "returns".
  */
-export interface TransactionFailure {
+export interface Return {
   id: number;
-  tenant: number | Tenant;
-  /**
-   * Failure reference (e.g. `FAIL-2026-04-001`).
-   */
-  reference: string;
-  /**
-   * ISO 8601 — original transaction date that failed (NOT the failure-recording date).
-   */
-  transactionDate: string;
-  sourceType:
-    | 'payment_retry'
-    | 'einvoice_submission'
-    | 'bank_import'
-    | 'gl_post'
-    | 'stripe_webhook'
-    | 'psd2_call'
-    | 'tax_filing'
-    | 'other';
-  /**
-   * The Payload collection slug the failed source document lives in (e.g. `payments`, `invoices`).
-   */
-  sourceCollection?: string | null;
-  /**
-   * ID of the failed source document.
-   */
-  sourceId?: string | null;
-  /**
-   * Short human-readable reason (e.g. "card declined", "VAT-ID invalid", "bank API timeout").
-   */
-  reason: string;
-  /**
-   * RFC 7807 — HTTP status / provider error code (e.g. "402", "INSUFFICIENT_FUNDS", "VAT_INVALID").
-   */
-  statusCode: string;
-  /**
-   * Full upstream error response — captured for forensic analysis.
-   */
-  errorPayload?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
+  tenant?: (number | null) | Tenant;
+  rmaNumber: string;
+  order: number | SalesOrder;
+  customer?: (number | null) | Customer;
+  reason: 'defective' | 'wrong_item' | 'customer_changed_mind' | 'damaged' | 'late' | 'other';
+  lines: {
+    item?: (number | null) | Item;
+    quantityReturned: number;
+    /**
+     * Return to inventory or write off?
+     */
+    restock?: boolean | null;
+    id?: string | null;
+  }[];
+  status?:
+    | ('requested' | 'authorised' | 'in_transit' | 'received' | 'restocked' | 'refunded' | 'closed' | 'rejected')
     | null;
+  authorisedAt?: string | null;
+  receivedAt?: string | null;
+  restockedAt?: string | null;
   /**
-   * Times this failure has been retried.
+   * Credit memo issued for the return.
    */
-  retryCount?: number | null;
-  /**
-   * Retry-cap before the failure is escalated to manual review.
-   */
-  maxRetries?: number | null;
-  /**
-   * Scheduled next retry — empty when escalated to manual.
-   */
-  nextRetryAt?: string | null;
-  lastRetryAt?: string | null;
-  /**
-   * Operator who marked the failure resolved (manually or via successful retry).
-   */
-  resolvedBy?: (number | null) | User;
-  /**
-   * How the failure was resolved (e.g. "card retried after customer update", "manually re-entered", "abandoned per business decision").
-   */
-  resolution?: string | null;
-  status?: ('open' | 'retrying' | 'escalated' | 'resolved' | 'abandoned') | null;
+  creditMemo?: (number | null) | CreditMemo;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -7397,68 +6830,75 @@ export interface TransactionFailure {
   createdAt: string;
 }
 /**
- * IAS-21 §28-29 monetary-item re-translation events. Each row is one FX conversion / revaluation that hits the FX gain/loss P&L line.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fx-transactions".
+ * via the `definition` "shipments".
  */
-export interface FxTransaction {
+export interface Shipment {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
+  shipmentNumber: string;
+  order: number | SalesOrder;
+  shipFromAddress?: (number | null) | Address;
+  shipToAddress: number | Address;
+  carrier?: ('dhl' | 'fedex' | 'ups' | 'usps' | 'royal_mail' | 'speedy' | 'econt' | 'local' | 'pickup') | null;
+  trackingNumber?: string | null;
+  trackingUrl?: string | null;
   /**
-   * Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.
+   * In cents.
    */
-  reference?: string | null;
+  shippingCost?: number | null;
+  lines?:
+    | {
+        item?: (number | null) | Item;
+        quantity: number;
+        id?: string | null;
+      }[]
+    | null;
+  status?:
+    | (
+        | 'pending'
+        | 'picked'
+        | 'packed'
+        | 'shipped'
+        | 'in_transit'
+        | 'out_for_delivery'
+        | 'delivered'
+        | 'returned'
+        | 'lost'
+      )
+    | null;
+  shippedAt?: string | null;
+  deliveredAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "refunds".
+ */
+export interface Refund {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  refundNumber: string;
+  creditMemo: number | CreditMemo;
+  invoice?: (number | null) | Invoice;
+  order?: (number | null) | SalesOrder;
+  amount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  method: 'stripe' | 'ach' | 'sepa' | 'check' | 'cash' | 'store_credit';
   /**
-   * ISO 8601 — date the FX rate applied (transaction date OR period-end revaluation date).
+   * Stripe refund ID for cross-system traceability.
    */
-  transactionDate: string;
-  transactionKind: 'spot_conversion' | 'period_end_revaluation' | 'hedge_settlement' | 'translation_adjustment';
-  /**
-   * ISO 4217 source currency (3-letter code).
-   */
-  fromCurrency: string;
-  /**
-   * ISO 4217 target currency (3-letter code).
-   */
-  toCurrency: string;
-  /**
-   * Source amount in cents (in fromCurrency).
-   */
-  fromAmount: number;
-  /**
-   * Rate applied (toAmount / fromAmount). Per IAS-21 §22, transaction-date rate; per §23, closing rate at period-end.
-   */
-  exchangeRate: number;
-  /**
-   * Target amount in cents (in toCurrency). Must equal fromAmount × exchangeRate within rounding.
-   */
-  toAmount: number;
-  /**
-   * IAS-21 §28-29 FX gain/loss recognised (cents, signed). Hits the P&L FX line.
-   */
-  fxGainLoss?: number | null;
-  /**
-   * The rate-table row that was the source of `exchangeRate` (audit traceability).
-   */
-  currencyRate?: (number | null) | CurrencyRate;
-  /**
-   * JE that booked the FX gain/loss + the converted amount.
-   */
+  stripeRefundId?: string | null;
+  status?: ('draft' | 'pending' | 'issued' | 'settled' | 'failed' | 'voided') | null;
+  refundedAt?: string | null;
+  settledAt?: string | null;
+  failureReason?: string | null;
   journalEntry?: (number | null) | JournalEntry;
-  /**
-   * Slug of the source document this conversion serves (e.g. `invoices`, `payments`).
-   */
-  sourceCollection?: string | null;
-  /**
-   * ID of the source document.
-   */
-  sourceId?: string | null;
-  /**
-   * Free-text context for the conversion.
-   */
-  description?: string | null;
-  status?: ('recorded' | 'posted' | 'reversed') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -7474,7 +6914,7 @@ export interface FxTransaction {
  */
 export interface PaymentAllocation {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Optional human-readable reference; auto-populated from payment+invoice when omitted.
    */
@@ -7525,6 +6965,694 @@ export interface PaymentAllocation {
   createdAt: string;
 }
 /**
+ * Collection-process trail per overdue invoice. IFRS 9 / CECL evidence layer.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "dunning-cycles".
+ */
+export interface DunningCycle {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  cycleId: string;
+  invoice: number | Invoice;
+  /**
+   * Customer (denormalized from invoice for reporting).
+   */
+  customer?: (number | null) | Address;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Outstanding balance at cycle entry, integer cents. Recomputed on each job tick.
+   */
+  amountOverdue: number;
+  /**
+   * Original invoice due date (BT-9).
+   */
+  invoiceDueDate: string;
+  /**
+   * Days between invoiceDueDate and the most recent job tick.
+   */
+  daysPastDue?: number | null;
+  currentStage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off';
+  currentStageEnteredAt?: string | null;
+  /**
+   * Computed by the job — when the next stage transition is due.
+   */
+  nextActionDate?: string | null;
+  /**
+   * Append-only stage entries. Auditor queries this for ECL evidence — DO NOT delete prior entries.
+   */
+  history?:
+    | {
+        stage: 'reminder' | 'first_demand' | 'second_demand' | 'legal_handover' | 'written_off' | 'paused' | 'resolved';
+        enteredAt: string;
+        amountOverdueAtEntry?: number | null;
+        communicationSent?: ('none' | 'email' | 'sms' | 'letter' | 'phone' | 'legal_letter') | null;
+        communicationReference?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Pause the auto-progression (e.g. customer disputed; finance held). Job skips paused cycles.
+   */
+  paused?: boolean | null;
+  pauseReason?: ('disputed' | 'payment_plan' | 'legal_hold' | 'bankruptcy' | 'manual_review') | null;
+  /**
+   * Reference to payment plan / agreement document.
+   */
+  paymentPlanRef?: string | null;
+  /**
+   * Allowance for doubtful accounts attributable to this invoice — feeds AllowanceForDoubtfulAccounts. Computed via IFRS 9 PD × LGD × EAD or simplified-approach lifetime ECL.
+   */
+  eclProvision?: number | null;
+  /**
+   * JE id when stage advances to written_off (Dr Bad Debt Expense / Cr AR or Allowance).
+   */
+  writeOffJournalEntry?: (number | null) | JournalEntry;
+  status?: ('active' | 'paused' | 'resolved' | 'written_off' | 'closed') | null;
+  resolvedAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Per-vendor RFQ response. Award decision lives here with rationale; the awarded quote becomes the PO source.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vendor-quotes".
+ */
+export interface VendorQuote {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
+   */
+  quoteNumber: string;
+  vendor: number | Vendor;
+  /**
+   * Source requisition (one PR may have many vendor quotes).
+   */
+  requisition?: (number | null) | PurchaseRequisition;
+  rfqIssuedDate?: string | null;
+  quoteReceivedDate: string;
+  /**
+   * Quote expiry (after this date, vendor may not honour pricing).
+   */
+  validUntil?: string | null;
+  lines: {
+    description: string;
+    item?: (number | null) | Item;
+    quantity: number;
+    uom?: string | null;
+    unitPrice: number;
+    lineTotal: number;
+    leadTimeDays?: number | null;
+    id?: string | null;
+  }[];
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  subtotal?: number | null;
+  taxAmount?: number | null;
+  shippingAmount?: number | null;
+  discountAmount?: number | null;
+  /**
+   * Quote total (cents).
+   */
+  totalAmount: number;
+  /**
+   * e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".
+   */
+  paymentTerms?: string | null;
+  /**
+   * INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.
+   */
+  incoterms?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
+  deliveryDate?: string | null;
+  /**
+   * Set true when this is the winning quote.
+   */
+  isAwarded?: boolean | null;
+  awardedDate?: string | null;
+  awardedBy?: (number | null) | User;
+  /**
+   * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
+   */
+  awardRationale?: string | null;
+  /**
+   * PO created from the awarded quote.
+   */
+  createdPurchaseOrder?: (number | null) | PurchaseOrder;
+  qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
+  status?: ('requested' | 'received' | 'under_review' | 'awarded' | 'not_awarded' | 'expired' | 'withdrawn') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * SOX §404 pre-PO approval gate. Requisitioner ≠ approver; auditor walks PO → requisition → approval chain.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "purchase-requisitions".
+ */
+export interface PurchaseRequisition {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  requisitionNumber: string;
+  requisitioner: number | User;
+  department?: string | null;
+  costCenter?: (number | null) | CostCenter;
+  project?: (number | null) | Project;
+  requestedDate: string;
+  /**
+   * When the goods/services are needed.
+   */
+  requiredByDate?: string | null;
+  /**
+   * Reason for the spend (drives approver decision + audit-trail evidence).
+   */
+  businessJustification: string;
+  lines: {
+    description: string;
+    item?: (number | null) | Item;
+    quantity: number;
+    uom?: string | null;
+    /**
+     * Estimated unit price (cents).
+     */
+    estimatedUnitPrice: number;
+    /**
+     * quantity × estimatedUnitPrice (cents).
+     */
+    estimatedAmount: number;
+    glAccount?: (number | null) | GlAccount;
+    preferredVendor?: (number | null) | Vendor;
+    id?: string | null;
+  }[];
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Σ lines.estimatedAmount (cents).
+   */
+  estimatedTotal: number;
+  priority?: ('critical' | 'high' | 'normal' | 'low') | null;
+  /**
+   * When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).
+   */
+  requiresQuotes?: boolean | null;
+  minimumQuotesRequired?: number | null;
+  approvalChain?:
+    | {
+        step: number;
+        approver: number | User;
+        /**
+         * e.g. Department Head, CFO, CEO.
+         */
+        role?: string | null;
+        decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
+        decidedAt?: string | null;
+        comment?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * PO created when requisition fully approved.
+   */
+  createdPurchaseOrder?: (number | null) | PurchaseOrder;
+  /**
+   * Selected vendor quote that led to PO award.
+   */
+  awardedQuote?: (number | null) | VendorQuote;
+  status?:
+    | ('draft' | 'submitted' | 'in_approval' | 'approved' | 'rejected' | 'returned' | 'po_created' | 'cancelled')
+    | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "purchase-orders".
+ */
+export interface PurchaseOrder {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  poNumber: string;
+  /**
+   * Vendor receiving the PO.
+   */
+  vendor: number | Address;
+  orderDate: string;
+  expectedDeliveryDate?: string | null;
+  /**
+   * Incoterms 2020 term determining freight responsibility, risk transfer, and GL posting timing per IFRS-15 §38-42.
+   */
+  deliveryTerms?: ('FOB' | 'CIF' | 'DDP' | 'EXW') | null;
+  /**
+   * Named location where FOB/CIF/DDP applies. Examples: "FOB Sofia Warehouse", "CIF Burgas Port", "DDP Buyer's Facility". Used with deliveryTerms to determine GL posting timing per IFRS-15 §38-42.
+   */
+  incotermsLocation?: string | null;
+  lines: {
+    lineNumber?: number | null;
+    item?: (number | null) | Item;
+    description: string;
+    quantity: number;
+    unitPrice: number;
+    lineTotal?: number | null;
+    /**
+     * Expense / asset account to debit on receipt.
+     */
+    glAccount?: (number | null) | GlAccount;
+    /**
+     * Cumulative quantity received via goods-receipts.
+     */
+    quantityReceived?: number | null;
+    id?: string | null;
+  }[];
+  subtotal?: number | null;
+  taxAmount?: number | null;
+  totalAmount?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'sent' | 'partial' | 'received' | 'closed' | 'cancelled') | null;
+  submittedAt?: string | null;
+  sentAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Partial / full goods-receipts against this PO.
+   */
+  receipts?: {
+    docs?: (number | GoodsReceipt)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * Matched vendor bill (three-way-match anchor).
+   */
+  invoice?: (number | null) | Invoice;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-receipts".
+ */
+export interface GoodsReceipt {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  receiptNumber: string;
+  purchaseOrder: number | PurchaseOrder;
+  receivedDate: string;
+  lines: {
+    item?: (number | null) | Item;
+    description?: string | null;
+    quantityReceived: number;
+    quantityDamaged?: number | null;
+    condition?: ('good' | 'damaged' | 'partial' | 'rejected') | null;
+    id?: string | null;
+  }[];
+  status?: ('pending' | 'accepted' | 'partial' | 'rejected') | null;
+  inspectedAt?: string | null;
+  inspectedBy?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * ISO 9001 §8.4 vendor performance scorecard. Periodic (typically quarterly). Drives renewal / probation / de-listing decision.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vendor-scorecards".
+ */
+export interface VendorScorecard {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  reference: string;
+  vendor: number | Vendor;
+  /**
+   * e.g. 2026-Q1, 2026-FY.
+   */
+  periodLabel: string;
+  periodStartDate: string;
+  periodEndDate: string;
+  /**
+   * Procurement / quality manager who completed the scorecard.
+   */
+  evaluator: number | User;
+  metrics?: {
+    /**
+     * OTD % across the period.
+     */
+    onTimeDeliveryPercent?: number | null;
+    /**
+     * % of receipts accepted without nonconformance.
+     */
+    qualityAcceptanceRate?: number | null;
+    /**
+     * % of invoices matching PO price.
+     */
+    priceAccuracyPercent?: number | null;
+    /**
+     * Average vendor response time to RFQs / queries (hours).
+     */
+    responseTimeAvgHours?: number | null;
+    returnRatePercent?: number | null;
+    /**
+     * Optional ESG / supplier-sustainability score.
+     */
+    sustainabilityScore?: number | null;
+    /**
+     * ISO 27001 A.5.19 supplier-information-security score.
+     */
+    cybersecurityScore?: number | null;
+  };
+  volumes?: {
+    /**
+     * Σ vendor invoices in period (cents).
+     */
+    totalSpend?: number | null;
+    numberOfPurchaseOrders?: number | null;
+    numberOfReceipts?: number | null;
+    numberOfNonconformances?: number | null;
+    numberOfReturns?: number | null;
+  };
+  /**
+   * Weighted composite score (0-100). Drives the recommendation.
+   */
+  overallScore?: number | null;
+  recommendation: 'preferred' | 'approved' | 'conditional' | 'probation' | 'delist';
+  /**
+   * Required when recommendation = conditional / probation — what the vendor must do.
+   */
+  improvementPlan?: string | null;
+  /**
+   * Was the scorecard discussed with the vendor in a QBR?
+   */
+  reviewedWithVendor?: boolean | null;
+  reviewMeetingDate?: string | null;
+  status?: ('draft' | 'reviewed' | 'shared' | 'acknowledged' | 'closed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inventory-movements".
+ */
+export interface InventoryMovement {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  movementId: string;
+  kind:
+    | 'receipt'
+    | 'sale'
+    | 'consumption'
+    | 'transfer'
+    | 'return_in'
+    | 'return_out'
+    | 'adjustment'
+    | 'write_off'
+    | 'opening';
+  item: number | Item;
+  /**
+   * Lot / serial number for traceability.
+   */
+  lotOrSerial?: string | null;
+  /**
+   * Positive = inbound to toLocation; negative = outbound from fromLocation.
+   */
+  quantity: number;
+  /**
+   * In cents — used for cost-flow & GL valuation.
+   */
+  unitCost?: number | null;
+  /**
+   * quantity × unitCost; auto-computed.
+   */
+  extendedCost?: number | null;
+  /**
+   * IAS-2 §25 / ASC 330-10-30 cost formula election. Drives how the GL handler picks unitCost when the source-doc cost basis differs from the on-hand average.
+   */
+  valuationMethod: 'fifo' | 'weighted_average' | 'specific_identification';
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  fromLocation?: (number | null) | WarehouseLocation;
+  toLocation?: (number | null) | WarehouseLocation;
+  movementAt: string;
+  sourceDocumentType?: ('goods_receipt' | 'shipment' | 'return' | 'order' | 'adjustment' | 'manual') | null;
+  /**
+   * Free-form id of the originating document for traceability.
+   */
+  sourceDocumentId?: string | null;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('draft' | 'posted' | 'reversed') | null;
+  postedAt?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "warehouse-locations".
+ */
+export interface WarehouseLocation {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Short code, e.g. SOF-MAIN, NYC-3PL.
+   */
+  code: string;
+  name: string;
+  type: 'warehouse' | '3pl' | 'retail' | 'consignment' | 'transit' | 'quarantine' | 'returns' | 'bonded' | 'virtual';
+  address?: (number | null) | Address;
+  /**
+   * ISO 3166-1 alpha-2.
+   */
+  country?: string | null;
+  /**
+   * ISO 3166-2 subdivision code.
+   */
+  region?: string | null;
+  /**
+   * Default inventory GL account for stock at this location.
+   */
+  glAccount?: (number | null) | GlAccount;
+  /**
+   * Optional bin/aisle/shelf detail for cycle-count granularity.
+   */
+  bins?:
+    | {
+        binCode: string;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  status?: ('active' | 'inactive' | 'closed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "budget-planning".
+ */
+export interface BudgetPlanning {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  budgetId: string;
+  fiscalYear: number;
+  /**
+   * Department or cost center
+   */
+  department: string;
+  budgetPeriod?: ('monthly' | 'quarterly' | 'annual') | null;
+  budgetLineItems?:
+    | {
+        glAccount: number | GlAccount;
+        accountNumber?: string | null;
+        accountName?: string | null;
+        accountType?: string | null;
+        budgetAmount: number;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  totalBudget?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'active' | 'archived') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-2 §21 standard-cost variances. One row per work-order close — decomposed into price/quantity/labour-rate/labour-efficiency/overhead variance categories.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-variances".
+ */
+export interface CostVariance {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Variance reference (e.g. `VAR-2026-04-0001`).
+   */
+  reference: string;
+  workOrder: number | WorkOrder;
+  /**
+   * ISO 8601 — date the variance was computed (typically WO close).
+   */
+  varianceDate: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  variances?: {
+    /**
+     * Σ((actual price − standard price) × actual qty). + = unfavourable. In cents.
+     */
+    materialPriceVariance?: number | null;
+    /**
+     * Σ((actual qty − standard qty) × standard price). + = unfavourable. In cents.
+     */
+    materialQuantityVariance?: number | null;
+    /**
+     * (Actual rate − standard rate) × actual hours. In cents.
+     */
+    labourRateVariance?: number | null;
+    /**
+     * (Actual hours − standard hours) × standard rate. In cents.
+     */
+    labourEfficiencyVariance?: number | null;
+    /**
+     * Actual overhead − (standard rate × actual hours). In cents.
+     */
+    overheadSpendingVariance?: number | null;
+    /**
+     * (Standard rate × actual hours) − (standard rate × standard hours allowed). IAS-2 §13 unallocated overhead. In cents.
+     */
+    overheadVolumeVariance?: number | null;
+  };
+  /**
+   * Σ of the 6 variance components.
+   */
+  totalVariance?: number | null;
+  /**
+   * How the variance is disposed at WO close. IAS-2 §13 requires cogs/inventory split when material; immaterial → period.
+   */
+  disposition?: ('cogs' | 'inventory' | 'period') | null;
+  /**
+   * JE that books the variance disposition.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('draft' | 'pending_disposition' | 'disposed' | 'reversed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Production order — releases a BOM into manufacturing. Drives inventory issues + finished-good receipts + IAS-2 §21 cost variances.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-orders".
+ */
+export interface WorkOrder {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Work-order reference (e.g. `WO-2026-04-0123`).
+   */
+  reference: string;
+  /**
+   * BOM version this order executes against.
+   */
+  bom: number | BillsOfMaterial;
+  /**
+   * Finished-good item the order produces (denormalised from BOM for fast filter).
+   */
+  finishedGood: number | Item;
+  /**
+   * Planned output quantity.
+   */
+  plannedQuantity: number;
+  /**
+   * Cumulative completed quantity (updated per production-receipt).
+   */
+  completedQuantity?: number | null;
+  /**
+   * Cumulative scrap (NCR) quantity.
+   */
+  scrappedQuantity?: number | null;
+  /**
+   * ISO 8601 — date the order was released to production.
+   */
+  releaseDate: string;
+  /**
+   * ISO 8601 — required completion date.
+   */
+  dueDate?: string | null;
+  /**
+   * ISO 8601 — actual completion timestamp.
+   */
+  completedAt?: string | null;
+  demandSource?: ('customer_order' | 'stock_replenishment' | 'sub_assembly' | 'engineering' | 'sample') | null;
+  /**
+   * Reference to the demand source (e.g. customer order number, parent WO).
+   */
+  demandReference?: string | null;
+  /**
+   * Where the finished good is received.
+   */
+  targetWarehouse?: (number | null) | WarehouseLocation;
+  standardCosts?: {
+    /**
+     * Σ(component qty × component standard cost) per BOM. In cents.
+     */
+    standardMaterialCost?: number | null;
+    /**
+     * Σ(operation labour-min × labour rate). In cents.
+     */
+    standardLabourCost?: number | null;
+    /**
+     * Σ(operation machine-min × overhead rate). In cents.
+     */
+    standardOverheadCost?: number | null;
+    /**
+     * Σ of the three above.
+     */
+    standardTotalCost?: number | null;
+  };
+  status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'closed' | 'cancelled') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * IAS-2 §10 cost-of-conversion components per finished good. Versioned per ECO; only one row per (finishedGood × version) is `active` at a time.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -7532,7 +7660,7 @@ export interface PaymentAllocation {
  */
 export interface BillsOfMaterial {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * BOM reference (e.g. `BOM-WIDGET-001-v3`).
    */
@@ -7621,78 +7749,63 @@ export interface BillsOfMaterial {
   createdAt: string;
 }
 /**
- * Production order — releases a BOM into manufacturing. Drives inventory issues + finished-good receipts + IAS-2 §21 cost variances.
+ * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "work-orders".
+ * via the `definition` "intercompany-transactions".
  */
-export interface WorkOrder {
+export interface IntercompanyTransaction {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
-   * Work-order reference (e.g. `WO-2026-04-0123`).
+   * Pair reference — both legs of the intercompany pair carry the same reference for join.
    */
   reference: string;
   /**
-   * BOM version this order executes against.
+   * Tenant booking the debit leg (from-side of the intercompany pair).
    */
-  bom: number | BillsOfMaterial;
+  fromTenant: number | Tenant;
   /**
-   * Finished-good item the order produces (denormalised from BOM for fast filter).
+   * Tenant booking the credit leg (to-side of the intercompany pair).
    */
-  finishedGood: number | Item;
+  toTenant: number | Tenant;
   /**
-   * Planned output quantity.
+   * IFRS-10 §B86 reporting entity for the debit leg (single-tenant multi-entity hierarchy).
    */
-  plannedQuantity: number;
+  fromLegalEntity?: (number | null) | LegalEntity;
   /**
-   * Cumulative completed quantity (updated per production-receipt).
+   * IFRS-10 §B86 reporting entity for the credit leg (single-tenant multi-entity hierarchy).
    */
-  completedQuantity?: number | null;
+  toLegalEntity?: (number | null) | LegalEntity;
   /**
-   * Cumulative scrap (NCR) quantity.
+   * ISO 8601 — transaction effective date.
    */
-  scrappedQuantity?: number | null;
+  transactionDate: string;
+  pairKind?:
+    | ('transfer' | 'service_charge' | 'goods_transfer' | 'loan' | 'capital' | 'cost_allocation' | 'other')
+    | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * ISO 8601 — date the order was released to production.
+   * Debit leg amount, in cents (booked on fromTenant).
    */
-  releaseDate: string;
+  debitAmount: number;
   /**
-   * ISO 8601 — required completion date.
+   * Credit leg amount, in cents (booked on toTenant). Must equal debitAmount on the same currency.
    */
-  dueDate?: string | null;
+  creditAmount: number;
   /**
-   * ISO 8601 — actual completion timestamp.
+   * JE booked on fromTenant — links source-document to GL.
    */
-  completedAt?: string | null;
-  demandSource?: ('customer_order' | 'stock_replenishment' | 'sub_assembly' | 'engineering' | 'sample') | null;
+  fromJournalEntry?: (number | null) | JournalEntry;
   /**
-   * Reference to the demand source (e.g. customer order number, parent WO).
+   * JE booked on toTenant — links source-document to GL.
    */
-  demandReference?: string | null;
+  toJournalEntry?: (number | null) | JournalEntry;
   /**
-   * Where the finished good is received.
+   * BEPS Action 13 — local file / master file reference for transfer-pricing-bearing pairs.
    */
-  targetWarehouse?: (number | null) | WarehouseLocation;
-  standardCosts?: {
-    /**
-     * Σ(component qty × component standard cost) per BOM. In cents.
-     */
-    standardMaterialCost?: number | null;
-    /**
-     * Σ(operation labour-min × labour rate). In cents.
-     */
-    standardLabourCost?: number | null;
-    /**
-     * Σ(operation machine-min × overhead rate). In cents.
-     */
-    standardOverheadCost?: number | null;
-    /**
-     * Σ of the three above.
-     */
-    standardTotalCost?: number | null;
-  };
-  status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'closed' | 'cancelled') | null;
+  transferPricingDoc?: string | null;
+  status?: ('draft' | 'pending_ack' | 'posted' | 'eliminated' | 'reversed') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -7701,73 +7814,57 @@ export interface WorkOrder {
   createdAt: string;
 }
 /**
- * Finished-good receipt from a work-order into inventory. Booked at absorbed cost per IAS-2 §10. The variance vs standard lands in `cost-variances`.
+ * Group-level elimination JEs applied at consolidation per IFRS 10 §B86 / ASC 810. Replayed each consolidation cycle.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "production-receipts".
+ * via the `definition` "consolidation-eliminations".
  */
-export interface ProductionReceipt {
+export interface ConsolidationElimination {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
-   * Receipt reference (e.g. `PR-2026-04-0001`).
+   * Sequential elimination reference (e.g. `ELIM-2026-Q1-001`).
    */
   reference: string;
-  workOrder: number | WorkOrder;
   /**
-   * Denormalised from work-order for fast filter.
+   * ISO 8601 — consolidation-period as-of date the elimination applies to.
    */
-  finishedGood: number | Item;
-  receivedQuantity: number;
-  targetWarehouse: number | WarehouseLocation;
-  /**
-   * Production lot number — required for traceability per FDA / EU food / pharma.
-   */
-  lotNumber?: string | null;
-  /**
-   * JSON array of serial numbers for serialised items.
-   */
-  serialNumbers?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  receiptDate: string;
+  consolidationDate: string;
+  eliminationType:
+    | 'investment'
+    | 'ic_balance'
+    | 'ic_pl'
+    | 'unrealised_profit'
+    | 'ic_loan'
+    | 'ic_dividend'
+    | 'fctr'
+    | 'other';
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  cost?: {
-    /**
-     * Σ(component issues × actual cost) for this receipt. In cents.
-     */
-    materialCost?: number | null;
-    /**
-     * Σ(actual labour-minutes × labour rate). In cents.
-     */
-    labourCost?: number | null;
-    /**
-     * Σ(actual machine-minutes × overhead rate). IAS-2 §13 normal-capacity allocation. In cents.
-     */
-    overheadCost?: number | null;
-    /**
-     * Σ of the three above — what gets debited to Inventory.
-     */
-    absorbedCost?: number | null;
-    /**
-     * absorbedCost / receivedQuantity.
-     */
-    unitCost?: number | null;
-  };
   /**
-   * Auto-created `inventory-movements` row of kind=`receipt` (production source).
+   * Debit leg of the elimination JE (cents). Must equal creditAmount.
    */
-  inventoryMovement?: (number | null) | InventoryMovement;
+  debitAmount: number;
   /**
-   * JE that books Dr Finished Goods / Cr WIP.
+   * Credit leg of the elimination JE (cents).
    */
-  journalEntry?: (number | null) | JournalEntry;
+  creditAmount: number;
+  /**
+   * Subsidiary tenants whose balances this elimination touches.
+   */
+  subsidiaries?:
+    | {
+        role?: ('subsidiary' | 'joint_venture' | 'associate') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The actual elimination JE booked on the consolidation-tenant ledger.
+   */
+  sourceJournalEntry?: (number | null) | JournalEntry;
+  /**
+   * The intercompany pair this elimination resolves (if elimination_type ∈ {ic_balance, ic_pl}).
+   */
+  sourceIntercompany?: (number | null) | IntercompanyTransaction;
   status?: ('draft' | 'posted' | 'reversed') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
@@ -7777,1005 +7874,68 @@ export interface ProductionReceipt {
   createdAt: string;
 }
 /**
- * IAS-2 §21 standard-cost variances. One row per work-order close — decomposed into price/quantity/labour-rate/labour-efficiency/overhead variance categories.
+ * IAS-21 §28-29 monetary-item re-translation events. Each row is one FX conversion / revaluation that hits the FX gain/loss P&L line.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cost-variances".
+ * via the `definition` "fx-transactions".
  */
-export interface CostVariance {
+export interface FxTransaction {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
-   * Variance reference (e.g. `VAR-2026-04-0001`).
+   * Optional reference (e.g. `FX-2026-04-001`); auto-populated when missing.
    */
-  reference: string;
-  workOrder: number | WorkOrder;
+  reference?: string | null;
   /**
-   * ISO 8601 — date the variance was computed (typically WO close).
+   * ISO 8601 — date the FX rate applied (transaction date OR period-end revaluation date).
    */
-  varianceDate: string;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  variances?: {
-    /**
-     * Σ((actual price − standard price) × actual qty). + = unfavourable. In cents.
-     */
-    materialPriceVariance?: number | null;
-    /**
-     * Σ((actual qty − standard qty) × standard price). + = unfavourable. In cents.
-     */
-    materialQuantityVariance?: number | null;
-    /**
-     * (Actual rate − standard rate) × actual hours. In cents.
-     */
-    labourRateVariance?: number | null;
-    /**
-     * (Actual hours − standard hours) × standard rate. In cents.
-     */
-    labourEfficiencyVariance?: number | null;
-    /**
-     * Actual overhead − (standard rate × actual hours). In cents.
-     */
-    overheadSpendingVariance?: number | null;
-    /**
-     * (Standard rate × actual hours) − (standard rate × standard hours allowed). IAS-2 §13 unallocated overhead. In cents.
-     */
-    overheadVolumeVariance?: number | null;
-  };
+  transactionDate: string;
+  transactionKind: 'spot_conversion' | 'period_end_revaluation' | 'hedge_settlement' | 'translation_adjustment';
   /**
-   * Σ of the 6 variance components.
+   * ISO 4217 source currency (3-letter code).
    */
-  totalVariance?: number | null;
+  fromCurrency: string;
   /**
-   * How the variance is disposed at WO close. IAS-2 §13 requires cogs/inventory split when material; immaterial → period.
+   * ISO 4217 target currency (3-letter code).
    */
-  disposition?: ('cogs' | 'inventory' | 'period') | null;
+  toCurrency: string;
   /**
-   * JE that books the variance disposition.
+   * Source amount in cents (in fromCurrency).
+   */
+  fromAmount: number;
+  /**
+   * Rate applied (toAmount / fromAmount). Per IAS-21 §22, transaction-date rate; per §23, closing rate at period-end.
+   */
+  exchangeRate: number;
+  /**
+   * Target amount in cents (in toCurrency). Must equal fromAmount × exchangeRate within rounding.
+   */
+  toAmount: number;
+  /**
+   * IAS-21 §28-29 FX gain/loss recognised (cents, signed). Hits the P&L FX line.
+   */
+  fxGainLoss?: number | null;
+  /**
+   * The rate-table row that was the source of `exchangeRate` (audit traceability).
+   */
+  currencyRate?: (number | null) | CurrencyRate;
+  /**
+   * JE that booked the FX gain/loss + the converted amount.
    */
   journalEntry?: (number | null) | JournalEntry;
-  status?: ('draft' | 'pending_disposition' | 'disposed' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * ISO 9001 §8.7 nonconformance + §9.1 measurement records. Drives inventory write-offs for failed lots.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quality-inspections".
- */
-export interface QualityInspection {
-  id: number;
-  tenant: number | Tenant;
   /**
-   * Inspection reference (e.g. `QC-2026-04-0001`).
-   */
-  reference: string;
-  inspectionType: 'incoming' | 'in_process' | 'final' | 'complaint' | 'calibration';
-  item: number | Item;
-  inspectedQuantity: number;
-  /**
-   * For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.
-   */
-  sampleSize?: number | null;
-  /**
-   * Quantity that failed the inspection criteria.
-   */
-  failedQuantity?: number | null;
-  /**
-   * For in-process inspection — the WO this inspection ran against.
-   */
-  workOrder?: (number | null) | WorkOrder;
-  /**
-   * For incoming inspection — the GRN this inspection covers.
-   */
-  goodsReceipt?: (number | null) | GoodsReceipt;
-  /**
-   * For final inspection — the shipment this inspection releases.
-   */
-  shipment?: (number | null) | Shipment;
-  inspectionDate: string;
-  /**
-   * Inspector who performed the check.
-   */
-  inspector?: (number | null) | User;
-  outcome: 'pending' | 'passed' | 'failed' | 'conditional' | 'quarantined';
-  /**
-   * NCR detail — required when outcome = failed/conditional/quarantined.
-   */
-  failureReason?: string | null;
-  /**
-   * Corrective and Preventive Action reference (ISO 9001 §10.2).
-   */
-  capaReference?: string | null;
-  /**
-   * Auto-created `kind=write_off` movement for failed quantities.
-   */
-  inventoryMovement?: (number | null) | InventoryMovement;
-  status?: ('draft' | 'in_progress' | 'completed' | 'disputed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Shipping/freight carrier master per tenant — DHL/UPS/FedEx/national-post and per-tenant accounts. Normalises `shipments.carrier` from free-text.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "carriers".
- */
-export interface Carrier {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Carrier code (e.g. `DHL`, `UPS`, `FEDEX`, `BG-POST`).
-   */
-  code: string;
-  /**
-   * Display name (e.g. `DHL Express`, `Bulgarian Posts`).
-   */
-  name: string;
-  scope: 'international' | 'national' | 'regional' | 'postal' | 'freight' | 'maritime' | 'air';
-  /**
-   * Per-tenant carrier account number (used in API requests).
-   */
-  accountNumber?: string | null;
-  /**
-   * RFC 3986 base URL for the carrier rate / tracking API.
-   */
-  apiBaseUrl?: string | null;
-  /**
-   * Reference into a secrets-store (NIST SP-800-108 KDF) — never store raw credentials.
-   */
-  apiCredentialsId?: string | null;
-  /**
-   * INCOTERMS-tagged transport options offered by this carrier.
-   */
-  serviceLevels?:
-    | {
-        /**
-         * Carrier service code (e.g. `EXPRESS_WORLDWIDE`).
-         */
-        code: string;
-        label: string;
-        incoterm?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
-        /**
-         * Typical end-to-end transit time in days.
-         */
-        transitDays?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * IATA DGR / IMDG-Code hazardous-goods carriage allowed.
-   */
-  supportsHazmat?: boolean | null;
-  /**
-   * When this carrier became active for the tenant.
-   */
-  effectiveFrom?: string | null;
-  /**
-   * When the relationship ends — empty = open.
-   */
-  effectiveTo?: string | null;
-  status?: ('active' | 'suspended' | 'terminated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Append-only carrier-side shipment status events. Polled / webhook-pushed from carrier APIs. The `delivered` event triggers IFRS-15 §38 revenue recognition under DDP/DAP/DPU INCOTERMS.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tracking-events".
- */
-export interface TrackingEvent {
-  id: number;
-  tenant: number | Tenant;
-  shipment: number | Shipment;
-  /**
-   * Denormalised from shipment for fast filter.
-   */
-  carrier?: (number | null) | Carrier;
-  /**
-   * Carrier-side tracking number (denormalised).
-   */
-  trackingNumber?: string | null;
-  eventCode:
-    | 'label_created'
-    | 'picked_up'
-    | 'in_transit'
-    | 'customs_started'
-    | 'customs_cleared'
-    | 'customs_held'
-    | 'out_for_delivery'
-    | 'delivery_attempted'
-    | 'delivered'
-    | 'exception'
-    | 'returned'
-    | 'lost';
-  /**
-   * ISO 8601 — carrier-reported event timestamp (UTC).
-   */
-  eventTime: string;
-  /**
-   * Free-text city/hub (e.g. `Sofia BG-1000`, `Frankfurt DE-60001`).
-   */
-  location?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 country at the event time.
-   */
-  locationCountry?: string | null;
-  /**
-   * Carrier-supplied free-text event description.
-   */
-  description?: string | null;
-  /**
-   * Recipient name on delivery (proof-of-delivery field).
-   */
-  signedBy?: string | null;
-  /**
-   * Raw carrier-API event payload for forensic / replay.
-   */
-  sourcePayload?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  eventSource?: ('webhook' | 'poll' | 'manual' | 'edi_iftsta') | null;
-  /**
-   * Set to true when this `delivered` event triggered IFRS-15 §38 revenue recognition.
-   */
-  triggeredRevenueRecognition?: boolean | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * WCO HS-coded customs declaration per cross-border shipment. EU UCC export (ECS) / import (ICS) submission source.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customs-declarations".
- */
-export interface CustomsDeclaration {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Movement Reference Number (UCC). Issued by customs after acceptance.
-   */
-  mrn?: string | null;
-  declarationType:
-    | 'export'
-    | 'import'
-    | 'reexport'
-    | 'transit'
-    | 'temporary_admission'
-    | 'inward_processing'
-    | 'outward_processing';
-  shipment: number | Shipment;
-  declarationDate: string;
-  /**
-   * ISO 3166-1 alpha-2 — country goods leave from.
-   */
-  countryOfDispatch?: string | null;
-  /**
-   * ISO 3166-1 alpha-2 — final destination country.
-   */
-  countryOfDestination: string;
-  /**
-   * ISO 3166-1 alpha-2 — country where the goods were manufactured (drives preferential treatment).
-   */
-  countryOfOrigin?: string | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Σ(line items × declared value), in cents. Drives import VAT + duty calculation.
-   */
-  totalValue: number;
-  /**
-   * Customs duty payable, in cents. Computed by customs authority.
-   */
-  totalDuty?: number | null;
-  /**
-   * Import VAT payable, in cents.
-   */
-  totalImportVat?: number | null;
-  /**
-   * WCO data-model line items — one per HS code per declared item.
-   */
-  lines: {
-    /**
-     * The internal item — denormalised hsCode flows into `hsCode` for the declaration.
-     */
-    item?: (number | null) | Item;
-    /**
-     * Goods description per WCO HS (must match commercial invoice).
-     */
-    description: string;
-    /**
-     * WCO HS Code (6-digit minimum; 8/10-digit for combined nomenclature).
-     */
-    hsCode: string;
-    quantity: number;
-    /**
-     * WCO supplementary unit (KGM / EA / LTR / etc.).
-     */
-    unitOfMeasure?: string | null;
-    /**
-     * Net weight in kg.
-     */
-    netWeight?: number | null;
-    /**
-     * Gross weight in kg.
-     */
-    grossWeight?: number | null;
-    /**
-     * Declared value per line, in cents.
-     */
-    declaredValue: number;
-    /**
-     * Goods qualify for preferential origin (EUR.1 / EUR-MED / etc.).
-     */
-    preferentialOrigin?: boolean | null;
-    /**
-     * EU preference code if `preferentialOrigin = true` (e.g. `300` GSP, `400` ACP).
-     */
-    tariffPreferenceCode?: string | null;
-    id?: string | null;
-  }[];
-  /**
-   * INCOTERMS 2020 term — drives who pays duty/VAT.
-   */
-  incoterm?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
-  /**
-   * ISO 8601 — when declaration was submitted to customs.
-   */
-  submittedAt?: string | null;
-  /**
-   * ISO 8601 — when customs accepted (MRN issued).
-   */
-  acceptedAt?: string | null;
-  /**
-   * ISO 8601 — when goods were released by customs.
-   */
-  releasedAt?: string | null;
-  status?: ('draft' | 'submitted' | 'accepted' | 'held' | 'released' | 'rejected') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Metered-billing event log. One row per countable event (invoices issued, signed PAdES, country-bundle calls, etc.). Aggregated by the billing engine into IFRS-15 §B16 usage-based invoice lines.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "usage-records".
- */
-export interface UsageRecord {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * RFC 9562 UUID v4 — idempotency key. Re-emission with the same eventId is a no-op.
-   */
-  eventId: string;
-  /**
-   * Feature id from FEATURE_REGISTRY (e.g. `invoicing_metered`, `country_bundles`, `eidas_signing`).
-   */
-  feature: string;
-  meterKind: 'count' | 'quantity' | 'volume' | 'duration';
-  /**
-   * Per-event count (1 for `count` meter; bytes for `volume`; seconds for `duration`; etc.).
-   */
-  quantity: number;
-  /**
-   * ISO 8601 — when the metered event happened.
-   */
-  eventTime: string;
-  /**
-   * Billing-period bucket (e.g. `2026-04` for monthly, `2026-Q2` for quarterly).
-   */
-  billingPeriod: string;
-  /**
-   * The subscription this usage rolls into.
-   */
-  subscription?: (number | null) | Subscription;
-  /**
-   * Slug of the collection that generated the event (e.g. `invoices`, `evidence-attestations`).
+   * Slug of the source document this conversion serves (e.g. `invoices`, `payments`).
    */
   sourceCollection?: string | null;
   /**
-   * ID of the source row.
+   * ID of the source document.
    */
   sourceId?: string | null;
   /**
-   * Per-unit price snapshot (cents) at time of event. Rate-card change won't retroactively affect billed quantities.
+   * Free-text context for the conversion.
    */
-  rate?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * rate × quantity (cents) — what hits the upcoming invoice line.
-   */
-  amount?: number | null;
-  /**
-   * Invoice that consumed this usage (set when the billing job runs).
-   */
-  invoice?: (number | null) | Invoice;
-  status?: ('recorded' | 'billed' | 'reversed' | 'disputed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Durable audit row per Cloudflare Workers AI inference. Required by GDPR Art.22(3) right-to-human-intervention + EU AI Act transparency + SOX §404 ai-assisted-decision evidence.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "ai-suggestions".
- */
-export interface AiSuggestion {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * RFC 9562 UUID v4 — idempotency + cross-system correlation.
-   */
-  suggestionId: string;
-  /**
-   * FEATURE_REGISTRY id (e.g. `ai_invoice_ocr`, `ai_sanctions_screening`).
-   */
-  feature: string;
-  /**
-   * Cloudflare Workers AI model id (e.g. `@cf/meta/llama-3.1-8b-instruct`, `@cf/baai/bge-base-en-v1.5`).
-   */
-  model: string;
-  /**
-   * ISO 8601 — when the inference was made.
-   */
-  inferenceTime: string;
-  /**
-   * Input payload (sanitised — no raw PII when feature.privacyClass = `pii`). GDPR Art.5(1)(c) data minimisation applies.
-   */
-  inputs:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Raw model output. Stored for GDPR Art.22(3) explanation right + SOX evidence.
-   */
-  outputs:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Model confidence (0.0–1.0) when available. Drives the auto-accept threshold per feature.
-   */
-  confidence?: number | null;
-  /**
-   * EU AI Act 2024 risk classification — drives downstream review intensity.
-   */
-  aiRiskClass: 'minimal' | 'limited' | 'high' | 'prohibited';
-  /**
-   * Slug of the collection the suggestion is FOR (e.g. `invoices`, `bank-transactions`, `kyc-checks`).
-   */
-  sourceCollection?: string | null;
-  /**
-   * ID of the source row.
-   */
-  sourceId?: string | null;
-  /**
-   * GDPR Art.22(3) — human-in-the-loop decision. AI never auto-decides for high-risk class.
-   */
-  humanDecision?: ('pending' | 'accepted' | 'edited' | 'rejected' | 'auto_accepted' | 'escalated') | null;
-  /**
-   * Human who made the accept/reject decision (Art.22(3) right-to-human-intervention evidence).
-   */
-  decisionMaker?: (number | null) | User;
-  /**
-   * ISO 8601 — timestamp of the human decision.
-   */
-  decisionAt?: string | null;
-  /**
-   * Free-text rationale — required for `rejected` / `edited` / `escalated` outcomes.
-   */
-  decisionRationale?: string | null;
-  /**
-   * Reference to the downstream record the accepted suggestion was applied to (e.g. `journal-entries:42`).
-   */
-  appliedTo?: string | null;
-  gateway?: {
-    /**
-     * AI Gateway routing id — for replay / cache lookup.
-     */
-    gatewayId?: string | null;
-    cacheStatus?: ('miss' | 'hit' | 'bypass') | null;
-    /**
-     * Input tokens — drives metered billing per IFRS-15 §B16.
-     */
-    tokensIn?: number | null;
-    /**
-     * Output tokens.
-     */
-    tokensOut?: number | null;
-    latencyMs?: number | null;
-    /**
-     * Linked usage-record for metered AI billing (Slice VVV).
-     */
-    usageRecord?: (number | null) | UsageRecord;
-  };
-  status?: ('recorded' | 'applied' | 'rejected' | 'reversed' | 'quarantined') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §35 over-time-recognition anchor. WIP accumulates per project; revenue recognises per chosen progress measurement (cost-to-cost / milestone / output-method).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "projects".
- */
-export interface Project {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Tenant-unique project code (e.g. PRJ-2026-001).
-   */
-  projectCode: string;
-  /**
-   * Customer-facing project name.
-   */
-  name: string;
   description?: string | null;
-  customer: number | Customer;
-  /**
-   * Master contract this project executes against (one contract may have many projects).
-   */
-  contract?: (number | null) | Contract;
-  /**
-   * Reporting legal entity that books this project's revenue + costs.
-   */
-  legalEntity?: (number | null) | LegalEntity;
-  /**
-   * Internal project owner (responsible for delivery + status).
-   */
-  projectManager?: (number | null) | User;
-  projectType?: ('fixed_price' | 'time_and_materials' | 'cost_plus' | 'milestone' | 'internal') | null;
-  /**
-   * Progress measurement method per IFRS-15. Drives the WIP / revenue posting cadence.
-   */
-  recognitionMethod?:
-    | (
-        | 'point_in_time'
-        | 'cost_to_cost'
-        | 'output_units'
-        | 'output_time'
-        | 'output_survey'
-        | 'milestone'
-        | 'right_to_invoice'
-      )
-    | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Total transaction price for this project (cents). For T&M projects use the not-to-exceed cap.
-   */
-  contractedAmount?: number | null;
-  /**
-   * Estimated total cost at completion (EAC) — denominator in cost-to-cost % complete.
-   */
-  budgetedCost?: number | null;
-  /**
-   * Estimated total labour hours (used by output-time method).
-   */
-  budgetedHours?: number | null;
-  /**
-   * contractedAmount − budgetedCost (auto-derived).
-   */
-  budgetedMargin?: number | null;
-  /**
-   * Cumulative posted cost (auto-summed from time-entries + materials + overhead allocation).
-   */
-  actualCostToDate?: number | null;
-  /**
-   * Cumulative recognised revenue (auto-summed from period postings).
-   */
-  recognisedRevenueToDate?: number | null;
-  /**
-   * Snapshot of latest period progress measurement.
-   */
-  percentComplete?: number | null;
-  plannedStartDate?: string | null;
-  plannedEndDate?: string | null;
-  actualStartDate?: string | null;
-  actualEndDate?: string | null;
-  /**
-   * IAS-37 §66 onerous-contract flag — when EAC > contracted, provision the full expected loss now.
-   */
-  isOnerous?: boolean | null;
-  status?: ('draft' | 'approved' | 'in_progress' | 'on_hold' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * WBS element under a project. Time-entries + materials post against a task; cost-to-cost progress measurement rolls up.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "project-tasks".
- */
-export interface ProjectTask {
-  id: number;
-  tenant: number | Tenant;
-  project: number | Project;
-  /**
-   * Optional parent task for hierarchical WBS (task → subtask).
-   */
-  parentTask?: (number | null) | ProjectTask;
-  /**
-   * Project-unique task code (e.g. T-001 / WBS 1.2.3).
-   */
-  taskCode: string;
-  name: string;
-  description?: string | null;
-  assignee?: (number | null) | User;
-  taskType?: ('work' | 'milestone' | 'summary' | 'deliverable') | null;
-  /**
-   * Estimated effort hours.
-   */
-  budgetedHours?: number | null;
-  /**
-   * Σ approved time-entries.hours posted to this task.
-   */
-  actualHours?: number | null;
-  budgetedCost?: number | null;
-  /**
-   * Σ posted cost (labour + materials) for this task.
-   */
-  actualCost?: number | null;
-  percentComplete?: number | null;
-  plannedStartDate?: string | null;
-  plannedEndDate?: string | null;
-  actualStartDate?: string | null;
-  actualEndDate?: string | null;
-  /**
-   * Predecessor tasks (finish-to-start by default).
-   */
-  dependencyTasks?: (number | ProjectTask)[] | null;
-  /**
-   * When true, time-entries posted here flow into customer invoicing.
-   */
-  isBillable?: boolean | null;
-  status?: ('not_started' | 'in_progress' | 'blocked' | 'in_review' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §126 milestone register. When achieved, fires milestone:achieved → invoice + revenue posting for the milestone amount.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "project-milestones".
- */
-export interface ProjectMilestone {
-  id: number;
-  tenant: number | Tenant;
-  project: number | Project;
-  /**
-   * Sequential ordinal within the project (1, 2, 3, …).
-   */
-  milestoneNumber: number;
-  name: string;
-  description?: string | null;
-  milestoneType?: ('billing' | 'acceptance' | 'payment' | 'internal') | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Milestone billing / revenue amount in cents. Σ(milestones.amount) ≤ project.contractedAmount.
-   */
-  amount: number;
-  /**
-   * Optional: amount expressed as % of contract (validates against contracted amount).
-   */
-  percentOfContract?: number | null;
-  plannedDate: string;
-  /**
-   * Set when status → achieved. Drives the GL post date.
-   */
-  achievedDate?: string | null;
-  /**
-   * User who marked the milestone achieved (SOX §404 four-eyes evidence).
-   */
-  achievedBy?: (number | null) | User;
-  /**
-   * Invoice raised for this milestone (set by the milestone:achieved handler).
-   */
-  invoice?: (number | null) | Invoice;
-  /**
-   * Customer acceptance document reference (e.g. signed sign-off PDF in `evidence-attestations`).
-   */
-  acceptanceDocumentRef?: string | null;
-  status?:
-    | ('planned' | 'in_progress' | 'pending_acceptance' | 'achieved' | 'invoiced' | 'rejected' | 'cancelled')
-    | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Period-end WIP valuation per project — frozen evidence for the IFRS-15 §B18 cost-to-cost JE. One row per (project × fiscal-period).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "wip-snapshots".
- */
-export interface WipSnapshot {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Tenant-unique snapshot reference (e.g. WIP-2026-04-PRJ-001).
-   */
-  snapshotRef: string;
-  project: number | Project;
-  period: number | FiscalPeriod;
-  /**
-   * ISO 8601 — period-end date the snapshot freezes.
-   */
-  snapshotDate: string;
-  /**
-   * Snapshot of the project's recognitionMethod at period-close.
-   */
-  recognitionMethod?: ('cost_to_cost' | 'output_units' | 'output_time' | 'output_survey' | 'milestone') | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Total transaction price (cents).
-   */
-  contractedAmount: number;
-  /**
-   * EAC (Estimate at Completion) at the snapshot date.
-   */
-  estimatedTotalCost: number;
-  /**
-   * Cumulative posted cost (numerator in cost-to-cost % complete).
-   */
-  costToDate: number;
-  /**
-   * costToDate / estimatedTotalCost × 100 (or output-method equivalent).
-   */
-  percentComplete: number;
-  /**
-   * percentComplete × contractedAmount (cumulative recognised revenue).
-   */
-  recognisedRevenue: number;
-  /**
-   * Σ posted-invoices.totalAmount through the snapshot date.
-   */
-  invoicedToDate: number;
-  /**
-   * recognisedRevenue − invoicedToDate. Positive = contract asset (unbilled WIP); negative = contract liability (deferred revenue).
-   */
-  unbilledOrDeferred?: number | null;
-  /**
-   * IAS-37 §66 onerous-contract loss provision when EAC > contracted (booked in full at the snapshot).
-   */
-  estimatedLossProvision?: number | null;
-  /**
-   * The accrual JE that booked this snapshot's movement.
-   */
-  periodEndAdjustment?: (number | null) | PeriodEndAdjustment;
-  status?: ('draft' | 'reviewed' | 'posted' | 'reversed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS-1 §27 recurring accrual template. The scheduled job materialises one journal-entry per (template × period) per schedule.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recurring-journals".
- */
-export interface RecurringJournal {
-  id: number;
-  tenant: number | Tenant;
-  name: string;
-  description?: string | null;
-  recurrenceKind?:
-    | (
-        | 'rent_expense'
-        | 'depreciation'
-        | 'amortisation'
-        | 'prepaid_release'
-        | 'deferred_revenue_release'
-        | 'insurance'
-        | 'loan_interest'
-        | 'subscription_revenue'
-        | 'salary_allocation'
-        | 'custom'
-      )
-    | null;
-  frequency: 'daily' | 'weekly' | 'biweekly' | 'monthly' | 'quarterly' | 'semiannual' | 'annual' | 'rrule';
-  /**
-   * When frequency=rrule: RFC 5545 RRULE string (e.g. FREQ=MONTHLY;BYMONTHDAY=-1 for last-of-month).
-   */
-  rrule?: string | null;
-  startDate: string;
-  /**
-   * Optional end of recurrence (null = open-ended).
-   */
-  endDate?: string | null;
-  /**
-   * Date the scheduler should next materialise. Auto-advanced after each successful run.
-   */
-  nextRunDate: string;
-  /**
-   * Date of the most recent materialisation.
-   */
-  lastRunDate?: string | null;
-  /**
-   * Last materialised JE (for audit + reverse).
-   */
-  lastRunJournalEntry?: (number | null) | JournalEntry;
-  /**
-   * Optional cap on total runs (e.g. 12 for a 12-month amortisation schedule).
-   */
-  remainingRuns?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * JE total in cents. For variable amounts, leave 0 and use `amountFormula`.
-   */
-  amount: number;
-  /**
-   * Optional expression for variable amounts (e.g. `prepaid_balance / remaining_periods`).
-   */
-  amountFormula?: string | null;
-  lines: {
-    glAccount: number | GlAccount;
-    side: 'debit' | 'credit';
-    /**
-     * Per-line cents. Σ debits must equal Σ credits.
-     */
-    amount: number;
-    costCenter?: (number | null) | CostCenter;
-    project?: (number | null) | Project;
-    memo?: string | null;
-    id?: string | null;
-  }[];
-  /**
-   * When true, the scheduler posts the JE directly. When false, it stages a draft for human approval (SOX §404 four-eyes).
-   */
-  autoPost?: boolean | null;
-  status?: ('active' | 'paused' | 'completed' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS-37 §14 register of recognised provisions (warranty / restructuring / onerous / environmental / litigation / decommissioning). Each row is a recognised liability whose timing / amount is uncertain.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "provisions".
- */
-export interface Provision {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Tenant-unique provision reference (e.g. PROV-2026-001).
-   */
-  reference: string;
-  /**
-   * Nature of the obligation (IAS-37 §85(a) disclosure).
-   */
-  description: string;
-  provisionType:
-    | 'warranty'
-    | 'restructuring'
-    | 'onerous_contract'
-    | 'environmental'
-    | 'decommissioning'
-    | 'litigation'
-    | 'refund'
-    | 'restoration'
-    | 'other';
-  /**
-   * Reporting entity that recognises this provision.
-   */
-  legalEntity?: (number | null) | LegalEntity;
-  /**
-   * Date the obligation was first recognised on the balance sheet.
-   */
-  recognitionDate: string;
-  period: number | FiscalPeriod;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * IAS-37 §36 best-estimate of expenditure required to settle (cents).
-   */
-  bestEstimate: number;
-  /**
-   * Sum of undiscounted future cash outflows (when timing extends beyond a year).
-   */
-  undiscountedAmount?: number | null;
-  /**
-   * Pre-tax discount rate per IAS-37 §47 (decimal, e.g. 0.045 = 4.5%).
-   */
-  discountRate?: number | null;
-  /**
-   * Present value (cents) — what hits the balance sheet.
-   */
-  discountedAmount?: number | null;
-  /**
-   * Best estimate of when the obligation will be settled (drives current vs non-current split).
-   */
-  expectedSettlementDate?: string | null;
-  expectedSettlementWindow?: ('within_12m' | 'beyond_12m' | 'indeterminate') | null;
-  /**
-   * IAS-37 §53-58 — expected reimbursement (e.g. insurance recovery) recognised as a separate asset only when virtually certain.
-   */
-  reimbursementExpected?: {
-    amount?: number | null;
-    isVirtuallyCertain?: boolean | null;
-    reimbursingParty?: string | null;
-  };
-  movementHistory?:
-    | {
-        period: number | FiscalPeriod;
-        movementType: 'additional' | 'used' | 'reversed' | 'unwind_discount' | 'fx_revaluation';
-        amount: number;
-        journalEntry?: (number | null) | JournalEntry;
-        movementDate: string;
-        memo?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Method used to derive bestEstimate (IAS-37 §36-39 disclosure).
-   */
-  uncertaintySource?: ('single_estimate' | 'range_midpoint' | 'expected_value' | 'most_likely') | null;
-  /**
-   * Audit finding that triggered the recognition (when applicable).
-   */
-  sourceFinding?: (number | null) | AuditFinding;
-  requiresLegalReview?: boolean | null;
-  status?: ('draft' | 'recognised' | 'used' | 'reversed' | 'reclassified') | null;
+  status?: ('recorded' | 'posted' | 'reversed') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -8791,7 +7951,7 @@ export interface Provision {
  */
 export interface CommitmentsAndContingency {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   reference: string;
   description: string;
   kind: 'commitment' | 'contingent_liability' | 'contingent_asset' | 'guarantee';
@@ -8855,407 +8015,135 @@ export interface CommitmentsAndContingency {
   createdAt: string;
 }
 /**
- * IAS-20 register of public-sector incentives + EU funds + national subsidies. Tracks award, conditions, recognition pattern, clawback risk.
+ * IFRS 16 / ASC 842 lessee leases. ROU asset + lease liability with period-end carrying amounts.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "government-grants".
+ * via the `definition` "leases".
  */
-export interface GovernmentGrant {
+export interface Lease {
   id: number;
-  tenant: number | Tenant;
-  reference: string;
-  grantName: string;
+  tenant?: (number | null) | Tenant;
+  leaseNumber: string;
   /**
-   * Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).
+   * Underlying asset description (e.g. "Office space — Sofia HQ Floor 3").
    */
-  grantorName: string;
+  description?: string | null;
   /**
-   * ISO 3166-1 alpha-2 — country of the granting authority.
+   * Counterparty / lessor.
    */
-  grantorCountryCode?: string | null;
+  lessor?: (number | null) | Address;
   /**
-   * Recipient legal entity.
+   * IFRS 16: lessee uses single model — "finance" maps to ROU+Liability. ASC 842 retains operating/finance distinction. Short-term and low-value are IFRS 16 exemptions (off-balance-sheet).
    */
-  legalEntity?: (number | null) | LegalEntity;
-  grantType:
-    | 'cash_income'
-    | 'cash_capital'
-    | 'tax_credit'
-    | 'concessionary_loan'
-    | 'asset_transfer'
-    | 'forgivable_loan'
-    | 'in_kind_service'
-    | 'rd_grant'
-    | 'employment_subsidy'
-    | 'other';
+  classification: 'finance' | 'operating' | 'short_term' | 'low_value';
+  underlyingAssetCategory?: ('real_estate' | 'vehicles' | 'equipment' | 'it_hardware' | 'software' | 'other') | null;
   /**
-   * IAS-20 §12-24 — chosen presentation method (consistent application required).
+   * Date the lessor makes the underlying asset available — IFRS 16 §22.
    */
-  recognitionMethod: 'deferred_income' | 'net_against_asset' | 'on_receipt' | 'reduce_expense';
-  recognitionPattern?:
-    | ('systematic_useful_life' | 'match_to_costs' | 'straight_line' | 'on_milestones' | 'immediate')
-    | null;
+  commencementDate: string;
   /**
-   * Date of formal award letter / contract.
+   * Lease end date including any reasonably certain extensions.
    */
-  awardDate: string;
-  effectiveStartDate?: string | null;
-  effectiveEndDate?: string | null;
+  endDate: string;
+  /**
+   * Computed lease term in months (commencement → end including extension options reasonably certain — IFRS 16 §B37).
+   */
+  leaseTermMonths?: number | null;
+  /**
+   * Fixed periodic payment, integer cents. Per `paymentFrequency` cycle.
+   */
+  fixedPayment: number;
+  paymentFrequency?: ('monthly' | 'quarterly' | 'semi_annually' | 'annually') | null;
+  paymentTiming?: ('in_advance' | 'in_arrears') | null;
+  /**
+   * Variable lease payments (e.g. CPI-linked, performance-based). Per IFRS 16 §27, only those linked to an index/rate are included in the liability — capture the rules here for next-remeasurement.
+   */
+  variablePaymentNotes?: string | null;
+  /**
+   * Residual value guaranteed to lessor — included in liability per IFRS 16 §27.
+   */
+  residualValueGuarantee?: number | null;
+  /**
+   * Penalty for terminating, included in liability if termination is reasonably certain (IFRS 16 §27).
+   */
+  terminationPenalty?: number | null;
+  /**
+   * IFRS 16 §26 — use rate implicit in the lease if readily determinable; otherwise IBR.
+   */
+  discountRateBasis?: ('rate_implicit' | 'incremental_borrowing') | null;
+  /**
+   * Annual discount rate (percent, e.g. 4.5 for 4.5%).
+   */
+  discountRatePercent: number;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * Maximum award amount (cents).
+   * PV of unpaid lease payments at commencement, discounted at the rate above. Computed by leaseService.calculateInitialMeasurement.
    */
-  totalAwarded: number;
+  initialLeaseLiability?: number | null;
   /**
-   * Cumulative cash received to date.
+   * Initial direct costs incurred by the lessee — IFRS 16 §24(c).
    */
-  amountReceived?: number | null;
+  initialDirectCosts?: number | null;
   /**
-   * Cumulative income recognised in P&L (or asset reduction).
+   * Lease incentives received from the lessor — IFRS 16 §24(b).
    */
-  recognisedToDate?: number | null;
+  leaseIncentivesReceived?: number | null;
   /**
-   * Outstanding liability — cash received but not yet recognised in P&L.
+   * Lease payments made at or before commencement — IFRS 16 §24(b).
    */
-  deferredIncomeBalance?: number | null;
+  prepaidRent?: number | null;
   /**
-   * IAS-20 §7 — only recognise when reasonable assurance of compliance with conditions.
+   * = initialLeaseLiability + initialDirectCosts + prepaidRent − leaseIncentivesReceived. IFRS 16 §24.
    */
-  conditions?:
+  initialRouAsset?: number | null;
+  /**
+   * ROU asset carrying amount as of last posting (after amortisation).
+   */
+  rouAssetCarrying?: number | null;
+  /**
+   * Lease liability carrying amount as of last posting (after interest + payment).
+   */
+  liabilityCarrying?: number | null;
+  lastPostingDate?: string | null;
+  /**
+   * Lease modifications (scope, payments, term). IFRS 16 §44-§46 / ASC 842-10-25-8 trigger remeasurement.
+   */
+  modifications?:
     | {
-        condition: string;
-        targetDate?: string | null;
-        status?: ('open' | 'met' | 'breached' | 'waived') | null;
-        evidenceRef?: string | null;
+        effectiveDate: string;
+        kind:
+          | 'scope_increase_separate'
+          | 'scope_increase_combined'
+          | 'term_extension'
+          | 'term_reduction'
+          | 'payment_change'
+          | 'discount_rate_reset';
+        newDiscountRatePercent?: number | null;
+        newFixedPayment?: number | null;
+        newEndDate?: string | null;
+        notes?: string | null;
         id?: string | null;
       }[]
     | null;
   /**
-   * IAS-20 §32 — provision for repayment when condition-breach probability ≥ 50%.
+   * IAS 36 impairment reserve on the ROU asset.
    */
-  clawbackProvision?: (number | null) | Provision;
+  impairmentReserve?: number | null;
+  status?: ('draft' | 'active' | 'modified' | 'terminated' | 'expired') | null;
   /**
-   * EU CSRD ESRS 2 traceability — flags grants requiring EU traceability disclosure.
+   * Date the lease was terminated early (if applicable).
    */
-  isEUFunded?: boolean | null;
+  terminationDate?: string | null;
   /**
-   * EU Commission CFCA / programme reference (e.g. Horizon Europe project ID).
+   * Right-of-use asset GL account.
    */
-  euCFCAReference?: string | null;
+  rouAssetAccount?: (number | null) | GlAccount;
   /**
-   * For capital grants under net-against-asset method, the asset whose carrying amount is reduced.
+   * Lease liability GL account.
    */
-  relatedAsset?: (number | null) | FixedAsset;
-  status?: ('awarded' | 'active' | 'conditions_met' | 'fully_recognised' | 'repayable' | 'repaid' | 'cancelled') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "csrd-disclosures".
- */
-export interface CsrdDisclosure {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Reporting legal entity (CSRD applies at consolidated + subsidiary level under different conditions).
-   */
-  legalEntity?: (number | null) | LegalEntity;
-  /**
-   * EFRAG ESRS datapoint identifier (e.g. ESRS-E1-6-1, ESRS-S1-9-2).
-   */
-  datapointId: string;
-  /**
-   * Reporting fiscal year (YYYY).
-   */
-  reportingYear: number;
-  esrsCategory: 'cross_cutting' | 'environmental' | 'social' | 'governance';
-  esrsTopic:
-    | 'esrs_1'
-    | 'esrs_2'
-    | 'esrs_e1'
-    | 'esrs_e2'
-    | 'esrs_e3'
-    | 'esrs_e4'
-    | 'esrs_e5'
-    | 'esrs_s1'
-    | 'esrs_s2'
-    | 'esrs_s3'
-    | 'esrs_s4'
-    | 'esrs_g1';
-  /**
-   * ESRS 1 §3 double-materiality assessment outcome.
-   */
-  materiality?: ('double_material' | 'impact_material' | 'financial_material' | 'not_material') | null;
-  /**
-   * Disclosure narrative (machine-extractable for XBRL filing).
-   */
-  narrative?: string | null;
-  quantitativeKpi?: {
-    value?: number | null;
-    /**
-     * e.g. tCO2e, m³, %, €, FTE.
-     */
-    unit?: string | null;
-    methodology?: string | null;
-    priorYearComparison?: number | null;
-    targetValue?: number | null;
-    targetYear?: number | null;
-  };
-  /**
-   * ESRS 2 IRO (Impacts, Risks, Opportunities) classification.
-   */
-  iro?: {
-    kind?: ('impact' | 'risk' | 'opportunity') | null;
-    timeHorizon?: ('short' | 'medium' | 'long') | null;
-    valueChainStage?: ('upstream' | 'own_ops' | 'downstream') | null;
-  };
-  /**
-   * CSRD requires limited assurance from FY2024, scaling to reasonable assurance by 2028.
-   */
-  assuranceStatus?: ('not_assured' | 'limited_assurance' | 'reasonable_assurance' | 'self_declared') | null;
-  assuranceProvider?: string | null;
-  /**
-   * Signed PDF evidence pack for the disclosure (audit walk-through anchor).
-   */
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
-  /**
-   * EU Taxonomy 2020/852 eligibility flag (for E1-E2 environmental KPIs).
-   */
-  isEUTaxonomyEligible?: boolean | null;
-  isEUTaxonomyAligned?: boolean | null;
-  status?: ('draft' | 'under_review' | 'approved' | 'filed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * GHG Protocol Scope 1/2/3 emissions register. One row per (source × reporting period) — substantiates the ESRS E1 §44-50 disclosure totals.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "carbon-emissions".
- */
-export interface CarbonEmission {
-  id: number;
-  tenant: number | Tenant;
-  reference: string;
-  /**
-   * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
-   */
-  legalEntity?: (number | null) | LegalEntity;
-  reportingYear: number;
-  reportingPeriod?: (number | null) | FiscalPeriod;
-  /**
-   * GHG Protocol scope per Corporate Standard §6.
-   */
-  scope: 'scope_1' | 'scope_2' | 'scope_3' | 'biogenic';
-  /**
-   * 22-category disaggregation per GHG Protocol Scope 1/2/3 standards.
-   */
-  category:
-    | 's1_stationary'
-    | 's1_mobile'
-    | 's1_process'
-    | 's1_fugitive'
-    | 's2_electricity_location'
-    | 's2_electricity_market'
-    | 's2_heat_steam_cooling'
-    | 's3_1_purchased_goods'
-    | 's3_2_capital_goods'
-    | 's3_3_fuel_energy'
-    | 's3_4_upstream_transport'
-    | 's3_5_waste'
-    | 's3_6_business_travel'
-    | 's3_7_commuting'
-    | 's3_8_upstream_leased'
-    | 's3_9_downstream_transport'
-    | 's3_10_processing'
-    | 's3_11_use_of_sold'
-    | 's3_12_eol'
-    | 's3_13_downstream_leased'
-    | 's3_14_franchises'
-    | 's3_15_investments';
-  activityData: {
-    /**
-     * Underlying activity quantity (e.g. litres of diesel, kWh, km driven, kg of waste).
-     */
-    value: number;
-    /**
-     * Unit of measure for the activity quantity.
-     */
-    unit: string;
-    /**
-     * What generated the emission (e.g. fleet vehicle reg, building meter ID).
-     */
-    sourceDescription?: string | null;
-  };
-  emissionFactor: {
-    /**
-     * Emission factor (e.g. kgCO2e per kWh, per litre, per kg).
-     */
-    value: number;
-    unit: string;
-    /**
-     * Source — DEFRA / IEA / EPA / supplier-specific (ISAE 3410 evidence trail).
-     */
-    sourceRef?: string | null;
-    gwpHorizon?: ('gwp_100' | 'gwp_20') | null;
-  };
-  /**
-   * Total tonnes CO2-equivalent (activityData.value × emissionFactor.value, normalised).
-   */
-  tCO2eValue: number;
-  /**
-   * Optional per-gas split (CO2 / CH4 / N2O / HFC / PFC / SF6 / NF3) per ESRS E1 §50.
-   */
-  gasBreakdown?: {
-    co2?: number | null;
-    ch4?: number | null;
-    n2o?: number | null;
-    hfc?: number | null;
-    pfc?: number | null;
-    sf6?: number | null;
-    nf3?: number | null;
-  };
-  /**
-   * GHG Protocol Scope 3 §7.3 data-quality hierarchy.
-   */
-  methodology?: ('activity_based' | 'hybrid' | 'spend_based' | 'supplier_specific' | 'average_data') | null;
-  dataQuality?: ('measured' | 'calculated' | 'estimated' | 'default_factor') | null;
-  /**
-   * ISAE 3410 third-party verification flag.
-   */
-  isVerified?: boolean | null;
-  verifierName?: string | null;
-  verificationDate?: string | null;
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
-  /**
-   * EU CBAM (Carbon Border Adjustment Mechanism) relevance flag for cross-border carbon-intensive goods.
-   */
-  cbamRelevant?: boolean | null;
-  status?: ('draft' | 'submitted' | 'verified' | 'filed' | 'restated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * OECD BEPS Action 13 structured TP documentation register. Master File / Local File / CbCR per fiscal year per jurisdiction.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transfer-pricing-files".
- */
-export interface TransferPricingFile {
-  id: number;
-  tenant: number | Tenant;
-  reference: string;
-  reportingYear: number;
-  fileType: 'master_file' | 'local_file' | 'cbcr' | 'benchmark' | 'apa' | 'tp_adjustment';
-  /**
-   * ISO 3166-1 alpha-2 — filing jurisdiction (e.g. BG / DE / RO / NL).
-   */
-  jurisdictionCode: string;
-  /**
-   * Entity whose Local File this is (only set when fileType = local_file).
-   */
-  localFileEntity?: (number | null) | LegalEntity;
-  /**
-   * Ultimate parent / surrogate parent for Master File + CbCR.
-   */
-  consolidatedHeadEntity?: (number | null) | LegalEntity;
-  /**
-   * OECD TPG Annex I to Chapter V — Master File sections.
-   */
-  masterFileSections?: {
-    orgStructure?: string | null;
-    businessDescription?: string | null;
-    intangibles?: string | null;
-    intercompanyFinancialActivities?: string | null;
-    financialAndTaxPositions?: string | null;
-  };
-  /**
-   * OECD TPG Annex II to Chapter V — Local File sections.
-   */
-  localFileSections?: {
-    localEntityDescription?: string | null;
-    controlledTransactions?: string | null;
-    financialInformation?: string | null;
-  };
-  /**
-   * OECD CbCR Table 1 — per-jurisdiction aggregates. One row per jurisdiction.
-   */
-  cbcrAggregates?:
-    | {
-        /**
-         * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
-         */
-        jurisdictionCode: string;
-        unrelatedRevenue?: number | null;
-        relatedRevenue?: number | null;
-        totalRevenue?: number | null;
-        profitBeforeTax?: number | null;
-        incomeTaxPaidCash?: number | null;
-        incomeTaxAccrued?: number | null;
-        statedCapital?: number | null;
-        accumulatedEarnings?: number | null;
-        numberOfEmployees?: number | null;
-        tangibleAssets?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * OECD TPG Chapter II — selected method.
-   */
-  tpMethod?: ('cup' | 'resale_price' | 'cost_plus' | 'tnmm' | 'profit_split' | 'other') | null;
-  reportingCurrency?:
-    | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
-    | null;
-  /**
-   * Group consolidated revenue — drives CbCR threshold (€750M / national equivalents).
-   */
-  consolidatedRevenue?: number | null;
-  /**
-   * CbCR filing required when consolidated revenue ≥ €750M (or local equivalent).
-   */
-  cbcrFilingThresholdMet?: boolean | null;
-  /**
-   * OECD Pillar Two GloBE 15% minimum tax applicability — when consolidated revenue ≥ €750M for ≥ 2 of last 4 years.
-   */
-  pillarTwoApplicable?: boolean | null;
-  preparationDate?: string | null;
-  /**
-   * Statutory filing deadline (varies by jurisdiction).
-   */
-  filingDeadline?: string | null;
-  filingDate?: string | null;
-  filingStatus?:
-    | (
-        | 'in_preparation'
-        | 'filed_timely'
-        | 'filed_late'
-        | 'not_required'
-        | 'under_review'
-        | 'no_adjustment'
-        | 'adjustment'
-      )
-    | null;
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
-  /**
-   * Advance Pricing Agreement reference (when applicable).
-   */
-  apaReference?: string | null;
-  status?: ('draft' | 'approved' | 'filed' | 'closed' | 'restated') | null;
+  leaseLiabilityAccount?: (number | null) | GlAccount;
+  rouAmortizationAccount?: (number | null) | GlAccount;
+  interestExpenseAccount?: (number | null) | GlAccount;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -9271,7 +8159,7 @@ export interface TransferPricingFile {
  */
 export interface LeaseModification {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   reference: string;
   lease: number | Lease;
   /**
@@ -9372,64 +8260,73 @@ export interface LeaseModification {
   createdAt: string;
 }
 /**
- * Pre-customer prospect (qualified lead). Converts to an opportunity → customer on close-won.
+ * Signed PDF cover sheets per completed e2e walk-through — SOX §404 evidence pack with optional eIDAS qualified seal.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leads".
+ * via the `definition` "evidence-attestations".
  */
-export interface Lead {
+export interface EvidenceAttestation {
   id: number;
-  tenant: number | Tenant;
-  fullName: string;
-  firstName?: string | null;
-  lastName?: string | null;
-  jobTitle?: string | null;
-  companyName: string;
-  email?: string | null;
-  phone?: string | null;
-  website?: string | null;
-  industry?: string | null;
-  companySize?: ('1_10' | '11_50' | '51_200' | '201_1000' | '1000_plus') | null;
+  tenant?: (number | null) | Tenant;
   /**
-   * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
+   * Filename-style id (e.g. `2026-05-09-order-to-cash-tenant-42`).
    */
-  countryCode?: string | null;
-  preferredLanguage?: string | null;
-  leadSource?:
-    | (
-        | 'website_form'
-        | 'demo_request'
-        | 'content_download'
-        | 'cold_email'
-        | 'cold_call'
-        | 'event'
-        | 'partner'
-        | 'webinar'
-        | 'social'
-        | 'paid_ad'
-        | 'organic_search'
-        | 'other'
-      )
-    | null;
-  campaign?: string | null;
+  attestationId: string;
   /**
-   * BANT / MEDDIC composite score (0-100). May be AI-suggested.
+   * Workflow slug (`order-to-cash`, `procure-to-pay`, `record-to-report`).
    */
-  leadScore?: number | null;
+  workflow: string;
   /**
-   * Operator estimate of contract value if won (cents).
+   * ISO-3166-1 alpha-2 the walk-through ran against.
    */
-  estimatedValue?: number | null;
-  estimatedCloseDate?: string | null;
-  assignedTo?: (number | null) | User;
-  convertedOpportunity?: (number | null) | Opportunity;
-  convertedCustomer?: (number | null) | Customer;
-  convertedAt?: string | null;
+  country: string;
   /**
-   * GDPR Art.7 marketing-consent record (if applicable).
+   * ISO-8601 timestamp the walk-through completed.
    */
-  consentRecord?: (number | null) | ConsentRecord;
-  status?: ('new' | 'contacted' | 'engaged' | 'mql' | 'sql' | 'converted' | 'disqualified' | 'recycled') | null;
+  capturedAt: string;
+  pdfA: '1b' | '2b' | '2a' | '3b';
+  pdfUa?: ('none' | '1' | '2') | null;
+  /**
+   * True when the attestation carries a PAdES qualified signature.
+   */
+  signed?: boolean | null;
+  /**
+   * PAdES baseline level the signature claims (declared in `/Prop_Build`).
+   */
+  padesLevel?: ('B-B' | 'B-T' | 'B-LT' | 'B-LTA') | null;
+  /**
+   * The PDF/A-2b + PDF/UA-1 attestation bytes (uploaded to R2 via the Media collection).
+   */
+  pdfFile?: (number | null) | Media;
+  /**
+   * CMS SignedData blob (hex-encoded) — eIDAS Art.28 qualified-seal evidence. Populated by `signBgPadesPdf`.
+   */
+  signatureValue?: string | null;
+  /**
+   * ISO 8601-1:2019 signature creation time (distinct from `capturedAt` and `approvedAt`).
+   */
+  signedAt?: string | null;
+  /**
+   * eIDAS qualified-seal certificate chain (PEM-encoded). Subject DN is denormalised in `signedBy`.
+   */
+  signingCertificate?: string | null;
+  /**
+   * Subject distinguished name (DN) of the signer — denormalised from the signingCertificate for filtering.
+   */
+  signedBy?: string | null;
+  /**
+   * SHA-256 (NIST FIPS-180-4) hex digest of the signed bytes — message-digest for tamper-detection.
+   */
+  signatureDigest?: string | null;
+  /**
+   * Number of walk-through steps captured in the attestation body.
+   */
+  stepsCount?: number | null;
+  /**
+   * Number of UX gaps recorded during the walk-through.
+   */
+  gapsCount?: number | null;
+  status?: ('generated' | 'signed' | 'filed' | 'superseded') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -9438,300 +8335,78 @@ export interface Lead {
   createdAt: string;
 }
 /**
- * Sales-pipeline deal with weighted forecast. Close-won creates a contract + (if needed) a customer.
+ * Per-period IAS 16 / ASC 842 evidence. One row per (lease × period). JE fires on status → posted.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "opportunities".
+ * via the `definition` "lease-period-postings".
  */
-export interface Opportunity {
+export interface LeasePeriodPosting {
   id: number;
-  tenant: number | Tenant;
-  name: string;
-  lead?: (number | null) | Lead;
+  tenant?: (number | null) | Tenant;
   /**
-   * Existing customer (for upsell/cross-sell). Null for net-new from lead.
+   * Stable id (e.g. LPP-2026-04-LEASE-001).
    */
-  customer?: (number | null) | Customer;
-  opportunityOwner: number | User;
-  stage:
-    | 'qualification'
-    | 'discovery'
-    | 'solution'
-    | 'quote_sent'
-    | 'negotiation'
-    | 'verbal_commit'
-    | 'closed_won'
-    | 'closed_lost'
-    | 'closed_no_decision';
+  postingId: string;
+  lease: number | Lease;
   /**
-   * Snapshot probability (0-100%). Defaults map to stage but operator can override.
+   * Inclusive start of the period.
    */
-  probability?: number | null;
+  periodStart: string;
+  /**
+   * Inclusive end of the period.
+   */
+  periodEnd: string;
   currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   /**
-   * Annual contract value (ARR for SaaS) or one-time TCV (cents).
+   * Lease liability carrying at start of period (cents). Source of the §36 effective-interest accretion.
    */
-  amount: number;
+  openingLiabilityCarrying: number;
   /**
-   * amount × probability/100. Aggregated for the pipeline forecast.
+   * ROU asset carrying at start of period (cents).
    */
-  weightedAmount?: number | null;
-  expectedCloseDate: string;
-  actualCloseDate?: string | null;
-  closeReason?:
-    | ('price' | 'product_fit' | 'timing' | 'competitor' | 'internal_politics' | 'budget_cut' | 'other')
-    | null;
-  competitor?: string | null;
-  forecastCategory?: ('pipeline' | 'best_case' | 'commit' | 'closed' | 'omitted') | null;
-  segment?: (number | null) | CustomerSegment;
-  campaign?: string | null;
+  openingRouCarrying: number;
   /**
-   * Contract created on close-won.
+   * Interest accretion this period (cents). IFRS 16 §36 effective-interest method: openingLiability × periodicRate.
    */
-  contractCreated?: (number | null) | Contract;
-  status?: ('open' | 'won' | 'lost' | 'abandoned') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Pricing / marketing / portfolio segment. Customers tag-link to segments; pricing rules + campaigns target the segment.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customer-segments".
- */
-export interface CustomerSegment {
-  id: number;
-  tenant: number | Tenant;
-  name: string;
-  description?: string | null;
-  segmentType: 'commercial' | 'industry' | 'geographic' | 'lifecycle' | 'behavioural' | 'strategic' | 'other';
+  interest: number;
   /**
-   * Operator-readable criteria (e.g. "ARR ≥ €100k AND industry = SaaS").
+   * Principal portion of the cash payment (cents). = leasePayment − interest. Reduces the liability.
    */
-  criteria?: string | null;
+  principalRepayment: number;
   /**
-   * Tie-breaker when a customer fits multiple segments (lower = higher priority).
+   * Total cash paid this period. = principalRepayment + interest.
    */
-  priorityRank?: number | null;
+  cashPayment: number;
   /**
-   * Default discount % off list price for this segment.
+   * ROU asset amortisation booked this period (cents). IFRS 16 §31: typically straight-line over the lease term.
    */
-  discountPercent?: number | null;
+  rouAmortisation: number;
   /**
-   * Default Net-N payment terms (days).
+   * = opening + interest − principalRepayment. Auditable evidence.
    */
-  paymentTermDays?: number | null;
+  closingLiabilityCarrying?: number | null;
   /**
-   * Default per-customer credit limit (cents) — operator can override per customer.
+   * = opening − rouAmortisation.
    */
-  creditLimit?: number | null;
-  pricingTier?: ('list' | 'volume' | 'negotiated' | 'strategic') | null;
+  closingRouCarrying?: number | null;
   /**
-   * IFRS-15 §4 portfolio practical expedient — group similar contracts for revenue recognition.
+   * Overrides the lease.interestExpenseAccount.
    */
-  isPortfolioForIfrs15?: boolean | null;
-  status?: ('active' | 'inactive' | 'deprecated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * CRM activity log — calls, emails, meetings, tasks. Linked to lead / opportunity / customer / contact.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "activities".
- */
-export interface Activity {
-  id: number;
-  tenant: number | Tenant;
-  subject: string;
-  activityType:
-    | 'call'
-    | 'email'
-    | 'meeting'
-    | 'demo'
-    | 'task'
-    | 'note'
-    | 'social'
-    | 'document_send'
-    | 'quote_send'
-    | 'site_visit';
-  direction?: ('outbound' | 'inbound' | 'internal') | null;
-  activityDate: string;
-  durationMinutes?: number | null;
-  assignedTo: number | User;
-  relatedTo: 'lead' | 'opportunity' | 'customer' | 'vendor' | 'project';
-  lead?: (number | null) | Lead;
-  opportunity?: (number | null) | Opportunity;
-  customer?: (number | null) | Customer;
-  vendor?: (number | null) | Vendor;
-  project?: (number | null) | Project;
-  description?: string | null;
-  outcome?: ('positive' | 'neutral' | 'negative' | 'action_required') | null;
-  nextStep?: string | null;
-  nextStepDate?: string | null;
-  status?: ('planned' | 'in_progress' | 'completed' | 'cancelled' | 'deferred') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §91-94 commission record. Capitalised + amortised when contract life makes amortisation ≥ 1 year; otherwise expensed.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales-commissions".
- */
-export interface SalesCommission {
-  id: number;
-  tenant: number | Tenant;
-  reference: string;
-  salesperson: number | User;
+  interestExpenseAccount?: (number | null) | GlAccount;
+  leaseLiabilityAccount?: (number | null) | GlAccount;
+  rouAmortisationAccount?: (number | null) | GlAccount;
+  accumulatedRouAmortisationAccount?: (number | null) | GlAccount;
   /**
-   * When commission flows through payroll.
+   * Cash account debited for the principal repayment. Drives the IAS 7 cash-flows financing-activities classification.
    */
-  employee?: (number | null) | Employee;
-  opportunity: number | Opportunity;
+  cashAccount?: (number | null) | GlAccount;
   /**
-   * Contract created on close-won (drives the amortisation period).
+   * Cost-center the lease cost allocates to (IFRS 8 / ASC 280 segment).
    */
-  contract?: (number | null) | Contract;
-  customer?: (number | null) | Customer;
-  closedWonDate: string;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  commissionRule?: {
-    planName?: string | null;
-    /**
-     * Commission % on contract value.
-     */
-    ratePercent?: number | null;
-    /**
-     * Optional tiered-plan detail (e.g. 5% to quota, 10% over quota).
-     */
-    tieredOverride?: string | null;
-  };
-  /**
-   * Contract value the commission was calculated on (cents).
-   */
-  contractValue: number;
-  /**
-   * Gross commission (cents).
-   */
-  commissionAmount: number;
-  recognitionTreatment: 'capitalise_amortise' | 'expense_immediately' | 'renewal';
-  /**
-   * Months over which capitalised commission is amortised (typically the contract life including expected renewals per IFRS-15 §99).
-   */
-  amortisationPeriodMonths?: number | null;
-  /**
-   * Cumulative amortisation expense recognised.
-   */
-  amortisedToDate?: number | null;
-  /**
-   * Outstanding capitalised commission asset (cents).
-   */
-  capitalisedAssetBalance?: number | null;
-  paymentStatus?: ('pending' | 'approved' | 'paid' | 'clawed_back' | 'disputed') | null;
-  paymentDate?: string | null;
-  paidViaPayrollRun?: (number | null) | PayrollRun;
-  /**
-   * IAS-37 clawback-risk provision (when contract churns / refunds within clawback window).
-   */
-  clawbackProvision?: (number | null) | Provision;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('draft' | 'approved' | 'posted' | 'amortising' | 'fully_amortised' | 'clawed_back') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * SOX §404 pre-PO approval gate. Requisitioner ≠ approver; auditor walks PO → requisition → approval chain.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-requisitions".
- */
-export interface PurchaseRequisition {
-  id: number;
-  tenant: number | Tenant;
-  requisitionNumber: string;
-  requisitioner: number | User;
-  department?: string | null;
   costCenter?: (number | null) | CostCenter;
-  project?: (number | null) | Project;
-  requestedDate: string;
-  /**
-   * When the goods/services are needed.
-   */
-  requiredByDate?: string | null;
-  /**
-   * Reason for the spend (drives approver decision + audit-trail evidence).
-   */
-  businessJustification: string;
-  lines: {
-    description: string;
-    item?: (number | null) | Item;
-    quantity: number;
-    uom?: string | null;
-    /**
-     * Estimated unit price (cents).
-     */
-    estimatedUnitPrice: number;
-    /**
-     * quantity × estimatedUnitPrice (cents).
-     */
-    estimatedAmount: number;
-    glAccount?: (number | null) | GlAccount;
-    preferredVendor?: (number | null) | Vendor;
-    id?: string | null;
-  }[];
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Σ lines.estimatedAmount (cents).
-   */
-  estimatedTotal: number;
-  priority?: ('critical' | 'high' | 'normal' | 'low') | null;
-  /**
-   * When true, must collect ≥ 3 vendor quotes before PO (typical for spend > €10k).
-   */
-  requiresQuotes?: boolean | null;
-  minimumQuotesRequired?: number | null;
-  approvalChain?:
-    | {
-        step: number;
-        approver: number | User;
-        /**
-         * e.g. Department Head, CFO, CEO.
-         */
-        role?: string | null;
-        decision?: ('pending' | 'approved' | 'rejected' | 'returned') | null;
-        decidedAt?: string | null;
-        comment?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * PO created when requisition fully approved.
-   */
-  createdPurchaseOrder?: (number | null) | PurchaseOrder;
-  /**
-   * Selected vendor quote that led to PO award.
-   */
-  awardedQuote?: (number | null) | VendorQuote;
-  status?:
-    | ('draft' | 'submitted' | 'in_approval' | 'approved' | 'rejected' | 'returned' | 'po_created' | 'cancelled')
-    | null;
+  status?: ('calculated' | 'posted' | 'reversed') | null;
+  postedAt?: string | null;
+  journalEntry?: (number | null) | JournalEntry;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -9740,153 +8415,60 @@ export interface PurchaseRequisition {
   createdAt: string;
 }
 /**
- * Per-vendor RFQ response. Award decision lives here with rationale; the awarded quote becomes the PO source.
+ * SEPA Direct Debit mandate register. PaymentRuns of pain.008 reference these mandate ids.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-quotes".
+ * via the `definition` "sepa-mandates".
  */
-export interface VendorQuote {
+export interface SepaMandate {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
-   * Tenant-unique vendor quote number (e.g. VQ-2026-0001).
+   * Unique mandate identifier carried in pain.008 MndtId.
    */
-  quoteNumber: string;
-  vendor: number | Vendor;
+  mandateId: string;
+  localInstrument: 'CORE' | 'B2B';
+  debtorName: string;
   /**
-   * Source requisition (one PR may have many vendor quotes).
+   * ISO 13616 IBAN of the debtor.
    */
-  requisition?: (number | null) | PurchaseRequisition;
-  rfqIssuedDate?: string | null;
-  quoteReceivedDate: string;
+  debtorIban: string;
   /**
-   * Quote expiry (after this date, vendor may not honour pricing).
+   * ISO 9362 BIC.
    */
-  validUntil?: string | null;
-  lines: {
-    description: string;
-    item?: (number | null) | Item;
-    quantity: number;
-    uom?: string | null;
-    unitPrice: number;
-    lineTotal: number;
-    leadTimeDays?: number | null;
-    id?: string | null;
-  }[];
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  subtotal?: number | null;
-  taxAmount?: number | null;
-  shippingAmount?: number | null;
-  discountAmount?: number | null;
+  debtorBic?: string | null;
   /**
-   * Quote total (cents).
+   * Optional link to the addresses register.
    */
-  totalAmount: number;
+  debtor?: (number | null) | Address;
   /**
-   * e.g. "Net 30", "2/10 Net 30", "50% deposit, balance on delivery".
+   * Creditor identifier (CI) — country-specific format assigned by the regulator.
    */
-  paymentTerms?: string | null;
+  creditorIdentifier: string;
   /**
-   * INCOTERMS 2020 code (e.g. EXW / FCA / DAP / DDP) per ICC publication 723E.
+   * Date the debtor signed the mandate.
    */
-  incoterms?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
-  deliveryDate?: string | null;
+  signatureDate: string;
   /**
-   * Set true when this is the winning quote.
+   * Signed mandate file (PDF). Required evidence.
    */
-  isAwarded?: boolean | null;
-  awardedDate?: string | null;
-  awardedBy?: (number | null) | User;
+  mandateDocument?: (number | null) | Media;
+  signatureMethod?: ('wet_ink' | 'qualified_electronic' | 'advanced_electronic' | 'click_accept') | null;
   /**
-   * OECD BEPS Action 13 + SOX §404 — reason for selection (lowest price / best fit / certified vendor / etc.).
+   * EPC130-08: a mandate becomes obsolete 36 months after the most recent collection. The auto-state-machine driven by lastCollectionAt.
    */
-  awardRationale?: string | null;
+  sequenceState?: ('pending_first' | 'active_recurring' | 'final_submitted' | 'expired') | null;
   /**
-   * PO created from the awarded quote.
+   * Most recent direct-debit collection date — drives the 36-month rule.
    */
-  createdPurchaseOrder?: (number | null) | PurchaseOrder;
-  qualityAssessment?: ('excellent' | 'good' | 'acceptable' | 'marginal' | 'unacceptable') | null;
-  status?: ('requested' | 'received' | 'under_review' | 'awarded' | 'not_awarded' | 'expired' | 'withdrawn') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * ISO 9001 §8.4 vendor performance scorecard. Periodic (typically quarterly). Drives renewal / probation / de-listing decision.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-scorecards".
- */
-export interface VendorScorecard {
-  id: number;
-  tenant: number | Tenant;
-  reference: string;
-  vendor: number | Vendor;
+  lastCollectionAt?: string | null;
   /**
-   * e.g. 2026-Q1, 2026-FY.
+   * Computed: lastCollectionAt + 36 months (or signatureDate + 36 months if never collected).
    */
-  periodLabel: string;
-  periodStartDate: string;
-  periodEndDate: string;
-  /**
-   * Procurement / quality manager who completed the scorecard.
-   */
-  evaluator: number | User;
-  metrics?: {
-    /**
-     * OTD % across the period.
-     */
-    onTimeDeliveryPercent?: number | null;
-    /**
-     * % of receipts accepted without nonconformance.
-     */
-    qualityAcceptanceRate?: number | null;
-    /**
-     * % of invoices matching PO price.
-     */
-    priceAccuracyPercent?: number | null;
-    /**
-     * Average vendor response time to RFQs / queries (hours).
-     */
-    responseTimeAvgHours?: number | null;
-    returnRatePercent?: number | null;
-    /**
-     * Optional ESG / supplier-sustainability score.
-     */
-    sustainabilityScore?: number | null;
-    /**
-     * ISO 27001 A.5.19 supplier-information-security score.
-     */
-    cybersecurityScore?: number | null;
-  };
-  volumes?: {
-    /**
-     * Σ vendor invoices in period (cents).
-     */
-    totalSpend?: number | null;
-    numberOfPurchaseOrders?: number | null;
-    numberOfReceipts?: number | null;
-    numberOfNonconformances?: number | null;
-    numberOfReturns?: number | null;
-  };
-  /**
-   * Weighted composite score (0-100). Drives the recommendation.
-   */
-  overallScore?: number | null;
-  recommendation: 'preferred' | 'approved' | 'conditional' | 'probation' | 'delist';
-  /**
-   * Required when recommendation = conditional / probation — what the vendor must do.
-   */
-  improvementPlan?: string | null;
-  /**
-   * Was the scorecard discussed with the vendor in a QBR?
-   */
-  reviewedWithVendor?: boolean | null;
-  reviewMeetingDate?: string | null;
-  status?: ('draft' | 'reviewed' | 'shared' | 'acknowledged' | 'closed') | null;
+  expiryDate?: string | null;
+  revokedAt?: string | null;
+  revocationReason?: string | null;
+  status?: ('active' | 'suspended' | 'revoked' | 'cancelled' | 'expired') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -9902,7 +8484,7 @@ export interface VendorScorecard {
  */
 export interface JobPosition {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   positionCode: string;
   positionTitle: string;
   department?: string | null;
@@ -9977,90 +8559,157 @@ export interface JobPosition {
   createdAt: string;
 }
 /**
- * GDPR-compliant candidate pipeline. One row per (candidate × position). Funnel: applied → screening → interview → offer → hired / rejected.
+ * Daily time records. Drives payroll variable pay + project / cost-center cost allocation.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recruiting-pipeline".
+ * via the `definition` "time-entries".
  */
-export interface RecruitingPipeline {
+export interface TimeEntry {
   id: number;
-  tenant: number | Tenant;
-  candidateName: string;
-  firstName?: string | null;
-  lastName?: string | null;
-  email: string;
-  phone?: string | null;
-  linkedinUrl?: string | null;
-  position: number | JobPosition;
-  recruiter?: (number | null) | User;
-  hiringManager?: (number | null) | User;
-  applicationDate: string;
-  source?:
-    | ('job_board' | 'company_website' | 'referral' | 'agency' | 'internal' | 'university' | 'sourced' | 'reapplied')
-    | null;
+  tenant?: (number | null) | Tenant;
   /**
-   * Referring employee (when source = referral).
+   * Stable id (e.g. TE-2026-04-001).
    */
-  referrer?: (number | null) | Employee;
-  stage:
-    | 'applied'
-    | 'screening'
-    | 'phone_screen'
-    | 'technical'
-    | 'onsite'
-    | 'reference_check'
-    | 'offer_extended'
-    | 'offer_accepted'
-    | 'offer_declined'
-    | 'hired'
-    | 'rejected'
-    | 'withdrawn';
-  interviewSchedule?:
-    | {
-        round?: string | null;
-        scheduledDate?: string | null;
-        interviewers?: (number | User)[] | null;
-        feedback?: ('strong_hire' | 'hire' | 'no_hire' | 'strong_no_hire') | null;
-        feedbackNotes?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  offerDetails?: {
-    currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  entryId: string;
+  employee: number | Employee;
+  workDate: string;
+  /**
+   * Duration in minutes. Capped at 1,440 per day; multi-day blocks split into separate rows.
+   */
+  minutes: number;
+  /**
+   * Drives the payroll multiplier and which GL accounts the cost posts to. PTO / sick / parental decrement the employee's benefits.paidTimeOffBalance.
+   */
+  kind:
+    | 'regular'
+    | 'overtime_15'
+    | 'overtime_2'
+    | 'night_shift'
+    | 'holiday_work'
+    | 'pto'
+    | 'sick_leave'
+    | 'parental_leave'
+    | 'bereavement'
+    | 'unpaid_leave'
+    | 'training';
+  /**
+   * Cost-center the labor cost allocates to. Defaults to the employee's department; can override per-entry for cross-charges.
+   */
+  costCenter?: (number | null) | CostCenter;
+  /**
+   * Optional project / job code for project accounting. Free-text until a Projects collection lands.
+   */
+  project?: string | null;
+  /**
+   * Optional task / work breakdown structure ref.
+   */
+  task?: string | null;
+  /**
+   * What was done. Required for billable / chargeable hours.
+   */
+  description?: string | null;
+  /**
+   * Hours billable to a customer (project accounting / IFRS 15 input-method progress).
+   */
+  billable?: boolean | null;
+  /**
+   * Rate per hour in cents — for billable rows only. Drives the IFRS 15 over-time recognition when the PO uses labor_hours measurement.
+   */
+  billableRate?: number | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'rejected' | 'posted') | null;
+  submittedAt?: string | null;
+  rejectionReason?: string | null;
+  /**
+   * Payroll run that consumed this entry — set when status flips to posted.
+   */
+  payrollRun?: (number | null) | PayrollRun;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Vacation / sick / parental / unpaid leave register. Approved requests decrement entitlement balance + feed IAS-19 accrual.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leave-requests".
+ */
+export interface LeaveRequest {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  reference: string;
+  employee: number | Employee;
+  leaveType:
+    | 'annual'
+    | 'sick'
+    | 'sick_unpaid'
+    | 'maternity'
+    | 'paternity'
+    | 'adoption'
+    | 'bereavement'
+    | 'jury_duty'
+    | 'military'
+    | 'study'
+    | 'sabbatical'
+    | 'unpaid_personal'
+    | 'compassionate'
+    | 'toil'
+    | 'public_holiday_sub';
+  isPaid?: boolean | null;
+  submittedDate: string;
+  startDate: string;
+  endDate: string;
+  /**
+   * Working days requested (excludes weekends + public holidays per local calendar).
+   */
+  workingDays: number;
+  /**
+   * For half-day or partial requests — total hours.
+   */
+  workingHours?: number | null;
+  partialDay?: ('full' | 'half_morning' | 'half_afternoon' | 'custom') | null;
+  /**
+   * Optional — required by some leave types (e.g. medical certificate ref for sick).
+   */
+  reason?: string | null;
+  /**
+   * Medical certificate reference (sick leave) — receipt-image attached separately.
+   */
+  medicalCertificateRef?: string | null;
+  balanceImpact?: {
     /**
-     * Annual base salary (cents).
+     * Which entitlement bucket this draws from (e.g. "annual_2026"). Future: relate to LeaveEntitlements collection.
      */
-    baseSalary?: number | null;
-    signOnBonus?: number | null;
-    equityGrant?: string | null;
-    targetStartDate?: string | null;
-    offerExtendedDate?: string | null;
-    offerExpiryDate?: string | null;
+    entitlementType?: string | null;
+    /**
+     * Days remaining before this request.
+     */
+    beforeBalance?: number | null;
+    /**
+     * Days remaining after this request approval.
+     */
+    afterBalance?: number | null;
+    /**
+     * Days drawn from prior-year carry-over.
+     */
+    carryOverApplied?: number | null;
   };
-  rejectionReason?:
-    | (
-        | 'not_qualified'
-        | 'other_selected'
-        | 'comp_mismatch'
-        | 'cultural_fit'
-        | 'position_cancelled'
-        | 'background_check'
-        | 'other'
-      )
-    | null;
+  approver?: (number | null) | User;
+  rejectionReason?: string | null;
   /**
-   * GDPR Art.6 consent for retention beyond standard retention period.
+   * Coverage employee during the absence (when applicable).
    */
-  consentRecord?: (number | null) | ConsentRecord;
-  /**
-   * GDPR Art.5(1)(e) — date after which PII must be purged unless consent renewed.
-   */
-  piiRetentionUntil?: string | null;
-  /**
-   * Employee record created on hire.
-   */
-  createdEmployee?: (number | null) | Employee;
-  status?: ('active' | 'hired' | 'rejected' | 'withdrawn' | 'on_hold' | 'pii_purged') | null;
+  replacedByEmployee?: (number | null) | Employee;
+  isHandoverComplete?: boolean | null;
+  cancelledDate?: string | null;
+  cancelReason?: string | null;
+  status?: ('draft' | 'submitted' | 'approved' | 'rejected' | 'in_progress' | 'completed' | 'cancelled') | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -10076,7 +8725,7 @@ export interface RecruitingPipeline {
  */
 export interface PerformanceReview {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   reference: string;
   employee: number | Employee;
   /**
@@ -10162,7 +8811,7 @@ export interface PerformanceReview {
  */
 export interface ExpenseReport {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   reportNumber: string;
   employee: number | Employee;
   submissionDate: string;
@@ -10263,85 +8912,242 @@ export interface ExpenseReport {
   createdAt: string;
 }
 /**
- * Vacation / sick / parental / unpaid leave register. Approved requests decrement entitlement balance + feed IAS-19 accrual.
+ * GDPR-compliant candidate pipeline. One row per (candidate × position). Funnel: applied → screening → interview → offer → hired / rejected.
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leave-requests".
+ * via the `definition` "recruiting-pipeline".
  */
-export interface LeaveRequest {
+export interface RecruitingPipeline {
   id: number;
+  tenant?: (number | null) | Tenant;
+  candidateName: string;
+  firstName?: string | null;
+  lastName?: string | null;
+  email: string;
+  phone?: string | null;
+  linkedinUrl?: string | null;
+  position: number | JobPosition;
+  recruiter?: (number | null) | User;
+  hiringManager?: (number | null) | User;
+  applicationDate: string;
+  source?:
+    | ('job_board' | 'company_website' | 'referral' | 'agency' | 'internal' | 'university' | 'sourced' | 'reapplied')
+    | null;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Referring employee (when source = referral).
    */
-  uuid: string;
-  tenant: number | Tenant;
-  reference: string;
-  employee: number | Employee;
-  leaveType:
-    | 'annual'
-    | 'sick'
-    | 'sick_unpaid'
-    | 'maternity'
-    | 'paternity'
-    | 'adoption'
-    | 'bereavement'
-    | 'jury_duty'
-    | 'military'
-    | 'study'
-    | 'sabbatical'
-    | 'unpaid_personal'
-    | 'compassionate'
-    | 'toil'
-    | 'public_holiday_sub';
-  isPaid?: boolean | null;
-  submittedDate: string;
-  startDate: string;
-  endDate: string;
-  /**
-   * Working days requested (excludes weekends + public holidays per local calendar).
-   */
-  workingDays: number;
-  /**
-   * For half-day or partial requests — total hours.
-   */
-  workingHours?: number | null;
-  partialDay?: ('full' | 'half_morning' | 'half_afternoon' | 'custom') | null;
-  /**
-   * Optional — required by some leave types (e.g. medical certificate ref for sick).
-   */
-  reason?: string | null;
-  /**
-   * Medical certificate reference (sick leave) — receipt-image attached separately.
-   */
-  medicalCertificateRef?: string | null;
-  balanceImpact?: {
+  referrer?: (number | null) | Employee;
+  stage:
+    | 'applied'
+    | 'screening'
+    | 'phone_screen'
+    | 'technical'
+    | 'onsite'
+    | 'reference_check'
+    | 'offer_extended'
+    | 'offer_accepted'
+    | 'offer_declined'
+    | 'hired'
+    | 'rejected'
+    | 'withdrawn';
+  interviewSchedule?:
+    | {
+        round?: string | null;
+        scheduledDate?: string | null;
+        interviewers?: (number | User)[] | null;
+        feedback?: ('strong_hire' | 'hire' | 'no_hire' | 'strong_no_hire') | null;
+        feedbackNotes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  offerDetails?: {
+    currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
     /**
-     * Which entitlement bucket this draws from (e.g. "annual_2026"). Future: relate to LeaveEntitlements collection.
+     * Annual base salary (cents).
      */
-    entitlementType?: string | null;
-    /**
-     * Days remaining before this request.
-     */
-    beforeBalance?: number | null;
-    /**
-     * Days remaining after this request approval.
-     */
-    afterBalance?: number | null;
-    /**
-     * Days drawn from prior-year carry-over.
-     */
-    carryOverApplied?: number | null;
+    baseSalary?: number | null;
+    signOnBonus?: number | null;
+    equityGrant?: string | null;
+    targetStartDate?: string | null;
+    offerExtendedDate?: string | null;
+    offerExpiryDate?: string | null;
   };
-  approver?: (number | null) | User;
-  rejectionReason?: string | null;
+  rejectionReason?:
+    | (
+        | 'not_qualified'
+        | 'other_selected'
+        | 'comp_mismatch'
+        | 'cultural_fit'
+        | 'position_cancelled'
+        | 'background_check'
+        | 'other'
+      )
+    | null;
   /**
-   * Coverage employee during the absence (when applicable).
+   * GDPR Art.6 consent for retention beyond standard retention period.
    */
-  replacedByEmployee?: (number | null) | Employee;
-  isHandoverComplete?: boolean | null;
-  cancelledDate?: string | null;
-  cancelReason?: string | null;
-  status?: ('draft' | 'submitted' | 'approved' | 'rejected' | 'in_progress' | 'completed' | 'cancelled') | null;
+  consentRecord?: (number | null) | ConsentRecord;
+  /**
+   * GDPR Art.5(1)(e) — date after which PII must be purged unless consent renewed.
+   */
+  piiRetentionUntil?: string | null;
+  /**
+   * Employee record created on hire.
+   */
+  createdEmployee?: (number | null) | Employee;
+  status?: ('active' | 'hired' | 'rejected' | 'withdrawn' | 'on_hold' | 'pii_purged') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * CRM activity log — calls, emails, meetings, tasks. Linked to lead / opportunity / customer / contact.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "activities".
+ */
+export interface Activity {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  subject: string;
+  activityType:
+    | 'call'
+    | 'email'
+    | 'meeting'
+    | 'demo'
+    | 'task'
+    | 'note'
+    | 'social'
+    | 'document_send'
+    | 'quote_send'
+    | 'site_visit';
+  direction?: ('outbound' | 'inbound' | 'internal') | null;
+  activityDate: string;
+  durationMinutes?: number | null;
+  assignedTo: number | User;
+  relatedTo: 'lead' | 'opportunity' | 'customer' | 'vendor' | 'project';
+  lead?: (number | null) | Lead;
+  opportunity?: (number | null) | Opportunity;
+  customer?: (number | null) | Customer;
+  vendor?: (number | null) | Vendor;
+  project?: (number | null) | Project;
+  description?: string | null;
+  outcome?: ('positive' | 'neutral' | 'negative' | 'action_required') | null;
+  nextStep?: string | null;
+  nextStepDate?: string | null;
+  status?: ('planned' | 'in_progress' | 'completed' | 'cancelled' | 'deferred') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * WBS element under a project. Time-entries + materials post against a task; cost-to-cost progress measurement rolls up.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "project-tasks".
+ */
+export interface ProjectTask {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  project: number | Project;
+  /**
+   * Optional parent task for hierarchical WBS (task → subtask).
+   */
+  parentTask?: (number | null) | ProjectTask;
+  /**
+   * Project-unique task code (e.g. T-001 / WBS 1.2.3).
+   */
+  taskCode: string;
+  name: string;
+  description?: string | null;
+  assignee?: (number | null) | User;
+  taskType?: ('work' | 'milestone' | 'summary' | 'deliverable') | null;
+  /**
+   * Estimated effort hours.
+   */
+  budgetedHours?: number | null;
+  /**
+   * Σ approved time-entries.hours posted to this task.
+   */
+  actualHours?: number | null;
+  budgetedCost?: number | null;
+  /**
+   * Σ posted cost (labour + materials) for this task.
+   */
+  actualCost?: number | null;
+  percentComplete?: number | null;
+  plannedStartDate?: string | null;
+  plannedEndDate?: string | null;
+  actualStartDate?: string | null;
+  actualEndDate?: string | null;
+  /**
+   * Predecessor tasks (finish-to-start by default).
+   */
+  dependencyTasks?: (number | ProjectTask)[] | null;
+  /**
+   * When true, time-entries posted here flow into customer invoicing.
+   */
+  isBillable?: boolean | null;
+  status?: ('not_started' | 'in_progress' | 'blocked' | 'in_review' | 'completed' | 'cancelled') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS-15 §126 milestone register. When achieved, fires milestone:achieved → invoice + revenue posting for the milestone amount.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "project-milestones".
+ */
+export interface ProjectMilestone {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  project: number | Project;
+  /**
+   * Sequential ordinal within the project (1, 2, 3, …).
+   */
+  milestoneNumber: number;
+  name: string;
+  description?: string | null;
+  milestoneType?: ('billing' | 'acceptance' | 'payment' | 'internal') | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Milestone billing / revenue amount in cents. Σ(milestones.amount) ≤ project.contractedAmount.
+   */
+  amount: number;
+  /**
+   * Optional: amount expressed as % of contract (validates against contracted amount).
+   */
+  percentOfContract?: number | null;
+  plannedDate: string;
+  /**
+   * Set when status → achieved. Drives the GL post date.
+   */
+  achievedDate?: string | null;
+  /**
+   * User who marked the milestone achieved (SOX §404 four-eyes evidence).
+   */
+  achievedBy?: (number | null) | User;
+  /**
+   * Invoice raised for this milestone (set by the milestone:achieved handler).
+   */
+  invoice?: (number | null) | Invoice;
+  /**
+   * Customer acceptance document reference (e.g. signed sign-off PDF in `evidence-attestations`).
+   */
+  acceptanceDocumentRef?: string | null;
+  status?:
+    | ('planned' | 'in_progress' | 'pending_acceptance' | 'achieved' | 'invoiced' | 'rejected' | 'cancelled')
+    | null;
   createdBy?: (number | null) | User;
   approvedBy?: (number | null) | User;
   approvedAt?: string | null;
@@ -10357,7 +9163,7 @@ export interface LeaveRequest {
  */
 export interface WorkflowDefinition {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   name: string;
   description?: string | null;
   /**
@@ -10433,7 +9239,7 @@ export interface WorkflowDefinition {
  */
 export interface WorkflowInstance {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * RFC 9562 UUID v4 — idempotency key.
    */
@@ -10503,6 +9309,212 @@ export interface WorkflowInstance {
   createdAt: string;
 }
 /**
+ * Finished-good receipt from a work-order into inventory. Booked at absorbed cost per IAS-2 §10. The variance vs standard lands in `cost-variances`.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "production-receipts".
+ */
+export interface ProductionReceipt {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Receipt reference (e.g. `PR-2026-04-0001`).
+   */
+  reference: string;
+  workOrder: number | WorkOrder;
+  /**
+   * Denormalised from work-order for fast filter.
+   */
+  finishedGood: number | Item;
+  receivedQuantity: number;
+  targetWarehouse: number | WarehouseLocation;
+  /**
+   * Production lot number — required for traceability per FDA / EU food / pharma.
+   */
+  lotNumber?: string | null;
+  /**
+   * JSON array of serial numbers for serialised items.
+   */
+  serialNumbers?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  receiptDate: string;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  cost?: {
+    /**
+     * Σ(component issues × actual cost) for this receipt. In cents.
+     */
+    materialCost?: number | null;
+    /**
+     * Σ(actual labour-minutes × labour rate). In cents.
+     */
+    labourCost?: number | null;
+    /**
+     * Σ(actual machine-minutes × overhead rate). IAS-2 §13 normal-capacity allocation. In cents.
+     */
+    overheadCost?: number | null;
+    /**
+     * Σ of the three above — what gets debited to Inventory.
+     */
+    absorbedCost?: number | null;
+    /**
+     * absorbedCost / receivedQuantity.
+     */
+    unitCost?: number | null;
+  };
+  /**
+   * Auto-created `inventory-movements` row of kind=`receipt` (production source).
+   */
+  inventoryMovement?: (number | null) | InventoryMovement;
+  /**
+   * JE that books Dr Finished Goods / Cr WIP.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('draft' | 'posted' | 'reversed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * ISO 9001 §8.7 nonconformance + §9.1 measurement records. Drives inventory write-offs for failed lots.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "quality-inspections".
+ */
+export interface QualityInspection {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Inspection reference (e.g. `QC-2026-04-0001`).
+   */
+  reference: string;
+  inspectionType: 'incoming' | 'in_process' | 'final' | 'complaint' | 'calibration';
+  item: number | Item;
+  inspectedQuantity: number;
+  /**
+   * For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.
+   */
+  sampleSize?: number | null;
+  /**
+   * Quantity that failed the inspection criteria.
+   */
+  failedQuantity?: number | null;
+  /**
+   * For in-process inspection — the WO this inspection ran against.
+   */
+  workOrder?: (number | null) | WorkOrder;
+  /**
+   * For incoming inspection — the GRN this inspection covers.
+   */
+  goodsReceipt?: (number | null) | GoodsReceipt;
+  /**
+   * For final inspection — the shipment this inspection releases.
+   */
+  shipment?: (number | null) | Shipment;
+  inspectionDate: string;
+  /**
+   * Inspector who performed the check.
+   */
+  inspector?: (number | null) | User;
+  outcome: 'pending' | 'passed' | 'failed' | 'conditional' | 'quarantined';
+  /**
+   * NCR detail — required when outcome = failed/conditional/quarantined.
+   */
+  failureReason?: string | null;
+  /**
+   * Corrective and Preventive Action reference (ISO 9001 §10.2).
+   */
+  capaReference?: string | null;
+  /**
+   * Auto-created `kind=write_off` movement for failed quantities.
+   */
+  inventoryMovement?: (number | null) | InventoryMovement;
+  status?: ('draft' | 'in_progress' | 'completed' | 'disputed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Period-end WIP valuation per project — frozen evidence for the IFRS-15 §B18 cost-to-cost JE. One row per (project × fiscal-period).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "wip-snapshots".
+ */
+export interface WipSnapshot {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Tenant-unique snapshot reference (e.g. WIP-2026-04-PRJ-001).
+   */
+  snapshotRef: string;
+  project: number | Project;
+  period: number | FiscalPeriod;
+  /**
+   * ISO 8601 — period-end date the snapshot freezes.
+   */
+  snapshotDate: string;
+  /**
+   * Snapshot of the project's recognitionMethod at period-close.
+   */
+  recognitionMethod?: ('cost_to_cost' | 'output_units' | 'output_time' | 'output_survey' | 'milestone') | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Total transaction price (cents).
+   */
+  contractedAmount: number;
+  /**
+   * EAC (Estimate at Completion) at the snapshot date.
+   */
+  estimatedTotalCost: number;
+  /**
+   * Cumulative posted cost (numerator in cost-to-cost % complete).
+   */
+  costToDate: number;
+  /**
+   * costToDate / estimatedTotalCost × 100 (or output-method equivalent).
+   */
+  percentComplete: number;
+  /**
+   * percentComplete × contractedAmount (cumulative recognised revenue).
+   */
+  recognisedRevenue: number;
+  /**
+   * Σ posted-invoices.totalAmount through the snapshot date.
+   */
+  invoicedToDate: number;
+  /**
+   * recognisedRevenue − invoicedToDate. Positive = contract asset (unbilled WIP); negative = contract liability (deferred revenue).
+   */
+  unbilledOrDeferred?: number | null;
+  /**
+   * IAS-37 §66 onerous-contract loss provision when EAC > contracted (booked in full at the snapshot).
+   */
+  estimatedLossProvision?: number | null;
+  /**
+   * The accrual JE that booked this snapshot's movement.
+   */
+  periodEndAdjustment?: (number | null) | PeriodEndAdjustment;
+  status?: ('draft' | 'reviewed' | 'posted' | 'reversed' | 'restated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * IWMS property master per ISO 41001 §3.1.7 facility. Owned/leased/managed real estate. Pairs with spaces (sub-units) + maintenance-work-orders.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -10510,7 +9522,7 @@ export interface WorkflowInstance {
  */
 export interface Property {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Short code (e.g. `HQ-SOF`, `WHS-BER-01`).
    */
@@ -10640,7 +9652,7 @@ export interface Property {
  */
 export interface Space {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Short code (e.g. `HQ-SOF-F03-R201`).
    */
@@ -10733,6 +9745,103 @@ export interface Space {
   createdAt: string;
 }
 /**
+ * IWMS / CMMS service request per ISO 41001 §8.1. Occupant-raised tickets that may become maintenance work orders.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "maintenance-requests".
+ */
+export interface MaintenanceRequest {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential request reference (e.g. `MR-2026-04-001`).
+   */
+  reference: string;
+  /**
+   * Short summary (e.g. "Leaking tap room 201").
+   */
+  subject: string;
+  description: string;
+  requestType:
+    | 'corrective'
+    | 'preventive'
+    | 'predictive'
+    | 'improvement'
+    | 'compliance'
+    | 'safety'
+    | 'cleaning'
+    | 'move'
+    | 'other';
+  priority: 'p1' | 'p2' | 'p3' | 'p4';
+  /**
+   * Property the issue is at.
+   */
+  property?: (number | null) | Property;
+  /**
+   * Specific space (room / desk / zone), if known.
+   */
+  space?: (number | null) | Space;
+  /**
+   * Specific asset (HVAC, lift, machinery) the issue concerns.
+   */
+  fixedAsset?: (number | null) | FixedAsset;
+  /**
+   * When a bookable resource is impacted (vehicle / equipment / room).
+   */
+  bookableResource?: (number | null) | BookableResource;
+  /**
+   * User who raised the request (occupant / FM operator / sensor-fed system user).
+   */
+  reportedBy?: (number | null) | User;
+  /**
+   * Free-text name (for anonymous portal submissions).
+   */
+  reportedByName?: string | null;
+  /**
+   * Email for status notifications.
+   */
+  reportedByEmail?: string | null;
+  /**
+   * When the request was raised.
+   */
+  reportedAt: string;
+  /**
+   * SLA target resolution time — derived from priority + service-catalog rule.
+   */
+  targetResolutionAt?: string | null;
+  /**
+   * Optional photo evidence (URLs in R2 / object storage).
+   */
+  photos?:
+    | {
+        url: string;
+        caption?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Work order this request was promoted to (set by triage).
+   */
+  workOrder?: (number | null) | MaintenanceWorkOrder;
+  /**
+   * FM operator who triaged the request.
+   */
+  triagedBy?: (number | null) | User;
+  triagedAt?: string | null;
+  closedAt?: string | null;
+  /**
+   * Why closed (resolved / duplicate / not actionable / out of scope).
+   */
+  closureNote?: string | null;
+  status?: ('new' | 'triaged' | 'assigned' | 'on_hold' | 'resolved' | 'rejected' | 'duplicate' | 'closed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Catalog of anything reservable. Domain-agnostic (rooms / vehicles / equipment / beds / time slots) via the `kind` discriminator.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -10740,7 +9849,7 @@ export interface Space {
  */
 export interface BookableResource {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Short code (e.g. `ROOM-201`, `VAN-03`, `LATHE-A`).
    */
@@ -10841,430 +9950,6 @@ export interface BookableResource {
   createdAt: string;
 }
 /**
- * Reservation event for a bookable-resource. Status flow: requested → held → confirmed → checked_in → checked_out → settled.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bookings".
- */
-export interface Booking {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential booking reference (e.g. `BK-2026-04-001` or PMS confirmation number).
-   */
-  reference: string;
-  resource: number | BookableResource;
-  guestType: 'customer' | 'employee' | 'address';
-  /**
-   * Required when guestType = `customer`.
-   */
-  customer?: (number | null) | Customer;
-  /**
-   * Required when guestType = `employee`.
-   */
-  employee?: (number | null) | Employee;
-  /**
-   * Required when guestType = `address`.
-   */
-  address?: (number | null) | Address;
-  /**
-   * Display name (denormalised for fast list views).
-   */
-  guestName?: string | null;
-  /**
-   * Confirmation email destination.
-   */
-  guestEmail?: string | null;
-  /**
-   * Number of people / units (must respect resource.capacity).
-   */
-  partySize?: number | null;
-  /**
-   * ISO 8601 — start of the booking window (inclusive).
-   */
-  startAt: string;
-  /**
-   * ISO 8601 — end of the booking window (exclusive). Must be ≥ startAt.
-   */
-  endAt: string;
-  /**
-   * Optional RFC 5545 RRULE for recurring bookings (e.g. `FREQ=WEEKLY;BYDAY=TU;COUNT=12`).
-   */
-  rrule?: string | null;
-  channel?: ('direct' | 'ota' | 'gds' | 'marketplace' | 'internal') | null;
-  /**
-   * External-channel reference (e.g. Booking.com confirmation id).
-   */
-  channelReference?: string | null;
-  /**
-   * Effective rate per resource.rateBasis unit (cents).
-   */
-  rateApplied?: number | null;
-  /**
-   * How many `rateBasis` units this booking covers (e.g. 3 nights, 4 hours).
-   */
-  unitsBilled?: number | null;
-  /**
-   * rateApplied × unitsBilled (cents).
-   */
-  subtotalAmount?: number | null;
-  /**
-   * VAT / sales-tax (cents).
-   */
-  taxAmount?: number | null;
-  /**
-   * subtotalAmount + taxAmount (cents).
-   */
-  totalAmount?: number | null;
-  /**
-   * Pre-payment / hold (cents).
-   */
-  depositAmount?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * IFRS-15 §B40 — drives revenue / breakage recognition on no-show / cancel.
-   */
-  cancellationPolicy?: ('flex' | 'moderate' | 'strict' | 'non_refundable') | null;
-  /**
-   * Invoice raised at check-out (or pre-paid at confirmation).
-   */
-  invoice?: (number | null) | Invoice;
-  /**
-   * JE booked at check-out / no-show recognition.
-   */
-  journalEntry?: (number | null) | JournalEntry;
-  status?:
-    | ('requested' | 'held' | 'confirmed' | 'checked_in' | 'checked_out' | 'settled' | 'no_show' | 'cancelled')
-    | null;
-  confirmedAt?: string | null;
-  checkedInAt?: string | null;
-  checkedOutAt?: string | null;
-  cancelledAt?: string | null;
-  cancelReason?: string | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS-15 §B77-B78 consignment master agreement. Pairs with consignment-inventory (running balance at consignee) + consignment-sales (sale events triggering revenue recognition).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consignment-arrangements".
- */
-export interface ConsignmentArrangement {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential arrangement reference (e.g. `CONS-2026-001`).
-   */
-  reference: string;
-  /**
-   * Counterparty holding the consigned goods on our behalf (distributor, retailer, 3PL).
-   */
-  consignee: number | Address;
-  /**
-   * Denormalised name for fast filter / list display.
-   */
-  consigneeName?: string | null;
-  /**
-   * Optional FK if the consignee location is also tracked in `warehouse-locations` (type=`consignment`).
-   */
-  consigneeWarehouseLocation?: (number | null) | WarehouseLocation;
-  /**
-   * ISO 8601 — start of the arrangement.
-   */
-  effectiveFrom: string;
-  /**
-   * Optional end date; null = open-ended until terminated.
-   */
-  effectiveTo?: string | null;
-  /**
-   * IFRS-15 §B77 — what event resolves the §B77 indicators and transfers control.
-   */
-  controlTransferTrigger: 'consignee_sale' | 'consignee_acceptance' | 'time_out' | 'manual';
-  /**
-   * Required when controlTransferTrigger = `time_out`. Days after which unsold inventory is deemed sold to consignee.
-   */
-  timeOutDays?: number | null;
-  /**
-   * IFRS-15 §B77(c) — return-right is a primary indicator of consignment vs sale.
-   */
-  returnRights: 'unrestricted' | 'window' | 'none';
-  /**
-   * Days the consignee can return unsold inventory; required when returnRights = `window`.
-   */
-  returnWindowDays?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Maximum on-hand value the consignee is approved to hold (cents). Used to gate ship-to-consignee.
-   */
-  maxValue?: number | null;
-  /**
-   * Commission % the consignee earns on sale (0-100). Net revenue = sale price × (1 − rate).
-   */
-  commissionRatePercent?: number | null;
-  /**
-   * INCOTERMS 2020 — note: physical-delivery incoterm DOES NOT transfer accounting control under consignment (IFRS-15 §B78).
-   */
-  incoterm?: ('CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'EXW' | 'FCA' | 'OTHER') | null;
-  /**
-   * Optional FK to the IFRS-15 master contract that governs this arrangement.
-   */
-  contract?: (number | null) | Contract;
-  /**
-   * Signed PDF agreement (eIDAS PAdES) — auditor walk-through anchor.
-   */
-  evidenceAttestation?: (number | null) | EvidenceAttestation;
-  status?: ('draft' | 'active' | 'suspended' | 'terminated') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Per-SKU running balance of inventory held at a consignee location. Tenant retains balance-sheet ownership per IAS-2 §6 + IFRS-15 §B77-B78.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consignment-inventory".
- */
-export interface ConsignmentInventory {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Stable line id (e.g. `CINV-2026-04-001`).
-   */
-  lineId: string;
-  arrangement: number | ConsignmentArrangement;
-  /**
-   * Specific consignee location for multi-location consignees.
-   */
-  consigneeWarehouseLocation?: (number | null) | WarehouseLocation;
-  /**
-   * Item SKU / material code. Free-text until an items collection lands.
-   */
-  itemSku: string;
-  itemDescription?: string | null;
-  /**
-   * UN/CEFACT REC 20 unit-of-measure code (e.g. EA, KG, L).
-   */
-  unitOfMeasure?: string | null;
-  /**
-   * Current on-hand quantity at the consignee location.
-   */
-  quantityOnHand: number;
-  /**
-   * Per-unit cost (cents) — IAS-2 §10 cost-of-purchase. Drives valueOnHand.
-   */
-  unitCost?: number | null;
-  /**
-   * quantityOnHand × unitCost (cents). Computed on each movement.
-   */
-  valueOnHand?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * When this row was last reconciled / counted.
-   */
-  asOfDate: string;
-  /**
-   * Most recent ship-to-consignee event.
-   */
-  lastShipmentDate?: string | null;
-  /**
-   * Most recent sale-by-consignee event (decrements on-hand).
-   */
-  lastSaleDate?: string | null;
-  /**
-   * IAS-2 §25 — must match the tenant's primary inventory valuation method.
-   */
-  valuationMethod?: ('fifo' | 'weighted_average' | 'specific_id' | 'standard') | null;
-  /**
-   * Inventory GL account this consignment row maps to (typically a sub-account of 1300 — Inventory at Consignee).
-   */
-  glAccount?: (number | null) | GlAccount;
-  status?: ('active' | 'frozen' | 'reconciled' | 'written_off') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Sale-by-consignee event. Per IFRS-15 §B78, this is the moment control transfers and revenue recognises.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consignment-sales".
- */
-export interface ConsignmentSale {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sale reference reported by the consignee (e.g. `CSALE-2026-04-001`).
-   */
-  reference: string;
-  arrangement: number | ConsignmentArrangement;
-  /**
-   * Source inventory row this sale draws from.
-   */
-  consignmentInventory: number | ConsignmentInventory;
-  /**
-   * ISO 8601 — date the consignee sold to the end-customer (this is the IFRS-15 §B78 control-transfer date).
-   */
-  saleDate: string;
-  /**
-   * Date the consignee reported the sale to us (may lag saleDate).
-   */
-  reportedDate?: string | null;
-  /**
-   * Reference / id of the end-customer the consignee sold to (free-text; consignee may anonymise).
-   */
-  endCustomerRef?: string | null;
-  quantitySold: number;
-  unitOfMeasure?: string | null;
-  /**
-   * Per-unit selling price (cents).
-   */
-  unitPrice: number;
-  /**
-   * quantitySold × unitPrice (cents). The gross revenue line.
-   */
-  grossAmount: number;
-  /**
-   * Snapshot of arrangement.commissionRatePercent at sale time (rate-card change ≠ retroactive).
-   */
-  commissionRatePercent?: number | null;
-  /**
-   * grossAmount × commissionRatePercent / 100 (cents).
-   */
-  commissionAmount?: number | null;
-  /**
-   * grossAmount − commissionAmount (cents). Hits AR/cash.
-   */
-  netAmount?: number | null;
-  /**
-   * IAS-2 §34 cost-of-sales — quantitySold × consignment-inventory.unitCost (cents).
-   */
-  cogsAmount?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * Invoice the consignor raises against the consignee for the sale.
-   */
-  invoice?: (number | null) | Invoice;
-  /**
-   * JE that booked the revenue + COGS + commission entries.
-   */
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('reported' | 'validated' | 'posted' | 'reversed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IWMS / CMMS service request per ISO 41001 §8.1. Occupant-raised tickets that may become maintenance work orders.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-requests".
- */
-export interface MaintenanceRequest {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential request reference (e.g. `MR-2026-04-001`).
-   */
-  reference: string;
-  /**
-   * Short summary (e.g. "Leaking tap room 201").
-   */
-  subject: string;
-  description: string;
-  requestType:
-    | 'corrective'
-    | 'preventive'
-    | 'predictive'
-    | 'improvement'
-    | 'compliance'
-    | 'safety'
-    | 'cleaning'
-    | 'move'
-    | 'other';
-  priority: 'p1' | 'p2' | 'p3' | 'p4';
-  /**
-   * Property the issue is at.
-   */
-  property?: (number | null) | Property;
-  /**
-   * Specific space (room / desk / zone), if known.
-   */
-  space?: (number | null) | Space;
-  /**
-   * Specific asset (HVAC, lift, machinery) the issue concerns.
-   */
-  fixedAsset?: (number | null) | FixedAsset;
-  /**
-   * When a bookable resource is impacted (vehicle / equipment / room).
-   */
-  bookableResource?: (number | null) | BookableResource;
-  /**
-   * User who raised the request (occupant / FM operator / sensor-fed system user).
-   */
-  reportedBy?: (number | null) | User;
-  /**
-   * Free-text name (for anonymous portal submissions).
-   */
-  reportedByName?: string | null;
-  /**
-   * Email for status notifications.
-   */
-  reportedByEmail?: string | null;
-  /**
-   * When the request was raised.
-   */
-  reportedAt: string;
-  /**
-   * SLA target resolution time — derived from priority + service-catalog rule.
-   */
-  targetResolutionAt?: string | null;
-  /**
-   * Optional photo evidence (URLs in R2 / object storage).
-   */
-  photos?:
-    | {
-        url: string;
-        caption?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Work order this request was promoted to (set by triage).
-   */
-  workOrder?: (number | null) | MaintenanceWorkOrder;
-  /**
-   * FM operator who triaged the request.
-   */
-  triagedBy?: (number | null) | User;
-  triagedAt?: string | null;
-  closedAt?: string | null;
-  /**
-   * Why closed (resolved / duplicate / not actionable / out of scope).
-   */
-  closureNote?: string | null;
-  status?: ('new' | 'triaged' | 'assigned' | 'on_hold' | 'resolved' | 'rejected' | 'duplicate' | 'closed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * CMMS execution row per ISO 55000 work-management. Consumes parts (inventory-movements) + labour (time-entries) and posts cost as expense or capex.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -11272,7 +9957,7 @@ export interface MaintenanceRequest {
  */
 export interface MaintenanceWorkOrder {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential work-order reference (e.g. `WO-2026-04-001`).
    */
@@ -11405,6 +10090,3363 @@ export interface MaintenanceWorkOrder {
   createdAt: string;
 }
 /**
+ * Reservation event for a bookable-resource. Status flow: requested → held → confirmed → checked_in → checked_out → settled.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bookings".
+ */
+export interface Booking {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential booking reference (e.g. `BK-2026-04-001` or PMS confirmation number).
+   */
+  reference: string;
+  resource: number | BookableResource;
+  guestType: 'customer' | 'employee' | 'address';
+  /**
+   * Required when guestType = `customer`.
+   */
+  customer?: (number | null) | Customer;
+  /**
+   * Required when guestType = `employee`.
+   */
+  employee?: (number | null) | Employee;
+  /**
+   * Required when guestType = `address`.
+   */
+  address?: (number | null) | Address;
+  /**
+   * Display name (denormalised for fast list views).
+   */
+  guestName?: string | null;
+  /**
+   * Confirmation email destination.
+   */
+  guestEmail?: string | null;
+  /**
+   * Number of people / units (must respect resource.capacity).
+   */
+  partySize?: number | null;
+  /**
+   * ISO 8601 — start of the booking window (inclusive).
+   */
+  startAt: string;
+  /**
+   * ISO 8601 — end of the booking window (exclusive). Must be ≥ startAt.
+   */
+  endAt: string;
+  /**
+   * Optional RFC 5545 RRULE for recurring bookings (e.g. `FREQ=WEEKLY;BYDAY=TU;COUNT=12`).
+   */
+  rrule?: string | null;
+  channel?: ('direct' | 'ota' | 'gds' | 'marketplace' | 'internal') | null;
+  /**
+   * External-channel reference (e.g. Booking.com confirmation id).
+   */
+  channelReference?: string | null;
+  /**
+   * Effective rate per resource.rateBasis unit (cents).
+   */
+  rateApplied?: number | null;
+  /**
+   * How many `rateBasis` units this booking covers (e.g. 3 nights, 4 hours).
+   */
+  unitsBilled?: number | null;
+  /**
+   * rateApplied × unitsBilled (cents).
+   */
+  subtotalAmount?: number | null;
+  /**
+   * VAT / sales-tax (cents).
+   */
+  taxAmount?: number | null;
+  /**
+   * subtotalAmount + taxAmount (cents).
+   */
+  totalAmount?: number | null;
+  /**
+   * Pre-payment / hold (cents).
+   */
+  depositAmount?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * IFRS-15 §B40 — drives revenue / breakage recognition on no-show / cancel.
+   */
+  cancellationPolicy?: ('flex' | 'moderate' | 'strict' | 'non_refundable') | null;
+  /**
+   * Invoice raised at check-out (or pre-paid at confirmation).
+   */
+  invoice?: (number | null) | Invoice;
+  /**
+   * JE booked at check-out / no-show recognition.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  status?:
+    | ('requested' | 'held' | 'confirmed' | 'checked_in' | 'checked_out' | 'settled' | 'no_show' | 'cancelled')
+    | null;
+  confirmedAt?: string | null;
+  checkedInAt?: string | null;
+  checkedOutAt?: string | null;
+  cancelledAt?: string | null;
+  cancelReason?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Shipping/freight carrier master per tenant — DHL/UPS/FedEx/national-post and per-tenant accounts. Normalises `shipments.carrier` from free-text.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "carriers".
+ */
+export interface Carrier {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Carrier code (e.g. `DHL`, `UPS`, `FEDEX`, `BG-POST`).
+   */
+  code: string;
+  /**
+   * Display name (e.g. `DHL Express`, `Bulgarian Posts`).
+   */
+  name: string;
+  scope: 'international' | 'national' | 'regional' | 'postal' | 'freight' | 'maritime' | 'air';
+  /**
+   * Per-tenant carrier account number (used in API requests).
+   */
+  accountNumber?: string | null;
+  /**
+   * RFC 3986 base URL for the carrier rate / tracking API.
+   */
+  apiBaseUrl?: string | null;
+  /**
+   * Reference into a secrets-store (NIST SP-800-108 KDF) — never store raw credentials.
+   */
+  apiCredentialsId?: string | null;
+  /**
+   * INCOTERMS-tagged transport options offered by this carrier.
+   */
+  serviceLevels?:
+    | {
+        /**
+         * Carrier service code (e.g. `EXPRESS_WORLDWIDE`).
+         */
+        code: string;
+        label: string;
+        incoterm?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
+        /**
+         * Typical end-to-end transit time in days.
+         */
+        transitDays?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IATA DGR / IMDG-Code hazardous-goods carriage allowed.
+   */
+  supportsHazmat?: boolean | null;
+  /**
+   * When this carrier became active for the tenant.
+   */
+  effectiveFrom?: string | null;
+  /**
+   * When the relationship ends — empty = open.
+   */
+  effectiveTo?: string | null;
+  status?: ('active' | 'suspended' | 'terminated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Append-only carrier-side shipment status events. Polled / webhook-pushed from carrier APIs. The `delivered` event triggers IFRS-15 §38 revenue recognition under DDP/DAP/DPU INCOTERMS.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tracking-events".
+ */
+export interface TrackingEvent {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  shipment: number | Shipment;
+  /**
+   * Denormalised from shipment for fast filter.
+   */
+  carrier?: (number | null) | Carrier;
+  /**
+   * Carrier-side tracking number (denormalised).
+   */
+  trackingNumber?: string | null;
+  eventCode:
+    | 'label_created'
+    | 'picked_up'
+    | 'in_transit'
+    | 'customs_started'
+    | 'customs_cleared'
+    | 'customs_held'
+    | 'out_for_delivery'
+    | 'delivery_attempted'
+    | 'delivered'
+    | 'exception'
+    | 'returned'
+    | 'lost';
+  /**
+   * ISO 8601 — carrier-reported event timestamp (UTC).
+   */
+  eventTime: string;
+  /**
+   * Free-text city/hub (e.g. `Sofia BG-1000`, `Frankfurt DE-60001`).
+   */
+  location?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 country at the event time.
+   */
+  locationCountry?: string | null;
+  /**
+   * Carrier-supplied free-text event description.
+   */
+  description?: string | null;
+  /**
+   * Recipient name on delivery (proof-of-delivery field).
+   */
+  signedBy?: string | null;
+  /**
+   * Raw carrier-API event payload for forensic / replay.
+   */
+  sourcePayload?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  eventSource?: ('webhook' | 'poll' | 'manual' | 'edi_iftsta') | null;
+  /**
+   * Set to true when this `delivered` event triggered IFRS-15 §38 revenue recognition.
+   */
+  triggeredRevenueRecognition?: boolean | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * WCO HS-coded customs declaration per cross-border shipment. EU UCC export (ECS) / import (ICS) submission source.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "customs-declarations".
+ */
+export interface CustomsDeclaration {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Movement Reference Number (UCC). Issued by customs after acceptance.
+   */
+  mrn?: string | null;
+  declarationType:
+    | 'export'
+    | 'import'
+    | 'reexport'
+    | 'transit'
+    | 'temporary_admission'
+    | 'inward_processing'
+    | 'outward_processing';
+  shipment: number | Shipment;
+  declarationDate: string;
+  /**
+   * ISO 3166-1 alpha-2 — country goods leave from.
+   */
+  countryOfDispatch?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 — final destination country.
+   */
+  countryOfDestination: string;
+  /**
+   * ISO 3166-1 alpha-2 — country where the goods were manufactured (drives preferential treatment).
+   */
+  countryOfOrigin?: string | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Σ(line items × declared value), in cents. Drives import VAT + duty calculation.
+   */
+  totalValue: number;
+  /**
+   * Customs duty payable, in cents. Computed by customs authority.
+   */
+  totalDuty?: number | null;
+  /**
+   * Import VAT payable, in cents.
+   */
+  totalImportVat?: number | null;
+  /**
+   * WCO data-model line items — one per HS code per declared item.
+   */
+  lines: {
+    /**
+     * The internal item — denormalised hsCode flows into `hsCode` for the declaration.
+     */
+    item?: (number | null) | Item;
+    /**
+     * Goods description per WCO HS (must match commercial invoice).
+     */
+    description: string;
+    /**
+     * WCO HS Code (6-digit minimum; 8/10-digit for combined nomenclature).
+     */
+    hsCode: string;
+    quantity: number;
+    /**
+     * WCO supplementary unit (KGM / EA / LTR / etc.).
+     */
+    unitOfMeasure?: string | null;
+    /**
+     * Net weight in kg.
+     */
+    netWeight?: number | null;
+    /**
+     * Gross weight in kg.
+     */
+    grossWeight?: number | null;
+    /**
+     * Declared value per line, in cents.
+     */
+    declaredValue: number;
+    /**
+     * Goods qualify for preferential origin (EUR.1 / EUR-MED / etc.).
+     */
+    preferentialOrigin?: boolean | null;
+    /**
+     * EU preference code if `preferentialOrigin = true` (e.g. `300` GSP, `400` ACP).
+     */
+    tariffPreferenceCode?: string | null;
+    id?: string | null;
+  }[];
+  /**
+   * INCOTERMS 2020 term — drives who pays duty/VAT.
+   */
+  incoterm?: ('EXW' | 'FCA' | 'CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'FAS' | 'FOB' | 'CFR' | 'CIF') | null;
+  /**
+   * ISO 8601 — when declaration was submitted to customs.
+   */
+  submittedAt?: string | null;
+  /**
+   * ISO 8601 — when customs accepted (MRN issued).
+   */
+  acceptedAt?: string | null;
+  /**
+   * ISO 8601 — when goods were released by customs.
+   */
+  releasedAt?: string | null;
+  status?: ('draft' | 'submitted' | 'accepted' | 'held' | 'released' | 'rejected') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS-15 §B77-B78 consignment master agreement. Pairs with consignment-inventory (running balance at consignee) + consignment-sales (sale events triggering revenue recognition).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consignment-arrangements".
+ */
+export interface ConsignmentArrangement {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential arrangement reference (e.g. `CONS-2026-001`).
+   */
+  reference: string;
+  /**
+   * Counterparty holding the consigned goods on our behalf (distributor, retailer, 3PL).
+   */
+  consignee: number | Address;
+  /**
+   * Denormalised name for fast filter / list display.
+   */
+  consigneeName?: string | null;
+  /**
+   * Optional FK if the consignee location is also tracked in `warehouse-locations` (type=`consignment`).
+   */
+  consigneeWarehouseLocation?: (number | null) | WarehouseLocation;
+  /**
+   * ISO 8601 — start of the arrangement.
+   */
+  effectiveFrom: string;
+  /**
+   * Optional end date; null = open-ended until terminated.
+   */
+  effectiveTo?: string | null;
+  /**
+   * IFRS-15 §B77 — what event resolves the §B77 indicators and transfers control.
+   */
+  controlTransferTrigger: 'consignee_sale' | 'consignee_acceptance' | 'time_out' | 'manual';
+  /**
+   * Required when controlTransferTrigger = `time_out`. Days after which unsold inventory is deemed sold to consignee.
+   */
+  timeOutDays?: number | null;
+  /**
+   * IFRS-15 §B77(c) — return-right is a primary indicator of consignment vs sale.
+   */
+  returnRights: 'unrestricted' | 'window' | 'none';
+  /**
+   * Days the consignee can return unsold inventory; required when returnRights = `window`.
+   */
+  returnWindowDays?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Maximum on-hand value the consignee is approved to hold (cents). Used to gate ship-to-consignee.
+   */
+  maxValue?: number | null;
+  /**
+   * Commission % the consignee earns on sale (0-100). Net revenue = sale price × (1 − rate).
+   */
+  commissionRatePercent?: number | null;
+  /**
+   * INCOTERMS 2020 — note: physical-delivery incoterm DOES NOT transfer accounting control under consignment (IFRS-15 §B78).
+   */
+  incoterm?: ('CPT' | 'CIP' | 'DAP' | 'DPU' | 'DDP' | 'EXW' | 'FCA' | 'OTHER') | null;
+  /**
+   * Optional FK to the IFRS-15 master contract that governs this arrangement.
+   */
+  contract?: (number | null) | Contract;
+  /**
+   * Signed PDF agreement (eIDAS PAdES) — auditor walk-through anchor.
+   */
+  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  status?: ('draft' | 'active' | 'suspended' | 'terminated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Per-SKU running balance of inventory held at a consignee location. Tenant retains balance-sheet ownership per IAS-2 §6 + IFRS-15 §B77-B78.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consignment-inventory".
+ */
+export interface ConsignmentInventory {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Stable line id (e.g. `CINV-2026-04-001`).
+   */
+  lineId: string;
+  arrangement: number | ConsignmentArrangement;
+  /**
+   * Specific consignee location for multi-location consignees.
+   */
+  consigneeWarehouseLocation?: (number | null) | WarehouseLocation;
+  /**
+   * Item SKU / material code. Free-text until an items collection lands.
+   */
+  itemSku: string;
+  itemDescription?: string | null;
+  /**
+   * UN/CEFACT REC 20 unit-of-measure code (e.g. EA, KG, L).
+   */
+  unitOfMeasure?: string | null;
+  /**
+   * Current on-hand quantity at the consignee location.
+   */
+  quantityOnHand: number;
+  /**
+   * Per-unit cost (cents) — IAS-2 §10 cost-of-purchase. Drives valueOnHand.
+   */
+  unitCost?: number | null;
+  /**
+   * quantityOnHand × unitCost (cents). Computed on each movement.
+   */
+  valueOnHand?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * When this row was last reconciled / counted.
+   */
+  asOfDate: string;
+  /**
+   * Most recent ship-to-consignee event.
+   */
+  lastShipmentDate?: string | null;
+  /**
+   * Most recent sale-by-consignee event (decrements on-hand).
+   */
+  lastSaleDate?: string | null;
+  /**
+   * IAS-2 §25 — must match the tenant's primary inventory valuation method.
+   */
+  valuationMethod?: ('fifo' | 'weighted_average' | 'specific_id' | 'standard') | null;
+  /**
+   * Inventory GL account this consignment row maps to (typically a sub-account of 1300 — Inventory at Consignee).
+   */
+  glAccount?: (number | null) | GlAccount;
+  status?: ('active' | 'frozen' | 'reconciled' | 'written_off') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Sale-by-consignee event. Per IFRS-15 §B78, this is the moment control transfers and revenue recognises.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consignment-sales".
+ */
+export interface ConsignmentSale {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sale reference reported by the consignee (e.g. `CSALE-2026-04-001`).
+   */
+  reference: string;
+  arrangement: number | ConsignmentArrangement;
+  /**
+   * Source inventory row this sale draws from.
+   */
+  consignmentInventory: number | ConsignmentInventory;
+  /**
+   * ISO 8601 — date the consignee sold to the end-customer (this is the IFRS-15 §B78 control-transfer date).
+   */
+  saleDate: string;
+  /**
+   * Date the consignee reported the sale to us (may lag saleDate).
+   */
+  reportedDate?: string | null;
+  /**
+   * Reference / id of the end-customer the consignee sold to (free-text; consignee may anonymise).
+   */
+  endCustomerRef?: string | null;
+  quantitySold: number;
+  unitOfMeasure?: string | null;
+  /**
+   * Per-unit selling price (cents).
+   */
+  unitPrice: number;
+  /**
+   * quantitySold × unitPrice (cents). The gross revenue line.
+   */
+  grossAmount: number;
+  /**
+   * Snapshot of arrangement.commissionRatePercent at sale time (rate-card change ≠ retroactive).
+   */
+  commissionRatePercent?: number | null;
+  /**
+   * grossAmount × commissionRatePercent / 100 (cents).
+   */
+  commissionAmount?: number | null;
+  /**
+   * grossAmount − commissionAmount (cents). Hits AR/cash.
+   */
+  netAmount?: number | null;
+  /**
+   * IAS-2 §34 cost-of-sales — quantitySold × consignment-inventory.unitCost (cents).
+   */
+  cogsAmount?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Invoice the consignor raises against the consignee for the sale.
+   */
+  invoice?: (number | null) | Invoice;
+  /**
+   * JE that booked the revenue + COGS + commission entries.
+   */
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('reported' | 'validated' | 'posted' | 'reversed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Persistent ISO 19011 / SOX §404 audit trail. Append-only — never edited or deleted.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-events".
+ */
+export interface AuditEvent {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * RFC 9562 UUID v4 — canonical event identifier. Carried in DomainEvent.eventId from the emitter; persisted here for SOX §404 / ISO 19011 §6.4.6 unique traceability.
+   */
+  eventId: string;
+  /**
+   * ISO 8601 UTC timestamp the event was recorded.
+   */
+  timestamp: string;
+  /**
+   * Domain event slug (e.g. order:activated, subscription:cancelled, period:locked). Maps to canonical AuditEntry.eventType.
+   */
+  eventType: string;
+  /**
+   * Free-text actor / source context (e.g. "close-job:2026-04", "admin-ui", "sox-control:CR-0042"). Maps to canonical AuditEntry.source.
+   */
+  source?: string | null;
+  /**
+   * Source collection slug. Maps to canonical AuditEntry.collection.
+   */
+  collectionSlug: string;
+  /**
+   * Maps to canonical AuditEntry.operation (AuditOperation enum).
+   */
+  operation: 'create' | 'update' | 'delete' | 'login' | 'logout' | 'export' | 'import';
+  /**
+   * ID of the affected document.
+   */
+  documentId: string;
+  /**
+   * Actor who performed the action.
+   */
+  user?: (number | null) | User;
+  /**
+   * Status before the change (for status transitions). Maps to canonical AuditEntry.previousStatus.
+   */
+  previousStatus?: string | null;
+  /**
+   * Status after the change. Maps to canonical AuditEntry.nextStatus.
+   */
+  nextStatus?: string | null;
+  /**
+   * Per-field diff (each item: { field, previousValue, nextValue }). Maps to canonical AuditEntry.changes (AuditChangeRecord[]).
+   */
+  changes?:
+    | {
+        field: string;
+        previousValue?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        nextValue?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Field-level diff (sparse): {before:{…}, after:{…}}. Compact alternative to `changes[]` — emitter populates one or the other. Maps to canonical AuditEntry.changeSummary.
+   */
+  changeSummary?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Per-field provenance from resolveRequestConfig.sources (which cascade layer supplied each value). Maps to canonical AuditEntry.sources.
+   */
+  sources?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Correlation ID — links events that originated from the same HTTP request. Maps to canonical AuditEntry.requestId.
+   */
+  requestId?: string | null;
+  /**
+   * RFC 5424-derived severity. Maps to canonical AuditEntry.severity (AuditSeverity enum).
+   */
+  severity?: ('debug' | 'info' | 'warn' | 'error' | 'critical') | null;
+  /**
+   * SHA-256 hex of the immediately prior audit-events row for this tenant. Empty for the first row. Drives Merkle integrity check at the architecture-invariant gate.
+   */
+  previousHash?: string | null;
+  /**
+   * SHA-256 hex of canonical JSON over (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user, previousHash). Computed at write time; verified at the integrity-check gate.
+   */
+  rowHash?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Every external-API call (FX / VAT / sanctions / e-invoicing / mTLS filing) — one row per call, source-attributed for SOX §404 traceability.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "api-audit-events".
+ */
+export interface ApiAuditEvent {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Stable id (e.g. APIE-2026-05-09-001 or a UUID).
+   */
+  eventId: string;
+  kind:
+    | 'fx_rate'
+    | 'vat_validation'
+    | 'sanctions'
+    | 'e_invoicing'
+    | 'business_registry'
+    | 'tax_authority'
+    | 'bank_directory'
+    | 'open_banking'
+    | 'address_validation'
+    | 'payroll'
+    | 'statistics'
+    | 'other';
+  /**
+   * ISO-3166-1 alpha-2 the call was made for.
+   */
+  country: string;
+  /**
+   * Authority label from the resolver result (`БНБ`, `ECB`, `VIES`, `EU CFSP`, `Peppol Directory`, `НАП`, …).
+   */
+  source: string;
+  /**
+   * Mirrors `ApiResult.ok` — false rows are diagnostic.
+   */
+  resultOk: boolean;
+  /**
+   * Populated when `resultOk` is false — copied from `ApiResult.error`.
+   */
+  errorMessage?: string | null;
+  /**
+   * Request envelope — sanitise before persisting (never carries secrets). Optional.
+   */
+  payloadIn?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Response data — copied from `ApiResult.data`. Optional.
+   */
+  payloadOut?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "entity-legal-structures".
+ */
+export interface EntityLegalStructure {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  legalCode: string;
+  entityType: number | EntityType;
+  jurisdiction: number | TaxingJurisdiction;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  taxTreatment?: ('transparent' | 'opaque' | 'hybrid') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-controls".
+ */
+export interface InternalControl {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  controlName: string;
+  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
+  controlCategory:
+    | 'preventive-general'
+    | 'preventive-specific'
+    | 'detective-manual'
+    | 'detective-automated'
+    | 'corrective'
+    | 'monitoring'
+    | 'governance'
+    | 'user-access';
+  cosoComponent?:
+    | ('control-environment' | 'risk-assessment' | 'control-activities' | 'information-communication' | 'monitoring')
+    | null;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  owner?: string | null;
+  frequency?: ('daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'continuous') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "control-tests".
+ */
+export interface ControlTest {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  control: number | InternalControl;
+  testName: string;
+  testDesign?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  samplingMethodology?: ('statistical' | 'judgmental' | 'all-items' | 'risk-based') | null;
+  sampleSize?: number | null;
+  testStatus?: ('not-started' | 'in-progress' | 'completed') | null;
+  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
+  deviationCount?: number | null;
+  deviationRate?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-samples".
+ */
+export interface AuditSample {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  controlTest: number | ControlTest;
+  itemIdentifier: string;
+  sampleItemType:
+    | 'invoice'
+    | 'payment'
+    | 'journal-entry'
+    | 'vendor'
+    | 'customer'
+    | 'employee'
+    | 'gl-account'
+    | 'reconciliation'
+    | 'purchase-order'
+    | 'other';
+  testResult?: ('pass' | 'fail' | 'not-tested' | 'unable-test') | null;
+  exceptionCategory?:
+    | ('no-exception' | 'process-exception' | 'system-exception' | 'data-exception' | 'missing-docs')
+    | null;
+  notes?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  evidence?: (number | AuditEvidence)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-trail-events".
+ */
+export interface AuditTrailEvent {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  operation: 'create' | 'update' | 'delete';
+  collectionName: string;
+  documentId: string;
+  changedBy: string;
+  changedAt: string;
+  changesSummary?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  changeDetails?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  approvedBy?: string | null;
+  approvalStatus?: ('approved' | 'pending' | 'flagged') | null;
+  changeReason?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  systemDetails?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committees".
+ */
+export interface AuditCommittee {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  name: string;
+  entity: number | LegalEntity;
+  charter?: (number | null) | Media;
+  establishedDate: string;
+  meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
+  status?: ('active' | 'inactive' | 'dissolved') | null;
+  members?: (number | AuditCommitteeMember)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committee-members".
+ */
+export interface AuditCommitteeMember {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  committee: number | AuditCommittee;
+  memberName: string;
+  title?: string | null;
+  affiliation: 'internal' | 'external' | 'independent';
+  appointedDate: string;
+  termEndDate?: string | null;
+  role?: ('chair' | 'vice-chair' | 'member' | 'financial-expert') | null;
+  expertise?:
+    | {
+        area?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  status?: ('active' | 'resigned' | 'removed') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "board-actions".
+ */
+export interface BoardAction {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  actionTitle: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  actionType:
+    | 'resolution'
+    | 'policy-approval'
+    | 'risk-assessment'
+    | 'control-enhancement'
+    | 'committee-report'
+    | 'attestation';
+  meetingDate: string;
+  actionDate?: string | null;
+  status: 'approved' | 'rejected' | 'tabled' | 'withdrawn';
+  voteTally?: {
+    votesFor?: number | null;
+    votesAgainst?: number | null;
+    abstentions?: number | null;
+  };
+  minutes?: (number | null) | Media;
+  relatedControls?: (number | InternalControl)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "management-certifications".
+ */
+export interface ManagementCertification {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  certificationName: string;
+  certifyingOfficer: string;
+  certificationDate: string;
+  certificationType: 'sox-302' | 'sox-906' | 'section-13-15d' | 'internal-controls' | 'financial-statement' | 'other';
+  scope?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  assertions?:
+    | {
+        assertion?: string | null;
+        certificationLevel?: ('fully-certified' | 'with-reservations' | 'qualified' | 'adverse') | null;
+        id?: string | null;
+      }[]
+    | null;
+  relatedFindings?: (number | AuditFinding)[] | null;
+  signedDocument?: (number | null) | Media;
+  status?: ('current' | 'expired' | 'superseded') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "regulatory-reports".
+ */
+export interface RegulatoryReport {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  reportName: string;
+  reportingStandard?: (number | null) | ComplianceFramework;
+  jurisdiction: number | TaxingJurisdiction;
+  reportType:
+    | 'annual-filing'
+    | 'quarterly-filing'
+    | 'form-10q'
+    | 'sox-attestation'
+    | 'annual-report'
+    | 'compliance-report'
+    | 'audit-report'
+    | 'other';
+  fiscalPeriodStart: string;
+  fiscalPeriodEnd: string;
+  dueDate: string;
+  submissionDate?: string | null;
+  status: 'draft' | 'in-review' | 'submitted' | 'accepted' | 'rejected' | 'overdue';
+  reportDocument?: (number | null) | Media;
+  regulatoryFeedback?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  findings?: (number | AuditFinding)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-policies".
+ */
+export interface InternalPolicy {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  policyName: string;
+  policyNumber: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  policyType:
+    | 'accounting'
+    | 'internal-control'
+    | 'compliance'
+    | 'financial-reporting'
+    | 'risk-management'
+    | 'data-protection'
+    | 'conflict-of-interest'
+    | 'code-of-conduct';
+  owner?: string | null;
+  effectiveDate: string;
+  lastReviewDate?: string | null;
+  nextReviewDate?: string | null;
+  status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
+  policyDocument?: (number | null) | Media;
+  applicableControls?: (number | InternalControl)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "statutory-report-templates".
+ */
+export interface StatutoryReportTemplate {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  templateName: string;
+  jurisdiction: number | TaxingJurisdiction;
+  reportType: 'annual-report' | 'tax-return' | 'regulatory-filing' | 'financial-statements' | 'audit-report';
+  entityType?: (number | null) | EntityType;
+  sections?:
+    | {
+        sectionName?: string | null;
+        sequence?: number | null;
+        mandatory?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  templateDocument?: (number | null) | Media;
+  effectiveFrom: string;
+  effectiveTo?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "statutory-field-mappings".
+ */
+export interface StatutoryFieldMapping {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  mappingName: string;
+  reportTemplate: number | StatutoryReportTemplate;
+  fieldName: string;
+  fieldType?: ('text' | 'number' | 'date' | 'currency' | 'percentage' | 'boolean') | null;
+  sourceCollection?: string | null;
+  sourceField?: string | null;
+  transformation?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  mandatory?: boolean | null;
+  validationRules?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "policy-versions".
+ */
+export interface PolicyVersion {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  policy: number | InternalPolicy;
+  versionNumber: string;
+  versionName: string;
+  releaseDate: string;
+  changes?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  documentUrl?: (number | null) | Media;
+  status?: ('draft' | 'final' | 'superseded' | 'archived') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "policy-acknowledgments".
+ */
+export interface PolicyAcknowledgment {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  policy: number | InternalPolicy;
+  policyVersion?: (number | null) | PolicyVersion;
+  employeeName: string;
+  employeeId?: string | null;
+  acknowledgedDate: string;
+  acknowledgedBy?: string | null;
+  signedDocument?: (number | null) | Media;
+  status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-deadlines".
+ */
+export interface ComplianceDeadline {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  deadlineName: string;
+  deadlineType:
+    | 'filing-deadline'
+    | 'audit-deadline'
+    | 'certification-deadline'
+    | 'reporting-deadline'
+    | 'payment-deadline'
+    | 'disclosure-deadline';
+  jurisdiction?: (number | null) | TaxingJurisdiction;
+  requirement?: (number | null) | ComplianceRequirement;
+  dueDate: string;
+  submissionDate?: string | null;
+  status?: ('on-track' | 'at-risk' | 'overdue' | 'submitted' | 'completed') | null;
+  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+  penalty?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-notifications".
+ */
+export interface ComplianceNotification {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  deadline: number | ComplianceDeadline;
+  notificationTitle: string;
+  notificationContent?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  notificationType?: ('email' | 'in-app' | 'sms' | 'calendar-event')[] | null;
+  recipients?:
+    | {
+        recipientEmail?: string | null;
+        recipientRole?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  daysBeforeDue: number;
+  sentDate?: string | null;
+  status?: ('scheduled' | 'sent' | 'delivered' | 'failed') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reporting-standards".
+ */
+export interface ReportingStandard {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  standardName: string;
+  standardCode: string;
+  standardType: 'gaap' | 'ifrs' | 'sox' | 'tax' | 'other';
+  jurisdiction?: (number | null) | TaxingJurisdiction;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  version?: string | null;
+  effectiveDate: string;
+  referenceMaterial?: (number | null) | Media;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reporting-mappings".
+ */
+export interface ReportingMapping {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  mappingName: string;
+  fromStandard: number | ReportingStandard;
+  toStandard: number | ReportingStandard;
+  mappingType: 'account-mapping' | 'line-item-mapping' | 'disclosure-mapping' | 'metric-mapping';
+  mappingRules?:
+    | {
+        sourceElement?: string | null;
+        targetElement?: string | null;
+        transformation?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
+  status?: ('active' | 'inactive' | 'pending-review') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "related-party-transactions".
+ */
+export interface RelatedPartyTransaction {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  relatedPartyName: string;
+  relatedPartyType:
+    | 'key-management'
+    | 'director'
+    | 'officer'
+    | 'shareholder'
+    | 'family'
+    | 'other-entity-controlled'
+    | 'other-entity-associate'
+    | 'other-entity-jv'
+    | 'benefit-plan'
+    | 'government';
+  /**
+   * Nature of the relationship and basis for identification as related party.
+   */
+  relationship: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  transactionDate: string;
+  transactionDescription: string;
+  transactionType:
+    | 'sale'
+    | 'purchase'
+    | 'loan-provided'
+    | 'loan-received'
+    | 'lease-operating'
+    | 'lease-finance'
+    | 'dividend'
+    | 'management-fee'
+    | 'royalty'
+    | 'equity-investment'
+    | 'guarantee'
+    | 'asset-transaction'
+    | 'other';
+  amount: number;
+  /**
+   * ISO 4217 currency code (USD, EUR, BGN, etc.).
+   */
+  currency: string;
+  /**
+   * Payment terms, pricing basis, conditions, and any special terms.
+   */
+  terms?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Evidence that transaction was at arm's length (IFRS 24 §21, IAS 24 §9).
+   */
+  armLengthBasis?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  approvalStatus?: ('pre-approved' | 'approved' | 'pending' | 'rejected') | null;
+  /**
+   * Board member or audit committee member who approved.
+   */
+  approverName?: string | null;
+  approvalDate?: string | null;
+  /**
+   * Must be disclosed per IFRS 24 / IAS 24.
+   */
+  disclosureRequired?: boolean | null;
+  disclosedInFinancialStatements?: boolean | null;
+  /**
+   * Note reference in financial statements (e.g., Note 32).
+   */
+  disclosureReference?: string | null;
+  /**
+   * Controls designed to prevent unauthorized related party transactions.
+   */
+  relatedControls?: (number | InternalControl)[] | null;
+  evidence?: (number | AuditEvidence)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "management-assessment-icfr".
+ */
+export interface ManagementAssessmentIcfr {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  /**
+   * Fiscal period (e.g., "FY 2026", "Q4 2026").
+   */
+  assessmentPeriod: string;
+  /**
+   * Date of management assessment conclusion (SOX 302/906 certification date).
+   */
+  assessmentDate: string;
+  /**
+   * Description of scope: processes, locations, systems covered.
+   */
+  scope: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  controlFramework: 'coso-2013' | 'coso-1992' | 'coso-erm' | 'other';
+  /**
+   * Assessment of control environment (tone at top, integrity, values, competence).
+   */
+  controlEnvironmentAssessment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Assessment of risk identification and assessment processes.
+   */
+  riskAssessmentAssessment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Assessment of preventive/detective control activities.
+   */
+  controlActivitiesAssessment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Assessment of information systems and communication.
+   */
+  informationCommunicationAssessment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Assessment of ongoing and separate monitoring activities.
+   */
+  monitoringAssessment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  significantDeficienciesIdentified?: boolean | null;
+  materialWeaknessesIdentified?: boolean | null;
+  /**
+   * Description of any significant deficiencies or material weaknesses.
+   */
+  deficiencyDetails?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Remediation actions planned or in progress.
+   */
+  remediationActions?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Conclusion: "...effective" or "...not effective" per SOX 302/906.
+   */
+  conclusionStatement: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Management certification statement acknowledging responsibility for ICFR.
+   */
+  managementAcknowledgment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  certifyingOfficers?:
+    | {
+        title: string;
+        name: string;
+        signatureDate: string;
+        signatureDocument?: (number | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Auditor attestation report (SOX 404(b) for accelerated filers).
+   */
+  attestationDocument?: (number | null) | Media;
+  relatedAuditFindings?: (number | AuditFinding)[] | null;
+  relatedControlTests?: (number | ControlTest)[] | null;
+  status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "disclosure-checklists".
+ */
+export interface DisclosureChecklist {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  /**
+   * E.g., "IFRS 12 Group Disclosure Checklist - FY 2026".
+   */
+  checklistName: string;
+  standard: number | ComplianceFramework;
+  /**
+   * IFRS standard reference (e.g., "IFRS 12 §B4-B6", "IAS 1 §138").
+   */
+  standardSection?: string | null;
+  /**
+   * Fiscal period covered (e.g., "FY 2026", "Q4 2026").
+   */
+  fiscalPeriod: string;
+  disclosureItems: {
+    sequence: number;
+    /**
+     * Title of the required disclosure.
+     */
+    disclosureTitle: string;
+    /**
+     * Text of the requirement from the standard.
+     */
+    disclosureRequirement: {
+      root: {
+        type: string;
+        children: {
+          type: any;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    };
+    applicability: 'always' | 'conditional' | 'not-applicable';
+    /**
+     * Condition for applicability (e.g., "if entity has segments").
+     */
+    applicabilityCondition?: string | null;
+    completionStatus: 'not-started' | 'in-progress' | 'complete-review' | 'approved';
+    /**
+     * Team member or department responsible.
+     */
+    assignedTo?: string | null;
+    targetDate?: string | null;
+    completionDate?: string | null;
+    /**
+     * Progress notes, challenges, workarounds.
+     */
+    notes?: {
+      root: {
+        type: string;
+        children: {
+          type: any;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    } | null;
+    /**
+     * Supporting documentation (note reference, GL printout, etc.).
+     */
+    relatedEvidence?: (number | AuditEvidence)[] | null;
+    id?: string | null;
+  }[];
+  /**
+   * Auto-calculated or manually entered (0-100%).
+   */
+  overallCompletionPercentage?: number | null;
+  /**
+   * Name of reviewer (CFO, audit partner, compliance officer).
+   */
+  reviewedBy?: string | null;
+  reviewDate?: string | null;
+  checklistStatus: 'in-preparation' | 'pending-review' | 'reviewed' | 'finalized';
+  /**
+   * Formal checklist workpaper (PDF).
+   */
+  checklistDocument?: (number | null) | Media;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committee-minutes".
+ */
+export interface AuditCommitteeMinute {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  auditCommittee: number | AuditCommittee;
+  entity: number | LegalEntity;
+  /**
+   * E.g., "Audit Committee Meeting - Q4 2026".
+   */
+  meetingTitle: string;
+  meetingDate: string;
+  /**
+   * Meeting time and duration (e.g., "14:00-16:30 CET").
+   */
+  meetingTime?: string | null;
+  /**
+   * Physical or virtual location.
+   */
+  meetingLocation?: string | null;
+  /**
+   * Committee chair.
+   */
+  chairPerson?: string | null;
+  attendees?:
+    | {
+        name: string;
+        title?: string | null;
+        affiliation?: string | null;
+        status?: ('present' | 'absent' | 'excused') | null;
+        id?: string | null;
+      }[]
+    | null;
+  agenda?:
+    | {
+        sequence: number;
+        topic: string;
+        presenter?: string | null;
+        timeAllocated?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Comprehensive summary of discussions, issues raised, concerns.
+   */
+  discussionSummary: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  keyDecisions?:
+    | {
+        decision: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        rationale?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
+  actionItems: {
+    sequence: number;
+    actionDescription: {
+      root: {
+        type: string;
+        children: {
+          type: any;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    };
+    assignedTo: string;
+    dueDate: string;
+    status?: ('open' | 'in-progress' | 'completed') | null;
+    completionDate?: string | null;
+    completionNotes?: {
+      root: {
+        type: string;
+        children: {
+          type: any;
+          version: number;
+          [k: string]: unknown;
+        }[];
+        direction: ('ltr' | 'rtl') | null;
+        format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+        indent: number;
+        version: number;
+      };
+      [k: string]: unknown;
+    } | null;
+    id?: string | null;
+  }[];
+  /**
+   * Risks, concerns, or matters brought to committee attention.
+   */
+  risksIdentified?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Observations from internal or external auditors.
+   */
+  auditorObservations?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Compliance, regulatory, or legal matters discussed.
+   */
+  complianceMatters?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Resolutions or actions resulting from this meeting.
+   */
+  relatedBoardActions?: (number | BoardAction)[] | null;
+  /**
+   * Audit findings discussed.
+   */
+  relatedAuditFindings?: (number | AuditFinding)[] | null;
+  /**
+   * Compliance gaps discussed.
+   */
+  relatedComplianceGaps?: (number | ComplianceGap)[] | null;
+  minutesStatus: 'draft' | 'pending-approval' | 'approved' | 'filed';
+  /**
+   * Chair or designated approver.
+   */
+  approvedBy?: string | null;
+  approvalDate?: string | null;
+  /**
+   * Formal minutes document (PDF).
+   */
+  minutesDocument?: (number | null) | Media;
+  confidentiality?: ('confidential' | 'internal' | 'public') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "risk-register".
+ */
+export interface RiskRegister {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  /**
+   * Unique risk identifier (e.g., "FIN-001", "OPS-022").
+   */
+  riskId: string;
+  riskTitle: string;
+  /**
+   * Detailed description of the risk and its potential impact.
+   */
+  riskDescription: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  riskCategory:
+    | 'financial-reporting'
+    | 'operational'
+    | 'compliance'
+    | 'strategic'
+    | 'cybersecurity'
+    | 'reputational'
+    | 'credit'
+    | 'liquidity'
+    | 'market'
+    | 'fraud';
+  /**
+   * Primary COSO-2013 component affected (IFRS 13 §31).
+   */
+  cosoComponent?:
+    | ('control-environment' | 'risk-assessment' | 'control-activities' | 'information-communication' | 'monitoring')
+    | null;
+  /**
+   * Executive or manager responsible for risk management.
+   */
+  riskOwner: string;
+  /**
+   * Email or phone.
+   */
+  riskOwnerContact?: string | null;
+  inherentRiskLikelihood: 'remote' | 'low' | 'moderate' | 'high' | 'almost-certain';
+  inherentRiskImpact: 'negligible' | 'minor' | 'moderate' | 'major' | 'catastrophic';
+  /**
+   * Calculated: likelihood × impact (1-25 scale).
+   */
+  inherentRiskScore?: number | null;
+  /**
+   * Controls in place to mitigate this risk.
+   */
+  mitigatingControls: (number | InternalControl)[];
+  residualRiskLikelihood: 'remote' | 'low' | 'moderate' | 'high' | 'almost-certain';
+  residualRiskImpact: 'negligible' | 'minor' | 'moderate' | 'major' | 'catastrophic';
+  /**
+   * Calculated: residual likelihood × residual impact (1-25 scale).
+   */
+  residualRiskScore?: number | null;
+  riskAppetite: 'not-acceptable' | 'tolerable' | 'acceptable';
+  /**
+   * Is residual risk acceptable? Justification.
+   */
+  acceptabilityAssessment: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  furtherMitigationRequired?: boolean | null;
+  /**
+   * If risk not acceptable, planned mitigation actions.
+   */
+  additionalMitigationPlan?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  relatedComplianceRequirements?: (number | ComplianceRequirement)[] | null;
+  relatedAuditFindings?: (number | AuditFinding)[] | null;
+  lastAssessmentDate: string;
+  nextAssessmentDate: string;
+  riskStatus: 'active' | 'monitoring' | 'under-mitigation' | 'mitigated' | 'closed';
+  /**
+   * Heat map or formal risk register extract (PDF).
+   */
+  riskRegisterDocument?: (number | null) | Media;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "debt-schedule".
+ */
+export interface DebtSchedule {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  /**
+   * E.g., "Senior Term Loan Facility", "10-Year Bonds 2030".
+   */
+  debtInstrumentName: string;
+  /**
+   * Internal identifier or ISIN/CUSIP.
+   */
+  debtInstrumentId: string;
+  debtType:
+    | 'bank-term-loan'
+    | 'bank-revolving'
+    | 'bank-accordion'
+    | 'bonds-fixed'
+    | 'bonds-floating'
+    | 'convertible-bonds'
+    | 'finance-lease'
+    | 'operating-lease'
+    | 'securitization'
+    | 'government-grant'
+    | 'vendor-financing'
+    | 'other';
+  /**
+   * Bank, bondholder base, lessor name.
+   */
+  lenderName: string;
+  /**
+   * Contact for covenant reporting, etc.
+   */
+  lenderContact?: string | null;
+  principalAmount: number;
+  /**
+   * ISO 4217 (USD, EUR, BGN, etc.).
+   */
+  currency: string;
+  issuanceDate: string;
+  maturityDate: string;
+  /**
+   * E.g., "3.5% fixed" or "EURIBOR+2.0% floating".
+   */
+  interestRate?: string | null;
+  interestPaymentFrequency?: ('monthly' | 'quarterly' | 'semi-annual' | 'annual') | null;
+  repaymentSchedule?:
+    | {
+        paymentDate: string;
+        principalPayment: number;
+        interestPayment?: number | null;
+        totalPayment?: number | null;
+        paymentStatus?: ('scheduled' | 'paid' | 'deferred') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Current principal outstanding as of balance sheet date.
+   */
+  outstandingBalance: number;
+  securityType?: ('unsecured' | 'secured-assets' | 'secured-guarantees' | 'secured-cross-default') | null;
+  /**
+   * Collateral, guarantees, cross-default provisions.
+   */
+  securityDetails?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  financialCovenants?:
+    | {
+        covenantName: string;
+        covenantDefinition?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        testedFrequency?: ('quarterly' | 'semi-annual' | 'annual') | null;
+        threshold: string;
+        currentPerformance?: string | null;
+        complianceStatus?: ('compliant' | 'breach' | 'waived') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Non-financial covenants (reporting, insurance, etc.).
+   */
+  operationalCovenants?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Restrictions (dividends, capex, asset sales, additional debt).
+   */
+  restrictiveCovenants?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Prepayment penalties, lockup periods, make-whole provisions.
+   */
+  prepaymentTerms?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Events of default, acceleration clauses, remedies.
+   */
+  defaultProvisions?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Subsidiaries or parent guaranteeing this debt.
+   */
+  guarantees?: (number | LegalEntity)[] | null;
+  /**
+   * FX hedging instruments if multi-currency.
+   */
+  fxHedges?: (number | FxTransaction)[] | null;
+  'lastCovenant ComplianceTest'?: string | null;
+  nextCovenantTest?: string | null;
+  /**
+   * Refinance risk, interest rate risk, covenant risk assessment.
+   */
+  riskAssessment?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  relatedControls?: (number | InternalControl)[] | null;
+  debtStatus: 'active' | 'performing' | 'breach-cure' | 'breach-waived' | 'repaid' | 'refinanced';
+  /**
+   * Loan agreement, bond indenture, lease agreement (PDF).
+   */
+  debtAgreement?: (number | null) | Media;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-audit-function".
+ */
+export interface InternalAuditFunction {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  /**
+   * E.g., "Internal Audit Department".
+   */
+  functionName: string;
+  /**
+   * Internal audit charter per IIA Standards (IPPF, COSO).
+   */
+  auditCharter: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Charter version/date identifier.
+   */
+  charterId?: string | null;
+  charterApprovedDate: string;
+  reportingLine: 'audit-committee' | 'cfo' | 'ceo' | 'board-dotted';
+  /**
+   * Chief Audit Executive (CAE) / Head of Internal Audit.
+   */
+  chiefAuditExecutive: string;
+  /**
+   * Email/phone.
+   */
+  chiefAuditExecutiveContact?: string | null;
+  /**
+   * Primary audit committee for governance oversight.
+   */
+  auditCommittee?: (number | null) | AuditCommittee;
+  /**
+   * Number of internal audit staff.
+   */
+  auditStaffCount?: number | null;
+  /**
+   * Annual internal audit budget.
+   */
+  auditBudget?: number | null;
+  /**
+   * Annual audit plan (risks, scope, staff allocation).
+   */
+  auditPlan?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Fiscal year of the plan.
+   */
+  auditPlanYear?: string | null;
+  auditPlanApprovedDate?: string | null;
+  /**
+   * Annual audit plan (PDF).
+   */
+  auditPlanDocument?: (number | null) | Media;
+  auditEngagements?:
+    | {
+        engagementName: string;
+        engagementType: 'financial' | 'operational' | 'compliance' | 'it' | 'fraud' | 'special-review';
+        objectiveScope?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        startDate: string;
+        completionDate?: string | null;
+        status?: ('planned' | 'in-progress' | 'fieldwork-complete' | 'report-issued' | 'cancelled') | null;
+        reportIssued?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Links to minutes where audit reports were presented.
+   */
+  auditReports?: (number | AuditCommitteeMinute)[] | null;
+  /**
+   * Findings from internal audit engagements.
+   */
+  auditFindings?: (number | AuditFinding)[] | null;
+  followUpTracking?:
+    | {
+        findingReference: string;
+        managementAction: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        targetImplementationDate: string;
+        implementationDate?: string | null;
+        followUpStatus?: ('not-started' | 'in-progress' | 'completed' | 'not-implemented') | null;
+        notes?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * KPIs: audit hours, engagements completed, findings, etc.
+   */
+  performanceMetrics?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Internal and external quality assurance reviews (IIA IPPF).
+   */
+  qualityAssurance?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Date of last external QA review (required every 5 years).
+   */
+  lastQualityReview?: string | null;
+  nextQualityReview?: string | null;
+  /**
+   * Adherence to IIA International Standards, code of ethics.
+   */
+  professionalStandards?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Assessment of adequacy of internal audit resources.
+   */
+  resourceAdequacy?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Statement of independence and objectivity per IIA 1100 series.
+   */
+  independenceAndObjectivity?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Uses risk-based approach aligned with entity risk register.
+   */
+  riskBasedAuditing?: boolean | null;
+  auditFunctionStatus: 'established' | 'establishing' | 'under-review' | 'dormant';
+  /**
+   * Formal audit charter (PDF).
+   */
+  charterDocument?: (number | null) | Media;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "segment-reporting".
+ */
+export interface SegmentReporting {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  entity: number | LegalEntity;
+  segmentationBasis: 'operating' | 'geographic' | 'business-line' | 'customer-product';
+  reportingStandard: 'ifrs-8' | 'asc-280';
+  /**
+   * Fiscal year or quarter.
+   */
+  fiscalPeriod: string;
+  segmentName: string;
+  /**
+   * Products/services, geographic area, or customer base defining segment.
+   */
+  segmentDescription?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * CODM responsible for resource allocation to segment (IFRS 8 §5).
+   */
+  chiefOperatingDecisionMaker?: string | null;
+  /**
+   * Segment revenue (external + intersegment).
+   */
+  revenue: number;
+  /**
+   * Revenue from external customers.
+   */
+  externalRevenue?: number | null;
+  /**
+   * Revenue from other segments (transfer price basis).
+   */
+  intersegmentRevenue?: number | null;
+  /**
+   * Segment operating profit (EBIT). Measurement basis per IFRS 8 §27.
+   */
+  operatingProfit?: number | null;
+  interest?: number | null;
+  taxes?: number | null;
+  netIncome?: number | null;
+  /**
+   * Total assets (identifiable per IFRS 8 §28).
+   */
+  assets: number;
+  /**
+   * Total liabilities (identifiable per IFRS 8 §28).
+   */
+  liabilities: number;
+  /**
+   * CapEx in period.
+   */
+  capitalExpenditures?: number | null;
+  /**
+   * Depreciation and amortization.
+   */
+  depreciation?: number | null;
+  /**
+   * Asset impairment charges.
+   */
+  impairmentCharges?: number | null;
+  /**
+   * Check if segment revenue from single customer >10% of total (IFRS 8 §34).
+   */
+  majorCustomerDependency?: boolean | null;
+  /**
+   * Customer name if major customer dependence exists.
+   */
+  majorCustomerName?: string | null;
+  /**
+   * Revenue from major customer.
+   */
+  majorCustomerRevenueAmount?: number | null;
+  /**
+   * As % of total revenue.
+   */
+  majorCustomerPercentage?: number | null;
+  /**
+   * Pricing basis for intersegment transactions (at cost, market price, etc.).
+   */
+  transferPricingPolicies?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  identifiableAssets?:
+    | {
+        assetCategory: string;
+        amount: number;
+        id?: string | null;
+      }[]
+    | null;
+  segmentGeography?:
+    | {
+        countryCode: string;
+        revenue: number;
+        assets?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Quantitative thresholds used to identify segments (IFRS 8 §13-19).
+   */
+  quantitativeMeasurements?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * Reconciliation of segment totals to consolidated totals (IFRS 8 §30).
+   */
+  reconciliationToConsolidated: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  /**
+   * Links to IFRS 8 disclosure checklists for this segment.
+   */
+  relatedDisclosures?: (number | DisclosureChecklist)[] | null;
+  /**
+   * Segment reporting note or schedule (PDF).
+   */
+  segmentReportingDocument?: (number | null) | Media;
+  reportingStatus: 'under-preparation' | 'pending-review' | 'reviewed' | 'reported';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-subject-requests".
+ */
+export interface DataSubjectRequest {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  requestId: string;
+  dataSubject: number | User;
+  requestType: 'access' | 'rectification' | 'erasure' | 'restriction' | 'portability' | 'object' | 'withdraw_consent';
+  requestDetail?: string | null;
+  submittedAt: string;
+  /**
+   * Art.12(3) deadline — submittedAt + 1 month (extensible by 2 months).
+   */
+  dueAt?: string | null;
+  status?:
+    | (
+        | 'submitted'
+        | 'identity_verification'
+        | 'in_progress'
+        | 'awaiting_customer'
+        | 'completed'
+        | 'rejected'
+        | 'escalated'
+      )
+    | null;
+  completedAt?: string | null;
+  rejectionReason?: string | null;
+  /**
+   * JSON record of what was exported/erased/restricted.
+   */
+  fulfilmentEvidence?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * DPO or staff member handling this request.
+   */
+  handler?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-processing-activities".
+ */
+export interface DataProcessingActivity {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  activityName: string;
+  purpose: string;
+  controllerOrProcessor: 'controller' | 'processor' | 'joint_controller';
+  lawfulBasis: 'consent' | 'contract' | 'legal_obligation' | 'vital_interests' | 'public_task' | 'legitimate_interests';
+  dataCategories?:
+    | {
+        category: string;
+        /**
+         * Art.9 special category data?
+         */
+        special?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  dataSubjectCategories?:
+    | {
+        /**
+         * e.g. customers, employees, prospects.
+         */
+        category: string;
+        id?: string | null;
+      }[]
+    | null;
+  recipientCategories?:
+    | {
+        recipient: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Art.44 transfers — list each destination + safeguard.
+   */
+  thirdCountryTransfers?:
+    | {
+        country: string;
+        safeguard?: ('adequacy_decision' | 'sccs' | 'bcrs' | 'derogation') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * How long we keep this data + basis.
+   */
+  retentionPeriod: string;
+  /**
+   * Technical + organisational measures (Art.32).
+   */
+  securityMeasures?: string | null;
+  status?: ('active' | 'suspended' | 'retired') | null;
+  /**
+   * Schedule a review at least annually.
+   */
+  reviewDueAt: string;
+  /**
+   * Data Protection Officer responsible for this activity.
+   */
+  dpo?: (number | null) | User;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "kyc-checks".
+ */
+export interface KycCheck {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  checkId: string;
+  subjectType: 'customer' | 'vendor' | 'beneficial_owner' | 'signatory';
+  subject: number | Customer;
+  cddLevel: 'sdd' | 'cdd' | 'edd';
+  identityDocuments?:
+    | {
+        docType?: ('passport' | 'national_id' | 'driving_licence' | 'utility_bill' | 'bank_statement' | 'other') | null;
+        /**
+         * Encrypted at rest.
+         */
+        docNumber?: string | null;
+        /**
+         * ISO 3166-1 alpha-2.
+         */
+        issuingCountry?: string | null;
+        expiresAt?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  sanctionsScreening?: {
+    screenedAt?: string | null;
+    /**
+     * OFAC SDN, EU consolidated, UN, HMT, etc.
+     */
+    lists?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+    matchFound?: boolean | null;
+    matchDetails?: string | null;
+  };
+  /**
+   * Politically Exposed Person status.
+   */
+  pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
+  riskRating?: ('low' | 'medium' | 'high' | 'prohibited') | null;
+  status?: ('pending' | 'in_review' | 'approved' | 'rejected' | 'requires_reverification') | null;
+  completedAt?: string | null;
+  /**
+   * AMLD-6 ongoing monitoring.
+   */
+  nextReviewDue?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "beneficial-owners".
+ */
+export interface BeneficialOwner {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Legal entity whose UBO this is (AMLD-5 Art.30 / US CTA register subject).
+   */
+  entity: number | LegalEntity;
+  fullName: string;
+  dateOfBirth?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 country code.
+   */
+  nationality?: string | null;
+  residenceCountry?: string | null;
+  residenceAddress?: (number | null) | Address;
+  /**
+   * AMLD threshold typically 25%.
+   */
+  ownershipPercent?: number | null;
+  controlType: 'direct_ownership' | 'indirect_ownership' | 'voting_rights' | 'board_appointment' | 'other_control';
+  pepStatus?: ('not_pep' | 'domestic_pep' | 'foreign_pep' | 'family_associate') | null;
+  kycCheck?: (number | null) | KycCheck;
+  status?: ('active' | 'pending' | 'resigned') | null;
+  effectiveFrom?: string | null;
+  effectiveTo?: string | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "csrd-disclosures".
+ */
+export interface CsrdDisclosure {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Reporting legal entity (CSRD applies at consolidated + subsidiary level under different conditions).
+   */
+  legalEntity?: (number | null) | LegalEntity;
+  /**
+   * EFRAG ESRS datapoint identifier (e.g. ESRS-E1-6-1, ESRS-S1-9-2).
+   */
+  datapointId: string;
+  /**
+   * Reporting fiscal year (YYYY).
+   */
+  reportingYear: number;
+  esrsCategory: 'cross_cutting' | 'environmental' | 'social' | 'governance';
+  esrsTopic:
+    | 'esrs_1'
+    | 'esrs_2'
+    | 'esrs_e1'
+    | 'esrs_e2'
+    | 'esrs_e3'
+    | 'esrs_e4'
+    | 'esrs_e5'
+    | 'esrs_s1'
+    | 'esrs_s2'
+    | 'esrs_s3'
+    | 'esrs_s4'
+    | 'esrs_g1';
+  /**
+   * ESRS 1 §3 double-materiality assessment outcome.
+   */
+  materiality?: ('double_material' | 'impact_material' | 'financial_material' | 'not_material') | null;
+  /**
+   * Disclosure narrative (machine-extractable for XBRL filing).
+   */
+  narrative?: string | null;
+  quantitativeKpi?: {
+    value?: number | null;
+    /**
+     * e.g. tCO2e, m³, %, €, FTE.
+     */
+    unit?: string | null;
+    methodology?: string | null;
+    priorYearComparison?: number | null;
+    targetValue?: number | null;
+    targetYear?: number | null;
+  };
+  /**
+   * ESRS 2 IRO (Impacts, Risks, Opportunities) classification.
+   */
+  iro?: {
+    kind?: ('impact' | 'risk' | 'opportunity') | null;
+    timeHorizon?: ('short' | 'medium' | 'long') | null;
+    valueChainStage?: ('upstream' | 'own_ops' | 'downstream') | null;
+  };
+  /**
+   * CSRD requires limited assurance from FY2024, scaling to reasonable assurance by 2028.
+   */
+  assuranceStatus?: ('not_assured' | 'limited_assurance' | 'reasonable_assurance' | 'self_declared') | null;
+  assuranceProvider?: string | null;
+  /**
+   * Signed PDF evidence pack for the disclosure (audit walk-through anchor).
+   */
+  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  /**
+   * EU Taxonomy 2020/852 eligibility flag (for E1-E2 environmental KPIs).
+   */
+  isEUTaxonomyEligible?: boolean | null;
+  isEUTaxonomyAligned?: boolean | null;
+  status?: ('draft' | 'under_review' | 'approved' | 'filed' | 'restated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * GHG Protocol Scope 1/2/3 emissions register. One row per (source × reporting period) — substantiates the ESRS E1 §44-50 disclosure totals.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "carbon-emissions".
+ */
+export interface CarbonEmission {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  reference: string;
+  /**
+   * Reporting legal entity per IFRS-10 §B86 (distinct from `tenants` DB partition).
+   */
+  legalEntity?: (number | null) | LegalEntity;
+  reportingYear: number;
+  reportingPeriod?: (number | null) | FiscalPeriod;
+  /**
+   * GHG Protocol scope per Corporate Standard §6.
+   */
+  scope: 'scope_1' | 'scope_2' | 'scope_3' | 'biogenic';
+  /**
+   * 22-category disaggregation per GHG Protocol Scope 1/2/3 standards.
+   */
+  category:
+    | 's1_stationary'
+    | 's1_mobile'
+    | 's1_process'
+    | 's1_fugitive'
+    | 's2_electricity_location'
+    | 's2_electricity_market'
+    | 's2_heat_steam_cooling'
+    | 's3_1_purchased_goods'
+    | 's3_2_capital_goods'
+    | 's3_3_fuel_energy'
+    | 's3_4_upstream_transport'
+    | 's3_5_waste'
+    | 's3_6_business_travel'
+    | 's3_7_commuting'
+    | 's3_8_upstream_leased'
+    | 's3_9_downstream_transport'
+    | 's3_10_processing'
+    | 's3_11_use_of_sold'
+    | 's3_12_eol'
+    | 's3_13_downstream_leased'
+    | 's3_14_franchises'
+    | 's3_15_investments';
+  activityData: {
+    /**
+     * Underlying activity quantity (e.g. litres of diesel, kWh, km driven, kg of waste).
+     */
+    value: number;
+    /**
+     * Unit of measure for the activity quantity.
+     */
+    unit: string;
+    /**
+     * What generated the emission (e.g. fleet vehicle reg, building meter ID).
+     */
+    sourceDescription?: string | null;
+  };
+  emissionFactor: {
+    /**
+     * Emission factor (e.g. kgCO2e per kWh, per litre, per kg).
+     */
+    value: number;
+    unit: string;
+    /**
+     * Source — DEFRA / IEA / EPA / supplier-specific (ISAE 3410 evidence trail).
+     */
+    sourceRef?: string | null;
+    gwpHorizon?: ('gwp_100' | 'gwp_20') | null;
+  };
+  /**
+   * Total tonnes CO2-equivalent (activityData.value × emissionFactor.value, normalised).
+   */
+  tCO2eValue: number;
+  /**
+   * Optional per-gas split (CO2 / CH4 / N2O / HFC / PFC / SF6 / NF3) per ESRS E1 §50.
+   */
+  gasBreakdown?: {
+    co2?: number | null;
+    ch4?: number | null;
+    n2o?: number | null;
+    hfc?: number | null;
+    pfc?: number | null;
+    sf6?: number | null;
+    nf3?: number | null;
+  };
+  /**
+   * GHG Protocol Scope 3 §7.3 data-quality hierarchy.
+   */
+  methodology?: ('activity_based' | 'hybrid' | 'spend_based' | 'supplier_specific' | 'average_data') | null;
+  dataQuality?: ('measured' | 'calculated' | 'estimated' | 'default_factor') | null;
+  /**
+   * ISAE 3410 third-party verification flag.
+   */
+  isVerified?: boolean | null;
+  verifierName?: string | null;
+  verificationDate?: string | null;
+  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  /**
+   * EU CBAM (Carbon Border Adjustment Mechanism) relevance flag for cross-border carbon-intensive goods.
+   */
+  cbamRelevant?: boolean | null;
+  status?: ('draft' | 'submitted' | 'verified' | 'filed' | 'restated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS 41 — living plants / animals measured at fair-value less costs to sell.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "biological-assets".
+ */
+export interface BiologicalAsset {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential reference (e.g. BIO-2026-001).
+   */
+  reference: string;
+  /**
+   * Class name (e.g. "Holstein dairy herd #2", "Pinot Noir 2018 vineyard block").
+   */
+  name: string;
+  classKind:
+    | 'livestock_dairy'
+    | 'livestock_beef'
+    | 'livestock_poultry'
+    | 'aquaculture'
+    | 'crop_annual'
+    | 'crop_perennial'
+    | 'forestry'
+    | 'vineyard_produce'
+    | 'other';
+  /**
+   * Count (head / hectares / kg) at reporting date.
+   */
+  unitsOnHand: number;
+  /**
+   * head / kg / ha / m³.
+   */
+  unitOfMeasure?: string | null;
+  /**
+   * IAS 41 §12 — measurement basis (cents). Sum across all units.
+   */
+  fairValueLessCostsToSell: number;
+  /**
+   * Previous reporting-date FVLCTS for change disclosure.
+   */
+  priorPeriodFvlcts?: number | null;
+  /**
+   * IAS 41 §26 — change in FVLCTS attributable to biological transformation (P&L).
+   */
+  biologicalTransformationGainLoss?: number | null;
+  /**
+   * IAS 41 §51 — change due to price (separately disclosable).
+   */
+  priceChangeGainLoss?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  maturityStage?: ('immature' | 'mature' | 'old') | null;
+  fairValueMeasurement?: (number | null) | FairValueMeasurement;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('active' | 'harvested' | 'sold' | 'lost') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * IFRS 13 fair-value hierarchy register. One row per asset/liability per measurement event with Level 1/2/3 input classification.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -11412,7 +13454,7 @@ export interface MaintenanceWorkOrder {
  */
 export interface FairValueMeasurement {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. FV-2026-Q1-001).
    */
@@ -11483,6 +13525,225 @@ export interface FairValueMeasurement {
   createdAt: string;
 }
 /**
+ * IFRS 6 — exploration & evaluation assets (wells, mines, concessions). Reclassified to PPE/intangibles when commercial viability demonstrated.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "mineral-resource-assets".
+ */
+export interface MineralResourceAsset {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential reference (e.g. EE-2026-001).
+   */
+  reference: string;
+  concessionType:
+    | 'oil_gas_onshore'
+    | 'oil_gas_offshore'
+    | 'mining_surface'
+    | 'mining_underground'
+    | 'quarry'
+    | 'geothermal'
+    | 'other';
+  /**
+   * ISO 3166-1 alpha-2 country.
+   */
+  jurisdiction?: string | null;
+  /**
+   * License / permit / lease identifier.
+   */
+  concessionId?: string | null;
+  /**
+   * IFRS 6 §9 — accumulated E&E expenditure (cents).
+   */
+  capitalisedAmount: number;
+  measurementPolicy?: ('cost' | 'revaluation') | null;
+  /**
+   * IFRS 6 §17 — date technical feasibility + commercial viability demonstrated; triggers reclassification.
+   */
+  commercialViabilityDate?: string | null;
+  /**
+   * Slug of target collection (fixed-assets / intangible-assets).
+   */
+  reclassifiedToCollection?: string | null;
+  reclassifiedToId?: string | null;
+  /**
+   * IFRS 6 §18 — recognised impairment (cents).
+   */
+  impairmentLoss?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('exploring' | 'evaluating' | 'reclassified' | 'impaired' | 'abandoned') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS 40 — property held to earn rentals or capital appreciation (not own-use, not held-for-sale).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "investment-properties".
+ */
+export interface InvestmentProperty {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential reference (e.g. IP-2026-001).
+   */
+  reference: string;
+  property: number | Property;
+  acquisitionDate: string;
+  /**
+   * IAS 40 §20-§29 — purchase price + directly attributable costs (cents).
+   */
+  acquisitionCost: number;
+  /**
+   * IAS 40 §30 election — applied uniformly to all investment property.
+   */
+  measurementModel: 'fair_value' | 'cost';
+  /**
+   * IFRS 13 fair value at reporting date (cents). Required when measurementModel = fair_value; disclosed only when = cost.
+   */
+  currentFairValue?: number | null;
+  /**
+   * IAS 40 §35 — gain/loss on remeasurement (P&L) under fair-value model.
+   */
+  fairValueChangeYtd?: number | null;
+  /**
+   * IAS 17/IFRS 16 lease income recognised YTD (cents).
+   */
+  rentalIncomeYtd?: number | null;
+  /**
+   * IAS 40 §75(f) — operating expenses disclosure split.
+   */
+  directOperatingExpensesYtd?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * IAS 40 §57-§65 — change-in-use trigger.
+   */
+  transferReason?:
+    | ('transfer_to_ppe' | 'transfer_from_ppe' | 'transfer_to_inventory' | 'transfer_from_inventory')
+    | null;
+  /**
+   * When the IP is leased OUT to a tenant (lessor side).
+   */
+  lease?: (number | null) | Lease;
+  /**
+   * IFRS 13 hierarchy classification (Level 1/2/3).
+   */
+  fairValueMeasurement?: (number | null) | FairValueMeasurement;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('active' | 'construction' | 'vacant' | 'transferred_out' | 'disposed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IAS-20 register of public-sector incentives + EU funds + national subsidies. Tracks award, conditions, recognition pattern, clawback risk.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "government-grants".
+ */
+export interface GovernmentGrant {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  reference: string;
+  grantName: string;
+  /**
+   * Granting authority (e.g. EU Horizon Europe, BG Innovation Fund, US SBA).
+   */
+  grantorName: string;
+  /**
+   * ISO 3166-1 alpha-2 — country of the granting authority.
+   */
+  grantorCountryCode?: string | null;
+  /**
+   * Recipient legal entity.
+   */
+  legalEntity?: (number | null) | LegalEntity;
+  grantType:
+    | 'cash_income'
+    | 'cash_capital'
+    | 'tax_credit'
+    | 'concessionary_loan'
+    | 'asset_transfer'
+    | 'forgivable_loan'
+    | 'in_kind_service'
+    | 'rd_grant'
+    | 'employment_subsidy'
+    | 'other';
+  /**
+   * IAS-20 §12-24 — chosen presentation method (consistent application required).
+   */
+  recognitionMethod: 'deferred_income' | 'net_against_asset' | 'on_receipt' | 'reduce_expense';
+  recognitionPattern?:
+    | ('systematic_useful_life' | 'match_to_costs' | 'straight_line' | 'on_milestones' | 'immediate')
+    | null;
+  /**
+   * Date of formal award letter / contract.
+   */
+  awardDate: string;
+  effectiveStartDate?: string | null;
+  effectiveEndDate?: string | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Maximum award amount (cents).
+   */
+  totalAwarded: number;
+  /**
+   * Cumulative cash received to date.
+   */
+  amountReceived?: number | null;
+  /**
+   * Cumulative income recognised in P&L (or asset reduction).
+   */
+  recognisedToDate?: number | null;
+  /**
+   * Outstanding liability — cash received but not yet recognised in P&L.
+   */
+  deferredIncomeBalance?: number | null;
+  /**
+   * IAS-20 §7 — only recognise when reasonable assurance of compliance with conditions.
+   */
+  conditions?:
+    | {
+        condition: string;
+        targetDate?: string | null;
+        status?: ('open' | 'met' | 'breached' | 'waived') | null;
+        evidenceRef?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * IAS-20 §32 — provision for repayment when condition-breach probability ≥ 50%.
+   */
+  clawbackProvision?: (number | null) | Provision;
+  /**
+   * EU CSRD ESRS 2 traceability — flags grants requiring EU traceability disclosure.
+   */
+  isEUFunded?: boolean | null;
+  /**
+   * EU Commission CFCA / programme reference (e.g. Horizon Europe project ID).
+   */
+  euCFCAReference?: string | null;
+  /**
+   * For capital grants under net-against-asset method, the asset whose carrying amount is reduced.
+   */
+  relatedAsset?: (number | null) | FixedAsset;
+  status?: ('awarded' | 'active' | 'conditions_met' | 'fully_recognised' | 'repayable' | 'repaid' | 'cancelled') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * IAS-12 deferred-tax register. One row per origination or reversal of a temporary difference between tax base and carrying amount.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -11490,7 +13751,7 @@ export interface FairValueMeasurement {
  */
 export interface DeferredTaxItem {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. DT-2026-04-001).
    */
@@ -11554,7 +13815,7 @@ export interface DeferredTaxItem {
  */
 export interface ShareBasedPayment {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential grant reference (e.g. EQ-2026-001).
    */
@@ -11640,7 +13901,7 @@ export interface ShareBasedPayment {
  */
 export interface BusinessCombination {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential deal reference (e.g. MA-2026-001).
    */
@@ -11738,301 +13999,6 @@ export interface BusinessCombination {
   createdAt: string;
 }
 /**
- * IAS 40 — property held to earn rentals or capital appreciation (not own-use, not held-for-sale).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "investment-properties".
- */
-export interface InvestmentProperty {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential reference (e.g. IP-2026-001).
-   */
-  reference: string;
-  property: number | Property;
-  acquisitionDate: string;
-  /**
-   * IAS 40 §20-§29 — purchase price + directly attributable costs (cents).
-   */
-  acquisitionCost: number;
-  /**
-   * IAS 40 §30 election — applied uniformly to all investment property.
-   */
-  measurementModel: 'fair_value' | 'cost';
-  /**
-   * IFRS 13 fair value at reporting date (cents). Required when measurementModel = fair_value; disclosed only when = cost.
-   */
-  currentFairValue?: number | null;
-  /**
-   * IAS 40 §35 — gain/loss on remeasurement (P&L) under fair-value model.
-   */
-  fairValueChangeYtd?: number | null;
-  /**
-   * IAS 17/IFRS 16 lease income recognised YTD (cents).
-   */
-  rentalIncomeYtd?: number | null;
-  /**
-   * IAS 40 §75(f) — operating expenses disclosure split.
-   */
-  directOperatingExpensesYtd?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * IAS 40 §57-§65 — change-in-use trigger.
-   */
-  transferReason?:
-    | ('transfer_to_ppe' | 'transfer_from_ppe' | 'transfer_to_inventory' | 'transfer_from_inventory')
-    | null;
-  /**
-   * When the IP is leased OUT to a tenant (lessor side).
-   */
-  lease?: (number | null) | Lease;
-  /**
-   * IFRS 13 hierarchy classification (Level 1/2/3).
-   */
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('active' | 'construction' | 'vacant' | 'transferred_out' | 'disposed') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IAS 41 — living plants / animals measured at fair-value less costs to sell.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "biological-assets".
- */
-export interface BiologicalAsset {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential reference (e.g. BIO-2026-001).
-   */
-  reference: string;
-  /**
-   * Class name (e.g. "Holstein dairy herd #2", "Pinot Noir 2018 vineyard block").
-   */
-  name: string;
-  classKind:
-    | 'livestock_dairy'
-    | 'livestock_beef'
-    | 'livestock_poultry'
-    | 'aquaculture'
-    | 'crop_annual'
-    | 'crop_perennial'
-    | 'forestry'
-    | 'vineyard_produce'
-    | 'other';
-  /**
-   * Count (head / hectares / kg) at reporting date.
-   */
-  unitsOnHand: number;
-  /**
-   * head / kg / ha / m³.
-   */
-  unitOfMeasure?: string | null;
-  /**
-   * IAS 41 §12 — measurement basis (cents). Sum across all units.
-   */
-  fairValueLessCostsToSell: number;
-  /**
-   * Previous reporting-date FVLCTS for change disclosure.
-   */
-  priorPeriodFvlcts?: number | null;
-  /**
-   * IAS 41 §26 — change in FVLCTS attributable to biological transformation (P&L).
-   */
-  biologicalTransformationGainLoss?: number | null;
-  /**
-   * IAS 41 §51 — change due to price (separately disclosable).
-   */
-  priceChangeGainLoss?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  maturityStage?: ('immature' | 'mature' | 'old') | null;
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('active' | 'harvested' | 'sold' | 'lost') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 6 — exploration & evaluation assets (wells, mines, concessions). Reclassified to PPE/intangibles when commercial viability demonstrated.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mineral-resource-assets".
- */
-export interface MineralResourceAsset {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential reference (e.g. EE-2026-001).
-   */
-  reference: string;
-  concessionType:
-    | 'oil_gas_onshore'
-    | 'oil_gas_offshore'
-    | 'mining_surface'
-    | 'mining_underground'
-    | 'quarry'
-    | 'geothermal'
-    | 'other';
-  /**
-   * ISO 3166-1 alpha-2 country.
-   */
-  jurisdiction?: string | null;
-  /**
-   * License / permit / lease identifier.
-   */
-  concessionId?: string | null;
-  /**
-   * IFRS 6 §9 — accumulated E&E expenditure (cents).
-   */
-  capitalisedAmount: number;
-  measurementPolicy?: ('cost' | 'revaluation') | null;
-  /**
-   * IFRS 6 §17 — date technical feasibility + commercial viability demonstrated; triggers reclassification.
-   */
-  commercialViabilityDate?: string | null;
-  /**
-   * Slug of target collection (fixed-assets / intangible-assets).
-   */
-  reclassifiedToCollection?: string | null;
-  reclassifiedToId?: string | null;
-  /**
-   * IFRS 6 §18 — recognised impairment (cents).
-   */
-  impairmentLoss?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  status?: ('exploring' | 'evaluating' | 'reclassified' | 'impaired' | 'abandoned') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 14 — rate-regulated balances carried forward by first-time IFRS adopters (utilities, telcos under price-cap regimes).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "regulatory-deferral-accounts".
- */
-export interface RegulatoryDeferralAccount {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential reference (e.g. RDA-2026-001).
-   */
-  reference: string;
-  kind: 'asset' | 'liability';
-  /**
-   * Regulator name (e.g. Ofgem / FERC / EWRC-BG).
-   */
-  regulator: string;
-  /**
-   * Carrying balance at reporting date (cents).
-   */
-  balance: number;
-  discountRate?: number | null;
-  /**
-   * IFRS 14 §32 — period over which the balance is expected to be recovered/refunded.
-   */
-  recoveryPeriodEnd?: string | null;
-  /**
-   * Net change in balance during the period (cents).
-   */
-  movementInPeriod?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  status?: ('active' | 'recovering' | 'recovered') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * IFRS 17 — insurance contract groups under GMM / PAA / VFA. Captures CSM + risk adjustment + future cash-flow estimate.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "insurance-contracts".
- */
-export interface InsuranceContract {
-  id: number;
-  tenant: number | Tenant;
-  /**
-   * Sequential reference (e.g. INS-2026-001).
-   */
-  reference: string;
-  measurementModel: 'gmm' | 'paa' | 'vfa';
-  lineOfBusiness:
-    | 'life_term'
-    | 'life_whole'
-    | 'annuity'
-    | 'health'
-    | 'p_and_c'
-    | 'auto'
-    | 'marine_aviation'
-    | 'reinsurance_assumed'
-    | 'reinsurance_ceded';
-  /**
-   * IFRS 17 §14 — portfolio = subject to similar risks AND managed together.
-   */
-  portfolioId: string;
-  /**
-   * IFRS 17 §22 — annual cohort grouping (no contracts ≥1yr apart in same group).
-   */
-  cohortYear: number;
-  /**
-   * IFRS 17 §16 three groups per cohort.
-   */
-  profitabilityGroup: 'profitable' | 'no_loss_possibility' | 'onerous';
-  inceptionDate: string;
-  coverageEndDate?: string | null;
-  /**
-   * IFRS 17 §33 — probability-weighted estimate of fulfilment cash flows (cents).
-   */
-  futureCashflowsEstimate: number;
-  /**
-   * IFRS 17 §36 — current rate reflecting time value + financial risk (% p.a.).
-   */
-  discountRate: number;
-  /**
-   * IFRS 17 §37 — non-financial risk premium (cents).
-   */
-  riskAdjustment?: number | null;
-  /**
-   * Contractual Service Margin — IFRS 17 §38 unearned profit (cents). Recognised as revenue over coverage units.
-   */
-  csm?: number | null;
-  /**
-   * IFRS 17 §47 — loss recognised immediately for onerous groups.
-   */
-  lossComponent?: number | null;
-  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
-  /**
-   * For reinsurance-held: link to the underlying gross contract.
-   */
-  reinsuranceContract?: (number | null) | InsuranceContract;
-  fairValueMeasurement?: (number | null) | FairValueMeasurement;
-  journalEntry?: (number | null) | JournalEntry;
-  status?: ('recognised' | 'in_coverage' | 'runoff' | 'derecognised') | null;
-  createdBy?: (number | null) | User;
-  approvedBy?: (number | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * IFRS 5 — non-current assets / disposal groups / discontinued operations classified as held-for-sale.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -12040,7 +14006,7 @@ export interface InsuranceContract {
  */
 export interface HeldForSaleClassification {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. HFS-2026-Q1-001).
    */
@@ -12097,7 +14063,7 @@ export interface HeldForSaleClassification {
  */
 export interface EarningsPerShare {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. EPS-2026-Q1).
    */
@@ -12173,6 +14139,119 @@ export interface EarningsPerShare {
   createdAt: string;
 }
 /**
+ * IFRS 17 — insurance contract groups under GMM / PAA / VFA. Captures CSM + risk adjustment + future cash-flow estimate.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "insurance-contracts".
+ */
+export interface InsuranceContract {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential reference (e.g. INS-2026-001).
+   */
+  reference: string;
+  measurementModel: 'gmm' | 'paa' | 'vfa';
+  lineOfBusiness:
+    | 'life_term'
+    | 'life_whole'
+    | 'annuity'
+    | 'health'
+    | 'p_and_c'
+    | 'auto'
+    | 'marine_aviation'
+    | 'reinsurance_assumed'
+    | 'reinsurance_ceded';
+  /**
+   * IFRS 17 §14 — portfolio = subject to similar risks AND managed together.
+   */
+  portfolioId: string;
+  /**
+   * IFRS 17 §22 — annual cohort grouping (no contracts ≥1yr apart in same group).
+   */
+  cohortYear: number;
+  /**
+   * IFRS 17 §16 three groups per cohort.
+   */
+  profitabilityGroup: 'profitable' | 'no_loss_possibility' | 'onerous';
+  inceptionDate: string;
+  coverageEndDate?: string | null;
+  /**
+   * IFRS 17 §33 — probability-weighted estimate of fulfilment cash flows (cents).
+   */
+  futureCashflowsEstimate: number;
+  /**
+   * IFRS 17 §36 — current rate reflecting time value + financial risk (% p.a.).
+   */
+  discountRate: number;
+  /**
+   * IFRS 17 §37 — non-financial risk premium (cents).
+   */
+  riskAdjustment?: number | null;
+  /**
+   * Contractual Service Margin — IFRS 17 §38 unearned profit (cents). Recognised as revenue over coverage units.
+   */
+  csm?: number | null;
+  /**
+   * IFRS 17 §47 — loss recognised immediately for onerous groups.
+   */
+  lossComponent?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * For reinsurance-held: link to the underlying gross contract.
+   */
+  reinsuranceContract?: (number | null) | InsuranceContract;
+  fairValueMeasurement?: (number | null) | FairValueMeasurement;
+  journalEntry?: (number | null) | JournalEntry;
+  status?: ('recognised' | 'in_coverage' | 'runoff' | 'derecognised') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * IFRS 14 — rate-regulated balances carried forward by first-time IFRS adopters (utilities, telcos under price-cap regimes).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "regulatory-deferral-accounts".
+ */
+export interface RegulatoryDeferralAccount {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Sequential reference (e.g. RDA-2026-001).
+   */
+  reference: string;
+  kind: 'asset' | 'liability';
+  /**
+   * Regulator name (e.g. Ofgem / FERC / EWRC-BG).
+   */
+  regulator: string;
+  /**
+   * Carrying balance at reporting date (cents).
+   */
+  balance: number;
+  discountRate?: number | null;
+  /**
+   * IFRS 14 §32 — period over which the balance is expected to be recovered/refunded.
+   */
+  recoveryPeriodEnd?: string | null;
+  /**
+   * Net change in balance during the period (cents).
+   */
+  movementInPeriod?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  status?: ('active' | 'recovering' | 'recovered') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * IAS 10 — events occurring between reporting date and FS-authorisation date. Adjusting events book; non-adjusting events disclose.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -12180,7 +14259,7 @@ export interface EarningsPerShare {
  */
 export interface PostBalanceSheetEvent {
   id: number;
-  tenant: number | Tenant;
+  tenant?: (number | null) | Tenant;
   /**
    * Sequential reference (e.g. PBE-2026-Q1-001).
    */
@@ -12228,32 +14307,1306 @@ export interface PostBalanceSheetEvent {
   createdAt: string;
 }
 /**
+ * Error queue for payment retries, e-invoice rejections, bank-import errors, GL-post failures. Operator console drains this; SOX §404 control TOM-FAIL-01 audits the disposition trail.
+ *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "redirects".
+ * via the `definition` "transaction-failures".
  */
-export interface Redirect {
+export interface TransactionFailure {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Failure reference (e.g. `FAIL-2026-04-001`).
+   */
+  reference: string;
+  /**
+   * ISO 8601 — original transaction date that failed (NOT the failure-recording date).
+   */
+  transactionDate: string;
+  sourceType:
+    | 'payment_retry'
+    | 'einvoice_submission'
+    | 'bank_import'
+    | 'gl_post'
+    | 'stripe_webhook'
+    | 'psd2_call'
+    | 'tax_filing'
+    | 'other';
+  /**
+   * The Payload collection slug the failed source document lives in (e.g. `payments`, `invoices`).
+   */
+  sourceCollection?: string | null;
+  /**
+   * ID of the failed source document.
+   */
+  sourceId?: string | null;
+  /**
+   * Short human-readable reason (e.g. "card declined", "VAT-ID invalid", "bank API timeout").
+   */
+  reason: string;
+  /**
+   * RFC 7807 — HTTP status / provider error code (e.g. "402", "INSUFFICIENT_FUNDS", "VAT_INVALID").
+   */
+  statusCode: string;
+  /**
+   * Full upstream error response — captured for forensic analysis.
+   */
+  errorPayload?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Times this failure has been retried.
+   */
+  retryCount?: number | null;
+  /**
+   * Retry-cap before the failure is escalated to manual review.
+   */
+  maxRetries?: number | null;
+  /**
+   * Scheduled next retry — empty when escalated to manual.
+   */
+  nextRetryAt?: string | null;
+  lastRetryAt?: string | null;
+  /**
+   * Operator who marked the failure resolved (manually or via successful retry).
+   */
+  resolvedBy?: (number | null) | User;
+  /**
+   * How the failure was resolved (e.g. "card retried after customer update", "manually re-entered", "abandoned per business decision").
+   */
+  resolution?: string | null;
+  status?: ('open' | 'retrying' | 'escalated' | 'resolved' | 'abandoned') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * OECD BEPS Action 13 structured TP documentation register. Master File / Local File / CbCR per fiscal year per jurisdiction.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transfer-pricing-files".
+ */
+export interface TransferPricingFile {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  reference: string;
+  reportingYear: number;
+  fileType: 'master_file' | 'local_file' | 'cbcr' | 'benchmark' | 'apa' | 'tp_adjustment';
+  /**
+   * ISO 3166-1 alpha-2 — filing jurisdiction (e.g. BG / DE / RO / NL).
+   */
+  jurisdictionCode: string;
+  /**
+   * Entity whose Local File this is (only set when fileType = local_file).
+   */
+  localFileEntity?: (number | null) | LegalEntity;
+  /**
+   * Ultimate parent / surrogate parent for Master File + CbCR.
+   */
+  consolidatedHeadEntity?: (number | null) | LegalEntity;
+  /**
+   * OECD TPG Annex I to Chapter V — Master File sections.
+   */
+  masterFileSections?: {
+    orgStructure?: string | null;
+    businessDescription?: string | null;
+    intangibles?: string | null;
+    intercompanyFinancialActivities?: string | null;
+    financialAndTaxPositions?: string | null;
+  };
+  /**
+   * OECD TPG Annex II to Chapter V — Local File sections.
+   */
+  localFileSections?: {
+    localEntityDescription?: string | null;
+    controlledTransactions?: string | null;
+    financialInformation?: string | null;
+  };
+  /**
+   * OECD CbCR Table 1 — per-jurisdiction aggregates. One row per jurisdiction.
+   */
+  cbcrAggregates?:
+    | {
+        /**
+         * ISO 3166-1 alpha-2 country code (e.g. BG, DE, RO).
+         */
+        jurisdictionCode: string;
+        unrelatedRevenue?: number | null;
+        relatedRevenue?: number | null;
+        totalRevenue?: number | null;
+        profitBeforeTax?: number | null;
+        incomeTaxPaidCash?: number | null;
+        incomeTaxAccrued?: number | null;
+        statedCapital?: number | null;
+        accumulatedEarnings?: number | null;
+        numberOfEmployees?: number | null;
+        tangibleAssets?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * OECD TPG Chapter II — selected method.
+   */
+  tpMethod?: ('cup' | 'resale_price' | 'cost_plus' | 'tnmm' | 'profit_split' | 'other') | null;
+  reportingCurrency?:
+    | ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX')
+    | null;
+  /**
+   * Group consolidated revenue — drives CbCR threshold (€750M / national equivalents).
+   */
+  consolidatedRevenue?: number | null;
+  /**
+   * CbCR filing required when consolidated revenue ≥ €750M (or local equivalent).
+   */
+  cbcrFilingThresholdMet?: boolean | null;
+  /**
+   * OECD Pillar Two GloBE 15% minimum tax applicability — when consolidated revenue ≥ €750M for ≥ 2 of last 4 years.
+   */
+  pillarTwoApplicable?: boolean | null;
+  preparationDate?: string | null;
+  /**
+   * Statutory filing deadline (varies by jurisdiction).
+   */
+  filingDeadline?: string | null;
+  filingDate?: string | null;
+  filingStatus?:
+    | (
+        | 'in_preparation'
+        | 'filed_timely'
+        | 'filed_late'
+        | 'not_required'
+        | 'under_review'
+        | 'no_adjustment'
+        | 'adjustment'
+      )
+    | null;
+  evidenceAttestation?: (number | null) | EvidenceAttestation;
+  /**
+   * Advance Pricing Agreement reference (when applicable).
+   */
+  apaReference?: string | null;
+  status?: ('draft' | 'approved' | 'filed' | 'closed' | 'restated') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "standards".
+ */
+export interface Standard {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  /**
+   * Canonical standard id — e.g. "IFRS-15", "ISO-19011:2018", "RFC-8259", "EU-Directive-2014/95/EU". Stable across versions; supersession captures version transitions.
+   */
+  standardId: string;
+  /**
+   * Full standard title in its publishing language (or en).
+   */
+  title: string;
+  family:
+    | 'ifrs'
+    | 'us_gaap'
+    | 'iso'
+    | 'iec'
+    | 'w3c'
+    | 'rfc'
+    | 'eu'
+    | 'oecd'
+    | 'nist'
+    | 'etsi'
+    | 'wcag'
+    | 'sox'
+    | 'gdpr'
+    | 'un'
+    | 'upu'
+    | 'en'
+    | 'national'
+    | 'other';
+  /**
+   * Issuing body — "IASB" / "ISO/TC 46" / "W3C TAG" / "ETSI ESI". Free-text; the family already implies the publisher in most cases.
+   */
+  publisher?: string | null;
+  /**
+   * Specific edition / year — "2017", "1.1", "rev:2023-09".
+   */
+  version?: string | null;
+  /**
+   * Canonical URL to the public spec (or a stable mirror).
+   */
+  url?: string | null;
+  /**
+   * Date the standard is mandatory or generally applicable.
+   */
+  effectiveFrom?: string | null;
+  /**
+   * Set when the standard is withdrawn or formally superseded.
+   */
+  effectiveUntil?: string | null;
+  /**
+   * The newer standard that replaces this one. Forms the supersession DAG traversed by erpax.standards.traceSupersession.
+   */
+  supersededBy?: (number | null) | Standard;
+  /**
+   * Older standards this one replaces (inverse of supersededBy for queryability).
+   */
+  supersedes?: (number | Standard)[] | null;
+  /**
+   * One-paragraph rationale captured when supersededBy is set.
+   */
+  supersessionRationale?: string | null;
+  /**
+   * Other standards this one materially conflicts with (Law 27). Each conflict carries a one-line rationale + the conservation-law id the conflict triggers.
+   */
+  conflicts?:
+    | {
+        otherStandard: number | Standard;
+        rationale: string;
+        /**
+         * Optional Conservation Law id that this conflict trips (e.g. "Law-27").
+         */
+        lawId?: string | null;
+        severity?: ('info' | 'caution' | 'block') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Cross-reference index: every src/* file that contains a JSDoc @standard tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).
+   */
+  citingModules?:
+    | {
+        /**
+         * Repo-relative path. Stable across renames via Slice CCCCC JSDoc-as-spec extraction.
+         */
+        modulePath: string;
+        banner?: ('standard' | 'accounting' | 'compliance' | 'audit' | 'security' | 'rfc') | null;
+        /**
+         * Optional section pin — "§4.2", "Art.13(1)", "BG-7".
+         */
+        section?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  adoptionStatus?: ('required' | 'recommended' | 'optional' | 'exempted') | null;
+  /**
+   * Required when adoptionStatus = exempted. Captures the maintainer + reason for audit.
+   */
+  exemptionRationale?: string | null;
+  /**
+   * Content-uuid of the standards-as-vortices live object (Law 27). Lets federation peers verify they have the same canonical record.
+   */
+  liveContentUuid?: string | null;
+  /**
+   * Optional decentralised-identifier URI for the publisher entity (Slice DDDDDD).
+   */
+  didUri?: string | null;
+  status?: ('draft' | 'published' | 'superseded' | 'withdrawn' | 'proposed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Generic persistence layer for MCP tools + DomainAgent in-memory state: fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps. Every row is content-uuid'd (Law 8) and can declare relatedTo edges (Law 10).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "memories".
+ */
+export interface Memory {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  /**
+   * Stable tenant-unique memory id (e.g. MEM-2026-05-001). Cross-cycle navigation key.
+   */
+  memoryRef: string;
+  /**
+   * One-line human-readable label.
+   */
+  title: string;
+  ownerType: 'agent' | 'tool' | 'tenant' | 'platform' | 'cycle';
+  /**
+   * Stable id of the owner — agent.id, tool name, tenant id, cycleUuid, etc.
+   */
+  ownerId: string;
+  kind:
+    | 'fix_proposal'
+    | 'strategy_decision'
+    | 'drift_snapshot'
+    | 'emerging_gap'
+    | 'agent_observation'
+    | 'tool_cache'
+    | 'feedback'
+    | 'fact'
+    | 'reference';
+  /**
+   * Sluggable key within (ownerType, ownerId, kind). Reusing the same key with a new payload triggers supersession.
+   */
+  key: string;
+  /**
+   * Structured memory data — exact shape depends on kind. JSON-LD-friendly when the kind defines a @context.
+   */
+  payload?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Why this memory exists — for human review + supersession diff context.
+   */
+  rationale?: string | null;
+  /**
+   * ISO 8601-1:2019 timestamp the memory was first written.
+   */
+  recordedAt: string;
+  /**
+   * Optional TTL — when set, scheduled job transitions status → expired.
+   */
+  expiresAt?: string | null;
+  /**
+   * Sha-256 of the canonical (ownerType|ownerId|kind|key|payload) — federation peers verify match.
+   */
+  contentUuid?: string | null;
+  /**
+   * Edges to other rows this memory references. Forms the navigable memory graph.
+   */
+  relatedTo?:
+    | {
+        /**
+         * Target collection slug — "audit-events", "memories", "standards", etc.
+         */
+        collection: string;
+        /**
+         * Target document id.
+         */
+        docId: string;
+        edgeKind?: ('about' | 'caused_by' | 'supersedes' | 'refers') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * The harmonic-cycle uuid (Slice PPPPPPPP) this memory was produced in. Lets observers join all memories from the same sweep.
+   */
+  cycleUuid?: string | null;
+  /**
+   * Event id that caused this memory (when applicable) — e.g. "consistency:scan:complete".
+   */
+  emittedFromEvent?: string | null;
+  status?: ('active' | 'archived' | 'superseded' | 'expired') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Localized + tenant-extensible metadata overlay for every registered erpax.* MCP tool. Translators fill description.<locale> via the admin UI; the catalog overlays the row's values at request time.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "mcp-tool-metadata".
+ */
+export interface McpToolMetadatum {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  /**
+   * Canonical MCP tool id — e.g. "erpax.consistency.scan". Must match a registered tool in the catalog; orphan rows are flagged by the checkMcpToolMetadataOrphans invariant.
+   */
+  toolName: string;
+  /**
+   * Tool family — derived from the second segment of the toolName. Used for grouping in the admin UI.
+   */
+  area:
+    | 'accounting'
+    | 'agents'
+    | 'anchoring'
+    | 'archival'
+    | 'audit'
+    | 'blocks'
+    | 'chain'
+    | 'cloudflare'
+    | 'commerce'
+    | 'consistency'
+    | 'did'
+    | 'events'
+    | 'i18n'
+    | 'integrity'
+    | 'marketing'
+    | 'meta'
+    | 'multimedia'
+    | 'platform'
+    | 'pwa'
+    | 'refs'
+    | 'seo'
+    | 'spec'
+    | 'standards'
+    | 'storage'
+    | 'streams'
+    | 'voting'
+    | 'website'
+    | 'other';
+  /**
+   * Tool description; localizable. The MCP catalog overlays this on the code default at request time.
+   */
+  description: string;
+  /**
+   * Optional friendly name for admin UI panels (e.g. "Run consistency check" vs. "erpax.consistency.scan").
+   */
+  displayName?: string | null;
+  /**
+   * Free-form tags for grouping / filtering — "observability", "tamper-evident", "experimental", etc.
+   */
+  tags?:
+    | {
+        tag: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Optional URL to a per-locale documentation page that expands on the description.
+   */
+  documentationUrl?: string | null;
+  /**
+   * When false, the catalog falls back to the code default; the tool itself is NOT disabled (that's the feature-registry job — see access/feature-registry.ts).
+   */
+  enabled?: boolean | null;
+  /**
+   * Timestamp the row was last reconciled against the live tool catalog (by erpax.i18n.audit). Stale rows surface in the orphan-check.
+   */
+  lastSyncedFromCatalogAt?: string | null;
+  status?: ('enabled' | 'disabled' | 'pending_review') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Per-tenant override layer above the platform-default localizations. Resolution order: tenant translation > mcp-tool-metadata > code default. Edit value.<locale> via admin UI; runtime resolver picks it up automatically (Payload i18n).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "translations".
+ */
+export interface Translation {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid: string;
+  /**
+   * Composite key: `<scope>:<key>` — e.g. `mcp-tool:erpax.consistency.scan.description`, `ui-surface:dashboard.welcome.heading`, `event-label:invoice.activated`.
+   */
+  translationKey: string;
+  /**
+   * Namespace of the override. Determines which platform layer this row supersedes.
+   */
+  scope:
+    | 'mcp-tool'
+    | 'ui-surface'
+    | 'event-label'
+    | 'notification-template'
+    | 'standard-citation'
+    | 'chain-step'
+    | 'other';
+  /**
+   * Scope-local key. For MCP tools, the tool name (e.g. `erpax.consistency.scan`). For UI, the surface key (e.g. `dashboard.welcome.heading`).
+   */
+  key: string;
+  /**
+   * The localized value. Switch the admin UI locale to add per-language variants.
+   */
+  value: string;
+  /**
+   * Optional translator note explaining the override (regulatory rationale, branding choice, glossary alignment, etc.).
+   */
+  note?: string | null;
+  /**
+   * Which platform-layer row this overrides. Optional — populated by the resolver when an override is created from the admin UI.
+   */
+  overrides?: {
+    /**
+     * e.g. "mcp-tool-metadata" or "_static" when overriding a code default.
+     */
+    collection?: string | null;
+    /**
+     * Document id of the platform-default row, when applicable.
+     */
+    docId?: string | null;
+    /**
+     * Snapshot of the platform-default value at the time the override was created — for diff review.
+     */
+    platformDefault?: string | null;
+  };
+  effectiveFrom?: string | null;
+  effectiveUntil?: string | null;
+  /**
+   * Sha-256 of (tenant, scope, key, locale-map). Federation peers verify match when sharing overrides across tenants of the same role-profile.
+   */
+  contentUuid?: string | null;
+  /**
+   * Edges to other rows this translation describes — the standard / tool / chain / event the override is about.
+   */
+  relatedTo?:
+    | {
+        collection: string;
+        docId: string;
+        edgeKind?: ('translates' | 'about' | 'refers') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Optional role-profile id (e.g. "government", "bank") this override is intended to be shared across. Federation peers with the same role profile can adopt it.
+   */
+  sharedAcrossRoleProfile?: string | null;
+  status?: ('enabled' | 'disabled' | 'pending_approval' | 'archived') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "commitments".
+ */
+export interface Commitment {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Auto-generated commitment ID (e.g., COMM-2026-001). SOX §302 audit trail.
+   */
+  commitmentNumber: string;
+  /**
+   * Authorized spending limit in cents. SOX §404 controls.
+   */
+  commitmentAmount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Purpose of commitment (e.g., "3-year SaaS vendor contract", "consulting engagement")
+   */
+  commitmentDescription: string;
+  /**
+   * Authorization tier (determines approval authority per company matrix)
+   */
+  authorizationLevel: 'team_lead' | 'manager' | 'director' | 'cfo' | 'other';
+  /**
+   * User granting the authorization (must have sufficient spendingAuthority)
+   */
+  authorizedBy: number | User;
+  /**
+   * Date authorization was granted (must be <= today). SOX §302.
+   */
+  authorizationDate: string;
+  /**
+   * Optional expiry date (null = no expiration)
+   */
+  authorizationExpiryDate?: string | null;
+  /**
+   * Commitment lifecycle status
+   */
+  approvalStatus: 'draft' | 'pending_approval' | 'approved' | 'superseded' | 'revoked';
+  spendingProfile?: {
+    /**
+     * Department or cost center (for budget forecasting)
+     */
+    department?: string | null;
+    /**
+     * GL budget line or project code
+     */
+    budgetLine?: string | null;
+    /**
+     * Vendor or contractor name
+     */
+    vendorName?: string | null;
+  };
+  budgetReservation?: {
+    /**
+     * Amount set aside (not yet committed to PO)
+     */
+    reservedAmount?: number | null;
+    /**
+     * Amount in active purchase order or contract
+     */
+    committedAmount?: number | null;
+    /**
+     * Amount invoiced and accrued
+     */
+    spentAmount?: number | null;
+    /**
+     * computedField: reservedAmount − committedAmount − spentAmount
+     */
+    availableBalance?: number | null;
+  };
+  /**
+   * Purchase order created from this commitment
+   */
+  linkedPurchaseOrder?: (number | null) | PurchaseOrder;
+  /**
+   * Contract created from this commitment (formal commitment phase)
+   */
+  linkedContract?: (number | null) | Contract;
+  zkod?: {
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause included. Required for all commitments involving labor or services.
+     */
+    mandatoryArbitrationClause?: boolean | null;
+    /**
+     * Notarized commitment authorization reference (ZKOD registry). Required for commitments > 50k BGN.
+     */
+    zkodCommitmentNumber?: string | null;
+    /**
+     * Commitment notarized per Bulgaria contract registry (required > 50k BGN)
+     */
+    zkodNotarized?: boolean | null;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Approver comments on authorization
+   */
+  approvalComments?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-amendments".
+ */
+export interface ContractAmendment {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Display title for this amendment (e.g., "Price increase to 6k BGN/month")
+   */
+  amendmentTitle: string;
+  /**
+   * Parent contract being amended (IFRS-15 §10)
+   */
+  contract: number | Contract;
+  /**
+   * Effective date of the amendment (must be >= contract.effectiveFrom)
+   */
+  amendmentDate: string;
+  /**
+   * Classification of the modification type
+   */
+  modificationReason:
+    | 'scope_increase'
+    | 'scope_decrease'
+    | 'pricing_change'
+    | 'payment_term_change'
+    | 'warranty_modification'
+    | 'liability_cap_adjustment'
+    | 'other';
+  /**
+   * Snapshot of original contract terms (scope, pricing, payment terms, key clauses)
+   */
+  originalTermsSummary: string;
+  /**
+   * Description of new terms after amendment (changes to scope, pricing, payment, etc.)
+   */
+  newEffectiveTerms: string;
+  /**
+   * Signed amount in cents. Positive = revenue increase; negative = revenue decrease. IFRS-15 §20 consideration adjustment.
+   */
+  revenueImpactAmount: number;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * IFRS-15 §20 classification: determines whether amendment is a separate PO or integrated into the original contract.
+   */
+  impactClassification: 'separate_obligation' | 'modification_integrated' | 'standalone_performance_obligation';
+  varianceAnalysis?: {
+    /**
+     * Originally planned completion date (pre-amendment)
+     */
+    plannedCompletionDate?: string | null;
+    /**
+     * Revised completion date post-amendment
+     */
+    revisedCompletionDate?: string | null;
+    /**
+     * Days of variance (positive = extension, negative = acceleration)
+     */
+    completionDateVarianceDays?: number | null;
+  };
+  /**
+   * Amendment lifecycle status
+   */
+  approvalStatus: 'draft' | 'pending_approval' | 'approved' | 'rejected';
+  zkod?: {
+    /**
+     * Amendment notarized per Bulgaria contract registry requirements. Mandatory for amendments > 10k BGN.
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Notarization certificate number (Bulgaria notary archive reference)
+     */
+    zkodNotaryReference?: string | null;
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause present in amendment. Required for employment-related amendments.
+     */
+    mandatoryArbitration?: boolean | null;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Internal accounting notes on the amendment (not visible to customer)
+   */
+  internalNotes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-performance".
+ */
+export interface ContractPerformance {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Parent contract (IFRS-15 §10)
+   */
+  contract: number | Contract;
+  /**
+   * Index into contract.performanceObligations array (IFRS-15 §22)
+   */
+  performanceObligationIndex?: number | null;
+  /**
+   * Display name (e.g., "SaaS setup", "monthly service delivery", "training completion")
+   */
+  milestoneTitle: string;
+  /**
+   * Ordinal position in contract fulfillment sequence
+   */
+  milestoneSequence: number;
+  /**
+   * Objective evidence of control transfer per IFRS-15 §31 (e.g., "customer signed acceptance", "service live in production", "all deliverables shipped")
+   */
+  acceptanceCriteria: string;
+  /**
+   * IFRS-15 §31-35: point-in-time (§38) or over-time (§35) revenue recognition
+   */
+  controlTransferMethod: 'point_in_time' | 'over_time';
+  /**
+   * Originally scheduled completion date
+   */
+  plannedCompletionDate: string;
+  /**
+   * Actual date milestone was completed (must be >= plannedCompletionDate)
+   */
+  actualCompletionDate?: string | null;
+  /**
+   * Days variance (positive = late, negative = early, auto-calculated)
+   */
+  completionDateVarianceDays?: number | null;
+  /**
+   * Fulfillment lifecycle status
+   */
+  completionStatus: 'not_started' | 'in_progress' | 'complete' | 'on_hold' | 'failed';
+  /**
+   * Timestamp when control transferred to customer (IFRS-15 §31 event)
+   */
+  controlTransferredAt?: string | null;
+  /**
+   * Invoice created upon revenue recognition (null until revenue recognized)
+   */
+  associatedInvoice?: (number | null) | Invoice;
+  /**
+   * Amount of revenue recognized in cents (IFRS-15 recognition)
+   */
+  revenueRecognizedAmount?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * Timestamp when revenue was formally recognized (per IFRS-15 §31/35)
+   */
+  revenueRecognizedAt?: string | null;
+  /**
+   * Associated sales order (pre-contract commitment phase)
+   */
+  associatedSalesOrder?: (number | null) | SalesOrder;
+  zkod?: {
+    /**
+     * Date of formal acceptance protocol (Bulgaria contract registry)
+     */
+    zkodAcceptanceProtocolDate?: string | null;
+    /**
+     * Notarized acceptance protocol number (Bulgaria ZKOD reference)
+     */
+    zkodAcceptanceProtocolNumber?: string | null;
+    /**
+     * Mandatory arbitration clause per Bulgaria Labor Code Art. 331 (for performance milestones involving employees)
+     */
+    mandatoryArbitration?: boolean | null;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Internal notes on milestone completion, issues, variance explanations
+   */
+  performanceNotes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-signatures".
+ */
+export interface ContractSignature {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * Display title (auto-generated from contract + signatory)
+   */
+  signatureTitle: string;
+  /**
+   * Parent contract being signed (IFRS-15 §10 execution)
+   */
+  contract: number | Contract;
+  /**
+   * Position in approval chain (1-N, must be sequential)
+   */
+  signatureSequence: number;
+  /**
+   * Signatory type in the approval chain
+   */
+  signatoryRole: 'customer' | 'vendor' | 'company_rep' | 'legal_review' | 'finance_review' | 'director_signature';
+  /**
+   * Full legal name of the signer
+   */
+  signatoryName: string;
+  /**
+   * Email address for e-signature provider invitation
+   */
+  signatoryEmail?: string | null;
+  /**
+   * Job title or authorization level (e.g., "Director", "General Counsel")
+   */
+  signatoryTitle?: string | null;
+  /**
+   * Signature lifecycle status
+   */
+  signatureStatus: 'draft' | 'awaiting_signature' | 'signed' | 'rejected' | 'expired';
+  /**
+   * When signature was actually collected (SOX §302 audit trail)
+   */
+  signatureTimestamp?: string | null;
+  /**
+   * E-signature platform or manual signature method
+   */
+  signatureProvider?: ('docusign' | 'adobe_sign' | 'hellosign' | 'manual' | 'bulgaria_eid' | 'other') | null;
+  /**
+   * Link to e-signature provider for verification (e.g., DocuSign envelope link)
+   */
+  signatureVerificationUrl?: string | null;
+  /**
+   * Digital signature cryptographically verified by provider
+   */
+  digitalCertificateVerified?: boolean | null;
+  /**
+   * R2 path to signed PDF copy (audit evidence)
+   */
+  pdfStorageLink?: string | null;
+  rejectionInfo?: {
+    /**
+     * Reason for rejection (if applicable)
+     */
+    rejectionReason?: string | null;
+    /**
+     * User who rejected (if applicable)
+     */
+    rejectedBy?: (number | null) | User;
+    /**
+     * Rejection timestamp
+     */
+    rejectedAt?: string | null;
+  };
+  zkod?: {
+    /**
+     * Signature notarized per Bulgaria ZKOD requirements (required for contracts > 10k BGN)
+     */
+    zkodNotarized?: boolean | null;
+    /**
+     * Notary certificate or registration number (Bulgaria)
+     */
+    zkodNotaryReference?: string | null;
+    /**
+     * Signer attested to mandatory arbitration clause per Bulgaria Labor Code Art. 331
+     */
+    mandatoryArbitrationAttested?: boolean | null;
+    /**
+     * Signature verified against Bulgaria EID or EIDAS certificate
+     */
+    bulgariaEidVerified?: boolean | null;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Internal comments on the signature (e.g., "director approval pending legal review")
+   */
+  approvalComments?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-templates".
+ */
+export interface ContractTemplate {
   id: number;
   /**
-   * You will need to rebuild the website when changing this field.
+   * Unique template name (e.g., "SaaS 3-Year License Template v2.1")
    */
-  from: string;
-  to?: {
-    type?: ('reference' | 'custom') | null;
-    reference?:
-      | ({
-          relationTo: 'pages';
-          value: number | Page;
-        } | null)
-      | ({
-          relationTo: 'posts';
-          value: number | Post;
-        } | null)
-      | ({
-          relationTo: 'products';
-          value: number | Product;
-        } | null);
-    url?: string | null;
+  templateName: string;
+  /**
+   * Template type/category
+   */
+  templateCategory: 'saas' | 'support' | 'nda' | 'vendor' | 'employee' | 'consulting' | 'sla' | 'other';
+  /**
+   * Marketing summary, use cases, and applicability notes
+   */
+  description: string;
+  /**
+   * Version number (increments on approval)
+   */
+  templateVersion: number;
+  /**
+   * When template becomes active
+   */
+  effectiveFromDate: string;
+  /**
+   * When template retires (null = perpetual)
+   */
+  effectiveToDate?: string | null;
+  /**
+   * Template lifecycle status
+   */
+  approvalStatus: 'draft' | 'pending_legal_review' | 'approved' | 'retired';
+  /**
+   * Structured list of contract clauses (IFRS-15 §10 terms)
+   */
+  clauseLibrary: {
+    /**
+     * Unique clause identifier
+     */
+    clauseId: string;
+    /**
+     * Clause name (e.g., "Payment Terms", "Limitation of Liability")
+     */
+    clauseTitle: string;
+    /**
+     * Full legal text of the clause
+     */
+    clauseText: string;
+    /**
+     * Cannot be removed from contracts using this template
+     */
+    isRequired?: boolean | null;
+    /**
+     * IFRS/SOX/GDPR standard (e.g., "IFRS-15 §23", "SOX §302")
+     */
+    regulatoryReference?: string | null;
+    id?: string | null;
+  }[];
+  paymentTermDefaults?: {
+    /**
+     * Default payment terms for contracts using this template
+     */
+    paymentTerms?: ('net0' | 'net7' | 'net14' | 'net30' | 'net60' | 'net90') | null;
+    /**
+     * Custom days until due (if not standard)
+     */
+    daysUntilDue?: number | null;
+    /**
+     * Late payment fee percentage (0-100)
+     */
+    lateFeePercent?: number | null;
+    /**
+     * Early-payment discount percentage
+     */
+    discountPercentForEarlyPayment?: number | null;
   };
+  liabilityFramework?: {
+    /**
+     * Liability cap in cents (null = unlimited)
+     */
+    liabilityCap?: number | null;
+    /**
+     * Excluded damages types
+     */
+    liabilityExemptions?:
+      | {
+          /**
+           * E.g., "Indirect damages", "Consequential damages", "Lost profits"
+           */
+          exemptionType?: string | null;
+          id?: string | null;
+        }[]
+      | null;
+    /**
+     * Warranty period (days post-completion)
+     */
+    warrantyPeriodDays?: number | null;
+  };
+  /**
+   * Template performance obligations (IFRS-15 §22 structure)
+   */
+  performanceObligationTemplate?:
+    | {
+        /**
+         * E.g., "Setup", "Monthly Service", "Support", "Training"
+         */
+        obligationTitle: string;
+        /**
+         * Ordinal position in fulfillment sequence
+         */
+        obligationSequence: number;
+        /**
+         * IFRS-15 §31-35 control transfer timing
+         */
+        controlTransferMethod: 'point_in_time' | 'over_time';
+        /**
+         * Customizable description (placeholders for dynamic values)
+         */
+        descriptionTemplate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  zkod?: {
+    /**
+     * Bulgaria Labor Code Art. 331: mandatory arbitration clause embedded in template
+     */
+    mandatoryArbitrationClauseIncluded?: boolean | null;
+    /**
+     * Contracts created from this template require notarization
+     */
+    notarizationRequired?: boolean | null;
+    /**
+     * ZKOD category code (Bulgaria contract registry)
+     */
+    zkodRegistryCategory?: string | null;
+  };
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Internal notes on template purpose, history, and customization guidance
+   */
+  templateNotes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Durable audit row per Cloudflare Workers AI inference. Required by GDPR Art.22(3) right-to-human-intervention + EU AI Act transparency + SOX §404 ai-assisted-decision evidence.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ai-suggestions".
+ */
+export interface AiSuggestion {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * RFC 9562 UUID v4 — idempotency + cross-system correlation.
+   */
+  suggestionId: string;
+  /**
+   * FEATURE_REGISTRY id (e.g. `ai_invoice_ocr`, `ai_sanctions_screening`).
+   */
+  feature: string;
+  /**
+   * Cloudflare Workers AI model id (e.g. `@cf/meta/llama-3.1-8b-instruct`, `@cf/baai/bge-base-en-v1.5`).
+   */
+  model: string;
+  /**
+   * ISO 8601 — when the inference was made.
+   */
+  inferenceTime: string;
+  /**
+   * Input payload (sanitised — no raw PII when feature.privacyClass = `pii`). GDPR Art.5(1)(c) data minimisation applies.
+   */
+  inputs:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Raw model output. Stored for GDPR Art.22(3) explanation right + SOX evidence.
+   */
+  outputs:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Model confidence (0.0–1.0) when available. Drives the auto-accept threshold per feature.
+   */
+  confidence?: number | null;
+  /**
+   * EU AI Act 2024 risk classification — drives downstream review intensity.
+   */
+  aiRiskClass: 'minimal' | 'limited' | 'high' | 'prohibited';
+  /**
+   * Slug of the collection the suggestion is FOR (e.g. `invoices`, `bank-transactions`, `kyc-checks`).
+   */
+  sourceCollection?: string | null;
+  /**
+   * ID of the source row.
+   */
+  sourceId?: string | null;
+  /**
+   * GDPR Art.22(3) — human-in-the-loop decision. AI never auto-decides for high-risk class.
+   */
+  humanDecision?: ('pending' | 'accepted' | 'edited' | 'rejected' | 'auto_accepted' | 'escalated') | null;
+  /**
+   * Human who made the accept/reject decision (Art.22(3) right-to-human-intervention evidence).
+   */
+  decisionMaker?: (number | null) | User;
+  /**
+   * ISO 8601 — timestamp of the human decision.
+   */
+  decisionAt?: string | null;
+  /**
+   * Free-text rationale — required for `rejected` / `edited` / `escalated` outcomes.
+   */
+  decisionRationale?: string | null;
+  /**
+   * Reference to the downstream record the accepted suggestion was applied to (e.g. `journal-entries:42`).
+   */
+  appliedTo?: string | null;
+  gateway?: {
+    /**
+     * AI Gateway routing id — for replay / cache lookup.
+     */
+    gatewayId?: string | null;
+    cacheStatus?: ('miss' | 'hit' | 'bypass') | null;
+    /**
+     * Input tokens — drives metered billing per IFRS-15 §B16.
+     */
+    tokensIn?: number | null;
+    /**
+     * Output tokens.
+     */
+    tokensOut?: number | null;
+    latencyMs?: number | null;
+    /**
+     * Linked usage-record for metered AI billing (Slice VVV).
+     */
+    usageRecord?: (number | null) | UsageRecord;
+  };
+  status?: ('recorded' | 'applied' | 'rejected' | 'reversed' | 'quarantined') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Metered-billing event log. One row per countable event (invoices issued, signed PAdES, country-bundle calls, etc.). Aggregated by the billing engine into IFRS-15 §B16 usage-based invoice lines.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "usage-records".
+ */
+export interface UsageRecord {
+  id: number;
+  tenant?: (number | null) | Tenant;
+  /**
+   * RFC 9562 UUID v4 — idempotency key. Re-emission with the same eventId is a no-op.
+   */
+  eventId: string;
+  /**
+   * Feature id from FEATURE_REGISTRY (e.g. `invoicing_metered`, `country_bundles`, `eidas_signing`).
+   */
+  feature: string;
+  meterKind: 'count' | 'quantity' | 'volume' | 'duration';
+  /**
+   * Per-event count (1 for `count` meter; bytes for `volume`; seconds for `duration`; etc.).
+   */
+  quantity: number;
+  /**
+   * ISO 8601 — when the metered event happened.
+   */
+  eventTime: string;
+  /**
+   * Billing-period bucket (e.g. `2026-04` for monthly, `2026-Q2` for quarterly).
+   */
+  billingPeriod: string;
+  /**
+   * The subscription this usage rolls into.
+   */
+  subscription?: (number | null) | Subscription;
+  /**
+   * Slug of the collection that generated the event (e.g. `invoices`, `evidence-attestations`).
+   */
+  sourceCollection?: string | null;
+  /**
+   * ID of the source row.
+   */
+  sourceId?: string | null;
+  /**
+   * Per-unit price snapshot (cents) at time of event. Rate-card change won't retroactively affect billed quantities.
+   */
+  rate?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
+  /**
+   * rate × quantity (cents) — what hits the upcoming invoice line.
+   */
+  amount?: number | null;
+  /**
+   * Invoice that consumed this usage (set when the billing job runs).
+   */
+  invoice?: (number | null) | Invoice;
+  status?: ('recorded' | 'billed' | 'reversed' | 'disputed') | null;
+  createdBy?: (number | null) | User;
+  approvedBy?: (number | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12275,40 +15628,113 @@ export interface FormSubmission {
   createdAt: string;
 }
 /**
- * This is a collection of automatically created search results. These results are used by the global site search and will be updated automatically as documents in the CMS are created or updated.
- *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "search".
+ * via the `definition` "exports".
  */
-export interface Search {
+export interface Export {
   id: number;
-  title?: string | null;
-  priority?: number | null;
-  doc:
+  name?: string | null;
+  format: 'csv' | 'json';
+  limit?: number | null;
+  page?: number | null;
+  sort?: string | null;
+  sortOrder?: ('asc' | 'desc') | null;
+  locale?:
+    | (
+        | 'all'
+        | 'en'
+        | 'bg'
+        | 'cs'
+        | 'da'
+        | 'de'
+        | 'el'
+        | 'es'
+        | 'et'
+        | 'fi'
+        | 'fr'
+        | 'ga'
+        | 'hr'
+        | 'hu'
+        | 'is'
+        | 'it'
+        | 'ja'
+        | 'lt'
+        | 'lv'
+        | 'mt'
+        | 'nb'
+        | 'nl'
+        | 'pl'
+        | 'pt'
+        | 'ro'
+        | 'ru'
+        | 'sk'
+        | 'sl'
+        | 'sv'
+        | 'uk'
+        | 'ar'
+      )
+    | null;
+  drafts?: ('yes' | 'no') | null;
+  selectionToUse?: ('currentSelection' | 'currentFilters' | 'all') | null;
+  fields?: string[] | null;
+  collectionSlug: string;
+  where?:
     | {
-        relationTo: 'posts';
-        value: number | Post;
+        [k: string]: unknown;
       }
-    | {
-        relationTo: 'products';
-        value: number | Product;
-      };
-  slug?: string | null;
-  meta?: {
-    title?: string | null;
-    description?: string | null;
-    image?: (number | null) | Media;
-  };
-  categories?:
-    | {
-        relationTo?: string | null;
-        categoryID?: string | null;
-        title?: string | null;
-        id?: string | null;
-      }[]
+    | unknown[]
+    | string
+    | number
+    | boolean
     | null;
   updatedAt: string;
   createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "imports".
+ */
+export interface Import {
+  id: number;
+  collectionSlug: string;
+  importMode?: ('create' | 'update' | 'upsert') | null;
+  matchField?: string | null;
+  status?: ('pending' | 'completed' | 'partial' | 'failed') | null;
+  summary?: {
+    imported?: number | null;
+    updated?: number | null;
+    total?: number | null;
+    issues?: number | null;
+    issueDetails?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
 }
 /**
  * API keys control which collections, resources, tools, and prompts MCP clients can access
@@ -12583,6 +16009,18 @@ export interface PayloadLockedDocument {
         value: number | Tenant;
       } | null)
     | ({
+        relationTo: 'users';
+        value: number | User;
+      } | null)
+    | ({
+        relationTo: 'roles';
+        value: number | Role;
+      } | null)
+    | ({
+        relationTo: 'user-roles';
+        value: number | UserRole;
+      } | null)
+    | ({
         relationTo: 'pages';
         value: number | Page;
       } | null)
@@ -12599,19 +16037,23 @@ export interface PayloadLockedDocument {
         value: number | Category;
       } | null)
     | ({
-        relationTo: 'roles';
-        value: number | Role;
+        relationTo: 'invoices';
+        value: number | Invoice;
       } | null)
     | ({
-        relationTo: 'user_roles';
-        value: number | UserRole;
+        relationTo: 'invoice-lines';
+        value: number | InvoiceLine;
       } | null)
     | ({
-        relationTo: 'users';
-        value: number | User;
+        relationTo: 'payment-methods';
+        value: number | PaymentMethod;
       } | null)
     | ({
-        relationTo: 'subscriptionPlans';
+        relationTo: 'payments';
+        value: number | Payment;
+      } | null)
+    | ({
+        relationTo: 'subscription-plans';
         value: number | SubscriptionPlan;
       } | null)
     | ({
@@ -12623,20 +16065,664 @@ export interface PayloadLockedDocument {
         value: number | Item;
       } | null)
     | ({
-        relationTo: 'invoices';
-        value: number | Invoice;
+        relationTo: 'gl-accounts';
+        value: number | GlAccount;
       } | null)
     | ({
-        relationTo: 'invoiceLines';
-        value: number | InvoiceLine;
+        relationTo: 'gl-posting-rules';
+        value: number | GlPostingRule;
       } | null)
     | ({
-        relationTo: 'paymentMethods';
-        value: number | PaymentMethod;
+        relationTo: 'journal-entries';
+        value: number | JournalEntry;
       } | null)
     | ({
-        relationTo: 'payments';
-        value: number | Payment;
+        relationTo: 'gl-postings';
+        value: number | GlPosting;
+      } | null)
+    | ({
+        relationTo: 'period-locks';
+        value: number | PeriodLock;
+      } | null)
+    | ({
+        relationTo: 'closing-entries';
+        value: number | ClosingEntry;
+      } | null)
+    | ({
+        relationTo: 'bank-statements';
+        value: number | BankStatement;
+      } | null)
+    | ({
+        relationTo: 'bank-transactions';
+        value: number | BankTransaction;
+      } | null)
+    | ({
+        relationTo: 'bank-accounts';
+        value: number | BankAccount;
+      } | null)
+    | ({
+        relationTo: 'account-reconciliations';
+        value: number | AccountReconciliation;
+      } | null)
+    | ({
+        relationTo: 'bank-reconciliations';
+        value: number | BankReconciliation;
+      } | null)
+    | ({
+        relationTo: 'financial-statements';
+        value: number | FinancialStatement;
+      } | null)
+    | ({
+        relationTo: 'period-end-adjustments';
+        value: number | PeriodEndAdjustment;
+      } | null)
+    | ({
+        relationTo: 'recurring-journals';
+        value: number | RecurringJournal;
+      } | null)
+    | ({
+        relationTo: 'prior-period-adjustments';
+        value: number | PriorPeriodAdjustment;
+      } | null)
+    | ({
+        relationTo: 'rounding-adjustments';
+        value: number | RoundingAdjustment;
+      } | null)
+    | ({
+        relationTo: 'tax-calculations';
+        value: number | TaxCalculation;
+      } | null)
+    | ({
+        relationTo: 'tax-codes';
+        value: number | TaxCode;
+      } | null)
+    | ({
+        relationTo: 'tax-jurisdictions';
+        value: number | TaxJurisdiction;
+      } | null)
+    | ({
+        relationTo: 'tax-returns';
+        value: number | TaxReturn;
+      } | null)
+    | ({
+        relationTo: 'currency-rates';
+        value: number | CurrencyRate;
+      } | null)
+    | ({
+        relationTo: 'fiscal-periods';
+        value: number | FiscalPeriod;
+      } | null)
+    | ({
+        relationTo: 'fiscal-calendars';
+        value: number | FiscalCalendar;
+      } | null)
+    | ({
+        relationTo: 'fiscal-period-snapshots';
+        value: number | FiscalPeriodSnapshot;
+      } | null)
+    | ({
+        relationTo: 'fixed-assets';
+        value: number | FixedAsset;
+      } | null)
+    | ({
+        relationTo: 'depreciation-schedules';
+        value: number | DepreciationSchedule;
+      } | null)
+    | ({
+        relationTo: 'customers';
+        value: number | Customer;
+      } | null)
+    | ({
+        relationTo: 'leads';
+        value: number | Lead;
+      } | null)
+    | ({
+        relationTo: 'opportunities';
+        value: number | Opportunity;
+      } | null)
+    | ({
+        relationTo: 'customer-segments';
+        value: number | CustomerSegment;
+      } | null)
+    | ({
+        relationTo: 'quotes';
+        value: number | Quote;
+      } | null)
+    | ({
+        relationTo: 'sales-orders';
+        value: number | SalesOrder;
+      } | null)
+    | ({
+        relationTo: 'sales-commissions';
+        value: number | SalesCommission;
+      } | null)
+    | ({
+        relationTo: 'credit-memos';
+        value: number | CreditMemo;
+      } | null)
+    | ({
+        relationTo: 'returns';
+        value: number | Return;
+      } | null)
+    | ({
+        relationTo: 'shipments';
+        value: number | Shipment;
+      } | null)
+    | ({
+        relationTo: 'refunds';
+        value: number | Refund;
+      } | null)
+    | ({
+        relationTo: 'payment-allocations';
+        value: number | PaymentAllocation;
+      } | null)
+    | ({
+        relationTo: 'dunning-cycles';
+        value: number | DunningCycle;
+      } | null)
+    | ({
+        relationTo: 'vendors';
+        value: number | Vendor;
+      } | null)
+    | ({
+        relationTo: 'vendor-quotes';
+        value: number | VendorQuote;
+      } | null)
+    | ({
+        relationTo: 'vendor-scorecards';
+        value: number | VendorScorecard;
+      } | null)
+    | ({
+        relationTo: 'purchase-orders';
+        value: number | PurchaseOrder;
+      } | null)
+    | ({
+        relationTo: 'purchase-requisitions';
+        value: number | PurchaseRequisition;
+      } | null)
+    | ({
+        relationTo: 'goods-receipts';
+        value: number | GoodsReceipt;
+      } | null)
+    | ({
+        relationTo: 'inventory-movements';
+        value: number | InventoryMovement;
+      } | null)
+    | ({
+        relationTo: 'warehouse-locations';
+        value: number | WarehouseLocation;
+      } | null)
+    | ({
+        relationTo: 'cost-centers';
+        value: number | CostCenter;
+      } | null)
+    | ({
+        relationTo: 'budget-planning';
+        value: number | BudgetPlanning;
+      } | null)
+    | ({
+        relationTo: 'cost-variances';
+        value: number | CostVariance;
+      } | null)
+    | ({
+        relationTo: 'intercompany-transactions';
+        value: number | IntercompanyTransaction;
+      } | null)
+    | ({
+        relationTo: 'consolidation-eliminations';
+        value: number | ConsolidationElimination;
+      } | null)
+    | ({
+        relationTo: 'fx-transactions';
+        value: number | FxTransaction;
+      } | null)
+    | ({
+        relationTo: 'contracts';
+        value: number | Contract;
+      } | null)
+    | ({
+        relationTo: 'performance-obligations';
+        value: number | PerformanceObligation;
+      } | null)
+    | ({
+        relationTo: 'commitments-and-contingencies';
+        value: number | CommitmentsAndContingency;
+      } | null)
+    | ({
+        relationTo: 'leases';
+        value: number | Lease;
+      } | null)
+    | ({
+        relationTo: 'lease-modifications';
+        value: number | LeaseModification;
+      } | null)
+    | ({
+        relationTo: 'lease-period-postings';
+        value: number | LeasePeriodPosting;
+      } | null)
+    | ({
+        relationTo: 'payment-runs';
+        value: number | PaymentRun;
+      } | null)
+    | ({
+        relationTo: 'sepa-mandates';
+        value: number | SepaMandate;
+      } | null)
+    | ({
+        relationTo: 'payroll-runs';
+        value: number | PayrollRun;
+      } | null)
+    | ({
+        relationTo: 'employees';
+        value: number | Employee;
+      } | null)
+    | ({
+        relationTo: 'job-positions';
+        value: number | JobPosition;
+      } | null)
+    | ({
+        relationTo: 'time-entries';
+        value: number | TimeEntry;
+      } | null)
+    | ({
+        relationTo: 'leave-requests';
+        value: number | LeaveRequest;
+      } | null)
+    | ({
+        relationTo: 'performance-reviews';
+        value: number | PerformanceReview;
+      } | null)
+    | ({
+        relationTo: 'expense-reports';
+        value: number | ExpenseReport;
+      } | null)
+    | ({
+        relationTo: 'recruiting-pipeline';
+        value: number | RecruitingPipeline;
+      } | null)
+    | ({
+        relationTo: 'activities';
+        value: number | Activity;
+      } | null)
+    | ({
+        relationTo: 'projects';
+        value: number | Project;
+      } | null)
+    | ({
+        relationTo: 'project-tasks';
+        value: number | ProjectTask;
+      } | null)
+    | ({
+        relationTo: 'project-milestones';
+        value: number | ProjectMilestone;
+      } | null)
+    | ({
+        relationTo: 'work-orders';
+        value: number | WorkOrder;
+      } | null)
+    | ({
+        relationTo: 'workflow-definitions';
+        value: number | WorkflowDefinition;
+      } | null)
+    | ({
+        relationTo: 'workflow-instances';
+        value: number | WorkflowInstance;
+      } | null)
+    | ({
+        relationTo: 'bills-of-materials';
+        value: number | BillsOfMaterial;
+      } | null)
+    | ({
+        relationTo: 'production-receipts';
+        value: number | ProductionReceipt;
+      } | null)
+    | ({
+        relationTo: 'quality-inspections';
+        value: number | QualityInspection;
+      } | null)
+    | ({
+        relationTo: 'wip-snapshots';
+        value: number | WipSnapshot;
+      } | null)
+    | ({
+        relationTo: 'properties';
+        value: number | Property;
+      } | null)
+    | ({
+        relationTo: 'spaces';
+        value: number | Space;
+      } | null)
+    | ({
+        relationTo: 'maintenance-requests';
+        value: number | MaintenanceRequest;
+      } | null)
+    | ({
+        relationTo: 'maintenance-work-orders';
+        value: number | MaintenanceWorkOrder;
+      } | null)
+    | ({
+        relationTo: 'bookable-resources';
+        value: number | BookableResource;
+      } | null)
+    | ({
+        relationTo: 'bookings';
+        value: number | Booking;
+      } | null)
+    | ({
+        relationTo: 'carriers';
+        value: number | Carrier;
+      } | null)
+    | ({
+        relationTo: 'tracking-events';
+        value: number | TrackingEvent;
+      } | null)
+    | ({
+        relationTo: 'customs-declarations';
+        value: number | CustomsDeclaration;
+      } | null)
+    | ({
+        relationTo: 'consignment-arrangements';
+        value: number | ConsignmentArrangement;
+      } | null)
+    | ({
+        relationTo: 'consignment-inventory';
+        value: number | ConsignmentInventory;
+      } | null)
+    | ({
+        relationTo: 'consignment-sales';
+        value: number | ConsignmentSale;
+      } | null)
+    | ({
+        relationTo: 'audit-events';
+        value: number | AuditEvent;
+      } | null)
+    | ({
+        relationTo: 'api-audit-events';
+        value: number | ApiAuditEvent;
+      } | null)
+    | ({
+        relationTo: 'evidence-attestations';
+        value: number | EvidenceAttestation;
+      } | null)
+    | ({
+        relationTo: 'entity-types';
+        value: number | EntityType;
+      } | null)
+    | ({
+        relationTo: 'taxing-jurisdictions';
+        value: number | TaxingJurisdiction;
+      } | null)
+    | ({
+        relationTo: 'entity-legal-structures';
+        value: number | EntityLegalStructure;
+      } | null)
+    | ({
+        relationTo: 'compliance-frameworks';
+        value: number | ComplianceFramework;
+      } | null)
+    | ({
+        relationTo: 'compliance-requirements';
+        value: number | ComplianceRequirement;
+      } | null)
+    | ({
+        relationTo: 'internal-controls';
+        value: number | InternalControl;
+      } | null)
+    | ({
+        relationTo: 'control-tests';
+        value: number | ControlTest;
+      } | null)
+    | ({
+        relationTo: 'audit-samples';
+        value: number | AuditSample;
+      } | null)
+    | ({
+        relationTo: 'compliance-gaps';
+        value: number | ComplianceGap;
+      } | null)
+    | ({
+        relationTo: 'audit-evidence';
+        value: number | AuditEvidence;
+      } | null)
+    | ({
+        relationTo: 'audit-findings';
+        value: number | AuditFinding;
+      } | null)
+    | ({
+        relationTo: 'audit-trail-events';
+        value: number | AuditTrailEvent;
+      } | null)
+    | ({
+        relationTo: 'remediation-plans';
+        value: number | RemediationPlan;
+      } | null)
+    | ({
+        relationTo: 'audit-committees';
+        value: number | AuditCommittee;
+      } | null)
+    | ({
+        relationTo: 'audit-committee-members';
+        value: number | AuditCommitteeMember;
+      } | null)
+    | ({
+        relationTo: 'board-actions';
+        value: number | BoardAction;
+      } | null)
+    | ({
+        relationTo: 'management-certifications';
+        value: number | ManagementCertification;
+      } | null)
+    | ({
+        relationTo: 'regulatory-reports';
+        value: number | RegulatoryReport;
+      } | null)
+    | ({
+        relationTo: 'internal-policies';
+        value: number | InternalPolicy;
+      } | null)
+    | ({
+        relationTo: 'statutory-report-templates';
+        value: number | StatutoryReportTemplate;
+      } | null)
+    | ({
+        relationTo: 'statutory-field-mappings';
+        value: number | StatutoryFieldMapping;
+      } | null)
+    | ({
+        relationTo: 'policy-versions';
+        value: number | PolicyVersion;
+      } | null)
+    | ({
+        relationTo: 'policy-acknowledgments';
+        value: number | PolicyAcknowledgment;
+      } | null)
+    | ({
+        relationTo: 'compliance-deadlines';
+        value: number | ComplianceDeadline;
+      } | null)
+    | ({
+        relationTo: 'compliance-notifications';
+        value: number | ComplianceNotification;
+      } | null)
+    | ({
+        relationTo: 'reporting-standards';
+        value: number | ReportingStandard;
+      } | null)
+    | ({
+        relationTo: 'reporting-mappings';
+        value: number | ReportingMapping;
+      } | null)
+    | ({
+        relationTo: 'related-party-transactions';
+        value: number | RelatedPartyTransaction;
+      } | null)
+    | ({
+        relationTo: 'management-assessment-icfr';
+        value: number | ManagementAssessmentIcfr;
+      } | null)
+    | ({
+        relationTo: 'disclosure-checklists';
+        value: number | DisclosureChecklist;
+      } | null)
+    | ({
+        relationTo: 'audit-committee-minutes';
+        value: number | AuditCommitteeMinute;
+      } | null)
+    | ({
+        relationTo: 'risk-register';
+        value: number | RiskRegister;
+      } | null)
+    | ({
+        relationTo: 'debt-schedule';
+        value: number | DebtSchedule;
+      } | null)
+    | ({
+        relationTo: 'internal-audit-function';
+        value: number | InternalAuditFunction;
+      } | null)
+    | ({
+        relationTo: 'segment-reporting';
+        value: number | SegmentReporting;
+      } | null)
+    | ({
+        relationTo: 'consent-records';
+        value: number | ConsentRecord;
+      } | null)
+    | ({
+        relationTo: 'data-subject-requests';
+        value: number | DataSubjectRequest;
+      } | null)
+    | ({
+        relationTo: 'data-processing-activities';
+        value: number | DataProcessingActivity;
+      } | null)
+    | ({
+        relationTo: 'kyc-checks';
+        value: number | KycCheck;
+      } | null)
+    | ({
+        relationTo: 'beneficial-owners';
+        value: number | BeneficialOwner;
+      } | null)
+    | ({
+        relationTo: 'csrd-disclosures';
+        value: number | CsrdDisclosure;
+      } | null)
+    | ({
+        relationTo: 'carbon-emissions';
+        value: number | CarbonEmission;
+      } | null)
+    | ({
+        relationTo: 'biological-assets';
+        value: number | BiologicalAsset;
+      } | null)
+    | ({
+        relationTo: 'mineral-resource-assets';
+        value: number | MineralResourceAsset;
+      } | null)
+    | ({
+        relationTo: 'investment-properties';
+        value: number | InvestmentProperty;
+      } | null)
+    | ({
+        relationTo: 'provisions';
+        value: number | Provision;
+      } | null)
+    | ({
+        relationTo: 'government-grants';
+        value: number | GovernmentGrant;
+      } | null)
+    | ({
+        relationTo: 'deferred-tax-items';
+        value: number | DeferredTaxItem;
+      } | null)
+    | ({
+        relationTo: 'share-based-payments';
+        value: number | ShareBasedPayment;
+      } | null)
+    | ({
+        relationTo: 'business-combinations';
+        value: number | BusinessCombination;
+      } | null)
+    | ({
+        relationTo: 'held-for-sale-classifications';
+        value: number | HeldForSaleClassification;
+      } | null)
+    | ({
+        relationTo: 'fair-value-measurements';
+        value: number | FairValueMeasurement;
+      } | null)
+    | ({
+        relationTo: 'earnings-per-share';
+        value: number | EarningsPerShare;
+      } | null)
+    | ({
+        relationTo: 'insurance-contracts';
+        value: number | InsuranceContract;
+      } | null)
+    | ({
+        relationTo: 'regulatory-deferral-accounts';
+        value: number | RegulatoryDeferralAccount;
+      } | null)
+    | ({
+        relationTo: 'post-balance-sheet-events';
+        value: number | PostBalanceSheetEvent;
+      } | null)
+    | ({
+        relationTo: 'transaction-failures';
+        value: number | TransactionFailure;
+      } | null)
+    | ({
+        relationTo: 'transfer-pricing-files';
+        value: number | TransferPricingFile;
+      } | null)
+    | ({
+        relationTo: 'standards';
+        value: number | Standard;
+      } | null)
+    | ({
+        relationTo: 'memories';
+        value: number | Memory;
+      } | null)
+    | ({
+        relationTo: 'mcp-tool-metadata';
+        value: number | McpToolMetadatum;
+      } | null)
+    | ({
+        relationTo: 'translations';
+        value: number | Translation;
+      } | null)
+    | ({
+        relationTo: 'commitments';
+        value: number | Commitment;
+      } | null)
+    | ({
+        relationTo: 'contract-amendments';
+        value: number | ContractAmendment;
+      } | null)
+    | ({
+        relationTo: 'contract-performance';
+        value: number | ContractPerformance;
+      } | null)
+    | ({
+        relationTo: 'contract-signatures';
+        value: number | ContractSignature;
+      } | null)
+    | ({
+        relationTo: 'contract-templates';
+        value: number | ContractTemplate;
+      } | null)
+    | ({
+        relationTo: 'legal-entities';
+        value: number | LegalEntity;
+      } | null)
+    | ({
+        relationTo: 'ai-suggestions';
+        value: number | AiSuggestion;
+      } | null)
+    | ({
+        relationTo: 'usage-records';
+        value: number | UsageRecord;
       } | null)
     | ({
         relationTo: 'addresses';
@@ -12671,508 +16757,12 @@ export interface PayloadLockedDocument {
         value: number | Transaction;
       } | null)
     | ({
-        relationTo: 'audit-events';
-        value: number | AuditEvent;
-      } | null)
-    | ({
-        relationTo: 'tax-jurisdictions';
-        value: number | TaxJurisdiction;
-      } | null)
-    | ({
-        relationTo: 'tax-codes';
-        value: number | TaxCode;
-      } | null)
-    | ({
-        relationTo: 'fiscal-periods';
-        value: number | FiscalPeriod;
-      } | null)
-    | ({
-        relationTo: 'standards';
-        value: number | Standard;
-      } | null)
-    | ({
-        relationTo: 'memories';
-        value: number | Memory;
-      } | null)
-    | ({
-        relationTo: 'mcp-tool-metadata';
-        value: number | McpToolMetadatum;
-      } | null)
-    | ({
-        relationTo: 'translations';
-        value: number | Translation;
-      } | null)
-    | ({
-        relationTo: 'customers';
-        value: number | Customer;
-      } | null)
-    | ({
-        relationTo: 'vendors';
-        value: number | Vendor;
-      } | null)
-    | ({
-        relationTo: 'kyc-checks';
-        value: number | KycCheck;
-      } | null)
-    | ({
-        relationTo: 'beneficial-owners';
-        value: number | BeneficialOwner;
-      } | null)
-    | ({
-        relationTo: 'gl-accounts';
-        value: number | GlAccount;
-      } | null)
-    | ({
-        relationTo: 'journal-entries';
-        value: number | JournalEntry;
-      } | null)
-    | ({
-        relationTo: 'gl-postings';
-        value: number | GlPosting;
-      } | null)
-    | ({
-        relationTo: 'bank-accounts';
-        value: number | BankAccount;
-      } | null)
-    | ({
-        relationTo: 'bank-statements';
-        value: number | BankStatement;
-      } | null)
-    | ({
-        relationTo: 'bank-transactions';
-        value: number | BankTransaction;
-      } | null)
-    | ({
-        relationTo: 'purchase-orders';
-        value: number | PurchaseOrder;
-      } | null)
-    | ({
-        relationTo: 'goods-receipts';
-        value: number | GoodsReceipt;
-      } | null)
-    | ({
-        relationTo: 'quotes';
-        value: number | Quote;
-      } | null)
-    | ({
-        relationTo: 'contracts';
-        value: number | Contract;
-      } | null)
-    | ({
-        relationTo: 'performance-obligations';
-        value: number | PerformanceObligation;
-      } | null)
-    | ({
-        relationTo: 'sales-orders';
-        value: number | SalesOrder;
-      } | null)
-    | ({
-        relationTo: 'shipments';
-        value: number | Shipment;
-      } | null)
-    | ({
-        relationTo: 'returns';
-        value: number | Return;
-      } | null)
-    | ({
-        relationTo: 'warehouse-locations';
-        value: number | WarehouseLocation;
-      } | null)
-    | ({
-        relationTo: 'inventory-movements';
-        value: number | InventoryMovement;
-      } | null)
-    | ({
-        relationTo: 'financial-statements';
-        value: number | FinancialStatement;
-      } | null)
-    | ({
-        relationTo: 'period-end-adjustments';
-        value: number | PeriodEndAdjustment;
-      } | null)
-    | ({
-        relationTo: 'depreciation-schedules';
-        value: number | DepreciationSchedule;
-      } | null)
-    | ({
-        relationTo: 'tax-calculations';
-        value: number | TaxCalculation;
-      } | null)
-    | ({
-        relationTo: 'tax-returns';
-        value: number | TaxReturn;
-      } | null)
-    | ({
-        relationTo: 'currency-rates';
-        value: number | CurrencyRate;
-      } | null)
-    | ({
-        relationTo: 'credit-memos';
-        value: number | CreditMemo;
-      } | null)
-    | ({
-        relationTo: 'refunds';
-        value: number | Refund;
-      } | null)
-    | ({
-        relationTo: 'fixed-assets';
-        value: number | FixedAsset;
-      } | null)
-    | ({
-        relationTo: 'budget-planning';
-        value: number | BudgetPlanning;
-      } | null)
-    | ({
-        relationTo: 'consent-records';
-        value: number | ConsentRecord;
-      } | null)
-    | ({
-        relationTo: 'data-subject-requests';
-        value: number | DataSubjectRequest;
-      } | null)
-    | ({
-        relationTo: 'data-processing-activities';
-        value: number | DataProcessingActivity;
-      } | null)
-    | ({
-        relationTo: 'audit-findings';
-        value: number | AuditFinding;
-      } | null)
-    | ({
-        relationTo: 'control-tests';
-        value: number | ControlTest;
-      } | null)
-    | ({
-        relationTo: 'api-audit-events';
-        value: number | ApiAuditEvent;
-      } | null)
-    | ({
-        relationTo: 'evidence-attestations';
-        value: number | EvidenceAttestation;
-      } | null)
-    | ({
-        relationTo: 'cost-centers';
-        value: number | CostCenter;
-      } | null)
-    | ({
-        relationTo: 'leases';
-        value: number | Lease;
-      } | null)
-    | ({
-        relationTo: 'lease-period-postings';
-        value: number | LeasePeriodPosting;
-      } | null)
-    | ({
-        relationTo: 'sepa-mandates';
-        value: number | SepaMandate;
-      } | null)
-    | ({
-        relationTo: 'payment-runs';
-        value: number | PaymentRun;
-      } | null)
-    | ({
-        relationTo: 'account-reconciliations';
-        value: number | AccountReconciliation;
-      } | null)
-    | ({
-        relationTo: 'dunning-cycles';
-        value: number | DunningCycle;
-      } | null)
-    | ({
-        relationTo: 'employees';
-        value: number | Employee;
-      } | null)
-    | ({
-        relationTo: 'time-entries';
-        value: number | TimeEntry;
-      } | null)
-    | ({
-        relationTo: 'payroll-runs';
-        value: number | PayrollRun;
-      } | null)
-    | ({
-        relationTo: 'bank-reconciliations';
-        value: number | BankReconciliation;
-      } | null)
-    | ({
-        relationTo: 'intercompany-transactions';
-        value: number | IntercompanyTransaction;
-      } | null)
-    | ({
-        relationTo: 'consolidation-eliminations';
-        value: number | ConsolidationElimination;
-      } | null)
-    | ({
-        relationTo: 'prior-period-adjustments';
-        value: number | PriorPeriodAdjustment;
-      } | null)
-    | ({
-        relationTo: 'rounding-adjustments';
-        value: number | RoundingAdjustment;
-      } | null)
-    | ({
-        relationTo: 'transaction-failures';
-        value: number | TransactionFailure;
-      } | null)
-    | ({
-        relationTo: 'fx-transactions';
-        value: number | FxTransaction;
-      } | null)
-    | ({
-        relationTo: 'payment-allocations';
-        value: number | PaymentAllocation;
-      } | null)
-    | ({
-        relationTo: 'bills-of-materials';
-        value: number | BillsOfMaterial;
-      } | null)
-    | ({
-        relationTo: 'work-orders';
-        value: number | WorkOrder;
-      } | null)
-    | ({
-        relationTo: 'production-receipts';
-        value: number | ProductionReceipt;
-      } | null)
-    | ({
-        relationTo: 'cost-variances';
-        value: number | CostVariance;
-      } | null)
-    | ({
-        relationTo: 'quality-inspections';
-        value: number | QualityInspection;
-      } | null)
-    | ({
-        relationTo: 'carriers';
-        value: number | Carrier;
-      } | null)
-    | ({
-        relationTo: 'tracking-events';
-        value: number | TrackingEvent;
-      } | null)
-    | ({
-        relationTo: 'customs-declarations';
-        value: number | CustomsDeclaration;
-      } | null)
-    | ({
-        relationTo: 'usage-records';
-        value: number | UsageRecord;
-      } | null)
-    | ({
-        relationTo: 'ai-suggestions';
-        value: number | AiSuggestion;
-      } | null)
-    | ({
-        relationTo: 'legal-entities';
-        value: number | LegalEntity;
-      } | null)
-    | ({
-        relationTo: 'projects';
-        value: number | Project;
-      } | null)
-    | ({
-        relationTo: 'project-tasks';
-        value: number | ProjectTask;
-      } | null)
-    | ({
-        relationTo: 'project-milestones';
-        value: number | ProjectMilestone;
-      } | null)
-    | ({
-        relationTo: 'wip-snapshots';
-        value: number | WipSnapshot;
-      } | null)
-    | ({
-        relationTo: 'recurring-journals';
-        value: number | RecurringJournal;
-      } | null)
-    | ({
-        relationTo: 'provisions';
-        value: number | Provision;
-      } | null)
-    | ({
-        relationTo: 'commitments-and-contingencies';
-        value: number | CommitmentsAndContingency;
-      } | null)
-    | ({
-        relationTo: 'government-grants';
-        value: number | GovernmentGrant;
-      } | null)
-    | ({
-        relationTo: 'csrd-disclosures';
-        value: number | CsrdDisclosure;
-      } | null)
-    | ({
-        relationTo: 'carbon-emissions';
-        value: number | CarbonEmission;
-      } | null)
-    | ({
-        relationTo: 'transfer-pricing-files';
-        value: number | TransferPricingFile;
-      } | null)
-    | ({
-        relationTo: 'lease-modifications';
-        value: number | LeaseModification;
-      } | null)
-    | ({
-        relationTo: 'leads';
-        value: number | Lead;
-      } | null)
-    | ({
-        relationTo: 'customer-segments';
-        value: number | CustomerSegment;
-      } | null)
-    | ({
-        relationTo: 'opportunities';
-        value: number | Opportunity;
-      } | null)
-    | ({
-        relationTo: 'activities';
-        value: number | Activity;
-      } | null)
-    | ({
-        relationTo: 'sales-commissions';
-        value: number | SalesCommission;
-      } | null)
-    | ({
-        relationTo: 'purchase-requisitions';
-        value: number | PurchaseRequisition;
-      } | null)
-    | ({
-        relationTo: 'vendor-quotes';
-        value: number | VendorQuote;
-      } | null)
-    | ({
-        relationTo: 'vendor-scorecards';
-        value: number | VendorScorecard;
-      } | null)
-    | ({
-        relationTo: 'job-positions';
-        value: number | JobPosition;
-      } | null)
-    | ({
-        relationTo: 'recruiting-pipeline';
-        value: number | RecruitingPipeline;
-      } | null)
-    | ({
-        relationTo: 'performance-reviews';
-        value: number | PerformanceReview;
-      } | null)
-    | ({
-        relationTo: 'expense-reports';
-        value: number | ExpenseReport;
-      } | null)
-    | ({
-        relationTo: 'leave-requests';
-        value: number | LeaveRequest;
-      } | null)
-    | ({
-        relationTo: 'workflow-definitions';
-        value: number | WorkflowDefinition;
-      } | null)
-    | ({
-        relationTo: 'workflow-instances';
-        value: number | WorkflowInstance;
-      } | null)
-    | ({
-        relationTo: 'properties';
-        value: number | Property;
-      } | null)
-    | ({
-        relationTo: 'spaces';
-        value: number | Space;
-      } | null)
-    | ({
-        relationTo: 'bookable-resources';
-        value: number | BookableResource;
-      } | null)
-    | ({
-        relationTo: 'bookings';
-        value: number | Booking;
-      } | null)
-    | ({
-        relationTo: 'consignment-arrangements';
-        value: number | ConsignmentArrangement;
-      } | null)
-    | ({
-        relationTo: 'consignment-inventory';
-        value: number | ConsignmentInventory;
-      } | null)
-    | ({
-        relationTo: 'consignment-sales';
-        value: number | ConsignmentSale;
-      } | null)
-    | ({
-        relationTo: 'maintenance-requests';
-        value: number | MaintenanceRequest;
-      } | null)
-    | ({
-        relationTo: 'maintenance-work-orders';
-        value: number | MaintenanceWorkOrder;
-      } | null)
-    | ({
-        relationTo: 'fair-value-measurements';
-        value: number | FairValueMeasurement;
-      } | null)
-    | ({
-        relationTo: 'deferred-tax-items';
-        value: number | DeferredTaxItem;
-      } | null)
-    | ({
-        relationTo: 'share-based-payments';
-        value: number | ShareBasedPayment;
-      } | null)
-    | ({
-        relationTo: 'business-combinations';
-        value: number | BusinessCombination;
-      } | null)
-    | ({
-        relationTo: 'investment-properties';
-        value: number | InvestmentProperty;
-      } | null)
-    | ({
-        relationTo: 'biological-assets';
-        value: number | BiologicalAsset;
-      } | null)
-    | ({
-        relationTo: 'mineral-resource-assets';
-        value: number | MineralResourceAsset;
-      } | null)
-    | ({
-        relationTo: 'regulatory-deferral-accounts';
-        value: number | RegulatoryDeferralAccount;
-      } | null)
-    | ({
-        relationTo: 'insurance-contracts';
-        value: number | InsuranceContract;
-      } | null)
-    | ({
-        relationTo: 'held-for-sale-classifications';
-        value: number | HeldForSaleClassification;
-      } | null)
-    | ({
-        relationTo: 'earnings-per-share';
-        value: number | EarningsPerShare;
-      } | null)
-    | ({
-        relationTo: 'post-balance-sheet-events';
-        value: number | PostBalanceSheetEvent;
-      } | null)
-    | ({
-        relationTo: 'redirects';
-        value: number | Redirect;
-      } | null)
-    | ({
         relationTo: 'forms';
         value: number | Form;
       } | null)
     | ({
         relationTo: 'form-submissions';
         value: number | FormSubmission;
-      } | null)
-    | ({
-        relationTo: 'search';
-        value: number | Search;
       } | null)
     | ({
         relationTo: 'payload-mcp-api-keys';
@@ -13277,6 +16867,76 @@ export interface TenantsSelect<T extends boolean = true> {
   emailDefaultFromAddress?: T;
   emailDefaultFromName?: T;
   mcpApiKey?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  password?: T;
+  name?: T;
+  roles?: T;
+  username?: T;
+  tenants?:
+    | T
+    | {
+        tenant?: T;
+        roles?: T;
+        id?: T;
+      };
+  orders?: T;
+  cart?: T;
+  addresses?: T;
+  config?:
+    | T
+    | {
+        localization?:
+          | T
+          | {
+              defaultLocale?: T;
+              displayCurrency?: T;
+              dateFormat?: T;
+            };
+        features?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+  sessions?:
+    | T
+    | {
+        id?: T;
+        createdAt?: T;
+        expiresAt?: T;
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "roles_select".
+ */
+export interface RolesSelect<T extends boolean = true> {
+  name?: T;
+  binding?: T;
+  scopedCollection?: T;
+  resource?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "user-roles_select".
+ */
+export interface UserRolesSelect<T extends boolean = true> {
+  user?: T;
+  role?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -13574,194 +17234,10 @@ export interface CategoriesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "roles_select".
- */
-export interface RolesSelect<T extends boolean = true> {
-  name?: T;
-  binding?: T;
-  scopedCollection?: T;
-  resource?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "user_roles_select".
- */
-export interface UserRolesSelect<T extends boolean = true> {
-  user?: T;
-  role?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users_select".
- */
-export interface UsersSelect<T extends boolean = true> {
-  password?: T;
-  name?: T;
-  roles?: T;
-  username?: T;
-  tenants?:
-    | T
-    | {
-        tenant?: T;
-        roles?: T;
-        id?: T;
-      };
-  orders?: T;
-  cart?: T;
-  addresses?: T;
-  config?:
-    | T
-    | {
-        localization?:
-          | T
-          | {
-              defaultLocale?: T;
-              displayCurrency?: T;
-              dateFormat?: T;
-            };
-        features?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
-  sessions?:
-    | T
-    | {
-        id?: T;
-        createdAt?: T;
-        expiresAt?: T;
-      };
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptionPlans_select".
- */
-export interface SubscriptionPlansSelect<T extends boolean = true> {
-  name?: T;
-  slug?: T;
-  stripeProductId?: T;
-  stripePriceId?: T;
-  monthlyUSD?: T;
-  yearlyUSD?: T;
-  billingCycle?: T;
-  limits?: T;
-  isActive?: T;
-  description?: T;
-  sortOrder?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "subscriptions_select".
- */
-export interface SubscriptionsSelect<T extends boolean = true> {
-  tenant?: T;
-  plan?: T;
-  status?: T;
-  trialStartedAt?: T;
-  trialEndsAt?: T;
-  currentPeriodStart?: T;
-  currentPeriodEnd?: T;
-  stripeSubscriptionId?: T;
-  stripeCustomerId?: T;
-  cancelledAt?: T;
-  cancellationReason?: T;
-  pausedAt?: T;
-  resumeAt?: T;
-  lastStatusChange?: T;
-  lastStatusChangeReason?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "items_select".
- */
-export interface ItemsSelect<T extends boolean = true> {
-  code?: T;
-  sku?: T;
-  barcode?: T;
-  address?: T;
-  pricing?:
-    | T
-    | {
-        price?: T;
-        cost?: T;
-        compareAtPrice?: T;
-        vendorPrice?: T;
-        minPrice?: T;
-        currencyCode?: T;
-        priceIncludesTax?: T;
-      };
-  taxation?:
-    | T
-    | {
-        taxable?: T;
-        taxRate?: T;
-        taxDebitAccount?: T;
-        taxCreditAccount?: T;
-      };
-  ledger?:
-    | T
-    | {
-        debitAccount?: T;
-        creditAccount?: T;
-      };
-  inventory?:
-    | T
-    | {
-        inventoryQuantity?: T;
-        inventoryManagement?: T;
-        inventoryPolicy?: T;
-      };
-  physical?:
-    | T
-    | {
-        weight?: T;
-        weightUnit?: T;
-        grams?: T;
-        hsCode?: T;
-        requiresShipping?: T;
-      };
-  discounts?:
-    | T
-    | {
-        maxDiscountRate?: T;
-        minProfitRate?: T;
-        maxProfitRate?: T;
-      };
-  fulfillment?:
-    | T
-    | {
-        fulfillmentService?: T;
-        period?: T;
-      };
-  visibility?:
-    | T
-    | {
-        visibility?: T;
-      };
-  metadata?: T;
-  tenant?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "invoices_select".
  */
 export interface InvoicesSelect<T extends boolean = true> {
+  tenant?: T;
   typeStatus?:
     | T
     | {
@@ -13870,15 +17346,15 @@ export interface InvoicesSelect<T extends boolean = true> {
       };
   test?: T;
   metadata?: T;
-  tenant?: T;
   updatedAt?: T;
   createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "invoiceLines_select".
+ * via the `definition` "invoice-lines_select".
  */
 export interface InvoiceLinesSelect<T extends boolean = true> {
+  tenant?: T;
   invoice?: T;
   code?: T;
   description?: T;
@@ -13965,13 +17441,12 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
         giftCard?: T;
       };
   metadata?: T;
-  tenant?: T;
   updatedAt?: T;
   createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "paymentMethods_select".
+ * via the `definition` "payment-methods_select".
  */
 export interface PaymentMethodsSelect<T extends boolean = true> {
   tenant?: T;
@@ -13995,6 +17470,7 @@ export interface PaymentMethodsSelect<T extends boolean = true> {
  * via the `definition` "payments_select".
  */
 export interface PaymentsSelect<T extends boolean = true> {
+  tenant?: T;
   transactionNumber?: T;
   paymentKind?: T;
   status?: T;
@@ -14032,7 +17508,5899 @@ export interface PaymentsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscription-plans_select".
+ */
+export interface SubscriptionPlansSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  stripeProductId?: T;
+  stripePriceId?: T;
+  monthlyUSD?: T;
+  yearlyUSD?: T;
+  billingCycle?: T;
+  limits?: T;
+  isActive?: T;
+  description?: T;
+  sortOrder?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "subscriptions_select".
+ */
+export interface SubscriptionsSelect<T extends boolean = true> {
   tenant?: T;
+  plan?: T;
+  status?: T;
+  trialStartedAt?: T;
+  trialEndsAt?: T;
+  currentPeriodStart?: T;
+  currentPeriodEnd?: T;
+  stripeSubscriptionId?: T;
+  stripeCustomerId?: T;
+  cancelledAt?: T;
+  cancellationReason?: T;
+  pausedAt?: T;
+  resumeAt?: T;
+  lastStatusChange?: T;
+  lastStatusChangeReason?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "items_select".
+ */
+export interface ItemsSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  sku?: T;
+  barcode?: T;
+  address?: T;
+  pricing?:
+    | T
+    | {
+        price?: T;
+        cost?: T;
+        compareAtPrice?: T;
+        vendorPrice?: T;
+        minPrice?: T;
+        currencyCode?: T;
+        priceIncludesTax?: T;
+      };
+  taxation?:
+    | T
+    | {
+        taxable?: T;
+        taxRate?: T;
+        taxDebitAccount?: T;
+        taxCreditAccount?: T;
+      };
+  ledger?:
+    | T
+    | {
+        debitAccount?: T;
+        creditAccount?: T;
+      };
+  inventory?:
+    | T
+    | {
+        inventoryQuantity?: T;
+        inventoryManagement?: T;
+        inventoryPolicy?: T;
+      };
+  physical?:
+    | T
+    | {
+        weight?: T;
+        weightUnit?: T;
+        grams?: T;
+        hsCode?: T;
+        requiresShipping?: T;
+      };
+  discounts?:
+    | T
+    | {
+        maxDiscountRate?: T;
+        minProfitRate?: T;
+        maxProfitRate?: T;
+      };
+  fulfillment?:
+    | T
+    | {
+        fulfillmentService?: T;
+        period?: T;
+      };
+  visibility?:
+    | T
+    | {
+        visibility?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gl-accounts_select".
+ */
+export interface GlAccountsSelect<T extends boolean = true> {
+  tenant?: T;
+  accountNumber?: T;
+  accountName?: T;
+  accountType?: T;
+  role?: T;
+  parentAccount?: T;
+  normalBalance?: T;
+  balance?: T;
+  balanceInBaseCurrency?: T;
+  currency?: T;
+  status?: T;
+  description?: T;
+  isTaxAccount?: T;
+  tags?:
+    | T
+    | {
+        tag?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gl-posting-rules_select".
+ */
+export interface GlPostingRulesSelect<T extends boolean = true> {
+  tenant?: T;
+  accountType?: T;
+  normalPolarity?: T;
+  balanceSheetCategory?: T;
+  requiresReconciliation?: T;
+  reconciliationFrequency?: T;
+  isCashFlowRelevant?: T;
+  closesAtPeriodEnd?: T;
+  relatedGLAccounts?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "journal-entries_select".
+ */
+export interface JournalEntriesSelect<T extends boolean = true> {
+  tenant?: T;
+  entryNumber?: T;
+  entryDate?: T;
+  postedDate?: T;
+  description?: T;
+  status?: T;
+  lines?:
+    | T
+    | {
+        lineNumber?: T;
+        glAccount?: T;
+        accountNumber?: T;
+        accountName?: T;
+        description?: T;
+        debit?: T;
+        credit?: T;
+        currency?: T;
+        exchangeRate?: T;
+        id?: T;
+      };
+  debitTotal?: T;
+  creditTotal?: T;
+  isBalanced?: T;
+  sourceType?: T;
+  sourceId?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gl-postings_select".
+ */
+export interface GlPostingsSelect<T extends boolean = true> {
+  tenant?: T;
+  postingId?: T;
+  sourceType?: T;
+  sourceId?: T;
+  sourceDate?: T;
+  journalEntry?: T;
+  status?: T;
+  postedDate?: T;
+  accountsAffected?:
+    | T
+    | {
+        glAccount?: T;
+        accountNumber?: T;
+        accountName?: T;
+        debitAmount?: T;
+        creditAmount?: T;
+        currency?: T;
+        id?: T;
+      };
+  totalDebits?: T;
+  totalCredits?: T;
+  errorMessage?: T;
+  reversalPostingId?: T;
+  metadata?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "period-locks_select".
+ */
+export interface PeriodLocksSelect<T extends boolean = true> {
+  tenant?: T;
+  periodLabel?: T;
+  fiscalYear?: T;
+  fiscalPeriod?: T;
+  periodType?: T;
+  periodStartDate?: T;
+  periodEndDate?: T;
+  lockStatus?: T;
+  closedBy?: T;
+  closedDate?: T;
+  closeReason?: T;
+  allowReversals?: T;
+  allowPriorPeriodAdjustments?: T;
+  requiresAdminOverride?: T;
+  relatedClosingEntries?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "closing-entries_select".
+ */
+export interface ClosingEntriesSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  closingEntryNumber?: T;
+  periodLock?: T;
+  fiscalPeriod?: T;
+  fiscalYear?: T;
+  fiscalPeriodNumber?: T;
+  periodLabel?: T;
+  regulatoryCode?: T;
+  closingDate?: T;
+  closingType?: T;
+  closedBy?: T;
+  approvedBy?: T;
+  closingEntries?:
+    | T
+    | {
+        sequenceNumber?: T;
+        journalEntryId?: T;
+        entryDescription?: T;
+        accountsClosed?: T;
+        netAmount?: T;
+        retainedEarningsImpact?: T;
+        posted?: T;
+        postedDate?: T;
+        reversingEntryId?: T;
+        notes?: T;
+        id?: T;
+      };
+  totalRevenuesClosed?: T;
+  totalExpensesClosed?: T;
+  netIncome?: T;
+  closingStatus?: T;
+  reversalEntriesGenerated?: T;
+  reversalGeneratedDate?: T;
+  governanceScope?: T;
+  chainLeafUuid?: T;
+  multiCurrencyReconciliation?: T;
+  auditTrail?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-statements_select".
+ */
+export interface BankStatementsSelect<T extends boolean = true> {
+  tenant?: T;
+  statementId?: T;
+  bankAccount?: T;
+  statementDate?: T;
+  statementPeriodStart?: T;
+  currency?: T;
+  openingBalance?: T;
+  closingBalance?: T;
+  transactions?:
+    | T
+    | {
+        transactionDate?: T;
+        amount?: T;
+        description?: T;
+        reference?: T;
+        balanceAfter?: T;
+        id?: T;
+      };
+  reconciliationStatus?: T;
+  matchedTransactions?:
+    | T
+    | {
+        bankStatementLineIndex?: T;
+        journalEntry?: T;
+        matchType?: T;
+        matchScore?: T;
+        varianceAmount?: T;
+        id?: T;
+      };
+  totalMatched?: T;
+  totalUnmatched?: T;
+  variance?: T;
+  reconciliationNotes?: T;
+  reconciliationDate?: T;
+  reconciliedBy?: T;
+  importSource?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-transactions_select".
+ */
+export interface BankTransactionsSelect<T extends boolean = true> {
+  tenant?: T;
+  externalId?: T;
+  accountServicerReference?: T;
+  endToEndId?: T;
+  bankAccount?: T;
+  statement?: T;
+  valueDate?: T;
+  bookingDate?: T;
+  amount?: T;
+  creditDebitIndicator?: T;
+  bookingStatus?: T;
+  currency?: T;
+  description?: T;
+  counterpartyName?: T;
+  counterpartyIban?: T;
+  counterpartyBic?: T;
+  reference?: T;
+  bankTransactionDomain?: T;
+  bankTransactionFamily?: T;
+  bankTransactionSubFamily?: T;
+  transactionCode?: T;
+  chargeBearer?: T;
+  matchStatus?: T;
+  matchedJournalEntries?:
+    | T
+    | {
+        journalEntry?: T;
+        matchedAmount?: T;
+        matchScore?: T;
+        id?: T;
+      };
+  matchedAt?: T;
+  matchedBy?: T;
+  status?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-accounts_select".
+ */
+export interface BankAccountsSelect<T extends boolean = true> {
+  tenant?: T;
+  accountName?: T;
+  iban?: T;
+  bic?: T;
+  accountNumber?: T;
+  routingNumber?: T;
+  institution?: T;
+  country?: T;
+  currency?: T;
+  glAccount?: T;
+  purpose?: T;
+  status?: T;
+  openedAt?: T;
+  closedAt?: T;
+  statements?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "account-reconciliations_select".
+ */
+export interface AccountReconciliationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reconciliationId?: T;
+  kind?: T;
+  glAccount?: T;
+  bankAccount?: T;
+  asOfDate?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  currency?: T;
+  balancePerExternal?: T;
+  balancePerGL?: T;
+  externalAdjustments?:
+    | T
+    | {
+        category?: T;
+        description?: T;
+        amount?: T;
+        originatedAt?: T;
+        agingBucket?: T;
+        bankTransaction?: T;
+        journalEntry?: T;
+        id?: T;
+      };
+  glAdjustments?:
+    | T
+    | {
+        category?: T;
+        description?: T;
+        amount?: T;
+        originatedAt?: T;
+        agingBucket?: T;
+        journalEntry?: T;
+        id?: T;
+      };
+  adjustedExternalBalance?: T;
+  adjustedGLBalance?: T;
+  difference?: T;
+  preparedBy?: T;
+  preparedAt?: T;
+  reviewedBy?: T;
+  reviewedAt?: T;
+  rejectionReason?: T;
+  status?: T;
+  sourceStatement?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bank-reconciliations_select".
+ */
+export interface BankReconciliationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  bankAccount?: T;
+  reconciliationDate?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  bankStatement?: T;
+  currency?: T;
+  bankStatementBalance?: T;
+  bookBalance?: T;
+  difference?: T;
+  reconcilingItems?:
+    | T
+    | {
+        kind?: T;
+        amount?: T;
+        description?: T;
+        reference?: T;
+        id?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "financial-statements_select".
+ */
+export interface FinancialStatementsSelect<T extends boolean = true> {
+  tenant?: T;
+  statementId?: T;
+  statementType?: T;
+  language?: T;
+  fiscalPeriodStart?: T;
+  fiscalPeriodEnd?: T;
+  currency?: T;
+  statementContent?: T;
+  financialRatios?:
+    | T
+    | {
+        ratioName?: T;
+        ratioValue?: T;
+        category?: T;
+        interpretation?: T;
+        id?: T;
+      };
+  comparativePeriod?: T;
+  comparativeData?: T;
+  notes?: T;
+  status?: T;
+  exportFormats?:
+    | T
+    | {
+        format?: T;
+        fileUrl?: T;
+        generatedAt?: T;
+        id?: T;
+      };
+  generatedAt?: T;
+  generatedBy?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "period-end-adjustments_select".
+ */
+export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  adjustmentId?: T;
+  adjustmentType?: T;
+  period?: T;
+  description?: T;
+  adjustmentAmount?: T;
+  debitAccount?: T;
+  creditAccount?: T;
+  journalEntry?: T;
+  status?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recurring-journals_select".
+ */
+export interface RecurringJournalsSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  description?: T;
+  recurrenceKind?: T;
+  frequency?: T;
+  rrule?: T;
+  startDate?: T;
+  endDate?: T;
+  nextRunDate?: T;
+  lastRunDate?: T;
+  lastRunJournalEntry?: T;
+  remainingRuns?: T;
+  currency?: T;
+  amount?: T;
+  amountFormula?: T;
+  lines?:
+    | T
+    | {
+        glAccount?: T;
+        side?: T;
+        amount?: T;
+        costCenter?: T;
+        project?: T;
+        memo?: T;
+        id?: T;
+      };
+  autoPost?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "prior-period-adjustments_select".
+ */
+export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  adjustmentDate?: T;
+  postDate?: T;
+  priorPeriod?: T;
+  reason?: T;
+  errorCategory?: T;
+  currency?: T;
+  amount?: T;
+  restatementJournalEntry?: T;
+  disclosureText?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "rounding-adjustments_select".
+ */
+export interface RoundingAdjustmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  adjustmentDate?: T;
+  fromCurrency?: T;
+  toCurrency?: T;
+  roundingAmount?: T;
+  rounding?:
+    | T
+    | {
+        roundingType?: T;
+        precisionUnit?: T;
+      };
+  reason?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-calculations_select".
+ */
+export interface TaxCalculationsSelect<T extends boolean = true> {
+  tenant?: T;
+  calculationId?: T;
+  taxType?: T;
+  jurisdiction?: T;
+  period?: T;
+  taxRate?: T;
+  grossAmount?: T;
+  taxableAmount?: T;
+  taxAmount?: T;
+  netAmount?: T;
+  taxPayableAccount?: T;
+  taxExpenseAccount?: T;
+  journalEntry?: T;
+  status?: T;
+  filingDeadline?: T;
+  paymentDeadline?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-codes_select".
+ */
+export interface TaxCodesSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  label?: T;
+  identity?:
+    | T
+    | {
+        description?: T;
+      };
+  classification?:
+    | T
+    | {
+        taxType?: T;
+        categoryCode?: T;
+        jurisdiction?: T;
+      };
+  rate?:
+    | T
+    | {
+        ratePercent?: T;
+        compoundedOn?: T;
+        reverseChargeEligible?: T;
+        recoverable?: T;
+      };
+  validity?:
+    | T
+    | {
+        effectiveFrom?: T;
+        effectiveTo?: T;
+        isActive?: T;
+      };
+  ledger?:
+    | T
+    | {
+        defaultCollectionAccount?: T;
+        defaultRemittanceAccount?: T;
+        defaultExpenseAccount?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-jurisdictions_select".
+ */
+export interface TaxJurisdictionsSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  authorityName?: T;
+  geography?:
+    | T
+    | {
+        country?: T;
+        region?: T;
+        level?: T;
+      };
+  registration?:
+    | T
+    | {
+        registrationNumber?: T;
+        registrationDate?: T;
+        deregistrationDate?: T;
+      };
+  filing?:
+    | T
+    | {
+        filingFrequency?: T;
+        filingDueDayOfMonth?: T;
+        currency?: T;
+      };
+  notes?:
+    | T
+    | {
+        note?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-returns_select".
+ */
+export interface TaxReturnsSelect<T extends boolean = true> {
+  tenant?: T;
+  returnId?: T;
+  returnType?: T;
+  jurisdiction?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  taxableSales?: T;
+  taxableAcquisitions?: T;
+  outputTax?: T;
+  inputTax?: T;
+  netLiability?: T;
+  currency?: T;
+  taxCalculations?: T;
+  status?: T;
+  filedAt?: T;
+  filedBy?: T;
+  authorityReference?: T;
+  paidAt?: T;
+  attachments?:
+    | T
+    | {
+        media?: T;
+        id?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "currency-rates_select".
+ */
+export interface CurrencyRatesSelect<T extends boolean = true> {
+  tenant?: T;
+  rateId?: T;
+  fromCurrency?: T;
+  toCurrency?: T;
+  rate?: T;
+  rateDate?: T;
+  source?: T;
+  inverse?: T;
+  midMarketRate?: T;
+  bidRate?: T;
+  askRate?: T;
+  isActive?: T;
+  usedInTransactions?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-periods_select".
+ */
+export interface FiscalPeriodsSelect<T extends boolean = true> {
+  tenant?: T;
+  label?: T;
+  identity?:
+    | T
+    | {
+        fiscalYear?: T;
+        periodNumber?: T;
+        periodType?: T;
+      };
+  dates?:
+    | T
+    | {
+        startDate?: T;
+        endDate?: T;
+      };
+  lifecycle?:
+    | T
+    | {
+        status?: T;
+        closedAt?: T;
+        closedBy?: T;
+        lockedAt?: T;
+        lockedBy?: T;
+        reopenedAt?: T;
+        reopenedBy?: T;
+      };
+  notes?:
+    | T
+    | {
+        note?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-calendars_select".
+ */
+export interface FiscalCalendarsSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  calendarDate?: T;
+  fiscalYear?: T;
+  fiscalPeriod?: T;
+  periodStartDate?: T;
+  periodEndDate?: T;
+  periodLabel?: T;
+  weekNumber?: T;
+  quarterNumber?: T;
+  monthNumber?: T;
+  dayOfWeek?: T;
+  isLeapAdjusted?: T;
+  regulatoryCode?: T;
+  generatedFrom?: T;
+  chainLeafUuid?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-period-snapshots_select".
+ */
+export interface FiscalPeriodSnapshotsSelect<T extends boolean = true> {
+  tenant?: T;
+  fiscalPeriods?: T;
+  snapshotLabel?: T;
+  eventType?: T;
+  snapshotData?: T;
+  priorSnapshot?: T;
+  changes?: T;
+  triggeredBy?: T;
+  triggeredAt?: T;
+  reason?: T;
+  signedUuid?: T;
+  auditTrail?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fixed-assets_select".
+ */
+export interface FixedAssetsSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  assetNumber?: T;
+  description?: T;
+  assetCategory?: T;
+  acquisitionDate?: T;
+  assetCost?: T;
+  currency?: T;
+  supplier?: T;
+  purchaseOrder?: T;
+  location?: T;
+  serialNumber?: T;
+  barcode?: T;
+  depreciationMethod?: T;
+  usefulLifeYears?: T;
+  residualValue?: T;
+  depreciableBase?: T;
+  annualDepreciationAmount?: T;
+  accumulatedDepreciation?: T;
+  bookValue?: T;
+  depreciationStartDate?: T;
+  lastDepreciationDate?: T;
+  totalUnitsExpected?: T;
+  unitsProducedToDate?: T;
+  assetAccount?: T;
+  accumulatedDepreciationAccount?: T;
+  depreciationExpenseAccount?: T;
+  status?: T;
+  disposalDate?: T;
+  disposalProceeds?: T;
+  gainOnDisposal?: T;
+  lastMaintenanceDate?: T;
+  nextMaintenanceDate?: T;
+  maintenanceNotes?: T;
+  notes?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "depreciation-schedules_select".
+ */
+export interface DepreciationSchedulesSelect<T extends boolean = true> {
+  tenant?: T;
+  scheduleId?: T;
+  fixedAsset?: T;
+  periodEnd?: T;
+  periodStart?: T;
+  depreciationAmount?: T;
+  accumulatedAfter?: T;
+  bookValueAfter?: T;
+  currency?: T;
+  method?: T;
+  status?: T;
+  postedAt?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "customers_select".
+ */
+export interface CustomersSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  country?: T;
+  identity?:
+    | T
+    | {
+        legalName?: T;
+        customerType?: T;
+        status?: T;
+      };
+  contact?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+        website?: T;
+      };
+  addresses?:
+    | T
+    | {
+        addresses?: T;
+        billingAddress?: T;
+        shippingAddress?: T;
+      };
+  tax?:
+    | T
+    | {
+        vatNumber?: T;
+        vatNumberType?: T;
+        taxExempt?: T;
+        taxExemptionCertificate?: T;
+        defaultTaxCode?: T;
+      };
+  commercial?:
+    | T
+    | {
+        paymentTerms?: T;
+        paymentTermsDays?: T;
+        creditLimit?: T;
+        creditCurrency?: T;
+        defaultCurrency?: T;
+        defaultLocale?: T;
+        priceList?: T;
+      };
+  ledger?:
+    | T
+    | {
+        defaultReceivableAccount?: T;
+        defaultRevenueAccount?: T;
+        defaultDiscountAccount?: T;
+      };
+  notes?:
+    | T
+    | {
+        note?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leads_select".
+ */
+export interface LeadsSelect<T extends boolean = true> {
+  tenant?: T;
+  fullName?: T;
+  firstName?: T;
+  lastName?: T;
+  jobTitle?: T;
+  companyName?: T;
+  email?: T;
+  phone?: T;
+  website?: T;
+  industry?: T;
+  companySize?: T;
+  countryCode?: T;
+  preferredLanguage?: T;
+  leadSource?: T;
+  campaign?: T;
+  leadScore?: T;
+  estimatedValue?: T;
+  estimatedCloseDate?: T;
+  assignedTo?: T;
+  convertedOpportunity?: T;
+  convertedCustomer?: T;
+  convertedAt?: T;
+  consentRecord?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "opportunities_select".
+ */
+export interface OpportunitiesSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  lead?: T;
+  customer?: T;
+  opportunityOwner?: T;
+  stage?: T;
+  probability?: T;
+  currency?: T;
+  amount?: T;
+  weightedAmount?: T;
+  expectedCloseDate?: T;
+  actualCloseDate?: T;
+  closeReason?: T;
+  competitor?: T;
+  forecastCategory?: T;
+  segment?: T;
+  campaign?: T;
+  contractCreated?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "customer-segments_select".
+ */
+export interface CustomerSegmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  description?: T;
+  segmentType?: T;
+  criteria?: T;
+  priorityRank?: T;
+  discountPercent?: T;
+  paymentTermDays?: T;
+  creditLimit?: T;
+  pricingTier?: T;
+  isPortfolioForIfrs15?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "quotes_select".
+ */
+export interface QuotesSelect<T extends boolean = true> {
+  tenant?: T;
+  quoteNumber?: T;
+  customer?: T;
+  issuedAt?: T;
+  expiresAt?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        description?: T;
+        quantity?: T;
+        unitPrice?: T;
+        lineTotal?: T;
+        id?: T;
+      };
+  subtotal?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  currency?: T;
+  status?: T;
+  sentAt?: T;
+  acceptedAt?: T;
+  convertedToOrder?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sales-orders_select".
+ */
+export interface SalesOrdersSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  orderNumber?: T;
+  customer?: T;
+  customerOrderReference?: T;
+  quote?: T;
+  contract?: T;
+  orderDate?: T;
+  requestedDeliveryDate?: T;
+  promisedDeliveryDate?: T;
+  shippingAddress?: T;
+  billingAddress?: T;
+  currency?: T;
+  subTotalAmount?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  lines?:
+    | T
+    | {
+        lineNumber?: T;
+        item?: T;
+        description?: T;
+        quantity?: T;
+        unitOfMeasure?: T;
+        unitPrice?: T;
+        lineNet?: T;
+        taxCategory?: T;
+        discount?: T;
+        requestedDeliveryDate?: T;
+        id?: T;
+      };
+  fulfilledQuantity?: T;
+  invoicedAmount?: T;
+  cancellationDate?: T;
+  cancellationReason?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sales-commissions_select".
+ */
+export interface SalesCommissionsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  salesperson?: T;
+  employee?: T;
+  opportunity?: T;
+  contract?: T;
+  customer?: T;
+  closedWonDate?: T;
+  currency?: T;
+  commissionRule?:
+    | T
+    | {
+        planName?: T;
+        ratePercent?: T;
+        tieredOverride?: T;
+      };
+  contractValue?: T;
+  commissionAmount?: T;
+  recognitionTreatment?: T;
+  amortisationPeriodMonths?: T;
+  amortisedToDate?: T;
+  capitalisedAssetBalance?: T;
+  paymentStatus?: T;
+  paymentDate?: T;
+  paidViaPayrollRun?: T;
+  clawbackProvision?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "credit-memos_select".
+ */
+export interface CreditMemosSelect<T extends boolean = true> {
+  tenant?: T;
+  memoNumber?: T;
+  customer?: T;
+  invoice?: T;
+  reason?: T;
+  reasonDetail?: T;
+  amount?: T;
+  currency?: T;
+  status?: T;
+  issuedAt?: T;
+  appliedAt?: T;
+  settledAt?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "returns_select".
+ */
+export interface ReturnsSelect<T extends boolean = true> {
+  tenant?: T;
+  rmaNumber?: T;
+  order?: T;
+  customer?: T;
+  reason?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        quantityReturned?: T;
+        restock?: T;
+        id?: T;
+      };
+  status?: T;
+  authorisedAt?: T;
+  receivedAt?: T;
+  restockedAt?: T;
+  creditMemo?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shipments_select".
+ */
+export interface ShipmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  shipmentNumber?: T;
+  order?: T;
+  shipFromAddress?: T;
+  shipToAddress?: T;
+  carrier?: T;
+  trackingNumber?: T;
+  trackingUrl?: T;
+  shippingCost?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        quantity?: T;
+        id?: T;
+      };
+  status?: T;
+  shippedAt?: T;
+  deliveredAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "refunds_select".
+ */
+export interface RefundsSelect<T extends boolean = true> {
+  tenant?: T;
+  refundNumber?: T;
+  creditMemo?: T;
+  invoice?: T;
+  order?: T;
+  amount?: T;
+  currency?: T;
+  method?: T;
+  stripeRefundId?: T;
+  status?: T;
+  refundedAt?: T;
+  settledAt?: T;
+  failureReason?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-allocations_select".
+ */
+export interface PaymentAllocationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  payment?: T;
+  targetType?: T;
+  invoice?: T;
+  allocationDate?: T;
+  allocatedAmount?: T;
+  allocatedFx?: T;
+  isFullySettling?: T;
+  allocatedBy?: T;
+  allocationKind?: T;
+  reverseOf?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "dunning-cycles_select".
+ */
+export interface DunningCyclesSelect<T extends boolean = true> {
+  tenant?: T;
+  cycleId?: T;
+  invoice?: T;
+  customer?: T;
+  currency?: T;
+  amountOverdue?: T;
+  invoiceDueDate?: T;
+  daysPastDue?: T;
+  currentStage?: T;
+  currentStageEnteredAt?: T;
+  nextActionDate?: T;
+  history?:
+    | T
+    | {
+        stage?: T;
+        enteredAt?: T;
+        amountOverdueAtEntry?: T;
+        communicationSent?: T;
+        communicationReference?: T;
+        notes?: T;
+        id?: T;
+      };
+  paused?: T;
+  pauseReason?: T;
+  paymentPlanRef?: T;
+  eclProvision?: T;
+  writeOffJournalEntry?: T;
+  status?: T;
+  resolvedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vendors_select".
+ */
+export interface VendorsSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  country?: T;
+  identity?:
+    | T
+    | {
+        legalName?: T;
+        vendorType?: T;
+        status?: T;
+      };
+  contact?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+        website?: T;
+      };
+  addresses?:
+    | T
+    | {
+        addresses?: T;
+        remitToAddress?: T;
+      };
+  tax?:
+    | T
+    | {
+        vatNumber?: T;
+        vatNumberType?: T;
+        taxExempt?: T;
+        defaultTaxCode?: T;
+        vendor1099Eligible?: T;
+        tax1099FormType?: T;
+        taxIdType?: T;
+        withholdingRate?: T;
+      };
+  commercial?:
+    | T
+    | {
+        paymentTerms?: T;
+        paymentTermsDays?: T;
+        preferredPaymentMethod?: T;
+        defaultCurrency?: T;
+        defaultLocale?: T;
+      };
+  bank?:
+    | T
+    | {
+        bankAccountName?: T;
+        bankName?: T;
+        bankRoutingNumber?: T;
+        bankAccountNumber?: T;
+        bankIban?: T;
+        bankSwiftBic?: T;
+        bankCountryCode?: T;
+      };
+  ledger?:
+    | T
+    | {
+        defaultPayableAccount?: T;
+        defaultExpenseAccount?: T;
+        defaultWithholdingAccount?: T;
+      };
+  notes?:
+    | T
+    | {
+        note?: T;
+      };
+  metadata?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vendor-quotes_select".
+ */
+export interface VendorQuotesSelect<T extends boolean = true> {
+  tenant?: T;
+  quoteNumber?: T;
+  vendor?: T;
+  requisition?: T;
+  rfqIssuedDate?: T;
+  quoteReceivedDate?: T;
+  validUntil?: T;
+  lines?:
+    | T
+    | {
+        description?: T;
+        item?: T;
+        quantity?: T;
+        uom?: T;
+        unitPrice?: T;
+        lineTotal?: T;
+        leadTimeDays?: T;
+        id?: T;
+      };
+  currency?: T;
+  subtotal?: T;
+  taxAmount?: T;
+  shippingAmount?: T;
+  discountAmount?: T;
+  totalAmount?: T;
+  paymentTerms?: T;
+  incoterms?: T;
+  deliveryDate?: T;
+  isAwarded?: T;
+  awardedDate?: T;
+  awardedBy?: T;
+  awardRationale?: T;
+  createdPurchaseOrder?: T;
+  qualityAssessment?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "vendor-scorecards_select".
+ */
+export interface VendorScorecardsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  vendor?: T;
+  periodLabel?: T;
+  periodStartDate?: T;
+  periodEndDate?: T;
+  evaluator?: T;
+  metrics?:
+    | T
+    | {
+        onTimeDeliveryPercent?: T;
+        qualityAcceptanceRate?: T;
+        priceAccuracyPercent?: T;
+        responseTimeAvgHours?: T;
+        returnRatePercent?: T;
+        sustainabilityScore?: T;
+        cybersecurityScore?: T;
+      };
+  volumes?:
+    | T
+    | {
+        totalSpend?: T;
+        numberOfPurchaseOrders?: T;
+        numberOfReceipts?: T;
+        numberOfNonconformances?: T;
+        numberOfReturns?: T;
+      };
+  overallScore?: T;
+  recommendation?: T;
+  improvementPlan?: T;
+  reviewedWithVendor?: T;
+  reviewMeetingDate?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "purchase-orders_select".
+ */
+export interface PurchaseOrdersSelect<T extends boolean = true> {
+  tenant?: T;
+  poNumber?: T;
+  vendor?: T;
+  orderDate?: T;
+  expectedDeliveryDate?: T;
+  deliveryTerms?: T;
+  incotermsLocation?: T;
+  lines?:
+    | T
+    | {
+        lineNumber?: T;
+        item?: T;
+        description?: T;
+        quantity?: T;
+        unitPrice?: T;
+        lineTotal?: T;
+        glAccount?: T;
+        quantityReceived?: T;
+        id?: T;
+      };
+  subtotal?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  currency?: T;
+  status?: T;
+  submittedAt?: T;
+  sentAt?: T;
+  closedAt?: T;
+  receipts?: T;
+  invoice?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "purchase-requisitions_select".
+ */
+export interface PurchaseRequisitionsSelect<T extends boolean = true> {
+  tenant?: T;
+  requisitionNumber?: T;
+  requisitioner?: T;
+  department?: T;
+  costCenter?: T;
+  project?: T;
+  requestedDate?: T;
+  requiredByDate?: T;
+  businessJustification?: T;
+  lines?:
+    | T
+    | {
+        description?: T;
+        item?: T;
+        quantity?: T;
+        uom?: T;
+        estimatedUnitPrice?: T;
+        estimatedAmount?: T;
+        glAccount?: T;
+        preferredVendor?: T;
+        id?: T;
+      };
+  currency?: T;
+  estimatedTotal?: T;
+  priority?: T;
+  requiresQuotes?: T;
+  minimumQuotesRequired?: T;
+  approvalChain?:
+    | T
+    | {
+        step?: T;
+        approver?: T;
+        role?: T;
+        decision?: T;
+        decidedAt?: T;
+        comment?: T;
+        id?: T;
+      };
+  createdPurchaseOrder?: T;
+  awardedQuote?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-receipts_select".
+ */
+export interface GoodsReceiptsSelect<T extends boolean = true> {
+  tenant?: T;
+  receiptNumber?: T;
+  purchaseOrder?: T;
+  receivedDate?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        description?: T;
+        quantityReceived?: T;
+        quantityDamaged?: T;
+        condition?: T;
+        id?: T;
+      };
+  status?: T;
+  inspectedAt?: T;
+  inspectedBy?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inventory-movements_select".
+ */
+export interface InventoryMovementsSelect<T extends boolean = true> {
+  tenant?: T;
+  movementId?: T;
+  kind?: T;
+  item?: T;
+  lotOrSerial?: T;
+  quantity?: T;
+  unitCost?: T;
+  extendedCost?: T;
+  valuationMethod?: T;
+  currency?: T;
+  fromLocation?: T;
+  toLocation?: T;
+  movementAt?: T;
+  sourceDocumentType?: T;
+  sourceDocumentId?: T;
+  journalEntry?: T;
+  status?: T;
+  postedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "warehouse-locations_select".
+ */
+export interface WarehouseLocationsSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  type?: T;
+  address?: T;
+  country?: T;
+  region?: T;
+  glAccount?: T;
+  bins?:
+    | T
+    | {
+        binCode?: T;
+        description?: T;
+        id?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-centers_select".
+ */
+export interface CostCentersSelect<T extends boolean = true> {
+  tenant?: T;
+  costCenterCode?: T;
+  name?: T;
+  kind?: T;
+  parent?: T;
+  country?: T;
+  manager?: T;
+  reportableSegment?: T;
+  allowsRevenue?: T;
+  allowsExpense?: T;
+  allowsCapex?: T;
+  allocationRules?:
+    | T
+    | {
+        targetCostCenter?: T;
+        basis?: T;
+        percentage?: T;
+        id?: T;
+      };
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "budget-planning_select".
+ */
+export interface BudgetPlanningSelect<T extends boolean = true> {
+  tenant?: T;
+  budgetId?: T;
+  fiscalYear?: T;
+  department?: T;
+  budgetPeriod?: T;
+  budgetLineItems?:
+    | T
+    | {
+        glAccount?: T;
+        accountNumber?: T;
+        accountName?: T;
+        accountType?: T;
+        budgetAmount?: T;
+        notes?: T;
+        id?: T;
+      };
+  totalBudget?: T;
+  currency?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cost-variances_select".
+ */
+export interface CostVariancesSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  workOrder?: T;
+  varianceDate?: T;
+  currency?: T;
+  variances?:
+    | T
+    | {
+        materialPriceVariance?: T;
+        materialQuantityVariance?: T;
+        labourRateVariance?: T;
+        labourEfficiencyVariance?: T;
+        overheadSpendingVariance?: T;
+        overheadVolumeVariance?: T;
+      };
+  totalVariance?: T;
+  disposition?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "intercompany-transactions_select".
+ */
+export interface IntercompanyTransactionsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  fromTenant?: T;
+  toTenant?: T;
+  fromLegalEntity?: T;
+  toLegalEntity?: T;
+  transactionDate?: T;
+  pairKind?: T;
+  currency?: T;
+  debitAmount?: T;
+  creditAmount?: T;
+  fromJournalEntry?: T;
+  toJournalEntry?: T;
+  transferPricingDoc?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consolidation-eliminations_select".
+ */
+export interface ConsolidationEliminationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  consolidationDate?: T;
+  eliminationType?: T;
+  currency?: T;
+  debitAmount?: T;
+  creditAmount?: T;
+  subsidiaries?:
+    | T
+    | {
+        role?: T;
+        id?: T;
+      };
+  sourceJournalEntry?: T;
+  sourceIntercompany?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fx-transactions_select".
+ */
+export interface FxTransactionsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  transactionDate?: T;
+  transactionKind?: T;
+  fromCurrency?: T;
+  toCurrency?: T;
+  fromAmount?: T;
+  exchangeRate?: T;
+  toAmount?: T;
+  fxGainLoss?: T;
+  currencyRate?: T;
+  journalEntry?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  description?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contracts_select".
+ */
+export interface ContractsSelect<T extends boolean = true> {
+  tenant?: T;
+  contractNumber?: T;
+  customer?: T;
+  title?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  totalValue?: T;
+  currency?: T;
+  transactionPriceFixed?: T;
+  transactionPriceVariable?: T;
+  variableConsiderationMethod?: T;
+  financingComponent?: T;
+  combinedWithContracts?: T;
+  paymentTerms?: T;
+  performanceObligations?: T;
+  modifications?:
+    | T
+    | {
+        modifiedAt?: T;
+        description?: T;
+        priceImpact?: T;
+        modifiedBy?: T;
+        id?: T;
+      };
+  status?: T;
+  activatedAt?: T;
+  terminatedAt?: T;
+  subscription?: T;
+  zkod?:
+    | T
+    | {
+        zkodContractNumber?: T;
+        zkodNotarized?: T;
+        mandatoryArbitrationClause?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-obligations_select".
+ */
+export interface PerformanceObligationsSelect<T extends boolean = true> {
+  tenant?: T;
+  contract?: T;
+  description?: T;
+  kind?: T;
+  recognitionTiming?: T;
+  overTimeMeasurement?: T;
+  measurementKind?: T;
+  recognitionMethod?: T;
+  standaloneSellingPrice?: T;
+  currency?: T;
+  allocatedAmount?: T;
+  recognisedToDate?: T;
+  percentComplete?: T;
+  status?: T;
+  satisfiedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "commitments-and-contingencies_select".
+ */
+export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  description?: T;
+  kind?: T;
+  category?: T;
+  legalEntity?: T;
+  counterparty?: T;
+  inceptionDate?: T;
+  expectedResolutionDate?: T;
+  likelihood?: T;
+  currency?: T;
+  maximumExposure?: T;
+  expectedOutflow?: T;
+  reimbursementExpected?: T;
+  isOnerousContractRelated?: T;
+  recognisedAsProvision?: T;
+  noteText?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leases_select".
+ */
+export interface LeasesSelect<T extends boolean = true> {
+  tenant?: T;
+  leaseNumber?: T;
+  description?: T;
+  lessor?: T;
+  classification?: T;
+  underlyingAssetCategory?: T;
+  commencementDate?: T;
+  endDate?: T;
+  leaseTermMonths?: T;
+  fixedPayment?: T;
+  paymentFrequency?: T;
+  paymentTiming?: T;
+  variablePaymentNotes?: T;
+  residualValueGuarantee?: T;
+  terminationPenalty?: T;
+  discountRateBasis?: T;
+  discountRatePercent?: T;
+  currency?: T;
+  initialLeaseLiability?: T;
+  initialDirectCosts?: T;
+  leaseIncentivesReceived?: T;
+  prepaidRent?: T;
+  initialRouAsset?: T;
+  rouAssetCarrying?: T;
+  liabilityCarrying?: T;
+  lastPostingDate?: T;
+  modifications?:
+    | T
+    | {
+        effectiveDate?: T;
+        kind?: T;
+        newDiscountRatePercent?: T;
+        newFixedPayment?: T;
+        newEndDate?: T;
+        notes?: T;
+        id?: T;
+      };
+  impairmentReserve?: T;
+  status?: T;
+  terminationDate?: T;
+  rouAssetAccount?: T;
+  leaseLiabilityAccount?: T;
+  rouAmortizationAccount?: T;
+  interestExpenseAccount?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lease-modifications_select".
+ */
+export interface LeaseModificationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  lease?: T;
+  modificationDate?: T;
+  agreementSignedDate?: T;
+  period?: T;
+  modificationKind?: T;
+  classification?: T;
+  currency?: T;
+  preModification?:
+    | T
+    | {
+        remainingTermMonths?: T;
+        discountRate?: T;
+        liabilityCarryingAmount?: T;
+        rouCarryingAmount?: T;
+        fixedPayment?: T;
+      };
+  postModification?:
+    | T
+    | {
+        newTermMonths?: T;
+        newDiscountRate?: T;
+        newFixedPayment?: T;
+        newPaymentFrequency?: T;
+        considerationPaid?: T;
+      };
+  liabilityRemeasurement?: T;
+  rouAdjustment?: T;
+  gainLossOnModification?: T;
+  journalEntry?: T;
+  agreementDocumentRef?: T;
+  evidenceAttestation?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lease-period-postings_select".
+ */
+export interface LeasePeriodPostingsSelect<T extends boolean = true> {
+  tenant?: T;
+  postingId?: T;
+  lease?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  currency?: T;
+  openingLiabilityCarrying?: T;
+  openingRouCarrying?: T;
+  interest?: T;
+  principalRepayment?: T;
+  cashPayment?: T;
+  rouAmortisation?: T;
+  closingLiabilityCarrying?: T;
+  closingRouCarrying?: T;
+  interestExpenseAccount?: T;
+  leaseLiabilityAccount?: T;
+  rouAmortisationAccount?: T;
+  accumulatedRouAmortisationAccount?: T;
+  cashAccount?: T;
+  costCenter?: T;
+  status?: T;
+  postedAt?: T;
+  journalEntry?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-runs_select".
+ */
+export interface PaymentRunsSelect<T extends boolean = true> {
+  tenant?: T;
+  runId?: T;
+  messageType?: T;
+  sequenceType?: T;
+  localInstrument?: T;
+  sourceBankAccount?: T;
+  currency?: T;
+  requestedExecutionDate?: T;
+  transactions?:
+    | T
+    | {
+        endToEndId?: T;
+        amount?: T;
+        counterpartyName?: T;
+        counterpartyIban?: T;
+        counterpartyBic?: T;
+        remittanceReference?: T;
+        mandateId?: T;
+        sourceBill?: T;
+        paymentRecord?: T;
+        id?: T;
+      };
+  numberOfTransactions?: T;
+  controlSum?: T;
+  preparedBy?: T;
+  preparedAt?: T;
+  authorisedBy?: T;
+  authorisedAt?: T;
+  exportFilename?: T;
+  exportedAt?: T;
+  submittedAt?: T;
+  settledAt?: T;
+  bankResponseStatus?: T;
+  bankResponseReasonCode?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sepa-mandates_select".
+ */
+export interface SepaMandatesSelect<T extends boolean = true> {
+  tenant?: T;
+  mandateId?: T;
+  localInstrument?: T;
+  debtorName?: T;
+  debtorIban?: T;
+  debtorBic?: T;
+  debtor?: T;
+  creditorIdentifier?: T;
+  signatureDate?: T;
+  mandateDocument?: T;
+  signatureMethod?: T;
+  sequenceState?: T;
+  lastCollectionAt?: T;
+  expiryDate?: T;
+  revokedAt?: T;
+  revocationReason?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payroll-runs_select".
+ */
+export interface PayrollRunsSelect<T extends boolean = true> {
+  tenant?: T;
+  runId?: T;
+  paySchedule?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  paymentDate?: T;
+  currency?: T;
+  sourceBankAccount?: T;
+  lines?:
+    | T
+    | {
+        employee?: T;
+        regularMinutes?: T;
+        overtime15Minutes?: T;
+        overtime2Minutes?: T;
+        nightShiftMinutes?: T;
+        holidayWorkMinutes?: T;
+        ptoMinutes?: T;
+        sickMinutes?: T;
+        baseGross?: T;
+        overtimeGross?: T;
+        bonusGross?: T;
+        totalGross?: T;
+        incomeTaxWithheld?: T;
+        socialSecurityEmployee?: T;
+        pensionEmployee?: T;
+        otherDeductions?: T;
+        netPay?: T;
+        socialSecurityEmployer?: T;
+        pensionEmployer?: T;
+        payrollTaxesEmployer?: T;
+        costCenter?: T;
+        paySlipDocument?: T;
+        id?: T;
+      };
+  employeeCount?: T;
+  totalGross?: T;
+  totalDeductions?: T;
+  totalNet?: T;
+  totalEmployerSideAccruals?: T;
+  preparedBy?: T;
+  preparedAt?: T;
+  authorisedBy?: T;
+  authorisedAt?: T;
+  status?: T;
+  journalEntry?: T;
+  paymentRun?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "employees_select".
+ */
+export interface EmployeesSelect<T extends boolean = true> {
+  tenant?: T;
+  employeeNumber?: T;
+  displayName?: T;
+  identity?:
+    | T
+    | {
+        givenName?: T;
+        familyName?: T;
+        dateOfBirth?: T;
+        nationalIdRef?: T;
+        citizenshipCountry?: T;
+      };
+  contact?:
+    | T
+    | {
+        workEmail?: T;
+        personalEmail?: T;
+        phone?: T;
+      };
+  jobTitle?: T;
+  employmentType?: T;
+  department?: T;
+  manager?: T;
+  workCountry?: T;
+  hireDate?: T;
+  probationEndDate?: T;
+  contractEndDate?: T;
+  terminationDate?: T;
+  terminationReason?: T;
+  currency?: T;
+  compensation?:
+    | T
+    | {
+        baseSalaryAnnual?: T;
+        fteRatio?: T;
+        paySchedule?: T;
+        targetBonusPercent?: T;
+        targetBonusBasis?: T;
+      };
+  benefits?:
+    | T
+    | {
+        pensionPlan?: T;
+        pensionEmployerContributionPercent?: T;
+        healthInsurance?: T;
+        lifeInsurance?: T;
+        paidTimeOffDaysPerYear?: T;
+        paidTimeOffBalance?: T;
+      };
+  payrollBankAccount?:
+    | T
+    | {
+        iban?: T;
+        bic?: T;
+        accountHolder?: T;
+      };
+  tax?:
+    | T
+    | {
+        taxIdRef?: T;
+        socialSecurityIdRef?: T;
+        taxResidenceCountry?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "job-positions_select".
+ */
+export interface JobPositionsSelect<T extends boolean = true> {
+  tenant?: T;
+  positionCode?: T;
+  positionTitle?: T;
+  department?: T;
+  costCenter?: T;
+  legalEntity?: T;
+  reportsTo?: T;
+  level?: T;
+  employmentType?: T;
+  fte?: T;
+  jobDescription?: T;
+  requirements?: T;
+  workLocation?: T;
+  workArrangement?: T;
+  currency?: T;
+  salaryRange?:
+    | T
+    | {
+        min?: T;
+        mid?: T;
+        max?: T;
+      };
+  budgetedAnnualCost?: T;
+  currentEmployee?: T;
+  effectiveStartDate?: T;
+  effectiveEndDate?: T;
+  isApprovedHeadcount?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "time-entries_select".
+ */
+export interface TimeEntriesSelect<T extends boolean = true> {
+  tenant?: T;
+  entryId?: T;
+  employee?: T;
+  workDate?: T;
+  minutes?: T;
+  kind?: T;
+  costCenter?: T;
+  project?: T;
+  task?: T;
+  description?: T;
+  billable?: T;
+  billableRate?: T;
+  status?: T;
+  submittedAt?: T;
+  rejectionReason?: T;
+  payrollRun?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "leave-requests_select".
+ */
+export interface LeaveRequestsSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  reference?: T;
+  employee?: T;
+  leaveType?: T;
+  isPaid?: T;
+  submittedDate?: T;
+  startDate?: T;
+  endDate?: T;
+  workingDays?: T;
+  workingHours?: T;
+  partialDay?: T;
+  reason?: T;
+  medicalCertificateRef?: T;
+  balanceImpact?:
+    | T
+    | {
+        entitlementType?: T;
+        beforeBalance?: T;
+        afterBalance?: T;
+        carryOverApplied?: T;
+      };
+  approver?: T;
+  rejectionReason?: T;
+  replacedByEmployee?: T;
+  isHandoverComplete?: T;
+  cancelledDate?: T;
+  cancelReason?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "performance-reviews_select".
+ */
+export interface PerformanceReviewsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  employee?: T;
+  reviewer?: T;
+  reviewType?: T;
+  reviewPeriod?: T;
+  reviewDate?: T;
+  periodStartDate?: T;
+  periodEndDate?: T;
+  selfAssessment?:
+    | T
+    | {
+        submittedAt?: T;
+        achievements?: T;
+        challenges?: T;
+        developmentAreas?: T;
+        careerGoals?: T;
+        selfRating?: T;
+      };
+  managerReview?:
+    | T
+    | {
+        submittedAt?: T;
+        strengths?: T;
+        areasForImprovement?: T;
+        goalAchievement?: T;
+        developmentPlan?: T;
+      };
+  overallRating?: T;
+  numericScore?: T;
+  competencyRatings?:
+    | T
+    | {
+        competency?: T;
+        rating?: T;
+        comment?: T;
+        id?: T;
+      };
+  outcome?:
+    | T
+    | {
+        recommendsPromotion?: T;
+        newJobPosition?: T;
+        recommendsMeritIncrease?: T;
+        currency?: T;
+        meritIncreasePercent?: T;
+        meritIncreaseAmount?: T;
+        recommendsBonus?: T;
+        bonusAmount?: T;
+        requiresPip?: T;
+      };
+  goalsForNextPeriod?:
+    | T
+    | {
+        goal?: T;
+        measurableOutcome?: T;
+        targetDate?: T;
+        id?: T;
+      };
+  employeeAcknowledged?: T;
+  employeeAcknowledgedAt?: T;
+  employeeComments?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "expense-reports_select".
+ */
+export interface ExpenseReportsSelect<T extends boolean = true> {
+  tenant?: T;
+  reportNumber?: T;
+  employee?: T;
+  submissionDate?: T;
+  periodStartDate?: T;
+  periodEndDate?: T;
+  project?: T;
+  costCenter?: T;
+  businessPurpose?: T;
+  lines?:
+    | T
+    | {
+        expenseDate?: T;
+        category?: T;
+        description?: T;
+        merchant?: T;
+        currency?: T;
+        amount?: T;
+        fxRate?: T;
+        reimbursementAmount?: T;
+        glAccount?: T;
+        taxCode?: T;
+        isBillableToCustomer?: T;
+        mileageDistance?: T;
+        mileageRate?: T;
+        receiptAttached?: T;
+        receiptMedia?: T;
+        isPolicyCompliant?: T;
+        policyExceptionReason?: T;
+        id?: T;
+      };
+  reimbursementCurrency?: T;
+  totalAmount?: T;
+  totalReimbursable?: T;
+  totalNonReimbursable?: T;
+  approvalChain?:
+    | T
+    | {
+        step?: T;
+        approver?: T;
+        role?: T;
+        decision?: T;
+        decidedAt?: T;
+        comment?: T;
+        id?: T;
+      };
+  reimbursementMethod?: T;
+  reimbursementDate?: T;
+  reimbursedViaPayrollRun?: T;
+  reimbursedViaPayment?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recruiting-pipeline_select".
+ */
+export interface RecruitingPipelineSelect<T extends boolean = true> {
+  tenant?: T;
+  candidateName?: T;
+  firstName?: T;
+  lastName?: T;
+  email?: T;
+  phone?: T;
+  linkedinUrl?: T;
+  position?: T;
+  recruiter?: T;
+  hiringManager?: T;
+  applicationDate?: T;
+  source?: T;
+  referrer?: T;
+  stage?: T;
+  interviewSchedule?:
+    | T
+    | {
+        round?: T;
+        scheduledDate?: T;
+        interviewers?: T;
+        feedback?: T;
+        feedbackNotes?: T;
+        id?: T;
+      };
+  offerDetails?:
+    | T
+    | {
+        currency?: T;
+        baseSalary?: T;
+        signOnBonus?: T;
+        equityGrant?: T;
+        targetStartDate?: T;
+        offerExtendedDate?: T;
+        offerExpiryDate?: T;
+      };
+  rejectionReason?: T;
+  consentRecord?: T;
+  piiRetentionUntil?: T;
+  createdEmployee?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "activities_select".
+ */
+export interface ActivitiesSelect<T extends boolean = true> {
+  tenant?: T;
+  subject?: T;
+  activityType?: T;
+  direction?: T;
+  activityDate?: T;
+  durationMinutes?: T;
+  assignedTo?: T;
+  relatedTo?: T;
+  lead?: T;
+  opportunity?: T;
+  customer?: T;
+  vendor?: T;
+  project?: T;
+  description?: T;
+  outcome?: T;
+  nextStep?: T;
+  nextStepDate?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects_select".
+ */
+export interface ProjectsSelect<T extends boolean = true> {
+  tenant?: T;
+  projectCode?: T;
+  name?: T;
+  description?: T;
+  customer?: T;
+  contract?: T;
+  legalEntity?: T;
+  projectManager?: T;
+  projectType?: T;
+  recognitionMethod?: T;
+  currency?: T;
+  contractedAmount?: T;
+  budgetedCost?: T;
+  budgetedHours?: T;
+  budgetedMargin?: T;
+  actualCostToDate?: T;
+  recognisedRevenueToDate?: T;
+  percentComplete?: T;
+  plannedStartDate?: T;
+  plannedEndDate?: T;
+  actualStartDate?: T;
+  actualEndDate?: T;
+  isOnerous?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "project-tasks_select".
+ */
+export interface ProjectTasksSelect<T extends boolean = true> {
+  tenant?: T;
+  project?: T;
+  parentTask?: T;
+  taskCode?: T;
+  name?: T;
+  description?: T;
+  assignee?: T;
+  taskType?: T;
+  budgetedHours?: T;
+  actualHours?: T;
+  budgetedCost?: T;
+  actualCost?: T;
+  percentComplete?: T;
+  plannedStartDate?: T;
+  plannedEndDate?: T;
+  actualStartDate?: T;
+  actualEndDate?: T;
+  dependencyTasks?: T;
+  isBillable?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "project-milestones_select".
+ */
+export interface ProjectMilestonesSelect<T extends boolean = true> {
+  tenant?: T;
+  project?: T;
+  milestoneNumber?: T;
+  name?: T;
+  description?: T;
+  milestoneType?: T;
+  currency?: T;
+  amount?: T;
+  percentOfContract?: T;
+  plannedDate?: T;
+  achievedDate?: T;
+  achievedBy?: T;
+  invoice?: T;
+  acceptanceDocumentRef?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-orders_select".
+ */
+export interface WorkOrdersSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  bom?: T;
+  finishedGood?: T;
+  plannedQuantity?: T;
+  completedQuantity?: T;
+  scrappedQuantity?: T;
+  releaseDate?: T;
+  dueDate?: T;
+  completedAt?: T;
+  demandSource?: T;
+  demandReference?: T;
+  targetWarehouse?: T;
+  standardCosts?:
+    | T
+    | {
+        standardMaterialCost?: T;
+        standardLabourCost?: T;
+        standardOverheadCost?: T;
+        standardTotalCost?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "workflow-definitions_select".
+ */
+export interface WorkflowDefinitionsSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  description?: T;
+  version?: T;
+  targetCollection?: T;
+  triggerEvent?: T;
+  triggerCondition?: T;
+  steps?:
+    | T
+    | {
+        order?: T;
+        name?: T;
+        kind?: T;
+        assigneeMode?: T;
+        assigneeUser?: T;
+        assigneeRole?: T;
+        amountThreshold?: T;
+        slaHours?: T;
+        escalateTo?: T;
+        allowDelegation?: T;
+        condition?: T;
+        serviceHandler?: T;
+        id?: T;
+      };
+  isActive?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  supersededBy?: T;
+  onTimeoutBehavior?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "workflow-instances_select".
+ */
+export interface WorkflowInstancesSelect<T extends boolean = true> {
+  tenant?: T;
+  instanceId?: T;
+  definition?: T;
+  definitionVersion?: T;
+  targetCollection?: T;
+  targetId?: T;
+  submittedBy?: T;
+  submittedAt?: T;
+  currentStep?: T;
+  currentAssignee?: T;
+  currentAssigneeRole?: T;
+  currentStepDueAt?: T;
+  stepHistory?:
+    | T
+    | {
+        stepIndex?: T;
+        stepName?: T;
+        assignee?: T;
+        decision?: T;
+        decidedAt?: T;
+        comment?: T;
+        delegatedTo?: T;
+        auditEventId?: T;
+        id?: T;
+      };
+  finalOutcome?: T;
+  completedAt?: T;
+  errorMessage?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bills-of-materials_select".
+ */
+export interface BillsOfMaterialsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  finishedGood?: T;
+  version?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  producedQuantity?: T;
+  components?:
+    | T
+    | {
+        item?: T;
+        quantity?: T;
+        unitOfMeasure?: T;
+        wasteAllowance?: T;
+        isOptional?: T;
+        id?: T;
+      };
+  operations?:
+    | T
+    | {
+        sequence?: T;
+        description?: T;
+        workCenter?: T;
+        standardLabourMinutes?: T;
+        standardMachineMinutes?: T;
+        id?: T;
+      };
+  engineeringChangeOrder?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "production-receipts_select".
+ */
+export interface ProductionReceiptsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  workOrder?: T;
+  finishedGood?: T;
+  receivedQuantity?: T;
+  targetWarehouse?: T;
+  lotNumber?: T;
+  serialNumbers?: T;
+  receiptDate?: T;
+  currency?: T;
+  cost?:
+    | T
+    | {
+        materialCost?: T;
+        labourCost?: T;
+        overheadCost?: T;
+        absorbedCost?: T;
+        unitCost?: T;
+      };
+  inventoryMovement?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "quality-inspections_select".
+ */
+export interface QualityInspectionsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  inspectionType?: T;
+  item?: T;
+  inspectedQuantity?: T;
+  sampleSize?: T;
+  failedQuantity?: T;
+  workOrder?: T;
+  goodsReceipt?: T;
+  shipment?: T;
+  inspectionDate?: T;
+  inspector?: T;
+  outcome?: T;
+  failureReason?: T;
+  capaReference?: T;
+  inventoryMovement?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "wip-snapshots_select".
+ */
+export interface WipSnapshotsSelect<T extends boolean = true> {
+  tenant?: T;
+  snapshotRef?: T;
+  project?: T;
+  period?: T;
+  snapshotDate?: T;
+  recognitionMethod?: T;
+  currency?: T;
+  contractedAmount?: T;
+  estimatedTotalCost?: T;
+  costToDate?: T;
+  percentComplete?: T;
+  recognisedRevenue?: T;
+  invoicedToDate?: T;
+  unbilledOrDeferred?: T;
+  estimatedLossProvision?: T;
+  periodEndAdjustment?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "properties_select".
+ */
+export interface PropertiesSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  description?: T;
+  kind?: T;
+  tenure?: T;
+  address?: T;
+  country?: T;
+  region?: T;
+  measurements?:
+    | T
+    | {
+        grossInternalArea?: T;
+        netInternalArea?: T;
+        siteArea?: T;
+        numberOfFloors?: T;
+        numberOfUnits?: T;
+      };
+  occupancy?:
+    | T
+    | {
+        designedCapacity?: T;
+        currentHeadcount?: T;
+        naceCode?: T;
+      };
+  lifecycle?:
+    | T
+    | {
+        acquiredAt?: T;
+        commissionedAt?: T;
+        plannedDisposalAt?: T;
+        disposedAt?: T;
+      };
+  currency?: T;
+  bookValue?: T;
+  fixedAsset?: T;
+  lease?: T;
+  energyCertificate?:
+    | T
+    | {
+        epcRating?: T;
+        epcExpiresAt?: T;
+        kwhPerSqmYear?: T;
+      };
+  bimReference?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "spaces_select".
+ */
+export interface SpacesSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  property?: T;
+  parentSpace?: T;
+  kind?: T;
+  usageCategory?: T;
+  floor?: T;
+  area?: T;
+  capacity?: T;
+  currentOccupancy?: T;
+  isBookable?: T;
+  amenities?:
+    | T
+    | {
+        tag?: T;
+        id?: T;
+      };
+  safety?:
+    | T
+    | {
+        fireZone?: T;
+        maxOccupancy?: T;
+        isAccessible?: T;
+      };
+  bimElementId?: T;
+  glAccount?: T;
+  costCenter?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "maintenance-requests_select".
+ */
+export interface MaintenanceRequestsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  subject?: T;
+  description?: T;
+  requestType?: T;
+  priority?: T;
+  property?: T;
+  space?: T;
+  fixedAsset?: T;
+  bookableResource?: T;
+  reportedBy?: T;
+  reportedByName?: T;
+  reportedByEmail?: T;
+  reportedAt?: T;
+  targetResolutionAt?: T;
+  photos?:
+    | T
+    | {
+        url?: T;
+        caption?: T;
+        id?: T;
+      };
+  workOrder?: T;
+  triagedBy?: T;
+  triagedAt?: T;
+  closedAt?: T;
+  closureNote?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "maintenance-work-orders_select".
+ */
+export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  request?: T;
+  subject?: T;
+  description?: T;
+  workType?: T;
+  priority?: T;
+  capitalisationTreatment?: T;
+  property?: T;
+  space?: T;
+  fixedAsset?: T;
+  bookableResource?: T;
+  assignedTo?: T;
+  vendor?: T;
+  scheduledStartAt?: T;
+  scheduledEndAt?: T;
+  actualStartAt?: T;
+  actualEndAt?: T;
+  parts?:
+    | T
+    | {
+        itemSku?: T;
+        description?: T;
+        quantity?: T;
+        unitOfMeasure?: T;
+        unitCost?: T;
+        lineCost?: T;
+        inventoryMovement?: T;
+        id?: T;
+      };
+  labour?:
+    | T
+    | {
+        employee?: T;
+        hours?: T;
+        hourlyCost?: T;
+        lineCost?: T;
+        timeEntry?: T;
+        id?: T;
+      };
+  partsCost?: T;
+  labourCost?: T;
+  externalCost?: T;
+  totalCost?: T;
+  currency?: T;
+  safety?:
+    | T
+    | {
+        requiresPermitToWork?: T;
+        permitReference?: T;
+        requiresLOTO?: T;
+        isHotWork?: T;
+      };
+  failureCode?: T;
+  rootCause?: T;
+  qualityInspection?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bookable-resources_select".
+ */
+export interface BookableResourcesSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  description?: T;
+  kind?: T;
+  category?: T;
+  space?: T;
+  fixedAsset?: T;
+  capacity?: T;
+  unitOfCapacity?: T;
+  rateBasis?: T;
+  currency?: T;
+  baseRate?: T;
+  pricingTiers?:
+    | T
+    | {
+        tierName?: T;
+        rate?: T;
+        effectiveFrom?: T;
+        effectiveTo?: T;
+        minStayDays?: T;
+        isActive?: T;
+        id?: T;
+      };
+  amenities?:
+    | T
+    | {
+        tag?: T;
+        id?: T;
+      };
+  availability?:
+    | T
+    | {
+        minBookingMinutes?: T;
+        maxBookingDays?: T;
+        noticeMinutes?: T;
+        bufferBeforeMinutes?: T;
+        bufferAfterMinutes?: T;
+      };
+  glAccount?: T;
+  taxCode?: T;
+  country?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bookings_select".
+ */
+export interface BookingsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  resource?: T;
+  guestType?: T;
+  customer?: T;
+  employee?: T;
+  address?: T;
+  guestName?: T;
+  guestEmail?: T;
+  partySize?: T;
+  startAt?: T;
+  endAt?: T;
+  rrule?: T;
+  channel?: T;
+  channelReference?: T;
+  rateApplied?: T;
+  unitsBilled?: T;
+  subtotalAmount?: T;
+  taxAmount?: T;
+  totalAmount?: T;
+  depositAmount?: T;
+  currency?: T;
+  cancellationPolicy?: T;
+  invoice?: T;
+  journalEntry?: T;
+  status?: T;
+  confirmedAt?: T;
+  checkedInAt?: T;
+  checkedOutAt?: T;
+  cancelledAt?: T;
+  cancelReason?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "carriers_select".
+ */
+export interface CarriersSelect<T extends boolean = true> {
+  tenant?: T;
+  code?: T;
+  name?: T;
+  scope?: T;
+  accountNumber?: T;
+  apiBaseUrl?: T;
+  apiCredentialsId?: T;
+  serviceLevels?:
+    | T
+    | {
+        code?: T;
+        label?: T;
+        incoterm?: T;
+        transitDays?: T;
+        id?: T;
+      };
+  supportsHazmat?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tracking-events_select".
+ */
+export interface TrackingEventsSelect<T extends boolean = true> {
+  tenant?: T;
+  shipment?: T;
+  carrier?: T;
+  trackingNumber?: T;
+  eventCode?: T;
+  eventTime?: T;
+  location?: T;
+  locationCountry?: T;
+  description?: T;
+  signedBy?: T;
+  sourcePayload?: T;
+  eventSource?: T;
+  triggeredRevenueRecognition?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "customs-declarations_select".
+ */
+export interface CustomsDeclarationsSelect<T extends boolean = true> {
+  tenant?: T;
+  mrn?: T;
+  declarationType?: T;
+  shipment?: T;
+  declarationDate?: T;
+  countryOfDispatch?: T;
+  countryOfDestination?: T;
+  countryOfOrigin?: T;
+  currency?: T;
+  totalValue?: T;
+  totalDuty?: T;
+  totalImportVat?: T;
+  lines?:
+    | T
+    | {
+        item?: T;
+        description?: T;
+        hsCode?: T;
+        quantity?: T;
+        unitOfMeasure?: T;
+        netWeight?: T;
+        grossWeight?: T;
+        declaredValue?: T;
+        preferentialOrigin?: T;
+        tariffPreferenceCode?: T;
+        id?: T;
+      };
+  incoterm?: T;
+  submittedAt?: T;
+  acceptedAt?: T;
+  releasedAt?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consignment-arrangements_select".
+ */
+export interface ConsignmentArrangementsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  consignee?: T;
+  consigneeName?: T;
+  consigneeWarehouseLocation?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  controlTransferTrigger?: T;
+  timeOutDays?: T;
+  returnRights?: T;
+  returnWindowDays?: T;
+  currency?: T;
+  maxValue?: T;
+  commissionRatePercent?: T;
+  incoterm?: T;
+  contract?: T;
+  evidenceAttestation?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consignment-inventory_select".
+ */
+export interface ConsignmentInventorySelect<T extends boolean = true> {
+  tenant?: T;
+  lineId?: T;
+  arrangement?: T;
+  consigneeWarehouseLocation?: T;
+  itemSku?: T;
+  itemDescription?: T;
+  unitOfMeasure?: T;
+  quantityOnHand?: T;
+  unitCost?: T;
+  valueOnHand?: T;
+  currency?: T;
+  asOfDate?: T;
+  lastShipmentDate?: T;
+  lastSaleDate?: T;
+  valuationMethod?: T;
+  glAccount?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consignment-sales_select".
+ */
+export interface ConsignmentSalesSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  arrangement?: T;
+  consignmentInventory?: T;
+  saleDate?: T;
+  reportedDate?: T;
+  endCustomerRef?: T;
+  quantitySold?: T;
+  unitOfMeasure?: T;
+  unitPrice?: T;
+  grossAmount?: T;
+  commissionRatePercent?: T;
+  commissionAmount?: T;
+  netAmount?: T;
+  cogsAmount?: T;
+  currency?: T;
+  invoice?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-events_select".
+ */
+export interface AuditEventsSelect<T extends boolean = true> {
+  tenant?: T;
+  eventId?: T;
+  timestamp?: T;
+  eventType?: T;
+  source?: T;
+  collectionSlug?: T;
+  operation?: T;
+  documentId?: T;
+  user?: T;
+  previousStatus?: T;
+  nextStatus?: T;
+  changes?:
+    | T
+    | {
+        field?: T;
+        previousValue?: T;
+        nextValue?: T;
+        id?: T;
+      };
+  changeSummary?: T;
+  sources?: T;
+  requestId?: T;
+  severity?: T;
+  previousHash?: T;
+  rowHash?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "api-audit-events_select".
+ */
+export interface ApiAuditEventsSelect<T extends boolean = true> {
+  tenant?: T;
+  eventId?: T;
+  kind?: T;
+  country?: T;
+  source?: T;
+  resultOk?: T;
+  errorMessage?: T;
+  payloadIn?: T;
+  payloadOut?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "evidence-attestations_select".
+ */
+export interface EvidenceAttestationsSelect<T extends boolean = true> {
+  tenant?: T;
+  attestationId?: T;
+  workflow?: T;
+  country?: T;
+  capturedAt?: T;
+  pdfA?: T;
+  pdfUa?: T;
+  signed?: T;
+  padesLevel?: T;
+  pdfFile?: T;
+  signatureValue?: T;
+  signedAt?: T;
+  signingCertificate?: T;
+  signedBy?: T;
+  signatureDigest?: T;
+  stepsCount?: T;
+  gapsCount?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "entity-types_select".
+ */
+export interface EntityTypesSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  code?: T;
+  description?: T;
+  applicableFrameworks?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "taxing-jurisdictions_select".
+ */
+export interface TaxingJurisdictionsSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  jurisdictionType?: T;
+  isoCountryCode?: T;
+  isoRegionCode?: T;
+  currency?: T;
+  parent?: T;
+  filingDeadlines?:
+    | T
+    | {
+        description?: T;
+        dueDate?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "entity-legal-structures_select".
+ */
+export interface EntityLegalStructuresSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  legalCode?: T;
+  entityType?: T;
+  jurisdiction?: T;
+  description?: T;
+  taxTreatment?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-frameworks_select".
+ */
+export interface ComplianceFrameworksSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  frameworkType?: T;
+  issuingBody?: T;
+  version?: T;
+  effectiveDate?: T;
+  description?: T;
+  applicableJurisdictions?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-requirements_select".
+ */
+export interface ComplianceRequirementsSelect<T extends boolean = true> {
+  tenant?: T;
+  requirementName?: T;
+  framework?: T;
+  requirementType?: T;
+  description?: T;
+  testableStatement?: T;
+  applicableEntityTypes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-controls_select".
+ */
+export interface InternalControlsSelect<T extends boolean = true> {
+  tenant?: T;
+  controlName?: T;
+  controlType?: T;
+  controlCategory?: T;
+  cosoComponent?: T;
+  description?: T;
+  owner?: T;
+  frequency?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "control-tests_select".
+ */
+export interface ControlTestsSelect<T extends boolean = true> {
+  tenant?: T;
+  control?: T;
+  testName?: T;
+  testDesign?: T;
+  samplingMethodology?: T;
+  sampleSize?: T;
+  testStatus?: T;
+  result?: T;
+  deviationCount?: T;
+  deviationRate?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-samples_select".
+ */
+export interface AuditSamplesSelect<T extends boolean = true> {
+  tenant?: T;
+  controlTest?: T;
+  itemIdentifier?: T;
+  sampleItemType?: T;
+  testResult?: T;
+  exceptionCategory?: T;
+  notes?: T;
+  evidence?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-gaps_select".
+ */
+export interface ComplianceGapsSelect<T extends boolean = true> {
+  tenant?: T;
+  requirement?: T;
+  gapTitle?: T;
+  gapType?: T;
+  description?: T;
+  status?: T;
+  remediationPlan?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-evidence_select".
+ */
+export interface AuditEvidenceSelect<T extends boolean = true> {
+  tenant?: T;
+  evidenceTitle?: T;
+  documentType?: T;
+  documentFile?: T;
+  evidenceChain?:
+    | T
+    | {
+        actor?: T;
+        action?: T;
+        actionDate?: T;
+        notes?: T;
+        id?: T;
+      };
+  confidentiality?: T;
+  retentionPeriod?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-findings_select".
+ */
+export interface AuditFindingsSelect<T extends boolean = true> {
+  tenant?: T;
+  findingTitle?: T;
+  findingType?: T;
+  severity?: T;
+  description?: T;
+  rootCause?: T;
+  potentialImpact?: T;
+  frequencyOfOccurrence?: T;
+  riskCategory?: T;
+  status?: T;
+  evidence?: T;
+  remediationPlan?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-trail-events_select".
+ */
+export interface AuditTrailEventsSelect<T extends boolean = true> {
+  tenant?: T;
+  operation?: T;
+  collectionName?: T;
+  documentId?: T;
+  changedBy?: T;
+  changedAt?: T;
+  changesSummary?: T;
+  changeDetails?: T;
+  approvedBy?: T;
+  approvalStatus?: T;
+  changeReason?: T;
+  systemDetails?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "remediation-plans_select".
+ */
+export interface RemediationPlansSelect<T extends boolean = true> {
+  tenant?: T;
+  planTitle?: T;
+  finding?: T;
+  gap?: T;
+  remediationType?: T;
+  priority?: T;
+  owner?: T;
+  actionSteps?:
+    | T
+    | {
+        sequence?: T;
+        description?: T;
+        stepOwner?: T;
+        targetDate?: T;
+        status?: T;
+        completedDate?: T;
+        id?: T;
+      };
+  targetDate?: T;
+  completionDate?: T;
+  status?: T;
+  budget?: T;
+  riskOfDelay?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committees_select".
+ */
+export interface AuditCommitteesSelect<T extends boolean = true> {
+  tenant?: T;
+  name?: T;
+  entity?: T;
+  charter?: T;
+  establishedDate?: T;
+  meetingFrequency?: T;
+  status?: T;
+  members?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committee-members_select".
+ */
+export interface AuditCommitteeMembersSelect<T extends boolean = true> {
+  tenant?: T;
+  committee?: T;
+  memberName?: T;
+  title?: T;
+  affiliation?: T;
+  appointedDate?: T;
+  termEndDate?: T;
+  role?: T;
+  expertise?:
+    | T
+    | {
+        area?: T;
+        id?: T;
+      };
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "board-actions_select".
+ */
+export interface BoardActionsSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  actionTitle?: T;
+  description?: T;
+  actionType?: T;
+  meetingDate?: T;
+  actionDate?: T;
+  status?: T;
+  voteTally?:
+    | T
+    | {
+        votesFor?: T;
+        votesAgainst?: T;
+        abstentions?: T;
+      };
+  minutes?: T;
+  relatedControls?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "management-certifications_select".
+ */
+export interface ManagementCertificationsSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  certificationName?: T;
+  certifyingOfficer?: T;
+  certificationDate?: T;
+  certificationType?: T;
+  scope?: T;
+  assertions?:
+    | T
+    | {
+        assertion?: T;
+        certificationLevel?: T;
+        id?: T;
+      };
+  relatedFindings?: T;
+  signedDocument?: T;
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "regulatory-reports_select".
+ */
+export interface RegulatoryReportsSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  reportName?: T;
+  reportingStandard?: T;
+  jurisdiction?: T;
+  reportType?: T;
+  fiscalPeriodStart?: T;
+  fiscalPeriodEnd?: T;
+  dueDate?: T;
+  submissionDate?: T;
+  status?: T;
+  reportDocument?: T;
+  regulatoryFeedback?: T;
+  findings?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-policies_select".
+ */
+export interface InternalPoliciesSelect<T extends boolean = true> {
+  tenant?: T;
+  policyName?: T;
+  policyNumber?: T;
+  description?: T;
+  policyType?: T;
+  owner?: T;
+  effectiveDate?: T;
+  lastReviewDate?: T;
+  nextReviewDate?: T;
+  status?: T;
+  policyDocument?: T;
+  applicableControls?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "statutory-report-templates_select".
+ */
+export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
+  tenant?: T;
+  templateName?: T;
+  jurisdiction?: T;
+  reportType?: T;
+  entityType?: T;
+  sections?:
+    | T
+    | {
+        sectionName?: T;
+        sequence?: T;
+        mandatory?: T;
+        id?: T;
+      };
+  templateDocument?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "statutory-field-mappings_select".
+ */
+export interface StatutoryFieldMappingsSelect<T extends boolean = true> {
+  tenant?: T;
+  mappingName?: T;
+  reportTemplate?: T;
+  fieldName?: T;
+  fieldType?: T;
+  sourceCollection?: T;
+  sourceField?: T;
+  transformation?: T;
+  mandatory?: T;
+  validationRules?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "policy-versions_select".
+ */
+export interface PolicyVersionsSelect<T extends boolean = true> {
+  tenant?: T;
+  policy?: T;
+  versionNumber?: T;
+  versionName?: T;
+  releaseDate?: T;
+  changes?: T;
+  documentUrl?: T;
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "policy-acknowledgments_select".
+ */
+export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  policy?: T;
+  policyVersion?: T;
+  employeeName?: T;
+  employeeId?: T;
+  acknowledgedDate?: T;
+  acknowledgedBy?: T;
+  signedDocument?: T;
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-deadlines_select".
+ */
+export interface ComplianceDeadlinesSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  deadlineName?: T;
+  deadlineType?: T;
+  jurisdiction?: T;
+  requirement?: T;
+  dueDate?: T;
+  submissionDate?: T;
+  status?: T;
+  priority?: T;
+  penalty?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-notifications_select".
+ */
+export interface ComplianceNotificationsSelect<T extends boolean = true> {
+  tenant?: T;
+  deadline?: T;
+  notificationTitle?: T;
+  notificationContent?: T;
+  notificationType?: T;
+  recipients?:
+    | T
+    | {
+        recipientEmail?: T;
+        recipientRole?: T;
+        id?: T;
+      };
+  daysBeforeDue?: T;
+  sentDate?: T;
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reporting-standards_select".
+ */
+export interface ReportingStandardsSelect<T extends boolean = true> {
+  tenant?: T;
+  standardName?: T;
+  standardCode?: T;
+  standardType?: T;
+  jurisdiction?: T;
+  description?: T;
+  version?: T;
+  effectiveDate?: T;
+  referenceMaterial?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reporting-mappings_select".
+ */
+export interface ReportingMappingsSelect<T extends boolean = true> {
+  tenant?: T;
+  mappingName?: T;
+  fromStandard?: T;
+  toStandard?: T;
+  mappingType?: T;
+  mappingRules?:
+    | T
+    | {
+        sourceElement?: T;
+        targetElement?: T;
+        transformation?: T;
+        id?: T;
+      };
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "related-party-transactions_select".
+ */
+export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  relatedPartyName?: T;
+  relatedPartyType?: T;
+  relationship?: T;
+  transactionDate?: T;
+  transactionDescription?: T;
+  transactionType?: T;
+  amount?: T;
+  currency?: T;
+  terms?: T;
+  armLengthBasis?: T;
+  approvalStatus?: T;
+  approverName?: T;
+  approvalDate?: T;
+  disclosureRequired?: T;
+  disclosedInFinancialStatements?: T;
+  disclosureReference?: T;
+  relatedControls?: T;
+  evidence?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "management-assessment-icfr_select".
+ */
+export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  assessmentPeriod?: T;
+  assessmentDate?: T;
+  scope?: T;
+  controlFramework?: T;
+  controlEnvironmentAssessment?: T;
+  riskAssessmentAssessment?: T;
+  controlActivitiesAssessment?: T;
+  informationCommunicationAssessment?: T;
+  monitoringAssessment?: T;
+  significantDeficienciesIdentified?: T;
+  materialWeaknessesIdentified?: T;
+  deficiencyDetails?: T;
+  remediationActions?: T;
+  conclusionStatement?: T;
+  managementAcknowledgment?: T;
+  certifyingOfficers?:
+    | T
+    | {
+        title?: T;
+        name?: T;
+        signatureDate?: T;
+        signatureDocument?: T;
+        id?: T;
+      };
+  attestationDocument?: T;
+  relatedAuditFindings?: T;
+  relatedControlTests?: T;
+  status?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "disclosure-checklists_select".
+ */
+export interface DisclosureChecklistsSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  checklistName?: T;
+  standard?: T;
+  standardSection?: T;
+  fiscalPeriod?: T;
+  disclosureItems?:
+    | T
+    | {
+        sequence?: T;
+        disclosureTitle?: T;
+        disclosureRequirement?: T;
+        applicability?: T;
+        applicabilityCondition?: T;
+        completionStatus?: T;
+        assignedTo?: T;
+        targetDate?: T;
+        completionDate?: T;
+        notes?: T;
+        relatedEvidence?: T;
+        id?: T;
+      };
+  overallCompletionPercentage?: T;
+  reviewedBy?: T;
+  reviewDate?: T;
+  checklistStatus?: T;
+  checklistDocument?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-committee-minutes_select".
+ */
+export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
+  tenant?: T;
+  auditCommittee?: T;
+  entity?: T;
+  meetingTitle?: T;
+  meetingDate?: T;
+  meetingTime?: T;
+  meetingLocation?: T;
+  chairPerson?: T;
+  attendees?:
+    | T
+    | {
+        name?: T;
+        title?: T;
+        affiliation?: T;
+        status?: T;
+        id?: T;
+      };
+  agenda?:
+    | T
+    | {
+        sequence?: T;
+        topic?: T;
+        presenter?: T;
+        timeAllocated?: T;
+        id?: T;
+      };
+  discussionSummary?: T;
+  keyDecisions?:
+    | T
+    | {
+        decision?: T;
+        rationale?: T;
+        id?: T;
+      };
+  actionItems?:
+    | T
+    | {
+        sequence?: T;
+        actionDescription?: T;
+        assignedTo?: T;
+        dueDate?: T;
+        status?: T;
+        completionDate?: T;
+        completionNotes?: T;
+        id?: T;
+      };
+  risksIdentified?: T;
+  auditorObservations?: T;
+  complianceMatters?: T;
+  relatedBoardActions?: T;
+  relatedAuditFindings?: T;
+  relatedComplianceGaps?: T;
+  minutesStatus?: T;
+  approvedBy?: T;
+  approvalDate?: T;
+  minutesDocument?: T;
+  confidentiality?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "risk-register_select".
+ */
+export interface RiskRegisterSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  riskId?: T;
+  riskTitle?: T;
+  riskDescription?: T;
+  riskCategory?: T;
+  cosoComponent?: T;
+  riskOwner?: T;
+  riskOwnerContact?: T;
+  inherentRiskLikelihood?: T;
+  inherentRiskImpact?: T;
+  inherentRiskScore?: T;
+  mitigatingControls?: T;
+  residualRiskLikelihood?: T;
+  residualRiskImpact?: T;
+  residualRiskScore?: T;
+  riskAppetite?: T;
+  acceptabilityAssessment?: T;
+  furtherMitigationRequired?: T;
+  additionalMitigationPlan?: T;
+  relatedComplianceRequirements?: T;
+  relatedAuditFindings?: T;
+  lastAssessmentDate?: T;
+  nextAssessmentDate?: T;
+  riskStatus?: T;
+  riskRegisterDocument?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "debt-schedule_select".
+ */
+export interface DebtScheduleSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  debtInstrumentName?: T;
+  debtInstrumentId?: T;
+  debtType?: T;
+  lenderName?: T;
+  lenderContact?: T;
+  principalAmount?: T;
+  currency?: T;
+  issuanceDate?: T;
+  maturityDate?: T;
+  interestRate?: T;
+  interestPaymentFrequency?: T;
+  repaymentSchedule?:
+    | T
+    | {
+        paymentDate?: T;
+        principalPayment?: T;
+        interestPayment?: T;
+        totalPayment?: T;
+        paymentStatus?: T;
+        id?: T;
+      };
+  outstandingBalance?: T;
+  securityType?: T;
+  securityDetails?: T;
+  financialCovenants?:
+    | T
+    | {
+        covenantName?: T;
+        covenantDefinition?: T;
+        testedFrequency?: T;
+        threshold?: T;
+        currentPerformance?: T;
+        complianceStatus?: T;
+        id?: T;
+      };
+  operationalCovenants?: T;
+  restrictiveCovenants?: T;
+  prepaymentTerms?: T;
+  defaultProvisions?: T;
+  guarantees?: T;
+  fxHedges?: T;
+  'lastCovenant ComplianceTest'?: T;
+  nextCovenantTest?: T;
+  riskAssessment?: T;
+  relatedControls?: T;
+  debtStatus?: T;
+  debtAgreement?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "internal-audit-function_select".
+ */
+export interface InternalAuditFunctionSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  functionName?: T;
+  auditCharter?: T;
+  charterId?: T;
+  charterApprovedDate?: T;
+  reportingLine?: T;
+  chiefAuditExecutive?: T;
+  chiefAuditExecutiveContact?: T;
+  auditCommittee?: T;
+  auditStaffCount?: T;
+  auditBudget?: T;
+  auditPlan?: T;
+  auditPlanYear?: T;
+  auditPlanApprovedDate?: T;
+  auditPlanDocument?: T;
+  auditEngagements?:
+    | T
+    | {
+        engagementName?: T;
+        engagementType?: T;
+        objectiveScope?: T;
+        startDate?: T;
+        completionDate?: T;
+        status?: T;
+        reportIssued?: T;
+        id?: T;
+      };
+  auditReports?: T;
+  auditFindings?: T;
+  followUpTracking?:
+    | T
+    | {
+        findingReference?: T;
+        managementAction?: T;
+        targetImplementationDate?: T;
+        implementationDate?: T;
+        followUpStatus?: T;
+        notes?: T;
+        id?: T;
+      };
+  performanceMetrics?: T;
+  qualityAssurance?: T;
+  lastQualityReview?: T;
+  nextQualityReview?: T;
+  professionalStandards?: T;
+  resourceAdequacy?: T;
+  independenceAndObjectivity?: T;
+  riskBasedAuditing?: T;
+  auditFunctionStatus?: T;
+  charterDocument?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "segment-reporting_select".
+ */
+export interface SegmentReportingSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  segmentationBasis?: T;
+  reportingStandard?: T;
+  fiscalPeriod?: T;
+  segmentName?: T;
+  segmentDescription?: T;
+  chiefOperatingDecisionMaker?: T;
+  revenue?: T;
+  externalRevenue?: T;
+  intersegmentRevenue?: T;
+  operatingProfit?: T;
+  interest?: T;
+  taxes?: T;
+  netIncome?: T;
+  assets?: T;
+  liabilities?: T;
+  capitalExpenditures?: T;
+  depreciation?: T;
+  impairmentCharges?: T;
+  majorCustomerDependency?: T;
+  majorCustomerName?: T;
+  majorCustomerRevenueAmount?: T;
+  majorCustomerPercentage?: T;
+  transferPricingPolicies?: T;
+  identifiableAssets?:
+    | T
+    | {
+        assetCategory?: T;
+        amount?: T;
+        id?: T;
+      };
+  segmentGeography?:
+    | T
+    | {
+        countryCode?: T;
+        revenue?: T;
+        assets?: T;
+        id?: T;
+      };
+  quantitativeMeasurements?: T;
+  reconciliationToConsolidated?: T;
+  relatedDisclosures?: T;
+  segmentReportingDocument?: T;
+  reportingStatus?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consent-records_select".
+ */
+export interface ConsentRecordsSelect<T extends boolean = true> {
+  tenant?: T;
+  consentId?: T;
+  dataSubject?: T;
+  purpose?: T;
+  lawfulBasis?: T;
+  consentText?: T;
+  consentVersion?: T;
+  capturedVia?: T;
+  ipAddress?: T;
+  userAgent?: T;
+  status?: T;
+  givenAt?: T;
+  withdrawnAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-subject-requests_select".
+ */
+export interface DataSubjectRequestsSelect<T extends boolean = true> {
+  tenant?: T;
+  requestId?: T;
+  dataSubject?: T;
+  requestType?: T;
+  requestDetail?: T;
+  submittedAt?: T;
+  dueAt?: T;
+  status?: T;
+  completedAt?: T;
+  rejectionReason?: T;
+  fulfilmentEvidence?: T;
+  handler?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "data-processing-activities_select".
+ */
+export interface DataProcessingActivitiesSelect<T extends boolean = true> {
+  tenant?: T;
+  activityName?: T;
+  purpose?: T;
+  controllerOrProcessor?: T;
+  lawfulBasis?: T;
+  dataCategories?:
+    | T
+    | {
+        category?: T;
+        special?: T;
+        id?: T;
+      };
+  dataSubjectCategories?:
+    | T
+    | {
+        category?: T;
+        id?: T;
+      };
+  recipientCategories?:
+    | T
+    | {
+        recipient?: T;
+        id?: T;
+      };
+  thirdCountryTransfers?:
+    | T
+    | {
+        country?: T;
+        safeguard?: T;
+        id?: T;
+      };
+  retentionPeriod?: T;
+  securityMeasures?: T;
+  status?: T;
+  reviewDueAt?: T;
+  dpo?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "kyc-checks_select".
+ */
+export interface KycChecksSelect<T extends boolean = true> {
+  tenant?: T;
+  checkId?: T;
+  subjectType?: T;
+  subject?: T;
+  cddLevel?: T;
+  identityDocuments?:
+    | T
+    | {
+        docType?: T;
+        docNumber?: T;
+        issuingCountry?: T;
+        expiresAt?: T;
+        id?: T;
+      };
+  sanctionsScreening?:
+    | T
+    | {
+        screenedAt?: T;
+        lists?: T;
+        matchFound?: T;
+        matchDetails?: T;
+      };
+  pepStatus?: T;
+  riskRating?: T;
+  status?: T;
+  completedAt?: T;
+  nextReviewDue?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "beneficial-owners_select".
+ */
+export interface BeneficialOwnersSelect<T extends boolean = true> {
+  tenant?: T;
+  entity?: T;
+  fullName?: T;
+  dateOfBirth?: T;
+  nationality?: T;
+  residenceCountry?: T;
+  residenceAddress?: T;
+  ownershipPercent?: T;
+  controlType?: T;
+  pepStatus?: T;
+  kycCheck?: T;
+  status?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "csrd-disclosures_select".
+ */
+export interface CsrdDisclosuresSelect<T extends boolean = true> {
+  tenant?: T;
+  legalEntity?: T;
+  datapointId?: T;
+  reportingYear?: T;
+  esrsCategory?: T;
+  esrsTopic?: T;
+  materiality?: T;
+  narrative?: T;
+  quantitativeKpi?:
+    | T
+    | {
+        value?: T;
+        unit?: T;
+        methodology?: T;
+        priorYearComparison?: T;
+        targetValue?: T;
+        targetYear?: T;
+      };
+  iro?:
+    | T
+    | {
+        kind?: T;
+        timeHorizon?: T;
+        valueChainStage?: T;
+      };
+  assuranceStatus?: T;
+  assuranceProvider?: T;
+  evidenceAttestation?: T;
+  isEUTaxonomyEligible?: T;
+  isEUTaxonomyAligned?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "carbon-emissions_select".
+ */
+export interface CarbonEmissionsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  legalEntity?: T;
+  reportingYear?: T;
+  reportingPeriod?: T;
+  scope?: T;
+  category?: T;
+  activityData?:
+    | T
+    | {
+        value?: T;
+        unit?: T;
+        sourceDescription?: T;
+      };
+  emissionFactor?:
+    | T
+    | {
+        value?: T;
+        unit?: T;
+        sourceRef?: T;
+        gwpHorizon?: T;
+      };
+  tCO2eValue?: T;
+  gasBreakdown?:
+    | T
+    | {
+        co2?: T;
+        ch4?: T;
+        n2o?: T;
+        hfc?: T;
+        pfc?: T;
+        sf6?: T;
+        nf3?: T;
+      };
+  methodology?: T;
+  dataQuality?: T;
+  isVerified?: T;
+  verifierName?: T;
+  verificationDate?: T;
+  evidenceAttestation?: T;
+  cbamRelevant?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "biological-assets_select".
+ */
+export interface BiologicalAssetsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  name?: T;
+  classKind?: T;
+  unitsOnHand?: T;
+  unitOfMeasure?: T;
+  fairValueLessCostsToSell?: T;
+  priorPeriodFvlcts?: T;
+  biologicalTransformationGainLoss?: T;
+  priceChangeGainLoss?: T;
+  currency?: T;
+  maturityStage?: T;
+  fairValueMeasurement?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "mineral-resource-assets_select".
+ */
+export interface MineralResourceAssetsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  concessionType?: T;
+  jurisdiction?: T;
+  concessionId?: T;
+  capitalisedAmount?: T;
+  measurementPolicy?: T;
+  commercialViabilityDate?: T;
+  reclassifiedToCollection?: T;
+  reclassifiedToId?: T;
+  impairmentLoss?: T;
+  currency?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "investment-properties_select".
+ */
+export interface InvestmentPropertiesSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  property?: T;
+  acquisitionDate?: T;
+  acquisitionCost?: T;
+  measurementModel?: T;
+  currentFairValue?: T;
+  fairValueChangeYtd?: T;
+  rentalIncomeYtd?: T;
+  directOperatingExpensesYtd?: T;
+  currency?: T;
+  transferReason?: T;
+  lease?: T;
+  fairValueMeasurement?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "provisions_select".
+ */
+export interface ProvisionsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  description?: T;
+  provisionType?: T;
+  legalEntity?: T;
+  recognitionDate?: T;
+  period?: T;
+  currency?: T;
+  bestEstimate?: T;
+  undiscountedAmount?: T;
+  discountRate?: T;
+  discountedAmount?: T;
+  expectedSettlementDate?: T;
+  expectedSettlementWindow?: T;
+  reimbursementExpected?:
+    | T
+    | {
+        amount?: T;
+        isVirtuallyCertain?: T;
+        reimbursingParty?: T;
+      };
+  movementHistory?:
+    | T
+    | {
+        period?: T;
+        movementType?: T;
+        amount?: T;
+        journalEntry?: T;
+        movementDate?: T;
+        memo?: T;
+        id?: T;
+      };
+  uncertaintySource?: T;
+  sourceFinding?: T;
+  requiresLegalReview?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "government-grants_select".
+ */
+export interface GovernmentGrantsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  grantName?: T;
+  grantorName?: T;
+  grantorCountryCode?: T;
+  legalEntity?: T;
+  grantType?: T;
+  recognitionMethod?: T;
+  recognitionPattern?: T;
+  awardDate?: T;
+  effectiveStartDate?: T;
+  effectiveEndDate?: T;
+  currency?: T;
+  totalAwarded?: T;
+  amountReceived?: T;
+  recognisedToDate?: T;
+  deferredIncomeBalance?: T;
+  conditions?:
+    | T
+    | {
+        condition?: T;
+        targetDate?: T;
+        status?: T;
+        evidenceRef?: T;
+        id?: T;
+      };
+  clawbackProvision?: T;
+  isEUFunded?: T;
+  euCFCAReference?: T;
+  relatedAsset?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "deferred-tax-items_select".
+ */
+export interface DeferredTaxItemsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  kind?: T;
+  classification?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  jurisdiction?: T;
+  temporaryDifference?: T;
+  taxRate?: T;
+  deferredTaxAmount?: T;
+  currency?: T;
+  recognitionDate?: T;
+  expectedReversalDate?: T;
+  realisationProbability?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "share-based-payments_select".
+ */
+export interface ShareBasedPaymentsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  employee?: T;
+  awardType?: T;
+  settlementType?: T;
+  grantDate?: T;
+  numberOfUnits?: T;
+  strikePrice?: T;
+  fairValueAtGrant?: T;
+  totalGrantValue?: T;
+  currency?: T;
+  vestingSchedule?:
+    | T
+    | {
+        tranche?: T;
+        vestDate?: T;
+        unitsVesting?: T;
+        isCliff?: T;
+        id?: T;
+      };
+  vestingConditions?:
+    | T
+    | {
+        serviceConditionMonths?: T;
+        hasPerformanceCondition?: T;
+        performanceMetric?: T;
+        hasMarketCondition?: T;
+        marketCondition?: T;
+      };
+  expirationDate?: T;
+  forfeitureRateAssumption?: T;
+  cumulativeExpenseRecognised?: T;
+  unitsExercised?: T;
+  unitsForfeited?: T;
+  unitsCancelled?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "business-combinations_select".
+ */
+export interface BusinessCombinationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  acquireeName?: T;
+  acquireeLegalEntity?: T;
+  dealType?: T;
+  acquisitionDate?: T;
+  percentageAcquired?: T;
+  considerationTransferred?: T;
+  cashConsideration?: T;
+  equityConsideration?: T;
+  contingentConsideration?: T;
+  nciFairValue?: T;
+  previouslyHeldInterestFairValue?: T;
+  fairValueIdentifiableNetAssets?: T;
+  goodwill?: T;
+  isBargainPurchase?: T;
+  currency?: T;
+  ppaAllocations?:
+    | T
+    | {
+        category?: T;
+        fairValue?: T;
+        description?: T;
+        usefulLifeYears?: T;
+        id?: T;
+      };
+  measurementPeriodEndDate?: T;
+  transactionCosts?: T;
+  journalEntry?: T;
+  evidenceAttestation?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "held-for-sale-classifications_select".
+ */
+export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  classificationKind?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  classificationDate?: T;
+  expectedSaleDate?: T;
+  carryingAmountAtClassification?: T;
+  fairValue?: T;
+  costsToSell?: T;
+  fairValueLessCostsToSell?: T;
+  impairmentLoss?: T;
+  currency?: T;
+  isDiscontinuedOperation?: T;
+  segment?: T;
+  actualSaleDate?: T;
+  actualSaleProceeds?: T;
+  gainLossOnDisposal?: T;
+  fairValueMeasurement?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fair-value-measurements_select".
+ */
+export interface FairValueMeasurementsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  level?: T;
+  valuationTechnique?: T;
+  measurementDate?: T;
+  fairValue?: T;
+  priorFairValue?: T;
+  fairValueChange?: T;
+  recognitionRoute?: T;
+  currency?: T;
+  level3Inputs?:
+    | T
+    | {
+        inputName?: T;
+        value?: T;
+        rangeMin?: T;
+        rangeMax?: T;
+        sensitivity?: T;
+        id?: T;
+      };
+  principalMarket?: T;
+  valuer?: T;
+  valuationReport?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "earnings-per-share_select".
+ */
+export interface EarningsPerShareSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  period?: T;
+  periodEnd?: T;
+  netProfitAttributableToOrdinary?: T;
+  preferredDividends?: T;
+  basicEpsNumerator?: T;
+  weightedAverageOrdinaryShares?: T;
+  basicEps?: T;
+  dilutivePotentialShares?: T;
+  antiDilutiveShares?: T;
+  dilutedEps?: T;
+  continuingVsDiscontinued?:
+    | T
+    | {
+        continuingEpsBasic?: T;
+        continuingEpsDiluted?: T;
+        discontinuedEpsBasic?: T;
+        discontinuedEpsDiluted?: T;
+      };
+  currency?: T;
+  shareEvents?:
+    | T
+    | {
+        eventDate?: T;
+        eventKind?: T;
+        sharesDelta?: T;
+        splitRatio?: T;
+        id?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "insurance-contracts_select".
+ */
+export interface InsuranceContractsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  measurementModel?: T;
+  lineOfBusiness?: T;
+  portfolioId?: T;
+  cohortYear?: T;
+  profitabilityGroup?: T;
+  inceptionDate?: T;
+  coverageEndDate?: T;
+  futureCashflowsEstimate?: T;
+  discountRate?: T;
+  riskAdjustment?: T;
+  csm?: T;
+  lossComponent?: T;
+  currency?: T;
+  reinsuranceContract?: T;
+  fairValueMeasurement?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "regulatory-deferral-accounts_select".
+ */
+export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  kind?: T;
+  regulator?: T;
+  balance?: T;
+  discountRate?: T;
+  recoveryPeriodEnd?: T;
+  movementInPeriod?: T;
+  currency?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "post-balance-sheet-events_select".
+ */
+export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  period?: T;
+  eventDate?: T;
+  description?: T;
+  classification?: T;
+  eventKind?: T;
+  estimatedImpact?: T;
+  currency?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  journalEntry?: T;
+  disclosedInFS?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transaction-failures_select".
+ */
+export interface TransactionFailuresSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  transactionDate?: T;
+  sourceType?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  reason?: T;
+  statusCode?: T;
+  errorPayload?: T;
+  retryCount?: T;
+  maxRetries?: T;
+  nextRetryAt?: T;
+  lastRetryAt?: T;
+  resolvedBy?: T;
+  resolution?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transfer-pricing-files_select".
+ */
+export interface TransferPricingFilesSelect<T extends boolean = true> {
+  tenant?: T;
+  reference?: T;
+  reportingYear?: T;
+  fileType?: T;
+  jurisdictionCode?: T;
+  localFileEntity?: T;
+  consolidatedHeadEntity?: T;
+  masterFileSections?:
+    | T
+    | {
+        orgStructure?: T;
+        businessDescription?: T;
+        intangibles?: T;
+        intercompanyFinancialActivities?: T;
+        financialAndTaxPositions?: T;
+      };
+  localFileSections?:
+    | T
+    | {
+        localEntityDescription?: T;
+        controlledTransactions?: T;
+        financialInformation?: T;
+      };
+  cbcrAggregates?:
+    | T
+    | {
+        jurisdictionCode?: T;
+        unrelatedRevenue?: T;
+        relatedRevenue?: T;
+        totalRevenue?: T;
+        profitBeforeTax?: T;
+        incomeTaxPaidCash?: T;
+        incomeTaxAccrued?: T;
+        statedCapital?: T;
+        accumulatedEarnings?: T;
+        numberOfEmployees?: T;
+        tangibleAssets?: T;
+        id?: T;
+      };
+  tpMethod?: T;
+  reportingCurrency?: T;
+  consolidatedRevenue?: T;
+  cbcrFilingThresholdMet?: T;
+  pillarTwoApplicable?: T;
+  preparationDate?: T;
+  filingDeadline?: T;
+  filingDate?: T;
+  filingStatus?: T;
+  evidenceAttestation?: T;
+  apaReference?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "standards_select".
+ */
+export interface StandardsSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  standardId?: T;
+  title?: T;
+  family?: T;
+  publisher?: T;
+  version?: T;
+  url?: T;
+  effectiveFrom?: T;
+  effectiveUntil?: T;
+  supersededBy?: T;
+  supersedes?: T;
+  supersessionRationale?: T;
+  conflicts?:
+    | T
+    | {
+        otherStandard?: T;
+        rationale?: T;
+        lawId?: T;
+        severity?: T;
+        id?: T;
+      };
+  citingModules?:
+    | T
+    | {
+        modulePath?: T;
+        banner?: T;
+        section?: T;
+        id?: T;
+      };
+  adoptionStatus?: T;
+  exemptionRationale?: T;
+  liveContentUuid?: T;
+  didUri?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "memories_select".
+ */
+export interface MemoriesSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  memoryRef?: T;
+  title?: T;
+  ownerType?: T;
+  ownerId?: T;
+  kind?: T;
+  key?: T;
+  payload?: T;
+  rationale?: T;
+  recordedAt?: T;
+  expiresAt?: T;
+  contentUuid?: T;
+  relatedTo?:
+    | T
+    | {
+        collection?: T;
+        docId?: T;
+        edgeKind?: T;
+        id?: T;
+      };
+  cycleUuid?: T;
+  emittedFromEvent?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "mcp-tool-metadata_select".
+ */
+export interface McpToolMetadataSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  toolName?: T;
+  area?: T;
+  description?: T;
+  displayName?: T;
+  tags?:
+    | T
+    | {
+        tag?: T;
+        id?: T;
+      };
+  documentationUrl?: T;
+  enabled?: T;
+  lastSyncedFromCatalogAt?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "translations_select".
+ */
+export interface TranslationsSelect<T extends boolean = true> {
+  tenant?: T;
+  uuid?: T;
+  translationKey?: T;
+  scope?: T;
+  key?: T;
+  value?: T;
+  note?: T;
+  overrides?:
+    | T
+    | {
+        collection?: T;
+        docId?: T;
+        platformDefault?: T;
+      };
+  effectiveFrom?: T;
+  effectiveUntil?: T;
+  contentUuid?: T;
+  relatedTo?:
+    | T
+    | {
+        collection?: T;
+        docId?: T;
+        edgeKind?: T;
+        id?: T;
+      };
+  sharedAcrossRoleProfile?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "commitments_select".
+ */
+export interface CommitmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  commitmentNumber?: T;
+  commitmentAmount?: T;
+  currency?: T;
+  commitmentDescription?: T;
+  authorizationLevel?: T;
+  authorizedBy?: T;
+  authorizationDate?: T;
+  authorizationExpiryDate?: T;
+  approvalStatus?: T;
+  spendingProfile?:
+    | T
+    | {
+        department?: T;
+        budgetLine?: T;
+        vendorName?: T;
+      };
+  budgetReservation?:
+    | T
+    | {
+        reservedAmount?: T;
+        committedAmount?: T;
+        spentAmount?: T;
+        availableBalance?: T;
+      };
+  linkedPurchaseOrder?: T;
+  linkedContract?: T;
+  zkod?:
+    | T
+    | {
+        mandatoryArbitrationClause?: T;
+        zkodCommitmentNumber?: T;
+        zkodNotarized?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  approvalComments?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-amendments_select".
+ */
+export interface ContractAmendmentsSelect<T extends boolean = true> {
+  tenant?: T;
+  amendmentTitle?: T;
+  contract?: T;
+  amendmentDate?: T;
+  modificationReason?: T;
+  originalTermsSummary?: T;
+  newEffectiveTerms?: T;
+  revenueImpactAmount?: T;
+  currency?: T;
+  impactClassification?: T;
+  varianceAnalysis?:
+    | T
+    | {
+        plannedCompletionDate?: T;
+        revisedCompletionDate?: T;
+        completionDateVarianceDays?: T;
+      };
+  approvalStatus?: T;
+  zkod?:
+    | T
+    | {
+        zkodNotarized?: T;
+        zkodNotaryReference?: T;
+        mandatoryArbitration?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  internalNotes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-performance_select".
+ */
+export interface ContractPerformanceSelect<T extends boolean = true> {
+  tenant?: T;
+  contract?: T;
+  performanceObligationIndex?: T;
+  milestoneTitle?: T;
+  milestoneSequence?: T;
+  acceptanceCriteria?: T;
+  controlTransferMethod?: T;
+  plannedCompletionDate?: T;
+  actualCompletionDate?: T;
+  completionDateVarianceDays?: T;
+  completionStatus?: T;
+  controlTransferredAt?: T;
+  associatedInvoice?: T;
+  revenueRecognizedAmount?: T;
+  currency?: T;
+  revenueRecognizedAt?: T;
+  associatedSalesOrder?: T;
+  zkod?:
+    | T
+    | {
+        zkodAcceptanceProtocolDate?: T;
+        zkodAcceptanceProtocolNumber?: T;
+        mandatoryArbitration?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  performanceNotes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-signatures_select".
+ */
+export interface ContractSignaturesSelect<T extends boolean = true> {
+  tenant?: T;
+  signatureTitle?: T;
+  contract?: T;
+  signatureSequence?: T;
+  signatoryRole?: T;
+  signatoryName?: T;
+  signatoryEmail?: T;
+  signatoryTitle?: T;
+  signatureStatus?: T;
+  signatureTimestamp?: T;
+  signatureProvider?: T;
+  signatureVerificationUrl?: T;
+  digitalCertificateVerified?: T;
+  pdfStorageLink?: T;
+  rejectionInfo?:
+    | T
+    | {
+        rejectionReason?: T;
+        rejectedBy?: T;
+        rejectedAt?: T;
+      };
+  zkod?:
+    | T
+    | {
+        zkodNotarized?: T;
+        zkodNotaryReference?: T;
+        mandatoryArbitrationAttested?: T;
+        bulgariaEidVerified?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  approvalComments?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contract-templates_select".
+ */
+export interface ContractTemplatesSelect<T extends boolean = true> {
+  templateName?: T;
+  templateCategory?: T;
+  description?: T;
+  templateVersion?: T;
+  effectiveFromDate?: T;
+  effectiveToDate?: T;
+  approvalStatus?: T;
+  clauseLibrary?:
+    | T
+    | {
+        clauseId?: T;
+        clauseTitle?: T;
+        clauseText?: T;
+        isRequired?: T;
+        regulatoryReference?: T;
+        id?: T;
+      };
+  paymentTermDefaults?:
+    | T
+    | {
+        paymentTerms?: T;
+        daysUntilDue?: T;
+        lateFeePercent?: T;
+        discountPercentForEarlyPayment?: T;
+      };
+  liabilityFramework?:
+    | T
+    | {
+        liabilityCap?: T;
+        liabilityExemptions?:
+          | T
+          | {
+              exemptionType?: T;
+              id?: T;
+            };
+        warrantyPeriodDays?: T;
+      };
+  performanceObligationTemplate?:
+    | T
+    | {
+        obligationTitle?: T;
+        obligationSequence?: T;
+        controlTransferMethod?: T;
+        descriptionTemplate?: T;
+        id?: T;
+      };
+  zkod?:
+    | T
+    | {
+        mandatoryArbitrationClauseIncluded?: T;
+        notarizationRequired?: T;
+        zkodRegistryCategory?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  templateNotes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "legal-entities_select".
+ */
+export interface LegalEntitiesSelect<T extends boolean = true> {
+  tenant?: T;
+  legalName?: T;
+  tradeName?: T;
+  legalForm?: T;
+  countryCode?: T;
+  registrationNumber?: T;
+  vatNumber?: T;
+  lei?: T;
+  consolidationMethod?: T;
+  consolidationStatus?: T;
+  isHeadEntity?: T;
+  parent?: T;
+  ownershipPercent?: T;
+  votingPercent?: T;
+  functionalCurrency?: T;
+  presentationCurrency?: T;
+  reportingFramework?: T;
+  ifrsAdoptionDate?: T;
+  statutoryYearEnd?: T;
+  registeredAddress?:
+    | T
+    | {
+        street?: T;
+        city?: T;
+        postalCode?: T;
+        region?: T;
+        countryCode?: T;
+      };
+  sicCode?: T;
+  naceCode?: T;
+  effectiveFrom?: T;
+  effectiveTo?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ai-suggestions_select".
+ */
+export interface AiSuggestionsSelect<T extends boolean = true> {
+  tenant?: T;
+  suggestionId?: T;
+  feature?: T;
+  model?: T;
+  inferenceTime?: T;
+  inputs?: T;
+  outputs?: T;
+  confidence?: T;
+  aiRiskClass?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  humanDecision?: T;
+  decisionMaker?: T;
+  decisionAt?: T;
+  decisionRationale?: T;
+  appliedTo?: T;
+  gateway?:
+    | T
+    | {
+        gatewayId?: T;
+        cacheStatus?: T;
+        tokensIn?: T;
+        tokensOut?: T;
+        latencyMs?: T;
+        usageRecord?: T;
+      };
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "usage-records_select".
+ */
+export interface UsageRecordsSelect<T extends boolean = true> {
+  tenant?: T;
+  eventId?: T;
+  feature?: T;
+  meterKind?: T;
+  quantity?: T;
+  eventTime?: T;
+  billingPeriod?: T;
+  subscription?: T;
+  sourceCollection?: T;
+  sourceId?: T;
+  rate?: T;
+  currency?: T;
+  amount?: T;
+  invoice?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -14269,4651 +23637,6 @@ export interface TransactionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "exports_select".
- */
-export interface ExportsSelect<T extends boolean = true> {
-  name?: T;
-  format?: T;
-  limit?: T;
-  page?: T;
-  sort?: T;
-  sortOrder?: T;
-  locale?: T;
-  drafts?: T;
-  selectionToUse?: T;
-  fields?: T;
-  collectionSlug?: T;
-  where?: T;
-  updatedAt?: T;
-  createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "imports_select".
- */
-export interface ImportsSelect<T extends boolean = true> {
-  collectionSlug?: T;
-  importMode?: T;
-  matchField?: T;
-  status?: T;
-  summary?:
-    | T
-    | {
-        imported?: T;
-        updated?: T;
-        total?: T;
-        issues?: T;
-        issueDetails?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-events_select".
- */
-export interface AuditEventsSelect<T extends boolean = true> {
-  tenant?: T;
-  eventId?: T;
-  timestamp?: T;
-  eventType?: T;
-  source?: T;
-  collectionSlug?: T;
-  operation?: T;
-  documentId?: T;
-  user?: T;
-  previousStatus?: T;
-  nextStatus?: T;
-  changes?:
-    | T
-    | {
-        field?: T;
-        previousValue?: T;
-        nextValue?: T;
-        id?: T;
-      };
-  changeSummary?: T;
-  sources?: T;
-  requestId?: T;
-  severity?: T;
-  previousHash?: T;
-  rowHash?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-jurisdictions_select".
- */
-export interface TaxJurisdictionsSelect<T extends boolean = true> {
-  code?: T;
-  name?: T;
-  authorityName?: T;
-  geography?:
-    | T
-    | {
-        country?: T;
-        region?: T;
-        level?: T;
-      };
-  registration?:
-    | T
-    | {
-        registrationNumber?: T;
-        registrationDate?: T;
-        deregistrationDate?: T;
-      };
-  filing?:
-    | T
-    | {
-        filingFrequency?: T;
-        filingDueDayOfMonth?: T;
-        currency?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
-  tenant?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-codes_select".
- */
-export interface TaxCodesSelect<T extends boolean = true> {
-  code?: T;
-  label?: T;
-  identity?:
-    | T
-    | {
-        description?: T;
-      };
-  classification?:
-    | T
-    | {
-        taxType?: T;
-        categoryCode?: T;
-        jurisdiction?: T;
-      };
-  rate?:
-    | T
-    | {
-        ratePercent?: T;
-        compoundedOn?: T;
-        reverseChargeEligible?: T;
-        recoverable?: T;
-      };
-  validity?:
-    | T
-    | {
-        effectiveFrom?: T;
-        effectiveTo?: T;
-        isActive?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultCollectionAccount?: T;
-        defaultRemittanceAccount?: T;
-        defaultExpenseAccount?: T;
-      };
-  metadata?: T;
-  tenant?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-periods_select".
- */
-export interface FiscalPeriodsSelect<T extends boolean = true> {
-  label?: T;
-  identity?:
-    | T
-    | {
-        fiscalYear?: T;
-        periodNumber?: T;
-        periodType?: T;
-      };
-  dates?:
-    | T
-    | {
-        startDate?: T;
-        endDate?: T;
-      };
-  lifecycle?:
-    | T
-    | {
-        status?: T;
-        closedAt?: T;
-        closedBy?: T;
-        lockedAt?: T;
-        lockedBy?: T;
-        reopenedAt?: T;
-        reopenedBy?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
-  tenant?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "standards_select".
- */
-export interface StandardsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  standardId?: T;
-  title?: T;
-  family?: T;
-  publisher?: T;
-  version?: T;
-  url?: T;
-  effectiveFrom?: T;
-  effectiveUntil?: T;
-  supersededBy?: T;
-  supersedes?: T;
-  supersessionRationale?: T;
-  conflicts?:
-    | T
-    | {
-        otherStandard?: T;
-        rationale?: T;
-        lawId?: T;
-        severity?: T;
-        id?: T;
-      };
-  citingModules?:
-    | T
-    | {
-        modulePath?: T;
-        banner?: T;
-        section?: T;
-        id?: T;
-      };
-  adoptionStatus?: T;
-  exemptionRationale?: T;
-  liveContentUuid?: T;
-  didUri?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "memories_select".
- */
-export interface MemoriesSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  memoryRef?: T;
-  title?: T;
-  ownerType?: T;
-  ownerId?: T;
-  kind?: T;
-  key?: T;
-  payload?: T;
-  rationale?: T;
-  recordedAt?: T;
-  expiresAt?: T;
-  contentUuid?: T;
-  relatedTo?:
-    | T
-    | {
-        collection?: T;
-        docId?: T;
-        edgeKind?: T;
-        id?: T;
-      };
-  cycleUuid?: T;
-  emittedFromEvent?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mcp-tool-metadata_select".
- */
-export interface McpToolMetadataSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  toolName?: T;
-  area?: T;
-  description?: T;
-  displayName?: T;
-  tags?:
-    | T
-    | {
-        tag?: T;
-        id?: T;
-      };
-  documentationUrl?: T;
-  enabled?: T;
-  lastSyncedFromCatalogAt?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "translations_select".
- */
-export interface TranslationsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  translationKey?: T;
-  scope?: T;
-  key?: T;
-  value?: T;
-  note?: T;
-  overrides?:
-    | T
-    | {
-        collection?: T;
-        docId?: T;
-        platformDefault?: T;
-      };
-  effectiveFrom?: T;
-  effectiveUntil?: T;
-  contentUuid?: T;
-  relatedTo?:
-    | T
-    | {
-        collection?: T;
-        docId?: T;
-        edgeKind?: T;
-        id?: T;
-      };
-  sharedAcrossRoleProfile?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customers_select".
- */
-export interface CustomersSelect<T extends boolean = true> {
-  code?: T;
-  name?: T;
-  country?: T;
-  identity?:
-    | T
-    | {
-        legalName?: T;
-        customerType?: T;
-        status?: T;
-      };
-  contact?:
-    | T
-    | {
-        email?: T;
-        phone?: T;
-        website?: T;
-      };
-  addresses?:
-    | T
-    | {
-        addresses?: T;
-        billingAddress?: T;
-        shippingAddress?: T;
-      };
-  tax?:
-    | T
-    | {
-        vatNumber?: T;
-        vatNumberType?: T;
-        taxExempt?: T;
-        taxExemptionCertificate?: T;
-        defaultTaxCode?: T;
-      };
-  commercial?:
-    | T
-    | {
-        paymentTerms?: T;
-        paymentTermsDays?: T;
-        creditLimit?: T;
-        creditCurrency?: T;
-        defaultCurrency?: T;
-        defaultLocale?: T;
-        priceList?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultReceivableAccount?: T;
-        defaultRevenueAccount?: T;
-        defaultDiscountAccount?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
-  tenant?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendors_select".
- */
-export interface VendorsSelect<T extends boolean = true> {
-  code?: T;
-  name?: T;
-  country?: T;
-  identity?:
-    | T
-    | {
-        legalName?: T;
-        vendorType?: T;
-        status?: T;
-      };
-  contact?:
-    | T
-    | {
-        email?: T;
-        phone?: T;
-        website?: T;
-      };
-  addresses?:
-    | T
-    | {
-        addresses?: T;
-        remitToAddress?: T;
-      };
-  tax?:
-    | T
-    | {
-        vatNumber?: T;
-        vatNumberType?: T;
-        taxExempt?: T;
-        defaultTaxCode?: T;
-        vendor1099Eligible?: T;
-        tax1099FormType?: T;
-        taxIdType?: T;
-        withholdingRate?: T;
-      };
-  commercial?:
-    | T
-    | {
-        paymentTerms?: T;
-        paymentTermsDays?: T;
-        preferredPaymentMethod?: T;
-        defaultCurrency?: T;
-        defaultLocale?: T;
-      };
-  bank?:
-    | T
-    | {
-        bankAccountName?: T;
-        bankName?: T;
-        bankRoutingNumber?: T;
-        bankAccountNumber?: T;
-        bankIban?: T;
-        bankSwiftBic?: T;
-        bankCountryCode?: T;
-      };
-  ledger?:
-    | T
-    | {
-        defaultPayableAccount?: T;
-        defaultExpenseAccount?: T;
-        defaultWithholdingAccount?: T;
-      };
-  notes?:
-    | T
-    | {
-        note?: T;
-      };
-  metadata?: T;
-  tenant?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "kyc-checks_select".
- */
-export interface KycChecksSelect<T extends boolean = true> {
-  tenant?: T;
-  checkId?: T;
-  subjectType?: T;
-  subject?: T;
-  cddLevel?: T;
-  identityDocuments?:
-    | T
-    | {
-        docType?: T;
-        docNumber?: T;
-        issuingCountry?: T;
-        expiresAt?: T;
-        id?: T;
-      };
-  sanctionsScreening?:
-    | T
-    | {
-        screenedAt?: T;
-        lists?: T;
-        matchFound?: T;
-        matchDetails?: T;
-      };
-  pepStatus?: T;
-  riskRating?: T;
-  status?: T;
-  completedAt?: T;
-  nextReviewDue?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "beneficial-owners_select".
- */
-export interface BeneficialOwnersSelect<T extends boolean = true> {
-  tenant?: T;
-  entity?: T;
-  fullName?: T;
-  dateOfBirth?: T;
-  nationality?: T;
-  residenceCountry?: T;
-  residenceAddress?: T;
-  ownershipPercent?: T;
-  controlType?: T;
-  pepStatus?: T;
-  kycCheck?: T;
-  status?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gl-accounts_select".
- */
-export interface GlAccountsSelect<T extends boolean = true> {
-  tenant?: T;
-  accountNumber?: T;
-  accountName?: T;
-  accountType?: T;
-  role?: T;
-  parentAccount?: T;
-  normalBalance?: T;
-  balance?: T;
-  balanceInBaseCurrency?: T;
-  currency?: T;
-  status?: T;
-  description?: T;
-  isTaxAccount?: T;
-  tags?:
-    | T
-    | {
-        tag?: T;
-        id?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "journal-entries_select".
- */
-export interface JournalEntriesSelect<T extends boolean = true> {
-  tenant?: T;
-  entryNumber?: T;
-  entryDate?: T;
-  postedDate?: T;
-  description?: T;
-  status?: T;
-  lines?:
-    | T
-    | {
-        lineNumber?: T;
-        glAccount?: T;
-        accountNumber?: T;
-        accountName?: T;
-        description?: T;
-        debit?: T;
-        credit?: T;
-        currency?: T;
-        exchangeRate?: T;
-        id?: T;
-      };
-  debitTotal?: T;
-  creditTotal?: T;
-  isBalanced?: T;
-  sourceType?: T;
-  sourceId?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gl-postings_select".
- */
-export interface GlPostingsSelect<T extends boolean = true> {
-  tenant?: T;
-  postingId?: T;
-  sourceType?: T;
-  sourceId?: T;
-  sourceDate?: T;
-  journalEntry?: T;
-  status?: T;
-  postedDate?: T;
-  accountsAffected?:
-    | T
-    | {
-        glAccount?: T;
-        accountNumber?: T;
-        accountName?: T;
-        debitAmount?: T;
-        creditAmount?: T;
-        currency?: T;
-        id?: T;
-      };
-  totalDebits?: T;
-  totalCredits?: T;
-  errorMessage?: T;
-  reversalPostingId?: T;
-  metadata?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-accounts_select".
- */
-export interface BankAccountsSelect<T extends boolean = true> {
-  tenant?: T;
-  accountName?: T;
-  iban?: T;
-  bic?: T;
-  accountNumber?: T;
-  routingNumber?: T;
-  institution?: T;
-  country?: T;
-  currency?: T;
-  glAccount?: T;
-  purpose?: T;
-  status?: T;
-  openedAt?: T;
-  closedAt?: T;
-  statements?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-statements_select".
- */
-export interface BankStatementsSelect<T extends boolean = true> {
-  tenant?: T;
-  statementId?: T;
-  bankAccount?: T;
-  statementDate?: T;
-  statementPeriodStart?: T;
-  currency?: T;
-  openingBalance?: T;
-  closingBalance?: T;
-  transactions?:
-    | T
-    | {
-        transactionDate?: T;
-        amount?: T;
-        description?: T;
-        reference?: T;
-        balanceAfter?: T;
-        id?: T;
-      };
-  reconciliationStatus?: T;
-  matchedTransactions?:
-    | T
-    | {
-        bankStatementLineIndex?: T;
-        journalEntry?: T;
-        matchType?: T;
-        matchScore?: T;
-        varianceAmount?: T;
-        id?: T;
-      };
-  totalMatched?: T;
-  totalUnmatched?: T;
-  variance?: T;
-  reconciliationNotes?: T;
-  reconciliationDate?: T;
-  reconciliedBy?: T;
-  importSource?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-transactions_select".
- */
-export interface BankTransactionsSelect<T extends boolean = true> {
-  tenant?: T;
-  externalId?: T;
-  accountServicerReference?: T;
-  endToEndId?: T;
-  bankAccount?: T;
-  statement?: T;
-  valueDate?: T;
-  bookingDate?: T;
-  amount?: T;
-  creditDebitIndicator?: T;
-  bookingStatus?: T;
-  currency?: T;
-  description?: T;
-  counterpartyName?: T;
-  counterpartyIban?: T;
-  counterpartyBic?: T;
-  reference?: T;
-  bankTransactionDomain?: T;
-  bankTransactionFamily?: T;
-  bankTransactionSubFamily?: T;
-  transactionCode?: T;
-  chargeBearer?: T;
-  matchStatus?: T;
-  matchedJournalEntries?:
-    | T
-    | {
-        journalEntry?: T;
-        matchedAmount?: T;
-        matchScore?: T;
-        id?: T;
-      };
-  matchedAt?: T;
-  matchedBy?: T;
-  status?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-orders_select".
- */
-export interface PurchaseOrdersSelect<T extends boolean = true> {
-  tenant?: T;
-  poNumber?: T;
-  vendor?: T;
-  orderDate?: T;
-  expectedDeliveryDate?: T;
-  lines?:
-    | T
-    | {
-        lineNumber?: T;
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        glAccount?: T;
-        quantityReceived?: T;
-        id?: T;
-      };
-  subtotal?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  currency?: T;
-  status?: T;
-  submittedAt?: T;
-  sentAt?: T;
-  closedAt?: T;
-  receipts?: T;
-  invoice?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "goods-receipts_select".
- */
-export interface GoodsReceiptsSelect<T extends boolean = true> {
-  tenant?: T;
-  receiptNumber?: T;
-  purchaseOrder?: T;
-  receivedDate?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        description?: T;
-        quantityReceived?: T;
-        quantityDamaged?: T;
-        condition?: T;
-        id?: T;
-      };
-  status?: T;
-  inspectedAt?: T;
-  inspectedBy?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quotes_select".
- */
-export interface QuotesSelect<T extends boolean = true> {
-  tenant?: T;
-  quoteNumber?: T;
-  customer?: T;
-  issuedAt?: T;
-  expiresAt?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        id?: T;
-      };
-  subtotal?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  currency?: T;
-  status?: T;
-  sentAt?: T;
-  acceptedAt?: T;
-  convertedToOrder?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contracts_select".
- */
-export interface ContractsSelect<T extends boolean = true> {
-  tenant?: T;
-  contractNumber?: T;
-  customer?: T;
-  title?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  totalValue?: T;
-  currency?: T;
-  transactionPriceFixed?: T;
-  transactionPriceVariable?: T;
-  variableConsiderationMethod?: T;
-  financingComponent?: T;
-  combinedWithContracts?: T;
-  paymentTerms?: T;
-  performanceObligations?: T;
-  modifications?:
-    | T
-    | {
-        modifiedAt?: T;
-        description?: T;
-        priceImpact?: T;
-        modifiedBy?: T;
-        id?: T;
-      };
-  status?: T;
-  activatedAt?: T;
-  terminatedAt?: T;
-  subscription?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-obligations_select".
- */
-export interface PerformanceObligationsSelect<T extends boolean = true> {
-  tenant?: T;
-  contract?: T;
-  description?: T;
-  kind?: T;
-  recognitionTiming?: T;
-  overTimeMeasurement?: T;
-  measurementKind?: T;
-  recognitionMethod?: T;
-  standaloneSellingPrice?: T;
-  currency?: T;
-  allocatedAmount?: T;
-  recognisedToDate?: T;
-  percentComplete?: T;
-  status?: T;
-  satisfiedAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales-orders_select".
- */
-export interface SalesOrdersSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  orderNumber?: T;
-  customer?: T;
-  customerOrderReference?: T;
-  quote?: T;
-  contract?: T;
-  orderDate?: T;
-  requestedDeliveryDate?: T;
-  promisedDeliveryDate?: T;
-  shippingAddress?: T;
-  billingAddress?: T;
-  currency?: T;
-  subTotalAmount?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  lines?:
-    | T
-    | {
-        lineNumber?: T;
-        item?: T;
-        description?: T;
-        quantity?: T;
-        unitOfMeasure?: T;
-        unitPrice?: T;
-        lineNet?: T;
-        taxCategory?: T;
-        discount?: T;
-        requestedDeliveryDate?: T;
-        id?: T;
-      };
-  fulfilledQuantity?: T;
-  invoicedAmount?: T;
-  cancellationDate?: T;
-  cancellationReason?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "shipments_select".
- */
-export interface ShipmentsSelect<T extends boolean = true> {
-  tenant?: T;
-  shipmentNumber?: T;
-  order?: T;
-  shipFromAddress?: T;
-  shipToAddress?: T;
-  carrier?: T;
-  trackingNumber?: T;
-  trackingUrl?: T;
-  shippingCost?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        quantity?: T;
-        id?: T;
-      };
-  status?: T;
-  shippedAt?: T;
-  deliveredAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "returns_select".
- */
-export interface ReturnsSelect<T extends boolean = true> {
-  tenant?: T;
-  rmaNumber?: T;
-  order?: T;
-  customer?: T;
-  reason?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        quantityReturned?: T;
-        restock?: T;
-        id?: T;
-      };
-  status?: T;
-  authorisedAt?: T;
-  receivedAt?: T;
-  restockedAt?: T;
-  creditMemo?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "warehouse-locations_select".
- */
-export interface WarehouseLocationsSelect<T extends boolean = true> {
-  tenant?: T;
-  code?: T;
-  name?: T;
-  type?: T;
-  address?: T;
-  country?: T;
-  region?: T;
-  glAccount?: T;
-  bins?:
-    | T
-    | {
-        binCode?: T;
-        description?: T;
-        id?: T;
-      };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "inventory-movements_select".
- */
-export interface InventoryMovementsSelect<T extends boolean = true> {
-  tenant?: T;
-  movementId?: T;
-  kind?: T;
-  item?: T;
-  lotOrSerial?: T;
-  quantity?: T;
-  unitCost?: T;
-  extendedCost?: T;
-  valuationMethod?: T;
-  currency?: T;
-  fromLocation?: T;
-  toLocation?: T;
-  movementAt?: T;
-  sourceDocumentType?: T;
-  sourceDocumentId?: T;
-  journalEntry?: T;
-  status?: T;
-  postedAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "financial-statements_select".
- */
-export interface FinancialStatementsSelect<T extends boolean = true> {
-  tenant?: T;
-  statementId?: T;
-  statementType?: T;
-  language?: T;
-  fiscalPeriodStart?: T;
-  fiscalPeriodEnd?: T;
-  currency?: T;
-  statementContent?: T;
-  financialRatios?:
-    | T
-    | {
-        ratioName?: T;
-        ratioValue?: T;
-        category?: T;
-        interpretation?: T;
-        id?: T;
-      };
-  comparativePeriod?: T;
-  comparativeData?: T;
-  notes?: T;
-  status?: T;
-  exportFormats?:
-    | T
-    | {
-        format?: T;
-        fileUrl?: T;
-        generatedAt?: T;
-        id?: T;
-      };
-  generatedAt?: T;
-  generatedBy?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "period-end-adjustments_select".
- */
-export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
-  tenant?: T;
-  adjustmentId?: T;
-  adjustmentType?: T;
-  period?: T;
-  description?: T;
-  adjustmentAmount?: T;
-  debitAccount?: T;
-  creditAccount?: T;
-  journalEntry?: T;
-  status?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "depreciation-schedules_select".
- */
-export interface DepreciationSchedulesSelect<T extends boolean = true> {
-  tenant?: T;
-  scheduleId?: T;
-  fixedAsset?: T;
-  periodEnd?: T;
-  periodStart?: T;
-  depreciationAmount?: T;
-  accumulatedAfter?: T;
-  bookValueAfter?: T;
-  currency?: T;
-  method?: T;
-  status?: T;
-  postedAt?: T;
-  journalEntry?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-calculations_select".
- */
-export interface TaxCalculationsSelect<T extends boolean = true> {
-  tenant?: T;
-  calculationId?: T;
-  taxType?: T;
-  jurisdiction?: T;
-  period?: T;
-  taxRate?: T;
-  grossAmount?: T;
-  taxableAmount?: T;
-  taxAmount?: T;
-  netAmount?: T;
-  taxPayableAccount?: T;
-  taxExpenseAccount?: T;
-  journalEntry?: T;
-  status?: T;
-  filingDeadline?: T;
-  paymentDeadline?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tax-returns_select".
- */
-export interface TaxReturnsSelect<T extends boolean = true> {
-  tenant?: T;
-  returnId?: T;
-  returnType?: T;
-  jurisdiction?: T;
-  periodStart?: T;
-  periodEnd?: T;
-  taxableSales?: T;
-  taxableAcquisitions?: T;
-  outputTax?: T;
-  inputTax?: T;
-  netLiability?: T;
-  currency?: T;
-  taxCalculations?: T;
-  status?: T;
-  filedAt?: T;
-  filedBy?: T;
-  authorityReference?: T;
-  paidAt?: T;
-  attachments?:
-    | T
-    | {
-        media?: T;
-        id?: T;
-      };
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "currency-rates_select".
- */
-export interface CurrencyRatesSelect<T extends boolean = true> {
-  tenant?: T;
-  rateId?: T;
-  fromCurrency?: T;
-  toCurrency?: T;
-  rate?: T;
-  rateDate?: T;
-  source?: T;
-  inverse?: T;
-  midMarketRate?: T;
-  bidRate?: T;
-  askRate?: T;
-  isActive?: T;
-  usedInTransactions?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "credit-memos_select".
- */
-export interface CreditMemosSelect<T extends boolean = true> {
-  tenant?: T;
-  memoNumber?: T;
-  customer?: T;
-  invoice?: T;
-  reason?: T;
-  reasonDetail?: T;
-  amount?: T;
-  currency?: T;
-  status?: T;
-  issuedAt?: T;
-  appliedAt?: T;
-  settledAt?: T;
-  journalEntry?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "refunds_select".
- */
-export interface RefundsSelect<T extends boolean = true> {
-  tenant?: T;
-  refundNumber?: T;
-  creditMemo?: T;
-  invoice?: T;
-  order?: T;
-  amount?: T;
-  currency?: T;
-  method?: T;
-  stripeRefundId?: T;
-  status?: T;
-  refundedAt?: T;
-  settledAt?: T;
-  failureReason?: T;
-  journalEntry?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fixed-assets_select".
- */
-export interface FixedAssetsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  assetNumber?: T;
-  description?: T;
-  assetCategory?: T;
-  acquisitionDate?: T;
-  assetCost?: T;
-  currency?: T;
-  supplier?: T;
-  purchaseOrder?: T;
-  location?: T;
-  serialNumber?: T;
-  barcode?: T;
-  depreciationMethod?: T;
-  usefulLifeYears?: T;
-  residualValue?: T;
-  depreciableBase?: T;
-  annualDepreciationAmount?: T;
-  accumulatedDepreciation?: T;
-  bookValue?: T;
-  depreciationStartDate?: T;
-  lastDepreciationDate?: T;
-  totalUnitsExpected?: T;
-  unitsProducedToDate?: T;
-  assetAccount?: T;
-  accumulatedDepreciationAccount?: T;
-  depreciationExpenseAccount?: T;
-  status?: T;
-  disposalDate?: T;
-  disposalProceeds?: T;
-  gainOnDisposal?: T;
-  lastMaintenanceDate?: T;
-  nextMaintenanceDate?: T;
-  maintenanceNotes?: T;
-  notes?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "budget-planning_select".
- */
-export interface BudgetPlanningSelect<T extends boolean = true> {
-  tenant?: T;
-  budgetId?: T;
-  fiscalYear?: T;
-  department?: T;
-  budgetPeriod?: T;
-  budgetLineItems?:
-    | T
-    | {
-        glAccount?: T;
-        accountNumber?: T;
-        accountName?: T;
-        accountType?: T;
-        budgetAmount?: T;
-        notes?: T;
-        id?: T;
-      };
-  totalBudget?: T;
-  currency?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consent-records_select".
- */
-export interface ConsentRecordsSelect<T extends boolean = true> {
-  tenant?: T;
-  consentId?: T;
-  dataSubject?: T;
-  purpose?: T;
-  lawfulBasis?: T;
-  consentText?: T;
-  consentVersion?: T;
-  capturedVia?: T;
-  ipAddress?: T;
-  userAgent?: T;
-  status?: T;
-  givenAt?: T;
-  withdrawnAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "data-subject-requests_select".
- */
-export interface DataSubjectRequestsSelect<T extends boolean = true> {
-  tenant?: T;
-  requestId?: T;
-  dataSubject?: T;
-  requestType?: T;
-  requestDetail?: T;
-  submittedAt?: T;
-  dueAt?: T;
-  status?: T;
-  completedAt?: T;
-  rejectionReason?: T;
-  fulfilmentEvidence?: T;
-  handler?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "data-processing-activities_select".
- */
-export interface DataProcessingActivitiesSelect<T extends boolean = true> {
-  tenant?: T;
-  activityName?: T;
-  purpose?: T;
-  controllerOrProcessor?: T;
-  lawfulBasis?: T;
-  dataCategories?:
-    | T
-    | {
-        category?: T;
-        special?: T;
-        id?: T;
-      };
-  dataSubjectCategories?:
-    | T
-    | {
-        category?: T;
-        id?: T;
-      };
-  recipientCategories?:
-    | T
-    | {
-        recipient?: T;
-        id?: T;
-      };
-  thirdCountryTransfers?:
-    | T
-    | {
-        country?: T;
-        safeguard?: T;
-        id?: T;
-      };
-  retentionPeriod?: T;
-  securityMeasures?: T;
-  status?: T;
-  reviewDueAt?: T;
-  dpo?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-findings_select".
- */
-export interface AuditFindingsSelect<T extends boolean = true> {
-  tenant?: T;
-  findingId?: T;
-  title?: T;
-  description?: T;
-  severity?: T;
-  classification?: T;
-  controlTest?: T;
-  reportedAt?: T;
-  reportedBy?: T;
-  remediationPlan?: T;
-  remediationOwner?: T;
-  targetCloseDate?: T;
-  status?: T;
-  closedAt?: T;
-  closedBy?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "control-tests_select".
- */
-export interface ControlTestsSelect<T extends boolean = true> {
-  tenant?: T;
-  testId?: T;
-  controlName?: T;
-  controlObjective?: T;
-  controlFrequency?: T;
-  testType?: T;
-  periodStart?: T;
-  periodEnd?: T;
-  sampleSize?: T;
-  exceptions?: T;
-  result?: T;
-  evidence?: T;
-  tester?: T;
-  reviewer?: T;
-  findings?: T;
-  status?: T;
-  signedOffAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "api-audit-events_select".
- */
-export interface ApiAuditEventsSelect<T extends boolean = true> {
-  tenant?: T;
-  eventId?: T;
-  kind?: T;
-  country?: T;
-  source?: T;
-  resultOk?: T;
-  errorMessage?: T;
-  payloadIn?: T;
-  payloadOut?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "evidence-attestations_select".
- */
-export interface EvidenceAttestationsSelect<T extends boolean = true> {
-  tenant?: T;
-  attestationId?: T;
-  workflow?: T;
-  country?: T;
-  capturedAt?: T;
-  pdfA?: T;
-  pdfUa?: T;
-  signed?: T;
-  padesLevel?: T;
-  pdfFile?: T;
-  signatureValue?: T;
-  signedAt?: T;
-  signingCertificate?: T;
-  signedBy?: T;
-  signatureDigest?: T;
-  stepsCount?: T;
-  gapsCount?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cost-centers_select".
- */
-export interface CostCentersSelect<T extends boolean = true> {
-  tenant?: T;
-  costCenterCode?: T;
-  name?: T;
-  kind?: T;
-  parent?: T;
-  country?: T;
-  manager?: T;
-  reportableSegment?: T;
-  allowsRevenue?: T;
-  allowsExpense?: T;
-  allowsCapex?: T;
-  allocationRules?:
-    | T
-    | {
-        targetCostCenter?: T;
-        basis?: T;
-        percentage?: T;
-        id?: T;
-      };
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leases_select".
- */
-export interface LeasesSelect<T extends boolean = true> {
-  tenant?: T;
-  leaseNumber?: T;
-  description?: T;
-  lessor?: T;
-  classification?: T;
-  underlyingAssetCategory?: T;
-  commencementDate?: T;
-  endDate?: T;
-  leaseTermMonths?: T;
-  fixedPayment?: T;
-  paymentFrequency?: T;
-  paymentTiming?: T;
-  variablePaymentNotes?: T;
-  residualValueGuarantee?: T;
-  terminationPenalty?: T;
-  discountRateBasis?: T;
-  discountRatePercent?: T;
-  currency?: T;
-  initialLeaseLiability?: T;
-  initialDirectCosts?: T;
-  leaseIncentivesReceived?: T;
-  prepaidRent?: T;
-  initialRouAsset?: T;
-  rouAssetCarrying?: T;
-  liabilityCarrying?: T;
-  lastPostingDate?: T;
-  modifications?:
-    | T
-    | {
-        effectiveDate?: T;
-        kind?: T;
-        newDiscountRatePercent?: T;
-        newFixedPayment?: T;
-        newEndDate?: T;
-        notes?: T;
-        id?: T;
-      };
-  impairmentReserve?: T;
-  status?: T;
-  terminationDate?: T;
-  rouAssetAccount?: T;
-  leaseLiabilityAccount?: T;
-  rouAmortizationAccount?: T;
-  interestExpenseAccount?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "lease-period-postings_select".
- */
-export interface LeasePeriodPostingsSelect<T extends boolean = true> {
-  tenant?: T;
-  postingId?: T;
-  lease?: T;
-  periodStart?: T;
-  periodEnd?: T;
-  currency?: T;
-  openingLiabilityCarrying?: T;
-  openingRouCarrying?: T;
-  interest?: T;
-  principalRepayment?: T;
-  cashPayment?: T;
-  rouAmortisation?: T;
-  closingLiabilityCarrying?: T;
-  closingRouCarrying?: T;
-  interestExpenseAccount?: T;
-  leaseLiabilityAccount?: T;
-  rouAmortisationAccount?: T;
-  accumulatedRouAmortisationAccount?: T;
-  cashAccount?: T;
-  costCenter?: T;
-  status?: T;
-  postedAt?: T;
-  journalEntry?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sepa-mandates_select".
- */
-export interface SepaMandatesSelect<T extends boolean = true> {
-  tenant?: T;
-  mandateId?: T;
-  localInstrument?: T;
-  debtorName?: T;
-  debtorIban?: T;
-  debtorBic?: T;
-  debtor?: T;
-  creditorIdentifier?: T;
-  signatureDate?: T;
-  mandateDocument?: T;
-  signatureMethod?: T;
-  sequenceState?: T;
-  lastCollectionAt?: T;
-  expiryDate?: T;
-  revokedAt?: T;
-  revocationReason?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-runs_select".
- */
-export interface PaymentRunsSelect<T extends boolean = true> {
-  tenant?: T;
-  runId?: T;
-  messageType?: T;
-  sequenceType?: T;
-  localInstrument?: T;
-  sourceBankAccount?: T;
-  currency?: T;
-  requestedExecutionDate?: T;
-  transactions?:
-    | T
-    | {
-        endToEndId?: T;
-        amount?: T;
-        counterpartyName?: T;
-        counterpartyIban?: T;
-        counterpartyBic?: T;
-        remittanceReference?: T;
-        mandateId?: T;
-        sourceBill?: T;
-        paymentRecord?: T;
-        id?: T;
-      };
-  numberOfTransactions?: T;
-  controlSum?: T;
-  preparedBy?: T;
-  preparedAt?: T;
-  authorisedBy?: T;
-  authorisedAt?: T;
-  exportFilename?: T;
-  exportedAt?: T;
-  submittedAt?: T;
-  settledAt?: T;
-  bankResponseStatus?: T;
-  bankResponseReasonCode?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "account-reconciliations_select".
- */
-export interface AccountReconciliationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reconciliationId?: T;
-  kind?: T;
-  glAccount?: T;
-  bankAccount?: T;
-  asOfDate?: T;
-  periodStart?: T;
-  periodEnd?: T;
-  currency?: T;
-  balancePerExternal?: T;
-  balancePerGL?: T;
-  externalAdjustments?:
-    | T
-    | {
-        category?: T;
-        description?: T;
-        amount?: T;
-        originatedAt?: T;
-        agingBucket?: T;
-        bankTransaction?: T;
-        journalEntry?: T;
-        id?: T;
-      };
-  glAdjustments?:
-    | T
-    | {
-        category?: T;
-        description?: T;
-        amount?: T;
-        originatedAt?: T;
-        agingBucket?: T;
-        journalEntry?: T;
-        id?: T;
-      };
-  adjustedExternalBalance?: T;
-  adjustedGLBalance?: T;
-  difference?: T;
-  preparedBy?: T;
-  preparedAt?: T;
-  reviewedBy?: T;
-  reviewedAt?: T;
-  rejectionReason?: T;
-  status?: T;
-  sourceStatement?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "dunning-cycles_select".
- */
-export interface DunningCyclesSelect<T extends boolean = true> {
-  tenant?: T;
-  cycleId?: T;
-  invoice?: T;
-  customer?: T;
-  currency?: T;
-  amountOverdue?: T;
-  invoiceDueDate?: T;
-  daysPastDue?: T;
-  currentStage?: T;
-  currentStageEnteredAt?: T;
-  nextActionDate?: T;
-  history?:
-    | T
-    | {
-        stage?: T;
-        enteredAt?: T;
-        amountOverdueAtEntry?: T;
-        communicationSent?: T;
-        communicationReference?: T;
-        notes?: T;
-        id?: T;
-      };
-  paused?: T;
-  pauseReason?: T;
-  paymentPlanRef?: T;
-  eclProvision?: T;
-  writeOffJournalEntry?: T;
-  status?: T;
-  resolvedAt?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "employees_select".
- */
-export interface EmployeesSelect<T extends boolean = true> {
-  tenant?: T;
-  employeeNumber?: T;
-  displayName?: T;
-  identity?:
-    | T
-    | {
-        givenName?: T;
-        familyName?: T;
-        dateOfBirth?: T;
-        nationalIdRef?: T;
-        citizenshipCountry?: T;
-      };
-  contact?:
-    | T
-    | {
-        workEmail?: T;
-        personalEmail?: T;
-        phone?: T;
-      };
-  jobTitle?: T;
-  employmentType?: T;
-  department?: T;
-  manager?: T;
-  workCountry?: T;
-  hireDate?: T;
-  probationEndDate?: T;
-  contractEndDate?: T;
-  terminationDate?: T;
-  terminationReason?: T;
-  currency?: T;
-  compensation?:
-    | T
-    | {
-        baseSalaryAnnual?: T;
-        fteRatio?: T;
-        paySchedule?: T;
-        targetBonusPercent?: T;
-        targetBonusBasis?: T;
-      };
-  benefits?:
-    | T
-    | {
-        pensionPlan?: T;
-        pensionEmployerContributionPercent?: T;
-        healthInsurance?: T;
-        lifeInsurance?: T;
-        paidTimeOffDaysPerYear?: T;
-        paidTimeOffBalance?: T;
-      };
-  payrollBankAccount?:
-    | T
-    | {
-        iban?: T;
-        bic?: T;
-        accountHolder?: T;
-      };
-  tax?:
-    | T
-    | {
-        taxIdRef?: T;
-        socialSecurityIdRef?: T;
-        taxResidenceCountry?: T;
-      };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "time-entries_select".
- */
-export interface TimeEntriesSelect<T extends boolean = true> {
-  tenant?: T;
-  entryId?: T;
-  employee?: T;
-  workDate?: T;
-  minutes?: T;
-  kind?: T;
-  costCenter?: T;
-  project?: T;
-  task?: T;
-  description?: T;
-  billable?: T;
-  billableRate?: T;
-  status?: T;
-  submittedAt?: T;
-  rejectionReason?: T;
-  payrollRun?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payroll-runs_select".
- */
-export interface PayrollRunsSelect<T extends boolean = true> {
-  tenant?: T;
-  runId?: T;
-  paySchedule?: T;
-  periodStart?: T;
-  periodEnd?: T;
-  paymentDate?: T;
-  currency?: T;
-  sourceBankAccount?: T;
-  lines?:
-    | T
-    | {
-        employee?: T;
-        regularMinutes?: T;
-        overtime15Minutes?: T;
-        overtime2Minutes?: T;
-        nightShiftMinutes?: T;
-        holidayWorkMinutes?: T;
-        ptoMinutes?: T;
-        sickMinutes?: T;
-        baseGross?: T;
-        overtimeGross?: T;
-        bonusGross?: T;
-        totalGross?: T;
-        incomeTaxWithheld?: T;
-        socialSecurityEmployee?: T;
-        pensionEmployee?: T;
-        otherDeductions?: T;
-        netPay?: T;
-        socialSecurityEmployer?: T;
-        pensionEmployer?: T;
-        payrollTaxesEmployer?: T;
-        costCenter?: T;
-        paySlipDocument?: T;
-        id?: T;
-      };
-  employeeCount?: T;
-  totalGross?: T;
-  totalDeductions?: T;
-  totalNet?: T;
-  totalEmployerSideAccruals?: T;
-  preparedBy?: T;
-  preparedAt?: T;
-  authorisedBy?: T;
-  authorisedAt?: T;
-  status?: T;
-  journalEntry?: T;
-  paymentRun?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bank-reconciliations_select".
- */
-export interface BankReconciliationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  bankAccount?: T;
-  reconciliationDate?: T;
-  periodStart?: T;
-  periodEnd?: T;
-  bankStatement?: T;
-  currency?: T;
-  bankStatementBalance?: T;
-  bookBalance?: T;
-  difference?: T;
-  reconcilingItems?:
-    | T
-    | {
-        kind?: T;
-        amount?: T;
-        description?: T;
-        reference?: T;
-        id?: T;
-      };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "intercompany-transactions_select".
- */
-export interface IntercompanyTransactionsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  fromTenant?: T;
-  toTenant?: T;
-  fromLegalEntity?: T;
-  toLegalEntity?: T;
-  transactionDate?: T;
-  pairKind?: T;
-  currency?: T;
-  debitAmount?: T;
-  creditAmount?: T;
-  fromJournalEntry?: T;
-  toJournalEntry?: T;
-  transferPricingDoc?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consolidation-eliminations_select".
- */
-export interface ConsolidationEliminationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  consolidationDate?: T;
-  eliminationType?: T;
-  currency?: T;
-  debitAmount?: T;
-  creditAmount?: T;
-  subsidiaries?:
-    | T
-    | {
-        tenant?: T;
-        role?: T;
-        id?: T;
-      };
-  sourceJournalEntry?: T;
-  sourceIntercompany?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "prior-period-adjustments_select".
- */
-export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  adjustmentDate?: T;
-  postDate?: T;
-  priorPeriod?: T;
-  reason?: T;
-  errorCategory?: T;
-  currency?: T;
-  amount?: T;
-  restatementJournalEntry?: T;
-  disclosureText?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "rounding-adjustments_select".
- */
-export interface RoundingAdjustmentsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  adjustmentDate?: T;
-  fromCurrency?: T;
-  toCurrency?: T;
-  roundingAmount?: T;
-  rounding?:
-    | T
-    | {
-        roundingType?: T;
-        precisionUnit?: T;
-      };
-  reason?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transaction-failures_select".
- */
-export interface TransactionFailuresSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  transactionDate?: T;
-  sourceType?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  reason?: T;
-  statusCode?: T;
-  errorPayload?: T;
-  retryCount?: T;
-  maxRetries?: T;
-  nextRetryAt?: T;
-  lastRetryAt?: T;
-  resolvedBy?: T;
-  resolution?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fx-transactions_select".
- */
-export interface FxTransactionsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  transactionDate?: T;
-  transactionKind?: T;
-  fromCurrency?: T;
-  toCurrency?: T;
-  fromAmount?: T;
-  exchangeRate?: T;
-  toAmount?: T;
-  fxGainLoss?: T;
-  currencyRate?: T;
-  journalEntry?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  description?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-allocations_select".
- */
-export interface PaymentAllocationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  payment?: T;
-  targetType?: T;
-  invoice?: T;
-  allocationDate?: T;
-  allocatedAmount?: T;
-  allocatedFx?: T;
-  isFullySettling?: T;
-  allocatedBy?: T;
-  allocationKind?: T;
-  reverseOf?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bills-of-materials_select".
- */
-export interface BillsOfMaterialsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  finishedGood?: T;
-  version?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  producedQuantity?: T;
-  components?:
-    | T
-    | {
-        item?: T;
-        quantity?: T;
-        unitOfMeasure?: T;
-        wasteAllowance?: T;
-        isOptional?: T;
-        id?: T;
-      };
-  operations?:
-    | T
-    | {
-        sequence?: T;
-        description?: T;
-        workCenter?: T;
-        standardLabourMinutes?: T;
-        standardMachineMinutes?: T;
-        id?: T;
-      };
-  engineeringChangeOrder?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "work-orders_select".
- */
-export interface WorkOrdersSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  bom?: T;
-  finishedGood?: T;
-  plannedQuantity?: T;
-  completedQuantity?: T;
-  scrappedQuantity?: T;
-  releaseDate?: T;
-  dueDate?: T;
-  completedAt?: T;
-  demandSource?: T;
-  demandReference?: T;
-  targetWarehouse?: T;
-  standardCosts?:
-    | T
-    | {
-        standardMaterialCost?: T;
-        standardLabourCost?: T;
-        standardOverheadCost?: T;
-        standardTotalCost?: T;
-      };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "production-receipts_select".
- */
-export interface ProductionReceiptsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  workOrder?: T;
-  finishedGood?: T;
-  receivedQuantity?: T;
-  targetWarehouse?: T;
-  lotNumber?: T;
-  serialNumbers?: T;
-  receiptDate?: T;
-  currency?: T;
-  cost?:
-    | T
-    | {
-        materialCost?: T;
-        labourCost?: T;
-        overheadCost?: T;
-        absorbedCost?: T;
-        unitCost?: T;
-      };
-  inventoryMovement?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cost-variances_select".
- */
-export interface CostVariancesSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  workOrder?: T;
-  varianceDate?: T;
-  currency?: T;
-  variances?:
-    | T
-    | {
-        materialPriceVariance?: T;
-        materialQuantityVariance?: T;
-        labourRateVariance?: T;
-        labourEfficiencyVariance?: T;
-        overheadSpendingVariance?: T;
-        overheadVolumeVariance?: T;
-      };
-  totalVariance?: T;
-  disposition?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quality-inspections_select".
- */
-export interface QualityInspectionsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  inspectionType?: T;
-  item?: T;
-  inspectedQuantity?: T;
-  sampleSize?: T;
-  failedQuantity?: T;
-  workOrder?: T;
-  goodsReceipt?: T;
-  shipment?: T;
-  inspectionDate?: T;
-  inspector?: T;
-  outcome?: T;
-  failureReason?: T;
-  capaReference?: T;
-  inventoryMovement?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "carriers_select".
- */
-export interface CarriersSelect<T extends boolean = true> {
-  tenant?: T;
-  code?: T;
-  name?: T;
-  scope?: T;
-  accountNumber?: T;
-  apiBaseUrl?: T;
-  apiCredentialsId?: T;
-  serviceLevels?:
-    | T
-    | {
-        code?: T;
-        label?: T;
-        incoterm?: T;
-        transitDays?: T;
-        id?: T;
-      };
-  supportsHazmat?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "tracking-events_select".
- */
-export interface TrackingEventsSelect<T extends boolean = true> {
-  tenant?: T;
-  shipment?: T;
-  carrier?: T;
-  trackingNumber?: T;
-  eventCode?: T;
-  eventTime?: T;
-  location?: T;
-  locationCountry?: T;
-  description?: T;
-  signedBy?: T;
-  sourcePayload?: T;
-  eventSource?: T;
-  triggeredRevenueRecognition?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customs-declarations_select".
- */
-export interface CustomsDeclarationsSelect<T extends boolean = true> {
-  tenant?: T;
-  mrn?: T;
-  declarationType?: T;
-  shipment?: T;
-  declarationDate?: T;
-  countryOfDispatch?: T;
-  countryOfDestination?: T;
-  countryOfOrigin?: T;
-  currency?: T;
-  totalValue?: T;
-  totalDuty?: T;
-  totalImportVat?: T;
-  lines?:
-    | T
-    | {
-        item?: T;
-        description?: T;
-        hsCode?: T;
-        quantity?: T;
-        unitOfMeasure?: T;
-        netWeight?: T;
-        grossWeight?: T;
-        declaredValue?: T;
-        preferentialOrigin?: T;
-        tariffPreferenceCode?: T;
-        id?: T;
-      };
-  incoterm?: T;
-  submittedAt?: T;
-  acceptedAt?: T;
-  releasedAt?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "usage-records_select".
- */
-export interface UsageRecordsSelect<T extends boolean = true> {
-  tenant?: T;
-  eventId?: T;
-  feature?: T;
-  meterKind?: T;
-  quantity?: T;
-  eventTime?: T;
-  billingPeriod?: T;
-  subscription?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  rate?: T;
-  currency?: T;
-  amount?: T;
-  invoice?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "ai-suggestions_select".
- */
-export interface AiSuggestionsSelect<T extends boolean = true> {
-  tenant?: T;
-  suggestionId?: T;
-  feature?: T;
-  model?: T;
-  inferenceTime?: T;
-  inputs?: T;
-  outputs?: T;
-  confidence?: T;
-  aiRiskClass?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  humanDecision?: T;
-  decisionMaker?: T;
-  decisionAt?: T;
-  decisionRationale?: T;
-  appliedTo?: T;
-  gateway?:
-    | T
-    | {
-        gatewayId?: T;
-        cacheStatus?: T;
-        tokensIn?: T;
-        tokensOut?: T;
-        latencyMs?: T;
-        usageRecord?: T;
-      };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "legal-entities_select".
- */
-export interface LegalEntitiesSelect<T extends boolean = true> {
-  tenant?: T;
-  legalName?: T;
-  tradeName?: T;
-  legalForm?: T;
-  countryCode?: T;
-  registrationNumber?: T;
-  vatNumber?: T;
-  lei?: T;
-  consolidationMethod?: T;
-  consolidationStatus?: T;
-  isHeadEntity?: T;
-  parent?: T;
-  ownershipPercent?: T;
-  votingPercent?: T;
-  functionalCurrency?: T;
-  presentationCurrency?: T;
-  reportingFramework?: T;
-  ifrsAdoptionDate?: T;
-  statutoryYearEnd?: T;
-  registeredAddress?:
-    | T
-    | {
-        street?: T;
-        city?: T;
-        postalCode?: T;
-        region?: T;
-        countryCode?: T;
-      };
-  sicCode?: T;
-  naceCode?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "projects_select".
- */
-export interface ProjectsSelect<T extends boolean = true> {
-  tenant?: T;
-  projectCode?: T;
-  name?: T;
-  description?: T;
-  customer?: T;
-  contract?: T;
-  legalEntity?: T;
-  projectManager?: T;
-  projectType?: T;
-  recognitionMethod?: T;
-  currency?: T;
-  contractedAmount?: T;
-  budgetedCost?: T;
-  budgetedHours?: T;
-  budgetedMargin?: T;
-  actualCostToDate?: T;
-  recognisedRevenueToDate?: T;
-  percentComplete?: T;
-  plannedStartDate?: T;
-  plannedEndDate?: T;
-  actualStartDate?: T;
-  actualEndDate?: T;
-  isOnerous?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "project-tasks_select".
- */
-export interface ProjectTasksSelect<T extends boolean = true> {
-  tenant?: T;
-  project?: T;
-  parentTask?: T;
-  taskCode?: T;
-  name?: T;
-  description?: T;
-  assignee?: T;
-  taskType?: T;
-  budgetedHours?: T;
-  actualHours?: T;
-  budgetedCost?: T;
-  actualCost?: T;
-  percentComplete?: T;
-  plannedStartDate?: T;
-  plannedEndDate?: T;
-  actualStartDate?: T;
-  actualEndDate?: T;
-  dependencyTasks?: T;
-  isBillable?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "project-milestones_select".
- */
-export interface ProjectMilestonesSelect<T extends boolean = true> {
-  tenant?: T;
-  project?: T;
-  milestoneNumber?: T;
-  name?: T;
-  description?: T;
-  milestoneType?: T;
-  currency?: T;
-  amount?: T;
-  percentOfContract?: T;
-  plannedDate?: T;
-  achievedDate?: T;
-  achievedBy?: T;
-  invoice?: T;
-  acceptanceDocumentRef?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "wip-snapshots_select".
- */
-export interface WipSnapshotsSelect<T extends boolean = true> {
-  tenant?: T;
-  snapshotRef?: T;
-  project?: T;
-  period?: T;
-  snapshotDate?: T;
-  recognitionMethod?: T;
-  currency?: T;
-  contractedAmount?: T;
-  estimatedTotalCost?: T;
-  costToDate?: T;
-  percentComplete?: T;
-  recognisedRevenue?: T;
-  invoicedToDate?: T;
-  unbilledOrDeferred?: T;
-  estimatedLossProvision?: T;
-  periodEndAdjustment?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recurring-journals_select".
- */
-export interface RecurringJournalsSelect<T extends boolean = true> {
-  tenant?: T;
-  name?: T;
-  description?: T;
-  recurrenceKind?: T;
-  frequency?: T;
-  rrule?: T;
-  startDate?: T;
-  endDate?: T;
-  nextRunDate?: T;
-  lastRunDate?: T;
-  lastRunJournalEntry?: T;
-  remainingRuns?: T;
-  currency?: T;
-  amount?: T;
-  amountFormula?: T;
-  lines?:
-    | T
-    | {
-        glAccount?: T;
-        side?: T;
-        amount?: T;
-        costCenter?: T;
-        project?: T;
-        memo?: T;
-        id?: T;
-      };
-  autoPost?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "provisions_select".
- */
-export interface ProvisionsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  description?: T;
-  provisionType?: T;
-  legalEntity?: T;
-  recognitionDate?: T;
-  period?: T;
-  currency?: T;
-  bestEstimate?: T;
-  undiscountedAmount?: T;
-  discountRate?: T;
-  discountedAmount?: T;
-  expectedSettlementDate?: T;
-  expectedSettlementWindow?: T;
-  reimbursementExpected?:
-    | T
-    | {
-        amount?: T;
-        isVirtuallyCertain?: T;
-        reimbursingParty?: T;
-      };
-  movementHistory?:
-    | T
-    | {
-        period?: T;
-        movementType?: T;
-        amount?: T;
-        journalEntry?: T;
-        movementDate?: T;
-        memo?: T;
-        id?: T;
-      };
-  uncertaintySource?: T;
-  sourceFinding?: T;
-  requiresLegalReview?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "commitments-and-contingencies_select".
- */
-export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  description?: T;
-  kind?: T;
-  category?: T;
-  legalEntity?: T;
-  counterparty?: T;
-  inceptionDate?: T;
-  expectedResolutionDate?: T;
-  likelihood?: T;
-  currency?: T;
-  maximumExposure?: T;
-  expectedOutflow?: T;
-  reimbursementExpected?: T;
-  isOnerousContractRelated?: T;
-  recognisedAsProvision?: T;
-  noteText?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "government-grants_select".
- */
-export interface GovernmentGrantsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  grantName?: T;
-  grantorName?: T;
-  grantorCountryCode?: T;
-  legalEntity?: T;
-  grantType?: T;
-  recognitionMethod?: T;
-  recognitionPattern?: T;
-  awardDate?: T;
-  effectiveStartDate?: T;
-  effectiveEndDate?: T;
-  currency?: T;
-  totalAwarded?: T;
-  amountReceived?: T;
-  recognisedToDate?: T;
-  deferredIncomeBalance?: T;
-  conditions?:
-    | T
-    | {
-        condition?: T;
-        targetDate?: T;
-        status?: T;
-        evidenceRef?: T;
-        id?: T;
-      };
-  clawbackProvision?: T;
-  isEUFunded?: T;
-  euCFCAReference?: T;
-  relatedAsset?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "csrd-disclosures_select".
- */
-export interface CsrdDisclosuresSelect<T extends boolean = true> {
-  tenant?: T;
-  legalEntity?: T;
-  datapointId?: T;
-  reportingYear?: T;
-  esrsCategory?: T;
-  esrsTopic?: T;
-  materiality?: T;
-  narrative?: T;
-  quantitativeKpi?:
-    | T
-    | {
-        value?: T;
-        unit?: T;
-        methodology?: T;
-        priorYearComparison?: T;
-        targetValue?: T;
-        targetYear?: T;
-      };
-  iro?:
-    | T
-    | {
-        kind?: T;
-        timeHorizon?: T;
-        valueChainStage?: T;
-      };
-  assuranceStatus?: T;
-  assuranceProvider?: T;
-  evidenceAttestation?: T;
-  isEUTaxonomyEligible?: T;
-  isEUTaxonomyAligned?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "carbon-emissions_select".
- */
-export interface CarbonEmissionsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  legalEntity?: T;
-  reportingYear?: T;
-  reportingPeriod?: T;
-  scope?: T;
-  category?: T;
-  activityData?:
-    | T
-    | {
-        value?: T;
-        unit?: T;
-        sourceDescription?: T;
-      };
-  emissionFactor?:
-    | T
-    | {
-        value?: T;
-        unit?: T;
-        sourceRef?: T;
-        gwpHorizon?: T;
-      };
-  tCO2eValue?: T;
-  gasBreakdown?:
-    | T
-    | {
-        co2?: T;
-        ch4?: T;
-        n2o?: T;
-        hfc?: T;
-        pfc?: T;
-        sf6?: T;
-        nf3?: T;
-      };
-  methodology?: T;
-  dataQuality?: T;
-  isVerified?: T;
-  verifierName?: T;
-  verificationDate?: T;
-  evidenceAttestation?: T;
-  cbamRelevant?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "transfer-pricing-files_select".
- */
-export interface TransferPricingFilesSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  reportingYear?: T;
-  fileType?: T;
-  jurisdictionCode?: T;
-  localFileEntity?: T;
-  consolidatedHeadEntity?: T;
-  masterFileSections?:
-    | T
-    | {
-        orgStructure?: T;
-        businessDescription?: T;
-        intangibles?: T;
-        intercompanyFinancialActivities?: T;
-        financialAndTaxPositions?: T;
-      };
-  localFileSections?:
-    | T
-    | {
-        localEntityDescription?: T;
-        controlledTransactions?: T;
-        financialInformation?: T;
-      };
-  cbcrAggregates?:
-    | T
-    | {
-        jurisdictionCode?: T;
-        unrelatedRevenue?: T;
-        relatedRevenue?: T;
-        totalRevenue?: T;
-        profitBeforeTax?: T;
-        incomeTaxPaidCash?: T;
-        incomeTaxAccrued?: T;
-        statedCapital?: T;
-        accumulatedEarnings?: T;
-        numberOfEmployees?: T;
-        tangibleAssets?: T;
-        id?: T;
-      };
-  tpMethod?: T;
-  reportingCurrency?: T;
-  consolidatedRevenue?: T;
-  cbcrFilingThresholdMet?: T;
-  pillarTwoApplicable?: T;
-  preparationDate?: T;
-  filingDeadline?: T;
-  filingDate?: T;
-  filingStatus?: T;
-  evidenceAttestation?: T;
-  apaReference?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "lease-modifications_select".
- */
-export interface LeaseModificationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  lease?: T;
-  modificationDate?: T;
-  agreementSignedDate?: T;
-  period?: T;
-  modificationKind?: T;
-  classification?: T;
-  currency?: T;
-  preModification?:
-    | T
-    | {
-        remainingTermMonths?: T;
-        discountRate?: T;
-        liabilityCarryingAmount?: T;
-        rouCarryingAmount?: T;
-        fixedPayment?: T;
-      };
-  postModification?:
-    | T
-    | {
-        newTermMonths?: T;
-        newDiscountRate?: T;
-        newFixedPayment?: T;
-        newPaymentFrequency?: T;
-        considerationPaid?: T;
-      };
-  liabilityRemeasurement?: T;
-  rouAdjustment?: T;
-  gainLossOnModification?: T;
-  journalEntry?: T;
-  agreementDocumentRef?: T;
-  evidenceAttestation?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leads_select".
- */
-export interface LeadsSelect<T extends boolean = true> {
-  tenant?: T;
-  fullName?: T;
-  firstName?: T;
-  lastName?: T;
-  jobTitle?: T;
-  companyName?: T;
-  email?: T;
-  phone?: T;
-  website?: T;
-  industry?: T;
-  companySize?: T;
-  countryCode?: T;
-  preferredLanguage?: T;
-  leadSource?: T;
-  campaign?: T;
-  leadScore?: T;
-  estimatedValue?: T;
-  estimatedCloseDate?: T;
-  assignedTo?: T;
-  convertedOpportunity?: T;
-  convertedCustomer?: T;
-  convertedAt?: T;
-  consentRecord?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "customer-segments_select".
- */
-export interface CustomerSegmentsSelect<T extends boolean = true> {
-  tenant?: T;
-  name?: T;
-  description?: T;
-  segmentType?: T;
-  criteria?: T;
-  priorityRank?: T;
-  discountPercent?: T;
-  paymentTermDays?: T;
-  creditLimit?: T;
-  pricingTier?: T;
-  isPortfolioForIfrs15?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "opportunities_select".
- */
-export interface OpportunitiesSelect<T extends boolean = true> {
-  tenant?: T;
-  name?: T;
-  lead?: T;
-  customer?: T;
-  opportunityOwner?: T;
-  stage?: T;
-  probability?: T;
-  currency?: T;
-  amount?: T;
-  weightedAmount?: T;
-  expectedCloseDate?: T;
-  actualCloseDate?: T;
-  closeReason?: T;
-  competitor?: T;
-  forecastCategory?: T;
-  segment?: T;
-  campaign?: T;
-  contractCreated?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "activities_select".
- */
-export interface ActivitiesSelect<T extends boolean = true> {
-  tenant?: T;
-  subject?: T;
-  activityType?: T;
-  direction?: T;
-  activityDate?: T;
-  durationMinutes?: T;
-  assignedTo?: T;
-  relatedTo?: T;
-  lead?: T;
-  opportunity?: T;
-  customer?: T;
-  vendor?: T;
-  project?: T;
-  description?: T;
-  outcome?: T;
-  nextStep?: T;
-  nextStepDate?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales-commissions_select".
- */
-export interface SalesCommissionsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  salesperson?: T;
-  employee?: T;
-  opportunity?: T;
-  contract?: T;
-  customer?: T;
-  closedWonDate?: T;
-  currency?: T;
-  commissionRule?:
-    | T
-    | {
-        planName?: T;
-        ratePercent?: T;
-        tieredOverride?: T;
-      };
-  contractValue?: T;
-  commissionAmount?: T;
-  recognitionTreatment?: T;
-  amortisationPeriodMonths?: T;
-  amortisedToDate?: T;
-  capitalisedAssetBalance?: T;
-  paymentStatus?: T;
-  paymentDate?: T;
-  paidViaPayrollRun?: T;
-  clawbackProvision?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "purchase-requisitions_select".
- */
-export interface PurchaseRequisitionsSelect<T extends boolean = true> {
-  tenant?: T;
-  requisitionNumber?: T;
-  requisitioner?: T;
-  department?: T;
-  costCenter?: T;
-  project?: T;
-  requestedDate?: T;
-  requiredByDate?: T;
-  businessJustification?: T;
-  lines?:
-    | T
-    | {
-        description?: T;
-        item?: T;
-        quantity?: T;
-        uom?: T;
-        estimatedUnitPrice?: T;
-        estimatedAmount?: T;
-        glAccount?: T;
-        preferredVendor?: T;
-        id?: T;
-      };
-  currency?: T;
-  estimatedTotal?: T;
-  priority?: T;
-  requiresQuotes?: T;
-  minimumQuotesRequired?: T;
-  approvalChain?:
-    | T
-    | {
-        step?: T;
-        approver?: T;
-        role?: T;
-        decision?: T;
-        decidedAt?: T;
-        comment?: T;
-        id?: T;
-      };
-  createdPurchaseOrder?: T;
-  awardedQuote?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-quotes_select".
- */
-export interface VendorQuotesSelect<T extends boolean = true> {
-  tenant?: T;
-  quoteNumber?: T;
-  vendor?: T;
-  requisition?: T;
-  rfqIssuedDate?: T;
-  quoteReceivedDate?: T;
-  validUntil?: T;
-  lines?:
-    | T
-    | {
-        description?: T;
-        item?: T;
-        quantity?: T;
-        uom?: T;
-        unitPrice?: T;
-        lineTotal?: T;
-        leadTimeDays?: T;
-        id?: T;
-      };
-  currency?: T;
-  subtotal?: T;
-  taxAmount?: T;
-  shippingAmount?: T;
-  discountAmount?: T;
-  totalAmount?: T;
-  paymentTerms?: T;
-  incoterms?: T;
-  deliveryDate?: T;
-  isAwarded?: T;
-  awardedDate?: T;
-  awardedBy?: T;
-  awardRationale?: T;
-  createdPurchaseOrder?: T;
-  qualityAssessment?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "vendor-scorecards_select".
- */
-export interface VendorScorecardsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  vendor?: T;
-  periodLabel?: T;
-  periodStartDate?: T;
-  periodEndDate?: T;
-  evaluator?: T;
-  metrics?:
-    | T
-    | {
-        onTimeDeliveryPercent?: T;
-        qualityAcceptanceRate?: T;
-        priceAccuracyPercent?: T;
-        responseTimeAvgHours?: T;
-        returnRatePercent?: T;
-        sustainabilityScore?: T;
-        cybersecurityScore?: T;
-      };
-  volumes?:
-    | T
-    | {
-        totalSpend?: T;
-        numberOfPurchaseOrders?: T;
-        numberOfReceipts?: T;
-        numberOfNonconformances?: T;
-        numberOfReturns?: T;
-      };
-  overallScore?: T;
-  recommendation?: T;
-  improvementPlan?: T;
-  reviewedWithVendor?: T;
-  reviewMeetingDate?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "job-positions_select".
- */
-export interface JobPositionsSelect<T extends boolean = true> {
-  tenant?: T;
-  positionCode?: T;
-  positionTitle?: T;
-  department?: T;
-  costCenter?: T;
-  legalEntity?: T;
-  reportsTo?: T;
-  level?: T;
-  employmentType?: T;
-  fte?: T;
-  jobDescription?: T;
-  requirements?: T;
-  workLocation?: T;
-  workArrangement?: T;
-  currency?: T;
-  salaryRange?:
-    | T
-    | {
-        min?: T;
-        mid?: T;
-        max?: T;
-      };
-  budgetedAnnualCost?: T;
-  currentEmployee?: T;
-  effectiveStartDate?: T;
-  effectiveEndDate?: T;
-  isApprovedHeadcount?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recruiting-pipeline_select".
- */
-export interface RecruitingPipelineSelect<T extends boolean = true> {
-  tenant?: T;
-  candidateName?: T;
-  firstName?: T;
-  lastName?: T;
-  email?: T;
-  phone?: T;
-  linkedinUrl?: T;
-  position?: T;
-  recruiter?: T;
-  hiringManager?: T;
-  applicationDate?: T;
-  source?: T;
-  referrer?: T;
-  stage?: T;
-  interviewSchedule?:
-    | T
-    | {
-        round?: T;
-        scheduledDate?: T;
-        interviewers?: T;
-        feedback?: T;
-        feedbackNotes?: T;
-        id?: T;
-      };
-  offerDetails?:
-    | T
-    | {
-        currency?: T;
-        baseSalary?: T;
-        signOnBonus?: T;
-        equityGrant?: T;
-        targetStartDate?: T;
-        offerExtendedDate?: T;
-        offerExpiryDate?: T;
-      };
-  rejectionReason?: T;
-  consentRecord?: T;
-  piiRetentionUntil?: T;
-  createdEmployee?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "performance-reviews_select".
- */
-export interface PerformanceReviewsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  employee?: T;
-  reviewer?: T;
-  reviewType?: T;
-  reviewPeriod?: T;
-  reviewDate?: T;
-  periodStartDate?: T;
-  periodEndDate?: T;
-  selfAssessment?:
-    | T
-    | {
-        submittedAt?: T;
-        achievements?: T;
-        challenges?: T;
-        developmentAreas?: T;
-        careerGoals?: T;
-        selfRating?: T;
-      };
-  managerReview?:
-    | T
-    | {
-        submittedAt?: T;
-        strengths?: T;
-        areasForImprovement?: T;
-        goalAchievement?: T;
-        developmentPlan?: T;
-      };
-  overallRating?: T;
-  numericScore?: T;
-  competencyRatings?:
-    | T
-    | {
-        competency?: T;
-        rating?: T;
-        comment?: T;
-        id?: T;
-      };
-  outcome?:
-    | T
-    | {
-        recommendsPromotion?: T;
-        newJobPosition?: T;
-        recommendsMeritIncrease?: T;
-        currency?: T;
-        meritIncreasePercent?: T;
-        meritIncreaseAmount?: T;
-        recommendsBonus?: T;
-        bonusAmount?: T;
-        requiresPip?: T;
-      };
-  goalsForNextPeriod?:
-    | T
-    | {
-        goal?: T;
-        measurableOutcome?: T;
-        targetDate?: T;
-        id?: T;
-      };
-  employeeAcknowledged?: T;
-  employeeAcknowledgedAt?: T;
-  employeeComments?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "expense-reports_select".
- */
-export interface ExpenseReportsSelect<T extends boolean = true> {
-  tenant?: T;
-  reportNumber?: T;
-  employee?: T;
-  submissionDate?: T;
-  periodStartDate?: T;
-  periodEndDate?: T;
-  project?: T;
-  costCenter?: T;
-  businessPurpose?: T;
-  lines?:
-    | T
-    | {
-        expenseDate?: T;
-        category?: T;
-        description?: T;
-        merchant?: T;
-        currency?: T;
-        amount?: T;
-        fxRate?: T;
-        reimbursementAmount?: T;
-        glAccount?: T;
-        taxCode?: T;
-        isBillableToCustomer?: T;
-        mileageDistance?: T;
-        mileageRate?: T;
-        receiptAttached?: T;
-        receiptMedia?: T;
-        isPolicyCompliant?: T;
-        policyExceptionReason?: T;
-        id?: T;
-      };
-  reimbursementCurrency?: T;
-  totalAmount?: T;
-  totalReimbursable?: T;
-  totalNonReimbursable?: T;
-  approvalChain?:
-    | T
-    | {
-        step?: T;
-        approver?: T;
-        role?: T;
-        decision?: T;
-        decidedAt?: T;
-        comment?: T;
-        id?: T;
-      };
-  reimbursementMethod?: T;
-  reimbursementDate?: T;
-  reimbursedViaPayrollRun?: T;
-  reimbursedViaPayment?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "leave-requests_select".
- */
-export interface LeaveRequestsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  reference?: T;
-  employee?: T;
-  leaveType?: T;
-  isPaid?: T;
-  submittedDate?: T;
-  startDate?: T;
-  endDate?: T;
-  workingDays?: T;
-  workingHours?: T;
-  partialDay?: T;
-  reason?: T;
-  medicalCertificateRef?: T;
-  balanceImpact?:
-    | T
-    | {
-        entitlementType?: T;
-        beforeBalance?: T;
-        afterBalance?: T;
-        carryOverApplied?: T;
-      };
-  approver?: T;
-  rejectionReason?: T;
-  replacedByEmployee?: T;
-  isHandoverComplete?: T;
-  cancelledDate?: T;
-  cancelReason?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "workflow-definitions_select".
- */
-export interface WorkflowDefinitionsSelect<T extends boolean = true> {
-  tenant?: T;
-  name?: T;
-  description?: T;
-  version?: T;
-  targetCollection?: T;
-  triggerEvent?: T;
-  triggerCondition?: T;
-  steps?:
-    | T
-    | {
-        order?: T;
-        name?: T;
-        kind?: T;
-        assigneeMode?: T;
-        assigneeUser?: T;
-        assigneeRole?: T;
-        amountThreshold?: T;
-        slaHours?: T;
-        escalateTo?: T;
-        allowDelegation?: T;
-        condition?: T;
-        serviceHandler?: T;
-        id?: T;
-      };
-  isActive?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  supersededBy?: T;
-  onTimeoutBehavior?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "workflow-instances_select".
- */
-export interface WorkflowInstancesSelect<T extends boolean = true> {
-  tenant?: T;
-  instanceId?: T;
-  definition?: T;
-  definitionVersion?: T;
-  targetCollection?: T;
-  targetId?: T;
-  submittedBy?: T;
-  submittedAt?: T;
-  currentStep?: T;
-  currentAssignee?: T;
-  currentAssigneeRole?: T;
-  currentStepDueAt?: T;
-  stepHistory?:
-    | T
-    | {
-        stepIndex?: T;
-        stepName?: T;
-        assignee?: T;
-        decision?: T;
-        decidedAt?: T;
-        comment?: T;
-        delegatedTo?: T;
-        auditEventId?: T;
-        id?: T;
-      };
-  finalOutcome?: T;
-  completedAt?: T;
-  errorMessage?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "properties_select".
- */
-export interface PropertiesSelect<T extends boolean = true> {
-  tenant?: T;
-  code?: T;
-  name?: T;
-  description?: T;
-  kind?: T;
-  tenure?: T;
-  address?: T;
-  country?: T;
-  region?: T;
-  measurements?:
-    | T
-    | {
-        grossInternalArea?: T;
-        netInternalArea?: T;
-        siteArea?: T;
-        numberOfFloors?: T;
-        numberOfUnits?: T;
-      };
-  occupancy?:
-    | T
-    | {
-        designedCapacity?: T;
-        currentHeadcount?: T;
-        naceCode?: T;
-      };
-  lifecycle?:
-    | T
-    | {
-        acquiredAt?: T;
-        commissionedAt?: T;
-        plannedDisposalAt?: T;
-        disposedAt?: T;
-      };
-  currency?: T;
-  bookValue?: T;
-  fixedAsset?: T;
-  lease?: T;
-  energyCertificate?:
-    | T
-    | {
-        epcRating?: T;
-        epcExpiresAt?: T;
-        kwhPerSqmYear?: T;
-      };
-  bimReference?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "spaces_select".
- */
-export interface SpacesSelect<T extends boolean = true> {
-  tenant?: T;
-  code?: T;
-  name?: T;
-  property?: T;
-  parentSpace?: T;
-  kind?: T;
-  usageCategory?: T;
-  floor?: T;
-  area?: T;
-  capacity?: T;
-  currentOccupancy?: T;
-  isBookable?: T;
-  amenities?:
-    | T
-    | {
-        tag?: T;
-        id?: T;
-      };
-  safety?:
-    | T
-    | {
-        fireZone?: T;
-        maxOccupancy?: T;
-        isAccessible?: T;
-      };
-  bimElementId?: T;
-  glAccount?: T;
-  costCenter?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bookable-resources_select".
- */
-export interface BookableResourcesSelect<T extends boolean = true> {
-  tenant?: T;
-  code?: T;
-  name?: T;
-  description?: T;
-  kind?: T;
-  category?: T;
-  space?: T;
-  fixedAsset?: T;
-  capacity?: T;
-  unitOfCapacity?: T;
-  rateBasis?: T;
-  currency?: T;
-  baseRate?: T;
-  pricingTiers?:
-    | T
-    | {
-        tierName?: T;
-        rate?: T;
-        effectiveFrom?: T;
-        effectiveTo?: T;
-        minStayDays?: T;
-        isActive?: T;
-        id?: T;
-      };
-  amenities?:
-    | T
-    | {
-        tag?: T;
-        id?: T;
-      };
-  availability?:
-    | T
-    | {
-        minBookingMinutes?: T;
-        maxBookingDays?: T;
-        noticeMinutes?: T;
-        bufferBeforeMinutes?: T;
-        bufferAfterMinutes?: T;
-      };
-  glAccount?: T;
-  taxCode?: T;
-  country?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bookings_select".
- */
-export interface BookingsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  resource?: T;
-  guestType?: T;
-  customer?: T;
-  employee?: T;
-  address?: T;
-  guestName?: T;
-  guestEmail?: T;
-  partySize?: T;
-  startAt?: T;
-  endAt?: T;
-  rrule?: T;
-  channel?: T;
-  channelReference?: T;
-  rateApplied?: T;
-  unitsBilled?: T;
-  subtotalAmount?: T;
-  taxAmount?: T;
-  totalAmount?: T;
-  depositAmount?: T;
-  currency?: T;
-  cancellationPolicy?: T;
-  invoice?: T;
-  journalEntry?: T;
-  status?: T;
-  confirmedAt?: T;
-  checkedInAt?: T;
-  checkedOutAt?: T;
-  cancelledAt?: T;
-  cancelReason?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consignment-arrangements_select".
- */
-export interface ConsignmentArrangementsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  consignee?: T;
-  consigneeName?: T;
-  consigneeWarehouseLocation?: T;
-  effectiveFrom?: T;
-  effectiveTo?: T;
-  controlTransferTrigger?: T;
-  timeOutDays?: T;
-  returnRights?: T;
-  returnWindowDays?: T;
-  currency?: T;
-  maxValue?: T;
-  commissionRatePercent?: T;
-  incoterm?: T;
-  contract?: T;
-  evidenceAttestation?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consignment-inventory_select".
- */
-export interface ConsignmentInventorySelect<T extends boolean = true> {
-  tenant?: T;
-  lineId?: T;
-  arrangement?: T;
-  consigneeWarehouseLocation?: T;
-  itemSku?: T;
-  itemDescription?: T;
-  unitOfMeasure?: T;
-  quantityOnHand?: T;
-  unitCost?: T;
-  valueOnHand?: T;
-  currency?: T;
-  asOfDate?: T;
-  lastShipmentDate?: T;
-  lastSaleDate?: T;
-  valuationMethod?: T;
-  glAccount?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "consignment-sales_select".
- */
-export interface ConsignmentSalesSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  arrangement?: T;
-  consignmentInventory?: T;
-  saleDate?: T;
-  reportedDate?: T;
-  endCustomerRef?: T;
-  quantitySold?: T;
-  unitOfMeasure?: T;
-  unitPrice?: T;
-  grossAmount?: T;
-  commissionRatePercent?: T;
-  commissionAmount?: T;
-  netAmount?: T;
-  cogsAmount?: T;
-  currency?: T;
-  invoice?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-requests_select".
- */
-export interface MaintenanceRequestsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  subject?: T;
-  description?: T;
-  requestType?: T;
-  priority?: T;
-  property?: T;
-  space?: T;
-  fixedAsset?: T;
-  bookableResource?: T;
-  reportedBy?: T;
-  reportedByName?: T;
-  reportedByEmail?: T;
-  reportedAt?: T;
-  targetResolutionAt?: T;
-  photos?:
-    | T
-    | {
-        url?: T;
-        caption?: T;
-        id?: T;
-      };
-  workOrder?: T;
-  triagedBy?: T;
-  triagedAt?: T;
-  closedAt?: T;
-  closureNote?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "maintenance-work-orders_select".
- */
-export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  request?: T;
-  subject?: T;
-  description?: T;
-  workType?: T;
-  priority?: T;
-  capitalisationTreatment?: T;
-  property?: T;
-  space?: T;
-  fixedAsset?: T;
-  bookableResource?: T;
-  assignedTo?: T;
-  vendor?: T;
-  scheduledStartAt?: T;
-  scheduledEndAt?: T;
-  actualStartAt?: T;
-  actualEndAt?: T;
-  parts?:
-    | T
-    | {
-        itemSku?: T;
-        description?: T;
-        quantity?: T;
-        unitOfMeasure?: T;
-        unitCost?: T;
-        lineCost?: T;
-        inventoryMovement?: T;
-        id?: T;
-      };
-  labour?:
-    | T
-    | {
-        employee?: T;
-        hours?: T;
-        hourlyCost?: T;
-        lineCost?: T;
-        timeEntry?: T;
-        id?: T;
-      };
-  partsCost?: T;
-  labourCost?: T;
-  externalCost?: T;
-  totalCost?: T;
-  currency?: T;
-  safety?:
-    | T
-    | {
-        requiresPermitToWork?: T;
-        permitReference?: T;
-        requiresLOTO?: T;
-        isHotWork?: T;
-      };
-  failureCode?: T;
-  rootCause?: T;
-  qualityInspection?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fair-value-measurements_select".
- */
-export interface FairValueMeasurementsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  level?: T;
-  valuationTechnique?: T;
-  measurementDate?: T;
-  fairValue?: T;
-  priorFairValue?: T;
-  fairValueChange?: T;
-  recognitionRoute?: T;
-  currency?: T;
-  level3Inputs?:
-    | T
-    | {
-        inputName?: T;
-        value?: T;
-        rangeMin?: T;
-        rangeMax?: T;
-        sensitivity?: T;
-        id?: T;
-      };
-  principalMarket?: T;
-  valuer?: T;
-  valuationReport?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "deferred-tax-items_select".
- */
-export interface DeferredTaxItemsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  kind?: T;
-  classification?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  jurisdiction?: T;
-  temporaryDifference?: T;
-  taxRate?: T;
-  deferredTaxAmount?: T;
-  currency?: T;
-  recognitionDate?: T;
-  expectedReversalDate?: T;
-  realisationProbability?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "share-based-payments_select".
- */
-export interface ShareBasedPaymentsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  employee?: T;
-  awardType?: T;
-  settlementType?: T;
-  grantDate?: T;
-  numberOfUnits?: T;
-  strikePrice?: T;
-  fairValueAtGrant?: T;
-  totalGrantValue?: T;
-  currency?: T;
-  vestingSchedule?:
-    | T
-    | {
-        tranche?: T;
-        vestDate?: T;
-        unitsVesting?: T;
-        isCliff?: T;
-        id?: T;
-      };
-  vestingConditions?:
-    | T
-    | {
-        serviceConditionMonths?: T;
-        hasPerformanceCondition?: T;
-        performanceMetric?: T;
-        hasMarketCondition?: T;
-        marketCondition?: T;
-      };
-  expirationDate?: T;
-  forfeitureRateAssumption?: T;
-  cumulativeExpenseRecognised?: T;
-  unitsExercised?: T;
-  unitsForfeited?: T;
-  unitsCancelled?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "business-combinations_select".
- */
-export interface BusinessCombinationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  acquireeName?: T;
-  acquireeLegalEntity?: T;
-  dealType?: T;
-  acquisitionDate?: T;
-  percentageAcquired?: T;
-  considerationTransferred?: T;
-  cashConsideration?: T;
-  equityConsideration?: T;
-  contingentConsideration?: T;
-  nciFairValue?: T;
-  previouslyHeldInterestFairValue?: T;
-  fairValueIdentifiableNetAssets?: T;
-  goodwill?: T;
-  isBargainPurchase?: T;
-  currency?: T;
-  ppaAllocations?:
-    | T
-    | {
-        category?: T;
-        fairValue?: T;
-        description?: T;
-        usefulLifeYears?: T;
-        id?: T;
-      };
-  measurementPeriodEndDate?: T;
-  transactionCosts?: T;
-  journalEntry?: T;
-  evidenceAttestation?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "investment-properties_select".
- */
-export interface InvestmentPropertiesSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  property?: T;
-  acquisitionDate?: T;
-  acquisitionCost?: T;
-  measurementModel?: T;
-  currentFairValue?: T;
-  fairValueChangeYtd?: T;
-  rentalIncomeYtd?: T;
-  directOperatingExpensesYtd?: T;
-  currency?: T;
-  transferReason?: T;
-  lease?: T;
-  fairValueMeasurement?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "biological-assets_select".
- */
-export interface BiologicalAssetsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  name?: T;
-  classKind?: T;
-  unitsOnHand?: T;
-  unitOfMeasure?: T;
-  fairValueLessCostsToSell?: T;
-  priorPeriodFvlcts?: T;
-  biologicalTransformationGainLoss?: T;
-  priceChangeGainLoss?: T;
-  currency?: T;
-  maturityStage?: T;
-  fairValueMeasurement?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "mineral-resource-assets_select".
- */
-export interface MineralResourceAssetsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  concessionType?: T;
-  jurisdiction?: T;
-  concessionId?: T;
-  capitalisedAmount?: T;
-  measurementPolicy?: T;
-  commercialViabilityDate?: T;
-  reclassifiedToCollection?: T;
-  reclassifiedToId?: T;
-  impairmentLoss?: T;
-  currency?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "regulatory-deferral-accounts_select".
- */
-export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  kind?: T;
-  regulator?: T;
-  balance?: T;
-  discountRate?: T;
-  recoveryPeriodEnd?: T;
-  movementInPeriod?: T;
-  currency?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "insurance-contracts_select".
- */
-export interface InsuranceContractsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  measurementModel?: T;
-  lineOfBusiness?: T;
-  portfolioId?: T;
-  cohortYear?: T;
-  profitabilityGroup?: T;
-  inceptionDate?: T;
-  coverageEndDate?: T;
-  futureCashflowsEstimate?: T;
-  discountRate?: T;
-  riskAdjustment?: T;
-  csm?: T;
-  lossComponent?: T;
-  currency?: T;
-  reinsuranceContract?: T;
-  fairValueMeasurement?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "held-for-sale-classifications_select".
- */
-export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  classificationKind?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  classificationDate?: T;
-  expectedSaleDate?: T;
-  carryingAmountAtClassification?: T;
-  fairValue?: T;
-  costsToSell?: T;
-  fairValueLessCostsToSell?: T;
-  impairmentLoss?: T;
-  currency?: T;
-  isDiscontinuedOperation?: T;
-  segment?: T;
-  actualSaleDate?: T;
-  actualSaleProceeds?: T;
-  gainLossOnDisposal?: T;
-  fairValueMeasurement?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "earnings-per-share_select".
- */
-export interface EarningsPerShareSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  period?: T;
-  periodEnd?: T;
-  netProfitAttributableToOrdinary?: T;
-  preferredDividends?: T;
-  basicEpsNumerator?: T;
-  weightedAverageOrdinaryShares?: T;
-  basicEps?: T;
-  dilutivePotentialShares?: T;
-  antiDilutiveShares?: T;
-  dilutedEps?: T;
-  continuingVsDiscontinued?:
-    | T
-    | {
-        continuingEpsBasic?: T;
-        continuingEpsDiluted?: T;
-        discontinuedEpsBasic?: T;
-        discontinuedEpsDiluted?: T;
-      };
-  currency?: T;
-  shareEvents?:
-    | T
-    | {
-        eventDate?: T;
-        eventKind?: T;
-        sharesDelta?: T;
-        splitRatio?: T;
-        id?: T;
-      };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "post-balance-sheet-events_select".
- */
-export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
-  tenant?: T;
-  reference?: T;
-  period?: T;
-  eventDate?: T;
-  description?: T;
-  classification?: T;
-  eventKind?: T;
-  estimatedImpact?: T;
-  currency?: T;
-  sourceCollection?: T;
-  sourceId?: T;
-  journalEntry?: T;
-  disclosedInFS?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "redirects_select".
- */
-export interface RedirectsSelect<T extends boolean = true> {
-  from?: T;
-  to?:
-    | T
-    | {
-        type?: T;
-        reference?: T;
-        url?: T;
-      };
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "forms_select".
  */
 export interface FormsSelect<T extends boolean = true> {
@@ -19063,30 +23786,62 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "search_select".
+ * via the `definition` "exports_select".
  */
-export interface SearchSelect<T extends boolean = true> {
-  title?: T;
-  priority?: T;
-  doc?: T;
-  slug?: T;
-  meta?:
+export interface ExportsSelect<T extends boolean = true> {
+  name?: T;
+  format?: T;
+  limit?: T;
+  page?: T;
+  sort?: T;
+  sortOrder?: T;
+  locale?: T;
+  drafts?: T;
+  selectionToUse?: T;
+  fields?: T;
+  collectionSlug?: T;
+  where?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "imports_select".
+ */
+export interface ImportsSelect<T extends boolean = true> {
+  collectionSlug?: T;
+  importMode?: T;
+  matchField?: T;
+  status?: T;
+  summary?:
     | T
     | {
-        title?: T;
-        description?: T;
-        image?: T;
-      };
-  categories?:
-    | T
-    | {
-        relationTo?: T;
-        categoryID?: T;
-        title?: T;
-        id?: T;
+        imported?: T;
+        updated?: T;
+        total?: T;
+        issues?: T;
+        issueDetails?: T;
       };
   updatedAt?: T;
   createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19366,20 +24121,185 @@ export interface TaskCreateCollectionExport {
     batchSize?: number | null;
     collectionSlug:
       | 'tenants'
+      | 'users'
+      | 'roles'
+      | 'user-roles'
       | 'pages'
       | 'posts'
       | 'media'
       | 'categories'
-      | 'roles'
-      | 'user_roles'
-      | 'users'
-      | 'subscriptionPlans'
+      | 'invoices'
+      | 'invoice-lines'
+      | 'payment-methods'
+      | 'payments'
+      | 'subscription-plans'
       | 'subscriptions'
       | 'items'
-      | 'invoices'
-      | 'invoiceLines'
-      | 'paymentMethods'
-      | 'payments'
+      | 'gl-accounts'
+      | 'gl-posting-rules'
+      | 'journal-entries'
+      | 'gl-postings'
+      | 'period-locks'
+      | 'closing-entries'
+      | 'bank-statements'
+      | 'bank-transactions'
+      | 'bank-accounts'
+      | 'account-reconciliations'
+      | 'bank-reconciliations'
+      | 'financial-statements'
+      | 'period-end-adjustments'
+      | 'recurring-journals'
+      | 'prior-period-adjustments'
+      | 'rounding-adjustments'
+      | 'tax-calculations'
+      | 'tax-codes'
+      | 'tax-jurisdictions'
+      | 'tax-returns'
+      | 'currency-rates'
+      | 'fiscal-periods'
+      | 'fiscal-calendars'
+      | 'fiscal-period-snapshots'
+      | 'fixed-assets'
+      | 'depreciation-schedules'
+      | 'customers'
+      | 'leads'
+      | 'opportunities'
+      | 'customer-segments'
+      | 'quotes'
+      | 'sales-orders'
+      | 'sales-commissions'
+      | 'credit-memos'
+      | 'returns'
+      | 'shipments'
+      | 'refunds'
+      | 'payment-allocations'
+      | 'dunning-cycles'
+      | 'vendors'
+      | 'vendor-quotes'
+      | 'vendor-scorecards'
+      | 'purchase-orders'
+      | 'purchase-requisitions'
+      | 'goods-receipts'
+      | 'inventory-movements'
+      | 'warehouse-locations'
+      | 'cost-centers'
+      | 'budget-planning'
+      | 'cost-variances'
+      | 'intercompany-transactions'
+      | 'consolidation-eliminations'
+      | 'fx-transactions'
+      | 'contracts'
+      | 'performance-obligations'
+      | 'commitments-and-contingencies'
+      | 'leases'
+      | 'lease-modifications'
+      | 'lease-period-postings'
+      | 'payment-runs'
+      | 'sepa-mandates'
+      | 'payroll-runs'
+      | 'employees'
+      | 'job-positions'
+      | 'time-entries'
+      | 'leave-requests'
+      | 'performance-reviews'
+      | 'expense-reports'
+      | 'recruiting-pipeline'
+      | 'activities'
+      | 'projects'
+      | 'project-tasks'
+      | 'project-milestones'
+      | 'work-orders'
+      | 'workflow-definitions'
+      | 'workflow-instances'
+      | 'bills-of-materials'
+      | 'production-receipts'
+      | 'quality-inspections'
+      | 'wip-snapshots'
+      | 'properties'
+      | 'spaces'
+      | 'maintenance-requests'
+      | 'maintenance-work-orders'
+      | 'bookable-resources'
+      | 'bookings'
+      | 'carriers'
+      | 'tracking-events'
+      | 'customs-declarations'
+      | 'consignment-arrangements'
+      | 'consignment-inventory'
+      | 'consignment-sales'
+      | 'audit-events'
+      | 'api-audit-events'
+      | 'evidence-attestations'
+      | 'entity-types'
+      | 'taxing-jurisdictions'
+      | 'entity-legal-structures'
+      | 'compliance-frameworks'
+      | 'compliance-requirements'
+      | 'internal-controls'
+      | 'control-tests'
+      | 'audit-samples'
+      | 'compliance-gaps'
+      | 'audit-evidence'
+      | 'audit-findings'
+      | 'audit-trail-events'
+      | 'remediation-plans'
+      | 'audit-committees'
+      | 'audit-committee-members'
+      | 'board-actions'
+      | 'management-certifications'
+      | 'regulatory-reports'
+      | 'internal-policies'
+      | 'statutory-report-templates'
+      | 'statutory-field-mappings'
+      | 'policy-versions'
+      | 'policy-acknowledgments'
+      | 'compliance-deadlines'
+      | 'compliance-notifications'
+      | 'reporting-standards'
+      | 'reporting-mappings'
+      | 'related-party-transactions'
+      | 'management-assessment-icfr'
+      | 'disclosure-checklists'
+      | 'audit-committee-minutes'
+      | 'risk-register'
+      | 'debt-schedule'
+      | 'internal-audit-function'
+      | 'segment-reporting'
+      | 'consent-records'
+      | 'data-subject-requests'
+      | 'data-processing-activities'
+      | 'kyc-checks'
+      | 'beneficial-owners'
+      | 'csrd-disclosures'
+      | 'carbon-emissions'
+      | 'biological-assets'
+      | 'mineral-resource-assets'
+      | 'investment-properties'
+      | 'provisions'
+      | 'government-grants'
+      | 'deferred-tax-items'
+      | 'share-based-payments'
+      | 'business-combinations'
+      | 'held-for-sale-classifications'
+      | 'fair-value-measurements'
+      | 'earnings-per-share'
+      | 'insurance-contracts'
+      | 'regulatory-deferral-accounts'
+      | 'post-balance-sheet-events'
+      | 'transaction-failures'
+      | 'transfer-pricing-files'
+      | 'standards'
+      | 'memories'
+      | 'mcp-tool-metadata'
+      | 'translations'
+      | 'commitments'
+      | 'contract-amendments'
+      | 'contract-performance'
+      | 'contract-signatures'
+      | 'contract-templates'
+      | 'legal-entities'
+      | 'ai-suggestions'
+      | 'usage-records'
       | 'addresses'
       | 'variants'
       | 'variantTypes'
@@ -19388,6 +24308,8 @@ export interface TaskCreateCollectionExport {
       | 'carts'
       | 'orders'
       | 'transactions'
+      | 'forms'
+      | 'form-submissions'
       | 'exports'
       | 'imports';
     drafts?: ('yes' | 'no') | null;

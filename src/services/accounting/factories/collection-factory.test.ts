@@ -16,8 +16,11 @@
 import { describe, it, expect } from 'vitest'
 import { createAccountingCollection } from './collection-factory'
 import {
-  multiTenancyField, notesField, auditFields, statusField, currencyField,
-} from '@/fields/accounting/base-accounting-fields'
+  notesField, auditFields, statusField, currencyField,
+} from '@/fields'
+
+/** Tenant is now injected by plugin-multi-tenant; tests inline a literal to exercise dedup. */
+const tenantField = { name: 'tenant', type: 'relationship' as const, relationTo: 'tenants' }
 
 /** Helper: count occurrences of a field name in a fields array. */
 function countByName(fields: ReadonlyArray<unknown>, name: string): number {
@@ -38,7 +41,7 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
         defaultColumns: ['name'],
       },
       () => [
-        multiTenancyField(),                     // inlined — factory must skip
+        tenantField,
         { name: 'name', type: 'text', required: true },
         notesField(),                            // inlined — factory must skip
       ],
@@ -56,7 +59,7 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
         defaultColumns: ['name'],
       },
       () => [
-        multiTenancyField(),
+        tenantField,
         { name: 'name', type: 'text' },
         currencyField('EUR'),
         statusField(
@@ -92,8 +95,8 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
         { name: 'name', type: 'text', required: true },
       ],
     })
-    // Factory injects tenant + audit fields + notes (default behaviour).
-    expect(countByName(cfg.fields, 'tenant')).toBe(1)
+    // Factory injects audit fields + notes (tenant is owned by plugin-multi-tenant).
+    expect(countByName(cfg.fields, 'tenant')).toBe(0)
     expect(countByName(cfg.fields, 'createdBy')).toBe(1)
     expect(countByName(cfg.fields, 'approvedBy')).toBe(1)
     expect(countByName(cfg.fields, 'approvedAt')).toBe(1)

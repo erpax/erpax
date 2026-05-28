@@ -27,7 +27,6 @@
  *   - `injectAuditFields` — createdBy + approvedBy + approvedAt (default true)
  *   - `injectStatusField`  — status select (requires `statusOptions`; default false)
  *   - `injectNotesField`   — notes textarea (default true)
- *   - `injectMultiTenancy` — tenant relationship (default true)
  *
  * And hook injection (defaults make every collection audit-trailed):
  *
@@ -97,8 +96,8 @@ import { wireChainProducersFor } from '@/services/business-chains/wire-producers
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/auth'
 import type { UserRole } from '@/access/auth'
 import {
-  multiTenancyField, statusField, notesField, auditFields,
-} from '@/fields/accounting/base-accounting-fields'
+  statusField, notesField, auditFields,
+} from '@/fields'
 // Slice PPPPPPPPP (2026-05-11) — tamper-surface review Batch 1.
 // Factory now injects tamperProofUuidField + tamperProofBeforeChangeHook
 // by default so every accounting collection automatically opts into
@@ -173,7 +172,7 @@ export interface AccountingCollectionOptions {
   readonly feature?: string
 
   // ─── Shared-field injection toggles (Slice BBBBB-cut1) ────────────
-  readonly injectMultiTenancy?: boolean    // default true
+  // Tenant scoping is owned by @payloadcms/plugin-multi-tenant, not injected here.
   readonly injectAuditFields?: boolean     // default true
   readonly injectNotesField?: boolean      // default true
   /**
@@ -233,7 +232,6 @@ export const createAccountingCollection = (
   legacyFieldsThunk?: () => Field[],
 ): CollectionConfig => {
   const writeRole: UserRole = opts.roleRequired ?? ('accountant' as UserRole)
-  const injectMultiTenancy = opts.injectMultiTenancy !== false
   const injectAuditFields = opts.injectAuditFields !== false
   const injectNotesField = opts.injectNotesField !== false
   const injectStatusField = opts.injectStatusField === true
@@ -288,10 +286,7 @@ export const createAccountingCollection = (
   if (injectTamperProofUuid && !userFieldNames.has('uuid')) {
     fields.push(...tamperProofUuidField(opts.slug))
   }
-  // 1. Multi-tenancy field
-  if (injectMultiTenancy && !userFieldNames.has('tenant')) {
-    fields.push(multiTenancyField())
-  }
+  // 1. Tenant scoping is injected by @payloadcms/plugin-multi-tenant (see payload.config.ts).
   // 2. User's domain-specific fields (verbatim)
   fields.push(...userFields)
   // 3. Status field

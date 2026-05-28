@@ -1,10 +1,9 @@
 import { CollectionConfig } from 'payload'
-import { isSuperAdminAccess } from '@/access/isSuperAdmin'
+import { isSuperAdminAccess } from '../../access/isSuperAdmin'
 import {
   encryptPaymentMethodData,
   decryptPaymentMethodData,
 } from './hooks/encryptSensitiveFields'
-import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
 
 /**
  * Payment Methods — tokenized card / bank-account references for billing.
@@ -25,7 +24,7 @@ import { multiTenancyField } from '@/fields/accounting/base-accounting-fields'
  * @see docs/STANDARDS.md §3
  */
 export const PaymentMethods: CollectionConfig = {
-  slug: 'paymentMethods',
+  slug: 'payment-methods',
   admin: {
     useAsTitle: 'cardLast4',
     defaultColumns: ['tenant', 'type', 'cardLast4', 'isDefault', 'isActive'],
@@ -41,7 +40,6 @@ export const PaymentMethods: CollectionConfig = {
     afterRead: [decryptPaymentMethodData],
   },
   fields: [
-    multiTenancyField({ hidden: false }),
     {
       name: 'stripePaymentMethodId',
       type: 'text',

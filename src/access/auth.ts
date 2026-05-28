@@ -14,7 +14,9 @@
  */
 
 import type { Access, PayloadRequest } from 'payload'
-import type { UserContext, UserRole, AccessResult } from '@/types/auth'
+import type { UserContext, UserRole, AccessResult } from '../types/auth'
+
+export { isSuperAdminAccess as superAdminOnly } from './isSuperAdmin'
 
 /**
  * Extract user context from request.

@@ -13,12 +13,12 @@
  * @see src/app/README.md
  */
 
-import { getPayloadHMC } from '@payloadcms/next/utilities'
+import { getPayloadHMR } from '@payloadcms/next/utilities'
 import Stripe from 'stripe'
 
 export async function POST(request: Request) {
   try {
-    const { payload, req } = await getPayloadHMC()
+    const { payload, req } = await getPayloadHMR()
 
     // Verify user is authenticated
     if (!req.user) {

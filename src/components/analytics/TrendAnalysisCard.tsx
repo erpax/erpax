@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { AccountingClient } from '../../sdk/accounting-client';
-import { FinancialAnalysisEngine } from '../../plugins/accounting/financial-analysis';
+import { FinancialAnalysisEngine } from '@/services/accounting/financial-analysis';
 
 /**
  * Trend / forecast card — historical line + 3-month projection.

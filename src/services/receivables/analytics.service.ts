@@ -9,7 +9,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { Invoice, Customer } from './types'
+import { Invoice, Customer } from '@/types/receivables'
 
 export class ARAnalytics {
   /**

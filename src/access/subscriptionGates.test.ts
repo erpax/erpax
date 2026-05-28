@@ -20,7 +20,7 @@ import {
   checkFeatureAccess,
   getFeatureLimit,
   getSubscriptionStatus,
-} from '@/access/subscriptionGates'
+} from '../access/subscriptionGates'
 
 /** Partial-shape overrides used by createMockRequest. */
 interface MockRequestOverrides {

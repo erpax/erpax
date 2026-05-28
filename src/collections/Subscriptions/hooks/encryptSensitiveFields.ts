@@ -1,6 +1,6 @@
-import { BeforeChangeHook, AfterReadHook } from 'payload'
-import { encryptFields, decryptFields } from '@/standards/nist-sp-800-38'
-import type { Subscriptions } from '@/payload-types'
+import { CollectionBeforeChangeHook, CollectionAfterReadHook } from 'payload'
+import { encryptFields, decryptFields } from '../../../standards/nist-sp-800-38'
+import type { Subscriptions } from '../../../payload-types'
 
 /**
  * Encryption hooks for Subscriptions — encrypt Stripe customer/subscription IDs.
@@ -21,7 +21,7 @@ const ENCRYPTED_FIELDS = [
 /**
  * Before create/update: Encrypt Stripe identifiers
  */
-export const encryptSubscriptionData: BeforeChangeHook<Subscriptions> = async ({
+export const encryptSubscriptionData: CollectionBeforeChangeHook<Subscriptions> = async ({
   data,
 }) => {
   return encryptFields(data, ENCRYPTED_FIELDS)
@@ -30,7 +30,7 @@ export const encryptSubscriptionData: BeforeChangeHook<Subscriptions> = async ({
 /**
  * After read: Decrypt Stripe identifiers
  */
-export const decryptSubscriptionData: AfterReadHook<Subscriptions> = async ({
+export const decryptSubscriptionData: CollectionAfterReadHook<Subscriptions> = async ({
   doc,
 }) => {
   return decryptFields(doc, ENCRYPTED_FIELDS)

@@ -1,6 +1,6 @@
 import { CollectionConfig } from 'payload'
-import { anyone } from '@/access/anyone'
-import { isSuperAdminAccess } from '@/access/isSuperAdmin'
+import { anyone } from '../../access/anyone'
+import { isSuperAdminAccess } from '../../access/isSuperAdmin'
 
 /**
  * Subscription Plans — pricing-plan catalog (super-admin maintained).
@@ -12,7 +12,7 @@ import { isSuperAdminAccess } from '@/access/isSuperAdmin'
  * @see docs/STANDARDS.md §3
  */
 export const SubscriptionPlans: CollectionConfig = {
-  slug: 'subscriptionPlans',
+  slug: 'subscription-plans',
   admin: {
     useAsTitle: 'name',
     defaultColumns: ['name', 'slug', 'monthlyUSD', 'isActive'],

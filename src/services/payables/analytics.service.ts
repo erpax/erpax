@@ -9,7 +9,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { Bill, Vendor, VendorPerformance } from './types'
+import { Bill, Vendor, VendorPerformance } from '@/types/payables'
 
 export class APAnalytics {
   /**

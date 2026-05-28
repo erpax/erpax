@@ -18,7 +18,7 @@ import {
   filterOpenDocuments,
   type AgingBucket as SharedAgingBucket,
 } from '@/services/parties'
-import type { Invoice, AgingBucket, ARAgingReport } from './types'
+import type { Invoice, AgingBucket, ARAgingReport } from '@/types/receivables'
 
 /**
  * Map a shared aging bucket → A/R-shaped bucket (invoices[] + percentage).
