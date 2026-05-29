@@ -16,7 +16,6 @@ import { r2Storage } from '@payloadcms/storage-r2'
 import { contentUuidPlugin } from './plugins/contentUuid'
 import { taggablePlugin } from './plugins/taggable'
 import { uuidNamesPlugin } from './plugins/naming'
-import { skillRouterPlugin } from './services/skill-router/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -733,9 +732,6 @@ export default buildConfig({
     }),
     createEcommercePlugin(),
     formBuilderPlugin({}),
-    // Catch-all skill router — GET /api/find/<path>.<format> resolves the path
-    // against the skill corpus and serves the matched skill (see skill-router).
-    skillRouterPlugin(),
     // Official content-surface plugins (see the `redirects` + `search` skills).
     // Registering them is what makes `'redirects'`/`'search'` real CollectionSlugs.
     redirectsPlugin({
