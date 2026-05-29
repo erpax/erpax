@@ -61,7 +61,7 @@ describe('fiscalizeOrder', () => {
     await fiscalizeOrder(asPayload(m), ORDER, 't1')
     const arg = m.create.mock.calls[0][0]
     expect(arg.collection).toBe('sales')
-    expect(arg.data.order).toBe('ord-1')
+    expect(arg.data.source).toEqual({ type: 'order', ref: 'ord-1' })
     expect(arg.data.fiscalDeviceNumber).toBe('12345678')
     expect(arg.data.status).toBe('closed')
     expect(arg.data.paymentType).toBe('card')

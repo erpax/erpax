@@ -17862,7 +17862,16 @@ export interface Sale {
   operator?: (string | null) | Operator;
   terminal?: (string | null) | Terminal;
   receipt?: (string | null) | Receipt;
-  order?: (string | null) | Order;
+  /**
+   * Origin of the sale (revenue source) — keys idempotency + сторно.
+   */
+  source?: {
+    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
+    /**
+     * Source document id.
+     */
+    ref?: string | null;
+  };
   reversalOf?: (string | null) | Sale;
   reversedBy?: (string | null) | Sale;
   reversalReason?: string | null;
@@ -25867,7 +25876,12 @@ export interface SalesSelect<T extends boolean = true> {
   operator?: T;
   terminal?: T;
   receipt?: T;
-  order?: T;
+  source?:
+    | T
+    | {
+        type?: T;
+        ref?: T;
+      };
   reversalOf?: T;
   reversedBy?: T;
   reversalReason?: T;

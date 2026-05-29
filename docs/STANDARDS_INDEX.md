@@ -1763,12 +1763,15 @@ src/services/sales/daily-report.ts:14: * @standard BG Наредба-Н-18 §д�
 src/services/sales/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
 src/services/sales/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
+src/services/sales/fiscalize-revenue.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/fiscalize-revenue.test.ts:7: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1
+src/services/sales/fiscalize-revenue.ts:16: * @standard BG Наредба-Н-18 §СУПТО sale-register · §чл.3-ал.1 fiscalization-scope
 src/services/sales/operator-code.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/operator-code.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
 src/services/sales/operator-code.ts:12: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature УНП-second-segment
 src/services/sales/order-fiscalization.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/order-fiscalization.test.ts:7: * @standard BG Наредба-Н-18 §СУПТО sale-register e-shop-alternative-regime
-src/services/sales/order-fiscalization.ts:15: * @standard BG Наредба-Н-18 §СУПТО sale-register e-shop-alternative-regime
+src/services/sales/order-fiscalization.ts:10: * @standard BG Наредба-Н-18 §СУПТО sale-register e-shop-alternative-regime
 src/services/sales/receipt-subscriber.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/receipt-subscriber.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
 src/services/sales/receipt-subscriber.ts:8: * @standard BG Наредба-Н-18 §СУПТО касов-бон issuance-on-close
@@ -4136,7 +4139,8 @@ src/services/receivables/analytics.service.ts:6: * @accounting US-GAAP ASC-310 r
 src/services/receivables/workflow.service.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/services/receivables/workflow.service.ts:8: * @accounting IFRS IFRS-9 written_off impairment
 src/services/receivables/workflow.service.ts:9: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/services/sales/order-fiscalization.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/services/sales/fiscalize-revenue.ts:17: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/services/sales/order-fiscalization.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/services/spec-generator/extractor.ts:14: *   @accounting    <body> <id> [free-text]      ← alias for @standard
 src/services/tax-automation.service.ts:20: * @accounting OECD SAF-T tax-table
 src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
@@ -5279,8 +5283,9 @@ src/services/safety-mode/index.ts:45: * @audit Conservation Law 58 uuid-self-pro
 src/services/sales/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/sales/daily-report.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/sales/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
+src/services/sales/fiscalize-revenue.ts:18: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/sales/operator-code.ts:13: * @audit ISO-19011:2018 audit-trail
-src/services/sales/order-fiscalization.ts:17: * @audit ISO-19011:2018 audit-trail event-driven
+src/services/sales/order-fiscalization.ts:12: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/sales/receipt-subscriber.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/sales/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
 src/services/sales/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven

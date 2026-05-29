@@ -82,8 +82,28 @@ const Sales: CollectionConfig = {
     { name: 'operator', type: 'relationship', relationTo: 'operators' },
     { name: 'terminal', type: 'relationship', relationTo: 'terminals' },
     { name: 'receipt', type: 'relationship', relationTo: 'receipts' },
-    // The originating ecommerce order this sale fiscalizes (e-shop alternative regime).
-    { name: 'order', type: 'relationship', relationTo: 'orders' },
+    // The revenue source this sale fiscalizes — a flat discriminator + ref
+    // (order / subscription / invoice / pos). One uniform shape across every
+    // fiscalization adapter (the `fiscalize-revenue` membrane); keys idempotency.
+    {
+      name: 'source',
+      type: 'group',
+      admin: { description: 'Origin of the sale (revenue source) — keys idempotency + сторно.' },
+      fields: [
+        {
+          name: 'type',
+          type: 'select',
+          options: [
+            { label: 'Order', value: 'order' },
+            { label: 'Subscription', value: 'subscription' },
+            { label: 'Invoice', value: 'invoice' },
+            { label: 'POS', value: 'pos' },
+          ],
+          index: true,
+        },
+        { name: 'ref', type: 'text', index: true, admin: { description: 'Source document id.' } },
+      ],
+    },
     // сторно links — a reversal points back at its source; the source is sealed with its reversal.
     { name: 'reversalOf', type: 'relationship', relationTo: 'sales' },
     { name: 'reversedBy', type: 'relationship', relationTo: 'sales' },
