@@ -184,7 +184,7 @@ function coerceEmail(value: unknown): CoercionResult {
 
   // Try to coerce from other types
   const textResult = coerceText(value)
-  if (textResult.success && EMAIL_REGEX.test(textResult.value)) {
+  if (textResult.success && EMAIL_REGEX.test(String(textResult.value))) {
     return { value: textResult.value, success: true, coerced: true }
   }
 
@@ -260,7 +260,7 @@ function coerceInteger(value: unknown): CoercionResult {
     return numberResult
   }
 
-  const num = numberResult.value
+  const num = Number(numberResult.value)
   if (!Number.isInteger(num)) {
     return {
       value: Math.floor(num),
@@ -1089,7 +1089,7 @@ class PayloadConfigDiscovery {
           case 'select':
             if (field.options) {
               const validValues = field.options.map((o) => o.value)
-              if (!validValues.includes(value)) {
+              if (!(validValues as readonly unknown[]).includes(value)) {
                 errors.push({
                   field: field.name,
                   message: `Field '${field.name}' has invalid value '${value}'`,
@@ -1144,8 +1144,8 @@ class PayloadConfigDiscovery {
   }
 }
 
-export { PayloadConfigDiscovery, Collection, Field, Payload }
-export type { CollectionMetadata, ValidationError, DataValidationResult }
+export { PayloadConfigDiscovery }
+export type { Collection, Field, Payload, CollectionMetadata, ValidationError, DataValidationResult }
 
 // =============================================================================
 // Singleton convenience helpers — `initializeDiscovery` / `getDiscovery` /

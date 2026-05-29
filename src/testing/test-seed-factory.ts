@@ -19,7 +19,7 @@
  * @see docs/STANDARDS.md §7
  */
 
-import type { Payload, PayloadRequest } from 'payload';
+import type { Payload, PayloadRequest, CollectionSlug, RequiredDataFromCollectionSlug } from 'payload';
 
 /**
  * Per-collection validation contract used by `TestSeedFactory.validateData`.
@@ -785,12 +785,12 @@ export abstract class TestSeedFactory {
     await this.validateData(collection, data);
 
     const result = await this.payload.create({
-      collection,
-      data,
+      collection: collection as CollectionSlug,
+      data: data as RequiredDataFromCollectionSlug<CollectionSlug>,
     });
 
     this.trackCreatedId(collection, result.id);
-    return result;
+    return result as unknown as T & { id: string };
   }
 
   /**
@@ -815,7 +815,7 @@ export abstract class TestSeedFactory {
    */
   protected async queryDocuments(collection: string, query?: Record<string, unknown>) {
     return await this.payload.find({
-      collection,
+      collection: collection as CollectionSlug,
       where: query,
     });
   }
@@ -853,7 +853,7 @@ export abstract class TestSeedFactory {
       for (const id of ids) {
         try {
           await this.payload.delete({
-            collection,
+            collection: collection as CollectionSlug,
             id,
           });
           itemsDeleted++;
@@ -938,12 +938,13 @@ export abstract class TransactionalSeedFactory extends TestSeedFactory {
   /**
    * Override cleanup to use transaction rollback if available
    */
-  async cleanup(): Promise<void> {
+  async cleanup(): Promise<CleanupResult> {
     if (this.cleanupStrategy === 'transaction-rollback' && this.context?.transactionId) {
+      const startTime = Date.now();
       await this.rollbackTransaction(this.context.transactionId);
-    } else {
-      await super.cleanup();
+      return { success: true, totalTime: Date.now() - startTime, itemsDeleted: 0, failures: [] };
     }
+    return await super.cleanup();
   }
 }
 
