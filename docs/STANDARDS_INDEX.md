@@ -1757,6 +1757,9 @@ src/services/sales/audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software
 src/services/sales/audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
 src/services/sales/audit-file.ts:17: * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/services/sales/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base profile)
+src/services/sales/daily-report.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/daily-report.test.ts:6: * @standard BG Наредба-Н-18 §дневен-отчет · §Приложение-1
+src/services/sales/daily-report.ts:14: * @standard BG Наредба-Н-18 §дневен-отчет · §Приложение-1 tax-groups
 src/services/sales/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
 src/services/sales/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
@@ -5269,6 +5272,7 @@ src/services/saf-t-export.xml.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/services/safety-mode/index.test.ts:15: * @audit Conservation Law 58 uuid-self-protection
 src/services/safety-mode/index.ts:45: * @audit Conservation Law 58 uuid-self-protection
 src/services/sales/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
+src/services/sales/daily-report.ts:15: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/sales/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
 src/services/sales/operator-code.ts:13: * @audit ISO-19011:2018 audit-trail
 src/services/sales/order-fiscalization.ts:17: * @audit ISO-19011:2018 audit-trail event-driven
