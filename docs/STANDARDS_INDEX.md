@@ -1824,6 +1824,10 @@ src/services/storage-redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.
 src/services/streams/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/services/streams/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
+src/services/supto/audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
+src/services/supto/audit-file.ts:17: * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/services/supto/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base profile)
 src/services/supto/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
 src/services/supto/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
@@ -2755,6 +2759,7 @@ src/services/spec-generator/extractor.ts:18: *   @rfc           <id> [free-text]
 src/services/spec-generator/i18n-audit.ts:14: * @rfc 8259 json
 src/services/spec-generator/i18n-keys.ts:33: * @rfc 8259 json
 src/services/spec-generator/i18n-stub-filler.ts:11: * @rfc 8259 json
+src/services/supto/audit-file.ts:20: * @rfc 8259 json
 src/services/tenant.service.ts:15: * @rfc 9110 http-semantics
 src/standards/_security-headers/headers.test.ts:5: * @rfc 6797 hsts http-strict-transport-security
 src/standards/_security-headers/headers.ts:8: * @rfc 6797 hsts http-strict-transport-security
@@ -5240,6 +5245,7 @@ src/services/spec-generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.
 src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
+src/services/supto/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/supto/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
 src/services/supto/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/supto/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
