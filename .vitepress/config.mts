@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { readdirSync, statSync } from 'node:fs'
-import { join, relative } from 'node:path'
+import { readdirSync, statSync, existsSync, readFileSync } from 'node:fs'
+import { join, relative, dirname, basename } from 'node:path'
 import type MarkdownIt from 'markdown-it'
 
 // ── The fractal skill tree IS the docs structure ──────────────────────────
@@ -32,6 +32,58 @@ function walk(dir: string): SidebarItem[] {
 }
 
 const skillSidebar = walk(SKILLS_DIR)
+
+// ── Directional relations, COMPUTED from the path (never stored) ───────────
+// The path IS the address, so a skill's neighbours are derivable: ancestors /
+// siblings / children fall out of the folder tree, `related` out of the body's
+// [[links]]. Nothing is hand-listed in frontmatter — `transformPageData` injects
+// these per page at build time, keeping stored frontmatter minimal (name/desc).
+type Ref = { text: string; link: string }
+const isSkill = (dir: string): boolean => existsSync(join(dir, 'SKILL.md'))
+const skillRef = (relDir: string): Ref => ({ text: basename(relDir), link: routeOf(relDir) })
+const subDirs = (dir: string): string[] =>
+  existsSync(dir)
+    ? readdirSync(dir)
+        .map((n) => join(dir, n))
+        .filter((d) => statSync(d).isDirectory())
+        .sort()
+    : []
+
+function relationsFromPath(relFile: string): {
+  ancestors: Ref[]
+  siblings: Ref[]
+  children: Ref[]
+  related: Ref[]
+} {
+  const relDir = dirname(relFile) // e.g. .claude/skills/self/sufficient
+  const parent = dirname(relDir)
+  // ancestors: every skill folder up the path to the skills root
+  const ancestors: Ref[] = []
+  for (let p = parent; p.startsWith(SKILLS_DIR) && p !== SKILLS_DIR; p = dirname(p)) {
+    if (isSkill(p)) ancestors.unshift(skillRef(p))
+  }
+  // siblings: same-parent skill folders; children: nested skill folders
+  const siblings = subDirs(parent).filter((d) => d !== relDir && isSkill(d)).map(skillRef)
+  const children = subDirs(relDir).filter(isSkill).map(skillRef)
+  // related: the [[links]] in the body, resolved against the tree (deduped, self excluded)
+  const selfWord = basename(relDir)
+  const related: Ref[] = []
+  if (existsSync(relFile)) {
+    const body = readFileSync(relFile, 'utf8')
+      .replace(/^---[\s\S]*?\n---/, ' ') // strip frontmatter
+      .replace(/```[\s\S]*?```/g, ' ') // strip fenced code
+      .replace(/`[^`]*`/g, ' ') // strip inline code
+    const seen = new Set<string>()
+    for (const m of body.matchAll(/\[\[([a-z][a-z0-9/-]*)(?:\|[^\]]*)?\]\]/g)) {
+      const target = m[1]
+      const word = target.split('/').pop() as string
+      if (word === selfWord || seen.has(word)) continue
+      seen.add(word)
+      related.push({ text: word, link: resolveWiki(target) })
+    }
+  }
+  return { ancestors, siblings, children, related }
+}
 
 // Resolve [[word]] / [[a/b]] / [[word|alias]] against the skill tree.
 // An unresolved word points at its EXPECTED skill path, so VitePress strict
@@ -74,6 +126,11 @@ export default defineConfig({
     'tests/**',
     'scripts/**',
     'migrations/**',
+    // planning/analysis notes — not part of the skill corpus the site documents,
+    // and authored as plain markdown (bare <domain>-style text the Vue compiler
+    // rejects). The site IS the fractal skill tree; these aren't skills.
+    'docs/**',
+    'README.md',
     '**/*.test.{ts,tsx}',
     '**/*.spec.{ts,tsx}',
   ],
@@ -81,6 +138,10 @@ export default defineConfig({
   // fails until every [[link]] resolves to a path with its answer.
   ignoreDeadLinks: false,
   cleanUrls: true,
+  // Pin the docs client bundle to a modern target so esbuild doesn't try to
+  // downlevel VitePress's own destructuring (it inherits an older `target` from
+  // tsconfig otherwise → "Transforming destructuring … not supported yet").
+  vite: { build: { target: 'esnext' } },
   themeConfig: {
     nav: [
       { text: 'sequence', link: routeOf(join(SKILLS_DIR, 'sequence')) },
@@ -101,6 +162,14 @@ export default defineConfig({
         'meta',
         { name: 'erpax:sessions', content: fm.sessions.join(',') },
       ])
+    }
+    // Compute the directional relations from the PATH — prev/next VitePress
+    // already derives from the sidebar (itself the tree); ancestors/siblings/
+    // children/related are injected here so the page carries its full subgraph
+    // without any of it being stored in the file's frontmatter.
+    const rel = pageData.relativePath
+    if (rel.startsWith(SKILLS_DIR) && rel.endsWith('SKILL.md')) {
+      Object.assign(pageData.frontmatter, relationsFromPath(rel))
     }
   },
   markdown: {

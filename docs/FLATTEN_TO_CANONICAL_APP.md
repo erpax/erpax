@@ -362,7 +362,7 @@ tenant-access.ts,accounting,receivables,payables
 
 | Aspect | Plugin-First | App-First (Canonical) |
 |--------|-------------|-------------------|
-| Structure | src/plugins/<domain>/plugin.ts, collections/, services/ | src/collections/<domain>/, src/services/<domain>/ |
+| Structure | `src/plugins/<domain>/plugin.ts`, collections/, services/ | `src/collections/<domain>/`, `src/services/<domain>/` |
 | Boilerplate | plugin.ts factory, index.ts exports | Direct collection imports in payload.config.ts |
 | Duplication | Aging logic in 3 plugins | Aging in src/services/shared/ |
 | Official Plugins | Wrap as side-plugins | Compose directly with collections |
@@ -377,8 +377,8 @@ tenant-access.ts,accounting,receivables,payables
 
 ✓ All 9 official Payload plugins active  
 ✓ Zero code in src/plugins/* (only official plugins remain via package.json)  
-✓ All collections importable from src/collections/<domain>  
-✓ All services importable from src/services/<domain> or src/services/shared/  
+✓ All collections importable from `src/collections/<domain>`  
+✓ All services importable from `src/services/<domain>` or src/services/shared/  
 ✓ pnpm typecheck — no errors  
 ✓ pnpm standards:verify-index — fresh  
 ✓ pnpm build — succeeds  
