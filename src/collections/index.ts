@@ -300,9 +300,13 @@ export { default as LegalEntities } from './LegalEntities'
 export { default as AiSuggestions } from './AiSuggestions'
 export { default as UsageRecords } from './UsageRecords'
 
-// СУПТО / Наредба Н-18 (BG fiscal sales)
+// Fiscal sales core (Наредба Н-18 compliant)
 export { default as FiscalDevices } from './FiscalDevices'
-export { default as SuptoSales } from './SuptoSales'
+export { default as Sales } from './Sales'
+export { default as Receipts } from './Receipts'
+export { default as Operators } from './Operators'
+export { default as Terminals } from './Terminals'
+export { default as AuditSubmissions } from './AuditSubmissions'
 
 // Close-side analysis & compliance (named exports)
 export { Consolidations } from './Consolidations'

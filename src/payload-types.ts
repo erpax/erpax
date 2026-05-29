@@ -267,6 +267,10 @@ export interface Config {
     'post-close-analytics-reports': PostCloseAnalyticsReport;
     'fiscal-devices': FiscalDevice;
     sales: Sale;
+    receipts: Receipt;
+    operators: Operator;
+    terminals: Terminal;
+    'audit-submissions': AuditSubmission;
     addresses: Address;
     variants: Variant;
     variantTypes: VariantType;
@@ -866,6 +870,18 @@ export interface Config {
     sales: {
       tags: 'taggings';
     };
+    receipts: {
+      tags: 'taggings';
+    };
+    operators: {
+      tags: 'taggings';
+    };
+    terminals: {
+      tags: 'taggings';
+    };
+    'audit-submissions': {
+      tags: 'taggings';
+    };
     addresses: {
       tags: 'taggings';
     };
@@ -1106,6 +1122,10 @@ export interface Config {
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     'fiscal-devices': FiscalDevicesSelect<false> | FiscalDevicesSelect<true>;
     sales: SalesSelect<false> | SalesSelect<true>;
+    receipts: ReceiptsSelect<false> | ReceiptsSelect<true>;
+    operators: OperatorsSelect<false> | OperatorsSelect<true>;
+    terminals: TerminalsSelect<false> | TerminalsSelect<true>;
+    'audit-submissions': AuditSubmissionsSelect<false> | AuditSubmissionsSelect<true>;
     addresses: AddressesSelect<false> | AddressesSelect<true>;
     variants: VariantsSelect<false> | VariantsSelect<true>;
     variantTypes: VariantTypesSelect<false> | VariantTypesSelect<true>;
@@ -2256,6 +2276,22 @@ export interface Tagging {
     | {
         relationTo: 'sales';
         value: string | Sale;
+      }
+    | {
+        relationTo: 'receipts';
+        value: string | Receipt;
+      }
+    | {
+        relationTo: 'operators';
+        value: string | Operator;
+      }
+    | {
+        relationTo: 'terminals';
+        value: string | Terminal;
+      }
+    | {
+        relationTo: 'audit-submissions';
+        value: string | AuditSubmission;
       }
     | {
         relationTo: 'addresses';
@@ -20875,6 +20911,192 @@ export interface Sale {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "receipts".
+ */
+export interface Receipt {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Касов бон number (or УНП in the alternative regime).
+   */
+  receiptNumber?: string | null;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  sale?: (string | null) | Sale;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber?: string | null;
+  operatorCode?: string | null;
+  virtualPosTerminal?: (string | null) | Terminal;
+  /**
+   * НАП fiscal-QR payload (device*УНП*date*time*sum).
+   */
+  qrData?: string | null;
+  issuedAt?: string | null;
+  total?: number | null;
+  vatTotal?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Customer e-mail the e-receipt was sent to (alternative regime).
+   */
+  deliveredTo?: string | null;
+  status?: ('issued' | 'delivered' | 'void') | null;
+  lines?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals".
+ */
+export interface Terminal {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Virtual POS terminal number (printed on the e-receipt).
+   */
+  terminalNumber: string;
+  /**
+   * Payment-service provider operating the virtual POS.
+   */
+  provider?: string | null;
+  /**
+   * Settlement account (IBAN) the terminal pays into.
+   */
+  accountNumber?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('active' | 'inactive') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators".
+ */
+export interface Operator {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 4-digit operator code — second УНП segment.
+   */
+  code: string;
+  name: string;
+  user?: (string | null) | User;
+  status?: ('active' | 'decommissioned') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-submissions".
+ */
+export interface AuditSubmission {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  periodStart: string;
+  periodEnd: string;
+  /**
+   * Number of sales in the file.
+   */
+  count?: number | null;
+  /**
+   * Net arithmetic total (cents) — the integrity check.
+   */
+  controlSum?: number | null;
+  status?: ('built' | 'submitted' | 'accepted' | 'rejected') | null;
+  submittedAt?: string | null;
+  /**
+   * НАП submission response / acknowledgement.
+   */
+  napResponse?: string | null;
+  /**
+   * The submitted Приложение-38 XML.
+   */
+  xml?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "form-submissions".
  */
 export interface FormSubmission {
@@ -22176,6 +22398,22 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'sales';
         value: string | Sale;
+      } | null)
+    | ({
+        relationTo: 'receipts';
+        value: string | Receipt;
+      } | null)
+    | ({
+        relationTo: 'operators';
+        value: string | Operator;
+      } | null)
+    | ({
+        relationTo: 'terminals';
+        value: string | Terminal;
+      } | null)
+    | ({
+        relationTo: 'audit-submissions';
+        value: string | AuditSubmission;
       } | null)
     | ({
         relationTo: 'addresses';
@@ -29703,6 +29941,103 @@ export interface SalesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "receipts_select".
+ */
+export interface ReceiptsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  receiptNumber?: T;
+  unp?: T;
+  sale?: T;
+  fiscalDeviceNumber?: T;
+  operatorCode?: T;
+  virtualPosTerminal?: T;
+  qrData?: T;
+  issuedAt?: T;
+  total?: T;
+  vatTotal?: T;
+  currency?: T;
+  paymentType?: T;
+  deliveredTo?: T;
+  status?: T;
+  lines?:
+    | T
+    | {
+        description?: T;
+        quantity?: T;
+        unitPrice?: T;
+        vatRate?: T;
+        amount?: T;
+        id?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators_select".
+ */
+export interface OperatorsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  code?: T;
+  name?: T;
+  user?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals_select".
+ */
+export interface TerminalsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  terminalNumber?: T;
+  provider?: T;
+  accountNumber?: T;
+  currency?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-submissions_select".
+ */
+export interface AuditSubmissionsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  periodStart?: T;
+  periodEnd?: T;
+  count?: T;
+  controlSum?: T;
+  status?: T;
+  submittedAt?: T;
+  napResponse?: T;
+  xml?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "addresses_select".
  */
 export interface AddressesSelect<T extends boolean = true> {
@@ -30735,6 +31070,10 @@ export interface TaskCreateCollectionExport {
       | 'post-close-analytics-reports'
       | 'fiscal-devices'
       | 'sales'
+      | 'receipts'
+      | 'operators'
+      | 'terminals'
+      | 'audit-submissions'
       | 'addresses'
       | 'variants'
       | 'variantTypes'

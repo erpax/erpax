@@ -257,9 +257,13 @@ const {
   AuditReports,
   TransferPricingAdjustments,
   PostCloseAnalyticsReports,
-  // СУПТО / Наредба Н-18
+  // Fiscal sales core (Наредба Н-18)
   FiscalDevices,
-  SuptoSales,
+  Sales,
+  Receipts,
+  Operators,
+  Terminals,
+  AuditSubmissions,
 } = allCollections
 import type { CollectionConfig, CollectionSlug } from 'payload'
 import { Footer } from './components/Footer/config'
@@ -692,9 +696,13 @@ export default buildConfig({
     AuditReports,
     TransferPricingAdjustments,
     PostCloseAnalyticsReports,
-    // СУПТО / Наредба Н-18 (BG fiscal sales)
+    // Fiscal sales core (Наредба Н-18)
     FiscalDevices,
-    SuptoSales,
+    Sales,
+    Receipts,
+    Operators,
+    Terminals,
+    AuditSubmissions,
   ],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
@@ -959,9 +967,13 @@ export default buildConfig({
         'audit-reports': {},
         'transfer-pricing-adjustments': {},
         'post-close-analytics-reports': {},
-        // СУПТО / Наредба Н-18 (BG fiscal sales) — tenant-scoped
+        // Fiscal sales core (Наредба Н-18) — tenant-scoped
         'fiscal-devices': {},
-        'supto-sales': {},
+        'sales': {},
+        'receipts': {},
+        'operators': {},
+        'terminals': {},
+        'audit-submissions': {},
       },
       tenantField: {
         defaultValue: async ({ req }) => {
@@ -1173,10 +1185,10 @@ export default buildConfig({
        * @audit ISO-19011:2018 §6.4 audit-evidence
        */
       {
-        slug: 'supto-audit-file',
+        slug: 'sales-audit-file',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processSuptoAuditFiles } = await import('./jobs/suptoAuditFileJob')
-          const result = await processSuptoAuditFiles(req.payload)
+          const { processSalesAuditFiles } = await import('./jobs/salesAuditFileJob')
+          const result = await processSalesAuditFiles(req.payload)
           return { output: { status: 'completed', ...result } }
         },
       },
