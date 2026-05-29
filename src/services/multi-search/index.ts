@@ -149,7 +149,7 @@ export async function multiSearch(
         where: where as never,
         limit: perCollection,
         depth: 0,
-      } as never) as { docs: Array<Record<string, unknown>> }
+      } as never) as unknown as { docs: Array<Record<string, unknown>> }
       if (res.docs.length > 0) {
         collectionsHit += 1
         for (const row of res.docs) {

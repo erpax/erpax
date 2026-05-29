@@ -107,7 +107,7 @@ const resolveEmployee = async (
       depth: 0,
     })
     if (!fetched) return null
-    const e = fetched as Record<string, unknown>
+    const e = fetched as unknown as Record<string, unknown>
     const bank =
       (e.payrollBankAccount as Record<string, unknown> | undefined) ?? undefined
     return {

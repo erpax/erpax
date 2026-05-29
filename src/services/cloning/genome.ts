@@ -98,7 +98,7 @@ export function collectGenome(opts: CollectGenomeOptions): GenomeBundle {
     chains: Object.values(BUSINESS_CHAINS).map((c) => ({
       id: c.id,
       name: (c as { name?: string }).name,
-      stepsCount: (c as { steps?: unknown[] }).steps?.length ?? 0,
+      stepsCount: (c as unknown as { steps?: unknown[] }).steps?.length ?? 0,
       standards: ((c as { standards?: ReadonlyArray<string> }).standards ?? []) as ReadonlyArray<string>,
       featureGate: (c as { featureGate?: string }).featureGate,
     })),

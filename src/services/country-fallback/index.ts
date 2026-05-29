@@ -201,6 +201,6 @@ export function computeCountryUuid<Code extends string>(
   code: Code,
   tenantId: string,
 ): CountryUuid<Code> {
-  const resolved = resolveCountry(code) as Code
+  const resolved = resolveCountry(code) as unknown as Code
   return computeContentUuid({ countryCode: resolved }, tenantId) as CountryUuid<Code>
 }

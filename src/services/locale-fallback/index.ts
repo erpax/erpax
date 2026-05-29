@@ -195,7 +195,7 @@ export function computeLocaleUuid<Code extends string>(
   code: Code,
   tenantId: string,
 ): LocaleUuid<Code> {
-  const resolved = resolveLocale(code) as Code
+  const resolved = resolveLocale(code) as unknown as Code
   return computeContentUuid({ localeCode: resolved }, tenantId) as LocaleUuid<Code>
 }
 
