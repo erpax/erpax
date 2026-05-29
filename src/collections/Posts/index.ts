@@ -67,9 +67,9 @@ export const Posts: CollectionConfig = {
       description: true,
     },
   },
+  /** Query presets on `_status`, `publishedAt` — future publishes use Payload scheduled publishing (see `versions.drafts`). */
+  enableQueryPresets: true,
   admin: {
-    /** Query presets on `_status`, `publishedAt` — future publishes use Payload scheduled publishing (see `versions.drafts`). */
-    enableQueryPresets: true,
     defaultColumns: ['title', 'slug', '_status', 'publishedAt', 'updatedAt'],
     ...documentPreviewAdmin('posts'),
     useAsTitle: 'title',

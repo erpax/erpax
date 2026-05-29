@@ -55,7 +55,7 @@ export async function getAllowPublicReadTenantIds(payload: Payload): Promise<num
     limit: 500,
     overrideAccess: true,
     pagination: false,
-    select: { id: true },
+    select: {},
     where: {
       allowPublicRead: {
         equals: true,

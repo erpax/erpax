@@ -354,16 +354,19 @@ export const taxonomySelect = <T extends string>(
     hasMany?: boolean
     index?: boolean
   } = {},
-): Field => ({
-  name,
-  type: 'select',
-  ...(opts.required ? { required: true } : {}),
-  ...(opts.defaultValue !== undefined ? { defaultValue: opts.defaultValue } : {}),
-  ...(opts.hasMany ? { hasMany: true } : {}),
-  ...(opts.index ? { index: true } : {}),
-  options: options.map((o) => ({ label: o.label, value: o.value })),
-  ...(opts.description ? { admin: { description: opts.description } } : {}),
-})
+): Field =>
+  // SelectField is discriminated on `hasMany`; a single spread-built literal
+  // can't satisfy either union arm, so assert the assembled select field.
+  ({
+    name,
+    type: 'select',
+    ...(opts.required ? { required: true } : {}),
+    ...(opts.defaultValue !== undefined ? { defaultValue: opts.defaultValue } : {}),
+    ...(opts.hasMany ? { hasMany: true } : {}),
+    ...(opts.index ? { index: true } : {}),
+    options: options.map((o) => ({ label: o.label, value: o.value })),
+    ...(opts.description ? { admin: { description: opts.description } } : {}),
+  }) as Field
 
 /**
  * Tenant-unique human-readable reference (e.g. `INV-2026-001`,

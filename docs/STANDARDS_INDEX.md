@@ -962,8 +962,8 @@ src/endpoints/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability ma
 src/endpoints/seed/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/endpoints/seed/index.ts:9: * @standard BCP-47 language-tag locale-bundled-fixtures
 src/fields/base-accounting-fields.ts:116: * @standard ISO-19011:2018 audit-trail
-src/fields/base-accounting-fields.ts:245: * @standard ISO 3166-1:2020 country-codes
-src/fields/base-accounting-fields.ts:264: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+src/fields/base-accounting-fields.ts:248: * @standard ISO 3166-1:2020 country-codes
+src/fields/base-accounting-fields.ts:267: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
 src/fields/base-accounting-fields.ts:4: * @standard ISO-4217:2015 currency-codes
 src/fields/base-accounting-fields.ts:5: * @standard ISO-8601-1:2019 date-time
 src/fields/defaultLexical.ts:4: * @standard W3C HTML5 Living Standard rich-text-output
@@ -985,9 +985,9 @@ src/fields/shared.ts:10: * @standard ISO-8601-1:2019 date-time
 src/fields/shared.ts:11: * @standard ISO-27001:2022 A.5.23 cloud-service-tenant-isolation
 src/fields/shared.ts:12: * @standard ISO-27002:2022 §5.15 access-control
 src/fields/shared.ts:201: * @standard ISO-19011:2018 audit-trail
-src/fields/shared.ts:416: * @standard ISO 3166-1:2020 country-codes
+src/fields/shared.ts:419: * @standard ISO 3166-1:2020 country-codes
 src/fields/shared.ts:42: * @standard ISO-4217:2015 currency-codes
-src/fields/shared.ts:435: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+src/fields/shared.ts:438: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
 src/fields/shared.ts:80: * @standard ISO-4217:2015 currency decimal-place validation
 src/fields/shared.ts:9: * @standard ISO-4217:2015 currency-codes
 src/hooks/auditTrailAfterChange.ts:21: * @standard rfc-9562 uuid event-id

@@ -54,8 +54,8 @@ export const Pages: CollectionConfig = {
     title: true,
     slug: true,
   },
+  enableQueryPresets: true,
   admin: {
-    enableQueryPresets: true,
     defaultColumns: ['title', 'slug', '_status', 'updatedAt'],
     ...documentPreviewAdmin('pages'),
     useAsTitle: 'title',
