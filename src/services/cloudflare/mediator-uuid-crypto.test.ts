@@ -110,11 +110,11 @@ describe('Mediator — uuid-anchored crypto + query fingerprint', () => {
     const m = makeMediator(fakeCtx())
     const a = await m.runQuery({
       sql: 'select 1',
-      exec: async () => ({ rows: [] }),
+      exec: async () => ({ rows: [] as unknown[] }),
     })
     const b = await m.runQuery({
       sql: '  SELECT   1  ',
-      exec: async () => ({ rows: [] }),
+      exec: async () => ({ rows: [] as unknown[] }),
     })
     expect(a.queryUuid).toBe(b.queryUuid)
   })

@@ -169,7 +169,7 @@ describe('depreciationService.postForPeriod — event emission + cap', () => {
   it('emits depreciation:posted with the computed amount on a positive run', async () => {
     const emitter = buildEmitter()
     const captured: DepreciationPostedEvent[] = []
-    emitter.subscribe('depreciation:posted', (e) => {
+    emitter.subscribe('depreciation:posted', async (e) => {
       captured.push(e as DepreciationPostedEvent)
     })
 
@@ -195,7 +195,7 @@ describe('depreciationService.postForPeriod — event emission + cap', () => {
   it('does NOT emit when the period amount is zero (e.g. fully depreciated asset)', async () => {
     const emitter = buildEmitter()
     const captured: DepreciationPostedEvent[] = []
-    emitter.subscribe('depreciation:posted', (e) => {
+    emitter.subscribe('depreciation:posted', async (e) => {
       captured.push(e as DepreciationPostedEvent)
     })
 

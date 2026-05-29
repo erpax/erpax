@@ -190,8 +190,8 @@ describe('encryption', () => {
     it('should skip null/undefined values', () => {
       const obj = {
         id: 'test',
-        cardLast4: null,
-        bankLast4: undefined,
+        cardLast4: null as string | null,
+        bankLast4: undefined as string | undefined,
       }
 
       const encrypted = encryptFields(obj, ['cardLast4', 'bankLast4'])

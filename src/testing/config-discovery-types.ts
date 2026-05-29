@@ -180,7 +180,7 @@ function coerceEmail(value: unknown): CoercionResult {
 
   // Try to coerce from other types
   const textResult = coerceText(value)
-  if (textResult.success && EMAIL_REGEX.test(textResult.value)) {
+  if (textResult.success && EMAIL_REGEX.test(String(textResult.value))) {
     return { value: textResult.value, success: true, coerced: true }
   }
 
@@ -259,7 +259,7 @@ function coerceInteger(value: unknown): CoercionResult {
   const num = numberResult.value
   if (!Number.isInteger(num)) {
     return {
-      value: Math.floor(num),
+      value: Math.floor(Number(num)),
       success: true,
       coerced: true,
     }

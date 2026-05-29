@@ -72,7 +72,7 @@ describe('ErrorUuid decodes as slot=error with the expected capability set', () 
     })
     const parts = decodeStructured(u)
     expect(parts.slotName).toBe('error')
-    expect(parts.capabilityNames.sort()).toEqual(['CHAINED', 'SEALED'])
+    expect([...parts.capabilityNames].sort()).toEqual(['CHAINED', 'SEALED'])
   })
 
   it('uuidv8 format (version nibble = 8)', () => {
@@ -133,6 +133,6 @@ describe('wrapError — high-level conversion + structured uuid', () => {
       sealed: true,
     })
     const parts = decodeStructured(result.errorUuid)
-    expect(parts.capabilityNames.sort()).toEqual(['CHAINED', 'SEALED'])
+    expect([...parts.capabilityNames].sort()).toEqual(['CHAINED', 'SEALED'])
   })
 })

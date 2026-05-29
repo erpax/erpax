@@ -14,13 +14,14 @@
  * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
  */
 import { describe, it, expect } from 'vitest'
+import type { Field } from 'payload'
 import { createAccountingCollection } from './collection-factory'
 import {
   notesField, auditFields, statusField, currencyField,
 } from '@/fields'
 
 /** Tenant is now injected by plugin-multi-tenant; tests inline a literal to exercise dedup. */
-const tenantField = { name: 'tenant', type: 'relationship' as const, relationTo: 'tenants' }
+const tenantField: Field = { name: 'tenant', type: 'relationship', relationTo: 'tenants' }
 
 /** Helper: count occurrences of a field name in a fields array. */
 function countByName(fields: ReadonlyArray<unknown>, name: string): number {
@@ -72,7 +73,7 @@ describe('createAccountingCollection — Slice GGGGGGGG dedup', () => {
     )
     // Every name in the final array should appear exactly once.
     const names = cfg.fields
-      .filter((f): f is { name: string } =>
+      .filter((f): f is Field & { name: string } =>
         typeof f === 'object' && f !== null && 'name' in f && typeof (f as { name?: unknown }).name === 'string',
       )
       .map((f) => f.name)
