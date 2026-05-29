@@ -2258,6 +2258,8 @@ export function checkStreamCoherenceProbe(_ctx: InvariantContext): InvariantResu
   const synthetic: ClockedEvent[] = Array.from({ length: 16 }, (_, i) => ({
     event: { id: 'probe', tenantId: 'probe', payload: {}, emittedAt: new Date().toISOString() },
     lamport: i + 1,
+    streamUuid: `probe-${i}`,
+    prevStreamUuid: i === 0 ? null : `probe-${i - 1}`,
   }))
   const result = checkWindowCoherence(synthetic)
   if (result.ok) {

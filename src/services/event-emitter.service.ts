@@ -277,7 +277,7 @@ export async function emitEvent<_T extends DomainEvent>(
     eventType,
     tenantId,
     aggregateId: aggregateId || (payload.id as string | undefined) || uuid(),
-    aggregateType: aggregateType || 'invoice',
+    aggregateType: (aggregateType || 'invoice') as DomainEvent['aggregateType'],
     timestamp: new Date(),
     userId,
     payload,

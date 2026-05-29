@@ -1307,19 +1307,19 @@ src/services/architecture-invariants/checks.ts:1966: * @standard MCP 0.6 — too
 src/services/architecture-invariants/checks.ts:1997: * @standard ISO 27001 A.5.10 access-control-policy
 src/services/architecture-invariants/checks.ts:2071: * @standard MCP 0.6 — tools/list naming convention
 src/services/architecture-invariants/checks.ts:2251: * @standard Lamport 1978 — distributed-system causal ordering
-src/services/architecture-invariants/checks.ts:2284: * @standard W3C Web Components composition pattern
-src/services/architecture-invariants/checks.ts:2353: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2413: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2449: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2589: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2635: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
-src/services/architecture-invariants/checks.ts:2694: * @standard ISO 27001:2022 A.5.10 access-control-policy
-src/services/architecture-invariants/checks.ts:2695: * @standard ISO 27002:2022 §5.4 segregation-of-duties
-src/services/architecture-invariants/checks.ts:2696: * @standard ISO 19011:2018 §6.4.6 audit-evidence
-src/services/architecture-invariants/checks.ts:2758: * @standard ISO 27001 A.5.15 access-control
-src/services/architecture-invariants/checks.ts:2759: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
-src/services/architecture-invariants/checks.ts:2864: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/services/architecture-invariants/checks.ts:2865: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
+src/services/architecture-invariants/checks.ts:2286: * @standard W3C Web Components composition pattern
+src/services/architecture-invariants/checks.ts:2355: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2415: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2451: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2591: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2637: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/architecture-invariants/checks.ts:2696: * @standard ISO 27001:2022 A.5.10 access-control-policy
+src/services/architecture-invariants/checks.ts:2697: * @standard ISO 27002:2022 §5.4 segregation-of-duties
+src/services/architecture-invariants/checks.ts:2698: * @standard ISO 19011:2018 §6.4.6 audit-evidence
+src/services/architecture-invariants/checks.ts:2760: * @standard ISO 27001 A.5.15 access-control
+src/services/architecture-invariants/checks.ts:2761: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
+src/services/architecture-invariants/checks.ts:2866: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/services/architecture-invariants/checks.ts:2867: * @standard ISO 27002 §5.4 segregation-of-duties (single-surface audit)
 src/services/architecture-invariants/checks.ts:631: * @standard ISO 27002:2022 §5.4 + COBIT 5 PO4.11 + ISO 19011 §6.4.6
 src/services/architecture-invariants/checks.ts:648: * @standard ISO 27002:2022 §5.4 segregation-of-duties
 src/services/architecture-invariants/checks.ts:649: * @standard COBIT 5 PO4.11
@@ -3266,7 +3266,6 @@ src/hooks/chainEventEmitters.ts:15: * @compliance SOX §404 internal-controls pr
 src/hooks/collections/accounting/balanced-entry.hook.ts:27: * @compliance SOX §404 internal-controls
 src/hooks/collections/accounting/bank-statement.hook.ts:27: * @compliance SOX §404 internal-controls cash-management
 src/hooks/collections/accounting/bill.hook.ts:21: * @compliance SOX §404 internal-controls
-src/hooks/collections/accounting/cogs.hook.ts:16: * @compliance SOX §404 internal-controls
 src/hooks/collections/accounting/depreciation.hook.ts:25: * @compliance SOX §404 internal-controls capital-asset-register
 src/hooks/collections/accounting/gl-hooks-emit-events.test.ts:19: * @compliance SOX §404 internal-controls
 src/hooks/collections/accounting/index.ts:31: * @compliance SOX §404 internal-controls
@@ -3885,9 +3884,6 @@ src/hooks/collections/accounting/bank-statement.hook.ts:25: * @accounting IFRS I
 src/hooks/collections/accounting/bill.hook.ts:17: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/hooks/collections/accounting/bill.hook.ts:18: * @accounting US-GAAP ASC-405 liabilities
 src/hooks/collections/accounting/bill.hook.ts:19: * @accounting US-GAAP ASC-705 cost-of-sales-and-services
-src/hooks/collections/accounting/cogs.hook.ts:12: * @accounting IFRS IAS-2 inventories
-src/hooks/collections/accounting/cogs.hook.ts:13: * @accounting US-GAAP ASC-330 inventory
-src/hooks/collections/accounting/cogs.hook.ts:14: * @accounting US-GAAP ASC-705 cost-of-sales-and-services
 src/hooks/collections/accounting/depreciation.hook.ts:20: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/hooks/collections/accounting/depreciation.hook.ts:21: * @accounting IFRS IAS-36 impairment-of-assets
 src/hooks/collections/accounting/depreciation.hook.ts:22: * @accounting US-GAAP ASC-360-10-35 depreciation
@@ -4947,7 +4943,6 @@ src/hooks/collections/accounting/balanced-entry.hook.ts:26: * @audit ISO-19011:2
 src/hooks/collections/accounting/bank-statement.hook.ts:26: * @audit ISO-19011:2018 audit-trail bank-statement-import
 src/hooks/collections/accounting/base-accounting-hook.ts:17: * @audit ISO-19011:2018 audit-trail relocation-record
 src/hooks/collections/accounting/bill.hook.ts:20: * @audit ISO-19011:2018 audit-trail double-entry-posting
-src/hooks/collections/accounting/cogs.hook.ts:15: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/hooks/collections/accounting/depreciation.hook.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
 src/hooks/collections/accounting/gl-hooks-emit-events.test.ts:18: * @audit ISO-19011:2018 audit-trail event-driven-posting
 src/hooks/collections/accounting/index.ts:29: * @audit ISO-19011:2018 audit-trail event-driven-posting
@@ -5043,15 +5038,15 @@ src/services/architecture-invariants/checks.ts:1967: * @audit ISO 19011:2018 §6
 src/services/architecture-invariants/checks.ts:1998: * @audit ISO 27002 §5.4 segregation-of-duties
 src/services/architecture-invariants/checks.ts:2072: * @audit ISO 19011:2018 §6.4.6 (every barrel-exported factory traceable to live surface)
 src/services/architecture-invariants/checks.ts:2252: * @audit ISO 19011:2018 §6.4.6 (stream windows audit-trailed)
-src/services/architecture-invariants/checks.ts:2285: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
-src/services/architecture-invariants/checks.ts:2354: * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
-src/services/architecture-invariants/checks.ts:2414: * @audit Law 10 referential-harmony
-src/services/architecture-invariants/checks.ts:2450: * @audit Law 10 referential-harmony (static counterpart)
-src/services/architecture-invariants/checks.ts:2590: * @audit Law 10 referential-harmony (slug-uniqueness)
-src/services/architecture-invariants/checks.ts:2636: * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
-src/services/architecture-invariants/checks.ts:2697: * @audit Conservation Law 38 mcp-tool-standardization
-src/services/architecture-invariants/checks.ts:2760: * @audit Conservation Law 38 mcp-tool-standardization
-src/services/architecture-invariants/checks.ts:2866: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
+src/services/architecture-invariants/checks.ts:2287: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
+src/services/architecture-invariants/checks.ts:2356: * @audit ISO 19011:2018 §6.4.6 event-graph closure (Law 4)
+src/services/architecture-invariants/checks.ts:2416: * @audit Law 10 referential-harmony
+src/services/architecture-invariants/checks.ts:2452: * @audit Law 10 referential-harmony (static counterpart)
+src/services/architecture-invariants/checks.ts:2592: * @audit Law 10 referential-harmony (slug-uniqueness)
+src/services/architecture-invariants/checks.ts:2638: * @audit ISO 19011:2018 §6.4.6 (persistence-trail for audit-evidence)
+src/services/architecture-invariants/checks.ts:2699: * @audit Conservation Law 38 mcp-tool-standardization
+src/services/architecture-invariants/checks.ts:2762: * @audit Conservation Law 38 mcp-tool-standardization
+src/services/architecture-invariants/checks.ts:2868: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail (single path)
 src/services/architecture-invariants/checks.ts:708: * @audit ISO 19011:2018 §6.4 audit-evidence
 src/services/architecture-invariants/checks.ts:9: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
 src/services/architecture-invariants/index.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence-invariants

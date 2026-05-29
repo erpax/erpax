@@ -96,5 +96,11 @@ defineTenantRole({
     // Sub-tenants (central-bank / treasury / ministry-of-*) carry the
     // operational collections; the country tenant aggregates.
   ],
+  // Country inherits government's chains/agents/tools via getEffectiveProfile;
+  // its own declared set adds nothing beyond the sovereign aggregation posture.
+  requiredChains: [],
+  requiredAgents: [],
+  mcpTools: [],
+  auditPolicy: { merkleRetentionDays: 365 * 30, signingRequired: true, regulatorReportingCadence: 'quarterly' },
   invariant: 'Trinity Law III (Closure) + Law 8 (Identity) at sovereign scale: every treaty is a federation envelope (AAAAAA) signed by a sovereign DID; every domestic action stays within the country torus or federates with bilateral provenance; every sub-tenant carries its own uuid and aggregates into the country aggregate uuid via consensus reads (Law 36).',
 })
