@@ -1,6 +1,6 @@
 ---
 name: ui4
-description: Manually invoked skill for reskinning Payload UI components. Requires Figma URL. Usage: /ui4
+description: "Manually invoked skill for reskinning Payload UI components. Requires Figma URL. Usage: /ui4"
 sessions:
   - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---

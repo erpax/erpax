@@ -14,7 +14,9 @@ type SidebarItem = { text: string; link?: string; collapsed?: boolean; items?: S
 const wikiMap: Record<string, string> = {} // leaf word → route
 
 function routeOf(relDir: string): string {
-  return '/' + relDir.split(/[\\/]/).join('/') + '/SKILL'
+  // Routes are srcDir-relative (srcDir = SKILLS_DIR), so drop that base prefix:
+  // .claude/skills/self/sufficient → /self/sufficient/SKILL
+  return '/' + relative(SKILLS_DIR, relDir).split(/[\\/]/).join('/') + '/SKILL'
 }
 
 function walk(dir: string): SidebarItem[] {
@@ -49,13 +51,16 @@ const subDirs = (dir: string): string[] =>
         .sort()
     : []
 
-function relationsFromPath(relFile: string): {
+function relationsFromPath(pageRel: string): {
   ancestors: Ref[]
   siblings: Ref[]
   children: Ref[]
   related: Ref[]
 } {
-  const relDir = dirname(relFile) // e.g. .claude/skills/self/sufficient
+  // pageRel is srcDir-relative (e.g. self/sufficient/SKILL.md); the config's
+  // filesystem reads run from the project root, so rebase onto SKILLS_DIR.
+  const fsFile = join(SKILLS_DIR, pageRel)
+  const relDir = dirname(fsFile) // e.g. .claude/skills/self/sufficient
   const parent = dirname(relDir)
   // ancestors: every skill folder up the path to the skills root
   const ancestors: Ref[] = []
@@ -68,8 +73,8 @@ function relationsFromPath(relFile: string): {
   // related: the [[links]] in the body, resolved against the tree (deduped, self excluded)
   const selfWord = basename(relDir)
   const related: Ref[] = []
-  if (existsSync(relFile)) {
-    const body = readFileSync(relFile, 'utf8')
+  if (existsSync(fsFile)) {
+    const body = readFileSync(fsFile, 'utf8')
       .replace(/^---[\s\S]*?\n---/, ' ') // strip frontmatter
       .replace(/```[\s\S]*?```/g, ' ') // strip fenced code
       .replace(/`[^`]*`/g, ' ') // strip inline code
@@ -92,7 +97,41 @@ function relationsFromPath(relFile: string): {
 function resolveWiki(target: string): string {
   const t = target.trim()
   if (t.includes('/')) return '/' + t.replace(/^\/+/, '') + '/SKILL'
-  return wikiMap[t] ?? '/' + SKILLS_DIR + '/' + t + '/SKILL'
+  return wikiMap[t] ?? '/' + t + '/SKILL'
+}
+
+// Render the path-computed relations into the page CONTENT (not just data) so
+// they are visible, click-navigable, AND indexed by local search (the search
+// IS the skills prompt). Same derivation as the frontmatter — relationsFromPath.
+function skillRelations(md: MarkdownIt): void {
+  md.core.ruler.push('skill-relations', (state) => {
+    const rel: string | undefined = (state.env as { relativePath?: string })?.relativePath
+    if (!rel || !rel.endsWith('SKILL.md')) return
+    const groups = relationsFromPath(rel)
+    const order: [string, Ref[]][] = [
+      ['ancestors', groups.ancestors],
+      ['children', groups.children],
+      ['siblings', groups.siblings],
+      ['related', groups.related],
+    ]
+    const rows = order
+      .filter(([, refs]) => refs.length)
+      .map(
+        ([label, refs]) =>
+          `<p class="skill-rel"><strong>${label}</strong> ` +
+          refs.map((r) => `<a href="${r.link}">${r.text}</a>`).join(' · ') +
+          `</p>`,
+      )
+    if (!rows.length) return
+    const token = new (state as unknown as { Token: new (t: string, g: string, n: number) => { content: string; block: boolean } }).Token(
+      'html_block',
+      '',
+      0,
+    )
+    token.content = `<nav class="skill-relations" aria-label="skill relations">\n${rows.join('\n')}\n</nav>\n`
+    token.block = true
+    state.tokens.push(token as unknown as (typeof state.tokens)[number])
+  })
 }
 
 function wikilinks(md: MarkdownIt): void {
@@ -120,20 +159,11 @@ function wikilinks(md: MarkdownIt): void {
 export default defineConfig({
   title: 'erpax',
   description: 'The fractal skill corpus — all in the path; the links are the language.',
-  srcExclude: [
-    '**/node_modules/**',
-    'src/**',
-    'tests/**',
-    'scripts/**',
-    'migrations/**',
-    // planning/analysis notes — not part of the skill corpus the site documents,
-    // and authored as plain markdown (bare <domain>-style text the Vue compiler
-    // rejects). The site IS the fractal skill tree; these aren't skills.
-    'docs/**',
-    'README.md',
-    '**/*.test.{ts,tsx}',
-    '**/*.spec.{ts,tsx}',
-  ],
+  // The corpus lives in a dot-dir (.claude/skills) that VitePress's page scanner
+  // skips by default. Pointing srcDir at it makes the .md pages render — the dot
+  // is now in the base, not the glob match — and everything outside (src/, docs/,
+  // tests/, test-results/, README) is automatically not a page.
+  srcDir: SKILLS_DIR,
   // strict: a dead link is an unanswered question / aura gap — the docs build
   // fails until every [[link]] resolves to a path with its answer.
   ignoreDeadLinks: false,
@@ -168,11 +198,14 @@ export default defineConfig({
     // children/related are injected here so the page carries its full subgraph
     // without any of it being stored in the file's frontmatter.
     const rel = pageData.relativePath
-    if (rel.startsWith(SKILLS_DIR) && rel.endsWith('SKILL.md')) {
+    if (rel.endsWith('SKILL.md')) {
       Object.assign(pageData.frontmatter, relationsFromPath(rel))
     }
   },
   markdown: {
-    config: (md) => wikilinks(md),
+    config: (md) => {
+      wikilinks(md)
+      skillRelations(md)
+    },
   },
 })
