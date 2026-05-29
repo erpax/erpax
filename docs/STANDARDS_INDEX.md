@@ -2431,6 +2431,7 @@ src/types/period-end.ts:4: * @standard ISO-8601-1:2019 date-time period
 src/types/receivables/index.ts:4: * @standard EN-16931:2017 §BG-7 buyer
 src/types/receivables/index.ts:5: * @standard ISO-4217:2015 currency-codes
 src/types/receivables/index.ts:6: * @standard ISO-8601-1:2019 date-time invoice-date due-date
+src/types/sti.ts:18: * @standard ECMA-262 ECMAScript-2024 baseline
 src/types/tenant.ts:10: * @standard ISO-3166-1:2020 country-codes
 src/types/tenant.ts:11: * @standard ISO-4217:2015 currency-codes
 src/types/tenant.ts:12: * @standard BCP-47 language-tag
@@ -5370,3 +5371,4 @@ src/components/analytics/TrendAnalysisCard.tsx:11: * @quality ISO-25010 function
 src/components/analytics/types.ts:18: * @quality ISO-25010 maintainability shared-vocabulary
 src/components/blocks/Form/Component.tsx:23: * @quality ISO-25010 usability form-rendering
 src/components/pages/AnalyticsPage.tsx:15: * @quality ISO-25010 usability page-composition
+src/types/sti.ts:19: * @quality ISO-25010 maintainability discriminated-subtype-safety
