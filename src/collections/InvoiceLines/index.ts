@@ -6,6 +6,7 @@ import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { VAT_CATEGORY_OPTIONS } from '../../standards/un-cefact-5305'
 import { invoiceLinesBeforeValidate } from './hooks/beforeValidate'
 import { invoiceLineTotals } from './hooks/recomputeInvoiceTotals'
+import { itemInventory } from './hooks/recomputeItemInventory'
 
 /**
  * Invoice Lines — line items (BG-25) for an invoice header.
@@ -66,8 +67,12 @@ export const InvoiceLines: CollectionConfig = {
   },
   hooks: {
     beforeValidate: [autoPopulateTenant, ...invoiceLinesBeforeValidate],
-    afterChange: [auditTrailAfterChange('invoiceLines'), invoiceLineTotals.afterChange],
-    afterDelete: [invoiceLineTotals.afterDelete],
+    afterChange: [
+      auditTrailAfterChange('invoiceLines'),
+      invoiceLineTotals.afterChange,
+      itemInventory.afterChange,
+    ],
+    afterDelete: [invoiceLineTotals.afterDelete, itemInventory.afterDelete],
   },
   timestamps: true,
   fields: [

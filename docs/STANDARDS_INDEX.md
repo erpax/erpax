@@ -381,18 +381,19 @@ src/collections/InvestmentProperties.ts:19: * @standard ISO-4217:2015 currency-c
 src/collections/InvestmentProperties.ts:20: * @standard ISO-8601-1:2019 date-time
 src/collections/InvoiceLines/hooks/beforeValidate.ts:10: * @standard EN-16931:2017 §BG-25 invoice-line
 src/collections/InvoiceLines/hooks/recomputeInvoiceTotals.ts:17: * @standard EN-16931:2017 BT-106/109/110/112/115 document-totals
-src/collections/InvoiceLines/index.ts:34: * @standard EN-16931:2017 §BG-25 invoice-line
-src/collections/InvoiceLines/index.ts:35: * @standard EN-16931:2017 §BG-29 price-details
-src/collections/InvoiceLines/index.ts:36: * @standard EN-16931:2017 §BG-30 line-vat-information
-src/collections/InvoiceLines/index.ts:37: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
-src/collections/InvoiceLines/index.ts:38: * @standard EN-16931:2017 §BG-28 invoice-line-charges
-src/collections/InvoiceLines/index.ts:39: * @standard EN-16931:2017 BT-126 invoice-line-identifier
-src/collections/InvoiceLines/index.ts:40: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
-src/collections/InvoiceLines/index.ts:41: * @standard EN-16931:2017 BT-151 vat-category-code
-src/collections/InvoiceLines/index.ts:42: * @standard Peppol-BIS-3.0 billing line-detail
-src/collections/InvoiceLines/index.ts:43: * @standard UN-EDIFACT INVOIC §LIN line-segment
-src/collections/InvoiceLines/index.ts:44: * @standard ISO-4217:2015 currency-codes
-src/collections/InvoiceLines/index.ts:45: * @standard UN-CEFACT-5305 tax-category-codes
+src/collections/InvoiceLines/hooks/recomputeItemInventory.ts:17: * @standard US-GAAP ASC-330 inventory
+src/collections/InvoiceLines/index.ts:35: * @standard EN-16931:2017 §BG-25 invoice-line
+src/collections/InvoiceLines/index.ts:36: * @standard EN-16931:2017 §BG-29 price-details
+src/collections/InvoiceLines/index.ts:37: * @standard EN-16931:2017 §BG-30 line-vat-information
+src/collections/InvoiceLines/index.ts:38: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
+src/collections/InvoiceLines/index.ts:39: * @standard EN-16931:2017 §BG-28 invoice-line-charges
+src/collections/InvoiceLines/index.ts:40: * @standard EN-16931:2017 BT-126 invoice-line-identifier
+src/collections/InvoiceLines/index.ts:41: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
+src/collections/InvoiceLines/index.ts:42: * @standard EN-16931:2017 BT-151 vat-category-code
+src/collections/InvoiceLines/index.ts:43: * @standard Peppol-BIS-3.0 billing line-detail
+src/collections/InvoiceLines/index.ts:44: * @standard UN-EDIFACT INVOIC §LIN line-segment
+src/collections/InvoiceLines/index.ts:45: * @standard ISO-4217:2015 currency-codes
+src/collections/InvoiceLines/index.ts:46: * @standard UN-CEFACT-5305 tax-category-codes
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/collections/Invoices/index.ts:46: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
 src/collections/Invoices/index.ts:47: * @standard EN-16931:2017 §BG-22 document-totals
@@ -3641,8 +3642,9 @@ src/collections/InventoryMovements.ts:13: * @accounting IFRS IAS-2 §10 §36 inv
 src/collections/InventoryMovements.ts:14: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/collections/InventoryMovements.ts:15: * @accounting US-GAAP ASC-606 cogs-recognition
 src/collections/InvoiceLines/hooks/recomputeInvoiceTotals.ts:18: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/InvoiceLines/index.ts:46: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/InvoiceLines/index.ts:47: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/hooks/recomputeItemInventory.ts:18: * @accounting IFRS IAS-2 inventories
+src/collections/InvoiceLines/index.ts:47: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/index.ts:48: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Invoices/index.ts:58: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/Invoices/index.ts:59: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Items/hooks/afterChange.ts:10: * @accounting IFRS IAS-2 inventories
@@ -4759,6 +4761,7 @@ src/collections/InventoryMovements.ts:16: * @audit ISO-19011:2018 audit-trail st
 src/collections/InvestmentProperties.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-investment-property
 src/collections/InvoiceLines/hooks/beforeValidate.ts:12: * @audit ISO-19011:2018 audit-trail
 src/collections/InvoiceLines/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
+src/collections/InvoiceLines/hooks/recomputeItemInventory.ts:19: * @audit ISO-19011:2018 audit-trail on-hand-provenance
 src/collections/Invoices/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Invoices/index.ts:61: * @audit ISO-19011:2018 audit-trail
 src/collections/Items/hooks/afterChange.ts:12: * @audit ISO-19011:2018 audit-trail double-entry-posting
