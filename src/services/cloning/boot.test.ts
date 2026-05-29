@@ -8,7 +8,11 @@
  */
 import { describe, it, expect } from 'vitest'
 import { publishSelf } from './publish'
-import { bootFromFederation } from './boot'
+import { bootFromFederation, type BootOutcome } from './boot'
+
+/** Narrow the discriminated boot outcome to its failure branch for assertions. */
+const asBootFailure = (r: BootOutcome): Extract<BootOutcome, { ok: false }> =>
+  r as Extract<BootOutcome, { ok: false }>
 
 describe('bootFromFederation (sandbox mode)', () => {
   it('parses a published genome and reports what would be registered', async () => {
@@ -35,7 +39,7 @@ describe('bootFromFederation (sandbox mode)', () => {
     // Tamper the bundle before boot.
     const tampered = {
       ...pub,
-      bundle: { ...pub.bundle, agents: [] },
+      bundle: { ...pub.bundle, agents: [] as typeof pub.bundle.agents },
     }
     const result = await bootFromFederation({
       publication: tampered,
@@ -44,10 +48,9 @@ describe('bootFromFederation (sandbox mode)', () => {
       sandbox: true,
     })
     expect(result.ok).toBe(false)
-    if (!result.ok) {
-      expect(result.failedAt).toBe('integrity-check')
-      expect(result.reason).toContain('agents')
-    }
+    const fail = asBootFailure(result)
+    expect(fail.failedAt).toBe('integrity-check')
+    expect(fail.reason).toContain('agents')
   })
 
   it('refuses when scope mismatch — clone requests genome+state but pub is genome-only', async () => {
@@ -60,9 +63,7 @@ describe('bootFromFederation (sandbox mode)', () => {
       sandbox: true,
     })
     expect(result.ok).toBe(false)
-    if (!result.ok) {
-      expect(result.failedAt).toBe('scope-mismatch')
-    }
+    expect(asBootFailure(result).failedAt).toBe('scope-mismatch')
   })
 
   it('records divergencePoint = sourceMerkleAnchor + bootedAt timestamp', async () => {

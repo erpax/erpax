@@ -4,7 +4,11 @@
  */
 import { describe, it, expect } from 'vitest'
 import { publishSelf } from './publish'
-import { checkCloneIntegrity } from './verify'
+import { checkCloneIntegrity, type CloneIntegrityResult } from './verify'
+
+/** Narrow the discriminated result to its failure branch for assertions. */
+const asFailure = (r: CloneIntegrityResult): Extract<CloneIntegrityResult, { ok: false }> =>
+  r as Extract<CloneIntegrityResult, { ok: false }>
 
 describe('checkCloneIntegrity (Conservation Law 24)', () => {
   it('returns ok=true when the published bundleUuid matches recompute', () => {
@@ -27,10 +31,9 @@ describe('checkCloneIntegrity (Conservation Law 24)', () => {
       cloneTenantId: 'erpax-self',
     })
     expect(result.ok).toBe(false)
-    if (!result.ok) {
-      expect(result.expected).toBe(pub.bundleUuid)
-      expect(result.actual).not.toBe(pub.bundleUuid)
-    }
+    const fail = asFailure(result)
+    expect(fail.expected).toBe(pub.bundleUuid)
+    expect(fail.actual).not.toBe(pub.bundleUuid)
   })
 
   it('returns ok=false when the clone is computed under a different tenant namespace', () => {
@@ -41,18 +44,18 @@ describe('checkCloneIntegrity (Conservation Law 24)', () => {
       cloneTenantId: 'wrong-tenant',
     })
     expect(result.ok).toBe(false)
-    if (!result.ok) expect(result.reason).toContain('tenant')
+    expect(asFailure(result).reason).toContain('tenant')
   })
 
   it('reports the divergence point (which section of the bundle differs)', () => {
     const pub = publishSelf({ tenantId: 'erpax-self', sourceDid: 'did:erpax:s1', scope: 'genome' })
-    const tampered = { ...pub.bundle, agents: [] }
+    const tampered = { ...pub.bundle, agents: [] as typeof pub.bundle.agents }
     const result = checkCloneIntegrity({
       publication: pub,
       cloneBundle: tampered,
       cloneTenantId: 'erpax-self',
     })
     expect(result.ok).toBe(false)
-    if (!result.ok) expect(result.divergentSections).toContain('agents')
+    expect(asFailure(result).divergentSections).toContain('agents')
   })
 })

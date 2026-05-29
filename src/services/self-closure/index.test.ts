@@ -105,7 +105,7 @@ describe('withInternalFallback', () => {
     const externalErr = new Error('rate-limited')
     await withInternalFallback({
       role: 'payment-provider', params: { amount: 50 }, ctx,
-      external: async () => { throw externalErr },
+      external: async (): Promise<Record<string, unknown>> => { throw externalErr },
     })
     expect(provider.invoke).toHaveBeenCalledWith(
       { amount: 50 },
@@ -119,7 +119,7 @@ describe('withInternalFallback', () => {
     await expect(
       withInternalFallback({
         role: 'payment-provider', params: { amount: 1 } as StubParams, ctx,
-        external: async () => { throw new Error('boom') },
+        external: async (): Promise<Record<string, unknown>> => { throw new Error('boom') },
       }),
     ).rejects.toThrow(/boom/)
   })
@@ -133,7 +133,7 @@ describe('withInternalFallback', () => {
     }
     const out = await withInternalFallback({
       role: 'payment-provider', params: { amount: 9 }, ctx,
-      external: async () => { throw new Error('ext-down') },
+      external: async (): Promise<Record<string, unknown>> => { throw new Error('ext-down') },
     })
     // The user-facing result still comes back successfully.
     expect(out.via).toBe('internal')
@@ -225,7 +225,7 @@ describe('InternalFederationProvider — self-as-peer', () => {
       role: 'federation-peer',
       params: { peerUrl: 'https://peer-b.erpax.example/v1/federation', contentUuid: '00000000-0000-5000-8000-feed' },
       ctx,
-      external: async () => { throw new Error('peer unreachable: ECONNREFUSED') },
+      external: async (): Promise<Record<string, unknown>> => { throw new Error('peer unreachable: ECONNREFUSED') },
     })
     expect(out.via).toBe('internal')
     expect(out.providerId).toBe('erpax-self-federation')
@@ -246,7 +246,7 @@ describe('InternalSigningProvider — AdES via per-tenant key', () => {
         role: 'signing-tsp',
         params: { uuid: '00000000-0000-5000-8000-aaaa', kid: 'tenant-1/signing/2026' },
         ctx,
-        external: async () => { throw new Error('qtsp-unreachable') },
+        external: async (): Promise<Record<string, unknown>> => { throw new Error('qtsp-unreachable') },
       }),
     ).rejects.toThrow(/no key material for kid='tenant-1\/signing\/2026'/)
   })
@@ -267,13 +267,13 @@ describe('InternalSigningProvider — AdES via per-tenant key', () => {
         injectedSigningKey: pair.privateKey,
       },
       ctx,
-      external: async () => { throw new Error('qtsp-unreachable') },
+      external: async (): Promise<Record<string, unknown>> => { throw new Error('qtsp-unreachable') },
     })
     expect(out.via).toBe('internal')
     expect(out.result.assurance).toBe('AdES')
     expect(out.result.producedBy).toBe('erpax-self')
     expect(out.result.alg).toBe('EdDSA')
     expect(out.result.uuid).toBe('00000000-0000-5000-8000-bbbb')
-    expect(out.result.sig.length).toBeGreaterThan(0)
+    expect((out.result.sig as string).length).toBeGreaterThan(0)
   })
 })
