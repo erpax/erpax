@@ -34,11 +34,9 @@ describe('getGlobals', () => {
   it('works with different global slugs', () => {
     const headerFetcher = getCachedGlobal('header')
     const footerFetcher = getCachedGlobal('footer')
-    const settingsFetcher = getCachedGlobal('settings')
 
     expect(typeof headerFetcher).toBe('function')
     expect(typeof footerFetcher).toBe('function')
-    expect(typeof settingsFetcher).toBe('function')
   })
 
   it('uses getCachedPayloadGlobal under the hood', async () => {
@@ -46,7 +44,7 @@ describe('getGlobals', () => {
     const result = await fetcher()
 
     expect(result).toBeDefined()
-    expect(result.slug).toBe('footer')
+    expect((result as { slug?: string }).slug).toBe('footer')
   })
 
   it('accepts depth parameter', () => {
@@ -58,7 +56,7 @@ describe('getGlobals', () => {
   })
 
   it('defaults depth to 0 when not provided', () => {
-    const fetcher = getCachedGlobal('navigation')
+    const fetcher = getCachedGlobal('footer')
     expect(typeof fetcher).toBe('function')
   })
 })

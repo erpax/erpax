@@ -57,7 +57,7 @@ describe('establishGovernance', () => {
     // The rootUuid decodes back to the declared capabilities.
     const decoded = decodeStructured(scope.rootUuid)
     expect(decoded.slotName).toBe('tenant')
-    expect(decoded.capabilityNames.sort()).toEqual(['CHAINED', 'SHARED', 'SIGNED'])
+    expect([...decoded.capabilityNames].sort()).toEqual(['CHAINED', 'SHARED', 'SIGNED'])
     expect(decoded.schemaVersion).toBe(2)
   })
 
@@ -135,7 +135,7 @@ describe('verifyGovernance — chain walk + capability read-back', () => {
     })
     // Genesis leaf needs to be persisted by the test.
     // We synthesise it from the scope's metadata.
-    const genesis = await import('@/services/uuid-chain').then((m) => m.forgeGenesisLink<TestEntity>({
+    const genesis = await import('@/services/uuid-chain').then(async (m) => m.forgeGenesisLink<TestEntity>({
       payloadUuid: (await import('@/services/integrity/content-uuid').then((c) => c.computeContentUuid(
         { entity: { kind: 'tenant', name: 'acme' }, capabilities: scope.capabilities, schemaVersion: 1, establishedAt: '2026-05-11T08:00:00.000Z' },
         TENANT,
@@ -158,7 +158,7 @@ describe('verifyGovernance — chain walk + capability read-back', () => {
     expect(v.ok).toBe(true)
     expect(v.verifiedLeaves).toBe(3)
     expect(v.headDepth).toBe(2)
-    expect(v.capabilities.sort()).toEqual(['CHAINED', 'SHARED', 'SIGNED'])
+    expect([...v.capabilities].sort()).toEqual(['CHAINED', 'SHARED', 'SIGNED'])
   })
 
   it('returns ok:false when the rootUuid is not structured (Law 61 violation)', async () => {

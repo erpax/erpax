@@ -26,12 +26,15 @@ vi.mock('@/utilities/urlUtils', () => ({
   },
 }))
 
+/** `NODE_ENV` is a readonly member of `ProcessEnv`; route test mutations through a mutable view. */
+const mutableEnv = process.env as Record<string, string | undefined>
+
 describe('getURL', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     delete process.env.NEXT_PUBLIC_SERVER_URL
     delete process.env.VERCEL_PROJECT_PRODUCTION_URL
-    process.env.NODE_ENV = 'development'
+    mutableEnv.NODE_ENV = 'development'
   })
 
   describe('getOriginFromHeaders', () => {
@@ -56,7 +59,7 @@ describe('getURL', () => {
     })
 
     it('uses production https by default for protocol', () => {
-      process.env.NODE_ENV = 'production'
+      mutableEnv.NODE_ENV = 'production'
       const headers = new Headers({
         'x-forwarded-host': 'example.com',
       })
@@ -66,7 +69,7 @@ describe('getURL', () => {
     })
 
     it('uses development http by default for protocol', () => {
-      process.env.NODE_ENV = 'development'
+      mutableEnv.NODE_ENV = 'development'
       const headers = new Headers({
         'x-forwarded-host': 'localhost:3000',
       })

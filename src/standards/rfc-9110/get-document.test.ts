@@ -47,8 +47,9 @@ describe('getDocument', () => {
     const result = await fetcher()
 
     expect(result).toBeDefined()
-    expect(result.slug).toBe('about')
-    expect(result.collection).toBe('pages')
+    const doc = result as { slug?: string; collection?: string }
+    expect(doc.slug).toBe('about')
+    expect(doc.collection).toBe('pages')
   })
 
   it('works with special slug values', () => {

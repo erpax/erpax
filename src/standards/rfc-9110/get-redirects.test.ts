@@ -59,14 +59,14 @@ describe('getRedirects', () => {
     expect(redirect).toHaveProperty('from')
     expect(redirect).toHaveProperty('to')
     expect(redirect).toHaveProperty('statusCode')
-    expect(redirect.statusCode).toBe(301)
+    expect((redirect as { statusCode?: number }).statusCode).toBe(301)
   })
 
   it('supports different status codes', async () => {
     const fetcher = getCachedRedirects()
     const result = await fetcher()
 
-    const codes = result.docs.map((d) => d.statusCode)
+    const codes = result.docs.map((d) => (d as { statusCode?: number }).statusCode)
     expect(codes).toContain(301)
     expect(codes).toContain(302)
   })

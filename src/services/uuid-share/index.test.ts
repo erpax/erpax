@@ -99,7 +99,7 @@ const FAKE_LEAF: UuidLinkedLeaf = {
   prevUuid: '00000000-0000-5000-8000-prevprevprev',
   occurredAt: '2026-05-11T08:00:00.000Z',
   payloadUuid: '00000000-0000-5000-8000-payldpayld',
-} as UuidLinkedLeaf
+} as unknown as UuidLinkedLeaf
 
 function makeMediator(opts: { signs?: boolean } = {}) {
   return {
@@ -161,14 +161,14 @@ describe('computeShareUuid emits structured uuidv8 with slot=share + capabilitie
     const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'admin', tenantId: 't' })
     const parts = decodeStructured(u)
     expect(parts.slotName).toBe('share')
-    expect(parts.capabilityNames.sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
+    expect([...parts.capabilityNames].sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
   })
 
   it('sign share matches admin capability set', async () => {
     const { decodeStructured } = await import('@/services/uuid-format')
     const u = computeShareUuid({ granteeUuid: GRANTEE, targetUuid: TARGET, accessRole: 'sign', tenantId: 't' })
     const parts = decodeStructured(u)
-    expect(parts.capabilityNames.sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
+    expect([...parts.capabilityNames].sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
   })
 
   it('audit share decodes as slot=share + SHARED only (audit is observation-only)', async () => {
