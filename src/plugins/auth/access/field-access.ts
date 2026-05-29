@@ -47,21 +47,13 @@ const userIsSuperAdmin = (user: unknown): boolean => {
  *     relationTo: 'tenants',
  *     required: true,
  *     access: {
- *       read: tenantFieldAccess,
+ *       // read left default (open); only writes are gated to super-admin
  *       create: tenantFieldAccess,
  *       update: tenantFieldAccess,
  *     }
  *   }
  */
-export const tenantFieldAccess: FieldAccess = ({ req }) => {
-  const isSuperAdmin = userIsSuperAdmin(req.user)
-
-  return {
-    read: true,
-    create: isSuperAdmin,
-    update: isSuperAdmin,
-  }
-}
+export const tenantFieldAccess: FieldAccess = ({ req }) => userIsSuperAdmin(req.user)
 
 /**
  * Read-only field access (except for super-admin).
@@ -81,18 +73,10 @@ export const tenantFieldAccess: FieldAccess = ({ req }) => {
  *     name: 'auditTrail',
  *     type: 'text',
  *     access: {
- *       read: readOnlyExceptSuperAdmin,
+ *       // read left default (open); only writes are gated to super-admin
  *       create: readOnlyExceptSuperAdmin,
  *       update: readOnlyExceptSuperAdmin,
  *     }
  *   }
  */
-export const readOnlyExceptSuperAdmin: FieldAccess = ({ req }) => {
-  const isSuperAdmin = userIsSuperAdmin(req.user)
-
-  return {
-    read: true,
-    create: isSuperAdmin,
-    update: isSuperAdmin,
-  }
-}
+export const readOnlyExceptSuperAdmin: FieldAccess = ({ req }) => userIsSuperAdmin(req.user)

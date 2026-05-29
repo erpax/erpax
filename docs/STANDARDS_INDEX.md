@@ -3285,7 +3285,7 @@ src/payload.config.tenant.test.ts:7: * @compliance GDPR Art.5(1)(f) integrity-an
 src/payload.config.tenant.test.ts:8: * @compliance SOC-2 CC6.1 logical-access-controls
 src/plugins/auth/access/field-access.ts:13: * @compliance SOC-2 CC6.1 logical-access-controls
 src/plugins/auth/access/field-access.ts:41: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/plugins/auth/access/field-access.ts:77: * @compliance SOC-2 CC7.2 system-monitoring
+src/plugins/auth/access/field-access.ts:69: * @compliance SOC-2 CC7.2 system-monitoring
 src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
 src/plugins/auth/access/predicates.ts:126: * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
 src/plugins/auth/access/predicates.ts:50: * @compliance SOC-2 CC6.3 privileged-access-management
@@ -4522,8 +4522,8 @@ src/plugins/auth/access/field-access.ts:11: * @security ISO-27002 § 5.15 access
 src/plugins/auth/access/field-access.ts:12: * @security ISO-27002 § 5.18 access-rights
 src/plugins/auth/access/field-access.ts:39: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/auth/access/field-access.ts:40: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/field-access.ts:75: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/field-access.ts:76: * @security ISO-27002 § 5.18 access-rights
+src/plugins/auth/access/field-access.ts:67: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/field-access.ts:68: * @security ISO-27002 § 5.18 access-rights
 src/plugins/auth/access/field-access.ts:9: * @security ISO-27001 A.5.18 access-rights
 src/plugins/auth/access/index.ts:11: * @security ISO-27001 A.5.15 access-control
 src/plugins/auth/access/index.ts:12: * @security ISO-27001 A.5.18 access-rights

@@ -17,32 +17,29 @@ export const validateDoubleEntry: CollectionBeforeValidateHook = async ({ data, 
     return data
   }
 
-  // Skip if no postings provided
-  if (!data.postings || !Array.isArray(data.postings) || data.postings.length === 0) {
+  // Skip if no lines provided (JournalEntries.lines — see GLAccounts/journal schema)
+  const lines = (data as {
+    lines?: Array<{ glAccount?: string | { id: string }; debit?: number; credit?: number }>
+  }).lines
+  if (!Array.isArray(lines) || lines.length === 0) {
     return data
   }
 
-  // Validate double-entry bookkeeping
-  const validationResult = DoubleEntryValidator.validate({
-    postings: data.postings.map((posting) => ({
-      glAccount: posting.glAccount,
-      debitAmount: posting.debitAmount || 0,
-      creditAmount: posting.creditAmount || 0,
+  // Validate double-entry bookkeeping: Σ debit = Σ credit (IAS-1 §27 accrual; the harmony invariant)
+  const validationResult = DoubleEntryValidator.validate(
+    lines.map((line) => ({
+      accountId: line.glAccount ?? '',
+      debitAmount: line.debit ?? 0,
+      creditAmount: line.credit ?? 0,
     })),
-  })
+  )
 
-  // If there are errors, throw validation error
+  // errors / warnings are string[]
   if (validationResult.errors.length > 0) {
-    throw new Error(
-      `Double-entry validation failed: ${validationResult.errors.map((e) => e.message).join('; ')}`
-    )
+    throw new Error(`Double-entry validation failed: ${validationResult.errors.join('; ')}`)
   }
-
-  // If there are warnings, log them (but don't fail validation)
   if (validationResult.warnings.length > 0) {
-    console.warn(
-      `Double-entry warnings: ${validationResult.warnings.map((w) => w.message).join('; ')}`
-    )
+    console.warn(`Double-entry warnings: ${validationResult.warnings.join('; ')}`)
   }
 
   return data

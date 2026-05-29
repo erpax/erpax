@@ -205,7 +205,7 @@ import {
   DIMENSION_PLUGIN_FACTORIES, allDimensionalPlugins, checkDimensionalPluginScaffolded,
 } from '@/services/dimensions'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
-import type { AgentRegistry } from '@/services/agents/types'
+import type { AgentRegistry, AgentContext } from '@/services/agents/types'
 import { getActorId } from '@/access/auth'
 
 export interface ErpaxMcpTool {
@@ -392,7 +392,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
           tenantId: e.tenantId,
           payload: req.payload,
           mcp: createInProcessMcpClient(buildErpaxMcpTools(registry), req),
-          chain: undefined,
+          chain: undefined as AgentContext['chain'],
         }
         const effects = await agentRuntime.dispatchEvent(ctx as never, {
           id: e.id, tenantId: e.tenantId, payload: e.payload,
@@ -523,7 +523,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
           tenantId,
           payload: req.payload,
           mcp: createInProcessMcpClient(buildErpaxMcpTools(registry), req),
-          chain: undefined,
+          chain: undefined as AgentContext['chain'],
         }
         const effects = await agentRuntime.dispatchEvent(ctx as never, {
           id: doc.eventType as string,
@@ -2459,7 +2459,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       name: 'erpax.consistency.proposeEmitterWiring',
       description: 'For collections that declared `emits: ["x:y"]` without a producer (Class F / Law 4 — event-graph closure), propose the chainEventEmitters wiring — which emitOnStatusTransition shape + which aggregate type to bind. Returns a list of FixProposal records; does NOT mutate source.',
       parameters: { offenders: z.array(z.string()).optional() },
-      async handler({ offenders }) {
+      async handler({ offenders }: { offenders?: string[] }) {
         const proposals = (offenders ?? []).map((o) => ({
           offender: o,
           // Heuristic: parse `FileName.ts:'event:type'` and propose
@@ -2475,7 +2475,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       name: 'erpax.consistency.proposeSlugRebind',
       description: 'For relationTo: or payload.find({collection:}) targets pointing at non-existent slugs (Class I/M / Law 10 — referential harmony), propose either (a) a rebind to the right existing slug (Levenshtein-near match) or (b) scaffolding a new collection. Returns FixProposal records; does NOT mutate source.',
       parameters: { offenders: z.array(z.string()).optional() },
-      async handler({ offenders }) {
+      async handler({ offenders }: { offenders?: string[] }) {
         const proposals = (offenders ?? []).map((o) => ({
           offender: o,
           suggestion: 'manual: choose existing slug or scaffold collection via Slice XXXXXXXX pattern (factory + register barrel + register plugin order)',

@@ -230,7 +230,7 @@ export interface StreamCoherenceResult {
  * Lamport order. Out-of-order delivery within a window violates
  * causal coherence (Law 33).
  */
-export function checkWindowCoherence(events: ReadonlyArray<ClockedEvent>): StreamCoherenceResult {
+export function checkWindowCoherence(events: ReadonlyArray<Pick<ClockedEvent, 'lamport'>>): StreamCoherenceResult {
   let last = -Infinity
   const windowsChecked = 1
   const violations: { at: number; expected: number; got: number }[] = []

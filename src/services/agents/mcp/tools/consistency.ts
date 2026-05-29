@@ -151,7 +151,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
       name: 'erpax.consistency.proposeEmitterWiring',
       description: tEmitter.desc(I18N.proposeEmitterWiring!),
       parameters: { offenders: z.array(z.string()).optional() },
-      async handler({ offenders }) {
+      async handler({ offenders }: { offenders?: string[] }) {
         const proposals = (offenders ?? []).map((o) => ({
           offender: o,
           suggestedHook: `add to src/hooks/chainEventEmitters.ts: emit<...>= emitOnStatusTransition('<status>', '${o.split("'")[1] ?? ''}', '<aggregateType>')`,
@@ -164,7 +164,7 @@ export function buildConsistencyTools(): ReadonlyArray<ErpaxMcpTool> {
       name: 'erpax.consistency.proposeSlugRebind',
       description: tRebind.desc(I18N.proposeSlugRebind!),
       parameters: { offenders: z.array(z.string()).optional() },
-      async handler({ offenders }) {
+      async handler({ offenders }: { offenders?: string[] }) {
         const proposals = (offenders ?? []).map((o) => ({
           offender: o,
           suggestion: 'manual: choose existing slug or scaffold collection via Slice XXXXXXXX pattern',
