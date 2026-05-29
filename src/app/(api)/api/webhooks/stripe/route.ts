@@ -81,7 +81,7 @@ export async function POST(request: Request) {
 
     // Verify and parse Stripe webhook
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-      apiVersion: '2025-03-31.basil' as Stripe.StripeConfig['apiVersion'],
+      apiVersion: '2026-04-22.dahlia',
     })
 
     let event: Stripe.Event

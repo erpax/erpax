@@ -88,7 +88,7 @@ export function tenantConfirmOrder(props?: {
     }
 
     const stripe = new Stripe(secretKey, {
-      apiVersion: (apiVersion ?? '2025-03-31.basil') as Stripe.StripeConfig['apiVersion'],
+      apiVersion: (apiVersion ?? '2026-04-22.dahlia') as '2026-04-22.dahlia',
       appInfo: appInfo || {
         name: 'Stripe Payload Plugin',
         url: 'https://payloadcms.com',

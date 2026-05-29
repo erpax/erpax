@@ -58,8 +58,6 @@ import type {
   Address,
   Customer,
   Vendor,
-  Item,
-  TaxCode,
   JournalEntry,
   Invoice,
   Payment,
@@ -290,7 +288,7 @@ export const buildProducts = async (
     limit: 100_000,
     depth: 0,
   })
-  return (result.docs as Item[]).map((d) => ({
+  return (result.docs as unknown as Array<Record<string, unknown>>).map((d) => ({
     productCode: String((d.itemNumber as string | undefined) ?? d.id),
     productDescription: String(((d.itemName as string | undefined) ?? (d.description as string | undefined) ?? d.id) ?? d.id),
     productType: ((d.productType as 'P' | 'S' | 'O' | 'I' | undefined) ?? 'P') as 'P' | 'S' | 'O' | 'I',
@@ -308,7 +306,7 @@ export const buildTaxTable = async (
     limit: 1_000,
     depth: 0,
   })
-  return (result.docs as TaxCode[]).map((d) => ({
+  return (result.docs as unknown as Array<Record<string, unknown>>).map((d) => ({
     taxType: String((d.taxType as string | undefined) ?? 'IVA'),
     taxCountryRegion: String((d.taxCountryRegion as string | undefined) ?? 'PT'),
     taxCode: String(((d.taxCode as string | undefined) ?? d.id) ?? d.id),
@@ -422,7 +420,7 @@ export const buildGeneralLedgerEntries = async (
   for (const doc of docs) {
     const journalId = journalIdFor(doc.sourceType)
     const txDate =
-      doc.entryDate instanceof Date
+      (doc.entryDate as unknown) instanceof Date
         ? doc.entryDate
         : new Date(doc.entryDate ?? doc.createdAt ?? new Date())
     const systemEntryDate = (doc.createdAt
@@ -438,13 +436,13 @@ export const buildGeneralLedgerEntries = async (
       totalCredit += credit
       return {
         recordID: String(i + 1),
-        accountID: String(l.accountId ?? '—'),
+        accountID: String((l as Record<string, unknown>).accountId ?? '—'),
         systemEntryDate,
         debitCreditIndicator: debit > 0 ? 'D' : 'C',
         amount: { amount },
         description: l.description,
-        customerID: l.customerId,
-        supplierID: l.supplierId,
+        customerID: (l as Record<string, unknown>).customerId as string | undefined,
+        supplierID: (l as Record<string, unknown>).supplierId as string | undefined,
       }
     })
 
