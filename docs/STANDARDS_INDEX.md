@@ -2276,6 +2276,11 @@ src/standards/multi-currency-closing/index.ts:9: * @standard IFRS-21:2023 Transl
 src/standards/nace-rev2/index.ts:10: * @standard UN ISIC Rev.4 (companion)
 src/standards/nace-rev2/index.ts:11: * @standard NAICS 2022 (US/CA/MX companion)
 src/standards/nace-rev2/index.ts:9: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+src/standards/naredba-n-18/scope.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
+src/standards/naredba-n-18/scope.test.ts:7: * @standard BG Наредба-Н-18 §чл.3-ал.1
+src/standards/naredba-n-18/scope.ts:19: * @standard BG Наредба-Н-18 §чл.3-ал.1 fiscalization-scope-by-payment
+src/standards/naredba-n-18/scope.ts:20: * @standard BG ЗДДС §118 fiscal-receipt-obligation
+src/standards/naredba-n-18/scope.ts:21: * @standard BG ЗПУПС payment-services (PSP transfers)
 src/standards/naredba-n-18/unp.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/standards/naredba-n-18/unp.test.ts:5: * @standard BG Наредба-Н-18 §СУПТО УНП unique-sales-number
 src/standards/naredba-n-18/unp.ts:19: * @standard BG Наредба-Н-18 §СУПТО УНП unique-sales-number

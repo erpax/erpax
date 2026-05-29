@@ -20,6 +20,7 @@
 
 import type { Payload, PayloadRequest } from 'payload'
 import { eventEmitter, type EventEmitterService } from '@/services/event-emitter.service'
+import { requiresFiscalization } from '@/standards/naredba-n-18/scope'
 import { reverseSale } from './reverse-sale'
 
 interface OrderLine {
@@ -126,11 +127,18 @@ export async function fiscalizeOrder(
   })
   if (existing.docs.length > 0) return undefined
 
+  const paymentType = toFiscalPaymentType(p.paymentType)
+  // Lawful exemption (Наредба Н-18 чл. 3 ал. 1): orders settled by bank
+  // transfer / direct debit / PSP / postal money transfer are OUT of СУПТО
+  // scope — no касов бон. This is not a bypass; it's being out of scope.
+  if (!requiresFiscalization(paymentType)) return undefined
+
   const fiscalDeviceNumber = await resolveDeviceNumber(payload, tenant, req)
   if (!fiscalDeviceNumber) {
-    // No СУПТО bypass: a paid order MUST be fiscalized. A tenant with no
-    // registered ФУ is a compliance misconfiguration — fail loudly (the
-    // subscriber routes this to the error log / dead-letter), never skip.
+    // No СУПТО bypass: an in-scope (cash/card/voucher) paid order MUST be
+    // fiscalized. A tenant with no registered ФУ is a compliance
+    // misconfiguration — fail loudly (the subscriber routes this to the error
+    // log / dead-letter), never skip.
     throw new Error(
       `Наредба Н-18: cannot fiscalize order ${p.orderId} — tenant ${tenant || 'unknown'} has no registered fiscal device (no СУПТО bypass).`,
     )
@@ -148,7 +156,7 @@ export async function fiscalizeOrder(
       items,
       total: Number(p.total ?? items.reduce((s, i) => s + i.amount, 0)),
       currency: p.currencyCode ?? 'BGN',
-      paymentType: toFiscalPaymentType(p.paymentType),
+      paymentType,
       status: 'closed',
       tenant,
     } as never,

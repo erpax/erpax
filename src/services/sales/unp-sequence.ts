@@ -21,6 +21,7 @@
 
 import type { CollectionBeforeChangeHook } from 'payload'
 import { formatUnp, isValidUnp } from '@/standards/naredba-n-18/unp'
+import { requiresFiscalization } from '@/standards/naredba-n-18/scope'
 
 interface SaleShape {
   unp?: unknown
@@ -28,6 +29,7 @@ interface SaleShape {
   fiscalDeviceNumber?: unknown
   operatorCode?: unknown
   status?: unknown
+  paymentType?: unknown
   tenant?: unknown
 }
 
@@ -72,15 +74,18 @@ async function assignNextUnp(
 }
 
 const NO_BYPASS =
-  'Наредба Н-18: a sale cannot be closed without a fiscal device — no СУПТО bypass (every closed sale carries a УНП).'
+  'Наредба Н-18: a cash/card/voucher sale cannot be closed without a fiscal device — no СУПТО bypass (every in-scope closed sale carries a УНП).'
 
 /**
  * beforeChange hook factory. `collectionSlug` is the sales collection the УНП
  * sequence is scoped within (per fiscal device, per tenant).
  *
- * No СУПТО bypass: a sale that is **closed** MUST carry a УНП. A device-less
- * sale may exist only as an open draft; closing one without a fiscal device is
- * rejected, and a closing sale that lacks a number gets one assigned.
+ * No СУПТО bypass: a **fiscalization-scope** sale (cash/card/voucher — чл. 3
+ * ал. 1) that is **closed** MUST carry a УНП. Closing such a sale without a
+ * fiscal device is rejected; a closing sale that lacks a number gets one
+ * assigned. Sales settled by a lawfully-exempt channel (bank transfer / direct
+ * debit / PSP / postal money transfer) may close without a УНП — they are out
+ * of СУПТО scope, not a bypass.
  */
 export const assignSaleUnpHook =
   (collectionSlug: string): CollectionBeforeChangeHook =>
@@ -88,6 +93,7 @@ export const assignSaleUnpHook =
     const d = data as SaleShape
     const orig = originalDoc as SaleShape | undefined
     const effectiveClosed = (d.status ?? orig?.status) === 'closed'
+    const inScope = requiresFiscalization(str(d.paymentType) ?? str(orig?.paymentType))
     const alreadyNumbered =
       (typeof orig?.unp === 'string' && isValidUnp(orig.unp)) ||
       (typeof d.unp === 'string' && isValidUnp(d.unp))
@@ -98,11 +104,12 @@ export const assignSaleUnpHook =
       if (prev && typeof d.unp === 'string' && d.unp !== prev) {
         throw new Error(`Наредба Н-18: УНП is frozen at creation; '${prev}' cannot become '${String(d.unp)}'.`)
       }
-      // No bypass: closing an as-yet-unnumbered sale must assign its УНП now.
+      // No bypass: closing an as-yet-unnumbered in-scope sale must number it now.
       if (effectiveClosed && !alreadyNumbered) {
         const device = str(d.fiscalDeviceNumber) ?? str(orig?.fiscalDeviceNumber)
-        if (!device) throw new Error(NO_BYPASS)
-        await assignNextUnp(collectionSlug, d, device, req)
+        if (device) await assignNextUnp(collectionSlug, d, device, req)
+        else if (inScope) throw new Error(NO_BYPASS)
+        // exempt + no device → lawfully closes without a УНП (out of scope)
       }
       return data
     }
@@ -112,9 +119,10 @@ export const assignSaleUnpHook =
 
     const device = str(d.fiscalDeviceNumber)
     if (!device) {
-      // A device-less sale is allowed only as an open draft — never closed.
-      if (effectiveClosed) throw new Error(NO_BYPASS)
-      return data // numbered when a device is set / on close
+      // No device: allowed for an open draft, or a closed *exempt* sale.
+      // A closed in-scope (cash/card/voucher) sale without a device is a bypass.
+      if (effectiveClosed && inScope) throw new Error(NO_BYPASS)
+      return data
     }
     await assignNextUnp(collectionSlug, d, device, req)
     return data

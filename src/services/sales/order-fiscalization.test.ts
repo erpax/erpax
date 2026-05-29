@@ -76,10 +76,17 @@ describe('fiscalizeOrder', () => {
     expect(m.create).not.toHaveBeenCalled()
   })
 
-  it('refuses to fiscalize (throws — no bypass) when the tenant has no fiscal device', async () => {
+  it('refuses to fiscalize (throws — no bypass) when an in-scope order has no fiscal device', async () => {
     const m = mockPayload({ device: null })
     await expect(fiscalizeOrder(asPayload(m), ORDER, 't1')).rejects.toThrow(/no СУПТО bypass/)
     expect(m.create).not.toHaveBeenCalled()
+  })
+
+  it('lawfully skips a bank-transfer order (чл. 3 ал. 1 — out of СУПТО scope)', async () => {
+    const m = mockPayload({ device: null })
+    const res = await fiscalizeOrder(asPayload(m), { ...ORDER, paymentType: 'bank_transfer' }, 't1')
+    expect(res).toBeUndefined()
+    expect(m.create).not.toHaveBeenCalled() // not a bypass — no касов бон required
   })
 })
 

@@ -81,11 +81,22 @@ describe('assignSaleUnpHook — per-ФУ gapless УНП', () => {
     expect(find).not.toHaveBeenCalled()
   })
 
-  it('rejects creating a CLOSED sale without a fiscal device (no СУПТО bypass)', async () => {
+  it('rejects creating a CLOSED cash/card sale without a fiscal device (no СУПТО bypass)', async () => {
     const { find } = ctx([])
     await expect(
-      run(hook, { data: { status: 'closed', operatorCode: '0042' }, operation: 'create', find }),
+      run(hook, { data: { status: 'closed', paymentType: 'card', operatorCode: '0042' }, operation: 'create', find }),
     ).rejects.toThrow(/no СУПТО bypass/)
+  })
+
+  it('allows a CLOSED bank-transfer sale without a device (чл. 3 ал. 1 — out of scope)', async () => {
+    const { find } = ctx([])
+    const out = (await run(hook, {
+      data: { status: 'closed', paymentType: 'bank_transfer' },
+      operation: 'create',
+      find,
+    })) as { unp?: string }
+    expect(out.unp).toBeUndefined() // lawfully unfiscalized
+    expect(find).not.toHaveBeenCalled()
   })
 
   it('rejects closing an unnumbered sale that has no fiscal device (no bypass)', async () => {
