@@ -6,11 +6,13 @@
  * + context, then reduce to `taggable` ids per mode. This is the
  * position-8 (`queries`) merge: one space, sliced by `(context, tag)`.
  *
- * NOTE (verify with Payload): polymorphic-relationship `where` keys are
- * `taggable.relationTo` / `taggable.value`, and the stored shape is
- * `{ relationTo, value }`. Confirmed against Payload's documented
- * polymorphic query API; adjust the keys here if a version differs.
- * Slug literals are cast to `CollectionSlug` until `generate:types`
+ * The polymorphic target is referenced by **content-uuid**, not a Payload
+ * polymorphic relationship (which would materialise one FK column per target
+ * collection → over D1's 100-column cap; see the `taggable` plugin + `tags`
+ * skill). So the stored shape is two plain columns: `taggable` (the target's
+ * content-uuid) + `taggableType` (its collection slug). The collection filter
+ * is therefore `{ taggableType: { equals: slug } }`, and `taggable` is a bare
+ * id string. Slug literals are cast to `CollectionSlug` until `generate:types`
  * regenerates the union with `tags`/`taggings`.
  *
  * @standard ISO-25964-1:2011 thesauri retrieval
@@ -70,7 +72,7 @@ export async function taggedWith(
     where: {
       and: [
         { tag: { in: tagIds } },
-        { 'taggable.relationTo': { equals: collectionSlug } },
+        { taggableType: { equals: collectionSlug } },
         ...(opts.context != null ? [{ context: { equals: opts.context } }] : []),
         ...(opts.taggerId != null ? [{ tagger: { equals: opts.taggerId } }] : []),
         ...tenantClause,

@@ -1,49 +1,31 @@
 /**
- * Taggable plugin — makes EVERY collection taggable (anything is taggable).
+ * Taggable plugin — makes EVERY record taggable by content-uuid.
  *
- * Mirrors `contentUuidPlugin`: one injector, all collections. It:
- *   1. Sets `taggings.taggable` to a polymorphic relationship whose
- *      `relationTo` is every taggable collection slug (computed from the
- *      config — the one place that knows them all), so the single
- *      `taggings` join links tags to ANY record.
- *   2. Injects a virtual `tags` **join** field into every taggable
- *      collection (reverse of `taggings.taggable`) — zero stored
- *      columns, so taggable collections keep their schema clean.
+ * "Anything is taggable" is realised the same way as "anything is accountable"
+ * (see the `identity` skill): the tagged record is referenced by its
+ * **content-uuid** — ONE `text` column (`taggable`) plus its collection slug
+ * (`taggableType`) — NOT a Payload polymorphic `relationTo:[…all]`.
  *
- * This is the position-8 (`queries`) merge operator of the [[sequence]]:
- * categories / statuses / types and deep nested groups collapse into
- * `(context, tag)` filtering over one space ("less collections, more
- * features"). See the `tags` skill.
+ * WHY (D1 100-column cap): a polymorphic relationship materialises one FK
+ * column per target collection in `taggings_rels`; with 200+ collections that
+ * is 200+ columns, past **D1's hard 100-column-per-table limit** — the schema
+ * becomes un-creatable (`payload migrate` → `D1_ERROR: too many columns on
+ * taggings_rels`). The content-uuid column is ONE column for all targets and
+ * federates (same content ⇒ same id everywhere; see the `identity` skill).
+ * Verify with `pnpm d1:audit`.
  *
- * LIMIT (Payload — verify with `payload generate:types`): the `join`
- * field over a POLYMORPHIC `on` target. If a Payload version rejects
- * it, pass `joinField: false` — querying `taggings` directly via
- * `taggedWith` is unaffected.
+ * Reverse lookup ("tags on this record") is a query, not a stored join field:
+ * `taggedWith(payload, slug, …)` filters `taggings` by `(taggableType, tag,
+ * context)` — see ../services/tags/taggedWith.ts and the `tags` skill.
  *
  * @standard RFC-4122 §4.3 uuid
- * @see ../collections/Tags.ts
- * @see ../collections/Taggings.ts
- * @see ../services/tags/taggedWith.ts
+ * @see ../collections/Taggings.ts · ../services/tags/taggedWith.ts · the `tags` skill
  */
 import type { Config, Field, Plugin } from 'payload'
-
-/** Not taggable: the tag system itself + Payload internals. */
-const NON_TAGGABLE = new Set<string>([
-  'tags',
-  'taggings',
-  'payload-migrations',
-  'payload-jobs',
-  'payload-locked-documents',
-  'payload-preferences',
-])
 
 export interface TaggablePluginOptions {
   /** Disable entirely. */
   readonly enabled?: boolean
-  /** Inject the reverse `tags` join field into every collection (default true). */
-  readonly joinField?: boolean
-  /** Extra slugs excluded from being taggable. */
-  readonly exclude?: ReadonlyArray<string>
 }
 
 const hasField = (fields: Field[] | undefined, name: string): boolean =>
@@ -53,43 +35,30 @@ export const taggablePlugin =
   (opts: TaggablePluginOptions = {}): Plugin =>
   (config: Config): Config => {
     if (opts.enabled === false) return config
-    const injectJoin = opts.joinField !== false
-    const exclude = new Set<string>([...NON_TAGGABLE, ...(opts.exclude ?? [])])
-
     const collections = config.collections ?? []
-    const taggableSlugs = collections
-      .map((c) => c.slug)
-      .filter((slug): slug is string => typeof slug === 'string' && !exclude.has(slug))
 
     return {
       ...config,
       collections: collections.map((collection) => {
-        // 1. taggings.taggable → polymorphic relationship over every slug.
-        if (collection.slug === 'taggings') {
-          if (hasField(collection.fields, 'taggable')) return collection
-          const taggable = {
-            name: 'taggable',
-            type: 'relationship',
-            relationTo: taggableSlugs,
-            required: true,
-            index: true,
-            admin: { description: 'The tagged record — any taggable collection (polymorphic).' },
-          } as unknown as Field
-          return { ...collection, fields: [...(collection.fields ?? []), taggable] }
+        if (collection.slug !== 'taggings') return collection
+        if (hasField(collection.fields, 'taggable')) return collection
+        // Polymorphic-by-content-uuid: ONE text column for ALL targets, vs a
+        // `relationTo:[…all]` _rels table with one FK column per collection
+        // (200+ cols → over D1's 100-col cap; see the file banner).
+        const taggable: Field = {
+          name: 'taggable',
+          type: 'text',
+          required: true,
+          index: true,
+          admin: { description: 'The tagged record, by content-uuid (any collection — polymorphic via uuid).' },
         }
-
-        // 2. Reverse `tags` join on every taggable collection.
-        if (!injectJoin || exclude.has(collection.slug) || hasField(collection.fields, 'tags')) {
-          return collection
+        const taggableType: Field = {
+          name: 'taggableType',
+          type: 'text',
+          index: true,
+          admin: { description: "The tagged record's collection slug (the polymorphic context)." },
         }
-        const tagsJoin = {
-          name: 'tags',
-          type: 'join',
-          collection: 'taggings',
-          on: 'taggable',
-          admin: { description: 'Taggings on this record (reverse of taggings.taggable).' },
-        } as unknown as Field
-        return { ...collection, fields: [...(collection.fields ?? []), tagsJoin] }
+        return { ...collection, fields: [...(collection.fields ?? []), taggable, taggableType] }
       }),
     }
   }

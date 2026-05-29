@@ -265,7 +265,7 @@ const {
   Terminals,
   AuditSubmissions,
 } = allCollections
-import type { CollectionSlug } from 'payload'
+import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
 import { beforeSyncWithSearch } from './components/search/beforeSync'
@@ -469,7 +469,12 @@ export default buildConfig({
     push:
       process.env.NODE_ENV !== 'test' && process.env.PAYLOAD_DEV_PUSH !== 'false',
   }),
-  collections: [
+  // D1 caps tables at 100 columns. Payload's admin document-locking adds a
+  // `payload_locked_documents_rels` polymorphic across every lockable collection
+  // (one FK column each → 200+ cols → over cap, schema un-creatable on D1).
+  // erpax is API-first (admin disabled), so disable locking on every collection;
+  // `payload_locked_documents_rels` then shrinks below the cap. See `pnpm d1:audit`.
+  collections: ([
     // Core (4)
     Tenants,
     Users,
@@ -717,7 +722,7 @@ export default buildConfig({
     Operators,
     Terminals,
     AuditSubmissions,
-  ],
+  ] as CollectionConfig[]).map((c) => ({ ...c, lockDocuments: false as const })),
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [

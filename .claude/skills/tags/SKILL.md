@@ -13,7 +13,9 @@ Port of Rails `acts_as_taggable_on`: variation lives in **tags + contexts**, not
 | Collection | Fields | erpax id |
 |---|---|---|
 | `tags` | `name` (indexed) · `taggingsCount` (counter) | **uuid = content-uuid(name)** |
-| `taggings` (polymorphic join) | `tag`(rel) · `taggable`(polymorphic `relationTo:[…all]`) · `tagger`(rel, optional) · `context`(text, default `tags`) · `tenant`(injected) | **uuid = content-uuid(tag,taggable,context,tagger)** |
+| `taggings` (polymorphic join) | `tag`(rel) · `taggable`(**`text` = the target's content-uuid**) · `taggableType`(`text` = target slug) · `tagger`(rel, optional) · `context`(text, default `tags`) · `tenant`(injected) | **uuid = content-uuid(tag,taggable,context,tagger)** |
+
+> **`taggable` is a content-uuid `text` column, NOT a polymorphic `relationTo:[…all]`.** The relationship form materialises one FK column per target collection in `taggings_rels`; with 200+ collections that is 200+ columns — past **D1's hard 100-column-per-table cap**, so `payload migrate` fails (`too many columns on taggings_rels`) and the schema can't be created on D1. The content-uuid is ONE column for all targets and federates (same content ⇒ same id; see [[identity]]). This is "anything is taggable" done by uuid, the same way "anything is accountable" is. Reverse lookup is `taggedWith` (query), not a stored `join` field. Guard: `pnpm d1:audit`.
 
 **Content-uuid collapses the gem's machinery:** `find_or_create_all_with_like_by_name` + name-uniqueness + `DuplicateTagError` race-retry + the UNIQUE composite index `[tag,taggable,context,tagger]` ALL become automatic dedup — same content ⇒ same id ([[identity]]). "Dry storage" of tags + taggings; same tag = same id across federated instances.
 
@@ -24,7 +26,7 @@ Port of Rails `acts_as_taggable_on`: variation lives in **tags + contexts**, not
 A shared, content-uuid'd tag is the **loosely-coupled alternative to `relationTo:'specific-slug'`** (which couples plugins — see [[plugins]]). A `project-X` tag on a Customer + Invoice + WorkOrder + Document links them into one cross-domain view with NO inward dependency. Because the tag's id is content-derived, the link holds **across federated instances** (same tag = same id). `find_related` / shared-tag queries surface the links; this is how tags connect the multiverses at the data layer (cf. [[hooks]] connecting them at the lifecycle layer).
 
 ## taggablePlugin (mirror of contentUuidPlugin — see [[plugins]])
-Adds every collection's slug to `taggings.taggable` polymorphic `relationTo`, and injects a virtual `join` field (`tags` → taggings where taggable=this) into each collection. Taggable collections gain **ZERO columns** (see [[fields]] join field). One injector, all collections — same pattern as the uuid injector.
+Adds `taggable` (`text` content-uuid) + `taggableType` (`text` slug) to the `taggings` collection — ONE pair of columns that references ANY record by its content-uuid ([[identity]]), the polymorphic-by-uuid form. Taggable collections gain **ZERO columns** (a record is tagged by writing a tagging that points at its uuid; nothing is stored on the record). Reverse lookup ("tags on this record") is the `taggedWith` query, not a stored `join` field — a Payload `join` needs a real relationship `on` target, which the content-uuid column deliberately isn't. One injector, all collections — same pattern as the uuid injector. **Do not** restore the polymorphic `relationTo:[…all]`: it puts one FK column per collection in `taggings_rels` (200+ → over D1's 100-col cap; see the GOTCHA + `pnpm d1:audit`).
 
 ## tagged_with → Payload `where` (see [[queries]])
 | gem option | Payload |
