@@ -117,14 +117,13 @@ describe('verifyContentUuid', () => {
     const tamperedRow = { uuid: goodUuid, amount: 999, currency: 'EUR' }
     const result = verifyContentUuid(tamperedRow, 'tenant-1')
     expect(result.ok).toBe(false)
-    if (!result.ok) {
-      expect(result.actual).toBe(goodUuid)
-      expect(result.expected).not.toBe(goodUuid)
-    }
+    const fail = result as { ok: false; expected: string; actual: string }
+    expect(fail.actual).toBe(goodUuid)
+    expect(fail.expected).not.toBe(goodUuid)
   })
   it('returns ok:false when uuid is missing', () => {
     const result = verifyContentUuid({ amount: 100 }, 'tenant-1')
     expect(result.ok).toBe(false)
-    if (!result.ok) expect(result.actual).toBeUndefined()
+    expect((result as { actual?: string }).actual).toBeUndefined()
   })
 })

@@ -18,7 +18,7 @@ import {
 /**
  * Mock Payload instance for testing
  */
-class MockPayload implements Partial<Payload> {
+class MockPayload {
   private documents: Map<string, Map<string, Record<string, unknown>>> = new Map();
 
   async create({ collection, data }: Record<string, unknown>) {
