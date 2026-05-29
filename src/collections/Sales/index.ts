@@ -6,6 +6,7 @@ import { roleScopedAccess, scopedAccess } from '../../access/auth'
 import { currencyField, statusField, auditFields, unpField, fiscalDeviceNumberField, operatorCodeField, saleStatusOptions } from '../../fields'
 import { assignSaleUnpHook } from '../../services/sales/unp-sequence'
 import { deriveSaleOperatorCodeHook } from '../../services/sales/operator-code'
+import { validateSaleFiscalRefsHook } from '../../services/sales/validate-fiscal-refs'
 import { enforceSaleImmutability } from '../../services/sales/sale-immutability'
 import { emitSaleClosedHook } from '../../services/sales/sale-event'
 
@@ -93,6 +94,7 @@ const Sales: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
+      validateSaleFiscalRefsHook(),
       deriveSaleOperatorCodeHook('operators'),
       assignSaleUnpHook('sales'),
       enforceSaleImmutability,

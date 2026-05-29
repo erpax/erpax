@@ -581,7 +581,7 @@ src/collections/RoundingAdjustments.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/Routings.ts:12: * @standard ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing
 src/collections/Routings.ts:13: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (cycle time)
 src/collections/Routings.ts:14: * @standard ISO-8601-1:2019 date-time
-src/collections/Sales/index.ts:22: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
+src/collections/Sales/index.ts:23: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
 src/collections/SalesCommissions.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/SalesCommissions.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/SalesOrders.ts:25: * @standard UBL-2.1 Order document-schema
@@ -1783,6 +1783,9 @@ src/services/sales/submit-audit-file.ts:9: * @standard OECD SAF-T 2.0 (universal
 src/services/sales/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
 src/services/sales/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
+src/services/sales/validate-fiscal-refs.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/validate-fiscal-refs.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
+src/services/sales/validate-fiscal-refs.ts:13: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register · operator-nomenclature
 src/services/sales/virtual-device.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/virtual-device.test.ts:6: * @standard BG Наредба-Н-18 §алтернативен-режим
 src/services/sales/virtual-device.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
@@ -3151,7 +3154,7 @@ src/collections/Roles/index.ts:15: * @compliance SOC-2 CC6.1 logical-access-cont
 src/collections/Roles/index.ts:16: * @compliance SOX §404 internal-controls
 src/collections/RoundingAdjustments.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
 src/collections/Routings.ts:18: * @compliance SOX §404 internal-controls production-control
-src/collections/Sales/index.ts:26: * @compliance SOX §404 internal-controls
+src/collections/Sales/index.ts:27: * @compliance SOX §404 internal-controls
 src/collections/SalesCommissions.ts:17: * @compliance SOX §404 internal-controls commission-completeness
 src/collections/SalesOrders.ts:34: * @compliance EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
 src/collections/SepaMandates.ts:21: * @compliance SOX §404 internal-controls
@@ -3816,8 +3819,8 @@ src/collections/RoundingAdjustments.ts:13: * @accounting IFRS IAS-21 §39 foreig
 src/collections/RoundingAdjustments.ts:14: * @accounting US-GAAP ASC-205-10-45 presentation-rounding
 src/collections/Routings.ts:15: * @accounting IFRS IAS-2 §12 cost-of-conversion operation-time
 src/collections/Routings.ts:16: * @accounting US-GAAP ASC-330-10-30 inventory-cost
-src/collections/Sales/index.ts:23: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/Sales/index.ts:24: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/Sales/index.ts:24: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/Sales/index.ts:25: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/SalesCommissions.ts:13: * @accounting IFRS IFRS-15 §91 §92 §93 §94 incremental-costs-of-obtaining
 src/collections/SalesCommissions.ts:14: * @accounting IFRS IFRS-15 §99 §103 §104 §105 §106 amortisation
 src/collections/SalesCommissions.ts:15: * @accounting US-GAAP ASC-340-40-25-1 incremental-costs
@@ -4475,7 +4478,7 @@ src/collections/Roles/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/collections/Roles/index.ts:14: * @security ISO-27002 §5.16 identity-management
 src/collections/RoundingAdjustments.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Routings.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/Sales/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/Sales/index.ts:28: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SalesCommissions.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SalesOrders.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SepaMandates.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4893,7 +4896,7 @@ src/collections/Returns.ts:9: * @audit ISO-19011:2018 audit-trail rma-evidence
 src/collections/Roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/RoundingAdjustments.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
 src/collections/Routings.ts:17: * @audit ISO-19011:2018 audit-trail routing-changes
-src/collections/Sales/index.ts:25: * @audit ISO-19011:2018 audit-trail
+src/collections/Sales/index.ts:26: * @audit ISO-19011:2018 audit-trail
 src/collections/SalesCommissions.ts:16: * @audit ISO-19011:2018 audit-trail commission-evidence
 src/collections/SalesOrders.ts:35: * @audit ISO-19011:2018 audit-trail
 src/collections/SepaMandates.ts:20: * @audit ISO-19011:2018 audit-trail mandate-evidence
@@ -5271,6 +5274,7 @@ src/services/sales/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-dr
 src/services/sales/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
 src/services/sales/submit-audit-file.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/sales/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
+src/services/sales/validate-fiscal-refs.ts:14: * @audit ISO-19011:2018 audit-trail
 src/services/sales/virtual-device.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/scheduled-tasks/index.ts:7: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
 src/services/scheduled-tasks/registry.ts:22: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
