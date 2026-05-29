@@ -96,7 +96,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
         closingStatuses.push({
           entityId,
           closingStatus: closing.closingStatus || 'unknown',
-          closedBy: closing.closedBy,
+          closedBy: typeof closing.closedBy === 'string' ? closing.closedBy : closing.closedBy?.id,
           closingDate: closing.closingDate,
         })
       } else {

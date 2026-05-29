@@ -78,7 +78,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
       })
 
       if (fiscalQuery.docs.length > 0) {
-        fiscalPeriodEndDate = (fiscalQuery.docs[0] as FiscalPeriod).endDate
+        fiscalPeriodEndDate = (fiscalQuery.docs[0] as FiscalPeriod).dates.endDate
       }
     } catch (err) {
       console.warn('[validateTaxPeriodClosing] Failed to query fiscal period:', err)
