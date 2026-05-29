@@ -49,9 +49,9 @@ describe('buildFiscalReceipt', () => {
       ],
     })
     expect(r.vatBreakdown).toEqual([
-      { rate: 0, net: 200_00, vat: 0 },
-      { rate: 9, net: 500_00, vat: 45_00 },
-      { rate: 20, net: 1_000_00, vat: 200_00 },
+      { group: 'А', rate: 0, net: 200_00, vat: 0 },
+      { group: 'Г', rate: 9, net: 500_00, vat: 45_00 },
+      { group: 'Б', rate: 20, net: 1_000_00, vat: 200_00 },
     ])
     expect(r.vatTotal).toBe(245_00)
   })

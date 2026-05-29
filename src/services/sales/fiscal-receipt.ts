@@ -17,6 +17,7 @@
  */
 
 import { isValidUnp } from '@/standards/naredba-n-18/unp'
+import { bgTaxGroupForRate, type BgTaxGroup } from '@/standards/naredba-n-18/vat-groups'
 import { calculateBgVat } from '@/services/country-clients/bg-vat'
 
 export interface FiscalReceiptLine {
@@ -29,6 +30,8 @@ export interface FiscalReceiptLine {
 
 /** Per-rate VAT subtotal — the receipt's tax breakdown (Наредба Н-18 §касов-бон). */
 export interface FiscalVatSubtotal {
+  /** Fiscal tax-group letter (А/Б/В/Г) — Наредба Н-18 Приложение № 1. */
+  readonly group: BgTaxGroup
   readonly rate: number
   readonly net: number
   readonly vat: number
@@ -90,7 +93,12 @@ export function vatBreakdownForItems(
     const amount = i.amount ?? 0
     const { vatAmountMinor } = calculateBgVat({ netAmountMinor: amount, rateOverride: rate })
     const prev = byRate.get(rate)
-    byRate.set(rate, { rate, net: (prev?.net ?? 0) + amount, vat: (prev?.vat ?? 0) + vatAmountMinor })
+    byRate.set(rate, {
+      group: bgTaxGroupForRate(rate),
+      rate,
+      net: (prev?.net ?? 0) + amount,
+      vat: (prev?.vat ?? 0) + vatAmountMinor,
+    })
   }
   return [...byRate.values()].sort((a, b) => a.rate - b.rate)
 }
