@@ -20891,10 +20891,87 @@ export interface Sale {
    * Касов бон number — carries the УНП.
    */
   fiscalReceiptNumber?: string | null;
+  operator?: (string | null) | Operator;
+  terminal?: (string | null) | Terminal;
+  receipt?: (string | null) | Receipt;
   reversalOf?: (string | null) | Sale;
   reversedBy?: (string | null) | Sale;
   reversalReason?: string | null;
   closedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators".
+ */
+export interface Operator {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 4-digit operator code — second УНП segment.
+   */
+  code: string;
+  name: string;
+  user?: (string | null) | User;
+  status?: ('active' | 'decommissioned') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals".
+ */
+export interface Terminal {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Virtual POS terminal number (printed on the e-receipt).
+   */
+  terminalNumber: string;
+  /**
+   * Payment-service provider operating the virtual POS.
+   */
+  provider?: string | null;
+  /**
+   * Settlement account (IBAN) the terminal pays into.
+   */
+  accountNumber?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('active' | 'inactive') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -20962,80 +21039,6 @@ export interface Receipt {
         id?: string | null;
       }[]
     | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  /**
-   * Taggings on this record (reverse of taggings.taggable).
-   */
-  tags?: {
-    docs?: (string | Tagging)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "terminals".
- */
-export interface Terminal {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Virtual POS terminal number (printed on the e-receipt).
-   */
-  terminalNumber: string;
-  /**
-   * Payment-service provider operating the virtual POS.
-   */
-  provider?: string | null;
-  /**
-   * Settlement account (IBAN) the terminal pays into.
-   */
-  accountNumber?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('active' | 'inactive') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  /**
-   * Taggings on this record (reverse of taggings.taggable).
-   */
-  tags?: {
-    docs?: (string | Tagging)[];
-    hasNextPage?: boolean;
-    totalDocs?: number;
-  };
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operators".
- */
-export interface Operator {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 4-digit operator code — second УНП segment.
-   */
-  code: string;
-  name: string;
-  user?: (string | null) | User;
-  status?: ('active' | 'decommissioned') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -29928,6 +29931,9 @@ export interface SalesSelect<T extends boolean = true> {
   currency?: T;
   paymentType?: T;
   fiscalReceiptNumber?: T;
+  operator?: T;
+  terminal?: T;
+  receipt?: T;
   reversalOf?: T;
   reversedBy?: T;
   reversalReason?: T;

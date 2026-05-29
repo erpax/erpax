@@ -44,7 +44,7 @@ export const emitSaleClosedHook: CollectionAfterChangeHook = async ({ doc, previ
 
   await eventEmitter.emit({
     eventId: uuid(),
-    eventType: 'supto:sale:closed',
+    eventType: 'sale:closed',
     tenantId: tenantOf(d),
     // `event` skill: the aggregate identity is the content-uuid, not the row id.
     aggregateId: String(d.uuid ?? d.id),

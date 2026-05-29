@@ -441,6 +441,13 @@ export default buildConfig({
     } catch {
       // Never refuse boot on notification wiring failure.
     }
+    // Issue the fiscal receipt (касов бон) on sale:closed (Наредба Н-18).
+    try {
+      const { wireReceiptSubscriber } = await import('@/services/sales/receipt-subscriber')
+      wireReceiptSubscriber(payload)
+    } catch {
+      // Never refuse boot on receipt-subscriber wiring failure.
+    }
   },
   db: sqliteD1Adapter({
     binding: (await getCloudflare()).env.D1,
