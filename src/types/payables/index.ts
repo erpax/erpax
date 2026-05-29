@@ -71,14 +71,14 @@ export interface VendorPayment {
 export interface APAgingReport {
   asOfDate: Date
   currency: string
-  buckets: AgingBucket[]
+  buckets: APAgingBucket[]
   totalAPBalance: number // cents
   totalBills: number
   totalDueAmount: number // cents due within 30 days
   notes: string[]
 }
 
-export interface AgingBucket {
+export interface APAgingBucket {
   name: string
   dayMin: number
   dayMax: number

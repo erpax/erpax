@@ -62,7 +62,7 @@ export interface Payment {
   createdAt: Date
 }
 
-export interface AgingBucket {
+export interface ARAgingBucket {
   name: string
   dayMin: number
   dayMax: number
@@ -75,7 +75,7 @@ export interface AgingBucket {
 export interface ARAgingReport {
   asOfDate: Date
   currency: string
-  buckets: AgingBucket[]
+  buckets: ARAgingBucket[]
   totalARBalance: number // cents
   totalInvoices: number
   overdueDays: number // threshold (usually 30)

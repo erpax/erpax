@@ -18,9 +18,9 @@ import {
   filterOpenDocuments,
   type AgingBucket as SharedAgingBucket,
 } from '@/services/parties'
-import type { Bill, AgingBucket, APAgingReport, PaymentScheduleItem } from '@/types/payables'
+import type { Bill, APAgingBucket, APAgingReport, PaymentScheduleItem } from '@/types/payables'
 
-function adaptBucket(b: SharedAgingBucket, byId: Map<string, Bill>, totalAP: number): AgingBucket {
+function adaptBucket(b: SharedAgingBucket, byId: Map<string, Bill>, totalAP: number): APAgingBucket {
   const bills = b.documentIds.map((id) => byId.get(id)).filter((x): x is Bill => !!x)
   return {
     name: b.name,

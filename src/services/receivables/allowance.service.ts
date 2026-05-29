@@ -10,7 +10,7 @@
  * @see docs/STANDARDS.md §5
  */
 
-import { AgingBucket, AllowanceCalculation, AllowanceResult } from '@/types/receivables'
+import { ARAgingBucket, AllowanceCalculation, AllowanceResult } from '@/types/receivables'
 
 export class AllowanceCalculator {
   /**
@@ -31,7 +31,7 @@ export class AllowanceCalculator {
    * @param customRates Optional custom allowance percentages
    */
   static calculateAllowanceForDoubtful(
-    buckets: AgingBucket[],
+    buckets: ARAgingBucket[],
     asOfDate: Date = new Date(),
     customRates?: Partial<typeof AllowanceCalculator.DEFAULT_ALLOWANCE_RATES>
   ): AllowanceCalculation {
@@ -120,7 +120,7 @@ export class AllowanceCalculator {
    * Get recommended allowance based on industry standard
    */
   static getIndustryRecommendedAllowance(
-    buckets: AgingBucket[],
+    buckets: ARAgingBucket[],
     industry: 'retail' | 'manufacturing' | 'services' | 'technology' = 'services'
   ): AllowanceCalculation {
     // Industry-specific default rates

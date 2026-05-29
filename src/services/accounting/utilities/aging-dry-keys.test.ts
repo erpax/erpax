@@ -25,7 +25,7 @@ import { describe, it, expect } from 'vitest'
 import {
   bucketAgeDays,
   daysBetween,
-  type AgingBucket,
+  type AgingBucketKey as CalcAgingBucketKey,
 } from '@/services/accounting/utilities/calculations'
 import {
   DEFAULT_AGING_BUCKETS,
@@ -41,10 +41,10 @@ describe('aging — DRY canonical bucket key', () => {
     expect(partiesDaysBetween(from, to)).toBe(daysBetween(from, to))
   })
 
-  it('parties.AgingBucketKey is the same type as calculations.AgingBucket', () => {
-    // TypeScript-level assertion: both names refer to the same union.
+  it('parties.AgingBucketKey is the same type as calculations.AgingBucketKey', () => {
+    // TypeScript-level assertion: parties re-exports the calculations union.
     const key: AgingBucketKey = 'overdue'
-    const sameKey: AgingBucket = key
+    const sameKey: CalcAgingBucketKey = key
     expect(sameKey).toBe('overdue')
   })
 

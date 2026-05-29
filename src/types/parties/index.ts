@@ -20,8 +20,8 @@ export type PaymentTerm = '0' | '15' | '30' | '60' | '90' | 'custom'
 // `src/services/bank-reconciliation.service.ts` and the
 // finance:reconciliation skill. Re-exported so consumers can import a
 // single name from `@/services/parties`.
-import type { AgingBucket as AgingBucketKey } from '../../services/accounting/utilities/calculations'
-export type { AgingBucket as AgingBucketKey } from '../../services/accounting/utilities/calculations'
+import type { AgingBucketKey } from '../../services/accounting/utilities/calculations'
+export type { AgingBucketKey } from '../../services/accounting/utilities/calculations'
 
 /** A single aging bucket — name + day-range + computed totals. */
 export interface AgingBucket {

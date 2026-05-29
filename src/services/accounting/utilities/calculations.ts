@@ -198,14 +198,14 @@ export const calculateWeightedAverageCost = (
  *
  * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
  */
-export type AgingBucket = 'current' | 'aging' | 'overdue' | 'stale';
+export type AgingBucketKey = 'current' | 'aging' | 'overdue' | 'stale';
 
 /**
  * Bucket an item's age in days into the canonical four buckets.
  * Negative ages (future-dated) map to `current` so report rows still
  * surface — caller can filter if needed.
  */
-export const bucketAgeDays = (ageDays: number): AgingBucket => {
+export const bucketAgeDays = (ageDays: number): AgingBucketKey => {
   if (ageDays <= 30) return 'current';
   if (ageDays <= 60) return 'aging';
   if (ageDays <= 90) return 'overdue';
@@ -236,7 +236,7 @@ export const daysBetween = (
  * Legacy aging-bucket string codes — preserved for back-compat with the
  * AR/AP aging report rendering that consumes the string keys
  * `'current' | '30' | '60' | '90' | '90plus'`. New code should prefer
- * `bucketAgeDays` (typed `AgingBucket`).
+ * `bucketAgeDays` (typed `AgingBucketKey`).
  *
  * @deprecated Use `bucketAgeDays(daysBetween(date, asOf))`.
  */

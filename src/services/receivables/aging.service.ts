@@ -18,12 +18,12 @@ import {
   filterOpenDocuments,
   type AgingBucket as SharedAgingBucket,
 } from '@/services/parties'
-import type { Invoice, AgingBucket, ARAgingReport } from '@/types/receivables'
+import type { Invoice, ARAgingBucket, ARAgingReport } from '@/types/receivables'
 
 /**
  * Map a shared aging bucket → A/R-shaped bucket (invoices[] + percentage).
  */
-function adaptBucket(b: SharedAgingBucket, byId: Map<string, Invoice>, totalAR: number): AgingBucket {
+function adaptBucket(b: SharedAgingBucket, byId: Map<string, Invoice>, totalAR: number): ARAgingBucket {
   const invoices = b.documentIds.map((id) => byId.get(id)).filter((x): x is Invoice => !!x)
   return {
     name: b.name,
