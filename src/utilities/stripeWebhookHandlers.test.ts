@@ -22,6 +22,10 @@ import {
   handleInvoicePaymentFailed,
 } from '@/utilities/billing/stripeWebhookHandlers'
 import Stripe from 'stripe'
+import type { Payload } from 'payload'
+
+/** Pass the minimal mock where the handlers expect a real Payload instance. */
+const p = (m: MockPayload): Payload => m as unknown as Payload
 
 /** Minimal Payload mock shape — methods used + spread escape hatch. */
 type MockPayload = {
@@ -134,7 +138,7 @@ const createMockStripeSubscription = (overrides: Partial<Stripe.Subscription> = 
   ...overrides,
 }) as unknown as Stripe.Subscription
 
-const createMockStripeInvoice = (overrides: Partial<Stripe.Invoice> = {}): Stripe.Invoice => ({
+const createMockStripeInvoice = (overrides: Partial<Stripe.Invoice> & Record<string, unknown> = {}): Stripe.Invoice => ({
   id: 'in_123',
   object: 'invoice',
   account_country: 'US',
@@ -274,7 +278,7 @@ describe('stripeWebhookHandlers', () => {
       const mockSubscription = { id: 'payload-sub-123', stripeSubscriptionId: 'sub_123' }
       mockPayload.find.mockResolvedValue({ docs: [mockSubscription] })
 
-      const result = await findPayloadSubscriptionByStripeId(mockPayload, 'sub_123')
+      const result = await findPayloadSubscriptionByStripeId(p(mockPayload), 'sub_123')
 
       expect(result).toEqual(mockSubscription)
       expect(mockPayload.find).toHaveBeenCalledWith({
@@ -288,7 +292,7 @@ describe('stripeWebhookHandlers', () => {
     it('should return null when not found', async () => {
       mockPayload.find.mockResolvedValue({ docs: [] })
 
-      const result = await findPayloadSubscriptionByStripeId(mockPayload, 'sub_nonexistent')
+      const result = await findPayloadSubscriptionByStripeId(p(mockPayload), 'sub_nonexistent')
 
       expect(result).toBeNull()
     })
@@ -298,7 +302,7 @@ describe('stripeWebhookHandlers', () => {
     it('should update subscription status with logging', async () => {
       mockPayload.update.mockResolvedValue({})
 
-      await updateSubscriptionStatus(mockPayload, 'sub-123', 'active', 'Test reason')
+      await updateSubscriptionStatus(p(mockPayload), 'sub-123', 'active', 'Test reason')
 
       expect(mockPayload.update).toHaveBeenCalledWith({
         collection: 'subscriptions',
@@ -324,7 +328,7 @@ describe('stripeWebhookHandlers', () => {
       mockPayload.create.mockResolvedValue({ id: 'new-sub-id' })
 
       await handleSubscriptionSync(
-        { event: {} as unknown as Stripe.Event, payload: mockPayload },
+        { event: {} as unknown as Stripe.Event, payload: p(mockPayload) },
         stripeSubscription,
       )
 
@@ -348,7 +352,7 @@ describe('stripeWebhookHandlers', () => {
       mockPayload.update.mockResolvedValue({})
 
       await handleSubscriptionSync(
-        { event: {} as unknown as Stripe.Event, payload: mockPayload },
+        { event: {} as unknown as Stripe.Event, payload: p(mockPayload) },
         stripeSubscription,
       )
 
@@ -373,7 +377,7 @@ describe('stripeWebhookHandlers', () => {
 
       mockPayload.create.mockResolvedValue({ id: 'new-invoice-id' })
 
-      await handleInvoiceSync({ event: {} as unknown as Stripe.Event, payload: mockPayload }, stripeInvoice)
+      await handleInvoiceSync({ event: {} as unknown as Stripe.Event, payload: p(mockPayload) }, stripeInvoice)
 
       expect(mockPayload.create).toHaveBeenCalledWith({
         collection: 'invoices',
@@ -398,7 +402,7 @@ describe('stripeWebhookHandlers', () => {
 
       mockPayload.update.mockResolvedValue({})
 
-      await handleInvoiceSync({ event: {} as unknown as Stripe.Event, payload: mockPayload }, stripeInvoice)
+      await handleInvoiceSync({ event: {} as unknown as Stripe.Event, payload: p(mockPayload) }, stripeInvoice)
 
       expect(mockPayload.update).toHaveBeenCalledWith({
         collection: 'invoices',
@@ -422,7 +426,7 @@ describe('stripeWebhookHandlers', () => {
       mockPayload.find.mockResolvedValueOnce({ docs: [mockInvoice] })
       mockPayload.update.mockResolvedValue({})
 
-      await handleInvoicePaid({ event: {} as unknown as Stripe.Event, payload: mockPayload }, stripeInvoice)
+      await handleInvoicePaid({ event: {} as unknown as Stripe.Event, payload: p(mockPayload) }, stripeInvoice)
 
       // Should update invoice status to paid
       expect(mockPayload.update).toHaveBeenCalledWith({
@@ -458,7 +462,7 @@ describe('stripeWebhookHandlers', () => {
       mockPayload.update.mockResolvedValue({})
 
       await handleInvoicePaymentFailed(
-        { event: {} as unknown as Stripe.Event, payload: mockPayload },
+        { event: {} as unknown as Stripe.Event, payload: p(mockPayload) },
         stripeInvoice,
       )
 

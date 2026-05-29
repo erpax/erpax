@@ -11,6 +11,10 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { seedSubscriptionPlans, getOrCreatePlan } from '@/utilities/seeding/seedSubscriptionPlans'
 import type { TenantConfig } from '@/config/types'
+import type { Payload } from 'payload'
+
+/** Pass the minimal mock where the seeder expects a real Payload instance. */
+const p = (m: MockPayload): Payload => m as unknown as Payload
 
 /** Minimal Payload mock — methods this test exercises. */
 type MockPayload = {
@@ -47,7 +51,7 @@ const createMockConfig = (): TenantConfig => ({
     {
       name: 'Free',
       slug: 'free',
-      monthlyUSD: 0,
+      monthlyPrice: 0,
       billingCycle: 'monthly',
       limits: {
         apiCallsPerMonth: 1000,
@@ -59,8 +63,8 @@ const createMockConfig = (): TenantConfig => ({
     {
       name: 'Pro',
       slug: 'pro',
-      monthlyUSD: 29,
-      yearlyUSD: 290,
+      monthlyPrice: 29,
+      yearlyPrice: 290,
       billingCycle: 'monthly',
       limits: {
         apiCallsPerMonth: 100000,
@@ -96,7 +100,7 @@ describe('seedSubscriptionPlans', () => {
       .mockResolvedValueOnce({ id: 'plan-free', slug: 'free' })
       .mockResolvedValueOnce({ id: 'plan-pro', slug: 'pro' })
 
-    const result = await seedSubscriptionPlans(mockPayload, config)
+    const result = await seedSubscriptionPlans(p(mockPayload), config)
 
     expect(result).toEqual([
       { planId: 'plan-free', slug: 'free' },
@@ -115,7 +119,7 @@ describe('seedSubscriptionPlans', () => {
 
     mockPayload.create.mockResolvedValueOnce({ id: 'plan-pro', slug: 'pro' })
 
-    const result = await seedSubscriptionPlans(mockPayload, config)
+    const result = await seedSubscriptionPlans(p(mockPayload), config)
 
     expect(result).toEqual([
       { planId: 'existing-free', slug: 'free' },
@@ -131,14 +135,14 @@ describe('seedSubscriptionPlans', () => {
     mockPayload.find.mockResolvedValue({ docs: [] })
     mockPayload.create.mockResolvedValueOnce({ id: 'plan-pro', slug: 'pro' })
 
-    await seedSubscriptionPlans(mockPayload, config)
+    await seedSubscriptionPlans(p(mockPayload), config)
 
     const createCall = mockPayload.create.mock.calls[1][0]
     expect(createCall.data).toMatchObject({
       name: 'Pro',
       slug: 'pro',
-      monthlyUSD: 29,
-      yearlyUSD: 290,
+      monthlyPrice: 29,
+      yearlyPrice: 290,
       billingCycle: 'monthly',
       limits: {
         apiCallsPerMonth: 100000,
@@ -155,7 +159,7 @@ describe('seedSubscriptionPlans', () => {
     mockPayload.find.mockResolvedValue({ docs: [] })
     mockPayload.create.mockRejectedValueOnce(new Error('Creation failed'))
 
-    await expect(seedSubscriptionPlans(mockPayload, config)).rejects.toThrow(
+    await expect(seedSubscriptionPlans(p(mockPayload), config)).rejects.toThrow(
       'Creation failed',
     )
     expect(mockPayload.logger.error).toHaveBeenCalled()
@@ -175,13 +179,13 @@ describe('getOrCreatePlan', () => {
     const planConfig = {
       name: 'Existing',
       slug: 'existing',
-      monthlyUSD: 99,
+      monthlyPrice: 99,
       billingCycle: 'monthly' as const,
       limits: {},
       sortOrder: 1,
     }
 
-    const result = await getOrCreatePlan(mockPayload, planConfig)
+    const result = await getOrCreatePlan(p(mockPayload), planConfig)
 
     expect(result).toBe('existing-plan-id')
     expect(mockPayload.create).not.toHaveBeenCalled()
@@ -194,13 +198,13 @@ describe('getOrCreatePlan', () => {
     const planConfig = {
       name: 'New Plan',
       slug: 'new',
-      monthlyUSD: 49,
+      monthlyPrice: 49,
       billingCycle: 'monthly' as const,
       limits: {},
       sortOrder: 1,
     }
 
-    const result = await getOrCreatePlan(mockPayload, planConfig)
+    const result = await getOrCreatePlan(p(mockPayload), planConfig)
 
     expect(result).toBe('new-plan-id')
     expect(mockPayload.create).toHaveBeenCalledOnce()

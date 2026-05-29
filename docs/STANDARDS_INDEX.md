@@ -1760,6 +1760,7 @@ src/services/self-closure/types.ts:50: * @standard NIST SP 800-34 Rev. 1 §3.4 c
 src/services/self-closure/types.ts:51: * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
 src/services/self-reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness (self-coherence)
 src/services/shared/aging.service.ts:9: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
+src/services/signal/index.ts:16: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
 src/services/spec-generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/spec-generator/e2e-spec-extractor.ts:24: * @standard ISO/IEC-29119:2022 software-testing test-evidence
 src/services/spec-generator/e2e-spec-extractor.ts:25: * @standard ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
