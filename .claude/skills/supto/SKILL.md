@@ -25,17 +25,19 @@ The УНП and the structured **uuidv8** are the *same idea*: a fixed-layout, **
 ## Built (the matter that realises this skill)
 Core entities use generic concatenated data-type names — the Н-18 reference lives in the `naredba-n-18` standard + this skill, never in a slug (`sales`, not `supto-sales`).
 - **УНП format** — `src/standards/naredba-n-18/unp.ts` (format/parse/validate/increment; `parseUnp` = the reverse/decode).
-- **Per-ФУ sequence hook** — `src/services/sales/unp-sequence.ts` (`assignSaleUnpHook`: gapless max+1, frozen on update).
+- **Per-ФУ sequence hook** — `src/services/sales/unp-sequence.ts` (`assignSaleUnpHook`: gapless max+1, frozen on update). The operator code (УНП segment ZZZZ) is derived from the linked `operators` register on create (`operator-code.ts`), not hand-typed.
 - **Collections** — `fiscal-devices` (ФУ register) + `sales` (Наредба Н-18 sale register) + `receipts`/`operators`/`terminals`/`audit-submissions`, tenant-scoped, `delete: () => false`, content-uuid + audit-chain wired.
+- **Register integrity** — `validate-fiscal-refs.ts` (beforeChange): a sale cannot be issued on a *decommissioned* ФУ or operator (lenient — only present refs are checked).
 - **Immutability + сторно** — `sale-immutability.ts` (completed sales frozen; closed→reversed only) + `reverse-sale.ts` (negated mirror, preserves + seals original).
 - **Closed event** — `sale-event.ts` emits `sale:closed` keyed by content-uuid ([[event]]).
-- **Receipt issuance** — `fiscal-receipt.ts` builds the касов бон carrying the УНП + a pluggable `FiscalDeviceDriver` membrane; per-line VAT. Wired on `sale:closed` via `receipt-subscriber.ts`.
+- **VAT engine (one calculator)** — `fiscal-receipt.ts` routes VAT through the canonical `bg-vat.ts` (`vatBreakdownForItems`/`vatTotalForItems`, round-half-away-from-zero per НАП — correct for сторно too); the receipt + audit file share it (no duplicate math).
+- **Receipt issuance** — `fiscal-receipt.ts` builds the касов бон carrying the УНП + per-rate VAT breakdown + a pluggable `FiscalDeviceDriver` membrane. Wired on `sale:closed` via `receipt-subscriber.ts`, which persists the НАП fiscal-QR (device*УНП*date*time*sum) + virtual-POS terminal and writes the bon number back onto the sale.
 - **Virtual device (alternative regime)** — `virtual-device.ts`: НАП lets e-shop remote-card sales issue an *electronic* receipt (УНП + fiscal-QR + virtual-POS number, e-mailed) with **no hardware**, reporting via the monthly audit file. A drop-in `FiscalDeviceDriver`. So the receipt path is pure software, not an external blocker.
 - **Order → sale membrane** — `order-fiscalization.ts`: a paid `@payloadcms/plugin-ecommerce` order (`order:activated`) projects into a *closed* fiscal `sales` row carrying the tenant ФУ number (→ receipt via `sale:closed`); `order:cancelled`/`order:refunded` сторно the linked sale. Idempotent per order. This is the e-shop alternative-regime in practice.
-- **Audit file** — `audit-file.ts` builds the Приложение-38 report + XML over the SAF-T base (count + net control sum); `submit-audit-file.ts` (collect→build→submit, pluggable mTLS submitter) + the `sales-audit-file` monthly [[jobs]] task (`salesAuditFileJob`, prior-month, per-tenant, cron `0 6 5 * *`), persisting each file as an `audit-submissions` evidence row.
+- **Audit file** — `audit-file.ts` builds the Приложение-38 report + XML over the SAF-T base (count + net control sum + net **VAT** control sum, per-sale `<Vat>`); `submit-audit-file.ts` (collect→build→submit, pluggable mTLS submitter) + the `sales-audit-file` monthly [[jobs]] task (`salesAuditFileJob`, prior-month, per-tenant, cron `0 6 5 * *`), persisting each file as an `audit-submissions` evidence row.
 - **Audit profile** — no code: a non-admin/accountant tenant user already gets read-only via `scopedAccess` + `roleScopedAccess`.
 
-70 mirror tests green; src tsc 0.
+83 mirror tests green; src tsc 0.
 
 ## Remaining (truly external / one coordination primitive)
 - **Concurrency-safe per-ФУ counter** — the `max+1` read-modify-write must serialise through the `RATE_LIMITER`/counter Durable Object under load ([[bindings]]); **blocked** by the documented DO-not-exported-from-worker chain-break. Today uniqueness rests on the `unp` `unique` constraint.
