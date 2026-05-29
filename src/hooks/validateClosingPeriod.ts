@@ -22,7 +22,7 @@ import { CollectionBeforeValidateHook } from 'payload'
 import { ClosingPeriodChecker } from '../services/ClosingPeriodChecker'
 
 interface ClosingEntryData {
-  id?: string
+  id: string
   entity?: string | { id: string }
   fiscalYear: number
   fiscalPeriodNumber: number

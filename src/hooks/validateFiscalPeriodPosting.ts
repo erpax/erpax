@@ -31,7 +31,7 @@ import { FiscalPeriodResolver } from '../services/FiscalPeriodResolver'
 import { getUserContext } from '@/access/auth'
 
 interface GLPostingsData {
-  id?: string
+  id: string
   entity?: string | { id: string }
   postingDate?: string
   journalEntry?: string | { id: string; entryDate?: string; postings?: any[] }

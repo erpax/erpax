@@ -25,18 +25,18 @@
  */
 
 import { CollectionBeforeChangeHook } from 'payload'
-import { FiscalPeriodResolver } from '../services/FiscalPeriodResolver'
+import { FiscalPeriodResolver, type FiscalPeriodConfig } from '../services/FiscalPeriodResolver'
 import { getUser } from '@/access/auth'
 
 interface FiscalPeriodsData {
-  id?: string
+  id: string
   entity?: string | { id: string }
   fiscalYearStartMonth?: number
   fiscalYearStartDay?: number
-  periodType?: string
-  customPeriodBoundaries?: unknown
-  regulatoryFramework?: string
-  leapYearAdjustment?: string
+  periodType?: FiscalPeriodConfig['periodType']
+  customPeriodBoundaries?: FiscalPeriodConfig['customPeriodBoundaries']
+  regulatoryFramework?: FiscalPeriodConfig['regulatoryFramework']
+  leapYearAdjustment?: FiscalPeriodConfig['leapYearAdjustment']
   localeCode?: string
   countryCode?: string
   supercedes?: string

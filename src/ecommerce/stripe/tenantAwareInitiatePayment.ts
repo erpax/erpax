@@ -12,17 +12,17 @@
  * @see docs/STANDARDS.md §3 §4.4
  */
 
-import type Stripe from 'stripe'
 import { stripeAdapter } from '@payloadcms/plugin-ecommerce/payments/stripe'
-import type { PayloadRequest } from 'payload'
 
+import type { Cart } from '@/payload-types'
 import { apiErr, ERR } from '@/utilities/errors'
 import { resolveStripeSecretForCart } from '@/utilities/tenantRemoteSecrets'
 
-type InitiateArgs = {
-  data: { cart?: unknown }
-  req: PayloadRequest
-}
+// The exact args the plugin adapter's initiatePayment expects — derived so the
+// pass-through `run(args)` stays in lock-step with the upstream plugin contract.
+type InitiateArgs = Parameters<
+  NonNullable<ReturnType<typeof stripeAdapter>['initiatePayment']>
+>[0]
 
 export function tenantAwareInitiatePayment(
   props?: {
@@ -32,7 +32,9 @@ export function tenantAwareInitiatePayment(
 ) {
   return async (args: InitiateArgs) => {
     const { req, data } = args
-    const secretKey = await resolveStripeSecretForCart(req.payload, data.cart)
+    // The plugin's DefaultCartType is the erpax Cart at runtime (it carries the
+    // tenant relation the secret resolver reads).
+    const secretKey = await resolveStripeSecretForCart(req.payload, data.cart as Cart)
     if (!secretKey) {
       req.payload.logger.warn({ msg: 'Tenant initiate payment: no Stripe secret' })
       throw apiErr(ERR.PAY_INIT_STRIPE_SECRET_MISSING)

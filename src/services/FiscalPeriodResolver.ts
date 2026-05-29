@@ -20,7 +20,7 @@
  * @invariant regulatoryCode is deterministic from (periodType, fiscalYear, fiscalPeriod)
  */
 
-interface FiscalPeriodConfig {
+export interface FiscalPeriodConfig {
   fiscalYearStartMonth: number
   fiscalYearStartDay: number
   periodType:
