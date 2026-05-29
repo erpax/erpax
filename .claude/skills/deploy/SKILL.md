@@ -29,6 +29,8 @@ Never use ephemeral filesystems. Use a cloud storage adapter (S3, R2, Azure, GCS
 - `next start` in prod, never `next dev`.
 - `output: 'standalone'` for Docker; `NODE_ENV=production`; serve with `HOSTNAME=0.0.0.0 node server.js`.
 
+Composes: [[config]] · [[database]] · [[upload]] · [[bindings]] · [[harden]].
+
 ## Common mistakes
 - Relying on dev push instead of committed migrations.
 - Local-disk uploads on ephemeral hosts (data loss).

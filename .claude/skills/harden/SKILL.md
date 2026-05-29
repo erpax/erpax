@@ -35,6 +35,8 @@ Source: payloadcms.com/docs/production/preventing-abuse (+ deployment). Exact co
 ## Default posture
 All access-control functions require a logged-in user by default — **thoroughly test all access control before production**.
 
+Composes: [[config]] · [[auth]] · [[access]] · [[upload]] · [[optimize]] · [[deploy]].
+
 ## Common mistakes
 - Leaving GraphQL + introspection enabled when unused.
 - No `maxDepth` cap with circular relationships → server crashes.

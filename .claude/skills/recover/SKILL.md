@@ -48,6 +48,8 @@ Write a throwaway Node script to find ALL instances of a class of bug, instead o
 - **Export audit:** for each `export { default as X } from './p'`, resolve `p`(.ts|/index.ts), flip to `export { X }` when the file has no `export default`.
 - **Field cleanup:** strip a removed helper's usages + imports (single-line and multi-line specifier forms) across all collections, then delete its definition(s).
 
+Composes: [[collections]] · [[config]] · [[types]] · [[database]] · [[port]].
+
 ## Common mistakes
 - Reading the tsc/generate error from `tail` — the real message is at the **top**; the tail is just the V8 stack.
 - Trusting the background-runner "exit 0" — check the actual output (a crashed `tsc` still reported success here).

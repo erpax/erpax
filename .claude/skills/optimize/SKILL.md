@@ -38,6 +38,8 @@ Constraint: a referenced block is identical everywhere — cannot be modified pe
 - Dev: add `--turbo`; set `devBundleServerPackages: false` in `withPayload`.
 - Host the DB in the same region as the server.
 
+Composes: [[collections]] · [[fields]] · [[queries]] · [[config]] · [[types]] · [[harden]] · [[deploy]].
+
 ## Common mistakes
 - Un-indexed fields used for sort/filter (silent slow scans).
 - Inlining the same block in many collections instead of `blockReferences` (bloats generated `payload-types.ts` and payloads).
