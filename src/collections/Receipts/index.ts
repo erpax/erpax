@@ -50,6 +50,17 @@ const Receipts: CollectionConfig = {
     { name: 'issuedAt', type: 'date' },
     { name: 'total', type: 'number', defaultValue: 0 },
     { name: 'vatTotal', type: 'number', defaultValue: 0 },
+    {
+      name: 'vatBreakdown',
+      type: 'array',
+      admin: { readOnly: true, description: 'VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.' },
+      fields: [
+        { name: 'group', type: 'text', admin: { description: 'Tax-group letter (Приложение № 1).' } },
+        { name: 'rate', type: 'number', admin: { description: 'VAT rate (%).' } },
+        { name: 'net', type: 'number', admin: { description: 'Net amount (cents).' } },
+        { name: 'vat', type: 'number', admin: { description: 'VAT amount (cents).' } },
+      ],
+    },
     currencyField(),
     {
       name: 'paymentType',

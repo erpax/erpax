@@ -48,6 +48,8 @@ describe('createReceiptForSale', () => {
     expect(data.receiptNumber).toBe('12345678-0042-0000001')
     expect(data.sale).toBe('sale-1')
     expect(data.vatTotal).toBe(200_00)
+    // Per-group VAT breakdown frozen on the receipt (Наредба Н-18 tax groups).
+    expect(data.vatBreakdown).toEqual([{ group: 'Б', rate: 20, net: 1_000_00, vat: 200_00 }])
     // НАП fiscal QR carries the device + УНП + sum (device*УНП*date*time*sum).
     expect(data.qrData).toContain('12345678-0042-0000001')
     expect(data.qrData.startsWith('12345678*')).toBe(true)

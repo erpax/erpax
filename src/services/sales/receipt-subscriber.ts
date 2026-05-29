@@ -62,6 +62,7 @@ export async function createReceiptForSale(
       issuedAt: fr.issuedAt,
       total: fr.total,
       vatTotal: fr.vatTotal,
+      vatBreakdown: fr.vatBreakdown,
       currency: fr.currency,
       paymentType: fr.paymentType,
       status: 'issued',

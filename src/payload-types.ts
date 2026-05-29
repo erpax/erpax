@@ -17965,6 +17965,30 @@ export interface Receipt {
   total?: number | null;
   vatTotal?: number | null;
   /**
+   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * Tax-group letter (Приложение № 1).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%).
+         */
+        rate?: number | null;
+        /**
+         * Net amount (cents).
+         */
+        net?: number | null;
+        /**
+         * VAT amount (cents).
+         */
+        vat?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
    * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
    */
   currency?: string | null;
@@ -25871,6 +25895,15 @@ export interface ReceiptsSelect<T extends boolean = true> {
   issuedAt?: T;
   total?: T;
   vatTotal?: T;
+  vatBreakdown?:
+    | T
+    | {
+        group?: T;
+        rate?: T;
+        net?: T;
+        vat?: T;
+        id?: T;
+      };
   currency?: T;
   paymentType?: T;
   deliveredTo?: T;
