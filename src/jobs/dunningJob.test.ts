@@ -19,6 +19,10 @@ import {
   reinstateSubscription,
   suspendSubscription,
 } from '@/jobs/dunningJob'
+import type { Payload } from 'payload'
+
+/** Pass the minimal mock where the dunning job expects a real Payload instance. */
+const p = (m: MockPayload): Payload => m as unknown as Payload
 
 /** Minimal Payload mock — methods this dunning job exercises. */
 type MockPayload = {
@@ -48,7 +52,7 @@ const createMockInvoice = (overrides: Record<string, unknown> = {}) => ({
   id: 'invoice-123',
   status: 'open',
   dueAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000), // 5 days ago
-  pastDueSinceAt: null,
+  pastDueSinceAt: null as Date | null,
   subscription: 'subscription-123',
   ...overrides,
 })
@@ -77,7 +81,7 @@ describe('dunningJob', () => {
       mockPayload.findByID.mockResolvedValueOnce(subscription)
       mockPayload.update.mockResolvedValue({})
 
-      await processDunningCycle(mockPayload)
+      await processDunningCycle(p(mockPayload))
 
       // Should update invoice with pastDueSinceAt
       expect(mockPayload.update).toHaveBeenCalledWith({
@@ -113,7 +117,7 @@ describe('dunningJob', () => {
       mockPayload.findByID.mockResolvedValueOnce(subscription)
       mockPayload.update.mockResolvedValue({})
 
-      await processDunningCycle(mockPayload)
+      await processDunningCycle(p(mockPayload))
 
       // Should transition subscription to grace_period
       expect(mockPayload.update).toHaveBeenCalledWith({
@@ -139,7 +143,7 @@ describe('dunningJob', () => {
       mockPayload.findByID.mockResolvedValueOnce(subscription)
       mockPayload.update.mockResolvedValue({})
 
-      await processDunningCycle(mockPayload)
+      await processDunningCycle(p(mockPayload))
 
       // Should transition to suspended
       expect(mockPayload.update).toHaveBeenCalledWith({
@@ -160,7 +164,7 @@ describe('dunningJob', () => {
       mockPayload.findByID.mockResolvedValue(subscription)
       mockPayload.update.mockResolvedValue({})
 
-      await processDunningCycle(mockPayload)
+      await processDunningCycle(p(mockPayload))
 
       // Should process both invoices
       expect(mockPayload.update).toHaveBeenCalledTimes(4) // 2 invoice updates + 2 subscription updates
@@ -172,7 +176,7 @@ describe('dunningJob', () => {
       mockPayload.find.mockResolvedValueOnce({ docs: [invoice] })
       mockPayload.findByID.mockResolvedValueOnce(null)
 
-      await processDunningCycle(mockPayload)
+      await processDunningCycle(p(mockPayload))
 
       expect(mockPayload.logger.warn).toHaveBeenCalled()
       // Should not update anything
@@ -182,7 +186,7 @@ describe('dunningJob', () => {
     it('should handle errors gracefully', async () => {
       mockPayload.find.mockRejectedValueOnce(new Error('Database error'))
 
-      await expect(processDunningCycle(mockPayload)).rejects.toThrow('Database error')
+      await expect(processDunningCycle(p(mockPayload))).rejects.toThrow('Database error')
       expect(mockPayload.logger.error).toHaveBeenCalled()
     })
   })
@@ -191,7 +195,7 @@ describe('dunningJob', () => {
     it('should update subscription to active', async () => {
       mockPayload.update.mockResolvedValue({})
 
-      await reinstateSubscription(mockPayload, 'sub-123', 'Payment received')
+      await reinstateSubscription(p(mockPayload), 'sub-123', 'Payment received')
 
       expect(mockPayload.update).toHaveBeenCalledWith({
         collection: 'subscriptions',
@@ -209,7 +213,7 @@ describe('dunningJob', () => {
     it('should update subscription to suspended', async () => {
       mockPayload.update.mockResolvedValue({})
 
-      await suspendSubscription(mockPayload, 'sub-123', 'Manual suspension')
+      await suspendSubscription(p(mockPayload), 'sub-123', 'Manual suspension')
 
       expect(mockPayload.update).toHaveBeenCalledWith({
         collection: 'subscriptions',

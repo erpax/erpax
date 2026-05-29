@@ -8,7 +8,8 @@
  * @see docs/STANDARDS.md §7
  */
 
-import type { Payload } from 'payload';
+import type { Payload, CollectionSlug } from 'payload';
+import { beforeEach, afterEach } from 'vitest';
 import { TestSeedFactory, type SeedResult, type CleanupResult } from './test-seed-factory';
 
 /**
@@ -74,7 +75,7 @@ export class IsolatedTestEnvironment {
     if (ids.length === 0) return [];
 
     const results = await this.payload.find({
-      collection,
+      collection: collection as CollectionSlug,
       where: {
         id: { in: ids },
       },

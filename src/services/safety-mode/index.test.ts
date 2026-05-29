@@ -23,6 +23,9 @@ import {
   UUID_FAMILY_ESCAPE_HATCHES,
 } from './index'
 
+/** `NODE_ENV` is a readonly member of `ProcessEnv`; route test mutations through a mutable view. */
+const mutableEnv = process.env as Record<string, string | undefined>
+
 describe('safety-mode — env detection', () => {
   const orig = {
     ERPAX: process.env.ERPAX_SAFETY_MODE,
@@ -30,13 +33,13 @@ describe('safety-mode — env detection', () => {
   }
   beforeEach(() => {
     delete process.env.ERPAX_SAFETY_MODE
-    delete process.env.NODE_ENV
+    delete mutableEnv.NODE_ENV
   })
   afterEach(() => {
     if (orig.ERPAX === undefined) delete process.env.ERPAX_SAFETY_MODE
     else process.env.ERPAX_SAFETY_MODE = orig.ERPAX
-    if (orig.NODE_ENV === undefined) delete process.env.NODE_ENV
-    else process.env.NODE_ENV = orig.NODE_ENV
+    if (orig.NODE_ENV === undefined) delete mutableEnv.NODE_ENV
+    else mutableEnv.NODE_ENV = orig.NODE_ENV
   })
 
   it("defaults to 'production' when neither env var is set", () => {
@@ -53,16 +56,16 @@ describe('safety-mode — env detection', () => {
   })
 
   it('NODE_ENV maps to safety mode when ERPAX_SAFETY_MODE unset', () => {
-    process.env.NODE_ENV = 'test'
+    mutableEnv.NODE_ENV = 'test'
     expect(getSafetyMode()).toBe('test')
-    process.env.NODE_ENV = 'development'
+    mutableEnv.NODE_ENV = 'development'
     expect(getSafetyMode()).toBe('dev')
-    process.env.NODE_ENV = 'production'
+    mutableEnv.NODE_ENV = 'production'
     expect(getSafetyMode()).toBe('production')
   })
 
   it('unknown NODE_ENV falls back to strict production', () => {
-    process.env.NODE_ENV = 'staging'
+    mutableEnv.NODE_ENV = 'staging'
     expect(getSafetyMode()).toBe('production')
   })
 })

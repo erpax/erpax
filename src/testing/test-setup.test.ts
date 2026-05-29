@@ -19,10 +19,10 @@ import type { Payload } from 'payload';
 /**
  * Mock implementations for testing
  */
-class MockPayload implements Partial<Payload> {
+class MockPayload {
   private documents: Map<string, Map<string, Record<string, unknown>>> = new Map();
 
-  async create({ collection, data }: Record<string, unknown>) {
+  async create({ collection, data }: { collection: string; data: Record<string, unknown> }) {
     if (!this.documents.has(collection)) {
       this.documents.set(collection, new Map());
     }
@@ -32,12 +32,12 @@ class MockPayload implements Partial<Payload> {
     return doc;
   }
 
-  async find({ collection }: Record<string, unknown>) {
+  async find({ collection }: { collection: string }) {
     const docs = Array.from(this.documents.get(collection)?.values() || []);
     return { docs, totalDocs: docs.length };
   }
 
-  async delete({ collection, id }: Record<string, unknown>) {
+  async delete({ collection, id }: { collection: string; id: string }) {
     this.documents.get(collection)?.delete(id);
     return { id };
   }
