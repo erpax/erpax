@@ -20894,6 +20894,7 @@ export interface Sale {
   operator?: (string | null) | Operator;
   terminal?: (string | null) | Terminal;
   receipt?: (string | null) | Receipt;
+  order?: (string | null) | Order;
   reversalOf?: (string | null) | Sale;
   reversedBy?: (string | null) | Sale;
   reversalReason?: string | null;
@@ -29934,6 +29935,7 @@ export interface SalesSelect<T extends boolean = true> {
   operator?: T;
   terminal?: T;
   receipt?: T;
+  order?: T;
   reversalOf?: T;
   reversedBy?: T;
   reversalReason?: T;

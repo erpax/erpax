@@ -1111,10 +1111,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1153:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1171:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1172:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1191:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1160:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1178:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1179:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1198:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1760,6 +1760,9 @@ src/services/sales/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base 
 src/services/sales/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
 src/services/sales/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
+src/services/sales/order-fiscalization.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/order-fiscalization.test.ts:7: * @standard BG Наредба-Н-18 §СУПТО sale-register e-shop-alternative-regime
+src/services/sales/order-fiscalization.ts:15: * @standard BG Наредба-Н-18 §СУПТО sale-register e-shop-alternative-regime
 src/services/sales/receipt-subscriber.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/sales/receipt-subscriber.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
 src/services/sales/receipt-subscriber.ts:8: * @standard BG Наредба-Н-18 §СУПТО касов-бон issuance-on-close
@@ -3984,9 +3987,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1151:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1152:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1173:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1158:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1159:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1180:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4115,6 +4118,7 @@ src/services/receivables/analytics.service.ts:6: * @accounting US-GAAP ASC-310 r
 src/services/receivables/workflow.service.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/services/receivables/workflow.service.ts:8: * @accounting IFRS IFRS-9 written_off impairment
 src/services/receivables/workflow.service.ts:9: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/services/sales/order-fiscalization.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/services/spec-generator/extractor.ts:14: *   @accounting    <body> <id> [free-text]      ← alias for @standard
 src/services/tax-automation.service.ts:20: * @accounting OECD SAF-T tax-table
 src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
@@ -5034,9 +5038,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1154:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1174:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1192:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1161:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1181:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1199:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
@@ -5256,6 +5260,7 @@ src/services/safety-mode/index.test.ts:15: * @audit Conservation Law 58 uuid-sel
 src/services/safety-mode/index.ts:45: * @audit Conservation Law 58 uuid-self-protection
 src/services/sales/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/sales/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
+src/services/sales/order-fiscalization.ts:17: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/sales/receipt-subscriber.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/sales/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
 src/services/sales/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven

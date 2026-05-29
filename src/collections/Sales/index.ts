@@ -80,6 +80,8 @@ const Sales: CollectionConfig = {
     { name: 'operator', type: 'relationship', relationTo: 'operators' },
     { name: 'terminal', type: 'relationship', relationTo: 'terminals' },
     { name: 'receipt', type: 'relationship', relationTo: 'receipts' },
+    // The originating ecommerce order this sale fiscalizes (e-shop alternative regime).
+    { name: 'order', type: 'relationship', relationTo: 'orders' },
     // сторно links — a reversal points back at its source; the source is sealed with its reversal.
     { name: 'reversalOf', type: 'relationship', relationTo: 'sales' },
     { name: 'reversedBy', type: 'relationship', relationTo: 'sales' },

@@ -265,7 +265,7 @@ const {
   Terminals,
   AuditSubmissions,
 } = allCollections
-import type { CollectionConfig, CollectionSlug } from 'payload'
+import type { CollectionSlug } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
 import { beforeSyncWithSearch } from './components/search/beforeSync'
@@ -447,6 +447,13 @@ export default buildConfig({
       wireReceiptSubscriber(payload)
     } catch {
       // Never refuse boot on receipt-subscriber wiring failure.
+    }
+    // Fiscalize a paid ecommerce order into a closed sale on order:activated.
+    try {
+      const { wireOrderFiscalizationSubscriber } = await import('@/services/sales/order-fiscalization')
+      wireOrderFiscalizationSubscriber(payload)
+    } catch {
+      // Never refuse boot on order-fiscalization wiring failure.
     }
   },
   db: sqliteD1Adapter({
