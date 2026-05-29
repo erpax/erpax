@@ -398,18 +398,18 @@ src/collections/InvoiceLines/index.ts:44: * @standard UN-EDIFACT INVOIC §LIN li
 src/collections/InvoiceLines/index.ts:45: * @standard ISO-4217:2015 currency-codes
 src/collections/InvoiceLines/index.ts:46: * @standard UN-CEFACT-5305 tax-category-codes
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
-src/collections/Invoices/index.ts:46: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
-src/collections/Invoices/index.ts:47: * @standard EN-16931:2017 §BG-22 document-totals
-src/collections/Invoices/index.ts:48: * @standard EN-16931:2017 §BG-23 vat-breakdown
-src/collections/Invoices/index.ts:49: * @standard EN-16931:2017 BT-3 invoice-type-code
-src/collections/Invoices/index.ts:50: * @standard EN-16931:2017 BT-5 invoice-currency-code
-src/collections/Invoices/index.ts:51: * @standard Peppol-BIS-3.0 billing electronic-invoicing
-src/collections/Invoices/index.ts:52: * @standard UN-EDIFACT INVOIC d96a
-src/collections/Invoices/index.ts:53: * @standard UN-CEFACT 1001 document-name-code
-src/collections/Invoices/index.ts:54: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
-src/collections/Invoices/index.ts:55: * @standard UBL-2.1 universal-business-language
-src/collections/Invoices/index.ts:56: * @standard ISO-4217:2015 currency-codes
-src/collections/Invoices/index.ts:57: * @standard ISO-8601-1:2019 date-time invoice-date due-date
+src/collections/Invoices/index.ts:47: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
+src/collections/Invoices/index.ts:48: * @standard EN-16931:2017 §BG-22 document-totals
+src/collections/Invoices/index.ts:49: * @standard EN-16931:2017 §BG-23 vat-breakdown
+src/collections/Invoices/index.ts:50: * @standard EN-16931:2017 BT-3 invoice-type-code
+src/collections/Invoices/index.ts:51: * @standard EN-16931:2017 BT-5 invoice-currency-code
+src/collections/Invoices/index.ts:52: * @standard Peppol-BIS-3.0 billing electronic-invoicing
+src/collections/Invoices/index.ts:53: * @standard UN-EDIFACT INVOIC d96a
+src/collections/Invoices/index.ts:54: * @standard UN-CEFACT 1001 document-name-code
+src/collections/Invoices/index.ts:55: * @standard UN-CEFACT 5305 duty-tax-fee-category-code
+src/collections/Invoices/index.ts:56: * @standard UBL-2.1 universal-business-language
+src/collections/Invoices/index.ts:57: * @standard ISO-4217:2015 currency-codes
+src/collections/Invoices/index.ts:58: * @standard ISO-8601-1:2019 date-time invoice-date due-date
 src/collections/Items/hooks/beforeValidate.ts:10: * @standard GS1 GTIN global-trade-item-number
 src/collections/Items/hooks/beforeValidate.ts:9: * @standard UN-CEFACT UNSPSC product-classification
 src/collections/Items/index.ts:12: * @standard UN-CEFACT UNSPSC product-classification
@@ -3100,7 +3100,7 @@ src/collections/IntercompanyTransactions.ts:20: * @compliance OECD BEPS Action 1
 src/collections/InventoryMovements.ts:17: * @compliance SOX §404 internal-controls inventory-cycle-count
 src/collections/InvestmentProperties.ts:22: * @compliance SOX §404 internal-controls
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
-src/collections/Invoices/index.ts:60: * @compliance SOX §404 internal-controls
+src/collections/Invoices/index.ts:61: * @compliance SOX §404 internal-controls
 src/collections/Items/hooks/afterChange.ts:13: * @compliance SOX §404 internal-controls
 src/collections/JournalEntries/index.ts:34: * @compliance SOX §404 internal-controls
 src/collections/KycChecks.ts:6: * @compliance EU-AMLD-6 Directive-2018/1673 anti-money-laundering
@@ -3729,8 +3729,8 @@ src/collections/InvoiceLines/hooks/recomputeInvoiceTotals.ts:18: * @accounting I
 src/collections/InvoiceLines/hooks/recomputeItemInventory.ts:18: * @accounting IFRS IAS-2 inventories
 src/collections/InvoiceLines/index.ts:47: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/InvoiceLines/index.ts:48: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/collections/Invoices/index.ts:58: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/Invoices/index.ts:59: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/Invoices/index.ts:59: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/Invoices/index.ts:60: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Items/hooks/afterChange.ts:10: * @accounting IFRS IAS-2 inventories
 src/collections/Items/hooks/afterChange.ts:11: * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
 src/collections/Items/index.ts:16: * @accounting IFRS IAS-2 inventories
@@ -4860,7 +4860,7 @@ src/collections/InvoiceLines/hooks/beforeValidate.ts:12: * @audit ISO-19011:2018
 src/collections/InvoiceLines/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/InvoiceLines/hooks/recomputeItemInventory.ts:19: * @audit ISO-19011:2018 audit-trail on-hand-provenance
 src/collections/Invoices/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/Invoices/index.ts:61: * @audit ISO-19011:2018 audit-trail
+src/collections/Invoices/index.ts:62: * @audit ISO-19011:2018 audit-trail
 src/collections/Items/hooks/afterChange.ts:12: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/collections/Items/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/JobPositions.ts:11: * @audit ISO-19011:2018 audit-trail headcount-evidence
