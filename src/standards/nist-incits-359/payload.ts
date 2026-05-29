@@ -169,7 +169,7 @@ export async function addRole(payload: Payload, req: PayloadRequest, args: Mutat
   )
 
   await payload.create({
-    collection: 'user_roles',
+    collection: 'user-roles',
     data: {
       user: args.userId,
       role: roleDoc.id,
@@ -189,7 +189,7 @@ export async function removeRole(payload: Payload, req: PayloadRequest, args: Mu
   if (!roleDoc) return
 
   const rows = await payload.find({
-    collection: 'user_roles',
+    collection: 'user-roles',
     depth: 0,
     limit: 50,
     overrideAccess,
@@ -201,7 +201,7 @@ export async function removeRole(payload: Payload, req: PayloadRequest, args: Mu
 
   for (const row of rows.docs) {
     await payload.delete({
-      collection: 'user_roles',
+      collection: 'user-roles',
       id: extractID(row as { id: number }),
       overrideAccess,
       req,

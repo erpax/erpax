@@ -41,7 +41,7 @@ export async function POST(request: Request) {
 
     // Find plan
     const planResult = await payload.find({
-      collection: 'subscriptionPlans',
+      collection: 'subscription-plans',
       where: { slug: { equals: planSlug } },
       limit: 1,
     })

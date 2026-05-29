@@ -48,7 +48,7 @@ export default async function PricingTable({
   const where: Record<string, unknown> = {}
   if (tenantId !== undefined) where.tenant = { equals: tenantId }
   const result = await payload.find({
-    collection: 'subscriptionPlans',
+    collection: 'subscription-plans',
     where,
     limit: 12,
     overrideAccess: true,

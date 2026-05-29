@@ -31,7 +31,7 @@ export async function seedSubscriptionPlans(
     try {
       // Check if plan already exists
       const existing = await payload.find({
-        collection: 'subscriptionPlans',
+        collection: 'subscription-plans',
         where: { slug: { equals: planConfig.slug } },
         limit: 1,
       })
@@ -46,7 +46,7 @@ export async function seedSubscriptionPlans(
 
       // Create new plan
       const plan = await payload.create({
-        collection: 'subscriptionPlans',
+        collection: 'subscription-plans',
         data: {
           name: planConfig.name,
           slug: planConfig.slug,
@@ -79,13 +79,13 @@ export async function seedSubscriptionPlans(
  */
 export async function deleteAllSubscriptionPlans(payload: Payload): Promise<void> {
   const allPlans = await payload.find({
-    collection: 'subscriptionPlans',
+    collection: 'subscription-plans',
     limit: 1000,
   })
 
   for (const plan of allPlans.docs) {
     await payload.delete({
-      collection: 'subscriptionPlans',
+      collection: 'subscription-plans',
       id: plan.id,
     })
   }
@@ -100,7 +100,7 @@ export async function getOrCreatePlan(
   planConfig: TenantConfig['subscriptionPlans'][0],
 ): Promise<string> {
   const existing = await payload.find({
-    collection: 'subscriptionPlans',
+    collection: 'subscription-plans',
     where: { slug: { equals: planConfig.slug } },
     limit: 1,
   })
@@ -110,7 +110,7 @@ export async function getOrCreatePlan(
   }
 
   const plan = await payload.create({
-    collection: 'subscriptionPlans',
+    collection: 'subscription-plans',
     data: {
       name: planConfig.name,
       slug: planConfig.slug,

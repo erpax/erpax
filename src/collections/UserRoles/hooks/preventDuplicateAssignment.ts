@@ -49,7 +49,7 @@ export const preventDuplicateAssignment: CollectionBeforeChangeHook = async ({
   }
 
   const existing = await req.payload.find({
-    collection: 'user_roles',
+    collection: 'user-roles',
     depth: 0,
     limit: 1,
     overrideAccess: true,
