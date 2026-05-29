@@ -10,15 +10,6 @@ import type MarkdownIt from 'markdown-it'
 // (the akashic record), never hand-listed.
 const SKILLS_DIR = '.claude/skills'
 
-// Open Graph: every skill is an OG object. SITE makes og:url/image absolute in
-// prod (set ERPAX_SITE_URL); empty → the path itself is the address. og:image is
-// a QR of the skill's own URL — the image literally IS the skill. Override the
-// generator with ERPAX_QR_ENDPOINT (e.g. a self-hosted /qr/<slug>.svg) later.
-const SITE = (process.env.ERPAX_SITE_URL ?? '').replace(/\/$/, '')
-const QR_ENDPOINT =
-  process.env.ERPAX_QR_ENDPOINT ??
-  'https://api.qrserver.com/v1/create-qr-code/?size=512x512&margin=12&data='
-
 type SidebarItem = { text: string; link?: string; collapsed?: boolean; items?: SidebarItem[] }
 const wikiMap: Record<string, string> = {} // leaf word → route
 const allSkills: { name: string; route: string }[] = [] // flat list → the reading chain
@@ -262,43 +253,16 @@ export default defineConfig({
     // without any of it being stored in the file's frontmatter.
     const rel = pageData.relativePath
     if (rel.endsWith('SKILL.md')) {
-      const relg = relationsFromPath(rel)
-      Object.assign(pageData.frontmatter, relg)
+      Object.assign(pageData.frontmatter, relationsFromPath(rel))
+      // prev/next walk the sequence reading-chain (override VitePress's
+      // alphabetical sidebar default) so `next` reads the corpus as the dance.
       const route = '/' + rel.replace(/\.md$/, '')
-      // prev/next walk the sequence reading-chain (override the alphabetical sidebar)
-      // so `next` reads the corpus as the dance.
       const i = chainIndex.get(route)
       if (i !== undefined) {
         const p = readingChain[i - 1]
         const n = readingChain[i + 1]
         pageData.frontmatter.prev = p ? { text: p.name, link: p.route } : false
         pageData.frontmatter.next = n ? { text: n.name, link: n.route } : false
-      }
-      // ── Each skill IS an Open Graph object ──────────────────────────────
-      // og:* bits from the frontmatter; og:image is a QR of the skill's own URL
-      // (the image literally IS the skill); og:see_also exposes the path-derived
-      // subgraph. These URLs are the addresses the catch-all router resolves
-      // (a command IS a URL IS a query IS a skill-invocation — see [[sequence]]).
-      const name = fm.name ?? 'skill'
-      const desc = (pageData.frontmatter as { description?: string }).description ?? ''
-      const url = SITE + route
-      const qr = QR_ENDPOINT + encodeURIComponent(url)
-      const head = (pageData.frontmatter.head ||= []) as [string, Record<string, string>][]
-      head.push(
-        ['meta', { property: 'og:type', content: 'article' }],
-        ['meta', { property: 'og:site_name', content: 'erpax — the fractal skill corpus' }],
-        ['meta', { property: 'og:title', content: name }],
-        ['meta', { property: 'og:description', content: desc }],
-        ['meta', { property: 'og:url', content: url }],
-        ['meta', { property: 'og:image', content: qr }],
-        ['meta', { property: 'og:image:alt', content: `${name} — QR of ${route}` }],
-        ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-        ['meta', { name: 'twitter:title', content: name }],
-        ['meta', { name: 'twitter:description', content: desc }],
-        ['meta', { name: 'twitter:image', content: qr }],
-      )
-      for (const r of [...relg.ancestors, ...relg.children, ...relg.related].slice(0, 16)) {
-        head.push(['meta', { property: 'og:see_also', content: SITE + r.link }])
       }
     }
   },
