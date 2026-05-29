@@ -38,7 +38,7 @@ export const glAccountField = (required = false): Field[] => [
 // imports keep working while the canonical module remains the single source
 // of truth (Slice WW: regional-defaults consolidation).
 export { SUPPORTED_CURRENCIES, currencyOptions, DEFAULT_CURRENCY } from '@/config/regional-defaults';
-import { currencyOptions as canonicalCurrencyOptions, DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY } from '@/config/regional-defaults';
+import { DEFAULT_CURRENCY as CANON_DEFAULT_CURRENCY, isIso4217Currency } from '@/config/regional-defaults';
 
 /**
  * Currency select field. Pass a custom `name` for FX-pair fields like
@@ -61,22 +61,21 @@ export const currencyField = (
     typeof defaultValueOrOptions === 'string'
       ? { defaultValue: defaultValueOrOptions }
       : defaultValueOrOptions;
-  // Slice LLLLLLLLL — when allowBlank is set, XXX joins the options
-  // and required is forced off (a required+blank-allowed pair would
-  // contradict each other). The XXX option's display label is the
-  // ISO 4217 §6.5 short name; the admin UI's translations collection
-  // override (Slice AAAAAAAAA) supplies locale-specific text.
-  const blankOption = { label: 'XXX — No currency (ISO 4217)', value: 'XXX' };
+  // ISO 4217 §6.1 — ANY valid currency code is accepted (the `currency` skill),
+  // not a closed list; SUPPORTED_CURRENCIES are admin suggestions, not the bound.
+  // allowBlank permits the XXX identity element (§6.5 "no currency"); required off then.
   const includeBlank = opts.allowBlank === true;
-  const optionsList = includeBlank
-    ? [...canonicalCurrencyOptions.filter((o) => o.value !== 'XXX'), blankOption]
-    : [...canonicalCurrencyOptions];
   return {
     name: opts.name ?? 'currency',
-    type: 'select',
+    type: 'text',
     defaultValue: opts.defaultValue ?? CANON_DEFAULT_CURRENCY,
     ...(opts.required && !includeBlank ? { required: true } : {}),
-    options: optionsList,
+    validate: (value: unknown) => {
+      if (value === undefined || value === null || value === '') return true;
+      if (includeBlank && value === 'XXX') return true;
+      return isIso4217Currency(value) ? true : 'Must be a valid ISO 4217 currency code';
+    },
+    admin: { description: 'ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).' },
   };
 };
 

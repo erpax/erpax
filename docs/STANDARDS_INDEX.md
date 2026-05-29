@@ -961,9 +961,9 @@ src/endpoints/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite bre
 src/endpoints/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
 src/endpoints/seed/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/endpoints/seed/index.ts:9: * @standard BCP-47 language-tag locale-bundled-fixtures
-src/fields/base-accounting-fields.ts:117: * @standard ISO-19011:2018 audit-trail
-src/fields/base-accounting-fields.ts:246: * @standard ISO 3166-1:2020 country-codes
-src/fields/base-accounting-fields.ts:265: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+src/fields/base-accounting-fields.ts:116: * @standard ISO-19011:2018 audit-trail
+src/fields/base-accounting-fields.ts:245: * @standard ISO 3166-1:2020 country-codes
+src/fields/base-accounting-fields.ts:264: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
 src/fields/base-accounting-fields.ts:4: * @standard ISO-4217:2015 currency-codes
 src/fields/base-accounting-fields.ts:5: * @standard ISO-8601-1:2019 date-time
 src/fields/defaultLexical.ts:4: * @standard W3C HTML5 Living Standard rich-text-output
@@ -980,15 +980,15 @@ src/fields/payables.ts:6: * @standard ISO-8601-1:2019 date-time
 src/fields/receivables.ts:4: * @standard EN-16931:2017 invoice-fields
 src/fields/receivables.ts:5: * @standard ISO-4217:2015 currency-codes
 src/fields/receivables.ts:6: * @standard ISO-8601-1:2019 date-time
-src/fields/shared.ts:107: * @standard ISO-8601-1:2019 date-time
+src/fields/shared.ts:106: * @standard ISO-8601-1:2019 date-time
 src/fields/shared.ts:10: * @standard ISO-8601-1:2019 date-time
 src/fields/shared.ts:11: * @standard ISO-27001:2022 A.5.23 cloud-service-tenant-isolation
 src/fields/shared.ts:12: * @standard ISO-27002:2022 §5.15 access-control
-src/fields/shared.ts:202: * @standard ISO-19011:2018 audit-trail
-src/fields/shared.ts:417: * @standard ISO 3166-1:2020 country-codes
+src/fields/shared.ts:201: * @standard ISO-19011:2018 audit-trail
+src/fields/shared.ts:416: * @standard ISO 3166-1:2020 country-codes
 src/fields/shared.ts:42: * @standard ISO-4217:2015 currency-codes
-src/fields/shared.ts:436: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
-src/fields/shared.ts:81: * @standard ISO-4217:2015 currency decimal-place validation
+src/fields/shared.ts:435: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+src/fields/shared.ts:80: * @standard ISO-4217:2015 currency decimal-place validation
 src/fields/shared.ts:9: * @standard ISO-4217:2015 currency-codes
 src/hooks/auditTrailAfterChange.ts:21: * @standard rfc-9562 uuid event-id
 src/hooks/auditTrailAfterChange.ts:39: * @standard NIST FIPS-180-4 sha-256
@@ -3852,7 +3852,7 @@ src/fields/base-accounting-fields.ts:8: * @accounting IFRS IAS-1 presentation-of
 src/fields/payables.ts:7: * @accounting US-GAAP ASC-405 liabilities
 src/fields/receivables.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/fields/shared.ts:13: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/fields/shared.ts:241: * @accounting IAS-1 financial-position reporting-entities
+src/fields/shared.ts:240: * @accounting IAS-1 financial-position reporting-entities
 src/hooks/collections/accounting/ap-aging.hook.ts:15: * @accounting IFRS IAS-37 provisions-contingent-liabilities
 src/hooks/collections/accounting/ap-aging.hook.ts:16: * @accounting US-GAAP ASC-405 liabilities
 src/hooks/collections/accounting/ar-aging.hook.ts:20: * @accounting IFRS IFRS-9 expected-credit-loss
@@ -4488,10 +4488,10 @@ src/ecommerce/stripe/tenantStripeWebhook.ts:11: * @security ISO-27001 A.5.23 clo
 src/ecommerce/stripe/tenantStripeWebhook.ts:12: * @security ISO-27002 §8.24 use-of-cryptography
 src/email/tenantAwareResendEmailAdapter.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-key
 src/email/tenantAwareResendEmailAdapter.ts:26: * @security ISO-27002 §5.17 authentication-information secret-management
-src/fields/base-accounting-fields.ts:118: * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
+src/fields/base-accounting-fields.ts:117: * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
 src/fields/base-accounting-fields.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation tenant-field
 src/fields/base-accounting-fields.ts:7: * @security ISO-27002 §5.15 access-control
-src/fields/shared.ts:203: * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
+src/fields/shared.ts:202: * @security ISO-27002 §5.4 segregation-of-duties approver-visibility
 src/hooks/autoPopulateCreatedBy.ts:10: * @security ISO-27002 §5.15 access-control
 src/hooks/autoPopulateTenant.ts:10: * @security ISO-27002 §5.15 access-control
 src/hooks/autoPopulateTenant.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation auto-populate-tenant
