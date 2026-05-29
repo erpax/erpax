@@ -20,7 +20,7 @@
  * @see ./country-api-clients.ts
  */
 
-import type { Payload } from 'payload'
+import type { Payload, RequiredDataFromCollectionSlug } from 'payload'
 
 export type ApiAuditEventKind =
   | 'fx_rate'
@@ -43,7 +43,7 @@ export type ApiAuditEventKind =
  */
 export interface PersistApiAuditEventInput<T = unknown> {
   /** Tenant the call was made for. */
-  readonly tenantId: string | number
+  readonly tenantId: string
   /** API category — controls the `kind` select on the collection. */
   readonly kind: ApiAuditEventKind
   /** ISO-3166-1 alpha-2. */
@@ -72,7 +72,7 @@ export interface PersistApiAuditEventInput<T = unknown> {
 export async function persistApiAuditEvent<T>(
   payload: Payload,
   event: PersistApiAuditEventInput<T>,
-): Promise<{ id: string | number }> {
+): Promise<{ id: string }> {
   const eventId = event.eventId ?? cryptoRandomId()
   const doc = {
     tenant: event.tenantId,
@@ -91,18 +91,22 @@ export async function persistApiAuditEvent<T>(
     collection: 'api-audit-events',
     where: { eventId: { equals: eventId } },
     limit: 1,
-  })) as { docs: Array<{ id: string | number }> }
+  })) as unknown as { docs: Array<{ id: string }> }
+
+  // Audit rows carry dynamic external-API json (payloadIn/payloadOut), so the
+  // builder is cast to this collection's create type at the boundary.
+  const data = doc as unknown as RequiredDataFromCollectionSlug<'api-audit-events'>
 
   if (existing.docs?.[0]) {
     const updated = await payload.update({
       collection: 'api-audit-events',
       id: existing.docs[0].id,
-      data: doc,
+      data,
     })
-    return { id: (updated as { id: string | number }).id }
+    return { id: String(updated.id) }
   }
-  const created = await payload.create({ collection: 'api-audit-events', data: doc })
-  return { id: (created as { id: string | number }).id }
+  const created = await payload.create({ collection: 'api-audit-events', data })
+  return { id: String(created.id) }
 }
 
 function cryptoRandomId(): string {

@@ -79,6 +79,8 @@ import type { ContentUuid } from '../integrity/content-uuid'
 export interface SqlQuery {
   readonly sql: string
   readonly paramsCanonical: string
+  // content-uuid inputs are open records (satisfies computeContentUuid's Record constraint)
+  readonly [k: string]: unknown
 }
 
 /** RFC 4122 §4.3 / Slice RRRRR branded uuid that's the fingerprint of a query. */
@@ -188,7 +190,7 @@ export function computeQueryUuid(args: {
   const sql = canonicalizeSql(args.sql)
   const paramsCanonical = args.params === undefined ? '' : jcsCanonicalize(args.params)
   const queryShape: SqlQuery = { sql, paramsCanonical }
-  return computeContentUuid(queryShape, args.tenantId) as QueryUuid
+  return computeContentUuid(queryShape, args.tenantId)
 }
 
 // ─── Result-side bookkeeping ─────────────────────────────────────────
@@ -247,7 +249,7 @@ export async function runWithFingerprint<TResult>(args: {
   const rowCount = Array.isArray(result)
     ? result.length
     : (result && typeof result === 'object' && 'docs' in (result as object) && Array.isArray((result as { docs?: unknown }).docs))
-      ? ((result as { docs: unknown[] }).docs.length)
+      ? ((result as unknown as { docs: unknown[] }).docs.length)
       : undefined
   return { queryUuid, result, resultUuid, elapsedMs, rowCount }
 }
