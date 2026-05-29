@@ -15,8 +15,8 @@ import { getPayload } from 'payload'
 import config from '@/payload.config'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 
-import { createPayloadSdkRest, loginAsTestUser } from '../helpers/payloadSdkRest'
-import { cleanupTestUser, seedTestUser, testUser } from '../helpers/seedUser'
+import { createPayloadSdkRest, loginAsTestUser } from '../tests/helpers/payloadSdkRest'
+import { cleanupTestUser, seedTestUser, testUser } from '../tests/helpers/seedUser'
 
 /**
  * Verifies `@payloadcms/sdk` works against in-process Next REST handlers (see

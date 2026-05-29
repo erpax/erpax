@@ -34,7 +34,7 @@ import type { Payload } from 'payload'
 export async function seedTestTenant(
   payload: Payload,
   tenantData: { name: string; slug: string } = { name: 'Test Tenant', slug: 'test-tenant' },
-): Promise<number> {
+): Promise<string> {
   // Check if tenant exists (idempotent)
   const existing = await payload.find({
     collection: 'tenants',
@@ -90,7 +90,7 @@ export async function cleanupTestTenant(payload: Payload, slug: string): Promise
 }
 
 /** Delete a tenant by ID (avoids a lookup query). */
-export async function cleanupTestTenantById(payload: Payload, id: number): Promise<void> {
+export async function cleanupTestTenantById(payload: Payload, id: string | number): Promise<void> {
   await payload
     .delete({
       collection: 'tenants',

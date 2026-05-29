@@ -16,9 +16,9 @@ import config from '@/payload.config'
 import type { Config } from '@/payload-types'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 
-import { createPayloadSdkRest, loginAsTestUser } from '../helpers/payloadSdkRest'
-import { cleanupTestTenantById } from '../helpers/seedTenant'
-import { cleanupTestUser, seedTestUser } from '../helpers/seedUser'
+import { createPayloadSdkRest, loginAsTestUser } from '../tests/helpers/payloadSdkRest'
+import { cleanupTestTenantById } from '../tests/helpers/seedTenant'
+import { cleanupTestUser, seedTestUser } from '../tests/helpers/seedUser'
 
 const TEST_TENANT_PREFIX = 'test-tenant-int'
 
@@ -33,7 +33,7 @@ const TEST_TENANT_PREFIX = 'test-tenant-int'
 describe('Tenant-scoped Operations', () => {
   let payload: Payload
   let sdk: PayloadSDK<Config>
-  let testTenantId: number
+  let testTenantId: string
 
   beforeAll(async () => {
     const payloadConfig = await config
@@ -49,7 +49,7 @@ describe('Tenant-scoped Operations', () => {
       },
       overrideAccess: true,
     })
-    testTenantId = tenant.id as number
+    testTenantId = tenant.id
 
     const rawSdk = await createPayloadSdkRest()
     sdk = await loginAsTestUser(rawSdk)
@@ -87,7 +87,7 @@ describe('Tenant-scoped Operations', () => {
             ],
           },
         ],
-      } as Config['collections']['pages'],
+      } as unknown as Config['collections']['pages'],
     })
 
     expect(page).toBeDefined()
@@ -119,7 +119,7 @@ describe('Tenant-scoped Operations', () => {
             children: [{ type: 'paragraph', children: [{ text: 'Test content' }] }],
           },
         },
-      } as Config['collections']['posts'],
+      } as unknown as Config['collections']['posts'],
     })
 
     expect(post).toBeDefined()
