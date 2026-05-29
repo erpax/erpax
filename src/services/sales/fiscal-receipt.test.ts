@@ -4,7 +4,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §СУПТО касов-бон
- * @see src/services/supto/fiscal-receipt.ts
+ * @see src/services/sales/fiscal-receipt.ts
  */
 
 import { describe, it, expect, vi } from 'vitest'
@@ -37,6 +37,29 @@ describe('buildFiscalReceipt', () => {
     const r = buildFiscalReceipt(SALE)
     expect(r.vatTotal).toBe(200_00) // 1000.00 * 20%
     expect(r.lines).toHaveLength(1)
+  })
+
+  it('groups VAT into per-rate subtotals (mixed 20%/9%/0%)', () => {
+    const r = buildFiscalReceipt({
+      ...SALE,
+      items: [
+        { description: 'Std', vatRate: 20, amount: 1_000_00 },
+        { description: 'Reduced', vatRate: 9, amount: 500_00 },
+        { description: 'Zero', vatRate: 0, amount: 200_00 },
+      ],
+    })
+    expect(r.vatBreakdown).toEqual([
+      { rate: 0, net: 200_00, vat: 0 },
+      { rate: 9, net: 500_00, vat: 45_00 },
+      { rate: 20, net: 1_000_00, vat: 200_00 },
+    ])
+    expect(r.vatTotal).toBe(245_00)
+  })
+
+  it('rounds сторно (negative) VAT away from zero per НАП', () => {
+    // -50 * 9% = -4.50 → -5 (away from zero), where Math.round would give -4.
+    const r = buildFiscalReceipt({ ...SALE, items: [{ vatRate: 9, amount: -50 }] })
+    expect(r.vatTotal).toBe(-5)
   })
 
   it('routes blanks to identity elements (currency/payment/operator)', () => {

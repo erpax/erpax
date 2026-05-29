@@ -17,6 +17,7 @@
  */
 
 import { isValidUnp } from '@/standards/naredba-n-18/unp'
+import { calculateBgVat } from '@/services/country-clients/bg-vat'
 
 export interface FiscalReceiptLine {
   readonly description: string
@@ -24,6 +25,13 @@ export interface FiscalReceiptLine {
   readonly unitPrice: number
   readonly vatRate: number
   readonly amount: number
+}
+
+/** Per-rate VAT subtotal — the receipt's tax breakdown (Наредба Н-18 §касов-бон). */
+export interface FiscalVatSubtotal {
+  readonly rate: number
+  readonly net: number
+  readonly vat: number
 }
 
 export interface FiscalReceipt {
@@ -38,6 +46,8 @@ export interface FiscalReceipt {
   readonly total: number
   /** VAT computed per line on the net amount (cents). */
   readonly vatTotal: number
+  /** VAT subtotals grouped by rate — the receipt's tax breakdown. */
+  readonly vatBreakdown: ReadonlyArray<FiscalVatSubtotal>
 }
 
 export interface FiscalSaleInput {
@@ -81,7 +91,20 @@ export function buildFiscalReceipt(sale: FiscalSaleInput, issuedAt: string | Dat
     vatRate: i.vatRate ?? 0,
     amount: i.amount ?? 0,
   }))
-  const vatTotal = lines.reduce((sum, l) => sum + Math.round((l.amount * l.vatRate) / 100), 0)
+  // VAT per line through the canonical BG calculator (round-half-away-from-zero
+  // per НАП — correct for сторно/negative lines too), then grouped by rate.
+  const byRate = new Map<number, FiscalVatSubtotal>()
+  for (const l of lines) {
+    const { vatAmountMinor } = calculateBgVat({ netAmountMinor: l.amount, rateOverride: l.vatRate })
+    const prev = byRate.get(l.vatRate)
+    byRate.set(l.vatRate, {
+      rate: l.vatRate,
+      net: (prev?.net ?? 0) + l.amount,
+      vat: (prev?.vat ?? 0) + vatAmountMinor,
+    })
+  }
+  const vatBreakdown = [...byRate.values()].sort((a, b) => a.rate - b.rate)
+  const vatTotal = vatBreakdown.reduce((sum, g) => sum + g.vat, 0)
   return {
     unp: sale.unp,
     fiscalDeviceNumber: sale.fiscalDeviceNumber,
@@ -92,6 +115,7 @@ export function buildFiscalReceipt(sale: FiscalSaleInput, issuedAt: string | Dat
     lines,
     total: sale.total ?? lines.reduce((s, l) => s + l.amount, 0),
     vatTotal,
+    vatBreakdown,
   }
 }
 
