@@ -2224,6 +2224,9 @@ src/standards/multi-currency-closing/index.ts:9: * @standard IFRS-21:2023 Transl
 src/standards/nace-rev2/index.ts:10: * @standard UN ISIC Rev.4 (companion)
 src/standards/nace-rev2/index.ts:11: * @standard NAICS 2022 (US/CA/MX companion)
 src/standards/nace-rev2/index.ts:9: * @standard EU Regulation (EC) No 1893/2006 NACE Rev.2
+src/standards/naredba-n-18/unp.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/standards/naredba-n-18/unp.test.ts:5: * @standard BG Наредба-Н-18 §СУПТО УНП unique-sales-number
+src/standards/naredba-n-18/unp.ts:19: * @standard BG Наредба-Н-18 §СУПТО УНП unique-sales-number
 src/standards/nist-incits-359/conventions.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/standards/nist-incits-359/conventions.test.ts:5: * @standard POSIX-1.2017 §1.6.1.1 file-mode-bits
 src/standards/nist-incits-359/conventions.test.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control vocabulary-layer
@@ -5284,6 +5287,7 @@ src/standards/iso-3166-1/countries/index.ts:5: * @audit ISO-19011:2018 audit-tra
 src/standards/iso-3166-1/countries/types.ts:19: * @audit ISO-19011:2018 audit-trail country-decision-evidence
 src/standards/iso-7064/egn-bg.test.ts:12: * @audit ISO-19011:2018 audit-trail
 src/standards/iso-7064/egn-bg.ts:29: * @audit ISO-19011:2018 audit-trail kyc-evidence
+src/standards/naredba-n-18/unp.ts:20: * @audit ISO-19011:2018 audit-trail (УНП ties order ↔ fiscal-receipt ↔ payment)
 src/standards/nist-incits-359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assignment
 src/standards/peppol-bis-3/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
 src/standards/peppol-bis-3/types.ts:13: * @audit ISO-19011:2018 audit-trail
