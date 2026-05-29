@@ -1154,6 +1154,19 @@ src/services/accounting/financial-analysis.ts:8: * @standard ISO-4217:2015 curre
 src/services/accounting/financial-analysis.ts:9: * @standard ISO-8601-1:2019 date-time as-of-date
 src/services/accounting/reports.service.ts:24: * @standard ISO-4217:2015 currency-codes
 src/services/accounting/reports.service.ts:25: * @standard ISO-8601-1:2019 date-time as-of-date period
+src/services/accounting/seeds/templates/bg-nss.ts:17: * @standard ISO-3166-1:2020 BG country-code
+src/services/accounting/seeds/templates/bg-nss.ts:18: * @standard BG-NSS national-statutory-chart-of-accounts
+src/services/accounting/seeds/templates/compliance.ts:6: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/services/accounting/seeds/templates/compliance.ts:7: * @standard ISO-4217:2015 currency-codes
+src/services/accounting/seeds/templates/compliance.ts:8: * @standard EN-16931:2017 e-invoicing
+src/services/accounting/seeds/templates/templates.test.ts:11: * @standard ISO/IEC-29119:2022 software-testing
+src/services/accounting/seeds/templates/templates.test.ts:12: * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation
+src/services/accounting/seeds/templates/templates.test.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/services/accounting/seeds/templates/templates.test.ts:14: * @standard ISO-4217:2015 currency-codes
+src/services/accounting/seeds/templates/templates.ts:10: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/services/accounting/seeds/templates/templates.ts:11: * @standard ISO-4217:2015 currency-codes
+src/services/accounting/seeds/templates/types.ts:10: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/services/accounting/seeds/templates/types.ts:11: * @standard ISO-4217:2015 currency-codes
 src/services/accounting/utilities/aging-dry-keys.test.ts:15: * @standard ISO/IEC-29119:2022 software-testing
 src/services/accounting/utilities/aging-dry-keys.test.ts:16: * @standard ISO-8601-1:2019 date-time
 src/services/accounting/utilities/bank-reconciliation-report.test.ts:23: * @standard ISO/IEC-29119:2022 software-testing
@@ -3290,6 +3303,8 @@ src/plugins/auth/access/predicates.ts:95: * @compliance GDPR Art.5(1)(f) integri
 src/plugins/auth/access/predicates.ts:96: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/accounting/debit-credit.ts:15: * @compliance SOX §404 internal-controls
 src/services/accounting/reports.service.ts:27: * @compliance SOX §302 disclosure-controls
+src/services/accounting/seeds/templates/bg-nss.ts:20: * @compliance EU 2014/55 b2g-e-invoicing-mandate
+src/services/accounting/seeds/templates/compliance.ts:9: * @compliance EU 2014/55 b2g-e-invoicing-mandate-resolution
 src/services/accounting/utilities/bank-reconciliation-report.test.ts:27: * @compliance SOX §404 internal-controls
 src/services/accounting/utilities/depreciation-methods.test.ts:17: * @compliance SOX §404 internal-controls capital-asset-register
 src/services/accounting/utilities/period-lock.ts:19: * @compliance SOX §404 period-close-integrity
@@ -3942,6 +3957,12 @@ src/services/accounting/reports.service.ts:20: * @accounting US-GAAP ASC-310 rec
 src/services/accounting/reports.service.ts:21: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/services/accounting/reports.service.ts:22: * @accounting US-GAAP ASC-405 liabilities ap-aging
 src/services/accounting/reports.service.ts:23: * @accounting OECD SAF-T 2.0 standard-audit-file-tax
+src/services/accounting/seeds/templates/bg-nss.ts:19: * @accounting IFRS IAS-1 §54 minimum-line-items
+src/services/accounting/seeds/templates/templates.test.ts:15: * @accounting IFRS IAS-1 §54 minimum-line-items
+src/services/accounting/seeds/templates/templates.test.ts:16: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/services/accounting/seeds/templates/templates.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
+src/services/accounting/seeds/templates/templates.ts:13: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/services/accounting/seeds/templates/types.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
 src/services/accounting/utilities/aging-dry-keys.test.ts:17: * @accounting IFRS IFRS-9 expected-credit-loss aging-buckets
 src/services/accounting/utilities/aging-dry-keys.test.ts:18: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/services/accounting/utilities/bank-reconciliation-report.test.ts:25: * @accounting IFRS IAS-7 statement-of-cash-flows
@@ -4964,6 +4985,9 @@ src/services/accounting/factories/collection-factory.ts:73: * @audit ISO-19011:2
 src/services/accounting/fields-money-fix.ts:13: * @audit ISO-19011:2018 audit-trail integer-only-arithmetic
 src/services/accounting/financial-analysis.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/reports.service.ts:26: * @audit ISO-19011:2018 audit-trail read-only-queries
+src/services/accounting/seeds/templates/compliance.ts:10: * @audit ISO-19011:2018 audit-trail country-decision-evidence
+src/services/accounting/seeds/templates/templates.test.ts:17: * @audit ISO-19011:2018 audit-trail seed-evidence
+src/services/accounting/seeds/templates/templates.ts:14: * @audit ISO-19011:2018 audit-trail seed-evidence
 src/services/accounting/utilities/aging-dry-keys.test.ts:19: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 src/services/accounting/utilities/bank-reconciliation-report.test.ts:26: * @audit ISO-19011:2018 audit-trail bank-reconciliation
 src/services/accounting/utilities/calculations.ts:199: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items

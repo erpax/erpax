@@ -21,6 +21,7 @@ function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
     emit: vi.fn(),
     audit: vi.fn(),
     capture: vi.fn(),
+    mcp: {} as AgentContext['mcp'],
     ...overrides,
   }
 }
@@ -111,7 +112,7 @@ describe('processEffect', () => {
   it('exhaustiveness — unknown kind throws (TypeScript prevents this; runtime guard)', async () => {
     const ctx = mockCtx()
     await expect(
-      processEffect({ kind: 'bogus' as never } as AgentEffect, ctx),
+      processEffect({ kind: 'bogus' } as unknown as AgentEffect, ctx),
     ).rejects.toThrow(/unknown effect kind: bogus/)
   })
 })

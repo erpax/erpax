@@ -22,6 +22,7 @@ function mockCtx(): AgentContext {
     emit: vi.fn(),
     audit: vi.fn(),
     capture: vi.fn(),
+    mcp: {} as AgentContext['mcp'],
   }
 }
 

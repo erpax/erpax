@@ -15,11 +15,12 @@ import type {
 } from './types'
 
 describe('agent types', () => {
-  it('AgentId is a closed string union with the 15 canonical agent ids', () => {
+  it('AgentId is a closed string union with the canonical agent ids', () => {
     expectTypeOf<AgentId>().toEqualTypeOf<
       | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'
       | 'ops' | 'engineering' | 'customer-support' | 'data' | 'design'
       | 'product' | 'productivity' | 'enterprise-search' | 'plugins' | 'meta-skill'
+      | 'consistency'
     >()
   })
 
