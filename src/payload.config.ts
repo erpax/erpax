@@ -256,7 +256,7 @@ const {
   TransferPricingAdjustments,
   PostCloseAnalyticsReports,
 } = allCollections
-import type { CollectionConfig } from 'payload'
+import type { CollectionConfig, CollectionSlug } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
 import { defaultLexical } from '@/fields/defaultLexical'
@@ -977,7 +977,7 @@ export default buildConfig({
       // barrel, not hand-listed. (The plugin only adds I/O to the slugs it
       // is given; an empty list would disable it everywhere.)
       collections: (Object.values(allCollections) as Array<{ slug: string }>).map((c) => ({
-        slug: c.slug,
+        slug: c.slug as CollectionSlug,
       })),
       overrideExportCollection: ({ collection }) => ({
         ...collection,

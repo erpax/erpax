@@ -119,7 +119,7 @@ export function registerIdentitySlot<C extends string>(
     const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
     requireSafetyMode(['test', 'dev'], `registerIdentitySlot('${def.slot}', { replace: true })`)
   }
-  REGISTRY.set(def.slot, def as IdentitySlotDef<string>)
+  REGISTRY.set(def.slot, def as unknown as IdentitySlotDef<string>)
 }
 
 /** Look up a slot's definition. */
