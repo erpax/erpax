@@ -24,6 +24,12 @@ import { serializeSkill } from './serialize'
 
 const SITE = (process.env.ERPAX_SITE_URL ?? '').replace(/\/$/, '')
 
+// Reserved namespaces the catch-all must NOT swallow — the Payload analogue of
+// ceccec/erpax's route constraint `exclude %w[rails system admin]`. These have
+// their own handlers; even though Payload matches them earlier (last-position
+// fallback), guard explicitly so the gate never tries to resolve them as skills.
+const RESERVED = new Set(['graphql', 'graphql-playground', 'access', 'admin', '_next', 'payload-preferences'])
+
 /** The routeless path: everything after the `/api` mount, slashes trimmed. */
 function commandPath(req: PayloadRequest): string {
   const raw = typeof req.url === 'string' ? req.url : ''
@@ -40,7 +46,13 @@ const catchAll: Endpoint = {
   path: '/:path*',
   method: 'get',
   handler: (req: PayloadRequest) => {
-    const parsed = parseRequest(commandPath(req))
+    const cmd = commandPath(req)
+    const firstSegment = cmd.split('/')[0]?.toLowerCase()
+    // constraint (mirrors ceccec/erpax): never swallow a reserved namespace.
+    if (!firstSegment || RESERVED.has(firstSegment)) {
+      return Response.json({ error: 'not a skill path' }, { status: 404 })
+    }
+    const parsed = parseRequest(cmd)
     if (parsed.segments.length === 0) {
       return Response.json({ error: 'empty path' }, { status: 404 })
     }
