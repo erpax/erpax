@@ -113,7 +113,7 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
               { tenant: { equals: tenant.id } },
               { fromCurrency: { equals: fromCurrency } },
               { toCurrency: { equals: 'BGN' } },
-              { effectiveDate: { equals: lookup.data.date } },
+              { rateDate: { equals: lookup.data.date } },
             ],
           },
           limit: 1,
@@ -123,18 +123,22 @@ export async function processBnbRatesSync(payload: Payload): Promise<BnbRatesSyn
           await payload.update({
             collection: 'currency-rates',
             id: existing.docs[0].id,
-            data: { rate: ratePerUnit, status: 'active' },
+            data: { rate: ratePerUnit, isActive: true },
           })
         } else {
           await payload.create({
             collection: 'currency-rates',
             data: {
               tenant: String(tenant.id),
+              rateId: `${fromCurrency}-BGN-${lookup.data.date}`,
               fromCurrency,
               toCurrency: 'BGN',
               rate: ratePerUnit,
-              effectiveDate: lookup.data.date,
-              status: 'active',
+              rateDate: lookup.data.date,
+              // exact publisher (БНБ/ECB) is on the api-audit-events trail; the
+              // central-bank fixing maps to bank_api / ecb here.
+              source: lookup.source === 'ECB' ? 'ecb' : 'bank_api',
+              isActive: true,
             },
           })
         }

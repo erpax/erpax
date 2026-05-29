@@ -68,8 +68,8 @@ function TrendRow({ label, data }: { label: string; data: TrendData }) {
 const TrendAnalysisCard: React.FC<TrendAnalysisCardProps> = ({ client: _client, dateRange }) => {
   const [trend, setTrend] = useState<{
     revenue: TrendData;
-    expenses: TrendData;
-    profit: TrendData;
+    netIncome: TrendData;
+    margin: TrendData;
   } | null>(null);
   const [loading, setLoading] = useState(true);
 

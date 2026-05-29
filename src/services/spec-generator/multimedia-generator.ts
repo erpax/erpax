@@ -280,8 +280,10 @@ function renderMarkdown(args: {
   locale: string
   defaultLocale: string
   t?: Translator
+  strict?: boolean
+  reporter?: StrictTranslationReporter
 }): string {
-  const { wf, chainId, locale, defaultLocale, t } = args
+  const { wf, chainId, locale, defaultLocale, t, strict, reporter } = args
   const wKeys = workflowKeys(wf.workflow)
   const title = resolveCaption({ t, key: wKeys.title, locale, defaultLocale, fallbackText: wf.workflow, strict, reporter })
   const heroCaption = resolveCaption({ t, key: wKeys.videoCaption, locale, defaultLocale, fallbackText: 'walk-through video', strict, reporter })
