@@ -973,6 +973,7 @@ src/fields/defaultLexical.ts:4: * @standard W3C HTML5 Living Standard rich-text-
 src/fields/defaultLexical.ts:5: * @standard CommonMark 0.31 markdown-fallback
 src/fields/defaultLexical.ts:7: * @standard BCP-47 language-tag locale-aware-content
 src/fields/defaultLexical.ts:9: * @standard schema.org HTMLRichText
+src/fields/discriminators.ts:12: * @standard ECMA-262 ECMAScript-2024 baseline
 src/fields/link.ts:5: * @standard W3C URL Living Standard
 src/fields/link.ts:6: * @standard W3C HTML5 anchor-element
 src/fields/link.ts:7: * @standard BCP-47 language-tag locale-aware
@@ -5371,4 +5372,5 @@ src/components/analytics/TrendAnalysisCard.tsx:11: * @quality ISO-25010 function
 src/components/analytics/types.ts:18: * @quality ISO-25010 maintainability shared-vocabulary
 src/components/blocks/Form/Component.tsx:23: * @quality ISO-25010 usability form-rendering
 src/components/pages/AnalyticsPage.tsx:15: * @quality ISO-25010 usability page-composition
+src/fields/discriminators.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
 src/types/sti.ts:19: * @quality ISO-25010 maintainability discriminated-subtype-safety
