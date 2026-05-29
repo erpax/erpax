@@ -30,11 +30,11 @@ const ONE_PX_PNG = Buffer.from(
   'base64',
 )
 
-function tenantIdFromDoc(doc: { tenant?: unknown }): number | undefined {
+function tenantIdFromDoc(doc: { tenant?: unknown }): string | undefined {
   const t = doc.tenant
-  if (typeof t === 'number') return t
-  if (t && typeof t === 'object' && 'id' in t && typeof (t as { id: unknown }).id === 'number') {
-    return (t as { id: number }).id
+  if (typeof t === 'string') return t
+  if (t && typeof t === 'object' && 'id' in t && typeof (t as { id: unknown }).id === 'string') {
+    return (t as { id: string }).id
   }
   return undefined
 }
@@ -43,7 +43,7 @@ function asAuthUser(doc: User): User & { collection: 'users' } {
   return { ...doc, collection: 'users' }
 }
 
-async function reqAsUser(payload: Payload, userId: number) {
+async function reqAsUser(payload: Payload, userId: string) {
   const doc = await payload.findByID({
     collection: 'users',
     id: userId,
@@ -58,26 +58,39 @@ function seedPostContent(text: string) {
   return {
     root: {
       type: 'root',
-      children: [{ type: 'paragraph', children: [{ text }] }],
+      direction: 'ltr' as const,
+      format: '' as const,
+      indent: 0,
+      version: 1,
+      children: [
+        {
+          type: 'paragraph',
+          version: 1,
+          children: [{ type: 'text', text, version: 1 }],
+        },
+      ],
     },
   }
 }
+
+/** Swallow a rejected cleanup promise (explicit return type so no implicit-any). */
+const swallowCleanupError = (): undefined => undefined
 
 describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () => {
   let payload: Payload
   const suffix = Date.now()
 
-  let tenantAId: number
-  let tenantBId: number
-  let userAId: number
-  let userBId: number
+  let tenantAId: string
+  let tenantBId: string
+  let userAId: string
+  let userBId: string
 
-  let categoryAId: number
-  let categoryBId: number
-  let postAId: number
-  let postBId: number
-  let mediaAId: number
-  let mediaBId: number
+  let categoryAId: string
+  let categoryBId: string
+  let postAId: string
+  let postBId: string
+  let mediaAId: string
+  let mediaBId: string
 
   beforeAll(async () => {
     const payloadConfig = await config
@@ -96,8 +109,8 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
       data: { name: 'Sandbox Tenant B', slug: slugB },
       overrideAccess: true,
     })
-    tenantAId = tenantA.id as number
-    tenantBId = tenantB.id as number
+    tenantAId = tenantA.id
+    tenantBId = tenantB.id
 
     const userA = await payload.create({
       collection: 'users',
@@ -121,8 +134,8 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
       },
       overrideAccess: true,
     })
-    userAId = userA.id as number
-    userBId = userB.id as number
+    userAId = userA.id
+    userBId = userB.id
 
     const catA = await payload.create({
       collection: 'categories',
@@ -142,8 +155,8 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
       },
       overrideAccess: true,
     })
-    categoryAId = catA.id as number
-    categoryBId = catB.id as number
+    categoryAId = catA.id
+    categoryBId = catB.id
 
     const mediaA = await payload.create({
       collection: 'media',
@@ -167,8 +180,8 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
       },
       overrideAccess: true,
     })
-    mediaAId = mediaA.id as number
-    mediaBId = mediaB.id as number
+    mediaAId = mediaA.id
+    mediaBId = mediaB.id
 
     const postA = await payload.create({
       collection: 'posts',
@@ -194,8 +207,8 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
       },
       overrideAccess: true,
     })
-    postAId = postA.id as number
-    postBId = postB.id as number
+    postAId = postA.id
+    postBId = postB.id
   })
 
   afterAll(async () => {
@@ -212,25 +225,25 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
           id: orphanWrong.docs[0].id,
           overrideAccess: true,
         })
-        .catch(() => undefined)
+        .catch(swallowCleanupError)
     }
 
     for (const id of [postAId, postBId]) {
-      await payload.delete({ collection: 'posts', id, overrideAccess: true }).catch(() => undefined)
+      await payload.delete({ collection: 'posts', id, overrideAccess: true }).catch(swallowCleanupError)
     }
     for (const id of [categoryAId, categoryBId]) {
       await payload
         .delete({ collection: 'categories', id, overrideAccess: true })
-        .catch(() => undefined)
+        .catch(swallowCleanupError)
     }
     for (const id of [mediaAId, mediaBId]) {
-      await payload.delete({ collection: 'media', id, overrideAccess: true }).catch(() => undefined)
+      await payload.delete({ collection: 'media', id, overrideAccess: true }).catch(swallowCleanupError)
     }
     for (const id of [userAId, userBId]) {
-      await payload.delete({ collection: 'users', id, overrideAccess: true }).catch(() => undefined)
+      await payload.delete({ collection: 'users', id, overrideAccess: true }).catch(swallowCleanupError)
     }
     for (const id of [tenantAId, tenantBId]) {
-      await payload.delete({ collection: 'tenants', id, overrideAccess: true }).catch(() => undefined)
+      await payload.delete({ collection: 'tenants', id, overrideAccess: true }).catch(swallowCleanupError)
     }
 
     if (payload?.db?.destroy) {
@@ -248,7 +261,7 @@ describe('Multi-tenant: membership admin sandbox & full tenant stewardship', () 
       overrideAccess: false,
     })
     const tenantsSeen = new Set(
-      list.docs.map((d) => tenantIdFromDoc(d)).filter((x): x is number => typeof x === 'number'),
+      list.docs.map((d) => tenantIdFromDoc(d)).filter((x): x is string => typeof x === 'string'),
     )
     expect(tenantsSeen.has(tenantAId)).toBe(true)
     expect(tenantsSeen.has(tenantBId)).toBe(false)
