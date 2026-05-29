@@ -54,6 +54,8 @@ These are **two distinct slots**, deliberately separate:
 
 So "make the id content-addressed" is correct **only for the entities whose standards demand determinism/dedup** — forcing it globally would collide identical-content transactional rows. Don't audit `id`≠`uuid` as a blanket bug; check the entity's standard.
 
+**The reverse is to determine the type and decode** (a [[duality]] of the encode): encoding goes *standard → uuid type → encode*; reading goes *uuid → determine version/type → decode*. Given any uuid, first recognise its form — **uuidv8** (`decodeStructured`/`verifyStructured` read the slot + capability flags + schema off the string, zero DB round-trip — see `services/uuid-format`); **uuidv5** (`verifyContentUuid` recomputes the content hash and compares — the Law-8 tamper check); **uuid4** decodes as opaque (no embedded meaning). So the type isn't stored beside the id — it *is* the id, recoverable by decoding. Routing, authz (`hasCapability`), seal-state, and federation-verify all run off the decode, never a lookup.
+
 ## Immutability discipline (why content-addressing is safe for mutable records)
 Hashing a *mutable* record means an edit changes its id → dangling refs. erpax resolves this: only **identity-defining content** is hashed (id/timestamps stripped) and the uuid is **frozen when the object seals** — posted / locked / `SEALED` documents are immutable (see [[accounting]]: `enforcePostingImmutability`, locked periods); drafts may recompute until sealed (compose with [[versions]]). Reference/master data (countries, currencies, tax codes) is universal ⇒ entangles across instances automatically. The seal state rides in the uuidv8 flags (see above) so peers verify without a lookup.
 
