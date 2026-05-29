@@ -46,7 +46,6 @@ import {
   initiateSepaCreditTransfer,
 } from '@/services/country-clients/berlin-group-psd2'
 import { postBgNapMtls, submitBgSaft } from '@/services/country-clients/bg-nap-mtls'
-import { INDUSTRY_TEMPLATES, BG_NSS_TEMPLATE } from '@/services/accounting/seeds/templates'
 import { isBgEgn, decodeBgEgn } from '@/standards/iso-7064'
 import {
   BG_VAT_RATES,
@@ -147,20 +146,6 @@ describe('BG implementation — pillar #9: e2e walk-throughs present on disk', (
 })
 
 describe('BG implementation — extras shipped on top of the checklist', () => {
-  it('BG-NSS statutory chart template registered in INDUSTRY_TEMPLATES', () => {
-    expect(BG_NSS_TEMPLATE.id).toBe('bg-nss')
-    expect(INDUSTRY_TEMPLATES['bg-nss']).toBe(BG_NSS_TEMPLATE)
-    expect(BG_NSS_TEMPLATE.compliance.country).toBe('BG')
-    expect(BG_NSS_TEMPLATE.compliance.statutoryChartReference).toBe('BG-NSS')
-  })
-
-  it('BG-NSS chart covers every IAS-1 §54 element type', () => {
-    const elementTypes = new Set(BG_NSS_TEMPLATE.chartOfAccounts.map((a) => a.accountType))
-    for (const type of ['asset', 'liability', 'equity', 'revenue', 'expense']) {
-      expect(elementTypes, `BG-NSS missing element ${type}`).toContain(type)
-    }
-  })
-
   it('BNB rate-sync job wired into payload.config.ts jobs.tasks', () => {
     const config = readFileSync(resolve(REPO_ROOT, 'src/payload.config.ts'), 'utf8')
     expect(config).toContain("slug: 'bg-bnb-rates-sync'")

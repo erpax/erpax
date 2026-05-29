@@ -2325,10 +2325,6 @@ src/standards/saf-t/types.ts:63: * @standard OECD SAF-T 2.0 AmountStructure
 src/standards/saf-t/types.ts:79: * @standard OECD SAF-T 2.0 TaxInformationStructure
 src/standards/saf-t/validate.ts:4: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/standards/saf-t/validate.ts:53: * @standard OECD SAF-T 2.0 GeneralLedgerEntries
-src/standards/templates/templates.test.ts:10: * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation
-src/standards/templates/templates.test.ts:11: * @standard ISO-3166-1:2020 country-codes alpha-2
-src/standards/templates/templates.test.ts:12: * @standard ISO-4217:2015 currency-codes
-src/standards/templates/templates.test.ts:9: * @standard ISO/IEC-29119:2022 software-testing
 src/standards/un-cefact-5305/index.ts:14: * @standard UN/CEFACT Trade Data Element 5305 duty-tax-fee-category-code
 src/standards/un-cefact-5305/index.ts:15: * @standard EN-16931:2017 BT-151 vat-category-code (subset that EN-16931 admits)
 src/standards/un-edifact/index.ts:4: * @standard UN-EDIFACT D.96A
@@ -4125,8 +4121,6 @@ src/standards/iso-3166-1/countries/bg.ts:27: * @accounting IFRS IAS-1 presentati
 src/standards/iso-3166-1/countries/eu-fallback-rates.test.ts:13: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/standards/saf-t/types.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/standards/saf-t/types.ts:17: * @accounting US-GAAP ASC-205 presentation
-src/standards/templates/templates.test.ts:13: * @accounting IFRS IAS-1 §54 minimum-line-items
-src/standards/templates/templates.test.ts:14: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/types/bank-reconciliation.ts:161: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:239: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/types/bank-reconciliation.ts:240: * @accounting US-GAAP ASC-310 receivables returned-checks
@@ -5272,7 +5266,6 @@ src/standards/peppol-bis-3/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
 src/standards/peppol-bis-3/types.ts:13: * @audit ISO-19011:2018 audit-trail
 src/standards/saf-t/types.test.ts:10: * @audit ISO-19011:2018 audit-trail
 src/standards/saf-t/types.ts:18: * @audit ISO-19011:2018 audit-trail tax-authority-audit-file
-src/standards/templates/templates.test.ts:15: * @audit ISO-19011:2018 audit-trail seed-evidence
 src/standards/un-edifact/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
 src/standards/un-edifact/types.ts:11: * @audit ISO-19011:2018 audit-trail
 src/testing/config-discovery.ts:10: * @audit ISO-19011:2018 audit-trail config-discovery
