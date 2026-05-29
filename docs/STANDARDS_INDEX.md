@@ -669,9 +669,9 @@ src/collections/Users/access/read.ts:16: * @standard NIST INCITS-359-2012 role-b
 src/collections/Users/access/updateAndDelete.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/collections/Users/endpoints/externalUsersLogin.ts:21: * @standard OWASP-ASVS V2.2 authentication-throttling
 src/collections/Users/hooks/ensureUniqueUsername.ts:25: * @standard W3C HTML5 input-validation client-side
-src/collections/Users/index.ts:214:     * @standard BCP-47 language-tag user-locale-preference
-src/collections/Users/index.ts:215:     * @standard ECMA-402 internationalization-api
-src/collections/Users/index.ts:54: * @standard BCP-47 language-tag user-locale
+src/collections/Users/index.ts:213:     * @standard BCP-47 language-tag user-locale-preference
+src/collections/Users/index.ts:214:     * @standard ECMA-402 internationalization-api
+src/collections/Users/index.ts:53: * @standard BCP-47 language-tag user-locale
 src/collections/VendorQuotes.ts:10: * @standard ISO-8601-1:2019 date-time
 src/collections/VendorQuotes.ts:11: * @standard ISO-4217:2015 currency-codes
 src/collections/VendorQuotes.ts:14: * @standard ISO 9001:2015 §8.4 control-of-externally-provided-processes
@@ -1111,17 +1111,17 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1160:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1178:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1179:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1198:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1165:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1183:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1184:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1203:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
-src/plugins/auth/access/predicates.ts:123: * @standard NIST INCITS-359-2012 role-based-access-control
-src/plugins/auth/access/predicates.ts:48: * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
+src/plugins/auth/access/predicates.ts:111: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/auth/access/predicates.ts:36: * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
+src/plugins/auth/access/predicates.ts:79: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/predicates.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
-src/plugins/auth/access/predicates.ts:91: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/naming.ts:28: * @standard RFC 4122 §4.3 name-based UUID (the digest source)
 src/plugins/taggable.ts:23: * @standard RFC-4122 §4.3 uuid
 src/sdk/accounting-client.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -1741,7 +1741,7 @@ src/services/receivables/analytics.service.ts:8: * @standard ISO-8601-1:2019 dat
 src/services/receivables/workflow.service.ts:6: * @standard EN-16931:2017 invoice-lifecycle
 src/services/saf-t-export.service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/services/saf-t-export.service.test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
-src/services/saf-t-export.service.ts:1277: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/services/saf-t-export.service.ts:1257: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:30: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:31: * @standard ISO-3166-1:2020 country-codes
 src/services/saf-t-export.service.ts:32: * @standard ISO-4217:2015 currency-codes
@@ -2716,9 +2716,9 @@ src/collections/Users/endpoints/externalUsersLogin.ts:20: * @rfc 6585 §4 too-ma
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:20: * @rfc 6265 http-state-management cookies
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:21: * @rfc 6265bis cookie-domain-attribute
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:22: * @rfc 9110 http-semantics host-header
-src/collections/Users/index.ts:51: * @rfc 5322 internet-message-format email
-src/collections/Users/index.ts:52: * @rfc 5321 smtp envelope
-src/collections/Users/index.ts:53: * @rfc 6532 internationalized-email-addresses
+src/collections/Users/index.ts:50: * @rfc 5322 internet-message-format email
+src/collections/Users/index.ts:51: * @rfc 5321 smtp envelope
+src/collections/Users/index.ts:52: * @rfc 6532 internationalized-email-addresses
 src/collections/shared/documentPreviewAdmin.ts:14: * @rfc 3986 uri preview-url-construction
 src/components/Card/index.tsx:8: * @rfc 3986 uniform-resource-identifier
 src/components/Link/index.tsx:6: * @rfc 3986 uniform-resource-identifier
@@ -3195,10 +3195,10 @@ src/collections/Users/access/updateAndDelete.ts:15: * @compliance SOC-2 CC6.3 ac
 src/collections/Users/endpoints/externalUsersLogin.ts:25: * @compliance GDPR Art.32 security-of-processing
 src/collections/Users/endpoints/externalUsersLogin.ts:26: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:25: * @compliance SOC-2 CC6.1 logical-access-controls
-src/collections/Users/index.ts:216:     * @compliance GDPR Art.12 transparent-information user-language-of-choice
-src/collections/Users/index.ts:58: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
-src/collections/Users/index.ts:59: * @compliance GDPR Art.32 security-of-processing
-src/collections/Users/index.ts:60: * @compliance SOC-2 CC6.1 logical-access-controls
+src/collections/Users/index.ts:215:     * @compliance GDPR Art.12 transparent-information user-language-of-choice
+src/collections/Users/index.ts:57: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
+src/collections/Users/index.ts:58: * @compliance GDPR Art.32 security-of-processing
+src/collections/Users/index.ts:59: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/VendorQuotes.ts:12: * @compliance OECD BEPS Action 13 transfer-pricing-evidence
 src/collections/VendorQuotes.ts:13: * @compliance SOX §404 internal-controls vendor-selection
 src/collections/VendorScorecards.ts:13: * @compliance SOX §404 internal-controls vendor-management
@@ -3349,10 +3349,10 @@ src/plugins/auth/access/field-access.ts:13: * @compliance SOC-2 CC6.1 logical-ac
 src/plugins/auth/access/field-access.ts:41: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/plugins/auth/access/field-access.ts:69: * @compliance SOC-2 CC7.2 system-monitoring
 src/plugins/auth/access/index.ts:16: * @compliance SOC-2 CC6.1 logical-access-controls
-src/plugins/auth/access/predicates.ts:126: * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
-src/plugins/auth/access/predicates.ts:50: * @compliance SOC-2 CC6.3 privileged-access-management
-src/plugins/auth/access/predicates.ts:95: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
-src/plugins/auth/access/predicates.ts:96: * @compliance SOC-2 CC6.1 logical-access-controls
+src/plugins/auth/access/predicates.ts:114: * @compliance SOC-2 CC6.2 prior-to-issuing-system-access
+src/plugins/auth/access/predicates.ts:38: * @compliance SOC-2 CC6.3 privileged-access-management
+src/plugins/auth/access/predicates.ts:83: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
+src/plugins/auth/access/predicates.ts:84: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/accounting/debit-credit.ts:15: * @compliance SOX §404 internal-controls
 src/services/accounting/reports.service.ts:27: * @compliance SOX §302 disclosure-controls
 src/services/accounting/seeds/templates/bg-nss.ts:20: * @compliance EU 2014/55 b2g-e-invoicing-mandate
@@ -3987,9 +3987,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1158:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1159:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1180:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1163:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1164:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1185:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4518,10 +4518,10 @@ src/collections/Users/hooks/ensureUniqueUsername.ts:23: * @security ISO-27001 A.
 src/collections/Users/hooks/ensureUniqueUsername.ts:24: * @security ISO-27002 §5.16 identity-management
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:23: * @security ISO-27001 A.5.17 authentication-information
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:24: * @security ISO-27002 §8.5 secure-authentication
-src/collections/Users/index.ts:217:     * @security ISO-27002 §5.15 access-control per-user-feature-flags
-src/collections/Users/index.ts:55: * @security ISO-27001 A.5.16 identity-management
-src/collections/Users/index.ts:56: * @security ISO-27001 A.5.17 authentication-information
-src/collections/Users/index.ts:57: * @security ISO-27002 §8.5 secure-authentication
+src/collections/Users/index.ts:216:     * @security ISO-27002 §5.15 access-control per-user-feature-flags
+src/collections/Users/index.ts:54: * @security ISO-27001 A.5.16 identity-management
+src/collections/Users/index.ts:55: * @security ISO-27001 A.5.17 authentication-information
+src/collections/Users/index.ts:56: * @security ISO-27002 §8.5 secure-authentication
 src/collections/VendorQuotes.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/VendorScorecards.ts:14: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/VendorScorecards.ts:15: * @security ISO-27001 A.5.19 information-security-supplier-relationships
@@ -4607,18 +4607,18 @@ src/plugins/auth/access/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-
 src/plugins/auth/access/index.ts:14: * @security ISO-27002 § 5.15 access-control
 src/plugins/auth/access/index.ts:15: * @security ISO-27002 § 5.4 segregation-of-duties
 src/plugins/auth/access/predicates.ts:10: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:112: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:113: * @security ISO-27002 § 5.18 access-rights
 src/plugins/auth/access/predicates.ts:11: * @security ISO-27002 § 5.18 access-rights
-src/plugins/auth/access/predicates.ts:124: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:125: * @security ISO-27002 § 5.18 access-rights
 src/plugins/auth/access/predicates.ts:12: * @security ISO-27002 § 8.2 privileged-access-rights
-src/plugins/auth/access/predicates.ts:49: * @security ISO-27002 § 8.2 privileged-access-rights
-src/plugins/auth/access/predicates.ts:70: * @security ISO-27001 A.5.16 identity-management
-src/plugins/auth/access/predicates.ts:71: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:72: * @security ISO-27002 § 8.5 secure-authentication
+src/plugins/auth/access/predicates.ts:37: * @security ISO-27002 § 8.2 privileged-access-rights
+src/plugins/auth/access/predicates.ts:58: * @security ISO-27001 A.5.16 identity-management
+src/plugins/auth/access/predicates.ts:59: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:60: * @security ISO-27002 § 8.5 secure-authentication
+src/plugins/auth/access/predicates.ts:80: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/plugins/auth/access/predicates.ts:81: * @security ISO-27002 § 5.15 access-control
+src/plugins/auth/access/predicates.ts:82: * @security ISO-27002 § 8.3 information-access-restriction
 src/plugins/auth/access/predicates.ts:8: * @security ISO-27001 A.5.18 access-rights
-src/plugins/auth/access/predicates.ts:92: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/plugins/auth/access/predicates.ts:93: * @security ISO-27002 § 5.15 access-control
-src/plugins/auth/access/predicates.ts:94: * @security ISO-27002 § 8.3 information-access-restriction
 src/plugins/auth/access/predicates.ts:9: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/auth/context/tenant-context.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/plugins/auth/context/tenant-context.ts:7: * @security ISO-27002 § 5.15 access-control
@@ -4924,7 +4924,7 @@ src/collections/UserRoles/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/collections/Users/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Users/endpoints/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Users/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/Users/index.ts:218:     * @audit ISO-19011:2018 audit-trail user-config-change
+src/collections/Users/index.ts:217:     * @audit ISO-19011:2018 audit-trail user-config-change
 src/collections/VendorQuotes.ts:15: * @audit ISO-19011:2018 audit-trail rfq-evidence
 src/collections/VendorScorecards.ts:12: * @audit ISO-19011:2018 audit-trail vendor-evaluation
 src/collections/WarehouseLocations.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
@@ -5038,9 +5038,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1161:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1181:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1199:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1166:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1186:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1204:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant

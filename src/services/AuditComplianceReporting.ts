@@ -197,8 +197,8 @@ export class AuditComplianceReporting {
   static generateRegulatoryFiling(
     jurisdiction: string,
     filingType: 'annual-return' | 'estimated-payment' | 'amended-return',
-    taxPeriodData: Record<string, unknown>,
-    transferPricingAdjustments: Array<any>,
+    _taxPeriodData: Record<string, unknown>,
+    _transferPricingAdjustments: Array<any>,
   ): RegulatoryFilingMetadata {
     // Jurisdiction-specific filing format mapping
     const filingFormats: Record<string, Record<string, string>> = {
@@ -219,7 +219,7 @@ export class AuditComplianceReporting {
       },
     }
 
-    const filingFormat = filingFormats[jurisdiction]?.[filingType] || `Generic Filing for ${jurisdiction}`
+    const _filingFormat = filingFormats[jurisdiction]?.[filingType] || `Generic Filing for ${jurisdiction}`
 
     const taxYear = new Date().getFullYear()
     const deadlineMap: Record<string, string> = {
@@ -296,7 +296,7 @@ export class AuditComplianceReporting {
   static generateTransferPricingDocumentationPackage(
     transferPricingAdjustments: Array<any>,
     groupStructureData: Record<string, unknown>,
-    masterFilePath: string,
+    _masterFilePath: string,
   ): TransferPricingDocumentationPackage {
     // Group TP adjustments by entity and transaction type
     const adjustmentsByEntity: Record<string, Array<any>> = {}
@@ -333,7 +333,7 @@ export class AuditComplianceReporting {
         serviceTransactions: 'Group service management and allocation',
       },
       localFiles,
-      contemporaneousDocumentation: transferPricingAdjustments.map((adj, idx) => ({
+      contemporaneousDocumentation: transferPricingAdjustments.map((adj, _idx) => ({
         adjustmentId: adj.id,
         documentationType: adj.methodUsed,
         filePath: adj.supportingDocumentation,
@@ -346,7 +346,7 @@ export class AuditComplianceReporting {
   /**
    * Private helper: Build master file GL accounts structure (SAF-T 3.0.2).
    */
-  private static buildMasterFileGL(consolidationData: Record<string, unknown>): Array<any> {
+  private static buildMasterFileGL(_consolidationData: Record<string, unknown>): Array<any> {
     // Simplified: extract GL accounts from consolidation data
     return [
       {
@@ -380,7 +380,7 @@ export class AuditComplianceReporting {
   /**
    * Private helper: Build tax table for SAF-T 3.0.2.
    */
-  private static buildTaxTable(taxPeriodData: Record<string, unknown>): Array<any> {
+  private static buildTaxTable(_taxPeriodData: Record<string, unknown>): Array<any> {
     return [
       {
         TaxType: 'VAT',

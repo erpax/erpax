@@ -93,7 +93,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
     'year-end': 'monthly',
     'interim': 'quarterly',
   }
-  const periodType = periodTypeMap[data.closingType || 'monthly'] || 'monthly'
+  const _periodType = periodTypeMap[data.closingType || 'monthly'] || 'monthly'
 
   // Validate next period is open for reversals
   // For now, we defer this check to the next period's PeriodLock status

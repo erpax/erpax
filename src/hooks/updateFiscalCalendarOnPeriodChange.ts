@@ -123,7 +123,7 @@ export const updateFiscalCalendarOnPeriodChange: CollectionBeforeChangeHook<Fisc
   }
 
   // Prepare user context for audit trail
-  const userId = req.user?.id || 'system'
+  const _userId = req.user?.id || 'system'
   const userName = getUser(req)?.email || 'system'
 
   // Update notes with amendment context if this is an update

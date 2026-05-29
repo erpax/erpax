@@ -507,7 +507,7 @@ export class FiscalPeriodResolver {
     daysIntoFiscalYear: number,
     fiscalYear: number,
     config: FiscalPeriodConfig,
-    date: Date,
+    _date: Date,
   ): {
     fiscalPeriod: number
     periodLabel: string

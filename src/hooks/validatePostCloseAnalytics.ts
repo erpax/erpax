@@ -59,7 +59,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Query audit report (if linked)
-  let auditReportData: any = null
+  let _auditReportData: any = null
 
   if (data.auditReportId) {
     const auditReportRef =
@@ -75,7 +75,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
 
       if (auditQuery.docs.length > 0) {
         const auditReport = auditQuery.docs[0] as any
-        auditReportData = auditReport
+        _auditReportData = auditReport
 
         // Verify audit report is complete
         if (auditReport.auditStatus !== 'approved') {

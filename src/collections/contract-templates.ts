@@ -111,7 +111,7 @@ import { autoPopulateCreatedBy } from '../hooks/autoPopulateCreatedBy'
 import { auditTrailAfterChange } from '../hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '../hooks/enforceSegregationOfDuties'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '../access/auth'
-import { currencyField, auditFields } from '../fields/base-accounting-fields'
+import { auditFields } from '../fields/base-accounting-fields'
 
 const TEMPLATE_CATEGORIES = [
   { label: 'SaaS License Agreement', value: 'saas' },

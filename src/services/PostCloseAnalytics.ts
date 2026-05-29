@@ -275,11 +275,11 @@ export class PostCloseAnalytics {
     const operatingProfit = gl.operatingProfit || 40000
     const netIncome = gl.netIncome || 30000
     const cost = gl.costOfRevenue || 100000
-    const operatingExpense = gl.operatingExpense || 60000
+    const _operatingExpense = gl.operatingExpense || 60000
     const interestExpense = gl.interestExpense || 5000
     const debt = totalLiabilities
 
-    const priorRevenue = prior?.revenue || 190000
+    const _priorRevenue = prior?.revenue || 190000
     const priorNetIncome = prior?.netIncome || 28000
 
     // Calculate ratios
@@ -435,8 +435,8 @@ export class PostCloseAnalytics {
     consolidationData: Record<string, unknown>,
     priorPeriodSegments?: Record<string, unknown>,
   ): SegmentReportingAnalysis {
-    const group = consolidationData as any
-    const prior = (priorPeriodSegments as any) || {}
+    const _group = consolidationData as any
+    const _prior = (priorPeriodSegments as any) || {}
 
     // Simplified: assume business segments and geographic segments in consolidation data
     const businessSegments: SegmentResult[] = [

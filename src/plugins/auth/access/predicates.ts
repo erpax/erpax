@@ -28,18 +28,6 @@ const userIsSuperAdmin = (user: unknown): boolean => {
 }
 
 /**
- * Helper: Check if user has admin role.
- *
- * @param user Request user object
- * @returns true if user has 'admin' role
- */
-const userIsAdmin = (user: unknown): boolean => {
-  if (!user || typeof user !== 'object') return false
-  const roles = (user as any).roles
-  return Array.isArray(roles) && roles.includes('admin')
-}
-
-/**
  * Super-admin access predicate.
  *
  * Only users with 'super-admin' role can access. Used for system-critical

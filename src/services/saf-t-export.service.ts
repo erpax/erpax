@@ -339,26 +339,6 @@ export const buildMasterFiles = async (
 
 // ─── 3. GeneralLedgerEntries ──────────────────────────────────────────
 
-interface JournalEntryDoc {
-  id: string | number
-  entryNumber?: string
-  entryDate?: string | Date
-  description?: string
-  status?: string
-  sourceType?: string
-  sourceId?: string
-  createdAt?: string | Date
-  postedAt?: string | Date
-  lines?: Array<{
-    accountId?: string
-    debit?: number
-    credit?: number
-    description?: string
-    customerId?: string
-    supplierId?: string
-  }>
-}
-
 const journalIdFor = (sourceType: string | undefined): string => {
   switch (sourceType) {
     case 'invoice':

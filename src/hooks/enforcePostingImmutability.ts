@@ -9,7 +9,6 @@
  */
 
 import { CollectionBeforeChangeHook } from 'payload'
-import { PostingImmutabilityEnforcer } from '../services/PostingImmutabilityEnforcer'
 import { getUser } from '@/access/auth'
 
 export const enforcePostingImmutability: CollectionBeforeChangeHook = async ({

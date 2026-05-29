@@ -36,6 +36,6 @@ export const auditTrailCreate: Access<'create'> = ({ req }) => {
  * Audit trail update/delete access — NEVER allowed.
  * Enforced by beforeChange hook, but this provides additional safety.
  */
-export const auditTrailModifyDenied: Access = ({ req }) => {
+export const auditTrailModifyDenied: Access = ({ _req }) => {
   return false
 }
