@@ -56,7 +56,7 @@ export const isPayloadUser = (user: unknown): user is {
   return (
     u.tenants.every((t) =>
       typeof t === 'object' && t !== null &&
-      (('tenant' in t && typeof (t as any).tenant === 'string') || !('tenant' in t))
+      (('tenant' in t && typeof (t as Record<string, unknown>).tenant === 'string') || !('tenant' in t))
     ) &&
     u.roles.every((r) => typeof r === 'string')
   )

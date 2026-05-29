@@ -23,7 +23,7 @@ import type { FieldAccess } from 'payload'
  */
 const userIsSuperAdmin = (user: unknown): boolean => {
   if (!user || typeof user !== 'object') return false
-  const roles = (user as any).roles
+  const roles = (user as Record<string, unknown>).roles
   return Array.isArray(roles) && roles.includes('super-admin')
 }
 

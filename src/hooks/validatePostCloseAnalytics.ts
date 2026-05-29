@@ -26,6 +26,120 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { PostCloseAnalytics } from '../services/PostCloseAnalytics'
+import type { AuditReport, Consolidation } from '../payload-types'
+
+// Import report types from PostCloseAnalytics service
+interface VarianceAnalysisReport {
+  reportPeriod: string
+  analysisDate: string
+  budgetVsActual: Array<{
+    lineItem: string
+    budgetedAmount: number
+    actualAmount: number
+    variance: number
+    variancePercent: number
+  }>
+  periodOverPeriodComparison: Array<{
+    lineItem: string
+    budgetedAmount: number
+    actualAmount: number
+    variance: number
+    variancePercent: number
+    trend?: 'improving' | 'deteriorating' | 'stable'
+  }>
+  keyVarianceThreshold: number
+  totalBudgetedRevenue: number
+  totalActualRevenue: number
+  totalVariance: number
+  totalVariancePercent: number
+  waterfall?: {
+    budgetBase: number
+    volumeVariance: number
+    priceVariance: number
+    mixVariance: number
+    actualResult: number
+  }
+}
+
+interface RatioAnalysisReport {
+  reportDate: string
+  analysisDate: string
+  liquidityRatios: Record<string, { ratioName: string; ratioValue: number; benchmark?: number; assessment: string }>
+  profitabilityRatios: Record<string, { ratioName: string; ratioValue: number; benchmark?: number; assessment: string }>
+  solvencyRatios: Record<string, { ratioName: string; ratioValue: number; benchmark?: number; assessment: string }>
+  efficiencyRatios: Record<string, { ratioName: string; ratioValue: number; benchmark?: number; assessment: string }>
+  overallAssessment?: string
+}
+
+interface SegmentReportingAnalysis {
+  reportPeriod: string
+  analysisDate: string
+  businessSegments: Array<{
+    segmentId: string
+    segmentName: string
+    segmentType: 'business' | 'geographic'
+    revenue: number
+    operatingExpense: number
+    operatingProfit: number
+    operatingMargin: number
+    assets: number
+    liabilities: number
+    equity: number
+    priorPeriodRevenue?: number
+    trend?: 'growing' | 'declining' | 'stable'
+  }>
+  geographicSegments: Array<{
+    segmentId: string
+    segmentName: string
+    segmentType: 'business' | 'geographic'
+    revenue: number
+    operatingExpense: number
+    operatingProfit: number
+    operatingMargin: number
+    assets: number
+    liabilities: number
+    equity: number
+    priorPeriodRevenue?: number
+    trend?: 'growing' | 'declining' | 'stable'
+  }>
+  totalGroupRevenue: number
+  totalGroupProfit: number
+  segmentConcertation?: {
+    topSegmentShare: number
+    topThreeShare: number
+    herfindahlIndex: number
+  }
+}
+
+interface ManagementReportingSummary {
+  reportingPeriod: string
+  generatedDate: string
+  executiveSummary: string
+  kpis: Array<{
+    metricName: string
+    currentValue: number
+    targetValue: number
+    benchmark?: number
+    unit: string
+    assessment: 'on-track' | 'at-risk' | 'off-track' | 'strong' | 'adequate' | 'weak'
+    trend: 'improving' | 'stable' | 'deteriorating'
+    variance: number
+    variancePercent: number
+  }>
+  performanceScorecard?: {
+    financialHealth: number
+    operationalEfficiency: number
+    growthTrajectory: number
+    riskProfile: number
+  }
+  alerts?: Array<{
+    severity: 'warning' | 'critical'
+    metric: string
+    message: string
+    recommendation: string
+  }>
+  notes?: string
+}
 
 interface AnalyticsReportData {
   id?: string
@@ -35,10 +149,10 @@ interface AnalyticsReportData {
   consolidationId?: string | { id: string }
   reportType?: 'variance' | 'ratio' | 'segment' | 'comprehensive'
   analysisStatus?: string
-  varianceAnalysisReport?: Record<string, unknown>
-  ratioAnalysisReport?: Record<string, unknown>
-  segmentAnalysisReport?: Record<string, unknown>
-  managementReportingSummary?: Record<string, unknown>
+  varianceAnalysisReport?: VarianceAnalysisReport
+  ratioAnalysisReport?: RatioAnalysisReport
+  segmentAnalysisReport?: SegmentReportingAnalysis
+  managementReportingSummary?: ManagementReportingSummary
   executiveSummaryText?: string
   validationStatus?: string
   chainLeafUuid?: string
@@ -59,7 +173,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Query audit report (if linked)
-  let _auditReportData: any = null
+  let _auditReportData: AuditReport | null = null
 
   if (data.auditReportId) {
     const auditReportRef =
@@ -74,7 +188,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
       })
 
       if (auditQuery.docs.length > 0) {
-        const auditReport = auditQuery.docs[0] as any
+        const auditReport = auditQuery.docs[0] as AuditReport
         _auditReportData = auditReport
 
         // Verify audit report is complete
@@ -93,7 +207,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Query consolidation (if linked)
-  let consolidationData: any = null
+  let consolidationData: Consolidation | null = null
 
   if (data.consolidationId) {
     const consolidationRef =
@@ -110,7 +224,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
       })
 
       if (consolidationQuery.docs.length > 0) {
-        const consolidation = consolidationQuery.docs[0] as any
+        const consolidation = consolidationQuery.docs[0] as Consolidation
         consolidationData = consolidation
 
         // Verify consolidation is complete
@@ -129,7 +243,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Query fiscal periods for budget data (if available)
-  const budgetData: any = null
+  const budgetData: Record<string, unknown> | null = null
 
   try {
     const fiscalPeriodsQuery = await payload.find({
@@ -149,13 +263,13 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Generate variance analysis (if requested)
-  let varianceAnalysisReport: any = null
+  let varianceAnalysisReport: VarianceAnalysisReport | null = null
 
   if (data.reportType === 'variance' || data.reportType === 'comprehensive') {
     try {
       varianceAnalysisReport = PostCloseAnalytics.generateVarianceAnalysis(
-        consolidationData || {},
-        budgetData || consolidationData || {},
+        (consolidationData as Record<string, unknown>) || {},
+        budgetData || (consolidationData as Record<string, unknown>) || {},
         null, // Prior period data would be queried from prior-year consolidation
         10, // Default 10% variance threshold
       )
@@ -170,12 +284,12 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Generate ratio analysis (if requested)
-  let ratioAnalysisReport: any = null
+  let ratioAnalysisReport: RatioAnalysisReport | null = null
 
   if (data.reportType === 'ratio' || data.reportType === 'comprehensive') {
     try {
       ratioAnalysisReport = PostCloseAnalytics.generateRatioAnalysis(
-        consolidationData || {},
+        (consolidationData as Record<string, unknown>) || {},
         null, // Prior period data optional
       )
 
@@ -189,12 +303,12 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   }
 
   // Generate segment reporting (if requested)
-  let segmentAnalysisReport: any = null
+  let segmentAnalysisReport: SegmentReportingAnalysis | null = null
 
   if (data.reportType === 'segment' || data.reportType === 'comprehensive') {
     try {
       segmentAnalysisReport = PostCloseAnalytics.generateSegmentReporting(
-        consolidationData || {},
+        (consolidationData as Record<string, unknown>) || {},
         null, // Prior period data optional
       )
 

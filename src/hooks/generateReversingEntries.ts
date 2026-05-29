@@ -25,6 +25,15 @@
 import type { CollectionAfterChangeHook, RequiredDataFromCollectionSlug } from 'payload'
 import { ClosingPeriodChecker } from '../services/ClosingPeriodChecker'
 
+interface ClosingEntryItem {
+  journalEntryId?: string | { id: string }
+  sequenceNumber?: number
+  accountsClosed?: string
+  netAmount?: number
+  postedDate?: string
+  reversingEntryId?: string | { id: string }
+}
+
 interface ClosingEntryData {
   id: string
   entity?: string | { id: string }
@@ -34,15 +43,17 @@ interface ClosingEntryData {
   closingStatus?: string
   reversalEntriesGenerated?: boolean
   reversalGeneratedDate?: string
-  closingEntries?: Array<{
-    journalEntryId?: string | { id: string }
-    sequenceNumber?: number
-    accountsClosed?: string
-    netAmount?: number
-    postedDate?: string
-    reversingEntryId?: string | { id: string }
-  }>
+  closingEntries?: ClosingEntryItem[]
   closingDate?: string
+}
+
+interface PeriodLock {
+  id: string
+  entity: string
+  fiscalYear: number
+  fiscalPeriod: number
+  lockStatus: string
+  [key: string]: unknown
 }
 
 /**
@@ -113,7 +124,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
     })
 
     if (nextPeriodLockQuery.docs.length > 0) {
-      const nextPeriodLock = nextPeriodLockQuery.docs[0] as any
+      const nextPeriodLock = nextPeriodLockQuery.docs[0] as PeriodLock
       const nextPeriodCheck = ClosingPeriodChecker.checkNextPeriodOpenForReversals(
         nextPeriodLock.lockStatus || 'open',
       )
@@ -206,7 +217,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
       data: {
         reversalEntriesGenerated: true,
         reversalGeneratedDate: new Date().toISOString().split('T')[0], // YYYY-MM-DD
-        closingEntries: data.closingEntries.map((entry: any, index: number) => ({
+        closingEntries: data.closingEntries.map((entry: ClosingEntryItem, index: number) => ({
           ...entry,
           reversingEntryId: reversalJournalEntryIds[index] || entry.reversingEntryId,
         })),

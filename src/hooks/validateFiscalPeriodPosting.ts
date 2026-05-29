@@ -29,11 +29,26 @@
 import { CollectionBeforeValidateHook } from 'payload'
 import { getUserContext } from '@/access/auth'
 
+interface GLPostingLine {
+  id?: string
+  glAccount?: string | { id: string }
+  debitAmount?: number
+  creditAmount?: number
+  [key: string]: unknown
+}
+
+interface JournalEntryRef {
+  id: string
+  entryDate?: string
+  postings?: GLPostingLine[]
+  [key: string]: unknown
+}
+
 interface GLPostingsData {
   id: string
   entity?: string | { id: string }
   postingDate?: string
-  journalEntry?: string | { id: string; entryDate?: string; postings?: any[] }
+  journalEntry?: string | JournalEntryRef
   debitAmount?: number
   creditAmount?: number
   glAccount?: string | { id: string; accountType?: string }

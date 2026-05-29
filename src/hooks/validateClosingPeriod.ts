@@ -21,6 +21,20 @@
 import { CollectionBeforeValidateHook } from 'payload'
 import { ClosingPeriodChecker } from '../services/ClosingPeriodChecker'
 
+interface ClosingEntryRecord {
+  id: string
+  entity?: string | { id: string }
+  fiscalYear: number
+  fiscalPeriodNumber: number
+  closingType?: string
+  periodLabel?: string
+  regulatoryCode?: string
+  fiscalPeriod?: string | { id: string; periodType?: string }
+  closingStatus?: string
+  chainLeafUuid?: string
+  [key: string]: unknown
+}
+
 interface ClosingEntryData {
   id: string
   entity?: string | { id: string }
@@ -87,7 +101,7 @@ export const validateClosingPeriod: CollectionBeforeValidateHook<ClosingEntryDat
       })
 
       existingClosings = closingRecords.docs.map(
-        (doc: any) => `${doc.fiscalYear}-P${String(doc.fiscalPeriodNumber).padStart(2, '0')}`,
+        (doc: ClosingEntryRecord) => `${doc.fiscalYear}-P${String(doc.fiscalPeriodNumber).padStart(2, '0')}`,
       )
     }
   } catch (err) {

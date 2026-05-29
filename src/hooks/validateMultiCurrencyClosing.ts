@@ -28,6 +28,21 @@
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { CurrencyReconciliation } from '../services/CurrencyReconciliation'
 
+interface LegalEntity {
+  id: string
+  currencyCode: string
+  [key: string]: unknown
+}
+
+interface CurrencyRate {
+  id: string
+  transactionCurrency: string
+  reportingCurrency: string
+  effectiveDate: string
+  rate: number
+  [key: string]: unknown
+}
+
 interface ClosingEntryWithCurrency {
   sequenceNumber?: number
   journalEntryId?: string | { id: string }
@@ -108,7 +123,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
         collection: 'legal-entities',
         id: entityId,
       })
-      reportingCurrency = (entity as any).currencyCode || 'DEFAULT'
+      reportingCurrency = (entity as LegalEntity).currencyCode || 'DEFAULT'
     }
   } catch (err) {
     console.warn('[validateMultiCurrencyClosing] Failed to query entity currency:', err)
@@ -139,7 +154,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
       })
 
       if (rateQuery.docs.length > 0) {
-        exchangeRates[currency] = (rateQuery.docs[0] as any).rate || 1.0
+        exchangeRates[currency] = (rateQuery.docs[0] as CurrencyRate).rate || 1.0
       } else {
         console.warn(
           `[validateMultiCurrencyClosing] No exchange rate found for ${currency} → ${reportingCurrency} at ${data.closingDate}`,

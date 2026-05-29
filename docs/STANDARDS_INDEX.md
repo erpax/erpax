@@ -1123,7 +1123,7 @@ src/plugins/auth/access/predicates.ts:36: * @standard NIST INCITS-359-2012 role-
 src/plugins/auth/access/predicates.ts:79: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/predicates.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/naming.ts:28: * @standard RFC 4122 §4.3 name-based UUID (the digest source)
-src/plugins/taggable.ts:23: * @standard RFC-4122 §4.3 uuid
+src/plugins/taggable.ts:21: * @standard RFC-4122 §4.3 uuid
 src/sdk/accounting-client.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/services/AuditComplianceReporting.ts:15: * @standard SAF-T:3.0.2 Standard Audit File (Tax)
 src/services/AuditComplianceReporting.ts:16: * @standard OECD Transfer Pricing Guidelines:2022 Documentation Section
@@ -1865,7 +1865,7 @@ src/services/storage-redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.
 src/services/streams/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/services/streams/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
-src/services/tags/taggedWith.ts:16: * @standard ISO-25964-1:2011 thesauri retrieval
+src/services/tags/taggedWith.ts:18: * @standard ISO-25964-1:2011 thesauri retrieval
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
 src/services/tax-automation.service.ts:19: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction

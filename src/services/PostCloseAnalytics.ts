@@ -195,9 +195,9 @@ export class PostCloseAnalytics {
     let totalVariance = 0
 
     // Simplified: analyze revenue line item (would be extended to all GL accounts)
-    const budgetRevenue = (budgetData as any)?.revenue || 0
-    const actualRevenue = (currentPeriodData as any)?.revenue || 0
-    const priorRevenue = (priorPeriodData as any)?.revenue || 0
+    const budgetRevenue = (budgetData as Record<string, unknown>)?.revenue as number || 0
+    const actualRevenue = (currentPeriodData as Record<string, unknown>)?.revenue as number || 0
+    const priorRevenue = (priorPeriodData as Record<string, unknown>)?.revenue as number || 0
 
     totalBudgetedRevenue = budgetRevenue
     totalActualRevenue = actualRevenue
@@ -257,8 +257,8 @@ export class PostCloseAnalytics {
     consolidatedGLData: Record<string, unknown>,
     priorPeriodData?: Record<string, unknown>,
   ): RatioAnalysisReport {
-    const gl = consolidatedGLData as any
-    const prior = (priorPeriodData as any) || {}
+    const gl = consolidatedGLData as Record<string, unknown>
+    const prior = (priorPeriodData as Record<string, unknown>) || {}
 
     // Extract balance sheet and income statement values (simplified)
     const currentAssets = gl.currentAssets || 100000
@@ -435,8 +435,8 @@ export class PostCloseAnalytics {
     consolidationData: Record<string, unknown>,
     priorPeriodSegments?: Record<string, unknown>,
   ): SegmentReportingAnalysis {
-    const _group = consolidationData as any
-    const _prior = (priorPeriodSegments as any) || {}
+    const _group = consolidationData as Record<string, unknown>
+    const _prior = (priorPeriodSegments as Record<string, unknown>) || {}
 
     // Simplified: assume business segments and geographic segments in consolidation data
     const businessSegments: SegmentResult[] = [

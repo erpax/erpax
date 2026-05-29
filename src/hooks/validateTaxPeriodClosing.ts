@@ -28,6 +28,26 @@
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { TaxPeriodReconciliation } from '../services/TaxPeriodReconciliation'
 
+interface FiscalPeriodRecord {
+  id: string
+  periodEndDate: string
+  [key: string]: unknown
+}
+
+interface TransferPricingAdjustmentRecord {
+  fromEntity: string
+  toEntity: string
+  jurisdiction: string
+  transactionType: string
+  originalAmount: number
+  adjustedAmount: number
+  adjustmentReason: string
+  methodUsed: string
+  supportingDocumentation?: string
+  adjustmentDate: string
+  [key: string]: unknown
+}
+
 interface TaxPeriodData {
   id?: string
   taxPeriodName: string
@@ -35,7 +55,7 @@ interface TaxPeriodData {
   taxPeriodEndDate: string
   fiscalPeriodId?: string | { id: string }
   taxStatus?: string
-  transferPricingAdjustments?: Array<any>
+  transferPricingAdjustments?: TransferPricingAdjustmentRecord[]
   jurisdictionStatuses?: Array<{
     jurisdiction: string
     taxStatus: string
@@ -74,7 +94,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
       })
 
       if (fiscalQuery.docs.length > 0) {
-        const fiscal = fiscalQuery.docs[0] as any
+        const fiscal = fiscalQuery.docs[0] as FiscalPeriodRecord
         fiscalPeriodEndDate = fiscal.periodEndDate
       }
     } catch (err) {
@@ -93,7 +113,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   }
 
   // Query transfer pricing adjustments for this tax period + jurisdiction
-  const transferPricingAdjustments: any[] = []
+  const transferPricingAdjustments: TransferPricingAdjustmentRecord[] = []
 
   try {
     const tpQuery = await payload.find({
@@ -109,7 +129,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
     })
 
     for (const tp of tpQuery.docs) {
-      const doc = tp as any
+      const doc = tp as TransferPricingAdjustmentRecord
       transferPricingAdjustments.push({
         fromEntity: doc.fromEntity,
         toEntity: doc.toEntity,

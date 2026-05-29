@@ -23,7 +23,7 @@ import { getTenantContext } from '../context'
  */
 const userIsSuperAdmin = (user: unknown): boolean => {
   if (!user || typeof user !== 'object') return false
-  const roles = (user as any).roles
+  const roles = (user as Record<string, unknown>).roles
   return Array.isArray(roles) && roles.includes('super-admin')
 }
 
@@ -122,6 +122,6 @@ export const tenantScoped: Access = async ({ req }) => {
  */
 export const adminOnly: Access = ({ req }) => {
   if (!req.user || typeof req.user !== 'object') return false
-  const roles = (req.user as any).roles
+  const roles = (req.user as Record<string, unknown>).roles
   return Array.isArray(roles) && (roles.includes('admin') || roles.includes('super-admin'))
 }

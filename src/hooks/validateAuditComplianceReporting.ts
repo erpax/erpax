@@ -27,6 +27,48 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { AuditComplianceReporting } from '../services/AuditComplianceReporting'
+import type { Consolidation } from '../payload-types'
+
+interface TaxPeriod {
+  id: string
+  fiscalYear: number
+  taxPeriodName: string
+  taxJurisdiction: string
+  taxStatus: 'open' | 'tax-closed' | 'adjustment-posted' | 'archived'
+}
+
+interface TransferPricingAdjustment {
+  id: string
+  fromEntity: string
+  toEntity: string
+  jurisdiction: string
+  transactionType: string
+  amount: number
+  methodUsed: string
+  supportingDocumentation?: string
+  documentationStatus: 'pending' | 'documented' | 'reviewed'
+}
+
+interface RegulatoryFilingMetadata {
+  jurisdiction: string
+  filingType: string
+  taxYear: number
+  filingDeadline: string
+  filingStatus: 'draft' | 'submitted' | 'accepted' | 'rejected' | 'amended'
+  submissionMethod: string
+}
+
+interface AuditFileMetadata {
+  auditFileVersion: string
+  auditingStandard: string
+  generatedDate: string
+  generatorCode: string
+  auditFileCountry: string
+  defaultCurrencyCode: string
+  masterFile?: Record<string, unknown>
+  generalLedger?: Record<string, unknown>
+  sourceDocuments?: Record<string, unknown>
+}
 
 interface AuditReportData {
   id?: string
@@ -36,10 +78,10 @@ interface AuditReportData {
   reportType: 'saf-t' | 'regulatory-filing' | 'tp-documentation' | 'optimization-analysis'
   targetJurisdictions?: string[]
   auditStatus?: string
-  auditReportContent?: Record<string, unknown>
-  regulatoryFilings?: Array<any>
+  auditReportContent?: AuditFileMetadata
+  regulatoryFilings?: RegulatoryFilingMetadata[]
   transferPricingPackage?: Record<string, unknown>
-  optimizationRecommendations?: Array<any>
+  optimizationRecommendations?: Array<Record<string, unknown>>
   validationStatus?: string
   chainLeafUuid?: string
 }
@@ -59,7 +101,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   }
 
   // Query consolidation (if linked)
-  let consolidationData: any = null
+  let consolidationData: Consolidation | null = null
 
   if (data.consolidationId) {
     const consolidationRef =
@@ -74,7 +116,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
       })
 
       if (consolidationQuery.docs.length > 0) {
-        const consolidation = consolidationQuery.docs[0] as any
+        const consolidation = consolidationQuery.docs[0] as Consolidation
         consolidationData = consolidation
 
         // Verify consolidation is complete
@@ -93,7 +135,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   }
 
   // Query tax periods for all jurisdictions
-  const taxPeriods: any[] = []
+  const taxPeriods: TaxPeriod[] = []
 
   try {
     const taxPeriodsQuery = await payload.find({
@@ -104,7 +146,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
     })
 
     for (const tp of taxPeriodsQuery.docs) {
-      const doc = tp as any
+      const doc = tp as TaxPeriod
       // Verify tax period is closed or posted
       if (doc.taxStatus !== 'tax-closed' && doc.taxStatus !== 'adjustment-posted') {
         throw new Error(
@@ -121,7 +163,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   }
 
   // Query transfer pricing adjustments for documentation completeness
-  const transferPricingAdjustments: any[] = []
+  const transferPricingAdjustments: TransferPricingAdjustment[] = []
 
   try {
     const tpQuery = await payload.find({
@@ -132,7 +174,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
     })
 
     for (const tp of tpQuery.docs) {
-      const doc = tp as any
+      const doc = tp as TransferPricingAdjustment
       transferPricingAdjustments.push(doc)
     }
   } catch (err) {
@@ -149,7 +191,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   ]
 
   // Generate audit file (SAF-T 3.0.2)
-  let auditFileReport: any = null
+  let auditFileReport: AuditFileMetadata | null = null
 
   if (data.reportType === 'saf-t' || data.reportType === 'optimization-analysis') {
     try {
@@ -177,7 +219,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   }
 
   // Generate regulatory filings per jurisdiction
-  const regulatoryFilings: any[] = []
+  const regulatoryFilings: RegulatoryFilingMetadata[] = []
 
   if (data.reportType === 'regulatory-filing' || data.reportType === 'optimization-analysis') {
     try {

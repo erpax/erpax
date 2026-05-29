@@ -98,8 +98,8 @@ export class PostingImmutabilityEnforcer {
    */
   static createOverrideAuditTrail(
     posting: PostedGLPosting,
-    priorValue: any,
-    newValue: any,
+    priorValue: unknown,
+    newValue: unknown,
     userId: string,
     overrideReason: string
   ): AdminOverride {

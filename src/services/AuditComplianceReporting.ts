@@ -66,6 +66,38 @@ interface TransferPricingDocumentationPackage {
   oecd_compliance: boolean
 }
 
+interface JournalEntry {
+  id: string
+  description?: string
+  type?: string
+  period?: string
+  debitAccount?: string
+  creditAccount?: string
+  amount?: number
+}
+
+interface TransferPricingAdjustmentRecord {
+  fromEntity: string
+  toEntity: string
+  jurisdiction: string
+  transactionType: string
+  amount: number
+  methodUsed: string
+  supportingDocumentation?: string
+}
+
+interface AuditReport {
+  auditReportId: string
+  reportType: string
+  generatedDate: string
+  fileFormat: string
+  fileSize: number
+  fileChecksum: string
+  validationStatus: string
+  auditTrail: string
+  chainLeafUuid: string
+}
+
 interface CrossJurisdictionOptimization {
   optimizationType: string
   affectedJurisdictions: string[]
@@ -105,7 +137,7 @@ export class AuditComplianceReporting {
     metadata: AuditFileMetadata,
     consolidationData: Record<string, unknown>,
     taxPeriodData: Record<string, unknown>,
-    journalEntries: Array<any>,
+    journalEntries: JournalEntry[],
   ): AuditReport {
     // Simplified: construct SAF-T XML structure as nested JSON
     const auditFileStructure = {
@@ -198,7 +230,7 @@ export class AuditComplianceReporting {
     jurisdiction: string,
     filingType: 'annual-return' | 'estimated-payment' | 'amended-return',
     _taxPeriodData: Record<string, unknown>,
-    _transferPricingAdjustments: Array<any>,
+    _transferPricingAdjustments: TransferPricingAdjustmentRecord[],
   ): RegulatoryFilingMetadata {
     // Jurisdiction-specific filing format mapping
     const filingFormats: Record<string, Record<string, string>> = {
@@ -294,12 +326,12 @@ export class AuditComplianceReporting {
    * @returns TransferPricingDocumentationPackage ready for tax authority submission
    */
   static generateTransferPricingDocumentationPackage(
-    transferPricingAdjustments: Array<any>,
+    transferPricingAdjustments: TransferPricingAdjustmentRecord[],
     groupStructureData: Record<string, unknown>,
     _masterFilePath: string,
   ): TransferPricingDocumentationPackage {
     // Group TP adjustments by entity and transaction type
-    const adjustmentsByEntity: Record<string, Array<any>> = {}
+    const adjustmentsByEntity: Record<string, TransferPricingAdjustmentRecord[]> = {}
     for (const adj of transferPricingAdjustments) {
       const key = adj.fromEntity
       if (!adjustmentsByEntity[key]) {
@@ -309,7 +341,7 @@ export class AuditComplianceReporting {
     }
 
     const localFiles = Object.entries(adjustmentsByEntity).map(([entityId, adjustments]) => {
-      const transactionTypes = [...new Set(adjustments.map((a: any) => a.transactionType))]
+      const transactionTypes = [...new Set(adjustments.map((a: TransferPricingAdjustmentRecord) => a.transactionType))]
       return {
         entityId,
         jurisdiction: adjustments[0]?.jurisdiction || 'Unknown',
@@ -346,7 +378,7 @@ export class AuditComplianceReporting {
   /**
    * Private helper: Build master file GL accounts structure (SAF-T 3.0.2).
    */
-  private static buildMasterFileGL(_consolidationData: Record<string, unknown>): Array<any> {
+  private static buildMasterFileGL(_consolidationData: Record<string, unknown>): Record<string, unknown>[] {
     // Simplified: extract GL accounts from consolidation data
     return [
       {
@@ -380,7 +412,7 @@ export class AuditComplianceReporting {
   /**
    * Private helper: Build tax table for SAF-T 3.0.2.
    */
-  private static buildTaxTable(_taxPeriodData: Record<string, unknown>): Array<any> {
+  private static buildTaxTable(_taxPeriodData: Record<string, unknown>): Record<string, unknown>[] {
     return [
       {
         TaxType: 'VAT',

@@ -23,6 +23,26 @@
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { IntercompanyReconciliation } from '../services/IntercompanyReconciliation'
 
+interface ClosingEntry {
+  id: string
+  entity: string
+  fiscalYear: number
+  closingStatus: string
+  closedBy?: string
+  closingDate?: string
+  [key: string]: unknown
+}
+
+interface IntercompanyTransaction {
+  id: string
+  fromEntity: string
+  toEntity: string
+  currency: string
+  amount: number
+  transactionDate: string
+  [key: string]: unknown
+}
+
 interface ConsolidationData {
   id?: string
   consolidationGroup: string // Group ID (e.g., "PARENT-GROUP-2026")
@@ -92,7 +112,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
       })
 
       if (closingQuery.docs.length > 0) {
-        const closing = closingQuery.docs[0] as any
+        const closing = closingQuery.docs[0] as ClosingEntry
         closingStatuses.push({
           entityId,
           closingStatus: closing.closingStatus || 'unknown',
@@ -158,13 +178,13 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
         const receivablesByCurrency: Record<string, number> = {}
 
         for (const p of payablesQuery.docs) {
-          const doc = p as any
+          const doc = p as IntercompanyTransaction
           const curr = doc.currency || 'DEFAULT'
           payablesByCurrency[curr] = (payablesByCurrency[curr] || 0) + (doc.amount || 0)
         }
 
         for (const r of receivablesQuery.docs) {
-          const doc = r as any
+          const doc = r as IntercompanyTransaction
           const curr = doc.currency || 'DEFAULT'
           receivablesByCurrency[curr] = (receivablesByCurrency[curr] || 0) + (doc.amount || 0)
         }
