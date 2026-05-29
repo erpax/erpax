@@ -1,8 +1,13 @@
 /**
- * Journal Entry Service — creates, validates, posts journal entries.
+ * Journal Entry Service — Payload-native double-entry ledger.
  *
- * Invariant: total debits === total credits per entry. Period-locked entries
- * are rejected at post time. Maintains GL account balances.
+ * A thin Local-API wrapper over the `journal-entries` collection: the collection's
+ * own hooks are the source of truth for the standards — `validateBalancedEntry`
+ * (Σdebit=Σcredit), `validateNotLocked` (period lock), `enforceSegregationOfDuties`,
+ * `autoSetTimestamp('postedDate')`, and `auditTrailAfterChange`. This service maps
+ * the caller-facing interface (`accountId`) onto the collection schema (`glAccount`)
+ * and reads `normalBalance`/`accountType` from `gl-accounts` for the trial balance.
+ * Persisted (no in-memory state), so the @accounting banners are TRUE.
  *
  * @standard ISO-8601-1:2019 date-time entry-date posted-date
  * @standard ISO-4217:2015 currency-codes
@@ -12,11 +17,12 @@
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
  * @security ISO-27002 §5.4 segregation-of-duties
- * @see docs/STANDARDS.md §4.2
+ * @see docs/STANDARDS.md §4.2 ; src/collections/JournalEntries.ts (the enforcing hooks)
  */
 
-import { v4 as uuid } from 'uuid';
-import { DebitCreditLogic, type AccountType } from '@/services/accounting/debit-credit';
+import type { Payload, RequiredDataFromCollectionSlug } from 'payload';
+import { getPayload } from 'payload';
+import config from '@payload-config';
 
 export interface JournalEntryLine {
   id?: string;
@@ -25,13 +31,8 @@ export interface JournalEntryLine {
   credit?: number;
   description: string;
   /**
-   * Optional analytical dimension — the cost-center the line allocates
-   * to. Drives IFRS 8 / ASC 280 segment-level P&L roll-ups without
-   * polluting the chart of accounts itself. The standard journal-entry
-   * service ignores this field at post time; downstream reporting joins
-   * `journal-entry-lines.costCenterId` to `cost-centers` for segment
-   * disclosure.
-   *
+   * Optional analytical dimension — the cost-center the line allocates to
+   * (IFRS 8 / ASC 280 segment roll-ups). Carried through to the persisted line.
    * @accounting IFRS IFRS-8 operating-segments
    * @accounting US-GAAP ASC-280 segment-reporting
    */
@@ -45,7 +46,7 @@ export interface JournalEntry {
   entryDate: Date;
   description: string;
   lines: JournalEntryLine[];
-  status: 'draft' | 'posted' | 'reversed' | 'void';
+  status: 'draft' | 'pending_approval' | 'posted' | 'reversed' | 'void';
   sourceType: string;
   sourceId: string;
   sourceEvent: string;
@@ -70,328 +71,246 @@ export interface JournalEntryBalance {
   debit: number;
   credit: number;
   balance: number;
+  /** Pulled from gl-accounts for IAS-1 classification (financial statements). */
+  normalBalance?: 'debit' | 'credit';
+  accountType?: string;
 }
 
-// Mock database (replace with real DB calls)
-const journalEntries = new Map<string, JournalEntry>();
-const accountBalances = new Map<string, JournalEntryBalance>();
-const entryCounters = new Map<string, number>();
+/** Loosely-typed shapes for the journal-entries / gl-accounts documents we touch. */
+interface LineDoc {
+  id?: string;
+  glAccount?: string | { id: string };
+  debit?: number;
+  credit?: number;
+  description?: string;
+  costCenterId?: string;
+}
+interface EntryDoc {
+  id: string;
+  tenant?: string | { id: string };
+  entryNumber: string;
+  entryDate: string;
+  description: string;
+  lines?: LineDoc[];
+  status?: JournalEntry['status'];
+  sourceType?: string;
+  sourceId?: string;
+  sourceEvent?: string;
+  createdAt?: string;
+  createdBy?: string | { id: string };
+  postedDate?: string;
+  postedBy?: string | { id: string };
+}
+
+const idOf = (v: unknown): string =>
+  v && typeof v === 'object' && 'id' in v ? String((v as { id: unknown }).id) : String(v ?? '');
+
+const toLine = (l: JournalEntryLine, i: number) => ({
+  lineNumber: i + 1,
+  glAccount: l.accountId,
+  description: l.description,
+  debit: l.debit ?? 0,
+  credit: l.credit ?? 0,
+  ...(l.costCenterId ? { costCenterId: l.costCenterId } : {}),
+});
+
+const fromLine = (l: LineDoc): JournalEntryLine => ({
+  id: l.id,
+  accountId: idOf(l.glAccount),
+  debit: l.debit ?? 0,
+  credit: l.credit ?? 0,
+  description: l.description ?? '',
+  ...(l.costCenterId ? { costCenterId: l.costCenterId } : {}),
+});
+
+const fromDoc = (d: EntryDoc): JournalEntry => ({
+  id: String(d.id),
+  tenantId: idOf(d.tenant),
+  entryNumber: d.entryNumber,
+  entryDate: new Date(d.entryDate),
+  description: d.description,
+  lines: (d.lines ?? []).map(fromLine),
+  status: d.status ?? 'draft',
+  sourceType: d.sourceType ?? 'manual',
+  sourceId: d.sourceId ?? '',
+  sourceEvent: d.sourceEvent ?? '',
+  createdAt: d.createdAt ? new Date(d.createdAt) : new Date(),
+  createdBy: idOf(d.createdBy),
+  ...(d.postedDate ? { postedAt: new Date(d.postedDate) } : {}),
+  ...(d.postedBy ? { postedBy: idOf(d.postedBy) } : {}),
+});
 
 class JournalEntryService {
-  /**
-   * Create a draft journal entry
-   * Validates double-entry bookkeeping
-   */
-  async createEntry(
-    tenantId: string,
-    request: CreateJournalEntryRequest
-  ): Promise<JournalEntry> {
-    // Validate double-entry
-    this.validateDoubleEntry(request.lines);
+  private async db(): Promise<Payload> {
+    return getPayload({ config });
+  }
 
-    // Validate accounts exist and are active
-    // TODO: Fetch from GL account service
-    // for (const line of request.lines) {
-    //   const account = await glAccountService.getAccount(tenantId, line.accountId);
-    //   if (account.status !== 'active') {
-    //     throw new Error(`Account ${line.accountId} is not active`);
-    //   }
-    // }
-
-    // Generate entry number
-    const entryNumber = await this.generateEntryNumber(tenantId);
-
-    // Create entry
-    const entry: JournalEntry = {
-      id: uuid(),
-      tenantId,
-      entryNumber,
-      entryDate: request.entryDate,
-      description: request.description,
-      lines: request.lines.map((line) => ({
-        ...line,
-        id: line.id || uuid(),
-      })),
-      status: 'draft',
-      sourceType: request.sourceType,
-      sourceId: request.sourceId,
-      sourceEvent: request.sourceEvent,
-      createdAt: new Date(),
-      createdBy: request.userId,
-    };
-
-    // Save entry (mock)
-    journalEntries.set(entry.id, entry);
-
-    return entry;
+  /** Next per-tenant entry number (sequence by count; unique constraint + JOB_LOCK guard races). */
+  private async generateEntryNumber(payload: Payload, tenantId: string): Promise<string> {
+    const { totalDocs } = await payload.count({
+      collection: 'journal-entries',
+      where: { tenant: { equals: tenantId } },
+      overrideAccess: true,
+    });
+    return `JE-${new Date().getFullYear()}-${String(totalDocs + 1).padStart(6, '0')}`;
   }
 
   /**
-   * Post a journal entry (apply to GL accounts)
+   * Create a draft journal entry. The collection's `validateBalancedEntry`
+   * beforeValidate hook enforces Σdebit=Σcredit and computes the totals.
    */
-  async postEntry(
-    tenantId: string,
-    entryId: string,
-    userId: string = 'system'
-  ): Promise<JournalEntry> {
-    const entry = journalEntries.get(entryId);
-    if (!entry) {
-      throw new Error(`Journal entry ${entryId} not found`);
-    }
-
-    if (entry.tenantId !== tenantId) {
-      throw new Error(`Journal entry does not belong to tenant ${tenantId}`);
-    }
-
-    if (entry.status === 'posted') {
-      throw new Error(`Journal entry ${entryId} is already posted`);
-    }
-
-    // Update GL account balances
-    for (const line of entry.lines) {
-      await this.updateAccountBalance(tenantId, line.accountId, line.debit, line.credit);
-    }
-
-    // Update entry status
-    entry.status = 'posted';
-    entry.postedAt = new Date();
-    entry.postedBy = userId;
-
-    // Save (mock)
-    journalEntries.set(entryId, entry);
-
-    return entry;
+  async createEntry(tenantId: string, request: CreateJournalEntryRequest): Promise<JournalEntry> {
+    const payload = await this.db();
+    const entryNumber = await this.generateEntryNumber(payload, tenantId);
+    const doc = (await payload.create({
+      collection: 'journal-entries',
+      overrideAccess: true,
+      data: {
+        tenant: tenantId,
+        entryNumber,
+        entryDate:
+          request.entryDate instanceof Date ? request.entryDate.toISOString() : request.entryDate,
+        description: request.description,
+        status: 'draft',
+        lines: request.lines.map(toLine),
+        sourceType: request.sourceType,
+        sourceId: request.sourceId,
+        sourceEvent: request.sourceEvent,
+        createdBy: request.userId,
+      } as unknown as RequiredDataFromCollectionSlug<'journal-entries'>,
+    })) as unknown as EntryDoc;
+    return fromDoc(doc);
   }
 
   /**
-   * Reverse a posted journal entry
-   * Creates opposing entry automatically
+   * Post a journal entry. The collection's `validateNotLocked` beforeChange hook
+   * rejects posting into a locked fiscal period (SOX §404); `autoSetTimestamp`
+   * stamps `postedDate`.
    */
+  async postEntry(tenantId: string, entryId: string, userId: string = 'system'): Promise<JournalEntry> {
+    const payload = await this.db();
+    const doc = (await payload.update({
+      collection: 'journal-entries',
+      id: entryId,
+      overrideAccess: true,
+      data: { status: 'posted' } as unknown as RequiredDataFromCollectionSlug<'journal-entries'>,
+    })) as unknown as EntryDoc;
+    // postedBy is not a journal-entries column (the actor is on the audit trail);
+    // surface it on the returned shape for callers.
+    return { ...fromDoc(doc), postedBy: userId };
+  }
+
+  /** Reverse a posted entry by creating an opposing (debit↔credit) entry. */
   async reverseEntry(
     tenantId: string,
     entryId: string,
     reason: string,
-    userId: string = 'system'
+    userId: string = 'system',
   ): Promise<JournalEntry> {
-    const originalEntry = journalEntries.get(entryId);
-    if (!originalEntry) {
-      throw new Error(`Journal entry ${entryId} not found`);
-    }
+    const payload = await this.db();
+    const original = await this.getEntry(tenantId, entryId);
+    if (!original) throw new Error(`Journal entry ${entryId} not found`);
+    if (original.status !== 'posted') throw new Error('Can only reverse posted journal entries');
 
-    if (originalEntry.status !== 'posted') {
-      throw new Error(`Can only reverse posted journal entries`);
-    }
-
-    // Create reversing entry (opposite debits/credits)
-    const reversingLines: JournalEntryLine[] = originalEntry.lines.map((line) => ({
-      accountId: line.accountId,
-      debit: line.credit,
-      credit: line.debit,
-      description: `Reversal: ${line.description}`,
-    }));
-
-    const reversingEntry = await this.createEntry(tenantId, {
+    const reversing = await this.createEntry(tenantId, {
       entryDate: new Date(),
-      description: `Reversal of ${originalEntry.entryNumber}: ${reason}`,
-      lines: reversingLines,
-      sourceType: originalEntry.sourceType,
-      sourceId: originalEntry.sourceId,
-      sourceEvent: `${originalEntry.sourceEvent}:reversed`,
+      description: `Reversal of ${original.entryNumber}: ${reason}`,
+      lines: original.lines.map((l) => ({
+        accountId: l.accountId,
+        debit: l.credit,
+        credit: l.debit,
+        description: `Reversal: ${l.description}`,
+      })),
+      sourceType: original.sourceType,
+      sourceId: original.sourceId,
+      sourceEvent: `${original.sourceEvent}:reversed`,
       userId,
     });
-
-    // Post reversing entry
-    await this.postEntry(tenantId, reversingEntry.id, userId);
-
-    // Mark original as reversed
-    originalEntry.status = 'reversed';
-    journalEntries.set(entryId, originalEntry);
-
-    return reversingEntry;
+    await this.postEntry(tenantId, reversing.id, userId);
+    await payload.update({
+      collection: 'journal-entries',
+      id: entryId,
+      overrideAccess: true,
+      data: { status: 'reversed' } as unknown as RequiredDataFromCollectionSlug<'journal-entries'>,
+    });
+    return reversing;
   }
 
-  /**
-   * Get journal entry
-   */
   async getEntry(tenantId: string, entryId: string): Promise<JournalEntry | null> {
-    const entry = journalEntries.get(entryId);
-    if (!entry || entry.tenantId !== tenantId) {
+    const payload = await this.db();
+    try {
+      const doc = (await payload.findByID({
+        collection: 'journal-entries',
+        id: entryId,
+        overrideAccess: true,
+      })) as unknown as EntryDoc;
+      if (!doc || idOf(doc.tenant) !== tenantId) return null;
+      return fromDoc(doc);
+    } catch {
       return null;
     }
-    return entry;
   }
 
-  /**
-   * List journal entries
-   */
   async listEntries(
     tenantId: string,
-    filters?: {
-      status?: string;
-      sourceType?: string;
-      fromDate?: Date;
-      toDate?: Date;
-    }
+    filters?: { status?: string; sourceType?: string; sourceId?: string; fromDate?: Date; toDate?: Date },
   ): Promise<JournalEntry[]> {
-    const entries = Array.from(journalEntries.values()).filter((entry) => {
-      if (entry.tenantId !== tenantId) return false;
-      if (filters?.status && entry.status !== filters.status) return false;
-      if (filters?.sourceType && entry.sourceType !== filters.sourceType) return false;
-      if (filters?.fromDate && entry.entryDate < filters.fromDate) return false;
-      if (filters?.toDate && entry.entryDate > filters.toDate) return false;
-      return true;
-    });
-    return entries;
+    const payload = await this.db();
+    const and: Record<string, unknown>[] = [{ tenant: { equals: tenantId } }];
+    if (filters?.status) and.push({ status: { equals: filters.status } });
+    if (filters?.sourceType) and.push({ sourceType: { equals: filters.sourceType } });
+    if (filters?.sourceId) and.push({ sourceId: { equals: filters.sourceId } });
+    if (filters?.fromDate) and.push({ entryDate: { greater_than_equal: filters.fromDate.toISOString() } });
+    if (filters?.toDate) and.push({ entryDate: { less_than_equal: filters.toDate.toISOString() } });
+    const res = (await payload.find({
+      collection: 'journal-entries',
+      where: { and } as never,
+      limit: 0,
+      depth: 0,
+      overrideAccess: true,
+    })) as unknown as { docs: EntryDoc[] };
+    return res.docs.map(fromDoc);
   }
 
-  /**
-   * Get account balance
-   */
-  async getAccountBalance(tenantId: string, accountId: string): Promise<JournalEntryBalance> {
-    const key = `${tenantId}:${accountId}`;
-    return (
-      accountBalances.get(key) || {
-        accountId,
-        debit: 0,
-        credit: 0,
-        balance: 0,
-      }
-    );
-  }
-
-  /**
-   * Get trial balance for period
-   */
-  async getTrialBalance(
-    tenantId: string,
-    fromDate: Date,
-    toDate: Date
-  ): Promise<Map<string, JournalEntryBalance>> {
-    const entries = await this.listEntries(tenantId, {
-      status: 'posted',
-      fromDate,
-      toDate,
-    });
-
+  /** Trial balance: posted lines aggregated per account, classified by gl-accounts normalBalance. */
+  async getTrialBalance(tenantId: string, fromDate: Date, toDate: Date): Promise<Map<string, JournalEntryBalance>> {
+    const entries = await this.listEntries(tenantId, { status: 'posted', fromDate, toDate });
     const balances = new Map<string, JournalEntryBalance>();
-
     for (const entry of entries) {
       for (const line of entry.lines) {
-        const _key = `${tenantId}:${line.accountId}`;
-        const existing = balances.get(line.accountId) || {
-          accountId: line.accountId,
-          debit: 0,
-          credit: 0,
-          balance: 0,
-        };
-
-        existing.debit += line.debit || 0;
-        existing.credit += line.credit || 0;
-
-        // TODO: Get normal balance from GL account service
-        // const account = await glAccountService.getAccount(tenantId, line.accountId);
-        // if (account.normalBalance === 'debit') {
-        //   existing.balance = existing.debit - existing.credit;
-        // } else {
-        //   existing.balance = existing.credit - existing.debit;
-        // }
-
-        balances.set(line.accountId, existing);
+        const b = balances.get(line.accountId) ?? { accountId: line.accountId, debit: 0, credit: 0, balance: 0 };
+        b.debit += line.debit ?? 0;
+        b.credit += line.credit ?? 0;
+        balances.set(line.accountId, b);
       }
     }
-
+    // Classify each account from gl-accounts (IAS-1 presentation).
+    const ids = [...balances.keys()];
+    if (ids.length) {
+      const payload = await this.db();
+      const accounts = (await payload.find({
+        collection: 'gl-accounts',
+        where: { id: { in: ids } } as never,
+        limit: 0,
+        depth: 0,
+        overrideAccess: true,
+      })) as unknown as { docs: Array<{ id: string; normalBalance?: 'debit' | 'credit'; accountType?: string }> };
+      for (const acc of accounts.docs) {
+        const b = balances.get(String(acc.id));
+        if (!b) continue;
+        b.normalBalance = acc.normalBalance;
+        b.accountType = acc.accountType;
+        b.balance = acc.normalBalance === 'credit' ? b.credit - b.debit : b.debit - b.credit;
+      }
+    }
     return balances;
   }
 
-  /**
-   * Validate double-entry bookkeeping using the canonical DebitCreditLogic.
-   * Sum of debits must equal sum of credits; no line may carry both.
-   *
-   * Single source of truth: see `src/plugins/accounting/debit-credit.ts`.
-   */
-  private validateDoubleEntry(lines: JournalEntryLine[]): void {
-    const result = DebitCreditLogic.validateEntry(
-      lines.map((l) => ({
-        accountCode: l.accountId,
-        accountType: 'asset' as AccountType, // accountType not tracked at service line; balance check is type-agnostic
-        debit: l.debit || 0,
-        credit: l.credit || 0,
-      })),
-    );
-
-    if (!result.balanced) {
-      throw new Error(
-        `Journal entry not balanced. Debits: ${result.totalDebits}, Credits: ${result.totalCredits}, Difference: ${result.variance}`,
-      );
-    }
-
-    // Validate each line has either debit or credit, not both
-    for (const line of lines) {
-      if (line.debit && line.credit) {
-        throw new Error(`Line cannot have both debit and credit`);
-      }
-      if (!line.debit && !line.credit) {
-        throw new Error(`Line must have either debit or credit`);
-      }
-    }
-  }
-
-  /**
-   * Update GL account balance
-   */
-  private async updateAccountBalance(
-    tenantId: string,
-    accountId: string,
-    debit?: number,
-    credit?: number
-  ): Promise<void> {
-    const key = `${tenantId}:${accountId}`;
-    const current = accountBalances.get(key) || {
-      accountId,
-      debit: 0,
-      credit: 0,
-      balance: 0,
-    };
-
-    current.debit += debit || 0;
-    current.credit += credit || 0;
-
-    // TODO: Get normal balance from GL account service
-    // const account = await glAccountService.getAccount(tenantId, accountId);
-    // if (account.normalBalance === 'debit') {
-    //   current.balance = current.debit - current.credit;
-    // } else {
-    //   current.balance = current.credit - current.debit;
-    // }
-
-    accountBalances.set(key, current);
-  }
-
-  /**
-   * Generate unique entry number
-   * Format: YYYY-MM-XXXXX (year-month-sequence)
-   */
-  private async generateEntryNumber(tenantId: string): Promise<string> {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const key = `${tenantId}:${year}-${month}`;
-
-    const counter = (entryCounters.get(key) || 0) + 1;
-    entryCounters.set(key, counter);
-
-    const sequence = String(counter).padStart(5, '0');
-    return `${year}-${month}-${sequence}`;
-  }
-
-  /**
-   * Clear all data (for testing)
-   */
-  clearAllData(): void {
-    journalEntries.clear();
-    accountBalances.clear();
-    entryCounters.clear();
+  async getAccountBalance(tenantId: string, accountId: string, asOf: Date = new Date()): Promise<JournalEntryBalance> {
+    const tb = await this.getTrialBalance(tenantId, new Date(0), asOf);
+    return tb.get(accountId) ?? { accountId, debit: 0, credit: 0, balance: 0 };
   }
 }
 
 export const journalEntryService = new JournalEntryService();
+export default journalEntryService;

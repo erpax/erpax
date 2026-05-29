@@ -1634,8 +1634,8 @@ src/services/iso20022-export.service.ts:20: * @standard ISO-4217:2015 currency-c
 src/services/iso20022-export.service.ts:21: * @standard ISO-8601-1:2019 date-time
 src/services/iso20022-export.service.ts:254: * @standard ISO-20022 pain.001.001.09 customer-credit-transfer-initiation
 src/services/iso20022-export.service.ts:371: * @standard ISO-20022 pain.008.001.08 customer-direct-debit-initiation
-src/services/journal-entry.service.ts:7: * @standard ISO-8601-1:2019 date-time entry-date posted-date
-src/services/journal-entry.service.ts:8: * @standard ISO-4217:2015 currency-codes
+src/services/journal-entry.service.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
+src/services/journal-entry.service.ts:13: * @standard ISO-4217:2015 currency-codes
 src/services/lease.service.ts:21: * @standard ISO-4217:2015 currency-codes
 src/services/lease.service.ts:22: * @standard ISO-8601-1:2019 date-time
 src/services/lease.service.ts:23: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
@@ -3368,7 +3368,7 @@ src/services/gl-posting.service.ts:799:   * @compliance SOX §404 internal-contr
 src/services/integrity/content-uuid.ts:42: * @compliance SOX §404 internal-controls (Byzantine tamper detection)
 src/services/integrity/tamper-proof-uuid-field.ts:38: * @compliance SOX §404 (Byzantine tamper detection at the row level)
 src/services/integrity/uuid-ref.ts:29: * @compliance SOX §404 (referential integrity without cascade rules)
-src/services/journal-entry.service.ts:13: * @compliance SOX §404 internal-controls
+src/services/journal-entry.service.ts:18: * @compliance SOX §404 internal-controls
 src/services/notifications/index.ts:20: * @compliance GDPR Art.7 transactional-email-consent
 src/services/notifications/subscriber.ts:15: * @compliance GDPR Art.7 transactional-consent
 src/services/parties/workflow.service.ts:9: * @compliance SOX §404 internal-controls
@@ -3991,11 +3991,11 @@ src/services/gl-posting.service.ts:584:   * @accounting US-GAAP ASC-360-10-35 de
 src/services/gl-posting.service.ts:653:   * @accounting IFRS IAS-2 §10 §28 §36 inventories
 src/services/gl-posting.service.ts:654:   * @accounting US-GAAP ASC-330-10-30 inventory-valuation
 src/services/gl-posting.service.ts:797:   * @accounting IFRS IAS-7 §6 statement-of-cash-flows reconciliation
-src/services/journal-entry.service.ts:10: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/services/journal-entry.service.ts:11: * @accounting OECD SAF-T §3 journal-entries
-src/services/journal-entry.service.ts:35:   * @accounting IFRS IFRS-8 operating-segments
-src/services/journal-entry.service.ts:36:   * @accounting US-GAAP ASC-280 segment-reporting
-src/services/journal-entry.service.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/services/journal-entry.service.ts:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/services/journal-entry.service.ts:15: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/services/journal-entry.service.ts:16: * @accounting OECD SAF-T §3 journal-entries
+src/services/journal-entry.service.ts:36:   * @accounting IFRS IFRS-8 operating-segments
+src/services/journal-entry.service.ts:37:   * @accounting US-GAAP ASC-280 segment-reporting
 src/services/lease.service.ts:104: * @accounting IFRS IFRS-16 §26 present-value-of-payments
 src/services/lease.service.ts:158: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
 src/services/lease.service.ts:159: * @accounting IFRS IFRS-16 §26-§28 liability-initial-measurement
@@ -4571,7 +4571,7 @@ src/services/country-clients/bg-pades-signer.ts:28: * @security ISO-27001 A.8.24
 src/services/country-clients/sign-cms-node.ts:21: * @security ISO-27001 A.5.16 identity-management
 src/services/country-clients/sign-cms-node.ts:22: * @security ISO-27001 A.8.24 use-of-cryptography
 src/services/gl-account-resolver.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/services/journal-entry.service.ts:14: * @security ISO-27002 §5.4 segregation-of-duties
+src/services/journal-entry.service.ts:19: * @security ISO-27002 §5.4 segregation-of-duties
 src/services/notifications/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/services/parties/workflow.service.ts:8: * @security ISO-27002 §5.4 segregation-of-duties
 src/services/payables/workflow.service.ts:12: * @security ISO-27002 §5.4 segregation-of-duties three-way-match
@@ -5132,7 +5132,7 @@ src/services/integrity/uuid-short.ts:43: * @audit ISO 19011:2018 §6.4.6 (UI sur
 src/services/integrity/uuid-stream.ts:56: * @audit ISO 19011:2018 §6.4.6 (every replica audit-trailed by uuid)
 src/services/iso20022-export.service.test.ts:6: * @audit ISO-19011:2018 audit-trail
 src/services/iso20022-export.service.ts:22: * @audit ISO-19011:2018 audit-trail
-src/services/journal-entry.service.ts:12: * @audit ISO-19011:2018 audit-trail
+src/services/journal-entry.service.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/lease.service.ts:30: * @audit ISO-19011:2018 audit-trail
 src/services/locale-fallback/index.test.ts:19: * @audit Conservation Law 54 universal-identity-element
 src/services/locale-fallback/index.ts:43: * @audit Conservation Law 53 self-referential-closure

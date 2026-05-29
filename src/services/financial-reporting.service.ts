@@ -24,17 +24,13 @@ import {
   FinancialReportPackage,
   FinancialRatios,
 } from '@/types/financial-statements';
-import { journalEntryService } from './journal-entry.service';
+import { journalEntryService, type JournalEntryBalance } from './journal-entry.service';
 import { DebitCreditLogic } from '@/services/accounting/debit-credit';
 
 /**
- * GL balance bucket — debits and credits per account, plus optional metadata.
+ * GL balance bucket — the canonical JournalEntryBalance (accountId, debit, credit,
+ * balance, normalBalance, accountType) produced by journalEntryService.getTrialBalance.
  */
-interface AccountBalance {
-  debit?: number;
-  credit?: number;
-  [key: string]: unknown;
-}
 
 /**
  * Report-section labels. Only 5 are actually consumed by the service.
@@ -142,7 +138,7 @@ class FinancialReportingService {
   private async generateTrialBalance(
     tenantId: string,
     reportDate: Date,
-    balances: Map<string, AccountBalance>
+    balances: Map<string, JournalEntryBalance>
   ): Promise<TrialBalance> {
     const accounts: TrialBalanceAccount[] = [];
     let totalDebits = 0;
@@ -187,7 +183,7 @@ class FinancialReportingService {
   private async generateBalanceSheet(
     tenantId: string,
     reportDate: Date,
-    balances: Map<string, AccountBalance>
+    balances: Map<string, JournalEntryBalance>
   ): Promise<BalanceSheet> {
     // Categorize accounts by type
     const assets: BalanceSheetLine[] = [];
@@ -294,7 +290,7 @@ class FinancialReportingService {
     tenantId: string,
     periodStart: Date,
     periodEnd: Date,
-    balances: Map<string, AccountBalance>
+    balances: Map<string, JournalEntryBalance>
   ): Promise<IncomeStatement> {
     const revenue: IncomeStatementLine[] = [];
     const cogs: IncomeStatementLine[] = [];
@@ -413,7 +409,7 @@ class FinancialReportingService {
     tenantId: string,
     periodStart: Date,
     periodEnd: Date,
-    balances: Map<string, AccountBalance>
+    balances: Map<string, JournalEntryBalance>
   ): Promise<CashFlowStatement> {
     // Simplified indirect method
     const incomeStatement = await this.generateIncomeStatement(

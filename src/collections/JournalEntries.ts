@@ -94,6 +94,8 @@ const JournalEntries: CollectionConfig = {
         { name: 'credit', type: 'number', defaultValue: 0 },
         currencyField(),
         { name: 'exchangeRate', type: 'number', defaultValue: 1 },
+        // Analytical dimension for IFRS-8 / ASC-280 segment roll-ups (optional).
+        { name: 'costCenterId', type: 'text' },
       ],
     },
     { name: 'debitTotal', type: 'number', defaultValue: 0, admin: { disabled: true } },
@@ -115,6 +117,8 @@ const JournalEntries: CollectionConfig = {
       ],
     },
     { name: 'sourceId', type: 'text' },
+    // SAF-T §3 source-document event linkage (e.g. 'invoice:posted').
+    { name: 'sourceEvent', type: 'text' },
     ...auditFields(),
   ],
   hooks: {

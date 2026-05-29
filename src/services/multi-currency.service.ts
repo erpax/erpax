@@ -236,15 +236,17 @@ class MultiCurrencyService {
 
     // Create GL entry in base currency
     const entry = await journalEntryService.createEntry(tenantId, {
-      entryNumber: `${new Date().toISOString().split('T')[0]}-${Math.random().toString(36).substr(2, 5).toUpperCase()}`,
       entryDate,
       description: `${description} [Multi-Currency]`,
-      postedDate: entryDate,
       lines: convertedLines,
-      status: 'posted',
+      sourceType: 'currency_adjustment',
+      sourceId: '',
+      sourceEvent: 'multi-currency:created',
+      userId: 'system',
     });
+    await journalEntryService.postEntry(tenantId, entry.id);
 
-    return entry;
+    return entry.id;
   }
 
   /**
@@ -334,16 +336,18 @@ class MultiCurrencyService {
         });
       }
 
-      const entryId = await journalEntryService.createEntry(tenantId, {
-        entryNumber: `CUR-${adjustment.adjustmentDate.toISOString().split('T')[0]}`,
+      const entry = await journalEntryService.createEntry(tenantId, {
         entryDate: adjustment.adjustmentDate,
         description: `Currency Gain/Loss Adjustment - ${adjustment.baseCurrency}`,
-        postedDate: adjustment.adjustmentDate,
         lines,
-        status: 'posted',
+        sourceType: 'currency_adjustment',
+        sourceId: '',
+        sourceEvent: 'currency-adjustment:created',
+        userId: 'system',
       });
+      await journalEntryService.postEntry(tenantId, entry.id);
 
-      adjustment.journalEntryId = entryId;
+      adjustment.journalEntryId = entry.id;
       adjustment.status = 'posted';
     }
 

@@ -4848,6 +4848,7 @@ export interface JournalEntry {
      */
     currency?: string | null;
     exchangeRate?: number | null;
+    costCenterId?: string | null;
     id?: string | null;
   }[];
   debitTotal?: number | null;
@@ -4863,6 +4864,7 @@ export interface JournalEntry {
     | 'tax_calculation'
     | 'currency_adjustment';
   sourceId?: string | null;
+  sourceEvent?: string | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -22963,6 +22965,7 @@ export interface JournalEntriesSelect<T extends boolean = true> {
         credit?: T;
         currency?: T;
         exchangeRate?: T;
+        costCenterId?: T;
         id?: T;
       };
   debitTotal?: T;
@@ -22970,6 +22973,7 @@ export interface JournalEntriesSelect<T extends boolean = true> {
   isBalanced?: T;
   sourceType?: T;
   sourceId?: T;
+  sourceEvent?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
