@@ -13,6 +13,7 @@ import type { Payload } from 'payload'
 import type { EventEmitterService } from '@/services/event-emitter.service'
 import {
   fiscalizeOrder,
+  reverseOrderFiscalization,
   wireOrderFiscalizationSubscriber,
   __resetOrderFiscalizationForTests,
   type OrderActivatedPayload,
@@ -39,7 +40,7 @@ function mockPayload(opts: { existingSale?: boolean; device?: string | null } = 
     logger: { error: vi.fn() },
   }
 }
-const asPayload = (m: ReturnType<typeof mockPayload>) => m as unknown as Payload
+const asPayload = (m: unknown) => m as Payload
 
 describe('fiscalizeOrder', () => {
   it('creates a closed fiscal sale with the tenant ФУ + net/VAT split line', async () => {
@@ -70,21 +71,72 @@ describe('fiscalizeOrder', () => {
   })
 })
 
+function mockReversalPayload(sale: { id: string; status?: string } | null = { id: 'sale-1', status: 'closed' }) {
+  return {
+    find: vi.fn().mockResolvedValue({ docs: sale ? [sale] : [] }),
+    findByID: vi.fn().mockResolvedValue({
+      id: 'sale-1', status: 'closed', fiscalDeviceNumber: '12345678', total: 1_200_00,
+      items: [{ description: 'WIDGET', amount: 1_000_00 }], tenant: 't1',
+    }),
+    create: vi.fn().mockResolvedValue({ id: 'rev-1' }),
+    update: vi.fn().mockResolvedValue({ id: 'sale-1', status: 'reversed' }),
+    logger: { error: vi.fn() },
+  }
+}
+
+describe('reverseOrderFiscalization', () => {
+  it('сторнос the linked fiscal sale and seals the original', async () => {
+    const m = mockReversalPayload()
+    const rev = await reverseOrderFiscalization(asPayload(m), { orderId: 'ord-1', reason: 'customer refund' })
+    expect(rev?.id).toBe('rev-1')
+    // mirror created with negated total + reversalOf back-link
+    expect(m.create).toHaveBeenCalledWith(
+      expect.objectContaining({ data: expect.objectContaining({ reversalOf: 'sale-1', total: -1_200_00 }) }),
+    )
+    // original sealed reversed
+    expect(m.update).toHaveBeenCalledWith(
+      expect.objectContaining({ id: 'sale-1', data: expect.objectContaining({ status: 'reversed' }) }),
+    )
+  })
+
+  it('skips when no sale is linked to the order', async () => {
+    const m = mockReversalPayload(null)
+    const rev = await reverseOrderFiscalization(asPayload(m), { orderId: 'ord-1' })
+    expect(rev).toBeUndefined()
+    expect(m.create).not.toHaveBeenCalled()
+  })
+
+  it('skips when the linked sale is already reversed (idempotent)', async () => {
+    const m = mockReversalPayload({ id: 'sale-1', status: 'reversed' })
+    await reverseOrderFiscalization(asPayload(m), { orderId: 'ord-1' })
+    expect(m.create).not.toHaveBeenCalled()
+  })
+})
+
 describe('wireOrderFiscalizationSubscriber', () => {
   beforeEach(() => __resetOrderFiscalizationForTests())
 
   function emitterSpy() {
-    let handler: ((e: unknown) => Promise<void>) | undefined
-    const emitter = { subscribe: vi.fn((_t: string, h: (e: unknown) => Promise<void>) => { handler = h }) }
-    return { emitter: emitter as unknown as EventEmitterService, fire: (e: unknown) => handler!(e) }
+    const handlers = new Map<string, (e: unknown) => Promise<void>>()
+    const emitter = { subscribe: vi.fn((t: string, h: (e: unknown) => Promise<void>) => { handlers.set(t, h) }) }
+    return { emitter: emitter as unknown as EventEmitterService, fire: (t: string, e: unknown) => handlers.get(t)!(e) }
   }
 
   it('subscribes to order:activated and fiscalizes the order payload', async () => {
     const m = mockPayload()
     const { emitter, fire } = emitterSpy()
     wireOrderFiscalizationSubscriber(asPayload(m), emitter)
-    await fire({ tenantId: 't1', payload: ORDER })
+    await fire('order:activated', { tenantId: 't1', payload: ORDER })
     expect(m.create).toHaveBeenCalledOnce()
+  })
+
+  it('сторнос the linked sale on order:refunded', async () => {
+    const m = mockReversalPayload()
+    const { emitter, fire } = emitterSpy()
+    wireOrderFiscalizationSubscriber(asPayload(m), emitter)
+    await fire('order:refunded', { tenantId: 't1', payload: { orderId: 'ord-1' } })
+    expect(m.create).toHaveBeenCalledOnce()
+    expect(m.update).toHaveBeenCalledOnce()
   })
 
   it('swallows errors (never breaks the emit)', async () => {
@@ -92,7 +144,7 @@ describe('wireOrderFiscalizationSubscriber', () => {
     m.find.mockRejectedValue(new Error('db down'))
     const { emitter, fire } = emitterSpy()
     wireOrderFiscalizationSubscriber(asPayload(m), emitter)
-    await fire({ tenantId: 't1', payload: ORDER })
+    await fire('order:activated', { tenantId: 't1', payload: ORDER })
     expect(m.logger.error).toHaveBeenCalled()
   })
 })

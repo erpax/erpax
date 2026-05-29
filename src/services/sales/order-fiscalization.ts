@@ -20,6 +20,7 @@
 
 import type { Payload, PayloadRequest } from 'payload'
 import { eventEmitter, type EventEmitterService } from '@/services/event-emitter.service'
+import { reverseSale } from './reverse-sale'
 
 interface OrderLine {
   itemId?: string
@@ -123,9 +124,31 @@ export async function fiscalizeOrder(
   return sale
 }
 
+/** On a cancelled/refunded order, сторно the linked fiscal sale (if any, not already reversed). */
+export async function reverseOrderFiscalization(
+  payload: Payload,
+  args: { orderId: string; reason?: string; req?: PayloadRequest },
+): Promise<{ id: string | number } | undefined> {
+  const found = await payload.find({
+    collection: 'sales' as never,
+    where: { order: { equals: args.orderId } } as never,
+    limit: 1,
+    overrideAccess: true,
+    req: args.req,
+  })
+  const sale = found.docs[0] as { id?: string | number; status?: string } | undefined
+  if (!sale?.id || sale.status === 'reversed') return undefined
+  const { reversal } = await reverseSale(payload, { originalSaleId: sale.id, reason: args.reason, req: args.req })
+  return reversal
+}
+
 let wired = false
 
-/** Wire the order→sale fiscalization bridge to `order:activated`. Idempotent across hot reloads. */
+/**
+ * Wire the order↔sale fiscalization membrane: `order:activated` creates the
+ * fiscal sale; `order:cancelled` / `order:refunded` сторно it. Idempotent
+ * across hot reloads and replays.
+ */
 export function wireOrderFiscalizationSubscriber(
   payload: Payload,
   emitter: EventEmitterService = eventEmitter,
@@ -143,6 +166,21 @@ export function wireOrderFiscalizationSubscriber(
       payload.logger?.error?.({ msg: 'order:activated fiscalization failed', err: err instanceof Error ? err.message : String(err) })
     }
   })
+  const reverseHandler = async (event: unknown) => {
+    try {
+      const p = (event as { payload?: { orderId?: unknown; reason?: unknown } }).payload
+      if (!p?.orderId) return
+      await reverseOrderFiscalization(payload, {
+        orderId: String(p.orderId),
+        reason: typeof p.reason === 'string' ? p.reason : undefined,
+        req,
+      })
+    } catch (err) {
+      payload.logger?.error?.({ msg: 'order reversal fiscalization failed', err: err instanceof Error ? err.message : String(err) })
+    }
+  }
+  emitter.subscribe('order:cancelled', reverseHandler)
+  emitter.subscribe('order:refunded', reverseHandler)
 }
 
 /** Test-only reset of the idempotency latch. */
