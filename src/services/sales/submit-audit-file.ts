@@ -8,16 +8,17 @@
  * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission
  * @standard OECD SAF-T 2.0 (universal base)
  * @audit ISO-19011:2018 §6.4 audit-evidence
- * @see src/services/supto/audit-file.ts · src/services/country-clients/bg-nap-mtls.ts
+ * @see src/services/sales/audit-file.ts · src/services/country-clients/bg-nap-mtls.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'
 import {
-  buildSuptoAuditReport,
-  toSuptoAuditXml,
-  type SuptoAuditReport,
-  type SuptoSaleInput,
+  buildSalesAuditReport,
+  toSalesAuditXml,
+  type SalesAuditReport,
+  type SalesAuditInput,
 } from './audit-file'
+import { vatTotalForItems } from './fiscal-receipt'
 
 interface SaleRow {
   unp?: unknown
@@ -25,11 +26,24 @@ interface SaleRow {
   operatorCode?: unknown
   saleDate?: unknown
   total?: unknown
+  items?: unknown
   currency?: unknown
   paymentType?: unknown
   status?: unknown
   fiscalReceiptNumber?: unknown
   reversalOf?: unknown
+}
+
+/** Coerce a sale's `items` array to the {vatRate, amount} shape the VAT engine reads. */
+function itemsOf(v: unknown): Array<{ vatRate?: number; amount?: number }> {
+  if (!Array.isArray(v)) return []
+  return v.map((i) => {
+    const o = (i ?? {}) as { vatRate?: unknown; amount?: unknown }
+    return {
+      vatRate: typeof o.vatRate === 'number' ? o.vatRate : 0,
+      amount: typeof o.amount === 'number' ? o.amount : 0,
+    }
+  })
 }
 
 const str = (v: unknown): string | undefined => (typeof v === 'string' ? v : undefined)
@@ -44,13 +58,14 @@ function relId(v: unknown): string | null {
   return null
 }
 
-function toInput(row: SaleRow): SuptoSaleInput {
+function toInput(row: SaleRow): SalesAuditInput {
   return {
     unp: str(row.unp) ?? '',
     fiscalDeviceNumber: str(row.fiscalDeviceNumber) ?? '',
     operatorCode: str(row.operatorCode),
     saleDate: str(row.saleDate) ?? new Date(0).toISOString(),
     total: typeof row.total === 'number' ? row.total : 0,
+    vatTotal: vatTotalForItems(itemsOf(row.items)),
     currency: str(row.currency),
     paymentType: str(row.paymentType),
     status: str(row.status),
@@ -60,12 +75,12 @@ function toInput(row: SaleRow): SuptoSaleInput {
 }
 
 /** Collect all sales in `[periodStart, periodEnd]` for a tenant (no pagination cap). */
-export async function collectSuptoSales(
+export async function collectSales(
   payload: Payload,
   args: { tenant: string; periodStart: string; periodEnd: string; collection?: string; req?: PayloadRequest },
-): Promise<SuptoSaleInput[]> {
+): Promise<SalesAuditInput[]> {
   const res = await payload.find({
-    collection: (args.collection ?? 'supto-sales') as never,
+    collection: (args.collection ?? 'sales') as never,
     where: {
       tenant: { equals: args.tenant },
       saleDate: { greater_than_equal: args.periodStart, less_than_equal: args.periodEnd },
@@ -77,14 +92,14 @@ export async function collectSuptoSales(
   return (res.docs as SaleRow[]).map(toInput)
 }
 
-export interface SubmitSuptoAuditResult {
-  readonly report: SuptoAuditReport
+export interface SubmitSalesAuditResult {
+  readonly report: SalesAuditReport
   readonly xml: string
   readonly submission: unknown
 }
 
 /** Collect → build → (optionally) submit the standardized audit file for a tenant period. */
-export async function submitSuptoAuditFile(
+export async function submitSalesAuditFile(
   payload: Payload,
   args: {
     tenant: string
@@ -93,18 +108,18 @@ export async function submitSuptoAuditFile(
     tenantEik?: string
     collection?: string
     /** Pluggable submitter — default callers pass `(xml) => submitBgSaft(xml, config)`. */
-    submit?: (xml: string, report: SuptoAuditReport) => Promise<unknown>
+    submit?: (xml: string, report: SalesAuditReport) => Promise<unknown>
     req?: PayloadRequest
   },
-): Promise<SubmitSuptoAuditResult> {
-  const sales = await collectSuptoSales(payload, args)
-  const report = buildSuptoAuditReport({
+): Promise<SubmitSalesAuditResult> {
+  const sales = await collectSales(payload, args)
+  const report = buildSalesAuditReport({
     sales,
     periodStart: args.periodStart,
     periodEnd: args.periodEnd,
     tenantEik: args.tenantEik,
   })
-  const xml = toSuptoAuditXml(report)
+  const xml = toSalesAuditXml(report)
   const submission = args.submit ? await args.submit(xml, report) : undefined
   return { report, xml, submission }
 }

@@ -76,6 +76,29 @@ export const noopFiscalDeviceDriver: FiscalDeviceDriver = {
   issue: async (receipt) => ({ receiptNumber: `RCP-${receipt.unp}` }),
 }
 
+/**
+ * Group items into per-rate VAT subtotals via the canonical BG calculator
+ * (round-half-away-from-zero per НАП). Shared by the fiscal receipt and the
+ * standardized audit file so both speak one VAT engine.
+ */
+export function vatBreakdownForItems(
+  items: ReadonlyArray<{ vatRate?: number; amount?: number }>,
+): FiscalVatSubtotal[] {
+  const byRate = new Map<number, FiscalVatSubtotal>()
+  for (const i of items) {
+    const rate = i.vatRate ?? 0
+    const amount = i.amount ?? 0
+    const { vatAmountMinor } = calculateBgVat({ netAmountMinor: amount, rateOverride: rate })
+    const prev = byRate.get(rate)
+    byRate.set(rate, { rate, net: (prev?.net ?? 0) + amount, vat: (prev?.vat ?? 0) + vatAmountMinor })
+  }
+  return [...byRate.values()].sort((a, b) => a.rate - b.rate)
+}
+
+/** Total VAT (cents) across a sale's items — the breakdown summed. */
+export const vatTotalForItems = (items: ReadonlyArray<{ vatRate?: number; amount?: number }>): number =>
+  vatBreakdownForItems(items).reduce((sum, g) => sum + g.vat, 0)
+
 /** Build the fiscal receipt for a sale, carrying its УНП. Throws if the УНП is absent/invalid. */
 export function buildFiscalReceipt(sale: FiscalSaleInput, issuedAt: string | Date = new Date()): FiscalReceipt {
   if (typeof sale.unp !== 'string' || !isValidUnp(sale.unp)) {
@@ -92,18 +115,8 @@ export function buildFiscalReceipt(sale: FiscalSaleInput, issuedAt: string | Dat
     amount: i.amount ?? 0,
   }))
   // VAT per line through the canonical BG calculator (round-half-away-from-zero
-  // per НАП — correct for сторно/negative lines too), then grouped by rate.
-  const byRate = new Map<number, FiscalVatSubtotal>()
-  for (const l of lines) {
-    const { vatAmountMinor } = calculateBgVat({ netAmountMinor: l.amount, rateOverride: l.vatRate })
-    const prev = byRate.get(l.vatRate)
-    byRate.set(l.vatRate, {
-      rate: l.vatRate,
-      net: (prev?.net ?? 0) + l.amount,
-      vat: (prev?.vat ?? 0) + vatAmountMinor,
-    })
-  }
-  const vatBreakdown = [...byRate.values()].sort((a, b) => a.rate - b.rate)
+  // per НАП — correct for сторно/negative lines too), grouped by rate.
+  const vatBreakdown = vatBreakdownForItems(lines)
   const vatTotal = vatBreakdown.reduce((sum, g) => sum + g.vat, 0)
   return {
     unp: sale.unp,
