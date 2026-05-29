@@ -37,6 +37,9 @@ Adds every collection's slug to `taggings.taggable` polymorphic `relationTo`, an
 
 "Infinite presentations" = saved **query presets** over `(context, tag)` filters (see [[admin]]).
 
+## URL path = tag-composition (the public face of the same fractal law)
+A URL is the external presentation of `(context, tag)` filtering: `https://[host]/[tag1]/[tag2]/…/` — **`host`** = the tenant root (the `0`; Rails `HostConcern`/`Domain` → erpax tenant), then each segment is a **tag**, and the path is a `tagged_with` **chain → `where`** resolving against the akashic record. No bespoke routes — the tag chain IS the route; `host/customers/active/eu/` = scoped to host, tagged `active`, tagged `eu`. This is the *same* derived-address law as the skill path (`self/sufficient`), the file location (`domain × sequence-position × element`), and the object's content-uuid ([[identity]]) — self-describing and self-similar, just expressed at the `7·5` api·admin surface (see [[sequence]]). The path is the query; the query is the presentation. A **verb-headed command** (`/find/unpaid/invoices`) is the same path with a leading verb choosing the resolver (`find` → search/[[queries]]), the rest a tag-chain (`unpaid` = a derived state, `invoices` = target): **command = URL = query**, resolved against the akashic record. Qualifier segments are *derived* states (the [[commerce]]/[[manufacturing]] lesson), never stored flags.
+
 ## More features (all from the same 2 collections)
 - **Counts / tag cloud:** `taggingsCount` → most/least-used, `top_<ctx>`, `at_least`/`at_most`, frequency→CSS buckets.
 - **Ownership** (tagger): provenance — who applied the tag (ties to audit/[[accounting]]). `tag_list` excludes owned; `all_tags_list` includes all.

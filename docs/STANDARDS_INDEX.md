@@ -658,8 +658,8 @@ src/collections/Users/access/read.ts:16: * @standard NIST INCITS-359-2012 role-b
 src/collections/Users/access/updateAndDelete.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/collections/Users/endpoints/externalUsersLogin.ts:21: * @standard OWASP-ASVS V2.2 authentication-throttling
 src/collections/Users/hooks/ensureUniqueUsername.ts:25: * @standard W3C HTML5 input-validation client-side
-src/collections/Users/index.ts:206:     * @standard BCP-47 language-tag user-locale-preference
-src/collections/Users/index.ts:207:     * @standard ECMA-402 internationalization-api
+src/collections/Users/index.ts:214:     * @standard BCP-47 language-tag user-locale-preference
+src/collections/Users/index.ts:215:     * @standard ECMA-402 internationalization-api
 src/collections/Users/index.ts:54: * @standard BCP-47 language-tag user-locale
 src/collections/VendorQuotes.ts:10: * @standard ISO-8601-1:2019 date-time
 src/collections/VendorQuotes.ts:11: * @standard ISO-4217:2015 currency-codes
@@ -3133,7 +3133,7 @@ src/collections/Users/access/updateAndDelete.ts:15: * @compliance SOC-2 CC6.3 ac
 src/collections/Users/endpoints/externalUsersLogin.ts:25: * @compliance GDPR Art.32 security-of-processing
 src/collections/Users/endpoints/externalUsersLogin.ts:26: * @compliance SOC-2 CC6.1 logical-access-controls
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:25: * @compliance SOC-2 CC6.1 logical-access-controls
-src/collections/Users/index.ts:208:     * @compliance GDPR Art.12 transparent-information user-language-of-choice
+src/collections/Users/index.ts:216:     * @compliance GDPR Art.12 transparent-information user-language-of-choice
 src/collections/Users/index.ts:58: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/collections/Users/index.ts:59: * @compliance GDPR Art.32 security-of-processing
 src/collections/Users/index.ts:60: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -4442,7 +4442,7 @@ src/collections/Users/hooks/ensureUniqueUsername.ts:23: * @security ISO-27001 A.
 src/collections/Users/hooks/ensureUniqueUsername.ts:24: * @security ISO-27002 §5.16 identity-management
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:23: * @security ISO-27001 A.5.17 authentication-information
 src/collections/Users/hooks/setCookieBasedOnDomain.ts:24: * @security ISO-27002 §8.5 secure-authentication
-src/collections/Users/index.ts:209:     * @security ISO-27002 §5.15 access-control per-user-feature-flags
+src/collections/Users/index.ts:217:     * @security ISO-27002 §5.15 access-control per-user-feature-flags
 src/collections/Users/index.ts:55: * @security ISO-27001 A.5.16 identity-management
 src/collections/Users/index.ts:56: * @security ISO-27001 A.5.17 authentication-information
 src/collections/Users/index.ts:57: * @security ISO-27002 §8.5 secure-authentication
@@ -4839,7 +4839,7 @@ src/collections/UserRoles/index.ts:14: * @audit ISO-19011:2018 audit-trail
 src/collections/Users/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Users/endpoints/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/Users/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/Users/index.ts:210:     * @audit ISO-19011:2018 audit-trail user-config-change
+src/collections/Users/index.ts:218:     * @audit ISO-19011:2018 audit-trail user-config-change
 src/collections/VendorQuotes.ts:15: * @audit ISO-19011:2018 audit-trail rfq-evidence
 src/collections/VendorScorecards.ts:12: * @audit ISO-19011:2018 audit-trail vendor-evaluation
 src/collections/WarehouseLocations.ts:15: * @audit ISO-19011:2018 audit-trail location-master-changes
