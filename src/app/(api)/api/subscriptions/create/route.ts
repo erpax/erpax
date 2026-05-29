@@ -16,6 +16,7 @@
 import config from '@payload-config'
 import { getPayload } from 'payload'
 import Stripe from 'stripe'
+import { tenantIdFromRelation } from '@/utilities/tenantRemoteSecrets'
 
 export async function POST(request: Request) {
   try {
@@ -27,7 +28,7 @@ export async function POST(request: Request) {
       return Response.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const tenantId = user.tenant as string
+    const tenantId = tenantIdFromRelation(user.tenants?.[0]?.tenant)
     if (!tenantId) {
       return Response.json({ error: 'No tenant associated with user' }, { status: 400 })
     }

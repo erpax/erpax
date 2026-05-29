@@ -43,7 +43,7 @@ export default async function Page({
       limit: 1,
       overrideAccess: false,
       pagination: false,
-      select: { id: true },
+      select: {},
       user,
       where: {
         domain: {

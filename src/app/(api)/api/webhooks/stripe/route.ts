@@ -106,11 +106,11 @@ export async function POST(request: Request) {
 
       try {
         await handler(
-          { payload },
+          { event, payload },
           eventData,
         )
       } catch (handlerError) {
-        payload.logger.error(`Error handling webhook ${event.type}:`, handlerError)
+        payload.logger.error({ msg: `Error handling webhook ${event.type}`, err: handlerError })
         return Response.json(
           { error: `Handler error: ${(handlerError as Error).message}` },
           { status: 500 },

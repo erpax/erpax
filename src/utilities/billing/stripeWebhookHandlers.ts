@@ -249,7 +249,7 @@ export async function handleInvoiceSync(
   // are integer minor units; map onto the nested groups (see the
   // `accounting` skill).
   const billingSync = {
-    typeStatus: { status: mapInvoiceStatus(stripeInvoice.status) },
+    status: mapInvoiceStatus(stripeInvoice.status),
     amounts: { totalDue: stripeInvoice.amount_due, totalPaid: stripeInvoice.amount_paid },
     dates: {
       issuedAt: new Date(stripeInvoice.created * 1000).toISOString(),
@@ -298,7 +298,7 @@ export async function handleInvoicePaid(
     collection: 'invoices',
     id: invoice.id,
     data: {
-      typeStatus: { status: 'paid' },
+      status: 'paid',
       dates: { paidAt: new Date().toISOString() },
     },
   })
