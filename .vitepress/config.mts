@@ -12,6 +12,7 @@ const SKILLS_DIR = '.claude/skills'
 
 type SidebarItem = { text: string; link?: string; collapsed?: boolean; items?: SidebarItem[] }
 const wikiMap: Record<string, string> = {} // leaf word → route
+const allSkills: { name: string; route: string }[] = [] // flat list → the reading chain
 
 function routeOf(relDir: string): string {
   // Routes are srcDir-relative (srcDir = SKILLS_DIR), so drop that base prefix:
@@ -27,6 +28,7 @@ function walk(dir: string): SidebarItem[] {
     const rel = relative('.', full)
     const route = routeOf(rel)
     wikiMap[name] = route // leaf-word resolution (one word per concept ⇒ unique)
+    allSkills.push({ name, route })
     const children = walk(full)
     items.push(children.length ? { text: name, link: route, collapsed: true, items: children } : { text: name, link: route })
   }
@@ -34,6 +36,37 @@ function walk(dir: string): SidebarItem[] {
 }
 
 const skillSidebar = walk(SKILLS_DIR)
+
+// ── Reading order = the sequence (0·3·6·9·1·2·4·8·7·5), DERIVED from the
+// `sequence` skill's "Positions → skills" table — the akashic source of the
+// order, the one thing NOT derivable from the path. prev/next walk this chain
+// so an agent following `next` reads the corpus as the dance, not A→Z. Skills
+// absent from the table fall back to alphabetical, after the core order.
+function sequenceOrder(): string[] {
+  try {
+    const txt = readFileSync(join(SKILLS_DIR, 'sequence', 'SKILL.md'), 'utf8')
+    const start = txt.indexOf('Positions → skills')
+    if (start < 0) return []
+    const next = txt.indexOf('\n## ', start + 1)
+    const region = txt.slice(start, next < 0 ? undefined : next)
+    const order: string[] = []
+    for (const m of region.matchAll(/`([a-z][a-z0-9-]*)`/g)) {
+      if (!order.includes(m[1])) order.push(m[1])
+    }
+    return order
+  } catch {
+    return []
+  }
+}
+const SEQ = sequenceOrder()
+const seqRank = (name: string): number => {
+  const i = SEQ.indexOf(name)
+  return i < 0 ? Number.MAX_SAFE_INTEGER : i
+}
+const readingChain = [...allSkills].sort(
+  (a, b) => seqRank(a.name) - seqRank(b.name) || a.route.localeCompare(b.route),
+)
+const chainIndex = new Map(readingChain.map((s, i) => [s.route, i]))
 
 // ── Directional relations, COMPUTED from the path (never stored) ───────────
 // The path IS the address, so a skill's neighbours are derivable: ancestors /
@@ -200,6 +233,16 @@ export default defineConfig({
     const rel = pageData.relativePath
     if (rel.endsWith('SKILL.md')) {
       Object.assign(pageData.frontmatter, relationsFromPath(rel))
+      // prev/next walk the sequence reading-chain (override VitePress's
+      // alphabetical sidebar default) so `next` reads the corpus as the dance.
+      const route = '/' + rel.replace(/\.md$/, '')
+      const i = chainIndex.get(route)
+      if (i !== undefined) {
+        const p = readingChain[i - 1]
+        const n = readingChain[i + 1]
+        pageData.frontmatter.prev = p ? { text: p.name, link: p.route } : false
+        pageData.frontmatter.next = n ? { text: n.name, link: n.route } : false
+      }
     }
   },
   markdown: {
