@@ -25,7 +25,7 @@ const SALE = {
   items: [{ description: 'Widget', quantity: 2, unitPrice: 600_00, vatRate: 20, amount: 1_000_00 }],
 }
 
-function mockPayload(found = [SALE]) {
+function mockPayload(found: Array<Record<string, unknown>> = [SALE]) {
   return {
     create: vi.fn().mockResolvedValue({ id: 'rcp-1' }),
     update: vi.fn().mockResolvedValue({}),

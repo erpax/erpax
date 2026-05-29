@@ -10,11 +10,11 @@
  *
  * @standard BG Наредба-Н-18 §Приложение-38 monthly-audit-file
  * @audit ISO-19011:2018 §6.4 audit-evidence
- * @see src/services/supto/submit-audit-file.ts
+ * @see src/services/sales/submit-audit-file.ts
  */
 
 import type { Payload } from 'payload'
-import { submitSuptoAuditFile } from '@/services/supto/submit-audit-file'
+import { submitSalesAuditFile } from '@/services/sales/submit-audit-file'
 
 /** Prior calendar month as `[periodStart, periodEnd]` ISO strings (UTC). */
 export function priorMonthUtc(now: Date = new Date()): { periodStart: string; periodEnd: string } {
@@ -25,17 +25,17 @@ export function priorMonthUtc(now: Date = new Date()): { periodStart: string; pe
   return { periodStart: start.toISOString(), periodEnd: end.toISOString() }
 }
 
-export interface SuptoAuditRunResult {
+export interface SalesAuditRunResult {
   readonly periodStart: string
   readonly periodEnd: string
   readonly tenants: number
   readonly built: number
 }
 
-export async function processSuptoAuditFiles(
+export async function processSalesAuditFiles(
   payload: Payload,
-  opts: { submit?: Parameters<typeof submitSuptoAuditFile>[1]['submit']; now?: Date } = {},
-): Promise<SuptoAuditRunResult> {
+  opts: { submit?: Parameters<typeof submitSalesAuditFile>[1]['submit']; now?: Date } = {},
+): Promise<SalesAuditRunResult> {
   const { periodStart, periodEnd } = priorMonthUtc(opts.now)
   const tenants = await payload.find({
     collection: 'tenants' as never,
@@ -46,17 +46,32 @@ export async function processSuptoAuditFiles(
   for (const t of tenants.docs as Array<{ id?: unknown }>) {
     const tenant = String(t.id)
     try {
-      const { report } = await submitSuptoAuditFile(payload, { tenant, periodStart, periodEnd, submit: opts.submit })
+      const { report, xml } = await submitSalesAuditFile(payload, { tenant, periodStart, periodEnd, submit: opts.submit })
+      // Persist the file as the compliance evidence trail (audit-submissions).
+      await payload.create({
+        collection: 'audit-submissions' as never,
+        overrideAccess: true,
+        data: {
+          tenant,
+          periodStart,
+          periodEnd,
+          count: report.count,
+          controlSum: report.controlSum,
+          status: opts.submit ? 'submitted' : 'built',
+          submittedAt: opts.submit ? new Date().toISOString() : undefined,
+          xml,
+        } as never,
+      })
       built += 1
       payload.logger?.info?.({
-        msg: 'supto:audit-file built',
+        msg: 'sales:audit-file built',
         tenant,
         count: report.count,
         controlSum: report.controlSum,
         submitted: Boolean(opts.submit),
       })
     } catch (err) {
-      payload.logger?.error?.({ msg: 'supto:audit-file failed', tenant, err: err instanceof Error ? err.message : String(err) })
+      payload.logger?.error?.({ msg: 'sales:audit-file failed', tenant, err: err instanceof Error ? err.message : String(err) })
     }
   }
   return { periodStart, periodEnd, tenants: tenants.docs.length, built }
