@@ -39,7 +39,7 @@ export function devStripeWebhookFallback(): string {
 
 export async function getTenantById(
   payload: Payload,
-  id: number | undefined | null,
+  id: string | undefined | null,
 ): Promise<Tenant | null> {
   if (id == null) return null
   try {
@@ -50,8 +50,8 @@ export async function getTenantById(
 }
 
 export function tenantIdFromRelation(
-  tenant: Cart['tenant'] | Tenant | number | null | undefined,
-): number | null {
+  tenant: Cart['tenant'] | Tenant | null | undefined,
+): string | null {
   if (tenant == null) return null
   return typeof tenant === 'object' ? tenant.id : tenant
 }

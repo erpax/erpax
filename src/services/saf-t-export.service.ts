@@ -419,10 +419,7 @@ export const buildGeneralLedgerEntries = async (
 
   for (const doc of docs) {
     const journalId = journalIdFor(doc.sourceType)
-    const txDate =
-      (doc.entryDate as unknown) instanceof Date
-        ? doc.entryDate
-        : new Date(doc.entryDate ?? doc.createdAt ?? new Date())
+    const txDate = new Date(doc.entryDate ?? doc.createdAt ?? new Date())
     const systemEntryDate = (doc.createdAt
       ? new Date(doc.createdAt)
       : txDate

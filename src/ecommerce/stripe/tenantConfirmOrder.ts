@@ -21,7 +21,7 @@ import Stripe from 'stripe'
 import type { PayloadRequest } from 'payload'
 import { APIError } from 'payload'
 
-import type { Config } from '@/payload-types'
+import type { Config, Order, Transaction } from '@/payload-types'
 
 import { apiErr, ERR } from '@/utilities/errors'
 import {
@@ -76,7 +76,7 @@ export function tenantConfirmOrder(props?: {
       limit: 1,
     })
 
-    const transaction = transactionsResults.docs[0]
+    const transaction = transactionsResults.docs[0] as Transaction | undefined
     if (!transactionsResults.totalDocs || !transaction) {
       throw apiErr(ERR.PAY_TRANSACTION_NOT_FOUND)
     }
@@ -127,11 +127,13 @@ export function tenantConfirmOrder(props?: {
 
       const tenantField = tenantIdFromRelation(transaction.tenant)
 
-      const order = await payload.create({
+      const order = (await payload.create({
         collection: ordersSlug as CollectionSlug,
         data: {
           amount: paymentIntent.amount,
-          currency: paymentIntent.currency.toUpperCase(),
+          // Stripe charges in the order's configured currency; the
+          // generated Order.currency union is the authority for valid codes.
+          currency: paymentIntent.currency.toUpperCase() as NonNullable<Order['currency']>,
           ...(req.user
             ? {
                 customer: req.user.id,
@@ -146,7 +148,7 @@ export function tenantConfirmOrder(props?: {
           ...(tenantField != null ? { tenant: tenantField } : {}),
         },
         req,
-      })
+      })) as unknown as Order
 
       const timestamp = new Date().toISOString()
       await payload.update({

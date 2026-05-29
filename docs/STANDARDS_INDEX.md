@@ -1716,7 +1716,7 @@ src/services/receivables/analytics.service.ts:8: * @standard ISO-8601-1:2019 dat
 src/services/receivables/workflow.service.ts:6: * @standard EN-16931:2017 invoice-lifecycle
 src/services/saf-t-export.service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/services/saf-t-export.service.test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
-src/services/saf-t-export.service.ts:1280: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/services/saf-t-export.service.ts:1277: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:30: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service.ts:31: * @standard ISO-3166-1:2020 country-codes
 src/services/saf-t-export.service.ts:32: * @standard ISO-4217:2015 currency-codes
