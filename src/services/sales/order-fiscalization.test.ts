@@ -76,11 +76,10 @@ describe('fiscalizeOrder', () => {
     expect(m.create).not.toHaveBeenCalled()
   })
 
-  it('skips (logs) when the tenant has no registered fiscal device', async () => {
+  it('refuses to fiscalize (throws — no bypass) when the tenant has no fiscal device', async () => {
     const m = mockPayload({ device: null })
-    await fiscalizeOrder(asPayload(m), ORDER, 't1')
+    await expect(fiscalizeOrder(asPayload(m), ORDER, 't1')).rejects.toThrow(/no СУПТО bypass/)
     expect(m.create).not.toHaveBeenCalled()
-    expect(m.logger.error).toHaveBeenCalled()
   })
 })
 

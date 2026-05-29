@@ -128,8 +128,12 @@ export async function fiscalizeOrder(
 
   const fiscalDeviceNumber = await resolveDeviceNumber(payload, tenant, req)
   if (!fiscalDeviceNumber) {
-    payload.logger?.error?.({ msg: 'order fiscalization skipped — no fiscal device for tenant', tenant, orderId: p.orderId })
-    return undefined
+    // No СУПТО bypass: a paid order MUST be fiscalized. A tenant with no
+    // registered ФУ is a compliance misconfiguration — fail loudly (the
+    // subscriber routes this to the error log / dead-letter), never skip.
+    throw new Error(
+      `Наредба Н-18: cannot fiscalize order ${p.orderId} — tenant ${tenant || 'unknown'} has no registered fiscal device (no СУПТО bypass).`,
+    )
   }
 
   const items = (p.lineItems ?? []).map(lineToSaleItem)

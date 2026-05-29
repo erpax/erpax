@@ -27,6 +27,7 @@ interface SaleShape {
   unpSequence?: unknown
   fiscalDeviceNumber?: unknown
   operatorCode?: unknown
+  status?: unknown
   tenant?: unknown
 }
 
@@ -41,50 +42,80 @@ function tenantOf(data: SaleShape): string | undefined {
   return undefined
 }
 
+const str = (v: unknown): string | undefined => (typeof v === 'string' && v ? v : undefined)
+
+/** Assign the next per-ФУ gapless УНП onto `d` (mutates `unp` + `unpSequence`). */
+async function assignNextUnp(
+  collectionSlug: string,
+  d: SaleShape,
+  device: string,
+  req: Parameters<CollectionBeforeChangeHook>[0]['req'],
+): Promise<void> {
+  const operatorCode = str(d.operatorCode) ?? '0000'
+  const tenant = tenantOf(d)
+  const prior = await req.payload.find({
+    collection: collectionSlug as never,
+    where: {
+      fiscalDeviceNumber: { equals: device },
+      ...(tenant ? { tenant: { equals: tenant } } : {}),
+    },
+    sort: '-unpSequence',
+    limit: 1,
+    overrideAccess: true,
+    req,
+  })
+  const lastSeq = Number((prior.docs[0] as SaleShape | undefined)?.unpSequence ?? 0)
+  const sequence = (Number.isFinite(lastSeq) ? lastSeq : 0) + 1
+  d.fiscalDeviceNumber = device
+  d.unpSequence = sequence
+  d.unp = formatUnp({ fiscalDeviceId: device, operatorCode, sequence })
+}
+
+const NO_BYPASS =
+  'Наредба Н-18: a sale cannot be closed without a fiscal device — no СУПТО bypass (every closed sale carries a УНП).'
+
 /**
  * beforeChange hook factory. `collectionSlug` is the sales collection the УНП
  * sequence is scoped within (per fiscal device, per tenant).
+ *
+ * No СУПТО bypass: a sale that is **closed** MUST carry a УНП. A device-less
+ * sale may exist only as an open draft; closing one without a fiscal device is
+ * rejected, and a closing sale that lacks a number gets one assigned.
  */
 export const assignSaleUnpHook =
   (collectionSlug: string): CollectionBeforeChangeHook =>
   async ({ data, operation, originalDoc, req }) => {
     const d = data as SaleShape
+    const orig = originalDoc as SaleShape | undefined
+    const effectiveClosed = (d.status ?? orig?.status) === 'closed'
+    const alreadyNumbered =
+      (typeof orig?.unp === 'string' && isValidUnp(orig.unp)) ||
+      (typeof d.unp === 'string' && isValidUnp(d.unp))
 
-    // Frozen on creation — reject any later attempt to change the УНП.
     if (operation === 'update') {
-      const prev = (originalDoc as SaleShape | undefined)?.unp
-      if (typeof prev === 'string' && typeof d.unp === 'string' && d.unp !== prev) {
-        throw new Error(
-          `Наредба Н-18: УНП is frozen at creation; '${String(prev)}' cannot become '${String(d.unp)}'.`,
-        )
+      // Frozen on creation — reject any later attempt to change the УНП.
+      const prev = str(orig?.unp)
+      if (prev && typeof d.unp === 'string' && d.unp !== prev) {
+        throw new Error(`Наредба Н-18: УНП is frozen at creation; '${prev}' cannot become '${String(d.unp)}'.`)
+      }
+      // No bypass: closing an as-yet-unnumbered sale must assign its УНП now.
+      if (effectiveClosed && !alreadyNumbered) {
+        const device = str(d.fiscalDeviceNumber) ?? str(orig?.fiscalDeviceNumber)
+        if (!device) throw new Error(NO_BYPASS)
+        await assignNextUnp(collectionSlug, d, device, req)
       }
       return data
     }
 
+    // create
     if (typeof d.unp === 'string' && isValidUnp(d.unp)) return data // idempotent
 
-    const device = typeof d.fiscalDeviceNumber === 'string' ? d.fiscalDeviceNumber : undefined
-    if (!device) return data // device-less drafts validated elsewhere; nothing to number yet
-
-    const operatorCode = typeof d.operatorCode === 'string' ? d.operatorCode : '0000'
-    const tenant = tenantOf(d)
-
-    const prior = await req.payload.find({
-      collection: collectionSlug as never,
-      where: {
-        fiscalDeviceNumber: { equals: device },
-        ...(tenant ? { tenant: { equals: tenant } } : {}),
-      },
-      sort: '-unpSequence',
-      limit: 1,
-      overrideAccess: true,
-      req,
-    })
-
-    const lastSeq = Number((prior.docs[0] as SaleShape | undefined)?.unpSequence ?? 0)
-    const sequence = (Number.isFinite(lastSeq) ? lastSeq : 0) + 1
-
-    d.unpSequence = sequence
-    d.unp = formatUnp({ fiscalDeviceId: device, operatorCode, sequence })
+    const device = str(d.fiscalDeviceNumber)
+    if (!device) {
+      // A device-less sale is allowed only as an open draft — never closed.
+      if (effectiveClosed) throw new Error(NO_BYPASS)
+      return data // numbered when a device is set / on close
+    }
+    await assignNextUnp(collectionSlug, d, device, req)
     return data
   }

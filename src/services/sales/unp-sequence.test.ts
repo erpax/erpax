@@ -4,7 +4,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §СУПТО УНП
- * @see src/services/supto/unp-sequence.ts
+ * @see src/services/sales/unp-sequence.ts
  */
 
 import { describe, it, expect, vi } from 'vitest'
@@ -32,7 +32,7 @@ const run = (
   } as unknown as HookArgs)
 
 describe('assignSaleUnpHook — per-ФУ gapless УНП', () => {
-  const hook = assignSaleUnpHook('supto-sales')
+  const hook = assignSaleUnpHook('sales')
 
   it('assigns 0000001 for the first sale on a fiscal device', async () => {
     const { find } = ctx([])
@@ -51,7 +51,7 @@ describe('assignSaleUnpHook — per-ФУ gapless УНП', () => {
     // scoped query: by device + tenant, newest first
     expect(find).toHaveBeenCalledWith(
       expect.objectContaining({
-        collection: 'supto-sales',
+        collection: 'sales',
         where: { fiscalDeviceNumber: { equals: '12345678' }, tenant: { equals: 't1' } },
         sort: '-unpSequence',
       }),
@@ -73,12 +73,38 @@ describe('assignSaleUnpHook — per-ФУ gapless УНП', () => {
     expect(find).not.toHaveBeenCalled()
   })
 
-  it('does nothing without a fiscal device (numbered later)', async () => {
+  it('does nothing for an OPEN draft without a fiscal device (numbered later)', async () => {
     const { find } = ctx([])
     const data: Record<string, unknown> = { operatorCode: '0042' }
     const out = (await run(hook, { data, operation: 'create', find })) as { unp?: string }
     expect(out.unp).toBeUndefined()
     expect(find).not.toHaveBeenCalled()
+  })
+
+  it('rejects creating a CLOSED sale without a fiscal device (no СУПТО bypass)', async () => {
+    const { find } = ctx([])
+    await expect(
+      run(hook, { data: { status: 'closed', operatorCode: '0042' }, operation: 'create', find }),
+    ).rejects.toThrow(/no СУПТО bypass/)
+  })
+
+  it('rejects closing an unnumbered sale that has no fiscal device (no bypass)', async () => {
+    const { find } = ctx([])
+    await expect(
+      run(hook, { data: { status: 'closed' }, operation: 'update', originalDoc: {}, find }),
+    ).rejects.toThrow(/no СУПТО bypass/)
+  })
+
+  it('assigns the УНП when an unnumbered sale is closed on its device', async () => {
+    const { find } = ctx([{ unpSequence: 6 }])
+    const out = (await run(hook, {
+      data: { status: 'closed', operatorCode: '0042' },
+      operation: 'update',
+      originalDoc: { fiscalDeviceNumber: '12345678' },
+      find,
+    })) as { unp: string; unpSequence: number }
+    expect(out.unp).toBe('12345678-0042-0000007')
+    expect(out.unpSequence).toBe(7)
   })
 
   it('freezes the УНП on update — rejects a change', async () => {
