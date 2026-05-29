@@ -15,7 +15,7 @@
  * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
  * @standard BG Наредба-Н-18 §Приложение-38 (monthly reporting — the audit file)
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/supto/fiscal-receipt.ts · src/services/supto/submit-audit-file.ts
+ * @see src/services/sales/fiscal-receipt.ts · src/services/sales/submit-audit-file.ts
  */
 
 import type { FiscalDeviceDriver, FiscalReceipt } from './fiscal-receipt'

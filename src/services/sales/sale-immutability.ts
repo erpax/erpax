@@ -13,7 +13,7 @@
  * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
  * @audit ISO-19011:2018 audit-trail
  * @compliance SOX §404 internal-controls
- * @see src/services/supto/reverse-sale.ts · .claude/skills/reverse/SKILL.md
+ * @see src/services/sales/reverse-sale.ts · .claude/skills/reverse/SKILL.md
  */
 
 import type { CollectionBeforeChangeHook } from 'payload'

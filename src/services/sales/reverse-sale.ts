@@ -11,7 +11,7 @@
  *
  * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
  * @audit ISO-19011:2018 audit-trail
- * @see .claude/skills/reverse/SKILL.md · src/services/supto/sale-immutability.ts
+ * @see .claude/skills/reverse/SKILL.md · src/services/sales/sale-immutability.ts
  */
 
 import type { Payload, PayloadRequest } from 'payload'
@@ -59,7 +59,7 @@ export async function reverseSale(
   payload: Payload,
   args: { collection?: string; originalSaleId: string | number; reason?: string; req?: PayloadRequest },
 ): Promise<ReverseSaleResult> {
-  const collection = (args.collection ?? 'supto-sales') as never
+  const collection = (args.collection ?? 'sales') as never
   const req = args.req
 
   const original = (await payload.findByID({
