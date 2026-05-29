@@ -12,7 +12,7 @@ The archetype self-sufficient `@erpax/accounting`: it references every other dom
 ## Universal collections (generalizing canonical erpax)
 | Collection | erpax/Rails origin | generalization |
 |---|---|---|
-| `gl-accounts` | Account (tree) | self-referential `parent`(rel-self) chart of accounts; `type` select (asset/liability/equity/income/expense) |
+| `gl-accounts` | Account (tree) | self-referential `parent`(rel-self) chart of accounts; `type` select (asset/liability/equity/income/expense); a tenant's opening chart is seeded per (country × industry) via [[seed]] |
 | `journal-entries` | AccountingEntry | a balanced set of lines; `date`, `period`(rel), `postedAt`, `status` select |
 | `journal-lines` | accounting_entry lines | `{ account(rel), debit, credit, currency, accountable(rel:[...]) }[]` — `balance = credit − debit` |
 | `fiscal-periods` | locked-period | `start/end`, `locked` checkbox; write-guard hook rejects posting into a locked period |
