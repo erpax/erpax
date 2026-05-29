@@ -22,11 +22,19 @@ description: Bulgarian Наредба Н-18 / СУПТО retail fiscal regime �
 ## Why УНП ≈ uuid (the match, and the divergence)
 The УНП and the structured **uuidv8** are the *same idea*: a fixed-layout, **self-describing, lookup-free** identifier — decode the string and you know its origin (УНП → device+operator+sequence; uuidv8 → slot+capabilities+schema+content). Both make the id the coordinate that ties a flow together. The **divergence** is that УНП is **sequential** (regulatory gapless +1), not a content hash — so per [[identity]]'s standards-driven rule, a СУПТО sale's *regulatory* id is the УНП while the *machine* id is the content-uuid (uuidv8 `TAMPER_PROOF`) riding beside it — the row-`id` ↔ content-`uuid` [[duality]]. The [[number]] law states it exactly: *the number is the human/regulatory handle, the content-uuid the machine identity.*
 
-## Gaps to close (the seeds)
-1. **УНП generator** — a per-ФУ sequence hook emitting `XXXXXXXX-ZZZZ-0000001` + a format validator ([[number]] specialised; tests mirror it).
-2. **УНП as the lifecycle coordinate** — stamp it on the sale, propagate to fiscal receipt + payment ([[event]]/[[identity]]).
-3. **ФУ integration** — a country-client membrane call ([[hooks]], like `submitBgSaft`).
-4. **BG audit file** — the Appendix-38 XML variant over the OECD SAF-T base.
-5. **Wire tamper-proof content-uuid + audit chain** onto the СУПТО sales collections (mechanism exists; opt the entities in).
+## Built (the matter that realises this skill)
+- **УНП format** — `src/standards/naredba-n-18/unp.ts` (format/parse/validate/increment; `parseUnp` = the reverse/decode). Test 10/10.
+- **Per-ФУ sequence hook** — `src/services/supto/unp-sequence.ts` (`assignSaleUnpHook`: gapless max+1, frozen on update). Test 7/7.
+- **Collections** — `fiscal-devices` (ФУ register) + `supto-sales` (Наредба Н-18 sale register), tenant-scoped, `delete: () => false`, content-uuid + audit-chain wired.
+- **Immutability + сторно** — `sale-immutability.ts` (completed sales frozen; closed→reversed only) + `reverse-sale.ts` (negated mirror, preserves + seals original). Tests 11/11.
+- **Closed event** — `sale-event.ts` emits `supto:sale:closed` keyed by content-uuid ([[event]]).
+- **Audit file** — `audit-file.ts` builds the Приложение-38 report + XML over the SAF-T base (count + net control sum). Test 7/7.
+
+## Remaining (the next seeds)
+- **Concurrency-safe per-ФУ counter** — the `max+1` read-modify-write must serialise through the `RATE_LIMITER`/counter Durable Object under load ([[bindings]]); today uniqueness rests on the `unp` `unique` constraint.
+- **ФУ hardware protocol** — the physical fiscal-device receipt issuance (external; a [[hooks]] membrane call like `submitBgSaft`); plus printing the УНП on the касов бон.
+- **Audit-file submission** — wire `buildSuptoAuditReport` → `submitBgSaft` on the monthly cadence ([[jobs]] cron).
+- **Audit profile** — adopt the existing read-only access role (the uuid-share `audit` ⊥ AccessRole / [[access]] read-scope) on the СУПТО collections; no new RBAC needed.
+- Registration with the НАП СУПТО registry + certification is operational, outside code.
 
 Composes: [[identity]] (content-uuid + standards-driven id type + uuidv8/decode) · [[number]] (УНП sequence) · [[reverse]] (сторно) · [[standard]] (Н-18 is a real `@standard`, not decoration) · [[accounting]] (the sale → GL) · [[event]] (УНП-keyed lifecycle) · [[access]] (audit profile).
