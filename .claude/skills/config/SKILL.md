@@ -28,7 +28,7 @@ export default buildConfig({
 | `secret` * | Unguessable string for hashing/encryption. |
 | `collections` / `globals` | Data schemas (many docs / single doc). |
 | `editor` | richText editor (lexical). |
-| `plugins` | Array of `(config)=>config` plugins. **erpax itself is a plugin.** |
+| `plugins` | Array of `(config)=>config` plugins (official ones too, e.g. [[redirects]]). **erpax itself is a plugin.** |
 | `admin` | Admin Panel config (components, live preview, routes). |
 | `graphQL` | `disable`, `maxComplexity`, custom queries (see [[harden]]). |
 | `cors` / `csrf` / `cookiePrefix` | Cross-origin + cookie security. |

@@ -29,6 +29,9 @@ sessions:
 ## GlobalConfig
 `slug`, `fields`, `access`, `hooks`, `admin`, `versions`, `dbName`.
 
+## Subtypes (one table, many behaviors)
+When a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment/party kinds), use a flat `type` discriminator on ONE collection — see [[sti]] — not N near-duplicate collections.
+
 ## Export convention (this repo)
 Collections export a **named const** (`export const Posts: CollectionConfig`); the barrel `collections/index.ts` re-exports them. Keep `export { X }` and `export { default as X }` aligned with each file's actual export (mismatch → ESM "no default export"; see [[recover]]).
 

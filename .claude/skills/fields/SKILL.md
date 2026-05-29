@@ -18,6 +18,8 @@ Fields define the document schema and auto-generate the admin UI. Every field ha
 | Nested data | `array`, `blocks` (use top-level `blocks` + `blockReferences` to DRY — see [[optimize]]), `group` |
 | Presentational (no data) | `row`, `collapsible`, `tabs`, `ui` |
 
+Open/extensible attributes that don't merit a typed field → a `json` bag, the [[metadata]] pattern (but prefer a real field or a [[tags]] context first).
+
 ## Shared properties
 | Prop | Purpose |
 |---|---|
