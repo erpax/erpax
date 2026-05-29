@@ -4100,14 +4100,14 @@ src/services/journal-entry.service.ts:37:   * @accounting US-GAAP ASC-280 segmen
 src/services/lease.service.ts:104: * @accounting IFRS IFRS-16 §26 present-value-of-payments
 src/services/lease.service.ts:158: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
 src/services/lease.service.ts:159: * @accounting IFRS IFRS-16 §26-§28 liability-initial-measurement
-src/services/lease.service.ts:223: * @accounting IFRS IFRS-16 §31 §36 §38 amortisation
+src/services/lease.service.ts:224: * @accounting IFRS IFRS-16 §31 §36 §38 amortisation
 src/services/lease.service.ts:24: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
 src/services/lease.service.ts:25: * @accounting IFRS IFRS-16 §26-§28 liability-initial-measurement
 src/services/lease.service.ts:26: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
 src/services/lease.service.ts:27: * @accounting IFRS IFRS-16 §36-§38 lease-liability-amortised-cost
-src/services/lease.service.ts:281: * @accounting IFRS IFRS-16 §36-§38 effective-interest-method
 src/services/lease.service.ts:28: * @accounting US-GAAP ASC-842-20-30 initial-measurement
 src/services/lease.service.ts:29: * @accounting US-GAAP ASC-842-20-35 subsequent-measurement
+src/services/lease.service.ts:303: * @accounting IFRS IFRS-16 §36-§38 effective-interest-method
 src/services/lease.service.ts:59: * @accounting IFRS IFRS-16 §36 effective-interest-method
 src/services/multi-currency.service.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
 src/services/multi-currency.service.ts:17: * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
