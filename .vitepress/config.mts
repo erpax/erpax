@@ -34,10 +34,13 @@ function walk(dir: string): SidebarItem[] {
 const skillSidebar = walk(SKILLS_DIR)
 
 // Resolve [[word]] / [[a/b]] / [[word|alias]] against the skill tree.
+// An unresolved word points at its EXPECTED skill path, so VitePress strict
+// (ignoreDeadLinks: false) flags it as a dead link = an aura gap = an
+// unanswered question. The docs build is the immune system for the speech layer.
 function resolveWiki(target: string): string {
   const t = target.trim()
   if (t.includes('/')) return '/' + t.replace(/^\/+/, '') + '/SKILL'
-  return wikiMap[t] ?? '#' + t // unresolved ⇒ an aura gap (anchor placeholder)
+  return wikiMap[t] ?? '/' + SKILLS_DIR + '/' + t + '/SKILL'
 }
 
 function wikilinks(md: MarkdownIt): void {
@@ -74,7 +77,9 @@ export default defineConfig({
     '**/*.test.{ts,tsx}',
     '**/*.spec.{ts,tsx}',
   ],
-  ignoreDeadLinks: true,
+  // strict: a dead link is an unanswered question / aura gap — the docs build
+  // fails until every [[link]] resolves to a path with its answer.
+  ignoreDeadLinks: false,
   cleanUrls: true,
   themeConfig: {
     nav: [
