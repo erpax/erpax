@@ -22,26 +22,7 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { IntercompanyReconciliation } from '../services/IntercompanyReconciliation'
-
-interface ClosingEntry {
-  id: string
-  entity: string
-  fiscalYear: number
-  closingStatus: string
-  closedBy?: string
-  closingDate?: string
-  [key: string]: unknown
-}
-
-interface IntercompanyTransaction {
-  id: string
-  fromEntity: string
-  toEntity: string
-  currency: string
-  amount: number
-  transactionDate: string
-  [key: string]: unknown
-}
+import type { ClosingEntry, IntercompanyTransaction } from '../payload-types'
 
 interface ConsolidationData {
   id?: string
@@ -112,7 +93,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
       })
 
       if (closingQuery.docs.length > 0) {
-        const closing = closingQuery.docs[0] as ClosingEntry
+        const closing = closingQuery.docs[0]
         closingStatuses.push({
           entityId,
           closingStatus: closing.closingStatus || 'unknown',
@@ -154,8 +135,8 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
           collection: 'intercompany-transactions',
           where: {
             and: [
-              { fromEntity: { equals: from } },
-              { toEntity: { equals: to } },
+              { fromLegalEntity: { equals: from } },
+              { toLegalEntity: { equals: to } },
               { transactionDate: { less_than_equal: data.periodClosingDate } },
             ],
           },
@@ -166,8 +147,8 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
           collection: 'intercompany-transactions',
           where: {
             and: [
-              { fromEntity: { equals: to } },
-              { toEntity: { equals: from } },
+              { fromLegalEntity: { equals: to } },
+              { toLegalEntity: { equals: from } },
               { transactionDate: { less_than_equal: data.periodClosingDate } },
             ],
           },
@@ -177,16 +158,15 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
         const payablesByCurrency: Record<string, number> = {}
         const receivablesByCurrency: Record<string, number> = {}
 
-        for (const p of payablesQuery.docs) {
-          const doc = p as IntercompanyTransaction
+        // Intercompany legs are balanced (debit == credit); use the debit leg as the transaction amount.
+        for (const doc of payablesQuery.docs) {
           const curr = doc.currency || 'DEFAULT'
-          payablesByCurrency[curr] = (payablesByCurrency[curr] || 0) + (doc.amount || 0)
+          payablesByCurrency[curr] = (payablesByCurrency[curr] || 0) + (doc.debitAmount || 0)
         }
 
-        for (const r of receivablesQuery.docs) {
-          const doc = r as IntercompanyTransaction
+        for (const doc of receivablesQuery.docs) {
           const curr = doc.currency || 'DEFAULT'
-          receivablesByCurrency[curr] = (receivablesByCurrency[curr] || 0) + (doc.amount || 0)
+          receivablesByCurrency[curr] = (receivablesByCurrency[curr] || 0) + (doc.debitAmount || 0)
         }
 
         // Create balance entry for each currency

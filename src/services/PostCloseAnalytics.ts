@@ -257,8 +257,10 @@ export class PostCloseAnalytics {
     consolidatedGLData: Record<string, unknown>,
     priorPeriodData?: Record<string, unknown>,
   ): RatioAnalysisReport {
-    const gl = consolidatedGLData as Record<string, unknown>
-    const prior = (priorPeriodData as Record<string, unknown>) || {}
+    // Ratios are pure numeric; treat the GL maps as number-valued so the
+    // `gl.x || default` extractions below are typed `number` (not `unknown`).
+    const gl = (consolidatedGLData ?? {}) as Record<string, number>
+    const prior = (priorPeriodData ?? {}) as Record<string, number>
 
     // Extract balance sheet and income statement values (simplified)
     const currentAssets = gl.currentAssets || 100000

@@ -146,7 +146,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
     })
 
     for (const tp of taxPeriodsQuery.docs) {
-      const doc = tp as TaxPeriod
+      const doc = tp as unknown as TaxPeriod
       // Verify tax period is closed or posted
       if (doc.taxStatus !== 'tax-closed' && doc.taxStatus !== 'adjustment-posted') {
         throw new Error(
@@ -174,7 +174,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
     })
 
     for (const tp of tpQuery.docs) {
-      const doc = tp as TransferPricingAdjustment
+      const doc = tp as unknown as TransferPricingAdjustment
       transferPricingAdjustments.push(doc)
     }
   } catch (err) {
@@ -204,10 +204,10 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
           auditFileCountry: jurisdictions[0] || 'BG',
           defaultCurrencyCode: consolidationData?.consolidationCurrency || 'EUR',
         },
-        consolidationData || {},
+        (consolidationData || {}) as unknown as Record<string, unknown>,
         taxPeriods.reduce((acc, tp) => ({ ...acc, [tp.taxJurisdiction]: tp }), {}),
         [], // Journal entries would be queried from JournalEntries collection
-      )
+      ) as unknown as AuditFileMetadata
 
       data.auditReportContent = auditFileReport
     } catch (err) {
@@ -227,7 +227,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
         const filing = AuditComplianceReporting.generateRegulatoryFiling(
           jurisdiction,
           'annual-return',
-          taxPeriods.find((tp) => tp.taxJurisdiction === jurisdiction) || {},
+          (taxPeriods.find((tp) => tp.taxJurisdiction === jurisdiction) || {}) as unknown as Record<string, unknown>,
           transferPricingAdjustments.filter((tp) => tp.jurisdiction === jurisdiction),
         )
         regulatoryFilings.push(filing)
@@ -247,7 +247,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
     try {
       const tpPackage = AuditComplianceReporting.generateTransferPricingDocumentationPackage(
         transferPricingAdjustments,
-        consolidationData?.consolidationGroup || {},
+        (consolidationData?.consolidationGroup || {}) as unknown as Record<string, unknown>,
         '/TP-Master-File',
       )
 
@@ -267,11 +267,11 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   if (data.reportType === 'optimization-analysis') {
     try {
       const optimizations = AuditComplianceReporting.detectCrossJurisdictionOptimizations(
-        consolidationData || {},
+        (consolidationData || {}) as unknown as Record<string, unknown>,
         taxPeriods.reduce((acc, tp) => ({ ...acc, [tp.taxJurisdiction]: tp }), {}),
       )
 
-      data.optimizationRecommendations = optimizations
+      data.optimizationRecommendations = optimizations as unknown as Record<string, unknown>[]
     } catch (err) {
       console.warn(
         '[validateAuditComplianceReporting] Failed to detect optimizations:',

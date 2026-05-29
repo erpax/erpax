@@ -124,7 +124,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
     })
 
     if (nextPeriodLockQuery.docs.length > 0) {
-      const nextPeriodLock = nextPeriodLockQuery.docs[0] as PeriodLock
+      const nextPeriodLock = nextPeriodLockQuery.docs[0] as unknown as PeriodLock
       const nextPeriodCheck = ClosingPeriodChecker.checkNextPeriodOpenForReversals(
         nextPeriodLock.lockStatus || 'open',
       )

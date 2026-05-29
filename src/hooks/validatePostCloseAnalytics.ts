@@ -268,8 +268,8 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   if (data.reportType === 'variance' || data.reportType === 'comprehensive') {
     try {
       varianceAnalysisReport = PostCloseAnalytics.generateVarianceAnalysis(
-        (consolidationData as Record<string, unknown>) || {},
-        budgetData || (consolidationData as Record<string, unknown>) || {},
+        (consolidationData as unknown as Record<string, unknown>) || {},
+        (budgetData as Record<string, unknown>) || (consolidationData as unknown as Record<string, unknown>) || {},
         null, // Prior period data would be queried from prior-year consolidation
         10, // Default 10% variance threshold
       )
@@ -289,7 +289,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   if (data.reportType === 'ratio' || data.reportType === 'comprehensive') {
     try {
       ratioAnalysisReport = PostCloseAnalytics.generateRatioAnalysis(
-        (consolidationData as Record<string, unknown>) || {},
+        (consolidationData as unknown as Record<string, unknown>) || {},
         null, // Prior period data optional
       )
 
@@ -308,7 +308,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   if (data.reportType === 'segment' || data.reportType === 'comprehensive') {
     try {
       segmentAnalysisReport = PostCloseAnalytics.generateSegmentReporting(
-        (consolidationData as Record<string, unknown>) || {},
+        (consolidationData as unknown as Record<string, unknown>) || {},
         null, // Prior period data optional
       )
 
@@ -325,13 +325,13 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   if (data.reportType === 'comprehensive' || !data.reportType) {
     try {
       const managementReportingSummary = PostCloseAnalytics.generateManagementReporting(
-        varianceAnalysisReport || {},
-        ratioAnalysisReport || {},
-        segmentAnalysisReport || {},
+        (varianceAnalysisReport || {}) as unknown as Parameters<typeof PostCloseAnalytics.generateManagementReporting>[0],
+        (ratioAnalysisReport || {}) as unknown as Parameters<typeof PostCloseAnalytics.generateManagementReporting>[1],
+        (segmentAnalysisReport || {}) as unknown as Parameters<typeof PostCloseAnalytics.generateManagementReporting>[2],
         data.executiveSummaryText,
       )
 
-      data.managementReportingSummary = managementReportingSummary as unknown as Record<string, unknown>
+      data.managementReportingSummary = managementReportingSummary as unknown as ManagementReportingSummary
     } catch (err) {
       console.warn('[validatePostCloseAnalytics] Failed to generate management reporting:', err)
       throw new Error(

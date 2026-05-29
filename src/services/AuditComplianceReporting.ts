@@ -77,6 +77,7 @@ interface JournalEntry {
 }
 
 interface TransferPricingAdjustmentRecord {
+  id?: string
   fromEntity: string
   toEntity: string
   jurisdiction: string
@@ -106,18 +107,6 @@ interface CrossJurisdictionOptimization {
   complianceRisk: 'low' | 'medium' | 'high'
   description: string
   recommendedAction: string
-}
-
-interface AuditReport {
-  auditReportId: string
-  reportType: string
-  generatedDate: string
-  fileFormat: string
-  fileSize: number
-  fileChecksum: string
-  validationStatus: 'valid' | 'invalid' | 'pending-review'
-  auditTrail: string
-  chainLeafUuid: string
 }
 
 /**

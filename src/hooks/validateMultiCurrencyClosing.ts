@@ -27,21 +27,7 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { CurrencyReconciliation } from '../services/CurrencyReconciliation'
-
-interface LegalEntity {
-  id: string
-  currencyCode: string
-  [key: string]: unknown
-}
-
-interface CurrencyRate {
-  id: string
-  transactionCurrency: string
-  reportingCurrency: string
-  effectiveDate: string
-  rate: number
-  [key: string]: unknown
-}
+import type { CurrencyRate, LegalEntity } from '../payload-types'
 
 interface ClosingEntryWithCurrency {
   sequenceNumber?: number
@@ -123,7 +109,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
         collection: 'legal-entities',
         id: entityId,
       })
-      reportingCurrency = (entity as LegalEntity).currencyCode || 'DEFAULT'
+      reportingCurrency = (entity as LegalEntity).functionalCurrency || 'DEFAULT'
     }
   } catch (err) {
     console.warn('[validateMultiCurrencyClosing] Failed to query entity currency:', err)
@@ -144,12 +130,12 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
         collection: 'currency-rates',
         where: {
           and: [
-            { transactionCurrency: { equals: currency } },
-            { reportingCurrency: { equals: reportingCurrency } },
-            { effectiveDate: { less_than_equal: data.closingDate } },
+            { fromCurrency: { equals: currency } },
+            { toCurrency: { equals: reportingCurrency } },
+            { rateDate: { less_than_equal: data.closingDate } },
           ],
         },
-        sort: '-effectiveDate',
+        sort: '-rateDate',
         limit: 1,
       })
 
