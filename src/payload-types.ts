@@ -17807,6 +17807,26 @@ export interface FiscalDevice {
   individualNumber: string;
   model?: string | null;
   manufacturer?: string | null;
+  /**
+   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
+   */
+  currency?: string | null;
+  /**
+   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
+   */
+  taxGroups?:
+    | {
+        /**
+         * Tax-group letter (А/Б/В/Г).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%) configured for this group on this device.
+         */
+        rate?: number | null;
+        id?: string | null;
+      }[]
+    | null;
   status?: ('active' | 'decommissioned') | null;
   registeredAt?: string | null;
   createdBy?: (string | null) | User;
@@ -25837,6 +25857,14 @@ export interface FiscalDevicesSelect<T extends boolean = true> {
   individualNumber?: T;
   model?: T;
   manufacturer?: T;
+  currency?: T;
+  taxGroups?:
+    | T
+    | {
+        group?: T;
+        rate?: T;
+        id?: T;
+      };
   status?: T;
   registeredAt?: T;
   createdBy?: T;

@@ -132,6 +132,13 @@ export interface CountrySpecifics {
     /** Threshold below which mandate doesn't apply (in local currency major units). */
     thresholdBelow?: number
   }
+  /**
+   * Mandatory fiscal-device / cash-register regime, if this jurisdiction has
+   * one (drives whether a sale must produce a fiscal receipt + carry a device
+   * number). `undefined` ⇒ no fiscal-device obligation in this country.
+   * BG → Наредба Н-18 (СУПТО). Extensible to IT (RT), PL, etc.
+   */
+  readonly fiscalDeviceRegime?: 'naredba-n-18'
   /** Standard / headline VAT or sales-tax rate (%). `null` for sales-tax federations. */
   readonly defaultVatRate: number | null
   /** Reduced VAT rates in this jurisdiction (%). */
@@ -181,6 +188,7 @@ export const COUNTRY_SPECIFICS: Readonly<Record<string, CountrySpecifics>> = {
     bankAccountFormat: 'iban',
     supportsIban: true,
     eInvoicingMandate: { scope: 'b2g', standard: 'EN-16931', effectiveFrom: '2019-04-18' },
+    fiscalDeviceRegime: 'naredba-n-18',
     defaultVatRate: 20,
     reducedVatRates: [9, 0],
     vatRegistrationThresholdMinor: 10_000_000, // BGN 100,000 (in stotinki)

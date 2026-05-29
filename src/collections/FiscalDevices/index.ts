@@ -46,6 +46,23 @@ const FiscalDevices: CollectionConfig = {
     },
     { name: 'model', type: 'text' },
     { name: 'manufacturer', type: 'text' },
+    // Per-device configuration — overrides the country-derived defaults
+    // (the config cascade: device → tenant → country). Both optional; when
+    // absent the resolver falls back to the tenant/country values.
+    {
+      name: 'currency',
+      type: 'text',
+      admin: { description: 'ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.' },
+    },
+    {
+      name: 'taxGroups',
+      type: 'array',
+      admin: { description: 'Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.' },
+      fields: [
+        { name: 'group', type: 'text', admin: { description: 'Tax-group letter (А/Б/В/Г).' } },
+        { name: 'rate', type: 'number', admin: { description: 'VAT rate (%) configured for this group on this device.' } },
+      ],
+    },
     statusField(
       [
         { label: 'Active', value: 'active' },
