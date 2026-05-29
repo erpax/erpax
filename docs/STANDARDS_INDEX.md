@@ -1849,6 +1849,10 @@ src/services/supto/submit-audit-file.ts:9: * @standard OECD SAF-T 2.0 (universal
 src/services/supto/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
 src/services/supto/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
+src/services/supto/virtual-device.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/virtual-device.test.ts:6: * @standard BG Наредба-Н-18 §алтернативен-режим
+src/services/supto/virtual-device.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
+src/services/supto/virtual-device.ts:16: * @standard BG Наредба-Н-18 §Приложение-38 (monthly reporting — the audit file)
 src/services/tags/taggedWith.ts:16: * @standard ISO-25964-1:2011 thesauri retrieval
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
@@ -5265,6 +5269,7 @@ src/services/supto/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-dr
 src/services/supto/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
 src/services/supto/submit-audit-file.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/supto/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
+src/services/supto/virtual-device.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
 src/services/tenant-roles/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
