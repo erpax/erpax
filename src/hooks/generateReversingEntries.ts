@@ -22,7 +22,7 @@
  * @invariant No reversals if next period is locked/archived
  */
 
-import { CollectionAfterChangeHook } from 'payload'
+import type { CollectionAfterChangeHook, RequiredDataFromCollectionSlug } from 'payload'
 import { ClosingPeriodChecker } from '../services/ClosingPeriodChecker'
 
 interface ClosingEntryData {
@@ -137,39 +137,60 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
     return
   }
 
-  const closingEntriesForReversal = data.closingEntries.map((entry: any) => ({
-    journalEntryId: typeof entry.journalEntryId === 'string' ? entry.journalEntryId : entry.journalEntryId?.id,
-    accountsClosed: entry.accountsClosed,
-    netAmount: entry.netAmount,
-    postedDate: entry.postedDate,
-  }))
-
-  const reversalEntries = ClosingPeriodChecker.generateReversals(
-    closingEntriesForReversal,
-    nextPeriodStartDate,
-  )
-
-  // For each reversal entry, create a JournalEntry record
+  // Per the `reverse` skill: a reversal is the SOURCE entry's lines with
+  // debit↔credit swapped on the same gl-accounts — balanced by construction,
+  // posted at the next period's start, traced to its origin. Derive from the
+  // source entry; never re-key amounts from a flat net.
   const reversalJournalEntryIds: string[] = []
   try {
-    for (const reversal of reversalEntries) {
-      // Create journal entry for reversal
+    for (const closing of data.closingEntries) {
+      const sourceId =
+        typeof closing.journalEntryId === 'string' ? closing.journalEntryId : closing.journalEntryId?.id
+      if (!sourceId) {
+        reversalJournalEntryIds.push('')
+        continue
+      }
+
+      const source = (await payload
+        .findByID({ collection: 'journal-entries', id: sourceId, depth: 0, overrideAccess: true, req })
+        .catch((): null => null)) as { entryNumber?: string; lines?: Array<Record<string, unknown>> } | null
+      if (!source?.lines?.length) {
+        reversalJournalEntryIds.push('')
+        continue
+      }
+
+      // Swap each line's debit↔credit; keep the same gl-account.
+      const reversedLines = source.lines.map((l) => {
+        const gl = (l as { glAccount?: unknown }).glAccount
+        return {
+          lineNumber: (l as { lineNumber?: number }).lineNumber,
+          glAccount: gl && typeof gl === 'object' ? (gl as { id?: unknown }).id : gl,
+          description: (l as { description?: string }).description,
+          debit: Number((l as { credit?: unknown }).credit ?? 0),
+          credit: Number((l as { debit?: unknown }).debit ?? 0),
+          currency: (l as { currency?: unknown }).currency,
+          exchangeRate: (l as { exchangeRate?: unknown }).exchangeRate,
+          costCenterId: (l as { costCenterId?: unknown }).costCenterId,
+        }
+      })
+
       const reversalJournalEntry = await payload.create({
         collection: 'journal-entries',
         data: {
-          entity: typeof data.entity === 'string' ? data.entity : data.entity?.id,
-          journalDate: nextPeriodStartDate,
-          description: reversal.description,
-          journalType: 'reversal',
-          entryStatus: 'draft', // Reversals auto-post in next period
-          debitAmount: reversal.debitAmount,
-          creditAmount: reversal.creditAmount,
-          autoReverse: false, // Reversals are not auto-reversed again
-          memo: `Auto-generated reversal for closing entry ${reversal.reversesClosingEntryId}`,
-        },
+          entryNumber: `REV-${source.entryNumber ?? sourceId}`,
+          entryDate: nextPeriodStartDate,
+          description: `Reversal of ${source.entryNumber ?? sourceId} — FY${data.fiscalYear}-P${data.fiscalPeriodNumber} close`,
+          status: 'draft',
+          sourceType: 'period_end_adjustment',
+          sourceId,
+          sourceEvent: 'closing:reversed',
+          lines: reversedLines,
+        } as unknown as RequiredDataFromCollectionSlug<'journal-entries'>,
+        overrideAccess: true,
+        req,
       })
 
-      reversalJournalEntryIds.push(reversalJournalEntry.id)
+      reversalJournalEntryIds.push(String(reversalJournalEntry.id))
     }
   } catch (err) {
     console.error('[generateReversingEntries] Failed to create reversal journal entries:', err)
