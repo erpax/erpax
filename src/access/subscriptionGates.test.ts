@@ -30,9 +30,16 @@ interface MockRequestOverrides {
 
 // Mock Payload request — cast to PayloadRequest at call sites; the
 // runtime mock is intentionally narrower than the full interface.
+// The user shape MUST match `getUser()` + `getUserContext()`:
+//   - presence of `roles` is the discriminator that narrows the
+//     `User | PayloadMcpApiKey` auth union to `User`.
+//   - tenant is derived from `user.tenants[0].tenant` (the multi-tenant
+//     plugin convention), NOT a flat `user.tenant`.
 const createMockRequest = (overrides: MockRequestOverrides = {}): PayloadRequest => ({
   user: {
-    tenant: 'tenant-123',
+    id: 'user-123',
+    roles: ['admin'],
+    tenants: [{ tenant: 'tenant-123' }],
     ...overrides.user,
   },
   payload: {
@@ -198,7 +205,13 @@ describe('subscriptionGates', () => {
   })
 
   describe('allowReadDenyWriteIfPastDue', () => {
-    it('should allow reads on past_due subscription', async () => {
+    // Note: this gate is operation-agnostic by design — Payload wires
+    // it onto `create`/`update`/`delete` only (the docstring on the
+    // exported gate explicitly says so), and `read` is bound to a
+    // separate permissive gate. So the gate uniformly returns
+    // false for any write-block status, and the "read allowance" is
+    // expressed at the CollectionConfig level, not inside the closure.
+    it('returns false on past_due — caller wires this onto write ops only', async () => {
       const req = createMockRequest({
         payload: {
           findByID: vi.fn().mockResolvedValue(
@@ -210,7 +223,7 @@ describe('subscriptionGates', () => {
       const gate = allowReadDenyWriteIfPastDue()
       const result = await gate({ req })
 
-      expect(result).toBe(true)
+      expect(result).toBe(false)
     })
 
     it('should deny creates on past_due subscription', async () => {
