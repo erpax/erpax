@@ -5,6 +5,7 @@ import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { roleScopedAccess, scopedAccess } from '../../access/auth'
 import { currencyField, statusField, auditFields, unpField, fiscalDeviceNumberField, operatorCodeField, saleStatusOptions } from '../../fields'
 import { assignSaleUnpHook } from '../../services/sales/unp-sequence'
+import { deriveSaleOperatorCodeHook } from '../../services/sales/operator-code'
 import { enforceSaleImmutability } from '../../services/sales/sale-immutability'
 import { emitSaleClosedHook } from '../../services/sales/sale-event'
 
@@ -92,6 +93,7 @@ const Sales: CollectionConfig = {
   hooks: {
     beforeValidate: [autoPopulateTenant],
     beforeChange: [
+      deriveSaleOperatorCodeHook('operators'),
       assignSaleUnpHook('sales'),
       enforceSaleImmutability,
       autoSetTimestamp('closedAt', (data) => (data as { status?: string }).status === 'closed'),
