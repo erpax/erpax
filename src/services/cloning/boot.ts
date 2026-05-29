@@ -93,7 +93,7 @@ export async function bootFromFederation(args: {
     return {
       ok: false,
       failedAt: 'integrity-check',
-      reason: integrity.reason,
+      reason: 'reason' in integrity ? integrity.reason : 'integrity check failed',
     }
   }
 

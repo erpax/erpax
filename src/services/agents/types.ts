@@ -25,6 +25,7 @@ export type AgentId =
   | 'finance' | 'sales' | 'marketing' | 'hr' | 'legal'
   | 'ops' | 'engineering' | 'customer-support' | 'data' | 'design'
   | 'product' | 'productivity' | 'enterprise-search' | 'plugins' | 'meta-skill'
+  | 'consistency'
 
 /** A domain event emitted by an agent or chain step. */
 export interface DomainEvent {

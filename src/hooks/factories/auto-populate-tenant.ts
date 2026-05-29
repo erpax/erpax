@@ -22,9 +22,7 @@ import { getTenantContext } from '@/plugins/auth/context'
  * @param collectionSlug Payload collection slug (inferred at compile time)
  * @returns Hook that auto-populates tenant field
  */
-export const createAutoPopulateTenantHook = <
-  TSlug extends string = string
->(): CollectionBeforeValidateHook<TSlug> =>
+export const createAutoPopulateTenantHook = (): CollectionBeforeValidateHook =>
   async ({ data, req }) => {
     if (!req.user || !data) return data
 

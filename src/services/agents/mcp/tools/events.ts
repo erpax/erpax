@@ -152,7 +152,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
         const ctx = {
           tenantId, payload: req.payload,
           mcp: createInProcessMcpClient(buildErpaxMcpTools(registry as never), req),
-          chain: undefined,
+          chain: undefined as unknown,
         }
         const effects = await agentRuntime.dispatchEvent(ctx as never, {
           id: doc.eventType as string, tenantId,

@@ -95,6 +95,7 @@ const CATEGORY_BY_AGENT: Record<AgentId, BlockCategory> = {
   'enterprise-search': 'data',
   plugins: 'meta',
   'meta-skill': 'meta',
+  consistency: 'meta',
 }
 
 /** Derive a typed manifest from a runtime DomainAgent + its registry context. */
@@ -241,7 +242,7 @@ export interface ChainAsBlocks {
 export function chainsAsBlockCompositions(registry: AgentRegistry): ReadonlyArray<ChainAsBlocks> {
   const out: ChainAsBlocks[] = []
   for (const chain of Object.values(BUSINESS_CHAINS)) {
-    const path: ChainAsBlocks['path'] = []
+    const path: Array<{ agentId: AgentId; collection: string; action: string; emits: string }> = []
     const manifests: AgentBlockManifest[] = []
     for (const step of chain.steps) {
       const agent = registry.byCollection(step.collection)
