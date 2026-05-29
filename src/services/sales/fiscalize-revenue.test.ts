@@ -29,7 +29,16 @@ function mockPayload(
   const { existing = null, device = '12345678', country = 'BG' } = opts
   const find = vi.fn(({ collection }: { collection: string }) => {
     if (collection === 'sales') return Promise.resolve({ docs: existing ? [existing] : [] })
-    if (collection === 'fiscal-devices') return Promise.resolve({ docs: device ? [{ individualNumber: device }] : [] })
+    if (collection === 'fiscal-devices')
+      return Promise.resolve({
+        docs: device
+          ? [{
+              individualNumber: device,
+              defaultOperator: { id: 'op-1', code: '0042', status: 'active' },
+              defaultTerminal: { id: 'term-1', status: 'active' },
+            }]
+          : [],
+      })
     return Promise.resolve({ docs: [] })
   })
   // findByID is collection-aware: 'tenants' → config cascade; else the sale doc (reverseSale).
@@ -57,6 +66,9 @@ describe('fiscalizeRevenue', () => {
     expect(arg.data.fiscalDeviceNumber).toBe('12345678')
     expect(arg.data.status).toBe('closed')
     expect(arg.data.paymentType).toBe('card')
+    // cascade-resolved device defaults stamped onto the automated sale
+    expect(arg.data.operator).toBe('op-1')
+    expect(arg.data.terminal).toBe('term-1')
   })
 
   it('queries idempotency by source.type + source.ref', async () => {

@@ -63,6 +63,22 @@ const FiscalDevices: CollectionConfig = {
         { name: 'rate', type: 'number', admin: { description: 'VAT rate (%) configured for this group on this device.' } },
       ],
     },
+    // The default operator + virtual-POS terminal for *automated* sales on this
+    // device (e-shop orders, subscription charges have no human cashier). The
+    // config cascade stamps these onto the sale; an explicit operator/terminal
+    // on a manual sale still wins. See `fiscal-context.ts`.
+    {
+      name: 'defaultOperator',
+      type: 'relationship',
+      relationTo: 'operators',
+      admin: { description: 'Operator whose code (ZZZZ) numbers automated sales on this device.' },
+    },
+    {
+      name: 'defaultTerminal',
+      type: 'relationship',
+      relationTo: 'terminals',
+      admin: { description: 'Virtual-POS terminal printed on automated e-receipts from this device.' },
+    },
     statusField(
       [
         { label: 'Active', value: 'active' },

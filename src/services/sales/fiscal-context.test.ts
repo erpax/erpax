@@ -12,10 +12,18 @@ import { describe, it, expect, vi } from 'vitest'
 import type { Payload } from 'payload'
 import { resolveFiscalContext } from './fiscal-context'
 
+type DeviceFixture = {
+  individualNumber?: string
+  currency?: string
+  taxGroups?: Array<{ group?: string; rate?: number }>
+  defaultOperator?: { id?: string; code?: string; status?: string }
+  defaultTerminal?: { id?: string; status?: string }
+}
+
 function mockPayload(opts: {
   country?: string
   reportingCurrency?: string
-  device?: { individualNumber?: string; currency?: string; taxGroups?: Array<{ group?: string; rate?: number }> } | null
+  device?: DeviceFixture | null
 } = {}) {
   const { country = 'BG', reportingCurrency, device = { individualNumber: '12345678' } } = opts
   const findByID = vi.fn().mockResolvedValue({
@@ -70,5 +78,41 @@ describe('resolveFiscalContext', () => {
     const ctx = await resolveFiscalContext(asPayload(mockPayload({ device: null })), { tenant: 't1' })
     expect(ctx.applies).toBe(true)
     expect(ctx.deviceNumber).toBeUndefined()
+  })
+
+  it('resolves the device default operator + terminal (active only)', async () => {
+    const ctx = await resolveFiscalContext(
+      asPayload(
+        mockPayload({
+          device: {
+            individualNumber: '12345678',
+            defaultOperator: { id: 'op-1', code: '0042', status: 'active' },
+            defaultTerminal: { id: 'term-1', status: 'active' },
+          },
+        }),
+      ),
+      { tenant: 't1' },
+    )
+    expect(ctx.operatorId).toBe('op-1')
+    expect(ctx.operatorCode).toBe('0042')
+    expect(ctx.terminalId).toBe('term-1')
+  })
+
+  it('ignores a decommissioned operator / inactive terminal default', async () => {
+    const ctx = await resolveFiscalContext(
+      asPayload(
+        mockPayload({
+          device: {
+            individualNumber: '12345678',
+            defaultOperator: { id: 'op-1', code: '0042', status: 'decommissioned' },
+            defaultTerminal: { id: 'term-1', status: 'inactive' },
+          },
+        }),
+      ),
+      { tenant: 't1' },
+    )
+    expect(ctx.operatorId).toBeUndefined()
+    expect(ctx.operatorCode).toBeUndefined()
+    expect(ctx.terminalId).toBeUndefined()
   })
 })

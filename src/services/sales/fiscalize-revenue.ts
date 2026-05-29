@@ -117,6 +117,11 @@ export async function fiscalizeRevenue(
     data: {
       source: { type: input.sourceType, ref: input.sourceId },
       fiscalDeviceNumber: fiscal.deviceNumber,
+      // Cascade-resolved default operator + virtual-POS terminal for automated
+      // sales (the УНП hook derives ZZZZ from `operator`; the receipt picks up
+      // `terminal`). A future explicit per-source value would override here.
+      ...(fiscal.operatorId ? { operator: fiscal.operatorId } : {}),
+      ...(fiscal.terminalId ? { terminal: fiscal.terminalId } : {}),
       saleDate: (input.occurredAt ? new Date(input.occurredAt) : new Date()).toISOString(),
       items,
       total: Number(input.total ?? items.reduce((s, i) => s + i.amount, 0)),

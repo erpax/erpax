@@ -44,6 +44,12 @@ export interface FiscalContext {
   readonly deviceNumber?: string
   /** Per-device active tax groups (group letter → rate), if configured. */
   readonly taxGroups?: ReadonlyArray<{ group?: string; rate?: number }>
+  /** Default operator id for automated sales (active device.defaultOperator). */
+  readonly operatorId?: string
+  /** Default operator code (ZZZZ) for automated sales — `undefined` ⇒ 0000 element. */
+  readonly operatorCode?: string
+  /** Default virtual-POS terminal id for automated e-receipts (active). */
+  readonly terminalId?: string
 }
 
 interface TenantConfigLike {
@@ -54,13 +60,34 @@ interface TenantConfigLike {
   } | null
 }
 
+interface RelLike {
+  id?: unknown
+  code?: unknown
+  status?: unknown
+}
+
 interface DeviceLike {
   individualNumber?: unknown
   currency?: unknown
   taxGroups?: ReadonlyArray<{ group?: string; rate?: number }> | null
+  defaultOperator?: unknown
+  defaultTerminal?: unknown
 }
 
 const str = (v: unknown): string | undefined => (typeof v === 'string' && v ? v : undefined)
+
+/** A depth-1 relationship value resolved to its populated object (or undefined for a bare id). */
+function populated(v: unknown): RelLike | undefined {
+  return v && typeof v === 'object' ? (v as RelLike) : undefined
+}
+
+/** The id of a relationship value (populated object or bare id). */
+function relId(v: unknown): string | undefined {
+  if (typeof v === 'string' || typeof v === 'number') return String(v)
+  const o = populated(v)
+  if (o && (typeof o.id === 'string' || typeof o.id === 'number')) return String(o.id)
+  return undefined
+}
 
 /** Resolve the tenant's jurisdiction (config.identity.country → legacy country → ''). */
 function tenantCountry(t: TenantConfigLike | null): string {
@@ -106,6 +133,7 @@ export async function resolveFiscalContext(
         collection: 'fiscal-devices' as never,
         where: { tenant: { equals: tenant }, status: { equals: 'active' } } as never,
         limit: 1,
+        depth: 1, // populate defaultOperator + defaultTerminal
         overrideAccess: true,
         req,
       })
@@ -125,6 +153,12 @@ export async function resolveFiscalContext(
   const deviceStandard = taxGroups?.find((g) => g.group === 'Б' && typeof g.rate === 'number')?.rate
   const standardRate = deviceStandard ?? specifics?.defaultVatRate ?? 20
 
+  // Default operator / terminal for automated sales — only when ACTIVE.
+  const op = populated(device?.defaultOperator)
+  const operatorActive = op ? op.status !== 'decommissioned' : false
+  const term = populated(device?.defaultTerminal)
+  const terminalActive = term ? term.status !== 'inactive' : false
+
   return {
     applies,
     regime,
@@ -134,5 +168,8 @@ export async function resolveFiscalContext(
     reducedRates: specifics?.reducedVatRates ?? [],
     deviceNumber: str(device?.individualNumber),
     taxGroups,
+    operatorId: operatorActive ? relId(device?.defaultOperator) : undefined,
+    operatorCode: operatorActive ? str(op?.code) : undefined,
+    terminalId: terminalActive ? relId(device?.defaultTerminal) : undefined,
   }
 }

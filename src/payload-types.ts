@@ -17827,8 +17827,74 @@ export interface FiscalDevice {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Operator whose code (ZZZZ) numbers automated sales on this device.
+   */
+  defaultOperator?: (string | null) | Operator;
+  /**
+   * Virtual-POS terminal printed on automated e-receipts from this device.
+   */
+  defaultTerminal?: (string | null) | Terminal;
   status?: ('active' | 'decommissioned') | null;
   registeredAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators".
+ */
+export interface Operator {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 4-digit operator code — second УНП segment.
+   */
+  code: string;
+  name: string;
+  user?: (string | null) | User;
+  status?: ('active' | 'decommissioned') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals".
+ */
+export interface Terminal {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Virtual POS terminal number (printed on the e-receipt).
+   */
+  terminalNumber: string;
+  /**
+   * Payment-service provider operating the virtual POS.
+   */
+  provider?: string | null;
+  /**
+   * Settlement account (IBAN) the terminal pays into.
+   */
+  accountNumber?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('active' | 'inactive') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -17896,64 +17962,6 @@ export interface Sale {
   reversedBy?: (string | null) | Sale;
   reversalReason?: string | null;
   closedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operators".
- */
-export interface Operator {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 4-digit operator code — second УНП segment.
-   */
-  code: string;
-  name: string;
-  user?: (string | null) | User;
-  status?: ('active' | 'decommissioned') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "terminals".
- */
-export interface Terminal {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Virtual POS terminal number (printed on the e-receipt).
-   */
-  terminalNumber: string;
-  /**
-   * Payment-service provider operating the virtual POS.
-   */
-  provider?: string | null;
-  /**
-   * Settlement account (IBAN) the terminal pays into.
-   */
-  accountNumber?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('active' | 'inactive') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -25865,6 +25873,8 @@ export interface FiscalDevicesSelect<T extends boolean = true> {
         rate?: T;
         id?: T;
       };
+  defaultOperator?: T;
+  defaultTerminal?: T;
   status?: T;
   registeredAt?: T;
   createdBy?: T;
