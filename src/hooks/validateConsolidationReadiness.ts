@@ -22,7 +22,6 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { IntercompanyReconciliation } from '../services/IntercompanyReconciliation'
-import type { ClosingEntry, IntercompanyTransaction } from '../payload-types'
 
 interface ConsolidationData {
   id?: string
