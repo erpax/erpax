@@ -9,6 +9,7 @@
 
 ## @standard
 
+```text
 Binary file src/services/voting/index.ts matches
 docs/FLATTEN_TO_CANONICAL_APP.md:212: * @standard ISO-20022 aging classification
 docs/PLUGIN_ARCHITECTURE.md:163: * @standard EN-16931:2017 invoice
@@ -1572,6 +1573,7 @@ src/services/gl-account.service.ts:4: * @standard ISO-4217:2015 currency-codes a
 src/services/gl-posting.service.ts:796:   * @standard ISO 20022 camt.053 reconciliation
 src/services/gl-posting.service.ts:8: * @standard ISO-8601-1:2019 date-time posted-date
 src/services/gl-posting.service.ts:9: * @standard ISO-4217:2015 currency-codes
+src/services/horo/index.ts:20: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/services/i18n-harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/services/i18n-harvest/index.ts:31: * @standard BCP-47 language tags
 src/services/identification/index.ts:41: * @standard RFC 4122 §4.3 uuidv5
@@ -2586,9 +2588,11 @@ tests/helpers/standards-fixtures.ts:22: * @standard ISO/IEC-29119:2022 software-
 tests/helpers/standards-fixtures.ts:23: * @standard ISO-20022 camt.053 bank-to-customer-statement
 tests/helpers/standards-fixtures.ts:24: * @standard SAF-T-2.0 oecd audit-file
 tests/helpers/standards-fixtures.ts:25: * @standard UN-EDIFACT D96A invoic
+```
 
 ## @rfc
 
+```text
 docs/STANDARDS.md:55: * @rfc 9562 UUID
 src/access/allowPublicReadTenants.ts:8: * @rfc 9110 §13 caching
 src/app/(api)/api/subscriptions/create/route.ts:4: * @rfc 9110 http-semantics
@@ -2871,9 +2875,11 @@ tests/helpers/sdk.ts:7: * @rfc 9110 http-semantics
 tests/helpers/sdk.ts:8: * @rfc 8259 json
 tests/helpers/sdk.ts:9: * @rfc 7519 jwt session-token
 tests/helpers/seedUser.ts:5: * @rfc 5322 internet-message-format email-fixture
+```
 
 ## @compliance
 
+```text
 docs/PLUGIN_ARCHITECTURE.md:258: * @compliance VAT VAT-directive-2006-112-EC
 docs/STANDARDS.md:54: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 docs/TYPE_HIERARCHY_EXAMPLES.md:228: * @compliance VAT Directive 2006/112/EC
@@ -3502,9 +3508,11 @@ tests/e2e/tenant.e2e.spec.ts:14: * @compliance SOC-2 CC6.1 logical-access-contro
 tests/helpers/evidence.ts:20: * @compliance SOX §404 internal-controls process-walk-through
 tests/helpers/evidence.ts:21: * @compliance ISO-27001 A.5.36 conformance-with-policies
 tests/helpers/standards-fixtures.ts:27: * @compliance SOX §404 internal-controls process-walk-through
+```
 
 ## @accounting
 
+```text
 docs/PLUGIN_ARCHITECTURE.md:165: * @accounting IFRS-15 revenue-recognition
 docs/PLUGIN_ARCHITECTURE.md:676: * @accounting IFRS-15 revenue-recognition
 docs/PLUGIN_MIGRATION_GUIDE.md:100: * @accounting IFRS IAS-1 chart-of-accounts
@@ -4214,9 +4222,11 @@ tests/e2e/standards/ifrs/ifrs-16-leases.e2e.spec.ts:15: * @accounting US-GAAP AS
 tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:12: * @accounting IFRS IAS-1 §54 minimum-line-items
 tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:13: * @accounting IFRS IAS-2 §10 inventories-cost-formula
 tests/e2e/standards/ifrs/industry-template-pick.e2e.spec.ts:14: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+```
 
 ## @security
 
+```text
 docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1760: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:290: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:291: * @security ISO-27002 § 5.15 access-control
@@ -4679,9 +4689,11 @@ tests/e2e/tenant.e2e.spec.ts:12: * @security ISO-27002 §5.15 access-control
 tests/helpers/login.ts:8: * @security ISO-27001 A.5.17 authentication-information
 tests/helpers/seedTenant.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 tests/helpers/seedUser.ts:6: * @security ISO-27001 A.5.16 identity-management
+```
 
 ## @audit
 
+```text
 Binary file src/services/voting/index.ts matches
 docs/PLUGIN_ARCHITECTURE.md:677: * @audit ISO-19011:2018 audit-trail
 docs/standards/integrity.md:126: * @audit ISO 19011:2018 §6.4.6 (uuid audit-trailed)
@@ -5358,9 +5370,11 @@ tests/helpers/mock-payload.ts:17: * @audit ISO-19011:2018 audit-trail test-fixtu
 tests/helpers/seedTenant.ts:9: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/helpers/seedUser.ts:7: * @audit ISO-19011:2018 audit-trail seed-cleanup
 tests/helpers/standards-fixtures.ts:26: * @audit ISO-19011:2018 audit-trail standards-evidence
+```
 
 ## @quality
 
+```text
 docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1417: * @quality shadcn/ui + Recharts
 docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:1585: * @quality shadcn/ui Checkbox + Progress
 docs/superpowers/plans/2026-05-12-coordinated-refactor-implementation.md:802: * @quality No unsafe casts in production code
@@ -5376,4 +5390,6 @@ src/components/analytics/types.ts:18: * @quality ISO-25010 maintainability share
 src/components/blocks/Form/Component.tsx:23: * @quality ISO-25010 usability form-rendering
 src/components/pages/AnalyticsPage.tsx:15: * @quality ISO-25010 usability page-composition
 src/fields/discriminators.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
+src/services/horo/index.ts:21: * @quality ISO-25010 maintainability bounded-stable-state-space
 src/types/sti.ts:19: * @quality ISO-25010 maintainability discriminated-subtype-safety
+```

@@ -58,7 +58,13 @@ emit_section() {
   if [ -z "$hits" ]; then
     echo "_(no citations yet — reserved for future use)_"
   else
+    # Wrap the grep hits in a fenced code block. They are verbatim code lines
+    # (e.g. `* @standard <body> <id>`); bare angle brackets would otherwise be
+    # parsed as unclosed HTML by VitePress's Vue/SFC markdown compiler. Inside
+    # a fence they render literally — the api/standards surface stays strict.
+    echo '```text'
     echo "$hits"
+    echo '```'
   fi
 }
 
