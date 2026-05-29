@@ -49,7 +49,7 @@ const AuditLogWidget: React.FC<AuditLogWidgetProps> = ({
       setError(null);
       const response = await client.getAuditTrail(startDate, endDate);
       if (response.success && response.data) {
-        setLogs(response.data.entries || []);
+        setLogs((response.data as { entries?: AuditLogEntry[] }).entries || []);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load audit log');

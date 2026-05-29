@@ -6,7 +6,7 @@ import IncomeStatementWidget from './widgets/IncomeStatementWidget';
 import QuickActionsWidget from './widgets/QuickActionsWidget';
 import AuditLogWidget from './widgets/AuditLogWidget';
 
-import type { AccountLine, BalanceSheetData, TrialBalanceData } from './analytics/types';
+import type { AccountLine, BalanceSheetData, IncomeStatementData, TrialBalanceData } from './analytics/types';
 
 /**
  * Accounting Dashboard — top-level renderer for trial balance, balance sheet,
@@ -26,12 +26,6 @@ interface DashboardProps {
   tenantName: string;
 }
 
-// Local: Dashboard only reads `netIncome` from the income statement, so we use
-// a narrower projection of the canonical IncomeStatementData (Pick<>).
-interface DashboardIncomeStatement {
-  netIncome?: number;
-}
-
 const Dashboard: React.FC<DashboardProps> = ({
   client,
   userRole,
@@ -39,7 +33,7 @@ const Dashboard: React.FC<DashboardProps> = ({
 }) => {
   const [trialBalance, setTrialBalance] = useState<TrialBalanceData | null>(null);
   const [balanceSheet, setBalanceSheet] = useState<BalanceSheetData | null>(null);
-  const [incomeStatement, setIncomeStatement] = useState<DashboardIncomeStatement | null>(null);
+  const [incomeStatement, setIncomeStatement] = useState<IncomeStatementData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedDate, setSelectedDate] = useState(
@@ -70,7 +64,7 @@ const Dashboard: React.FC<DashboardProps> = ({
         .split('T')[0];
       const isResponse = await client.getIncomeStatement(periodStart, selectedDate);
       if (isResponse.success) {
-        setIncomeStatement(isResponse.data as DashboardIncomeStatement);
+        setIncomeStatement(isResponse.data as IncomeStatementData);
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load dashboard');

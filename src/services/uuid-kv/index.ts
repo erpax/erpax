@@ -163,7 +163,7 @@ export class UuidMap<K, V> {
     return computeContentUuid(
       { entries: sorted },
       tenantId,
-    ) as ContentUuid<UuidMap<K, V>>
+    ) as unknown as ContentUuid<UuidMap<K, V>>
   }
 }
 
@@ -189,7 +189,7 @@ export function toUuidMap<V>(args: {
       { slot: args.slot, key },
       args.tenantId,
     ) as ContentUuid<{ slot: string; key: string }>
-    const valueUuid = computeContentUuid(value as object, args.tenantId) as ContentUuid<V>
+    const valueUuid = computeContentUuid(value as unknown as Record<string, unknown>, args.tenantId) as ContentUuid<V>
     m.set(keyUuid, valueUuid)
   }
   return m

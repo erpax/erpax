@@ -9,23 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '../Dashboard';
-
-interface Account {
-  accountCode: string;
-  accountName: string;
-  classification: string;
-  debitBalance?: number;
-  creditBalance?: number;
-  balance?: number;
-}
-
-interface TrialBalanceData {
-  asOfDate: string;
-  accounts: Account[];
-  totalDebits: number;
-  totalCredits: number;
-  isBalanced: boolean;
-}
+import type { TrialBalanceData } from '../analytics/types';
 
 interface TrialBalanceWidgetProps {
   data: TrialBalanceData | null;

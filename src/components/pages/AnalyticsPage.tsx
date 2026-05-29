@@ -5,6 +5,7 @@ import FinancialRatiosCard from '../analytics/FinancialRatiosCard';
 import BudgetVsActualCard from '../analytics/BudgetVsActualCard';
 import TrendAnalysisCard from '../analytics/TrendAnalysisCard';
 import CostAnalysisCard from '../analytics/CostAnalysisCard';
+import type { BalanceSheetData, IncomeStatementData } from '../analytics/types';
 
 /**
  * Analytics page route — composes balance-sheet + income-statement loaders, renders cards.
@@ -33,7 +34,10 @@ const AnalyticsPage: React.FC<AnalyticsPageProps> = ({ client, userRole: _userRo
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [data, setData] = useState<{ balanceSheet?: unknown; incomeStatement?: unknown } | null>(null);
+  const [data, setData] = useState<{
+    balanceSheet: BalanceSheetData;
+    incomeStatement: IncomeStatementData;
+  } | null>(null);
 
   const loadAnalyticsData = useCallback(async () => {
     try {
@@ -48,8 +52,8 @@ const AnalyticsPage: React.FC<AnalyticsPageProps> = ({ client, userRole: _userRo
 
       if (bs.success && is.success) {
         setData({
-          balanceSheet: bs.data,
-          incomeStatement: is.data,
+          balanceSheet: bs.data as BalanceSheetData,
+          incomeStatement: is.data as IncomeStatementData,
         });
       }
     } catch (err) {

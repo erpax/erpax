@@ -9,23 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '../Dashboard';
-
-interface BalanceSheetAccount {
-  accountCode: string;
-  accountName: string;
-  balance: number;
-}
-
-interface BalanceSheetData {
-  asOfDate: string;
-  assets: BalanceSheetAccount[];
-  liabilities: BalanceSheetAccount[];
-  equity: BalanceSheetAccount[];
-  totalAssets: number;
-  totalLiabilities: number;
-  totalEquity: number;
-  isBalanced: boolean;
-}
+import type { BalanceSheetData } from '../analytics/types';
 
 interface BalanceSheetWidgetProps {
   data: BalanceSheetData | null;

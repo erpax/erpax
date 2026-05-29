@@ -776,8 +776,8 @@ src/components/analytics/KPIDashboard.tsx:10: * @standard ISO-4217:2015 currency
 src/components/analytics/KPIDashboard.tsx:9: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/analytics/TrendAnalysisCard.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/analytics/TrendAnalysisCard.tsx:9: * @standard ISO-8601-1:2019 date-time period
-src/components/analytics/types.ts:7: * @standard ISO-4217:2015 currency-codes monetary-amount-display
-src/components/analytics/types.ts:8: * @standard ISO-8601-1:2019 date-time as-of-date
+src/components/analytics/types.ts:14: * @standard ISO-4217:2015 currency-codes monetary-amount-display
+src/components/analytics/types.ts:15: * @standard ISO-8601-1:2019 date-time as-of-date
 src/components/blocks/ArchiveBlock/config.ts:4: * @standard schema.org ItemList
 src/components/blocks/ArchiveBlock/config.ts:5: * @standard schema.org CollectionPage
 src/components/blocks/Banner/config.ts:4: * @standard W3C HTML5 aside-element
@@ -859,7 +859,7 @@ src/components/marketing/types.ts:12: * @standard W3C HTML5 Living Standard
 src/components/modals/CreateJournalEntryModal.tsx:10: * @standard ISO-8601-1:2019 date-time entry-date
 src/components/modals/CreateJournalEntryModal.tsx:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/modals/CreateJournalEntryModal.tsx:9: * @standard ISO-4217:2015 currency-codes monetary-amount
-src/components/pages/AnalyticsPage.tsx:12: * @standard ECMA-262 ECMAScript-2024 baseline
+src/components/pages/AnalyticsPage.tsx:13: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/providers/index.tsx:6: * @standard W3C CSS-Color-4 color-contrast
 src/components/shared/AddressBlock.tsx:14: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/components/shared/AddressBlock.tsx:15: * @standard UPU-S42 international-postal-addressing
@@ -3803,14 +3803,14 @@ src/components/analytics/FinancialRatiosCard.tsx:10: * @accounting US-GAAP ASC-2
 src/components/analytics/FinancialRatiosCard.tsx:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/analytics/KPIDashboard.tsx:11: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/analytics/KPIDashboard.tsx:12: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
-src/components/analytics/types.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
-src/components/analytics/types.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/components/analytics/types.ts:16: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/components/analytics/types.ts:17: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/components/marketing/CountryShowcase.tsx:10: * @accounting IFRS / US-GAAP / FRS / JGAAP / ASBE / INDAS
 src/components/marketing/PricingTable.tsx:12: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/components/marketing/PricingTable.tsx:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/components/modals/CreateJournalEntryModal.tsx:11: * @accounting IFRS double-entry-bookkeeping
 src/components/modals/CreateJournalEntryModal.tsx:12: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
-src/components/pages/AnalyticsPage.tsx:13: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/components/pages/AnalyticsPage.tsx:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/shared/Money.tsx:18: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/components/widgets/AccountReconciliationsPanel.tsx:8: * @accounting IFRS IAS-7 statement-of-cash-flows bank-reconciliation
 src/components/widgets/BalanceSheetWidget.tsx:5: * @accounting IFRS IAS-1 §54 statement-of-financial-position
@@ -5357,6 +5357,6 @@ src/components/admin/TenantFilters.tsx:7: * @quality ISO-25010 usability admin-t
 src/components/analytics/FinancialRatiosCard.tsx:11: * @quality ISO-25010 functional-suitability derived-metric
 src/components/analytics/KPIDashboard.tsx:13: * @quality ISO-25010 functional-suitability derived-metric
 src/components/analytics/TrendAnalysisCard.tsx:11: * @quality ISO-25010 functional-suitability historical-projection
-src/components/analytics/types.ts:11: * @quality ISO-25010 maintainability shared-vocabulary
+src/components/analytics/types.ts:18: * @quality ISO-25010 maintainability shared-vocabulary
 src/components/blocks/Form/Component.tsx:23: * @quality ISO-25010 usability form-rendering
-src/components/pages/AnalyticsPage.tsx:14: * @quality ISO-25010 usability page-composition
+src/components/pages/AnalyticsPage.tsx:15: * @quality ISO-25010 usability page-composition

@@ -37,6 +37,18 @@ export type BulkFormat =
 
 export type BulkOperationKind = 'import' | 'export' | 'reprocess' | 'reverse'
 
+/**
+ * Bulk-op kind → canonical `audit-events.operation` (ISO-19011 AuditOperation
+ * enum). Reprocess / reverse are mutations of existing docs, so they map to
+ * `update`; import / export map 1:1.
+ */
+const BULK_KIND_TO_AUDIT_OPERATION: Record<BulkOperationKind, 'import' | 'export' | 'update'> = {
+  import: 'import',
+  export: 'export',
+  reprocess: 'update',
+  reverse: 'update',
+}
+
 export interface BulkOperationInput {
   /** RFC 9562 UUID v4 — idempotency key. */
   operationId?: string
@@ -84,14 +96,16 @@ export async function enqueueBulkOperation(
       collection: 'audit-events',
       data: {
         eventId: operationId,
+        timestamp: new Date().toISOString(),
         eventType: `bulk:${input.kind}:queued`,
-        actor: getActorId(req) ?? 'system',
-        targetCollection: input.targetCollection,
-        targetId: operationId,
-        before: undefined,
-        after: { kind: input.kind, format: input.format, sourceUrl: input.sourceUrl },
-        emittedAt: new Date().toISOString(),
-      } as Record<string, unknown>,
+        source: getActorId(req) ?? 'bulk-ops',
+        collectionSlug: input.targetCollection,
+        operation: BULK_KIND_TO_AUDIT_OPERATION[input.kind],
+        documentId: operationId,
+        changeSummary: {
+          after: { kind: input.kind, format: input.format, sourceUrl: input.sourceUrl },
+        },
+      },
       overrideAccess: true,
       req,
     })
@@ -141,12 +155,14 @@ export async function processRow(
         collection: 'transaction-failures',
         data: {
           reference: `${args.operationId}:row-${args.rowIndex}`,
+          transactionDate: new Date().toISOString(),
+          sourceType: 'other',
           sourceCollection: args.targetCollection,
-          sourceOperation: 'bulk_import',
-          payload: args.row as unknown,
-          errorMessage: error,
+          reason: error,
+          statusCode: 'IMPORT_ROW_FAILED',
+          errorPayload: { row: args.row, error },
           status: 'open',
-        } as Record<string, unknown>,
+        },
         overrideAccess: true,
         req,
       })

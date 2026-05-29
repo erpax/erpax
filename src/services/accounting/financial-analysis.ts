@@ -13,7 +13,7 @@
 
 
 interface FinancialData {
-  asOfDate: string;
+  asOfDate: string | Date;
   assets: number;
   currentAssets: number;
   inventory: number;

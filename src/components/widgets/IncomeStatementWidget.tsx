@@ -9,30 +9,7 @@
  */
 import React from 'react';
 import { formatCurrency } from '../Dashboard';
-
-interface IncomeItem {
-  accountCode: string;
-  accountName: string;
-  balance: number;
-}
-
-interface IncomeStatementData {
-  periodStart: string;
-  periodEnd: string;
-  revenues: IncomeItem[];
-  cogs: IncomeItem[];
-  grossProfit: number;
-  operatingExpenses: IncomeItem[];
-  operatingIncome: number;
-  gains: IncomeItem[];
-  losses: IncomeItem[];
-  netIncome: number;
-  totalRevenues: number;
-  totalCOGS: number;
-  totalOperatingExpenses: number;
-  totalGains: number;
-  totalLosses: number;
-}
+import type { IncomeStatementData } from '../analytics/types';
 
 interface IncomeStatementWidgetProps {
   data: IncomeStatementData | null;
