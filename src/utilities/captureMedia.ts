@@ -109,7 +109,7 @@ export interface UploadResult {
 export async function uploadTestArtifacts(
   payload: Payload,
   artifactsDir: string,
-  options: { tenantId?: string | number; manifestFile?: string } = {},
+  options: { tenantId?: string; manifestFile?: string } = {},
 ): Promise<UploadResult> {
   const { tenantId, manifestFile = 'manifest.json' } = options
   const manifestPath = join(artifactsDir, manifestFile)
@@ -140,7 +140,7 @@ export async function uploadTestArtifacts(
         },
       })
 
-      let subtitlesId: string | number | undefined
+      let subtitlesId: string | undefined
       if (t.steps && t.steps.length > 0) {
         const vttBody = buildWebVtt(t.steps, t.durationMs ?? 0)
         const vttBuffer = Buffer.from(vttBody, 'utf-8')

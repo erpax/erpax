@@ -651,7 +651,7 @@ src/collections/Translations.ts:40: * @standard EU 1958/1 official-languages-of-
 src/collections/UsageRecords.ts:15: * @standard ISO-4217:2015 currency-codes
 src/collections/UsageRecords.ts:16: * @standard ISO-8601-1:2019 date-time event-time billing-period
 src/collections/UsageRecords.ts:17: * @standard rfc-9562 uuid event-id
-src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
+src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
 src/collections/UserRoles/index.ts:10: * @standard NIST INCITS-359-2012 role-based-access-control role-assignment
 src/collections/Users/access/create.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control
 src/collections/Users/access/read.ts:16: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -3123,8 +3123,8 @@ src/collections/TransferPricingFiles.ts:20: * @compliance EU 2016/881 administra
 src/collections/TransferPricingFiles.ts:21: * @compliance OECD Pillar Two GloBE (15% global minimum tax)
 src/collections/UsageRecords.ts:21: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
 src/collections/UsageRecords.ts:22: * @compliance SOC-2 CC7.4 system-monitoring-and-detection
-src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:14: * @compliance SOC-2 CC6.3 access-removal
-src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:15: * @compliance SOX §404 internal-controls
+src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:15: * @compliance SOC-2 CC6.3 access-removal
+src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:16: * @compliance SOX §404 internal-controls
 src/collections/UserRoles/index.ts:15: * @compliance SOC-2 CC6.3 access-removal
 src/collections/Users/access/create.ts:16: * @compliance SOC-2 CC6.2 access-provisioning
 src/collections/Users/access/read.ts:20: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
@@ -4420,8 +4420,8 @@ src/collections/TransactionFailures.ts:18: * @security ISO-27001 A.5.24 incident
 src/collections/TransactionFailures.ts:19: * @security ISO-27002 §5.27 information-security-event-correction
 src/collections/TransferPricingFiles.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/UsageRecords.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:12: * @security ISO-27001 A.5.18 access-rights
-src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:13: * @security ISO-27002 §5.4 segregation-of-duties
+src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:13: * @security ISO-27001 A.5.18 access-rights
+src/collections/UserRoles/hooks/preventDuplicateAssignment.ts:14: * @security ISO-27002 §5.4 segregation-of-duties
 src/collections/UserRoles/index.ts:11: * @security ISO-27001 A.5.18 access-rights
 src/collections/UserRoles/index.ts:12: * @security ISO-27002 §5.15 access-control
 src/collections/UserRoles/index.ts:13: * @security ISO-27002 §5.4 segregation-of-duties

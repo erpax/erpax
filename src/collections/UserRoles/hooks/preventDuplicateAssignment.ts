@@ -1,6 +1,7 @@
 import type { CollectionBeforeChangeHook } from 'payload'
 import type { Where } from 'payload'
 
+import type { User, Role, UserRole } from '@/payload-types'
 import { extractID } from '../../../utilities/extractID'
 import { apiErr, ERR } from '../../../utilities/errors'
 
@@ -23,20 +24,10 @@ export const preventDuplicateAssignment: CollectionBeforeChangeHook = async ({
 }) => {
   if (!data || typeof data !== 'object') return data
 
-  const userRef = data.user
-  const roleRef = data.role
-  const userId =
-    typeof userRef === 'number'
-      ? userRef
-      : userRef && typeof userRef === 'object' && 'id' in userRef
-        ? extractID(userRef as { id: number })
-        : undefined
-  const roleId =
-    typeof roleRef === 'number'
-      ? roleRef
-      : roleRef && typeof roleRef === 'object' && 'id' in roleRef
-        ? extractID(roleRef as { id: number })
-        : undefined
+  const userRef = data.user as User | string | null | undefined
+  const roleRef = data.role as Role | string | null | undefined
+  const userId = userRef == null ? undefined : extractID(userRef)
+  const roleId = roleRef == null ? undefined : extractID(roleRef)
 
   if (userId === undefined || roleId === undefined) return data
 
@@ -45,7 +36,7 @@ export const preventDuplicateAssignment: CollectionBeforeChangeHook = async ({
     { role: { equals: roleId } },
   ]
   if (operation === 'update' && originalDoc && 'id' in originalDoc && originalDoc.id != null) {
-    andClause.push({ id: { not_equals: extractID(originalDoc as { id: number }) } })
+    andClause.push({ id: { not_equals: extractID(originalDoc as UserRole) } })
   }
 
   const existing = await req.payload.find({

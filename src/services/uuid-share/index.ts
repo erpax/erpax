@@ -228,7 +228,7 @@ export async function grantShare<G, T>(
       ],
     } as never,
     limit: 1,
-  } as never) as { docs: Array<Record<string, unknown>> }
+  } as never) as unknown as { docs: Array<Record<string, unknown>> }
   if (existing.docs && existing.docs.length > 0) {
     const row = existing.docs[0]!
     return {
@@ -343,7 +343,7 @@ export async function checkShare<G, T>(
       ],
     } as never,
     limit: 50,
-  } as never) as { docs: Array<{ id: string; accessRole: AccessRole }> }
+  } as never) as unknown as { docs: Array<{ id: string; accessRole: AccessRole }> }
 
   if (!res.docs || res.docs.length === 0) {
     return {
@@ -408,7 +408,7 @@ export async function revokeShare(
       ],
     } as never,
     limit: 1,
-  } as never) as { docs: Array<{ id: string; accessRole: AccessRole; sealed: boolean }> }
+  } as never) as unknown as { docs: Array<{ id: string; accessRole: AccessRole; sealed: boolean }> }
 
   if (!res.docs || res.docs.length === 0) {
     return {
@@ -482,7 +482,7 @@ export async function listShares(
     collection: 'shares' as never,
     where: where as never,
     limit: params.limit ?? 100,
-  } as never) as { docs: Array<Record<string, unknown>> }
+  } as never) as unknown as { docs: Array<Record<string, unknown>> }
 
   return res.docs.map((row) => ({
     shareUuid: row.shareUuid as ShareUuid,
