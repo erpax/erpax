@@ -163,6 +163,75 @@ export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
   }
 }
 
+/**
+ * Builder: party-role (entity-membership) access — the **membership** twin of
+ * the capability gate above. This is the fundamental access duality made
+ * explicit: a role is either a **capability** (what you may *do* → boolean,
+ * `hasRole`/`roleScopedAccess`) or an **entity-membership** (what you are a
+ * *party to* → row-level `Where`). This returns the Where — "documents of
+ * `collectionSlug` on which the acting user holds one of `partyRoles`" —
+ * exactly Rolify's `Resource.with_role(role, user)` over the document-scoped
+ * (instance) role binding.
+ *
+ * Multi-party by construction: many users may hold `seller`/`buyer`/… on one
+ * document; each sees it because membership is a *set*, not a single FK.
+ * Capability holders (default `admin`) bypass to full tenant scope.
+ *
+ * Roles live in the resource-scoped engine (`roles` + `user-roles`, the NIST
+ * INCITS-359 / Rolify port): a document-scoped row has `binding: 'document'`,
+ * `scopedCollection: <slug>`, `resource.value: <id>`.
+ *
+ * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+ * @security ISO-27001 A.5.15 access-control
+ * @see src/standards/nist-incits-359/payload.ts (the add_role / has_role engine)
+ */
+export function partyRoleAccess(
+  collectionSlug: string,
+  partyRoles: readonly string[],
+  options: { capabilityRoles?: UserRole[] } = {},
+): Access {
+  return async ({ req }) => {
+    const user = getUserContext(req)
+    if (!user) return false
+
+    const tenantWhere: AccessResult = { tenant: { equals: user.tenant } }
+
+    // Capability side: an admin (or configured capability role) holds blanket
+    // access — no per-document membership lookup needed.
+    if (hasRole(user, 'admin', ...(options.capabilityRoles ?? []))) return tenantWhere
+
+    // Membership side: collect the documents on which the user holds a party
+    // role (document-scoped binding). One query; role populated at depth 1.
+    const { docs } = await req.payload.find({
+      collection: 'user-roles',
+      where: { user: { equals: user.id } },
+      depth: 1,
+      pagination: false,
+      overrideAccess: true,
+      req,
+    })
+
+    const memberOf: string[] = []
+    for (const ur of docs as Array<{ role?: unknown }>) {
+      const role = ur.role
+      if (!role || typeof role !== 'object') continue
+      const r = role as {
+        name?: string
+        binding?: string
+        scopedCollection?: string
+        resource?: { value?: unknown }
+      }
+      if (r.binding !== 'document' || r.scopedCollection !== collectionSlug) continue
+      if (!r.name || !partyRoles.includes(r.name)) continue
+      const v = r.resource?.value
+      const id = v && typeof v === 'object' ? (v as { id?: unknown }).id : v
+      if (id != null) memberOf.push(String(id))
+    }
+
+    return { and: [tenantWhere, { id: { in: memberOf } }] }
+  }
+}
+
 // ─── Bundle helpers (Slice KKK DRY) ──────────────────────────────────────
 //
 // The patterns below were extracted from the existing canonical
