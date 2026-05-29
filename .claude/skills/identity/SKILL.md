@@ -45,7 +45,7 @@ Hashing a *mutable* record means an edit changes its id → dangling refs. erpax
 
 ## Applying it
 - **Files / uploads:** stored object key = content hash → automatic dedup ("dry storage"). See [[upload]] (R2/S3 adapter filename = content-uuid).
-- **Records:** carry a `uuid` ([[fields]] text), computed in a `beforeChange` [[hook]] via `computeContentUuid`, frozen on seal. `defaultIDType: 'text'` so the id itself can BE the content-uuid (see [[database]]).
+- **Records:** carry a `uuid` ([[fields]] text), computed in a `beforeChange` [[hooks]] via `computeContentUuid`, frozen on seal. `defaultIDType: 'text'` so the id itself can BE the content-uuid (see [[database]]).
 - **Polymorphic refs:** reference a target by its content-uuid ([[accounting]] "anything is accountable" → the `accountable` uuid is content-addressed; share grants bind grantee/target uuids).
 - **Federation across @erpax apps:** content-derived ids make merge a set-union; identical objects collapse to one row. See [[plugins]].
 
