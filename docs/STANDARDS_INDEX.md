@@ -1101,9 +1101,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1110:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1128:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1129:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1125:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1143:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1144:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1535,18 +1535,6 @@ src/services/evidence-attestation.ts:21: * @standard ISO-19005-2:2011 pdf-a-2
 src/services/evidence-attestation.ts:22: * @standard ISO-14289-1:2014 pdf-ua-1
 src/services/evidence-attestation.ts:23: * @standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile
 src/services/evidence-attestation.ts:24: * @standard ISO-8601-1:2019 date-time
-src/services/export/excel.service.ts:4: * @standard ISO/IEC-29500:2016 office-open-xml
-src/services/export/excel.service.ts:5: * @standard ECMA-376 office-open-xml
-src/services/export/excel.service.ts:7: * @standard ISO-4217:2015 currency-codes cell-formatting
-src/services/export/excel.service.ts:8: * @standard ISO-8601-1:2019 date-time cell-formatting
-src/services/export/pdf.service.ts:115:   * @standard ISO-19005-2:2011 pdf-a-2
-src/services/export/pdf.service.ts:116:   * @standard ISO-14289-1:2014 pdf-ua-1
-src/services/export/pdf.service.ts:16: * @standard ISO-32000-2:2020 pdf
-src/services/export/pdf.service.ts:17: * @standard ISO-19005-2:2011 pdf-a-2
-src/services/export/pdf.service.ts:18: * @standard ISO-19005-3:2012 pdf-a-3
-src/services/export/pdf.service.ts:19: * @standard ISO-14289-1:2014 pdf-ua-1
-src/services/export/pdf.service.ts:20: * @standard W3C HTML5 source-rendering
-src/services/export/pdf.service.ts:21: * @standard W3C CSS Print
 src/services/export/standards.service.ts:124: * @standard RFC-6838 mime-type
 src/services/export/standards.service.ts:20: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/export/standards.service.ts:21: * @standard Peppol-BIS-3.0 billing
@@ -2734,8 +2722,6 @@ src/services/country-clients/berlin-group-psd2.ts:15: * @rfc 6749 oauth-2.0
 src/services/country-clients/berlin-group-psd2.ts:16: * @rfc 7519 jwt
 src/services/emit-domain-event.ts:14: * @rfc 9562 uuid event-id
 src/services/event-emitter.service.ts:9: * @rfc 9562 uuid event-id
-src/services/export/excel.service.ts:6: * @rfc 6838 mime-type application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-src/services/export/pdf.service.ts:22: * @rfc 6838 mime-type application/pdf
 src/services/export/standards.service.ts:26: * @rfc 6838 mime-type
 src/services/spec-generator/extractor.ts:18: *   @rfc           <id> [free-text]             ← body inferred as 'RFC'
 src/services/spec-generator/i18n-audit.ts:14: * @rfc 8259 json
@@ -3373,8 +3359,6 @@ src/services/event-emitter.service.ts:11: * @compliance SOC-2 CC7.2 system-monit
 src/services/event-emitter.service.ts:12: * @compliance SOX §404 internal-controls
 src/services/evidence-attestation.ts:26: * @compliance SOX §404 internal-controls process-walk-through
 src/services/evidence-attestation.ts:27: * @compliance EU 910/2014 eidas qualified-electronic-signature
-src/services/export/pdf.service.ts:117:   * @compliance EU 2014/55 b2g-procurement-accessibility
-src/services/export/pdf.service.ts:24: * @compliance EU 2014/55 b2g-procurement-accessibility
 src/services/financial-reporting.service.ts:12: * @compliance SOX §302 disclosure-controls
 src/services/gl-account-resolver.ts:28: * @compliance SOX §404 internal-controls per-tenant-coa
 src/services/gl-posting.service.ts:13: * @compliance SOX §404 internal-controls
@@ -3936,9 +3920,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1108:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1109:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1130:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1123:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1124:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1145:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4974,8 +4958,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1111:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1131:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1126:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1146:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/plugins/naming.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
@@ -5115,8 +5099,6 @@ src/services/error-uuid/index.test.ts:16: * @audit Conservation Law 64 errors-ar
 src/services/error-uuid/index.ts:51: * @audit Conservation Law 64 errors-are-first-class-uuids
 src/services/event-emitter.service.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/evidence-attestation.ts:25: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
-src/services/export/excel.service.ts:9: * @audit ISO-19011:2018 audit-trail
-src/services/export/pdf.service.ts:23: * @audit ISO-19011:2018 audit-trail document-archival-evidence
 src/services/export/standards.service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/services/financial-reporting.service.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/gl-account-resolver.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution

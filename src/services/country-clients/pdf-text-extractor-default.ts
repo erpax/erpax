@@ -36,7 +36,11 @@ export const defaultPdfTextExtractor: PdfTextExtractor = async (bytes) => {
   // pdf-parse can't be resolved at bundle time).
   let pdfParse: (buf: Buffer | Uint8Array) => Promise<{ text: string }>
   try {
-    const mod = (await import('pdf-parse')) as
+    // Runtime-optional dependency: a non-literal specifier so the bundler
+    // (and tsc) treat it as a dynamic load, never a static resolve — the
+    // same pattern payload.config.ts uses for the optional `wrangler` import.
+    const spec: string = 'pdf-parse'
+    const mod = (await import(/* webpackIgnore: true */ spec)) as
       | { default: (buf: Buffer | Uint8Array) => Promise<{ text: string }> }
       | ((buf: Buffer | Uint8Array) => Promise<{ text: string }>)
     pdfParse = (typeof mod === 'function' ? mod : mod.default) as typeof pdfParse

@@ -10,6 +10,8 @@ import { multiTenantPlugin } from '@payloadcms/plugin-multi-tenant'
 import { importExportPlugin } from '@payloadcms/plugin-import-export'
 import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
+import { searchPlugin } from '@payloadcms/plugin-search'
+import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { r2Storage } from '@payloadcms/storage-r2'
 import { contentUuidPlugin } from './plugins/contentUuid'
 import { taggablePlugin } from './plugins/taggable'
@@ -259,6 +261,8 @@ const {
 import type { CollectionConfig, CollectionSlug } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
+import { beforeSyncWithSearch } from './components/search/beforeSync'
+import { searchFields } from './components/search/fieldOverrides'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
 import {
@@ -695,6 +699,17 @@ export default buildConfig({
     }),
     createEcommercePlugin(),
     formBuilderPlugin({}),
+    // Official content-surface plugins (see the `redirects` + `search` skills).
+    // Registering them is what makes `'redirects'`/`'search'` real CollectionSlugs.
+    redirectsPlugin({
+      collections: ['pages', 'posts'],
+      overrides: { fields: ({ defaultFields }) => defaultFields },
+    }),
+    searchPlugin({
+      collections: ['posts'],
+      beforeSync: beforeSyncWithSearch,
+      searchOverrides: { fields: ({ defaultFields }) => [...defaultFields, ...searchFields] },
+    }),
     multiTenantPlugin<Config>({
       collections: {
         // CMS Collections

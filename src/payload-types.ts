@@ -275,6 +275,8 @@ export interface Config {
     transactions: Transaction;
     forms: Form;
     'form-submissions': FormSubmission;
+    redirects: Redirect;
+    search: Search;
     exports: Export;
     imports: Import;
     'payload-mcp-api-keys': PayloadMcpApiKey;
@@ -888,6 +890,12 @@ export interface Config {
     'form-submissions': {
       tags: 'taggings';
     };
+    redirects: {
+      tags: 'taggings';
+    };
+    search: {
+      tags: 'taggings';
+    };
     exports: {
       tags: 'taggings';
     };
@@ -1098,6 +1106,8 @@ export interface Config {
     transactions: TransactionsSelect<false> | TransactionsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
+    redirects: RedirectsSelect<false> | RedirectsSelect<true>;
+    search: SearchSelect<false> | SearchSelect<true>;
     exports: ExportsSelect<false> | ExportsSelect<true>;
     imports: ImportsSelect<false> | ImportsSelect<true>;
     'payload-mcp-api-keys': PayloadMcpApiKeysSelect<false> | PayloadMcpApiKeysSelect<true>;
@@ -2267,6 +2277,14 @@ export interface Tagging {
     | {
         relationTo: 'form-submissions';
         value: string | FormSubmission;
+      }
+    | {
+        relationTo: 'redirects';
+        value: string | Redirect;
+      }
+    | {
+        relationTo: 'search';
+        value: string | Search;
       }
     | {
         relationTo: 'exports';
@@ -20772,6 +20790,84 @@ export interface FormSubmission {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "redirects".
+ */
+export interface Redirect {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  from: string;
+  to?: {
+    type?: ('reference' | 'custom') | null;
+    reference?:
+      | ({
+          relationTo: 'pages';
+          value: string | Page;
+        } | null)
+      | ({
+          relationTo: 'posts';
+          value: string | Post;
+        } | null);
+    url?: string | null;
+  };
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This is a collection of automatically created search results. These results are used by the global site search and will be updated automatically as documents in the CMS are created or updated.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "search".
+ */
+export interface Search {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  title?: string | null;
+  priority?: number | null;
+  doc: {
+    relationTo: 'posts';
+    value: string | Post;
+  };
+  slug?: string | null;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    image?: (string | null) | Media;
+  };
+  categories?:
+    | {
+        relationTo?: string | null;
+        categoryID?: string | null;
+        title?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "exports".
  */
 export interface Export {
@@ -21996,6 +22092,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'form-submissions';
         value: string | FormSubmission;
+      } | null)
+    | ({
+        relationTo: 'redirects';
+        value: string | Redirect;
+      } | null)
+    | ({
+        relationTo: 'search';
+        value: string | Search;
       } | null)
     | ({
         relationTo: 'payload-mcp-api-keys';
@@ -29817,6 +29921,53 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "redirects_select".
+ */
+export interface RedirectsSelect<T extends boolean = true> {
+  uuid?: T;
+  from?: T;
+  to?:
+    | T
+    | {
+        type?: T;
+        reference?: T;
+        url?: T;
+      };
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "search_select".
+ */
+export interface SearchSelect<T extends boolean = true> {
+  uuid?: T;
+  title?: T;
+  priority?: T;
+  doc?: T;
+  slug?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  categories?:
+    | T
+    | {
+        relationTo?: T;
+        categoryID?: T;
+        title?: T;
+        id?: T;
+      };
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "exports_select".
  */
 export interface ExportsSelect<T extends boolean = true> {
@@ -30402,6 +30553,8 @@ export interface TaskCreateCollectionExport {
       | 'transactions'
       | 'forms'
       | 'form-submissions'
+      | 'redirects'
+      | 'search'
       | 'exports'
       | 'imports';
     drafts?: ('yes' | 'no') | null;

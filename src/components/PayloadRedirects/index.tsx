@@ -41,7 +41,9 @@ export const PayloadRedirects: React.FC<Props> = async ({ disableNotFound, url }
     let redirectUrl: string
 
     if (typeof redirectItem.to?.reference?.value === 'string') {
-      const collection = redirectItem.to?.reference?.relationTo
+      // The cached redirect doc carries `relationTo` as a loose string; the
+      // plugin only ever stores a real content slug here. See the `redirects` skill.
+      const collection = redirectItem.to?.reference?.relationTo as Parameters<typeof getCachedDocument>[0]
       const id = redirectItem.to?.reference?.value
 
       const document = (await getCachedDocument(collection, id)()) as Page | Post
