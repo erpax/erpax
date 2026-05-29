@@ -20,7 +20,7 @@
  * @invariant Elimination entries prepared but not auto-posted (requires consolidation approval)
  */
 
-import { CollectionBeforeValidateHook } from 'payload'
+import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { IntercompanyReconciliation } from '../services/IntercompanyReconciliation'
 
 interface ConsolidationData {
@@ -37,7 +37,7 @@ interface ConsolidationData {
 /**
  * beforeValidate hook: validate consolidation readiness
  */
-export const validateConsolidationReadiness: CollectionBeforeValidateHook<ConsolidationData> = async ({
+export const validateConsolidationReadiness: CollectionBeforeValidateHook<ConsolidationData & TypeWithID> = async ({
   data,
   req,
 }) => {
@@ -210,7 +210,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
   }
 
   // Store readiness assessment
-  data.consolidationReadiness = readiness
+  data.consolidationReadiness = readiness as unknown as Record<string, unknown>
   data.chainLeafUuid = readiness.chainLeafUuid
 
   console.log(

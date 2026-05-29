@@ -13,25 +13,27 @@
  * @see src/app/README.md
  */
 
-import { getPayloadHMR } from '@payloadcms/next/utilities'
+import config from '@payload-config'
+import { getPayload } from 'payload'
 import Stripe from 'stripe'
 
 export async function POST(request: Request) {
   try {
-    const { payload, req } = await getPayloadHMR()
+    const payload = await getPayload({ config })
+    const { user } = await payload.auth({ headers: request.headers })
 
     // Verify user is authenticated
-    if (!req.user) {
+    if (!user) {
       return Response.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    const tenantId = req.user.tenant as string
+    const tenantId = user.tenant as string
     if (!tenantId) {
       return Response.json({ error: 'No tenant associated with user' }, { status: 400 })
     }
 
     const body = await request.json()
-    const { planSlug, paymentMethodId } = body
+    const { planSlug, paymentMethodId } = body as { planSlug?: string; paymentMethodId?: string }
 
     if (!planSlug) {
       return Response.json({ error: 'planSlug required' }, { status: 400 })
@@ -109,12 +111,12 @@ export async function POST(request: Request) {
     }
 
     const stripe = new Stripe(tenant.stripeSecretKey, {
-      apiVersion: '2025-03-31.basial',
+      apiVersion: '2025-03-31.basil' as Stripe.StripeConfig['apiVersion'],
     })
 
     // Get or create Stripe customer
     const customers = await stripe.customers.list({
-      email: req.user.email,
+      email: user.email,
       limit: 1,
     })
 
@@ -124,8 +126,8 @@ export async function POST(request: Request) {
       stripeCustomerId = customers.data[0].id
     } else {
       const customer = await stripe.customers.create({
-        email: req.user.email,
-        metadata: { tenantId, payloadUserId: req.user.id },
+        email: user.email,
+        metadata: { tenantId, payloadUserId: user.id },
       })
       stripeCustomerId = customer.id
     }
@@ -145,7 +147,7 @@ export async function POST(request: Request) {
         existing.docs[0].stripeSubscriptionId,
         {
           items: [{ price: plan.stripePriceId }],
-          payment_method: paymentMethodId,
+          default_payment_method: paymentMethodId,
           off_session: true,
         },
       )
@@ -154,7 +156,7 @@ export async function POST(request: Request) {
       stripeSubscription = await stripe.subscriptions.create({
         customer: stripeCustomerId,
         items: [{ price: plan.stripePriceId }],
-        payment_method: paymentMethodId,
+        default_payment_method: paymentMethodId,
         off_session: true,
         metadata: { tenantId, planSlug },
       })
@@ -170,8 +172,8 @@ export async function POST(request: Request) {
           status: 'active',
           stripeSubscriptionId: stripeSubscription.id,
           stripeCustomerId: stripeCustomerId,
-          currentPeriodStart: new Date(stripeSubscription.current_period_start * 1000),
-          currentPeriodEnd: new Date(stripeSubscription.current_period_end * 1000),
+          currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000),
+          currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000),
         },
       })
 
@@ -188,8 +190,8 @@ export async function POST(request: Request) {
           status: 'active',
           stripeSubscriptionId: stripeSubscription.id,
           stripeCustomerId: stripeCustomerId,
-          currentPeriodStart: new Date(stripeSubscription.current_period_start * 1000),
-          currentPeriodEnd: new Date(stripeSubscription.current_period_end * 1000),
+          currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000),
+          currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000),
         },
       })
 

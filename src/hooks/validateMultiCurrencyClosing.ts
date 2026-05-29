@@ -25,7 +25,7 @@
  * @invariant Exchange rates tied to period-end date
  */
 
-import { CollectionBeforeValidateHook } from 'payload'
+import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { CurrencyReconciliation } from '../services/CurrencyReconciliation'
 
 interface ClosingEntryWithCurrency {
@@ -53,7 +53,7 @@ interface ClosingEntryData {
 /**
  * beforeValidate hook: validate multi-currency closing
  */
-export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingEntryData> = async ({
+export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingEntryData & TypeWithID> = async ({
   data,
   req,
 }) => {
@@ -126,7 +126,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
       // Query ExchangeRate collection for (currency, reportingCurrency, date)
       // Format: rate = how many reportingCurrency units per 1 unit of currency
       const rateQuery = await payload.find({
-        collection: 'exchange-rates',
+        collection: 'currency-rates',
         where: {
           and: [
             { transactionCurrency: { equals: currency } },
@@ -179,7 +179,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
   }
 
   // Store reconciliation data for reporting
-  data.multiCurrencyReconciliation = reconciliation
+  data.multiCurrencyReconciliation = reconciliation as unknown as Record<string, unknown>
 
   // Update chainLeafUuid with multi-currency reconciliation included
   data.chainLeafUuid = reconciliation.chainLeafUuid

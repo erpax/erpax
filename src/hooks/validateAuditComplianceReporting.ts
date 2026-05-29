@@ -25,7 +25,7 @@
  * @invariant TP documentation package includes contemporaneous documentation
  */
 
-import { CollectionBeforeValidateHook } from 'payload'
+import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { AuditComplianceReporting } from '../services/AuditComplianceReporting'
 
 interface AuditReportData {
@@ -47,7 +47,7 @@ interface AuditReportData {
 /**
  * beforeValidate hook: validate audit compliance reporting
  */
-export const validateAuditComplianceReporting: CollectionBeforeValidateHook<AuditReportData> = async ({
+export const validateAuditComplianceReporting: CollectionBeforeValidateHook<AuditReportData & TypeWithID> = async ({
   data,
   req,
 }) => {
@@ -209,7 +209,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
         '/TP-Master-File',
       )
 
-      data.transferPricingPackage = tpPackage
+      data.transferPricingPackage = tpPackage as unknown as Record<string, unknown>
     } catch (err) {
       console.warn(
         '[validateAuditComplianceReporting] Failed to generate TP documentation:',

@@ -24,7 +24,7 @@
  * @invariant Management reporting must include KPI scorecard with threshold alerts
  */
 
-import { CollectionBeforeValidateHook } from 'payload'
+import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { PostCloseAnalytics } from '../services/PostCloseAnalytics'
 
 interface AnalyticsReportData {
@@ -47,7 +47,7 @@ interface AnalyticsReportData {
 /**
  * beforeValidate hook: validate post-close analytics
  */
-export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsReportData> = async ({
+export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsReportData & TypeWithID> = async ({
   data,
   req,
 }) => {
@@ -217,7 +217,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
         data.executiveSummaryText,
       )
 
-      data.managementReportingSummary = managementReportingSummary
+      data.managementReportingSummary = managementReportingSummary as unknown as Record<string, unknown>
     } catch (err) {
       console.warn('[validatePostCloseAnalytics] Failed to generate management reporting:', err)
       throw new Error(

@@ -25,7 +25,7 @@
  * @invariant Tax adjustment entries prepared but not auto-posted (requires tax authority approval)
  */
 
-import { CollectionBeforeValidateHook } from 'payload'
+import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { TaxPeriodReconciliation } from '../services/TaxPeriodReconciliation'
 
 interface TaxPeriodData {
@@ -48,7 +48,7 @@ interface TaxPeriodData {
 /**
  * beforeValidate hook: validate tax period closing
  */
-export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodData> = async ({
+export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodData & TypeWithID> = async ({
   data,
   req,
 }) => {
@@ -163,7 +163,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   }
 
   // Store readiness assessment
-  data.taxPeriodReadiness = readiness
+  data.taxPeriodReadiness = readiness as unknown as Record<string, unknown>
   data.chainLeafUuid = readiness.chainLeafUuid
 
   console.log(

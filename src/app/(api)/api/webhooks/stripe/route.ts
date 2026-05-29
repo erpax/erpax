@@ -13,9 +13,10 @@
  * @see src/app/README.md
  */
 
+import config from '@payload-config'
 import { headers } from 'next/headers'
 import Stripe from 'stripe'
-import { getPayloadHMR } from '@payloadcms/next/utilities'
+import { getPayload } from 'payload'
 import {
   handleSubscriptionSync,
   handleInvoiceSync,
@@ -80,7 +81,7 @@ export async function POST(request: Request) {
 
     // Verify and parse Stripe webhook
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-      apiVersion: '2025-03-31.basil',
+      apiVersion: '2025-03-31.basil' as Stripe.StripeConfig['apiVersion'],
     })
 
     let event: Stripe.Event
@@ -95,7 +96,7 @@ export async function POST(request: Request) {
     }
 
     // Get Payload CMS instance
-    const { payload } = await getPayloadHMR()
+    const payload = await getPayload({ config })
 
     // Route event to appropriate handler
     const handler = webhookEventHandlers[event.type]
