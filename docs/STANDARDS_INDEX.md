@@ -415,7 +415,7 @@ src/collections/Items/index.ts:13: * @standard GS1 GTIN global-trade-item-number
 src/collections/Items/index.ts:14: * @standard ISO-4217:2015 currency-codes price-currency
 src/collections/Items/index.ts:15: * @standard EN-16931:2017 §BG-31 item-information
 src/collections/JobPositions.ts:9: * @standard ISO-8601-1:2019 date-time
-src/collections/JournalEntries.ts:34: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
+src/collections/JournalEntries/index.ts:29: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/collections/KycChecks.ts:4: * @standard ISO/IEC-19794 biometric-data-interchange-formats
 src/collections/KycChecks.ts:5: * @standard FATF-Recommendation-10 customer-due-diligence
 src/collections/Leads.ts:11: * @standard ISO-8601-1:2019 date-time
@@ -3027,7 +3027,7 @@ src/collections/InvestmentProperties.ts:22: * @compliance SOX §404 internal-con
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/collections/Invoices/index.ts:60: * @compliance SOX §404 internal-controls
 src/collections/Items/hooks/afterChange.ts:13: * @compliance SOX §404 internal-controls
-src/collections/JournalEntries.ts:39: * @compliance SOX §404 internal-controls
+src/collections/JournalEntries/index.ts:34: * @compliance SOX §404 internal-controls
 src/collections/KycChecks.ts:6: * @compliance EU-AMLD-6 Directive-2018/1673 anti-money-laundering
 src/collections/KycChecks.ts:7: * @compliance USA-PATRIOT-Act §326 customer-identification-program
 src/collections/KycChecks.ts:8: * @compliance EU-Regulation-2015/847 wire-transfers
@@ -3659,9 +3659,9 @@ src/collections/Items/hooks/afterChange.ts:11: * @accounting US-GAAP ASC-330 inv
 src/collections/Items/index.ts:16: * @accounting IFRS IAS-2 inventories
 src/collections/Items/index.ts:17: * @accounting US-GAAP ASC-330 inventory
 src/collections/JobPositions.ts:10: * @accounting IFRS IAS-19 employee-benefits (planned-headcount accruals)
-src/collections/JournalEntries.ts:35: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/collections/JournalEntries.ts:36: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/collections/JournalEntries.ts:37: * @accounting OECD SAF-T §3 journal-entries
+src/collections/JournalEntries/index.ts:30: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/collections/JournalEntries/index.ts:31: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/collections/JournalEntries/index.ts:32: * @accounting OECD SAF-T §3 journal-entries
 src/collections/LeaseModifications.ts:19: * @accounting IFRS IFRS-16 §44 separate-lease-criterion
 src/collections/LeaseModifications.ts:20: * @accounting IFRS IFRS-16 §45 not-separate-lease-modification
 src/collections/LeaseModifications.ts:21: * @accounting IFRS IFRS-16 §46 partial-or-full-termination
@@ -4359,8 +4359,8 @@ src/collections/Invoices/hooks/encryptSensitiveFields.ts:11: * @security ISO-270
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
 src/collections/Items/hooks/beforeValidate.ts:11: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/JobPositions.ts:12: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/JournalEntries.ts:40: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/JournalEntries.ts:41: * @security ISO-27002 §5.4 segregation-of-duties
+src/collections/JournalEntries/index.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/JournalEntries/index.ts:36: * @security ISO-27002 §5.4 segregation-of-duties
 src/collections/KycChecks.ts:10: * @security ISO-27001 A.5.34 privacy-and-pii
 src/collections/Leads.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/LeaseModifications.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4775,7 +4775,7 @@ src/collections/Invoices/index.ts:61: * @audit ISO-19011:2018 audit-trail
 src/collections/Items/hooks/afterChange.ts:12: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/collections/Items/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/JobPositions.ts:11: * @audit ISO-19011:2018 audit-trail headcount-evidence
-src/collections/JournalEntries.ts:38: * @audit ISO-19011:2018 audit-trail
+src/collections/JournalEntries/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/collections/KycChecks.ts:9: * @audit ISO-19011:2018 audit-trail kyc-evidence
 src/collections/Leads.ts:15: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/collections/LeaseModifications.ts:25: * @audit ISO-19011:2018 audit-trail lease-modification-evidence

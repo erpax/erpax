@@ -1,267 +1,155 @@
+import type { Access, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
+import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '../../hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
+import { roleScopedAccess, scopedAccess, tenantAdmin, hasRole, getUserContext } from '../../access/auth'
+import {
+  glAccountField,
+  currencyField,
+  statusField,
+  auditFields,
+} from '../../fields'
+import { validateNotLocked } from '../../services/accounting/utilities/period-lock'
+import { validateBalancedEntry } from '../../hooks/collections/accounting/balanced-entry.hook'
+
 /**
- * JournalEntries Collection
+ * Journal Entries — double-entry-bookkeeping write target.
  *
- * Manual GL entries for business transactions.
- * Enforces double-entry bookkeeping: debits = credits.
- * Supports recurring entries, reversals, and prior-period adjustments.
- * Posting is immutable; modifications require admin override with documentation.
+ * Invariant: total debits === total credits per entry. Period-locked entries
+ * cannot be edited or back-dated. Posted entries are read-only except to
+ * admins. Segregation of duties: the user who created an entry cannot also
+ * approve it.
  *
- * @invariant debits.sum() === credits.sum()
- * @invariant createdBy ≠ approvedBy (segregation of duties)
- * @invariant Once posted, entry is immutable
- * @invariant Large entries require tiered approval by amount
+ * Folded into its folder-node (the name lives in the folder; this file is the
+ * collection meaning). Supersedes the former flat `JournalEntries.ts` and the
+ * shadowed alternate that this file used to hold.
+ *
+ * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+ * @accounting OECD SAF-T §3 journal-entries
+ * @audit ISO-19011:2018 audit-trail
+ * @compliance SOX §404 internal-controls
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ * @security ISO-27002 §5.4 segregation-of-duties
+ * @see docs/STANDARDS.md §4.2
  */
 
-import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../access/auth'
-import { validateDoubleEntry } from '../../hooks/validateDoubleEntry'
+/**
+ * Role + tenant gate: admin/accountant of own tenant. Posting immutability is
+ * enforced separately in the beforeChange hook below — access functions run
+ * before the op and have no view of the stored doc.
+ */
+const updateAccess: Access = async ({ req }) => {
+  const user = getUserContext(req)
+  if (!hasRole(user, 'admin', 'accountant')) return false
+  return { tenant: { equals: user!.tenant } }
+}
 
-export const JournalEntries: CollectionConfig = {
+/**
+ * Posted journal entries are immutable to non-admins (SOX §404 — once a GL
+ * entry is posted it is part of the permanent record). Runs on update only;
+ * `originalDoc` carries the stored status.
+ */
+const enforcePostedImmutable: CollectionBeforeChangeHook = ({ req, data, operation, originalDoc }) => {
+  if (operation === 'update' && originalDoc?.status === 'posted' && !hasRole(getUserContext(req), 'admin')) {
+    throw new Error('Posted journal entries are immutable; contact an admin if a correction is required.')
+  }
+  return data
+}
+
+const JournalEntries: CollectionConfig = {
   slug: 'journal-entries',
+  labels: { singular: 'Journal Entry', plural: 'Journal Entries' },
   admin: {
     useAsTitle: 'entryNumber',
+    defaultColumns: ['entryNumber', 'entryDate', 'description', 'status', 'debitTotal', 'creditTotal'],
   },
-  access: accountingCollectionAccess(),
-  hooks: {
-    beforeValidate: [validateDoubleEntry],
+  access: {
+    read: scopedAccess(),
+    create: roleScopedAccess('admin', 'accountant'),
+    update: updateAccess,
+    delete: tenantAdmin,
   },
   fields: [
+    { name: 'entryNumber', type: 'text', required: true, unique: true },
+    { name: 'entryDate', type: 'date', required: true },
+    { name: 'postedDate', type: 'date' },
+    { name: 'description', type: 'textarea', localized: true, required: true },
+    statusField(
+      [
+        { label: 'Draft', value: 'draft' },
+        { label: 'Pending Approval', value: 'pending_approval' },
+        { label: 'Posted', value: 'posted' },
+        { label: 'Reversed', value: 'reversed' },
+        { label: 'Void', value: 'void' },
+      ],
+      'draft',
+    ),
     {
-      name: 'entity',
-      type: 'relationship',
-      relationTo: 'legal-entities',
-      required: true,
-      admin: { description: 'Entity posting entry to' },
-    },
-    {
-      name: 'entryNumber',
-      type: 'text',
-      unique: true,
-      required: true,
-      admin: { description: 'Sequential entry number for control (e.g., JE-2026-0001)' },
-    },
-    {
-      name: 'entryDate',
-      type: 'date',
-      required: true,
-      admin: { description: 'Date of transaction (determines posting period)' },
-    },
-    {
-      name: 'description',
-      type: 'richText',
-      required: true,
-      admin: { description: 'Business purpose of entry (required for audit trail)' },
-    },
-    {
-      name: 'postings',
+      name: 'lines',
       type: 'array',
       required: true,
       minRows: 2,
       fields: [
-        {
-          name: 'glAccount',
-          type: 'relationship',
-          relationTo: 'gl-accounts',
-          required: true,
-        },
-        {
-          name: 'debitAmount',
-          type: 'number',
-          admin: { description: 'Debit amount (leave blank for credits only)' },
-        },
-        {
-          name: 'creditAmount',
-          type: 'number',
-          admin: { description: 'Credit amount (leave blank for debits only)' },
-        },
-        {
-          name: 'description',
-          type: 'text',
-          admin: { description: 'Line-item specific description' },
-        },
-        {
-          name: 'segment',
-          type: 'relationship',
-          relationTo: 'cost-centers',
-          admin: { description: 'Optional cost center/segment allocation' },
-        },
-        {
-          name: 'project',
-          type: 'relationship',
-          relationTo: 'projects',
-          admin: { description: 'Optional project allocation' },
-        },
+        { name: 'lineNumber', type: 'number', defaultValue: 1 },
+        ...glAccountField(true),
+        { name: 'description', type: 'text', localized: true },
+        { name: 'debit', type: 'number', defaultValue: 0 },
+        { name: 'credit', type: 'number', defaultValue: 0 },
+        currencyField(),
+        { name: 'exchangeRate', type: 'number', defaultValue: 1 },
+        // Analytical dimension for IFRS-8 / ASC-280 segment roll-ups (optional).
+        { name: 'costCenterId', type: 'text' },
       ],
-      admin: {
-        description: 'Individual debit/credit lines (system validates debits = credits)',
-      },
     },
+    { name: 'debitTotal', type: 'number', defaultValue: 0, admin: { disabled: true } },
+    { name: 'creditTotal', type: 'number', defaultValue: 0, admin: { disabled: true } },
+    { name: 'isBalanced', type: 'checkbox', admin: { disabled: true } },
     {
-      name: 'status',
+      name: 'sourceType',
       type: 'select',
-      options: [
-        { label: 'Draft', value: 'draft' },
-        { label: 'Pending Approval', value: 'pending-approval' },
-        { label: 'Approved', value: 'approved' },
-        { label: 'Posted', value: 'posted' },
-        { label: 'Reversed', value: 'reversed' },
-        { label: 'Cancelled', value: 'cancelled' },
-      ],
       required: true,
-      defaultValue: 'draft',
-      admin: {
-        description: 'Workflow status: draft → pending → approved → posted → (reversed or closed)',
-      },
-    },
-    {
-      name: 'createdBy',
-      type: 'relationship',
-      relationTo: 'users',
-      hasMany: false,
-    },
-    {
-      name: 'approvedBy',
-      type: 'relationship',
-      relationTo: 'users',
-      admin: {
-        description: 'User who approved entry (must not be creator for segregation of duties)',
-      },
-    },
-    {
-      name: 'approvalDate',
-      type: 'date',
-      admin: { description: 'Date approved' },
-    },
-    {
-      name: 'approvalReason',
-      type: 'textarea',
-      admin: { description: 'Approver notes (why approved or conditional approval)' },
-    },
-    {
-      name: 'postedBy',
-      type: 'relationship',
-      relationTo: 'users',
-      admin: { description: 'User who posted entry to GL' },
-    },
-    {
-      name: 'postedDate',
-      type: 'date',
-      admin: { description: 'Actual GL posting date (becomes immutable after this)' },
-    },
-    {
-      name: 'isRecurring',
-      type: 'checkbox',
-      defaultValue: false,
-      admin: {
-        description:
-          'Check if this is recurring entry (e.g., rent accrual, utilities, depreciation)',
-      },
-    },
-    {
-      name: 'recurringSchedule',
-      type: 'select',
       options: [
-        { label: 'Monthly', value: 'monthly' },
-        { label: 'Quarterly', value: 'quarterly' },
-        { label: 'Semi-Annual', value: 'semi-annual' },
-        { label: 'Annual', value: 'annual' },
-        { label: 'One-Time (Not Recurring)', value: 'one-time' },
+        { label: 'Manual', value: 'manual' },
+        { label: 'Invoice', value: 'invoice' },
+        { label: 'Bill', value: 'bill' },
+        { label: 'Payment', value: 'payment' },
+        { label: 'Bank Reconciliation', value: 'bank_reconciliation' },
+        { label: 'Period-End Adjustment', value: 'period_end_adjustment' },
+        { label: 'Tax Calculation', value: 'tax_calculation' },
+        { label: 'Currency Adjustment', value: 'currency_adjustment' },
       ],
-      defaultValue: 'one-time',
-      admin: { description: 'Recurring frequency (if applicable)' },
     },
-    {
-      name: 'recurringStartDate',
-      type: 'date',
-      admin: { description: 'Recurring entry start date' },
-    },
-    {
-      name: 'recurringEndDate',
-      type: 'date',
-      admin: { description: 'Recurring entry end date (after this, no more auto-postings)' },
-    },
-    {
-      name: 'isReversal',
-      type: 'checkbox',
-      defaultValue: false,
-      admin: {
-        description:
-          'Check if this entry reverses a prior entry (allows posting to locked periods)',
-      },
-    },
-    {
-      name: 'reversesEntryId',
-      type: 'relationship',
-      relationTo: 'journal-entries',
-      admin: { description: 'If reversal, which entry does this reverse?' },
-    },
-    {
-      name: 'isPriorPeriodAdjustment',
-      type: 'checkbox',
-      defaultValue: false,
-      admin: {
-        description:
-          'Check if prior-period adjustment (allows posting to closed periods with approval)',
-      },
-    },
-    {
-      name: 'priorPeriodAdjustmentReason',
-      type: 'textarea',
-      admin: {
-        description:
-          'Why is prior-period adjustment needed? (e.g., "Q1 accrual error, invoice received in Q2")',
-      },
-    },
-    {
-      name: 'supportingDocuments',
-      type: 'relationship',
-      relationTo: 'audit-evidence',
-      hasMany: true,
-      admin: {
-        description:
-          'Supporting documents (invoices, contracts, approvals). Required for large entries.',
-      },
-    },
-    {
-      name: 'amountThreshold',
-      type: 'number',
-      admin: { description: 'Total debit or credit amount (calculated for approval routing)' },
-    },
-    {
-      name: 'requiresDocumentation',
-      type: 'checkbox',
-      defaultValue: false,
-      admin: {
-        description: 'System flag: true if amount > threshold and supporting docs required',
-      },
-    },
-    {
-      name: 'adminOverride',
-      type: 'checkbox',
-      defaultValue: false,
-      admin: {
-        description: 'Check if admin overrode a validation or approval requirement',
-      },
-    },
-    {
-      name: 'adminOverrideReason',
-      type: 'textarea',
-      admin: {
-        description: 'Reason for admin override (required if checked)',
-      },
-    },
-    {
-      name: 'auditTrail',
-      type: 'richText',
-      admin: {
-        description:
-          'Immutable audit trail: creation, approvals, posting, any modifications. Append-only.',
-      },
-    },
-    {
-      name: 'notes',
-      type: 'textarea',
-      admin: { description: 'Additional notes' },
-    },
+    { name: 'sourceId', type: 'text' },
+    // SAF-T §3 source-document event linkage (e.g. 'invoice:posted').
+    { name: 'sourceEvent', type: 'text' },
+    ...auditFields(),
   ],
+  hooks: {
+    beforeValidate: [
+      autoPopulateTenant,
+      // Single source of truth for the double-entry balance check.
+      validateBalancedEntry({
+        linesField: 'lines',
+        debitTotalField: 'debitTotal',
+        creditTotalField: 'creditTotal',
+        balancedField: 'isBalanced',
+      }),
+    ],
+    beforeChange: [
+      validateNotLocked,
+      enforcePostedImmutable,
+      autoPopulateCreatedBy,
+      enforceSegregationOfDuties(),
+      autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
+      autoSetTimestamp('approvedAt', (data) => Boolean((data as { approvedBy?: unknown }).approvedBy)),
+    ],
+    afterChange: [auditTrailAfterChange('journal-entries')],
+  },
+  timestamps: true,
 }
+
+export default JournalEntries
