@@ -307,6 +307,9 @@ export async function callWorkersAi<TOutput = unknown>(
   // ── 9. Output validation ───────────────────────────────────────────
   const validated = validateAiOutput<TOutput>(output)
   if (!validated.ok) {
+    // `in` narrows the generic union structurally — discriminant narrowing on
+    // OutputValidationResult<TOutput> is unreliable while TOutput is unresolved.
+    const reason = 'reason' in validated ? validated.reason : 'malformed'
     await writeAiSuggestionRow(req.payload, {
       tenantId, userId,
       suggestionId: uuid(),
@@ -314,7 +317,7 @@ export async function callWorkersAi<TOutput = unknown>(
       model: options.model,
       inferenceTime,
       inputs: { _redacted: true, _piiKinds: strippedKinds },
-      outputs: { error: 'output_validation_failed', reason: validated.reason },
+      outputs: { error: 'output_validation_failed', reason },
       aiRiskClass: options.aiRiskClass,
       humanDecision: 'pending',
       sourceCollection: options.sourceCollection,
@@ -322,7 +325,7 @@ export async function callWorkersAi<TOutput = unknown>(
       latencyMs,
       status: 'quarantined',
     })
-    return { ok: false, error: 'output_validation_failed', message: validated.reason }
+    return { ok: false, error: 'output_validation_failed', message: reason }
   }
   output = validated.value
 

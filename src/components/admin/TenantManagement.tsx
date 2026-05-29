@@ -468,7 +468,7 @@ function HostDetailDialog({
         {/* Footer with actions */}
         <div className="flex justify-between items-center p-6 border-t bg-gray-50">
           <div className="flex gap-2">
-            {validActions.includes('activate') && (
+            {validActions.includes('active') && (
               <button
                 onClick={() => onAction(tenant.id, 'activate')}
                 className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
@@ -476,7 +476,7 @@ function HostDetailDialog({
                 Activate
               </button>
             )}
-            {validActions.includes('suspend') && (
+            {validActions.includes('suspended') && (
               <button
                 onClick={() => onAction(tenant.id, 'suspend')}
                 className="px-3 py-1 bg-yellow-600 text-white rounded hover:bg-yellow-700 text-sm"
