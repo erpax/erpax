@@ -12,7 +12,6 @@ export const preventAuditTrailModification: CollectionBeforeChangeHook = async (
   if (operation === 'update') {
     throw new Error('Audit trail events are immutable; cannot be updated.')
   }
-  if (operation === 'delete') {
-    throw new Error('Audit trail events cannot be deleted.')
-  }
+  // Deletion is blocked at the access layer; a beforeChange hook never sees a
+  // 'delete' operation (it is create | update only), so there is no branch for it.
 }

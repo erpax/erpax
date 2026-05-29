@@ -30,12 +30,12 @@ const defaultTenantArrayField = tenantsArrayField({
         { label: localeRecord('users.tenantViewerRole'), value: 'viewer' },
       ],
       required: true,
-      // Slice KKK: replaced inline `({ req }) => Boolean(req.user)` with the
-      // canonical `authenticated` helper from `@/access/authenticated` so the
-      // role-membership write gate stays standards-traceable
-      // (NIST INCITS-359 RBAC + ISO 27002 §5.15 access-control).
+      // Field access has its own signature (boolean only, no Where) so the
+      // collection-level `authenticated` helper can't be reused here — the
+      // authenticated write gate is the field-access predicate inline.
+      // (NIST INCITS-359 RBAC + ISO 27002 §5.15 access-control.)
       access: {
-        update: authenticated,
+        update: ({ req }) => Boolean(req.user),
       },
     },
   ],

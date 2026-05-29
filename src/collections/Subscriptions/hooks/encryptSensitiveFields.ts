@@ -33,5 +33,5 @@ export const encryptSubscriptionData: CollectionBeforeChangeHook<Subscription> =
 export const decryptSubscriptionData: CollectionAfterReadHook<Subscription> = async ({
   doc,
 }) => {
-  return decryptFields(doc, ENCRYPTED_FIELDS)
+  return decryptFields(doc as unknown as Record<string, unknown>, ENCRYPTED_FIELDS)
 }

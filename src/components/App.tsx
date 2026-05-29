@@ -68,7 +68,7 @@ const App: React.FC<AppProps> = ({
         isOpen={sidebarOpen}
         onToggle={() => setSidebarOpen(!sidebarOpen)}
         currentPage={currentPage}
-        onNavigate={setCurrentPage}
+        onNavigate={(page) => setCurrentPage(page as PageType)}
         userRole={userRole}
         userName={userName}
       />

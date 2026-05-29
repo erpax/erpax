@@ -117,7 +117,7 @@ export const JournalEntries: CollectionConfig = {
       name: 'createdBy',
       type: 'relationship',
       relationTo: 'users',
-      admin: { hasMany: false },
+      hasMany: false,
     },
     {
       name: 'approvedBy',

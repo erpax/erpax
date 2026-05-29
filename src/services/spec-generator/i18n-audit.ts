@@ -83,7 +83,7 @@ export function expectedKeys(args: {
         chainIds.add(step.chainId)
         let s = stepsByChain.get(step.chainId)
         if (!s) { s = new Set(); stepsByChain.set(step.chainId, s) }
-        s.add(step.stepId)
+        s.add(String(step.stepIndex))
       }
     }
   }
