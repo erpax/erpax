@@ -55,12 +55,7 @@ export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPosting
   const { data, req } = args
 
   // Extract posting date
-  let postingDate = data.postingDate
-  if (!postingDate && data.journalEntry) {
-    // If journalEntry is populated, extract entryDate
-    // This requires a populate call or would come from context
-    // For now, assume postingDate is set (would be validated by form)
-  }
+  const postingDate = data.postingDate
 
   if (!postingDate) {
     throw new Error('postingDate or journalEntry.entryDate required to resolve fiscal period')
