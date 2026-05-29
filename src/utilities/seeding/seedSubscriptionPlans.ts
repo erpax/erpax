@@ -50,8 +50,8 @@ export async function seedSubscriptionPlans(
         data: {
           name: planConfig.name,
           slug: planConfig.slug,
-          monthlyUSD: planConfig.monthlyUSD,
-          yearlyUSD: planConfig.yearlyUSD,
+          monthlyPrice: planConfig.monthlyPrice,
+          yearlyPrice: planConfig.yearlyPrice,
           billingCycle: planConfig.billingCycle,
           description: planConfig.description,
           limits: planConfig.limits,
@@ -114,8 +114,8 @@ export async function getOrCreatePlan(
     data: {
       name: planConfig.name,
       slug: planConfig.slug,
-      monthlyUSD: planConfig.monthlyUSD,
-      yearlyUSD: planConfig.yearlyUSD,
+      monthlyPrice: planConfig.monthlyPrice,
+      yearlyPrice: planConfig.yearlyPrice,
       billingCycle: planConfig.billingCycle,
       description: planConfig.description,
       limits: planConfig.limits,

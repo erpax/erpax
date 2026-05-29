@@ -53,7 +53,7 @@ export async function POST(request: Request) {
     const plan = planResult.docs[0]
 
     // If free plan, create subscription directly
-    if (planSlug === 'free' || plan.monthlyUSD === 0) {
+    if (planSlug === 'free' || plan.monthlyPrice === 0) {
       // Check if subscription already exists
       const existing = await payload.find({
         collection: 'subscriptions',

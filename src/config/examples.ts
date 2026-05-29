@@ -24,7 +24,7 @@ export const courseBuilderConfig: TenantConfig = {
     {
       name: 'Free',
       slug: 'free',
-      monthlyUSD: 0,
+      monthlyPrice: 0,
       billingCycle: 'monthly',
       description: 'Get started with basic course creation',
       limits: {
@@ -42,8 +42,8 @@ export const courseBuilderConfig: TenantConfig = {
     {
       name: 'Creator',
       slug: 'creator',
-      monthlyUSD: 29,
-      yearlyUSD: 290,
+      monthlyPrice: 29,
+      yearlyPrice: 290,
       billingCycle: 'monthly',
       description: 'Perfect for individual course creators',
       limits: {
@@ -61,8 +61,8 @@ export const courseBuilderConfig: TenantConfig = {
     {
       name: 'Academy',
       slug: 'academy',
-      monthlyUSD: 99,
-      yearlyUSD: 990,
+      monthlyPrice: 99,
+      yearlyPrice: 990,
       billingCycle: 'monthly',
       description: 'For teams managing multiple courses',
       limits: {
@@ -141,7 +141,7 @@ export const newsletterConfig: TenantConfig = {
     {
       name: 'Free',
       slug: 'free',
-      monthlyUSD: 0,
+      monthlyPrice: 0,
       billingCycle: 'monthly',
       description: 'Send up to 100 emails/month',
       limits: {
@@ -159,8 +159,8 @@ export const newsletterConfig: TenantConfig = {
     {
       name: 'Pro',
       slug: 'pro',
-      monthlyUSD: 19,
-      yearlyUSD: 190,
+      monthlyPrice: 19,
+      yearlyPrice: 190,
       billingCycle: 'monthly',
       description: 'Unlimited emails + subscriber insights',
       limits: {
@@ -220,7 +220,7 @@ export const marketplaceConfig: TenantConfig = {
     {
       name: 'Seller',
       slug: 'seller',
-      monthlyUSD: 0,
+      monthlyPrice: 0,
       billingCycle: 'monthly',
       description: 'List and sell digital products',
       limits: {
@@ -238,8 +238,8 @@ export const marketplaceConfig: TenantConfig = {
     {
       name: 'Professional',
       slug: 'professional',
-      monthlyUSD: 49,
-      yearlyUSD: 490,
+      monthlyPrice: 49,
+      yearlyPrice: 490,
       billingCycle: 'monthly',
       description: 'Advanced seller tools and analytics',
       limits: {

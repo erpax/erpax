@@ -600,7 +600,7 @@ src/collections/Spaces.ts:13: * @standard EN-15221-6:2011 facility-management ar
 src/collections/Standards.ts:26: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/collections/Standards.ts:27: * @standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
 src/collections/Standards.ts:28: * @standard W3C JSON-LD 1.1 (citation as live linked-data)
-src/collections/SubscriptionPlans/index.ts:8: * @standard ISO-4217:2015 currency-codes
+src/collections/SubscriptionPlans/index.ts:9: * @standard ISO-4217:2015 currency-codes
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:23: * @standard ISO-4217:2015 currency-codes
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:24: * @standard ISO-8601-1:2019 date-time period-boundaries
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
@@ -3095,7 +3095,7 @@ src/collections/SepaMandates.ts:23: * @compliance EPC130-08 sepa-direct-debit-ru
 src/collections/ShareBasedPayments.ts:18: * @compliance SOX §404 internal-controls TOM-EQU-01
 src/collections/Shipments.ts:8: * @compliance SOX §404 internal-controls dispatch-controls
 src/collections/Spaces.ts:15: * @compliance SOX §404 internal-controls space-allocation
-src/collections/SubscriptionPlans/index.ts:11: * @compliance SOX §404 internal-controls
+src/collections/SubscriptionPlans/index.ts:12: * @compliance SOX §404 internal-controls
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:30: * @compliance SOX §404 internal-controls revenue-recognition
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/collections/Subscriptions/index.ts:18: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
@@ -3756,8 +3756,8 @@ src/collections/SepaMandates.ts:18: * @accounting IFRS IFRS-9 financial-instrume
 src/collections/SepaMandates.ts:19: * @accounting US-GAAP ASC-310 receivables
 src/collections/SubscriptionPlans/hooks/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/SubscriptionPlans/hooks/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/SubscriptionPlans/index.ts:10: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/collections/SubscriptionPlans/index.ts:9: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
+src/collections/SubscriptionPlans/index.ts:10: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
+src/collections/SubscriptionPlans/index.ts:11: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:25: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:26: * @accounting IFRS IFRS-15 §IFRS-15.31 revenue-recognition
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:27: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers

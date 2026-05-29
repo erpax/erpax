@@ -36,8 +36,8 @@ export interface TenantConfig {
   subscriptionPlans: Array<{
     name: string
     slug: string
-    monthlyUSD: number
-    yearlyUSD?: number
+    monthlyPrice: number
+    yearlyPrice?: number
     billingCycle: 'monthly' | 'yearly'
     description?: string
     limits: {

@@ -4106,13 +4106,14 @@ export interface SubscriptionPlan {
    */
   stripePriceId?: string | null;
   /**
-   * Monthly price in USD cents (0 for free tier)
+   * Monthly price in minor units (0 for free tier); currency carried by `currency`.
    */
-  monthlyUSD: number;
+  monthlyPrice: number;
   /**
-   * Yearly price in USD cents (optional, for annual billing)
+   * Yearly price in minor units (optional, for annual billing); currency carried by `currency`.
    */
-  yearlyUSD?: number | null;
+  yearlyPrice?: number | null;
+  currency?: ('EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX') | null;
   billingCycle: 'monthly' | 'yearly';
   /**
    * Feature limits as JSON. null = unlimited
@@ -22541,8 +22542,9 @@ export interface SubscriptionPlansSelect<T extends boolean = true> {
   slug?: T;
   stripeProductId?: T;
   stripePriceId?: T;
-  monthlyUSD?: T;
-  yearlyUSD?: T;
+  monthlyPrice?: T;
+  yearlyPrice?: T;
+  currency?: T;
   billingCycle?: T;
   limits?: T;
   isActive?: T;

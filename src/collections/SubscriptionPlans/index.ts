@@ -1,6 +1,7 @@
 import { CollectionConfig } from 'payload'
 import { anyone } from '../../access/anyone'
 import { isSuperAdminAccess } from '../../access/isSuperAdmin'
+import { currencyField } from '../../fields/base-accounting-fields'
 
 /**
  * Subscription Plans — pricing-plan catalog (super-admin maintained).
@@ -15,7 +16,7 @@ export const SubscriptionPlans: CollectionConfig = {
   slug: 'subscription-plans',
   admin: {
     useAsTitle: 'name',
-    defaultColumns: ['name', 'slug', 'monthlyUSD', 'isActive'],
+    defaultColumns: ['name', 'slug', 'monthlyPrice', 'isActive'],
   },
   // Slice NNN (DRY): inline `() => true` replaced with shared `anyone`.
   // Public catalog read; super-admin only for mutations.
@@ -56,25 +57,28 @@ export const SubscriptionPlans: CollectionConfig = {
       },
     },
     {
-      name: 'monthlyUSD',
+      name: 'monthlyPrice',
       type: 'number',
       required: true,
       defaultValue: 0,
       min: 0,
       admin: {
-        description: 'Monthly price in USD cents (0 for free tier)',
+        description: 'Monthly price in minor units (0 for free tier); currency carried by `currency`.',
         step: 0.01,
       },
     },
     {
-      name: 'yearlyUSD',
+      name: 'yearlyPrice',
       type: 'number',
       min: 0,
       admin: {
-        description: 'Yearly price in USD cents (optional, for annual billing)',
+        description: 'Yearly price in minor units (optional, for annual billing); currency carried by `currency`.',
         step: 0.01,
       },
     },
+    // erpax carries currency as data (ISO-4217), never baked into the field
+    // name — a plan priced in EUR is the same shape as one in USD.
+    currencyField({ defaultValue: 'USD' }),
     {
       name: 'billingCycle',
       type: 'select',
