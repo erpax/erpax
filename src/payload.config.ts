@@ -16,6 +16,7 @@ import { r2Storage } from '@payloadcms/storage-r2'
 import { contentUuidPlugin } from './plugins/contentUuid'
 import { taggablePlugin } from './plugins/taggable'
 import { uuidNamesPlugin } from './plugins/naming'
+import { skillRouterPlugin } from './services/skill-router/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -1095,6 +1096,10 @@ export default buildConfig({
     // derived, never invented; references (collection slugs, field names)
     // keep their words. Runs last to cover all assembled fields. See `database`.
     uuidNamesPlugin(),
+    // The ONE catch-all — registered LAST so its endpoint is appended last:
+    // the fallback of all. A routeless /api path resolves against the skill
+    // corpus + serves the requested format. See src/services/skill-router.
+    skillRouterPlugin(),
   ],
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
