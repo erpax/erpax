@@ -4,7 +4,7 @@
  * For НАП control activity each commercial outlet submits a standardized,
  * logically- and arithmetically-correct export of its sales. This builder is
  * the country profile over the universal SAF-T base (`saf-t-export.service`):
- * it projects the СУПТО `supto-sales` rows for a period into the audit rows
+ * it projects the СУПТО `sales` rows for a period into the audit rows
  * НАП expects (УНП, fiscal device, operator, datetime, totals, VAT, payment,
  * status + reversal linkage) and a control header (count + control sum) that
  * makes the file self-checking. `reversal` rows (сторно) net into the control

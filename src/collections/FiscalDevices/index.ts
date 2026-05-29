@@ -10,7 +10,7 @@ import { statusField, auditFields } from '../../fields'
  * Each device carries an 8-digit individual number assigned by the
  * manufacturer; it is the first segment of every УНП (`XXXXXXXX-…`) and the
  * scope of the per-device gapless sale sequence (see the `supto` skill +
- * `services/supto/unp-sequence`). Devices are not deleted operationally —
+ * `services/sales/unp-sequence`). Devices are not deleted operationally —
  * they are decommissioned (status), preserving the audit trail.
  *
  * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register
