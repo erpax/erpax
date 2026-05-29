@@ -15,7 +15,6 @@
 
 import {
   computeAgingBuckets,
-  daysBetween,
   filterOpenDocuments,
   type AgingBucket as SharedAgingBucket,
 } from '@/services/parties'
@@ -43,8 +42,9 @@ export class APAgingCalculator {
     const { buckets: shared, totalOutstanding } = computeAgingBuckets(open, asOfDate)
     const buckets = shared.map((b) => adaptBucket(b, byId, totalOutstanding))
 
-    const overdueBucket = buckets.find((b) => b.name.includes('31-60'))
-    const overdueDays = overdueBucket?.dayMin ?? 0
+    const totalDueAmount = buckets
+      .filter((b) => b.dayMin <= 30)
+      .reduce((s, b) => s + b.totalAmount, 0)
     const overdueTotal = buckets
       .filter((b) => b.dayMin > 30)
       .reduce((s, b) => s + b.totalAmount, 0)
@@ -55,7 +55,7 @@ export class APAgingCalculator {
       buckets,
       totalAPBalance: totalOutstanding,
       totalBills: open.length,
-      overdueDays,
+      totalDueAmount,
       notes: [
         `Total A/P Balance: $${(totalOutstanding / 100).toFixed(2)}`,
         `Total Bills: ${open.length}`,
@@ -67,14 +67,14 @@ export class APAgingCalculator {
   /** Generate a payment schedule prioritizing soonest-due bills. */
   static generatePaymentSchedule(bills: Bill[]): PaymentScheduleItem[] {
     return filterOpenDocuments(bills.filter((b) => b.status !== 'paid'))
-      .map((b) => ({
+      .map<PaymentScheduleItem>((b) => ({
         billId: b.id,
-        billNumber: b.billNumber,
         vendorId: b.vendorId,
-        amount: b.balance,
-        dueDate: b.dueDate,
-        daysUntilDue: daysBetween(new Date(), b.dueDate),
+        paymentAmount: b.balance,
+        paymentDate: b.dueDate,
+        status: 'scheduled',
+        discountEligible: b.discountAvailable > 0,
       }))
-      .sort((a, b) => a.daysUntilDue - b.daysUntilDue)
+      .sort((a, b) => a.paymentDate.getTime() - b.paymentDate.getTime())
   }
 }

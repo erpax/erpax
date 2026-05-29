@@ -80,7 +80,7 @@ export function computeAgingBuckets<D extends AgingDocument>(
   asOfDate: Date = new Date(),
   buckets: BucketDefinition[] = DEFAULT_AGING_BUCKETS,
 ): { buckets: AgingBucket[]; totalOutstanding: number; documentCount: number } {
-  const out: AgingBucket[] = buckets.map((b) => ({
+  const out: AgingBucket[] = buckets.map<AgingBucket>((b) => ({
     ...b,
     totalAmount: 0,
     count: 0,

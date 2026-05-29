@@ -125,8 +125,7 @@ export class APAnalytics {
       avgDaysOutstanding: Math.round(
         data.daysOutstanding.reduce((a, b) => a + b, 0) / data.daysOutstanding.length
       ),
-      discountCaptureRate:
-        data.count > 0 ? ((data.discountCount / data.count) * 100).toFixed(2) : '0.00',
+      discountCaptureRate: data.count > 0 ? (data.discountCount / data.count) * 100 : 0,
     }))
   }
 
