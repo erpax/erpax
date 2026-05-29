@@ -1,6 +1,8 @@
 ---
 name: auth
 description: Use when enabling or configuring Payload authentication on a collection — login/logout, JWT/cookies, API keys, email verification, password reset, login lockout, token expiration, or admin-panel user accounts.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # auth — Payload authentication (position 9, the control triad)

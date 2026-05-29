@@ -1,6 +1,8 @@
 ---
 name: end
 description: Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # end — the terminus (which is a new beginning)

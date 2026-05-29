@@ -1,6 +1,8 @@
 ---
 name: queries
 description: Use when building or debugging Payload queries — where filters/operators, sort, pagination, depth, select, populating relationships, joins, or query presets across Local/REST/GraphQL.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # queries — Payload query syntax (position 8 of the material cycle)

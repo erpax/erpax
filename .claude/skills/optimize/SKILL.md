@@ -1,6 +1,8 @@
 ---
 name: optimize
 description: Use when building or reviewing Payload collections, fields, queries, or config for performance — slow admin/API, large generated schemas, heavy relationship population, duplicated block definitions, or oversized client bundles.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # optimize — Payload performance & schema-size best practices

@@ -1,6 +1,8 @@
 ---
 name: tags
 description: Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. "Anything is taggable."
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # tags — anything is taggable (less collections, more features)

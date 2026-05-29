@@ -1,6 +1,8 @@
 ---
 name: collections
 description: Use when defining or debugging a Payload Collection or Global config — slug, fields, admin options, access, hooks, auth, upload, versions/drafts, timestamps, labels, default sort, or registering it in the config.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # collections — Collections & Globals (position 2 of the material cycle)

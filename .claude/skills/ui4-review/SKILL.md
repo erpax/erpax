@@ -1,6 +1,8 @@
 ---
 name: ui4-review
 description: Review UI4 CSS migrations for proper token usage. Checks that CSS variables are used instead of hardcoded values.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # UI4 Review

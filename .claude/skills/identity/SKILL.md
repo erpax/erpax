@@ -1,6 +1,8 @@
 ---
 name: identity
 description: Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv5), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated ("dry") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # identity — content-addressed UUIDs (same content ⇒ same id ⇒ seamless merge)

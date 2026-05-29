@@ -1,6 +1,8 @@
 ---
 name: ebitda
 description: Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # ebitda — earnings before interest, tax, depreciation, amortization (pure compute)

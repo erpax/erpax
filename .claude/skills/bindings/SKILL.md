@@ -1,6 +1,8 @@
 ---
 name: bindings
 description: Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding "works in config but fails at runtime" (e.g. "no such Durable Object class is exported from the worker"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # bindings — erpax fully self-managed on Cloudflare (every binding is a cost lever)

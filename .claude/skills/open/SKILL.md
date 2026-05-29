@@ -1,6 +1,8 @@
 ---
 name: open
 description: Use when reasoning about the permitting boundary state in erpax — fiscal period open (postable), draft editable, session/stream open. The universal root of the open state; dual of close.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # open — the permitting state (postable · editable)

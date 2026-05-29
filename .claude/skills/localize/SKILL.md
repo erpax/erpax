@@ -1,6 +1,8 @@
 ---
 name: localize
 description: Use when an attribute needs per-locale values — localized name/description, BCP-47 locales, i18n fallback. The LocalizeConcern/LocalizedAttributeConcern pattern; a blank locale routes to its identity element (und).
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # localize — per-locale attribute values

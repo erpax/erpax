@@ -1,6 +1,8 @@
 ---
 name: jobs
 description: Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # jobs — the jobs queue (background work)

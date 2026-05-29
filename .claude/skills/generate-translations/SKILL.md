@@ -2,6 +2,8 @@
 name: generate-translations
 description: Use when new translation keys are added to packages to generate new translations strings
 allowed-tools: Write, Bash(date:*), Bash(mkdir -p *)
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # Translation Generation Guide

@@ -1,6 +1,8 @@
 ---
 name: whole
 description: Use when reasoning about composition in erpax — whole↔part, fields→collections→plugins→erpax, BOM, consolidation, the fractal self-similar levels. The universal root of composition.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # whole — composition (the whole is its parts, self-similarly)

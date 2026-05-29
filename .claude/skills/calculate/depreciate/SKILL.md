@@ -1,6 +1,8 @@
 ---
 name: depreciate
 description: Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # depreciate — depreciation schedules (pure compute)

@@ -1,6 +1,8 @@
 ---
 name: api
 description: Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # api — Local / REST / GraphQL (position 7 of the material cycle)

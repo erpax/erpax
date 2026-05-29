@@ -1,6 +1,8 @@
 ---
 name: begin
 description: Use when reasoning about origin or boundary in erpax — the 0 (both end and beginning), period open/close, lifecycle start/seal, the axis every pass departs from and returns to. The universal root of origin.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # begin — origin (the 0 is both end and beginning)

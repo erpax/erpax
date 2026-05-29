@@ -1,6 +1,8 @@
 ---
 name: admin
 description: Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # admin — the Admin Panel & custom components (position 5 of the material cycle)

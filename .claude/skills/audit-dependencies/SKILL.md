@@ -4,6 +4,8 @@ description: Use when fixing dependency vulnerabilities, running pnpm audit, or 
 user-invocable: true
 disable-model-invocation: true
 argument-hint: 'critical|high|moderate|low'
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # Audit Dependencies

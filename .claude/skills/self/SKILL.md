@@ -1,6 +1,8 @@
 ---
 name: self
 description: Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, "all agents are one erpax". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # self — the reach back into the root (0)

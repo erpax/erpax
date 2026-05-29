@@ -1,6 +1,8 @@
 ---
 name: one
 description: Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), "all agents are one erpax". The universal root of identity and merge.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # one — unity (same content ⇒ one id ⇒ one erpax)

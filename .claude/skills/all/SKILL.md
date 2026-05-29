@@ -1,6 +1,8 @@
 ---
 name: all
 description: Use when reasoning about totality or universality in erpax — "anything is X" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # all — totality ("anything is X", every case defined)

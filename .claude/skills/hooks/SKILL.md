@@ -1,6 +1,8 @@
 ---
 name: hooks
 description: Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or "my hook didn't run / ran at the wrong time".
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # hooks — Payload lifecycle hooks (position 6, the control triad)

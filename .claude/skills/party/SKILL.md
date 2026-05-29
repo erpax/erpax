@@ -1,6 +1,8 @@
 ---
 name: party
 description: Use when one entity is referenced under many roles — seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by. The party-role concern-set collapsed to ONE polymorphic partyRef(role); the role is a tag-context, not N FK columns.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # party — one party, infinite roles

@@ -1,6 +1,8 @@
 ---
 name: recover
 description: Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with "Maximum call stack size exceeded", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, "does not provide an export named 'default'", or ERR_MODULE_NOT_FOUND.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # recover — Repair a Payload Build After a Reorg

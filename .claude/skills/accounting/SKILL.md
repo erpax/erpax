@@ -1,6 +1,8 @@
 ---
 name: accounting
 description: Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything "accountable" polymorphically. The self-sufficient `@erpax/accounting` archetype.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # accounting — the universal ledger plugin (anything is accountable)

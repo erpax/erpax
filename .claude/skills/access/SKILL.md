@@ -1,6 +1,8 @@
 ---
 name: access
 description: Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field, RBAC, row-level filtering by user/tenant, admin-panel visibility, or "access denied"/"document hidden" issues.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # access — Payload access control (position 3, the control triad)

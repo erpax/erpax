@@ -1,6 +1,8 @@
 ---
 name: amortize
 description: Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
 ---
 
 # amortize — amortization schedules (pure compute)
