@@ -578,6 +578,7 @@ src/collections/RoundingAdjustments.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/Routings.ts:12: * @standard ISA-95:2013 / IEC-62264-1 §B.4 process-segment routing
 src/collections/Routings.ts:13: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (cycle time)
 src/collections/Routings.ts:14: * @standard ISO-8601-1:2019 date-time
+src/collections/Sales/index.ts:21: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
 src/collections/SalesCommissions.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/SalesCommissions.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/SalesOrders.ts:25: * @standard UBL-2.1 Order document-schema
@@ -612,7 +613,6 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:24: * @standard ISO-8
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/collections/Subscriptions/index.ts:13: * @standard ISO-4217:2015 currency-codes
 src/collections/Subscriptions/index.ts:14: * @standard ISO-8601-1:2019 date-time period-start period-end
-src/collections/SuptoSales/index.ts:21: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
 src/collections/Taggings.ts:30: * @standard ISO-25964-1:2011 thesauri associative-relationships
 src/collections/Taggings.ts:31: * @standard RFC-4122 §4.3 uuid content-addressed-dedup
 src/collections/Tags.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
@@ -978,6 +978,7 @@ src/fields/defaultLexical.ts:5: * @standard CommonMark 0.31 markdown-fallback
 src/fields/defaultLexical.ts:7: * @standard BCP-47 language-tag locale-aware-content
 src/fields/defaultLexical.ts:9: * @standard schema.org HTMLRichText
 src/fields/discriminators.ts:12: * @standard ECMA-262 ECMAScript-2024 baseline
+src/fields/fiscal.ts:8: * @standard BG Наредба-Н-18 §СУПТО
 src/fields/link.ts:5: * @standard W3C URL Living Standard
 src/fields/link.ts:6: * @standard W3C HTML5 anchor-element
 src/fields/link.ts:7: * @standard BCP-47 language-tag locale-aware
@@ -1096,9 +1097,9 @@ src/jobs/dunningJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/jobs/dunningJob.test.ts:9: * @standard EN-16931:2017 dunning-notice
 src/jobs/dunningJob.ts:14: * @standard EN-16931:2017 dunning-notice
 src/jobs/dunningJob.ts:15: * @standard ISO-8601-1:2019 date-time pastDueSinceAt gracePeriodEndsAt
-src/jobs/suptoAuditFileJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
-src/jobs/suptoAuditFileJob.test.ts:5: * @standard BG Наредба-Н-18 §Приложение-38
-src/jobs/suptoAuditFileJob.ts:11: * @standard BG Наредба-Н-18 §Приложение-38 monthly-audit-file
+src/jobs/salesAuditFileJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/jobs/salesAuditFileJob.test.ts:5: * @standard BG Наредба-Н-18 §Приложение-38
+src/jobs/salesAuditFileJob.ts:11: * @standard BG Наредба-Н-18 §Приложение-38 monthly-audit-file
 src/payload.config.api.test.ts:10: * @standard OpenAPI 3.1 api-description
 src/payload.config.api.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.multi-tenant-admin.test.ts:10: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -1748,6 +1749,31 @@ src/services/saf-t-export.xml.test.ts:8: * @standard OECD SAF-T 2.0 standard-aud
 src/services/safety-mode/index.ts:42: * @standard ISO/IEC 27001 Annex A.14.2.5 secure-systems-engineering
 src/services/safety-mode/index.ts:43: * @standard NIST SP 800-160 §3.4.2 trustworthy secure design
 src/services/safety-mode/index.ts:44: * @standard OWASP ASVS V14 Configuration (hard-coded production mode)
+src/services/sales/audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
+src/services/sales/audit-file.ts:17: * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/services/sales/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base profile)
+src/services/sales/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
+src/services/sales/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
+src/services/sales/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
+src/services/sales/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
+src/services/sales/sale-event.ts:8: * @standard BG Наредба-Н-18 §СУПТО sale-lifecycle
+src/services/sales/sale-immutability.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/sale-immutability.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
+src/services/sales/sale-immutability.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
+src/services/sales/submit-audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/submit-audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
+src/services/sales/submit-audit-file.ts:8: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission
+src/services/sales/submit-audit-file.ts:9: * @standard OECD SAF-T 2.0 (universal base)
+src/services/sales/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
+src/services/sales/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
+src/services/sales/virtual-device.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/sales/virtual-device.test.ts:6: * @standard BG Наредба-Н-18 §алтернативен-режим
+src/services/sales/virtual-device.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
+src/services/sales/virtual-device.ts:16: * @standard BG Наредба-Н-18 §Приложение-38 (monthly reporting — the audit file)
 src/services/scheduled-tasks/registry.ts:20: * @standard rfc-5545 icalendar (cron-style schedules)
 src/services/scheduled-tasks/registry.ts:21: * @standard ISO-8601-1:2019 date-time
 src/services/scheduled-tasks/types.ts:4: * @standard rfc-5545 icalendar-cron
@@ -1828,31 +1854,6 @@ src/services/storage-redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.
 src/services/streams/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/services/streams/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
-src/services/supto/audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
-src/services/supto/audit-file.ts:17: * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
-src/services/supto/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base profile)
-src/services/supto/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
-src/services/supto/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
-src/services/supto/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
-src/services/supto/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
-src/services/supto/sale-event.ts:8: * @standard BG Наредба-Н-18 §СУПТО sale-lifecycle
-src/services/supto/sale-immutability.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/sale-immutability.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
-src/services/supto/sale-immutability.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
-src/services/supto/submit-audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/submit-audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
-src/services/supto/submit-audit-file.ts:8: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission
-src/services/supto/submit-audit-file.ts:9: * @standard OECD SAF-T 2.0 (universal base)
-src/services/supto/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
-src/services/supto/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
-src/services/supto/virtual-device.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/services/supto/virtual-device.test.ts:6: * @standard BG Наредба-Н-18 §алтернативен-режим
-src/services/supto/virtual-device.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
-src/services/supto/virtual-device.ts:16: * @standard BG Наредба-Н-18 §Приложение-38 (monthly reporting — the audit file)
 src/services/tags/taggedWith.ts:16: * @standard ISO-25964-1:2011 thesauri retrieval
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
@@ -2770,11 +2771,11 @@ src/services/country-clients/berlin-group-psd2.ts:16: * @rfc 7519 jwt
 src/services/emit-domain-event.ts:14: * @rfc 9562 uuid event-id
 src/services/event-emitter.service.ts:9: * @rfc 9562 uuid event-id
 src/services/export/standards.service.ts:26: * @rfc 6838 mime-type
+src/services/sales/audit-file.ts:20: * @rfc 8259 json
 src/services/spec-generator/extractor.ts:18: *   @rfc           <id> [free-text]             ← body inferred as 'RFC'
 src/services/spec-generator/i18n-audit.ts:14: * @rfc 8259 json
 src/services/spec-generator/i18n-keys.ts:33: * @rfc 8259 json
 src/services/spec-generator/i18n-stub-filler.ts:11: * @rfc 8259 json
-src/services/supto/audit-file.ts:20: * @rfc 8259 json
 src/services/tenant.service.ts:15: * @rfc 9110 http-semantics
 src/standards/_security-headers/headers.test.ts:5: * @rfc 6797 hsts http-strict-transport-security
 src/standards/_security-headers/headers.ts:8: * @rfc 6797 hsts http-strict-transport-security
@@ -3135,6 +3136,7 @@ src/collections/Roles/index.ts:15: * @compliance SOC-2 CC6.1 logical-access-cont
 src/collections/Roles/index.ts:16: * @compliance SOX §404 internal-controls
 src/collections/RoundingAdjustments.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
 src/collections/Routings.ts:18: * @compliance SOX §404 internal-controls production-control
+src/collections/Sales/index.ts:25: * @compliance SOX §404 internal-controls
 src/collections/SalesCommissions.ts:17: * @compliance SOX §404 internal-controls commission-completeness
 src/collections/SalesOrders.ts:34: * @compliance EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
 src/collections/SepaMandates.ts:21: * @compliance SOX §404 internal-controls
@@ -3148,7 +3150,6 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:30: * @compliance SOX
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/collections/Subscriptions/index.ts:18: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/collections/Subscriptions/index.ts:19: * @compliance SOX §404 internal-controls
-src/collections/SuptoSales/index.ts:25: * @compliance SOX §404 internal-controls
 src/collections/Taggings.ts:33: * @compliance SOX §404 internal-controls
 src/collections/Tags.ts:24: * @compliance SOX §404 internal-controls
 src/collections/TaxCalculations.ts:24: * @compliance SOX §404 internal-controls tax-position
@@ -3427,6 +3428,7 @@ src/services/persist-api-audit-event.ts:18: * @compliance SOX §404 internal-con
 src/services/receivables/allowance.service.ts:9: * @compliance SOX §404 internal-controls
 src/services/receivables/workflow.service.ts:11: * @compliance SOX §404 internal-controls
 src/services/saf-t-export.service.ts:35: * @compliance SOX §404 internal-controls
+src/services/sales/sale-immutability.ts:15: * @compliance SOX §404 internal-controls
 src/services/scheduled-tasks/registry.ts:23: * @compliance SOX §404 internal-controls automated-controls
 src/services/scheduled-tasks/registry.ts:24: * @compliance GDPR Art.5(1)(e) storage-limitation (retention purges)
 src/services/scheduled-tasks/runner.ts:16: * @compliance SOX §404 internal-controls automated-controls
@@ -3435,7 +3437,6 @@ src/services/spec-generator/extractor.ts:15: *   @compliance    <body> <id> [fre
 src/services/spec-generator/marketing-page-generator.ts:44: * @compliance SOX §404 process-walk-through-controls
 src/services/spec-generator/multimedia-generator.ts:33: * @compliance SOX §404 process-walk-through-controls
 src/services/spec-generator/multimedia-generator.ts:34: * @compliance ISO-27001 A.5.36 conformance-with-policies
-src/services/supto/sale-immutability.ts:15: * @compliance SOX §404 internal-controls
 src/services/tenant.service.ts:13: * @compliance GDPR Art.28 processor
 src/services/tenant.service.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/workflow/index.ts:24: * @compliance SOX §404 internal-controls workflow-execution
@@ -3800,6 +3801,8 @@ src/collections/RoundingAdjustments.ts:13: * @accounting IFRS IAS-21 §39 foreig
 src/collections/RoundingAdjustments.ts:14: * @accounting US-GAAP ASC-205-10-45 presentation-rounding
 src/collections/Routings.ts:15: * @accounting IFRS IAS-2 §12 cost-of-conversion operation-time
 src/collections/Routings.ts:16: * @accounting US-GAAP ASC-330-10-30 inventory-cost
+src/collections/Sales/index.ts:22: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/Sales/index.ts:23: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/SalesCommissions.ts:13: * @accounting IFRS IFRS-15 §91 §92 §93 §94 incremental-costs-of-obtaining
 src/collections/SalesCommissions.ts:14: * @accounting IFRS IFRS-15 §99 §103 §104 §105 §106 amortisation
 src/collections/SalesCommissions.ts:15: * @accounting US-GAAP ASC-340-40-25-1 incremental-costs
@@ -3820,8 +3823,6 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:28: * @accounting US-
 src/collections/Subscriptions/index.ts:15: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/Subscriptions/index.ts:16: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Subscriptions/index.ts:17: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
-src/collections/SuptoSales/index.ts:22: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/SuptoSales/index.ts:23: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/TaxCalculations.ts:22: * @accounting OECD SAF-T tax-table
 src/collections/TaxCodes.ts:19: * @accounting OECD SAF-T tax-table
 src/collections/TaxJurisdictions.ts:18: * @accounting OECD SAF-T jurisdiction-codes
@@ -4455,6 +4456,7 @@ src/collections/Roles/index.ts:13: * @security ISO-27002 §5.15 access-control
 src/collections/Roles/index.ts:14: * @security ISO-27002 §5.16 identity-management
 src/collections/RoundingAdjustments.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Routings.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/collections/Sales/index.ts:26: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SalesCommissions.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SalesOrders.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/SepaMandates.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4463,7 +4465,6 @@ src/collections/Spaces.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:11: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
 src/collections/Subscriptions/index.ts:20: * @security ISO-27002 §8.24 use-of-cryptography
-src/collections/SuptoSales/index.ts:26: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Taggings.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Tags.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/TaxCalculations.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4869,6 +4870,7 @@ src/collections/Returns.ts:9: * @audit ISO-19011:2018 audit-trail rma-evidence
 src/collections/Roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/RoundingAdjustments.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
 src/collections/Routings.ts:17: * @audit ISO-19011:2018 audit-trail routing-changes
+src/collections/Sales/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/collections/SalesCommissions.ts:16: * @audit ISO-19011:2018 audit-trail commission-evidence
 src/collections/SalesOrders.ts:35: * @audit ISO-19011:2018 audit-trail
 src/collections/SepaMandates.ts:20: * @audit ISO-19011:2018 audit-trail mandate-evidence
@@ -4881,7 +4883,6 @@ src/collections/Standards.ts:31: * @audit Conservation Law 38 mcp-tool-standardi
 src/collections/SubscriptionPlans/hooks/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:29: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
 src/collections/Subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/SuptoSales/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/collections/Taggings.ts:32: * @audit ISO-19011:2018 audit-trail tagging-provenance
 src/collections/Tags.ts:23: * @audit ISO-19011:2018 audit-trail label-changes
 src/collections/TaxCalculations.ts:23: * @audit ISO-19011:2018 audit-trail
@@ -5014,7 +5015,7 @@ src/hooks/validateAddress.ts:25: * @audit ISO-19011:2018 audit-trail address-val
 src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
-src/jobs/suptoAuditFileJob.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
+src/jobs/salesAuditFileJob.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:1135:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:1155:       * @audit ISO-19011:2018 audit-trail external-system-evidence
@@ -5236,6 +5237,14 @@ src/services/saf-t-export.source-documents.test.ts:6: * @audit ISO-19011:2018 au
 src/services/saf-t-export.xml.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/services/safety-mode/index.test.ts:15: * @audit Conservation Law 58 uuid-self-protection
 src/services/safety-mode/index.ts:45: * @audit Conservation Law 58 uuid-self-protection
+src/services/sales/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
+src/services/sales/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
+src/services/sales/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
+src/services/sales/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
+src/services/sales/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
+src/services/sales/submit-audit-file.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence
+src/services/sales/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
+src/services/sales/virtual-device.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/scheduled-tasks/index.ts:7: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
 src/services/scheduled-tasks/registry.ts:22: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
 src/services/scheduled-tasks/runner.ts:15: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
@@ -5262,14 +5271,6 @@ src/services/spec-generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.
 src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
-src/services/supto/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
-src/services/supto/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
-src/services/supto/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
-src/services/supto/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
-src/services/supto/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
-src/services/supto/submit-audit-file.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence
-src/services/supto/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
-src/services/supto/virtual-device.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
 src/services/tenant-roles/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)

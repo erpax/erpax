@@ -266,7 +266,7 @@ export interface Config {
     'transfer-pricing-adjustments': TransferPricingAdjustment;
     'post-close-analytics-reports': PostCloseAnalyticsReport;
     'fiscal-devices': FiscalDevice;
-    'supto-sales': SuptoSale;
+    sales: Sale;
     addresses: Address;
     variants: Variant;
     variantTypes: VariantType;
@@ -863,7 +863,7 @@ export interface Config {
     'fiscal-devices': {
       tags: 'taggings';
     };
-    'supto-sales': {
+    sales: {
       tags: 'taggings';
     };
     addresses: {
@@ -1105,7 +1105,7 @@ export interface Config {
     'transfer-pricing-adjustments': TransferPricingAdjustmentsSelect<false> | TransferPricingAdjustmentsSelect<true>;
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     'fiscal-devices': FiscalDevicesSelect<false> | FiscalDevicesSelect<true>;
-    'supto-sales': SuptoSalesSelect<false> | SuptoSalesSelect<true>;
+    sales: SalesSelect<false> | SalesSelect<true>;
     addresses: AddressesSelect<false> | AddressesSelect<true>;
     variants: VariantsSelect<false> | VariantsSelect<true>;
     variantTypes: VariantTypesSelect<false> | VariantTypesSelect<true>;
@@ -1246,7 +1246,7 @@ export interface Config {
     tasks: {
       'dunning-cycle': TaskDunningCycle;
       'bg-bnb-rates-sync': TaskBgBnbRatesSync;
-      'supto-audit-file': TaskSuptoAuditFile;
+      'sales-audit-file': TaskSalesAuditFile;
       createCollectionExport: TaskCreateCollectionExport;
       createCollectionImport: TaskCreateCollectionImport;
       schedulePublish: TaskSchedulePublish;
@@ -2254,8 +2254,8 @@ export interface Tagging {
         value: string | FiscalDevice;
       }
     | {
-        relationTo: 'supto-sales';
-        value: string | SuptoSale;
+        relationTo: 'sales';
+        value: string | Sale;
       }
     | {
         relationTo: 'addresses';
@@ -20813,9 +20813,9 @@ export interface FiscalDevice {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "supto-sales".
+ * via the `definition` "sales".
  */
-export interface SuptoSale {
+export interface Sale {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -20828,7 +20828,7 @@ export interface SuptoSale {
   unp?: string | null;
   unpSequence?: number | null;
   /**
-   * 8-digit ФУ id — scopes the УНП sequence.
+   * 8-digit ФУ individual number — first УНП segment.
    */
   fiscalDeviceNumber: string;
   fiscalDevice?: (string | null) | FiscalDevice;
@@ -20855,8 +20855,8 @@ export interface SuptoSale {
    * Касов бон number — carries the УНП.
    */
   fiscalReceiptNumber?: string | null;
-  reversalOf?: (string | null) | SuptoSale;
-  reversedBy?: (string | null) | SuptoSale;
+  reversalOf?: (string | null) | Sale;
+  reversedBy?: (string | null) | Sale;
   reversalReason?: string | null;
   closedAt?: string | null;
   createdBy?: (string | null) | User;
@@ -21341,7 +21341,7 @@ export interface PayloadJob {
           | 'inline'
           | 'dunning-cycle'
           | 'bg-bnb-rates-sync'
-          | 'supto-audit-file'
+          | 'sales-audit-file'
           | 'createCollectionExport'
           | 'createCollectionImport'
           | 'schedulePublish';
@@ -21382,7 +21382,7 @@ export interface PayloadJob {
         | 'inline'
         | 'dunning-cycle'
         | 'bg-bnb-rates-sync'
-        | 'supto-audit-file'
+        | 'sales-audit-file'
         | 'createCollectionExport'
         | 'createCollectionImport'
         | 'schedulePublish'
@@ -22174,8 +22174,8 @@ export interface PayloadLockedDocument {
         value: string | FiscalDevice;
       } | null)
     | ({
-        relationTo: 'supto-sales';
-        value: string | SuptoSale;
+        relationTo: 'sales';
+        value: string | Sale;
       } | null)
     | ({
         relationTo: 'addresses';
@@ -29664,9 +29664,9 @@ export interface FiscalDevicesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "supto-sales_select".
+ * via the `definition` "sales_select".
  */
-export interface SuptoSalesSelect<T extends boolean = true> {
+export interface SalesSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   unp?: T;
@@ -30525,9 +30525,9 @@ export interface TaskBgBnbRatesSync {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "TaskSupto-audit-file".
+ * via the `definition` "TaskSales-audit-file".
  */
-export interface TaskSuptoAuditFile {
+export interface TaskSalesAuditFile {
   input?: unknown;
   output?: unknown;
 }
@@ -30734,7 +30734,7 @@ export interface TaskCreateCollectionExport {
       | 'transfer-pricing-adjustments'
       | 'post-close-analytics-reports'
       | 'fiscal-devices'
-      | 'supto-sales'
+      | 'sales'
       | 'addresses'
       | 'variants'
       | 'variantTypes'
