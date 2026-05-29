@@ -36,8 +36,37 @@ export interface OrderActivatedPayload {
   customerId?: string
   total?: number
   currencyCode?: string
+  /** Raw order payment method (e.g. Stripe 'card', 'cash_on_delivery'). */
+  paymentType?: string
   activatedAt?: string | Date
   lineItems?: ReadonlyArray<OrderLine>
+}
+
+/** The fiscal sale payment types (Наредба Н-18 / касов бон). */
+type FiscalPaymentType = 'cash' | 'card' | 'bank_transfer' | 'voucher'
+
+/**
+ * Map a raw order payment method to a fiscal payment type. The e-shop
+ * alternative regime is remote-card by definition, so `card` is the default;
+ * cash-on-delivery / transfer / voucher map through when the order carries them.
+ */
+export function toFiscalPaymentType(raw?: string): FiscalPaymentType {
+  switch ((raw ?? '').toLowerCase()) {
+    case 'cash':
+    case 'cash_on_delivery':
+    case 'cod':
+      return 'cash'
+    case 'bank_transfer':
+    case 'bank':
+    case 'wire':
+    case 'sepa':
+      return 'bank_transfer'
+    case 'voucher':
+    case 'gift_card':
+      return 'voucher'
+    default:
+      return 'card'
+  }
 }
 
 interface SaleItem {
@@ -115,7 +144,7 @@ export async function fiscalizeOrder(
       items,
       total: Number(p.total ?? items.reduce((s, i) => s + i.amount, 0)),
       currency: p.currencyCode ?? 'BGN',
-      paymentType: 'card',
+      paymentType: toFiscalPaymentType(p.paymentType),
       status: 'closed',
       tenant,
     } as never,

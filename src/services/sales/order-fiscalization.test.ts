@@ -14,6 +14,7 @@ import type { EventEmitterService } from '@/services/event-emitter.service'
 import {
   fiscalizeOrder,
   reverseOrderFiscalization,
+  toFiscalPaymentType,
   wireOrderFiscalizationSubscriber,
   __resetOrderFiscalizationForTests,
   type OrderActivatedPayload,
@@ -41,6 +42,18 @@ function mockPayload(opts: { existingSale?: boolean; device?: string | null } = 
   }
 }
 const asPayload = (m: unknown) => m as Payload
+
+describe('toFiscalPaymentType', () => {
+  it('defaults to card (the e-shop alternative regime)', () => {
+    expect(toFiscalPaymentType()).toBe('card')
+    expect(toFiscalPaymentType('stripe')).toBe('card')
+  })
+  it('maps cash-on-delivery, transfer, and voucher', () => {
+    expect(toFiscalPaymentType('cash_on_delivery')).toBe('cash')
+    expect(toFiscalPaymentType('SEPA')).toBe('bank_transfer')
+    expect(toFiscalPaymentType('gift_card')).toBe('voucher')
+  })
+})
 
 describe('fiscalizeOrder', () => {
   it('creates a closed fiscal sale with the tenant ФУ + net/VAT split line', async () => {
