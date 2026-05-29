@@ -173,6 +173,8 @@ export interface Config {
     'production-receipts': ProductionReceipt;
     'quality-inspections': QualityInspection;
     'wip-snapshots': WipSnapshot;
+    tags: Tag;
+    taggings: Tagging;
     properties: Property;
     spaces: Space;
     'maintenance-requests': MaintenanceRequest;
@@ -258,6 +260,11 @@ export interface Config {
     'legal-entities': LegalEntity;
     'ai-suggestions': AiSuggestion;
     'usage-records': UsageRecord;
+    consolidations: Consolidation;
+    'tax-periods': TaxPeriod;
+    'audit-reports': AuditReport;
+    'transfer-pricing-adjustments': TransferPricingAdjustment;
+    'post-close-analytics-reports': PostCloseAnalyticsReport;
     addresses: Address;
     variants: Variant;
     variantTypes: VariantType;
@@ -278,25 +285,613 @@ export interface Config {
     'payload-migrations': PayloadMigration;
   };
   collectionsJoins: {
+    tenants: {
+      tags: 'taggings';
+    };
     users: {
       orders: 'orders';
       cart: 'carts';
       addresses: 'addresses';
+      tags: 'taggings';
+    };
+    roles: {
+      tags: 'taggings';
+    };
+    'user-roles': {
+      tags: 'taggings';
+    };
+    pages: {
+      tags: 'taggings';
+    };
+    posts: {
+      tags: 'taggings';
+    };
+    media: {
+      tags: 'taggings';
+    };
+    categories: {
+      tags: 'taggings';
+    };
+    invoices: {
+      tags: 'taggings';
+    };
+    'invoice-lines': {
+      tags: 'taggings';
+    };
+    'payment-methods': {
+      tags: 'taggings';
+    };
+    payments: {
+      tags: 'taggings';
+    };
+    'subscription-plans': {
+      tags: 'taggings';
+    };
+    subscriptions: {
+      tags: 'taggings';
+    };
+    items: {
+      tags: 'taggings';
+    };
+    'gl-posting-rules': {
+      tags: 'taggings';
+    };
+    'journal-entries': {
+      tags: 'taggings';
+    };
+    'gl-postings': {
+      tags: 'taggings';
+    };
+    'period-locks': {
+      tags: 'taggings';
+    };
+    'closing-entries': {
+      tags: 'taggings';
+    };
+    'bank-statements': {
+      tags: 'taggings';
+    };
+    'bank-transactions': {
+      tags: 'taggings';
     };
     'bank-accounts': {
       statements: 'bank-statements';
+      tags: 'taggings';
+    };
+    'account-reconciliations': {
+      tags: 'taggings';
+    };
+    'bank-reconciliations': {
+      tags: 'taggings';
+    };
+    'financial-statements': {
+      tags: 'taggings';
+    };
+    'period-end-adjustments': {
+      tags: 'taggings';
+    };
+    'recurring-journals': {
+      tags: 'taggings';
+    };
+    'prior-period-adjustments': {
+      tags: 'taggings';
+    };
+    'rounding-adjustments': {
+      tags: 'taggings';
+    };
+    'tax-calculations': {
+      tags: 'taggings';
+    };
+    'tax-codes': {
+      tags: 'taggings';
+    };
+    'tax-jurisdictions': {
+      tags: 'taggings';
+    };
+    'tax-returns': {
+      tags: 'taggings';
+    };
+    'currency-rates': {
+      tags: 'taggings';
+    };
+    'fiscal-periods': {
+      tags: 'taggings';
+    };
+    'fiscal-calendars': {
+      tags: 'taggings';
+    };
+    'fiscal-period-snapshots': {
+      tags: 'taggings';
+    };
+    'fixed-assets': {
+      tags: 'taggings';
+    };
+    'depreciation-schedules': {
+      tags: 'taggings';
+    };
+    customers: {
+      tags: 'taggings';
+    };
+    leads: {
+      tags: 'taggings';
+    };
+    opportunities: {
+      tags: 'taggings';
+    };
+    'customer-segments': {
+      tags: 'taggings';
+    };
+    quotes: {
+      tags: 'taggings';
+    };
+    'sales-orders': {
+      tags: 'taggings';
+    };
+    'sales-commissions': {
+      tags: 'taggings';
+    };
+    'credit-memos': {
+      tags: 'taggings';
+    };
+    returns: {
+      tags: 'taggings';
+    };
+    shipments: {
+      tags: 'taggings';
+    };
+    refunds: {
+      tags: 'taggings';
+    };
+    'payment-allocations': {
+      tags: 'taggings';
+    };
+    'dunning-cycles': {
+      tags: 'taggings';
+    };
+    vendors: {
+      tags: 'taggings';
+    };
+    'vendor-quotes': {
+      tags: 'taggings';
+    };
+    'vendor-scorecards': {
+      tags: 'taggings';
     };
     'purchase-orders': {
       receipts: 'goods-receipts';
+      tags: 'taggings';
+    };
+    'purchase-requisitions': {
+      tags: 'taggings';
+    };
+    'goods-receipts': {
+      tags: 'taggings';
+    };
+    'inventory-movements': {
+      tags: 'taggings';
+    };
+    'warehouse-locations': {
+      tags: 'taggings';
+    };
+    'cost-centers': {
+      tags: 'taggings';
+    };
+    'budget-planning': {
+      tags: 'taggings';
+    };
+    'cost-variances': {
+      tags: 'taggings';
+    };
+    'intercompany-transactions': {
+      tags: 'taggings';
+    };
+    'consolidation-eliminations': {
+      tags: 'taggings';
+    };
+    'fx-transactions': {
+      tags: 'taggings';
     };
     contracts: {
       performanceObligations: 'performance-obligations';
+      tags: 'taggings';
+    };
+    'performance-obligations': {
+      tags: 'taggings';
+    };
+    'commitments-and-contingencies': {
+      tags: 'taggings';
+    };
+    leases: {
+      tags: 'taggings';
+    };
+    'lease-modifications': {
+      tags: 'taggings';
+    };
+    'lease-period-postings': {
+      tags: 'taggings';
+    };
+    'payment-runs': {
+      tags: 'taggings';
+    };
+    'sepa-mandates': {
+      tags: 'taggings';
+    };
+    'payroll-runs': {
+      tags: 'taggings';
+    };
+    employees: {
+      tags: 'taggings';
+    };
+    'job-positions': {
+      tags: 'taggings';
+    };
+    'time-entries': {
+      tags: 'taggings';
+    };
+    'leave-requests': {
+      tags: 'taggings';
+    };
+    'performance-reviews': {
+      tags: 'taggings';
+    };
+    'expense-reports': {
+      tags: 'taggings';
+    };
+    'recruiting-pipeline': {
+      tags: 'taggings';
+    };
+    activities: {
+      tags: 'taggings';
+    };
+    projects: {
+      tags: 'taggings';
+    };
+    'project-tasks': {
+      tags: 'taggings';
+    };
+    'project-milestones': {
+      tags: 'taggings';
+    };
+    'work-orders': {
+      tags: 'taggings';
+    };
+    'workflow-definitions': {
+      tags: 'taggings';
+    };
+    'workflow-instances': {
+      tags: 'taggings';
+    };
+    'bills-of-materials': {
+      tags: 'taggings';
+    };
+    'work-centers': {
+      tags: 'taggings';
+    };
+    'work-shifts': {
+      tags: 'taggings';
+    };
+    operations: {
+      tags: 'taggings';
+    };
+    routings: {
+      tags: 'taggings';
+    };
+    'operation-runs': {
+      tags: 'taggings';
+    };
+    'production-receipts': {
+      tags: 'taggings';
+    };
+    'quality-inspections': {
+      tags: 'taggings';
+    };
+    'wip-snapshots': {
+      tags: 'taggings';
+    };
+    properties: {
+      tags: 'taggings';
+    };
+    spaces: {
+      tags: 'taggings';
+    };
+    'maintenance-requests': {
+      tags: 'taggings';
+    };
+    'maintenance-work-orders': {
+      tags: 'taggings';
+    };
+    'bookable-resources': {
+      tags: 'taggings';
+    };
+    bookings: {
+      tags: 'taggings';
+    };
+    carriers: {
+      tags: 'taggings';
+    };
+    'tracking-events': {
+      tags: 'taggings';
+    };
+    'customs-declarations': {
+      tags: 'taggings';
+    };
+    'consignment-arrangements': {
+      tags: 'taggings';
+    };
+    'consignment-inventory': {
+      tags: 'taggings';
+    };
+    'consignment-sales': {
+      tags: 'taggings';
+    };
+    'audit-events': {
+      tags: 'taggings';
+    };
+    'api-audit-events': {
+      tags: 'taggings';
+    };
+    'evidence-attestations': {
+      tags: 'taggings';
+    };
+    'entity-types': {
+      tags: 'taggings';
+    };
+    'taxing-jurisdictions': {
+      tags: 'taggings';
+    };
+    'entity-legal-structures': {
+      tags: 'taggings';
+    };
+    'compliance-frameworks': {
+      tags: 'taggings';
+    };
+    'compliance-requirements': {
+      tags: 'taggings';
+    };
+    'internal-controls': {
+      tags: 'taggings';
+    };
+    'control-tests': {
+      tags: 'taggings';
+    };
+    'audit-samples': {
+      tags: 'taggings';
+    };
+    'compliance-gaps': {
+      tags: 'taggings';
+    };
+    'audit-evidence': {
+      tags: 'taggings';
+    };
+    'audit-findings': {
+      tags: 'taggings';
+    };
+    'audit-trail-events': {
+      tags: 'taggings';
+    };
+    'remediation-plans': {
+      tags: 'taggings';
+    };
+    'audit-committees': {
+      tags: 'taggings';
+    };
+    'audit-committee-members': {
+      tags: 'taggings';
+    };
+    'board-actions': {
+      tags: 'taggings';
+    };
+    'management-certifications': {
+      tags: 'taggings';
+    };
+    'regulatory-reports': {
+      tags: 'taggings';
+    };
+    'internal-policies': {
+      tags: 'taggings';
+    };
+    'statutory-report-templates': {
+      tags: 'taggings';
+    };
+    'statutory-field-mappings': {
+      tags: 'taggings';
+    };
+    'policy-versions': {
+      tags: 'taggings';
+    };
+    'policy-acknowledgments': {
+      tags: 'taggings';
+    };
+    'compliance-deadlines': {
+      tags: 'taggings';
+    };
+    'compliance-notifications': {
+      tags: 'taggings';
+    };
+    'reporting-standards': {
+      tags: 'taggings';
+    };
+    'reporting-mappings': {
+      tags: 'taggings';
+    };
+    'related-party-transactions': {
+      tags: 'taggings';
+    };
+    'management-assessment-icfr': {
+      tags: 'taggings';
+    };
+    'disclosure-checklists': {
+      tags: 'taggings';
+    };
+    'audit-committee-minutes': {
+      tags: 'taggings';
+    };
+    'risk-register': {
+      tags: 'taggings';
+    };
+    'debt-schedule': {
+      tags: 'taggings';
+    };
+    'internal-audit-function': {
+      tags: 'taggings';
+    };
+    'segment-reporting': {
+      tags: 'taggings';
+    };
+    'consent-records': {
+      tags: 'taggings';
+    };
+    'data-subject-requests': {
+      tags: 'taggings';
+    };
+    'data-processing-activities': {
+      tags: 'taggings';
+    };
+    'kyc-checks': {
+      tags: 'taggings';
+    };
+    'beneficial-owners': {
+      tags: 'taggings';
+    };
+    'csrd-disclosures': {
+      tags: 'taggings';
+    };
+    'carbon-emissions': {
+      tags: 'taggings';
+    };
+    'biological-assets': {
+      tags: 'taggings';
+    };
+    'mineral-resource-assets': {
+      tags: 'taggings';
+    };
+    'investment-properties': {
+      tags: 'taggings';
+    };
+    provisions: {
+      tags: 'taggings';
+    };
+    'government-grants': {
+      tags: 'taggings';
+    };
+    'deferred-tax-items': {
+      tags: 'taggings';
+    };
+    'share-based-payments': {
+      tags: 'taggings';
+    };
+    'business-combinations': {
+      tags: 'taggings';
+    };
+    'held-for-sale-classifications': {
+      tags: 'taggings';
+    };
+    'fair-value-measurements': {
+      tags: 'taggings';
+    };
+    'earnings-per-share': {
+      tags: 'taggings';
+    };
+    'insurance-contracts': {
+      tags: 'taggings';
+    };
+    'regulatory-deferral-accounts': {
+      tags: 'taggings';
+    };
+    'post-balance-sheet-events': {
+      tags: 'taggings';
+    };
+    'transaction-failures': {
+      tags: 'taggings';
+    };
+    'transfer-pricing-files': {
+      tags: 'taggings';
+    };
+    standards: {
+      tags: 'taggings';
+    };
+    memories: {
+      tags: 'taggings';
+    };
+    translations: {
+      tags: 'taggings';
+    };
+    commitments: {
+      tags: 'taggings';
+    };
+    'contract-amendments': {
+      tags: 'taggings';
+    };
+    'contract-performance': {
+      tags: 'taggings';
+    };
+    'contract-signatures': {
+      tags: 'taggings';
+    };
+    'contract-templates': {
+      tags: 'taggings';
+    };
+    'legal-entities': {
+      tags: 'taggings';
+    };
+    'ai-suggestions': {
+      tags: 'taggings';
+    };
+    'usage-records': {
+      tags: 'taggings';
+    };
+    consolidations: {
+      tags: 'taggings';
+    };
+    'tax-periods': {
+      tags: 'taggings';
+    };
+    'audit-reports': {
+      tags: 'taggings';
+    };
+    'transfer-pricing-adjustments': {
+      tags: 'taggings';
+    };
+    'post-close-analytics-reports': {
+      tags: 'taggings';
+    };
+    addresses: {
+      tags: 'taggings';
+    };
+    variants: {
+      tags: 'taggings';
     };
     variantTypes: {
       options: 'variantOptions';
+      tags: 'taggings';
+    };
+    variantOptions: {
+      tags: 'taggings';
     };
     products: {
       variants: 'variants';
+      tags: 'taggings';
+    };
+    carts: {
+      tags: 'taggings';
+    };
+    orders: {
+      tags: 'taggings';
+    };
+    transactions: {
+      tags: 'taggings';
+    };
+    forms: {
+      tags: 'taggings';
+    };
+    'form-submissions': {
+      tags: 'taggings';
+    };
+    exports: {
+      tags: 'taggings';
+    };
+    imports: {
+      tags: 'taggings';
     };
   };
   collectionsSelect: {
@@ -400,6 +995,8 @@ export interface Config {
     'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
+    tags: TagsSelect<false> | TagsSelect<true>;
+    taggings: TaggingsSelect<false> | TaggingsSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
     spaces: SpacesSelect<false> | SpacesSelect<true>;
     'maintenance-requests': MaintenanceRequestsSelect<false> | MaintenanceRequestsSelect<true>;
@@ -485,6 +1082,11 @@ export interface Config {
     'legal-entities': LegalEntitiesSelect<false> | LegalEntitiesSelect<true>;
     'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
     'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
+    consolidations: ConsolidationsSelect<false> | ConsolidationsSelect<true>;
+    'tax-periods': TaxPeriodsSelect<false> | TaxPeriodsSelect<true>;
+    'audit-reports': AuditReportsSelect<false> | AuditReportsSelect<true>;
+    'transfer-pricing-adjustments': TransferPricingAdjustmentsSelect<false> | TransferPricingAdjustmentsSelect<true>;
+    'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
     addresses: AddressesSelect<false> | AddressesSelect<true>;
     variants: VariantsSelect<false> | VariantsSelect<true>;
     variantTypes: VariantTypesSelect<false> | VariantTypesSelect<true>;
@@ -821,6 +1423,885 @@ export interface Tenant {
    * Optional MCP API key for tools/scripts scoped to this tenant (super-admin only). Prefer Admin → MCP keys when using Payload MCP.
    */
   mcpApiKey?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Polymorphic join (tag × taggable × context × tagger). One table tags every collection; content-uuid makes each (tag, target, context, tagger) unique automatically.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "taggings".
+ */
+export interface Tagging {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * The label applied.
+   */
+  tag: string | Tag;
+  /**
+   * Tag context / namespace (e.g. 'category', 'status', 'segment'). Free string ⇒ unlimited contexts, zero schema — the infinite-features lever.
+   */
+  context: string;
+  /**
+   * Optional owner / provenance — who applied the tag (acts_as_tagger).
+   */
+  tagger?: (string | null) | User;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * The tagged record — any taggable collection (polymorphic).
+   */
+  taggable:
+    | {
+        relationTo: 'tenants';
+        value: string | Tenant;
+      }
+    | {
+        relationTo: 'users';
+        value: string | User;
+      }
+    | {
+        relationTo: 'roles';
+        value: string | Role;
+      }
+    | {
+        relationTo: 'user-roles';
+        value: string | UserRole;
+      }
+    | {
+        relationTo: 'pages';
+        value: string | Page;
+      }
+    | {
+        relationTo: 'posts';
+        value: string | Post;
+      }
+    | {
+        relationTo: 'media';
+        value: string | Media;
+      }
+    | {
+        relationTo: 'categories';
+        value: string | Category;
+      }
+    | {
+        relationTo: 'invoices';
+        value: string | Invoice;
+      }
+    | {
+        relationTo: 'invoice-lines';
+        value: string | InvoiceLine;
+      }
+    | {
+        relationTo: 'payment-methods';
+        value: string | PaymentMethod;
+      }
+    | {
+        relationTo: 'payments';
+        value: string | Payment;
+      }
+    | {
+        relationTo: 'subscription-plans';
+        value: string | SubscriptionPlan;
+      }
+    | {
+        relationTo: 'subscriptions';
+        value: string | Subscription;
+      }
+    | {
+        relationTo: 'items';
+        value: string | Item;
+      }
+    | {
+        relationTo: 'gl-accounts';
+        value: string | GlAccount;
+      }
+    | {
+        relationTo: 'gl-posting-rules';
+        value: string | GlPostingRule;
+      }
+    | {
+        relationTo: 'journal-entries';
+        value: string | JournalEntry;
+      }
+    | {
+        relationTo: 'gl-postings';
+        value: string | GlPosting;
+      }
+    | {
+        relationTo: 'period-locks';
+        value: string | PeriodLock;
+      }
+    | {
+        relationTo: 'closing-entries';
+        value: string | ClosingEntry;
+      }
+    | {
+        relationTo: 'bank-statements';
+        value: string | BankStatement;
+      }
+    | {
+        relationTo: 'bank-transactions';
+        value: string | BankTransaction;
+      }
+    | {
+        relationTo: 'bank-accounts';
+        value: string | BankAccount;
+      }
+    | {
+        relationTo: 'account-reconciliations';
+        value: string | AccountReconciliation;
+      }
+    | {
+        relationTo: 'bank-reconciliations';
+        value: string | BankReconciliation;
+      }
+    | {
+        relationTo: 'financial-statements';
+        value: string | FinancialStatement;
+      }
+    | {
+        relationTo: 'period-end-adjustments';
+        value: string | PeriodEndAdjustment;
+      }
+    | {
+        relationTo: 'recurring-journals';
+        value: string | RecurringJournal;
+      }
+    | {
+        relationTo: 'prior-period-adjustments';
+        value: string | PriorPeriodAdjustment;
+      }
+    | {
+        relationTo: 'rounding-adjustments';
+        value: string | RoundingAdjustment;
+      }
+    | {
+        relationTo: 'tax-calculations';
+        value: string | TaxCalculation;
+      }
+    | {
+        relationTo: 'tax-codes';
+        value: string | TaxCode;
+      }
+    | {
+        relationTo: 'tax-jurisdictions';
+        value: string | TaxJurisdiction;
+      }
+    | {
+        relationTo: 'tax-returns';
+        value: string | TaxReturn;
+      }
+    | {
+        relationTo: 'currency-rates';
+        value: string | CurrencyRate;
+      }
+    | {
+        relationTo: 'fiscal-periods';
+        value: string | FiscalPeriod;
+      }
+    | {
+        relationTo: 'fiscal-calendars';
+        value: string | FiscalCalendar;
+      }
+    | {
+        relationTo: 'fiscal-period-snapshots';
+        value: string | FiscalPeriodSnapshot;
+      }
+    | {
+        relationTo: 'fixed-assets';
+        value: string | FixedAsset;
+      }
+    | {
+        relationTo: 'depreciation-schedules';
+        value: string | DepreciationSchedule;
+      }
+    | {
+        relationTo: 'customers';
+        value: string | Customer;
+      }
+    | {
+        relationTo: 'leads';
+        value: string | Lead;
+      }
+    | {
+        relationTo: 'opportunities';
+        value: string | Opportunity;
+      }
+    | {
+        relationTo: 'customer-segments';
+        value: string | CustomerSegment;
+      }
+    | {
+        relationTo: 'quotes';
+        value: string | Quote;
+      }
+    | {
+        relationTo: 'sales-orders';
+        value: string | SalesOrder;
+      }
+    | {
+        relationTo: 'sales-commissions';
+        value: string | SalesCommission;
+      }
+    | {
+        relationTo: 'credit-memos';
+        value: string | CreditMemo;
+      }
+    | {
+        relationTo: 'returns';
+        value: string | Return;
+      }
+    | {
+        relationTo: 'shipments';
+        value: string | Shipment;
+      }
+    | {
+        relationTo: 'refunds';
+        value: string | Refund;
+      }
+    | {
+        relationTo: 'payment-allocations';
+        value: string | PaymentAllocation;
+      }
+    | {
+        relationTo: 'dunning-cycles';
+        value: string | DunningCycle;
+      }
+    | {
+        relationTo: 'vendors';
+        value: string | Vendor;
+      }
+    | {
+        relationTo: 'vendor-quotes';
+        value: string | VendorQuote;
+      }
+    | {
+        relationTo: 'vendor-scorecards';
+        value: string | VendorScorecard;
+      }
+    | {
+        relationTo: 'purchase-orders';
+        value: string | PurchaseOrder;
+      }
+    | {
+        relationTo: 'purchase-requisitions';
+        value: string | PurchaseRequisition;
+      }
+    | {
+        relationTo: 'goods-receipts';
+        value: string | GoodsReceipt;
+      }
+    | {
+        relationTo: 'inventory-movements';
+        value: string | InventoryMovement;
+      }
+    | {
+        relationTo: 'warehouse-locations';
+        value: string | WarehouseLocation;
+      }
+    | {
+        relationTo: 'cost-centers';
+        value: string | CostCenter;
+      }
+    | {
+        relationTo: 'budget-planning';
+        value: string | BudgetPlanning;
+      }
+    | {
+        relationTo: 'cost-variances';
+        value: string | CostVariance;
+      }
+    | {
+        relationTo: 'intercompany-transactions';
+        value: string | IntercompanyTransaction;
+      }
+    | {
+        relationTo: 'consolidation-eliminations';
+        value: string | ConsolidationElimination;
+      }
+    | {
+        relationTo: 'fx-transactions';
+        value: string | FxTransaction;
+      }
+    | {
+        relationTo: 'contracts';
+        value: string | Contract;
+      }
+    | {
+        relationTo: 'performance-obligations';
+        value: string | PerformanceObligation;
+      }
+    | {
+        relationTo: 'commitments-and-contingencies';
+        value: string | CommitmentsAndContingency;
+      }
+    | {
+        relationTo: 'leases';
+        value: string | Lease;
+      }
+    | {
+        relationTo: 'lease-modifications';
+        value: string | LeaseModification;
+      }
+    | {
+        relationTo: 'lease-period-postings';
+        value: string | LeasePeriodPosting;
+      }
+    | {
+        relationTo: 'payment-runs';
+        value: string | PaymentRun;
+      }
+    | {
+        relationTo: 'sepa-mandates';
+        value: string | SepaMandate;
+      }
+    | {
+        relationTo: 'payroll-runs';
+        value: string | PayrollRun;
+      }
+    | {
+        relationTo: 'employees';
+        value: string | Employee;
+      }
+    | {
+        relationTo: 'job-positions';
+        value: string | JobPosition;
+      }
+    | {
+        relationTo: 'time-entries';
+        value: string | TimeEntry;
+      }
+    | {
+        relationTo: 'leave-requests';
+        value: string | LeaveRequest;
+      }
+    | {
+        relationTo: 'performance-reviews';
+        value: string | PerformanceReview;
+      }
+    | {
+        relationTo: 'expense-reports';
+        value: string | ExpenseReport;
+      }
+    | {
+        relationTo: 'recruiting-pipeline';
+        value: string | RecruitingPipeline;
+      }
+    | {
+        relationTo: 'activities';
+        value: string | Activity;
+      }
+    | {
+        relationTo: 'projects';
+        value: string | Project;
+      }
+    | {
+        relationTo: 'project-tasks';
+        value: string | ProjectTask;
+      }
+    | {
+        relationTo: 'project-milestones';
+        value: string | ProjectMilestone;
+      }
+    | {
+        relationTo: 'work-orders';
+        value: string | WorkOrder;
+      }
+    | {
+        relationTo: 'workflow-definitions';
+        value: string | WorkflowDefinition;
+      }
+    | {
+        relationTo: 'workflow-instances';
+        value: string | WorkflowInstance;
+      }
+    | {
+        relationTo: 'bills-of-materials';
+        value: string | BillsOfMaterial;
+      }
+    | {
+        relationTo: 'work-centers';
+        value: string | WorkCenter;
+      }
+    | {
+        relationTo: 'work-shifts';
+        value: string | WorkShift;
+      }
+    | {
+        relationTo: 'operations';
+        value: string | Operation;
+      }
+    | {
+        relationTo: 'routings';
+        value: string | Routing;
+      }
+    | {
+        relationTo: 'operation-runs';
+        value: string | OperationRun;
+      }
+    | {
+        relationTo: 'production-receipts';
+        value: string | ProductionReceipt;
+      }
+    | {
+        relationTo: 'quality-inspections';
+        value: string | QualityInspection;
+      }
+    | {
+        relationTo: 'wip-snapshots';
+        value: string | WipSnapshot;
+      }
+    | {
+        relationTo: 'properties';
+        value: string | Property;
+      }
+    | {
+        relationTo: 'spaces';
+        value: string | Space;
+      }
+    | {
+        relationTo: 'maintenance-requests';
+        value: string | MaintenanceRequest;
+      }
+    | {
+        relationTo: 'maintenance-work-orders';
+        value: string | MaintenanceWorkOrder;
+      }
+    | {
+        relationTo: 'bookable-resources';
+        value: string | BookableResource;
+      }
+    | {
+        relationTo: 'bookings';
+        value: string | Booking;
+      }
+    | {
+        relationTo: 'carriers';
+        value: string | Carrier;
+      }
+    | {
+        relationTo: 'tracking-events';
+        value: string | TrackingEvent;
+      }
+    | {
+        relationTo: 'customs-declarations';
+        value: string | CustomsDeclaration;
+      }
+    | {
+        relationTo: 'consignment-arrangements';
+        value: string | ConsignmentArrangement;
+      }
+    | {
+        relationTo: 'consignment-inventory';
+        value: string | ConsignmentInventory;
+      }
+    | {
+        relationTo: 'consignment-sales';
+        value: string | ConsignmentSale;
+      }
+    | {
+        relationTo: 'audit-events';
+        value: string | AuditEvent;
+      }
+    | {
+        relationTo: 'api-audit-events';
+        value: string | ApiAuditEvent;
+      }
+    | {
+        relationTo: 'evidence-attestations';
+        value: string | EvidenceAttestation;
+      }
+    | {
+        relationTo: 'entity-types';
+        value: string | EntityType;
+      }
+    | {
+        relationTo: 'taxing-jurisdictions';
+        value: string | TaxingJurisdiction;
+      }
+    | {
+        relationTo: 'entity-legal-structures';
+        value: string | EntityLegalStructure;
+      }
+    | {
+        relationTo: 'compliance-frameworks';
+        value: string | ComplianceFramework;
+      }
+    | {
+        relationTo: 'compliance-requirements';
+        value: string | ComplianceRequirement;
+      }
+    | {
+        relationTo: 'internal-controls';
+        value: string | InternalControl;
+      }
+    | {
+        relationTo: 'control-tests';
+        value: string | ControlTest;
+      }
+    | {
+        relationTo: 'audit-samples';
+        value: string | AuditSample;
+      }
+    | {
+        relationTo: 'compliance-gaps';
+        value: string | ComplianceGap;
+      }
+    | {
+        relationTo: 'audit-evidence';
+        value: string | AuditEvidence;
+      }
+    | {
+        relationTo: 'audit-findings';
+        value: string | AuditFinding;
+      }
+    | {
+        relationTo: 'audit-trail-events';
+        value: string | AuditTrailEvent;
+      }
+    | {
+        relationTo: 'remediation-plans';
+        value: string | RemediationPlan;
+      }
+    | {
+        relationTo: 'audit-committees';
+        value: string | AuditCommittee;
+      }
+    | {
+        relationTo: 'audit-committee-members';
+        value: string | AuditCommitteeMember;
+      }
+    | {
+        relationTo: 'board-actions';
+        value: string | BoardAction;
+      }
+    | {
+        relationTo: 'management-certifications';
+        value: string | ManagementCertification;
+      }
+    | {
+        relationTo: 'regulatory-reports';
+        value: string | RegulatoryReport;
+      }
+    | {
+        relationTo: 'internal-policies';
+        value: string | InternalPolicy;
+      }
+    | {
+        relationTo: 'statutory-report-templates';
+        value: string | StatutoryReportTemplate;
+      }
+    | {
+        relationTo: 'statutory-field-mappings';
+        value: string | StatutoryFieldMapping;
+      }
+    | {
+        relationTo: 'policy-versions';
+        value: string | PolicyVersion;
+      }
+    | {
+        relationTo: 'policy-acknowledgments';
+        value: string | PolicyAcknowledgment;
+      }
+    | {
+        relationTo: 'compliance-deadlines';
+        value: string | ComplianceDeadline;
+      }
+    | {
+        relationTo: 'compliance-notifications';
+        value: string | ComplianceNotification;
+      }
+    | {
+        relationTo: 'reporting-standards';
+        value: string | ReportingStandard;
+      }
+    | {
+        relationTo: 'reporting-mappings';
+        value: string | ReportingMapping;
+      }
+    | {
+        relationTo: 'related-party-transactions';
+        value: string | RelatedPartyTransaction;
+      }
+    | {
+        relationTo: 'management-assessment-icfr';
+        value: string | ManagementAssessmentIcfr;
+      }
+    | {
+        relationTo: 'disclosure-checklists';
+        value: string | DisclosureChecklist;
+      }
+    | {
+        relationTo: 'audit-committee-minutes';
+        value: string | AuditCommitteeMinute;
+      }
+    | {
+        relationTo: 'risk-register';
+        value: string | RiskRegister;
+      }
+    | {
+        relationTo: 'debt-schedule';
+        value: string | DebtSchedule;
+      }
+    | {
+        relationTo: 'internal-audit-function';
+        value: string | InternalAuditFunction;
+      }
+    | {
+        relationTo: 'segment-reporting';
+        value: string | SegmentReporting;
+      }
+    | {
+        relationTo: 'consent-records';
+        value: string | ConsentRecord;
+      }
+    | {
+        relationTo: 'data-subject-requests';
+        value: string | DataSubjectRequest;
+      }
+    | {
+        relationTo: 'data-processing-activities';
+        value: string | DataProcessingActivity;
+      }
+    | {
+        relationTo: 'kyc-checks';
+        value: string | KycCheck;
+      }
+    | {
+        relationTo: 'beneficial-owners';
+        value: string | BeneficialOwner;
+      }
+    | {
+        relationTo: 'csrd-disclosures';
+        value: string | CsrdDisclosure;
+      }
+    | {
+        relationTo: 'carbon-emissions';
+        value: string | CarbonEmission;
+      }
+    | {
+        relationTo: 'biological-assets';
+        value: string | BiologicalAsset;
+      }
+    | {
+        relationTo: 'mineral-resource-assets';
+        value: string | MineralResourceAsset;
+      }
+    | {
+        relationTo: 'investment-properties';
+        value: string | InvestmentProperty;
+      }
+    | {
+        relationTo: 'provisions';
+        value: string | Provision;
+      }
+    | {
+        relationTo: 'government-grants';
+        value: string | GovernmentGrant;
+      }
+    | {
+        relationTo: 'deferred-tax-items';
+        value: string | DeferredTaxItem;
+      }
+    | {
+        relationTo: 'share-based-payments';
+        value: string | ShareBasedPayment;
+      }
+    | {
+        relationTo: 'business-combinations';
+        value: string | BusinessCombination;
+      }
+    | {
+        relationTo: 'held-for-sale-classifications';
+        value: string | HeldForSaleClassification;
+      }
+    | {
+        relationTo: 'fair-value-measurements';
+        value: string | FairValueMeasurement;
+      }
+    | {
+        relationTo: 'earnings-per-share';
+        value: string | EarningsPerShare;
+      }
+    | {
+        relationTo: 'insurance-contracts';
+        value: string | InsuranceContract;
+      }
+    | {
+        relationTo: 'regulatory-deferral-accounts';
+        value: string | RegulatoryDeferralAccount;
+      }
+    | {
+        relationTo: 'post-balance-sheet-events';
+        value: string | PostBalanceSheetEvent;
+      }
+    | {
+        relationTo: 'transaction-failures';
+        value: string | TransactionFailure;
+      }
+    | {
+        relationTo: 'transfer-pricing-files';
+        value: string | TransferPricingFile;
+      }
+    | {
+        relationTo: 'standards';
+        value: string | Standard;
+      }
+    | {
+        relationTo: 'memories';
+        value: string | Memory;
+      }
+    | {
+        relationTo: 'mcp-tool-metadata';
+        value: string | McpToolMetadatum;
+      }
+    | {
+        relationTo: 'translations';
+        value: string | Translation;
+      }
+    | {
+        relationTo: 'commitments';
+        value: string | Commitment;
+      }
+    | {
+        relationTo: 'contract-amendments';
+        value: string | ContractAmendment;
+      }
+    | {
+        relationTo: 'contract-performance';
+        value: string | ContractPerformance;
+      }
+    | {
+        relationTo: 'contract-signatures';
+        value: string | ContractSignature;
+      }
+    | {
+        relationTo: 'contract-templates';
+        value: string | ContractTemplate;
+      }
+    | {
+        relationTo: 'legal-entities';
+        value: string | LegalEntity;
+      }
+    | {
+        relationTo: 'ai-suggestions';
+        value: string | AiSuggestion;
+      }
+    | {
+        relationTo: 'usage-records';
+        value: string | UsageRecord;
+      }
+    | {
+        relationTo: 'consolidations';
+        value: string | Consolidation;
+      }
+    | {
+        relationTo: 'tax-periods';
+        value: string | TaxPeriod;
+      }
+    | {
+        relationTo: 'audit-reports';
+        value: string | AuditReport;
+      }
+    | {
+        relationTo: 'transfer-pricing-adjustments';
+        value: string | TransferPricingAdjustment;
+      }
+    | {
+        relationTo: 'post-close-analytics-reports';
+        value: string | PostCloseAnalyticsReport;
+      }
+    | {
+        relationTo: 'addresses';
+        value: string | Address;
+      }
+    | {
+        relationTo: 'variants';
+        value: string | Variant;
+      }
+    | {
+        relationTo: 'variantTypes';
+        value: string | VariantType;
+      }
+    | {
+        relationTo: 'variantOptions';
+        value: string | VariantOption;
+      }
+    | {
+        relationTo: 'products';
+        value: string | Product;
+      }
+    | {
+        relationTo: 'carts';
+        value: string | Cart;
+      }
+    | {
+        relationTo: 'orders';
+        value: string | Order;
+      }
+    | {
+        relationTo: 'transactions';
+        value: string | Transaction;
+      }
+    | {
+        relationTo: 'forms';
+        value: string | Form;
+      }
+    | {
+        relationTo: 'form-submissions';
+        value: string | FormSubmission;
+      }
+    | {
+        relationTo: 'exports';
+        value: string | Export;
+      }
+    | {
+        relationTo: 'imports';
+        value: string | Import;
+      };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Universal label. Filter (context, tag) to present any collection infinitely; id = content-uuid(name) ⇒ same tag = same id everywhere.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tags".
+ */
+export interface Tag {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Tag name. Normalised (trim + lower-case) on write so the content-uuid is stable and matching is exact (D1 cannot case-fold).
+   */
+  name: string;
+  /**
+   * Denormalised use-count (counter cache) — drives most/least-used and tag clouds.
+   */
+  taggingsCount?: number | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -907,6 +2388,14 @@ export interface User {
       | boolean
       | null;
   };
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -964,6 +2453,14 @@ export interface Order {
   amount?: number | null;
   currency?: 'EUR' | null;
   accessToken?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -1027,6 +2524,14 @@ export interface Product {
    */
   generateSlug?: boolean | null;
   slug: string;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -1059,6 +2564,14 @@ export interface Media {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -1147,6 +2660,14 @@ export interface VariantOption {
    * should be defaulted or dynamic based on label
    */
   value: string;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -1166,6 +2687,14 @@ export interface VariantType {
   name: string;
   options?: {
     docs?: (string | VariantOption)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
     hasNextPage?: boolean;
     totalDocs?: number;
   };
@@ -1300,6 +2829,14 @@ export interface Page {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -1355,6 +2892,14 @@ export interface Post {
    */
   generateSlug?: boolean | null;
   slug: string;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -1385,6 +2930,14 @@ export interface Category {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -1683,6 +3236,14 @@ export interface Form {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -1706,6 +3267,14 @@ export interface Variant {
   inventory?: number | null;
   priceInEUREnabled?: boolean | null;
   priceInEUR?: number | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   deletedAt?: string | null;
@@ -1755,6 +3324,14 @@ export interface Transaction {
   cart?: (string | null) | Cart;
   amount?: number | null;
   currency?: 'EUR' | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -1783,6 +3360,14 @@ export interface Cart {
   status?: ('active' | 'purchased' | 'abandoned') | null;
   subtotal?: number | null;
   currency?: 'EUR' | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -1913,6 +3498,14 @@ export interface Address {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2030,6 +3623,14 @@ export interface Role {
         relationTo: 'products';
         value: string | Product;
       } | null);
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2047,6 +3648,14 @@ export interface UserRole {
   uuid?: string | null;
   user: string | User;
   role: string | Role;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2322,6 +3931,26 @@ export interface Invoice {
      * Owning subscription (used by dunning cycle)
      */
     subscription?: (string | null) | Subscription;
+    /**
+     * Stripe invoice id — links this invoice to the Stripe billing multiverse.
+     */
+    stripeInvoiceId?: string | null;
+    /**
+     * Stripe PaymentIntent id for the paying charge.
+     */
+    stripePaymentIntentId?: string | null;
+    /**
+     * Dunning: count of failed payment attempts.
+     */
+    attemptCount?: number | null;
+    /**
+     * Dunning: timestamp of the last payment attempt.
+     */
+    lastAttemptAt?: string | null;
+    /**
+     * Dunning: last payment-attempt error message.
+     */
+    lastAttemptError?: string | null;
   };
   ledger?: {
     /**
@@ -2397,6 +4026,14 @@ export interface Invoice {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2437,6 +4074,14 @@ export interface Subscription {
   resumeAt?: string | null;
   lastStatusChange?: string | null;
   lastStatusChangeReason?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2487,6 +4132,14 @@ export interface SubscriptionPlan {
    * Display order in pricing pages (lower = first)
    */
   sortOrder?: number | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2727,6 +4380,14 @@ export interface InvoiceLine {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2893,6 +4554,14 @@ export interface Item {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -2928,6 +4597,14 @@ export interface PaymentMethod {
    * When to next retry charging this payment method
    */
   nextRetryAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3028,6 +4705,14 @@ export interface Payment {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3112,6 +4797,14 @@ export interface GlPostingRule {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3159,6 +4852,14 @@ export interface JournalEntry {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3217,6 +4918,14 @@ export interface GlPosting {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3302,6 +5011,14 @@ export interface PeriodLock {
    * Additional notes for this period
    */
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3486,6 +5203,14 @@ export interface ClosingEntry {
    * General notes on this period close
    */
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3615,6 +5340,14 @@ export interface LegalEntity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3705,6 +5438,14 @@ export interface FiscalPeriod {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3754,6 +5495,14 @@ export interface BankStatement {
   reconciliationDate?: string | null;
   reconciliedBy?: (string | null) | User;
   importSource: 'csv' | 'ofx' | 'manual' | 'bank_api';
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3865,6 +5614,14 @@ export interface BankTransaction {
   matchedBy?: (string | null) | User;
   status?: ('imported' | 'reconciled' | 'adjusted' | 'voided') | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -3928,6 +5685,14 @@ export interface BankAccount {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4040,6 +5805,14 @@ export interface AccountReconciliation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4110,6 +5883,14 @@ export interface BankReconciliation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4170,6 +5951,14 @@ export interface FinancialStatement {
     | null;
   generatedAt: string;
   generatedBy?: (string | null) | User;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4202,6 +5991,14 @@ export interface PeriodEndAdjustment {
   journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'calculated' | 'approved' | 'posted' | 'reversed') | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4290,6 +6087,14 @@ export interface RecurringJournal {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4364,6 +6169,14 @@ export interface CostCenter {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4459,6 +6272,14 @@ export interface Project {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4613,6 +6434,14 @@ export interface Customer {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4713,6 +6542,14 @@ export interface TaxCode {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4796,6 +6633,14 @@ export interface TaxJurisdiction {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4888,6 +6733,14 @@ export interface Contract {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -4960,6 +6813,14 @@ export interface PerformanceObligation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5018,6 +6879,14 @@ export interface PriorPeriodAdjustment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5071,6 +6940,14 @@ export interface RoundingAdjustment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5101,6 +6978,14 @@ export interface TaxCalculation {
   filingDeadline?: string | null;
   paymentDeadline?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5158,6 +7043,14 @@ export interface TaxReturn {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5185,6 +7078,14 @@ export interface CurrencyRate {
   isActive?: boolean | null;
   usedInTransactions?: number | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5263,6 +7164,14 @@ export interface FiscalCalendar {
    * Notes on this calendar entry (e.g., holiday adjustments, special closure dates)
    */
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5355,6 +7264,14 @@ export interface FiscalPeriodSnapshot {
    * Snapshot-specific notes
    */
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5462,6 +7379,14 @@ export interface FixedAsset {
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5646,6 +7571,14 @@ export interface Vendor {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5684,6 +7617,14 @@ export interface DepreciationSchedule {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5754,6 +7695,14 @@ export interface Lead {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5818,6 +7767,14 @@ export interface Opportunity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5867,6 +7824,14 @@ export interface CustomerSegment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5908,6 +7873,14 @@ export interface ConsentRecord {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -5946,6 +7919,14 @@ export interface Quote {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6075,6 +8056,14 @@ export interface SalesOrder {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6150,6 +8139,14 @@ export interface SalesCommission {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6321,6 +8318,14 @@ export interface Employee {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6471,6 +8476,14 @@ export interface PayrollRun {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6590,6 +8603,14 @@ export interface PaymentRun {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6688,6 +8709,14 @@ export interface Provision {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6761,6 +8790,14 @@ export interface AuditFinding {
   status?: ('open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed') | null;
   evidence?: (string | AuditEvidence)[] | null;
   remediationPlan?: (string | null) | RemediationPlan;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6799,6 +8836,14 @@ export interface AuditEvidence {
     | null;
   confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
   retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6871,6 +8916,14 @@ export interface RemediationPlan {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6912,6 +8965,14 @@ export interface ComplianceGap {
   } | null;
   status?: ('identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed') | null;
   remediationPlan?: (string | null) | RemediationPlan;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6960,6 +9021,14 @@ export interface ComplianceRequirement {
     [k: string]: unknown;
   } | null;
   applicableEntityTypes?: (string | EntityType)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -6995,6 +9064,14 @@ export interface ComplianceFramework {
     [k: string]: unknown;
   } | null;
   applicableJurisdictions?: (string | TaxingJurisdiction)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7022,6 +9099,14 @@ export interface TaxingJurisdiction {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7054,6 +9139,14 @@ export interface EntityType {
     [k: string]: unknown;
   } | null;
   applicableFrameworks?: (string | ComplianceFramework)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7112,6 +9205,14 @@ export interface CreditMemo {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7153,6 +9254,14 @@ export interface Return {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7204,6 +9313,14 @@ export interface Shipment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7238,6 +9355,14 @@ export interface Refund {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7300,6 +9425,14 @@ export interface PaymentAllocation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7378,6 +9511,14 @@ export interface DunningCycle {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7457,6 +9598,14 @@ export interface VendorQuote {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7544,6 +9693,14 @@ export interface PurchaseRequisition {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7614,6 +9771,14 @@ export interface PurchaseOrder {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7646,6 +9811,14 @@ export interface GoodsReceipt {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7730,6 +9903,14 @@ export interface VendorScorecard {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7792,6 +9973,14 @@ export interface InventoryMovement {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7840,6 +10029,14 @@ export interface WarehouseLocation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7879,6 +10076,14 @@ export interface BudgetPlanning {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -7948,6 +10153,14 @@ export interface CostVariance {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8032,6 +10245,14 @@ export interface WorkOrder {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8132,6 +10353,14 @@ export interface BillsOfMaterial {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8190,6 +10419,14 @@ export interface WorkCenter {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8259,6 +10496,14 @@ export interface IntercompanyTransaction {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8323,6 +10568,14 @@ export interface ConsolidationElimination {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8397,6 +10650,14 @@ export interface FxTransaction {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8472,6 +10733,14 @@ export interface CommitmentsAndContingency {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8613,6 +10882,14 @@ export interface Lease {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8725,6 +11002,14 @@ export interface LeaseModification {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8804,6 +11089,14 @@ export interface EvidenceAttestation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8888,6 +11181,14 @@ export interface LeasePeriodPosting {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -8954,6 +11255,14 @@ export interface SepaMandate {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9040,6 +11349,14 @@ export interface JobPosition {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9116,6 +11433,14 @@ export interface TimeEntry {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9203,6 +11528,14 @@ export interface LeaveRequest {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9293,6 +11626,14 @@ export interface PerformanceReview {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9405,6 +11746,14 @@ export interface ExpenseReport {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9501,6 +11850,14 @@ export interface RecruitingPipeline {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9548,6 +11905,14 @@ export interface Activity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9608,6 +11973,14 @@ export interface ProjectTask {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9665,6 +12038,14 @@ export interface ProjectMilestone {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9745,6 +12126,14 @@ export interface WorkflowDefinition {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9826,6 +12215,14 @@ export interface WorkflowInstance {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9896,6 +12293,14 @@ export interface WorkShift {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9933,6 +12338,14 @@ export interface Operation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -9986,6 +12399,14 @@ export interface Routing {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10083,6 +12504,14 @@ export interface OperationRun {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10163,6 +12592,14 @@ export interface ProductionReceipt {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10229,6 +12666,14 @@ export interface QualityInspection {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10301,6 +12746,14 @@ export interface WipSnapshot {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10435,6 +12888,14 @@ export interface Property {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10539,6 +13000,14 @@ export interface Space {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10640,6 +13109,14 @@ export interface MaintenanceRequest {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10752,6 +13229,14 @@ export interface BookableResource {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -10896,6 +13381,14 @@ export interface MaintenanceWorkOrder {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11008,6 +13501,14 @@ export interface Booking {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11080,6 +13581,14 @@ export interface Carrier {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11159,6 +13668,14 @@ export interface TrackingEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11278,6 +13795,14 @@ export interface CustomsDeclaration {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11360,6 +13885,14 @@ export interface ConsignmentArrangement {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11432,6 +13965,14 @@ export interface ConsignmentInventory {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11509,6 +14050,14 @@ export interface ConsignmentSale {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11632,6 +14181,14 @@ export interface AuditEvent {
    * SHA-256 hex of canonical JSON over (eventId, tenant, timestamp, eventType, collectionSlug, documentId, user, previousHash). Computed at write time; verified at the integrity-check gate.
    */
   rowHash?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11709,6 +14266,14 @@ export interface ApiAuditEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11743,6 +14308,14 @@ export interface EntityLegalStructure {
     [k: string]: unknown;
   } | null;
   taxTreatment?: ('transparent' | 'opaque' | 'hybrid') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11788,6 +14361,14 @@ export interface InternalControl {
   } | null;
   owner?: string | null;
   frequency?: ('daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'continuous') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11825,6 +14406,14 @@ export interface ControlTest {
   result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
   deviationCount?: number | null;
   deviationRate?: number | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11872,6 +14461,14 @@ export interface AuditSample {
     [k: string]: unknown;
   } | null;
   evidence?: (string | AuditEvidence)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11941,6 +14538,14 @@ export interface AuditTrailEvent {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11962,6 +14567,14 @@ export interface AuditCommittee {
   meetingFrequency: 'quarterly' | 'semi-annual' | 'annual' | 'as-needed';
   status?: ('active' | 'inactive' | 'dissolved') | null;
   members?: (string | AuditCommitteeMember)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -11990,6 +14603,14 @@ export interface AuditCommitteeMember {
       }[]
     | null;
   status?: ('active' | 'resigned' | 'removed') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12038,6 +14659,14 @@ export interface BoardAction {
   };
   minutes?: (string | null) | Media;
   relatedControls?: (string | InternalControl)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12082,6 +14711,14 @@ export interface ManagementCertification {
   relatedFindings?: (string | AuditFinding)[] | null;
   signedDocument?: (string | null) | Media;
   status?: ('current' | 'expired' | 'superseded') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12131,6 +14768,14 @@ export interface RegulatoryReport {
     [k: string]: unknown;
   } | null;
   findings?: (string | AuditFinding)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12178,6 +14823,14 @@ export interface InternalPolicy {
   status?: ('active' | 'pending' | 'superseded' | 'archived') | null;
   policyDocument?: (string | null) | Media;
   applicableControls?: (string | InternalControl)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12207,6 +14860,14 @@ export interface StatutoryReportTemplate {
   templateDocument?: (string | null) | Media;
   effectiveFrom: string;
   effectiveTo?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12258,6 +14919,14 @@ export interface StatutoryFieldMapping {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12293,6 +14962,14 @@ export interface PolicyVersion {
   } | null;
   documentUrl?: (string | null) | Media;
   status?: ('draft' | 'final' | 'superseded' | 'archived') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12315,6 +14992,14 @@ export interface PolicyAcknowledgment {
   acknowledgedBy?: string | null;
   signedDocument?: (string | null) | Media;
   status?: ('acknowledged' | 'pending' | 'overdue' | 'expired') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12345,6 +15030,14 @@ export interface ComplianceDeadline {
   status?: ('on-track' | 'at-risk' | 'overdue' | 'submitted' | 'completed') | null;
   priority?: ('critical' | 'high' | 'medium' | 'low') | null;
   penalty?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12387,6 +15080,14 @@ export interface ComplianceNotification {
   daysBeforeDue: number;
   sentDate?: string | null;
   status?: ('scheduled' | 'sent' | 'delivered' | 'failed') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12423,6 +15124,14 @@ export interface ReportingStandard {
   version?: string | null;
   effectiveDate: string;
   referenceMaterial?: (string | null) | Media;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12464,6 +15173,14 @@ export interface ReportingMapping {
       }[]
     | null;
   status?: ('active' | 'inactive' | 'pending-review') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12586,6 +15303,14 @@ export interface RelatedPartyTransaction {
    */
   relatedControls?: (string | InternalControl)[] | null;
   evidence?: (string | AuditEvidence)[] | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12808,6 +15533,14 @@ export interface ManagementAssessmentIcfr {
   relatedAuditFindings?: (string | AuditFinding)[] | null;
   relatedControlTests?: (string | ControlTest)[] | null;
   status: 'draft' | 'final' | 'auditor-reviewed' | 'certified' | 'filed';
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -12910,6 +15643,14 @@ export interface DisclosureChecklist {
    * Formal checklist workpaper (PDF).
    */
   checklistDocument?: (string | null) | Media;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -13129,6 +15870,14 @@ export interface AuditCommitteeMinute {
    */
   minutesDocument?: (string | null) | Media;
   confidentiality?: ('confidential' | 'internal' | 'public') | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -13255,6 +16004,14 @@ export interface RiskRegister {
    * Heat map or formal risk register extract (PDF).
    */
   riskRegisterDocument?: (string | null) | Media;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -13475,6 +16232,14 @@ export interface DebtSchedule {
    * Loan agreement, bond indenture, lease agreement (PDF).
    */
   debtAgreement?: (string | null) | Media;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -13742,6 +16507,14 @@ export interface InternalAuditFunction {
    * Formal audit charter (PDF).
    */
   charterDocument?: (string | null) | Media;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -13919,6 +16692,14 @@ export interface SegmentReporting {
    */
   segmentReportingDocument?: (string | null) | Media;
   reportingStatus: 'under-preparation' | 'pending-review' | 'reviewed' | 'reported';
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -13975,6 +16756,14 @@ export interface DataSubjectRequest {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14049,6 +16838,14 @@ export interface DataProcessingActivity {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14114,6 +16911,14 @@ export interface KycCheck {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14154,6 +16959,14 @@ export interface BeneficialOwner {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14242,6 +17055,14 @@ export interface CsrdDisclosure {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14358,6 +17179,14 @@ export interface CarbonEmission {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14425,6 +17254,14 @@ export interface BiologicalAsset {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14507,6 +17344,14 @@ export interface FairValueMeasurement {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14567,6 +17412,14 @@ export interface MineralResourceAsset {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14634,6 +17487,14 @@ export interface InvestmentProperty {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14738,6 +17599,14 @@ export interface GovernmentGrant {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14806,6 +17675,14 @@ export interface DeferredTaxItem {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -14896,6 +17773,14 @@ export interface ShareBasedPayment {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15005,6 +17890,14 @@ export interface BusinessCombination {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15066,6 +17959,14 @@ export interface HeldForSaleClassification {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15153,6 +18054,14 @@ export interface EarningsPerShare {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15230,6 +18139,14 @@ export interface InsuranceContract {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15274,6 +18191,14 @@ export interface RegulatoryDeferralAccount {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15333,6 +18258,14 @@ export interface PostBalanceSheetEvent {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15420,6 +18353,14 @@ export interface TransactionFailure {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15537,6 +18478,14 @@ export interface TransferPricingFile {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15662,6 +18611,14 @@ export interface Standard {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15686,6 +18643,24 @@ export interface Memory {
    * One-line human-readable label.
    */
   title: string;
+  /**
+   * The memory/session as a rich document; reference everything inline (Lexical internal links).
+   */
+  body?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   ownerType: 'agent' | 'tool' | 'tenant' | 'platform' | 'cycle';
   /**
    * Stable id of the owner — agent.id, tool name, tenant id, cycleUuid, etc.
@@ -15763,6 +18738,14 @@ export interface Memory {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -15935,6 +18918,14 @@ export interface Translation {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16043,6 +19034,14 @@ export interface Commitment {
    * Approver comments on authorization
    */
   approvalComments?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16136,6 +19135,14 @@ export interface ContractAmendment {
    * Internal accounting notes on the amendment (not visible to customer)
    */
   internalNotes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16232,6 +19239,14 @@ export interface ContractPerformance {
    * Internal notes on milestone completion, issues, variance explanations
    */
   performanceNotes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16337,6 +19352,14 @@ export interface ContractSignature {
    * Internal comments on the signature (e.g., "director approval pending legal review")
    */
   approvalComments?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16489,6 +19512,14 @@ export interface ContractTemplate {
    * Internal notes on template purpose, history, and customization guidance
    */
   templateNotes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16606,6 +19637,14 @@ export interface AiSuggestion {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16673,6 +19712,790 @@ export interface UsageRecord {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consolidations".
+ */
+export interface Consolidation {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique ID: e.g., "PARENT-GROUP-FY2026-FULL"
+   */
+  consolidationName: string;
+  /**
+   * Parent entity (top of consolidation hierarchy)
+   */
+  consolidationGroup: string | LegalEntity;
+  /**
+   * Subsidiary entities included in consolidation
+   */
+  subsidiaryEntities?: (string | LegalEntity)[] | null;
+  /**
+   * Associate entities (equity method accounting)
+   */
+  associateEntities?: (string | LegalEntity)[] | null;
+  /**
+   * Fiscal year of consolidation
+   */
+  fiscalYear: number;
+  /**
+   * Period-end date for all entities in consolidation
+   */
+  periodClosingDate: string;
+  /**
+   * Reporting/consolidation currency (ISO 4217 code, e.g., USD)
+   */
+  consolidationCurrency?: string | null;
+  /**
+   * Type of consolidation accounting
+   */
+  consolidationType: 'full' | 'proportionate' | 'equity';
+  /**
+   * User who initiated consolidation process
+   */
+  consolidatedBy?: (string | null) | User;
+  /**
+   * Consolidation workflow status
+   */
+  consolidationStatus: 'in-progress' | 'ready-for-elimination' | 'elimination-posted' | 'consolidated';
+  /**
+   * Phase B4: Consolidation readiness assessment (all entities closed status, IC balance reconciliation, elimination entries prepared). Auto-populated by validateConsolidationReadiness hook.
+   */
+  consolidationReadiness?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Elimination entries prepared for consolidation
+   */
+  eliminationEntries?:
+    | {
+        /**
+         * Order of elimination entry
+         */
+        sequenceNumber: number;
+        /**
+         * Link to elimination GL posting (if posted)
+         */
+        journalEntryId?: (string | null) | JournalEntry;
+        /**
+         * Entity eliminating the balance
+         */
+        fromEntity: string;
+        /**
+         * Entity receiving elimination
+         */
+        toEntity: string;
+        /**
+         * GL account being eliminated (e.g., 2000-2999 for IC payables)
+         */
+        account: string;
+        /**
+         * Type of account being eliminated
+         */
+        accountType?: ('payable' | 'receivable' | 'investment' | 'equity') | null;
+        /**
+         * Amount to eliminate
+         */
+        eliminationAmount: number;
+        /**
+         * Elimination entry description
+         */
+        description?: string | null;
+        /**
+         * Check once elimination posted to GL
+         */
+        posted?: boolean | null;
+        /**
+         * When elimination was posted
+         */
+        postedDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Phase B4: Law 63 self-governance metadata. Stores consolidation authority, approval thresholds, consolidation level. Auto-populated from group profile.
+   */
+  governanceScope?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Phase B4: Law 60 audit chain leaf. Computed as sha256(JCS-canonical(Consolidations) || prior_leaf_uuid). Enables tamper detection.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * Immutable audit trail of consolidation activities (readiness assessment, elimination posting, consolidation completion). Append-only.
+   */
+  auditTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * General notes on this consolidation process
+   */
+  notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-periods".
+ */
+export interface TaxPeriod {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique ID: e.g., "BG-TAX-2026-YEAR" or "US-TAX-2026-EST-Q3" (jurisdiction-period-type)
+   */
+  taxPeriodName: string;
+  /**
+   * Tax jurisdiction code (e.g., "BG" for Bulgaria, "US-CA" for California)
+   */
+  taxJurisdiction: string;
+  /**
+   * Type of tax period
+   */
+  taxPeriodType: 'annual' | 'quarterly-est' | 'monthly-est' | 'amended' | 'provisional';
+  /**
+   * Linked fiscal period (tax period must align with this fiscal period end date)
+   */
+  fiscalPeriodId: string | FiscalPeriod;
+  /**
+   * Tax period ending date (must match linked fiscal period end date)
+   */
+  taxPeriodEndDate: string;
+  /**
+   * Tax authority filing deadline for this jurisdiction
+   */
+  filingDeadline: string;
+  /**
+   * Tax reporting currency for this jurisdiction (ISO 4217 code, e.g., BGN for Bulgaria)
+   */
+  taxCurrency?: string | null;
+  /**
+   * Tax officer or preparer who initiated tax period process
+   */
+  filedBy?: (string | null) | User;
+  /**
+   * Tax period workflow status
+   */
+  taxStatus: 'pending-closing' | 'ready-for-adjustment' | 'adjustment-posted' | 'tax-closed' | 'amended';
+  /**
+   * Phase B5: Tax period readiness assessment (periods aligned, TP documented, compliance verified). Auto-populated by validateTaxPeriodClosing hook.
+   */
+  taxPeriodReadiness?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Number of transfer pricing adjustments for this tax period + jurisdiction
+   */
+  transferPricingAdjustmentCount?: number | null;
+  /**
+   * Tax adjustment entries prepared for tax closing
+   */
+  taxAdjustmentEntries?:
+    | {
+        /**
+         * Order of tax adjustment entry
+         */
+        sequenceNumber: number;
+        /**
+         * Link to tax adjustment GL posting (if posted)
+         */
+        journalEntryId?: (string | null) | JournalEntry;
+        /**
+         * Entity making the adjustment
+         */
+        fromEntity: string;
+        /**
+         * Entity receiving the adjustment
+         */
+        toEntity: string;
+        /**
+         * GL account for tax adjustment (e.g., 6000-6099 for tax expense)
+         */
+        account: string;
+        /**
+         * Type of account being adjusted
+         */
+        accountType?: ('expense' | 'revenue' | 'provision') | null;
+        /**
+         * Tax adjustment amount (may be positive or negative)
+         */
+        adjustmentAmount: number;
+        /**
+         * Tax adjustment entry description (e.g., transfer pricing method used)
+         */
+        description?: string | null;
+        /**
+         * Check once tax adjustment posted to GL
+         */
+        posted?: boolean | null;
+        /**
+         * When tax adjustment was posted
+         */
+        postedDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Phase B5: Law 63 self-governance metadata. Stores tax authority, compliance thresholds, jurisdiction scope. Auto-populated from tax configuration.
+   */
+  governanceScope?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Phase B5: Law 60 audit chain leaf. Computed as sha256(JCS-canonical(TaxPeriods) || prior_leaf_uuid). Enables tamper detection.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * Immutable audit trail of tax period activities (readiness assessment, TP documentation, adjustment posting, closure). Append-only.
+   */
+  auditTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * General notes on this tax period process
+   */
+  notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-reports".
+ */
+export interface AuditReport {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique ID: e.g., "AUDIT-GROUP-FY2026-SAF-T" or "AUDIT-GROUP-FY2026-OPT"
+   */
+  auditReportName: string;
+  /**
+   * Fiscal year for this audit report
+   */
+  auditYear: number;
+  /**
+   * Linked consolidation (audit report based on consolidated data)
+   */
+  consolidationId?: (string | null) | Consolidation;
+  /**
+   * Type of audit report to generate
+   */
+  reportType: 'saf-t' | 'regulatory-filing' | 'tp-documentation' | 'optimization-analysis';
+  /**
+   * Target jurisdictions for audit report (defaults to all tax periods)
+   */
+  targetJurisdictions?:
+    | {
+        /**
+         * Jurisdiction code (e.g., "BG", "US-CA", "DE")
+         */
+        jurisdictionCode: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Audit staff or tax officer who triggered report generation
+   */
+  generatedBy?: (string | null) | User;
+  /**
+   * Audit report workflow status
+   */
+  auditStatus: 'pending-generation' | 'generated' | 'submitted' | 'approved' | 'rejected';
+  /**
+   * SAF-T 3.0.2 audit file content (JSON representation of XML structure). Auto-generated by validateAuditComplianceReporting hook.
+   */
+  auditReportContent?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Jurisdiction-specific regulatory filings
+   */
+  regulatoryFilings?:
+    | {
+        /**
+         * Tax jurisdiction for this filing
+         */
+        jurisdiction: string;
+        /**
+         * Type of regulatory filing
+         */
+        filingType?: ('annual-return' | 'estimated-payment' | 'amended-return') | null;
+        /**
+         * Jurisdiction-specific filing format (e.g., "Form 1120 (IRS)")
+         */
+        filingFormat?: string | null;
+        /**
+         * Tax authority filing deadline
+         */
+        filingDeadline?: string | null;
+        /**
+         * How to submit (e.g., "IRS e-Services (Online)")
+         */
+        submissionMethod?: string | null;
+        /**
+         * Filing submission status
+         */
+        submissionStatus?: ('draft' | 'ready-to-submit' | 'submitted' | 'accepted' | 'rejected') | null;
+        /**
+         * When filing was submitted
+         */
+        submissionDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * OECD-compliant transfer pricing documentation package (master file + local files + contemporaneous documentation). Auto-generated by validateAuditComplianceReporting hook.
+   */
+  transferPricingPackage?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Cross-jurisdiction tax optimization recommendations (advisory only)
+   */
+  optimizationRecommendations?:
+    | {
+        /**
+         * Type of optimization opportunity
+         */
+        optimizationType: string;
+        /**
+         * Jurisdictions affected by this optimization
+         */
+        affectedJurisdictions?:
+          | {
+              /**
+               * Jurisdiction code
+               */
+              jurisdiction?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        /**
+         * Estimated annual tax savings
+         */
+        estimatedTaxSavings?: number | null;
+        /**
+         * Currency of estimated savings (ISO 4217 code)
+         */
+        savingsCurrency?: string | null;
+        /**
+         * Compliance risk assessment
+         */
+        complianceRisk?: ('low' | 'medium' | 'high') | null;
+        /**
+         * Description of optimization opportunity
+         */
+        description?: string | null;
+        /**
+         * Recommended action to pursue this opportunity
+         */
+        recommendedAction?: string | null;
+        /**
+         * Implementation status of this optimization
+         */
+        implementationStatus?: ('recommended' | 'under-review' | 'approved' | 'implemented' | 'rejected') | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * SAF-T 3.0.2 XML validation status (pending-review until verified against schema)
+   */
+  validationStatus?: ('pending-review' | 'valid' | 'invalid' | 'requires-correction') | null;
+  /**
+   * Phase B6: Law 63 self-governance metadata. Stores audit authority, approval thresholds, reporting scope. Auto-populated from audit configuration.
+   */
+  governanceScope?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Phase B6: Law 60 audit chain leaf. Computed as sha256(JCS-canonical(AuditReports) || prior_leaf_uuid). Enables tamper detection.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * Immutable audit trail of report generation, submission, and approval milestones. Append-only.
+   */
+  auditTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * General notes on this audit report
+   */
+  notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transfer-pricing-adjustments".
+ */
+export interface TransferPricingAdjustment {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique ID: e.g., "BG-PARENT-SUB-SALES-2026" (jurisdiction-from-to-type-period)
+   */
+  adjustmentDescription: string;
+  /**
+   * Tax jurisdiction for this adjustment (e.g., "BG", "US-CA")
+   */
+  taxJurisdiction: string;
+  /**
+   * Tax period this adjustment belongs to
+   */
+  taxPeriod?: (string | null) | TaxPeriod;
+  /**
+   * Paying/transferring entity (supplier side)
+   */
+  fromEntity: string;
+  /**
+   * Receiving entity (customer side)
+   */
+  toEntity: string;
+  /**
+   * Type of intercompany transaction
+   */
+  transactionType: 'sales' | 'services' | 'royalties' | 'financing' | 'cost-sharing';
+  /**
+   * Transaction amount per original agreement/invoice
+   */
+  originalAmount: number;
+  /**
+   * Adjusted transaction amount per OECD arm's length standard
+   */
+  adjustedAmount: number;
+  /**
+   * Calculated difference (adjustedAmount - originalAmount)
+   */
+  adjustmentAmount?: number | null;
+  /**
+   * OECD transfer pricing method used (BEPS Action 4 recommended hierarchy)
+   */
+  methodUsed: 'comparable-uncontrolled' | 'cost-plus' | 'resale' | 'profit-split' | 'tnmm';
+  /**
+   * Detailed reason for adjustment (why arm's length price differs from agreement)
+   */
+  adjustmentReason: string;
+  /**
+   * Path/reference to contemporaneous documentation (e.g., benchmark study file, external appraisal)
+   */
+  supportingDocumentation: string;
+  /**
+   * Status of TP documentation review
+   */
+  documentationStatus?: ('draft' | 'under-review' | 'documented' | 'challenged') | null;
+  /**
+   * Date of transfer pricing adjustment (typically period-end date)
+   */
+  adjustmentDate: string;
+  /**
+   * Related journal entries (original + adjustment postings)
+   */
+  relatedDocuments?: (string | JournalEntry)[] | null;
+  /**
+   * Immutable audit trail: documentation review, challenges, approvals. Append-only.
+   */
+  auditTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * General notes on this transfer pricing adjustment
+   */
+  notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "post-close-analytics-reports".
+ */
+export interface PostCloseAnalyticsReport {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique ID: e.g., "ANALYTICS-FY2026-COMPREHENSIVE" or "ANALYTICS-FY2026-VARIANCE"
+   */
+  analyticsReportName: string;
+  /**
+   * Fiscal year for this analysis
+   */
+  fiscalYear: number;
+  /**
+   * Linked audit report (analytics based on finalized audit data)
+   */
+  auditReportId?: (string | null) | AuditReport;
+  /**
+   * Linked consolidation (analytics based on consolidated GL)
+   */
+  consolidationId?: (string | null) | Consolidation;
+  /**
+   * Type of post-close analytics to generate
+   */
+  reportType?: ('variance' | 'ratio' | 'segment' | 'comprehensive') | null;
+  /**
+   * Analyst or finance officer who triggered analysis generation
+   */
+  generatedBy?: (string | null) | User;
+  /**
+   * Analytics workflow status
+   */
+  analysisStatus: 'pending-analysis' | 'analysis-complete' | 'reviewed' | 'approved' | 'rejected';
+  /**
+   * Variance analysis report (budget vs. actual, period-over-period, waterfall). Auto-generated by validatePostCloseAnalytics hook.
+   */
+  varianceAnalysisReport?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Financial ratio analysis (liquidity, profitability, solvency, efficiency ratios). Auto-generated by validatePostCloseAnalytics hook.
+   */
+  ratioAnalysisReport?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Segment reporting analysis (business segments and geographic segments per IFRS-8). Auto-generated by validatePostCloseAnalytics hook.
+   */
+  segmentAnalysisReport?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Management reporting summary (executive dashboard, KPI scorecard, alerts, trends). Auto-generated by validatePostCloseAnalytics hook.
+   */
+  managementReportingSummary?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Custom executive summary narrative (optional; auto-generated if not provided)
+   */
+  executiveSummaryText?: string | null;
+  /**
+   * Analytics validation status (pending-review until reviewed by management)
+   */
+  validationStatus?: ('pending-review' | 'valid' | 'requires-correction') | null;
+  /**
+   * Phase B7: Law 63 self-governance metadata. Stores analysis authority, approval thresholds, reporting scope. Auto-populated from analysis configuration.
+   */
+  governanceScope?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Phase B7: Law 60 analytics chain leaf. Computed as sha256(JCS-canonical(PostCloseAnalyticsReports) || prior_leaf_uuid). Enables tamper detection.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * Immutable analytics trail of report generation, review, and approval milestones. Append-only.
+   */
+  analyticsTrail?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  /**
+   * General notes on this analytics report
+   */
+  notes?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16694,6 +20517,14 @@ export interface FormSubmission {
         id?: string | null;
       }[]
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -16761,6 +20592,14 @@ export interface Export {
     | number
     | boolean
     | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -16801,6 +20640,14 @@ export interface Import {
       | number
       | boolean
       | null;
+  };
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
   };
   updatedAt: string;
   createdAt: string;
@@ -16921,6 +20768,24 @@ export interface PayloadMcpApiKey {
     update?: boolean | null;
     /**
      * Allow clients to delete products.
+     */
+    delete?: boolean | null;
+  };
+  memories?: {
+    /**
+     * Allow clients to find memories.
+     */
+    find?: boolean | null;
+    /**
+     * Allow clients to create memories.
+     */
+    create?: boolean | null;
+    /**
+     * Allow clients to update memories.
+     */
+    update?: boolean | null;
+    /**
+     * Allow clients to delete memories.
      */
     delete?: boolean | null;
   };
@@ -17483,6 +21348,14 @@ export interface PayloadLockedDocument {
         value: string | WipSnapshot;
       } | null)
     | ({
+        relationTo: 'tags';
+        value: string | Tag;
+      } | null)
+    | ({
+        relationTo: 'taggings';
+        value: string | Tagging;
+      } | null)
+    | ({
         relationTo: 'properties';
         value: string | Property;
       } | null)
@@ -17823,6 +21696,26 @@ export interface PayloadLockedDocument {
         value: string | UsageRecord;
       } | null)
     | ({
+        relationTo: 'consolidations';
+        value: string | Consolidation;
+      } | null)
+    | ({
+        relationTo: 'tax-periods';
+        value: string | TaxPeriod;
+      } | null)
+    | ({
+        relationTo: 'audit-reports';
+        value: string | AuditReport;
+      } | null)
+    | ({
+        relationTo: 'transfer-pricing-adjustments';
+        value: string | TransferPricingAdjustment;
+      } | null)
+    | ({
+        relationTo: 'post-close-analytics-reports';
+        value: string | PostCloseAnalyticsReport;
+      } | null)
+    | ({
         relationTo: 'addresses';
         value: string | Address;
       } | null)
@@ -17966,6 +21859,7 @@ export interface TenantsSelect<T extends boolean = true> {
   emailDefaultFromAddress?: T;
   emailDefaultFromName?: T;
   mcpApiKey?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18001,6 +21895,7 @@ export interface UsersSelect<T extends boolean = true> {
             };
         features?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   email?: T;
@@ -18028,6 +21923,7 @@ export interface RolesSelect<T extends boolean = true> {
   binding?: T;
   scopedCollection?: T;
   resource?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18039,6 +21935,7 @@ export interface UserRolesSelect<T extends boolean = true> {
   uuid?: T;
   user?: T;
   role?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18100,6 +21997,7 @@ export interface PagesSelect<T extends boolean = true> {
         url?: T;
         id?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -18217,6 +22115,7 @@ export interface PostsSelect<T extends boolean = true> {
       };
   generateSlug?: T;
   slug?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
@@ -18230,6 +22129,7 @@ export interface MediaSelect<T extends boolean = true> {
   tenant?: T;
   alt?: T;
   caption?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -18335,6 +22235,7 @@ export interface CategoriesSelect<T extends boolean = true> {
         url?: T;
         id?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18427,6 +22328,11 @@ export interface InvoicesSelect<T extends boolean = true> {
         periodStart?: T;
         periodEnd?: T;
         subscription?: T;
+        stripeInvoiceId?: T;
+        stripePaymentIntentId?: T;
+        attemptCount?: T;
+        lastAttemptAt?: T;
+        lastAttemptError?: T;
       };
   ledger?:
     | T
@@ -18453,6 +22359,7 @@ export interface InvoicesSelect<T extends boolean = true> {
       };
   test?: T;
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18549,6 +22456,7 @@ export interface InvoiceLinesSelect<T extends boolean = true> {
         giftCard?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18571,6 +22479,7 @@ export interface PaymentMethodsSelect<T extends boolean = true> {
   isActive?: T;
   createdViaStripe?: T;
   nextRetryAt?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18618,6 +22527,7 @@ export interface PaymentsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18638,6 +22548,7 @@ export interface SubscriptionPlansSelect<T extends boolean = true> {
   isActive?: T;
   description?: T;
   sortOrder?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18662,6 +22573,7 @@ export interface SubscriptionsSelect<T extends boolean = true> {
   resumeAt?: T;
   lastStatusChange?: T;
   lastStatusChangeReason?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18736,6 +22648,7 @@ export interface ItemsSelect<T extends boolean = true> {
         visibility?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18783,6 +22696,7 @@ export interface GlPostingRulesSelect<T extends boolean = true> {
   closesAtPeriodEnd?: T;
   relatedGLAccounts?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18820,6 +22734,7 @@ export interface JournalEntriesSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18856,6 +22771,7 @@ export interface GlPostingsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18881,6 +22797,7 @@ export interface PeriodLocksSelect<T extends boolean = true> {
   requiresAdminOverride?: T;
   relatedClosingEntries?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18929,6 +22846,7 @@ export interface ClosingEntriesSelect<T extends boolean = true> {
   multiCurrencyReconciliation?: T;
   auditTrail?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -18974,6 +22892,7 @@ export interface BankStatementsSelect<T extends boolean = true> {
   reconciliationDate?: T;
   reconciliedBy?: T;
   importSource?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19018,6 +22937,7 @@ export interface BankTransactionsSelect<T extends boolean = true> {
   matchedBy?: T;
   status?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19046,6 +22966,7 @@ export interface BankAccountsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19103,6 +23024,7 @@ export interface AccountReconciliationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19137,6 +23059,7 @@ export interface BankReconciliationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19177,6 +23100,7 @@ export interface FinancialStatementsSelect<T extends boolean = true> {
       };
   generatedAt?: T;
   generatedBy?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19197,6 +23121,7 @@ export interface PeriodEndAdjustmentsSelect<T extends boolean = true> {
   journalEntry?: T;
   status?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19238,6 +23163,7 @@ export interface RecurringJournalsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19263,6 +23189,7 @@ export interface PriorPeriodAdjustmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19291,6 +23218,7 @@ export interface RoundingAdjustmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19317,6 +23245,7 @@ export interface TaxCalculationsSelect<T extends boolean = true> {
   filingDeadline?: T;
   paymentDeadline?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19364,6 +23293,7 @@ export interface TaxCodesSelect<T extends boolean = true> {
         defaultExpenseAccount?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19404,6 +23334,7 @@ export interface TaxJurisdictionsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19441,6 +23372,7 @@ export interface TaxReturnsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19464,6 +23396,7 @@ export interface CurrencyRatesSelect<T extends boolean = true> {
   isActive?: T;
   usedInTransactions?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19505,6 +23438,7 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19531,6 +23465,7 @@ export interface FiscalCalendarsSelect<T extends boolean = true> {
   generatedFrom?: T;
   chainLeafUuid?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19553,6 +23488,7 @@ export interface FiscalPeriodSnapshotsSelect<T extends boolean = true> {
   signedUuid?: T;
   auditTrail?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19599,6 +23535,7 @@ export interface FixedAssetsSelect<T extends boolean = true> {
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19625,6 +23562,7 @@ export interface DepreciationSchedulesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19692,6 +23630,7 @@ export interface CustomersSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19729,6 +23668,7 @@ export interface LeadsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19761,6 +23701,7 @@ export interface OpportunitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19786,6 +23727,7 @@ export interface CustomerSegmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19822,6 +23764,7 @@ export interface QuotesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19870,6 +23813,7 @@ export interface SalesOrdersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19911,6 +23855,7 @@ export interface SalesCommissionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19937,6 +23882,7 @@ export interface CreditMemosSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -19968,6 +23914,7 @@ export interface ReturnsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20000,6 +23947,7 @@ export interface ShipmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20027,6 +23975,7 @@ export interface RefundsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20053,6 +24002,7 @@ export interface PaymentAllocationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20095,6 +24045,7 @@ export interface DunningCyclesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20173,6 +24124,7 @@ export interface VendorsSelect<T extends boolean = true> {
         note?: T;
       };
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20221,6 +24173,7 @@ export interface VendorQuotesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20267,6 +24220,7 @@ export interface VendorScorecardsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20310,6 +24264,7 @@ export interface PurchaseOrdersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20364,6 +24319,7 @@ export interface PurchaseRequisitionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20394,6 +24350,7 @@ export interface GoodsReceiptsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20425,6 +24382,7 @@ export interface InventoryMovementsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20454,6 +24412,7 @@ export interface WarehouseLocationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20489,6 +24448,7 @@ export interface CostCentersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20521,6 +24481,7 @@ export interface BudgetPlanningSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20553,6 +24514,7 @@ export interface CostVariancesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20581,6 +24543,7 @@ export interface IntercompanyTransactionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20610,6 +24573,7 @@ export interface ConsolidationEliminationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20639,6 +24603,7 @@ export interface FxTransactionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20687,6 +24652,7 @@ export interface ContractsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20715,6 +24681,7 @@ export interface PerformanceObligationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20746,6 +24713,7 @@ export interface CommitmentsAndContingenciesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20803,6 +24771,7 @@ export interface LeasesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20850,6 +24819,7 @@ export interface LeaseModificationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20886,6 +24856,7 @@ export interface LeasePeriodPostingsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20934,6 +24905,7 @@ export interface PaymentRunsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -20964,6 +24936,7 @@ export interface SepaMandatesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21024,6 +24997,7 @@ export interface PayrollRunsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21101,6 +25075,7 @@ export interface EmployeesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21142,6 +25117,7 @@ export interface JobPositionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21171,6 +25147,7 @@ export interface TimeEntriesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21212,6 +25189,7 @@ export interface LeaveRequestsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21288,6 +25266,7 @@ export interface PerformanceReviewsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21353,6 +25332,7 @@ export interface ExpenseReportsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21406,6 +25386,7 @@ export interface RecruitingPipelineSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21437,6 +25418,7 @@ export interface ActivitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21474,6 +25456,7 @@ export interface ProjectsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21507,6 +25490,7 @@ export interface ProjectTasksSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21535,6 +25519,7 @@ export interface ProjectMilestonesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21570,6 +25555,7 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21613,6 +25599,7 @@ export interface WorkflowDefinitionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21655,6 +25642,7 @@ export interface WorkflowInstancesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21697,6 +25685,7 @@ export interface BillsOfMaterialsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21722,6 +25711,7 @@ export interface WorkCentersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21750,6 +25740,7 @@ export interface WorkShiftsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21769,6 +25760,7 @@ export interface OperationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21792,6 +25784,7 @@ export interface RoutingsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21830,6 +25823,7 @@ export interface OperationRunsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21865,6 +25859,7 @@ export interface ProductionReceiptsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21895,6 +25890,7 @@ export interface QualityInspectionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21925,6 +25921,40 @@ export interface WipSnapshotsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tags_select".
+ */
+export interface TagsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  name?: T;
+  taggingsCount?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "taggings_select".
+ */
+export interface TaggingsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  tag?: T;
+  context?: T;
+  tagger?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  taggable?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -21984,6 +26014,7 @@ export interface PropertiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22026,6 +26057,7 @@ export interface SpacesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22067,6 +26099,7 @@ export interface MaintenanceRequestsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22138,6 +26171,7 @@ export interface MaintenanceWorkOrdersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22194,6 +26228,7 @@ export interface BookableResourcesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22238,6 +26273,7 @@ export interface BookingsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22271,6 +26307,7 @@ export interface CarriersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22297,6 +26334,7 @@ export interface TrackingEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22342,6 +26380,7 @@ export interface CustomsDeclarationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22373,6 +26412,7 @@ export interface ConsignmentArrangementsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22403,6 +26443,7 @@ export interface ConsignmentInventorySelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22435,6 +26476,7 @@ export interface ConsignmentSalesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22469,6 +26511,7 @@ export interface AuditEventsSelect<T extends boolean = true> {
   severity?: T;
   previousHash?: T;
   rowHash?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22491,6 +26534,7 @@ export interface ApiAuditEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22522,6 +26566,7 @@ export interface EvidenceAttestationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22536,6 +26581,7 @@ export interface EntityTypesSelect<T extends boolean = true> {
   code?: T;
   description?: T;
   applicableFrameworks?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22559,6 +26605,7 @@ export interface TaxingJurisdictionsSelect<T extends boolean = true> {
         dueDate?: T;
         id?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22575,6 +26622,7 @@ export interface EntityLegalStructuresSelect<T extends boolean = true> {
   jurisdiction?: T;
   description?: T;
   taxTreatment?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22592,6 +26640,7 @@ export interface ComplianceFrameworksSelect<T extends boolean = true> {
   effectiveDate?: T;
   description?: T;
   applicableJurisdictions?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22608,6 +26657,7 @@ export interface ComplianceRequirementsSelect<T extends boolean = true> {
   description?: T;
   testableStatement?: T;
   applicableEntityTypes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22625,6 +26675,7 @@ export interface InternalControlsSelect<T extends boolean = true> {
   description?: T;
   owner?: T;
   frequency?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22644,6 +26695,7 @@ export interface ControlTestsSelect<T extends boolean = true> {
   result?: T;
   deviationCount?: T;
   deviationRate?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22661,6 +26713,7 @@ export interface AuditSamplesSelect<T extends boolean = true> {
   exceptionCategory?: T;
   notes?: T;
   evidence?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22677,6 +26730,7 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
   description?: T;
   status?: T;
   remediationPlan?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22701,6 +26755,7 @@ export interface AuditEvidenceSelect<T extends boolean = true> {
       };
   confidentiality?: T;
   retentionPeriod?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22722,6 +26777,7 @@ export interface AuditFindingsSelect<T extends boolean = true> {
   status?: T;
   evidence?: T;
   remediationPlan?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22743,6 +26799,7 @@ export interface AuditTrailEventsSelect<T extends boolean = true> {
   approvalStatus?: T;
   changeReason?: T;
   systemDetails?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22775,6 +26832,7 @@ export interface RemediationPlansSelect<T extends boolean = true> {
   status?: T;
   budget?: T;
   riskOfDelay?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22792,6 +26850,7 @@ export interface AuditCommitteesSelect<T extends boolean = true> {
   meetingFrequency?: T;
   status?: T;
   members?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22816,6 +26875,7 @@ export interface AuditCommitteeMembersSelect<T extends boolean = true> {
         id?: T;
       };
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22842,6 +26902,7 @@ export interface BoardActionsSelect<T extends boolean = true> {
       };
   minutes?: T;
   relatedControls?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22868,6 +26929,7 @@ export interface ManagementCertificationsSelect<T extends boolean = true> {
   relatedFindings?: T;
   signedDocument?: T;
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22891,6 +26953,7 @@ export interface RegulatoryReportsSelect<T extends boolean = true> {
   reportDocument?: T;
   regulatoryFeedback?: T;
   findings?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22912,6 +26975,7 @@ export interface InternalPoliciesSelect<T extends boolean = true> {
   status?: T;
   policyDocument?: T;
   applicableControls?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22937,6 +27001,7 @@ export interface StatutoryReportTemplatesSelect<T extends boolean = true> {
   templateDocument?: T;
   effectiveFrom?: T;
   effectiveTo?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22956,6 +27021,7 @@ export interface StatutoryFieldMappingsSelect<T extends boolean = true> {
   transformation?: T;
   mandatory?: T;
   validationRules?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22973,6 +27039,7 @@ export interface PolicyVersionsSelect<T extends boolean = true> {
   changes?: T;
   documentUrl?: T;
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -22991,6 +27058,7 @@ export interface PolicyAcknowledgmentsSelect<T extends boolean = true> {
   acknowledgedBy?: T;
   signedDocument?: T;
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23011,6 +27079,7 @@ export interface ComplianceDeadlinesSelect<T extends boolean = true> {
   status?: T;
   priority?: T;
   penalty?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23035,6 +27104,7 @@ export interface ComplianceNotificationsSelect<T extends boolean = true> {
   daysBeforeDue?: T;
   sentDate?: T;
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23053,6 +27123,7 @@ export interface ReportingStandardsSelect<T extends boolean = true> {
   version?: T;
   effectiveDate?: T;
   referenceMaterial?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23076,6 +27147,7 @@ export interface ReportingMappingsSelect<T extends boolean = true> {
         id?: T;
       };
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23105,6 +27177,7 @@ export interface RelatedPartyTransactionsSelect<T extends boolean = true> {
   disclosureReference?: T;
   relatedControls?: T;
   evidence?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23144,6 +27217,7 @@ export interface ManagementAssessmentIcfrSelect<T extends boolean = true> {
   relatedAuditFindings?: T;
   relatedControlTests?: T;
   status?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23180,6 +27254,7 @@ export interface DisclosureChecklistsSelect<T extends boolean = true> {
   reviewDate?: T;
   checklistStatus?: T;
   checklistDocument?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23246,6 +27321,7 @@ export interface AuditCommitteeMinutesSelect<T extends boolean = true> {
   approvalDate?: T;
   minutesDocument?: T;
   confidentiality?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23281,6 +27357,7 @@ export interface RiskRegisterSelect<T extends boolean = true> {
   nextAssessmentDate?: T;
   riskStatus?: T;
   riskRegisterDocument?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23339,6 +27416,7 @@ export interface DebtScheduleSelect<T extends boolean = true> {
   relatedControls?: T;
   debtStatus?: T;
   debtAgreement?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23399,6 +27477,7 @@ export interface InternalAuditFunctionSelect<T extends boolean = true> {
   riskBasedAuditing?: T;
   auditFunctionStatus?: T;
   charterDocument?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23453,6 +27532,7 @@ export interface SegmentReportingSelect<T extends boolean = true> {
   relatedDisclosures?: T;
   segmentReportingDocument?: T;
   reportingStatus?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23479,6 +27559,7 @@ export interface ConsentRecordsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23504,6 +27585,7 @@ export interface DataSubjectRequestsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23553,6 +27635,7 @@ export interface DataProcessingActivitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23593,6 +27676,7 @@ export interface KycChecksSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23620,6 +27704,7 @@ export interface BeneficialOwnersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23664,6 +27749,7 @@ export interface CsrdDisclosuresSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23719,6 +27805,7 @@ export interface CarbonEmissionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23747,6 +27834,7 @@ export interface BiologicalAssetsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23773,6 +27861,7 @@ export interface MineralResourceAssetsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23802,6 +27891,7 @@ export interface InvestmentPropertiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23851,6 +27941,7 @@ export interface ProvisionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23895,6 +27986,7 @@ export interface GovernmentGrantsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23924,6 +28016,7 @@ export interface DeferredTaxItemsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23974,6 +28067,7 @@ export interface ShareBasedPaymentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24018,6 +28112,7 @@ export interface BusinessCombinationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24052,6 +28147,7 @@ export interface HeldForSaleClassificationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24092,6 +28188,7 @@ export interface FairValueMeasurementsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24136,6 +28233,7 @@ export interface EarningsPerShareSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24168,6 +28266,7 @@ export interface InsuranceContractsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24191,6 +28290,7 @@ export interface RegulatoryDeferralAccountsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24218,6 +28318,7 @@ export interface PostBalanceSheetEventsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24247,6 +28348,7 @@ export interface TransactionFailuresSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24311,6 +28413,7 @@ export interface TransferPricingFilesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24358,6 +28461,7 @@ export interface StandardsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24370,6 +28474,7 @@ export interface MemoriesSelect<T extends boolean = true> {
   uuid?: T;
   memoryRef?: T;
   title?: T;
+  body?: T;
   ownerType?: T;
   ownerId?: T;
   kind?: T;
@@ -24394,6 +28499,7 @@ export interface MemoriesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24461,6 +28567,7 @@ export interface TranslationsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24508,6 +28615,7 @@ export interface CommitmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   approvalComments?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24546,6 +28654,7 @@ export interface ContractAmendmentsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   internalNotes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24583,6 +28692,7 @@ export interface ContractPerformanceSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   performanceNotes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24625,6 +28735,7 @@ export interface ContractSignaturesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   approvalComments?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24691,6 +28802,7 @@ export interface ContractTemplatesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   templateNotes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24737,6 +28849,7 @@ export interface LegalEntitiesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24777,6 +28890,7 @@ export interface AiSuggestionsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24805,6 +28919,205 @@ export interface UsageRecordsSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "consolidations_select".
+ */
+export interface ConsolidationsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  consolidationName?: T;
+  consolidationGroup?: T;
+  subsidiaryEntities?: T;
+  associateEntities?: T;
+  fiscalYear?: T;
+  periodClosingDate?: T;
+  consolidationCurrency?: T;
+  consolidationType?: T;
+  consolidatedBy?: T;
+  consolidationStatus?: T;
+  consolidationReadiness?: T;
+  eliminationEntries?:
+    | T
+    | {
+        sequenceNumber?: T;
+        journalEntryId?: T;
+        fromEntity?: T;
+        toEntity?: T;
+        account?: T;
+        accountType?: T;
+        eliminationAmount?: T;
+        description?: T;
+        posted?: T;
+        postedDate?: T;
+        id?: T;
+      };
+  governanceScope?: T;
+  chainLeafUuid?: T;
+  auditTrail?: T;
+  notes?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tax-periods_select".
+ */
+export interface TaxPeriodsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  taxPeriodName?: T;
+  taxJurisdiction?: T;
+  taxPeriodType?: T;
+  fiscalPeriodId?: T;
+  taxPeriodEndDate?: T;
+  filingDeadline?: T;
+  taxCurrency?: T;
+  filedBy?: T;
+  taxStatus?: T;
+  taxPeriodReadiness?: T;
+  transferPricingAdjustmentCount?: T;
+  taxAdjustmentEntries?:
+    | T
+    | {
+        sequenceNumber?: T;
+        journalEntryId?: T;
+        fromEntity?: T;
+        toEntity?: T;
+        account?: T;
+        accountType?: T;
+        adjustmentAmount?: T;
+        description?: T;
+        posted?: T;
+        postedDate?: T;
+        id?: T;
+      };
+  governanceScope?: T;
+  chainLeafUuid?: T;
+  auditTrail?: T;
+  notes?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-reports_select".
+ */
+export interface AuditReportsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  auditReportName?: T;
+  auditYear?: T;
+  consolidationId?: T;
+  reportType?: T;
+  targetJurisdictions?:
+    | T
+    | {
+        jurisdictionCode?: T;
+        id?: T;
+      };
+  generatedBy?: T;
+  auditStatus?: T;
+  auditReportContent?: T;
+  regulatoryFilings?:
+    | T
+    | {
+        jurisdiction?: T;
+        filingType?: T;
+        filingFormat?: T;
+        filingDeadline?: T;
+        submissionMethod?: T;
+        submissionStatus?: T;
+        submissionDate?: T;
+        id?: T;
+      };
+  transferPricingPackage?: T;
+  optimizationRecommendations?:
+    | T
+    | {
+        optimizationType?: T;
+        affectedJurisdictions?:
+          | T
+          | {
+              jurisdiction?: T;
+              id?: T;
+            };
+        estimatedTaxSavings?: T;
+        savingsCurrency?: T;
+        complianceRisk?: T;
+        description?: T;
+        recommendedAction?: T;
+        implementationStatus?: T;
+        id?: T;
+      };
+  validationStatus?: T;
+  governanceScope?: T;
+  chainLeafUuid?: T;
+  auditTrail?: T;
+  notes?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "transfer-pricing-adjustments_select".
+ */
+export interface TransferPricingAdjustmentsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  adjustmentDescription?: T;
+  taxJurisdiction?: T;
+  taxPeriod?: T;
+  fromEntity?: T;
+  toEntity?: T;
+  transactionType?: T;
+  originalAmount?: T;
+  adjustedAmount?: T;
+  adjustmentAmount?: T;
+  methodUsed?: T;
+  adjustmentReason?: T;
+  supportingDocumentation?: T;
+  documentationStatus?: T;
+  adjustmentDate?: T;
+  relatedDocuments?: T;
+  auditTrail?: T;
+  notes?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "post-close-analytics-reports_select".
+ */
+export interface PostCloseAnalyticsReportsSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  analyticsReportName?: T;
+  fiscalYear?: T;
+  auditReportId?: T;
+  consolidationId?: T;
+  reportType?: T;
+  generatedBy?: T;
+  analysisStatus?: T;
+  varianceAnalysisReport?: T;
+  ratioAnalysisReport?: T;
+  segmentAnalysisReport?: T;
+  managementReportingSummary?: T;
+  executiveSummaryText?: T;
+  validationStatus?: T;
+  governanceScope?: T;
+  chainLeafUuid?: T;
+  analyticsTrail?: T;
+  notes?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24841,6 +29154,7 @@ export interface AddressesSelect<T extends boolean = true> {
   note?: T;
   isDefault?: T;
   metadata?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24857,6 +29171,7 @@ export interface VariantsSelect<T extends boolean = true> {
   inventory?: T;
   priceInEUREnabled?: T;
   priceInEUR?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -24872,6 +29187,7 @@ export interface VariantTypesSelect<T extends boolean = true> {
   label?: T;
   name?: T;
   options?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -24887,6 +29203,7 @@ export interface VariantOptionsSelect<T extends boolean = true> {
   variantType?: T;
   label?: T;
   value?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -24931,6 +29248,7 @@ export interface ProductsSelect<T extends boolean = true> {
   categories?: T;
   generateSlug?: T;
   slug?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   deletedAt?: T;
@@ -24957,6 +29275,7 @@ export interface CartsSelect<T extends boolean = true> {
   status?: T;
   subtotal?: T;
   currency?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24997,6 +29316,7 @@ export interface OrdersSelect<T extends boolean = true> {
   amount?: T;
   currency?: T;
   accessToken?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25044,6 +29364,7 @@ export interface TransactionsSelect<T extends boolean = true> {
   cart?: T;
   amount?: T;
   currency?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25178,6 +29499,7 @@ export interface FormsSelect<T extends boolean = true> {
         message?: T;
         id?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25195,6 +29517,7 @@ export interface FormSubmissionsSelect<T extends boolean = true> {
         value?: T;
         id?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -25216,6 +29539,7 @@ export interface ExportsSelect<T extends boolean = true> {
   fields?: T;
   collectionSlug?: T;
   where?: T;
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -25247,6 +29571,7 @@ export interface ImportsSelect<T extends boolean = true> {
         issues?: T;
         issueDetails?: T;
       };
+  tags?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -25300,6 +29625,14 @@ export interface PayloadMcpApiKeysSelect<T extends boolean = true> {
         delete?: T;
       };
   products?:
+    | T
+    | {
+        find?: T;
+        create?: T;
+        update?: T;
+        delete?: T;
+      };
+  memories?:
     | T
     | {
         find?: T;
@@ -25636,6 +29969,8 @@ export interface TaskCreateCollectionExport {
       | 'production-receipts'
       | 'quality-inspections'
       | 'wip-snapshots'
+      | 'tags'
+      | 'taggings'
       | 'properties'
       | 'spaces'
       | 'maintenance-requests'
@@ -25721,6 +30056,11 @@ export interface TaskCreateCollectionExport {
       | 'legal-entities'
       | 'ai-suggestions'
       | 'usage-records'
+      | 'consolidations'
+      | 'tax-periods'
+      | 'audit-reports'
+      | 'transfer-pricing-adjustments'
+      | 'post-close-analytics-reports'
       | 'addresses'
       | 'variants'
       | 'variantTypes'

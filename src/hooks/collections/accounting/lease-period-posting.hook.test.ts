@@ -21,7 +21,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { leasePeriodPostingHook } from '@/services/accounting/hooks/lease-period-posting.hook'
+import { leasePeriodPostingHook } from './lease-period-posting.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
 
 const tenant = 'tenant-lease'

@@ -113,6 +113,15 @@ export interface AiCallOptions {
   readonly kvCache?: AiCacheBinding
 }
 
+/**
+ * Default AI-response cache TTL (24h). "All cached for minimal AI cost":
+ * caching is ON by default — the key is content-derived (tenant + feature
+ * + model + inputs, see `deriveAiCacheKey`), so identical inferences
+ * dedupe and are never paid for twice (the content-uuid of an inference).
+ * Pass `cacheTtl: 0` to opt out for volatile / one-shot tasks.
+ */
+const DEFAULT_AI_CACHE_TTL = 86_400
+
 export type AiCallResult<TOutput = unknown> =
   | {
       readonly ok: true
@@ -225,8 +234,10 @@ export async function callWorkersAi<TOutput = unknown>(
     tenantId, feature: options.feature, model: options.model,
     sanitisedInputs,
   })
+  // Caching is the DEFAULT policy (minimal AI cost); explicit `0` opts out.
+  const effectiveCacheTtl = options.cacheTtl ?? DEFAULT_AI_CACHE_TTL
   let cachedOutput: TOutput | undefined
-  if (options.kvCache && (options.cacheTtl ?? 0) > 0) {
+  if (options.kvCache && effectiveCacheTtl > 0) {
     try {
       const cached = (await options.kvCache.get(cacheKey, 'json')) as
         | { output: TOutput; tokensIn?: number; tokensOut?: number }
@@ -257,7 +268,7 @@ export async function callWorkersAi<TOutput = unknown>(
     }
     try {
       const raw = (await binding.run(options.model, inferenceInputs, options.gatewayId
-        ? { gateway: { id: options.gatewayId, cacheTtl: options.cacheTtl, skipCache: options.cacheTtl === 0 } }
+        ? { gateway: { id: options.gatewayId, cacheTtl: effectiveCacheTtl, skipCache: effectiveCacheTtl === 0 } }
         : undefined)) as
         | TOutput
         | { response?: TOutput; confidence?: number; usage?: { prompt_tokens?: number; completion_tokens?: number } }
@@ -357,11 +368,11 @@ export async function callWorkersAi<TOutput = unknown>(
   })
 
   // Cache the successful output for next time (if KV provided + TTL set).
-  if (options.kvCache && (options.cacheTtl ?? 0) > 0 && cachedOutput === undefined) {
+  if (options.kvCache && effectiveCacheTtl > 0 && cachedOutput === undefined) {
     void options.kvCache.put(
       cacheKey,
       JSON.stringify({ output, tokensIn, tokensOut }),
-      { expirationTtl: options.cacheTtl },
+      { expirationTtl: effectiveCacheTtl },
     ).catch((e) => {
       req.payload.logger.warn({ err: e, cacheKey }, '[ai] KV cache put failed')
     })

@@ -5,3 +5,4 @@
  */
 export { isIso8601 } from './validate'
 export { toIso8601 } from './coerce'
+export { formatDateTime } from './format-date-time'

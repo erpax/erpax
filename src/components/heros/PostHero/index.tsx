@@ -1,4 +1,4 @@
-import { formatDateTime } from 'src/utilities/formatDateTime'
+import { formatDateTime } from '@/standards/iso-8601'
 import React from 'react'
 
 import type { Post } from '@/payload-types'

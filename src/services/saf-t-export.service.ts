@@ -55,6 +55,7 @@ import type {
 } from '@/standards/saf-t'
 import type {
   GlAccount,
+  Address,
   Customer,
   Vendor,
   Item,
@@ -64,6 +65,7 @@ import type {
   Payment,
   InventoryMovement,
 } from '@/payload-types'
+import { generateTrialBalance, type TrialBalanceRow } from '@/services/accounting/reports.service'
 
 export interface SafTExportOptions {
   /** Tenant id whose data to export. */
@@ -108,60 +110,132 @@ export const buildHeader = (options: SafTExportOptions): SafTHeader => ({
 
 // ─── 2. MasterFiles ────────────────────────────────────────────────────
 
-const accountTypeOf = (
-  doc: GlAccount,
-): SafTGeneralLedgerAccount['accountType'] => {
-  // Movement accounts (transactional) ↔ M.
-  // Synthesis accounts (group / parent) ↔ S.
-  // Analytical / sub-ledger ↔ A (rare in this schema).
-  if ((doc.isMovementAccount as boolean | undefined) === true) return 'M'
-  if ((doc.isMovementAccount as boolean | undefined) === false) return 'S'
-  return 'M' // safe default — most accounts are transactional
-}
-
 export const buildGeneralLedgerAccounts = async (
   payload: Payload,
   tenantId: string | number,
+  startDate: string,
+  endDate: string,
+  currencyCode: string,
 ): Promise<SafTGeneralLedgerAccount[]> => {
+  // SAF-T account balances are DERIVED from the ledger (balance =
+  // Σcredit − Σdebit), never stored on gl-accounts. Opening = trial
+  // balance the day before the period start; closing = as of period end.
+  const dayBefore = (iso: string): Date => {
+    const d = new Date(`${iso.slice(0, 10)}T00:00:00.000Z`)
+    d.setUTCDate(d.getUTCDate() - 1)
+    return d
+  }
+  const [opening, closing] = await Promise.all([
+    generateTrialBalance(payload, tenantId, dayBefore(startDate), currencyCode),
+    generateTrialBalance(
+      payload,
+      tenantId,
+      new Date(`${endDate.slice(0, 10)}T23:59:59.999Z`),
+      currencyCode,
+    ),
+  ])
+  const index = (rows: TrialBalanceRow[]): Map<string, TrialBalanceRow> =>
+    new Map(rows.map((r) => [String(r.accountId), r]))
+  const openingBy = index(opening.rows)
+  const closingBy = index(closing.rows)
+
   const result = await payload.find({
     collection: 'gl-accounts',
     where: { tenant: { equals: tenantId } },
     limit: 100_000,
     depth: 0,
   })
-  return (result.docs as GlAccount[]).map((d) => ({
-    accountID: String((d.accountId as string | undefined) ?? d.id),
-    accountDescription: String((d.accountName as string | undefined) ?? d.id),
-    accountType: accountTypeOf(d),
-    openingDebitBalance: (d.openingDebitBalance as number | undefined),
-    openingCreditBalance: (d.openingCreditBalance as number | undefined),
-    closingDebitBalance: (d.closingDebitBalance as number | undefined),
-    closingCreditBalance: (d.closingCreditBalance as number | undefined),
-  }))
+  const accounts = result.docs as GlAccount[]
+
+  // Synthesis (S) = an account that is another account's parent; a leaf
+  // is Movement (M). Derive the parent-id set + id→number map from the
+  // chart (OECD SAF-T accountType taxonomy + grouping hierarchy).
+  const parentIds = new Set<string>()
+  const numberById = new Map<string, string>()
+  for (const a of accounts) {
+    numberById.set(String(a.id), a.accountNumber)
+    const p = a.parentAccount
+    const pid = typeof p === 'object' && p !== null ? p.id : p
+    if (pid != null) parentIds.add(String(pid))
+  }
+
+  // SAF-T presents the net balance on the side it falls (the opposite
+  // column is omitted, not zero-filled).
+  const debitSide = (r: TrialBalanceRow | undefined): number | undefined => {
+    if (!r) return undefined
+    const net = r.totalDebits - r.totalCredits
+    return net > 0 ? net : undefined
+  }
+  const creditSide = (r: TrialBalanceRow | undefined): number | undefined => {
+    if (!r) return undefined
+    const net = r.totalCredits - r.totalDebits
+    return net > 0 ? net : undefined
+  }
+
+  return accounts.map((d) => {
+    const open = openingBy.get(String(d.id))
+    const close = closingBy.get(String(d.id))
+    const p = d.parentAccount
+    const pid = typeof p === 'object' && p !== null ? p.id : p
+    return {
+      accountID: d.accountNumber,
+      accountDescription: d.accountName,
+      accountType: parentIds.has(String(d.id)) ? 'S' : 'M',
+      openingDebitBalance: debitSide(open),
+      openingCreditBalance: creditSide(open),
+      closingDebitBalance: debitSide(close),
+      closingCreditBalance: creditSide(close),
+      groupingCode: pid != null ? numberById.get(String(pid)) : undefined,
+    }
+  })
 }
 
-interface CustomerDoc {
-  id: string | number
-  customerId?: string
-  arAccount?: string | { id?: string }
-  identity?: { taxId?: string; taxCountry?: string; companyName?: string; contact?: string }
-  billingAddress?: SafTAddressStructure
-  shipToAddress?: SafTAddressStructure
+// ISO 3166-1 'ZZ' = user-assigned "unknown country" — the country slot's
+// identity element (the pure fractal fallback, not a magic literal).
+const UNKNOWN_COUNTRY = 'ZZ'
+
+// Map a populated Address relation (depth ≥ 1) to the SAF-T address
+// structure. Absent / unpopulated ⇒ undefined: optional stays optional.
+const addressOf = (
+  a: (string | null | undefined) | Address,
+): SafTAddressStructure | undefined => {
+  if (!a || typeof a !== 'object') return undefined
+  return {
+    streetName: a.name ?? a.title ?? undefined,
+    city: a.city ?? '',
+    postalCode: a.postalCode ?? '',
+    region: a.state ?? undefined,
+    country: a.country ?? UNKNOWN_COUNTRY,
+  }
 }
 
+// Resolve a GlAccount relation to its account number (the SAF-T AccountID).
+const accountNumberOf = (
+  a: (string | null | undefined) | GlAccount,
+): string | undefined => (a && typeof a === 'object' ? a.accountNumber : undefined)
+
+// SAF-T party id — Customer and Vendor share these structural groups;
+// each passes its own resolved addresses (customers bill/ship, vendors
+// remit-to) since the address groups differ by entity.
 const partyIdOf = (
-  identity: CustomerDoc['identity'],
+  d: {
+    name: string
+    country?: string | null
+    identity?: { legalName?: string | null } | null
+    contact?: { email?: string | null; phone?: string | null } | null
+    tax?: { vatNumber?: string | null } | null
+  },
   billingAddress?: SafTAddressStructure,
   shipToAddress?: SafTAddressStructure,
 ): SafTPartyId => ({
-  taxRegistrationNumber: identity?.taxId,
-  taxRegistrationCountry: identity?.taxCountry,
-  companyName: String(identity?.companyName ?? '—'),
-  contact: identity?.contact,
+  taxRegistrationNumber: d.tax?.vatNumber ?? undefined,
+  taxRegistrationCountry: d.country ?? UNKNOWN_COUNTRY,
+  companyName: d.identity?.legalName ?? d.name,
+  contact: d.contact?.email ?? d.contact?.phone ?? undefined,
   billingAddress: billingAddress ?? {
     city: '',
     postalCode: '',
-    country: '',
+    country: d.country ?? UNKNOWN_COUNTRY,
   },
   shipToAddress,
 })
@@ -177,15 +251,14 @@ export const buildCustomers = async (
     depth: 1,
   })
   return (result.docs as Customer[]).map((d) => ({
-    customerID: String((d.customerId as string | undefined) ?? d.id),
-    accountID:
-      typeof d.arAccount === 'string'
-        ? d.arAccount
-        : String(
-            (d.arAccount as { id?: string } | undefined)?.id ?? '21.1',
-          ),
+    customerID: d.code,
+    accountID: accountNumberOf(d.ledger?.defaultReceivableAccount) ?? '',
     selfBillingIndicator: 0,
-    party: partyIdOf(d.identity as any, d.billingAddress as any, d.shipToAddress as any),
+    party: partyIdOf(
+      d,
+      addressOf(d.addresses?.billingAddress),
+      addressOf(d.addresses?.shippingAddress),
+    ),
   }))
 }
 
@@ -200,15 +273,10 @@ export const buildSuppliers = async (
     depth: 1,
   })
   return (result.docs as Vendor[]).map((d) => ({
-    supplierID: String((d.vendorId as string | undefined) ?? d.id),
-    accountID:
-      typeof d.apAccount === 'string'
-        ? (d.apAccount as string)
-        : String(
-            (d.apAccount as { id?: string } | undefined)?.id ?? '22.1',
-          ),
+    supplierID: d.code,
+    accountID: accountNumberOf(d.ledger?.defaultPayableAccount) ?? '',
     selfBillingIndicator: 0,
-    party: partyIdOf(d.identity as any, d.billingAddress as any, d.shipToAddress as any),
+    party: partyIdOf(d, addressOf(d.addresses?.remitToAddress)),
   }))
 }
 
@@ -254,8 +322,17 @@ export const buildTaxTable = async (
 export const buildMasterFiles = async (
   payload: Payload,
   tenantId: string | number,
+  startDate: string,
+  endDate: string,
+  currencyCode: string,
 ): Promise<SafTMasterFiles> => ({
-  generalLedgerAccounts: await buildGeneralLedgerAccounts(payload, tenantId),
+  generalLedgerAccounts: await buildGeneralLedgerAccounts(
+    payload,
+    tenantId,
+    startDate,
+    endDate,
+    currencyCode,
+  ),
   customers: await buildCustomers(payload, tenantId),
   suppliers: await buildSuppliers(payload, tenantId),
   products: await buildProducts(payload, tenantId),
@@ -790,7 +867,13 @@ export const buildAuditFile = async (
   )
   return {
     header: buildHeader(options),
-    masterFiles: await buildMasterFiles(payload, options.tenantId),
+    masterFiles: await buildMasterFiles(
+      payload,
+      options.tenantId,
+      options.startDate,
+      options.endDate,
+      options.currencyCode,
+    ),
     generalLedgerEntries: await buildGeneralLedgerEntries(
       payload,
       options.tenantId,

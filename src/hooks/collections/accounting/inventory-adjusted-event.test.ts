@@ -17,7 +17,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { inventoryMovementPostingHook } from '@/services/accounting/hooks/inventory-movement.hook'
+import { inventoryMovementPostingHook } from './inventory-movement.hook'
 import { eventEmitter } from '@/services/event-emitter.service'
 import type { InventoryAdjustedEvent } from '@/types/events'
 

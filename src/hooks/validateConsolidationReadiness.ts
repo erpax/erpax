@@ -136,7 +136,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
             and: [
               { fromEntity: { equals: from } },
               { toEntity: { equals: to } },
-              { transactionDate: { less_than_or_equal: data.periodClosingDate } },
+              { transactionDate: { less_than_equal: data.periodClosingDate } },
             ],
           },
         })
@@ -148,7 +148,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
             and: [
               { fromEntity: { equals: to } },
               { toEntity: { equals: from } },
-              { transactionDate: { less_than_or_equal: data.periodClosingDate } },
+              { transactionDate: { less_than_equal: data.periodClosingDate } },
             ],
           },
         })

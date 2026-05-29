@@ -78,6 +78,14 @@ export default createAccountingCollection({
     { name: 'title', type: 'text', required: true,
       admin: { description: 'One-line human-readable label.' } },
 
+    // The session / memory AS A DOCUMENT — Lexical rich text. Reference any
+    // erpax entity inline via internal links (the attention edges, in prose):
+    // "store sessions in forms of documents; using lexical you may reference
+    // everything from there". Uses the config default editor (LinkFeature).
+    // Structured edges also live in `relatedTo` below.
+    { name: 'body', type: 'richText',
+      admin: { description: 'The memory/session as a rich document; reference everything inline (Lexical internal links).' } },
+
     // Owner: who/what holds this memory
     {
       name: 'ownerType',

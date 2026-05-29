@@ -578,6 +578,33 @@ export const Invoices: CollectionConfig = {
           index: true,
           admin: { description: 'Owning subscription (used by dunning cycle)' },
         },
+        {
+          name: 'stripeInvoiceId',
+          type: 'text',
+          index: true,
+          admin: { description: 'Stripe invoice id — links this invoice to the Stripe billing multiverse.' },
+        },
+        {
+          name: 'stripePaymentIntentId',
+          type: 'text',
+          admin: { description: 'Stripe PaymentIntent id for the paying charge.' },
+        },
+        {
+          name: 'attemptCount',
+          type: 'number',
+          defaultValue: 0,
+          admin: { description: 'Dunning: count of failed payment attempts.' },
+        },
+        {
+          name: 'lastAttemptAt',
+          type: 'date',
+          admin: { description: 'Dunning: timestamp of the last payment attempt.' },
+        },
+        {
+          name: 'lastAttemptError',
+          type: 'text',
+          admin: { description: 'Dunning: last payment-attempt error message.' },
+        },
       ],
     },
     {

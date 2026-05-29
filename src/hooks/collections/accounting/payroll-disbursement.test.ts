@@ -12,7 +12,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { payrollDisbursementHook } from '@/services/accounting/hooks/payroll-disbursement.hook'
+import { payrollDisbursementHook } from './payroll-disbursement.hook'
 
 interface CreatedDoc {
   collection: string

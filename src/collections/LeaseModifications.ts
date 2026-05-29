@@ -105,7 +105,6 @@ const LeaseModifications: CollectionConfig = {
     {
       name: 'postModification',
       type: 'group',
-      dbName: 'postmod',
       admin: { description: 'New terms after the modification.' },
       fields: [
         { name: 'newTermMonths', type: 'number', defaultValue: 0 },

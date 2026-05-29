@@ -172,6 +172,10 @@ export { default as Operations } from './Operations'
 export { default as Routings } from './Routings'
 export { default as OperationRuns } from './OperationRuns'
 
+// Tagging system (anything is taggable — less collections, more features)
+export { default as Tags } from './Tags'
+export { default as Taggings } from './Taggings'
+
 // Facilities & Resources
 export { default as Properties } from './Properties'
 export { default as Spaces } from './Spaces'
@@ -295,3 +299,10 @@ export { default as contractTemplates } from './contract-templates'
 export { default as LegalEntities } from './LegalEntities'
 export { default as AiSuggestions } from './AiSuggestions'
 export { default as UsageRecords } from './UsageRecords'
+
+// Close-side analysis & compliance (named exports)
+export { Consolidations } from './Consolidations'
+export { TaxPeriods } from './TaxPeriods'
+export { AuditReports } from './AuditReports'
+export { TransferPricingAdjustments } from './TransferPricingAdjustments'
+export { PostCloseAnalyticsReports } from './PostCloseAnalyticsReports'

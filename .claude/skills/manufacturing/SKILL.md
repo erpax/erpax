@@ -1,11 +1,11 @@
 ---
 name: manufacturing
-description: Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/plugin-manufacturing` pattern.
+description: Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.
 ---
 
 # manufacturing — the all-industries production plugin
 
-Generalizes the etrima (garment) production engine into an industry-agnostic, self-sufficient `@erpax/plugin-manufacturing` (textile, food, pharma, electronics, furniture, job-shop, process). Built from two universal primitives — **BOM + Routing** — composed of reusable field-objects (see [[fields]],[[collections]]), referencing OUT polymorphically so [[accounting]]/audit attach without inward deps (see [[plugins]]). Ordered by the [[sequence]].
+Generalizes the etrima (garment) production engine into an industry-agnostic, self-sufficient `@erpax/manufacturing` (textile, food, pharma, electronics, furniture, job-shop, process). Built from two universal primitives — **BOM + Routing** — composed of reusable field-objects (see [[fields]],[[collections]]), referencing OUT polymorphically so [[accounting]]/audit attach without inward deps (see [[plugins]]). Ordered by the [[sequence]].
 
 ## Universal collections (generalizing etrima)
 | Collection | etrima origin | generalization |

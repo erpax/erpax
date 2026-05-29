@@ -5,7 +5,7 @@ description: Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindi
 
 # bindings — erpax fully self-managed on Cloudflare (every binding is a cost lever)
 
-erpax runs as a self-managed edge app: each Cloudflare binding is a capability AND a cost/efficiency lever. Using them fully means pushing each workload to its cheapest-correct primitive, metering its own usage, and (with [[identity]]'s content-uuid) cloning itself. Composes with [[deploy]], [[config]], [[harden]], [[jobs]]; declared in `wrangler.jsonc`, consumed via `src/services/cloudflare/` + `@erpax/plugin-cloudflare` (see [[plugins]]).
+erpax runs as a self-managed edge app: each Cloudflare binding is a capability AND a cost/efficiency lever. Using them fully means pushing each workload to its cheapest-correct primitive, metering its own usage, and (with [[identity]]'s content-uuid) cloning itself. Composes with [[deploy]], [[config]], [[harden]], [[jobs]]; declared in `wrangler.jsonc`, consumed via `src/services/cloudflare/` + `@erpax/cloudflare` (see [[plugins]]).
 
 ## Where the knowledge lives (the map)
 | Concern | File |
@@ -14,7 +14,7 @@ erpax runs as a self-managed edge app: each Cloudflare binding is a capability A
 | Durable Object classes | `src/services/ai/durable-objects.ts` (all 5) |
 | CF mediator / env access | `src/services/cloudflare/` (`plugin-helper.ts`, `index.ts`) |
 | OpenNext worker entry | `open-next.config.ts` (`defineCloudflareConfig`) |
-| publishable wrapper | `@erpax/plugin-cloudflare` (monorepo) |
+| publishable wrapper | `@erpax/cloudflare` (monorepo) |
 
 ## Binding inventory → capability → cost lever
 | Binding | CF primitive | erpax capability | efficiency / cost lever |
@@ -32,7 +32,7 @@ erpax runs as a self-managed edge app: each Cloudflare binding is a capability A
 | `HYPERDRIVE_*` / `CF_MTLS_*` | Hyperdrive / mTLS | external PG pool / qualified seals | declared but commented (future) |
 
 ## Crucial binding gaps (the chain-breaks)
-- **DO classes not exported from the worker.** All 5 classes exist + are exported in `src/services/ai/durable-objects.ts`, but the OpenNext worker entry never **re-exports** them, so `workerd` warns "no such Durable Object class is exported from the worker" and the bindings fail at runtime. Fix: re-export the DO classes from the worker's main module (OpenNext additional-exports). This is what blocks quota metering (self-management) and `ErpaxStateDO` (self-cloning).
+- **DO classes not exported from the worker.** All 5 classes exist + are exported in `src/services/ai/durable-objects.ts`, but `main` is the OpenNext-generated `.open-next/worker.js`, which does not re-export them, so `workerd` warns "no such Durable Object class is exported from the worker" and the bindings fail at runtime. A DO must be a **named export of the `main` entry** — a side-effect `import '@/workers'` from the boot path canNOT add exports to the entry (that hand-rolled hack was removed). Fix the **conventional** way: per `@opennextjs/cloudflare` Durable-Objects docs, not a bespoke re-export file. This is what blocks quota metering (self-management) and `ErpaxStateDO` (self-cloning).
 - **DO base class:** new runtime expects `class X extends DurableObject` (from `cloudflare:workers`); plain classes warn. Align when wiring exports.
 - **Queue consumers:** producers are declared; confirm each `QUEUE_*` has a consumer handler or messages pile up.
 

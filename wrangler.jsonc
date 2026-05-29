@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "main": ".open-next/worker.js",
+  "main": "worker.ts",
   "name": "erpax",
   "account_id": "833ef8eaf4ae2d917549f76765477475",
   "compatibility_date": "2025-08-15",

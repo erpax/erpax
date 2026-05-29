@@ -226,6 +226,26 @@ export const COUNTRY_APIS: Readonly<Record<string, ReadonlyArray<CountryApi>>> =
       description: 'BNB daily currency fixing rates against BGN — IAS-21 revaluation anchor.',
       clientImplemented: true,
     },
+    {
+      // UniCredit Bulbank PSD2 XS2A — Berlin Group NextGenPSD2. AIS
+      // (accounts/balances/transactions → BankTransactions/BankStatements
+      // for reconciliation) + PIS (payment initiation). The country bank
+      // API in the cascade: country (UniCredit BG) → regional (Berlin
+      // Group EU) → universal. Credentials (PSD2 client id/secret + eIDAS
+      // QWAC/QSeal) are DB-stored per tenant, post-quantum/uuid-encrypted
+      // (services/beyond/pqc), resolved via tenantRemoteSecrets — only
+      // PAYLOAD_SECRET is env. Client lands in a follow-on batch.
+      kind: 'open_banking',
+      name: 'UniCredit Bulbank PSD2 XS2A',
+      authority: 'UniCredit Bulbank (Berlin Group NextGenPSD2)',
+      endpoint: 'https://developer.xs2a.unicreditbank.lu',
+      auth: 'mtls',
+      format: 'json',
+      documentation: 'https://developer.xs2a.unicreditbank.lu/get-started',
+      description:
+        'PSD2 XS2A (Berlin Group): AIS accounts/balances/transactions + PIS payment initiation; per-tenant base + eIDAS creds resolved from DB.',
+      clientImplemented: false,
+    },
     VIES,
     PEPPOL_DIRECTORY,
     EU_SANCTIONS,

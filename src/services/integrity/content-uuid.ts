@@ -126,7 +126,7 @@ function bytesToUuidString(bytes: Buffer): string {
  * raw UUID; the version (5) and variant (RFC 4122) bits are then
  * stamped per the spec.
  */
-function nameUuid(namespaceUuid: string, name: string): string {
+export function nameUuid(namespaceUuid: string, name: string): string {
   // Strip dashes from namespace to recover 16 bytes
   const nsBytes = Buffer.from(namespaceUuid.replace(/-/g, ''), 'hex')
   if (nsBytes.length !== 16) throw new Error(`invalid namespace UUID: ${namespaceUuid}`)
@@ -146,6 +146,21 @@ export const ERPAX_NAMESPACE_ROOT = '6ba7b810-9dad-11d1-80b4-00c04fd430c8' // RF
 /** Derive a stable per-tenant namespace UUID from the tenantId. */
 export function tenantNamespace(tenantId: string): string {
   return nameUuid(ERPAX_NAMESPACE_ROOT, `tenant:${tenantId}`)
+}
+
+/**
+ * The universal projection: ANY value → its content-uuid, requiring no
+ * external state. This is the erpax `String#uuid` — the limit-case of the
+ * Rails string projections (`upper`/`code`/`digits`): each derives a
+ * canonical reduced form of `self`; `uuid` derives the lossless, fixed-size
+ * 128-bit fingerprint. Identity is a pure projection of content — computed
+ * on demand, never invented, never stored. Strings hash directly; any other
+ * value is JCS-canonicalized first, so `sql.uuid`, `path.uuid`, and
+ * `resource.uuid` are all this one call.
+ */
+export function uuid(value: unknown): string {
+  const name = typeof value === 'string' ? value : jcsCanonicalize(value)
+  return nameUuid(ERPAX_NAMESPACE_ROOT, name)
 }
 
 /**

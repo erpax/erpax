@@ -21,7 +21,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { payrollRunPostingHook } from '@/services/accounting/hooks/payroll-run.hook'
+import { payrollRunPostingHook } from './payroll-run.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
 
 const tenant = 'tenant-pr'

@@ -102,7 +102,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
         and: [
           { jurisdiction: { equals: data.taxJurisdiction } },
           { adjustmentDate: {
-              less_than_or_equal: data.taxPeriodEndDate,
+              less_than_equal: data.taxPeriodEndDate,
             } },
         ],
       },

@@ -10,14 +10,6 @@
  * @standard W3C Service Worker §4 (Workers compat)
  */
 
-// Slice UUUUUUUU (2026-05-11) — side-effect import so the OpenNext
-// bundle includes every DO class declared in wrangler.jsonc. Without
-// this, wrangler logs "A DurableObjectNamespace ... is not exported
-// from the worker" for each DO. This file is on the boot path
-// (checkCloudflareBindingsHealthy is called from payload.onInit) so
-// the re-exports are reachable from the entry chunk.
-import '@/workers'
-
 /**
  * The CF env shape ERPax expects when running on Workers. Optional
  * bindings degrade gracefully (e.g. local dev without R2 still works,

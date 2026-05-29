@@ -17,7 +17,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { periodEndAdjustmentPostingHook } from '@/services/accounting/hooks/period-end-adjustment.hook'
+import { periodEndAdjustmentPostingHook } from './period-end-adjustment.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
 
 const tenant = 'tenant-pe'

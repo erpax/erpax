@@ -411,10 +411,10 @@ export async function checkSelfReferentialClosure(_ctx: InvariantContext): Promi
 export async function checkAccountingCollectionsAreTamperProofed(_ctx: InvariantContext): Promise<InvariantResult> {
   try {
     const { TAMPER_PROOF_COLLECTIONS_REGISTRY } = await import('@/services/integrity/tamper-proof-uuid-field')
-    // Import the accounting collections barrel side-effect — every
-    // exported collection file registers itself at module load via
-    // the factory's `injectTamperProofUuid` default.
-    await import('@/collections/accounting')
+    // Import the collections barrel side-effect — every exported
+    // collection file registers itself at module load via the
+    // factory's `injectTamperProofUuid` default.
+    await import('@/collections')
     const registered = [...TAMPER_PROOF_COLLECTIONS_REGISTRY]
     if (registered.length === 0) {
       return warn(

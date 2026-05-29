@@ -60,12 +60,32 @@ export async function findPayloadSubscriptionByStripeId(
 }
 
 /**
+ * Map a Stripe invoice status to the erpax (EN-16931) Invoice status enum.
+ */
+const mapInvoiceStatus = (
+  s: Stripe.Invoice.Status | null | undefined,
+): 'draft' | 'open' | 'paid' | 'cancelled' | 'past_due' => {
+  switch (s) {
+    case 'paid':
+      return 'paid'
+    case 'draft':
+      return 'draft'
+    case 'void':
+      return 'cancelled'
+    case 'uncollectible':
+      return 'past_due'
+    default:
+      return 'open'
+  }
+}
+
+/**
  * DRY pattern: Update subscription status with logging
  */
 export async function updateSubscriptionStatus(
   payload: Payload,
   subscriptionId: string,
-  newStatus: string,
+  newStatus: NonNullable<Subscription['status']>,
   reason: string,
 ): Promise<void> {
   await payload.update({
@@ -73,7 +93,7 @@ export async function updateSubscriptionStatus(
     id: subscriptionId,
     data: {
       status: newStatus,
-      lastStatusChange: new Date(),
+      lastStatusChange: new Date().toISOString(),
       lastStatusChangeReason: reason,
     },
   })
@@ -114,7 +134,7 @@ export async function handleSubscriptionSync(
   }
 
   // Map Stripe status → Payload status
-  const statusMap: Record<string, string> = {
+  const statusMap: Record<string, NonNullable<Subscription['status']>> = {
     trialing: 'trial',
     active: 'active',
     past_due: 'past_due',
@@ -123,12 +143,23 @@ export async function handleSubscriptionSync(
     incomplete_expired: 'cancelled',
   }
 
-  const newStatus = statusMap[stripeSubscription.status] || 'active'
+  const newStatus: NonNullable<Subscription['status']> =
+    statusMap[stripeSubscription.status] || 'active'
+
+  // Stripe v22 (API basil): period dates moved from the Subscription to
+  // its items. Read the first item; store as ISO-8601 strings.
+  const periodItem = stripeSubscription.items.data[0]
+  const periodStart = periodItem
+    ? new Date(periodItem.current_period_start * 1000).toISOString()
+    : undefined
+  const periodEnd = periodItem
+    ? new Date(periodItem.current_period_end * 1000).toISOString()
+    : undefined
 
   if (!payloadSubscription) {
     // Create new subscription
     const plan = await payload.find({
-      collection: 'subscriptionPlans',
+      collection: 'subscription-plans',
       where: { stripePriceId: { equals: stripeSubscription.items.data[0]?.price.id } },
       limit: 1,
     })
@@ -146,13 +177,13 @@ export async function handleSubscriptionSync(
         status: newStatus,
         stripeSubscriptionId: stripeSubscription.id,
         stripeCustomerId: stripeCustomerId,
-        currentPeriodStart: new Date(stripeSubscription.current_period_start * 1000),
-        currentPeriodEnd: new Date(stripeSubscription.current_period_end * 1000),
+        currentPeriodStart: periodStart,
+        currentPeriodEnd: periodEnd,
         trialStartedAt: stripeSubscription.trial_start
-          ? new Date(stripeSubscription.trial_start * 1000)
+          ? new Date(stripeSubscription.trial_start * 1000).toISOString()
           : undefined,
         trialEndsAt: stripeSubscription.trial_end
-          ? new Date(stripeSubscription.trial_end * 1000)
+          ? new Date(stripeSubscription.trial_end * 1000).toISOString()
           : undefined,
       },
     })
@@ -174,8 +205,8 @@ export async function handleSubscriptionSync(
       collection: 'subscriptions',
       id: payloadSubscription.id,
       data: {
-        currentPeriodStart: new Date(stripeSubscription.current_period_start * 1000),
-        currentPeriodEnd: new Date(stripeSubscription.current_period_end * 1000),
+        currentPeriodStart: periodStart,
+        currentPeriodEnd: periodEnd,
       },
     })
   }
@@ -190,67 +221,52 @@ export async function handleInvoiceSync(
 ): Promise<void> {
   const { payload } = context
 
-  // Find subscription first
-  if (!stripeInvoice.subscription) {
+  // Stripe v22 (API basil): invoice.subscription moved to
+  // parent.subscription_details.subscription.
+  const subRef = stripeInvoice.parent?.subscription_details?.subscription
+  const stripeSubId = typeof subRef === 'string' ? subRef : subRef?.id
+  if (!stripeSubId) {
     payload.logger.warn(`Invoice ${stripeInvoice.id} has no subscription`)
     return
   }
 
-  const subscription = await findPayloadSubscriptionByStripeId(
-    payload,
-    stripeInvoice.subscription as string,
-  )
-
+  const subscription = await findPayloadSubscriptionByStripeId(payload, stripeSubId)
   if (!subscription) {
-    payload.logger.warn(
-      `No Payload subscription found for Stripe invoice ${stripeInvoice.id}`,
-    )
+    payload.logger.warn(`No Payload subscription found for Stripe invoice ${stripeInvoice.id}`)
     return
   }
 
-  // Check if invoice exists
+  // The Stripe id lives in the recurring (billing) group, not a flat column.
   const existing = await payload.find({
     collection: 'invoices',
-    where: { stripeInvoiceId: { equals: stripeInvoice.id } },
+    where: { 'recurring.stripeInvoiceId': { equals: stripeInvoice.id } },
     limit: 1,
   })
 
-  const invoiceData = {
-    tenant: subscription.tenant,
-    subscription: subscription.id,
-    stripeInvoiceId: stripeInvoice.id,
-    status: stripeInvoice.status || 'open',
-    amountDue: stripeInvoice.amount_due,
-    amountPaid: stripeInvoice.amount_paid,
-    issuedAt: new Date(stripeInvoice.created * 1000),
-    dueAt: new Date((stripeInvoice.due_date || stripeInvoice.created + 30 * 24 * 60 * 60) * 1000),
-    stripePaymentIntentId: typeof stripeInvoice.payment_intent === 'string'
-      ? stripeInvoice.payment_intent
-      : undefined,
-    items: stripeInvoice.lines.data.map((line) => ({
-      description: line.description || 'Invoice item',
-      unitAmount: line.amount,
-      quantity: 1,
-      periodStart: line.period?.start ? new Date(line.period.start * 1000) : undefined,
-      periodEnd: line.period?.end ? new Date(line.period.end * 1000) : undefined,
-    })),
+  // Webhooks SYNC billing state onto the canonical EN-16931 Invoice; they
+  // never mint one (an accounting invoice requires parties + amounts the
+  // webhook can't supply). Header-level partial update only. Stripe amounts
+  // are integer minor units; map onto the nested groups (see the
+  // `accounting` skill).
+  const billingSync = {
+    typeStatus: { status: mapInvoiceStatus(stripeInvoice.status) },
+    amounts: { totalDue: stripeInvoice.amount_due, totalPaid: stripeInvoice.amount_paid },
+    dates: {
+      issuedAt: new Date(stripeInvoice.created * 1000).toISOString(),
+      dueAt: new Date(
+        (stripeInvoice.due_date || stripeInvoice.created + 30 * 24 * 60 * 60) * 1000,
+      ).toISOString(),
+    },
+    recurring: { subscription: subscription.id, stripeInvoiceId: stripeInvoice.id },
   }
 
   if (existing.docs.length > 0) {
-    // Update existing invoice
-    await payload.update({
-      collection: 'invoices',
-      id: existing.docs[0].id,
-      data: invoiceData,
-    })
+    await payload.update({ collection: 'invoices', id: existing.docs[0].id, data: billingSync })
+    payload.logger.info(`Synced billing state onto invoice for Stripe invoice ${stripeInvoice.id}`)
   } else {
-    // Create new invoice
-    await payload.create({
-      collection: 'invoices',
-      data: invoiceData,
-    })
-
-    payload.logger.info(`Created invoice for Stripe invoice ${stripeInvoice.id}`)
+    payload.logger.warn(
+      `No erpax invoice tagged with Stripe invoice ${stripeInvoice.id}; billing sync skipped (invoices originate from the sales/order flow, not webhooks)`,
+    )
   }
 }
 
@@ -265,7 +281,7 @@ export async function handleInvoicePaid(
 
   const existing = await payload.find({
     collection: 'invoices',
-    where: { stripeInvoiceId: { equals: stripeInvoice.id } },
+    where: { 'recurring.stripeInvoiceId': { equals: stripeInvoice.id } },
     limit: 1,
     depth: 1,
   })
@@ -282,18 +298,18 @@ export async function handleInvoicePaid(
     collection: 'invoices',
     id: invoice.id,
     data: {
-      status: 'paid',
-      paidAt: new Date(),
+      typeStatus: { status: 'paid' },
+      dates: { paidAt: new Date().toISOString() },
     },
   })
 
   // Update subscription to active
-  const subscription = typeof invoice.subscription === 'object'
-    ? invoice.subscription
-    : await payload.findByID({
-        collection: 'subscriptions',
-        id: invoice.subscription,
-      })
+  const subRef = invoice.recurring?.subscription
+  const subscription = !subRef
+    ? null
+    : typeof subRef === 'object'
+      ? subRef
+      : await payload.findByID({ collection: 'subscriptions', id: subRef })
 
   if (subscription) {
     await updateSubscriptionStatus(
@@ -351,7 +367,7 @@ export async function handleInvoicePaymentFailed(
 
   const existing = await payload.find({
     collection: 'invoices',
-    where: { stripeInvoiceId: { equals: stripeInvoice.id } },
+    where: { 'recurring.stripeInvoiceId': { equals: stripeInvoice.id } },
     limit: 1,
     depth: 1,
   })
@@ -367,18 +383,20 @@ export async function handleInvoicePaymentFailed(
     collection: 'invoices',
     id: invoice.id,
     data: {
-      attemptCount: (invoice.attemptCount || 0) + 1,
-      lastAttemptAt: new Date(),
-      lastAttemptError: 'Payment attempt failed',
+      recurring: {
+        attemptCount: (invoice.recurring?.attemptCount ?? 0) + 1,
+        lastAttemptAt: new Date().toISOString(),
+        lastAttemptError: 'Payment attempt failed',
+      },
     },
   })
 
-  const subscription = typeof invoice.subscription === 'object'
-    ? invoice.subscription
-    : await payload.findByID({
-        collection: 'subscriptions',
-        id: invoice.subscription,
-      })
+  const subRef = invoice.recurring?.subscription
+  const subscription = !subRef
+    ? null
+    : typeof subRef === 'object'
+      ? subRef
+      : await payload.findByID({ collection: 'subscriptions', id: subRef })
 
   if (subscription && subscription.status !== 'past_due') {
     await updateSubscriptionStatus(
@@ -389,7 +407,7 @@ export async function handleInvoicePaymentFailed(
     )
   }
 
-  payload.logger.warn(`Invoice ${stripeInvoice.id} payment failed, attempt ${(invoice.attemptCount || 0) + 1}`)
+  payload.logger.warn(`Invoice ${stripeInvoice.id} payment failed, attempt ${(invoice.recurring?.attemptCount ?? 0) + 1}`)
 }
 
 /**
@@ -426,41 +444,40 @@ export async function handleChargeRefunded(
   // We only emit subscription:refunded for charges tied to a subscription
   // invoice. One-off charges (non-subscription) skip — those go through
   // the order:refunded path on the front-of-house orders collection.
-  const invoiceRef = stripeCharge.invoice
-  if (!invoiceRef) {
+  // Stripe v22: Charge.invoice was removed; resolve the local invoice via
+  // the charge's PaymentIntent (stored on the invoice's recurring group).
+  const piRef = stripeCharge.payment_intent
+  const paymentIntentId = typeof piRef === 'string' ? piRef : piRef?.id
+  if (!paymentIntentId) {
     payload.logger.info(
-      `charge.refunded ${stripeCharge.id}: no invoice reference — skipping (likely one-off charge)`,
+      `charge.refunded ${stripeCharge.id}: no payment_intent — skipping (likely one-off charge)`,
     )
     return
   }
-  const invoiceId = typeof invoiceRef === 'string' ? invoiceRef : invoiceRef.id
 
   const matchingInvoices = await payload.find({
     collection: 'invoices',
-    where: { stripeInvoiceId: { equals: invoiceId } },
+    where: { 'recurring.stripePaymentIntentId': { equals: paymentIntentId } },
     limit: 1,
     depth: 1,
   })
   if (!matchingInvoices.docs.length) {
     payload.logger.warn(
-      `charge.refunded ${stripeCharge.id}: invoice ${invoiceId} not found locally`,
+      `charge.refunded ${stripeCharge.id}: invoice for payment_intent ${paymentIntentId} not found locally`,
     )
     return
   }
   const invoice = matchingInvoices.docs[0]
-  const subscription =
-    typeof invoice.subscription === 'object'
-      ? invoice.subscription
-      : invoice.subscription
-        ? await payload.findByID({
-            collection: 'subscriptions',
-            id: invoice.subscription,
-          })
-        : null
+  const subRefC = invoice.recurring?.subscription
+  const subscription = !subRefC
+    ? null
+    : typeof subRefC === 'object'
+      ? subRefC
+      : await payload.findByID({ collection: 'subscriptions', id: subRefC })
 
   if (!subscription) {
     payload.logger.info(
-      `charge.refunded ${stripeCharge.id}: invoice ${invoiceId} has no subscription — emitting nothing (one-off invoice refund)`,
+      `charge.refunded ${stripeCharge.id}: invoice for payment_intent ${paymentIntentId} has no subscription — emitting nothing (one-off invoice refund)`,
     )
     return
   }

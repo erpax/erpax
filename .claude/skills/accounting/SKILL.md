@@ -1,11 +1,11 @@
 ---
 name: accounting
-description: Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything "accountable" polymorphically. The self-sufficient `@erpax/plugin-accounting` archetype.
+description: Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything "accountable" polymorphically. The self-sufficient `@erpax/accounting` archetype.
 ---
 
 # accounting — the universal ledger plugin (anything is accountable)
 
-The archetype self-sufficient `@erpax/plugin-accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[fields]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
+The archetype self-sufficient `@erpax/accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[fields]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
 
 ## Universal collections (generalizing canonical erpax)
 | Collection | erpax/Rails origin | generalization |
@@ -40,8 +40,12 @@ The reason accounting is self-sufficient: a `journal-line` (or audit event) poin
 | `AttachmentConcern` | `upload` relationship (see [[upload]]) |
 | locked-period guard | `fiscal-periods` + write-guard [[hooks]] |
 
+## Concern-heavy documents → nested field-groups (the fractal port)
+A document like `invoices` composes ~40 Rails concerns; in Payload they fold into **nested field-groups** — `typeStatus` · `parties` · `dates` · `amounts` · `billingTax` · `recurring` · `ledger` · `relationships` · `tags`. So access is the **group path**: `typeStatus.status`, `amounts.totalDue`/`totalPaid`/`totalAmount` (EN-16931 names — *not* `amountDue`), `dates.{issuedAt,paidAt,dueAt}`, `recurring.{subscription,periodStart,periodEnd,billingPeriod}`, `ledger.{debitAccount,creditAccount}`. **External-system ids (Stripe `stripeInvoiceId`/`payment_intent`, …) are NOT columns** — they link via [[tags]] (context-keyed, e.g. `context:'stripe:invoice'`): a tag links the erpax invoice to the external multiverse, federated + dedup'd ("anything is taggable"). Deep nesting is itself a future [[tags]] collapse — `(context, tag)` over the groups.
+
 ## Common mistakes
 - A non-accounting collection holding a field INTO accounting (`Customer.arAccount`) — invert it: accounting maps the entity polymorphically.
+- Accessing a concern-composed document by flat paths (`invoice.amountDue`, `invoice.subscription`) — use the nested group path (`invoice.amounts.totalDue`, `invoice.recurring.subscription`); external ids are tags, not fields.
 - Writing an unbalanced entry, or editing balance directly — enforce `Σdebit=Σcredit` in `beforeChange`; never edit migrations/schema by hand.
 - Hand-rolling a `tenant` field instead of using the multi-tenant plugin (duplicate-field clash).
 - Integer-cents-only without `currency` — carry currency everywhere (multi-currency ledgers).

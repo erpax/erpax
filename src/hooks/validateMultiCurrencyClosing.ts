@@ -131,7 +131,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
           and: [
             { transactionCurrency: { equals: currency } },
             { reportingCurrency: { equals: reportingCurrency } },
-            { effectiveDate: { less_than_or_equal: data.closingDate } },
+            { effectiveDate: { less_than_equal: data.closingDate } },
           ],
         },
         sort: '-effectiveDate',

@@ -12,6 +12,8 @@ import { mcpPlugin } from '@payloadcms/plugin-mcp'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { r2Storage } from '@payloadcms/storage-r2'
 import { contentUuidPlugin } from './plugins/contentUuid'
+import { taggablePlugin } from './plugins/taggable'
+import { uuidNamesPlugin } from './plugins/naming'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -244,6 +246,15 @@ const {
   LegalEntities,
   AiSuggestions,
   UsageRecords,
+  // Tagging system (anything is taggable)
+  Tags,
+  Taggings,
+  // Close-side analysis & compliance (wired-in orphans)
+  Consolidations,
+  TaxPeriods,
+  AuditReports,
+  TransferPricingAdjustments,
+  PostCloseAnalyticsReports,
 } = allCollections
 import type { CollectionConfig } from 'payload'
 import { Footer } from './components/Footer/config'
@@ -561,6 +572,9 @@ export default buildConfig({
     ProductionReceipts,
     QualityInspections,
     WipSnapshots,
+    // Tagging system (anything is taggable — less collections, more features)
+    Tags,
+    Taggings,
     // Facilities & Resources (6)
     Properties,
     Spaces,
@@ -665,6 +679,12 @@ export default buildConfig({
     LegalEntities,
     AiSuggestions,
     UsageRecords,
+    // Close-side analysis & compliance (wired-in orphans — referenced by validate* hooks)
+    Consolidations,
+    TaxPeriods,
+    AuditReports,
+    TransferPricingAdjustments,
+    PostCloseAnalyticsReports,
   ],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
@@ -682,6 +702,9 @@ export default buildConfig({
         posts: {},
         media: {},
         categories: {},
+        // Tagging system
+        tags: {},
+        taggings: {},
         // Ecommerce Collections
         products: {},
         carts: {},
@@ -909,6 +932,12 @@ export default buildConfig({
         'contract-amendments': {},
         'contract-signatures': {},
         'contract-performance': {},
+        // Close-side analysis & compliance (wired-in orphans)
+        consolidations: {},
+        'tax-periods': {},
+        'audit-reports': {},
+        'transfer-pricing-adjustments': {},
+        'post-close-analytics-reports': {},
       },
       tenantField: {
         defaultValue: async ({ req }) => {
@@ -944,8 +973,12 @@ export default buildConfig({
       userHasAccessToAllTenants: (user) => isSuperAdmin(user),
     }),
     importExportPlugin({
-      /** Empty list = enable import/export UI on every collection (see plugin runtime). */
-      collections: [],
+      // Every collection gets CSV/JSON import + export — derived from the
+      // barrel, not hand-listed. (The plugin only adds I/O to the slugs it
+      // is given; an empty list would disable it everywhere.)
+      collections: (Object.values(allCollections) as Array<{ slug: string }>).map((c) => ({
+        slug: c.slug,
+      })),
       overrideExportCollection: ({ collection }) => ({
         ...collection,
         access: {
@@ -972,6 +1005,10 @@ export default buildConfig({
         media: { enabled: true },
         categories: { enabled: true },
         products: { enabled: true },
+        // The memory store — the gateway opens onto it so agents persist
+        // sessions as documents (relatedTo edges reference everything;
+        // contentUuid addresses them). "The MCP is the gateway."
+        memories: { enabled: true },
       },
       globals: {
         header: { enabled: true },
@@ -989,10 +1026,20 @@ export default buildConfig({
         },
       }),
     }),
+    // Make every collection taggable — one polymorphic `taggings` join +
+    // a reverse `tags` join injected everywhere. Before contentUuidPlugin
+    // so the injected `taggable` field is hashed into the tagging's uuid.
+    // See the `tags` skill.
+    taggablePlugin(),
     // Universal content-addressed identity: inject a content-uuid into
     // every collection. Runs LAST so it covers collections added by the
     // plugins above. See the `identity` + `bindings` skills.
     contentUuidPlugin(),
+    // Every internal table/enum name is a content-uuid of its path — fixed
+    // length, so it can never overflow SQLite's 63-char limit. Names are
+    // derived, never invented; references (collection slugs, field names)
+    // keep their words. Runs last to cover all assembled fields. See `database`.
+    uuidNamesPlugin(),
   ],
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
