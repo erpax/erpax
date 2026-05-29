@@ -456,6 +456,13 @@ export default buildConfig({
     } catch {
       // Never refuse boot on order-fiscalization wiring failure.
     }
+    // Fiscalize each card-charged subscription period into a касов бон.
+    try {
+      const { wireSubscriptionFiscalizationSubscriber } = await import('@/services/sales/subscription-fiscalization')
+      wireSubscriptionFiscalizationSubscriber(payload)
+    } catch {
+      // Never refuse boot on subscription-fiscalization wiring failure.
+    }
   },
   db: sqliteD1Adapter({
     binding: (await getCloudflare()).env.D1,
