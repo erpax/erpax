@@ -115,7 +115,7 @@ export const bankStatementImportedHook: CollectionAfterChangeHook = async ({
     eventId: uuid(),
     eventType: 'bank:statement:imported',
     tenantId,
-    aggregateId: String(doc.id),
+    aggregateId: String((doc as { uuid?: unknown }).uuid ?? doc.id),
     aggregateType: 'bank_statement',
     timestamp: new Date(),
     userId,

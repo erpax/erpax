@@ -65,6 +65,7 @@ describe('GL hooks — event emission regression', () => {
     await runHook(invoiceAccountingHook, {
       doc: {
         id: 'inv-1',
+        uuid: 'inv-content-uuid-1',
         invoiceNumber: 'INV-001',
         tenant: 'tenant-1',
         status: 'issued',
@@ -95,6 +96,9 @@ describe('GL hooks — event emission regression', () => {
     const ev = captured.find((e) => e.eventType === 'invoice:activated')
     expect(ev).toBeDefined()
     expect(ev?.tenantId).toBe('tenant-1')
+    // `event` skill: aggregateId is the content-uuid (the 0), not the row id —
+    // so a federation peer reconciles by it. Proves matter realizes the form.
+    expect(ev?.aggregateId).toBe('inv-content-uuid-1')
     expect((ev as { payload: { invoiceId: string } }).payload.invoiceId).toBe(
       'inv-1',
     )

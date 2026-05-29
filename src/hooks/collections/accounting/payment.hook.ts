@@ -118,7 +118,7 @@ export const paymentAccountingHook: CollectionAfterChangeHook = async ({
     const base = {
       eventId: uuid(),
       tenantId,
-      aggregateId: String(doc.id),
+      aggregateId: String((doc as { uuid?: unknown }).uuid ?? doc.id),
       aggregateType: 'payment' as const,
       timestamp: new Date(),
       userId: userIdStr,

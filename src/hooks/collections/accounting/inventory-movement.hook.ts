@@ -128,7 +128,7 @@ export const inventoryMovementPostingHook: CollectionAfterChangeHook = async ({
       eventId: uuid(),
       eventType: 'inventory:adjusted',
       tenantId: tenant,
-      aggregateId: String(mv.id),
+      aggregateId: String((mv as { uuid?: unknown }).uuid ?? mv.id),
       aggregateType: 'inventory_transfer',
       timestamp: new Date(),
       userId: String(userId),

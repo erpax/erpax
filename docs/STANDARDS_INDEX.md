@@ -1772,7 +1772,6 @@ src/services/self-closure/types.ts:49: * @standard ISO 27001 Annex A.17 informat
 src/services/self-closure/types.ts:50: * @standard NIST SP 800-34 Rev. 1 §3.4 contingency planning
 src/services/self-closure/types.ts:51: * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
 src/services/self-reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness (self-coherence)
-src/services/shared/aging.service.ts:9: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/services/signal/index.ts:16: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
 src/services/spec-generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/spec-generator/e2e-spec-extractor.ts:24: * @standard ISO/IEC-29119:2022 software-testing test-evidence
@@ -4063,11 +4062,6 @@ src/services/receivables/analytics.service.ts:6: * @accounting US-GAAP ASC-310 r
 src/services/receivables/workflow.service.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/services/receivables/workflow.service.ts:8: * @accounting IFRS IFRS-9 written_off impairment
 src/services/receivables/workflow.service.ts:9: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/services/shared/aging.service.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss aging-buckets
-src/services/shared/aging.service.ts:11: * @accounting IFRS IAS-37 provisions-contingent-liabilities
-src/services/shared/aging.service.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
-src/services/shared/aging.service.ts:13: * @accounting US-GAAP ASC-310 receivables
-src/services/shared/aging.service.ts:14: * @accounting US-GAAP ASC-405 liabilities
 src/services/spec-generator/extractor.ts:14: *   @accounting    <body> <id> [free-text]      ← alias for @standard
 src/services/tax-automation.service.ts:20: * @accounting OECD SAF-T tax-table
 src/standards/_money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
@@ -5208,7 +5202,6 @@ src/services/self-closure/providers/search.ts:27: * @audit Conservation Law 53 s
 src/services/self-closure/providers/signing.ts:58: * @audit Conservation Law 53 self-referential-closure
 src/services/self-closure/types.ts:52: * @audit Conservation Law 53 self-referential-closure
 src/services/self-reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
-src/services/shared/aging.service.ts:15: * @audit ISO-19011:2018 audit-trail
 src/services/spec-generator/chain-registry-generator.ts:17: * @audit ISO 19011:2018 §6.4.6 spec-traceability
 src/services/spec-generator/e2e-spec-extractor.ts:26: * @audit single-source-of-truth: spec ↔ generated captions
 src/services/spec-generator/evidence-collector.ts:41: * @audit ISO-27001 A.5.36 conformance-with-policies
