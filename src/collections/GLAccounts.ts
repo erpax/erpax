@@ -85,6 +85,11 @@ const GLAccounts: CollectionConfig = {
         { label: 'Deferred Revenue', value: 'deferred_revenue' },
         { label: 'Subscription Revenue', value: 'subscription_revenue' },
         { label: 'Refunds Payable', value: 'refunds_payable' },
+        // IFRS 16 / ASC 842 lease accounts.
+        { label: 'Lease Interest Expense', value: 'lease_interest_expense' },
+        { label: 'Lease Liability', value: 'lease_liability' },
+        { label: 'ROU Amortisation Expense', value: 'rou_amortisation_expense' },
+        { label: 'Accumulated ROU Amortisation', value: 'accumulated_rou_amortisation' },
       ],
       admin: {
         description: 'Canonical accounting role — gl-posting handlers resolve this to the actual account ID via `resolveGlAccount`.',

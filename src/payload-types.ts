@@ -1987,6 +1987,10 @@ export interface GlAccount {
         | 'deferred_revenue'
         | 'subscription_revenue'
         | 'refunds_payable'
+        | 'lease_interest_expense'
+        | 'lease_liability'
+        | 'rou_amortisation_expense'
+        | 'accumulated_rou_amortisation'
       )
     | null;
   /**
@@ -3530,7 +3534,8 @@ export interface JournalEntry {
     | 'bank_reconciliation'
     | 'period_end_adjustment'
     | 'tax_calculation'
-    | 'currency_adjustment';
+    | 'currency_adjustment'
+    | 'lease_period';
   sourceId?: string | null;
   sourceEvent?: string | null;
   createdBy?: (string | null) | User;

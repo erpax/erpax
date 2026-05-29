@@ -13,6 +13,16 @@
  *
  * Σ debits = Σ credits invariant holds for any non-trivial split.
  *
+ * Why mocks for journalEntryService + resolveGlAccount: the hook's job
+ * is to convert the lease-period doc into the right balanced JE shape
+ * and link it back. The downstream service writes through real Payload
+ * to a real DB; the test exercises the hook's mapping, not the DB
+ * round-trip (that path is covered by the JournalEntries collection's
+ * own beforeValidate/beforeChange hook suite). Per Conservation Law
+ * note in payload.config.ts:477, dev push is off in test mode and the
+ * migrate path has known drift, so booting Payload here would be both
+ * slow and unreliable for a logic test.
+ *
  * @standard ISO/IEC-29119:2022 software-testing
  * @accounting IFRS IFRS-16 §29-§31 §36-§38 leases
  * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
@@ -20,9 +30,10 @@
  * @see src/plugins/accounting/hooks/lease-period-posting.hook.ts
  */
 
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { leasePeriodPostingHook } from './lease-period-posting.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
+import * as glResolver from '@/services/gl-account-resolver'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
 type HookArgs = Parameters<typeof leasePeriodPostingHook>[0]
@@ -47,6 +58,80 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
       },
     },
   }) as unknown as never
+
+// Capture the lines the hook hands to journalEntryService.createEntry,
+// without actually persisting. createEntry returns a synthetic JE row
+// the hook stores as `journalEntry`; getEntry serves it back to test
+// assertions; postEntry just marks it posted.
+interface CapturedEntry {
+  tenantId: string
+  description: string
+  lines: Array<{
+    accountId: string
+    debit?: number
+    credit?: number
+    description: string
+    costCenterId?: string
+  }>
+  sourceType: string
+  sourceId: string
+  sourceEvent: string
+  status: 'draft' | 'posted'
+}
+const store = new Map<string, CapturedEntry>()
+let seq = 0
+
+beforeEach(() => {
+  store.clear()
+  seq = 0
+  vi.spyOn(journalEntryService, 'createEntry').mockImplementation(
+    async (tenantId, req) => {
+      const id = `JE-FAKE-${++seq}`
+      store.set(id, {
+        tenantId,
+        description: req.description,
+        lines: req.lines.map((l) => ({ ...l })),
+        sourceType: req.sourceType,
+        sourceId: req.sourceId,
+        sourceEvent: req.sourceEvent,
+        status: 'draft',
+      })
+      return { id, lines: req.lines, status: 'draft' } as unknown as Awaited<
+        ReturnType<typeof journalEntryService.createEntry>
+      >
+    },
+  )
+  vi.spyOn(journalEntryService, 'postEntry').mockImplementation(
+    async (_tenantId, id) => {
+      const e = store.get(id)
+      if (e) e.status = 'posted'
+      return { id, status: 'posted' } as unknown as Awaited<
+        ReturnType<typeof journalEntryService.postEntry>
+      >
+    },
+  )
+  vi.spyOn(journalEntryService, 'getEntry').mockImplementation(
+    async (_tenantId, id) => {
+      const e = store.get(id)
+      if (!e) return null
+      return {
+        id,
+        tenantId: e.tenantId,
+        lines: e.lines,
+        status: e.status,
+        description: e.description,
+        sourceType: e.sourceType,
+        sourceId: e.sourceId,
+        sourceEvent: e.sourceEvent,
+      } as unknown as Awaited<ReturnType<typeof journalEntryService.getEntry>>
+    },
+  )
+  // The resolver normally hits gl-accounts; mock it to return the role
+  // name itself (the legacy-fallback shape) so assertions stay readable.
+  vi.spyOn(glResolver, 'resolveGlAccount').mockImplementation(
+    async (_payload, _tenant, role) => role,
+  )
+})
 
 describe('Lease period posting — status → posted', () => {
 
@@ -75,7 +160,6 @@ describe('Lease period posting — status → posted', () => {
       collection: undefined as never,
       context: {} as never,
     })
-    await new Promise((r) => setTimeout(r, 0))
 
     const linkedJeId = (captured.data as { journalEntry?: string })?.journalEntry
     expect(linkedJeId).toBeDefined()
@@ -139,7 +223,6 @@ describe('Lease period posting — status → posted', () => {
       collection: undefined as never,
       context: {} as never,
     })
-    await new Promise((r) => setTimeout(r, 0))
     const linkedJeId = (captured.data as { journalEntry?: string })?.journalEntry
     const entry = await journalEntryService.getEntry(tenant, String(linkedJeId))
     expect(entry).toBeDefined()
@@ -189,7 +272,6 @@ describe('Lease period posting — status → posted', () => {
       collection: undefined as never,
       context: {} as never,
     })
-    await new Promise((r) => setTimeout(r, 0))
     const linkedJeId = (captured.data as { journalEntry?: string })?.journalEntry
     const entry = await journalEntryService.getEntry(tenant, String(linkedJeId))
     // Just two lines: Dr ROU Amort Exp 4,626.60 / Cr Acc. ROU Amort 4,626.60.
@@ -216,7 +298,6 @@ describe('Lease period posting — status → posted', () => {
       collection: undefined as never,
       context: {} as never,
     })
-    await new Promise((r) => setTimeout(r, 0))
     expect(captured.id).toBeUndefined()
   })
 
@@ -239,7 +320,6 @@ describe('Lease period posting — status → posted', () => {
       collection: undefined as never,
       context: {} as never,
     })
-    await new Promise((r) => setTimeout(r, 0))
     expect(captured.id).toBeUndefined()
   })
 
@@ -262,7 +342,6 @@ describe('Lease period posting — status → posted', () => {
       collection: undefined as never,
       context: {} as never,
     })
-    await new Promise((r) => setTimeout(r, 0))
     expect(captured.id).toBeUndefined()
   })
 })

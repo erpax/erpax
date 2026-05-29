@@ -1020,7 +1020,7 @@ src/hooks/collections/accounting/bank-statement.hook.ts:24: * @standard ISO-8601
 src/hooks/collections/accounting/depreciation.hook.ts:23: * @standard ISO-8601-1:2019 date-time depreciation-period
 src/hooks/collections/accounting/gl-hooks-emit-events.test.ts:13: * @standard ISO/IEC-29119:2022 software-testing
 src/hooks/collections/accounting/inventory-adjusted-event.test.ts:11: * @standard ISO/IEC-29119:2022 software-testing
-src/hooks/collections/accounting/lease-period-posting.hook.test.ts:16: * @standard ISO/IEC-29119:2022 software-testing
+src/hooks/collections/accounting/lease-period-posting.hook.test.ts:26: * @standard ISO/IEC-29119:2022 software-testing
 src/hooks/collections/accounting/lease-period-posting.hook.ts:32: * @standard ISO-8601-1:2019 date-time period-end posted-at
 src/hooks/collections/accounting/lease-service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/hooks/collections/accounting/payment.hook.ts:31: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
@@ -3982,8 +3982,8 @@ src/hooks/collections/accounting/invoice.hook.ts:22: * @accounting US-GAAP ASC-3
 src/hooks/collections/accounting/invoice.hook.ts:23: * @accounting US-GAAP ASC-330 inventory cogs-recognition
 src/hooks/collections/accounting/item.hook.ts:18: * @accounting IFRS IAS-2 inventories
 src/hooks/collections/accounting/item.hook.ts:19: * @accounting US-GAAP ASC-330 inventory cost-flow
-src/hooks/collections/accounting/lease-period-posting.hook.test.ts:17: * @accounting IFRS IFRS-16 §29-§31 §36-§38 leases
-src/hooks/collections/accounting/lease-period-posting.hook.test.ts:18: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
+src/hooks/collections/accounting/lease-period-posting.hook.test.ts:27: * @accounting IFRS IFRS-16 §29-§31 §36-§38 leases
+src/hooks/collections/accounting/lease-period-posting.hook.test.ts:28: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
 src/hooks/collections/accounting/lease-period-posting.hook.ts:29: * @accounting IFRS IFRS-16 §29-§31 rou-asset-subsequent-measurement
 src/hooks/collections/accounting/lease-period-posting.hook.ts:30: * @accounting IFRS IFRS-16 §36-§38 lease-liability-amortised-cost
 src/hooks/collections/accounting/lease-period-posting.hook.ts:31: * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
@@ -5043,7 +5043,7 @@ src/hooks/collections/accounting/inventory-adjusted-event.test.ts:14: * @audit I
 src/hooks/collections/accounting/inventory-movement.hook.ts:20: * @audit ISO-19011:2018 audit-trail stock-ledger-evidence
 src/hooks/collections/accounting/invoice.hook.ts:24: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/hooks/collections/accounting/item.hook.ts:20: * @audit ISO-19011:2018 audit-trail
-src/hooks/collections/accounting/lease-period-posting.hook.test.ts:19: * @audit ISO-19011:2018 audit-trail
+src/hooks/collections/accounting/lease-period-posting.hook.test.ts:29: * @audit ISO-19011:2018 audit-trail
 src/hooks/collections/accounting/lease-period-posting.hook.ts:33: * @audit ISO-19011:2018 audit-trail period-evidence
 src/hooks/collections/accounting/lease-service.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/hooks/collections/accounting/payment.hook.ts:37: * @audit ISO-19011:2018 audit-trail double-entry-posting

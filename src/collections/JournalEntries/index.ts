@@ -121,6 +121,7 @@ const JournalEntries: CollectionConfig = {
         { label: 'Period-End Adjustment', value: 'period_end_adjustment' },
         { label: 'Tax Calculation', value: 'tax_calculation' },
         { label: 'Currency Adjustment', value: 'currency_adjustment' },
+        { label: 'Lease Period', value: 'lease_period' },
       ],
     },
     { name: 'sourceId', type: 'text' },

@@ -51,6 +51,12 @@ export type GlAccountRole =
   | 'deferred_revenue'
   | 'subscription_revenue'
   | 'refunds_payable'
+  // IFRS 16 / ASC 842 lease accounts — the lease-period-posting hook
+  // resolves these per-tenant via this resolver.
+  | 'lease_interest_expense'
+  | 'lease_liability'
+  | 'rou_amortisation_expense'
+  | 'accumulated_rou_amortisation'
 
 /**
  * In-memory per-tenant role → account-id cache. Keyed by tenantId and

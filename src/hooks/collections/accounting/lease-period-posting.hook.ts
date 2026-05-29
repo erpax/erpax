@@ -42,14 +42,21 @@ import {
   journalEntryService,
   type JournalEntryLine,
 } from '@/services/journal-entry.service'
+import {
+  resolveGlAccount,
+  type GlAccountRole,
+} from '@/services/gl-account-resolver'
 
-const ACC = {
+// Canonical roles this hook posts to — resolveGlAccount maps each to
+// the tenant's actual gl-accounts row id at run time (per the project's
+// gl-account resolver pattern, see services/gl-account-resolver.ts).
+const ROLE = {
   INTEREST_EXPENSE: 'lease_interest_expense',
   LEASE_LIABILITY: 'lease_liability',
   CASH: 'cash',
   ROU_AMORTISATION_EXPENSE: 'rou_amortisation_expense',
   ACCUMULATED_ROU_AMORTISATION: 'accumulated_rou_amortisation',
-} as const
+} as const satisfies Record<string, GlAccountRole>
 
 type PostingDoc = Record<string, unknown> & {
   id: string | number
@@ -132,16 +139,27 @@ export const leasePeriodPostingHook: CollectionAfterChangeHook = async ({
     const description = `Lease period ${posting.postingId ?? posting.id}`
     const costCenterId = idOf(posting.costCenter)
 
+    // Per-line overrides on the posting doc win over the canonical role
+    // → tenant-CoA lookup. The lookup is the right default: the role
+    // resolver finds the tenant's actual gl-accounts row for the role
+    // (legacy fallback returns the bare role string for tenants whose
+    // chart of accounts isn't yet populated — non-breaking).
+    const resolve = (role: GlAccountRole) =>
+      resolveGlAccount(req.payload, tenant, role).then((id) => String(id))
     const interestAccount =
-      idOf(posting.interestExpenseAccount) ?? ACC.INTEREST_EXPENSE
+      idOf(posting.interestExpenseAccount) ??
+      (await resolve(ROLE.INTEREST_EXPENSE))
     const liabilityAccount =
-      idOf(posting.leaseLiabilityAccount) ?? ACC.LEASE_LIABILITY
-    const cashAccount = idOf(posting.cashAccount) ?? ACC.CASH
+      idOf(posting.leaseLiabilityAccount) ??
+      (await resolve(ROLE.LEASE_LIABILITY))
+    const cashAccount =
+      idOf(posting.cashAccount) ?? (await resolve(ROLE.CASH))
     const rouAmortAccount =
-      idOf(posting.rouAmortisationAccount) ?? ACC.ROU_AMORTISATION_EXPENSE
+      idOf(posting.rouAmortisationAccount) ??
+      (await resolve(ROLE.ROU_AMORTISATION_EXPENSE))
     const accumulatedRouAccount =
       idOf(posting.accumulatedRouAmortisationAccount) ??
-      ACC.ACCUMULATED_ROU_AMORTISATION
+      (await resolve(ROLE.ACCUMULATED_ROU_AMORTISATION))
 
     const lines: JournalEntryLine[] = []
 
