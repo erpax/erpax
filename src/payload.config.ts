@@ -1162,6 +1162,24 @@ export default buildConfig({
           return { output: { status: 'completed', ...result } }
         },
       },
+      /**
+       * СУПТО monthly audit file — builds each tenant's Наредба Н-18
+       * Приложение-38 standardized audit file for the prior calendar month
+       * (НАП expects it by the 15th). Submission to НАП rides the mTLS
+       * `submitBgSaft` client once the per-deployment cert config is wired.
+       * Recommended cron: `0 6 5 * *` (06:00 on the 5th).
+       *
+       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+       * @audit ISO-19011:2018 §6.4 audit-evidence
+       */
+      {
+        slug: 'supto-audit-file',
+        handler: async ({ req }: { req: PayloadRequest }) => {
+          const { processSuptoAuditFiles } = await import('./jobs/suptoAuditFileJob')
+          const result = await processSuptoAuditFiles(req.payload)
+          return { output: { status: 'completed', ...result } }
+        },
+      },
     ],
     /** Dedicated/long-lived Node only. On Cloudflare Workers use `/api/payload-jobs/run` + Schedules/cron. */
     ...(process.env.PAYLOAD_JOB_AUTORUN === 'true'

@@ -1096,6 +1096,9 @@ src/jobs/dunningJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/jobs/dunningJob.test.ts:9: * @standard EN-16931:2017 dunning-notice
 src/jobs/dunningJob.ts:14: * @standard EN-16931:2017 dunning-notice
 src/jobs/dunningJob.ts:15: * @standard ISO-8601-1:2019 date-time pastDueSinceAt gracePeriodEndsAt
+src/jobs/suptoAuditFileJob.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/jobs/suptoAuditFileJob.test.ts:5: * @standard BG Наредба-Н-18 §Приложение-38
+src/jobs/suptoAuditFileJob.ts:11: * @standard BG Наредба-Н-18 §Приложение-38 monthly-audit-file
 src/payload.config.api.test.ts:10: * @standard OpenAPI 3.1 api-description
 src/payload.config.api.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.multi-tenant-admin.test.ts:10: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -1106,6 +1109,7 @@ src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-tes
 src/payload.config.ts:1134:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
 src/payload.config.ts:1152:       * @standard ISO-3166-1:2020 BG country-code
 src/payload.config.ts:1153:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1172:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -5006,9 +5010,11 @@ src/hooks/validateAddress.ts:25: * @audit ISO-19011:2018 audit-trail address-val
 src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
+src/jobs/suptoAuditFileJob.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
 src/payload.config.ts:1135:       * @audit ISO-19011:2018 audit-trail dunning-cycle
 src/payload.config.ts:1155:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1173:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant

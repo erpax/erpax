@@ -1246,6 +1246,7 @@ export interface Config {
     tasks: {
       'dunning-cycle': TaskDunningCycle;
       'bg-bnb-rates-sync': TaskBgBnbRatesSync;
+      'supto-audit-file': TaskSuptoAuditFile;
       createCollectionExport: TaskCreateCollectionExport;
       createCollectionImport: TaskCreateCollectionImport;
       schedulePublish: TaskSchedulePublish;
@@ -21340,6 +21341,7 @@ export interface PayloadJob {
           | 'inline'
           | 'dunning-cycle'
           | 'bg-bnb-rates-sync'
+          | 'supto-audit-file'
           | 'createCollectionExport'
           | 'createCollectionImport'
           | 'schedulePublish';
@@ -21380,6 +21382,7 @@ export interface PayloadJob {
         | 'inline'
         | 'dunning-cycle'
         | 'bg-bnb-rates-sync'
+        | 'supto-audit-file'
         | 'createCollectionExport'
         | 'createCollectionImport'
         | 'schedulePublish'
@@ -30517,6 +30520,14 @@ export interface TaskDunningCycle {
  * via the `definition` "TaskBg-bnb-rates-sync".
  */
 export interface TaskBgBnbRatesSync {
+  input?: unknown;
+  output?: unknown;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskSupto-audit-file".
+ */
+export interface TaskSuptoAuditFile {
   input?: unknown;
   output?: unknown;
 }
