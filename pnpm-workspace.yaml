@@ -27,3 +27,6 @@ peerDependencyRules:
   allowedVersions:
     '@tailwindcss/typography>tailwindcss': '4'
     'mcp-handler>@modelcontextprotocol/sdk': '1'
+
+patchedDependencies:
+  '@payloadcms/drizzle@4.0.0-internal.38b7f1d': patches/@payloadcms__drizzle@4.0.0-internal.38b7f1d.patch

@@ -1,0 +1,17 @@
+diff --git a/dist/utilities/buildCreateMigration.js b/dist/utilities/buildCreateMigration.js
+index 4ca33b2558495970ac1ba2246d62bc54e70bc980..e6c4e855b948c1096180d62c223244ba237a8cd3 100644
+--- a/dist/utilities/buildCreateMigration.js
++++ b/dist/utilities/buildCreateMigration.js
+@@ -75,8 +75,10 @@ export const buildCreateMigration = ({ executeMethod, filename, sanitizeStatemen
+             };
+         }
+         if (!upSQL) {
+-            // Get latest migration snapshot
+-            const latestSnapshot = fs.readdirSync(dir).filter((file)=>file.endsWith('.json')).sort().reverse()?.[0];
++            // Get latest migration snapshot — exclude the Payload data-migration
++            // config snapshot (payload-config-snapshot.json), which is NOT a
++            // drizzle schema snapshot and would fail drizzle-kit's zod parse.
++            const latestSnapshot = fs.readdirSync(dir).filter((file)=>file.endsWith('.json') && file !== 'payload-config-snapshot.json').sort().reverse()?.[0];
+             if (latestSnapshot) {
+                 drizzleJsonBefore = JSON.parse(fs.readFileSync(`${dir}/${latestSnapshot}`, 'utf8'));
+                 if (upSnapshot && drizzleJsonBefore.version < drizzleJsonAfter.version) {
