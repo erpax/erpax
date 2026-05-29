@@ -1530,8 +1530,8 @@ src/services/currency-fallback/currency-uuid.ts:57: * @standard RFC 4122 §4.3 u
 src/services/currency-fallback/currency-uuid.ts:58: * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
 src/services/currency-fallback/currency-uuid.ts:59: * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
 src/services/currency-fallback/index.test.ts:19: * @standard ISO 4217 §6.5 "No currency" (XXX numeric 999)
-src/services/currency-fallback/index.ts:441: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
-src/services/currency-fallback/index.ts:442: * @standard IAS 21 §38 presentation-currency translation
+src/services/currency-fallback/index.ts:449: * @standard IFRS 7 §22 fair-value hierarchy (each quote's source maps to a level)
+src/services/currency-fallback/index.ts:450: * @standard IAS 21 §38 presentation-currency translation
 src/services/currency-fallback/index.ts:56: * @standard ISO 4217 §6.5 "No currency" — code XXX, numeric 999
 src/services/currency-fallback/index.ts:57: * @standard EN 16931 §BG-7 currency-code element (XXX accepted)
 src/services/currency-fallback/index.ts:58: * @standard ISO 20022 pacs.008.001.10 §Ccy attribute (XXX accepted)

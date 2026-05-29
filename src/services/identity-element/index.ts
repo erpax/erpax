@@ -58,6 +58,7 @@
 
 import { computeContentUuid } from '@/services/integrity/content-uuid'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
+import { requireSafetyMode } from '@/services/safety-mode'
 
 /**
  * Declarative definition of a categorical slot's identity element.
@@ -113,10 +114,10 @@ export function registerIdentitySlot<C extends string>(
         `[identity-element] slot '${def.slot}' already registered (blank=${REGISTRY.get(def.slot)!.blank}). Pass { replace: true } to override.`,
       )
     }
-    // Lazy import to avoid circular module-load between identity-element
-    // and safety-mode (both load at boot, safety-mode has no deps).
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+    // safety-mode is a pure leaf (no imports, no side effects), so a
+    // static top-level import has the same behavior as the prior lazy
+    // require — and vitest's tsconfigPaths resolves `@/` only for
+    // `import`, not for CJS `require()`.
     requireSafetyMode(['test', 'dev'], `registerIdentitySlot('${def.slot}', { replace: true })`)
   }
   REGISTRY.set(def.slot, def as unknown as IdentitySlotDef<string>)
@@ -134,8 +135,6 @@ export function listIdentitySlots(): ReadonlyArray<IdentitySlotDef> {
 
 /** Test-only: clear the registry. Production-mode invocations throw. */
 export function __resetIdentitySlotRegistryForTests(): void {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
   requireSafetyMode(['test', 'dev'], '__resetIdentitySlotRegistryForTests')
   REGISTRY.clear()
 }

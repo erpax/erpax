@@ -47,6 +47,7 @@ import type {
   FallbackContext,
   FallbackOutcome,
 } from './types'
+import { requireSafetyMode } from '@/services/safety-mode'
 
 export type {
   ExternalRole,
@@ -81,8 +82,6 @@ export function registerInternalProvider<P, R>(
       )
     }
     // Slice RRRRRRRRR-cut1 — escape hatch guarded by safety mode.
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
     requireSafetyMode(['test', 'dev'], `registerInternalProvider('${provider.role}', { replace: true })`)
   }
   REGISTRY.set(provider.role, provider)
@@ -185,8 +184,6 @@ export async function withInternalFallback<TParams, TResult>(args: {
  * mode rejects this call; test/dev admit it.
  */
 export function __resetInternalProviderRegistryForTests(): void {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
   requireSafetyMode(['test', 'dev'], '__resetInternalProviderRegistryForTests')
   REGISTRY.clear()
 }

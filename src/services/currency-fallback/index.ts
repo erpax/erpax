@@ -67,6 +67,7 @@
 import { SUPPORTED_CURRENCIES } from '@/config/regional-defaults'
 import type { Currency } from '@/config/regional-defaults'
 import { CURRENCY_DECIMALS } from '@/config/country-specifics'
+import { requireSafetyMode } from '@/services/safety-mode'
 
 /** The canonical "blank currency" — ISO 4217 §6.5 No currency. */
 export const BLANK_CURRENCY = 'XXX' as const
@@ -278,9 +279,11 @@ export function getDefaultRateProvider(): RealtimeRateProvider {
 export function setDefaultRateProvider(p: RealtimeRateProvider): void {
   // Slice RRRRRRRRR-cut1 — guarded escape hatch. Production wires the
   // exchange-rates collection provider at boot; runtime swaps are
-  // test-only (Conservation Law 58).
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
+  // test-only (Conservation Law 58). The guard runs at CALL time
+  // (reads ERPAX_SAFETY_MODE / NODE_ENV via getSafetyMode), so a
+  // static top-level import is equivalent to the previous lazy
+  // `require()` — and the alias resolves under vitest's tsconfigPaths
+  // plugin only for `import`, not for CJS `require()`.
   requireSafetyMode(['test', 'dev'], 'setDefaultRateProvider')
   _defaultRateProvider = p
 }
@@ -405,7 +408,12 @@ export interface AggregationResult {
     readonly convertedBalance: number
     readonly quote: RateQuote
   }>
-  /** True if any conversion fell back to `source: 'identity'`. */
+  /**
+   * True if any conversion fell back to `source: 'identity'` because a
+   * real quote was unobtainable — XXX (blank) on either side or the
+   * provider failed. Same-currency identity (EUR→EUR) is a trivial
+   * no-op and does NOT set this flag.
+   */
   readonly hasIdentityFallback: boolean
   /** ISO 8601 — moment of aggregation. */
   readonly asOf: string
@@ -459,7 +467,18 @@ export async function aggregateBalancesAcrossCurrencies(
   }> = []
   for (const w of wallets) {
     const converted = await convertMoney(w.balance, w.currency, presentation, { ...ctx, asOf })
-    if (converted.quote.source === 'identity') hasIdentityFallback = true
+    // "Fallback" means the rate degraded to identity because a real
+    // quote was unobtainable — XXX (blank) on either side, or the
+    // provider failed. Same-currency conversions (EUR→EUR) are also
+    // `source: 'identity'` per realtimeRate, but they're trivial
+    // no-ops, not fallbacks; exclude them so the flag tracks data-
+    // quality signal, not currency-identity coincidence.
+    if (
+      converted.quote.source === 'identity' &&
+      resolveCurrency(w.currency) !== presentation
+    ) {
+      hasIdentityFallback = true
+    }
     total += converted.amount
     perWallet.push({
       walletId: w.id,

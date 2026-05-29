@@ -40,6 +40,8 @@
  * @see ../cloudflare/index.ts (Mediator integration)
  */
 
+import { requireSafetyMode } from '@/services/safety-mode'
+
 /** Purpose namespace for a key. */
 export type KeyPurpose = 'signing' | 'kek'
 
@@ -168,8 +170,6 @@ export function getDefaultKeyResolver(): TenantKeyResolver {
 export function setDefaultKeyResolver(r: TenantKeyResolver): void {
   // Slice RRRRRRRRR-cut1 — guarded escape hatch. Production wires the
   // KV-backed resolver at boot; runtime swaps are test-only.
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
   requireSafetyMode(['test', 'dev'], 'setDefaultKeyResolver')
   _defaultResolver = r
 }
@@ -183,8 +183,6 @@ export async function provisionTestSigningKey(args: {
   kid: string
 }): Promise<{ kid: string; publicKey: CryptoKey; privateKey: CryptoKey }> {
   // Slice RRRRRRRRR-cut1 — guarded; production rejects.
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
   requireSafetyMode(['test', 'dev'], 'provisionTestSigningKey')
   const pair = await globalThis.crypto.subtle.generateKey(
     { name: 'Ed25519' }, true, ['sign', 'verify'],
@@ -209,8 +207,6 @@ export async function provisionTestKek(args: {
   kid: string
 }): Promise<{ kid: string; kek: CryptoKey }> {
   // Slice RRRRRRRRR-cut1 — guarded; production rejects.
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { requireSafetyMode } = require('@/services/safety-mode') as typeof import('@/services/safety-mode')
   requireSafetyMode(['test', 'dev'], 'provisionTestKek')
   const raw = globalThis.crypto.getRandomValues(new Uint8Array(32))
   const kek = await globalThis.crypto.subtle.importKey(
