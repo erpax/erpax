@@ -406,7 +406,7 @@ export const createCalculatedField = (
  * Create GL account mapping fields (asset, liability, expense accounts)
  */
 export const createGLAccountFields = (accounts: { name: string; description: string }[]) => {
-  return accounts.map((acc) => ({
+  return accounts.map((acc): Field => ({
     name: acc.name,
     type: 'relationship' as const,
     relationTo: 'gl-accounts',
