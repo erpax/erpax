@@ -1822,6 +1822,9 @@ src/services/storage-redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.
 src/services/streams/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/services/streams/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
+src/services/supto/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
+src/services/supto/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
 src/services/tags/taggedWith.ts:16: * @standard ISO-25964-1:2011 thesauri retrieval
 src/services/tax-automation.service.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
@@ -5220,6 +5223,7 @@ src/services/spec-generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.
 src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
+src/services/supto/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
 src/services/tenant-roles/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
