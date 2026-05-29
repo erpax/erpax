@@ -29,12 +29,16 @@ The УНП and the structured **uuidv8** are the *same idea*: a fixed-layout, **
 - **Immutability + сторно** — `sale-immutability.ts` (completed sales frozen; closed→reversed only) + `reverse-sale.ts` (negated mirror, preserves + seals original). Tests 11/11.
 - **Closed event** — `sale-event.ts` emits `supto:sale:closed` keyed by content-uuid ([[event]]).
 - **Audit file** — `audit-file.ts` builds the Приложение-38 report + XML over the SAF-T base (count + net control sum). Test 7/7.
+- **Receipt issuance** — `fiscal-receipt.ts` builds the касов бон carrying the УНП + a pluggable `FiscalDeviceDriver` membrane; per-line VAT. Test 8/8.
+- **Virtual device (alternative regime)** — `virtual-device.ts`: НАП lets e-shop remote-card sales issue an *electronic* receipt (УНП + fiscal-QR + virtual-POS number, e-mailed) with **no hardware**, reporting via the monthly audit file. A drop-in `FiscalDeviceDriver`. Test 6/6. So the receipt path is pure software, not an external blocker.
+- **Audit-file submission** — `submit-audit-file.ts` (collect→build→submit, pluggable mTLS submitter) + the `supto-audit-file` monthly [[jobs]] task (`suptoAuditFileJob`, prior-month, per-tenant, cron `0 6 5 * *`). Tests 3/3 + 5/5.
+- **Audit profile** — no code: a non-admin/accountant tenant user already gets read-only via `scopedAccess` + `roleScopedAccess`.
 
-## Remaining (the next seeds)
-- **Concurrency-safe per-ФУ counter** — the `max+1` read-modify-write must serialise through the `RATE_LIMITER`/counter Durable Object under load ([[bindings]]); today uniqueness rests on the `unp` `unique` constraint.
-- **ФУ hardware protocol** — the physical fiscal-device receipt issuance (external; a [[hooks]] membrane call like `submitBgSaft`); plus printing the УНП on the касов бон.
-- **Audit-file submission** — wire `buildSuptoAuditReport` → `submitBgSaft` on the monthly cadence ([[jobs]] cron).
-- **Audit profile** — adopt the existing read-only access role (the uuid-share `audit` ⊥ AccessRole / [[access]] read-scope) on the СУПТО collections; no new RBAC needed.
-- Registration with the НАП СУПТО registry + certification is operational, outside code.
+51 mirror tests green; src tsc 0.
+
+## Remaining (truly external / one coordination primitive)
+- **Concurrency-safe per-ФУ counter** — the `max+1` read-modify-write must serialise through the `RATE_LIMITER`/counter Durable Object under load ([[bindings]]); **blocked** by the documented DO-not-exported-from-worker chain-break. Today uniqueness rests on the `unp` `unique` constraint.
+- **Physical ФУ driver + mTLS cert config** — optional: a hardware-device `FiscalDeviceDriver` impl and the НАП submission certs are per-deployment (the interfaces + pluggable submitter are built and ready for injection).
+- **НАП registry listing + certification** — operational, outside code.
 
 Composes: [[identity]] (content-uuid + standards-driven id type + uuidv8/decode) · [[number]] (УНП sequence) · [[reverse]] (сторно) · [[standard]] (Н-18 is a real `@standard`, not decoration) · [[accounting]] (the sale → GL) · [[event]] (УНП-keyed lifecycle) · [[access]] (audit profile).
