@@ -72,51 +72,72 @@ describe('SAF-T export — buildHeader', () => {
 
 describe('SAF-T export — buildGeneralLedgerAccounts', () => {
   it('maps GL accounts with movement / synthesis classification', async () => {
+    // SAF-T derives opening/closing balances from journal-entries (the
+    // service refactored away from storing balances on gl-accounts) so
+    // both 'gl-accounts' and 'journal-entries' must be mocked. The
+    // synthesis vs movement classification falls out of the parent set —
+    // account '11' is the parent of '11.01', so '11' is S and '11.01' is M.
     const payload = mockPayload({
       'gl-accounts': [
         {
           id: 1,
-          accountId: '11',
+          accountNumber: '11',
           accountName: 'Caixa e Equivalentes',
-          isMovementAccount: false,
-          openingDebitBalance: 100_000_00,
-          closingDebitBalance: 150_000_00,
+          accountType: 'asset',
+          normalBalance: 'debit',
         },
         {
           id: 2,
-          accountId: '11.01',
+          accountNumber: '11.01',
           accountName: 'Caixa',
-          isMovementAccount: true,
-          openingDebitBalance: 5_000_00,
-          closingDebitBalance: 7_500_00,
+          accountType: 'asset',
+          normalBalance: 'debit',
+          parentAccount: 1,
         },
       ],
+      // No posted entries → opening + closing trial balances are empty;
+      // the SAF-T balance fields collapse to undefined. The assertion
+      // here is about CLASSIFICATION, not balances.
+      'journal-entries': [],
     }) as never
     const accounts = await buildGeneralLedgerAccounts(payload, 'tenant-1', '2026-01-01', '2026-12-31', 'EUR')
     expect(accounts).toHaveLength(2)
-    expect(accounts[0].accountType).toBe('S') // synthesis
-    expect(accounts[1].accountType).toBe('M') // movement
-    expect(accounts[1].closingDebitBalance).toBe(7_500_00)
+    const byNumber = new Map(accounts.map((a) => [a.accountID, a]))
+    expect(byNumber.get('11')?.accountType).toBe('S') // synthesis (parent)
+    expect(byNumber.get('11.01')?.accountType).toBe('M') // movement (leaf)
+    // Grouping code on the leaf points to the parent's accountNumber.
+    expect(byNumber.get('11.01')?.groupingCode).toBe('11')
   })
 })
 
 describe('SAF-T export — buildCustomers / buildSuppliers', () => {
   it('builds a customer with party id + addresses', async () => {
+    // buildCustomers reads `code` (the CodeConcern human key — was
+    // `customerId` before the field-factory rollout) and resolves the
+    // AR account through `ledger.defaultReceivableAccount` (populated
+    // at depth 1, surfaced via accountNumber). Address structure lives
+    // under `addresses.billingAddress / shippingAddress`.
+    // The party schema flattened: tax-id moved from `identity.taxId` to
+    // `tax.vatNumber`; tax country moved to top-level `country`; legal
+    // name moved to `identity.legalName` (was `identity.companyName`).
     const payload = mockPayload({
       customers: [
         {
           id: 'c1',
-          customerId: 'CUST-1',
-          arAccount: '21.1',
-          identity: {
-            taxId: '987654321',
-            taxCountry: 'PT',
-            companyName: 'Customer S.A.',
+          code: 'CUST-1',
+          name: 'Customer S.A.',
+          country: 'PT',
+          tax: { vatNumber: '987654321' },
+          identity: { legalName: 'Customer S.A.' },
+          ledger: {
+            defaultReceivableAccount: { accountNumber: '21.1' },
           },
-          billingAddress: {
-            city: 'Porto',
-            postalCode: '4000-100',
-            country: 'PT',
+          addresses: {
+            billingAddress: {
+              city: 'Porto',
+              postalCode: '4000-100',
+              country: 'PT',
+            },
           },
         },
       ],
@@ -129,16 +150,24 @@ describe('SAF-T export — buildCustomers / buildSuppliers', () => {
     expect(customers[0].party.billingAddress.country).toBe('PT')
   })
 
-  it('builds a supplier with default AP account fallback', async () => {
+  it('builds a supplier — missing AP account surfaces as empty accountID', async () => {
+    // The service intentionally surfaces missing ledger configuration
+    // as an empty `accountID` (rather than synthesising '22.1' as a
+    // hard-coded default) so the auditor sees no default account
+    // assigned — that's the correct SAF-T behavior. The `supplierID`
+    // comes from the vendor's `code` field (CodeConcern).
     const payload = mockPayload({
       vendors: [
         {
           id: 'v1',
+          code: 'v1',
           identity: { companyName: 'Vendor SARL', taxCountry: 'FR' },
-          billingAddress: {
-            city: 'Paris',
-            postalCode: '75001',
-            country: 'FR',
+          addresses: {
+            remitToAddress: {
+              city: 'Paris',
+              postalCode: '75001',
+              country: 'FR',
+            },
           },
         },
       ],
@@ -146,7 +175,7 @@ describe('SAF-T export — buildCustomers / buildSuppliers', () => {
     const suppliers = await buildSuppliers(payload, 'tenant-1')
     expect(suppliers).toHaveLength(1)
     expect(suppliers[0].supplierID).toBe('v1')
-    expect(suppliers[0].accountID).toBe('22.1') // default fallback
+    expect(suppliers[0].accountID).toBe('')
   })
 })
 

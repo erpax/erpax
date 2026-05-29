@@ -229,7 +229,13 @@ describe('SAF-T — buildMovementOfGoods', () => {
 })
 
 describe('SAF-T — buildSourceDocuments orchestrator + XML rendering', () => {
-  it('composes all four sub-sections and renders them in the XML', async () => {
+  it('returns undefined when every sub-section is empty (OECD optional-wrapper)', async () => {
+    // Per the OECD SAF-T 2.0 §SourceDocuments contract documented on
+    // buildSourceDocuments, the top-level wrapper is OPTIONAL — when
+    // every sub-builder returns 0 entries, the orchestrator returns
+    // undefined so consumers (and the XML renderer) don't have to
+    // special-case empty placeholders. Once a sub-builder lands real
+    // data the populated shape comes back automatically.
     const payload = mockPayload({
       invoices: [],
       payments: [],
@@ -241,12 +247,10 @@ describe('SAF-T — buildSourceDocuments orchestrator + XML rendering', () => {
       '2026-04-01',
       '2026-04-30',
     )
-    expect(src.salesInvoices?.numberOfEntries).toBe(0)
-    expect(src.purchaseInvoices?.numberOfEntries).toBe(0)
-    expect(src.payments?.numberOfEntries).toBe(0)
-    expect(src.movementOfGoods?.numberOfMovementLines).toBe(0)
+    expect(src).toBeUndefined()
 
-    // Empty SourceDocuments still render the wrapper element with the totals.
+    // Rendering a file with no SourceDocuments must omit the wrapper —
+    // not emit an empty one.
     const file: SafTAuditFile = {
       header: {
         auditFileVersion: '2.00',
@@ -273,11 +277,10 @@ describe('SAF-T — buildSourceDocuments orchestrator + XML rendering', () => {
       sourceDocuments: src,
     }
     const xml = renderSafTXml(file)
-    expect(xml).toContain('<SourceDocuments>')
-    expect(xml).toContain('<SalesInvoices>')
-    expect(xml).toContain('<PurchaseInvoices>')
-    expect(xml).toContain('<Payments>')
-    expect(xml).toContain('<MovementOfGoods>')
-    expect(xml).toContain('<NumberOfEntries>0</NumberOfEntries>')
+    expect(xml).not.toContain('<SourceDocuments>')
+    expect(xml).not.toContain('<SalesInvoices>')
+    expect(xml).not.toContain('<PurchaseInvoices>')
+    expect(xml).not.toContain('<Payments>')
+    expect(xml).not.toContain('<MovementOfGoods>')
   })
 })
