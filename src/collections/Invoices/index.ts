@@ -10,6 +10,7 @@ import { authenticated } from '../../access/authenticated'
 import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
 import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { VAT_CATEGORY_OPTIONS } from '../../standards/un-cefact-5305'
+import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '../../fields'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
@@ -686,6 +687,37 @@ export const Invoices: CollectionConfig = {
           relationTo: 'tenants',
           admin: { description: 'Domain context' },
         },
+      ],
+    },
+    {
+      // Наредба Н-18 / СУПТО fiscalization — the invoice IS the sale document
+      // (the source `daily_sales_view` is a read-only projection over invoices).
+      // Assigned when the invoice is paid in scope (cash/card — чл. 3 ал. 1) by
+      // the single money-in trigger; absent on unfiscalized / exempt invoices.
+      // Exact regulatory terms: УНП, ФУ, оператор, касов бон, сторно.
+      name: 'fiscal',
+      type: 'group',
+      label: 'Fiscal (Наредба Н-18 / СУПТО)',
+      admin: { description: 'СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.' },
+      fields: [
+        unpField(), // УНП — уникален номер на продажба
+        { name: 'unpSequence', type: 'number', admin: { readOnly: true, hidden: true } },
+        { name: 'fiscalDevice', type: 'relationship', relationTo: 'fiscal-devices', admin: { description: 'Фискално устройство (ФУ).' } },
+        fiscalDeviceNumberField(false), // 8-digit ФУ number — first УНП segment
+        operatorCodeField(), // 4-digit оператор code — second УНП segment
+        { name: 'terminal', type: 'relationship', relationTo: 'terminals', admin: { description: 'Виртуален ПОС терминал (алтернативен режим).' } },
+        { name: 'receiptNumber', type: 'text', admin: { description: 'Касов бон номер.' } },
+        { name: 'receipt', type: 'relationship', relationTo: 'receipts', admin: { description: 'Издаден касов бон.' } },
+        fiscalQrField(), // НАП fiscal-QR payload
+        {
+          name: 'status',
+          type: 'select',
+          defaultValue: 'open',
+          options: [...saleStatusOptions],
+          admin: { description: 'Фискален статус (open → closed → reversed). Closed сторно само (Наредба Н-18).' },
+        },
+        { name: 'reversalOf', type: 'relationship', relationTo: 'invoices', admin: { description: 'Сторно на (оригинална фактура).' } },
+        { name: 'reversedBy', type: 'relationship', relationTo: 'invoices', admin: { description: 'Сторнирана с (кредитно известие).' } },
       ],
     },
     {

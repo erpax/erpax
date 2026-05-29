@@ -2442,6 +2442,53 @@ export interface Invoice {
     domain?: (string | null) | Tenant;
   };
   /**
+   * СУПТО фискализация — касов бон / УНП, издаден при плащане в обхват.
+   */
+  fiscal?: {
+    /**
+     * Unique sales number (УНП) — assigned + frozen on create.
+     */
+    unp?: string | null;
+    unpSequence?: number | null;
+    /**
+     * Фискално устройство (ФУ).
+     */
+    fiscalDevice?: (string | null) | FiscalDevice;
+    /**
+     * 8-digit ФУ individual number — first УНП segment.
+     */
+    fiscalDeviceNumber?: string | null;
+    operatorCode?: string | null;
+    /**
+     * Виртуален ПОС терминал (алтернативен режим).
+     */
+    terminal?: (string | null) | Terminal;
+    /**
+     * Касов бон номер.
+     */
+    receiptNumber?: string | null;
+    /**
+     * Издаден касов бон.
+     */
+    receipt?: (string | null) | Receipt;
+    /**
+     * НАП fiscal-QR payload (device*УНП*date*time*sum).
+     */
+    qrData?: string | null;
+    /**
+     * Фискален статус (open → closed → reversed). Closed сторно само (Наредба Н-18).
+     */
+    status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+    /**
+     * Сторно на (оригинална фактура).
+     */
+    reversalOf?: (string | null) | Invoice;
+    /**
+     * Сторнирана с (кредитно известие).
+     */
+    reversedBy?: (string | null) | Invoice;
+  };
+  /**
    * Test invoice
    */
   test?: boolean | null;
@@ -2551,6 +2598,267 @@ export interface SubscriptionPlan {
    * Display order in pricing pages (lower = first)
    */
   sortOrder?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-devices".
+ */
+export interface FiscalDevice {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
+   */
+  individualNumber: string;
+  model?: string | null;
+  manufacturer?: string | null;
+  /**
+   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
+   */
+  currency?: string | null;
+  /**
+   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
+   */
+  taxGroups?:
+    | {
+        /**
+         * Tax-group letter (А/Б/В/Г).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%) configured for this group on this device.
+         */
+        rate?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Operator whose code (ZZZZ) numbers automated sales on this device.
+   */
+  defaultOperator?: (string | null) | Operator;
+  /**
+   * Virtual-POS terminal printed on automated e-receipts from this device.
+   */
+  defaultTerminal?: (string | null) | Terminal;
+  status?: ('active' | 'decommissioned') | null;
+  registeredAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "operators".
+ */
+export interface Operator {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 4-digit operator code — second УНП segment.
+   */
+  code: string;
+  name: string;
+  user?: (string | null) | User;
+  status?: ('active' | 'decommissioned') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "terminals".
+ */
+export interface Terminal {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Virtual POS terminal number (printed on the e-receipt).
+   */
+  terminalNumber: string;
+  /**
+   * Payment-service provider operating the virtual POS.
+   */
+  provider?: string | null;
+  /**
+   * Settlement account (IBAN) the terminal pays into.
+   */
+  accountNumber?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  status?: ('active' | 'inactive') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "receipts".
+ */
+export interface Receipt {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Касов бон number (or УНП in the alternative regime).
+   */
+  receiptNumber?: string | null;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  sale?: (string | null) | Sale;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber?: string | null;
+  operatorCode?: string | null;
+  virtualPosTerminal?: (string | null) | Terminal;
+  /**
+   * НАП fiscal-QR payload (device*УНП*date*time*sum).
+   */
+  qrData?: string | null;
+  issuedAt?: string | null;
+  total?: number | null;
+  vatTotal?: number | null;
+  /**
+   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
+   */
+  vatBreakdown?:
+    | {
+        /**
+         * Tax-group letter (Приложение № 1).
+         */
+        group?: string | null;
+        /**
+         * VAT rate (%).
+         */
+        rate?: number | null;
+        /**
+         * Net amount (cents).
+         */
+        net?: number | null;
+        /**
+         * VAT amount (cents).
+         */
+        vat?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Customer e-mail the e-receipt was sent to (alternative regime).
+   */
+  deliveredTo?: string | null;
+  status?: ('issued' | 'delivered' | 'void') | null;
+  lines?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sales".
+ */
+export interface Sale {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  unpSequence?: number | null;
+  /**
+   * 8-digit ФУ individual number — first УНП segment.
+   */
+  fiscalDeviceNumber: string;
+  fiscalDevice?: (string | null) | FiscalDevice;
+  operatorCode?: string | null;
+  saleDate: string;
+  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+  items?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  total?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Касов бон number — carries the УНП.
+   */
+  fiscalReceiptNumber?: string | null;
+  operator?: (string | null) | Operator;
+  terminal?: (string | null) | Terminal;
+  receipt?: (string | null) | Receipt;
+  /**
+   * Origin of the sale (revenue source) — keys idempotency + сторно.
+   */
+  source?: {
+    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
+    /**
+     * Source document id.
+     */
+    ref?: string | null;
+  };
+  reversalOf?: (string | null) | Sale;
+  reversedBy?: (string | null) | Sale;
+  reversalReason?: string | null;
+  closedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -17792,267 +18100,6 @@ export interface PostCloseAnalyticsReport {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "fiscal-devices".
- */
-export interface FiscalDevice {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
-   */
-  individualNumber: string;
-  model?: string | null;
-  manufacturer?: string | null;
-  /**
-   * ISO 4217 currency this ФУ issues receipts in — overrides the tenant/country default.
-   */
-  currency?: string | null;
-  /**
-   * Active fiscal tax groups (Приложение № 1) on this device — group letter → VAT rate. Empty ⇒ country VAT bands.
-   */
-  taxGroups?:
-    | {
-        /**
-         * Tax-group letter (А/Б/В/Г).
-         */
-        group?: string | null;
-        /**
-         * VAT rate (%) configured for this group on this device.
-         */
-        rate?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Operator whose code (ZZZZ) numbers automated sales on this device.
-   */
-  defaultOperator?: (string | null) | Operator;
-  /**
-   * Virtual-POS terminal printed on automated e-receipts from this device.
-   */
-  defaultTerminal?: (string | null) | Terminal;
-  status?: ('active' | 'decommissioned') | null;
-  registeredAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "operators".
- */
-export interface Operator {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * 4-digit operator code — second УНП segment.
-   */
-  code: string;
-  name: string;
-  user?: (string | null) | User;
-  status?: ('active' | 'decommissioned') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "terminals".
- */
-export interface Terminal {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Virtual POS terminal number (printed on the e-receipt).
-   */
-  terminalNumber: string;
-  /**
-   * Payment-service provider operating the virtual POS.
-   */
-  provider?: string | null;
-  /**
-   * Settlement account (IBAN) the terminal pays into.
-   */
-  accountNumber?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  status?: ('active' | 'inactive') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "sales".
- */
-export interface Sale {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Unique sales number (УНП) — assigned + frozen on create.
-   */
-  unp?: string | null;
-  unpSequence?: number | null;
-  /**
-   * 8-digit ФУ individual number — first УНП segment.
-   */
-  fiscalDeviceNumber: string;
-  fiscalDevice?: (string | null) | FiscalDevice;
-  operatorCode?: string | null;
-  saleDate: string;
-  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
-  items?:
-    | {
-        description?: string | null;
-        quantity?: number | null;
-        unitPrice?: number | null;
-        vatRate?: number | null;
-        amount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  total?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
-  /**
-   * Касов бон number — carries the УНП.
-   */
-  fiscalReceiptNumber?: string | null;
-  operator?: (string | null) | Operator;
-  terminal?: (string | null) | Terminal;
-  receipt?: (string | null) | Receipt;
-  /**
-   * Origin of the sale (revenue source) — keys idempotency + сторно.
-   */
-  source?: {
-    type?: ('order' | 'subscription' | 'invoice' | 'pos') | null;
-    /**
-     * Source document id.
-     */
-    ref?: string | null;
-  };
-  reversalOf?: (string | null) | Sale;
-  reversedBy?: (string | null) | Sale;
-  reversalReason?: string | null;
-  closedAt?: string | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "receipts".
- */
-export interface Receipt {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Касов бон number (or УНП in the alternative regime).
-   */
-  receiptNumber?: string | null;
-  /**
-   * Unique sales number (УНП) — assigned + frozen on create.
-   */
-  unp?: string | null;
-  sale?: (string | null) | Sale;
-  /**
-   * 8-digit ФУ individual number — first УНП segment.
-   */
-  fiscalDeviceNumber?: string | null;
-  operatorCode?: string | null;
-  virtualPosTerminal?: (string | null) | Terminal;
-  /**
-   * НАП fiscal-QR payload (device*УНП*date*time*sum).
-   */
-  qrData?: string | null;
-  issuedAt?: string | null;
-  total?: number | null;
-  vatTotal?: number | null;
-  /**
-   * VAT subtotals per Наредба Н-18 tax group (А/Б/В/Г) — frozen at issuance.
-   */
-  vatBreakdown?:
-    | {
-        /**
-         * Tax-group letter (Приложение № 1).
-         */
-        group?: string | null;
-        /**
-         * VAT rate (%).
-         */
-        rate?: number | null;
-        /**
-         * Net amount (cents).
-         */
-        net?: number | null;
-        /**
-         * VAT amount (cents).
-         */
-        vat?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
-  /**
-   * Customer e-mail the e-receipt was sent to (alternative regime).
-   */
-  deliveredTo?: string | null;
-  status?: ('issued' | 'delivered' | 'void') | null;
-  lines?:
-    | {
-        description?: string | null;
-        quantity?: number | null;
-        unitPrice?: number | null;
-        vatRate?: number | null;
-        amount?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-submissions".
  */
 export interface AuditSubmission {
@@ -19266,6 +19313,22 @@ export interface InvoicesSelect<T extends boolean = true> {
         parent?: T;
         order?: T;
         domain?: T;
+      };
+  fiscal?:
+    | T
+    | {
+        unp?: T;
+        unpSequence?: T;
+        fiscalDevice?: T;
+        fiscalDeviceNumber?: T;
+        operatorCode?: T;
+        terminal?: T;
+        receiptNumber?: T;
+        receipt?: T;
+        qrData?: T;
+        status?: T;
+        reversalOf?: T;
+        reversedBy?: T;
       };
   test?: T;
   metadata?: T;
