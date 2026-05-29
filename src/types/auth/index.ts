@@ -41,7 +41,7 @@ export interface AccessResult {
  */
 export const isPayloadUser = (user: unknown): user is {
   readonly id: string
-  readonly tenants: readonly Array<{ readonly tenant?: string }>
+  readonly tenants: ReadonlyArray<{ readonly tenant?: string }>
   readonly roles: readonly string[]
 } => {
   if (!user || typeof user !== 'object') return false

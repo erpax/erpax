@@ -342,7 +342,7 @@ export interface SafTSalesInvoiceLine {
   readonly debitAmount?: number
   readonly taxInformation: SafTTaxInformation
   /** Reference to the originating order / shipment. */
-  readonly references?: readonly Array<{ readonly reference: string; readonly reason?: string }>
+  readonly references?: ReadonlyArray<{ readonly reference: string; readonly reason?: string }>
 }
 
 /**
@@ -395,7 +395,7 @@ export interface SafTPayment {
   readonly documentStatus: { readonly paymentStatus: 'N' | 'A' | 'F'; readonly paymentStatusDate: string }
   readonly systemEntryDate: string
   /** Allocations to the invoices being settled. */
-  readonly lines: readonly Array<{
+  readonly lines: ReadonlyArray<{
     readonly lineNumber: number
     readonly sourceDocumentID: string
     readonly creditAmount?: number
@@ -451,7 +451,7 @@ export interface SafTMovementOfGoods {
   readonly shipTo: SafTAddressStructure
   readonly customerID?: string
   readonly supplierID?: string
-  readonly lines: readonly Array<{
+  readonly lines: ReadonlyArray<{
     readonly lineNumber: number
     readonly productCode: string
     readonly productDescription: string

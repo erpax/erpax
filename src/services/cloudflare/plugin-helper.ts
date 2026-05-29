@@ -59,12 +59,13 @@ export function erpaxMediator(req: PayloadRequest, opts?: {
   if (!env) {
     throw new Error('[erpaxMediator] CF env unavailable in this runtime — plugin requires Workers / wrangler context')
   }
-  const tenantId = getUserContext(req)?.tenant ?? 'platform'
+  const ctx = getUserContext(req)
+  const tenantId = ctx?.tenant ?? 'platform'
   return makeMediator({
     env,
     tenantId,
     payload: req.payload as never,
-    user: u ? { id: u.id ?? 'anonymous', role: u.role } : undefined,
+    user: ctx ? { id: ctx.id ?? 'anonymous', role: ctx.roles?.[0] } : undefined,
     authorize: opts?.authorize ?? defaultAuthorize,
   })
 }

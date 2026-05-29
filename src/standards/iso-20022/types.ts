@@ -184,7 +184,7 @@ export interface Camt053Transaction {
   readonly counterpartyAccount?: AccountIdentification
 
   /** Charge / fee detail when applicable. */
-  readonly charges?: readonly Array<{ readonly amount: number; readonly currency: string; readonly type?: string }>
+  readonly charges?: ReadonlyArray<{ readonly amount: number; readonly currency: string; readonly type?: string }>
   readonly chargeBearer?: ChargeBearerCode
 
   /** Remittance info — may be structured or unstructured. */

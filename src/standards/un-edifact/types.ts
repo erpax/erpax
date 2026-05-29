@@ -302,7 +302,7 @@ export interface EdifactDesadv {
   readonly dates: readonly EdifactDTM[]
   readonly parties: readonly EdifactNAD[]
   /** Each line carries a LIN + QTY (despatched 12 / received 13). */
-  readonly lines: readonly Array<{ readonly lin: EdifactLIN; readonly quantity: EdifactQTY }>
+  readonly lines: ReadonlyArray<{ readonly lin: EdifactLIN; readonly quantity: EdifactQTY }>
   readonly unt: EdifactUNT
 }
 
@@ -320,7 +320,7 @@ export interface EdifactPaymul {
   readonly bgm: EdifactBGM
   readonly dates: readonly EdifactDTM[]
   /** Each leg carries a payee NAD + monetary amount + remittance ref. */
-  readonly legs: readonly Array<{
+  readonly legs: ReadonlyArray<{
     readonly payee: EdifactNAD
     readonly amount: EdifactMOA
     readonly paymentMeans: { readonly code: string }
@@ -338,6 +338,6 @@ export interface EdifactPaymul {
  */
 export interface EdifactInterchange {
   readonly unb: EdifactUNB
-  readonly messages: readonly Array<EdifactInvoic | EdifactDesadv | EdifactPaymul>
+  readonly messages: ReadonlyArray<EdifactInvoic | EdifactDesadv | EdifactPaymul>
   readonly unz: EdifactUNZ
 }
