@@ -64,7 +64,7 @@ describe('signBgPadesPdf — second pass', () => {
     })
     expect(result.ok).toBe(true)
     // signCms was called with `HEADER ` + ` TRAILER` (placeholder excluded).
-    const bytesToSign = signCms.mock.calls[0][0]
+    const bytesToSign = (signCms.mock.calls[0] as unknown[])[0] as Uint8Array
     expect(new TextDecoder().decode(bytesToSign)).toBe('HEADER  TRAILER')
   })
 

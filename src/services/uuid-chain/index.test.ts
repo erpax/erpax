@@ -72,7 +72,7 @@ describe('forged leaves carry slot=chainLeaf + CHAINED capability (Law 61 + 62)'
     })
     const parts = decodeStructured(g.leafUuid as unknown as string)
     expect(parts.slotName).toBe('chainLeaf')
-    expect(parts.capabilityNames.sort()).toEqual(['CHAINED', 'SEALED'])
+    expect([...parts.capabilityNames].sort()).toEqual(['CHAINED', 'SEALED'])
   })
 
   it('non-sealed and sealed leaves with otherwise-identical inputs are distinct (capability bit changes uuid)', async () => {

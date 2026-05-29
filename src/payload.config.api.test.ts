@@ -15,7 +15,7 @@ import { getPayload, type Payload } from 'payload'
 import { describe, it, beforeAll, afterAll, expect } from 'vitest'
 
 import config from '@/payload.config'
-import { cleanupTestUser, seedTestUser } from '../helpers/seedUser.js'
+import { cleanupTestUser, seedTestUser } from '../tests/helpers/seedUser.js'
 
 let payload: Payload
 

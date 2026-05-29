@@ -4,7 +4,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
- * @see src/services/supto/sale-immutability.ts
+ * @see src/services/sales/sale-immutability.ts
  */
 
 import { describe, it, expect } from 'vitest'

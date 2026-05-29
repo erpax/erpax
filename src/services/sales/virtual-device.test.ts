@@ -4,7 +4,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §алтернативен-режим
- * @see src/services/supto/virtual-device.ts
+ * @see src/services/sales/virtual-device.ts
  */
 
 import { describe, it, expect, vi } from 'vitest'

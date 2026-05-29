@@ -77,7 +77,7 @@ describe('decodeStructured — recovers all inputs', () => {
     expect(parts.capabilities).toBe(
       CAPABILITIES.SIGNED | CAPABILITIES.SEALED | CAPABILITIES.SHARED,
     )
-    expect(parts.capabilityNames.sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
+    expect([...parts.capabilityNames].sort()).toEqual(['SEALED', 'SHARED', 'SIGNED'])
     expect(parts.schemaVersion).toBe(5)
   })
 

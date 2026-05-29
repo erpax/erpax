@@ -4,7 +4,7 @@
  *
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard BG Наредба-Н-18 §СУПТО сторно
- * @see src/services/supto/reverse-sale.ts
+ * @see src/services/sales/reverse-sale.ts
  */
 
 import { describe, it, expect, vi } from 'vitest'

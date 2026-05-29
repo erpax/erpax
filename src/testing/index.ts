@@ -17,6 +17,7 @@
 export {
   TestSeedFactory,
   TransactionalSeedFactory,
+  SEED_VALIDATION_REGISTRY,
   type SeedContext,
   type SeedResult,
   type CleanupResult,
