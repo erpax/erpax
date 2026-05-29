@@ -131,6 +131,14 @@ export const Users: CollectionConfig = {
         { label: 'Audit Staff', value: 'audit-staff' },
         { label: 'Compliance Officer', value: 'compliance-officer' },
         { label: 'Finance', value: 'finance' },
+        // HR / management personas — merged from the workforce + commitments
+        // collections (Employees, PayrollRuns, TimeEntries, commitments) which
+        // gate on these roles. Same canonical-superset pattern as above; see
+        // `@/access/roles-registry` (SoD matrix).
+        { label: 'Human Resources', value: 'hr' },
+        { label: 'Payroll Officer', value: 'payroll-officer' },
+        { label: 'Manager', value: 'manager' },
+        { label: 'Director', value: 'director' },
         { label: 'Viewer', value: 'viewer' },
       ],
       access: {

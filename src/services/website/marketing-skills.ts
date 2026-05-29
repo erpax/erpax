@@ -233,14 +233,14 @@ export interface SeoAudit {
 }
 
 export function auditSeo(meta: SeoMeta, body: string): SeoAudit {
-  const issues: SeoAudit['issues'] = []
-  if (meta.title.length > 60) issues.push({ severity: 'minor', check: 'title-length', detail: `title=${meta.title.length} chars (>60 truncates in SERPs)` } as never)
-  if (meta.description.length < 70) issues.push({ severity: 'minor', check: 'description-length', detail: `description=${meta.description.length} chars (<70 hurts CTR)` } as never)
-  if (meta.keywords.length === 0) issues.push({ severity: 'major', check: 'keywords-empty', detail: 'no keywords derived' } as never)
+  const issues: Array<{ severity: 'info' | 'minor' | 'major'; check: string; detail: string }> = []
+  if (meta.title.length > 60) issues.push({ severity: 'minor', check: 'title-length', detail: `title=${meta.title.length} chars (>60 truncates in SERPs)` })
+  if (meta.description.length < 70) issues.push({ severity: 'minor', check: 'description-length', detail: `description=${meta.description.length} chars (<70 hurts CTR)` })
+  if (meta.keywords.length === 0) issues.push({ severity: 'major', check: 'keywords-empty', detail: 'no keywords derived' })
   // Each top-3 keyword should appear ≥1 time in body.
   for (const kw of meta.keywords.slice(0, 3)) {
     if (!body.toLowerCase().includes(kw)) {
-      issues.push({ severity: 'minor', check: 'keyword-density', detail: `top keyword '${kw}' missing from body` } as never)
+      issues.push({ severity: 'minor', check: 'keyword-density', detail: `top keyword '${kw}' missing from body` })
     }
   }
   return { ok: issues.filter((i) => i.severity === 'major').length === 0, issues }

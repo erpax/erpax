@@ -6,7 +6,7 @@
 'use client';
 
 import React from 'react';
-import { Tenant, TenantStatusLabel, TenantStatusColors } from '@/types/tenant';
+import { Tenant, TENANT_STATUS_LABELS, TENANT_STATUS_COLORS } from '@/types/tenant';
 import { ChevronDown, Edit2, MoreVertical, Eye } from 'lucide-react';
 
 interface HostTableProps {
@@ -136,9 +136,9 @@ export default function HostTable({
               <td className="px-6 py-4 text-sm text-gray-600">{tenant.currency}</td>
               <td className="px-6 py-4">
                 <span
-                  className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${TenantStatusColors[tenant.status]}-600`}
+                  className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${TENANT_STATUS_COLORS[tenant.status]}-600`}
                 >
-                  {TenantStatusLabel[tenant.status]}
+                  {TENANT_STATUS_LABELS[tenant.status]}
                 </span>
               </td>
               <td className="px-6 py-4 text-sm text-gray-600">

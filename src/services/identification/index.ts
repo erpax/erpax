@@ -54,6 +54,7 @@
  */
 
 import type { Payload } from 'payload'
+import type { ShortUuidKind } from '../integrity/uuid-short'
 
 /** Identifier kinds the resolver can recognise. */
 export type IdentifierKind =
@@ -235,7 +236,7 @@ async function resolveShortUuid<T>(
   // Map short-uuid kind → likely collection slug. Kinds are defined in
   // uuid-short.ts; collections that follow the same name convention
   // are plural-of-kind (audit → audit-events, invoice → invoices, etc).
-  const kindToCollection: Partial<Record<keyof typeof SHORT_UUID_POLICY, string>> = {
+  const kindToCollection: Partial<Record<ShortUuidKind, string>> = {
     audit: 'audit-events',
     vote: 'votes',
     invoice: 'invoices',

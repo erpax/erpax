@@ -52,7 +52,7 @@ const TimeEntries: CollectionConfig = {
     // read all. Mutation requires either the employee themselves or the
     // approver flow.
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'hr', 'payroll-officer', 'employee'),
+    create: roleScopedAccess('admin', 'hr', 'payroll-officer', 'user'),
     update: roleScopedAccess('admin', 'hr', 'payroll-officer'),
     delete: tenantAdmin,
   },

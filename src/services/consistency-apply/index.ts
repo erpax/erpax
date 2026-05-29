@@ -101,7 +101,6 @@ const ACTION_TO_STATUS: Record<string, string | null> = {
   // Slice DDDDDDDD extension — closing the bespoke-action tail.
   'close-won': 'won',
   'qualify-sql': 'sql',
-  'qualify-mql': 'mql',
   achieve: 'achieved',
   'milestone-invoice': 'activated',
   compute: 'computed',
@@ -167,7 +166,6 @@ const COLLECTION_AGG: Record<string, string> = {
   'cost-variances': 'invoice',
   'maintenance-requests': 'order',
   'ai-suggestions': 'order',
-  'project-milestones': 'invoice',
 }
 
 const STEP_RE =

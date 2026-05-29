@@ -20,8 +20,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import {
   Tenant,
-  TenantStatusLabel,
-  TenantStatusColors,
+  TENANT_STATUS_LABELS,
+  TENANT_STATUS_COLORS,
   TENANT_STATUS_TRANSITIONS,
   TenantFilterOptions,
   BatchTenantActionRequest,
@@ -382,7 +382,7 @@ function HostDetailDialog({
   if (!open) return null;
 
   const validActions = TENANT_STATUS_TRANSITIONS[tenant.status] || [];
-  const statusColor = TenantStatusColors[tenant.status];
+  const statusColor = TENANT_STATUS_COLORS[tenant.status];
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -410,7 +410,7 @@ function HostDetailDialog({
               <span
                 className={`px-3 py-1 rounded-full text-sm font-medium text-white bg-${statusColor}-600`}
               >
-                {TenantStatusLabel[tenant.status]}
+                {TENANT_STATUS_LABELS[tenant.status]}
               </span>
             </div>
           </div>

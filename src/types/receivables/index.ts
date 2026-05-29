@@ -10,7 +10,7 @@
  */
 
 export type InvoiceStatus = 'draft' | 'issued' | 'overdue' | 'partial' | 'paid' | 'written_off'
-import type { PaymentTerm } from '../../services/parties'
+import type { PaymentTerm } from '@/types/parties'
 export type { PaymentTerm }
 
 export interface Invoice {

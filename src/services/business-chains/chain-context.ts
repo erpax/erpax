@@ -58,13 +58,18 @@ export async function createChainContext(
 ): Promise<ChainContext> {
   const slug = opts.tenantSlug ?? `chain-test-${Math.random().toString(36).slice(2, 10)}`
   const countryCode = opts.countryCode ?? 'BG'
-  const currency = opts.currency ?? 'EUR'
+  const currency = (opts.currency ?? 'EUR') as
+    | 'EUR' | 'GBP' | 'JPY' | 'CNY' | 'INR' | 'CAD' | 'AUD' | 'CHF' | 'SGD' | 'HKD' | 'USD' | 'XXX'
   const periodLabel = opts.periodLabel ?? '2026-04'
 
   // ─── Tenant + user ────────────────────────────────────────────────
   const tenant = (await payload.create({
     collection: 'tenants',
-    data: { name: `Chain Test ${slug}`, slug, defaultCurrency: currency },
+    data: {
+      name: `Chain Test ${slug}`,
+      slug,
+      config: { currency: { reportingCurrency: currency } },
+    },
     overrideAccess: true,
   })) as unknown as { id: string }
 
@@ -73,7 +78,7 @@ export async function createChainContext(
     data: {
       email: `${slug}@chain-test.local`,
       password: 'chain-test-pwd-only',
-      tenants: [{ tenant: tenant.id, role: 'admin' }],
+      tenants: [{ tenant: tenant.id, roles: ['admin'] }],
     },
     overrideAccess: true,
   })) as unknown as { id: string }
@@ -104,9 +109,12 @@ export async function createChainContext(
     data: {
       tenant: tenant.id,
       label: periodLabel,
-      startDate: new Date('2026-04-01').toISOString(),
-      endDate: new Date('2026-04-30').toISOString(),
-      status: 'open',
+      identity: { fiscalYear: 2026, periodNumber: 4, periodType: 'monthly' },
+      dates: {
+        startDate: new Date('2026-04-01').toISOString(),
+        endDate: new Date('2026-04-30').toISOString(),
+      },
+      lifecycle: { status: 'open' },
     },
     overrideAccess: true,
   })) as unknown as { id: string }
@@ -129,8 +137,9 @@ export async function createChainContext(
         accountNumber: a.number,
         accountName: a.name,
         accountType: a.kind,
+        normalBalance: a.kind === 'asset' || a.kind === 'expense' ? 'debit' : 'credit',
         currency,
-        isActive: true,
+        status: 'active',
       },
       overrideAccess: true,
     })) as unknown as { id: string }
@@ -142,9 +151,10 @@ export async function createChainContext(
     collection: 'customers',
     data: {
       tenant: tenant.id,
+      code: `CUST-${slug}`,
       name: `Chain Test Customer (${slug})`,
-      currency,
-      countryCode,
+      commercial: { defaultCurrency: currency },
+      country: countryCode,
     },
     overrideAccess: true,
   })) as unknown as { id: string }
@@ -153,9 +163,10 @@ export async function createChainContext(
     collection: 'vendors',
     data: {
       tenant: tenant.id,
+      code: `VEND-${slug}`,
       name: `Chain Test Vendor (${slug})`,
-      currency,
-      countryCode,
+      commercial: { defaultCurrency: currency },
+      country: countryCode,
     },
     overrideAccess: true,
   })) as unknown as { id: string }

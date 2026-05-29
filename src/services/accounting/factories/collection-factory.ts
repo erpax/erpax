@@ -94,7 +94,7 @@ import {
 // scoped to this collection's slug gets auto-wired into afterChange.
 import { wireChainProducersFor } from '@/services/business-chains/wire-producers'
 import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/auth'
-import type { UserRole } from '@/access/auth'
+import type { UserRole } from '@/types/auth'
 import {
   statusField, notesField, auditFields,
 } from '@/fields'

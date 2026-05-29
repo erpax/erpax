@@ -13,4 +13,3 @@ export * from './shared'
 
 // Domain-specific named exports
 export { createInvoiceNumberField, createInvoiceStatusField, createDueDateField, createPaymentTermsField, createARAnalysisFields } from './receivables'
-export type { PayableFieldConfig } from './payables'

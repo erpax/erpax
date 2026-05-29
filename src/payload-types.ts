@@ -2328,6 +2328,10 @@ export interface User {
         | 'audit-staff'
         | 'compliance-officer'
         | 'finance'
+        | 'hr'
+        | 'payroll-officer'
+        | 'manager'
+        | 'director'
         | 'viewer'
       )[]
     | null;
