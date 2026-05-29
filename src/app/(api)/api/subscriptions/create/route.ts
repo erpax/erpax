@@ -22,8 +22,8 @@ export async function POST(request: Request) {
     const payload = await getPayload({ config })
     const { user } = await payload.auth({ headers: request.headers })
 
-    // Verify user is authenticated
-    if (!user) {
+    // Verify user is authenticated (an API-key principal has no tenant/email)
+    if (!user || !('email' in user)) {
       return Response.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
@@ -81,8 +81,8 @@ export async function POST(request: Request) {
           tenant: tenantId,
           plan: plan.id,
           status: 'active',
-          currentPeriodStart: new Date(),
-          currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+          currentPeriodStart: new Date().toISOString(),
+          currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
         },
       })
 
@@ -172,8 +172,8 @@ export async function POST(request: Request) {
           status: 'active',
           stripeSubscriptionId: stripeSubscription.id,
           stripeCustomerId: stripeCustomerId,
-          currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000),
-          currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000),
+          currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000).toISOString(),
+          currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000).toISOString(),
         },
       })
 
@@ -190,8 +190,8 @@ export async function POST(request: Request) {
           status: 'active',
           stripeSubscriptionId: stripeSubscription.id,
           stripeCustomerId: stripeCustomerId,
-          currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000),
-          currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000),
+          currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000).toISOString(),
+          currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000).toISOString(),
         },
       })
 
