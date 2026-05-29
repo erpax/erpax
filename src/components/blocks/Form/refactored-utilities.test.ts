@@ -66,7 +66,7 @@ describe('Refactored Utilities Integration', () => {
 
       const defaultUrl = 'https://default.example.com'
       const tenant = { publicSiteUrl: 'https://custom.example.com' }
-      const noTenant = null
+      const noTenant: { publicSiteUrl?: string | null } | null = null
 
       expect(resolvePublicSiteUrl(defaultUrl, tenant)).toBe('https://custom.example.com')
       expect(resolvePublicSiteUrl(defaultUrl, noTenant)).toBe(defaultUrl)
@@ -78,7 +78,7 @@ describe('Refactored Utilities Integration', () => {
       const { resolveLocale } = localeUtils
 
       const stringLocale = 'de'
-      const objectLocale = { code: 'fr' }
+      const objectLocale = { code: 'fr' } as localeUtils.LocaleInput
       const request = { locale: 'es' }
 
       expect(resolveLocale(stringLocale)).toBe('de')
@@ -90,7 +90,7 @@ describe('Refactored Utilities Integration', () => {
       const { resolveLocale, isValidLocale } = localeUtils
 
       const locale1 = resolveLocale('en')
-      const locale2 = resolveLocale({ code: 'de' })
+      const locale2 = resolveLocale({ code: 'de' } as localeUtils.LocaleInput)
       const locale3 = resolveLocale(null)
 
       expect(isValidLocale(locale1)).toBe(true)

@@ -34,7 +34,7 @@ describe('localeUtils', () => {
     })
 
     it('extracts locale code from Payload Locale object', () => {
-      const locale = { code: 'fr' }
+      const locale = { code: 'fr' } as LocaleInput
       expect(resolveLocale(locale)).toBe('fr')
     })
 
@@ -63,7 +63,7 @@ describe('localeUtils', () => {
 
     it('prioritizes: string > locale object > request > default', () => {
       const req = mockReq('it')
-      const locale = { code: 'fr' }
+      const locale = { code: 'fr' } as LocaleInput
 
       expect(resolveLocale('es', req)).toBe('es')
       expect(resolveLocale(locale, req)).toBe('fr')
@@ -110,7 +110,7 @@ describe('localeUtils', () => {
     })
 
     it('validates after resolution from object', () => {
-      const locale = { code: 'de' }
+      const locale = { code: 'de' } as LocaleInput
       expect(getSafeLocale(locale)).toBe('de')
     })
 
@@ -145,7 +145,7 @@ describe('localeUtils', () => {
     })
 
     it('returns valid locale from object', () => {
-      const locale = { code: 'fr' }
+      const locale = { code: 'fr' } as LocaleInput
       expect(ensureValidLocale(locale)).toBe('fr')
     })
 
