@@ -13,11 +13,23 @@
 import type { Payload, PayloadRequest } from 'payload'
 import { eventEmitter, type EventEmitterService } from '@/services/event-emitter.service'
 import { buildFiscalReceipt, type FiscalSaleInput } from './fiscal-receipt'
+import { buildReceiptQrData } from './virtual-device'
 
 interface SaleDoc extends FiscalSaleInput {
   id: string | number
   tenant?: unknown
+  terminal?: unknown
   receipt?: unknown
+}
+
+/** Resolve a relationship value to its id (string, number, or `{ id }` object). */
+function relId(v: unknown): string | number | undefined {
+  if (typeof v === 'string' || typeof v === 'number') return v
+  if (v && typeof v === 'object' && 'id' in v) {
+    const id = (v as { id?: unknown }).id
+    if (typeof id === 'string' || typeof id === 'number') return id
+  }
+  return undefined
 }
 
 /** Build + persist a `receipts` row for a closed sale; link it back on the sale. */
@@ -27,6 +39,9 @@ export async function createReceiptForSale(
   req?: PayloadRequest,
 ): Promise<{ id: string | number }> {
   const fr = buildFiscalReceipt(sale)
+  // НАП fiscal QR (device*УНП*date*time*sum) — required on the e-receipt (alternative regime).
+  const qrData = buildReceiptQrData(fr)
+  const terminal = relId(sale.terminal)
   const receipt = (await payload.create({
     collection: 'receipts' as never,
     overrideAccess: true,
@@ -44,16 +59,19 @@ export async function createReceiptForSale(
       paymentType: fr.paymentType,
       status: 'issued',
       lines: fr.lines,
+      qrData,
+      ...(terminal !== undefined ? { virtualPosTerminal: terminal } : {}),
       tenant: sale.tenant,
     } as never,
   })) as unknown as { id: string | number }
 
+  // Link the receipt back AND write the касов бон number onto the sale register row.
   await payload.update({
     collection: 'sales' as never,
     id: sale.id,
     overrideAccess: true,
     req,
-    data: { receipt: receipt.id } as never,
+    data: { receipt: receipt.id, fiscalReceiptNumber: fr.unp } as never,
   })
 
   return receipt

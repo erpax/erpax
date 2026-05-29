@@ -45,8 +45,16 @@ describe('createReceiptForSale', () => {
     expect(data.receiptNumber).toBe('12345678-0042-0000001')
     expect(data.sale).toBe('sale-1')
     expect(data.vatTotal).toBe(200_00)
+    // НАП fiscal QR carries the device + УНП + sum (device*УНП*date*time*sum).
+    expect(data.qrData).toContain('12345678-0042-0000001')
+    expect(data.qrData.startsWith('12345678*')).toBe(true)
+    // Receipt linked back AND the касов бон number written onto the sale.
     expect(m.update).toHaveBeenCalledWith(
-      expect.objectContaining({ collection: 'sales', id: 'sale-1', data: { receipt: 'rcp-1' } }),
+      expect.objectContaining({
+        collection: 'sales',
+        id: 'sale-1',
+        data: { receipt: 'rcp-1', fiscalReceiptNumber: '12345678-0042-0000001' },
+      }),
     )
   })
 })
