@@ -35,6 +35,9 @@ function mockPayload(found: Array<Record<string, unknown>> = [SALE]) {
 }
 const asPayload = (m: ReturnType<typeof mockPayload>) => m as unknown as Payload
 
+const emitterSpy = () => ({ emit: vi.fn().mockResolvedValue(undefined), subscribe: vi.fn() })
+const asEmitter = (e: ReturnType<typeof emitterSpy>) => e as unknown as EventEmitterService
+
 describe('createReceiptForSale', () => {
   it('persists a receipts row carrying the УНП + computed VAT, and links it back', async () => {
     const m = mockPayload()
@@ -54,6 +57,19 @@ describe('createReceiptForSale', () => {
         collection: 'sales',
         id: 'sale-1',
         data: { receipt: 'rcp-1', fiscalReceiptNumber: '12345678-0042-0000001' },
+      }),
+    )
+  })
+
+  it('emits receipt:issued to deliver the e-receipt (alternative regime)', async () => {
+    const m = mockPayload()
+    const e = emitterSpy()
+    await createReceiptForSale(asPayload(m), SALE, undefined, asEmitter(e))
+    expect(e.emit).toHaveBeenCalledWith(
+      expect.objectContaining({
+        eventType: 'receipt:issued',
+        aggregateType: 'receipt',
+        payload: expect.objectContaining({ unp: '12345678-0042-0000001', receiptId: 'rcp-1' }),
       }),
     )
   })

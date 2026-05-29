@@ -68,6 +68,14 @@ export const EVENT_NOTIFICATIONS: ReadonlyArray<NotificationTemplate> = [
     body:    (e) => `Vendor bill payment ${(e.payload as { billId?: string }).billId ?? ''} has been sent.`,
   },
   {
+    // Наредба Н-18 alternative regime — deliver the e-receipt (касов бон) to the customer.
+    eventType: 'receipt:issued',
+    category: 'transactional',
+    channels: ['email'],
+    subject: (e) => `Вашият касов бон ${(e.payload as { unp?: string }).unp ?? ''}`,
+    body:    (e) => `Електронен касов бон ${(e.payload as { unp?: string }).unp ?? ''} за Вашата покупка.`,
+  },
+  {
     eventType: 'subscription:invoiced',
     category: 'transactional',
     channels: ['email'],

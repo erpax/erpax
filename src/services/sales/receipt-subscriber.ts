@@ -11,12 +11,14 @@
  */
 
 import type { Payload, PayloadRequest } from 'payload'
+import { v4 as uuid } from 'uuid'
 import { eventEmitter, type EventEmitterService } from '@/services/event-emitter.service'
 import { buildFiscalReceipt, type FiscalSaleInput } from './fiscal-receipt'
 import { buildReceiptQrData } from './virtual-device'
 
 interface SaleDoc extends FiscalSaleInput {
   id: string | number
+  uuid?: unknown
   tenant?: unknown
   terminal?: unknown
   receipt?: unknown
@@ -32,11 +34,16 @@ function relId(v: unknown): string | number | undefined {
   return undefined
 }
 
-/** Build + persist a `receipts` row for a closed sale; link it back on the sale. */
+/**
+ * Build + persist a `receipts` row for a closed sale; link it back on the sale,
+ * then emit `receipt:issued` (the [[event]] membrane) so the e-receipt is
+ * delivered to the customer via the notification fan-out (alternative regime).
+ */
 export async function createReceiptForSale(
   payload: Payload,
   sale: SaleDoc,
   req?: PayloadRequest,
+  emitter: EventEmitterService = eventEmitter,
 ): Promise<{ id: string | number }> {
   const fr = buildFiscalReceipt(sale)
   // НАП fiscal QR (device*УНП*date*time*sum) — required on the e-receipt (alternative regime).
@@ -73,6 +80,26 @@ export async function createReceiptForSale(
     req,
     data: { receipt: receipt.id, fiscalReceiptNumber: fr.unp } as never,
   })
+
+  // Emit `receipt:issued` — the delivery membrane. The notification fan-out
+  // e-mails the e-receipt (УНП + QR) to the customer (alternative regime).
+  await emitter.emit({
+    eventId: uuid(),
+    eventType: 'receipt:issued',
+    tenantId: relId(sale.tenant) !== undefined ? String(relId(sale.tenant)) : 'unknown',
+    // `event` skill: key the aggregate by the receipt's content-uuid, not the row id.
+    aggregateId: String((receipt as { uuid?: unknown }).uuid ?? receipt.id),
+    aggregateType: 'receipt',
+    timestamp: new Date(),
+    payload: {
+      receiptId: receipt.id,
+      unp: fr.unp,
+      total: fr.total,
+      vatTotal: fr.vatTotal,
+      currency: fr.currency,
+      qrData,
+    },
+  } as unknown as Parameters<typeof emitter.emit>[0])
 
   return receipt
 }
