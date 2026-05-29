@@ -43,7 +43,6 @@ export const FormBlock: React.FC<
     form: { id: formID, confirmationMessage, confirmationType, redirect, submitButtonLabel } = {},
     introContent,
   } = props
-  const numericFormID = typeof formID === 'string' ? Number(formID) : formID
   const formElementID = String(formID ?? 'form')
 
   const formMethods = useForm<Record<string, unknown>>({
@@ -74,7 +73,7 @@ export const FormBlock: React.FC<
           value: typeof value === 'string' ? value : JSON.stringify(value ?? ''),
         }))
 
-        if (typeof numericFormID !== 'number' || Number.isNaN(numericFormID)) {
+        if (!formID) {
           setError({
             message: t('invalid-form-id'),
           })
@@ -90,7 +89,7 @@ export const FormBlock: React.FC<
           await getPayloadSdk().create({
             collection: 'form-submissions',
             data: {
-              form: numericFormID,
+              form: formID,
               submissionData: dataToSend,
             },
           })
@@ -126,7 +125,7 @@ export const FormBlock: React.FC<
 
       void submitForm()
     },
-    [router, numericFormID, redirect, confirmationType, t],
+    [router, formID, redirect, confirmationType, t],
   )
 
   return (
@@ -152,7 +151,11 @@ export const FormBlock: React.FC<
                 {formFromProps &&
                   formFromProps.fields &&
                   formFromProps.fields?.map((field, index) => {
-                    const Field: React.FC<Record<string, unknown>> = fields?.[field.blockType as keyof typeof fields]
+                    // Runtime dispatch by blockType picks the matching field
+                    // component; TS can't relate the heterogeneous prop union.
+                    const Field = fields?.[field.blockType as keyof typeof fields] as
+                      | React.FC<Record<string, unknown>>
+                      | undefined
                     if (Field) {
                       return (
                         <div className="mb-6 last:mb-0" key={index}>
