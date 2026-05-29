@@ -1548,6 +1548,10 @@ src/services/evidence-attestation.ts:21: * @standard ISO-19005-2:2011 pdf-a-2
 src/services/evidence-attestation.ts:22: * @standard ISO-14289-1:2014 pdf-ua-1
 src/services/evidence-attestation.ts:23: * @standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile
 src/services/evidence-attestation.ts:24: * @standard ISO-8601-1:2019 date-time
+src/services/export/standards-import.ts:22: * @standard ISO-20022 camt.053 bank-to-customer-statement
+src/services/export/standards-import.ts:23: * @standard Peppol-BIS-3.0 billing
+src/services/export/standards-import.ts:24: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
+src/services/export/standards-import.ts:25: * @standard UBL-2.1 universal-business-language
 src/services/export/standards.service.ts:124: * @standard RFC-6838 mime-type
 src/services/export/standards.service.ts:20: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/export/standards.service.ts:21: * @standard Peppol-BIS-3.0 billing
@@ -5112,6 +5116,7 @@ src/services/error-uuid/index.test.ts:16: * @audit Conservation Law 64 errors-ar
 src/services/error-uuid/index.ts:51: * @audit Conservation Law 64 errors-are-first-class-uuids
 src/services/event-emitter.service.ts:10: * @audit ISO-19011:2018 audit-trail
 src/services/evidence-attestation.ts:25: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
+src/services/export/standards-import.ts:26: * @audit ISO-19011:2018 audit-trail
 src/services/export/standards.service.ts:27: * @audit ISO-19011:2018 audit-trail
 src/services/financial-reporting.service.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/gl-account-resolver.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
