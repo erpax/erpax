@@ -1828,6 +1828,9 @@ src/services/supto/audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software
 src/services/supto/audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
 src/services/supto/audit-file.ts:17: * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/services/supto/audit-file.ts:18: * @standard OECD SAF-T 2.0 (universal base profile)
+src/services/supto/fiscal-receipt.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/fiscal-receipt.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО касов-бон
+src/services/supto/fiscal-receipt.ts:14: * @standard BG Наредба-Н-18 §СУПТО касов-бон УНП-on-receipt
 src/services/supto/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
 src/services/supto/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
@@ -1835,6 +1838,10 @@ src/services/supto/sale-event.ts:8: * @standard BG Наредба-Н-18 §СУП
 src/services/supto/sale-immutability.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/sale-immutability.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
 src/services/supto/sale-immutability.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
+src/services/supto/submit-audit-file.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/submit-audit-file.test.ts:6: * @standard BG Наредба-Н-18 §Приложение-38
+src/services/supto/submit-audit-file.ts:8: * @standard BG Наредба-Н-18 §Приложение-38 audit-file-submission
+src/services/supto/submit-audit-file.ts:9: * @standard OECD SAF-T 2.0 (universal base)
 src/services/supto/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
 src/services/supto/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
@@ -5246,9 +5253,11 @@ src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
 src/services/supto/audit-file.ts:19: * @audit ISO-19011:2018 §6.4 audit-evidence
+src/services/supto/fiscal-receipt.ts:15: * @audit ISO-19011:2018 audit-trail
 src/services/supto/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
 src/services/supto/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/supto/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
+src/services/supto/submit-audit-file.ts:10: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/services/supto/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
 src/services/tenant-roles/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
