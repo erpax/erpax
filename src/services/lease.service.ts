@@ -212,7 +212,8 @@ export interface PeriodDecomposition {
  *
  *   interest = openingLiability × periodicRate
  *   principal = cashPayment − interest (clipped at openingLiability)
- *   closingLiability = openingLiability + interest − principal
+ *   closingLiability = openingLiability − principal
+ *                    = openingLiability × (1 + periodicRate) − cashPayment
  *
  *   rouAmortisation = openingRou / remainingPeriods
  *   closingRou = openingRou − rouAmortisation
@@ -230,9 +231,23 @@ export const calculatePeriod = (
     openingRou: number
     remainingPeriods: number
     isFinalPeriod: boolean
+    /**
+     * Defaults to 'in_arrears' (payment at period end, interest accrues
+     * on the full opening balance). For 'in_advance' (annuity-due), the
+     * payment lands at the START of the period and reduces the
+     * balance before interest accrues, so interest is computed on
+     * (openingLiability − cashPayment). The annuity-due PV used by
+     * `presentValueOfAnnuity` already reflects this; the schedule loop
+     * must match to keep `Σ(interest + principal) = Σ payments`.
+     */
+    paymentTiming?: PaymentTiming
   },
 ): PeriodDecomposition => {
-  const interest = Math.round(args.openingLiability * args.periodicRate)
+  const interestBase =
+    args.paymentTiming === 'in_advance'
+      ? Math.max(0, args.openingLiability - args.cashPayment)
+      : args.openingLiability
+  const interest = Math.round(interestBase * args.periodicRate)
   let principalRepayment = args.cashPayment - interest
   if (principalRepayment > args.openingLiability) {
     // Final period: cap principal at the remaining liability.
@@ -240,7 +255,14 @@ export const calculatePeriod = (
   }
   if (principalRepayment < 0) principalRepayment = 0
 
-  let closingLiability = args.openingLiability + interest - principalRepayment
+  // Standard effective-interest amortisation (IFRS 16 §36 / ASC 842):
+  //   closingLiability = openingLiability × (1 + r) − cashPayment
+  //                    = openingLiability − principal
+  // The previous form `openingLiability + interest − principal` double-
+  // counted interest because principal already absorbs it
+  // (principal = cashPayment − interest), making `Σ principal` exceed
+  // `initialLiability` by the cumulative interest.
+  let closingLiability = args.openingLiability - principalRepayment
   if (args.isFinalPeriod) {
     // Roll any rounding tail into the last period's principal so the
     // schedule sums exactly.
@@ -330,6 +352,7 @@ export const calculateAmortisationSchedule = (
       openingRou: rou,
       remainingPeriods: init.totalPeriods - i,
       isFinalPeriod: isFinal,
+      paymentTiming: lease.paymentTiming,
     })
 
     const periodEnd = new Date(start)
