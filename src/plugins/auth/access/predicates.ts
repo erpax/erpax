@@ -121,7 +121,8 @@ export const tenantScoped: Access = async ({ req }) => {
  *   }
  */
 export const adminOnly: Access = ({ req }) => {
-  if (!req.user || typeof req.user !== 'object') return false
-  const roles = (req.user as Record<string, unknown>).roles
+  const user: unknown = req.user
+  if (!user || typeof user !== 'object') return false
+  const roles = (user as Record<string, unknown>).roles
   return Array.isArray(roles) && (roles.includes('admin') || roles.includes('super-admin'))
 }
