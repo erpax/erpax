@@ -31,12 +31,17 @@ const baseReq = (): Record<string, unknown> => ({
   user: { id: 'user-1' },
   payload: {
     logger: {
-      info: () => undefined,
-      warn: () => undefined,
-      error: () => undefined,
+      info: (): void => {},
+      warn: (): void => {},
+      error: (): void => {},
     },
   },
 })
+
+/** Invoke an afterChange hook with a partial args shape (tests supply only the doc/op surface). */
+type AfterChangeArgs = Parameters<typeof invoiceAccountingHook>[0]
+const runHook = (hook: (a: AfterChangeArgs) => unknown, args: Partial<AfterChangeArgs>) =>
+  hook(args as AfterChangeArgs)
 
 describe('GL hooks — event emission regression', () => {
   let captured: AllDomainEvents[] = []
@@ -50,14 +55,14 @@ describe('GL hooks — event emission regression', () => {
       'payment:received',
       'payment:sent',
     ]) {
-      eventEmitter.subscribe(t, (e) => {
+      eventEmitter.subscribe(t, async (e) => {
         captured.push(e as AllDomainEvents)
       })
     }
   })
 
   it('invoice hook emits invoice:activated on draft → issued', async () => {
-    await invoiceAccountingHook({
+    await runHook(invoiceAccountingHook, {
       doc: {
         id: 'inv-1',
         invoiceNumber: 'INV-001',
@@ -99,7 +104,7 @@ describe('GL hooks — event emission regression', () => {
   })
 
   it('invoice hook does NOT emit on draft (status not in active set)', async () => {
-    await invoiceAccountingHook({
+    await runHook(invoiceAccountingHook, {
       doc: {
         id: 'inv-2',
         tenant: 'tenant-1',
@@ -119,7 +124,7 @@ describe('GL hooks — event emission regression', () => {
   })
 
   it('bill hook emits bill:activated on draft → approved', async () => {
-    await billAccountingHook({
+    await runHook(billAccountingHook, {
       doc: {
         id: 'bill-1',
         tenant: 'tenant-1',
@@ -154,7 +159,7 @@ describe('GL hooks — event emission regression', () => {
   })
 
   it('payment hook emits payment:received for incoming AR collection', async () => {
-    await paymentAccountingHook({
+    await runHook(paymentAccountingHook, {
       doc: {
         id: 'pay-1',
         tenant: 'tenant-1',
@@ -178,7 +183,7 @@ describe('GL hooks — event emission regression', () => {
   })
 
   it('payment hook emits payment:sent for outgoing AP disbursement', async () => {
-    await paymentAccountingHook({
+    await runHook(paymentAccountingHook, {
       doc: {
         id: 'pay-2',
         tenant: 'tenant-1',

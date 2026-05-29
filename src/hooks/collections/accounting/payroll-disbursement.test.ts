@@ -14,6 +14,10 @@
 import { describe, it, expect } from 'vitest'
 import { payrollDisbursementHook } from './payroll-disbursement.hook'
 
+/** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
+type HookArgs = Parameters<typeof payrollDisbursementHook>[0]
+const runHook = (args: Partial<HookArgs>) => payrollDisbursementHook(args as HookArgs)
+
 interface CreatedDoc {
   collection: string
   data: Record<string, unknown>
@@ -33,9 +37,9 @@ const baseReq = (
     user: { id: 'user-treasury' },
     payload: {
       logger: {
-        info: () => undefined,
-        warn: () => undefined,
-        error: () => undefined,
+        info: (): void => {},
+        warn: (): void => {},
+        error: (): void => {},
       },
       create: async (args: { collection: string; data: Record<string, unknown> }) => {
         const id = `created-${created.length + 1}`
@@ -77,7 +81,7 @@ describe('Payroll disbursement hook — status → disbursed', () => {
         payrollBankAccount: { iban: 'DE89370400440532013000' },
       },
     }
-    await payrollDisbursementHook({
+    await runHook({
       doc: {
         id: 'PR-001',
         runId: 'PR-2026-04-MONTHLY',
@@ -140,7 +144,7 @@ describe('Payroll disbursement hook — status → disbursed', () => {
         payrollBankAccount: {},
       },
     }
-    await payrollDisbursementHook({
+    await runHook({
       doc: {
         id: 'PR-002',
         runId: 'PR-2026-04-MONTHLY',
@@ -173,7 +177,7 @@ describe('Payroll disbursement hook — status → disbursed', () => {
     const employees = {
       'emp-1': { id: 'emp-1', displayName: 'X', payrollBankAccount: {} },
     }
-    await payrollDisbursementHook({
+    await runHook({
       doc: {
         id: 'PR-003',
         tenant: 'tenant-1',
@@ -196,7 +200,7 @@ describe('Payroll disbursement hook — status → disbursed', () => {
   it('skips when status not transitioning to disbursed', async () => {
     const created: CreatedDoc[] = []
     const updated: UpdatedDoc[] = []
-    await payrollDisbursementHook({
+    await runHook({
       doc: {
         id: 'PR-004',
         tenant: 'tenant-1',
@@ -218,7 +222,7 @@ describe('Payroll disbursement hook — status → disbursed', () => {
   it('idempotent — does not re-create when paymentRun already linked', async () => {
     const created: CreatedDoc[] = []
     const updated: UpdatedDoc[] = []
-    await payrollDisbursementHook({
+    await runHook({
       doc: {
         id: 'PR-005',
         tenant: 'tenant-1',
@@ -240,7 +244,7 @@ describe('Payroll disbursement hook — status → disbursed', () => {
   it('handles depth-populated employee object (no extra fetch needed)', async () => {
     const created: CreatedDoc[] = []
     const updated: UpdatedDoc[] = []
-    await payrollDisbursementHook({
+    await runHook({
       doc: {
         id: 'PR-006',
         tenant: 'tenant-1',

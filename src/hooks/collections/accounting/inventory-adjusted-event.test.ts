@@ -25,12 +25,16 @@ const baseReq = (): Record<string, unknown> => ({
   user: { id: 'user-1' },
   payload: {
     logger: {
-      info: () => undefined,
-      warn: () => undefined,
-      error: () => undefined,
+      info: (): void => {},
+      warn: (): void => {},
+      error: (): void => {},
     },
   },
 })
+
+/** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
+type HookArgs = Parameters<typeof inventoryMovementPostingHook>[0]
+const runHook = (args: Partial<HookArgs>) => inventoryMovementPostingHook(args as HookArgs)
 
 describe('inventory:adjusted — hook emission', () => {
   let captured: InventoryAdjustedEvent[] = []
@@ -40,13 +44,13 @@ describe('inventory:adjusted — hook emission', () => {
     // don't double-fire and inflate the captured count (Slice F isolation fix).
     eventEmitter.clearHandlers('inventory:adjusted')
     captured = []
-    eventEmitter.subscribe('inventory:adjusted', (e) => {
+    eventEmitter.subscribe('inventory:adjusted', async (e) => {
       captured.push(e as InventoryAdjustedEvent)
     })
   })
 
   it('emits for transfer kind on status → posted', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-001',
         movementId: 'MV-T-1',
@@ -77,7 +81,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('emits for adjustment (count down — shrinkage)', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-002',
         movementId: 'MV-ADJ-1',
@@ -105,7 +109,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('emits for write_off (IAS 2 §28 NRV)', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-003',
         tenant: 'tenant-1',
@@ -131,7 +135,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('emits for consumption (Dr WIP / Cr Inventory)', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-004',
         tenant: 'tenant-1',
@@ -156,7 +160,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('SKIPS receipt — covered by bill:activated → inventory:purchased', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-skip-1',
         tenant: 'tenant-1',
@@ -179,7 +183,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('SKIPS sale — covered by invoice:activated → inventory:sold', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-skip-2',
         tenant: 'tenant-1',
@@ -202,7 +206,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('SKIPS opening — initial balance, no JE needed', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-skip-3',
         tenant: 'tenant-1',
@@ -225,7 +229,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('does not emit when status not transitioning to posted', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-no-trans',
         tenant: 'tenant-1',
@@ -247,7 +251,7 @@ describe('inventory:adjusted — hook emission', () => {
   })
 
   it('idempotent — does not re-emit when journalEntry already linked', async () => {
-    await inventoryMovementPostingHook({
+    await runHook({
       doc: {
         id: 'IM-idempotent',
         tenant: 'tenant-1',

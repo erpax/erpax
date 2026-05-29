@@ -20,9 +20,13 @@
  * @see src/plugins/accounting/hooks/payroll-run.hook.ts
  */
 
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { payrollRunPostingHook } from './payroll-run.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
+
+/** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
+type HookArgs = Parameters<typeof payrollRunPostingHook>[0]
+const runHook = (args: Partial<HookArgs>) => payrollRunPostingHook(args as HookArgs)
 
 const tenant = 'tenant-pr'
 const user = 'user-pr'
@@ -32,9 +36,9 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
     user: { id: user },
     payload: {
       logger: {
-        info: () => undefined,
-        warn: () => undefined,
-        error: () => undefined,
+        info: (): void => {},
+        warn: (): void => {},
+        error: (): void => {},
       },
       update: async (args: { id: unknown; data: unknown }) => {
         capturedUpdate.id = args.id
@@ -45,13 +49,9 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
   }) as unknown as never
 
 describe('PayrollRuns posting hook — status → posted', () => {
-  beforeEach(() => {
-    journalEntryService.clearAllData()
-  })
-
   it('books a balanced wages JE for a 2-employee monthly run', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-001',
         runId: 'PR-2026-04-MONTHLY',
@@ -128,7 +128,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('skips zero-amount payable lines', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-002',
         tenant,
@@ -164,7 +164,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('skips when status is not transitioning to posted', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-003',
         tenant,
@@ -183,7 +183,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('idempotent — does not re-post if journalEntry already linked', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-004',
         tenant,
@@ -202,7 +202,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('splits Dr Wages Expense by cost-center for IFRS 8 / ASC 280 segments', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-CC-1',
         runId: 'PR-2026-04-MONTHLY',
@@ -306,7 +306,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('falls back to employee.department when line.costCenter is null', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-CC-2',
         tenant,
@@ -336,7 +336,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('lines with no resolvable cost-center post under costCenterId=undefined', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-CC-3',
         tenant,
@@ -365,7 +365,7 @@ describe('PayrollRuns posting hook — status → posted', () => {
 
   it('skips and warns when zero gross / no lines', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await payrollRunPostingHook({
+    await runHook({
       doc: {
         id: 'PR-005',
         tenant,

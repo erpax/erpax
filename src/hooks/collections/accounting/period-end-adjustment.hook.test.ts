@@ -16,9 +16,13 @@
  * @see src/plugins/accounting/hooks/period-end-adjustment.hook.ts
  */
 
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { periodEndAdjustmentPostingHook } from './period-end-adjustment.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
+
+/** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
+type HookArgs = Parameters<typeof periodEndAdjustmentPostingHook>[0]
+const runHook = (args: Partial<HookArgs>) => periodEndAdjustmentPostingHook(args as HookArgs)
 
 const tenant = 'tenant-pe'
 const user = 'user-pe'
@@ -28,9 +32,9 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
     user: { id: user },
     payload: {
       logger: {
-        info: () => undefined,
-        warn: () => undefined,
-        error: () => undefined,
+        info: (): void => {},
+        warn: (): void => {},
+        error: (): void => {},
       },
       update: async (args: {
         id: unknown
@@ -44,13 +48,10 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
   }) as unknown as never
 
 describe('Period-end adjustment hook — status → posted fires GL', () => {
-  beforeEach(() => {
-    journalEntryService.clearAllData()
-  })
 
   it('books a balanced JE and back-links its id on the adjustment', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await periodEndAdjustmentPostingHook({
+    await runHook({
       doc: {
         id: 'PEA-001',
         adjustmentId: 'DEP-2026-04',
@@ -94,7 +95,7 @@ describe('Period-end adjustment hook — status → posted fires GL', () => {
 
   it('skips when status is not transitioning to posted', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await periodEndAdjustmentPostingHook({
+    await runHook({
       doc: {
         id: 'PEA-002',
         adjustmentType: 'depreciation',
@@ -116,7 +117,7 @@ describe('Period-end adjustment hook — status → posted fires GL', () => {
 
   it('is idempotent — no double-post if already linked to a JE', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await periodEndAdjustmentPostingHook({
+    await runHook({
       doc: {
         id: 'PEA-003',
         adjustmentType: 'interest_accrual',
@@ -138,7 +139,7 @@ describe('Period-end adjustment hook — status → posted fires GL', () => {
 
   it('skips silently with a warning when account ids are missing', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await periodEndAdjustmentPostingHook({
+    await runHook({
       doc: {
         id: 'PEA-004',
         adjustmentType: 'other',
@@ -159,7 +160,7 @@ describe('Period-end adjustment hook — status → posted fires GL', () => {
 
   it('skips silently when amount is zero or negative', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await periodEndAdjustmentPostingHook({
+    await runHook({
       doc: {
         id: 'PEA-005',
         adjustmentType: 'inventory_variance',

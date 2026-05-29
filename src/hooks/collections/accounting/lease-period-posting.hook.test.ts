@@ -20,9 +20,13 @@
  * @see src/plugins/accounting/hooks/lease-period-posting.hook.ts
  */
 
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { leasePeriodPostingHook } from './lease-period-posting.hook'
 import { journalEntryService } from '@/services/journal-entry.service'
+
+/** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
+type HookArgs = Parameters<typeof leasePeriodPostingHook>[0]
+const runHook = (args: Partial<HookArgs>) => leasePeriodPostingHook(args as HookArgs)
 
 const tenant = 'tenant-lease'
 const user = 'user-lease'
@@ -32,9 +36,9 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
     user: { id: user },
     payload: {
       logger: {
-        info: () => undefined,
-        warn: () => undefined,
-        error: () => undefined,
+        info: (): void => {},
+        warn: (): void => {},
+        error: (): void => {},
       },
       update: async (args: { id: unknown; data: unknown }) => {
         capturedUpdate.id = args.id
@@ -45,13 +49,10 @@ const baseReq = (capturedUpdate: { id?: unknown; data?: unknown }) =>
   }) as unknown as never
 
 describe('Lease period posting — status → posted', () => {
-  beforeEach(() => {
-    journalEntryService.clearAllData()
-  })
 
   it('books the canonical 3-pair JE for a period with interest + principal + amortisation', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await leasePeriodPostingHook({
+    await runHook({
       doc: {
         id: 'LPP-001',
         postingId: 'LPP-2026-05-LEASE-001',
@@ -114,7 +115,7 @@ describe('Lease period posting — status → posted', () => {
 
   it('honors per-line GL account overrides + carries cost-center on Dr lines', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await leasePeriodPostingHook({
+    await runHook({
       doc: {
         id: 'LPP-002',
         tenant,
@@ -169,7 +170,7 @@ describe('Lease period posting — status → posted', () => {
 
   it('skips zero amounts cleanly — final period with only amortisation residual', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await leasePeriodPostingHook({
+    await runHook({
       doc: {
         id: 'LPP-003',
         tenant,
@@ -199,7 +200,7 @@ describe('Lease period posting — status → posted', () => {
 
   it('skips when status not transitioning to posted', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await leasePeriodPostingHook({
+    await runHook({
       doc: {
         id: 'LPP-004',
         tenant,
@@ -221,7 +222,7 @@ describe('Lease period posting — status → posted', () => {
 
   it('idempotent — does not re-post when journalEntry already linked', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await leasePeriodPostingHook({
+    await runHook({
       doc: {
         id: 'LPP-005',
         tenant,
@@ -244,7 +245,7 @@ describe('Lease period posting — status → posted', () => {
 
   it('skips when all amounts are zero', async () => {
     const captured: { id?: unknown; data?: unknown } = {}
-    await leasePeriodPostingHook({
+    await runHook({
       doc: {
         id: 'LPP-006',
         tenant,
