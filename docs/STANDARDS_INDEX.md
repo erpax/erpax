@@ -325,6 +325,7 @@ src/collections/FiscalCalendars/index.ts:14: * @standard SAF-T:3.0.2 (regulatory
 src/collections/FiscalCalendars/index.ts:15: * @standard XBRL (period context for financial statement generation)
 src/collections/FiscalCalendars/index.ts:16: * @standard GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)
 src/collections/FiscalCalendars/index.ts:17: * @standard SOX:2402 (audit-trail via chainLeafUuid)
+src/collections/FiscalDevices/index.ts:16: * @standard BG Наредба-Н-18 §СУПТО fiscal-device-register
 src/collections/FiscalPeriodSnapshots/index.ts:10: * @standard GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)
 src/collections/FiscalPeriodSnapshots/index.ts:11: * @standard eIDAS:2014/910/EU (signature on critical amendments)
 src/collections/FiscalPeriodSnapshots/index.ts:12: * @standard SOX:2002 (access control audit evidence, change log)
@@ -611,6 +612,7 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:24: * @standard ISO-8
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/collections/Subscriptions/index.ts:13: * @standard ISO-4217:2015 currency-codes
 src/collections/Subscriptions/index.ts:14: * @standard ISO-8601-1:2019 date-time period-start period-end
+src/collections/SuptoSales/index.ts:21: * @standard BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
 src/collections/Taggings.ts:30: * @standard ISO-25964-1:2011 thesauri associative-relationships
 src/collections/Taggings.ts:31: * @standard RFC-4122 §4.3 uuid content-addressed-dedup
 src/collections/Tags.ts:21: * @standard ISO-25964-1:2011 thesauri-and-interoperability controlled-vocabulary
@@ -1101,9 +1103,9 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1125:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1143:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1144:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1134:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1152:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1153:       * @standard ISO-4217:2015 currency-codes
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1825,6 +1827,7 @@ src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-syste
 src/services/supto/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
 src/services/supto/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
+src/services/supto/sale-event.ts:8: * @standard BG Наредба-Н-18 §СУПТО sale-lifecycle
 src/services/supto/sale-immutability.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/sale-immutability.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
 src/services/supto/sale-immutability.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
@@ -3125,6 +3128,7 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:30: * @compliance SOX
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:10: * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
 src/collections/Subscriptions/index.ts:18: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 src/collections/Subscriptions/index.ts:19: * @compliance SOX §404 internal-controls
+src/collections/SuptoSales/index.ts:25: * @compliance SOX §404 internal-controls
 src/collections/Taggings.ts:33: * @compliance SOX §404 internal-controls
 src/collections/Tags.ts:24: * @compliance SOX §404 internal-controls
 src/collections/TaxCalculations.ts:24: * @compliance SOX §404 internal-controls tax-position
@@ -3796,6 +3800,8 @@ src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:28: * @accounting US-
 src/collections/Subscriptions/index.ts:15: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/Subscriptions/index.ts:16: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Subscriptions/index.ts:17: * @accounting US-GAAP ASC-340-40 deferred-contract-costs
+src/collections/SuptoSales/index.ts:22: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/SuptoSales/index.ts:23: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/TaxCalculations.ts:22: * @accounting OECD SAF-T tax-table
 src/collections/TaxCodes.ts:19: * @accounting OECD SAF-T tax-table
 src/collections/TaxJurisdictions.ts:18: * @accounting OECD SAF-T jurisdiction-codes
@@ -3948,9 +3954,9 @@ src/jobs/dunningJob.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss impair
 src/jobs/dunningJob.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1123:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1124:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1145:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1132:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1133:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1154:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4353,6 +4359,7 @@ src/collections/ExpenseReports.ts:16: * @security ISO-27001 A.5.23 cloud-service
 src/collections/FairValueMeasurements.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/FinancialStatements.ts:29: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/FinancialStatements.ts:30: * @security ISO-27002 §5.4 segregation-of-duties certifier-vs-preparer
+src/collections/FiscalDevices/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/FiscalPeriods.ts:20: * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
 src/collections/FixedAssets.ts:31: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/FxTransactions.ts:21: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4436,6 +4443,7 @@ src/collections/Spaces.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:11: * @security ISO-27002 §8.24 use-of-cryptography
 src/collections/Subscriptions/hooks/encryptSensitiveFields.ts:12: * @security ISO-27001 A.8.24 use-of-cryptography
 src/collections/Subscriptions/index.ts:20: * @security ISO-27002 §8.24 use-of-cryptography
+src/collections/SuptoSales/index.ts:26: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Taggings.ts:34: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Tags.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/TaxCalculations.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4765,6 +4773,7 @@ src/collections/EvidenceAttestations.ts:17: * @audit ISO-19011:2018 audit-trail 
 src/collections/ExpenseReports.ts:15: * @audit ISO-19011:2018 audit-trail expense-evidence
 src/collections/FairValueMeasurements.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-fair-value
 src/collections/FinancialStatements.ts:31: * @audit ISO-19011:2018 audit-trail
+src/collections/FiscalDevices/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/collections/FiscalPeriods.ts:21: * @audit ISO-19011:2018 audit-trail status-transition
 src/collections/FixedAssets.ts:29: * @audit ISO-19011:2018 audit-trail
 src/collections/FxTransactions.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
@@ -4852,6 +4861,7 @@ src/collections/Standards.ts:31: * @audit Conservation Law 38 mcp-tool-standardi
 src/collections/SubscriptionPlans/hooks/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/collections/Subscriptions/hooks/emitLifecycleEvents.ts:29: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
 src/collections/Subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
+src/collections/SuptoSales/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/collections/Taggings.ts:32: * @audit ISO-19011:2018 audit-trail tagging-provenance
 src/collections/Tags.ts:23: * @audit ISO-19011:2018 audit-trail label-changes
 src/collections/TaxCalculations.ts:23: * @audit ISO-19011:2018 audit-trail
@@ -4985,8 +4995,8 @@ src/jobs/bnbRatesSync.ts:19: * @audit ISO-19011:2018 audit-trail external-system
 src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob.ts:16: * @audit ISO-19011:2018 audit-trail
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1126:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1146:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1135:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1155:       * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/plugins/naming.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
@@ -5231,6 +5241,7 @@ src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
 src/services/supto/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
+src/services/supto/sale-event.ts:9: * @audit ISO-19011:2018 audit-trail event-driven
 src/services/supto/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
 src/services/supto/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)

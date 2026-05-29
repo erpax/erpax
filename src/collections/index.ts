@@ -300,6 +300,10 @@ export { default as LegalEntities } from './LegalEntities'
 export { default as AiSuggestions } from './AiSuggestions'
 export { default as UsageRecords } from './UsageRecords'
 
+// СУПТО / Наредба Н-18 (BG fiscal sales)
+export { default as FiscalDevices } from './FiscalDevices'
+export { default as SuptoSales } from './SuptoSales'
+
 // Close-side analysis & compliance (named exports)
 export { Consolidations } from './Consolidations'
 export { TaxPeriods } from './TaxPeriods'

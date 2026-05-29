@@ -265,6 +265,8 @@ export interface Config {
     'audit-reports': AuditReport;
     'transfer-pricing-adjustments': TransferPricingAdjustment;
     'post-close-analytics-reports': PostCloseAnalyticsReport;
+    'fiscal-devices': FiscalDevice;
+    'supto-sales': SuptoSale;
     addresses: Address;
     variants: Variant;
     variantTypes: VariantType;
@@ -858,6 +860,12 @@ export interface Config {
     'post-close-analytics-reports': {
       tags: 'taggings';
     };
+    'fiscal-devices': {
+      tags: 'taggings';
+    };
+    'supto-sales': {
+      tags: 'taggings';
+    };
     addresses: {
       tags: 'taggings';
     };
@@ -1096,6 +1104,8 @@ export interface Config {
     'audit-reports': AuditReportsSelect<false> | AuditReportsSelect<true>;
     'transfer-pricing-adjustments': TransferPricingAdjustmentsSelect<false> | TransferPricingAdjustmentsSelect<true>;
     'post-close-analytics-reports': PostCloseAnalyticsReportsSelect<false> | PostCloseAnalyticsReportsSelect<true>;
+    'fiscal-devices': FiscalDevicesSelect<false> | FiscalDevicesSelect<true>;
+    'supto-sales': SuptoSalesSelect<false> | SuptoSalesSelect<true>;
     addresses: AddressesSelect<false> | AddressesSelect<true>;
     variants: VariantsSelect<false> | VariantsSelect<true>;
     variantTypes: VariantTypesSelect<false> | VariantTypesSelect<true>;
@@ -2237,6 +2247,14 @@ export interface Tagging {
     | {
         relationTo: 'post-close-analytics-reports';
         value: string | PostCloseAnalyticsReport;
+      }
+    | {
+        relationTo: 'fiscal-devices';
+        value: string | FiscalDevice;
+      }
+    | {
+        relationTo: 'supto-sales';
+        value: string | SuptoSale;
       }
     | {
         relationTo: 'addresses';
@@ -20761,6 +20779,101 @@ export interface PostCloseAnalyticsReport {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-devices".
+ */
+export interface FiscalDevice {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * 8-digit ФУ individual number assigned by the manufacturer — first УНП segment.
+   */
+  individualNumber: string;
+  model?: string | null;
+  manufacturer?: string | null;
+  status?: ('active' | 'decommissioned') | null;
+  registeredAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "supto-sales".
+ */
+export interface SuptoSale {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Unique sales number (УНП) — assigned + frozen on create.
+   */
+  unp?: string | null;
+  unpSequence?: number | null;
+  /**
+   * 8-digit ФУ id — scopes the УНП sequence.
+   */
+  fiscalDeviceNumber: string;
+  fiscalDevice?: (string | null) | FiscalDevice;
+  operatorCode?: string | null;
+  saleDate: string;
+  status?: ('open' | 'closed' | 'voided' | 'reversed') | null;
+  items?:
+    | {
+        description?: string | null;
+        quantity?: number | null;
+        unitPrice?: number | null;
+        vatRate?: number | null;
+        amount?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  total?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  paymentType?: ('cash' | 'card' | 'bank_transfer' | 'voucher') | null;
+  /**
+   * Касов бон number — carries the УНП.
+   */
+  fiscalReceiptNumber?: string | null;
+  reversalOf?: (string | null) | SuptoSale;
+  reversedBy?: (string | null) | SuptoSale;
+  reversalReason?: string | null;
+  closedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  /**
+   * Taggings on this record (reverse of taggings.taggable).
+   */
+  tags?: {
+    docs?: (string | Tagging)[];
+    hasNextPage?: boolean;
+    totalDocs?: number;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "form-submissions".
  */
 export interface FormSubmission {
@@ -22052,6 +22165,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'post-close-analytics-reports';
         value: string | PostCloseAnalyticsReport;
+      } | null)
+    | ({
+        relationTo: 'fiscal-devices';
+        value: string | FiscalDevice;
+      } | null)
+    | ({
+        relationTo: 'supto-sales';
+        value: string | SuptoSale;
       } | null)
     | ({
         relationTo: 'addresses';
@@ -29521,6 +29642,64 @@ export interface PostCloseAnalyticsReportsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fiscal-devices_select".
+ */
+export interface FiscalDevicesSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  individualNumber?: T;
+  model?: T;
+  manufacturer?: T;
+  status?: T;
+  registeredAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "supto-sales_select".
+ */
+export interface SuptoSalesSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  unp?: T;
+  unpSequence?: T;
+  fiscalDeviceNumber?: T;
+  fiscalDevice?: T;
+  operatorCode?: T;
+  saleDate?: T;
+  status?: T;
+  items?:
+    | T
+    | {
+        description?: T;
+        quantity?: T;
+        unitPrice?: T;
+        vatRate?: T;
+        amount?: T;
+        id?: T;
+      };
+  total?: T;
+  currency?: T;
+  paymentType?: T;
+  fiscalReceiptNumber?: T;
+  reversalOf?: T;
+  reversedBy?: T;
+  reversalReason?: T;
+  closedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  tags?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "addresses_select".
  */
 export interface AddressesSelect<T extends boolean = true> {
@@ -30543,6 +30722,8 @@ export interface TaskCreateCollectionExport {
       | 'audit-reports'
       | 'transfer-pricing-adjustments'
       | 'post-close-analytics-reports'
+      | 'fiscal-devices'
+      | 'supto-sales'
       | 'addresses'
       | 'variants'
       | 'variantTypes'

@@ -257,6 +257,9 @@ const {
   AuditReports,
   TransferPricingAdjustments,
   PostCloseAnalyticsReports,
+  // СУПТО / Наредба Н-18
+  FiscalDevices,
+  SuptoSales,
 } = allCollections
 import type { CollectionConfig, CollectionSlug } from 'payload'
 import { Footer } from './components/Footer/config'
@@ -689,6 +692,9 @@ export default buildConfig({
     AuditReports,
     TransferPricingAdjustments,
     PostCloseAnalyticsReports,
+    // СУПТО / Наредба Н-18 (BG fiscal sales)
+    FiscalDevices,
+    SuptoSales,
   ],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
@@ -953,6 +959,9 @@ export default buildConfig({
         'audit-reports': {},
         'transfer-pricing-adjustments': {},
         'post-close-analytics-reports': {},
+        // СУПТО / Наредба Н-18 (BG fiscal sales) — tenant-scoped
+        'fiscal-devices': {},
+        'supto-sales': {},
       },
       tenantField: {
         defaultValue: async ({ req }) => {
