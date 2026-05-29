@@ -27,26 +27,11 @@
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
 import { TaxPeriodReconciliation } from '../services/TaxPeriodReconciliation'
+import type { FiscalPeriod } from '../payload-types'
 
-interface FiscalPeriodRecord {
-  id: string
-  periodEndDate: string
-  [key: string]: unknown
-}
-
-interface TransferPricingAdjustmentRecord {
-  fromEntity: string
-  toEntity: string
-  jurisdiction: string
-  transactionType: string
-  originalAmount: number
-  adjustedAmount: number
-  adjustmentReason: string
-  methodUsed: string
-  supportingDocumentation?: string
-  adjustmentDate: string
-  [key: string]: unknown
-}
+type TransferPricingAdjustmentInput = Parameters<
+  typeof TaxPeriodReconciliation.assessTaxPeriodReadiness
+>[2][number]
 
 interface TaxPeriodData {
   id?: string
@@ -55,7 +40,6 @@ interface TaxPeriodData {
   taxPeriodEndDate: string
   fiscalPeriodId?: string | { id: string }
   taxStatus?: string
-  transferPricingAdjustments?: TransferPricingAdjustmentRecord[]
   jurisdictionStatuses?: Array<{
     jurisdiction: string
     taxStatus: string
@@ -94,8 +78,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
       })
 
       if (fiscalQuery.docs.length > 0) {
-        const fiscal = fiscalQuery.docs[0] as FiscalPeriodRecord
-        fiscalPeriodEndDate = fiscal.periodEndDate
+        fiscalPeriodEndDate = (fiscalQuery.docs[0] as FiscalPeriod).endDate
       }
     } catch (err) {
       console.warn('[validateTaxPeriodClosing] Failed to query fiscal period:', err)
@@ -113,14 +96,14 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   }
 
   // Query transfer pricing adjustments for this tax period + jurisdiction
-  const transferPricingAdjustments: TransferPricingAdjustmentRecord[] = []
+  const transferPricingAdjustments: TransferPricingAdjustmentInput[] = []
 
   try {
     const tpQuery = await payload.find({
       collection: 'transfer-pricing-adjustments',
       where: {
         and: [
-          { jurisdiction: { equals: data.taxJurisdiction } },
+          { taxJurisdiction: { equals: data.taxJurisdiction } },
           { adjustmentDate: {
               less_than_equal: data.taxPeriodEndDate,
             } },
@@ -128,12 +111,11 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
       },
     })
 
-    for (const tp of tpQuery.docs) {
-      const doc = tp as TransferPricingAdjustmentRecord
+    for (const doc of tpQuery.docs) {
       transferPricingAdjustments.push({
         fromEntity: doc.fromEntity,
         toEntity: doc.toEntity,
-        jurisdiction: doc.jurisdiction,
+        jurisdiction: doc.taxJurisdiction,
         transactionType: doc.transactionType,
         originalAmount: doc.originalAmount,
         adjustedAmount: doc.adjustedAmount,
