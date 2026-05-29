@@ -17,7 +17,7 @@ import type { ScopeResourceCollection } from './types'
 export type AddRoleResource =
   | undefined
   | ScopeResourceCollection
-  | { collection: ScopeResourceCollection; id: number }
+  | { collection: ScopeResourceCollection; id: string }
 
 async function findRoleDefinition(
   payload: Payload,
@@ -80,13 +80,13 @@ async function findRoleDefinition(
     const rel = res as { relationTo: string; value: unknown }
     if (rel.relationTo !== collection) continue
     const vid =
-      typeof rel.value === 'number'
+      typeof rel.value === 'string'
         ? rel.value
         : rel.value &&
             typeof rel.value === 'object' &&
             'id' in rel.value &&
-            typeof (rel.value as { id: unknown }).id === 'number'
-          ? (rel.value as { id: number }).id
+            typeof (rel.value as { id: unknown }).id === 'string'
+          ? (rel.value as { id: string }).id
           : undefined
     if (vid === id) return doc
   }
@@ -150,7 +150,7 @@ async function findOrCreateRoleDefinition(
 }
 
 export type MutationArgs = {
-  userId: number
+  userId: string
   roleName: string
   resource?: AddRoleResource
   /** Default true — system / admin callers. */
@@ -202,7 +202,7 @@ export async function removeRole(payload: Payload, req: PayloadRequest, args: Mu
   for (const row of rows.docs) {
     await payload.delete({
       collection: 'user-roles',
-      id: extractID(row as { id: number }),
+      id: extractID(row),
       overrideAccess,
       req,
     })
