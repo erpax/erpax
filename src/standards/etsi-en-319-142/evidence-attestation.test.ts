@@ -84,9 +84,9 @@ describe('signEvidenceAttestation — dispatch', () => {
       { certPem: 'C', keyPem: 'K', signCms: async () => new Uint8Array() },
     )
     expect(result.ok).toBe(false)
-    if (!result.ok) {
-      expect(result.error).toMatch(/no qualified-seal signer registered/)
-    }
+    expect((result as { ok: false; error: string }).error).toMatch(
+      /no qualified-seal signer registered/,
+    )
   })
 
   it('refuses BG signing when cert/key missing (per-tenant config required)', async () => {

@@ -479,7 +479,7 @@ describe('FEATURE 2: Relationship Constraints', () => {
         email: 'test@example.com',
         name: 'John Doe',
         role: 'user',
-        department: null,
+        department: null as string | null,
       }
       const errors = await discovery.validateRelationships('users', data)
       expect(errors).toHaveLength(0)

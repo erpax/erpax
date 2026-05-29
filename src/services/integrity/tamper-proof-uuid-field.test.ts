@@ -21,7 +21,7 @@ describe('tamperProofUuidField', () => {
   it('returns a single-field array for clean spread', () => {
     const fields = tamperProofUuidField('invoices')
     expect(fields).toHaveLength(1)
-    expect(fields[0]!.name).toBe('uuid')
+    expect((fields[0] as { name?: string }).name).toBe('uuid')
     expect(fields[0]!.type).toBe('text')
   })
 

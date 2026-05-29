@@ -118,7 +118,7 @@ describe('FinanceAgent.onChainStep', () => {
     })
     const journalEmit = out.find((e) => e.kind === 'emit' && e.event.id === 'journal:posted')
     expect(journalEmit).toBeDefined()
-    expect((journalEmit as { event: { payload: { action: string } } }).event.payload.action).toBe('bank-reconciliation')
+    expect((journalEmit as unknown as { event: { payload: { action: string } } }).event.payload.action).toBe('bank-reconciliation')
   })
 
   it('emits only the audit leaf for unrecognised actions on owned collections', async () => {

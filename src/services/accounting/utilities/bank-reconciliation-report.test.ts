@@ -42,7 +42,6 @@ const user = 'user-recon'
 describe('Bank reconciliation — canonical IAS-7 surface', () => {
   beforeEach(() => {
     bankReconciliationService.clearAllData()
-    journalEntryService.clearAllData()
   })
 
   it('exposes the canonical public surface', () => {

@@ -92,7 +92,7 @@ describe('SAF-T export — buildGeneralLedgerAccounts', () => {
         },
       ],
     }) as never
-    const accounts = await buildGeneralLedgerAccounts(payload, 'tenant-1')
+    const accounts = await buildGeneralLedgerAccounts(payload, 'tenant-1', '2026-01-01', '2026-12-31', 'EUR')
     expect(accounts).toHaveLength(2)
     expect(accounts[0].accountType).toBe('S') // synthesis
     expect(accounts[1].accountType).toBe('M') // movement

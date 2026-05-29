@@ -35,7 +35,7 @@ const FAKE_LEAF: UuidLinkedLeaf = {
   prevUuid: '00000000-0000-5000-8000-000000aaaaaa',
   occurredAt: '2026-05-11T08:00:00.000Z',
   payloadUuid: '00000000-0000-5000-8000-000000bbbbbb',
-} as UuidLinkedLeaf
+} as unknown as UuidLinkedLeaf
 
 const INPUT = {
   tenantId: 'tenant-1',

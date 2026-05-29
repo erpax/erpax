@@ -114,7 +114,7 @@ describe('generatePreviewPath', () => {
       const result = generatePreviewPath({
         collection: 'pages',
         slug: 'about',
-        locale: { code: 'fr' },
+        locale: { code: 'fr' } as Parameters<typeof generatePreviewPath>[0]['locale'],
       })
       expect(pathFromPreview(result)).toBe('/fr/about')
     })

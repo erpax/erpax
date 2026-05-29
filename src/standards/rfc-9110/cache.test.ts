@@ -194,7 +194,7 @@ describe('payloadCache', () => {
     })
 
     it('handles Locale object with code property', () => {
-      const locale = { code: 'es' }
+      const locale = { code: 'es' } as Parameters<typeof getCachedPayloadLocalizedDocument>[2]
       const fetcher = getCachedPayloadLocalizedDocument('pages', 'home', locale)
       expect(typeof fetcher).toBe('function')
     })

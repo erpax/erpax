@@ -33,7 +33,7 @@ describe('tenantScopedRead access', () => {
   })
 
   const anonReq = { user: null, payload: {} } as Parameters<typeof tenantScopedCollectionReadAccess>[0]['req']
-  const authReq = { user: { id: 1 }, payload: {} } as Parameters<
+  const authReq = { user: { id: 1 }, payload: {} } as unknown as Parameters<
     typeof tenantScopedCollectionReadAccess
   >[0]['req']
 

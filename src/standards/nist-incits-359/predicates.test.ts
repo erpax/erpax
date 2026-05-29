@@ -41,7 +41,7 @@ describe('permission predicates', () => {
     scopedCollection: null,
     resource: {
       relationTo: 'posts',
-      value: 42,
+      value: 'post-42',
     },
   }
 

@@ -47,7 +47,7 @@ describe('BG_COUNTRY_BUNDLE — canonical merge', () => {
   })
 
   it('declares EUR + IFRS at the profile level', () => {
-    expect(BG_COUNTRY_BUNDLE.profile.reportingCurrency).toBe('EUR')
+    expect(BG_COUNTRY_BUNDLE.profile.currency).toBe('EUR')
     expect(BG_COUNTRY_BUNDLE.profile.accountingStandard).toBe('IFRS')
   })
 
