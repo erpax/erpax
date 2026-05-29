@@ -2367,8 +2367,8 @@ src/testing/config-discovery-advanced.test.ts:4: * @standard ISO/IEC-29119:2022 
 src/testing/config-discovery-advanced.test.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 src/testing/config-discovery-types.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/config-discovery-types.ts:5: * @standard JSON-Schema 2020-12 schema-validation
-src/testing/config-discovery.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
-src/testing/config-discovery.test.ts:6: * @standard JSON-Schema 2020-12 schema-validation
+src/testing/config-discovery.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/testing/config-discovery.test.ts:5: * @standard JSON-Schema 2020-12 schema-validation
 src/testing/config-discovery.ts:1169: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/config-discovery.ts:1182: * @standard ISO/IEC-29119:2022 software-testing
 src/testing/config-discovery.ts:1192: * @standard ISO/IEC-29119:2022 software-testing
@@ -2797,7 +2797,7 @@ src/standards/rfc-9110/get-redirects.ts:5: * @rfc 9110 §15.4 redirection-3xx
 src/standards/rfc-9110/index.ts:4: * @rfc 9110 §13 caching
 src/testing/config-discovery-advanced.test.ts:6: * @rfc 8259 json
 src/testing/config-discovery-types.ts:6: * @rfc 8259 json
-src/testing/config-discovery.test.ts:7: * @rfc 8259 json
+src/testing/config-discovery.test.ts:6: * @rfc 8259 json
 src/testing/config-discovery.ts:9: * @rfc 8259 json
 src/testing/index.ts:12: * @rfc 8259 json
 src/types/events.ts:6: * @rfc 9562 uuid event-id
