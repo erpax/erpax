@@ -133,6 +133,27 @@ function resolveWiki(target: string): string {
   return wikiMap[t] ?? '/' + t + '/SKILL'
 }
 
+// Surface the frontmatter `description` (the "Use when…" trigger) as a rendered
+// lead right after the H1 — a subtitle AND indexed by local search. Otherwise the
+// trigger text lives only in frontmatter, invisible to the search = skills prompt.
+function skillLead(md: MarkdownIt): void {
+  md.core.ruler.push('skill-lead', (state) => {
+    const env = state.env as { relativePath?: string; frontmatter?: { description?: string } }
+    if (!env?.relativePath?.endsWith('SKILL.md')) return
+    const desc = env.frontmatter?.description
+    if (!desc) return
+    const i = state.tokens.findIndex((t) => t.type === 'heading_close')
+    if (i < 0) return
+    const esc = desc.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    const token = new (state as unknown as {
+      Token: new (t: string, g: string, n: number) => { content: string; block: boolean }
+    }).Token('html_block', '', 0)
+    token.content = `<p class="skill-lead"><em>${esc}</em></p>\n`
+    token.block = true
+    state.tokens.splice(i + 1, 0, token as unknown as (typeof state.tokens)[number])
+  })
+}
+
 // Render the path-computed relations into the page CONTENT (not just data) so
 // they are visible, click-navigable, AND indexed by local search (the search
 // IS the skills prompt). Same derivation as the frontmatter — relationsFromPath.
@@ -248,6 +269,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       wikilinks(md)
+      skillLead(md)
       skillRelations(md)
     },
   },
