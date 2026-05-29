@@ -1822,6 +1822,12 @@ src/services/storage-redundancy/index.ts:8: * @standard ISO/IEC 9075-2:2016 §4.
 src/services/streams/index.ts:45: * @standard ReactiveX / W3C Streams API (AsyncIterable surface)
 src/services/streams/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
+src/services/supto/reverse-sale.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/reverse-sale.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО сторно
+src/services/supto/reverse-sale.ts:12: * @standard BG Наредба-Н-18 §СУПТО сторно reversal-preserves-original
+src/services/supto/sale-immutability.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/services/supto/sale-immutability.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only
+src/services/supto/sale-immutability.ts:13: * @standard BG Наредба-Н-18 §СУПТО no-delete · reversal-only · data-preservation
 src/services/supto/unp-sequence.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/services/supto/unp-sequence.test.ts:6: * @standard BG Наредба-Н-18 §СУПТО УНП
 src/services/supto/unp-sequence.ts:16: * @standard BG Наредба-Н-18 §СУПТО УНП per-fiscal-device-gapless-sequence
@@ -3405,6 +3411,7 @@ src/services/spec-generator/extractor.ts:15: *   @compliance    <body> <id> [fre
 src/services/spec-generator/marketing-page-generator.ts:44: * @compliance SOX §404 process-walk-through-controls
 src/services/spec-generator/multimedia-generator.ts:33: * @compliance SOX §404 process-walk-through-controls
 src/services/spec-generator/multimedia-generator.ts:34: * @compliance ISO-27001 A.5.36 conformance-with-policies
+src/services/supto/sale-immutability.ts:15: * @compliance SOX §404 internal-controls
 src/services/tenant.service.ts:13: * @compliance GDPR Art.28 processor
 src/services/tenant.service.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/workflow/index.ts:24: * @compliance SOX §404 internal-controls workflow-execution
@@ -5223,6 +5230,8 @@ src/services/spec-generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.
 src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
+src/services/supto/reverse-sale.ts:13: * @audit ISO-19011:2018 audit-trail
+src/services/supto/sale-immutability.ts:14: * @audit ISO-19011:2018 audit-trail
 src/services/supto/unp-sequence.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
 src/services/tenant-roles/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
