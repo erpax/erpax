@@ -130,7 +130,9 @@ interface KPIMetric {
   targetValue: number
   benchmark?: number
   unit: string
-  assessment: 'on-track' | 'at-risk' | 'off-track'
+  // Two real assessment scales coexist on a financial scorecard:
+  // target-tracking (variance metrics) and benchmark-strength (ratio metrics).
+  assessment: 'on-track' | 'at-risk' | 'off-track' | 'strong' | 'adequate' | 'weak'
   trend: 'improving' | 'stable' | 'deteriorating'
   variance: number
   variancePercent: number
@@ -601,7 +603,7 @@ export class PostCloseAnalytics {
       riskProfile: ratioReport.solvencyRatios.debtToEquity.assessment === 'strong' ? 80 : 65,
     }
 
-    const alerts = []
+    const alerts: NonNullable<ManagementReportingSummary['alerts']> = []
     if (varianceReport.totalVariancePercent < -10) {
       alerts.push({
         severity: 'critical',
