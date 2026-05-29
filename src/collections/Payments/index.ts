@@ -6,6 +6,7 @@ import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { paymentsBeforeValidate } from './hooks/beforeValidate'
 import { paymentsBeforeChange } from './hooks/beforeChange'
 import { paymentsAfterChange } from './hooks/afterChange'
+import { invoicePaidTotals } from './hooks/recomputeInvoicePaid'
 
 /**
  * Payments — money-movement records with GL posting + period-lock guard.
@@ -65,7 +66,9 @@ export const Payments: CollectionConfig = {
     afterChange: [
       ...(Array.isArray(paymentsAfterChange) ? paymentsAfterChange : [paymentsAfterChange]),
       auditTrailAfterChange('payments'),
+      invoicePaidTotals.afterChange,
     ],
+    afterDelete: [invoicePaidTotals.afterDelete],
   },
   timestamps: true,
   fields: [

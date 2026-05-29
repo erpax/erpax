@@ -57,6 +57,7 @@ docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:420: * @standar
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:457: * @standard IFRS-1 Presentation of Financial Statements
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:458: * @standard US-GAAP ASC-210 Balance Sheet
 src/access/auth.ts:11: * @standard OWASP-ASVS V4 access-control
+src/access/auth.ts:184: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/access/auth.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/auth.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/access/feature-registry.ts:26: * @standard ISO/IEC 25010:2023 quality-model functional-suitability
@@ -379,18 +380,19 @@ src/collections/InvestmentProperties.ts:18: * @standard US-GAAP ASC-360 long-liv
 src/collections/InvestmentProperties.ts:19: * @standard ISO-4217:2015 currency-codes
 src/collections/InvestmentProperties.ts:20: * @standard ISO-8601-1:2019 date-time
 src/collections/InvoiceLines/hooks/beforeValidate.ts:10: * @standard EN-16931:2017 §BG-25 invoice-line
-src/collections/InvoiceLines/index.ts:33: * @standard EN-16931:2017 §BG-25 invoice-line
-src/collections/InvoiceLines/index.ts:34: * @standard EN-16931:2017 §BG-29 price-details
-src/collections/InvoiceLines/index.ts:35: * @standard EN-16931:2017 §BG-30 line-vat-information
-src/collections/InvoiceLines/index.ts:36: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
-src/collections/InvoiceLines/index.ts:37: * @standard EN-16931:2017 §BG-28 invoice-line-charges
-src/collections/InvoiceLines/index.ts:38: * @standard EN-16931:2017 BT-126 invoice-line-identifier
-src/collections/InvoiceLines/index.ts:39: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
-src/collections/InvoiceLines/index.ts:40: * @standard EN-16931:2017 BT-151 vat-category-code
-src/collections/InvoiceLines/index.ts:41: * @standard Peppol-BIS-3.0 billing line-detail
-src/collections/InvoiceLines/index.ts:42: * @standard UN-EDIFACT INVOIC §LIN line-segment
-src/collections/InvoiceLines/index.ts:43: * @standard ISO-4217:2015 currency-codes
-src/collections/InvoiceLines/index.ts:44: * @standard UN-CEFACT-5305 tax-category-codes
+src/collections/InvoiceLines/hooks/recomputeInvoiceTotals.ts:17: * @standard EN-16931:2017 BT-106/109/110/112/115 document-totals
+src/collections/InvoiceLines/index.ts:34: * @standard EN-16931:2017 §BG-25 invoice-line
+src/collections/InvoiceLines/index.ts:35: * @standard EN-16931:2017 §BG-29 price-details
+src/collections/InvoiceLines/index.ts:36: * @standard EN-16931:2017 §BG-30 line-vat-information
+src/collections/InvoiceLines/index.ts:37: * @standard EN-16931:2017 §BG-27 invoice-line-allowances
+src/collections/InvoiceLines/index.ts:38: * @standard EN-16931:2017 §BG-28 invoice-line-charges
+src/collections/InvoiceLines/index.ts:39: * @standard EN-16931:2017 BT-126 invoice-line-identifier
+src/collections/InvoiceLines/index.ts:40: * @standard EN-16931:2017 BT-131 invoice-line-net-amount
+src/collections/InvoiceLines/index.ts:41: * @standard EN-16931:2017 BT-151 vat-category-code
+src/collections/InvoiceLines/index.ts:42: * @standard Peppol-BIS-3.0 billing line-detail
+src/collections/InvoiceLines/index.ts:43: * @standard UN-EDIFACT INVOIC §LIN line-segment
+src/collections/InvoiceLines/index.ts:44: * @standard ISO-4217:2015 currency-codes
+src/collections/InvoiceLines/index.ts:45: * @standard UN-CEFACT-5305 tax-category-codes
 src/collections/Invoices/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/collections/Invoices/index.ts:46: * @standard EN-16931:2017 semantic-data-model-electronic-invoice
 src/collections/Invoices/index.ts:47: * @standard EN-16931:2017 §BG-22 document-totals
@@ -482,13 +484,14 @@ src/collections/PaymentRuns.ts:24: * @standard ISO-9362:2022 bic
 src/collections/PaymentRuns.ts:25: * @standard ISO-4217:2015 currency-codes
 src/collections/PaymentRuns.ts:26: * @standard ISO-8601-1:2019 date-time creation-execution
 src/collections/Payments/hooks/beforeValidate.ts:4: * @standard ISO-20022 financial-messaging
-src/collections/Payments/index.ts:22: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
-src/collections/Payments/index.ts:23: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
-src/collections/Payments/index.ts:24: * @standard ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer
-src/collections/Payments/index.ts:25: * @standard ISO-4217:2015 currency-codes
-src/collections/Payments/index.ts:26: * @standard ISO-8601-1:2019 date-time payment-date value-date
-src/collections/Payments/index.ts:27: * @standard ISO-13616-1:2020 iban
-src/collections/Payments/index.ts:28: * @standard ISO-9362:2022 bic
+src/collections/Payments/hooks/recomputeInvoicePaid.ts:14: * @standard EN-16931:2017 BT-113/115 paid-amount amount-due-for-payment
+src/collections/Payments/index.ts:23: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
+src/collections/Payments/index.ts:24: * @standard ISO-20022 pain.008 customer-direct-debit-initiation
+src/collections/Payments/index.ts:25: * @standard ISO-20022 pacs.008 fi-to-fi-customer-credit-transfer
+src/collections/Payments/index.ts:26: * @standard ISO-4217:2015 currency-codes
+src/collections/Payments/index.ts:27: * @standard ISO-8601-1:2019 date-time payment-date value-date
+src/collections/Payments/index.ts:28: * @standard ISO-13616-1:2020 iban
+src/collections/Payments/index.ts:29: * @standard ISO-9362:2022 bic
 src/collections/PayrollRuns.ts:17: * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
 src/collections/PayrollRuns.ts:18: * @standard ISO-13616-1:2020 iban
 src/collections/PayrollRuns.ts:19: * @standard ISO-9362:2022 bic
@@ -1027,6 +1030,8 @@ src/hooks/collections/accounting/period-end-adjustment.hook.test.ts:11: * @stand
 src/hooks/collections/accounting/period-end-adjustment.hook.ts:31: * @standard ISO-8601-1:2019 date-time posted-date
 src/hooks/deriveCountryFromIban.ts:10: * @standard ISO-13616-1:2020 iban
 src/hooks/deriveCountryFromIban.ts:11: * @standard ISO-3166-1:2020 country-codes alpha-2
+src/hooks/factories/recompute-parent-aggregates.ts:22: * @standard EN-16931:2017 BT-106/109/110/112 document-totals
+src/hooks/factories/recompute-parent-aggregates.ts:23: * @standard ISA-95 IEC-62264 production-order-aggregation
 src/hooks/generateReversingEntries.ts:18: * @standard IAS-34:2023 Interim closing reversals required at period start
 src/hooks/generateReversingEntries.ts:19: * @standard SAF-T:3.0.2 Reversal entries must have distinct GL accounts + posting dates
 src/hooks/populatePublishedAt.ts:4: * @standard ISO-8601-1:2019 date-time
@@ -3047,7 +3052,7 @@ src/collections/PaymentMethods/index.ts:20: * @compliance GDPR Art.32 security-o
 src/collections/PaymentRuns.ts:30: * @compliance SOX §404 internal-controls preparer-authoriser-segregation
 src/collections/Payments/hooks/afterChange.ts:16: * @compliance SOX §404 internal-controls
 src/collections/Payments/hooks/beforeChange.ts:9: * @compliance SOX §404 period-close-integrity
-src/collections/Payments/index.ts:31: * @compliance SOX §404 internal-controls
+src/collections/Payments/index.ts:32: * @compliance SOX §404 internal-controls
 src/collections/PayrollRuns.ts:28: * @compliance SOX §302 disclosure-controls
 src/collections/PayrollRuns.ts:29: * @compliance SOX §404 internal-controls four-eyes
 src/collections/PayrollRuns.ts:30: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
@@ -3271,6 +3276,7 @@ src/hooks/enforceDocumentTenantForUser.ts:19: * @compliance SOC-2 CC6.1 logical-
 src/hooks/enforceSegregationOfDuties.ts:10: * @compliance SOX §404 internal-controls four-eyes-principle
 src/hooks/enforceSegregationOfDuties.ts:11: * @compliance SOC-2 CC6.3 logical-access-controls
 src/hooks/factories/auto-populate-tenant.ts:10: * @compliance SOC-2 CC4.1 monitoring-and-evaluation
+src/hooks/factories/recompute-parent-aggregates.ts:25: * @compliance SOX §404 internal-controls total-completeness
 src/hooks/middleware/accounting/tenant-scope.ts:16: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/hooks/middleware/accounting/tenant-scope.ts:17: * @compliance GDPR Art.32 security-of-processing
 src/hooks/middleware/accounting/tenant-scope.ts:18: * @compliance SOC-2 CC6.1 logical-access-controls
@@ -3632,8 +3638,9 @@ src/collections/IntercompanyTransactions.ts:17: * @accounting US-GAAP ASC-850 re
 src/collections/InventoryMovements.ts:13: * @accounting IFRS IAS-2 §10 §36 inventories cost-formulas
 src/collections/InventoryMovements.ts:14: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/collections/InventoryMovements.ts:15: * @accounting US-GAAP ASC-606 cogs-recognition
-src/collections/InvoiceLines/index.ts:45: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
-src/collections/InvoiceLines/index.ts:46: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/hooks/recomputeInvoiceTotals.ts:18: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/index.ts:46: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/InvoiceLines/index.ts:47: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Invoices/index.ts:58: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/collections/Invoices/index.ts:59: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/collections/Items/hooks/afterChange.ts:10: * @accounting IFRS IAS-2 inventories
@@ -3684,8 +3691,9 @@ src/collections/PaymentRuns.ts:28: * @accounting US-GAAP ASC-230 statement-of-ca
 src/collections/Payments/hooks/afterChange.ts:13: * @accounting IFRS IAS-7 statement-of-cash-flows
 src/collections/Payments/hooks/afterChange.ts:14: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/collections/Payments/hooks/beforeChange.ts:8: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
-src/collections/Payments/index.ts:29: * @accounting IFRS IAS-7 statement-of-cash-flows
-src/collections/Payments/index.ts:30: * @accounting US-GAAP ASC-230 statement-of-cash-flows
+src/collections/Payments/hooks/recomputeInvoicePaid.ts:15: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/collections/Payments/index.ts:30: * @accounting IFRS IAS-7 statement-of-cash-flows
+src/collections/Payments/index.ts:31: * @accounting US-GAAP ASC-230 statement-of-cash-flows
 src/collections/PayrollRuns.ts:22: * @accounting IFRS IAS-19 employee-benefits short-term
 src/collections/PayrollRuns.ts:23: * @accounting IFRS IAS-19 §51 defined-contribution-plans
 src/collections/PayrollRuns.ts:24: * @accounting IFRS IAS-26 §13 §14 §17 retirement-benefit-plan-reporting (employer-side contributions feed the §17 plan-asset disclosures)
@@ -4223,6 +4231,7 @@ src/access/allowPublicReadTenants.ts:6: * @security ISO-27002 §5.15 access-cont
 src/access/allowPublicReadTenants.ts:7: * @security ISO-27002 §8.3 information-access-restriction
 src/access/anyone.ts:4: * @security ISO-27002 §5.15 access-control intentional-public-read
 src/access/auth.ts:10: * @security ISO-27002 §5.4 segregation-of-duties
+src/access/auth.ts:185: * @security ISO-27001 A.5.15 access-control
 src/access/auth.ts:6: * @security ISO-27001 A.5.15 access-control
 src/access/auth.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/access/auth.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -4779,7 +4788,7 @@ src/collections/PaymentRuns.ts:29: * @audit ISO-19011:2018 audit-trail
 src/collections/Payments/hooks/afterChange.ts:15: * @audit ISO-19011:2018 audit-trail double-entry-posting
 src/collections/Payments/hooks/beforeChange.ts:10: * @audit ISO-19011:2018 audit-trail
 src/collections/Payments/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
-src/collections/Payments/index.ts:32: * @audit ISO-19011:2018 audit-trail
+src/collections/Payments/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/collections/PayrollRuns.ts:27: * @audit ISO-19011:2018 audit-trail payroll-evidence
 src/collections/PerformanceObligations.ts:29: * @audit ISO-19011:2018 audit-trail po-satisfaction
 src/collections/PerformanceReviews.ts:11: * @audit ISO-19011:2018 audit-trail performance-evidence
@@ -4945,6 +4954,7 @@ src/hooks/enforceDocumentTenantForUser.ts:20: * @audit ISO-19011:2018 audit-trai
 src/hooks/enforceSegregationOfDuties.ts:12: * @audit ISO-19011:2018 audit-trail
 src/hooks/ensureUniqueSlugWithinTenant.ts:19: * @audit ISO-19011:2018 audit-trail
 src/hooks/factories/auto-populate-tenant.ts:9: * @audit ISO-19011:2018 audit-trail before-validate-hooks
+src/hooks/factories/recompute-parent-aggregates.ts:24: * @audit ISO-19011:2018 audit-trail derived-total-provenance
 src/hooks/middleware/accounting/tenant-scope.ts:19: * @audit ISO-19011:2018 audit-trail
 src/hooks/populatePublishedAt.ts:5: * @audit ISO-19011:2018 audit-trail publication-timestamp
 src/hooks/validateAddress.ts:25: * @audit ISO-19011:2018 audit-trail address-validation
