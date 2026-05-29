@@ -101,12 +101,13 @@ export const blockWriteIfSuspended = (): Access => {
 }
 
 /**
- * Allows reads but denies writes if tenant is past_due, grace_period, or suspended.
- * Useful for graceful degradation: users can read but not modify.
+ * Write gate for graceful degradation: denies the write when the tenant is
+ * past_due, grace_period, suspended, or cancelled. Payload access is scoped
+ * per operation, so assign this to `create`/`update`/`delete` only and leave
+ * `read` on a permissive gate to keep reads available during dunning.
  */
 export const allowReadDenyWriteIfPastDue = (): Access => {
-  return async (args) => {
-    const { operation, req } = args
+  return async ({ req }) => {
     const subscriptionData = await getSubscriptionForRequest(req)
 
     if (!subscriptionData) {
@@ -115,14 +116,7 @@ export const allowReadDenyWriteIfPastDue = (): Access => {
 
     const { subscription } = subscriptionData
     const writeBlockStatuses = ['past_due', 'grace_period', 'suspended', 'cancelled']
-
-    // Only block writes for these operations
-    if (['create', 'update', 'delete'].includes(operation)) {
-      return !writeBlockStatuses.includes(subscription.status)
-    }
-
-    // Allow all read operations
-    return true
+    return !writeBlockStatuses.includes(subscription.status)
   }
 }
 

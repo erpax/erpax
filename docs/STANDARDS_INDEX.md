@@ -70,7 +70,7 @@ src/access/roles-registry.ts:22: * @standard NIST INCITS-359-2012 role-based-acc
 src/access/subscriptionGates.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/access/subscriptionGates.test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/subscriptionGates.ts:12: * @standard NIST INCITS-359-2012 role-based-access-control
-src/access/subscriptionGates.ts:220: * @standard NIST INCITS-359-2012 role-based-access-control
+src/access/subscriptionGates.ts:214: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/tenantScopedRead.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/access/tenantScopedRead.test.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control
 src/agents/accounting/finance.agent.test.ts:8: * @standard ISO/IEC 25010:2023 §5.5 testability
@@ -2880,7 +2880,7 @@ src/access/isSuperAdmin.ts:8: * @compliance SOC-2 CC6.3 privileged-access-manage
 src/access/membershipAdminMutateAccess.ts:22: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/subscriptionGates.test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/subscriptionGates.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
-src/access/subscriptionGates.ts:222: * @compliance SOC-2 CC6.1 logical-access-controls
+src/access/subscriptionGates.ts:216: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/tenantScopedRead.test.ts:10: * @compliance SOC-2 CC6.1 logical-access-controls
 src/access/tenantScopedRead.test.ts:9: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/access/tenantScopedRead.ts:17: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
@@ -4244,7 +4244,7 @@ src/access/membershipAdminMutateAccess.ts:20: * @security ISO-27002 §5.15 acces
 src/access/membershipAdminMutateAccess.ts:21: * @security ISO-27002 §5.4 segregation-of-duties
 src/access/subscriptionGates.test.ts:9: * @security ISO-27002 §5.15 access-control
 src/access/subscriptionGates.ts:13: * @security ISO-27002 §5.15 access-control
-src/access/subscriptionGates.ts:221: * @security ISO-27002 §5.15 access-control feature-entitlement
+src/access/subscriptionGates.ts:215: * @security ISO-27002 §5.15 access-control feature-entitlement
 src/access/tenantScopedRead.test.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/access/tenantScopedRead.test.ts:7: * @security ISO-27002 §5.15 access-control
 src/access/tenantScopedRead.test.ts:8: * @security ISO-27002 §8.3 information-access-restriction

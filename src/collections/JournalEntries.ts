@@ -1,4 +1,4 @@
-import type { Access, CollectionConfig } from 'payload'
+import type { Access, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '../hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '../hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '../hooks/autoSetTimestamp'
@@ -43,14 +43,26 @@ import { validateBalancedEntry } from '../hooks/collections/accounting/balanced-
  */
 
 /**
- * Posted entries are immutable to non-admins. Combines the role+tenant
- * gate (admin/accountant of own tenant) with a per-doc immutability check.
+ * Role + tenant gate: admin/accountant of own tenant. Posting immutability is
+ * enforced separately in the beforeChange hook below — access functions run
+ * before the op and have no view of the stored doc.
  */
-const updateAccess: Access = async ({ req, doc }) => {
+const updateAccess: Access = async ({ req }) => {
   const user = getUserContext(req)
   if (!hasRole(user, 'admin', 'accountant')) return false
-  if (doc?.status === 'posted' && !hasRole(user, 'admin')) return false
   return { tenant: { equals: user!.tenant } }
+}
+
+/**
+ * Posted journal entries are immutable to non-admins (SOX §404 — once a GL
+ * entry is posted it is part of the permanent record). Runs on update only;
+ * `originalDoc` carries the stored status.
+ */
+const enforcePostedImmutable: CollectionBeforeChangeHook = ({ req, data, operation, originalDoc }) => {
+  if (operation === 'update' && originalDoc?.status === 'posted' && !hasRole(getUserContext(req), 'admin')) {
+    throw new Error('Posted journal entries are immutable; contact an admin if a correction is required.')
+  }
+  return data
 }
 
 const JournalEntries: CollectionConfig = {
@@ -134,6 +146,7 @@ const JournalEntries: CollectionConfig = {
     ],
     beforeChange: [
       validateNotLocked,
+      enforcePostedImmutable,
       autoPopulateCreatedBy,
       enforceSegregationOfDuties(),
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
