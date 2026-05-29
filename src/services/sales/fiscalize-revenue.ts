@@ -21,6 +21,7 @@
 
 import type { Payload, PayloadRequest } from 'payload'
 import { requiresFiscalization } from '@/standards/naredba-n-18/scope'
+import { resolveFiscalContext, type FiscalContext } from './fiscal-context'
 import { reverseSale } from './reverse-sale'
 
 /** The fiscal sale payment types (Наредба Н-18 / касов бон). */
@@ -50,23 +51,6 @@ export interface RevenueInput {
   readonly occurredAt?: string | Date
 }
 
-/** Resolve the tenant's registered fiscal-device (ФУ) individual number, if any. */
-export async function resolveDeviceNumber(
-  payload: Payload,
-  tenant: string,
-  req?: PayloadRequest,
-): Promise<string | undefined> {
-  const found = await payload.find({
-    collection: 'fiscal-devices' as never,
-    where: (tenant ? { tenant: { equals: tenant } } : {}) as never,
-    limit: 1,
-    overrideAccess: true,
-    req,
-  })
-  const dev = found.docs[0] as { individualNumber?: unknown } | undefined
-  return typeof dev?.individualNumber === 'string' ? dev.individualNumber : undefined
-}
-
 /** Find the fiscal sale that already fiscalizes `(sourceType, sourceId)`, if any. */
 async function findSaleForSource(
   payload: Payload,
@@ -85,31 +69,43 @@ async function findSaleForSource(
 }
 
 /**
- * Project a revenue source into a *closed* fiscal `sales` row. Idempotent per
- * `(sourceType, sourceId)`. Lawfully skips чл. 3 ал. 1-exempt payments (bank
- * transfer / direct debit / PSP / postal money transfer → no касов бон). For an
- * in-scope (cash/card/voucher) source it throws when the tenant has no
- * registered ФУ — never a silent СУПТО bypass.
+ * Project a revenue source into a *closed* fiscal `sales` row, resolving every
+ * value through the config cascade (tenant→device — `resolveFiscalContext`).
+ * Idempotent per `(sourceType, sourceId)`. The decision tree, in order:
+ *
+ *   1. already fiscalized → skip (idempotent).
+ *   2. tenant NOT under a fiscal-device regime → skip (out of jurisdiction —
+ *      no касов бон obligation; NOT a bypass, NOT an error).
+ *   3. payment lawfully exempt (Наредба Н-18 чл. 3 ал. 1) → skip (out of scope).
+ *   4. in-regime + in-scope + NO active ФУ → throw (compliance misconfiguration;
+ *      no СУПТО bypass — surfaced to the dead-letter, never silent).
+ *   5. otherwise → create the закрита sale using the resolved device + currency.
+ *
+ * Pass a pre-resolved `ctx` to avoid a second cascade resolution (the adapter
+ * that already needed the device rate, e.g. subscriptions, threads it through).
  */
 export async function fiscalizeRevenue(
   payload: Payload,
   input: RevenueInput,
   req?: PayloadRequest,
+  ctx?: FiscalContext,
 ): Promise<{ id: string | number } | undefined> {
-  // Idempotent: skip if a sale already fiscalizes this source.
+  // 1. Idempotent: skip if a sale already fiscalizes this source.
   const existing = await findSaleForSource(payload, input.sourceType, input.sourceId, req)
   if (existing) return undefined
 
-  // Lawful exemption (Наредба Н-18 чл. 3 ал. 1) — out of СУПТО scope, not a bypass.
+  const fiscal = ctx ?? (await resolveFiscalContext(payload, { tenant: input.tenant, req }))
+
+  // 2. Out of jurisdiction — the tenant's country mandates no fiscal device.
+  if (!fiscal.applies) return undefined
+
+  // 3. Lawful exemption (Наредба Н-18 чл. 3 ал. 1) — out of СУПТО scope.
   if (!requiresFiscalization(input.paymentType)) return undefined
 
-  const fiscalDeviceNumber = await resolveDeviceNumber(payload, input.tenant, req)
-  if (!fiscalDeviceNumber) {
-    // No СУПТО bypass: an in-scope paid source MUST be fiscalized. A tenant with
-    // no registered ФУ is a compliance misconfiguration — fail loudly (the
-    // subscriber routes this to the error log / dead-letter), never skip.
+  // 4. In-regime + in-scope + no device = misconfiguration. No silent bypass.
+  if (!fiscal.deviceNumber) {
     throw new Error(
-      `Наредба Н-18: cannot fiscalize ${input.sourceType} ${input.sourceId} — tenant ${input.tenant || 'unknown'} has no registered fiscal device (no СУПТО bypass).`,
+      `Наредба Н-18: cannot fiscalize ${input.sourceType} ${input.sourceId} — tenant ${input.tenant || 'unknown'} is under the ${fiscal.regime} regime but has no registered fiscal device (no СУПТО bypass).`,
     )
   }
 
@@ -120,11 +116,11 @@ export async function fiscalizeRevenue(
     req,
     data: {
       source: { type: input.sourceType, ref: input.sourceId },
-      fiscalDeviceNumber,
+      fiscalDeviceNumber: fiscal.deviceNumber,
       saleDate: (input.occurredAt ? new Date(input.occurredAt) : new Date()).toISOString(),
       items,
       total: Number(input.total ?? items.reduce((s, i) => s + i.amount, 0)),
-      currency: input.currency ?? 'BGN',
+      currency: input.currency ?? fiscal.currency,
       paymentType: input.paymentType,
       status: 'closed',
       tenant: input.tenant,

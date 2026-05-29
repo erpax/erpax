@@ -23,17 +23,24 @@ const INPUT: RevenueInput = {
   items: [{ description: 'WIDGET', quantity: 2, unitPrice: 600_00, vatRate: 20, amount: 1_000_00 }],
 }
 
-function mockPayload(opts: { existing?: { id: string; status?: string } | null; device?: string | null } = {}) {
-  const { existing = null, device = '12345678' } = opts
+function mockPayload(
+  opts: { existing?: { id: string; status?: string } | null; device?: string | null; country?: string } = {},
+) {
+  const { existing = null, device = '12345678', country = 'BG' } = opts
   const find = vi.fn(({ collection }: { collection: string }) => {
     if (collection === 'sales') return Promise.resolve({ docs: existing ? [existing] : [] })
     if (collection === 'fiscal-devices') return Promise.resolve({ docs: device ? [{ individualNumber: device }] : [] })
     return Promise.resolve({ docs: [] })
   })
+  // findByID is collection-aware: 'tenants' → config cascade; else the sale doc (reverseSale).
+  const findByID = vi.fn(({ collection }: { collection: string }) => {
+    if (collection === 'tenants') return Promise.resolve({ config: { identity: { country } } })
+    return Promise.resolve({ id: 'sale-1', status: 'closed', fiscalDeviceNumber: '12345678', total: 1_200_00, items: [], tenant: 't1' })
+  })
   return {
     find,
     create: vi.fn().mockResolvedValue({ id: 'sale-1' }),
-    findByID: vi.fn().mockResolvedValue({ id: 'sale-1', status: 'closed', fiscalDeviceNumber: '12345678', total: 1_200_00, items: [], tenant: 't1' }),
+    findByID,
     update: vi.fn().mockResolvedValue({ id: 'sale-1', status: 'reversed' }),
     logger: { error: vi.fn() },
   }
@@ -77,8 +84,15 @@ describe('fiscalizeRevenue', () => {
     expect(m.create).not.toHaveBeenCalled()
   })
 
-  it('throws (no bypass) for an in-scope source when the tenant has no ФУ', async () => {
-    const m = mockPayload({ device: null })
+  it('skips a tenant out of any fiscal-device regime (e.g. US) — not a bypass, no throw', async () => {
+    const m = mockPayload({ country: 'US', device: null })
+    const res = await fiscalizeRevenue(asPayload(m), INPUT)
+    expect(res).toBeUndefined()
+    expect(m.create).not.toHaveBeenCalled()
+  })
+
+  it('throws (no bypass) for an in-regime, in-scope source when the tenant has no ФУ', async () => {
+    const m = mockPayload({ country: 'BG', device: null })
     await expect(fiscalizeRevenue(asPayload(m), INPUT)).rejects.toThrow(/no СУПТО bypass/)
     expect(m.create).not.toHaveBeenCalled()
   })

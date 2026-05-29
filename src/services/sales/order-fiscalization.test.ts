@@ -28,8 +28,8 @@ const ORDER: OrderActivatedPayload = {
   lineItems: [{ sku: 'WIDGET', quantity: 2, unitPrice: 600_00, lineTotal: 1_200_00, taxAmount: 200_00 }],
 }
 
-function mockPayload(opts: { existingSale?: boolean; device?: string | null } = {}) {
-  const { existingSale = false, device = '12345678' } = opts
+function mockPayload(opts: { existingSale?: boolean; device?: string | null; country?: string } = {}) {
+  const { existingSale = false, device = '12345678', country = 'BG' } = opts
   const find = vi.fn(({ collection }: { collection: string }) => {
     if (collection === 'sales') return Promise.resolve({ docs: existingSale ? [{ id: 'sale-x' }] : [] })
     if (collection === 'fiscal-devices') return Promise.resolve({ docs: device ? [{ individualNumber: device }] : [] })
@@ -38,6 +38,7 @@ function mockPayload(opts: { existingSale?: boolean; device?: string | null } = 
   return {
     find,
     create: vi.fn().mockResolvedValue({ id: 'sale-1' }),
+    findByID: vi.fn().mockResolvedValue({ config: { identity: { country } } }),
     logger: { error: vi.fn() },
   }
 }
