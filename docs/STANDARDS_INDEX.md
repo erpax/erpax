@@ -1416,10 +1416,10 @@ src/services/commerce/index.ts:22: * @standard Cloudflare Workers API (deploymen
 src/services/commerce/index.ts:23: * @standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
 src/services/consistency-apply/consistency-loop.test.ts:19: * @standard ISO/IEC 25010:2023 §5.5 testability — round-trip the agent loop
 src/services/consistency-apply/index.ts:21: * @standard ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path
-src/services/consistency-apply/index.ts:357: * @standard ISO/IEC-29119:2022 software-testing system-test-level
-src/services/consistency-apply/index.ts:419: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
-src/services/consistency-apply/index.ts:420: * @standard WCAG-2.1-AA contrast text-spacing
-src/services/consistency-apply/index.ts:526: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/consistency-apply/index.ts:355: * @standard ISO/IEC-29119:2022 software-testing system-test-level
+src/services/consistency-apply/index.ts:417: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
+src/services/consistency-apply/index.ts:418: * @standard WCAG-2.1-AA contrast text-spacing
+src/services/consistency-apply/index.ts:524: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/services/country-api-clients.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/country-api-clients.ts:338: * @standard ISO-4217:2015 currency-codes
 src/services/country-api-clients.ts:339: * @standard ISO-8601-1:2019 date-time
@@ -5055,9 +5055,9 @@ src/services/cloudflare/plugin-access.ts:43: * @audit Conservation Law 38 mcp-to
 src/services/cloudflare/plugin-helper.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
 src/services/consistency-apply/consistency-loop.test.ts:20: * @audit ISO 19011:2018 §6.4.6 — synthetic drift + recovery audit-trailable
 src/services/consistency-apply/index.ts:20: * @audit ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited
-src/services/consistency-apply/index.ts:358: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
-src/services/consistency-apply/index.ts:421: * @audit ISO 9241-210:2019 human-centred-design
-src/services/consistency-apply/index.ts:527: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
+src/services/consistency-apply/index.ts:356: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
+src/services/consistency-apply/index.ts:419: * @audit ISO 9241-210:2019 human-centred-design
+src/services/consistency-apply/index.ts:525: * @audit Slice PPPPPPPP-cont CREATE_GAP emergence
 src/services/country-api-clients.ts:16: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-api-clients.ts:477: * @audit ISO-19011:2018 audit-trail external-system-evidence
 src/services/country-api-clients.ts:517: * @audit ISO-19011:2018 audit-trail external-system-evidence
