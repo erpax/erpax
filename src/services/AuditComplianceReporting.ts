@@ -127,10 +127,11 @@ export class AuditComplianceReporting {
           SoftwareVersion: '2026-05-12',
         },
         MasterFiles: {
-          // Simplified master file structure
+          // GL accounts + tax table populated; Customers/Suppliers master files are
+          // a pending SAF-T 3.0.2 §2 feature gap (populate from parties — flagged, not faked).
           GeneralLedgerAccounts: this.buildMasterFileGL(consolidationData),
-          Customers: [],
-          Suppliers: [],
+          Customers: [] as Record<string, unknown>[],
+          Suppliers: [] as Record<string, unknown>[],
           TaxTable: this.buildTaxTable(taxPeriodData),
         },
         GeneralLedgerEntries: {
@@ -157,11 +158,12 @@ export class AuditComplianceReporting {
           })),
         },
         SourceDocuments: {
-          // Related-party transactions per SAF-T 3.0.2 Section 5.4.1
-          SalesInvoices: [],
-          PurchaseInvoices: [],
-          MovementOfGoods: [],
-          Payments: [],
+          // SAF-T 3.0.2 §4 source documents — pending population from
+          // invoices/shipments/payments (flagged feature gap, not faked).
+          SalesInvoices: [] as Record<string, unknown>[],
+          PurchaseInvoices: [] as Record<string, unknown>[],
+          MovementOfGoods: [] as Record<string, unknown>[],
+          Payments: [] as Record<string, unknown>[],
         },
       },
     }
