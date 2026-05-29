@@ -90,6 +90,19 @@ export default defineConfig({
     search: { provider: 'local' },
     outline: 'deep',
   },
+  // Use the skill frontmatter to optimize the page: title by `name`, surface the
+  // per-path presence (the `sessions:` audit/chat seed) as rendered head meta.
+  transformPageData(pageData) {
+    const fm = pageData.frontmatter as { name?: string; sessions?: string[] }
+    if (fm.name && !pageData.title) pageData.title = fm.name
+    if (Array.isArray(fm.sessions) && fm.sessions.length) {
+      pageData.frontmatter.presence = fm.sessions.length
+      ;(pageData.frontmatter.head ||= []).push([
+        'meta',
+        { name: 'erpax:sessions', content: fm.sessions.join(',') },
+      ])
+    }
+  },
   markdown: {
     config: (md) => wikilinks(md),
   },
