@@ -130,11 +130,11 @@ export async function evaluateWorkflowsForDocument(
         definitionVersion: def.version,
         targetCollection: collectionSlug,
         targetId: String(docId),
-        submittedBy: getActorId(req),
+        submittedBy: getActorId(req) ?? 'system',
         submittedAt: new Date().toISOString(),
         currentStep: 0,
         status: 'pending_start',
-      } as Record<string, unknown>,
+      },
       overrideAccess: true,
       req,
     })

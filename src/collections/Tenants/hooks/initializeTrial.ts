@@ -71,7 +71,7 @@ export const createTrialSubscriptionAfter: CollectionAfterChangeHook<Tenant> = a
       collection: 'subscriptions',
       data: {
         tenant: doc.id,
-        plan: req.context.planId as number,
+        plan: req.context.planId as string,
         status: 'trial',
         trialStartedAt: new Date().toISOString(),
         trialEndsAt: req.context.trialEnd as string,

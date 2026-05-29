@@ -50,7 +50,7 @@ function isLexicalDoc(value: unknown): value is LexicalRootDoc {
 
 async function transformLexicalDoc(
   doc: LexicalRootDoc,
-  resolveUrl: (url: string) => Promise<number | null>,
+  resolveUrl: (url: string) => Promise<string | null>,
 ): Promise<LexicalRootDoc> {
   const children = doc.root.children ?? []
   const next: unknown[] = []
@@ -69,7 +69,7 @@ async function transformLexicalDoc(
 
 async function transformLexicalTopLevelNode(
   node: unknown,
-  resolveUrl: (url: string) => Promise<number | null>,
+  resolveUrl: (url: string) => Promise<string | null>,
 ): Promise<unknown[]> {
   if (!node || typeof node !== 'object') return [node]
 
@@ -84,7 +84,7 @@ async function transformLexicalTopLevelNode(
 
 async function tryParagraphToMediaBlock(
   paragraph: Record<string, unknown>,
-  resolveUrl: (url: string) => Promise<number | null>,
+  resolveUrl: (url: string) => Promise<string | null>,
 ): Promise<unknown | null> {
   const children = paragraph.children as unknown[] | undefined
   if (!children?.length) return null
@@ -113,7 +113,7 @@ async function tryParagraphToMediaBlock(
   return null
 }
 
-function mediaBlockNode(mediaId: number): Record<string, unknown> {
+function mediaBlockNode(mediaId: string): Record<string, unknown> {
   return {
     type: 'block',
     fields: {
@@ -156,11 +156,11 @@ function containsHttp(value: unknown): boolean {
   }
 }
 
-export function tenantIdFromDoc(data: Record<string, unknown>): number | undefined {
+export function tenantIdFromDoc(data: Record<string, unknown>): string | undefined {
   const t = data.tenant
-  if (typeof t === 'number') return t
-  if (t && typeof t === 'object' && 'id' in t && typeof (t as { id: unknown }).id === 'number') {
-    return (t as { id: number }).id
+  if (typeof t === 'string') return t
+  if (t && typeof t === 'object' && 'id' in t && typeof (t as { id: unknown }).id === 'string') {
+    return (t as { id: string }).id
   }
   return undefined
 }
@@ -192,7 +192,7 @@ function setAtPath(obj: Record<string, unknown>, path: string, value: unknown): 
 async function coerceUploadUrlPaths(
   data: Record<string, unknown>,
   patterns: string[],
-  resolveUrl: (url: string) => Promise<number | null>,
+  resolveUrl: (url: string) => Promise<string | null>,
 ): Promise<void> {
   for (const pattern of patterns) {
     if (pattern.includes('[].')) {
@@ -213,7 +213,7 @@ async function coerceUploadUrlPaths(
 async function coerceDotPath(
   root: Record<string, unknown>,
   dotPath: string,
-  resolveUrl: (url: string) => Promise<number | null>,
+  resolveUrl: (url: string) => Promise<string | null>,
 ): Promise<void> {
   const current = getAtPath(root, dotPath)
   if (typeof current !== 'string' || !isLikelyRemoteImageUrl(current)) return
@@ -236,12 +236,12 @@ export type CreateImportRemoteMediaHookOptions = {
 
 function createResolveUrl(
   req: PayloadRequest,
-  tenantId: number | undefined,
-): (url: string) => Promise<number | null> {
-  const cache = new Map<string, number>()
-  const inflight = new Map<string, Promise<number | null>>()
+  tenantId: string | undefined,
+): (url: string) => Promise<string | null> {
+  const cache = new Map<string, string>()
+  const inflight = new Map<string, Promise<string | null>>()
 
-  return async function resolveUrl(url: string): Promise<number | null> {
+  return async function resolveUrl(url: string): Promise<string | null> {
     const cached = cache.get(url)
     if (cached !== undefined) return cached
 
@@ -260,7 +260,7 @@ function createResolveUrl(
             req,
             overrideAccess: true,
           })
-          const id = typeof media.id === 'number' ? media.id : Number(media.id)
+          const id = String(media.id)
           cache.set(url, id)
           return id
         } catch (err) {

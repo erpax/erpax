@@ -108,14 +108,16 @@ export async function sendNotification(
       collection: 'audit-events',
       data: {
         eventId: notificationId,
+        timestamp: new Date().toISOString(),
         eventType: 'notification:sent',
-        actor: 'system',
-        targetCollection: 'notifications',
-        targetId: notificationId,
-        before: undefined,
-        after: { channels, subject: input.subject, category: input.category, deliveries },
-        emittedAt: new Date().toISOString(),
-      } as Record<string, unknown>,
+        source: 'system',
+        collectionSlug: 'notifications',
+        operation: 'create',
+        documentId: notificationId,
+        changeSummary: {
+          after: { channels, subject: input.subject, category: input.category, deliveries },
+        },
+      },
       overrideAccess: true,
       req,
     })
