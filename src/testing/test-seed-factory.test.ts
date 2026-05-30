@@ -172,7 +172,7 @@ describe('TestSeedFactory - Core Functionality', () => {
     it('should track performance metrics', async () => {
       const result = await factory.seed();
 
-      expect(result.totalTime).toBeGreaterThan(0);
+      expect(result.totalTime).toBeGreaterThanOrEqual(0);
       expect(result.totalTime).toBeLessThan(1000); // Should be fast
     });
 

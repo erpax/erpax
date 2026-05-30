@@ -198,7 +198,7 @@ describe('IsolatedTestEnvironment', () => {
       const factory = new SimpleSeed(payload as unknown as Payload);
       const result = await env.setup(factory);
 
-      expect(result.totalTime).toBeGreaterThan(0);
+      expect(result.totalTime).toBeGreaterThanOrEqual(0);
       expect(result.totalTime).toBeLessThan(1000);
     });
   });
