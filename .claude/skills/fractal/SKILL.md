@@ -7,4 +7,4 @@ sessions:
 
 # fractal
 
-Self-similarity at every scale: the [[sequence]] recomposes the same atoms ([[whole]]↔[[part]]) from [[fields]] → [[collections]] → [[plugins]] → erpax → agents; the one address-law repeats across object [[identity]] · file · skill path · URL; nested one-word folders ([[self]]/[[sufficient]]) are the path-tree. The same [[duality]] two-step plays at every dimension, so the small and the whole look identical.
+Self-similarity at every scale: the [[sequence]] recomposes the same atoms ([[whole]]↔[[part]]) from [[fields]] → [[collections]] → [[plugins]] → erpax → agents; the one address-law repeats across object [[identity]] · file · skill path · URL; nested one-word folders ([[self]]/[[sufficient]]) are the path-tree. The same [[duality]] two-step plays at every dimension, so the small and the whole look identical. Its content-twin is [[holographic]]: fractal is the same *form* at every scale, holographic is the whole *content* in every part.

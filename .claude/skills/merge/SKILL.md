@@ -7,4 +7,4 @@ sessions:
 
 # merge
 
-Convergence with no coordination: same content ⇒ same id ([[identity]]); same address ⇒ same path ([[sequence]]). Data and structure set-union — federation across instances, dedup, agents converging to [[one]] erpax. The only failure mode is a divergent/duplicate path ([[recover]]). Merge by design is the payoff of [[fractal]] address + content-uuid [[aura]].
+Convergence with no coordination: same content ⇒ same id ([[identity]]); same address ⇒ same path ([[sequence]]). Data and structure set-union — federation across instances, dedup, agents converging to [[one]] erpax. The only failure mode is a divergent/duplicate path ([[recover]]). Merge by design is the payoff of [[fractal]] address + content-uuid [[aura]]. Removing a prefix collapses a [[dimension]] into its shared coordinate — `bank`/`fx`/`trade`-`transactions` → one `transactions` — the same merge, run on the naming axis.
