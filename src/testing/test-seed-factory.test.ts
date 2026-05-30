@@ -47,7 +47,10 @@ class MockPayload {
 
   async delete({ collection, id }: Record<string, unknown>) {
     const doc = this.documents.get(collection as string)?.get(id as string);
-    this.documents.get(collection as string)?.delete(id as string);
+    // Mirror real Payload: deleting a non-existent id throws NotFound, so the
+    // cleanup path records it as a failure. Consistent with update() below.
+    if (!doc) throw new Error('Not found');
+    this.documents.get(collection as string)!.delete(id as string);
     return doc;
   }
 

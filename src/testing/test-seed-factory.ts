@@ -942,6 +942,9 @@ export abstract class TransactionalSeedFactory extends TestSeedFactory {
     if (this.cleanupStrategy === 'transaction-rollback' && this.context?.transactionId) {
       const startTime = Date.now();
       await this.rollbackTransaction(this.context.transactionId);
+      // Clear context after rollback, mirroring the base cleanup — the
+      // transaction (and its tracked ids) are gone, so the context must not leak.
+      this.context = null;
       return { success: true, totalTime: Date.now() - startTime, itemsDeleted: 0, failures: [] };
     }
     return await super.cleanup();

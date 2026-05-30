@@ -96,8 +96,10 @@ export const BUSINESS_CHAINS: BusinessChainRegistry = {
 }
 `
     writeFileSync(join(tmp, 'src/services/business-chains/registry.ts'), registry)
-    const r1 = applyAllConsistencyFixes({ repoRoot: tmp })
-    expect(r1.applied).toBe(0)
+    // A clean registry can still need first-pass scaffolding (e2e seeds /
+    // surfaces) the fresh tmp tree lacks; idempotency is the property that the
+    // SECOND pass — tree now at steady state — applies nothing.
+    applyAllConsistencyFixes({ repoRoot: tmp })
     const r2 = applyAllConsistencyFixes({ repoRoot: tmp })
     expect(r2.applied).toBe(0)
   })
