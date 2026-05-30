@@ -102,6 +102,8 @@ const createMockStripeSubscription = (overrides: Partial<Stripe.Subscription> = 
           unit_amount: 2900,
           unit_amount_decimal: '2900',
         },
+        current_period_start: Math.floor(Date.now() / 1000),
+        current_period_end: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60,
         quantity: 1,
         subscription: 'sub_123',
         tax_rates: [],
@@ -253,6 +255,7 @@ const createMockStripeInvoice = (overrides: Partial<Stripe.Invoice> & Record<str
   status: 'open',
   status_transitions: { finalized_at: null, marked_uncollectible_at: null, paid_at: null, voided_at: null },
   subscription: 'sub_123',
+  parent: { subscription_details: { subscription: 'sub_123' } },
   subtotal: 2900,
   subtotal_excluding_tax: 2900,
   tax: null,
@@ -309,7 +312,7 @@ describe('stripeWebhookHandlers', () => {
         id: 'sub-123',
         data: {
           status: 'active',
-          lastStatusChange: expect.any(Date),
+          lastStatusChange: expect.any(String),
           lastStatusChangeReason: 'Test reason',
         },
       })
@@ -348,7 +351,9 @@ describe('stripeWebhookHandlers', () => {
       const stripeSubscription = createMockStripeSubscription({ status: 'past_due' })
       const existingSubscription = { id: 'existing-sub-id', status: 'active' }
 
-      mockPayload.find.mockResolvedValueOnce({ docs: [existingSubscription] })
+      mockPayload.find
+        .mockResolvedValueOnce({ docs: [existingSubscription] }) // find subscription
+        .mockResolvedValueOnce({ docs: [{ id: 'tenant-123' }] }) // find tenant (looked up unconditionally)
       mockPayload.update.mockResolvedValue({})
 
       await handleSubscriptionSync(
@@ -367,7 +372,7 @@ describe('stripeWebhookHandlers', () => {
   })
 
   describe('handleInvoiceSync', () => {
-    it('should create new invoice from Stripe invoice', async () => {
+    it('should warn and not mint when no erpax invoice exists (webhooks sync, never mint)', async () => {
       const stripeInvoice = createMockStripeInvoice()
       const mockSubscription = { id: 'payload-sub-123', tenant: 'tenant-123' }
 
@@ -379,16 +384,10 @@ describe('stripeWebhookHandlers', () => {
 
       await handleInvoiceSync({ event: {} as unknown as Stripe.Event, payload: p(mockPayload) }, stripeInvoice)
 
-      expect(mockPayload.create).toHaveBeenCalledWith({
-        collection: 'invoices',
-        data: expect.objectContaining({
-          tenant: 'tenant-123',
-          subscription: 'payload-sub-123',
-          stripeInvoiceId: 'in_123',
-          status: 'open',
-          amountDue: 2900,
-        }),
-      })
+      // Invoices originate from the sales/order flow; the webhook only syncs
+      // billing state onto an existing one. No match ⇒ warn, never create.
+      expect(mockPayload.create).not.toHaveBeenCalled()
+      expect(mockPayload.logger.warn).toHaveBeenCalled()
     })
 
     it('should update existing invoice', async () => {
@@ -409,7 +408,7 @@ describe('stripeWebhookHandlers', () => {
         id: 'existing-invoice-id',
         data: expect.objectContaining({
           status: 'paid',
-          amountPaid: 2900,
+          amounts: expect.objectContaining({ totalPaid: 2900 }),
         }),
       })
     })
@@ -420,7 +419,7 @@ describe('stripeWebhookHandlers', () => {
       const stripeInvoice = createMockStripeInvoice({ paid: true })
       const mockInvoice = {
         id: 'invoice-123',
-        subscription: { id: 'sub-123' },
+        recurring: { subscription: { id: 'sub-123' } },
       }
 
       mockPayload.find.mockResolvedValueOnce({ docs: [mockInvoice] })
@@ -434,7 +433,7 @@ describe('stripeWebhookHandlers', () => {
         id: 'invoice-123',
         data: expect.objectContaining({
           status: 'paid',
-          paidAt: expect.any(Date),
+          dates: expect.objectContaining({ paidAt: expect.any(String) }),
         }),
       })
 
@@ -454,8 +453,7 @@ describe('stripeWebhookHandlers', () => {
       const stripeInvoice = createMockStripeInvoice()
       const mockInvoice = {
         id: 'invoice-123',
-        subscription: { id: 'sub-123' },
-        attemptCount: 0,
+        recurring: { subscription: { id: 'sub-123' }, attemptCount: 0 },
       }
 
       mockPayload.find.mockResolvedValueOnce({ docs: [mockInvoice] })
@@ -470,8 +468,10 @@ describe('stripeWebhookHandlers', () => {
         collection: 'invoices',
         id: 'invoice-123',
         data: expect.objectContaining({
-          attemptCount: 1,
-          lastAttemptAt: expect.any(Date),
+          recurring: expect.objectContaining({
+            attemptCount: 1,
+            lastAttemptAt: expect.any(String),
+          }),
         }),
       })
 
