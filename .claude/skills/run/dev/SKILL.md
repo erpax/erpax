@@ -18,7 +18,7 @@ Two committed harnesses drive it. **Pick by the layer your change touches:**
 |---|---|---|
 | services, collections, hooks, GL, tax, the DB (**most PRs**) | **`smoke.ts`** (Local API) | boots Payload headless, queries the real local DB, no HTTP server |
 | public frontend / SSR pages | **`driver.mjs`** (Playwright) | launches Chromium against `pnpm dev`, screenshots to disk |
-| the Payload **admin panel** | — | ⚠️ **broken in `next dev`** today — see Gotchas |
+| the Payload **admin** | — | login renders; ⚠️ **dashboard broken in `next dev`** (upstream RSC bug) — see Gotchas |
 
 > All paths below are relative to the repo root (`/Users/ceci/github/erpax/erpax`).
 > The harness lives at `.claude/skills/run/dev/`. Run every command from the repo root.
@@ -120,17 +120,23 @@ broken-in-dev admin, see Gotchas).
 
 ## Gotchas
 
-- **The admin panel does not render in `next dev`.** Both bundlers fail, reproducibly:
-  - Turbopack (`pnpm dev`): `chunk.reason.enqueueModel is not a function` in the Payload
-    `RootLayout` (`src/app/(payload)/layout.tsx:26`).
-  - Webpack (`next dev --webpack`): `Module not found: Can't resolve 'worker_threads'` — a
-    `'use client'` component (`src/components/BeforeDashboard/SeedButton/index.tsx`) imports
-    the `@/utilities/errors` barrel, which re-exports `createAppApiError` →
-    `import { APIError } from 'payload'` (server-only pino logger). The barrel drags server
-    code into the client bundle.
+- **The admin _dashboard_ does not render in `next dev` — but the _login_ does.** On a clean
+  cache, canonical `pnpm dev` (Turbopack) serves `/admin/login` fine; after auth, the dashboard
+  (and the create-first-user landing) throws `chunk.reason.enqueueModel is not a function` in the
+  admin `RootLayout` (`src/app/(payload)/layout.tsx:26`) — an **upstream** Turbopack/Payload-RSC
+  bug (`payload@4.0.0-internal.38b7f1d` + Next 16.2.6), not erpax code.
+  - **Clear the cache before diagnosing.** A stale `.next` from bundler-switching emits *misleading*
+    extra errors (e.g. `Cannot assign to read only property 'clientConfig'`). `rm -rf .next` (or
+    `pnpm dev:clean`) clears those; the `enqueueModel` dashboard failure is the real residual one.
+  - **`next dev --webpack` is worse — not a workaround.** Payload's own client handlers
+    (`@payloadcms/ui/exports/shared`, `@payloadcms/storage-r2`'s `R2ClientUploadHandler`,
+    `@payloadcms/plugin-cloud-storage`, `plugin-seo`) drag the `payload` **server** entry
+    (pino → `worker_threads`/`node:assert`) into the client bundle. `withPayload`'s own source has a
+    TODO admitting these packages can't be client-externalized yet. Stubbing builtins / aliasing
+    `payload$` is whack-a-mole — don't.
 
-  The **public frontend and the Local API/REST both work** — drive those. (`next build`
-  uses `--webpack` deliberately; the deployed admin is a separate, unverified path.)
+  The **public site, the Local API/REST, and the admin _login_ all work** — drive those. The
+  dashboard is upstream-blocked until Payload/Next fix the RSC streaming.
 - **dev-push is not idempotent.** `PAYLOAD_DEV_PUSH=false` is the steady-state launch.
   With push ON on an existing schema → `index ... already exists`. With push OFF on a
   *stale* schema → `D1_ERROR: no such table: orders` (the symptom that tells you the config
