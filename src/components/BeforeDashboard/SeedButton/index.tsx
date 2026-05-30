@@ -3,8 +3,6 @@
 import React, { Fragment, useCallback, useState } from 'react'
 import { toast, useTranslation } from '@payloadcms/ui'
 
-import { messageFromFailedJsonResponse } from '@/utilities/errors'
-
 import './index.scss'
 
 const SuccessMessage: React.FC = () => {
@@ -56,7 +54,10 @@ export const SeedButton: React.FC = () => {
                     resolve(true)
                     setSeeded(true)
                   } else {
-                    const detail = await messageFromFailedJsonResponse(res, t('toastSeedError'))
+                    const body = (await res.json().catch(() => ({}))) as {
+                      errors?: { message?: string }[]
+                    }
+                    const detail = body.errors?.[0]?.message ?? t('toastSeedError')
                     reject(new Error(detail))
                   }
                 })

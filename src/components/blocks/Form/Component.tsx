@@ -10,7 +10,6 @@ import RichText from '@/components/RichText'
 import { Button } from '@/components/ui/button'
 import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 
-import { formatPayloadSdkUserMessage } from '@/utilities/errors'
 import { getPayloadSdk } from '@/utilities/payloadSdk'
 
 import { fields } from './fields'
@@ -112,7 +111,7 @@ export const FormBlock: React.FC<
           setIsLoading(false)
           if (err instanceof PayloadSDKError) {
             setError({
-              message: formatPayloadSdkUserMessage(err, t('internal-server-error')),
+              message: err.message || t('internal-server-error'),
               status: String(err.status),
             })
           } else {

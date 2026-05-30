@@ -801,7 +801,7 @@ src/components/blocks/Code/config.ts:6: * @standard ECMA-262 ECMAScript language
 src/components/blocks/Content/config.ts:4: * @standard W3C HTML5 article-section-elements
 src/components/blocks/Content/config.ts:5: * @standard schema.org WebPageElement
 src/components/blocks/Content/config.ts:6: * @standard CommonMark 0.31 markdown-fallback
-src/components/blocks/Form/Component.tsx:21: * @standard ECMA-262 ECMAScript-2024 baseline
+src/components/blocks/Form/Component.tsx:20: * @standard ECMA-262 ECMAScript-2024 baseline
 src/components/blocks/Form/config.ts:4: * @standard W3C HTML5 form-validation
 src/components/blocks/Form/config.ts:5: * @standard WAI-ARIA 1.2 form-roles
 src/components/blocks/Form/refactored-utilities.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
@@ -2761,7 +2761,7 @@ src/components/PayloadRedirects/index.tsx:9: * @rfc 3986 uniform-resource-identi
 src/components/blocks/ArchiveBlock/config.ts:6: * @rfc 5005 web-feed-paging-and-archiving
 src/components/blocks/ArchiveBlock/config.ts:7: * @rfc 3986 uniform-resource-identifier pagination-links
 src/components/blocks/CallToAction/config.ts:6: * @rfc 3986 uniform-resource-identifier
-src/components/blocks/Form/Component.tsx:22: * @rfc 5322 internet-message-format email-field-validation
+src/components/blocks/Form/Component.tsx:21: * @rfc 5322 internet-message-format email-field-validation
 src/components/blocks/Form/config.ts:6: * @rfc 5322 internet-message-format email-field-format
 src/components/blocks/Form/refactored-utilities.test.ts:6: * @rfc 3986 uniform-resource-identifier
 src/components/blocks/Form/refactored-utilities.test.ts:7: * @rfc 9110 http-semantics
@@ -5489,7 +5489,7 @@ src/components/analytics/FinancialRatiosCard.tsx:11: * @quality ISO-25010 functi
 src/components/analytics/KPIDashboard.tsx:13: * @quality ISO-25010 functional-suitability derived-metric
 src/components/analytics/TrendAnalysisCard.tsx:11: * @quality ISO-25010 functional-suitability historical-projection
 src/components/analytics/types.ts:18: * @quality ISO-25010 maintainability shared-vocabulary
-src/components/blocks/Form/Component.tsx:23: * @quality ISO-25010 usability form-rendering
+src/components/blocks/Form/Component.tsx:22: * @quality ISO-25010 usability form-rendering
 src/components/pages/AnalyticsPage.tsx:15: * @quality ISO-25010 usability page-composition
 src/fields/discriminators.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
 src/services/horo/index.ts:21: * @quality ISO-25010 maintainability bounded-stable-state-space
