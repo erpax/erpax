@@ -1981,8 +1981,6 @@ src/standards/bcp-47/language-tag.ts:4: * @standard BCP-47 language-tag
 src/standards/bcp-47/locale-utils.ts:5: * @standard BCP-47 language-tag
 src/standards/bcp-47/locale-utils.ts:8: * @standard ECMA-402 internationalization-api
 src/standards/bcp-47/locale-utils.ts:9: * @standard Unicode-CLDR locale-data
-src/standards/coverage/seed-test-coverage.test.ts:25: * @standard ISO/IEC-29119:2022 software-testing test-meta-coverage
-src/standards/coverage/seed-test-coverage.test.ts:26: * @standard ISO/IEC/IEEE-29119-3:2021 test-documentation
 src/standards/en-16931/collection-alignment.test.ts:10: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
 src/standards/en-16931/collection-alignment.test.ts:9: * @standard ISO/IEC-29119:2022 software-testing
 src/standards/en-16931/index.ts:4: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
@@ -3481,7 +3479,6 @@ src/services/tenant.service.ts:13: * @compliance GDPR Art.28 processor
 src/services/tenant.service.ts:14: * @compliance SOC-2 CC6.1 logical-access-controls
 src/services/workflow/index.ts:24: * @compliance SOX §404 internal-controls workflow-execution
 src/standards/_security-headers/headers.ts:17: * @compliance SOC-2 CC6.6 boundary-protection
-src/standards/coverage/seed-test-coverage.test.ts:28: * @compliance SOX §404 internal-controls control-coverage-matrix
 src/standards/etsi-en-319-142/evidence-attestation.test.ts:10: * @compliance SOX §404 internal-controls process-walk-through
 src/standards/etsi-en-319-142/evidence-attestation.test.ts:11: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/standards/etsi-en-319-142/index.ts:6: * @compliance EU 910/2014 eidas qualified-electronic-signature
@@ -5352,7 +5349,6 @@ src/services/wallet-exchange/index.ts:67: * @audit Conservation Law 53 self-refe
 src/services/wallet-exchange/index.ts:68: * @audit Conservation Law 8 content-uuid (journal-entry row uuid binds the exchange)
 src/services/website/seo-vortex.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/services/workflow/index.ts:23: * @audit ISO-19011:2018 §6.4.6 audit-evidence-workflow
-src/standards/coverage/seed-test-coverage.test.ts:27: * @audit ISO-19011:2018 audit-trail seed-test-traceability
 src/standards/en-16931/collection-alignment.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/en-16931/types.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/standards/etsi-en-319-142/evidence-attestation.test.ts:9: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack
