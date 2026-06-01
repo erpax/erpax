@@ -67,6 +67,25 @@
 import { createHash } from 'node:crypto'
 
 /**
+ * RFC 9562 §5.9 **Nil UUID** — the all-zeroes identity element. The
+ * spec-sanctioned "no UUID / absence / no predecessor" value. This is
+ * the ONE canonical sentinel for every "absence" case in erpax: a
+ * hash-chain's genesis `prev` pointer ([[uuid-chain]], [[streams]],
+ * [[pwa]]), an empty/null query result ([[query-fingerprint]]), and
+ * any erasure tombstone. It is the additive zero of the uuid space —
+ * the `0`/hole at the centre of the torus (dual: the §5.10 Max UUID).
+ *
+ * Use this everywhere instead of a hand-written all-zeroes literal so
+ * the convention is defined exactly once. NOTE it is NOT a v5-shaped
+ * value: a `…-5000-8000-…` literal reads as a real SHA-1 name hash
+ * (version=5/variant nibbles set) when it actually means "absence",
+ * which is the bug RFC 9562 §5.9 exists to avoid.
+ *
+ * @standard RFC 9562 §5.9 Nil UUID
+ */
+export const NIL_UUID = '00000000-0000-0000-0000-000000000000'
+
+/**
  * Slot tags — 4 bits, 16 categories.
  *
  * Slice AAAAAAAAAA-cut1 (2026-05-11) — `error` (0xf) replaces the

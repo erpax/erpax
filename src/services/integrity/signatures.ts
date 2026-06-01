@@ -75,7 +75,7 @@ export type SignatureAlg = 'EdDSA' | 'PS256' | 'ES256'
  * Wire shape (canonical JSON):
  *
  *   {
- *     "uuid":     "00000000-0000-5000-8000-000000000000",
+ *     "uuid":     "0192a7b3-4c5d-8e6f-9a0b-1c2d3e4f5a6b",
  *     "alg":      "EdDSA",
  *     "kid":      "tenant-1/signing/2026-05-11",
  *     "sig":      "BASE64URL-signature-bytes",

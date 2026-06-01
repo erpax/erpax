@@ -57,17 +57,25 @@ import { computeKvBindingUuid } from '@/services/uuid-kv'
 // SEALED when the caller signals a stream-pause leaf). Every leaf in
 // the platform's audit chain now contributes to Law 61/62 coverage.
 import {
-  encodeStructured, SLOT_TAGS, CAPABILITIES,
+  encodeStructured, SLOT_TAGS, CAPABILITIES, NIL_UUID,
 } from '@/services/uuid-format'
 
 /**
- * Special sentinel for the genesis leaf's `prev`. Nil-UUID (all-zeros)
- * variant for the platform-tenant namespace. By convention, every
- * chain's genesis points at this; no two chains share genesis
- * because the second binding-uuid differs by the next payload.
+ * Special sentinel for the genesis leaf's `prev`: the RFC 9562 §5.9
+ * Nil UUID (all-zeroes), the spec-sanctioned "no predecessor". By
+ * convention, every chain's genesis points at this; no two chains
+ * share a genesis *leaf* because each first link's binding-uuid
+ * differs by its payload + tenant + timestamp.
+ *
+ * Sourced from the single canonical `NIL_UUID` ([[uuid-format]]) so the
+ * "absence" convention is defined exactly once and is byte-identical
+ * across chain systems ([[streams]] STREAM_GENESIS, [[pwa]]). It is the
+ * recompute anchor for `verifyChain`/`walkChain`: changing this literal
+ * would invalidate already-persisted first-links, so it stays pinned to
+ * the spec Nil. (Earlier slices used a misleading v5-shaped literal that
+ * reads as a real SHA-1 name hash; §5.9 Nil is the correct "absence".)
  */
-export const GENESIS_PREV_UUID =
-  '00000000-0000-5000-8000-000000000000' as ContentUuid<{ kind: 'genesis' }>
+export const GENESIS_PREV_UUID = NIL_UUID as ContentUuid<{ kind: 'genesis' }>
 
 /**
  * A chain link is a KvBinding from prev-leaf-uuid to payload-uuid,

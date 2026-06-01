@@ -85,7 +85,7 @@ const ALG_BITS: Record<EnvelopeAlg, number> = {
  * binary-safety contortions.
  *
  *   {
- *     "uuid":       "00000000-0000-5000-8000-000000000000",
+ *     "uuid":       "0192a7b3-4c5d-8e6f-9a0b-1c2d3e4f5a6b",
  *     "alg":        "AES-GCM-256",
  *     "iv":         "BASE64URL-12-bytes",
  *     "ciphertext": "BASE64URL-ciphertext",

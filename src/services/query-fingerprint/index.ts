@@ -70,6 +70,7 @@
 
 import { computeContentUuid, jcsCanonicalize } from '../integrity/content-uuid'
 import type { ContentUuid } from '../integrity/content-uuid'
+import { NIL_UUID } from '../uuid-format'
 
 /**
  * Type-level brand for a SQL query string. Carries the SQL through the
@@ -240,8 +241,11 @@ export async function runWithFingerprint<TResult>(args: {
   const elapsedMs = Date.now() - start
   // Result uuid: per Law 47 (type uuid) we hash the result's canonical
   // shape under the same tenant namespace.
+  // Null/empty result ⇒ "no uuid here" ⇒ the RFC 9562 §5.9 Nil UUID
+  // (NIL_UUID), the one canonical absence sentinel — not a v5-shaped
+  // literal that would misread as a real content hash.
   const resultUuid = result === null
-    ? '00000000-0000-5000-8000-000000000000'
+    ? NIL_UUID
     : computeContentUuid(
         { result: result as unknown },
         args.tenantId,

@@ -50,6 +50,7 @@
  */
 
 import { computeContentUuid } from '@/services/integrity/content-uuid'
+import { NIL_UUID } from '@/services/uuid-format'
 
 const PWA_NS = 'erpax-pwa'
 
@@ -102,7 +103,7 @@ const QUEUE: QueuedMutation[] = []
 
 export function enqueueMutation(args: { tenantId: string; endpoint: string; body: unknown }): QueuedMutation {
   const prevUuid = QUEUE.length > 0 ? QUEUE[QUEUE.length - 1]!.uuid : null
-  const head = { tenantId: args.tenantId, endpoint: args.endpoint, body: args.body, prev: prevUuid ?? '00000000-0000-0000-0000-000000000000' }
+  const head = { tenantId: args.tenantId, endpoint: args.endpoint, body: args.body, prev: prevUuid ?? NIL_UUID }
   const uuid = computeContentUuid(head as unknown as Record<string, unknown>, args.tenantId)
   const mutation: QueuedMutation = {
     uuid, prevUuid,

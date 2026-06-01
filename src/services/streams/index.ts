@@ -50,6 +50,7 @@
 
 import type { DomainEvent } from '@/services/agents/types'
 import { computeContentUuid } from '@/services/integrity/content-uuid'
+import { NIL_UUID } from '@/services/uuid-format'
 
 /**
  * Slice SSSSSS — `streamUuid` makes the stream itself tamper-proof.
@@ -69,7 +70,10 @@ export interface ClockedEvent {
   readonly prevStreamUuid: string | null
 }
 
-const STREAM_GENESIS = '00000000-0000-0000-0000-000000000000'
+// Stream hash-chain genesis `prev`: the RFC 9562 §5.9 Nil UUID — the
+// one canonical "no predecessor" sentinel, shared with uuid-chain's
+// GENESIS_PREV_UUID and pwa's mutation-queue genesis (NIL_UUID).
+const STREAM_GENESIS = NIL_UUID
 
 /** Typed stream — a thin, typed wrapper over AsyncIterable<DomainEvent>. */
 export interface EventStream extends AsyncIterable<ClockedEvent> {
