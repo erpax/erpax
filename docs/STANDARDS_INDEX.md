@@ -1694,6 +1694,7 @@ src/services/gl-posting.service/index.ts:796:   * @standard ISO 20022 camt.053 r
 src/services/gl-posting.service/index.ts:8: * @standard ISO-8601-1:2019 date-time posted-date
 src/services/gl-posting.service/index.ts:9: * @standard ISO-4217:2015 currency-codes
 src/services/governance/index.ts:17: * @standard ISO 37000:2021 governance-of-organizations
+src/services/harmony/index.ts:11: * @standard just intonation (5-limit) — the perfect (1:1, 2:1, 3:2, 4:3) and
 src/services/horo/index.ts:20: * @standard ISO-16:1975 a432-tuning-reference (the anchor; value from position)
 src/services/i18n-harvest/index.ts:30: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/services/i18n-harvest/index.ts:31: * @standard BCP-47 language tags
@@ -1775,6 +1776,11 @@ src/services/locale-fallback/index.ts:39: * @standard BCP-47 — language tags
 src/services/locale-fallback/index.ts:40: * @standard ISO 639-2 — und (Undetermined) defined here originally
 src/services/locale-fallback/index.ts:41: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/services/locale-fallback/index.ts:42: * @standard ECMA-402 internationalization-api §6.2.3 (Intl.Locale tolerates 'und')
+src/services/localize/index.ts:38: * @standard RFC 9562 §5.8 (uuidv8 structured, name-based)
+src/services/localize/index.ts:39: * @standard ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)
+src/services/localize/index.ts:40: * @standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)
+src/services/localize/index.ts:41: * @standard BCP-47 (locale tags) · EU 1958/1 (official EU languages)
+src/services/localize/index.ts:42: * @standard NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)
 src/services/meta-automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/services/multi-currency.service/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/services/multi-currency.service/index.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
@@ -5443,6 +5449,7 @@ src/services/gl-posting.service/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/gl-posting.service/index.ts:585:   * @audit ISO-19011:2018 audit-trail period-expense
 src/services/gl-posting.service/index.ts:655:   * @audit ISO-19011:2018 audit-trail stock-ledger
 src/services/gl-posting.service/index.ts:798:   * @audit ISO-19011:2018 audit-trail reconciliation-evidence
+src/services/harmony/index.ts:13: * @audit harmony-checked horo bands (the horo state-ring law)
 src/services/i18n-harvest/index.ts:32: * @audit ISO 19011:2018 §6.4.6 (harvest changes audit-trailed)
 src/services/identification/index.ts:45: * @audit Conservation Law 10 referential-harmony (resolution = uuid-binding check)
 src/services/identification/index.ts:46: * @audit Conservation Law 46 uuid-short-display (short uuid kinds enumerated)
@@ -5477,6 +5484,7 @@ src/services/lease.service/index.ts:30: * @audit ISO-19011:2018 audit-trail
 src/services/locale-fallback/index.test.ts:19: * @audit Conservation Law 54 universal-identity-element
 src/services/locale-fallback/index.ts:43: * @audit Conservation Law 53 self-referential-closure
 src/services/locale-fallback/index.ts:44: * @audit Conservation Law 54 universal-identity-element (this is the locale instance)
+src/services/localize/index.ts:43: * @audit Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)
 src/services/meta-automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
 src/services/multi-currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/multi-search/index.ts:39: * @audit Conservation Law 53 self-referential-closure (this is the internal half)

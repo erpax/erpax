@@ -22,4 +22,4 @@ States in erpax are not free strings; they are positions on **one ring**: the me
 - A flow state on a triad digit {3,6} — those govern, they don't flow.
 - Nesting / re-keying instead of one flat position — breaks the address-law.
 
-Composes: [[rodin]]/[[coil]] (the math substrate) · [[sequence]] · [[balance]] · [[flow]] · [[begin]]/[[close]] · [[fractal]] · [[merge]] · [[identity]] (a position can ride the uuid). The seven positions: [[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]].
+A band of positions proves itself consonant or not by [[harmony]] (the seven ARE the diatonic scale; a state-band is harmonic iff every pair's ratio is). Composes: [[rodin]]/[[coil]] (the math substrate) · [[harmony]] · [[sequence]] · [[balance]] · [[flow]] · [[begin]]/[[close]] · [[fractal]] · [[merge]] · [[identity]] (a position can ride the uuid). The seven positions: [[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]].
