@@ -13,7 +13,7 @@
  * lookup. Tampering with any feature flag changes the uuid → cascades
  * through the signature + chain (Law 55) → exponential cost.
  *
- * RFC 9562 §6.4 reserves uuidv8 (`ver = 8`) for implementation-
+ * RFC 9562 §5.8 reserves uuidv8 (`ver = 8`) for implementation-
  * defined custom formats. We use the 122 free bits as:
  *
  *   bits  0..47   contentDigest_high  (48 bits)
@@ -53,7 +53,7 @@
  *   - Law 60 — blockchain: chain leaves are structured uuids whose
  *              slot tag = CHAIN_LEAF.
  *
- * @standard RFC 9562 §6.4 uuidv8 (custom formats)
+ * @standard RFC 9562 §5.8 uuidv8 (custom formats)
  * @standard RFC 4122 §4.1.2 variant bits
  * @standard NIST FIPS 180-4 SHA-256 (the truncated digest source)
  * @standard ITU-T X.667 / ISO/IEC 9834-8 (uuid registration)

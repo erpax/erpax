@@ -12,7 +12,7 @@
 import { computeContentUuid } from '@/services/integrity'
 
 const DID_METHOD = 'erpax'
-const DID_RE = /^did:erpax:([0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})$/i
+const DID_RE = /^did:erpax:([0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12})$/i
 
 export interface DIDDocument {
   readonly '@context': ReadonlyArray<string>

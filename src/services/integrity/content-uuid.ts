@@ -27,14 +27,19 @@
  *   3. JSON-canonicalize the remainder per RFC 8785 (sorted keys,
  *      tight whitespace, deterministic number serialization).
  *   4. SHA-256 the canonical bytes (FIPS 180-4).
- *   5. Format as UUIDv5 (RFC 4122 §4.3) using a per-tenant
+ *   5. Format as UUIDv8 (RFC 9562 §5.8) using a per-tenant
  *      namespace UUID derived from `tenantId`.
+ *
+ * A name-based UUID whose digest is SHA-256 is conformant only as a
+ * **uuidv8** (RFC 9562 §5.8, custom/vendor layout) — RFC 9562 §5.5
+ * uuidv5 mandates SHA-1, so the SHA-256 content hash is stamped as
+ * version 8, never version 5.
  *
  * The branded type `ContentUuid<T>` carries the source-shape
  * statically so consumers can tell "this uuid is derived from T",
  * not just "this is a uuid".
  *
- * @standard RFC 4122 §4.3 name-based UUID (version 5)
+ * @standard RFC 9562 §5.8 name-based UUID (version 8, custom layout)
  * @standard RFC 8785 JSON Canonicalization Scheme (JCS)
  * @standard ISO/IEC 10118 hash functions
  * @standard NIST FIPS 180-4 SHA-256
@@ -105,8 +110,9 @@ export function stripNonContentFields<T extends Record<string, unknown>>(obj: T)
 }
 
 /**
- * Format 16 raw bytes as a UUIDv5 string per RFC 4122 §4.1.2.
- * Caller is responsible for setting the version + variant bits.
+ * Format 16 raw bytes as a canonical UUID string (8-4-4-4-12).
+ * Caller is responsible for setting the version + variant bits
+ * (RFC 9562 §4.1 variant, §5.8 version).
  */
 function bytesToUuidString(bytes: Buffer): string {
   const hex = bytes.toString('hex')
@@ -120,11 +126,12 @@ function bytesToUuidString(bytes: Buffer): string {
 }
 
 /**
- * RFC 4122 §4.3 name-based UUID (version 5, SHA-1 historically, but
- * here SHA-256-truncated for FIPS 180-4 alignment + collision
- * resistance). The first 16 bytes of the SHA-256 are used as the
- * raw UUID; the version (5) and variant (RFC 4122) bits are then
- * stamped per the spec.
+ * RFC 9562 §5.8 name-based UUID (version 8, custom/vendor layout).
+ * The digest is SHA-256 (FIPS 180-4) over (namespace ∥ name); the
+ * first 16 bytes become the raw UUID, then the version (8) and
+ * variant (0b10) bits are stamped. A SHA-256 name hash is conformant
+ * only as v8 — RFC 9562 §5.5 v5 mandates SHA-1 — so the version
+ * nibble is 8, never 5.
  */
 export function nameUuid(namespaceUuid: string, name: string): string {
   // Strip dashes from namespace to recover 16 bytes
@@ -133,15 +140,15 @@ export function nameUuid(namespaceUuid: string, name: string): string {
   const nameBytes = Buffer.from(name, 'utf8')
   const hash = createHash('sha256').update(nsBytes).update(nameBytes).digest()
   const bytes = Buffer.from(hash.subarray(0, 16))
-  // Set version (5) in the high nibble of byte 6
-  bytes[6] = (bytes[6]! & 0x0f) | 0x50
-  // Set variant (10xxxxxx, RFC 4122) in the high two bits of byte 8
+  // Set version (8) in the high nibble of byte 6 (RFC 9562 §5.8)
+  bytes[6] = (bytes[6]! & 0x0f) | 0x80
+  // Set variant (10xxxxxx, RFC 9562 §4.1) in the high two bits of byte 8
   bytes[8] = (bytes[8]! & 0x3f) | 0x80
   return bytesToUuidString(bytes)
 }
 
 /** Root namespace for ERPax tenant content-uuids — registered ad-hoc. */
-export const ERPAX_NAMESPACE_ROOT = '6ba7b810-9dad-11d1-80b4-00c04fd430c8' // RFC 4122 example DNS namespace
+export const ERPAX_NAMESPACE_ROOT = '6ba7b810-9dad-11d1-80b4-00c04fd430c8' // RFC 9562 Appendix A (carried from RFC 4122) example DNS namespace
 
 /** Derive a stable per-tenant namespace UUID from the tenantId. */
 export function tenantNamespace(tenantId: string): string {
@@ -166,7 +173,7 @@ export function uuid(value: unknown): string {
 /**
  * Compute the content-uuid of an object — strips non-content fields,
  * JCS-canonicalizes the rest, hashes with SHA-256, formats as
- * UUIDv5 under the per-tenant namespace.
+ * uuidv8 (RFC 9562 §5.8) under the per-tenant namespace.
  *
  * Pure function. Re-running on the same object always yields the
  * same uuid; any field change yields a different uuid.
@@ -191,28 +198,24 @@ export function verifyContentUuid<T extends Record<string, unknown>>(
   tenantId: string,
 ): { ok: true } | { ok: false; expected: string; actual: string | undefined } {
   const actual = obj.uuid
-  if (typeof actual !== 'string') {
-    const expected = computeContentUuid(obj, tenantId)
-    return { ok: false, expected, actual }
-  }
-  // Slice ZZZZZZZZZ-cut1 (2026-05-11) — collection rows now emit RFC
-  // 9562 uuidv8 (Law 61). Position 14 in canonical 8-4-4-4-12 is the
-  // version nibble. v8 → recompute via encodeStructured; v5 → legacy
-  // path. Rows persisted under either format still verify correctly.
-  if (actual.charAt(14) === '8') {
-    const content = stripNonContentFields(obj)
-    const expected = encodeStructured({
-      slotTag: SLOT_TAGS.collectionRow,
-      capabilities: CAPABILITIES.TAMPER_PROOF,
-      schemaVersion: 1,
-      content,
-      tenantId,
-    })
-    if (actual === expected) return { ok: true }
-    return { ok: false, expected, actual }
-  }
-  // Legacy uuidv5 path preserved.
-  const expected = computeContentUuid(obj, tenantId)
-  if (actual === expected) return { ok: true }
-  return { ok: false, expected, actual }
+  // Two uuidv8 (RFC 9562 §5.8) layouts are in use, both version-8:
+  //   - collection rows carry the STRUCTURED uuid (Law 61) emitted by
+  //     `encodeStructured` (slot=collectionRow + TAMPER_PROOF flag);
+  //   - federation envelopes / storage replicas carry the plain
+  //     content-hash uuid emitted by `computeContentUuid`.
+  // Both share the version nibble, so we try each and accept a match
+  // from either. The structured form is reported as `expected` on
+  // mismatch since it is the tamper-proof-row default.
+  const content = stripNonContentFields(obj)
+  const structuredExpected = encodeStructured({
+    slotTag: SLOT_TAGS.collectionRow,
+    capabilities: CAPABILITIES.TAMPER_PROOF,
+    schemaVersion: 1,
+    content,
+    tenantId,
+  })
+  if (typeof actual === 'string' && actual === structuredExpected) return { ok: true }
+  const hashExpected = computeContentUuid(obj, tenantId)
+  if (typeof actual === 'string' && actual === hashExpected) return { ok: true }
+  return { ok: false, expected: structuredExpected, actual: typeof actual === 'string' ? actual : undefined }
 }

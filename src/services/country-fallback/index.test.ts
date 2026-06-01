@@ -137,7 +137,7 @@ describe('computeCountryUuid — uuid-family bridge (Law 54)', () => {
     const a = computeCountryUuid('BG', 'tenant-1')
     const b = computeCountryUuid('BG', 'tenant-1')
     expect(a).toBe(b)
-    expect(a).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(a).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
   })
 
   it('differs across tenants for the same code', () => {

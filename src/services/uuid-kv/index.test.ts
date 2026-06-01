@@ -72,7 +72,7 @@ describe('computeKvBindingUuid — binding-level content uuid', () => {
     const a = computeKvBindingUuid(args)
     const b = computeKvBindingUuid(args)
     expect(a).toBe(b)
-    expect(a).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(a).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
   })
 
   it('differs when value-uuid changes (same key, new value → new binding)', () => {

@@ -4,7 +4,7 @@
  * Slice UUUUUUUUU-cut1 (2026-05-11). Pins:
  *
  *   1. encodeStructured produces a syntactically valid uuid.
- *   2. The version nibble is 8 (RFC 9562 §6.4).
+ *   2. The version nibble is 8 (RFC 9562 §5.8).
  *   3. The variant bits are 0b10 (RFC 4122 §4.1.2).
  *   4. decodeStructured recovers the (slotTag, capabilities,
  *      schemaVersion) inputs exactly.
@@ -42,7 +42,7 @@ describe('encodeStructured — RFC 9562 uuidv8 layout', () => {
     expect(uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/)
   })
 
-  it('version nibble = 8 (RFC 9562 §6.4)', () => {
+  it('version nibble = 8 (RFC 9562 §5.8)', () => {
     const uuid = encodeStructured({
       slotTag: SLOT_TAGS.currency, capabilities: 0, schemaVersion: 0,
       content: { x: 1 }, tenantId: TENANT,

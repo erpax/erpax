@@ -45,7 +45,7 @@
  * @standard W3C Web App Manifest (W3C-WAM)
  * @standard W3C Push API + W3C Notifications API
  * @standard W3C Cache API + W3C IndexedDB 3.0 + W3C OPFS
- * @standard RFC 4122 §4.3 + RFC 8785 (uuid composition)
+ * @standard RFC 9562 §5.8 + RFC 8785 (uuid composition)
  * @audit ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed)
  */
 

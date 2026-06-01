@@ -38,7 +38,7 @@
  *
  * @standard FIPS 180-4 sha-256
  * @standard RFC 8785 JSON Canonicalization Scheme (JCS)
- * @standard RFC 4122 §4.3 name-based UUID
+ * @standard RFC 9562 §5.8 name-based UUID
  * @audit Conservation Law 8 content-uuid (per-leaf)
  * @audit Conservation Law 9 storage-redundancy (linkable across stores)
  * @audit ISO 19011:2018 §6.4.6 tamper-evident audit evidence

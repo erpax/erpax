@@ -4,7 +4,7 @@
  * Per user 'it is insecure to display the uuids in full. shorter
  * version per case may significantly improve the ui/ux and search'.
  *
- * Full uuids (RFC 4122 §4.3 — 36 chars including dashes) are
+ * Full uuids (RFC 9562 §5.8 — 36 chars including dashes) are
  * cryptographic identifiers. Displaying them in full UI surfaces:
  *   - Leaks information about the namespace + content hash entropy
  *   - Hurts UI/UX (long unreadable strings)
@@ -37,7 +37,7 @@
  * candidates)` — caller passes the active set (tenant-scoped) and
  * the function returns the full uuid (or ambiguous/none).
  *
- * @standard RFC 4122 §4.3 — uuidv5 (full form for verification)
+ * @standard RFC 9562 §5.8 — uuidv8 (full form for verification)
  * @standard ISO/IEC 25010:2023 §5.3 usability — discoverability
  * @standard ISO/IEC 27001 §A.9.4.5 (information access restriction)
  * @audit ISO 19011:2018 §6.4.6 (UI surfaces audit-trailed for length compliance)

@@ -31,14 +31,14 @@
  * `ChainLink` whose payloadUuid is the HEAD of the local chain.
  *
  * Standards lineage:
- *   - RFC 4122 §4.3 + RFC 8785 (the hash that makes leaves stable)
+ *   - RFC 9562 §5.8 + RFC 8785 (the hash that makes leaves stable)
  *   - NIST FIPS 180-4 SHA-256 (collision-resistance budget)
  *   - Bitcoin §3 (the original hash chain — same shape, different math)
  *   - Ethereum YP §4.3 (block headers — `prev` pointer + content hash)
  *   - ISO/IEC 23257-1 (blockchain reference architecture)
  *   - ITU-T Y.4810 (DLT terminology — leaf / block / chain)
  *
- * @standard RFC 4122 §4.3 uuidv5
+ * @standard RFC 9562 §5.8 uuidv8
  * @standard RFC 8785 JSON Canonicalization Scheme
  * @standard NIST FIPS 180-4 SHA-256
  * @standard ISO/IEC 23257-1 blockchain reference architecture
@@ -61,7 +61,7 @@ import {
 } from '@/services/uuid-format'
 
 /**
- * Special sentinel for the genesis leaf's `prev`. UUIDv5 all-zeros
+ * Special sentinel for the genesis leaf's `prev`. Nil-UUID (all-zeros)
  * variant for the platform-tenant namespace. By convention, every
  * chain's genesis points at this; no two chains share genesis
  * because the second binding-uuid differs by the next payload.

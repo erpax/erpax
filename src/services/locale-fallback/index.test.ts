@@ -168,7 +168,7 @@ describe('computeLocaleUuid — uuid-family bridge (Law 54)', () => {
     const u1 = computeLocaleUuid('en', 'tenant-1')
     const u2 = computeLocaleUuid('en', 'tenant-1')
     expect(u1).toBe(u2)
-    expect(u1).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(u1).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
   })
 
   it('differs across tenants for the same code', () => {

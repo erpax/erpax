@@ -128,8 +128,8 @@ describe('runWithFingerprint', () => {
       tenantId: 'tenant-1',
       exec: async () => ({ docs: [{ id: 'a' }, { id: 'b' }] }),
     })
-    expect(exec.queryUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
-    expect(exec.resultUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(exec.queryUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
+    expect(exec.resultUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
     expect(exec.queryUuid).not.toBe(exec.resultUuid)
     expect(exec.rowCount).toBe(2)
     expect(exec.elapsedMs).toBeGreaterThanOrEqual(0)
@@ -157,7 +157,7 @@ describe('runWithFingerprint', () => {
       tenantId: 'tenant-1',
       // no exec
     })
-    expect(exec.queryUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(exec.queryUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
     expect(exec.result).toBeNull()
   })
 })

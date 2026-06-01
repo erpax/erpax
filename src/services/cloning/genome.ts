@@ -7,7 +7,7 @@
  * DNA — a bit-identical instance can be booted from this bundle alone
  * (no source-tree dependency at boot time once it's serialised).
  *
- * @standard RFC 4122 §4.3 + RFC 8785 (genome-uuid is content-addressable)
+ * @standard RFC 9562 §5.8 + RFC 8785 (genome-uuid is content-addressable)
  * @standard W3C PROV (genome carries source-instance lineage)
  */
 

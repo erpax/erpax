@@ -24,7 +24,7 @@
  * Composes with Laws 8 (per-row content integrity) and 9 (cross-store
  * redundancy) into a full spacetime integrity model.
  *
- * @standard RFC 4122 §4.3 + RFC 8785
+ * @standard RFC 9562 §5.8 + RFC 8785
  * @audit ISO 19011:2018 §6.4.6
  * @compliance SOX §404 (referential integrity without cascade rules)
  */
@@ -32,8 +32,8 @@
 import type { Payload, Field } from 'payload'
 import { verifyContentUuid } from './content-uuid'
 
-/** UUIDv5 regex — RFC 4122 §3 textual form for version 5 + RFC 4122 variant. */
-const UUID_V5_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
+/** UUIDv8 regex — RFC 9562 §4 textual form for version 8 + RFC 9562 variant. */
+const UUID_V8_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 
 /**
  * Registry of every (collection, fieldPath) pair that holds a uuidRef.
@@ -77,8 +77,8 @@ export function uuidRef(args: {
       if (value === undefined || value === null || value === '') {
         return args.required ? `'${args.fieldName}' is required` : true
       }
-      if (typeof value !== 'string' || !UUID_V5_RE.test(value)) {
-        return `'${args.fieldName}' must be a UUIDv5 (content-derived) pointing at a '${args.targetCollection}' row`
+      if (typeof value !== 'string' || !UUID_V8_RE.test(value)) {
+        return `'${args.fieldName}' must be a UUIDv8 (content-derived) pointing at a '${args.targetCollection}' row`
       }
       return true
     },
@@ -174,7 +174,7 @@ export async function findDanglingRefs(args: {
       const owningId = String(obj.id ?? '?')
       for (const ref of refs) {
         const uuid = obj[ref.field]
-        if (typeof uuid !== 'string' || !UUID_V5_RE.test(uuid)) continue
+        if (typeof uuid !== 'string' || !UUID_V8_RE.test(uuid)) continue
         const resolved = await resolveByUuid({
           payload, collection: ref.target, uuid, tenantId,
         })

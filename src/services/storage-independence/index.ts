@@ -4,7 +4,7 @@
  * Per user 'this way any object is storage independent'. The natural
  * conclusion of the slices preceding this one:
  *
- *   - Slice RRRRR: every object carries `uuid = uuidv5(content)` (Law 8)
+ *   - Slice RRRRR: every object carries `uuid = uuidv8(content)` (Law 8)
  *   - Slice TTTTT: same uuid lets you store the object in any backend
  *                  (D1 / R2 / KV / DO / IPFS / Arweave / Filecoin /
  *                   peer ERPax instance) — read it back, recompute,
@@ -61,7 +61,7 @@
  *
  * @standard ISO/IEC 27040:2024 — storage security (data integrity)
  * @standard W3C Verifiable Data Registry conformance (storage layer)
- * @standard RFC 4122 §4.3 + RFC 8785 (content-derived uuids)
+ * @standard RFC 9562 §5.8 + RFC 8785 (content-derived uuids)
  * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
  */
 

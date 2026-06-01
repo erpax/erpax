@@ -1366,7 +1366,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.verifyObject',
-      description: 'Conservation Law 8: fetch a row from a tamper-proof collection, recompute its content-uuid (RFC 4122 §4.3 + RFC 8785 + SHA-256), and compare to the stored uuid. Returns {ok: true} on match or {ok: false, expected, actual} on Byzantine tamper.',
+      description: 'Conservation Law 8: fetch a row from a tamper-proof collection, recompute its content-uuid (RFC 9562 §5.8 + RFC 8785 + SHA-256), and compare to the stored uuid. Returns {ok: true} on match or {ok: false, expected, actual} on Byzantine tamper.',
       parameters: { collection: z.string(), id: z.string() },
       async handler({ collection, id }, req) {
         if (!TAMPER_PROOF_COLLECTIONS_REGISTRY.has(collection as string)) {
@@ -1749,7 +1749,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice FFFFFFF — short uuids per case for UI/UX + search + security (Law 46) ──
     {
       name: 'erpax.integrity.shortUuid',
-      description: 'Per user "it is insecure to display the uuids in full. shorter version per case may significantly improve the ui/ux and search" — render a full uuid (RFC 4122 §4.3) as a short, kind-prefixed display id (e.g. aud_a1b2c3d4 for audit, vot_xy12z3 for vote). NEVER use as verification key — display-only (ISO/IEC 27001 §A.9.4.5).',
+      description: 'Per user "it is insecure to display the uuids in full. shorter version per case may significantly improve the ui/ux and search" — render a full uuid (RFC 9562 §5.8) as a short, kind-prefixed display id (e.g. aud_a1b2c3d4 for audit, vot_xy12z3 for vote). NEVER use as verification key — display-only (ISO/IEC 27001 §A.9.4.5).',
       parameters: {
         uuid: z.string(),
         kind: z.enum([
@@ -1799,7 +1799,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice GGGGGGG — type-level content uuid (Law 47) ──
     {
       name: 'erpax.integrity.computeTypeUuid',
-      description: 'Per user "any type has uuid as well as any type object" — derive a uuidv5 from a TypeDescriptor (RFC 4122 §4.3 + JSON Schema draft 2020-12 + RFC 8785 canonicalisation). Two equivalent type shapes hash to the same uuid; any structural change shifts it.',
+      description: 'Per user "any type has uuid as well as any type object" — derive a uuidv8 from a TypeDescriptor (RFC 9562 §5.8 + JSON Schema draft 2020-12 + RFC 8785 canonicalisation). Two equivalent type shapes hash to the same uuid; any structural change shifts it.',
       parameters: { descriptor: z.record(z.unknown()) },
       async handler({ descriptor }) {
         return json({ typeUuid: computeTypeUuid(descriptor as unknown as TypeDescriptor) })
@@ -1866,7 +1866,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.uuidStreamQuery',
-      description: 'Slice IIIIIIIII — unified query interface across every uuid source (object/type/stream/audit/vote/aggregate/page/face/standard/clone/federation/proof/did/tool-catalog/platform-genome). Filter by source + tenant + limit (RFC 4122 §4.3).',
+      description: 'Slice IIIIIIIII — unified query interface across every uuid source (object/type/stream/audit/vote/aggregate/page/face/standard/clone/federation/proof/did/tool-catalog/platform-genome). Filter by source + tenant + limit (RFC 9562 §5.8).',
       parameters: {
         source: z.union([
           z.enum(['object', 'type', 'stream', 'audit', 'vote', 'aggregate', 'page', 'face', 'standard', 'clone', 'federation', 'proof', 'did', 'tool-catalog', 'platform-genome']),
@@ -1937,7 +1937,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.integrity.checkTypeUuidCoverage',
-      description: 'Conservation Law 47 — every domain type in use must be registered with a uuid. Boot-suite probe verifies the baseline (extend by calling registerTypeFromZod for your own types). RFC 4122 §4.3 + RFC 8785.',
+      description: 'Conservation Law 47 — every domain type in use must be registered with a uuid. Boot-suite probe verifies the baseline (extend by calling registerTypeFromZod for your own types). RFC 9562 §5.8 + RFC 8785.',
       parameters: {},
       async handler() {
         ensureBaselineTypesRegistered()
@@ -1960,7 +1960,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     // ── Slice NNNNNNNN — uuid solves PWA (Law 52) ──
     {
       name: 'erpax.pwa.cacheAsset',
-      description: 'Per user "uuid solves pwa" — cache an asset keyed by its content-uuid (W3C Cache API + W3C Service Workers). The uuid IS the cache key — no manual cache-busting hash. RFC 4122 §4.3 + RFC 8785.',
+      description: 'Per user "uuid solves pwa" — cache an asset keyed by its content-uuid (W3C Cache API + W3C Service Workers). The uuid IS the cache key — no manual cache-busting hash. RFC 9562 §5.8 + RFC 8785.',
       parameters: {
         url: z.string(),
         kind: z.enum(['js', 'css', 'html', 'image', 'font', 'json', 'wasm', 'other']),
@@ -2033,7 +2033,7 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
     },
     {
       name: 'erpax.pwa.verifyManifest',
-      description: 'Slice NNNNNNNN — verify a manifest envelope by recomputing the content-uuid (RFC 4122 §4.3 + RFC 8785). Tampered manifest fails immediately.',
+      description: 'Slice NNNNNNNN — verify a manifest envelope by recomputing the content-uuid (RFC 9562 §5.8 + RFC 8785). Tampered manifest fails immediately.',
       parameters: {
         envelope: z.object({
           uuid: z.string(),

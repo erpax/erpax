@@ -76,7 +76,7 @@ export const TRINITY: ReadonlyArray<TrinityLawDescriptor> = [
     title: 'Identity',
     dimension: 'WHAT-IS',
     statement:
-      'Every thing — object, type, ballot, page, standard, clone, federation envelope, proof, DID, MCP tool catalog snapshot, platform genome — has a uuid derived from its content (RFC 4122 §4.3 + RFC 8785). Two byte-equal things have equal uuids; any mutation shifts the uuid.',
+      'Every thing — object, type, ballot, page, standard, clone, federation envelope, proof, DID, MCP tool catalog snapshot, platform genome — has a uuid derived from its content (RFC 9562 §5.8 + RFC 8785). Two byte-equal things have equal uuids; any mutation shifts the uuid.',
     vortex: 'A-domain',
     subsumes: [
       { num: 8, name: 'content-addressable object uuid (RRRRR)' },
@@ -90,19 +90,19 @@ export const TRINITY: ReadonlyArray<TrinityLawDescriptor> = [
       { num: 47, name: 'type uuid (GGGGGGG)' },
     ],
     obligations: [
-      'Compute uuid as uuidv5(content, tenant-namespace) over JCS-canonical bytes (RFC 8785).',
+      'Compute uuid as uuidv8(content, tenant-namespace) over JCS-canonical bytes (RFC 8785).',
       'Strip storage-managed fields (uuid, id, createdAt, updatedAt) from the content used for hashing.',
       'Verify by recompute on every read at the trust boundary (federation, cross-backend, regulator audit).',
       'Surface short uuids in UI (Law 46); reserve full uuids for verification + federation.',
     ],
-    standards: ['RFC 4122 §4.3', 'RFC 8785 (JCS)', 'FIPS 180-4 (SHA-256)', 'W3C VC Data Model 2.0', 'ISO/IEC 25010:2023 §5.6 security'],
+    standards: ['RFC 9562 §5.8', 'RFC 8785 (JCS)', 'FIPS 180-4 (SHA-256)', 'W3C VC Data Model 2.0', 'ISO/IEC 25010:2023 §5.6 security'],
   },
   {
     law: 'II-causality',
     title: 'Causality',
     dimension: 'HOW-IT-BECOMES',
     statement:
-      'Every state change is an event in a uuid-chained causal order. Stream events carry a Lamport clock + a hash-chain (streamUuid = uuidv5({event, lamport, prev})); chain steps preserve event-graph closure; type evolutions are uuid transitions; aggregate uuids derive from sorted leaf uuids. Out-of-order observations are detectable; tampering breaks the chain at the corruption point.',
+      'Every state change is an event in a uuid-chained causal order. Stream events carry a Lamport clock + a hash-chain (streamUuid = uuidv8({event, lamport, prev})); chain steps preserve event-graph closure; type evolutions are uuid transitions; aggregate uuids derive from sorted leaf uuids. Out-of-order observations are detectable; tampering breaks the chain at the corruption point.',
     vortex: 'B-substrate',
     subsumes: [
       { num: 4, name: 'event graph connected (PPPP)' },
@@ -121,7 +121,7 @@ export const TRINITY: ReadonlyArray<TrinityLawDescriptor> = [
       'Type evolutions register old-uuid → new-uuid transition; clones carry the transition history.',
       'Block compositions must share an event type at every boundary (Law 32 — A.emits.events ∩ B.subscribes ≠ ∅).',
     ],
-    standards: ['Lamport 1978 (causal ordering)', 'W3C PROV-DM', 'RFC 4122 §4.3', 'W3C Streams API', 'ISO/IEC 25010:2023 §5.2 performance'],
+    standards: ['Lamport 1978 (causal ordering)', 'W3C PROV-DM', 'RFC 9562 §5.8', 'W3C Streams API', 'ISO/IEC 25010:2023 §5.2 performance'],
   },
   {
     law: 'III-closure',

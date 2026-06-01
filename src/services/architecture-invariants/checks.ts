@@ -488,7 +488,7 @@ export async function checkFeatureCoverage(ctx: InvariantContext): Promise<Invar
     }
     return warn(
       'entropy', 'feature-coverage',
-      `coverage ${cov} below 0.9 threshold — ${report.legacyCount}/${report.totalSamples} are legacy uuidv5 (P(tamper)≈${tampStr})`,
+      `coverage ${cov} below 0.9 threshold — ${report.legacyCount}/${report.totalSamples} are legacy/non-structured (P(tamper)≈${tampStr})`,
       // Offer the top slot-coverage gaps as offender hints.
       report.perSlot
         .filter((s) => s.total > 0 && s.structuredCoverage < 1)
@@ -1415,7 +1415,7 @@ export function checkEventGraphConnected(_ctx: InvariantContext): InvariantResul
 /**
  * Conservation Law 8 — content-addressable integrity. Every object
  * whose collection ships the `tamperProofUuidField` MUST have a uuid
- * that recomputes from its content (RFC 4122 §4.3 + RFC 8785 + SHA-256).
+ * that recomputes from its content (RFC 9562 §5.8 + RFC 8785 + SHA-256).
  *
  * Samples up to N rows per opted-in collection per tenant, recomputes
  * the content-uuid via `verifyContentUuid`, and reports any mismatch
@@ -1426,7 +1426,7 @@ export function checkEventGraphConnected(_ctx: InvariantContext): InvariantResul
  * been backfilled with computed uuids. Promote to fail once the
  * backfill completes.
  *
- * @standard RFC 4122 + RFC 8785 + NIST FIPS 180-4
+ * @standard RFC 9562 + RFC 8785 + NIST FIPS 180-4
  * @compliance SOX §404 (Byzantine tamper detection)
  * @audit ISO 19011:2018 §6.4.6
  */
@@ -1481,7 +1481,7 @@ export async function checkContentIntegrityProvable(ctx: InvariantContext): Prom
  * Composes with Law 8 (per-row integrity) and Law 9 (cross-store
  * redundancy) into the full spacetime integrity model.
  *
- * @standard RFC 4122 §4.3 + RFC 8785
+ * @standard RFC 9562 §5.8 + RFC 8785
  * @audit ISO 19011:2018 §6.4.6
  * @compliance SOX §404 referential integrity
  */
@@ -1543,7 +1543,7 @@ export function checkErpaxObservesSelf(_ctx: InvariantContext): InvariantResult 
  *
  * Probe: collect the genome twice, hash twice; the two uuids must match.
  *
- * @standard RFC 4122 §4.3 + RFC 8785
+ * @standard RFC 9562 §5.8 + RFC 8785
  * @audit ISO 19011:2018 §6.4.6 (clone-integrity provable at build time)
  */
 export function checkGenomeDeterministic(_ctx: InvariantContext): InvariantResult {

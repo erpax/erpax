@@ -18,7 +18,7 @@
  *
  * Resolution order (first match wins; deterministic):
  *
- *   1. **Full content UUID v5** (RFC 4122 §4.3, 36 chars)
+ *   1. **Full content UUID v8** (RFC 9562 §5.8, 36 chars)
  *        → `resolveByUuid` across the entity's collection, or scan
  *          the uuid-ref registry to find the owning collection.
  *   2. **Compact JWS** (3 base64url segments separated by `.`)
@@ -38,7 +38,7 @@
  *   - the canonical contentUuid (when derivable — useful for caller's
  *     downstream verify / federation / audit calls).
  *
- * @standard RFC 4122 §4.3 uuidv5
+ * @standard RFC 9562 §5.8 uuidv8
  * @standard RFC 7515 JWS compact form
  * @standard W3C DID Core 1.0 (DID syntax)
  * @standard ISO/IEC 25010:2023 §5.3 operability (one input → one resolver)
@@ -58,7 +58,7 @@ import type { ShortUuidKind } from '../integrity/uuid-short'
 
 /** Identifier kinds the resolver can recognise. */
 export type IdentifierKind =
-  | 'content-uuid'   // 36-char RFC 4122 §4.3 (uuidv5)
+  | 'content-uuid'   // 36-char RFC 9562 §5.8 (uuidv8)
   | 'jws'            // 3-segment base64url RFC 7515 — signature recovers contentUuid
   | 'did'            // W3C DID — did:erpax:<tenant>:<uuid>
   | 'short-uuid'     // FFFFFFF kind-prefixed (aud_/inv_/std_/…)
@@ -82,7 +82,7 @@ export interface IdentificationResult<T = unknown> {
 }
 
 /** Regex set — keep public so callers can reuse for client-side hints. */
-export const UUID_V5_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
+export const UUID_V8_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 export const JWS_RE = /^[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$/
 export const DID_RE = /^did:erpax:/i
 export const SHORT_UUID_RE = /^[a-z]{3}_[a-f0-9]+$/
@@ -108,7 +108,7 @@ export async function identifyAny<T = unknown>(
   }
 
   // 1. Full content uuid.
-  if (UUID_V5_RE.test(q)) {
+  if (UUID_V8_RE.test(q)) {
     return await resolveContentUuid<T>(q, ctx, 'content-uuid:direct-match')
   }
 
@@ -118,7 +118,7 @@ export async function identifyAny<T = unknown>(
       const { fromJws } = await import('../integrity/signatures')
       const signed = fromJws<T>(q)
       const uuid = String(signed.uuid)
-      if (UUID_V5_RE.test(uuid)) {
+      if (UUID_V8_RE.test(uuid)) {
         return await resolveContentUuid<T>(uuid, ctx, 'jws:recovered-contentUuid')
       }
     } catch {
@@ -131,7 +131,7 @@ export async function identifyAny<T = unknown>(
     try {
       const did = await import('../did')
       const uuid = did.uuidFromDid?.(q)
-      if (uuid && UUID_V5_RE.test(uuid)) {
+      if (uuid && UUID_V8_RE.test(uuid)) {
         return await resolveContentUuid<T>(uuid, ctx, 'did:resolved-to-contentUuid')
       }
     } catch {

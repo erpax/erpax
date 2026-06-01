@@ -27,13 +27,13 @@ describe('uuidRef', () => {
     expect(UUID_REF_REGISTRY.get('invoices.customerUuid')).toBe('customers')
   })
 
-  it('validate accepts a UUIDv5 string', () => {
+  it('validate accepts a UUIDv8 string', () => {
     const [field] = uuidRef({
       owningCollection: 'invoices', fieldName: 'customerUuid', targetCollection: 'customers',
     })
     const validate = (field as { validate: (v: unknown) => true | string }).validate
-    // Valid v5 (version nibble = 5, variant = 8/9/a/b in high two bits)
-    expect(validate('00112233-4455-5667-8899-aabbccddeeff')).toBe(true)
+    // Valid v8 (version nibble = 8, variant = 8/9/a/b in high two bits)
+    expect(validate('00112233-4455-8667-8899-aabbccddeeff')).toBe(true)
   })
 
   it('validate rejects non-uuid strings', () => {
@@ -43,11 +43,11 @@ describe('uuidRef', () => {
     const validate = (field as { validate: (v: unknown) => true | string }).validate
     const rejection = validate('not-a-uuid')
     expect(typeof rejection).toBe('string')
-    expect(rejection).toContain('UUIDv5')
+    expect(rejection).toContain('UUIDv8')
     expect(rejection).toContain('customers')
   })
 
-  it('validate rejects v4 uuids (version nibble must be 5)', () => {
+  it('validate rejects v4 uuids (version nibble must be 8)', () => {
     const [field] = uuidRef({
       owningCollection: 'invoices', fieldName: 'customerUuid', targetCollection: 'customers',
     })

@@ -110,7 +110,7 @@ describe('identity-element framework — generic slot', () => {
     const a = computeIdentityUuid('unit-of-measure', 'kg', 't-1')
     const b = computeIdentityUuid('unit-of-measure', 'kg', 't-1')
     expect(a).toBe(b)                                          // deterministic
-    expect(a).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(a).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
 
     const aDifferentTenant = computeIdentityUuid('unit-of-measure', 'kg', 't-2')
     expect(a).not.toBe(aDifferentTenant)                       // per-tenant

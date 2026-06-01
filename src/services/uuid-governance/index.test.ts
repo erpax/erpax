@@ -163,7 +163,7 @@ describe('verifyGovernance — chain walk + capability read-back', () => {
 
   it('returns ok:false when the rootUuid is not structured (Law 61 violation)', async () => {
     const store = makeStore<TestEntity>()
-    // Synthesise a scope with a NON-structured rootUuid (legacy uuidv5).
+    // Synthesise a scope with a NON-structured rootUuid (legacy/non-structured).
     const scope = {
       rootUuid: '6ba7b810-9dad-11d1-80b4-00c04fd430c8' as never,
       tenantId: TENANT,

@@ -83,7 +83,7 @@ export interface SqlQuery {
   readonly [k: string]: unknown
 }
 
-/** RFC 4122 §4.3 / Slice RRRRR branded uuid that's the fingerprint of a query. */
+/** RFC 9562 §5.8 / Slice RRRRR branded uuid that's the fingerprint of a query. */
 export type QueryUuid = ContentUuid<SqlQuery>
 
 /**

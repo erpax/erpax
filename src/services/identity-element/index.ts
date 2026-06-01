@@ -45,7 +45,7 @@
  *
  * @standard ISO/IEC 25010:2023 §5.4 reusability — identity by abstraction
  * @standard NIST FIPS 180-4 SHA-256 (uuid hash)
- * @standard RFC 4122 §4.3 uuidv5 (uuid construction)
+ * @standard RFC 9562 §5.8 uuidv8 (uuid construction)
  * @audit Conservation Law 53 self-referential-closure (identity element is the role's internal-fallback)
  * @audit Conservation Law 54 universal-identity-element (this module formalises it)
  * @audit Conservation Law 8 content-addressable integrity

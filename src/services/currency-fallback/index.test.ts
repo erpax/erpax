@@ -311,7 +311,7 @@ describe('Currency primitives are uuid primitives (Slice LLLLLLLLL-cut4)', () =>
     const u1 = computeCurrencyUuid('EUR', 'tenant-1')
     const u2 = computeCurrencyUuid('EUR', 'tenant-1')
     expect(u1).toBe(u2)
-    expect(u1).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(u1).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
   })
 
   it('computeCurrencyUuid differs across tenants for the same code', async () => {

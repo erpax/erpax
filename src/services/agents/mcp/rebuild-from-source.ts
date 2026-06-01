@@ -176,7 +176,7 @@ export function deriveExpectedToolsFromCorpus(corpus: SpecCorpus): ReadonlyArray
   if (corpus.collections.some((c) => /tamper|integrity|content.uuid/i.test(c.description))) {
     expected.push({
       name: 'erpax.integrity.verifyObject',
-      description: 'Conservation Law 8 (RRRRR) — recompute content uuid for one row; report match/mismatch per RFC 4122 §4.3 + RFC 8785.',
+      description: 'Conservation Law 8 (RRRRR) — recompute content uuid for one row; report match/mismatch per RFC 9562 §5.8 + RFC 8785.',
       area: 'integrity',
       originHint: 'platform-meta',
       sourcePath: 'src/services/integrity/content-uuid.ts',

@@ -5,8 +5,8 @@
  * generalization of slice RRRRR: not only every OBJECT has a
  * content-uuid; every TYPE itself has one too.
  *
- *   Object uuid (RRRRR — Law 8)  = uuidv5(content of an instance)
- *   Type uuid   (this slice)     = uuidv5(content of the type def)
+ *   Object uuid (RRRRR — Law 8)  = uuidv8(content of an instance)
+ *   Type uuid   (this slice)     = uuidv8(content of the type def)
  *
  * The type definition is a structural descriptor (Zod schema → JSON
  * schema; TypeScript interface → JSON-LD type manifest). When the
@@ -49,7 +49,7 @@
  * registered with a type-uuid. Boot suite verifies coverage.
  *
  * @standard W3C JSON-LD 1.1 + JSON Schema (draft 2020-12)
- * @standard RFC 4122 §4.3 + RFC 8785 (canonical type uuid)
+ * @standard RFC 9562 §5.8 + RFC 8785 (canonical type uuid)
  * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
  * @standard W3C Verifiable Credentials Data Model 2.0 (typed claims)
  * @audit ISO 19011:2018 §6.4.6 (type evolution audit-trailed)

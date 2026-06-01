@@ -1,7 +1,7 @@
 /**
  * Tests for the content-addressable UUID primitive — Conservation Law 8.
  *
- * @standard RFC 4122 §4.3 + RFC 8785 + FIPS 180-4
+ * @standard RFC 9562 §5.8 + RFC 8785 + FIPS 180-4
  */
 import { describe, it, expect } from 'vitest'
 import {
@@ -51,7 +51,7 @@ describe('stripNonContentFields', () => {
 })
 
 describe('tenantNamespace', () => {
-  it('produces a deterministic UUIDv5 per tenant', () => {
+  it('produces a deterministic UUIDv8 per tenant', () => {
     const a = tenantNamespace('tenant-1')
     const b = tenantNamespace('tenant-1')
     expect(a).toBe(b)
@@ -61,7 +61,7 @@ describe('tenantNamespace', () => {
   })
   it('returns a valid UUID v5 format', () => {
     const ns = tenantNamespace('t')
-    expect(ns).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
+    expect(ns).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
   })
 })
 
@@ -99,7 +99,7 @@ describe('computeContentUuid', () => {
   })
   it('returns a valid UUID v5 format', () => {
     const u = computeContentUuid({ amount: 100 }, 'tenant-1')
-    expect(u).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
+    expect(u).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/)
   })
 })
 

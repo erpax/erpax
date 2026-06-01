@@ -80,10 +80,10 @@ describe('computeGenomeUuid', () => {
     expect(computeGenomeUuid(b, 'tenant-a')).not.toBe(computeGenomeUuid(b, 'tenant-b'))
   })
 
-  it('returns a UUIDv5-format string', () => {
+  it('returns a UUIDv8-format string', () => {
     const b = collectGenome({ tenantId: 'erpax-self' })
     expect(computeGenomeUuid(b, 'erpax-self')).toMatch(
-      /^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/,
+      /^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/,
     )
   })
 })

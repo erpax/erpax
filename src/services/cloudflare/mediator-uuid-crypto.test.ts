@@ -99,8 +99,8 @@ describe('Mediator — uuid-anchored crypto + query fingerprint', () => {
       params: [TENANT],
       exec: async () => ({ docs: [{ id: 'a' }, { id: 'b' }] }),
     })
-    expect(exec.queryUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
-    expect(exec.resultUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-5[0-9a-f]{3}-/)
+    expect(exec.queryUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
+    expect(exec.resultUuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-8[0-9a-f]{3}-/)
     expect(exec.queryUuid).not.toBe(exec.resultUuid)
     expect(exec.rowCount).toBe(2)
     expect(exec.elapsedMs).toBeGreaterThanOrEqual(0)

@@ -54,7 +54,7 @@
  * system enforces the analogy and downstream consumers compose them
  * with the rest of the uuid family for free.
  *
- * @standard RFC 4122 §4.3 uuidv5 (the bottom-half hash family)
+ * @standard RFC 9562 §5.8 uuidv8 (the bottom-half hash family)
  * @standard RFC 8785 JCS (the canonicalisation that makes equivalence work)
  * @standard ISO 4217 §6.5 (X-codes — the currency identity layer)
  * @audit Conservation Law 8  content-addressable integrity

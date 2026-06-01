@@ -4,7 +4,7 @@
  * Slice RRRRR (2026-05-11). Conservation Law 8: every object's uuid
  * is derivable from its content. Tamper detection in O(1) per row.
  *
- * @standard RFC 4122 §4.3 + RFC 8785 + ISO/IEC 10118 + NIST FIPS 180-4
+ * @standard RFC 9562 §5.8 + RFC 8785 + ISO/IEC 10118 + NIST FIPS 180-4
  * @audit ISO 19011:2018 §6.4.6 + SOX §404
  */
 

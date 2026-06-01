@@ -10,7 +10,7 @@
  *   erpax.format.decode  — extract slot + capabilities + version
  *   erpax.format.verify  — re-encode and compare to a stored uuid
  *
- * @standard RFC 9562 §6.4 uuidv8 + RFC 4122 §4.1.2 variant
+ * @standard RFC 9562 §5.8 uuidv8 + RFC 9562 §4.1 variant
  * @standard MCP 0.6
  * @audit Conservation Law 61 uuid-carries-features
  * @feature uuid_format
@@ -37,7 +37,7 @@ const SLOT_ENUM = z.enum([
 
 const I18N: Record<string, LocalizedString> = {
   encode: {
-    en: 'Encode a structured uuidv8 (RFC 9562 §6.4) carrying embedded slot tag (4 bits, 16 categories) + capability flags (8 bits — SIGNED/SEALED/ENCRYPTED/FEDERATED/ANCHORED_BLOCKCHAIN/CHAINED/SHARED/TAMPER_PROOF) + schema version (4 bits) + 106-bit sha-256 content digest. The uuid IS self-describing.',
+    en: 'Encode a structured uuidv8 (RFC 9562 §5.8) carrying embedded slot tag (4 bits, 16 categories) + capability flags (8 bits — SIGNED/SEALED/ENCRYPTED/FEDERATED/ANCHORED_BLOCKCHAIN/CHAINED/SHARED/TAMPER_PROOF) + schema version (4 bits) + 106-bit sha-256 content digest. The uuid IS self-describing.',
     bg: 'Кодира структуриран uuidv8 с вграден slot tag + capability flags + schema version + 106-битов sha-256 digest. uuid-ът се описва сам.',
     de: 'Kodiert eine strukturierte uuidv8 mit eingebettetem Slot-Tag + Capability-Flags + Schema-Version + 106-Bit sha-256 Digest.',
     fr: 'Encode une uuidv8 structurée avec slot tag + capability flags + schema version + digest sha-256 106 bits intégrés.',

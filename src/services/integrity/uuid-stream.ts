@@ -49,7 +49,7 @@
  * "ERPax is a uuid stream" was the right framing, just incomplete
  * without the spacetime context.
  *
- * @standard RFC 4122 §4.3 + RFC 8785 (uuid composition)
+ * @standard RFC 9562 §5.8 + RFC 8785 (uuid composition)
  * @standard W3C VC Data Model 2.0 (verifiable replicas)
  * @standard Topology — torus + Hilbert-space replicas (Hatcher 2002)
  * @standard ISO/IEC 25010:2023 §5.2 performance + §5.7 modularity

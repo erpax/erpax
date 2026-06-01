@@ -7,7 +7,7 @@
  * source published a divergent genome. Either way, the clone refuses
  * to accept the 'erpax-platform' role until reconciled.
  *
- * @standard RFC 4122 §4.3 + RFC 8785
+ * @standard RFC 9562 §5.8 + RFC 8785
  * @audit ISO 19011:2018 §6.4.6
  */
 

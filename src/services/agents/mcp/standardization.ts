@@ -89,7 +89,7 @@ export const MCP_STANDARDS_INDEX: ReadonlyArray<McpStandardEntry> = [
   { id: 'W3C JSON Schema (draft 2020-12)', family: 'w3c', title: 'Structural type descriptors',
     modules: ['integrity/type-uuid.ts'], conservationLaws: [47] },
   // §3 — Identity / content addressing
-  { id: 'RFC 4122 §4.3', family: 'rfc-ietf', title: 'UUIDv5 (name-based)',
+  { id: 'RFC 9562 §5.8', family: 'rfc-ietf', title: 'UUIDv8 (name-based, custom layout)',
     modules: ['integrity/content-uuid.ts', 'integrity/type-uuid.ts', 'integrity/uuid-stream.ts', 'integrity/uuid-short.ts'],
     conservationLaws: [8, 10, 30, 31, 35, 36, 39, 46, 47] },
   { id: 'FIPS 180-4', family: 'other', title: 'SHA-256',

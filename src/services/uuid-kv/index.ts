@@ -49,7 +49,7 @@
  *   )
  *   ```
  *
- * @standard RFC 4122 §4.3 uuidv5 (both sides)
+ * @standard RFC 9562 §5.8 uuidv8 (both sides)
  * @standard RFC 8785 JCS (canonicalisation that makes equivalence hold)
  * @standard NIST FIPS 180-4 SHA-256
  * @audit Conservation Law 8 content-addressable integrity
