@@ -1995,6 +1995,9 @@ src/services/streams/index.ts:45: * @standard ReactiveX / W3C Streams API (Async
 src/services/streams/index.ts:46: * @standard ISO/IEC 25010:2023 §5.2 performance — throughput
 src/services/streams/index.ts:47: * @standard Lamport 1978 — distributed-system causal ordering
 src/services/tags/taggedWith.ts:18: * @standard ISO-25964-1:2011 thesauri retrieval
+src/services/tamper-cost/index.ts:26: * @standard NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)
+src/services/tamper-cost/index.ts:27: * @standard RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)
+src/services/tamper-cost/index.ts:28: * @standard ISO-19011:2018 §6.5 (audit evidence integrity)
 src/services/tax-automation.service/index.ts:17: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/services/tax-automation.service/index.ts:18: * @standard ISO-3166-1:2020 country-codes jurisdiction
 src/services/tax-automation.service/index.ts:19: * @standard ISO-3166-2:2020 subdivision-codes jurisdiction
@@ -2026,6 +2029,7 @@ src/services/uuid-format/index.ts:56: * @standard RFC 9562 §5.8 uuidv8 (custom 
 src/services/uuid-format/index.ts:57: * @standard RFC 4122 §4.1.2 variant bits
 src/services/uuid-format/index.ts:58: * @standard NIST FIPS 180-4 SHA-256 (the truncated digest source)
 src/services/uuid-format/index.ts:59: * @standard ITU-T X.667 / ISO/IEC 9834-8 (uuid registration)
+src/services/uuid-format/index.ts:84: * @standard RFC 9562 §5.9 Nil UUID
 src/services/uuid-governance/index.ts:43: * @standard W3C DID Core 1.0
 src/services/uuid-governance/index.ts:44: * @standard W3C Verifiable Credentials Data Model 2.0
 src/services/uuid-governance/index.ts:45: * @standard ISO/IEC TR 23244 blockchain governance
@@ -5547,6 +5551,7 @@ src/services/spec-generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.
 src/services/spec-generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/storage-independence/index.ts:65: * @audit ISO 19011:2018 §6.4.6 (cross-backend verification audit-trailed)
 src/services/streams/index.ts:48: * @audit ISO 19011:2018 §6.4.6 (every stream window audit-trailed)
+src/services/tamper-cost/index.ts:29: * @audit Conservation Law 55/60 (tamper cost cascades through the uuid-chain)
 src/services/tenant-roles/profiles/country.profile.ts:56: * @audit ISO 19011:2018 §6.4.6 (treaty + multilateral envelope audit-trailed)
 src/services/tenant-roles/types.ts:16: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/services/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
