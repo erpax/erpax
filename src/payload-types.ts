@@ -236,7 +236,6 @@ export interface Config {
     'beneficial-owners': BeneficialOwner;
     'financial-profiles': FinancialProfile;
     packages: Package;
-    'cash-counts': CashCount;
     'payment-requests': PaymentRequest;
     'gateway-events': GatewayEvent;
     messages: Message;
@@ -489,7 +488,6 @@ export interface Config {
     'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
     'financial-profiles': FinancialProfilesSelect<false> | FinancialProfilesSelect<true>;
     packages: PackagesSelect<false> | PackagesSelect<true>;
-    'cash-counts': CashCountsSelect<false> | CashCountsSelect<true>;
     'payment-requests': PaymentRequestsSelect<false> | PaymentRequestsSelect<true>;
     'gateway-events': GatewayEventsSelect<false> | GatewayEventsSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
@@ -15446,85 +15444,6 @@ export interface Package {
   createdAt: string;
 }
 /**
- * Denomination-level cash count reconciled against the POS/fiscal Z-report. Dual-control (counter vs verifier) per SOX §404 + BG Наредба Н-18.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cash-counts".
- */
-export interface CashCount {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  /**
-   * Cash-count reference (e.g. `CC-2026-05-30-T1`).
-   */
-  reference: string;
-  /**
-   * ISO 8601 — business date of the count.
-   */
-  countDate: string;
-  countType?: ('opening' | 'shift_end' | 'daily' | 'spot') | null;
-  /**
-   * POS terminal / till counted.
-   */
-  terminal?: (string | null) | Terminal;
-  /**
-   * Fiscal device (ФУ) whose Z-report is the expected figure.
-   */
-  fiscalDevice?: (string | null) | FiscalDevice;
-  /**
-   * Shift this count closes (when countType = shift_end).
-   */
-  workShift?: (string | null) | WorkShift;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Count by note/coin face value. subtotal = faceValue × count.
-   */
-  denominations?:
-    | {
-        /**
-         * Denomination face value in minor units (cents/stotinki).
-         */
-        faceValue: number;
-        kind?: ('note' | 'coin') | null;
-        count: number;
-        /**
-         * faceValue × count, in minor units.
-         */
-        subtotal?: number | null;
-        id?: string | null;
-      }[]
-    | null;
-  /**
-   * Σ denomination subtotals — physical cash counted, in minor units.
-   */
-  countedTotal?: number | null;
-  /**
-   * Expected cash from POS/fiscal Z-report, in minor units.
-   */
-  expectedTotal?: number | null;
-  /**
-   * countedTotal − expectedTotal (over/short), in minor units.
-   */
-  variance?: number | null;
-  /**
-   * JE booking any cash over/short to the variance account.
-   */
-  journalEntry?: (string | null) | JournalEntry;
-  status?: ('draft' | 'counted' | 'verified' | 'reconciled' | 'discrepancy') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Internal request to disburse a payment. Requester ≠ approver (SOX §404 segregation of duties); fulfilled by a payment-run or payment.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19158,10 +19077,835 @@ export interface Search {
   uuid?: string | null;
   title?: string | null;
   priority?: number | null;
-  doc: {
-    relationTo: 'posts';
-    value: string | Post;
-  };
+  doc:
+    | {
+        relationTo: 'account-reconciliations';
+        value: string | AccountReconciliation;
+      }
+    | {
+        relationTo: 'activities';
+        value: string | Activity;
+      }
+    | {
+        relationTo: 'ai-suggestions';
+        value: string | AiSuggestion;
+      }
+    | {
+        relationTo: 'api-audit-events';
+        value: string | ApiAuditEvent;
+      }
+    | {
+        relationTo: 'audit-committee-members';
+        value: string | AuditCommitteeMember;
+      }
+    | {
+        relationTo: 'audit-committee-minutes';
+        value: string | AuditCommitteeMinute;
+      }
+    | {
+        relationTo: 'audit-committees';
+        value: string | AuditCommittee;
+      }
+    | {
+        relationTo: 'audit-events';
+        value: string | AuditEvent;
+      }
+    | {
+        relationTo: 'audit-evidence';
+        value: string | AuditEvidence;
+      }
+    | {
+        relationTo: 'audit-findings';
+        value: string | AuditFinding;
+      }
+    | {
+        relationTo: 'audit-reports';
+        value: string | AuditReport;
+      }
+    | {
+        relationTo: 'audit-samples';
+        value: string | AuditSample;
+      }
+    | {
+        relationTo: 'audit-submissions';
+        value: string | AuditSubmission;
+      }
+    | {
+        relationTo: 'audit-trail-events';
+        value: string | AuditTrailEvent;
+      }
+    | {
+        relationTo: 'bank-accounts';
+        value: string | BankAccount;
+      }
+    | {
+        relationTo: 'bank-reconciliations';
+        value: string | BankReconciliation;
+      }
+    | {
+        relationTo: 'bank-statements';
+        value: string | BankStatement;
+      }
+    | {
+        relationTo: 'bank-transactions';
+        value: string | BankTransaction;
+      }
+    | {
+        relationTo: 'batches';
+        value: string | Batch;
+      }
+    | {
+        relationTo: 'beneficial-owners';
+        value: string | BeneficialOwner;
+      }
+    | {
+        relationTo: 'bills-of-materials';
+        value: string | BillsOfMaterial;
+      }
+    | {
+        relationTo: 'biological-assets';
+        value: string | BiologicalAsset;
+      }
+    | {
+        relationTo: 'board-actions';
+        value: string | BoardAction;
+      }
+    | {
+        relationTo: 'bookable-resources';
+        value: string | BookableResource;
+      }
+    | {
+        relationTo: 'bookings';
+        value: string | Booking;
+      }
+    | {
+        relationTo: 'budget-planning';
+        value: string | BudgetPlanning;
+      }
+    | {
+        relationTo: 'business-combinations';
+        value: string | BusinessCombination;
+      }
+    | {
+        relationTo: 'carbon-emissions';
+        value: string | CarbonEmission;
+      }
+    | {
+        relationTo: 'carriers';
+        value: string | Carrier;
+      }
+    | {
+        relationTo: 'categories';
+        value: string | Category;
+      }
+    | {
+        relationTo: 'closing-entries';
+        value: string | ClosingEntry;
+      }
+    | {
+        relationTo: 'commitments-and-contingencies';
+        value: string | CommitmentsAndContingency;
+      }
+    | {
+        relationTo: 'competencies';
+        value: string | Competency;
+      }
+    | {
+        relationTo: 'compliance-deadlines';
+        value: string | ComplianceDeadline;
+      }
+    | {
+        relationTo: 'compliance-frameworks';
+        value: string | ComplianceFramework;
+      }
+    | {
+        relationTo: 'compliance-gaps';
+        value: string | ComplianceGap;
+      }
+    | {
+        relationTo: 'compliance-notifications';
+        value: string | ComplianceNotification;
+      }
+    | {
+        relationTo: 'compliance-requirements';
+        value: string | ComplianceRequirement;
+      }
+    | {
+        relationTo: 'connections';
+        value: string | Connection;
+      }
+    | {
+        relationTo: 'consent-records';
+        value: string | ConsentRecord;
+      }
+    | {
+        relationTo: 'consignment-arrangements';
+        value: string | ConsignmentArrangement;
+      }
+    | {
+        relationTo: 'consignment-inventory';
+        value: string | ConsignmentInventory;
+      }
+    | {
+        relationTo: 'consignment-sales';
+        value: string | ConsignmentSale;
+      }
+    | {
+        relationTo: 'consolidation-eliminations';
+        value: string | ConsolidationElimination;
+      }
+    | {
+        relationTo: 'consolidations';
+        value: string | Consolidation;
+      }
+    | {
+        relationTo: 'contracts';
+        value: string | Contract;
+      }
+    | {
+        relationTo: 'control-tests';
+        value: string | ControlTest;
+      }
+    | {
+        relationTo: 'cost-centers';
+        value: string | CostCenter;
+      }
+    | {
+        relationTo: 'cost-variances';
+        value: string | CostVariance;
+      }
+    | {
+        relationTo: 'credit-memos';
+        value: string | CreditMemo;
+      }
+    | {
+        relationTo: 'csrd-disclosures';
+        value: string | CsrdDisclosure;
+      }
+    | {
+        relationTo: 'currency-rates';
+        value: string | CurrencyRate;
+      }
+    | {
+        relationTo: 'customer-segments';
+        value: string | CustomerSegment;
+      }
+    | {
+        relationTo: 'customers';
+        value: string | Customer;
+      }
+    | {
+        relationTo: 'customs-declarations';
+        value: string | CustomsDeclaration;
+      }
+    | {
+        relationTo: 'data-processing-activities';
+        value: string | DataProcessingActivity;
+      }
+    | {
+        relationTo: 'data-subject-requests';
+        value: string | DataSubjectRequest;
+      }
+    | {
+        relationTo: 'debt-schedule';
+        value: string | DebtSchedule;
+      }
+    | {
+        relationTo: 'deferred-tax-items';
+        value: string | DeferredTaxItem;
+      }
+    | {
+        relationTo: 'depreciation-schedules';
+        value: string | DepreciationSchedule;
+      }
+    | {
+        relationTo: 'disclosure-checklists';
+        value: string | DisclosureChecklist;
+      }
+    | {
+        relationTo: 'dunning-cycles';
+        value: string | DunningCycle;
+      }
+    | {
+        relationTo: 'earnings-per-share';
+        value: string | EarningsPerShare;
+      }
+    | {
+        relationTo: 'employees';
+        value: string | Employee;
+      }
+    | {
+        relationTo: 'entity-legal-structures';
+        value: string | EntityLegalStructure;
+      }
+    | {
+        relationTo: 'entity-types';
+        value: string | EntityType;
+      }
+    | {
+        relationTo: 'evidence-attestations';
+        value: string | EvidenceAttestation;
+      }
+    | {
+        relationTo: 'expense-reports';
+        value: string | ExpenseReport;
+      }
+    | {
+        relationTo: 'fair-value-measurements';
+        value: string | FairValueMeasurement;
+      }
+    | {
+        relationTo: 'financial-profiles';
+        value: string | FinancialProfile;
+      }
+    | {
+        relationTo: 'financial-statements';
+        value: string | FinancialStatement;
+      }
+    | {
+        relationTo: 'fiscal-calendars';
+        value: string | FiscalCalendar;
+      }
+    | {
+        relationTo: 'fiscal-devices';
+        value: string | FiscalDevice;
+      }
+    | {
+        relationTo: 'fiscal-period-snapshots';
+        value: string | FiscalPeriodSnapshot;
+      }
+    | {
+        relationTo: 'fiscal-periods';
+        value: string | FiscalPeriod;
+      }
+    | {
+        relationTo: 'fixed-assets';
+        value: string | FixedAsset;
+      }
+    | {
+        relationTo: 'fx-transactions';
+        value: string | FxTransaction;
+      }
+    | {
+        relationTo: 'gl-accounts';
+        value: string | GlAccount;
+      }
+    | {
+        relationTo: 'gl-posting-rules';
+        value: string | GlPostingRule;
+      }
+    | {
+        relationTo: 'gl-postings';
+        value: string | GlPosting;
+      }
+    | {
+        relationTo: 'gateway-events';
+        value: string | GatewayEvent;
+      }
+    | {
+        relationTo: 'goods-receipts';
+        value: string | GoodsReceipt;
+      }
+    | {
+        relationTo: 'government-grants';
+        value: string | GovernmentGrant;
+      }
+    | {
+        relationTo: 'held-for-sale-classifications';
+        value: string | HeldForSaleClassification;
+      }
+    | {
+        relationTo: 'insurance-contracts';
+        value: string | InsuranceContract;
+      }
+    | {
+        relationTo: 'intercompany-transactions';
+        value: string | IntercompanyTransaction;
+      }
+    | {
+        relationTo: 'internal-audit-function';
+        value: string | InternalAuditFunction;
+      }
+    | {
+        relationTo: 'internal-controls';
+        value: string | InternalControl;
+      }
+    | {
+        relationTo: 'internal-policies';
+        value: string | InternalPolicy;
+      }
+    | {
+        relationTo: 'inventory-movements';
+        value: string | InventoryMovement;
+      }
+    | {
+        relationTo: 'investment-properties';
+        value: string | InvestmentProperty;
+      }
+    | {
+        relationTo: 'invoice-lines';
+        value: string | InvoiceLine;
+      }
+    | {
+        relationTo: 'invoices';
+        value: string | Invoice;
+      }
+    | {
+        relationTo: 'items';
+        value: string | Item;
+      }
+    | {
+        relationTo: 'job-positions';
+        value: string | JobPosition;
+      }
+    | {
+        relationTo: 'journal-entries';
+        value: string | JournalEntry;
+      }
+    | {
+        relationTo: 'kyc-checks';
+        value: string | KycCheck;
+      }
+    | {
+        relationTo: 'leads';
+        value: string | Lead;
+      }
+    | {
+        relationTo: 'lease-modifications';
+        value: string | LeaseModification;
+      }
+    | {
+        relationTo: 'lease-period-postings';
+        value: string | LeasePeriodPosting;
+      }
+    | {
+        relationTo: 'leases';
+        value: string | Lease;
+      }
+    | {
+        relationTo: 'leave-requests';
+        value: string | LeaveRequest;
+      }
+    | {
+        relationTo: 'legal-entities';
+        value: string | LegalEntity;
+      }
+    | {
+        relationTo: 'maintenance-requests';
+        value: string | MaintenanceRequest;
+      }
+    | {
+        relationTo: 'maintenance-work-orders';
+        value: string | MaintenanceWorkOrder;
+      }
+    | {
+        relationTo: 'management-assessment-icfr';
+        value: string | ManagementAssessmentIcfr;
+      }
+    | {
+        relationTo: 'management-certifications';
+        value: string | ManagementCertification;
+      }
+    | {
+        relationTo: 'mcp-tool-metadata';
+        value: string | McpToolMetadatum;
+      }
+    | {
+        relationTo: 'media';
+        value: string | Media;
+      }
+    | {
+        relationTo: 'memories';
+        value: string | Memory;
+      }
+    | {
+        relationTo: 'messages';
+        value: string | Message;
+      }
+    | {
+        relationTo: 'mineral-resource-assets';
+        value: string | MineralResourceAsset;
+      }
+    | {
+        relationTo: 'operation-runs';
+        value: string | OperationRun;
+      }
+    | {
+        relationTo: 'operations';
+        value: string | Operation;
+      }
+    | {
+        relationTo: 'operators';
+        value: string | Operator;
+      }
+    | {
+        relationTo: 'opportunities';
+        value: string | Opportunity;
+      }
+    | {
+        relationTo: 'packages';
+        value: string | Package;
+      }
+    | {
+        relationTo: 'pages';
+        value: string | Page;
+      }
+    | {
+        relationTo: 'payment-allocations';
+        value: string | PaymentAllocation;
+      }
+    | {
+        relationTo: 'payment-methods';
+        value: string | PaymentMethod;
+      }
+    | {
+        relationTo: 'payment-requests';
+        value: string | PaymentRequest;
+      }
+    | {
+        relationTo: 'payment-runs';
+        value: string | PaymentRun;
+      }
+    | {
+        relationTo: 'payments';
+        value: string | Payment;
+      }
+    | {
+        relationTo: 'payroll-runs';
+        value: string | PayrollRun;
+      }
+    | {
+        relationTo: 'performance-obligations';
+        value: string | PerformanceObligation;
+      }
+    | {
+        relationTo: 'performance-reviews';
+        value: string | PerformanceReview;
+      }
+    | {
+        relationTo: 'period-end-adjustments';
+        value: string | PeriodEndAdjustment;
+      }
+    | {
+        relationTo: 'period-locks';
+        value: string | PeriodLock;
+      }
+    | {
+        relationTo: 'policy-acknowledgments';
+        value: string | PolicyAcknowledgment;
+      }
+    | {
+        relationTo: 'policy-versions';
+        value: string | PolicyVersion;
+      }
+    | {
+        relationTo: 'post-balance-sheet-events';
+        value: string | PostBalanceSheetEvent;
+      }
+    | {
+        relationTo: 'post-close-analytics-reports';
+        value: string | PostCloseAnalyticsReport;
+      }
+    | {
+        relationTo: 'posts';
+        value: string | Post;
+      }
+    | {
+        relationTo: 'prior-period-adjustments';
+        value: string | PriorPeriodAdjustment;
+      }
+    | {
+        relationTo: 'production-receipts';
+        value: string | ProductionReceipt;
+      }
+    | {
+        relationTo: 'project-milestones';
+        value: string | ProjectMilestone;
+      }
+    | {
+        relationTo: 'project-tasks';
+        value: string | ProjectTask;
+      }
+    | {
+        relationTo: 'projects';
+        value: string | Project;
+      }
+    | {
+        relationTo: 'properties';
+        value: string | Property;
+      }
+    | {
+        relationTo: 'provisions';
+        value: string | Provision;
+      }
+    | {
+        relationTo: 'purchase-orders';
+        value: string | PurchaseOrder;
+      }
+    | {
+        relationTo: 'purchase-requisitions';
+        value: string | PurchaseRequisition;
+      }
+    | {
+        relationTo: 'quality-inspections';
+        value: string | QualityInspection;
+      }
+    | {
+        relationTo: 'quotes';
+        value: string | Quote;
+      }
+    | {
+        relationTo: 'receipts';
+        value: string | Receipt;
+      }
+    | {
+        relationTo: 'recruiting-pipeline';
+        value: string | RecruitingPipeline;
+      }
+    | {
+        relationTo: 'recurring-journals';
+        value: string | RecurringJournal;
+      }
+    | {
+        relationTo: 'refunds';
+        value: string | Refund;
+      }
+    | {
+        relationTo: 'regulatory-deferral-accounts';
+        value: string | RegulatoryDeferralAccount;
+      }
+    | {
+        relationTo: 'regulatory-reports';
+        value: string | RegulatoryReport;
+      }
+    | {
+        relationTo: 'related-party-transactions';
+        value: string | RelatedPartyTransaction;
+      }
+    | {
+        relationTo: 'remediation-plans';
+        value: string | RemediationPlan;
+      }
+    | {
+        relationTo: 'reporting-mappings';
+        value: string | ReportingMapping;
+      }
+    | {
+        relationTo: 'reporting-standards';
+        value: string | ReportingStandard;
+      }
+    | {
+        relationTo: 'returns';
+        value: string | Return;
+      }
+    | {
+        relationTo: 'risk-register';
+        value: string | RiskRegister;
+      }
+    | {
+        relationTo: 'roles';
+        value: string | Role;
+      }
+    | {
+        relationTo: 'rounding-adjustments';
+        value: string | RoundingAdjustment;
+      }
+    | {
+        relationTo: 'routings';
+        value: string | Routing;
+      }
+    | {
+        relationTo: 'sales';
+        value: string | Sale;
+      }
+    | {
+        relationTo: 'sales-commissions';
+        value: string | SalesCommission;
+      }
+    | {
+        relationTo: 'sales-orders';
+        value: string | SalesOrder;
+      }
+    | {
+        relationTo: 'sectors';
+        value: string | Sector;
+      }
+    | {
+        relationTo: 'segment-reporting';
+        value: string | SegmentReporting;
+      }
+    | {
+        relationTo: 'sepa-mandates';
+        value: string | SepaMandate;
+      }
+    | {
+        relationTo: 'share-based-payments';
+        value: string | ShareBasedPayment;
+      }
+    | {
+        relationTo: 'shipments';
+        value: string | Shipment;
+      }
+    | {
+        relationTo: 'spaces';
+        value: string | Space;
+      }
+    | {
+        relationTo: 'standards';
+        value: string | Standard;
+      }
+    | {
+        relationTo: 'statutory-field-mappings';
+        value: string | StatutoryFieldMapping;
+      }
+    | {
+        relationTo: 'statutory-report-templates';
+        value: string | StatutoryReportTemplate;
+      }
+    | {
+        relationTo: 'subscription-plans';
+        value: string | SubscriptionPlan;
+      }
+    | {
+        relationTo: 'subscriptions';
+        value: string | Subscription;
+      }
+    | {
+        relationTo: 'taggings';
+        value: string | Tagging;
+      }
+    | {
+        relationTo: 'tags';
+        value: string | Tag;
+      }
+    | {
+        relationTo: 'tax-calculations';
+        value: string | TaxCalculation;
+      }
+    | {
+        relationTo: 'tax-codes';
+        value: string | TaxCode;
+      }
+    | {
+        relationTo: 'tax-jurisdictions';
+        value: string | TaxJurisdiction;
+      }
+    | {
+        relationTo: 'tax-periods';
+        value: string | TaxPeriod;
+      }
+    | {
+        relationTo: 'tax-returns';
+        value: string | TaxReturn;
+      }
+    | {
+        relationTo: 'taxing-jurisdictions';
+        value: string | TaxingJurisdiction;
+      }
+    | {
+        relationTo: 'tenants';
+        value: string | Tenant;
+      }
+    | {
+        relationTo: 'terminals';
+        value: string | Terminal;
+      }
+    | {
+        relationTo: 'time-entries';
+        value: string | TimeEntry;
+      }
+    | {
+        relationTo: 'tracking-events';
+        value: string | TrackingEvent;
+      }
+    | {
+        relationTo: 'transaction-failures';
+        value: string | TransactionFailure;
+      }
+    | {
+        relationTo: 'transfer-pricing-adjustments';
+        value: string | TransferPricingAdjustment;
+      }
+    | {
+        relationTo: 'transfer-pricing-files';
+        value: string | TransferPricingFile;
+      }
+    | {
+        relationTo: 'translations';
+        value: string | Translation;
+      }
+    | {
+        relationTo: 'usage-records';
+        value: string | UsageRecord;
+      }
+    | {
+        relationTo: 'user-roles';
+        value: string | UserRole;
+      }
+    | {
+        relationTo: 'users';
+        value: string | User;
+      }
+    | {
+        relationTo: 'vendor-quotes';
+        value: string | VendorQuote;
+      }
+    | {
+        relationTo: 'vendor-scorecards';
+        value: string | VendorScorecard;
+      }
+    | {
+        relationTo: 'vendors';
+        value: string | Vendor;
+      }
+    | {
+        relationTo: 'warehouse-locations';
+        value: string | WarehouseLocation;
+      }
+    | {
+        relationTo: 'wip-snapshots';
+        value: string | WipSnapshot;
+      }
+    | {
+        relationTo: 'work-centers';
+        value: string | WorkCenter;
+      }
+    | {
+        relationTo: 'work-orders';
+        value: string | WorkOrder;
+      }
+    | {
+        relationTo: 'work-shifts';
+        value: string | WorkShift;
+      }
+    | {
+        relationTo: 'workflow-definitions';
+        value: string | WorkflowDefinition;
+      }
+    | {
+        relationTo: 'workflow-instances';
+        value: string | WorkflowInstance;
+      }
+    | {
+        relationTo: 'commitments';
+        value: string | Commitment;
+      }
+    | {
+        relationTo: 'contract-amendments';
+        value: string | ContractAmendment;
+      }
+    | {
+        relationTo: 'contract-performance';
+        value: string | ContractPerformance;
+      }
+    | {
+        relationTo: 'contract-signatures';
+        value: string | ContractSignature;
+      }
+    | {
+        relationTo: 'contract-templates';
+        value: string | ContractTemplate;
+      };
   slug?: string | null;
   meta?: {
     title?: string | null;
@@ -25909,40 +26653,6 @@ export interface PackagesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cash-counts_select".
- */
-export interface CashCountsSelect<T extends boolean = true> {
-  uuid?: T;
-  reference?: T;
-  countDate?: T;
-  countType?: T;
-  terminal?: T;
-  fiscalDevice?: T;
-  workShift?: T;
-  currency?: T;
-  denominations?:
-    | T
-    | {
-        faceValue?: T;
-        kind?: T;
-        count?: T;
-        subtotal?: T;
-        id?: T;
-      };
-  countedTotal?: T;
-  expectedTotal?: T;
-  variance?: T;
-  journalEntry?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payment-requests_select".
  */
 export interface PaymentRequestsSelect<T extends boolean = true> {
@@ -28599,7 +29309,6 @@ export interface TaskCreateCollectionExport {
       | 'beneficial-owners'
       | 'financial-profiles'
       | 'packages'
-      | 'cash-counts'
       | 'payment-requests'
       | 'gateway-events'
       | 'messages'

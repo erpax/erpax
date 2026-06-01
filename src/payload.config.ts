@@ -225,7 +225,6 @@ const {
   BeneficialOwners,
   FinancialProfiles,
   Packages,
-  CashCounts,
   PaymentRequests,
   GatewayEvents,
   Messages,
@@ -696,7 +695,6 @@ export default buildConfig({
     FinancialProfiles,
     // Logistics, treasury, integrations & messaging (5)
     Packages,
-    CashCounts,
     PaymentRequests,
     GatewayEvents,
     Messages,
@@ -768,7 +766,12 @@ export default buildConfig({
       overrides: { fields: ({ defaultFields }) => defaultFields },
     }),
     searchPlugin({
-      collections: ['posts'],
+      // Every collection is searchable — derived from the barrel, not hand-listed
+      // (same pattern as the import/export plugin below). `beforeSync` resolves a
+      // title across the heterogeneous schema so non-`posts` rows index usefully.
+      collections: (Object.values(allCollections) as Array<{ slug: string }>).map(
+        (c) => c.slug as CollectionSlug,
+      ),
       beforeSync: beforeSyncWithSearch,
       searchOverrides: { fields: ({ defaultFields }) => [...defaultFields, ...searchFields] },
     }),

@@ -263,7 +263,6 @@ export { default as FinancialProfiles } from './FinancialProfiles'
 export { default as Packages } from './Items/Packages'
 
 // Treasury & disbursement controls
-export { default as CashCounts } from './CashCounts'
 export { default as PaymentRequests } from './Vendors/PaymentRequests'
 
 // Integrations & messaging

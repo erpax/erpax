@@ -204,9 +204,6 @@ src/collections/Carriers/index.ts:11: * @standard INCOTERMS 2020 international-c
 src/collections/Carriers/index.ts:12: * @standard IATA DGR dangerous-goods-regulations
 src/collections/Carriers/index.ts:13: * @standard IMDG-Code maritime-dangerous-goods
 src/collections/Carriers/index.ts:14: * @standard UPU-S10 universal-postal-union shipment-identifier
-src/collections/CashCounts/index.ts:10: * @standard ISO-4217:2015 currency-codes denomination-currency
-src/collections/CashCounts/index.ts:11: * @standard ISO-8601-1:2019 date-time count-date
-src/collections/CashCounts/index.ts:12: * @standard BG Наредба Н-18 (СУПТО) daily-cash-reconciliation Z-report
 src/collections/Categories/index.ts:15: * @standard schema.org Category
 src/collections/Categories/index.ts:16: * @standard schema.org DefinedTerm taxonomic-term
 src/collections/CommitmentsAndContingencies/index.ts:13: * @standard ISO-8601-1:2019 date-time
@@ -1213,10 +1210,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1207:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1225:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1226:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1245:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1210:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1228:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1229:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1248:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1416,6 +1413,9 @@ src/services/ai/semantic-search.ts:10: * @standard ISO/IEC 23894:2023 ai-risk-ma
 src/services/ai/tax-classification.ts:10: * @standard UN/CEFACT 5305 duty-tax-fee-category-coded
 src/services/ai/tax-classification.ts:11: * @standard ISO/IEC 23894:2023 ai-risk-management
 src/services/ai/tax-classification.ts:9: * @standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code
+src/services/allocation/index.ts:43: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
+src/services/allocation/index.ts:44: * @standard ESCO / ISCO-08 competency framework (skill level)
+src/services/allocation/index.ts:45: * @standard Hamilton (largest-remainder) apportionment — integer fair division
 src/services/anchoring/index.ts:10: * @standard W3C Verifiable Credentials Data Model 2.0
 src/services/anchoring/index.ts:11: * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
 src/services/architecture-invariants/by-agent.ts:43: * @standard ISO/IEC 25010:2023 §5.2 performance — selective
@@ -1498,6 +1498,8 @@ src/services/beyond/bitemporal.ts:7: * @standard ISO/IEC 9075-2:2016 §4.15.10 t
 src/services/beyond/carbon.ts:5: * @standard ESRS E1 climate-change-disclosures
 src/services/beyond/carbon.ts:6: * @standard EU CSRD 2022/2464 sustainability-reporting-directive
 src/services/beyond/carbon.ts:7: * @standard GHG Protocol Scope-2 location-based
+src/services/beyond/erasure.ts:28: * @standard ISO 27040 §6.3 cryptographic-erasure
+src/services/beyond/erasure.ts:29: * @standard NIST SP 800-88 Rev.1 media-sanitization (cryptographic erase)
 src/services/beyond/explainability.ts:10: * @standard XBRL inline-XBRL (machine-explainability of values)
 src/services/beyond/explainability.ts:11: * @standard ISO/IEC 23053 AI-systems-with-machine-learning (explainability)
 src/services/beyond/explainability.ts:9: * @standard EU AI Act 2024/1689 Art. 13 (transparency for high-risk)
@@ -1838,6 +1840,9 @@ src/services/platform-readiness/index.ts:17: * @standard W3C JSON-LD 1.1 (manife
 src/services/plugins/dimensions.ts:36: * @standard W3C JSON-LD 1.1 — typed dimensional manifests
 src/services/plugins/dimensions.ts:37: * @standard ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries
 src/services/plugins/dimensions.ts:38: * @standard Topology — 10 vortices form the torus surface (§0b + CCCCCCC)
+src/services/positions/index.ts:31: * @standard SFIA 8 responsibility-levels (1..7) — the job-type / autonomy axis
+src/services/positions/index.ts:32: * @standard ESCO / ISCO-08 occupational classification
+src/services/positions/index.ts:33: * @standard UN COFOG (Classification of the Functions of Government) — the `function` code
 src/services/proof/dry-proof.ts:31: * @standard W3C JSON-LD 1.1 + Schema.org Dataset vocabulary
 src/services/proof/dry-proof.ts:32: * @standard W3C VC Data Model 2.0 (proof-as-verifiable-claim)
 src/services/proof/dry-proof.ts:33: * @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 modularity
@@ -3145,7 +3150,6 @@ src/collections/BookableResources/Bookings/index.ts:23: * @compliance GDPR Art.6
 src/collections/BookableResources/index.ts:18: * @compliance SOX §404 internal-controls revenue-completeness
 src/collections/BudgetPlanning/index.ts:33: * @compliance SOX §404 internal-controls budget-approval-workflow
 src/collections/Carriers/index.ts:16: * @compliance SOX §404 internal-controls carrier-master TOM-LOG-01
-src/collections/CashCounts/index.ts:13: * @compliance SOX §404 internal-controls cash-handling TOM-CASH-01
 src/collections/CommitmentsAndContingencies/index.ts:23: * @compliance SOX §404 internal-controls disclosure-completeness
 src/collections/Competencies/index.ts:19: * @compliance GDPR Art 9 special-category-data competency-records
 src/collections/ComplianceFrameworks/ComplianceRequirements/ComplianceGaps/index.ts:6: * @compliance SOX §404 deficiency
@@ -3575,6 +3579,7 @@ src/services/architecture-invariants/onInit.ts:19: * @compliance SOX §404 inter
 src/services/architecture-invariants/types.ts:29: * @compliance SOX §404 internal-controls invariants
 src/services/bank-reconciliation.service/index.ts:485:   * @compliance SOX §404 internal-controls
 src/services/bank-reconciliation.service/index.ts:651:   * @compliance SOX §404 internal-controls bank-reconciliation
+src/services/beyond/erasure.ts:30: * @compliance GDPR Art. 17 right-to-erasure (irrevocable via key destruction)
 src/services/bulk-ops/index.ts:17: * @compliance SOX §404 internal-controls bulk-import-completeness
 src/services/business-chains/run-chain.ts:12: * @compliance SOX §404 internal-controls process-evidence
 src/services/business-chains/types.ts:22: * @compliance SOX §404 internal-controls process-evidence
@@ -4188,9 +4193,9 @@ src/jobs/dunningJob/index.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss 
 src/jobs/dunningJob/index.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob/index.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob/index.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1205:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1206:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1227:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1208:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1209:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1230:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client/index.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client/index.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4570,8 +4575,6 @@ src/collections/BudgetPlanning/index.ts:34: * @security ISO-27001 A.5.23 cloud-s
 src/collections/BudgetPlanning/index.ts:35: * @security ISO-27002 §5.4 segregation-of-duties approval-vs-creation
 src/collections/Carriers/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Carriers/index.ts:18: * @security ISO-27002 §8.24 use-of-cryptography api-credentials-encryption
-src/collections/CashCounts/index.ts:15: * @security ISO-27002 §5.4 segregation-of-duties counter-vs-verifier
-src/collections/CashCounts/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Categories/hooks/beforeChange.ts:6: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/collections/CommitmentsAndContingencies/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/Competencies/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5033,7 +5036,6 @@ src/collections/BookableResources/Bookings/index.ts:21: * @audit ISO-19011:2018 
 src/collections/BookableResources/index.ts:17: * @audit ISO-19011:2018 audit-trail resource-master-changes
 src/collections/BudgetPlanning/index.ts:32: * @audit ISO-19011:2018 audit-trail
 src/collections/Carriers/index.ts:15: * @audit ISO-19011:2018 audit-trail carrier-master
-src/collections/CashCounts/index.ts:14: * @audit ISO-19011:2018 audit-trail cash-count-evidence dual-control
 src/collections/Categories/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/collections/CommitmentsAndContingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/collections/ComplianceFrameworks/ComplianceRequirements/ComplianceGaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
@@ -5310,9 +5312,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1208:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1228:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1246:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1211:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1231:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1249:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
@@ -5363,6 +5365,7 @@ src/services/ai/cloudflare-ai.ts:52: * @audit ISO-19011:2018 §6.4.6 audit-evide
 src/services/ai/durable-objects.ts:176: * @audit Conservation Law 8 content-uuid (per-leaf)
 src/services/ai/durable-objects.ts:177: * @audit ISO 19011:2018 §6.4.6 tamper-evident audit-trail
 src/services/ai/durable-objects.ts:20: * @audit ISO-19011:2018 audit-trail coordination-evidence
+src/services/allocation/index.ts:46: * @audit ISO 19011 — reward is a deterministic, auditable function (no discretion)
 src/services/anti-corruption/index.ts:22: * @audit ISO-19011:2018 audit-trail integrity-verification
 src/services/architecture-invariants/checks.ts:1007: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
 src/services/architecture-invariants/checks.ts:1074: * @audit  registry-vs-implementation traceability
@@ -5516,6 +5519,7 @@ src/services/period-end-adjustment.service/index.ts:33: * @audit ISO-19011:2018 
 src/services/persist-api-audit-event/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/services/platform-readiness/index.ts:18: * @audit ISO 19011:2018 §6.4.6 (readiness audit-trailed)
 src/services/plugins/dimensions.ts:39: * @audit ISO 19011:2018 §6.4.6 (every collection traceable to a dimension)
+src/services/positions/index.ts:34: * @audit ISO 19011:2018 §6.4.6 — conditions are content-addressed, tamper-evident
 src/services/proof/dry-proof.ts:35: * @audit ISO/IEC 27001 §A.18.2 (independent review of conformance)
 src/services/pwa/index.ts:49: * @audit ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed)
 src/services/query-fingerprint/index.test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
