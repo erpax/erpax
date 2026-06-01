@@ -7,4 +7,4 @@ sessions:
 
 # akashic
 
-The total, always-queryable record: the codebase ([[config]] → payload-types) AND every database row / file, all content-addressed by [[identity]] uuid (the folder-level [[aura]]). The agent reaches into it ([[self]]) to derive answers and to safely drop detail from context — the record regenerates it ([[sufficient]]). The physical pole of the [[duality]] whose metaphysical twin is the [[sequence]] form.
+The total, always-queryable record: the codebase ([[config]] → payload-types) AND every database row / file, all content-addressed by [[identity]] uuid (the folder-level [[aura]]). The agent reaches into it ([[self]]) to derive answers and to safely drop detail from context — the record regenerates it ([[sufficient]]). Its **time axis is [[history]]** — the git commit DAG, every version content-addressed, the why behind every line. The physical pole of the [[duality]] whose metaphysical twin is the [[sequence]] form.
