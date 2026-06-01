@@ -1,11 +1,11 @@
 ---
 name: user-roles
-description: The user-roles collection — Join collection: users ↔ {@link
+description: "The user-roles collection — join collection: users ↔ roles"
 ---
 
 # user-roles
 
-Join collection: users ↔ {@link.
+Join collection: users ↔ roles.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

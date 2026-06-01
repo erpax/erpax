@@ -235,7 +235,6 @@ export interface Config {
     'kyc-checks': KycCheck;
     'beneficial-owners': BeneficialOwner;
     packages: Package;
-    'payment-requests': PaymentRequest;
     messages: Message;
     'csrd-disclosures': CsrdDisclosure;
     'carbon-emissions': CarbonEmission;
@@ -263,7 +262,6 @@ export interface Config {
     'contract-amendments': ContractAmendment;
     'contract-performance': ContractPerformance;
     'contract-signatures': ContractSignature;
-    'contract-templates': ContractTemplate;
     'legal-entities': LegalEntity;
     'ai-suggestions': AiSuggestion;
     'usage-records': UsageRecord;
@@ -485,7 +483,6 @@ export interface Config {
     'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
     'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
     packages: PackagesSelect<false> | PackagesSelect<true>;
-    'payment-requests': PaymentRequestsSelect<false> | PaymentRequestsSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
@@ -513,7 +510,6 @@ export interface Config {
     'contract-amendments': ContractAmendmentsSelect<false> | ContractAmendmentsSelect<true>;
     'contract-performance': ContractPerformanceSelect<false> | ContractPerformanceSelect<true>;
     'contract-signatures': ContractSignaturesSelect<false> | ContractSignaturesSelect<true>;
-    'contract-templates': ContractTemplatesSelect<false> | ContractTemplatesSelect<true>;
     'legal-entities': LegalEntitiesSelect<false> | LegalEntitiesSelect<true>;
     'ai-suggestions': AiSuggestionsSelect<false> | AiSuggestionsSelect<true>;
     'usage-records': UsageRecordsSelect<false> | UsageRecordsSelect<true>;
@@ -15328,77 +15324,6 @@ export interface Package {
   createdAt: string;
 }
 /**
- * Internal request to disburse a payment. Requester ≠ approver (SOX §404 segregation of duties); fulfilled by a payment-run or payment.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-requests".
- */
-export interface PaymentRequest {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  /**
-   * Request reference (e.g. `PR-2026-0042`).
-   */
-  reference: string;
-  /**
-   * ISO 8601 — date the request was raised.
-   */
-  requestDate: string;
-  /**
-   * Name of the person requesting (free text; `createdBy` is the system user).
-   */
-  requesterName: string;
-  /**
-   * Payee name as it should appear on the instrument.
-   */
-  payee: string;
-  /**
-   * Vendor master record, when the payee is a known vendor.
-   */
-  vendor?: (string | null) | Vendor;
-  /**
-   * Requested amount in minor units (cents).
-   */
-  amount: number;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Business purpose of the disbursement (the control narrative).
-   */
-  purpose: string;
-  glAccount?: (string | null) | GlAccount;
-  accountNumber?: string | null;
-  accountName?: string | null;
-  /**
-   * Requested method (check / transfer / SEPA).
-   */
-  paymentMethod?: (string | null) | PaymentMethod;
-  /**
-   * ISO 8601 — date by which payment is needed.
-   */
-  dueDate?: string | null;
-  status?: ('pending' | 'approved' | 'rejected' | 'completed' | 'cancelled') | null;
-  /**
-   * Payment run that fulfilled this request.
-   */
-  paymentRun?: (string | null) | PaymentRun;
-  /**
-   * Payment record that settled this request.
-   */
-  payment?: (string | null) | Payment;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Internal message between users (subject/body, threaded via parentMessage). Attachable to any record. Distinct from polymorphic record comments.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -17707,158 +17632,6 @@ export interface ContractSignature {
   createdAt: string;
 }
 /**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-templates".
- */
-export interface ContractTemplate {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  /**
-   * Unique template name (e.g., "SaaS 3-Year License Template v2.1")
-   */
-  templateName: string;
-  /**
-   * Template type/category
-   */
-  templateCategory: 'saas' | 'support' | 'nda' | 'vendor' | 'employee' | 'consulting' | 'sla' | 'other';
-  /**
-   * Marketing summary, use cases, and applicability notes
-   */
-  description: string;
-  /**
-   * Version number (increments on approval)
-   */
-  templateVersion: number;
-  /**
-   * When template becomes active
-   */
-  effectiveFromDate: string;
-  /**
-   * When template retires (null = perpetual)
-   */
-  effectiveToDate?: string | null;
-  /**
-   * Template lifecycle status
-   */
-  approvalStatus: 'draft' | 'pending_legal_review' | 'approved' | 'retired';
-  /**
-   * Structured list of contract clauses (IFRS-15 §10 terms)
-   */
-  clauseLibrary: {
-    /**
-     * Unique clause identifier
-     */
-    clauseId: string;
-    /**
-     * Clause name (e.g., "Payment Terms", "Limitation of Liability")
-     */
-    clauseTitle: string;
-    /**
-     * Full legal text of the clause
-     */
-    clauseText: string;
-    /**
-     * Cannot be removed from contracts using this template
-     */
-    isRequired?: boolean | null;
-    /**
-     * IFRS/SOX/GDPR standard (e.g., "IFRS-15 §23", "SOX §302")
-     */
-    regulatoryReference?: string | null;
-    id?: string | null;
-  }[];
-  paymentTermDefaults?: {
-    /**
-     * Default payment terms for contracts using this template
-     */
-    paymentTerms?: ('net0' | 'net7' | 'net14' | 'net30' | 'net60' | 'net90') | null;
-    /**
-     * Custom days until due (if not standard)
-     */
-    daysUntilDue?: number | null;
-    /**
-     * Late payment fee percentage (0-100)
-     */
-    lateFeePercent?: number | null;
-    /**
-     * Early-payment discount percentage
-     */
-    discountPercentForEarlyPayment?: number | null;
-  };
-  liabilityFramework?: {
-    /**
-     * Liability cap in cents (null = unlimited)
-     */
-    liabilityCap?: number | null;
-    /**
-     * Excluded damages types
-     */
-    liabilityExemptions?:
-      | {
-          /**
-           * E.g., "Indirect damages", "Consequential damages", "Lost profits"
-           */
-          exemptionType?: string | null;
-          id?: string | null;
-        }[]
-      | null;
-    /**
-     * Warranty period (days post-completion)
-     */
-    warrantyPeriodDays?: number | null;
-  };
-  /**
-   * Template performance obligations (IFRS-15 §22 structure)
-   */
-  performanceObligationTemplate?:
-    | {
-        /**
-         * E.g., "Setup", "Monthly Service", "Support", "Training"
-         */
-        obligationTitle: string;
-        /**
-         * Ordinal position in fulfillment sequence
-         */
-        obligationSequence: number;
-        /**
-         * IFRS-15 §31-35 control transfer timing
-         */
-        controlTransferMethod: 'point_in_time' | 'over_time';
-        /**
-         * Customizable description (placeholders for dynamic values)
-         */
-        descriptionTemplate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  zkod?: {
-    /**
-     * Bulgaria Labor Code Art. 331: mandatory arbitration clause embedded in template
-     */
-    mandatoryArbitrationClauseIncluded?: boolean | null;
-    /**
-     * Contracts created from this template require notarization
-     */
-    notarizationRequired?: boolean | null;
-    /**
-     * ZKOD category code (Bulgaria contract registry)
-     */
-    zkodRegistryCategory?: string | null;
-  };
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  /**
-   * Internal notes on template purpose, history, and customization guidance
-   */
-  templateNotes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Durable audit row per Cloudflare Workers AI inference. Required by GDPR Art.22(3) right-to-human-intervention + EU AI Act transparency + SOX §404 ai-assisted-decision evidence.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19354,10 +19127,6 @@ export interface Search {
         value: string | PaymentMethod;
       }
     | {
-        relationTo: 'payment-requests';
-        value: string | PaymentRequest;
-      }
-    | {
         relationTo: 'payment-runs';
         value: string | PaymentRun;
       }
@@ -19696,10 +19465,6 @@ export interface Search {
     | {
         relationTo: 'contract-signatures';
         value: string | ContractSignature;
-      }
-    | {
-        relationTo: 'contract-templates';
-        value: string | ContractTemplate;
       };
   slug?: string | null;
   meta?: {
@@ -26423,35 +26188,6 @@ export interface PackagesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "payment-requests_select".
- */
-export interface PaymentRequestsSelect<T extends boolean = true> {
-  uuid?: T;
-  reference?: T;
-  requestDate?: T;
-  requesterName?: T;
-  payee?: T;
-  vendor?: T;
-  amount?: T;
-  currency?: T;
-  purpose?: T;
-  glAccount?: T;
-  accountNumber?: T;
-  accountName?: T;
-  paymentMethod?: T;
-  dueDate?: T;
-  status?: T;
-  paymentRun?: T;
-  payment?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "messages_select".
  */
 export interface MessagesSelect<T extends boolean = true> {
@@ -27473,72 +27209,6 @@ export interface ContractSignaturesSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   approvalComments?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contract-templates_select".
- */
-export interface ContractTemplatesSelect<T extends boolean = true> {
-  uuid?: T;
-  templateName?: T;
-  templateCategory?: T;
-  description?: T;
-  templateVersion?: T;
-  effectiveFromDate?: T;
-  effectiveToDate?: T;
-  approvalStatus?: T;
-  clauseLibrary?:
-    | T
-    | {
-        clauseId?: T;
-        clauseTitle?: T;
-        clauseText?: T;
-        isRequired?: T;
-        regulatoryReference?: T;
-        id?: T;
-      };
-  paymentTermDefaults?:
-    | T
-    | {
-        paymentTerms?: T;
-        daysUntilDue?: T;
-        lateFeePercent?: T;
-        discountPercentForEarlyPayment?: T;
-      };
-  liabilityFramework?:
-    | T
-    | {
-        liabilityCap?: T;
-        liabilityExemptions?:
-          | T
-          | {
-              exemptionType?: T;
-              id?: T;
-            };
-        warrantyPeriodDays?: T;
-      };
-  performanceObligationTemplate?:
-    | T
-    | {
-        obligationTitle?: T;
-        obligationSequence?: T;
-        controlTransferMethod?: T;
-        descriptionTemplate?: T;
-        id?: T;
-      };
-  zkod?:
-    | T
-    | {
-        mandatoryArbitrationClauseIncluded?: T;
-        notarizationRequired?: T;
-        zkodRegistryCategory?: T;
-      };
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  templateNotes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -29054,7 +28724,6 @@ export interface TaskCreateCollectionExport {
       | 'kyc-checks'
       | 'beneficial-owners'
       | 'packages'
-      | 'payment-requests'
       | 'messages'
       | 'csrd-disclosures'
       | 'carbon-emissions'
@@ -29082,7 +28751,6 @@ export interface TaskCreateCollectionExport {
       | 'contract-amendments'
       | 'contract-performance'
       | 'contract-signatures'
-      | 'contract-templates'
       | 'legal-entities'
       | 'ai-suggestions'
       | 'usage-records'

@@ -224,7 +224,6 @@ const {
   KycChecks,
   BeneficialOwners,
   Packages,
-  PaymentRequests,
   Messages,
   CsrdDisclosures,
   CarbonEmissions,
@@ -252,7 +251,6 @@ const {
   contractAmendments,
   contractPerformance,
   contractSignatures,
-  contractTemplates,
   LegalEntities,
   AiSuggestions,
   UsageRecords,
@@ -692,7 +690,6 @@ export default buildConfig({
     BeneficialOwners,
     // Logistics, treasury, integrations & messaging (5)
     Packages,
-    PaymentRequests,
     Messages,
     // Sustainability & ESG (2)
     CsrdDisclosures,
@@ -727,7 +724,6 @@ export default buildConfig({
     contractAmendments,
     contractPerformance,
     contractSignatures,
-    contractTemplates,
     // Miscellaneous (3)
     LegalEntities,
     AiSuggestions,

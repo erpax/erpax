@@ -1,6 +1,6 @@
 ---
 name: payroll-runs
-description: The payroll-runs collection — Payroll Runs — periodic batch payroll: gross-to-net, accruals, disbursement
+description: "The payroll-runs collection — Payroll Runs — periodic batch payroll: gross-to-net, accruals, disbursement"
 ---
 
 # payroll-runs

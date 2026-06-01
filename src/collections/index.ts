@@ -261,8 +261,6 @@ export { default as BeneficialOwners } from './LegalEntities/BeneficialOwners'
 // Logistics & packing
 export { default as Packages } from './Items/Packages'
 
-// Treasury & disbursement controls
-export { default as PaymentRequests } from './Vendors/PaymentRequests'
 
 // Integrations & messaging
 export { default as Messages } from './Messages'
@@ -306,7 +304,6 @@ export { default as commitments } from './commitments'
 export { default as contractAmendments } from './Customers/Contracts/contract-amendments'
 export { default as contractPerformance } from './Customers/Contracts/contract-performance'
 export { default as contractSignatures } from './Customers/Contracts/contract-signatures'
-export { default as contractTemplates } from './contract-templates'
 
 // Miscellaneous
 export { default as LegalEntities } from './LegalEntities'
