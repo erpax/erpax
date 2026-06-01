@@ -1781,6 +1781,7 @@ src/services/localize/index.ts:39: * @standard ITU-T X.667 / ISO-IEC 9834-8 (UUI
 src/services/localize/index.ts:40: * @standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)
 src/services/localize/index.ts:41: * @standard BCP-47 (locale tags) · EU 1958/1 (official EU languages)
 src/services/localize/index.ts:42: * @standard NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)
+src/services/message/index.ts:11: * @standard RFC 9562 §5.8 (the structured uuid carries the message)
 src/services/meta-automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/services/multi-currency.service/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/services/multi-currency.service/index.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
@@ -5485,6 +5486,7 @@ src/services/locale-fallback/index.test.ts:19: * @audit Conservation Law 54 univ
 src/services/locale-fallback/index.ts:43: * @audit Conservation Law 53 self-referential-closure
 src/services/locale-fallback/index.ts:44: * @audit Conservation Law 54 universal-identity-element (this is the locale instance)
 src/services/localize/index.ts:43: * @audit Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)
+src/services/message/index.ts:12: * @audit the uuid is self-decoding — every channel is an independent verify level
 src/services/meta-automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
 src/services/multi-currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
 src/services/multi-search/index.ts:39: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
