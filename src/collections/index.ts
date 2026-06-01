@@ -265,7 +265,6 @@ export { default as Packages } from './Items/Packages'
 export { default as PaymentRequests } from './Vendors/PaymentRequests'
 
 // Integrations & messaging
-export { default as GatewayEvents } from './GatewayEvents'
 export { default as Messages } from './Messages'
 
 // Sustainability & ESG

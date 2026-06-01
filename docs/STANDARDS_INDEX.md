@@ -418,9 +418,6 @@ src/collections/GLAccounts/TaxCalculations/index.ts:20: * @standard ISO-8601-1:2
 src/collections/GLAccounts/TaxCalculations/index.ts:21: * @standard EN-16931:2017 §BG-23 vat-breakdown
 src/collections/GLAccounts/index.ts:10: * @standard ISO-4217:2015 currency-codes account-currency
 src/collections/GLPostingRules/index.ts:11: * @standard ISO-8601-1:2019 effective-date
-src/collections/GatewayEvents/index.ts:11: * @standard PCI-DSS v4.0 §3 no-PAN-storage cardholder-data-minimisation
-src/collections/GatewayEvents/index.ts:12: * @standard ISO-8601-1:2019 date-time received-processed-timestamps
-src/collections/GatewayEvents/index.ts:13: * @standard RFC-9110 §9.2.2 idempotency
 src/collections/GovernmentGrants/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/collections/GovernmentGrants/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/collections/HeldForSaleClassifications/index.ts:12: * @standard IFRS IFRS-5 §6-§9 classification-criteria
@@ -1208,10 +1205,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1208:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1226:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1227:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1246:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1206:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1224:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1225:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1244:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -4188,9 +4185,9 @@ src/jobs/dunningJob/index.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss 
 src/jobs/dunningJob/index.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob/index.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob/index.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1206:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1207:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1228:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1204:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1205:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1226:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client/index.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client/index.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4630,8 +4627,6 @@ src/collections/GLAccounts/PeriodEndAdjustments/index.ts:25: * @security ISO-270
 src/collections/GLAccounts/RecurringJournals/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/GLAccounts/TaxCalculations/index.ts:25: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/GLAccounts/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/GatewayEvents/index.ts:14: * @security ISO-27001 A.8.15 logging A.8.16 monitoring-activities
-src/collections/GatewayEvents/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/GovernmentGrants/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/HeldForSaleClassifications/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/collections/InsuranceContracts/index.ts:24: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
@@ -5090,7 +5085,6 @@ src/collections/GLAccounts/PeriodEndAdjustments/index.ts:26: * @audit ISO-19011:
 src/collections/GLAccounts/RecurringJournals/index.ts:21: * @audit ISO-19011:2018 audit-trail recurring-evidence
 src/collections/GLAccounts/TaxCalculations/index.ts:23: * @audit ISO-19011:2018 audit-trail
 src/collections/GLAccounts/index.ts:14: * @audit ISO-19011:2018 audit-trail chart-of-accounts-change
-src/collections/GatewayEvents/index.ts:16: * @audit ISO-19011:2018 audit-trail integration-event-evidence
 src/collections/GovernmentGrants/index.ts:19: * @audit ISO-19011:2018 audit-trail grant-evidence
 src/collections/HeldForSaleClassifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
 src/collections/InsuranceContracts/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-insurance-contracts
@@ -5305,9 +5299,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1209:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1229:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1247:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1207:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1227:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1245:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant

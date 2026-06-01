@@ -225,7 +225,6 @@ const {
   BeneficialOwners,
   Packages,
   PaymentRequests,
-  GatewayEvents,
   Messages,
   CsrdDisclosures,
   CarbonEmissions,
@@ -694,7 +693,6 @@ export default buildConfig({
     // Logistics, treasury, integrations & messaging (5)
     Packages,
     PaymentRequests,
-    GatewayEvents,
     Messages,
     // Sustainability & ESG (2)
     CsrdDisclosures,

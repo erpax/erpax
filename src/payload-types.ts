@@ -236,7 +236,6 @@ export interface Config {
     'beneficial-owners': BeneficialOwner;
     packages: Package;
     'payment-requests': PaymentRequest;
-    'gateway-events': GatewayEvent;
     messages: Message;
     'csrd-disclosures': CsrdDisclosure;
     'carbon-emissions': CarbonEmission;
@@ -487,7 +486,6 @@ export interface Config {
     'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
     packages: PackagesSelect<false> | PackagesSelect<true>;
     'payment-requests': PaymentRequestsSelect<false> | PaymentRequestsSelect<true>;
-    'gateway-events': GatewayEventsSelect<false> | GatewayEventsSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
@@ -15401,87 +15399,6 @@ export interface PaymentRequest {
   createdAt: string;
 }
 /**
- * Idempotent inbound webhook log from external providers. externalEventId is the dedup key; raw payload kept for replay (never card data — PCI-DSS).
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gateway-events".
- */
-export interface GatewayEvent {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  provider: 'stripe' | 'paypal' | 'adyen' | 'gocardless' | 'wise' | 'bank_psd2' | 'peppol' | 'other';
-  /**
-   * Provider's event id (e.g. Stripe `evt_…`). Idempotency key — unique.
-   */
-  externalEventId: string;
-  /**
-   * Provider event type (e.g. `payment_intent.succeeded`).
-   */
-  eventType: string;
-  /**
-   * Whether the webhook signature (HMAC) was verified before processing.
-   */
-  signatureVerified?: boolean | null;
-  /**
-   * Raw event envelope for replay/audit. MUST NOT contain PAN / full card data (PCI-DSS §3).
-   */
-  payload?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Polymorphic link to the erpax record this event acted on.
-   */
-  relatedDocument?:
-    | ({
-        relationTo: 'invoices';
-        value: string | Invoice;
-      } | null)
-    | ({
-        relationTo: 'payments';
-        value: string | Payment;
-      } | null)
-    | ({
-        relationTo: 'subscriptions';
-        value: string | Subscription;
-      } | null)
-    | ({
-        relationTo: 'refunds';
-        value: string | Refund;
-      } | null);
-  /**
-   * ISO 8601 — when the event was received.
-   */
-  receivedAt: string;
-  /**
-   * ISO 8601 — when processing completed.
-   */
-  processedAt?: string | null;
-  /**
-   * Processing attempts so far.
-   */
-  retryCount?: number | null;
-  /**
-   * Last processing error, if any.
-   */
-  error?: string | null;
-  status?: ('received' | 'processing' | 'processed' | 'failed' | 'ignored') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Internal message between users (subject/body, threaded via parentMessage). Attachable to any record. Distinct from polymorphic record comments.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19279,10 +19196,6 @@ export interface Search {
     | {
         relationTo: 'gl-postings';
         value: string | GlPosting;
-      }
-    | {
-        relationTo: 'gateway-events';
-        value: string | GatewayEvent;
       }
     | {
         relationTo: 'goods-receipts';
@@ -26539,30 +26452,6 @@ export interface PaymentRequestsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "gateway-events_select".
- */
-export interface GatewayEventsSelect<T extends boolean = true> {
-  uuid?: T;
-  provider?: T;
-  externalEventId?: T;
-  eventType?: T;
-  signatureVerified?: T;
-  payload?: T;
-  relatedDocument?: T;
-  receivedAt?: T;
-  processedAt?: T;
-  retryCount?: T;
-  error?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "messages_select".
  */
 export interface MessagesSelect<T extends boolean = true> {
@@ -29166,7 +29055,6 @@ export interface TaskCreateCollectionExport {
       | 'beneficial-owners'
       | 'packages'
       | 'payment-requests'
-      | 'gateway-events'
       | 'messages'
       | 'csrd-disclosures'
       | 'carbon-emissions'
