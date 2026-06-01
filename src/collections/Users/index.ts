@@ -2,6 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { tenantsArrayField } from '@payloadcms/plugin-multi-tenant/fields'
 
 import { isSuperAdmin } from '../../access/isSuperAdmin'
+import { competencyLineField } from '../../fields/competency'
 import { localeRecord } from '../../i18n'
 
 import { createAccess } from './access/create'
@@ -101,6 +102,16 @@ export const Users: CollectionConfig = {
       type: 'text',
       label: localeRecord('users.name'),
     },
+    // ── The user has NO type. One universal actor (the `all`/`one` identity
+    // element); what it IS — employee, agent, customer, author, follower —
+    // emerges from its RELATIONS and held competencies, never a `kind` field
+    // (a type is a dimension not yet collapsed; see the `dimension` skill).
+    // `roles` is capability; `competencies` is the held skill-set — identical
+    // to what an agent loads and a job-position requires (same content ⇒ same
+    // id). Social interactions (posts, comments, messages, follows) are
+    // likewise relations on this one typeless user, federating in sync via
+    // content-uuid events (the `event`/`merge` skills).
+    competencyLineField({ mode: 'held', description: 'Competencies this actor holds (an agent loads these; a job requires them).' }),
     {
       admin: {
         position: 'sidebar',

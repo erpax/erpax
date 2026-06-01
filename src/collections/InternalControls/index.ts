@@ -1,3 +1,11 @@
+/**
+ * Internal Controls — single-folder collection node.
+ *
+ * @standard COSO-2013 internal-control-integrated-framework
+ * @compliance SOX §404 internal-controls
+ * @standard PCAOB AS 2201 ICFR-audit
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '../../access/authenticated'
 import { adminOnly } from '../../access/auth'

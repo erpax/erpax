@@ -19,7 +19,7 @@
 export { Tenants } from './Tenants'
 export { Users } from './Users'
 export { Roles } from './Roles'
-export { UserRoles } from './UserRoles'
+export { UserRoles } from './Roles/UserRoles'
 
 // Content Collections
 export { Pages } from './Pages'
@@ -29,11 +29,11 @@ export { Categories } from './Categories'
 
 // Billing Collections
 export { Invoices } from './Invoices'
-export { InvoiceLines } from './InvoiceLines'
+export { InvoiceLines } from './Invoices/InvoiceLines'
 export { PaymentMethods } from './PaymentMethods'
-export { Payments } from './Payments'
+export { Payments } from './Invoices/Payments'
 export { SubscriptionPlans } from './SubscriptionPlans'
-export { Subscriptions } from './Subscriptions'
+export { Subscriptions } from './SubscriptionPlans/Subscriptions'
 
 // Inventory Collections
 export { Items } from './Items'
@@ -45,153 +45,156 @@ export { Items } from './Items'
 export { default as GLAccounts } from './GLAccounts'
 export { GLPostingRules } from './GLPostingRules'
 export { default as JournalEntries } from './JournalEntries'
-export { default as GLPostings } from './GLPostings'
+export { default as GLPostings } from './JournalEntries/GLPostings'
 
 // GL Lifecycle & Closing (Phase A1: Double-Entry & Period Locks)
 export { PeriodLocks } from './PeriodLocks'
-export { ClosingEntries } from './ClosingEntries'
+export { ClosingEntries } from './LegalEntities/ClosingEntries'
 
 // Banking & Reconciliation
-export { default as BankStatements } from './BankStatements'
-export { default as BankTransactions } from './BankTransactions'
+export { default as BankStatements } from './GLAccounts/BankStatements'
+export { default as BankTransactions } from './BankAccounts/BankTransactions'
 export { default as BankAccounts } from './BankAccounts'
-export { default as AccountReconciliations } from './AccountReconciliations'
-export { default as BankReconciliations } from './BankReconciliations'
+export { default as AccountReconciliations } from './GLAccounts/AccountReconciliations'
+export { default as BankReconciliations } from './BankAccounts/BankReconciliations'
 
 // Period Closing & Adjustments
 export { default as FinancialStatements } from './FinancialStatements'
-export { default as PeriodEndAdjustments } from './PeriodEndAdjustments'
-export { default as RecurringJournals } from './RecurringJournals'
-export { default as PriorPeriodAdjustments } from './PriorPeriodAdjustments'
-export { default as RoundingAdjustments } from './RoundingAdjustments'
+export { default as PeriodEndAdjustments } from './GLAccounts/PeriodEndAdjustments'
+export { default as RecurringJournals } from './GLAccounts/RecurringJournals'
+export { default as PriorPeriodAdjustments } from './FiscalPeriods/PriorPeriodAdjustments'
+export { default as RoundingAdjustments } from './JournalEntries/RoundingAdjustments'
 
 // Tax, Currency & Fiscal
-export { default as TaxCalculations } from './TaxCalculations'
-export { TaxCodes } from './TaxCodes'
+export { default as TaxCalculations } from './GLAccounts/TaxCalculations'
+export { TaxCodes } from './TaxJurisdictions/TaxCodes'
 export { TaxJurisdictions } from './TaxJurisdictions'
-export { default as TaxReturns } from './TaxReturns'
+export { default as TaxReturns } from './TaxJurisdictions/TaxReturns'
 export { default as CurrencyRates } from './CurrencyRates'
 
 // Fiscal Period Management (Phase B1: Fiscal Period Flexibility)
 export { FiscalPeriods } from './FiscalPeriods'
-export { FiscalCalendars } from './FiscalCalendars'
-export { FiscalPeriodSnapshots } from './FiscalPeriodSnapshots'
+export { FiscalCalendars } from './LegalEntities/FiscalCalendars'
+export { FiscalPeriodSnapshots } from './FiscalPeriods/FiscalPeriodSnapshots'
 
 // Fixed Assets & Depreciation
 export { default as FixedAssets } from './FixedAssets'
-export { default as DepreciationSchedules } from './DepreciationSchedules'
+export { default as DepreciationSchedules } from './FixedAssets/DepreciationSchedules'
 
 // Master Data: Customers & Revenue
 export { Customers } from './Customers'
 export { default as Leads } from './Leads'
-export { default as Opportunities } from './Opportunities'
+export { default as Opportunities } from './Leads/Opportunities'
 export { default as CustomerSegments } from './CustomerSegments'
-export { default as Quotes } from './Quotes'
-export { default as SalesOrders } from './SalesOrders'
-export { default as SalesCommissions } from './SalesCommissions'
+export { default as Quotes } from './Customers/Quotes'
+export { default as SalesOrders } from './Customers/SalesOrders'
+export { default as SalesCommissions } from './Employees/SalesCommissions'
 
 // Order-to-Cash
-export { default as CreditMemos } from './CreditMemos'
-export { default as Returns } from './Returns'
-export { default as Shipments } from './Shipments'
-export { default as Refunds } from './Refunds'
-export { default as PaymentAllocations } from './PaymentAllocations'
+export { default as CreditMemos } from './Invoices/CreditMemos'
+export { default as Returns } from './Customers/SalesOrders/Returns'
+export { default as Shipments } from './Customers/SalesOrders/Shipments'
+export { default as Refunds } from './Invoices/CreditMemos/Refunds'
+export { default as PaymentAllocations } from './Invoices/Payments/PaymentAllocations'
 
 // Dunning & Collections
-export { default as DunningCycles } from './DunningCycles'
+export { default as DunningCycles } from './Invoices/DunningCycles'
 
 // Master Data: Vendors & Procurement
 export { Vendors } from './Vendors'
-export { default as VendorQuotes } from './VendorQuotes'
-export { default as VendorScorecards } from './VendorScorecards'
+export { default as VendorQuotes } from './Vendors/VendorQuotes'
+export { default as VendorScorecards } from './Vendors/VendorScorecards'
 
 // Procurement: Purchase-to-Pay
-export { default as PurchaseOrders } from './PurchaseOrders'
-export { default as PurchaseRequisitions } from './PurchaseRequisitions'
-export { default as GoodsReceipts } from './GoodsReceipts'
+export { default as PurchaseOrders } from './Items/PurchaseOrders'
+export { default as PurchaseRequisitions } from './CostCenters/PurchaseRequisitions'
+export { default as GoodsReceipts } from './Items/PurchaseOrders/GoodsReceipts'
 
 // Inventory & Warehouse
-export { default as InventoryMovements } from './InventoryMovements'
+export { default as InventoryMovements } from './Items/InventoryMovements'
 export { default as WarehouseLocations } from './WarehouseLocations'
 
 // Cost & Budget
 export { default as CostCenters } from './CostCenters'
 export { default as BudgetPlanning } from './BudgetPlanning'
-export { default as CostVariances } from './CostVariances'
+export { default as CostVariances } from './Items/BillsOfMaterials/WorkOrders/CostVariances'
 
 // Intercompany & Consolidation
-export { default as IntercompanyTransactions } from './IntercompanyTransactions'
+export { default as IntercompanyTransactions } from './LegalEntities/IntercompanyTransactions'
 export { default as ConsolidationEliminations } from './ConsolidationEliminations'
 
 // Foreign Exchange
 export { default as FxTransactions } from './FxTransactions'
 
 // Contracts & Obligations
-export { default as Contracts } from './Contracts'
-export { default as PerformanceObligations } from './PerformanceObligations'
+export { default as Contracts } from './Customers/Contracts'
+export { default as PerformanceObligations } from './Customers/Contracts/PerformanceObligations'
 export { default as CommitmentsAndContingencies } from './CommitmentsAndContingencies'
 
 // Leases
 export { default as Leases } from './Leases'
-export { default as LeaseModifications } from './LeaseModifications'
-export { default as LeasePeriodPostings } from './LeasePeriodPostings'
+export { default as LeaseModifications } from './Leases/LeaseModifications'
+export { default as LeasePeriodPostings } from './Leases/LeasePeriodPostings'
 
 // Payments & Settlements
-export { default as PaymentRuns } from './PaymentRuns'
-export { default as SepaMandates } from './SepaMandates'
+export { default as PaymentRuns } from './BankAccounts/PaymentRuns'
+export { default as SepaMandates } from './Media/SepaMandates'
 
 // Payroll
-export { default as PayrollRuns } from './PayrollRuns'
+export { default as PayrollRuns } from './BankAccounts/PayrollRuns'
 
 // People & HR
 export { default as Employees } from './Employees'
-export { default as JobPositions } from './JobPositions'
-export { default as TimeEntries } from './TimeEntries'
-export { default as LeaveRequests } from './LeaveRequests'
-export { default as PerformanceReviews } from './PerformanceReviews'
-export { default as ExpenseReports } from './ExpenseReports'
-export { default as RecruitingPipeline } from './RecruitingPipeline'
+export { default as Competencies } from './Competencies'
+export { default as Connections } from './Connections'
+export { default as Sectors } from './Sectors'
+export { default as JobPositions } from './CostCenters/JobPositions'
+export { default as TimeEntries } from './Employees/TimeEntries'
+export { default as LeaveRequests } from './Employees/LeaveRequests'
+export { default as PerformanceReviews } from './Employees/PerformanceReviews'
+export { default as ExpenseReports } from './Employees/ExpenseReports'
+export { default as RecruitingPipeline } from './CostCenters/JobPositions/RecruitingPipeline'
 export { default as Activities } from './Activities'
 
 // Operations & Projects
-export { default as Projects } from './Projects'
-export { default as ProjectTasks } from './ProjectTasks'
-export { default as ProjectMilestones } from './ProjectMilestones'
-export { default as WorkOrders } from './WorkOrders'
+export { default as Projects } from './Customers/Projects'
+export { default as ProjectTasks } from './Customers/Projects/ProjectTasks'
+export { default as ProjectMilestones } from './Customers/Projects/ProjectMilestones'
+export { default as WorkOrders } from './Items/BillsOfMaterials/WorkOrders'
 export { default as WorkflowDefinitions } from './WorkflowDefinitions'
-export { default as WorkflowInstances } from './WorkflowInstances'
+export { default as WorkflowInstances } from './WorkflowDefinitions/WorkflowInstances'
 
 // Manufacturing
-export { default as BillsOfMaterials } from './BillsOfMaterials'
-export { default as Batches } from './Batches'
-export { default as ProductionReceipts } from './ProductionReceipts'
-export { default as QualityInspections } from './QualityInspections'
-export { default as WipSnapshots } from './WipSnapshots'
+export { default as BillsOfMaterials } from './Items/BillsOfMaterials'
+export { default as Batches } from './Items/Batches'
+export { default as ProductionReceipts } from './Items/BillsOfMaterials/WorkOrders/ProductionReceipts'
+export { default as QualityInspections } from './Items/QualityInspections'
+export { default as WipSnapshots } from './Customers/Projects/WipSnapshots'
 export { default as WorkCenters } from './WorkCenters'
-export { default as WorkShifts } from './WorkShifts'
-export { default as Operations } from './Operations'
-export { default as Routings } from './Routings'
-export { default as OperationRuns } from './OperationRuns'
+export { default as WorkShifts } from './Employees/WorkShifts'
+export { default as Operations } from './WorkCenters/Operations'
+export { default as Routings } from './Items/BillsOfMaterials/WorkOrders/Routings'
+export { default as OperationRuns } from './Items/BillsOfMaterials/WorkOrders/OperationRuns'
 
 // Tagging system (anything is taggable — less collections, more features)
 export { default as Tags } from './Tags'
-export { default as Taggings } from './Taggings'
+export { default as Taggings } from './Tags/Taggings'
 
 // Facilities & Resources
 export { default as Properties } from './Properties'
-export { default as Spaces } from './Spaces'
+export { default as Spaces } from './Properties/Spaces'
 export { default as MaintenanceRequests } from './MaintenanceRequests'
 export { default as MaintenanceWorkOrders } from './MaintenanceWorkOrders'
 export { default as BookableResources } from './BookableResources'
-export { default as Bookings } from './Bookings'
+export { default as Bookings } from './BookableResources/Bookings'
 
 // Logistics & Tracking
 export { default as Carriers } from './Carriers'
-export { default as TrackingEvents } from './TrackingEvents'
-export { default as CustomsDeclarations } from './CustomsDeclarations'
-export { default as ConsignmentArrangements } from './ConsignmentArrangements'
-export { default as ConsignmentInventory } from './ConsignmentInventory'
-export { default as ConsignmentSales } from './ConsignmentSales'
+export { default as TrackingEvents } from './Customers/SalesOrders/Shipments/TrackingEvents'
+export { default as CustomsDeclarations } from './Customers/SalesOrders/Shipments/CustomsDeclarations'
+export { default as ConsignmentArrangements } from './WarehouseLocations/ConsignmentArrangements'
+export { default as ConsignmentInventory } from './WarehouseLocations/ConsignmentArrangements/ConsignmentInventory'
+export { default as ConsignmentSales } from './WarehouseLocations/ConsignmentArrangements/ConsignmentSales'
 
 // Compliance, Audit & Evidence (Legacy)
 export { default as AuditEvents } from './AuditEvents'
@@ -202,49 +205,49 @@ export { default as EvidenceAttestations } from './EvidenceAttestations'
 // 28 collections spanning GAAP, IFRS, SOX, multi-jurisdiction, multi-entity compliance
 
 // Phase 1: Compliance Foundation (7 collections)
-export { EntityTypes } from './Phase1/EntityTypes'
-export { TaxingJurisdictions } from './Phase1/TaxingJurisdictions'
-export { EntityLegalStructures } from './Phase1/EntityLegalStructures'
-export { ComplianceFrameworks } from './Phase1/ComplianceFrameworks'
-export { ComplianceRequirements } from './Phase1/ComplianceRequirements'
-export { InternalControls } from './Phase1/InternalControls'
-export { ControlTests } from './ControlTests'
+export { EntityTypes } from './EntityTypes'
+export { TaxingJurisdictions } from './TaxingJurisdictions'
+export { EntityLegalStructures } from './TaxingJurisdictions/EntityLegalStructures'
+export { ComplianceFrameworks } from './ComplianceFrameworks'
+export { ComplianceRequirements } from './ComplianceFrameworks/ComplianceRequirements'
+export { InternalControls } from './InternalControls'
+export { ControlTests } from './InternalControls/ControlTests'
 
 // Phase 2-3: Control & Testing, Evidence & Findings (6 collections)
-export { AuditSamples } from './Phase2-3/AuditSamples'
-export { ComplianceGaps } from './Phase2-3/ComplianceGaps'
-export { AuditEvidence } from './Phase2-3/AuditEvidence'
-export { AuditFindings } from './AuditFindings'
-export { AuditTrailEvents } from './Phase2-3/AuditTrailEvents'
-export { RemediationPlans } from './Phase2-3/RemediationPlans'
+export { AuditSamples } from './InternalControls/ControlTests/AuditSamples'
+export { ComplianceGaps } from './ComplianceFrameworks/ComplianceRequirements/ComplianceGaps'
+export { AuditEvidence } from './Media/AuditEvidence'
+export { AuditFindings } from './InternalControls/AuditFindings'
+export { AuditTrailEvents } from './AuditTrailEvents'
+export { RemediationPlans } from './InternalControls/AuditFindings/RemediationPlans'
 
 // Phase 4: Audit Governance & Reporting (5 collections)
-export { AuditCommittees } from './Phase4/AuditCommittees'
-export { AuditCommitteeMembers } from './Phase4/AuditCommitteeMembers'
-export { BoardActions } from './Phase4/BoardActions'
-export { ManagementCertifications } from './Phase4/ManagementCertifications'
-export { RegulatoryReports } from './Phase4/RegulatoryReports'
+export { AuditCommittees } from './LegalEntities/AuditCommittees'
+export { AuditCommitteeMembers } from './LegalEntities/AuditCommittees/AuditCommitteeMembers'
+export { BoardActions } from './LegalEntities/BoardActions'
+export { ManagementCertifications } from './LegalEntities/ManagementCertifications'
+export { RegulatoryReports } from './LegalEntities/RegulatoryReports'
 
 // Phase 5: Compliance Policies & Calendars (9 collections)
-export { InternalPolicies } from './Phase5/InternalPolicies'
-export { StatutoryReportTemplates } from './Phase5/StatutoryReportTemplates'
-export { StatutoryFieldMappings } from './Phase5/StatutoryFieldMappings'
-export { PolicyVersions } from './Phase5/PolicyVersions'
-export { PolicyAcknowledgments } from './Phase5/PolicyAcknowledgments'
-export { ComplianceDeadlines } from './Phase5/ComplianceDeadlines'
-export { ComplianceNotifications } from './Phase5/ComplianceNotifications'
-export { ReportingStandards } from './Phase5/ReportingStandards'
-export { ReportingMappings } from './Phase5/ReportingMappings'
+export { InternalPolicies } from './InternalPolicies'
+export { StatutoryReportTemplates } from './TaxingJurisdictions/StatutoryReportTemplates'
+export { StatutoryFieldMappings } from './TaxingJurisdictions/StatutoryReportTemplates/StatutoryFieldMappings'
+export { PolicyVersions } from './InternalPolicies/PolicyVersions'
+export { PolicyAcknowledgments } from './InternalPolicies/PolicyAcknowledgments'
+export { ComplianceDeadlines } from './LegalEntities/ComplianceDeadlines'
+export { ComplianceNotifications } from './LegalEntities/ComplianceDeadlines/ComplianceNotifications'
+export { ReportingStandards } from './TaxingJurisdictions/ReportingStandards'
+export { ReportingMappings } from './TaxingJurisdictions/ReportingStandards/ReportingMappings'
 
 // Phase 6: Risk, Disclosure & Audit Extension (8 collections)
-export { RelatedPartyTransactions } from './Phase6/RelatedPartyTransactions'
-export { ManagementAssessmentICFR } from './Phase6/ManagementAssessmentICFR'
-export { DisclosureChecklists } from './Phase6/DisclosureChecklists'
-export { AuditCommitteeMinutes } from './Phase6/AuditCommitteeMinutes'
-export { RiskRegister } from './Phase6/RiskRegister'
-export { DebtSchedule } from './Phase6/DebtSchedule'
-export { InternalAuditFunction } from './Phase6/InternalAuditFunction'
-export { SegmentReporting } from './Phase6/SegmentReporting'
+export { RelatedPartyTransactions } from './LegalEntities/RelatedPartyTransactions'
+export { ManagementAssessmentICFR } from './LegalEntities/ManagementAssessmentICFR'
+export { DisclosureChecklists } from './LegalEntities/DisclosureChecklists'
+export { AuditCommitteeMinutes } from './LegalEntities/AuditCommittees/AuditCommitteeMinutes'
+export { RiskRegister } from './LegalEntities/RiskRegister'
+export { DebtSchedule } from './LegalEntities/DebtSchedule'
+export { InternalAuditFunction } from './LegalEntities/InternalAuditFunction'
+export { SegmentReporting } from './LegalEntities/SegmentReporting'
 
 // GDPR & Data Privacy
 export { default as ConsentRecords } from './ConsentRecords'
@@ -252,16 +255,16 @@ export { default as DataSubjectRequests } from './DataSubjectRequests'
 export { default as DataProcessingActivities } from './DataProcessingActivities'
 
 // AML / KYC
-export { default as KycChecks } from './KycChecks'
-export { default as BeneficialOwners } from './BeneficialOwners'
+export { default as KycChecks } from './Customers/KycChecks'
+export { default as BeneficialOwners } from './LegalEntities/BeneficialOwners'
 export { default as FinancialProfiles } from './FinancialProfiles'
 
 // Logistics & packing
-export { default as Packages } from './Packages'
+export { default as Packages } from './Items/Packages'
 
 // Treasury & disbursement controls
 export { default as CashCounts } from './CashCounts'
-export { default as PaymentRequests } from './PaymentRequests'
+export { default as PaymentRequests } from './Vendors/PaymentRequests'
 
 // Integrations & messaging
 export { default as GatewayEvents } from './GatewayEvents'
@@ -269,29 +272,29 @@ export { default as Messages } from './Messages'
 
 // Sustainability & ESG
 export { default as CsrdDisclosures } from './CsrdDisclosures'
-export { default as CarbonEmissions } from './CarbonEmissions'
+export { default as CarbonEmissions } from './FiscalPeriods/CarbonEmissions'
 
 // Specialized Assets
 export { default as BiologicalAssets } from './BiologicalAssets'
 export { default as MineralResourceAssets } from './MineralResourceAssets'
-export { default as InvestmentProperties } from './InvestmentProperties'
+export { default as InvestmentProperties } from './Properties/InvestmentProperties'
 
 // Financial Accounting Specialties
-export { default as Provisions } from './Provisions'
+export { default as Provisions } from './FiscalPeriods/Provisions'
 export { default as GovernmentGrants } from './GovernmentGrants'
-export { default as DeferredTaxItems } from './DeferredTaxItems'
-export { default as ShareBasedPayments } from './ShareBasedPayments'
-export { default as BusinessCombinations } from './BusinessCombinations'
+export { default as DeferredTaxItems } from './TaxJurisdictions/DeferredTaxItems'
+export { default as ShareBasedPayments } from './Employees/ShareBasedPayments'
+export { default as BusinessCombinations } from './LegalEntities/BusinessCombinations'
 export { default as HeldForSaleClassifications } from './HeldForSaleClassifications'
 export { default as FairValueMeasurements } from './FairValueMeasurements'
-export { default as EarningsPerShare } from './EarningsPerShare'
+export { default as EarningsPerShare } from './FiscalPeriods/EarningsPerShare'
 export { default as InsuranceContracts } from './InsuranceContracts'
 export { default as RegulatoryDeferralAccounts } from './RegulatoryDeferralAccounts'
-export { default as PostBalanceSheetEvents } from './PostBalanceSheetEvents'
+export { default as PostBalanceSheetEvents } from './FiscalPeriods/PostBalanceSheetEvents'
 export { default as TransactionFailures } from './TransactionFailures'
 
 // Transfer Pricing
-export { default as TransferPricingFiles } from './TransferPricingFiles'
+export { default as TransferPricingFiles } from './LegalEntities/TransferPricingFiles'
 
 // Infrastructure: Metadata, Standards, Translations
 export { default as Standards } from './Standards'
@@ -303,27 +306,27 @@ export { default as Translations } from './Translations'
 
 // Contract Extensions
 export { default as commitments } from './commitments'
-export { default as contractAmendments } from './contract-amendments'
-export { default as contractPerformance } from './contract-performance'
-export { default as contractSignatures } from './contract-signatures'
+export { default as contractAmendments } from './Customers/Contracts/contract-amendments'
+export { default as contractPerformance } from './Customers/Contracts/contract-performance'
+export { default as contractSignatures } from './Customers/Contracts/contract-signatures'
 export { default as contractTemplates } from './contract-templates'
 
 // Miscellaneous
 export { default as LegalEntities } from './LegalEntities'
 export { default as AiSuggestions } from './AiSuggestions'
-export { default as UsageRecords } from './UsageRecords'
+export { default as UsageRecords } from './SubscriptionPlans/Subscriptions/UsageRecords'
 
 // Fiscal sales core (Наредба Н-18 compliant)
 export { default as FiscalDevices } from './FiscalDevices'
-export { default as Sales } from './Sales'
+export { default as Sales } from './FiscalDevices/Sales'
 export { default as Receipts } from './Receipts'
 export { default as Operators } from './Operators'
 export { default as Terminals } from './Terminals'
 export { default as AuditSubmissions } from './AuditSubmissions'
 
 // Close-side analysis & compliance (named exports)
-export { Consolidations } from './Consolidations'
-export { TaxPeriods } from './TaxPeriods'
-export { AuditReports } from './AuditReports'
-export { TransferPricingAdjustments } from './TransferPricingAdjustments'
-export { PostCloseAnalyticsReports } from './PostCloseAnalyticsReports'
+export { Consolidations } from './LegalEntities/Consolidations'
+export { TaxPeriods } from './FiscalPeriods/TaxPeriods'
+export { AuditReports } from './LegalEntities/Consolidations/AuditReports'
+export { TransferPricingAdjustments } from './FiscalPeriods/TaxPeriods/TransferPricingAdjustments'
+export { PostCloseAnalyticsReports } from './LegalEntities/Consolidations/AuditReports/PostCloseAnalyticsReports'

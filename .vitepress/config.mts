@@ -8,7 +8,10 @@ import type MarkdownIt from 'markdown-it'
 // the skills follow, so the tree maps 1:1: folder→nav group, SKILL.md→page,
 // [[link]]→route. The sidebar + wiki-link map are DERIVED from the filesystem
 // (the akashic record), never hand-listed.
-const SKILLS_DIR = '.claude/skills'
+// src is the 0: skills live co-located with their matter-twin code, so the
+// docs emerge from the code itself. srcDir + sidebar + wiki-links all derive
+// from this single root (the recursive mask, identical at every depth).
+const SKILLS_DIR = 'src'
 
 // Open Graph: every skill is an OG object. SITE makes og:url/image absolute in
 // prod (set ERPAX_SITE_URL); empty → the path itself is the address. og:image is

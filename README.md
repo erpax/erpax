@@ -39,7 +39,7 @@ without it passing.
 - Tax automation across 10+ jurisdictions (EN 16931 + OECD SAF-T + ISO 3166-1/-2).
 - Bank reconciliation against ISO 20022 camt.053 statements + IBAN (ISO 13616) +
   BIC (ISO 9362).
-- Periodic financial statements (IFRS IAS 1 + US-GAAP ASC 205).
+- Periodic financial statements (IFRS / IAS — IAS-1 → IFRS-18 from 2027, IAS-34, IFRS-15 + US-GAAP ASC 205).
 - 15 standards-implementing modules under `src/standards/<id>/` with full
   test parity at `tests/standards/<id>/`.
 

@@ -59,9 +59,9 @@ Each domain owns its end-to-end flow — sequenced so an external auditor can wa
 | Inventory receipt | `bill.activated` per cost-bearing line | `billAccountingHook` per-line (Slice LLL) | Dr Inventory / Cr AP | IAS-2 §10 |
 | Inventory issue (sale) | `invoice.activated` per cost-bearing line | `invoiceAccountingHook` per-line (Slice LLL) | Dr COGS / Cr Inventory | IAS-2 §28 |
 | Period-end depreciation | `depreciation-schedules.afterChange` (status → posted) | `depreciation.hook.ts` (existing) | Dr Depr Expense / Cr Accum Depr | IAS-16 §62 + ASC-360 |
-| Period-end accruals | `period-end-adjustments.afterChange` (status → posted) | `period-end-adjustment.hook.ts` (existing) | Dr/Cr per accrual type | IAS-1 §27 + SOX §404 |
+| Period-end accruals | `period-end-adjustments.afterChange` (status → posted) | `period-end-adjustment.hook.ts` (existing) | Dr/Cr per accrual type | IAS-1 §27 (accrual basis; → IAS-8 "Basis of Preparation" from 2027) + SOX §404 |
 | Lease IFRS-16 posting | `lease-period-postings.afterChange` (status → posted) | `lease-period-posting.hook.ts` (existing) | Dr Interest Expense + Dr ROU Amortisation / Cr Lease Liability + Cr ROU Asset | IFRS-16 §38 + ASC-842 |
-| Period close | future job — `bg-fiscal-period-close` | `period-close.job.ts` (TBA — closes Slice LLL `period:closing` gap) | Locks period; emits closing JE; freezes balances | IAS-1 §10(b) + SOX §404 |
+| Period close | future job — `bg-fiscal-period-close` | `period-close.job.ts` (TBA — closes Slice LLL `period:closing` gap) | Locks period; emits closing JE; freezes balances | IAS-1 §10(b) (presentation → IFRS-18 from 2027) + SOX §404 |
 
 **Gap remaining (1 of 20 GL handlers):** `subscription:refunded` — wire from `stripeWebhookHandlers.ts` via a new `handleChargeRefunded` symmetric to the existing `handleInvoicePaid` → `subscription:invoiced` path. Per "no entropy" — extend the existing handler file, don't create new ones.
 

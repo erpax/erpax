@@ -117,7 +117,7 @@ if (slugFilter) {
   }
 } else {
   console.log('=== Per-collection citations ===')
-  for (const c of filtered.sort((a, b) => a.slug.localeCompare(b.slug))) {
+  for (const c of [...filtered].sort((a, b) => a.slug.localeCompare(b.slug))) {
     const tagCount = c.standards.length + c.chainSteps.length + c.features.length
       + c.roles.length + c.emits.length + c.examples.length + c.invariants.length
       + c.useCases.length + c.summaries.length

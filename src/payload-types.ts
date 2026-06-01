@@ -151,6 +151,9 @@ export interface Config {
     'sepa-mandates': SepaMandate;
     'payroll-runs': PayrollRun;
     employees: Employee;
+    competencies: Competency;
+    connections: Connection;
+    sectors: Sector;
     'job-positions': JobPosition;
     'time-entries': TimeEntry;
     'leave-requests': LeaveRequest;
@@ -401,6 +404,9 @@ export interface Config {
     'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
     'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
     employees: EmployeesSelect<false> | EmployeesSelect<true>;
+    competencies: CompetenciesSelect<false> | CompetenciesSelect<true>;
+    connections: ConnectionsSelect<false> | ConnectionsSelect<true>;
+    sectors: SectorsSelect<false> | SectorsSelect<true>;
     'job-positions': JobPositionsSelect<false> | JobPositionsSelect<true>;
     'time-entries': TimeEntriesSelect<false> | TimeEntriesSelect<true>;
     'leave-requests': LeaveRequestsSelect<false> | LeaveRequestsSelect<true>;
@@ -739,7 +745,7 @@ export interface PayloadMcpApiKeyAuthOperations {
 export interface Tenant {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   name: string;
@@ -878,11 +884,32 @@ export interface Tenant {
 export interface User {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   password?: string | null;
   name?: string | null;
+  /**
+   * Competencies this actor holds (an agent loads these; a job requires them).
+   */
+  competencies?:
+    | {
+        competency: string | Competency;
+        /**
+         * Held proficiency level (SFIA scale).
+         */
+        proficiency?: number | null;
+        /**
+         * When the proficiency was assessed / certified.
+         */
+        assessedAt?: string | null;
+        /**
+         * Agent: skill-router route; human: certification ref.
+         */
+        evidence?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   roles?:
     | (
         | 'super-admin'
@@ -977,13 +1004,75 @@ export interface User {
   collection: 'users';
 }
 /**
+ * The shared actor-capability taxonomy: an agent loads it, an employee holds it, a job requires it, the skill-router resolves it. ESCO/O*NET/SFIA grounded.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "competencies".
+ */
+export interface Competency {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Competency code (e.g. SFIA `PROG`, O*NET element id, internal code).
+   */
+  reference: string;
+  name: string;
+  description?: string | null;
+  /**
+   * ESCO Skills-pillar sub-classification (mono-hierarchy: one group per concept).
+   */
+  subClassification?: ('knowledge' | 'language' | 'skill' | 'transversal') | null;
+  /**
+   * Single parent group in the ESCO mono-hierarchy (self-referential).
+   */
+  parent?: (string | null) | Competency;
+  /**
+   * ESCO reusability tier — distinguishes core/soft (transversal) from role-specific (occupation-specific).
+   */
+  reusabilityLevel?: ('transversal' | 'cross_sectoral' | 'sector_specific' | 'occupation_specific') | null;
+  /**
+   * Top of the SFIA responsibility scale (1-7), reused for both held and required levels; gap = required − held.
+   */
+  maxProficiency?: number | null;
+  /**
+   * ESCO concept URI — the European cross-language anchor.
+   */
+  escoUri?: string | null;
+  /**
+   * O*NET element / SOC code.
+   */
+  onetCode?: string | null;
+  /**
+   * SFIA skill code (e.g. `PROG`, `ARCH`).
+   */
+  sfiaCode?: string | null;
+  /**
+   * ISCO-08 occupation code this competency is typical for.
+   */
+  iscoOccupation?: string | null;
+  /**
+   * Skill-router route of the matching `SKILL.md` node (e.g. `/fields/measure/SKILL`). Same content ⇒ same id — the agent capability is this competency.
+   */
+  skillRoute?: string | null;
+  status?: ('active' | 'deprecated' | 'emerging') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "orders".
  */
 export interface Order {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1025,7 +1114,7 @@ export interface Order {
 export interface Product {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1090,7 +1179,7 @@ export interface Product {
 export interface Media {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1188,7 +1277,7 @@ export interface VariantOption {
   id: string;
   _variantOptions_options_order?: string | null;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1209,7 +1298,7 @@ export interface VariantOption {
 export interface VariantType {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1279,7 +1368,7 @@ export interface CallToActionBlock {
 export interface Page {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1362,7 +1451,7 @@ export interface Page {
 export interface Post {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1417,7 +1506,7 @@ export interface Post {
 export interface Category {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1566,7 +1655,7 @@ export interface FormBlock {
 export interface Form {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   title: string;
@@ -1744,7 +1833,7 @@ export interface Form {
 export interface Variant {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1769,7 +1858,7 @@ export interface Variant {
 export interface Transaction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1816,7 +1905,7 @@ export interface Transaction {
 export interface Cart {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1844,7 +1933,7 @@ export interface Cart {
 export interface Address {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -1974,7 +2063,7 @@ export interface Address {
 export interface GlAccount {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2048,7 +2137,7 @@ export interface GlAccount {
 export interface Role {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   name: string;
@@ -2100,7 +2189,7 @@ export interface Role {
 export interface UserRole {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   user: string | User;
@@ -2115,7 +2204,7 @@ export interface UserRole {
 export interface Invoice {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2532,7 +2621,7 @@ export interface Invoice {
 export interface Subscription {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2572,7 +2661,7 @@ export interface Subscription {
 export interface SubscriptionPlan {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   name: string;
@@ -2626,7 +2715,7 @@ export interface SubscriptionPlan {
 export interface FiscalDevice {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2679,7 +2768,7 @@ export interface FiscalDevice {
 export interface Operator {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2703,7 +2792,7 @@ export interface Operator {
 export interface Terminal {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2737,7 +2826,7 @@ export interface Terminal {
 export interface Receipt {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2820,7 +2909,7 @@ export interface Receipt {
 export interface Sale {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -2887,7 +2976,7 @@ export interface Sale {
 export interface InvoiceLine {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3127,7 +3216,7 @@ export interface InvoiceLine {
 export interface Item {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3293,7 +3382,7 @@ export interface Item {
 export interface PaymentMethod {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3328,7 +3417,7 @@ export interface PaymentMethod {
 export interface Payment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3428,7 +3517,7 @@ export interface Payment {
 export interface GlPostingRule {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3512,7 +3601,7 @@ export interface GlPostingRule {
 export interface JournalEntry {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3565,7 +3654,7 @@ export interface JournalEntry {
 export interface GlPosting {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3624,7 +3713,7 @@ export interface GlPosting {
 export interface PeriodLock {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3709,7 +3798,7 @@ export interface PeriodLock {
 export interface ClosingEntry {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -3895,7 +3984,7 @@ export interface ClosingEntry {
 export interface LegalEntity {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4024,7 +4113,7 @@ export interface LegalEntity {
 export interface FiscalPeriod {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4086,6 +4175,66 @@ export interface FiscalPeriod {
      */
     reopenedBy?: (string | null) | User;
   };
+  configuration?: {
+    /**
+     * Month the fiscal year starts (1-12).
+     */
+    fiscalYearStartMonth?: number | null;
+    /**
+     * Day-of-month the fiscal year starts.
+     */
+    fiscalYearStartDay?: number | null;
+    /**
+     * ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).
+     */
+    countryCode?: string | null;
+    /**
+     * ISO 4217 reporting currency for this fiscal configuration.
+     */
+    currencyCode?: string | null;
+    /**
+     * BCP-47 locale for period labelling.
+     */
+    localeCode?: string | null;
+    /**
+     * Regulatory framework the period coding follows (e.g. SAF-T, XBRL-GL).
+     */
+    regulatoryFramework?: string | null;
+    /**
+     * Whether the calendar may use a non-Gregorian basis.
+     */
+    allowsNonGregorian?: boolean | null;
+    /**
+     * Apply leap-year boundary adjustment.
+     */
+    leapYearAdjustment?: boolean | null;
+    /**
+     * Explicit period boundaries for custom calendars.
+     */
+    customPeriodBoundaries?:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  governance?: {
+    /**
+     * Reporting legal entity this fiscal period belongs to.
+     */
+    entity?: (string | null) | LegalEntity;
+    /**
+     * Prior fiscal-period version this one supersedes (amendment chain).
+     */
+    supercedes?: (string | null) | FiscalPeriod;
+    /**
+     * ISO 8601 — when this period definition takes effect.
+     */
+    effectiveDate?: string | null;
+  };
   notes?: {
     /**
      * Close memo / lock justification
@@ -4114,7 +4263,7 @@ export interface FiscalPeriod {
 export interface BankStatement {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4166,7 +4315,7 @@ export interface BankStatement {
 export interface BankTransaction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4280,7 +4429,7 @@ export interface BankTransaction {
 export interface BankAccount {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4346,7 +4495,7 @@ export interface BankAccount {
 export interface AccountReconciliation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4463,7 +4612,7 @@ export interface AccountReconciliation {
 export interface BankReconciliation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4534,7 +4683,7 @@ export interface BankReconciliation {
 export interface FinancialStatement {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4597,7 +4746,7 @@ export interface FinancialStatement {
 export interface PeriodEndAdjustment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4631,7 +4780,7 @@ export interface PeriodEndAdjustment {
 export interface RecurringJournal {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4722,7 +4871,7 @@ export interface RecurringJournal {
 export interface CostCenter {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4796,7 +4945,7 @@ export interface CostCenter {
 export interface Project {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -4892,7 +5041,7 @@ export interface Project {
 export interface Customer {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5046,7 +5195,7 @@ export interface Customer {
 export interface TaxCode {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5146,7 +5295,7 @@ export interface TaxCode {
 export interface TaxJurisdiction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5232,7 +5381,7 @@ export interface TaxJurisdiction {
 export interface Contract {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5327,7 +5476,7 @@ export interface Contract {
 export interface PerformanceObligation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5404,7 +5553,7 @@ export interface PerformanceObligation {
 export interface PriorPeriodAdjustment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5465,7 +5614,7 @@ export interface PriorPeriodAdjustment {
 export interface RoundingAdjustment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5516,7 +5665,7 @@ export interface RoundingAdjustment {
 export interface TaxCalculation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5546,7 +5695,7 @@ export interface TaxCalculation {
 export interface TaxReturn {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5606,7 +5755,7 @@ export interface TaxReturn {
 export interface CurrencyRate {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5639,7 +5788,7 @@ export interface CurrencyRate {
 export interface FiscalCalendar {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5717,7 +5866,7 @@ export interface FiscalCalendar {
 export interface FiscalPeriodSnapshot {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -5810,7 +5959,7 @@ export interface FixedAsset {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   assetNumber: string;
@@ -5919,7 +6068,7 @@ export interface FixedAsset {
 export interface Vendor {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6103,7 +6252,7 @@ export interface Vendor {
 export interface DepreciationSchedule {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6146,7 +6295,7 @@ export interface DepreciationSchedule {
 export interface Lead {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6216,7 +6365,7 @@ export interface Lead {
 export interface Opportunity {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6283,7 +6432,7 @@ export interface Opportunity {
 export interface CustomerSegment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6330,7 +6479,7 @@ export interface CustomerSegment {
 export interface ConsentRecord {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6371,7 +6520,7 @@ export interface ConsentRecord {
 export interface Quote {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6415,7 +6564,7 @@ export interface SalesOrder {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   /**
@@ -6543,7 +6692,7 @@ export interface SalesOrder {
 export interface SalesCommission {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6621,7 +6770,7 @@ export interface SalesCommission {
 export interface Employee {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6681,6 +6830,31 @@ export interface Employee {
    * Reporting line; can be null for org root.
    */
   manager?: (string | null) | Employee;
+  /**
+   * The actor-party identity this employment belongs to (login + held competencies).
+   */
+  user?: (string | null) | User;
+  /**
+   * Competencies held in this employment (skill-gap vs the job-position requirements).
+   */
+  competencies?:
+    | {
+        competency: string | Competency;
+        /**
+         * Held proficiency level (SFIA scale).
+         */
+        proficiency?: number | null;
+        /**
+         * When the proficiency was assessed / certified.
+         */
+        assessedAt?: string | null;
+        /**
+         * Agent: skill-router route; human: certification ref.
+         */
+        evidence?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   /**
    * ISO 3166-1 alpha-2. Drives the country-context cascade (tax codes, social-security regime, payroll calendar).
    */
@@ -6795,7 +6969,7 @@ export interface Employee {
 export interface PayrollRun {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -6948,7 +7122,7 @@ export interface PayrollRun {
 export interface PaymentRun {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7070,7 +7244,7 @@ export interface PaymentRun {
 export interface Provision {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7169,7 +7343,7 @@ export interface Provision {
 export interface AuditFinding {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7213,41 +7387,30 @@ export interface AuditFinding {
 export interface InternalControl {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  controlName: string;
+  title: string;
+  description: string;
   controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
   controlCategory:
-    | 'preventive-general'
-    | 'preventive-specific'
-    | 'detective-manual'
-    | 'detective-automated'
-    | 'corrective'
-    | 'monitoring'
-    | 'governance'
-    | 'user-access';
-  cosoComponent?:
-    | ('control-environment' | 'risk-assessment' | 'control-activities' | 'information-communication' | 'monitoring')
-    | null;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  owner?: string | null;
-  frequency?: ('daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'continuous') | null;
+    | 'authorization'
+    | 'segregation'
+    | 'reconciliation'
+    | 'access-security'
+    | 'accuracy'
+    | 'exception'
+    | 'documentation'
+    | 'change-management';
+  cosoComponent?: ('environment' | 'risk-assessment' | 'control-activities' | 'information' | 'monitoring') | null;
+  frequency?: ('continuous' | 'daily' | 'weekly' | 'monthly' | 'quarterly' | 'annual' | 'as-needed') | null;
+  owner?: (string | null) | User;
+  riskMitigated?: string | null;
+  isManualControl?: boolean | null;
+  lastReviewDate?: string | null;
+  nextReviewDate?: string | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -7258,7 +7421,7 @@ export interface InternalControl {
 export interface ControlTest {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7289,7 +7452,7 @@ export interface ControlTest {
 export interface CreditMemo {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7350,7 +7513,7 @@ export interface CreditMemo {
 export interface Return {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7391,7 +7554,7 @@ export interface Return {
 export interface Shipment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7442,7 +7605,7 @@ export interface Shipment {
 export interface Refund {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7481,7 +7644,7 @@ export interface Refund {
 export interface PaymentAllocation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7543,7 +7706,7 @@ export interface PaymentAllocation {
 export interface DunningCycle {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7624,7 +7787,7 @@ export interface DunningCycle {
 export interface VendorQuote {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7706,7 +7869,7 @@ export interface VendorQuote {
 export interface PurchaseRequisition {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7794,7 +7957,7 @@ export interface PurchaseRequisition {
 export interface PurchaseOrder {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7867,7 +8030,7 @@ export interface PurchaseOrder {
 export interface GoodsReceipt {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7901,7 +8064,7 @@ export interface GoodsReceipt {
 export interface VendorScorecard {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -7983,7 +8146,7 @@ export interface VendorScorecard {
 export interface InventoryMovement {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8048,7 +8211,7 @@ export interface InventoryMovement {
 export interface WarehouseLocation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8096,7 +8259,7 @@ export interface WarehouseLocation {
 export interface BudgetPlanning {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8140,7 +8303,7 @@ export interface BudgetPlanning {
 export interface CostVariance {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8212,7 +8375,7 @@ export interface CostVariance {
 export interface WorkOrder {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8296,7 +8459,7 @@ export interface WorkOrder {
 export interface BillsOfMaterial {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8396,7 +8559,7 @@ export interface BillsOfMaterial {
 export interface WorkCenter {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8449,7 +8612,7 @@ export interface WorkCenter {
   createdAt: string;
 }
 /**
- * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810.
+ * Paired source documents between two group tenants. Each row pairs with a mirror row on the counterparty tenant — must net to zero on consolidation per IFRS 10 §B86 / ASC 810-10-45-1.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "intercompany-transactions".
@@ -8457,7 +8620,7 @@ export interface WorkCenter {
 export interface IntercompanyTransaction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8521,7 +8684,7 @@ export interface IntercompanyTransaction {
   createdAt: string;
 }
 /**
- * Group-level elimination JEs applied at consolidation per IFRS 10 §B86 / ASC 810. Replayed each consolidation cycle.
+ * Group-level elimination JEs applied at consolidation per IFRS 10 §B86 / ASC 810-10-45-1. Replayed each consolidation cycle.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "consolidation-eliminations".
@@ -8529,7 +8692,7 @@ export interface IntercompanyTransaction {
 export interface ConsolidationElimination {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8596,7 +8759,7 @@ export interface ConsolidationElimination {
 export interface FxTransaction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8670,7 +8833,7 @@ export interface FxTransaction {
 export interface CommitmentsAndContingency {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8748,7 +8911,7 @@ export interface CommitmentsAndContingency {
 export interface Lease {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -8892,7 +9055,7 @@ export interface Lease {
 export interface LeaseModification {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9007,7 +9170,7 @@ export interface LeaseModification {
 export interface EvidenceAttestation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9086,7 +9249,7 @@ export interface EvidenceAttestation {
 export interface LeasePeriodPosting {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9173,7 +9336,7 @@ export interface LeasePeriodPosting {
 export interface SepaMandate {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9231,6 +9394,138 @@ export interface SepaMandate {
   createdAt: string;
 }
 /**
+ * Directed social edge between two typeless users. The edge carries the relation (follow/friend/block…); all platforms merge onto one graph, federating in sync via ActivityPub-style events.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "connections".
+ */
+export interface Connection {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Actor initiating the edge (ActivityStreams `actor`).
+   */
+  from: string | User;
+  /**
+   * Target of the edge (ActivityStreams `object`).
+   */
+  to: string | User;
+  /**
+   * The nature of the edge — the merged-platform dimension (a context, never a user type). B2B/C2B/C2C/B2G are just directions here.
+   */
+  context:
+    | 'follow'
+    | 'friend'
+    | 'subscribe'
+    | 'block'
+    | 'mute'
+    | 'mention'
+    | 'customer'
+    | 'supplier'
+    | 'agent'
+    | 'carrier'
+    | 'employer'
+    | 'colleague'
+    | 'contractor'
+    | 'member'
+    | 'represents'
+    | 'governs'
+    | 'regulated_by';
+  /**
+   * Derived: a matching reverse edge exists (mutual follow ⇒ friend).
+   */
+  reciprocal?: boolean | null;
+  status?: ('pending' | 'active' | 'declined' | 'severed') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The taxonomy of every part of society — named and encoded by SNA / ISIC / COFOG / ICNPO / SDG. Parties, connections, transactions and tenants reference their sector.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sectors".
+ */
+export interface Sector {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Sector code (the human key; content-uuid is the machine key).
+   */
+  reference: string;
+  name: string;
+  description?: string | null;
+  /**
+   * Parent in the societal hierarchy (self-referential).
+   */
+  parent?: (string | null) | Sector;
+  /**
+   * UN SNA-2008 institutional sector — the top partition of society.
+   */
+  institutionalSector?:
+    | (
+        | 's11_nonfinancial_corporations'
+        | 's12_financial_corporations'
+        | 's13_general_government'
+        | 's14_households'
+        | 's15_npish'
+      )
+    | null;
+  /**
+   * UN ISIC Rev.4 economic-activity code (the sector of production).
+   */
+  isicCode?: string | null;
+  /**
+   * EU NACE Rev.2 activity code (interoperable with ISIC Rev.4).
+   */
+  naceCode?: string | null;
+  /**
+   * UN COFOG division — the function of government this sector serves.
+   */
+  cofogDivision?:
+    | (
+        | 'cofog_01'
+        | 'cofog_02'
+        | 'cofog_03'
+        | 'cofog_04'
+        | 'cofog_05'
+        | 'cofog_06'
+        | 'cofog_07'
+        | 'cofog_08'
+        | 'cofog_09'
+        | 'cofog_10'
+      )
+    | null;
+  /**
+   * ICNPO group (civil-society / non-profit classification).
+   */
+  icnpoGroup?: string | null;
+  /**
+   * UN Sustainable Development Goal (1-17) this sector primarily advances.
+   */
+  sdgGoal?: number | null;
+  /**
+   * ISO 3166-1 alpha-2 — geographic scope (blank = supranational/global).
+   */
+  countryCode?: string | null;
+  status?: ('active' | 'merged' | 'retired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Job position (an org-chart slot). One position = at most one current employee. Drives recruiting + headcount budget.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -9239,12 +9534,20 @@ export interface SepaMandate {
 export interface JobPosition {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   positionCode: string;
   positionTitle: string;
+  /**
+   * ESCO occupation URI (level 5+). Rolls up to one ISCO-08 unit group.
+   */
+  escoOccupation?: string | null;
+  /**
+   * ISCO-08 unit group code (4-digit). Deterministic rollup from the ESCO occupation.
+   */
+  iscoUnitGroup?: string | null;
   department?: string | null;
   costCenter?: (string | null) | CostCenter;
   /**
@@ -9277,9 +9580,23 @@ export interface JobPosition {
   fte?: number | null;
   jobDescription?: string | null;
   /**
-   * Skills, certifications, experience required.
+   * Free-text requirements narrative. Structured requirements live in `requiredCompetencies`.
    */
   requirements?: string | null;
+  requiredCompetencies?:
+    | {
+        competency: string | Competency;
+        /**
+         * Minimum SFIA proficiency required.
+         */
+        minProficiency?: number | null;
+        /**
+         * Essential vs desirable (ISO 30405).
+         */
+        mandatory?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
   workLocation?: string | null;
   workArrangement?: ('on_site' | 'hybrid' | 'remote') | null;
   /**
@@ -9328,7 +9645,7 @@ export interface JobPosition {
 export interface TimeEntry {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9405,7 +9722,7 @@ export interface LeaveRequest {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   reference: string;
@@ -9491,7 +9808,7 @@ export interface LeaveRequest {
 export interface PerformanceReview {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9584,7 +9901,7 @@ export interface PerformanceReview {
 export interface ExpenseReport {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9700,7 +10017,7 @@ export interface ExpenseReport {
 export interface RecruitingPipeline {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9799,7 +10116,7 @@ export interface RecruitingPipeline {
 export interface Activity {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9846,7 +10163,7 @@ export interface Activity {
 export interface ProjectTask {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9906,7 +10223,7 @@ export interface ProjectTask {
 export interface ProjectMilestone {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -9966,7 +10283,7 @@ export interface ProjectMilestone {
 export interface WorkflowDefinition {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10022,6 +10339,18 @@ export interface WorkflowDefinition {
     id?: string | null;
   }[];
   /**
+   * BPMN-2.0 state machine: { states[], transitions[{from,to,on,guard,emits}], documentChain[], events[], standards[] }. Drives the lifecycle gate + cross-domain event wiring.
+   */
+  stateMachine?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
    * Inactive definitions don't spawn new instances; existing in-flight ones complete.
    */
   isActive?: boolean | null;
@@ -10046,7 +10375,7 @@ export interface WorkflowDefinition {
 export interface WorkflowInstance {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10127,7 +10456,7 @@ export interface WorkflowInstance {
 export interface Batch {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   /**
@@ -10226,7 +10555,7 @@ export interface Batch {
 export interface QualityInspection {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10292,7 +10621,7 @@ export interface QualityInspection {
 export interface WorkShift {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10365,7 +10694,7 @@ export interface WorkShift {
 export interface Operation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10402,7 +10731,7 @@ export interface Operation {
 export interface Routing {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10455,7 +10784,7 @@ export interface Routing {
 export interface OperationRun {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10555,7 +10884,7 @@ export interface OperationRun {
 export interface ProductionReceipt {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10638,7 +10967,7 @@ export interface ProductionReceipt {
 export interface WipSnapshot {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10713,7 +11042,7 @@ export interface WipSnapshot {
 export interface Tag {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10741,7 +11070,7 @@ export interface Tag {
 export interface Tagging {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10780,7 +11109,7 @@ export interface Tagging {
 export interface Property {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -10917,7 +11246,7 @@ export interface Property {
 export interface Space {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11021,7 +11350,7 @@ export interface Space {
 export interface MaintenanceRequest {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11122,7 +11451,7 @@ export interface MaintenanceRequest {
 export interface BookableResource {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11237,7 +11566,7 @@ export interface BookableResource {
 export interface MaintenanceWorkOrder {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11387,7 +11716,7 @@ export interface MaintenanceWorkOrder {
 export interface Booking {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11502,7 +11831,7 @@ export interface Booking {
 export interface Carrier {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11574,7 +11903,7 @@ export interface Carrier {
 export interface TrackingEvent {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11653,7 +11982,7 @@ export interface TrackingEvent {
 export interface CustomsDeclaration {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11775,7 +12104,7 @@ export interface CustomsDeclaration {
 export interface ConsignmentArrangement {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11860,7 +12189,7 @@ export interface ConsignmentArrangement {
 export interface ConsignmentInventory {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -11935,7 +12264,7 @@ export interface ConsignmentInventory {
 export interface ConsignmentSale {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12018,7 +12347,7 @@ export interface ConsignmentSale {
 export interface AuditEvent {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12141,7 +12470,7 @@ export interface AuditEvent {
 export interface ApiAuditEvent {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12210,178 +12539,273 @@ export interface ApiAuditEvent {
   createdAt: string;
 }
 /**
+ * Read-only reference data for entity type classifications
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "entity-types".
  */
 export interface EntityType {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  name: string;
+  /**
+   * Entity type code (e.g., "CORP", "LLC", "PART")
+   */
   code: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
+  /**
+   * Entity type label (e.g., "Corporation")
+   */
+  label: string;
+  /**
+   * Category of entity type
+   */
+  category: 'for-profit-corp' | 'llc' | 'partnership' | 'nonprofit' | 'trust' | 'government' | 'individual';
+  /**
+   * Detailed description
+   */
+  description?: string | null;
+  /**
+   * Key characteristics (ownership, governance, taxation)
+   */
+  characteristics?:
+    | {
         [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  applicableFrameworks?: (string | ComplianceFramework)[] | null;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Which jurisdictions recognize this entity type
+   */
+  jurisdictionApplicability?:
+    | {
+        jurisdiction: string;
+        applicableInJurisdiction?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Default compliance frameworks for this entity type
+   */
+  defaultComplianceFrameworks?: (string | ComplianceFramework)[] | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
+ * Read-only reference data
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "compliance-frameworks".
  */
 export interface ComplianceFramework {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  code: string;
   name: string;
-  frameworkType: 'gaap' | 'ifrs' | 'sox' | 'coso' | 'gdpr' | 'iso' | 'regulatory' | 'other';
+  category:
+    | 'accounting'
+    | 'auditing'
+    | 'control-framework'
+    | 'data-protection'
+    | 'info-security'
+    | 'banking'
+    | 'tax'
+    | 'esg'
+    | 'other';
+  description?: string | null;
   issuingBody?: string | null;
-  version?: string | null;
-  effectiveDate: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  applicableJurisdictions?: (string | TaxingJurisdiction)[] | null;
+  officialResourceUrl?: string | null;
+  effectiveDate?: string | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
+ * Read-only reference data for tax jurisdictions
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "taxing-jurisdictions".
  */
 export interface TaxingJurisdiction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  /**
+   * Jurisdiction code (e.g., "US", "DE", "BG")
+   */
+  code: string;
+  /**
+   * Jurisdiction name
+   */
   name: string;
-  jurisdictionType: 'country' | 'state' | 'local' | 'special-zone';
-  isoCountryCode?: string | null;
-  isoRegionCode?: string | null;
-  currency?: string | null;
-  parent?: (string | null) | TaxingJurisdiction;
-  filingDeadlines?:
+  /**
+   * Type of jurisdiction
+   */
+  type: 'country' | 'region' | 'local' | 'supranational';
+  /**
+   * Parent jurisdiction
+   */
+  parentJurisdiction?: (string | null) | TaxingJurisdiction;
+  /**
+   * ISO 3166-1 alpha-2 code
+   */
+  iso2Code?: string | null;
+  /**
+   * ISO 3166-1 alpha-3 code
+   */
+  iso3Code?: string | null;
+  /**
+   * Primary currency code
+   */
+  primaryCurrency?: string | null;
+  /**
+   * Languages spoken in jurisdiction
+   */
+  languages?:
     | {
-        description?: string | null;
-        dueDate?: string | null;
+        languageCode: string;
+        languageName?: string | null;
         id?: string | null;
       }[]
     | null;
+  /**
+   * Regulatory characteristics
+   */
+  regulatoryCharacteristics?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Banking and financial institution requirements
+   */
+  bankingRequirements?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Key filing deadlines
+   */
+  filingDeadlines?:
+    | {
+        filingType: string;
+        deadline: string;
+        frequency?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Applicable compliance frameworks
+   */
+  complianceFrameworks?: (string | ComplianceFramework)[] | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
+ * Reference data mapping entity types to legal forms
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "entity-legal-structures".
  */
 export interface EntityLegalStructure {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  name: string;
-  legalCode: string;
-  entityType: string | EntityType;
+  /**
+   * Jurisdiction
+   */
   jurisdiction: string | TaxingJurisdiction;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
+  /**
+   * Entity type
+   */
+  entityType: string | EntityType;
+  /**
+   * Local name of legal form
+   */
+  localName: string;
+  /**
+   * Abbreviation
+   */
+  abbreviation?: string | null;
+  /**
+   * Description
+   */
+  description?: string | null;
+  /**
+   * Regulatory characteristics
+   */
+  regulatoryCharacteristics?:
+    | {
         [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  taxTreatment?: ('transparent' | 'opaque' | 'hybrid') | null;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Governance structure
+   */
+  governanceStructure?: ('single' | 'multiple' | 'board' | 'management-committee' | 'supervisory-board') | null;
+  /**
+   * Tax treatment
+   */
+  taxTreatment?: ('corporate' | 'pass-through' | 'mixed' | 'exempt') | null;
+  /**
+   * Audit requirements
+   */
+  auditRequirement?: ('required' | 'optional' | 'threshold' | 'not-required') | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
+ * Read-only reference data
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "compliance-requirements".
  */
 export interface ComplianceRequirement {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  requirementName: string;
+  code: string;
+  title: string;
+  description: string;
   framework: string | ComplianceFramework;
-  requirementType: 'disclosure' | 'accounting' | 'control' | 'reporting' | 'policy' | 'attestation';
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  testableStatement?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  applicableEntityTypes?: (string | EntityType)[] | null;
+  section?: string | null;
+  severity?: ('critical' | 'high' | 'medium' | 'low' | 'info') | null;
+  resourceUrl?: string | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12392,43 +12816,82 @@ export interface ComplianceRequirement {
 export interface AuditSample {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
+  sampleId: string;
   controlTest: string | ControlTest;
-  itemIdentifier: string;
+  samplingSequence?: number | null;
   sampleItemType:
     | 'invoice'
-    | 'payment'
+    | 'invoice-line'
     | 'journal-entry'
+    | 'payment'
     | 'vendor'
     | 'customer'
     | 'employee'
     | 'gl-account'
-    | 'reconciliation'
+    | 'bank-reconciliation'
     | 'purchase-order'
     | 'other';
+  sampleItemId: string;
+  sampleItemDate?: string | null;
+  sampleItemAmount?: number | null;
   testResult?: ('pass' | 'fail' | 'not-tested' | 'unable-test') | null;
+  exceptionDescription?: string | null;
   exceptionCategory?:
-    | ('no-exception' | 'process-exception' | 'system-exception' | 'data-exception' | 'missing-docs')
+    | (
+        | 'missing-approval'
+        | 'unauthorized-approval'
+        | 'amount-mismatch'
+        | 'incorrect-classification'
+        | 'late-posting'
+        | 'duplicate'
+        | 'unsupported'
+        | 'other'
+      )
     | null;
-  notes?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  evidence?: (string | AuditEvidence)[] | null;
+  testedBy?: (string | null) | User;
+  testedDate?: string | null;
+  notes?: string | null;
+  isActive?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-gaps".
+ */
+export interface ComplianceGap {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  requirement: string | ComplianceRequirement;
+  gapType:
+    | 'missing-control'
+    | 'design-deficiency'
+    | 'operating-deficiency'
+    | 'documentation-gap'
+    | 'resource-gap'
+    | 'system-gap'
+    | 'process-gap';
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  status: 'identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed';
+  currentState?: string | null;
+  requiredState?: string | null;
+  rootCause?: string | null;
+  identifiedDate: string;
+  identifiedBy: string | User;
+  targetClosureDate?: string | null;
+  actualClosureDate?: string | null;
+  riskExposure?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material') | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12439,11 +12902,12 @@ export interface AuditSample {
 export interface AuditEvidence {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  evidenceTitle: string;
+  title: string;
+  description?: string | null;
   documentType:
     | 'pdf'
     | 'screenshot'
@@ -12455,11 +12919,19 @@ export interface AuditEvidence {
     | 'audit-log'
     | 'policy'
     | 'other';
-  documentFile?: (string | null) | Media;
+  documentFile: string | Media;
+  sourceSystem?: string | null;
+  documentDate?: string | null;
+  uploadedDate: string;
+  uploadedBy: string | User;
+  relatedControl?: (string | null) | InternalControl;
+  relatedControlTest?: (string | null) | ControlTest;
+  relatedAuditSample?: (string | null) | AuditSample;
+  relatedFinding?: (string | null) | AuditFinding;
   evidenceChain?:
     | {
-        actor?: string | null;
-        action?: string | null;
+        actor: string;
+        action: 'created' | 'collected' | 'reviewed' | 'approved' | 'secured';
         actionDate?: string | null;
         notes?: string | null;
         id?: string | null;
@@ -12467,153 +12939,35 @@ export interface AuditEvidence {
     | null;
   confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
   retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-gaps".
- */
-export interface ComplianceGap {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  requirement: string | ComplianceRequirement;
-  gapTitle: string;
-  gapType:
-    | 'missing-control'
-    | 'design-deficiency'
-    | 'operating-deficiency'
-    | 'documentation-gap'
-    | 'resource-gap'
-    | 'system-gap'
-    | 'process-gap';
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  status?: ('identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed') | null;
-  remediationPlan?: (string | null) | RemediationPlan;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "remediation-plans".
- */
-export interface RemediationPlan {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  planTitle: string;
-  finding?: (string | null) | AuditFinding;
-  gap?: (string | null) | ComplianceGap;
-  remediationType:
-    | 'design-change'
-    | 'process-change'
-    | 'system-implementation'
-    | 'training'
-    | 'documentation'
-    | 'resource-addition'
-    | 'policy-update'
-    | 'organizational-change';
-  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
-  owner?: string | null;
-  actionSteps?:
+  tags?:
     | {
-        sequence?: number | null;
-        description?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
-        stepOwner?: string | null;
-        targetDate?: string | null;
-        status?: ('not-started' | 'in-progress' | 'completed' | 'delayed') | null;
-        completedDate?: string | null;
+        tag: string;
         id?: string | null;
       }[]
     | null;
-  targetDate: string;
-  completionDate?: string | null;
-  status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
-  budget?: number | null;
-  riskOfDelay?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
+ * Immutable audit log
+ *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "audit-trail-events".
  */
 export interface AuditTrailEvent {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   operation: 'create' | 'update' | 'delete';
   collectionName: string;
   documentId: string;
-  changedBy: string;
+  changedBy: string | User;
   changedAt: string;
-  changesSummary?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  changesSummary?: string | null;
   changeDetails?:
     | {
         [k: string]: unknown;
@@ -12623,23 +12977,9 @@ export interface AuditTrailEvent {
     | number
     | boolean
     | null;
-  approvedBy?: string | null;
+  approvedBy?: (string | null) | User;
   approvalStatus?: ('approved' | 'pending' | 'flagged') | null;
-  changeReason?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  changeReason?: string | null;
   systemDetails?:
     | {
         [k: string]: unknown;
@@ -12649,6 +12989,54 @@ export interface AuditTrailEvent {
     | number
     | boolean
     | null;
+  isDelete?: boolean | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "remediation-plans".
+ */
+export interface RemediationPlan {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  title: string;
+  description: string;
+  relatedFinding?: (string | null) | AuditFinding;
+  relatedGap?: (string | null) | ComplianceGap;
+  remediationType:
+    | 'design-change'
+    | 'process-change'
+    | 'system-implementation'
+    | 'training'
+    | 'documentation'
+    | 'resource-addition'
+    | 'policy-update'
+    | 'organizational-change';
+  priority: 'critical' | 'high' | 'medium' | 'low';
+  owner: string | User;
+  actionSteps?:
+    | {
+        sequence: number;
+        description: string;
+        owner?: string | null;
+        targetDate?: string | null;
+        status?: ('not-started' | 'in-progress' | 'completed' | 'on-hold') | null;
+        completedDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  targetDate: string;
+  completionDate?: string | null;
+  status: 'planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded';
+  requiredResources?: string | null;
+  budget?: number | null;
+  riskOfDelay?: string | null;
+  approvedBy?: (string | null) | User;
+  approvalDate?: string | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12659,7 +13047,7 @@ export interface AuditTrailEvent {
 export interface AuditCommittee {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12680,7 +13068,7 @@ export interface AuditCommittee {
 export interface AuditCommitteeMember {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12708,7 +13096,7 @@ export interface AuditCommitteeMember {
 export interface BoardAction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12756,7 +13144,7 @@ export interface BoardAction {
 export interface ManagementCertification {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12800,7 +13188,7 @@ export interface ManagementCertification {
 export interface RegulatoryReport {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12849,7 +13237,7 @@ export interface RegulatoryReport {
 export interface InternalPolicy {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12896,7 +13284,7 @@ export interface InternalPolicy {
 export interface StatutoryReportTemplate {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12925,7 +13313,7 @@ export interface StatutoryReportTemplate {
 export interface StatutoryFieldMapping {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -12976,7 +13364,7 @@ export interface StatutoryFieldMapping {
 export interface PolicyVersion {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13011,7 +13399,7 @@ export interface PolicyVersion {
 export interface PolicyAcknowledgment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13033,7 +13421,7 @@ export interface PolicyAcknowledgment {
 export interface ComplianceDeadline {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13063,7 +13451,7 @@ export interface ComplianceDeadline {
 export interface ComplianceNotification {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13105,7 +13493,7 @@ export interface ComplianceNotification {
 export interface ReportingStandard {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13141,7 +13529,7 @@ export interface ReportingStandard {
 export interface ReportingMapping {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13182,7 +13570,7 @@ export interface ReportingMapping {
 export interface RelatedPartyTransaction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13304,7 +13692,7 @@ export interface RelatedPartyTransaction {
 export interface ManagementAssessmentIcfr {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13526,7 +13914,7 @@ export interface ManagementAssessmentIcfr {
 export interface DisclosureChecklist {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13628,7 +14016,7 @@ export interface DisclosureChecklist {
 export interface AuditCommitteeMinute {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13847,7 +14235,7 @@ export interface AuditCommitteeMinute {
 export interface RiskRegister {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -13973,7 +14361,7 @@ export interface RiskRegister {
 export interface DebtSchedule {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14193,7 +14581,7 @@ export interface DebtSchedule {
 export interface InternalAuditFunction {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14460,7 +14848,7 @@ export interface InternalAuditFunction {
 export interface SegmentReporting {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14637,7 +15025,7 @@ export interface SegmentReporting {
 export interface DataSubjectRequest {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14693,7 +15081,7 @@ export interface DataSubjectRequest {
 export interface DataProcessingActivity {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14767,7 +15155,7 @@ export interface DataProcessingActivity {
 export interface KycCheck {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14832,7 +15220,7 @@ export interface KycCheck {
 export interface BeneficialOwner {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -14874,7 +15262,7 @@ export interface BeneficialOwner {
 export interface FinancialProfile {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   /**
@@ -14986,7 +15374,7 @@ export interface FinancialProfile {
 export interface Package {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   /**
@@ -15066,7 +15454,7 @@ export interface Package {
 export interface CashCount {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   /**
@@ -15145,7 +15533,7 @@ export interface CashCount {
 export interface PaymentRequest {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   /**
@@ -15216,7 +15604,7 @@ export interface PaymentRequest {
 export interface GatewayEvent {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   provider: 'stripe' | 'paypal' | 'adyen' | 'gocardless' | 'wise' | 'bank_psd2' | 'peppol' | 'other';
@@ -15297,7 +15685,7 @@ export interface GatewayEvent {
 export interface Message {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   subject: string;
@@ -15355,7 +15743,7 @@ export interface Message {
 export interface CsrdDisclosure {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15443,7 +15831,7 @@ export interface CsrdDisclosure {
 export interface CarbonEmission {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15559,7 +15947,7 @@ export interface CarbonEmission {
 export interface BiologicalAsset {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15629,7 +16017,7 @@ export interface BiologicalAsset {
 export interface FairValueMeasurement {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15714,7 +16102,7 @@ export interface FairValueMeasurement {
 export interface MineralResourceAsset {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15777,7 +16165,7 @@ export interface MineralResourceAsset {
 export interface InvestmentProperty {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15847,7 +16235,7 @@ export interface InvestmentProperty {
 export interface GovernmentGrant {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -15954,7 +16342,7 @@ export interface GovernmentGrant {
 export interface DeferredTaxItem {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16025,7 +16413,7 @@ export interface DeferredTaxItem {
 export interface ShareBasedPayment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16118,7 +16506,7 @@ export interface ShareBasedPayment {
 export interface BusinessCombination {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16230,7 +16618,7 @@ export interface BusinessCombination {
 export interface HeldForSaleClassification {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16294,7 +16682,7 @@ export interface HeldForSaleClassification {
 export interface EarningsPerShare {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16384,7 +16772,7 @@ export interface EarningsPerShare {
 export interface InsuranceContract {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16464,7 +16852,7 @@ export interface InsuranceContract {
 export interface RegulatoryDeferralAccount {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16511,7 +16899,7 @@ export interface RegulatoryDeferralAccount {
 export interface PostBalanceSheetEvent {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16573,7 +16961,7 @@ export interface PostBalanceSheetEvent {
 export interface TransactionFailure {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16660,7 +17048,7 @@ export interface TransactionFailure {
 export interface TransferPricingFile {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -16779,7 +17167,7 @@ export interface Standard {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   /**
@@ -16904,7 +17292,7 @@ export interface Memory {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   /**
@@ -17023,7 +17411,7 @@ export interface McpToolMetadatum {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   /**
@@ -17109,7 +17497,7 @@ export interface Translation {
   id: string;
   tenant?: (string | null) | Tenant;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid: string;
   /**
@@ -17192,7 +17580,7 @@ export interface Translation {
 export interface Commitment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -17303,7 +17691,7 @@ export interface Commitment {
 export interface ContractAmendment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -17399,7 +17787,7 @@ export interface ContractAmendment {
 export interface ContractPerformance {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -17498,7 +17886,7 @@ export interface ContractPerformance {
 export interface ContractSignature {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -17603,7 +17991,7 @@ export interface ContractSignature {
 export interface ContractTemplate {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   /**
@@ -17757,7 +18145,7 @@ export interface ContractTemplate {
 export interface AiSuggestion {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -17874,7 +18262,7 @@ export interface AiSuggestion {
 export interface UsageRecord {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -17942,7 +18330,7 @@ export interface UsageRecord {
 export interface Consolidation {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -18094,7 +18482,7 @@ export interface Consolidation {
 export interface TaxPeriod {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -18246,7 +18634,7 @@ export interface TaxPeriod {
 export interface AuditReport {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -18446,7 +18834,7 @@ export interface AuditReport {
 export interface TransferPricingAdjustment {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -18542,7 +18930,7 @@ export interface TransferPricingAdjustment {
 export interface PostCloseAnalyticsReport {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -18678,7 +19066,7 @@ export interface PostCloseAnalyticsReport {
 export interface AuditSubmission {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
@@ -18715,7 +19103,7 @@ export interface AuditSubmission {
 export interface FormSubmission {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   form: string | Form;
@@ -18736,7 +19124,7 @@ export interface FormSubmission {
 export interface Redirect {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   from: string;
@@ -18765,7 +19153,7 @@ export interface Redirect {
 export interface Search {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   title?: string | null;
@@ -18798,7 +19186,7 @@ export interface Search {
 export interface Export {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   name?: string | null;
@@ -18874,7 +19262,7 @@ export interface Export {
 export interface Import {
   id: string;
   /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   collectionSlug: string;
@@ -19033,6 +19421,96 @@ export interface PayloadMcpApiKey {
     update?: boolean | null;
     /**
      * Allow clients to delete memories.
+     */
+    delete?: boolean | null;
+  };
+  connections?: {
+    /**
+     * Allow clients to find connections.
+     */
+    find?: boolean | null;
+    /**
+     * Allow clients to create connections.
+     */
+    create?: boolean | null;
+    /**
+     * Allow clients to update connections.
+     */
+    update?: boolean | null;
+    /**
+     * Allow clients to delete connections.
+     */
+    delete?: boolean | null;
+  };
+  messages?: {
+    /**
+     * Allow clients to find messages.
+     */
+    find?: boolean | null;
+    /**
+     * Allow clients to create messages.
+     */
+    create?: boolean | null;
+    /**
+     * Allow clients to update messages.
+     */
+    update?: boolean | null;
+    /**
+     * Allow clients to delete messages.
+     */
+    delete?: boolean | null;
+  };
+  competencies?: {
+    /**
+     * Allow clients to find competencies.
+     */
+    find?: boolean | null;
+    /**
+     * Allow clients to create competencies.
+     */
+    create?: boolean | null;
+    /**
+     * Allow clients to update competencies.
+     */
+    update?: boolean | null;
+    /**
+     * Allow clients to delete competencies.
+     */
+    delete?: boolean | null;
+  };
+  jobPositions?: {
+    /**
+     * Allow clients to find job-positions.
+     */
+    find?: boolean | null;
+    /**
+     * Allow clients to create job-positions.
+     */
+    create?: boolean | null;
+    /**
+     * Allow clients to update job-positions.
+     */
+    update?: boolean | null;
+    /**
+     * Allow clients to delete job-positions.
+     */
+    delete?: boolean | null;
+  };
+  employees?: {
+    /**
+     * Allow clients to find employees.
+     */
+    find?: boolean | null;
+    /**
+     * Allow clients to create employees.
+     */
+    create?: boolean | null;
+    /**
+     * Allow clients to update employees.
+     */
+    update?: boolean | null;
+    /**
+     * Allow clients to delete employees.
      */
     delete?: boolean | null;
   };
@@ -19408,6 +19886,15 @@ export interface UsersSelect<T extends boolean = true> {
   uuid?: T;
   password?: T;
   name?: T;
+  competencies?:
+    | T
+    | {
+        competency?: T;
+        proficiency?: T;
+        assessedAt?: T;
+        evidence?: T;
+        id?: T;
+      };
   roles?: T;
   username?: T;
   tenants?:
@@ -20953,6 +21440,26 @@ export interface FiscalPeriodsSelect<T extends boolean = true> {
         lockedBy?: T;
         reopenedAt?: T;
         reopenedBy?: T;
+      };
+  configuration?:
+    | T
+    | {
+        fiscalYearStartMonth?: T;
+        fiscalYearStartDay?: T;
+        countryCode?: T;
+        currencyCode?: T;
+        localeCode?: T;
+        regulatoryFramework?: T;
+        allowsNonGregorian?: T;
+        leapYearAdjustment?: T;
+        customPeriodBoundaries?: T;
+      };
+  governance?:
+    | T
+    | {
+        entity?: T;
+        supercedes?: T;
+        effectiveDate?: T;
       };
   notes?:
     | T
@@ -22511,6 +23018,16 @@ export interface EmployeesSelect<T extends boolean = true> {
   employmentType?: T;
   department?: T;
   manager?: T;
+  user?: T;
+  competencies?:
+    | T
+    | {
+        competency?: T;
+        proficiency?: T;
+        assessedAt?: T;
+        evidence?: T;
+        id?: T;
+      };
   workCountry?: T;
   hireDate?: T;
   probationEndDate?: T;
@@ -22561,6 +23078,75 @@ export interface EmployeesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "competencies_select".
+ */
+export interface CompetenciesSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  name?: T;
+  description?: T;
+  subClassification?: T;
+  parent?: T;
+  reusabilityLevel?: T;
+  maxProficiency?: T;
+  escoUri?: T;
+  onetCode?: T;
+  sfiaCode?: T;
+  iscoOccupation?: T;
+  skillRoute?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "connections_select".
+ */
+export interface ConnectionsSelect<T extends boolean = true> {
+  uuid?: T;
+  from?: T;
+  to?: T;
+  context?: T;
+  reciprocal?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sectors_select".
+ */
+export interface SectorsSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  name?: T;
+  description?: T;
+  parent?: T;
+  institutionalSector?: T;
+  isicCode?: T;
+  naceCode?: T;
+  cofogDivision?: T;
+  icnpoGroup?: T;
+  sdgGoal?: T;
+  countryCode?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "job-positions_select".
  */
 export interface JobPositionsSelect<T extends boolean = true> {
@@ -22568,6 +23154,8 @@ export interface JobPositionsSelect<T extends boolean = true> {
   tenant?: T;
   positionCode?: T;
   positionTitle?: T;
+  escoOccupation?: T;
+  iscoUnitGroup?: T;
   department?: T;
   costCenter?: T;
   legalEntity?: T;
@@ -22577,6 +23165,14 @@ export interface JobPositionsSelect<T extends boolean = true> {
   fte?: T;
   jobDescription?: T;
   requirements?: T;
+  requiredCompetencies?:
+    | T
+    | {
+        competency?: T;
+        minProficiency?: T;
+        mandatory?: T;
+        id?: T;
+      };
   workLocation?: T;
   workArrangement?: T;
   currency?: T;
@@ -23058,6 +23654,7 @@ export interface WorkflowDefinitionsSelect<T extends boolean = true> {
         serviceHandler?: T;
         id?: T;
       };
+  stateMachine?: T;
   isActive?: T;
   effectiveFrom?: T;
   effectiveTo?: T;
@@ -24062,10 +24659,20 @@ export interface EvidenceAttestationsSelect<T extends boolean = true> {
 export interface EntityTypesSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  name?: T;
   code?: T;
+  label?: T;
+  category?: T;
   description?: T;
-  applicableFrameworks?: T;
+  characteristics?: T;
+  jurisdictionApplicability?:
+    | T
+    | {
+        jurisdiction?: T;
+        applicableInJurisdiction?: T;
+        id?: T;
+      };
+  defaultComplianceFrameworks?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24076,19 +24683,32 @@ export interface EntityTypesSelect<T extends boolean = true> {
 export interface TaxingJurisdictionsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  code?: T;
   name?: T;
-  jurisdictionType?: T;
-  isoCountryCode?: T;
-  isoRegionCode?: T;
-  currency?: T;
-  parent?: T;
+  type?: T;
+  parentJurisdiction?: T;
+  iso2Code?: T;
+  iso3Code?: T;
+  primaryCurrency?: T;
+  languages?:
+    | T
+    | {
+        languageCode?: T;
+        languageName?: T;
+        id?: T;
+      };
+  regulatoryCharacteristics?: T;
+  bankingRequirements?: T;
   filingDeadlines?:
     | T
     | {
-        description?: T;
-        dueDate?: T;
+        filingType?: T;
+        deadline?: T;
+        frequency?: T;
         id?: T;
       };
+  complianceFrameworks?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24099,12 +24719,16 @@ export interface TaxingJurisdictionsSelect<T extends boolean = true> {
 export interface EntityLegalStructuresSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  name?: T;
-  legalCode?: T;
-  entityType?: T;
   jurisdiction?: T;
+  entityType?: T;
+  localName?: T;
+  abbreviation?: T;
   description?: T;
+  regulatoryCharacteristics?: T;
+  governanceStructure?: T;
   taxTreatment?: T;
+  auditRequirement?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24115,13 +24739,14 @@ export interface EntityLegalStructuresSelect<T extends boolean = true> {
 export interface ComplianceFrameworksSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  code?: T;
   name?: T;
-  frameworkType?: T;
-  issuingBody?: T;
-  version?: T;
-  effectiveDate?: T;
+  category?: T;
   description?: T;
-  applicableJurisdictions?: T;
+  issuingBody?: T;
+  officialResourceUrl?: T;
+  effectiveDate?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24132,12 +24757,14 @@ export interface ComplianceFrameworksSelect<T extends boolean = true> {
 export interface ComplianceRequirementsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  requirementName?: T;
-  framework?: T;
-  requirementType?: T;
+  code?: T;
+  title?: T;
   description?: T;
-  testableStatement?: T;
-  applicableEntityTypes?: T;
+  framework?: T;
+  section?: T;
+  severity?: T;
+  resourceUrl?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24148,13 +24775,18 @@ export interface ComplianceRequirementsSelect<T extends boolean = true> {
 export interface InternalControlsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  controlName?: T;
+  title?: T;
+  description?: T;
   controlType?: T;
   controlCategory?: T;
   cosoComponent?: T;
-  description?: T;
-  owner?: T;
   frequency?: T;
+  owner?: T;
+  riskMitigated?: T;
+  isManualControl?: T;
+  lastReviewDate?: T;
+  nextReviewDate?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24192,13 +24824,20 @@ export interface ControlTestsSelect<T extends boolean = true> {
 export interface AuditSamplesSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
+  sampleId?: T;
   controlTest?: T;
-  itemIdentifier?: T;
+  samplingSequence?: T;
   sampleItemType?: T;
+  sampleItemId?: T;
+  sampleItemDate?: T;
+  sampleItemAmount?: T;
   testResult?: T;
+  exceptionDescription?: T;
   exceptionCategory?: T;
+  testedBy?: T;
+  testedDate?: T;
   notes?: T;
-  evidence?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24209,12 +24848,21 @@ export interface AuditSamplesSelect<T extends boolean = true> {
 export interface ComplianceGapsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  requirement?: T;
-  gapTitle?: T;
-  gapType?: T;
+  title?: T;
   description?: T;
+  requirement?: T;
+  gapType?: T;
+  severity?: T;
   status?: T;
-  remediationPlan?: T;
+  currentState?: T;
+  requiredState?: T;
+  rootCause?: T;
+  identifiedDate?: T;
+  identifiedBy?: T;
+  targetClosureDate?: T;
+  actualClosureDate?: T;
+  riskExposure?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24225,9 +24873,18 @@ export interface ComplianceGapsSelect<T extends boolean = true> {
 export interface AuditEvidenceSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  evidenceTitle?: T;
+  title?: T;
+  description?: T;
   documentType?: T;
   documentFile?: T;
+  sourceSystem?: T;
+  documentDate?: T;
+  uploadedDate?: T;
+  uploadedBy?: T;
+  relatedControl?: T;
+  relatedControlTest?: T;
+  relatedAuditSample?: T;
+  relatedFinding?: T;
   evidenceChain?:
     | T
     | {
@@ -24239,6 +24896,13 @@ export interface AuditEvidenceSelect<T extends boolean = true> {
       };
   confidentiality?: T;
   retentionPeriod?: T;
+  tags?:
+    | T
+    | {
+        tag?: T;
+        id?: T;
+      };
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24294,8 +24958,7 @@ export interface AuditTrailEventsSelect<T extends boolean = true> {
   approvalStatus?: T;
   changeReason?: T;
   systemDetails?: T;
-  updatedAt?: T;
-  createdAt?: T;
+  isDelete?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -24304,9 +24967,10 @@ export interface AuditTrailEventsSelect<T extends boolean = true> {
 export interface RemediationPlansSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  planTitle?: T;
-  finding?: T;
-  gap?: T;
+  title?: T;
+  description?: T;
+  relatedFinding?: T;
+  relatedGap?: T;
   remediationType?: T;
   priority?: T;
   owner?: T;
@@ -24315,7 +24979,7 @@ export interface RemediationPlansSelect<T extends boolean = true> {
     | {
         sequence?: T;
         description?: T;
-        stepOwner?: T;
+        owner?: T;
         targetDate?: T;
         status?: T;
         completedDate?: T;
@@ -24324,8 +24988,12 @@ export interface RemediationPlansSelect<T extends boolean = true> {
   targetDate?: T;
   completionDate?: T;
   status?: T;
+  requiredResources?: T;
   budget?: T;
   riskOfDelay?: T;
+  approvedBy?: T;
+  approvalDate?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27454,6 +28122,46 @@ export interface PayloadMcpApiKeysSelect<T extends boolean = true> {
         update?: T;
         delete?: T;
       };
+  connections?:
+    | T
+    | {
+        find?: T;
+        create?: T;
+        update?: T;
+        delete?: T;
+      };
+  messages?:
+    | T
+    | {
+        find?: T;
+        create?: T;
+        update?: T;
+        delete?: T;
+      };
+  competencies?:
+    | T
+    | {
+        find?: T;
+        create?: T;
+        update?: T;
+        delete?: T;
+      };
+  jobPositions?:
+    | T
+    | {
+        find?: T;
+        create?: T;
+        update?: T;
+        delete?: T;
+      };
+  employees?:
+    | T
+    | {
+        find?: T;
+        create?: T;
+        update?: T;
+        delete?: T;
+      };
   header?:
     | T
     | {
@@ -27806,6 +28514,9 @@ export interface TaskCreateCollectionExport {
       | 'sepa-mandates'
       | 'payroll-runs'
       | 'employees'
+      | 'competencies'
+      | 'connections'
+      | 'sectors'
       | 'job-positions'
       | 'time-entries'
       | 'leave-requests'

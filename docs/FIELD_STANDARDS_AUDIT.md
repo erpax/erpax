@@ -93,7 +93,7 @@
 |---|---|---|
 | `reconciliationId` | `text` | business identifier — sequence/UUID per tenant |
 | `kind` | `select` | finite-state-machine enum — domain-justified |
-| `glAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `glAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `bankAccount` | `relationship` | Payload relationship — referential integrity |
 | `asOfDate` | `date` | ISO 8601-1:2019 date-time + ISO 19011:2018 audit-trail |
 | `balancePerExternal` | `number` | _money composite (ISO 4217 + integer-cents) |
@@ -154,10 +154,10 @@
 | Field path | Type | Standard / classification |
 |---|---|---|
 | `country` | `text` | ISO 3166-1:2020 country-codes alpha-2 |
-| `glAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `glAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `purpose` | `select` | GDPR Art.5(1)(b) purpose-limitation + Art.6(1) lawful-basis |
 | `statements` | `join` | Payload relationship — referential integrity |
-| `accountName` | `text` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `accountName` | `text` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 
 ### `src/plugins/accounting/collections/BankStatements.ts` (slug `bank-statements`)
 
@@ -398,16 +398,16 @@
 
 | Field path | Type | Standard / classification |
 |---|---|---|
-| `accountNumber` | `text` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `accountName` | `text` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `accountType` | `select` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `accountNumber` | `text` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `accountName` | `text` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `accountType` | `select` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `role` | `select` | finite-state-machine enum — domain-justified |
-| `parentAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 chart-of-accounts |
-| `normalBalance` | `select` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `parentAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 chart-of-accounts |
+| `normalBalance` | `select` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `balance` | `number` | _money composite (ISO 4217 + integer-cents) |
 | `balanceInBaseCurrency` | `number` | relationship reference — domain (no canonical standard) |
 | `description` | `textarea` | free-text — domain-justified (Unicode UTF-8 per RFC 3629) |
-| `isTaxAccount` | `checkbox` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 chart-of-accounts |
+| `isTaxAccount` | `checkbox` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 chart-of-accounts |
 | `tags.tag` | `text` | finite-state-machine enum — domain-justified |
 
 ### `src/plugins/accounting/collections/GLPostings.ts` (slug `gl-postings`)
@@ -465,11 +465,11 @@
 | `rouAmortisation` | `number` | relationship reference — domain (no canonical standard) |
 | `closingLiabilityCarrying` | `number` | _money composite (ISO 4217 + integer-cents) |
 | `closingRouCarrying` | `number` | relationship reference — domain (no canonical standard) |
-| `interestExpenseAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `leaseLiabilityAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `rouAmortisationAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `accumulatedRouAmortisationAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 chart-of-accounts |
-| `cashAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 chart-of-accounts |
+| `interestExpenseAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `leaseLiabilityAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `rouAmortisationAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `accumulatedRouAmortisationAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 chart-of-accounts |
+| `cashAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 chart-of-accounts |
 | `costCenter` | `relationship` | Payload relationship — referential integrity |
 | `postedAt` | `date` | ISO 8601-1:2019 date-time + ISO 19011:2018 audit-trail |
 | `journalEntry` | `relationship` | Payload relationship — referential integrity |
@@ -505,10 +505,10 @@
 | `modifications.kind` | `select` | finite-state-machine enum — domain-justified |
 | `impairmentReserve` | `number` | _money composite (ISO 4217 + integer-cents) |
 | `terminationDate` | `date` | ISO 8601-1:2019 date-time + ISO 19011:2018 audit-trail |
-| `rouAssetAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `leaseLiabilityAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `rouAmortizationAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `interestExpenseAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `rouAssetAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `leaseLiabilityAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `rouAmortizationAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `interestExpenseAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 
 ### `src/plugins/accounting/collections/PaymentRuns.ts` (slug `payment-runs`)
 
@@ -600,7 +600,7 @@
 | Field path | Type | Standard / classification |
 |---|---|---|
 | `vendor` | `relationship` | Payload relationship — referential integrity |
-| `lines.glAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `lines.glAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `lines.quantityReceived` | `number` | integer counter — domain-justified (goods-receipt note quantity) |
 | `receipts` | `join` | Payload relationship — referential integrity |
 | `invoice` | `relationship` | Payload relationship — referential integrity |
@@ -756,10 +756,10 @@
 | `totals.totalAmount` | `number` | _money composite (ISO 4217 + integer-cents) |
 | `totals.totalPaid` | `number` | _money composite (ISO 4217 + integer-cents) |
 | `totals.totalDue` | `number` | _money composite (ISO 4217 + integer-cents) |
-| `ledger.debitAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `ledger.creditAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `ledger.taxDebitAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `ledger.taxCreditAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.debitAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.creditAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.taxDebitAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.taxCreditAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `dates.contractStart` | `date` | ISO 8601-1:2019 date-time / interval |
 | `dates.contractEnd` | `date` | ISO 8601-1:2019 date-time / interval |
 | `dates.periodStart` | `date` | ISO 8601-1:2019 date-time + ISO 19011:2018 audit-trail |
@@ -774,7 +774,7 @@
 | `details.variant` | `text` | domain-justified (no canonical standard) |
 | `details.variation` | `text` | relationship reference — domain (no canonical standard) |
 | `details.option` | `text` | domain-justified (no canonical standard) |
-| `details.period` | `text` | IFRS IAS-1 §36 fiscal-period + ISO 8601-1:2019 |
+| `details.period` | `text` | IFRS IAS-1 §36 fiscal-period (→ IFRS-18 from 2027) + ISO 8601-1:2019 |
 | `details.giftCard` | `checkbox` | domain-justified (no canonical standard) |
 | `metadata` | `json` | free-text — domain-justified (Unicode UTF-8 per RFC 3629) |
 
@@ -836,8 +836,8 @@
 | `recurring.periodStart` | `date` | ISO 8601-1:2019 date-time + ISO 19011:2018 audit-trail |
 | `recurring.periodEnd` | `date` | ISO 8601-1:2019 date-time + ISO 19011:2018 audit-trail |
 | `recurring.subscription` | `relationship` | Payload relationship — referential integrity |
-| `ledger.debitAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `ledger.creditAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.debitAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.creditAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `notes.note` | `textarea` | free-text — domain-justified (Unicode UTF-8 per RFC 3629) |
 | `notes.invoiceNote` | `textarea` | relationship reference — domain (no canonical standard) |
 | `notes.deliveryNote` | `textarea` | free-text — domain-justified (Unicode UTF-8 per RFC 3629) |
@@ -867,10 +867,10 @@
 | `pricing.priceIncludesTax` | `checkbox` | boolean flag — domain (no canonical standard) |
 | `taxation.taxable` | `checkbox` | boolean flag — domain (no canonical standard) |
 | `taxation.taxRate` | `number` | EN-16931:2017 §BT-119 invoiced-item-net-price-VAT-rate |
-| `taxation.taxDebitAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `taxation.taxCreditAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `ledger.debitAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
-| `ledger.creditAccount` | `relationship` | IFRS IAS-1 §54 elements + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `taxation.taxDebitAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `taxation.taxCreditAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.debitAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
+| `ledger.creditAccount` | `relationship` | IFRS IAS-1 §54 elements (→ IFRS-18 from 2027) + US-GAAP ASC-205 + OECD SAF-T 2.0 §2 |
 | `inventory.inventoryQuantity` | `number` | integer counter — domain-justified |
 | `inventory.inventoryManagement` | `select` | relationship reference — domain (no canonical standard) |
 | `inventory.inventoryPolicy` | `select` | relationship reference — domain (no canonical standard) |
@@ -883,7 +883,7 @@
 | `discounts.minProfitRate` | `number` | relationship reference — domain (no canonical standard) |
 | `discounts.maxProfitRate` | `number` | relationship reference — domain (no canonical standard) |
 | `fulfillment.fulfillmentService` | `text` | domain-justified (no canonical standard) |
-| `fulfillment.period` | `select` | IFRS IAS-1 §36 fiscal-period + ISO 8601-1:2019 |
+| `fulfillment.period` | `select` | IFRS IAS-1 §36 fiscal-period (→ IFRS-18 from 2027) + ISO 8601-1:2019 |
 | `visibility.visibility` | `select` | finite-state-machine enum — domain-justified |
 | `metadata` | `json` | free-text — domain-justified (Unicode UTF-8 per RFC 3629) |
 
@@ -1030,7 +1030,7 @@
 | `config.localization.fallbackLocale` | `text` | BCP-47 language-tag (RFC 5646) |
 | `config.currency.reportingCurrency` | `text` | ISO 4217:2015 currency-codes |
 | `config.accounting.standard` | `select` | IFRS / US-GAAP / FRS / JGAAP / ASBE / INDAS — per-tenant choice |
-| `config.accounting.fiscalYearStartMonth` | `number` | IFRS IAS-1 §36 fiscal-period + ISO 8601-1:2019 |
+| `config.accounting.fiscalYearStartMonth` | `number` | IFRS IAS-1 §36 fiscal-period (→ IFRS-18 from 2027) + ISO 8601-1:2019 |
 | `allowPublicRead` | `checkbox` | boolean flag — domain (no canonical standard) |
 | `publicSiteUrl` | `text` | RFC 3986 URI |
 | `stripePublishableKey` | `text` | PCI-DSS 4.0 + provider tokenization (Stripe/PayPal); we never touch raw PAN |

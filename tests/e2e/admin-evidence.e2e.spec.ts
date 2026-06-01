@@ -41,7 +41,6 @@ import configPromise from '@payload-config'
 import { login } from '../helpers/login'
 import { testUser } from '../helpers/seedUser'
 import { captureAdminPage } from '../helpers/evidence'
-import { Level1SeedSuite } from '@/plugins/accounting/seeds/level-1'
 
 // ─── Resolve the admin-route surface from Payload itself ─────────────────
 //
@@ -87,12 +86,11 @@ test.describe('Admin walk-through evidence', () => {
   // the empty state.
   test.beforeAll(async () => {
     try {
-      const payload = await getPayload({ config: configPromise })
-      const suite = new Level1SeedSuite(payload)
-      await suite.seed()
+      // Level1SeedSuite was removed with the accounting plugin; boot Payload to
+      // verify config, then capture routes against the (possibly empty) tenant.
+      await getPayload({ config: configPromise })
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.warn(
+            console.warn(
         '[admin-evidence] Level1SeedSuite seed failed; capturing empty pages.',
         error,
       )

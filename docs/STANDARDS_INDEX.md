@@ -10,6 +10,7 @@
 ## @standard
 
 ```text
+Binary file src/services/anti-corruption/cross-entity.ts matches
 Binary file src/services/voting/index.ts matches
 docs/FLATTEN_TO_CANONICAL_APP.md:212: * @standard ISO-20022 aging classification
 docs/PLUGIN_ARCHITECTURE.md:163: * @standard EN-16931:2017 invoice
@@ -1292,10 +1293,11 @@ src/services/accounting/utilities/period-lock.ts:15: * @standard ISO-8601-1:2019
 src/services/agent-sync/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/services/agent-sync/index.ts:16: * @standard RFC-6455 websocket
 src/services/agent-sync/index.ts:17: * @standard RFC-4122 §4.3 content-uuid event-identity (idempotency key)
+src/services/agent-sync/index.ts:52: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/services/agent-sync/society.ts:21: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/services/agent-sync/society.ts:22: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/services/agent-sync/society.ts:23: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
-src/services/agent/index.ts:20: * @standard RFC 9562 §5.5 name-based UUIDv5 (content-addressed agent identity)
+src/services/agent/index.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
 src/services/agents/blocks.ts:38: * @standard W3C Web Components (composition pattern)
 src/services/agents/blocks.ts:39: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
 src/services/agents/bootstrap.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
@@ -1416,8 +1418,6 @@ src/services/ai/tax-classification.ts:11: * @standard ISO/IEC 23894:2023 ai-risk
 src/services/ai/tax-classification.ts:9: * @standard EN-16931:2017 §BT-151 invoiced-item-vat-category-code
 src/services/anchoring/index.ts:10: * @standard W3C Verifiable Credentials Data Model 2.0
 src/services/anchoring/index.ts:11: * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
-src/services/anti-corruption/cross-entity.ts:16: * @standard ACFE Occupational-Fraud-and-Abuse-Classification corruption-and-billing-schemes
-src/services/anti-corruption/cross-entity.ts:19: * @standard ISO 37001:2016 anti-bribery conflict-of-interest
 src/services/architecture-invariants/by-agent.ts:43: * @standard ISO/IEC 25010:2023 §5.2 performance — selective
 src/services/architecture-invariants/by-agent.ts:45: * @standard ISO 19011:2018 §6.4.6 (per-agent law audit-trailed)
 src/services/architecture-invariants/checks.ts:1073: * @standard ISO 19011:2018 §6.4 audit-evidence
@@ -3072,6 +3072,7 @@ tests/helpers/seedUser.ts:5: * @rfc 5322 internet-message-format email-fixture
 ## @compliance
 
 ```text
+Binary file src/services/anti-corruption/cross-entity.ts matches
 docs/PLUGIN_ARCHITECTURE.md:258: * @compliance VAT VAT-directive-2006-112-EC
 docs/STANDARDS.md:54: * @compliance GDPR Art.6(1)(b) lawful-basis-contract
 docs/TYPE_HIERARCHY_EXAMPLES.md:228: * @compliance VAT Directive 2006/112/EC
@@ -3567,8 +3568,6 @@ src/services/ai/sanctions-screening.ts:19: * @compliance GDPR Art.22 automated-i
 src/services/ai/sanctions-screening.ts:20: * @compliance GDPR Art.22(3) right-to-human-intervention
 src/services/ai/semantic-search.ts:13: * @compliance EU AI Act 2024 minimal-risk
 src/services/ai/tax-classification.ts:12: * @compliance EU AI Act 2024 limited-risk
-src/services/anti-corruption/cross-entity.ts:17: * @compliance FATF Recommendation 24 beneficial-ownership + multiple-invoicing typology
-src/services/anti-corruption/cross-entity.ts:18: * @compliance U4 Anti-Corruption transactional-to-entity linkage
 src/services/anti-corruption/index.ts:23: * @compliance SOX §404 segregation-of-duties internal-controls
 src/services/architecture-invariants/checks.ts:1430: * @compliance SOX §404 (Byzantine tamper detection)
 src/services/architecture-invariants/checks.ts:1486: * @compliance SOX §404 referential integrity

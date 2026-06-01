@@ -1,0 +1,23 @@
+---
+name: dunning-cycles
+description: The dunning-cycles collection — Dunning Cycles — collection-process record per overdue invoice
+---
+
+# dunning-cycles
+
+Dunning Cycles — collection-process record per overdue invoice.
+
+This is the single-folder collection node: `index.ts` (schema + standards banners),
+co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
+One folder per collection ⇒ no scatter ⇒ no drift.
+
+## Standards
+- ISO-8601-1:2019 date-time stage-due-date
+- ISO-4217:2015 currency-codes
+- IFRS IFRS-9 §5.5 expected-credit-loss simplified-approach
+- US-GAAP ASC-326-20 cecl-credit-losses
+- US-GAAP ASC-310 receivables
+- ISO-19011:2018 audit-trail collections-evidence
+- SOX §404 internal-controls bad-debt-evidence
+- GDPR Art.6(1)(f) lawful-basis-legitimate-interest collections
+- ISO-27002 §5.4 segregation-of-duties write-off-approval

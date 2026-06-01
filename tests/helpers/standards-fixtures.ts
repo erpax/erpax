@@ -94,6 +94,7 @@ export const MINIMAL_CAMT053_FIXTURE: Camt053Statement = {
 export const MINIMAL_SAFT_FIXTURE: SafTAuditFile = {
   header: {
     auditFileVersion: '2.0',
+    taxAccountingBasis: 'F',
     companyID: 'EU123',
     taxRegistrationNumber: 'EU123',
     companyName: 'Acme',
@@ -108,6 +109,10 @@ export const MINIMAL_SAFT_FIXTURE: SafTAuditFile = {
   },
   masterFiles: {
     generalLedgerAccounts: [],
+    customers: [],
+    suppliers: [],
+    products: [],
+    taxTable: [],
   },
   generalLedgerEntries: {
     numberOfEntries: 0,

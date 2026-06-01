@@ -47,7 +47,7 @@ These are required by standards we already cite. Building ERPax without them vio
 | # | Collection | Standard mandate | Today's gap |
 |---|---|---|---|
 | 1 | `projects` | IFRS-15 §35 + ASC 606-10-25-27 over-time-recognition | We have `contracts` + `performance-obligations`, but no project entity to anchor cost-to-cost / output-method WIP measurement |
-| 2 | `recurring-journals` | IAS-1 §27 accrual-basis (rent / depreciation / amortisation that recur) | Manual period-end posting only; no automation collection |
+| 2 | `recurring-journals` | IAS-1 §27 accrual-basis (→ IAS-8 "Basis of Preparation" from 2027) (rent / depreciation / amortisation that recur) | Manual period-end posting only; no automation collection |
 | 3 | `provisions` | IAS-37 §14 + ASC 450 mandatory disclosure | `audit-findings` covers control gaps; no balance-sheet provision entity |
 | 4 | `commitments-and-contingencies` | IAS-37 §27-92 + IFRS-15 §B50 | Off-balance-sheet items have no home; required for any audited financial statement |
 | 5 | `government-grants` | IAS-20 + ASC 958-605 | Required for any tenant receiving EU funds / national incentives |
@@ -79,7 +79,7 @@ Enterprise ERP customers expect these. They map cleanly to existing features in 
 |---|---|---|
 | `project-tasks` | Decomposition of `projects` into trackable units | IFRS-15 §35 |
 | `project-milestones` | Milestone-billing trigger points | IFRS-15 §126 |
-| `project-budgets` | Budget vs actuals per project | IAS-1 §125 estimation uncertainty |
+| `project-budgets` | Budget vs actuals per project | IAS-1 §125 estimation uncertainty (→ IFRS-18 from 2027) |
 | `wip-snapshots` | Periodic WIP valuation per project | IFRS-15 §B14-B19 cost-to-cost |
 
 ### Procurement Extensions (3)

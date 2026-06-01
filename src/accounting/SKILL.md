@@ -1,0 +1,64 @@
+---
+name: accounting
+description: Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything "accountable" polymorphically. The self-sufficient `@erpax/accounting` archetype.
+sessions:
+  - 776a49cb-8dfb-45ab-88ff-956e3b613adf
+---
+
+# accounting — the universal ledger plugin (anything is accountable)
+
+The archetype self-sufficient `@erpax/accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[fields]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
+
+## Universal collections (generalizing canonical erpax)
+| Collection | erpax/Rails origin | generalization |
+|---|---|---|
+| `gl-accounts` | Account (tree) | self-referential `parent`(rel-self) chart of accounts; `type` select (asset/liability/equity/income/expense); a tenant's opening chart is seeded per (country × industry) via [[seed]] |
+| `journal-entries` | AccountingEntry | a balanced set of lines; `date`, `period`(rel), `postedAt`, `status` select — the ledger face of a [[transaction]] (the commercial document is its dual) |
+| `journal-lines` | accounting_entry lines | `{ account(rel), debit, credit, currency, accountable(rel:[...]) }[]` — `balance = credit − debit` |
+| `fiscal-periods` | locked-period | `start/end`, `locked` checkbox; write-guard hook rejects posting into a locked period |
+| `invoices` | Invoice (tree) | self-referential: `parent`/`children`, `creditNotes`/`debitNotes`/`protocols` (all rel-self via `kind` select), `lines[]`, `payments`(rel) |
+| `payments` | Payment | `amount + currency`, `method`, links invoice(s); feeds reconciliation |
+| `bank-statement-lines` | BankStatementLine | imported lines matched ↔ `payments`/`journal-lines` (reconciliation) |
+
+## The harmony invariant — double-entry balance
+Every `journal-entry` MUST balance: `Σ debit = Σ credit` (equivalently `Σ (credit − debit) = 0`). This is the accounting equation as a **hook-enforced invariant** — the same "any disharmony shows in the schema" principle the [[sequence]] embodies, made concrete:
+```ts
+// journal-entries beforeChange (see [[hooks]]): refuse to write an unbalanced entry
+const net = lines.reduce((s, l) => s + (l.credit ?? 0) - (l.debit ?? 0), 0)
+if (net !== 0) throw new ValidationError('Journal entry not balanced')
+```
+Balanced/unbalanced are query scopes (see [[queries]]); `posted` vs `draft` is a `status` select. Posting into a `locked` fiscal period is rejected by the same write-guard.
+
+## Standards (the answer-path: applying this skill implements the standard)
+A skill complies not by quoting a clause but by **deriving its output from the rule** — revenue, presentation, and consolidation fall out of the model, never from baked literals or ad-hoc layout (see [[standard]]). Current form of each standard this skill holds:
+
+| Standard (canonical label) | Version / edition | Current form — what applying the skill must produce |
+|---|---|---|
+| **IFRS / IAS** (IAS-1 → IFRS-18 from 2027, IAS-34, IFRS-15) | 2026 Issued edition (IFRS Foundation annual bound volume; no per-standard numbers) | Financial statements derived from the rules: structure/min-line-items/accrual/period-labelling/going-concern per IAS-1 (§54 elements, §27, §36, §125) **only through FY2026**; interim reports per IAS-34; revenue via IFRS-15's five-step model (§9 contract, point-in-time/over-time §31/§35, contract costs §91-94, cost-to-cost/output §B14-B19). |
+| **IFRS 18** (supersedes IAS-1) | Issued Apr 2024; effective annual periods on/after **1 Jan 2027**, retrospective | From 2027 presentation lives in IFRS-18 (former IAS-1 §54/§10(b)/§27/§125 re-point to IFRS-18, with parts moved to IFRS-7 and to IAS-8 "Basis of Preparation"); IAS-34 gains the IFRS-18 Management-defined Performance Measures (MPM) interim disclosure. Statement structure derived from IFRS-18, not from IAS-1 literals. |
+| **US-GAAP / FASB ASC** (ASC 606, ASC 810) | Living codification — **no edition year**; ASU-driven effective-date snapshots (latest 2025-xx / early-2026 ASUs, e.g. ASU 2025-03 on Topics 805/810) | Revenue recognised by ASC 606's five-step model as control of each obligation transfers (pinpoints: ASC 606-10-25 transfer of control, -25-13 modifications, -25-30 delivery indicators a-e); controlled entities (incl. VIEs where the tenant is primary beneficiary) consolidated under ASC 810-10, with intercompany balances/transactions eliminated to net zero (ASC 810-10-45). |
+
+Banners and citations must follow this form: label IFRS as **"IFRS / IAS — 2026 Issued"** (not an undated "IFRS / IAS"); label US-GAAP as **"FASB ASC (ASC 606, ASC 810)"** with **no edition year**; cite granular pinpoints (ASC 606-10-25-30, ASC 810-10-45) rather than bare topics. IFRS-15 cites are current — only monitor the open IASB Post-Implementation Review for clarifying amendments.
+
+## Polymorphic accountability — "anything is accountable"
+The reason accounting is self-sufficient: a `journal-line` (or audit event) points OUT at any entity via `accountable: { type:'relationship', relationTo:[...manyslugs], }`. No other domain holds a field pointing INTO accounting (no `Customer.arAccount → gl-accounts`). The mapping (which customer ↔ which AR account) lives inside accounting. Polymorphic-referenceable ⇒ extractable (see [[plugins]]).
+
+## Concerns → reusable field-objects (the composition law)
+| Rails concern | Payload reusable unit |
+|---|---|
+| `AccountableConcern` (polymorphic) | `accountableField` → `relationship` `relationTo:[...]` |
+| `CurrencyConcern` | `currencyField` (amount + ISO currency) |
+| `NumberConcern` (document numbering) | `numberField` + `beforeChange` sequence hook |
+| `HostConcern` (multi-tenant) | the multi-tenant plugin's injected `tenant` (NOT a hand-rolled field) — see [[plugins]] |
+| `AttachmentConcern` | `upload` relationship (see [[upload]]) |
+| locked-period guard | `fiscal-periods` + write-guard [[hooks]] |
+
+## Concern-heavy documents → nested field-groups (the fractal port)
+A document like `invoices` composes ~40 Rails concerns; in Payload they fold into **nested field-groups** (`typeStatus` · `parties` · `dates` · `amounts` · `billingTax` ([[tax]]) · `recurring` · `ledger` · `relationships` · `tags`). The laws: access by the **group path**, never flat (`amounts.totalDue` — EN-16931 names, *not* `amountDue`); **external-system ids (Stripe `payment_intent`, …) are NOT columns** — they link via [[tags]] (context-keyed, e.g. `context:'stripe:invoice'`), federated + dedup'd ("anything is taggable"); deep nesting is itself a future [[tags]] collapse — `(context, tag)` over the groups. The *exact* paths are matter — read them from `payload-types.ts` (the akashic record), don't memorize them here.
+
+## Common mistakes
+- A non-accounting collection holding a field INTO accounting (`Customer.arAccount`) — invert it: accounting maps the entity polymorphically.
+- Accessing a concern-composed document by flat paths (`invoice.amountDue`, `invoice.subscription`) — use the nested group path (`invoice.amounts.totalDue`, `invoice.recurring.subscription`); external ids are tags, not fields.
+- Writing an unbalanced entry, or editing balance directly — enforce `Σdebit=Σcredit` in `beforeChange`; never edit migrations/schema by hand.
+- Hand-rolling a `tenant` field instead of using the multi-tenant plugin (duplicate-field clash).
+- Integer-cents-only without `currency` — carry currency everywhere (multi-currency ledgers).

@@ -1,0 +1,20 @@
+---
+name: sales
+description: The sales collection — СУПТО Sales (продажби) — the Наредба Н-18 sale register
+---
+
+# sales
+
+СУПТО Sales (продажби) — the Наредба Н-18 sale register.
+
+This is the single-folder collection node: `index.ts` (schema + standards banners),
+co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
+One folder per collection ⇒ no scatter ⇒ no drift.
+
+## Standards
+- BG Наредба-Н-18 §СУПТО sale-register · УНП · no-delete · сторно
+- IFRS IFRS-15 revenue-from-contracts-with-customers
+- US-GAAP ASC-606 revenue-from-contracts-with-customers
+- ISO-19011:2018 audit-trail
+- SOX §404 internal-controls
+- ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -1,240 +1,224 @@
+import type { CollectionConfig } from 'payload'
+import { tenantMasterDataAccess, getUser } from '../../access/auth'
+import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
+import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
+import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
+
 /**
- * FiscalPeriods Collection
+ * Fiscal Periods — accounting calendar with period locking.
  *
- * Defines the fiscal year structure and period boundaries for each entity.
- * Supports: monthly, quarterly, weekly, ISO-week, 4/4/5 retail, custom boundaries.
- * Each fiscal configuration is immutable once created; amendments create chain links.
+ * Single-folder collection node (the wired open→closed→locked lifecycle +
+ * SoD enforcement, harmonised with the fiscal-calendar configuration the
+ * SAF-T / XBRL-GL period coding needs). One folder per collection ⇒ no
+ * scatter ⇒ no drift.
  *
- * Purpose: Single source of truth for fiscal year start, period type, and regulatory context.
- * Integrated with: FiscalCalendars (pre-computed lookup), FiscalPeriodResolver (runtime resolution).
+ * Lifecycle: open → closed → locked (admin-only to lock or unlock); the
+ * creator may neither close nor lock (four-eyes). Every status transition
+ * emits a structured audit event.
  *
- * @standard IAS-34:2023 Interim Financial Reporting (period structure, quarterly alignment)
- * @standard ISO-8601:2019 (week numbering, leap year handling, date representation)
- * @standard ISO-4217:2023 (currency code per fiscal configuration)
- * @standard SAF-T:3.0.2 (regulatory period coding, audit file structure)
- * @standard XBRL-GL (fiscal context for general ledger reporting)
- * @standard eIDAS:2014/910/EU (qualified electronic signature on amendments)
- * @standard GDPR:2016/679 (audit trail, access control, encryption)
- * @standard SOX:2002 (access control evidence via chain)
- * @invariant Fiscal year start month ∈ [1..12], day ∈ [1..31]
- * @invariant periodType determines boundary calculation (monthly/quarterly/weekly/iso-week/custom)
- * @invariant customPeriodBoundaries must be contiguous, non-overlapping, sorted by startDate
- * @invariant effectiveDate marks configuration activation; supercedes links prior configs
- * @invariant chainLeafUuid implements Law 60 (immutable audit chain)
- * @invariant governanceScope enables Law 63 (self-governance per entity)
- * @invariant regulatoryFramework enum constrains supported reporting regimes
+ * @standard ISO-8601-1:2019 date-time start-date end-date closed-at locked-at reopened-at week-numbering
+ * @standard IAS-34:2023 interim-financial-reporting period-structure quarterly-alignment
+ * @standard ISO-4217:2015 currency-code per-fiscal-configuration
+ * @standard SAF-T 3.0.2 regulatory-period-coding audit-file-structure
+ * @standard XBRL-GL fiscal-context general-ledger-reporting
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting US-GAAP ASC-210 balance-sheet
+ * @compliance SOX §404 period-close-integrity access-control-evidence
+ * @compliance GDPR Art 5(1)(f) audit-trail-integrity
+ * @compliance eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
+ * @security ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
+ * @audit ISO-19011:2018 audit-trail status-transition
+ * @see docs/STANDARDS.md §4.2
+ *
+ * Locking semantics:
+ *   When status === 'locked', no GL-posting collection (Invoices, Payments,
+ *   JournalEntries, GLPostings, BankStatements, PeriodEndAdjustments, …) may
+ *   write a record whose posting date falls inside [startDate, endDate].
+ *   Enforced by `validateNotLocked` from
+ *   `@/services/accounting/utilities/period-lock`. Only role 'admin' may
+ *   transition status to / from 'locked'.
  */
-
-import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../access/auth'
-import { updateFiscalCalendarOnPeriodChange } from '../../hooks/updateFiscalCalendarOnPeriodChange'
-
 export const FiscalPeriods: CollectionConfig = {
   slug: 'fiscal-periods',
   admin: {
-    useAsTitle: 'displayLabel',
+    useAsTitle: 'label',
+    defaultColumns: ['label', 'identity.fiscalYear', 'identity.periodNumber', 'dates.startDate', 'dates.endDate', 'lifecycle.status', 'lifecycle.closedAt'],
+    group: 'Ledger',
   },
-  access: accountingCollectionAccess(),
+  access: tenantMasterDataAccess(),
   hooks: {
-    beforeChange: [updateFiscalCalendarOnPeriodChange],
+    beforeValidate: [
+      autoPopulateTenant,
+      async ({ data }) => {
+        if (data && !data.label && data.fiscalYear && data.periodNumber !== undefined) {
+          const padded = String(data.periodNumber).padStart(2, '0')
+          data.label = `FY${data.fiscalYear}-P${padded}`
+        }
+        return data
+      },
+    ],
+    beforeChange: [
+      // ISO-27002 §5.4 / SOX §404 four-eyes: the user who created the
+      // period cannot also be the user who closes it (`closedBy`) or
+      // locks it (`lockedBy`). Two enforcers, one per approval field.
+      enforceSegregationOfDuties('closedBy', 'createdBy'),
+      enforceSegregationOfDuties('lockedBy', 'createdBy'),
+      async ({ data }) => {
+        if (data.startDate && data.endDate) {
+          const from = new Date(data.startDate).getTime()
+          const to = new Date(data.endDate).getTime()
+          if (to < from) {
+            throw new Error('endDate must be on or after startDate')
+          }
+        }
+        return data
+      },
+      async ({ data, originalDoc, req }) => {
+        if (!originalDoc) return data
+        const prev = originalDoc.status as string | undefined
+        const next = data.status as string | undefined
+
+        const movingIntoLocked = next === 'locked' && prev !== 'locked'
+        const movingOutOfLocked = prev === 'locked' && next !== 'locked'
+
+        if (movingIntoLocked || movingOutOfLocked) {
+          const isAdmin = getUser(req)?.roles?.includes('admin')
+          if (!isAdmin) {
+            throw new Error('Only admins may lock or unlock a fiscal period')
+          }
+        }
+
+        if (next === 'closed' && prev !== 'closed') {
+          data.closedAt = data.closedAt ?? new Date().toISOString()
+          data.closedBy = data.closedBy ?? req.user?.id
+        }
+        if (movingIntoLocked) {
+          data.lockedAt = data.lockedAt ?? new Date().toISOString()
+          data.lockedBy = data.lockedBy ?? req.user?.id
+        }
+        if (movingOutOfLocked) {
+          data.reopenedAt = new Date().toISOString()
+          data.reopenedBy = req.user?.id
+        }
+        return data
+      },
+    ],
+    // SOX §404 period-close-integrity: every fiscal-period status change
+    // (open → closed → locked → reopened) emits a structured audit event.
+    afterChange: [auditTrailAfterChange('fiscal-periods')],
   },
   fields: [
+    // Identity — `label` kept at top level so `useAsTitle` can resolve it
+    // (Payload's useAsTitle does not traverse into groups).
+    { name: 'label', type: 'text', unique: true, index: true,
+      admin: { description: 'Auto-derived label (e.g., FY2026-P05). Editable.' } },
     {
-      name: 'entity',
-      type: 'relationship',
-      relationTo: 'legal-entities',
-      required: true,
-      admin: { description: 'Legal entity this fiscal configuration applies to' },
-    },
-    {
-      name: 'displayLabel',
-      type: 'text',
-      required: true,
-      admin: {
-        description:
-          'Display label for admin (e.g., "FY2026 | Calendar Year | USD" or "FY2026 Q1-Q4 | Retail 4/4/5")',
-      },
-    },
-    {
-      name: 'fiscalYearStartMonth',
-      type: 'number',
-      required: true,
-      admin: {
-        description: 'Fiscal year start month (1=January, 12=December). Determines period boundaries.',
-      },
-    },
-    {
-      name: 'fiscalYearStartDay',
-      type: 'number',
-      required: true,
-      defaultValue: 1,
-      admin: {
-        description:
-          'Fiscal year start day of month (1..31). Example: July 1 for US Federal (month=7, day=1).',
-      },
-    },
-    {
-      name: 'periodType',
-      type: 'select',
-      options: [
-        { label: 'Monthly (12 periods/year)', value: 'monthly' },
-        { label: 'Quarterly (4 periods/year)', value: 'quarterly' },
-        { label: 'Weekly (52/53 periods/year)', value: 'weekly' },
-        { label: 'ISO Week (52/53 periods/year, week 1 = first week with Thursday)', value: 'iso-week' },
-        { label: 'Retail 4/4/5 (4 weeks, 4 weeks, 5 weeks)', value: 'retail-445' },
-        { label: 'Custom (via customPeriodBoundaries)', value: 'custom' },
+      type: 'group',
+      name: 'identity',
+      label: 'Identity',
+      fields: [
+        { name: 'fiscalYear', type: 'number', required: true, index: true, min: 1900, max: 2999,
+          admin: { description: 'Fiscal year (e.g., 2026)' } },
+        { name: 'periodNumber', type: 'number', required: true, index: true, min: 1, max: 53,
+          admin: { description: 'Period within the fiscal year (1-12 monthly, up to 53 weekly)' } },
+        { name: 'periodType', type: 'select', required: true, defaultValue: 'monthly',
+          options: [
+            { label: 'Monthly', value: 'monthly' },
+            { label: '4-4-5 Weekly', value: 'weekly_445' },
+            { label: 'Quarterly', value: 'quarterly' },
+            { label: 'Annual', value: 'annual' },
+            { label: 'Custom', value: 'custom' },
+          ],
+          admin: { description: 'Calendar shape' } },
       ],
-      required: true,
-      admin: { description: 'Fiscal period structure (determines how dates map to periods)' },
     },
     {
-      name: 'customPeriodBoundaries',
-      type: 'json',
-      admin: {
-        description:
-          'Only if periodType=custom. Array of {periodNumber, periodLabel, startDate, endDate}. Must be contiguous, sorted, non-overlapping.',
-        condition: (data) => data?.periodType === 'custom',
-      },
-    },
-    {
-      name: 'currencyCode',
-      type: 'text',
-      required: true,
-      admin: {
-        description: 'Currency code (ISO 4217, e.g., USD, EUR, GBP). Default currency for this fiscal config.',
-      },
-    },
-    {
-      name: 'localeCode',
-      type: 'text',
-      required: true,
-      defaultValue: 'und',
-      admin: {
-        description:
-          'Locale for date formatting and period names (BCP 47, e.g., en-US, de-DE, und=undefined). Affects display only.',
-      },
-    },
-    {
-      name: 'countryCode',
-      type: 'text',
-      required: true,
-      admin: {
-        description: 'Country code (ISO 3166-1 alpha-2, e.g., US, GB, DE). Used for regulatory framework selection.',
-      },
-    },
-    {
-      name: 'status',
-      type: 'select',
-      options: [
-        { label: 'Draft (not yet active)', value: 'draft' },
-        { label: 'Active (current fiscal configuration)', value: 'active' },
-        { label: 'Archived (superseded by newer config)', value: 'archived' },
+      type: 'group',
+      name: 'dates',
+      label: 'Dates',
+      fields: [
+        { name: 'startDate', type: 'date', required: true, index: true,
+          admin: { description: 'ISO 8601 first day of period (inclusive)' } },
+        { name: 'endDate', type: 'date', required: true, index: true,
+          admin: { description: 'ISO 8601 last day of period (inclusive)' } },
       ],
-      required: true,
-      defaultValue: 'draft',
-      admin: { description: 'Configuration lifecycle status' },
     },
     {
-      name: 'effectiveDate',
-      type: 'date',
-      required: true,
-      admin: {
-        description:
-          'Date this configuration becomes active. All postings ≥ effectiveDate use this config until superceded.',
-      },
-    },
-    {
-      name: 'supercedes',
-      type: 'relationship',
-      relationTo: 'fiscal-periods',
-      admin: {
-        description:
-          'If not null, this config replaces a prior config (creates amendment chain link for audit trail). Points to prior FiscalPeriods record.',
-      },
-    },
-    {
-      name: 'regulatoryFramework',
-      type: 'select',
-      options: [
-        { label: 'IAS/IFRS (International Accounting Standards)', value: 'ias-ifrs' },
-        { label: 'US GAAP (Generally Accepted Accounting Principles)', value: 'us-gaap' },
-        { label: 'Local Statutory (country-specific)', value: 'local-statutory' },
-        { label: 'SAF-T (Standard Audit File for Tax)', value: 'saf-t' },
-        { label: 'XBRL (eXtensible Business Reporting Language)', value: 'xbrl' },
+      type: 'group',
+      name: 'lifecycle',
+      label: 'Lifecycle',
+      fields: [
+        { name: 'status', type: 'select', required: true, defaultValue: 'open',
+          options: [
+            { label: 'Open', value: 'open' },
+            { label: 'Closed', value: 'closed' },
+            { label: 'Locked', value: 'locked' },
+          ], index: true,
+          admin: { description: 'open = postable. closed = soft close (adjustments still allowed). locked = no GL writes for any date in this period.' } },
+        { name: 'closedAt', type: 'date',
+          admin: { description: 'When period was soft-closed', readOnly: true } },
+        { name: 'closedBy', type: 'relationship', relationTo: 'users',
+          admin: { description: 'Actor who closed', readOnly: true } },
+        { name: 'lockedAt', type: 'date',
+          admin: { description: 'When period was hard-locked', readOnly: true } },
+        { name: 'lockedBy', type: 'relationship', relationTo: 'users',
+          admin: { description: 'Admin who locked', readOnly: true } },
+        { name: 'reopenedAt', type: 'date',
+          admin: { description: 'Last unlock timestamp', readOnly: true } },
+        { name: 'reopenedBy', type: 'relationship', relationTo: 'users',
+          admin: { description: 'Admin who reopened', readOnly: true } },
       ],
-      required: true,
-      defaultValue: 'ias-ifrs',
-      admin: { description: 'Regulatory reporting framework (affects period coding, segment alignment)' },
     },
     {
-      name: 'allowsNonGregorian',
-      type: 'checkbox',
-      defaultValue: false,
-      admin: {
-        description:
-          'If true, fiscal periods may not align with Gregorian calendar (e.g., Islamic, Hebrew calendar). Requires custom computation.',
-      },
-    },
-    {
-      name: 'leapYearAdjustment',
-      type: 'select',
-      options: [
-        { label: 'None (standard Gregorian leap year)', value: 'none' },
-        { label: 'Shifted (add Feb 29 to final period)', value: 'shifted' },
-        { label: 'Custom (via amendment)', value: 'custom' },
+      // Fiscal-calendar configuration (harmonised from the divergent copy) —
+      // what SAF-T period coding + XBRL-GL fiscal context + non-Gregorian
+      // calendars need.
+      type: 'group',
+      name: 'configuration',
+      label: 'Configuration',
+      fields: [
+        { name: 'fiscalYearStartMonth', type: 'number', min: 1, max: 12,
+          admin: { description: 'Month the fiscal year starts (1-12).' } },
+        { name: 'fiscalYearStartDay', type: 'number', min: 1, max: 31,
+          admin: { description: 'Day-of-month the fiscal year starts.' } },
+        { name: 'countryCode', type: 'text', index: true,
+          admin: { description: 'ISO 3166-1 alpha-2 — drives statutory period coding (SAF-T).' } },
+        { name: 'currencyCode', type: 'text',
+          admin: { description: 'ISO 4217 reporting currency for this fiscal configuration.' } },
+        { name: 'localeCode', type: 'text',
+          admin: { description: 'BCP-47 locale for period labelling.' } },
+        { name: 'regulatoryFramework', type: 'text',
+          admin: { description: 'Regulatory framework the period coding follows (e.g. SAF-T, XBRL-GL).' } },
+        { name: 'allowsNonGregorian', type: 'checkbox', defaultValue: false,
+          admin: { description: 'Whether the calendar may use a non-Gregorian basis.' } },
+        { name: 'leapYearAdjustment', type: 'checkbox', defaultValue: false,
+          admin: { description: 'Apply leap-year boundary adjustment.' } },
+        { name: 'customPeriodBoundaries', type: 'json',
+          admin: { description: 'Explicit period boundaries for custom calendars.' } },
       ],
-      defaultValue: 'none',
-      admin: { description: 'How to handle leap year (affects period boundaries)' },
     },
     {
-      name: 'governanceScope',
-      type: 'json',
-      admin: {
-        description:
-          'Law 63: Self-governance metadata. Stores entity self-rule context (role assignments, approval thresholds, amendment authorities). Auto-populated from entity profile.',
-      },
+      type: 'group',
+      name: 'governance',
+      label: 'Governance',
+      fields: [
+        { name: 'entity', type: 'relationship', relationTo: 'legal-entities',
+          admin: { description: 'Reporting legal entity this fiscal period belongs to.' } },
+        { name: 'supercedes', type: 'relationship', relationTo: 'fiscal-periods',
+          admin: { description: 'Prior fiscal-period version this one supersedes (amendment chain).' } },
+        { name: 'effectiveDate', type: 'date',
+          admin: { description: 'ISO 8601 — when this period definition takes effect.' } },
+      ],
     },
     {
-      name: 'chainLeafUuid',
-      type: 'text',
-      admin: {
-        description:
-          'Law 60: Immutable audit chain leaf. Computed as sha256(JCS-canonical(FiscalPeriods) || prior_leaf_uuid). Enables tamper detection.',
-      },
-    },
-    {
-      name: 'createdBy',
-      type: 'relationship',
-      relationTo: 'users',
-      admin: { description: 'User who created this fiscal configuration' },
-    },
-    {
-      name: 'createdAt',
-      type: 'date',
-      admin: { description: 'Timestamp of creation' },
-    },
-    {
-      name: 'updatedBy',
-      type: 'relationship',
-      relationTo: 'users',
-      admin: { description: 'User who last updated this configuration (amendments)' },
-    },
-    {
-      name: 'updatedAt',
-      type: 'date',
-      admin: { description: 'Timestamp of last amendment' },
-    },
-    {
-      name: 'auditTrail',
-      type: 'richText',
-      admin: {
-        description: 'Immutable audit trail: creation, amendments, activations, regulatory submissions. Append-only.',
-      },
-    },
-    {
+      type: 'group',
       name: 'notes',
-      type: 'textarea',
-      admin: { description: 'Configuration notes (e.g., regulatory requirements, tenant-specific adjustments)' },
+      label: 'Notes',
+      fields: [
+        { name: 'note', type: 'textarea', admin: { description: 'Close memo / lock justification' } },
+      ],
     },
+    { name: 'metadata', type: 'json', admin: { description: 'Additional metadata' } },
   ],
+  timestamps: true,
 }

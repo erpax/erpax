@@ -236,7 +236,7 @@ const PRODUCT_PAGES: ProductPageSpec[] = [
       'When an order activates, erpax books AR, Revenue, Sales Tax Payable, COGS, and Inventory in a single balanced journal entry — no nightly reconciliation, no out-of-band postings.',
     standards: [
       'IFRS 15 §38b — point-in-time revenue recognition for shipped goods',
-      'US-GAAP ASC 606-10-25-30c — control transfer at delivery',
+      'US-GAAP ASC 606-10-25-30(c) — control transfer at delivery',
       'IAS 2 / ASC 330 — COGS recognition on sale',
       'ISO 19011 — every state transition emits an audit-trail event',
     ],

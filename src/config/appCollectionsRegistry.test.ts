@@ -16,7 +16,7 @@ import { Pages } from '@/collections/Pages'
 import { Posts } from '@/collections/Posts'
 import { Roles } from '@/collections/Roles'
 import { Tenants } from '@/collections/Tenants'
-import { UserRoles } from '@/collections/UserRoles'
+import { UserRoles } from '@/collections/Roles/UserRoles'
 import { Users } from '@/collections/Users'
 import { SCOPE_BY_COLLECTION } from '@/utilities/scopes/collectionScopes'
 

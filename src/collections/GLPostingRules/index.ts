@@ -6,7 +6,10 @@
  * reconciliation requirements, and more.
  *
  * Purpose: Centralized account metadata for validation & reporting.
- */
+  * @accounting IFRS IAS-1 double-entry
+ * @compliance SOX §404 internal-controls
+ * @standard ISO-8601-1:2019 effective-date
+*/
 
 import { CollectionConfig } from 'payload'
 import { tenantAdmin } from '../../access/auth'

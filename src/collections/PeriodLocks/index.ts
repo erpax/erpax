@@ -9,7 +9,10 @@
  * Example: FY 2026 Period 5 = May 2026
  *
  * @invariant Closed periods accept only reversals and prior-period adjustments
- */
+  * @compliance SOX §404 period-close-integrity
+ * @accounting IFRS IAS-1 reporting-period
+ * @standard ISO-8601-1:2019 locked-at
+*/
 
 import { CollectionConfig } from 'payload'
 import { accountingCollectionAccess } from '../../access/auth'

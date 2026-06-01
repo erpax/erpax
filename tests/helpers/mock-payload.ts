@@ -18,7 +18,7 @@
  * @see src/testing/test-seed-factory.ts
  */
 
-import type { Config, Payload } from 'payload';
+import type { Config } from 'payload';
 
 /**
  * Minimal subset of Payload's collection-config shape that the test suite
@@ -54,7 +54,7 @@ interface MockPayloadOptions {
   collections?: ReadonlyArray<MockCollectionConfig>;
 }
 
-export class MockPayload implements Partial<Payload> {
+export class MockPayload {
   private readonly documents = new Map<string, Map<string, Record<string, unknown>>>();
   private readonly idCounter = new Map<string, number>();
 

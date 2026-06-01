@@ -166,6 +166,17 @@ export function recordUxGap(
  * @standard ISO/IEC-29119:2022 software-testing test-resilience
  * @audit ISO-19011:2018 audit-trail visual-evidence
  */
+/** Options-object form of {@link safeCaptureRoute} (stepId/label aliases). */
+export interface SafeCaptureRouteOptions {
+  page: Page
+  testInfo: TestInfo
+  workflow: string
+  stepId: string
+  label: string
+  route: string
+}
+
+export async function safeCaptureRoute(opts: SafeCaptureRouteOptions): Promise<boolean>
 export async function safeCaptureRoute(
   page: Page,
   testInfo: TestInfo,
@@ -173,7 +184,22 @@ export async function safeCaptureRoute(
   step: string,
   route: string,
   description: string,
+): Promise<boolean>
+export async function safeCaptureRoute(
+  a: Page | SafeCaptureRouteOptions,
+  b?: TestInfo,
+  c?: string,
+  d?: string,
+  e?: string,
+  f?: string,
 ): Promise<boolean> {
+  const isOpts = typeof a === 'object' && a !== null && 'route' in a && 'stepId' in a
+  const page = isOpts ? a.page : (a as Page)
+  const testInfo = isOpts ? a.testInfo : (b as TestInfo)
+  const workflow = isOpts ? a.workflow : (c as string)
+  const step = isOpts ? a.stepId : (d as string)
+  const route = isOpts ? a.route : (e as string)
+  const description = isOpts ? a.label : (f as string)
   try {
     const response = await page.goto(route, { waitUntil: 'networkidle' })
     if (response && response.status() >= 400) {

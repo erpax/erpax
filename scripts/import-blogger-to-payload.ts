@@ -129,7 +129,7 @@ async function getOrCreateCategory(
     collection: 'categories',
     data: {
       slug,
-      tenant: tenantId,
+      tenant: tenantId as unknown as string,
       title: label,
     },
     overrideAccess: true,

@@ -1,3 +1,11 @@
+/**
+ * Taxing Jurisdictions — single-folder collection node.
+ *
+ * @standard ISO-3166-1:2020 country-codes
+ * @standard OECD tax-jurisdiction
+ * @standard EU Directive 2006/112/EC VAT
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '../../access/authenticated'
 import { superAdminOnly } from '../../access/auth'

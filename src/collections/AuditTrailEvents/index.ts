@@ -1,3 +1,11 @@
+/**
+ * Audit Trail Events — single-folder collection node.
+ *
+ * @audit ISO-19011:2018 audit-trail
+ * @security ISO-27001 A.8.15 logging
+ * @compliance SOX §404 internal-controls-evidence
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ */
 import type { CollectionConfig } from 'payload'
 import { isSuperAdminAccess } from '../../access/isSuperAdmin'
 import { authenticated } from '../../access/authenticated'
@@ -5,7 +13,7 @@ import { preventAuditTrailModification } from './hooks/preventModification'
 
 export const AuditTrailEvents: CollectionConfig = {
   slug: 'audit-trail-events',
-  admin: { useAsTitle: 'description', defaultColumns: ['tenant', 'changedBy', 'collectionName', 'operation', 'changedAt'], group: 'Evidence & Findings', description: 'Immutable audit log' },
+  admin: { useAsTitle: 'changesSummary', defaultColumns: ['tenant', 'changedBy', 'collectionName', 'operation', 'changedAt'], group: 'Evidence & Findings', description: 'Immutable audit log' },
   access: { read: authenticated, create: isSuperAdminAccess, update: isSuperAdminAccess, delete: isSuperAdminAccess },
   hooks: { beforeChange: [preventAuditTrailModification] },
   timestamps: false,

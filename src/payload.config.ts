@@ -140,6 +140,9 @@ const {
   SepaMandates,
   PayrollRuns,
   Employees,
+  Competencies,
+  Connections,
+  Sectors,
   JobPositions,
   TimeEntries,
   LeaveRequests,
@@ -154,6 +157,7 @@ const {
   WorkflowDefinitions,
   WorkflowInstances,
   BillsOfMaterials,
+  Batches,
   ProductionReceipts,
   WorkCenters,
   WorkShifts,
@@ -219,6 +223,12 @@ const {
   DataProcessingActivities,
   KycChecks,
   BeneficialOwners,
+  FinancialProfiles,
+  Packages,
+  CashCounts,
+  PaymentRequests,
+  GatewayEvents,
+  Messages,
   CsrdDisclosures,
   CarbonEmissions,
   BiologicalAssets,
@@ -586,6 +596,9 @@ export default buildConfig({
     PayrollRuns,
     // People & HR (8)
     Employees,
+    Competencies,
+    Connections,
+    Sectors,
     JobPositions,
     TimeEntries,
     LeaveRequests,
@@ -600,8 +613,9 @@ export default buildConfig({
     WorkOrders,
     WorkflowDefinitions,
     WorkflowInstances,
-    // Manufacturing (9)
+    // Manufacturing (10)
     BillsOfMaterials,
+    Batches,
     WorkCenters,
     WorkShifts,
     Operations,
@@ -676,9 +690,16 @@ export default buildConfig({
     ConsentRecords,
     DataSubjectRequests,
     DataProcessingActivities,
-    // AML / KYC (2)
+    // AML / KYC (3)
     KycChecks,
     BeneficialOwners,
+    FinancialProfiles,
+    // Logistics, treasury, integrations & messaging (5)
+    Packages,
+    CashCounts,
+    PaymentRequests,
+    GatewayEvents,
+    Messages,
     // Sustainability & ESG (2)
     CsrdDisclosures,
     CarbonEmissions,
@@ -1072,6 +1093,15 @@ export default buildConfig({
         // sessions as documents (relatedTo edges reference everything;
         // contentUuid addresses them). "The MCP is the gateway."
         memories: { enabled: true },
+        // The merged social + people layer: agents (typeless users) interact
+        // in sync through the Payload MCP — the social graph (connections),
+        // direct messages, and the shared competency taxonomy that joins
+        // user = employee = agent. Access control still gates every call.
+        connections: { enabled: true },
+        messages: { enabled: true },
+        competencies: { enabled: true },
+        'job-positions': { enabled: true },
+        employees: { enabled: true },
       },
       globals: {
         header: { enabled: true },

@@ -11,8 +11,8 @@ import {
 
 import { createMembershipAdminMutateAccess } from '../../access/membershipAdminMutateAccess'
 import { tenantScopedPostsReadAccess } from '../../access/tenantScopedRead'
-import { documentPreviewAdmin } from '../../collections/shared/documentPreviewAdmin'
-import { defaultVersionedDrafts } from '../../collections/shared/versionedDrafts'
+import { documentPreviewAdmin } from '../shared/documentPreviewAdmin'
+import { defaultVersionedDrafts } from '../shared/versionedDrafts'
 import { Banner } from '../../components/blocks/Banner/config'
 import { Code } from '../../components/blocks/Code/config'
 import { MediaBlock } from '../../components/blocks/MediaBlock/config'

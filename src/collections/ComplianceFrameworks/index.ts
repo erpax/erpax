@@ -1,3 +1,10 @@
+/**
+ * Compliance Frameworks — single-folder collection node.
+ *
+ * @standard ISO-37301:2021 compliance-management-systems
+ * @standard COSO-2013 internal-control-integrated-framework
+ * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+ */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '../../access/authenticated'
 import { superAdminOnly } from '../../access/auth'

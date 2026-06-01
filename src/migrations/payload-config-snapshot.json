@@ -91,9 +91,6 @@
         "_watchTenant": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -162,9 +159,6 @@
         "config.features": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -227,9 +221,6 @@
         "resource": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -251,9 +242,6 @@
           "localized": false
         },
         "role": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -459,9 +447,6 @@
         "breadcrumbs.id": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -533,9 +518,6 @@
         "slug": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -563,9 +545,6 @@
           "localized": false
         },
         "caption": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -790,9 +769,6 @@
           "localized": false
         },
         "breadcrumbs.id": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -1058,13 +1034,49 @@
         "relationships.domain": {
           "localized": false
         },
+        "fiscal": {
+          "localized": false
+        },
+        "fiscal.unp": {
+          "localized": false
+        },
+        "fiscal.unpSequence": {
+          "localized": false
+        },
+        "fiscal.fiscalDevice": {
+          "localized": false
+        },
+        "fiscal.fiscalDeviceNumber": {
+          "localized": false
+        },
+        "fiscal.operatorCode": {
+          "localized": false
+        },
+        "fiscal.terminal": {
+          "localized": false
+        },
+        "fiscal.receiptNumber": {
+          "localized": false
+        },
+        "fiscal.receipt": {
+          "localized": false
+        },
+        "fiscal.qrData": {
+          "localized": false
+        },
+        "fiscal.status": {
+          "localized": false
+        },
+        "fiscal.reversalOf": {
+          "localized": false
+        },
+        "fiscal.reversedBy": {
+          "localized": false
+        },
         "test": {
           "localized": false
         },
         "metadata": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -1264,9 +1276,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -1321,9 +1330,6 @@
           "localized": false
         },
         "nextRetryAt": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -1412,9 +1418,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -1444,10 +1447,13 @@
         "stripePriceId": {
           "localized": false
         },
-        "monthlyUSD": {
+        "monthlyPrice": {
           "localized": false
         },
-        "yearlyUSD": {
+        "yearlyPrice": {
+          "localized": false
+        },
+        "currency": {
           "localized": false
         },
         "billingCycle": {
@@ -1463,9 +1469,6 @@
           "localized": false
         },
         "sortOrder": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -1528,9 +1531,6 @@
           "localized": false
         },
         "lastStatusChangeReason": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -1673,9 +1673,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -1788,9 +1785,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -1856,6 +1850,9 @@
         "lines.exchangeRate": {
           "localized": false
         },
+        "lines.costCenterId": {
+          "localized": false
+        },
         "lines.id": {
           "localized": false
         },
@@ -1874,6 +1871,9 @@
         "sourceId": {
           "localized": false
         },
+        "sourceEvent": {
+          "localized": false
+        },
         "createdBy": {
           "localized": false
         },
@@ -1881,9 +1881,6 @@
           "localized": false
         },
         "approvedAt": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -1975,9 +1972,6 @@
         "approvedAt": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -2041,9 +2035,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -2171,9 +2162,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -2279,9 +2267,6 @@
           "localized": false
         },
         "importSource": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -2397,9 +2382,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -2472,9 +2454,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -2620,9 +2599,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -2704,9 +2680,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -2801,9 +2774,6 @@
         "generatedBy": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -2852,9 +2822,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -2961,9 +2928,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3029,9 +2993,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3095,9 +3056,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -3166,9 +3124,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -3257,9 +3212,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3332,9 +3284,6 @@
           "localized": false
         },
         "metadata": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -3429,9 +3378,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3489,9 +3435,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -3571,9 +3514,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3642,9 +3582,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3699,9 +3636,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -3832,9 +3766,6 @@
         "approvedAt": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -3901,9 +3832,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -4034,9 +3962,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4138,9 +4063,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4227,9 +4149,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4293,9 +4212,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -4385,9 +4301,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -4515,9 +4428,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4622,9 +4532,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4691,9 +4598,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -4768,9 +4672,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -4850,9 +4751,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4924,9 +4822,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -4993,9 +4888,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -5103,9 +4995,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -5260,9 +5149,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -5388,9 +5274,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -5501,9 +5384,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -5612,9 +5492,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -5751,9 +5628,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -5823,9 +5697,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -5911,9 +5782,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -5980,9 +5848,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -6071,9 +5936,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -6149,9 +6011,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -6231,9 +6090,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -6308,9 +6164,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -6377,9 +6230,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -6457,9 +6307,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -6578,9 +6425,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -6653,9 +6497,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -6739,9 +6580,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -6896,9 +6734,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -7012,9 +6847,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -7111,9 +6943,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -7241,9 +7070,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -7322,9 +7148,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -7486,9 +7309,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -7658,9 +7478,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -7765,9 +7582,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -7843,9 +7657,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -7950,9 +7761,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -8128,9 +7936,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -8298,9 +8103,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -8432,9 +8234,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -8516,9 +8315,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -8622,9 +8418,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -8714,9 +8507,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -8789,9 +8579,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -8878,9 +8665,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -8993,9 +8777,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9103,9 +8884,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9204,9 +8982,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9270,9 +9045,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -9349,9 +9121,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9397,9 +9166,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -9459,9 +9225,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -9559,9 +9322,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9648,9 +9408,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9729,9 +9486,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -9814,9 +9568,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -9894,6 +9645,9 @@
           "localized": false
         },
         "taggable": {
+          "localized": false
+        },
+        "taggableType": {
           "localized": false
         },
         "updatedAt": {
@@ -10027,9 +9781,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -10126,9 +9877,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -10233,9 +9981,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -10414,9 +10159,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -10548,9 +10290,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -10673,9 +10412,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -10756,9 +10492,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -10825,9 +10558,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -10946,9 +10676,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11032,9 +10759,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11113,9 +10837,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11204,9 +10925,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11290,9 +11008,6 @@
         "rowHash": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11347,9 +11062,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11435,9 +11147,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11468,9 +11177,6 @@
           "localized": false
         },
         "applicableFrameworks": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11523,9 +11229,6 @@
         "filingDeadlines.id": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11562,9 +11265,6 @@
           "localized": false
         },
         "taxTreatment": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11608,9 +11308,6 @@
         "applicableJurisdictions": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11647,9 +11344,6 @@
           "localized": false
         },
         "applicableEntityTypes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11691,9 +11385,6 @@
           "localized": false
         },
         "frequency": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11743,9 +11434,6 @@
         "deviationRate": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11787,9 +11475,6 @@
         "evidence": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11826,9 +11511,6 @@
           "localized": false
         },
         "remediationPlan": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -11884,9 +11566,6 @@
         "retentionPeriod": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11940,9 +11619,6 @@
         "remediationPlan": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -11994,9 +11670,6 @@
           "localized": false
         },
         "systemDetails": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12076,9 +11749,6 @@
         "riskOfDelay": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -12118,9 +11788,6 @@
           "localized": false
         },
         "members": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12174,9 +11841,6 @@
           "localized": false
         },
         "status": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12238,9 +11902,6 @@
         "relatedControls": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -12298,9 +11959,6 @@
           "localized": false
         },
         "status": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12362,9 +12020,6 @@
         "findings": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -12416,9 +12071,6 @@
           "localized": false
         },
         "applicableControls": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12477,9 +12129,6 @@
         "effectiveTo": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -12527,9 +12176,6 @@
         "validationRules": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -12569,9 +12215,6 @@
           "localized": false
         },
         "status": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12616,9 +12259,6 @@
           "localized": false
         },
         "status": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12669,9 +12309,6 @@
           "localized": false
         },
         "penalty": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12727,9 +12364,6 @@
         "status": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -12772,9 +12406,6 @@
           "localized": false
         },
         "referenceMaterial": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12825,9 +12456,6 @@
           "localized": false
         },
         "status": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -12905,9 +12533,6 @@
           "localized": false
         },
         "evidence": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -13008,9 +12633,6 @@
         "status": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -13098,9 +12720,6 @@
           "localized": false
         },
         "checklistDocument": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -13255,9 +12874,6 @@
         "confidentiality": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -13351,9 +12967,6 @@
           "localized": false
         },
         "riskRegisterDocument": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -13500,9 +13113,6 @@
           "localized": false
         },
         "debtAgreement": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -13657,9 +13267,6 @@
         "charterDocument": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -13794,9 +13401,6 @@
         "reportingStatus": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -13865,9 +13469,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -13931,9 +13532,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -14037,9 +13635,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -14132,9 +13727,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -14204,9 +13796,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -14311,9 +13900,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -14444,9 +14030,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -14521,9 +14104,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -14590,9 +14170,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -14670,9 +14247,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -14794,9 +14368,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -14910,9 +14481,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -14988,9 +14556,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -15115,9 +14680,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -15231,9 +14793,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -15324,9 +14883,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -15428,9 +14984,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -15537,9 +15090,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -15626,9 +15176,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -15686,9 +15233,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -15760,9 +15304,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -15840,9 +15381,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -16000,9 +15538,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -16116,9 +15651,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -16209,9 +15741,6 @@
           "localized": false
         },
         "notes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -16368,9 +15897,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -16475,9 +16001,6 @@
         "approvalComments": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -16562,9 +16085,6 @@
           "localized": false
         },
         "internalNotes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -16657,9 +16177,6 @@
           "localized": false
         },
         "performanceNotes": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -16758,9 +16275,6 @@
           "localized": false
         },
         "approvalComments": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -16897,9 +16411,6 @@
         "templateNotes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17019,9 +16530,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17123,9 +16631,6 @@
         "notes": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17200,7 +16705,905 @@
         "notes": {
           "localized": false
         },
-        "tags": {
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "consolidations": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "consolidationName": {
+          "localized": false
+        },
+        "consolidationGroup": {
+          "localized": false
+        },
+        "subsidiaryEntities": {
+          "localized": false
+        },
+        "associateEntities": {
+          "localized": false
+        },
+        "fiscalYear": {
+          "localized": false
+        },
+        "periodClosingDate": {
+          "localized": false
+        },
+        "consolidationCurrency": {
+          "localized": false
+        },
+        "consolidationType": {
+          "localized": false
+        },
+        "consolidatedBy": {
+          "localized": false
+        },
+        "consolidationStatus": {
+          "localized": false
+        },
+        "consolidationReadiness": {
+          "localized": false
+        },
+        "eliminationEntries": {
+          "localized": false
+        },
+        "eliminationEntries.sequenceNumber": {
+          "localized": false
+        },
+        "eliminationEntries.journalEntryId": {
+          "localized": false
+        },
+        "eliminationEntries.fromEntity": {
+          "localized": false
+        },
+        "eliminationEntries.toEntity": {
+          "localized": false
+        },
+        "eliminationEntries.account": {
+          "localized": false
+        },
+        "eliminationEntries.accountType": {
+          "localized": false
+        },
+        "eliminationEntries.eliminationAmount": {
+          "localized": false
+        },
+        "eliminationEntries.description": {
+          "localized": false
+        },
+        "eliminationEntries.posted": {
+          "localized": false
+        },
+        "eliminationEntries.postedDate": {
+          "localized": false
+        },
+        "eliminationEntries.id": {
+          "localized": false
+        },
+        "governanceScope": {
+          "localized": false
+        },
+        "chainLeafUuid": {
+          "localized": false
+        },
+        "auditTrail": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "tax-periods": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "taxPeriodName": {
+          "localized": false
+        },
+        "taxJurisdiction": {
+          "localized": false
+        },
+        "taxPeriodType": {
+          "localized": false
+        },
+        "fiscalPeriodId": {
+          "localized": false
+        },
+        "taxPeriodEndDate": {
+          "localized": false
+        },
+        "filingDeadline": {
+          "localized": false
+        },
+        "taxCurrency": {
+          "localized": false
+        },
+        "filedBy": {
+          "localized": false
+        },
+        "taxStatus": {
+          "localized": false
+        },
+        "taxPeriodReadiness": {
+          "localized": false
+        },
+        "transferPricingAdjustmentCount": {
+          "localized": false
+        },
+        "taxAdjustmentEntries": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.sequenceNumber": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.journalEntryId": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.fromEntity": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.toEntity": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.account": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.accountType": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.adjustmentAmount": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.description": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.posted": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.postedDate": {
+          "localized": false
+        },
+        "taxAdjustmentEntries.id": {
+          "localized": false
+        },
+        "governanceScope": {
+          "localized": false
+        },
+        "chainLeafUuid": {
+          "localized": false
+        },
+        "auditTrail": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "audit-reports": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "auditReportName": {
+          "localized": false
+        },
+        "auditYear": {
+          "localized": false
+        },
+        "consolidationId": {
+          "localized": false
+        },
+        "reportType": {
+          "localized": false
+        },
+        "targetJurisdictions": {
+          "localized": false
+        },
+        "targetJurisdictions.jurisdictionCode": {
+          "localized": false
+        },
+        "targetJurisdictions.id": {
+          "localized": false
+        },
+        "generatedBy": {
+          "localized": false
+        },
+        "auditStatus": {
+          "localized": false
+        },
+        "auditReportContent": {
+          "localized": false
+        },
+        "regulatoryFilings": {
+          "localized": false
+        },
+        "regulatoryFilings.jurisdiction": {
+          "localized": false
+        },
+        "regulatoryFilings.filingType": {
+          "localized": false
+        },
+        "regulatoryFilings.filingFormat": {
+          "localized": false
+        },
+        "regulatoryFilings.filingDeadline": {
+          "localized": false
+        },
+        "regulatoryFilings.submissionMethod": {
+          "localized": false
+        },
+        "regulatoryFilings.submissionStatus": {
+          "localized": false
+        },
+        "regulatoryFilings.submissionDate": {
+          "localized": false
+        },
+        "regulatoryFilings.id": {
+          "localized": false
+        },
+        "transferPricingPackage": {
+          "localized": false
+        },
+        "optimizationRecommendations": {
+          "localized": false
+        },
+        "optimizationRecommendations.optimizationType": {
+          "localized": false
+        },
+        "optimizationRecommendations.affectedJurisdictions": {
+          "localized": false
+        },
+        "optimizationRecommendations.affectedJurisdictions.jurisdiction": {
+          "localized": false
+        },
+        "optimizationRecommendations.affectedJurisdictions.id": {
+          "localized": false
+        },
+        "optimizationRecommendations.estimatedTaxSavings": {
+          "localized": false
+        },
+        "optimizationRecommendations.savingsCurrency": {
+          "localized": false
+        },
+        "optimizationRecommendations.complianceRisk": {
+          "localized": false
+        },
+        "optimizationRecommendations.description": {
+          "localized": false
+        },
+        "optimizationRecommendations.recommendedAction": {
+          "localized": false
+        },
+        "optimizationRecommendations.implementationStatus": {
+          "localized": false
+        },
+        "optimizationRecommendations.id": {
+          "localized": false
+        },
+        "validationStatus": {
+          "localized": false
+        },
+        "governanceScope": {
+          "localized": false
+        },
+        "chainLeafUuid": {
+          "localized": false
+        },
+        "auditTrail": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "transfer-pricing-adjustments": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "adjustmentDescription": {
+          "localized": false
+        },
+        "taxJurisdiction": {
+          "localized": false
+        },
+        "taxPeriod": {
+          "localized": false
+        },
+        "fromEntity": {
+          "localized": false
+        },
+        "toEntity": {
+          "localized": false
+        },
+        "transactionType": {
+          "localized": false
+        },
+        "originalAmount": {
+          "localized": false
+        },
+        "adjustedAmount": {
+          "localized": false
+        },
+        "adjustmentAmount": {
+          "localized": false
+        },
+        "methodUsed": {
+          "localized": false
+        },
+        "adjustmentReason": {
+          "localized": false
+        },
+        "supportingDocumentation": {
+          "localized": false
+        },
+        "documentationStatus": {
+          "localized": false
+        },
+        "adjustmentDate": {
+          "localized": false
+        },
+        "relatedDocuments": {
+          "localized": false
+        },
+        "auditTrail": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "post-close-analytics-reports": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "analyticsReportName": {
+          "localized": false
+        },
+        "fiscalYear": {
+          "localized": false
+        },
+        "auditReportId": {
+          "localized": false
+        },
+        "consolidationId": {
+          "localized": false
+        },
+        "reportType": {
+          "localized": false
+        },
+        "generatedBy": {
+          "localized": false
+        },
+        "analysisStatus": {
+          "localized": false
+        },
+        "varianceAnalysisReport": {
+          "localized": false
+        },
+        "ratioAnalysisReport": {
+          "localized": false
+        },
+        "segmentAnalysisReport": {
+          "localized": false
+        },
+        "managementReportingSummary": {
+          "localized": false
+        },
+        "executiveSummaryText": {
+          "localized": false
+        },
+        "validationStatus": {
+          "localized": false
+        },
+        "governanceScope": {
+          "localized": false
+        },
+        "chainLeafUuid": {
+          "localized": false
+        },
+        "analyticsTrail": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "fiscal-devices": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "individualNumber": {
+          "localized": false
+        },
+        "model": {
+          "localized": false
+        },
+        "manufacturer": {
+          "localized": false
+        },
+        "currency": {
+          "localized": false
+        },
+        "taxGroups": {
+          "localized": false
+        },
+        "taxGroups.group": {
+          "localized": false
+        },
+        "taxGroups.rate": {
+          "localized": false
+        },
+        "taxGroups.id": {
+          "localized": false
+        },
+        "defaultOperator": {
+          "localized": false
+        },
+        "defaultTerminal": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "registeredAt": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "sales": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "unp": {
+          "localized": false
+        },
+        "unpSequence": {
+          "localized": false
+        },
+        "fiscalDeviceNumber": {
+          "localized": false
+        },
+        "fiscalDevice": {
+          "localized": false
+        },
+        "operatorCode": {
+          "localized": false
+        },
+        "saleDate": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "items": {
+          "localized": false
+        },
+        "items.description": {
+          "localized": false
+        },
+        "items.quantity": {
+          "localized": false
+        },
+        "items.unitPrice": {
+          "localized": false
+        },
+        "items.vatRate": {
+          "localized": false
+        },
+        "items.amount": {
+          "localized": false
+        },
+        "items.id": {
+          "localized": false
+        },
+        "total": {
+          "localized": false
+        },
+        "currency": {
+          "localized": false
+        },
+        "paymentType": {
+          "localized": false
+        },
+        "fiscalReceiptNumber": {
+          "localized": false
+        },
+        "operator": {
+          "localized": false
+        },
+        "terminal": {
+          "localized": false
+        },
+        "receipt": {
+          "localized": false
+        },
+        "source": {
+          "localized": false
+        },
+        "source.type": {
+          "localized": false
+        },
+        "source.ref": {
+          "localized": false
+        },
+        "reversalOf": {
+          "localized": false
+        },
+        "reversedBy": {
+          "localized": false
+        },
+        "reversalReason": {
+          "localized": false
+        },
+        "closedAt": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "receipts": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "receiptNumber": {
+          "localized": false
+        },
+        "unp": {
+          "localized": false
+        },
+        "sale": {
+          "localized": false
+        },
+        "fiscalDeviceNumber": {
+          "localized": false
+        },
+        "operatorCode": {
+          "localized": false
+        },
+        "virtualPosTerminal": {
+          "localized": false
+        },
+        "qrData": {
+          "localized": false
+        },
+        "issuedAt": {
+          "localized": false
+        },
+        "total": {
+          "localized": false
+        },
+        "vatTotal": {
+          "localized": false
+        },
+        "vatBreakdown": {
+          "localized": false
+        },
+        "vatBreakdown.group": {
+          "localized": false
+        },
+        "vatBreakdown.rate": {
+          "localized": false
+        },
+        "vatBreakdown.net": {
+          "localized": false
+        },
+        "vatBreakdown.vat": {
+          "localized": false
+        },
+        "vatBreakdown.id": {
+          "localized": false
+        },
+        "currency": {
+          "localized": false
+        },
+        "paymentType": {
+          "localized": false
+        },
+        "deliveredTo": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "lines": {
+          "localized": false
+        },
+        "lines.description": {
+          "localized": false
+        },
+        "lines.quantity": {
+          "localized": false
+        },
+        "lines.unitPrice": {
+          "localized": false
+        },
+        "lines.vatRate": {
+          "localized": false
+        },
+        "lines.amount": {
+          "localized": false
+        },
+        "lines.id": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "operators": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "code": {
+          "localized": false
+        },
+        "name": {
+          "localized": false
+        },
+        "user": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "terminals": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "terminalNumber": {
+          "localized": false
+        },
+        "provider": {
+          "localized": false
+        },
+        "accountNumber": {
+          "localized": false
+        },
+        "currency": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "audit-submissions": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "periodStart": {
+          "localized": false
+        },
+        "periodEnd": {
+          "localized": false
+        },
+        "count": {
+          "localized": false
+        },
+        "controlSum": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "submittedAt": {
+          "localized": false
+        },
+        "napResponse": {
+          "localized": false
+        },
+        "xml": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
           "localized": false
         },
         "updatedAt": {
@@ -17301,9 +17704,6 @@
         "metadata": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17334,9 +17734,6 @@
           "localized": false
         },
         "inventory": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -17374,9 +17771,6 @@
         "options": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17410,9 +17804,6 @@
           "localized": false
         },
         "value": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -17567,9 +17958,6 @@
         "slug": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17627,9 +18015,6 @@
           "localized": false
         },
         "currency": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -17722,9 +18107,6 @@
           "localized": false
         },
         "accessToken": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -17831,9 +18213,6 @@
         "currency": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17938,9 +18317,6 @@
         "emails.id": {
           "localized": false
         },
-        "tags": {
-          "localized": false
-        },
         "updatedAt": {
           "localized": false
         },
@@ -17973,7 +18349,95 @@
         "submissionData.id": {
           "localized": false
         },
-        "tags": {
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "redirects": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "from": {
+          "localized": false
+        },
+        "to": {
+          "localized": false
+        },
+        "to.type": {
+          "localized": false
+        },
+        "to.reference": {
+          "localized": false
+        },
+        "to.url": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "search": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "title": {
+          "localized": true
+        },
+        "priority": {
+          "localized": false
+        },
+        "doc": {
+          "localized": false
+        },
+        "docUrl": {
+          "localized": false
+        },
+        "slug": {
+          "localized": false
+        },
+        "meta": {
+          "localized": false
+        },
+        "meta.title": {
+          "localized": false
+        },
+        "meta.description": {
+          "localized": false
+        },
+        "meta.image": {
+          "localized": false
+        },
+        "categories": {
+          "localized": false
+        },
+        "categories.relationTo": {
+          "localized": false
+        },
+        "categories.categoryID": {
+          "localized": false
+        },
+        "categories.title": {
+          "localized": false
+        },
+        "categories.id": {
           "localized": false
         },
         "updatedAt": {
@@ -18030,9 +18494,6 @@
           "localized": false
         },
         "preview": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -18110,9 +18571,6 @@
           "localized": false
         },
         "preview": {
-          "localized": false
-        },
-        "tags": {
           "localized": false
         },
         "updatedAt": {
@@ -18434,6 +18892,71 @@
           "localized": false
         },
         "batch": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "payload-query-presets": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "title": {
+          "localized": false
+        },
+        "isShared": {
+          "localized": false
+        },
+        "access": {
+          "localized": false
+        },
+        "access.read": {
+          "localized": false
+        },
+        "access.read.constraint": {
+          "localized": false
+        },
+        "access.read.users": {
+          "localized": false
+        },
+        "access.update": {
+          "localized": false
+        },
+        "access.update.constraint": {
+          "localized": false
+        },
+        "access.update.users": {
+          "localized": false
+        },
+        "access.delete": {
+          "localized": false
+        },
+        "access.delete.constraint": {
+          "localized": false
+        },
+        "access.delete.users": {
+          "localized": false
+        },
+        "where": {
+          "localized": false
+        },
+        "columns": {
+          "localized": false
+        },
+        "groupBy": {
+          "localized": false
+        },
+        "relatedCollection": {
+          "localized": false
+        },
+        "isTemp": {
           "localized": false
         },
         "updatedAt": {
