@@ -1402,6 +1402,8 @@ src/services/ai/tax-classification.ts:9: * @standard EN-16931:2017 §BT-151 invo
 src/services/allocation/index.ts:43: * @standard SFIA 8 responsibility-levels (1..7) — job-type categorisation
 src/services/allocation/index.ts:44: * @standard ESCO / ISCO-08 competency framework (skill level)
 src/services/allocation/index.ts:45: * @standard Hamilton (largest-remainder) apportionment — integer fair division
+src/services/anchor/index.ts:14: * @standard RFC 3161 §2.4 (TSA timestamp token) · eIDAS (EU 910/2014) Art.41–42 · ETSI EN 319 422
+src/services/anchor/index.ts:15: * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (comparable key strengths)
 src/services/anchoring/index.ts:10: * @standard W3C Verifiable Credentials Data Model 2.0
 src/services/anchoring/index.ts:11: * @standard ISO 19011:2018 §6.4.6 (third-party-verifiable audit trail)
 src/services/architecture-invariants/by-agent.ts:43: * @standard ISO/IEC 25010:2023 §5.2 performance — selective
