@@ -165,6 +165,7 @@ export interface Config {
     'workflow-definitions': WorkflowDefinition;
     'workflow-instances': WorkflowInstance;
     'bills-of-materials': BillsOfMaterial;
+    batches: Batch;
     'work-centers': WorkCenter;
     'work-shifts': WorkShift;
     operations: Operation;
@@ -230,6 +231,12 @@ export interface Config {
     'data-processing-activities': DataProcessingActivity;
     'kyc-checks': KycCheck;
     'beneficial-owners': BeneficialOwner;
+    'financial-profiles': FinancialProfile;
+    packages: Package;
+    'cash-counts': CashCount;
+    'payment-requests': PaymentRequest;
+    'gateway-events': GatewayEvent;
+    messages: Message;
     'csrd-disclosures': CsrdDisclosure;
     'carbon-emissions': CarbonEmission;
     'biological-assets': BiologicalAsset;
@@ -408,6 +415,7 @@ export interface Config {
     'workflow-definitions': WorkflowDefinitionsSelect<false> | WorkflowDefinitionsSelect<true>;
     'workflow-instances': WorkflowInstancesSelect<false> | WorkflowInstancesSelect<true>;
     'bills-of-materials': BillsOfMaterialsSelect<false> | BillsOfMaterialsSelect<true>;
+    batches: BatchesSelect<false> | BatchesSelect<true>;
     'work-centers': WorkCentersSelect<false> | WorkCentersSelect<true>;
     'work-shifts': WorkShiftsSelect<false> | WorkShiftsSelect<true>;
     operations: OperationsSelect<false> | OperationsSelect<true>;
@@ -473,6 +481,12 @@ export interface Config {
     'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
     'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
     'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
+    'financial-profiles': FinancialProfilesSelect<false> | FinancialProfilesSelect<true>;
+    packages: PackagesSelect<false> | PackagesSelect<true>;
+    'cash-counts': CashCountsSelect<false> | CashCountsSelect<true>;
+    'payment-requests': PaymentRequestsSelect<false> | PaymentRequestsSelect<true>;
+    'gateway-events': GatewayEventsSelect<false> | GatewayEventsSelect<true>;
+    messages: MessagesSelect<false> | MessagesSelect<true>;
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
@@ -6470,7 +6484,7 @@ export interface SalesOrder {
         description: string;
         quantity: number;
         /**
-         * UN/CEFACT Rec 20 unit code (PCE, KGM, LTR, …). EN-16931 §BT-130.
+         * UN/CEFACT Rec 20 unit code (C62, KGM, LTR, …). EN-16931 §BT-130.
          */
         unitOfMeasure?: string | null;
         unitPrice: number;
@@ -7159,7 +7173,8 @@ export interface AuditFinding {
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  findingTitle: string;
+  title: string;
+  description: string;
   findingType:
     | 'control-deficiency'
     | 'significant-deficiency'
@@ -7168,349 +7183,102 @@ export interface AuditFinding {
     | 'exception'
     | 'observation';
   severity: 'critical' | 'high' | 'medium' | 'low';
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  rootCause?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  potentialImpact?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  frequencyOfOccurrence?: ('isolated' | 'occasional' | 'recurring' | 'pervasive') | null;
+  relatedControl?: (string | null) | InternalControl;
+  relatedControlTest?: (string | null) | ControlTest;
+  frequencyOfOccurrence?: ('isolated' | 'sporadic' | 'recurring' | 'pervasive') | null;
+  potentialImpact?: ('none' | 'minimal' | 'moderate' | 'significant' | 'material' | 'unknown') | null;
+  identifiedDate: string;
+  identifiedBy: string | User;
+  rootCause?: string | null;
   riskCategory?: ('financial-reporting' | 'compliance' | 'operational' | 'security') | null;
-  status?: ('open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed') | null;
-  evidence?: (string | AuditEvidence)[] | null;
-  remediationPlan?: (string | null) | RemediationPlan;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-evidence".
- */
-export interface AuditEvidence {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  evidenceTitle: string;
-  documentType:
-    | 'pdf'
-    | 'screenshot'
-    | 'signed-approval'
-    | 'bank-statement'
-    | 'gl-printout'
-    | 'reconciliation'
-    | 'workpaper'
-    | 'audit-log'
-    | 'policy'
-    | 'other';
-  documentFile?: (string | null) | Media;
-  evidenceChain?:
+  status: 'open' | 'in-remediation' | 'remediated-pending' | 'remediated-confirmed' | 'closed';
+  managementResponse?: string | null;
+  managementResponseDate?: string | null;
+  priorYearReference?: string | null;
+  communicatedTo?:
     | {
-        actor?: string | null;
-        action?: string | null;
-        actionDate?: string | null;
-        notes?: string | null;
+        recipient: string;
+        communicationDate?: string | null;
         id?: string | null;
       }[]
     | null;
-  confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
-  retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "remediation-plans".
+ * via the `definition` "internal-controls".
  */
-export interface RemediationPlan {
+export interface InternalControl {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  planTitle: string;
-  finding?: (string | null) | AuditFinding;
-  gap?: (string | null) | ComplianceGap;
-  remediationType:
-    | 'design-change'
-    | 'process-change'
-    | 'system-implementation'
-    | 'training'
-    | 'documentation'
-    | 'resource-addition'
-    | 'policy-update'
-    | 'organizational-change';
-  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+  controlName: string;
+  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
+  controlCategory:
+    | 'preventive-general'
+    | 'preventive-specific'
+    | 'detective-manual'
+    | 'detective-automated'
+    | 'corrective'
+    | 'monitoring'
+    | 'governance'
+    | 'user-access';
+  cosoComponent?:
+    | ('control-environment' | 'risk-assessment' | 'control-activities' | 'information-communication' | 'monitoring')
+    | null;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   owner?: string | null;
-  actionSteps?:
-    | {
-        sequence?: number | null;
-        description?: {
-          root: {
-            type: string;
-            children: {
-              type: any;
-              version: number;
-              [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
-        stepOwner?: string | null;
-        targetDate?: string | null;
-        status?: ('not-started' | 'in-progress' | 'completed' | 'delayed') | null;
-        completedDate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  targetDate: string;
-  completionDate?: string | null;
-  status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
-  budget?: number | null;
-  riskOfDelay?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  frequency?: ('daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'continuous') | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-gaps".
+ * via the `definition` "control-tests".
  */
-export interface ComplianceGap {
+export interface ControlTest {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  requirement: string | ComplianceRequirement;
-  gapTitle: string;
-  gapType:
-    | 'missing-control'
-    | 'design-deficiency'
-    | 'operating-deficiency'
-    | 'documentation-gap'
-    | 'resource-gap'
-    | 'system-gap'
-    | 'process-gap';
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  status?: ('identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed') | null;
-  remediationPlan?: (string | null) | RemediationPlan;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-requirements".
- */
-export interface ComplianceRequirement {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  requirementName: string;
-  framework: string | ComplianceFramework;
-  requirementType: 'disclosure' | 'accounting' | 'control' | 'reporting' | 'policy' | 'attestation';
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  testableStatement?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  applicableEntityTypes?: (string | EntityType)[] | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "compliance-frameworks".
- */
-export interface ComplianceFramework {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  name: string;
-  frameworkType: 'gaap' | 'ifrs' | 'sox' | 'coso' | 'gdpr' | 'iso' | 'regulatory' | 'other';
-  issuingBody?: string | null;
-  version?: string | null;
-  effectiveDate: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  applicableJurisdictions?: (string | TaxingJurisdiction)[] | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "taxing-jurisdictions".
- */
-export interface TaxingJurisdiction {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  name: string;
-  jurisdictionType: 'country' | 'state' | 'local' | 'special-zone';
-  isoCountryCode?: string | null;
-  isoRegionCode?: string | null;
-  currency?: string | null;
-  parent?: (string | null) | TaxingJurisdiction;
-  filingDeadlines?:
-    | {
-        description?: string | null;
-        dueDate?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "entity-types".
- */
-export interface EntityType {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  name: string;
-  code: string;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  applicableFrameworks?: (string | ComplianceFramework)[] | null;
+  title: string;
+  testDesign: string;
+  control: string | InternalControl;
+  samplingMethodology?: ('statistical-random' | 'stratified' | 'judgmental' | 'census' | 'heuristic') | null;
+  plannedSampleSize?: number | null;
+  actualSampleSize?: number | null;
+  toleranceLevel?: number | null;
+  assertion?: ('existence' | 'completeness' | 'accuracy' | 'authorization' | 'segregation' | 'cutoff') | null;
+  testStatus: 'planned' | 'in-progress' | 'completed' | 'suspended';
+  testedDate?: string | null;
+  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
+  deviationCount?: number | null;
+  deviationRate?: number | null;
+  deviationsSummary?: string | null;
+  conclusionOnEffectiveness?: string | null;
+  reviewDate?: string | null;
+  isActive?: boolean | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -8569,7 +8337,7 @@ export interface BillsOfMaterial {
      */
     quantity: number;
     /**
-     * UN/CEFACT Rec.20 unit (e.g. `KGM`, `EA`, `LTR`).
+     * UN/CEFACT Rec 20 unit (e.g. `KGM`, `H87`, `LTR`).
      */
     unitOfMeasure?: string | null;
     /**
@@ -10351,6 +10119,171 @@ export interface WorkflowInstance {
   createdAt: string;
 }
 /**
+ * Traceable lot/batch identity (ISO 9001 §8.5.2, ISO 22005, EU 178/2002 Art 18). Carries quality status, expiry and one-step-back genealogy for recall.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "batches".
+ */
+export interface Batch {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Lot/batch number — GS1 AI(10). Tenant-unique human key.
+   */
+  reference: string;
+  /**
+   * Item this lot is a quantity of.
+   */
+  item: string | Item;
+  /**
+   * Original lot quantity in `unitOfMeasure`.
+   */
+  quantity: number;
+  /**
+   * UN/CEFACT Rec 20 unit code (C62=one, KGM, MTR, LTR, HUR, H87=piece…). Blank ⇒ C62.
+   */
+  unitOfMeasure?: string | null;
+  /**
+   * Quantity still on hand (quantity − consumed), in the same `unitOfMeasure`. Maintained by inventory movements.
+   */
+  remainingQuantity?: number | null;
+  status?: ('quarantine' | 'released' | 'on_hold' | 'rejected' | 'consumed' | 'expired' | 'recalled') | null;
+  /**
+   * ISO 8601 — GS1 AI(11) production date.
+   */
+  manufactureDate?: string | null;
+  /**
+   * ISO 8601 — GS1 AI(17) expiry / best-before. Drives FEFO picking + expiry sweeps.
+   */
+  expiryDate?: string | null;
+  /**
+   * ISO 8601 — when the lot entered this tenant (receipt or production completion).
+   */
+  receivedDate?: string | null;
+  /**
+   * ISO 3166-1 alpha-2 country of origin (customs + food labelling).
+   */
+  countryOfOrigin?: string | null;
+  origin?: ('produced' | 'purchased' | 'opening' | 'repackaged') | null;
+  /**
+   * Producing work-order (when origin = produced).
+   */
+  workOrder?: (string | null) | WorkOrder;
+  /**
+   * Goods receipt (when origin = purchased).
+   */
+  goodsReceipt?: (string | null) | GoodsReceipt;
+  /**
+   * Supplier of the lot (purchased origin).
+   */
+  supplier?: (string | null) | Vendor;
+  /**
+   * Supplier's own lot/batch number — preserves their traceability chain.
+   */
+  supplierBatchRef?: string | null;
+  /**
+   * Current storage location.
+   */
+  warehouseLocation?: (string | null) | WarehouseLocation;
+  /**
+   * Source lots consumed to make this one — EU 178/2002 Art 18 one-step-back. Forward trace = batches naming this as a parent.
+   */
+  parentBatches?: (string | Batch)[] | null;
+  /**
+   * QC inspection that released or rejected this lot.
+   */
+  qualityInspection?: (string | null) | QualityInspection;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Per-unit carrying cost (IAS-2 §23 specific identification). In cents.
+   */
+  unitCost?: number | null;
+  recall?: {
+    recalled?: boolean | null;
+    recallReference?: string | null;
+    recallDate?: string | null;
+    recallReason?: string | null;
+  };
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * ISO 9001 §8.7 nonconformance + §9.1 measurement records. Drives inventory write-offs for failed lots.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "quality-inspections".
+ */
+export interface QualityInspection {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Inspection reference (e.g. `QC-2026-04-0001`).
+   */
+  reference: string;
+  inspectionType: 'incoming' | 'in_process' | 'final' | 'complaint' | 'calibration';
+  item: string | Item;
+  inspectedQuantity: number;
+  /**
+   * For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.
+   */
+  sampleSize?: number | null;
+  /**
+   * Quantity that failed the inspection criteria.
+   */
+  failedQuantity?: number | null;
+  /**
+   * For in-process inspection — the WO this inspection ran against.
+   */
+  workOrder?: (string | null) | WorkOrder;
+  /**
+   * For incoming inspection — the GRN this inspection covers.
+   */
+  goodsReceipt?: (string | null) | GoodsReceipt;
+  /**
+   * For final inspection — the shipment this inspection releases.
+   */
+  shipment?: (string | null) | Shipment;
+  inspectionDate: string;
+  /**
+   * Inspector who performed the check.
+   */
+  inspector?: (string | null) | User;
+  outcome: 'pending' | 'passed' | 'failed' | 'conditional' | 'quarantined';
+  /**
+   * NCR detail — required when outcome = failed/conditional/quarantined.
+   */
+  failureReason?: string | null;
+  /**
+   * Corrective and Preventive Action reference (ISO 9001 §10.2).
+   */
+  capaReference?: string | null;
+  /**
+   * Auto-created `kind=write_off` movement for failed quantities.
+   */
+  inventoryMovement?: (string | null) | InventoryMovement;
+  status?: ('draft' | 'in_progress' | 'completed' | 'disputed') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Labor/time/cost roll-up: worker × work-center × time → wage (parallelism-aware), feeding IAS-2 cost-of-conversion.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -10502,7 +10435,7 @@ export interface Routing {
    */
   runTimeSecondsPerUnit?: number | null;
   /**
-   * UoM the run time is per (pcs/kg/L/m…) — discrete and process.
+   * UoM the run time is per (C62/KGM/LTR/MTR…) — discrete and process.
    */
   unitOfMeasure?: string | null;
   status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'cancelled') | null;
@@ -10567,7 +10500,7 @@ export interface OperationRun {
    */
   qtyBackordered?: number | null;
   /**
-   * UoM of the quantities (pcs/kg/L/m…) — discrete and process.
+   * UoM of the quantities (C62/KGM/LTR/MTR…) — discrete and process.
    */
   unitOfMeasure?: string | null;
   /**
@@ -10590,6 +10523,9 @@ export interface OperationRun {
         qtyOrdered?: number | null;
         qtyProduced?: number | null;
         qtyBackordered?: number | null;
+        /**
+         * UN/CEFACT Rec 20 unit code (C62=one, KGM, MTR, LTR, HUR, H87=piece…). Blank ⇒ C62.
+         */
         unitOfMeasure?: string | null;
         id?: string | null;
       }[]
@@ -10686,72 +10622,6 @@ export interface ProductionReceipt {
    */
   journalEntry?: (string | null) | JournalEntry;
   status?: ('draft' | 'posted' | 'reversed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * ISO 9001 §8.7 nonconformance + §9.1 measurement records. Drives inventory write-offs for failed lots.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "quality-inspections".
- */
-export interface QualityInspection {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Inspection reference (e.g. `QC-2026-04-0001`).
-   */
-  reference: string;
-  inspectionType: 'incoming' | 'in_process' | 'final' | 'complaint' | 'calibration';
-  item: string | Item;
-  inspectedQuantity: number;
-  /**
-   * For lot-acceptance sampling (ISO 2859) — how many of `inspectedQuantity` were tested.
-   */
-  sampleSize?: number | null;
-  /**
-   * Quantity that failed the inspection criteria.
-   */
-  failedQuantity?: number | null;
-  /**
-   * For in-process inspection — the WO this inspection ran against.
-   */
-  workOrder?: (string | null) | WorkOrder;
-  /**
-   * For incoming inspection — the GRN this inspection covers.
-   */
-  goodsReceipt?: (string | null) | GoodsReceipt;
-  /**
-   * For final inspection — the shipment this inspection releases.
-   */
-  shipment?: (string | null) | Shipment;
-  inspectionDate: string;
-  /**
-   * Inspector who performed the check.
-   */
-  inspector?: (string | null) | User;
-  outcome: 'pending' | 'passed' | 'failed' | 'conditional' | 'quarantined';
-  /**
-   * NCR detail — required when outcome = failed/conditional/quarantined.
-   */
-  failureReason?: string | null;
-  /**
-   * Corrective and Preventive Action reference (ISO 9001 §10.2).
-   */
-  capaReference?: string | null;
-  /**
-   * Auto-created `kind=write_off` movement for failed quantities.
-   */
-  inventoryMovement?: (string | null) | InventoryMovement;
-  status?: ('draft' | 'in_progress' | 'completed' | 'disputed') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -11429,6 +11299,9 @@ export interface MaintenanceWorkOrder {
         itemSku: string;
         description?: string | null;
         quantity: number;
+        /**
+         * UN/CEFACT Rec 20 unit code (C62=one, KGM, MTR, LTR, HUR, H87=piece…). Blank ⇒ C62.
+         */
         unitOfMeasure?: string | null;
         unitCost?: number | null;
         lineCost?: number | null;
@@ -11844,7 +11717,7 @@ export interface CustomsDeclaration {
     hsCode: string;
     quantity: number;
     /**
-     * WCO supplementary unit (KGM / EA / LTR / etc.).
+     * WCO supplementary unit (C62 / KGM / LTR / etc.).
      */
     unitOfMeasure?: string | null;
     /**
@@ -12006,7 +11879,7 @@ export interface ConsignmentInventory {
   itemSku: string;
   itemDescription?: string | null;
   /**
-   * UN/CEFACT REC 20 unit-of-measure code (e.g. EA, KG, L).
+   * UN/CEFACT Rec 20 unit-of-measure code (e.g. C62, KGM, LTR).
    */
   unitOfMeasure?: string | null;
   /**
@@ -12088,6 +11961,9 @@ export interface ConsignmentSale {
    */
   endCustomerRef?: string | null;
   quantitySold: number;
+  /**
+   * UN/CEFACT Rec 20 unit code (C62=one, KGM, MTR, LTR, HUR, H87=piece…). Blank ⇒ C62.
+   */
   unitOfMeasure?: string | null;
   /**
    * Per-unit selling price (cents).
@@ -12335,6 +12211,100 @@ export interface ApiAuditEvent {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "entity-types".
+ */
+export interface EntityType {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  code: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  applicableFrameworks?: (string | ComplianceFramework)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-frameworks".
+ */
+export interface ComplianceFramework {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  frameworkType: 'gaap' | 'ifrs' | 'sox' | 'coso' | 'gdpr' | 'iso' | 'regulatory' | 'other';
+  issuingBody?: string | null;
+  version?: string | null;
+  effectiveDate: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  applicableJurisdictions?: (string | TaxingJurisdiction)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "taxing-jurisdictions".
+ */
+export interface TaxingJurisdiction {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  name: string;
+  jurisdictionType: 'country' | 'state' | 'local' | 'special-zone';
+  isoCountryCode?: string | null;
+  isoRegionCode?: string | null;
+  currency?: string | null;
+  parent?: (string | null) | TaxingJurisdiction;
+  filingDeadlines?:
+    | {
+        description?: string | null;
+        dueDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "entity-legal-structures".
  */
 export interface EntityLegalStructure {
@@ -12369,29 +12339,18 @@ export interface EntityLegalStructure {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "internal-controls".
+ * via the `definition` "compliance-requirements".
  */
-export interface InternalControl {
+export interface ComplianceRequirement {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
    */
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
-  controlName: string;
-  controlType: 'preventive' | 'detective' | 'corrective' | 'compensating';
-  controlCategory:
-    | 'preventive-general'
-    | 'preventive-specific'
-    | 'detective-manual'
-    | 'detective-automated'
-    | 'corrective'
-    | 'monitoring'
-    | 'governance'
-    | 'user-access';
-  cosoComponent?:
-    | ('control-environment' | 'risk-assessment' | 'control-activities' | 'information-communication' | 'monitoring')
-    | null;
+  requirementName: string;
+  framework: string | ComplianceFramework;
+  requirementType: 'disclosure' | 'accounting' | 'control' | 'reporting' | 'policy' | 'attestation';
   description?: {
     root: {
       type: string;
@@ -12407,25 +12366,7 @@ export interface InternalControl {
     };
     [k: string]: unknown;
   } | null;
-  owner?: string | null;
-  frequency?: ('daily' | 'weekly' | 'monthly' | 'quarterly' | 'annually' | 'continuous') | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "control-tests".
- */
-export interface ControlTest {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  control: string | InternalControl;
-  testName: string;
-  testDesign?: {
+  testableStatement?: {
     root: {
       type: string;
       children: {
@@ -12440,12 +12381,7 @@ export interface ControlTest {
     };
     [k: string]: unknown;
   } | null;
-  samplingMethodology?: ('statistical' | 'judgmental' | 'all-items' | 'risk-based') | null;
-  sampleSize?: number | null;
-  testStatus?: ('not-started' | 'in-progress' | 'completed') | null;
-  result?: ('effective' | 'deviations' | 'not-operating' | 'unable-determine') | null;
-  deviationCount?: number | null;
-  deviationRate?: number | null;
+  applicableEntityTypes?: (string | EntityType)[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -12493,6 +12429,157 @@ export interface AuditSample {
     [k: string]: unknown;
   } | null;
   evidence?: (string | AuditEvidence)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "audit-evidence".
+ */
+export interface AuditEvidence {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  evidenceTitle: string;
+  documentType:
+    | 'pdf'
+    | 'screenshot'
+    | 'signed-approval'
+    | 'bank-statement'
+    | 'gl-printout'
+    | 'reconciliation'
+    | 'workpaper'
+    | 'audit-log'
+    | 'policy'
+    | 'other';
+  documentFile?: (string | null) | Media;
+  evidenceChain?:
+    | {
+        actor?: string | null;
+        action?: string | null;
+        actionDate?: string | null;
+        notes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  confidentiality?: ('public' | 'internal' | 'confidential' | 'restricted') | null;
+  retentionPeriod?: ('3-years' | '5-years' | '7-years' | '10-years' | 'indefinite') | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "compliance-gaps".
+ */
+export interface ComplianceGap {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  requirement: string | ComplianceRequirement;
+  gapTitle: string;
+  gapType:
+    | 'missing-control'
+    | 'design-deficiency'
+    | 'operating-deficiency'
+    | 'documentation-gap'
+    | 'resource-gap'
+    | 'system-gap'
+    | 'process-gap';
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  status?: ('identified' | 'under-review' | 'remediation-planned' | 'in-remediation' | 'closed') | null;
+  remediationPlan?: (string | null) | RemediationPlan;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "remediation-plans".
+ */
+export interface RemediationPlan {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  planTitle: string;
+  finding?: (string | null) | AuditFinding;
+  gap?: (string | null) | ComplianceGap;
+  remediationType:
+    | 'design-change'
+    | 'process-change'
+    | 'system-implementation'
+    | 'training'
+    | 'documentation'
+    | 'resource-addition'
+    | 'policy-update'
+    | 'organizational-change';
+  priority?: ('critical' | 'high' | 'medium' | 'low') | null;
+  owner?: string | null;
+  actionSteps?:
+    | {
+        sequence?: number | null;
+        description?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        stepOwner?: string | null;
+        targetDate?: string | null;
+        status?: ('not-started' | 'in-progress' | 'completed' | 'delayed') | null;
+        completedDate?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  targetDate: string;
+  completionDate?: string | null;
+  status?: ('planned' | 'in-progress' | 'completed' | 'delayed' | 'on-hold' | 'superseded') | null;
+  budget?: number | null;
+  riskOfDelay?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -14779,6 +14866,487 @@ export interface BeneficialOwner {
   createdAt: string;
 }
 /**
+ * An individual's assets/liabilities/income/expenses for KYC / creditworthiness (FATF R.10). Sensitive personal data — GDPR storage-limited.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "financial-profiles".
+ */
+export interface FinancialProfile {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Profile reference.
+   */
+  reference: string;
+  /**
+   * Name of the individual the profile is for.
+   */
+  personName: string;
+  /**
+   * Party this profile belongs to (polymorphic).
+   */
+  relatedParty?:
+    | ({
+        relationTo: 'customers';
+        value: string | Customer;
+      } | null)
+    | ({
+        relationTo: 'vendors';
+        value: string | Vendor;
+      } | null)
+    | ({
+        relationTo: 'beneficial-owners';
+        value: string | BeneficialOwner;
+      } | null)
+    | ({
+        relationTo: 'users';
+        value: string | User;
+      } | null);
+  /**
+   * KYC/CDD check this profile supports.
+   */
+  kycCheck?: (string | null) | KycCheck;
+  /**
+   * ISO 8601 — date the financial position is stated as of.
+   */
+  asOfDate?: string | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Itemised assets (JSON) — e.g. property, deposits, investments.
+   */
+  assets?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Itemised liabilities (JSON) — e.g. mortgages, loans.
+   */
+  liabilities?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Itemised income sources (JSON) — e.g. salary, dividends.
+   */
+  incomeSources?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Itemised recurring expenses (JSON).
+   */
+  expenses?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Σ assets − Σ liabilities (minor units). Derived.
+   */
+  netWorth?: number | null;
+  status?: ('draft' | 'submitted' | 'verified' | 'expired') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Logistic handling unit (GS1 SSCC). Self-referential nesting (pallet → carton → contents). The packing list is the set of packages on a shipment.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "packages".
+ */
+export interface Package {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Package reference / handling-unit id.
+   */
+  reference: string;
+  /**
+   * GS1 AI(00) Serial Shipping Container Code (18 digits) — globally unique transport-unit id.
+   */
+  sscc?: string | null;
+  type?: ('pallet' | 'carton' | 'case' | 'crate' | 'container' | 'bag' | 'roll' | 'drum') | null;
+  /**
+   * Containing handling unit (e.g. the pallet a carton sits on). Self-referential nesting.
+   */
+  parentPackage?: (string | null) | Package;
+  /**
+   * Shipment this package belongs to. The packing list = all packages on a shipment.
+   */
+  shipment?: (string | null) | Shipment;
+  /**
+   * Item/lot lines packed in this unit (etrima pack_items).
+   */
+  contents?:
+    | {
+        item: string | Item;
+        /**
+         * Lot/batch of the packed quantity — keeps traceability through packing.
+         */
+        batch?: (string | null) | Batch;
+        quantity: number;
+        /**
+         * UN/CEFACT Rec 20 unit code (C62=one, KGM, MTR, LTR, HUR, H87=piece…). Blank ⇒ C62.
+         */
+        unitOfMeasure?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  measurements?: {
+    /**
+     * Gross weight incl. packaging.
+     */
+    grossWeight?: number | null;
+    /**
+     * Net weight of contents.
+     */
+    netWeight?: number | null;
+    /**
+     * UN/CEFACT Rec 20 mass unit (KGM/GRM/LBR).
+     */
+    weightUnitOfMeasure?: string | null;
+    length?: number | null;
+    width?: number | null;
+    height?: number | null;
+    /**
+     * UN/CEFACT Rec 20 length unit (CMT/MTR/INH).
+     */
+    dimensionUnitOfMeasure?: string | null;
+  };
+  /**
+   * Staging / storage location of the package.
+   */
+  warehouseLocation?: (string | null) | WarehouseLocation;
+  status?: ('packing' | 'sealed' | 'staged' | 'loaded' | 'shipped' | 'delivered' | 'returned') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Denomination-level cash count reconciled against the POS/fiscal Z-report. Dual-control (counter vs verifier) per SOX §404 + BG Наредба Н-18.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cash-counts".
+ */
+export interface CashCount {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Cash-count reference (e.g. `CC-2026-05-30-T1`).
+   */
+  reference: string;
+  /**
+   * ISO 8601 — business date of the count.
+   */
+  countDate: string;
+  countType?: ('opening' | 'shift_end' | 'daily' | 'spot') | null;
+  /**
+   * POS terminal / till counted.
+   */
+  terminal?: (string | null) | Terminal;
+  /**
+   * Fiscal device (ФУ) whose Z-report is the expected figure.
+   */
+  fiscalDevice?: (string | null) | FiscalDevice;
+  /**
+   * Shift this count closes (when countType = shift_end).
+   */
+  workShift?: (string | null) | WorkShift;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Count by note/coin face value. subtotal = faceValue × count.
+   */
+  denominations?:
+    | {
+        /**
+         * Denomination face value in minor units (cents/stotinki).
+         */
+        faceValue: number;
+        kind?: ('note' | 'coin') | null;
+        count: number;
+        /**
+         * faceValue × count, in minor units.
+         */
+        subtotal?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Σ denomination subtotals — physical cash counted, in minor units.
+   */
+  countedTotal?: number | null;
+  /**
+   * Expected cash from POS/fiscal Z-report, in minor units.
+   */
+  expectedTotal?: number | null;
+  /**
+   * countedTotal − expectedTotal (over/short), in minor units.
+   */
+  variance?: number | null;
+  /**
+   * JE booking any cash over/short to the variance account.
+   */
+  journalEntry?: (string | null) | JournalEntry;
+  status?: ('draft' | 'counted' | 'verified' | 'reconciled' | 'discrepancy') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Internal request to disburse a payment. Requester ≠ approver (SOX §404 segregation of duties); fulfilled by a payment-run or payment.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-requests".
+ */
+export interface PaymentRequest {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Request reference (e.g. `PR-2026-0042`).
+   */
+  reference: string;
+  /**
+   * ISO 8601 — date the request was raised.
+   */
+  requestDate: string;
+  /**
+   * Name of the person requesting (free text; `createdBy` is the system user).
+   */
+  requesterName: string;
+  /**
+   * Payee name as it should appear on the instrument.
+   */
+  payee: string;
+  /**
+   * Vendor master record, when the payee is a known vendor.
+   */
+  vendor?: (string | null) | Vendor;
+  /**
+   * Requested amount in minor units (cents).
+   */
+  amount: number;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Business purpose of the disbursement (the control narrative).
+   */
+  purpose: string;
+  glAccount?: (string | null) | GlAccount;
+  accountNumber?: string | null;
+  accountName?: string | null;
+  /**
+   * Requested method (check / transfer / SEPA).
+   */
+  paymentMethod?: (string | null) | PaymentMethod;
+  /**
+   * ISO 8601 — date by which payment is needed.
+   */
+  dueDate?: string | null;
+  status?: ('pending' | 'approved' | 'rejected' | 'completed' | 'cancelled') | null;
+  /**
+   * Payment run that fulfilled this request.
+   */
+  paymentRun?: (string | null) | PaymentRun;
+  /**
+   * Payment record that settled this request.
+   */
+  payment?: (string | null) | Payment;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Idempotent inbound webhook log from external providers. externalEventId is the dedup key; raw payload kept for replay (never card data — PCI-DSS).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gateway-events".
+ */
+export interface GatewayEvent {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  provider: 'stripe' | 'paypal' | 'adyen' | 'gocardless' | 'wise' | 'bank_psd2' | 'peppol' | 'other';
+  /**
+   * Provider's event id (e.g. Stripe `evt_…`). Idempotency key — unique.
+   */
+  externalEventId: string;
+  /**
+   * Provider event type (e.g. `payment_intent.succeeded`).
+   */
+  eventType: string;
+  /**
+   * Whether the webhook signature (HMAC) was verified before processing.
+   */
+  signatureVerified?: boolean | null;
+  /**
+   * Raw event envelope for replay/audit. MUST NOT contain PAN / full card data (PCI-DSS §3).
+   */
+  payload?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Polymorphic link to the erpax record this event acted on.
+   */
+  relatedDocument?:
+    | ({
+        relationTo: 'invoices';
+        value: string | Invoice;
+      } | null)
+    | ({
+        relationTo: 'payments';
+        value: string | Payment;
+      } | null)
+    | ({
+        relationTo: 'subscriptions';
+        value: string | Subscription;
+      } | null)
+    | ({
+        relationTo: 'refunds';
+        value: string | Refund;
+      } | null);
+  /**
+   * ISO 8601 — when the event was received.
+   */
+  receivedAt: string;
+  /**
+   * ISO 8601 — when processing completed.
+   */
+  processedAt?: string | null;
+  /**
+   * Processing attempts so far.
+   */
+  retryCount?: number | null;
+  /**
+   * Last processing error, if any.
+   */
+  error?: string | null;
+  status?: ('received' | 'processing' | 'processed' | 'failed' | 'ignored') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Internal message between users (subject/body, threaded via parentMessage). Attachable to any record. Distinct from polymorphic record comments.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "messages".
+ */
+export interface Message {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 4122 §4.3 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  subject: string;
+  body: string;
+  priority?: ('high' | 'normal' | 'low') | null;
+  /**
+   * Addressed recipients (Rails messages_users join).
+   */
+  recipients?: (string | User)[] | null;
+  /**
+   * Message this one replies to — thread root chain (replaces Rails ancestry).
+   */
+  parentMessage?: (string | null) | Message;
+  /**
+   * Optional business record this message concerns.
+   */
+  relatedDocument?:
+    | ({
+        relationTo: 'invoices';
+        value: string | Invoice;
+      } | null)
+    | ({
+        relationTo: 'customers';
+        value: string | Customer;
+      } | null)
+    | ({
+        relationTo: 'vendors';
+        value: string | Vendor;
+      } | null)
+    | ({
+        relationTo: 'sales-orders';
+        value: string | SalesOrder;
+      } | null)
+    | ({
+        relationTo: 'purchase-orders';
+        value: string | PurchaseOrder;
+      } | null);
+  /**
+   * ISO 8601 — when the message was first read.
+   */
+  readAt?: string | null;
+  status?: ('unread' | 'read' | 'archived') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -15018,7 +15586,7 @@ export interface BiologicalAsset {
    */
   unitsOnHand: number;
   /**
-   * head / kg / ha / m³.
+   * UN/CEFACT Rec 20 — C62 (head/count), KGM, HAR (hectare), MTQ (m³).
    */
   unitOfMeasure?: string | null;
   /**
@@ -22589,6 +23157,47 @@ export interface BillsOfMaterialsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "batches_select".
+ */
+export interface BatchesSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  item?: T;
+  quantity?: T;
+  unitOfMeasure?: T;
+  remainingQuantity?: T;
+  status?: T;
+  manufactureDate?: T;
+  expiryDate?: T;
+  receivedDate?: T;
+  countryOfOrigin?: T;
+  origin?: T;
+  workOrder?: T;
+  goodsReceipt?: T;
+  supplier?: T;
+  supplierBatchRef?: T;
+  warehouseLocation?: T;
+  parentBatches?: T;
+  qualityInspection?: T;
+  currency?: T;
+  unitCost?: T;
+  recall?:
+    | T
+    | {
+        recalled?: T;
+        recallReference?: T;
+        recallDate?: T;
+        recallReason?: T;
+      };
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "work-centers_select".
  */
 export interface WorkCentersSelect<T extends boolean = true> {
@@ -23556,15 +24165,23 @@ export interface InternalControlsSelect<T extends boolean = true> {
 export interface ControlTestsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  control?: T;
-  testName?: T;
+  title?: T;
   testDesign?: T;
+  control?: T;
   samplingMethodology?: T;
-  sampleSize?: T;
+  plannedSampleSize?: T;
+  actualSampleSize?: T;
+  toleranceLevel?: T;
+  assertion?: T;
   testStatus?: T;
+  testedDate?: T;
   result?: T;
   deviationCount?: T;
   deviationRate?: T;
+  deviationsSummary?: T;
+  conclusionOnEffectiveness?: T;
+  reviewDate?: T;
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23632,17 +24249,30 @@ export interface AuditEvidenceSelect<T extends boolean = true> {
 export interface AuditFindingsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
-  findingTitle?: T;
+  title?: T;
+  description?: T;
   findingType?: T;
   severity?: T;
-  description?: T;
-  rootCause?: T;
-  potentialImpact?: T;
+  relatedControl?: T;
+  relatedControlTest?: T;
   frequencyOfOccurrence?: T;
+  potentialImpact?: T;
+  identifiedDate?: T;
+  identifiedBy?: T;
+  rootCause?: T;
   riskCategory?: T;
   status?: T;
-  evidence?: T;
-  remediationPlan?: T;
+  managementResponse?: T;
+  managementResponseDate?: T;
+  priorYearReference?: T;
+  communicatedTo?:
+    | T
+    | {
+        recipient?: T;
+        communicationDate?: T;
+        id?: T;
+      };
+  isActive?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -24541,6 +25171,178 @@ export interface BeneficialOwnersSelect<T extends boolean = true> {
   approvedBy?: T;
   approvedAt?: T;
   notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "financial-profiles_select".
+ */
+export interface FinancialProfilesSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  personName?: T;
+  relatedParty?: T;
+  kycCheck?: T;
+  asOfDate?: T;
+  currency?: T;
+  assets?: T;
+  liabilities?: T;
+  incomeSources?: T;
+  expenses?: T;
+  netWorth?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "packages_select".
+ */
+export interface PackagesSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  sscc?: T;
+  type?: T;
+  parentPackage?: T;
+  shipment?: T;
+  contents?:
+    | T
+    | {
+        item?: T;
+        batch?: T;
+        quantity?: T;
+        unitOfMeasure?: T;
+        id?: T;
+      };
+  measurements?:
+    | T
+    | {
+        grossWeight?: T;
+        netWeight?: T;
+        weightUnitOfMeasure?: T;
+        length?: T;
+        width?: T;
+        height?: T;
+        dimensionUnitOfMeasure?: T;
+      };
+  warehouseLocation?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cash-counts_select".
+ */
+export interface CashCountsSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  countDate?: T;
+  countType?: T;
+  terminal?: T;
+  fiscalDevice?: T;
+  workShift?: T;
+  currency?: T;
+  denominations?:
+    | T
+    | {
+        faceValue?: T;
+        kind?: T;
+        count?: T;
+        subtotal?: T;
+        id?: T;
+      };
+  countedTotal?: T;
+  expectedTotal?: T;
+  variance?: T;
+  journalEntry?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payment-requests_select".
+ */
+export interface PaymentRequestsSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  requestDate?: T;
+  requesterName?: T;
+  payee?: T;
+  vendor?: T;
+  amount?: T;
+  currency?: T;
+  purpose?: T;
+  glAccount?: T;
+  accountNumber?: T;
+  accountName?: T;
+  paymentMethod?: T;
+  dueDate?: T;
+  status?: T;
+  paymentRun?: T;
+  payment?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gateway-events_select".
+ */
+export interface GatewayEventsSelect<T extends boolean = true> {
+  uuid?: T;
+  provider?: T;
+  externalEventId?: T;
+  eventType?: T;
+  signatureVerified?: T;
+  payload?: T;
+  relatedDocument?: T;
+  receivedAt?: T;
+  processedAt?: T;
+  retryCount?: T;
+  error?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "messages_select".
+ */
+export interface MessagesSelect<T extends boolean = true> {
+  uuid?: T;
+  subject?: T;
+  body?: T;
+  priority?: T;
+  recipients?: T;
+  parentMessage?: T;
+  relatedDocument?: T;
+  readAt?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -27018,6 +27820,7 @@ export interface TaskCreateCollectionExport {
       | 'workflow-definitions'
       | 'workflow-instances'
       | 'bills-of-materials'
+      | 'batches'
       | 'work-centers'
       | 'work-shifts'
       | 'operations'
@@ -27083,6 +27886,12 @@ export interface TaskCreateCollectionExport {
       | 'data-processing-activities'
       | 'kyc-checks'
       | 'beneficial-owners'
+      | 'financial-profiles'
+      | 'packages'
+      | 'cash-counts'
+      | 'payment-requests'
+      | 'gateway-events'
+      | 'messages'
       | 'csrd-disclosures'
       | 'carbon-emissions'
       | 'biological-assets'

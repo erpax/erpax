@@ -1,3 +1,14 @@
+/**
+ * Audit Findings — issues raised by internal/external auditors against controls.
+ *
+ * Single-folder collection node (code + standard banner + the audit hook/tool;
+ * skill/tests co-locate here). One folder per collection ⇒ no scatter ⇒ no drift.
+ *
+ * @standard ISO-19011:2018 audit-finding
+ * @standard ISO/IEC-27007:2020 ISMS-auditing
+ * @compliance SOX §404 internal-controls deficiency-tracking
+ * @audit ISO-19011:2018 audit-trail
+ */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '../../access/authenticated'
 import { adminOnly } from '../../access/auth'

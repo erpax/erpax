@@ -163,6 +163,7 @@ export { default as WorkflowInstances } from './WorkflowInstances'
 
 // Manufacturing
 export { default as BillsOfMaterials } from './BillsOfMaterials'
+export { default as Batches } from './Batches'
 export { default as ProductionReceipts } from './ProductionReceipts'
 export { default as QualityInspections } from './QualityInspections'
 export { default as WipSnapshots } from './WipSnapshots'
@@ -207,13 +208,13 @@ export { EntityLegalStructures } from './Phase1/EntityLegalStructures'
 export { ComplianceFrameworks } from './Phase1/ComplianceFrameworks'
 export { ComplianceRequirements } from './Phase1/ComplianceRequirements'
 export { InternalControls } from './Phase1/InternalControls'
-export { ControlTests } from './Phase1/ControlTests'
+export { ControlTests } from './ControlTests'
 
 // Phase 2-3: Control & Testing, Evidence & Findings (6 collections)
 export { AuditSamples } from './Phase2-3/AuditSamples'
 export { ComplianceGaps } from './Phase2-3/ComplianceGaps'
 export { AuditEvidence } from './Phase2-3/AuditEvidence'
-export { AuditFindings } from './Phase2-3/AuditFindings'
+export { AuditFindings } from './AuditFindings'
 export { AuditTrailEvents } from './Phase2-3/AuditTrailEvents'
 export { RemediationPlans } from './Phase2-3/RemediationPlans'
 
@@ -253,6 +254,18 @@ export { default as DataProcessingActivities } from './DataProcessingActivities'
 // AML / KYC
 export { default as KycChecks } from './KycChecks'
 export { default as BeneficialOwners } from './BeneficialOwners'
+export { default as FinancialProfiles } from './FinancialProfiles'
+
+// Logistics & packing
+export { default as Packages } from './Packages'
+
+// Treasury & disbursement controls
+export { default as CashCounts } from './CashCounts'
+export { default as PaymentRequests } from './PaymentRequests'
+
+// Integrations & messaging
+export { default as GatewayEvents } from './GatewayEvents'
+export { default as Messages } from './Messages'
 
 // Sustainability & ESG
 export { default as CsrdDisclosures } from './CsrdDisclosures'

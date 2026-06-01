@@ -1,3 +1,13 @@
+/**
+ * Control Tests — SOX §404 testing evidence (sampling, assertion, results).
+ *
+ * Single-folder collection node (code + standard banner + the audit hook/tool;
+ * skill/tests co-locate here). One folder per collection ⇒ no scatter ⇒ no drift.
+ *
+ * @standard ISO-19011:2018 audit-sampling
+ * @compliance SOX §404 internal-controls testing-evidence
+ * @audit ISO-19011:2018 audit-trail
+ */
 import type { CollectionConfig } from 'payload'
 import { authenticated } from '../../access/authenticated'
 import { adminOnly } from '../../access/auth'
