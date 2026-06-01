@@ -206,6 +206,9 @@ src/collections/Carriers/index.ts:13: * @standard IMDG-Code maritime-dangerous-g
 src/collections/Carriers/index.ts:14: * @standard UPU-S10 universal-postal-union shipment-identifier
 src/collections/Categories/index.ts:15: * @standard schema.org Category
 src/collections/Categories/index.ts:16: * @standard schema.org DefinedTerm taxonomic-term
+src/collections/Chat/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
+src/collections/Chat/index.ts:16: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
+src/collections/Chat/index.ts:17: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/collections/CommitmentsAndContingencies/index.ts:13: * @standard ISO-8601-1:2019 date-time
 src/collections/CommitmentsAndContingencies/index.ts:14: * @standard ISO-4217:2015 currency-codes
 src/collections/Competencies/index.ts:14: * @standard ESCO v1.2 skills-pillar mono-hierarchy four-sub-classifications reusability-tiers
@@ -1195,10 +1198,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1202:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1220:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1221:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1240:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1206:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1224:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1225:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1244:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1209,6 +1212,8 @@ src/plugins/auth/access/predicates.ts:7: * @standard NIST INCITS-359-2012 role-b
 src/plugins/naming/index.ts:28: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
 src/sdk/accounting-client/index.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
+src/self/sufficient/index.ts:25: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
+src/self/sufficient/index.ts:26: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
 src/services/AuditComplianceReporting/index.ts:15: * @standard SAF-T:3.0.2 Standard Audit File (Tax)
 src/services/AuditComplianceReporting/index.ts:16: * @standard OECD Transfer Pricing Guidelines:2022 Documentation Section
 src/services/AuditComplianceReporting/index.ts:17: * @standard IAS-1:2023 Presentation of Financial Statements (disclosure)
@@ -1272,14 +1277,21 @@ src/services/accounting/utilities/calculations.ts:8: * @standard IEEE-754-2019 b
 src/services/accounting/utilities/depreciation-methods.test.ts:12: * @standard ISO/IEC-29119:2022 software-testing
 src/services/accounting/utilities/depreciation-methods.test.ts:13: * @standard ISO-4217:2015 currency-codes
 src/services/accounting/utilities/period-lock.ts:15: * @standard ISO-8601-1:2019 date-time utc-canonical-form
+src/services/agent-sync/chat-broadcast.ts:22: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
+src/services/agent-sync/chat-broadcast.ts:23: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
+src/services/agent-sync/discovery.ts:19: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
+src/services/agent-sync/discovery.ts:20: * @standard RFC 9562 §5.8 content-uuid contribution-identity (the merge key)
 src/services/agent-sync/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/services/agent-sync/index.ts:16: * @standard RFC-6455 websocket
 src/services/agent-sync/index.ts:17: * @standard RFC-4122 §4.3 content-uuid event-identity (idempotency key)
 src/services/agent-sync/index.ts:52: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
+src/services/agent-sync/payload-chat.ts:20: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
+src/services/agent-sync/payload-chat.ts:21: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/services/agent-sync/society.ts:21: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/services/agent-sync/society.ts:22: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/services/agent-sync/society.ts:23: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/services/agent/index.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
+src/services/agent/team.ts:17: * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
 src/services/agents/blocks.ts:38: * @standard W3C Web Components (composition pattern)
 src/services/agents/blocks.ts:39: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
 src/services/agents/bootstrap.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
@@ -1955,6 +1967,8 @@ src/services/self-closure/types.ts:49: * @standard ISO 27001 Annex A.17 informat
 src/services/self-closure/types.ts:50: * @standard NIST SP 800-34 Rev. 1 §3.4 contingency planning
 src/services/self-closure/types.ts:51: * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
 src/services/self-reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness (self-coherence)
+src/services/shred/index.ts:16: * @standard GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)
+src/services/shred/index.ts:17: * @standard NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)
 src/services/signal/index.ts:16: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
 src/services/social-graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
 src/services/spec-generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
@@ -4186,9 +4200,9 @@ src/jobs/dunningJob/index.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss 
 src/jobs/dunningJob/index.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob/index.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob/index.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1200:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1201:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1222:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1204:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1205:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1226:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client/index.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client/index.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -5296,11 +5310,13 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1203:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1223:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1241:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1207:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1227:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1245:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client/index.ts:11: * @audit ISO-19011:2018 audit-trail
+src/self/sufficient/index.ts:27: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
+src/self/sufficient/index.ts:28: * @audit Conservation Law 54 (universal identity element — every case already defined)
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/services/accounting/factories/collection-factory.test.ts:14: * @audit ISO 19011:2018 §6.4.6 — regression-guard for shared-field collision
 src/services/accounting/factories/collection-factory.ts:227: * @audit ISO 19011:2018 §6.4.6 — backwards-compat path for collections
@@ -5316,6 +5332,8 @@ src/services/accounting/utilities/bank-reconciliation-report.test.ts:26: * @audi
 src/services/accounting/utilities/calculations.ts:199: * @audit ISO-19011:2018 audit-trail aging-of-outstanding-items
 src/services/accounting/utilities/depreciation-methods.test.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence
 src/services/accounting/utilities/period-lock.ts:21: * @audit ISO-19011:2018 audit-trail
+src/services/agent-sync/discovery.ts:21: * @audit Conservation Law 8 content-uuid · Law 62 coverage (each fill ↑ coverage)
+src/services/agent/team.ts:18: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
 src/services/agents/blocks.ts:40: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
 src/services/agents/mcp/auto-generated.ts:40: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
 src/services/agents/mcp/dry-clean.test.ts:16: * @audit Conservation Law 50 mcp-dry-cleanliness
@@ -5553,6 +5571,7 @@ src/services/self-closure/providers/search.ts:27: * @audit Conservation Law 53 s
 src/services/self-closure/providers/signing.ts:58: * @audit Conservation Law 53 self-referential-closure
 src/services/self-closure/types.ts:52: * @audit Conservation Law 53 self-referential-closure
 src/services/self-reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
+src/services/shred/index.ts:18: * @audit content-uuid over the CipherEnvelope ⇒ shred preserves the chain (Law 8/55/60)
 src/services/spec-generator/chain-registry-generator.ts:17: * @audit ISO 19011:2018 §6.4.6 spec-traceability
 src/services/spec-generator/e2e-spec-extractor.ts:26: * @audit single-source-of-truth: spec ↔ generated captions
 src/services/spec-generator/evidence-collector.ts:41: * @audit ISO-27001 A.5.36 conformance-with-policies
