@@ -1567,6 +1567,7 @@ src/services/consistency-apply/index.ts:355: * @standard ISO/IEC-29119:2022 soft
 src/services/consistency-apply/index.ts:417: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
 src/services/consistency-apply/index.ts:418: * @standard WCAG-2.1-AA contrast text-spacing
 src/services/consistency-apply/index.ts:524: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/services/constitution/index.ts:13: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
 src/services/country-api-clients/index.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/country-api-clients/index.ts:338: * @standard ISO-4217:2015 currency-codes
 src/services/country-api-clients/index.ts:339: * @standard ISO-8601-1:2019 date-time
@@ -3578,6 +3579,7 @@ src/services/bank-reconciliation.service/index.ts:651:   * @compliance SOX §404
 src/services/bulk-ops/index.ts:17: * @compliance SOX §404 internal-controls bulk-import-completeness
 src/services/business-chains/run-chain.ts:12: * @compliance SOX §404 internal-controls process-evidence
 src/services/business-chains/types.ts:22: * @compliance SOX §404 internal-controls process-evidence
+src/services/constitution/index.ts:14: * @compliance Venice Commission Rule of Law (entrenched fundamental guarantees)
 src/services/country-api-clients/index.ts:516: * @compliance EU 2006/112/EC vat-system-directive Art.214
 src/services/country-api-clients/index.ts:548: * @compliance AMLD-5 ubo-screening
 src/services/country-api-clients/index.ts:549: * @compliance EU 2580/2001 cfsp-restrictive-measures
@@ -3623,6 +3625,8 @@ src/services/sales/sale-immutability.ts:15: * @compliance SOX §404 internal-con
 src/services/scheduled-tasks/registry.ts:23: * @compliance SOX §404 internal-controls automated-controls
 src/services/scheduled-tasks/registry.ts:24: * @compliance GDPR Art.5(1)(e) storage-limitation (retention purges)
 src/services/scheduled-tasks/runner.ts:16: * @compliance SOX §404 internal-controls automated-controls
+src/services/separation/index.ts:12: * @compliance Montesquieu separation-of-powers (legislative · executive · judicial)
+src/services/separation/index.ts:13: * @compliance SOX §404 segregation-of-duties (the same invariant, public-office scale)
 src/services/spec-generator/evidence-collector.ts:40: * @compliance SOX §404 process-walk-through-controls
 src/services/spec-generator/extractor.ts:15: *   @compliance    <body> <id> [free-text]      ← alias for @standard
 src/services/spec-generator/marketing-page-generator.ts:44: * @compliance SOX §404 process-walk-through-controls
