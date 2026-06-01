@@ -234,7 +234,6 @@ export interface Config {
     'data-processing-activities': DataProcessingActivity;
     'kyc-checks': KycCheck;
     'beneficial-owners': BeneficialOwner;
-    'financial-profiles': FinancialProfile;
     packages: Package;
     'payment-requests': PaymentRequest;
     'gateway-events': GatewayEvent;
@@ -486,7 +485,6 @@ export interface Config {
     'data-processing-activities': DataProcessingActivitiesSelect<false> | DataProcessingActivitiesSelect<true>;
     'kyc-checks': KycChecksSelect<false> | KycChecksSelect<true>;
     'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
-    'financial-profiles': FinancialProfilesSelect<false> | FinancialProfilesSelect<true>;
     packages: PackagesSelect<false> | PackagesSelect<true>;
     'payment-requests': PaymentRequestsSelect<false> | PaymentRequestsSelect<true>;
     'gateway-events': GatewayEventsSelect<false> | GatewayEventsSelect<true>;
@@ -15252,118 +15250,6 @@ export interface BeneficialOwner {
   createdAt: string;
 }
 /**
- * An individual's assets/liabilities/income/expenses for KYC / creditworthiness (FATF R.10). Sensitive personal data — GDPR storage-limited.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "financial-profiles".
- */
-export interface FinancialProfile {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  /**
-   * Profile reference.
-   */
-  reference: string;
-  /**
-   * Name of the individual the profile is for.
-   */
-  personName: string;
-  /**
-   * Party this profile belongs to (polymorphic).
-   */
-  relatedParty?:
-    | ({
-        relationTo: 'customers';
-        value: string | Customer;
-      } | null)
-    | ({
-        relationTo: 'vendors';
-        value: string | Vendor;
-      } | null)
-    | ({
-        relationTo: 'beneficial-owners';
-        value: string | BeneficialOwner;
-      } | null)
-    | ({
-        relationTo: 'users';
-        value: string | User;
-      } | null);
-  /**
-   * KYC/CDD check this profile supports.
-   */
-  kycCheck?: (string | null) | KycCheck;
-  /**
-   * ISO 8601 — date the financial position is stated as of.
-   */
-  asOfDate?: string | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  currency?: string | null;
-  /**
-   * Itemised assets (JSON) — e.g. property, deposits, investments.
-   */
-  assets?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Itemised liabilities (JSON) — e.g. mortgages, loans.
-   */
-  liabilities?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Itemised income sources (JSON) — e.g. salary, dividends.
-   */
-  incomeSources?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Itemised recurring expenses (JSON).
-   */
-  expenses?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  /**
-   * Σ assets − Σ liabilities (minor units). Derived.
-   */
-  netWorth?: number | null;
-  status?: ('draft' | 'submitted' | 'verified' | 'expired') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
  * Logistic handling unit (GS1 SSCC). Self-referential nesting (pallet → carton → contents). The packing list is the set of packages on a shipment.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19353,10 +19239,6 @@ export interface Search {
     | {
         relationTo: 'fair-value-measurements';
         value: string | FairValueMeasurement;
-      }
-    | {
-        relationTo: 'financial-profiles';
-        value: string | FinancialProfile;
       }
     | {
         relationTo: 'financial-statements';
@@ -26588,31 +26470,6 @@ export interface BeneficialOwnersSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "financial-profiles_select".
- */
-export interface FinancialProfilesSelect<T extends boolean = true> {
-  uuid?: T;
-  reference?: T;
-  personName?: T;
-  relatedParty?: T;
-  kycCheck?: T;
-  asOfDate?: T;
-  currency?: T;
-  assets?: T;
-  liabilities?: T;
-  incomeSources?: T;
-  expenses?: T;
-  netWorth?: T;
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "packages_select".
  */
 export interface PackagesSelect<T extends boolean = true> {
@@ -29307,7 +29164,6 @@ export interface TaskCreateCollectionExport {
       | 'data-processing-activities'
       | 'kyc-checks'
       | 'beneficial-owners'
-      | 'financial-profiles'
       | 'packages'
       | 'payment-requests'
       | 'gateway-events'

@@ -257,7 +257,6 @@ export { default as DataProcessingActivities } from './DataProcessingActivities'
 // AML / KYC
 export { default as KycChecks } from './Customers/KycChecks'
 export { default as BeneficialOwners } from './LegalEntities/BeneficialOwners'
-export { default as FinancialProfiles } from './FinancialProfiles'
 
 // Logistics & packing
 export { default as Packages } from './Items/Packages'

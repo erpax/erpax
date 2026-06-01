@@ -223,7 +223,6 @@ const {
   DataProcessingActivities,
   KycChecks,
   BeneficialOwners,
-  FinancialProfiles,
   Packages,
   PaymentRequests,
   GatewayEvents,
@@ -692,7 +691,6 @@ export default buildConfig({
     // AML / KYC (3)
     KycChecks,
     BeneficialOwners,
-    FinancialProfiles,
     // Logistics, treasury, integrations & messaging (5)
     Packages,
     PaymentRequests,

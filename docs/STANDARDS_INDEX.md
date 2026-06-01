@@ -351,8 +351,6 @@ src/collections/FairValueMeasurements/index.ts:15: * @standard IFRS IFRS-13 §93
 src/collections/FairValueMeasurements/index.ts:16: * @standard US-GAAP ASC-820 fair-value-measurement
 src/collections/FairValueMeasurements/index.ts:17: * @standard ISO-4217:2015 currency-codes
 src/collections/FairValueMeasurements/index.ts:18: * @standard ISO-8601-1:2019 date-time measurement-date
-src/collections/FinancialProfiles/index.ts:13: * @standard ISO-4217:2015 currency-codes
-src/collections/FinancialProfiles/index.ts:14: * @standard ISO-8601-1:2019 date-time as-of-date
 src/collections/FinancialStatements/index.ts:16: * @standard ISO-4217:2015 currency-codes
 src/collections/FinancialStatements/index.ts:17: * @standard ISO-8601-1:2019 date-time fiscal-period-end generated-at issued-at approved-at
 src/collections/FinancialStatements/index.ts:18: * @standard BCP-47 language-tag
@@ -1210,10 +1208,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1210:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1228:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1229:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1248:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1208:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1226:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1227:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1246:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -3221,9 +3219,6 @@ src/collections/EntityTypes/index.ts:12: * @compliance SOX §302 entity-type-det
 src/collections/EvidenceAttestations/index.ts:18: * @compliance SOX §404 internal-controls process-walk-through
 src/collections/EvidenceAttestations/index.ts:19: * @compliance EU 910/2014 eidas qualified-electronic-signature
 src/collections/FairValueMeasurements/index.ts:20: * @compliance SOX §404 internal-controls TOM-FV-01 valuation-process
-src/collections/FinancialProfiles/index.ts:15: * @compliance FATF Recommendation 10 customer-due-diligence
-src/collections/FinancialProfiles/index.ts:16: * @compliance EU AMLD5 (Directive 2018/843) beneficial-owner-financials
-src/collections/FinancialProfiles/index.ts:17: * @compliance GDPR Art 5(1)(c) data-minimisation Art 5(1)(e) storage-limitation
 src/collections/FinancialStatements/index.ts:25: * @compliance SOX §302 disclosure-controls
 src/collections/FinancialStatements/index.ts:26: * @compliance SOX §404 internal-controls
 src/collections/FiscalDevices/Sales/index.ts:27: * @compliance SOX §404 internal-controls
@@ -4193,9 +4188,9 @@ src/jobs/dunningJob/index.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss 
 src/jobs/dunningJob/index.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob/index.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob/index.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1208:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1209:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1230:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1206:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1207:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1228:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client/index.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client/index.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4616,7 +4611,6 @@ src/collections/Employees/index.ts:24: * @security ISO-27001 A.5.23 cloud-servic
 src/collections/Employees/index.ts:25: * @security ISO-27002 §5.34 privacy-and-protection-of-pii
 src/collections/Employees/index.ts:26: * @security ISO-27002 §8.11 data-masking
 src/collections/FairValueMeasurements/index.ts:21: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
-src/collections/FinancialProfiles/index.ts:18: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation A.8.12 data-leakage-prevention
 src/collections/FinancialStatements/index.ts:27: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/FinancialStatements/index.ts:28: * @security ISO-27002 §5.4 segregation-of-duties certifier-vs-preparer
 src/collections/FiscalDevices/Sales/index.ts:28: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5077,7 +5071,6 @@ src/collections/Employees/WorkShifts/index.ts:16: * @audit ISO-19011:2018 audit-
 src/collections/Employees/index.ts:19: * @audit ISO-19011:2018 audit-trail employee-master
 src/collections/EvidenceAttestations/index.ts:17: * @audit ISO-19011:2018 audit-trail attestation-evidence
 src/collections/FairValueMeasurements/index.ts:19: * @audit ISO 19011:2018 §6.4.6 audit-evidence-fair-value
-src/collections/FinancialProfiles/index.ts:19: * @audit ISO-19011:2018 audit-trail kyc-evidence
 src/collections/FinancialStatements/index.ts:29: * @audit ISO-19011:2018 audit-trail
 src/collections/FiscalDevices/Sales/index.ts:26: * @audit ISO-19011:2018 audit-trail
 src/collections/FiscalDevices/index.ts:17: * @audit ISO-19011:2018 audit-trail
@@ -5312,9 +5305,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1211:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1231:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1249:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1209:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1229:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1247:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/services/accounting/debit-credit.ts:14: * @audit ISO-19011:2018 audit-trail double-entry-invariant
