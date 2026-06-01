@@ -12,6 +12,7 @@
 import { z } from 'zod'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import type { ErpaxMcpTool } from '../tool-defs'
+import { createAgentContext } from '../../context'
 import { getActorId } from '@/access/auth'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
@@ -150,19 +151,20 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
         const { buildErpaxMcpTools } = await import('../tool-defs')
         const { conveneAgentSociety } = await import('@/services/agents/coil')
         const tenantId = typeof doc.tenant === 'string' ? doc.tenant : 'unknown'
-        const ctx = {
-          tenantId, payload: req.payload,
+        const ctx = createAgentContext({
+          runtime: agentRuntime,
+          payload: req.payload,
+          tenantId,
           mcp: createInProcessMcpClient(buildErpaxMcpTools(registry as never), req),
-          chain: undefined as unknown,
-        }
+        })
         // Wire every agent to the coil: convene the shared runtime to this
         // tenant's room (idempotent + guarded — no-op without a WebSocket runtime).
-        conveneAgentSociety({ runtime: agentRuntime, ctx: ctx as never, tenantId })
-        const effects = await agentRuntime.dispatchEvent(ctx as never, {
+        conveneAgentSociety({ runtime: agentRuntime, ctx, tenantId })
+        const effects = await agentRuntime.dispatchEvent(ctx, {
           id: doc.eventType as string, tenantId,
           payload: (doc.payload as Record<string, unknown> | undefined) ?? {},
           emittedAt: doc.createdAt as string,
-        } as never)
+        })
         return json({
           replayed: doc.eventType,
           subscribers: agentRuntime.registry.bySubscribedEvent(doc.eventType as string).map((a) => a.id),

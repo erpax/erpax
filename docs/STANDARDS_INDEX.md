@@ -1281,6 +1281,9 @@ src/services/agent-sync/chat-broadcast.ts:22: * @standard RFC 9562 §5.8 content
 src/services/agent-sync/chat-broadcast.ts:23: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/services/agent-sync/discovery.ts:19: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/services/agent-sync/discovery.ts:20: * @standard RFC 9562 §5.8 content-uuid contribution-identity (the merge key)
+src/services/agent-sync/horo.ts:27: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
+src/services/agent-sync/horo.ts:28: * @standard RFC 9562 §5.8 content-uuid team identity (the room presence)
+src/services/agent-sync/horo.ts:29: * @standard ISO/IEC 27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/services/agent-sync/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/services/agent-sync/index.ts:16: * @standard RFC-6455 websocket
 src/services/agent-sync/index.ts:17: * @standard RFC-4122 §4.3 content-uuid event-identity (idempotency key)
@@ -1296,6 +1299,8 @@ src/services/agents/blocks.ts:38: * @standard W3C Web Components (composition pa
 src/services/agents/blocks.ts:39: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
 src/services/agents/bootstrap.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
 src/services/agents/coil.ts:15: * @standard ISO/IEC 25010:2023 §5.4 reusability (single shared society per tenant)
+src/services/agents/context.ts:23: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth context)
+src/services/agents/context.ts:24: * @standard ISO/IEC 12207 software-life-cycle (one substrate seam)
 src/services/agents/effect-processor.test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/services/agents/effect-processor.ts:25: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/agents/effect-processor.ts:26: * @standard ISO/IEC 12207 software-life-cycle (single substrate seam)
@@ -5333,6 +5338,7 @@ src/services/accounting/utilities/calculations.ts:199: * @audit ISO-19011:2018 a
 src/services/accounting/utilities/depreciation-methods.test.ts:16: * @audit ISO-19011:2018 audit-trail period-expense-evidence
 src/services/accounting/utilities/period-lock.ts:21: * @audit ISO-19011:2018 audit-trail
 src/services/agent-sync/discovery.ts:21: * @audit Conservation Law 8 content-uuid · Law 62 coverage (each fill ↑ coverage)
+src/services/agent-sync/horo.ts:30: * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
 src/services/agent/team.ts:18: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
 src/services/agents/blocks.ts:40: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
 src/services/agents/mcp/auto-generated.ts:40: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
