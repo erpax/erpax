@@ -533,7 +533,7 @@ User must fix underlying issues:
 
 **If all entities closed + all IC balanced:**
 - consolidationStatus → "ready-for-elimination"
-- consolidationReadiness → { allEntitiesClosed: true, allIntercompanyReconciled: true, ... }
+- consolidationReadiness → `{ allEntitiesClosed: true, allIntercompanyReconciled: true, ... }`
 - eliminationEntries → array of prepared (not posted) entries
 - chainLeafUuid → computed (Law 60)
 - auditTrail → "2026-05-12 10:30:00 | Consolidation readiness assessed: parent-corp, subsidiary-a, subsidiary-b | All prerequisites met"

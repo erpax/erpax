@@ -1283,6 +1283,7 @@ src/services/agent/index.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (te
 src/services/agents/blocks.ts:38: * @standard W3C Web Components (composition pattern)
 src/services/agents/blocks.ts:39: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.7 modularity
 src/services/agents/bootstrap.ts:11: * @standard ISO/IEC 25010:2023 §5.4 reusability (single-source-of-truth registry)
+src/services/agents/coil.ts:15: * @standard ISO/IEC 25010:2023 §5.4 reusability (single shared society per tenant)
 src/services/agents/effect-processor.test.ts:6: * @standard ISO/IEC 25010:2023 §5.5 testability
 src/services/agents/effect-processor.ts:25: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/agents/effect-processor.ts:26: * @standard ISO/IEC 12207 software-life-cycle (single substrate seam)

@@ -7,12 +7,45 @@ export const beforeSyncWithSearch: BeforeSync = async ({ req, originalDoc, searc
 
   const { slug, id, categories, title, meta } = originalDoc
 
+  // Every collection now feeds search, but only `posts`-shaped docs carry a
+  // `title`/`meta`. Resolve a usable title from the common identity fields so a
+  // GL account / invoice / customer indexes under something searchable, not blank.
+  const src = originalDoc as Record<string, unknown>
+  const firstString = (...keys: string[]): string | undefined => {
+    for (const k of keys) {
+      const v = src[k]
+      if (typeof v === 'string' && v.trim()) return v
+      if (typeof v === 'number') return String(v)
+    }
+    return undefined
+  }
+  const resolvedTitle =
+    (typeof title === 'string' && title) ||
+    meta?.title ||
+    firstString(
+      'name',
+      'fullName',
+      'displayName',
+      'label',
+      'accountNumber',
+      'accountName',
+      'number',
+      'invoiceNumber',
+      'reference',
+      'code',
+      'sku',
+      'email',
+      'description',
+    ) ||
+    (id != null ? String(id) : undefined)
+
   const modifiedDoc: DocToSync = {
     ...searchDoc,
+    title: (searchDoc as { title?: string }).title || resolvedTitle,
     slug,
     meta: {
       ...meta,
-      title: meta?.title || title,
+      title: meta?.title || resolvedTitle,
       image: meta?.image?.id || meta?.image,
       description: meta?.description,
     },

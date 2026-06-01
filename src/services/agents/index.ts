@@ -18,6 +18,9 @@ export { createAgentRegistry } from './registry'
 export { processEffect, processEffects } from './effect-processor'
 export { createAgentRuntime } from './runtime'
 
+// The coil — wire every agent to the tenant's agent-sync room (chat.erpax.com).
+export { conveneAgentSociety, disbandAgentSociety } from './coil'
+
 // MCP wiring — Slice DDDDD Phase B
 export type { McpClient, McpToolDescriptor } from './mcp/in-process-client'
 export { createInProcessMcpClient } from './mcp/in-process-client'

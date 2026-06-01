@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { readdirSync, statSync, existsSync, readFileSync } from 'node:fs'
 import { join, relative, dirname, basename } from 'node:path'
 import type MarkdownIt from 'markdown-it'
+import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 
 // ── The fractal skill tree IS the docs structure ──────────────────────────
 // VitePress's directory→sidebar→route mapping is the same path-as-address law
@@ -12,6 +13,8 @@ import type MarkdownIt from 'markdown-it'
 // docs emerge from the code itself. srcDir + sidebar + wiki-links all derive
 // from this single root (the recursive mask, identical at every depth).
 const SKILLS_DIR = 'src'
+// The backend's generated schema truth — the third vertex of the trinity.
+const TYPES_FILE = join(SKILLS_DIR, 'payload-types.ts')
 
 // Open Graph: every skill is an OG object. SITE makes og:url/image absolute in
 // prod (set ERPAX_SITE_URL); empty → the path itself is the address. og:image is
@@ -200,6 +203,26 @@ function skillRelations(md: MarkdownIt): void {
   })
 }
 
+// ── The trinity panel: fuse the matter (index.ts inline docs) + the backend
+// (payload-types schema) onto the antimatter (this SKILL.md page). The speech is
+// BUILT FROM the code and the backend — see ./trinity.mts and the `trinity` skill.
+// Runs after skillRelations so the order down the page is: skill → relations →
+// trinity (antimatter → its subgraph → its matter+backend).
+function skillTrinity(md: MarkdownIt): void {
+  md.core.ruler.push('skill-trinity', (state) => {
+    const rel: string | undefined = (state.env as { relativePath?: string })?.relativePath
+    if (!rel || !rel.endsWith('SKILL.md')) return
+    const html = trinityHtml(skillDirOf(rel, SKILLS_DIR), TYPES_FILE)
+    if (!html) return
+    const token = new (state as unknown as {
+      Token: new (t: string, g: string, n: number) => { content: string; block: boolean }
+    }).Token('html_block', '', 0)
+    token.content = html
+    token.block = true
+    state.tokens.push(token as unknown as (typeof state.tokens)[number])
+  })
+}
+
 function wikilinks(md: MarkdownIt): void {
   md.inline.ruler.before('link', 'wikilink', (state, silent) => {
     const s = state.src
@@ -303,6 +326,12 @@ export default defineConfig({
       for (const r of [...relg.ancestors, ...relg.children, ...relg.related].slice(0, 16)) {
         head.push(['meta', { property: 'og:see_also', content: SITE + r.link }])
       }
+      // ── The trinity, presented through OpenGraph ────────────────────────
+      // The page's head advertises its architecture: the standards it implements
+      // (article:tag), its LIVE backend REST endpoint, its schema width — the
+      // SAME trinity node the panel renders, here projected to meta. The static
+      // page carries a machine-readable map to the running backend.
+      head.push(...trinityHead(skillDirOf(rel, SKILLS_DIR), TYPES_FILE, rel.split('/')[0], SITE))
     }
   },
   markdown: {
@@ -310,6 +339,7 @@ export default defineConfig({
       wikilinks(md)
       skillLead(md)
       skillRelations(md)
+      skillTrinity(md)
     },
   },
 })

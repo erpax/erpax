@@ -46,4 +46,6 @@ export {
 export { signPqc, verifyPqc, isApprovedPqc } from './pqc'
 export { autoExplain, isExplanationComplete } from './explainability'
 export { inverseOf, isFullyReversible } from './reversibility'
+export type { Cipher, SealedRecord, KeyVault } from './erasure'
+export { seal, open, shred } from './erasure'
 export { recordAiInvocation, isAnnexIvCompliant } from './ai-audit'

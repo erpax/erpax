@@ -148,12 +148,16 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
         const { agentRuntime } = await import('@/services/agents/bootstrap')
         const { createInProcessMcpClient } = await import('@/services/agents/mcp/in-process-client')
         const { buildErpaxMcpTools } = await import('../tool-defs')
+        const { conveneAgentSociety } = await import('@/services/agents/coil')
         const tenantId = typeof doc.tenant === 'string' ? doc.tenant : 'unknown'
         const ctx = {
           tenantId, payload: req.payload,
           mcp: createInProcessMcpClient(buildErpaxMcpTools(registry as never), req),
           chain: undefined as unknown,
         }
+        // Wire every agent to the coil: convene the shared runtime to this
+        // tenant's room (idempotent + guarded — no-op without a WebSocket runtime).
+        conveneAgentSociety({ runtime: agentRuntime, ctx: ctx as never, tenantId })
         const effects = await agentRuntime.dispatchEvent(ctx as never, {
           id: doc.eventType as string, tenantId,
           payload: (doc.payload as Record<string, unknown> | undefined) ?? {},

@@ -74,7 +74,7 @@ Multi-currency closing enables:
 - Input:
   - `closingData`: Closing entries with currency breakdown
   - `reportingCurrency`: Entity's functional/reporting currency
-  - `exchangeRates`: Map of {transactionCurrency → periodEndRate}
+  - `exchangeRates`: Map of `{transactionCurrency → periodEndRate}`
   - `priorChainLeaf`: Prior Law 60 chain leaf UUID
 - Output: `MultiCurrencyReconciliation` with:
   - `reportingCurrency`: Entity's reporting currency
@@ -188,7 +188,7 @@ All methods are **pure** (no mutation, deterministic, JSON-serializable).
 
 ### Phase A2 (Currency Framework)
 - ClosingEntries.entity → LegalEntities.currencyCode (reportingCurrency)
-- ExchangeRate collection stores period-end rates: {transactionCurrency, reportingCurrency, effectiveDate, rate}
+- ExchangeRate collection stores period-end rates: `{transactionCurrency, reportingCurrency, effectiveDate, rate}`
 - validateMultiCurrencyClosing queries ExchangeRates for all transaction currencies
 
 ### Phase B2 (Period-End Closing)
