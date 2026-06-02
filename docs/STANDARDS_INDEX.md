@@ -1972,6 +1972,8 @@ src/services/sales/virtual-device.test.ts:5: * @standard ISO/IEC-29119:2022 soft
 src/services/sales/virtual-device.test.ts:6: * @standard BG Наредба-Н-18 §алтернативен-режим
 src/services/sales/virtual-device.ts:15: * @standard BG Наредба-Н-18 §алтернативен-режим e-shop-card-payments
 src/services/sales/virtual-device.ts:16: * @standard BG Наредба-Н-18 §Приложение-38 (monthly reporting — the audit file)
+src/services/sandbox/index.ts:7: * @standard NIST SP-800-162 ABAC (capability-scoped authorization)
+src/services/sandbox/index.ts:8: * @standard OWASP-ASVS V5 untrusted-input / least-privilege
 src/services/scheduled-tasks/registry.ts:20: * @standard rfc-5545 icalendar (cron-style schedules)
 src/services/scheduled-tasks/registry.ts:21: * @standard ISO-8601-1:2019 date-time
 src/services/scheduled-tasks/types.ts:4: * @standard rfc-5545 icalendar-cron
