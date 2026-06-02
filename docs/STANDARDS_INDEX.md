@@ -1747,6 +1747,7 @@ src/services/identification/index.ts:44: * @standard ISO/IEC 25010:2023 §5.3 op
 src/services/identity-element/index.ts:46: * @standard ISO/IEC 25010:2023 §5.4 reusability — identity by abstraction
 src/services/identity-element/index.ts:47: * @standard NIST FIPS 180-4 SHA-256 (uuid hash)
 src/services/identity-element/index.ts:48: * @standard RFC 9562 §5.8 uuidv8 (uuid construction)
+src/services/ingest/index.ts:6: * @standard idempotent upsert by content-address (re-runnable, no cursor needed)
 src/services/integrity/content-uuid.test.ts:4: * @standard RFC 9562 §5.8 + RFC 8785 + FIPS 180-4
 src/services/integrity/content-uuid.ts:42: * @standard RFC 9562 §5.8 name-based UUID (version 8, custom layout)
 src/services/integrity/content-uuid.ts:43: * @standard RFC 8785 JSON Canonicalization Scheme (JCS)
