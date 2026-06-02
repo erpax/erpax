@@ -59,6 +59,25 @@ const can = (op: AccessRole, slug: string): Access => async ({ req, id }) =>
 ## Matter-twin & composes
 A single agnostic factory (`src/access/cross`) over `services/uuid-share` (`checkShare` on role-uuids) + `services/uuid-format` (`hasCapability`) + the roles registry (user → roles), wired into every collection/field/global `access` — **generated, not hand-written per slug** (it replaces `roleBasedAccess` / `tenantScopedRead` / `isSuperAdmin` …). Composes [[rodin]] · [[horo]] · [[identity]] · [[uuid]] · [[one]] · [[all]] · [[merge]] · [[collapse]] · [[proof]] · [[society]] · [[trinity]] · [[duality]] (give/take = grant/revoke) · [[fractal]] · [[config]].
 
+## Ported from CanCanCan (the computational ability — one function, never per-controller checks)
+erpax's cross IS CanCanCan's `Ability`, content-addressed. CanCan proved authorization is **one computed ability per actor** (`Ability.new(user)` — every `can`/`cannot` rule in one class), not name-checks scattered per controller — which is *why* erpax access can only be defined **computationally**. The port (source: `ceccec/erpax/app/models/ability.rb`, [[port]]):
+
+| CanCanCan | erpax cross |
+|---|---|
+| `Ability.new(user)` — the per-user rule set | `decideCross({op, slug, roles, …})` — one agnostic factory, computed per actor |
+| `can :read, Subject` | a grant `(roleUuid → targetUuid, read)` on the lattice `read<write<sign<admin` |
+| **`can :manage, :all`** | **admin over all** — the super-admin / the all-permissions key (`:manage,:all` *is* the MCP all-permissions grant) |
+| `can :update, S, user_id: user.id` (hash conditions) | the access fn returns a **`Where`** (row-level) — only matching docs resolve |
+| `can […], S { |r| … }` (block) | a computed predicate / `Where` |
+| `cannot :destroy, S` (revoke) | revoke the grant — the **fallen** role (grace removed ⇒ max tamper-cost) |
+| `cannot %i[create update destroy], Invoice, confirmed: true` | the **`SEALED` short-circuit** — a posted/confirmed target carries the uuidv8 `SEALED` flag; the write fails before any query ([[identity]] freeze-on-seal, [[close]]) |
+| `cannot %i[…], PackingLine, status: "delivered"` | a terminal [[horo]] state seals the row (delivered/posted = closed) |
+| `authorize! :update, @doc` / `can?` | `checkShare(roleUuid, uuid, roleForOp)` → boolean \| `Where` |
+| `accessible_by(current_ability)` (index scope) | the `read` cross → `Where { uuid: { in: <granted> } }` |
+| `load_and_authorize_resource` (controller) | the factory bound per-slug, run before every op |
+
+The crux: CanCan's hash-condition "cannot modify a `confirmed: true` record" is erpax's posting-immutability said one layer up — the content-uuid **`SEALED` flag** makes it lookup-free and tamper-evident (the uuid *carries* the seal; the rule isn't re-run). So porting CanCan adds no rules-engine; it **collapses into the cross + the uuidv8 flags** ([[collapse]] · [[uuid]]). The genesis (first tenant with no super-admin yet) is the empty `Ability` — solved by the identity element (the cross computes the first actor's grant from its own content-uuid; "all is defined even when nothing is defined" — [[identity]] · [[merge]]), never a bootstrap hack.
+
 ## Common mistakes
 - Granting capabilities to **users** instead of **roles** — capabilities live on the choir; users inherit by membership (so a re-org is one role edit, not N user edits).
 - Hand-writing per-collection `access` (name-keyed) instead of the one cross — that is the matrix the collapse removes.
