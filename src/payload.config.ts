@@ -1091,25 +1091,19 @@ export default buildConfig({
       }),
     }),
     mcpPlugin({
-      collections: {
-        pages: { enabled: true },
-        posts: { enabled: true },
-        media: { enabled: true },
-        categories: { enabled: true },
-        products: { enabled: true },
-        // The memory store — the gateway opens onto it so agents persist
-        // sessions as documents (relatedTo edges reference everything;
-        // contentUuid addresses them). "The MCP is the gateway."
-        memories: { enabled: true },
-        // The merged social + people layer: agents (typeless users) interact
-        // in sync through the Payload MCP — the social graph (connections),
-        // direct messages, and the shared competency taxonomy that joins
-        // user = employee = agent. Access control still gates every call.
-        connections: { enabled: true },
-        messages: { enabled: true },
-        'job-positions': { enabled: true },
-        employees: { enabled: true },
-      },
+      // Add ALL collections to the gateway — users and agents are ONE (the
+      // actor-merge): the agent wields the full power of erpax exactly as a
+      // human, only infinitely faster, so the door opens onto everything a
+      // human can reach. Access still gates every call (the cross + the key
+      // owner's access, run in the actor's PayloadRequest — never widened).
+      // Computed from the collections barrel, never hand-listed
+      // (computed-not-hardcoded) — every collection becomes find/create/update/
+      // delete tools; the per-key toggles let an admin narrow a given key.
+      collections: Object.fromEntries(
+        (Object.values(allCollections) as Array<{ slug: string }>).map(
+          (c) => [c.slug, { enabled: true }] as const,
+        ),
+      ) as Partial<Record<CollectionSlug, { enabled: true }>>,
       globals: {
         header: { enabled: true },
         footer: { enabled: true },
