@@ -62,11 +62,29 @@ const nextConfig = {
   // Use webpack for `next build` (see build script) so server chunks use resolvable package names; Turbopack can emit
   // hashed externals (sharp-*, drizzle-kit-*/api) that esbuild in `opennextjs-cloudflare` cannot resolve.
   serverExternalPackages: ['jose', 'pg-cloudflare', 'sharp'],
-  webpack: (webpackConfig: any) => {
+  webpack: (webpackConfig: any, { isServer, webpack }: { isServer: boolean; webpack: any }) => {
     webpackConfig.resolve.extensionAlias = {
       '.cjs': ['.cts', '.cjs'],
       '.js': ['.ts', '.tsx', '.js', '.jsx'],
       '.mjs': ['.mts', '.mjs'],
+    }
+
+    // Client field components from payload plugins (plugin-seo, plugin-import-export) transitively
+    // import the server `payload` package, dragging node:-scheme built-ins (node:os/console/buffer/
+    // module…) and undici into the browser bundle. The client never executes those server paths, so
+    // strip the node: scheme and stub the server-only built-ins + undici out of the client bundle.
+    if (!isServer) {
+      webpackConfig.plugins.push(
+        new webpack.NormalModuleReplacementPlugin(/^node:/, (r: any) => {
+          r.request = r.request.replace(/^node:/, '')
+        }),
+      )
+      webpackConfig.resolve.alias = { ...(webpackConfig.resolve.alias ?? {}), undici: false }
+      webpackConfig.resolve.fallback = {
+        ...(webpackConfig.resolve.fallback ?? {}),
+        os: false, fs: false, path: false, module: false, buffer: false,
+        crypto: false, stream: false, util: false, console: false, async_hooks: false, child_process: false,
+      }
     }
 
     return webpackConfig
