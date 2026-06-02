@@ -1726,8 +1726,6 @@ src/services/gl-account.service/index.ts:4: * @standard ISO-4217:2015 currency-c
 src/services/gl-posting.service/index.ts:796:   * @standard ISO 20022 camt.053 reconciliation
 src/services/gl-posting.service/index.ts:8: * @standard ISO-8601-1:2019 date-time posted-date
 src/services/gl-posting.service/index.ts:9: * @standard ISO-4217:2015 currency-codes
-src/services/google-workspace/fusion-transforms.ts:22: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the fusion identity)
-src/services/google-workspace/fusion-transforms.ts:23: * @standard IFRS/IAS double-entry (Σdebit = Σcredit) — the sheets→journal fusion
 src/services/google-workspace/fusion.ts:17: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the fusion identity)
 src/services/google-workspace/registry.ts:16: * @standard IETF RFC 6749 OAuth 2.0 authorization-framework
 src/services/google-workspace/registry.ts:17: * @standard OpenID Connect Core 1.0 (Google as the OIDC provider)
