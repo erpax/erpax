@@ -1854,6 +1854,7 @@ src/services/payables/discounts.service.ts:7: * @standard EN-16931:2017 §BG-20 
 src/services/payables/discounts.service.ts:8: * @standard EN-16931:2017 §BG-22 document-level-charges
 src/services/payables/discounts.service.ts:9: * @standard ISO-4217:2015 currency-codes
 src/services/payables/workflow.service.ts:8: * @standard EN-16931:2017 invoice-lifecycle
+src/services/peace/index.ts:8: * @standard NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)
 src/services/peppol-export.service.test.ts:10: * @standard UBL-2.1 universal-business-language
 src/services/peppol-export.service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/services/peppol-export.service.test.ts:9: * @standard Peppol-BIS-3.0 billing
