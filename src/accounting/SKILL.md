@@ -31,6 +31,8 @@ if (net !== 0) throw new ValidationError('Journal entry not balanced')
 ```
 Balanced/unbalanced are query scopes (see [[queries]]); `posted` vs `draft` is a `status` select. Posting into a `locked` fiscal period is rejected by the same write-guard.
 
+The pure-service generalization of this invariant is [[entry]] — the same `(debit, credit)` balance lifted OFF the `journal-entries` collection into a closure operator over the WHOLE mesh: time, leverage, pay, skills, verification all post as balanced entries, `reverse` is inherent (`reverse∘reverse = id`), and N plugin mounts consolidate to zero (intercompany nets out, ASC 810-10-45). The collection is one materialization; [[entry]] is the law itself — "all accounted for in all directions ⇒ the wiring is complete".
+
 ## Standards (the answer-path: applying this skill implements the standard)
 A skill complies not by quoting a clause but by **deriving its output from the rule** — revenue, presentation, and consolidation fall out of the model, never from baked literals or ad-hoc layout (see [[standard]]). Current form of each standard this skill holds:
 
