@@ -1994,6 +1994,8 @@ src/services/self-reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 
 src/services/shred/index.ts:16: * @standard GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)
 src/services/shred/index.ts:17: * @standard NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)
 src/services/signal/index.ts:16: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
+src/services/skill-router/competencies.ts:16: * @standard ESCO v1.2 skills-pillar sub-classification + reusability tiers
+src/services/skill-router/competencies.ts:17: * @standard SFIA 8 responsibility-levels 1..7 (held vs required; gap = required − held)
 src/services/skill-router/merge.ts:20: * @standard ESCO/SFIA — installed skills enter the same competency taxonomy
 src/services/social-graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
 src/services/spec-generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
