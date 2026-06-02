@@ -1697,6 +1697,8 @@ src/services/evidence-attestation/index.ts:21: * @standard ISO-19005-2:2011 pdf-
 src/services/evidence-attestation/index.ts:22: * @standard ISO-14289-1:2014 pdf-ua-1
 src/services/evidence-attestation/index.ts:23: * @standard ETSI-EN-319-142-1 v1.1.1 pades-baseline-profile
 src/services/evidence-attestation/index.ts:24: * @standard ISO-8601-1:2019 date-time
+src/services/exchange/index.ts:6: * @standard ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)
+src/services/exchange/index.ts:7: * @standard GDPR Art.5(1)(c) data-minimisation (release only the granted fields)
 src/services/export/standards-import.ts:22: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/services/export/standards-import.ts:23: * @standard Peppol-BIS-3.0 billing
 src/services/export/standards-import.ts:24: * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
