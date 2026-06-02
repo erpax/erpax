@@ -1846,6 +1846,8 @@ src/services/notifications/index.ts:18: * @standard rfc-5322 internet-message-fo
 src/services/notifications/index.ts:19: * @standard rfc-2616 §14.10 https-keep-alive
 src/services/notifications/subscriber.ts:13: * @standard rfc-5321 simple-mail-transfer-protocol
 src/services/notifications/subscriber.ts:14: * @standard rfc-5322 internet-message-format
+src/services/oauth/index.ts:6: * @standard IETF RFC 6749 OAuth 2.0 (grant types, token lifecycle)
+src/services/oauth/index.ts:7: * @standard IETF RFC 6750 Bearer token usage
 src/services/parties/aging.service.ts:8: * @standard ISO-8601-1:2019 date-time days-between-arithmetic
 src/services/payables/aging.service.ts:11: * @standard ISO-8601-1:2019 date-time as-of-date
 src/services/payables/analytics.service.ts:6: * @standard ISO-4217:2015 currency-codes
