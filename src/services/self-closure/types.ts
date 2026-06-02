@@ -68,8 +68,9 @@ import type { Payload } from 'payload'
  * Roles in the initial set:
  *
  *   - `payment-provider`      Stripe / Adyen / PayPal / Berlin Group
- *                              → ERPax's `wallets` + `payments` +
- *                                `journal-entries` settles in-platform.
+ *                              → internal mirror planned (would settle
+ *                                in-platform via `journal-entries`); no
+ *                                provider registered yet.
  *   - `signing-tsp`           eIDAS qualified TSP (Adobe Sign, qualified
  *                              certs)
  *                              → ERPax's per-tenant Ed25519 key registry

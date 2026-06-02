@@ -200,6 +200,8 @@ export { default as ConsignmentSales } from './WarehouseLocations/ConsignmentArr
 export { default as AuditEvents } from './AuditEvents'
 export { default as ApiAuditEvents } from './ApiAuditEvents'
 export { default as EvidenceAttestations } from './EvidenceAttestations'
+// Access-control: uuid-based RBAC share bindings (Conservation Law 59)
+export { default as Shares } from './Shares'
 
 // ===== COMPREHENSIVE COMPLIANCE & AUDIT FRAMEWORK (Phase 1-5) =====
 // 28 collections spanning GAAP, IFRS, SOX, multi-jurisdiction, multi-entity compliance

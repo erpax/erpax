@@ -54,7 +54,7 @@
  * @see /src/services/integrity/signatures.ts (sealed sign/admin grants)
  */
 
-import type { Payload } from 'payload'
+import type { Payload, Where } from 'payload'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { writeAuditEvent } from '@/services/audit-trail/write-audit-event'
 import type { UuidLinkedLeaf } from '@/services/integrity/uuid-linked-chain'
@@ -219,16 +219,16 @@ export async function grantShare<G, T>(
   // Idempotency: look up an existing share with this uuid + tenant.
   // If present and not revoked, return it without writing a new leaf.
   const existing = await ctx.payload.find({
-    collection: 'shares' as never,
+    collection: 'shares',
     where: {
       and: [
         { tenant: { equals: params.tenantId } },
         { shareUuid: { equals: shareUuid } },
         { revoked: { not_equals: true } },
       ],
-    } as never,
+    },
     limit: 1,
-  } as never) as unknown as { docs: Array<Record<string, unknown>> }
+  }) as unknown as { docs: Array<Record<string, unknown>> }
   if (existing.docs && existing.docs.length > 0) {
     const row = existing.docs[0]!
     return {
@@ -270,7 +270,7 @@ export async function grantShare<G, T>(
   // carries: tenant, shareUuid, granteeUuid, targetUuid, accessRole,
   // grantedAt, chainLeafUuid, sealed, revoked, revokedAt.
   const row = await ctx.payload.create({
-    collection: 'shares' as never,
+    collection: 'shares',
     data: {
       tenant: params.tenantId,
       shareUuid,
@@ -281,7 +281,7 @@ export async function grantShare<G, T>(
       chainLeafUuid: auditResult.chainLeafUuid,
       sealed,
       revoked: false,
-    } as never,
+    },
   }) as { id: string }
 
   return {
@@ -333,7 +333,7 @@ export async function checkShare<G, T>(
   ctx: { payload: Payload },
 ): Promise<CheckResult> {
   const res = await ctx.payload.find({
-    collection: 'shares' as never,
+    collection: 'shares',
     where: {
       and: [
         { tenant: { equals: params.tenantId } },
@@ -341,9 +341,9 @@ export async function checkShare<G, T>(
         { targetUuid: { equals: params.targetUuid } },
         { revoked: { not_equals: true } },
       ],
-    } as never,
+    },
     limit: 50,
-  } as never) as unknown as { docs: Array<{ id: string; accessRole: AccessRole }> }
+  }) as unknown as { docs: Array<{ id: string; accessRole: AccessRole }> }
 
   if (!res.docs || res.docs.length === 0) {
     return {
@@ -399,16 +399,16 @@ export async function revokeShare(
   ctx: GrantContext,
 ): Promise<RevokeResult> {
   const res = await ctx.payload.find({
-    collection: 'shares' as never,
+    collection: 'shares',
     where: {
       and: [
         { tenant: { equals: params.tenantId } },
         { shareUuid: { equals: params.shareUuid } },
         { revoked: { not_equals: true } },
       ],
-    } as never,
+    },
     limit: 1,
-  } as never) as unknown as { docs: Array<{ id: string; accessRole: AccessRole; sealed: boolean }> }
+  }) as unknown as { docs: Array<{ id: string; accessRole: AccessRole; sealed: boolean }> }
 
   if (!res.docs || res.docs.length === 0) {
     return {
@@ -432,13 +432,13 @@ export async function revokeShare(
   })
 
   await ctx.payload.update({
-    collection: 'shares' as never,
+    collection: 'shares',
     id: row.id,
     data: {
       revoked: true,
       revokedAt: new Date().toISOString(),
       revokeChainLeafUuid: audit.chainLeafUuid,
-    } as never,
+    },
   })
 
   return {
@@ -470,7 +470,7 @@ export async function listShares(
   if (!params.granteeUuid && !params.targetUuid) {
     throw new Error('listShares: at least one of granteeUuid / targetUuid is required')
   }
-  const where: Record<string, unknown> = {
+  const where: Where = {
     and: [
       { tenant: { equals: params.tenantId } },
       ...(params.includeRevoked === true ? [] : [{ revoked: { not_equals: true } }]),
@@ -479,10 +479,10 @@ export async function listShares(
     ],
   }
   const res = await ctx.payload.find({
-    collection: 'shares' as never,
-    where: where as never,
+    collection: 'shares',
+    where,
     limit: params.limit ?? 100,
-  } as never) as unknown as { docs: Array<Record<string, unknown>> }
+  }) as unknown as { docs: Array<Record<string, unknown>> }
 
   return res.docs.map((row) => ({
     shareUuid: row.shareUuid as ShareUuid,

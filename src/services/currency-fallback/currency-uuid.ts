@@ -4,8 +4,8 @@
  * Slice LLLLLLLLL-cut4 (2026-05-11). Per user 'blank currency
  * computational algorythms are the same as the core uuid principles'.
  *
- * The unification: every operation in the currency-fallback /
- * wallet-exchange layer maps one-to-one to an operation in the
+ * The unification: every operation in the currency-fallback layer
+ * maps one-to-one to an operation in the
  * uuid family (Slices RRRRR / GGGGGGG / TTTTT / UUUUU / TTTTTTTT /
  * KKKKKKKKK). They are not parallel subsystems — they are the same
  * subsystem applied to monetary entities.
@@ -142,7 +142,7 @@ export function computeRateQuoteUuid(args: {
 /**
  * Content-uuid of an exchange request. Idempotency key derived from
  * (fromWalletId, toWalletId, amountMinor, asOf, tenantId). Calling
- * `exchangeWalletBalance` twice with the same params produces the
+ * the exchange twice with the same params produces the
  * same uuid — the second call can be short-circuited to the first
  * exchange's journal-entry row.
  *

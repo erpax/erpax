@@ -365,7 +365,8 @@ export async function checkNotificationFallback(ctx: InvariantContext): Promise<
  * and the platform remains fully functional.
  *
  * Severity contract: this invariant intentionally `warn`s while
- * coverage is partial (Cut 1 ships only `payment-provider`). It flips
+ * coverage is partial (currently signing-tsp / federation-peer /
+ * notification / search-index ship internal providers). It flips
  * to `fail` once all 10 roles are registered — at which point Law 53
  * becomes a hard gate.
  */
@@ -459,10 +460,10 @@ export async function checkFeatureCoverage(ctx: InvariantContext): Promise<Invar
     for (const slug of ['audit-events', 'shares', 'memories'] as const) {
       try {
         const res = await ctx.payload.find({
-          collection: slug as never,
+          collection: slug,
           limit: 50,
           depth: 0,
-        }) as { docs: Array<Record<string, unknown>> }
+        }) as unknown as { docs: Array<Record<string, unknown>> }
         for (const row of res.docs) {
           // Prefer chainLeafUuid (audit-events / shares) → uuid (any tamper-proof row) → shareUuid (shares).
           const candidate = (row.chainLeafUuid as string | undefined)

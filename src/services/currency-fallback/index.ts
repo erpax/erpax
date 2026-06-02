@@ -33,10 +33,9 @@
  * Composes with:
  *   - Slice JJJJJJJJJ Law 53 (self-referential closure) — XXX is the
  *     internal-fallback identity for the currency role.
- *   - Slice MMMMM payment-provider profile — the InternalPaymentProvider
- *     (Slice JJJJJJJJJ Cut 1) accepts XXX as a valid currency for
- *     internal settlement when the external processor's currency hint
- *     is missing.
+ *   - The `payment-provider` role treats XXX as a valid currency for
+ *     in-platform settlement when the external processor's currency
+ *     hint is missing.
  *   - Slice AAAAAAAAA translations collection — `currency:XXX:label`
  *     and `currency:XXX:symbol` are seeded so the UI surfaces the
  *     blank currency with locale-correct text.
@@ -388,8 +387,8 @@ export async function convertMoney(
 // always count (the blank currency is universal). Real cross-currency
 // pairs route through the configured rate provider per Cut 2.
 //
-// Composes with the wallet-exchange service (Cut 3) — that's the
-// per-transaction case; this is the portfolio view.
+// This is the portfolio-aggregation view; per-transaction conversion
+// is `convertMoney` above.
 
 export interface WalletPosition {
   readonly id: string

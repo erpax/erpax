@@ -181,6 +181,8 @@ const {
   AuditEvents,
   ApiAuditEvents,
   EvidenceAttestations,
+  // Access-control: uuid-based RBAC share bindings (Conservation Law 59)
+  Shares,
   // New Phase 1-5 Compliance & Audit Framework (28 collections)
   EntityTypes,
   TaxingJurisdictions,
@@ -641,6 +643,8 @@ export default buildConfig({
     AuditEvents,
     ApiAuditEvents,
     EvidenceAttestations,
+    // Access-control: uuid-based RBAC share bindings (Conservation Law 59)
+    Shares,
     // ===== COMPREHENSIVE COMPLIANCE & AUDIT FRAMEWORK (Phase 1-5) (28 collections) =====
     // Phase 1: Compliance Foundation (7)
     EntityTypes,
@@ -824,6 +828,8 @@ export default buildConfig({
         translations: {},
         // O2C
         'audit-events': {},
+        // Access-control: uuid-based RBAC share bindings (Law 59)
+        'shares': {},
         'credit-memos': {},
         quotes: {},
         'sales-orders': {},

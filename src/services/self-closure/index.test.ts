@@ -15,10 +15,8 @@
  *      `FallbackContext.externalError` slot — so internal-mode logging
  *      can include why we fell back.
  *
- * Uses a stub provider so the test doesn't depend on payments/wallets
- * collection state. The real provider (InternalPaymentProvider) is
- * tested by the chain-pair e2e test for the payment-provider flow
- * (separate slice).
+ * Uses a stub provider so the test doesn't depend on external
+ * collection state — the framework round-trip is what's pinned here.
  *
  * @standard ISO/IEC 25010:2023 §5.6.2 fault tolerance
  * @audit Conservation Law 53 self-referential-closure
@@ -180,35 +178,36 @@ describe('EXTERNAL_ROLES — the closed set Law 53 enforces', () => {
   })
 })
 
-describe('providers barrel — Cut 2 registers four roles', () => {
-  it('registering each Cut-1/Cut-2 provider directly populates the expected role set', async () => {
+describe('providers barrel — the shipped providers register their roles', () => {
+  it('registering each shipped provider directly populates the expected role set', async () => {
     __resetInternalProviderRegistryForTests()
     // We register explicitly here rather than relying on the barrel's
     // module-load side effect (which Vitest caches across a single
     // run — `vi.resetModules()` is too invasive for an isolated test).
-    const { InternalPaymentProvider } = await import('./providers/payment')
     const { InternalSigningProvider } = await import('./providers/signing')
     const { InternalFederationProvider } = await import('./providers/federation')
     const { InternalNotificationProvider } = await import('./providers/notification')
+    const { InternalSearchProvider } = await import('./providers/search')
     for (const p of [
-      InternalPaymentProvider,
       InternalSigningProvider,
       InternalFederationProvider,
       InternalNotificationProvider,
+      InternalSearchProvider,
     ] as const) {
       registerInternalProvider(p as never, { replace: true })
     }
     const registered = new Set(listRegisteredRoles())
-    expect(registered.has('payment-provider')).toBe(true)
     expect(registered.has('signing-tsp')).toBe(true)
     expect(registered.has('federation-peer')).toBe(true)
     expect(registered.has('notification')).toBe(true)
-    // Remaining 6 roles are intentionally unregistered until later cuts.
+    expect(registered.has('search-index')).toBe(true)
+    // payment-provider's internal mirror was removed (wallets settlement
+    // unmodelled); the rest stay unregistered until later cuts.
+    expect(registered.has('payment-provider')).toBe(false)
     expect(registered.has('ai-inference')).toBe(false)
     expect(registered.has('bank-account')).toBe(false)
     expect(registered.has('government-registry')).toBe(false)
     expect(registered.has('kms')).toBe(false)
-    expect(registered.has('search-index')).toBe(false)
     expect(registered.has('object-storage')).toBe(false)
   })
 })

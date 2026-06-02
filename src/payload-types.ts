@@ -194,6 +194,7 @@ export interface Config {
     'audit-events': AuditEvent;
     'api-audit-events': ApiAuditEvent;
     'evidence-attestations': EvidenceAttestation;
+    shares: Share;
     'entity-types': EntityType;
     'taxing-jurisdictions': TaxingJurisdiction;
     'entity-legal-structures': EntityLegalStructure;
@@ -443,6 +444,7 @@ export interface Config {
     'audit-events': AuditEventsSelect<false> | AuditEventsSelect<true>;
     'api-audit-events': ApiAuditEventsSelect<false> | ApiAuditEventsSelect<true>;
     'evidence-attestations': EvidenceAttestationsSelect<false> | EvidenceAttestationsSelect<true>;
+    shares: SharesSelect<false> | SharesSelect<true>;
     'entity-types': EntityTypesSelect<false> | EntityTypesSelect<true>;
     'taxing-jurisdictions': TaxingJurisdictionsSelect<false> | TaxingJurisdictionsSelect<true>;
     'entity-legal-structures': EntityLegalStructuresSelect<false> | EntityLegalStructuresSelect<true>;
@@ -12531,6 +12533,62 @@ export interface ApiAuditEvent {
   createdAt: string;
 }
 /**
+ * UUID-based RBAC share bindings (Law 59). Created/revoked via the uuid-share service + erpax.share.* MCP tools; revocation is a soft flag (revoked:true), never a delete.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shares".
+ */
+export interface Share {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Deterministic structured uuidv8 of the (grantee, role, target, tenant) binding (computeShareUuid). Not unique — re-granting a revoked binding adds a new active row.
+   */
+  shareUuid: string;
+  /**
+   * Content-uuid of the grantee (user / role / tenant / DID).
+   */
+  granteeUuid: string;
+  /**
+   * Content-uuid of the shared resource (any contentUuid-addressed target).
+   */
+  targetUuid: string;
+  /**
+   * RBAC lattice role — read < write < sign < admin; audit orthogonal (observation only).
+   */
+  accessRole: 'read' | 'write' | 'sign' | 'admin' | 'audit';
+  /**
+   * ISO 8601 timestamp the grant was created.
+   */
+  grantedAt?: string | null;
+  /**
+   * UUID of the chain-linked audit leaf attesting this grant. Null when no mediator was available at write.
+   */
+  chainLeafUuid?: string | null;
+  /**
+   * True iff the grant leaf was sealed (sign/admin grants — stream pause points).
+   */
+  sealed?: boolean | null;
+  /**
+   * Soft-revocation flag. checkShare ignores revoked rows; revocation is roll-forward, never a delete.
+   */
+  revoked?: boolean | null;
+  /**
+   * ISO 8601 timestamp the binding was revoked (set by revokeShare).
+   */
+  revokedAt?: string | null;
+  /**
+   * UUID of the chain-linked revoke leaf (sealed iff the original grant was sealed).
+   */
+  revokeChainLeafUuid?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Read-only reference data for entity type classifications
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -19361,6 +19419,10 @@ export interface Search {
         value: string | ShareBasedPayment;
       }
     | {
+        relationTo: 'shares';
+        value: string | Share;
+      }
+    | {
         relationTo: 'shipments';
         value: string | Shipment;
       }
@@ -25012,6 +25074,26 @@ export interface EvidenceAttestationsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shares_select".
+ */
+export interface SharesSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  shareUuid?: T;
+  granteeUuid?: T;
+  targetUuid?: T;
+  accessRole?: T;
+  grantedAt?: T;
+  chainLeafUuid?: T;
+  sealed?: T;
+  revoked?: T;
+  revokedAt?: T;
+  revokeChainLeafUuid?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "entity-types_select".
  */
 export interface EntityTypesSelect<T extends boolean = true> {
@@ -28753,6 +28835,7 @@ export interface TaskCreateCollectionExport {
       | 'audit-events'
       | 'api-audit-events'
       | 'evidence-attestations'
+      | 'shares'
       | 'entity-types'
       | 'taxing-jurisdictions'
       | 'entity-legal-structures'
