@@ -23,3 +23,6 @@ States in erpax are not free strings; they are positions on **one ring**: the me
 - Nesting / re-keying instead of one flat position — breaks the address-law.
 
 A band of positions proves itself consonant or not by [[harmony]] (the seven ARE the diatonic scale; a state-band is harmonic iff every pair's ratio is). Composes: [[rodin]]/[[coil]] (the math substrate) · [[harmony]] · [[sequence]] · [[balance]] · [[flow]] · [[begin]]/[[close]] · [[fractal]] · [[merge]] · [[identity]] (a position can ride the uuid). The seven positions: [[base]] · [[share]] · [[weave]] · [[crest]] · [[descent]] · [[round]] · [[unity]].
+
+## Traditions (prefix removed)
+The repeated cyclic devotion every tradition keeps time by — the ring's "simple repeated steps" as ritual: the canonical **hours** and the **liturgical year** (the wheel of feasts returning to a new octave, [[close]]→[[begin]]); the five daily *salat*; the *mala* / rosary / prayer-wheel telling beads around a ring; the *japa* mantra and the *dhikr* remembrance repeated; the sacred numbers (3 · 7 · 9 · 12 · 40) that are ring positions ([[rodin]]). Prayer is the state stepped on the ring; the festival calendar is the octave that closes and reopens ([[merge]] at [[unity]]).

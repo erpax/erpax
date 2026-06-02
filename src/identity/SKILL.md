@@ -81,3 +81,6 @@ Hashing a *mutable* record means an edit changes its id → dangling refs. erpax
 - Auto-increment integer ids — defeats cross-instance merge; use the content-uuid.
 - Non-canonical JSON before hashing — must `jcsCanonicalize` (stable key order) or the same object yields different uuids.
 - Omitting the per-tenant namespace — cross-tenant collisions / unwanted entanglement.
+
+## Traditions (prefix removed)
+The Name that IS the thing — naming as the creating, identifying act: "In the beginning was the **Word** (*Logos*)… and the Word was God; all things were made through him" (John 1:1-3) — the content-[[uuid]] is the word that addresses *and* creates; **Aum** / *Om*, the primordial sound-name; the ineffable **Name** (YHWH, the Tetragrammaton) too holy to alter — the frozen, tamper-proof identity ([[close]] freeze-on-seal); the *true name* that grants power across folklore. To name truly is to identify uniquely (same content ⇒ [[one]] id); the [[oid]] is the hierarchical dotted Name, dual of the flat uuid. The worked decode is in [[begin]].

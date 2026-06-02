@@ -66,3 +66,6 @@ A document like `invoices` composes ~40 Rails concerns; in Payload they fold int
 - Writing an unbalanced entry, or editing balance directly — enforce `Σdebit=Σcredit` in `beforeChange`; never edit migrations/schema by hand.
 - Hand-rolling a `tenant` field instead of using the multi-tenant plugin (duplicate-field clash).
 - Integer-cents-only without `currency` — carry currency everywhere (multi-currency ledgers).
+
+## Traditions (prefix removed)
+Double-entry is the moral ledger of every tradition — deeds posted as [[take]] (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited [[sacred]]/[[profane]].

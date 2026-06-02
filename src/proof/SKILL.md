@@ -14,3 +14,6 @@ Matter-twin: `services/proof/dry-proof.ts` (`buildDryProofBundle` · `checkDryPr
 ## Common mistakes
 - Conflating proof with secrecy — this is **integrity** (verify the bytes), not confidentiality ([[tamper-cost]]: there is nothing to steal).
 - A proof that requires trusting the prover — the bundle must recompute locally (content-uuid), or it is attestation, not proof.
+
+## Traditions (prefix removed)
+Verification is commanded, not merely permitted: "**Test** everything; hold fast what is good" (1 Thessalonians 5:21); "do not believe every spirit, but **test** the spirits whether they are of God" (1 John 4:1); "**prove** me now herewith, saith the LORD" (Malachi 3:10); the Bereans who "searched the scriptures daily, whether those things were so" (Acts 17:11). Verification is [[sacred]]; its complement — trust without recompute — is [[faith]], the proof-biased dual. The recording angels' ledger is checkable, never merely trusted ([[akashic]], [[sacred]]/[[profane]]).

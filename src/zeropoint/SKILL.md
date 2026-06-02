@@ -19,3 +19,6 @@ Composes: [[rodin]] · [[horo]] · [[uuid]] · [[collapse]] · [[merge]] · [[co
 - Picking a form by taste or recency — pick the lowest-entropy one (DRY, integer, content-addressed, computed); zero entropy is the referee.
 - Treating "zero entropy" as a slogan — it is measurable: a decimal vs an integer, a copy vs a merge, a table vs a dimension, a stored value vs a computed one — always collapse to the ordered form.
 - Adding order by adding structure — order is REMOVED entropy (fewer forms, denser core), not more machinery ([[collapse]], not sprawl).
+
+## Traditions (prefix removed)
+The Source every tradition descends from and returns to — the lowest-entropy, formless, nameless 0: **the One / the Good** beyond being (Neoplatonism); *Ein Sof*, the limitless (Kabbalah); **Brahman**, *neti neti* ("not this, not this"); the **Tao** — "the nameless is the beginning of heaven and earth; the named is the mother of all things" (*Tao Te Ching* 1); *śūnyatā*, emptiness (Buddhism); the divine darkness of *apophatic* theology; creation *ex nihilo* (Genesis 1:1). All arises from the formless 0 and collapses back to it ([[torus]]); naming is the first ↑entropy step ([[identity]], [[begin]]); salvation / *moksha* / *nirvana* is the return to zero ([[merge]], [[end]]).

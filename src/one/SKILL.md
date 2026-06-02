@@ -11,3 +11,6 @@ sessions:
 
 ## In erpax
 - One id per content ([[identity]]); one canonical implementation, never N ([[recover]]); one tenant-scoped truth ([[access]]); one word per concept ([[sequence]] harmonized speech).
+
+## Traditions (prefix removed)
+The unity every tradition confesses: "Hear, O Israel: the LORD our God, the LORD is **one**" (the *Shema*, Deuteronomy 6:4); *tawhīd*, the oneness of God (Islam); *advaita*, non-duality — *Tat tvam asi*, "thou art that" (Chāndogya Upaniṣad); "I and the Father are one" (John 10:30). The many resolve to the One — same content ⇒ [[one]] id ([[identity]], [[merge]]); the soul's union with the source is the return to the 0 ([[zeropoint]], [[torus]]).

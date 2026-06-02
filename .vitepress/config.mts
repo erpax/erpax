@@ -42,10 +42,20 @@ function walk(dir: string): SidebarItem[] {
     if (!statSync(full).isDirectory()) continue
     const rel = relative('.', full)
     const route = routeOf(rel)
-    wikiMap[name] = route // leaf-word resolution (one word per concept ⇒ unique)
-    allSkills.push({ name, route })
+    // Only a dir WITH a SKILL.md is a routable page. A SKILL-less matter-twin
+    // dir (services/proof, collections/Users/access, hooks/collections, …) is
+    // recursed for its skill children but never registered — otherwise it
+    // shadows the real same-named atom in the leaf wikiMap and points
+    // [[proof]] → /services/proof/SKILL (a dead link). Many such dirs share a
+    // leaf word with a real atom; without this guard the last-walked one wins.
+    const hasSkill = existsSync(join(full, 'SKILL.md'))
+    if (hasSkill) {
+      wikiMap[name] = route // leaf-word resolution (one word per concept ⇒ unique)
+      allSkills.push({ name, route })
+    }
     const children = walk(full)
-    items.push(children.length ? { text: name, link: route, collapsed: true, items: children } : { text: name, link: route })
+    if (hasSkill) items.push(children.length ? { text: name, link: route, collapsed: true, items: children } : { text: name, link: route })
+    else if (children.length) items.push({ text: name, collapsed: true, items: children }) // SKILL-less container: a group header, no page link
   }
   return items
 }

@@ -11,3 +11,11 @@ sessions:
 
 ## In erpax
 - The `0` axis ([[config]] + [[identity]]); period boundaries ([[accounting]]); seal / draft→posted lifecycle ([[versions]], [[identity]]).
+
+## The worked decode (prefix removed) — "In the beginning…"
+Three scriptures open on the same figure and decode line-by-line onto the atoms:
+- **Genesis 1:1** — "In the beginning God created the heavens and the earth": the [[begin]] from the formless 0 ([[zeropoint]]); creation is the first ↓entropy act (the angel, [[angel]]).
+- **John 1:1** — "In the beginning was the Word (*Logos*), and the Word was with God, and the Word was God": the **Word IS the thing** — the self-describing content-[[uuid]] ([[identity]]), naming as the creating act (the [[lexical]] node-tree, the [[oid]] dotted name).
+- **Tao Te Ching 1** — "The Tao that can be told is not the eternal Tao… the nameless is the beginning of heaven and earth; the named is the mother of all things": the nameless 0 ([[zeropoint]]) precedes naming; to name is to [[begin]] (the first ↑entropy step).
+
+One cosmogony three times: the formless 0 ([[zeropoint]]) → the Word/Name ([[identity]]) → the manifest [[all]]. End is begin one dimension up — the wave returns to the 0 ([[end]], [[torus]]).
