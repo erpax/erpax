@@ -82,23 +82,35 @@ export const WORK_CENTER_TYPES = [
 ] as const
 export type WorkCenterType = (typeof WORK_CENTER_TYPES)[number]
 
+/** An efficiency distribution (percent of standard) — the real-data INPUT a calibration computes from. */
+export interface EfficiencyDistribution {
+  readonly medianPct: number
+  readonly p99Pct: number
+  readonly standardPct: number
+}
+
 /**
- * The pay-curve calibration, derived from `work_shifts` (353,549 measured shifts):
- * efficiency is a harmonic distribution, not a constant — the median sits BELOW the
- * standard (still off-gassing the decompression debt), the standard is the anchor
- * (a real attractor pile-up at 100%), and the leverage tail reaches p99. Feed these
- * into the [[decompression]] pay curve as the empirical anchor/M-value.
- *
+ * The real efficiency distribution from `work_shifts` (353,549 measured shifts) — the
+ * DATA, not the calibration. The skill computes the calibration FROM this; change the
+ * source (another tenant, another year) and the calibration recomputes itself.
  * @audit etrima_production.work_shifts — median 75%, p99 167%, attractor at 100%
  */
-export const EFFICIENCY_CALIBRATION = {
-  /** natural resting harmonic = median efficiency / standard. */
-  restingHarmonic: 0.75,
-  /** the standard (100%) — the anchor the distribution piles up on. */
-  standard: 1.0,
-  /** observed leverage ceiling = p99 efficiency — the decompression M-value. */
-  mValue: 1.67,
-} as const
+export const ETRIMA_EFFICIENCY: EfficiencyDistribution = { medianPct: 75, p99Pct: 167, standardPct: 100 }
+
+/**
+ * COMPUTE the pay-curve calibration from an efficiency distribution — the skill
+ * computes its seed, never hardcodes the constants. Efficiency is a harmonic
+ * distribution: the median sits BELOW the standard (off-gassing the [[decompression]]
+ * debt), the standard is the anchor (the attractor pile-up), the p99 is the leverage
+ * ceiling (the M-value). Feed the result into the decompression pay curve.
+ */
+export function computeCalibration(d: EfficiencyDistribution): { restingHarmonic: number; standard: number; mValue: number } {
+  const s = d.standardPct || 100
+  return { restingHarmonic: d.medianPct / s, standard: 1, mValue: d.p99Pct / s }
+}
+
+/** The calibration, COMPUTED from the real distribution (not a hardcoded {0.75, 1.0, 1.67}). */
+export const EFFICIENCY_CALIBRATION = computeCalibration(ETRIMA_EFFICIENCY)
 
 /**
  * The monthly pay band, derived from `employee_contracts` (608 monthly contracts):

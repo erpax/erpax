@@ -5541,9 +5541,9 @@ src/services/locale-fallback/index.test.ts:19: * @audit Conservation Law 54 univ
 src/services/locale-fallback/index.ts:43: * @audit Conservation Law 53 self-referential-closure
 src/services/locale-fallback/index.ts:44: * @audit Conservation Law 54 universal-identity-element (this is the locale instance)
 src/services/localize/index.ts:43: * @audit Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)
-src/services/manufacturing/seeds/operations.ts:106: * @audit etrima_production.employee_contracts — BGN, min 90 · median 227 · max 960
+src/services/manufacturing/seeds/operations.ts:118: * @audit etrima_production.employee_contracts — BGN, min 90 · median 227 · max 960
 src/services/manufacturing/seeds/operations.ts:25: * @audit derived from etrima_production.work_phases — no value re-typed
-src/services/manufacturing/seeds/operations.ts:92: * @audit etrima_production.work_shifts — median 75%, p99 167%, attractor at 100%
+src/services/manufacturing/seeds/operations.ts:96: * @audit etrima_production.work_shifts — median 75%, p99 167%, attractor at 100%
 src/services/manufacturing/seeds/positions.ts:21: * @audit derived from etrima_production.positions — codes + pay not re-typed
 src/services/manufacturing/seeds/standards.ts:13: * @audit catalogue-only clients (clientImplemented:false) — endpoints are real, modules pending
 src/services/message/index.ts:12: * @audit the uuid is self-decoding — every channel is an independent verify level

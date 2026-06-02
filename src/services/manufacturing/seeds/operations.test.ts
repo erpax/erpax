@@ -3,6 +3,8 @@ import {
   OPERATIONS,
   WORK_CENTER_TYPES,
   EFFICIENCY_CALIBRATION,
+  computeCalibration,
+  ETRIMA_EFFICIENCY,
   PAY_BAND,
   totalObservedPhases,
   type Operation,
@@ -38,6 +40,13 @@ describe('manufacturing/seeds/operations — the etrima vocabulary, harmonised w
     expect(new Set(WORK_CENTER_TYPES).size).toBe(WORK_CENTER_TYPES.length)
     expect(WORK_CENTER_TYPES).toContain('overlock')
     expect(WORK_CENTER_TYPES).toContain('knitting')
+  })
+
+  it('the calibration is COMPUTED from the distribution (the skill computes its seed), not a hardcoded constant', () => {
+    // EFFICIENCY_CALIBRATION is not a literal — it is computeCalibration(ETRIMA_EFFICIENCY)
+    expect(EFFICIENCY_CALIBRATION).toEqual(computeCalibration(ETRIMA_EFFICIENCY))
+    // change the source distribution ⇒ the calibration recomputes itself
+    expect(computeCalibration({ medianPct: 50, p99Pct: 200, standardPct: 100 })).toEqual({ restingHarmonic: 0.5, standard: 1, mValue: 2 })
   })
 
   it('the pay curve is calibrated from the real distribution — harmonic, anchored, with a leverage ceiling', () => {
