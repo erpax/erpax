@@ -1579,6 +1579,7 @@ src/services/commerce/index.ts:22: * @standard Cloudflare Workers API (deploymen
 src/services/commerce/index.ts:23: * @standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
 src/services/competency-gap/index.ts:10: * @standard ISO 30405:2016 essential-vs-optional (mandatory gating)
 src/services/competency-gap/index.ts:9: * @standard SFIA 8 responsibility-levels-1-7 (the shared held/required scale)
+src/services/competition/index.ts:14: * @standard ISO/IEC 25010:2023 §5.2 performance-efficiency (fastest-correct selection)
 src/services/consistency-apply/consistency-loop.test.ts:19: * @standard ISO/IEC 25010:2023 §5.5 testability — round-trip the agent loop
 src/services/consistency-apply/index.ts:21: * @standard ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path
 src/services/consistency-apply/index.ts:355: * @standard ISO/IEC-29119:2022 software-testing system-test-level
@@ -1726,6 +1727,8 @@ src/services/gl-account.service/index.ts:4: * @standard ISO-4217:2015 currency-c
 src/services/gl-posting.service/index.ts:796:   * @standard ISO 20022 camt.053 reconciliation
 src/services/gl-posting.service/index.ts:8: * @standard ISO-8601-1:2019 date-time posted-date
 src/services/gl-posting.service/index.ts:9: * @standard ISO-4217:2015 currency-codes
+src/services/google-workspace/fusion-transforms.ts:22: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the fusion identity)
+src/services/google-workspace/fusion-transforms.ts:23: * @standard IFRS/IAS double-entry (Σdebit = Σcredit) — the sheets→journal fusion
 src/services/google-workspace/fusion.ts:17: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the fusion identity)
 src/services/google-workspace/registry.ts:16: * @standard IETF RFC 6749 OAuth 2.0 authorization-framework
 src/services/google-workspace/registry.ts:17: * @standard OpenID Connect Core 1.0 (Google as the OIDC provider)
