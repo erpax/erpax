@@ -1682,6 +1682,8 @@ src/services/edifact-export.service.test.ts:8: * @standard UN-EDIFACT D.96A
 src/services/edifact-export.service.test.ts:9: * @standard ISO-9735:2002 edifact-syntax-rules
 src/services/edifact-export.service/index.ts:16: * @standard UN-EDIFACT D.96A
 src/services/edifact-export.service/index.ts:17: * @standard ISO-9735:2002 edifact-syntax-rules
+src/services/element/index.ts:7: * @standard IUPAC periodic table — periods, groups, main-group valence
+src/services/element/index.ts:8: * @standard Lewis octet rule (duet for period 1) — stability = a full outer shell
 src/services/emit-domain-event/index.ts:15: * @standard ISO-8601-1:2019 date-time event-timestamp
 src/services/entry/index.ts:24: * @standard IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
 src/services/entry/index.ts:25: * @standard FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation
