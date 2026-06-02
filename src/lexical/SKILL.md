@@ -1,6 +1,6 @@
 ---
 name: lexical
-description: Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks.
+description: "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks."
 ---
 
 # lexical — rich text as the densest content surface
