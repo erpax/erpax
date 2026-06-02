@@ -37,6 +37,7 @@ export type CountryApiKind =
   | 'sanctions' // OFAC / EU consolidated list / UK HMT
   | 'statistics' // national statistics office (sometimes used for FX)
   | 'payroll' // payroll / social-security reporting
+  | 'classification' // occupation/activity/skill classification service (ESCO, NACE, ISCO)
 
 export type CountryApiAuth =
   | 'none' // open public endpoint
