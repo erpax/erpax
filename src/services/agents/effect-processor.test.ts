@@ -21,6 +21,7 @@ function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
     emit: vi.fn(),
     audit: vi.fn(),
     capture: vi.fn(),
+    call: vi.fn(async () => []) as AgentContext['call'],
     mcp: {} as AgentContext['mcp'],
     ...overrides,
   }
@@ -70,6 +71,13 @@ describe('processEffect', () => {
     const frame = { workflow: 'o2c', stepId: '01', captionKey: 'workflow.o2c.steps.01' }
     await processEffect({ kind: 'capture', frame }, ctx)
     expect(ctx.capture).toHaveBeenCalledWith(frame)
+  })
+
+  it('handles call — addresses one named agent via ctx.call (the agent-to-agent effect twin)', async () => {
+    const ctx = mockCtx()
+    const event = { id: 'fx:quote-requested', tenantId: 't', payload: { pair: 'EURBGN' }, emittedAt: '' }
+    await processEffect({ kind: 'call', agentId: 'finance', event }, ctx)
+    expect(ctx.call).toHaveBeenCalledWith('finance', event)
   })
 
   it('handles notify — composes template + emits notification:<channel> domain event', async () => {

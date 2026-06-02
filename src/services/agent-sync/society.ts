@@ -65,7 +65,7 @@ export function domainToErpaxEvent(ev: DomainEvent, agent: string): ErpaxEvent {
       ev.tenantId,
     ),
     event: ev.id,
-    aggregateId: computeContentUuid(ev.payload, ev.tenantId),
+    aggregateId: ev.aggregateId ?? computeContentUuid(ev.payload, ev.tenantId),
     agent,
     ts: ev.emittedAt,
     payload: ev.payload,
@@ -86,8 +86,15 @@ export function erpaxToDomainEvent(e: ErpaxEvent, tenantId: string): DomainEvent
 }
 
 export interface AgentSociety {
-  /** Publish a runtime event to the tenant's room (every other agent sees it). */
-  publish: (ev: DomainEvent) => void
+  /**
+   * Publish a runtime event to the tenant's room (every other agent sees it).
+   * `asAgent` overrides the publishing identity (the envelope's `agent`) — e.g.
+   * a team voicing a move as the specific member who made it; it defaults to the
+   * connection's own `agentName`. The event uuid is derived from the event, NOT
+   * the publisher (see `domainToErpaxEvent`), so the override never affects the
+   * idempotency key — the echo is still self-deduped on `seen`.
+   */
+  publish: (ev: DomainEvent, asAgent?: string) => void
   /** Leave the room. */
   close: () => void
 }
@@ -124,8 +131,8 @@ export function connectAgentSociety(opts: {
   })
 
   return {
-    publish: (ev) => {
-      const e = domainToErpaxEvent(ev, agentName)
+    publish: (ev, asAgent) => {
+      const e = domainToErpaxEvent(ev, asAgent ?? agentName)
       seen.add(e.uuid) // never re-dispatch our own publish if it echoes back
       sync.publish(e)
     },

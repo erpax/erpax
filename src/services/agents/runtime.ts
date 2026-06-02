@@ -10,10 +10,23 @@
  */
 
 import type {
-  AgentContext, AgentEffect, AgentId, AgentRegistry, AgentRuntime, DomainEvent,
+  AgentContext, AgentEffect, AgentId, AgentRegistry, AgentRuntime, DomainAgent, DomainEvent,
 } from './types'
 import type { SpecChainStep } from '@/services/spec-generator'
 import { processEffects } from './effect-processor'
+
+/**
+ * Run one agent's `onEvent` and process its effects — the single per-agent body
+ * shared by the broadcast (`dispatchEvent`, fan-out to subscribers) and the
+ * addressed (`dispatchTo`, one named agent) paths. DRY: the routing differs,
+ * the run does not.
+ */
+async function runEvent(agent: DomainAgent, ctx: AgentContext, ev: DomainEvent): Promise<AgentEffect[]> {
+  if (!agent.onEvent) return []
+  const effects = await agent.onEvent(ctx, ev)
+  await processEffects(effects, ctx)
+  return effects
+}
 
 /**
  * Extract the `collection=<slug>` marker from a chain step's note.
@@ -41,15 +54,14 @@ export function createAgentRuntime(registry: AgentRegistry): AgentRuntime {
     },
 
     async dispatchEvent(ctx, ev: DomainEvent) {
-      const subs = registry.bySubscribedEvent(ev.id)
       const all: AgentEffect[] = []
-      for (const a of subs) {
-        if (!a.onEvent) continue
-        const effects = await a.onEvent(ctx, ev)
-        await processEffects(effects, ctx)
-        all.push(...effects)
-      }
+      for (const a of registry.bySubscribedEvent(ev.id)) all.push(...(await runEvent(a, ctx, ev)))
       return all
+    },
+
+    async dispatchTo(ctx, agentId: AgentId, ev: DomainEvent) {
+      const agent = registry.byId(agentId)
+      return agent ? runEvent(agent, ctx, ev) : []
     },
 
     async dispatchSchedule(ctx, agentId: AgentId) {

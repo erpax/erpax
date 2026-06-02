@@ -21,6 +21,7 @@
 
 import type { PayloadRequest } from 'payload'
 import { eventEmitter } from '../event-emitter.service'
+import { publishEmit, type ChatClient } from '@/services/agent-sync/payload-chat'
 import type { DomainEvent } from '@/types/events'
 
 /**
@@ -46,4 +47,25 @@ export async function emitDomainEvent(
       `✗ Error emitting ${event.eventType} for ${event.aggregateType} ${label}:`,
     )
   }
+
+  // Bridge to the society chat bus — every business event becomes a durable,
+  // content-addressed `chat` row (→ afterChange → the agent society reacts).
+  // Fire-and-forget + guarded: feeds the bus without blocking or breaking the
+  // business write (this is also the event-sourcing persistence the in-memory
+  // emitter left as a TODO — the akashic event log).
+  const emittedAt = (event.timestamp instanceof Date ? event.timestamp : new Date()).toISOString()
+  void publishEmit(
+    req.payload as unknown as ChatClient,
+    {
+      id: event.eventType,
+      tenantId: event.tenantId,
+      payload: (event.payload ?? {}) as Record<string, unknown>,
+      emittedAt,
+      aggregateId: event.aggregateId, // preserve the real business entity link (B3)
+    },
+    0,
+    event.userId ?? 'system',
+  ).catch((err) => {
+    req.payload.logger.warn({ err }, `society chat bridge failed for ${event.eventType}`)
+  })
 }

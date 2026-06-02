@@ -82,6 +82,14 @@ export async function processEffect(eff: AgentEffect, ctx: AgentContext): Promis
       ctx.emit(eff.event)
       return
 
+    case 'call':
+      // Address one named agent (the dual of broadcast `emit`). Its own effects
+      // are processed inside `ctx.call`; the returned effects are intentionally
+      // discarded here — this is the fire-and-forget effect form (use `ctx.call`
+      // directly when the caller needs the result).
+      await ctx.call(eff.agentId, eff.event)
+      return
+
     case 'capture':
       ctx.capture(eff.frame)
       return

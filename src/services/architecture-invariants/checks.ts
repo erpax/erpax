@@ -199,7 +199,7 @@ export function checkChainStepsReferenceRealCollections(_ctx: InvariantContext):
   // Some core slugs are not feature-gated; whitelist the ones chains use.
   for (const s of [
     'audit-events', 'gl-accounts', 'journal-entries', 'gl-postings',
-    'fiscal-periods', 'invoices', 'payments', 'customers', 'vendors',
+    'fiscal-periods', 'invoices', 'payments', 'payment-allocations', 'customers', 'vendors',
     'subscriptions', 'usage-records',
     'purchase-requisitions', 'vendor-quotes', 'purchase-orders', 'goods-receipts',
     'leases', 'lease-period-postings', 'lease-modifications',
@@ -268,7 +268,11 @@ export function checkTierLadderInclusivity(_ctx: InvariantContext): InvariantRes
   for (let i = 0; i < TIERS.length - 1; i++) {
     const lo = TIERS[i] as Tier
     const hi = TIERS[i + 1] as Tier
-    const loSet = new Set(featuresForTier(lo).map((f) => f.id))
+    // Metered features are entry-tier capped versions (e.g. `invoicing_metered`,
+    // ≤50/yr on free) that higher tiers SUPERSEDE with an unmetered equivalent
+    // (`invoicing_unlimited`); they are legitimately not carried upward, so the
+    // monotonic-superset rule exempts them.
+    const loSet = new Set(featuresForTier(lo).filter((f) => !f.metered).map((f) => f.id))
     const hiSet = new Set(featuresForTier(hi).map((f) => f.id))
     for (const f of loSet) {
       if (!hiSet.has(f)) offenders.push(`${lo} has '${f}' but ${hi} does not`)
@@ -1146,7 +1150,7 @@ export function checkBridgeRelationshipsIndexed(ctx: InvariantContext): Invarian
 
 /**
  * Every scheduled task's cron expression is parseable and matches AT LEAST
- * ONE minute in a 24-hour window. Catches typos like `*\/15 * * 13 *`
+ * ONE minute in a one-year window. Catches typos like `*\/15 * * 13 *`
  * (impossible month) or `0 0 0 * *` (zero day-of-month) that would silently
  * never fire.
  *
@@ -1160,10 +1164,12 @@ export function checkScheduledTasksCronValid(_ctx: InvariantContext): InvariantR
       offenders.push(`${task.id}: cron has ${fields.length} fields, expected 5`)
       continue
     }
-    // Probe 24h × 60min = 1440 minutes; require ≥1 match.
-    const base = new Date('2026-05-10T00:00:00Z')
+    // Probe a FULL YEAR (≥1 match required) so legitimately sparse crons —
+    // monthly (`0 7 1 * *`) and annual (`0 0 1 1 *`) — are valid; only
+    // IMPOSSIBLE crons (month 13, day 0/32) match no minute across a year.
+    const base = new Date('2026-01-01T00:00:00Z')
     let matched = false
-    for (let m = 0; m < 1440; m++) {
+    for (let m = 0; m < 366 * 1440; m++) {
       if (cronMatchesMinute(task.cron, new Date(base.getTime() + m * 60_000))) {
         matched = true
         break

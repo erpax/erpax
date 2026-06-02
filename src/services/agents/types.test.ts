@@ -24,10 +24,10 @@ describe('agent types', () => {
     >()
   })
 
-  it('AgentEffect is an exhaustive discriminated union (7 kinds)', () => {
+  it('AgentEffect is an exhaustive discriminated union (8 kinds — incl. agent-to-agent `call`)', () => {
     type Kinds = AgentEffect['kind']
     expectTypeOf<Kinds>().toEqualTypeOf<
-      'create' | 'update' | 'notify' | 'audit' | 'escalate' | 'emit' | 'capture'
+      'create' | 'update' | 'notify' | 'audit' | 'escalate' | 'emit' | 'capture' | 'call'
     >()
   })
 

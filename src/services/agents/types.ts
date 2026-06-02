@@ -35,6 +35,9 @@ export interface DomainEvent {
   readonly payload: Record<string, unknown>
   /** ISO-8601 timestamp. */
   readonly emittedAt: string
+  /** Optional id/content-uuid of the aggregate this event is about — preserved
+   *  end-to-end so a chat row points at the real entity, not a payload hash. */
+  readonly aggregateId?: string
 }
 
 /** A single Merkle-audit leaf produced by an agent step. */
@@ -75,6 +78,11 @@ export type AgentEffect =
   | { kind: 'escalate'; severity: GapSeverity; templateKey: string; vars: Record<string, unknown> }
   | { kind: 'emit'    ; event: DomainEvent }
   | { kind: 'capture' ; frame: EvidenceFrame }
+  // `call` ADDRESSES one named agent (the dual of `emit`'s broadcast): the event
+  // is dispatched to exactly that agent, which acts and whose own effects are
+  // processed. An agent fanning a follow-up to a specific peer. The synchronous,
+  // return-valued form is `ctx.call` — this is its fire-and-forget effect twin.
+  | { kind: 'call'    ; agentId: AgentId; event: DomainEvent }
 
 /**
  * Execution context handed to every DomainAgent hook. Carries the
@@ -90,6 +98,16 @@ export interface AgentContext {
   readonly emit:     (ev: DomainEvent) => void
   readonly audit:    (leaf: AuditLeaf) => void
   readonly capture:  (frame: EvidenceFrame) => void
+  /**
+   * Call another agent by id and receive its effects — the agent-to-agent
+   * primitive. Where `emit` BROADCASTS an event to every subscriber, `call`
+   * ADDRESSES exactly one agent (`runtime.dispatchTo`): the target acts on the
+   * same substrate (this ctx — same tenant / payload / emit / audit), its
+   * effects are processed, and they are returned so the caller can reason about
+   * the result. This is how a member of a team covers a gap by invoking the
+   * peer whose capability answers it ([[society]]/[[team]]/[[contribution]]).
+   */
+  readonly call:     (agentId: AgentId, ev: DomainEvent) => Promise<AgentEffect[]>
   /**
    * In-process MCP client — same tool surface as the over-the-wire
    * `@payloadcms/plugin-mcp` exposure. Agents call MCP tools the same
@@ -134,4 +152,7 @@ export interface AgentRuntime {
   dispatchChainStep(ctx: AgentContext, step: SpecChainStep): Promise<AgentEffect[]>
   dispatchEvent    (ctx: AgentContext, ev:   DomainEvent  ): Promise<AgentEffect[]>
   dispatchSchedule (ctx: AgentContext, agentId: AgentId   ): Promise<AgentEffect[]>
+  /** Address one agent directly (the `call` primitive) — runs its `onEvent`,
+   *  processes its effects, returns them. `dispatchEvent` is the broadcast dual. */
+  dispatchTo       (ctx: AgentContext, agentId: AgentId, ev: DomainEvent): Promise<AgentEffect[]>
 }

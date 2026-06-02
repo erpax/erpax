@@ -35,6 +35,7 @@
  */
 
 import { ANCHOR, hourlyRate } from '@/services/allocation'
+import { levelCeiling } from '@/decompression'
 import { buildNextLeaf, payloadContentUuid } from '@/services/integrity/uuid-linked-chain'
 import type { UuidLinkedLeaf } from '@/services/integrity/uuid-linked-chain'
 
@@ -174,4 +175,49 @@ export function oneLadder(
     if (new Set(rates).size > 1) violations.push({ harmonic, functions, rates })
   }
   return violations
+}
+
+// ── The roster: every operational role the society needs, at every level ─────
+// "Hold the law, not the list." The roster is DERIVED, never hand-typed: it is
+// the product of the FUNCTION axis (government ∪ society — one continuum) and
+// the LEVEL axis (SFIA 1..7). Each cell's harmonic is the level's M-value
+// ceiling (levelCeiling, the rodin doubling helix), so a function's seven levels
+// span the whole horo ring [1,2,4,8,7,5,9] — base→unity — and `oneLadder` holds.
+
+/** COFOG 01–10 — the ten functions of GOVERNMENT (the public half of the one ladder). */
+export const COFOG_FUNCTIONS = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'] as const
+
+/** SNA-2008 institutional sectors — the SOCIETY/market half (S.11 non-financial … S.15 NPISH). */
+export const SECTOR_FUNCTIONS = ['S.11', 'S.12', 'S.13', 'S.14', 'S.15'] as const
+
+/** The society's whole function axis: government (COFOG) ∪ society (sectors), priced by one ladder. */
+export const SOCIETY_FUNCTIONS = [...COFOG_FUNCTIONS, ...SECTOR_FUNCTIONS] as const
+
+/** SFIA responsibility levels 1..7 — every depth the society staffs. */
+export const SOCIETY_LEVELS = [1, 2, 3, 4, 5, 6, 7] as const
+
+/**
+ * Generate the complete operational roster — one position per (function × level)
+ * cell. The harmonic (M-value) is the level's [[decompression]] ceiling, so each
+ * function is staffed by a full horo band and government·society are priced
+ * identically at every level (`oneLadder` returns []). The title is COMPUTED
+ * (function code · SFIA responsibility verb), never hand-written.
+ */
+export function roster(
+  functions: ReadonlyArray<string> = SOCIETY_FUNCTIONS,
+  levels: ReadonlyArray<number> = SOCIETY_LEVELS,
+): Position[] {
+  const out: Position[] = []
+  for (const fn of functions) {
+    for (const level of levels) {
+      const lvl = clampLevel(level)
+      out.push({
+        title: `${fn}·${SFIA_RESPONSIBILITY[lvl]}`,
+        harmonic: levelCeiling(lvl),
+        level: lvl,
+        function: fn,
+      })
+    }
+  }
+  return out
 }

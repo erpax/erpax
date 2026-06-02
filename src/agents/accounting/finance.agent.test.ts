@@ -21,6 +21,7 @@ function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
     emit: vi.fn(),
     audit: vi.fn(),
     capture: vi.fn(),
+    call: vi.fn(async () => []) as AgentContext['call'],
     mcp: { listTools: () => [], callTool: async () => '' },
     ...overrides,
   }

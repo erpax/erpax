@@ -16,6 +16,7 @@
 
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
+import { trainingAfterChange } from '../../../services/agent-sync/training-broadcast'
 import { accountingCollectionAccess } from '../../../access/auth'
 import { currencyField, statusField, notesField, auditFields, legalEntityField } from '../../../fields/base-accounting-fields'
 import { competencyLineField } from '../../../fields/competency'
@@ -122,7 +123,9 @@ const JobPositions: CollectionConfig = {
     ...auditFields({ readOnly: true }),
     notesField(),
   ],
-  hooks: standardCollectionHooks('job-positions'),
+  // afterChange arms the auto-train loop: an incumbent's gap vs this role is
+  // priced on the decompression curve and broadcast as a training plan ([[train]]).
+  hooks: standardCollectionHooks('job-positions', { afterChange: [trainingAfterChange()] }),
   timestamps: true,
 }
 

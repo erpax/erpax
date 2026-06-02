@@ -225,6 +225,7 @@ const {
   BeneficialOwners,
   Packages,
   Messages,
+  Chat,
   CsrdDisclosures,
   CarbonEmissions,
   BiologicalAssets,
@@ -691,6 +692,7 @@ export default buildConfig({
     // Logistics, treasury, integrations & messaging (5)
     Packages,
     Messages,
+    Chat,
     // Sustainability & ESG (2)
     CsrdDisclosures,
     CarbonEmissions,
@@ -774,6 +776,8 @@ export default buildConfig({
         posts: {},
         media: {},
         categories: {},
+        // Agent-society room (the chat built on Payload) — per-tenant isolation
+        chat: {},
         // Tagging system
         tags: {},
         taggings: {},

@@ -6,10 +6,16 @@ import {
   conditionsUuid,
   chainPositions,
   oneLadder,
+  roster,
+  COFOG_FUNCTIONS,
+  SECTOR_FUNCTIONS,
+  SOCIETY_FUNCTIONS,
+  SOCIETY_LEVELS,
   SFIA_RESPONSIBILITY,
 } from './index'
 import type { Position } from './index'
 import { ANCHOR } from '@/services/allocation'
+import { HORO_DIGITS } from '@/services/horo'
 
 // A roster spanning government (COFOG functions) AND society (market sector), one ladder.
 const ROSTER: Position[] = [
@@ -88,5 +94,33 @@ describe('positions — the harmonic ladder filled with gov+society positions', 
     expect(positionHourlyRate(p)).toBe(ANCHOR) // sub-1 harmonic floors to the fundamental
     expect(conditionsOf(p).level).toBe(7) // level clamps to the SFIA ceiling
     expect(jobDescription(p).requires).toEqual([]) // missing ⇒ empty, still defined
+  })
+})
+
+describe('positions — the derived roster: every role the society needs, at every level', () => {
+  it('is the product of the function axis (gov ∪ society) and the SFIA level axis', () => {
+    expect(SOCIETY_FUNCTIONS).toEqual([...COFOG_FUNCTIONS, ...SECTOR_FUNCTIONS]) // one continuum
+    const all = roster()
+    expect(all).toHaveLength(SOCIETY_FUNCTIONS.length * SOCIETY_LEVELS.length) // 15 × 7 = 105
+    // titles are COMPUTED (function code · SFIA verb), never hand-written
+    expect(all.find((p) => p.function === '07' && p.level === 3)?.title).toBe(`07·${SFIA_RESPONSIBILITY[3]}`)
+  })
+
+  it('each function is staffed by a full horo band: its seven levels ARE the ring [1,2,4,8,7,5,9]', () => {
+    const health = roster(['07']) // one COFOG function, all seven levels
+    expect(health.map((p) => p.harmonic)).toEqual([...HORO_DIGITS]) // base→crest→unity
+  })
+
+  it('government and society are ONE ladder across the whole roster: equal level ⇒ equal rate, any function', () => {
+    expect(oneLadder(roster())).toEqual([]) // no privileged scale anywhere in the society
+    const govHealthL4 = roster(['07'], [4])[0] // public health, crest
+    const marketL4 = roster(['S.11'], [4])[0] // private sector, crest
+    expect(positionHourlyRate(govHealthL4)).toBe(positionHourlyRate(marketL4)) // identical pay
+    expect(positionHourlyRate(govHealthL4)).toBe(ANCHOR * 8) // anchor × M-value(level 4) = 7.83 × 8
+  })
+
+  it('the base level is the fundamental everywhere; the unity level tops the ring', () => {
+    expect(positionHourlyRate(roster(['01'], [1])[0])).toBe(ANCHOR * 1) // 7.83/hr — saves no one's time
+    expect(positionHourlyRate(roster(['01'], [7])[0])).toBe(ANCHOR * 9) // 70.47/hr — the governing close
   })
 })

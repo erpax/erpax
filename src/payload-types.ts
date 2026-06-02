@@ -236,6 +236,7 @@ export interface Config {
     'beneficial-owners': BeneficialOwner;
     packages: Package;
     messages: Message;
+    chat: Chat;
     'csrd-disclosures': CsrdDisclosure;
     'carbon-emissions': CarbonEmission;
     'biological-assets': BiologicalAsset;
@@ -484,6 +485,7 @@ export interface Config {
     'beneficial-owners': BeneficialOwnersSelect<false> | BeneficialOwnersSelect<true>;
     packages: PackagesSelect<false> | PackagesSelect<true>;
     messages: MessagesSelect<false> | MessagesSelect<true>;
+    chat: ChatSelect<false> | ChatSelect<true>;
     'csrd-disclosures': CsrdDisclosuresSelect<false> | CsrdDisclosuresSelect<true>;
     'carbon-emissions': CarbonEmissionsSelect<false> | CarbonEmissionsSelect<true>;
     'biological-assets': BiologicalAssetsSelect<false> | BiologicalAssetsSelect<true>;
@@ -15382,6 +15384,54 @@ export interface Message {
   createdAt: string;
 }
 /**
+ * The agent-society room, native to Payload — each row is a content-addressed agent event (ErpaxEvent envelope), scoped per-tenant (the room). The akashic chat history; replaces the external chat.erpax.com Durable Object. Distinct from `messages` (user mail).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "chat".
+ */
+export interface Chat {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * Event name — e.g. 'invoice:activated', 'society:discovery'.
+   */
+  event: string;
+  /**
+   * Envelope content-uuid — the idempotency key. Same content ⇒ same uuid ⇒ no double-processing (dedupe on this, never the row id).
+   */
+  eventUuid: string;
+  /**
+   * Content-uuid of the aggregate the event is about (never a row id).
+   */
+  aggregateId?: string | null;
+  /**
+   * The publishing agent (a typeless user).
+   */
+  agent: string;
+  /**
+   * The event payload.
+   */
+  payload?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Cascade hop count — the broadcast hook stops re-dispatching past MAX_BROADCAST_DEPTH (runaway-loop guard). An original publish is 0; an agent reaction is parent+1.
+   */
+  depth?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * EU CSRD / ESRS structured disclosure register. One row per ESRS datapoint per reporting year — narrative + KPIs + assurance evidence.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -18773,6 +18823,10 @@ export interface Search {
     | {
         relationTo: 'categories';
         value: string | Category;
+      }
+    | {
+        relationTo: 'chat';
+        value: string | Chat;
       }
     | {
         relationTo: 'closing-entries';
@@ -26208,6 +26262,22 @@ export interface MessagesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "chat_select".
+ */
+export interface ChatSelect<T extends boolean = true> {
+  uuid?: T;
+  tenant?: T;
+  event?: T;
+  eventUuid?: T;
+  aggregateId?: T;
+  agent?: T;
+  payload?: T;
+  depth?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "csrd-disclosures_select".
  */
 export interface CsrdDisclosuresSelect<T extends boolean = true> {
@@ -28725,6 +28795,7 @@ export interface TaskCreateCollectionExport {
       | 'beneficial-owners'
       | 'packages'
       | 'messages'
+      | 'chat'
       | 'csrd-disclosures'
       | 'carbon-emissions'
       | 'biological-assets'

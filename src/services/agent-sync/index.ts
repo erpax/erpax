@@ -169,3 +169,11 @@ export function connectAgentSync(opts: {
 
 // The breath — the caller that convenes the society over this bus.
 export * from './society'
+// The team breath — a whole tribe joins the society circle (the next scale of the breath).
+export * from './horo'
+// The contribution layer — shared discoveries (gaps filled by many) over the bus.
+export * from './discovery'
+// The Payload-native room — the chat built on Payload (no external Durable Object).
+export * from './payload-chat'
+// The broadcast — a new chat row dispatches its embedded event into the runtime.
+export * from './chat-broadcast'

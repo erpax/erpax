@@ -67,7 +67,7 @@ export const ROLES_REGISTRY: RolesRegistry = {
     description: 'Full read/write across the tenant. Configures users, plans, integrations. Per SOX §404, tenant admins SHOULD NOT perform routine accounting writes (delegate to accountant role).',
     standards: ['ISO 27001 A.5.15 access-control', 'ISO 27001 A.5.16 identity-management', 'SOX §404 internal-controls'],
     competencies: ['tenant-administration', 'user-provisioning', 'subscription-management'],
-    mutuallyExclusiveWith: ['auditor', 'customer'], // operational admin cannot be the auditor (SoD); customer is external-only
+    mutuallyExclusiveWith: ['auditor', 'customer', 'audit-staff'], // operational admin ≠ auditor/audit-staff (SoD); customer is external-only
     availableInTiers: null,
     canDecide: ['approve', 'reject', 'delegate', 'escalate'],
   },
@@ -78,7 +78,7 @@ export const ROLES_REGISTRY: RolesRegistry = {
     standards: ['IFAC IES 1-8 international-education-standards', 'IFRS Conceptual Framework', 'IFAC Code of Ethics §100', 'SOX §404 four-eyes', 'ISO 27002 §5.4 segregation-of-duties'],
     competencies: ['journal-entry-prep', 'period-close', 'reconciliation', 'financial-statements', 'tax-compliance'],
     recognisedCertifications: ['CPA (US)', 'ACCA (UK/EU)', 'CIMA (UK)', 'CA (UK/IE/AU/CA)', 'ESV (BG)', 'national equivalent'],
-    mutuallyExclusiveWith: ['auditor', 'customer'], // SOX §404 — preparer ≠ auditor; customer is external-only
+    mutuallyExclusiveWith: ['auditor', 'customer', 'audit-staff', 'compliance-officer'], // SOX §404 — preparer ≠ auditor/audit-staff/compliance-officer; customer is external-only
     availableInTiers: ['solo', 'team', 'business', 'enterprise'],
     canDecide: ['approve', 'reject'],
   },
@@ -89,7 +89,7 @@ export const ROLES_REGISTRY: RolesRegistry = {
     standards: ['ISA 200-720 international-standards-on-auditing', 'ISA 600 group-audits', 'ISO 19011:2018 §7 auditor-competence', 'IIA International Professional Practices Framework (IPPF)', 'ISAE 3000 limited-assurance', 'ISAE 3410 ghg-statements'],
     competencies: ['evidence-gathering', 'control-testing', 'risk-assessment', 'reporting'],
     recognisedCertifications: ['CPA + audit specialty', 'CIA (Certified Internal Auditor)', 'CISA (info systems audit)', 'national audit-licence'],
-    mutuallyExclusiveWith: ['admin', 'accountant', 'customer'],
+    mutuallyExclusiveWith: ['admin', 'accountant', 'customer', 'finance', 'hr', 'payroll-officer', 'manager', 'director'],
     availableInTiers: ['business', 'enterprise'],
     canDecide: ['approve', 'reject'],
   },
@@ -108,7 +108,7 @@ export const ROLES_REGISTRY: RolesRegistry = {
     description: 'External customer accessing their own invoices, payments, and quotes via the customer portal. Tenant-scoped and per-customer-scoped.',
     standards: ['ISO 27001 A.5.23 cloud-service-tenant-isolation', 'GDPR Art.5(1)(b) purpose-limitation'],
     competencies: ['self-service-portal'],
-    mutuallyExclusiveWith: ['admin', 'accountant', 'auditor'], // never grant internal roles to a customer
+    mutuallyExclusiveWith: ['admin', 'accountant', 'auditor', 'audit-staff'], // never grant internal roles to a customer
     availableInTiers: null,
   },
   'viewer': {

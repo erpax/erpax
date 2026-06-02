@@ -26,7 +26,8 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
 import { accountingCollectionAccess } from '../../access/auth'
-import { auditFields, notesField } from '../../fields/base-accounting-fields'
+import { auditFields, notesField, taxonomySelect } from '../../fields/base-accounting-fields'
+import { EU_AI_ACT_RISK_OPTIONS } from '../../standards/eu-ai-act'
 
 const AiModels: CollectionConfig = {
   slug: 'ai-models',
@@ -82,18 +83,10 @@ const AiModels: CollectionConfig = {
       ],
       admin: { description: 'Reasoning depth in the cascade (standard → deep).' },
     },
-    {
-      name: 'riskClass',
-      type: 'select',
+    taxonomySelect('riskClass', EU_AI_ACT_RISK_OPTIONS, {
       defaultValue: 'limited',
-      options: [
-        { label: 'Minimal', value: 'minimal' },
-        { label: 'Limited (transparency)', value: 'limited' },
-        { label: 'High', value: 'high' },
-        { label: 'Prohibited', value: 'prohibited' },
-      ],
-      admin: { description: 'EU AI Act 2024 risk class — enforced at the call gate.' },
-    },
+      description: 'EU AI Act 2024 risk class — enforced at the call gate.',
+    }),
     {
       name: 'euHostable',
       type: 'checkbox',

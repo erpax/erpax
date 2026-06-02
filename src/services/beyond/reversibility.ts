@@ -25,6 +25,10 @@ export function inverseOf(effect: AgentEffect, opts?: { previousState?: unknown;
       return { kind: 'undo-update', collection: effect.collection, id: effect.id, restorePatch: opts.previousState }
     case 'emit':
       return { kind: 'undo-emit', eventId: effect.event.id }
+    case 'call':
+      // A call delegates to the callee; its consequences ARE the callee's own
+      // effects, inverted at their own site — there is nothing to invert here.
+      return { kind: 'cannot-invert', reason: 'call delegates to the callee — invert the callee’s effects at their site' }
     case 'audit':
       // Audit leaves are immutable by Law 5; emit a tombstone instead.
       return { kind: 'undo-audit', leafHash: 'tombstone-pending' }

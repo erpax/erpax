@@ -264,6 +264,8 @@ export { default as Packages } from './Items/Packages'
 
 // Integrations & messaging
 export { default as Messages } from './Messages'
+// Agent-society room — the chat built on Payload (content-addressed events)
+export { default as Chat } from './Chat'
 
 // Sustainability & ESG
 export { default as CsrdDisclosures } from './CsrdDisclosures'

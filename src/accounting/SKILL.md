@@ -20,6 +20,8 @@ The archetype self-sufficient `@erpax/accounting`: it references every other dom
 | `payments` | Payment | `amount + currency`, `method`, links invoice(s); feeds reconciliation |
 | `bank-statement-lines` | BankStatementLine | imported lines matched ↔ `payments`/`journal-lines` (reconciliation) |
 
+The [[collections]] atoms this archetype owns — the finance leaves these concerns compose into: the ledger core [[gl-accounts]] · [[gl-postings]] · [[gl-posting-rules]] · [[journal-entries]] · [[recurring-journals]] · [[closing-entries]]; the documents [[invoices]] · [[invoice-lines]] · [[payments]]; bank & reconciliation [[bank-accounts]] · [[bank-statements]] · [[bank-reconciliations]] · [[account-reconciliations]]; and the period spine [[fiscal-periods]] · [[period-locks]] (the locked-period write-guard). [[tax]] rides via `tax-codes` (owned by the tax domain, not here). The FinanceAgent owns this whole set ([[society]] — one agent, one collection).
+
 ## The harmony invariant — double-entry balance
 Every `journal-entry` MUST balance: `Σ debit = Σ credit` (equivalently `Σ (credit − debit) = 0`). This is the accounting equation as a **hook-enforced invariant** — the same "any disharmony shows in the schema" principle the [[sequence]] embodies, made concrete:
 ```ts

@@ -22,6 +22,7 @@ function mockCtx(): AgentContext {
     emit: vi.fn(),
     audit: vi.fn(),
     capture: vi.fn(),
+    call: vi.fn(async () => []) as AgentContext['call'],
     mcp: {} as AgentContext['mcp'],
   }
 }
@@ -114,6 +115,32 @@ describe('AgentRuntime.dispatchEvent', () => {
     const rt = createAgentRuntime(createAgentRegistry([]))
     const out = await rt.dispatchEvent(mockCtx(), { id: 'nobody-listens', tenantId: 't', payload: {}, emittedAt: '' })
     expect(out).toEqual([])
+  })
+})
+
+describe('AgentRuntime.dispatchTo — the agent-to-agent address (dual of broadcast)', () => {
+  it('runs EXACTLY the named agent and processes its effects', async () => {
+    const fx: AgentEffect[] = [{ kind: 'emit', event: { id: 'fx', tenantId: 't', payload: {}, emittedAt: '' } }]
+    const finance: DomainAgent = {
+      id: 'finance', ownsCollections: [], subscribesTo: [], emits: [], onEvent: async () => fx,
+    }
+    const sales: DomainAgent = {
+      id: 'sales', ownsCollections: [], subscribesTo: [], emits: [],
+      onEvent: async () => { throw new Error('dispatchTo must address ONE agent, never fan out') },
+    }
+    const rt = createAgentRuntime(createAgentRegistry([finance, sales]))
+    const ctx = mockCtx()
+    const out = await rt.dispatchTo(ctx, 'finance', { id: 'q', tenantId: 't', payload: {}, emittedAt: '' })
+    expect(out).toEqual(fx) // only the addressed agent's effects
+    expect(ctx.emit).toHaveBeenCalledTimes(1) // and they were processed; sales never ran
+  })
+
+  it('returns [] for an unknown agent or one without onEvent', async () => {
+    const noHook: DomainAgent = { id: 'finance', ownsCollections: [], subscribesTo: [], emits: [] }
+    const rt = createAgentRuntime(createAgentRegistry([noHook]))
+    const ev: DomainEvent = { id: 'q', tenantId: 't', payload: {}, emittedAt: '' }
+    expect(await rt.dispatchTo(mockCtx(), 'finance', ev)).toEqual([]) // registered, no onEvent
+    expect(await rt.dispatchTo(mockCtx(), 'sales', ev)).toEqual([]) // not registered
   })
 })
 

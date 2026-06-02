@@ -86,3 +86,6 @@ export function distinctAgents(swarm: ReadonlyArray<AgentDef>, tenantId = ''): C
   }
   return [...byUuid.values()]
 }
+
+// The team scale — multiple agents sharing skills (the competence union).
+export * from './team'
