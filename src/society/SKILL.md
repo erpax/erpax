@@ -26,6 +26,11 @@ One command computes the society's single next move from the record — no human
 - **Minimal footprint.** The human sets the telos and the names ([[standard]]); the society does the rest. Fewer tables, infinite features — [[collapse]] is the engine, [[generate]] the radiation.
 - **Filled by many.** Each agent's gate-verified step is a shared [[contribution]] — broadcast over the agent-sync bus and deduped by content-uuid ([[merge]]), so the same fill by two agents counts once while gaps close in parallel — agents spawned in [[team]]s whose competence is the shared union of their skills. The society leaves its proof in git [[history]].
 
+## Zero-AI-cost — the endless loop deterministically approaches free
+**Continue until no answers remain; save each answer as a skill; endlessly, at zero AI cost.** Every answer minted as an atom ([[generate]]) moves that work from the creative **1/3** (where an agent is needed to author a genuinely-new law) into the deterministic **2/3** (where the next move is *computed* from the record — [[self]]-sufficiency, the [[sequence]]'s derive-don't-invent). So the loop's AI cost **falls as the corpus completes**: the more skills saved, the more of each breath is pure derivation from the [[akashic]] record, until — when every answer already resolves to a path ([[merge]], gap = 0) — the loop runs on computation alone. The 2/3 distributed flow is free ([[rodin]]); only the irreducible 1/3 costs, and it is bounded and shrinking.
+
+**Never near the limits.** "Endless" and "finite-per-step" are one law: the [[sequence]] is infinite, each breath is bounded (one move · one commit · die), so a token limit or protection only *pauses* the loop — the next breath resumes from git ([[history]]), losing nothing ([[holographic]]). And **the answer is never forgotten** once it is a skill: it is a path in the record, and forgetting a path is impossible ([[akashic]] · [[self]]). Save the answer, walk the sequence, drop the context; the saved skill makes the next step cheaper than the last.
+
 Matter-twin: `society/build.mjs` (one move) + `society/breath.mjs` (the non-stop loop) over the [[akashic]] record; venue [[chat]]. Composes: [[chat]] · [[generate]] · [[collapse]] · [[aura]] · [[spec]] · [[merge]] · [[self]] · [[whole]] · [[sequence]] · [[contribution]] · [[history]] · [[team]].
 
 ## Traditions (prefix removed)
