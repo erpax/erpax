@@ -59,7 +59,7 @@ docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:420: * @standar
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:457: * @standard IFRS-1 Presentation of Financial Statements
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:458: * @standard US-GAAP ASC-210 Balance Sheet
 src/access/auth/index.ts:11: * @standard OWASP-ASVS V4 access-control
-src/access/auth/index.ts:184: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+src/access/auth/index.ts:187: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/access/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/auth/index.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/access/feature-registry/index.ts:26: * @standard ISO/IEC 25010:2023 quality-model functional-suitability
@@ -995,9 +995,9 @@ src/config/address-formats/index.ts:25: * @standard ISO-3166-1:2020 country-code
 src/config/address-formats/index.ts:26: * @standard ISO-3166-2:2020 subdivisions
 src/config/address-formats/index.ts:27: * @standard BCP-47 language-tag field-labels
 src/config/appCollectionsRegistry.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing configuration-test
-src/config/country-apis/index.ts:132: * @standard ISO-4217:2015 currency-codes
-src/config/country-apis/index.ts:133: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
-src/config/country-apis/index.ts:134: * @standard ISO-8601-1:2019 date-time
+src/config/country-apis/index.ts:133: * @standard ISO-4217:2015 currency-codes
+src/config/country-apis/index.ts:134: * @standard SDMX 2.1 statistical-data-and-metadata-exchange
+src/config/country-apis/index.ts:135: * @standard ISO-8601-1:2019 date-time
 src/config/country-apis/index.ts:21: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/config/country-apis/index.ts:22: * @standard ISO-20022 financial-messages cross-references
 src/config/country-specifics/index.ts:14: * @standard ISO-3166-1:2020 country-codes alpha-2
@@ -1298,6 +1298,7 @@ src/services/agent-sync/society.ts:22: * @standard ISO/IEC 27001 A.5.23 cloud-se
 src/services/agent-sync/society.ts:23: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/services/agent-sync/training-broadcast.ts:19: * @standard SFIA 8 responsibility-levels (the level → M-value depth)
 src/services/agent-sync/training-broadcast.ts:20: * @standard ISO 30405:2016 essential-vs-desirable (mandatory gates the surface)
+src/services/agent/harmonics.ts:24: * @standard NIST FIPS 180-4 sha-256 (the content-uuid digest)
 src/services/agent/index.ts:20: * @standard RFC 9562 §5.8 name-based UUIDv8 (tenant-scoped content-addressed agent identity)
 src/services/agent/team.ts:17: * @standard RFC 9562 §5.8 content-addressed identity (agent + team uuid)
 src/services/agents/blocks.ts:38: * @standard W3C Web Components (composition pattern)
@@ -1747,6 +1748,8 @@ src/services/integrity/envelope.ts:54: * @standard GDPR Article 32(1)(a) encrypt
 src/services/integrity/envelope.ts:55: * @standard HIPAA §164.312(a)(2)(iv) encryption of ePHI
 src/services/integrity/envelope.ts:56: * @standard PCI DSS 4.0 §3.5 strong cryptography
 src/services/integrity/index.ts:7: * @standard RFC 9562 §5.8 + RFC 8785 + ISO/IEC 10118 + NIST FIPS 180-4
+src/services/integrity/resource-bound.ts:30: * @standard NIST FIPS 180-4 sha-256 (the content-uuid digest) — second-preimage 2^256, collision 2^128
+src/services/integrity/resource-bound.ts:31: * @standard Landauer 1961 / Bennett 1982 — kT·ln2 minimum per irreversible bit op
 src/services/integrity/signatures.test.ts:15: * @standard RFC 8032 EdDSA / Ed25519
 src/services/integrity/signatures.test.ts:16: * @standard RFC 7515 JWS compact serialization
 src/services/integrity/signatures.ts:43: * @standard RFC 8032 EdDSA (Ed25519)
@@ -1806,6 +1809,13 @@ src/services/localize/index.ts:39: * @standard ITU-T X.667 / ISO-IEC 9834-8 (UUI
 src/services/localize/index.ts:40: * @standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)
 src/services/localize/index.ts:41: * @standard BCP-47 (locale tags) · EU 1958/1 (official EU languages)
 src/services/localize/index.ts:42: * @standard NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)
+src/services/manufacturing/seeds/operations.ts:22: * @standard IEC 62264-1:2013 §B.4 process-segment (each operation is one segment)
+src/services/manufacturing/seeds/operations.ts:23: * @standard ESCO v1.2 / ISCO-08 occupation-unit-group (the per-operation competency)
+src/services/manufacturing/seeds/operations.ts:24: * @standard UN/CEFACT Rec 20 unit-of-measure (UoM-aware quantities)
+src/services/manufacturing/seeds/positions.ts:18: * @standard ISCO-08 (ILO) occupation unit-group — the 4-digit global anchor
+src/services/manufacturing/seeds/positions.ts:19: * @standard Bulgarian НКПД-2011 (national extension of ISCO-08) — the 8-digit code
+src/services/manufacturing/seeds/positions.ts:20: * @standard SFIA 8 responsibility-levels (1..7) — the autonomy axis (positions service)
+src/services/manufacturing/seeds/standards.ts:12: * @standard ISCO-08 · ESCO v1.2 · НКПД-2011 · NACE Rev.2.1 · IEC 62264-1:2013 · UN/CEFACT Rec 20 · EN-16931 · SFIA 8
 src/services/message/index.ts:11: * @standard RFC 9562 §5.8 (the structured uuid carries the message)
 src/services/meta-automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
 src/services/multi-currency.service/index.ts:12: * @standard ISO-4217:2015 currency-codes
@@ -1882,7 +1892,7 @@ src/services/receivables/analytics.service.ts:8: * @standard ISO-8601-1:2019 dat
 src/services/receivables/workflow.service.ts:6: * @standard EN-16931:2017 invoice-lifecycle
 src/services/saf-t-export.service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/services/saf-t-export.service.test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
-src/services/saf-t-export.service/index.ts:1257: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
+src/services/saf-t-export.service/index.ts:1255: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service/index.ts:30: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service/index.ts:31: * @standard ISO-3166-1:2020 country-codes
 src/services/saf-t-export.service/index.ts:32: * @standard ISO-4217:2015 currency-codes
@@ -1981,6 +1991,7 @@ src/services/self-reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 
 src/services/shred/index.ts:16: * @standard GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)
 src/services/shred/index.ts:17: * @standard NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)
 src/services/signal/index.ts:16: * @standard ISO-16:1975 a432-tuning-reference (pitch); value from position.
+src/services/skill-router/merge.ts:20: * @standard ESCO/SFIA — installed skills enter the same competency taxonomy
 src/services/social-graph/index.ts:10: * @standard W3C ActivityStreams 2.0 Follow/Accept reciprocity
 src/services/spec-generator/chain-registry-generator.ts:16: * @standard ISO/IEC 25010:2023 §5.4 reusability + §5.5 testability
 src/services/spec-generator/e2e-spec-extractor.ts:24: * @standard ISO/IEC-29119:2022 software-testing test-evidence
@@ -4129,7 +4140,7 @@ src/components/widgets/PayrollRunsPanel.tsx:10: * @accounting US-GAAP ASC-710 co
 src/components/widgets/PayrollRunsPanel.tsx:9: * @accounting IFRS IAS-19 employee-benefits
 src/components/widgets/TrialBalanceWidget.tsx:5: * @accounting IFRS IAS-1 §54 statement-of-financial-position
 src/components/widgets/TrialBalanceWidget.tsx:6: * @accounting US-GAAP ASC-205-10 presentation-of-financial-statements
-src/config/country-apis/index.ts:135: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/config/country-apis/index.ts:136: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/config/country-specifics/index.ts:18: * @accounting IFRS IAS-1 §51 fiscal-period
 src/config/country-specifics/index.ts:19: * @accounting US-GAAP ASC-270 interim-reporting fiscal-year
 src/config/examples/index.ts:7: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
@@ -4522,7 +4533,7 @@ src/access/allowPublicReadTenants/index.ts:6: * @security ISO-27002 §5.15 acces
 src/access/allowPublicReadTenants/index.ts:7: * @security ISO-27002 §8.3 information-access-restriction
 src/access/anyone/index.ts:4: * @security ISO-27002 §5.15 access-control intentional-public-read
 src/access/auth/index.ts:10: * @security ISO-27002 §5.4 segregation-of-duties
-src/access/auth/index.ts:185: * @security ISO-27001 A.5.15 access-control
+src/access/auth/index.ts:188: * @security ISO-27001 A.5.15 access-control
 src/access/auth/index.ts:6: * @security ISO-27001 A.5.15 access-control
 src/access/auth/index.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/access/auth/index.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5350,6 +5361,7 @@ src/services/accounting/utilities/depreciation-methods.test.ts:16: * @audit ISO-
 src/services/accounting/utilities/period-lock.ts:21: * @audit ISO-19011:2018 audit-trail
 src/services/agent-sync/discovery.ts:21: * @audit Conservation Law 8 content-uuid · Law 62 coverage (each fill ↑ coverage)
 src/services/agent-sync/horo.ts:30: * @audit Conservation Law 8 content-uuid · merge (many members, one breath/dedupe)
+src/services/agent/harmonics.ts:25: * @audit Conservation Law 55 (tamper-reversibility-cost) — the fight is priced, not forbidden
 src/services/agent/team.ts:18: * @audit Conservation Law 8 content-uuid · merge set-union (no coordination)
 src/services/agents/blocks.ts:40: * @audit ISO 19011:2018 §6.4.6 (every block composition audit-trailed)
 src/services/agents/mcp/auto-generated.ts:40: * @audit ISO 19011:2018 §6.4.6 (auto-generation traceable to spec)
@@ -5500,6 +5512,7 @@ src/services/identity-element/index.ts:52: * @audit Conservation Law 47 type uui
 src/services/integrity/content-uuid.ts:46: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/services/integrity/envelope.ts:57: * @audit ISO 19011:2018 §6.4.6 (every encrypt/decrypt produces an audit-events row)
 src/services/integrity/index.ts:8: * @audit ISO 19011:2018 §6.4.6 + SOX §404
+src/services/integrity/resource-bound.ts:32: * @audit Conservation Law 55 (tamper-reversibility-cost) — physical bound
 src/services/integrity/signatures.ts:50: * @audit ISO 19011:2018 §6.4.6 (every verification produces an audit-events row)
 src/services/integrity/tamper-proof-uuid-field.ts:37: * @audit ISO 19011:2018 §6.4.6
 src/services/integrity/tamper-reverse-cost.test.ts:15: * @audit Conservation Law 55 tamper-reversibility-cost
@@ -5524,6 +5537,11 @@ src/services/locale-fallback/index.test.ts:19: * @audit Conservation Law 54 univ
 src/services/locale-fallback/index.ts:43: * @audit Conservation Law 53 self-referential-closure
 src/services/locale-fallback/index.ts:44: * @audit Conservation Law 54 universal-identity-element (this is the locale instance)
 src/services/localize/index.ts:43: * @audit Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)
+src/services/manufacturing/seeds/operations.ts:106: * @audit etrima_production.employee_contracts — BGN, min 90 · median 227 · max 960
+src/services/manufacturing/seeds/operations.ts:25: * @audit derived from etrima_production.work_phases — no value re-typed
+src/services/manufacturing/seeds/operations.ts:92: * @audit etrima_production.work_shifts — median 75%, p99 167%, attractor at 100%
+src/services/manufacturing/seeds/positions.ts:21: * @audit derived from etrima_production.positions — codes + pay not re-typed
+src/services/manufacturing/seeds/standards.ts:13: * @audit catalogue-only clients (clientImplemented:false) — endpoints are real, modules pending
 src/services/message/index.ts:12: * @audit the uuid is self-decoding — every channel is an independent verify level
 src/services/meta-automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
 src/services/multi-currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
