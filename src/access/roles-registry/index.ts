@@ -198,6 +198,17 @@ export const ROLES_REGISTRY: RolesRegistry = {
 /** All registered role ids. */
 export const ROLE_IDS = Object.keys(ROLES_REGISTRY) as ReadonlyArray<UserRole>
 
+/**
+ * The accounting/finance WRITE roles — the SOX §404 preparer set: `admin`
+ * (full tenant write) + `accountant` (the designated preparer). The single
+ * source of truth for "who may write financial data", so the access bundles
+ * (`accountingCollectionAccess`, `tenantAdminWriteAccess`), the `adminOrAccountant`
+ * predicate, and every per-collection gate reference ONE definition instead of
+ * re-listing the pair. If a richer per-role capability model is added to the
+ * registry, derive this from it (`ROLE_IDS.filter(r => …writesAccounting)`).
+ */
+export const ACCOUNTING_WRITE_ROLES: ReadonlyArray<UserRole> = ['admin', 'accountant']
+
 /** Roles that satisfy the segregation-of-duties matrix for a given role. */
 export function rolesIncompatibleWith(role: UserRole): ReadonlyArray<UserRole> {
   return ROLES_REGISTRY[role]?.mutuallyExclusiveWith ?? []

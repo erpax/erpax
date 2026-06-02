@@ -59,7 +59,7 @@ docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:420: * @standar
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:457: * @standard IFRS-1 Presentation of Financial Statements
 docs/superpowers/specs/2026-05-12-coordinated-refactor-design.md:458: * @standard US-GAAP ASC-210 Balance Sheet
 src/access/auth/index.ts:11: * @standard OWASP-ASVS V4 access-control
-src/access/auth/index.ts:187: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
+src/access/auth/index.ts:190: * @standard NIST INCITS-359-2012 rbac object-scoped-role-assignment
 src/access/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/access/auth/index.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/access/feature-registry/index.ts:26: * @standard ISO/IEC 25010:2023 quality-model functional-suitability
@@ -4537,7 +4537,7 @@ src/access/allowPublicReadTenants/index.ts:6: * @security ISO-27002 §5.15 acces
 src/access/allowPublicReadTenants/index.ts:7: * @security ISO-27002 §8.3 information-access-restriction
 src/access/anyone/index.ts:4: * @security ISO-27002 §5.15 access-control intentional-public-read
 src/access/auth/index.ts:10: * @security ISO-27002 §5.4 segregation-of-duties
-src/access/auth/index.ts:188: * @security ISO-27001 A.5.15 access-control
+src/access/auth/index.ts:191: * @security ISO-27001 A.5.15 access-control
 src/access/auth/index.ts:6: * @security ISO-27001 A.5.15 access-control
 src/access/auth/index.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/access/auth/index.ts:8: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation

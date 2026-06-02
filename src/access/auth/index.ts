@@ -16,6 +16,7 @@
 import type { Access, PayloadRequest, Where } from 'payload'
 import type { UserContext, UserRole } from '../../types/auth'
 import type { User } from '../../payload-types'
+import { ACCOUNTING_WRITE_ROLES } from '../roles-registry'
 
 export { isSuperAdminAccess as superAdminOnly } from '../isSuperAdmin'
 
@@ -96,13 +97,15 @@ export const adminOnly: Access = async ({ req }) => {
 }
 
 /**
- * Admin or Accountant access
- * PATTERN: Used for financial collections (Accounts, Equations, Entries, Payments)
+ * Admin or Accountant access — the SOX §404 preparer set (`ACCOUNTING_WRITE_ROLES`,
+ * the single source of truth in `roles-registry`). PATTERN: financial collections
+ * (Accounts, Equations, Entries, Payments). The role pair is sourced from the
+ * constant — change who writes financials in ONE place.
  */
 export const adminOrAccountant: Access = async ({ req }) => {
   const user = getUserContext(req)
   if (!user) return false
-  if (!hasRole(user, 'admin', 'accountant')) return false
+  if (!hasRole(user, ...ACCOUNTING_WRITE_ROLES)) return false
 
   return { tenant: { equals: user.tenant } }
 }
@@ -274,7 +277,7 @@ export function partyRoleAccess(
 export function accountingCollectionAccess(
   options: { writeRoles?: UserRole[]; feature?: string } = {},
 ): { read: Access; create: Access; update: Access; delete: Access } {
-  const writeRoles = options.writeRoles ?? (['admin', 'accountant'] as UserRole[])
+  const writeRoles = options.writeRoles ?? [...ACCOUNTING_WRITE_ROLES]
   const baseRead = scopedAccess()
   const baseCreate = roleScopedAccess(...writeRoles)
   const baseUpdate = roleScopedAccess(...writeRoles)
@@ -323,7 +326,7 @@ export function tenantMasterDataAccess(): { read: Access; create: Access; update
 export function tenantAdminWriteAccess(
   options: { createRoles?: UserRole[] } = {},
 ): { read: Access; create: Access; update: Access; delete: Access } {
-  const createRoles = options.createRoles ?? (['admin', 'accountant'] as UserRole[])
+  const createRoles = options.createRoles ?? [...ACCOUNTING_WRITE_ROLES]
   return {
     read: scopedAccess(),
     create: roleScopedAccess(...createRoles),
