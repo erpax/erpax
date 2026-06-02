@@ -4,7 +4,7 @@ import { autoPopulateCreatedBy } from '../../hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../access/auth'
 import {
   glAccountField,
   currencyField,
@@ -44,8 +44,8 @@ const BudgetPlanning: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

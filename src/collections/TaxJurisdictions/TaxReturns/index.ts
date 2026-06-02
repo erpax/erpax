@@ -14,7 +14,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
 import { currencyField, statusField, notesField, auditFields } from '../../../fields/base-accounting-fields'
 
 const TaxReturns: CollectionConfig = {
@@ -23,8 +23,8 @@ const TaxReturns: CollectionConfig = {
   admin: { useAsTitle: 'returnId', defaultColumns: ['returnId', 'returnType', 'jurisdiction', 'periodEnd', 'status', 'filedAt'] },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

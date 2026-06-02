@@ -73,7 +73,7 @@ const PayrollRuns: CollectionConfig = {
     description:
       'Periodic batch payroll. Aggregates approved TimeEntries, computes gross-to-net, posts JEs, and emits the pain.001 disbursement file.',
   },
-  // Tighter access than the typical roleScopedAccess('admin', 'accountant')
+  // Tighter access than the typical adminOrAccountant (ACCOUNTING_WRITE_ROLES)
   // — payroll touches GDPR-classified personal data.
   access: {
     read: roleScopedAccess('admin', 'payroll-officer', 'hr'),

@@ -2,7 +2,7 @@ import type { Access, CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
-import { roleScopedAccess, scopedAccess } from '../../../access/auth'
+import { adminOrAccountant, scopedAccess } from '../../../access/auth'
 import { currencyField, statusField, auditFields, unpField, fiscalDeviceNumberField, operatorCodeField, saleStatusOptions } from '../../../fields'
 import { assignSaleUnpHook } from '../../../services/sales/unp-sequence'
 import { deriveSaleOperatorCodeHook } from '../../../services/sales/operator-code'
@@ -41,8 +41,8 @@ const Sales: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: neverDelete,
   },
   fields: [

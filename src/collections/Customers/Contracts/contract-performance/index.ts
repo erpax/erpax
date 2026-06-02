@@ -93,7 +93,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
 import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
 import { currencyField, auditFields } from '../../../../fields/base-accounting-fields'
 
 const CONTROL_TRANSFER_METHODS = [
@@ -118,8 +118,8 @@ const ContractPerformance: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

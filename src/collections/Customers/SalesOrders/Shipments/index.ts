@@ -11,7 +11,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
 import { autoSetTimestamp } from '../../../../hooks/autoSetTimestamp'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
 import { statusField, notesField, auditFields } from '../../../../fields/base-accounting-fields'
 
 const Shipments: CollectionConfig = {
@@ -20,8 +20,8 @@ const Shipments: CollectionConfig = {
   admin: { useAsTitle: 'shipmentNumber', defaultColumns: ['shipmentNumber', 'order', 'carrier', 'trackingNumber', 'status'] },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

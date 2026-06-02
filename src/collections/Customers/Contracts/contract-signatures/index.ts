@@ -89,7 +89,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
 import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
 import { auditFields } from '../../../../fields/base-accounting-fields'
 
 const SIGNATORY_ROLES = [
@@ -127,8 +127,8 @@ const ContractSignatures: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

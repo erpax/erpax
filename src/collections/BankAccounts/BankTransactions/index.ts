@@ -51,7 +51,7 @@
 import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
 import { currencyField, statusField, notesField } from '../../../fields/base-accounting-fields'
 
 const BankTransactions: CollectionConfig = {
@@ -63,8 +63,8 @@ const BankTransactions: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

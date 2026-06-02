@@ -1,7 +1,7 @@
 import type { Access, CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
 import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { roleScopedAccess, scopedAccess } from '../../access/auth'
+import { adminOrAccountant, scopedAccess } from '../../access/auth'
 import { statusField, auditFields } from '../../fields'
 
 /**
@@ -28,8 +28,8 @@ const AuditSubmissions: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: neverDelete,
   },
   fields: [

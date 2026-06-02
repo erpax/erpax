@@ -4,7 +4,7 @@ import { autoPopulateCreatedBy } from '../../hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin, hasRole, getUserContext } from '../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '../../access/auth'
 import {
   glAccountField,
   currencyField,
@@ -69,7 +69,7 @@ const JournalEntries: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
     update: updateAccess,
     delete: tenantAdmin,
   },

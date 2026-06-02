@@ -20,7 +20,7 @@ import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
 import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
 import { currencyField, statusField, notesField, auditFields } from '../../../fields/base-accounting-fields'
 
 const Quotes: CollectionConfig = {
@@ -29,8 +29,8 @@ const Quotes: CollectionConfig = {
   admin: { useAsTitle: 'quoteNumber', defaultColumns: ['quoteNumber', 'customer', 'totalAmount', 'status', 'expiresAt'] },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

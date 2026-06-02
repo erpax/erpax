@@ -21,7 +21,7 @@
 import type { CollectionConfig } from 'payload'
 import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
 import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../access/auth'
 import { currencyField, statusField } from '../../fields'
 
 const GLAccounts: CollectionConfig = {
@@ -37,8 +37,8 @@ const GLAccounts: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

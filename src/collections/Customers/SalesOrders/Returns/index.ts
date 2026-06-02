@@ -15,7 +15,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
 import { autoSetTimestamp } from '../../../../hooks/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
 import { statusField, notesField, auditFields } from '../../../../fields/base-accounting-fields'
 
 const Returns: CollectionConfig = {
@@ -24,8 +24,8 @@ const Returns: CollectionConfig = {
   admin: { useAsTitle: 'rmaNumber', defaultColumns: ['rmaNumber', 'order', 'reason', 'status', 'createdAt'] },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

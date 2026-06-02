@@ -30,7 +30,7 @@
  */
 
 import type { CollectionConfig } from 'payload';
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../access/auth';
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth';
 import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy';
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp';
@@ -62,8 +62,8 @@ const AccountReconciliations: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

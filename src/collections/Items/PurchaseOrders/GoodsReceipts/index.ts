@@ -39,7 +39,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
 import { autoSetTimestamp } from '../../../../hooks/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
 import { statusField, notesField, auditFields } from '../../../../fields/base-accounting-fields'
 import { emitGrPosted } from '../../../../hooks/chainEventEmitters'
 
@@ -49,8 +49,8 @@ const GoodsReceipts: CollectionConfig = {
   admin: { useAsTitle: 'receiptNumber', defaultColumns: ['receiptNumber', 'purchaseOrder', 'receivedDate', 'status'] },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

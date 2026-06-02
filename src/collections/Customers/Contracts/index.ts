@@ -103,7 +103,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
 import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
 import { currencyField, statusField, notesField, auditFields } from '../../../fields/base-accounting-fields'
 
 const Contracts: CollectionConfig = {
@@ -112,8 +112,8 @@ const Contracts: CollectionConfig = {
   admin: { useAsTitle: 'contractNumber', defaultColumns: ['contractNumber', 'customer', 'totalValue', 'status', 'effectiveFrom'] },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [

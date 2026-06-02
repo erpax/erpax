@@ -1,5 +1,5 @@
 import type { CollectionConfig } from 'payload'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../../access/auth'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
 import { notesField } from '../../../fields/base-accounting-fields'
 import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant';
 import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy';
@@ -35,8 +35,8 @@ const PeriodEndAdjustments: CollectionConfig = {
   },
   access: {
     read: scopedAccess(),
-    create: roleScopedAccess('admin', 'accountant'),
-    update: roleScopedAccess('admin', 'accountant'),
+    create: adminOrAccountant,
+    update: adminOrAccountant,
     delete: tenantAdmin,
   },
   fields: [
