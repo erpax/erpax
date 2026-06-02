@@ -1901,6 +1901,8 @@ src/services/query-fingerprint/index.test.ts:19: * @standard RFC 8785 JSON Canon
 src/services/query-fingerprint/index.ts:57: * @standard ISO/IEC 9075-2 SQL/Foundation (keyword inventory)
 src/services/query-fingerprint/index.ts:58: * @standard RFC 8785 JSON Canonicalization Scheme (for params digest)
 src/services/query-fingerprint/index.ts:59: * @standard NIST FIPS 180-4 SHA-256
+src/services/receipt/index.ts:10: * @standard RFC 8785 JSON canonicalization (the content the uuid addresses)
+src/services/receipt/index.ts:11: * @standard NIST FIPS 180-4 SHA-256 (the chain + content hash)
 src/services/receivables/aging.service.ts:10: * @standard ISO-8601-1:2019 date-time as-of-date
 src/services/receivables/allowance.service.ts:7: * @standard ISO-4217:2015 currency-codes
 src/services/receivables/analytics.service.ts:7: * @standard ISO-4217:2015 currency-codes
