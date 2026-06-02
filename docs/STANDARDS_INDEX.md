@@ -1823,6 +1823,7 @@ src/services/localize/index.ts:39: * @standard ITU-T X.667 / ISO-IEC 9834-8 (UUI
 src/services/localize/index.ts:40: * @standard RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)
 src/services/localize/index.ts:41: * @standard BCP-47 (locale tags) · EU 1958/1 (official EU languages)
 src/services/localize/index.ts:42: * @standard NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)
+src/services/logic/index.ts:9: * @standard classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
 src/services/manufacturing/seeds/operations.ts:22: * @standard IEC 62264-1:2013 §B.4 process-segment (each operation is one segment)
 src/services/manufacturing/seeds/operations.ts:23: * @standard ESCO v1.2 / ISCO-08 occupation-unit-group (the per-operation competency)
 src/services/manufacturing/seeds/operations.ts:24: * @standard UN/CEFACT Rec 20 unit-of-measure (UoM-aware quantities)
