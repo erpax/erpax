@@ -6,7 +6,7 @@ import createNextIntlPlugin from 'next-intl/plugin'
 
 import { redirects } from './redirects'
 
-const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+const withNextIntl = createNextIntlPlugin('./src/i18n/request/index.ts')
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url))
 
