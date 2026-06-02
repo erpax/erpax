@@ -219,7 +219,6 @@ export { AuditSamples } from './InternalControls/ControlTests/AuditSamples'
 export { ComplianceGaps } from './ComplianceFrameworks/ComplianceRequirements/ComplianceGaps'
 export { AuditEvidence } from './Media/AuditEvidence'
 export { AuditFindings } from './InternalControls/AuditFindings'
-export { AuditTrailEvents } from './AuditTrailEvents'
 export { RemediationPlans } from './InternalControls/AuditFindings/RemediationPlans'
 
 // Phase 4: Audit Governance & Reporting (5 collections)

@@ -125,6 +125,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`name\` text NOT NULL,
   	\`binding\` text DEFAULT 'global' NOT NULL,
   	\`scoped_collection\` text,
+  	\`capability\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL
   );
@@ -133,6 +134,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`roles_name_idx\` ON \`roles\` (\`name\`);`)
   await db.run(sql`CREATE INDEX \`roles_updated_at_idx\` ON \`roles\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`roles_created_at_idx\` ON \`roles\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`roles_texts\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`order\` integer NOT NULL,
+  	\`parent_id\` text(36) NOT NULL,
+  	\`path\` text NOT NULL,
+  	\`text\` text,
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`roles\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`roles_texts_order_parent\` ON \`roles_texts\` (\`order\`,\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`roles_texts_text_idx\` ON \`roles_texts\` (\`text\`);`)
   await db.run(sql`CREATE TABLE \`roles_rels\` (
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`order\` integer,
@@ -7802,35 +7814,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`audit_findings_identified_by_idx\` ON \`audit_findings\` (\`identified_by_id\`);`)
   await db.run(sql`CREATE INDEX \`audit_findings_updated_at_idx\` ON \`audit_findings\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`audit_findings_created_at_idx\` ON \`audit_findings\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`audit_trail_events\` (
-  	\`id\` text(36) PRIMARY KEY NOT NULL,
-  	\`uuid\` text,
-  	\`tenant_id\` text(36),
-  	\`operation\` text NOT NULL,
-  	\`collection_name\` text NOT NULL,
-  	\`document_id\` text NOT NULL,
-  	\`changed_by_id\` text(36) NOT NULL,
-  	\`changed_at\` text NOT NULL,
-  	\`changes_summary\` text,
-  	\`change_details\` text,
-  	\`approved_by_id\` text(36),
-  	\`approval_status\` text,
-  	\`change_reason\` text,
-  	\`system_details\` text,
-  	\`is_delete\` integer DEFAULT false,
-  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`changed_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
-  );
-  `)
-  await db.run(sql`CREATE UNIQUE INDEX \`audit_trail_events_uuid_idx\` ON \`audit_trail_events\` (\`uuid\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_tenant_idx\` ON \`audit_trail_events\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_operation_idx\` ON \`audit_trail_events\` (\`operation\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_collection_name_idx\` ON \`audit_trail_events\` (\`collection_name\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_document_id_idx\` ON \`audit_trail_events\` (\`document_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_changed_by_idx\` ON \`audit_trail_events\` (\`changed_by_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_changed_at_idx\` ON \`audit_trail_events\` (\`changed_at\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_approved_by_idx\` ON \`audit_trail_events\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE TABLE \`eed4d3e0dc8168b24a00ca2f6a516bc58\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
@@ -12874,6 +12857,7 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`users_sessions\`;`)
   await db.run(sql`DROP TABLE \`users\`;`)
   await db.run(sql`DROP TABLE \`roles\`;`)
+  await db.run(sql`DROP TABLE \`roles_texts\`;`)
   await db.run(sql`DROP TABLE \`roles_rels\`;`)
   await db.run(sql`DROP TABLE \`user_roles\`;`)
   await db.run(sql`DROP TABLE \`e0dc067124d478cdba631b9fa5d670eec\`;`)
@@ -13159,7 +13143,6 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`audit_evidence\`;`)
   await db.run(sql`DROP TABLE \`ebdf6c5cf64618eb3a6cbab343da6bac0\`;`)
   await db.run(sql`DROP TABLE \`audit_findings\`;`)
-  await db.run(sql`DROP TABLE \`audit_trail_events\`;`)
   await db.run(sql`DROP TABLE \`eed4d3e0dc8168b24a00ca2f6a516bc58\`;`)
   await db.run(sql`DROP TABLE \`remediation_plans\`;`)
   await db.run(sql`DROP TABLE \`audit_committees\`;`)

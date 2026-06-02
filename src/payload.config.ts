@@ -194,7 +194,6 @@ const {
   ComplianceGaps,
   AuditEvidence,
   AuditFindings,
-  AuditTrailEvents,
   RemediationPlans,
   AuditCommittees,
   AuditCommitteeMembers,
@@ -657,7 +656,6 @@ export default buildConfig({
     ComplianceGaps,
     AuditEvidence,
     AuditFindings,
-    AuditTrailEvents,
     RemediationPlans,
     // Phase 4: Audit Governance & Reporting (5)
     AuditCommittees,
@@ -976,7 +974,6 @@ export default buildConfig({
         'audit-samples': {},
         'compliance-gaps': {},
         'audit-evidence': {},
-        'audit-trail-events': {},
         'remediation-plans': {},
         // Phase 4: Audit Governance & Reporting
         'audit-committees': {},

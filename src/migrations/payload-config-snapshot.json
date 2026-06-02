@@ -239,6 +239,12 @@
         "resource": {
           "localized": false
         },
+        "capability": {
+          "localized": false
+        },
+        "skillRoutes": {
+          "localized": false
+        },
         "updatedAt": {
           "localized": false
         },
@@ -12219,56 +12225,6 @@
           "localized": false
         },
         "createdAt": {
-          "localized": false
-        }
-      },
-      "localizeStatus": false,
-      "versions": false
-    },
-    "audit-trail-events": {
-      "autosave": false,
-      "drafts": false,
-      "fields": {
-        "uuid": {
-          "localized": false
-        },
-        "tenant": {
-          "localized": false
-        },
-        "operation": {
-          "localized": false
-        },
-        "collectionName": {
-          "localized": false
-        },
-        "documentId": {
-          "localized": false
-        },
-        "changedBy": {
-          "localized": false
-        },
-        "changedAt": {
-          "localized": false
-        },
-        "changesSummary": {
-          "localized": false
-        },
-        "changeDetails": {
-          "localized": false
-        },
-        "approvedBy": {
-          "localized": false
-        },
-        "approvalStatus": {
-          "localized": false
-        },
-        "changeReason": {
-          "localized": false
-        },
-        "systemDetails": {
-          "localized": false
-        },
-        "isDelete": {
           "localized": false
         }
       },

@@ -847,6 +847,13 @@
           "notNull": false,
           "autoincrement": false
         },
+        "capability": {
+          "name": "capability",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
         "updated_at": {
           "name": "updated_at",
           "type": "text",
@@ -895,6 +902,81 @@
         }
       },
       "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "roles_texts": {
+      "name": "roles_texts",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "order": {
+          "name": "order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "parent_id": {
+          "name": "parent_id",
+          "type": "text(36)",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "path": {
+          "name": "path",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "text": {
+          "name": "text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "roles_texts_order_parent": {
+          "name": "roles_texts_order_parent",
+          "columns": [
+            "order",
+            "parent_id"
+          ],
+          "isUnique": false
+        },
+        "roles_texts_text_idx": {
+          "name": "roles_texts_text_idx",
+          "columns": [
+            "text"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "roles_texts_parent_fk": {
+          "name": "roles_texts_parent_fk",
+          "tableFrom": "roles_texts",
+          "tableTo": "roles",
+          "columnsFrom": [
+            "parent_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraints": {}
@@ -58517,219 +58599,6 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "audit_trail_events": {
-      "name": "audit_trail_events",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "text(36)",
-          "primaryKey": true,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "uuid": {
-          "name": "uuid",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "tenant_id": {
-          "name": "tenant_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "operation": {
-          "name": "operation",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "collection_name": {
-          "name": "collection_name",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "document_id": {
-          "name": "document_id",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "changed_by_id": {
-          "name": "changed_by_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "changed_at": {
-          "name": "changed_at",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "changes_summary": {
-          "name": "changes_summary",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "change_details": {
-          "name": "change_details",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "approved_by_id": {
-          "name": "approved_by_id",
-          "type": "text(36)",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "approval_status": {
-          "name": "approval_status",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "change_reason": {
-          "name": "change_reason",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "system_details": {
-          "name": "system_details",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false
-        },
-        "is_delete": {
-          "name": "is_delete",
-          "type": "integer",
-          "primaryKey": false,
-          "notNull": false,
-          "autoincrement": false,
-          "default": false
-        }
-      },
-      "indexes": {
-        "audit_trail_events_uuid_idx": {
-          "name": "audit_trail_events_uuid_idx",
-          "columns": [
-            "uuid"
-          ],
-          "isUnique": true
-        },
-        "audit_trail_events_tenant_idx": {
-          "name": "audit_trail_events_tenant_idx",
-          "columns": [
-            "tenant_id"
-          ],
-          "isUnique": false
-        },
-        "audit_trail_events_operation_idx": {
-          "name": "audit_trail_events_operation_idx",
-          "columns": [
-            "operation"
-          ],
-          "isUnique": false
-        },
-        "audit_trail_events_collection_name_idx": {
-          "name": "audit_trail_events_collection_name_idx",
-          "columns": [
-            "collection_name"
-          ],
-          "isUnique": false
-        },
-        "audit_trail_events_document_id_idx": {
-          "name": "audit_trail_events_document_id_idx",
-          "columns": [
-            "document_id"
-          ],
-          "isUnique": false
-        },
-        "audit_trail_events_changed_by_idx": {
-          "name": "audit_trail_events_changed_by_idx",
-          "columns": [
-            "changed_by_id"
-          ],
-          "isUnique": false
-        },
-        "audit_trail_events_changed_at_idx": {
-          "name": "audit_trail_events_changed_at_idx",
-          "columns": [
-            "changed_at"
-          ],
-          "isUnique": false
-        },
-        "audit_trail_events_approved_by_idx": {
-          "name": "audit_trail_events_approved_by_idx",
-          "columns": [
-            "approved_by_id"
-          ],
-          "isUnique": false
-        }
-      },
-      "foreignKeys": {
-        "audit_trail_events_tenant_id_tenants_id_fk": {
-          "name": "audit_trail_events_tenant_id_tenants_id_fk",
-          "tableFrom": "audit_trail_events",
-          "tableTo": "tenants",
-          "columnsFrom": [
-            "tenant_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "audit_trail_events_changed_by_id_users_id_fk": {
-          "name": "audit_trail_events_changed_by_id_users_id_fk",
-          "tableFrom": "audit_trail_events",
-          "tableTo": "users",
-          "columnsFrom": [
-            "changed_by_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "audit_trail_events_approved_by_id_users_id_fk": {
-          "name": "audit_trail_events_approved_by_id_users_id_fk",
-          "tableFrom": "audit_trail_events",
-          "tableTo": "users",
-          "columnsFrom": [
-            "approved_by_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
     "eed4d3e0dc8168b24a00ca2f6a516bc58": {
       "name": "eed4d3e0dc8168b24a00ca2f6a516bc58",
       "columns": {
@@ -95695,6 +95564,6 @@
   "internal": {
     "indexes": {}
   },
-  "id": "bddc1c6b-fcd2-46a3-bf50-87ac4a8c0278",
+  "id": "c5f333a2-e1e4-4eec-a954-c0fe3ac86716",
   "prevId": "00000000-0000-0000-0000-000000000000"
 }

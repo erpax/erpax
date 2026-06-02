@@ -205,7 +205,6 @@ export interface Config {
     'compliance-gaps': ComplianceGap;
     'audit-evidence': AuditEvidence;
     'audit-findings': AuditFinding;
-    'audit-trail-events': AuditTrailEvent;
     'remediation-plans': RemediationPlan;
     'audit-committees': AuditCommittee;
     'audit-committee-members': AuditCommitteeMember;
@@ -454,7 +453,6 @@ export interface Config {
     'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
     'audit-evidence': AuditEvidenceSelect<false> | AuditEvidenceSelect<true>;
     'audit-findings': AuditFindingsSelect<false> | AuditFindingsSelect<true>;
-    'audit-trail-events': AuditTrailEventsSelect<false> | AuditTrailEventsSelect<true>;
     'remediation-plans': RemediationPlansSelect<false> | RemediationPlansSelect<true>;
     'audit-committees': AuditCommitteesSelect<false> | AuditCommitteesSelect<true>;
     'audit-committee-members': AuditCommitteeMembersSelect<false> | AuditCommitteeMembersSelect<true>;
@@ -12953,48 +12951,6 @@ export interface AuditEvidence {
   createdAt: string;
 }
 /**
- * Immutable audit log
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-trail-events".
- */
-export interface AuditTrailEvent {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  operation: 'create' | 'update' | 'delete';
-  collectionName: string;
-  documentId: string;
-  changedBy: string | User;
-  changedAt: string;
-  changesSummary?: string | null;
-  changeDetails?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  approvedBy?: (string | null) | User;
-  approvalStatus?: ('approved' | 'pending' | 'flagged') | null;
-  changeReason?: string | null;
-  systemDetails?:
-    | {
-        [k: string]: unknown;
-      }
-    | unknown[]
-    | string
-    | number
-    | boolean
-    | null;
-  isDelete?: boolean | null;
-}
-/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "remediation-plans".
  */
@@ -24476,26 +24432,6 @@ export interface AuditFindingsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "audit-trail-events_select".
- */
-export interface AuditTrailEventsSelect<T extends boolean = true> {
-  uuid?: T;
-  tenant?: T;
-  operation?: T;
-  collectionName?: T;
-  documentId?: T;
-  changedBy?: T;
-  changedAt?: T;
-  changesSummary?: T;
-  changeDetails?: T;
-  approvedBy?: T;
-  approvalStatus?: T;
-  changeReason?: T;
-  systemDetails?: T;
-  isDelete?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "remediation-plans_select".
  */
 export interface RemediationPlansSelect<T extends boolean = true> {
@@ -27937,7 +27873,6 @@ export interface TaskCreateCollectionExport {
       | 'compliance-gaps'
       | 'audit-evidence'
       | 'audit-findings'
-      | 'audit-trail-events'
       | 'remediation-plans'
       | 'audit-committees'
       | 'audit-committee-members'
