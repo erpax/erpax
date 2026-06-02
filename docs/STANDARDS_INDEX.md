@@ -1678,6 +1678,9 @@ src/services/edifact-export.service.test.ts:9: * @standard ISO-9735:2002 edifact
 src/services/edifact-export.service/index.ts:16: * @standard UN-EDIFACT D.96A
 src/services/edifact-export.service/index.ts:17: * @standard ISO-9735:2002 edifact-syntax-rules
 src/services/emit-domain-event/index.ts:15: * @standard ISO-8601-1:2019 date-time event-timestamp
+src/services/entry/index.ts:24: * @standard IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
+src/services/entry/index.ts:25: * @standard FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation
+src/services/entry/index.ts:26: * @standard ISO 20022: debtor/creditor are the two signs of ONE transfer
 src/services/error-uuid/index.ts:47: * @standard ISO/IEC 25010:2023 §5.6 reliability
 src/services/error-uuid/index.ts:48: * @standard NIST SP 800-92 §3.4 log integrity (errors as audited events)
 src/services/error-uuid/index.ts:49: * @standard W3C Problem Details for HTTP APIs (RFC 9457 — type + title + status)
