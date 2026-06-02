@@ -1908,6 +1908,7 @@ src/services/receivables/allowance.service.ts:7: * @standard ISO-4217:2015 curre
 src/services/receivables/analytics.service.ts:7: * @standard ISO-4217:2015 currency-codes
 src/services/receivables/analytics.service.ts:8: * @standard ISO-8601-1:2019 date-time period
 src/services/receivables/workflow.service.ts:6: * @standard EN-16931:2017 invoice-lifecycle
+src/services/routing/index.ts:6: * @standard NIST AI RMF (risk-proportionate controls) — map risk → control strength
 src/services/saf-t-export.service.test.ts:8: * @standard ISO/IEC-29119:2022 software-testing
 src/services/saf-t-export.service.test.ts:9: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
 src/services/saf-t-export.service/index.ts:1255: * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
