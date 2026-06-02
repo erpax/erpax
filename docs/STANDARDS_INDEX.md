@@ -1829,8 +1829,8 @@ src/services/multi-currency.service/index.ts:12: * @standard ISO-4217:2015 curre
 src/services/multi-currency.service/index.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
 src/services/multi-currency.service/index.ts:14: * @standard ISO-8601-1:2019 date-time rate-date
 src/services/multi-currency.service/index.ts:15: * @standard BCP-47 language-tag locale-formatting
-src/services/multi-search/index.ts:37: * @standard ISO/IEC 25010:2023 §5.3 operability (one input → many sources)
-src/services/multi-search/index.ts:38: * @standard Schema.org Action — search-action (Slice YYYYYY presents these MCP-callable)
+src/services/multi-search/index.ts:38: * @standard ISO/IEC 25010:2023 §5.3 operability (one input → many sources)
+src/services/multi-search/index.ts:39: * @standard Schema.org Action — search-action (Slice YYYYYY presents these MCP-callable)
 src/services/notifications/index.ts:17: * @standard rfc-5321 simple-mail-transfer-protocol
 src/services/notifications/index.ts:18: * @standard rfc-5322 internet-message-format
 src/services/notifications/index.ts:19: * @standard rfc-2616 §14.10 https-keep-alive
@@ -5557,7 +5557,7 @@ src/services/manufacturing/seeds/standards.ts:13: * @audit catalogue-only client
 src/services/message/index.ts:12: * @audit the uuid is self-decoding — every channel is an independent verify level
 src/services/meta-automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
 src/services/multi-currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
-src/services/multi-search/index.ts:39: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
+src/services/multi-search/index.ts:40: * @audit Conservation Law 53 self-referential-closure (this is the internal half)
 src/services/notifications/index.ts:21: * @audit ISO-19011:2018 audit-trail notification-evidence
 src/services/notifications/subscriber.ts:16: * @audit ISO-19011:2018 §6.4.6 audit-evidence-notification
 src/services/parties/aging.service.ts:13: * @audit ISO-19011:2018 audit-trail

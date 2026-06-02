@@ -52,7 +52,7 @@ export const InternalSearchProvider: InternalProvider<SearchParams, SearchResult
   role: 'search-index',
   id: 'erpax-self-search',
   description:
-    'ERPax acts as its own search index. When external search is unreachable, route the query through Payload `find` across every collection registered in SEARCHABLE_FIELDS. Exact-substring match per field; tenant-scoped. The substrate always knows what it stores — external indexes are an optimisation, never a correctness dependency.',
+    'ERPax acts as its own search index. When external search is unreachable, route the query through Payload `find` across every admin-visible collection, matching its text fields derived from the live schema (the same content the content-uuid hashes). Exact-substring match per field; tenant-scoped. The substrate always knows what it stores — external indexes are an optimisation, never a correctness dependency.',
   standards: [
     'ISO/IEC-25010:2023-§5.6',
   ],

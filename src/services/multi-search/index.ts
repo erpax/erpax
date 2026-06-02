@@ -26,13 +26,14 @@
  *     call with `withInternalFallback({ role: 'search-index' })` so
  *     the internal mode is the automatic fallback.
  *
- * Per-collection text-field configuration:
+ * Searchable-field configuration (DERIVED, not hand-listed):
  *
- *   For each collection we list a small set of "searchable" fields
- *   (name / title / description / notes / number / code). Free-text
- *   match runs as `like '%q%'` across those fields. Heavy text
- *   collections (long markdown bodies) can opt into FTS via D1
- *   virtual-table indexes — out of scope for Cut 1.
+ *   Each collection's searchable fields are its top-level text-bearing fields,
+ *   read from the live schema (`searchableFieldsOf`) minus the storage-managed
+ *   ones — the SAME content the content-uuid hashes (see `services/uuid-projection`),
+ *   so search and identity agree about what a record is. Free-text match runs as
+ *   `like '%q%'` across those fields; scope defaults to every admin-visible
+ *   collection with searchable text. Heavy text bodies can opt into FTS later.
  *
  * @standard ISO/IEC 25010:2023 §5.3 operability (one input → many sources)
  * @standard Schema.org Action — search-action (Slice YYYYYY presents these MCP-callable)
@@ -43,35 +44,43 @@
  */
 
 import type { Payload } from 'payload'
+import { NON_CONTENT_FIELDS } from '../integrity'
+
+/** Field types that hold free-text searchable content. */
+const TEXT_FIELD_TYPES: ReadonlySet<string> = new Set(['text', 'textarea', 'email', 'code'])
+
+/** Loose view of a collection config — only the parts multi-search introspects. */
+interface ConfigView {
+  readonly admin?: { readonly hidden?: unknown }
+  readonly fields?: ReadonlyArray<{ readonly name?: unknown; readonly type?: unknown }>
+}
 
 /**
- * Default searchable-field map. Collections present in this map use
- * the listed fields for free-text match. Collections NOT in the map
- * are skipped (multi-search is opt-in to avoid noise).
- *
- * Add new collections by appending here — the multi-search invariant
- * (future cut) will enforce that every user-facing collection appears.
+ * The searchable text fields of a collection, DERIVED from its schema — the top-level
+ * text-bearing fields minus the storage-managed ones (the same `NON_CONTENT_FIELDS` rule
+ * the content-uuid uses). This replaces the old hand-listed field map: search now matches
+ * the SAME content the content-uuid hashes (see `services/uuid-projection`), so search and
+ * identity never disagree about what a record IS — one content definition, DRY.
  */
-export const SEARCHABLE_FIELDS: ReadonlyMap<string, ReadonlyArray<string>> = new Map([
-  ['invoices',           ['number', 'description', 'customerName']],
-  ['payments',           ['number', 'description', 'counterparty']],
-  ['journal-entries',    ['description']],
-  ['business-chains',    ['chainId', 'description']],
-  ['standards',          ['code', 'title', 'jurisdiction']],
-  ['translations',       ['translationKey', 'key']],
-  ['audit-events',       ['eventName', 'action', 'subjectCollection']],
-  ['memories',           ['name', 'description', 'kind']],
-  ['mcp-tool-metadata',  ['toolName', 'description', 'area']],
-  ['standards-vortex',   ['standardCode', 'title']],
-  ['wallets',            ['walletKey', 'description']],
-  ['sales-orders',       ['orderNumber', 'description', 'customerName']],
-  ['addresses',          ['line1', 'city', 'postalCode']],
-  ['notifications',      ['subject', 'body']],
-  ['roles',              ['roleSlug', 'description']],
-  ['leave-requests',     ['employeeName', 'reason']],
-  ['users',              ['email', 'fullName']],
-  ['tenants',            ['name', 'slug', 'legalName']],
-])
+export function searchableFieldsOf(config: ConfigView | undefined): string[] {
+  const out: string[] = []
+  for (const f of config?.fields ?? []) {
+    if (
+      typeof f.name === 'string' &&
+      typeof f.type === 'string' &&
+      TEXT_FIELD_TYPES.has(f.type) &&
+      !NON_CONTENT_FIELDS.has(f.name)
+    ) {
+      out.push(f.name)
+    }
+  }
+  return out
+}
+
+/** A collection is searchable when it is admin-visible and has ≥1 searchable text field (derived, not curated). */
+function isSearchable(config: ConfigView | undefined): boolean {
+  return !!config && config.admin?.hidden !== true && searchableFieldsOf(config).length > 0
+}
 
 export interface MultiSearchHit {
   readonly collection: string
@@ -129,13 +138,16 @@ export async function multiSearch(
   }
   const perCollection = opts.perCollection ?? 10
   const tenantScoped = opts.tenantScoped !== false
-  const allCollections = opts.collections ?? [...SEARCHABLE_FIELDS.keys()]
+  // Derive scope + fields from the live schema (DRY — no hand-listed map). Default: every
+  // admin-visible collection that carries searchable text; callers can still restrict via opts.
+  const registry = ctx.payload.collections as unknown as Record<string, { config?: ConfigView }>
+  const allCollections = opts.collections ?? Object.keys(registry).filter((s) => isSearchable(registry[s]?.config))
 
   const hits: MultiSearchHit[] = []
   let collectionsHit = 0
   for (const collection of allCollections) {
-    const fields = SEARCHABLE_FIELDS.get(collection)
-    if (!fields || fields.length === 0) continue
+    const fields = searchableFieldsOf(registry[collection]?.config)
+    if (fields.length === 0) continue
     // Build an OR-of-LIKE filter across the configured fields.
     const orClauses = fields.map((f) => ({ [f]: { like: q } }))
     const where: Record<string, unknown> = { or: orClauses }
