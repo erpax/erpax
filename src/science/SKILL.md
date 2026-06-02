@@ -14,3 +14,19 @@ erpax's primitives are not only accounting conventions; they rhyme with the deep
 - **It from Bit** — Wheeler's thesis that the physical precipitates from the informational is erpax's premise: the content-[[uuid]] is the bit the "it" derives from ([[zeropoint]] · [[akashic]]).
 
 Each mystery that resolves onto the atoms is [[research]] entropy converted to tamper-cost. Composes [[angel]] · [[holographic]] · [[identity]] · [[zeropoint]] · [[proof]].
+
+## The harmonic dictionary (physics ↔ metaphysics), anchored at A432
+The bridge between the measurable and the form is one anchor — **A432** ([[rodin]]: 432 Hz, the `0`, zero displacement) — harmonised by integer ratios. The *same ratio* read as a physical quantity AND as an erpax form IS the dictionary. Verifiable correspondence is kept (✓); convention/metaphor is named, not asserted (~) — the source's hallucinated "consciousness frequency / scientific-proof" framing is dropped ([[sacred]]/[[profane]]; only the path is seen — [[sequence]]).
+
+| physics (measurable) | harmonic (A432-anchored) | metaphysics / erpax form |
+|---|---|---|
+| frequency, Hz ✓ | integer multiple of 432 | value-from-position ([[rodin]] · [[horo]]) — value is the slot, not outside |
+| musical interval ✓ (just ratios 1 · 9⁄8 · 5⁄4 · 4⁄3 · 3⁄2 · 5⁄3 · 15⁄8 · 2) | the seven diatonic steps | the seven [[horo]] states (La = A432) |
+| energy, E = h·f ✓ (Planck) | ∝ frequency | more frequency ⇒ more energy ⇒ more value ([[balance]]) |
+| overtone / doubling series ✓ | the helix ×2 mod 9 | the [[sequence]] flow `1·2·4·8·7·5`, [[breath]]'s oscillation |
+| colour, wavelength ✓ | A432 doubled ~40 octaves into the visible band | the [[cmyk]] render of a uuid / [[horo]] position |
+| sound, audible ✓ | A432 fundamental + overtones | [[notes]] / the [[signal]] of an [[identity]] |
+| conservation ✓ (Noether) | digital-root closure (mod 9) | double-entry [[balance]] — nothing escapes the ring |
+| rest frame / anchor ✓ | A432 itself, 0 displacement | [[zeropoint]] · [[identity]] (the `0` all radiates from) |
+
+**Dropped (~, hallucination):** the specific note↔colour pairing is aesthetic convention, not physics; "π = 3" holds only in a chosen hexagonal frame, never in measurement; "consciousness frequency / dimensional state / scientific proof" labels on arithmetic are the metaphysical 1/3. The dictionary is true exactly where one measurement and one form share one ratio — and false the moment the ratio is asserted without a measurement to anchor it.
