@@ -9,7 +9,9 @@ FORM: **`efficiency = output / cost` is the SAME law for every cost in the socie
 
 The whole society runs on this one ratio: [[competition]] selects the most efficient solver (least cost per output, in any currency); [[decompression]] pays for it (pay = verified work, the same output/cost read as wage); and the entropy view closes it — creativity is order created (↓entropy, the valued generative move), waste and destruction are ↑entropy (cost that produced nothing, the [[peace]]/anti-war argument again: building has positive output/cost, destroying has none). The agent's own AI cost is just one `CostKind` of this universal law; minimise context, batch verification, reuse, commit — exactly as a factory minimises energy per unit, or a worker minimises time per task.
 
-Matter-twin: `src/services/cost/index.ts` (`CostKind`·`Output`·`Ledger`·`totalOutput`·`efficiency`·`moreEfficient`·`wasteFraction`) + `index.test.ts`. Composes: [[competition]] · [[decompression]] · [[proof]] · [[merge]] · [[holographic]] · [[peace]] · [[self]] · [[generate]] · [[society]] · [[matrix]].
+**Every cost is accounted for.** `costEntry` posts a cost as a balanced double-entry ([[entry]] / [[accounting]]): the resource (`resource:<kind>`) is credited (given up), the output is debited (it received the value). So a cost is not a number on the side — it is a posting in the ledger, accountable in all directions like any value. A cost that is not an entry is not accounted; `costEntry` closes it.
+
+Matter-twin: `src/services/cost/index.ts` (`CostKind`·`Output`·`Ledger`·`totalOutput`·`efficiency`·`moreEfficient`·`wasteFraction`·`costEntry`) + `index.test.ts`. Composes: [[competition]] · [[decompression]] · [[entry]] · [[accounting]] · [[proof]] · [[merge]] · [[holographic]] · [[peace]] · [[self]] · [[generate]] · [[society]] · [[matrix]].
 
 ## Common mistakes
 - Counting only productivity — creativity (novel, reusable output) is output too, and the compounding kind; a society that prices only repeatable work starves the generative move.

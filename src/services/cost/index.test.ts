@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { totalOutput, efficiency, moreEfficient, wasteFraction, type Ledger } from './index'
+import { totalOutput, efficiency, moreEfficient, wasteFraction, costEntry, type Ledger } from './index'
+import { isBalanced, net } from '../entry'
 
 describe('cost — one efficiency law for every society cost (vs productivity + creativity)', () => {
   it('totalOutput counts both productivity and creativity', () => {
@@ -30,5 +31,14 @@ describe('cost — one efficiency law for every society cost (vs productivity + 
     expect(wasteFraction(100, 60)).toBeCloseTo(0.4, 10)
     expect(wasteFraction(100, 120)).toBe(0) // clamped — productive cost can't exceed total
     expect(wasteFraction(0, 0)).toBe(0)
+  })
+
+  it('costEntry accounts for a cost as a balanced double-entry (resource credited, output debited)', () => {
+    const l: Ledger = { kind: 'energy', output: { productivity: 10, creativity: 0 }, cost: 42 }
+    const entry = costEntry(l)
+    expect(isBalanced(entry)).toBe(true) // Σdebit = Σcredit — accounted in all directions
+    expect(net(entry)).toBe(0)
+    expect(entry.lines.find((line) => line.accountable === 'resource:energy')?.credit).toBe(42)
+    expect(entry.lines.find((line) => line.accountable === 'output')?.debit).toBe(42)
   })
 })

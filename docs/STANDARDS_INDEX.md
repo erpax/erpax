@@ -1587,7 +1587,7 @@ src/services/consistency-apply/index.ts:417: * @standard W3C-WAI-ARIA-1.2 access
 src/services/consistency-apply/index.ts:418: * @standard WCAG-2.1-AA contrast text-spacing
 src/services/consistency-apply/index.ts:524: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/services/constitution/index.ts:13: * @standard ISO 37000:2021 governance-of-organizations principle-of-purpose
-src/services/cost/index.ts:6: * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
+src/services/cost/index.ts:10: * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
 src/services/country-api-clients/index.ts:15: * @standard ISO-3166-1:2020 country-codes alpha-2 dispatch-key
 src/services/country-api-clients/index.ts:338: * @standard ISO-4217:2015 currency-codes
 src/services/country-api-clients/index.ts:339: * @standard ISO-8601-1:2019 date-time

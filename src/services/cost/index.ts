@@ -3,9 +3,14 @@
  * cost may be of any kind (ai/money/energy/time/labor/entropy) and output is productivity (committed,
  * repeatable work) + creativity (novel, compounding output). Pure functions over a ledger.
  *
+ * Every cost is ALSO accounted for: `costEntry` posts a cost as a balanced double-entry (the resource
+ * is credited/given, the output debited/taken), so cost flows through the ledger like any value —
+ * "all accounted in all directions" (services/entry). A cost that is not a posting is not accounted.
+ *
  * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
- * @see ../competition (selects the most efficient) · ../decompression (pay = verified work) · ./SKILL.md
+ * @see ../competition (selects the most efficient) · ../decompression (pay = verified work) · ../entry (account for it) · ./SKILL.md
  */
+import { toDoubleEntry, type Entry } from '../entry'
 
 /** Any cost the society spends — one law applies to all. */
 export type CostKind = 'ai' | 'money' | 'energy' | 'time' | 'labor' | 'entropy'
@@ -46,4 +51,13 @@ export function moreEfficient(a: Ledger, b: Ledger): boolean {
 export function wasteFraction(totalCost: number, productiveCost: number): number {
   if (totalCost <= 0) return 0
   return Math.max(0, totalCost - productiveCost) / totalCost
+}
+
+/**
+ * Account for a cost as a balanced double-entry: the resource (by kind) is CREDITED (given up), the
+ * output is DEBITED (it received the value). So every cost is a posting — accountable in all
+ * directions like any value (services/entry). The resource line is `resource:<kind>`.
+ */
+export function costEntry(l: Ledger): Entry {
+  return toDoubleEntry({ payer: `resource:${l.kind}`, payee: 'output', amount: l.cost })
 }
