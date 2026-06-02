@@ -2086,6 +2086,7 @@ src/services/uuid-share/index.ts:47: * @standard NIST SP 800-162 ABAC
 src/services/uuid-share/index.ts:48: * @standard ISO/IEC 27001 Annex A.9.2.3 + A.9.4.1
 src/services/uuid-share/index.ts:49: * @standard eIDAS §3 (sealed grants)
 src/services/uuid-share/index.ts:50: * @standard GDPR Article 32(1)(b)
+src/services/version/index.ts:16: * @standard SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)
 src/services/wallet-exchange/index.test.ts:23: * @standard IFRS 9 §3.2 derecognition / reclassification
 src/services/wallet-exchange/index.test.ts:24: * @standard IFRS 7 §22 fair-value-hierarchy disclosure (rateSource)
 src/services/wallet-exchange/index.ts:62: * @standard IFRS 9 §3.2 derecognition + reclassification
@@ -5637,6 +5638,7 @@ src/services/uuid-kv/index.ts:59: * @audit Conservation Law 54 universal identit
 src/services/uuid-kv/index.ts:60: * @audit Conservation Law 56 dynamic-trust (chain-of-bindings supersedes
 src/services/uuid-share/index.test.ts:17: * @audit Conservation Law 59 uuid-based-sharing-with-rbac
 src/services/uuid-share/index.ts:51: * @audit Conservation Law 59 uuid-based-sharing
+src/services/version/index.ts:17: * @audit the version is derived, not declared — re-derivable from SKILL_INDEX on any clone
 src/services/wallet-exchange/index.test.ts:25: * @audit Conservation Law 53 (blank currency as identity)
 src/services/wallet-exchange/index.ts:67: * @audit Conservation Law 53 self-referential-closure (XXX is internal-fallback identity)
 src/services/wallet-exchange/index.ts:68: * @audit Conservation Law 8 content-uuid (journal-entry row uuid binds the exchange)
