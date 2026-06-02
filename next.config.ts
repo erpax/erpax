@@ -1,3 +1,4 @@
+import { builtinModules } from 'node:module'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -9,6 +10,14 @@ import { redirects } from './redirects'
 const withNextIntl = createNextIntlPlugin('./src/i18n/request/index.ts')
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url))
+
+/**
+ * Every Node built-in, stubbed `false` for the client bundle. The browser admin reaches the server
+ * `payload` package (via @payloadcms/ui's `shared` export → VersionPillLabel) but never executes its
+ * server paths, so no Node built-in can legitimately run there. Computed from Node — not hand-listed —
+ * so new server leaves (dns, worker_threads, readline, net, tls…) need no further config edits.
+ */
+const clientNodeBuiltinFallback = Object.fromEntries(builtinModules.map((m) => [m, false]))
 
 const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
@@ -69,21 +78,29 @@ const nextConfig = {
       '.mjs': ['.mts', '.mjs'],
     }
 
-    // Client field components from payload plugins (plugin-seo, plugin-import-export) transitively
-    // import the server `payload` package, dragging node:-scheme built-ins (node:os/console/buffer/
-    // module…) and undici into the browser bundle. The client never executes those server paths, so
-    // strip the node: scheme and stub the server-only built-ins + undici out of the client bundle.
+    // Payload admin client components transitively import the server `payload` package (via
+    // @payloadcms/ui's `shared` export → VersionPillLabel), dragging server-only leaves into the
+    // browser bundle: node:-scheme built-ins (os/console/buffer/module/worker_threads/readline…) +
+    // undici (logger/pino-pretty, migration prompts) and file-type's fs-based `fileTypeFromFile`
+    // (upload paths). The client never executes those server paths, so strip the node: scheme and
+    // stub each server-only leaf out of the client bundle.
     if (!isServer) {
       webpackConfig.plugins.push(
         new webpack.NormalModuleReplacementPlugin(/^node:/, (r: any) => {
           r.request = r.request.replace(/^node:/, '')
         }),
       )
-      webpackConfig.resolve.alias = { ...(webpackConfig.resolve.alias ?? {}), undici: false }
+      webpackConfig.resolve.alias = {
+        ...(webpackConfig.resolve.alias ?? {}),
+        undici: false,
+        // file-type@21's browser entry (core.js) omits the fs-based `fileTypeFromFile`; redirect to
+        // a shim that keeps the browser-safe core and stubs that one server-only export. `$` = exact
+        // match so the shim's own `file-type/core` import still resolves to the real package.
+        'file-type$': path.join(projectRoot, 'file-type.browser-shim.mjs'),
+      }
       webpackConfig.resolve.fallback = {
         ...(webpackConfig.resolve.fallback ?? {}),
-        os: false, fs: false, path: false, module: false, buffer: false,
-        crypto: false, stream: false, util: false, console: false, async_hooks: false, child_process: false,
+        ...clientNodeBuiltinFallback,
       }
     }
 

@@ -81,6 +81,38 @@ export const Roles: CollectionConfig = {
         description: 'When scope is document-level, choose the exact record.',
       },
     },
+    // ─── The Role HOLDS the role skills (capability + skillRoutes) ───
+    // A role is not just a name+scope (Rolify) — it carries what it can DO and what it KNOWS,
+    // so users inherit both through assignment ([[access]] cross + [[classroom]] skillRoute).
+    // Access-bearing roles (admin, accountant…) set `capability`; pure party/type roles
+    // (seller, buyer…) may leave it empty and carry only skillRoutes/logic.
+    {
+      name: 'capability',
+      type: 'select',
+      label: 'Capability',
+      options: [
+        { label: 'read', value: 'read' },
+        { label: 'write', value: 'write' },
+        { label: 'sign', value: 'sign' },
+        { label: 'admin', value: 'admin' },
+        { label: 'audit', value: 'audit' },
+      ],
+      admin: {
+        description:
+          'What the role can do on its scope — the rodin 3·6·9 governing axis (read<write<sign<admin; audit ⊥). The Role holds the capability; users inherit it by assignment.',
+      },
+    },
+    {
+      name: 'skillRoutes',
+      type: 'text',
+      hasMany: true,
+      index: true,
+      label: 'Skill routes',
+      admin: {
+        description:
+          'The skills/logic this role attaches (e.g. accounting/journal-entry, commerce/order). The Role holds the role skills.',
+      },
+    },
   ],
   hooks: {
     beforeValidate: [validateRoleDefinition],

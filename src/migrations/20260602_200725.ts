@@ -36,7 +36,21 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`tenants_allow_public_read_idx\` ON \`tenants\` (\`allow_public_read\`);`)
   await db.run(sql`CREATE INDEX \`tenants_updated_at_idx\` ON \`tenants\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`tenants_created_at_idx\` ON \`tenants\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e1bbe6311f13252339e495c8800870cc5\` (
+  await db.run(sql`CREATE TABLE \`eb6619ccc69668dd8a8e13e6b854fec14\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`competency\` text NOT NULL,
+  	\`proficiency\` numeric,
+  	\`assessed_at\` text,
+  	\`evidence\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`eb6619ccc69668dd8a8e13e6b854fec14_order_idx\` ON \`eb6619ccc69668dd8a8e13e6b854fec14\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eb6619ccc69668dd8a8e13e6b854fec14_parent_id_idx\` ON \`eb6619ccc69668dd8a8e13e6b854fec14\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb6619ccc69668dd8a8e13e6b854fec14_competency_idx\` ON \`eb6619ccc69668dd8a8e13e6b854fec14\` (\`competency\`);`)
+  await db.run(sql`CREATE TABLE \`e1bbe6311f13282339e495c8800870cc5\` (
   	\`order\` integer NOT NULL,
   	\`parent_id\` text(36) NOT NULL,
   	\`value\` text,
@@ -44,19 +58,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`parent_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e1bbe6311f13252339e495c8800870cc5_order_idx\` ON \`e1bbe6311f13252339e495c8800870cc5\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`e1bbe6311f13252339e495c8800870cc5_parent_idx\` ON \`e1bbe6311f13252339e495c8800870cc5\` (\`parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ef1d2a1529c6a59c49a42b4994043f30d\` (
+  await db.run(sql`CREATE INDEX \`e1bbe6311f13282339e495c8800870cc5_order_idx\` ON \`e1bbe6311f13282339e495c8800870cc5\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`e1bbe6311f13282339e495c8800870cc5_parent_idx\` ON \`e1bbe6311f13282339e495c8800870cc5\` (\`parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ef1d2a1529c6a89c49a42b4994043f30d\` (
   	\`order\` integer NOT NULL,
   	\`parent_id\` text NOT NULL,
   	\`value\` text,
   	\`id\` text(36) PRIMARY KEY NOT NULL,
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`e2a4022d9ee875058b14896fdca6954e1\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`e2a4022d9ee878058b14896fdca6954e1\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ef1d2a1529c6a59c49a42b4994043f30d_order_idx\` ON \`ef1d2a1529c6a59c49a42b4994043f30d\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`ef1d2a1529c6a59c49a42b4994043f30d_parent_idx\` ON \`ef1d2a1529c6a59c49a42b4994043f30d\` (\`parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2a4022d9ee875058b14896fdca6954e1\` (
+  await db.run(sql`CREATE INDEX \`ef1d2a1529c6a89c49a42b4994043f30d_order_idx\` ON \`ef1d2a1529c6a89c49a42b4994043f30d\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`ef1d2a1529c6a89c49a42b4994043f30d_parent_idx\` ON \`ef1d2a1529c6a89c49a42b4994043f30d\` (\`parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e2a4022d9ee878058b14896fdca6954e1\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -65,9 +79,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2a4022d9ee875058b14896fdca6954e1_order_idx\` ON \`e2a4022d9ee875058b14896fdca6954e1\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2a4022d9ee875058b14896fdca6954e1_parent_id_idx\` ON \`e2a4022d9ee875058b14896fdca6954e1\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e2a4022d9ee875058b14896fdca6954e1_tenant_idx\` ON \`e2a4022d9ee875058b14896fdca6954e1\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2a4022d9ee878058b14896fdca6954e1_order_idx\` ON \`e2a4022d9ee878058b14896fdca6954e1\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2a4022d9ee878058b14896fdca6954e1_parent_id_idx\` ON \`e2a4022d9ee878058b14896fdca6954e1\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2a4022d9ee878058b14896fdca6954e1_tenant_idx\` ON \`e2a4022d9ee878058b14896fdca6954e1\` (\`tenant_id\`);`)
   await db.run(sql`CREATE TABLE \`users_sessions\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
@@ -164,7 +178,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`user_roles_role_idx\` ON \`user_roles\` (\`role_id\`);`)
   await db.run(sql`CREATE INDEX \`user_roles_updated_at_idx\` ON \`user_roles\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`user_roles_created_at_idx\` ON \`user_roles\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e0dc067124d475cdba631b9fa5d670eec\` (
+  await db.run(sql`CREATE TABLE \`e0dc067124d478cdba631b9fa5d670eec\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_locale\` text NOT NULL,
@@ -177,10 +191,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e0dc067124d475cdba631b9fa5d670eec_order_idx\` ON \`e0dc067124d475cdba631b9fa5d670eec\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e0dc067124d475cdba631b9fa5d670eec_parent_id_idx\` ON \`e0dc067124d475cdba631b9fa5d670eec\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e0dc067124d475cdba631b9fa5d670eec_locale_idx\` ON \`e0dc067124d475cdba631b9fa5d670eec\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`e0b6622b1c93150c98294697a29240a6f\` (
+  await db.run(sql`CREATE INDEX \`e0dc067124d478cdba631b9fa5d670eec_order_idx\` ON \`e0dc067124d478cdba631b9fa5d670eec\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e0dc067124d478cdba631b9fa5d670eec_parent_id_idx\` ON \`e0dc067124d478cdba631b9fa5d670eec\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e0dc067124d478cdba631b9fa5d670eec_locale_idx\` ON \`e0dc067124d478cdba631b9fa5d670eec\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`e0b6622b1c93180c98294697a29240a6f\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text NOT NULL,
   	\`_locale\` text NOT NULL,
@@ -190,13 +204,13 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_url\` text,
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e36c778a2ac5654d1bbce502ea4931500\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e36c778a2ac5684d1bbce502ea4931500\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e0b6622b1c93150c98294697a29240a6f_order_idx\` ON \`e0b6622b1c93150c98294697a29240a6f\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e0b6622b1c93150c98294697a29240a6f_parent_id_idx\` ON \`e0b6622b1c93150c98294697a29240a6f\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e0b6622b1c93150c98294697a29240a6f_locale_idx\` ON \`e0b6622b1c93150c98294697a29240a6f\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`e36c778a2ac5654d1bbce502ea4931500\` (
+  await db.run(sql`CREATE INDEX \`e0b6622b1c93180c98294697a29240a6f_order_idx\` ON \`e0b6622b1c93180c98294697a29240a6f\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e0b6622b1c93180c98294697a29240a6f_parent_id_idx\` ON \`e0b6622b1c93180c98294697a29240a6f\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e0b6622b1c93180c98294697a29240a6f_locale_idx\` ON \`e0b6622b1c93180c98294697a29240a6f\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`e36c778a2ac5684d1bbce502ea4931500\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -207,11 +221,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e36c778a2ac5654d1bbce502ea4931500_order_idx\` ON \`e36c778a2ac5654d1bbce502ea4931500\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e36c778a2ac5654d1bbce502ea4931500_parent_id_idx\` ON \`e36c778a2ac5654d1bbce502ea4931500\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e36c778a2ac5654d1bbce502ea4931500_path_idx\` ON \`e36c778a2ac5654d1bbce502ea4931500\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`e36c778a2ac5654d1bbce502ea4931500_locale_idx\` ON \`e36c778a2ac5654d1bbce502ea4931500\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`ee3949e56baa25c1b867172a5dee40d6a\` (
+  await db.run(sql`CREATE INDEX \`e36c778a2ac5684d1bbce502ea4931500_order_idx\` ON \`e36c778a2ac5684d1bbce502ea4931500\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e36c778a2ac5684d1bbce502ea4931500_parent_id_idx\` ON \`e36c778a2ac5684d1bbce502ea4931500\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e36c778a2ac5684d1bbce502ea4931500_path_idx\` ON \`e36c778a2ac5684d1bbce502ea4931500\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`e36c778a2ac5684d1bbce502ea4931500_locale_idx\` ON \`e36c778a2ac5684d1bbce502ea4931500\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`ee3949e56baa28c1b867172a5dee40d6a\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text NOT NULL,
   	\`_locale\` text NOT NULL,
@@ -224,13 +238,13 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_url\` text,
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ef7c8a03cb2625f4da06a88c4f30d47c7\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ef7c8a03cb2628f4da06a88c4f30d47c7\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ee3949e56baa25c1b867172a5dee40d6a_order_idx\` ON \`ee3949e56baa25c1b867172a5dee40d6a\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ee3949e56baa25c1b867172a5dee40d6a_parent_id_idx\` ON \`ee3949e56baa25c1b867172a5dee40d6a\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ee3949e56baa25c1b867172a5dee40d6a_locale_idx\` ON \`ee3949e56baa25c1b867172a5dee40d6a\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`ef7c8a03cb2625f4da06a88c4f30d47c7\` (
+  await db.run(sql`CREATE INDEX \`ee3949e56baa28c1b867172a5dee40d6a_order_idx\` ON \`ee3949e56baa28c1b867172a5dee40d6a\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ee3949e56baa28c1b867172a5dee40d6a_parent_id_idx\` ON \`ee3949e56baa28c1b867172a5dee40d6a\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ee3949e56baa28c1b867172a5dee40d6a_locale_idx\` ON \`ee3949e56baa28c1b867172a5dee40d6a\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`ef7c8a03cb2628f4da06a88c4f30d47c7\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -240,11 +254,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ef7c8a03cb2625f4da06a88c4f30d47c7_order_idx\` ON \`ef7c8a03cb2625f4da06a88c4f30d47c7\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ef7c8a03cb2625f4da06a88c4f30d47c7_parent_id_idx\` ON \`ef7c8a03cb2625f4da06a88c4f30d47c7\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ef7c8a03cb2625f4da06a88c4f30d47c7_path_idx\` ON \`ef7c8a03cb2625f4da06a88c4f30d47c7\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`ef7c8a03cb2625f4da06a88c4f30d47c7_locale_idx\` ON \`ef7c8a03cb2625f4da06a88c4f30d47c7\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`e81cc20c70fe75dbeaf3103630ebc6fbc\` (
+  await db.run(sql`CREATE INDEX \`ef7c8a03cb2628f4da06a88c4f30d47c7_order_idx\` ON \`ef7c8a03cb2628f4da06a88c4f30d47c7\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ef7c8a03cb2628f4da06a88c4f30d47c7_parent_id_idx\` ON \`ef7c8a03cb2628f4da06a88c4f30d47c7\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ef7c8a03cb2628f4da06a88c4f30d47c7_path_idx\` ON \`ef7c8a03cb2628f4da06a88c4f30d47c7\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`ef7c8a03cb2628f4da06a88c4f30d47c7_locale_idx\` ON \`ef7c8a03cb2628f4da06a88c4f30d47c7\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`e81cc20c70fe78dbeaf3103630ebc6fbc\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -256,12 +270,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e81cc20c70fe75dbeaf3103630ebc6fbc_order_idx\` ON \`e81cc20c70fe75dbeaf3103630ebc6fbc\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e81cc20c70fe75dbeaf3103630ebc6fbc_parent_id_idx\` ON \`e81cc20c70fe75dbeaf3103630ebc6fbc\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e81cc20c70fe75dbeaf3103630ebc6fbc_path_idx\` ON \`e81cc20c70fe75dbeaf3103630ebc6fbc\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`e81cc20c70fe75dbeaf3103630ebc6fbc_locale_idx\` ON \`e81cc20c70fe75dbeaf3103630ebc6fbc\` (\`_locale\`);`)
-  await db.run(sql`CREATE INDEX \`e81cc20c70fe75dbeaf3103630ebc6fbc_media_idx\` ON \`e81cc20c70fe75dbeaf3103630ebc6fbc\` (\`media_id\`);`)
-  await db.run(sql`CREATE TABLE \`e9cafee9f0fed5430a34bf14bb8d7771b\` (
+  await db.run(sql`CREATE INDEX \`e81cc20c70fe78dbeaf3103630ebc6fbc_order_idx\` ON \`e81cc20c70fe78dbeaf3103630ebc6fbc\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e81cc20c70fe78dbeaf3103630ebc6fbc_parent_id_idx\` ON \`e81cc20c70fe78dbeaf3103630ebc6fbc\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e81cc20c70fe78dbeaf3103630ebc6fbc_path_idx\` ON \`e81cc20c70fe78dbeaf3103630ebc6fbc\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`e81cc20c70fe78dbeaf3103630ebc6fbc_locale_idx\` ON \`e81cc20c70fe78dbeaf3103630ebc6fbc\` (\`_locale\`);`)
+  await db.run(sql`CREATE INDEX \`e81cc20c70fe78dbeaf3103630ebc6fbc_media_idx\` ON \`e81cc20c70fe78dbeaf3103630ebc6fbc\` (\`media_id\`);`)
+  await db.run(sql`CREATE TABLE \`e9cafee9f0fed8430a34bf14bb8d7771b\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -275,11 +289,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e9cafee9f0fed5430a34bf14bb8d7771b_order_idx\` ON \`e9cafee9f0fed5430a34bf14bb8d7771b\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e9cafee9f0fed5430a34bf14bb8d7771b_parent_id_idx\` ON \`e9cafee9f0fed5430a34bf14bb8d7771b\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e9cafee9f0fed5430a34bf14bb8d7771b_path_idx\` ON \`e9cafee9f0fed5430a34bf14bb8d7771b\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`e9cafee9f0fed5430a34bf14bb8d7771b_locale_idx\` ON \`e9cafee9f0fed5430a34bf14bb8d7771b\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`e87f1621ae35f569b9a226c9e15aa2c0c\` (
+  await db.run(sql`CREATE INDEX \`e9cafee9f0fed8430a34bf14bb8d7771b_order_idx\` ON \`e9cafee9f0fed8430a34bf14bb8d7771b\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e9cafee9f0fed8430a34bf14bb8d7771b_parent_id_idx\` ON \`e9cafee9f0fed8430a34bf14bb8d7771b\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e9cafee9f0fed8430a34bf14bb8d7771b_path_idx\` ON \`e9cafee9f0fed8430a34bf14bb8d7771b\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`e9cafee9f0fed8430a34bf14bb8d7771b_locale_idx\` ON \`e9cafee9f0fed8430a34bf14bb8d7771b\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`e87f1621ae35f869b9a226c9e15aa2c0c\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -293,12 +307,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e87f1621ae35f569b9a226c9e15aa2c0c_order_idx\` ON \`e87f1621ae35f569b9a226c9e15aa2c0c\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e87f1621ae35f569b9a226c9e15aa2c0c_parent_id_idx\` ON \`e87f1621ae35f569b9a226c9e15aa2c0c\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e87f1621ae35f569b9a226c9e15aa2c0c_path_idx\` ON \`e87f1621ae35f569b9a226c9e15aa2c0c\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`e87f1621ae35f569b9a226c9e15aa2c0c_locale_idx\` ON \`e87f1621ae35f569b9a226c9e15aa2c0c\` (\`_locale\`);`)
-  await db.run(sql`CREATE INDEX \`e87f1621ae35f569b9a226c9e15aa2c0c_form_idx\` ON \`e87f1621ae35f569b9a226c9e15aa2c0c\` (\`form_id\`);`)
-  await db.run(sql`CREATE TABLE \`e9e1fb928a8a054e1aa55074c6bfe43c8\` (
+  await db.run(sql`CREATE INDEX \`e87f1621ae35f869b9a226c9e15aa2c0c_order_idx\` ON \`e87f1621ae35f869b9a226c9e15aa2c0c\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e87f1621ae35f869b9a226c9e15aa2c0c_parent_id_idx\` ON \`e87f1621ae35f869b9a226c9e15aa2c0c\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e87f1621ae35f869b9a226c9e15aa2c0c_path_idx\` ON \`e87f1621ae35f869b9a226c9e15aa2c0c\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`e87f1621ae35f869b9a226c9e15aa2c0c_locale_idx\` ON \`e87f1621ae35f869b9a226c9e15aa2c0c\` (\`_locale\`);`)
+  await db.run(sql`CREATE INDEX \`e87f1621ae35f869b9a226c9e15aa2c0c_form_idx\` ON \`e87f1621ae35f869b9a226c9e15aa2c0c\` (\`form_id\`);`)
+  await db.run(sql`CREATE TABLE \`e9e1fb928a8a084e1aa55074c6bfe43c8\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -309,9 +323,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`pages\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e9e1fb928a8a054e1aa55074c6bfe43c8_order_idx\` ON \`e9e1fb928a8a054e1aa55074c6bfe43c8\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e9e1fb928a8a054e1aa55074c6bfe43c8_parent_id_idx\` ON \`e9e1fb928a8a054e1aa55074c6bfe43c8\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e9e1fb928a8a054e1aa55074c6bfe43c8_doc_idx\` ON \`e9e1fb928a8a054e1aa55074c6bfe43c8\` (\`doc_id\`);`)
+  await db.run(sql`CREATE INDEX \`e9e1fb928a8a084e1aa55074c6bfe43c8_order_idx\` ON \`e9e1fb928a8a084e1aa55074c6bfe43c8\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e9e1fb928a8a084e1aa55074c6bfe43c8_parent_id_idx\` ON \`e9e1fb928a8a084e1aa55074c6bfe43c8\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e9e1fb928a8a084e1aa55074c6bfe43c8_doc_idx\` ON \`e9e1fb928a8a084e1aa55074c6bfe43c8\` (\`doc_id\`);`)
   await db.run(sql`CREATE TABLE \`pages\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -376,7 +390,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`pages_rels_pages_id_idx\` ON \`pages_rels\` (\`pages_id\`,\`locale\`);`)
   await db.run(sql`CREATE INDEX \`pages_rels_posts_id_idx\` ON \`pages_rels\` (\`posts_id\`,\`locale\`);`)
   await db.run(sql`CREATE INDEX \`pages_rels_categories_id_idx\` ON \`pages_rels\` (\`categories_id\`,\`locale\`);`)
-  await db.run(sql`CREATE TABLE \`_e0dc067124d475cdba631b9fa5d670eec_v\` (
+  await db.run(sql`CREATE TABLE \`_e0dc067124d478cdba631b9fa5d670eec_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_locale\` text NOT NULL,
@@ -390,10 +404,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e0dc067124d475cdba631b9fa5d670eec_v_order_idx\` ON \`_e0dc067124d475cdba631b9fa5d670eec_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e0dc067124d475cdba631b9fa5d670eec_v_parent_id_idx\` ON \`_e0dc067124d475cdba631b9fa5d670eec_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e0dc067124d475cdba631b9fa5d670eec_v_locale_idx\` ON \`_e0dc067124d475cdba631b9fa5d670eec_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`_e0b6622b1c93150c98294697a29240a6f_v\` (
+  await db.run(sql`CREATE INDEX \`_e0dc067124d478cdba631b9fa5d670eec_v_order_idx\` ON \`_e0dc067124d478cdba631b9fa5d670eec_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e0dc067124d478cdba631b9fa5d670eec_v_parent_id_idx\` ON \`_e0dc067124d478cdba631b9fa5d670eec_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e0dc067124d478cdba631b9fa5d670eec_v_locale_idx\` ON \`_e0dc067124d478cdba631b9fa5d670eec_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`_e0b6622b1c93180c98294697a29240a6f_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_locale\` text NOT NULL,
@@ -404,13 +418,13 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
   	\`_uuid\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_e36c778a2ac5654d1bbce502ea4931500_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_e36c778a2ac5684d1bbce502ea4931500_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e0b6622b1c93150c98294697a29240a6f_v_order_idx\` ON \`_e0b6622b1c93150c98294697a29240a6f_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e0b6622b1c93150c98294697a29240a6f_v_parent_id_idx\` ON \`_e0b6622b1c93150c98294697a29240a6f_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e0b6622b1c93150c98294697a29240a6f_v_locale_idx\` ON \`_e0b6622b1c93150c98294697a29240a6f_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`_e36c778a2ac5654d1bbce502ea4931500_v\` (
+  await db.run(sql`CREATE INDEX \`_e0b6622b1c93180c98294697a29240a6f_v_order_idx\` ON \`_e0b6622b1c93180c98294697a29240a6f_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e0b6622b1c93180c98294697a29240a6f_v_parent_id_idx\` ON \`_e0b6622b1c93180c98294697a29240a6f_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e0b6622b1c93180c98294697a29240a6f_v_locale_idx\` ON \`_e0b6622b1c93180c98294697a29240a6f_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`_e36c778a2ac5684d1bbce502ea4931500_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -422,11 +436,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e36c778a2ac5654d1bbce502ea4931500_v_order_idx\` ON \`_e36c778a2ac5654d1bbce502ea4931500_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e36c778a2ac5654d1bbce502ea4931500_v_parent_id_idx\` ON \`_e36c778a2ac5654d1bbce502ea4931500_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e36c778a2ac5654d1bbce502ea4931500_v_path_idx\` ON \`_e36c778a2ac5654d1bbce502ea4931500_v\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`_e36c778a2ac5654d1bbce502ea4931500_v_locale_idx\` ON \`_e36c778a2ac5654d1bbce502ea4931500_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`_ee3949e56baa25c1b867172a5dee40d6a_v\` (
+  await db.run(sql`CREATE INDEX \`_e36c778a2ac5684d1bbce502ea4931500_v_order_idx\` ON \`_e36c778a2ac5684d1bbce502ea4931500_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e36c778a2ac5684d1bbce502ea4931500_v_parent_id_idx\` ON \`_e36c778a2ac5684d1bbce502ea4931500_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e36c778a2ac5684d1bbce502ea4931500_v_path_idx\` ON \`_e36c778a2ac5684d1bbce502ea4931500_v\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`_e36c778a2ac5684d1bbce502ea4931500_v_locale_idx\` ON \`_e36c778a2ac5684d1bbce502ea4931500_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`_ee3949e56baa28c1b867172a5dee40d6a_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_locale\` text NOT NULL,
@@ -440,13 +454,13 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
   	\`_uuid\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_ee3949e56baa25c1b867172a5dee40d6a_v_order_idx\` ON \`_ee3949e56baa25c1b867172a5dee40d6a_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_ee3949e56baa25c1b867172a5dee40d6a_v_parent_id_idx\` ON \`_ee3949e56baa25c1b867172a5dee40d6a_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_ee3949e56baa25c1b867172a5dee40d6a_v_locale_idx\` ON \`_ee3949e56baa25c1b867172a5dee40d6a_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\` (
+  await db.run(sql`CREATE INDEX \`_ee3949e56baa28c1b867172a5dee40d6a_v_order_idx\` ON \`_ee3949e56baa28c1b867172a5dee40d6a_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_ee3949e56baa28c1b867172a5dee40d6a_v_parent_id_idx\` ON \`_ee3949e56baa28c1b867172a5dee40d6a_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_ee3949e56baa28c1b867172a5dee40d6a_v_locale_idx\` ON \`_ee3949e56baa28c1b867172a5dee40d6a_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -457,11 +471,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v_order_idx\` ON \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v_parent_id_idx\` ON \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v_path_idx\` ON \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v_locale_idx\` ON \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\` (
+  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v_order_idx\` ON \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v_parent_id_idx\` ON \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v_path_idx\` ON \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v_locale_idx\` ON \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -474,12 +488,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v_order_idx\` ON \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v_parent_id_idx\` ON \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v_path_idx\` ON \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v_locale_idx\` ON \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE INDEX \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v_media_idx\` ON \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\` (\`media_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e9cafee9f0fed5430a34bf14bb8d7771b_v\` (
+  await db.run(sql`CREATE INDEX \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v_order_idx\` ON \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v_parent_id_idx\` ON \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v_path_idx\` ON \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v_locale_idx\` ON \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE INDEX \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v_media_idx\` ON \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\` (\`media_id\`);`)
+  await db.run(sql`CREATE TABLE \`_e9cafee9f0fed8430a34bf14bb8d7771b_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -494,11 +508,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed5430a34bf14bb8d7771b_v_order_idx\` ON \`_e9cafee9f0fed5430a34bf14bb8d7771b_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed5430a34bf14bb8d7771b_v_parent_id_idx\` ON \`_e9cafee9f0fed5430a34bf14bb8d7771b_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed5430a34bf14bb8d7771b_v_path_idx\` ON \`_e9cafee9f0fed5430a34bf14bb8d7771b_v\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed5430a34bf14bb8d7771b_v_locale_idx\` ON \`_e9cafee9f0fed5430a34bf14bb8d7771b_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE TABLE \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\` (
+  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed8430a34bf14bb8d7771b_v_order_idx\` ON \`_e9cafee9f0fed8430a34bf14bb8d7771b_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed8430a34bf14bb8d7771b_v_parent_id_idx\` ON \`_e9cafee9f0fed8430a34bf14bb8d7771b_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed8430a34bf14bb8d7771b_v_path_idx\` ON \`_e9cafee9f0fed8430a34bf14bb8d7771b_v\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`_e9cafee9f0fed8430a34bf14bb8d7771b_v_locale_idx\` ON \`_e9cafee9f0fed8430a34bf14bb8d7771b_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE TABLE \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -513,12 +527,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e87f1621ae35f569b9a226c9e15aa2c0c_v_order_idx\` ON \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e87f1621ae35f569b9a226c9e15aa2c0c_v_parent_id_idx\` ON \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e87f1621ae35f569b9a226c9e15aa2c0c_v_path_idx\` ON \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`_e87f1621ae35f569b9a226c9e15aa2c0c_v_locale_idx\` ON \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\` (\`_locale\`);`)
-  await db.run(sql`CREATE INDEX \`_e87f1621ae35f569b9a226c9e15aa2c0c_v_form_idx\` ON \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\` (\`form_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v\` (
+  await db.run(sql`CREATE INDEX \`_e87f1621ae35f869b9a226c9e15aa2c0c_v_order_idx\` ON \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e87f1621ae35f869b9a226c9e15aa2c0c_v_parent_id_idx\` ON \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e87f1621ae35f869b9a226c9e15aa2c0c_v_path_idx\` ON \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`_e87f1621ae35f869b9a226c9e15aa2c0c_v_locale_idx\` ON \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\` (\`_locale\`);`)
+  await db.run(sql`CREATE INDEX \`_e87f1621ae35f869b9a226c9e15aa2c0c_v_form_idx\` ON \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\` (\`form_id\`);`)
+  await db.run(sql`CREATE TABLE \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text(36) PRIMARY KEY NOT NULL,
@@ -530,9 +544,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_pages_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v_order_idx\` ON \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v_parent_id_idx\` ON \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v_doc_idx\` ON \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v\` (\`doc_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v_order_idx\` ON \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v_parent_id_idx\` ON \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v_doc_idx\` ON \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v\` (\`doc_id\`);`)
   await db.run(sql`CREATE TABLE \`_pages_v\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`parent_id\` text(36),
@@ -612,7 +626,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`_pages_v_rels_pages_id_idx\` ON \`_pages_v_rels\` (\`pages_id\`,\`locale\`);`)
   await db.run(sql`CREATE INDEX \`_pages_v_rels_posts_id_idx\` ON \`_pages_v_rels\` (\`posts_id\`,\`locale\`);`)
   await db.run(sql`CREATE INDEX \`_pages_v_rels_categories_id_idx\` ON \`_pages_v_rels\` (\`categories_id\`,\`locale\`);`)
-  await db.run(sql`CREATE TABLE \`e4cefc0562d375871ba0511ef359b5126\` (
+  await db.run(sql`CREATE TABLE \`e4cefc0562d378871ba0511ef359b5126\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -620,8 +634,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`posts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e4cefc0562d375871ba0511ef359b5126_order_idx\` ON \`e4cefc0562d375871ba0511ef359b5126\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e4cefc0562d375871ba0511ef359b5126_parent_id_idx\` ON \`e4cefc0562d375871ba0511ef359b5126\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e4cefc0562d378871ba0511ef359b5126_order_idx\` ON \`e4cefc0562d378871ba0511ef359b5126\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e4cefc0562d378871ba0511ef359b5126_parent_id_idx\` ON \`e4cefc0562d378871ba0511ef359b5126\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`posts\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -680,7 +694,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`posts_rels_posts_id_idx\` ON \`posts_rels\` (\`posts_id\`);`)
   await db.run(sql`CREATE INDEX \`posts_rels_categories_id_idx\` ON \`posts_rels\` (\`categories_id\`);`)
   await db.run(sql`CREATE INDEX \`posts_rels_users_id_idx\` ON \`posts_rels\` (\`users_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e4cefc0562d375871ba0511ef359b5126_v\` (
+  await db.run(sql`CREATE TABLE \`_e4cefc0562d378871ba0511ef359b5126_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text(36) PRIMARY KEY NOT NULL,
@@ -689,8 +703,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_posts_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e4cefc0562d375871ba0511ef359b5126_v_order_idx\` ON \`_e4cefc0562d375871ba0511ef359b5126_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e4cefc0562d375871ba0511ef359b5126_v_parent_id_idx\` ON \`_e4cefc0562d375871ba0511ef359b5126_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e4cefc0562d378871ba0511ef359b5126_v_order_idx\` ON \`_e4cefc0562d378871ba0511ef359b5126_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e4cefc0562d378871ba0511ef359b5126_v_parent_id_idx\` ON \`_e4cefc0562d378871ba0511ef359b5126_v\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`_posts_v\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`parent_id\` text(36),
@@ -838,7 +852,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`media_sizes_large_sizes_large_filename_idx\` ON \`media\` (\`sizes_large_filename\`);`)
   await db.run(sql`CREATE INDEX \`media_sizes_xlarge_sizes_xlarge_filename_idx\` ON \`media\` (\`sizes_xlarge_filename\`);`)
   await db.run(sql`CREATE INDEX \`media_sizes_og_sizes_og_filename_idx\` ON \`media\` (\`sizes_og_filename\`);`)
-  await db.run(sql`CREATE TABLE \`eb9ba47f0935d55bf9626dd6756872a56\` (
+  await db.run(sql`CREATE TABLE \`eb9ba47f0935d85bf9626dd6756872a56\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -849,9 +863,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`categories\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eb9ba47f0935d55bf9626dd6756872a56_order_idx\` ON \`eb9ba47f0935d55bf9626dd6756872a56\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eb9ba47f0935d55bf9626dd6756872a56_parent_id_idx\` ON \`eb9ba47f0935d55bf9626dd6756872a56\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`eb9ba47f0935d55bf9626dd6756872a56_doc_idx\` ON \`eb9ba47f0935d55bf9626dd6756872a56\` (\`doc_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb9ba47f0935d85bf9626dd6756872a56_order_idx\` ON \`eb9ba47f0935d85bf9626dd6756872a56\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eb9ba47f0935d85bf9626dd6756872a56_parent_id_idx\` ON \`eb9ba47f0935d85bf9626dd6756872a56\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb9ba47f0935d85bf9626dd6756872a56_doc_idx\` ON \`eb9ba47f0935d85bf9626dd6756872a56\` (\`doc_id\`);`)
   await db.run(sql`CREATE TABLE \`categories\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -872,7 +886,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`categories_parent_idx\` ON \`categories\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`categories_updated_at_idx\` ON \`categories\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`categories_created_at_idx\` ON \`categories\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e0f3c4597ea4d515698b6463649de69e2\` (
+  await db.run(sql`CREATE TABLE \`e0f3c4597ea4d815698b6463649de69e2\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -885,8 +899,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e0f3c4597ea4d515698b6463649de69e2_order_idx\` ON \`e0f3c4597ea4d515698b6463649de69e2\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e0f3c4597ea4d515698b6463649de69e2_parent_id_idx\` ON \`e0f3c4597ea4d515698b6463649de69e2\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e0f3c4597ea4d815698b6463649de69e2_order_idx\` ON \`e0f3c4597ea4d815698b6463649de69e2\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e0f3c4597ea4d815698b6463649de69e2_parent_id_idx\` ON \`e0f3c4597ea4d815698b6463649de69e2\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`invoices\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1288,7 +1302,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`items_ledger_ledger_credit_account_idx\` ON \`items\` (\`ledger_credit_account_id\`);`)
   await db.run(sql`CREATE INDEX \`items_updated_at_idx\` ON \`items\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`items_created_at_idx\` ON \`items\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e056c1b5d14945e2cbc1c72ae143dec2a\` (
+  await db.run(sql`CREATE TABLE \`e056c1b5d14948e2cbc1c72ae143dec2a\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1296,8 +1310,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`gl_accounts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e056c1b5d14945e2cbc1c72ae143dec2a_order_idx\` ON \`e056c1b5d14945e2cbc1c72ae143dec2a\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e056c1b5d14945e2cbc1c72ae143dec2a_parent_id_idx\` ON \`e056c1b5d14945e2cbc1c72ae143dec2a\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e056c1b5d14948e2cbc1c72ae143dec2a_order_idx\` ON \`e056c1b5d14948e2cbc1c72ae143dec2a\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e056c1b5d14948e2cbc1c72ae143dec2a_parent_id_idx\` ON \`e056c1b5d14948e2cbc1c72ae143dec2a\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`gl_accounts\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1369,7 +1383,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`gl_posting_rules_rels_parent_idx\` ON \`gl_posting_rules_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`gl_posting_rules_rels_path_idx\` ON \`gl_posting_rules_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`gl_posting_rules_rels_gl_accounts_id_idx\` ON \`gl_posting_rules_rels\` (\`gl_accounts_id\`);`)
-  await db.run(sql`CREATE TABLE \`e1bde3ecd157d5e63be74306ae19685b5\` (
+  await db.run(sql`CREATE TABLE \`e1bde3ecd157d8e63be74306ae19685b5\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1386,18 +1400,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`journal_entries\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e1bde3ecd157d5e63be74306ae19685b5_order_idx\` ON \`e1bde3ecd157d5e63be74306ae19685b5\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e1bde3ecd157d5e63be74306ae19685b5_parent_id_idx\` ON \`e1bde3ecd157d5e63be74306ae19685b5\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e1bde3ecd157d5e63be74306ae19685b5_gl_account_idx\` ON \`e1bde3ecd157d5e63be74306ae19685b5\` (\`gl_account_id\`);`)
-  await db.run(sql`CREATE TABLE \`e1bde3ecd157d5e63be74306ae19685b5_locales\` (
+  await db.run(sql`CREATE INDEX \`e1bde3ecd157d8e63be74306ae19685b5_order_idx\` ON \`e1bde3ecd157d8e63be74306ae19685b5\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e1bde3ecd157d8e63be74306ae19685b5_parent_id_idx\` ON \`e1bde3ecd157d8e63be74306ae19685b5\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e1bde3ecd157d8e63be74306ae19685b5_gl_account_idx\` ON \`e1bde3ecd157d8e63be74306ae19685b5\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE TABLE \`e1bde3ecd157d8e63be74306ae19685b5_locales\` (
   	\`description\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e1bde3ecd157d5e63be74306ae19685b5\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e1bde3ecd157d8e63be74306ae19685b5\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e1bde3ecd157d5e63be74306ae19685b5_locales_locale_parent_id_u\` ON \`e1bde3ecd157d5e63be74306ae19685b5_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e1bde3ecd157d8e63be74306ae19685b5_locales_locale_parent_id_u\` ON \`e1bde3ecd157d8e63be74306ae19685b5_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`journal_entries\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1438,7 +1452,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`journal_entries_locales_locale_parent_id_unique\` ON \`journal_entries_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ea6ce72f9bf095ac48a6c7dc3362a4b9d\` (
+  await db.run(sql`CREATE TABLE \`ea6ce72f9bf098ac48a6c7dc3362a4b9d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1452,9 +1466,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`gl_postings\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ea6ce72f9bf095ac48a6c7dc3362a4b9d_order_idx\` ON \`ea6ce72f9bf095ac48a6c7dc3362a4b9d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ea6ce72f9bf095ac48a6c7dc3362a4b9d_parent_id_idx\` ON \`ea6ce72f9bf095ac48a6c7dc3362a4b9d\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ea6ce72f9bf095ac48a6c7dc3362a4b9d_gl_account_idx\` ON \`ea6ce72f9bf095ac48a6c7dc3362a4b9d\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea6ce72f9bf098ac48a6c7dc3362a4b9d_order_idx\` ON \`ea6ce72f9bf098ac48a6c7dc3362a4b9d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ea6ce72f9bf098ac48a6c7dc3362a4b9d_parent_id_idx\` ON \`ea6ce72f9bf098ac48a6c7dc3362a4b9d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea6ce72f9bf098ac48a6c7dc3362a4b9d_gl_account_idx\` ON \`ea6ce72f9bf098ac48a6c7dc3362a4b9d\` (\`gl_account_id\`);`)
   await db.run(sql`CREATE TABLE \`gl_postings\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1534,7 +1548,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`period_locks_rels_parent_idx\` ON \`period_locks_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`period_locks_rels_path_idx\` ON \`period_locks_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`period_locks_rels_closing_entries_id_idx\` ON \`period_locks_rels\` (\`closing_entries_id\`);`)
-  await db.run(sql`CREATE TABLE \`e331d8adbec1359829f03d1a10e5ec41d\` (
+  await db.run(sql`CREATE TABLE \`e331d8adbec1389829f03d1a10e5ec41d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1553,10 +1567,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`closing_entries\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e331d8adbec1359829f03d1a10e5ec41d_order_idx\` ON \`e331d8adbec1359829f03d1a10e5ec41d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e331d8adbec1359829f03d1a10e5ec41d_parent_id_idx\` ON \`e331d8adbec1359829f03d1a10e5ec41d\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e331d8adbec1359829f03d1a10e5ec41d_journal_entry_id_idx\` ON \`e331d8adbec1359829f03d1a10e5ec41d\` (\`journal_entry_id_id\`);`)
-  await db.run(sql`CREATE INDEX \`e331d8adbec1359829f03d1a10e5ec41d_reversing_entry_id_idx\` ON \`e331d8adbec1359829f03d1a10e5ec41d\` (\`reversing_entry_id_id\`);`)
+  await db.run(sql`CREATE INDEX \`e331d8adbec1389829f03d1a10e5ec41d_order_idx\` ON \`e331d8adbec1389829f03d1a10e5ec41d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e331d8adbec1389829f03d1a10e5ec41d_parent_id_idx\` ON \`e331d8adbec1389829f03d1a10e5ec41d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e331d8adbec1389829f03d1a10e5ec41d_journal_entry_id_idx\` ON \`e331d8adbec1389829f03d1a10e5ec41d\` (\`journal_entry_id_id\`);`)
+  await db.run(sql`CREATE INDEX \`e331d8adbec1389829f03d1a10e5ec41d_reversing_entry_id_idx\` ON \`e331d8adbec1389829f03d1a10e5ec41d\` (\`reversing_entry_id_id\`);`)
   await db.run(sql`CREATE TABLE \`closing_entries\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1604,7 +1618,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`closing_entries_approved_by_idx\` ON \`closing_entries\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`closing_entries_updated_at_idx\` ON \`closing_entries\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`closing_entries_created_at_idx\` ON \`closing_entries\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e054a9f104e2253d399aaa493f7a613d3\` (
+  await db.run(sql`CREATE TABLE \`e054a9f104e2283d399aaa493f7a613d3\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1615,18 +1629,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bank_statements\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e054a9f104e2253d399aaa493f7a613d3_order_idx\` ON \`e054a9f104e2253d399aaa493f7a613d3\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e054a9f104e2253d399aaa493f7a613d3_parent_id_idx\` ON \`e054a9f104e2253d399aaa493f7a613d3\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e054a9f104e2253d399aaa493f7a613d3_locales\` (
+  await db.run(sql`CREATE INDEX \`e054a9f104e2283d399aaa493f7a613d3_order_idx\` ON \`e054a9f104e2283d399aaa493f7a613d3\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e054a9f104e2283d399aaa493f7a613d3_parent_id_idx\` ON \`e054a9f104e2283d399aaa493f7a613d3\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e054a9f104e2283d399aaa493f7a613d3_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e054a9f104e2253d399aaa493f7a613d3\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e054a9f104e2283d399aaa493f7a613d3\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e054a9f104e2253d399aaa493f7a613d3_locales_locale_parent_id_u\` ON \`e054a9f104e2253d399aaa493f7a613d3_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e03d4a88bb21955cf9204ac7e7b91dd7b\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e054a9f104e2283d399aaa493f7a613d3_locales_locale_parent_id_u\` ON \`e054a9f104e2283d399aaa493f7a613d3_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e03d4a88bb21985cf9204ac7e7b91dd7b\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1639,9 +1653,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bank_statements\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e03d4a88bb21955cf9204ac7e7b91dd7b_order_idx\` ON \`e03d4a88bb21955cf9204ac7e7b91dd7b\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e03d4a88bb21955cf9204ac7e7b91dd7b_parent_id_idx\` ON \`e03d4a88bb21955cf9204ac7e7b91dd7b\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e03d4a88bb21955cf9204ac7e7b91dd7b_journal_entry_idx\` ON \`e03d4a88bb21955cf9204ac7e7b91dd7b\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`e03d4a88bb21985cf9204ac7e7b91dd7b_order_idx\` ON \`e03d4a88bb21985cf9204ac7e7b91dd7b\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e03d4a88bb21985cf9204ac7e7b91dd7b_parent_id_idx\` ON \`e03d4a88bb21985cf9204ac7e7b91dd7b\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e03d4a88bb21985cf9204ac7e7b91dd7b_journal_entry_idx\` ON \`e03d4a88bb21985cf9204ac7e7b91dd7b\` (\`journal_entry_id\`);`)
   await db.run(sql`CREATE TABLE \`bank_statements\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1675,7 +1689,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`bank_statements_reconcilied_by_idx\` ON \`bank_statements\` (\`reconcilied_by_id\`);`)
   await db.run(sql`CREATE INDEX \`bank_statements_updated_at_idx\` ON \`bank_statements\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`bank_statements_created_at_idx\` ON \`bank_statements\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e\` (
+  await db.run(sql`CREATE TABLE \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1686,9 +1700,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bank_transactions\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e_order_idx\` ON \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e_parent_id_idx\` ON \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e_journal_entry_idx\` ON \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE INDEX \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e_order_idx\` ON \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e_parent_id_idx\` ON \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e_journal_entry_idx\` ON \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e\` (\`journal_entry_id\`);`)
   await db.run(sql`CREATE TABLE \`bank_transactions\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1774,7 +1788,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`bank_accounts_approved_by_idx\` ON \`bank_accounts\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`bank_accounts_updated_at_idx\` ON \`bank_accounts\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`bank_accounts_created_at_idx\` ON \`bank_accounts\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e79d3f9d1d5265d09bc229598ff88c147\` (
+  await db.run(sql`CREATE TABLE \`e79d3f9d1d5268d09bc229598ff88c147\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1789,20 +1803,20 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`account_reconciliations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e79d3f9d1d5265d09bc229598ff88c147_order_idx\` ON \`e79d3f9d1d5265d09bc229598ff88c147\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e79d3f9d1d5265d09bc229598ff88c147_parent_id_idx\` ON \`e79d3f9d1d5265d09bc229598ff88c147\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e79d3f9d1d5265d09bc229598ff88c147_bank_transaction_idx\` ON \`e79d3f9d1d5265d09bc229598ff88c147\` (\`bank_transaction_id\`);`)
-  await db.run(sql`CREATE INDEX \`e79d3f9d1d5265d09bc229598ff88c147_journal_entry_idx\` ON \`e79d3f9d1d5265d09bc229598ff88c147\` (\`journal_entry_id\`);`)
-  await db.run(sql`CREATE TABLE \`e79d3f9d1d5265d09bc229598ff88c147_locales\` (
+  await db.run(sql`CREATE INDEX \`e79d3f9d1d5268d09bc229598ff88c147_order_idx\` ON \`e79d3f9d1d5268d09bc229598ff88c147\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e79d3f9d1d5268d09bc229598ff88c147_parent_id_idx\` ON \`e79d3f9d1d5268d09bc229598ff88c147\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e79d3f9d1d5268d09bc229598ff88c147_bank_transaction_idx\` ON \`e79d3f9d1d5268d09bc229598ff88c147\` (\`bank_transaction_id\`);`)
+  await db.run(sql`CREATE INDEX \`e79d3f9d1d5268d09bc229598ff88c147_journal_entry_idx\` ON \`e79d3f9d1d5268d09bc229598ff88c147\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE TABLE \`e79d3f9d1d5268d09bc229598ff88c147_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e79d3f9d1d5265d09bc229598ff88c147\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e79d3f9d1d5268d09bc229598ff88c147\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e79d3f9d1d5265d09bc229598ff88c147_locales_locale_parent_id_u\` ON \`e79d3f9d1d5265d09bc229598ff88c147_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`eea91a2735c5d51fab00e29e7205a1913\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e79d3f9d1d5268d09bc229598ff88c147_locales_locale_parent_id_u\` ON \`e79d3f9d1d5268d09bc229598ff88c147_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`eea91a2735c5d81fab00e29e7205a1913\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1815,18 +1829,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`account_reconciliations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eea91a2735c5d51fab00e29e7205a1913_order_idx\` ON \`eea91a2735c5d51fab00e29e7205a1913\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eea91a2735c5d51fab00e29e7205a1913_parent_id_idx\` ON \`eea91a2735c5d51fab00e29e7205a1913\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`eea91a2735c5d51fab00e29e7205a1913_journal_entry_idx\` ON \`eea91a2735c5d51fab00e29e7205a1913\` (\`journal_entry_id\`);`)
-  await db.run(sql`CREATE TABLE \`eea91a2735c5d51fab00e29e7205a1913_locales\` (
+  await db.run(sql`CREATE INDEX \`eea91a2735c5d81fab00e29e7205a1913_order_idx\` ON \`eea91a2735c5d81fab00e29e7205a1913\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eea91a2735c5d81fab00e29e7205a1913_parent_id_idx\` ON \`eea91a2735c5d81fab00e29e7205a1913\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eea91a2735c5d81fab00e29e7205a1913_journal_entry_idx\` ON \`eea91a2735c5d81fab00e29e7205a1913\` (\`journal_entry_id\`);`)
+  await db.run(sql`CREATE TABLE \`eea91a2735c5d81fab00e29e7205a1913_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eea91a2735c5d51fab00e29e7205a1913\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eea91a2735c5d81fab00e29e7205a1913\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`eea91a2735c5d51fab00e29e7205a1913_locales_locale_parent_id_u\` ON \`eea91a2735c5d51fab00e29e7205a1913_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`eea91a2735c5d81fab00e29e7205a1913_locales_locale_parent_id_u\` ON \`eea91a2735c5d81fab00e29e7205a1913_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`account_reconciliations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1888,7 +1902,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`account_reconciliations_locales_locale_parent_id_unique\` ON \`account_reconciliations_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e90e89d5dfa075b99bb64c75493531070\` (
+  await db.run(sql`CREATE TABLE \`e90e89d5dfa078b99bb64c75493531070\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1898,17 +1912,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bank_reconciliations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e90e89d5dfa075b99bb64c75493531070_order_idx\` ON \`e90e89d5dfa075b99bb64c75493531070\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e90e89d5dfa075b99bb64c75493531070_parent_id_idx\` ON \`e90e89d5dfa075b99bb64c75493531070\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e90e89d5dfa075b99bb64c75493531070_locales\` (
+  await db.run(sql`CREATE INDEX \`e90e89d5dfa078b99bb64c75493531070_order_idx\` ON \`e90e89d5dfa078b99bb64c75493531070\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e90e89d5dfa078b99bb64c75493531070_parent_id_idx\` ON \`e90e89d5dfa078b99bb64c75493531070\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e90e89d5dfa078b99bb64c75493531070_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e90e89d5dfa075b99bb64c75493531070\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e90e89d5dfa078b99bb64c75493531070\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e90e89d5dfa075b99bb64c75493531070_locales_locale_parent_id_u\` ON \`e90e89d5dfa075b99bb64c75493531070_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e90e89d5dfa078b99bb64c75493531070_locales_locale_parent_id_u\` ON \`e90e89d5dfa078b99bb64c75493531070_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`bank_reconciliations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -1947,7 +1961,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`bank_reconciliations_approved_by_idx\` ON \`bank_reconciliations\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`bank_reconciliations_updated_at_idx\` ON \`bank_reconciliations\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`bank_reconciliations_created_at_idx\` ON \`bank_reconciliations\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e6ebcc7c621e657b59dbfd3dbfb40df80\` (
+  await db.run(sql`CREATE TABLE \`e6ebcc7c621e687b59dbfd3dbfb40df80\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1958,9 +1972,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`financial_statements\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e6ebcc7c621e657b59dbfd3dbfb40df80_order_idx\` ON \`e6ebcc7c621e657b59dbfd3dbfb40df80\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e6ebcc7c621e657b59dbfd3dbfb40df80_parent_id_idx\` ON \`e6ebcc7c621e657b59dbfd3dbfb40df80\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`eb29a4918c12859c69eaee1b51e5e94dc\` (
+  await db.run(sql`CREATE INDEX \`e6ebcc7c621e687b59dbfd3dbfb40df80_order_idx\` ON \`e6ebcc7c621e687b59dbfd3dbfb40df80\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6ebcc7c621e687b59dbfd3dbfb40df80_parent_id_idx\` ON \`e6ebcc7c621e687b59dbfd3dbfb40df80\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`eb29a4918c12889c69eaee1b51e5e94dc\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -1970,8 +1984,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`financial_statements\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eb29a4918c12859c69eaee1b51e5e94dc_order_idx\` ON \`eb29a4918c12859c69eaee1b51e5e94dc\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eb29a4918c12859c69eaee1b51e5e94dc_parent_id_idx\` ON \`eb29a4918c12859c69eaee1b51e5e94dc\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb29a4918c12889c69eaee1b51e5e94dc_order_idx\` ON \`eb29a4918c12889c69eaee1b51e5e94dc\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eb29a4918c12889c69eaee1b51e5e94dc_parent_id_idx\` ON \`eb29a4918c12889c69eaee1b51e5e94dc\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`financial_statements\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -2308,7 +2322,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`tax_jurisdictions_filing_filing_filing_frequency_idx\` ON \`tax_jurisdictions\` (\`filing_filing_frequency\`);`)
   await db.run(sql`CREATE INDEX \`tax_jurisdictions_updated_at_idx\` ON \`tax_jurisdictions\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`tax_jurisdictions_created_at_idx\` ON \`tax_jurisdictions\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`eb42b6ce7a98b5069add2b649d5ebebf1\` (
+  await db.run(sql`CREATE TABLE \`eb42b6ce7a98b8069add2b649d5ebebf1\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -2317,9 +2331,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`tax_returns\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eb42b6ce7a98b5069add2b649d5ebebf1_order_idx\` ON \`eb42b6ce7a98b5069add2b649d5ebebf1\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eb42b6ce7a98b5069add2b649d5ebebf1_parent_id_idx\` ON \`eb42b6ce7a98b5069add2b649d5ebebf1\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`eb42b6ce7a98b5069add2b649d5ebebf1_media_idx\` ON \`eb42b6ce7a98b5069add2b649d5ebebf1\` (\`media_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb42b6ce7a98b8069add2b649d5ebebf1_order_idx\` ON \`eb42b6ce7a98b8069add2b649d5ebebf1\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eb42b6ce7a98b8069add2b649d5ebebf1_parent_id_idx\` ON \`eb42b6ce7a98b8069add2b649d5ebebf1\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb42b6ce7a98b8069add2b649d5ebebf1_media_idx\` ON \`eb42b6ce7a98b8069add2b649d5ebebf1\` (\`media_id\`);`)
   await db.run(sql`CREATE TABLE \`tax_returns\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -2421,6 +2435,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`lifecycle_locked_by_id\` text(36),
   	\`lifecycle_reopened_at\` text,
   	\`lifecycle_reopened_by_id\` text(36),
+  	\`configuration_fiscal_year_start_month\` numeric,
+  	\`configuration_fiscal_year_start_day\` numeric,
+  	\`configuration_country_code\` text,
+  	\`configuration_currency_code\` text,
+  	\`configuration_locale_code\` text,
+  	\`configuration_regulatory_framework\` text,
+  	\`configuration_allows_non_gregorian\` integer DEFAULT false,
+  	\`configuration_leap_year_adjustment\` integer DEFAULT false,
+  	\`configuration_custom_period_boundaries\` text,
+  	\`governance_entity_id\` text(36),
+  	\`governance_supercedes_id\` text(36),
+  	\`governance_effective_date\` text,
   	\`notes_note\` text,
   	\`metadata\` text,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
@@ -2428,7 +2454,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`lifecycle_closed_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`lifecycle_locked_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`lifecycle_reopened_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`lifecycle_reopened_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`governance_entity_id\`) REFERENCES \`legal_entities\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`governance_supercedes_id\`) REFERENCES \`fiscal_periods\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`fiscal_periods_uuid_idx\` ON \`fiscal_periods\` (\`uuid\`);`)
@@ -2442,6 +2470,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`fiscal_periods_lifecycle_lifecycle_closed_by_idx\` ON \`fiscal_periods\` (\`lifecycle_closed_by_id\`);`)
   await db.run(sql`CREATE INDEX \`fiscal_periods_lifecycle_lifecycle_locked_by_idx\` ON \`fiscal_periods\` (\`lifecycle_locked_by_id\`);`)
   await db.run(sql`CREATE INDEX \`fiscal_periods_lifecycle_lifecycle_reopened_by_idx\` ON \`fiscal_periods\` (\`lifecycle_reopened_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`fiscal_periods_configuration_configuration_country_code_idx\` ON \`fiscal_periods\` (\`configuration_country_code\`);`)
+  await db.run(sql`CREATE INDEX \`fiscal_periods_governance_governance_entity_idx\` ON \`fiscal_periods\` (\`governance_entity_id\`);`)
+  await db.run(sql`CREATE INDEX \`fiscal_periods_governance_governance_supercedes_idx\` ON \`fiscal_periods\` (\`governance_supercedes_id\`);`)
   await db.run(sql`CREATE INDEX \`fiscal_periods_updated_at_idx\` ON \`fiscal_periods\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`fiscal_periods_created_at_idx\` ON \`fiscal_periods\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`fiscal_calendars\` (
@@ -2850,7 +2881,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`customer_segments_name_idx\` ON \`customer_segments_locales\` (\`name\`,\`_locale\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`customer_segments_locales_locale_parent_id_unique\` ON \`customer_segments_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e601f23df2ed85bbc9842a7d6b5f41838\` (
+  await db.run(sql`CREATE TABLE \`e601f23df2ed88bbc9842a7d6b5f41838\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -2862,18 +2893,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`quotes\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e601f23df2ed85bbc9842a7d6b5f41838_order_idx\` ON \`e601f23df2ed85bbc9842a7d6b5f41838\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e601f23df2ed85bbc9842a7d6b5f41838_parent_id_idx\` ON \`e601f23df2ed85bbc9842a7d6b5f41838\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e601f23df2ed85bbc9842a7d6b5f41838_item_idx\` ON \`e601f23df2ed85bbc9842a7d6b5f41838\` (\`item_id\`);`)
-  await db.run(sql`CREATE TABLE \`e601f23df2ed85bbc9842a7d6b5f41838_locales\` (
+  await db.run(sql`CREATE INDEX \`e601f23df2ed88bbc9842a7d6b5f41838_order_idx\` ON \`e601f23df2ed88bbc9842a7d6b5f41838\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e601f23df2ed88bbc9842a7d6b5f41838_parent_id_idx\` ON \`e601f23df2ed88bbc9842a7d6b5f41838\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e601f23df2ed88bbc9842a7d6b5f41838_item_idx\` ON \`e601f23df2ed88bbc9842a7d6b5f41838\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`e601f23df2ed88bbc9842a7d6b5f41838_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e601f23df2ed85bbc9842a7d6b5f41838\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e601f23df2ed88bbc9842a7d6b5f41838\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e601f23df2ed85bbc9842a7d6b5f41838_locales_locale_parent_id_u\` ON \`e601f23df2ed85bbc9842a7d6b5f41838_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e601f23df2ed88bbc9842a7d6b5f41838_locales_locale_parent_id_u\` ON \`e601f23df2ed88bbc9842a7d6b5f41838_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`quotes\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -2912,14 +2943,14 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`quotes_approved_by_idx\` ON \`quotes\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`quotes_updated_at_idx\` ON \`quotes\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`quotes_created_at_idx\` ON \`quotes\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ea1127d16d0115cc6b920e6820a2d4f19\` (
+  await db.run(sql`CREATE TABLE \`ea1127d16d0118cc6b920e6820a2d4f19\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`line_number\` numeric NOT NULL,
   	\`item_id\` text(36),
   	\`quantity\` numeric NOT NULL,
-  	\`unit_of_measure\` text,
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`unit_price\` numeric NOT NULL,
   	\`line_net\` numeric DEFAULT 0,
   	\`tax_category_id\` text(36),
@@ -2930,19 +2961,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`sales_orders\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ea1127d16d0115cc6b920e6820a2d4f19_order_idx\` ON \`ea1127d16d0115cc6b920e6820a2d4f19\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ea1127d16d0115cc6b920e6820a2d4f19_parent_id_idx\` ON \`ea1127d16d0115cc6b920e6820a2d4f19\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ea1127d16d0115cc6b920e6820a2d4f19_item_idx\` ON \`ea1127d16d0115cc6b920e6820a2d4f19\` (\`item_id\`);`)
-  await db.run(sql`CREATE INDEX \`ea1127d16d0115cc6b920e6820a2d4f19_tax_category_idx\` ON \`ea1127d16d0115cc6b920e6820a2d4f19\` (\`tax_category_id\`);`)
-  await db.run(sql`CREATE TABLE \`ea1127d16d0115cc6b920e6820a2d4f19_locales\` (
+  await db.run(sql`CREATE INDEX \`ea1127d16d0118cc6b920e6820a2d4f19_order_idx\` ON \`ea1127d16d0118cc6b920e6820a2d4f19\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ea1127d16d0118cc6b920e6820a2d4f19_parent_id_idx\` ON \`ea1127d16d0118cc6b920e6820a2d4f19\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea1127d16d0118cc6b920e6820a2d4f19_item_idx\` ON \`ea1127d16d0118cc6b920e6820a2d4f19\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea1127d16d0118cc6b920e6820a2d4f19_tax_category_idx\` ON \`ea1127d16d0118cc6b920e6820a2d4f19\` (\`tax_category_id\`);`)
+  await db.run(sql`CREATE TABLE \`ea1127d16d0118cc6b920e6820a2d4f19_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ea1127d16d0115cc6b920e6820a2d4f19\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ea1127d16d0118cc6b920e6820a2d4f19\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`ea1127d16d0115cc6b920e6820a2d4f19_locales_locale_parent_id_u\` ON \`ea1127d16d0115cc6b920e6820a2d4f19_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`ea1127d16d0118cc6b920e6820a2d4f19_locales_locale_parent_id_u\` ON \`ea1127d16d0118cc6b920e6820a2d4f19_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`sales_orders\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`tenant_id\` text(36),
@@ -3103,7 +3134,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`credit_memos_approved_by_idx\` ON \`credit_memos\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`credit_memos_updated_at_idx\` ON \`credit_memos\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`credit_memos_created_at_idx\` ON \`credit_memos\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e70806190d4045502b85ef401011f5819\` (
+  await db.run(sql`CREATE TABLE \`e70806190d4048502b85ef401011f5819\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3114,9 +3145,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`returns\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e70806190d4045502b85ef401011f5819_order_idx\` ON \`e70806190d4045502b85ef401011f5819\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e70806190d4045502b85ef401011f5819_parent_id_idx\` ON \`e70806190d4045502b85ef401011f5819\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e70806190d4045502b85ef401011f5819_item_idx\` ON \`e70806190d4045502b85ef401011f5819\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`e70806190d4048502b85ef401011f5819_order_idx\` ON \`e70806190d4048502b85ef401011f5819\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e70806190d4048502b85ef401011f5819_parent_id_idx\` ON \`e70806190d4048502b85ef401011f5819\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e70806190d4048502b85ef401011f5819_item_idx\` ON \`e70806190d4048502b85ef401011f5819\` (\`item_id\`);`)
   await db.run(sql`CREATE TABLE \`returns\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3154,7 +3185,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`returns_approved_by_idx\` ON \`returns\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`returns_updated_at_idx\` ON \`returns\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`returns_created_at_idx\` ON \`returns\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e934f7628401552b094b784c3c47361f6\` (
+  await db.run(sql`CREATE TABLE \`e934f7628401582b094b784c3c47361f6\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3164,9 +3195,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`shipments\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e934f7628401552b094b784c3c47361f6_order_idx\` ON \`e934f7628401552b094b784c3c47361f6\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e934f7628401552b094b784c3c47361f6_parent_id_idx\` ON \`e934f7628401552b094b784c3c47361f6\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e934f7628401552b094b784c3c47361f6_item_idx\` ON \`e934f7628401552b094b784c3c47361f6\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`e934f7628401582b094b784c3c47361f6_order_idx\` ON \`e934f7628401582b094b784c3c47361f6\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e934f7628401582b094b784c3c47361f6_parent_id_idx\` ON \`e934f7628401582b094b784c3c47361f6\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e934f7628401582b094b784c3c47361f6_item_idx\` ON \`e934f7628401582b094b784c3c47361f6\` (\`item_id\`);`)
   await db.run(sql`CREATE TABLE \`shipments\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3293,7 +3324,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`payment_allocations_approved_by_idx\` ON \`payment_allocations\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`payment_allocations_updated_at_idx\` ON \`payment_allocations\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`payment_allocations_created_at_idx\` ON \`payment_allocations\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`eceaf268e207952e58512501eaf1eb056\` (
+  await db.run(sql`CREATE TABLE \`eceaf268e207982e58512501eaf1eb056\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3305,17 +3336,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`dunning_cycles\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eceaf268e207952e58512501eaf1eb056_order_idx\` ON \`eceaf268e207952e58512501eaf1eb056\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eceaf268e207952e58512501eaf1eb056_parent_id_idx\` ON \`eceaf268e207952e58512501eaf1eb056\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`eceaf268e207952e58512501eaf1eb056_locales\` (
+  await db.run(sql`CREATE INDEX \`eceaf268e207982e58512501eaf1eb056_order_idx\` ON \`eceaf268e207982e58512501eaf1eb056\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eceaf268e207982e58512501eaf1eb056_parent_id_idx\` ON \`eceaf268e207982e58512501eaf1eb056\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`eceaf268e207982e58512501eaf1eb056_locales\` (
   	\`notes\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eceaf268e207952e58512501eaf1eb056\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eceaf268e207982e58512501eaf1eb056\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`eceaf268e207952e58512501eaf1eb056_locales_locale_parent_id_u\` ON \`eceaf268e207952e58512501eaf1eb056_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`eceaf268e207982e58512501eaf1eb056_locales_locale_parent_id_u\` ON \`eceaf268e207982e58512501eaf1eb056_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`dunning_cycles\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3570,7 +3601,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`vendor_scorecards_approved_by_idx\` ON \`vendor_scorecards\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`vendor_scorecards_updated_at_idx\` ON \`vendor_scorecards\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`vendor_scorecards_created_at_idx\` ON \`vendor_scorecards\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`eced028e288015042b97287d40f1c01dd\` (
+  await db.run(sql`CREATE TABLE \`eced028e288018042b97287d40f1c01dd\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3586,19 +3617,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`purchase_orders\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eced028e288015042b97287d40f1c01dd_order_idx\` ON \`eced028e288015042b97287d40f1c01dd\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eced028e288015042b97287d40f1c01dd_parent_id_idx\` ON \`eced028e288015042b97287d40f1c01dd\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`eced028e288015042b97287d40f1c01dd_item_idx\` ON \`eced028e288015042b97287d40f1c01dd\` (\`item_id\`);`)
-  await db.run(sql`CREATE INDEX \`eced028e288015042b97287d40f1c01dd_gl_account_idx\` ON \`eced028e288015042b97287d40f1c01dd\` (\`gl_account_id\`);`)
-  await db.run(sql`CREATE TABLE \`eced028e288015042b97287d40f1c01dd_locales\` (
+  await db.run(sql`CREATE INDEX \`eced028e288018042b97287d40f1c01dd_order_idx\` ON \`eced028e288018042b97287d40f1c01dd\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eced028e288018042b97287d40f1c01dd_parent_id_idx\` ON \`eced028e288018042b97287d40f1c01dd\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eced028e288018042b97287d40f1c01dd_item_idx\` ON \`eced028e288018042b97287d40f1c01dd\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`eced028e288018042b97287d40f1c01dd_gl_account_idx\` ON \`eced028e288018042b97287d40f1c01dd\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE TABLE \`eced028e288018042b97287d40f1c01dd_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eced028e288015042b97287d40f1c01dd\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eced028e288018042b97287d40f1c01dd\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`eced028e288015042b97287d40f1c01dd_locales_locale_parent_id_u\` ON \`eced028e288015042b97287d40f1c01dd_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`eced028e288018042b97287d40f1c01dd_locales_locale_parent_id_u\` ON \`eced028e288018042b97287d40f1c01dd_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`purchase_orders\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3744,7 +3775,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`purchase_requisitions_approved_by_idx\` ON \`purchase_requisitions\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`purchase_requisitions_updated_at_idx\` ON \`purchase_requisitions\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`purchase_requisitions_created_at_idx\` ON \`purchase_requisitions\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`eeacdeee24bab56b0a04db17f2c688224\` (
+  await db.run(sql`CREATE TABLE \`eeacdeee24bab86b0a04db17f2c688224\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3756,18 +3787,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`goods_receipts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eeacdeee24bab56b0a04db17f2c688224_order_idx\` ON \`eeacdeee24bab56b0a04db17f2c688224\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eeacdeee24bab56b0a04db17f2c688224_parent_id_idx\` ON \`eeacdeee24bab56b0a04db17f2c688224\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`eeacdeee24bab56b0a04db17f2c688224_item_idx\` ON \`eeacdeee24bab56b0a04db17f2c688224\` (\`item_id\`);`)
-  await db.run(sql`CREATE TABLE \`eeacdeee24bab56b0a04db17f2c688224_locales\` (
+  await db.run(sql`CREATE INDEX \`eeacdeee24bab86b0a04db17f2c688224_order_idx\` ON \`eeacdeee24bab86b0a04db17f2c688224\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eeacdeee24bab86b0a04db17f2c688224_parent_id_idx\` ON \`eeacdeee24bab86b0a04db17f2c688224\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eeacdeee24bab86b0a04db17f2c688224_item_idx\` ON \`eeacdeee24bab86b0a04db17f2c688224\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`eeacdeee24bab86b0a04db17f2c688224_locales\` (
   	\`description\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eeacdeee24bab56b0a04db17f2c688224\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`eeacdeee24bab86b0a04db17f2c688224\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`eeacdeee24bab56b0a04db17f2c688224_locales_locale_parent_id_u\` ON \`eeacdeee24bab56b0a04db17f2c688224_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`eeacdeee24bab86b0a04db17f2c688224_locales_locale_parent_id_u\` ON \`eeacdeee24bab86b0a04db17f2c688224_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`goods_receipts\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3848,7 +3879,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`inventory_movements_approved_by_idx\` ON \`inventory_movements\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`inventory_movements_updated_at_idx\` ON \`inventory_movements\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`inventory_movements_created_at_idx\` ON \`inventory_movements\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ebc746b7cb78f5bacb518c6e721f7b188\` (
+  await db.run(sql`CREATE TABLE \`ebc746b7cb78f8bacb518c6e721f7b188\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3856,17 +3887,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ebc746b7cb78f5bacb518c6e721f7b188_order_idx\` ON \`ebc746b7cb78f5bacb518c6e721f7b188\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ebc746b7cb78f5bacb518c6e721f7b188_parent_id_idx\` ON \`ebc746b7cb78f5bacb518c6e721f7b188\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ebc746b7cb78f5bacb518c6e721f7b188_locales\` (
+  await db.run(sql`CREATE INDEX \`ebc746b7cb78f8bacb518c6e721f7b188_order_idx\` ON \`ebc746b7cb78f8bacb518c6e721f7b188\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ebc746b7cb78f8bacb518c6e721f7b188_parent_id_idx\` ON \`ebc746b7cb78f8bacb518c6e721f7b188\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ebc746b7cb78f8bacb518c6e721f7b188_locales\` (
   	\`description\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ebc746b7cb78f5bacb518c6e721f7b188\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ebc746b7cb78f8bacb518c6e721f7b188\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`ebc746b7cb78f5bacb518c6e721f7b188_locales_locale_parent_id_u\` ON \`ebc746b7cb78f5bacb518c6e721f7b188_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`ebc746b7cb78f8bacb518c6e721f7b188_locales_locale_parent_id_u\` ON \`ebc746b7cb78f8bacb518c6e721f7b188_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`warehouse_locations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3909,7 +3940,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`warehouse_locations_locales_locale_parent_id_unique\` ON \`warehouse_locations_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ea97c27c5b39a56618794e02c9a375e5b\` (
+  await db.run(sql`CREATE TABLE \`ea97c27c5b39a86618794e02c9a375e5b\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3920,9 +3951,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ea97c27c5b39a56618794e02c9a375e5b_order_idx\` ON \`ea97c27c5b39a56618794e02c9a375e5b\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ea97c27c5b39a56618794e02c9a375e5b_parent_id_idx\` ON \`ea97c27c5b39a56618794e02c9a375e5b\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ea97c27c5b39a56618794e02c9a375e5b_target_cost_center_idx\` ON \`ea97c27c5b39a56618794e02c9a375e5b\` (\`target_cost_center_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea97c27c5b39a86618794e02c9a375e5b_order_idx\` ON \`ea97c27c5b39a86618794e02c9a375e5b\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ea97c27c5b39a86618794e02c9a375e5b_parent_id_idx\` ON \`ea97c27c5b39a86618794e02c9a375e5b\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea97c27c5b39a86618794e02c9a375e5b_target_cost_center_idx\` ON \`ea97c27c5b39a86618794e02c9a375e5b\` (\`target_cost_center_id\`);`)
   await db.run(sql`CREATE TABLE \`cost_centers\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -3970,7 +4001,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`cost_centers_locales_locale_parent_id_unique\` ON \`cost_centers_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e595e236aadea5384bc3bfd7c2ccb6542\` (
+  await db.run(sql`CREATE TABLE \`e595e236aadea8384bc3bfd7c2ccb6542\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -3983,18 +4014,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`budget_planning\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e595e236aadea5384bc3bfd7c2ccb6542_order_idx\` ON \`e595e236aadea5384bc3bfd7c2ccb6542\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e595e236aadea5384bc3bfd7c2ccb6542_parent_id_idx\` ON \`e595e236aadea5384bc3bfd7c2ccb6542\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e595e236aadea5384bc3bfd7c2ccb6542_gl_account_idx\` ON \`e595e236aadea5384bc3bfd7c2ccb6542\` (\`gl_account_id\`);`)
-  await db.run(sql`CREATE TABLE \`e595e236aadea5384bc3bfd7c2ccb6542_locales\` (
+  await db.run(sql`CREATE INDEX \`e595e236aadea8384bc3bfd7c2ccb6542_order_idx\` ON \`e595e236aadea8384bc3bfd7c2ccb6542\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e595e236aadea8384bc3bfd7c2ccb6542_parent_id_idx\` ON \`e595e236aadea8384bc3bfd7c2ccb6542\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e595e236aadea8384bc3bfd7c2ccb6542_gl_account_idx\` ON \`e595e236aadea8384bc3bfd7c2ccb6542\` (\`gl_account_id\`);`)
+  await db.run(sql`CREATE TABLE \`e595e236aadea8384bc3bfd7c2ccb6542_locales\` (
   	\`notes\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e595e236aadea5384bc3bfd7c2ccb6542\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e595e236aadea8384bc3bfd7c2ccb6542\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e595e236aadea5384bc3bfd7c2ccb6542_locales_locale_parent_id_u\` ON \`e595e236aadea5384bc3bfd7c2ccb6542_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e595e236aadea8384bc3bfd7c2ccb6542_locales_locale_parent_id_u\` ON \`e595e236aadea8384bc3bfd7c2ccb6542_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`budget_planning\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4114,7 +4145,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`intercompany_transactions_approved_by_idx\` ON \`intercompany_transactions\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`intercompany_transactions_updated_at_idx\` ON \`intercompany_transactions\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`intercompany_transactions_created_at_idx\` ON \`intercompany_transactions\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e739a79cfffa05b4faa0baba3495bf9be\` (
+  await db.run(sql`CREATE TABLE \`e739a79cfffa08b4faa0baba3495bf9be\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -4122,8 +4153,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`consolidation_eliminations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e739a79cfffa05b4faa0baba3495bf9be_order_idx\` ON \`e739a79cfffa05b4faa0baba3495bf9be\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e739a79cfffa05b4faa0baba3495bf9be_parent_id_idx\` ON \`e739a79cfffa05b4faa0baba3495bf9be\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e739a79cfffa08b4faa0baba3495bf9be_order_idx\` ON \`e739a79cfffa08b4faa0baba3495bf9be\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e739a79cfffa08b4faa0baba3495bf9be_parent_id_idx\` ON \`e739a79cfffa08b4faa0baba3495bf9be\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`consolidation_eliminations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4202,7 +4233,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`fx_transactions_approved_by_idx\` ON \`fx_transactions\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`fx_transactions_updated_at_idx\` ON \`fx_transactions\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`fx_transactions_created_at_idx\` ON \`fx_transactions\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e476334f99a5050e1b8620daf7fabba26\` (
+  await db.run(sql`CREATE TABLE \`e476334f99a5080e1b8620daf7fabba26\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -4213,18 +4244,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`contracts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e476334f99a5050e1b8620daf7fabba26_order_idx\` ON \`e476334f99a5050e1b8620daf7fabba26\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e476334f99a5050e1b8620daf7fabba26_parent_id_idx\` ON \`e476334f99a5050e1b8620daf7fabba26\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e476334f99a5050e1b8620daf7fabba26_modified_by_idx\` ON \`e476334f99a5050e1b8620daf7fabba26\` (\`modified_by_id\`);`)
-  await db.run(sql`CREATE TABLE \`e476334f99a5050e1b8620daf7fabba26_locales\` (
+  await db.run(sql`CREATE INDEX \`e476334f99a5080e1b8620daf7fabba26_order_idx\` ON \`e476334f99a5080e1b8620daf7fabba26\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e476334f99a5080e1b8620daf7fabba26_parent_id_idx\` ON \`e476334f99a5080e1b8620daf7fabba26\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e476334f99a5080e1b8620daf7fabba26_modified_by_idx\` ON \`e476334f99a5080e1b8620daf7fabba26\` (\`modified_by_id\`);`)
+  await db.run(sql`CREATE TABLE \`e476334f99a5080e1b8620daf7fabba26_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e476334f99a5050e1b8620daf7fabba26\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e476334f99a5080e1b8620daf7fabba26\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e476334f99a5050e1b8620daf7fabba26_locales_locale_parent_id_u\` ON \`e476334f99a5050e1b8620daf7fabba26_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e476334f99a5080e1b8620daf7fabba26_locales_locale_parent_id_u\` ON \`e476334f99a5080e1b8620daf7fabba26_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`contracts\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4389,7 +4420,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`commitments_and_contingencies_locales_locale_parent_id_uniqu\` ON \`commitments_and_contingencies_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e5496afa044df5c088b22ddbda34aa6ab\` (
+  await db.run(sql`CREATE TABLE \`e5496afa044df8c088b22ddbda34aa6ab\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -4401,17 +4432,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`leases\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e5496afa044df5c088b22ddbda34aa6ab_order_idx\` ON \`e5496afa044df5c088b22ddbda34aa6ab\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e5496afa044df5c088b22ddbda34aa6ab_parent_id_idx\` ON \`e5496afa044df5c088b22ddbda34aa6ab\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e5496afa044df5c088b22ddbda34aa6ab_locales\` (
+  await db.run(sql`CREATE INDEX \`e5496afa044df8c088b22ddbda34aa6ab_order_idx\` ON \`e5496afa044df8c088b22ddbda34aa6ab\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e5496afa044df8c088b22ddbda34aa6ab_parent_id_idx\` ON \`e5496afa044df8c088b22ddbda34aa6ab\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e5496afa044df8c088b22ddbda34aa6ab_locales\` (
   	\`notes\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e5496afa044df5c088b22ddbda34aa6ab\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e5496afa044df8c088b22ddbda34aa6ab\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e5496afa044df5c088b22ddbda34aa6ab_locales_locale_parent_id_u\` ON \`e5496afa044df5c088b22ddbda34aa6ab_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e5496afa044df8c088b22ddbda34aa6ab_locales_locale_parent_id_u\` ON \`e5496afa044df8c088b22ddbda34aa6ab_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`leases\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4592,7 +4623,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`lease_period_postings_approved_by_idx\` ON \`lease_period_postings\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`lease_period_postings_updated_at_idx\` ON \`lease_period_postings\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`lease_period_postings_created_at_idx\` ON \`lease_period_postings\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ecf42f6f7e9ab544998d1601a14e54745\` (
+  await db.run(sql`CREATE TABLE \`ecf42f6f7e9ab844998d1601a14e54745\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -4610,10 +4641,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`payment_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab544998d1601a14e54745_order_idx\` ON \`ecf42f6f7e9ab544998d1601a14e54745\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab544998d1601a14e54745_parent_id_idx\` ON \`ecf42f6f7e9ab544998d1601a14e54745\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab544998d1601a14e54745_source_bill_idx\` ON \`ecf42f6f7e9ab544998d1601a14e54745\` (\`source_bill_id\`);`)
-  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab544998d1601a14e54745_payment_record_idx\` ON \`ecf42f6f7e9ab544998d1601a14e54745\` (\`payment_record_id\`);`)
+  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab844998d1601a14e54745_order_idx\` ON \`ecf42f6f7e9ab844998d1601a14e54745\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab844998d1601a14e54745_parent_id_idx\` ON \`ecf42f6f7e9ab844998d1601a14e54745\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab844998d1601a14e54745_source_bill_idx\` ON \`ecf42f6f7e9ab844998d1601a14e54745\` (\`source_bill_id\`);`)
+  await db.run(sql`CREATE INDEX \`ecf42f6f7e9ab844998d1601a14e54745_payment_record_idx\` ON \`ecf42f6f7e9ab844998d1601a14e54745\` (\`payment_record_id\`);`)
   await db.run(sql`CREATE TABLE \`payment_runs\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4704,7 +4735,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`sepa_mandates_approved_by_idx\` ON \`sepa_mandates\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`sepa_mandates_updated_at_idx\` ON \`sepa_mandates\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`sepa_mandates_created_at_idx\` ON \`sepa_mandates\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e30a95432eb9e5c50a8468c48698c4e69\` (
+  await db.run(sql`CREATE TABLE \`e30a95432eb9e8c50a8468c48698c4e69\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -4736,11 +4767,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`payroll_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e30a95432eb9e5c50a8468c48698c4e69_order_idx\` ON \`e30a95432eb9e5c50a8468c48698c4e69\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e30a95432eb9e5c50a8468c48698c4e69_parent_id_idx\` ON \`e30a95432eb9e5c50a8468c48698c4e69\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e30a95432eb9e5c50a8468c48698c4e69_employee_idx\` ON \`e30a95432eb9e5c50a8468c48698c4e69\` (\`employee_id\`);`)
-  await db.run(sql`CREATE INDEX \`e30a95432eb9e5c50a8468c48698c4e69_cost_center_idx\` ON \`e30a95432eb9e5c50a8468c48698c4e69\` (\`cost_center_id\`);`)
-  await db.run(sql`CREATE INDEX \`e30a95432eb9e5c50a8468c48698c4e69_pay_slip_document_idx\` ON \`e30a95432eb9e5c50a8468c48698c4e69\` (\`pay_slip_document_id\`);`)
+  await db.run(sql`CREATE INDEX \`e30a95432eb9e8c50a8468c48698c4e69_order_idx\` ON \`e30a95432eb9e8c50a8468c48698c4e69\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e30a95432eb9e8c50a8468c48698c4e69_parent_id_idx\` ON \`e30a95432eb9e8c50a8468c48698c4e69\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e30a95432eb9e8c50a8468c48698c4e69_employee_idx\` ON \`e30a95432eb9e8c50a8468c48698c4e69\` (\`employee_id\`);`)
+  await db.run(sql`CREATE INDEX \`e30a95432eb9e8c50a8468c48698c4e69_cost_center_idx\` ON \`e30a95432eb9e8c50a8468c48698c4e69\` (\`cost_center_id\`);`)
+  await db.run(sql`CREATE INDEX \`e30a95432eb9e8c50a8468c48698c4e69_pay_slip_document_idx\` ON \`e30a95432eb9e8c50a8468c48698c4e69\` (\`pay_slip_document_id\`);`)
   await db.run(sql`CREATE TABLE \`payroll_runs\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4794,6 +4825,20 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`payroll_runs_approved_by_idx\` ON \`payroll_runs\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`payroll_runs_updated_at_idx\` ON \`payroll_runs\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`payroll_runs_created_at_idx\` ON \`payroll_runs\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`e6ad64a821b7689ad8f40c0ee61ef44c7\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`competency\` text NOT NULL,
+  	\`proficiency\` numeric,
+  	\`assessed_at\` text,
+  	\`evidence\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`employees\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`e6ad64a821b7689ad8f40c0ee61ef44c7_order_idx\` ON \`e6ad64a821b7689ad8f40c0ee61ef44c7\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6ad64a821b7689ad8f40c0ee61ef44c7_parent_id_idx\` ON \`e6ad64a821b7689ad8f40c0ee61ef44c7\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e6ad64a821b7689ad8f40c0ee61ef44c7_competency_idx\` ON \`e6ad64a821b7689ad8f40c0ee61ef44c7\` (\`competency\`);`)
   await db.run(sql`CREATE TABLE \`employees\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -4812,6 +4857,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`employment_type\` text DEFAULT 'full_time_indefinite' NOT NULL,
   	\`department_id\` text(36),
   	\`manager_id\` text(36),
+  	\`user_id\` text(36),
   	\`work_country\` text,
   	\`hire_date\` text NOT NULL,
   	\`probation_end_date\` text,
@@ -4846,6 +4892,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`department_id\`) REFERENCES \`cost_centers\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`manager_id\`) REFERENCES \`employees\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`user_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
@@ -4855,16 +4902,95 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE UNIQUE INDEX \`employees_employee_number_idx\` ON \`employees\` (\`employee_number\`);`)
   await db.run(sql`CREATE INDEX \`employees_department_idx\` ON \`employees\` (\`department_id\`);`)
   await db.run(sql`CREATE INDEX \`employees_manager_idx\` ON \`employees\` (\`manager_id\`);`)
+  await db.run(sql`CREATE INDEX \`employees_user_idx\` ON \`employees\` (\`user_id\`);`)
   await db.run(sql`CREATE INDEX \`employees_created_by_idx\` ON \`employees\` (\`created_by_id\`);`)
   await db.run(sql`CREATE INDEX \`employees_approved_by_idx\` ON \`employees\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`employees_updated_at_idx\` ON \`employees\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`employees_created_at_idx\` ON \`employees\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`connections\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`from_id\` text(36) NOT NULL,
+  	\`to_id\` text(36) NOT NULL,
+  	\`context\` text DEFAULT 'follow' NOT NULL,
+  	\`reciprocal\` integer DEFAULT false,
+  	\`status\` text DEFAULT 'active',
+  	\`created_by_id\` text(36),
+  	\`approved_by_id\` text(36),
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`from_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`to_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`connections_uuid_idx\` ON \`connections\` (\`uuid\`);`)
+  await db.run(sql`CREATE INDEX \`connections_from_idx\` ON \`connections\` (\`from_id\`);`)
+  await db.run(sql`CREATE INDEX \`connections_to_idx\` ON \`connections\` (\`to_id\`);`)
+  await db.run(sql`CREATE INDEX \`connections_created_by_idx\` ON \`connections\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`connections_approved_by_idx\` ON \`connections\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`connections_updated_at_idx\` ON \`connections\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`connections_created_at_idx\` ON \`connections\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`sectors\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`reference\` text NOT NULL,
+  	\`name\` text NOT NULL,
+  	\`description\` text,
+  	\`parent_id\` text(36),
+  	\`institutional_sector\` text,
+  	\`isic_code\` text,
+  	\`nace_code\` text,
+  	\`cofog_division\` text,
+  	\`icnpo_group\` text,
+  	\`sdg_goal\` numeric,
+  	\`country_code\` text,
+  	\`status\` text DEFAULT 'active',
+  	\`created_by_id\` text(36),
+  	\`approved_by_id\` text(36),
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`sectors\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`sectors_uuid_idx\` ON \`sectors\` (\`uuid\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`sectors_reference_idx\` ON \`sectors\` (\`reference\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_name_idx\` ON \`sectors\` (\`name\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_parent_idx\` ON \`sectors\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_isic_code_idx\` ON \`sectors\` (\`isic_code\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_country_code_idx\` ON \`sectors\` (\`country_code\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_created_by_idx\` ON \`sectors\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_approved_by_idx\` ON \`sectors\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_updated_at_idx\` ON \`sectors\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`sectors_created_at_idx\` ON \`sectors\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`e89951a9dc19789428d4d937cfad80caf\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`competency\` text NOT NULL,
+  	\`min_proficiency\` numeric,
+  	\`mandatory\` integer DEFAULT true,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`job_positions\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`e89951a9dc19789428d4d937cfad80caf_order_idx\` ON \`e89951a9dc19789428d4d937cfad80caf\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e89951a9dc19789428d4d937cfad80caf_parent_id_idx\` ON \`e89951a9dc19789428d4d937cfad80caf\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e89951a9dc19789428d4d937cfad80caf_competency_idx\` ON \`e89951a9dc19789428d4d937cfad80caf\` (\`competency\`);`)
   await db.run(sql`CREATE TABLE \`job_positions\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
   	\`position_code\` text NOT NULL,
   	\`position_title\` text NOT NULL,
+  	\`esco_occupation\` text,
+  	\`isco_unit_group\` text,
   	\`department\` text,
   	\`cost_center_id\` text(36),
   	\`legal_entity_id\` text(36),
@@ -4905,6 +5031,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`job_positions_tenant_idx\` ON \`job_positions\` (\`tenant_id\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`job_positions_position_code_idx\` ON \`job_positions\` (\`position_code\`);`)
   await db.run(sql`CREATE INDEX \`job_positions_position_title_idx\` ON \`job_positions\` (\`position_title\`);`)
+  await db.run(sql`CREATE INDEX \`job_positions_esco_occupation_idx\` ON \`job_positions\` (\`esco_occupation\`);`)
+  await db.run(sql`CREATE INDEX \`job_positions_isco_unit_group_idx\` ON \`job_positions\` (\`isco_unit_group\`);`)
   await db.run(sql`CREATE INDEX \`job_positions_department_idx\` ON \`job_positions\` (\`department\`);`)
   await db.run(sql`CREATE INDEX \`job_positions_cost_center_idx\` ON \`job_positions\` (\`cost_center_id\`);`)
   await db.run(sql`CREATE INDEX \`job_positions_legal_entity_idx\` ON \`job_positions\` (\`legal_entity_id\`);`)
@@ -5641,6 +5769,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`target_collection\` text NOT NULL,
   	\`trigger_event\` text DEFAULT 'beforeCreate' NOT NULL,
   	\`trigger_condition\` text,
+  	\`state_machine\` text,
   	\`is_active\` integer DEFAULT true,
   	\`effective_from\` text,
   	\`effective_to\` text,
@@ -5753,23 +5882,23 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`workflow_instances_approved_by_idx\` ON \`workflow_instances\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`workflow_instances_updated_at_idx\` ON \`workflow_instances\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`workflow_instances_created_at_idx\` ON \`workflow_instances\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ee29d67e947fd50f68f80f3b1111ed7a7\` (
+  await db.run(sql`CREATE TABLE \`ee29d67e947fd80f68f80f3b1111ed7a7\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`item_id\` text(36) NOT NULL,
   	\`quantity\` numeric NOT NULL,
-  	\`unit_of_measure\` text,
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`waste_allowance\` numeric DEFAULT 0,
   	\`is_optional\` integer DEFAULT false,
   	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bills_of_materials\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ee29d67e947fd50f68f80f3b1111ed7a7_order_idx\` ON \`ee29d67e947fd50f68f80f3b1111ed7a7\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ee29d67e947fd50f68f80f3b1111ed7a7_parent_id_idx\` ON \`ee29d67e947fd50f68f80f3b1111ed7a7\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ee29d67e947fd50f68f80f3b1111ed7a7_item_idx\` ON \`ee29d67e947fd50f68f80f3b1111ed7a7\` (\`item_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2e7264e544c05b9fada634cb598433cb\` (
+  await db.run(sql`CREATE INDEX \`ee29d67e947fd80f68f80f3b1111ed7a7_order_idx\` ON \`ee29d67e947fd80f68f80f3b1111ed7a7\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ee29d67e947fd80f68f80f3b1111ed7a7_parent_id_idx\` ON \`ee29d67e947fd80f68f80f3b1111ed7a7\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ee29d67e947fd80f68f80f3b1111ed7a7_item_idx\` ON \`ee29d67e947fd80f68f80f3b1111ed7a7\` (\`item_id\`);`)
+  await db.run(sql`CREATE TABLE \`e2e7264e544c08b9fada634cb598433cb\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -5781,18 +5910,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bills_of_materials\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2e7264e544c05b9fada634cb598433cb_order_idx\` ON \`e2e7264e544c05b9fada634cb598433cb\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2e7264e544c05b9fada634cb598433cb_parent_id_idx\` ON \`e2e7264e544c05b9fada634cb598433cb\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e2e7264e544c05b9fada634cb598433cb_work_center_idx\` ON \`e2e7264e544c05b9fada634cb598433cb\` (\`work_center_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2e7264e544c05b9fada634cb598433cb_locales\` (
+  await db.run(sql`CREATE INDEX \`e2e7264e544c08b9fada634cb598433cb_order_idx\` ON \`e2e7264e544c08b9fada634cb598433cb\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2e7264e544c08b9fada634cb598433cb_parent_id_idx\` ON \`e2e7264e544c08b9fada634cb598433cb\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2e7264e544c08b9fada634cb598433cb_work_center_idx\` ON \`e2e7264e544c08b9fada634cb598433cb\` (\`work_center_id\`);`)
+  await db.run(sql`CREATE TABLE \`e2e7264e544c08b9fada634cb598433cb_locales\` (
   	\`description\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e2e7264e544c05b9fada634cb598433cb\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e2e7264e544c08b9fada634cb598433cb\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e2e7264e544c05b9fada634cb598433cb_locales_locale_parent_id_u\` ON \`e2e7264e544c05b9fada634cb598433cb_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e2e7264e544c08b9fada634cb598433cb_locales_locale_parent_id_u\` ON \`e2e7264e544c08b9fada634cb598433cb_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`bills_of_materials\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -5825,6 +5954,77 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`bills_of_materials_approved_by_idx\` ON \`bills_of_materials\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`bills_of_materials_updated_at_idx\` ON \`bills_of_materials\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`bills_of_materials_created_at_idx\` ON \`bills_of_materials\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`batches\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`reference\` text NOT NULL,
+  	\`item_id\` text(36) NOT NULL,
+  	\`quantity\` numeric NOT NULL,
+  	\`unit_of_measure\` text DEFAULT 'C62',
+  	\`remaining_quantity\` numeric DEFAULT 0,
+  	\`status\` text DEFAULT 'quarantine',
+  	\`manufacture_date\` text,
+  	\`expiry_date\` text,
+  	\`received_date\` text,
+  	\`country_of_origin\` text,
+  	\`origin\` text DEFAULT 'produced',
+  	\`work_order_id\` text(36),
+  	\`goods_receipt_id\` text(36),
+  	\`supplier_id\` text(36),
+  	\`supplier_batch_ref\` text,
+  	\`warehouse_location_id\` text(36),
+  	\`quality_inspection_id\` text(36),
+  	\`currency\` text DEFAULT 'EUR',
+  	\`unit_cost\` numeric DEFAULT 0,
+  	\`recall_recalled\` integer DEFAULT false,
+  	\`recall_recall_reference\` text,
+  	\`recall_recall_date\` text,
+  	\`recall_recall_reason\` text,
+  	\`created_by_id\` text(36),
+  	\`approved_by_id\` text(36),
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`work_order_id\`) REFERENCES \`work_orders\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`goods_receipt_id\`) REFERENCES \`goods_receipts\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`supplier_id\`) REFERENCES \`vendors\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`warehouse_location_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`quality_inspection_id\`) REFERENCES \`quality_inspections\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`batches_uuid_idx\` ON \`batches\` (\`uuid\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`batches_reference_idx\` ON \`batches\` (\`reference\`);`)
+  await db.run(sql`CREATE INDEX \`batches_item_idx\` ON \`batches\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_manufacture_date_idx\` ON \`batches\` (\`manufacture_date\`);`)
+  await db.run(sql`CREATE INDEX \`batches_expiry_date_idx\` ON \`batches\` (\`expiry_date\`);`)
+  await db.run(sql`CREATE INDEX \`batches_country_of_origin_idx\` ON \`batches\` (\`country_of_origin\`);`)
+  await db.run(sql`CREATE INDEX \`batches_work_order_idx\` ON \`batches\` (\`work_order_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_goods_receipt_idx\` ON \`batches\` (\`goods_receipt_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_supplier_idx\` ON \`batches\` (\`supplier_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_warehouse_location_idx\` ON \`batches\` (\`warehouse_location_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_quality_inspection_idx\` ON \`batches\` (\`quality_inspection_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_created_by_idx\` ON \`batches\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_approved_by_idx\` ON \`batches\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_updated_at_idx\` ON \`batches\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`batches_created_at_idx\` ON \`batches\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`batches_rels\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`order\` integer,
+  	\`parent_id\` text(36) NOT NULL,
+  	\`path\` text NOT NULL,
+  	\`batches_id\` text(36),
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`batches\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`batches_id\`) REFERENCES \`batches\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`batches_rels_order_idx\` ON \`batches_rels\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`batches_rels_parent_idx\` ON \`batches_rels\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`batches_rels_path_idx\` ON \`batches_rels\` (\`path\`);`)
+  await db.run(sql`CREATE INDEX \`batches_rels_batches_id_idx\` ON \`batches_rels\` (\`batches_id\`);`)
   await db.run(sql`CREATE TABLE \`work_centers\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -5945,7 +6145,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`seq\` numeric DEFAULT 0 NOT NULL,
   	\`setup_time_minutes\` numeric DEFAULT 0,
   	\`run_time_seconds_per_unit\` numeric,
-  	\`unit_of_measure\` text DEFAULT 'pcs',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`status\` text DEFAULT 'draft',
   	\`created_by_id\` text(36),
   	\`approved_by_id\` text(36),
@@ -5972,7 +6172,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`routings_approved_by_idx\` ON \`routings\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`routings_updated_at_idx\` ON \`routings\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`routings_created_at_idx\` ON \`routings\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e2c337a3fd6215b33858630a71f1fe155\` (
+  await db.run(sql`CREATE TABLE \`e2c337a3fd6218b33858630a71f1fe155\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -5980,12 +6180,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`qty_ordered\` numeric DEFAULT 0,
   	\`qty_produced\` numeric DEFAULT 0,
   	\`qty_backordered\` numeric DEFAULT 0,
-  	\`unit_of_measure\` text DEFAULT 'pcs',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`operation_runs\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2c337a3fd6215b33858630a71f1fe155_order_idx\` ON \`e2c337a3fd6215b33858630a71f1fe155\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2c337a3fd6215b33858630a71f1fe155_parent_id_idx\` ON \`e2c337a3fd6215b33858630a71f1fe155\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2c337a3fd6218b33858630a71f1fe155_order_idx\` ON \`e2c337a3fd6218b33858630a71f1fe155\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2c337a3fd6218b33858630a71f1fe155_parent_id_idx\` ON \`e2c337a3fd6218b33858630a71f1fe155\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`operation_runs\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -6000,7 +6200,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`qty_produced\` numeric DEFAULT 0,
   	\`qty_scrap\` numeric DEFAULT 0,
   	\`qty_backordered\` numeric DEFAULT 0,
-  	\`unit_of_measure\` text DEFAULT 'pcs',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`started_at\` text,
   	\`completed_at\` text,
   	\`status\` text DEFAULT 'draft',
@@ -6299,7 +6499,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`properties_locales_locale_parent_id_unique\` ON \`properties_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e8210b2bdad515d079d5f7f311f47e82e\` (
+  await db.run(sql`CREATE TABLE \`e8210b2bdad518d079d5f7f311f47e82e\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -6307,8 +6507,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`spaces\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e8210b2bdad515d079d5f7f311f47e82e_order_idx\` ON \`e8210b2bdad515d079d5f7f311f47e82e\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e8210b2bdad515d079d5f7f311f47e82e_parent_id_idx\` ON \`e8210b2bdad515d079d5f7f311f47e82e\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e8210b2bdad518d079d5f7f311f47e82e_order_idx\` ON \`e8210b2bdad518d079d5f7f311f47e82e\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e8210b2bdad518d079d5f7f311f47e82e_parent_id_idx\` ON \`e8210b2bdad518d079d5f7f311f47e82e\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`spaces\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -6365,7 +6565,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`spaces_locales_locale_parent_id_unique\` ON \`spaces_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ee3241873f3c35beca1cf0af901e38fb9\` (
+  await db.run(sql`CREATE TABLE \`ee3241873f3c38beca1cf0af901e38fb9\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -6373,17 +6573,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`maintenance_requests\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ee3241873f3c35beca1cf0af901e38fb9_order_idx\` ON \`ee3241873f3c35beca1cf0af901e38fb9\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ee3241873f3c35beca1cf0af901e38fb9_parent_id_idx\` ON \`ee3241873f3c35beca1cf0af901e38fb9\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ee3241873f3c35beca1cf0af901e38fb9_locales\` (
+  await db.run(sql`CREATE INDEX \`ee3241873f3c38beca1cf0af901e38fb9_order_idx\` ON \`ee3241873f3c38beca1cf0af901e38fb9\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ee3241873f3c38beca1cf0af901e38fb9_parent_id_idx\` ON \`ee3241873f3c38beca1cf0af901e38fb9\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ee3241873f3c38beca1cf0af901e38fb9_locales\` (
   	\`caption\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ee3241873f3c35beca1cf0af901e38fb9\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ee3241873f3c38beca1cf0af901e38fb9\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`ee3241873f3c35beca1cf0af901e38fb9_locales_locale_parent_id_u\` ON \`ee3241873f3c35beca1cf0af901e38fb9_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`ee3241873f3c38beca1cf0af901e38fb9_locales_locale_parent_id_u\` ON \`ee3241873f3c38beca1cf0af901e38fb9_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`maintenance_requests\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -6455,7 +6655,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`item_sku\` text NOT NULL,
   	\`quantity\` numeric NOT NULL,
-  	\`unit_of_measure\` text DEFAULT 'EA',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`unit_cost\` numeric DEFAULT 0,
   	\`line_cost\` numeric DEFAULT 0,
   	\`inventory_movement_id\` text(36),
@@ -6572,7 +6772,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`maintenance_work_orders_locales_locale_parent_id_unique\` ON \`maintenance_work_orders_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e3c6dbd1f63735f9a85006b63c3c94908\` (
+  await db.run(sql`CREATE TABLE \`e3c6dbd1f63738f9a85006b63c3c94908\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -6585,9 +6785,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bookable_resources\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e3c6dbd1f63735f9a85006b63c3c94908_order_idx\` ON \`e3c6dbd1f63735f9a85006b63c3c94908\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e3c6dbd1f63735f9a85006b63c3c94908_parent_id_idx\` ON \`e3c6dbd1f63735f9a85006b63c3c94908\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e67933bc56ed45ddc92a51e05dd2e16ec\` (
+  await db.run(sql`CREATE INDEX \`e3c6dbd1f63738f9a85006b63c3c94908_order_idx\` ON \`e3c6dbd1f63738f9a85006b63c3c94908\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e3c6dbd1f63738f9a85006b63c3c94908_parent_id_idx\` ON \`e3c6dbd1f63738f9a85006b63c3c94908\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e67933bc56ed48ddc92a51e05dd2e16ec\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -6595,8 +6795,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`bookable_resources\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e67933bc56ed45ddc92a51e05dd2e16ec_order_idx\` ON \`e67933bc56ed45ddc92a51e05dd2e16ec\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e67933bc56ed45ddc92a51e05dd2e16ec_parent_id_idx\` ON \`e67933bc56ed45ddc92a51e05dd2e16ec\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e67933bc56ed48ddc92a51e05dd2e16ec_order_idx\` ON \`e67933bc56ed48ddc92a51e05dd2e16ec\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e67933bc56ed48ddc92a51e05dd2e16ec_parent_id_idx\` ON \`e67933bc56ed48ddc92a51e05dd2e16ec\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`bookable_resources\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -6731,7 +6931,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`bookings_locales_locale_parent_id_unique\` ON \`bookings_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e294e318ae4b35416b0854e7571907375\` (
+  await db.run(sql`CREATE TABLE \`e294e318ae4b38416b0854e7571907375\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -6741,17 +6941,17 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`carriers\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e294e318ae4b35416b0854e7571907375_order_idx\` ON \`e294e318ae4b35416b0854e7571907375\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e294e318ae4b35416b0854e7571907375_parent_id_idx\` ON \`e294e318ae4b35416b0854e7571907375\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e294e318ae4b35416b0854e7571907375_locales\` (
+  await db.run(sql`CREATE INDEX \`e294e318ae4b38416b0854e7571907375_order_idx\` ON \`e294e318ae4b38416b0854e7571907375\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e294e318ae4b38416b0854e7571907375_parent_id_idx\` ON \`e294e318ae4b38416b0854e7571907375\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e294e318ae4b38416b0854e7571907375_locales\` (
   	\`label\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e294e318ae4b35416b0854e7571907375\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e294e318ae4b38416b0854e7571907375\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e294e318ae4b35416b0854e7571907375_locales_locale_parent_id_u\` ON \`e294e318ae4b35416b0854e7571907375_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e294e318ae4b38416b0854e7571907375_locales_locale_parent_id_u\` ON \`e294e318ae4b38416b0854e7571907375_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`carriers\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -6823,7 +7023,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`tracking_events_approved_by_idx\` ON \`tracking_events\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`tracking_events_updated_at_idx\` ON \`tracking_events\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`tracking_events_created_at_idx\` ON \`tracking_events\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ebcc4e7fa5c5b570285d8619d67acbe3e\` (
+  await db.run(sql`CREATE TABLE \`ebcc4e7fa5c5b870285d8619d67acbe3e\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -6831,7 +7031,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`description\` text NOT NULL,
   	\`hs_code\` text NOT NULL,
   	\`quantity\` numeric NOT NULL,
-  	\`unit_of_measure\` text,
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`net_weight\` numeric,
   	\`gross_weight\` numeric,
   	\`declared_value\` numeric NOT NULL,
@@ -6841,9 +7041,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`customs_declarations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ebcc4e7fa5c5b570285d8619d67acbe3e_order_idx\` ON \`ebcc4e7fa5c5b570285d8619d67acbe3e\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ebcc4e7fa5c5b570285d8619d67acbe3e_parent_id_idx\` ON \`ebcc4e7fa5c5b570285d8619d67acbe3e\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ebcc4e7fa5c5b570285d8619d67acbe3e_item_idx\` ON \`ebcc4e7fa5c5b570285d8619d67acbe3e\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`ebcc4e7fa5c5b870285d8619d67acbe3e_order_idx\` ON \`ebcc4e7fa5c5b870285d8619d67acbe3e\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ebcc4e7fa5c5b870285d8619d67acbe3e_parent_id_idx\` ON \`ebcc4e7fa5c5b870285d8619d67acbe3e\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ebcc4e7fa5c5b870285d8619d67acbe3e_item_idx\` ON \`ebcc4e7fa5c5b870285d8619d67acbe3e\` (\`item_id\`);`)
   await db.run(sql`CREATE TABLE \`customs_declarations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -6942,7 +7142,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`consignee_warehouse_location_id\` text(36),
   	\`item_sku\` text NOT NULL,
   	\`item_description\` text,
-  	\`unit_of_measure\` text DEFAULT 'EA',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`quantity_on_hand\` numeric DEFAULT 0 NOT NULL,
   	\`unit_cost\` numeric DEFAULT 0,
   	\`value_on_hand\` numeric DEFAULT 0,
@@ -6990,7 +7190,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`reported_date\` text,
   	\`end_customer_ref\` text,
   	\`quantity_sold\` numeric NOT NULL,
-  	\`unit_of_measure\` text DEFAULT 'EA',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`unit_price\` numeric NOT NULL,
   	\`gross_amount\` numeric NOT NULL,
   	\`commission_rate_percent\` numeric DEFAULT 0,
@@ -7028,7 +7228,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`consignment_sales_approved_by_idx\` ON \`consignment_sales\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`consignment_sales_updated_at_idx\` ON \`consignment_sales\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`consignment_sales_created_at_idx\` ON \`consignment_sales\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e074d1a41a9e252648fbfbec1c6fb43ea\` (
+  await db.run(sql`CREATE TABLE \`e074d1a41a9e282648fbfbec1c6fb43ea\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -7038,8 +7238,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_events\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e074d1a41a9e252648fbfbec1c6fb43ea_order_idx\` ON \`e074d1a41a9e252648fbfbec1c6fb43ea\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e074d1a41a9e252648fbfbec1c6fb43ea_parent_id_idx\` ON \`e074d1a41a9e252648fbfbec1c6fb43ea\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e074d1a41a9e282648fbfbec1c6fb43ea_order_idx\` ON \`e074d1a41a9e282648fbfbec1c6fb43ea\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e074d1a41a9e282648fbfbec1c6fb43ea_parent_id_idx\` ON \`e074d1a41a9e282648fbfbec1c6fb43ea\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_events\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -7155,13 +7355,55 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`evidence_attestations_approved_by_idx\` ON \`evidence_attestations\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`evidence_attestations_updated_at_idx\` ON \`evidence_attestations\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`evidence_attestations_created_at_idx\` ON \`evidence_attestations\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`shares\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`tenant_id\` text(36),
+  	\`share_uuid\` text NOT NULL,
+  	\`grantee_uuid\` text NOT NULL,
+  	\`target_uuid\` text NOT NULL,
+  	\`access_role\` text NOT NULL,
+  	\`granted_at\` text,
+  	\`chain_leaf_uuid\` text,
+  	\`sealed\` integer DEFAULT false,
+  	\`revoked\` integer DEFAULT false,
+  	\`revoked_at\` text,
+  	\`revoke_chain_leaf_uuid\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`shares_uuid_idx\` ON \`shares\` (\`uuid\`);`)
+  await db.run(sql`CREATE INDEX \`shares_tenant_idx\` ON \`shares\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`shares_share_uuid_idx\` ON \`shares\` (\`share_uuid\`);`)
+  await db.run(sql`CREATE INDEX \`shares_grantee_uuid_idx\` ON \`shares\` (\`grantee_uuid\`);`)
+  await db.run(sql`CREATE INDEX \`shares_target_uuid_idx\` ON \`shares\` (\`target_uuid\`);`)
+  await db.run(sql`CREATE INDEX \`shares_chain_leaf_uuid_idx\` ON \`shares\` (\`chain_leaf_uuid\`);`)
+  await db.run(sql`CREATE INDEX \`shares_revoked_idx\` ON \`shares\` (\`revoked\`);`)
+  await db.run(sql`CREATE INDEX \`shares_updated_at_idx\` ON \`shares\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`shares_created_at_idx\` ON \`shares\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`ef34fbcd44ea281498af77442ff84199a\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`jurisdiction\` text NOT NULL,
+  	\`applicable_in_jurisdiction\` integer DEFAULT true,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`entity_types\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`ef34fbcd44ea281498af77442ff84199a_order_idx\` ON \`ef34fbcd44ea281498af77442ff84199a\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ef34fbcd44ea281498af77442ff84199a_parent_id_idx\` ON \`ef34fbcd44ea281498af77442ff84199a\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`entity_types\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`name\` text NOT NULL,
   	\`code\` text NOT NULL,
+  	\`label\` text NOT NULL,
+  	\`category\` text NOT NULL,
   	\`description\` text,
+  	\`characteristics\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null
@@ -7169,7 +7411,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`entity_types_uuid_idx\` ON \`entity_types\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`entity_types_tenant_idx\` ON \`entity_types\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE UNIQUE INDEX \`entity_types_name_idx\` ON \`entity_types\` (\`name\`);`)
   await db.run(sql`CREATE UNIQUE INDEX \`entity_types_code_idx\` ON \`entity_types\` (\`code\`);`)
   await db.run(sql`CREATE INDEX \`entity_types_updated_at_idx\` ON \`entity_types\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`entity_types_created_at_idx\` ON \`entity_types\` (\`created_at\`);`)
@@ -7187,71 +7428,108 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`entity_types_rels_parent_idx\` ON \`entity_types_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`entity_types_rels_path_idx\` ON \`entity_types_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`entity_types_rels_compliance_frameworks_id_idx\` ON \`entity_types_rels\` (\`compliance_frameworks_id\`);`)
-  await db.run(sql`CREATE TABLE \`e6eb48eceb528589a8621e1cf37bbe038\` (
+  await db.run(sql`CREATE TABLE \`e6b390099a5c88994b32617396728b9d1\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
-  	\`description\` text,
-  	\`due_date\` text,
+  	\`language_code\` text NOT NULL,
+  	\`language_name\` text,
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e6eb48eceb528589a8621e1cf37bbe038_order_idx\` ON \`e6eb48eceb528589a8621e1cf37bbe038\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e6eb48eceb528589a8621e1cf37bbe038_parent_id_idx\` ON \`e6eb48eceb528589a8621e1cf37bbe038\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e6b390099a5c88994b32617396728b9d1_order_idx\` ON \`e6b390099a5c88994b32617396728b9d1\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6b390099a5c88994b32617396728b9d1_parent_id_idx\` ON \`e6b390099a5c88994b32617396728b9d1\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e6eb48eceb528889a8621e1cf37bbe038\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`filing_type\` text NOT NULL,
+  	\`deadline\` text NOT NULL,
+  	\`frequency\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`e6eb48eceb528889a8621e1cf37bbe038_order_idx\` ON \`e6eb48eceb528889a8621e1cf37bbe038\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6eb48eceb528889a8621e1cf37bbe038_parent_id_idx\` ON \`e6eb48eceb528889a8621e1cf37bbe038\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`taxing_jurisdictions\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
+  	\`code\` text NOT NULL,
   	\`name\` text NOT NULL,
-  	\`jurisdiction_type\` text NOT NULL,
-  	\`iso_country_code\` text,
-  	\`iso_region_code\` text,
-  	\`currency\` text,
-  	\`parent_id\` text(36),
+  	\`type\` text NOT NULL,
+  	\`parent_jurisdiction_id\` text(36),
+  	\`iso2_code\` text,
+  	\`iso3_code\` text,
+  	\`primary_currency\` text,
+  	\`regulatory_characteristics\` text,
+  	\`banking_requirements\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`parent_jurisdiction_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`taxing_jurisdictions_uuid_idx\` ON \`taxing_jurisdictions\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`taxing_jurisdictions_tenant_idx\` ON \`taxing_jurisdictions\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE INDEX \`taxing_jurisdictions_parent_idx\` ON \`taxing_jurisdictions\` (\`parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`taxing_jurisdictions_code_idx\` ON \`taxing_jurisdictions\` (\`code\`);`)
+  await db.run(sql`CREATE INDEX \`taxing_jurisdictions_parent_jurisdiction_idx\` ON \`taxing_jurisdictions\` (\`parent_jurisdiction_id\`);`)
   await db.run(sql`CREATE INDEX \`taxing_jurisdictions_updated_at_idx\` ON \`taxing_jurisdictions\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`taxing_jurisdictions_created_at_idx\` ON \`taxing_jurisdictions\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`taxing_jurisdictions_rels\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`order\` integer,
+  	\`parent_id\` text(36) NOT NULL,
+  	\`path\` text NOT NULL,
+  	\`compliance_frameworks_id\` text(36),
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`compliance_frameworks_id\`) REFERENCES \`compliance_frameworks\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`taxing_jurisdictions_rels_order_idx\` ON \`taxing_jurisdictions_rels\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`taxing_jurisdictions_rels_parent_idx\` ON \`taxing_jurisdictions_rels\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`taxing_jurisdictions_rels_path_idx\` ON \`taxing_jurisdictions_rels\` (\`path\`);`)
+  await db.run(sql`CREATE INDEX \`taxing_jurisdictions_rels_compliance_frameworks_id_idx\` ON \`taxing_jurisdictions_rels\` (\`compliance_frameworks_id\`);`)
   await db.run(sql`CREATE TABLE \`entity_legal_structures\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`name\` text NOT NULL,
-  	\`legal_code\` text NOT NULL,
-  	\`entity_type_id\` text(36) NOT NULL,
   	\`jurisdiction_id\` text(36) NOT NULL,
+  	\`entity_type_id\` text(36) NOT NULL,
+  	\`local_name\` text NOT NULL,
+  	\`abbreviation\` text,
   	\`description\` text,
+  	\`regulatory_characteristics\` text,
+  	\`governance_structure\` text,
   	\`tax_treatment\` text,
+  	\`audit_requirement\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`entity_type_id\`) REFERENCES \`entity_types\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`jurisdiction_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`jurisdiction_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`entity_type_id\`) REFERENCES \`entity_types\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`entity_legal_structures_uuid_idx\` ON \`entity_legal_structures\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`entity_legal_structures_tenant_idx\` ON \`entity_legal_structures\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE INDEX \`entity_legal_structures_entity_type_idx\` ON \`entity_legal_structures\` (\`entity_type_id\`);`)
   await db.run(sql`CREATE INDEX \`entity_legal_structures_jurisdiction_idx\` ON \`entity_legal_structures\` (\`jurisdiction_id\`);`)
+  await db.run(sql`CREATE INDEX \`entity_legal_structures_entity_type_idx\` ON \`entity_legal_structures\` (\`entity_type_id\`);`)
   await db.run(sql`CREATE INDEX \`entity_legal_structures_updated_at_idx\` ON \`entity_legal_structures\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`entity_legal_structures_created_at_idx\` ON \`entity_legal_structures\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`compliance_frameworks\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
+  	\`code\` text NOT NULL,
   	\`name\` text NOT NULL,
-  	\`framework_type\` text NOT NULL,
-  	\`issuing_body\` text,
-  	\`version\` text,
-  	\`effective_date\` text NOT NULL,
+  	\`category\` text NOT NULL,
   	\`description\` text,
+  	\`issuing_body\` text,
+  	\`official_resource_url\` text,
+  	\`effective_date\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null
@@ -7259,32 +7537,21 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`compliance_frameworks_uuid_idx\` ON \`compliance_frameworks\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`compliance_frameworks_tenant_idx\` ON \`compliance_frameworks\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE UNIQUE INDEX \`compliance_frameworks_name_idx\` ON \`compliance_frameworks\` (\`name\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`compliance_frameworks_code_idx\` ON \`compliance_frameworks\` (\`code\`);`)
   await db.run(sql`CREATE INDEX \`compliance_frameworks_updated_at_idx\` ON \`compliance_frameworks\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`compliance_frameworks_created_at_idx\` ON \`compliance_frameworks\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`compliance_frameworks_rels\` (
-  	\`id\` integer PRIMARY KEY NOT NULL,
-  	\`order\` integer,
-  	\`parent_id\` text(36) NOT NULL,
-  	\`path\` text NOT NULL,
-  	\`taxing_jurisdictions_id\` text(36),
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`compliance_frameworks\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`taxing_jurisdictions_id\`) REFERENCES \`taxing_jurisdictions\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`compliance_frameworks_rels_order_idx\` ON \`compliance_frameworks_rels\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_frameworks_rels_parent_idx\` ON \`compliance_frameworks_rels\` (\`parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_frameworks_rels_path_idx\` ON \`compliance_frameworks_rels\` (\`path\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_frameworks_rels_taxing_jurisdictions_id_idx\` ON \`compliance_frameworks_rels\` (\`taxing_jurisdictions_id\`);`)
   await db.run(sql`CREATE TABLE \`compliance_requirements\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`requirement_name\` text NOT NULL,
+  	\`code\` text NOT NULL,
+  	\`title\` text NOT NULL,
+  	\`description\` text NOT NULL,
   	\`framework_id\` text(36) NOT NULL,
-  	\`requirement_type\` text NOT NULL,
-  	\`description\` text,
-  	\`testable_statement\` text,
+  	\`section\` text,
+  	\`severity\` text,
+  	\`resource_url\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
@@ -7293,56 +7560,59 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`compliance_requirements_uuid_idx\` ON \`compliance_requirements\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`compliance_requirements_tenant_idx\` ON \`compliance_requirements\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`compliance_requirements_code_idx\` ON \`compliance_requirements\` (\`code\`);`)
   await db.run(sql`CREATE INDEX \`compliance_requirements_framework_idx\` ON \`compliance_requirements\` (\`framework_id\`);`)
   await db.run(sql`CREATE INDEX \`compliance_requirements_updated_at_idx\` ON \`compliance_requirements\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`compliance_requirements_created_at_idx\` ON \`compliance_requirements\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`compliance_requirements_rels\` (
-  	\`id\` integer PRIMARY KEY NOT NULL,
-  	\`order\` integer,
-  	\`parent_id\` text(36) NOT NULL,
-  	\`path\` text NOT NULL,
-  	\`entity_types_id\` text(36),
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`compliance_requirements\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`entity_types_id\`) REFERENCES \`entity_types\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`compliance_requirements_rels_order_idx\` ON \`compliance_requirements_rels\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_requirements_rels_parent_idx\` ON \`compliance_requirements_rels\` (\`parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_requirements_rels_path_idx\` ON \`compliance_requirements_rels\` (\`path\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_requirements_rels_entity_types_id_idx\` ON \`compliance_requirements_rels\` (\`entity_types_id\`);`)
   await db.run(sql`CREATE TABLE \`internal_controls\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`control_name\` text NOT NULL,
+  	\`title\` text NOT NULL,
+  	\`description\` text NOT NULL,
   	\`control_type\` text NOT NULL,
   	\`control_category\` text NOT NULL,
   	\`coso_component\` text,
-  	\`description\` text,
-  	\`owner\` text,
   	\`frequency\` text,
+  	\`owner_id\` text(36),
+  	\`risk_mitigated\` text,
+  	\`is_manual_control\` integer,
+  	\`last_review_date\` text,
+  	\`next_review_date\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
-  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`owner_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`internal_controls_uuid_idx\` ON \`internal_controls\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`internal_controls_tenant_idx\` ON \`internal_controls\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`internal_controls_title_idx\` ON \`internal_controls\` (\`title\`);`)
+  await db.run(sql`CREATE INDEX \`internal_controls_owner_idx\` ON \`internal_controls\` (\`owner_id\`);`)
   await db.run(sql`CREATE INDEX \`internal_controls_updated_at_idx\` ON \`internal_controls\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`internal_controls_created_at_idx\` ON \`internal_controls\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`control_tests\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
+  	\`title\` text NOT NULL,
+  	\`test_design\` text NOT NULL,
   	\`control_id\` text(36) NOT NULL,
-  	\`test_name\` text NOT NULL,
-  	\`test_design\` text,
   	\`sampling_methodology\` text,
-  	\`sample_size\` numeric,
-  	\`test_status\` text DEFAULT 'not-started',
+  	\`planned_sample_size\` numeric,
+  	\`actual_sample_size\` numeric,
+  	\`tolerance_level\` numeric,
+  	\`assertion\` text,
+  	\`test_status\` text NOT NULL,
+  	\`tested_date\` text,
   	\`result\` text,
   	\`deviation_count\` numeric,
   	\`deviation_rate\` numeric,
+  	\`deviations_summary\` text,
+  	\`conclusion_on_effectiveness\` text,
+  	\`review_date\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
@@ -7351,6 +7621,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`control_tests_uuid_idx\` ON \`control_tests\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`control_tests_tenant_idx\` ON \`control_tests\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`control_tests_title_idx\` ON \`control_tests\` (\`title\`);`)
   await db.run(sql`CREATE INDEX \`control_tests_control_idx\` ON \`control_tests\` (\`control_id\`);`)
   await db.run(sql`CREATE INDEX \`control_tests_updated_at_idx\` ON \`control_tests\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`control_tests_created_at_idx\` ON \`control_tests\` (\`created_at\`);`)
@@ -7358,132 +7629,179 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
+  	\`sample_id\` text NOT NULL,
   	\`control_test_id\` text(36) NOT NULL,
-  	\`item_identifier\` text NOT NULL,
+  	\`sampling_sequence\` numeric,
   	\`sample_item_type\` text NOT NULL,
+  	\`sample_item_id\` text NOT NULL,
+  	\`sample_item_date\` text,
+  	\`sample_item_amount\` numeric,
   	\`test_result\` text,
+  	\`exception_description\` text,
   	\`exception_category\` text,
+  	\`tested_by_id\` text(36),
+  	\`tested_date\` text,
   	\`notes\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`control_test_id\`) REFERENCES \`control_tests\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`control_test_id\`) REFERENCES \`control_tests\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`tested_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`audit_samples_uuid_idx\` ON \`audit_samples\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`audit_samples_tenant_idx\` ON \`audit_samples\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`audit_samples_sample_id_idx\` ON \`audit_samples\` (\`sample_id\`);`)
   await db.run(sql`CREATE INDEX \`audit_samples_control_test_idx\` ON \`audit_samples\` (\`control_test_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_samples_tested_by_idx\` ON \`audit_samples\` (\`tested_by_id\`);`)
   await db.run(sql`CREATE INDEX \`audit_samples_updated_at_idx\` ON \`audit_samples\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`audit_samples_created_at_idx\` ON \`audit_samples\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`audit_samples_rels\` (
-  	\`id\` integer PRIMARY KEY NOT NULL,
-  	\`order\` integer,
-  	\`parent_id\` text(36) NOT NULL,
-  	\`path\` text NOT NULL,
-  	\`audit_evidence_id\` text(36),
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`audit_samples\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`audit_evidence_id\`) REFERENCES \`audit_evidence\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`audit_samples_rels_order_idx\` ON \`audit_samples_rels\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`audit_samples_rels_parent_idx\` ON \`audit_samples_rels\` (\`parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_samples_rels_path_idx\` ON \`audit_samples_rels\` (\`path\`);`)
-  await db.run(sql`CREATE INDEX \`audit_samples_rels_audit_evidence_id_idx\` ON \`audit_samples_rels\` (\`audit_evidence_id\`);`)
   await db.run(sql`CREATE TABLE \`compliance_gaps\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
+  	\`title\` text NOT NULL,
+  	\`description\` text NOT NULL,
   	\`requirement_id\` text(36) NOT NULL,
-  	\`gap_title\` text NOT NULL,
   	\`gap_type\` text NOT NULL,
-  	\`description\` text,
-  	\`status\` text DEFAULT 'identified',
-  	\`remediation_plan_id\` text(36),
+  	\`severity\` text NOT NULL,
+  	\`status\` text DEFAULT 'identified' NOT NULL,
+  	\`current_state\` text,
+  	\`required_state\` text,
+  	\`root_cause\` text,
+  	\`identified_date\` text NOT NULL,
+  	\`identified_by_id\` text(36) NOT NULL,
+  	\`target_closure_date\` text,
+  	\`actual_closure_date\` text,
+  	\`risk_exposure\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
   	FOREIGN KEY (\`requirement_id\`) REFERENCES \`compliance_requirements\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`remediation_plan_id\`) REFERENCES \`remediation_plans\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`identified_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`compliance_gaps_uuid_idx\` ON \`compliance_gaps\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`compliance_gaps_tenant_idx\` ON \`compliance_gaps\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`compliance_gaps_title_idx\` ON \`compliance_gaps\` (\`title\`);`)
   await db.run(sql`CREATE INDEX \`compliance_gaps_requirement_idx\` ON \`compliance_gaps\` (\`requirement_id\`);`)
-  await db.run(sql`CREATE INDEX \`compliance_gaps_remediation_plan_idx\` ON \`compliance_gaps\` (\`remediation_plan_id\`);`)
+  await db.run(sql`CREATE INDEX \`compliance_gaps_identified_by_idx\` ON \`compliance_gaps\` (\`identified_by_id\`);`)
   await db.run(sql`CREATE INDEX \`compliance_gaps_updated_at_idx\` ON \`compliance_gaps\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`compliance_gaps_created_at_idx\` ON \`compliance_gaps\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e77fca21a191f5082bc2a98b0bfd457e8\` (
+  await db.run(sql`CREATE TABLE \`e77fca21a191f8082bc2a98b0bfd457e8\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
-  	\`actor\` text,
-  	\`action\` text,
+  	\`actor\` text NOT NULL,
+  	\`action\` text NOT NULL,
   	\`action_date\` text,
   	\`notes\` text,
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_evidence\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e77fca21a191f5082bc2a98b0bfd457e8_order_idx\` ON \`e77fca21a191f5082bc2a98b0bfd457e8\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e77fca21a191f5082bc2a98b0bfd457e8_parent_id_idx\` ON \`e77fca21a191f5082bc2a98b0bfd457e8\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e77fca21a191f8082bc2a98b0bfd457e8_order_idx\` ON \`e77fca21a191f8082bc2a98b0bfd457e8\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e77fca21a191f8082bc2a98b0bfd457e8_parent_id_idx\` ON \`e77fca21a191f8082bc2a98b0bfd457e8\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e6c77d0f4b1888ce9bfd5c79a01b9bf36\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`tag\` text NOT NULL,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_evidence\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`e6c77d0f4b1888ce9bfd5c79a01b9bf36_order_idx\` ON \`e6c77d0f4b1888ce9bfd5c79a01b9bf36\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6c77d0f4b1888ce9bfd5c79a01b9bf36_parent_id_idx\` ON \`e6c77d0f4b1888ce9bfd5c79a01b9bf36\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_evidence\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`evidence_title\` text NOT NULL,
+  	\`title\` text NOT NULL,
+  	\`description\` text,
   	\`document_type\` text NOT NULL,
-  	\`document_file_id\` text(36),
+  	\`document_file_id\` text(36) NOT NULL,
+  	\`source_system\` text,
+  	\`document_date\` text,
+  	\`uploaded_date\` text NOT NULL,
+  	\`uploaded_by_id\` text(36) NOT NULL,
+  	\`related_control_id\` text(36),
+  	\`related_control_test_id\` text(36),
+  	\`related_audit_sample_id\` text(36),
+  	\`related_finding_id\` text(36),
   	\`confidentiality\` text DEFAULT 'restricted',
   	\`retention_period\` text DEFAULT '7-years',
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`document_file_id\`) REFERENCES \`media\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`document_file_id\`) REFERENCES \`media\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`uploaded_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`related_control_id\`) REFERENCES \`internal_controls\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`related_control_test_id\`) REFERENCES \`control_tests\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`related_audit_sample_id\`) REFERENCES \`audit_samples\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`related_finding_id\`) REFERENCES \`audit_findings\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`audit_evidence_uuid_idx\` ON \`audit_evidence\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`audit_evidence_tenant_idx\` ON \`audit_evidence\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_evidence_title_idx\` ON \`audit_evidence\` (\`title\`);`)
   await db.run(sql`CREATE INDEX \`audit_evidence_document_file_idx\` ON \`audit_evidence\` (\`document_file_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_evidence_uploaded_by_idx\` ON \`audit_evidence\` (\`uploaded_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_evidence_related_control_idx\` ON \`audit_evidence\` (\`related_control_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_evidence_related_control_test_idx\` ON \`audit_evidence\` (\`related_control_test_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_evidence_related_audit_sample_idx\` ON \`audit_evidence\` (\`related_audit_sample_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_evidence_related_finding_idx\` ON \`audit_evidence\` (\`related_finding_id\`);`)
   await db.run(sql`CREATE INDEX \`audit_evidence_updated_at_idx\` ON \`audit_evidence\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`audit_evidence_created_at_idx\` ON \`audit_evidence\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`ebdf6c5cf64618eb3a6cbab343da6bac0\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`recipient\` text NOT NULL,
+  	\`communication_date\` text,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_findings\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`ebdf6c5cf64618eb3a6cbab343da6bac0_order_idx\` ON \`ebdf6c5cf64618eb3a6cbab343da6bac0\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ebdf6c5cf64618eb3a6cbab343da6bac0_parent_id_idx\` ON \`ebdf6c5cf64618eb3a6cbab343da6bac0\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_findings\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`finding_title\` text NOT NULL,
+  	\`title\` text NOT NULL,
+  	\`description\` text NOT NULL,
   	\`finding_type\` text NOT NULL,
   	\`severity\` text NOT NULL,
-  	\`description\` text,
-  	\`root_cause\` text,
-  	\`potential_impact\` text,
+  	\`related_control_id\` text(36),
+  	\`related_control_test_id\` text(36),
   	\`frequency_of_occurrence\` text,
+  	\`potential_impact\` text,
+  	\`identified_date\` text NOT NULL,
+  	\`identified_by_id\` text(36) NOT NULL,
+  	\`root_cause\` text,
   	\`risk_category\` text,
-  	\`status\` text DEFAULT 'open',
-  	\`remediation_plan_id\` text(36),
+  	\`status\` text DEFAULT 'open' NOT NULL,
+  	\`management_response\` text,
+  	\`management_response_date\` text,
+  	\`prior_year_reference\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`remediation_plan_id\`) REFERENCES \`remediation_plans\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`related_control_id\`) REFERENCES \`internal_controls\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`related_control_test_id\`) REFERENCES \`control_tests\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`identified_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`audit_findings_uuid_idx\` ON \`audit_findings\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`audit_findings_tenant_idx\` ON \`audit_findings\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_findings_remediation_plan_idx\` ON \`audit_findings\` (\`remediation_plan_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_title_idx\` ON \`audit_findings\` (\`title\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_related_control_idx\` ON \`audit_findings\` (\`related_control_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_related_control_test_idx\` ON \`audit_findings\` (\`related_control_test_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_findings_identified_by_idx\` ON \`audit_findings\` (\`identified_by_id\`);`)
   await db.run(sql`CREATE INDEX \`audit_findings_updated_at_idx\` ON \`audit_findings\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`audit_findings_created_at_idx\` ON \`audit_findings\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`audit_findings_rels\` (
-  	\`id\` integer PRIMARY KEY NOT NULL,
-  	\`order\` integer,
-  	\`parent_id\` text(36) NOT NULL,
-  	\`path\` text NOT NULL,
-  	\`audit_evidence_id\` text(36),
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`audit_findings\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`audit_evidence_id\`) REFERENCES \`audit_evidence\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`audit_findings_rels_order_idx\` ON \`audit_findings_rels\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`audit_findings_rels_parent_idx\` ON \`audit_findings_rels\` (\`parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_findings_rels_path_idx\` ON \`audit_findings_rels\` (\`path\`);`)
-  await db.run(sql`CREATE INDEX \`audit_findings_rels_audit_evidence_id_idx\` ON \`audit_findings_rels\` (\`audit_evidence_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_trail_events\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -7491,64 +7809,79 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`operation\` text NOT NULL,
   	\`collection_name\` text NOT NULL,
   	\`document_id\` text NOT NULL,
-  	\`changed_by\` text NOT NULL,
+  	\`changed_by_id\` text(36) NOT NULL,
   	\`changed_at\` text NOT NULL,
   	\`changes_summary\` text,
   	\`change_details\` text,
-  	\`approved_by\` text,
+  	\`approved_by_id\` text(36),
   	\`approval_status\` text,
   	\`change_reason\` text,
   	\`system_details\` text,
-  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
-  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
-  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	\`is_delete\` integer DEFAULT false,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`changed_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`audit_trail_events_uuid_idx\` ON \`audit_trail_events\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`audit_trail_events_tenant_idx\` ON \`audit_trail_events\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_updated_at_idx\` ON \`audit_trail_events\` (\`updated_at\`);`)
-  await db.run(sql`CREATE INDEX \`audit_trail_events_created_at_idx\` ON \`audit_trail_events\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`eed4d3e0dc8165b24a00ca2f6a516bc58\` (
+  await db.run(sql`CREATE INDEX \`audit_trail_events_operation_idx\` ON \`audit_trail_events\` (\`operation\`);`)
+  await db.run(sql`CREATE INDEX \`audit_trail_events_collection_name_idx\` ON \`audit_trail_events\` (\`collection_name\`);`)
+  await db.run(sql`CREATE INDEX \`audit_trail_events_document_id_idx\` ON \`audit_trail_events\` (\`document_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_trail_events_changed_by_idx\` ON \`audit_trail_events\` (\`changed_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`audit_trail_events_changed_at_idx\` ON \`audit_trail_events\` (\`changed_at\`);`)
+  await db.run(sql`CREATE INDEX \`audit_trail_events_approved_by_idx\` ON \`audit_trail_events\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE TABLE \`eed4d3e0dc8168b24a00ca2f6a516bc58\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
-  	\`sequence\` numeric,
-  	\`description\` text,
-  	\`step_owner\` text,
+  	\`sequence\` numeric NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`owner\` text,
   	\`target_date\` text,
-  	\`status\` text,
+  	\`status\` text DEFAULT 'not-started',
   	\`completed_date\` text,
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`remediation_plans\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eed4d3e0dc8165b24a00ca2f6a516bc58_order_idx\` ON \`eed4d3e0dc8165b24a00ca2f6a516bc58\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eed4d3e0dc8165b24a00ca2f6a516bc58_parent_id_idx\` ON \`eed4d3e0dc8165b24a00ca2f6a516bc58\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eed4d3e0dc8168b24a00ca2f6a516bc58_order_idx\` ON \`eed4d3e0dc8168b24a00ca2f6a516bc58\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eed4d3e0dc8168b24a00ca2f6a516bc58_parent_id_idx\` ON \`eed4d3e0dc8168b24a00ca2f6a516bc58\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`remediation_plans\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`tenant_id\` text(36),
-  	\`plan_title\` text NOT NULL,
-  	\`finding_id\` text(36),
-  	\`gap_id\` text(36),
+  	\`title\` text NOT NULL,
+  	\`description\` text NOT NULL,
+  	\`related_finding_id\` text(36),
+  	\`related_gap_id\` text(36),
   	\`remediation_type\` text NOT NULL,
-  	\`priority\` text,
-  	\`owner\` text,
+  	\`priority\` text NOT NULL,
+  	\`owner_id\` text(36) NOT NULL,
   	\`target_date\` text NOT NULL,
   	\`completion_date\` text,
-  	\`status\` text DEFAULT 'planned',
+  	\`status\` text DEFAULT 'planned' NOT NULL,
+  	\`required_resources\` text,
   	\`budget\` numeric,
   	\`risk_of_delay\` text,
+  	\`approved_by_id\` text(36),
+  	\`approval_date\` text,
+  	\`is_active\` integer DEFAULT true,
   	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
   	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`finding_id\`) REFERENCES \`audit_findings\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`gap_id\`) REFERENCES \`compliance_gaps\`(\`id\`) ON UPDATE no action ON DELETE set null
+  	FOREIGN KEY (\`related_finding_id\`) REFERENCES \`audit_findings\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`related_gap_id\`) REFERENCES \`compliance_gaps\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`owner_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`remediation_plans_uuid_idx\` ON \`remediation_plans\` (\`uuid\`);`)
   await db.run(sql`CREATE INDEX \`remediation_plans_tenant_idx\` ON \`remediation_plans\` (\`tenant_id\`);`)
-  await db.run(sql`CREATE INDEX \`remediation_plans_finding_idx\` ON \`remediation_plans\` (\`finding_id\`);`)
-  await db.run(sql`CREATE INDEX \`remediation_plans_gap_idx\` ON \`remediation_plans\` (\`gap_id\`);`)
+  await db.run(sql`CREATE INDEX \`remediation_plans_title_idx\` ON \`remediation_plans\` (\`title\`);`)
+  await db.run(sql`CREATE INDEX \`remediation_plans_related_finding_idx\` ON \`remediation_plans\` (\`related_finding_id\`);`)
+  await db.run(sql`CREATE INDEX \`remediation_plans_related_gap_idx\` ON \`remediation_plans\` (\`related_gap_id\`);`)
+  await db.run(sql`CREATE INDEX \`remediation_plans_owner_idx\` ON \`remediation_plans\` (\`owner_id\`);`)
+  await db.run(sql`CREATE INDEX \`remediation_plans_approved_by_idx\` ON \`remediation_plans\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`remediation_plans_updated_at_idx\` ON \`remediation_plans\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`remediation_plans_created_at_idx\` ON \`remediation_plans\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`audit_committees\` (
@@ -7588,7 +7921,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`audit_committees_rels_parent_idx\` ON \`audit_committees_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`audit_committees_rels_path_idx\` ON \`audit_committees_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`audit_committees_rels_audit_committee_members_id_idx\` ON \`audit_committees_rels\` (\`audit_committee_members_id\`);`)
-  await db.run(sql`CREATE TABLE \`ecc9fd5637b9c5429b03a8b23abb12a0a\` (
+  await db.run(sql`CREATE TABLE \`ecc9fd5637b9c8429b03a8b23abb12a0a\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -7596,8 +7929,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_committee_members\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ecc9fd5637b9c5429b03a8b23abb12a0a_order_idx\` ON \`ecc9fd5637b9c5429b03a8b23abb12a0a\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ecc9fd5637b9c5429b03a8b23abb12a0a_parent_id_idx\` ON \`ecc9fd5637b9c5429b03a8b23abb12a0a\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ecc9fd5637b9c8429b03a8b23abb12a0a_order_idx\` ON \`ecc9fd5637b9c8429b03a8b23abb12a0a\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ecc9fd5637b9c8429b03a8b23abb12a0a_parent_id_idx\` ON \`ecc9fd5637b9c8429b03a8b23abb12a0a\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_committee_members\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -7663,7 +7996,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`board_actions_rels_parent_idx\` ON \`board_actions_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`board_actions_rels_path_idx\` ON \`board_actions_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`board_actions_rels_internal_controls_id_idx\` ON \`board_actions_rels\` (\`internal_controls_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2fd3794b06845c5791b307f9f023909c\` (
+  await db.run(sql`CREATE TABLE \`e2fd3794b06848c5791b307f9f023909c\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -7672,8 +8005,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`management_certifications\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2fd3794b06845c5791b307f9f023909c_order_idx\` ON \`e2fd3794b06845c5791b307f9f023909c\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2fd3794b06845c5791b307f9f023909c_parent_id_idx\` ON \`e2fd3794b06845c5791b307f9f023909c\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2fd3794b06848c5791b307f9f023909c_order_idx\` ON \`e2fd3794b06848c5791b307f9f023909c\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2fd3794b06848c5791b307f9f023909c_parent_id_idx\` ON \`e2fd3794b06848c5791b307f9f023909c\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`management_certifications\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -7799,7 +8132,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`internal_policies_rels_parent_idx\` ON \`internal_policies_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`internal_policies_rels_path_idx\` ON \`internal_policies_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`internal_policies_rels_internal_controls_id_idx\` ON \`internal_policies_rels\` (\`internal_controls_id\`);`)
-  await db.run(sql`CREATE TABLE \`e86a4abedd768512d9092751010ab81e5\` (
+  await db.run(sql`CREATE TABLE \`e86a4abedd768812d9092751010ab81e5\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -7809,8 +8142,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`statutory_report_templates\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e86a4abedd768512d9092751010ab81e5_order_idx\` ON \`e86a4abedd768512d9092751010ab81e5\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e86a4abedd768512d9092751010ab81e5_parent_id_idx\` ON \`e86a4abedd768512d9092751010ab81e5\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e86a4abedd768812d9092751010ab81e5_order_idx\` ON \`e86a4abedd768812d9092751010ab81e5\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e86a4abedd768812d9092751010ab81e5_parent_id_idx\` ON \`e86a4abedd768812d9092751010ab81e5\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`statutory_report_templates\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -7941,7 +8274,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`compliance_deadlines_requirement_idx\` ON \`compliance_deadlines\` (\`requirement_id\`);`)
   await db.run(sql`CREATE INDEX \`compliance_deadlines_updated_at_idx\` ON \`compliance_deadlines\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`compliance_deadlines_created_at_idx\` ON \`compliance_deadlines\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e63374315133159659a5f11c2d82e4d14\` (
+  await db.run(sql`CREATE TABLE \`e63374315133189659a5f11c2d82e4d14\` (
   	\`order\` integer NOT NULL,
   	\`parent_id\` text(36) NOT NULL,
   	\`value\` text,
@@ -7949,9 +8282,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`parent_id\`) REFERENCES \`compliance_notifications\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e63374315133159659a5f11c2d82e4d14_order_idx\` ON \`e63374315133159659a5f11c2d82e4d14\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`e63374315133159659a5f11c2d82e4d14_parent_idx\` ON \`e63374315133159659a5f11c2d82e4d14\` (\`parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e98d28b906a8a54fc83665a4bee6d69f1\` (
+  await db.run(sql`CREATE INDEX \`e63374315133189659a5f11c2d82e4d14_order_idx\` ON \`e63374315133189659a5f11c2d82e4d14\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`e63374315133189659a5f11c2d82e4d14_parent_idx\` ON \`e63374315133189659a5f11c2d82e4d14\` (\`parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e98d28b906a8a84fc83665a4bee6d69f1\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -7960,8 +8293,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`compliance_notifications\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e98d28b906a8a54fc83665a4bee6d69f1_order_idx\` ON \`e98d28b906a8a54fc83665a4bee6d69f1\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e98d28b906a8a54fc83665a4bee6d69f1_parent_id_idx\` ON \`e98d28b906a8a54fc83665a4bee6d69f1\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e98d28b906a8a84fc83665a4bee6d69f1_order_idx\` ON \`e98d28b906a8a84fc83665a4bee6d69f1\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e98d28b906a8a84fc83665a4bee6d69f1_parent_id_idx\` ON \`e98d28b906a8a84fc83665a4bee6d69f1\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`compliance_notifications\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8008,7 +8341,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`reporting_standards_reference_material_idx\` ON \`reporting_standards\` (\`reference_material_id\`);`)
   await db.run(sql`CREATE INDEX \`reporting_standards_updated_at_idx\` ON \`reporting_standards\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`reporting_standards_created_at_idx\` ON \`reporting_standards\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ed4bb747bf248547fbb37044680471a81\` (
+  await db.run(sql`CREATE TABLE \`ed4bb747bf248847fbb37044680471a81\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8018,8 +8351,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`reporting_mappings\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ed4bb747bf248547fbb37044680471a81_order_idx\` ON \`ed4bb747bf248547fbb37044680471a81\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ed4bb747bf248547fbb37044680471a81_parent_id_idx\` ON \`ed4bb747bf248547fbb37044680471a81\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ed4bb747bf248847fbb37044680471a81_order_idx\` ON \`ed4bb747bf248847fbb37044680471a81\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ed4bb747bf248847fbb37044680471a81_parent_id_idx\` ON \`ed4bb747bf248847fbb37044680471a81\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`reporting_mappings\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8092,7 +8425,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`related_party_transactions_rels_path_idx\` ON \`related_party_transactions_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`related_party_transactions_rels_internal_controls_id_idx\` ON \`related_party_transactions_rels\` (\`internal_controls_id\`);`)
   await db.run(sql`CREATE INDEX \`related_party_transactions_rels_audit_evidence_id_idx\` ON \`related_party_transactions_rels\` (\`audit_evidence_id\`);`)
-  await db.run(sql`CREATE TABLE \`e7b6d5ba25f4f509caff6535d1804c987\` (
+  await db.run(sql`CREATE TABLE \`e7b6d5ba25f4f809caff6535d1804c987\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8104,9 +8437,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`management_assessment_icfr\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e7b6d5ba25f4f509caff6535d1804c987_order_idx\` ON \`e7b6d5ba25f4f509caff6535d1804c987\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e7b6d5ba25f4f509caff6535d1804c987_parent_id_idx\` ON \`e7b6d5ba25f4f509caff6535d1804c987\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e7b6d5ba25f4f509caff6535d1804c987_signature_document_idx\` ON \`e7b6d5ba25f4f509caff6535d1804c987\` (\`signature_document_id\`);`)
+  await db.run(sql`CREATE INDEX \`e7b6d5ba25f4f809caff6535d1804c987_order_idx\` ON \`e7b6d5ba25f4f809caff6535d1804c987\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e7b6d5ba25f4f809caff6535d1804c987_parent_id_idx\` ON \`e7b6d5ba25f4f809caff6535d1804c987\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e7b6d5ba25f4f809caff6535d1804c987_signature_document_idx\` ON \`e7b6d5ba25f4f809caff6535d1804c987\` (\`signature_document_id\`);`)
   await db.run(sql`CREATE TABLE \`management_assessment_icfr\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8159,7 +8492,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`management_assessment_icfr_rels_path_idx\` ON \`management_assessment_icfr_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`management_assessment_icfr_rels_audit_findings_id_idx\` ON \`management_assessment_icfr_rels\` (\`audit_findings_id\`);`)
   await db.run(sql`CREATE INDEX \`management_assessment_icfr_rels_control_tests_id_idx\` ON \`management_assessment_icfr_rels\` (\`control_tests_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2cf7ebcb20e95c53ac2931d630d1a794\` (
+  await db.run(sql`CREATE TABLE \`e2cf7ebcb20e98c53ac2931d630d1a794\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8176,8 +8509,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`disclosure_checklists\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2cf7ebcb20e95c53ac2931d630d1a794_order_idx\` ON \`e2cf7ebcb20e95c53ac2931d630d1a794\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2cf7ebcb20e95c53ac2931d630d1a794_parent_id_idx\` ON \`e2cf7ebcb20e95c53ac2931d630d1a794\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2cf7ebcb20e98c53ac2931d630d1a794_order_idx\` ON \`e2cf7ebcb20e98c53ac2931d630d1a794\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2cf7ebcb20e98c53ac2931d630d1a794_parent_id_idx\` ON \`e2cf7ebcb20e98c53ac2931d630d1a794\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`disclosure_checklists\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8221,7 +8554,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`disclosure_checklists_rels_parent_idx\` ON \`disclosure_checklists_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`disclosure_checklists_rels_path_idx\` ON \`disclosure_checklists_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`disclosure_checklists_rels_audit_evidence_id_idx\` ON \`disclosure_checklists_rels\` (\`audit_evidence_id\`);`)
-  await db.run(sql`CREATE TABLE \`e096b0d817dc2503fbde647fc45fdd1d2\` (
+  await db.run(sql`CREATE TABLE \`e096b0d817dc2803fbde647fc45fdd1d2\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8232,9 +8565,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_committee_minutes\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e096b0d817dc2503fbde647fc45fdd1d2_order_idx\` ON \`e096b0d817dc2503fbde647fc45fdd1d2\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e096b0d817dc2503fbde647fc45fdd1d2_parent_id_idx\` ON \`e096b0d817dc2503fbde647fc45fdd1d2\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`eb97d9b37aa2f5c0cba9177cb912664fa\` (
+  await db.run(sql`CREATE INDEX \`e096b0d817dc2803fbde647fc45fdd1d2_order_idx\` ON \`e096b0d817dc2803fbde647fc45fdd1d2\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e096b0d817dc2803fbde647fc45fdd1d2_parent_id_idx\` ON \`e096b0d817dc2803fbde647fc45fdd1d2\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`eb97d9b37aa2f8c0cba9177cb912664fa\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8245,9 +8578,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_committee_minutes\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eb97d9b37aa2f5c0cba9177cb912664fa_order_idx\` ON \`eb97d9b37aa2f5c0cba9177cb912664fa\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eb97d9b37aa2f5c0cba9177cb912664fa_parent_id_idx\` ON \`eb97d9b37aa2f5c0cba9177cb912664fa\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e847fc1809b2f5f1dbee08a0fff515091\` (
+  await db.run(sql`CREATE INDEX \`eb97d9b37aa2f8c0cba9177cb912664fa_order_idx\` ON \`eb97d9b37aa2f8c0cba9177cb912664fa\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eb97d9b37aa2f8c0cba9177cb912664fa_parent_id_idx\` ON \`eb97d9b37aa2f8c0cba9177cb912664fa\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e847fc1809b2f8f1dbee08a0fff515091\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8256,9 +8589,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_committee_minutes\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e847fc1809b2f5f1dbee08a0fff515091_order_idx\` ON \`e847fc1809b2f5f1dbee08a0fff515091\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e847fc1809b2f5f1dbee08a0fff515091_parent_id_idx\` ON \`e847fc1809b2f5f1dbee08a0fff515091\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e1465d8f360ca5f11a355cbdf4650ac30\` (
+  await db.run(sql`CREATE INDEX \`e847fc1809b2f8f1dbee08a0fff515091_order_idx\` ON \`e847fc1809b2f8f1dbee08a0fff515091\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e847fc1809b2f8f1dbee08a0fff515091_parent_id_idx\` ON \`e847fc1809b2f8f1dbee08a0fff515091\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e1465d8f360ca8f11a355cbdf4650ac30\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8272,8 +8605,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_committee_minutes\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e1465d8f360ca5f11a355cbdf4650ac30_order_idx\` ON \`e1465d8f360ca5f11a355cbdf4650ac30\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e1465d8f360ca5f11a355cbdf4650ac30_parent_id_idx\` ON \`e1465d8f360ca5f11a355cbdf4650ac30\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e1465d8f360ca8f11a355cbdf4650ac30_order_idx\` ON \`e1465d8f360ca8f11a355cbdf4650ac30\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e1465d8f360ca8f11a355cbdf4650ac30_parent_id_idx\` ON \`e1465d8f360ca8f11a355cbdf4650ac30\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_committee_minutes\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8389,7 +8722,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`risk_register_rels_internal_controls_id_idx\` ON \`risk_register_rels\` (\`internal_controls_id\`);`)
   await db.run(sql`CREATE INDEX \`risk_register_rels_compliance_requirements_id_idx\` ON \`risk_register_rels\` (\`compliance_requirements_id\`);`)
   await db.run(sql`CREATE INDEX \`risk_register_rels_audit_findings_id_idx\` ON \`risk_register_rels\` (\`audit_findings_id\`);`)
-  await db.run(sql`CREATE TABLE \`e1a216420daff5b30ba8bab31bff7f178\` (
+  await db.run(sql`CREATE TABLE \`e1a216420daff8b30ba8bab31bff7f178\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8401,9 +8734,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`debt_schedule\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e1a216420daff5b30ba8bab31bff7f178_order_idx\` ON \`e1a216420daff5b30ba8bab31bff7f178\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e1a216420daff5b30ba8bab31bff7f178_parent_id_idx\` ON \`e1a216420daff5b30ba8bab31bff7f178\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e55475e7a36b45103a9792367bb20bd76\` (
+  await db.run(sql`CREATE INDEX \`e1a216420daff8b30ba8bab31bff7f178_order_idx\` ON \`e1a216420daff8b30ba8bab31bff7f178\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e1a216420daff8b30ba8bab31bff7f178_parent_id_idx\` ON \`e1a216420daff8b30ba8bab31bff7f178\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e55475e7a36b48103a9792367bb20bd76\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8416,8 +8749,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`debt_schedule\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e55475e7a36b45103a9792367bb20bd76_order_idx\` ON \`e55475e7a36b45103a9792367bb20bd76\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e55475e7a36b45103a9792367bb20bd76_parent_id_idx\` ON \`e55475e7a36b45103a9792367bb20bd76\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e55475e7a36b48103a9792367bb20bd76_order_idx\` ON \`e55475e7a36b48103a9792367bb20bd76\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e55475e7a36b48103a9792367bb20bd76_parent_id_idx\` ON \`e55475e7a36b48103a9792367bb20bd76\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`debt_schedule\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8480,7 +8813,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`debt_schedule_rels_legal_entities_id_idx\` ON \`debt_schedule_rels\` (\`legal_entities_id\`);`)
   await db.run(sql`CREATE INDEX \`debt_schedule_rels_fx_transactions_id_idx\` ON \`debt_schedule_rels\` (\`fx_transactions_id\`);`)
   await db.run(sql`CREATE INDEX \`debt_schedule_rels_internal_controls_id_idx\` ON \`debt_schedule_rels\` (\`internal_controls_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2ed3319156f95328b9f2124e3154b2b0\` (
+  await db.run(sql`CREATE TABLE \`e2ed3319156f98328b9f2124e3154b2b0\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8494,9 +8827,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`internal_audit_function\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2ed3319156f95328b9f2124e3154b2b0_order_idx\` ON \`e2ed3319156f95328b9f2124e3154b2b0\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2ed3319156f95328b9f2124e3154b2b0_parent_id_idx\` ON \`e2ed3319156f95328b9f2124e3154b2b0\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ea2509c33f75c5e20a0407280749b7f16\` (
+  await db.run(sql`CREATE INDEX \`e2ed3319156f98328b9f2124e3154b2b0_order_idx\` ON \`e2ed3319156f98328b9f2124e3154b2b0\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2ed3319156f98328b9f2124e3154b2b0_parent_id_idx\` ON \`e2ed3319156f98328b9f2124e3154b2b0\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ea2509c33f75c8e20a0407280749b7f16\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8509,8 +8842,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`internal_audit_function\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ea2509c33f75c5e20a0407280749b7f16_order_idx\` ON \`ea2509c33f75c5e20a0407280749b7f16\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ea2509c33f75c5e20a0407280749b7f16_parent_id_idx\` ON \`ea2509c33f75c5e20a0407280749b7f16\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ea2509c33f75c8e20a0407280749b7f16_order_idx\` ON \`ea2509c33f75c8e20a0407280749b7f16\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ea2509c33f75c8e20a0407280749b7f16_parent_id_idx\` ON \`ea2509c33f75c8e20a0407280749b7f16\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`internal_audit_function\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8575,7 +8908,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`internal_audit_function_rels_path_idx\` ON \`internal_audit_function_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`internal_audit_function_rels_audit_committee_minutes_id_idx\` ON \`internal_audit_function_rels\` (\`audit_committee_minutes_id\`);`)
   await db.run(sql`CREATE INDEX \`internal_audit_function_rels_audit_findings_id_idx\` ON \`internal_audit_function_rels\` (\`audit_findings_id\`);`)
-  await db.run(sql`CREATE TABLE \`e3d8eef548a8d5022abc3af81e21232c6\` (
+  await db.run(sql`CREATE TABLE \`e3d8eef548a8d8022abc3af81e21232c6\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8584,9 +8917,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`segment_reporting\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e3d8eef548a8d5022abc3af81e21232c6_order_idx\` ON \`e3d8eef548a8d5022abc3af81e21232c6\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e3d8eef548a8d5022abc3af81e21232c6_parent_id_idx\` ON \`e3d8eef548a8d5022abc3af81e21232c6\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ebe1f8a37cdab50fe87f27a2a9809a286\` (
+  await db.run(sql`CREATE INDEX \`e3d8eef548a8d8022abc3af81e21232c6_order_idx\` ON \`e3d8eef548a8d8022abc3af81e21232c6\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e3d8eef548a8d8022abc3af81e21232c6_parent_id_idx\` ON \`e3d8eef548a8d8022abc3af81e21232c6\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ebe1f8a37cdab80fe87f27a2a9809a286\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8596,8 +8929,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`segment_reporting\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ebe1f8a37cdab50fe87f27a2a9809a286_order_idx\` ON \`ebe1f8a37cdab50fe87f27a2a9809a286\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ebe1f8a37cdab50fe87f27a2a9809a286_parent_id_idx\` ON \`ebe1f8a37cdab50fe87f27a2a9809a286\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ebe1f8a37cdab80fe87f27a2a9809a286_order_idx\` ON \`ebe1f8a37cdab80fe87f27a2a9809a286\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ebe1f8a37cdab80fe87f27a2a9809a286_parent_id_idx\` ON \`ebe1f8a37cdab80fe87f27a2a9809a286\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`segment_reporting\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8738,7 +9071,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`data_subject_requests_locales_locale_parent_id_unique\` ON \`data_subject_requests_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e89747974e3195578977032ad94a759c1\` (
+  await db.run(sql`CREATE TABLE \`e89747974e3198578977032ad94a759c1\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8747,9 +9080,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e89747974e3195578977032ad94a759c1_order_idx\` ON \`e89747974e3195578977032ad94a759c1\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e89747974e3195578977032ad94a759c1_parent_id_idx\` ON \`e89747974e3195578977032ad94a759c1\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e4b2d0cf96ff15f2e94f69d77ee2c025f\` (
+  await db.run(sql`CREATE INDEX \`e89747974e3198578977032ad94a759c1_order_idx\` ON \`e89747974e3198578977032ad94a759c1\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e89747974e3198578977032ad94a759c1_parent_id_idx\` ON \`e89747974e3198578977032ad94a759c1\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e4b2d0cf96ff18f2e94f69d77ee2c025f\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8757,26 +9090,26 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e4b2d0cf96ff15f2e94f69d77ee2c025f_order_idx\` ON \`e4b2d0cf96ff15f2e94f69d77ee2c025f\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e4b2d0cf96ff15f2e94f69d77ee2c025f_parent_id_idx\` ON \`e4b2d0cf96ff15f2e94f69d77ee2c025f\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ed5b0fb68f51756feb6e1eee30449385f\` (
+  await db.run(sql`CREATE INDEX \`e4b2d0cf96ff18f2e94f69d77ee2c025f_order_idx\` ON \`e4b2d0cf96ff18f2e94f69d77ee2c025f\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e4b2d0cf96ff18f2e94f69d77ee2c025f_parent_id_idx\` ON \`e4b2d0cf96ff18f2e94f69d77ee2c025f\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ed5b0fb68f51786feb6e1eee30449385f\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`data_processing_activities\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ed5b0fb68f51756feb6e1eee30449385f_order_idx\` ON \`ed5b0fb68f51756feb6e1eee30449385f\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ed5b0fb68f51756feb6e1eee30449385f_parent_id_idx\` ON \`ed5b0fb68f51756feb6e1eee30449385f\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ed5b0fb68f51756feb6e1eee30449385f_locales\` (
+  await db.run(sql`CREATE INDEX \`ed5b0fb68f51786feb6e1eee30449385f_order_idx\` ON \`ed5b0fb68f51786feb6e1eee30449385f\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ed5b0fb68f51786feb6e1eee30449385f_parent_id_idx\` ON \`ed5b0fb68f51786feb6e1eee30449385f\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ed5b0fb68f51786feb6e1eee30449385f_locales\` (
   	\`recipient\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ed5b0fb68f51756feb6e1eee30449385f\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ed5b0fb68f51786feb6e1eee30449385f\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`ed5b0fb68f51756feb6e1eee30449385f_locales_locale_parent_id_u\` ON \`ed5b0fb68f51756feb6e1eee30449385f_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`ed5b0fb68f51786feb6e1eee30449385f_locales_locale_parent_id_u\` ON \`ed5b0fb68f51786feb6e1eee30449385f_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`transfers\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
@@ -8821,7 +9154,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`data_processing_activities_approved_by_idx\` ON \`data_processing_activities\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`data_processing_activities_updated_at_idx\` ON \`data_processing_activities\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`data_processing_activities_created_at_idx\` ON \`data_processing_activities\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e1dc5ded7e20c52a1b0dd2f3eaf6425fd\` (
+  await db.run(sql`CREATE TABLE \`e1dc5ded7e20c82a1b0dd2f3eaf6425fd\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -8832,8 +9165,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`kyc_checks\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e1dc5ded7e20c52a1b0dd2f3eaf6425fd_order_idx\` ON \`e1dc5ded7e20c52a1b0dd2f3eaf6425fd\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e1dc5ded7e20c52a1b0dd2f3eaf6425fd_parent_id_idx\` ON \`e1dc5ded7e20c52a1b0dd2f3eaf6425fd\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e1dc5ded7e20c82a1b0dd2f3eaf6425fd_order_idx\` ON \`e1dc5ded7e20c82a1b0dd2f3eaf6425fd\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e1dc5ded7e20c82a1b0dd2f3eaf6425fd_parent_id_idx\` ON \`e1dc5ded7e20c82a1b0dd2f3eaf6425fd\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`kyc_checks\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -8911,6 +9244,140 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`beneficial_owners_approved_by_idx\` ON \`beneficial_owners\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`beneficial_owners_updated_at_idx\` ON \`beneficial_owners\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`beneficial_owners_created_at_idx\` ON \`beneficial_owners\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`e748d22a668778d2291b0c286f5fb0b16\` (
+  	\`_order\` integer NOT NULL,
+  	\`_parent_id\` text(36) NOT NULL,
+  	\`id\` text PRIMARY KEY NOT NULL,
+  	\`item_id\` text(36) NOT NULL,
+  	\`batch_id\` text(36),
+  	\`quantity\` numeric NOT NULL,
+  	\`unit_of_measure\` text DEFAULT 'C62',
+  	FOREIGN KEY (\`item_id\`) REFERENCES \`items\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`batch_id\`) REFERENCES \`batches\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`packages\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`e748d22a668778d2291b0c286f5fb0b16_order_idx\` ON \`e748d22a668778d2291b0c286f5fb0b16\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e748d22a668778d2291b0c286f5fb0b16_parent_id_idx\` ON \`e748d22a668778d2291b0c286f5fb0b16\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e748d22a668778d2291b0c286f5fb0b16_item_idx\` ON \`e748d22a668778d2291b0c286f5fb0b16\` (\`item_id\`);`)
+  await db.run(sql`CREATE INDEX \`e748d22a668778d2291b0c286f5fb0b16_batch_idx\` ON \`e748d22a668778d2291b0c286f5fb0b16\` (\`batch_id\`);`)
+  await db.run(sql`CREATE TABLE \`packages\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`reference\` text NOT NULL,
+  	\`sscc\` text,
+  	\`type\` text DEFAULT 'carton',
+  	\`parent_package_id\` text(36),
+  	\`shipment_id\` text(36),
+  	\`measurements_gross_weight\` numeric,
+  	\`measurements_net_weight\` numeric,
+  	\`measurements_weight_unit_of_measure\` text DEFAULT 'KGM',
+  	\`measurements_length\` numeric,
+  	\`measurements_width\` numeric,
+  	\`measurements_height\` numeric,
+  	\`measurements_dimension_unit_of_measure\` text DEFAULT 'CMT',
+  	\`warehouse_location_id\` text(36),
+  	\`status\` text DEFAULT 'packing',
+  	\`created_by_id\` text(36),
+  	\`approved_by_id\` text(36),
+  	\`approved_at\` text,
+  	\`notes\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`parent_package_id\`) REFERENCES \`packages\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`shipment_id\`) REFERENCES \`shipments\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`warehouse_location_id\`) REFERENCES \`warehouse_locations\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`packages_uuid_idx\` ON \`packages\` (\`uuid\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`packages_reference_idx\` ON \`packages\` (\`reference\`);`)
+  await db.run(sql`CREATE INDEX \`packages_sscc_idx\` ON \`packages\` (\`sscc\`);`)
+  await db.run(sql`CREATE INDEX \`packages_parent_package_idx\` ON \`packages\` (\`parent_package_id\`);`)
+  await db.run(sql`CREATE INDEX \`packages_shipment_idx\` ON \`packages\` (\`shipment_id\`);`)
+  await db.run(sql`CREATE INDEX \`packages_warehouse_location_idx\` ON \`packages\` (\`warehouse_location_id\`);`)
+  await db.run(sql`CREATE INDEX \`packages_created_by_idx\` ON \`packages\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`packages_approved_by_idx\` ON \`packages\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`packages_updated_at_idx\` ON \`packages\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`packages_created_at_idx\` ON \`packages\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`messages\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`subject\` text NOT NULL,
+  	\`body\` text NOT NULL,
+  	\`priority\` text DEFAULT 'normal',
+  	\`parent_message_id\` text(36),
+  	\`read_at\` text,
+  	\`status\` text DEFAULT 'unread',
+  	\`created_by_id\` text(36),
+  	\`approved_by_id\` text(36),
+  	\`approved_at\` text,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`parent_message_id\`) REFERENCES \`messages\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
+  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`messages_uuid_idx\` ON \`messages\` (\`uuid\`);`)
+  await db.run(sql`CREATE INDEX \`messages_parent_message_idx\` ON \`messages\` (\`parent_message_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_created_by_idx\` ON \`messages\` (\`created_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_approved_by_idx\` ON \`messages\` (\`approved_by_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_updated_at_idx\` ON \`messages\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`messages_created_at_idx\` ON \`messages\` (\`created_at\`);`)
+  await db.run(sql`CREATE TABLE \`messages_rels\` (
+  	\`id\` integer PRIMARY KEY NOT NULL,
+  	\`order\` integer,
+  	\`parent_id\` text(36) NOT NULL,
+  	\`path\` text NOT NULL,
+  	\`users_id\` text(36),
+  	\`invoices_id\` text(36),
+  	\`customers_id\` text(36),
+  	\`vendors_id\` text(36),
+  	\`sales_orders_id\` text(36),
+  	\`purchase_orders_id\` text(36),
+  	FOREIGN KEY (\`parent_id\`) REFERENCES \`messages\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`users_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`invoices_id\`) REFERENCES \`invoices\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`customers_id\`) REFERENCES \`customers\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`vendors_id\`) REFERENCES \`vendors\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`sales_orders_id\`) REFERENCES \`sales_orders\`(\`id\`) ON UPDATE no action ON DELETE cascade,
+  	FOREIGN KEY (\`purchase_orders_id\`) REFERENCES \`purchase_orders\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  );
+  `)
+  await db.run(sql`CREATE INDEX \`messages_rels_order_idx\` ON \`messages_rels\` (\`order\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_parent_idx\` ON \`messages_rels\` (\`parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_path_idx\` ON \`messages_rels\` (\`path\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_users_id_idx\` ON \`messages_rels\` (\`users_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_invoices_id_idx\` ON \`messages_rels\` (\`invoices_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_customers_id_idx\` ON \`messages_rels\` (\`customers_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_vendors_id_idx\` ON \`messages_rels\` (\`vendors_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_sales_orders_id_idx\` ON \`messages_rels\` (\`sales_orders_id\`);`)
+  await db.run(sql`CREATE INDEX \`messages_rels_purchase_orders_id_idx\` ON \`messages_rels\` (\`purchase_orders_id\`);`)
+  await db.run(sql`CREATE TABLE \`chat\` (
+  	\`id\` text(36) PRIMARY KEY NOT NULL,
+  	\`uuid\` text,
+  	\`tenant_id\` text(36),
+  	\`event\` text NOT NULL,
+  	\`event_uuid\` text NOT NULL,
+  	\`aggregate_id\` text,
+  	\`agent\` text NOT NULL,
+  	\`payload\` text,
+  	\`depth\` numeric DEFAULT 0,
+  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
+  	FOREIGN KEY (\`tenant_id\`) REFERENCES \`tenants\`(\`id\`) ON UPDATE no action ON DELETE set null
+  );
+  `)
+  await db.run(sql`CREATE UNIQUE INDEX \`chat_uuid_idx\` ON \`chat\` (\`uuid\`);`)
+  await db.run(sql`CREATE INDEX \`chat_tenant_idx\` ON \`chat\` (\`tenant_id\`);`)
+  await db.run(sql`CREATE INDEX \`chat_event_idx\` ON \`chat\` (\`event\`);`)
+  await db.run(sql`CREATE INDEX \`chat_event_uuid_idx\` ON \`chat\` (\`event_uuid\`);`)
+  await db.run(sql`CREATE INDEX \`chat_aggregate_id_idx\` ON \`chat\` (\`aggregate_id\`);`)
+  await db.run(sql`CREATE INDEX \`chat_agent_idx\` ON \`chat\` (\`agent\`);`)
+  await db.run(sql`CREATE INDEX \`chat_updated_at_idx\` ON \`chat\` (\`updated_at\`);`)
+  await db.run(sql`CREATE INDEX \`chat_created_at_idx\` ON \`chat\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`csrd_disclosures\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -9026,7 +9493,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`name\` text NOT NULL,
   	\`class_kind\` text NOT NULL,
   	\`units_on_hand\` numeric NOT NULL,
-  	\`unit_of_measure\` text DEFAULT 'head',
+  	\`unit_of_measure\` text DEFAULT 'C62',
   	\`fair_value_less_costs_to_sell\` numeric NOT NULL,
   	\`prior_period_fvlcts\` numeric,
   	\`biological_transformation_gain_loss\` numeric,
@@ -9846,7 +10313,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`transfer_pricing_files_approved_by_idx\` ON \`transfer_pricing_files\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`transfer_pricing_files_updated_at_idx\` ON \`transfer_pricing_files\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`transfer_pricing_files_created_at_idx\` ON \`transfer_pricing_files\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e00d4d9ef3ee456519ef61f236288a7ce\` (
+  await db.run(sql`CREATE TABLE \`e00d4d9ef3ee486519ef61f236288a7ce\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -9857,19 +10324,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`standards\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e00d4d9ef3ee456519ef61f236288a7ce_order_idx\` ON \`e00d4d9ef3ee456519ef61f236288a7ce\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e00d4d9ef3ee456519ef61f236288a7ce_parent_id_idx\` ON \`e00d4d9ef3ee456519ef61f236288a7ce\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e00d4d9ef3ee456519ef61f236288a7ce_other_standard_idx\` ON \`e00d4d9ef3ee456519ef61f236288a7ce\` (\`other_standard_id\`);`)
-  await db.run(sql`CREATE TABLE \`e00d4d9ef3ee456519ef61f236288a7ce_locales\` (
+  await db.run(sql`CREATE INDEX \`e00d4d9ef3ee486519ef61f236288a7ce_order_idx\` ON \`e00d4d9ef3ee486519ef61f236288a7ce\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e00d4d9ef3ee486519ef61f236288a7ce_parent_id_idx\` ON \`e00d4d9ef3ee486519ef61f236288a7ce\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e00d4d9ef3ee486519ef61f236288a7ce_other_standard_idx\` ON \`e00d4d9ef3ee486519ef61f236288a7ce\` (\`other_standard_id\`);`)
+  await db.run(sql`CREATE TABLE \`e00d4d9ef3ee486519ef61f236288a7ce_locales\` (
   	\`rationale\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e00d4d9ef3ee456519ef61f236288a7ce\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e00d4d9ef3ee486519ef61f236288a7ce\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e00d4d9ef3ee456519ef61f236288a7ce_locales_locale_parent_id_u\` ON \`e00d4d9ef3ee456519ef61f236288a7ce_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e27ef0824049252a9a3514febfe91938b\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e00d4d9ef3ee486519ef61f236288a7ce_locales_locale_parent_id_u\` ON \`e00d4d9ef3ee486519ef61f236288a7ce_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e27ef0824049282a9a3514febfe91938b\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -9879,8 +10346,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`standards\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e27ef0824049252a9a3514febfe91938b_order_idx\` ON \`e27ef0824049252a9a3514febfe91938b\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e27ef0824049252a9a3514febfe91938b_parent_id_idx\` ON \`e27ef0824049252a9a3514febfe91938b\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e27ef0824049282a9a3514febfe91938b_order_idx\` ON \`e27ef0824049282a9a3514febfe91938b\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e27ef0824049282a9a3514febfe91938b_parent_id_idx\` ON \`e27ef0824049282a9a3514febfe91938b\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`standards\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`tenant_id\` text(36),
@@ -9934,7 +10401,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`standards_rels_parent_idx\` ON \`standards_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`standards_rels_path_idx\` ON \`standards_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`standards_rels_standards_id_idx\` ON \`standards_rels\` (\`standards_id\`);`)
-  await db.run(sql`CREATE TABLE \`efd47cc9ff5ea5cf99caa31b20fc740b2\` (
+  await db.run(sql`CREATE TABLE \`efd47cc9ff5ea8cf99caa31b20fc740b2\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -9944,8 +10411,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`memories\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`efd47cc9ff5ea5cf99caa31b20fc740b2_order_idx\` ON \`efd47cc9ff5ea5cf99caa31b20fc740b2\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`efd47cc9ff5ea5cf99caa31b20fc740b2_parent_id_idx\` ON \`efd47cc9ff5ea5cf99caa31b20fc740b2\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`efd47cc9ff5ea8cf99caa31b20fc740b2_order_idx\` ON \`efd47cc9ff5ea8cf99caa31b20fc740b2\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`efd47cc9ff5ea8cf99caa31b20fc740b2_parent_id_idx\` ON \`efd47cc9ff5ea8cf99caa31b20fc740b2\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`memories\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`tenant_id\` text(36),
@@ -9986,7 +10453,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`memories_approved_by_idx\` ON \`memories\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`memories_updated_at_idx\` ON \`memories\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`memories_created_at_idx\` ON \`memories\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ef88c2ed312a85bb190229980a3720e72\` (
+  await db.run(sql`CREATE TABLE \`ef88c2ed312a88bb190229980a3720e72\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -9994,8 +10461,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`mcp_tool_metadata\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ef88c2ed312a85bb190229980a3720e72_order_idx\` ON \`ef88c2ed312a85bb190229980a3720e72\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ef88c2ed312a85bb190229980a3720e72_parent_id_idx\` ON \`ef88c2ed312a85bb190229980a3720e72\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ef88c2ed312a88bb190229980a3720e72_order_idx\` ON \`ef88c2ed312a88bb190229980a3720e72\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ef88c2ed312a88bb190229980a3720e72_parent_id_idx\` ON \`ef88c2ed312a88bb190229980a3720e72\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`mcp_tool_metadata\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`tenant_id\` text(36),
@@ -10034,7 +10501,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`mcp_tool_metadata_locales_locale_parent_id_unique\` ON \`mcp_tool_metadata_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`eec49ec68ab2a5e6985f5d5422fa6267d\` (
+  await db.run(sql`CREATE TABLE \`eec49ec68ab2a8e6985f5d5422fa6267d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10044,8 +10511,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`translations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eec49ec68ab2a5e6985f5d5422fa6267d_order_idx\` ON \`eec49ec68ab2a5e6985f5d5422fa6267d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eec49ec68ab2a5e6985f5d5422fa6267d_parent_id_idx\` ON \`eec49ec68ab2a5e6985f5d5422fa6267d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eec49ec68ab2a8e6985f5d5422fa6267d_order_idx\` ON \`eec49ec68ab2a8e6985f5d5422fa6267d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eec49ec68ab2a8e6985f5d5422fa6267d_parent_id_idx\` ON \`eec49ec68ab2a8e6985f5d5422fa6267d\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`translations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`tenant_id\` text(36),
@@ -10271,79 +10738,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`contract_signatures_approved_by_idx\` ON \`contract_signatures\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`contract_signatures_updated_at_idx\` ON \`contract_signatures\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`contract_signatures_created_at_idx\` ON \`contract_signatures\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ea4ece34561bd57a3a7dbaffb32ada3c6\` (
-  	\`_order\` integer NOT NULL,
-  	\`_parent_id\` text(36) NOT NULL,
-  	\`id\` text PRIMARY KEY NOT NULL,
-  	\`clause_id\` text NOT NULL,
-  	\`clause_title\` text NOT NULL,
-  	\`clause_text\` text NOT NULL,
-  	\`is_required\` integer DEFAULT false,
-  	\`regulatory_reference\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`contract_templates\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`ea4ece34561bd57a3a7dbaffb32ada3c6_order_idx\` ON \`ea4ece34561bd57a3a7dbaffb32ada3c6\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ea4ece34561bd57a3a7dbaffb32ada3c6_parent_id_idx\` ON \`ea4ece34561bd57a3a7dbaffb32ada3c6\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e880a81196eb1523980b99ca21f707854\` (
-  	\`_order\` integer NOT NULL,
-  	\`_parent_id\` text(36) NOT NULL,
-  	\`id\` text PRIMARY KEY NOT NULL,
-  	\`exemption_type\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`contract_templates\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`e880a81196eb1523980b99ca21f707854_order_idx\` ON \`e880a81196eb1523980b99ca21f707854\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e880a81196eb1523980b99ca21f707854_parent_id_idx\` ON \`e880a81196eb1523980b99ca21f707854\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2014ac53caf85348a82cc82dfb8464c7\` (
-  	\`_order\` integer NOT NULL,
-  	\`_parent_id\` text(36) NOT NULL,
-  	\`id\` text PRIMARY KEY NOT NULL,
-  	\`obligation_title\` text NOT NULL,
-  	\`obligation_sequence\` numeric NOT NULL,
-  	\`control_transfer_method\` text NOT NULL,
-  	\`description_template\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`contract_templates\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`e2014ac53caf85348a82cc82dfb8464c7_order_idx\` ON \`e2014ac53caf85348a82cc82dfb8464c7\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2014ac53caf85348a82cc82dfb8464c7_parent_id_idx\` ON \`e2014ac53caf85348a82cc82dfb8464c7\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`contract_templates\` (
-  	\`id\` text(36) PRIMARY KEY NOT NULL,
-  	\`uuid\` text,
-  	\`template_name\` text NOT NULL,
-  	\`template_category\` text NOT NULL,
-  	\`description\` text NOT NULL,
-  	\`template_version\` numeric DEFAULT 1 NOT NULL,
-  	\`effective_from_date\` text NOT NULL,
-  	\`effective_to_date\` text,
-  	\`approval_status\` text DEFAULT 'draft' NOT NULL,
-  	\`payment_term_defaults_payment_terms\` text,
-  	\`payment_term_defaults_days_until_due\` numeric,
-  	\`payment_term_defaults_late_fee_percent\` numeric DEFAULT 0,
-  	\`payment_term_defaults_discount_percent_for_early_payment\` numeric DEFAULT 0,
-  	\`liability_framework_liability_cap\` numeric,
-  	\`liability_framework_warranty_period_days\` numeric,
-  	\`zkod_mandatory_arbitration_clause_included\` integer DEFAULT true,
-  	\`zkod_notarization_required\` integer DEFAULT false,
-  	\`zkod_zkod_registry_category\` text,
-  	\`created_by_id\` text(36),
-  	\`approved_by_id\` text(36),
-  	\`approved_at\` text,
-  	\`template_notes\` text,
-  	\`updated_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
-  	\`created_at\` text DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now')) NOT NULL,
-  	FOREIGN KEY (\`created_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null,
-  	FOREIGN KEY (\`approved_by_id\`) REFERENCES \`users\`(\`id\`) ON UPDATE no action ON DELETE set null
-  );
-  `)
-  await db.run(sql`CREATE UNIQUE INDEX \`contract_templates_uuid_idx\` ON \`contract_templates\` (\`uuid\`);`)
-  await db.run(sql`CREATE UNIQUE INDEX \`contract_templates_template_name_idx\` ON \`contract_templates\` (\`template_name\`);`)
-  await db.run(sql`CREATE INDEX \`contract_templates_template_version_idx\` ON \`contract_templates\` (\`template_version\`);`)
-  await db.run(sql`CREATE INDEX \`contract_templates_created_by_idx\` ON \`contract_templates\` (\`created_by_id\`);`)
-  await db.run(sql`CREATE INDEX \`contract_templates_approved_by_idx\` ON \`contract_templates\` (\`approved_by_id\`);`)
-  await db.run(sql`CREATE INDEX \`contract_templates_updated_at_idx\` ON \`contract_templates\` (\`updated_at\`);`)
-  await db.run(sql`CREATE INDEX \`contract_templates_created_at_idx\` ON \`contract_templates\` (\`created_at\`);`)
   await db.run(sql`CREATE TABLE \`legal_entities\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -10496,7 +10890,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`usage_records_approved_by_idx\` ON \`usage_records\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`usage_records_updated_at_idx\` ON \`usage_records\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`usage_records_created_at_idx\` ON \`usage_records\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e6cabc1f1ac605b48984c03e53002797a\` (
+  await db.run(sql`CREATE TABLE \`e6cabc1f1ac608b48984c03e53002797a\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10514,9 +10908,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`consolidations\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e6cabc1f1ac605b48984c03e53002797a_order_idx\` ON \`e6cabc1f1ac605b48984c03e53002797a\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e6cabc1f1ac605b48984c03e53002797a_parent_id_idx\` ON \`e6cabc1f1ac605b48984c03e53002797a\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e6cabc1f1ac605b48984c03e53002797a_journal_entry_id_idx\` ON \`e6cabc1f1ac605b48984c03e53002797a\` (\`journal_entry_id_id\`);`)
+  await db.run(sql`CREATE INDEX \`e6cabc1f1ac608b48984c03e53002797a_order_idx\` ON \`e6cabc1f1ac608b48984c03e53002797a\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6cabc1f1ac608b48984c03e53002797a_parent_id_idx\` ON \`e6cabc1f1ac608b48984c03e53002797a\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e6cabc1f1ac608b48984c03e53002797a_journal_entry_id_idx\` ON \`e6cabc1f1ac608b48984c03e53002797a\` (\`journal_entry_id_id\`);`)
   await db.run(sql`CREATE TABLE \`consolidations\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -10562,7 +10956,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`consolidations_rels_parent_idx\` ON \`consolidations_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`consolidations_rels_path_idx\` ON \`consolidations_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`consolidations_rels_legal_entities_id_idx\` ON \`consolidations_rels\` (\`legal_entities_id\`);`)
-  await db.run(sql`CREATE TABLE \`eb6304bde8ac95a988117180add07de51\` (
+  await db.run(sql`CREATE TABLE \`eb6304bde8ac98a988117180add07de51\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10580,9 +10974,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`tax_periods\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`eb6304bde8ac95a988117180add07de51_order_idx\` ON \`eb6304bde8ac95a988117180add07de51\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`eb6304bde8ac95a988117180add07de51_parent_id_idx\` ON \`eb6304bde8ac95a988117180add07de51\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`eb6304bde8ac95a988117180add07de51_journal_entry_id_idx\` ON \`eb6304bde8ac95a988117180add07de51\` (\`journal_entry_id_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb6304bde8ac98a988117180add07de51_order_idx\` ON \`eb6304bde8ac98a988117180add07de51\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`eb6304bde8ac98a988117180add07de51_parent_id_idx\` ON \`eb6304bde8ac98a988117180add07de51\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`eb6304bde8ac98a988117180add07de51_journal_entry_id_idx\` ON \`eb6304bde8ac98a988117180add07de51\` (\`journal_entry_id_id\`);`)
   await db.run(sql`CREATE TABLE \`tax_periods\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -10616,7 +11010,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`tax_periods_filed_by_idx\` ON \`tax_periods\` (\`filed_by_id\`);`)
   await db.run(sql`CREATE INDEX \`tax_periods_updated_at_idx\` ON \`tax_periods\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`tax_periods_created_at_idx\` ON \`tax_periods\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e98126fc1e3855f72a76a355f88289eb6\` (
+  await db.run(sql`CREATE TABLE \`e98126fc1e3858f72a76a355f88289eb6\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10624,9 +11018,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_reports\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e98126fc1e3855f72a76a355f88289eb6_order_idx\` ON \`e98126fc1e3855f72a76a355f88289eb6\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e98126fc1e3855f72a76a355f88289eb6_parent_id_idx\` ON \`e98126fc1e3855f72a76a355f88289eb6\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e4c59bd52eb4f52d6a279a9499d2e35c8\` (
+  await db.run(sql`CREATE INDEX \`e98126fc1e3858f72a76a355f88289eb6_order_idx\` ON \`e98126fc1e3858f72a76a355f88289eb6\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e98126fc1e3858f72a76a355f88289eb6_parent_id_idx\` ON \`e98126fc1e3858f72a76a355f88289eb6\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e4c59bd52eb4f82d6a279a9499d2e35c8\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10640,19 +11034,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_reports\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e4c59bd52eb4f52d6a279a9499d2e35c8_order_idx\` ON \`e4c59bd52eb4f52d6a279a9499d2e35c8\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e4c59bd52eb4f52d6a279a9499d2e35c8_parent_id_idx\` ON \`e4c59bd52eb4f52d6a279a9499d2e35c8\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ebf8b394d0fdc56c18e4f79da4d0015e7\` (
+  await db.run(sql`CREATE INDEX \`e4c59bd52eb4f82d6a279a9499d2e35c8_order_idx\` ON \`e4c59bd52eb4f82d6a279a9499d2e35c8\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e4c59bd52eb4f82d6a279a9499d2e35c8_parent_id_idx\` ON \`e4c59bd52eb4f82d6a279a9499d2e35c8\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ebf8b394d0fdc86c18e4f79da4d0015e7\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`jurisdiction\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e6443025e2e8e5ce299e90c6ffbf537d7\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e6443025e2e8e8ce299e90c6ffbf537d7\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ebf8b394d0fdc56c18e4f79da4d0015e7_order_idx\` ON \`ebf8b394d0fdc56c18e4f79da4d0015e7\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ebf8b394d0fdc56c18e4f79da4d0015e7_parent_id_idx\` ON \`ebf8b394d0fdc56c18e4f79da4d0015e7\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e6443025e2e8e5ce299e90c6ffbf537d7\` (
+  await db.run(sql`CREATE INDEX \`ebf8b394d0fdc86c18e4f79da4d0015e7_order_idx\` ON \`ebf8b394d0fdc86c18e4f79da4d0015e7\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ebf8b394d0fdc86c18e4f79da4d0015e7_parent_id_idx\` ON \`ebf8b394d0fdc86c18e4f79da4d0015e7\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e6443025e2e8e8ce299e90c6ffbf537d7\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10666,8 +11060,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`audit_reports\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e6443025e2e8e5ce299e90c6ffbf537d7_order_idx\` ON \`e6443025e2e8e5ce299e90c6ffbf537d7\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e6443025e2e8e5ce299e90c6ffbf537d7_parent_id_idx\` ON \`e6443025e2e8e5ce299e90c6ffbf537d7\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e6443025e2e8e8ce299e90c6ffbf537d7_order_idx\` ON \`e6443025e2e8e8ce299e90c6ffbf537d7\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6443025e2e8e8ce299e90c6ffbf537d7_parent_id_idx\` ON \`e6443025e2e8e8ce299e90c6ffbf537d7\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`audit_reports\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -10782,7 +11176,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`post_close_analytics_reports_generated_by_idx\` ON \`post_close_analytics_reports\` (\`generated_by_id\`);`)
   await db.run(sql`CREATE INDEX \`post_close_analytics_reports_updated_at_idx\` ON \`post_close_analytics_reports\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`post_close_analytics_reports_created_at_idx\` ON \`post_close_analytics_reports\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`efcc0fcec210150b68b558b4fd7cc7f1d\` (
+  await db.run(sql`CREATE TABLE \`efcc0fcec210180b68b558b4fd7cc7f1d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10791,8 +11185,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`fiscal_devices\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`efcc0fcec210150b68b558b4fd7cc7f1d_order_idx\` ON \`efcc0fcec210150b68b558b4fd7cc7f1d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`efcc0fcec210150b68b558b4fd7cc7f1d_parent_id_idx\` ON \`efcc0fcec210150b68b558b4fd7cc7f1d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`efcc0fcec210180b68b558b4fd7cc7f1d_order_idx\` ON \`efcc0fcec210180b68b558b4fd7cc7f1d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`efcc0fcec210180b68b558b4fd7cc7f1d_parent_id_idx\` ON \`efcc0fcec210180b68b558b4fd7cc7f1d\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`fiscal_devices\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -10826,7 +11220,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`fiscal_devices_approved_by_idx\` ON \`fiscal_devices\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`fiscal_devices_updated_at_idx\` ON \`fiscal_devices\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`fiscal_devices_created_at_idx\` ON \`fiscal_devices\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e9749956a340957ec9eeac999bdcebefd\` (
+  await db.run(sql`CREATE TABLE \`e9749956a340987ec9eeac999bdcebefd\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10838,8 +11232,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`sales\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e9749956a340957ec9eeac999bdcebefd_order_idx\` ON \`e9749956a340957ec9eeac999bdcebefd\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e9749956a340957ec9eeac999bdcebefd_parent_id_idx\` ON \`e9749956a340957ec9eeac999bdcebefd\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e9749956a340987ec9eeac999bdcebefd_order_idx\` ON \`e9749956a340987ec9eeac999bdcebefd\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e9749956a340987ec9eeac999bdcebefd_parent_id_idx\` ON \`e9749956a340987ec9eeac999bdcebefd\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`sales\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -10896,7 +11290,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`sales_approved_by_idx\` ON \`sales\` (\`approved_by_id\`);`)
   await db.run(sql`CREATE INDEX \`sales_updated_at_idx\` ON \`sales\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`sales_created_at_idx\` ON \`sales\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e63b40236bd7451698a9e62f00c83c76d\` (
+  await db.run(sql`CREATE TABLE \`e63b40236bd7481698a9e62f00c83c76d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10907,9 +11301,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`receipts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e63b40236bd7451698a9e62f00c83c76d_order_idx\` ON \`e63b40236bd7451698a9e62f00c83c76d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e63b40236bd7451698a9e62f00c83c76d_parent_id_idx\` ON \`e63b40236bd7451698a9e62f00c83c76d\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`edc80b35eb7c95472b2e2fc49f713ea39\` (
+  await db.run(sql`CREATE INDEX \`e63b40236bd7481698a9e62f00c83c76d_order_idx\` ON \`e63b40236bd7481698a9e62f00c83c76d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e63b40236bd7481698a9e62f00c83c76d_parent_id_idx\` ON \`e63b40236bd7481698a9e62f00c83c76d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`edc80b35eb7c98472b2e2fc49f713ea39\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -10921,8 +11315,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`receipts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`edc80b35eb7c95472b2e2fc49f713ea39_order_idx\` ON \`edc80b35eb7c95472b2e2fc49f713ea39\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`edc80b35eb7c95472b2e2fc49f713ea39_parent_id_idx\` ON \`edc80b35eb7c95472b2e2fc49f713ea39\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`edc80b35eb7c98472b2e2fc49f713ea39_order_idx\` ON \`edc80b35eb7c98472b2e2fc49f713ea39\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`edc80b35eb7c98472b2e2fc49f713ea39_parent_id_idx\` ON \`edc80b35eb7c98472b2e2fc49f713ea39\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`receipts\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -11225,7 +11619,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`variant_options_updated_at_idx\` ON \`variant_options\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`variant_options_created_at_idx\` ON \`variant_options\` (\`created_at\`);`)
   await db.run(sql`CREATE INDEX \`variant_options_deleted_at_idx\` ON \`variant_options\` (\`deleted_at\`);`)
-  await db.run(sql`CREATE TABLE \`e807e5fa7ee655a6daf578f601def9edb\` (
+  await db.run(sql`CREATE TABLE \`e807e5fa7ee658a6daf578f601def9edb\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11236,11 +11630,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`products\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e807e5fa7ee655a6daf578f601def9edb_order_idx\` ON \`e807e5fa7ee655a6daf578f601def9edb\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e807e5fa7ee655a6daf578f601def9edb_parent_id_idx\` ON \`e807e5fa7ee655a6daf578f601def9edb\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e807e5fa7ee655a6daf578f601def9edb_image_idx\` ON \`e807e5fa7ee655a6daf578f601def9edb\` (\`image_id\`);`)
-  await db.run(sql`CREATE INDEX \`e807e5fa7ee655a6daf578f601def9edb_variant_option_idx\` ON \`e807e5fa7ee655a6daf578f601def9edb\` (\`variant_option_id\`);`)
-  await db.run(sql`CREATE TABLE \`e706ae1eff60a56858e60d43a8408a40c\` (
+  await db.run(sql`CREATE INDEX \`e807e5fa7ee658a6daf578f601def9edb_order_idx\` ON \`e807e5fa7ee658a6daf578f601def9edb\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e807e5fa7ee658a6daf578f601def9edb_parent_id_idx\` ON \`e807e5fa7ee658a6daf578f601def9edb\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e807e5fa7ee658a6daf578f601def9edb_image_idx\` ON \`e807e5fa7ee658a6daf578f601def9edb\` (\`image_id\`);`)
+  await db.run(sql`CREATE INDEX \`e807e5fa7ee658a6daf578f601def9edb_variant_option_idx\` ON \`e807e5fa7ee658a6daf578f601def9edb\` (\`variant_option_id\`);`)
+  await db.run(sql`CREATE TABLE \`e706ae1eff60a86858e60d43a8408a40c\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11249,12 +11643,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_url\` text,
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e2d7410d34f385b4e91b8d3253617c145\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e2d7410d34f388b4e91b8d3253617c145\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e706ae1eff60a56858e60d43a8408a40c_order_idx\` ON \`e706ae1eff60a56858e60d43a8408a40c\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e706ae1eff60a56858e60d43a8408a40c_parent_id_idx\` ON \`e706ae1eff60a56858e60d43a8408a40c\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e2d7410d34f385b4e91b8d3253617c145\` (
+  await db.run(sql`CREATE INDEX \`e706ae1eff60a86858e60d43a8408a40c_order_idx\` ON \`e706ae1eff60a86858e60d43a8408a40c\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e706ae1eff60a86858e60d43a8408a40c_parent_id_idx\` ON \`e706ae1eff60a86858e60d43a8408a40c\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e2d7410d34f388b4e91b8d3253617c145\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11264,10 +11658,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`products\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e2d7410d34f385b4e91b8d3253617c145_order_idx\` ON \`e2d7410d34f385b4e91b8d3253617c145\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e2d7410d34f385b4e91b8d3253617c145_parent_id_idx\` ON \`e2d7410d34f385b4e91b8d3253617c145\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e2d7410d34f385b4e91b8d3253617c145_path_idx\` ON \`e2d7410d34f385b4e91b8d3253617c145\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e8be93ceba4835a2ea2eb22b6dbda9f7d\` (
+  await db.run(sql`CREATE INDEX \`e2d7410d34f388b4e91b8d3253617c145_order_idx\` ON \`e2d7410d34f388b4e91b8d3253617c145\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e2d7410d34f388b4e91b8d3253617c145_parent_id_idx\` ON \`e2d7410d34f388b4e91b8d3253617c145\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e2d7410d34f388b4e91b8d3253617c145_path_idx\` ON \`e2d7410d34f388b4e91b8d3253617c145\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e8be93ceba4838a2ea2eb22b6dbda9f7d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11279,12 +11673,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_url\` text,
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e3e08cdb269b3596c82e9ebaf3a7cdad9\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e3e08cdb269b3896c82e9ebaf3a7cdad9\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e8be93ceba4835a2ea2eb22b6dbda9f7d_order_idx\` ON \`e8be93ceba4835a2ea2eb22b6dbda9f7d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e8be93ceba4835a2ea2eb22b6dbda9f7d_parent_id_idx\` ON \`e8be93ceba4835a2ea2eb22b6dbda9f7d\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e3e08cdb269b3596c82e9ebaf3a7cdad9\` (
+  await db.run(sql`CREATE INDEX \`e8be93ceba4838a2ea2eb22b6dbda9f7d_order_idx\` ON \`e8be93ceba4838a2ea2eb22b6dbda9f7d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e8be93ceba4838a2ea2eb22b6dbda9f7d_parent_id_idx\` ON \`e8be93ceba4838a2ea2eb22b6dbda9f7d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e3e08cdb269b3896c82e9ebaf3a7cdad9\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11293,10 +11687,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`products\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e3e08cdb269b3596c82e9ebaf3a7cdad9_order_idx\` ON \`e3e08cdb269b3596c82e9ebaf3a7cdad9\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e3e08cdb269b3596c82e9ebaf3a7cdad9_parent_id_idx\` ON \`e3e08cdb269b3596c82e9ebaf3a7cdad9\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e3e08cdb269b3596c82e9ebaf3a7cdad9_path_idx\` ON \`e3e08cdb269b3596c82e9ebaf3a7cdad9\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`ed959efe1dd6a56dc91541e91cc18f307\` (
+  await db.run(sql`CREATE INDEX \`e3e08cdb269b3896c82e9ebaf3a7cdad9_order_idx\` ON \`e3e08cdb269b3896c82e9ebaf3a7cdad9\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e3e08cdb269b3896c82e9ebaf3a7cdad9_parent_id_idx\` ON \`e3e08cdb269b3896c82e9ebaf3a7cdad9\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e3e08cdb269b3896c82e9ebaf3a7cdad9_path_idx\` ON \`e3e08cdb269b3896c82e9ebaf3a7cdad9\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`ed959efe1dd6a86dc91541e91cc18f307\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11307,10 +11701,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`products\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ed959efe1dd6a56dc91541e91cc18f307_order_idx\` ON \`ed959efe1dd6a56dc91541e91cc18f307\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ed959efe1dd6a56dc91541e91cc18f307_parent_id_idx\` ON \`ed959efe1dd6a56dc91541e91cc18f307\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ed959efe1dd6a56dc91541e91cc18f307_path_idx\` ON \`ed959efe1dd6a56dc91541e91cc18f307\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`ed959efe1dd6a56dc91541e91cc18f307_media_idx\` ON \`ed959efe1dd6a56dc91541e91cc18f307\` (\`media_id\`);`)
+  await db.run(sql`CREATE INDEX \`ed959efe1dd6a86dc91541e91cc18f307_order_idx\` ON \`ed959efe1dd6a86dc91541e91cc18f307\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ed959efe1dd6a86dc91541e91cc18f307_parent_id_idx\` ON \`ed959efe1dd6a86dc91541e91cc18f307\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ed959efe1dd6a86dc91541e91cc18f307_path_idx\` ON \`ed959efe1dd6a86dc91541e91cc18f307\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`ed959efe1dd6a86dc91541e91cc18f307_media_idx\` ON \`ed959efe1dd6a86dc91541e91cc18f307\` (\`media_id\`);`)
   await db.run(sql`CREATE TABLE \`products\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -11376,7 +11770,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`products_rels_variant_types_id_idx\` ON \`products_rels\` (\`variant_types_id\`);`)
   await db.run(sql`CREATE INDEX \`products_rels_products_id_idx\` ON \`products_rels\` (\`products_id\`);`)
   await db.run(sql`CREATE INDEX \`products_rels_categories_id_idx\` ON \`products_rels\` (\`categories_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e807e5fa7ee655a6daf578f601def9edb_v\` (
+  await db.run(sql`CREATE TABLE \`_e807e5fa7ee658a6daf578f601def9edb_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text(36) PRIMARY KEY NOT NULL,
@@ -11388,11 +11782,11 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_products_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e807e5fa7ee655a6daf578f601def9edb_v_order_idx\` ON \`_e807e5fa7ee655a6daf578f601def9edb_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e807e5fa7ee655a6daf578f601def9edb_v_parent_id_idx\` ON \`_e807e5fa7ee655a6daf578f601def9edb_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e807e5fa7ee655a6daf578f601def9edb_v_image_idx\` ON \`_e807e5fa7ee655a6daf578f601def9edb_v\` (\`image_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e807e5fa7ee655a6daf578f601def9edb_v_variant_option_idx\` ON \`_e807e5fa7ee655a6daf578f601def9edb_v\` (\`variant_option_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e706ae1eff60a56858e60d43a8408a40c_v\` (
+  await db.run(sql`CREATE INDEX \`_e807e5fa7ee658a6daf578f601def9edb_v_order_idx\` ON \`_e807e5fa7ee658a6daf578f601def9edb_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e807e5fa7ee658a6daf578f601def9edb_v_parent_id_idx\` ON \`_e807e5fa7ee658a6daf578f601def9edb_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e807e5fa7ee658a6daf578f601def9edb_v_image_idx\` ON \`_e807e5fa7ee658a6daf578f601def9edb_v\` (\`image_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e807e5fa7ee658a6daf578f601def9edb_v_variant_option_idx\` ON \`_e807e5fa7ee658a6daf578f601def9edb_v\` (\`variant_option_id\`);`)
+  await db.run(sql`CREATE TABLE \`_e706ae1eff60a86858e60d43a8408a40c_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text(36) PRIMARY KEY NOT NULL,
@@ -11402,12 +11796,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
   	\`_uuid\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_e2d7410d34f385b4e91b8d3253617c145_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_e2d7410d34f388b4e91b8d3253617c145_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e706ae1eff60a56858e60d43a8408a40c_v_order_idx\` ON \`_e706ae1eff60a56858e60d43a8408a40c_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e706ae1eff60a56858e60d43a8408a40c_v_parent_id_idx\` ON \`_e706ae1eff60a56858e60d43a8408a40c_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e2d7410d34f385b4e91b8d3253617c145_v\` (
+  await db.run(sql`CREATE INDEX \`_e706ae1eff60a86858e60d43a8408a40c_v_order_idx\` ON \`_e706ae1eff60a86858e60d43a8408a40c_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e706ae1eff60a86858e60d43a8408a40c_v_parent_id_idx\` ON \`_e706ae1eff60a86858e60d43a8408a40c_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`_e2d7410d34f388b4e91b8d3253617c145_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11418,10 +11812,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_products_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e2d7410d34f385b4e91b8d3253617c145_v_order_idx\` ON \`_e2d7410d34f385b4e91b8d3253617c145_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e2d7410d34f385b4e91b8d3253617c145_v_parent_id_idx\` ON \`_e2d7410d34f385b4e91b8d3253617c145_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e2d7410d34f385b4e91b8d3253617c145_v_path_idx\` ON \`_e2d7410d34f385b4e91b8d3253617c145_v\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`_e8be93ceba4835a2ea2eb22b6dbda9f7d_v\` (
+  await db.run(sql`CREATE INDEX \`_e2d7410d34f388b4e91b8d3253617c145_v_order_idx\` ON \`_e2d7410d34f388b4e91b8d3253617c145_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e2d7410d34f388b4e91b8d3253617c145_v_parent_id_idx\` ON \`_e2d7410d34f388b4e91b8d3253617c145_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e2d7410d34f388b4e91b8d3253617c145_v_path_idx\` ON \`_e2d7410d34f388b4e91b8d3253617c145_v\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`_e8be93ceba4838a2ea2eb22b6dbda9f7d_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text(36) PRIMARY KEY NOT NULL,
@@ -11434,12 +11828,12 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`link_label\` text,
   	\`link_appearance\` text DEFAULT 'default',
   	\`_uuid\` text,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e8be93ceba4835a2ea2eb22b6dbda9f7d_v_order_idx\` ON \`_e8be93ceba4835a2ea2eb22b6dbda9f7d_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e8be93ceba4835a2ea2eb22b6dbda9f7d_v_parent_id_idx\` ON \`_e8be93ceba4835a2ea2eb22b6dbda9f7d_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v\` (
+  await db.run(sql`CREATE INDEX \`_e8be93ceba4838a2ea2eb22b6dbda9f7d_v_order_idx\` ON \`_e8be93ceba4838a2ea2eb22b6dbda9f7d_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e8be93ceba4838a2ea2eb22b6dbda9f7d_v_parent_id_idx\` ON \`_e8be93ceba4838a2ea2eb22b6dbda9f7d_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11449,10 +11843,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_products_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v_order_idx\` ON \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v_parent_id_idx\` ON \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v_path_idx\` ON \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`_ed959efe1dd6a56dc91541e91cc18f307_v\` (
+  await db.run(sql`CREATE INDEX \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v_order_idx\` ON \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v_parent_id_idx\` ON \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v_path_idx\` ON \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`_ed959efe1dd6a86dc91541e91cc18f307_v\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11464,10 +11858,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`_products_v\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a56dc91541e91cc18f307_v_order_idx\` ON \`_ed959efe1dd6a56dc91541e91cc18f307_v\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a56dc91541e91cc18f307_v_parent_id_idx\` ON \`_ed959efe1dd6a56dc91541e91cc18f307_v\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a56dc91541e91cc18f307_v_path_idx\` ON \`_ed959efe1dd6a56dc91541e91cc18f307_v\` (\`_path\`);`)
-  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a56dc91541e91cc18f307_v_media_idx\` ON \`_ed959efe1dd6a56dc91541e91cc18f307_v\` (\`media_id\`);`)
+  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a86dc91541e91cc18f307_v_order_idx\` ON \`_ed959efe1dd6a86dc91541e91cc18f307_v\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a86dc91541e91cc18f307_v_parent_id_idx\` ON \`_ed959efe1dd6a86dc91541e91cc18f307_v\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a86dc91541e91cc18f307_v_path_idx\` ON \`_ed959efe1dd6a86dc91541e91cc18f307_v\` (\`_path\`);`)
+  await db.run(sql`CREATE INDEX \`_ed959efe1dd6a86dc91541e91cc18f307_v_media_idx\` ON \`_ed959efe1dd6a86dc91541e91cc18f307_v\` (\`media_id\`);`)
   await db.run(sql`CREATE TABLE \`_products_v\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`parent_id\` text(36),
@@ -11548,7 +11942,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`_products_v_rels_variant_types_id_idx\` ON \`_products_v_rels\` (\`variant_types_id\`);`)
   await db.run(sql`CREATE INDEX \`_products_v_rels_products_id_idx\` ON \`_products_v_rels\` (\`products_id\`);`)
   await db.run(sql`CREATE INDEX \`_products_v_rels_categories_id_idx\` ON \`_products_v_rels\` (\`categories_id\`);`)
-  await db.run(sql`CREATE TABLE \`e36231b73e55757b6bbebfd9458a6c7d6\` (
+  await db.run(sql`CREATE TABLE \`e36231b73e55787b6bbebfd9458a6c7d6\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11560,10 +11954,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`carts\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e36231b73e55757b6bbebfd9458a6c7d6_order_idx\` ON \`e36231b73e55757b6bbebfd9458a6c7d6\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e36231b73e55757b6bbebfd9458a6c7d6_parent_id_idx\` ON \`e36231b73e55757b6bbebfd9458a6c7d6\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e36231b73e55757b6bbebfd9458a6c7d6_product_idx\` ON \`e36231b73e55757b6bbebfd9458a6c7d6\` (\`product_id\`);`)
-  await db.run(sql`CREATE INDEX \`e36231b73e55757b6bbebfd9458a6c7d6_variant_idx\` ON \`e36231b73e55757b6bbebfd9458a6c7d6\` (\`variant_id\`);`)
+  await db.run(sql`CREATE INDEX \`e36231b73e55787b6bbebfd9458a6c7d6_order_idx\` ON \`e36231b73e55787b6bbebfd9458a6c7d6\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e36231b73e55787b6bbebfd9458a6c7d6_parent_id_idx\` ON \`e36231b73e55787b6bbebfd9458a6c7d6\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e36231b73e55787b6bbebfd9458a6c7d6_product_idx\` ON \`e36231b73e55787b6bbebfd9458a6c7d6\` (\`product_id\`);`)
+  await db.run(sql`CREATE INDEX \`e36231b73e55787b6bbebfd9458a6c7d6_variant_idx\` ON \`e36231b73e55787b6bbebfd9458a6c7d6\` (\`variant_id\`);`)
   await db.run(sql`CREATE TABLE \`carts\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -11585,7 +11979,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`carts_customer_idx\` ON \`carts\` (\`customer_id\`);`)
   await db.run(sql`CREATE INDEX \`carts_updated_at_idx\` ON \`carts\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`carts_created_at_idx\` ON \`carts\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`e3acbac9f125c5bad9fe2ad09574853a0\` (
+  await db.run(sql`CREATE TABLE \`e3acbac9f125c8bad9fe2ad09574853a0\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11597,10 +11991,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`orders\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e3acbac9f125c5bad9fe2ad09574853a0_order_idx\` ON \`e3acbac9f125c5bad9fe2ad09574853a0\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e3acbac9f125c5bad9fe2ad09574853a0_parent_id_idx\` ON \`e3acbac9f125c5bad9fe2ad09574853a0\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e3acbac9f125c5bad9fe2ad09574853a0_product_idx\` ON \`e3acbac9f125c5bad9fe2ad09574853a0\` (\`product_id\`);`)
-  await db.run(sql`CREATE INDEX \`e3acbac9f125c5bad9fe2ad09574853a0_variant_idx\` ON \`e3acbac9f125c5bad9fe2ad09574853a0\` (\`variant_id\`);`)
+  await db.run(sql`CREATE INDEX \`e3acbac9f125c8bad9fe2ad09574853a0_order_idx\` ON \`e3acbac9f125c8bad9fe2ad09574853a0\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e3acbac9f125c8bad9fe2ad09574853a0_parent_id_idx\` ON \`e3acbac9f125c8bad9fe2ad09574853a0\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e3acbac9f125c8bad9fe2ad09574853a0_product_idx\` ON \`e3acbac9f125c8bad9fe2ad09574853a0\` (\`product_id\`);`)
+  await db.run(sql`CREATE INDEX \`e3acbac9f125c8bad9fe2ad09574853a0_variant_idx\` ON \`e3acbac9f125c8bad9fe2ad09574853a0\` (\`variant_id\`);`)
   await db.run(sql`CREATE TABLE \`orders\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -11648,7 +12042,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`orders_rels_parent_idx\` ON \`orders_rels\` (\`parent_id\`);`)
   await db.run(sql`CREATE INDEX \`orders_rels_path_idx\` ON \`orders_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`orders_rels_transactions_id_idx\` ON \`orders_rels\` (\`transactions_id\`);`)
-  await db.run(sql`CREATE TABLE \`e4375580a944f574eb05f54d12cb85d91\` (
+  await db.run(sql`CREATE TABLE \`e4375580a944f874eb05f54d12cb85d91\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11660,10 +12054,10 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`transactions\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e4375580a944f574eb05f54d12cb85d91_order_idx\` ON \`e4375580a944f574eb05f54d12cb85d91\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e4375580a944f574eb05f54d12cb85d91_parent_id_idx\` ON \`e4375580a944f574eb05f54d12cb85d91\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e4375580a944f574eb05f54d12cb85d91_product_idx\` ON \`e4375580a944f574eb05f54d12cb85d91\` (\`product_id\`);`)
-  await db.run(sql`CREATE INDEX \`e4375580a944f574eb05f54d12cb85d91_variant_idx\` ON \`e4375580a944f574eb05f54d12cb85d91\` (\`variant_id\`);`)
+  await db.run(sql`CREATE INDEX \`e4375580a944f874eb05f54d12cb85d91_order_idx\` ON \`e4375580a944f874eb05f54d12cb85d91\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e4375580a944f874eb05f54d12cb85d91_parent_id_idx\` ON \`e4375580a944f874eb05f54d12cb85d91\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e4375580a944f874eb05f54d12cb85d91_product_idx\` ON \`e4375580a944f874eb05f54d12cb85d91\` (\`product_id\`);`)
+  await db.run(sql`CREATE INDEX \`e4375580a944f874eb05f54d12cb85d91_variant_idx\` ON \`e4375580a944f874eb05f54d12cb85d91\` (\`variant_id\`);`)
   await db.run(sql`CREATE TABLE \`transactions\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -11704,7 +12098,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`transactions_cart_idx\` ON \`transactions\` (\`cart_id\`);`)
   await db.run(sql`CREATE INDEX \`transactions_updated_at_idx\` ON \`transactions\` (\`updated_at\`);`)
   await db.run(sql`CREATE INDEX \`transactions_created_at_idx\` ON \`transactions\` (\`created_at\`);`)
-  await db.run(sql`CREATE TABLE \`ec7b0187f544b583ba491da04c8bac20f\` (
+  await db.run(sql`CREATE TABLE \`ec7b0187f544b883ba491da04c8bac20f\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11717,19 +12111,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ec7b0187f544b583ba491da04c8bac20f_order_idx\` ON \`ec7b0187f544b583ba491da04c8bac20f\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ec7b0187f544b583ba491da04c8bac20f_parent_id_idx\` ON \`ec7b0187f544b583ba491da04c8bac20f\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ec7b0187f544b583ba491da04c8bac20f_path_idx\` ON \`ec7b0187f544b583ba491da04c8bac20f\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`ec7b0187f544b583ba491da04c8bac20f_locales\` (
+  await db.run(sql`CREATE INDEX \`ec7b0187f544b883ba491da04c8bac20f_order_idx\` ON \`ec7b0187f544b883ba491da04c8bac20f\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ec7b0187f544b883ba491da04c8bac20f_parent_id_idx\` ON \`ec7b0187f544b883ba491da04c8bac20f\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ec7b0187f544b883ba491da04c8bac20f_path_idx\` ON \`ec7b0187f544b883ba491da04c8bac20f\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`ec7b0187f544b883ba491da04c8bac20f_locales\` (
   	\`label\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ec7b0187f544b583ba491da04c8bac20f\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ec7b0187f544b883ba491da04c8bac20f\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`ec7b0187f544b583ba491da04c8bac20f_locales_locale_parent_id_u\` ON \`ec7b0187f544b583ba491da04c8bac20f_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e77b9fc908c6054fc900cc66442b89e32\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`ec7b0187f544b883ba491da04c8bac20f_locales_locale_parent_id_u\` ON \`ec7b0187f544b883ba491da04c8bac20f_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e77b9fc908c6084fc900cc66442b89e32\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11741,19 +12135,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e77b9fc908c6054fc900cc66442b89e32_order_idx\` ON \`e77b9fc908c6054fc900cc66442b89e32\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e77b9fc908c6054fc900cc66442b89e32_parent_id_idx\` ON \`e77b9fc908c6054fc900cc66442b89e32\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e77b9fc908c6054fc900cc66442b89e32_path_idx\` ON \`e77b9fc908c6054fc900cc66442b89e32\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e77b9fc908c6054fc900cc66442b89e32_locales\` (
+  await db.run(sql`CREATE INDEX \`e77b9fc908c6084fc900cc66442b89e32_order_idx\` ON \`e77b9fc908c6084fc900cc66442b89e32\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e77b9fc908c6084fc900cc66442b89e32_parent_id_idx\` ON \`e77b9fc908c6084fc900cc66442b89e32\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e77b9fc908c6084fc900cc66442b89e32_path_idx\` ON \`e77b9fc908c6084fc900cc66442b89e32\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e77b9fc908c6084fc900cc66442b89e32_locales\` (
   	\`label\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e77b9fc908c6054fc900cc66442b89e32\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e77b9fc908c6084fc900cc66442b89e32\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e77b9fc908c6054fc900cc66442b89e32_locales_locale_parent_id_u\` ON \`e77b9fc908c6054fc900cc66442b89e32_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e964a176201f3510d8e23c948af516fb2\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e77b9fc908c6084fc900cc66442b89e32_locales_locale_parent_id_u\` ON \`e77b9fc908c6084fc900cc66442b89e32_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e964a176201f3810d8e23c948af516fb2\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11765,19 +12159,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e964a176201f3510d8e23c948af516fb2_order_idx\` ON \`e964a176201f3510d8e23c948af516fb2\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e964a176201f3510d8e23c948af516fb2_parent_id_idx\` ON \`e964a176201f3510d8e23c948af516fb2\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e964a176201f3510d8e23c948af516fb2_path_idx\` ON \`e964a176201f3510d8e23c948af516fb2\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e964a176201f3510d8e23c948af516fb2_locales\` (
+  await db.run(sql`CREATE INDEX \`e964a176201f3810d8e23c948af516fb2_order_idx\` ON \`e964a176201f3810d8e23c948af516fb2\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e964a176201f3810d8e23c948af516fb2_parent_id_idx\` ON \`e964a176201f3810d8e23c948af516fb2\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e964a176201f3810d8e23c948af516fb2_path_idx\` ON \`e964a176201f3810d8e23c948af516fb2\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e964a176201f3810d8e23c948af516fb2_locales\` (
   	\`label\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e964a176201f3510d8e23c948af516fb2\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e964a176201f3810d8e23c948af516fb2\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e964a176201f3510d8e23c948af516fb2_locales_locale_parent_id_u\` ON \`e964a176201f3510d8e23c948af516fb2_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`ed69fe51f407b56e5a973495011c151e9\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e964a176201f3810d8e23c948af516fb2_locales_locale_parent_id_u\` ON \`e964a176201f3810d8e23c948af516fb2_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`ed69fe51f407b86e5a973495011c151e9\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11786,19 +12180,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ed69fe51f407b56e5a973495011c151e9_order_idx\` ON \`ed69fe51f407b56e5a973495011c151e9\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ed69fe51f407b56e5a973495011c151e9_parent_id_idx\` ON \`ed69fe51f407b56e5a973495011c151e9\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`ed69fe51f407b56e5a973495011c151e9_path_idx\` ON \`ed69fe51f407b56e5a973495011c151e9\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`ed69fe51f407b56e5a973495011c151e9_locales\` (
+  await db.run(sql`CREATE INDEX \`ed69fe51f407b86e5a973495011c151e9_order_idx\` ON \`ed69fe51f407b86e5a973495011c151e9\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ed69fe51f407b86e5a973495011c151e9_parent_id_idx\` ON \`ed69fe51f407b86e5a973495011c151e9\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ed69fe51f407b86e5a973495011c151e9_path_idx\` ON \`ed69fe51f407b86e5a973495011c151e9\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`ed69fe51f407b86e5a973495011c151e9_locales\` (
   	\`message\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ed69fe51f407b56e5a973495011c151e9\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`ed69fe51f407b86e5a973495011c151e9\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`ed69fe51f407b56e5a973495011c151e9_locales_locale_parent_id_u\` ON \`ed69fe51f407b56e5a973495011c151e9_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e172457e3d41c5a0da66683b4f5b2bb5d\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`ed69fe51f407b86e5a973495011c151e9_locales_locale_parent_id_u\` ON \`ed69fe51f407b86e5a973495011c151e9_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e172457e3d41c8a0da66683b4f5b2bb5d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11811,38 +12205,38 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e172457e3d41c5a0da66683b4f5b2bb5d_order_idx\` ON \`e172457e3d41c5a0da66683b4f5b2bb5d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e172457e3d41c5a0da66683b4f5b2bb5d_parent_id_idx\` ON \`e172457e3d41c5a0da66683b4f5b2bb5d\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e172457e3d41c5a0da66683b4f5b2bb5d_path_idx\` ON \`e172457e3d41c5a0da66683b4f5b2bb5d\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e172457e3d41c5a0da66683b4f5b2bb5d_locales\` (
+  await db.run(sql`CREATE INDEX \`e172457e3d41c8a0da66683b4f5b2bb5d_order_idx\` ON \`e172457e3d41c8a0da66683b4f5b2bb5d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e172457e3d41c8a0da66683b4f5b2bb5d_parent_id_idx\` ON \`e172457e3d41c8a0da66683b4f5b2bb5d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e172457e3d41c8a0da66683b4f5b2bb5d_path_idx\` ON \`e172457e3d41c8a0da66683b4f5b2bb5d\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e172457e3d41c8a0da66683b4f5b2bb5d_locales\` (
   	\`label\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e172457e3d41c5a0da66683b4f5b2bb5d\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e172457e3d41c8a0da66683b4f5b2bb5d\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e172457e3d41c5a0da66683b4f5b2bb5d_locales_locale_parent_id_u\` ON \`e172457e3d41c5a0da66683b4f5b2bb5d_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e1fef94f431b555ac823da9a3677c38c6\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e172457e3d41c8a0da66683b4f5b2bb5d_locales_locale_parent_id_u\` ON \`e172457e3d41c8a0da66683b4f5b2bb5d_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e1fef94f431b585ac823da9a3677c38c6\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
   	\`value\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e079ab6e4a6a95374b8033579bf65ae20\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e079ab6e4a6a98374b8033579bf65ae20\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e1fef94f431b555ac823da9a3677c38c6_order_idx\` ON \`e1fef94f431b555ac823da9a3677c38c6\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e1fef94f431b555ac823da9a3677c38c6_parent_id_idx\` ON \`e1fef94f431b555ac823da9a3677c38c6\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e1fef94f431b555ac823da9a3677c38c6_locales\` (
+  await db.run(sql`CREATE INDEX \`e1fef94f431b585ac823da9a3677c38c6_order_idx\` ON \`e1fef94f431b585ac823da9a3677c38c6\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e1fef94f431b585ac823da9a3677c38c6_parent_id_idx\` ON \`e1fef94f431b585ac823da9a3677c38c6\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e1fef94f431b585ac823da9a3677c38c6_locales\` (
   	\`label\` text NOT NULL,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e1fef94f431b555ac823da9a3677c38c6\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e1fef94f431b585ac823da9a3677c38c6\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e1fef94f431b555ac823da9a3677c38c6_locales_locale_parent_id_u\` ON \`e1fef94f431b555ac823da9a3677c38c6_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e079ab6e4a6a95374b8033579bf65ae20\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e1fef94f431b585ac823da9a3677c38c6_locales_locale_parent_id_u\` ON \`e1fef94f431b585ac823da9a3677c38c6_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e079ab6e4a6a98374b8033579bf65ae20\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11855,20 +12249,20 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e079ab6e4a6a95374b8033579bf65ae20_order_idx\` ON \`e079ab6e4a6a95374b8033579bf65ae20\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e079ab6e4a6a95374b8033579bf65ae20_parent_id_idx\` ON \`e079ab6e4a6a95374b8033579bf65ae20\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e079ab6e4a6a95374b8033579bf65ae20_path_idx\` ON \`e079ab6e4a6a95374b8033579bf65ae20\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e079ab6e4a6a95374b8033579bf65ae20_locales\` (
+  await db.run(sql`CREATE INDEX \`e079ab6e4a6a98374b8033579bf65ae20_order_idx\` ON \`e079ab6e4a6a98374b8033579bf65ae20\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e079ab6e4a6a98374b8033579bf65ae20_parent_id_idx\` ON \`e079ab6e4a6a98374b8033579bf65ae20\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e079ab6e4a6a98374b8033579bf65ae20_path_idx\` ON \`e079ab6e4a6a98374b8033579bf65ae20\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e079ab6e4a6a98374b8033579bf65ae20_locales\` (
   	\`label\` text,
   	\`default_value\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e079ab6e4a6a95374b8033579bf65ae20\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e079ab6e4a6a98374b8033579bf65ae20\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e079ab6e4a6a95374b8033579bf65ae20_locales_locale_parent_id_u\` ON \`e079ab6e4a6a95374b8033579bf65ae20_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e87df93fee1815fab87f9c6da399fdb7d\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e079ab6e4a6a98374b8033579bf65ae20_locales_locale_parent_id_u\` ON \`e079ab6e4a6a98374b8033579bf65ae20_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e87df93fee1818fab87f9c6da399fdb7d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11880,19 +12274,19 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e87df93fee1815fab87f9c6da399fdb7d_order_idx\` ON \`e87df93fee1815fab87f9c6da399fdb7d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e87df93fee1815fab87f9c6da399fdb7d_parent_id_idx\` ON \`e87df93fee1815fab87f9c6da399fdb7d\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e87df93fee1815fab87f9c6da399fdb7d_path_idx\` ON \`e87df93fee1815fab87f9c6da399fdb7d\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e87df93fee1815fab87f9c6da399fdb7d_locales\` (
+  await db.run(sql`CREATE INDEX \`e87df93fee1818fab87f9c6da399fdb7d_order_idx\` ON \`e87df93fee1818fab87f9c6da399fdb7d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e87df93fee1818fab87f9c6da399fdb7d_parent_id_idx\` ON \`e87df93fee1818fab87f9c6da399fdb7d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e87df93fee1818fab87f9c6da399fdb7d_path_idx\` ON \`e87df93fee1818fab87f9c6da399fdb7d\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e87df93fee1818fab87f9c6da399fdb7d_locales\` (
   	\`label\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e87df93fee1815fab87f9c6da399fdb7d\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e87df93fee1818fab87f9c6da399fdb7d\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e87df93fee1815fab87f9c6da399fdb7d_locales_locale_parent_id_u\` ON \`e87df93fee1815fab87f9c6da399fdb7d_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e6d67388f0be95e9fa6d861b333356635\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e87df93fee1818fab87f9c6da399fdb7d_locales_locale_parent_id_u\` ON \`e87df93fee1818fab87f9c6da399fdb7d_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e6d67388f0be98e9fa6d861b333356635\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11904,20 +12298,20 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e6d67388f0be95e9fa6d861b333356635_order_idx\` ON \`e6d67388f0be95e9fa6d861b333356635\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e6d67388f0be95e9fa6d861b333356635_parent_id_idx\` ON \`e6d67388f0be95e9fa6d861b333356635\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e6d67388f0be95e9fa6d861b333356635_path_idx\` ON \`e6d67388f0be95e9fa6d861b333356635\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e6d67388f0be95e9fa6d861b333356635_locales\` (
+  await db.run(sql`CREATE INDEX \`e6d67388f0be98e9fa6d861b333356635_order_idx\` ON \`e6d67388f0be98e9fa6d861b333356635\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e6d67388f0be98e9fa6d861b333356635_parent_id_idx\` ON \`e6d67388f0be98e9fa6d861b333356635\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e6d67388f0be98e9fa6d861b333356635_path_idx\` ON \`e6d67388f0be98e9fa6d861b333356635\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e6d67388f0be98e9fa6d861b333356635_locales\` (
   	\`label\` text,
   	\`default_value\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e6d67388f0be95e9fa6d861b333356635\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e6d67388f0be98e9fa6d861b333356635\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e6d67388f0be95e9fa6d861b333356635_locales_locale_parent_id_u\` ON \`e6d67388f0be95e9fa6d861b333356635_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e17421b6a908d5c008312bf0e38ef9253\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e6d67388f0be98e9fa6d861b333356635_locales_locale_parent_id_u\` ON \`e6d67388f0be98e9fa6d861b333356635_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e17421b6a908d8c008312bf0e38ef9253\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`_path\` text NOT NULL,
@@ -11929,20 +12323,20 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e17421b6a908d5c008312bf0e38ef9253_order_idx\` ON \`e17421b6a908d5c008312bf0e38ef9253\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e17421b6a908d5c008312bf0e38ef9253_parent_id_idx\` ON \`e17421b6a908d5c008312bf0e38ef9253\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`e17421b6a908d5c008312bf0e38ef9253_path_idx\` ON \`e17421b6a908d5c008312bf0e38ef9253\` (\`_path\`);`)
-  await db.run(sql`CREATE TABLE \`e17421b6a908d5c008312bf0e38ef9253_locales\` (
+  await db.run(sql`CREATE INDEX \`e17421b6a908d8c008312bf0e38ef9253_order_idx\` ON \`e17421b6a908d8c008312bf0e38ef9253\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e17421b6a908d8c008312bf0e38ef9253_parent_id_idx\` ON \`e17421b6a908d8c008312bf0e38ef9253\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e17421b6a908d8c008312bf0e38ef9253_path_idx\` ON \`e17421b6a908d8c008312bf0e38ef9253\` (\`_path\`);`)
+  await db.run(sql`CREATE TABLE \`e17421b6a908d8c008312bf0e38ef9253_locales\` (
   	\`label\` text,
   	\`default_value\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e17421b6a908d5c008312bf0e38ef9253\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e17421b6a908d8c008312bf0e38ef9253\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e17421b6a908d5c008312bf0e38ef9253_locales_locale_parent_id_u\` ON \`e17421b6a908d5c008312bf0e38ef9253_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3\` (
+  await db.run(sql`CREATE UNIQUE INDEX \`e17421b6a908d8c008312bf0e38ef9253_locales_locale_parent_id_u\` ON \`e17421b6a908d8c008312bf0e38ef9253_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11954,18 +12348,18 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`forms\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3_order_idx\` ON \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3_parent_id_idx\` ON \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3\` (\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3_locales\` (
+  await db.run(sql`CREATE INDEX \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3_order_idx\` ON \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3_parent_id_idx\` ON \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE TABLE \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3_locales\` (
   	\`subject\` text DEFAULT 'You''ve received a new message.' NOT NULL,
   	\`message\` text,
   	\`id\` integer PRIMARY KEY NOT NULL,
   	\`_locale\` text NOT NULL,
   	\`_parent_id\` text NOT NULL,
-  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3\`(\`id\`) ON UPDATE no action ON DELETE cascade
+  	FOREIGN KEY (\`_parent_id\`) REFERENCES \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE UNIQUE INDEX \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3_locales_locale_parent_id_u\` ON \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3_locales\` (\`_locale\`,\`_parent_id\`);`)
+  await db.run(sql`CREATE UNIQUE INDEX \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3_locales_locale_parent_id_u\` ON \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3_locales\` (\`_locale\`,\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`forms\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -11989,7 +12383,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`forms_locales_locale_parent_id_unique\` ON \`forms_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`e0fa36534560c542e89b11febfa39e66d\` (
+  await db.run(sql`CREATE TABLE \`e0fa36534560c842e89b11febfa39e66d\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -11998,8 +12392,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`form_submissions\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`e0fa36534560c542e89b11febfa39e66d_order_idx\` ON \`e0fa36534560c542e89b11febfa39e66d\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`e0fa36534560c542e89b11febfa39e66d_parent_id_idx\` ON \`e0fa36534560c542e89b11febfa39e66d\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`e0fa36534560c842e89b11febfa39e66d_order_idx\` ON \`e0fa36534560c842e89b11febfa39e66d\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`e0fa36534560c842e89b11febfa39e66d_parent_id_idx\` ON \`e0fa36534560c842e89b11febfa39e66d\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`form_submissions\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -12044,7 +12438,7 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   await db.run(sql`CREATE INDEX \`redirects_rels_path_idx\` ON \`redirects_rels\` (\`path\`);`)
   await db.run(sql`CREATE INDEX \`redirects_rels_pages_id_idx\` ON \`redirects_rels\` (\`pages_id\`);`)
   await db.run(sql`CREATE INDEX \`redirects_rels_posts_id_idx\` ON \`redirects_rels\` (\`posts_id\`);`)
-  await db.run(sql`CREATE TABLE \`ead7b4055f97950b6b7934d5acfec3e62\` (
+  await db.run(sql`CREATE TABLE \`ead7b4055f97980b6b7934d5acfec3e62\` (
   	\`_order\` integer NOT NULL,
   	\`_parent_id\` text(36) NOT NULL,
   	\`id\` text PRIMARY KEY NOT NULL,
@@ -12054,12 +12448,14 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	FOREIGN KEY (\`_parent_id\`) REFERENCES \`search\`(\`id\`) ON UPDATE no action ON DELETE cascade
   );
   `)
-  await db.run(sql`CREATE INDEX \`ead7b4055f97950b6b7934d5acfec3e62_order_idx\` ON \`ead7b4055f97950b6b7934d5acfec3e62\` (\`_order\`);`)
-  await db.run(sql`CREATE INDEX \`ead7b4055f97950b6b7934d5acfec3e62_parent_id_idx\` ON \`ead7b4055f97950b6b7934d5acfec3e62\` (\`_parent_id\`);`)
+  await db.run(sql`CREATE INDEX \`ead7b4055f97980b6b7934d5acfec3e62_order_idx\` ON \`ead7b4055f97980b6b7934d5acfec3e62\` (\`_order\`);`)
+  await db.run(sql`CREATE INDEX \`ead7b4055f97980b6b7934d5acfec3e62_parent_id_idx\` ON \`ead7b4055f97980b6b7934d5acfec3e62\` (\`_parent_id\`);`)
   await db.run(sql`CREATE TABLE \`search\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
   	\`priority\` numeric,
+  	\`doc_relation_to\` text NOT NULL,
+  	\`doc_value\` text NOT NULL,
   	\`slug\` text,
   	\`meta_title\` text,
   	\`meta_description\` text,
@@ -12070,6 +12466,8 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`search_uuid_idx\` ON \`search\` (\`uuid\`);`)
+  await db.run(sql`CREATE INDEX \`search_doc_doc_relation_to_idx\` ON \`search\` (\`doc_relation_to\`);`)
+  await db.run(sql`CREATE INDEX \`search_doc_doc_value_idx\` ON \`search\` (\`doc_value\`);`)
   await db.run(sql`CREATE INDEX \`search_slug_idx\` ON \`search\` (\`slug\`);`)
   await db.run(sql`CREATE INDEX \`search_meta_meta_image_idx\` ON \`search\` (\`meta_image_id\`);`)
   await db.run(sql`CREATE INDEX \`search_updated_at_idx\` ON \`search\` (\`updated_at\`);`)
@@ -12083,20 +12481,6 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   );
   `)
   await db.run(sql`CREATE UNIQUE INDEX \`search_locales_locale_parent_id_unique\` ON \`search_locales\` (\`_locale\`,\`_parent_id\`);`)
-  await db.run(sql`CREATE TABLE \`search_rels\` (
-  	\`id\` integer PRIMARY KEY NOT NULL,
-  	\`order\` integer,
-  	\`parent_id\` text(36) NOT NULL,
-  	\`path\` text NOT NULL,
-  	\`posts_id\` text(36),
-  	FOREIGN KEY (\`parent_id\`) REFERENCES \`search\`(\`id\`) ON UPDATE no action ON DELETE cascade,
-  	FOREIGN KEY (\`posts_id\`) REFERENCES \`posts\`(\`id\`) ON UPDATE no action ON DELETE cascade
-  );
-  `)
-  await db.run(sql`CREATE INDEX \`search_rels_order_idx\` ON \`search_rels\` (\`order\`);`)
-  await db.run(sql`CREATE INDEX \`search_rels_parent_idx\` ON \`search_rels\` (\`parent_id\`);`)
-  await db.run(sql`CREATE INDEX \`search_rels_path_idx\` ON \`search_rels\` (\`path\`);`)
-  await db.run(sql`CREATE INDEX \`search_rels_posts_id_idx\` ON \`search_rels\` (\`posts_id\`);`)
   await db.run(sql`CREATE TABLE \`exports\` (
   	\`id\` text(36) PRIMARY KEY NOT NULL,
   	\`uuid\` text,
@@ -12195,6 +12579,22 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
   	\`memories_create\` integer DEFAULT false,
   	\`memories_update\` integer DEFAULT false,
   	\`memories_delete\` integer DEFAULT false,
+  	\`connections_find\` integer DEFAULT false,
+  	\`connections_create\` integer DEFAULT false,
+  	\`connections_update\` integer DEFAULT false,
+  	\`connections_delete\` integer DEFAULT false,
+  	\`messages_find\` integer DEFAULT false,
+  	\`messages_create\` integer DEFAULT false,
+  	\`messages_update\` integer DEFAULT false,
+  	\`messages_delete\` integer DEFAULT false,
+  	\`job_positions_find\` integer DEFAULT false,
+  	\`job_positions_create\` integer DEFAULT false,
+  	\`job_positions_update\` integer DEFAULT false,
+  	\`job_positions_delete\` integer DEFAULT false,
+  	\`employees_find\` integer DEFAULT false,
+  	\`employees_create\` integer DEFAULT false,
+  	\`employees_update\` integer DEFAULT false,
+  	\`employees_delete\` integer DEFAULT false,
   	\`header_find\` integer DEFAULT false,
   	\`header_update\` integer DEFAULT false,
   	\`footer_find\` integer DEFAULT false,
@@ -12467,50 +12867,51 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
 
 export async function down({ db, payload, req }: MigrateDownArgs): Promise<void> {
   await db.run(sql`DROP TABLE \`tenants\`;`)
-  await db.run(sql`DROP TABLE \`e1bbe6311f13252339e495c8800870cc5\`;`)
-  await db.run(sql`DROP TABLE \`ef1d2a1529c6a59c49a42b4994043f30d\`;`)
-  await db.run(sql`DROP TABLE \`e2a4022d9ee875058b14896fdca6954e1\`;`)
+  await db.run(sql`DROP TABLE \`eb6619ccc69668dd8a8e13e6b854fec14\`;`)
+  await db.run(sql`DROP TABLE \`e1bbe6311f13282339e495c8800870cc5\`;`)
+  await db.run(sql`DROP TABLE \`ef1d2a1529c6a89c49a42b4994043f30d\`;`)
+  await db.run(sql`DROP TABLE \`e2a4022d9ee878058b14896fdca6954e1\`;`)
   await db.run(sql`DROP TABLE \`users_sessions\`;`)
   await db.run(sql`DROP TABLE \`users\`;`)
   await db.run(sql`DROP TABLE \`roles\`;`)
   await db.run(sql`DROP TABLE \`roles_rels\`;`)
   await db.run(sql`DROP TABLE \`user_roles\`;`)
-  await db.run(sql`DROP TABLE \`e0dc067124d475cdba631b9fa5d670eec\`;`)
-  await db.run(sql`DROP TABLE \`e0b6622b1c93150c98294697a29240a6f\`;`)
-  await db.run(sql`DROP TABLE \`e36c778a2ac5654d1bbce502ea4931500\`;`)
-  await db.run(sql`DROP TABLE \`ee3949e56baa25c1b867172a5dee40d6a\`;`)
-  await db.run(sql`DROP TABLE \`ef7c8a03cb2625f4da06a88c4f30d47c7\`;`)
-  await db.run(sql`DROP TABLE \`e81cc20c70fe75dbeaf3103630ebc6fbc\`;`)
-  await db.run(sql`DROP TABLE \`e9cafee9f0fed5430a34bf14bb8d7771b\`;`)
-  await db.run(sql`DROP TABLE \`e87f1621ae35f569b9a226c9e15aa2c0c\`;`)
-  await db.run(sql`DROP TABLE \`e9e1fb928a8a054e1aa55074c6bfe43c8\`;`)
+  await db.run(sql`DROP TABLE \`e0dc067124d478cdba631b9fa5d670eec\`;`)
+  await db.run(sql`DROP TABLE \`e0b6622b1c93180c98294697a29240a6f\`;`)
+  await db.run(sql`DROP TABLE \`e36c778a2ac5684d1bbce502ea4931500\`;`)
+  await db.run(sql`DROP TABLE \`ee3949e56baa28c1b867172a5dee40d6a\`;`)
+  await db.run(sql`DROP TABLE \`ef7c8a03cb2628f4da06a88c4f30d47c7\`;`)
+  await db.run(sql`DROP TABLE \`e81cc20c70fe78dbeaf3103630ebc6fbc\`;`)
+  await db.run(sql`DROP TABLE \`e9cafee9f0fed8430a34bf14bb8d7771b\`;`)
+  await db.run(sql`DROP TABLE \`e87f1621ae35f869b9a226c9e15aa2c0c\`;`)
+  await db.run(sql`DROP TABLE \`e9e1fb928a8a084e1aa55074c6bfe43c8\`;`)
   await db.run(sql`DROP TABLE \`pages\`;`)
   await db.run(sql`DROP TABLE \`pages_locales\`;`)
   await db.run(sql`DROP TABLE \`pages_rels\`;`)
-  await db.run(sql`DROP TABLE \`_e0dc067124d475cdba631b9fa5d670eec_v\`;`)
-  await db.run(sql`DROP TABLE \`_e0b6622b1c93150c98294697a29240a6f_v\`;`)
-  await db.run(sql`DROP TABLE \`_e36c778a2ac5654d1bbce502ea4931500_v\`;`)
-  await db.run(sql`DROP TABLE \`_ee3949e56baa25c1b867172a5dee40d6a_v\`;`)
-  await db.run(sql`DROP TABLE \`_ef7c8a03cb2625f4da06a88c4f30d47c7_v\`;`)
-  await db.run(sql`DROP TABLE \`_e81cc20c70fe75dbeaf3103630ebc6fbc_v\`;`)
-  await db.run(sql`DROP TABLE \`_e9cafee9f0fed5430a34bf14bb8d7771b_v\`;`)
-  await db.run(sql`DROP TABLE \`_e87f1621ae35f569b9a226c9e15aa2c0c_v\`;`)
-  await db.run(sql`DROP TABLE \`_e9e1fb928a8a054e1aa55074c6bfe43c8_v\`;`)
+  await db.run(sql`DROP TABLE \`_e0dc067124d478cdba631b9fa5d670eec_v\`;`)
+  await db.run(sql`DROP TABLE \`_e0b6622b1c93180c98294697a29240a6f_v\`;`)
+  await db.run(sql`DROP TABLE \`_e36c778a2ac5684d1bbce502ea4931500_v\`;`)
+  await db.run(sql`DROP TABLE \`_ee3949e56baa28c1b867172a5dee40d6a_v\`;`)
+  await db.run(sql`DROP TABLE \`_ef7c8a03cb2628f4da06a88c4f30d47c7_v\`;`)
+  await db.run(sql`DROP TABLE \`_e81cc20c70fe78dbeaf3103630ebc6fbc_v\`;`)
+  await db.run(sql`DROP TABLE \`_e9cafee9f0fed8430a34bf14bb8d7771b_v\`;`)
+  await db.run(sql`DROP TABLE \`_e87f1621ae35f869b9a226c9e15aa2c0c_v\`;`)
+  await db.run(sql`DROP TABLE \`_e9e1fb928a8a084e1aa55074c6bfe43c8_v\`;`)
   await db.run(sql`DROP TABLE \`_pages_v\`;`)
   await db.run(sql`DROP TABLE \`_pages_v_locales\`;`)
   await db.run(sql`DROP TABLE \`_pages_v_rels\`;`)
-  await db.run(sql`DROP TABLE \`e4cefc0562d375871ba0511ef359b5126\`;`)
+  await db.run(sql`DROP TABLE \`e4cefc0562d378871ba0511ef359b5126\`;`)
   await db.run(sql`DROP TABLE \`posts\`;`)
   await db.run(sql`DROP TABLE \`posts_locales\`;`)
   await db.run(sql`DROP TABLE \`posts_rels\`;`)
-  await db.run(sql`DROP TABLE \`_e4cefc0562d375871ba0511ef359b5126_v\`;`)
+  await db.run(sql`DROP TABLE \`_e4cefc0562d378871ba0511ef359b5126_v\`;`)
   await db.run(sql`DROP TABLE \`_posts_v\`;`)
   await db.run(sql`DROP TABLE \`_posts_v_locales\`;`)
   await db.run(sql`DROP TABLE \`_posts_v_rels\`;`)
   await db.run(sql`DROP TABLE \`media\`;`)
-  await db.run(sql`DROP TABLE \`eb9ba47f0935d55bf9626dd6756872a56\`;`)
+  await db.run(sql`DROP TABLE \`eb9ba47f0935d85bf9626dd6756872a56\`;`)
   await db.run(sql`DROP TABLE \`categories\`;`)
-  await db.run(sql`DROP TABLE \`e0f3c4597ea4d515698b6463649de69e2\`;`)
+  await db.run(sql`DROP TABLE \`e0f3c4597ea4d815698b6463649de69e2\`;`)
   await db.run(sql`DROP TABLE \`invoices\`;`)
   await db.run(sql`DROP TABLE \`invoice_lines\`;`)
   await db.run(sql`DROP TABLE \`payment_methods\`;`)
@@ -12518,39 +12919,39 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`subscription_plans\`;`)
   await db.run(sql`DROP TABLE \`subscriptions\`;`)
   await db.run(sql`DROP TABLE \`items\`;`)
-  await db.run(sql`DROP TABLE \`e056c1b5d14945e2cbc1c72ae143dec2a\`;`)
+  await db.run(sql`DROP TABLE \`e056c1b5d14948e2cbc1c72ae143dec2a\`;`)
   await db.run(sql`DROP TABLE \`gl_accounts\`;`)
   await db.run(sql`DROP TABLE \`gl_accounts_locales\`;`)
   await db.run(sql`DROP TABLE \`gl_posting_rules\`;`)
   await db.run(sql`DROP TABLE \`gl_posting_rules_rels\`;`)
-  await db.run(sql`DROP TABLE \`e1bde3ecd157d5e63be74306ae19685b5\`;`)
-  await db.run(sql`DROP TABLE \`e1bde3ecd157d5e63be74306ae19685b5_locales\`;`)
+  await db.run(sql`DROP TABLE \`e1bde3ecd157d8e63be74306ae19685b5\`;`)
+  await db.run(sql`DROP TABLE \`e1bde3ecd157d8e63be74306ae19685b5_locales\`;`)
   await db.run(sql`DROP TABLE \`journal_entries\`;`)
   await db.run(sql`DROP TABLE \`journal_entries_locales\`;`)
-  await db.run(sql`DROP TABLE \`ea6ce72f9bf095ac48a6c7dc3362a4b9d\`;`)
+  await db.run(sql`DROP TABLE \`ea6ce72f9bf098ac48a6c7dc3362a4b9d\`;`)
   await db.run(sql`DROP TABLE \`gl_postings\`;`)
   await db.run(sql`DROP TABLE \`period_locks\`;`)
   await db.run(sql`DROP TABLE \`period_locks_rels\`;`)
-  await db.run(sql`DROP TABLE \`e331d8adbec1359829f03d1a10e5ec41d\`;`)
+  await db.run(sql`DROP TABLE \`e331d8adbec1389829f03d1a10e5ec41d\`;`)
   await db.run(sql`DROP TABLE \`closing_entries\`;`)
-  await db.run(sql`DROP TABLE \`e054a9f104e2253d399aaa493f7a613d3\`;`)
-  await db.run(sql`DROP TABLE \`e054a9f104e2253d399aaa493f7a613d3_locales\`;`)
-  await db.run(sql`DROP TABLE \`e03d4a88bb21955cf9204ac7e7b91dd7b\`;`)
+  await db.run(sql`DROP TABLE \`e054a9f104e2283d399aaa493f7a613d3\`;`)
+  await db.run(sql`DROP TABLE \`e054a9f104e2283d399aaa493f7a613d3_locales\`;`)
+  await db.run(sql`DROP TABLE \`e03d4a88bb21985cf9204ac7e7b91dd7b\`;`)
   await db.run(sql`DROP TABLE \`bank_statements\`;`)
-  await db.run(sql`DROP TABLE \`e31afc32d6c1b5e8fbbde1ae7a7c1b65e\`;`)
+  await db.run(sql`DROP TABLE \`e31afc32d6c1b8e8fbbde1ae7a7c1b65e\`;`)
   await db.run(sql`DROP TABLE \`bank_transactions\`;`)
   await db.run(sql`DROP TABLE \`bank_accounts\`;`)
-  await db.run(sql`DROP TABLE \`e79d3f9d1d5265d09bc229598ff88c147\`;`)
-  await db.run(sql`DROP TABLE \`e79d3f9d1d5265d09bc229598ff88c147_locales\`;`)
-  await db.run(sql`DROP TABLE \`eea91a2735c5d51fab00e29e7205a1913\`;`)
-  await db.run(sql`DROP TABLE \`eea91a2735c5d51fab00e29e7205a1913_locales\`;`)
+  await db.run(sql`DROP TABLE \`e79d3f9d1d5268d09bc229598ff88c147\`;`)
+  await db.run(sql`DROP TABLE \`e79d3f9d1d5268d09bc229598ff88c147_locales\`;`)
+  await db.run(sql`DROP TABLE \`eea91a2735c5d81fab00e29e7205a1913\`;`)
+  await db.run(sql`DROP TABLE \`eea91a2735c5d81fab00e29e7205a1913_locales\`;`)
   await db.run(sql`DROP TABLE \`account_reconciliations\`;`)
   await db.run(sql`DROP TABLE \`account_reconciliations_locales\`;`)
-  await db.run(sql`DROP TABLE \`e90e89d5dfa075b99bb64c75493531070\`;`)
-  await db.run(sql`DROP TABLE \`e90e89d5dfa075b99bb64c75493531070_locales\`;`)
+  await db.run(sql`DROP TABLE \`e90e89d5dfa078b99bb64c75493531070\`;`)
+  await db.run(sql`DROP TABLE \`e90e89d5dfa078b99bb64c75493531070_locales\`;`)
   await db.run(sql`DROP TABLE \`bank_reconciliations\`;`)
-  await db.run(sql`DROP TABLE \`e6ebcc7c621e657b59dbfd3dbfb40df80\`;`)
-  await db.run(sql`DROP TABLE \`eb29a4918c12859c69eaee1b51e5e94dc\`;`)
+  await db.run(sql`DROP TABLE \`e6ebcc7c621e687b59dbfd3dbfb40df80\`;`)
+  await db.run(sql`DROP TABLE \`eb29a4918c12889c69eaee1b51e5e94dc\`;`)
   await db.run(sql`DROP TABLE \`financial_statements\`;`)
   await db.run(sql`DROP TABLE \`period_end_adjustments\`;`)
   await db.run(sql`DROP TABLE \`period_end_adjustments_locales\`;`)
@@ -12563,7 +12964,7 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`tax_codes\`;`)
   await db.run(sql`DROP TABLE \`tax_codes_rels\`;`)
   await db.run(sql`DROP TABLE \`tax_jurisdictions\`;`)
-  await db.run(sql`DROP TABLE \`eb42b6ce7a98b5069add2b649d5ebebf1\`;`)
+  await db.run(sql`DROP TABLE \`eb42b6ce7a98b8069add2b649d5ebebf1\`;`)
   await db.run(sql`DROP TABLE \`tax_returns\`;`)
   await db.run(sql`DROP TABLE \`tax_returns_rels\`;`)
   await db.run(sql`DROP TABLE \`currency_rates\`;`)
@@ -12580,23 +12981,23 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`opportunities_locales\`;`)
   await db.run(sql`DROP TABLE \`customer_segments\`;`)
   await db.run(sql`DROP TABLE \`customer_segments_locales\`;`)
-  await db.run(sql`DROP TABLE \`e601f23df2ed85bbc9842a7d6b5f41838\`;`)
-  await db.run(sql`DROP TABLE \`e601f23df2ed85bbc9842a7d6b5f41838_locales\`;`)
+  await db.run(sql`DROP TABLE \`e601f23df2ed88bbc9842a7d6b5f41838\`;`)
+  await db.run(sql`DROP TABLE \`e601f23df2ed88bbc9842a7d6b5f41838_locales\`;`)
   await db.run(sql`DROP TABLE \`quotes\`;`)
-  await db.run(sql`DROP TABLE \`ea1127d16d0115cc6b920e6820a2d4f19\`;`)
-  await db.run(sql`DROP TABLE \`ea1127d16d0115cc6b920e6820a2d4f19_locales\`;`)
+  await db.run(sql`DROP TABLE \`ea1127d16d0118cc6b920e6820a2d4f19\`;`)
+  await db.run(sql`DROP TABLE \`ea1127d16d0118cc6b920e6820a2d4f19_locales\`;`)
   await db.run(sql`DROP TABLE \`sales_orders\`;`)
   await db.run(sql`DROP TABLE \`sales_orders_locales\`;`)
   await db.run(sql`DROP TABLE \`sales_commissions\`;`)
   await db.run(sql`DROP TABLE \`credit_memos\`;`)
-  await db.run(sql`DROP TABLE \`e70806190d4045502b85ef401011f5819\`;`)
+  await db.run(sql`DROP TABLE \`e70806190d4048502b85ef401011f5819\`;`)
   await db.run(sql`DROP TABLE \`returns\`;`)
-  await db.run(sql`DROP TABLE \`e934f7628401552b094b784c3c47361f6\`;`)
+  await db.run(sql`DROP TABLE \`e934f7628401582b094b784c3c47361f6\`;`)
   await db.run(sql`DROP TABLE \`shipments\`;`)
   await db.run(sql`DROP TABLE \`refunds\`;`)
   await db.run(sql`DROP TABLE \`payment_allocations\`;`)
-  await db.run(sql`DROP TABLE \`eceaf268e207952e58512501eaf1eb056\`;`)
-  await db.run(sql`DROP TABLE \`eceaf268e207952e58512501eaf1eb056_locales\`;`)
+  await db.run(sql`DROP TABLE \`eceaf268e207982e58512501eaf1eb056\`;`)
+  await db.run(sql`DROP TABLE \`eceaf268e207982e58512501eaf1eb056_locales\`;`)
   await db.run(sql`DROP TABLE \`dunning_cycles\`;`)
   await db.run(sql`DROP TABLE \`vendors\`;`)
   await db.run(sql`DROP TABLE \`vendors_rels\`;`)
@@ -12604,35 +13005,35 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`vq_lines_locales\`;`)
   await db.run(sql`DROP TABLE \`vendor_quotes\`;`)
   await db.run(sql`DROP TABLE \`vendor_scorecards\`;`)
-  await db.run(sql`DROP TABLE \`eced028e288015042b97287d40f1c01dd\`;`)
-  await db.run(sql`DROP TABLE \`eced028e288015042b97287d40f1c01dd_locales\`;`)
+  await db.run(sql`DROP TABLE \`eced028e288018042b97287d40f1c01dd\`;`)
+  await db.run(sql`DROP TABLE \`eced028e288018042b97287d40f1c01dd_locales\`;`)
   await db.run(sql`DROP TABLE \`purchase_orders\`;`)
   await db.run(sql`DROP TABLE \`pr_lines\`;`)
   await db.run(sql`DROP TABLE \`pr_lines_locales\`;`)
   await db.run(sql`DROP TABLE \`pr_approval\`;`)
   await db.run(sql`DROP TABLE \`pr_approval_locales\`;`)
   await db.run(sql`DROP TABLE \`purchase_requisitions\`;`)
-  await db.run(sql`DROP TABLE \`eeacdeee24bab56b0a04db17f2c688224\`;`)
-  await db.run(sql`DROP TABLE \`eeacdeee24bab56b0a04db17f2c688224_locales\`;`)
+  await db.run(sql`DROP TABLE \`eeacdeee24bab86b0a04db17f2c688224\`;`)
+  await db.run(sql`DROP TABLE \`eeacdeee24bab86b0a04db17f2c688224_locales\`;`)
   await db.run(sql`DROP TABLE \`goods_receipts\`;`)
   await db.run(sql`DROP TABLE \`inventory_movements\`;`)
-  await db.run(sql`DROP TABLE \`ebc746b7cb78f5bacb518c6e721f7b188\`;`)
-  await db.run(sql`DROP TABLE \`ebc746b7cb78f5bacb518c6e721f7b188_locales\`;`)
+  await db.run(sql`DROP TABLE \`ebc746b7cb78f8bacb518c6e721f7b188\`;`)
+  await db.run(sql`DROP TABLE \`ebc746b7cb78f8bacb518c6e721f7b188_locales\`;`)
   await db.run(sql`DROP TABLE \`warehouse_locations\`;`)
   await db.run(sql`DROP TABLE \`warehouse_locations_locales\`;`)
-  await db.run(sql`DROP TABLE \`ea97c27c5b39a56618794e02c9a375e5b\`;`)
+  await db.run(sql`DROP TABLE \`ea97c27c5b39a86618794e02c9a375e5b\`;`)
   await db.run(sql`DROP TABLE \`cost_centers\`;`)
   await db.run(sql`DROP TABLE \`cost_centers_locales\`;`)
-  await db.run(sql`DROP TABLE \`e595e236aadea5384bc3bfd7c2ccb6542\`;`)
-  await db.run(sql`DROP TABLE \`e595e236aadea5384bc3bfd7c2ccb6542_locales\`;`)
+  await db.run(sql`DROP TABLE \`e595e236aadea8384bc3bfd7c2ccb6542\`;`)
+  await db.run(sql`DROP TABLE \`e595e236aadea8384bc3bfd7c2ccb6542_locales\`;`)
   await db.run(sql`DROP TABLE \`budget_planning\`;`)
   await db.run(sql`DROP TABLE \`cost_variances\`;`)
   await db.run(sql`DROP TABLE \`intercompany_transactions\`;`)
-  await db.run(sql`DROP TABLE \`e739a79cfffa05b4faa0baba3495bf9be\`;`)
+  await db.run(sql`DROP TABLE \`e739a79cfffa08b4faa0baba3495bf9be\`;`)
   await db.run(sql`DROP TABLE \`consolidation_eliminations\`;`)
   await db.run(sql`DROP TABLE \`fx_transactions\`;`)
-  await db.run(sql`DROP TABLE \`e476334f99a5050e1b8620daf7fabba26\`;`)
-  await db.run(sql`DROP TABLE \`e476334f99a5050e1b8620daf7fabba26_locales\`;`)
+  await db.run(sql`DROP TABLE \`e476334f99a5080e1b8620daf7fabba26\`;`)
+  await db.run(sql`DROP TABLE \`e476334f99a5080e1b8620daf7fabba26_locales\`;`)
   await db.run(sql`DROP TABLE \`contracts\`;`)
   await db.run(sql`DROP TABLE \`contracts_locales\`;`)
   await db.run(sql`DROP TABLE \`contracts_rels\`;`)
@@ -12640,17 +13041,21 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`performance_obligations_locales\`;`)
   await db.run(sql`DROP TABLE \`commitments_and_contingencies\`;`)
   await db.run(sql`DROP TABLE \`commitments_and_contingencies_locales\`;`)
-  await db.run(sql`DROP TABLE \`e5496afa044df5c088b22ddbda34aa6ab\`;`)
-  await db.run(sql`DROP TABLE \`e5496afa044df5c088b22ddbda34aa6ab_locales\`;`)
+  await db.run(sql`DROP TABLE \`e5496afa044df8c088b22ddbda34aa6ab\`;`)
+  await db.run(sql`DROP TABLE \`e5496afa044df8c088b22ddbda34aa6ab_locales\`;`)
   await db.run(sql`DROP TABLE \`leases\`;`)
   await db.run(sql`DROP TABLE \`lease_modifications\`;`)
   await db.run(sql`DROP TABLE \`lease_period_postings\`;`)
-  await db.run(sql`DROP TABLE \`ecf42f6f7e9ab544998d1601a14e54745\`;`)
+  await db.run(sql`DROP TABLE \`ecf42f6f7e9ab844998d1601a14e54745\`;`)
   await db.run(sql`DROP TABLE \`payment_runs\`;`)
   await db.run(sql`DROP TABLE \`sepa_mandates\`;`)
-  await db.run(sql`DROP TABLE \`e30a95432eb9e5c50a8468c48698c4e69\`;`)
+  await db.run(sql`DROP TABLE \`e30a95432eb9e8c50a8468c48698c4e69\`;`)
   await db.run(sql`DROP TABLE \`payroll_runs\`;`)
+  await db.run(sql`DROP TABLE \`e6ad64a821b7689ad8f40c0ee61ef44c7\`;`)
   await db.run(sql`DROP TABLE \`employees\`;`)
+  await db.run(sql`DROP TABLE \`connections\`;`)
+  await db.run(sql`DROP TABLE \`sectors\`;`)
+  await db.run(sql`DROP TABLE \`e89951a9dc19789428d4d937cfad80caf\`;`)
   await db.run(sql`DROP TABLE \`job_positions\`;`)
   await db.run(sql`DROP TABLE \`time_entries\`;`)
   await db.run(sql`DROP TABLE \`leave_requests\`;`)
@@ -12684,15 +13089,17 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`wfi_history\`;`)
   await db.run(sql`DROP TABLE \`wfi_history_locales\`;`)
   await db.run(sql`DROP TABLE \`workflow_instances\`;`)
-  await db.run(sql`DROP TABLE \`ee29d67e947fd50f68f80f3b1111ed7a7\`;`)
-  await db.run(sql`DROP TABLE \`e2e7264e544c05b9fada634cb598433cb\`;`)
-  await db.run(sql`DROP TABLE \`e2e7264e544c05b9fada634cb598433cb_locales\`;`)
+  await db.run(sql`DROP TABLE \`ee29d67e947fd80f68f80f3b1111ed7a7\`;`)
+  await db.run(sql`DROP TABLE \`e2e7264e544c08b9fada634cb598433cb\`;`)
+  await db.run(sql`DROP TABLE \`e2e7264e544c08b9fada634cb598433cb_locales\`;`)
   await db.run(sql`DROP TABLE \`bills_of_materials\`;`)
+  await db.run(sql`DROP TABLE \`batches\`;`)
+  await db.run(sql`DROP TABLE \`batches_rels\`;`)
   await db.run(sql`DROP TABLE \`work_centers\`;`)
   await db.run(sql`DROP TABLE \`work_shifts\`;`)
   await db.run(sql`DROP TABLE \`operations\`;`)
   await db.run(sql`DROP TABLE \`routings\`;`)
-  await db.run(sql`DROP TABLE \`e2c337a3fd6215b33858630a71f1fe155\`;`)
+  await db.run(sql`DROP TABLE \`e2c337a3fd6218b33858630a71f1fe155\`;`)
   await db.run(sql`DROP TABLE \`operation_runs\`;`)
   await db.run(sql`DROP TABLE \`production_receipts\`;`)
   await db.run(sql`DROP TABLE \`quality_inspections\`;`)
@@ -12701,11 +13108,11 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`taggings\`;`)
   await db.run(sql`DROP TABLE \`properties\`;`)
   await db.run(sql`DROP TABLE \`properties_locales\`;`)
-  await db.run(sql`DROP TABLE \`e8210b2bdad515d079d5f7f311f47e82e\`;`)
+  await db.run(sql`DROP TABLE \`e8210b2bdad518d079d5f7f311f47e82e\`;`)
   await db.run(sql`DROP TABLE \`spaces\`;`)
   await db.run(sql`DROP TABLE \`spaces_locales\`;`)
-  await db.run(sql`DROP TABLE \`ee3241873f3c35beca1cf0af901e38fb9\`;`)
-  await db.run(sql`DROP TABLE \`ee3241873f3c35beca1cf0af901e38fb9_locales\`;`)
+  await db.run(sql`DROP TABLE \`ee3241873f3c38beca1cf0af901e38fb9\`;`)
+  await db.run(sql`DROP TABLE \`ee3241873f3c38beca1cf0af901e38fb9_locales\`;`)
   await db.run(sql`DROP TABLE \`maintenance_requests\`;`)
   await db.run(sql`DROP TABLE \`maintenance_requests_locales\`;`)
   await db.run(sql`DROP TABLE \`mwo_parts\`;`)
@@ -12713,111 +13120,118 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`mwo_labour\`;`)
   await db.run(sql`DROP TABLE \`maintenance_work_orders\`;`)
   await db.run(sql`DROP TABLE \`maintenance_work_orders_locales\`;`)
-  await db.run(sql`DROP TABLE \`e3c6dbd1f63735f9a85006b63c3c94908\`;`)
-  await db.run(sql`DROP TABLE \`e67933bc56ed45ddc92a51e05dd2e16ec\`;`)
+  await db.run(sql`DROP TABLE \`e3c6dbd1f63738f9a85006b63c3c94908\`;`)
+  await db.run(sql`DROP TABLE \`e67933bc56ed48ddc92a51e05dd2e16ec\`;`)
   await db.run(sql`DROP TABLE \`bookable_resources\`;`)
   await db.run(sql`DROP TABLE \`bookable_resources_locales\`;`)
   await db.run(sql`DROP TABLE \`bookings\`;`)
   await db.run(sql`DROP TABLE \`bookings_locales\`;`)
-  await db.run(sql`DROP TABLE \`e294e318ae4b35416b0854e7571907375\`;`)
-  await db.run(sql`DROP TABLE \`e294e318ae4b35416b0854e7571907375_locales\`;`)
+  await db.run(sql`DROP TABLE \`e294e318ae4b38416b0854e7571907375\`;`)
+  await db.run(sql`DROP TABLE \`e294e318ae4b38416b0854e7571907375_locales\`;`)
   await db.run(sql`DROP TABLE \`carriers\`;`)
   await db.run(sql`DROP TABLE \`tracking_events\`;`)
-  await db.run(sql`DROP TABLE \`ebcc4e7fa5c5b570285d8619d67acbe3e\`;`)
+  await db.run(sql`DROP TABLE \`ebcc4e7fa5c5b870285d8619d67acbe3e\`;`)
   await db.run(sql`DROP TABLE \`customs_declarations\`;`)
   await db.run(sql`DROP TABLE \`consignment_arrangements\`;`)
   await db.run(sql`DROP TABLE \`consignment_inventory\`;`)
   await db.run(sql`DROP TABLE \`consignment_sales\`;`)
-  await db.run(sql`DROP TABLE \`e074d1a41a9e252648fbfbec1c6fb43ea\`;`)
+  await db.run(sql`DROP TABLE \`e074d1a41a9e282648fbfbec1c6fb43ea\`;`)
   await db.run(sql`DROP TABLE \`audit_events\`;`)
   await db.run(sql`DROP TABLE \`api_audit_events\`;`)
   await db.run(sql`DROP TABLE \`evidence_attestations\`;`)
+  await db.run(sql`DROP TABLE \`shares\`;`)
+  await db.run(sql`DROP TABLE \`ef34fbcd44ea281498af77442ff84199a\`;`)
   await db.run(sql`DROP TABLE \`entity_types\`;`)
   await db.run(sql`DROP TABLE \`entity_types_rels\`;`)
-  await db.run(sql`DROP TABLE \`e6eb48eceb528589a8621e1cf37bbe038\`;`)
+  await db.run(sql`DROP TABLE \`e6b390099a5c88994b32617396728b9d1\`;`)
+  await db.run(sql`DROP TABLE \`e6eb48eceb528889a8621e1cf37bbe038\`;`)
   await db.run(sql`DROP TABLE \`taxing_jurisdictions\`;`)
+  await db.run(sql`DROP TABLE \`taxing_jurisdictions_rels\`;`)
   await db.run(sql`DROP TABLE \`entity_legal_structures\`;`)
   await db.run(sql`DROP TABLE \`compliance_frameworks\`;`)
-  await db.run(sql`DROP TABLE \`compliance_frameworks_rels\`;`)
   await db.run(sql`DROP TABLE \`compliance_requirements\`;`)
-  await db.run(sql`DROP TABLE \`compliance_requirements_rels\`;`)
   await db.run(sql`DROP TABLE \`internal_controls\`;`)
   await db.run(sql`DROP TABLE \`control_tests\`;`)
   await db.run(sql`DROP TABLE \`audit_samples\`;`)
-  await db.run(sql`DROP TABLE \`audit_samples_rels\`;`)
   await db.run(sql`DROP TABLE \`compliance_gaps\`;`)
-  await db.run(sql`DROP TABLE \`e77fca21a191f5082bc2a98b0bfd457e8\`;`)
+  await db.run(sql`DROP TABLE \`e77fca21a191f8082bc2a98b0bfd457e8\`;`)
+  await db.run(sql`DROP TABLE \`e6c77d0f4b1888ce9bfd5c79a01b9bf36\`;`)
   await db.run(sql`DROP TABLE \`audit_evidence\`;`)
+  await db.run(sql`DROP TABLE \`ebdf6c5cf64618eb3a6cbab343da6bac0\`;`)
   await db.run(sql`DROP TABLE \`audit_findings\`;`)
-  await db.run(sql`DROP TABLE \`audit_findings_rels\`;`)
   await db.run(sql`DROP TABLE \`audit_trail_events\`;`)
-  await db.run(sql`DROP TABLE \`eed4d3e0dc8165b24a00ca2f6a516bc58\`;`)
+  await db.run(sql`DROP TABLE \`eed4d3e0dc8168b24a00ca2f6a516bc58\`;`)
   await db.run(sql`DROP TABLE \`remediation_plans\`;`)
   await db.run(sql`DROP TABLE \`audit_committees\`;`)
   await db.run(sql`DROP TABLE \`audit_committees_rels\`;`)
-  await db.run(sql`DROP TABLE \`ecc9fd5637b9c5429b03a8b23abb12a0a\`;`)
+  await db.run(sql`DROP TABLE \`ecc9fd5637b9c8429b03a8b23abb12a0a\`;`)
   await db.run(sql`DROP TABLE \`audit_committee_members\`;`)
   await db.run(sql`DROP TABLE \`board_actions\`;`)
   await db.run(sql`DROP TABLE \`board_actions_rels\`;`)
-  await db.run(sql`DROP TABLE \`e2fd3794b06845c5791b307f9f023909c\`;`)
+  await db.run(sql`DROP TABLE \`e2fd3794b06848c5791b307f9f023909c\`;`)
   await db.run(sql`DROP TABLE \`management_certifications\`;`)
   await db.run(sql`DROP TABLE \`management_certifications_rels\`;`)
   await db.run(sql`DROP TABLE \`regulatory_reports\`;`)
   await db.run(sql`DROP TABLE \`regulatory_reports_rels\`;`)
   await db.run(sql`DROP TABLE \`internal_policies\`;`)
   await db.run(sql`DROP TABLE \`internal_policies_rels\`;`)
-  await db.run(sql`DROP TABLE \`e86a4abedd768512d9092751010ab81e5\`;`)
+  await db.run(sql`DROP TABLE \`e86a4abedd768812d9092751010ab81e5\`;`)
   await db.run(sql`DROP TABLE \`statutory_report_templates\`;`)
   await db.run(sql`DROP TABLE \`statutory_field_mappings\`;`)
   await db.run(sql`DROP TABLE \`policy_versions\`;`)
   await db.run(sql`DROP TABLE \`policy_acknowledgments\`;`)
   await db.run(sql`DROP TABLE \`compliance_deadlines\`;`)
-  await db.run(sql`DROP TABLE \`e63374315133159659a5f11c2d82e4d14\`;`)
-  await db.run(sql`DROP TABLE \`e98d28b906a8a54fc83665a4bee6d69f1\`;`)
+  await db.run(sql`DROP TABLE \`e63374315133189659a5f11c2d82e4d14\`;`)
+  await db.run(sql`DROP TABLE \`e98d28b906a8a84fc83665a4bee6d69f1\`;`)
   await db.run(sql`DROP TABLE \`compliance_notifications\`;`)
   await db.run(sql`DROP TABLE \`reporting_standards\`;`)
-  await db.run(sql`DROP TABLE \`ed4bb747bf248547fbb37044680471a81\`;`)
+  await db.run(sql`DROP TABLE \`ed4bb747bf248847fbb37044680471a81\`;`)
   await db.run(sql`DROP TABLE \`reporting_mappings\`;`)
   await db.run(sql`DROP TABLE \`related_party_transactions\`;`)
   await db.run(sql`DROP TABLE \`related_party_transactions_rels\`;`)
-  await db.run(sql`DROP TABLE \`e7b6d5ba25f4f509caff6535d1804c987\`;`)
+  await db.run(sql`DROP TABLE \`e7b6d5ba25f4f809caff6535d1804c987\`;`)
   await db.run(sql`DROP TABLE \`management_assessment_icfr\`;`)
   await db.run(sql`DROP TABLE \`management_assessment_icfr_rels\`;`)
-  await db.run(sql`DROP TABLE \`e2cf7ebcb20e95c53ac2931d630d1a794\`;`)
+  await db.run(sql`DROP TABLE \`e2cf7ebcb20e98c53ac2931d630d1a794\`;`)
   await db.run(sql`DROP TABLE \`disclosure_checklists\`;`)
   await db.run(sql`DROP TABLE \`disclosure_checklists_rels\`;`)
-  await db.run(sql`DROP TABLE \`e096b0d817dc2503fbde647fc45fdd1d2\`;`)
-  await db.run(sql`DROP TABLE \`eb97d9b37aa2f5c0cba9177cb912664fa\`;`)
-  await db.run(sql`DROP TABLE \`e847fc1809b2f5f1dbee08a0fff515091\`;`)
-  await db.run(sql`DROP TABLE \`e1465d8f360ca5f11a355cbdf4650ac30\`;`)
+  await db.run(sql`DROP TABLE \`e096b0d817dc2803fbde647fc45fdd1d2\`;`)
+  await db.run(sql`DROP TABLE \`eb97d9b37aa2f8c0cba9177cb912664fa\`;`)
+  await db.run(sql`DROP TABLE \`e847fc1809b2f8f1dbee08a0fff515091\`;`)
+  await db.run(sql`DROP TABLE \`e1465d8f360ca8f11a355cbdf4650ac30\`;`)
   await db.run(sql`DROP TABLE \`audit_committee_minutes\`;`)
   await db.run(sql`DROP TABLE \`audit_committee_minutes_rels\`;`)
   await db.run(sql`DROP TABLE \`risk_register\`;`)
   await db.run(sql`DROP TABLE \`risk_register_rels\`;`)
-  await db.run(sql`DROP TABLE \`e1a216420daff5b30ba8bab31bff7f178\`;`)
-  await db.run(sql`DROP TABLE \`e55475e7a36b45103a9792367bb20bd76\`;`)
+  await db.run(sql`DROP TABLE \`e1a216420daff8b30ba8bab31bff7f178\`;`)
+  await db.run(sql`DROP TABLE \`e55475e7a36b48103a9792367bb20bd76\`;`)
   await db.run(sql`DROP TABLE \`debt_schedule\`;`)
   await db.run(sql`DROP TABLE \`debt_schedule_rels\`;`)
-  await db.run(sql`DROP TABLE \`e2ed3319156f95328b9f2124e3154b2b0\`;`)
-  await db.run(sql`DROP TABLE \`ea2509c33f75c5e20a0407280749b7f16\`;`)
+  await db.run(sql`DROP TABLE \`e2ed3319156f98328b9f2124e3154b2b0\`;`)
+  await db.run(sql`DROP TABLE \`ea2509c33f75c8e20a0407280749b7f16\`;`)
   await db.run(sql`DROP TABLE \`internal_audit_function\`;`)
   await db.run(sql`DROP TABLE \`internal_audit_function_rels\`;`)
-  await db.run(sql`DROP TABLE \`e3d8eef548a8d5022abc3af81e21232c6\`;`)
-  await db.run(sql`DROP TABLE \`ebe1f8a37cdab50fe87f27a2a9809a286\`;`)
+  await db.run(sql`DROP TABLE \`e3d8eef548a8d8022abc3af81e21232c6\`;`)
+  await db.run(sql`DROP TABLE \`ebe1f8a37cdab80fe87f27a2a9809a286\`;`)
   await db.run(sql`DROP TABLE \`segment_reporting\`;`)
   await db.run(sql`DROP TABLE \`segment_reporting_rels\`;`)
   await db.run(sql`DROP TABLE \`consent_records\`;`)
   await db.run(sql`DROP TABLE \`data_subject_requests\`;`)
   await db.run(sql`DROP TABLE \`data_subject_requests_locales\`;`)
-  await db.run(sql`DROP TABLE \`e89747974e3195578977032ad94a759c1\`;`)
-  await db.run(sql`DROP TABLE \`e4b2d0cf96ff15f2e94f69d77ee2c025f\`;`)
-  await db.run(sql`DROP TABLE \`ed5b0fb68f51756feb6e1eee30449385f\`;`)
-  await db.run(sql`DROP TABLE \`ed5b0fb68f51756feb6e1eee30449385f_locales\`;`)
+  await db.run(sql`DROP TABLE \`e89747974e3198578977032ad94a759c1\`;`)
+  await db.run(sql`DROP TABLE \`e4b2d0cf96ff18f2e94f69d77ee2c025f\`;`)
+  await db.run(sql`DROP TABLE \`ed5b0fb68f51786feb6e1eee30449385f\`;`)
+  await db.run(sql`DROP TABLE \`ed5b0fb68f51786feb6e1eee30449385f_locales\`;`)
   await db.run(sql`DROP TABLE \`transfers\`;`)
   await db.run(sql`DROP TABLE \`data_processing_activities\`;`)
-  await db.run(sql`DROP TABLE \`e1dc5ded7e20c52a1b0dd2f3eaf6425fd\`;`)
+  await db.run(sql`DROP TABLE \`e1dc5ded7e20c82a1b0dd2f3eaf6425fd\`;`)
   await db.run(sql`DROP TABLE \`kyc_checks\`;`)
   await db.run(sql`DROP TABLE \`beneficial_owners\`;`)
+  await db.run(sql`DROP TABLE \`e748d22a668778d2291b0c286f5fb0b16\`;`)
+  await db.run(sql`DROP TABLE \`packages\`;`)
+  await db.run(sql`DROP TABLE \`messages\`;`)
+  await db.run(sql`DROP TABLE \`messages_rels\`;`)
+  await db.run(sql`DROP TABLE \`chat\`;`)
   await db.run(sql`DROP TABLE \`csrd_disclosures\`;`)
   await db.run(sql`DROP TABLE \`carbon_emissions\`;`)
   await db.run(sql`DROP TABLE \`biological_assets\`;`)
@@ -12845,49 +13259,45 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`transaction_failures\`;`)
   await db.run(sql`DROP TABLE \`cbcr_row\`;`)
   await db.run(sql`DROP TABLE \`transfer_pricing_files\`;`)
-  await db.run(sql`DROP TABLE \`e00d4d9ef3ee456519ef61f236288a7ce\`;`)
-  await db.run(sql`DROP TABLE \`e00d4d9ef3ee456519ef61f236288a7ce_locales\`;`)
-  await db.run(sql`DROP TABLE \`e27ef0824049252a9a3514febfe91938b\`;`)
+  await db.run(sql`DROP TABLE \`e00d4d9ef3ee486519ef61f236288a7ce\`;`)
+  await db.run(sql`DROP TABLE \`e00d4d9ef3ee486519ef61f236288a7ce_locales\`;`)
+  await db.run(sql`DROP TABLE \`e27ef0824049282a9a3514febfe91938b\`;`)
   await db.run(sql`DROP TABLE \`standards\`;`)
   await db.run(sql`DROP TABLE \`standards_rels\`;`)
-  await db.run(sql`DROP TABLE \`efd47cc9ff5ea5cf99caa31b20fc740b2\`;`)
+  await db.run(sql`DROP TABLE \`efd47cc9ff5ea8cf99caa31b20fc740b2\`;`)
   await db.run(sql`DROP TABLE \`memories\`;`)
-  await db.run(sql`DROP TABLE \`ef88c2ed312a85bb190229980a3720e72\`;`)
+  await db.run(sql`DROP TABLE \`ef88c2ed312a88bb190229980a3720e72\`;`)
   await db.run(sql`DROP TABLE \`mcp_tool_metadata\`;`)
   await db.run(sql`DROP TABLE \`mcp_tool_metadata_locales\`;`)
-  await db.run(sql`DROP TABLE \`eec49ec68ab2a5e6985f5d5422fa6267d\`;`)
+  await db.run(sql`DROP TABLE \`eec49ec68ab2a8e6985f5d5422fa6267d\`;`)
   await db.run(sql`DROP TABLE \`translations\`;`)
   await db.run(sql`DROP TABLE \`translations_locales\`;`)
   await db.run(sql`DROP TABLE \`commitments\`;`)
   await db.run(sql`DROP TABLE \`contract_amendments\`;`)
   await db.run(sql`DROP TABLE \`contract_performance\`;`)
   await db.run(sql`DROP TABLE \`contract_signatures\`;`)
-  await db.run(sql`DROP TABLE \`ea4ece34561bd57a3a7dbaffb32ada3c6\`;`)
-  await db.run(sql`DROP TABLE \`e880a81196eb1523980b99ca21f707854\`;`)
-  await db.run(sql`DROP TABLE \`e2014ac53caf85348a82cc82dfb8464c7\`;`)
-  await db.run(sql`DROP TABLE \`contract_templates\`;`)
   await db.run(sql`DROP TABLE \`legal_entities\`;`)
   await db.run(sql`DROP TABLE \`ai_suggestions\`;`)
   await db.run(sql`DROP TABLE \`usage_records\`;`)
-  await db.run(sql`DROP TABLE \`e6cabc1f1ac605b48984c03e53002797a\`;`)
+  await db.run(sql`DROP TABLE \`e6cabc1f1ac608b48984c03e53002797a\`;`)
   await db.run(sql`DROP TABLE \`consolidations\`;`)
   await db.run(sql`DROP TABLE \`consolidations_rels\`;`)
-  await db.run(sql`DROP TABLE \`eb6304bde8ac95a988117180add07de51\`;`)
+  await db.run(sql`DROP TABLE \`eb6304bde8ac98a988117180add07de51\`;`)
   await db.run(sql`DROP TABLE \`tax_periods\`;`)
-  await db.run(sql`DROP TABLE \`e98126fc1e3855f72a76a355f88289eb6\`;`)
-  await db.run(sql`DROP TABLE \`e4c59bd52eb4f52d6a279a9499d2e35c8\`;`)
-  await db.run(sql`DROP TABLE \`ebf8b394d0fdc56c18e4f79da4d0015e7\`;`)
-  await db.run(sql`DROP TABLE \`e6443025e2e8e5ce299e90c6ffbf537d7\`;`)
+  await db.run(sql`DROP TABLE \`e98126fc1e3858f72a76a355f88289eb6\`;`)
+  await db.run(sql`DROP TABLE \`e4c59bd52eb4f82d6a279a9499d2e35c8\`;`)
+  await db.run(sql`DROP TABLE \`ebf8b394d0fdc86c18e4f79da4d0015e7\`;`)
+  await db.run(sql`DROP TABLE \`e6443025e2e8e8ce299e90c6ffbf537d7\`;`)
   await db.run(sql`DROP TABLE \`audit_reports\`;`)
   await db.run(sql`DROP TABLE \`transfer_pricing_adjustments\`;`)
   await db.run(sql`DROP TABLE \`transfer_pricing_adjustments_rels\`;`)
   await db.run(sql`DROP TABLE \`post_close_analytics_reports\`;`)
-  await db.run(sql`DROP TABLE \`efcc0fcec210150b68b558b4fd7cc7f1d\`;`)
+  await db.run(sql`DROP TABLE \`efcc0fcec210180b68b558b4fd7cc7f1d\`;`)
   await db.run(sql`DROP TABLE \`fiscal_devices\`;`)
-  await db.run(sql`DROP TABLE \`e9749956a340957ec9eeac999bdcebefd\`;`)
+  await db.run(sql`DROP TABLE \`e9749956a340987ec9eeac999bdcebefd\`;`)
   await db.run(sql`DROP TABLE \`sales\`;`)
-  await db.run(sql`DROP TABLE \`e63b40236bd7451698a9e62f00c83c76d\`;`)
-  await db.run(sql`DROP TABLE \`edc80b35eb7c95472b2e2fc49f713ea39\`;`)
+  await db.run(sql`DROP TABLE \`e63b40236bd7481698a9e62f00c83c76d\`;`)
+  await db.run(sql`DROP TABLE \`edc80b35eb7c98472b2e2fc49f713ea39\`;`)
   await db.run(sql`DROP TABLE \`receipts\`;`)
   await db.run(sql`DROP TABLE \`operators\`;`)
   await db.run(sql`DROP TABLE \`terminals\`;`)
@@ -12899,63 +13309,62 @@ export async function down({ db, payload, req }: MigrateDownArgs): Promise<void>
   await db.run(sql`DROP TABLE \`_variants_v_rels\`;`)
   await db.run(sql`DROP TABLE \`variant_types\`;`)
   await db.run(sql`DROP TABLE \`variant_options\`;`)
-  await db.run(sql`DROP TABLE \`e807e5fa7ee655a6daf578f601def9edb\`;`)
-  await db.run(sql`DROP TABLE \`e706ae1eff60a56858e60d43a8408a40c\`;`)
-  await db.run(sql`DROP TABLE \`e2d7410d34f385b4e91b8d3253617c145\`;`)
-  await db.run(sql`DROP TABLE \`e8be93ceba4835a2ea2eb22b6dbda9f7d\`;`)
-  await db.run(sql`DROP TABLE \`e3e08cdb269b3596c82e9ebaf3a7cdad9\`;`)
-  await db.run(sql`DROP TABLE \`ed959efe1dd6a56dc91541e91cc18f307\`;`)
+  await db.run(sql`DROP TABLE \`e807e5fa7ee658a6daf578f601def9edb\`;`)
+  await db.run(sql`DROP TABLE \`e706ae1eff60a86858e60d43a8408a40c\`;`)
+  await db.run(sql`DROP TABLE \`e2d7410d34f388b4e91b8d3253617c145\`;`)
+  await db.run(sql`DROP TABLE \`e8be93ceba4838a2ea2eb22b6dbda9f7d\`;`)
+  await db.run(sql`DROP TABLE \`e3e08cdb269b3896c82e9ebaf3a7cdad9\`;`)
+  await db.run(sql`DROP TABLE \`ed959efe1dd6a86dc91541e91cc18f307\`;`)
   await db.run(sql`DROP TABLE \`products\`;`)
   await db.run(sql`DROP TABLE \`products_locales\`;`)
   await db.run(sql`DROP TABLE \`products_rels\`;`)
-  await db.run(sql`DROP TABLE \`_e807e5fa7ee655a6daf578f601def9edb_v\`;`)
-  await db.run(sql`DROP TABLE \`_e706ae1eff60a56858e60d43a8408a40c_v\`;`)
-  await db.run(sql`DROP TABLE \`_e2d7410d34f385b4e91b8d3253617c145_v\`;`)
-  await db.run(sql`DROP TABLE \`_e8be93ceba4835a2ea2eb22b6dbda9f7d_v\`;`)
-  await db.run(sql`DROP TABLE \`_e3e08cdb269b3596c82e9ebaf3a7cdad9_v\`;`)
-  await db.run(sql`DROP TABLE \`_ed959efe1dd6a56dc91541e91cc18f307_v\`;`)
+  await db.run(sql`DROP TABLE \`_e807e5fa7ee658a6daf578f601def9edb_v\`;`)
+  await db.run(sql`DROP TABLE \`_e706ae1eff60a86858e60d43a8408a40c_v\`;`)
+  await db.run(sql`DROP TABLE \`_e2d7410d34f388b4e91b8d3253617c145_v\`;`)
+  await db.run(sql`DROP TABLE \`_e8be93ceba4838a2ea2eb22b6dbda9f7d_v\`;`)
+  await db.run(sql`DROP TABLE \`_e3e08cdb269b3896c82e9ebaf3a7cdad9_v\`;`)
+  await db.run(sql`DROP TABLE \`_ed959efe1dd6a86dc91541e91cc18f307_v\`;`)
   await db.run(sql`DROP TABLE \`_products_v\`;`)
   await db.run(sql`DROP TABLE \`_products_v_locales\`;`)
   await db.run(sql`DROP TABLE \`_products_v_rels\`;`)
-  await db.run(sql`DROP TABLE \`e36231b73e55757b6bbebfd9458a6c7d6\`;`)
+  await db.run(sql`DROP TABLE \`e36231b73e55787b6bbebfd9458a6c7d6\`;`)
   await db.run(sql`DROP TABLE \`carts\`;`)
-  await db.run(sql`DROP TABLE \`e3acbac9f125c5bad9fe2ad09574853a0\`;`)
+  await db.run(sql`DROP TABLE \`e3acbac9f125c8bad9fe2ad09574853a0\`;`)
   await db.run(sql`DROP TABLE \`orders\`;`)
   await db.run(sql`DROP TABLE \`orders_rels\`;`)
-  await db.run(sql`DROP TABLE \`e4375580a944f574eb05f54d12cb85d91\`;`)
+  await db.run(sql`DROP TABLE \`e4375580a944f874eb05f54d12cb85d91\`;`)
   await db.run(sql`DROP TABLE \`transactions\`;`)
-  await db.run(sql`DROP TABLE \`ec7b0187f544b583ba491da04c8bac20f\`;`)
-  await db.run(sql`DROP TABLE \`ec7b0187f544b583ba491da04c8bac20f_locales\`;`)
-  await db.run(sql`DROP TABLE \`e77b9fc908c6054fc900cc66442b89e32\`;`)
-  await db.run(sql`DROP TABLE \`e77b9fc908c6054fc900cc66442b89e32_locales\`;`)
-  await db.run(sql`DROP TABLE \`e964a176201f3510d8e23c948af516fb2\`;`)
-  await db.run(sql`DROP TABLE \`e964a176201f3510d8e23c948af516fb2_locales\`;`)
-  await db.run(sql`DROP TABLE \`ed69fe51f407b56e5a973495011c151e9\`;`)
-  await db.run(sql`DROP TABLE \`ed69fe51f407b56e5a973495011c151e9_locales\`;`)
-  await db.run(sql`DROP TABLE \`e172457e3d41c5a0da66683b4f5b2bb5d\`;`)
-  await db.run(sql`DROP TABLE \`e172457e3d41c5a0da66683b4f5b2bb5d_locales\`;`)
-  await db.run(sql`DROP TABLE \`e1fef94f431b555ac823da9a3677c38c6\`;`)
-  await db.run(sql`DROP TABLE \`e1fef94f431b555ac823da9a3677c38c6_locales\`;`)
-  await db.run(sql`DROP TABLE \`e079ab6e4a6a95374b8033579bf65ae20\`;`)
-  await db.run(sql`DROP TABLE \`e079ab6e4a6a95374b8033579bf65ae20_locales\`;`)
-  await db.run(sql`DROP TABLE \`e87df93fee1815fab87f9c6da399fdb7d\`;`)
-  await db.run(sql`DROP TABLE \`e87df93fee1815fab87f9c6da399fdb7d_locales\`;`)
-  await db.run(sql`DROP TABLE \`e6d67388f0be95e9fa6d861b333356635\`;`)
-  await db.run(sql`DROP TABLE \`e6d67388f0be95e9fa6d861b333356635_locales\`;`)
-  await db.run(sql`DROP TABLE \`e17421b6a908d5c008312bf0e38ef9253\`;`)
-  await db.run(sql`DROP TABLE \`e17421b6a908d5c008312bf0e38ef9253_locales\`;`)
-  await db.run(sql`DROP TABLE \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3\`;`)
-  await db.run(sql`DROP TABLE \`e7d0b5cfcc0f15d07a0f986e2f1aa3ad3_locales\`;`)
+  await db.run(sql`DROP TABLE \`ec7b0187f544b883ba491da04c8bac20f\`;`)
+  await db.run(sql`DROP TABLE \`ec7b0187f544b883ba491da04c8bac20f_locales\`;`)
+  await db.run(sql`DROP TABLE \`e77b9fc908c6084fc900cc66442b89e32\`;`)
+  await db.run(sql`DROP TABLE \`e77b9fc908c6084fc900cc66442b89e32_locales\`;`)
+  await db.run(sql`DROP TABLE \`e964a176201f3810d8e23c948af516fb2\`;`)
+  await db.run(sql`DROP TABLE \`e964a176201f3810d8e23c948af516fb2_locales\`;`)
+  await db.run(sql`DROP TABLE \`ed69fe51f407b86e5a973495011c151e9\`;`)
+  await db.run(sql`DROP TABLE \`ed69fe51f407b86e5a973495011c151e9_locales\`;`)
+  await db.run(sql`DROP TABLE \`e172457e3d41c8a0da66683b4f5b2bb5d\`;`)
+  await db.run(sql`DROP TABLE \`e172457e3d41c8a0da66683b4f5b2bb5d_locales\`;`)
+  await db.run(sql`DROP TABLE \`e1fef94f431b585ac823da9a3677c38c6\`;`)
+  await db.run(sql`DROP TABLE \`e1fef94f431b585ac823da9a3677c38c6_locales\`;`)
+  await db.run(sql`DROP TABLE \`e079ab6e4a6a98374b8033579bf65ae20\`;`)
+  await db.run(sql`DROP TABLE \`e079ab6e4a6a98374b8033579bf65ae20_locales\`;`)
+  await db.run(sql`DROP TABLE \`e87df93fee1818fab87f9c6da399fdb7d\`;`)
+  await db.run(sql`DROP TABLE \`e87df93fee1818fab87f9c6da399fdb7d_locales\`;`)
+  await db.run(sql`DROP TABLE \`e6d67388f0be98e9fa6d861b333356635\`;`)
+  await db.run(sql`DROP TABLE \`e6d67388f0be98e9fa6d861b333356635_locales\`;`)
+  await db.run(sql`DROP TABLE \`e17421b6a908d8c008312bf0e38ef9253\`;`)
+  await db.run(sql`DROP TABLE \`e17421b6a908d8c008312bf0e38ef9253_locales\`;`)
+  await db.run(sql`DROP TABLE \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3\`;`)
+  await db.run(sql`DROP TABLE \`e7d0b5cfcc0f18d07a0f986e2f1aa3ad3_locales\`;`)
   await db.run(sql`DROP TABLE \`forms\`;`)
   await db.run(sql`DROP TABLE \`forms_locales\`;`)
-  await db.run(sql`DROP TABLE \`e0fa36534560c542e89b11febfa39e66d\`;`)
+  await db.run(sql`DROP TABLE \`e0fa36534560c842e89b11febfa39e66d\`;`)
   await db.run(sql`DROP TABLE \`form_submissions\`;`)
   await db.run(sql`DROP TABLE \`redirects\`;`)
   await db.run(sql`DROP TABLE \`redirects_rels\`;`)
-  await db.run(sql`DROP TABLE \`ead7b4055f97950b6b7934d5acfec3e62\`;`)
+  await db.run(sql`DROP TABLE \`ead7b4055f97980b6b7934d5acfec3e62\`;`)
   await db.run(sql`DROP TABLE \`search\`;`)
   await db.run(sql`DROP TABLE \`search_locales\`;`)
-  await db.run(sql`DROP TABLE \`search_rels\`;`)
   await db.run(sql`DROP TABLE \`exports\`;`)
   await db.run(sql`DROP TABLE \`exports_texts\`;`)
   await db.run(sql`DROP TABLE \`imports\`;`)

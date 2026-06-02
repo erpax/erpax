@@ -114,6 +114,24 @@
         "name": {
           "localized": false
         },
+        "competencies": {
+          "localized": false
+        },
+        "competencies.competency": {
+          "localized": false
+        },
+        "competencies.proficiency": {
+          "localized": false
+        },
+        "competencies.assessedAt": {
+          "localized": false
+        },
+        "competencies.evidence": {
+          "localized": false
+        },
+        "competencies.id": {
+          "localized": false
+        },
         "roles": {
           "localized": false
         },
@@ -3503,6 +3521,48 @@
           "localized": false
         },
         "lifecycle.reopenedBy": {
+          "localized": false
+        },
+        "configuration": {
+          "localized": false
+        },
+        "configuration.fiscalYearStartMonth": {
+          "localized": false
+        },
+        "configuration.fiscalYearStartDay": {
+          "localized": false
+        },
+        "configuration.countryCode": {
+          "localized": false
+        },
+        "configuration.currencyCode": {
+          "localized": false
+        },
+        "configuration.localeCode": {
+          "localized": false
+        },
+        "configuration.regulatoryFramework": {
+          "localized": false
+        },
+        "configuration.allowsNonGregorian": {
+          "localized": false
+        },
+        "configuration.leapYearAdjustment": {
+          "localized": false
+        },
+        "configuration.customPeriodBoundaries": {
+          "localized": false
+        },
+        "governance": {
+          "localized": false
+        },
+        "governance.entity": {
+          "localized": false
+        },
+        "governance.supercedes": {
+          "localized": false
+        },
+        "governance.effectiveDate": {
           "localized": false
         },
         "notes": {
@@ -7379,6 +7439,27 @@
         "manager": {
           "localized": false
         },
+        "user": {
+          "localized": false
+        },
+        "competencies": {
+          "localized": false
+        },
+        "competencies.competency": {
+          "localized": false
+        },
+        "competencies.proficiency": {
+          "localized": false
+        },
+        "competencies.assessedAt": {
+          "localized": false
+        },
+        "competencies.evidence": {
+          "localized": false
+        },
+        "competencies.id": {
+          "localized": false
+        },
         "workCountry": {
           "localized": false
         },
@@ -7488,6 +7569,115 @@
       "localizeStatus": false,
       "versions": false
     },
+    "connections": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "from": {
+          "localized": false
+        },
+        "to": {
+          "localized": false
+        },
+        "context": {
+          "localized": false
+        },
+        "reciprocal": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "sectors": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "reference": {
+          "localized": false
+        },
+        "name": {
+          "localized": false
+        },
+        "description": {
+          "localized": false
+        },
+        "parent": {
+          "localized": false
+        },
+        "institutionalSector": {
+          "localized": false
+        },
+        "isicCode": {
+          "localized": false
+        },
+        "naceCode": {
+          "localized": false
+        },
+        "cofogDivision": {
+          "localized": false
+        },
+        "icnpoGroup": {
+          "localized": false
+        },
+        "sdgGoal": {
+          "localized": false
+        },
+        "countryCode": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
     "job-positions": {
       "autosave": false,
       "drafts": false,
@@ -7502,6 +7692,12 @@
           "localized": false
         },
         "positionTitle": {
+          "localized": false
+        },
+        "escoOccupation": {
+          "localized": false
+        },
+        "iscoUnitGroup": {
           "localized": false
         },
         "department": {
@@ -7529,6 +7725,21 @@
           "localized": false
         },
         "requirements": {
+          "localized": false
+        },
+        "requiredCompetencies": {
+          "localized": false
+        },
+        "requiredCompetencies.competency": {
+          "localized": false
+        },
+        "requiredCompetencies.minProficiency": {
+          "localized": false
+        },
+        "requiredCompetencies.mandatory": {
+          "localized": false
+        },
+        "requiredCompetencies.id": {
           "localized": false
         },
         "workLocation": {
@@ -8747,6 +8958,9 @@
         "steps.id": {
           "localized": false
         },
+        "stateMachine": {
+          "localized": false
+        },
         "isActive": {
           "localized": false
         },
@@ -8968,6 +9182,110 @@
           "localized": false
         },
         "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "batches": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "reference": {
+          "localized": false
+        },
+        "item": {
+          "localized": false
+        },
+        "quantity": {
+          "localized": false
+        },
+        "unitOfMeasure": {
+          "localized": false
+        },
+        "remainingQuantity": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "manufactureDate": {
+          "localized": false
+        },
+        "expiryDate": {
+          "localized": false
+        },
+        "receivedDate": {
+          "localized": false
+        },
+        "countryOfOrigin": {
+          "localized": false
+        },
+        "origin": {
+          "localized": false
+        },
+        "workOrder": {
+          "localized": false
+        },
+        "goodsReceipt": {
+          "localized": false
+        },
+        "supplier": {
+          "localized": false
+        },
+        "supplierBatchRef": {
+          "localized": false
+        },
+        "warehouseLocation": {
+          "localized": false
+        },
+        "parentBatches": {
+          "localized": false
+        },
+        "qualityInspection": {
+          "localized": false
+        },
+        "currency": {
+          "localized": false
+        },
+        "unitCost": {
+          "localized": false
+        },
+        "recall": {
+          "localized": false
+        },
+        "recall.recalled": {
+          "localized": false
+        },
+        "recall.recallReference": {
+          "localized": false
+        },
+        "recall.recallDate": {
+          "localized": false
+        },
+        "recall.recallReason": {
           "localized": false
         },
         "createdBy": {
@@ -11157,6 +11475,56 @@
       "localizeStatus": false,
       "versions": false
     },
+    "shares": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "shareUuid": {
+          "localized": false
+        },
+        "granteeUuid": {
+          "localized": false
+        },
+        "targetUuid": {
+          "localized": false
+        },
+        "accessRole": {
+          "localized": false
+        },
+        "grantedAt": {
+          "localized": false
+        },
+        "chainLeafUuid": {
+          "localized": false
+        },
+        "sealed": {
+          "localized": false
+        },
+        "revoked": {
+          "localized": false
+        },
+        "revokedAt": {
+          "localized": false
+        },
+        "revokeChainLeafUuid": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
     "entity-types": {
       "autosave": false,
       "drafts": false,
@@ -11167,16 +11535,37 @@
         "tenant": {
           "localized": false
         },
-        "name": {
+        "code": {
           "localized": false
         },
-        "code": {
+        "label": {
+          "localized": false
+        },
+        "category": {
           "localized": false
         },
         "description": {
           "localized": false
         },
-        "applicableFrameworks": {
+        "characteristics": {
+          "localized": false
+        },
+        "jurisdictionApplicability": {
+          "localized": false
+        },
+        "jurisdictionApplicability.jurisdiction": {
+          "localized": false
+        },
+        "jurisdictionApplicability.applicableInJurisdiction": {
+          "localized": false
+        },
+        "jurisdictionApplicability.id": {
+          "localized": false
+        },
+        "defaultComplianceFrameworks": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11199,34 +11588,64 @@
         "tenant": {
           "localized": false
         },
+        "code": {
+          "localized": false
+        },
         "name": {
           "localized": false
         },
-        "jurisdictionType": {
+        "type": {
           "localized": false
         },
-        "isoCountryCode": {
+        "parentJurisdiction": {
           "localized": false
         },
-        "isoRegionCode": {
+        "iso2Code": {
           "localized": false
         },
-        "currency": {
+        "iso3Code": {
           "localized": false
         },
-        "parent": {
+        "primaryCurrency": {
+          "localized": false
+        },
+        "languages": {
+          "localized": false
+        },
+        "languages.languageCode": {
+          "localized": false
+        },
+        "languages.languageName": {
+          "localized": false
+        },
+        "languages.id": {
+          "localized": false
+        },
+        "regulatoryCharacteristics": {
+          "localized": false
+        },
+        "bankingRequirements": {
           "localized": false
         },
         "filingDeadlines": {
           "localized": false
         },
-        "filingDeadlines.description": {
+        "filingDeadlines.filingType": {
           "localized": false
         },
-        "filingDeadlines.dueDate": {
+        "filingDeadlines.deadline": {
+          "localized": false
+        },
+        "filingDeadlines.frequency": {
           "localized": false
         },
         "filingDeadlines.id": {
+          "localized": false
+        },
+        "complianceFrameworks": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11249,22 +11668,34 @@
         "tenant": {
           "localized": false
         },
-        "name": {
-          "localized": false
-        },
-        "legalCode": {
+        "jurisdiction": {
           "localized": false
         },
         "entityType": {
           "localized": false
         },
-        "jurisdiction": {
+        "localName": {
+          "localized": false
+        },
+        "abbreviation": {
           "localized": false
         },
         "description": {
           "localized": false
         },
+        "regulatoryCharacteristics": {
+          "localized": false
+        },
+        "governanceStructure": {
+          "localized": false
+        },
         "taxTreatment": {
+          "localized": false
+        },
+        "auditRequirement": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11287,25 +11718,28 @@
         "tenant": {
           "localized": false
         },
+        "code": {
+          "localized": false
+        },
         "name": {
           "localized": false
         },
-        "frameworkType": {
-          "localized": false
-        },
-        "issuingBody": {
-          "localized": false
-        },
-        "version": {
-          "localized": false
-        },
-        "effectiveDate": {
+        "category": {
           "localized": false
         },
         "description": {
           "localized": false
         },
-        "applicableJurisdictions": {
+        "issuingBody": {
+          "localized": false
+        },
+        "officialResourceUrl": {
+          "localized": false
+        },
+        "effectiveDate": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11328,22 +11762,28 @@
         "tenant": {
           "localized": false
         },
-        "requirementName": {
+        "code": {
           "localized": false
         },
-        "framework": {
-          "localized": false
-        },
-        "requirementType": {
+        "title": {
           "localized": false
         },
         "description": {
           "localized": false
         },
-        "testableStatement": {
+        "framework": {
           "localized": false
         },
-        "applicableEntityTypes": {
+        "section": {
+          "localized": false
+        },
+        "severity": {
+          "localized": false
+        },
+        "resourceUrl": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11366,7 +11806,10 @@
         "tenant": {
           "localized": false
         },
-        "controlName": {
+        "title": {
+          "localized": false
+        },
+        "description": {
           "localized": false
         },
         "controlType": {
@@ -11378,13 +11821,25 @@
         "cosoComponent": {
           "localized": false
         },
-        "description": {
+        "frequency": {
           "localized": false
         },
         "owner": {
           "localized": false
         },
-        "frequency": {
+        "riskMitigated": {
+          "localized": false
+        },
+        "isManualControl": {
+          "localized": false
+        },
+        "lastReviewDate": {
+          "localized": false
+        },
+        "nextReviewDate": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11407,22 +11862,34 @@
         "tenant": {
           "localized": false
         },
-        "control": {
-          "localized": false
-        },
-        "testName": {
+        "title": {
           "localized": false
         },
         "testDesign": {
           "localized": false
         },
+        "control": {
+          "localized": false
+        },
         "samplingMethodology": {
           "localized": false
         },
-        "sampleSize": {
+        "plannedSampleSize": {
+          "localized": false
+        },
+        "actualSampleSize": {
+          "localized": false
+        },
+        "toleranceLevel": {
+          "localized": false
+        },
+        "assertion": {
           "localized": false
         },
         "testStatus": {
+          "localized": false
+        },
+        "testedDate": {
           "localized": false
         },
         "result": {
@@ -11432,6 +11899,18 @@
           "localized": false
         },
         "deviationRate": {
+          "localized": false
+        },
+        "deviationsSummary": {
+          "localized": false
+        },
+        "conclusionOnEffectiveness": {
+          "localized": false
+        },
+        "reviewDate": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11454,25 +11933,46 @@
         "tenant": {
           "localized": false
         },
+        "sampleId": {
+          "localized": false
+        },
         "controlTest": {
           "localized": false
         },
-        "itemIdentifier": {
+        "samplingSequence": {
           "localized": false
         },
         "sampleItemType": {
           "localized": false
         },
+        "sampleItemId": {
+          "localized": false
+        },
+        "sampleItemDate": {
+          "localized": false
+        },
+        "sampleItemAmount": {
+          "localized": false
+        },
         "testResult": {
+          "localized": false
+        },
+        "exceptionDescription": {
           "localized": false
         },
         "exceptionCategory": {
           "localized": false
         },
+        "testedBy": {
+          "localized": false
+        },
+        "testedDate": {
+          "localized": false
+        },
         "notes": {
           "localized": false
         },
-        "evidence": {
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11495,22 +11995,49 @@
         "tenant": {
           "localized": false
         },
-        "requirement": {
-          "localized": false
-        },
-        "gapTitle": {
-          "localized": false
-        },
-        "gapType": {
+        "title": {
           "localized": false
         },
         "description": {
           "localized": false
         },
+        "requirement": {
+          "localized": false
+        },
+        "gapType": {
+          "localized": false
+        },
+        "severity": {
+          "localized": false
+        },
         "status": {
           "localized": false
         },
-        "remediationPlan": {
+        "currentState": {
+          "localized": false
+        },
+        "requiredState": {
+          "localized": false
+        },
+        "rootCause": {
+          "localized": false
+        },
+        "identifiedDate": {
+          "localized": false
+        },
+        "identifiedBy": {
+          "localized": false
+        },
+        "targetClosureDate": {
+          "localized": false
+        },
+        "actualClosureDate": {
+          "localized": false
+        },
+        "riskExposure": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11533,13 +12060,40 @@
         "tenant": {
           "localized": false
         },
-        "evidenceTitle": {
+        "title": {
+          "localized": false
+        },
+        "description": {
           "localized": false
         },
         "documentType": {
           "localized": false
         },
         "documentFile": {
+          "localized": false
+        },
+        "sourceSystem": {
+          "localized": false
+        },
+        "documentDate": {
+          "localized": false
+        },
+        "uploadedDate": {
+          "localized": false
+        },
+        "uploadedBy": {
+          "localized": false
+        },
+        "relatedControl": {
+          "localized": false
+        },
+        "relatedControlTest": {
+          "localized": false
+        },
+        "relatedAuditSample": {
+          "localized": false
+        },
+        "relatedFinding": {
           "localized": false
         },
         "evidenceChain": {
@@ -11566,6 +12120,18 @@
         "retentionPeriod": {
           "localized": false
         },
+        "tags": {
+          "localized": false
+        },
+        "tags.tag": {
+          "localized": false
+        },
+        "tags.id": {
+          "localized": false
+        },
+        "isActive": {
+          "localized": false
+        },
         "updatedAt": {
           "localized": false
         },
@@ -11586,7 +12152,10 @@
         "tenant": {
           "localized": false
         },
-        "findingTitle": {
+        "title": {
+          "localized": false
+        },
+        "description": {
           "localized": false
         },
         "findingType": {
@@ -11595,16 +12164,25 @@
         "severity": {
           "localized": false
         },
-        "description": {
+        "relatedControl": {
           "localized": false
         },
-        "rootCause": {
+        "relatedControlTest": {
+          "localized": false
+        },
+        "frequencyOfOccurrence": {
           "localized": false
         },
         "potentialImpact": {
           "localized": false
         },
-        "frequencyOfOccurrence": {
+        "identifiedDate": {
+          "localized": false
+        },
+        "identifiedBy": {
+          "localized": false
+        },
+        "rootCause": {
           "localized": false
         },
         "riskCategory": {
@@ -11613,10 +12191,28 @@
         "status": {
           "localized": false
         },
-        "evidence": {
+        "managementResponse": {
           "localized": false
         },
-        "remediationPlan": {
+        "managementResponseDate": {
+          "localized": false
+        },
+        "priorYearReference": {
+          "localized": false
+        },
+        "communicatedTo": {
+          "localized": false
+        },
+        "communicatedTo.recipient": {
+          "localized": false
+        },
+        "communicatedTo.communicationDate": {
+          "localized": false
+        },
+        "communicatedTo.id": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -11672,10 +12268,7 @@
         "systemDetails": {
           "localized": false
         },
-        "updatedAt": {
-          "localized": false
-        },
-        "createdAt": {
+        "isDelete": {
           "localized": false
         }
       },
@@ -11692,13 +12285,16 @@
         "tenant": {
           "localized": false
         },
-        "planTitle": {
+        "title": {
           "localized": false
         },
-        "finding": {
+        "description": {
           "localized": false
         },
-        "gap": {
+        "relatedFinding": {
+          "localized": false
+        },
+        "relatedGap": {
           "localized": false
         },
         "remediationType": {
@@ -11719,7 +12315,7 @@
         "actionSteps.description": {
           "localized": false
         },
-        "actionSteps.stepOwner": {
+        "actionSteps.owner": {
           "localized": false
         },
         "actionSteps.targetDate": {
@@ -11743,10 +12339,22 @@
         "status": {
           "localized": false
         },
+        "requiredResources": {
+          "localized": false
+        },
         "budget": {
           "localized": false
         },
         "riskOfDelay": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvalDate": {
+          "localized": false
+        },
+        "isActive": {
           "localized": false
         },
         "updatedAt": {
@@ -13796,6 +14404,186 @@
           "localized": false
         },
         "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "packages": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "reference": {
+          "localized": false
+        },
+        "sscc": {
+          "localized": false
+        },
+        "type": {
+          "localized": false
+        },
+        "parentPackage": {
+          "localized": false
+        },
+        "shipment": {
+          "localized": false
+        },
+        "contents": {
+          "localized": false
+        },
+        "contents.item": {
+          "localized": false
+        },
+        "contents.batch": {
+          "localized": false
+        },
+        "contents.quantity": {
+          "localized": false
+        },
+        "contents.unitOfMeasure": {
+          "localized": false
+        },
+        "contents.id": {
+          "localized": false
+        },
+        "measurements": {
+          "localized": false
+        },
+        "measurements.grossWeight": {
+          "localized": false
+        },
+        "measurements.netWeight": {
+          "localized": false
+        },
+        "measurements.weightUnitOfMeasure": {
+          "localized": false
+        },
+        "measurements.length": {
+          "localized": false
+        },
+        "measurements.width": {
+          "localized": false
+        },
+        "measurements.height": {
+          "localized": false
+        },
+        "measurements.dimensionUnitOfMeasure": {
+          "localized": false
+        },
+        "warehouseLocation": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "messages": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "subject": {
+          "localized": false
+        },
+        "body": {
+          "localized": false
+        },
+        "priority": {
+          "localized": false
+        },
+        "recipients": {
+          "localized": false
+        },
+        "parentMessage": {
+          "localized": false
+        },
+        "relatedDocument": {
+          "localized": false
+        },
+        "readAt": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": false
+    },
+    "chat": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "tenant": {
+          "localized": false
+        },
+        "event": {
+          "localized": false
+        },
+        "eventUuid": {
+          "localized": false
+        },
+        "aggregateId": {
+          "localized": false
+        },
+        "agent": {
+          "localized": false
+        },
+        "payload": {
+          "localized": false
+        },
+        "depth": {
           "localized": false
         },
         "updatedAt": {
@@ -16287,140 +17075,6 @@
       "localizeStatus": false,
       "versions": false
     },
-    "contract-templates": {
-      "autosave": false,
-      "drafts": false,
-      "fields": {
-        "uuid": {
-          "localized": false
-        },
-        "templateName": {
-          "localized": false
-        },
-        "templateCategory": {
-          "localized": false
-        },
-        "description": {
-          "localized": false
-        },
-        "templateVersion": {
-          "localized": false
-        },
-        "effectiveFromDate": {
-          "localized": false
-        },
-        "effectiveToDate": {
-          "localized": false
-        },
-        "approvalStatus": {
-          "localized": false
-        },
-        "clauseLibrary": {
-          "localized": false
-        },
-        "clauseLibrary.clauseId": {
-          "localized": false
-        },
-        "clauseLibrary.clauseTitle": {
-          "localized": false
-        },
-        "clauseLibrary.clauseText": {
-          "localized": false
-        },
-        "clauseLibrary.isRequired": {
-          "localized": false
-        },
-        "clauseLibrary.regulatoryReference": {
-          "localized": false
-        },
-        "clauseLibrary.id": {
-          "localized": false
-        },
-        "paymentTermDefaults": {
-          "localized": false
-        },
-        "paymentTermDefaults.paymentTerms": {
-          "localized": false
-        },
-        "paymentTermDefaults.daysUntilDue": {
-          "localized": false
-        },
-        "paymentTermDefaults.lateFeePercent": {
-          "localized": false
-        },
-        "paymentTermDefaults.discountPercentForEarlyPayment": {
-          "localized": false
-        },
-        "liabilityFramework": {
-          "localized": false
-        },
-        "liabilityFramework.liabilityCap": {
-          "localized": false
-        },
-        "liabilityFramework.liabilityExemptions": {
-          "localized": false
-        },
-        "liabilityFramework.liabilityExemptions.exemptionType": {
-          "localized": false
-        },
-        "liabilityFramework.liabilityExemptions.id": {
-          "localized": false
-        },
-        "liabilityFramework.warrantyPeriodDays": {
-          "localized": false
-        },
-        "performanceObligationTemplate": {
-          "localized": false
-        },
-        "performanceObligationTemplate.obligationTitle": {
-          "localized": false
-        },
-        "performanceObligationTemplate.obligationSequence": {
-          "localized": false
-        },
-        "performanceObligationTemplate.controlTransferMethod": {
-          "localized": false
-        },
-        "performanceObligationTemplate.descriptionTemplate": {
-          "localized": false
-        },
-        "performanceObligationTemplate.id": {
-          "localized": false
-        },
-        "zkod": {
-          "localized": false
-        },
-        "zkod.mandatoryArbitrationClauseIncluded": {
-          "localized": false
-        },
-        "zkod.notarizationRequired": {
-          "localized": false
-        },
-        "zkod.zkodRegistryCategory": {
-          "localized": false
-        },
-        "createdBy": {
-          "localized": false
-        },
-        "approvedBy": {
-          "localized": false
-        },
-        "approvedAt": {
-          "localized": false
-        },
-        "templateNotes": {
-          "localized": false
-        },
-        "updatedAt": {
-          "localized": false
-        },
-        "createdAt": {
-          "localized": false
-        }
-      },
-      "localizeStatus": false,
-      "versions": false
-    },
     "legal-entities": {
       "autosave": false,
       "drafts": false,
@@ -18407,6 +19061,12 @@
         "doc": {
           "localized": false
         },
+        "doc.relationTo": {
+          "localized": false
+        },
+        "doc.value": {
+          "localized": false
+        },
         "docUrl": {
           "localized": false
         },
@@ -18711,6 +19371,66 @@
           "localized": false
         },
         "memories.delete": {
+          "localized": false
+        },
+        "connections": {
+          "localized": false
+        },
+        "connections.find": {
+          "localized": false
+        },
+        "connections.create": {
+          "localized": false
+        },
+        "connections.update": {
+          "localized": false
+        },
+        "connections.delete": {
+          "localized": false
+        },
+        "messages": {
+          "localized": false
+        },
+        "messages.find": {
+          "localized": false
+        },
+        "messages.create": {
+          "localized": false
+        },
+        "messages.update": {
+          "localized": false
+        },
+        "messages.delete": {
+          "localized": false
+        },
+        "jobPositions": {
+          "localized": false
+        },
+        "jobPositions.find": {
+          "localized": false
+        },
+        "jobPositions.create": {
+          "localized": false
+        },
+        "jobPositions.update": {
+          "localized": false
+        },
+        "jobPositions.delete": {
+          "localized": false
+        },
+        "employees": {
+          "localized": false
+        },
+        "employees.find": {
+          "localized": false
+        },
+        "employees.create": {
+          "localized": false
+        },
+        "employees.update": {
+          "localized": false
+        },
+        "employees.delete": {
           "localized": false
         },
         "header": {

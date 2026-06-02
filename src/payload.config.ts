@@ -277,7 +277,7 @@ import type { CollectionSlug, CollectionConfig } from 'payload'
 import { Footer } from './components/Footer/config'
 import { Header } from './components/Header/config'
 import { beforeSyncWithSearch } from './components/search/beforeSync'
-import { searchFields } from './components/search/fieldOverrides'
+import { searchDocField, searchFields } from './components/search/fieldOverrides'
 import { defaultLexical } from '@/fields/defaultLexical'
 import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
 import {
@@ -769,7 +769,15 @@ export default buildConfig({
         (c) => c.slug as CollectionSlug,
       ),
       beforeSync: beforeSyncWithSearch,
-      searchOverrides: { fields: ({ defaultFields }) => [...defaultFields, ...searchFields] },
+      // Collapse the polymorphic `doc` relationship (one FK column per searched collection →
+      // `search_rels` at 208 cols, over D1's 100-col cap) to the content-uuid cross-reference
+      // (`searchDocField`: a flat group, no `_rels` table). See fieldOverrides.ts for the why.
+      searchOverrides: {
+        fields: ({ defaultFields }) => [
+          ...defaultFields.map((field) => ('name' in field && field.name === 'doc' ? searchDocField : field)),
+          ...searchFields,
+        ],
+      },
     }),
     multiTenantPlugin<Config>({
       collections: {
