@@ -145,7 +145,6 @@ export { default as PayrollRuns } from './BankAccounts/PayrollRuns'
 
 // People & HR
 export { default as Employees } from './Employees'
-export { default as Competencies } from './Competencies'
 export { default as Connections } from './Connections'
 export { default as Sectors } from './Sectors'
 export { default as JobPositions } from './CostCenters/JobPositions'

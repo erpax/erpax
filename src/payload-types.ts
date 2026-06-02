@@ -151,7 +151,6 @@ export interface Config {
     'sepa-mandates': SepaMandate;
     'payroll-runs': PayrollRun;
     employees: Employee;
-    competencies: Competency;
     connections: Connection;
     sectors: Sector;
     'job-positions': JobPosition;
@@ -401,7 +400,6 @@ export interface Config {
     'sepa-mandates': SepaMandatesSelect<false> | SepaMandatesSelect<true>;
     'payroll-runs': PayrollRunsSelect<false> | PayrollRunsSelect<true>;
     employees: EmployeesSelect<false> | EmployeesSelect<true>;
-    competencies: CompetenciesSelect<false> | CompetenciesSelect<true>;
     connections: ConnectionsSelect<false> | ConnectionsSelect<true>;
     sectors: SectorsSelect<false> | SectorsSelect<true>;
     'job-positions': JobPositionsSelect<false> | JobPositionsSelect<true>;
@@ -888,7 +886,10 @@ export interface User {
    */
   competencies?:
     | {
-        competency: string | Competency;
+        /**
+         * Content-addressed competency = the SKILL.md route (e.g. /finance/reconciliation/SKILL), resolved from the corpus (services/skill-router/competencies). Same content ⇒ same competency.
+         */
+        competency: string;
         /**
          * Held proficiency level (SFIA scale).
          */
@@ -996,68 +997,6 @@ export interface User {
       }[]
     | null;
   collection: 'users';
-}
-/**
- * The shared actor-capability taxonomy: an agent loads it, an employee holds it, a job requires it, the skill-router resolves it. ESCO/O*NET/SFIA grounded.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "competencies".
- */
-export interface Competency {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  /**
-   * Competency code (e.g. SFIA `PROG`, O*NET element id, internal code).
-   */
-  reference: string;
-  name: string;
-  description?: string | null;
-  /**
-   * ESCO Skills-pillar sub-classification (mono-hierarchy: one group per concept).
-   */
-  subClassification?: ('knowledge' | 'language' | 'skill' | 'transversal') | null;
-  /**
-   * Single parent group in the ESCO mono-hierarchy (self-referential).
-   */
-  parent?: (string | null) | Competency;
-  /**
-   * ESCO reusability tier — distinguishes core/soft (transversal) from role-specific (occupation-specific).
-   */
-  reusabilityLevel?: ('transversal' | 'cross_sectoral' | 'sector_specific' | 'occupation_specific') | null;
-  /**
-   * Top of the SFIA responsibility scale (1-7), reused for both held and required levels; gap = required − held.
-   */
-  maxProficiency?: number | null;
-  /**
-   * ESCO concept URI — the European cross-language anchor.
-   */
-  escoUri?: string | null;
-  /**
-   * O*NET element / SOC code.
-   */
-  onetCode?: string | null;
-  /**
-   * SFIA skill code (e.g. `PROG`, `ARCH`).
-   */
-  sfiaCode?: string | null;
-  /**
-   * ISCO-08 occupation code this competency is typical for.
-   */
-  iscoOccupation?: string | null;
-  /**
-   * Skill-router route of the matching `SKILL.md` node (e.g. `/fields/measure/SKILL`). Same content ⇒ same id — the agent capability is this competency.
-   */
-  skillRoute?: string | null;
-  status?: ('active' | 'deprecated' | 'emerging') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -6833,7 +6772,10 @@ export interface Employee {
    */
   competencies?:
     | {
-        competency: string | Competency;
+        /**
+         * Content-addressed competency = the SKILL.md route (e.g. /finance/reconciliation/SKILL), resolved from the corpus (services/skill-router/competencies). Same content ⇒ same competency.
+         */
+        competency: string;
         /**
          * Held proficiency level (SFIA scale).
          */
@@ -9579,7 +9521,10 @@ export interface JobPosition {
   requirements?: string | null;
   requiredCompetencies?:
     | {
-        competency: string | Competency;
+        /**
+         * Content-addressed competency = the SKILL.md route (e.g. /finance/reconciliation/SKILL), resolved from the corpus (services/skill-router/competencies). Same content ⇒ same competency.
+         */
+        competency: string;
         /**
          * Minimum SFIA proficiency required.
          */
@@ -18895,10 +18840,6 @@ export interface Search {
         value: string | CommitmentsAndContingency;
       }
     | {
-        relationTo: 'competencies';
-        value: string | Competency;
-      }
-    | {
         relationTo: 'compliance-deadlines';
         value: string | ComplianceDeadline;
       }
@@ -19877,24 +19818,6 @@ export interface PayloadMcpApiKey {
     update?: boolean | null;
     /**
      * Allow clients to delete messages.
-     */
-    delete?: boolean | null;
-  };
-  competencies?: {
-    /**
-     * Allow clients to find competencies.
-     */
-    find?: boolean | null;
-    /**
-     * Allow clients to create competencies.
-     */
-    create?: boolean | null;
-    /**
-     * Allow clients to update competencies.
-     */
-    update?: boolean | null;
-    /**
-     * Allow clients to delete competencies.
      */
     delete?: boolean | null;
   };
@@ -23488,32 +23411,6 @@ export interface EmployeesSelect<T extends boolean = true> {
         socialSecurityIdRef?: T;
         taxResidenceCountry?: T;
       };
-  status?: T;
-  createdBy?: T;
-  approvedBy?: T;
-  approvedAt?: T;
-  notes?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "competencies_select".
- */
-export interface CompetenciesSelect<T extends boolean = true> {
-  uuid?: T;
-  reference?: T;
-  name?: T;
-  description?: T;
-  subClassification?: T;
-  parent?: T;
-  reusabilityLevel?: T;
-  maxProficiency?: T;
-  escoUri?: T;
-  onetCode?: T;
-  sfiaCode?: T;
-  iscoOccupation?: T;
-  skillRoute?: T;
   status?: T;
   createdBy?: T;
   approvedBy?: T;
@@ -28416,14 +28313,6 @@ export interface PayloadMcpApiKeysSelect<T extends boolean = true> {
         update?: T;
         delete?: T;
       };
-  competencies?:
-    | T
-    | {
-        find?: T;
-        create?: T;
-        update?: T;
-        delete?: T;
-      };
   jobPositions?:
     | T
     | {
@@ -28792,7 +28681,6 @@ export interface TaskCreateCollectionExport {
       | 'sepa-mandates'
       | 'payroll-runs'
       | 'employees'
-      | 'competencies'
       | 'connections'
       | 'sectors'
       | 'job-positions'

@@ -140,7 +140,6 @@ const {
   SepaMandates,
   PayrollRuns,
   Employees,
-  Competencies,
   Connections,
   Sectors,
   JobPositions,
@@ -592,9 +591,8 @@ export default buildConfig({
     SepaMandates,
     // Payroll (1)
     PayrollRuns,
-    // People & HR (8)
+    // People & HR (7)
     Employees,
-    Competencies,
     Connections,
     Sectors,
     JobPositions,
@@ -1104,7 +1102,6 @@ export default buildConfig({
         // user = employee = agent. Access control still gates every call.
         connections: { enabled: true },
         messages: { enabled: true },
-        competencies: { enabled: true },
         'job-positions': { enabled: true },
         employees: { enabled: true },
       },

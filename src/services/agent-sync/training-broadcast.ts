@@ -118,7 +118,7 @@ export function trainingAfterChange(): CollectionAfterChangeHook {
     try {
       const employee = await req.payload.findByID({ collection: 'employees', id: incumbentId, depth: 0, overrideAccess: true } as never)
       const held = normalizeHeld((employee as unknown as Record<string, unknown> | null)?.competencies)
-      const routes = await resolveRoutes(req.payload, required.map((r) => String(r.competency)))
+      const routes = resolveRoutes(required.map((r) => String(r.competency)))
       const ev = buildAssessedEvent({
         tenantId,
         actorId: incumbentId,
@@ -149,23 +149,13 @@ export function trainingAfterChange(): CollectionAfterChangeHook {
   }
 }
 
-/** Resolve competency-id → skillRoute for the required set (best-effort; {} on failure — the plan still lists routes ''). */
-async function resolveRoutes(payload: ChatClient | unknown, ids: string[]): Promise<Record<string, string>> {
+/**
+ * The competency value IS the skillRoute now — the content-address into the corpus
+ * (services/skill-router/competencies), not a row id to look up. So the id→route map is identity;
+ * no `competencies` collection lookup (the collection collapsed; competencies are computed-on-read).
+ */
+function resolveRoutes(ids: string[]): Record<string, string> {
   const routes: Record<string, string> = {}
-  if (ids.length === 0) return routes
-  try {
-    const res = await (payload as { find: (a: unknown) => Promise<{ docs: Array<Record<string, unknown>> }> }).find({
-      collection: 'competencies',
-      where: { id: { in: ids } },
-      depth: 0,
-      limit: ids.length,
-      overrideAccess: true,
-    })
-    for (const d of res.docs) {
-      if (typeof d.skillRoute === 'string' && d.skillRoute) routes[String(d.id)] = d.skillRoute
-    }
-  } catch {
-    // best-effort: the loop still works without routes (skillRoute '' — the next atom to generate)
-  }
+  for (const id of ids) if (id) routes[id] = id
   return routes
 }

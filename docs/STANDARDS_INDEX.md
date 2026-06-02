@@ -211,11 +211,6 @@ src/collections/Chat/index.ts:16: * @standard RFC 9562 §5.8 content-uuid event-
 src/collections/Chat/index.ts:17: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
 src/collections/CommitmentsAndContingencies/index.ts:13: * @standard ISO-8601-1:2019 date-time
 src/collections/CommitmentsAndContingencies/index.ts:14: * @standard ISO-4217:2015 currency-codes
-src/collections/Competencies/index.ts:14: * @standard ESCO v1.2 skills-pillar mono-hierarchy four-sub-classifications reusability-tiers
-src/collections/Competencies/index.ts:15: * @standard SFIA 8 responsibility-levels-1-7 shared-scale held-and-required (gap = required − held)
-src/collections/Competencies/index.ts:16: * @standard ISCO-08 occupation-backbone (ESCO occupations roll up 1:1 to a unit group)
-src/collections/Competencies/index.ts:17: * @standard ISO 30405:2016 recruitment essential-vs-optional-requirement
-src/collections/Competencies/index.ts:18: * @standard O*NET-SOC crosswalk-anchor (onetCode)
 src/collections/ComplianceFrameworks/ComplianceRequirements/ComplianceGaps/index.ts:4: * @standard ISO-37301:2021 compliance-management
 src/collections/ComplianceFrameworks/ComplianceRequirements/index.ts:4: * @standard ISO-37301:2021 obligation-register
 src/collections/ComplianceFrameworks/index.ts:4: * @standard ISO-37301:2021 compliance-management-systems
@@ -1069,8 +1064,8 @@ src/fields/base-accounting-fields/index.ts:4: * @standard ISO-4217:2015 currency
 src/fields/base-accounting-fields/index.ts:5: * @standard ISO-8601-1:2019 date-time
 src/fields/base-accounting-fields/index.ts:92: * @standard UN/CEFACT Recommendation 20 unit-of-measure-codes
 src/fields/base-accounting-fields/index.ts:93: * @standard EN-16931 §BT-130 invoiced-quantity-unit-of-measure
-src/fields/competency/index.ts:10: * @standard SFIA 8 proficiency-levels
-src/fields/competency/index.ts:11: * @standard ISO 30405:2016 essential-vs-desirable (mandatory flag)
+src/fields/competency/index.ts:11: * @standard SFIA 8 proficiency-levels
+src/fields/competency/index.ts:12: * @standard ISO 30405:2016 essential-vs-desirable (mandatory flag)
 src/fields/defaultLexical/index.ts:4: * @standard W3C HTML5 Living Standard rich-text-output
 src/fields/defaultLexical/index.ts:5: * @standard CommonMark 0.31 markdown-fallback
 src/fields/defaultLexical/index.ts:7: * @standard BCP-47 language-tag locale-aware-content
@@ -1205,10 +1200,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1212:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1230:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1231:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1250:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1209:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1227:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1228:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1247:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -3212,7 +3207,6 @@ src/collections/BookableResources/index.ts:18: * @compliance SOX §404 internal-
 src/collections/BudgetPlanning/index.ts:33: * @compliance SOX §404 internal-controls budget-approval-workflow
 src/collections/Carriers/index.ts:16: * @compliance SOX §404 internal-controls carrier-master TOM-LOG-01
 src/collections/CommitmentsAndContingencies/index.ts:23: * @compliance SOX §404 internal-controls disclosure-completeness
-src/collections/Competencies/index.ts:19: * @compliance GDPR Art 9 special-category-data competency-records
 src/collections/ComplianceFrameworks/ComplianceRequirements/ComplianceGaps/index.ts:6: * @compliance SOX §404 deficiency
 src/collections/ComplianceFrameworks/ComplianceRequirements/index.ts:5: * @compliance SOX §404 control-objective
 src/collections/Connections/index.ts:26: * @compliance GDPR Art 17 right-to-erasure Art 21 right-to-object (mute/block)
@@ -4250,9 +4244,9 @@ src/jobs/dunningJob/index.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss 
 src/jobs/dunningJob/index.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob/index.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob/index.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1210:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1211:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1232:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1207:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1208:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1229:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client/index.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client/index.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -4634,7 +4628,6 @@ src/collections/Carriers/index.ts:17: * @security ISO-27001 A.5.23 cloud-service
 src/collections/Carriers/index.ts:18: * @security ISO-27002 §8.24 use-of-cryptography api-credentials-encryption
 src/collections/Categories/hooks/beforeChange.ts:6: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
 src/collections/CommitmentsAndContingencies/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/collections/Competencies/index.ts:20: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/ComplianceFrameworks/ComplianceRequirements/ComplianceGaps/index.ts:7: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/ComplianceFrameworks/ComplianceRequirements/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/collections/ComplianceFrameworks/index.ts:6: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5363,9 +5356,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1213:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1233:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1251:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1210:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1230:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1248:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/self/sufficient/index.ts:27: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
