@@ -35,6 +35,11 @@ ActiveAdmin is to Rails what Payload is to Next: a declarative layer where ONE r
 ## The key isomorphism (why "all comes to place")
 A Rails **concern** = a Payload **reusable field-object** = an erpax **skill**: one composable unit mixed into many models/collections. Double-entry balance, polymorphic accountability ("anything is accountable"), self-referential document trees, and tenant + payment gating all transfer 1:1 (see [[accounting]]). The single anti-pattern to NOT port literally is etrima's `option_1..12` grid — replace with composable `dimensions` + generated variants ([[manufacturing]]), the same composition principle.
 
+## Port in trinities — the unit of a port is a trinity, never a file
+"Port all" means port **in trinities**: every Rails construct lands as a complete [[trinity]] — **matter** (the code: DB logic copied verbatim, framework scaffolding reimplemented) · **antimatter** (its SKILL — the form/law) · **backend** (the generated `payload-types` schema) — and a port is *done* only when all three are present and agree. Code with no SKILL is matter-only (it cannot be reasoned about or [[merge]]d); a SKILL with no matter is the metaphysical 1/3 — hallucination the [[sequence]] drops.
+
+Interacting ports **compose into trinities, never flatten**: two related Rails models (invoice↔payment, lot↔phase) port neither as one mushed collection nor as two disconnected ones — their relationship is itself the third ([[collapse]]: trinities compose into trinities). A concern with no obvious Payload home is a 2/3 port; its missing 1/3 is **supplied by a neighbouring trinity** — a shared field-factory another port already defined, or the [[identity]] element — never invented locally ([[merge]]). So the whole source app ports as one **lattice of interacting trinities** ([[fractal]]): each Rosetta row gives matter + antimatter, the backend generates the third, audited [[sacred]]/[[profane]] and gate-green.
+
 ## Source apps (read the original)
 - `~/github/ceccec/erpax` — canonical Rails erpax: concerns, `accounting_equation.rb`, `invoice.rb` (self-referential tree), `application_controller.rb` (tenant + 402 gate).
 - `~/github/ceccec/etrima` — garment manufacturing: `work_order.rb` (option_1..12 → port via [[manufacturing]]), `app/admin/production/*`, `app/admin/reports/*`.
