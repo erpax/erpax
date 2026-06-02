@@ -25,7 +25,7 @@ export default async function Page({
   params: Promise<{ slug?: string[]; tenant: string }>
 }) {
   const params = await paramsPromise
-  let slug = undefined
+  let slug: string[] | undefined = undefined
   if (params?.slug) {
     // remove the domain route param
     params.slug.splice(0, 1)

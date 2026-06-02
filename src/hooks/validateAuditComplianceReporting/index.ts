@@ -93,6 +93,7 @@ export const validateAuditComplianceReporting: CollectionBeforeValidateHook<Audi
   data,
   req,
 }) => {
+  if (!data) return data // strict: beforeValidate data is optional
   const { payload } = req
 
   // Skip if audit status is not 'pending-generation' (only generate on creation/draft)

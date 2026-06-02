@@ -278,8 +278,8 @@ export function checkStreamUuidChain(
     if (ce.prevStreamUuid !== prev) {
       violations.push({ at: i, expectedUuid: prev ?? STREAM_GENESIS, gotUuid: ce.prevStreamUuid ?? STREAM_GENESIS, reason: 'broken-prev' })
     }
-    const body = { event: ce.event, lamport: ce.lamport, prev: ce.prevStreamUuid ?? STREAM_GENESIS }
-    const expected = computeContentUuid(body as unknown as Record<string, unknown>, ns)
+    const body: Record<string, unknown> = { event: ce.event, lamport: ce.lamport, prev: ce.prevStreamUuid ?? STREAM_GENESIS }
+    const expected: string = computeContentUuid(body, ns)
     if (expected !== ce.streamUuid) {
       violations.push({ at: i, expectedUuid: expected, gotUuid: ce.streamUuid, reason: 'mismatch' })
     }

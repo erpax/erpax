@@ -93,7 +93,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
   }
 
   // Determine next period (period + 1)
-  const nextPeriodNumber = data.fiscalPeriodNumber + 1
+  const nextPeriodNumber = (data.fiscalPeriodNumber ?? 0) + 1
   const nextFiscalYear = data.fiscalYear // Assume same fiscal year; handle year-end separately if needed
   const nextPeriodStartDate = data.closingDate // Use closing date as reversal posting date in next period
 
@@ -213,7 +213,7 @@ export const generateReversingEntries: CollectionAfterChangeHook<ClosingEntryDat
   try {
     await payload.update({
       collection: 'closing-entries',
-      id: data.id,
+      id: data.id!,
       data: {
         reversalEntriesGenerated: true,
         reversalGeneratedDate: new Date().toISOString().split('T')[0], // YYYY-MM-DD

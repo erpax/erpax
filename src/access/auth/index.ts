@@ -13,8 +13,8 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-import type { Access, PayloadRequest } from 'payload'
-import type { UserContext, UserRole, AccessResult } from '../../types/auth'
+import type { Access, PayloadRequest, Where } from 'payload'
+import type { UserContext, UserRole } from '../../types/auth'
 import type { User } from '../../payload-types'
 
 export { isSuperAdminAccess as superAdminOnly } from '../isSuperAdmin'
@@ -101,6 +101,7 @@ export const adminOnly: Access = async ({ req }) => {
  */
 export const adminOrAccountant: Access = async ({ req }) => {
   const user = getUserContext(req)
+  if (!user) return false
   if (!hasRole(user, 'admin', 'accountant')) return false
 
   return { tenant: { equals: user.tenant } }
@@ -112,6 +113,7 @@ export const adminOrAccountant: Access = async ({ req }) => {
  */
 export const tenantAdmin: Access = async ({ req }) => {
   const user = getUserContext(req)
+  if (!user) return false
   if (!hasRole(user, 'admin')) return false
 
   return { tenant: { equals: user.tenant } }
@@ -135,12 +137,12 @@ export function andAccess(...accessFns: Access[]): Access {
  * Builder: Create scoped access (returns query with tenant filter)
  * PATTERN: For all scoped collections
  */
-export function scopedAccess(additionalWhere?: Record<string, unknown>): Access {
+export function scopedAccess(additionalWhere?: Where): Access {
   return async ({ req }) => {
     const user = getUserContext(req)
     if (!user) return false
 
-    const query: AccessResult = { tenant: { equals: user.tenant } }
+    const query: Where = { tenant: { equals: user.tenant } }
 
     if (additionalWhere) {
       return { and: [query, additionalWhere] }
@@ -157,6 +159,7 @@ export function scopedAccess(additionalWhere?: Record<string, unknown>): Access 
 export function roleScopedAccess(...allowedRoles: UserRole[]): Access {
   return async ({ req }) => {
     const user = getUserContext(req)
+    if (!user) return false
     if (!hasRole(user, ...allowedRoles)) return false
 
     return { tenant: { equals: user.tenant } }
@@ -194,7 +197,7 @@ export function partyRoleAccess(
     const user = getUserContext(req)
     if (!user) return false
 
-    const tenantWhere: AccessResult = { tenant: { equals: user.tenant } }
+    const tenantWhere: Where = { tenant: { equals: user.tenant } }
 
     // Capability side: an admin (or configured capability role) holds blanket
     // access — no per-document membership lookup needed.

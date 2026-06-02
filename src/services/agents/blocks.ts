@@ -249,7 +249,7 @@ export function chainsAsBlockCompositions(registry: AgentRegistry): ReadonlyArra
       if (!agent) continue
       const m = manifestOf(agent)
       manifests.push(m)
-      path.push({ agentId: agent.id, collection: step.collection, action: step.action, emits: step.emits })
+      path.push({ agentId: agent.id, collection: step.collection, action: step.action, emits: step.emits ?? '' })
     }
     // Dedupe consecutive same-agent edges (a single block is not a composition with itself).
     const distinct: AgentBlockManifest[] = []

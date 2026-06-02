@@ -10,6 +10,7 @@
  * @see ../i18n.ts makeToolI18n + registerToolI18n
  */
 import { z } from 'zod'
+import type { Where } from 'payload'
 import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
 import type { ErpaxMcpTool } from '../tool-defs'
 import { createAgentContext } from '../../context'
@@ -66,7 +67,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
         limit: z.number().int().min(1).max(500).optional(),
       },
       async handler({ tenantId, eventType, chainId, limit }, req) {
-        const where: Record<string, unknown> = {}
+        const where: Where = {}
         if (typeof tenantId === 'string') where.tenant = { equals: tenantId }
         if (typeof eventType === 'string') where.eventType = { equals: eventType }
         if (typeof chainId === 'string') where.chainId = { equals: chainId }

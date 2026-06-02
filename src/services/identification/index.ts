@@ -280,5 +280,8 @@ async function resolveShortUuid<T>(
     }
   }
   // Re-resolve the full uuid through the content-uuid path.
+  if (!result.fullUuid) {
+    return { kind: 'short-uuid', row: null, collection: candidateCollection, matchedRule: `short-uuid:${result.status}` }
+  }
   return await resolveContentUuid<T>(result.fullUuid, { ...ctx, collectionHint: candidateCollection }, `short-uuid:expanded-to-contentUuid`)
 }

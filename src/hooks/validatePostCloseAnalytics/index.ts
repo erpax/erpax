@@ -165,6 +165,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
   data,
   req,
 }) => {
+  if (!data) return data // strict: beforeValidate data is optional
   const { payload } = req
 
   // Skip if analysis status is not 'pending-analysis' (only generate on creation/draft)
@@ -269,8 +270,8 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
     try {
       varianceAnalysisReport = PostCloseAnalytics.generateVarianceAnalysis(
         (consolidationData as unknown as Record<string, unknown>) || {},
-        (budgetData as Record<string, unknown>) || (consolidationData as unknown as Record<string, unknown>) || {},
-        null, // Prior period data would be queried from prior-year consolidation
+        (budgetData as unknown as Record<string, unknown>) || (consolidationData as unknown as Record<string, unknown>) || {},
+        undefined, // Prior period data would be queried from prior-year consolidation
         10, // Default 10% variance threshold
       )
 
@@ -290,7 +291,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
     try {
       ratioAnalysisReport = PostCloseAnalytics.generateRatioAnalysis(
         (consolidationData as unknown as Record<string, unknown>) || {},
-        null, // Prior period data optional
+        undefined, // Prior period data optional
       )
 
       data.ratioAnalysisReport = ratioAnalysisReport
@@ -309,7 +310,7 @@ export const validatePostCloseAnalytics: CollectionBeforeValidateHook<AnalyticsR
     try {
       segmentAnalysisReport = PostCloseAnalytics.generateSegmentReporting(
         (consolidationData as unknown as Record<string, unknown>) || {},
-        null, // Prior period data optional
+        undefined, // Prior period data optional
       )
 
       data.segmentAnalysisReport = segmentAnalysisReport

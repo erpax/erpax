@@ -25,7 +25,7 @@ describe('NIST SP-800-108 deriveSecretFromPayloadSecret', () => {
 
   afterEach(() => {
     if (savedSecret === undefined) {
-      delete process.env.PAYLOAD_SECRET
+      Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     } else {
       process.env.PAYLOAD_SECRET = savedSecret
     }
@@ -63,7 +63,7 @@ describe('NIST SP-800-108 deriveSecretFromPayloadSecret', () => {
   })
 
   it('returns empty string when PAYLOAD_SECRET is not set', () => {
-    delete process.env.PAYLOAD_SECRET
+    Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     expect(deriveSecretFromPayloadSecret('preview')).toBe('')
   })
 

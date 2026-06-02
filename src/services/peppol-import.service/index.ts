@@ -336,12 +336,10 @@ export const parsePeppolInvoice = (xml: string): PeppolBillingMessage => {
     scheme: '0088' as PeppolParticipantIdentifierScheme,
     value: '',
   }
-  const senderParticipantId =
-    (supplierPartyXml && parseParticipant(supplierPartyXml, 'cbc:EndpointID')) ??
-    FALLBACK
-  const receiverParticipantId =
-    (customerPartyXml && parseParticipant(customerPartyXml, 'cbc:EndpointID')) ??
-    FALLBACK
+  const senderParticipantId: PeppolParticipantIdentifier =
+    (supplierPartyXml ? parseParticipant(supplierPartyXml, 'cbc:EndpointID') : null) ?? FALLBACK
+  const receiverParticipantId: PeppolParticipantIdentifier =
+    (customerPartyXml ? parseParticipant(customerPartyXml, 'cbc:EndpointID') : null) ?? FALLBACK
 
   const envelope: PeppolEnvelope = {
     customizationId:

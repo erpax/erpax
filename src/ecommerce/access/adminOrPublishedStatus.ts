@@ -1,4 +1,4 @@
-import type { Access } from 'payload'
+import type { Access, Where } from 'payload'
 
 import { getAllowPublicReadTenantIds } from '@/access/allowPublicReadTenants'
 import { commerceHasStaffRole } from '@/ecommerce/access/utilities'
@@ -25,18 +25,8 @@ export const adminOrPublishedStatus: Access = async ({ req }) => {
     return false
   }
 
-  return {
-    and: [
-      {
-        _status: {
-          equals: 'published',
-        },
-      },
-      {
-        tenant: {
-          in: ids,
-        },
-      },
-    ],
+  const where: Where = {
+    and: [{ _status: { equals: 'published' } }, { tenant: { in: ids } }],
   }
+  return where
 }

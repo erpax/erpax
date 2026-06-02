@@ -19,7 +19,7 @@
  * @see docs/STANDARDS.md §7
  */
 
-import type { Payload, PayloadRequest, CollectionSlug, RequiredDataFromCollectionSlug } from 'payload';
+import type { Payload, PayloadRequest, CollectionSlug, RequiredDataFromCollectionSlug, Where } from 'payload';
 
 /**
  * Per-collection validation contract used by `TestSeedFactory.validateData`.
@@ -813,7 +813,7 @@ export abstract class TestSeedFactory {
   /**
    * Query documents (useful for relationships)
    */
-  protected async queryDocuments(collection: string, query?: Record<string, unknown>) {
+  protected async queryDocuments(collection: string, query?: Where) {
     return await this.payload.find({
       collection: collection as CollectionSlug,
       where: query,

@@ -38,7 +38,7 @@ describe('encryption', () => {
     if (originalSecret) {
       process.env.PAYLOAD_SECRET = originalSecret
     } else {
-      delete process.env.PAYLOAD_SECRET
+      Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
     }
   })
 
@@ -88,7 +88,7 @@ describe('encryption', () => {
     })
 
     it('should throw when PAYLOAD_SECRET not set', () => {
-      delete process.env.PAYLOAD_SECRET
+      Reflect.deleteProperty(process.env, 'PAYLOAD_SECRET')
 
       expect(() => encryptField('test')).toThrow('PAYLOAD_SECRET')
       expect(() => decryptField('test:data:here')).toThrow('PAYLOAD_SECRET')

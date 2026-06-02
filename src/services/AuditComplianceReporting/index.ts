@@ -355,9 +355,9 @@ export class AuditComplianceReporting {
       },
       localFiles,
       contemporaneousDocumentation: transferPricingAdjustments.map((adj, _idx) => ({
-        adjustmentId: adj.id,
+        adjustmentId: adj.id ?? '',
         documentationType: adj.methodUsed,
-        filePath: adj.supportingDocumentation,
+        filePath: adj.supportingDocumentation ?? '',
       })),
       packageDate: new Date().toISOString().split('T')[0],
       oecd_compliance: true, // Validation required

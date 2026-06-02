@@ -59,8 +59,6 @@ import type {
   Customer,
   Vendor,
   JournalEntry,
-  Invoice,
-  Payment,
   InventoryMovement,
 } from '@/payload-types'
 import { generateTrialBalance, type TrialBalanceRow } from '@/services/accounting/reports.service'
@@ -417,7 +415,7 @@ export const buildGeneralLedgerEntries = async (
         systemEntryDate,
         debitCreditIndicator: debit > 0 ? 'D' : 'C',
         amount: { amount },
-        description: l.description,
+        description: l.description ?? '',
         customerID: (l as Record<string, unknown>).customerId as string | undefined,
         supplierID: (l as Record<string, unknown>).supplierId as string | undefined,
       }
@@ -576,7 +574,7 @@ export const buildSalesInvoices = async (
     limit: 100_000,
     depth: 1,
   })
-  const docs = result.docs as Invoice[]
+  const docs = result.docs as unknown as InvoiceDoc[]
   const invoices = docs.map(invoiceToSafT)
   const totalDebit = 0
   let totalCredit = 0
@@ -609,7 +607,7 @@ export const buildPurchaseInvoices = async (
     limit: 100_000,
     depth: 1,
   })
-  const docs = result.docs as Invoice[]
+  const docs = result.docs as unknown as InvoiceDoc[]
   const invoices = docs.map(invoiceToSafT)
   let totalDebit = 0
   const totalCredit = 0
@@ -704,7 +702,7 @@ export const buildPayments = async (
     limit: 100_000,
     depth: 0,
   })
-  const docs = result.docs as Payment[]
+  const docs = result.docs as unknown as PaymentDoc[]
   const payments = docs.map(paymentToSafT)
   let totalDebit = 0
   let totalCredit = 0

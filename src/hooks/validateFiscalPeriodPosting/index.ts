@@ -67,6 +67,7 @@ interface GLPostingsData {
 
 export const validateFiscalPeriodPosting: CollectionBeforeValidateHook<GLPostingsData> = async (args) => {
   const { data, req } = args
+  if (!data) return data // strict: beforeValidate data is optional
 
   // Extract posting date
   const postingDate = data.postingDate

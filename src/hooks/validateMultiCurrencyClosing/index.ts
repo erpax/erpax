@@ -58,6 +58,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
   data,
   req,
 }) => {
+  if (!data) return data // strict: beforeValidate data is optional
   const { payload } = req
 
   // Skip if no closing entries
@@ -162,7 +163,7 @@ export const validateMultiCurrencyClosing: CollectionBeforeValidateHook<ClosingE
         closingEntriesByCurrency[currency].totalRevenuesClosed -
         closingEntriesByCurrency[currency].totalExpensesClosed,
     })),
-    reconciliationDate: data.closingDate,
+    reconciliationDate: data.closingDate ?? '',
   }
 
   const reconciliation = CurrencyReconciliation.reconcileMultiCurrency(

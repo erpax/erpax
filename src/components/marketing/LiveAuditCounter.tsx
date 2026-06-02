@@ -15,6 +15,7 @@
 
 import React from 'react'
 import { getPayload } from 'payload'
+import type { Where } from 'payload'
 import configPromise from '@payload-config'
 
 interface LiveAuditCounterProps {
@@ -33,11 +34,12 @@ async function fetchAuditCount(
 ): Promise<number> {
   const payload = await getPayload({ config: configPromise })
   const since = new Date(Date.now() - sinceDays * 24 * 60 * 60 * 1000)
-  const tenantFilter = tenantId !== undefined ? { tenant: { equals: tenantId } } : {}
+  const where: Where = { createdAt: { greater_than: since.toISOString() } }
+  if (tenantId !== undefined) where.tenant = { equals: tenantId }
   try {
     const result = await payload.find({
       collection: 'journal-entries',
-      where: { createdAt: { greater_than: since.toISOString() }, ...tenantFilter },
+      where,
       limit: 0,
       overrideAccess: true,
     })

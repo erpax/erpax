@@ -204,7 +204,7 @@ export async function processDunningCycle(payload: Payload): Promise<void> {
           { status: { equals: 'open' } },
           { 'dates.dueAt': { less_than: new Date().toISOString() } },
         ],
-      } as Record<string, unknown>,
+      },
       limit: 1000,
       depth: 2,
     })

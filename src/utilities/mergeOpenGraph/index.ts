@@ -33,6 +33,6 @@ export const mergeOpenGraph = (
   return {
     ...defaultOpenGraph,
     ...og,
-    images: og?.images ? og.images : defaultOpenGraph.images,
+    images: og?.images ? og.images : defaultOpenGraph?.images,
   }
 }

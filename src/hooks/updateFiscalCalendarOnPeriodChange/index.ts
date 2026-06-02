@@ -81,7 +81,7 @@ export const updateFiscalCalendarOnPeriodChange: CollectionBeforeChangeHook<Fisc
   if (isAmendment) {
     if (config.periodType === 'custom' && Array.isArray(config.customPeriodBoundaries)) {
       const boundaryValidation = FiscalPeriodResolver.validatePeriodBoundary(
-        config.customPeriodBoundaries as FiscalPeriodConfig['customPeriodBoundaries'],
+        config.customPeriodBoundaries as NonNullable<FiscalPeriodConfig['customPeriodBoundaries']>,
       )
       if (!boundaryValidation.isValid) {
         throw new Error(

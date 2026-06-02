@@ -41,6 +41,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
   data,
   req,
 }) => {
+  if (!data) return data // strict: beforeValidate data is optional
   const { payload } = req
 
   // Skip if consolidation status is not 'in-progress' (only validate on creation/draft)
@@ -84,7 +85,7 @@ export const validateConsolidationReadiness: CollectionBeforeValidateHook<Consol
         where: {
           and: [
             { entity: { equals: entityId } },
-            { fiscalYear: { equals: new Date(data.periodClosingDate).getFullYear() } },
+            { fiscalYear: { equals: new Date(data.periodClosingDate ?? '').getFullYear() } },
           ],
         },
         sort: '-closingDate',

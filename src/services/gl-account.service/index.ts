@@ -244,7 +244,7 @@ class GLAccountService {
     );
 
     if (!response.ok) throw new Error(`Failed to get account balances: ${response.statusText}`);
-    const data = await response.json();
+    const data = (await response.json()) as Record<string, number>;
     return new Map(Object.entries(data));
   }
 

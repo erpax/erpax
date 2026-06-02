@@ -41,6 +41,7 @@ export const validateClosingPeriod: CollectionBeforeValidateHook<ClosingEntryDat
   data,
   req,
 }) => {
+  if (!data) return data // strict: beforeValidate data is optional
   const { payload } = req
 
   // Extract required fields

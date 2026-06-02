@@ -17,6 +17,7 @@ import {
   getCustomFieldValidator,
   type FieldTypeValidator,
   type FieldType,
+  type Payload as DiscoveryPayload,
 } from '../../src/testing/config-discovery'
 
 // =============================================================================
@@ -360,7 +361,7 @@ describe('FEATURE 2: Relationship Constraints', () => {
   beforeEach(() => {
     PayloadConfigDiscovery.resetInstance()
     discovery = PayloadConfigDiscovery.getInstance()
-    discovery.initialize(createAdvancedPayload())
+    discovery.initialize(createAdvancedPayload() as unknown as DiscoveryPayload)
   })
 
   afterEach(() => {
@@ -542,7 +543,7 @@ describe('FEATURE 3: Enum Validation', () => {
   beforeEach(() => {
     PayloadConfigDiscovery.resetInstance()
     discovery = PayloadConfigDiscovery.getInstance()
-    discovery.initialize(createAdvancedPayload())
+    discovery.initialize(createAdvancedPayload() as unknown as DiscoveryPayload)
   })
 
   afterEach(() => {
@@ -636,7 +637,7 @@ describe('FEATURE 4: Access Control', () => {
   beforeEach(() => {
     PayloadConfigDiscovery.resetInstance()
     discovery = PayloadConfigDiscovery.getInstance()
-    discovery.initialize(createAdvancedPayload())
+    discovery.initialize(createAdvancedPayload() as unknown as DiscoveryPayload)
   })
 
   afterEach(() => {
@@ -734,7 +735,7 @@ describe('FEATURE 5: Custom Fields & Extensibility', () => {
   beforeEach(() => {
     PayloadConfigDiscovery.resetInstance()
     discovery = PayloadConfigDiscovery.getInstance()
-    discovery.initialize(createAdvancedPayload())
+    discovery.initialize(createAdvancedPayload() as unknown as DiscoveryPayload)
   })
 
   afterEach(() => {
@@ -814,7 +815,7 @@ describe('Integration Tests - All Features Together', () => {
   beforeEach(() => {
     PayloadConfigDiscovery.resetInstance()
     discovery = PayloadConfigDiscovery.getInstance()
-    discovery.initialize(createAdvancedPayload())
+    discovery.initialize(createAdvancedPayload() as unknown as DiscoveryPayload)
   })
 
   afterEach(() => {

@@ -205,11 +205,13 @@ export class ParallelTestRunner {
               error: error instanceof Error ? error : new Error(String(error)),
             });
           }
-
-          running.splice(running.indexOf(promise), 1);
         })();
 
         running.push(promise);
+        // remove from the in-flight set once settled (no self-reference in the initializer)
+        void promise.finally(() => {
+          running.splice(running.indexOf(promise), 1);
+        });
       }
 
       // Wait for at least one to complete

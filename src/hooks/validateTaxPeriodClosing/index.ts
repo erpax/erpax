@@ -56,6 +56,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   data,
   req,
 }) => {
+  if (!data) return data // strict: beforeValidate data is optional
   const { payload } = req
 
   // Skip if tax status is not 'pending-closing' (only validate on creation/draft)
@@ -88,7 +89,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
     }
   } else {
     // If no fiscal period linked, assume tax period end date is the reference
-    fiscalPeriodEndDate = data.taxPeriodEndDate
+    fiscalPeriodEndDate = data.taxPeriodEndDate ?? null
   }
 
   if (!fiscalPeriodEndDate) {
@@ -136,9 +137,9 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   // Collect jurisdiction statuses (if provided)
   const jurisdictionStatuses = data.jurisdictionStatuses || [
     {
-      jurisdiction: data.taxJurisdiction,
+      jurisdiction: data.taxJurisdiction ?? '',
       taxStatus: data.taxStatus || 'pending-closing',
-      filingDeadline: new Date(new Date(data.taxPeriodEndDate).getFullYear() + 1, 2, 31)
+      filingDeadline: new Date(new Date(data.taxPeriodEndDate ?? '').getFullYear() + 1, 2, 31)
         .toISOString()
         .split('T')[0], // Illustrative: Mar 31 next year
     },
@@ -147,7 +148,7 @@ export const validateTaxPeriodClosing: CollectionBeforeValidateHook<TaxPeriodDat
   // Assess tax period readiness
   const readiness = TaxPeriodReconciliation.assessTaxPeriodReadiness(
     {
-      [data.taxJurisdiction]: data.taxPeriodEndDate,
+      [data.taxJurisdiction ?? '']: data.taxPeriodEndDate ?? '',
     },
     fiscalPeriodEndDate,
     transferPricingAdjustments,

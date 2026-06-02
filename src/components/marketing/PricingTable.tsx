@@ -17,6 +17,7 @@
 
 import React from 'react'
 import { getPayload } from 'payload'
+import type { Where } from 'payload'
 import configPromise from '@payload-config'
 import { DEFAULT_CURRENCY, type Currency } from '@/config/regional-defaults'
 
@@ -45,7 +46,7 @@ export default async function PricingTable({
   highlightPlanId,
 }: PricingTableProps) {
   const payload = await getPayload({ config: configPromise })
-  const where: Record<string, unknown> = {}
+  const where: Where = {}
   if (tenantId !== undefined) where.tenant = { equals: tenantId }
   const result = await payload.find({
     collection: 'subscription-plans',
