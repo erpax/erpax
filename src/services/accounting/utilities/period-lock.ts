@@ -24,7 +24,9 @@
 
 import type { CollectionBeforeChangeHook, PayloadRequest } from 'payload'
 
-const POSTABLE_DATE_FIELDS = ['date', 'transactionDate', 'postingDate', 'effectiveDate'] as const
+// Incl. GLPostings' sourceDate/postedDate so the period-lock that is wired to
+// gl-postings is actually functional (it stores no plain `date` field).
+const POSTABLE_DATE_FIELDS = ['date', 'transactionDate', 'postingDate', 'effectiveDate', 'sourceDate', 'postedDate'] as const
 
 /**
  * Returns the locked fiscal period covering `isoDate` for `tenantId`,

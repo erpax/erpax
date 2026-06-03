@@ -29,7 +29,8 @@ export interface DomainEvent {
     | 'order'
     | 'fixed_asset'
     | 'sale'
-    | 'receipt';
+    | 'receipt'
+    | 'gl_posting';
   timestamp: Date;
   userId: string;
   payload: Record<string, unknown>;

@@ -4,6 +4,7 @@ import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
 import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy'
 import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
 import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
+import { emitOnStatusTransition } from '../../../hooks/chainEventEmitters'
 import {
   glAccountField,
   currencyField,
@@ -106,7 +107,7 @@ const GLPostings: CollectionConfig = {
       autoPopulateCreatedBy,
       autoSetTimestamp('postedDate', (data) => (data as { status?: string }).status === 'posted'),
     ],
-    afterChange: [auditTrailAfterChange('gl-postings')],
+    afterChange: [auditTrailAfterChange('gl-postings'), emitOnStatusTransition('posted', 'gl:posted', 'gl_posting')],
   },
   timestamps: true,
 }

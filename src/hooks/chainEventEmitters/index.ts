@@ -25,7 +25,7 @@ type StatusBearing = { status?: string; id: string; uuid?: string; tenant?: stri
 /** AggregateType envelope shared by every chain emit. */
 export type AggregateType =
   | 'invoice' | 'bill' | 'payment' | 'inventory_transfer'
-  | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset'
+  | 'bank_statement' | 'subscription' | 'order' | 'fixed_asset' | 'gl_posting'
 
 /**
  * Emit a domain event with Payload-native logging (no custom service layer).
