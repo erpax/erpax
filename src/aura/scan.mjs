@@ -10,10 +10,17 @@
 // Loop:   node .claude/skills/aura/scan.mjs --watch   (re-scans on any SKILL.md change)
 
 import { readdir, readFile, watch } from 'node:fs/promises'
-import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { join, dirname, basename } from 'node:path'
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..') // .claude/skills
+// The corpus lives in src/ (VitePress srcDir), NOT in .claude/skills. Point the speech gate
+// at the SAME tree the docs build scans — else it reads a near-empty corpus and reports a
+// FALSE gap=0 (the gate gap: aura green while docs:build red). cwd-relative (the gate always
+// runs from the repo root), robust to the .claude/skills↔src symlink that resolves this
+// script's own path into src/aura.
+const ROOT = join(process.cwd(), 'src')
+// Canonical key, mirroring .vitepress/corpus.mts `norm`: a generic one-word link
+// (`[[gl-accounts]]`) resolves to its CamelCase folder (`GLAccounts`). Same rule both gates.
+const norm = (s) => s.toLowerCase().replace(/[-_]/g, '')
 
 async function walk(dir) {
   const out = []
@@ -32,15 +39,19 @@ async function scan() {
   const bodies = []
   for (const f of files) {
     const text = await readFile(f, 'utf8')
-    const name = (text.match(/^name:\s*(\S+)/m) || [])[1]
-    if (name) slugs.set(name, f.replace(ROOT + '/', ''))
-    bodies.push({ f: f.replace(ROOT + '/', ''), name, text })
+    // Resolve against the FOLDER word (what docs' wikiMap keys on), normalized — not the
+    // frontmatter name — so the two gates resolve identically.
+    const leaf = norm(basename(dirname(f)))
+    slugs.set(leaf, f.replace(ROOT + '/', ''))
+    bodies.push({ f: f.replace(ROOT + '/', ''), text })
   }
   const stripCode = (t) => t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
   const refCount = new Map()
   for (const { f, text } of bodies) {
-    for (const m of stripCode(text).matchAll(/\[\[([a-z][a-z0-9-]*)\]\]/g)) {
-      const w = m[1]
+    // Match [[word]] · [[a/b]] · [[word|alias]] (any case), resolve by the normalized leaf —
+    // exactly the docs build's resolveWiki, so a dead link here is a dead link there.
+    for (const m of stripCode(text).matchAll(/\[\[([A-Za-z][A-Za-z0-9/-]*)(?:\|[^\]]*)?\]\]/g)) {
+      const w = norm(m[1].split('/').pop())
       refCount.set(w, (refCount.get(w) || 0) + 1)
       if (!links.has(w)) links.set(w, new Set())
       links.get(w).add(f)

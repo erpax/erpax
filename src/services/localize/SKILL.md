@@ -23,7 +23,7 @@ The translation-key uuid IS the element's whole identity — the 128-bit singula
 | **cmyk** | rodin gamut {K,C,M,Y} from position | [[cmyk]] |
 | locale-map | the `translations` collection `value` | Payload `localized:true` · BCP-47 |
 
-Every added level is "another level of feature-rich infinite tampering cost." OID and the cmyk channel are *derived* from the same bits (no new entropy) — yet each is one more address a forger must keep coherent, and one more way a human or machine can verify (proof). Lexical rich-text is the densest fuel: a whole node-tree per locale. The per-field content mechanics (`localized:true`, resolve-by-`req.locale`) are the [[localize-field]] leaf.
+Every added level is "another level of feature-rich infinite tampering cost." OID and the cmyk channel are *derived* from the same bits (no new entropy) — yet each is one more address a forger must keep coherent, and one more way a human or machine can verify (proof). Lexical rich-text is the densest fuel: a whole node-tree per locale. The per-field content mechanics (`localized:true`, resolve-by-`req.locale`) are the [[fields]] localization leaf.
 
 ## No gaps, by computation
 

@@ -5,7 +5,7 @@ import type MarkdownIt from 'markdown-it'
 import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
-import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk } from './corpus.mts'
+import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm } from './corpus.mts'
 
 // ── The fractal skill tree IS the docs structure ──────────────────────────
 // VitePress's directory→sidebar→route mapping is the same path-as-address law
@@ -121,7 +121,7 @@ function relationsFromPath(pageRel: string): {
 function resolveWiki(target: string): string {
   const t = target.trim()
   if (t.includes('/')) return '/' + t.replace(/^\/+/, '') + '/SKILL'
-  return wikiMap[t] ?? '/' + t + '/SKILL'
+  return wikiMap[norm(t)] ?? '/' + t + '/SKILL'
 }
 
 // Surface the frontmatter `description` (the "Use when…" trigger) as a rendered

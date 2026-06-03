@@ -13,8 +13,17 @@ import { join, relative } from 'node:path'
 export const SKILLS_DIR = 'src'
 
 export type SidebarItem = { text: string; link?: string; collapsed?: boolean; items?: SidebarItem[] }
-export const wikiMap: Record<string, string> = {} // leaf word → route
+export const wikiMap: Record<string, string> = {} // normalized leaf word → route
 export const allSkills: { name: string; route: string }[] = [] // flat list → the reading chain
+
+/**
+ * Canonical key: lowercase + strip `-`/`_`. So a prose link's generic one-word name
+ * (`[[invoices]]`, `[[gl-accounts]]`) resolves to its CamelCase collection folder
+ * (`Invoices`, `GLAccounts`) — the generic-naming law (one lowercase word) reconciled
+ * with the Payload folder convention. The SAME norm is mirrored in the aura speech gate,
+ * so the two gates agree (no false green). Only `tags`/`Tags` collide, benignly.
+ */
+export const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
 
 export function routeOf(relDir: string): string {
   // Routes are srcDir-relative (srcDir = SKILLS_DIR), so drop that base prefix:
@@ -37,7 +46,7 @@ export function walk(dir: string): SidebarItem[] {
     // leaf word with a real atom; without this guard the last-walked one wins.
     const hasSkill = existsSync(join(full, 'SKILL.md'))
     if (hasSkill) {
-      wikiMap[name] = route // leaf-word resolution (one word per concept ⇒ unique)
+      wikiMap[norm(name)] = route // normalized leaf-word resolution (case/hyphen-insensitive)
       allSkills.push({ name, route })
     }
     const children = walk(full)
