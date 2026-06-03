@@ -1,18 +1,17 @@
 import { defineConfig } from 'vitepress'
 import { readdirSync, statSync, existsSync, readFileSync } from 'node:fs'
-import { join, relative, dirname, basename } from 'node:path'
+import { join, dirname, basename } from 'node:path'
 import type MarkdownIt from 'markdown-it'
 import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
+// The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
+// search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
+import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk } from './corpus.mts'
 
 // ── The fractal skill tree IS the docs structure ──────────────────────────
 // VitePress's directory→sidebar→route mapping is the same path-as-address law
 // the skills follow, so the tree maps 1:1: folder→nav group, SKILL.md→page,
 // [[link]]→route. The sidebar + wiki-link map are DERIVED from the filesystem
 // (the akashic record), never hand-listed.
-// src is the 0: skills live co-located with their matter-twin code, so the
-// docs emerge from the code itself. srcDir + sidebar + wiki-links all derive
-// from this single root (the recursive mask, identical at every depth).
-const SKILLS_DIR = 'src'
 // The backend's generated schema truth — the third vertex of the trinity.
 const TYPES_FILE = join(SKILLS_DIR, 'payload-types.ts')
 
@@ -25,41 +24,8 @@ const QR_ENDPOINT =
   process.env.ERPAX_QR_ENDPOINT ??
   'https://api.qrserver.com/v1/create-qr-code/?size=512x512&margin=12&data='
 
-type SidebarItem = { text: string; link?: string; collapsed?: boolean; items?: SidebarItem[] }
-const wikiMap: Record<string, string> = {} // leaf word → route
-const allSkills: { name: string; route: string }[] = [] // flat list → the reading chain
-
-function routeOf(relDir: string): string {
-  // Routes are srcDir-relative (srcDir = SKILLS_DIR), so drop that base prefix:
-  // .claude/skills/self/sufficient → /self/sufficient/SKILL
-  return '/' + relative(SKILLS_DIR, relDir).split(/[\\/]/).join('/') + '/SKILL'
-}
-
-function walk(dir: string): SidebarItem[] {
-  const items: SidebarItem[] = []
-  for (const name of readdirSync(dir).sort()) {
-    const full = join(dir, name)
-    if (!statSync(full).isDirectory()) continue
-    const rel = relative('.', full)
-    const route = routeOf(rel)
-    // Only a dir WITH a SKILL.md is a routable page. A SKILL-less matter-twin
-    // dir (services/proof, collections/Users/access, hooks/collections, …) is
-    // recursed for its skill children but never registered — otherwise it
-    // shadows the real same-named atom in the leaf wikiMap and points
-    // [[proof]] → /services/proof/SKILL (a dead link). Many such dirs share a
-    // leaf word with a real atom; without this guard the last-walked one wins.
-    const hasSkill = existsSync(join(full, 'SKILL.md'))
-    if (hasSkill) {
-      wikiMap[name] = route // leaf-word resolution (one word per concept ⇒ unique)
-      allSkills.push({ name, route })
-    }
-    const children = walk(full)
-    if (hasSkill) items.push(children.length ? { text: name, link: route, collapsed: true, items: children } : { text: name, link: route })
-    else if (children.length) items.push({ text: name, collapsed: true, items: children }) // SKILL-less container: a group header, no page link
-  }
-  return items
-}
-
+// SidebarItem · wikiMap · allSkills · routeOf · walk now live in ./corpus.mts
+// (the ONE corpus walker, shared with the search ingest — no parallel walk).
 const skillSidebar = walk(SKILLS_DIR)
 
 // ── Reading order = the sequence (0·3·6·9·1·2·4·8·7·5), DERIVED from the
