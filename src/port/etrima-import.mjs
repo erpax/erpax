@@ -14,7 +14,7 @@
  * Small lookup tables (employee_contracts, lot_work_phases) precede the big
  * ones in the dump, so the FK-resolution maps are built inline in one pass.
  *
- * Usage:  node scripts/etrima-to-import.mjs [path-to-dump.zip]
+ * Usage:  node src/port/etrima-import.mjs [path-to-dump.zip]
  */
 import { spawn } from 'node:child_process'
 import { createInterface } from 'node:readline'

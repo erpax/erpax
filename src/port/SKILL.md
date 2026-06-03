@@ -51,7 +51,7 @@ Every ported collection MUST carry its real `@standard`/`@accounting`/`@audit`/`
 - **Standards + sequence = the multi-agent coordinate + collision detector.** Many agents can generate features simultaneously; the architecture-invariants (`services/architecture-invariants`), the generated `docs/STANDARDS_INDEX.md`, and `payload-types.ts` surface exactly where two agents' skills collide. Strict banners are what make that monitoring possible.
 
 ## Data migration (dump → import-export plugin)
-Port the *data*, not just the schema: `scripts/etrima-to-import.mjs` streams the source pg_dump (gzipped plain SQL, read straight from the zip) and emits one JSON array of documents per collection for `@payloadcms/plugin-import-export` to import (CSV or JSON; JSON handles nested arrays cleanly). Rules:
+Port the *data*, not just the schema: `src/port/etrima-import.mjs` streams the source pg_dump (gzipped plain SQL, read straight from the zip) and emits one JSON array of documents per collection for `@payloadcms/plugin-import-export` to import (CSV or JSON; JSON handles nested arrays cleanly). Rules:
 - **Preserve source PKs** as the erpax doc `id` so foreign keys map 1:1 — no id remapping; the content-uuid plugin stamps `uuid` on import. Import in dependency order.
 - The COPY parser is **self-describing** — it reads each block's own column list, so the mapping config is column-order-independent.
 - **Sample** huge transactional tables (etrima `work_orders` 2M, `work_shifts` 377K, `lot_work_phases` 291K); take master data in full. **Skip** paper-trail (`versions`/`version_associations`) + dated archive tables.

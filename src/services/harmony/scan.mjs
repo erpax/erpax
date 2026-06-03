@@ -16,8 +16,8 @@
  * twin of `aura` (which gates [[link]] resolution); together they make the whole
  * base one harmonic atom space.
  *
- *   node scripts/harmony-scan.mjs            # collection field + enum names
- *   node scripts/harmony-scan.mjs --json     # machine-readable (for the breath loop)
+ *   node src/services/harmony/scan.mjs            # collection field + enum names
+ *   node src/services/harmony/scan.mjs --json     # machine-readable (for the breath loop)
  */
 import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, basename, dirname } from 'node:path'

@@ -13,7 +13,7 @@
  * the aura/docs gates verify nothing dead was added. Skips a proposal whose target is
  * missing, equals the orphan, or already links it.
  *
- *   node scripts/weave-orphans.mjs <proposals.json>
+ *   node src/aura/weave.mjs <proposals.json>
  */
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
@@ -44,7 +44,7 @@ for (const f of walk('src')) {
 
 const arg = process.argv[2]
 if (!arg) {
-  console.error('usage: node scripts/weave-orphans.mjs <proposals.json>')
+  console.error('usage: node src/aura/weave.mjs <proposals.json>')
   process.exit(1)
 }
 const raw = JSON.parse(readFileSync(arg, 'utf8'))

@@ -4,7 +4,7 @@
  * Run w6vvx50h0: 89 officers (auditors → prosecutors ∥
  * defense → judges) tried 27 charges across 8 aspects of the
  * diamond law. This is the akashic record of that proceeding — generated from
- * the authoritative workflow output by scripts/gen-court-docket.mjs, ingested
+ * the authoritative workflow output by src/justice/docket.mjs, ingested
  * into the `audit-findings` collection by ./seed.ts. The record is permanent
  * and tamper-evident ([[proof]]); the verdicts are the society judging itself.
  *

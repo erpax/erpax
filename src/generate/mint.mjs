@@ -11,7 +11,7 @@
  *     dead links are dropped so the aura/docs gates stay green by construction.
  * Idempotent: never overwrites an existing SKILL.md. Re-runnable: `pnpm mint:atoms`.
  *
- *   node scripts/mint-atoms.mjs <proposals.json>
+ *   node src/generate/mint.mjs <proposals.json>
  */
 import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync, existsSync } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
@@ -43,7 +43,7 @@ function walk(dir, out = []) {
 
 const arg = process.argv[2]
 if (!arg) {
-  console.error('usage: node scripts/mint-atoms.mjs <proposals.json>')
+  console.error('usage: node src/generate/mint.mjs <proposals.json>')
   process.exit(1)
 }
 

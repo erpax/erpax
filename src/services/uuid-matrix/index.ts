@@ -7,7 +7,7 @@
  * data is generated; this barrel is the hand-authored, stable API over it so
  * callers query atoms/edges/bindings without touching the raw arrays.
  *
- * @see ./matrix.generated.ts (the data) · scripts/gen-uuid-matrix.mjs (the collider)
+ * @see ./matrix.generated.ts (the data) · src/services/uuid-matrix/collide.mjs (the collider)
  */
 import {
   UUID_MATRIX_NODES,

@@ -1021,7 +1021,7 @@ Per `wire all into the payload mcp so the agents also can use all this knowledge
 - Create: `src/services/agents/mcp/in-process-client.test.ts`
 - Modify: `src/services/agents/types.ts` — add `mcp: McpClient` to `AgentContext`.
 - Modify: `src/payload.config.ts:353-376` — pass `tools`, `resources`, `prompts` from the new modules into `mcpPlugin({ mcp: {...} })` and widen the `collections` map to expose every domain-agent-owned slug.
-- Modify: `scripts/mcp-tools-list.mjs` — extend its output to include the new ERPax tools.
+- Modify: `src/services/agents/mcp/tools-list.mjs` — extend its output to include the new ERPax tools.
 
 ---
 
@@ -1553,12 +1553,12 @@ git commit -m "feat(payload-config): expose ERPax tools + resources + prompts vi
 ### Task 14: Update mcp-tools-list.mjs to surface the new tools + verify
 
 **Files:**
-- Modify: `scripts/mcp-tools-list.mjs`
+- Modify: `src/services/agents/mcp/tools-list.mjs`
 
 - [ ] **Step 1: Inspect current script**
 
 ```bash
-cat scripts/mcp-tools-list.mjs
+cat src/services/agents/mcp/tools-list.mjs
 ```
 
 - [ ] **Step 2: Extend its output to group ERPax tools separately + run**
@@ -1566,14 +1566,14 @@ cat scripts/mcp-tools-list.mjs
 Add a section that groups tools by `name.startsWith('erpax.')` and prints them under an `─── ERPax custom tools ───` header. Keep the auto-generated CRUD tools section intact.
 
 ```bash
-node scripts/mcp-tools-list.mjs > /tmp/mcp-tools.txt
+node src/services/agents/mcp/tools-list.mjs > /tmp/mcp-tools.txt
 grep "erpax\." /tmp/mcp-tools.txt | wc -l   # expect 12
 ```
 
 - [ ] **Step 3: Cleanup + commit**
 
 ```bash
-git add scripts/mcp-tools-list.mjs
+git add src/services/agents/mcp/tools-list.mjs
 git commit -m "chore(mcp): list ERPax custom tools separately in mcp:test (DDDDD task 14)"
 ```
 

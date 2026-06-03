@@ -7,7 +7,7 @@
 // This audits the generated migration(s) for over-cap tables and prints the
 // punch-list. Reusable guard: exit 1 if any table exceeds the limit.
 //
-// Usage:  node scripts/d1-column-audit.mjs [--limit=100] [--json]
+// Usage:  node src/database/d1-column-audit.mjs [--limit=100] [--json]
 
 import { readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'

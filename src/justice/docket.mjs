@@ -5,7 +5,7 @@
  * authoritative workflow output (no hand transcription) + stamps each case's
  * disposition (what this session already remediated, overruled, or left open).
  *
- *   node scripts/gen-court-docket.mjs <workflow-output.json> <out.ts>
+ *   node src/justice/docket.mjs <workflow-output.json> <out.ts>
  */
 import { readFileSync, writeFileSync } from 'node:fs'
 
@@ -80,7 +80,7 @@ const banner = `/**
  * Run ${proceeding.runId}: ${proceeding.agents} officers (auditors → prosecutors ∥
  * defense → judges) tried ${proceeding.tried} charges across 8 aspects of the
  * diamond law. This is the akashic record of that proceeding — generated from
- * the authoritative workflow output by scripts/gen-court-docket.mjs, ingested
+ * the authoritative workflow output by src/justice/docket.mjs, ingested
  * into the \`audit-findings\` collection by ./seed.ts. The record is permanent
  * and tamper-evident ([[proof]]); the verdicts are the society judging itself.
  *
