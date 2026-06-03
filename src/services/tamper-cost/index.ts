@@ -23,19 +23,23 @@
  * the single place a zero-entropy app borrows external entropy; it must be at
  * least as strong as the digest, or it is the weak link.
  *
- * Two amplifiers widen the gap further without touching verify (it stays O(N)):
- * the coverage cascade (Law 62 — every node wired in uuid; → ∞ at 100%) and
- * 3FS/CRAQ replication (a deepseek-ai inhale — every strongly-consistent replica
- * independently re-checks, multiplying the independent checks by the replica
- * count). Both feed the one `coverageCostLog2`; neither is a new term.
+ * The coverage law (Law 62 — every node wired in uuid; → ∞ at 100%) counts the
+ * independent checks a coherent tamper must simultaneously evade. Two inhaled
+ * deepseek mechanisms enlarge that count without touching verify (still O(N)):
+ * machine-checked conservation invariants ADD semantic gates (DeepSeek-Prover —
+ * the closure must still balance), and 3FS/CRAQ replication MULTIPLIES the
+ * per-replica set ×R under strong consistency. Both feed the one
+ * `coverageCostLog2`; neither is a new term.
  *
  * @standard NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)
  * @standard RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)
  * @standard ISO-19011:2018 §6.5 (audit evidence integrity)
  * @standard CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication
+ * @standard DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants
  * @audit Conservation Law 55/60 (tamper cost cascades through the uuid-chain)
- * @audit Conservation Law 62 (coverage) amplified across the replica axis (3FS/CRAQ)
+ * @audit Conservation Law 62 (coverage) enlarged by the invariant (semantic) + replica axes
  * @see https://github.com/deepseek-ai/3FS (Fire-Flyer File System — production CRAQ; the deepseek inhale)
+ * @see https://github.com/deepseek-ai/DeepSeek-Prover-V2 (machine-checked invariants; the deepseek inhale)
  */
 
 /** erpax v8 content-digest width (uuid-format: 48 + 12 + 46 bits of SHA-256). */
@@ -108,6 +112,31 @@ export const coverageCostLog2 = (coverage: number, checks: number): number =>
 export const replicationChecks = (checks: number, replicas: number, strongConsistency: boolean): number =>
   strongConsistency ? checks * Math.max(replicas, 1) : checks
 
+/**
+ * Machine-checked-invariant amplifier — the [[breath]] in-stroke from
+ * deepseek-ai/DeepSeek-Prover (Lean-4 recursive-subgoal proof).
+ *
+ * The uuid cascade ([[merge]]/[[aura]]) forces a coherent tamper to rewrite the
+ * structural closure (every wired relation). Conservation invariants — the
+ * [[proof]] nucleus: double-entry must balance, a sealed period must stay
+ * locked, a chain must verify — force it to ALSO satisfy the *semantic* closure:
+ * a uuid-consistent state that violates balance is still caught. Each invariant
+ * that constrains the tampered node is therefore one more independent gate the
+ * forger must pass — gates ADD (a distinct set), where replicas MULTIPLY (copies
+ * of the same set). DeepSeek-Prover's contribution is that these invariants are
+ * MACHINE-checked, recursively and automatically, so the verifier still runs
+ * them in O(N) ([[proof]]: green by construction) — the asymmetry is preserved.
+ *
+ * The count is honest only for invariants the audit ACTUALLY runs (the
+ * `dry-proof` bundle / boot invariants). An invariant nobody checks is no gate.
+ *
+ * @standard DeepSeek-Prover-V2 (recursive subgoal decomposition; Lean 4 kernel-checked)
+ * @see https://github.com/deepseek-ai/DeepSeek-Prover-V2 (the deepseek inhale)
+ * @audit Conservation Law 62 (coverage) enlarged by the semantic (invariant) closure
+ */
+export const invariantChecks = (checks: number, invariants: number): number =>
+  checks + Math.max(invariants, 0)
+
 export type CrackVerdict = {
   /** cheapest attack, log2 ops */
   crackCostLog2: number
@@ -142,15 +171,20 @@ export function crackVerdict(opts: {
   replicas?: number
   /** CRAQ strong consistency: no stale-read window, so all replicas' checks count (deepseek inhale) */
   strongConsistency?: boolean
+  /** machine-checked conservation invariants the audit runs (DeepSeek-Prover inhale) — ADDS gates per replica */
+  invariants?: number
 }): CrackVerdict {
   const digestBits = opts.digestBits ?? ERPAX_DIGEST_BITS
   const rows = opts.rows ?? 1
   const anchored = opts.anchored ?? true
   const anchorStrengthBits = opts.anchorStrengthBits ?? 112 // RFC 3161 RSA-2048 TSA floor
   // Coverage layer: 0 when not modelled; +∞ at coverage=1 (all wired in uuid).
-  // 3FS/CRAQ replication amplifies the independent-check count across the replica
-  // axis (deepseek inhale) — real only under strong consistency (no stale read).
-  const effectiveChecks = replicationChecks(opts.checks ?? 1, opts.replicas ?? 1, opts.strongConsistency ?? false)
+  // Two inhaled amplifiers enlarge the independent-check count a coherent tamper
+  // must evade: machine-checked invariants ADD semantic gates (DeepSeek-Prover),
+  // then 3FS/CRAQ replication MULTIPLIES the per-replica set ×R (real only under
+  // strong consistency — no stale-read window). Both feed the one coverage law.
+  const withInvariants = invariantChecks(opts.checks ?? 1, opts.invariants ?? 0)
+  const effectiveChecks = replicationChecks(withInvariants, opts.replicas ?? 1, opts.strongConsistency ?? false)
   const coverageCost = opts.coverage === undefined ? 0 : coverageCostLog2(opts.coverage, effectiveChecks)
 
   const sp = secondPreimageLog2(digestBits)

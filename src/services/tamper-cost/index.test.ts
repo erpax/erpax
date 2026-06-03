@@ -15,6 +15,7 @@ import {
   coverageCostLog2,
   crackVerdict,
   replicationChecks,
+  invariantChecks,
 } from './index'
 
 describe('tamper-cost: NIST SP 800-107 hash strengths', () => {
@@ -126,5 +127,37 @@ describe('tamper-cost: 3FS/CRAQ replication multiplies the checks (deepseek inha
     const base = crackVerdict({ anchored: true, anchorStrengthBits: 128 })
     const repl = crackVerdict({ anchored: true, anchorStrengthBits: 128, replicas: 9, strongConsistency: true })
     expect(repl.crackCostLog2).toBe(base.crackCostLog2)
+  })
+})
+
+describe('tamper-cost: machine-checked invariants enlarge the coherent-rewrite set (DeepSeek-Prover inhale)', () => {
+  it('each invariant ADDS one independent gate (the semantic closure on top of the uuid closure)', () => {
+    expect(invariantChecks(10, 5)).toBe(15)
+  })
+  it('zero invariants is a no-op', () => {
+    expect(invariantChecks(10, 0)).toBe(10)
+  })
+  it('invariants compose with replication: gates are added, then replicated ×R', () => {
+    // (checks 1 + invariants 5) × 3 replicas = 18 — invariants inside, replication outside
+    expect(replicationChecks(invariantChecks(1, 5), 3, true)).toBe(18)
+  })
+  it('more invariants ⇒ strictly higher coverage-cost (forge widens, verify stays O(N))', () => {
+    const none = crackVerdict({ coverage: 0.99, checks: 1, invariants: 0 })
+    const five = crackVerdict({ coverage: 0.99, checks: 1, invariants: 5 })
+    expect(five.crackCostLog2).toBeGreaterThan(none.crackCostLog2)
+  })
+  it('invariants and replication compose — both amplifiers raise the cost together', () => {
+    const neither = crackVerdict({ coverage: 0.99, checks: 1, invariants: 0, replicas: 1, strongConsistency: true })
+    const both = crackVerdict({ coverage: 0.99, checks: 1, invariants: 5, replicas: 3, strongConsistency: true })
+    expect(both.crackCostLog2).toBeGreaterThan(neither.crackCostLog2)
+  })
+  it('invariants with no coverage modelled is an honest no-op (the audit must actually run them)', () => {
+    const base = crackVerdict({ anchored: true, anchorStrengthBits: 128 })
+    const inv = crackVerdict({ anchored: true, anchorStrengthBits: 128, invariants: 9 })
+    expect(inv.crackCostLog2).toBe(base.crackCostLog2)
+  })
+  it('100% coverage is already ∞ — invariants cannot exceed the architectural ceiling', () => {
+    const v = crackVerdict({ coverage: 1, invariants: 12 })
+    expect(v.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
   })
 })
