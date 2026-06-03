@@ -98,6 +98,8 @@ export async function runAllInvariants(
     // measurable. Coverage of structured uuidv8 across high-signal
     // collections; warns when < 0.9.
     results.push(await C.checkFeatureCoverage(ctx))
+    // Conservation Law 62 — the harmonic axis: flow×flow stays in the helix.
+    results.push(C.checkHarmonicHelixClosure(ctx))
     results.push(C.checkNoDuplicateCollectionSlugs(ctx))
     results.push(C.checkNoDuplicateArrayDbNames(ctx))
     results.push(C.checkNoDuplicateChainIds(ctx))

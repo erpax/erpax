@@ -21,6 +21,7 @@ import { ROLES_REGISTRY, ROLE_IDS } from '@/access/roles-registry'
 import { agentRegistry } from '@/services/agents/bootstrap'
 import { supportedLocales } from '@/i18n'
 import { verifyContentUuid, TAMPER_PROOF_COLLECTIONS_REGISTRY, UUID_REF_REGISTRY, findDanglingRefs } from '@/services/integrity'
+import { UUID_MATRIX_NODES, UUID_MATRIX_EDGES } from '@/services/uuid-matrix'
 import { collectGenome, computeGenomeUuid } from '@/services/cloning'
 import { checkErpaxObservesItself } from '@/services/self-reference'
 import { listFaces, checkSeoVortexCoupling } from '@/services/website/seo-vortex'
@@ -2932,4 +2933,33 @@ export function checkOneBindingPerType(ctx: InvariantContext): InvariantResult {
   return warn('entropy', 'one-binding-per-type',
     `${offenders.length} multi-binding-per-type violation(s) — collapse to one binding + uuid-keyed name/key prefixes (Slice VVVVVVVV)`,
     offenders)
+}
+
+/**
+ * The rodin closure law, machine-checked across the uuid matrix (Conservation
+ * Law 62 — the harmonic axis). The flow helix {1,2,4,8,7,5} is the multiplicative
+ * group of units mod 9, so composeSteps(a,b) = digitalRoot(a×b) for two flow atoms
+ * MUST land back in the helix — the axis {3,6,9} only ever appears on edges
+ * touching a governance/source hub. Verifies both the stored `dir` and the
+ * closure: a DeepSeek-Prover-style machine-checked invariant in the public proof.
+ */
+export function checkHarmonicHelixClosure(_ctx: InvariantContext): InvariantResult {
+  const HELIX = new Set([1, 2, 4, 8, 7, 5])
+  const digitalRoot = (n: number): number => (n <= 0 ? 0 : ((n - 1) % 9) + 1)
+  const offenders: string[] = []
+  for (const e of UUID_MATRIX_EDGES) {
+    const a = UUID_MATRIX_NODES[e.f]
+    const b = UUID_MATRIX_NODES[e.t]
+    if (a === undefined || b === undefined) continue
+    const dir = digitalRoot(a.horo * b.horo)
+    if (dir !== e.dir) { offenders.push(`${a.atom}→${b.atom}: stored dir ${e.dir} ≠ recomputed ${dir}`); continue }
+    if (a.band === 'flow' && b.band === 'flow' && !HELIX.has(dir)) {
+      offenders.push(`${a.atom}→${b.atom}: flow×flow escaped the helix (dir ${dir})`)
+    }
+  }
+  return offenders.length === 0
+    ? pass('entropy', 'harmonic-helix-closure',
+        `flow×flow stays in the {1,2,4,8,7,5} helix across ${UUID_MATRIX_EDGES.length} matrix edges (closed multiplicative subgroup mod 9)`)
+    : fail('entropy', 'harmonic-helix-closure',
+        `${offenders.length} edge(s) violate the rodin closure law`, offenders.slice(0, 10))
 }
