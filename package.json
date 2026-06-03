@@ -25,6 +25,7 @@
     "spec:gen": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/spec-gen.ts",
     "aura:scan": "node .claude/skills/aura/scan.mjs",
     "harmony": "node scripts/harmony-scan.mjs",
+    "atoms:catalogue": "node scripts/gen-atom-catalogue.mjs",
     "d1:audit": "node scripts/d1-column-audit.mjs",
     "db:regenerate": "bash scripts/db-regenerate.sh",
     "check": "pnpm run standards && bash scripts/payload-verify-types.sh && pnpm run lint && pnpm run lint:src && pnpm run typecheck && pnpm run test:int",
