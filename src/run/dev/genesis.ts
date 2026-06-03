@@ -34,6 +34,10 @@ if (!email) {
   process.exit(0)
 }
 const { user } = await payload.login({ collection: 'users', data: { email, password: email } })
+if (!user) {
+  console.log('[genesis] login returned no user — nothing to do')
+  process.exit(1)
+}
 console.log('[genesis] first user:', user.email, '— roles:', (user as { roles?: string[] }).roles)
 
 // Compute the genesis tenant identity from the first user's email domain.
