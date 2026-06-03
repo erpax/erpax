@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-8601-1:2019 date-time authorization-date
 - GDPR Art.6(1)(b) lawful-basis-contract-processing
 - ISO-19011:2018 audit-trail authorization-evidence
+
+Composes: [[PurchaseOrders]].

@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail
 - SOX §404 internal-controls
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Receipts]].

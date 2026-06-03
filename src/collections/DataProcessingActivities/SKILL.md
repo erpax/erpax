@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27701:2019 §6.3.1 records-of-processing
 - ISO-19011:2018 audit-trail ropa-evidence
 - ISO-27001 A.5.34 privacy-and-pii
+
+Composes: [[ConsentRecords]].

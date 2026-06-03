@@ -9,7 +9,7 @@ sessions:
 
 `comment` is the annotation atom (Rails `CommentsConcern`: `has_many :active_admin_comments, as: :resource`). ONE `comments` collection serves every other via a **polymorphic** `resource` (`relationTo:[…all]`) + an `author` rel — the same "anything is X" shape as [[accounting]] (accountable) and [[tags]] (taggable); references OUT, never inward ([[plugins]]). The author is provenance and ties to audit/[[accounting]]. Injected across collections by a plugin (mirror of the taggable/uuid injectors — see [[tags]],[[plugins]]); commented collections gain ZERO columns (a virtual join field, [[fields]]).
 
-Composes: [[plugins]] (injector), [[fields]] (polymorphic rel + join), [[access]] (who may comment/read), [[identity]].
+Composes: [[plugins]] (injector), [[fields]] (polymorphic rel + join), [[access]] (who may comment/read), [[identity]] · [[Messages]].
 
 ## Common mistakes
 - A `comments` array on every collection — use the polymorphic join + a virtual join field.

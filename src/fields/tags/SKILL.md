@@ -65,3 +65,5 @@ SQLite can't case-fold multibyte chars without ICU — do NOT rely on SQL `LOWER
 - A `tags` column on every collection — use the polymorphic `taggings` join + a virtual join field (zero columns).
 - A hard `relationTo:'specific'` to cross domains — a shared tag links them decoupled (and federates).
 - Relying on `LOWER()` matching on D1 — normalize at write (content-uuid needs a canonical form anyway).
+
+Composes: [[Taggings]].

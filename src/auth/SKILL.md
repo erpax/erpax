@@ -41,3 +41,5 @@ Authentication is the **bridge between the form and the world** — the [[limit]
 - Non-secure cookies in production (set `cookies.secure: true` behind SSL).
 - No `maxLoginAttempts`/`lockTime` → brute-force exposure (see [[harden]]).
 - Adding a singular `tenant` to the auth/users collection (use the plugin's `tenants` array).
+
+Composes: [[Users]].

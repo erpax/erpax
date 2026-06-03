@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-230 statement-of-cash-flows
 - SOX §404 internal-controls
 - ISO-19011:2018 audit-trail
+
+Composes: [[PaymentAllocations]].

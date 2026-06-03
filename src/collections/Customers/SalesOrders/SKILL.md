@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU-VAT-Directive 2006/112/EC supply-of-goods-or-services
 - ISO-19011:2018 audit-trail
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Contracts]] · [[Quotes]] · [[Returns]] · [[Shipments]].

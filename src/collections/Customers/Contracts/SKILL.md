@@ -28,3 +28,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract
 - ISO-27002 §5.4 segregation-of-duties
 - ISO-19011:2018 audit-trail contract-lifecycle
+
+Composes: [[contract-amendments]] · [[contract-performance]] · [[contract-signatures]] · [[PerformanceObligations]].

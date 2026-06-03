@@ -14,3 +14,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 ## Standards
 - schema.org Category
 - schema.org DefinedTerm taxonomic-term
+
+Composes: [[Posts]].

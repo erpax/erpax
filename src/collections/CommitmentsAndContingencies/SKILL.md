@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail off-balance-sheet
 - SOX §404 internal-controls disclosure-completeness
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Provisions]].

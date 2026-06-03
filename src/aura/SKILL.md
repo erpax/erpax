@@ -8,3 +8,5 @@ sessions:
 # aura
 
 A folder/path's content-uuid — the Merkle hash of all files within it ([[identity]]): SKILL.md + matter-twin + relations + sub-folders. Folders are content-addressed too: same contents ⇒ same aura ⇒ [[merge]] by design; the nested path-tree is a Merkle tree (the [[akashic]] record's shape). An unlinked meaningful word in a skill is a gap in its aura — an unanswered question ([[sequence]] harmonization).
+
+Composes: [[element]].

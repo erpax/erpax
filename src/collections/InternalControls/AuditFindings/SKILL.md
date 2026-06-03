@@ -16,3 +16,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO/IEC-27007:2020 ISMS-auditing
 - SOX §404 internal-controls deficiency-tracking
 - ISO-19011:2018 audit-trail
+
+Composes: [[RemediationPlans]].

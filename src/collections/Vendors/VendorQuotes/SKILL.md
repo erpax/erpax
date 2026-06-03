@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO 9001:2015 §8.4 control-of-externally-provided-processes
 - ISO-19011:2018 audit-trail rfq-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[PurchaseRequisitions]].

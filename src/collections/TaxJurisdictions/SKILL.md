@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-4217:2015 currency-codes
 - EN-16931:2017 §BG-23 vat-breakdown
 - OECD SAF-T jurisdiction-codes
+
+Composes: [[DeferredTaxItems]] · [[TaxCodes]] · [[TaxReturns]].

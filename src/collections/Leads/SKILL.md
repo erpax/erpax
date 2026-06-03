@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(f) legitimate-interest (B2B prospecting)
 - ISO-19011:2018 audit-trail crm-pipeline
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Opportunities]].

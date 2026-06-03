@@ -31,3 +31,5 @@ Restrict `create`/`update`/`read` [[access]] on upload collections; scan uploads
 - Local `staticDir` on a serverless/ephemeral host → lost files; use R2/S3.
 - Public `read` on private user uploads.
 - Too many `imageSizes` (slow processing, storage cost).
+
+Composes: [[Media]].

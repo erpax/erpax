@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-310 receivables
 - GDPR Art.6(1)(b) lawful-basis-contract
 - GDPR Art.5 data-minimization
+
+Composes: [[SalesOrders]].

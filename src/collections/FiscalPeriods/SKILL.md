@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - eIDAS Regulation 910/2014 qualified-electronic-signature on-amendments
 - ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
 - ISO-19011:2018 audit-trail status-transition
+
+Composes: [[EarningsPerShare]] · [[FiscalPeriodSnapshots]] · [[PostBalanceSheetEvents]] · [[PriorPeriodAdjustments]].

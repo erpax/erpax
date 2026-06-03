@@ -11,7 +11,7 @@ The law it holds: **a competency is a coordinate shared across standards, comput
 
 Sequence position **1** — the base of the doubling helix: the identity origin every actor projects from (ring 0·3·6·9·**1**·2·4·8·7·5). The [[fractal]] self-same point — the corpus skill the agent loads and the competency the employee holds are one form at two scales; the whole taxonomy is recoverable from the corpus ([[holographic]]) — which is why the `competencies` COLLECTION collapsed (Stage 2): the corpus IS the table, no materialised rows to drift.
 
-Matter-twin: `src/services/skill-router/competencies.ts` (`competencyCatalogue`·`resolveCompetency`·`nodeToCompetency`) + `src/fields/competency` (the held/required line — `competency` is the skillRoute). Composes: [[identity]] · [[merge]] · [[duality]] · [[fractal]] · [[holographic]] · [[accounting]] · [[standard]] · [[train]] · [[education]] · [[sequence]].
+Matter-twin: `src/services/skill-router/competencies.ts` (`competencyCatalogue`·`resolveCompetency`·`nodeToCompetency`) + `src/fields/competency` (the held/required line — `competency` is the skillRoute). Composes: [[identity]] · [[merge]] · [[duality]] · [[fractal]] · [[holographic]] · [[accounting]] · [[standard]] · [[train]] · [[education]] · [[sequence]] · [[Employees]].
 
 ## Standards
 - ESCO v1.2 skills-pillar mono-hierarchy, four sub-classifications, reusability tiers

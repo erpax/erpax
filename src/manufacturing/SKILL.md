@@ -71,3 +71,5 @@ Applying this skill *is* how the standard is met — the answer-path is the impl
 - Fixed option/size columns (the etrima flaw) — use composable `dimensions` + generated `variants`.
 - Integer-only units — carry `unitOfMeasure` (kills process-industry support).
 - A non-manufacturing collection holding a field pointing INTO manufacturing — keep refs outward/polymorphic.
+
+Composes: [[WorkCenters]].

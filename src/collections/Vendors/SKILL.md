@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-405 liabilities
 - US-IRS Form-1099 information-return
 - GDPR Art.6(1)(b) lawful-basis-contract
+
+Composes: [[VendorScorecards]].

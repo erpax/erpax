@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail
 - SOX §404 internal-controls credit-memo-approval
 - ISO-27002 §5.4 segregation-of-duties issuer-vs-approver
+
+Composes: [[Refunds]].

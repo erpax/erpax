@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - BCP-47 language-tag i18n-routing
 - ECMA-402 internationalization-api
 - WCAG-2.1 level-AA accessibility
+
+Composes: [[Categories]].

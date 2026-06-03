@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time
 - OECD SAF-T tax-table
+
+Composes: [[TaxJurisdictions]].

@@ -29,3 +29,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls
 - ISO-19011:2018 audit-trail
 - ISO-19011:2018 audit-trail`.
+
+Composes: [[DunningCycles]] · [[Subscriptions]].

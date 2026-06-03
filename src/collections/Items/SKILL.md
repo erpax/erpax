@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EN-16931:2017 §BG-31 item-information
 - IFRS IAS-2 inventories
 - US-GAAP ASC-330 inventory
+
+Composes: [[Batches]].

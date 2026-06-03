@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls four-eyes
 - ISO-19011:2018 audit-trail expense-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Projects]].

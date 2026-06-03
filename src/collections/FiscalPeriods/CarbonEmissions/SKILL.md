@@ -25,3 +25,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU CBAM Carbon Border Adjustment Mechanism (when applicable)
 - EU Taxonomy DNSH climate-mitigation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[CsrdDisclosures]].

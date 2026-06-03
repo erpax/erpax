@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls cash-management
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27002 §8.24 use-of-cryptography iban-bic-encryption
+
+Composes: [[PaymentRuns]].

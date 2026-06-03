@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail lot-genealogy-evidence
 - SOX §404 internal-controls traceability-control TOM-TRACE-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[QualityInspections]].

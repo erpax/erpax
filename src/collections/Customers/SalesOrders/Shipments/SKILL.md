@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-3166-1:2020 country-codes ship-from ship-to
 - ISO-19011:2018 audit-trail fulfillment-evidence
 - SOX §404 internal-controls dispatch-controls
+
+Composes: [[Packages]] · [[TrackingEvents]].

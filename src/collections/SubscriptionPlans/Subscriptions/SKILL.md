@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract
 - SOX §404 internal-controls
 - ISO-27002 §8.24 use-of-cryptography
+
+Composes: [[SubscriptionPlans]].

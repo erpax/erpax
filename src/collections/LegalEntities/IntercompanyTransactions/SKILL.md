@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls intercompany-control TOM-IC-01
 - OECD BEPS Action 13 transfer-pricing-documentation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[TransferPricingAdjustments]].

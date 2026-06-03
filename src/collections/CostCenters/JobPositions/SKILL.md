@@ -16,3 +16,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IAS-19 employee-benefits (planned-headcount accruals)
 - ISO-19011:2018 audit-trail headcount-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[RecruitingPipeline]].

@@ -9,7 +9,7 @@ sessions:
 
 `party` is the role-reference atom. ceccec/erpax's ~13 party-role concerns (`Seller·Buyer·SellerAgent·BuyerAgent·Supplier·Consignee·ShippingAgent·PackedBy·ShippedBy·DeliveredBy·AuthorizedBy·Sender·Receiver`, each `belongs_to Address`) are NOT 13 FK columns — they are ONE relationship under N **role contexts**, the same "(context, value) presents one collection infinitely" law as [[tags]]. → a `partyRef(role)` factory ([[fields]] relationship, position **1**); the role IS the context. The party collection(s) are polymorphic (`addresses`/`customers`/`vendors`/`carriers`), so the reference points OUT, never into a single hard slug ([[plugins]]).
 
-Composes: [[tags]] (role = context), [[commerce]] (document parties), [[fields]] (relationship), [[identity]].
+Composes: [[tags]] (role = context), [[commerce]] (document parties), [[fields]] (relationship), [[identity]] · [[Customers]] · [[Vendors]].
 
 ## Common mistakes
 - A bespoke FK column per role — use one context-keyed `partyRef`.

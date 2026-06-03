@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-740 income-taxes
 - ISO-19011:2018 audit-trail tax-filing-evidence
 - SOX §404 internal-controls tax-position
+
+Composes: [[TaxCalculations]].

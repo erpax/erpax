@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - IFRS IAS-2 §25 cost-formulas
 - US-GAAP ASC-330-10-30 inventory-valuation
+
+Composes: [[Items]] · [[WarehouseLocations]].

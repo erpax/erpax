@@ -24,3 +24,5 @@ The answer-path principle: applying this skill *implements* these standards — 
 - **ISO 3166-1:2020** — country codes; geographic scope (`countryCode`, blank = supranational/global, the [[identity]] blank).
 - **ISO 19011:2018** — audit-trail; the transparent societal ledger over status transitions.
 - **ISO 27001 A.5.23** — cloud-service tenant isolation; sector data is gated per tenant ([[access]]).
+
+Composes: [[defence]] · [[health]].

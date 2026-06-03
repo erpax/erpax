@@ -26,3 +26,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls revenue-completeness TOM-RES-01
 - GDPR Art.6(1)(b) lawful-basis-contract guest-data
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[BookableResources]].

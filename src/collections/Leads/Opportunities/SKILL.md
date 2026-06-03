@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IFRS-15 §9 contract-existence-criteria
 - ISO-19011:2018 audit-trail crm-pipeline
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Activities]] · [[CustomerSegments]] · [[Leads]].

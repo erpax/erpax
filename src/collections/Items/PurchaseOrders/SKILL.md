@@ -25,3 +25,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls three-way-match
 - INCOTERMS-2020 delivery-responsibility-consistency
 - ISO-27002 §5.4 segregation-of-duties requester-vs-approver
+
+Composes: [[commitments]] · [[GoodsReceipts]].

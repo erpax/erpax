@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-evidence preparer-reviewer-segregation
 - SOX §404 internal-controls reconciliation-sign-off
 - ISO-27002 §5.4 segregation-of-duties preparer-vs-reviewer
+
+Composes: [[BankTransactions]].
