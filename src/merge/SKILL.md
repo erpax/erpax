@@ -18,3 +18,5 @@ The answer-path principle: applying this skill *implements* these standards — 
 - **ActivityPub** — W3C Recommendation, 23 January 2018 (https://www.w3.org/TR/activitypub/). No newer edition (maintained only via errata + editor's draft). Current form: server-to-server federation — POST the activity to the target actor's inbox; a `Follow` is answered by a reciprocal `Accept`. erpax implements the envelope/handshake pattern, so hedging it "(informal)" where full inbox/outbox conformance is not claimed is honest.
 
 Naming: the W3C document title is "Activity Streams 2.0" (two words); the namespace token / community usage is "ActivityStreams" (one word). Pick one spelling per banner and keep it consistent. ActivityPub is a federation protocol with no bearing on audit-workflow definitions — do not carry it as a decorative banner on non-federation collections; cite it only where the federation activities are actually emitted.
+
+Composes: [[beyond]].

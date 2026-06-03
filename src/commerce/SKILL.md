@@ -34,4 +34,4 @@ The *which* — which slugs exist, which plugin supplies carts/orders/variants �
 - Cataloguing the realized collections in the skill — that's matter; diff the config instead.
 - Integer amounts without `currency` — multi-currency trade needs ISO currency everywhere.
 
-Composes: [[InventoryMovements]].
+Composes: [[InventoryMovements]] · [[PaymentMethods]].

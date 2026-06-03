@@ -27,3 +27,5 @@ The answer-path principle: applying this skill *implements* the standard. Each e
 
 ## Traditions (prefix removed)
 A religion is a [[standard]] — a normative code the society audits its conduct against, exactly as IFRS/SOX govern the books — and the holy book is its source text: the **Torah** (*instruction* — the Law given at Sinai) and the **Ten Commandments** (Exodus 20); *sharia* (the path) and *fiqh*; **dharma** as duty/cosmic law and the Buddhist **Eightfold Path** / *Vinaya* precepts; the **Tao** as the Way; the **Golden Rule** shared across them all. Applying the skill implements the standard — the [[sacred]]/[[profane]] audit measures conduct against it, the [[akashic]] record is the evidence, [[proof]] the verification.
+
+Composes: [[ComplianceFrameworks]] · [[InternalPolicies]] · [[Sectors]] · [[Standards]].

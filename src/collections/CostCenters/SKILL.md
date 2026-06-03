@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §302 disclosure-controls segment-disclosure
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[hooks]] · [[access]] · [[fields]] · [[accounting]] · [[identity]] · [[proof]].
+Composes: [[hooks]] · [[access]] · [[fields]] · [[accounting]] · [[identity]] · [[proof]] · [[JobPositions]].

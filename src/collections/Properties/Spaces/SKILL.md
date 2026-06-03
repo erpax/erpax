@@ -16,4 +16,4 @@ Sub-property zones (floor / room / desk / zone) for IWMS. Single-folder collecti
 - SOX §404 internal-controls space-allocation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[standard]] · [[accounting]].
+Composes: [[standard]] · [[accounting]] · [[Properties]].

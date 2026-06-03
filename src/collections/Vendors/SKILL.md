@@ -5,7 +5,7 @@ description: The vendors collection — Vendors — purchase-side party master
 
 # vendors
 
-[[identity]] — [[standard]] party registry for purchase-side operations. Master data for all vendor relationships: legal identity, tax classification, bank details, payment terms, and ledger defaults. Composes [[VendorScorecards]].
+[[identity]] — [[standard]] party registry for purchase-side operations. Master data for all vendor relationships: legal identity, tax classification, bank details, payment terms, and ledger defaults. Composes [[VendorScorecards]] · [[VendorQuotes]].
 
 ## Standards
 - ISO-4217:2015 currency-codes

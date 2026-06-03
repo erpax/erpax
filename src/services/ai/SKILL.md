@@ -18,3 +18,5 @@ The subject and its verdict are an immutable [[identity]] record on the [[kyc-ch
 This is the answer-path holding the FATF R.7 / R.10 / R.12, EU AMLD5/6, USA PATRIOT Act §326, and EU AI Act Annex-III forms — see [[standard]] for version pins. It is the entry-gate dual of the after-the-fact ledger audit ([[accounting]] / anti-corruption verification at 9): AML stops dirty value from entering, the conservation check catches what slipped in.
 
 Sequence position: **1** (base / first-touch — the due-diligence gate every counterparty flow departs from), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
+
+Composes: [[AiModels]].

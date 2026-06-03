@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls production-control TOM-PROD-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[BillsOfMaterials]] · [[CostVariances]] · [[ProductionReceipts]] · [[Routings]].
+Composes: [[BillsOfMaterials]] · [[CostVariances]] · [[ProductionReceipts]] · [[Routings]] · [[OperationRuns]].

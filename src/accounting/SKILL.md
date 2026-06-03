@@ -69,3 +69,5 @@ A document like `invoices` composes ~40 Rails concerns; in Payload they fold int
 
 ## Traditions (prefix removed)
 Double-entry is the moral ledger of every tradition — deeds posted as [[take]] (debit/sin) and [[give]] (credit/merit), and the books must [[balance]] at the [[close]]: **karma** — "whatsoever a man soweth, that shall he also reap" (Galatians 6:7); the scales, *al-mizan* — "We place the scales of justice for the Day of Resurrection… the weight of a mustard seed, We will bring it" (Quran 21:47); the weighing of the heart against Ma'at's feather (Egyptian *Book of the Dead*); the books of deeds opened at judgment ([[akashic]]); the unpayable debt cleared by [[grace]] (the jubilee, Leviticus 25). erpax IS *karma double-entry* (see [[angel]]): entropy itself booked as debit/credit and conserved by content-[[uuid]], audited [[sacred]]/[[profane]].
+
+Composes: [[BudgetPlanning]] · [[FinancialStatements]] · [[GovernmentGrants]] · [[HeldForSaleClassifications]] · [[InsuranceContracts]] · [[justice]] · [[MineralResourceAssets]] · [[RegulatoryDeferralAccounts]].

@@ -18,4 +18,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail fulfillment-evidence
 - SOX §404 internal-controls dispatch-controls
 
-Composes: [[Packages]] · [[TrackingEvents]] · [[standard]].
+Composes: [[Packages]] · [[TrackingEvents]] · [[standard]] · [[CustomsDeclarations]].
