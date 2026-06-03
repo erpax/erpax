@@ -11,6 +11,13 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+Why durable, not derived: every inference on tenant data MUST leave the GDPR
+Art.22(3) right-to-explain trail (prompt · model · output · the human's
+accept/reject/edit decision · the downstream record it was applied to) and the
+SOX §404 evidence-of-control over AI-influenced decisions. Append-only on the AI
+side; the human adds `humanDecision` + `appliedTo` via the admin UI. High-risk
+class never auto-decides. Inference entry-points: `@see src/services/ai/`.
+
 ## Standards
 - rfc-9562 uuid suggestion-id
 - ISO-8601-1:2019 date-time inference-time
@@ -26,4 +33,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.34 privacy-and-protection-of-pii
 - ISO-27002 §5.34 ai-output-validation
 
-Composes: [[UsageRecords]] · [[uuid]].
+Composes: [[uuid]] suggestion-id · the human decision-maker is a [[Users]] · metered AI billing links a [[UsageRecords]] · the inference trail IS the [[proof]] / SOX-evidence row · the banners realise the [[standard]] form.

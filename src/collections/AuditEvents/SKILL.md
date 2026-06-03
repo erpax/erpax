@@ -11,6 +11,8 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+Append-only by design: read is tenant-scoped, create is the canonical hook only, update is forbidden, delete is admin-emergency. The durable, queryable evidence target — every canonical write (orders, invoices, payments, journal entries, subscriptions, fiscal periods, …) lands one row the auditor queries by `(tenant, collection, operation, user, timestamp)` instead of scraping logs.
+
 ## Standards
 - ISO-19011:2018 §6.4.6 audit-evidence-collection
 - ISO-19011:2018 §6.5 audit-conclusions
@@ -29,3 +31,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO 27037:2012 evidence-preservation
 - ISO-19011:2018 §6.4.6 audit-evidence-immutability
 - SOX §404 internal-controls audit-tamper-evidence
+
+Composes: [[proof]] · [[identity]] · [[party]] · [[horo]] · [[standard]].

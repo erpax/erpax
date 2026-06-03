@@ -7,9 +7,9 @@ description: The fx-transactions collection — FX Transactions — IAS-21 §28-
 
 FX Transactions — IAS-21 §28-29 monetary-item re-translation entries.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder, [[fractal]]-addressed; the panel renders `index.ts`, so the schema is not restated here.
+
+Each row is one durable FX conversion / revaluation event (`transactionKind`: spot · period-end revaluation · hedge settlement · consolidation translation) — the audit evidence for the FX gain/loss P&L line. Distinct from [[CurrencyRates]], the rate-table master: this records the events, that holds the rates a row's `exchangeRate` is sourced from.
 
 ## Standards
 - ISO-4217:2015 currency-codes from-to-currency-pair
@@ -24,4 +24,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls fx-control TOM-FX-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[accounting]].
+Composes: [[accounting]] · [[transaction]] · [[CurrencyRates]] · [[JournalEntries]] · [[horo]] (status) · [[standard]] · [[proof]] (audit-trail).

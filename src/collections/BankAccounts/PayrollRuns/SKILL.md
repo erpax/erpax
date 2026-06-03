@@ -11,6 +11,12 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+One run per (tenant, period × paySchedule): the close-job aggregates approved
+[[TimeEntries]] + [[Employees]] compensation, computes per-line gross → deductions →
+employer accruals → net, then posts the IAS-19 / ASC-710 wages [[transaction]] (a
+[[JournalEntries]] back-link) and emits the pain.001 [[PaymentRuns]] sibling on the
+`paymentDate`. Posted runs [[close|period-lock]]; reversals are a separate run.
+
 ## Standards
 - ISO-20022 pain.001 customer-credit-transfer-initiation
 - ISO-13616-1:2020 iban
@@ -32,4 +38,10 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.34 privacy-and-protection-of-pii
 - ISO-27002 §8.11 data-masking
 
-Composes: [[accounting]].
+GDPR-classified personal data ⇒ access tighter than the accounting default
+(read: admin · payroll-officer · hr; write: admin · payroll-officer): the
+[[privilege]] / segregation-of-duties posture, with SOX §404 four-eyes (preparer ≠
+authoriser) enforced via the same `enforceSegregationOfDuties` hook as
+[[PeriodEndAdjustments]].
+
+Composes: [[accounting]] · [[transaction]] · [[entry]] · [[balance]] · [[party]] · [[give]] · [[horo]] · [[close]] · [[identity]] · [[proof]] · [[privilege]] · [[JournalEntries]] · [[PaymentRuns]] · [[Employees]] · [[TimeEntries]] · [[CostCenters]].

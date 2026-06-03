@@ -28,3 +28,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-606 revenue-from-contracts-with-customers
 - EN-16931:2017 §BT-151 invoiced-item-vat-category-code
 - UN/CEFACT 5305 duty-tax-fee-category-coded
+
+Composes: [[Invoices]] (the BG-25 header it lines) · [[Items]] (buyer/seller/source refs + inventory recompute) · [[GLAccounts]] (debit/credit + tax debit/credit posting) · [[horo]] (the draft·active·delivered·returned·cancelled status ring) · [[tax]] (BG-30 line VAT: BT-151 category, BT-152 rate, exemption reasons) · [[accounting]] (the double-entry the net/tax/total feed) · [[standard]] (the EN-16931 / Peppol-BIS / UN-EDIFACT form projected).

@@ -5,11 +5,17 @@ description: The consignment-sales collection — Consignment Sales — sale-by-
 
 # consignment-sales
 
-Consignment Sales — sale-by-consignee events that resolve the.
+Consignment Sales — sale-by-consignee events that resolve the [[ConsignmentArrangements|arrangement]]'s IFRS-15 §B77 control-transfer indicators.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Each row is one reportable sale the consignee made to an end-customer. `saleDate` IS the IFRS-15 §B78 control-transfer moment — the point revenue recognises (dual of [[close|deferral]] while goods sit unsold). On that event the afterChange hook derecognises [[ConsignmentInventory|consignment inventory]] (a [[take|decrement]] of `quantityOnHand` + an `inventory-movement` of kind `sale_from_consignee`) and emits `consignment:sold`, which books one balanced [[entry]] on the [[accounting]] equation:
+
+    Dr Cash / AR              netAmount
+    Dr Commission Expense     commissionAmount
+    Dr COGS                   cogsAmount (IAS-2 §34, = quantitySold × inventory.unitCost)
+    Cr Revenue                grossAmount
+    Cr Inventory at Consignee carryingCost
+
+`commissionRatePercent` is snapshotted at sale time — a rate-card change is not retroactive. The [[horo|status ring]] runs reported → validated → posted → reversed (reversal-only, no destructive edit). The booked [[JournalEntries|journal entry]] and the consignor's [[Invoices|invoice]] against the consignee close the loop.
 
 ## Standards
 - ISO-4217:2015 currency-codes
@@ -24,4 +30,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls revenue-completeness TOM-AR-04
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ConsignmentArrangements]] · [[ConsignmentInventory]] · [[Invoices]] · [[JournalEntries]].
+Composes: [[ConsignmentArrangements]] · [[ConsignmentInventory]] · [[Invoices]] · [[JournalEntries]] · [[entry]] · [[accounting]] · [[horo]].

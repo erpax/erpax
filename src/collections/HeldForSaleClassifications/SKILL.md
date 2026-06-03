@@ -7,22 +7,14 @@ description: The held-for-sale-classifications collection — Held-for-Sale Clas
 
 Held-for-Sale Classifications — IFRS 5 non-current assets / disposal.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
-
-## Standards
-- IFRS IFRS-5 §6-§9 classification-criteria
-- IFRS IFRS-5 §15 measurement-lower-of-cv-and-fv-less-cts
-- IFRS IFRS-5 §25 depreciation-suspended
-- IFRS IFRS-5 §31-§40 discontinued-operations-presentation
-- IFRS IFRS-13 fair-value-input-hierarchy
-- US-GAAP ASC-205-20 discontinued-operations
-- US-GAAP ASC-360-10 long-lived-assets-held-for-sale
-- ISO-4217:2015 currency-codes
-- ISO-8601-1:2019 date-time classification-date
-- ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
-- SOX §404 internal-controls
-- ISO 27001 A.5.23 cloud-service-tenant-isolation
-
-Composes: [[FairValueMeasurements]] · [[JournalEntries]].
+A classification event: a source asset ([[FixedAssets]] · [[InvestmentProperties]] ·
+[[BusinessCombinations]], reached polymorphically) meets IFRS 5 §6 criteria — sale
+highly probable within 12 months (§8) at fair value less costs to sell. That triggers
+§15 remeasurement to the lower of carrying amount and FV − CTS (the FV read from a
+[[FairValueMeasurements]] hierarchy), depreciation suspended (§25), and presentation as
+a separate balance-sheet line (§38); a discontinued operation (§32) is a separate major
+line of business or geography. The impairment / disposal gain-loss posts a [[JournalEntries]]
+[[entry]] that keeps the [[accounting]] [[balance]]; the lifecycle (classified → remeasured →
+sale_pending → sold → reclassified) is a [[horo]] ring whose disposal terminus [[close]]s the
+asset. Standards (IFRS 5, IFRS 13, ASC 205-20 / 360-10) and tenant-isolation posture are the
+[[standard]] banners in `index.ts`, fused below.
