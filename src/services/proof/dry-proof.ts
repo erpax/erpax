@@ -45,6 +45,7 @@ import { runAllInvariants, type InvariantContext, type InvariantSuiteResult } fr
 import { selfTestAll, type SelfTestSuite } from '@/services/agents/mcp/self-test'
 import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
 import { crackVerdict } from '@/services/tamper-cost'
+import { matrixDigest } from '@/services/uuid-matrix'
 
 export const MAX_PROOF_AGE_HOURS = 24
 const PROOF_TENANT_NS = 'erpax-public-proof'
@@ -69,6 +70,7 @@ export interface DryProofBundle {
   readonly invariants: ReadonlyArray<{ axis: string; check: string; severity: 'pass' | 'warn' | 'fail'; reason?: string }>
   readonly mcpSelfTest: ReadonlyArray<{ tool: string; verdict: 'pass' | 'skip' | 'fail'; reason?: string }>
   readonly tamperCost: TamperCostProof                    // forge≫verify, deepseek-amplified
+  readonly corpusMatrix: { readonly root: string; readonly nodes: number; readonly edges: number } // whole corpus → one 128-bit root
   readonly publicUrl: string                              // /proof/ on this origin
   readonly federable: true
 }
@@ -171,6 +173,7 @@ export async function buildDryProofBundle(args: BuildProofArgs): Promise<DryProo
       strongConsistency: args.strongConsistency,
       coverage: args.coverage,
     }),
+    corpusMatrix: matrixDigest(),
     publicUrl,
     federable: true as const,
   }
