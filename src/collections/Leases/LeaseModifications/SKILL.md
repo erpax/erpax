@@ -1,6 +1,6 @@
 ---
 name: lease-modifications
-description: The lease-modifications collection — Lease Modifications — IFRS-16 §44-46 + ASC 842-10-25-12 structured
+description: Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.
 ---
 
 # lease-modifications

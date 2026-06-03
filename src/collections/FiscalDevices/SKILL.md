@@ -1,6 +1,6 @@
 ---
 name: fiscal-devices
-description: The fiscal-devices collection — Fiscal Devices (ФУ) — the registry of fiscal units a СУПТО tenant operates
+description: Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry.
 ---
 
 # fiscal-devices

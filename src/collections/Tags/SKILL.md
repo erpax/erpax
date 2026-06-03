@@ -1,6 +1,6 @@
 ---
 name: tags
-description: The tags collection — Tags — the universal label primitive (anything is taggable)
+description: Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.
 ---
 
 # tags

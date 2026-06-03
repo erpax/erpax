@@ -1,6 +1,6 @@
 ---
 name: items
-description: The items collection — Items — sellable / purchasable inventory rows with GL posting
+description: Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection.
 ---
 
 # items

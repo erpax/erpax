@@ -1,6 +1,6 @@
 ---
 name: batches
-description: The batches collection — Batches — lot / batch traceability with genealogy (one-up / one-down)
+description: Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection.
 ---
 
 # batches

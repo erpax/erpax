@@ -16,3 +16,6 @@ A transition is permitted **iff** an edge `{from, on}` exists; the engine return
 On the ring 0·3·6·9·1·2·4·8·7·5 this is **4 (weave)**: it connects discrete states into a single live machine, gating [[flow]] from state to state. Its dual face is **9 (unity)** — the harmony audit folds the whole graph back to a verdict (every organ connected). The emitted events key on the content-`uuid` ([[identity]]), so two instances running the same definition reconcile by [[merge]]; the bounded state set is a [[horo]] ring.
 
 Composes: [[flow]] (the movement gated) · [[event]] (the emitted envelope) · [[hooks]] (the consuming seam) · [[identity]] (event aggregate key) · [[standard]] (BPMN 2.0) · [[horo]] (the bounded state set) · [[merge]] (cross-instance reconciliation).
+
+## Standards
+- OMG BPMN 2.0 process-execution-semantics

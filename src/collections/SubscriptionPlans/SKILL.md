@@ -1,6 +1,6 @@
 ---
 name: subscription-plans
-description: The subscription-plans collection — Subscription Plans — pricing-plan catalog (super-admin maintained)
+description: Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.
 ---
 
 # subscription-plans

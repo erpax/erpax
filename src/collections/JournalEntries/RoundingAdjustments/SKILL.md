@@ -1,6 +1,6 @@
 ---
 name: rounding-adjustments
-description: The rounding-adjustments collection — Rounding Adjustments — IAS-1 §51(e) presentation rounding entries
+description: Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.
 ---
 
 # rounding-adjustments

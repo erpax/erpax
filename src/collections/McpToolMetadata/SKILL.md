@@ -1,11 +1,9 @@
 ---
 name: mcp-tool-metadata
-description: The mcp-tool-metadata collection — MCP Tool Metadata — localized + tenant-extensible metadata for every
+description: Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.
 ---
 
 # mcp-tool-metadata
-
-MCP Tool Metadata — localized + tenant-extensible metadata for every.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

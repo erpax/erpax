@@ -1,6 +1,6 @@
 ---
 name: bookable-resources
-description: The bookable-resources collection — Bookable Resources — catalog of anything reservable (rooms, vehicles,
+description: Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.
 ---
 
 # bookable-resources

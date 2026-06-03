@@ -1,6 +1,6 @@
 ---
 name: intercompany-transactions
-description: The intercompany-transactions collection — Intercompany Transactions — paired transactions between two tenants
+description: Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.
 ---
 
 # intercompany-transactions

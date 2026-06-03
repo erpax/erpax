@@ -11,6 +11,10 @@ This is the npm side too: an `@erpax/*` package's published version carries the 
 
 Matter-twin: `src/services/version/index.ts` (`corpusContentUuid`·`corpusSize`·`corpusVersion`·`versionMatchesCorpus`) over the generated `skill-router/skills.index` + `index.test.ts`. NB: it tracks the SKILL corpus — a service-only change does not bump it (mint that service's SKILL.md twin to bump, which is the [[self]]-sufficiency loop closing). Composes: [[aura]] · [[identity]] · [[merge]] · [[proof]] · [[self]] · [[sequence]].
 
+## Standards
+- SemVer 2.0.0 — `MAJOR.MINOR.PATCH+<build-metadata>` (the corpus-uuid is build metadata)
+- Audit: the version is derived, not declared — re-derivable from SKILL_INDEX on any clone
+
 ## Common mistakes
 - Bumping the version by hand — it is derived from the corpus; declare only the human semver and let `corpusVersion` compute the rest.
 - Trusting a tag's semver alone — `versionMatchesCorpus` proves the build-metadata still equals the live corpus-uuid (no drift, no forgery).

@@ -1,6 +1,6 @@
 ---
 name: messages
-description: The messages collection — Messages — internal user-to-user messaging with threading
+description: Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection.
 ---
 
 # messages

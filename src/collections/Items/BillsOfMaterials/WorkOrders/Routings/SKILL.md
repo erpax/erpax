@@ -1,6 +1,6 @@
 ---
 name: routings
-description: The routings collection — Routings — the ordered process steps that make a work-order
+description: Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.
 ---
 
 # routings

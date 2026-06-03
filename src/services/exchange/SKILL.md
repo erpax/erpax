@@ -11,6 +11,11 @@ FORM: **a cross-domain exchange is gated, sanitized, and receipted — the reque
 
 Matter-twin: `src/services/exchange/index.ts` (`Party`·`ExchangeRequest`·`ExchangeGrant`·`exchange`) over `services/receipt` + `index.test.ts`. Composes: [[receipt]] · [[connections]] · [[sandbox]] · [[federation]] · [[identity]] · [[give]] · [[take]] · [[merge]] · [[society]].
 
+## Standards
+
+- ISO/IEC 27001 A.5.14 information-transfer (controlled cross-boundary exchange)
+- GDPR Art.5(1)(c) data-minimisation (release only the granted fields)
+
 ## Common mistakes
 - Releasing the requested fields and filtering later — SANITIZE at the boundary (`released = requested ∩ releasable`); data not granted never crosses the domain edge.
 - Trusting a shared central ledger for provenance — each party receipts its own side ([[receipt]]); the proof is content-addressed and merges, no central root needed.

@@ -11,6 +11,10 @@ This is the orchestration layer over [[google-workspace]] fusion (and any source
 
 Matter-twin: `src/services/ingest/index.ts` (`AddressedRecord`·`IngestPlan`·`planIngest`) + `index.test.ts`. Composes: [[identity]] · [[merge]] · [[google-workspace]] · [[oauth]] · [[flow]] · [[federation]] · [[self]].
 
+## Standards
+
+- idempotent upsert by content-address (re-runnable, no cursor needed)
+
 ## Common mistakes
 - Tracking a per-source cursor/watermark to avoid re-processing — unnecessary; the content-uuid makes re-fetch a no-op, so a full re-pull is always safe and self-correcting.
 - Upserting on every fetch — only upsert the `plan.upsert` set (changed/new); unchanged records skip, sparing the write path.

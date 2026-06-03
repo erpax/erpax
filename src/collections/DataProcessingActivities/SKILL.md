@@ -1,11 +1,11 @@
 ---
 name: data-processing-activities
-description: The data-processing-activities collection — Data Processing Activities — GDPR Art
+description: Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.
 ---
 
 # data-processing-activities
 
-Data Processing Activities — GDPR Art.
+Data Processing Activities — GDPR Art.30 Records of Processing Activities (RoPA).
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

@@ -1,6 +1,6 @@
 ---
 name: transaction-failures
-description: The transaction-failures collection — Transaction Failures — error queue for retry / SOX evidence trail
+description: Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.
 ---
 
 # transaction-failures
@@ -18,6 +18,7 @@ Composes: [[accounting]] (control domain) · [[transaction]] (the failed exchang
 ## Standards
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time transaction-date
+- RFC 7807 problem-details-for-http-apis status-code
 - ISO-19011:2018 audit-trail failure-evidence
 - SOX §404 internal-controls failure-disposition TOM-FAIL-01
 - SOC-2 CC4.1 monitoring-and-evaluation

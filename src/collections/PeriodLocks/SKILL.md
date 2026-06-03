@@ -1,6 +1,6 @@
 ---
 name: period-locks
-description: The period-locks collection — PeriodLocks Collection
+description: Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.
 ---
 
 # period-locks
@@ -12,4 +12,6 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- SOX §404 period-close-integrity
+- IFRS IAS-1 reporting-period
+- ISO-8601-1:2019 locked-at

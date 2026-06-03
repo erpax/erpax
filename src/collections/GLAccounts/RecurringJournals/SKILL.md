@@ -1,6 +1,6 @@
 ---
 name: recurring-journals
-description: The recurring-journals collection — Recurring Journals — automation register for IAS-1 §27 accrual-basis
+description: Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.
 ---
 
 # recurring-journals

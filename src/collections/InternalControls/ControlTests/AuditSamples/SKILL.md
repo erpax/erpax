@@ -1,6 +1,6 @@
 ---
 name: audit-samples
-description: The audit-samples collection — AuditSamples
+description: Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.
 ---
 
 # audit-samples
@@ -12,4 +12,6 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- ISA-530 audit-sampling
+- ISO-19011:2018 sampling-methodology
+- ISO-27001 A.5.23 cloud-service-tenant-isolation

@@ -1,6 +1,6 @@
 ---
 name: mineral-resource-assets
-description: The mineral-resource-assets collection — Mineral Resource Assets — IFRS 6 exploration & evaluation register
+description: Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.
 ---
 
 # mineral-resource-assets

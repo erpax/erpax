@@ -1,6 +1,6 @@
 ---
 name: bank-statements
-description: The bank-statements collection — Bank Statements — imported / matched bank statements feeding reconciliation
+description: Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.
 ---
 
 # bank-statements

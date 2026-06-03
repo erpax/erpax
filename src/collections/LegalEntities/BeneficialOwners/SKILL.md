@@ -1,6 +1,6 @@
 ---
 name: beneficial-owners
-description: The beneficial-owners collection — Beneficial Owners — UBO register per AML / Corporate Transparency Act
+description: Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.
 ---
 
 # beneficial-owners

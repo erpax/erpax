@@ -1,6 +1,6 @@
 ---
 name: consignment-sales
-description: The consignment-sales collection — Consignment Sales — sale-by-consignee events that resolve the
+description: Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.
 ---
 
 # consignment-sales

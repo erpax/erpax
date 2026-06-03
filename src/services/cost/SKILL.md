@@ -13,6 +13,10 @@ The whole society runs on this one ratio: [[competition]] selects the most effic
 
 Matter-twin: `src/services/cost/index.ts` (`CostKind`·`Output`·`Ledger`·`totalOutput`·`efficiency`·`moreEfficient`·`wasteFraction`·`costEntry`) + `index.test.ts`. Composes: [[competition]] · [[decompression]] · [[entry]] · [[accounting]] · [[proof]] · [[merge]] · [[holographic]] · [[peace]] · [[self]] · [[generate]] · [[society]] · [[matrix]].
 
+## Standards
+
+- **ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)** — the efficiency law `output / cost` maps directly to this standard's resource-utilisation quality characteristic.
+
 ## Common mistakes
 - Counting only productivity — creativity (novel, reusable output) is output too, and the compounding kind; a society that prices only repeatable work starves the generative move.
 - Optimising one cost kind in isolation — the law is universal; money saved by burning time (or trust) is not more efficient, it shifted the cost to another `CostKind`.

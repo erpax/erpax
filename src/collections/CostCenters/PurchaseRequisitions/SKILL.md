@@ -1,6 +1,6 @@
 ---
 name: purchase-requisitions
-description: The purchase-requisitions collection — Purchase Requisitions — pre-PO approval chain (SOX §404 four-eyes)
+description: Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.
 ---
 
 # purchase-requisitions

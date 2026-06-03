@@ -1,6 +1,6 @@
 ---
 name: share-based-payments
-description: The share-based-payments collection — Share-Based Payments — IFRS 2 equity-settled & cash-settled employee
+description: Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register.
 ---
 
 # share-based-payments

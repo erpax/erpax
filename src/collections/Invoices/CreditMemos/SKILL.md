@@ -1,6 +1,6 @@
 ---
 name: credit-memos
-description: The credit-memos collection — Credit Memos — IFRS 15 §B22 contract-liability adjustments
+description: Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.
 ---
 
 # credit-memos

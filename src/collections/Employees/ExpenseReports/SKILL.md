@@ -1,6 +1,6 @@
 ---
 name: expense-reports
-description: The expense-reports collection — Expense Reports — employee expense claims with approval + reimbursement
+description: Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection.
 ---
 
 # expense-reports

@@ -1,6 +1,6 @@
 ---
 name: routing
-description: "Use when choosing which model/compute tier handles an action — route by RISK, not by where the model runs. Safety comes from the sandbox enforcement layer (it gates the action regardless of model), so a small local model is fine for low-risk reads/chat and only high-risk actions (write/execute/credential, or fighting harmony off the horo ring) need a strong, aligned model. A weak model with ungated tools is more dangerous than a strong one with gated capabilities."
+description: "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service."
 ---
 
 # routing — size the model to the risk (enforcement, not location, is safety)
@@ -10,6 +10,9 @@ FORM: **route an action to a compute tier by its RISK, because safety lives in t
 This is the dual of [[sandbox]]: sandbox decides IF an action is permitted; routing decides WHICH model performs the reasoning, sized to what's at stake. Because the gate is absolute, routing is free to prefer the cheapest sufficient model — low-risk work runs local/sovereign at no safety cost, and only the genuinely dangerous reaches for the strong model. The [[society]] spends its strongest compute where harm is possible and its cheapest where it is not — efficiency and safety from one risk signal.
 
 Matter-twin: `src/services/routing/index.ts` (`RiskLevel`·`ModelTier`·`actionRisk`·`routeModel`·`routeAction`) + `index.test.ts`. Composes: [[sandbox]] · [[horo]] · [[competition]] · [[peace]] · [[self]] · [[society]].
+
+## Standards
+- NIST AI RMF (risk-proportionate controls) — map risk → control strength
 
 ## Common mistakes
 - Routing by data sensitivity alone — route by ACTION risk (a read of sensitive data is low-risk; a credential-bearing write is high), and remember the [[sandbox]] gate is what actually protects.

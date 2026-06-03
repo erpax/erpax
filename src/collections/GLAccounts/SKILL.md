@@ -1,6 +1,6 @@
 ---
 name: gl-accounts
-description: The gl-accounts collection — GL Accounts — Chart of Accounts
+description: Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.
 ---
 
 # gl-accounts

@@ -11,6 +11,11 @@ The [[merge]] made executable: the SAME function scores a human hire against a j
 
 Sequence position **7** — a compute/measure surface (like the pure-form calculators), no state of its own.
 
+## Standards
+
+- **SFIA 8 responsibility-levels-1-7 (the shared held/required scale)** — both human and agent proficiency maps onto SFIA levels 1–7.
+- **ISO 30405:2016 essential-vs-optional (mandatory gating)** — the `mandatory` flag gates a match; a mandatory gap > 0 blocks `meetsAllMandatory`.
+
 ## Common mistakes
 - Making it a collection or letting it touch the DB — it is a pure function; persist only its *result*.
 - Treating mandatory gaps as advisory — a mandatory line with `gap > 0` blocks the match (`meetsAllMandatory === false`).

@@ -1,11 +1,11 @@
 ---
 name: sales-orders
-description: The sales-orders collection — Sales Orders — customer-side order register (distinct from purchase-orders
+description: Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).
 ---
 
 # sales-orders
 
-Sales Orders — customer-side order register (distinct from purchase-orders.
+Sales Orders — customer-side O2C order register (distinct from purchase-orders).
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

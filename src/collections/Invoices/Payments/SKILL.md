@@ -1,6 +1,6 @@
 ---
 name: payments
-description: The payments collection — Payments — money-movement records with GL posting + period-lock guard
+description: Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection.
 ---
 
 # payments

@@ -1,6 +1,6 @@
 ---
 name: activities
-description: The activities collection — Activities — calls / emails / meetings log per lead / opportunity / customer
+description: Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection.
 ---
 
 # activities

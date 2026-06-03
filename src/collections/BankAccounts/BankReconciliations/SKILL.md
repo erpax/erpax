@@ -1,6 +1,6 @@
 ---
 name: bank-reconciliations
-description: The bank-reconciliations collection — Bank Reconciliations — periodic GL ↔ bank balance reconciliation
+description: Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.
 ---
 
 # bank-reconciliations

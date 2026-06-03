@@ -1,6 +1,6 @@
 ---
 name: projects
-description: The projects collection — Projects — anchor for IFRS-15 §35 over-time revenue recognition
+description: Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.
 ---
 
 # projects
@@ -22,5 +22,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail wip-evidence
 - SOX §404 internal-controls
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
 
 Composes: [[ProjectMilestones]] · [[ProjectTasks]] · [[WipSnapshots]].

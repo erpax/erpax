@@ -16,6 +16,10 @@ FORM: **war seeks to DESTROY, COERCE, or DOMINATE; the uuid model defeats each, 
 
 Matter-twin: `src/services/peace/index.ts` (`destructionFutile`·`coercionSupraResource`·`warIsUseless`·`roi`·`buildingDominates`) over `services/integrity/resource-bound` + `index.test.ts`. Composes: [[identity]] · [[holographic]] · [[merge]] · [[history]] · [[akashic]] · [[proof]] · [[competition]] · [[logic]] · [[entry]] · [[matrix]] · [[education]] · [[society]] · [[whole]].
 
+## Standards
+
+- NIST FIPS 180-4 SHA-256 (the content-addressing destruction cannot undo)
+
 ## Common mistakes
 - Reading this as pacifist sentiment — it is a THEOREM of the model's mechanics (content-addressing + tamper-cost + competition), provable, not a wish.
 - Assuming destruction works because a server was wiped — a single holder is not the content; `destructionFutile` needs >1 independent copy, which the [[merge]]/[[history]] substrate guarantees.

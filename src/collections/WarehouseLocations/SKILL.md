@@ -1,6 +1,6 @@
 ---
 name: warehouse-locations
-description: The warehouse-locations collection — Warehouse Locations — physical / logical stock locations
+description: Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.
 ---
 
 # warehouse-locations

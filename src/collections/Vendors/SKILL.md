@@ -1,6 +1,6 @@
 ---
 name: vendors
-description: The vendors collection — Vendors — purchase-side party master
+description: Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry.
 ---
 
 # vendors

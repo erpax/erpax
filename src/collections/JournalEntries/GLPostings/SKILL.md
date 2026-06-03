@@ -1,6 +1,6 @@
 ---
 name: gl-postings
-description: The gl-postings collection — GL Postings — atomic debit/credit lines linked to a journal entry
+description: Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements.
 ---
 
 # gl-postings

@@ -1,6 +1,6 @@
 ---
 name: api-audit-events
-description: The api-audit-events collection — API Audit Events — generic landing collection for every external-API
+description: Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection.
 ---
 
 # api-audit-events

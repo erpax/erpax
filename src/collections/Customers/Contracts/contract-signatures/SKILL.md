@@ -1,6 +1,6 @@
 ---
 name: contract-signatures
-description: The contract-signatures collection — Contract Signatures — e-signature status & approval workflow audit trail
+description: Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.
 ---
 
 # contract-signatures

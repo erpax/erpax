@@ -1,6 +1,6 @@
 ---
 name: leases
-description: The leases collection — Leases — IFRS 16 / ASC 842 right-of-use asset + lease liability
+description: Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection.
 ---
 
 # leases

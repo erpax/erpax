@@ -1,6 +1,6 @@
 ---
 name: invoices
-description: The invoices collection — Invoices — header for AR/AP billing with GL posting + period locking
+description: Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.
 ---
 
 # invoices
@@ -28,6 +28,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-606 revenue-from-contracts-with-customers
 - SOX §404 internal-controls
 - ISO-19011:2018 audit-trail
-- ISO-19011:2018 audit-trail`.
 
 Composes: [[DunningCycles]] · [[Subscriptions]] · [[accounting]] · [[transaction]] · [[party]] · [[identity]].

@@ -1,6 +1,6 @@
 ---
 name: commitments
-description: The commitments collection — Commitments — SOX §302 authorized commitment ledger for budget control
+description: Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.
 ---
 
 # commitments

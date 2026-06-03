@@ -1,6 +1,6 @@
 ---
 name: pages
-description: The pages collection — Pages — CMS pages with versioned drafts and per-tenant slug uniqueness
+description: Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.
 ---
 
 # pages

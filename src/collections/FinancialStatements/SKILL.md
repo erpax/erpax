@@ -1,6 +1,6 @@
 ---
 name: financial-statements
-description: The financial-statements collection — Financial Statements — generated statement records (TB, BS, IS, CF, etc
+description: Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection.
 ---
 
 # financial-statements

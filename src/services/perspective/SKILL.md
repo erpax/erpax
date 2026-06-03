@@ -16,3 +16,7 @@ end; a neutral observer (the auditor) sees BOTH sides — the transparency POV t
 
 Matter-twin: `src/services/perspective/index.ts` (viewEdgeFrom · viewTransferFrom
 · isConserved). Composes [[flow]], [[accounting]] (debit↔credit duals), [[fields]].
+
+## Standards
+
+- ISO 20022 party-role-perspective (debtor/creditor are one transfer)

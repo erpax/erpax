@@ -1,6 +1,6 @@
 ---
 name: entity-legal-structures
-description: The entity-legal-structures collection — EntityLegalStructures
+description: Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.
 ---
 
 # entity-legal-structures
@@ -12,6 +12,8 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- IFRS-10 §B86 reporting-entity
+- ISO-17442-1:2020 legal-entity-identifier
+- ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[TaxingJurisdictions]].

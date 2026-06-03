@@ -1,6 +1,6 @@
 ---
 name: tax-jurisdictions
-description: The tax-jurisdictions collection — Tax Jurisdictions — tax authority master
+description: Use when setting up or querying tax authority master data — jurisdiction code, country/region/level (national to supranational), VAT registration number and dates, filing frequency and due day, filing currency. The per-tenant tax-authority master collection referenced by tax codes, calculations and returns.
 ---
 
 # tax-jurisdictions

@@ -15,6 +15,12 @@ FORM: **every value movement is a balanced pair — debit one side, credit the o
 
 Matter-twin: `src/services/entry/index.ts` (`toDoubleEntry`·`net`·`isBalanced`·`reverse`·`consolidate`·`accountableBalances`·`accountedFor`) over `services/perspective` + `index.test.ts`. Composes: [[accounting]] · [[transaction]] · [[give]] · [[take]] · [[duality]] · [[merge]] · [[whole]] · [[all]] · [[begin]] · [[IntercompanyTransactions]] · [[perspective]].
 
+## Standards
+
+- IFRS/IAS — 2026 Issued: double-entry (Σdebit = Σcredit)
+- FASB ASC 810-10-45: intercompany balances eliminate to net zero on consolidation
+- ISO 20022: debtor/creditor are the two signs of ONE transfer
+
 ## Common mistakes
 - Storing a one-sided amount — every movement is two signs of ONE entry ([[duality]]); post the balanced pair, never edit one side.
 - A field pointing INTO accounting (`Customer.arAccount`) — invert it; accounting maps the entity polymorphically (the `accountable` line points OUT).

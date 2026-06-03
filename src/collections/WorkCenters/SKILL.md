@@ -1,6 +1,6 @@
 ---
 name: work-centers
-description: The work-centers collection — Work Centers — the capacity unit production flows through
+description: Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.
 ---
 
 # work-centers

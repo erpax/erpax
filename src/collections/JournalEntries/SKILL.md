@@ -1,6 +1,6 @@
 ---
 name: journal-entries
-description: The journal-entries collection — Journal Entries — double-entry-bookkeeping write target
+description: Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.
 ---
 
 # journal-entries

@@ -1,6 +1,6 @@
 ---
 name: account-reconciliations
-description: The account-reconciliations collection — Account Reconciliations — period-end sign-off evidence pack
+description: Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.
 ---
 
 # account-reconciliations

@@ -1,6 +1,6 @@
 ---
 name: depreciation-schedules
-description: The depreciation-schedules collection — Depreciation Schedules — period-by-period IAS 16 depreciation detail
+description: Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.
 ---
 
 # depreciation-schedules

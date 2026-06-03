@@ -1,6 +1,6 @@
 ---
 name: period-end-adjustments
-description: The period-end-adjustments collection — Period-End Adjustments — accruals, deferrals, depreciation, allocation entries
+description: Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.
 ---
 
 # period-end-adjustments

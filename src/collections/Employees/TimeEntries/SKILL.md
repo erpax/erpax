@@ -1,6 +1,6 @@
 ---
 name: time-entries
-description: The time-entries collection — Time Entries — per-day / per-task time records for payroll + project costing
+description: Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.
 ---
 
 # time-entries

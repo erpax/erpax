@@ -11,6 +11,11 @@ FORM: **the OAuth 2.0 token lifecycle is pure policy; the token-endpoint call is
 
 Matter-twin: `src/services/oauth/index.ts` (`GrantType`·`OAuthToken`·`isExpired`·`nextGrant`·`scopesCovered`) + `index.test.ts`. Composes: [[sandbox]] · [[access]] · [[identity]] · [[google-workspace]] · [[self]].
 
+## Standards
+
+- IETF RFC 6749 OAuth 2.0 (grant types, token lifecycle)
+- IETF RFC 6750 Bearer token usage
+
 ## Common mistakes
 - Refreshing only after a 401 — refresh on a skew BEFORE expiry (`isExpired` with `skewSeconds`); a just-expired token mid-request is avoidable.
 - Requesting broad scopes up front — request the minimum and check `scopesCovered`; widen only when an action needs it ([[access]] least-privilege).

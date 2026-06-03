@@ -15,3 +15,8 @@ The privacy frontier, and the one edge content-addressing must answer. A [[uuid]
 This is the [[duality]] of transparency↔confidentiality resolved: the system is integrity-transparent (the uuid is public) *and* content-confidential (the plaintext is shred-able). Where the [[tamper-cost]] makes the record un-forgeable, shred makes the content un-recoverable — both by the same content-addressing.
 
 Matter-twin: `shred/index.ts` (`erase`/`canTransition`/`shredPreservesChain`) + `index.test.ts` (the proof). The cited law must be true ([[standard]] GDPR Art.17, NIST SP 800-88). Composes: [[uuid]] · [[identity]] · [[tamper-cost]] · [[history]] · [[merge]] · [[close]] · [[end]] · [[duality]] · [[standard]] · [[DataSubjectRequests]].
+
+## Standards
+- GDPR (EU 2016/679) Art.17 (erasure) · Art.5(1)(c) (minimisation) · Art.25 (by design)
+- NIST SP 800-88 r1 §2.5 (cryptographic erase as sanitisation)
+- Audit: content-uuid over the CipherEnvelope ⇒ shred preserves the chain (Law 8/55/60)

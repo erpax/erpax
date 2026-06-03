@@ -1,6 +1,6 @@
 ---
 name: deferred-tax-items
-description: The deferred-tax-items collection — Deferred Tax Items — IAS 12 income-taxes timing differences
+description: Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.
 ---
 
 # deferred-tax-items
@@ -18,8 +18,8 @@ Slice BBBBB-prep (2026-05-11): the `kind` discriminator carries the IAS-12 class
 - US-GAAP ASC-740 income-taxes
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time origination-reversal
-- @audit ISO 19011:2018 §6.4.6 audit-evidence-deferred-tax
-- @compliance SOX §404 internal-controls TOM-TAX-02
-- @security ISO 27001 A.5.23 cloud-service-tenant-isolation
+- ISO 19011:2018 §6.4.6 audit-evidence-deferred-tax
+- SOX §404 internal-controls TOM-TAX-02
+- ISO 27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[identity]] (reference field) · [[accounting]] (access, audit fields) · [[currency]] · [[transaction]] (journal-entry relationship) · [[proof]] (audit trail via auditFields).

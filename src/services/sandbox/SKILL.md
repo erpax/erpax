@@ -11,6 +11,10 @@ FORM: **an untrusted, agent-built tool runs under a content-addressed GRANT, and
 
 Matter-twin: `src/services/sandbox/index.ts` (`ToolGrant`·`ToolAction`·`permits`·`brokerCredential`·`evaluate`) over `services/receipt` + `index.test.ts`. Composes: [[receipt]] · [[access]] · [[identity]] · [[uuid]] · [[proof]] · [[peace]] · [[self]] · [[society]].
 
+## Standards
+- NIST SP-800-162 ABAC (capability-scoped authorization)
+- OWASP-ASVS V5 untrusted-input / least-privilege
+
 ## Common mistakes
 - Passing a secret to the untrusted tool — never; the tool names a `credentialHandle`, and `brokerCredential` injects the value at the host boundary ONLY if the grant permits it.
 - Trusting the tool's claimed identity — the identity is its content-uuid ([[identity]]); recompute it, don't accept a label.

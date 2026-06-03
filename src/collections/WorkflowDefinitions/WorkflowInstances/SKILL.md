@@ -1,6 +1,6 @@
 ---
 name: workflow-instances
-description: The workflow-instances collection — Workflow Instances — running execution of a `workflow-definition` against
+description: Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.
 ---
 
 # workflow-instances

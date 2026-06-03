@@ -1,6 +1,6 @@
 ---
 name: customers
-description: The customers collection — Customers — sale-side party master
+description: Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection.
 ---
 
 # customers

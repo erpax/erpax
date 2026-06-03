@@ -1,11 +1,11 @@
 ---
 name: quality-inspections
-description: The quality-inspections collection — Quality Inspections — ISO 9001 §8
+description: Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.
 ---
 
 # quality-inspections
 
-Quality Inspections — ISO 9001 §8.
+Quality Inspections — ISO 9001 §8.7 nonconformance + §9.1 measurement.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

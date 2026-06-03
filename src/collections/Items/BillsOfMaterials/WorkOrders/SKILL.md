@@ -1,6 +1,6 @@
 ---
 name: work-orders
-description: The work-orders collection — Work Orders — production-order header + execution log
+description: Use when releasing a BOM into manufacturing — planned vs completed vs scrapped quantities, release/due/completion dates, demand source (MTO/MTS/forecast), and IAS-2 §21 cost-of-conversion tracking. The production-order header that drives inventory issues, receipts, and cost variances.
 ---
 
 # work-orders

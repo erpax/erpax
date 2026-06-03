@@ -1,11 +1,9 @@
 ---
 name: sepa-mandates
-description: The sepa-mandates collection — SEPA Mandates — pain
+description: Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.
 ---
 
 # sepa-mandates
-
-SEPA Mandates — pain.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

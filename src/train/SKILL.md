@@ -15,6 +15,11 @@ FORM: **measure the actor's gap to the role, route each deficit to the skill tha
 
 Matter-twin: `src/train/index.ts` (pure — held/required/routes passed in; a [[hooks]] hook reads the actor's held lines + the position's required lines and emits the plan). Composes: [[competency-gap]] · [[decompression]] · [[allocation]] · [[positions]] · [[horo]] · [[merge]] · [[generate]] · [[aura]] · [[self]] · [[society]] · [[sequence]] · [[hooks]].
 
+## Standards
+- SFIA 8 responsibility-levels-1-7 (the held/required/efficiency scale)
+- ISO 30405:2016 essential-vs-optional (mandatory gates the surface)
+- Audit: ISO 19011 — efficiency, debt and pay are deterministic functions of the gap
+
 ## Common mistakes
 - Pricing pay off credentials instead of verified efficiency — pay tracks the match-score (the off-gassed fraction), never the certificate ([[allocation]]).
 - Dropping a gap with no known `skillRoute` — list it with route '' (still a deficit to fill, the next atom to [[generate]]); never silently omit it.

@@ -1,6 +1,6 @@
 ---
 name: payroll-runs
-description: "The payroll-runs collection — Payroll Runs — periodic batch payroll: gross-to-net, accruals, disbursement"
+description: Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.
 ---
 
 # payroll-runs

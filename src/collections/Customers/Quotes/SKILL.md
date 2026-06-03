@@ -1,6 +1,6 @@
 ---
 name: quotes
-description: The quotes collection — Quotes — IFRS 15 / ASC 606 contract origination
+description: Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection.
 ---
 
 # quotes

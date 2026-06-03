@@ -1,6 +1,6 @@
 ---
 name: consent-records
-description: The consent-records collection — Consent Records — GDPR Art
+description: Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger.
 ---
 
 # consent-records

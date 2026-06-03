@@ -1,6 +1,6 @@
 ---
 name: fiscal-period-snapshots
-description: The fiscal-period-snapshots collection — FiscalPeriodSnapshots Collection
+description: Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.
 ---
 
 # fiscal-period-snapshots
@@ -9,17 +9,9 @@ Immutable snapshots of FiscalPeriods at critical moments: creation, amendment, v
 
 Composes: [[standard]] · [[access]] · [[proof]] · [[identity]].
 
-## Standards & Invariants
+## Standards
 
-```
-@standard GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)
-@standard eIDAS:2014/910/EU (signature on critical amendments)
-@standard SOX:2002 (access control audit evidence, change log)
-@standard NIST-SP-800-92 (audit logging, integrity verification)
-@invariant One snapshot per event (creation, amendment, validation, closing, regulatory audit)
-@invariant snapshotData is JSON copy of FiscalPeriods state at event time
-@invariant eventType enum constrains event classification
-@invariant priorSnapshot points to previous snapshot (creates immutable audit chain)
-@invariant signedUuid: optional eIDAS QES signature for amendments/regulatory events
-@invariant Never updated; only created and read
-```
+- GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)
+- eIDAS:2014/910/EU (signature on critical amendments)
+- SOX:2002 (access control audit evidence, change log)
+- NIST-SP-800-92 (audit logging, integrity verification)

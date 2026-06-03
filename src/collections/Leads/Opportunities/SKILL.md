@@ -1,6 +1,6 @@
 ---
 name: opportunities
-description: The opportunities collection — Opportunities — sales pipeline with weighted forecast
+description: Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection.
 ---
 
 # opportunities

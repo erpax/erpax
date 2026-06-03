@@ -1,6 +1,6 @@
 ---
 name: lease-period-postings
-description: The lease-period-postings collection — Lease Period Postings — period-by-period IAS 16 / ASC 842 evidence
+description: Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.
 ---
 
 # lease-period-postings

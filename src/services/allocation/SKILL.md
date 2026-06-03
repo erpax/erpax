@@ -19,6 +19,13 @@ Pure (no I/O) ⇒ testable; a payroll/settlement [[hooks]] hook and the governan
 
 Sequence position: **1·2** (the material build — `reward` is a [[rate]] at position 1; `distribute` aggregates contributions at position 2), governed by the [[balance]]/[[merge]] conservation laws on the return arc. Composes: [[rate]] · [[balance]] · [[identity]] · [[merge]] · [[generate]] · [[standard]] · [[duality]] · [[positions]] (the ladder filled with job positions).
 
+## Standards
+
+- **SFIA 8 responsibility-levels (1..7)** — job-type categorisation via `competencyWeight`.
+- **ESCO / ISCO-08 competency framework (skill level)** — the shared held/required proficiency scale.
+- **Hamilton (largest-remainder) apportionment — integer fair division** — `apportion`/`distribute` conserve the pot exactly (Σ shares = pot).
+- **ISO 19011** — reward is a deterministic, auditable function (no discretion).
+
 ## Common mistakes
 - Paying for credentials or claimed-but-unverified savings — pay tracks `verified` leverage only; the competition gates phantom time.
 - A `distribute` that loses or invents minor units — use integer largest-remainder so `Σ = pot` exactly ([[balance]]).

@@ -1,6 +1,6 @@
 ---
 name: leave-requests
-description: The leave-requests collection — Leave Requests — vacation / sick / parental / unpaid leave register
+description: Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.
 ---
 
 # leave-requests

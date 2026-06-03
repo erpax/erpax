@@ -1,6 +1,6 @@
 ---
 name: tax-returns
-description: The tax-returns collection — Tax Returns — filed return record (separate from TaxCalculations which is the snapshot)
+description: Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).
 ---
 
 # tax-returns

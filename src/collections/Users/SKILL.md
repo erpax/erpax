@@ -1,6 +1,6 @@
 ---
 name: users
-description: The users collection — Users — authenticated identities (cross-tenant via tenants[] membership)
+description: Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root.
 ---
 
 # users
@@ -12,6 +12,9 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+- RFC 5322 internet-message-format email
+- RFC 5321 smtp envelope
+- RFC 6532 internationalized-email-addresses
 - BCP-47 language-tag user-locale
 - ISO-27001 A.5.16 identity-management
 - ISO-27001 A.5.17 authentication-information

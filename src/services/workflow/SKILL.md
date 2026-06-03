@@ -1,6 +1,6 @@
 ---
-name: process
-description: Use when designing or auditing business-process execution, approval chains, or state machines that follow BPMN 2.0 semantics — approval routing, state guards, service tasks, SLA escalation, or process execution order.
+name: workflow
+description: "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service."
 ---
 
 # process — the running approval chain, BPMN execution made live
@@ -18,3 +18,8 @@ This service is the *orchestration twin* of the pure gate: it decides **when and
 On the ring 0·3·6·9·1·2·4·8·7·5 this is **8 (crest)**: the doubling helix carried to its peak, where the connected states woven at 4 are driven forward to a terminal outcome — the process reaches its decision. Its dual face is **7 (descent)** — escalation and timeout, the fall back into the loop when a crest is not reached in time. Spawning is the [[begin]] of the run, the final decision its [[end]]; each step's open/closed gate is an [[open]]/[[close]] boundary on the bounded decision set ([[horo]] ring). The instance keys on a content-`uuid` so two runners of one definition reconcile by [[merge]] ([[identity]]); routing decisions are guarded by row-level [[access]]; the spawn/advance seams are collection [[hooks]] firing an [[event]] envelope.
 
 Composes: [[workflow-engine]] (the legality gate it drives) · [[flow]] (value/decision moved through steps) · [[hooks]] (spawn/advance seam) · [[event]] (emitted decision envelope) · [[access]] (who may decide a step) · [[standard]] (BPMN 2.0) · [[horo]] (bounded decision set) · [[begin]]/[[end]] (spawn/terminate) · [[merge]] (cross-instance reconciliation) · [[identity]] (instance uuid key) · [[WorkflowDefinitions]] · [[WorkflowInstances]] · [[approved]].
+
+## Standards
+- ISO/IEC 19510:2013 BPMN-2.0
+- Audit: ISO-19011:2018 §6.4.6 audit-evidence-workflow
+- Compliance: SOX §404 internal-controls workflow-execution

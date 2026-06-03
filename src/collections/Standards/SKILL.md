@@ -1,6 +1,6 @@
 ---
 name: standards
-description: The standards collection — Standards — persistent registry of every published standard the
+description: Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.
 ---
 
 # standards
@@ -18,6 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Conservation Law 27 standards-as-live-objects
 - Conservation Law 28 standards-supersession-tracking
 - Conservation Law 38 mcp-tool-standardization
-- tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).' },
 
 Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].

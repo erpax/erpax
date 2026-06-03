@@ -1,6 +1,6 @@
 ---
 name: properties
-description: The properties collection — Properties — real-estate property master per ISO 41001 / ISO 55000
+description: Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection.
 ---
 
 # properties

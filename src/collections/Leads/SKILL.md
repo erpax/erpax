@@ -1,6 +1,6 @@
 ---
 name: leads
-description: The leads collection — Leads — pre-customer state qualified-lead pipeline
+description: Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection.
 ---
 
 # leads

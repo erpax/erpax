@@ -1,6 +1,6 @@
 ---
 name: terminals
-description: The terminals collection — Terminals — virtual POS terminals for the Наредба Н-18 alternative regime
+description: Use when registering or querying virtual POS terminals for the BG Наредба-Н-18 alternative e-shop regime — terminal number, payment-service provider, settlement IBAN, currency, and active/inactive status. The virtual POS terminal master for NRA e-shop declarations.
 ---
 
 # terminals

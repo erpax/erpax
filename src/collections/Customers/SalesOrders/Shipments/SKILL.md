@@ -1,6 +1,6 @@
 ---
 name: shipments
-description: The shipments collection — Shipments — fulfillment + carrier tracking
+description: Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.
 ---
 
 # shipments

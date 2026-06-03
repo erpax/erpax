@@ -1,6 +1,6 @@
 ---
 name: usage-records
-description: The usage-records collection — Usage Records — metered-billing event log per tenant per feature
+description: Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.
 ---
 
 # usage-records

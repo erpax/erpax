@@ -1,6 +1,6 @@
 ---
 name: goods-receipts
-description: The goods-receipts collection — Goods Receipts — second leg of three-way match (PO → Receipt → Invoice)
+description: Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition.
 ---
 
 # goods-receipts
@@ -15,11 +15,10 @@ GR receipt confirms goods arrival and triggers GL accrual posting. Revenue recog
 
 GL posting (debit inventory, credit accounts-payable) on GR; revenue posting on shipment FOB date. IFRS-15 §31 requires substantiation that GR date ≠ revenue date.
 
-## Composes
-
-[[flow]] — for event emission on GR posting  
-[[accounting]] — GL accrual posting per IAS-2 §10, inventory at-cost ASC-330  
-[[transaction]] — GL posting lifecycle  
-[[proof]] — audit trail per ISO-19011:2018 receipt-evidence  
-[[identity]] — role-based access (goods-receiver, quality-inspector, purchasing-accountant) and segregation-of-duties enforcement  
-[[standard]] — ISO-8601-1:2019 date-time, EN-16931:2017 delivery-information, SOX §404 internal-controls three-way-match
+## Standards
+- ISO-8601-1:2019 date-time received-at
+- EN-16931:2017 §BG-13 delivery-information
+- ISO-19011:2018 audit-trail receipt-evidence
+- IFRS-15 §31 revenue-substantiation shipment-FOB-date
+- SOX §404 internal-controls three-way-match
+- ISO-27002 §5.4 segregation-of-duties receiver-vs-requester

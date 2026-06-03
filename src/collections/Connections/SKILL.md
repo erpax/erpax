@@ -21,3 +21,10 @@ Applying this skill *implements* the federated social-graph standards — shapin
 
 - **ActivityStreams 2.0 — Activity Vocabulary** — W3C Recommendation, 23 May 2017. The social-graph verbs `Follow`/`Accept`/`Block`/`Like` and the `actor`/`object` terms the `from`/`to`/`context` fields carry.
 - **ActivityPub** — W3C Recommendation, 23 January 2018. Server-to-server federation: POST the edge activity to the target actor's inbox; a `Follow` is answered by a reciprocal `Accept`. erpax emits the envelope/handshake; cite only where the federation activity is actually emitted.
+- OASIS UBL 2.1 business-relationship (B2B trade edges)
+- Peppol BIS billing-and-procurement (B2B / B2G interoperability)
+- ISO 20022 financial-business-party-relationships
+- RFC-4122 §4.3 content-uuid edge-identity
+- GDPR Art 17 right-to-erasure Art 21 right-to-object (mute/block)
+- ISO-19011:2018 audit-trail transparent-relationship-ledger
+- ISO-27001 A.5.23 cloud-service-tenant-isolation

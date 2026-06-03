@@ -1,6 +1,6 @@
 ---
 name: ai-models
-description: The ai-models collection — AI Models — the model catalog as erpax DATA (collections host any AI model)
+description: Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.
 ---
 
 # ai-models

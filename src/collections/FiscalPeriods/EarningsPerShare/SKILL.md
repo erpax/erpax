@@ -1,6 +1,6 @@
 ---
 name: earnings-per-share
-description: The earnings-per-share collection — Earnings per Share — IAS 33 basic + diluted EPS calculations
+description: Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node.
 ---
 
 # earnings-per-share

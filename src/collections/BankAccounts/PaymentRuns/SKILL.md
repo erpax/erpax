@@ -1,6 +1,6 @@
 ---
 name: payment-runs
-description: The payment-runs collection — Payment Runs — ISO 20022 batch payment initiation
+description: Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection.
 ---
 
 # payment-runs

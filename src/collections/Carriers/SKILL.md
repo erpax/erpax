@@ -1,6 +1,6 @@
 ---
 name: carriers
-description: The carriers collection — Carriers — shipping/freight carrier master per tenant
+description: Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments.
 ---
 
 # carriers

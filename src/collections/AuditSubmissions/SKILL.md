@@ -1,6 +1,6 @@
 ---
 name: audit-submissions
-description: The audit-submissions collection — Audit Submissions — the evidence log of each Наредба Н-18 Приложение-38
+description: Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.
 ---
 
 # audit-submissions

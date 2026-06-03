@@ -1,6 +1,6 @@
 ---
 name: currency-rates
-description: The currency-rates collection — Currency Rates — FX rate master for multi-currency translation
+description: Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.
 ---
 
 # currency-rates

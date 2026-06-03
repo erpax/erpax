@@ -1,6 +1,6 @@
 ---
 name: fixed-assets
-description: The fixed-assets collection — Fixed Assets — capitalized PP&E with depreciation and book-value tracking
+description: Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.
 ---
 
 # fixed-assets

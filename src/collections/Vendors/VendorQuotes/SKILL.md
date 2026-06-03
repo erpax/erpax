@@ -1,6 +1,6 @@
 ---
 name: vendor-quotes
-description: The vendor-quotes collection — Vendor Quotes / RFQs — supplier RFQ responses (BEPS Action 13 evidence)
+description: Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.
 ---
 
 # vendor-quotes

@@ -1,6 +1,6 @@
 ---
 name: bank-accounts
-description: The bank-accounts collection — Bank Accounts — master data, separate from BankStatements (transactions)
+description: Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection.
 ---
 
 # bank-accounts

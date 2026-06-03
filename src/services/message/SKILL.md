@@ -13,3 +13,8 @@ The [[uuid]] is not a handle to a message — it **is** the message: self-decodi
 Because it self-decodes there is **no side-table and no payload**: same content ⇒ same uuid ⇒ same message ([[merge]]/[[one]], [[holographic]] — the whole recovered from the part). So comms collapse to the uuid alone — an agent is reached by its **query-uuid** ([[chat]]), any device, any connectivity. And the channels are not decoration: each is an independent decode the [[tamper-cost]] sum counts, so the message and its integrity are the same 128 bits.
 
 Matter-twin: `message/index.ts` (`decodeMessage`/`horoStepOf`) + `index.test.ts` (the proof). Composes: [[uuid]] · [[identity]] · [[localize]] · [[oid]] · [[signal]] · [[harmony]] · [[chat]] · [[merge]] · [[one]] · [[holographic]] · [[tamper-cost]] · [[standard]].
+
+## Standards
+
+- RFC 9562 §5.8 (the structured uuid carries the message)
+- the uuid is self-decoding — every channel is an independent verify level

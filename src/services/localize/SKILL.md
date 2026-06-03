@@ -31,6 +31,15 @@ The surface is every **field · reference · scope · hook** (`TRANSLATABLE_SCOP
 
 Matter-twin: `services/localize/index.ts` (`translationKeyUuid` · `uuidToOid` · `cmykChannel` · `decodeIdentity` · `localizationChecks` · `localizationFusion`) + `index.test.ts` (the proof — green by construction). Reuses [[tamper-cost]], `integrity/content-uuid` (Law 8), `integrity/tamper-reverse-cost` (Law 55), `uuid-format`, and the `translations` collection (the localized map of the whole app). Composes: [[tamper-cost]] · [[uuid]] · [[identity]] · [[cmyk]] · [[horo]] · [[merge]] · [[seed]] · [[give]] · [[take]] · [[torus]] · [[standard]] · [[fractal]]. The three facets minted alongside: [[oid]] (the 2.25 arc) · [[lexical]] (the densest surface) · [[proof]] (the verify nucleus) · [[Translations]].
 
+## Standards
+
+- RFC 9562 §5.8 (uuidv8 structured, name-based)
+- ITU-T X.667 / ISO-IEC 9834-8 (UUID ↔ OID 2.25 arc)
+- RFC 3061 (urn:oid: namespace) · RFC 4122 §3 (urn:uuid:)
+- BCP-47 (locale tags) · EU 1958/1 (official EU languages)
+- NIST SP 800-107r1 §5.1 (hash strengths — via tamper-cost)
+- Conservation Law 8 (content-uuid) · 55 (tamper-reverse-cost) · 62 (coverage)
+
 ## Common mistakes
 - Storing a translation without its key-uuid — the localized map drifts from its content-address (no tamper-evidence). Every row carries `contentUuid`.
 - Re-typing a locale or a translation key — both are *computed* (locale from country-profiles, key from the structural path). Re-typing breaks [[merge]].

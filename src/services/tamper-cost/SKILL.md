@@ -20,3 +20,13 @@ erpax holds **no secret**: every id is a deterministic v8 content-[[uuid]] (SHA-
 - **Invariants enlarge the coherent-rewrite set — only if the audit runs them (DeepSeek-Prover inhale).** The uuid cascade forces a tamper to rewrite the *structural* closure; machine-checked conservation invariants ([[proof]] — balance, period-lock, chain-verify) force the *semantic* closure too: a uuid-consistent state that breaks balance is still caught. Each constraining invariant is one more independent gate — gates **add** (a distinct set) where replicas **multiply** (copies of the set). DeepSeek-Prover's recursive, kernel-checked proofs make these gates real while keeping the verifier O(N) ([[proof]]: green by construction). An invariant nobody checks is no gate — `invariantChecks` counts only the ones the `dry-proof` bundle actually evaluates.
 
 Matter-twin: `tamper-cost/index.ts` (`crackVerdict`/`secondPreimageLog2`/`birthdayMarginBits`/`replicationChecks`/`invariantChecks`) + `index.test.ts` (the proof — green by construction). The cited strengths must be true ([[standard]] NIST SP 800-107, RFC 9562 §8, CRAQ USENIX ATC 2009, DeepSeek-Prover-V2). Where this makes the record un-forgeable, [[shred]] makes the content un-recoverable — the same content-addressing, the [[duality]] of transparency↔confidentiality. Composes: [[uuid]] · [[anchor]] · [[shred]] · [[identity]] · [[merge]] · [[replication]] · [[consistency]] · [[proof]] · [[aura]] · [[holographic]] · [[whole]] · [[one]] · [[collapse]] · [[standard]].
+
+## Standards
+- NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)
+- RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)
+- ISO-19011:2018 §6.5 (audit evidence integrity)
+- CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication
+- Chain Replication — van Renesse & Schneider, OSDI 2004
+- DeepSeek-Prover-V2 — recursive subgoal decomposition, Lean-4 kernel-checked invariants
+- Audit: Conservation Law 55/60 (tamper cost cascades through the uuid-chain)
+- Audit: Conservation Law 62 (coverage) enlarged by the invariant (semantic) + replica axes

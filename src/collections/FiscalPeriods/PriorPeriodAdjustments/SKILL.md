@@ -1,6 +1,6 @@
 ---
 name: prior-period-adjustments
-description: The prior-period-adjustments collection — Prior-Period Adjustments — IAS-8 §42-49 retrospective corrections of
+description: Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node.
 ---
 
 # prior-period-adjustments

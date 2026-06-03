@@ -1,6 +1,6 @@
 ---
 name: operators
-description: The operators collection — Operators — the СУПТО operator register
+description: Use when managing СУПТО operators — assigning or decommissioning the 4-digit codes that form the second segment of every УНП — mapped to a user; audit trail preserved on decommission. The Наредба Н-18 operator register.
 ---
 
 # operators

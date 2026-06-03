@@ -1,11 +1,9 @@
 ---
 name: maintenance-work-orders
-description: The maintenance-work-orders collection — Maintenance Work Orders — CMMS execution rows per ISO 41001 §8
+description: Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.
 ---
 
 # maintenance-work-orders
-
-Maintenance Work Orders — CMMS execution rows per ISO 41001 §8.
 
 The executable side of the FM ticket flow. Promoted from [[MaintenanceRequests]] (or raised pre-emptively for preventive / scheduled work). Tracks parts issued, labour hours, and cost — feeds GL via [[InventoryMovements]] (parts) + [[TimeEntries]] (labour) + capitalised work via [[FixedAssets]] (when work is capitalisable per IAS-16 §13).
 

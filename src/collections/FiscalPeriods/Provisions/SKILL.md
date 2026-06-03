@@ -1,6 +1,6 @@
 ---
 name: provisions
-description: The provisions collection — Provisions — IAS-37 §14 + ASC 450 mandatory liability disclosure
+description: Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register.
 ---
 
 # provisions

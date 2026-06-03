@@ -1,6 +1,6 @@
 ---
 name: operations
-description: The operations collection — Operations — the reusable operation-type catalog
+description: Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.
 ---
 
 # operations

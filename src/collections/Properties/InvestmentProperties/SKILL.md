@@ -1,6 +1,6 @@
 ---
 name: investment-properties
-description: The investment-properties collection — Investment Properties — IAS 40 land/buildings held to earn rental
+description: Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.
 ---
 
 # investment-properties

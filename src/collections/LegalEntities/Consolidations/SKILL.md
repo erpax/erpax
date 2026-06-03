@@ -1,6 +1,6 @@
 ---
 name: consolidations
-description: The consolidations collection — Consolidations Collection
+description: Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.
 ---
 
 # consolidations
@@ -12,6 +12,8 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- IFRS-10 consolidated-financial-statements
+- IAS-27 separate-financial-statements
+- US-GAAP ASC-810 consolidation
 
 Composes: [[LegalEntities]].

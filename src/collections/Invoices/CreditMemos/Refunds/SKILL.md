@@ -1,6 +1,6 @@
 ---
 name: refunds
-description: The refunds collection — Refunds — cash-out side of CreditMemos
+description: Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection.
 ---
 
 # refunds

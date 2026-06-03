@@ -1,6 +1,6 @@
 ---
 name: reporting-standards
-description: The reporting-standards collection — ReportingStandards
+description: Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.
 ---
 
 # reporting-standards
@@ -12,6 +12,9 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- IFRS reporting-framework
+- US-GAAP reporting-framework
+- ESRS EU-sustainability-reporting
+- ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[ReportingMappings]].

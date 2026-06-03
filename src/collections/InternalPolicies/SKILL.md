@@ -1,6 +1,6 @@
 ---
 name: internal-policies
-description: The internal-policies collection — InternalPolicies
+description: Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.
 ---
 
 # internal-policies
@@ -12,6 +12,8 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- ISO-27001 A.5.1 policies-for-information-security
+- ISO-37301:2021 compliance-policy
+- ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[PolicyAcknowledgments]] · [[PolicyVersions]].

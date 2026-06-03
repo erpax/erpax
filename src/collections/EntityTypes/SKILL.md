@@ -1,6 +1,6 @@
 ---
 name: entity-types
-description: The entity-types collection — Entity Types — classification of legal entity types
+description: Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table.
 ---
 
 # entity-types

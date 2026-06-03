@@ -1,6 +1,6 @@
 ---
 name: legal-entities
-description: The legal-entities collection — Legal Entities — IFRS-10 §B86 group structure (distinct from `tenants`)
+description: Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.
 ---
 
 # legal-entities

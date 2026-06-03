@@ -1,6 +1,6 @@
 ---
 name: fair-value-measurements
-description: The fair-value-measurements collection — Fair Value Measurements — IFRS 13 Level-1/2/3 hierarchy register
+description: Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.
 ---
 
 # fair-value-measurements

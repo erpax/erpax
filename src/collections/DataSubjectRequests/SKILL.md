@@ -1,11 +1,11 @@
 ---
 name: data-subject-requests
-description: The data-subject-requests collection — Data Subject Requests — GDPR Art
+description: Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.
 ---
 
 # data-subject-requests
 
-Data Subject Requests — GDPR Art.
+Data Subject Requests — GDPR Art.15-22 (DSR/DSAR) workflow.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

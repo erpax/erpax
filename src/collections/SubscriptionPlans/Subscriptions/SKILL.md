@@ -1,6 +1,6 @@
 ---
 name: subscriptions
-description: The subscriptions collection — Subscriptions — tenant-to-plan binding with period state and Stripe sync
+description: Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.
 ---
 
 # subscriptions

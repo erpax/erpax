@@ -1,6 +1,6 @@
 ---
 name: regulatory-deferral-accounts
-description: The regulatory-deferral-accounts collection — Regulatory Deferral Accounts — IFRS 14 first-time-adopter rate-
+description: Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.
 ---
 
 # regulatory-deferral-accounts

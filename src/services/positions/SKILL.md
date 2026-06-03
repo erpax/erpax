@@ -17,6 +17,13 @@ The matter is consumed by the `JobPositions` and `Competencies` [[collections]] 
 
 Sequence position: **2** ([[collections]] — positions aggregate the [[allocation]] rate at position 1 into the role structure), governed by the [[identity]]/[[merge]] conservation laws on the chain. Composes: [[allocation]] · [[identity]] · [[merge]] · integrity · [[collections]] · [[hooks]] · [[fractal]] · [[duality]] · [[self]] · [[sufficient]] · [[standard]].
 
+## Standards
+
+- SFIA 8 responsibility-levels (1..7) — the job-type / autonomy axis
+- ESCO / ISCO-08 occupational classification
+- UN COFOG (Classification of the Functions of Government) — the `function` code
+- ISO 19011:2018 §6.4.6 — conditions are content-addressed, tamper-evident
+
 ## Common mistakes
 - A separate government pay scale — government is a `function` code on the one ladder, never a privileged class; `oneLadder` must return `[]`.
 - A hand-written job description — derive it from the position's coordinates ([[self]]/[[sufficient]]).

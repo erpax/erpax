@@ -1,6 +1,6 @@
 ---
 name: remediation-plans
-description: The remediation-plans collection — RemediationPlans
+description: Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection.
 ---
 
 # remediation-plans
@@ -12,4 +12,7 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- COSO-2013 deficiency-remediation
+- SOX §404 control-remediation
+- ISO-27001 A.10 improvement
+- ISO-27001 A.5.23 cloud-service-tenant-isolation

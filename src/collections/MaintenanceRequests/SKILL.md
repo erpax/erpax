@@ -1,11 +1,9 @@
 ---
 name: maintenance-requests
-description: The maintenance-requests collection — Maintenance Requests — user-raised tickets per ISO 41001 §8
+description: Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.
 ---
 
 # maintenance-requests
-
-Maintenance Requests — user-raised tickets per ISO 41001 §8.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

@@ -1,6 +1,6 @@
 ---
 name: work-shifts
-description: The work-shifts collection — Work Shifts — labor/time/cost roll-up for a worker at a work-center
+description: Use when recording manufacturing labor — worker × work-center × shift — capturing run-time, quantity produced, scrap, and parallelism-aware wage (runTimeMinutes/60 × rate / parallelism) that feeds IAS-2 cost-of-conversion inventory costing. The production work-shift collection.
 ---
 
 # work-shifts

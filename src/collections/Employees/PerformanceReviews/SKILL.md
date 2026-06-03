@@ -1,6 +1,6 @@
 ---
 name: performance-reviews
-description: The performance-reviews collection — Performance Reviews — annual / quarterly review records
+description: Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.
 ---
 
 # performance-reviews

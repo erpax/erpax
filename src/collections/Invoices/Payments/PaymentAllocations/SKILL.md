@@ -1,11 +1,11 @@
 ---
 name: payment-allocations
-description: The payment-allocations collection — Payment Allocations — explicit allocation table for payments that
+description: Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.
 ---
 
 # payment-allocations
 
-Payment Allocations — explicit allocation table for payments that.
+Payment Allocations — explicit allocation of one payment to one or more invoices/bills.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

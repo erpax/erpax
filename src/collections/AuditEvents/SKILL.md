@@ -1,6 +1,6 @@
 ---
 name: audit-events
-description: The audit-events collection — Audit Events — persistent ISO 19011 / SOX §404 evidence trail
+description: Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.
 ---
 
 # audit-events

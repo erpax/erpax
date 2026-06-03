@@ -1,6 +1,6 @@
 ---
 name: spaces
-description: The spaces collection — Spaces — sub-property zones (floor / room / desk / zone) for IWMS
+description: Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.
 ---
 
 # spaces

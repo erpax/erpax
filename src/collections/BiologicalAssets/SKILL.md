@@ -1,6 +1,6 @@
 ---
 name: biological-assets
-description: The biological-assets collection — Biological Assets — IAS 41 living plants + animals at fair-value
+description: Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection.
 ---
 
 # biological-assets
@@ -14,8 +14,18 @@ This is an [[accounting|accountable]] [[collections|collection]] node — shared
 This is the [[fractal]] same form one scale down from the [[FairValueMeasurements]] register it points at — a measured balance that re-prices against a hierarchy of inputs.
 
 ## Standards
-
-The `@standard`/`@audit`/`@compliance`/`@security` banners on `index.ts` are the source of truth and the doc trinity renders them — they are not re-listed here ([[standard]]). The substance not derivable from a section number alone: IAS 41 measures at fair-value-**less-costs-to-sell** (§12) with the period change recognised in P&L (§26) and split between biological transformation (§13) and price (§51); recognition is the standard three-criteria gate (§10); disclosure is **by class** (§40), which is why one row = one class; the §30 bearer-plant amendment is the IAS-16 carve-out above; the fair-value input ranking is IFRS-13's three-level hierarchy.
+- IFRS IAS-41 §10 recognition-criteria
+- IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell
+- IFRS IAS-41 §13 biological-transformation
+- IFRS IAS-41 §26 gains-losses-recognised-in-pnl
+- IFRS IAS-41 §30 bearer-plants-now-IAS-16-since-2016-amendment
+- IFRS IAS-41 §40 disclosure-by-class
+- IFRS IFRS-13 fair-value-input-hierarchy
+- ISO-4217:2015 currency-codes
+- ISO-8601-1:2019 date-time
+- ISO 19011:2018 §6.4.6 audit-evidence-biological-assets
+- SOX §404 internal-controls TOM-AGRI-01
+- ISO 27001 A.5.23 cloud-service-tenant-isolation
 
 ## Common mistakes
 

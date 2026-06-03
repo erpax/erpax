@@ -1,6 +1,6 @@
 ---
 name: post-balance-sheet-events
-description: The post-balance-sheet-events collection — Post-Balance-Sheet Events — IAS 10 events after the reporting period
+description: Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.
 ---
 
 # post-balance-sheet-events

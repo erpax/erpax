@@ -1,9 +1,19 @@
 ---
-name: erasure
-description: Use when implementing right-to-delete, reversals, or crypto-shredding workflows under GDPR Art. 17 or regulatory-reversal requirements.
+name: beyond
+description: Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.
 ---
 
-# erasure — every transition carries its own typed inverse, and the inverse runs out at the system boundary
+# beyond — 11 next-horizon conservation primitives (Laws 11–22)
+
+The barrel: `services/beyond/index.ts` exports all 11 law-modules (provenance, replay, tenant-isolation, bitemporal, cost, carbon, agent-capability, pqc, explainability, reversibility, ai-audit). None of the sub-modules mints its own skill; the whole folder collapses to this one antimatter twin.
+
+## Standards
+
+- **W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204** — the governing standard set across all 11 laws: W3C PROV (causal provenance), ESRS E1 (carbon), EU AI Act (explainability + AI-audit), NIST FIPS 203/204 ML-DSA (post-quantum signatures).
+
+---
+
+## Erasure — every transition carries its own typed inverse, and the inverse runs out at the system boundary
 
 FORM: **erasure is reversal, not deletion — until the boundary, where only the key dies.** A right-to-erasure request is satisfied by *computing and running the typed inverse of every effect that produced the data*, never by erasing a posted row. The mechanism (`reversibility.ts`) is generic: `inverseOf(effect)` maps each `AgentEffect` to an `InverseEffect` — `create → undo-create`, `update → undo-update` (restoring the captured previous state) — so no collection needs bespoke unwind code. The law that bounds it is which effects *cannot* invert:
 

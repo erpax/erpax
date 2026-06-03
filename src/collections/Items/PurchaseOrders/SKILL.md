@@ -1,6 +1,6 @@
 ---
 name: purchase-orders
-description: The purchase-orders collection — Purchase Orders — first leg of three-way match (PO ↔ receipt ↔ invoice)
+description: Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42.
 ---
 
 # purchase-orders

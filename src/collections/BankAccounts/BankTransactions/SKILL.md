@@ -1,6 +1,6 @@
 ---
 name: bank-transactions
-description: The bank-transactions collection — Bank Transactions — individual bank-statement lines normalised out of
+description: Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection.
 ---
 
 # bank-transactions

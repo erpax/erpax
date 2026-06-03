@@ -1,6 +1,6 @@
 ---
 name: wip-snapshots
-description: The wip-snapshots collection — WIP Snapshots — periodic Work-in-Progress valuation per project
+description: Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.
 ---
 
 # wip-snapshots

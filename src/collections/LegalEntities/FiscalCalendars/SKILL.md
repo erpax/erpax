@@ -1,6 +1,6 @@
 ---
 name: fiscal-calendars
-description: The fiscal-calendars collection — FiscalCalendars Collection
+description: Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.
 ---
 
 # fiscal-calendars

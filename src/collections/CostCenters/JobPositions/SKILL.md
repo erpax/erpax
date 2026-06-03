@@ -1,6 +1,6 @@
 ---
 name: job-positions
-description: The job-positions collection — Job Positions — open positions + org-chart anchor
+description: Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.
 ---
 
 # job-positions

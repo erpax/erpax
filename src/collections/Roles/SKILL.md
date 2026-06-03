@@ -1,6 +1,6 @@
 ---
 name: roles
-description: The roles collection — Role **definitions** (`name` + binding)
+description: Use when defining RBAC roles — global, collection-scoped, or document-scoped — each carrying an optional capability (read/write/sign/admin/audit) and skill routes that users inherit on assignment. The NIST INCITS-359 role-definition collection.
 ---
 
 # roles

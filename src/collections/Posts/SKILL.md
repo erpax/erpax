@@ -1,6 +1,6 @@
 ---
 name: posts
-description: The posts collection — Posts — CMS articles with versioned drafts and tenant-scoped read
+description: Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection.
 ---
 
 # posts

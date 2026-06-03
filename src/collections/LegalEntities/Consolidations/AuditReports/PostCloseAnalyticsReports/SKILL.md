@@ -1,6 +1,6 @@
 ---
 name: post-close-analytics-reports
-description: The post-close-analytics-reports collection — PostCloseAnalyticsReports Collection
+description: Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection.
 ---
 
 # post-close-analytics-reports
@@ -12,6 +12,7 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- IFRS IAS-1 financial-statement-analysis
+- SOX §404 close-monitoring
 
 Composes: [[AuditReports]].

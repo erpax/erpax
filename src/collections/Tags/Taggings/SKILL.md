@@ -1,6 +1,6 @@
 ---
 name: taggings
-description: The taggings collection — Taggings — THE key to "less collections, infinite features"
+description: Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.
 ---
 
 # taggings

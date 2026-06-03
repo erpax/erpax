@@ -1,6 +1,6 @@
 ---
 name: business-combinations
-description: The business-combinations collection — Business Combinations — IFRS 3 acquirer-side M&A register
+description: Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.
 ---
 
 # business-combinations

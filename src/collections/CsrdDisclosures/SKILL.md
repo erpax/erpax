@@ -1,6 +1,6 @@
 ---
 name: csrd-disclosures
-description: The csrd-disclosures collection — CSRD Disclosures — EU CSRD Directive 2022/2464 + ESRS 1/2 mandatory
+description: Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.
 ---
 
 # csrd-disclosures

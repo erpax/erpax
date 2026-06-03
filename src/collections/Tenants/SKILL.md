@@ -1,6 +1,6 @@
 ---
 name: tenants
-description: The tenants collection — Tenants — multi-tenant root entity (post-Slice-HHH the legacy "host" alias is fully retired)
+description: Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.
 ---
 
 # tenants

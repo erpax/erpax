@@ -24,5 +24,5 @@ Applying this skill *implements* these standards; an `@standard` banner must be 
 
 - **ActivityPub** — W3C Recommendation, 23 January 2018 (https://www.w3.org/TR/activitypub/). The model: server-to-server activity distribution — publish an activity, peers consume it. erpax implements the broadcast/idempotent-consume pattern over a Durable Object room rather than full inbox/outbox conformance; cite it only on the federation edge that actually emits, never as a decorative banner ([[standard]]).
 - **RFC 6455** — The WebSocket Protocol. The transport for the room connection.
+- **RFC 4122 §4.3** — content-uuid event-identity (idempotency key). The original UUIDv5 / content-addressed namespace form.
 - **RFC 9562 §5.8** — UUIDv8 / content-derived identity. The event `uuid` is the idempotency key — same content ⇒ same id ([[identity]]).
-- **ISO/IEC 27001 A.5.23** — cloud-service tenant isolation. One room per tenant; no cross-tenant event leakage.

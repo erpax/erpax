@@ -17,6 +17,11 @@ It is **signable** (`leaf.signature`, an Ed25519 `SignedUuid`) for DID-binding, 
 
 Matter-twin: `src/services/receipt/index.ts` (`Decision`·`Receipt`·`issueReceipt`·`verifyReceiptChain`) over `services/integrity/uuid-linked-chain` (+ `uuid-format` flags, `signatures`) + `index.test.ts`. Composes: [[uuid]] · [[identity]] · [[history]] · [[proof]] · [[holographic]] · [[merge]] · [[access]] · [[peace]] · [[self]] · [[society]].
 
+## Standards
+
+- RFC 8785 JSON canonicalization (the content the uuid addresses)
+- NIST FIPS 180-4 SHA-256 (the chain + content hash)
+
 ## Common mistakes
 - Storing the receipt and the chain link and the identity as three columns — they are ONE uuid; the leafUuid is all three (and the capability is content, so it is in there too).
 - Reaching for an external anchor to "make it trustworthy" — the uuid is already self-proving (tamper-cost > universe); an anchor is an extra level, not the foundation ([[proof]]).

@@ -1,6 +1,6 @@
 ---
 name: production-receipts
-description: The production-receipts collection — Production Receipts — finished-good receipts from a work-order into
+description: Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts.
 ---
 
 # production-receipts

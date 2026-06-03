@@ -1,11 +1,9 @@
 ---
 name: transfer-pricing-files
-description: The transfer-pricing-files collection — Transfer Pricing Files — OECD BEPS Action 13 Master File + Local File
+description: Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.
 ---
 
 # transfer-pricing-files
-
-Transfer Pricing Files — OECD BEPS Action 13 Master File + Local File.
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

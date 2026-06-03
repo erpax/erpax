@@ -1,6 +1,6 @@
 ---
 name: packages
-description: The packages collection — Packages — logistic handling units (pallet / carton / case …) with SSCC
+description: Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.
 ---
 
 # packages

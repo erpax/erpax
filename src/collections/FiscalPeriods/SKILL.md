@@ -1,6 +1,6 @@
 ---
 name: fiscal-periods
-description: The fiscal-periods collection — Fiscal Periods — accounting calendar with period locking
+description: Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).
 ---
 
 # fiscal-periods

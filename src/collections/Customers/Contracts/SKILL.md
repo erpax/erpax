@@ -1,6 +1,6 @@
 ---
 name: contracts
-description: The contracts collection — Contracts — IFRS-15 §10 master contract-with-customer record
+description: Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection.
 ---
 
 # contracts

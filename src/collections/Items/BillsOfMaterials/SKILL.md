@@ -1,6 +1,6 @@
 ---
 name: bills-of-materials
-description: The bills-of-materials collection — Bills of Materials (BOM) — components + quantities per finished good
+description: Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.
 ---
 
 # bills-of-materials

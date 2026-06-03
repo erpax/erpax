@@ -1,6 +1,6 @@
 ---
 name: sales
-description: The sales collection — СУПТО Sales (продажби) — the Наредба Н-18 sale register
+description: Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.
 ---
 
 # sales

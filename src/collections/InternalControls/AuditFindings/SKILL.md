@@ -1,6 +1,6 @@
 ---
 name: audit-findings
-description: The audit-findings collection — Audit Findings — issues raised by internal/external auditors against controls
+description: Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.
 ---
 
 # audit-findings

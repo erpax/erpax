@@ -1,6 +1,6 @@
 ---
 name: contract-performance
-description: The contract-performance collection — Contract Performance — IFRS-15 §31-35 control transfer & revenue recognition timing
+description: Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.
 ---
 
 # contract-performance

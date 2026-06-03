@@ -1,6 +1,6 @@
 ---
 name: evidence-attestations
-description: The evidence-attestations collection — Evidence Attestations — signed PDF cover sheets produced by
+description: Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.
 ---
 
 # evidence-attestations

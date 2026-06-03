@@ -1,6 +1,6 @@
 ---
 name: taxing-jurisdictions
-description: The taxing-jurisdictions collection — TaxingJurisdictions
+description: Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.
 ---
 
 # taxing-jurisdictions
@@ -12,6 +12,9 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
-- (none cited yet)
+- ISO-3166-1:2020 country-codes
+- OECD tax-jurisdiction
+- EU Directive 2006/112/EC VAT
+- ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[ReportingStandards]] · [[StatutoryReportTemplates]] · [[EntityLegalStructures]].

@@ -1,6 +1,6 @@
 ---
 name: commitments-and-contingencies
-description: The commitments-and-contingencies collection — Commitments & Contingencies — IAS-37 §27-92 + IFRS-15 §B50 mandatory
+description: Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.
 ---
 
 # commitments-and-contingencies

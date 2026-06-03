@@ -1,6 +1,6 @@
 ---
 name: payment-methods
-description: The payment-methods collection — Payment Methods — tokenized card / bank-account references for billing
+description: Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.
 ---
 
 # payment-methods

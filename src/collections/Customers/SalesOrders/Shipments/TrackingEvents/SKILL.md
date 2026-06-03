@@ -1,6 +1,6 @@
 ---
 name: tracking-events
-description: The tracking-events collection — Tracking Events — per-leg shipment status updates from carrier APIs
+description: Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log.
 ---
 
 # tracking-events

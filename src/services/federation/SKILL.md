@@ -31,6 +31,7 @@ Applying this skill *implements* the federation standards — citing them in `@s
 - **ActivityStreams 2.0** (W3C REC, 2017) — the federated content envelope (JSON-LD Activity). The `FederatedRow` is the erpax envelope; cite on `types.ts`.
 - **ActivityPub** (W3C REC, 2018) — server-to-server delivery: POST the activity to the target's inbox; a `Follow` is answered by a reciprocal `Accept`. erpax implements the envelope/handshake pattern; hedge "(informal)" where full inbox/outbox conformance is not claimed.
 - **Linked Data Notifications (LDN)** (W3C REC, 2017) — the receive/notify channel under the exchange. Cite where rows are pushed to a peer.
+- W3C Verifiable Credentials Data Model 2.0
 
 ActivityPub has no bearing on non-federation collections — cite it only where federation activities are actually emitted, never as decoration.
 

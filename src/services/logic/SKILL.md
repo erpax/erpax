@@ -13,6 +13,10 @@ FORM: **the society's logic grounds correctness in HARMONY.** A claim is sound i
 
 Matter-twin: `src/services/logic/index.ts` (`Claim`·`harmonicFirst`·`consistent`·`entails`) + `index.test.ts`. Composes: [[horo]] · [[rodin]] · [[proof]] · [[self]] · [[competition]] · [[education]] · [[merge]] · [[holographic]] · [[society]] · [[sequence]].
 
+## Standards
+
+- classical propositional consistency (no P ∧ ¬P) grounded in the horo ring
+
 ## Common mistakes
 - Treating correctness as opinion/vote — it is harmony, verified ([[proof]]); a claim is sound iff harmonic, not iff agreed.
 - Ordering work by recency or authority instead of harmony — `harmonicFirst`: the self-consistent resolve first because they need no coordination ([[self]]); that ordering IS the competitive advantage.

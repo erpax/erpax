@@ -1,6 +1,6 @@
 ---
 name: cost-variances
-description: The cost-variances collection — Cost Variances — IAS-2 §21 standard-cost vs actual-cost variances
+description: Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.
 ---
 
 # cost-variances

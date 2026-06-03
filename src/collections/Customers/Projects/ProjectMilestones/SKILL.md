@@ -1,6 +1,6 @@
 ---
 name: project-milestones
-description: The project-milestones collection — Project Milestones — IFRS-15 §126 milestone-billing trigger points
+description: Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.
 ---
 
 # project-milestones

@@ -1,6 +1,6 @@
 ---
 name: dunning-cycles
-description: The dunning-cycles collection — Dunning Cycles — collection-process record per overdue invoice
+description: Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.
 ---
 
 # dunning-cycles

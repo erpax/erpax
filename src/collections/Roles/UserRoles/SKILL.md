@@ -1,6 +1,6 @@
 ---
 name: user-roles
-description: "The user-roles collection — join collection: users ↔ roles"
+description: Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.
 ---
 
 # user-roles

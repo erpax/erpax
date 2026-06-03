@@ -1,6 +1,6 @@
 ---
 name: categories
-description: The categories collection — Categories — taxonomy for posts/products with per-tenant slug uniqueness
+description: Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.
 ---
 
 # categories
@@ -12,6 +12,7 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+- rfc 3986 uri slug-to-url
 - schema.org Category
 - schema.org DefinedTerm taxonomic-term
 

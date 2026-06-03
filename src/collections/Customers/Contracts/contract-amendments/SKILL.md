@@ -1,6 +1,6 @@
 ---
 name: contract-amendments
-description: The contract-amendments collection — Contract Amendments — IAS-8 accounting for contract modifications
+description: Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.
 ---
 
 # contract-amendments

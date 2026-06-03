@@ -1,6 +1,6 @@
 ---
 name: cost-centers
-description: The cost-centers collection — Cost Centers — analytical dimension for GL postings
+description: Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.
 ---
 
 # cost-centers

@@ -27,10 +27,8 @@ A [[fields|field]] `validate` (or onboarding [[hooks|hook]]) calls `validateEgn`
 ## Standards
 Applying this skill *is* how the standard is implemented (the answer-path principle, [[standard]]); the `@standard` banners must assert the true regulation, not decorate.
 
-| Standard | Current form (one line) |
-|---|---|
-| **Наредба РД-02-20-9/2012** (population register) | The ЕГН structure + modulo-11 check digit; digits decode birth date and sex. |
-| **Закон за регистър БУЛСТАТ** | The ЕИК two-stage modulo-11 check (9-digit base, optional 13-digit branch). |
-| **ISO-7064** | The check-character-system family both checksums instantiate. |
+- **ЕГН regulation (Наредба РД-02-20-9/2012 on the population register)** — ЕГН structure + modulo-11 check digit; digits decode birth date and sex.
+- **БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum** — the ЕИК two-stage modulo-11 check (9-digit base, optional 13-digit branch).
+- **ISO-7064 check-character-systems (the modulo family these implement)** — the family both Bulgarian checksums instantiate.
 
 Composes: [[identity]] (the number IS the id; decode-not-lookup) · [[begin]] (the 0 boundary / entry gate) · [[sequence]] (position 0) · [[standard]] (Наредба РД-02-20-9/2012 + БУЛСТАТ + ISO-7064 are real `@standard`s) · [[fields]]/[[hooks]] (where validation binds) · [[access]] (the gate decides who may onboard) · [[horo]] (BG society joins the ring here) · [[duality]] (person ЕГН ↔ entity ЕИК).

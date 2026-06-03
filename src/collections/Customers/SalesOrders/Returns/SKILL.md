@@ -1,6 +1,6 @@
 ---
 name: returns
-description: The returns collection — Returns / RMA — customer-return authorisation with inventory + GL reversal
+description: Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection.
 ---
 
 # returns

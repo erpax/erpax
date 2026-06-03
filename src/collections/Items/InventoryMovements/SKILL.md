@@ -1,6 +1,6 @@
 ---
 name: inventory-movements
-description: The inventory-movements collection — Inventory Movements — every quantity change with source/destination
+description: Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.
 ---
 
 # inventory-movements
@@ -14,13 +14,8 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 ## Standards
 - ISO-8601-1:2019 date-time movement-at posted-at
 - ISO-3166-1:2020 country-codes via location
-- IFRS IAS-2 §10 §36 inventories cost-formulas
-- US-GAAP ASC-330 inventory cost-flow
-- US-GAAP ASC-606 cogs-recognition
 - ISO-19011:2018 audit-trail stock-ledger
 - SOX §404 internal-controls inventory-cycle-count
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
-- IFRS IAS-2 §25 cost-formulas
-- US-GAAP ASC-330-10-30 inventory-valuation
 
 Composes: [[Items]] · [[WarehouseLocations]] · [[accounting]] · [[transaction]].

@@ -1,6 +1,6 @@
 ---
 name: workflow-definitions
-description: The workflow-definitions collection — Workflow Definitions — BPMN-style multi-step approval definitions
+description: Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.
 ---
 
 # workflow-definitions

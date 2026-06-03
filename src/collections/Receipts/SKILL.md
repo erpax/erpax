@@ -1,6 +1,6 @@
 ---
 name: receipts
-description: The receipts collection — Receipts (касови бонове / electronic receipts) — the Наредба Н-18 fiscal
+description: Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.
 ---
 
 # receipts

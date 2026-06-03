@@ -1,6 +1,6 @@
 ---
 name: kyc-checks
-description: The kyc-checks collection — KYC Checks — AML / Customer Due Diligence record per customer / vendor
+description: Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.
 ---
 
 # kyc-checks

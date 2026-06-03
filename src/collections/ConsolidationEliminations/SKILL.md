@@ -1,6 +1,6 @@
 ---
 name: consolidation-eliminations
-description: The consolidation-eliminations collection — Consolidation Eliminations — group consolidation elimination entries
+description: Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.
 ---
 
 # consolidation-eliminations

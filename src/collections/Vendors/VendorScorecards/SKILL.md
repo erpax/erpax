@@ -1,6 +1,6 @@
 ---
 name: vendor-scorecards
-description: The vendor-scorecards collection — Vendor Scorecards — periodic OTD / quality / response-time metrics
+description: Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.
 ---
 
 # vendor-scorecards

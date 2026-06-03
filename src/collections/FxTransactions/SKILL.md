@@ -1,6 +1,6 @@
 ---
 name: fx-transactions
-description: The fx-transactions collection — FX Transactions — IAS-21 §28-29 monetary-item re-translation entries
+description: Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.
 ---
 
 # fx-transactions
