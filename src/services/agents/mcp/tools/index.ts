@@ -51,3 +51,9 @@ export { buildGovernanceTools } from './governance'
 // in the platform has a deterministic structured uuid; federation peers
 // and replay tools verify error histories by uuid equality.
 export { buildErrorTools } from './error'
+// Upstream executable-action surface (ActiveAdmin member/batch/reify ported as
+// MCP tools so MCP-only agents can drive them through the erpax API):
+//   erpax.batch.transition  — bulk state-transition (the dominant batch_action)
+//   erpax.versions.restore  — version restore (the `reify` member action)
+export { buildBatchTools } from './batch'
+export { buildVersionsTools } from './versions'

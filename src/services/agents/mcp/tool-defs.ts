@@ -100,6 +100,7 @@ import {
   buildConsistencyTools, buildEventsTools, buildCloudflareTools,
   buildKvTools, buildIntegrityExtensionTools, buildSecurityTools,
   buildShareTools, buildFormatTools, buildGovernanceTools, buildErrorTools,
+  buildBatchTools, buildVersionsTools,
 } from './tools'
 import { wrapToolsWithTenantGuard } from './tools/_guards'
 
@@ -152,6 +153,11 @@ const STATE_MUTATING_TOOLS: ReadonlySet<string> = new Set([
   'erpax.standards.subscribe',
   // Agent dispatch (effects → side-effects)
   'erpax.agents.dispatch',
+  // Bulk state-transition (the upstream batch_action surface) — writes status
+  // to many rows, each firing emitOnStatusTransition.
+  'erpax.batch.transition',
+  // Version restore (the upstream `reify`) — restores a document to a version.
+  'erpax.versions.restore',
 ])
 import {
   checkMcpToolStandardization, buildMcpStandardsBundle, CANONICAL_AREAS,
@@ -1317,6 +1323,14 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
   // Law 38 mcp-tool-standardization.
   for (const t of buildConsistencyTools()) tools.push(t)
   for (const t of buildCloudflareTools()) tools.push(t)
+  // ── Upstream executable-action surface (ActiveAdmin member/batch/reify) ──
+  // The dominant upstream admin verbs — bulk state-transition (batch_action)
+  // and version restore (reify) — ported as MCP tools so MCP-only agents can
+  // drive them through the erpax API. Both work WITH the machinery (the
+  // collection hooks + emitOnStatusTransition + Payload Versions), never around
+  // it; both are admin-gated via STATE_MUTATING_TOOLS + wrapToolsWithTenantGuard.
+  for (const t of buildBatchTools()) tools.push(t)
+  for (const t of buildVersionsTools()) tools.push(t)
 
   // ── Slice XXXXXX — MCP self-standardization (Law 38) ──
   tools.push(

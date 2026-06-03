@@ -53,6 +53,12 @@ export const CANONICAL_AREAS: ReadonlyArray<string> = [
   'pwa',
   // Auto-generated (slice WWWWWW)
   'auto',
+  // Executable actions — the upstream ActiveAdmin member/batch/reify surface
+  // ported as MCP tools so MCP-only agents can drive it through the erpax API:
+  //   batch    — bulk state-transition (erpax.batch.transition)
+  //   versions — version restore / reify (erpax.versions.restore)
+  // Added explicitly per the Law 38 conscious-taxonomy gate.
+  'batch', 'versions',
 ] as const
 
 /**
