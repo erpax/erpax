@@ -11,10 +11,16 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+The `seed.ts` records the **erpax-court** self-audit (`court-docket.ts`): the society's
+adversarial review — auditors → prosecutors ∥ defense → judges — persisted as permanent,
+tamper-evident findings ([[proof]] · [[akashic]]), the system judging itself. Each case
+carries its disposition (remediated · open · overruled · dismissed), keyed idempotently by
+the proceeding run-id so a re-seed never duplicates.
+
 ## Standards
 - ISO-19011:2018 audit-finding
 - ISO/IEC-27007:2020 ISMS-auditing
 - SOX §404 internal-controls deficiency-tracking
 - ISO-19011:2018 audit-trail
 
-Composes: [[RemediationPlans]] · [[access]] · [[hooks]].
+Composes: [[RemediationPlans]] · [[access]] · [[hooks]] · [[proof]] · [[akashic]].
