@@ -5,11 +5,9 @@ description: The bank-transactions collection — Bank Transactions — individu
 
 # bank-transactions
 
-Bank Transactions — individual bank-statement lines normalised out of.
+Individual ISO 20022 camt.053 [[standard|bank-statement lines]] extracted into first-class rows for [[accounting|reconciliation]] matching. Decomposes the canonical `Camt053Transaction` (see `@/standards/iso-20022` for field mapping) into a queryable, [[proof|auditable]] projection: `accountServicerReference`, `endToEndId`, `valueDate`, `bookingDate`, `amount` (signed), `creditDebitIndicator` (CRDT|DBIT), `currency`, `bookingStatus` (BOOK|PDNG|INFO|FUTR), bank transaction code (domain/family/subfamily), [[party|counterparty]] name/IBAN/BIC, `chargeBearer` (DEBT|CRED|SHAR|SLEV), and remittance info (description + structured reference).
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Promotes each camt.053 line into a [[transaction]] row so it can be matched ↔ [[accounting|journal entries]] and [[identity|audited]] per line (SOX §404 reconciliation evidence). Relationship: `bankAccount` (rel), `statement` (parent camt.053, if batch-imported), `matchedJournalEntries[]` (with matchScore for fuzzy matching).
 
 ## Standards
 - ISO-20022 camt.053 bank-to-customer-statement
@@ -30,4 +28,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls bank-reconciliation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[accounting]].
+Composes: [[accounting]] · [[transaction]] · [[party]] · [[standard]] · [[proof]].

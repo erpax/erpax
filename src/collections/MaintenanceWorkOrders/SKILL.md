@@ -7,11 +7,10 @@ description: The maintenance-work-orders collection — Maintenance Work Orders 
 
 Maintenance Work Orders — CMMS execution rows per ISO 41001 §8.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+The executable side of the FM ticket flow. Promoted from [[MaintenanceRequests]] (or raised pre-emptively for preventive / scheduled work). Tracks parts issued, labour hours, and cost — feeds GL via [[InventoryMovements]] (parts) + [[TimeEntries]] (labour) + capitalised work via [[FixedAssets]] (when work is capitalisable per IAS-16 §13).
 
 ## Standards
+
 - ISO-41001:2018 §8.1 facility-management operational-control
 - ISO-55000:2014 asset-management work-management
 - ISO-55001:2014 asset-management management-systems
@@ -25,4 +24,22 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls capex-vs-opex-classification
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[MaintenanceRequests]] · [[Properties]].
+## Composition
+
+Composes: [[MaintenanceRequests]] · [[Properties]] · [[InventoryMovements]] · [[TimeEntries]] · [[FixedAssets]] · [[JournalEntries]].
+
+## Capitalization Logic
+
+Per IFRS IAS-16 §12–13: routine maintenance (labour, parts, vendor costs) expense to Maintenance Expense; component replacement and improvements capitalise to PPE and depreciate per the asset's schedule. Field `capitalisationTreatment` (expense | capitalise | mixed) drives whether [[JournalEntries]] post to OPEX or CAPEX on completion.
+
+## Work-Type Taxonomy
+
+Corrective Maintenance (CM), Preventive Maintenance (PM), Predictive Maintenance (PdM), Inspection / Testing, Improvement / Enhancement, Compliance / Statutory, Refurbishment / Major Overhaul (capex), Cleaning / Janitorial, Move / Setup — each with distinct audit trail and failure-code feedback (ISO 14224) to reliability KPIs.
+
+## Execution Workflow
+
+Status progression: Planned → Scheduled → Dispatched → In Progress → (Awaiting Parts | Awaiting Inspection) → Completed → Closed (cost-posted). `actualStartAt` auto-set when status transitions to `in_progress`; `actualEndAt` auto-set on `completed` or `closed`.
+
+## Safety & Compliance
+
+Optional gates: permit-to-work, LOTO (Lockout-Tagout per OSHA 29 CFR 1910.147 / EN 50110), hot-work flags. Post-work [[JournalEntries]] on completion; optional reference to [[QualityInspections]] for defect tracking.
