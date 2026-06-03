@@ -16,6 +16,10 @@
  *      ERPax instances can verify our proof without trusting us.
  *   6. Re-run on schedule via QQQQQ; the proof carries `generatedAt`
  *      so freshness is verifiable.
+ *   7. Surface the forge≫verify tamper-cost (services/tamper-cost),
+ *      amplified by the bundle's OWN invariant count (DeepSeek-Prover
+ *      gates ADD) and the 3FS/CRAQ replica breadth (gates MULTIPLY) —
+ *      the deepseek inhale, made publicly recomputable.
  *
  * The result: anyone — search engines, AI crawlers, federation
  * peers, regulators, customers — can hit `/proof/` and verify, with
@@ -40,6 +44,7 @@ import { registerFace, listFaces, type SeoVortexFace } from '@/services/website/
 import { runAllInvariants, type InvariantContext, type InvariantSuiteResult } from '@/services/architecture-invariants'
 import { selfTestAll, type SelfTestSuite } from '@/services/agents/mcp/self-test'
 import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
+import { crackVerdict } from '@/services/tamper-cost'
 
 export const MAX_PROOF_AGE_HOURS = 24
 const PROOF_TENANT_NS = 'erpax-public-proof'
@@ -63,8 +68,30 @@ export interface DryProofBundle {
   }
   readonly invariants: ReadonlyArray<{ axis: string; check: string; severity: 'pass' | 'warn' | 'fail'; reason?: string }>
   readonly mcpSelfTest: ReadonlyArray<{ tool: string; verdict: 'pass' | 'skip' | 'fail'; reason?: string }>
+  readonly tamperCost: TamperCostProof                    // forge≫verify, deepseek-amplified
   readonly publicUrl: string                              // /proof/ on this origin
   readonly federable: true
+}
+
+/**
+ * Public, recomputable tamper-cost — the forge≫verify asymmetry the bundle faces
+ * at /proof/ so peers verify it WITHOUT trusting us ([[proof]]). Both deepseek
+ * amplifiers are wired from REAL platform state: `invariantsChecked` is the very
+ * count of machine-checked conservation invariants this bundle just ran
+ * (DeepSeek-Prover — gates ADD), and `replicas`/`strongConsistency` is the
+ * 3FS/CRAQ federation breadth (gates MULTIPLY). A peer recomputes the same number
+ * from the same inputs. @see services/tamper-cost.
+ */
+export interface TamperCostProof {
+  readonly crackCostLog2: number
+  readonly binding: 'second-preimage' | 'anchor' | 'free-rewrite'
+  readonly bruteYearsLog2: number
+  readonly tamperEvident: boolean
+  readonly invariantsChecked: number
+  readonly replicas: number
+  readonly strongConsistency: boolean
+  readonly coverage?: number
+  readonly note: string
 }
 
 // ─── Build the proof bundle ────────────────────────────────────────
@@ -73,6 +100,45 @@ export interface BuildProofArgs {
   readonly invariantCtx: InvariantContext
   readonly tools: ReadonlyArray<ErpaxMcpTool>
   readonly origin: string                                  // public origin for the proof URL
+  /** 3FS/CRAQ federation breadth — replicas that independently re-derive the content-uuid (deepseek inhale). */
+  readonly replicas?: number
+  /** CRAQ strong consistency: no stale-read window, so all replicas' checks count. */
+  readonly strongConsistency?: boolean
+  /** measured fraction of nodes wired in structured uuid; omit for the conservative digest-floor report. */
+  readonly coverage?: number
+}
+
+/**
+ * Compute the public tamper-cost claim from the bundle's own invariant count.
+ * Pure — unit-tested without the DB-backed invariant/self-test harness. The
+ * invariant gates are exactly the ones the bundle ran (DRY: the proof
+ * self-describes its tamper-cost), amplified by the CRAQ replica breadth.
+ */
+export function proofTamperCost(args: {
+  invariantsChecked: number
+  replicas?: number
+  strongConsistency?: boolean
+  coverage?: number
+}): TamperCostProof {
+  const replicas = args.replicas ?? 1
+  const strongConsistency = args.strongConsistency ?? false
+  const v = crackVerdict({
+    coverage: args.coverage,
+    invariants: args.invariantsChecked,
+    replicas,
+    strongConsistency,
+  })
+  return {
+    crackCostLog2: v.crackCostLog2,
+    binding: v.binding,
+    bruteYearsLog2: v.bruteYearsLog2,
+    tamperEvident: v.tamperEvident,
+    invariantsChecked: args.invariantsChecked,
+    replicas,
+    strongConsistency,
+    coverage: args.coverage,
+    note: v.note,
+  }
 }
 
 export async function buildDryProofBundle(args: BuildProofArgs): Promise<DryProofBundle> {
@@ -99,6 +165,12 @@ export async function buildDryProofBundle(args: BuildProofArgs): Promise<DryProo
       ...invariantSuite.passes.map((r) => ({ axis: r.axis, check: r.check, severity: 'pass' as const, reason: r.reason })),
     ],
     mcpSelfTest: selfTest.entries.map((e) => ({ tool: e.tool, verdict: e.verdict, reason: e.reason })),
+    tamperCost: proofTamperCost({
+      invariantsChecked: summary.conservationLawsTotal,
+      replicas: args.replicas,
+      strongConsistency: args.strongConsistency,
+      coverage: args.coverage,
+    }),
     publicUrl,
     federable: true as const,
   }
