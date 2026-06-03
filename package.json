@@ -27,6 +27,7 @@
     "harmony": "node scripts/harmony-scan.mjs",
     "atoms:catalogue": "node scripts/gen-atom-catalogue.mjs",
     "matrix:generate": "node scripts/gen-uuid-matrix.mjs --emit",
+    "corpus:generate": "pnpm atoms:catalogue && pnpm matrix:generate",
     "mint:atoms": "node scripts/mint-atoms.mjs",
     "d1:audit": "node scripts/d1-column-audit.mjs",
     "db:regenerate": "bash scripts/db-regenerate.sh",
