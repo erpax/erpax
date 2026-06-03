@@ -10,6 +10,7 @@
  */
 
 import { Bill, Vendor, VendorPerformance } from '@/types/payables'
+import { calculateAverage, calculateAverageRounded } from '@/utilities/average-calculator'
 
 export class APAnalytics {
   /**
@@ -23,18 +24,18 @@ export class APAnalytics {
     const vendorBills = bills.filter((b) => b.vendorId === vendor.id)
 
     const totalBills = vendorBills.length
-    const avgBillAmount = totalBills > 0 ? vendorBills.reduce((sum, b) => sum + b.totalAmount, 0) / totalBills : 0
+    const avgBillAmount = calculateAverage(vendorBills.map((b) => b.totalAmount))
 
     const daysToReceive = vendorBills.map((b) => {
       return Math.ceil((b.billDate.getTime() - b.billDate.getTime()) / (1000 * 60 * 60 * 24))
     })
-    const avgDaysToReceive = daysToReceive.length > 0 ? daysToReceive.reduce((a, b) => a + b, 0) / daysToReceive.length : 0
+    const avgDaysToReceive = calculateAverage(daysToReceive)
 
     const paidBills = vendorBills.filter((b) => b.status === 'paid')
     const daysToPay = paidBills.map((b) => {
       return Math.ceil((asOfDate.getTime() - b.dueDate.getTime()) / (1000 * 60 * 60 * 24))
     })
-    const avgDaysToPay = daysToPay.length > 0 ? daysToPay.reduce((a, b) => a + b, 0) / daysToPay.length : 0
+    const avgDaysToPay = calculateAverage(daysToPay)
 
     const discountsEarned = vendorBills.reduce((sum, b) => sum + (b.discountAvailable || 0), 0)
     const discountRate = vendor.earlyPaymentDiscount || 0
@@ -122,9 +123,7 @@ export class APAnalytics {
     return Object.entries(byTerm).map(([term, data]) => ({
       term,
       count: data.count,
-      avgDaysOutstanding: Math.round(
-        data.daysOutstanding.reduce((a, b) => a + b, 0) / data.daysOutstanding.length
-      ),
+      avgDaysOutstanding: calculateAverageRounded(data.daysOutstanding),
       discountCaptureRate: data.count > 0 ? (data.discountCount / data.count) * 100 : 0,
     }))
   }

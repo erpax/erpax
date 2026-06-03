@@ -29,10 +29,9 @@ import type {
   LineVatInformation,
 } from '@/standards/en-16931'
 import { escapeXml } from '@/utilities/xml-escape'
+import { formatAmount } from '@/utilities/format-amount'
 
 // ─── XML primitives ───────────────────────────────────────────────────
-
-const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
 
 const escapeAttrs = (
   attrs: Record<string, string | number | undefined>,

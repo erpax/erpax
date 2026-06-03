@@ -38,6 +38,7 @@
 
 import type { Payload } from 'payload'
 import { escapeXml } from '@/utilities/xml-escape'
+import { formatAmount } from '@/utilities/format-amount'
 import type {
   SafTAuditFile,
   SafTHeader,
@@ -867,9 +868,7 @@ export const buildAuditFile = async (
 // 1.04 namespace + hash chain) override the namespace + add their own
 // per-section renderers.
 
-// escapeXml: the shared XML escaper — see @/utilities/xml-escape
-
-const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
+// escapeXml + formatAmount: shared atoms — see @/utilities/xml-escape, @/utilities/format-amount
 
 const leaf = (
   tag: string,

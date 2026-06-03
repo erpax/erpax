@@ -12,6 +12,7 @@
  * @see docs/STANDARDS.md §5
  */
 
+import { calculateAverageRounded } from '@/utilities/average-calculator'
 import {
   computeAgingBuckets,
   daysBetween,
@@ -90,9 +91,7 @@ export class ARAgingCalculator {
     const open = invoices.filter((inv) => inv.status !== 'paid')
     const totalAR = open.reduce((s, inv) => s + inv.balance, 0)
     const dsoSamples = open.map((inv) => daysBetween(inv.invoiceDate, asOfDate))
-    const avgDaysOutstanding = dsoSamples.length
-      ? Math.round(dsoSamples.reduce((a, b) => a + b, 0) / dsoSamples.length)
-      : 0
+    const avgDaysOutstanding = calculateAverageRounded(dsoSamples)
     const overdue = open.filter((inv) => daysBetween(inv.dueDate, asOfDate) > 0)
     return {
       totalAR,

@@ -19,6 +19,8 @@
  * @see src/standards/un-edifact/types.ts
  */
 
+import { formatAmount } from '@/utilities/format-amount'
+
 import type {
   EdifactInterchange,
   EdifactInvoic,
@@ -201,8 +203,7 @@ export const serializeTAX = (tax: EdifactTAX): string =>
     tax.categoryCode ?? '',
   )
 
-// EDIFACT renders monetary amounts as decimal with `.` separator, NOT cents.
-const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
+// EDIFACT renders monetary amounts as decimal with `.` separator, NOT cents — via the shared formatAmount atom.
 
 // ─── Message serializers ──────────────────────────────────────────────
 

@@ -21,6 +21,7 @@
  * @see src/config/regional-defaults.ts
  */
 
+import { calculateAverage } from '@/utilities/average-calculator'
 import {
   ExchangeRate,
   CurrencyConfig,
@@ -454,7 +455,7 @@ class MultiCurrencyService {
 
     rates.sort((a, b) => a.date.getTime() - b.date.getTime());
 
-    const avgRate = rates.length > 0 ? rates.reduce((sum, r) => sum + r.rate, 0) / rates.length : 0;
+    const avgRate = calculateAverage(rates.map((r) => r.rate));
     const rateValues = rates.map((r) => r.rate);
     const highRate = rateValues.length > 0 ? Math.max(...rateValues) : 0;
     const lowRate = rateValues.length > 0 ? Math.min(...rateValues) : 0;

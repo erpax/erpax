@@ -35,8 +35,7 @@ import type {
   RemittanceInformation,
 } from '@/standards/iso-20022'
 import { escapeXml } from '@/utilities/xml-escape'
-
-const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
+import { formatAmount } from '@/utilities/format-amount'
 
 const escapeAttrs = (
   attrs: Record<string, string | number | undefined>,

@@ -10,6 +10,7 @@
  */
 
 import { Invoice, Customer } from '@/types/receivables'
+import { calculateAverageRounded } from '@/utilities/average-calculator'
 
 export class ARAnalytics {
   /**
@@ -55,9 +56,7 @@ export class ARAnalytics {
    * Calculate average invoice amount
    */
   static calculateAvgInvoiceAmount(invoices: Invoice[]): number {
-    if (invoices.length === 0) return 0
-    const total = invoices.reduce((sum, inv) => sum + inv.totalAmount, 0)
-    return Math.round(total / invoices.length)
+    return calculateAverageRounded(invoices.map((inv) => inv.totalAmount))
   }
 
   /**
