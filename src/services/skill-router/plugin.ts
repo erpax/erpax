@@ -21,6 +21,7 @@ import type { Config, Endpoint, PayloadRequest } from 'payload'
 import { SKILL_INDEX } from './skills.index'
 import { parseRequest } from './resolve'
 import { resolveHarmonicContext } from './subgraph'
+import { rate } from './rating'
 import { serializeSkill } from './serialize'
 
 const SITE = (process.env.ERPAX_SITE_URL ?? '').replace(/\/$/, '')
@@ -87,6 +88,9 @@ const catchAll: Endpoint = {
         'X-Skill-Related': subgraph.atoms.map((a) => a.name).join(','),
         'X-Skill-Coverage': subgraph.coverage.toFixed(3),
         'X-Skill-Gaps': subgraph.gaps.join(','),
+        // The consensus vote: distinct incoming attestations, normalized — the skill's
+        // rating and (= confirmations) its tamper-cost / leverage for harmonic karma.
+        'X-Skill-Rating': rate(matched.name, SKILL_INDEX).rating.toFixed(3),
       },
     })
   },
