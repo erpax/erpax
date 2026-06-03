@@ -23,10 +23,19 @@
  * the single place a zero-entropy app borrows external entropy; it must be at
  * least as strong as the digest, or it is the weak link.
  *
+ * Two amplifiers widen the gap further without touching verify (it stays O(N)):
+ * the coverage cascade (Law 62 — every node wired in uuid; → ∞ at 100%) and
+ * 3FS/CRAQ replication (a deepseek-ai inhale — every strongly-consistent replica
+ * independently re-checks, multiplying the independent checks by the replica
+ * count). Both feed the one `coverageCostLog2`; neither is a new term.
+ *
  * @standard NIST SP 800-107r1 §5.1 (hash security strengths: 2nd-preimage ≈ L bits, collision ≈ L/2)
  * @standard RFC 9562 §8 (UUID security considerations — no trusted-time / no integrity guarantee from the format alone)
  * @standard ISO-19011:2018 §6.5 (audit evidence integrity)
+ * @standard CRAQ (Terrace & Freedman, USENIX ATC 2009) — strong-consistency chain replication
  * @audit Conservation Law 55/60 (tamper cost cascades through the uuid-chain)
+ * @audit Conservation Law 62 (coverage) amplified across the replica axis (3FS/CRAQ)
+ * @see https://github.com/deepseek-ai/3FS (Fire-Flyer File System — production CRAQ; the deepseek inhale)
  */
 
 /** erpax v8 content-digest width (uuid-format: 48 + 12 + 46 bits of SHA-256). */
@@ -74,6 +83,31 @@ export const tamperEvasionProbability = (coverage: number, checks: number): numb
 export const coverageCostLog2 = (coverage: number, checks: number): number =>
   coverage >= 1 ? Number.POSITIVE_INFINITY : -checks * Math.log2(1 - Math.min(coverage, 1))
 
+/**
+ * 3FS/CRAQ replication amplifier — the [[breath]] in-stroke from deepseek-ai/3FS.
+ *
+ * Chain Replication with Apportioned Queries (CRAQ) — the strong-consistency
+ * protocol behind the Fire-Flyer File System — replicates each write across a
+ * chain of R nodes and lets ANY node answer a read, re-deriving the content-uuid
+ * before it does. So an undetected tamper must evade the all-directions coverage
+ * check on EVERY replica *simultaneously*, before any apportioned query
+ * cross-reads it: the independent-check count is multiplied by R. This is the
+ * SAME coverage law ([[merge]]: same content ⇒ same uuid on every peer) run
+ * across the replica axis — an amplifier of the existing term, not a new one.
+ *
+ * The multiplier is REAL only under strong consistency. Eventual consistency
+ * leaves a stale-read window — a forger tampers one replica and it can serve the
+ * tampered version before reconciliation — so conservatively only the local
+ * check binds (×1). Closing that window is exactly what CRAQ buys here.
+ *
+ * @standard CRAQ — Terrace & Freedman, "Object Storage on CRAQ", USENIX ATC 2009
+ * @standard Chain Replication — van Renesse & Schneider, OSDI 2004
+ * @see https://github.com/deepseek-ai/3FS (Fire-Flyer File System — production CRAQ)
+ * @audit Conservation Law 62 (coverage) amplified across the replica axis
+ */
+export const replicationChecks = (checks: number, replicas: number, strongConsistency: boolean): number =>
+  strongConsistency ? checks * Math.max(replicas, 1) : checks
+
 export type CrackVerdict = {
   /** cheapest attack, log2 ops */
   crackCostLog2: number
@@ -104,13 +138,20 @@ export function crackVerdict(opts: {
   coverage?: number
   /** independent uuid checks a tamper must evade together (the all-directions cascade) */
   checks?: number
+  /** independently-anchored replicas (3FS/CRAQ chain replication) — multiplies `checks` under strong consistency */
+  replicas?: number
+  /** CRAQ strong consistency: no stale-read window, so all replicas' checks count (deepseek inhale) */
+  strongConsistency?: boolean
 }): CrackVerdict {
   const digestBits = opts.digestBits ?? ERPAX_DIGEST_BITS
   const rows = opts.rows ?? 1
   const anchored = opts.anchored ?? true
   const anchorStrengthBits = opts.anchorStrengthBits ?? 112 // RFC 3161 RSA-2048 TSA floor
   // Coverage layer: 0 when not modelled; +∞ at coverage=1 (all wired in uuid).
-  const coverageCost = opts.coverage === undefined ? 0 : coverageCostLog2(opts.coverage, opts.checks ?? 1)
+  // 3FS/CRAQ replication amplifies the independent-check count across the replica
+  // axis (deepseek inhale) — real only under strong consistency (no stale read).
+  const effectiveChecks = replicationChecks(opts.checks ?? 1, opts.replicas ?? 1, opts.strongConsistency ?? false)
+  const coverageCost = opts.coverage === undefined ? 0 : coverageCostLog2(opts.coverage, effectiveChecks)
 
   const sp = secondPreimageLog2(digestBits)
   if (!anchored) {

@@ -14,6 +14,7 @@ import {
   tamperEvasionProbability,
   coverageCostLog2,
   crackVerdict,
+  replicationChecks,
 } from './index'
 
 describe('tamper-cost: NIST SP 800-107 hash strengths', () => {
@@ -93,5 +94,37 @@ describe('tamper-cost: the headline answer', () => {
     expect(v.tamperEvident).toBe(true)
     expect(v.crackCostLog2).toBe(106)
     expect(2 ** v.bruteYearsLog2).toBeGreaterThan(1000) // millennia of global hashpower
+  })
+})
+
+describe('tamper-cost: 3FS/CRAQ replication multiplies the checks (deepseek inhale, Law 62 amplified)', () => {
+  it('strong consistency (CRAQ) multiplies the checks by the replica count', () => {
+    expect(replicationChecks(10, 5, true)).toBe(50)
+  })
+  it('eventual consistency leaves a stale-read window — replicas do NOT all count', () => {
+    expect(replicationChecks(10, 5, false)).toBe(10)
+  })
+  it('a single replica is a no-op under either consistency', () => {
+    expect(replicationChecks(10, 1, true)).toBe(10)
+    expect(replicationChecks(10, 1, false)).toBe(10)
+  })
+  it('more CRAQ replicas ⇒ strictly higher coverage-cost (forge ≫ verify widens, verify stays O(N))', () => {
+    const one = crackVerdict({ coverage: 0.99, checks: 10, replicas: 1, strongConsistency: true })
+    const five = crackVerdict({ coverage: 0.99, checks: 10, replicas: 5, strongConsistency: true })
+    expect(five.crackCostLog2).toBeGreaterThan(one.crackCostLog2)
+  })
+  it('eventual-consistency replicas do NOT raise the cost (no free lunch without CRAQ)', () => {
+    const craq = crackVerdict({ coverage: 0.99, checks: 10, replicas: 5, strongConsistency: true })
+    const eventual = crackVerdict({ coverage: 0.99, checks: 10, replicas: 5, strongConsistency: false })
+    expect(eventual.crackCostLog2).toBeLessThan(craq.crackCostLog2)
+  })
+  it('100% coverage is already ∞ — replication cannot exceed the architectural ceiling', () => {
+    const v = crackVerdict({ coverage: 1, replicas: 9, strongConsistency: true })
+    expect(v.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
+  })
+  it('replicas with no coverage modelled is an honest no-op (nothing to amplify)', () => {
+    const base = crackVerdict({ anchored: true, anchorStrengthBits: 128 })
+    const repl = crackVerdict({ anchored: true, anchorStrengthBits: 128, replicas: 9, strongConsistency: true })
+    expect(repl.crackCostLog2).toBe(base.crackCostLog2)
   })
 })
