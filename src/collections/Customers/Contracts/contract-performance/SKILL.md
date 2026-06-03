@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-4217:2015 currency-codes
 - SOX §404 internal-controls revenue-completeness TOM-AR-04
 - ISO-19011:2018 audit-trail performance-evidence
+
+Composes: [[PerformanceObligations]] · [[transaction]] · [[standard]] · [[accounting]] · [[Invoices]] · [[proof]].

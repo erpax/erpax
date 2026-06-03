@@ -26,3 +26,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27002 §5.4 segregation-of-duties certifier-vs-preparer
 - ISO-19011:2018 audit-trail
+
+Composes: [[accounting]] · [[transaction]] · [[proof]] · [[identity]] · [[standard]] · [[horo]].

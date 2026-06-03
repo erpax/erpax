@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Conservation Law 28 standards-supersession-tracking
 - Conservation Law 38 mcp-tool-standardization
 - tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).' },
+
+Composes: [[accounting]] · [[standard]] · [[identity]] · [[proof]].

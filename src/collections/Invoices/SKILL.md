@@ -30,4 +30,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail
 - ISO-19011:2018 audit-trail`.
 
-Composes: [[DunningCycles]] · [[Subscriptions]].
+Composes: [[DunningCycles]] · [[Subscriptions]] · [[accounting]] · [[transaction]] · [[party]] · [[identity]].

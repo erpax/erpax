@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls payroll-evidence
 - GDPR Art.6(1)(b) lawful-basis-contract
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[accounting]] · [[transaction]] · [[identity]] · [[standard]] · [[proof]] · [[horo]].

@@ -5,13 +5,13 @@ description: The operation-runs collection — Operation Runs — execution of o
 
 # operation-runs
 
-Operation Runs — execution of one routing step on a work-order.
+[[manufacturing]] execution of one routing step on a work-order. The per-operation production record tracked by [[WorkOrders]].
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
-## Standards
+Governed by:
 - ISA-95:2013 / IEC-62264-1 §B.5 production-performance work-response
 - ISO-22400-2:2014 manufacturing-operations KPIs (yield, scrap)
 - ISO-8601-1:2019 date-time start-completion

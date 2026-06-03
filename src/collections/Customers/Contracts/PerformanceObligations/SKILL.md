@@ -24,4 +24,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail po-satisfaction
 - SOX §404 internal-controls revenue-recognition
 
-Composes: [[Contracts]].
+Composes: [[Contracts]] · [[hooks]].

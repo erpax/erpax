@@ -5,13 +5,14 @@ description: The share-based-payments collection — Share-Based Payments — IF
 
 # share-based-payments
 
-Share-Based Payments — IFRS 2 equity-settled & cash-settled employee.
+Share-Based Payments — IFRS 2 equity-settled & cash-settled employee compensation register.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+One row per grant (stock options, RSUs, RSAs, PSUs, ESPPs, SARs). The `settlementType` discriminator drives whether the grant credits equity (IFRS 2 §10) or builds a liability (IFRS 2 §30). Vesting schedule captured as tranche array; expense recognised straight-line over each tranche per IFRS 2 §15.
+
+The schema lives in `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) in the same folder.
 
 ## Standards
+
 - IFRS IFRS-2 §10-§13 equity-settled-share-based-payment
 - IFRS IFRS-2 §15-§19 vesting-conditions
 - IFRS IFRS-2 §30-§33 cash-settled-share-based-payment
@@ -23,4 +24,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls TOM-EQU-01
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[Employees]] · [[accounting]].
+## Composition
+
+Composes: [[Employees]] · [[accounting]] · [[transaction]] · [[identity]] · [[proof]] · [[standard]].

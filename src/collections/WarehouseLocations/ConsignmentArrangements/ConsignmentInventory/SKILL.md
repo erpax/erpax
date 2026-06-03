@@ -5,13 +5,25 @@ description: The consignment-inventory collection — Consignment Inventory — 
 
 # consignment-inventory
 
-Consignment Inventory — per-SKU on-hand running balance at consignee.
+Per-SKU on-hand running balance at consignee location per [[ConsignmentArrangements|arrangement]]. The asset side of the IFRS-15 §B77-B78 ledger, paired with [[ConsignmentSales|sale-by-consignee events]] and [[InventoryMovements|underlying movements]].
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+This is the single-folder collection node: `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here. One folder per collection ⇒ no scatter ⇒ no drift.
+
+The consignor (tenant) keeps the rows on its **own** balance sheet under IAS-2 §6 (inventory held at another location); the consignee never recognises them. Slice ZZZZ (2026-05-10): every shipment to / sale from / return from a consignee mutates this row's `quantityOnHand` + `valueOnHand`.
+
+## Composition
+
+- [[ConsignmentArrangements]] — master agreement per arrangement
+- [[ConsignmentSales]] — sale events that decrement on-hand
+- [[InventoryMovements]] — underlying double-entry stock movements
+- [[accounting]] — GL posting and entry generation
+- [[transaction]] — transactional semantics
+- [[identity]] — consignee party identification
+- [[proof]] — audit trail evidence
+- [[standard]] — regulatory compliance framework
 
 ## Standards
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time as-of-date
 - IFRS IAS-2 §6 inventories-held-at-other-location

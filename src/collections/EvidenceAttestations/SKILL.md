@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - rfc-5652 cms-detached-signature
 - NIST FIPS-180-4 sha-256 message-digest
 - EU 910/2014 eidas Art.28 qualified-electronic-signature
+
+Composes: [[proof]] · [[identity]] · [[party]] · [[horo]] · [[standard]].

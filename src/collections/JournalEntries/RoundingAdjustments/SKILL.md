@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls rounding-control TOM-RND-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[JournalEntries]].
+Composes: [[JournalEntries]] · [[accounting]] · [[standard]] · [[proof]] · [[horo]].

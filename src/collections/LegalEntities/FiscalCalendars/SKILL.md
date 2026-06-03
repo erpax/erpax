@@ -20,4 +20,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)
 - SOX:2402 (audit-trail via chainLeafUuid)
 
-Composes: [[accounting]].
+Composes: [[accounting]] · [[standard]] · [[proof]] · [[identity]].

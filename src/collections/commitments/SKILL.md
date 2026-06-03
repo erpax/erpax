@@ -22,4 +22,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract-processing
 - ISO-19011:2018 audit-trail authorization-evidence
 
-Composes: [[PurchaseOrders]].
+Composes: [[PurchaseOrders]] · [[collections]] · [[accounting]] · [[transaction]] · [[standard]] · [[proof]] · [[identity]].

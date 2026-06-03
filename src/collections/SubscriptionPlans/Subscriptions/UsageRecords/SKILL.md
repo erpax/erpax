@@ -22,4 +22,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOC-2 CC7.4 system-monitoring-and-detection
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[commerce]].
+Composes: [[commerce]] · [[transaction]] · [[accounting]] · [[identity]] · [[standard]].

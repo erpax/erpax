@@ -23,4 +23,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract-modification
 - ISO-19011:2018 audit-trail amendment-lifecycle
 
-Composes: [[Contracts]].
+Composes: [[Contracts]] · [[accounting]] · [[transaction]] · [[proof]] · [[standard]] · [[access]] · [[identity]].
