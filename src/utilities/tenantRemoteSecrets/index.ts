@@ -33,7 +33,7 @@ export function globalResendApiKeyFallback(): string {
 export function devStripeWebhookFallback(): string {
   if (process.env.NODE_ENV === 'production') return ''
   return (
-    process.env.STRIPE_WEBHOOK_SECRET?.trim() || process.env.STRIPE_WEBHOOKS_SIGNING_SECRET?.trim() || ''
+    process.env.STRIPE_WEBHOOK_SECRET?.trim() || ''
   )
 }
 

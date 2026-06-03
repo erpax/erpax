@@ -27,7 +27,9 @@ export interface DomainEvent {
     | 'bank_statement'
     | 'subscription'
     | 'order'
-    | 'fixed_asset';
+    | 'fixed_asset'
+    | 'sale'
+    | 'receipt';
   timestamp: Date;
   userId: string;
   payload: Record<string, unknown>;

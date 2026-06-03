@@ -13,10 +13,8 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import {
-  renderPeppolInvoice,
-  escapeXml,
-} from '@/services/peppol-export.service'
+import { renderPeppolInvoice } from '@/services/peppol-export.service'
+import { escapeXml } from '@/utilities/xml-escape'
 import {
   PEPPOL_BIS_3_CUSTOMIZATION_ID,
   type PeppolBillingMessage,

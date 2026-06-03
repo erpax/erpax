@@ -48,7 +48,7 @@ export const emitSaleClosedHook: CollectionAfterChangeHook = async ({ doc, previ
     tenantId: tenantOf(d),
     // `event` skill: the aggregate identity is the content-uuid, not the row id.
     aggregateId: String(d.uuid ?? d.id),
-    aggregateType: 'supto-sale',
+    aggregateType: 'sale',
     timestamp: new Date(),
     payload: {
       unp: d.unp,

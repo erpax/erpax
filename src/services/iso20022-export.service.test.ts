@@ -11,8 +11,8 @@ import { describe, it, expect } from 'vitest'
 import {
   renderPain001,
   renderPain008,
-  escapeXml,
 } from '@/services/iso20022-export.service'
+import { escapeXml } from '@/utilities/xml-escape'
 import type {
   Pain001Initiation,
   Pain008Initiation,

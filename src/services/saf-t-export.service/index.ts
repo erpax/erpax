@@ -37,6 +37,7 @@
  */
 
 import type { Payload } from 'payload'
+import { escapeXml } from '@/utilities/xml-escape'
 import type {
   SafTAuditFile,
   SafTHeader,
@@ -866,16 +867,7 @@ export const buildAuditFile = async (
 // 1.04 namespace + hash chain) override the namespace + add their own
 // per-section renderers.
 
-/** Escape the five XML predefined entities. */
-export const escapeXml = (value: string | number | undefined | null): string => {
-  if (value === undefined || value === null) return ''
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;')
-}
+// escapeXml: the shared XML escaper — see @/utilities/xml-escape
 
 const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
 

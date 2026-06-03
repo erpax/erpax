@@ -34,20 +34,7 @@ import type {
   AccountIdentification,
   RemittanceInformation,
 } from '@/standards/iso-20022'
-
-// ─── XML primitives (mirrors peppol-export / saf-t-export) ────────────
-
-export const escapeXml = (
-  value: string | number | undefined | null,
-): string => {
-  if (value === undefined || value === null) return ''
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;')
-}
+import { escapeXml } from '@/utilities/xml-escape'
 
 const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
 

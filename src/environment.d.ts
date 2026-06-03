@@ -20,8 +20,6 @@ declare global {
       STRIPE_SECRET_KEY?: string
       /** Dev fallback — production uses Tenant `stripeWebhookSecret` */
       STRIPE_WEBHOOK_SECRET?: string
-      /** Legacy alias — prefer STRIPE_WEBHOOK_SECRET */
-      STRIPE_WEBHOOKS_SIGNING_SECRET?: string
       /** Dev fallback — production uses Tenant `stripePublishableKey` */
       NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY?: string
       /** When `false`, disables remote-URL → `media` import hooks (posts, pages, products, etc.). */

@@ -28,22 +28,9 @@ import type {
   DocumentTotals,
   LineVatInformation,
 } from '@/standards/en-16931'
+import { escapeXml } from '@/utilities/xml-escape'
 
 // ─── XML primitives ───────────────────────────────────────────────────
-
-/**
- * Escape the five XML predefined entities. Required on any text node
- * value or attribute value.
- */
-export const escapeXml = (value: string | number | undefined): string => {
-  if (value === undefined || value === null) return ''
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;')
-}
 
 const formatAmount = (cents: number): string => (cents / 100).toFixed(2)
 

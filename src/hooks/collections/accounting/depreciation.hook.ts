@@ -135,11 +135,3 @@ export const depreciationSchedulePostingHook: CollectionAfterChangeHook = async 
 
   return doc;
 };
-
-/**
- * Back-compat alias so callers wired against the previous `depreciationHook`
- * symbol keep working. New code should import `depreciationSchedulePostingHook`.
- *
- * @deprecated Use `depreciationSchedulePostingHook` directly.
- */
-export const depreciationHook = depreciationSchedulePostingHook;

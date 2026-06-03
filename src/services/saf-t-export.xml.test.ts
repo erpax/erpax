@@ -11,7 +11,8 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { renderSafTXml, escapeXml } from '@/services/saf-t-export.service'
+import { renderSafTXml } from '@/services/saf-t-export.service'
+import { escapeXml } from '@/utilities/xml-escape'
 import type { SafTAuditFile } from '@/standards/saf-t'
 
 describe('SAF-T XML — escapeXml', () => {
