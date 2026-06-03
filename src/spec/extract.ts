@@ -9,17 +9,19 @@
  * collection.
  *
  * Usage:
- *   pnpm exec tsx scripts/spec-extract.ts                # full corpus
- *   pnpm exec tsx scripts/spec-extract.ts --slug=consignment-arrangements
- *   pnpm exec tsx scripts/spec-extract.ts --json         # JSON dump
+ *   pnpm exec tsx src/spec/extract.ts                # full corpus
+ *   pnpm exec tsx src/spec/extract.ts --slug=consignment-arrangements
+ *   pnpm exec tsx src/spec/extract.ts --json         # JSON dump
  *
  * @audit ISO-19011:2018 §6.4.6 audit-evidence-spec-traceability
  */
 
-import { resolve } from 'node:path'
-import { extractCorpus } from '../src/services/spec-generator'
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { extractCorpus } from '@/services/spec-generator'
 
-const repoRoot = resolve(__dirname, '..')
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const repoRoot = resolve(__dirname, '..', '..')
 const args = new Set(process.argv.slice(2))
 const slugFilter = process.argv.slice(2).find((a) => a.startsWith('--slug='))?.slice(7)
 const wantJson = args.has('--json')

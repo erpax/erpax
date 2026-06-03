@@ -8,9 +8,9 @@
  * ad-hoc one-off scans.
  *
  * Usage (from repo root):
- *   pnpm exec tsx scripts/find-implementation-gaps.ts
- *   pnpm exec tsx scripts/find-implementation-gaps.ts --class I
- *   pnpm exec tsx scripts/find-implementation-gaps.ts --json
+ *   pnpm exec tsx src/aura/find-gaps.ts
+ *   pnpm exec tsx src/aura/find-gaps.ts --class I
+ *   pnpm exec tsx src/aura/find-gaps.ts --json
  *
  * Categories scanned:
  *   A. DUPLICATE_FIELD_TOP_LEVEL — collection top-level field collides
@@ -27,12 +27,12 @@
  */
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs'
-import { join, basename, relative, resolve, dirname } from 'node:path'
+import { join, relative, resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
-const ROOT = resolve(__dirname, '..')
+const ROOT = resolve(__dirname, '..', '..')
 const SRC = join(ROOT, 'src')
 const TESTS = join(ROOT, 'tests')
 

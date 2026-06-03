@@ -1,6 +1,6 @@
 # Business Chains — auto-generated from `src/services/business-chains/registry.ts`
 
-> Single source of truth for ERPax's end-to-end workflows. Each chain maps a sequence of (collection, action, emitted-event) tuples to a published process standard. Re-run `pnpm exec tsx scripts/generate-business-chains-doc.ts` after editing the registry.
+> Single source of truth for ERPax's end-to-end workflows. Each chain maps a sequence of (collection, action, emitted-event) tuples to a published process standard. Re-run `pnpm exec tsx src/services/business-chains/gen-doc.ts` after editing the registry.
 
 ## Summary table
 

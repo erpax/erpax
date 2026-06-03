@@ -33,7 +33,7 @@ const json = (v: unknown) => text(JSON.stringify(v, null, 2))
  *  the rest of the 31 supported locales asynchronously. */
 const I18N: Record<string, LocalizedString> = {
   scan: {
-    en: 'Run the architecture-invariant suite focused on code-consistency drift (Class F/I/J/M from scripts/find-implementation-gaps.ts). Returns the offender list keyed by check id. Audit-trailed per ISO 19011 §6.4.6.',
+    en: 'Run the architecture-invariant suite focused on code-consistency drift (Class F/I/J/M from src/aura/find-gaps.ts). Returns the offender list keyed by check id. Audit-trailed per ISO 19011 §6.4.6.',
     bg: 'Изпълнява набора от архитектурни инварианти, фокусиран върху отклонения в консистентността на кода. Връща списък с нарушители по идентификатор на проверка. С audit-trail по ISO 19011 §6.4.6.',
     de: 'Führt die Architektur-Invariantenprüfung für Codekonsistenzabweichungen aus. Gibt die nach Prüf-ID gruppierte Verletzerliste zurück. Audit-trail nach ISO 19011 §6.4.6.',
     fr: 'Exécute la suite d\'invariants d\'architecture ciblant la dérive de cohérence du code. Retourne la liste des contrevenants par identifiant de vérification. Audit-trail selon ISO 19011 §6.4.6.',

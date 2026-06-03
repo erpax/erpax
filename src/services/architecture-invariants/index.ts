@@ -107,7 +107,7 @@ export async function runAllInvariants(
     results.push(C.checkNoInlineTaxonomyArrays(ctx))
     results.push(C.checkChainEmitsHaveProducer(ctx))
     // Slice ZZZZZZZZ (2026-05-11) — code-consistency invariants ported
-    // from `scripts/find-implementation-gaps.py` so MetaSkillAgent's
+    // from `src/aura/find-gaps.ts` so MetaSkillAgent's
     // hourly cron sees them as `invariant:warned` events and the
     // meta-automation proposer attaches fix proposals.
     results.push(C.checkFactoryEmitsAreHooked(ctx))             // Class F

@@ -3,7 +3,7 @@
  * Payload Admin → Imports → posts (JSON), using `@payloadcms/plugin-import-export`.
  *
  * Usage:
- *   pnpm exec tsx scripts/blogger-atom-to-posts-json.ts ./feed.atom --out ./posts-import.json
+ *   pnpm exec tsx src/services/ingest/blogger-to-json.ts ./feed.atom --out ./posts-import.json
  *
  * Options:
  *   --out <path>              Output file (default: ./posts-import.json)
@@ -827,7 +827,7 @@ function main() {
   } = opts
 
   if (!input) {
-    console.error(`Usage: pnpm exec tsx scripts/blogger-atom-to-posts-json.ts <feed.atom> [options]
+    console.error(`Usage: pnpm exec tsx src/services/ingest/blogger-to-json.ts <feed.atom> [options]
 
 Options:
   --out <path>              Output JSON (default: ./posts-import.json)

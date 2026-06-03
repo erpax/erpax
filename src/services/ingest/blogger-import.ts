@@ -5,7 +5,7 @@
  * Requires local DB (Wrangler / `.wrangler` D1) and env from `.env` / `.env.local`.
  *
  * Usage:
- *   pnpm exec tsx scripts/import-blogger-to-payload.ts ./feed.atom --tenant 1 --author-id 2
+ *   pnpm exec tsx src/services/ingest/blogger-import.ts ./feed.atom --tenant 1 --author-id 2
  *
  * Options:
  *   --tenant <id>          Required. Multi-tenant id on posts/categories/media.
@@ -28,7 +28,7 @@ import {
   convertBloggerAtomXml,
   slugifyUnicode,
   type ConvertBloggerAtomOptions,
-} from './blogger-atom-to-posts-json'
+} from './blogger-to-json'
 
 type CliOpts = ConvertBloggerAtomOptions & {
   feed?: string
@@ -159,7 +159,7 @@ async function main() {
   const { feed, tenant, authorId, dryRun, skipExisting } = opts
 
   if (!feed) {
-    console.error(`Usage: pnpm exec tsx scripts/import-blogger-to-payload.ts <feed.atom> --tenant <id> --author-id <id>
+    console.error(`Usage: pnpm exec tsx src/services/ingest/blogger-import.ts <feed.atom> --tenant <id> --author-id <id>
 
 Creates categories from Blogger labels and posts with localized bg/en content (unless --flat).
 

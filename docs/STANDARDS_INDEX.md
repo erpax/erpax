@@ -134,6 +134,7 @@ src/app/(frontend)/tenant-domains/layout.tsx:6: * @standard BCP-47 language-tag
 src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx:4: * @standard schema.org WebPage
 src/app/(frontend)/tenant-slugs/layout.tsx:6: * @standard BCP-47 language-tag
 src/app/my-route/route.ts:6: * @standard OpenAPI 3.1 api-description
+src/aura/find-gaps.ts:25: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/collections/Activities/index.ts:8: * @standard ISO-8601-1:2019 date-time
 src/collections/Activities/index.ts:9: * @standard rfc-5545 icalendar
 src/collections/AiModels/index.ts:17: * @standard EU AI Act 2024 risk-classification + transparency
@@ -1562,6 +1563,7 @@ src/services/bulk-ops/index.ts:12: * @standard ISO 20022 camt.053 pain.001 pain.
 src/services/bulk-ops/index.ts:13: * @standard EN-16931:2017 (UBL / CII import)
 src/services/bulk-ops/index.ts:14: * @standard rfc-4180 csv-format
 src/services/bulk-ops/index.ts:15: * @standard ISO/IEC 19503:2005 XMI
+src/services/business-chains/backfill-producers.ts:17: * @standard ISO/IEC 25010:2023 §5.4 reusability — single-source-of-truth wiring
 src/services/business-chains/chain-context.ts:18: * @standard ISO-3166-1:2020 country-codes
 src/services/business-chains/chain-context.ts:19: * @standard ISO-4217:2015 currency-codes
 src/services/business-chains/types.ts:19: * @standard ISO/IEC 19510:2013 BPMN-2.0 (process notation, companion)
@@ -5101,6 +5103,7 @@ src/agents/accounting/finance.agent.ts:20: * @audit ISO-19011:2018 §6.4.6 audit
 src/app/(api)/api/subscriptions/create/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/webhooks/stripe/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(frontend)/next/seed/route.ts:8: * @audit ISO-19011:2018 audit-trail seed-runs
+src/aura/find-gaps.ts:26: * @audit ISO 19011:2018 §6.4.6 audit-evidence
 src/collections/Activities/index.ts:12: * @audit ISO-19011:2018 audit-trail crm-activity
 src/collections/AiModels/index.ts:20: * @audit ISO-19011:2018 audit-trail model-catalogue-changes
 src/collections/AiSuggestions/index.ts:26: * @audit ISO-19011:2018 §6.4.6 audit-evidence ai-inference-trail
@@ -5500,7 +5503,9 @@ src/services/bank-reconciliation.service/index.ts:592:   * @audit ISO-19011:2018
 src/services/bank-reconciliation.service/index.ts:650:   * @audit ISO-19011:2018 audit-trail adjusting-entry
 src/services/bank-statement-import.service/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/services/bulk-ops/index.ts:16: * @audit ISO-19011:2018 audit-trail bulk-ops-evidence
+src/services/business-chains/backfill-producers.ts:18: * @audit ISO 19011:2018 §6.4.6 producer→event traceability
 src/services/business-chains/chain-context.ts:17: * @audit ISO-19011:2018 audit-trail seed-evidence
+src/services/business-chains/gen-doc.ts:9: * @audit ISO-19011:2018 audit-trail registry-traceability
 src/services/business-chains/run-chain.ts:11: * @audit ISO-19011:2018 §6.4.6 audit-evidence
 src/services/business-chains/types.ts:21: * @audit ISO-19011:2018 §6.4.6 audit-evidence-process
 src/services/business-chains/wire-producers.ts:20: * @audit ISO 19011:2018 §6.4.6 producer→event traceability via BUSINESS_CHAINS
@@ -5704,6 +5709,7 @@ src/services/uuid-share/index.ts:51: * @audit Conservation Law 59 uuid-based-sha
 src/services/version/index.ts:17: * @audit the version is derived, not declared — re-derivable from SKILL_INDEX on any clone
 src/services/website/seo-vortex.ts:34: * @audit ISO 19011:2018 §6.4.6 (every published SEO artefact audit-trailed)
 src/services/workflow/index.ts:23: * @audit ISO-19011:2018 §6.4.6 audit-evidence-workflow
+src/spec/extract.ts:16: * @audit ISO-19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/standards/en-16931/collection-alignment.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/standards/en-16931/types.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/standards/etsi-en-319-142/evidence-attestation.test.ts:9: * @audit ISO-19011:2018 audit-trail visual-evidence sox-evidence-pack

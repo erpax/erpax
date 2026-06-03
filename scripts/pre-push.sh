@@ -53,7 +53,7 @@ fi
 
 # ── 4. Generated docs are in sync with the registry ───────────────────
 bold "[4/5] docs/BUSINESS_CHAINS.md in sync"
-if pnpm exec tsx scripts/generate-business-chains-doc.ts; then
+if pnpm exec tsx src/services/business-chains/gen-doc.ts; then
   if git diff --quiet docs/BUSINESS_CHAINS.md; then
     ok "doc matches registry — no diff"
   else

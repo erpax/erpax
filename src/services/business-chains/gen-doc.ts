@@ -4,19 +4,19 @@
  *
  * Slice KKKK (2026-05-10): the registry is the source of truth; this
  * script is the deterministic projection. Re-run via `pnpm exec tsx
- * scripts/generate-business-chains-doc.ts` after registry changes.
+ * src/services/business-chains/gen-doc.ts` after registry changes.
  *
  * @audit ISO-19011:2018 audit-trail registry-traceability
  */
 
 import { writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
-import { BUSINESS_CHAINS } from '../src/services/business-chains/registry'
+import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
 
 const out: string[] = []
 out.push('# Business Chains — auto-generated from `src/services/business-chains/registry.ts`')
 out.push('')
-out.push('> Single source of truth for ERPax\'s end-to-end workflows. Each chain maps a sequence of (collection, action, emitted-event) tuples to a published process standard. Re-run `pnpm exec tsx scripts/generate-business-chains-doc.ts` after editing the registry.')
+out.push('> Single source of truth for ERPax\'s end-to-end workflows. Each chain maps a sequence of (collection, action, emitted-event) tuples to a published process standard. Re-run `pnpm exec tsx src/services/business-chains/gen-doc.ts` after editing the registry.')
 out.push('')
 out.push('## Summary table')
 out.push('')

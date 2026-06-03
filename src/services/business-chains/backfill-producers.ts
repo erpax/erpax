@@ -9,8 +9,8 @@
  * slug, then rewrite the step inline.
  *
  * Usage (from repo root):
- *   pnpm exec tsx scripts/backfill-chain-producers.ts
- *   pnpm exec tsx scripts/backfill-chain-producers.ts --dry-run
+ *   pnpm exec tsx src/services/business-chains/backfill-producers.ts
+ *   pnpm exec tsx src/services/business-chains/backfill-producers.ts --dry-run
  *
  * Idempotent: a step that already has `producer:` is skipped.
  *
@@ -23,7 +23,7 @@ import { fileURLToPath } from 'node:url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
-const REG = resolve(__dirname, '..', 'src/services/business-chains/registry.ts')
+const REG = resolve(__dirname, 'registry.ts')
 
 const ACTION_TO_STATUS: Record<string, string | null> = {
   submit: 'submitted', approve: 'approved', reject: 'rejected',
@@ -149,7 +149,7 @@ function main(): void {
   let patched = 0
   const skippedAction: string[] = []
   const skippedAgg = new Set<string>()
-  text = text.replace(STEP_RE, (match, collection: string, action: string, emits: string, _requires: string) => {
+  text = text.replace(STEP_RE, (match, collection: string, action: string, _emits: string, _requires: string) => {
     if (match.includes('producer:')) return match
     if (!(action in ACTION_TO_STATUS)) {
       skippedAction.push(`${collection}.${action}`)

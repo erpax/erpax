@@ -3,7 +3,7 @@
  * which is the vendor-side counterpart).
  *
  * Slice XXXXXXXX-c (2026-05-11) — closes the second-highest orphan-
- * reference gap surfaced by `scripts/find-implementation-gaps.py`:
+ * reference gap surfaced by `src/aura/find-gaps.ts`:
  * Quotes.convertedToOrder, Returns.order, Shipments.order, Refunds.order
  * all declared `relationTo: 'orders'` but no collection ever owned that
  * slug. Without this row, the Quote → Order → Shipment → Invoice

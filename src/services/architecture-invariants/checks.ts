@@ -2332,7 +2332,7 @@ export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult
  * Per user 'use the mcp agents. create new if necessary. one
  * inconsistency leads to another. address all. full scan.'
  *
- * Ported from `scripts/find-implementation-gaps.py` so the gap-class
+ * Ported from `src/aura/find-gaps.ts` so the gap-class
  * detection runs inside the agent runtime (not just as a one-shot
  * Python script). MetaSkillAgent's hourly cron now sees these gaps
  * as `invariant:warned` events and the meta-automation pipeline
@@ -2344,7 +2344,7 @@ export function checkAgentOwnsEveryStep(_ctx: InvariantContext): InvariantResult
 
 /** Strip JSDoc/line comments preserving line numbers — used so
  *  false-positive matches inside docstring backticks are skipped.
- *  Mirrors `_strip_jsdoc()` in `scripts/find-implementation-gaps.py`. */
+ *  Mirrors `_strip_jsdoc()` in `src/aura/find-gaps.ts`. */
 function stripCommentsKeepLines(src: string): string {
   let out = src.replace(/\/\*[\s\S]*?\*\//g, (m) =>
     m.replace(/[^\n]/g, ' '),

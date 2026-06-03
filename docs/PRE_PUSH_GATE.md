@@ -36,7 +36,7 @@ When `bash scripts/auto-heal-generated-artefacts.sh` (called as the first step o
 | 1 | `tsc --noEmit` | TypeScript compiler | Type errors anywhere in the project |
 | 2 | Architecture invariants (STRICT) | Slice LLLL — `tests/architecture/invariants.spec.ts` | Any failure in 5 axes (standards / expansion / compression / fallback / entropy) — `STRICT_INVARIANTS=1` is forced so warnings stay warnings but failures abort |
 | 3 | Business-chain integration tests | Slices KKKK + MMMM + NNNN — `tests/int/chains/*.int.spec.ts` | A chain's seed walks end-to-end; every emit fires; GL is balanced; audit-row count meets the floor |
-| 4 | `docs/BUSINESS_CHAINS.md` in sync | `scripts/generate-business-chains-doc.ts` + `git diff` | Registry edited but generated doc not regenerated — doc would drift from code |
+| 4 | `docs/BUSINESS_CHAINS.md` in sync | `src/services/business-chains/gen-doc.ts` + `git diff` | Registry edited but generated doc not regenerated — doc would drift from code |
 | 5 | Barrel ↔ plugin symmetry | grep on `src/plugins/accounting/collections/index.ts` + `plugin.ts` | New collection added to barrel but not registered in plugin (or vice versa) |
 
 ## Wire to git
@@ -67,7 +67,7 @@ STRICT_INVARIANTS=1 pnpm vitest run tests/architecture/
 pnpm vitest run tests/int/chains/p2p-three-way-match.int.spec.ts
 
 # Just the doc check
-pnpm exec tsx scripts/generate-business-chains-doc.ts && git diff docs/BUSINESS_CHAINS.md
+pnpm exec tsx src/services/business-chains/gen-doc.ts && git diff docs/BUSINESS_CHAINS.md
 ```
 
 @audit ISO-19011:2018 §6.4 audit-evidence-pre-push
