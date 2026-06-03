@@ -22,6 +22,8 @@ import { tenantAdminWriteAccess } from '../../access/auth'
 import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
 import { deriveCountryFromIban } from '../../hooks/deriveCountryFromIban'
 import { currencyField, statusField, notesField, auditFields } from '../../fields/base-accounting-fields'
+import { isValidIban } from '../../utilities/iban'
+import { isSwiftBic } from '../../standards/iso-9362/bic'
 
 const BankAccounts: CollectionConfig = {
   slug: 'bank-accounts',
@@ -30,8 +32,20 @@ const BankAccounts: CollectionConfig = {
   access: tenantAdminWriteAccess(),
   fields: [
     { name: 'accountName', type: 'text', required: true, admin: { description: 'Friendly label, e.g. "Operating Account — Bulbank EUR".' } },
-    { name: 'iban', type: 'text', index: true, admin: { description: 'ISO 13616 IBAN. Encrypted at rest (NIST AES-GCM).' } },
-    { name: 'bic', type: 'text', admin: { description: 'ISO 9362 BIC / SWIFT code.' } },
+    {
+      name: 'iban',
+      type: 'text',
+      index: true,
+      // ISO-13616-1 §6 mod-97 (ISO-7064) — gate at the field before deriveCountryFromIban runs.
+      validate: (v: unknown) => (typeof v === 'string' && v !== '' ? isValidIban(v) || 'Invalid IBAN — ISO-13616-1 §6 mod-97 check failed' : true),
+      admin: { description: 'ISO 13616 IBAN. Encrypted at rest (NIST AES-GCM).' },
+    },
+    {
+      name: 'bic',
+      type: 'text',
+      validate: (v: unknown) => (typeof v === 'string' && v !== '' ? isSwiftBic(v) || 'Invalid BIC — ISO-9362 structure' : true),
+      admin: { description: 'ISO 9362 BIC / SWIFT code.' },
+    },
     { name: 'accountNumber', type: 'text', admin: { description: 'Local account number (US/UK/etc. where IBAN is not standard).' } },
     { name: 'routingNumber', type: 'text', admin: { description: 'ABA / sort-code / BSB — local routing identifier.' } },
     { name: 'institution', type: 'text', admin: { description: 'Bank name.' } },

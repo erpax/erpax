@@ -11,6 +11,7 @@ import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
 import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
 import { VAT_CATEGORY_OPTIONS } from '../../standards/un-cefact-5305'
 import { unpField, fiscalDeviceNumberField, operatorCodeField, fiscalQrField, saleStatusOptions } from '../../fields'
+import { isIso4217 } from '../../standards/iso-4217/validate'
 
 /**
  * Invoices — header for AR/AP billing with GL posting + period locking.
@@ -508,6 +509,7 @@ export const Invoices: CollectionConfig = {
           type: 'text',
           required: true,
           defaultValue: 'EUR',
+          validate: (v: unknown) => (typeof v === 'string' ? isIso4217(v) || 'Invalid ISO-4217 currency code' : true),
           admin: { description: 'ISO 4217 currency' },
         },
         {
