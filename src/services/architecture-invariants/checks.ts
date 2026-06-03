@@ -2973,8 +2973,9 @@ export function checkHarmonicHelixClosure(_ctx: InvariantContext): InvariantResu
  * any key with MORE THAN ONE path. The colliding files are content-hashed (the uuid
  * lock): same digest ⇒ a true duplicate (one [[merge]]s away); distinct digests ⇒
  * an ambiguous link (one concept at two scopes under one key — the concrete
- * violation). WARN not fail — surfaces unlocked collisions for the meta-automation
- * to resolve without reddening the gate while the duplicates are merged.
+ * violation). FAILs on identical-content copies (a true duplicate MUST merge to one);
+ * WARNs on distinct-content collisions — the ambiguous link needs a disambiguation
+ * judgment, NEVER a blind delete (distinct content is real content, not a copy).
  */
 export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
@@ -2997,15 +2998,21 @@ export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
     arr.push(f)
     byKey.set(key, arr)
   }
-  const offenders: string[] = []
+  const dupes: string[] = []      // identical content at >1 path — a true copy (FAIL: merge to one)
+  const ambiguous: string[] = []  // distinct content under one link-key — ambiguous link (WARN: disambiguate, never blind-delete)
   for (const [key, paths] of byKey) {
     if (paths.length < 2) continue
     const uuids = paths.map((p) => createHash('sha256').update(readFileSync(p)).digest('hex').slice(0, 16))
-    const ambiguous = new Set(uuids).size > 1
     const rels = paths.map((p) => p.slice(repoRoot.length + 1)).join(' | ')
-    offenders.push(`[[${key}]] ×${paths.length} (${ambiguous ? 'distinct uuids — ambiguous link' : 'same uuid — duplicate, merge'}): ${rels}`)
+    ;(new Set(uuids).size === 1 ? dupes : ambiguous).push(`[[${key}]] ×${paths.length}: ${rels}`)
   }
-  return offenders.length === 0
-    ? pass('entropy', 'atoms-locked-to-uuid', `every atom-key locks to one content-uuid (${byKey.size} keys, derived live from the fs)`)
-    : warn('entropy', 'atoms-locked-to-uuid', `${offenders.length} atom-key(s) NOT locked to one uuid — duplicate paths`, offenders)
+  if (dupes.length) {
+    return fail('entropy', 'atoms-locked-to-uuid',
+      `${dupes.length} atom-key(s) have IDENTICAL-content duplicate paths — merge to one (the uuid is the lock)`, dupes)
+  }
+  if (ambiguous.length) {
+    return warn('entropy', 'atoms-locked-to-uuid',
+      `${ambiguous.length} atom-key(s) lock to DISTINCT content under one link-key — ambiguous link; disambiguate (collection keeps the canonical [[link]], or the link carries its domain)`, ambiguous)
+  }
+  return pass('entropy', 'atoms-locked-to-uuid', `every atom-key locks to one content-uuid (${byKey.size} keys, derived live from the fs)`)
 }
