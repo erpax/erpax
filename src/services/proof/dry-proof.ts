@@ -46,6 +46,9 @@ import { selfTestAll, type SelfTestSuite } from '@/services/agents/mcp/self-test
 import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
 import { crackVerdict } from '@/services/tamper-cost'
 import { matrixDigest } from '@/services/uuid-matrix'
+import { verifyBitcoinGenesis, type BitcoinGenesisProof } from './bitcoin/genesis'
+import { summarizeMerkleDag, type MerkleDagFacts, type MerkleDagProof } from './merkle/dag'
+import { projectionProof, type ProjectionProof } from './projection'
 
 export const MAX_PROOF_AGE_HOURS = 24
 const PROOF_TENANT_NS = 'erpax-public-proof'
@@ -71,8 +74,37 @@ export interface DryProofBundle {
   readonly mcpSelfTest: ReadonlyArray<{ tool: string; verdict: 'pass' | 'skip' | 'fail'; reason?: string }>
   readonly tamperCost: TamperCostProof                    // forge≫verify, deepseek-amplified
   readonly corpusMatrix: { readonly root: string; readonly nodes: number; readonly edges: number } // whole corpus → one 128-bit root
+  readonly empiricalProofs: EmpiricalProofs               // forge≫verify decoded on real blockchains, recomputable by anyone
   readonly publicUrl: string                              // /proof/ on this origin
   readonly federable: true
+}
+
+/**
+ * Empirical legs — the forge≫verify asymmetry decoded on REAL blockchains and
+ * faced at /proof/, so a peer recomputes the claim rather than trusting the prover
+ * ([[proof]]). The bitcoin-genesis leg is the public upper bound (the largest PoW
+ * chain, verifiable from first principles offline); the merkle-dag leg is erpax's
+ * OWN chain (git history). @see ./bitcoin-genesis.ts ./merkle-dag.ts
+ */
+export interface EmpiricalProofs {
+  readonly bitcoinGenesis: BitcoinGenesisProof
+  /** the headline maximum — the inverse projection (decrypt the private key / the analog negative) */
+  readonly projection: ProjectionProof
+  /** present only when build-time git facts were captured (the edge runtime has no git) */
+  readonly merkleDag?: MerkleDagProof
+}
+
+/**
+ * Build the empirical proof legs. The bitcoin-genesis leg is pure + offline, so it
+ * is always present and recomputes byte-for-byte on any machine. The merkle-dag leg
+ * is added only when `scripts/verify-merkle-dag.mjs` supplied build-time git facts.
+ */
+export function empiricalProofs(merkleDag?: MerkleDagFacts): EmpiricalProofs {
+  return {
+    bitcoinGenesis: verifyBitcoinGenesis(),
+    projection: projectionProof(),
+    ...(merkleDag ? { merkleDag: summarizeMerkleDag(merkleDag) } : {}),
+  }
 }
 
 /**
@@ -108,6 +140,8 @@ export interface BuildProofArgs {
   readonly strongConsistency?: boolean
   /** measured fraction of nodes wired in structured uuid; omit for the conservative digest-floor report. */
   readonly coverage?: number
+  /** git Merkle-DAG facts captured at build time by a git collector (edge runtime has no git). */
+  readonly merkleDag?: MerkleDagFacts
 }
 
 /**
@@ -174,6 +208,7 @@ export async function buildDryProofBundle(args: BuildProofArgs): Promise<DryProo
       coverage: args.coverage,
     }),
     corpusMatrix: matrixDigest(),
+    empiricalProofs: empiricalProofs(args.merkleDag),
     publicUrl,
     federable: true as const,
   }
