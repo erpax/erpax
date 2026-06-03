@@ -7,7 +7,7 @@ description: "Use when a contract specifies dispute handling — mechanism (liti
 
 Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).
 
-Composes: [[Contracts]] · [[matter]] · [[jurisdiction]].
+Composes: [[Contracts]] · [[matter]] · [[jurisdiction]] · [[remediation]] · [[liability]].
 
 ## Standards
 - UNCITRAL-Model-Arbitration-Law

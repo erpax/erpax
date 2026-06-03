@@ -7,7 +7,7 @@ description: "Use when a contract is subject to a specific jurisdiction's law �
 
 Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.
 
-Composes: [[jurisdiction]] · [[Contracts]] · [[matter]] · [[standard]].
+Composes: [[jurisdiction]] · [[Contracts]] · [[matter]] · [[standard]] · [[dispute-resolution]].
 
 ## Standards
 - Rome-I-Reg-1215-2012

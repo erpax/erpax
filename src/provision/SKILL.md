@@ -7,7 +7,7 @@ description: "Use when recognizing a liability for a present obligation (legal o
 
 Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37
 
-Composes: [[JournalEntries]] · [[CommitmentsAndContingencies]] · [[DisclosureChecklists]] · [[balance]].
+Composes: [[JournalEntries]] · [[CommitmentsAndContingencies]] · [[DisclosureChecklists]] · [[balance]] · [[accrual]] · [[liability]] · [[disclosure]].
 
 ## Standards
 - IAS-37 (provisions, contingent liabilities, contingent assets)

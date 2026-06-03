@@ -7,7 +7,7 @@ description: "Use when modeling contract end conditions — termination for conv
 
 Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination.
 
-Composes: [[Contracts]] · [[matter]] · [[horo]].
+Composes: [[Contracts]] · [[matter]] · [[horo]] · [[liability]] · [[remediation]] · [[close]].
 
 ## Standards
 - UCC-2-309

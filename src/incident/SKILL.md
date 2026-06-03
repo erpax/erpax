@@ -7,7 +7,7 @@ description: "Use when logging unplanned downtime, service interruptions, produc
 
 Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking.
 
-Composes: [[workflow]] · [[AuditEvents]] · [[risk]] · [[schedule]].
+Composes: [[workflow]] · [[AuditEvents]] · [[risk]] · [[schedule]] · [[resolution]] · [[runbook]].
 
 ## Standards
 - ITIL (incident mgmt)

@@ -7,7 +7,7 @@ description: "Use for non-taxable income or entities exempt from income tax — 
 
 Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation
 
-Composes: [[tax]] · [[LegalEntities]] · [[DeferredTaxItems]] · [[TaxCalculations]].
+Composes: [[tax]] · [[LegalEntities]] · [[DeferredTaxItems]] · [[TaxCalculations]] · [[disclosure]] · [[standard]].
 
 ## Standards
 - IAS-12 §26-29 (non-taxable income)

@@ -7,7 +7,7 @@ description: "Use when defining or analyzing an employee's total pay structure �
 
 Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker.
 
-Composes: [[Employees]] · [[positions]] · [[currency]] · [[rate]] · [[allocation]] · [[PayrollRuns]].
+Composes: [[Employees]] · [[positions]] · [[currency]] · [[rate]] · [[allocation]] · [[PayrollRuns]] · [[tenure]].
 
 ## Standards
 - ISO-20022 for disbursement

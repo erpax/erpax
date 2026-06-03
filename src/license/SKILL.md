@@ -7,7 +7,7 @@ description: "Use when a contract grants a right to use IP/goods — licensor, l
 
 Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.
 
-Composes: [[Contracts]] · [[matter]] · [[restriction]].
+Composes: [[Contracts]] · [[matter]] · [[restriction]] · [[termination]].
 
 ## Standards
 - UCC-2-103

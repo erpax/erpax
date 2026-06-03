@@ -15,7 +15,7 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
-Composes [[workflow-definitions]] · [[audit-events]] · [[users]] · [[hooks]] · [[access]] · [[fields]].
+Composes [[workflow-definitions]] · [[audit-events]] · [[users]] · [[hooks]] · [[access]] · [[fields]] · [[approved]].
 
 ## Standards
 - ISO/IEC 19510:2013 BPMN-2.0

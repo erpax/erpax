@@ -7,7 +7,7 @@ description: "Use when measuring customer retention/attrition — monthly/annual
 
 Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers.
 
-Composes: [[Customers]] · [[Subscriptions]] · [[revenue]] · [[forecast]].
+Composes: [[Customers]] · [[Subscriptions]] · [[revenue]] · [[forecast]] · [[cohort]].
 
 ## Standards
 - CRM-generic

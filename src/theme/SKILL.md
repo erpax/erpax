@@ -7,7 +7,7 @@ description: "Use when applying a consistent visual language across an app — c
 
 Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.
 
-Composes: [[component]] · [[accessibility]] · [[design]] · [[cmyk]].
+Composes: [[component]] · [[accessibility]] · [[design]] · [[cmyk]] · [[token]].
 
 ## Standards
 - CSS-custom-properties spec

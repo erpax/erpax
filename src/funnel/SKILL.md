@@ -7,7 +7,7 @@ description: "Use when measuring conversion rates across pipeline stages — lea
 
 Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.
 
-Composes: [[pipeline]] · [[Leads]] · [[Opportunities]] · [[SalesOrders]] · [[forecast]].
+Composes: [[pipeline]] · [[Leads]] · [[Opportunities]] · [[SalesOrders]] · [[forecast]] · [[conversion]].
 
 ## Standards
 - CRM-generic

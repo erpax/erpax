@@ -7,7 +7,7 @@ description: "Use when logging product/service quality problems — manufacturin
 
 Use when logging product/service quality problems — manufacturing defects, software bugs, rework triggers, quality inspections results. The non-conformance record.
 
-Composes: [[QualityInspections]] · [[incident]] · [[workflow]].
+Composes: [[QualityInspections]] · [[incident]] · [[workflow]] · [[standard]].
 
 ## Standards
 - ISO-9001 (quality mgmt)

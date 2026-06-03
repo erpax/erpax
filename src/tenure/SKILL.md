@@ -7,7 +7,7 @@ description: "Use when tracking employment duration, anniversaries, or vesting s
 
 Use when tracking employment duration, anniversaries, or vesting schedules — hire date, current tenure, service-based benefits accrual, or eligibility calculations.
 
-Composes: [[Employees]] · [[time]] · [[ShareBasedPayments]] · [[positions]].
+Composes: [[Employees]] · [[time]] · [[ShareBasedPayments]] · [[positions]] · [[accrual]].
 
 ## Standards
 - IFRS-2 vesting schedules

@@ -26,4 +26,4 @@ Place it among the content-surface plugins, **before** `taggablePlugin()`/`conte
 - Reading `'redirects'` slug before the plugin is registered — wire the plugin + regenerate types, don't cast the slug away.
 - Passing a raw `string` `relationTo` into a `CollectionSlug`-typed fetcher without narrowing.
 
-Composes: [[plugins]] (official, config in→out) · [[config]] (registration + order) · [[queries]] (cached lookup) · [[api]] (SSR redirect) · [[search]] (its sibling content-surface official plugin) · [[identity]].
+Composes: [[plugins]] (official, config in→out) · [[config]] (registration + order) · [[queries]] (cached lookup) · [[api]] (SSR redirect) · [[search]] (its sibling content-surface official plugin) · [[identity]] · [[cache]].

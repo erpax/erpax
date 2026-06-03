@@ -7,7 +7,7 @@ description: "Use when enforcing or auditing data consistency — ACID propertie
 
 Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards.
 
-Composes: [[database]] · [[identity]] · [[reconcile]] · [[anti-corruption]].
+Composes: [[database]] · [[identity]] · [[reconcile]] · [[anti-corruption]] · [[constraint]].
 
 ## Standards
 - ACID (ISO/IEC 10026)

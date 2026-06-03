@@ -7,7 +7,7 @@ description: "Use when ranking prospect/lead quality — behavioral signals, fir
 
 Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.
 
-Composes: [[Leads]] · [[Opportunities]] · [[segment]] · [[Activities]].
+Composes: [[Leads]] · [[Opportunities]] · [[segment]] · [[Activities]] · [[prospect]].
 
 ## Standards
 - CRM-generic

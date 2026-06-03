@@ -7,7 +7,7 @@ description: "Use when defining design primitives — a design token is a named,
 
 Use when defining design primitives — a design token is a named, semantic design decision (color, font-size, spacing, motion) reused across components. The granular unit of design consistency.
 
-Composes: [[theme]] · [[component]] · [[standard]].
+Composes: [[theme]] · [[component]] · [[standard]] · [[design]].
 
 ## Standards
 - design-token spec

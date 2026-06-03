@@ -7,7 +7,7 @@ description: "Use when managing or routing work in order — support ticket queu
 
 Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work.
 
-Composes: [[ticket]] · [[status]] · [[priority]] · [[Activities]] · [[Users]].
+Composes: [[ticket]] · [[status]] · [[priority]] · [[Activities]] · [[Users]] · [[backlog]] · [[sla]] · [[assignment]].
 
 ## Standards
 - ITIL queue state machine

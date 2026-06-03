@@ -7,7 +7,7 @@ description: "Use when measuring the quantity-per-unit-time flowing through a pr
 
 Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output.
 
-Composes: [[rate]] · [[flow]] · [[measure]] · [[WorkCenters]].
+Composes: [[rate]] · [[flow]] · [[measure]] · [[WorkCenters]] · [[bottleneck]].
 
 ## Standards
 - ISO-8402 (throughput rate)

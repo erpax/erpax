@@ -7,7 +7,7 @@ description: "Use when measuring workforce loss — headcount change, turnover r
 
 Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.
 
-Composes: [[Employees]] · [[time]] · [[status]].
+Composes: [[Employees]] · [[time]] · [[status]] · [[tenure]] · [[satisfaction]] · [[metric]].
 
 ## Standards
 - SHRM metrics

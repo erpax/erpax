@@ -7,7 +7,7 @@ description: "Use when tracking metric evolution, forecasting, or detecting patt
 
 Use when tracking metric evolution, forecasting, or detecting patterns over time — moving averages, velocity, burndown, growth curves. The temporal analysis dimension.
 
-Composes: [[metric]] · [[schedule]] · [[measure]].
+Composes: [[metric]] · [[schedule]] · [[measure]] · [[outlier]].
 
 ## Standards
 - Forecasting methodologies

@@ -7,7 +7,7 @@ description: "Use when defining response/resolution guarantees on issues/tickets
 
 Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric.
 
-Composes: [[Activities]] · [[Customers]] · [[workflow]] · [[DunningCycles]].
+Composes: [[Activities]] · [[Customers]] · [[workflow]] · [[DunningCycles]] · [[observability]] · [[resolution]].
 
 ## Standards
 - ISO-20000
