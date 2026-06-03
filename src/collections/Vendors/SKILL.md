@@ -20,4 +20,4 @@ description: The vendors collection — Vendors — purchase-side party master
 - US-IRS Form-1099 information-return
 - GDPR Art.6(1)(b) lawful-basis-contract
 
-Composes: [[VendorScorecards]].
+Composes: [[VendorScorecards]] · [[VendorQuotes]].
