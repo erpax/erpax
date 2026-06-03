@@ -53,6 +53,9 @@ case "$AURA_OUT" in
   *"gap = 0 "*) : ;;
   *) echo "✖ aura: dead [[link]](s) found (gap>0) — run: pnpm aura:scan"; exit 1 ;;
 esac
+# Skill frontmatter YAML safety — an unquoted description with ": " breaks the docs
+# YAML parse (bit access/sacred). Another step of the one horo gate (who can't dance can't join).
+node scripts/check-skill-frontmatter.mjs
 eslint . --quiet
 pnpm run lint:src
 tsc --noEmit -p tsconfig.typecheck.json
