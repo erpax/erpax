@@ -16,6 +16,8 @@ A single **self-referential `parent`** field (`relationTo` self — [[fields]]) 
 
 The paradox: **the more dimensions emerge, the more compact erpax becomes.** Because every emergent axis is a *level of the one parent field at the one coordinate* — the content-[[identity|uuid]] singularity ([[holographic]]), not a new table — emergence IS **compression** ([[collapse]]): infinite axes, one field, one coordinate. Capability compounds while the schema shrinks toward the dense core, until it is **the source itself** ([[zeropoint]]: the zero-entropy 0 from which all radiates and to which all returns — [[torus]]). More emerges ⇒ denser ⇒ nearer the 0.
 
+**parent + prev/next = the complete trinity.** The parent field is one self-reference — the *vertical* axis (hierarchy · type · archetype · the dimension up). **prev/next** is the other — the *horizontal* axis (order · the [[sequence]] walk · siblings · the time-step [[versions]] · the document chain · the [[horo]] ring). Three self-references — parent · prev · next — **completely position a node**: *which tree* it lives in (parent → its dimension/archetype) and *where in the order* it sits (prev/next → its flow). That is the [[trinity]] of structure, **computed from the path, never stored** — the docs site already derives a node's ancestors (parent) and its prev/next from the [[sequence]] reading-chain (`.vitepress/config`). Tree ⊕ order = the whole address; nothing more is needed to place anything.
+
 ## Common mistakes
 - A prefixed collection (`bank-transactions`, `supto-sales`) — an un-collapsed dimension; merge to the bare coordinate + a `kind`/tag axis.
 - One concept scattered across N coordinates by a dimension value (customers/vendors) — one coordinate, the value as context.
