@@ -14,7 +14,7 @@
  */
 
 import config from '@payload-config'
-import { getPayload } from 'payload'
+import { createLocalReq, getPayload } from 'payload'
 import Stripe from 'stripe'
 import { tenantIdFromRelation } from '@/utilities/tenantRemoteSecrets'
 
@@ -33,6 +33,13 @@ export async function POST(request: Request) {
       return Response.json({ error: 'No tenant associated with user' }, { status: 400 })
     }
 
+    // Trusted server endpoint: it authenticated the user and derived their tenant above,
+    // so it IS the authorization boundary. Thread the user's req for transaction + audit
+    // (req.user) context; overrideAccess is intentional and required (the endpoint must
+    // read the tenant's own super-admin-gated Stripe secret), and tenant scoping is
+    // applied explicitly via the where-clauses below.
+    const req = await createLocalReq({ user }, payload)
+
     const body = await request.json()
     const { planSlug, paymentMethodId } = body as { planSlug?: string; paymentMethodId?: string }
 
@@ -45,6 +52,8 @@ export async function POST(request: Request) {
       collection: 'subscription-plans',
       where: { slug: { equals: planSlug } },
       limit: 1,
+      req,
+      overrideAccess: true,
     })
 
     if (!planResult.docs.length) {
@@ -60,6 +69,8 @@ export async function POST(request: Request) {
         collection: 'subscriptions',
         where: { tenant: { equals: tenantId } },
         limit: 1,
+        req,
+        overrideAccess: true,
       })
 
       if (existing.docs.length > 0) {
@@ -71,6 +82,8 @@ export async function POST(request: Request) {
             plan: plan.id,
             status: 'active',
           },
+          req,
+          overrideAccess: true,
         })
         return Response.json({ subscription: updated, free: true })
       }
@@ -85,6 +98,8 @@ export async function POST(request: Request) {
           currentPeriodStart: new Date().toISOString(),
           currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
         },
+        req,
+        overrideAccess: true,
       })
 
       return Response.json({ subscription, free: true })
@@ -102,6 +117,8 @@ export async function POST(request: Request) {
     const tenant = await payload.findByID({
       collection: 'tenants',
       id: tenantId,
+      req,
+      overrideAccess: true,
     })
 
     if (!tenant.stripeSecretKey) {
@@ -138,6 +155,8 @@ export async function POST(request: Request) {
       collection: 'subscriptions',
       where: { tenant: { equals: tenantId } },
       limit: 1,
+      req,
+      overrideAccess: true,
     })
 
     let stripeSubscription: Stripe.Subscription
@@ -176,6 +195,8 @@ export async function POST(request: Request) {
           currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000).toISOString(),
           currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000).toISOString(),
         },
+        req,
+        overrideAccess: true,
       })
 
       return Response.json({
@@ -194,6 +215,8 @@ export async function POST(request: Request) {
           currentPeriodStart: new Date(stripeSubscription.items.data[0].current_period_start * 1000).toISOString(),
           currentPeriodEnd: new Date(stripeSubscription.items.data[0].current_period_end * 1000).toISOString(),
         },
+        req,
+        overrideAccess: true,
       })
 
       return Response.json({
