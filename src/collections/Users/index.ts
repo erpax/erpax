@@ -10,6 +10,7 @@ import { readAccess } from './access/read'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
 import { externalUsersLogin } from './endpoints/externalUsersLogin'
 import { ensureUniqueUsername } from './hooks/ensureUniqueUsername'
+import { firstUserSuperAdmin } from './hooks/firstUserSuperAdmin'
 import { setCookieBasedOnDomain } from './hooks/setCookieBasedOnDomain'
 
 const defaultTenantArrayField = tenantsArrayField({
@@ -286,6 +287,9 @@ export const Users: CollectionConfig = {
     },
   ],
   hooks: {
+    // The genesis owner computes itself: the FIRST user (empty user set) becomes
+    // super-admin by the identity element, never by hand-assignment.
+    beforeChange: [firstUserSuperAdmin],
     afterLogin: [setCookieBasedOnDomain],
   },
   timestamps: true,

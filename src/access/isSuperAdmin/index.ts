@@ -12,6 +12,7 @@
 
 import type { Access, FieldAccess } from 'payload'
 import type { Iso27002ControlId } from '../../standards/iso-27002'
+import { getUserTenantIDs } from '../../utilities/getUserTenantIDs'
 
 /**
  * Canonical ISO 27002 controls this predicate exercises:
@@ -36,5 +37,10 @@ export const isSuperAdminFieldAccess: FieldAccess = ({ req }): boolean => {
 export const isSuperAdmin = (user: unknown): boolean => {
   if (!user || typeof user !== 'object' || !('roles' in user)) return false
   const roles = (user as { roles?: unknown }).roles
-  return Array.isArray(roles) && roles.includes('super-admin')
+  // super-admin is DERIVED, never a stored role: an `admin` with an EMPTY tenant
+  // scope IS the platform (system) admin — "if tenant is empty and role admin it
+  // is super-admin by architecture". An admin bound to a tenant is a tenant-admin.
+  // (Upstream erpax: admin? = system? || role == 'admin', domain-scoped.)
+  if (!Array.isArray(roles) || !roles.includes('admin')) return false
+  return getUserTenantIDs(user).length === 0
 }
