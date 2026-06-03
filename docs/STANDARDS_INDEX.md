@@ -2773,6 +2773,8 @@ src/utilities/tenant-context/index.ts:39: * @standard BCP-47 language-tag locale
 src/utilities/tenant-context/index.ts:40: * @standard ECMA-402 internationalization-api
 src/utilities/tenantRemoteSecrets/index.ts:5: * @standard NIST SP-800-108 key-derivation-function (sibling: `getPreviewSecret`)
 src/utilities/xml-escape/index.ts:8: * @standard XML-1.0 §2.4 predefined-entities
+src/versions/cross/index.ts:22: * @standard RFC 9562 §5.8 uuidv8 (the content-addressed version id)
+src/versions/cross/index.ts:23: * @standard RFC 8785 JCS (deterministic content canonicalization)
 tests/e2e/admin-evidence.e2e.spec.ts:25: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/admin-evidence.e2e.spec.ts:26: * @standard ISO/IEC-29119-3:2021 test-documentation
 tests/e2e/admin-evidence.e2e.spec.ts:27: * @standard W3C WebDriver-BiDi browser-automation
@@ -3786,6 +3788,7 @@ src/utilities/svg-hero-generator/index.ts:19: * @compliance WCAG-2.1 §1.4.3 con
 src/utilities/tenant-context/index.ts:44: * @compliance GDPR Art.12 transparent-information user-language-of-choice
 src/utilities/tenantRemoteSecrets/index.ts:10: * @compliance PCI-DSS-4.0 §3.2 tokenized-payment-method
 src/utilities/tenantRemoteSecrets/index.ts:11: * @compliance GDPR Art.32 security-of-processing
+src/versions/cross/index.ts:25: * @compliance SOX §404 internal-controls record-retention
 tests/e2e/admin-evidence.e2e.spec.ts:29: * @compliance SOX §404 internal-controls process-walk-through
 tests/e2e/admin.e2e.spec.ts:17: * @compliance WCAG-2.1 level-AA accessibility
 tests/e2e/categories/admin-data.e2e.spec.ts:12: * @compliance SOX §404 internal-controls process-walk-through
@@ -5778,6 +5781,7 @@ src/utilities/scopes/constants.ts:7: * @audit ISO-19011:2018 audit-trail draft-v
 src/utilities/scopes/filters.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/utilities/svg-hero-generator/index.ts:20: * @audit ISO-19011:2018 audit-trail seed-media-provenance
 src/utilities/tenant-context/index.ts:45: * @audit ISO-19011:2018 audit-trail config-cascade-resolution
+src/versions/cross/index.ts:24: * @audit ISO 19011:2018 §6.4.6 audit-evidence (the version chain IS the trail)
 tests/e2e/admin-evidence.e2e.spec.ts:28: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/categories/admin-data.e2e.spec.ts:11: * @audit ISO-19011:2018 audit-trail visual-evidence
 tests/e2e/categories/compliance-evidence.e2e.spec.ts:12: * @audit ISO-19011:2018 audit-trail visual-evidence
