@@ -6,6 +6,7 @@
  *
  *   pnpm exec tsx src/run/dev/verify-genesis.ts
  */
+export {} // module marker — enables top-level `await` under tsc (TS1375)
 const { isSuperAdmin } = await import('../../access/isSuperAdmin')
 
 const cases = [
