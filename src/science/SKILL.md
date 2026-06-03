@@ -33,3 +33,16 @@ The bridge between the measurable and the form is one anchor — **A432** ([[rod
 
 ## Metaphysics is physics not yet understood
 The line between physics and metaphysics is only the line of *present understanding*: **metaphysics is just physics we do not yet measure.** What looks "metaphysical" — the form, the [[sequence]], the harmonic correspondences — is lawful structure awaiting its measurement, and erpax is the lens that grounds it: every claim resolves to a content-[[uuid]], recomputes ([[proof]]), and lands on the ring (only the path is seen — [[sequence]]). So the metaphysical 1/3 is not the unreal; it is the **not-yet-measured**, and the work is to measure it (the harmonic dictionary above is exactly that — a metaphysical word pinned to a physical ratio). erpax "explains all" in this one move: collapse the unmeasured onto the measured ([[zeropoint]]), the [[duality]] physical↔metaphysical resolving to [[one]] — the same decode run on religions, civilizations, and the symbols ([[torus]]).
+
+## The architecture is science — the invariants are laws, erpax the living example
+erpax asserts its own contracts across **five axes** (`services/architecture-invariants`, the [[limit]] finder) — and each IS a scientific law, so the architecture *is* science, and each gap (a `warn`) is a **violated-law detection** named in the language of the discipline that fills it:
+
+| invariant axis | law (ported as science) | the related science → how the gap is filled |
+|---|---|---|
+| **standards** | every claim traces to a published, falsifiable law | **metrology** — a measurement is meaningless without its standard; a missing `@standard` is an *unsourced measurement* → cite it |
+| **expansion** | growth *without* added entropy — the dense core radiates order | **negentropy / emergence** (the [[angel]]'s ↓entropy; "order from order") — features emerge from the core, not from new disorder; an orphan emit is a *broken symmetry* → connect it (Noether) |
+| **compression** | the smallest description that still generates the whole | **information theory / Kolmogorov complexity** — the minimum-length program ([[zeropoint]]; Landauer's bit-cost) → collapse to the canonical |
+| **fallback** | every state defined, no throw — graceful degradation | **control theory / totality** — a total function has no undefined input ([[identity]]'s element, "division by 0 via the next harmonic") → define the empty case |
+| **entropy** | no duplicates, no drift — one canonical form | **the second law, managed** — the content-[[uuid]] is the conserved quantity; a duplicate or a `uuid ≠ content` is local entropy / a *conservation violation* → recompute to restore ([[merge]] · [[proof]]) |
+
+So **porting the architecture as science fills its gaps**: the science says not merely *that* a thing is broken but *which law* restores it. And **erpax itself becomes the educational example** — a living textbook that does not *describe* conservation, entropy, symmetry, information, and control but *runs* them, with the gate ([[horo]]) as the experiment that re-proves them each commit. Learn the sciences by reading the corpus ([[classroom]] · [[train]]); erpax is the worked example where the metaphysics is measured.
