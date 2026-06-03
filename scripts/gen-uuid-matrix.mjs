@@ -10,6 +10,7 @@
  * node (atom)        → v8 content-uuid (sha256 of its SKILL.md)
  * edge ([[link]])    → merge(from,to) binding-uuid (the uuid-trinity collision)
  * dimension          → structural path domain (collections/services/fields/root…)
+ * harmonic band      → role from the atom-skill groups (source·control·flow); digit within is content-derived
  * harmonic direction → composeSteps(horo(from),horo(to)) = digitalRoot(a×b) on the horo ring
  * the whole          → folds (Merkle) to ONE 128-bit root — the singularity (zeropoint)
  */
@@ -45,9 +46,31 @@ const toUuid = (buf) => {
 const ubytes = (u) => Buffer.from(u.replace(/-/g, ''), 'hex')
 const merge = (a, b) => toUuid(Buffer.concat([ubytes(a), ubytes(b)])) // collision: 2 uuids → a third
 const dr = (n) => (n <= 0 ? 0 : ((n - 1) % 9) + 1) // digital root → {1..9}
-const horoOf = (u) => dr([...ubytes(u)].reduce((s, x) => s + x, 0)) // atom's ring residue (content-derived)
 const compose = (a, b) => dr(a * b) // horo composeSteps = digitalRoot(a×b)
 const dimOf = (rel) => { const s = rel.split('/'); return s.length <= 2 ? 'root' : s[0] }
+const byteSum = (u) => [...ubytes(u)].reduce((s, x) => s + x, 0)
+
+// Harmonic bands BY STRUCTURAL DIMENSION. The seed groups are PARSED from the atom
+// skill (computed from the record, never hardcoded) — the band (role) is semantic, the
+// digit WITHIN the band is content-derived (honest). access/hooks/identity subtrees
+// match by dim name; auth/config/zeropoint/whole match by atom name.
+const atomSkill = readFileSync(join(ROOT, 'atom', 'SKILL.md'), 'utf8')
+const groupLinks = (label) => {
+  const members = (atomSkill.split('\n').find((l) => l.includes(label)) || '').split(':')[0] // group list is before the colon
+  return new Set([...members.matchAll(/\[\[([^\]|/]+)/g)].map((m) => norm(m[1])))
+}
+const SOURCE = groupLinks('noble 0') // [[zeropoint]] · [[identity]] · [[whole]] → unity
+const CONTROL = groupLinks('control axis') // [[access]] · [[hooks]] · [[auth]] · [[config]] → axis
+const AXIS = [3, 6, 9], HELIX = [1, 2, 4, 8, 7, 5]
+const bandOf = (atom, dim) => {
+  if (SOURCE.has(atom) || SOURCE.has(dim)) return { band: 'source', digits: [9] }
+  if (CONTROL.has(atom) || CONTROL.has(dim)) return { band: 'control', digits: AXIS }
+  return { band: 'flow', digits: HELIX } // the working 2/3 — the default
+}
+const positionOf = (atom, dim, uuid) => {
+  const b = bandOf(atom, dim)
+  return { band: b.band, horo: b.digits[byteSum(uuid) % b.digits.length] }
+}
 const HORO_LABEL = { 1: 'base', 2: 'share', 4: 'weave', 8: 'crest', 7: 'descent', 5: 'round', 9: 'unity', 3: 'axis·3', 6: 'axis·6' }
 
 // ── 1. nodes ──
@@ -60,7 +83,9 @@ for (const f of files) {
   corpusBytes += content.length
   const key = norm(basename(dirname(f)))
   const uuid = toUuid(content)
-  const rec = { atom: key, uuid, dim: dimOf(relative(ROOT, f)), horo: horoOf(uuid) }
+  const dim = dimOf(relative(ROOT, f))
+  const pos = positionOf(key, dim, uuid)
+  const rec = { atom: key, uuid, dim, band: pos.band, horo: pos.horo }
   if (idx.has(key)) { nodes[idx.get(key)] = rec; continue } // last wins (aura slug parity)
   idx.set(key, nodes.length)
   nodes.push(rec)
@@ -97,6 +122,7 @@ const root = layer[0]
 // ── 4. breakdowns ──
 const fmt = (n) => n.toLocaleString('en-US')
 const byDim = {}; for (const n of nodes) byDim[n.dim] = (byDim[n.dim] || 0) + 1
+const byBand = {}; for (const n of nodes) byBand[n.band] = (byBand[n.band] || 0) + 1
 const byDir = {}; for (const e of edges) byDir[e.dir] = (byDir[e.dir] || 0) + 1
 const flow = [1, 2, 4, 8, 7, 5].reduce((s, d) => s + (byDir[d] || 0), 0)
 const axis = [3, 6, 9].reduce((s, d) => s + (byDir[d] || 0), 0)
@@ -108,6 +134,9 @@ console.log(`corpus               ${fmt(corpusBytes)} bytes → root ${root} (16
 
 console.log(`\n── structural dimensions (nodes per path domain) ──`)
 for (const [d, c] of Object.entries(byDim).sort((a, b) => b[1] - a[1])) console.log(`  ${d.padEnd(12)} ${fmt(c)}`)
+
+console.log(`\n── harmonic bands (by structural dimension — seeds parsed from the atom skill) ──`)
+for (const b of ['source', 'control', 'flow']) if (byBand[b]) console.log(`  ${b.padEnd(8)} ${fmt(byBand[b])}`)
 
 console.log(`\n── harmonic directions (edges by horo composeSteps a×b — content-derived ring) ──`)
 for (const d of [1, 2, 4, 8, 7, 5, 9, 3, 6]) if (byDir[d]) console.log(`  ${d} ${HORO_LABEL[d].padEnd(8)} ${fmt(byDir[d])}`)
@@ -132,7 +161,7 @@ if (EMIT) {
     ' * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)',
     ' */',
     '',
-    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly dim: string; readonly horo: number }',
+    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly dim: string; readonly band: string; readonly horo: number }',
     'export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }',
     '',
     `export const UUID_MATRIX_ROOT = ${j(root)} as const`,
