@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.12 transparent-information user-language-of-choice
 - ISO-27002 §5.15 access-control per-user-feature-flags
 - ISO-19011:2018 audit-trail user-config-change
+
+Composes: [[train]].

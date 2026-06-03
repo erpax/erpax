@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-606-10-25-31 progress-measurement
 - ISO-19011:2018 audit-trail po-satisfaction
 - SOX §404 internal-controls revenue-recognition
+
+Composes: [[Contracts]].

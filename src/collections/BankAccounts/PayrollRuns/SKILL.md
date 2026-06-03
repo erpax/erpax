@@ -31,3 +31,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.4 segregation-of-duties
 - ISO-27002 §5.34 privacy-and-protection-of-pii
 - ISO-27002 §8.11 data-masking
+
+Composes: [[accounting]].

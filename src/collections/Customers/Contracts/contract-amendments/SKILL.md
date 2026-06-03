@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §302 management-certification contract-approvals
 - GDPR Art.6(1)(b) lawful-basis-contract-modification
 - ISO-19011:2018 audit-trail amendment-lifecycle
+
+Composes: [[Contracts]].

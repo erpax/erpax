@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls restatement-control TOM-PPA-01
 - SOX §906 ceo-cfo-certification material-misstatement
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[FiscalPeriods]] · [[JournalEntries]] · [[accounting]] · [[close]].

@@ -25,3 +25,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Solvency II / IAIS ICS — actuarial reserving link
 - SOX §404 internal-controls TOM-INS-01
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[FairValueMeasurements]].

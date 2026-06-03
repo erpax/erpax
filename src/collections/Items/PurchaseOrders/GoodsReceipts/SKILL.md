@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS-15 §31 revenue-substantiation shipment-FOB-date
 - SOX §404 internal-controls three-way-match
 - ISO-27002 §5.4 segregation-of-duties receiver-vs-requester
+
+Composes: [[flow]].

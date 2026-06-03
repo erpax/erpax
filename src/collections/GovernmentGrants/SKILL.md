@@ -24,3 +24,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU CSRD ESRS 2 sbm-3 material-impacts (EU funds traceability)
 - OECD BEPS Action 13 country-by-country (when grants ≥ threshold)
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Provisions]] · [[FixedAssets]].

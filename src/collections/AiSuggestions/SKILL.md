@@ -25,3 +25,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27001 A.5.34 privacy-and-protection-of-pii
 - ISO-27002 §5.34 ai-output-validation
+
+Composes: [[UsageRecords]] · [[uuid]].

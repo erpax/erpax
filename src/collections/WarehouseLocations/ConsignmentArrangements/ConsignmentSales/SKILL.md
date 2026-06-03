@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail consignment-sale-evidence
 - SOX §404 internal-controls revenue-completeness TOM-AR-04
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[ConsignmentArrangements]] · [[ConsignmentInventory]] · [[Invoices]] · [[JournalEntries]].

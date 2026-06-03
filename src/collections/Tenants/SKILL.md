@@ -28,3 +28,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IAS-1 presentation-of-financial-statements per-tenant-framework
 - ISO-27001 A.5.23 cloud-service-tenant-isolation per-tenant-sandbox-config
 - ISO-19011:2018 audit-trail config-change
+
+Composes: [[domain]].

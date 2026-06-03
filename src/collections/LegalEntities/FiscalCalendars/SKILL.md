@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - XBRL (period context for financial statement generation)
 - GDPR:2016/679 (immutable after generation; generatedFrom traces lineage)
 - SOX:2402 (audit-trail via chainLeafUuid)
+
+Composes: [[accounting]].

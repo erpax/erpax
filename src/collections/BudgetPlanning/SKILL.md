@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls budget-approval-workflow
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27002 §5.4 segregation-of-duties approval-vs-creation
+
+Composes: [[accounting]].
