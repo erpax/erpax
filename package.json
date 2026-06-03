@@ -26,6 +26,7 @@
     "aura:scan": "node .claude/skills/aura/scan.mjs",
     "harmony": "node scripts/harmony-scan.mjs",
     "atoms:catalogue": "node scripts/gen-atom-catalogue.mjs",
+    "matrix:generate": "node scripts/gen-uuid-matrix.mjs --emit",
     "mint:atoms": "node scripts/mint-atoms.mjs",
     "d1:audit": "node scripts/d1-column-audit.mjs",
     "db:regenerate": "bash scripts/db-regenerate.sh",

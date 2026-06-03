@@ -1,66 +1,92 @@
 #!/usr/bin/env node
 /**
- * The collider — compute the multidimensional uuid matrix from the live corpus
- * and MEASURE the holographic compression.
+ * The collider — compute the multidimensional uuid matrix from the live corpus,
+ * measure the holographic compression, and (with --emit) write the registry.
  *
- * Each atom (SKILL.md folder) → one v8 content-uuid (the node). Each [[link]] is
- * a collision: merge(from, to) = a third uuid (the binding-uuid, the uuid-trinity).
- * The whole folds (Merkle) to ONE 128-bit root — sprawl → a point ([[zeropoint]]).
- * Every node, edge, sub-tree and the whole are 128-bit: the singularity. The
- * matrix is multidimensional in reading, singular in address ([[holographic]]).
+ * The resolver matches .claude/skills/aura/scan.mjs EXACTLY — src-only,
+ * norm = lowercase + strip [-_], stripCode, [[a/b|alias]] → last segment — so the
+ * collider and the speech gate agree (every link resolves; 0 dead).
  *
- * Honest framing: the root content-ADDRESSES the whole (verify/regenerate from
- * the [[akashic]] record), it is not a zip — the "compression" is that the
- * address does not grow with the corpus.
+ * node (atom)        → v8 content-uuid (sha256 of its SKILL.md)
+ * edge ([[link]])    → merge(from,to) binding-uuid (the uuid-trinity collision)
+ * dimension          → structural path domain (collections/services/fields/root…)
+ * harmonic direction → composeSteps(horo(from),horo(to)) = digitalRoot(a×b) on the horo ring
+ * the whole          → folds (Merkle) to ONE 128-bit root — the singularity (zeropoint)
  */
-import { readFileSync } from 'node:fs'
-import { execSync } from 'node:child_process'
+import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs'
 import { createHash } from 'node:crypto'
-import { basename, dirname } from 'node:path'
+import { join, dirname, basename, relative } from 'node:path'
 
-const ROOT = '/Users/ceci/github/erpax/erpax'
-const files = execSync(`find ${ROOT}/src ${ROOT}/.claude/skills -name SKILL.md`, { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+const ROOT = join(process.cwd(), 'src')
+const EMIT = process.argv.includes('--emit')
 
-// v8 content-uuid: sha256(content) → 16 bytes, version=8, variant=10x (RFC 9562 §5.8)
+// ── aura-identical resolver ──
+const norm = (s) => s.toLowerCase().replace(/[-_]/g, '')
+const walk = (dir) => {
+  const out = []
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name)
+    if (e.isDirectory()) out.push(...walk(p))
+    else if (e.name === 'SKILL.md') out.push(p)
+  }
+  return out
+}
+const stripCode = (t) => t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
+const LINK_RE = /\[\[([A-Za-z][A-Za-z0-9/-]*)(?:\|[^\]]*)?\]\]/g
+
+// ── uuid + horo math ──
 const toUuid = (buf) => {
   const b = Buffer.from(createHash('sha256').update(buf).digest().subarray(0, 16))
-  b[6] = (b[6] & 0x0f) | 0x80
-  b[8] = (b[8] & 0x3f) | 0x80
+  b[6] = (b[6] & 0x0f) | 0x80 // version 8
+  b[8] = (b[8] & 0x3f) | 0x80 // variant 10x
   const x = b.toString('hex')
   return `${x.slice(0, 8)}-${x.slice(8, 12)}-${x.slice(12, 16)}-${x.slice(16, 20)}-${x.slice(20)}`
 }
-const bytes = (u) => Buffer.from(u.replace(/-/g, ''), 'hex')
-const merge = (a, b) => toUuid(Buffer.concat([bytes(a), bytes(b)])) // collision: 2 uuids → a third
+const ubytes = (u) => Buffer.from(u.replace(/-/g, ''), 'hex')
+const merge = (a, b) => toUuid(Buffer.concat([ubytes(a), ubytes(b)])) // collision: 2 uuids → a third
+const dr = (n) => (n <= 0 ? 0 : ((n - 1) % 9) + 1) // digital root → {1..9}
+const horoOf = (u) => dr([...ubytes(u)].reduce((s, x) => s + x, 0)) // atom's ring residue (content-derived)
+const compose = (a, b) => dr(a * b) // horo composeSteps = digitalRoot(a×b)
+const dimOf = (rel) => { const s = rel.split('/'); return s.length <= 2 ? 'root' : s[0] }
+const HORO_LABEL = { 1: 'base', 2: 'share', 4: 'weave', 8: 'crest', 7: 'descent', 5: 'round', 9: 'unity', 3: 'axis·3', 6: 'axis·6' }
 
-// 1. Nodes — each atom → content-uuid of its SKILL.md
-const node = new Map()
+// ── 1. nodes ──
+const files = walk(ROOT)
+const idx = new Map() // norm key -> node index
+const nodes = [] // {atom, uuid, dim, horo}
 let corpusBytes = 0
 for (const f of files) {
   const content = readFileSync(f)
   corpusBytes += content.length
-  node.set(basename(dirname(f)).toLowerCase(), toUuid(content))
+  const key = norm(basename(dirname(f)))
+  const uuid = toUuid(content)
+  const rec = { atom: key, uuid, dim: dimOf(relative(ROOT, f)), horo: horoOf(uuid) }
+  if (idx.has(key)) { nodes[idx.get(key)] = rec; continue } // last wins (aura slug parity)
+  idx.set(key, nodes.length)
+  nodes.push(rec)
 }
 
-// 2. Edges — each [[link]] collides its endpoints into a binding-uuid
-const linkRe = /\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g
-let edges = 0, resolved = 0
+// ── 2. edges (collisions) ──
+const edges = [] // {f, t, binding, dir}
+let totalRefs = 0, unresolved = 0
 for (const f of files) {
-  const from = node.get(basename(dirname(f)).toLowerCase())
-  const txt = readFileSync(f, 'utf8')
+  const from = idx.get(norm(basename(dirname(f))))
+  const text = stripCode(readFileSync(f, 'utf8'))
   const seen = new Set()
   let m
-  while ((m = linkRe.exec(txt))) {
-    const to = m[1].trim().toLowerCase()
-    if (seen.has(to)) continue
-    seen.add(to)
-    edges++
-    const toU = node.get(to)
-    if (toU) { resolved++; merge(from, toU) } // the matrix entry (binding-uuid)
+  while ((m = LINK_RE.exec(text))) {
+    const w = norm(m[1].split('/').pop())
+    if (seen.has(w)) continue
+    seen.add(w)
+    totalRefs++
+    const to = idx.get(w)
+    if (to === undefined) { unresolved++; continue }
+    edges.push({ f: from, t: to, binding: merge(nodes[from].uuid, nodes[to].uuid), dir: compose(nodes[from].horo, nodes[to].horo) })
   }
 }
 
-// 3. Root — Merkle-fold all node uuids → one 128-bit address of the whole
-let layer = [...node.values()].sort()
+// ── 3. root (Merkle fold) ──
+let layer = nodes.map((n) => n.uuid).sort()
 while (layer.length > 1) {
   const next = []
   for (let i = 0; i < layer.length; i += 2) next.push(i + 1 < layer.length ? merge(layer[i], layer[i + 1]) : layer[i])
@@ -68,15 +94,61 @@ while (layer.length > 1) {
 }
 const root = layer[0]
 
-// 4. SEE the compression
-const N = node.size, seed = 16
+// ── 4. breakdowns ──
 const fmt = (n) => n.toLocaleString('en-US')
+const byDim = {}; for (const n of nodes) byDim[n.dim] = (byDim[n.dim] || 0) + 1
+const byDir = {}; for (const e of edges) byDir[e.dir] = (byDir[e.dir] || 0) + 1
+const flow = [1, 2, 4, 8, 7, 5].reduce((s, d) => s + (byDir[d] || 0), 0)
+const axis = [3, 6, 9].reduce((s, d) => s + (byDir[d] || 0), 0)
+
 console.log(`\n── the multidimensional uuid matrix ──`)
-console.log(`nodes (atoms)        N = ${N}            each → one 128-bit content-uuid`)
-console.log(`edges (collisions)   E = ${fmt(edges)}  (${fmt(resolved)} resolve → merge(a,b) binding-uuid)`)
-console.log(`corpus               ${fmt(corpusBytes)} bytes of SKILL.md`)
-console.log(`root uuid (the seed) ${root}`)
-console.log(`\n── the compression, seen ──`)
-console.log(`whole → one address  ${fmt(corpusBytes)} bytes  →  ${seed} bytes (the root)  =  ${fmt(Math.round(corpusBytes / seed))}×`)
-console.log(`per-element width     128 bits at EVERY scale (node · edge · sub-tree · whole) — the singularity`)
-console.log(`address growth        O(1) — the corpus grows, the address stays 128-bit (holographic)\n`)
+console.log(`nodes (atoms)        N = ${nodes.length}`)
+console.log(`edges (collisions)   E = ${fmt(edges.length)}  (${fmt(totalRefs)} refs, ${unresolved} unresolved — aura parity)`)
+console.log(`corpus               ${fmt(corpusBytes)} bytes → root ${root} (16 bytes) = ${fmt(Math.round(corpusBytes / 16))}×`)
+
+console.log(`\n── structural dimensions (nodes per path domain) ──`)
+for (const [d, c] of Object.entries(byDim).sort((a, b) => b[1] - a[1])) console.log(`  ${d.padEnd(12)} ${fmt(c)}`)
+
+console.log(`\n── harmonic directions (edges by horo composeSteps a×b — content-derived ring) ──`)
+for (const d of [1, 2, 4, 8, 7, 5, 9, 3, 6]) if (byDir[d]) console.log(`  ${d} ${HORO_LABEL[d].padEnd(8)} ${fmt(byDir[d])}`)
+console.log(`  flow {1,2,4,8,7,5} = ${fmt(flow)}   ·   axis {3,6,9} = ${fmt(axis)}   (${(flow / (flow + axis) * 100).toFixed(1)}% flow)`)
+
+// ── 5. emit the registry ──
+if (EMIT) {
+  const dir = join(ROOT, 'services', 'uuid-matrix')
+  mkdirSync(dir, { recursive: true })
+  const j = (o) => JSON.stringify(o)
+  const out = [
+    '/**',
+    ' * GENERATED by scripts/gen-uuid-matrix.mjs — do not edit by hand.',
+    ' *',
+    ' * The erpax skill corpus as a content-addressed uuid matrix: every atom is a',
+    ' * v8 content-uuid (node), every [[link]] is merge(from,to) (binding-uuid — the',
+    ' * uuid-trinity collision), tagged by structural dimension + harmonic direction',
+    ' * (horo composeSteps = digitalRoot(a×b)). The whole folds to UUID_MATRIX_ROOT.',
+    ' * Resolver matches the aura speech-gate exactly (0 dead links). Re-run: pnpm matrix:generate.',
+    ' *',
+    ' * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + the horo digital-root ring',
+    ' * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)',
+    ' */',
+    '',
+    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly dim: string; readonly horo: number }',
+    'export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }',
+    '',
+    `export const UUID_MATRIX_ROOT = ${j(root)} as const`,
+    `export const UUID_MATRIX_DIMS = ${j([...new Set(nodes.map((n) => n.dim))])} as const`,
+    '',
+    'export const UUID_MATRIX_NODES: readonly MatrixNode[] = [',
+    ...nodes.map((n) => `  ${j(n)},`),
+    ']',
+    '',
+    'export const UUID_MATRIX_EDGES: readonly MatrixEdge[] = [',
+    ...edges.map((e) => `  ${j(e)},`),
+    ']',
+    '',
+  ]
+  const file = join(dir, 'matrix.generated.ts')
+  writeFileSync(file, out.join('\n'))
+  console.log(`\nemitted ${relative(process.cwd(), file)} — ${nodes.length} nodes, ${fmt(edges.length)} edges, root ${root}`)
+}
+console.log()
