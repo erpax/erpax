@@ -313,6 +313,17 @@ const isCLI = process.argv.some((value) => {
 })
 const isProduction = process.env.NODE_ENV === 'production'
 
+// PAYLOAD_SECRET underpins password hashing + field encryption. Refuse to boot at
+// runtime with an empty / zero-entropy secret (a silent KDF-defeating fallback).
+// Build & CLI phases carry no runtime secrets, so an inert placeholder is tolerated
+// there only — it is never used for any cryptographic operation.
+const payloadSecret = process.env.PAYLOAD_SECRET
+if (!payloadSecret && !isCLI && process.env.NEXT_PHASE !== PHASE_PRODUCTION_BUILD) {
+  throw new Error(
+    'PAYLOAD_SECRET is required and must not be empty. Generate one with: openssl rand -hex 32',
+  )
+}
+
 const createLog =
   (level: string, fn: typeof console.log) => (objOrMsg: object | string, msg?: string) => {
     if (typeof objOrMsg === 'string') {
@@ -1139,7 +1150,7 @@ export default buildConfig({
     // corpus + serves the requested format. See src/services/skill-router.
     skillRouterPlugin(),
   ],
-  secret: process.env.PAYLOAD_SECRET || '',
+  secret: payloadSecret || 'INSECURE_BUILD_ONLY_PLACEHOLDER',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
