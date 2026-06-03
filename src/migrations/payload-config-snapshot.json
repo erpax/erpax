@@ -99,7 +99,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "users": {
       "autosave": false,
@@ -218,7 +218,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "roles": {
       "autosave": false,
@@ -253,7 +253,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "user-roles": {
       "autosave": false,
@@ -276,7 +276,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "pages": {
       "autosave": true,
@@ -756,7 +756,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "categories": {
       "autosave": false,
@@ -803,7 +803,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "invoices": {
       "autosave": false,
@@ -1111,7 +1111,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "invoice-lines": {
       "autosave": false,
@@ -1308,7 +1308,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "payment-methods": {
       "autosave": false,
@@ -1364,7 +1364,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "payments": {
       "autosave": false,
@@ -1450,7 +1450,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "subscription-plans": {
       "autosave": false,
@@ -1503,7 +1503,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "subscriptions": {
       "autosave": false,
@@ -1565,7 +1565,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "items": {
       "autosave": false,
@@ -1705,7 +1705,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "gl-accounts": {
       "autosave": false,
@@ -1770,7 +1770,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "gl-posting-rules": {
       "autosave": false,
@@ -1817,7 +1817,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "journal-entries": {
       "autosave": false,
@@ -1915,7 +1915,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "gl-postings": {
       "autosave": false,
@@ -2004,7 +2004,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "period-locks": {
       "autosave": false,
@@ -2069,7 +2069,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "closing-entries": {
       "autosave": false,
@@ -2194,7 +2194,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bank-statements": {
       "autosave": false,
@@ -2301,7 +2301,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bank-transactions": {
       "autosave": false,
@@ -2414,7 +2414,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bank-accounts": {
       "autosave": false,
@@ -2488,7 +2488,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "account-reconciliations": {
       "autosave": false,
@@ -2631,7 +2631,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bank-reconciliations": {
       "autosave": false,
@@ -2714,7 +2714,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "financial-statements": {
       "autosave": false,
@@ -2806,7 +2806,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "period-end-adjustments": {
       "autosave": false,
@@ -2856,7 +2856,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "recurring-journals": {
       "autosave": false,
@@ -2960,7 +2960,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "prior-period-adjustments": {
       "autosave": false,
@@ -3025,7 +3025,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "rounding-adjustments": {
       "autosave": false,
@@ -3090,7 +3090,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tax-calculations": {
       "autosave": false,
@@ -3158,7 +3158,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tax-codes": {
       "autosave": false,
@@ -3244,7 +3244,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tax-jurisdictions": {
       "autosave": false,
@@ -3318,7 +3318,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tax-returns": {
       "autosave": false,
@@ -3410,7 +3410,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "currency-rates": {
       "autosave": false,
@@ -3469,7 +3469,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fiscal-periods": {
       "autosave": false,
@@ -3588,7 +3588,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fiscal-calendars": {
       "autosave": false,
@@ -3656,7 +3656,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fiscal-period-snapshots": {
       "autosave": false,
@@ -3712,7 +3712,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fixed-assets": {
       "autosave": false,
@@ -3840,7 +3840,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "depreciation-schedules": {
       "autosave": false,
@@ -3908,7 +3908,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "customers": {
       "autosave": false,
@@ -4036,7 +4036,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "leads": {
       "autosave": false,
@@ -4137,7 +4137,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "opportunities": {
       "autosave": false,
@@ -4223,7 +4223,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "customer-segments": {
       "autosave": false,
@@ -4288,7 +4288,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "quotes": {
       "autosave": false,
@@ -4377,7 +4377,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "sales-orders": {
       "autosave": false,
@@ -4502,7 +4502,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "sales-commissions": {
       "autosave": false,
@@ -4606,7 +4606,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "credit-memos": {
       "autosave": false,
@@ -4674,7 +4674,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "returns": {
       "autosave": false,
@@ -4748,7 +4748,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "shipments": {
       "autosave": false,
@@ -4825,7 +4825,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "refunds": {
       "autosave": false,
@@ -4896,7 +4896,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "payment-allocations": {
       "autosave": false,
@@ -4964,7 +4964,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "dunning-cycles": {
       "autosave": false,
@@ -5071,7 +5071,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "vendors": {
       "autosave": false,
@@ -5223,7 +5223,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "vendor-quotes": {
       "autosave": false,
@@ -5348,7 +5348,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "vendor-scorecards": {
       "autosave": false,
@@ -5458,7 +5458,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "purchase-orders": {
       "autosave": false,
@@ -5568,7 +5568,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "purchase-requisitions": {
       "autosave": false,
@@ -5702,7 +5702,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "goods-receipts": {
       "autosave": false,
@@ -5773,7 +5773,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "inventory-movements": {
       "autosave": false,
@@ -5856,7 +5856,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "warehouse-locations": {
       "autosave": false,
@@ -5924,7 +5924,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "cost-centers": {
       "autosave": false,
@@ -6010,7 +6010,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "budget-planning": {
       "autosave": false,
@@ -6087,7 +6087,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "cost-variances": {
       "autosave": false,
@@ -6164,7 +6164,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "intercompany-transactions": {
       "autosave": false,
@@ -6238,7 +6238,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "consolidation-eliminations": {
       "autosave": false,
@@ -6306,7 +6306,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fx-transactions": {
       "autosave": false,
@@ -6383,7 +6383,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "contracts": {
       "autosave": false,
@@ -6499,7 +6499,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "performance-obligations": {
       "autosave": false,
@@ -6573,7 +6573,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "commitments-and-contingencies": {
       "autosave": false,
@@ -6656,7 +6656,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "leases": {
       "autosave": false,
@@ -6808,7 +6808,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "lease-modifications": {
       "autosave": false,
@@ -6921,7 +6921,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "lease-period-postings": {
       "autosave": false,
@@ -7019,7 +7019,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "payment-runs": {
       "autosave": false,
@@ -7144,7 +7144,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "sepa-mandates": {
       "autosave": false,
@@ -7224,7 +7224,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "payroll-runs": {
       "autosave": false,
@@ -7385,7 +7385,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "employees": {
       "autosave": false,
@@ -7573,7 +7573,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "connections": {
       "autosave": false,
@@ -7617,7 +7617,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "sectors": {
       "autosave": false,
@@ -7682,7 +7682,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "job-positions": {
       "autosave": false,
@@ -7807,7 +7807,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "time-entries": {
       "autosave": false,
@@ -7884,7 +7884,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "leave-requests": {
       "autosave": false,
@@ -7988,7 +7988,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "performance-reviews": {
       "autosave": false,
@@ -8161,7 +8161,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "expense-reports": {
       "autosave": false,
@@ -8328,7 +8328,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "recruiting-pipeline": {
       "autosave": false,
@@ -8459,7 +8459,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "activities": {
       "autosave": false,
@@ -8542,7 +8542,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "projects": {
       "autosave": false,
@@ -8643,7 +8643,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "project-tasks": {
       "autosave": false,
@@ -8732,7 +8732,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "project-milestones": {
       "autosave": false,
@@ -8806,7 +8806,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "work-orders": {
       "autosave": false,
@@ -8892,7 +8892,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "workflow-definitions": {
       "autosave": false,
@@ -9005,7 +9005,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "workflow-instances": {
       "autosave": false,
@@ -9112,7 +9112,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bills-of-materials": {
       "autosave": false,
@@ -9210,7 +9210,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "batches": {
       "autosave": false,
@@ -9314,7 +9314,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "work-centers": {
       "autosave": false,
@@ -9379,7 +9379,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "work-shifts": {
       "autosave": false,
@@ -9453,7 +9453,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "operations": {
       "autosave": false,
@@ -9500,7 +9500,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "routings": {
       "autosave": false,
@@ -9559,7 +9559,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "operation-runs": {
       "autosave": false,
@@ -9654,7 +9654,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "production-receipts": {
       "autosave": false,
@@ -9740,7 +9740,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "quality-inspections": {
       "autosave": false,
@@ -9820,7 +9820,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "wip-snapshots": {
       "autosave": false,
@@ -9900,7 +9900,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tags": {
       "autosave": false,
@@ -9938,7 +9938,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "taggings": {
       "autosave": false,
@@ -9982,7 +9982,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "properties": {
       "autosave": false,
@@ -10113,7 +10113,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "spaces": {
       "autosave": false,
@@ -10211,7 +10211,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "maintenance-requests": {
       "autosave": false,
@@ -10315,7 +10315,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "maintenance-work-orders": {
       "autosave": false,
@@ -10491,7 +10491,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bookable-resources": {
       "autosave": false,
@@ -10622,7 +10622,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "bookings": {
       "autosave": false,
@@ -10744,7 +10744,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "carriers": {
       "autosave": false,
@@ -10824,7 +10824,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tracking-events": {
       "autosave": false,
@@ -10892,7 +10892,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "customs-declarations": {
       "autosave": false,
@@ -11008,7 +11008,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "consignment-arrangements": {
       "autosave": false,
@@ -11091,7 +11091,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "consignment-inventory": {
       "autosave": false,
@@ -11171,7 +11171,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "consignment-sales": {
       "autosave": false,
@@ -11257,7 +11257,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-events": {
       "autosave": false,
@@ -11396,7 +11396,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "evidence-attestations": {
       "autosave": false,
@@ -11479,7 +11479,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "shares": {
       "autosave": false,
@@ -11529,7 +11529,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "entity-types": {
       "autosave": false,
@@ -11582,7 +11582,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "taxing-jurisdictions": {
       "autosave": false,
@@ -11662,7 +11662,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "entity-legal-structures": {
       "autosave": false,
@@ -11712,7 +11712,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "compliance-frameworks": {
       "autosave": false,
@@ -11756,7 +11756,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "compliance-requirements": {
       "autosave": false,
@@ -11800,7 +11800,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "internal-controls": {
       "autosave": false,
@@ -11856,7 +11856,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "control-tests": {
       "autosave": false,
@@ -11927,7 +11927,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-samples": {
       "autosave": false,
@@ -11989,7 +11989,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "compliance-gaps": {
       "autosave": false,
@@ -12054,7 +12054,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-evidence": {
       "autosave": false,
@@ -12146,7 +12146,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-findings": {
       "autosave": false,
@@ -12229,7 +12229,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "remediation-plans": {
       "autosave": false,
@@ -12321,7 +12321,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-committees": {
       "autosave": false,
@@ -12362,7 +12362,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-committee-members": {
       "autosave": false,
@@ -12415,7 +12415,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "board-actions": {
       "autosave": false,
@@ -12474,7 +12474,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "management-certifications": {
       "autosave": false,
@@ -12533,7 +12533,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "regulatory-reports": {
       "autosave": false,
@@ -12592,7 +12592,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "internal-policies": {
       "autosave": false,
@@ -12645,7 +12645,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "statutory-report-templates": {
       "autosave": false,
@@ -12701,7 +12701,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "statutory-field-mappings": {
       "autosave": false,
@@ -12748,7 +12748,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "policy-versions": {
       "autosave": false,
@@ -12789,7 +12789,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "policy-acknowledgments": {
       "autosave": false,
@@ -12833,7 +12833,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "compliance-deadlines": {
       "autosave": false,
@@ -12883,7 +12883,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "compliance-notifications": {
       "autosave": false,
@@ -12936,7 +12936,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "reporting-standards": {
       "autosave": false,
@@ -12980,7 +12980,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "reporting-mappings": {
       "autosave": false,
@@ -13030,7 +13030,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "related-party-transactions": {
       "autosave": false,
@@ -13107,7 +13107,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "management-assessment-icfr": {
       "autosave": false,
@@ -13205,7 +13205,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "disclosure-checklists": {
       "autosave": false,
@@ -13294,7 +13294,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-committee-minutes": {
       "autosave": false,
@@ -13446,7 +13446,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "risk-register": {
       "autosave": false,
@@ -13541,7 +13541,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "debt-schedule": {
       "autosave": false,
@@ -13687,7 +13687,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "internal-audit-function": {
       "autosave": false,
@@ -13839,7 +13839,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "segment-reporting": {
       "autosave": false,
@@ -13973,7 +13973,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "consent-records": {
       "autosave": false,
@@ -14041,7 +14041,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "data-subject-requests": {
       "autosave": false,
@@ -14106,7 +14106,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "data-processing-activities": {
       "autosave": false,
@@ -14207,7 +14207,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "kyc-checks": {
       "autosave": false,
@@ -14299,7 +14299,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "beneficial-owners": {
       "autosave": false,
@@ -14370,7 +14370,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "packages": {
       "autosave": false,
@@ -14462,7 +14462,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "messages": {
       "autosave": false,
@@ -14550,7 +14550,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "csrd-disclosures": {
       "autosave": false,
@@ -14654,7 +14654,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "carbon-emissions": {
       "autosave": false,
@@ -14782,7 +14782,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "biological-assets": {
       "autosave": false,
@@ -14856,7 +14856,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "mineral-resource-assets": {
       "autosave": false,
@@ -14924,7 +14924,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "investment-properties": {
       "autosave": false,
@@ -15001,7 +15001,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "provisions": {
       "autosave": false,
@@ -15120,7 +15120,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "government-grants": {
       "autosave": false,
@@ -15233,7 +15233,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "deferred-tax-items": {
       "autosave": false,
@@ -15310,7 +15310,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "share-based-payments": {
       "autosave": false,
@@ -15432,7 +15432,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "business-combinations": {
       "autosave": false,
@@ -15545,7 +15545,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "held-for-sale-classifications": {
       "autosave": false,
@@ -15637,7 +15637,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fair-value-measurements": {
       "autosave": false,
@@ -15738,7 +15738,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "earnings-per-share": {
       "autosave": false,
@@ -15842,7 +15842,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "insurance-contracts": {
       "autosave": false,
@@ -15928,7 +15928,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "regulatory-deferral-accounts": {
       "autosave": false,
@@ -15987,7 +15987,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "post-balance-sheet-events": {
       "autosave": false,
@@ -16058,7 +16058,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "transaction-failures": {
       "autosave": false,
@@ -16135,7 +16135,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "transfer-pricing-files": {
       "autosave": false,
@@ -16290,7 +16290,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "standards": {
       "autosave": false,
@@ -16403,7 +16403,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "memories": {
       "autosave": false,
@@ -16495,7 +16495,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "mcp-tool-metadata": {
       "autosave": false,
@@ -16560,7 +16560,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "translations": {
       "autosave": false,
@@ -16649,7 +16649,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "commitments": {
       "autosave": false,
@@ -16753,7 +16753,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "contract-amendments": {
       "autosave": false,
@@ -16839,7 +16839,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "contract-performance": {
       "autosave": false,
@@ -16931,7 +16931,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "contract-signatures": {
       "autosave": false,
@@ -17029,7 +17029,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "legal-entities": {
       "autosave": false,
@@ -17148,7 +17148,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "ai-suggestions": {
       "autosave": false,
@@ -17249,7 +17249,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "usage-records": {
       "autosave": false,
@@ -17323,7 +17323,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "consolidations": {
       "autosave": false,
@@ -17424,7 +17424,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "tax-periods": {
       "autosave": false,
@@ -17525,7 +17525,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-reports": {
       "autosave": false,
@@ -17656,7 +17656,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "transfer-pricing-adjustments": {
       "autosave": false,
@@ -17727,7 +17727,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "post-close-analytics-reports": {
       "autosave": false,
@@ -17798,7 +17798,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "fiscal-devices": {
       "autosave": false,
@@ -17863,7 +17863,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "sales": {
       "autosave": false,
@@ -17976,7 +17976,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "receipts": {
       "autosave": false,
@@ -18086,7 +18086,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "operators": {
       "autosave": false,
@@ -18127,7 +18127,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "terminals": {
       "autosave": false,
@@ -18171,7 +18171,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "audit-submissions": {
       "autosave": false,
@@ -18224,7 +18224,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "addresses": {
       "autosave": false,
@@ -18322,7 +18322,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "variants": {
       "autosave": true,
@@ -18392,7 +18392,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "variantOptions": {
       "autosave": false,
@@ -18427,7 +18427,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "products": {
       "autosave": true,
@@ -18635,7 +18635,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "orders": {
       "autosave": false,
@@ -18727,7 +18727,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "transactions": {
       "autosave": false,
@@ -18831,7 +18831,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "forms": {
       "autosave": false,
@@ -18935,7 +18935,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "form-submissions": {
       "autosave": false,
@@ -18967,7 +18967,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "redirects": {
       "autosave": false,
@@ -18999,7 +18999,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "search": {
       "autosave": false,
@@ -19147,7 +19147,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "imports": {
       "autosave": false,
@@ -19224,7 +19224,7 @@
         }
       },
       "localizeStatus": false,
-      "versions": false
+      "versions": true
     },
     "payload-mcp-api-keys": {
       "autosave": false,
@@ -19239,172 +19239,7 @@
         "description": {
           "localized": false
         },
-        "pages": {
-          "localized": false
-        },
-        "pages.find": {
-          "localized": false
-        },
-        "pages.create": {
-          "localized": false
-        },
-        "pages.update": {
-          "localized": false
-        },
-        "pages.delete": {
-          "localized": false
-        },
-        "posts": {
-          "localized": false
-        },
-        "posts.find": {
-          "localized": false
-        },
-        "posts.create": {
-          "localized": false
-        },
-        "posts.update": {
-          "localized": false
-        },
-        "posts.delete": {
-          "localized": false
-        },
-        "media": {
-          "localized": false
-        },
-        "media.find": {
-          "localized": false
-        },
-        "media.create": {
-          "localized": false
-        },
-        "media.update": {
-          "localized": false
-        },
-        "media.delete": {
-          "localized": false
-        },
-        "categories": {
-          "localized": false
-        },
-        "categories.find": {
-          "localized": false
-        },
-        "categories.create": {
-          "localized": false
-        },
-        "categories.update": {
-          "localized": false
-        },
-        "categories.delete": {
-          "localized": false
-        },
-        "products": {
-          "localized": false
-        },
-        "products.find": {
-          "localized": false
-        },
-        "products.create": {
-          "localized": false
-        },
-        "products.update": {
-          "localized": false
-        },
-        "products.delete": {
-          "localized": false
-        },
-        "memories": {
-          "localized": false
-        },
-        "memories.find": {
-          "localized": false
-        },
-        "memories.create": {
-          "localized": false
-        },
-        "memories.update": {
-          "localized": false
-        },
-        "memories.delete": {
-          "localized": false
-        },
-        "connections": {
-          "localized": false
-        },
-        "connections.find": {
-          "localized": false
-        },
-        "connections.create": {
-          "localized": false
-        },
-        "connections.update": {
-          "localized": false
-        },
-        "connections.delete": {
-          "localized": false
-        },
-        "messages": {
-          "localized": false
-        },
-        "messages.find": {
-          "localized": false
-        },
-        "messages.create": {
-          "localized": false
-        },
-        "messages.update": {
-          "localized": false
-        },
-        "messages.delete": {
-          "localized": false
-        },
-        "jobPositions": {
-          "localized": false
-        },
-        "jobPositions.find": {
-          "localized": false
-        },
-        "jobPositions.create": {
-          "localized": false
-        },
-        "jobPositions.update": {
-          "localized": false
-        },
-        "jobPositions.delete": {
-          "localized": false
-        },
-        "employees": {
-          "localized": false
-        },
-        "employees.find": {
-          "localized": false
-        },
-        "employees.create": {
-          "localized": false
-        },
-        "employees.update": {
-          "localized": false
-        },
-        "employees.delete": {
-          "localized": false
-        },
-        "header": {
-          "localized": false
-        },
-        "header.find": {
-          "localized": false
-        },
-        "header.update": {
-          "localized": false
-        },
-        "footer": {
-          "localized": false
-        },
-        "footer.find": {
-          "localized": false
-        },
-        "footer.update": {
+        "scopes": {
           "localized": false
         },
         "updatedAt": {

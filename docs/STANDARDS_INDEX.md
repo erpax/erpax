@@ -1208,10 +1208,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1219:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1237:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1238:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1257:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1231:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1249:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1250:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1269:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/plugins/auth/access/field-access.ts:8: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/index.ts:10: * @standard NIST SP-800-162 attribute-based-access-control
 src/plugins/auth/access/index.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -1219,8 +1219,11 @@ src/plugins/auth/access/predicates.ts:111: * @standard NIST INCITS-359-2012 role
 src/plugins/auth/access/predicates.ts:36: * @standard NIST INCITS-359-2012 role-based-access-control privileged-role
 src/plugins/auth/access/predicates.ts:79: * @standard NIST INCITS-359-2012 role-based-access-control
 src/plugins/auth/access/predicates.ts:7: * @standard NIST INCITS-359-2012 role-based-access-control
+src/plugins/mcpScopes/index.ts:27: * @standard ISO/IEC 27002 §5.15 access-control + §5.18 access-rights (per-key narrowing)
+src/plugins/mcpScopes/index.ts:28: * @standard ISO/IEC 27001 §A.9.4.1 information access restriction
 src/plugins/naming/index.ts:28: * @standard RFC 9562 §5.8 name-based UUID (the digest source)
 src/plugins/taggable/index.ts:21: * @standard RFC-4122 §4.3 uuid
+src/plugins/versions/index.ts:29: * @standard ISO 19011:2018 §6.4.6 audit-evidence (version history is the trail)
 src/sdk/accounting-client/index.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/self/sufficient/index.ts:25: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
 src/self/sufficient/index.ts:26: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
@@ -3613,6 +3616,7 @@ src/plugins/auth/access/predicates.ts:114: * @compliance SOC-2 CC6.2 prior-to-is
 src/plugins/auth/access/predicates.ts:38: * @compliance SOC-2 CC6.3 privileged-access-management
 src/plugins/auth/access/predicates.ts:83: * @compliance GDPR Art.5(1)(f) integrity-and-confidentiality
 src/plugins/auth/access/predicates.ts:84: * @compliance SOC-2 CC6.1 logical-access-controls
+src/plugins/versions/index.ts:30: * @compliance SOX §404 internal-controls record-retention
 src/services/accounting/debit-credit.ts:15: * @compliance SOX §404 internal-controls
 src/services/accounting/reports.service.ts:27: * @compliance SOX §302 disclosure-controls
 src/services/accounting/seeds/templates/bg-nss.ts:20: * @compliance EU 2014/55 b2g-e-invoicing-mandate
@@ -4274,9 +4278,9 @@ src/jobs/dunningJob/index.ts:10: * @accounting IFRS IFRS-9 expected-credit-loss 
 src/jobs/dunningJob/index.ts:11: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
 src/jobs/dunningJob/index.ts:12: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/jobs/dunningJob/index.ts:13: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
-src/payload.config.ts:1217:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1218:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1239:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1229:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1230:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1251:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/sdk/accounting-client/index.ts:10: * @accounting US-GAAP ASC-205 presentation-of-financial-statements
 src/sdk/accounting-client/index.ts:9: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/services/accounting/debit-credit.ts:10: * @accounting IFRS IAS-1 presentation-of-financial-statements
@@ -5388,9 +5392,9 @@ src/jobs/dunningJob.test.ts:11: * @audit ISO-19011:2018 audit-trail
 src/jobs/dunningJob/index.ts:16: * @audit ISO-19011:2018 audit-trail
 src/jobs/salesAuditFileJob/index.ts:12: * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1220:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1240:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1258:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1232:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1252:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1270:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/plugins/naming/index.ts:29: * @audit Conservation Law 8 content-uuid (schema identifiers are uuids too)
 src/sdk/accounting-client/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/self/sufficient/index.ts:27: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)

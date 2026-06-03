@@ -16,6 +16,8 @@ import { r2Storage } from '@payloadcms/storage-r2'
 import { contentUuidPlugin } from './plugins/contentUuid'
 import { taggablePlugin } from './plugins/taggable'
 import { uuidNamesPlugin } from './plugins/naming'
+import { collapseApiKeyScopes } from './plugins/mcpScopes'
+import { versionsPlugin } from './plugins/versions'
 import { skillRouterPlugin } from './services/skill-router/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
@@ -1119,17 +1121,21 @@ export default buildConfig({
         header: { enabled: true },
         footer: { enabled: true },
       },
-      overrideApiKeyCollection: (collection) => ({
-        ...collection,
-        admin: {
-          ...collection.admin,
-          group: localeRecord('plugins.mcpGroup'),
-        },
-        labels: {
-          plural: localeRecord('payload-mcp-api-keys.plural'),
-          singular: localeRecord('payload-mcp-api-keys.singular'),
-        },
-      }),
+      // Collapse the 824-column capability matrix (over D1's 100-col cap) to a
+      // compact `scopes` field + virtual afterRead capabilities — the same
+      // matrix→cross collapse as access. See src/plugins/mcpScopes.
+      overrideApiKeyCollection: (collection) =>
+        collapseApiKeyScopes({
+          ...collection,
+          admin: {
+            ...collection.admin,
+            group: localeRecord('plugins.mcpGroup'),
+          },
+          labels: {
+            plural: localeRecord('payload-mcp-api-keys.plural'),
+            singular: localeRecord('payload-mcp-api-keys.singular'),
+          },
+        }),
     }),
     // Make every collection taggable — one polymorphic `taggings` join +
     // a reverse `tags` join injected everywhere. Before contentUuidPlugin
@@ -1140,6 +1146,12 @@ export default buildConfig({
     // every collection. Runs LAST so it covers collections added by the
     // plugins above. See the `identity` + `bindings` skills.
     contentUuidPlugin(),
+    // All is versioned: enable NATIVE Payload versioning (history-only, bounded)
+    // on every collection — the native `_versions` chain is the persistent store,
+    // and restoreVersion works everywhere. Runs after contentUuid so each version
+    // row carries the content-uuid (the version leaf), before naming so the `_v`
+    // tables get derived names. See the `versions` skill + src/versions/cross.
+    versionsPlugin(),
     // Every internal table/enum name is a content-uuid of its path — fixed
     // length, so it can never overflow SQLite's 63-char limit. Names are
     // derived, never invented; references (collection slugs, field names)
