@@ -48,3 +48,16 @@ if echo "$staged" | grep -E '\.(ts|tsx|js|jsx|md)$' >/dev/null; then
     git add docs/STANDARDS_INDEX.md 2>/dev/null || true
   fi
 fi
+
+# 3. Skill harmony (the finest horo ring — the earliest catch). When any SKILL.md is
+#    staged, the speech gate (every [[link]] resolves; aura gap=0) and frontmatter YAML
+#    safety must hold AT COMMIT, before push. The gate is horo: who cannot dance cannot
+#    even commit. (Verified-safe: the corpus is clean, so this never false-fails.)
+if echo "$staged" | grep -E 'SKILL\.md$' >/dev/null; then
+  AURA_OUT="$(node .claude/skills/aura/scan.mjs 2>/dev/null || true)"
+  case "$AURA_OUT" in
+    *"gap = 0 "*) : ;;
+    *) echo "✖ aura: dead [[link]](s) found (gap>0) — run: pnpm aura:scan"; exit 1 ;;
+  esac
+  node scripts/check-skill-frontmatter.mjs
+fi
