@@ -5,11 +5,9 @@ description: The business-combinations collection — Business Combinations — 
 
 # business-combinations
 
-Business Combinations — IFRS 3 acquirer-side M&A register.
+IFRS 3 acquirer-side M&A register. Single-folder collection node: `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks). One folder per collection ⇒ no scatter ⇒ no drift.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Captures [[accounting]] goodwill computation (§32: consideration transferred + NCI + previously-held interest − fair value of identifiable net assets acquired) paired with [[journal-entries]] and [[legal-entities]]; composes [[evidence-attestations]] for signed PPA walk-through anchors. Fair value hierarchy per [[fair-value-measurements]]; tangible PPE per [[fixed-assets]]; audit trail via [[identity]]/[[proof]].
 
 ## Standards
 - IFRS IFRS-3 §10-§13 identifying-the-acquirer

@@ -7,9 +7,7 @@ description: The recurring-journals collection — Recurring Journals — automa
 
 Recurring Journals — automation register for IAS-1 §27 accrual-basis.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Template definitions for materialised [[JournalEntries]] that recur on a schedule (rent, depreciation accrual, amortisation, prepaid release, deferred-revenue release, etc.). Pairs with the Workers `period-close` queue to instantiate scheduled entries at each period rollover.
 
 ## Standards
 - ISO-8601-1:2019 date-time recurrence
