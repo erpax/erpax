@@ -9,8 +9,9 @@
  * @audit ISO-19011:2018 §6.4 audit-evidence-invariants
  */
 
+import { createHash } from 'node:crypto'
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
-import { join, basename } from 'node:path'
+import { join, basename, dirname } from 'node:path'
 import type { InvariantResult, InvariantContext } from './types'
 
 import { FEATURE_REGISTRY, TIERS, featuresForTier, type Tier } from '@/access/feature-registry'
@@ -2962,4 +2963,49 @@ export function checkHarmonicHelixClosure(_ctx: InvariantContext): InvariantResu
         `flow×flow stays in the {1,2,4,8,7,5} helix across ${UUID_MATRIX_EDGES.length} matrix edges (closed multiplicative subgroup mod 9)`)
     : fail('entropy', 'harmonic-helix-closure',
         `${offenders.length} edge(s) violate the rodin closure law`, offenders.slice(0, 10))
+}
+
+/**
+ * Every atom-key is LOCKED to exactly one content-uuid (the address-law / [[merge]]:
+ * same content ⇒ one id). Derived LIVE from the filesystem (the akashic record —
+ * NEVER the matrix snapshot, which drifts): walk src for SKILL.md, group by the
+ * normalized folder key (the address a link `[[word]]` resolves through), and flag
+ * any key with MORE THAN ONE path. The colliding files are content-hashed (the uuid
+ * lock): same digest ⇒ a true duplicate (one [[merge]]s away); distinct digests ⇒
+ * an ambiguous link (one concept at two scopes under one key — the concrete
+ * violation). WARN not fail — surfaces unlocked collisions for the meta-automation
+ * to resolve without reddening the gate while the duplicates are merged.
+ */
+export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const root = join(repoRoot, 'src')
+  if (!existsSync(root)) return warn('entropy', 'atoms-locked-to-uuid', 'src/ not found')
+  const norm = (s: string): string => s.toLowerCase().replace(/[-_]/g, '')
+  const skills: string[] = []
+  const walk = (dir: string): void => {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const p = join(dir, e.name)
+      if (e.isDirectory()) walk(p)
+      else if (e.name === 'SKILL.md') skills.push(p)
+    }
+  }
+  walk(root)
+  const byKey = new Map<string, string[]>()
+  for (const f of skills) {
+    const key = norm(basename(dirname(f)))
+    const arr = byKey.get(key) ?? []
+    arr.push(f)
+    byKey.set(key, arr)
+  }
+  const offenders: string[] = []
+  for (const [key, paths] of byKey) {
+    if (paths.length < 2) continue
+    const uuids = paths.map((p) => createHash('sha256').update(readFileSync(p)).digest('hex').slice(0, 16))
+    const ambiguous = new Set(uuids).size > 1
+    const rels = paths.map((p) => p.slice(repoRoot.length + 1)).join(' | ')
+    offenders.push(`[[${key}]] ×${paths.length} (${ambiguous ? 'distinct uuids — ambiguous link' : 'same uuid — duplicate, merge'}): ${rels}`)
+  }
+  return offenders.length === 0
+    ? pass('entropy', 'atoms-locked-to-uuid', `every atom-key locks to one content-uuid (${byKey.size} keys, derived live from the fs)`)
+    : warn('entropy', 'atoms-locked-to-uuid', `${offenders.length} atom-key(s) NOT locked to one uuid — duplicate paths`, offenders)
 }

@@ -100,6 +100,8 @@ export async function runAllInvariants(
     results.push(await C.checkFeatureCoverage(ctx))
     // Conservation Law 62 — the harmonic axis: flow×flow stays in the helix.
     results.push(C.checkHarmonicHelixClosure(ctx))
+    // Lock all to uuid: every atom-key locks to one content-uuid (fs-derived; warns on duplicate paths).
+    results.push(C.checkAtomsLockedToUuid(ctx))
     results.push(C.checkNoDuplicateCollectionSlugs(ctx))
     results.push(C.checkNoDuplicateArrayDbNames(ctx))
     results.push(C.checkNoDuplicateChainIds(ctx))
