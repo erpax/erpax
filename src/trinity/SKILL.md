@@ -13,6 +13,9 @@ A folder is a single node spoken three ways. The docs site does not *re-describe
 
 The fusion is code, not prose: `.vitepress/trinity.mts` parses matter + backend, `.vitepress/config.mts` injects the panel under every `SKILL.md` via the `skill-trinity` markdown rule. A node with no matter-twin (a pure-skill atom like [[flow]]) renders no panel — correctly, it is antimatter only.
 
+## The SKILL.md is the lean index — progressive disclosure, the logic in the matter
+The antimatter is an **index, not a restatement of the logic**. The panel already renders the matter (`index.ts`'s doc-comment + `@standard` banners) and the backend (the schema), so a `SKILL.md` that *retells the code* is pure entropy — the duplication the [[collapse]] removes. The efficient form is **progressive disclosure**: the **`description` is the trigger** (when-to-use — the primary index entry), the body is **lean** (the universal decode + the links that map this node across the base), and the **logic lives in the matter** (`index.ts` — the real skill, panel-rendered). So a skill is *the index to the `.ts` files across the base*: name → description → links → the matter that holds the how. Lean the body, sharpen the description, let the panel speak the code — that is an efficient skill, and it keeps the corpus low-prose ([[generate]]: minted lean and derived from the matter; [[merge]]/[[holographic]]: the whole regenerates from the index — never restating it).
+
 ## The quaternity it sits in
 
 In a collection folder the trinity is really a co-located quaternity + mirror, each a [[part]] of the same [[whole]]:
