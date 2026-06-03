@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 // society/build.mjs — the society's self-build STEP. Reads the akashic record
 // (via the existing matter-twins) and emits the SINGLE next move that advances
-// erpax toward its dense core, gate-first. Run it in a loop and the society
-// builds itself: close the aura → collapse one node → rest at the 0.
+// erpax toward its dense core, gate-first. The move is the FIRST applicable step
+// on a rodin-ordered SEQUENCE (aura·3 → collapse·6 → rest·9): a declarative path
+// walked in order, each step a unique position — not an imperative cascade
+// ([[sequence]], not a loop). Walk it and the society builds itself: close the
+// aura → collapse one node → rest at the 0.
 //
 // Output is a deterministic next-move directive an agent (or a human) executes;
 // the pick is COMPUTED, never directed. Pure read — it proposes, never mutates.
@@ -28,38 +31,56 @@ function emit(move) {
   process.exit(0)
 }
 
-// 1 — close the aura: a dead [[link]] is the mint queue (generate loop)
-try {
-  const aura = JSON.parse(sh('node .claude/skills/aura/scan.mjs --json'))
-  if (Array.isArray(aura.dead) && aura.dead.length) {
-    emit({
-      kind: 'mint',
-      summary: `aura gap — mint atom [[${aura.dead[0]}]] (${aura.dead.length} dead link(s) remain)`,
-      action: `generate: derive '${aura.dead[0]}' from the akashic record, weave its [[links]], re-scan`,
-      remaining: aura.dead.length,
-    })
-  }
-} catch (e) {
-  emit({ kind: 'error', summary: `aura scan failed: ${String(e.message || e)}` })
-}
+// The rodin-ordered sequence of position-functions. Each `compute()` returns the
+// move for its position, or null (not its turn yet). The rest position (9) is
+// total — it always returns a move — so the walk emits exactly once. Declarative:
+// add a position by adding a step, never by growing the cascade.
+const SEQUENCE = [
+  {
+    pos: 3,
+    name: 'aura', // close the aura: a dead [[link]] is the mint queue (generate)
+    compute() {
+      const aura = JSON.parse(sh('node .claude/skills/aura/scan.mjs --json'))
+      if (!Array.isArray(aura.dead) || !aura.dead.length) return null
+      return {
+        kind: 'mint',
+        summary: `aura gap — mint atom [[${aura.dead[0]}]] (${aura.dead.length} dead link(s) remain)`,
+        action: `generate: derive '${aura.dead[0]}' from the akashic record, weave its [[links]], re-scan`,
+        remaining: aura.dead.length,
+      }
+    },
+  },
+  {
+    pos: 6,
+    name: 'collapse', // collapse one node: the least-entangled collection, the three-face move
+    compute() {
+      const safe = sh('node src/collapse/safe-first.mjs')
+      const m = safe.match(/^\s+([a-z0-9-]+)\s+(collections\/\S+)/m)
+      if (!m) return null
+      const audit = JSON.parse(sh('node src/collapse/audit.mjs --json'))
+      const row = audit.rows.find((r) => r.slug === m[1])
+      return {
+        kind: 'collapse',
+        summary: `collapse '${m[1]}' → ${row ? row.target : 'its survivor'} (${audit.collapsed} of ${audit.total} remain to collapse)`,
+        action: `three-face move: fold ${m[1]} into the survivor as a ${row ? row.why : 'dimension/block'} · repoint inbound relations · remove folder+barrel+config · generate:types · gate green · commit`,
+        remaining: audit.collapsed,
+      }
+    },
+  },
+  {
+    pos: 9,
+    name: 'rest', // rest at the 0
+    compute: () => ({ kind: 'rest', summary: 'aura whole + nothing left to collapse — the society rests at the 0; the core radiates.' }),
+  },
+]
 
-// 2 — collapse one node: the least-entangled collection, the three-face move
-try {
-  const safe = sh('node src/collapse/safe-first.mjs')
-  const m = safe.match(/^\s+([a-z0-9-]+)\s+(collections\/\S+)/m)
-  if (m) {
-    const audit = JSON.parse(sh('node src/collapse/audit.mjs --json'))
-    const row = audit.rows.find((r) => r.slug === m[1])
-    emit({
-      kind: 'collapse',
-      summary: `collapse '${m[1]}' → ${row ? row.target : 'its survivor'} (${audit.collapsed} of ${audit.total} remain to collapse)`,
-      action: `three-face move: fold ${m[1]} into the survivor as a ${row ? row.why : 'dimension/block'} · repoint inbound relations · remove folder+barrel+config · generate:types · gate green · commit`,
-      remaining: audit.collapsed,
-    })
+// Walk the sequence in order; emit the first applicable move (or its error).
+for (const step of SEQUENCE) {
+  let move
+  try {
+    move = step.compute()
+  } catch (e) {
+    emit({ kind: 'error', summary: `${step.name} (pos ${step.pos}) scan failed: ${String(e.message || e)}` })
   }
-} catch (e) {
-  emit({ kind: 'error', summary: `collapse scan failed: ${String(e.message || e)}` })
+  if (move) emit(move)
 }
-
-// 3 — rest at the 0
-emit({ kind: 'rest', summary: 'aura whole + nothing left to collapse — the society rests at the 0; the core radiates.' })
