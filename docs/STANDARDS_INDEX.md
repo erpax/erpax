@@ -2131,6 +2131,7 @@ src/services/uuid-governance/index.ts:46: * @standard eIDAS §6 electronic ident
 src/services/uuid-kv/index.ts:52: * @standard RFC 9562 §5.8 uuidv8 (both sides)
 src/services/uuid-kv/index.ts:53: * @standard RFC 8785 JCS (canonicalisation that makes equivalence hold)
 src/services/uuid-kv/index.ts:54: * @standard NIST FIPS 180-4 SHA-256
+src/services/uuid-matrix/matrix.generated.ts:10: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) + the horo digital-root ring
 src/services/uuid-projection/index.ts:10: * @standard CSS Color 4 hsl() (the colour facet)
 src/services/uuid-projection/index.ts:9: * @standard RFC 9562 §5.8 content-addressed uuidv8 (the identity the facets hang on)
 src/services/uuid-share/index.ts:47: * @standard NIST SP 800-162 ABAC
@@ -5697,6 +5698,7 @@ src/services/uuid-kv/index.ts:56: * @audit Conservation Law 47 type uuid
 src/services/uuid-kv/index.ts:57: * @audit Conservation Law 53 self-referential-closure (identity element
 src/services/uuid-kv/index.ts:59: * @audit Conservation Law 54 universal identity element
 src/services/uuid-kv/index.ts:60: * @audit Conservation Law 56 dynamic-trust (chain-of-bindings supersedes
+src/services/uuid-matrix/matrix.generated.ts:11: * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)
 src/services/uuid-share/index.test.ts:17: * @audit Conservation Law 59 uuid-based-sharing-with-rbac
 src/services/uuid-share/index.ts:51: * @audit Conservation Law 59 uuid-based-sharing
 src/services/version/index.ts:17: * @audit the version is derived, not declared — re-derivable from SKILL_INDEX on any clone

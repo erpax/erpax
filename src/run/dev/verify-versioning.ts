@@ -10,11 +10,10 @@
  * is the substance of "all is versioned" — the history that feeds the
  * akashic/analytics/tamper-cost faces of the versions cross.
  *
- * KNOWN FOLLOW-UP (documented, not asserted): restoreVersion on a *tamper-proof*
- * (content-uuid) collection conflicts with the Law-8 beforeChange hook — the
- * snapshot replay carries the prior uuid, which the recompute-on-write hook
- * rejects. Restore is attempted below and the conflict reported, not failed —
- * it needs a deliberate content-uuid↔restore reconciliation (see the report).
+ * Restore (`reify`) is reconciled with content-uuid tamper-proofing: the Law-8
+ * beforeChange hook detects req.context.isRestoringVersion and re-stamps a uuid
+ * from the restored snapshot instead of rejecting the replayed prior uuid — so
+ * restoreVersion works on tamper-proof collections, not just Pages/Posts.
  *
  *   pnpm exec tsx src/run/dev/verify-versioning.ts
  */
@@ -80,22 +79,43 @@ check(
   'each version row carries the full content snapshot (queryable history)',
 )
 
-// 3) Restore — DOCUMENTED follow-up, not an assertion. On a tamper-proof
-//    collection the content-uuid hook rejects the snapshot replay.
-const v = versions.docs[0] as { id: string } | undefined
+// 3) Restore (`reify`) — now asserted: it works on a tamper-proof collection
+//    (the content-uuid↔restore reconciliation), reverting the doc to the
+//    chosen snapshot.
+const v = versions.docs[0] as { id: string; version?: { name?: string } } | undefined
 if (v) {
-  try {
-    await payload.restoreVersion({ collection: 'tenants', id: v.id, overrideAccess: true })
-    console.log('NOTE  restoreVersion SUCCEEDED on tenants — content-uuid↔restore reconciled')
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err)
-    console.log(`NOTE  restoreVersion conflict (known follow-up): ${msg.split('\n')[0]}`)
-  }
+  const restored = (await payload.restoreVersion({
+    collection: 'tenants',
+    id: v.id,
+    overrideAccess: true,
+  })) as { id?: unknown }
+  check(Boolean(restored?.id), 'restoreVersion succeeded on a tamper-proof collection (reify, now universal)')
+  const after = await payload.findByID({ collection: 'tenants', id: tenantId, overrideAccess: true })
+  check(
+    after.name === v.version?.name,
+    `restore reverted the doc to the chosen snapshot (name="${String(v.version?.name)}", got "${String(after.name)}")`,
+  )
+  // The deepest guarantee: the restored row is Law-8 CONSISTENT — its stored
+  // uuid equals hash(its content). (tenants have no parent tenant ⇒ the stamp
+  // resolves tenantId to 'unknown'.)
+  const { verifyContentUuid } = await import('../../services/integrity')
+  const verdict = verifyContentUuid(
+    after as unknown as Record<string, unknown> & { uuid?: string },
+    'unknown',
+  )
+  check(
+    verdict.ok,
+    verdict.ok
+      ? 'restored doc is Law-8 consistent (uuid == hash(content))'
+      : `restored doc FAILED Law-8 verify (expected ${verdict.expected}, actual ${String(verdict.actual)})`,
+  )
+} else {
+  check(false, 'expected at least one version row to restore')
 }
 
 console.log(
   ok
-    ? '\n[verify-versioning] all is versioned — native recording confirmed by usage (restore = documented follow-up)'
+    ? '\n[verify-versioning] all is versioned — native recording AND restore confirmed by usage'
     : '\n[verify-versioning] FAILED',
 )
 process.exit(ok ? 0 : 1)

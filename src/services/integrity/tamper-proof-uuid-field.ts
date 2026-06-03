@@ -121,23 +121,39 @@ function resolveTenantId(data: unknown): string {
  *     attempts throw to prevent the obvious bypass.
  */
 export function tamperProofBeforeChangeHook(collectionSlug: string): CollectionBeforeChangeHook {
-  return async ({ data, originalDoc, operation }) => {
+  return async ({ data, originalDoc, operation, req }) => {
     const incomingUuid = (data as { uuid?: unknown }).uuid
     const previousUuid = (originalDoc as { uuid?: unknown } | undefined)?.uuid
+    // Payload's restoreVersion sets this on req.context before re-applying a
+    // prior snapshot (restoreVersion.js). The snapshot legitimately carries its
+    // own (prior) content-uuid, so it is NOT a manual tamper — the recompute
+    // below re-stamps a uuid consistent with the restored content.
+    const isRestoring = Boolean(
+      (req?.context as { isRestoringVersion?: unknown } | undefined)?.isRestoringVersion,
+    )
 
-    // Block manual overrides — uuid must be derived, never authored.
-    if (operation === 'update' && typeof incomingUuid === 'string' && incomingUuid !== previousUuid) {
+    // Block manual overrides — uuid must be derived, never authored. Restore is
+    // exempt: it replays a trusted prior version (`reify`), not a hand-set uuid.
+    if (
+      !isRestoring &&
+      operation === 'update' &&
+      typeof incomingUuid === 'string' &&
+      incomingUuid !== previousUuid
+    ) {
       throw new Error(
         `Conservation Law 8 violation: tamper-proof collection '${collectionSlug}' rejects ` +
         `manual uuid changes. Stored: ${String(previousUuid)} → attempted: ${incomingUuid}.`,
       )
     }
 
-    // For updates, merge the incoming patch onto the existing doc so
-    // the recomputed uuid reflects the FULL post-update content.
-    const merged: Record<string, unknown> = operation === 'update' && originalDoc
-      ? { ...(originalDoc as Record<string, unknown>), ...(data as Record<string, unknown>) }
-      : { ...(data as Record<string, unknown>) }
+    // The recompute reflects the RESULTING content. On a normal update that is
+    // the existing doc patched by `data`; on restore the resulting doc IS the
+    // snapshot (`data`), so hash it alone — merging the current doc back in would
+    // re-hash a drifted field set and disagree with the reverted content.
+    const merged: Record<string, unknown> =
+      !isRestoring && operation === 'update' && originalDoc
+        ? { ...(originalDoc as Record<string, unknown>), ...(data as Record<string, unknown>) }
+        : { ...(data as Record<string, unknown>) }
 
     const tenantId = resolveTenantId(merged)
     // Slice ZZZZZZZZZ-cut1 — strip storage-managed fields (was
