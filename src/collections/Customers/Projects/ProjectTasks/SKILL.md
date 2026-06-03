@@ -5,11 +5,7 @@ description: The project-tasks collection — Project Tasks — work breakdown o
 
 # project-tasks
 
-Project Tasks — work breakdown of a project into trackable units.
-
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+[[standard]] (ISO-8601-1:2019 date-time), [[accounting]] (IFRS-15 §35 over-time recognition, §B18 cost-to-cost), [[transaction]] (time-entries + purchase-orders posting to WBS elements), [[identity]] (assignee, user audit trail per ISO-19011:2018 wbs-evidence), and [[proof]] (cloud-service-tenant-isolation per ISO-27001 A.5.23) compose this collection. See `index.ts` for schema + sibling `seed.ts` (opening data) and `index.test.ts` (invariant checks).
 
 ## Standards
 - ISO-8601-1:2019 date-time

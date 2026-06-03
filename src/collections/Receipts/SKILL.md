@@ -15,3 +15,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - BG Наредба-Н-18 §СУПТО касов-бон · §алтернативен-режим e-receipt
 - ISO-19011:2018 audit-trail
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[collections]] · [[supto]] · [[proof]] · [[versions]] · [[fields]] · [[accounting]].

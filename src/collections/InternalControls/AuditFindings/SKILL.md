@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls deficiency-tracking
 - ISO-19011:2018 audit-trail
 
-Composes: [[RemediationPlans]].
+Composes: [[RemediationPlans]] · [[access]] · [[hooks]].

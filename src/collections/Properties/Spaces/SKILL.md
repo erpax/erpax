@@ -5,11 +5,7 @@ description: The spaces collection — Spaces — sub-property zones (floor / ro
 
 # spaces
 
-Spaces — sub-property zones (floor / room / desk / zone) for IWMS.
-
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Sub-property zones (floor / room / desk / zone) for IWMS. Single-folder collection: schema + standards in `index.ts`, opening data in `seed.ts`, invariant checks in `index.test.ts`.
 
 ## Standards
 - ISO-41001:2018 facility-management-management-systems

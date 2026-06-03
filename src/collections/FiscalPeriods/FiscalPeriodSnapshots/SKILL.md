@@ -5,14 +5,21 @@ description: The fiscal-period-snapshots collection — FiscalPeriodSnapshots Co
 
 # fiscal-period-snapshots
 
-FiscalPeriodSnapshots Collection.
+Immutable snapshots of FiscalPeriods at critical moments: creation, amendment, validation, closing, regulatory audit. Implements Law 60 (chain) and GDPR Art. 32 (audit trail for system modifications).
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Composes: [[standard]] · [[access]] · [[proof]] · [[identity]].
 
-## Standards
-- GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)
-- eIDAS:2014/910/EU (signature on critical amendments)
-- SOX:2002 (access control audit evidence, change log)
-- NIST-SP-800-92 (audit logging, integrity verification)
+## Standards & Invariants
+
+```
+@standard GDPR:2016/679 Art. 32 (audit evidence, access control, encryption)
+@standard eIDAS:2014/910/EU (signature on critical amendments)
+@standard SOX:2002 (access control audit evidence, change log)
+@standard NIST-SP-800-92 (audit logging, integrity verification)
+@invariant One snapshot per event (creation, amendment, validation, closing, regulatory audit)
+@invariant snapshotData is JSON copy of FiscalPeriods state at event time
+@invariant eventType enum constrains event classification
+@invariant priorSnapshot points to previous snapshot (creates immutable audit chain)
+@invariant signedUuid: optional eIDAS QES signature for amendments/regulatory events
+@invariant Never updated; only created and read
+```

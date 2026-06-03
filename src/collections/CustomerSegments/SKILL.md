@@ -11,6 +11,8 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+Composes: [[collections]] · [[fields]] · [[hooks]] · [[accounting]] · [[standard]] · [[proof]] · [[identity]] · [[customers]].
+
 ## Standards
 - ISO-8601-1:2019 date-time
 - IFRS IFRS-15 §4 portfolio-practical-expedient

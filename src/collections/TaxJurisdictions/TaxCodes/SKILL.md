@@ -18,4 +18,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-8601-1:2019 date-time
 - OECD SAF-T tax-table
 
-Composes: [[TaxJurisdictions]].
+Composes: [[TaxJurisdictions]] · [[standard]] · [[accounting]] · [[identity]] · [[proof]].

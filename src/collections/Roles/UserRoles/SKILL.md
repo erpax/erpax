@@ -5,11 +5,11 @@ description: "The user-roles collection — join collection: users ↔ roles"
 
 # user-roles
 
-Join collection: users ↔ roles.
+Join collection: users ↔ roles via [[users]] and [[roles]] relationship fields.
 
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+Enforces single-folder collection pattern: `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks).
+
+Access controlled via [[access]] (superadmin only: create/read/update/delete).
 
 ## Standards
 - NIST INCITS-359-2012 role-based-access-control role-assignment

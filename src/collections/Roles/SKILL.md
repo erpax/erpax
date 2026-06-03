@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.16 identity-management
 - SOC-2 CC6.1 logical-access-controls
 - SOX §404 internal-controls
+
+Composes: [[access]] · [[classroom]] · [[identity]] · [[rodin]].

@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail
 - SOX §404 internal-controls external-system-traceability
 - EU 910/2014 eidas signature-evidence
+
+Composes: [[access]] · [[auth]] · [[hooks]] · [[fields]] · [[standard]].

@@ -17,3 +17,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU Equal Treatment Directive 2000/78
 - ISO-19011:2018 audit-trail performance-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[access]] · [[fields]] · [[hooks]] · [[identity]] · [[proof]].

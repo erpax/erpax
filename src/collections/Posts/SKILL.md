@@ -19,4 +19,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ECMA-402 internationalization-api
 - WCAG-2.1 level-AA accessibility
 
-Composes: [[Categories]].
+Composes: [[Categories]] · [[Media]] · [[Users]] · [[versions]].

@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - W3C SVG
 - GDPR Art.5(1)(c) data-minimization no-pii-in-filenames
 - GDPR Art.32 security-of-processing
+
+Composes: [[access]] · [[hooks]] · [[lexical]].

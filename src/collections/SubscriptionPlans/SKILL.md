@@ -16,3 +16,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IFRS-15 revenue-from-contracts-with-customers performance-obligation
 - US-GAAP ASC-606 revenue-from-contracts-with-customers
 - SOX §404 internal-controls
+
+Composes: [[access]] · [[fields]] · [[accounting]] · [[standard]] · [[commerce]].
