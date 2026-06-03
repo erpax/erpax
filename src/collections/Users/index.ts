@@ -77,6 +77,10 @@ export const Users: CollectionConfig = {
     useAsTitle: 'name',
   },
   auth: {
+    // Account lockout (Payload built-in) — topology-independent brute-force defense,
+    // independent of the per-worker in-memory endpoint throttle.
+    maxLoginAttempts: 5,
+    lockTime: 900000, // 15 minutes
     // With no outbound email configured, avoid verification (and the send on create/first-user).
     // Set `RESEND_API_KEY` to enable verify + verification emails.
     verify: Boolean(process.env.RESEND_API_KEY?.trim()),

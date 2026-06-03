@@ -136,4 +136,6 @@ export const updateFiscalCalendarOnPeriodChange: CollectionBeforeChangeHook<Fisc
 
   // Note: Calendar regeneration and snapshot creation should happen in afterChange hook
   // to have access to persisted data. This hook only validates and prepares metadata.
+
+  return data
 }

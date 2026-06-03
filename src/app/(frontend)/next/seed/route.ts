@@ -13,6 +13,7 @@ import { createLocalReq, getPayload } from 'payload'
 import { seed } from '@/endpoints/seed'
 import config from '@payload-config'
 import { apiErrorResponse, ERR } from '@/utilities/errors'
+import { isSuperAdmin } from '@/access/isSuperAdmin'
 import { headers } from 'next/headers'
 
 export const maxDuration = 60 // This function can run for a maximum of 60 seconds
@@ -24,7 +25,8 @@ export async function POST(): Promise<Response> {
   // Authenticate by passing request headers
   const { user } = await payload.auth({ headers: requestHeaders })
 
-  if (!user) {
+  // Seed is a privileged, destructive operation — super-admin only, not merely authenticated.
+  if (!user || !isSuperAdmin(user)) {
     return apiErrorResponse(ERR.SEED_FORBIDDEN)
   }
 
