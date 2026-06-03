@@ -103,6 +103,7 @@ import {
   buildBatchTools, buildVersionsTools,
 } from './tools'
 import { wrapToolsWithTenantGuard } from './tools/_guards'
+import { nodeOf, neighborsOf, backlinksOf, bindingOf, matrixDigest } from '@/services/uuid-matrix'
 
 /**
  * State-mutating tools that need an admin/auditor role check beyond
@@ -253,6 +254,27 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
       description: 'List every BusinessChain — id, title, steps (collection + action + emits + requires), feature gate, standards cited.',
       parameters: {},
       async handler() { return json(Object.values(BUSINESS_CHAINS)) },
+    },
+    {
+      name: 'erpax.matrix.query',
+      description: 'Query the content-addressed corpus uuid matrix. op="digest" → the whole corpus as one 128-bit root + node/edge counts; "node" → the atom\'s content-uuid + structural dimension + harmonic band + horo position; "neighbors" → atoms it links to; "backlinks" → atoms linking to it (empty ⇒ orphan); "binding" → the merge-uuid of the edge atom→to (the collision), or null. In-memory + content-addressed: no DB, deterministic.',
+      parameters: {
+        op: z.enum(['digest', 'node', 'neighbors', 'backlinks', 'binding']),
+        atom: z.string().optional(),
+        to: z.string().optional(),
+      },
+      async handler({ op, atom, to }) {
+        const a = typeof atom === 'string' ? atom : ''
+        const b = typeof to === 'string' ? to : ''
+        switch (op) {
+          case 'digest': return json(matrixDigest())
+          case 'node': return json(nodeOf(a) ?? { error: `no atom '${a}'` })
+          case 'neighbors': return json({ atom: a, neighbors: neighborsOf(a).map((n) => n.atom) })
+          case 'backlinks': return json({ atom: a, backlinks: backlinksOf(a).map((n) => n.atom) })
+          case 'binding': return json({ from: a, to: b, binding: bindingOf(a, b) ?? null })
+          default: return text(`unknown op '${op as string}'`)
+        }
+      },
     },
     {
       name: 'erpax.chain.runStep',
