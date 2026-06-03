@@ -2973,9 +2973,11 @@ export function checkHarmonicHelixClosure(_ctx: InvariantContext): InvariantResu
  * any key with MORE THAN ONE path. The colliding files are content-hashed (the uuid
  * lock): same digest ⇒ a true duplicate (one [[merge]]s away); distinct digests ⇒
  * an ambiguous link (one concept at two scopes under one key — the concrete
- * violation). FAILs on identical-content copies (a true duplicate MUST merge to one);
- * WARNs on distinct-content collisions — the ambiguous link needs a disambiguation
- * judgment, NEVER a blind delete (distinct content is real content, not a copy).
+ * violation). FAILs on identical-content copies (a true duplicate MUST merge to one).
+ * A distinct-content collision is RESOLVED when exactly one folder carries matter
+ * (index.ts): that folder owns the canonical [[link]] and the antimatter-only twin
+ * defers to it. Only collisions with NO single matter-canonical WARN (a judgment,
+ * never a blind delete — distinct content is real content, not a copy).
  */
 export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
@@ -2998,13 +3000,24 @@ export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
     arr.push(f)
     byKey.set(key, arr)
   }
-  const dupes: string[] = []      // identical content at >1 path — a true copy (FAIL: merge to one)
-  const ambiguous: string[] = []  // distinct content under one link-key — ambiguous link (WARN: disambiguate, never blind-delete)
+  const rel = (p: string): string => p.slice(repoRoot.length + 1)
+  const dupes: string[] = []      // identical content — a true copy (FAIL: merge to one)
+  const resolved: string[] = []   // distinct content, ONE matter-bearing canonical, twins defer (OK)
+  const ambiguous: string[] = []  // distinct content, no single matter-canonical (WARN: judgment)
   for (const [key, paths] of byKey) {
     if (paths.length < 2) continue
     const uuids = paths.map((p) => createHash('sha256').update(readFileSync(p)).digest('hex').slice(0, 16))
-    const rels = paths.map((p) => p.slice(repoRoot.length + 1)).join(' | ')
-    ;(new Set(uuids).size === 1 ? dupes : ambiguous).push(`[[${key}]] ×${paths.length}: ${rels}`)
+    if (new Set(uuids).size === 1) { dupes.push(`[[${key}]] ×${paths.length}: ${paths.map(rel).join(' | ')}`); continue }
+    // Distinct content under one link-key — disambiguate by MATTER: the folder that
+    // carries index.ts is canonical (it owns the [[link]]); an antimatter-only twin
+    // (SKILL.md only) defers to it. Exactly one matter folder ⇒ resolved, not a violation.
+    const matter = paths.filter((p) => existsSync(join(dirname(p), 'index.ts')))
+    const canonical = matter.length === 1 ? matter[0] : undefined
+    if (canonical) {
+      resolved.push(`[[${key}]] → ${rel(canonical)} (carries matter); defers: ${paths.filter((p) => p !== canonical).map(rel).join(', ')}`)
+    } else {
+      ambiguous.push(`[[${key}]] ×${paths.length}: ${paths.map(rel).join(' | ')}`)
+    }
   }
   if (dupes.length) {
     return fail('entropy', 'atoms-locked-to-uuid',
@@ -3012,7 +3025,8 @@ export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
   }
   if (ambiguous.length) {
     return warn('entropy', 'atoms-locked-to-uuid',
-      `${ambiguous.length} atom-key(s) lock to DISTINCT content under one link-key — ambiguous link; disambiguate (collection keeps the canonical [[link]], or the link carries its domain)`, ambiguous)
+      `${ambiguous.length} atom-key(s) collide with NO single matter-bearing canonical — disambiguate; ${resolved.length} scope-twin(s) already deferred to their matter folder`, ambiguous)
   }
-  return pass('entropy', 'atoms-locked-to-uuid', `every atom-key locks to one content-uuid (${byKey.size} keys, derived live from the fs)`)
+  return pass('entropy', 'atoms-locked-to-uuid',
+    `every atom-key locks to one canonical content-uuid (${byKey.size} keys; ${resolved.length} scope-twin(s) deferred to their matter folder) — derived live`)
 }
