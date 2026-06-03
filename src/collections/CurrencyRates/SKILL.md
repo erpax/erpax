@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-830 foreign-currency-matters
 - ISO-19011:2018 audit-trail rate-update
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[collections]] · [[fields]] · [[currency]] · [[hooks]] · [[access]] · [[accounting]].

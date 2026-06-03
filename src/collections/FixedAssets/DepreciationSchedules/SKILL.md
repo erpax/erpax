@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-360 property-plant-and-equipment
 - ISO-19011:2018 audit-trail depreciation-evidence
 - SOX §404 internal-controls
+
+Composes: [[accounting]] · [[transaction]] · [[balance]] · [[proof]] · [[standard]] · [[identity]].

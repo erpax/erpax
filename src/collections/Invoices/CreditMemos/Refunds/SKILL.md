@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail refund-evidence
 - SOX §404 internal-controls refund-approval
 - PCI-DSS-4.0 §3.2 tokenized-card-data via-stripe
+
+Composes: [[CreditMemos]] · [[Invoices]] · [[SalesOrders]] · [[JournalEntries]] · [[accounting]] · [[access]].

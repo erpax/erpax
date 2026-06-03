@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls
 - ISO-27002 §8.24 use-of-cryptography
 
-Composes: [[SubscriptionPlans]].
+Composes: [[SubscriptionPlans]] · [[collections]] · [[access]] · [[proof]] · [[horo]] · [[sequence]] · [[standard]].

@@ -25,4 +25,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls disclosure-completeness
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[Provisions]].
+Composes: [[Provisions]] · [[accounting]] · [[transaction]] · [[proof]] · [[standard]] · [[identity]].

@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail allocation-evidence
 - SOX §404 internal-controls cash-allocation TOM-AR-02
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[accounting]] · [[transaction]] · [[proof]] · [[standard]] · [[identity]] · [[party]].

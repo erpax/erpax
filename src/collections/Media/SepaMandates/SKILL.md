@@ -23,3 +23,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract
 - EPC130-08 sepa-direct-debit-rulebook
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[accounting]] · [[proof]] · [[identity]] · [[horo]] · [[transaction]] · [[standard]].

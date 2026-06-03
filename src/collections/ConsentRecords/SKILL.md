@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27701:2019 §6.3.1.4 record-of-consent
 - ISO-19011:2018 audit-trail consent-evidence
 - ISO-27001 A.5.34 privacy-and-pii
+
+Composes: [[identity]] · [[standard]] · [[access]] · [[hooks]] · [[fields]].

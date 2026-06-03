@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU-Regulation-2015/847 wire-transfers
 - ISO-19011:2018 audit-trail kyc-evidence
 - ISO-27001 A.5.34 privacy-and-pii
+
+Composes: [[identity]] · [[party]] · [[standard]] · [[proof]].

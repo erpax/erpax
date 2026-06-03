@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.32 security-of-processing
 - ISO-27002 §8.24 use-of-cryptography
 - NIST SP-800-38D aes-gcm
+
+Composes: [[access]] · [[commerce]] · [[defence]] · [[proof]] · [[standard]] · [[identity]].

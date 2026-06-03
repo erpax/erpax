@@ -5,11 +5,7 @@ description: The vendors collection — Vendors — purchase-side party master
 
 # vendors
 
-Vendors — purchase-side party master.
-
-This is the single-folder collection node: `index.ts` (schema + standards banners),
-co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
-One folder per collection ⇒ no scatter ⇒ no drift.
+[[identity]] — [[standard]] party registry for purchase-side operations. Master data for all vendor relationships: legal identity, tax classification, bank details, payment terms, and ledger defaults. Composes [[VendorScorecards]].
 
 ## Standards
 - ISO-4217:2015 currency-codes

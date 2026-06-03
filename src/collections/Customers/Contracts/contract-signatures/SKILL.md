@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-8601-1:2019 date-time signature-timestamp
 - GDPR Art.6(1)(b) lawful-basis-contract
 - ISO-19011:2018 audit-trail e-signature-evidence
+
+Composes: [[identity]] · [[proof]] · [[standard]] · [[transaction]].

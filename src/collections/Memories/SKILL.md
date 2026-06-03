@@ -16,3 +16,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO 19011:2018 §6.4.6 audit-evidence (memory history audit-trailed)
 - Conservation Law 8 content-uuid (per-memory contentUuid)
 - Conservation Law 10 referential-harmony (relatedTo graph)
+
+Composes: [[accounting]] · [[fields]] · [[transaction]] · [[uuid]] · [[proof]] · [[standard]].

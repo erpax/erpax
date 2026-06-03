@@ -19,3 +19,9 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-606-10-25-30 milestone-method
 - ISO-19011:2018 audit-trail milestone-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+## Composition
+
+Slice AAAA (2026-05-10): contracts that recognise revenue at discrete milestones (rather than over time via cost-to-cost) need a structured milestone register. When a milestone is marked `achieved`, the GL handler emits a `milestone:achieved` event that triggers invoicing + revenue recognition for the milestone amount.
+
+Composes: [[accounting]] · [[transaction]] · [[invoices]] · [[identity]] · [[proof]] · [[standard]] · [[hooks]] · [[fields]].

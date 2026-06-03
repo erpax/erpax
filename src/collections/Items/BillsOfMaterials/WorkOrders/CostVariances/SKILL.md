@@ -11,7 +11,22 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+## Composition
+
+- [[accounting]] — double-entry disposition journal entries (cogs/inventory/period)
+- [[standard]] — IAS-2 §21, ASC-330-10-30, ISO-8601-1, ISO-19011, SOX §404, ISO-27001
+- [[transaction]] — work-order close → cost-variance posting (balanced)
+- [[manufacturing]] — work-order lifecycle & completion trigger
+- [[balance]] — variance disposition must balance (debit = credit)
+- [[identity]] — audit trail (ISO-19011:2018)
+- [[proof]] — immutable variance-evidence
+- [[hooks]] — standardCollectionHooks + invariant checks
+- [[fields]] — currencyField, statusField, auditFields, referenceField
+
 ## Standards
+
+The answer-path: `index.ts` implements these standards directly via schema design and hooks.
+
 - ISO-8601-1:2019 date-time variance-date
 - IFRS IAS-2 §21 standard-cost-method
 - US-GAAP ASC-330-10-30 standard-cost-variance-recognition

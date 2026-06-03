@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.12(3) one-month-response-deadline
 - ISO-19011:2018 audit-trail dsr-evidence
 - ISO-27001 A.5.34 privacy-and-pii
+
+Composes: [[access]] · [[identity]] · [[proof]] · [[standard]].

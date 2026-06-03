@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.30 records-of-processing-activities
 - ISO-19011:2018 audit-trail crm-activity
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[Leads]] · [[Opportunities]] · [[Customers]] · [[Vendors]] · [[Users]].

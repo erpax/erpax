@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - Conservation Law 8 content-uuid
 - Conservation Law 10 referential-harmony (relatedTo back to the source row)
 - ISO 19011:2018 §6.4.6 (translation changes audit-trailed)
+
+Composes: [[fields]] · [[standard]] · [[identity]] · [[proof]].

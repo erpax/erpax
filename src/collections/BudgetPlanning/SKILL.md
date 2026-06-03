@@ -12,6 +12,7 @@ co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live 
 One folder per collection ⇒ no scatter ⇒ no drift.
 
 ## Standards
+
 - ISO-4217:2015 currency-codes
 - ISO-8601-1:2019 date-time fiscal-year period
 - IFRS IAS-1 presentation-of-financial-statements
@@ -22,4 +23,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27002 §5.4 segregation-of-duties approval-vs-creation
 
-Composes: [[accounting]].
+Schema: [[accounting]] (GL accounts, period locks, fiscal periods); [[standard]] (compliance banners); [[identity]] (createdBy, approvedBy, audit chain); [[proof]] (audit-trail emission).

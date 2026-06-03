@@ -20,4 +20,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls delivery-evidence TOM-LOG-02
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[Carriers]].
+Composes: [[Carriers]] · [[Shipments]] · [[accounting]] · [[proof]].

@@ -21,3 +21,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - BG Labour Code Art.155-176
 - ISO-19011:2018 audit-trail leave-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[accounting]] · [[identity]] · [[proof]] · [[standard]] · [[transaction]].

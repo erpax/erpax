@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail
 - SOX §302 disclosure-controls segment-disclosure
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[hooks]] · [[access]] · [[fields]] · [[accounting]] · [[identity]] · [[proof]].

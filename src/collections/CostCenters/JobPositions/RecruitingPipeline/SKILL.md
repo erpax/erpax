@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ADA / EEOC US-equal-opportunity
 - ISO-19011:2018 audit-trail recruiting-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[fields]] · [[hooks]] · [[access]] · [[standard]] · [[proof]] · [[identity]].

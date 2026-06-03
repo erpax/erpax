@@ -23,4 +23,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IAS-2 §25 cost-formulas
 - US-GAAP ASC-330-10-30 inventory-valuation
 
-Composes: [[Items]] · [[WarehouseLocations]].
+Composes: [[Items]] · [[WarehouseLocations]] · [[accounting]] · [[transaction]].

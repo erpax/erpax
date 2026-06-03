@@ -20,4 +20,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail tax-filing-evidence
 - SOX §404 internal-controls tax-position
 
-Composes: [[TaxCalculations]].
+Composes: [[TaxCalculations]] · [[standard]] · [[accounting]] · [[proof]] · [[identity]].

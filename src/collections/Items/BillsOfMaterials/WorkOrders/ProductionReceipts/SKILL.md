@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail production-receipt-evidence
 - SOX §404 internal-controls production-control TOM-PROD-02
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[accounting]] · [[transaction]] · [[identity]] · [[proof]] · [[standard]] · [[horo]].

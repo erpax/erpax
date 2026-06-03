@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls quality-control TOM-QC-01
 - ISO 9001:2015 §8.7 quality-management-system
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
+
+Composes: [[accounting]] · [[transaction]] · [[standard]] · [[proof]] · [[identity]].

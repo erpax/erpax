@@ -20,3 +20,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail rma-evidence
 - SOX §404 internal-controls return-approval
 - ISO-27002 §5.4 segregation-of-duties
+
+Composes: [[accounting]] · [[transaction]] · [[proof]] · [[hooks]] · [[fields]] · [[standard]].

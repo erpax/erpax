@@ -22,3 +22,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 The registry below is read live from the backend (`/api/mcp-tool-metadata`); each entry links to its presentation at `/mcp/tools/{name}`.
 
 <McpTools />
+
+Composes: [[accounting]] · [[fields]] · [[identity]].

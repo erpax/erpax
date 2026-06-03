@@ -19,3 +19,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls vendor-management
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 - ISO-27001 A.5.19 information-security-supplier-relationships
+
+Composes: [[identity]] · [[accounting]] · [[access]] · [[hooks]] · [[standard]].

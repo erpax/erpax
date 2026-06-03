@@ -18,3 +18,5 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - FATF-Recommendation-24 transparency-of-legal-persons
 - ISO-19011:2018 audit-trail ubo-evidence
 - ISO-27001 A.5.34 privacy-and-pii
+
+Composes: [[identity]] · [[proof]] · [[standard]] · [[auth]] · [[accounting]].

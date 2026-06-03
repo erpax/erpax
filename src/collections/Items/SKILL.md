@@ -19,4 +19,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IAS-2 inventories
 - US-GAAP ASC-330 inventory
 
-Composes: [[Batches]].
+Composes: [[Batches]] · [[BillsOfMaterials]] · [[InventoryMovements]] · [[Packages]] · [[PurchaseOrders]] · [[QualityInspections]].
