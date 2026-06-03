@@ -1,0 +1,14 @@
+---
+name: revenue
+description: "Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral."
+---
+
+# revenue
+
+Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral.
+
+Composes: [[PerformanceObligations]] · [[Invoices]] · [[Contracts]] · [[accounting]] · [[currency]].
+
+## Standards
+- IFRS-15
+- ASC-606

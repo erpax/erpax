@@ -1,0 +1,15 @@
+---
+name: materiality
+description: "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items"
+---
+
+# materiality
+
+Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items
+
+Composes: [[AuditEvents]] · [[AuditFindings]] · [[DisclosureChecklists]] · [[FinancialStatements]] · [[decide]].
+
+## Standards
+- ISA-320 (materiality in planning and performing an audit)
+- IFRS-7 §39 (determining materiality)
+- IAS-1 §29 (material omissions)

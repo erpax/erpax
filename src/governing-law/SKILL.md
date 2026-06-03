@@ -1,0 +1,16 @@
+---
+name: governing-law
+description: "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution."
+---
+
+# governing-law
+
+Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.
+
+Composes: [[jurisdiction]] · [[Contracts]] · [[matter]] · [[standard]].
+
+## Standards
+- Rome-I-Reg-1215-2012
+- Hague-Convention
+- NY-UCC
+- English-Law

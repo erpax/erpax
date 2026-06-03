@@ -1,0 +1,14 @@
+---
+name: provision
+description: "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37"
+---
+
+# provision
+
+Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37
+
+Composes: [[JournalEntries]] · [[CommitmentsAndContingencies]] · [[DisclosureChecklists]] · [[balance]].
+
+## Standards
+- IAS-37 (provisions, contingent liabilities, contingent assets)
+- FASB ASC 450 (contingencies)

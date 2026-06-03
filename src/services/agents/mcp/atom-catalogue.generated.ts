@@ -29,6 +29,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "access"
   },
   {
+    "atom": "accessibility",
+    "name": "accessibility",
+    "description": "Use when designing for inclusive experiences — WCAG 2.1/3.0 compliance, color contrast, keyboard navigation, screen-reader support, semantic HTML, alt-text. The capability for all users regardless of disability.",
+    "path": "accessibility"
+  },
+  {
+    "atom": "account",
+    "name": "account",
+    "description": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
+    "path": "fields/account"
+  },
+  {
     "atom": "accounting",
     "name": "accounting",
     "description": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
@@ -39,6 +51,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "account-reconciliations",
     "description": "The account-reconciliations collection — Account Reconciliations — period-end sign-off evidence pack",
     "path": "collections/GLAccounts/AccountReconciliations"
+  },
+  {
+    "atom": "accrual",
+    "name": "accrual",
+    "description": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
+    "path": "accrual"
+  },
+  {
+    "atom": "active",
+    "name": "active",
+    "description": "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.",
+    "path": "fields/active"
   },
   {
     "atom": "activities",
@@ -63,6 +87,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "agent-sync",
     "description": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
     "path": "services/agent-sync"
+  },
+  {
+    "atom": "aggregation",
+    "name": "aggregation",
+    "description": "Use when computing summarized metrics — GROUP BY semantics, rollup/cube hierarchies, dimensional analysis, summary statistics (sum, count, avg, min, max, percentile), pre-computed aggregates vs on-demand queries.",
+    "path": "aggregation"
   },
   {
     "atom": "ai",
@@ -101,10 +131,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "services/allocation"
   },
   {
+    "atom": "amendment",
+    "name": "amendment",
+    "description": "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.",
+    "path": "amendment"
+  },
+  {
     "atom": "amortize",
     "name": "amortize",
     "description": "Use to compute amortization — bond discount/premium (effective-interest), intangible/loan amortization schedules. Pure compute (no persistence); cites IFRS-9 / US-GAAP. Nested under calculate.",
     "path": "calculate/amortize"
+  },
+  {
+    "atom": "amount",
+    "name": "amount",
+    "description": "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money.",
+    "path": "fields/amount"
   },
   {
     "atom": "anchor",
@@ -137,10 +179,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/ApiAuditEvents"
   },
   {
+    "atom": "approved",
+    "name": "approved",
+    "description": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
+    "path": "fields/approved"
+  },
+  {
+    "atom": "assignment",
+    "name": "assignment",
+    "description": "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations.",
+    "path": "assignment"
+  },
+  {
     "atom": "atom",
     "name": "atom",
     "description": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
     "path": "atom"
+  },
+  {
+    "atom": "attribution",
+    "name": "attribution",
+    "description": "Use when tracking which touchpoint/channel caused a conversion — first-touch, last-touch, multi-touch models; credit value allocation across channels.",
+    "path": "attribution"
+  },
+  {
+    "atom": "attrition",
+    "name": "attrition",
+    "description": "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.",
+    "path": "attrition"
+  },
+  {
+    "atom": "audit",
+    "name": "audit",
+    "description": "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.",
+    "path": "fields/audit"
   },
   {
     "atom": "auditcommitteemembers",
@@ -185,6 +257,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/LegalEntities/Consolidations/AuditReports"
   },
   {
+    "atom": "auditright",
+    "name": "audit-right",
+    "description": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
+    "path": "audit-right"
+  },
+  {
     "atom": "auditsamples",
     "name": "audit-samples",
     "description": "The audit-samples collection — AuditSamples",
@@ -215,10 +293,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rodin/axis"
   },
   {
+    "atom": "backlog",
+    "name": "backlog",
+    "description": "Use when managing a prioritized list of pending work — features to build, bugs to fix, support tickets, maintenance requests. The work-capture system.",
+    "path": "backlog"
+  },
+  {
+    "atom": "backup",
+    "name": "backup",
+    "description": "Use when ensuring data recovery — backup strategy (full/incremental/differential), backup retention, restoration procedures, backup encryption, cross-region backups, RTO/RPO targets, backup testing/validation.",
+    "path": "backup"
+  },
+  {
     "atom": "balance",
     "name": "balance",
     "description": "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium.",
     "path": "accounting/balance"
+  },
+  {
+    "atom": "bank",
+    "name": "bank",
+    "description": "Use when a transaction or account references banking infrastructure — bank account, bank statement, bank transfer, bank reconciliation. A financial institution context; relationTo: 'bank-accounts' or similar.",
+    "path": "fields/bank"
   },
   {
     "atom": "bankaccounts",
@@ -249,6 +345,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "base",
     "description": "Use when reasoning about the entry position of the horo state ring — digit 1, \"entering the ring\", the origin step of a flow/lifecycle (on-hand, draft, opened). First of the ascent arc; nested under horo.",
     "path": "horo/base"
+  },
+  {
+    "atom": "batch",
+    "name": "batch",
+    "description": "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations.",
+    "path": "batch"
   },
   {
     "atom": "batches",
@@ -317,6 +419,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/BookableResources/Bookings"
   },
   {
+    "atom": "bottleneck",
+    "name": "bottleneck",
+    "description": "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.",
+    "path": "bottleneck"
+  },
+  {
     "atom": "breath",
     "name": "breath",
     "description": "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin.",
@@ -329,10 +437,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/BudgetPlanning"
   },
   {
+    "atom": "budgetvariance",
+    "name": "budgetvariance",
+    "description": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
+    "path": "budgetvariance"
+  },
+  {
+    "atom": "bundle",
+    "name": "bundle",
+    "description": "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles.",
+    "path": "bundle"
+  },
+  {
     "atom": "businesscombinations",
     "name": "business-combinations",
     "description": "The business-combinations collection — Business Combinations — IFRS 3 acquirer-side M&A register",
     "path": "collections/LegalEntities/BusinessCombinations"
+  },
+  {
+    "atom": "cache",
+    "name": "cache",
+    "description": "Use when optimizing repeated access — cache invalidation strategies, cache-aside vs write-through, TTL/expiry, cache coherency, memoization, query result caching, distributed cache semantics (Cloudflare KV, Redis).",
+    "path": "cache"
   },
   {
     "atom": "calculate",
@@ -341,10 +467,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "calculate"
   },
   {
+    "atom": "campaign",
+    "name": "campaign",
+    "description": "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking.",
+    "path": "campaign"
+  },
+  {
+    "atom": "capacity",
+    "name": "capacity",
+    "description": "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations.",
+    "path": "capacity"
+  },
+  {
     "atom": "carbonemissions",
     "name": "carbon-emissions",
     "description": "The carbon-emissions collection — Carbon Emissions — EU CSRD ESRS E1 + GHG Protocol Scope 1/2/3 register",
     "path": "collections/FiscalPeriods/CarbonEmissions"
+  },
+  {
+    "atom": "cardinality",
+    "name": "cardinality",
+    "description": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
+    "path": "cardinality"
   },
   {
     "atom": "carriers",
@@ -365,6 +509,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "chat"
   },
   {
+    "atom": "churn",
+    "name": "churn",
+    "description": "Use when measuring customer retention/attrition — monthly/annual churn %, cohort analysis, at-risk indicators, retention drivers.",
+    "path": "churn"
+  },
+  {
     "atom": "civilization",
     "name": "civilization",
     "description": "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form.",
@@ -375,6 +525,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "classroom",
     "description": "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed).",
     "path": "classroom"
+  },
+  {
+    "atom": "clause",
+    "name": "clause",
+    "description": "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis.",
+    "path": "clause"
   },
   {
     "atom": "close",
@@ -399,6 +555,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "code",
     "description": "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key.",
     "path": "fields/code"
+  },
+  {
+    "atom": "cohort",
+    "name": "cohort",
+    "description": "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis.",
+    "path": "cohort"
   },
   {
     "atom": "coil",
@@ -449,6 +611,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "compass"
   },
   {
+    "atom": "compensation",
+    "name": "compensation",
+    "description": "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker.",
+    "path": "compensation"
+  },
+  {
     "atom": "competencies",
     "name": "competencies",
     "description": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
@@ -497,6 +665,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/ComplianceFrameworks/ComplianceRequirements"
   },
   {
+    "atom": "component",
+    "name": "component",
+    "description": "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility.",
+    "path": "component"
+  },
+  {
+    "atom": "confidentiality",
+    "name": "confidentiality",
+    "description": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
+    "path": "confidentiality"
+  },
+  {
     "atom": "config",
     "name": "config",
     "description": "Use when authoring or modifying the root Payload config (payload.config.ts / buildConfig) — wiring db, collections, globals, plugins, editor, secret, cors/csrf, localization, i18n, admin, graphQL, email, typescript output, depth defaults, or custom endpoints.",
@@ -513,6 +693,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "connections",
     "description": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
     "path": "collections/Connections"
+  },
+  {
+    "atom": "consent",
+    "name": "consent",
+    "description": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
+    "path": "consent"
   },
   {
     "atom": "consentrecords",
@@ -539,6 +725,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/WarehouseLocations/ConsignmentArrangements/ConsignmentSales"
   },
   {
+    "atom": "consistency",
+    "name": "consistency",
+    "description": "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards.",
+    "path": "consistency"
+  },
+  {
     "atom": "consolidationeliminations",
     "name": "consolidation-eliminations",
     "description": "The consolidation-eliminations collection — Consolidation Eliminations — group consolidation elimination entries",
@@ -549,6 +741,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "consolidations",
     "description": "The consolidations collection — Consolidations Collection",
     "path": "collections/LegalEntities/Consolidations"
+  },
+  {
+    "atom": "constraint",
+    "name": "constraint",
+    "description": "Use when defining data constraints at the schema level — NOT NULL / UNIQUE / FOREIGN KEY / CHECK / DEFAULT constraints, their lifecycle (creation/modification/disable), enforcement semantics, and violation detection in the database layer.",
+    "path": "constraint"
   },
   {
     "atom": "contractamendments",
@@ -585,6 +783,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "control-tests",
     "description": "The control-tests collection — Control Tests — SOX §404 testing evidence (sampling, assertion, results)",
     "path": "collections/InternalControls/ControlTests"
+  },
+  {
+    "atom": "conversion",
+    "name": "conversion",
+    "description": "Use when measuring funnel step completion — click→impression, inquiry→lead, lead→opportunity, opportunity→deal, deal→renewal; event-driven attribution.",
+    "path": "conversion"
+  },
+  {
+    "atom": "correlation",
+    "name": "correlation",
+    "description": "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection.",
+    "path": "correlation"
   },
   {
     "atom": "cost",
@@ -665,10 +875,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/DataProcessingActivities"
   },
   {
+    "atom": "dataprotection",
+    "name": "data-protection",
+    "description": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
+    "path": "data-protection"
+  },
+  {
     "atom": "datasubjectrequests",
     "name": "data-subject-requests",
     "description": "The data-subject-requests collection — Data Subject Requests — GDPR Art",
     "path": "collections/DataSubjectRequests"
+  },
+  {
+    "atom": "date",
+    "name": "date",
+    "description": "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period.",
+    "path": "fields/date"
   },
   {
     "atom": "debtschedule",
@@ -689,10 +911,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "decompression"
   },
   {
+    "atom": "deduction",
+    "name": "deduction",
+    "description": "Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-tax calculation",
+    "path": "deduction"
+  },
+  {
+    "atom": "deduplication",
+    "name": "deduplication",
+    "description": "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range.",
+    "path": "deduplication"
+  },
+  {
+    "atom": "defect",
+    "name": "defect",
+    "description": "Use when logging product/service quality problems — manufacturing defects, software bugs, rework triggers, quality inspections results. The non-conformance record.",
+    "path": "defect"
+  },
+  {
     "atom": "defence",
     "name": "defence",
     "description": "Use when managing defence/military operations — personnel rosters, equipment inventory, deployment scheduling, force readiness, or defence procurement in government military branches (COFOG 02).",
     "path": "defence"
+  },
+  {
+    "atom": "deferral",
+    "name": "deferral",
+    "description": "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition",
+    "path": "deferral"
+  },
+  {
+    "atom": "deferredrevenue",
+    "name": "deferredrevenue",
+    "description": "Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
+    "path": "deferredrevenue"
   },
   {
     "atom": "deferredtaxitems",
@@ -731,6 +983,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "horo/descent"
   },
   {
+    "atom": "description",
+    "name": "description",
+    "description": "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data).",
+    "path": "fields/description"
+  },
+  {
+    "atom": "design",
+    "name": "design",
+    "description": "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form.",
+    "path": "design"
+  },
+  {
     "atom": "dev",
     "name": "dev",
     "description": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
@@ -743,10 +1007,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "fields/dimension"
   },
   {
+    "atom": "disclosure",
+    "name": "disclosure",
+    "description": "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope",
+    "path": "disclosure"
+  },
+  {
     "atom": "disclosurechecklists",
     "name": "disclosure-checklists",
     "description": "The disclosure-checklists collection — DisclosureChecklists",
     "path": "collections/LegalEntities/DisclosureChecklists"
+  },
+  {
+    "atom": "discount",
+    "name": "discount",
+    "description": "Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.",
+    "path": "discount"
+  },
+  {
+    "atom": "disputeresolution",
+    "name": "dispute-resolution",
+    "description": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
+    "path": "dispute-resolution"
+  },
+  {
+    "atom": "distribution",
+    "name": "distribution",
+    "description": "Use when analyzing data spread — normal/Poisson/exponential distributions, distribution testing (Shapiro-Wilk, Kolmogorov-Smirnov), distribution fitting, distribution-aware statistics (mean vs median), distribution plots/histograms.",
+    "path": "distribution"
   },
   {
     "atom": "domain",
@@ -759,6 +1047,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "duality",
     "description": "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale.",
     "path": "duality"
+  },
+  {
+    "atom": "dunning",
+    "name": "dunning",
+    "description": "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not.",
+    "path": "dunning"
   },
   {
     "atom": "dunningcycles",
@@ -791,6 +1085,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "services/element"
   },
   {
+    "atom": "elimination",
+    "name": "elimination",
+    "description": "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero",
+    "path": "elimination"
+  },
+  {
     "atom": "employees",
     "name": "employees",
     "description": "The employees collection — Employees — workforce master record for payroll, benefits, time tracking",
@@ -801,6 +1101,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "end",
     "description": "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).",
     "path": "end"
+  },
+  {
+    "atom": "engagement",
+    "name": "engagement",
+    "description": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
+    "path": "engagement"
   },
   {
     "atom": "entitylegalstructures",
@@ -819,6 +1125,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "entry",
     "description": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\".",
     "path": "services/entry"
+  },
+  {
+    "atom": "escalation",
+    "name": "escalation",
+    "description": "Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency.",
+    "path": "escalation"
+  },
+  {
+    "atom": "escrow",
+    "name": "escrow",
+    "description": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
+    "path": "escrow"
   },
   {
     "atom": "event",
@@ -861,6 +1179,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "federation",
     "description": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
     "path": "services/federation"
+  },
+  {
+    "atom": "feedback",
+    "name": "feedback",
+    "description": "Use when collecting, structuring, and acting on input from users, employees, or customers — surveys, reviews, suggestions, 360-degree feedback. The structured loop of input → analysis → action.",
+    "path": "feedback"
   },
   {
     "atom": "fields",
@@ -911,10 +1235,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "flow"
   },
   {
+    "atom": "forcemajeure",
+    "name": "force-majeure",
+    "description": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
+    "path": "force-majeure"
+  },
+  {
+    "atom": "forecast",
+    "name": "forecast",
+    "description": "Use when projecting revenue from pipeline/opportunities — weighted by probability, stage, and close date; aggregated by rep/territory/product/period.",
+    "path": "forecast"
+  },
+  {
     "atom": "fractal",
     "name": "fractal",
     "description": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
     "path": "fractal"
+  },
+  {
+    "atom": "funnel",
+    "name": "funnel",
+    "description": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
+    "path": "funnel"
   },
   {
     "atom": "fxtransactions",
@@ -959,10 +1301,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Items/PurchaseOrders/GoodsReceipts"
   },
   {
+    "atom": "goodwill",
+    "name": "goodwill",
+    "description": "Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
+    "path": "goodwill"
+  },
+  {
     "atom": "googleworkspace",
     "name": "google-workspace",
     "description": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
     "path": "services/google-workspace"
+  },
+  {
+    "atom": "governinglaw",
+    "name": "governing-law",
+    "description": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
+    "path": "governing-law"
   },
   {
     "atom": "governmentgrants",
@@ -995,6 +1349,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "health"
   },
   {
+    "atom": "hedge",
+    "name": "hedge",
+    "description": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
+    "path": "hedge"
+  },
+  {
     "atom": "heldforsaleclassifications",
     "name": "held-for-sale-classifications",
     "description": "The held-for-sale-classifications collection — Held-for-Sale Classifications — IFRS 5 non-current assets / disposal",
@@ -1025,10 +1385,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "horo"
   },
   {
+    "atom": "id",
+    "name": "id",
+    "description": "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges.",
+    "path": "fields/id"
+  },
+  {
+    "atom": "idempotency",
+    "name": "idempotency",
+    "description": "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs.",
+    "path": "idempotency"
+  },
+  {
     "atom": "identity",
     "name": "identity",
     "description": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
     "path": "identity"
+  },
+  {
+    "atom": "impairment",
+    "name": "impairment",
+    "description": "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets",
+    "path": "impairment"
+  },
+  {
+    "atom": "incident",
+    "name": "incident",
+    "description": "Use when logging unplanned downtime, service interruptions, production stops, or safety events — the adverse event log with root-cause, impact, resolution, and prevention tracking.",
+    "path": "incident"
+  },
+  {
+    "atom": "indemnity",
+    "name": "indemnity",
+    "description": "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure.",
+    "path": "indemnity"
   },
   {
     "atom": "ingest",
@@ -1041,6 +1431,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "insurance-contracts",
     "description": "The insurance-contracts collection — Insurance Contracts — IFRS 17 GMM / PAA / VFA register",
     "path": "collections/InsuranceContracts"
+  },
+  {
+    "atom": "intangible",
+    "name": "intangible",
+    "description": "Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill",
+    "path": "intangible"
   },
   {
     "atom": "intercompanytransactions",
@@ -1065,6 +1461,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "internal-policies",
     "description": "The internal-policies collection — InternalPolicies",
     "path": "collections/InternalPolicies"
+  },
+  {
+    "atom": "interview",
+    "name": "interview",
+    "description": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
+    "path": "interview"
   },
   {
     "atom": "inventorymovements",
@@ -1115,10 +1517,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/JournalEntries"
   },
   {
+    "atom": "jurisdiction",
+    "name": "jurisdiction",
+    "description": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
+    "path": "jurisdiction"
+  },
+  {
     "atom": "justice",
     "name": "justice",
     "description": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function).",
     "path": "justice"
+  },
+  {
+    "atom": "kpi",
+    "name": "kpi",
+    "description": "Use when defining, computing, or tracking KPIs — target metrics with threshold, formula, frequency, owner, and variances. The measurable objective beneath strategy.",
+    "path": "kpi"
   },
   {
     "atom": "kycchecks",
@@ -1131,6 +1545,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "leads",
     "description": "The leads collection — Leads — pre-customer state qualified-lead pipeline",
     "path": "collections/Leads"
+  },
+  {
+    "atom": "leadscore",
+    "name": "lead-score",
+    "description": "Use when ranking prospect/lead quality — behavioral signals, firmographic attributes, scoring model, threshold for handoff to sales.",
+    "path": "lead-score"
   },
   {
     "atom": "leasemodifications",
@@ -1169,10 +1589,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "lexical"
   },
   {
+    "atom": "liability",
+    "name": "liability",
+    "description": "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override.",
+    "path": "liability"
+  },
+  {
+    "atom": "license",
+    "name": "license",
+    "description": "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.",
+    "path": "license"
+  },
+  {
     "atom": "limit",
     "name": "limit",
     "description": "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism.",
     "path": "limit"
+  },
+  {
+    "atom": "lineage",
+    "name": "lineage",
+    "description": "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement.",
+    "path": "lineage"
   },
   {
     "atom": "localize",
@@ -1215,6 +1653,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "manufacturing",
     "description": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
     "path": "manufacturing"
+  },
+  {
+    "atom": "materiality",
+    "name": "materiality",
+    "description": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
+    "path": "materiality"
   },
   {
     "atom": "matrix",
@@ -1283,16 +1727,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "fields/metadata"
   },
   {
+    "atom": "metric",
+    "name": "metric",
+    "description": "Use when recording a periodic quantitative observation — daily/weekly/monthly snapshot of performance (headcount, utilization %, defect rate, cost-per-unit, customer-satisfaction score). The data point.",
+    "path": "metric"
+  },
+  {
     "atom": "mineralresourceassets",
     "name": "mineral-resource-assets",
     "description": "The mineral-resource-assets collection — Mineral Resource Assets — IFRS 6 exploration & evaluation register",
     "path": "collections/MineralResourceAssets"
   },
   {
+    "atom": "name",
+    "name": "name",
+    "description": "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope).",
+    "path": "fields/name"
+  },
+  {
     "atom": "notes",
     "name": "notes",
     "description": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
     "path": "rodin/notes"
+  },
+  {
+    "atom": "nullability",
+    "name": "nullability",
+    "description": "Use when deciding NULL semantics — nullable vs NOT NULL fields, NULL handling in queries (IS NULL, COALESCE, NVL), NULL in aggregates (SUM ignores NULL), NULL propagation in calculations, three-valued logic.",
+    "path": "nullability"
   },
   {
     "atom": "number",
@@ -1305,6 +1767,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "oauth",
     "description": "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry.",
     "path": "services/oauth"
+  },
+  {
+    "atom": "observability",
+    "name": "observability",
+    "description": "Use when making systems instrumentable — metrics (gauge/counter/histogram/summary), distributed tracing, structured logging, cardinality explosion in high-dimensional metrics, sampling strategies for observability.",
+    "path": "observability"
   },
   {
     "atom": "octave",
@@ -1361,6 +1829,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "optimize"
   },
   {
+    "atom": "outlier",
+    "name": "outlier",
+    "description": "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting.",
+    "path": "outlier"
+  },
+  {
     "atom": "packages",
     "name": "packages",
     "description": "The packages collection — Packages — logistic handling units (pallet / carton / case …) with SSCC",
@@ -1379,10 +1853,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "part"
   },
   {
+    "atom": "partition",
+    "name": "partition",
+    "description": "Use when dividing data for performance or governance — table partitioning (by range/hash/list), partition pruning, partition management (add/drop/compress), partitioning strategy for horizontal scaling.",
+    "path": "partition"
+  },
+  {
     "atom": "party",
     "name": "party",
     "description": "Use when one entity is referenced under many roles — seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by. The party-role concern-set collapsed to ONE polymorphic partyRef(role); the role is a tag-context, not N FK columns.",
     "path": "fields/party"
+  },
+  {
+    "atom": "payment",
+    "name": "payment",
+    "description": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
+    "path": "fields/payment"
   },
   {
     "atom": "paymentallocations",
@@ -1433,6 +1919,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Employees/PerformanceReviews"
   },
   {
+    "atom": "period",
+    "name": "period",
+    "description": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
+    "path": "fields/period"
+  },
+  {
     "atom": "periodendadjustments",
     "name": "period-end-adjustments",
     "description": "The period-end-adjustments collection — Period-End Adjustments — accruals, deferrals, depreciation, allocation entries",
@@ -1455,6 +1947,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "phase",
     "description": "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin.",
     "path": "rodin/phase"
+  },
+  {
+    "atom": "pipeline",
+    "name": "pipeline",
+    "description": "Use when tracking the progression of deals through sales stages — lead → qualified → proposal → negotiation → won/lost. The sales funnel state at each stage with value, probability, and close date.",
+    "path": "pipeline"
   },
   {
     "atom": "plugins",
@@ -1511,6 +2009,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Posts"
   },
   {
+    "atom": "prepaid",
+    "name": "prepaid",
+    "description": "Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
+    "path": "prepaid"
+  },
+  {
+    "atom": "priority",
+    "name": "priority",
+    "description": "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field.",
+    "path": "priority"
+  },
+  {
     "atom": "priorperiodadjustments",
     "name": "prior-period-adjustments",
     "description": "The prior-period-adjustments collection — Prior-Period Adjustments — IAS-8 §42-49 retrospective corrections of",
@@ -1565,6 +2075,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Properties"
   },
   {
+    "atom": "prospect",
+    "name": "prospect",
+    "description": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
+    "path": "prospect"
+  },
+  {
+    "atom": "provision",
+    "name": "provision",
+    "description": "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37",
+    "path": "provision"
+  },
+  {
     "atom": "provisions",
     "name": "provisions",
     "description": "The provisions collection — Provisions — IAS-37 §14 + ASC 450 mandatory liability disclosure",
@@ -1595,6 +2117,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "queries"
   },
   {
+    "atom": "queue",
+    "name": "queue",
+    "description": "Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work.",
+    "path": "queue"
+  },
+  {
+    "atom": "quota",
+    "name": "quota",
+    "description": "Use when setting or tracking rep/team/territory sales targets — period quota, attainment %, variance to goal; often linked to compensation.",
+    "path": "quota"
+  },
+  {
     "atom": "quotes",
     "name": "quotes",
     "description": "The quotes collection — Quotes — IFRS 15 / ASC 606 contract origination",
@@ -1607,6 +2141,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "fields/rate"
   },
   {
+    "atom": "reason",
+    "name": "reason",
+    "description": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
+    "path": "fields/reason"
+  },
+  {
     "atom": "receipt",
     "name": "receipt",
     "description": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
@@ -1617,6 +2157,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "receipts",
     "description": "The receipts collection — Receipts (касови бонове / electronic receipts) — the Наредба Н-18 fiscal",
     "path": "collections/Receipts"
+  },
+  {
+    "atom": "recognition",
+    "name": "recognition",
+    "description": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
+    "path": "recognition"
   },
   {
     "atom": "reconcile",
@@ -1667,16 +2213,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/LegalEntities/RegulatoryReports"
   },
   {
+    "atom": "relatedparty",
+    "name": "relatedparty",
+    "description": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
+    "path": "relatedparty"
+  },
+  {
     "atom": "relatedpartytransactions",
     "name": "related-party-transactions",
     "description": "The related-party-transactions collection — RelatedPartyTransactions",
     "path": "collections/LegalEntities/RelatedPartyTransactions"
   },
   {
+    "atom": "remediation",
+    "name": "remediation",
+    "description": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
+    "path": "remediation"
+  },
+  {
     "atom": "remediationplans",
     "name": "remediation-plans",
     "description": "The remediation-plans collection — RemediationPlans",
     "path": "collections/InternalControls/AuditFindings/RemediationPlans"
+  },
+  {
+    "atom": "replication",
+    "name": "replication",
+    "description": "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics.",
+    "path": "replication"
   },
   {
     "atom": "reportingmappings",
@@ -1697,10 +2261,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "research"
   },
   {
+    "atom": "resolution",
+    "name": "resolution",
+    "description": "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.",
+    "path": "resolution"
+  },
+  {
+    "atom": "restriction",
+    "name": "restriction",
+    "description": "Use when a contract imposes use restrictions — field of use, geographic restriction, customer type restriction, sublicense prohibition, derivative-work restrictions.",
+    "path": "restriction"
+  },
+  {
+    "atom": "retention",
+    "name": "retention",
+    "description": "Use when designing/measuring strategies to keep existing customers — loyalty programs, engagement triggers, win-back campaigns, at-risk indicators.",
+    "path": "retention"
+  },
+  {
     "atom": "returns",
     "name": "returns",
     "description": "The returns collection — Returns / RMA — customer-return authorisation with inventory + GL reversal",
     "path": "collections/Customers/SalesOrders/Returns"
+  },
+  {
+    "atom": "revenue",
+    "name": "revenue",
+    "description": "Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral.",
+    "path": "revenue"
   },
   {
     "atom": "reverse",
@@ -1709,10 +2297,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "accounting/reverse"
   },
   {
+    "atom": "risk",
+    "name": "risk",
+    "description": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.",
+    "path": "risk"
+  },
+  {
     "atom": "riskregister",
     "name": "risk-register",
     "description": "The risk-register collection — RiskRegister",
     "path": "collections/LegalEntities/RiskRegister"
+  },
+  {
+    "atom": "roadmap",
+    "name": "roadmap",
+    "description": "Use when planning deliverables across quarters/years — a timeline of features, milestones, epics, with dependency links and resource allocation. The strategic sequencing.",
+    "path": "roadmap"
   },
   {
     "atom": "rodin",
@@ -1751,6 +2351,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Items/BillsOfMaterials/WorkOrders/Routings"
   },
   {
+    "atom": "runbook",
+    "name": "runbook",
+    "description": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
+    "path": "runbook"
+  },
+  {
     "atom": "sacred",
     "name": "sacred",
     "description": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
@@ -1775,10 +2381,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Customers/SalesOrders"
   },
   {
+    "atom": "sampling",
+    "name": "sampling",
+    "description": "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design.",
+    "path": "sampling"
+  },
+  {
     "atom": "sandbox",
     "name": "sandbox",
     "description": "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on.",
     "path": "services/sandbox"
+  },
+  {
+    "atom": "satisfaction",
+    "name": "satisfaction",
+    "description": "Use when measuring employee/customer contentment — survey scores, NPS, CSAT, engagement indices. The scalar metric of sentiment toward work, leadership, culture, or service.",
+    "path": "satisfaction"
+  },
+  {
+    "atom": "schedule",
+    "name": "schedule",
+    "description": "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment.",
+    "path": "schedule"
+  },
+  {
+    "atom": "schema",
+    "name": "schema",
+    "description": "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure.",
+    "path": "schema"
   },
   {
     "atom": "science",
@@ -1805,6 +2435,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "seed"
   },
   {
+    "atom": "segment",
+    "name": "segment",
+    "description": "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension",
+    "path": "segment"
+  },
+  {
     "atom": "segmentreporting",
     "name": "segment-reporting",
     "description": "The segment-reporting collection — SegmentReporting",
@@ -1815,6 +2451,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "self",
     "description": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
     "path": "self"
+  },
+  {
+    "atom": "sentiment",
+    "name": "sentiment",
+    "description": "Use when analyzing emotional tone — from text, survey, or interaction. The polarity/intensity of emotion (positive/negative/neutral) or sentiment score.",
+    "path": "sentiment"
   },
   {
     "atom": "sepamandates",
@@ -1859,10 +2501,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "identity/signal"
   },
   {
+    "atom": "sla",
+    "name": "sla",
+    "description": "Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric.",
+    "path": "sla"
+  },
+  {
     "atom": "society",
     "name": "society",
     "description": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
     "path": "society"
+  },
+  {
+    "atom": "source",
+    "name": "source",
+    "description": "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation.",
+    "path": "fields/source"
   },
   {
     "atom": "spaces",
@@ -1887,6 +2541,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "standards",
     "description": "The standards collection — Standards — persistent registry of every published standard the",
     "path": "collections/Standards"
+  },
+  {
+    "atom": "start",
+    "name": "start",
+    "description": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
+    "path": "fields/start"
+  },
+  {
+    "atom": "status",
+    "name": "status",
+    "description": "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'.",
+    "path": "fields/status"
   },
   {
     "atom": "statutoryfieldmappings",
@@ -1973,6 +2639,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/TaxJurisdictions/TaxCodes"
   },
   {
+    "atom": "taxexempt",
+    "name": "taxexempt",
+    "description": "Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation",
+    "path": "taxexempt"
+  },
+  {
     "atom": "taxingjurisdictions",
     "name": "taxing-jurisdictions",
     "description": "The taxing-jurisdictions collection — TaxingJurisdictions",
@@ -2009,10 +2681,52 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Tenants"
   },
   {
+    "atom": "tenure",
+    "name": "tenure",
+    "description": "Use when tracking employment duration, anniversaries, or vesting schedules — hire date, current tenure, service-based benefits accrual, or eligibility calculations.",
+    "path": "tenure"
+  },
+  {
     "atom": "terminals",
     "name": "terminals",
     "description": "The terminals collection — Terminals — virtual POS terminals for the Наредба Н-18 alternative regime",
     "path": "collections/Terminals"
+  },
+  {
+    "atom": "termination",
+    "name": "termination",
+    "description": "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination.",
+    "path": "termination"
+  },
+  {
+    "atom": "territory",
+    "name": "territory",
+    "description": "Use when organizing sales coverage — geographic or account-based territory, assignment to rep, quota per territory, coverage/overlap rules.",
+    "path": "territory"
+  },
+  {
+    "atom": "theme",
+    "name": "theme",
+    "description": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
+    "path": "theme"
+  },
+  {
+    "atom": "throughput",
+    "name": "throughput",
+    "description": "Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output.",
+    "path": "throughput"
+  },
+  {
+    "atom": "ticket",
+    "name": "ticket",
+    "description": "Use when a customer/employee request, complaint, or issue becomes a tracked work item with queue, priority, assignment, and SLA. The polymorphic support-case container.",
+    "path": "ticket"
+  },
+  {
+    "atom": "time",
+    "name": "time",
+    "description": "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor.",
+    "path": "fields/time"
   },
   {
     "atom": "timeentries",
@@ -2021,10 +2735,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Employees/TimeEntries"
   },
   {
+    "atom": "token",
+    "name": "token",
+    "description": "Use when defining design primitives — a design token is a named, semantic design decision (color, font-size, spacing, motion) reused across components. The granular unit of design consistency.",
+    "path": "token"
+  },
+  {
     "atom": "torus",
     "name": "torus",
     "description": "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole.",
     "path": "torus"
+  },
+  {
+    "atom": "total",
+    "name": "total",
+    "description": "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency.",
+    "path": "fields/total"
   },
   {
     "atom": "trackingevents",
@@ -2037,6 +2763,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "train",
     "description": "Use when auto-training an actor (user, employee, or agent) toward best efficiency in the app — closing the competency gap (required − held) by routing each deficit to the skillRoute that fills it, the gap priced as a decompression debt that off-gasses toward the role's M-value. Efficiency IS the pay-fraction (etrima efficiency_percent); training literally raises pay.",
     "path": "train"
+  },
+  {
+    "atom": "training",
+    "name": "training",
+    "description": "Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes.",
+    "path": "training"
   },
   {
     "atom": "transaction",
@@ -2069,6 +2801,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections/Translations"
   },
   {
+    "atom": "trend",
+    "name": "trend",
+    "description": "Use when tracking metric evolution, forecasting, or detecting patterns over time — moving averages, velocity, burndown, growth curves. The temporal analysis dimension.",
+    "path": "trend"
+  },
+  {
     "atom": "trinity",
     "name": "trinity",
     "description": "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated.",
@@ -2079,6 +2817,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "trust",
     "description": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
     "path": "trust"
+  },
+  {
+    "atom": "type",
+    "name": "type",
+    "description": "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows.",
+    "path": "fields/type"
   },
   {
     "atom": "types",
@@ -2097,6 +2841,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "upload",
     "description": "Use when configuring a Payload upload collection or debugging file handling — image sizes/crop/focal point, mime/file-size limits, storage adapters (R2/S3), static serving, or securing uploaded files.",
     "path": "upload"
+  },
+  {
+    "atom": "upsell",
+    "name": "upsell",
+    "description": "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics.",
+    "path": "upsell"
   },
   {
     "atom": "usagerecords",
@@ -2127,6 +2877,24 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "projection",
     "description": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
     "path": "services/uuid-projection"
+  },
+  {
+    "atom": "value",
+    "name": "value",
+    "description": "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate.",
+    "path": "fields/value"
+  },
+  {
+    "atom": "variance",
+    "name": "variance",
+    "description": "Use for analyzing variance between planned (budget/standard) and actual results — budget variance, volume/efficiency/price splits in standard costing, and management-defined performance measures",
+    "path": "variance"
+  },
+  {
+    "atom": "variant",
+    "name": "variant",
+    "description": "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.",
+    "path": "variant"
   },
   {
     "atom": "vendorquotes",
@@ -2163,6 +2931,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "warehouse-locations",
     "description": "The warehouse-locations collection — Warehouse Locations — physical / logical stock locations",
     "path": "collections/WarehouseLocations"
+  },
+  {
+    "atom": "warranty",
+    "name": "warranty",
+    "description": "Use when a party makes a binding representation or guarantee about a fact/condition — express (stated) vs. implied (statutory), scope, duration, remedy (repair/replace/indemnify), breach consequences.",
+    "path": "warranty"
   },
   {
     "atom": "weave",
