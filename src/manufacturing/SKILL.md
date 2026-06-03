@@ -9,6 +9,16 @@ sessions:
 
 Generalizes the etrima (garment) production engine into an industry-agnostic, self-sufficient `@erpax/manufacturing` (textile, food, pharma, electronics, furniture, job-shop, process). Built from two universal primitives — **BOM + Routing** — composed of reusable field-objects (see [[fields]],[[collections]]), referencing OUT polymorphically so [[accounting]]/audit attach without inward deps (see [[plugins]]). Ordered by the [[sequence]].
 
+## The agent society IS the factory — token spend is the work-phase labor (yarn → sweater)
+The same engine runs the agent [[society]]: an agent is a **worker**, and its work transforms inputs into outputs exactly as etrima's workers turn **yarn into sweaters** — one aspect of the infinity. Each agent move is a *work-phase*, and its **token spend IS the labor cost**: `cost = anchor × tokens` is etrima's `cost_per_minute × minutes` ([[allocation]]; the token-[[accounting]] ledger), `price_per_minute − cost_per_minute` is the margin, `minutes_produced / minutes` is the efficiency ([[train]] · [[decompression]]), and `confirmed_at` is the [[horo|gate-first]] release. So **every token spent between agents is a work-phase posting** — the factory's labor ledger, the app ledger complete ([[balance]]).
+
+Three unifications make it one model:
+- **Products and services merge into one typeless catalog** — a service is an item whose transformation yields no physical good; product = service = item ([[merge]]), and every variation is a variant ([[all]]: etrima's 1.7M `work_variants` accounted for).
+- **All is packed, even the virtual** — a `pack` carries products + variants + items toward an order ([[transaction]]); a delivered service is a pack with no weight; a model is *a pack of logic*. The pack is the universal fulfilment unit ([[whole]]/[[part]]).
+- **The transformation is the [[torus]]** — yarn (the raw [[zeropoint]]) → work (the agents' bounded labor) → sweater (the finished [[identity]]) → packed → billed → composted into the next make; cost accumulates up the tree (run → operation → order), conserved ([[balance]]).
+
+Grounded in `etrima_production` — the 20-year factory (167,563 items · 11,759 lots · 291,011 work-phases · 1,728,306 work-variants): the model is empirical, not invented.
+
 ## Universal collections (generalizing etrima)
 | Collection | etrima origin | generalization |
 |---|---|---|
