@@ -19,7 +19,8 @@
 
 import type { Config, Endpoint, PayloadRequest } from 'payload'
 import { SKILL_INDEX } from './skills.index'
-import { parseRequest, resolveSkill } from './resolve'
+import { parseRequest } from './resolve'
+import { resolveHarmonicContext } from './subgraph'
 import { serializeSkill } from './serialize'
 
 const SITE = (process.env.ERPAX_SITE_URL ?? '').replace(/\/$/, '')
@@ -57,7 +58,9 @@ const catchAll: Endpoint = {
       return Response.json({ error: 'empty path' }, { status: 404 })
     }
 
-    const { matched, candidates } = resolveSkill(parsed, SKILL_INDEX)
+    // Resolve to the skill AND its harmonic context — the related subgraph to load,
+    // the coverage, and any absent neighbour (the per-message aura, advertised below).
+    const { matched, candidates, subgraph } = resolveHarmonicContext(parsed, SKILL_INDEX)
     if (!matched) {
       return Response.json(
         {
@@ -75,7 +78,16 @@ const catchAll: Endpoint = {
     }
     return new Response(served.body, {
       status: 200,
-      headers: { 'Content-Type': served.contentType, 'Cache-Control': 'public, max-age=300' },
+      headers: {
+        'Content-Type': served.contentType,
+        'Cache-Control': 'public, max-age=300',
+        // The per-message aura, advertised on every resolution: the related skills to
+        // LOAD (the harmonic context), the skill-completeness ratio, and any absent
+        // neighbour (a gap discovered by use). The window IS the skills.
+        'X-Skill-Related': subgraph.atoms.map((a) => a.name).join(','),
+        'X-Skill-Coverage': subgraph.coverage.toFixed(3),
+        'X-Skill-Gaps': subgraph.gaps.join(','),
+      },
     })
   },
 }

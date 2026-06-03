@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-import type { SkillNode } from './resolve'
-import { relatedSubgraph } from './subgraph'
+import type { ParsedRequest, SkillNode } from './resolve'
+import { relatedSubgraph, resolveHarmonicContext } from './subgraph'
 
 const node = (
   name: string,
@@ -67,5 +67,28 @@ describe('subgraph — the per-message aura (load related skills, flag absent ne
     const exchange = node('exchange')
     const g = relatedSubgraph(seed, [seed, exchange], 1)
     expect(g.gaps).toEqual([])
+  })
+})
+
+describe('resolveHarmonicContext — resolve to a skill AND its harmonic context', () => {
+  const transaction = node('transaction', { related: ['balance', 'flow', 'ghost'] })
+  const balance = node('balance')
+  const flow = node('flow')
+  const index = [transaction, balance, flow]
+  const req = (target: string): ParsedRequest => ({ verb: null, segments: [target], format: 'json', target })
+
+  it('returns the matched skill + the subgraph to load + the gap verdict', () => {
+    const ctx = resolveHarmonicContext(req('transaction'), index, 1)
+    expect(ctx.matched?.name).toBe('transaction')
+    expect(ctx.subgraph.atoms.map((a) => a.name).sort()).toEqual(['balance', 'flow', 'transaction'])
+    expect(ctx.subgraph.gaps).toEqual(['ghost'])
+    expect(ctx.subgraph.coverage).toBeCloseTo(3 / 4)
+  })
+
+  it('no match ⇒ empty subgraph, coverage 1 (nothing to load)', () => {
+    const ctx = resolveHarmonicContext(req('zzznotaskill'), index, 1)
+    expect(ctx.matched).toBeNull()
+    expect(ctx.subgraph.atoms).toEqual([])
+    expect(ctx.subgraph.coverage).toBe(1)
   })
 })

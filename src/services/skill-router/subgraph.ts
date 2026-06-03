@@ -18,7 +18,7 @@
  *
  * @standard ISO/IEC 25010 §5.5 testability (pure, deterministic)
  */
-import type { SkillNode } from './resolve'
+import { resolveSkill, type ParsedRequest, type ResolveResult, type SkillNode } from './resolve'
 
 export interface Subgraph {
   /** the seed + its related subgraph, BFS order — the skills the message loads. */
@@ -76,4 +76,29 @@ export function relatedSubgraph(seed: SkillNode, index: readonly SkillNode[], de
   const referenced = atoms.length + gaps.size
   const coverage = referenced > 0 ? atoms.length / referenced : 1
   return { atoms, gaps: [...gaps].sort(), coverage }
+}
+
+/** A resolution PLUS its harmonic context — the matched skill, the candidates, and the loaded subgraph. */
+export interface HarmonicContext extends ResolveResult {
+  /** the matched skill's related neighbourhood to LOAD + the gap/coverage verdict (the per-message aura). */
+  readonly subgraph: Subgraph
+}
+
+/**
+ * The wired enforcement: resolve a request to its skill AND its harmonic context.
+ * `resolveSkill` finds the match (the top-k candidates, the static gate); this then
+ * loads the matched skill's related subgraph — so a resolution doesn't return one
+ * atom, it returns the skills the message should LOAD plus the coverage verdict and
+ * any absent neighbour (the gap discovered by use). The window IS the skills.
+ */
+export function resolveHarmonicContext(
+  req: ParsedRequest,
+  index: readonly SkillNode[],
+  depth = 1,
+): HarmonicContext {
+  const result = resolveSkill(req, index)
+  const subgraph: Subgraph = result.matched
+    ? relatedSubgraph(result.matched, index, depth)
+    : { atoms: [], gaps: [], coverage: 1 }
+  return { ...result, subgraph }
 }
