@@ -199,6 +199,10 @@ export { default as ConsignmentSales } from './WarehouseLocations/ConsignmentArr
 export { default as AuditEvents } from './AuditEvents'
 export { default as ApiAuditEvents } from './ApiAuditEvents'
 export { default as EvidenceAttestations } from './EvidenceAttestations'
+
+// Public Order — the justice docket (COFOG-03): adjudication as a balanced state-machine
+export { Cases } from './Cases'
+
 // Access-control: uuid-based RBAC share bindings (Conservation Law 59)
 export { default as Shares } from './Shares'
 

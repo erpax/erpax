@@ -196,6 +196,7 @@ const {
   ComplianceGaps,
   AuditEvidence,
   AuditFindings,
+  Cases,
   RemediationPlans,
   AuditCommittees,
   AuditCommitteeMembers,
@@ -669,6 +670,7 @@ export default buildConfig({
     ComplianceGaps,
     AuditEvidence,
     AuditFindings,
+    Cases, // Public Order — the justice docket (COFOG-03)
     RemediationPlans,
     // Phase 4: Audit Governance & Reporting (5)
     AuditCommittees,

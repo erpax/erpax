@@ -12231,6 +12231,122 @@
       "localizeStatus": false,
       "versions": true
     },
+    "cases": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "reference": {
+          "localized": false
+        },
+        "type": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "title": {
+          "localized": false
+        },
+        "forum": {
+          "localized": false
+        },
+        "countryCode": {
+          "localized": false
+        },
+        "charge": {
+          "localized": false
+        },
+        "defence": {
+          "localized": false
+        },
+        "judgment": {
+          "localized": false
+        },
+        "parties": {
+          "localized": false
+        },
+        "parties.role": {
+          "localized": false
+        },
+        "parties.party": {
+          "localized": false
+        },
+        "parties.id": {
+          "localized": false
+        },
+        "filedAt": {
+          "localized": false
+        },
+        "sealedAt": {
+          "localized": false
+        },
+        "proceedings": {
+          "localized": false
+        },
+        "proceedings.kind": {
+          "localized": false
+        },
+        "proceedings.heldAt": {
+          "localized": false
+        },
+        "proceedings.summary": {
+          "localized": false
+        },
+        "proceedings.ruling": {
+          "localized": false
+        },
+        "proceedings.id": {
+          "localized": false
+        },
+        "evidence": {
+          "localized": false
+        },
+        "evidence.contentUuid": {
+          "localized": false
+        },
+        "evidence.kind": {
+          "localized": false
+        },
+        "evidence.summary": {
+          "localized": false
+        },
+        "evidence.filedAt": {
+          "localized": false
+        },
+        "evidence.filedBy": {
+          "localized": false
+        },
+        "evidence.supersedes": {
+          "localized": false
+        },
+        "evidence.id": {
+          "localized": false
+        },
+        "relatedMatters": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
     "remediation-plans": {
       "autosave": false,
       "drafts": false,

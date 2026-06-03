@@ -205,6 +205,7 @@ export interface Config {
     'compliance-gaps': ComplianceGap;
     'audit-evidence': AuditEvidence;
     'audit-findings': AuditFinding;
+    cases: Case;
     'remediation-plans': RemediationPlan;
     'audit-committees': AuditCommittee;
     'audit-committee-members': AuditCommitteeMember;
@@ -453,6 +454,7 @@ export interface Config {
     'compliance-gaps': ComplianceGapsSelect<false> | ComplianceGapsSelect<true>;
     'audit-evidence': AuditEvidenceSelect<false> | AuditEvidenceSelect<true>;
     'audit-findings': AuditFindingsSelect<false> | AuditFindingsSelect<true>;
+    cases: CasesSelect<false> | CasesSelect<true>;
     'remediation-plans': RemediationPlansSelect<false> | RemediationPlansSelect<true>;
     'audit-committees': AuditCommitteesSelect<false> | AuditCommitteesSelect<true>;
     'audit-committee-members': AuditCommitteeMembersSelect<false> | AuditCommitteeMembersSelect<true>;
@@ -12951,6 +12953,128 @@ export interface AuditEvidence {
   createdAt: string;
 }
 /**
+ * The public-order docket — a balanced state-machine on the horo ring. Parties under roles, append-only evidence, row-level visibility; a matter seals only when charge↔defence balance into a judgment.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cases".
+ */
+export interface Case {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Docket number — the matter reference (e.g. `2026-CV-001`).
+   */
+  reference: string;
+  /**
+   * Matter type — `criminal` carries the offence record; `arbitration`/`mediation` are the dispute-resolution forks. One docket, many subtypes (branch on `type`).
+   */
+  type: 'civil' | 'criminal' | 'administrative' | 'disciplinary' | 'arbitration' | 'mediation';
+  /**
+   * Lifecycle on the 1·2·4·8·7·5·9 ring: filed → served → discovery → heard → adjudicated → remedied → sealed. Off-ring is disharmony.
+   */
+  status: 'filed' | 'served' | 'discovery' | 'heard' | 'adjudicated' | 'remedied' | 'sealed';
+  title: string;
+  /**
+   * The court / tribunal / arbitrator (COFOG 03.3 law-courts).
+   */
+  forum?: string | null;
+  /**
+   * Jurisdiction — ISO 3166-1 alpha-2 (the governing-law seat).
+   */
+  countryCode?: string | null;
+  /**
+   * The charge / claim / offence asserted — one pole of the matter.
+   */
+  charge?: string | null;
+  /**
+   * The defence / answer — the opposing pole. Each pole defines the other.
+   */
+  defence?: string | null;
+  /**
+   * The balanced resolution of charge↔defence — set at adjudication and REQUIRED to seal (the matter balances like a ledger).
+   */
+  judgment?: string | null;
+  /**
+   * Parties under roles — the same polymorphic form a transaction-bearing collection uses.
+   */
+  parties?:
+    | {
+        role: 'complainant' | 'defendant' | 'prosecutor' | 'judge' | 'counsel' | 'witness';
+        party:
+          | {
+              relationTo: 'users';
+              value: string | User;
+            }
+          | {
+              relationTo: 'customers';
+              value: string | Customer;
+            }
+          | {
+              relationTo: 'vendors';
+              value: string | Vendor;
+            }
+          | {
+              relationTo: 'employees';
+              value: string | Employee;
+            }
+          | {
+              relationTo: 'legal-entities';
+              value: string | LegalEntity;
+            };
+        id?: string | null;
+      }[]
+    | null;
+  filedAt?: string | null;
+  /**
+   * When the matter closed (became precedent).
+   */
+  sealedAt?: string | null;
+  /**
+   * Hearings / sessions — append-only. A docket holds proceedings (the same form, one scale down).
+   */
+  proceedings?:
+    | {
+        kind: 'hearing' | 'session' | 'motion' | 'ruling';
+        heldAt?: string | null;
+        summary?: string | null;
+        ruling?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Chain of custody — append-only and content-addressed. Once filed an exhibit is never edited or deleted, only superseded.
+   */
+  evidence?:
+    | {
+        /**
+         * Content-uuid of the exhibit (RFC 9562 §5.8) — same content ⇒ same id.
+         */
+        contentUuid?: string | null;
+        kind?: string | null;
+        summary?: string | null;
+        filedAt?: string | null;
+        filedBy?: (string | null) | User;
+        /**
+         * The content-uuid this exhibit supersedes (supersede — never delete).
+         */
+        supersedes?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Cross-referenced matters (coordination is cross-reference, not a separate collection).
+   */
+  relatedMatters?: (string | Case)[] | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "remediation-plans".
  */
@@ -24244,6 +24368,57 @@ export interface AuditFindingsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cases_select".
+ */
+export interface CasesSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  type?: T;
+  status?: T;
+  title?: T;
+  forum?: T;
+  countryCode?: T;
+  charge?: T;
+  defence?: T;
+  judgment?: T;
+  parties?:
+    | T
+    | {
+        role?: T;
+        party?: T;
+        id?: T;
+      };
+  filedAt?: T;
+  sealedAt?: T;
+  proceedings?:
+    | T
+    | {
+        kind?: T;
+        heldAt?: T;
+        summary?: T;
+        ruling?: T;
+        id?: T;
+      };
+  evidence?:
+    | T
+    | {
+        contentUuid?: T;
+        kind?: T;
+        summary?: T;
+        filedAt?: T;
+        filedBy?: T;
+        supersedes?: T;
+        id?: T;
+      };
+  relatedMatters?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "remediation-plans_select".
  */
 export interface RemediationPlansSelect<T extends boolean = true> {
@@ -27594,6 +27769,7 @@ export interface TaskCreateCollectionExport {
       | 'compliance-gaps'
       | 'audit-evidence'
       | 'audit-findings'
+      | 'cases'
       | 'remediation-plans'
       | 'audit-committees'
       | 'audit-committee-members'
