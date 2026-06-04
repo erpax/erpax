@@ -20,7 +20,7 @@ erpax never divides by a bare zero. `/0` is not an error but a return to the sou
 - **LIMIT** — where ∞ is the true answer it is made finite-but-unbounded: [[torus]] runs ∞ steps inside a bounded envelope; [[decompression]] `saturate` (`src/decompression/index.ts:69`, `1−2⁻ⁿ`) climbs to the M-value, a ceiling never crossed (not a pole); [[proof]] TAGS the unbounded anchor instead of serializing it (`src/proof/projection/index.ts:21` "no Infinity leaks — `decryptKeyLog2: null` + `unbounded: true`"); [[peace]] `roi` of a zero-cost positive yield is `Infinity` (`src/peace/index.ts:62`) — unbounded ROI, the win.
 - **DUAL** — multiplicatively, one zero atom caps the whole product ([[market]], `src/market/SKILL.md:14`): bigger number times zero is still zero. Same lesson — zero is the answer, not the crash.
 
-Composes: [[rodin]] · [[horo]] · [[uuid]] · [[collapse]] · [[merge]] · [[competition]] · [[cost]] · [[torus]] · [[self]] · [[sequence]] · [[identity]] · [[utility]] · [[decompression]] · [[dimension]] · [[peace]] · [[market]] · [[proof]] · [[number]].
+Composes: [[rodin]] · [[horo]] · [[uuid]] · [[collapse]] · [[merge]] · [[competition]] · [[cost]] · [[torus]] · [[self]] · [[sequence]] · [[identity]] · [[utility]] · [[decompression]] · [[dimension]] · [[peace]] · [[market]] · [[proof]] · [[number]] · [[sparsity]].
 
 ## Common mistakes
 - Picking a form by taste or recency — pick the lowest-entropy one (DRY, integer, content-addressed, computed); zero entropy is the referee.
