@@ -38,7 +38,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "account",
     "name": "account",
     "description": "Use when a transaction or GL entry references a chart-of-accounts item — bank account, GL account, cost-center account, liability account. Payload relationTo: 'gl-accounts' or 'bank-accounts'; denormalized fields (accountNumber, accountName) wire via account atom.",
-    "path": "fields/account"
+    "path": "account"
   },
   {
     "atom": "accounting",
@@ -47,10 +47,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "accounting"
   },
   {
-    "atom": "accountreconciliations",
-    "name": "account-reconciliations",
-    "description": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
-    "path": "collections/GLAccounts/AccountReconciliations"
+    "atom": "accounts",
+    "name": "regulatory-deferral-accounts",
+    "description": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
+    "path": "regulatory/deferral/accounts"
   },
   {
     "atom": "accrual",
@@ -59,16 +59,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "accrual"
   },
   {
+    "atom": "acknowledgments",
+    "name": "policy-acknowledgments",
+    "description": "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.",
+    "path": "internal/policies/policy/acknowledgments"
+  },
+  {
+    "atom": "actions",
+    "name": "board-actions",
+    "description": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
+    "path": "legal/entities/board/actions"
+  },
+  {
     "atom": "active",
     "name": "active",
     "description": "Use when an entity can be active or inactive — archived customers, disabled accounts, deactivated users. Boolean or select (active/inactive); toggle switches lifecycle state without deletion. Antonym of status when status carries workflow states.",
-    "path": "fields/active"
+    "path": "active"
   },
   {
     "atom": "activities",
-    "name": "activities",
-    "description": "Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection.",
-    "path": "collections/Activities"
+    "name": "data-processing-activities",
+    "description": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
+    "path": "data/processing/activities"
+  },
+  {
+    "atom": "adjustments",
+    "name": "rounding-adjustments",
+    "description": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
+    "path": "journal/entries/rounding/adjustments"
   },
   {
     "atom": "admin",
@@ -79,14 +97,8 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "agent",
     "name": "agent",
-    "description": "Use when reasoning about an agent's identity, cloning, or replication — an agent IS its content (skills + purpose), its id is the content-uuid of that definition, so identical clones merge to one and distinct agents are specialised children. The self-replication law.",
-    "path": "services/agent"
-  },
-  {
-    "atom": "agentsync",
-    "name": "agent-sync",
-    "description": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-    "path": "services/agent-sync"
+    "description": "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).",
+    "path": "agent"
   },
   {
     "atom": "aggregation",
@@ -98,19 +110,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "ai",
     "name": "ai",
     "description": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-    "path": "services/ai"
-  },
-  {
-    "atom": "aimodels",
-    "name": "ai-models",
-    "description": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
-    "path": "collections/AiModels"
-  },
-  {
-    "atom": "aisuggestions",
-    "name": "ai-suggestions",
-    "description": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
-    "path": "collections/AiSuggestions"
+    "path": "ai"
   },
   {
     "atom": "akashic",
@@ -128,13 +128,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "allocation",
     "name": "allocation",
     "description": "Use when defining how value/pay is distributed among contributors — reward for work, splitting a fixed pot, mechanism design. Reward is a pure function of verified time leveraged; the rate scale is harmonic; the pot is conserved.",
-    "path": "services/allocation"
+    "path": "allocation"
+  },
+  {
+    "atom": "allocations",
+    "name": "payment-allocations",
+    "description": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
+    "path": "invoices/payments/payment/allocations"
   },
   {
     "atom": "amendment",
     "name": "amendment",
     "description": "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.",
     "path": "amendment"
+  },
+  {
+    "atom": "amendments",
+    "name": "contract-amendments",
+    "description": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
+    "path": "customers/contracts/contract/amendments"
   },
   {
     "atom": "amortize",
@@ -146,13 +158,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "amount",
     "name": "amount",
     "description": "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money.",
-    "path": "fields/amount"
+    "path": "amount"
+  },
+  {
+    "atom": "analytics",
+    "name": "analytics",
+    "description": "",
+    "path": "post/close/analytics"
   },
   {
     "atom": "anchor",
     "name": "anchor",
     "description": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-    "path": "services/anchor"
+    "path": "anchor"
   },
   {
     "atom": "angel",
@@ -161,28 +179,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "angel"
   },
   {
-    "atom": "anticorruption",
-    "name": "anti-corruption",
-    "description": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
-    "path": "services/anti-corruption"
-  },
-  {
     "atom": "api",
     "name": "api",
     "description": "Use when calling Payload data operations — Local API (payload.find/create/update/delete), REST endpoints, or GraphQL — or deciding which to use, passing depth/select/where/overrideAccess, or running ops inside hooks/server components.",
     "path": "api"
   },
   {
-    "atom": "apiauditevents",
-    "name": "api-audit-events",
-    "description": "Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection.",
-    "path": "collections/ApiAuditEvents"
-  },
-  {
     "atom": "approved",
     "name": "approved",
     "description": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-    "path": "fields/approved"
+    "path": "approved"
+  },
+  {
+    "atom": "arrangements",
+    "name": "consignment-arrangements",
+    "description": "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection.",
+    "path": "warehouse/locations/consignment/arrangements"
+  },
+  {
+    "atom": "assets",
+    "name": "mineral-resource-assets",
+    "description": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
+    "path": "mineral/resource/assets"
   },
   {
     "atom": "assignment",
@@ -195,6 +213,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "atom",
     "description": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
     "path": "atom"
+  },
+  {
+    "atom": "attestations",
+    "name": "evidence-attestations",
+    "description": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
+    "path": "evidence/attestations"
   },
   {
     "atom": "attribution",
@@ -212,67 +236,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "audit",
     "name": "audit",
     "description": "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.",
-    "path": "fields/audit"
-  },
-  {
-    "atom": "auditcommitteemembers",
-    "name": "audit-committee-members",
-    "description": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
-    "path": "collections/LegalEntities/AuditCommittees/AuditCommitteeMembers"
-  },
-  {
-    "atom": "auditcommitteeminutes",
-    "name": "audit-committee-minutes",
-    "description": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
-    "path": "collections/LegalEntities/AuditCommittees/AuditCommitteeMinutes"
-  },
-  {
-    "atom": "auditcommittees",
-    "name": "audit-committees",
-    "description": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
-    "path": "collections/LegalEntities/AuditCommittees"
-  },
-  {
-    "atom": "auditevents",
-    "name": "audit-events",
-    "description": "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.",
-    "path": "collections/AuditEvents"
-  },
-  {
-    "atom": "auditevidence",
-    "name": "audit-evidence",
-    "description": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
-    "path": "collections/Media/AuditEvidence"
-  },
-  {
-    "atom": "auditfindings",
-    "name": "audit-findings",
-    "description": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
-    "path": "collections/InternalControls/AuditFindings"
-  },
-  {
-    "atom": "auditreports",
-    "name": "audit-reports",
-    "description": "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.",
-    "path": "collections/LegalEntities/Consolidations/AuditReports"
+    "path": "audit"
   },
   {
     "atom": "auditright",
     "name": "audit-right",
     "description": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
     "path": "audit-right"
-  },
-  {
-    "atom": "auditsamples",
-    "name": "audit-samples",
-    "description": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
-    "path": "collections/InternalControls/ControlTests/AuditSamples"
-  },
-  {
-    "atom": "auditsubmissions",
-    "name": "audit-submissions",
-    "description": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
-    "path": "collections/AuditSubmissions"
   },
   {
     "atom": "aura",
@@ -308,37 +278,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "balance",
     "name": "balance",
     "description": "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium.",
-    "path": "accounting/balance"
+    "path": "balance"
   },
   {
     "atom": "bank",
     "name": "bank",
     "description": "Use when a transaction or account references banking infrastructure — bank account, bank statement, bank transfer, bank reconciliation. A financial institution context; relationTo: 'bank-accounts' or similar.",
-    "path": "fields/bank"
-  },
-  {
-    "atom": "bankaccounts",
-    "name": "bank-accounts",
-    "description": "Use when managing bank account master data — IBAN (ISO-13616 mod-97 validated), BIC, account name, purpose (operating/payroll/tax/reserve/FX), GL cash account link, currency, country auto-derived from IBAN; separate from statement transactions. The cash-account master collection.",
-    "path": "collections/BankAccounts"
-  },
-  {
-    "atom": "bankreconciliations",
-    "name": "bank-reconciliations",
-    "description": "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.",
-    "path": "collections/BankAccounts/BankReconciliations"
-  },
-  {
-    "atom": "bankstatements",
-    "name": "bank-statements",
-    "description": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-    "path": "collections/GLAccounts/BankStatements"
-  },
-  {
-    "atom": "banktransactions",
-    "name": "bank-transactions",
-    "description": "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection.",
-    "path": "collections/BankAccounts/BankTransactions"
+    "path": "bank"
   },
   {
     "atom": "base",
@@ -356,7 +302,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "batches",
     "name": "batches",
     "description": "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection.",
-    "path": "collections/Items/Batches"
+    "path": "items/batches"
   },
   {
     "atom": "begin",
@@ -365,28 +311,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "begin"
   },
   {
-    "atom": "beneficialowners",
-    "name": "beneficial-owners",
-    "description": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
-    "path": "collections/LegalEntities/BeneficialOwners"
-  },
-  {
     "atom": "beyond",
     "name": "beyond",
     "description": "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.",
-    "path": "services/beyond"
-  },
-  {
-    "atom": "bgidentifiers",
-    "name": "bg-identifiers",
-    "description": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
-    "path": "services/bg-identifiers"
-  },
-  {
-    "atom": "billsofmaterials",
-    "name": "bills-of-materials",
-    "description": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-    "path": "collections/Items/BillsOfMaterials"
+    "path": "beyond"
   },
   {
     "atom": "bindings",
@@ -395,28 +323,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "bindings"
   },
   {
-    "atom": "biologicalassets",
-    "name": "biological-assets",
-    "description": "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection.",
-    "path": "collections/BiologicalAssets"
-  },
-  {
-    "atom": "boardactions",
-    "name": "board-actions",
-    "description": "Use when recording formal board-level decisions for a legal entity — resolutions, policy approvals, risk assessments, control enhancements, attestations, vote tallies, and related internal controls. The SOX §404 corporate-governance board-action register.",
-    "path": "collections/LegalEntities/BoardActions"
-  },
-  {
-    "atom": "bookableresources",
-    "name": "bookable-resources",
-    "description": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
-    "path": "collections/BookableResources"
-  },
-  {
     "atom": "bookings",
     "name": "bookings",
     "description": "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive.",
-    "path": "collections/BookableResources/Bookings"
+    "path": "bookable/resources/bookings"
   },
   {
     "atom": "bottleneck",
@@ -431,12 +341,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rodin/breath"
   },
   {
-    "atom": "budgetplanning",
-    "name": "budget-planning",
-    "description": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-    "path": "collections/BudgetPlanning"
-  },
-  {
     "atom": "budgetvariance",
     "name": "budgetvariance",
     "description": "Use for analyzing variance between budgeted and actual amounts in a period — favorable/unfavorable cost variance, quantity/price splits, drivers of performance against plan",
@@ -447,12 +351,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "bundle",
     "description": "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles.",
     "path": "bundle"
-  },
-  {
-    "atom": "businesscombinations",
-    "name": "business-combinations",
-    "description": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-    "path": "collections/LegalEntities/BusinessCombinations"
   },
   {
     "atom": "cache",
@@ -467,6 +365,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "calculate"
   },
   {
+    "atom": "calculations",
+    "name": "tax-calculations",
+    "description": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
+    "path": "gl/accounts/tax/calculations"
+  },
+  {
+    "atom": "calendars",
+    "name": "fiscal-calendars",
+    "description": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
+    "path": "legal/entities/fiscal/calendars"
+  },
+  {
     "atom": "campaign",
     "name": "campaign",
     "description": "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking.",
@@ -479,12 +389,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "capacity"
   },
   {
-    "atom": "carbonemissions",
-    "name": "carbon-emissions",
-    "description": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-    "path": "collections/FiscalPeriods/CarbonEmissions"
-  },
-  {
     "atom": "cardinality",
     "name": "cardinality",
     "description": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
@@ -494,19 +398,55 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "carriers",
     "name": "carriers",
     "description": "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments.",
-    "path": "collections/Carriers"
+    "path": "carriers"
+  },
+  {
+    "atom": "cases",
+    "name": "Cases",
+    "description": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
+    "path": "cases"
   },
   {
     "atom": "categories",
     "name": "categories",
     "description": "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.",
-    "path": "collections/Categories"
+    "path": "categories"
+  },
+  {
+    "atom": "centers",
+    "name": "work-centers",
+    "description": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
+    "path": "work/centers"
+  },
+  {
+    "atom": "certifications",
+    "name": "management-certifications",
+    "description": "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection.",
+    "path": "legal/entities/management/certifications"
   },
   {
     "atom": "chat",
     "name": "chat",
+    "description": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
+    "path": "chat"
+  },
+  {
+    "atom": "chats",
+    "name": "chat",
     "description": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-    "path": "collections/Chat"
+    "path": "chats"
+  },
+  {
+    "atom": "checklists",
+    "name": "disclosure-checklists",
+    "description": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
+    "path": "legal/entities/disclosure/checklists"
+  },
+  {
+    "atom": "checks",
+    "name": "kyc-checks",
+    "description": "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.",
+    "path": "customers/kyc/checks"
   },
   {
     "atom": "churn",
@@ -521,6 +461,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "civilization"
   },
   {
+    "atom": "classifications",
+    "name": "held-for-sale-classifications",
+    "description": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
+    "path": "held/for/sale/classifications"
+  },
+  {
     "atom": "classroom",
     "name": "classroom",
     "description": "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed).",
@@ -533,16 +479,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "clause"
   },
   {
+    "atom": "cloning",
+    "name": "cloning",
+    "description": "Use when the platform reproduces itself — collecting its own structural genome, publishing it as a verifiable federation envelope, and booting a bit-identical instance from that bundle alone; mitosis as federation, gated by content-uuid recompute.",
+    "path": "cloning"
+  },
+  {
     "atom": "close",
     "name": "close",
     "description": "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open.",
     "path": "close"
-  },
-  {
-    "atom": "closingentries",
-    "name": "closing-entries",
-    "description": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
-    "path": "collections/LegalEntities/ClosingEntries"
   },
   {
     "atom": "cmyk",
@@ -554,7 +500,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "code",
     "name": "code",
     "description": "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key.",
-    "path": "fields/code"
+    "path": "code"
+  },
+  {
+    "atom": "codes",
+    "name": "tax-codes",
+    "description": "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection.",
+    "path": "tax/jurisdictions/tax/codes"
   },
   {
     "atom": "cohort",
@@ -581,10 +533,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "collections"
   },
   {
+    "atom": "combinations",
+    "name": "business-combinations",
+    "description": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
+    "path": "legal/entities/business/combinations"
+  },
+  {
     "atom": "comment",
     "name": "comment",
     "description": "Use when any record needs threaded notes/annotations with author provenance — the polymorphic CommentsConcern. One comments collection serves all others via a polymorphic relationTo; author ties to audit.",
-    "path": "fields/comment"
+    "path": "comment"
   },
   {
     "atom": "commerce",
@@ -593,16 +551,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "commerce"
   },
   {
+    "atom": "commissions",
+    "name": "sales-commissions",
+    "description": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
+    "path": "employees/sales/commissions"
+  },
+  {
     "atom": "commitments",
     "name": "commitments",
     "description": "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.",
-    "path": "collections/commitments"
+    "path": "commitments"
   },
   {
-    "atom": "commitmentsandcontingencies",
-    "name": "commitments-and-contingencies",
-    "description": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-    "path": "collections/CommitmentsAndContingencies"
+    "atom": "committees",
+    "name": "audit-committees",
+    "description": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
+    "path": "legal/entities/audit/committees"
   },
   {
     "atom": "compass",
@@ -620,55 +584,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "competencies",
     "name": "competencies",
     "description": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-    "path": "collections/Competencies"
-  },
-  {
-    "atom": "competencygap",
-    "name": "competency-gap",
-    "description": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-    "path": "services/competency-gap"
+    "path": "competencies"
   },
   {
     "atom": "competition",
     "name": "competition",
     "description": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-    "path": "services/competition"
-  },
-  {
-    "atom": "compliancedeadlines",
-    "name": "compliance-deadlines",
-    "description": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
-    "path": "collections/LegalEntities/ComplianceDeadlines"
-  },
-  {
-    "atom": "complianceframeworks",
-    "name": "compliance-frameworks",
-    "description": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
-    "path": "collections/ComplianceFrameworks"
-  },
-  {
-    "atom": "compliancegaps",
-    "name": "compliance-gaps",
-    "description": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-    "path": "collections/ComplianceFrameworks/ComplianceRequirements/ComplianceGaps"
-  },
-  {
-    "atom": "compliancenotifications",
-    "name": "compliance-notifications",
-    "description": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
-    "path": "collections/LegalEntities/ComplianceDeadlines/ComplianceNotifications"
-  },
-  {
-    "atom": "compliancerequirements",
-    "name": "compliance-requirements",
-    "description": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
-    "path": "collections/ComplianceFrameworks/ComplianceRequirements"
+    "path": "competition"
   },
   {
     "atom": "component",
     "name": "component",
     "description": "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility.",
     "path": "component"
+  },
+  {
+    "atom": "components",
+    "name": "components",
+    "description": "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye.",
+    "path": "components"
   },
   {
     "atom": "confidentiality",
@@ -692,7 +626,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "connections",
     "name": "connections",
     "description": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
-    "path": "collections/Connections"
+    "path": "connections"
   },
   {
     "atom": "consent",
@@ -701,46 +635,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "consent"
   },
   {
-    "atom": "consentrecords",
-    "name": "consent-records",
-    "description": "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger.",
-    "path": "collections/ConsentRecords"
-  },
-  {
-    "atom": "consignmentarrangements",
-    "name": "consignment-arrangements",
-    "description": "Use when managing goods shipped to a consignee for onward sale where control transfers only at consignee sale — master IFRS-15 §B77-B78 / ASC 606-10-55-79 agreement covering consignee, term, control-transfer trigger, return rights, INCOTERM, and max-value cap. The consignment master-agreement collection.",
-    "path": "collections/WarehouseLocations/ConsignmentArrangements"
-  },
-  {
-    "atom": "consignmentinventory",
-    "name": "consignment-inventory",
-    "description": "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.",
-    "path": "collections/WarehouseLocations/ConsignmentArrangements/ConsignmentInventory"
-  },
-  {
-    "atom": "consignmentsales",
-    "name": "consignment-sales",
-    "description": "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.",
-    "path": "collections/WarehouseLocations/ConsignmentArrangements/ConsignmentSales"
-  },
-  {
     "atom": "consistency",
     "name": "consistency",
     "description": "Use when enforcing or auditing data consistency — ACID properties, eventual consistency vs strong consistency, consistency models (read-after-write, causal), constraint enforcement, synchronization guarantees across replicas or shards.",
     "path": "consistency"
   },
   {
-    "atom": "consolidationeliminations",
-    "name": "consolidation-eliminations",
-    "description": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
-    "path": "collections/ConsolidationEliminations"
-  },
-  {
     "atom": "consolidations",
     "name": "consolidations",
     "description": "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.",
-    "path": "collections/LegalEntities/Consolidations"
+    "path": "legal/entities/consolidations"
+  },
+  {
+    "atom": "constitution",
+    "name": "constitution",
+    "description": "Use when reasoning about the entrenched foundation — the seven supreme articles, what a majority may amend versus what is perpetual, and why the polity cannot vote away identity, integrity, conservation, or the one-person-one-vote.",
+    "path": "constitution"
   },
   {
     "atom": "constraint",
@@ -749,28 +659,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "constraint"
   },
   {
-    "atom": "contractamendments",
-    "name": "contract-amendments",
-    "description": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
-    "path": "collections/Customers/Contracts/contract-amendments"
-  },
-  {
-    "atom": "contractperformance",
-    "name": "contract-performance",
-    "description": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
-    "path": "collections/Customers/Contracts/contract-performance"
+    "atom": "contingencies",
+    "name": "commitments-and-contingencies",
+    "description": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
+    "path": "commitments/and/contingencies"
   },
   {
     "atom": "contracts",
-    "name": "contracts",
-    "description": "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection.",
-    "path": "collections/Customers/Contracts"
-  },
-  {
-    "atom": "contractsignatures",
-    "name": "contract-signatures",
-    "description": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
-    "path": "collections/Customers/Contracts/contract-signatures"
+    "name": "insurance-contracts",
+    "description": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
+    "path": "insurance/contracts"
   },
   {
     "atom": "contribution",
@@ -779,10 +677,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "contribution"
   },
   {
-    "atom": "controltests",
-    "name": "control-tests",
-    "description": "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.",
-    "path": "collections/InternalControls/ControlTests"
+    "atom": "controls",
+    "name": "internal-controls",
+    "description": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
+    "path": "internal/controls"
   },
   {
     "atom": "conversion",
@@ -791,34 +689,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "conversion"
   },
   {
+    "atom": "coordinate",
+    "name": "coordinate",
+    "description": "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.",
+    "path": "coordinate"
+  },
+  {
     "atom": "correlation",
     "name": "correlation",
     "description": "Use when analyzing variable relationships — Pearson/Spearman correlation, multicollinearity detection, correlation matrices, spurious vs causal correlation, correlation thresholds in feature selection.",
     "path": "correlation"
   },
   {
+    "atom": "corruption",
+    "name": "anti-corruption",
+    "description": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
+    "path": "anti/corruption"
+  },
+  {
     "atom": "cost",
-    "name": "cost",
-    "description": "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0.",
-    "path": "services/cost"
-  },
-  {
-    "atom": "costcenters",
-    "name": "cost-centers",
-    "description": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-    "path": "collections/CostCenters"
-  },
-  {
-    "atom": "costvariances",
-    "name": "cost-variances",
-    "description": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
-    "path": "collections/Items/BillsOfMaterials/WorkOrders/CostVariances"
-  },
-  {
-    "atom": "creditmemos",
-    "name": "credit-memos",
-    "description": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
-    "path": "collections/Invoices/CreditMemos"
+    "name": "tamper-cost",
+    "description": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
+    "path": "tamper/cost"
   },
   {
     "atom": "crest",
@@ -827,40 +719,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "horo/crest"
   },
   {
-    "atom": "csrddisclosures",
-    "name": "csrd-disclosures",
-    "description": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-    "path": "collections/CsrdDisclosures"
-  },
-  {
     "atom": "currency",
     "name": "currency",
     "description": "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name.",
-    "path": "fields/currency"
-  },
-  {
-    "atom": "currencyrates",
-    "name": "currency-rates",
-    "description": "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.",
-    "path": "collections/CurrencyRates"
+    "path": "currency"
   },
   {
     "atom": "customers",
     "name": "customers",
     "description": "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection.",
-    "path": "collections/Customers"
+    "path": "customers"
   },
   {
-    "atom": "customersegments",
-    "name": "customer-segments",
-    "description": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
-    "path": "collections/CustomerSegments"
-  },
-  {
-    "atom": "customsdeclarations",
-    "name": "customs-declarations",
-    "description": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
-    "path": "collections/Customers/SalesOrders/Shipments/CustomsDeclarations"
+    "atom": "cycles",
+    "name": "dunning-cycles",
+    "description": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
+    "path": "invoices/dunning/cycles"
   },
   {
     "atom": "database",
@@ -869,40 +743,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "database"
   },
   {
-    "atom": "dataprocessingactivities",
-    "name": "data-processing-activities",
-    "description": "Use when maintaining the GDPR Art.30 Records of Processing Activities (RoPA) — documenting each processing activity's purpose, lawful basis, data categories, retention period, third-country transfer safeguards, and scheduling annual DPO reviews. The controller/processor RoPA register.",
-    "path": "collections/DataProcessingActivities"
-  },
-  {
     "atom": "dataprotection",
     "name": "data-protection",
     "description": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
     "path": "data-protection"
   },
   {
-    "atom": "datasubjectrequests",
-    "name": "data-subject-requests",
-    "description": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-    "path": "collections/DataSubjectRequests"
-  },
-  {
     "atom": "date",
     "name": "date",
     "description": "Use when a document carries a temporal point — invoice date, transaction date, period-end date, expiry date, created-at, effective-at. An ISO-8601 datetime pinned at a point in time (the UTC timestamp + timezone context via versions). The temporal positioning twin of period.",
-    "path": "fields/date"
+    "path": "date"
   },
   {
-    "atom": "debtschedule",
-    "name": "debt-schedule",
-    "description": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-    "path": "collections/LegalEntities/DebtSchedule"
+    "atom": "deadlines",
+    "name": "compliance-deadlines",
+    "description": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
+    "path": "legal/entities/compliance/deadlines"
   },
   {
     "atom": "decide",
     "name": "decide",
     "description": "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary.",
-    "path": "services/decide"
+    "path": "decide"
+  },
+  {
+    "atom": "declarations",
+    "name": "customs-declarations",
+    "description": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
+    "path": "customers/sales/orders/shipments/customs/declarations"
   },
   {
     "atom": "decompression",
@@ -947,10 +815,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "deferredrevenue"
   },
   {
-    "atom": "deferredtaxitems",
-    "name": "deferred-tax-items",
-    "description": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
-    "path": "collections/TaxJurisdictions/DeferredTaxItems"
+    "atom": "definitions",
+    "name": "workflow-definitions",
+    "description": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
+    "path": "workflow/definitions"
   },
   {
     "atom": "deploy",
@@ -965,16 +833,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "calculate/depreciate"
   },
   {
-    "atom": "depreciationschedules",
-    "name": "depreciation-schedules",
-    "description": "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.",
-    "path": "collections/FixedAssets/DepreciationSchedules"
-  },
-  {
     "atom": "derive",
     "name": "derive",
     "description": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-    "path": "services/derive"
+    "path": "derive"
   },
   {
     "atom": "descent",
@@ -986,7 +848,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "description",
     "name": "description",
     "description": "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data).",
-    "path": "fields/description"
+    "path": "description"
   },
   {
     "atom": "design",
@@ -1001,10 +863,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "run/dev"
   },
   {
+    "atom": "devices",
+    "name": "fiscal-devices",
+    "description": "Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry.",
+    "path": "fiscal/devices"
+  },
+  {
     "atom": "dimension",
     "name": "dimension",
     "description": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-    "path": "fields/dimension"
+    "path": "dimension"
   },
   {
     "atom": "disclosure",
@@ -1013,10 +881,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "disclosure"
   },
   {
-    "atom": "disclosurechecklists",
-    "name": "disclosure-checklists",
-    "description": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
-    "path": "collections/LegalEntities/DisclosureChecklists"
+    "atom": "disclosures",
+    "name": "csrd-disclosures",
+    "description": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
+    "path": "csrd/disclosures"
   },
   {
     "atom": "discount",
@@ -1029,6 +897,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "dispute-resolution",
     "description": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
     "path": "dispute-resolution"
+  },
+  {
+    "atom": "dissolve",
+    "name": "dissolve",
+    "description": "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs.",
+    "path": "refactor/dissolve"
   },
   {
     "atom": "distribution",
@@ -1055,22 +929,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "dunning"
   },
   {
-    "atom": "dunningcycles",
-    "name": "dunning-cycles",
-    "description": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
-    "path": "collections/Invoices/DunningCycles"
-  },
-  {
-    "atom": "earningspershare",
-    "name": "earnings-per-share",
-    "description": "Use when computing or disclosing IAS 33 basic and diluted EPS — weighting shares, applying dilutive options/convertibles/IFRS 2 grants, splitting continuing vs discontinued operations, or restating a prior period's EPS. The per-period EPS computation node.",
-    "path": "collections/FiscalPeriods/EarningsPerShare"
-  },
-  {
     "atom": "ebitda",
     "name": "ebitda",
     "description": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
     "path": "calculate/ebitda"
+  },
+  {
+    "atom": "ecommerce",
+    "name": "ecommerce",
+    "description": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \"data is money\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
+    "path": "ecommerce"
   },
   {
     "atom": "education",
@@ -1082,7 +950,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "element",
     "name": "element",
     "description": "Use when reasoning about composition and stability through the chemical-elements matrix — everything is made of atoms, and the periodic table adds a chemistry to the logic: each atom has a VALENCE (electrons it shares to fill its shell), stability is the OCTET (a full outer shell — the noble gases), and atoms BOND to reach it. The new perspective: the erpax corpus is a MOLECULE — an atom's valence is its open links, and the corpus is stable exactly when aura gap = 0 (all shells full).",
-    "path": "services/element"
+    "path": "element"
   },
   {
     "atom": "elimination",
@@ -1091,10 +959,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "elimination"
   },
   {
+    "atom": "eliminations",
+    "name": "consolidation-eliminations",
+    "description": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
+    "path": "consolidation/eliminations"
+  },
+  {
+    "atom": "emissions",
+    "name": "carbon-emissions",
+    "description": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
+    "path": "fiscal/periods/carbon/emissions"
+  },
+  {
     "atom": "employees",
     "name": "employees",
     "description": "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only).",
-    "path": "collections/Employees"
+    "path": "employees"
   },
   {
     "atom": "end",
@@ -1103,28 +983,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "end"
   },
   {
+    "atom": "endpoints",
+    "name": "endpoints",
+    "description": "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed).",
+    "path": "endpoints"
+  },
+  {
     "atom": "engagement",
     "name": "engagement",
     "description": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
     "path": "engagement"
   },
   {
-    "atom": "entitylegalstructures",
-    "name": "entity-legal-structures",
-    "description": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
-    "path": "collections/TaxingJurisdictions/EntityLegalStructures"
+    "atom": "engine",
+    "name": "workflow-engine",
+    "description": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
+    "path": "workflow/engine"
   },
   {
-    "atom": "entitytypes",
-    "name": "entity-types",
-    "description": "Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table.",
-    "path": "collections/EntityTypes"
+    "atom": "entities",
+    "name": "legal-entities",
+    "description": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
+    "path": "legal/entities"
+  },
+  {
+    "atom": "entries",
+    "name": "closing-entries",
+    "description": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
+    "path": "legal/entities/closing/entries"
   },
   {
     "atom": "entry",
     "name": "entry",
     "description": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\".",
-    "path": "services/entry"
+    "path": "entry"
   },
   {
     "atom": "escalation",
@@ -1142,31 +1034,31 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "event",
     "name": "event",
     "description": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
-    "path": "hooks/event"
+    "path": "event"
   },
   {
-    "atom": "evidenceattestations",
-    "name": "evidence-attestations",
-    "description": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
-    "path": "collections/EvidenceAttestations"
+    "atom": "events",
+    "name": "post-balance-sheet-events",
+    "description": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
+    "path": "fiscal/periods/post/balance/sheet/events"
+  },
+  {
+    "atom": "evidences",
+    "name": "audit-evidence",
+    "description": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
+    "path": "media/audit/evidences"
   },
   {
     "atom": "exchange",
     "name": "exchange",
     "description": "Use for a governed cross-domain data exchange — party A requests data from party B (different domains, each its own content-addressed identity); the holder's grant gates the capability, the fields are SANITIZED to the releasable set, and the exchange is RECEIPTED, so A receives the data AND a provenance chain proving what was accessed, by whom, under what authority. Encodes cross-domain trust with no shared infrastructure: each party content-addresses and receipts; the provenance merges.",
-    "path": "services/exchange"
+    "path": "exchange"
   },
   {
-    "atom": "expensereports",
-    "name": "expense-reports",
-    "description": "Use when submitting, approving or auditing employee expense claims — per-diem, mileage, airfare, hotel, receipts, multi-step approval chain, reimbursement via payroll or AP — with GL coding, FX conversion, policy-compliance flags and SOX §404 four-eyes enforcement. The employee expense-claim collection.",
-    "path": "collections/Employees/ExpenseReports"
-  },
-  {
-    "atom": "fairvaluemeasurements",
-    "name": "fair-value-measurements",
-    "description": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
-    "path": "collections/FairValueMeasurements"
+    "atom": "failures",
+    "name": "transaction-failures",
+    "description": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
+    "path": "transaction/failures"
   },
   {
     "atom": "faith",
@@ -1178,7 +1070,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "federation",
     "name": "federation",
     "description": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
-    "path": "services/federation"
+    "path": "federation"
   },
   {
     "atom": "feedback",
@@ -1193,40 +1085,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "fields"
   },
   {
-    "atom": "financialstatements",
-    "name": "financial-statements",
-    "description": "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection.",
-    "path": "collections/FinancialStatements"
+    "atom": "files",
+    "name": "transfer-pricing-files",
+    "description": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
+    "path": "legal/entities/transfer/pricing/files"
   },
   {
-    "atom": "fiscalcalendars",
-    "name": "fiscal-calendars",
-    "description": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
-    "path": "collections/LegalEntities/FiscalCalendars"
-  },
-  {
-    "atom": "fiscaldevices",
-    "name": "fiscal-devices",
-    "description": "Use when registering or managing СУПТО fiscal hardware — each device carries an 8-digit ФУ number (first УНП segment), per-device currency and VAT tax groups, default operator and terminal for automated sales, and decommission lifecycle per Наредба Н-18. The fiscal-device registry.",
-    "path": "collections/FiscalDevices"
-  },
-  {
-    "atom": "fiscalperiods",
-    "name": "fiscal-periods",
-    "description": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-    "path": "collections/FiscalPeriods"
-  },
-  {
-    "atom": "fiscalperiodsnapshots",
-    "name": "fiscal-period-snapshots",
-    "description": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-    "path": "collections/FiscalPeriods/FiscalPeriodSnapshots"
-  },
-  {
-    "atom": "fixedassets",
-    "name": "fixed-assets",
-    "description": "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.",
-    "path": "collections/FixedAssets"
+    "atom": "findings",
+    "name": "audit-findings",
+    "description": "Use when recording, tracking, or resolving audit findings against internal controls — control deficiency, significant deficiency, material weakness, misstatement; severity, root cause, management response, remediation status, ISMS-audit (ISO/IEC 27007) and SOX §404 deficiency workflow. The audit-findings ISO-19011 evidence collection.",
+    "path": "internal/controls/audit/findings"
   },
   {
     "atom": "flow",
@@ -1253,16 +1121,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "fractal"
   },
   {
+    "atom": "frameworks",
+    "name": "compliance-frameworks",
+    "description": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
+    "path": "compliance/frameworks"
+  },
+  {
+    "atom": "functions",
+    "name": "internal-audit-function",
+    "description": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
+    "path": "legal/entities/internal/audit/functions"
+  },
+  {
     "atom": "funnel",
     "name": "funnel",
     "description": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
     "path": "funnel"
   },
   {
-    "atom": "fxtransactions",
-    "name": "fx-transactions",
-    "description": "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.",
-    "path": "collections/FxTransactions"
+    "atom": "gap",
+    "name": "competency-gap",
+    "description": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
+    "path": "competency/gap"
+  },
+  {
+    "atom": "gaps",
+    "name": "compliance-gaps",
+    "description": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
+    "path": "compliance/frameworks/compliance/requirements/compliance/gaps"
+  },
+  {
+    "atom": "gate",
+    "name": "gate",
+    "description": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal): the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
+    "path": "gate"
   },
   {
     "atom": "generate",
@@ -1277,40 +1169,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "give"
   },
   {
-    "atom": "glaccounts",
-    "name": "gl-accounts",
-    "description": "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.",
-    "path": "collections/GLAccounts"
-  },
-  {
-    "atom": "glpostingrules",
-    "name": "gl-posting-rules",
-    "description": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-    "path": "collections/GLPostingRules"
-  },
-  {
-    "atom": "glpostings",
-    "name": "gl-postings",
-    "description": "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements.",
-    "path": "collections/JournalEntries/GLPostings"
-  },
-  {
-    "atom": "goodsreceipts",
-    "name": "goods-receipts",
-    "description": "Use when confirming vendor goods arrival — receipt number, purchase order link, received-at date, line quantities, and GL accrual (debit inventory/credit AP) per IAS-2 §10, with revenue timing deferred to the FOB point per IFRS-15 §38-42. The second leg of the SOX three-way match that separates inventory accrual from revenue recognition.",
-    "path": "collections/Items/PurchaseOrders/GoodsReceipts"
-  },
-  {
     "atom": "goodwill",
     "name": "goodwill",
     "description": "Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs",
     "path": "goodwill"
   },
   {
-    "atom": "googleworkspace",
-    "name": "google-workspace",
-    "description": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
-    "path": "services/google-workspace"
+    "atom": "governance",
+    "name": "governance",
+    "description": "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society.",
+    "path": "governance"
   },
   {
     "atom": "governinglaw",
@@ -1319,28 +1187,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "governing-law"
   },
   {
-    "atom": "governmentgrants",
-    "name": "government-grants",
-    "description": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-    "path": "collections/GovernmentGrants"
-  },
-  {
     "atom": "grace",
     "name": "grace",
     "description": "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt.",
     "path": "grace"
   },
   {
+    "atom": "grants",
+    "name": "government-grants",
+    "description": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
+    "path": "government/grants"
+  },
+  {
     "atom": "harden",
     "name": "harden",
     "description": "Use when hardening a Payload app against abuse/DoS or preparing for production security review — setting query-depth/complexity limits, login lockout, GraphQL exposure, CORS/CSRF, or securing upload collections.",
-    "path": "access/harden"
+    "path": "harden"
   },
   {
     "atom": "harmony",
     "name": "harmony",
     "description": "Use when checking whether an interval — or a whole band of horo positions — is consonant. The seven positions ARE the diatonic scale (just intonation over the A432 anchor); harmony is the smallness of the ratio (Tenney height). The harmony-check the horo state-bands need. Matter-twin harmony/index.ts.",
-    "path": "services/harmony"
+    "path": "harmony"
   },
   {
     "atom": "health",
@@ -1353,12 +1221,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "hedge",
     "description": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
     "path": "hedge"
-  },
-  {
-    "atom": "heldforsaleclassifications",
-    "name": "held-for-sale-classifications",
-    "description": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
-    "path": "collections/HeldForSaleClassifications"
   },
   {
     "atom": "history",
@@ -1385,16 +1247,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "horo"
   },
   {
+    "atom": "icfrs",
+    "name": "management-assessment-icfr",
+    "description": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
+    "path": "legal/entities/management/assessment/icfrs"
+  },
+  {
     "atom": "id",
     "name": "id",
     "description": "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges.",
-    "path": "fields/id"
+    "path": "id"
   },
   {
     "atom": "idempotency",
     "name": "idempotency",
     "description": "Use when operations must be safely replayed — idempotent keys, deduplication within a replay window, exactly-once semantics, retry-safe operations, side-effect tracking, idempotency contracts in APIs.",
     "path": "idempotency"
+  },
+  {
+    "atom": "identifier",
+    "name": "bg-identifiers",
+    "description": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
+    "path": "bg/identifier"
   },
   {
     "atom": "identity",
@@ -1424,13 +1298,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "ingest",
     "name": "ingest",
     "description": "Use when pulling external records into the mesh idempotently — each record is content-addressed (a uuid), so re-fetching unchanged data is a no-op and only new or changed records are upserted. planIngest splits a batch into upsert vs skip against the already-seen uuids, deduping within the batch too. The fetch and the DB write are runtime boundaries; the idempotency plan is native and tested. Serves the Google Workspace sync and any external source.",
-    "path": "services/ingest"
+    "path": "ingest"
   },
   {
-    "atom": "insurancecontracts",
-    "name": "insurance-contracts",
-    "description": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
-    "path": "collections/InsuranceContracts"
+    "atom": "inspections",
+    "name": "quality-inspections",
+    "description": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
+    "path": "items/quality/inspections"
+  },
+  {
+    "atom": "instances",
+    "name": "workflow-instances",
+    "description": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
+    "path": "workflow/definitions/workflow/instances"
   },
   {
     "atom": "intangible",
@@ -1439,28 +1319,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "intangible"
   },
   {
-    "atom": "intercompanytransactions",
-    "name": "intercompany-transactions",
-    "description": "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.",
-    "path": "collections/LegalEntities/IntercompanyTransactions"
-  },
-  {
-    "atom": "internalauditfunction",
-    "name": "internal-audit-function",
-    "description": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
-    "path": "collections/LegalEntities/InternalAuditFunction"
-  },
-  {
-    "atom": "internalcontrols",
-    "name": "internal-controls",
-    "description": "Use when defining or cataloguing internal controls — preventive, detective, corrective, or compensating — across COSO components (environment, risk assessment, control activities, information, monitoring); owner, frequency, review dates, SOX §404 scope. The internal-controls COSO-2013 register.",
-    "path": "collections/InternalControls"
-  },
-  {
-    "atom": "internalpolicies",
-    "name": "internal-policies",
-    "description": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-    "path": "collections/InternalPolicies"
+    "atom": "integrity",
+    "name": "integrity",
+    "description": "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution.",
+    "path": "integrity"
   },
   {
     "atom": "interview",
@@ -1469,40 +1331,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "interview"
   },
   {
-    "atom": "inventorymovements",
-    "name": "inventory-movements",
-    "description": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
-    "path": "collections/Items/InventoryMovements"
-  },
-  {
-    "atom": "investmentproperties",
-    "name": "investment-properties",
-    "description": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-    "path": "collections/Properties/InvestmentProperties"
-  },
-  {
-    "atom": "invoicelines",
-    "name": "invoice-lines",
-    "description": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
-    "path": "collections/Invoices/InvoiceLines"
+    "atom": "inventories",
+    "name": "consignment-inventory",
+    "description": "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.",
+    "path": "warehouse/locations/consignment/arrangements/consignment/inventories"
   },
   {
     "atom": "invoices",
     "name": "invoices",
     "description": "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.",
-    "path": "collections/Invoices"
+    "path": "invoices"
   },
   {
     "atom": "items",
-    "name": "items",
-    "description": "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection.",
-    "path": "collections/Items"
-  },
-  {
-    "atom": "jobpositions",
-    "name": "job-positions",
-    "description": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-    "path": "collections/CostCenters/JobPositions"
+    "name": "deferred-tax-items",
+    "description": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
+    "path": "tax/jurisdictions/deferred/tax/items"
   },
   {
     "atom": "jobs",
@@ -1511,16 +1355,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "jobs"
   },
   {
-    "atom": "journalentries",
-    "name": "journal-entries",
-    "description": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-    "path": "collections/JournalEntries"
+    "atom": "journals",
+    "name": "recurring-journals",
+    "description": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
+    "path": "gl/accounts/recurring/journals"
   },
   {
     "atom": "jurisdiction",
     "name": "jurisdiction",
     "description": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
     "path": "jurisdiction"
+  },
+  {
+    "atom": "jurisdictions",
+    "name": "taxing-jurisdictions",
+    "description": "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.",
+    "path": "taxing/jurisdictions"
   },
   {
     "atom": "justice",
@@ -1535,16 +1385,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "kpi"
   },
   {
-    "atom": "kycchecks",
-    "name": "kyc-checks",
-    "description": "Use when performing AML / CDD screening on a customer, vendor, beneficial owner, or signatory — SDD/CDD/EDD level, identity documents, sanctions screening (OFAC/EU/UN), PEP check, risk rating, and FATF Recommendation 10 audit evidence. The AML customer-due-diligence collection.",
-    "path": "collections/Customers/KycChecks"
-  },
-  {
     "atom": "leads",
     "name": "leads",
     "description": "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection.",
-    "path": "collections/Leads"
+    "path": "leads"
   },
   {
     "atom": "leadscore",
@@ -1553,34 +1397,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "lead-score"
   },
   {
-    "atom": "leasemodifications",
-    "name": "lease-modifications",
-    "description": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
-    "path": "collections/Leases/LeaseModifications"
-  },
-  {
-    "atom": "leaseperiodpostings",
-    "name": "lease-period-postings",
-    "description": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
-    "path": "collections/Leases/LeasePeriodPostings"
-  },
-  {
     "atom": "leases",
     "name": "leases",
     "description": "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection.",
-    "path": "collections/Leases"
+    "path": "leases"
   },
   {
-    "atom": "leaverequests",
-    "name": "leave-requests",
-    "description": "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.",
-    "path": "collections/Employees/LeaveRequests"
-  },
-  {
-    "atom": "legalentities",
-    "name": "legal-entities",
-    "description": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
-    "path": "collections/LegalEntities"
+    "atom": "legislation",
+    "name": "legislation",
+    "description": "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority.",
+    "path": "legislation"
   },
   {
     "atom": "lexical",
@@ -1613,40 +1439,64 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "lineage"
   },
   {
+    "atom": "lines",
+    "name": "invoice-lines",
+    "description": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
+    "path": "invoices/invoice/lines"
+  },
+  {
+    "atom": "llm",
+    "name": "llm",
+    "description": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
+    "path": "uuid/llm"
+  },
+  {
     "atom": "localize",
     "name": "localize",
-    "description": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. Matter-twin services/localize/index.ts.",
-    "path": "services/localize"
+    "description": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
+    "path": "localize"
+  },
+  {
+    "atom": "locations",
+    "name": "warehouse-locations",
+    "description": "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.",
+    "path": "warehouse/locations"
+  },
+  {
+    "atom": "locks",
+    "name": "period-locks",
+    "description": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
+    "path": "period/locks"
   },
   {
     "atom": "logic",
     "name": "logic",
     "description": "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on.",
-    "path": "services/logic"
+    "path": "logic"
   },
   {
-    "atom": "maintenancerequests",
-    "name": "maintenance-requests",
-    "description": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
-    "path": "collections/MaintenanceRequests"
+    "atom": "lots",
+    "name": "lots",
+    "description": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
+    "path": "lots"
   },
   {
-    "atom": "maintenanceworkorders",
-    "name": "maintenance-work-orders",
-    "description": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-    "path": "collections/MaintenanceWorkOrders"
+    "atom": "lotvariants",
+    "name": "lotvariants",
+    "description": "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel.",
+    "path": "lotvariants"
   },
   {
-    "atom": "managementassessmenticfr",
-    "name": "management-assessment-icfr",
-    "description": "Use when performing or documenting management's SOX §404(a) assessment of internal controls over financial reporting — COSO-2013 framework evaluation across control environment, risk assessment, control activities, information, and monitoring per SOX §404(a) / COSO-2013 / PCAOB AS 2201. The management ICFR assessment collection.",
-    "path": "collections/LegalEntities/ManagementAssessmentICFR"
+    "atom": "lotworkphases",
+    "name": "lotworkphases",
+    "description": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.",
+    "path": "lotworkphases"
   },
   {
-    "atom": "managementcertifications",
-    "name": "management-certifications",
-    "description": "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection.",
-    "path": "collections/LegalEntities/ManagementCertifications"
+    "atom": "mandates",
+    "name": "sepa-mandates",
+    "description": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
+    "path": "media/sepa/mandates"
   },
   {
     "atom": "manufacturing",
@@ -1655,10 +1505,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "manufacturing"
   },
   {
+    "atom": "mappings",
+    "name": "statutory-field-mappings",
+    "description": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
+    "path": "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings"
+  },
+  {
     "atom": "materiality",
     "name": "materiality",
     "description": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
     "path": "materiality"
+  },
+  {
+    "atom": "materials",
+    "name": "bills-of-materials",
+    "description": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
+    "path": "items/bills/of/materials"
   },
   {
     "atom": "matrix",
@@ -1676,31 +1538,43 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "mcp",
     "name": "mcp",
     "description": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-    "path": "services/agents/mcp"
-  },
-  {
-    "atom": "mcptoolmetadata",
-    "name": "mcp-tool-metadata",
-    "description": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-    "path": "collections/McpToolMetadata"
+    "path": "agents/mcp"
   },
   {
     "atom": "measure",
     "name": "measure",
     "description": "Use when a value carries a physical quantity — a number + a unit of measure (UN/CEFACT Rec 20: KGM/MTR/LTR/HUR/H87…), UoM-aware rounding, unit conversion, BOM/stock/production/line quantities. The MeasureConcern/quantity field-factory; a quantity is value+unit, never a unit-baked field name — the substance twin of currency (value+ISO-4217).",
-    "path": "fields/measure"
+    "path": "measure"
+  },
+  {
+    "atom": "measurements",
+    "name": "fair-value-measurements",
+    "description": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
+    "path": "fair/value/measurements"
   },
   {
     "atom": "media",
     "name": "media",
     "description": "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection.",
-    "path": "collections/Media"
+    "path": "media"
+  },
+  {
+    "atom": "members",
+    "name": "audit-committee-members",
+    "description": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
+    "path": "legal/entities/audit/committees/audit/committee/members"
   },
   {
     "atom": "memories",
     "name": "memories",
     "description": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
-    "path": "collections/Memories"
+    "path": "memories"
+  },
+  {
+    "atom": "memos",
+    "name": "credit-memos",
+    "description": "Use when issuing or applying a credit against an invoice — contra-revenue / refund-liability (IFRS-15 §B22), returns, write-offs; lifecycle draft→issued→applied→settled with SoD enforcement and GL posting. The credit-memos collection.",
+    "path": "invoices/credit/memos"
   },
   {
     "atom": "merge",
@@ -1712,19 +1586,25 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "message",
     "name": "message",
     "description": "Use when reasoning about the uuid AS the message — decode identity · OID · colour · sound out of the 128 bits alone, no payload. Completes localize.decodeIdentity (colour) with the missing sound channel (the note the uuid sounds, A432). To send is to send the uuid; to receive is to decode it. Matter-twin message/index.ts.",
-    "path": "services/message"
+    "path": "message"
   },
   {
     "atom": "messages",
     "name": "messages",
     "description": "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection.",
-    "path": "collections/Messages"
+    "path": "messages"
   },
   {
     "atom": "metadata",
     "name": "metadata",
     "description": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-    "path": "fields/metadata"
+    "path": "metadata"
+  },
+  {
+    "atom": "methods",
+    "name": "payment-methods",
+    "description": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
+    "path": "payment/methods"
   },
   {
     "atom": "metric",
@@ -1733,22 +1613,64 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "metric"
   },
   {
-    "atom": "mineralresourceassets",
-    "name": "mineral-resource-assets",
-    "description": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-    "path": "collections/MineralResourceAssets"
+    "atom": "milestones",
+    "name": "project-milestones",
+    "description": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
+    "path": "customers/projects/project/milestones"
+  },
+  {
+    "atom": "minutes",
+    "name": "audit-committee-minutes",
+    "description": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
+    "path": "legal/entities/audit/committees/audit/committee/minutes"
+  },
+  {
+    "atom": "models",
+    "name": "ai-models",
+    "description": "Use when registering, routing, or auditing the AI model fallback catalog — provider/capability/tier per model, EU AI Act risk class, EU-hostable flag for data-residency, feature-guarded dispatch. The admin-editable expert-catalog the router dispatches over when the deterministic core cannot decide alone.",
+    "path": "ai/models"
+  },
+  {
+    "atom": "modifications",
+    "name": "lease-modifications",
+    "description": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
+    "path": "leases/lease/modifications"
+  },
+  {
+    "atom": "movements",
+    "name": "inventory-movements",
+    "description": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
+    "path": "items/inventory/movements"
   },
   {
     "atom": "name",
     "name": "name",
     "description": "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope).",
-    "path": "fields/name"
+    "path": "name"
+  },
+  {
+    "atom": "normalize",
+    "name": "normalize",
+    "description": "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs.",
+    "path": "refactor/normalize"
   },
   {
     "atom": "notes",
     "name": "notes",
     "description": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
     "path": "rodin/notes"
+  },
+  {
+    "atom": "notification",
+    "name": "notifications",
+    "description": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
+    "path": "notification"
+  },
+  {
+    "atom": "notifications",
+    "name": "compliance-notifications",
+    "description": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
+    "path": "legal/entities/compliance/deadlines/compliance/notifications"
   },
   {
     "atom": "nullability",
@@ -1760,13 +1682,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "number",
     "name": "number",
     "description": "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity.",
-    "path": "fields/number"
+    "path": "number"
   },
   {
     "atom": "oauth",
     "name": "oauth",
     "description": "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry.",
-    "path": "services/oauth"
+    "path": "oauth"
+  },
+  {
+    "atom": "obligations",
+    "name": "performance-obligations",
+    "description": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
+    "path": "customers/contracts/performance/obligations"
   },
   {
     "atom": "observability",
@@ -1783,7 +1711,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "oid",
     "name": "oid",
-    "description": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin services/localize (uuidToOid).",
+    "description": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
     "path": "oid"
   },
   {
@@ -1799,28 +1727,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "open"
   },
   {
-    "atom": "operationruns",
-    "name": "operation-runs",
-    "description": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
-    "path": "collections/Items/BillsOfMaterials/WorkOrders/OperationRuns"
-  },
-  {
     "atom": "operations",
     "name": "operations",
     "description": "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.",
-    "path": "collections/WorkCenters/Operations"
+    "path": "work/centers/operations"
   },
   {
     "atom": "operators",
     "name": "operators",
     "description": "Use when managing СУПТО operators — assigning or decommissioning the 4-digit codes that form the second segment of every УНП — mapped to a user; audit trail preserved on decommission. The Наредба Н-18 operator register.",
-    "path": "collections/Operators"
+    "path": "operators"
   },
   {
     "atom": "opportunities",
     "name": "opportunities",
     "description": "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection.",
-    "path": "collections/Leads/Opportunities"
+    "path": "leads/opportunities"
   },
   {
     "atom": "optimize",
@@ -1829,22 +1751,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "optimize"
   },
   {
+    "atom": "orders",
+    "name": "maintenance-work-orders",
+    "description": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
+    "path": "maintenance/work/orders"
+  },
+  {
     "atom": "outlier",
     "name": "outlier",
     "description": "Use when detecting or handling statistical anomalies — outlier detection methods (z-score, IQR, isolation-forest), treatment (trim, robust stats, flag, investigate), impact on metrics and reporting.",
     "path": "outlier"
   },
   {
+    "atom": "owners",
+    "name": "beneficial-owners",
+    "description": "Use when registering ultimate beneficial owners of a legal entity — direct/indirect ownership percent, control type, PEP status, KYC check link, and AMLD-5/CTA-required identification. The AML/Corporate-Transparency-Act UBO register.",
+    "path": "legal/entities/beneficial/owners"
+  },
+  {
     "atom": "packages",
     "name": "packages",
     "description": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
-    "path": "collections/Items/Packages"
+    "path": "items/packages"
   },
   {
     "atom": "pages",
     "name": "pages",
     "description": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
-    "path": "collections/Pages"
+    "path": "pages"
   },
   {
     "atom": "part",
@@ -1861,86 +1795,50 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "party",
     "name": "party",
-    "description": "Use when one entity is referenced under many roles — seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by. The party-role concern-set collapsed to ONE polymorphic partyRef(role); the role is a tag-context, not N FK columns.",
-    "path": "fields/party"
+    "description": "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.",
+    "path": "party"
   },
   {
     "atom": "payment",
     "name": "payment",
     "description": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
-    "path": "fields/payment"
-  },
-  {
-    "atom": "paymentallocations",
-    "name": "payment-allocations",
-    "description": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
-    "path": "collections/Invoices/Payments/PaymentAllocations"
-  },
-  {
-    "atom": "paymentmethods",
-    "name": "payment-methods",
-    "description": "Use when storing or querying billing instruments — Stripe-tokenized cards (brand, last4, expiry) and bank accounts — with PCI-DSS scope minimized via tokenization and AES-GCM encryption of sensitive fields. The payment-method vault collection.",
-    "path": "collections/PaymentMethods"
-  },
-  {
-    "atom": "paymentruns",
-    "name": "payment-runs",
-    "description": "Use when assembling, authorising, exporting, or reconciling an ISO 20022 batch payment — pain.001 AP credit-transfer or pain.008 AR direct-debit; draft → pending-review → approved → exported → submitted → settled lifecycle; SOX §404 preparer-authoriser segregation of duties. The treasury batch-payment initiation collection.",
-    "path": "collections/BankAccounts/PaymentRuns"
+    "path": "payment"
   },
   {
     "atom": "payments",
     "name": "payments",
     "description": "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection.",
-    "path": "collections/Invoices/Payments"
-  },
-  {
-    "atom": "payrollruns",
-    "name": "payroll-runs",
-    "description": "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.",
-    "path": "collections/BankAccounts/PayrollRuns"
+    "path": "invoices/payments"
   },
   {
     "atom": "peace",
     "name": "peace",
     "description": "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea.",
-    "path": "services/peace"
+    "path": "peace"
   },
   {
-    "atom": "performanceobligations",
-    "name": "performance-obligations",
-    "description": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
-    "path": "collections/Customers/Contracts/PerformanceObligations"
-  },
-  {
-    "atom": "performancereviews",
-    "name": "performance-reviews",
-    "description": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
-    "path": "collections/Employees/PerformanceReviews"
+    "atom": "performances",
+    "name": "contract-performance",
+    "description": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
+    "path": "customers/contracts/contract/performances"
   },
   {
     "atom": "period",
     "name": "period",
     "description": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-    "path": "fields/period"
+    "path": "period"
   },
   {
-    "atom": "periodendadjustments",
-    "name": "period-end-adjustments",
-    "description": "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.",
-    "path": "collections/GLAccounts/PeriodEndAdjustments"
-  },
-  {
-    "atom": "periodlocks",
-    "name": "period-locks",
-    "description": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-    "path": "collections/PeriodLocks"
+    "atom": "periods",
+    "name": "tax-periods",
+    "description": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
+    "path": "fiscal/periods/tax/periods"
   },
   {
     "atom": "perspective",
     "name": "perspective",
     "description": "Use when the SAME content-uuid node must read differently per party — a transfer is give for the payer and take for the payee, a supplier edge is \"my customer\" from the other end, an invoice is AR for the seller and AP for the buyer. The point-of-view projection.",
-    "path": "services/perspective"
+    "path": "perspective"
   },
   {
     "atom": "phase",
@@ -1955,6 +1853,24 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "pipeline"
   },
   {
+    "atom": "pipelines",
+    "name": "recruiting-pipeline",
+    "description": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
+    "path": "cost/centers/job/positions/recruiting/pipelines"
+  },
+  {
+    "atom": "plannings",
+    "name": "budget-planning",
+    "description": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
+    "path": "budget/plannings"
+  },
+  {
+    "atom": "plans",
+    "name": "subscription-plans",
+    "description": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
+    "path": "subscription/plans"
+  },
+  {
     "atom": "plugins",
     "name": "plugins",
     "description": "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.",
@@ -1967,16 +1883,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "rodin/polarity"
   },
   {
-    "atom": "policyacknowledgments",
-    "name": "policy-acknowledgments",
-    "description": "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.",
-    "path": "collections/InternalPolicies/PolicyAcknowledgments"
-  },
-  {
-    "atom": "policyversions",
-    "name": "policy-versions",
-    "description": "Use when managing the version history of an internal policy — release date, version number, change log, document upload, lifecycle draft→final→superseded; ISO 9001 documented-information control per policy. The policy-versions collection.",
-    "path": "collections/InternalPolicies/PolicyVersions"
+    "atom": "policies",
+    "name": "internal-policies",
+    "description": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
+    "path": "internal/policies"
   },
   {
     "atom": "port",
@@ -1985,28 +1895,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "port"
   },
   {
-    "atom": "positions",
+    "atom": "position",
     "name": "positions",
     "description": "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.",
-    "path": "services/positions"
+    "path": "position"
   },
   {
-    "atom": "postbalancesheetevents",
-    "name": "post-balance-sheet-events",
-    "description": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-    "path": "collections/FiscalPeriods/PostBalanceSheetEvents"
+    "atom": "positions",
+    "name": "job-positions",
+    "description": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
+    "path": "cost/centers/job/positions"
   },
   {
-    "atom": "postcloseanalyticsreports",
-    "name": "post-close-analytics-reports",
-    "description": "Use when generating or reviewing immutable post-close analytics — variance analysis (budget vs. actual), financial ratio analysis, segment reporting (IFRS-8 business and geographic), and management KPI scorecards per IFRS IAS-1 / SOX §404. The post-close analytics report collection.",
-    "path": "collections/LegalEntities/Consolidations/AuditReports/PostCloseAnalyticsReports"
+    "atom": "postings",
+    "name": "lease-period-postings",
+    "description": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
+    "path": "leases/lease/period/postings"
   },
   {
     "atom": "posts",
     "name": "posts",
     "description": "Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection.",
-    "path": "collections/Posts"
+    "path": "posts"
+  },
+  {
+    "atom": "power",
+    "name": "power",
+    "description": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection).",
+    "path": "power"
   },
   {
     "atom": "prepaid",
@@ -2021,22 +1937,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "priority"
   },
   {
-    "atom": "priorperiodadjustments",
-    "name": "prior-period-adjustments",
-    "description": "Use when restating a prior closed period for material errors — IAS-8 §42 retrospective correction, adjusting opening balances without re-opening; disclosing error category and amount per §49; CEO/CFO certification for SOX §906. The prior-period restatement node.",
-    "path": "collections/FiscalPeriods/PriorPeriodAdjustments"
-  },
-  {
     "atom": "privilege",
     "name": "privilege",
     "description": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
     "path": "privilege"
-  },
-  {
-    "atom": "productionreceipts",
-    "name": "production-receipts",
-    "description": "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts.",
-    "path": "collections/Items/BillsOfMaterials/WorkOrders/ProductionReceipts"
   },
   {
     "atom": "profane",
@@ -2045,22 +1949,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "profane"
   },
   {
-    "atom": "projectmilestones",
-    "name": "project-milestones",
-    "description": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
-    "path": "collections/Customers/Projects/ProjectMilestones"
+    "atom": "projection",
+    "name": "uuid-projection",
+    "description": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
+    "path": "uuid/projection"
   },
   {
     "atom": "projects",
     "name": "projects",
     "description": "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.",
-    "path": "collections/Customers/Projects"
-  },
-  {
-    "atom": "projecttasks",
-    "name": "project-tasks",
-    "description": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
-    "path": "collections/Customers/Projects/ProjectTasks"
+    "path": "customers/projects"
   },
   {
     "atom": "proof",
@@ -2070,9 +1968,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "properties",
-    "name": "properties",
-    "description": "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection.",
-    "path": "collections/Properties"
+    "name": "investment-properties",
+    "description": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
+    "path": "properties/investment/properties"
   },
   {
     "atom": "prospect",
@@ -2090,25 +1988,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "provisions",
     "name": "provisions",
     "description": "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register.",
-    "path": "collections/FiscalPeriods/Provisions"
+    "path": "fiscal/periods/provisions"
   },
   {
-    "atom": "purchaseorders",
-    "name": "purchase-orders",
-    "description": "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42.",
-    "path": "collections/Items/PurchaseOrders"
-  },
-  {
-    "atom": "purchaserequisitions",
-    "name": "purchase-requisitions",
-    "description": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
-    "path": "collections/CostCenters/PurchaseRequisitions"
-  },
-  {
-    "atom": "qualityinspections",
-    "name": "quality-inspections",
-    "description": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
-    "path": "collections/Items/QualityInspections"
+    "atom": "pwa",
+    "name": "pwa",
+    "description": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
+    "path": "pwa"
   },
   {
     "atom": "queries",
@@ -2130,33 +2016,39 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "quotes",
-    "name": "quotes",
-    "description": "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection.",
-    "path": "collections/Customers/Quotes"
+    "name": "vendor-quotes",
+    "description": "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.",
+    "path": "vendors/vendor/quotes"
   },
   {
     "atom": "rate",
     "name": "rate",
     "description": "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal.",
-    "path": "fields/rate"
+    "path": "rate"
+  },
+  {
+    "atom": "rates",
+    "name": "currency-rates",
+    "description": "Use when storing or querying FX exchange rates for multi-currency translation — from/to currency pair, rate date, source (ECB/bank API/manual), bid/ask/mid, inverse auto-calc, per IAS-21 and ASC-830. The FX rate master collection.",
+    "path": "currency/rates"
   },
   {
     "atom": "reason",
     "name": "reason",
     "description": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
-    "path": "fields/reason"
+    "path": "reason"
   },
   {
     "atom": "receipt",
     "name": "receipt",
     "description": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
-    "path": "services/receipt"
+    "path": "receipt"
   },
   {
     "atom": "receipts",
     "name": "receipts",
     "description": "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.",
-    "path": "collections/Receipts"
+    "path": "receipts"
   },
   {
     "atom": "recognition",
@@ -2168,7 +2060,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "reconcile",
     "name": "reconcile",
     "description": "Use when matching two records of the same flow — bank-statement line ↔ payment, GL ↔ subledger, intercompany pairs. The BankStatementLineReconciliation concern; reconciled state is DERIVED from the match link, not stored.",
-    "path": "accounting/reconcile"
+    "path": "reconcile"
+  },
+  {
+    "atom": "reconciliations",
+    "name": "account-reconciliations",
+    "description": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
+    "path": "gl/accounts/account/reconciliations"
+  },
+  {
+    "atom": "records",
+    "name": "usage-records",
+    "description": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
+    "path": "subscription/plans/subscriptions/usage/records"
   },
   {
     "atom": "recover",
@@ -2177,40 +2081,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "recover"
   },
   {
-    "atom": "recruitingpipeline",
-    "name": "recruiting-pipeline",
-    "description": "Use when tracking candidate applications, interview stages, offers, and hiring decisions per position — GDPR-compliant funnel (applied→screening→interview→offer→hired/rejected), sourcing, skill-match, and recruiter activity. The GDPR Art.6(1)(b) candidate-pipeline collection.",
-    "path": "collections/CostCenters/JobPositions/RecruitingPipeline"
-  },
-  {
-    "atom": "recurringjournals",
-    "name": "recurring-journals",
-    "description": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-    "path": "collections/GLAccounts/RecurringJournals"
-  },
-  {
     "atom": "redirects",
     "name": "redirects",
     "description": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered).",
     "path": "redirects"
   },
   {
+    "atom": "refactor",
+    "name": "refactor",
+    "description": "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.",
+    "path": "refactor"
+  },
+  {
     "atom": "refunds",
     "name": "refunds",
     "description": "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection.",
-    "path": "collections/Invoices/CreditMemos/Refunds"
+    "path": "invoices/credit/memos/refunds"
   },
   {
-    "atom": "regulatorydeferralaccounts",
-    "name": "regulatory-deferral-accounts",
-    "description": "Use when recognising IFRS 14 regulatory-deferral balances — under-recovery assets or over-recovery liabilities — for utilities or telcos under price-cap regimes on first-time IFRS adoption (§16 continuation of previous GAAP), tracking recovery period and period movements. The IFRS 14 regulatory-deferral register.",
-    "path": "collections/RegulatoryDeferralAccounts"
-  },
-  {
-    "atom": "regulatoryreports",
-    "name": "regulatory-reports",
-    "description": "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register.",
-    "path": "collections/LegalEntities/RegulatoryReports"
+    "atom": "registers",
+    "name": "risk-register",
+    "description": "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.",
+    "path": "legal/entities/risk/registers"
   },
   {
     "atom": "relatedparty",
@@ -2219,22 +2111,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "relatedparty"
   },
   {
-    "atom": "relatedpartytransactions",
-    "name": "related-party-transactions",
-    "description": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-    "path": "collections/LegalEntities/RelatedPartyTransactions"
-  },
-  {
     "atom": "remediation",
     "name": "remediation",
     "description": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
     "path": "remediation"
-  },
-  {
-    "atom": "remediationplans",
-    "name": "remediation-plans",
-    "description": "Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection.",
-    "path": "collections/InternalControls/AuditFindings/RemediationPlans"
   },
   {
     "atom": "replication",
@@ -2243,16 +2123,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "replication"
   },
   {
-    "atom": "reportingmappings",
-    "name": "reporting-mappings",
-    "description": "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node.",
-    "path": "collections/TaxingJurisdictions/ReportingStandards/ReportingMappings"
+    "atom": "reportings",
+    "name": "segment-reporting",
+    "description": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
+    "path": "legal/entities/segment/reportings"
   },
   {
-    "atom": "reportingstandards",
-    "name": "reporting-standards",
-    "description": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
-    "path": "collections/TaxingJurisdictions/ReportingStandards"
+    "atom": "reports",
+    "name": "regulatory-reports",
+    "description": "Use when submitting or tracking statutory filings — 10-K/20-F, 10-Q, SOX attestations, annual compliance reports — per legal entity per jurisdiction — filing status, due dates, regulator feedback, and linked audit findings. The regulatory-filing register.",
+    "path": "legal/entities/regulatory/reports"
+  },
+  {
+    "atom": "requests",
+    "name": "maintenance-requests",
+    "description": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
+    "path": "maintenance/requests"
+  },
+  {
+    "atom": "requirements",
+    "name": "compliance-requirements",
+    "description": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
+    "path": "compliance/frameworks/compliance/requirements"
+  },
+  {
+    "atom": "requisitions",
+    "name": "purchase-requisitions",
+    "description": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
+    "path": "cost/centers/purchase/requisitions"
   },
   {
     "atom": "research",
@@ -2265,6 +2163,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "resolution",
     "description": "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.",
     "path": "resolution"
+  },
+  {
+    "atom": "resources",
+    "name": "bookable-resources",
+    "description": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
+    "path": "bookable/resources"
   },
   {
     "atom": "restriction",
@@ -2280,9 +2184,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "returns",
-    "name": "returns",
-    "description": "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection.",
-    "path": "collections/Customers/SalesOrders/Returns"
+    "name": "tax-returns",
+    "description": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
+    "path": "tax/jurisdictions/tax/returns"
   },
   {
     "atom": "revenue",
@@ -2294,19 +2198,19 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "reverse",
     "name": "reverse",
     "description": "Reversing/correcting a posted entry — the source entry with debit↔credit swapped on the SAME accounts, balanced by construction. Read when generating reversing entries, credit notes, void/correction postings, or period-close reversals.",
-    "path": "accounting/reverse"
+    "path": "reverse"
+  },
+  {
+    "atom": "reviews",
+    "name": "performance-reviews",
+    "description": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
+    "path": "employees/performance/reviews"
   },
   {
     "atom": "risk",
     "name": "risk",
     "description": "Use when recording operational risks, dependencies, or blocking issues — supplier risk, technical risk, market risk. The threat with mitigation strategy.",
     "path": "risk"
-  },
-  {
-    "atom": "riskregister",
-    "name": "risk-register",
-    "description": "Use when cataloguing enterprise risks per legal entity — inherent and residual likelihood/impact scoring (COSO/ISO-31000), mitigating internal controls, risk appetite assessment, next-assessment scheduling, linked audit findings. The COSO ERM risk register.",
-    "path": "collections/LegalEntities/RiskRegister"
   },
   {
     "atom": "roadmap",
@@ -2322,9 +2226,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "roles",
-    "name": "roles",
-    "description": "Use when defining RBAC roles — global, collection-scoped, or document-scoped — each carrying an optional capability (read/write/sign/admin/audit) and skill routes that users inherit on assignment. The NIST INCITS-359 role-definition collection.",
-    "path": "collections/Roles"
+    "name": "user-roles",
+    "description": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
+    "path": "roles/user/roles"
   },
   {
     "atom": "round",
@@ -2333,28 +2237,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "horo/round"
   },
   {
-    "atom": "roundingadjustments",
-    "name": "rounding-adjustments",
-    "description": "Use when recording the small ±0.01 plug entries that reconcile integer-cents ledger totals to presentation-rounded statements — IAS-1 §51(e) rounding plugs and IAS-21 §39 FX-translation fragments by type (presentation, FX, tax, cash-settlement). The rounding-adjustments GL sub-collection.",
-    "path": "collections/JournalEntries/RoundingAdjustments"
-  },
-  {
     "atom": "routing",
     "name": "routing",
     "description": "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service.",
-    "path": "services/routing"
+    "path": "routing"
   },
   {
     "atom": "routings",
     "name": "routings",
     "description": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-    "path": "collections/Items/BillsOfMaterials/WorkOrders/Routings"
+    "path": "items/bills/of/materials/work/orders/routings"
+  },
+  {
+    "atom": "rules",
+    "name": "gl-posting-rules",
+    "description": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
+    "path": "gl/posting/rules"
   },
   {
     "atom": "runbook",
     "name": "runbook",
     "description": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
     "path": "runbook"
+  },
+  {
+    "atom": "runs",
+    "name": "operation-runs",
+    "description": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
+    "path": "items/bills/of/materials/work/orders/operation/runs"
   },
   {
     "atom": "sacred",
@@ -2364,21 +2274,15 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "sales",
-    "name": "sales",
-    "description": "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.",
-    "path": "collections/FiscalDevices/Sales"
+    "name": "consignment-sales",
+    "description": "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.",
+    "path": "warehouse/locations/consignment/arrangements/consignment/sales"
   },
   {
-    "atom": "salescommissions",
-    "name": "sales-commissions",
-    "description": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-    "path": "collections/Employees/SalesCommissions"
-  },
-  {
-    "atom": "salesorders",
-    "name": "sales-orders",
-    "description": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
-    "path": "collections/Customers/SalesOrders"
+    "atom": "samples",
+    "name": "audit-samples",
+    "description": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
+    "path": "internal/controls/control/tests/audit/samples"
   },
   {
     "atom": "sampling",
@@ -2390,7 +2294,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "sandbox",
     "name": "sandbox",
     "description": "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on.",
-    "path": "services/sandbox"
+    "path": "sandbox"
   },
   {
     "atom": "satisfaction",
@@ -2405,6 +2309,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "schedule"
   },
   {
+    "atom": "schedules",
+    "name": "debt-schedule",
+    "description": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
+    "path": "legal/entities/debt/schedules"
+  },
+  {
     "atom": "schema",
     "name": "schema",
     "description": "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure.",
@@ -2417,16 +2327,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "science"
   },
   {
+    "atom": "scorecards",
+    "name": "vendor-scorecards",
+    "description": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
+    "path": "vendors/vendor/scorecards"
+  },
+  {
     "atom": "search",
     "name": "search",
     "description": "Use when an entity needs quick free-text find across a few key columns — code/name/barcode/number lookup. The SearchConcern/quick_search (ransack) pattern → a Payload where/like query or a search index.",
-    "path": "fields/search"
+    "path": "search"
   },
   {
     "atom": "sectors",
     "name": "sectors",
     "description": "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references.",
-    "path": "collections/Sectors"
+    "path": "sectors"
   },
   {
     "atom": "seed",
@@ -2441,10 +2357,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "segment"
   },
   {
-    "atom": "segmentreporting",
-    "name": "segment-reporting",
-    "description": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
-    "path": "collections/LegalEntities/SegmentReporting"
+    "atom": "segments",
+    "name": "customer-segments",
+    "description": "Use when grouping customers for differentiated pricing tiers, volume discounts, targeted campaigns, or IFRS-15 §4 portfolio-of-contracts disclosures — segment type, pricing tier, payment terms, credit limit, and priority rank. The CRM customer-segmentation collection.",
+    "path": "customer/segments"
   },
   {
     "atom": "self",
@@ -2459,10 +2375,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sentiment"
   },
   {
-    "atom": "sepamandates",
-    "name": "sepa-mandates",
-    "description": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
-    "path": "collections/Media/SepaMandates"
+    "atom": "separation",
+    "name": "separation",
+    "description": "Use when checking the separation of powers — that no single actor holds two of the legislative, executive, or judicial branches; the anti-corruption segregation-of-duties invariant applied at the scale of the state.",
+    "path": "separation"
   },
   {
     "atom": "sequence",
@@ -2471,34 +2387,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "sequence"
   },
   {
+    "atom": "services",
+    "name": "services",
+    "description": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
+    "path": "services"
+  },
+  {
     "atom": "share",
     "name": "share",
     "description": "Use when reasoning about the second position of the horo state ring — digit 2, \"a partner joins\", the first doubling/split of a flow (ordered, committed, allocated). Ascent arc; nested under horo.",
     "path": "horo/share"
   },
   {
-    "atom": "sharebasedpayments",
-    "name": "share-based-payments",
-    "description": "Use when recording employee equity grants — stock options, RSUs, RSAs, PSUs, ESPP, SARs — under IFRS 2, tracking equity-settled vs cash-settled treatment, vesting tranches with service/performance/market conditions, cumulative expense recognition, exercises and forfeitures. The IFRS 2 share-based-payment grant register.",
-    "path": "collections/Employees/ShareBasedPayments"
+    "atom": "shared",
+    "name": "shared",
+    "description": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
+    "path": "shared"
   },
   {
     "atom": "shares",
     "name": "shares",
     "description": "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection.",
-    "path": "collections/Shares"
+    "path": "shares"
   },
   {
     "atom": "shipments",
     "name": "shipments",
     "description": "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.",
-    "path": "collections/Customers/SalesOrders/Shipments"
+    "path": "customers/sales/orders/shipments"
   },
   {
     "atom": "shred",
     "name": "shred",
     "description": "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts.",
-    "path": "services/shred"
+    "path": "shred"
   },
   {
     "atom": "signal",
@@ -2507,10 +2429,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "identity/signal"
   },
   {
+    "atom": "signatures",
+    "name": "contract-signatures",
+    "description": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
+    "path": "customers/contracts/contract/signatures"
+  },
+  {
     "atom": "sla",
     "name": "sla",
     "description": "Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric.",
     "path": "sla"
+  },
+  {
+    "atom": "snapshots",
+    "name": "fiscal-period-snapshots",
+    "description": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
+    "path": "fiscal/periods/fiscal/period/snapshots"
   },
   {
     "atom": "society",
@@ -2522,13 +2456,13 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "source",
     "name": "source",
     "description": "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation.",
-    "path": "fields/source"
+    "path": "source"
   },
   {
     "atom": "spaces",
     "name": "spaces",
     "description": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-    "path": "collections/Properties/Spaces"
+    "path": "properties/spaces"
   },
   {
     "atom": "spec",
@@ -2544,51 +2478,57 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "standards",
-    "name": "standards",
-    "description": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-    "path": "collections/Standards"
+    "name": "reporting-standards",
+    "description": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
+    "path": "taxing/jurisdictions/reporting/standards"
   },
   {
     "atom": "start",
     "name": "start",
     "description": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
-    "path": "fields/start"
+    "path": "start"
+  },
+  {
+    "atom": "statements",
+    "name": "bank-statements",
+    "description": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
+    "path": "gl/accounts/bank/statements"
   },
   {
     "atom": "status",
     "name": "status",
     "description": "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'.",
-    "path": "fields/status"
-  },
-  {
-    "atom": "statutoryfieldmappings",
-    "name": "statutory-field-mappings",
-    "description": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
-    "path": "collections/TaxingJurisdictions/StatutoryReportTemplates/StatutoryFieldMappings"
-  },
-  {
-    "atom": "statutoryreporttemplates",
-    "name": "statutory-report-templates",
-    "description": "Use when defining or retrieving jurisdiction-scoped statutory filing templates — annual reports, tax returns, regulatory filings, financial statements, audit reports — with section sequences and effective dates. The per-jurisdiction statutory filing template node.",
-    "path": "collections/TaxingJurisdictions/StatutoryReportTemplates"
+    "path": "status"
   },
   {
     "atom": "sti",
     "name": "sti",
     "description": "Single Table Inheritance in Payload — one collection, a flat `type` discriminator, typed in TS as a discriminated union. Read when a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment kinds, party kinds).",
-    "path": "fields/sti"
+    "path": "sti"
   },
   {
-    "atom": "subscriptionplans",
-    "name": "subscription-plans",
-    "description": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
-    "path": "collections/SubscriptionPlans"
+    "atom": "stream",
+    "name": "streams",
+    "description": "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.",
+    "path": "stream"
+  },
+  {
+    "atom": "structures",
+    "name": "entity-legal-structures",
+    "description": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
+    "path": "taxing/jurisdictions/entity/legal/structures"
+  },
+  {
+    "atom": "submissions",
+    "name": "audit-submissions",
+    "description": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
+    "path": "audit/submissions"
   },
   {
     "atom": "subscriptions",
     "name": "subscriptions",
     "description": "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.",
-    "path": "collections/SubscriptionPlans/Subscriptions"
+    "path": "subscription/plans/subscriptions"
   },
   {
     "atom": "sufficient",
@@ -2597,22 +2537,40 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "self/sufficient"
   },
   {
+    "atom": "suggestions",
+    "name": "ai-suggestions",
+    "description": "Use when recording, querying, or auditing an AI inference — prompt/model/output/confidence, the human's accept/reject/edit decision, the downstream record it was applied to, and the EU AI Act risk class; GDPR Art.22(3) right-to-explain trail + SOX §404 evidence-of-control over AI-influenced decisions. The append-only AI inference audit collection.",
+    "path": "ai/suggestions"
+  },
+  {
     "atom": "supto",
     "name": "supto",
     "description": "Bulgarian Наредба Н-18 / СУПТО retail fiscal regime — the УНП (unique sales number XXXXXXXX-ZZZZ-0000001), no-delete / reversal-only immutability, read-only audit profile, the monthly standardized audit (XML, Appendix 38), and fiscal-device (ФУ) receipt linkage. Read when implementing BG point-of-sale compliance, or as the worked example of mapping a government audit regime onto the content-uuid model — СУПТО ≈ a state-mandated content-addressed audit system.",
     "path": "supto"
   },
   {
+    "atom": "sync",
+    "name": "agent-sync",
+    "description": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
+    "path": "agent/sync"
+  },
+  {
+    "atom": "tag",
+    "name": "tags",
+    "description": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.",
+    "path": "tag"
+  },
+  {
     "atom": "taggings",
     "name": "taggings",
     "description": "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.",
-    "path": "collections/Tags/Taggings"
+    "path": "tags/taggings"
   },
   {
     "atom": "tags",
     "name": "tags",
-    "description": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.",
-    "path": "fields/tags"
+    "description": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
+    "path": "tags"
   },
   {
     "atom": "take",
@@ -2621,10 +2579,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "take"
   },
   {
-    "atom": "tampercost",
-    "name": "tamper-cost",
-    "description": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-    "path": "services/tamper-cost"
+    "atom": "tasks",
+    "name": "project-tasks",
+    "description": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
+    "path": "customers/projects/project/tasks"
   },
   {
     "atom": "tax",
@@ -2633,46 +2591,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tax"
   },
   {
-    "atom": "taxcalculations",
-    "name": "tax-calculations",
-    "description": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
-    "path": "collections/GLAccounts/TaxCalculations"
-  },
-  {
-    "atom": "taxcodes",
-    "name": "tax-codes",
-    "description": "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection.",
-    "path": "collections/TaxJurisdictions/TaxCodes"
-  },
-  {
     "atom": "taxexempt",
     "name": "taxexempt",
     "description": "Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation",
     "path": "taxexempt"
-  },
-  {
-    "atom": "taxingjurisdictions",
-    "name": "taxing-jurisdictions",
-    "description": "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.",
-    "path": "collections/TaxingJurisdictions"
-  },
-  {
-    "atom": "taxjurisdictions",
-    "name": "tax-jurisdictions",
-    "description": "Use when setting up or querying tax authority master data — jurisdiction code, country/region/level (national to supranational), VAT registration number and dates, filing frequency and due day, filing currency. The per-tenant tax-authority master collection referenced by tax codes, calculations and returns.",
-    "path": "collections/TaxJurisdictions"
-  },
-  {
-    "atom": "taxperiods",
-    "name": "tax-periods",
-    "description": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-    "path": "collections/FiscalPeriods/TaxPeriods"
-  },
-  {
-    "atom": "taxreturns",
-    "name": "tax-returns",
-    "description": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
-    "path": "collections/TaxJurisdictions/TaxReturns"
   },
   {
     "atom": "team",
@@ -2681,10 +2603,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "team"
   },
   {
+    "atom": "templates",
+    "name": "statutory-report-templates",
+    "description": "Use when defining or retrieving jurisdiction-scoped statutory filing templates — annual reports, tax returns, regulatory filings, financial statements, audit reports — with section sequences and effective dates. The per-jurisdiction statutory filing template node.",
+    "path": "taxing/jurisdictions/statutory/report/templates"
+  },
+  {
     "atom": "tenants",
     "name": "tenants",
     "description": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-    "path": "collections/Tenants"
+    "path": "tenants"
   },
   {
     "atom": "tenure",
@@ -2696,7 +2624,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "terminals",
     "name": "terminals",
     "description": "Use when registering or querying virtual POS terminals for the BG Наредба-Н-18 alternative e-shop regime — terminal number, payment-service provider, settlement IBAN, currency, and active/inactive status. The virtual POS terminal master for NRA e-shop declarations.",
-    "path": "collections/Terminals"
+    "path": "terminals"
   },
   {
     "atom": "termination",
@@ -2709,6 +2637,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "territory",
     "description": "Use when organizing sales coverage — geographic or account-based territory, assignment to rep, quota per territory, coverage/overlap rules.",
     "path": "territory"
+  },
+  {
+    "atom": "testing",
+    "name": "testing",
+    "description": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
+    "path": "testing"
+  },
+  {
+    "atom": "tests",
+    "name": "control-tests",
+    "description": "Use when designing or executing SOX §404 control-effectiveness tests — sampling methodology (statistical/stratified/judgmental/census), assertion, sample size, tolerance, deviation count/rate, conclusion on effectiveness; links to the tested internal-control. The control-tests ISO-19011 sampling-evidence collection.",
+    "path": "internal/controls/control/tests"
   },
   {
     "atom": "theme",
@@ -2732,13 +2672,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "time",
     "name": "time",
     "description": "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor.",
-    "path": "fields/time"
-  },
-  {
-    "atom": "timeentries",
-    "name": "time-entries",
-    "description": "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.",
-    "path": "collections/Employees/TimeEntries"
+    "path": "time"
   },
   {
     "atom": "token",
@@ -2756,13 +2690,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "total",
     "name": "total",
     "description": "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency.",
-    "path": "fields/total"
-  },
-  {
-    "atom": "trackingevents",
-    "name": "tracking-events",
-    "description": "Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log.",
-    "path": "collections/Customers/SalesOrders/Shipments/TrackingEvents"
+    "path": "total"
   },
   {
     "atom": "train",
@@ -2783,28 +2711,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "transaction"
   },
   {
-    "atom": "transactionfailures",
-    "name": "transaction-failures",
-    "description": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
-    "path": "collections/TransactionFailures"
-  },
-  {
-    "atom": "transferpricingadjustments",
-    "name": "transfer-pricing-adjustments",
-    "description": "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node.",
-    "path": "collections/FiscalPeriods/TaxPeriods/TransferPricingAdjustments"
-  },
-  {
-    "atom": "transferpricingfiles",
-    "name": "transfer-pricing-files",
-    "description": "Use when documenting intercompany transfer pricing per OECD BEPS Action 13 — Master File, Local File, and Country-by-Country Report per jurisdiction per fiscal year — TP method, CbCR aggregates, Pillar Two applicability, filing deadlines and status. The BEPS Action 13 TP documentation register.",
-    "path": "collections/LegalEntities/TransferPricingFiles"
+    "atom": "transactions",
+    "name": "related-party-transactions",
+    "description": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
+    "path": "legal/entities/related/party/transactions"
   },
   {
     "atom": "translations",
     "name": "translations",
     "description": "Use when overriding platform localizations per tenant — MCP tool descriptions, UI labels, event labels, notification templates, standard citations, chain-step names — with per-locale values (BCP-47), activation windows, and provenance back to the overridden row. The tenant translation override layer above the platform default.",
-    "path": "collections/Translations"
+    "path": "translations"
   },
   {
     "atom": "trend",
@@ -2828,7 +2744,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "atom": "type",
     "name": "type",
     "description": "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows.",
-    "path": "fields/type"
+    "path": "type"
   },
   {
     "atom": "types",
@@ -2855,22 +2771,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "upsell"
   },
   {
-    "atom": "usagerecords",
-    "name": "usage-records",
-    "description": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
-    "path": "collections/SubscriptionPlans/Subscriptions/UsageRecords"
-  },
-  {
-    "atom": "userroles",
-    "name": "user-roles",
-    "description": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
-    "path": "collections/Roles/UserRoles"
-  },
-  {
     "atom": "users",
     "name": "users",
     "description": "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root.",
-    "path": "collections/Users"
+    "path": "users"
+  },
+  {
+    "atom": "utilities",
+    "name": "utilities",
+    "description": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
+    "path": "utilities"
   },
   {
     "atom": "uuid",
@@ -2879,16 +2789,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "uuid"
   },
   {
-    "atom": "uuidprojection",
-    "name": "uuid-projection",
-    "description": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
-    "path": "services/uuid-projection"
-  },
-  {
     "atom": "value",
     "name": "value",
     "description": "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate.",
-    "path": "fields/value"
+    "path": "value"
   },
   {
     "atom": "variance",
@@ -2897,34 +2801,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "variance"
   },
   {
+    "atom": "variances",
+    "name": "cost-variances",
+    "description": "Use when closing a work order and reconciling standard vs actual manufacturing costs — material price/quantity, labour rate/efficiency, and overhead spending/volume variances per IAS-2 §21. The variance-decomposition record generated on work-order close.",
+    "path": "items/bills/of/materials/work/orders/cost/variances"
+  },
+  {
     "atom": "variant",
     "name": "variant",
     "description": "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.",
     "path": "variant"
   },
   {
-    "atom": "vendorquotes",
-    "name": "vendor-quotes",
-    "description": "Use when capturing or evaluating vendor RFQ responses — quote lines, pricing, INCOTERMS, lead time, award decision and rationale for OECD BEPS Action 13 and SOX §404 arm's-length evidence. The per-vendor RFQ response and competitive-bid award record.",
-    "path": "collections/Vendors/VendorQuotes"
-  },
-  {
     "atom": "vendors",
     "name": "vendors",
     "description": "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry.",
-    "path": "collections/Vendors"
-  },
-  {
-    "atom": "vendorscorecards",
-    "name": "vendor-scorecards",
-    "description": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
-    "path": "collections/Vendors/VendorScorecards"
+    "path": "vendors"
   },
   {
     "atom": "version",
     "name": "version",
     "description": "Use when reasoning about erpax's version — it is CONTENT-ADDRESSED and skill-based, a function of the corpus aura (the hash over every atom's content-uuid), so the same skills produce the same version on every clone; automatic tags follow the corpus, and drift or forgery between a tag and the code is caught. The git tag that cannot lie about what it contains.",
-    "path": "services/version"
+    "path": "version"
   },
   {
     "atom": "versions",
@@ -2933,10 +2831,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "versions"
   },
   {
-    "atom": "warehouselocations",
-    "name": "warehouse-locations",
-    "description": "Use when registering or querying physical or logical inventory locations — warehouses, 3PL, retail, bonded, virtual/drop-ship — with bins, GL account defaults, and IAS 2 / ASC 330 cost-flow segregation. The inventory location master for stock tracking and SOX §404 inventory controls.",
-    "path": "collections/WarehouseLocations"
+    "atom": "voting",
+    "name": "voting",
+    "description": "Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform.",
+    "path": "voting"
   },
   {
     "atom": "warranty",
@@ -2951,58 +2849,46 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "horo/weave"
   },
   {
+    "atom": "website",
+    "name": "website",
+    "description": "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record.",
+    "path": "website"
+  },
+  {
     "atom": "whole",
     "name": "whole",
     "description": "Use when reasoning about composition in erpax — whole↔part, fields→collections→plugins→erpax, BOM, consolidation, the fractal self-similar levels. The universal root of composition.",
     "path": "whole"
   },
   {
-    "atom": "wipsnapshots",
-    "name": "wip-snapshots",
-    "description": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-    "path": "collections/Customers/Projects/WipSnapshots"
-  },
-  {
-    "atom": "workcenters",
-    "name": "work-centers",
-    "description": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
-    "path": "collections/WorkCenters"
-  },
-  {
     "atom": "workflow",
     "name": "workflow",
     "description": "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service.",
-    "path": "services/workflow"
-  },
-  {
-    "atom": "workflowdefinitions",
-    "name": "workflow-definitions",
-    "description": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
-    "path": "collections/WorkflowDefinitions"
-  },
-  {
-    "atom": "workflowengine",
-    "name": "workflow-engine",
-    "description": "Use when executing or validating finite-state machines — gating transitions, detecting dead-ends, or auditing workflow harmony.",
-    "path": "services/workflow-engine"
-  },
-  {
-    "atom": "workflowinstances",
-    "name": "workflow-instances",
-    "description": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
-    "path": "collections/WorkflowDefinitions/WorkflowInstances"
+    "path": "workflow"
   },
   {
     "atom": "workorders",
-    "name": "work-orders",
-    "description": "Use when releasing a BOM into manufacturing — planned vs completed vs scrapped quantities, release/due/completion dates, demand source (MTO/MTS/forecast), and IAS-2 §21 cost-of-conversion tracking. The production-order header that drives inventory issues, receipts, and cost variances.",
-    "path": "collections/Items/BillsOfMaterials/WorkOrders"
+    "name": "Workorders",
+    "description": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
+    "path": "workorders"
+  },
+  {
+    "atom": "workphases",
+    "name": "workphases",
+    "description": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
+    "path": "workphases"
   },
   {
     "atom": "workshifts",
-    "name": "work-shifts",
-    "description": "Use when recording manufacturing labor — worker × work-center × shift — capturing run-time, quantity produced, scrap, and parallelism-aware wage (runTimeMinutes/60 × rate / parallelism) that feeds IAS-2 cost-of-conversion inventory costing. The production work-shift collection.",
-    "path": "collections/Employees/WorkShifts"
+    "name": "workshifts",
+    "description": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
+    "path": "workshifts"
+  },
+  {
+    "atom": "workspace",
+    "name": "google-workspace",
+    "description": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
+    "path": "google/workspace"
   },
   {
     "atom": "zeropoint",

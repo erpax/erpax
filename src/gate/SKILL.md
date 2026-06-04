@@ -1,6 +1,6 @@
 ---
 name: gate
-description: Use when reasoning about verification — a gate is itself a trinity (check · message · heal): the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.
+description: Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.
 ---
 
 # gate — the trinity of verification (check · message · heal)

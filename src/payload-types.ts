@@ -176,6 +176,10 @@ export interface Config {
     'production-receipts': ProductionReceipt;
     'quality-inspections': QualityInspection;
     'wip-snapshots': WipSnapshot;
+    lots: Lot;
+    'lot-variants': LotVariant;
+    'lot-work-phases': LotWorkPhase;
+    'work-phases': WorkPhase;
     tags: Tag;
     taggings: Tagging;
     properties: Property;
@@ -425,6 +429,10 @@ export interface Config {
     'production-receipts': ProductionReceiptsSelect<false> | ProductionReceiptsSelect<true>;
     'quality-inspections': QualityInspectionsSelect<false> | QualityInspectionsSelect<true>;
     'wip-snapshots': WipSnapshotsSelect<false> | WipSnapshotsSelect<true>;
+    lots: LotsSelect<false> | LotsSelect<true>;
+    'lot-variants': LotVariantsSelect<false> | LotVariantsSelect<true>;
+    'lot-work-phases': LotWorkPhasesSelect<false> | LotWorkPhasesSelect<true>;
+    'work-phases': WorkPhasesSelect<false> | WorkPhasesSelect<true>;
     tags: TagsSelect<false> | TagsSelect<true>;
     taggings: TaggingsSelect<false> | TaggingsSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
@@ -8311,7 +8319,7 @@ export interface CostVariance {
   createdAt: string;
 }
 /**
- * Production order — releases a BOM into manufacturing. Drives inventory issues + finished-good receipts + IAS-2 §21 cost variances.
+ * The production execution leaf (2.05M-row etrima twin) — one (lotphase × variant) assignment per worker/shift. Options array ⊕ derived header totals (double-entry), derived horo state, the forward! conveyor, and the piece-rate wage.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "work-orders".
@@ -8324,83 +8332,146 @@ export interface WorkOrder {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   /**
-   * Work-order reference (e.g. `WO-2026-04-0123`).
+   * Work-order reference (e.g. `WO-2026-04-000123`).
    */
   reference: string;
   /**
-   * BOM version this order executes against.
+   * ISO 8601 — the production date (the shift date in etrima).
    */
-  bom: string | BillsOfMaterial;
+  date?: string | null;
   /**
-   * Finished-good item the order produces (denormalised from BOM for fast filter).
+   * Variant lines of this phase output — the collapse of the 36 fixed `option_1..12` columns. AUDIT: option-1 ~100%, option-12 0% of 2.05M rows, so the array models the real cardinality (mostly one line).
    */
-  finishedGood: string | Item;
+  options?:
+    | {
+        /**
+         * Option / variant label (was the `option_N` slot).
+         */
+        label?: string | null;
+        /**
+         * Units ordered for this option.
+         */
+        ordered?: number | null;
+        /**
+         * Units produced for this option.
+         */
+        produced?: number | null;
+        /**
+         * Units backordered for this option.
+         */
+        backordered?: number | null;
+        id?: string | null;
+      }[]
+    | null;
   /**
-   * Planned output quantity.
+   * Σ options[].ordered — derived (100.0000% invariant over 2.05M rows).
    */
-  plannedQuantity: number;
+  unitsOrdered?: number | null;
   /**
-   * Cumulative completed quantity (updated per production-receipt).
+   * Σ options[].produced — derived (double-entry: header = Σ entries).
    */
-  completedQuantity?: number | null;
+  unitsProduced?: number | null;
   /**
-   * Cumulative scrap (NCR) quantity.
+   * Σ options[].backordered — derived.
    */
-  scrappedQuantity?: number | null;
+  unitsBackordered?: number | null;
   /**
-   * ISO 8601 — date the order was released to production.
+   * Seconds of work per unit at this phase (the phase standard time).
    */
-  releaseDate: string;
+  unitSeconds?: number | null;
   /**
-   * ISO 8601 — required completion date.
+   * Machines one worker tends at once. Null/0 ⇒ 1 (the wage divisor; never divide by zero).
    */
-  dueDate?: string | null;
+  machinesPerWorker?: number | null;
   /**
-   * ISO 8601 — actual completion timestamp.
+   * Pay rate per hour for this assignment (the phase / worker / vendor-order rate).
+   */
+  payPerHour?: number | null;
+  /**
+   * Shift efficiency % (denormalised from the work-shift; AUDIT avg ≈ 50.6%).
+   */
+  efficiencyPercent?: number | null;
+  /**
+   * ISO 8601 — first production booked.
+   */
+  startedAt?: string | null;
+  /**
+   * ISO 8601 — fully produced (→ shipped, fires the conveyor).
    */
   completedAt?: string | null;
-  demandSource?: ('customer_order' | 'stock_replenishment' | 'sub_assembly' | 'engineering' | 'sample') | null;
   /**
-   * Reference to the demand source (e.g. customer order number, parent WO).
+   * ISO 8601 — received by the next phase / customer (→ delivered).
    */
-  demandReference?: string | null;
+  deliveredAt?: string | null;
   /**
-   * Where the finished good is received.
+   * ISO 8601 — sealed (→ closed, the next phase open).
    */
-  targetWarehouse?: (string | null) | WarehouseLocation;
-  standardCosts?: {
-    /**
-     * Σ(component qty × component standard cost) per BOM. In cents.
-     */
-    standardMaterialCost?: number | null;
-    /**
-     * Σ(operation labour-min × labour rate). In cents.
-     */
-    standardLabourCost?: number | null;
-    /**
-     * Σ(operation machine-min × overhead rate). In cents.
-     */
-    standardOverheadCost?: number | null;
-    /**
-     * Σ of the three above.
-     */
-    standardTotalCost?: number | null;
-  };
-  status?: ('draft' | 'released' | 'in_progress' | 'completed' | 'closed' | 'cancelled') | null;
+  closedAt?: string | null;
+  /**
+   * ISO 8601 — projected completion (now + minutesRemaining).
+   */
+  estimatedAt?: string | null;
+  /**
+   * Lot-variant code — the product variant in this lot (the lotvariant cross).
+   */
+  lotVariantCode?: string | null;
+  /**
+   * Lot-work-phase code — the routing step (the lotworkphase cross).
+   */
+  lotWorkPhaseCode?: string | null;
+  /**
+   * Phase order within the routing — drives the forward! conveyor (next = smallest sort greater than this).
+   */
+  lotWorkPhaseSort?: number | null;
+  /**
+   * Machine code (AUDIT: set on only ~0.26% of rows — optional by data).
+   */
+  machineCode?: string | null;
+  /**
+   * Team code — the producing team.
+   */
+  teamCode?: string | null;
+  /**
+   * The work-shift this order was booked on.
+   */
+  workShift?: (string | null) | WorkShift;
+  /**
+   * The producing actor (Rails EmployeeContract → the unified actor). AUDIT: present on ~99.99% of rows.
+   */
+  worker?: (string | null) | Employee;
+  /**
+   * Supervising actor (AUDIT: ~91% of rows).
+   */
+  supervisor?: (string | null) | Employee;
+  /**
+   * Directing actor (AUDIT: ~21% of rows — optional by data).
+   */
+  director?: (string | null) | Employee;
+  /**
+   * The upstream phase whose produced units seeded this order (the conveyor source).
+   */
+  forwardedFrom?: (string | null) | WorkOrder;
+  /**
+   * The downstream phase this order forwarded its output to (set once; the conveyor is idempotent).
+   */
+  forwardedTo?: (string | null) | WorkOrder;
+  /**
+   * Free-text note (AUDIT: present on ~0.9% of rows).
+   */
+  note?: string | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
-  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
- * IAS-2 §10 cost-of-conversion components per finished good. Versioned per ECO; only one row per (finishedGood × version) is `active` at a time.
+ * The per-actor-day labour aggregate — the efficiency + wage authority. One row per (actor, day); work orders roll up into it and inherit its efficiency. efficiency = ⌊produced·100/presence⌋ (the 20-yr etrima truth).
  *
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "bills-of-materials".
+ * via the `definition` "work-shifts".
  */
-export interface BillsOfMaterial {
+export interface WorkShift {
   id: string;
   /**
    * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
@@ -8408,89 +8479,104 @@ export interface BillsOfMaterial {
   uuid?: string | null;
   tenant?: (string | null) | Tenant;
   /**
-   * BOM reference (e.g. `BOM-WIDGET-001-v3`).
+   * Labour-day reference (e.g. `WS-2026-06-0042`).
    */
   reference: string;
   /**
-   * The finished-good item this BOM produces.
+   * The actor (employee-contract) whose labour-day this is. The aggregate key with `date`.
    */
-  finishedGood: string | Item;
+  actor: string | Employee;
   /**
-   * Version label (e.g. `v3`, `2026-Q1`). Bumped per ECO.
+   * The calendar day this aggregate is for (ISO 8601). One row per (actor, date).
    */
-  version: string;
+  date: string;
   /**
-   * ISO 8601 — first date this BOM version applies to new work-orders.
+   * The team / work-centre the actor worked the day at (sparse over the 20-yr data: 14 teams).
    */
-  effectiveFrom: string;
+  team?: (string | null) | WorkCenter;
   /**
-   * ISO 8601 — last date this BOM is active. Empty = open-ended.
+   * Directing actor-contract (Rails `EmployeeContract`). Sparse — set on ~18% of days.
    */
-  effectiveTo?: string | null;
+  director?: (string | null) | Employee;
   /**
-   * Output quantity per BOM run (e.g. 1 widget per BOM, or 100 in batch process).
+   * Supervising actor-contract (Rails `EmployeeContract`). Very sparse — ~0.2% of days.
    */
-  producedQuantity?: number | null;
+  supervisor?: (string | null) | Employee;
   /**
-   * Per-component quantity required to produce `producedQuantity` of finished good.
+   * Lifecycle on the 1·2·4·8·7·5·9 ring: opened → started → producing → finished → reconciled → waged → closed. Off-ring is disharmony. (In 20-yr data only `started` was bulk-recorded; the close half was latent.)
    */
-  components: {
-    /**
-     * Component item (raw material / sub-assembly).
-     */
-    item: string | Item;
-    /**
-     * Quantity consumed per BOM run.
-     */
-    quantity: number;
-    /**
-     * UN/CEFACT Rec 20 unit (e.g. `KGM`, `H87`, `LTR`).
-     */
-    unitOfMeasure?: string | null;
-    /**
-     * Expected scrap percentage (0-100).
-     */
-    wasteAllowance?: number | null;
-    /**
-     * Substitutable component.
-     */
-    isOptional?: boolean | null;
-    id?: string | null;
-  }[];
+  status: 'opened' | 'started' | 'producing' | 'finished' | 'reconciled' | 'waged' | 'closed';
   /**
-   * Routing — sequence of work-center operations that absorb conversion cost (IAS-2 §13).
+   * Clock-in (ISO 8601). Set on 99.7% of the historical days.
    */
-  operations?:
-    | {
-        /**
-         * Order in routing (10, 20, 30 — leave gaps for inserts).
-         */
-        sequence: number;
-        description: string;
-        /**
-         * Work-center performing this standard operation (relational — the capacity unit).
-         */
-        workCenter?: (string | null) | WorkCenter;
-        /**
-         * Standard labour-minutes per BOM run — drives direct-labour absorption.
-         */
-        standardLabourMinutes?: number | null;
-        /**
-         * Standard machine-minutes per BOM run — drives overhead absorption.
-         */
-        standardMachineMinutes?: number | null;
-        id?: string | null;
-      }[]
-    | null;
+  startedAt?: string | null;
   /**
-   * ECO reference that triggered this version (audit trail for SOX §404 BOM-control).
+   * Production stop (ISO 8601). Latent in legacy data — restored by the lifecycle.
    */
-  engineeringChangeOrder?: string | null;
-  status?: ('draft' | 'active' | 'superseded' | 'obsolete') | null;
+  finishedAt?: string | null;
+  /**
+   * The seal (ISO 8601) — set when the day closes and becomes the authority.
+   */
+  closedAt?: string | null;
+  /**
+   * Minutes the actor was PRESENT (the worked subset of the scheduled shift). The efficiency denominator.
+   */
+  presenceMinutes?: number | null;
+  /**
+   * Scheduled shift length in minutes (presenceMinutes ≤ shiftMinutes, verified 99.94%). The time-pay basis.
+   */
+  shiftMinutes?: number | null;
+  /**
+   * Time-clock rate per hour (defaults from the contract). Feeds the time-pay pole of `wage`.
+   */
+  payPerHour?: number | null;
+  /**
+   * Σ of the contributing work-order wages (the piece-rollup pole). `wage` is the MAX of this and time-pay.
+   */
+  orderWage?: number | null;
+  /**
+   * Σ work-minutes the day ORDERED (rollup from work orders: Σ work-seconds / 60).
+   */
+  minutesOrdered?: number | null;
+  /**
+   * Σ work-minutes the day PRODUCED (rollup from work orders). The efficiency numerator.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Derived = max(0, minutesOrdered − minutesProduced). The unfinished remainder (ordered = produced + backordered).
+   */
+  minutesBackordered?: number | null;
+  /**
+   * AUTHORITY. Derived = ⌊minutesProduced·100 / presenceMinutes⌋ (integer truncation), or 100 when there is nothing to measure. Bell ≈ 72%, pile at 100, p99 ≈ 166. Work orders inherit this. Do not edit.
+   */
+  efficiencyPercent?: number | null;
+  /**
+   * AUTHORITY. Derived = max(payPerHour·shiftMinutes/60, orderWage), rounded to 2dp — the greater of time-pay and the piece rollup. Feeds IAS-2 cost-of-conversion. Do not edit.
+   */
+  wage?: number | null;
+  /**
+   * Distinct products touched (rollup).
+   */
+  productsCount?: number | null;
+  /**
+   * Distinct lots touched (rollup).
+   */
+  lotsCount?: number | null;
+  /**
+   * Distinct lot-variants touched (rollup).
+   */
+  variantsCount?: number | null;
+  /**
+   * Distinct work-phases touched (rollup).
+   */
+  phasesCount?: number | null;
+  /**
+   * Σ units ordered across the day (rollup).
+   */
+  unitsCount?: number | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
-  notes?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -10395,6 +10481,106 @@ export interface WorkflowInstance {
   createdAt: string;
 }
 /**
+ * IAS-2 §10 cost-of-conversion components per finished good. Versioned per ECO; only one row per (finishedGood × version) is `active` at a time.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bills-of-materials".
+ */
+export interface BillsOfMaterial {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  tenant?: (string | null) | Tenant;
+  /**
+   * BOM reference (e.g. `BOM-WIDGET-001-v3`).
+   */
+  reference: string;
+  /**
+   * The finished-good item this BOM produces.
+   */
+  finishedGood: string | Item;
+  /**
+   * Version label (e.g. `v3`, `2026-Q1`). Bumped per ECO.
+   */
+  version: string;
+  /**
+   * ISO 8601 — first date this BOM version applies to new work-orders.
+   */
+  effectiveFrom: string;
+  /**
+   * ISO 8601 — last date this BOM is active. Empty = open-ended.
+   */
+  effectiveTo?: string | null;
+  /**
+   * Output quantity per BOM run (e.g. 1 widget per BOM, or 100 in batch process).
+   */
+  producedQuantity?: number | null;
+  /**
+   * Per-component quantity required to produce `producedQuantity` of finished good.
+   */
+  components: {
+    /**
+     * Component item (raw material / sub-assembly).
+     */
+    item: string | Item;
+    /**
+     * Quantity consumed per BOM run.
+     */
+    quantity: number;
+    /**
+     * UN/CEFACT Rec 20 unit (e.g. `KGM`, `H87`, `LTR`).
+     */
+    unitOfMeasure?: string | null;
+    /**
+     * Expected scrap percentage (0-100).
+     */
+    wasteAllowance?: number | null;
+    /**
+     * Substitutable component.
+     */
+    isOptional?: boolean | null;
+    id?: string | null;
+  }[];
+  /**
+   * Routing — sequence of work-center operations that absorb conversion cost (IAS-2 §13).
+   */
+  operations?:
+    | {
+        /**
+         * Order in routing (10, 20, 30 — leave gaps for inserts).
+         */
+        sequence: number;
+        description: string;
+        /**
+         * Work-center performing this standard operation (relational — the capacity unit).
+         */
+        workCenter?: (string | null) | WorkCenter;
+        /**
+         * Standard labour-minutes per BOM run — drives direct-labour absorption.
+         */
+        standardLabourMinutes?: number | null;
+        /**
+         * Standard machine-minutes per BOM run — drives overhead absorption.
+         */
+        standardMachineMinutes?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * ECO reference that triggered this version (audit trail for SOX §404 BOM-control).
+   */
+  engineeringChangeOrder?: string | null;
+  status?: ('draft' | 'active' | 'superseded' | 'obsolete') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * Traceable lot/batch identity (ISO 9001 §8.5.2, ISO 22005, EU 178/2002 Art 18). Carries quality status, expiry and one-step-back genealogy for recall.
  *
  * This interface was referenced by `Config`'s JSON-Schema
@@ -10552,79 +10738,6 @@ export interface QualityInspection {
    */
   inventoryMovement?: (string | null) | InventoryMovement;
   status?: ('draft' | 'in_progress' | 'completed' | 'disputed') | null;
-  createdBy?: (string | null) | User;
-  approvedBy?: (string | null) | User;
-  approvedAt?: string | null;
-  notes?: string | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * Labor/time/cost roll-up: worker × work-center × time → wage (parallelism-aware), feeding IAS-2 cost-of-conversion.
- *
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "work-shifts".
- */
-export interface WorkShift {
-  id: string;
-  /**
-   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
-   */
-  uuid?: string | null;
-  tenant?: (string | null) | Tenant;
-  /**
-   * Work-shift reference (e.g. `WS-2026-04-0042`).
-   */
-  reference: string;
-  /**
-   * Employee who worked the shift.
-   */
-  worker: string | Employee;
-  /**
-   * Work-center the labor was performed at.
-   */
-  workCenter: string | WorkCenter;
-  /**
-   * Production order the shift contributed to (optional).
-   */
-  workOrder?: (string | null) | WorkOrder;
-  /**
-   * ISO 8601 — shift start.
-   */
-  shiftStart: string;
-  /**
-   * ISO 8601 — shift end.
-   */
-  shiftEnd?: string | null;
-  /**
-   * Productive run time in minutes (drives wage).
-   */
-  runTimeMinutes?: number | null;
-  /**
-   * Good units produced this shift.
-   */
-  qtyProduced?: number | null;
-  /**
-   * Scrapped (NCR) units this shift.
-   */
-  qtyScrap?: number | null;
-  /**
-   * Labor pay rate per hour (defaults from the work-center `payPerHour`).
-   */
-  rate?: number | null;
-  /**
-   * Units run in parallel by one worker (machines-per-worker) — divides the wage.
-   */
-  parallelism?: number | null;
-  /**
-   * Derived = runTimeMinutes/60 · rate / parallelism. Do not edit.
-   */
-  wage?: number | null;
-  /**
-   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
-   */
-  wageCurrency?: string | null;
-  status?: ('open' | 'closed' | 'approved') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -10973,6 +11086,467 @@ export interface WipSnapshot {
    */
   periodEndAdjustment?: (string | null) | PeriodEndAdjustment;
   status?: ('draft' | 'reviewed' | 'posted' | 'reversed' | 'restated') | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The production order (funnel head). Fans into lot-variants and a lot-work-phases routing chain; its state is DERIVED from lifecycle watermarks on the horo ring (never stored).
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lots".
+ */
+export interface Lot {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Lot number — the production-order reference.
+   */
+  number?: string | null;
+  /**
+   * The sales order this lot fulfils (the demand source).
+   */
+  order?: (string | null) | SalesOrder;
+  /**
+   * The product produced (the catalog item).
+   */
+  product?: (string | null) | Item;
+  /**
+   * Product/programme code (e.g. `SHIMA_07`, `CONF_21`). Open text — 20 yrs of real codes.
+   */
+  kind?: string | null;
+  /**
+   * Lifecycle on the 1·2·4·8·7·5·9 ring: opened → confirmed → producing → finished → shipped → delivered → closed. DERIVED from watermarks (deriveLotState); off-ring = canceled.
+   */
+  status?: ('opened' | 'confirmed' | 'producing' | 'finished' | 'shipped' | 'delivered' | 'closed') | null;
+  /**
+   * Order accepted (band 2/share). 21.5% in etrima.
+   */
+  confirmedAt?: string | null;
+  /**
+   * Production began (band 4/weave).
+   */
+  startedAt?: string | null;
+  /**
+   * Production complete (band 8/crest).
+   */
+  finishedAt?: string | null;
+  /**
+   * Run sealed (band 9/unity). 89.3% in etrima — the dominant terminal.
+   */
+  closedAt?: string | null;
+  /**
+   * Canceled — the OFF-RING terminal (escape from the ring). 1.2% in etrima.
+   */
+  canceledAt?: string | null;
+  /**
+   * Why the run was canceled (paired with canceledAt).
+   */
+  cancelReason?: string | null;
+  /**
+   * Lot date.
+   */
+  date?: string | null;
+  /**
+   * Planned delivery date.
+   */
+  deliveryDate?: string | null;
+  /**
+   * Actual ship date.
+   */
+  shippedAt?: string | null;
+  /**
+   * Actual delivery date.
+   */
+  deliveredAt?: string | null;
+  /**
+   * Units ordered (the funnel head; ≥ units).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Lot total units — = Σ variant.units (the roll-up law, 100% in etrima).
+   */
+  units?: number | null;
+  /**
+   * Units produced (≤ units; = Σ variant.unitsProduced).
+   */
+  unitsProduced?: number | null;
+  /**
+   * Units packed (≤ produced).
+   */
+  unitsPacked?: number | null;
+  /**
+   * Units shipped (≤ packed) — drives band 7/descent.
+   */
+  unitsShipped?: number | null;
+  /**
+   * Units delivered (≤ shipped) — drives band 5/round.
+   */
+  unitsDelivered?: number | null;
+  /**
+   * Units invoiced (≤ delivered) — the funnel tail.
+   */
+  unitsInvoiced?: number | null;
+  /**
+   * ISO 4217 currency code — any valid code accepted (e.g. EUR, USD, BGN).
+   */
+  currency?: string | null;
+  /**
+   * Price per unit.
+   */
+  unitPrice?: number | null;
+  /**
+   * Cost per unit.
+   */
+  unitCost?: number | null;
+  /**
+   * Total amount invoiced.
+   */
+  amountInvoiced?: number | null;
+  /**
+   * Total amount paid.
+   */
+  amountPaid?: number | null;
+  /**
+   * Lot minutes ordered.
+   */
+  minutesOrdered?: number | null;
+  /**
+   * Lot minutes produced.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Lot minutes remaining to produce.
+   */
+  minutesToProduce?: number | null;
+  /**
+   * Net weight (grams).
+   */
+  netWeight?: number | null;
+  /**
+   * Gross weight (grams).
+   */
+  grossWeight?: number | null;
+  /**
+   * Billable weight (grams).
+   */
+  billableWeight?: number | null;
+  /**
+   * Number of lot-variants in this lot.
+   */
+  lotVariantsCount?: number | null;
+  /**
+   * Number of routing steps in this lot’s phase chain.
+   */
+  lotWorkPhasesCount?: number | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * A lot’s per-variant line with the size/colour option breakdown. The variant total is the sum of its options (100% data-verified); the funnel ordered→delivered is monotonic.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lot-variants".
+ */
+export interface LotVariant {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * The parent lot (the funnel head this variant rolls up into).
+   */
+  lot: string | Lot;
+  /**
+   * The product variant produced (the catalog item).
+   */
+  productVariant?: (string | null) | Item;
+  /**
+   * The current routing step this variant sits at (the coordinate cross to the chain).
+   */
+  workPhase?: (string | null) | LotWorkPhase;
+  /**
+   * Variant code.
+   */
+  code?: string | null;
+  /**
+   * Variant name.
+   */
+  name?: string | null;
+  /**
+   * Batch label (free-text grouping within the lot).
+   */
+  batch?: string | null;
+  /**
+   * Sub-variant ordinal.
+   */
+  subVariant?: number | null;
+  /**
+   * Size/colour option breakdown — the variant total is the SUM of these rows (units = Σ options[].units, 100% data-verified). Was 12 option_N_* column-families.
+   */
+  options?:
+    | {
+        /**
+         * Option units (a part of the variant total).
+         */
+        units?: number | null;
+        /**
+         * Option units produced.
+         */
+        produced?: number | null;
+        /**
+         * Option units packed.
+         */
+        packed?: number | null;
+        /**
+         * Option units shipped.
+         */
+        shipped?: number | null;
+        /**
+         * Option units delivered.
+         */
+        delivered?: number | null;
+        /**
+         * Option units ordered.
+         */
+        ordered?: number | null;
+        /**
+         * Per-unit weight for this option, in grams.
+         */
+        unitGrams?: number | null;
+        /**
+         * Option minutes ordered.
+         */
+        minutesOrdered?: number | null;
+        /**
+         * Option minutes produced.
+         */
+        minutesProduced?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Units ordered (the funnel head; ≥ units).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Variant total units — DERIVED = Σ options[].units (the roll-up law).
+   */
+  units?: number | null;
+  /**
+   * Units produced — DERIVED = Σ options[].produced (≤ units).
+   */
+  unitsProduced?: number | null;
+  /**
+   * Units packed (≤ unitsProduced).
+   */
+  unitsPacked?: number | null;
+  /**
+   * Units shipped (≤ unitsPacked).
+   */
+  unitsShipped?: number | null;
+  /**
+   * Units delivered (≤ unitsShipped — the funnel tail).
+   */
+  unitsDelivered?: number | null;
+  /**
+   * Variant minutes ordered.
+   */
+  minutesOrdered?: number | null;
+  /**
+   * Variant minutes produced.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Variant minutes remaining to produce.
+   */
+  minutesToProduce?: number | null;
+  /**
+   * Net weight (grams).
+   */
+  netWeight?: number | null;
+  /**
+   * Gross weight (grams).
+   */
+  grossWeight?: number | null;
+  /**
+   * Billable weight (grams) — the freight basis.
+   */
+  billableWeight?: number | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The routing step — one sort-ordered position in a lot’s phase chain, crossing to the work-phases catalog. Carries per-step time + unit counters; state is derived from watermarks.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lot-work-phases".
+ */
+export interface LotWorkPhase {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * The containing lot (the coordinate axis — a lot HOLDS its routing chain).
+   */
+  lot: string | Lot;
+  /**
+   * The catalog phase this step runs (the routing cross — resolves 100% in etrima). What kind of step this is.
+   */
+  workPhase: string | WorkPhase;
+  /**
+   * Position on the lot’s phase chain (the sequence axis — prev/next). Range 0..127 in etrima; reading sort order IS the route.
+   */
+  sort?: number | null;
+  /**
+   * The team / work-center that runs this step (the resource).
+   */
+  team?: (string | null) | WorkCenter;
+  /**
+   * Machine type for this step (overrides the catalog default; ISA-95 §B.4).
+   */
+  machineType?: string | null;
+  /**
+   * Step code (denormalized from the phase for display).
+   */
+  code?: string | null;
+  /**
+   * Step name (denormalized from the phase for display).
+   */
+  name?: string | null;
+  /**
+   * Units routed into this step (the funnel head for the step).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Units produced at this step (≤ unitsOrdered — 99.93% in etrima).
+   */
+  unitsProduced?: number | null;
+  /**
+   * Standard seconds per unit at this step (the time anchor).
+   */
+  seconds?: number | null;
+  /**
+   * Total minutes routed (standard time × units).
+   */
+  minutes?: number | null;
+  /**
+   * Minutes of verified production at this step.
+   */
+  minutesProduced?: number | null;
+  /**
+   * Minutes still to produce (minutes − minutesProduced).
+   */
+  minutesRemaining?: number | null;
+  /**
+   * Minutes backordered (overdue against schedule).
+   */
+  minutesBackordered?: number | null;
+  /**
+   * Realized efficiency % (ISO-22400-2; produced-time ÷ standard-time). Catalog min/max band the target.
+   */
+  efficiencyPercent?: number | null;
+  /**
+   * Step completion % — derived high-water (minutesProduced ÷ minutes). 0..100.
+   */
+  percentCompleted?: number | null;
+  /**
+   * Pay rate per hour for this step (allocation ladder; ~80% populated in etrima).
+   */
+  payPerHour?: number | null;
+  /**
+   * Charge-out price per minute (the revenue anchor for the step).
+   */
+  pricePerMinute?: number | null;
+  /**
+   * Number of lot-variants touching this step.
+   */
+  variantsCount?: number | null;
+  /**
+   * Number of batches at this step.
+   */
+  batchesCount?: number | null;
+  /**
+   * When work began (derived-state watermark).
+   */
+  startedAt?: string | null;
+  /**
+   * When the step completed (derived-state watermark).
+   */
+  completedAt?: string | null;
+  /**
+   * When the step was confirmed (derived-state watermark).
+   */
+  confirmedAt?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * Reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing). A self-referential tree; lotworkphases compose these.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-phases".
+ */
+export interface WorkPhase {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Work-phase code (e.g. `CONF_12`, `OCCHIELLI`).
+   */
+  code: string;
+  /**
+   * Work-phase name.
+   */
+  name: string;
+  /**
+   * Operation family — the shop-floor vocabulary (CONFEZIONE/sewing, TAGLIO/cutting, OCCHIELLI, RIFINITURA, RICAMO, TINTORIA, STIRO). Open text, not a closed enum (20 yrs of real names).
+   */
+  kind?: string | null;
+  /**
+   * Parent work-phase — the operation-type hierarchy (the coordinate axis). 20 329 roots ⊕ 21 525 children in etrima; acyclic.
+   */
+  parent?: (string | null) | WorkPhase;
+  /**
+   * Machine type the phase runs on (resource anchor; ISA-95 §B.4).
+   */
+  machineType?: string | null;
+  /**
+   * Work type (process classification within the family).
+   */
+  workType?: string | null;
+  /**
+   * Standard time per unit, in seconds (the rate anchor — pay = anchor × verified time; ISO-22400-2 standard-time).
+   */
+  workSeconds?: number | null;
+  /**
+   * Required skill level (allocation ladder input).
+   */
+  skillLevel?: number | null;
+  status?: ('active' | 'inactive') | null;
   createdBy?: (string | null) | User;
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
@@ -23003,30 +23577,43 @@ export interface WorkOrdersSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   reference?: T;
-  bom?: T;
-  finishedGood?: T;
-  plannedQuantity?: T;
-  completedQuantity?: T;
-  scrappedQuantity?: T;
-  releaseDate?: T;
-  dueDate?: T;
-  completedAt?: T;
-  demandSource?: T;
-  demandReference?: T;
-  targetWarehouse?: T;
-  standardCosts?:
+  date?: T;
+  options?:
     | T
     | {
-        standardMaterialCost?: T;
-        standardLabourCost?: T;
-        standardOverheadCost?: T;
-        standardTotalCost?: T;
+        label?: T;
+        ordered?: T;
+        produced?: T;
+        backordered?: T;
+        id?: T;
       };
-  status?: T;
+  unitsOrdered?: T;
+  unitsProduced?: T;
+  unitsBackordered?: T;
+  unitSeconds?: T;
+  machinesPerWorker?: T;
+  payPerHour?: T;
+  efficiencyPercent?: T;
+  startedAt?: T;
+  completedAt?: T;
+  deliveredAt?: T;
+  closedAt?: T;
+  estimatedAt?: T;
+  lotVariantCode?: T;
+  lotWorkPhaseCode?: T;
+  lotWorkPhaseSort?: T;
+  machineCode?: T;
+  teamCode?: T;
+  workShift?: T;
+  worker?: T;
+  supervisor?: T;
+  director?: T;
+  forwardedFrom?: T;
+  forwardedTo?: T;
+  note?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
-  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23232,23 +23819,32 @@ export interface WorkShiftsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   reference?: T;
-  worker?: T;
-  workCenter?: T;
-  workOrder?: T;
-  shiftStart?: T;
-  shiftEnd?: T;
-  runTimeMinutes?: T;
-  qtyProduced?: T;
-  qtyScrap?: T;
-  rate?: T;
-  parallelism?: T;
-  wage?: T;
-  wageCurrency?: T;
+  actor?: T;
+  date?: T;
+  team?: T;
+  director?: T;
+  supervisor?: T;
   status?: T;
+  startedAt?: T;
+  finishedAt?: T;
+  closedAt?: T;
+  presenceMinutes?: T;
+  shiftMinutes?: T;
+  payPerHour?: T;
+  orderWage?: T;
+  minutesOrdered?: T;
+  minutesProduced?: T;
+  minutesBackordered?: T;
+  efficiencyPercent?: T;
+  wage?: T;
+  productsCount?: T;
+  lotsCount?: T;
+  variantsCount?: T;
+  phasesCount?: T;
+  unitsCount?: T;
   createdBy?: T;
   approvedBy?: T;
   approvedAt?: T;
-  notes?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -23419,6 +24015,158 @@ export interface WipSnapshotsSelect<T extends boolean = true> {
   unbilledOrDeferred?: T;
   estimatedLossProvision?: T;
   periodEndAdjustment?: T;
+  status?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lots_select".
+ */
+export interface LotsSelect<T extends boolean = true> {
+  uuid?: T;
+  number?: T;
+  order?: T;
+  product?: T;
+  kind?: T;
+  status?: T;
+  confirmedAt?: T;
+  startedAt?: T;
+  finishedAt?: T;
+  closedAt?: T;
+  canceledAt?: T;
+  cancelReason?: T;
+  date?: T;
+  deliveryDate?: T;
+  shippedAt?: T;
+  deliveredAt?: T;
+  unitsOrdered?: T;
+  units?: T;
+  unitsProduced?: T;
+  unitsPacked?: T;
+  unitsShipped?: T;
+  unitsDelivered?: T;
+  unitsInvoiced?: T;
+  currency?: T;
+  unitPrice?: T;
+  unitCost?: T;
+  amountInvoiced?: T;
+  amountPaid?: T;
+  minutesOrdered?: T;
+  minutesProduced?: T;
+  minutesToProduce?: T;
+  netWeight?: T;
+  grossWeight?: T;
+  billableWeight?: T;
+  lotVariantsCount?: T;
+  lotWorkPhasesCount?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lot-variants_select".
+ */
+export interface LotVariantsSelect<T extends boolean = true> {
+  uuid?: T;
+  lot?: T;
+  productVariant?: T;
+  workPhase?: T;
+  code?: T;
+  name?: T;
+  batch?: T;
+  subVariant?: T;
+  options?:
+    | T
+    | {
+        units?: T;
+        produced?: T;
+        packed?: T;
+        shipped?: T;
+        delivered?: T;
+        ordered?: T;
+        unitGrams?: T;
+        minutesOrdered?: T;
+        minutesProduced?: T;
+        id?: T;
+      };
+  unitsOrdered?: T;
+  units?: T;
+  unitsProduced?: T;
+  unitsPacked?: T;
+  unitsShipped?: T;
+  unitsDelivered?: T;
+  minutesOrdered?: T;
+  minutesProduced?: T;
+  minutesToProduce?: T;
+  netWeight?: T;
+  grossWeight?: T;
+  billableWeight?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "lot-work-phases_select".
+ */
+export interface LotWorkPhasesSelect<T extends boolean = true> {
+  uuid?: T;
+  lot?: T;
+  workPhase?: T;
+  sort?: T;
+  team?: T;
+  machineType?: T;
+  code?: T;
+  name?: T;
+  unitsOrdered?: T;
+  unitsProduced?: T;
+  seconds?: T;
+  minutes?: T;
+  minutesProduced?: T;
+  minutesRemaining?: T;
+  minutesBackordered?: T;
+  efficiencyPercent?: T;
+  percentCompleted?: T;
+  payPerHour?: T;
+  pricePerMinute?: T;
+  variantsCount?: T;
+  batchesCount?: T;
+  startedAt?: T;
+  completedAt?: T;
+  confirmedAt?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "work-phases_select".
+ */
+export interface WorkPhasesSelect<T extends boolean = true> {
+  uuid?: T;
+  code?: T;
+  name?: T;
+  kind?: T;
+  parent?: T;
+  machineType?: T;
+  workType?: T;
+  workSeconds?: T;
+  skillLevel?: T;
   status?: T;
   createdBy?: T;
   approvedBy?: T;
@@ -27740,6 +28488,10 @@ export interface TaskCreateCollectionExport {
       | 'production-receipts'
       | 'quality-inspections'
       | 'wip-snapshots'
+      | 'lots'
+      | 'lot-variants'
+      | 'lot-work-phases'
+      | 'work-phases'
       | 'tags'
       | 'taggings'
       | 'properties'

@@ -8821,55 +8821,97 @@
         "reference": {
           "localized": false
         },
-        "bom": {
+        "date": {
           "localized": false
         },
-        "finishedGood": {
+        "options": {
           "localized": false
         },
-        "plannedQuantity": {
+        "options.label": {
           "localized": false
         },
-        "completedQuantity": {
+        "options.ordered": {
           "localized": false
         },
-        "scrappedQuantity": {
+        "options.produced": {
           "localized": false
         },
-        "releaseDate": {
+        "options.backordered": {
           "localized": false
         },
-        "dueDate": {
+        "options.id": {
+          "localized": false
+        },
+        "unitsOrdered": {
+          "localized": false
+        },
+        "unitsProduced": {
+          "localized": false
+        },
+        "unitsBackordered": {
+          "localized": false
+        },
+        "unitSeconds": {
+          "localized": false
+        },
+        "machinesPerWorker": {
+          "localized": false
+        },
+        "payPerHour": {
+          "localized": false
+        },
+        "efficiencyPercent": {
+          "localized": false
+        },
+        "startedAt": {
           "localized": false
         },
         "completedAt": {
           "localized": false
         },
-        "demandSource": {
+        "deliveredAt": {
           "localized": false
         },
-        "demandReference": {
+        "closedAt": {
           "localized": false
         },
-        "targetWarehouse": {
+        "estimatedAt": {
           "localized": false
         },
-        "standardCosts": {
+        "lotVariantCode": {
           "localized": false
         },
-        "standardCosts.standardMaterialCost": {
+        "lotWorkPhaseCode": {
           "localized": false
         },
-        "standardCosts.standardLabourCost": {
+        "lotWorkPhaseSort": {
           "localized": false
         },
-        "standardCosts.standardOverheadCost": {
+        "machineCode": {
           "localized": false
         },
-        "standardCosts.standardTotalCost": {
+        "teamCode": {
           "localized": false
         },
-        "status": {
+        "workShift": {
+          "localized": false
+        },
+        "worker": {
+          "localized": false
+        },
+        "supervisor": {
+          "localized": false
+        },
+        "director": {
+          "localized": false
+        },
+        "forwardedFrom": {
+          "localized": false
+        },
+        "forwardedTo": {
+          "localized": false
+        },
+        "note": {
           "localized": false
         },
         "createdBy": {
@@ -8879,9 +8921,6 @@
           "localized": false
         },
         "approvedAt": {
-          "localized": false
-        },
-        "notes": {
           "localized": false
         },
         "updatedAt": {
@@ -9394,43 +9433,73 @@
         "reference": {
           "localized": false
         },
-        "worker": {
+        "actor": {
           "localized": false
         },
-        "workCenter": {
+        "date": {
           "localized": false
         },
-        "workOrder": {
+        "team": {
           "localized": false
         },
-        "shiftStart": {
+        "director": {
           "localized": false
         },
-        "shiftEnd": {
+        "supervisor": {
           "localized": false
         },
-        "runTimeMinutes": {
+        "status": {
           "localized": false
         },
-        "qtyProduced": {
+        "startedAt": {
           "localized": false
         },
-        "qtyScrap": {
+        "finishedAt": {
           "localized": false
         },
-        "rate": {
+        "closedAt": {
           "localized": false
         },
-        "parallelism": {
+        "presenceMinutes": {
+          "localized": false
+        },
+        "shiftMinutes": {
+          "localized": false
+        },
+        "payPerHour": {
+          "localized": false
+        },
+        "orderWage": {
+          "localized": false
+        },
+        "minutesOrdered": {
+          "localized": false
+        },
+        "minutesProduced": {
+          "localized": false
+        },
+        "minutesBackordered": {
+          "localized": false
+        },
+        "efficiencyPercent": {
           "localized": false
         },
         "wage": {
           "localized": false
         },
-        "wageCurrency": {
+        "productsCount": {
           "localized": false
         },
-        "status": {
+        "lotsCount": {
+          "localized": false
+        },
+        "variantsCount": {
+          "localized": false
+        },
+        "phasesCount": {
+          "localized": false
+        },
+        "unitsCount": {
           "localized": false
         },
         "createdBy": {
@@ -9440,9 +9509,6 @@
           "localized": false
         },
         "approvedAt": {
-          "localized": false
-        },
-        "notes": {
           "localized": false
         },
         "updatedAt": {
@@ -9875,6 +9941,413 @@
           "localized": false
         },
         "periodEndAdjustment": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
+    "lots": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "number": {
+          "localized": false
+        },
+        "order": {
+          "localized": false
+        },
+        "product": {
+          "localized": false
+        },
+        "kind": {
+          "localized": false
+        },
+        "status": {
+          "localized": false
+        },
+        "confirmedAt": {
+          "localized": false
+        },
+        "startedAt": {
+          "localized": false
+        },
+        "finishedAt": {
+          "localized": false
+        },
+        "closedAt": {
+          "localized": false
+        },
+        "canceledAt": {
+          "localized": false
+        },
+        "cancelReason": {
+          "localized": false
+        },
+        "date": {
+          "localized": false
+        },
+        "deliveryDate": {
+          "localized": false
+        },
+        "shippedAt": {
+          "localized": false
+        },
+        "deliveredAt": {
+          "localized": false
+        },
+        "unitsOrdered": {
+          "localized": false
+        },
+        "units": {
+          "localized": false
+        },
+        "unitsProduced": {
+          "localized": false
+        },
+        "unitsPacked": {
+          "localized": false
+        },
+        "unitsShipped": {
+          "localized": false
+        },
+        "unitsDelivered": {
+          "localized": false
+        },
+        "unitsInvoiced": {
+          "localized": false
+        },
+        "currency": {
+          "localized": false
+        },
+        "unitPrice": {
+          "localized": false
+        },
+        "unitCost": {
+          "localized": false
+        },
+        "amountInvoiced": {
+          "localized": false
+        },
+        "amountPaid": {
+          "localized": false
+        },
+        "minutesOrdered": {
+          "localized": false
+        },
+        "minutesProduced": {
+          "localized": false
+        },
+        "minutesToProduce": {
+          "localized": false
+        },
+        "netWeight": {
+          "localized": false
+        },
+        "grossWeight": {
+          "localized": false
+        },
+        "billableWeight": {
+          "localized": false
+        },
+        "lotVariantsCount": {
+          "localized": false
+        },
+        "lotWorkPhasesCount": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
+    "lot-variants": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "lot": {
+          "localized": false
+        },
+        "productVariant": {
+          "localized": false
+        },
+        "workPhase": {
+          "localized": false
+        },
+        "code": {
+          "localized": false
+        },
+        "name": {
+          "localized": false
+        },
+        "batch": {
+          "localized": false
+        },
+        "subVariant": {
+          "localized": false
+        },
+        "options": {
+          "localized": false
+        },
+        "options.units": {
+          "localized": false
+        },
+        "options.produced": {
+          "localized": false
+        },
+        "options.packed": {
+          "localized": false
+        },
+        "options.shipped": {
+          "localized": false
+        },
+        "options.delivered": {
+          "localized": false
+        },
+        "options.ordered": {
+          "localized": false
+        },
+        "options.unitGrams": {
+          "localized": false
+        },
+        "options.minutesOrdered": {
+          "localized": false
+        },
+        "options.minutesProduced": {
+          "localized": false
+        },
+        "options.id": {
+          "localized": false
+        },
+        "unitsOrdered": {
+          "localized": false
+        },
+        "units": {
+          "localized": false
+        },
+        "unitsProduced": {
+          "localized": false
+        },
+        "unitsPacked": {
+          "localized": false
+        },
+        "unitsShipped": {
+          "localized": false
+        },
+        "unitsDelivered": {
+          "localized": false
+        },
+        "minutesOrdered": {
+          "localized": false
+        },
+        "minutesProduced": {
+          "localized": false
+        },
+        "minutesToProduce": {
+          "localized": false
+        },
+        "netWeight": {
+          "localized": false
+        },
+        "grossWeight": {
+          "localized": false
+        },
+        "billableWeight": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
+    "lot-work-phases": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "lot": {
+          "localized": false
+        },
+        "workPhase": {
+          "localized": false
+        },
+        "sort": {
+          "localized": false
+        },
+        "team": {
+          "localized": false
+        },
+        "machineType": {
+          "localized": false
+        },
+        "code": {
+          "localized": false
+        },
+        "name": {
+          "localized": false
+        },
+        "unitsOrdered": {
+          "localized": false
+        },
+        "unitsProduced": {
+          "localized": false
+        },
+        "seconds": {
+          "localized": false
+        },
+        "minutes": {
+          "localized": false
+        },
+        "minutesProduced": {
+          "localized": false
+        },
+        "minutesRemaining": {
+          "localized": false
+        },
+        "minutesBackordered": {
+          "localized": false
+        },
+        "efficiencyPercent": {
+          "localized": false
+        },
+        "percentCompleted": {
+          "localized": false
+        },
+        "payPerHour": {
+          "localized": false
+        },
+        "pricePerMinute": {
+          "localized": false
+        },
+        "variantsCount": {
+          "localized": false
+        },
+        "batchesCount": {
+          "localized": false
+        },
+        "startedAt": {
+          "localized": false
+        },
+        "completedAt": {
+          "localized": false
+        },
+        "confirmedAt": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "notes": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
+    "work-phases": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "code": {
+          "localized": false
+        },
+        "name": {
+          "localized": false
+        },
+        "kind": {
+          "localized": false
+        },
+        "parent": {
+          "localized": false
+        },
+        "machineType": {
+          "localized": false
+        },
+        "workType": {
+          "localized": false
+        },
+        "workSeconds": {
+          "localized": false
+        },
+        "skillLevel": {
           "localized": false
         },
         "status": {

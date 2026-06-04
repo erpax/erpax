@@ -16,7 +16,7 @@ import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join, basename, dirname, relative } from 'node:path'
 
 const norm = (s) => String(s).toLowerCase().replace(/[-_]/g, '')
-const OUT = 'src/services/agents/mcp/atom-catalogue.generated.ts'
+const OUT = 'src/agents/mcp/atom-catalogue.generated.ts'
 
 function walk(dir, out = []) {
   let entries

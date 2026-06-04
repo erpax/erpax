@@ -159,7 +159,10 @@ export { default as Activities } from '@/activities'
 export { default as Projects } from '@/customers/projects'
 export { default as ProjectTasks } from '@/customers/projects/project/tasks'
 export { default as ProjectMilestones } from '@/customers/projects/project/milestones'
-export { default as WorkOrders } from '@/items/bills/of/materials/work/orders'
+// Work orders — the etrima execution leaf (2.05M rows; `units = Σ(options)` double-entry,
+// derived horo lifecycle, the forward! conveyor, piece-rate wage). Supersedes the former
+// 2-field idealized MRP stub; carries the canonical slug `work-orders`.
+export { default as WorkOrders } from '@/workorders'
 export { default as WorkflowDefinitions } from '@/workflow/definitions'
 export { default as WorkflowInstances } from '@/workflow/definitions/workflow/instances'
 
@@ -170,10 +173,19 @@ export { default as ProductionReceipts } from '@/items/bills/of/materials/work/o
 export { default as QualityInspections } from '@/items/quality/inspections'
 export { default as WipSnapshots } from '@/customers/projects/wip/snapshots'
 export { default as WorkCenters } from '@/work/centers'
-export { default as WorkShifts } from '@/employees/work/shifts'
+// Work shifts — the etrima per-actor-day labour aggregate (376K rows; the efficiency + wage
+// AUTHORITY: wage = Σ(produced·unitSeconds·payPerHour/3600/mpw), verified €4.68M). Supersedes
+// the former idealized per-order stub; carries the canonical slug `work-shifts`.
+export { default as WorkShifts } from '@/workshifts'
 export { default as Operations } from '@/work/centers/operations'
 export { default as Routings } from '@/items/bills/of/materials/work/orders/routings'
 export { default as OperationRuns } from '@/items/bills/of/materials/work/orders/operation/runs'
+
+// Manufacturing — the lot funnel (production order → variant roll-up → routing chain → phase catalog)
+export { default as Lots } from '@/lots'
+export { default as LotVariants } from '@/lotvariants'
+export { default as LotWorkPhases } from '@/lotworkphases'
+export { default as WorkPhases } from '@/workphases'
 
 // Tagging system (anything is taggable — less collections, more features)
 export { default as Tags } from '@/tags'

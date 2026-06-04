@@ -165,6 +165,10 @@ const {
   Operations,
   Routings,
   OperationRuns,
+  Lots,
+  LotVariants,
+  LotWorkPhases,
+  WorkPhases,
   QualityInspections,
   WipSnapshots,
   Properties,
@@ -622,7 +626,7 @@ export default buildConfig({
     WorkOrders,
     WorkflowDefinitions,
     WorkflowInstances,
-    // Manufacturing (10)
+    // Manufacturing (14)
     BillsOfMaterials,
     Batches,
     WorkCenters,
@@ -633,6 +637,11 @@ export default buildConfig({
     ProductionReceipts,
     QualityInspections,
     WipSnapshots,
+    // The etrima lot funnel (production lot → variant roll-up → routing chain → phase catalog)
+    Lots,
+    LotVariants,
+    LotWorkPhases,
+    WorkPhases,
     // Tagging system (anything is taggable — less collections, more features)
     Tags,
     Taggings,

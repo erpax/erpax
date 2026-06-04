@@ -27,7 +27,7 @@ import { homedir } from 'node:os'
 import { createHash } from 'node:crypto'
 
 const ROOT = join(homedir(), 'Library', 'Application Support', 'Claude', 'local-agent-mode-sessions')
-const OUT = 'src/services/skill-router/installed.catalogue.ts'
+const OUT = 'src/skill/router/installed.catalogue.ts'
 const MAX_DEPTH = 8 // the manifests sit a few levels under session uuids; bound the walk
 
 /** Deterministic v5-style uuid from content — identical to src/services/skill-router/build-index.mjs. */
