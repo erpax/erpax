@@ -12,7 +12,7 @@ area × yield  = output        (forward: land → produce)
 output ÷ yield = area         (inverse: demand → land)
 ```
 
-[[agriculture]]'s whole backward plan hangs off the inverse: a demanded quantity of [[crop]] units, divided by yield, *is* the land to plant. It is carried at three resolutions because decisions happen at different scales — **per area** (the field benchmark, comparable to extension tables), **per row-length**, and **per bed-length** (`= per-row × rows-per-bed`). The bed/row **geometry** sets it: `row-length per area = area ÷ (bed-plus-path centre spacing)` (e.g. 43 560 ft² ÷ a 5-ft bed footprint = 8 712 bed-ft/acre), and `plant density = rows-per-bed ÷ within-row-spacing` — so ignoring the **path** overstates capacity ~40 %, and tighter spacing does **not** scale yield linearly (plants compete; total plateaus, then falls).
+[[agriculture]]'s whole backward plan hangs off the inverse: a demanded quantity of [[crop]] units, divided by yield, *is* the land to plant. It is carried at three resolutions because decisions happen at different scales — **per area** (the field benchmark, comparable to extension tables), **per row-length**, and **per bed-length** (`= per-row × rows-per-bed`). The bed/row **geometry** sets it: `row-length per area = area ÷ (bed-plus-path centre spacing)` (e.g. 43 560 ft² ÷ a 5-ft bed footprint = 8 712 bed-ft/acre), and `plant density = rows-per-bed ÷ within-row-[[spacing]]` — so ignoring the **path** overstates capacity ~40 %, and tighter [[spacing]] does **not** scale yield linearly (plants compete; total plateaus, then falls).
 
 **The yield ratio** is yield inverted through the [[crop]]'s **unit weight**: `row-length per unit = unit-weight ÷ yield-per-length` — how much bed must be planted to make one saleable unit. This single number converts a [[share]]/[[market]] demand plan into a planting plan (then into seed via the seed-rate, transplants via density). Its economic twin is **revenue per bed-foot** ([[revenue]] ÷ length) — the basis for ranking [[crop]]s.
 
@@ -29,4 +29,4 @@ Yield generalizes beyond the field — output per unit of any bound resource is 
 - Dividing area by the bare bed width, ignoring the path — overstates row-length and plant counts ~30–40 %.
 - Planning on gross field yield, not **marketable** yield — culls and grade-outs can be ~50 %; under-plants the demand.
 
-Composes [[agriculture]] · [[crop]] · [[measure]] · [[rate]] · [[conversion]] · [[capacity]] · [[throughput]] · [[bottleneck]] · [[revenue]] · [[harvest]] · [[fertility]].
+Composes [[agriculture]] · [[crop]] · [[measure]] · [[rate]] · [[conversion]] · [[spacing]] · [[grade]] · [[soil]] · [[capacity]] · [[throughput]] · [[bottleneck]] · [[revenue]] · [[harvest]] · [[fertility]].

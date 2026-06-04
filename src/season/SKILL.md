@@ -5,13 +5,13 @@ description: "Use when output is bounded by a recurring climate window in the an
 
 # season — the recurring climate window that bounds growth
 
-A **season** is a recurring, climate-bounded window in the annual cycle during which a [[crop]] can grow and be harvested — the **time-axis [[bottleneck]]** of [[agriculture]] (land × season is the binding [[capacity]]). Its outer bound is the **frost-free period**: the days between the last spring frost and the first fall frost. Frost dates are **probabilistic, not fixed** — derived per weather station at a confidence level — so the relevant date is the *local* one; a copied or state-average calendar misfires.
+A **season** is a recurring, climate-bounded window in the annual cycle during which a [[crop]] can grow and be harvested — the **time-axis [[bottleneck]]** of [[agriculture]] (land × season is the binding [[capacity]]). Its outer bound is the **[[frost|frost-free period]]**: the days between the last spring frost and the first fall frost. Frost dates are **probabilistic, not fixed** — derived per weather station at a confidence level — so the relevant date is the *local* one; a copied or state-average calendar misfires.
 
 The season splits crops two ways, and a week-of-year × crop matrix makes the split visible as **harvest waves**:
 - **cool-season** (greens, roots, brassicas, peas) — tolerate frost, run two cycles (a **spring** and a **fall** wave);
 - **warm-season** (tomato, corn, cucumber, melon, pepper) — planted only after last frost, one **summer** wave.
 
-**Heat, not the calendar, drives maturity.** Crops accumulate development by **growing degree days** — `GDD = (Tmax + Tmin)/2 − Tbase`, with a base near 10 °C for warm-season crops and a cap near 30 °C. A warm spring advances the first [[harvest]] week; a cool one delays it — which is why a fixed-week calendar **drifts** year to year and is only ever a *projection*. **Season extension** (row cover, high tunnel, greenhouse) widens the window weeks at each end.
+**Heat, not the calendar, drives maturity.** Crops accumulate development by **[[degreeday|growing degree days]]** — `GDD = (Tmax + Tmin)/2 − Tbase`, with a base near 10 °C for warm-season crops and a cap near 30 °C. A warm spring advances the first [[harvest]] week; a cool one delays it — which is why a fixed-week calendar **drifts** year to year and is only ever a *projection*. **Season extension** ([[tunnel|row cover, high tunnel, greenhouse]]) widens the window weeks at each end, the structural complement to a crop's biological [[hardiness]].
 
 As a cyclical ring keyed to the year, the season is a [[horo]]-style band over the accounting [[period]] / [[time]] axis — the same recurrence law, climate-phased rather than fiscal. It is what [[planting]] staggers against and what every [[crop]]'s harvest window is cut from.
 
@@ -26,4 +26,4 @@ As a cyclical ring keyed to the year, the season is a [[horo]]-style band over t
 - Treating a regional calendar as universal — frost dates and windows are station-specific.
 - Forgetting season extension — row cover/tunnel adds weeks the bare frost-free period understates.
 
-Composes [[agriculture]] · [[crop]] · [[harvest]] · [[planting]] · [[bottleneck]] · [[capacity]] · [[period]] · [[time]] · [[horo]] · [[schedule]].
+Composes [[agriculture]] · [[crop]] · [[harvest]] · [[planting]] · [[frost]] · [[degreeday]] · [[tunnel]] · [[hardiness]] · [[bottleneck]] · [[capacity]] · [[period]] · [[time]] · [[horo]] · [[schedule]].
