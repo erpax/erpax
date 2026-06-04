@@ -298,6 +298,42 @@ export async function auditChainAppend(
   return res
 }
 
+// ─── Counter DO mediator — the realtime power accumulator ───────────
+//
+// Purpose `counter` (→ ERPAX_DO, legacy TENANT_QUOTA). A race-free
+// per-tenant accumulator: the realtime client heartbeat (services/power)
+// increments a counter per (tenant, feature, period); the accumulated
+// usage IS the entropy that drives the proof-of-power. `scopedKey` (e.g.
+// `feature/invoices`) is tenant-namespaced, so the unified DO instance
+// name becomes `counter:t:<tenant>/<scopedKey>`. Same shape as
+// auditChainAppend — authorize, audit, graceful 0 when unbound.
+
+/** Increment the tenant-scoped counter; returns the new count, or 0 when unbound. */
+export async function counterIncrement(ctx: MediatorContext, scopedKey: string, by = 1): Promise<number> {
+  const target = pickDoNamespace(ctx.env, 'counter', nsKey(ctx.tenantId, scopedKey))
+  if (!target) return 0
+  await ctx.authorize?.({ binding: 'TENANT_QUOTA', action: 'incr', tenantId: ctx.tenantId, user: ctx.user })
+  const id = target.ns.idFromName(target.name)
+  const stub = target.ns.get(id)
+  const res = await stub.fetch(new Request('https://do/counter/incr', { method: 'POST', body: String(by) }))
+  await auditBindingCall(ctx, 'TENANT_QUOTA', 'incr', { key: scopedKey, by })
+  const value = res.ok ? Number(await res.text()) : 0
+  return Number.isFinite(value) ? value : 0
+}
+
+/** Read the current tenant-scoped counter value (0 when unbound). */
+export async function counterGet(ctx: MediatorContext, scopedKey: string): Promise<number> {
+  const target = pickDoNamespace(ctx.env, 'counter', nsKey(ctx.tenantId, scopedKey))
+  if (!target) return 0
+  await ctx.authorize?.({ binding: 'TENANT_QUOTA', action: 'get', tenantId: ctx.tenantId, user: ctx.user })
+  const id = target.ns.idFromName(target.name)
+  const stub = target.ns.get(id)
+  const res = await stub.fetch(new Request('https://do/counter/get'))
+  await auditBindingCall(ctx, 'TENANT_QUOTA', 'get', { key: scopedKey })
+  const value = res.ok ? Number(await res.text()) : 0
+  return Number.isFinite(value) ? value : 0
+}
+
 // ─── Slice TTTTTTTT (2026-05-11) — uuid-linked DO leaves ─────────────
 //
 // Per user "using durable objects linked using uuid would prevent
@@ -583,6 +619,9 @@ export function makeMediator(ctx: MediatorContext): {
   auditChainAppendLinked: (payload: Record<string, unknown>) => Promise<UuidLinkedLeaf | null>
   /** Slice TTTTTTTT — verify the full chain or a sub-range. */
   auditChainVerify: (opts?: { fromSeq?: number; toSeq?: number }) => Promise<ChainVerifyResult>
+  /** Counter DO — the race-free realtime power accumulator (services/power). */
+  counterIncrement: (scopedKey: string, by?: number) => Promise<number>
+  counterGet: (scopedKey: string) => Promise<number>
   /** Slice YYYYYYYY — remaining CF bindings. */
   vectorizeQuery: (args: { vector: number[]; topK?: number; filter?: Record<string, unknown> }) => Promise<Array<{ id: string; score: number; metadata?: Record<string, unknown> }>>
   vectorizeInsert: (vectors: Array<{ id: string; values: number[]; metadata?: Record<string, unknown> }>) => Promise<void>
@@ -617,6 +656,8 @@ export function makeMediator(ctx: MediatorContext): {
     auditChainAppend: (leafBytes) => auditChainAppend(ctx, leafBytes),
     auditChainAppendLinked: (payload) => auditChainAppendLinked(ctx, payload),
     auditChainVerify: (opts) => auditChainVerify(ctx, opts),
+    counterIncrement: (scopedKey, by) => counterIncrement(ctx, scopedKey, by),
+    counterGet: (scopedKey) => counterGet(ctx, scopedKey),
     vectorizeQuery: (args) => vectorizeQuery(ctx, args),
     vectorizeInsert: (vectors) => vectorizeInsert(ctx, vectors),
     queueSendNamed: (queueName, event) => queueSendNamed(ctx, queueName, event),
