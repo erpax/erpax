@@ -175,4 +175,13 @@ export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
   { id: 'Codex-Alimentarius', family: 'un', title: 'Codex Alimentarius (FAO/WHO food standards)', match: 'codex' },
   { id: 'USDA-AMS-Grade', family: 'other', title: 'USDA AMS fresh-produce grade standards (US No. 1 / Fancy)', match: 'USDA.?AMS|US.?grade.?standard' },
   { id: 'USDA-Hardiness-Zones', family: 'other', title: 'USDA Plant Hardiness Zone Map', match: 'hardiness.?zone|plant.?hardiness' },
+
+  // — long-tail: standards already @standard-cited in code but unregistered —
+  { id: 'IAS-41', family: 'ifrs', title: 'Agriculture (biological assets)', match: 'IAS[- ]?41' },
+  { id: 'IFRS-3', family: 'ifrs', title: 'Business Combinations', match: 'IFRS[- ]?3\\b' },
+  { id: 'IFRS-2', family: 'ifrs', title: 'Share-based Payment', match: 'IFRS[- ]?2\\b' },
+  { id: 'IFRS-5', family: 'ifrs', title: 'Non-current Assets Held for Sale & Discontinued Operations', match: 'IFRS[- ]?5\\b' },
+  { id: 'IFRS-6', family: 'ifrs', title: 'Exploration for & Evaluation of Mineral Resources', match: 'IFRS[- ]?6\\b' },
+  { id: 'PSD2', family: 'eu', title: 'EU Payment Services Directive 2 (2015/2366)', match: 'PSD2|PSD-2|payment.?services.?directive' },
+  { id: 'PCI-DSS', family: 'other', title: 'Payment Card Industry Data Security Standard', match: 'PCI-?DSS' },
 ] as const

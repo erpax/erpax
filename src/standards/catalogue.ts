@@ -354,6 +354,28 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "PSD2",
+    "family": "eu",
+    "title": "EU Payment Services Directive 2 (2015/2366)",
+    "uuid": "f98c2c28-565b-8606-8790-99e38c367638",
+    "color": "hsl(164 64% 54%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/country/api/client/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/country/client/berlin-group-psd2.ts",
+        "section": ""
+      },
+      {
+        "path": "src/tenant/roles/profile/payment-provider.profile.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "ESCO",
     "family": "eu",
     "title": "European Skills/Competences/Occupations",
@@ -1025,6 +1047,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "IAS-41",
+    "family": "ifrs",
+    "title": "Agriculture (biological assets)",
+    "uuid": "cfe6e453-9f1c-8663-b860-7f6ebb5569ac",
+    "color": "hsl(302 73% 49%)",
+    "count": 7,
+    "modules": [
+      {
+        "path": "src/agriculture/accountable.ts",
+        "section": "§13"
+      },
+      {
+        "path": "src/biological/assets/index.ts",
+        "section": "§10"
+      }
+    ]
+  },
+  {
     "id": "IAS-40",
     "family": "ifrs",
     "title": "Investment Property",
@@ -1083,6 +1123,66 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/validate/multi/currency/closing/index.ts",
         "section": ""
+      }
+    ]
+  },
+  {
+    "id": "IFRS-3",
+    "family": "ifrs",
+    "title": "Business Combinations",
+    "uuid": "4972186d-f1d2-8a42-8584-f6b6a1e837c2",
+    "color": "hsl(82 79% 51%)",
+    "count": 5,
+    "modules": [
+      {
+        "path": "src/intercompany/reconciliation/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/legal/entities/business/combinations/index.ts",
+        "section": "§10-§13"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-6",
+    "family": "ifrs",
+    "title": "Exploration for & Evaluation of Mineral Resources",
+    "uuid": "8c4848f2-ea59-8b0f-b1d7-99edeea8b74c",
+    "color": "hsl(272 57% 40%)",
+    "count": 5,
+    "modules": [
+      {
+        "path": "src/mineral/resource/assets/index.ts",
+        "section": "§3"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-2",
+    "family": "ifrs",
+    "title": "Share-based Payment",
+    "uuid": "ec2f6c2e-cb86-8e73-be6c-e00e3475f8c1",
+    "color": "hsl(343 58% 60%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/employees/share/based/payments/index.ts",
+        "section": "§10-§13"
+      }
+    ]
+  },
+  {
+    "id": "IFRS-5",
+    "family": "ifrs",
+    "title": "Non-current Assets Held for Sale & Discontinued Operations",
+    "uuid": "104dd55f-31b2-8286-bd3c-8075d44da9e4",
+    "color": "hsl(213 58% 61%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/held/for/sale/classifications/index.ts",
+        "section": "§6-§9"
       }
     ]
   },
@@ -3732,6 +3832,20 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "PCI-DSS",
+    "family": "other",
+    "title": "Payment Card Industry Data Security Standard",
+    "uuid": "f5fe4927-b30b-8ff0-bc59-7efa4c7bccee",
+    "color": "hsl(334 58% 53%)",
+    "count": 3,
+    "modules": [
+      {
+        "path": "src/billing/stripeWebhookHandlers.ts",
+        "section": "§3"
+      }
+    ]
+  },
+  {
     "id": "Demeter-Biodynamic",
     "family": "other",
     "title": "Demeter International Biodynamic standard",
@@ -5725,4 +5839,4 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
   }
 ] as const
 
-export const STANDARDS_COUNT = 118
+export const STANDARDS_COUNT = 125
