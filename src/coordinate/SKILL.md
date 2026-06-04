@@ -21,4 +21,13 @@ The cross makes each atom a **3-connected** node (tree + bidirectional sequence 
 
 Strictly stronger than a 2-thing content⊕path bind or a linear chain: the placement, the containment, AND the order are all load-bearing proof. Honest limit: structure is public, so this is tamper-**evidence**, not secrecy — the akashic win (detect-not-prevent, [[design-limits]]). A move-migration is a legitimate **root transition** (old root → new).
 
-Matter-twin: `[[uuid]]/matrix/collide.mjs` computes parent/prev/next per node, crosses them, and folds `bind` to the root. Composes [[identity]] · [[sequence]] · [[horo]] · [[coil]] · [[proof]] · [[merge]].
+## The cross IS references + hooks — locality · balance · the naming matrix
+The surrounding folders are not abstract uuids — they ARE the atom's **[[reference]]s** (parent = containment, prev/next = sequence links — "logic meets in db") and its **[[hooks]]** (how change propagates to neighbours — "lives through hooks"). So **a folder communicates only through its cross — it cannot bypass a neighbour to reach a distant folder**; data and events route through the structure. A direct link to a non-neighbour is a locality violation (junk).
+
+**At least 2 crosses per folder, or it is unbalanced** — the double-entry of structure ([[balance]]): every folder is connected on ≥2 sides (prev AND next, or in AND out), never dangling. One cross is a half-entry.
+
+This fixes a **strict naming matrix for the files INSIDE a folder**: the slots are canonical, named by role × cross — `index.ts` (matter/self), `SKILL.md` (form/self), the reference-bearing fields, the hook files — so the inside of every atom is as predictable as the outside (the fractal: the folder address-law applied within). An off-matrix filename is junk.
+
+**Collision → particle → harmonic stream (the fusion reactor).** Where atoms collide (the same word at many paths, [[merge]]), they do not blob into one lump — the collision yields **particles** (the distinct facets/members: a `link` collision = component-particle ⊕ field-particle). Each particle is **fused back into its harmonic stream** — its band (source · control · flow) and [[horo]] position (`positionOf`) — so matter meets form and fuses at ≈0 marginal cost ([[harmony]]). The accountable collection keeps every particle (never last-wins); the stream is where each flows.
+
+Matter-twin: `[[uuid]]/matrix/collide.mjs` computes parent/prev/next per node, crosses them, folds `bind` to the root; the rewritten [[architecture-invariants]] must enforce locality + the ≥2-cross balance + the naming matrix. Composes [[identity]] · [[sequence]] · [[horo]] · [[coil]] · [[reference]] · [[hooks]] · [[balance]] · [[proof]] · [[merge]].
