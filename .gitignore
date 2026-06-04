@@ -84,3 +84,4 @@ seed/import/
 # VitePress build output + cache (regenerable via `vitepress build`)
 .vitepress/dist/
 .vitepress/cache/
+.claude.bak/
