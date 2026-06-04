@@ -37,7 +37,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Semantic model of the electronic invoice",
     "uuid": "b293e94d-80cc-82ce-a7c9-7006b79e5bbf",
     "color": "hsl(355 78% 43%)",
-    "count": 95,
+    "count": 96,
     "modules": [
       {
         "path": "src/ai/invoice-ocr.ts",
@@ -143,7 +143,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU electronic identification & trust services",
     "uuid": "29ccc17c-b37d-81fd-af35-cd6049173405",
     "color": "hsl(260 73% 42%)",
-    "count": 14,
+    "count": 15,
     "modules": [
       {
         "path": "src/agents/registered/legal.agent.ts",
@@ -194,6 +194,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§3"
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/uuid/governance/index.ts",
         "section": "§6"
       },
@@ -209,7 +213,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "PAdES PDF advanced electronic signatures",
     "uuid": "3f95cb7c-fd1a-8ec3-b398-007e76eb1842",
     "color": "hsl(77 83% 42%)",
-    "count": 9,
+    "count": 10,
     "modules": [
       {
         "path": "src/country/client/bg-pades-signer.ts",
@@ -238,6 +242,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/evidence/attestations/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -247,7 +255,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Peppol Billing BIS",
     "uuid": "6408ce0b-5969-8298-9f00-bd48c41f21b5",
     "color": "hsl(48 86% 49%)",
-    "count": 26,
+    "count": 27,
     "modules": [
       {
         "path": "src/connections/index.ts",
@@ -304,6 +312,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/peppol/import.service/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -313,7 +325,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "European Sustainability Reporting Standards",
     "uuid": "b2699009-09e7-8a76-a2cb-6645e6129dd2",
     "color": "hsl(313 59% 47%)",
-    "count": 16,
+    "count": 17,
     "modules": [
       {
         "path": "src/beyond/carbon.ts",
@@ -348,8 +360,100 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/taxing/jurisdictions/reporting/standards/index.ts",
         "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-AI-Act",
+    "family": "eu",
+    "title": "Regulation (EU) 2024/1689 on AI",
+    "uuid": "8af8b878-a1ff-8a94-9341-28a950e33189",
+    "color": "hsl(296 64% 38%)",
+    "count": 9,
+    "modules": [
+      {
+        "path": "src/ai/models/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/ai/models/service.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/agent-capability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/ai-audit.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/beyond/explainability.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/beyond/types.ts",
+        "section": "Annex IV"
+      },
+      {
+        "path": "src/eu/ai/act/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
+  },
+  {
+    "id": "NACE",
+    "family": "eu",
+    "title": "EU NACE Rev.2 economic-activity classification",
+    "uuid": "809b21d2-ec0e-8105-b04a-20d0b26fae7d",
+    "color": "hsl(163 88% 56%)",
+    "count": 8,
+    "modules": [
+      {
+        "path": "src/base/accounting/field/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/manufacturing/seed/standards.ts",
+        "section": ""
+      },
+      {
+        "path": "src/nace/rev2/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/properties/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/sectors/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/shared/SKILL.md",
+        "section": ""
+      },
+      {
+        "path": "src/shared/field.ts",
+        "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§5"
       }
     ]
   },
@@ -359,7 +463,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU Payment Services Directive 2 (2015/2366)",
     "uuid": "f98c2c28-565b-8606-8790-99e38c367638",
     "color": "hsl(164 64% 54%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/country/api/client/index.ts",
@@ -368,6 +472,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/country/client/berlin-group-psd2.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/tenant/roles/profile/payment-provider.profile.ts",
@@ -381,7 +489,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "European Skills/Competences/Occupations",
     "uuid": "cb59fb0d-ae42-826e-be87-ed84cfd9ba48",
     "color": "hsl(217 61% 51%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/allocation/index.ts",
@@ -406,6 +514,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/skill/router/merge.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -415,7 +527,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Official languages of the EU",
     "uuid": "1f3111fb-27b4-8405-b4cd-1f57aef4b539",
     "color": "hsl(65 72% 49%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/agents/mcp/i18n.ts",
@@ -438,33 +550,85 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/translations/index.ts",
         "section": ""
       }
     ]
   },
   {
-    "id": "EU-AI-Act",
+    "id": "Berlin-Group-PSD2",
     "family": "eu",
-    "title": "Regulation (EU) 2024/1689 on AI",
-    "uuid": "8af8b878-a1ff-8a94-9341-28a950e33189",
-    "color": "hsl(296 64% 38%)",
-    "count": 4,
+    "title": "Berlin Group NextGenPSD2 open-banking API",
+    "uuid": "0b7d7ee1-fa79-8261-a5e1-a31e7ee976a3",
+    "color": "hsl(61 76% 47%)",
+    "count": 6,
     "modules": [
       {
-        "path": "src/beyond/ai-audit.ts",
-        "section": "Annex IV"
+        "path": "src/config/iso-4217-numeric/index.ts",
+        "section": "§AccountReference"
       },
       {
-        "path": "src/beyond/explainability.ts",
+        "path": "src/country/api/client/index.ts",
         "section": ""
       },
       {
-        "path": "src/beyond/types.ts",
-        "section": "Annex IV"
+        "path": "src/country/client/berlin-group-psd2.ts",
+        "section": ""
       },
       {
-        "path": "src/eu/ai/act/index.ts",
+        "path": "src/tenant/roles/profile/payment-provider.profile.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-CSRD",
+    "family": "eu",
+    "title": "EU Corporate Sustainability Reporting Directive 2022/2464",
+    "uuid": "c843cc1a-c9db-8750-b1e8-49b5042b5290",
+    "color": "hsl(147 84% 40%)",
+    "count": 4,
+    "modules": [
+      {
+        "path": "src/beyond/carbon.ts",
+        "section": ""
+      },
+      {
+        "path": "src/csrd/disclosures/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/eu/csrd/esr/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/self/accounting/index.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
+    "id": "EU-VAT-Directive",
+    "family": "eu",
+    "title": "EU VAT Directive 2006/112/EC",
+    "uuid": "604172d9-c097-89f2-b741-e34b3fb9ebf0",
+    "color": "hsl(161 64% 39%)",
+    "count": 3,
+    "modules": [
+      {
+        "path": "src/naredba/n/18/vat-groups.ts",
+        "section": ""
+      },
+      {
+        "path": "src/self/accounting/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/taxing/jurisdictions/index.ts",
         "section": ""
       }
     ]
@@ -475,11 +639,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Single Euro Payments Area schemes",
     "uuid": "553c7767-3e7e-8cf1-be50-aff8155f57b7",
     "color": "hsl(220 69% 45%)",
-    "count": 2,
+    "count": 3,
     "modules": [
       {
         "path": "src/country/client/berlin-group-psd2.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -489,8 +657,27 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU Organic Production Regulation",
     "uuid": "7f5fafb9-5e85-85d1-8bfb-3385c68bff3d",
     "color": "hsl(207 55% 55%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
+  },
+  {
+    "id": "EU-UCC",
+    "family": "eu",
+    "title": "EU Union Customs Code (Regulation 952/2013)",
+    "uuid": "96b1dd40-3bc7-8b3b-b18d-1f293feada5a",
+    "color": "hsl(57 66% 54%)",
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/customers/sales/orders/shipments/customs/declarations/index.ts",
+        "section": ""
+      }
+    ]
   },
   {
     "id": "ISO/IEC-25010",
@@ -498,7 +685,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 93,
+    "count": 94,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -604,7 +791,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 26,
+    "count": 27,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
@@ -625,6 +812,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/internal/controls/audit/findings/court-docket.ts",
         "section": "§1"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/spec/coverage.mjs",
@@ -674,7 +865,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "AI risk management",
     "uuid": "bb2197cf-f74d-813a-9b27-4004cee07b3f",
     "color": "hsl(25 66% 53%)",
-    "count": 14,
+    "count": 15,
     "modules": [
       {
         "path": "src/ai/anomaly-detection.ts",
@@ -731,6 +922,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/eu/ai/act/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -740,7 +935,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software life-cycle processes",
     "uuid": "897869e7-4e16-8aae-ae03-58e2ed9daf49",
     "color": "hsl(272 55% 53%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/agent/context.ts",
@@ -757,6 +952,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/architecture/invariant/checks.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/spec/generator/extractor.ts",
@@ -782,7 +981,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JPEG image coding",
     "uuid": "4eab24da-a257-89da-bdca-df1b167fc1f9",
     "color": "hsl(339 56% 40%)",
-    "count": 4,
+    "count": 5,
     "modules": [
       {
         "path": "src/blocks/media/block/config.ts",
@@ -799,6 +998,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/remote/media/import/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -808,7 +1011,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "AI management system",
     "uuid": "a03398fc-e7e1-8ec5-b8e6-b932fa771a65",
     "color": "hsl(331 67% 50%)",
-    "count": 4,
+    "count": 5,
     "modules": [
       {
         "path": "src/ai/cloudflare-ai.ts",
@@ -825,6 +1028,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/eu/ai/act/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -834,7 +1041,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Revenue from Contracts with Customers",
     "uuid": "e0b86948-fc7f-8258-81cf-123c1211891d",
     "color": "hsl(288 55% 38%)",
-    "count": 23,
+    "count": 24,
     "modules": [
       {
         "path": "src/agents/accounting/finance.agent.ts",
@@ -873,6 +1080,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§31-§45"
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/types/events/index.ts",
         "section": "§126"
       },
@@ -888,7 +1099,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Presentation of Financial Statements",
     "uuid": "f0bae7c9-3fa5-8ce5-b51b-b8e884e6c122",
     "color": "hsl(66 76% 47%)",
-    "count": 12,
+    "count": 13,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -946,7 +1157,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Interim Financial Reporting",
     "uuid": "07deaba7-33ac-85d2-b8a0-b6fdfbfb1867",
     "color": "hsl(214 86% 61%)",
-    "count": 11,
+    "count": 12,
     "modules": [
       {
         "path": "src/closing/period/checker/index.ts",
@@ -981,6 +1192,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/validate/closing/period/index.ts",
         "section": ""
       },
@@ -1000,7 +1215,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Fair Value Measurement",
     "uuid": "6296d8d3-4648-81ce-977c-bca48d283f51",
     "color": "hsl(38 61% 57%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/biological/assets/index.ts",
@@ -1021,6 +1236,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/properties/investment/properties/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1030,8 +1249,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Income Taxes",
     "uuid": "a9f0b4fb-7b2e-8a38-8c78-dfde8f75eb7d",
     "color": "hsl(304 60% 49%)",
-    "count": 7,
+    "count": 8,
     "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
       {
         "path": "src/tax/jurisdictions/deferred/tax/items/index.ts",
         "section": "§15-§68"
@@ -1052,7 +1275,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Agriculture (biological assets)",
     "uuid": "cfe6e453-9f1c-8663-b860-7f6ebb5569ac",
     "color": "hsl(302 73% 49%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/agriculture/accountable.ts",
@@ -1061,6 +1284,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/biological/assets/index.ts",
         "section": "§10"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1070,11 +1297,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Investment Property",
     "uuid": "77516eb6-2777-8230-aca0-779142320fba",
     "color": "hsl(305 60% 52%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/properties/investment/properties/index.ts",
         "section": "§5"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1084,11 +1315,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Insurance Contracts",
     "uuid": "5f7d61ab-88ea-8725-9944-cfc81a9eadb9",
     "color": "hsl(325 82% 41%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/insurance/contracts/index.ts",
         "section": "§3"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1098,7 +1333,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Financial Instruments",
     "uuid": "b3a9bba5-709b-86ba-9810-38952cce37a5",
     "color": "hsl(273 67% 59%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/config/iso-4217-special/index.ts",
@@ -1117,6 +1352,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/tenant/roles/profile/bank.profile.ts",
         "section": ""
       },
@@ -1132,7 +1371,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Business Combinations",
     "uuid": "4972186d-f1d2-8a42-8584-f6b6a1e837c2",
     "color": "hsl(82 79% 51%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/intercompany/reconciliation/index.ts",
@@ -1141,6 +1380,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/legal/entities/business/combinations/index.ts",
         "section": "§10-§13"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1150,11 +1393,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Exploration for & Evaluation of Mineral Resources",
     "uuid": "8c4848f2-ea59-8b0f-b1d7-99edeea8b74c",
     "color": "hsl(272 57% 40%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/mineral/resource/assets/index.ts",
         "section": "§3"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1164,11 +1411,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Share-based Payment",
     "uuid": "ec2f6c2e-cb86-8e73-be6c-e00e3475f8c1",
     "color": "hsl(343 58% 60%)",
-    "count": 4,
+    "count": 5,
     "modules": [
       {
         "path": "src/employees/share/based/payments/index.ts",
         "section": "§10-§13"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1178,11 +1429,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Non-current Assets Held for Sale & Discontinued Operations",
     "uuid": "104dd55f-31b2-8286-bd3c-8075d44da9e4",
     "color": "hsl(213 58% 61%)",
-    "count": 4,
+    "count": 5,
     "modules": [
       {
         "path": "src/held/for/sale/classifications/index.ts",
         "section": "§6-§9"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -1192,8 +1447,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Leases",
     "uuid": "2e15a7dd-c0b0-841a-9ce3-085ce4681bdb",
     "color": "hsl(277 82% 43%)",
-    "count": 3,
+    "count": 4,
     "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
       {
         "path": "src/tax/period/reconciliation/index.ts",
         "section": ""
@@ -1214,8 +1473,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Inventories",
     "uuid": "53b24399-c0f4-805a-ab8b-7937664324be",
     "color": "hsl(186 87% 47%)",
-    "count": 2,
+    "count": 3,
     "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
       {
         "path": "src/types/events/index.ts",
         "section": "§10"
@@ -1228,7 +1491,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Date and time representation",
     "uuid": "dcc7dde3-fa6b-8409-9382-89554e4c4d2b",
     "color": "hsl(359 66% 49%)",
-    "count": 210,
+    "count": 211,
     "modules": [
       {
         "path": "src/accounting/financial-analysis.ts",
@@ -1334,7 +1597,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 199,
+    "count": 200,
     "modules": [
       {
         "path": "src/accounting/fields-money-fix.ts",
@@ -1440,7 +1703,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Country codes",
     "uuid": "33acc25b-1712-8bcd-88ff-6a849f536c4e",
     "color": "hsl(268 74% 57%)",
-    "count": 81,
+    "count": 82,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -1546,7 +1809,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal financial industry message scheme",
     "uuid": "37af5d59-91b7-88a5-9a2e-b9f2b1e525ac",
     "color": "hsl(215 78% 55%)",
-    "count": 79,
+    "count": 80,
     "modules": [
       {
         "path": "src/agents/registered/data.agent.ts",
@@ -1652,7 +1915,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 51,
+    "count": 52,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -1758,7 +2021,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security management system",
     "uuid": "55e0dd80-ff9d-877e-926f-f0e8e91c9254",
     "color": "hsl(24 66% 46%)",
-    "count": 39,
+    "count": 40,
     "modules": [
       {
         "path": "src/agent/sync/chat-broadcast.ts",
@@ -1864,7 +2127,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "IBAN — International Bank Account Number",
     "uuid": "7d425926-b6b5-8210-87c2-e420beb25015",
     "color": "hsl(26 74% 52%)",
-    "count": 32,
+    "count": 33,
     "modules": [
       {
         "path": "src/bank/accounts/bank/transactions/index.ts",
@@ -1970,7 +2233,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BIC — Business Identifier Code (SWIFT)",
     "uuid": "69a1e579-4329-831c-b8c0-d8ec92947245",
     "color": "hsl(41 74% 39%)",
-    "count": 22,
+    "count": 23,
     "modules": [
       {
         "path": "src/bank/accounts/bank/transactions/index.ts",
@@ -2045,6 +2308,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/types/bank-reconciliation/index.ts",
         "section": ""
       },
@@ -2060,7 +2327,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Information security controls",
     "uuid": "2336192c-67ba-894a-952a-a8d58eab9efb",
     "color": "hsl(14 80% 58%)",
-    "count": 21,
+    "count": 22,
     "modules": [
       {
         "path": "src/agents/mcp/tool/_guards.ts",
@@ -2130,7 +2397,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "LEI — Legal Entity Identifier",
     "uuid": "816b5551-7928-8666-8db3-d65a6bac7e16",
     "color": "hsl(11 70% 47%)",
-    "count": 12,
+    "count": 13,
     "modules": [
       {
         "path": "src/config/types/index.ts",
@@ -2161,6 +2428,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/taxing/jurisdictions/entity/legal/structures/index.ts",
         "section": ""
       },
@@ -2188,7 +2459,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "PDF/A archival format",
     "uuid": "c97ea5e9-eef0-830e-b302-5bc54e88e933",
     "color": "hsl(102 80% 55%)",
-    "count": 11,
+    "count": 12,
     "modules": [
       {
         "path": "src/country/client/bg-hybrid-invoice.ts",
@@ -2217,6 +2488,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/iso/19005/profile.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2226,7 +2501,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Country subdivision codes",
     "uuid": "2b9ba8a6-1791-8a12-a6be-e8263d0df784",
     "color": "hsl(3 83% 60%)",
-    "count": 11,
+    "count": 12,
     "modules": [
       {
         "path": "src/config/address-formats/index.ts",
@@ -2257,6 +2532,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/tax/automation.service/index.ts",
         "section": ""
       },
@@ -2276,7 +2555,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "PDF — Portable Document Format",
     "uuid": "786a489f-7943-8d53-aa79-5a9048833269",
     "color": "hsl(226 57% 53%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/country/client/bg-bank-statement-pdf.ts",
@@ -2317,6 +2596,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/iso/19005/profile.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2326,7 +2609,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Manufacturing operations KPIs",
     "uuid": "95952c82-6ec5-8391-a7a7-7abdf80d5b60",
     "color": "hsl(133 64% 48%)",
-    "count": 9,
+    "count": 10,
     "modules": [
       {
         "path": "src/items/bills/of/materials/index.ts",
@@ -2347,6 +2630,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/lotworkphases/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/work/centers/index.ts",
@@ -2372,7 +2659,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Check character systems",
     "uuid": "b8d78e45-6f9d-8be4-a422-4d93d1b73fd9",
     "color": "hsl(159 57% 59%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/bg/identifier/index.ts",
@@ -2401,6 +2688,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/iso/7064/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2410,7 +2701,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "PDF/UA universally accessible PDF",
     "uuid": "dda87cbc-f8d4-8932-80fe-ee4c5e7d14fe",
     "color": "hsl(224 74% 58%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/evidence/attestation/index.ts",
@@ -2431,6 +2722,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/iso/14289/profile.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2440,7 +2735,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Addressing — components & conceptual model",
     "uuid": "db832e2e-a0ea-8b3c-9a48-a4d3226b77a9",
     "color": "hsl(35 66% 60%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -2478,7 +2773,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Digital evidence identification & preservation",
     "uuid": "20aa97f1-4b7f-84bd-bbfa-fcae216d745d",
     "color": "hsl(82 66% 39%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/ai/ai-security.ts",
@@ -2495,6 +2790,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/audit/events/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2504,7 +2803,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Compliance management systems",
     "uuid": "393bebe9-0e18-8b0e-9e5a-eefdd4f080bb",
     "color": "hsl(251 80% 55%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts",
@@ -2529,6 +2828,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/legal/entities/compliance/deadlines/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2538,7 +2841,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Facility management",
     "uuid": "fbbd366a-15f9-8ced-b3d5-c1fbe224344b",
     "color": "hsl(5 74% 48%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/agents/registered/ops.agent.ts",
@@ -2563,6 +2866,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/properties/spaces/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2572,7 +2879,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Asset management",
     "uuid": "69bdd54e-f5e9-8d00-a43a-c5b043eb812b",
     "color": "hsl(69 58% 44%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/agents/registered/ops.agent.ts",
@@ -2593,6 +2900,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/properties/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2602,7 +2913,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Participant identifier scheme",
     "uuid": "a72aa55d-3404-838b-ad19-3f0a8b2774a7",
     "color": "hsl(314 80% 59%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/peppol/bis/3/index.ts",
@@ -2619,6 +2930,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/peppol/import.service/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2628,11 +2943,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Language codes",
     "uuid": "ad359867-d37f-85e3-9c84-811f2b228e37",
     "color": "hsl(61 67% 45%)",
-    "count": 1,
+    "count": 2,
     "modules": [
       {
         "path": "src/locale/fallback/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2642,7 +2961,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG fiscal-device & SUPTO ordinance",
     "uuid": "6a08f86f-afe0-8049-a445-c03e255093d7",
     "color": "hsl(144 58% 53%)",
-    "count": 33,
+    "count": 35,
     "modules": [
       {
         "path": "src/audit/submissions/index.ts",
@@ -2748,7 +3067,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG Value Added Tax Act",
     "uuid": "83644ba0-d61a-840d-9821-ea275af4340f",
     "color": "hsl(156 60% 54%)",
-    "count": 2,
+    "count": 3,
     "modules": [
       {
         "path": "src/naredba/n/18/index.ts",
@@ -2757,6 +3076,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/naredba/n/18/scope.ts",
         "section": "§118"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -2766,8 +3089,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "BG Corporate Income Tax Act",
     "uuid": "319ed289-2957-86c2-9381-dccea8ba97b6",
     "color": "hsl(102 55% 55%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "NIST-INCITS-359-2012",
@@ -2775,7 +3103,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Role-Based Access Control",
     "uuid": "e67e2dd4-b480-802e-be8b-990117b82dc6",
     "color": "hsl(326 65% 58%)",
-    "count": 43,
+    "count": 44,
     "modules": [
       {
         "path": "src/app/(frontend)/next/seed/route.ts",
@@ -2881,7 +3209,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Secure Hash Standard (SHA-2)",
     "uuid": "6a25a77c-19fb-8d7f-85f3-a4a0fda1fbc4",
     "color": "hsl(173 82% 42%)",
-    "count": 29,
+    "count": 30,
     "modules": [
       {
         "path": "src/agent/harmonics.ts",
@@ -2987,7 +3315,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Application Security Verification Standard",
     "uuid": "b55af77e-a755-8046-a653-0472364e07e3",
     "color": "hsl(346 57% 44%)",
-    "count": 11,
+    "count": 12,
     "modules": [
       {
         "path": "src/auth/index.ts",
@@ -3026,6 +3354,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/users/endpoints/externalUsersLogin.ts",
         "section": ""
       }
@@ -3037,7 +3369,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "AES-GCM authenticated encryption",
     "uuid": "439bcd9a-0e52-8c60-821c-c598a4c40e2f",
     "color": "hsl(27 85% 48%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/integrity/envelope.ts",
@@ -3068,6 +3400,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts",
         "section": ""
       }
@@ -3079,7 +3415,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Log management",
     "uuid": "20d957c5-70c3-819c-b8a6-fc1b0dc835cf",
     "color": "hsl(129 72% 43%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3118,6 +3454,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/validate/audit/compliance/reporting/index.ts",
         "section": ""
       }
@@ -3129,7 +3469,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Attribute-Based Access Control",
     "uuid": "6610734e-3592-8047-9ea5-ce820cc75918",
     "color": "hsl(208 65% 44%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/agents/mcp/tool/_guards.ts",
@@ -3160,6 +3500,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§3"
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/uuid/share/index.ts",
         "section": ""
       }
@@ -3171,7 +3515,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key management lifecycles",
     "uuid": "03b4df35-67f2-8fa4-a7a6-445d7b0df5dd",
     "color": "hsl(228 68% 43%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/anchor/index.ts",
@@ -3200,6 +3544,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/proof/projection/index.ts",
         "section": "§5.6.1"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -3209,7 +3557,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Key derivation functions",
     "uuid": "1956d6ff-473e-8900-94f4-bb9afa8b5b86",
     "color": "hsl(6 59% 53%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/get/preview/secret/index.ts",
@@ -3222,6 +3570,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/nist/sp/800/108/kdf.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/tenant/remote/secret/index.ts",
@@ -3239,7 +3591,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "AI Risk Management Framework",
     "uuid": "268214a0-7863-8201-a556-d05b5f6656aa",
     "color": "hsl(138 75% 54%)",
-    "count": 3,
+    "count": 4,
     "modules": [
       {
         "path": "src/ai/cloudflare-ai.ts",
@@ -3252,6 +3604,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/eu/ai/act/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -3261,7 +3617,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "OECD Standard Audit File for Tax",
     "uuid": "3c66b577-efc9-8c9b-bd38-2df00b645605",
     "color": "hsl(342 61% 61%)",
-    "count": 61,
+    "count": 62,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3367,7 +3723,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Transfer Pricing Guidelines",
     "uuid": "d3b0647f-ac96-8620-9796-079f0911c721",
     "color": "hsl(192 85% 45%)",
-    "count": 12,
+    "count": 13,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3390,6 +3746,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/tax/period/reconciliation/index.ts",
         "section": ""
       },
@@ -3409,7 +3769,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Base Erosion and Profit Shifting",
     "uuid": "a1c51ddc-1803-846e-9ae9-64bb0fdfa83d",
     "color": "hsl(13 84% 42%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3422,6 +3782,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/oecd/tpg/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/tax/period/reconciliation/index.ts",
@@ -3443,7 +3807,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "GloBE global minimum tax",
     "uuid": "d635bcd7-320b-8d75-8a93-6d0373384af5",
     "color": "hsl(117 68% 61%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/audit/compliance/reporting/index.ts",
@@ -3456,6 +3820,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/oecd/tpg/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/tax/period/reconciliation/index.ts",
@@ -3473,7 +3841,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Model Context Protocol",
     "uuid": "bbe40439-0393-8d8b-a793-b13b3dc80e16",
     "color": "hsl(220 59% 47%)",
-    "count": 25,
+    "count": 26,
     "modules": [
       {
         "path": "src/agents/mcp/atom-catalogue.generated.ts",
@@ -3562,6 +3930,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/platform/readiness/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -3571,7 +3943,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Enterprise-control system integration",
     "uuid": "b8595a9c-f02a-8cb1-a883-ebf24c981126",
     "color": "hsl(33 75% 50%)",
-    "count": 17,
+    "count": 18,
     "modules": [
       {
         "path": "src/factory/recompute-parent-aggregates.ts",
@@ -3614,6 +3986,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§B.5"
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/types/events/index.ts",
         "section": "§B.5"
       },
@@ -3649,7 +4025,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Greenhouse Gas Protocol",
     "uuid": "e5b7f3c6-891e-8989-90f7-6840dc4ae5e6",
     "color": "hsl(127 88% 44%)",
-    "count": 13,
+    "count": 14,
     "modules": [
       {
         "path": "src/beyond/carbon.ts",
@@ -3670,6 +4046,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/ghg/protocol/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -3679,7 +4059,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "eXtensible Business Reporting Language",
     "uuid": "603bfc46-1bf2-8188-80e8-aee229bc918a",
     "color": "hsl(155 62% 60%)",
-    "count": 13,
+    "count": 14,
     "modules": [
       {
         "path": "src/beyond/explainability.ts",
@@ -3722,6 +4102,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/taxing/jurisdictions/reporting/standards/reporting/mappings/index.ts",
         "section": ""
       },
@@ -3741,7 +4125,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Skills Framework for the Information Age",
     "uuid": "1b8c7f96-ae92-8fea-be04-909ff5175b9a",
     "color": "hsl(212 77% 44%)",
-    "count": 12,
+    "count": 13,
     "modules": [
       {
         "path": "src/agent/sync/training-broadcast.ts",
@@ -3788,6 +4172,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/train/index.ts",
         "section": ""
       }
@@ -3799,7 +4187,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Floating-point arithmetic",
     "uuid": "e650ec1d-f5b4-816d-ab68-180601cc2415",
     "color": "hsl(280 81% 43%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/accounting/fields-money-fix.ts",
@@ -3832,16 +4220,72 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "SWIFT-MT",
+    "family": "other",
+    "title": "SWIFT MT financial messages",
+    "uuid": "86714ed6-65cf-8a9e-a760-1e2a117691c7",
+    "color": "hsl(217 63% 60%)",
+    "count": 5,
+    "modules": [
+      {
+        "path": "src/bank/statement/import.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/iso-4217-numeric/index.ts",
+        "section": "§59"
+      },
+      {
+        "path": "src/country/fallback/index.ts",
+        "section": "§3"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
+        "path": "src/tenant/roles/profile/country.profile.ts",
+        "section": ""
+      }
+    ]
+  },
+  {
     "id": "PCI-DSS",
     "family": "other",
     "title": "Payment Card Industry Data Security Standard",
     "uuid": "f5fe4927-b30b-8ff0-bc59-7efa4c7bccee",
     "color": "hsl(334 58% 53%)",
-    "count": 3,
+    "count": 4,
     "modules": [
       {
         "path": "src/billing/stripeWebhookHandlers.ts",
         "section": "§3"
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
+  },
+  {
+    "id": "ITU-T-X667",
+    "family": "other",
+    "title": "ITU-T X.667 / ISO-IEC 9834-8 — UUID generation",
+    "uuid": "dfe9631f-d4f8-8294-b7f8-f0f39d8a2820",
+    "color": "hsl(81 84% 45%)",
+    "count": 3,
+    "modules": [
+      {
+        "path": "src/localize/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/uuid/format/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/uuid/llm/index.ts",
+        "section": ""
       }
     ]
   },
@@ -3851,8 +4295,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Demeter International Biodynamic standard",
     "uuid": "65e6fe55-1d6b-824d-8bd6-bc1770caeb21",
     "color": "hsl(166 64% 51%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "FSMA-PSR",
@@ -3860,8 +4309,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "FDA FSMA Produce Safety Rule (21 CFR 112)",
     "uuid": "f49adb42-7b9d-8ea6-affb-fcd3d1b040f7",
     "color": "hsl(338 64% 56%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "GLOBALG.A.P",
@@ -3869,8 +4323,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "GLOBALG.A.P. Integrated Farm Assurance",
     "uuid": "efff6dee-a28d-8da4-ae2b-47a5445ab9b9",
     "color": "hsl(239 59% 60%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "IFOAM-Norms",
@@ -3878,8 +4337,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "IFOAM Norms for Organic Production & Processing",
     "uuid": "3fbec46e-0429-883b-8361-80223ff537ea",
     "color": "hsl(118 76% 52%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "Permaculture-Ethics",
@@ -3887,8 +4351,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Permaculture ethics — earth care · people care · fair share",
     "uuid": "d42590f9-de17-889e-aa04-aa4f40fc97f9",
     "color": "hsl(309 59% 47%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "Permaculture-Principles",
@@ -3896,8 +4365,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Permaculture design principles (Holmgren's 12)",
     "uuid": "2c277206-d596-8c49-9a0a-65b239c652de",
     "color": "hsl(143 64% 44%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "Regenerative-Organic",
@@ -3905,8 +4379,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Regenerative Organic Certified (ROC)",
     "uuid": "4f51875a-89f0-8f0a-8989-134884581e04",
     "color": "hsl(145 85% 56%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "Savory-EOV",
@@ -3914,8 +4393,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Savory Ecological Outcome Verification (Land to Market)",
     "uuid": "7fc86dab-67fc-8f9e-b641-d84453d0cb7a",
     "color": "hsl(312 59% 41%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "USDA-AMS-Grade",
@@ -3923,8 +4407,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "USDA AMS fresh-produce grade standards (US No. 1 / Fancy)",
     "uuid": "81ff193f-146d-8e33-92f1-7eb1fec62e2b",
     "color": "hsl(159 80% 53%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "USDA-GAP",
@@ -3932,8 +4421,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "USDA Harmonized GAP / GHP food-safety audit",
     "uuid": "3e26e0c2-1872-8956-9cda-304b3b2f2f9d",
     "color": "hsl(70 69% 40%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "USDA-Hardiness-Zones",
@@ -3941,8 +4435,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "USDA Plant Hardiness Zone Map",
     "uuid": "44eabac9-2ace-8616-a5bc-ba3680238eab",
     "color": "hsl(2 66% 47%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "USDA-NOP",
@@ -3950,8 +4449,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "USDA National Organic Program (7 CFR 205)",
     "uuid": "0ddacdad-a3c6-855c-b57b-a48fa10ccbd9",
     "color": "hsl(306 85% 43%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "BCP-47",
@@ -3959,7 +4463,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Language tags",
     "uuid": "766b2cca-d72d-8f02-86bb-6cb2c79717ce",
     "color": "hsl(75 64% 48%)",
-    "count": 66,
+    "count": 67,
     "modules": [
       {
         "path": "src/agents/mcp/i18n.ts",
@@ -4065,7 +4569,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 56,
+    "count": 57,
     "modules": [
       {
         "path": "src/agent/index.ts",
@@ -4171,7 +4675,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Canonicalization Scheme",
     "uuid": "67e3e4b1-0c62-8840-bab2-fa9bba6e4c0c",
     "color": "hsl(315 73% 47%)",
-    "count": 23,
+    "count": 24,
     "modules": [
       {
         "path": "src/ai/durable-objects.ts",
@@ -4238,6 +4742,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/storage/independence/index.ts",
         "section": "§5.8"
       },
@@ -4261,7 +4769,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (original)",
     "uuid": "74e8ac88-dda1-867d-bd72-f5865f098f74",
     "color": "hsl(48 87% 54%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/agent/sync/index.ts",
@@ -4284,6 +4792,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§4.3"
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/tags/index.ts",
         "section": "§4.3"
       },
@@ -4303,7 +4815,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Cryptographic Message Syntax (CMS)",
     "uuid": "cd206054-5961-880e-affe-70052c20c17d",
     "color": "hsl(312 81% 50%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/country/client/bg-pades-signer.ts",
@@ -4324,6 +4836,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/evidence/attestations/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4333,7 +4849,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "iCalendar",
     "uuid": "1adc537b-4939-8672-abb3-9154e46185d7",
     "color": "hsl(36 68% 41%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/activities/index.ts",
@@ -4354,6 +4870,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/scheduled/task/types.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4363,7 +4883,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "HTTP/1.1 semantics",
     "uuid": "87973b1c-65eb-86ba-8ae3-dad7710a10ed",
     "color": "hsl(151 79% 42%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/agents/mcp/i18n.ts",
@@ -4382,6 +4902,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§3.1.3.2"
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/translations/index.ts",
         "section": "§3.1.3.2"
       }
@@ -4393,7 +4917,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Sarbanes-Oxley Act §302/404/906",
     "uuid": "a6e18810-badd-8876-9ebc-72c9bc14aa6c",
     "color": "hsl(241 86% 54%)",
-    "count": 17,
+    "count": 18,
     "modules": [
       {
         "path": "src/agents/accounting/finance.agent.ts",
@@ -4463,7 +4987,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Internal Control — Integrated Framework",
     "uuid": "1e2eb9cb-f9cb-89eb-a3fa-633041accfb7",
     "color": "hsl(166 65% 49%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/agents/registered/engineering.agent.ts",
@@ -4488,6 +5012,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/legal/entities/management/assessment/icfrs/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4497,7 +5025,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Audit Evidence",
     "uuid": "6340aee8-fc18-8396-aca6-92a15037fcab",
     "color": "hsl(208 89% 54%)",
-    "count": 2,
+    "count": 3,
     "modules": [
       {
         "path": "src/cases/index.ts",
@@ -4506,6 +5034,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/media/audit/evidences/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4515,7 +5047,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Integrated Audit of ICFR",
     "uuid": "3efad72e-5a55-8039-9cb8-db83cfd53307",
     "color": "hsl(282 60% 60%)",
-    "count": 2,
+    "count": 3,
     "modules": [
       {
         "path": "src/internal/controls/index.ts",
@@ -4524,6 +5056,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/legal/entities/management/assessment/icfrs/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4533,11 +5069,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Audit Sampling",
     "uuid": "01af8f84-5793-8747-a3f3-91cb1a27c554",
     "color": "hsl(71 58% 50%)",
-    "count": 1,
+    "count": 2,
     "modules": [
       {
         "path": "src/internal/controls/control/tests/audit/samples/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4547,7 +5087,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UN/EDIFACT syntax rules",
     "uuid": "d0e6f0db-65b3-82db-b5be-ab1cef0b0e3f",
     "color": "hsl(198 85% 41%)",
-    "count": 39,
+    "count": 40,
     "modules": [
       {
         "path": "src/customers/sales/orders/index.ts",
@@ -4578,6 +5118,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/un/edifact/README.md",
         "section": "§LIN"
       },
@@ -4601,7 +5145,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UN/CEFACT code lists",
     "uuid": "dede9d51-baf4-8850-b74b-2bb9daf9addb",
     "color": "hsl(174 72% 47%)",
-    "count": 25,
+    "count": 26,
     "modules": [
       {
         "path": "src/ai/tax-classification.ts",
@@ -4664,6 +5208,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/tax/jurisdictions/tax/codes/index.ts",
         "section": ""
       },
@@ -4683,7 +5231,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 24,
+    "count": 25,
     "modules": [
       {
         "path": "src/agriculture/accountable.ts",
@@ -4781,7 +5329,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Global Trade Item Number",
     "uuid": "74c424f5-91d7-89f4-a01e-b807d14807da",
     "color": "hsl(12 56% 43%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
@@ -4806,6 +5354,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/media/products/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4815,7 +5367,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Harmonized System customs nomenclature",
     "uuid": "735463b1-8b67-83a1-979e-593ca0e4e03d",
     "color": "hsl(4 84% 47%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/ai/hs-code-suggestion.ts",
@@ -4824,6 +5376,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/customers/sales/orders/shipments/customs/declarations/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/tenant/roles/profile/country.profile.ts",
@@ -4841,7 +5397,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UN Standard Products & Services Code",
     "uuid": "f40636ed-ab9a-8fca-ad9a-548273ae5c5f",
     "color": "hsl(190 74% 59%)",
-    "count": 3,
+    "count": 4,
     "modules": [
       {
         "path": "src/items/hooks/beforeValidate.ts",
@@ -4854,6 +5410,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/media/products/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -4863,8 +5423,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Codex Alimentarius (FAO/WHO food standards)",
     "uuid": "261ef849-1c9e-89ba-b01c-bda80e345a63",
     "color": "hsl(38 58% 39%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "FAO-Agroecology",
@@ -4872,8 +5437,13 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "FAO 10 Elements of Agroecology",
     "uuid": "4997b833-cf81-86e1-b90f-9ee3127686f7",
     "color": "hsl(119 64% 41%)",
-    "count": 0,
-    "modules": []
+    "count": 1,
+    "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      }
+    ]
   },
   {
     "id": "UPU-S42",
@@ -4881,7 +5451,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "International postal addressing",
     "uuid": "aa20af84-cc10-8855-a64b-88e3c90e12c2",
     "color": "hsl(352 55% 50%)",
-    "count": 7,
+    "count": 8,
     "modules": [
       {
         "path": "src/address/validation/index.ts",
@@ -4919,7 +5489,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "FASB Accounting Standards Codification",
     "uuid": "2f956ac0-320d-88bf-be9b-d3759aeccb6d",
     "color": "hsl(301 56% 38%)",
-    "count": 20,
+    "count": 21,
     "modules": [
       {
         "path": "src/customers/contracts/contract/amendments/index.ts",
@@ -4989,7 +5559,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Revenue from Contracts with Customers (US)",
     "uuid": "eb8625c5-12c1-8b6a-b993-7a2ca5d18d0c",
     "color": "hsl(174 57% 43%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/customers/contracts/contract/amendments/index.ts",
@@ -5008,6 +5578,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/workflow/definitions/seed.ts",
         "section": ""
       }
@@ -5019,7 +5593,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 62,
+    "count": 63,
     "modules": [
       {
         "path": "src/agents/mcp/presentation.ts",
@@ -5125,7 +5699,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ECMAScript language specification",
     "uuid": "dbd1c6da-73fe-836a-bfb1-1566b9b00b48",
     "color": "hsl(113 78% 40%)",
-    "count": 34,
+    "count": 35,
     "modules": [
       {
         "path": "src/admin/TenantFilters.tsx",
@@ -5208,6 +5782,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/types/sti/index.ts",
         "section": ""
       },
@@ -5218,10 +5796,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/widget/AuditLogWidget.tsx",
         "section": ""
-      },
-      {
-        "path": "src/widget/BalanceSheetWidget.tsx",
-        "section": ""
       }
     ]
   },
@@ -5231,7 +5805,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "ECMAScript Internationalization API",
     "uuid": "3008cf9c-4494-8788-8cad-75241caa9da3",
     "color": "hsl(56 87% 50%)",
-    "count": 21,
+    "count": 22,
     "modules": [
       {
         "path": "src/agents/mcp/i18n.ts",
@@ -5325,7 +5899,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Provenance Ontology",
     "uuid": "aab6453e-ed17-8541-a227-c83eb24632af",
     "color": "hsl(142 89% 52%)",
-    "count": 18,
+    "count": 20,
     "modules": [
       {
         "path": "src/beyond/index.ts",
@@ -5395,7 +5969,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON for Linking Data",
     "uuid": "5c0a6a50-8640-8b58-8acf-f76af73f87ed",
     "color": "hsl(162 56% 46%)",
-    "count": 14,
+    "count": 15,
     "modules": [
       {
         "path": "src/agents/mcp/presentation.ts",
@@ -5438,6 +6012,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/standards/index.ts",
         "section": ""
       },
@@ -5457,7 +6035,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Federated server-to-server protocol",
     "uuid": "df058f64-0c1b-8471-a259-38ab3e04d7e2",
     "color": "hsl(213 58% 42%)",
-    "count": 10,
+    "count": 11,
     "modules": [
       {
         "path": "src/agent/sync/discovery.ts",
@@ -5496,6 +6074,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/workflow/definitions/seed.ts",
         "section": ""
       }
@@ -5507,7 +6089,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Verifiable Credentials Data Model",
     "uuid": "44faccc4-4b30-8b69-9660-28d62b450e09",
     "color": "hsl(18 84% 42%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/anchoring/index.ts",
@@ -5538,6 +6120,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
+      {
         "path": "src/uuid/governance/index.ts",
         "section": ""
       }
@@ -5549,7 +6135,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Decentralized Identifiers",
     "uuid": "23ae3478-a989-847b-889c-313d841dc631",
     "color": "hsl(134 72% 38%)",
-    "count": 6,
+    "count": 7,
     "modules": [
       {
         "path": "src/agents/mcp/tool/governance.ts",
@@ -5562,6 +6148,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/identification/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       },
       {
         "path": "src/tenant/roles/profile/country.profile.ts",
@@ -5579,7 +6169,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Common Locale Data Repository",
     "uuid": "8b04db58-6ee8-804b-b934-d11b74399025",
     "color": "hsl(308 64% 54%)",
-    "count": 5,
+    "count": 6,
     "modules": [
       {
         "path": "src/app/(frontend)/[locale]/layout.tsx",
@@ -5600,6 +6190,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/i18n/localization/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
       }
     ]
   },
@@ -5609,8 +6203,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "JSON Schema",
     "uuid": "85ef557a-6762-8ad1-8694-d7c85e6bd90b",
     "color": "hsl(87 70% 40%)",
-    "count": 3,
+    "count": 4,
     "modules": [
+      {
+        "path": "src/skill/router/skills.index.ts",
+        "section": "§302/404/906"
+      },
       {
         "path": "src/testing/config-discovery-types/index.ts",
         "section": ""
@@ -5631,7 +6229,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 49,
+    "count": 51,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
@@ -5737,7 +6335,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Web Content Accessibility Guidelines",
     "uuid": "852e7032-f08c-8685-802a-ea7d1e0db109",
     "color": "hsl(254 62% 40%)",
-    "count": 31,
+    "count": 32,
     "modules": [
       {
         "path": "src/agents/registered/design.agent.ts",
@@ -5839,4 +6437,4 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
   }
 ] as const
 
-export const STANDARDS_COUNT = 125
+export const STANDARDS_COUNT = 132
