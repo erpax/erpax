@@ -3178,6 +3178,10 @@ export interface Item {
    */
   code: string;
   /**
+   * Display name — the catalog product name (the unique `code` is the identifier). From the etrima products merge.
+   */
+  name?: string | null;
+  /**
    * SKU
    */
   sku?: string | null;
@@ -3278,6 +3282,10 @@ export interface Item {
      * HS Code
      */
     hsCode?: string | null;
+    /**
+     * Material / fibre composition (e.g. "80% cotton, 20% polyester"). The garment-catalog field from the etrima products merge (93.7% populated) — feeds customs (the HS code) and fibre-content labelling.
+     */
+    contents?: string | null;
     /**
      * Requires shipping
      */
@@ -20795,6 +20803,7 @@ export interface ItemsSelect<T extends boolean = true> {
   uuid?: T;
   tenant?: T;
   code?: T;
+  name?: T;
   sku?: T;
   barcode?: T;
   address?: T;
@@ -20837,6 +20846,7 @@ export interface ItemsSelect<T extends boolean = true> {
         weightUnit?: T;
         grams?: T;
         hsCode?: T;
+        contents?: T;
         requiresShipping?: T;
       };
   discounts?:

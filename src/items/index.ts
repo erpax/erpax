@@ -7,12 +7,19 @@ import { itemsBeforeValidate } from '@/items/hooks/beforeValidate'
 import { itemsAfterChange } from '@/items/hooks/afterChange'
 
 /**
- * Items — sellable / purchasable inventory rows with GL posting.
+ * Items — sellable / purchasable inventory rows with GL posting. Also the unified
+ * product CATALOG: the etrima `products` table (3,543 garment rows) merged in HERE
+ * rather than a parallel collection (DRY — one catalog/inventory model). The merge
+ * was data-driven: its costing tiers (CM/CMT/FPS) were 0% populated (empty
+ * speculative columns, dropped), `hsCode` already existed (physical), so the only
+ * fields it genuinely added are `name` (display name) and `contents` (fibre
+ * composition, 93.7% populated). `product_variants` extends `src/variant`.
  *
  * @standard UN-CEFACT UNSPSC product-classification
  * @standard GS1 GTIN global-trade-item-number
  * @standard ISO-4217:2015 currency-codes price-currency
  * @standard EN-16931:2017 §BG-31 item-information
+ * @standard EU-1007/2011 textile-fibre-names + composition-labelling (the `contents` field)
  * @accounting IFRS IAS-2 inventories
  * @accounting US-GAAP ASC-330 inventory
  * @see docs/STANDARDS.md §3
@@ -50,6 +57,12 @@ export const Items: CollectionConfig = {
       unique: true,
       index: true,
       admin: { description: 'Item code' },
+    },
+    {
+      name: 'name',
+      type: 'text',
+      index: true,
+      admin: { description: 'Display name — the catalog product name (the unique `code` is the identifier). From the etrima products merge.' },
     },
     {
       name: 'sku',
@@ -235,6 +248,14 @@ export const Items: CollectionConfig = {
           name: 'hsCode',
           type: 'text',
           admin: { description: 'HS Code' },
+        },
+        {
+          name: 'contents',
+          type: 'textarea',
+          admin: {
+            description:
+              'Material / fibre composition (e.g. "80% cotton, 20% polyester"). The garment-catalog field from the etrima products merge (93.7% populated) — feeds customs (the HS code) and fibre-content labelling.',
+          },
         },
         {
           name: 'requiresShipping',
