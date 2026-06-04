@@ -42,4 +42,4 @@ Authentication is the **bridge between the form and the world** — the [[limit]
 - No `maxLoginAttempts`/`lockTime` → brute-force exposure (see [[harden]]).
 - Adding a singular `tenant` to the auth/users collection (use the plugin's `tenants` array).
 
-Composes: [[Users]] · [[ApiAuditEvents]].
+Composes: [[Users]] · [[api/audit/events]].

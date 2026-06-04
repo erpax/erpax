@@ -18,4 +18,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls inventory-cycle-count
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[Items]] · [[WarehouseLocations]] · [[accounting]] · [[transaction]].
+Composes: [[Items]] · [[warehouse/locations]] · [[accounting]] · [[transaction]].

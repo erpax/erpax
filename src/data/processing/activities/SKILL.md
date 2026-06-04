@@ -27,4 +27,4 @@ The collection schema is built with [[fields]], [[access]], and [[hooks]]:
 - **Access** ([[access]]): tenant-scoped read, admin-gated create/update, tenant-admin delete.
 - **Lifecycle** ([[hooks]]): standard collection hooks for audit and consistency.
 
-**Composes**: [[ConsentRecords]].
+**Composes**: [[consent/records]].

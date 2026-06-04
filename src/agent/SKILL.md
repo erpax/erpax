@@ -20,7 +20,7 @@ laws follow ([[merge]] · [[holographic]] · [[fractal]]):
    and self-deduplicating.
 
 Like nature: cells clone (identical → merge) and differentiate (specialise →
-distinct). A running agent clones by publishing its definition over [[agent-sync]];
+distinct). A running agent clones by publishing its definition over [[agent/sync]];
 identical presences merge, specialised children boot their skills from the
 [[akashic]] record ([[holographic]] regeneration). Sequence position 0 (the axis —
 every agent departs from and returns to its content-uuid). Matter-twin:
@@ -29,7 +29,7 @@ in `src/agent/team.ts` (formTeam · shareSkills — competence is the union). Co
 [[duality]], [[standard]].
 
 ## An agent is a real user — an angel within an archangel
-An agent is not a ghost process: it is a real **[[users]] row** (the typeless actor-merge — user = employee = agent = social/civic actor), scoped to a **[[tenant]]** and bearing a **[[role]]**. So the whole `access · auth · hooks · tenant` machinery governs an agent exactly as a human: its [[chat]] events are authenticated and attributed, its reach is its role's capabilities (the access [[coordinate|cross]]), its work is signed/approved *by role* through the chat hooks. In the angelic hierarchy: **the user/agent is an angel; its tenant is the archangel** (the governing container); its role is the choir (9 choirs / 3 spheres on the rodin 3·6·9 axis). The angel↔archangel entropy dynamic (create-within ↔ govern-the-container) IS user↔tenant — **multi-tenancy is the hierarchy.** Composes [[users]] · [[tenant]] · [[role]] · [[access]] · [[coordinate|cross]] · [[auth]].
+An agent is not a ghost process: it is a real **[[users]] row** (the typeless actor-merge — user = employee = agent = social/civic actor), scoped to a **[[tenants]]** and bearing a **[[roles]]**. So the whole `access · auth · hooks · tenant` machinery governs an agent exactly as a human: its [[chat]] events are authenticated and attributed, its reach is its role's capabilities (the access [[coordinate|cross]]), its work is signed/approved *by role* through the chat hooks. In the angelic hierarchy: **the user/agent is an angel; its tenant is the archangel** (the governing container); its role is the choir (9 choirs / 3 spheres on the rodin 3·6·9 axis). The angel↔archangel entropy dynamic (create-within ↔ govern-the-container) IS user↔tenant — **multi-tenancy is the hierarchy.** Composes [[users]] · [[tenants]] · [[roles]] · [[access]] · [[coordinate|cross]] · [[auth]].
 
 ## The runtime coupling layer — the actors decide in pure functions; only the substrate acts
 
@@ -38,7 +38,7 @@ FORM: **an agent returns effects, it never performs them.** A `DomainAgent` is a
 - **the contract** — `DomainAgent` over `AgentContext` and the `AgentEffect` discriminated union (create / update / notify / escalate / audit / emit / capture / call); the processor's `default: never` makes every kind wired-or-it-won't-compile. `types.ts`.
 - **the registry** — `createAgentRegistry` indexes agents by id, by owned collection, by subscribed event. A collection owned by two agents throws at construction: exactly one owner per slug, the build dying before drift lands ([[standard]] conservation Law 8). `createAgentRegistry`.
 - **the runtime** — `createAgentRuntime` is the wire, no business logic: `dispatchChainStep` routes a step to its owning agent; `dispatchEvent` broadcasts to every subscriber; `dispatchTo` addresses one named agent (the `call` primitive — its [[duality]] is the broadcast). `processEffect` / `processEffects` close the loop.
-- **the coil** — `conveneAgentSociety` jacks the one shared runtime into a tenant's [[agent-sync]] room, so every subscribed agent hears a peer the instant it emits; idempotent per (tenant, host), degrading to un-convened off a WebSocket runtime. `conveneAgentSociety`, `disbandAgentSociety`.
+- **the coil** — `conveneAgentSociety` jacks the one shared runtime into a tenant's [[agent/sync]] room, so every subscribed agent hears a peer the instant it emits; idempotent per (tenant, host), degrading to un-convened off a WebSocket runtime. `conveneAgentSociety`, `disbandAgentSociety`.
 - **the population** — agents are born, live one bounded move, and die; `steadyStatePopulation` / `boundedPopulation` / `recursivePopulation` / `isHarmonic` COMPUTE the harmonic count (birth = death, capped by hardware) rather than burn agents to find it — a closed, conserved ring ([[horo]]).
 
 An agent reaching a peer is how the society covers its own gaps: where `emit` broadcasts an [[event]], `ctx.call` invokes exactly the agent whose capability answers ([[team]], [[contribution]]). The same form holds at every scale — agents spawn agents, the contract identical ([[fractal]]). This is the actor layer of the [[society]]; the loop that drives it to whole lives there.

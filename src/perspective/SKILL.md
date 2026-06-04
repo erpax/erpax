@@ -10,7 +10,7 @@ vantage. The view is the inverse map of a relation/transfer, computed not stored
 ([[duality]] · [[merge]]): the payer sees outflow ([[give]]), the payee inflow
 ([[take]]); a `supplier` edge ([[connections]]) reads `customer` from the other
 end; a neutral observer (the auditor) sees BOTH sides — the transparency POV the
-[[anti-corruption]] invariants stand on. The two party-views always net to zero
+[[anti/corruption]] invariants stand on. The two party-views always net to zero
 ([[balance]]) — conservation is what makes the switch sound. Sequence position 5
 (round/bind — the surface where one node is presented infinitely).
 

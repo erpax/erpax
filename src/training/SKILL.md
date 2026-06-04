@@ -7,7 +7,7 @@ description: "Use when delivering, tracking, or assessing skill development — 
 
 Use when delivering, tracking, or assessing skill development — course enrollment, completion, certification, competency gain. The experience record of learning an actor undergoes.
 
-Composes: [[Competencies]] · [[train]] · [[Employees]] · [[competency-gap]] · [[time]] · [[education]] · [[classroom]].
+Composes: [[Competencies]] · [[train]] · [[Employees]] · [[competency/gap]] · [[time]] · [[education]] · [[classroom]].
 
 ## Standards
 - SCORM for course tracking

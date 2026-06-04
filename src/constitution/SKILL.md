@@ -10,7 +10,7 @@ FORM: **a sovereign polity, and a foundation that sovereign cannot touch.** [[so
 The seven articles (`CONSTITUTION`):
 
 0. **Identity** *(entrenched)* — every actor is one typeless person, addressed by content-uuid ([[identity]]); no actor has a type, only relations.
-1. **Integrity & Anti-corruption** *(entrenched)* — the four invariants are perpetual; corruption cannot be made lawful ([[anti-corruption]]).
+1. **Integrity & Anti-corruption** *(entrenched)* — the four invariants are perpetual; corruption cannot be made lawful ([[anti/corruption]]).
 2. **Conservation** *(entrenched)* — value is conserved; every flow has two sides that net to zero ([[balance]]).
 3. **Sovereignty & Federation** — each community governs itself and federates by content ([[merge]]); no central authority owns the whole.
 4. **Governance** *(entrenched)* — society governs erpax by ratification; one person, one vote, perpetual ([[governance]]).

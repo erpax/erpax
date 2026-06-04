@@ -7,7 +7,7 @@ description: "Use when documenting step-by-step standard operating procedures �
 
 Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.
 
-Composes: [[WorkflowDefinitions]] · [[schedule]].
+Composes: [[workflow/definitions]] · [[schedule]].
 
 ## Standards
 - ITIL (runbook/playbook)

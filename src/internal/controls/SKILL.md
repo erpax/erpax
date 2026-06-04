@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - PCAOB AS 2201 ICFR-audit
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ControlTests]].
+Composes: [[internal/controls/control/tests]].

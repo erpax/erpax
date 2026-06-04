@@ -9,8 +9,8 @@ Consignment Arrangements — IFRS-15 §B77-B78 / ASC 606-10-55-79 master. When e
 
 ## Composition
 
-- [[ConsignmentInventory]] — per-SKU running balance at the consignee's location
-- [[ConsignmentSales]] — sale events that trigger IFRS-15 §38 point-in-time revenue recognition
+- [[warehouse/locations/consignment/arrangements/consignment/inventories]] — per-SKU running balance at the consignee's location
+- [[warehouse/locations/consignment/arrangements/consignment/sales]] — sale events that trigger IFRS-15 §38 point-in-time revenue recognition
 - [[accounting]] — [[transaction]] accounting records, [[entry]] generation, [[balance]] tracking
 - [[proof]] — evidence attestation and audit trail anchors
 - [[identity]] — consignee party identification and relationship tracking

@@ -7,7 +7,7 @@ description: "Use when determining which items require quantitative and narrativ
 
 Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope
 
-Composes: [[FinancialStatements]] · [[DisclosureChecklists]] · [[materiality]] · [[standard]].
+Composes: [[financial/statements]] · [[legal/entities/disclosure/checklists]] · [[materiality]] · [[standard]].
 
 ## Standards
 - IAS-1 §29-124 (disclosure requirements)

@@ -7,7 +7,7 @@ description: "Use when automating payment retry and collections — dunning-cycl
 
 Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not.
 
-Composes: [[DunningCycles]] · [[Payments]] · [[Invoices]] · [[Customers]] · [[accounting]] · [[transaction]].
+Composes: [[invoices/dunning/cycles]] · [[Payments]] · [[Invoices]] · [[Customers]] · [[accounting]] · [[transaction]].
 
 ## Standards
 - CRM-generic

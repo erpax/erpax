@@ -25,4 +25,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.4 segregation-of-duties closer-vs-creator locker-vs-creator
 - ISO-19011:2018 audit-trail status-transition
 
-Composes: [[EarningsPerShare]] · [[FiscalPeriodSnapshots]] · [[PostBalanceSheetEvents]] · [[PriorPeriodAdjustments]] · [[TaxPeriods]].
+Composes: [[horo/share]] · [[fiscal/periods/fiscal/period/snapshots]] · [[fiscal/periods/post/balance/sheet/events]] · [[fiscal/periods/prior/period/adjustments]] · [[fiscal/periods/tax/periods]].

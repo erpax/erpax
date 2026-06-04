@@ -11,7 +11,7 @@ FORM: **the power to legislate and the limit on it are one act.** A statute is e
 - **repeal** — the polity unmakes a statute. An entrenched article is irrepealable; a constitutional article changes only by amendment, never by ordinary statute. `repeal`.
 - **the code** — the constitution (supreme) over the enacted statutes (ordinary); a statute that would usurp constitutional rank is dropped, not trusted. `legislation`, `constitutionalCode`.
 
-The legislature cannot legislate away the foundation that bounds it — the same limit [[separation]] puts on the three branches and [[anti-corruption]] puts on the ledger, one law at every scale ([[fractal]]). No majority, however large, repeals an entrenched article; `ruleOfLawHolds` is the pure predicate the gate checks at every boot (an architecture invariant, axis `standards`).
+The legislature cannot legislate away the foundation that bounds it — the same limit [[separation]] puts on the three branches and [[anti/corruption]] puts on the ledger, one law at every scale ([[fractal]]). No majority, however large, repeals an entrenched article; `ruleOfLawHolds` is the pure predicate the gate checks at every boot (an architecture invariant, axis `standards`).
 
 Every law is **content-addressed**: same (rank, title, text) ⇒ same id on every instance, so two societies that pass the same statute hold ONE law ([[merge]]), and a tampered statute is a different id ([[proof]], [[identity]]). The code is ASSEMBLED, never re-typed — the constitution read from its module, the statutes from the vote; the filesystem is the only source ([[akashic]]). Pure → testable.
 

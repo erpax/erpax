@@ -25,4 +25,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - OECD BEPS Action 13 country-by-country (when grants ≥ threshold)
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[Provisions]] · [[FixedAssets]] · [[accounting]] · [[proof]] · [[identity]] · [[standard]].
+Composes: [[Provisions]] · [[fixed/assets]] · [[accounting]] · [[proof]] · [[identity]] · [[standard]].

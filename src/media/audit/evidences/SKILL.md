@@ -15,4 +15,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[AuditSamples]].
+Composes: [[internal/controls/control/tests/audit/samples]].

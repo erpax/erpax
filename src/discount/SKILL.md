@@ -7,7 +7,7 @@ description: "Use when applying promotional/volume/loyalty price reductions — 
 
 Use when applying promotional/volume/loyalty price reductions — percent or fixed amount, scope (item/order/customer), validity period, approval workflow.
 
-Composes: [[SalesOrders]] · [[Quotes]] · [[currency]] · [[rate]].
+Composes: [[customers/sales/orders]] · [[Quotes]] · [[currency]] · [[rate]].
 
 ## Standards
 - EN-16931

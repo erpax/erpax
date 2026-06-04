@@ -16,4 +16,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - COSO-2013 internal-control-integrated-framework
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ComplianceRequirements]].
+Composes: [[compliance/frameworks/compliance/requirements]].

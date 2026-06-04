@@ -13,7 +13,7 @@ FORM: **an object's id IS the SHA of its content, so any in-place edit recompute
 
 One canonical form yields one signable artefact: the signature attaches to the contentUuid (the hash), never to raw payload, so there is exactly one verification path (`signContentUuid`, `verifyContentUuidSignature`). The same hash keys envelope encryption — DEK = HKDF(tenantKEK, salt=contentUuid) — making confidentiality convergent and tamper-bound: any plaintext mutation changes the uuid, the DEK, and the AEAD tag at once (`encryptEnvelope`, `decryptEnvelope`). Because same content ⇒ same id, two instances holding the same row hold ONE row ([[merge]]); the check runs identically at line, document, and federation scale ([[fractal]]).
 
-This is the CURRENT-STATE half of trust, [[duality]] to [[proof]] (the O(N) cost to audit) and to [[tamper-cost]] (the cost to forge): cheap to verify, ruinous to falsify. It is the executable spine under [[identity]] and the structural witness the [[society]] uses to lock its records, reading and recomputing from the filesystem alone ([[akashic]]). The standards it cites are external cryptography incorporated by reference (see [[standard]]).
+This is the CURRENT-STATE half of trust, [[duality]] to [[proof]] (the O(N) cost to audit) and to [[tamper/cost]] (the cost to forge): cheap to verify, ruinous to falsify. It is the executable spine under [[identity]] and the structural witness the [[society]] uses to lock its records, reading and recomputing from the filesystem alone ([[akashic]]). The standards it cites are external cryptography incorporated by reference (see [[standard]]).
 
 ## Standards
 

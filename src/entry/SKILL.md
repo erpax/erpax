@@ -13,7 +13,7 @@ FORM: **every value movement is a balanced pair — debit one side, credit the o
 
 **The wiring is complete when all is accounted for in all directions.** `accountedFor(flows)`: every flow is a valid, conserved transfer that balances, and the consolidated book nets to zero — there is no edge the ledger does not close. Accounting is not a domain; it is the closure operator over the [[whole]] mesh ([[all]] is accountable).
 
-Matter-twin: `src/services/entry/index.ts` (`toDoubleEntry`·`net`·`isBalanced`·`reverse`·`consolidate`·`accountableBalances`·`accountedFor`) over `services/perspective` + `index.test.ts`. Composes: [[accounting]] · [[transaction]] · [[give]] · [[take]] · [[duality]] · [[merge]] · [[whole]] · [[all]] · [[begin]] · [[IntercompanyTransactions]] · [[perspective]].
+Matter-twin: `src/services/entry/index.ts` (`toDoubleEntry`·`net`·`isBalanced`·`reverse`·`consolidate`·`accountableBalances`·`accountedFor`) over `services/perspective` + `index.test.ts`. Composes: [[accounting]] · [[transaction]] · [[give]] · [[take]] · [[duality]] · [[merge]] · [[whole]] · [[all]] · [[begin]] · [[legal/entities/intercompany/transactions]] · [[perspective]].
 
 ## Standards
 

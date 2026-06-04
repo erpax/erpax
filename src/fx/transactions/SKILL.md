@@ -9,7 +9,7 @@ FX Transactions — IAS-21 §28-29 monetary-item re-translation entries.
 
 A [[trinity]] node — schema, `seed.ts`, `index.test.ts` co-located, one folder, [[fractal]]-addressed; the panel renders `index.ts`, so the schema is not restated here.
 
-Each row is one durable FX conversion / revaluation event (`transactionKind`: spot · period-end revaluation · hedge settlement · consolidation translation) — the audit evidence for the FX gain/loss P&L line. Distinct from [[CurrencyRates]], the rate-table master: this records the events, that holds the rates a row's `exchangeRate` is sourced from.
+Each row is one durable FX conversion / revaluation event (`transactionKind`: spot · period-end revaluation · hedge settlement · consolidation translation) — the audit evidence for the FX gain/loss P&L line. Distinct from [[currency/rates]], the rate-table master: this records the events, that holds the rates a row's `exchangeRate` is sourced from.
 
 ## Standards
 - ISO-4217:2015 currency-codes from-to-currency-pair
@@ -24,4 +24,4 @@ Each row is one durable FX conversion / revaluation event (`transactionKind`: sp
 - SOX §404 internal-controls fx-control TOM-FX-01
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[accounting]] · [[transaction]] · [[CurrencyRates]] · [[JournalEntries]] · [[horo]] (status) · [[standard]] · [[proof]] (audit-trail).
+Composes: [[accounting]] · [[transaction]] · [[currency/rates]] · [[journal/entries]] · [[horo]] (status) · [[standard]] · [[proof]] (audit-trail).

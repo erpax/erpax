@@ -23,4 +23,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls TOM-CL-03
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[FiscalPeriods]] · [[JournalEntries]] · [[currency]].
+Composes: [[fiscal/periods]] · [[journal/entries]] · [[currency]].

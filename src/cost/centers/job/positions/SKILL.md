@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail headcount-evidence
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[RecruitingPipeline]] · [[train]] · [[identity]] · [[proof]] · [[standard]].
+Composes: [[pipeline]] · [[train]] · [[identity]] · [[proof]] · [[standard]].

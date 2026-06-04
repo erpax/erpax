@@ -26,4 +26,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - INCOTERMS-2020 delivery-responsibility-consistency
 - ISO-27002 §5.4 segregation-of-duties requester-vs-approver
 
-Composes: [[commitments]] · [[GoodsReceipts]] · [[Items]] · [[GLAccounts]] · [[Invoices]].
+Composes: [[commitments]] · [[items/purchase/orders/goods/receipts]] · [[Items]] · [[gl/accounts]] · [[Invoices]].

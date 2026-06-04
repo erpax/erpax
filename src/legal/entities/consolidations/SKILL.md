@@ -16,4 +16,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IAS-27 separate-financial-statements
 - US-GAAP ASC-810 consolidation
 
-Composes: [[LegalEntities]].
+Composes: [[legal/entities]].

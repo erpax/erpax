@@ -7,7 +7,7 @@ description: "Use when a contract allocates risk for unforeseeable events — tr
 
 Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).
 
-Composes: [[Contracts]] · [[matter]] · [[RiskRegister]] · [[termination]].
+Composes: [[Contracts]] · [[matter]] · [[legal/entities/risk/registers]] · [[termination]].
 
 ## Standards
 - PECL-Art-8.108

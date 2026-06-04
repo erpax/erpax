@@ -7,7 +7,7 @@ description: "Use when a contract is modified — amendment date, amendments pre
 
 Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.
 
-Composes: [[Contracts]] · [[contract-amendments]] · [[matter]].
+Composes: [[Contracts]] · [[customers/contracts/contract/amendments]] · [[matter]].
 
 ## Standards
 - UCC-2-209

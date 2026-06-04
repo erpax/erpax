@@ -23,4 +23,4 @@ the proceeding run-id so a re-seed never duplicates.
 - SOX §404 internal-controls deficiency-tracking
 - ISO-19011:2018 audit-trail
 
-Composes: [[RemediationPlans]] · [[access]] · [[hooks]] · [[proof]] · [[akashic]].
+Composes: [[internal/controls/audit/findings/remediation/plans]] · [[access]] · [[hooks]] · [[proof]] · [[akashic]].

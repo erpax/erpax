@@ -7,7 +7,7 @@ description: "Use when determining whether to record (recognize) an asset, liabi
 
 Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements
 
-Composes: [[JournalEntries]] · [[accrual]] · [[deferral]] · [[contract-performance]] · [[balance]].
+Composes: [[journal/entries]] · [[accrual]] · [[deferral]] · [[customers/contracts/contract/performances]] · [[balance]].
 
 ## Standards
 - IAS-1 §27-30 (recognition criteria)

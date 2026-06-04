@@ -23,4 +23,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - OECD BEPS Action 13 transfer-pricing-documentation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[TransferPricingAdjustments]] · [[accounting]] · [[transaction]] · [[JournalEntries]] · [[ConsolidationEliminations]] · [[LegalEntities]] · [[Tenants]].
+Composes: [[fiscal/periods/tax/periods/transfer/pricing/adjustments]] · [[accounting]] · [[transaction]] · [[journal/entries]] · [[consolidation/eliminations]] · [[legal/entities]] · [[Tenants]].

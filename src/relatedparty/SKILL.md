@@ -7,7 +7,7 @@ description: "Use when identifying and accounting for related-party transactions
 
 Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24
 
-Composes: [[RelatedPartyTransactions]] · [[Consolidations]] · [[IntercompanyTransactions]] · [[DisclosureChecklists]].
+Composes: [[legal/entities/related/party/transactions]] · [[Consolidations]] · [[legal/entities/intercompany/transactions]] · [[legal/entities/disclosure/checklists]].
 
 ## Standards
 - IFRS-24 (related party disclosures)

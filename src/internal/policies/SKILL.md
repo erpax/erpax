@@ -16,4 +16,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-37301:2021 compliance-policy
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[PolicyAcknowledgments]] · [[PolicyVersions]].
+Composes: [[internal/policies/policy/acknowledgments]] · [[internal/policies/policy/versions]].

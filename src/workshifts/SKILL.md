@@ -38,7 +38,7 @@ The model is the **data-true** encoding; the audit fixed the Rails accidents (a 
 
 ## Composes
 
-Authority for [[workorders]] (they inherit `efficiencyPercent`); keyed by [[employees]] (the actor / director / supervisor contracts); the team is a [[work-centers|work-centre]].
+Authority for [[workorders]] (they inherit `efficiencyPercent`); keyed by [[employees]] (the actor / director / supervisor contracts); the team is a [[work/centers|work-centre]].
 
 ## Standards
 

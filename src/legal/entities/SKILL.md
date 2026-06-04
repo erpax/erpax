@@ -29,4 +29,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 audit-trail entity-master
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[AuditCommittees]] · [[BeneficialOwners]] · [[ComplianceDeadlines]] · [[Consolidations]] · [[DisclosureChecklists]] · [[InternalAuditFunction]] · [[ManagementAssessmentICFR]] · [[ManagementCertifications]] · [[RegulatoryReports]] · [[RelatedPartyTransactions]] · [[RiskRegister]] · [[SegmentReporting]] · [[DebtSchedule]] · [[FiscalCalendars]] · [[TransferPricingFiles]].
+Composes: [[legal/entities/audit/committees]] · [[legal/entities/beneficial/owners]] · [[legal/entities/compliance/deadlines]] · [[Consolidations]] · [[legal/entities/disclosure/checklists]] · [[legal/entities/internal/audit/functions]] · [[legal/entities/management/assessment/icfrs]] · [[legal/entities/management/certifications]] · [[legal/entities/regulatory/reports]] · [[legal/entities/related/party/transactions]] · [[legal/entities/risk/registers]] · [[legal/entities/segment/reportings]] · [[legal/entities/debt/schedules]] · [[legal/entities/fiscal/calendars]] · [[legal/entities/transfer/pricing/files]].

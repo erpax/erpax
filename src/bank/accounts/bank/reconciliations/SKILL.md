@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls TOM-CSH-01 cash-balance-proof
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[BankStatements]] · [[accounting]] · [[transaction]] · [[proof]] · [[BankAccounts]].
+Composes: [[gl/accounts/bank/statements]] · [[accounting]] · [[transaction]] · [[proof]] · [[bank/accounts]].

@@ -5,9 +5,9 @@ description: Use when recording a consignee's sale to an end-customer that trigg
 
 # consignment-sales
 
-Consignment Sales — sale-by-consignee events that resolve the [[ConsignmentArrangements|arrangement]]'s IFRS-15 §B77 control-transfer indicators.
+Consignment Sales — sale-by-consignee events that resolve the [[warehouse/locations/consignment/arrangements|arrangement]]'s IFRS-15 §B77 control-transfer indicators.
 
-Each row is one reportable sale the consignee made to an end-customer. `saleDate` IS the IFRS-15 §B78 control-transfer moment — the point revenue recognises (dual of [[close|deferral]] while goods sit unsold). On that event the afterChange hook derecognises [[ConsignmentInventory|consignment inventory]] (a [[take|decrement]] of `quantityOnHand` + an `inventory-movement` of kind `sale_from_consignee`) and emits `consignment:sold`, which books one balanced [[entry]] on the [[accounting]] equation:
+Each row is one reportable sale the consignee made to an end-customer. `saleDate` IS the IFRS-15 §B78 control-transfer moment — the point revenue recognises (dual of [[close|deferral]] while goods sit unsold). On that event the afterChange hook derecognises [[warehouse/locations/consignment/arrangements/consignment/inventories|consignment inventory]] (a [[take|decrement]] of `quantityOnHand` + an `inventory-movement` of kind `sale_from_consignee`) and emits `consignment:sold`, which books one balanced [[entry]] on the [[accounting]] equation:
 
     Dr Cash / AR              netAmount
     Dr Commission Expense     commissionAmount
@@ -15,7 +15,7 @@ Each row is one reportable sale the consignee made to an end-customer. `saleDate
     Cr Revenue                grossAmount
     Cr Inventory at Consignee carryingCost
 
-`commissionRatePercent` is snapshotted at sale time — a rate-card change is not retroactive. The [[horo|status ring]] runs reported → validated → posted → reversed (reversal-only, no destructive edit). The booked [[JournalEntries|journal entry]] and the consignor's [[Invoices|invoice]] against the consignee close the loop.
+`commissionRatePercent` is snapshotted at sale time — a rate-card change is not retroactive. The [[horo|status ring]] runs reported → validated → posted → reversed (reversal-only, no destructive edit). The booked [[journal/entries|journal entry]] and the consignor's [[Invoices|invoice]] against the consignee close the loop.
 
 ## Standards
 - ISO-4217:2015 currency-codes
@@ -30,4 +30,4 @@ Each row is one reportable sale the consignee made to an end-customer. `saleDate
 - SOX §404 internal-controls revenue-completeness TOM-AR-04
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ConsignmentArrangements]] · [[ConsignmentInventory]] · [[Invoices]] · [[JournalEntries]] · [[entry]] · [[accounting]] · [[horo]].
+Composes: [[warehouse/locations/consignment/arrangements]] · [[warehouse/locations/consignment/arrangements/consignment/inventories]] · [[Invoices]] · [[journal/entries]] · [[entry]] · [[accounting]] · [[horo]].

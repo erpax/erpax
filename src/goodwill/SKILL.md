@@ -7,7 +7,7 @@ description: "Use for the excess of acquisition cost over fair value of identifi
 
 Use for the excess of acquisition cost over fair value of identifiable net assets; subject to annual impairment testing under IFRS-3 and required cash-flow allocation to CGUs
 
-Composes: [[BusinessCombinations]] · [[FixedAssets]] · [[Consolidations]] · [[impairment]] · [[FairValueMeasurements]].
+Composes: [[legal/entities/business/combinations]] · [[fixed/assets]] · [[Consolidations]] · [[impairment]] · [[fair/value/measurements]].
 
 ## Standards
 - IFRS-3 §32 (goodwill recognition)

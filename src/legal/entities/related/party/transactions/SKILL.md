@@ -14,4 +14,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - US-GAAP ASC-850 related-party-disclosures
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[AuditEvidence]].
+Composes: [[media/audit/evidences]].

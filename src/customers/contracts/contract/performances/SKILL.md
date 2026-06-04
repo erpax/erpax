@@ -23,4 +23,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls revenue-completeness TOM-AR-04
 - ISO-19011:2018 audit-trail performance-evidence
 
-Composes: [[PerformanceObligations]] · [[transaction]] · [[standard]] · [[accounting]] · [[Invoices]] · [[proof]].
+Composes: [[customers/contracts/performance/obligations]] · [[transaction]] · [[standard]] · [[accounting]] · [[Invoices]] · [[proof]].

@@ -20,11 +20,11 @@ Under IFRS 16 (effective 2019) the lessee recognises almost every lease as a rig
 - Initial liability measurement (§26–28: PV of unpaid payments, discounted at rate implicit or incremental borrowing rate)
 - Period-end carrying amounts (via [[transaction|subsequent-measurement]] cycle)
 
-The actual interest-accretion + amortisation journal entry is posted via [[LeaseModifications]] and [[LeasePeriodPostings]] — same pattern as depreciation schedules for fixed assets.
+The actual interest-accretion + amortisation journal entry is posted via [[leases/lease/modifications]] and [[leases/lease/period/postings]] — same pattern as depreciation schedules for fixed assets.
 
 ## Composition
 
-[[LeaseModifications]] · [[LeasePeriodPostings]].
+[[leases/lease/modifications]] · [[leases/lease/period/postings]].
 
 ## Standards
 

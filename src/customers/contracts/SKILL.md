@@ -29,4 +29,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.4 segregation-of-duties
 - ISO-19011:2018 audit-trail contract-lifecycle
 
-Composes: [[contract-amendments]] · [[contract-performance]] · [[contract-signatures]] · [[PerformanceObligations]].
+Composes: [[customers/contracts/contract/amendments]] · [[customers/contracts/contract/performances]] · [[customers/contracts/contract/signatures]] · [[customers/contracts/performance/obligations]].

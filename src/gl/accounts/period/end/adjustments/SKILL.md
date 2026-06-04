@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.4 segregation-of-duties approval-vs-creation
 - ISO-19011:2018 audit-trail
 
-Composes: [[accounting]] · [[JournalEntries]] · [[GLAccounts]].
+Composes: [[accounting]] · [[journal/entries]] · [[gl/accounts]].

@@ -32,5 +32,5 @@ gate + per-tenant featureGuard + audit).
 - SOX §404 internal-controls
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[AiSuggestions]] · [[access]] · [[hooks]] · [[fields]] · [[standard]] · [[identity]].
+Composes: [[ai/suggestions]] · [[access]] · [[hooks]] · [[fields]] · [[standard]] · [[identity]].
 See also: [[ai|cloudflare-ai]] (`callWorkersAi` — the single gated entrypoint that consumes the registry).

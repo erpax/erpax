@@ -25,4 +25,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - OECD GRI Standards
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[CarbonEmissions]] · [[accounting]] · [[fields]] · [[hooks]] · [[standard]].
+Composes: [[fiscal/periods/carbon/emissions]] · [[accounting]] · [[fields]] · [[hooks]] · [[standard]].

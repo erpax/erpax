@@ -7,7 +7,7 @@ description: Use when defining or managing recurring accrual templates (rent, de
 
 Recurring Journals — automation register for IAS-1 §27 accrual-basis.
 
-Template definitions for materialised [[JournalEntries]] that recur on a schedule (rent, depreciation accrual, amortisation, prepaid release, deferred-revenue release, etc.). Pairs with the Workers `period-close` queue to instantiate scheduled entries at each period rollover.
+Template definitions for materialised [[journal/entries]] that recur on a schedule (rent, depreciation accrual, amortisation, prepaid release, deferred-revenue release, etc.). Pairs with the Workers `period-close` queue to instantiate scheduled entries at each period rollover.
 
 ## Standards
 - ISO-8601-1:2019 date-time recurrence
@@ -20,4 +20,4 @@ Template definitions for materialised [[JournalEntries]] that recur on a schedul
 - SOX §404 internal-controls automated-controls
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[CostCenters]] · [[accounting]].
+Composes: [[cost/centers]] · [[accounting]].

@@ -7,7 +7,7 @@ description: "Use when a contract grants audit rights — auditor identity, audi
 
 Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.
 
-Composes: [[Contracts]] · [[matter]] · [[AuditEvents]].
+Composes: [[Contracts]] · [[matter]] · [[audit/events]].
 
 ## Standards
 - SOX-404

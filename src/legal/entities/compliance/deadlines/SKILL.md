@@ -16,4 +16,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-8601-1:2019 due-date
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ComplianceNotifications]].
+Composes: [[legal/entities/compliance/deadlines/compliance/notifications]].

@@ -95,6 +95,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "admin"
   },
   {
+    "atom": "age",
+    "name": "age",
+    "description": "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity.",
+    "path": "age"
+  },
+  {
     "atom": "agent",
     "name": "agent",
     "description": "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).",
@@ -399,6 +405,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "cardinality",
     "description": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
     "path": "cardinality"
+  },
+  {
+    "atom": "career",
+    "name": "career",
+    "description": "Use when modelling a work career as a life-course trajectory — трудова кариера — a sequence of positions on the harmonic allocation ladder walked over time. Late career is a late band on that ring (the maintenance→disengagement stage before decompression/retirement) where accumulated experience peaks against skill obsolescence and the status sign can flip with age. Derive the stage from the sequence and time; never store it.",
+    "path": "career"
   },
   {
     "atom": "carriers",
@@ -723,6 +735,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "crest",
     "description": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
     "path": "horo/crest"
+  },
+  {
+    "atom": "crisis",
+    "name": "crisis",
+    "description": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
+    "path": "crisis"
   },
   {
     "atom": "currency",
@@ -2837,6 +2855,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "utilities"
   },
   {
+    "atom": "utility",
+    "name": "utility",
+    "description": "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account.",
+    "path": "utility"
+  },
+  {
     "atom": "uuid",
     "name": "uuid",
     "description": "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity.",
@@ -2913,6 +2937,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "website",
     "description": "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record.",
     "path": "website"
+  },
+  {
+    "atom": "wellbeing",
+    "name": "wellbeing",
+    "description": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
+    "path": "wellbeing"
   },
   {
     "atom": "whole",

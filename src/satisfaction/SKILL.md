@@ -7,7 +7,7 @@ description: "Use when measuring employee/customer contentment — survey scores
 
 Use when measuring employee/customer contentment — survey scores, NPS, CSAT, engagement indices. The scalar metric of sentiment toward work, leadership, culture, or service.
 
-Composes: [[Employees]] · [[Customers]] · [[PerformanceReviews]] · [[comment]] · [[sentiment]].
+Composes: [[Employees]] · [[Customers]] · [[employees/performance/reviews]] · [[comment]] · [[sentiment]].
 
 ## Standards
 - SFIA 1-7 for competency satisfaction

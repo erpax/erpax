@@ -7,7 +7,7 @@ description: "Use when a customer/employee request, complaint, or issue becomes 
 
 Use when a customer/employee request, complaint, or issue becomes a tracked work item with queue, priority, assignment, and SLA. The polymorphic support-case container.
 
-Composes: [[comment]] · [[Activities]] · [[WorkflowInstances]] · [[Users]] · [[escalation]] · [[status]] · [[queue]] · [[resolution]].
+Composes: [[comment]] · [[Activities]] · [[workflow/definitions/workflow/instances]] · [[Users]] · [[escalation]] · [[status]] · [[queue]] · [[resolution]].
 
 ## Standards
 - ITIL for incident/request model

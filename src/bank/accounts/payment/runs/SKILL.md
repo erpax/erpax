@@ -25,4 +25,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls preparer-authoriser-segregation
 - ISO-27002 §5.4 segregation-of-duties
 
-Composes: [[SepaMandates]] · [[standard]] · [[transaction]] · [[proof]] · [[accounting]].
+Composes: [[media/sepa/mandates]] · [[standard]] · [[transaction]] · [[proof]] · [[accounting]].

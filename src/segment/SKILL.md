@@ -7,7 +7,7 @@ description: "Use when identifying and reporting operating segments per IFRS-8 �
 
 Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension
 
-Composes: [[SegmentReporting]] · [[CostCenters]] · [[FinancialStatements]] · [[dimension]].
+Composes: [[legal/entities/segment/reportings]] · [[cost/centers]] · [[financial/statements]] · [[dimension]].
 
 ## Standards
 - IFRS-8 (operating segments)

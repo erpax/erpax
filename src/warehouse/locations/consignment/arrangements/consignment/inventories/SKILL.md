@@ -5,7 +5,7 @@ description: Use when tracking per-SKU on-hand inventory balance at a consignee 
 
 # consignment-inventory
 
-Per-SKU on-hand running balance at consignee location per [[ConsignmentArrangements|arrangement]]. The asset side of the IFRS-15 §B77-B78 ledger, paired with [[ConsignmentSales|sale-by-consignee events]] and [[InventoryMovements|underlying movements]].
+Per-SKU on-hand running balance at consignee location per [[warehouse/locations/consignment/arrangements|arrangement]]. The asset side of the IFRS-15 §B77-B78 ledger, paired with [[warehouse/locations/consignment/arrangements/consignment/sales|sale-by-consignee events]] and [[items/inventory/movements|underlying movements]].
 
 This is the single-folder collection node: `index.ts` (schema + standards banners), co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here. One folder per collection ⇒ no scatter ⇒ no drift.
 
@@ -13,9 +13,9 @@ The consignor (tenant) keeps the rows on its **own** balance sheet under IAS-2 �
 
 ## Composition
 
-- [[ConsignmentArrangements]] — master agreement per arrangement
-- [[ConsignmentSales]] — sale events that decrement on-hand
-- [[InventoryMovements]] — underlying double-entry stock movements
+- [[warehouse/locations/consignment/arrangements]] — master agreement per arrangement
+- [[warehouse/locations/consignment/arrangements/consignment/sales]] — sale events that decrement on-hand
+- [[items/inventory/movements]] — underlying double-entry stock movements
 - [[accounting]] — GL posting and entry generation
 - [[transaction]] — transactional semantics
 - [[identity]] — consignee party identification

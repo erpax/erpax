@@ -7,7 +7,7 @@ description: "Use when deferring the recognition of revenue or expense to future
 
 Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition
 
-Composes: [[JournalEntries]] · [[contract-performance]] · [[PeriodEndAdjustments]] · [[RecurringJournals]] · [[accrual]] · [[prepaid]].
+Composes: [[journal/entries]] · [[customers/contracts/contract/performances]] · [[gl/accounts/period/end/adjustments]] · [[gl/accounts/recurring/journals]] · [[accrual]] · [[prepaid]].
 
 ## Standards
 - IFRS-15 §25 (contract liability)

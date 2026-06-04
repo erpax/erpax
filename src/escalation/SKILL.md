@@ -7,7 +7,7 @@ description: "Use when a ticket, issue, or complaint requires urgency upgrade �
 
 Use when a ticket, issue, or complaint requires urgency upgrade — SLA breach, priority elevation, management review, or handoff to higher authority. The action of moving a matter up the hierarchy by severity/urgency.
 
-Composes: [[WorkflowInstances]] · [[comment]] · [[Activities]] · [[status]] · [[time]].
+Composes: [[workflow/definitions/workflow/instances]] · [[comment]] · [[Activities]] · [[status]] · [[time]].
 
 ## Standards
 - ITIL for incident escalation

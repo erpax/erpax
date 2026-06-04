@@ -27,4 +27,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract guest-data
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[BookableResources]] · [[accounting]] · [[Invoices]] · [[JournalEntries]] · [[Customers]] · [[Employees]].
+Composes: [[bookable/resources]] · [[accounting]] · [[Invoices]] · [[journal/entries]] · [[Customers]] · [[Employees]].

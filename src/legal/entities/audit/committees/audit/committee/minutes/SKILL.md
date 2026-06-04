@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-8601-1:2019 meeting-date
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[BoardActions]].
+Composes: [[legal/entities/board/actions]].

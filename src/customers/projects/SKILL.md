@@ -24,4 +24,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 
-Composes: [[ProjectMilestones]] · [[ProjectTasks]] · [[WipSnapshots]].
+Composes: [[customers/projects/project/milestones]] · [[customers/projects/project/tasks]] · [[customers/projects/wip/snapshots]].

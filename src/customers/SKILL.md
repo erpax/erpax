@@ -22,4 +22,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - GDPR Art.6(1)(b) lawful-basis-contract
 - GDPR Art.5 data-minimization
 
-Composes: [[SalesOrders]] · [[identity]] · [[accounting]] · [[tax]] · [[horo]] · [[standard]].
+Composes: [[customers/sales/orders]] · [[identity]] · [[accounting]] · [[tax]] · [[horo]] · [[standard]].

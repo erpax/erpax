@@ -33,4 +33,4 @@ class never auto-decides. Inference entry-points: `@see src/services/ai/`.
 - ISO-27001 A.5.34 privacy-and-protection-of-pii
 - ISO-27002 §5.34 ai-output-validation
 
-Composes: [[uuid]] suggestion-id · the human decision-maker is a [[Users]] · metered AI billing links a [[UsageRecords]] · the inference trail IS the [[proof]] / SOX-evidence row · the banners realise the [[standard]] form.
+Composes: [[uuid]] suggestion-id · the human decision-maker is a [[Users]] · metered AI billing links a [[subscription/plans/subscriptions/usage/records]] · the inference trail IS the [[proof]] / SOX-evidence row · the banners realise the [[standard]] form.

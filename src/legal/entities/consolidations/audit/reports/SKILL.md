@@ -16,4 +16,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 reporting
 - SOX §404 internal-controls
 
-Composes: [[PostCloseAnalyticsReports]].
+Composes: [[legal/entities/consolidations/audit/reports/post/close/analytics/reports]].

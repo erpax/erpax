@@ -31,4 +31,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-27002 §5.34 privacy-and-protection-of-pii
 - ISO-27002 §8.11 data-masking
 
-Composes: [[ExpenseReports]] · [[LeaveRequests]] · [[PayrollRuns]] · [[PerformanceReviews]] · [[SalesCommissions]] · [[ShareBasedPayments]] · [[TimeEntries]].
+Composes: [[employees/expense/reports]] · [[employees/leave/requests]] · [[bank/accounts/payroll/runs]] · [[employees/performance/reviews]] · [[employees/sales/commissions]] · [[employees/share/based/payments]] · [[employees/time/entries]].

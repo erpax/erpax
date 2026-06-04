@@ -7,7 +7,7 @@ description: "Use for tax-deductible expenses and deduction timing — permanent
 
 Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-tax calculation
 
-Composes: [[tax]] · [[DeferredTaxItems]] · [[JournalEntries]] · [[TaxCalculations]] · [[variance]] · [[accrual]] · [[standard]] · [[taxexempt]].
+Composes: [[tax]] · [[tax/jurisdictions/deferred/tax/items]] · [[journal/entries]] · [[gl/accounts/tax/calculations]] · [[variance]] · [[accrual]] · [[standard]] · [[taxexempt]].
 
 ## Standards
 - IAS-12 §15 (deductible temporary difference)

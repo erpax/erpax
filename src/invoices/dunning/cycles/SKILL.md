@@ -7,7 +7,7 @@ description: Use when tracking or auditing the collections process for an overdu
 
 Dunning Cycles — collection-process record per overdue invoice.
 
-Composes: [[accounting]] · [[invoices]] · [[journal-entries]] · [[standard]].
+Composes: [[accounting]] · [[invoices]] · [[journal/entries]] · [[standard]].
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.

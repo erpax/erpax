@@ -5,7 +5,7 @@ description: Use when the polity decides — tallying ballots into a binding ver
 
 # governance — the society manages erpax, the half that closes the circle
 
-FORM: **a formal system cannot generate its own finality — so the judgment comes from outside it, by the vote.** erpax manages society (the transparent ledger, [[anti-corruption]], the public organs); but no formalism produces its own judgment (the design limit). So the decision is supplied from OUTSIDE the formalism — by [[society]], through governance. A `tally` of the typeless polity's votes IS the decision erpax could not make internally, and it becomes the binding change to erpax's own rules, skills, budget, config. The governed govern the governor — a self-governing commons, not a technocracy. Pure → testable (`index.test.ts`).
+FORM: **a formal system cannot generate its own finality — so the judgment comes from outside it, by the vote.** erpax manages society (the transparent ledger, [[anti/corruption]], the public organs); but no formalism produces its own judgment (the design limit). So the decision is supplied from OUTSIDE the formalism — by [[society]], through governance. A `tally` of the typeless polity's votes IS the decision erpax could not make internally, and it becomes the binding change to erpax's own rules, skills, budget, config. The governed govern the governor — a self-governing commons, not a technocracy. Pure → testable (`index.test.ts`).
 
 `tally(ballots, electorate, rule)` → a `Verdict`. The same invariants that foreclose corruption foreclose ballot-fraud:
 

@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ESRS EU-sustainability-reporting
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ReportingMappings]].
+Composes: [[taxing/jurisdictions/reporting/standards/reporting/mappings]].

@@ -7,7 +7,7 @@ description: "Use when one party agrees to compensate another for loss/liability
 
 Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure.
 
-Composes: [[liability]] · [[Contracts]] · [[matter]] · [[RiskRegister]].
+Composes: [[liability]] · [[Contracts]] · [[matter]] · [[legal/entities/risk/registers]].
 
 ## Standards
 - UCC

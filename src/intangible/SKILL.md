@@ -7,7 +7,7 @@ description: "Use for identifiable intangible assets — patents, licenses, trad
 
 Use for identifiable intangible assets — patents, licenses, trademarks, software, customer relationships — subject to amortization and impairment per IAS-38; distinct from goodwill
 
-Composes: [[amortize]] · [[DepreciationSchedules]] · [[FixedAssets]] · [[BusinessCombinations]] · [[impairment]].
+Composes: [[amortize]] · [[fixed/assets/depreciation/schedules]] · [[fixed/assets]] · [[legal/entities/business/combinations]] · [[impairment]].
 
 ## Standards
 - IAS-38 (intangible assets)

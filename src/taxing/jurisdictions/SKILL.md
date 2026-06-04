@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU Directive 2006/112/EC VAT
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[ReportingStandards]] · [[StatutoryReportTemplates]] · [[EntityLegalStructures]].
+Composes: [[taxing/jurisdictions/reporting/standards]] · [[taxing/jurisdictions/statutory/report/templates]] · [[taxing/jurisdictions/entity/legal/structures]].

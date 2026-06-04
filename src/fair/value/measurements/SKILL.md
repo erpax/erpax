@@ -25,4 +25,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls TOM-FV-01 valuation-process
 - ISO 27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[BiologicalAssets]] · [[EvidenceAttestations]] · [[accounting]] · [[transaction]] · [[party]] · [[standard]].
+Composes: [[biological/assets]] · [[evidence/attestations]] · [[accounting]] · [[transaction]] · [[party]] · [[standard]].

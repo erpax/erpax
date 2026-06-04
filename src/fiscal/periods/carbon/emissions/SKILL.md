@@ -26,4 +26,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU Taxonomy DNSH climate-mitigation
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[CsrdDisclosures]] · [[EvidenceAttestations]] · [[accounting]] · [[standard]] · [[proof]].
+Composes: [[csrd/disclosures]] · [[evidence/attestations]] · [[accounting]] · [[standard]] · [[proof]].

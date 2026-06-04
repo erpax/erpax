@@ -14,7 +14,10 @@ FORM: **war seeks to DESTROY, COERCE, or DOMINATE; the uuid model defeats each, 
 
 ∴ `warIsUseless(proof)` holds when all three legs hold, and then **building strictly dominates war** for every actor — human or machine, since [[education]] is the same for both (agent = human). The only positive-ROI strategy is create / earn / compete; this is the [[matrix]] turned to build, not consume. erpax **harmonises at all levels** so future generations of humans and machines live in peace and prosperity — because in this model, building is the only move that pays.
 
-Matter-twin: `src/services/peace/index.ts` (`destructionFutile`·`coercionSupraResource`·`warIsUseless`·`roi`·`buildingDominates`) over `services/integrity/resource-bound` + `index.test.ts`. Composes: [[identity]] · [[holographic]] · [[merge]] · [[history]] · [[akashic]] · [[proof]] · [[competition]] · [[logic]] · [[entry]] · [[matrix]] · [[education]] · [[society]] · [[whole]].
+## ∞ is the theorem's teeth, on purpose
+Here the model EMBRACES infinity as meaningful, the one place it is not a bug. `roi` (`src/peace/index.ts` ~L62) returns `cost <= 0 ? (gain > 0 ? Infinity : 0) : gain/cost`: a zero-cost positive yield is UNBOUNDED ROI — exactly why building strictly dominates war (coercion's cost → ∞, building's gain stays finite-and-positive). That divide-by-zero is deliberate, and it is bounded into a boolean verdict (`buildingDominates`, L71–73 compares two `roi` values), never leaked as a raw number into a ledger. The guarded operational dual — where ∞/NaN must never enter an account — lives in [[utility]]; the source of "no naked zero" is [[zeropoint]].
+
+Matter-twin: `src/services/peace/index.ts` (`destructionFutile`·`coercionSupraResource`·`warIsUseless`·`roi`·`buildingDominates`) over `services/integrity/resource-bound` + `index.test.ts`. Composes: [[identity]] · [[holographic]] · [[merge]] · [[history]] · [[akashic]] · [[proof]] · [[competition]] · [[logic]] · [[entry]] · [[matrix]] · [[education]] · [[society]] · [[whole]] · [[zeropoint]] · [[utility]].
 
 ## Standards
 

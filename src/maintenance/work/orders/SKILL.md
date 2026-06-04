@@ -5,7 +5,7 @@ description: Use when executing FM work — corrective/preventive/predictive mai
 
 # maintenance-work-orders
 
-The executable side of the FM ticket flow. Promoted from [[MaintenanceRequests]] (or raised pre-emptively for preventive / scheduled work). Tracks parts issued, labour hours, and cost — feeds GL via [[InventoryMovements]] (parts) + [[TimeEntries]] (labour) + capitalised work via [[FixedAssets]] (when work is capitalisable per IAS-16 §13).
+The executable side of the FM ticket flow. Promoted from [[maintenance/requests]] (or raised pre-emptively for preventive / scheduled work). Tracks parts issued, labour hours, and cost — feeds GL via [[items/inventory/movements]] (parts) + [[employees/time/entries]] (labour) + capitalised work via [[fixed/assets]] (when work is capitalisable per IAS-16 §13).
 
 ## Standards
 
@@ -24,11 +24,11 @@ The executable side of the FM ticket flow. Promoted from [[MaintenanceRequests]]
 
 ## Composition
 
-Composes: [[MaintenanceRequests]] · [[Properties]] · [[InventoryMovements]] · [[TimeEntries]] · [[FixedAssets]] · [[JournalEntries]].
+Composes: [[maintenance/requests]] · [[Properties]] · [[items/inventory/movements]] · [[employees/time/entries]] · [[fixed/assets]] · [[journal/entries]].
 
 ## Capitalization Logic
 
-Per IFRS IAS-16 §12–13: routine maintenance (labour, parts, vendor costs) expense to Maintenance Expense; component replacement and improvements capitalise to PPE and depreciate per the asset's schedule. Field `capitalisationTreatment` (expense | capitalise | mixed) drives whether [[JournalEntries]] post to OPEX or CAPEX on completion.
+Per IFRS IAS-16 §12–13: routine maintenance (labour, parts, vendor costs) expense to Maintenance Expense; component replacement and improvements capitalise to PPE and depreciate per the asset's schedule. Field `capitalisationTreatment` (expense | capitalise | mixed) drives whether [[journal/entries]] post to OPEX or CAPEX on completion.
 
 ## Work-Type Taxonomy
 
@@ -40,4 +40,4 @@ Status progression: Planned → Scheduled → Dispatched → In Progress → (Aw
 
 ## Safety & Compliance
 
-Optional gates: permit-to-work, LOTO (Lockout-Tagout per OSHA 29 CFR 1910.147 / EN 50110), hot-work flags. Post-work [[JournalEntries]] on completion; optional reference to [[QualityInspections]] for defect tracking.
+Optional gates: permit-to-work, LOTO (Lockout-Tagout per OSHA 29 CFR 1910.147 / EN 50110), hot-work flags. Post-work [[journal/entries]] on completion; optional reference to [[items/quality/inspections]] for defect tracking.

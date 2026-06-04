@@ -15,4 +15,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - IFRS IAS-1 financial-statement-analysis
 - SOX §404 close-monitoring
 
-Composes: [[AuditReports]].
+Composes: [[legal/entities/consolidations/audit/reports]].

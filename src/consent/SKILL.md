@@ -7,7 +7,7 @@ description: "Use when a contract or compliance regime requires explicit consent
 
 Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.
 
-Composes: [[Contracts]] · [[matter]] · [[ConsentRecords]].
+Composes: [[Contracts]] · [[matter]] · [[consent/records]].
 
 ## Standards
 - GDPR-Art-7

@@ -5,7 +5,7 @@ description: Use when managing purchase-side party master data — vendor identi
 
 # vendors
 
-[[identity]] — [[standard]] party registry for purchase-side operations. Master data for all vendor relationships: legal identity, tax classification, bank details, payment terms, and ledger defaults. Composes [[VendorScorecards]] · [[VendorQuotes]].
+[[identity]] — [[standard]] party registry for purchase-side operations. Master data for all vendor relationships: legal identity, tax classification, bank details, payment terms, and ledger defaults. Composes [[vendors/vendor/scorecards]] · [[vendors/vendor/quotes]].
 
 ## Standards
 - ISO-4217:2015 currency-codes
@@ -20,4 +20,4 @@ description: Use when managing purchase-side party master data — vendor identi
 - US-IRS Form-1099 information-return
 - GDPR Art.6(1)(b) lawful-basis-contract
 
-Composes: [[VendorScorecards]] · [[VendorQuotes]].
+Composes: [[vendors/vendor/scorecards]] · [[vendors/vendor/quotes]].

@@ -17,4 +17,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - ISO-19011:2018 oversight
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[AuditCommitteeMembers]] · [[AuditCommitteeMinutes]].
+Composes: [[legal/entities/audit/committees/audit/committee/members]] · [[legal/entities/audit/committees/audit/committee/minutes]].

@@ -20,4 +20,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls reconciliation-sign-off
 - ISO-27002 §5.4 segregation-of-duties preparer-vs-reviewer
 
-Composes: [[BankTransactions]] · [[accounting]] · [[JournalEntries]] · [[GLAccounts]] · [[BankAccounts]] · [[BankStatements]].
+Composes: [[bank/accounts/bank/transactions]] · [[accounting]] · [[journal/entries]] · [[gl/accounts]] · [[bank/accounts]] · [[gl/accounts/bank/statements]].

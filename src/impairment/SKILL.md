@@ -7,7 +7,7 @@ description: "Use when an asset's fair value or recoverable amount falls permane
 
 Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets
 
-Composes: [[FixedAssets]] · [[intangible]] · [[goodwill]] · [[InvestmentProperties]] · [[BiologicalAssets]].
+Composes: [[fixed/assets]] · [[intangible]] · [[goodwill]] · [[properties/investment/properties]] · [[biological/assets]].
 
 ## Standards
 - IAS-36 (impairment of assets)

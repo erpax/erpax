@@ -82,4 +82,4 @@ Applying this skill *is* how the standard is met — the answer-path is the impl
 - Integer-only units — carry `unitOfMeasure` (kills process-industry support).
 - A non-manufacturing collection holding a field pointing INTO manufacturing — keep refs outward/polymorphic.
 
-Composes: [[WorkCenters]] · [[variant]].
+Composes: [[work/centers]] · [[variant]].
