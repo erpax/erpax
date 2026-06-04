@@ -49,8 +49,8 @@ import { QueryPresetsGroupByCell as QueryPresetsGroupByCell_2b8867833a34864a02dd
 import { QueryPresetsGroupByField as QueryPresetsGroupByField_2b8867833a34864a02ddf429b0728a40 } from '@payloadcms/next/client'
 import { RowLabel as RowLabel_32a51e6e3af330e56588397e714b8f89 } from '@/components/Header/RowLabel'
 import { RowLabel as RowLabel_60b5df3cbc6a1ff1b7020e4512a8a1e3 } from '@/components/Footer/RowLabel'
-import { default as default_1a7510af427896d367a49dbf838d2de6 } from '@/components/BeforeDashboard'
-import { default as default_8a7ab0eb7ab5c511aba12e68480bfe5e } from '@/components/BeforeLogin'
+import { default as default_57122232237b9417f4a7d29c208d6a6c } from '@/before/dashboard'
+import { default as default_4ceb3074435d2b230315867f7bd7dc11 } from '@/before/login'
 import { TenantSelector as TenantSelector_d6d5f193a167989e2ee7d14202901e62 } from '@payloadcms/plugin-multi-tenant/rsc'
 import { R2ClientUploadHandler as R2ClientUploadHandler_85cc02ed84006fcc91d3aff39dda669d } from '@payloadcms/storage-r2/client'
 import { TenantSelectionProvider as TenantSelectionProvider_d6d5f193a167989e2ee7d14202901e62 } from '@payloadcms/plugin-multi-tenant/rsc'
@@ -110,8 +110,8 @@ export const importMap = {
   "@payloadcms/next/client#QueryPresetsGroupByField": QueryPresetsGroupByField_2b8867833a34864a02ddf429b0728a40,
   "@/components/Header/RowLabel#RowLabel": RowLabel_32a51e6e3af330e56588397e714b8f89,
   "@/components/Footer/RowLabel#RowLabel": RowLabel_60b5df3cbc6a1ff1b7020e4512a8a1e3,
-  "@/components/BeforeDashboard#default": default_1a7510af427896d367a49dbf838d2de6,
-  "@/components/BeforeLogin#default": default_8a7ab0eb7ab5c511aba12e68480bfe5e,
+  "@/before/dashboard#default": default_57122232237b9417f4a7d29c208d6a6c,
+  "@/before/login#default": default_4ceb3074435d2b230315867f7bd7dc11,
   "@payloadcms/plugin-multi-tenant/rsc#TenantSelector": TenantSelector_d6d5f193a167989e2ee7d14202901e62,
   "@payloadcms/storage-r2/client#R2ClientUploadHandler": R2ClientUploadHandler_85cc02ed84006fcc91d3aff39dda669d,
   "@payloadcms/plugin-multi-tenant/rsc#TenantSelectionProvider": TenantSelectionProvider_d6d5f193a167989e2ee7d14202901e62,
