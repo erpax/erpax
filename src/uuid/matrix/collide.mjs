@@ -93,6 +93,7 @@ for (const f of files) {
     const ex = nodes[idx.get(key)]
     ex.members = [...(ex.members ?? [ex.path]), path]
     ex.uuid = merge(ex.uuid, uuid)
+    ex.bind = merge(ex.bind ?? ex.uuid, toUuid(Buffer.from(path))) // cross each member path in
     ex.path = null // a collection spans paths; no single one
     const p = positionOf(key, ex.dim, ex.uuid) // re-place from the accountable (merged) uuid
     ex.band = p.band
@@ -100,8 +101,10 @@ for (const f of files) {
     continue
   }
   const pos = positionOf(key, dim, uuid)
+  const puid = toUuid(Buffer.from(path)) // path-uuid — WHERE (the [[coordinate]])
+  const bind = merge(uuid, puid) // the cross: pins content to location (tamper-evident)
   idx.set(key, nodes.length)
-  nodes.push({ atom: key, uuid, dim, band: pos.band, horo: pos.horo, path })
+  nodes.push({ atom: key, uuid, puid, bind, dim, band: pos.band, horo: pos.horo, path })
 }
 
 // ── 2. edges (collisions) ──
@@ -123,8 +126,8 @@ for (const f of files) {
   }
 }
 
-// ── 3. root (Merkle fold) ──
-let layer = nodes.map((n) => n.uuid).sort()
+// ── 3. root (Merkle fold over the content⊕path BIND — the [[coordinate]] root) ──
+let layer = nodes.map((n) => n.bind ?? n.uuid).sort()
 while (layer.length > 1) {
   const next = []
   for (let i = 0; i < layer.length; i += 2) next.push(i + 1 < layer.length ? merge(layer[i], layer[i + 1]) : layer[i])
@@ -183,7 +186,7 @@ if (EMIT) {
     ' * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)',
     ' */',
     '',
-    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string | null; readonly members?: readonly string[] }',
+    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly puid?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string | null; readonly members?: readonly string[] }',
     'export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }',
     '',
     `export const UUID_MATRIX_ROOT = ${j(root)} as const`,
