@@ -1,0 +1,601 @@
+/**
+ * Period-End Adjustment Service — depreciation, accruals, deferrals, allocations.
+ *
+ * **Status (post tech-debt sweep)**: the calculation methods on this
+ * service (`generateDepreciation`, `generateInterestAccruals`,
+ * `generateSalaryAccruals`, `postInventoryAdjustment`) are substantively
+ * implemented and ready to be called by a future scheduled close-job.
+ * The in-memory `Map<>` storage is a TEST SEAM only — production
+ * depreciation now flows through the dedicated
+ * `src/services/depreciation.service.ts` (IAS 16/ASC 360 with the full
+ * canonical method set) and posts JEs via the canonical
+ * `period-end-adjustment.hook.ts` on `period-end-adjustments` rows
+ * transitioning to `status = 'posted'`.
+ *
+ * **DO NOT USE** the in-memory `createAsset / createInterestAccrual /
+ * createSalaryAccrual` paths in production — they're wiped on every
+ * Cloudflare Workers cold start. Persist the data in the `fixed-assets` /
+ * `period-end-adjustments` Payload collections and call this service's
+ * pure calculation methods to derive amounts.
+ *
+ * @standard ISO-8601-1:2019 date-time period
+ * @standard ISO-4217:2015 currency-codes
+ * @accounting IFRS IAS-1 presentation-of-financial-statements
+ * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
+ * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
+ * @accounting IFRS IAS-19 employee-benefits payroll-accrual
+ * @accounting IFRS IAS-23 borrowing-costs interest-accrual
+ * @accounting IFRS IAS-37 provisions-contingent-liabilities
+ * @accounting US-GAAP ASC-250 accounting-changes-and-error-corrections
+ * @accounting US-GAAP ASC-360 property-plant-and-equipment
+ * @accounting US-GAAP ASC-405 liabilities accrued-expenses
+ * @compliance SOX §404 internal-controls
+ * @audit ISO-19011:2018 audit-trail
+ * @see src/services/depreciation.service.ts (production depreciation path)
+ * @see src/plugins/accounting/hooks/period-end-adjustment.hook.ts (production GL post)
+ * @see docs/STANDARDS.md §4.2
+ */
+
+import { v4 as uuid } from 'uuid';
+import {
+  FixedAsset,
+  DepreciationCalculation,
+  InterestAccrual,
+  InterestAccrualCalculation,
+  SalaryAccrual,
+  SalaryAccrualCalculation,
+  InventoryAdjustment,
+  PeriodEndAdjustment,
+  PeriodEndConfig,
+} from '@/types/period-end';
+import { journalEntryService, JournalEntryLine } from '@/journal/entry.service';
+import { eventEmitter } from '@/event/emitter.service';
+
+// Mock database
+const fixedAssets = new Map<string, FixedAsset>();
+const interestAccruals = new Map<string, InterestAccrual>();
+const salaryAccruals = new Map<string, SalaryAccrual>();
+const inventoryAdjustments = new Map<string, InventoryAdjustment>();
+const periodEndAdjustments = new Map<string, PeriodEndAdjustment>();
+const periodEndConfigs = new Map<string, PeriodEndConfig>();
+
+const DEFAULT_CONFIG: PeriodEndConfig = {
+  tenantId: '',
+  autoDepreciation: true,
+  autoInterestAccrual: true,
+  autoSalaryAccrual: true,
+  autoInventoryAdjustment: false, // Requires manual count
+  requireApprovalBeforePosting: true,
+  closingDay: 28,
+};
+
+class PeriodEndAdjustmentService {
+  /**
+   * Generate all period-end adjustments
+   */
+  async generateAdjustments(
+    tenantId: string,
+    periodEndDate: Date,
+    userId: string
+  ): Promise<PeriodEndAdjustment[]> {
+    const config = this.getConfig(tenantId);
+    const adjustments: PeriodEndAdjustment[] = [];
+
+    console.log(`\nGenerating adjustments for period ending ${periodEndDate.toDateString()}...\n`);
+
+    // 1. Depreciation
+    if (config.autoDepreciation) {
+      const depAdjustments = await this.generateDepreciation(tenantId, periodEndDate, userId);
+      adjustments.push(...depAdjustments);
+      console.log(`✓ Created ${depAdjustments.length} depreciation adjustments`);
+    }
+
+    // 2. Interest Accruals
+    if (config.autoInterestAccrual) {
+      const intAdjustments = await this.generateInterestAccruals(tenantId, periodEndDate, userId);
+      adjustments.push(...intAdjustments);
+      console.log(`✓ Created ${intAdjustments.length} interest accrual adjustments`);
+    }
+
+    // 3. Salary Accruals
+    if (config.autoSalaryAccrual) {
+      const salaryAdjustments = await this.generateSalaryAccruals(
+        tenantId,
+        periodEndDate,
+        userId
+      );
+      adjustments.push(...salaryAdjustments);
+      console.log(`✓ Created ${salaryAdjustments.length} salary accrual adjustments`);
+    }
+
+    // 4. Inventory Adjustments (manual, not auto)
+    // User must provide physical counts
+
+    return adjustments;
+  }
+
+  /**
+   * Generate depreciation adjustments
+   */
+  private async generateDepreciation(
+    tenantId: string,
+    periodEndDate: Date,
+    userId: string
+  ): Promise<PeriodEndAdjustment[]> {
+    const adjustments: PeriodEndAdjustment[] = [];
+
+    // Get all active fixed assets
+    const assets = Array.from(fixedAssets.values()).filter(
+      (a) => a.tenantId === tenantId && a.status === 'active'
+    );
+
+    for (const asset of assets) {
+      const calculation = this.calculateDepreciation(asset, periodEndDate);
+
+      // Create journal entry
+      const lines: JournalEntryLine[] = [
+        {
+          accountId: asset.depreciationExpenseAccountId,
+          debit: calculation.currentMonthDepreciation,
+          description: `Depreciation - ${asset.name}`,
+        },
+        {
+          accountId: asset.accumulatedDepreciationAccountId,
+          credit: calculation.currentMonthDepreciation,
+          description: `Accumulated depreciation - ${asset.name}`,
+        },
+      ];
+
+      const entry = await journalEntryService.createEntry(tenantId, {
+        entryDate: periodEndDate,
+        description: `Depreciation - ${asset.name}`,
+        lines,
+        sourceType: 'fixed_asset',
+        sourceId: asset.id,
+        sourceEvent: 'depreciation:calculated',
+        userId,
+      });
+
+      // Create adjustment record
+      const adjustment: PeriodEndAdjustment = {
+        id: uuid(),
+        tenantId,
+        adjustmentType: 'depreciation',
+        referenceId: asset.id,
+        journalEntryId: entry.id,
+        amount: calculation.currentMonthDepreciation,
+        description: `Depreciation - ${asset.name}`,
+        adjustmentDate: periodEndDate,
+        status: 'draft',
+        createdAt: new Date(),
+        createdBy: userId,
+      };
+
+      periodEndAdjustments.set(adjustment.id, adjustment);
+      adjustments.push(adjustment);
+
+      // Update asset
+      asset.accumulatedDepreciation += calculation.currentMonthDepreciation;
+      asset.depreciationToDate = periodEndDate;
+    }
+
+    return adjustments;
+  }
+
+  /**
+   * Calculate depreciation for asset
+   */
+  private calculateDepreciation(asset: FixedAsset, _asOfDate: Date): DepreciationCalculation {
+    const depreciableBase = asset.originalCost - asset.salvageValue;
+    let annualDepreciation = 0;
+
+    switch (asset.depreciationMethod) {
+      case 'straight_line':
+        annualDepreciation = depreciableBase / asset.usefulLifeYears;
+        break;
+
+      case 'declining_balance':
+        const rate = 2 / asset.usefulLifeYears; // Double declining balance
+        const bookValue = asset.originalCost - asset.accumulatedDepreciation;
+        annualDepreciation = bookValue * rate;
+        break;
+
+      case 'units_of_production':
+        if (!asset.unitsExpected) {
+          annualDepreciation = depreciableBase / asset.usefulLifeYears;
+        } else {
+          // For simplicity, use straight-line equivalent
+          // In production, would track actual units produced
+          annualDepreciation = depreciableBase / asset.usefulLifeYears;
+        }
+        break;
+    }
+
+    const monthlyDepreciation = annualDepreciation / 12;
+    const netBookValue = asset.originalCost - asset.accumulatedDepreciation - monthlyDepreciation;
+
+    return {
+      assetId: asset.id,
+      assetName: asset.name,
+      originalCost: asset.originalCost,
+      usefulLifeYears: asset.usefulLifeYears,
+      salvageValue: asset.salvageValue,
+      depreciationMethod: asset.depreciationMethod,
+      annualDepreciation,
+      monthlyDepreciation,
+      currentMonthDepreciation: monthlyDepreciation,
+      accumulatedToDate: asset.accumulatedDepreciation + monthlyDepreciation,
+      netBookValue,
+    };
+  }
+
+  /**
+   * Generate interest accrual adjustments
+   */
+  private async generateInterestAccruals(
+    tenantId: string,
+    periodEndDate: Date,
+    userId: string
+  ): Promise<PeriodEndAdjustment[]> {
+    const adjustments: PeriodEndAdjustment[] = [];
+
+    const accruals = Array.from(interestAccruals.values()).filter(
+      (a) => a.tenantId === tenantId && a.status === 'active'
+    );
+
+    for (const accrual of accruals) {
+      const calculation = this.calculateInterestAccrual(accrual, periodEndDate);
+
+      // Create journal entry
+      const lines: JournalEntryLine[] = [
+        {
+          accountId: accrual.interestExpenseAccountId,
+          debit: calculation.periodInterest,
+          description: `Interest accrual`,
+        },
+        {
+          accountId: accrual.interestPayableAccountId,
+          credit: calculation.periodInterest,
+          description: `Interest payable accrual`,
+        },
+      ];
+
+      const entry = await journalEntryService.createEntry(tenantId, {
+        entryDate: periodEndDate,
+        description: `Interest accrual`,
+        lines,
+        sourceType: 'liability',
+        sourceId: accrual.id,
+        sourceEvent: 'interest:accrued',
+        userId,
+      });
+
+      const adjustment: PeriodEndAdjustment = {
+        id: uuid(),
+        tenantId,
+        adjustmentType: 'interest_accrual',
+        referenceId: accrual.id,
+        journalEntryId: entry.id,
+        amount: calculation.periodInterest,
+        description: `Interest accrual`,
+        adjustmentDate: periodEndDate,
+        status: 'draft',
+        createdAt: new Date(),
+        createdBy: userId,
+      };
+
+      periodEndAdjustments.set(adjustment.id, adjustment);
+      adjustments.push(adjustment);
+
+      // Update accrual
+      accrual.lastAccrualDate = periodEndDate;
+    }
+
+    return adjustments;
+  }
+
+  /**
+   * Calculate interest accrual
+   */
+  private calculateInterestAccrual(
+    accrual: InterestAccrual,
+    asOfDate: Date
+  ): InterestAccrualCalculation {
+    // Days since last accrual
+    const daysInPeriod = Math.floor(
+      (asOfDate.getTime() - accrual.lastAccrualDate.getTime()) / (1000 * 60 * 60 * 24)
+    ) || 1;
+
+    const dailyInterest = (accrual.principalAmount * accrual.annualRate) / 100 / 365;
+    const periodInterest = dailyInterest * daysInPeriod;
+
+    return {
+      liabilityId: accrual.id,
+      principalAmount: accrual.principalAmount,
+      annualRate: accrual.annualRate,
+      daysInPeriod,
+      daysInYear: 365,
+      dailyInterest,
+      periodInterest,
+      accumulatedInterest: periodInterest,
+    };
+  }
+
+  /**
+   * Generate salary accrual adjustments
+   */
+  private async generateSalaryAccruals(
+    tenantId: string,
+    periodEndDate: Date,
+    userId: string
+  ): Promise<PeriodEndAdjustment[]> {
+    const adjustments: PeriodEndAdjustment[] = [];
+
+    const salaries = Array.from(salaryAccruals.values()).filter(
+      (s) => s.tenantId === tenantId && s.status === 'active'
+    );
+
+    for (const salary of salaries) {
+      const calculation = this.calculateSalaryAccrual(salary, periodEndDate);
+
+      // Create journal entry
+      const lines: JournalEntryLine[] = [
+        {
+          accountId: salary.salaryExpenseAccountId,
+          debit: calculation.periodAccrual,
+          description: `Salary accrual - ${salary.name}`,
+        },
+        {
+          accountId: salary.salaryPayableAccountId,
+          credit: calculation.periodAccrual,
+          description: `Salary payable - ${salary.name}`,
+        },
+      ];
+
+      const entry = await journalEntryService.createEntry(tenantId, {
+        entryDate: periodEndDate,
+        description: `Salary accrual - ${salary.name}`,
+        lines,
+        sourceType: 'payroll',
+        sourceId: salary.id,
+        sourceEvent: 'salary:accrued',
+        userId,
+      });
+
+      const adjustment: PeriodEndAdjustment = {
+        id: uuid(),
+        tenantId,
+        adjustmentType: 'salary_accrual',
+        referenceId: salary.id,
+        journalEntryId: entry.id,
+        amount: calculation.periodAccrual,
+        description: `Salary accrual - ${salary.name}`,
+        adjustmentDate: periodEndDate,
+        status: 'draft',
+        createdAt: new Date(),
+        createdBy: userId,
+      };
+
+      periodEndAdjustments.set(adjustment.id, adjustment);
+      adjustments.push(adjustment);
+
+      // Update salary
+      salary.lastAccrualDate = periodEndDate;
+    }
+
+    return adjustments;
+  }
+
+  /**
+   * Calculate salary accrual
+   */
+  private calculateSalaryAccrual(
+    salary: SalaryAccrual,
+    asOfDate: Date
+  ): SalaryAccrualCalculation {
+    // Days since last accrual
+    const daysInPeriod = Math.floor(
+      (asOfDate.getTime() - salary.lastAccrualDate.getTime()) / (1000 * 60 * 60 * 24)
+    ) || 1;
+
+    const dailyRate = salary.weeklyPayroll / 7;
+    const periodAccrual = dailyRate * daysInPeriod;
+
+    return {
+      salaryId: salary.id,
+      weeklyPayroll: salary.weeklyPayroll,
+      daysInPeriod,
+      frequency: salary.frequency,
+      dailyRate,
+      periodAccrual,
+    };
+  }
+
+  /**
+   * Post period-end adjustments to GL
+   */
+  async postAdjustments(
+    tenantId: string,
+    adjustmentIds: string[],
+    userId: string
+  ): Promise<void> {
+    for (const adjId of adjustmentIds) {
+      const adj = periodEndAdjustments.get(adjId);
+      if (!adj) continue;
+
+      // Post the GL entry
+      await journalEntryService.postEntry(tenantId, adj.journalEntryId, userId);
+
+      // Update status
+      adj.status = 'posted';
+      adj.postedAt = new Date();
+      adj.postedBy = userId;
+    }
+
+    // Emit event
+    await eventEmitter.emit({
+      eventId: uuid(),
+      eventType: 'period:adjustments:posted',
+      tenantId,
+      aggregateId: tenantId,
+      aggregateType: 'invoice',
+      timestamp: new Date(),
+      userId,
+      payload: { adjustmentCount: adjustmentIds.length },
+    });
+  }
+
+  /**
+   * Create fixed asset
+   */
+  async createAsset(tenantId: string, asset: Omit<FixedAsset, 'id' | 'createdAt' | 'updatedAt'>): Promise<FixedAsset> {
+    const newAsset: FixedAsset = {
+      ...asset,
+      id: uuid(),
+      accumulatedDepreciation: 0,
+      depreciationToDate: asset.purchaseDate,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+
+    fixedAssets.set(newAsset.id, newAsset);
+    return newAsset;
+  }
+
+  /**
+   * Create interest accrual
+   */
+  async createInterestAccrual(
+    tenantId: string,
+    accrual: Omit<InterestAccrual, 'id' | 'createdAt' | 'lastAccrualDate'>
+  ): Promise<InterestAccrual> {
+    const newAccrual: InterestAccrual = {
+      ...accrual,
+      id: uuid(),
+      createdAt: new Date(),
+      lastAccrualDate: new Date(),
+    };
+
+    interestAccruals.set(newAccrual.id, newAccrual);
+    return newAccrual;
+  }
+
+  /**
+   * Create salary accrual
+   */
+  async createSalaryAccrual(
+    tenantId: string,
+    salary: Omit<SalaryAccrual, 'id' | 'createdAt' | 'lastAccrualDate'>
+  ): Promise<SalaryAccrual> {
+    const newSalary: SalaryAccrual = {
+      ...salary,
+      id: uuid(),
+      createdAt: new Date(),
+      lastAccrualDate: new Date(),
+    };
+
+    salaryAccruals.set(newSalary.id, newSalary);
+    return newSalary;
+  }
+
+  /**
+   * Post inventory adjustment
+   */
+  async postInventoryAdjustment(
+    tenantId: string,
+    adjustment: InventoryAdjustment,
+    userId: string
+  ): Promise<PeriodEndAdjustment> {
+    // Create GL entry for inventory variance
+    const lines: JournalEntryLine[] = [
+      {
+        accountId: adjustment.varianceAccountId || adjustment.cogsAccountId,
+        debit:
+          adjustment.adjustmentQuantity > 0
+            ? adjustment.adjustmentAmount
+            : undefined,
+        credit:
+          adjustment.adjustmentQuantity < 0
+            ? Math.abs(adjustment.adjustmentAmount)
+            : undefined,
+        description: `Inventory adjustment - ${adjustment.itemName}`,
+      },
+      {
+        accountId: adjustment.inventoryAccountId,
+        debit:
+          adjustment.adjustmentQuantity < 0
+            ? Math.abs(adjustment.adjustmentAmount)
+            : undefined,
+        credit:
+          adjustment.adjustmentQuantity > 0
+            ? adjustment.adjustmentAmount
+            : undefined,
+        description: `Inventory adjustment - ${adjustment.itemName}`,
+      },
+    ];
+
+    const entry = await journalEntryService.createEntry(tenantId, {
+      entryDate: adjustment.adjustmentDate,
+      description: `Inventory adjustment - ${adjustment.itemName}`,
+      lines,
+      sourceType: 'inventory',
+      sourceId: adjustment.id,
+      sourceEvent: 'inventory:adjusted',
+      userId,
+    });
+
+    await journalEntryService.postEntry(tenantId, entry.id, userId);
+
+    const periodAdj: PeriodEndAdjustment = {
+      id: uuid(),
+      tenantId,
+      adjustmentType: 'inventory_adjustment',
+      referenceId: adjustment.id,
+      journalEntryId: entry.id,
+      amount: adjustment.adjustmentAmount,
+      description: `Inventory adjustment - ${adjustment.itemName}`,
+      adjustmentDate: adjustment.adjustmentDate,
+      status: 'posted',
+      postedAt: new Date(),
+      postedBy: userId,
+      createdAt: new Date(),
+      createdBy: userId,
+    };
+
+    periodEndAdjustments.set(periodAdj.id, periodAdj);
+    return periodAdj;
+  }
+
+  /**
+   * Get config
+   */
+  private getConfig(tenantId: string): PeriodEndConfig {
+    return (
+      periodEndConfigs.get(tenantId) || {
+        ...DEFAULT_CONFIG,
+        tenantId,
+      }
+    );
+  }
+
+  /**
+   * Set config
+   */
+  async setConfig(tenantId: string, config: Partial<PeriodEndConfig>): Promise<void> {
+    const current = this.getConfig(tenantId);
+    periodEndConfigs.set(tenantId, { ...current, ...config });
+  }
+
+  /**
+   * Clear data (for testing)
+   */
+  clearAllData(): void {
+    fixedAssets.clear();
+    interestAccruals.clear();
+    salaryAccruals.clear();
+    inventoryAdjustments.clear();
+    periodEndAdjustments.clear();
+  }
+}
+
+export const periodEndAdjustmentService = new PeriodEndAdjustmentService();

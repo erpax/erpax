@@ -8,9 +8,9 @@
  * @standard ISO/IEC 25010:2023 §5.5 testability
  */
 import { describe, it, expect, vi } from 'vitest'
-import { FinanceAgent } from './finance.agent'
-import type { AgentContext, DomainEvent } from '@/services/agents/types'
-import type { SpecChainStep } from '@/services/spec-generator'
+import { FinanceAgent } from '@/agents/accounting/finance.agent'
+import type { AgentContext, DomainEvent } from '@/agent/types'
+import type { SpecChainStep } from '@/spec/generator'
 
 function mockCtx(overrides: Partial<AgentContext> = {}): AgentContext {
   return {

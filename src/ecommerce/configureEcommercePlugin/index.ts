@@ -31,7 +31,7 @@ import type { Plugin } from 'payload'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 
 import { createTenantStripePaymentMethod } from '@/ecommerce/createTenantStripePaymentMethod'
-import { ProductsCollection } from '@/collections/Media/Products'
+import { ProductsCollection } from '@/media/products'
 import { adminOnlyFieldAccess } from '@/ecommerce/access/adminOnlyFieldAccess'
 import { adminOrPublishedStatus } from '@/ecommerce/access/adminOrPublishedStatus'
 import { customerOnlyFieldAccess } from '@/ecommerce/access/customerOnlyFieldAccess'
@@ -41,9 +41,9 @@ import { isDocumentOwner } from '@/ecommerce/access/isDocumentOwner'
 import { validateProductCheckout } from '@/ecommerce/productValidation'
 import { localeRecord } from '@/i18n'
 import { DEFAULT_COUNTRY, DEFAULT_CURRENCY } from '@/config/regional-defaults'
-import { validateAddressHook } from '@/hooks/validateAddress'
+import { validateAddressHook } from '@/validate/address'
 import { emitOrderLifecycleEvents } from '@/ecommerce/hooks/emitOrderLifecycleEvents'
-import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { auditTrailAfterChange } from '@/audit/trail/after/change'
 
 /** Match Payload ecommerce template nav: variant helpers live under Ecommerce, not ungrouped (`group: false`). */
 const ecommerceGroupOverride: CollectionOverride = ({ defaultCollection }) => ({

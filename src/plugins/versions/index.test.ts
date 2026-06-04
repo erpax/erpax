@@ -2,7 +2,7 @@ import type { Config } from 'payload'
 
 import { describe, expect, it } from 'vitest'
 
-import { DEFAULT_MAX_PER_DOC, VERSIONS_EXCLUDE, versionsPlugin } from './index'
+import { DEFAULT_MAX_PER_DOC, VERSIONS_EXCLUDE, versionsPlugin } from '@/plugins/versions'
 
 type Coll = { slug: string; fields: never[]; versions?: unknown }
 const run = (collections: Coll[], opts?: Parameters<typeof versionsPlugin>[0]): Config =>

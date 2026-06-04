@@ -11,22 +11,22 @@
 
 import type { Metadata } from 'next'
 
-import { PayloadRedirects } from '@/components/PayloadRedirects'
+import { PayloadRedirects } from '@/payload/redirect'
 import configPromise from '@payload-config'
 import type { Where } from 'payload'
 import { getPayload, type RequiredDataFromCollectionSlug, type TypedLocale } from 'payload'
 import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
-import { homeStatic } from '@/endpoints/seed/home-static'
+import { homeStatic } from '@/seed/home-static'
 
-import { RenderBlocks } from '@/components/blocks/RenderBlocks'
-import { RenderHero } from '@/components/heros/RenderHero'
-import { generateMeta } from '@/utilities/generateMeta'
-import PageClient from './page.client'
-import { LivePreviewListener } from '@/components/LivePreviewListener'
+import { RenderBlocks } from '@/block/RenderBlocks'
+import { RenderHero } from '@/hero/RenderHero'
+import { generateMeta } from '@/generate/meta'
+import PageClient from '@/app/(frontend)/[locale]/[slug]/page.client'
+import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
-import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
-import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
+import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 const siteTenantSlug = process.env.NEXT_PUBLIC_SITE_TENANT_SLUG
 

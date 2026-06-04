@@ -20,7 +20,7 @@ import {
   handleInvoiceSync,
   handleInvoicePaid,
   handleInvoicePaymentFailed,
-} from '@/utilities/billing/stripeWebhookHandlers'
+} from '@/billing/stripeWebhookHandlers'
 import Stripe from 'stripe'
 import type { Payload } from 'payload'
 

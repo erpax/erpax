@@ -34,7 +34,7 @@ import {
   verifyStructured,
   SLOT_TAGS,
   type StructuredUuidParts,
-} from '@/services/uuid-format'
+} from '@/uuid/format'
 
 /** A role on an LLM turn (OpenAI/Anthropic message convention). */
 export type LlmRole = 'system' | 'user' | 'assistant' | 'tool'

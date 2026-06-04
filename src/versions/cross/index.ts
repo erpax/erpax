@@ -26,8 +26,8 @@
  * @see src/access/cross/index.ts   the sibling cross (role × capability)
  * @see src/versions/SKILL.md        the law + the three faces
  */
-import { computeContentUuid } from '@/services/integrity'
-import { crackVerdict, type CrackVerdict } from '@/services/tamper-cost'
+import { computeContentUuid } from '@/integrity'
+import { crackVerdict, type CrackVerdict } from '@/tamper/cost'
 import type { DomainEvent } from '@/types/events'
 
 /** The analytics face — a DomainEvent-shaped data-point for the change-stream. */

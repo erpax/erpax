@@ -26,9 +26,9 @@
  * @audit ISO 19011 — efficiency, debt and pay are deterministic functions of the gap
  */
 
-import { competencyGap, type HeldLine, type RequiredLine } from '@/services/competency-gap'
+import { competencyGap, type HeldLine, type RequiredLine } from '@/competency/gap'
 import { levelCeiling, rateAtFraction, type GradientFactors } from '@/decompression'
-import { ANCHOR } from '@/services/allocation'
+import { ANCHOR } from '@/allocation'
 
 /**
  * The actor's efficiency at a role: the fraction of required competencies met —

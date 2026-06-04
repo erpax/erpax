@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 
 import { describe, expect, it } from 'vitest'
 
-import { capabilitiesFor, collapseApiKeyScopes, toCamelCase } from './index'
+import { capabilitiesFor, collapseApiKeyScopes, toCamelCase } from '@/plugins/mcpScopes'
 
 describe('toCamelCase — matches @payloadcms/plugin-mcp exactly', () => {
   it('kebab/underscore → camel', () => {

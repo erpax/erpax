@@ -23,11 +23,11 @@ import { APIError } from 'payload'
 
 import type { Config, Order, Transaction } from '@/payload-types'
 
-import { apiErr, ERR } from '@/utilities/errors'
+import { apiErr, ERR } from '@/error'
 import {
   resolveStripeSecretForTransaction,
   tenantIdFromRelation,
-} from '@/utilities/tenantRemoteSecrets'
+} from '@/tenant/remote/secret'
 
 type CollectionSlug = keyof Config['collections']
 

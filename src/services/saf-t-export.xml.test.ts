@@ -11,9 +11,9 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { renderSafTXml } from '@/services/saf-t-export.service'
-import { escapeXml } from '@/utilities/xml-escape'
-import type { SafTAuditFile } from '@/standards/saf-t'
+import { renderSafTXml } from '@/saf/t/export.service'
+import { escapeXml } from '@/xml/escape'
+import type { SafTAuditFile } from '@/saf/t'
 
 describe('SAF-T XML — escapeXml', () => {
   it('escapes the five XML predefined entities', () => {

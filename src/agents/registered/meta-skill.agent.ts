@@ -1,0 +1,159 @@
+/**
+ * MetaSkillAgent — pure observer / meta-automation hook (slice QQQQQ scope).
+ * Slice IIIII (2026-05-11). Owns no Payload collections. Listens to every
+ * conservation-invariant failure, every gap-detected escalation, every
+ * spec-coverage warning — and (in QQQQQ) proposes fixes via MCP tools.
+ *
+ * @feature meta_automation
+ */
+import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/agent/types'
+
+export const MetaSkillAgent: DomainAgent = {
+  id: 'meta-skill',
+  ownsCollections: [],
+  subscribesTo: [
+    'invariant:failed', 'invariant:warned', 'gap:detected',
+    'spec:coverage:warned', 'i18n:stub:detected',
+    // Slice OOOOOOOO — meta agent is its own observer (Law 4 closes
+    // the loop without requiring another agent to subscribe).
+    'meta:sweep:tick', 'meta:dry-proof:tick', 'meta:trinity:tick',
+  ],
+  emits: [
+    'fix:proposed', 'spec:tag:suggested', 'i18n:translation:requested',
+    'meta:sweep:tick', 'meta:dry-proof:tick', 'meta:trinity:tick',  // slice OOOOOOOO
+  ],
+  cron: '0 */1 * * *',  // hourly — sweep for new gaps, propose fixes (QQQQQ)
+  async onEvent(ctx: AgentContext, ev: DomainEvent): Promise<AgentEffect[]> {
+    // Today: just record the event for traceability.
+    // QQQQQ slice extends this to call erpax.spec.fillBanner / erpax.i18n.translateBatch
+    // / erpax.chain.backfillMarkup via ctx.mcp and emit fix:proposed.
+    return [
+      { kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: ev.id, action: 'meta-observed' } },
+    ]
+  },
+  async onSchedule(ctx: AgentContext): Promise<AgentEffect[]> {
+    // Slice QQQQQ — meta-automation production wiring.
+    // Hourly sweep:
+    //   1. Run all 26 conservation invariants via the runtime suite.
+    //   2. For each WARN/FAIL, proposeFixFor → MCP tool call.
+    //   3. Auto-apply safe proposals; escalate the rest.
+    //   4. Emit meta:sweep:tick + escalations (audit-trailed).
+    //   5. Run Law 25 (commerce) + Law 26 (self-accounting) against
+    //      the platform tenant — escalate overdue filings/obligations.
+    const sweptAt = new Date().toISOString()
+    const effects: AgentEffect[] = [
+      { kind: 'audit', leaf: { tenantId: ctx.tenantId, subjectCollection: 'audit-events', subjectId: 'meta-sweep', action: 'scheduled-sweep' } },
+    ]
+
+    // 1. Run invariants suite ONCE; reuse for proposer + DRY-proof
+    //    publish (slice OOOOOOOO) + Trinity rollup. Single sweep,
+    //    multiple downstream consumers.
+    try {
+      const { runAllInvariants } = await import('@/architecture/invariant')
+      const { processInvariantResults } = await import('@/meta/automation')
+      const { publishDryProofBundle } = await import('@/proof/dry-proof')
+      const { rollUpToTrinity } = await import('@/architecture/invariant/trinity')
+      const { buildErpaxMcpTools } = await import('@/agents/mcp/tool-defs')
+      const { agentRegistry } = await import('@/agent/bootstrap')
+
+      // process.cwd() is Node-only; CF Workers don't expose it. Guard
+      // so the meta-skill cron works in both runtimes (the boot suite
+      // sees the value when run locally; production CF Worker leaves
+      // repoRoot undefined → checks fall back to spec corpus loading
+      // via the lazily-imported extractCorpus(...) which itself falls
+      // back when fs is unavailable).
+      const repoRoot = typeof process !== 'undefined' && typeof process.cwd === 'function' ? process.cwd() : undefined
+      const invariantCtx = { payload: ctx.payload, repoRoot }
+      const suite = await runAllInvariants(invariantCtx)
+      const results = [...suite.fails, ...suite.warns]
+      const summary = await processInvariantResults({ results, mcp: ctx.mcp })
+      effects.push({
+        kind: 'emit',
+        event: {
+          id: 'meta:sweep:tick', tenantId: ctx.tenantId,
+          payload: { at: sweptAt, ...summary }, emittedAt: sweptAt,
+        },
+      })
+      if (summary.escalated > 0) {
+        effects.push({
+          kind: 'escalate', severity: 'major',
+          templateKey: 'meta.proposalsEscalated',
+          vars: { count: summary.escalated, sweepAt: sweptAt },
+        })
+      }
+
+      // Slice OOOOOOOO — publish DRY-proof bundle (Law 44) once per
+      // sweep; emit Trinity rollup over the same suite (no second run).
+      const tools = buildErpaxMcpTools(agentRegistry)
+      // process.env is gated by runtime — CF Workers replace it via
+      // wrangler bindings; Node + Vitest read it directly. Optional
+      // chain + typeof guard covers both.
+      const origin =
+        (typeof process !== 'undefined' && process.env?.PLATFORM_ORIGIN) ||
+        'https://erpax.local'
+      const bundle = await publishDryProofBundle({ invariantCtx, tools, origin })
+      effects.push({
+        kind: 'emit',
+        event: {
+          id: 'meta:dry-proof:tick', tenantId: ctx.tenantId,
+          payload: {
+            at: sweptAt, contentUuid: bundle.contentUuid,
+            publicUrl: bundle.publicUrl, laws: bundle.summary,
+          },
+          emittedAt: sweptAt,
+        },
+      })
+      // Conservation Law check IDs are kebab-case names (e.g.
+      // 'auto-generation-coverage'), not numbered — there's no
+      // robust check-id → law-num map yet. Until one lands, pass
+      // every declared law num so the Trinity event surfaces the
+      // structure (3 cards, full coverage); the per-law verdict
+      // remains visible in suite.{fails,warns,passes} for finer-
+      // grained consumers. Same approach as PPPPPPPP readiness.
+      const { TRINITY } = await import('@/architecture/invariant/trinity')
+      const allLawNums = TRINITY.flatMap((t) => t.subsumes.map((s) => s.num))
+      const trinity = rollUpToTrinity(allLawNums)
+      effects.push({
+        kind: 'emit',
+        event: {
+          id: 'meta:trinity:tick', tenantId: ctx.tenantId,
+          payload: { at: sweptAt, trinity }, emittedAt: sweptAt,
+        },
+      })
+    } catch (err) {
+      effects.push({
+        kind: 'escalate', severity: 'critical',
+        templateKey: 'meta.sweepFailed',
+        vars: { error: (err as Error).message, sweepAt: sweptAt },
+      })
+    }
+
+    // 2. Law 25 + Law 26 audits against the platform tenant
+    try {
+      const { checkCommerceLifecycle } = await import('@/commerce')
+      const { checkSelfAccountingComplete } = await import('@/self/accounting')
+      const lifecycle = checkCommerceLifecycle()
+      if (!lifecycle.ok) {
+        effects.push({
+          kind: 'escalate', severity: 'major', templateKey: 'meta.commerceOrphans',
+          vars: { count: lifecycle.orphans.length, sample: lifecycle.orphans.slice(0, 3).join(', ') },
+        })
+      }
+      const accounting = checkSelfAccountingComplete('erpax-platform')
+      if (!accounting.ok) {
+        effects.push({
+          kind: 'escalate', severity: 'blocker', templateKey: 'meta.selfAccountingOverdue',
+          vars: {
+            unbookedRevenues: accounting.unbookedRevenues,
+            overdueFilings: accounting.overdueFilings.length,
+            overdueObligations: accounting.overdueObligations.length,
+          },
+        })
+      }
+    } catch {
+      // Self-accounting may not be active on a fresh instance — non-fatal.
+    }
+
+    return effects
+  },
+}

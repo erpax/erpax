@@ -6,10 +6,10 @@
  * @see ./index · ../../llm/uuid
  */
 import { describe, it, expect } from 'vitest'
-import { expand, horoStepOf } from './index'
+import { expand, horoStepOf } from '@/uuid/llm'
 import { forge } from '@/llm/uuid'
-import { isHoroStep, HORO_DIGITS } from '@/services/horo'
-import { UUID_MATRIX_NODES } from '@/services/uuid-matrix'
+import { isHoroStep, HORO_DIGITS } from '@/horo'
+import { UUID_MATRIX_NODES } from '@/uuid/matrix'
 
 const T = 'tenant-1'
 const NON_V8 = '11111111-1111-4111-8111-111111111111' // version nibble = 4

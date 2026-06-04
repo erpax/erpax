@@ -18,8 +18,8 @@ import {
   mergeCapabilities,
   resolveRoleCapability,
   roleForOperation,
-} from './cross'
-import { ROLE_IDS } from './roles-registry'
+} from '@/cross'
+import { ROLE_IDS } from '@/roles/registry'
 
 const mkReq = (roles: string[] | null): PayloadRequest =>
   ({ user: roles ? { roles } : null }) as unknown as PayloadRequest

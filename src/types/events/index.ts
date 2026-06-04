@@ -55,7 +55,7 @@ export interface InvoiceActivatedEvent extends DomainEvent {
 
 /**
  * Project-internal invoice line shape — a thin projection of the
- * canonical {@link import('@/standards/en-16931').InvoiceLine} (BG-25).
+ * canonical {@link import('@/en/16931').InvoiceLine} (BG-25).
  *
  * Consumers (events, reports, hooks) MUST treat this as a derived view
  * of EN 16931, not a parallel type system. When EN 16931 fields drift,

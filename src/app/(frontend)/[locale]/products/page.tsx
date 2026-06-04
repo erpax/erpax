@@ -18,9 +18,9 @@ import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
 
 import type { Product } from '@/payload-types'
-import { buildPublishedProductsWhere } from '@/utilities/siteTenantWhere'
+import { buildPublishedProductsWhere } from '@/site/tenant/where'
 import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
-import { getProductPrice, formatProductPrice } from '@/utilities/productPrice'
+import { getProductPrice, formatProductPrice } from '@/product/price'
 
 export const metadata: Metadata = {
   title: 'Products',

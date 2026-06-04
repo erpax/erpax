@@ -13,16 +13,16 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 
-import { authenticatedOrPublished } from '@/access/authenticatedOrPublished'
+import { authenticatedOrPublished } from '@/authenticated/or/published'
 import {
   tenantScopedCollectionReadAccess,
   tenantScopedPostsReadAccess,
-} from '@/access/tenantScopedRead'
-import { wherePublished } from '@/utilities/scopes/filters'
+} from '@/tenant/scoped/read'
+import { wherePublished } from '@/scope/filters'
 
 const getAllowPublicReadTenantIds = vi.fn()
 
-vi.mock('@/access/allowPublicReadTenants', () => ({
+vi.mock('@/allow/public/read/tenant', () => ({
   getAllowPublicReadTenantIds: (...args: unknown[]) => getAllowPublicReadTenantIds(...args),
   clearAllowPublicReadTenantIdsCache: vi.fn(),
 }))

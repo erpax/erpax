@@ -32,6 +32,6 @@ export {
   RateLimiter,
   JobLock,
   AuditChain,
-} from './src/services/ai/durable-objects'
+} from '@/ai/durable-objects'
 
 export default openNextHandler

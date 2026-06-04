@@ -51,14 +51,16 @@ const eslintConfig = defineConfig([
   },
   {
     files: [
-      'src/components/providers/**/*.{ts,tsx}',
-      'src/components/Header/**/*.{ts,tsx}',
+      // dissolved out of src/components/ to top-level single-word folders
+      'src/providers/**/*.{ts,tsx}',
+      'src/header/**/*.{ts,tsx}',
       // Data-loading effects (fetch on mount/deps; setLoading/setData is the canonical pattern).
-      'src/components/admin/**/*.{ts,tsx}',
-      'src/components/analytics/**/*.{ts,tsx}',
-      'src/components/pages/**/*.{ts,tsx}',
-      'src/components/widgets/**/*.{ts,tsx}',
-      'src/components/Dashboard.{ts,tsx}',
+      'src/admin/**/*.{ts,tsx}',
+      'src/analytics/**/*.{ts,tsx}',
+      'src/page/**/*.{ts,tsx}',
+      'src/widget/**/*.{ts,tsx}',
+      'src/dashboard/**/*.{ts,tsx}',
+      'src/components/Dashboard.{ts,tsx}', // prefix-root direct file — dissolves in Stage 1b
     ],
     rules: {
       // Payload website template theme / header sync (React 19 compiler hook noise)

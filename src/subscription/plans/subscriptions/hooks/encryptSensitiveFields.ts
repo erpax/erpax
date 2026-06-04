@@ -1,0 +1,37 @@
+import { CollectionBeforeChangeHook, CollectionAfterReadHook } from 'payload'
+import { encryptFields, decryptFields } from '@/nist/sp/800/38'
+import type { Subscription } from '@/payload-types'
+
+/**
+ * Encryption hooks for Subscriptions — encrypt Stripe customer/subscription IDs.
+ *
+ * @standard NIST SP-800-38D aes-gcm authenticated-encryption
+ * @rfc 5116 authenticated-encryption-with-associated-data
+ * @compliance GDPR Art.32(1)(a) pseudonymization-and-encryption
+ * @security ISO-27002 §8.24 use-of-cryptography
+ * @security ISO-27001 A.8.24 use-of-cryptography
+ * @see docs/STANDARDS.md §4.4
+ */
+
+const ENCRYPTED_FIELDS = [
+  'stripeSubscriptionId',
+  'stripeCustomerId',
+]
+
+/**
+ * Before create/update: Encrypt Stripe identifiers
+ */
+export const encryptSubscriptionData: CollectionBeforeChangeHook<Subscription> = async ({
+  data,
+}) => {
+  return encryptFields(data, ENCRYPTED_FIELDS)
+}
+
+/**
+ * After read: Decrypt Stripe identifiers
+ */
+export const decryptSubscriptionData: CollectionAfterReadHook<Subscription> = async ({
+  doc,
+}) => {
+  return decryptFields(doc as unknown as Record<string, unknown>, ENCRYPTED_FIELDS)
+}

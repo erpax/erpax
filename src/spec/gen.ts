@@ -19,10 +19,10 @@
 
 import { existsSync } from 'node:fs'
 import { join } from 'node:path'
-import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
-import { extractCorpus } from '@/services/spec-generator/extractor'
-import { translatePredicate, generateChainTestFromRegistry } from '@/services/spec-generator/test-generator'
-import type { SpecInvariant } from '@/services/spec-generator/types'
+import { BUSINESS_CHAINS } from '@/business/chain/registry'
+import { extractCorpus } from '@/spec/generator/extractor'
+import { translatePredicate, generateChainTestFromRegistry } from '@/spec/generator/test-generator'
+import type { SpecInvariant } from '@/spec/generator/types'
 
 const repoRoot = process.cwd()
 const json = process.argv.includes('--json')

@@ -1,4 +1,4 @@
-import * as migration_20260603_203335 from './20260603_203335';
+import * as migration_20260603_203335 from '@/migrations/20260603_203335';
 
 export const migrations = [
   {

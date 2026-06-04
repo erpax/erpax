@@ -7,7 +7,7 @@
  *   pnpm exec tsx src/run/dev/verify-genesis.ts
  */
 export {} // module marker — enables top-level `await` under tsc (TS1375)
-const { isSuperAdmin } = await import('@/access/isSuperAdmin')
+const { isSuperAdmin } = await import('@/is/super/admin')
 
 const cases = [
   { label: 'admin + empty tenant scope (genesis / platform owner)', user: { roles: ['admin'], tenants: [] }, expect: true },

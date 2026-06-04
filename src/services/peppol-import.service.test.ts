@@ -13,13 +13,13 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { parsePeppolInvoice } from '@/services/peppol-import.service'
-import { renderPeppolInvoice } from '@/services/peppol-export.service'
-import { importStandards } from '@/services/export/standards-import'
+import { parsePeppolInvoice } from '@/peppol/import.service'
+import { renderPeppolInvoice } from '@/peppol/export.service'
+import { importStandards } from '@/export/standards-import'
 import {
   PEPPOL_BIS_3_CUSTOMIZATION_ID,
   type PeppolBillingMessage,
-} from '@/standards/peppol-bis-3'
+} from '@/peppol/bis/3'
 
 const SAMPLE_INBOUND = `<?xml version="1.0" encoding="UTF-8"?>
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"

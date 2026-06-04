@@ -12,24 +12,24 @@
 
 import type { Metadata } from 'next'
 
-import { RelatedPosts } from '@/components/blocks/RelatedPosts/Component'
-import { PayloadRedirects } from '@/components/PayloadRedirects'
+import { RelatedPosts } from '@/blocks/related/post/Component'
+import { PayloadRedirects } from '@/payload/redirect'
 import configPromise from '@payload-config'
 import { getPayload, type TypedLocale } from 'payload'
 import { draftMode, headers } from 'next/headers'
 import React, { cache } from 'react'
-import RichText from '@/components/RichText'
+import RichText from '@/rich/text'
 
 import type { Post } from '@/payload-types'
 
-import { PostHero } from '@/components/heros/PostHero'
-import { generateMeta } from '@/utilities/generateMeta'
-import PageClient from './page.client'
-import { LivePreviewListener } from '@/components/LivePreviewListener'
+import { PostHero } from '@/heros/post/hero'
+import { generateMeta } from '@/generate/meta'
+import PageClient from '@/app/(frontend)/[locale]/posts/[slug]/page.client'
+import { LivePreviewListener } from '@/live/preview/listener'
 import { routing } from '@/i18n/routing'
 import type { SupportedLocale } from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
-import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
+import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 export async function generateStaticParams() {
   // During build/CI, the D1 database may not have tables yet.

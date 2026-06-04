@@ -13,12 +13,12 @@ import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { searchPlugin } from '@payloadcms/plugin-search'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 import { r2Storage } from '@payloadcms/storage-r2'
-import { contentUuidPlugin } from './plugins/contentUuid'
-import { taggablePlugin } from './plugins/taggable'
-import { uuidNamesPlugin } from './plugins/naming'
-import { collapseApiKeyScopes } from './plugins/mcpScopes'
-import { versionsPlugin } from './plugins/versions'
-import { skillRouterPlugin } from './services/skill-router/plugin'
+import { contentUuidPlugin } from '@/plugins/contentUuid'
+import { taggablePlugin } from '@/plugins/taggable'
+import { uuidNamesPlugin } from '@/plugins/naming'
+import { collapseApiKeyScopes } from '@/plugins/mcpScopes'
+import { versionsPlugin } from '@/plugins/versions'
+import { skillRouterPlugin } from '@/skill/router/plugin'
 // Accounting plugin removed: all collections now flat in src/collections/
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
 import { translations as multiTenantTranslations } from '@payloadcms/plugin-multi-tenant/translations/languages/all'
@@ -51,11 +51,11 @@ import { sl } from '@payloadcms/translations/languages/sl'
 import { sv } from '@payloadcms/translations/languages/sv'
 import { uk } from '@payloadcms/translations/languages/uk'
 
-import { isSuperAdmin, isSuperAdminAccess } from './access/isSuperAdmin'
+import { isSuperAdmin, isSuperAdminAccess } from '@/is/super/admin'
 // All 145+ collections come from canonical src/collections/* locations (flat, agnostic organization).
 // No domain silos: organizing by actual data type/concern, not business domain.
 // Collections are self-contained with clear boundaries for future plugin extraction.
-import * as allCollections from './collections'
+import * as allCollections from '@/collections'
 const {
   // Core
   Tenants,
@@ -276,29 +276,29 @@ const {
   AuditSubmissions,
 } = allCollections
 import type { CollectionSlug, CollectionConfig } from 'payload'
-import { Footer } from './components/Footer/config'
-import { Header } from './components/Header/config'
-import { beforeSyncWithSearch } from './components/search/beforeSync'
-import { searchDocField, searchFields } from './components/search/fieldOverrides'
-import { defaultLexical } from '@/fields/defaultLexical'
-import { createEcommercePlugin } from './ecommerce/configureEcommercePlugin'
+import { Footer } from '@/footer/config'
+import { Header } from '@/header/config'
+import { beforeSyncWithSearch } from '@/search/beforeSync'
+import { searchDocField, searchFields } from '@/search/fieldOverrides'
+import { defaultLexical } from '@/default/lexical'
+import { createEcommercePlugin } from '@/ecommerce/configureEcommercePlugin'
 import {
   deriveSecretFromPayloadSecret,
   internalSecretPurpose,
-} from './standards/nist-sp-800-108'
-import { getServerSideURL } from './standards/rfc-3986/get-url'
-import { getUserTenantIDs } from './utilities/getUserTenantIDs'
-import { tenantAwareResendEmailAdapter } from './email/tenantAwareResendEmailAdapter'
-import localization from './i18n/localization'
+} from '@/nist/sp/800/108'
+import { getServerSideURL } from '@/rfc/3986/get-url'
+import { getUserTenantIDs } from '@/get/user/tenant/i/ds'
+import { tenantAwareResendEmailAdapter } from '@/email/tenantAwareResendEmailAdapter'
+import localization from '@/i18n/localization'
 import {
   defaultLocale,
   localeRecord,
   nestedMessages,
   supportedLocales,
   type SupportedLocale,
-} from './i18n'
+} from '@/i18n'
 
-import type { Config } from './payload-types'
+import type { Config } from '@/payload-types'
 
 /** `buildConfig({ logger })` type — used so Workers can supply a non-pino logger without `any`. */
 type PayloadBuildConfigLogger = NonNullable<Parameters<typeof buildConfig>[0]['logger']>
@@ -410,8 +410,8 @@ export default buildConfig({
   email: tenantAwareResendEmailAdapter,
   admin: {
     components: {
-      beforeLogin: ['@/components/BeforeLogin'],
-      beforeDashboard: ['@/components/BeforeDashboard'],
+      beforeLogin: ['@/before/login'],
+      beforeDashboard: ['@/before/dashboard'],
     },
     importMap: {
       baseDir: path.resolve(dirname),
@@ -448,7 +448,7 @@ export default buildConfig({
   // @see src/services/architecture-invariants/onInit.ts
   onInit: async (payload) => {
     try {
-      const { runInvariantsAtBoot } = await import('@/services/architecture-invariants/onInit')
+      const { runInvariantsAtBoot } = await import('@/architecture/invariant/onInit')
       await runInvariantsAtBoot(payload)
     } catch (err) {
       // STRICT_INVARIANTS=1 propagates to refuse boot.
@@ -457,28 +457,28 @@ export default buildConfig({
     // Slice PPPP — declarative event → notification fan-out.
     // Idempotent; safe on hot reload.
     try {
-      const { wireNotificationSubscriber } = await import('@/services/notifications/subscriber')
+      const { wireNotificationSubscriber } = await import('@/notification/subscriber')
       wireNotificationSubscriber(payload)
     } catch {
       // Never refuse boot on notification wiring failure.
     }
     // Issue the fiscal receipt (касов бон) on sale:closed (Наредба Н-18).
     try {
-      const { wireReceiptSubscriber } = await import('@/services/sales/receipt-subscriber')
+      const { wireReceiptSubscriber } = await import('@/sale/receipt-subscriber')
       wireReceiptSubscriber(payload)
     } catch {
       // Never refuse boot on receipt-subscriber wiring failure.
     }
     // Fiscalize a paid ecommerce order into a closed sale on order:activated.
     try {
-      const { wireOrderFiscalizationSubscriber } = await import('@/services/sales/order-fiscalization')
+      const { wireOrderFiscalizationSubscriber } = await import('@/sale/order-fiscalization')
       wireOrderFiscalizationSubscriber(payload)
     } catch {
       // Never refuse boot on order-fiscalization wiring failure.
     }
     // Fiscalize each card-charged subscription period into a касов бон.
     try {
-      const { wireSubscriptionFiscalizationSubscriber } = await import('@/services/sales/subscription-fiscalization')
+      const { wireSubscriptionFiscalizationSubscriber } = await import('@/sale/subscription-fiscalization')
       wireSubscriptionFiscalizationSubscriber(payload)
     } catch {
       // Never refuse boot on subscription-fiscalization wiring failure.
@@ -1236,7 +1236,7 @@ export default buildConfig({
       {
         slug: 'dunning-cycle',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processDunningCycle } = await import('./jobs/dunningJob')
+          const { processDunningCycle } = await import('@/jobs/dunningJob')
           await processDunningCycle(req.payload)
           return { output: { status: 'completed' } }
         },
@@ -1256,7 +1256,7 @@ export default buildConfig({
       {
         slug: 'bg-bnb-rates-sync',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processBnbRatesSync } = await import('./jobs/bnbRatesSync')
+          const { processBnbRatesSync } = await import('@/jobs/bnbRatesSync')
           const result = await processBnbRatesSync(req.payload)
           return { output: { status: 'completed', ...result } }
         },
@@ -1274,7 +1274,7 @@ export default buildConfig({
       {
         slug: 'sales-audit-file',
         handler: async ({ req }: { req: PayloadRequest }) => {
-          const { processSalesAuditFiles } = await import('./jobs/salesAuditFileJob')
+          const { processSalesAuditFiles } = await import('@/jobs/salesAuditFileJob')
           const result = await processSalesAuditFiles(req.payload)
           return { output: { status: 'completed', ...result } }
         },

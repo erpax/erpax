@@ -25,8 +25,8 @@
 
 import type {
   DomainAgent, AgentContext, AgentEffect, DomainEvent,
-} from '@/services/agents/types'
-import type { SpecChainStep } from '@/services/spec-generator'
+} from '@/agent/types'
+import type { SpecChainStep } from '@/spec/generator'
 
 const OWNED_COLLECTIONS = [
   'invoices',

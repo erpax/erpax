@@ -15,8 +15,8 @@ import {
   buildMovementOfGoods,
   buildSourceDocuments,
   renderSafTXml,
-} from '@/services/saf-t-export.service'
-import type { SafTAuditFile } from '@/standards/saf-t'
+} from '@/saf/t/export.service'
+import type { SafTAuditFile } from '@/saf/t'
 
 const mockPayload = (
   fixtures: Record<string, Record<string, unknown>[]>,

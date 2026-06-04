@@ -31,12 +31,12 @@ import {
   serializeDesadv,
   serializeInterchange,
   serializeInterchangeAsString,
-} from '@/services/edifact-export.service'
+} from '@/edifact/export.service'
 import type {
   EdifactInvoic,
   EdifactDesadv,
   EdifactInterchange,
-} from '@/standards/un-edifact'
+} from '@/un/edifact'
 
 describe('EDIFACT — escapeEdifact', () => {
   it('escapes ? first then + : and the segment terminator', () => {

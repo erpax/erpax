@@ -13,17 +13,17 @@
 
 import type { Metadata } from 'next'
 
-import { cn } from '@/utilities/ui'
+import { cn } from '@/ui'
 import { GeistMono } from 'geist/font/mono'
 import { GeistSans } from 'geist/font/sans'
 import React from 'react'
 
-import { Providers } from '@/components/providers'
-import { InitTheme } from '@/components/providers/Theme/InitTheme'
-import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
+import { Providers } from '@/provider'
+import { InitTheme } from '@/providers/theme/init/theme'
+import { mergeOpenGraph } from '@/merge/open/graph'
 
-import './globals.css'
-import { getServerSideURL } from '@/standards/rfc-3986/get-url'
+import '@/app/(frontend)/globals.css'
+import { getServerSideURL } from '@/rfc/3986/get-url'
 import { headers } from 'next/headers'
 
 export default async function FrontendRootLayout({ children }: { children: React.ReactNode }) {

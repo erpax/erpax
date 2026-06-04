@@ -15,8 +15,8 @@
 import { stripeAdapter } from '@payloadcms/plugin-ecommerce/payments/stripe'
 
 import type { Cart } from '@/payload-types'
-import { apiErr, ERR } from '@/utilities/errors'
-import { resolveStripeSecretForCart } from '@/utilities/tenantRemoteSecrets'
+import { apiErr, ERR } from '@/error'
+import { resolveStripeSecretForCart } from '@/tenant/remote/secret'
 
 // The exact args the plugin adapter's initiatePayment expects — derived so the
 // pass-through `run(args)` stays in lock-step with the upstream plugin contract.

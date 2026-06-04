@@ -21,7 +21,7 @@ import { PayloadSDK } from '@payloadcms/sdk'
 
 import type { Config } from '@/payload-types'
 import config from '@/payload.config'
-import { getServerSideURL } from '@/standards/rfc-3986/get-url'
+import { getServerSideURL } from '@/rfc/3986/get-url'
 
 import { testUser } from './seedUser'
 

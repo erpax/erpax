@@ -10,14 +10,14 @@
 
 import type { Metadata } from 'next/types'
 
-import { CollectionArchive } from '@/components/CollectionArchive'
-import { PageRange } from '@/components/PageRange'
-import { Pagination } from '@/components/Pagination'
+import { CollectionArchive } from '@/collection/archive'
+import { PageRange } from '@/page/range'
+import { Pagination } from '@/pagination'
 import configPromise from '@payload-config'
 import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
-import PageClient from './page.client'
+import PageClient from '@/app/(frontend)/[locale]/posts/page/[pageNumber]/page.client'
 import { notFound } from 'next/navigation'
 
 import { routing } from '@/i18n/routing'

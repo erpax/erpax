@@ -7,7 +7,7 @@
  * @see src/app/README.md
  */
 
-import { erpaxApiDiscoveryPayload } from '@/utilities/erpaxApiSurface'
+import { erpaxApiDiscoveryPayload } from '@/erpax/api/surface'
 
 export const GET = async (_request: Request) => {
   return Response.json({

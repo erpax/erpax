@@ -11,12 +11,12 @@ import { describe, it, expect } from 'vitest'
 import {
   renderPain001,
   renderPain008,
-} from '@/services/iso20022-export.service'
-import { escapeXml } from '@/utilities/xml-escape'
+} from '@/iso20022/export.service'
+import { escapeXml } from '@/xml/escape'
 import type {
   Pain001Initiation,
   Pain008Initiation,
-} from '@/standards/iso-20022'
+} from '@/iso/20022'
 
 describe('ISO 20022 export — escapeXml', () => {
   it('escapes the five XML predefined entities', () => {

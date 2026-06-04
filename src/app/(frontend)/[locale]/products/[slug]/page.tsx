@@ -22,15 +22,15 @@ import React, { cache } from 'react'
 
 import { routing } from '@/i18n/routing'
 import type { Product } from '@/payload-types'
-import { generateMeta } from '@/utilities/generateMeta'
+import { generateMeta } from '@/generate/meta'
 import { DEFAULT_CURRENCY, DEFAULT_LOCALE } from '@/config/regional-defaults'
-import { getProductPrice, formatProductPrice } from '@/utilities/productPrice'
+import { getProductPrice, formatProductPrice } from '@/product/price'
 import {
   buildProductDetailWhere,
   buildPublishedProductsWhere,
-} from '@/utilities/siteTenantWhere'
-import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
-import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
+} from '@/site/tenant/where'
+import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 export async function generateStaticParams() {
   // During build/CI, the D1 database may not have tables yet.

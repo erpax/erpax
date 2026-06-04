@@ -7,6 +7,6 @@
  * @see src/app/README.md
  */
 
-import Page from './[...slug]/page'
+import Page from '@/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page'
 
 export default Page

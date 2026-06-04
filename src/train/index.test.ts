@@ -6,9 +6,9 @@ import {
   nextStep,
   efficiencyRate,
   isProficient,
-} from './index'
-import type { HeldLine, RequiredLine } from '@/services/competency-gap'
-import { ANCHOR } from '@/services/allocation'
+} from '@/train'
+import type { HeldLine, RequiredLine } from '@/competency/gap'
+import { ANCHOR } from '@/allocation'
 import { levelCeiling } from '@/decompression'
 
 // A health-care role (COFOG 07) at SFIA level 4 (the crest, M-value 8): three

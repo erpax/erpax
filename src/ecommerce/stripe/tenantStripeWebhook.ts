@@ -18,8 +18,8 @@ import Stripe from 'stripe'
 
 import type { PayloadRequest } from 'payload'
 
-import { apiErrorResponseMerge, ERR } from '@/utilities/errors'
-import { devStripeWebhookFallback } from '@/utilities/tenantRemoteSecrets'
+import { apiErrorResponseMerge, ERR } from '@/error'
+import { devStripeWebhookFallback } from '@/tenant/remote/secret'
 
 /** Stripe webhook body/signature are read like a fetch Request; Payload attaches `payload`. */
 type StripeWebhookRequest = PayloadRequest & {

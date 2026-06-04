@@ -47,9 +47,9 @@
  * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
  */
 
-import { ANCHOR } from '@/services/allocation'
-import { HORO_DIGITS, type HoroStep } from '@/services/horo'
-import { basicTeams } from '@/services/agent/team'
+import { ANCHOR } from '@/allocation'
+import { HORO_DIGITS, type HoroStep } from '@/horo'
+import { basicTeams } from '@/agent/team'
 
 const clamp01 = (x: number): number => (x < 0 ? 0 : x > 1 ? 1 : x)
 

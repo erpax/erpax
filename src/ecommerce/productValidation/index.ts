@@ -11,7 +11,7 @@
 
 import type { ProductsValidation } from '@payloadcms/plugin-ecommerce/types'
 
-import { apiErr, ERR } from '@/utilities/errors'
+import { apiErr, ERR } from '@/error'
 export const validateProductCheckout: ProductsValidation = async ({
   product,
   quantity,

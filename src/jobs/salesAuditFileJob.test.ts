@@ -8,7 +8,7 @@
 
 import { describe, it, expect, vi } from 'vitest'
 import type { Payload } from 'payload'
-import { priorMonthUtc, processSalesAuditFiles } from './salesAuditFileJob'
+import { priorMonthUtc, processSalesAuditFiles } from '@/jobs/salesAuditFileJob'
 
 describe('priorMonthUtc', () => {
   it('returns the prior calendar month window', () => {

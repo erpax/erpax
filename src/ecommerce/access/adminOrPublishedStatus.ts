@@ -1,6 +1,6 @@
 import type { Access, Where } from 'payload'
 
-import { getAllowPublicReadTenantIds } from '@/access/allowPublicReadTenants'
+import { getAllowPublicReadTenantIds } from '@/allow/public/read/tenant'
 import { commerceHasStaffRole } from '@/ecommerce/access/utilities'
 
 /**

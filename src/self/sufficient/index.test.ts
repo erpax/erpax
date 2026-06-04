@@ -9,7 +9,7 @@ import {
   internalise,
   selfSufficientCrackVerdict,
   type ExternalDependency,
-} from './index'
+} from '@/self/sufficient'
 
 const DEPS: ReadonlyArray<ExternalDependency> = [
   { id: 'anthropic-api', kind: 'ai-model', compromiseBits: 40, internalisable: true },

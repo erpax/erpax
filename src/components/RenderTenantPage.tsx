@@ -1,7 +1,7 @@
 import type { Page } from '@/payload-types'
 
-import { RenderBlocks } from '@/components/blocks/RenderBlocks'
-import { RenderHero } from '@/components/heros/RenderHero'
+import { RenderBlocks } from '@/block/RenderBlocks'
+import { RenderHero } from '@/hero/RenderHero'
 
 /** Public tenant route renderer (matches `(frontend)/[slug]` article layout). */
 export function RenderTenantPage({ data }: { data: Page }) {

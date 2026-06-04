@@ -21,7 +21,7 @@ import { test } from '@playwright/test'
 import { login } from '../../../helpers/login'
 import { testUser } from '../../../helpers/seedUser'
 import { captureWorkflowStep, safeCaptureRoute } from '../../../helpers/evidence'
-import { INDUSTRY_TEMPLATES } from '@/services/accounting/seeds/templates'
+import { INDUSTRY_TEMPLATES } from '@/accounting/seeds/template'
 
 const STANDARD = 'ifrs/industry-templates'
 const BASE = 'http://localhost:3000'

@@ -10,15 +10,15 @@
 import { describe, it, expect } from 'vitest'
 
 import { APP_COLLECTION_SLUGS } from '@/config/appCollections'
-import { Categories } from '@/collections/Categories'
-import { Media } from '@/collections/Media'
-import { Pages } from '@/collections/Pages'
-import { Posts } from '@/collections/Posts'
-import { Roles } from '@/collections/Roles'
-import { Tenants } from '@/collections/Tenants'
-import { UserRoles } from '@/collections/Roles/UserRoles'
-import { Users } from '@/collections/Users'
-import { SCOPE_BY_COLLECTION } from '@/utilities/scopes/collectionScopes'
+import { Categories } from '@/categories'
+import { Media } from '@/media'
+import { Pages } from '@/pages'
+import { Posts } from '@/posts'
+import { Roles } from '@/roles'
+import { Tenants } from '@/tenants'
+import { UserRoles } from '@/roles/user/roles'
+import { Users } from '@/users'
+import { SCOPE_BY_COLLECTION } from '@/scope/collectionScopes'
 
 /** Mirrors `collections` order in `payload.config.ts` — keep aligned with `APP_COLLECTION_SLUGS`. */
 const REGISTERED_COLLECTION_CONFIGS = [

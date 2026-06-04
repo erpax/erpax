@@ -11,9 +11,9 @@ import {
   isCleared,
   teamRedundancy,
   sharedDebt,
-} from './index'
-import { ANCHOR } from '@/services/allocation'
-import { HORO_DIGITS } from '@/services/horo'
+} from '@/decompression'
+import { ANCHOR } from '@/allocation'
+import { HORO_DIGITS } from '@/horo'
 
 describe('decompression — pay off-gasses toward the M-value, one half-time at a time', () => {
   it('the off-gas curve 1−2⁻ⁿ: 0 at the start, half each step, ~98.44% by 6, never 100%', () => {

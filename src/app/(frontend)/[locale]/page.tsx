@@ -6,7 +6,7 @@
  * @see src/app/README.md
  */
 
-import PageTemplate, { generateMetadata } from './[slug]/page'
+import PageTemplate, { generateMetadata } from '@/app/(frontend)/[locale]/[slug]/page'
 
 export default PageTemplate
 

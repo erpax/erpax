@@ -4,10 +4,10 @@ import { draftMode } from 'next/headers'
 import { unstable_noStore as noStore } from 'next/cache'
 import React from 'react'
 
-import { AdminBar } from '@/components/AdminBar'
+import { AdminBar } from '@/admin/bar'
 import { DocumentHtmlLang } from '@/components/DocumentHtmlLang'
-import { Footer } from '@/components/Footer/Component'
-import { Header } from '@/components/Header/Component'
+import { Footer } from '@/footer/Component'
+import { Header } from '@/header/Component'
 import type { SupportedLocale } from '@/i18n/localization'
 
 export async function IntlChrome({

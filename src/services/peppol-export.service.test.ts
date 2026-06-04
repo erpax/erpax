@@ -13,12 +13,12 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { renderPeppolInvoice } from '@/services/peppol-export.service'
-import { escapeXml } from '@/utilities/xml-escape'
+import { renderPeppolInvoice } from '@/peppol/export.service'
+import { escapeXml } from '@/xml/escape'
 import {
   PEPPOL_BIS_3_CUSTOMIZATION_ID,
   type PeppolBillingMessage,
-} from '@/standards/peppol-bis-3'
+} from '@/peppol/bis/3'
 
 describe('Peppol export — escapeXml', () => {
   it('escapes the five XML predefined entities', () => {

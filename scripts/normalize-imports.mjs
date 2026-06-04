@@ -11,8 +11,10 @@
  * so it is a safe, committable foundation before the dissolve.
  *
  * Scope: .ts/.tsx only. .mjs/.js run under raw `node` (no tsconfig path map), so
- * their relative imports are LEFT as-is. Same-dir "./x" is left as-is (it moves
- * with its unit). Only "../…" (cross-unit, depth-fragile) is rewritten.
+ * their relative imports are LEFT as-is. EVERY relative spec ("./x" and "../x")
+ * that resolves under src/ is rewritten to its absolute @/ address — so the
+ * single-word-folder move that follows is a pure @/old→@/new remap with no
+ * relative spec (./Sub, ./prefix/…) left to silently break.
  *
  *   node scripts/normalize-imports.mjs            # DRY-RUN (report only)
  *   node scripts/normalize-imports.mjs --apply    # rewrite in place
@@ -60,8 +62,8 @@ const toAlias = (absFile, originalSpec) => {
   return '@/' + rel
 }
 
-// from '..'  |  import '..'  |  import('..')  |  require('..')
-const SPEC_RE = /((?:from|import|require)\s*\(?\s*)(['"])(\.\.[^'"]*)\2/g
+// from './x'|'../x'  |  import(…)  |  require(…)  — every relative spec
+const SPEC_RE = /((?:from|import|require)\s*\(?\s*)(['"])(\.\.?\/[^'"]*)\2/g
 
 let filesChanged = 0
 let importsConverted = 0

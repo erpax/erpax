@@ -19,9 +19,9 @@ export type PaymentTerm = '0' | '15' | '30' | '60' | '90' | 'custom'
 // Canonical bucket key — same vocabulary used by bank-rec aging in
 // `src/services/bank-reconciliation.service.ts` and the
 // finance:reconciliation skill. Re-exported so consumers can import a
-// single name from `@/services/parties`.
-import type { AgingBucketKey } from '@/services/accounting/utilities/calculations'
-export type { AgingBucketKey } from '@/services/accounting/utilities/calculations'
+// single name from `@/party`.
+import type { AgingBucketKey } from '@/accounting/utility/calculations'
+export type { AgingBucketKey } from '@/accounting/utility/calculations'
 
 /** A single aging bucket — name + day-range + computed totals. */
 export interface AgingBucket {

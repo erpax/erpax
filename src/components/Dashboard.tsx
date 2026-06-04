@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { AccountingClient } from '@/sdk/accounting-client';
-import TrialBalanceWidget from './widgets/TrialBalanceWidget';
-import BalanceSheetWidget from './widgets/BalanceSheetWidget';
-import IncomeStatementWidget from './widgets/IncomeStatementWidget';
-import QuickActionsWidget from './widgets/QuickActionsWidget';
-import AuditLogWidget from './widgets/AuditLogWidget';
+import TrialBalanceWidget from '@/widget/TrialBalanceWidget';
+import BalanceSheetWidget from '@/widget/BalanceSheetWidget';
+import IncomeStatementWidget from '@/widget/IncomeStatementWidget';
+import QuickActionsWidget from '@/widget/QuickActionsWidget';
+import AuditLogWidget from '@/widget/AuditLogWidget';
 
-import type { AccountLine, BalanceSheetData, IncomeStatementData, TrialBalanceData } from './analytics/types';
+import type { AccountLine, BalanceSheetData, IncomeStatementData, TrialBalanceData } from '@/analytics/types';
 
 /**
  * Accounting Dashboard — top-level renderer for trial balance, balance sheet,

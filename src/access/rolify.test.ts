@@ -2,7 +2,7 @@ import type { Payload } from 'payload'
 
 import { describe, expect, it } from 'vitest'
 
-import { hasRoleOn, partiesOf, PARTY_ROLES, type ResourceRef, rolesScopedTo } from './rolify'
+import { hasRoleOn, partiesOf, PARTY_ROLES, type ResourceRef, rolesScopedTo } from '@/rolify'
 
 const INVOICE: ResourceRef = { relationTo: 'invoices', id: 'inv-1' }
 

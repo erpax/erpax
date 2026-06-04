@@ -1,408 +1,193 @@
 /**
- * Master barrel — every standard erpax implements (validators, coercers,
- * value types, security primitives, transport adapters). Domain code SHOULD
- * import from `@/standards/<id>` directly for traceability; this barrel
- * exists so agents can grep `@/standards` and see the full surface in one
- * place.
+ * Standards — persistent registry of every published standard the
+ * platform cites + per-tenant citation graph + conflict + supersession
+ * trail.
  *
- * @standard ISO-4217:2015 currency-codes
- * @standard ISO-3166-1:2020 country-codes
- * @standard ISO-3166-2:2020 subdivision-codes
- * @standard ISO-8601-1:2019 date-time
- * @standard ISO-13616-1:2020 iban
- * @standard ISO-9362:2022 bic
- * @standard BCP-47 language-tag
- * @rfc 5646 tags-for-identifying-languages
- * @rfc 4647 matching-of-language-tags
- * @standard NIST SP-800-38D aes-gcm
- * @standard NIST SP-800-108 key-derivation
- * @standard NIST INCITS-359-2012 role-based-access-control
- * @standard ISO-19011:2018 audit-trail
- * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
- * @standard UN-CEFACT 5305 duty-tax-fee-category-code
- * @standard UN-CEFACT 1001 document-name-code
- * @standard UN-CEFACT 4461 payment-means
- * @standard ISO-20022:2022 universal-financial-industry-message-scheme
- * @standard Peppol-BIS-3.0 billing
- * @standard ISO-6523-1:1998 participant-identifier-scheme
- * @standard UBL-2.1 universal-business-language
- * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
- * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
- * @accounting IFRS IFRS-16 leases
- * @accounting US-GAAP ASC-842-20 lessee-accounting
- * @standard ISO-27002:2022 information-security-controls
- * @standard ISO-27001:2022 isms-annex-a-controls
- * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
- * @standard UN-EDIFACT D.96A invoic-desadv-paymul
- * @standard ISO-9735:2002 edifact-syntax-rules
- * @rfc 5869 hkdf
- * @rfc 5116 aead
- * @rfc 3986 uniform-resource-identifier
- * @rfc 6585 §4 too-many-requests
- * @rfc 9110 http-semantics
- * @rfc 9111 http-caching
- * @rfc 6797 hsts
- * @standard W3C CSP-3
- * @standard W3C Permissions-Policy
- * @see docs/STANDARDS.md
+ * Slice QQQQQQQQ (2026-05-11) — per user "the standards collection is
+ * missing so the mcp can use it". The 12 erpax.standards.* MCP tools
+ * (cite, declareConflict, declareSupersession, lawConsistency,
+ * publishLive, resolveLive, subscribe, traceSupersession, addCitation,
+ * listCitations, classify, lawSupersessions) currently operate over a
+ * file-based registry (`src/standards/<id>/`). Adding the collection
+ * gives them a Payload-side data layer so:
+ *
+ *   - tenants can declare their own citations (industry-specific
+ *     standards, role-profile add-ons) without forking the registry
+ *   - conflicts + supersessions are queryable per tenant via the
+ *     standard payload.find API
+ *   - federation peers can exchange citation rows via uuid (Slice
+ *     AAAAAA / DDDDDD trust graph)
+ *   - the audit log captures every citation change (ISO 19011)
+ *
+ * Per Conservation Law 38 (mcp-tool-standardization, Slice XXXXXX) and
+ * Law 27/28 (standards-as-vortices, Slice LLLLLL) — every MCP tool
+ * cites ≥1 standard; this collection persists those citations.
+ *
+ * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+ * @standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
+ * @standard W3C JSON-LD 1.1 (citation as live linked-data)
+ * @audit Conservation Law 27 standards-as-live-objects
+ * @audit Conservation Law 28 standards-supersession-tracking
+ * @audit Conservation Law 38 mcp-tool-standardization
+ * @see ../../services/agents/mcp/standardization.ts
+ * @see ../../standards/ — file-based source-of-truth registries
+ * @see ../factories/collection-factory.ts
  */
+import { createAccountingCollection } from '@/accounting/factory/collection-factory'
+import { referenceField } from '@/base/accounting/field'
 
-// Domain identifier validators
-export { isIso4217 } from './iso-4217'
-export { isIso3166Alpha2, isIso3166Alpha3 } from './iso-3166-1'
-export { isIso3166_2 } from './iso-3166-2'
-export { isIso8601, toIso8601 } from './iso-8601'
-export { isIban } from './iso-13616'
-export { isSwiftBic } from './iso-9362'
-export { isBcp47 } from './bcp-47'
-export { isMoney } from './_money'
+export default createAccountingCollection({
+  slug: 'standards',
+  labels: { singular: 'Standard', plural: 'Standards' },
+  useAsTitle: 'standardId',
+  defaultColumns: ['standardId', 'family', 'title', 'status', 'effectiveFrom'],
+  description:
+    'Live registry of every cited published standard (IFRS / ISO / W3C / RFC / Directive / etc.) + per-tenant citation graph. Backs the erpax.standards.* MCP family with persistent storage. Standards-as-vortices (Law 27) + supersession trail (Law 28).',
 
-// Security primitives (NIST)
-export {
-  encryptField,
-  decryptField,
-  encryptFields,
-  decryptFields,
-  isEncrypted,
-  generateEncryptionKey,
-} from './nist-sp-800-38'
-export {
-  deriveSecretFromPayloadSecret,
-  internalSecretPurpose,
-  type InternalSecretPurpose,
-} from './nist-sp-800-108'
+  // Spec metadata
+  standards: [
+    'ISO-19011:2018',
+    'W3C-JSON-LD-1.1',
+    'RFC-8259',
+    'ISO/IEC-25010:2023',
+  ],
+  feature: 'standards-registry',
+  // Slice AAAAAAAA structured form — factory wires producers automatically.
+  emits: [
+    { event: 'standard:registered', onCreate: true, aggregate: 'order' },
+    { event: 'standard:published',  onStatus: 'published', aggregate: 'order' },
+    { event: 'standard:superseded', onStatus: 'superseded', aggregate: 'order' },
+    { event: 'standard:withdrawn',  onStatus: 'withdrawn', aggregate: 'order' },
+  ],
 
-// Access control (RBAC)
-export {
-  hasRole,
-  hasStrictRole,
-  hasAnyRole,
-  hasAllRoles,
-  hasCachedRole,
-  addRole,
-  grant,
-  removeRole,
-  revoke,
-  scopeResourceCollections,
-  BIT_READ,
-  BIT_WRITE,
-  BIT_DELETE,
-  permissionTripletToString,
-  permissionStringToTriplet,
-  type AnyScope,
-  type RoleDefinition,
-  type RoleMatch,
-  type ScopedResource,
-  type ScopeResourceCollection,
-  type AddRoleResource,
-  type MutationArgs,
-  type PermissionDigit,
-  type PermissionTriplet,
-} from './nist-incits-359'
+  injectStatusField: true,
+  statusOptions: [
+    { label: 'Draft', value: 'draft' },
+    { label: 'Published (live)', value: 'published' },
+    { label: 'Superseded by newer version', value: 'superseded' },
+    { label: 'Withdrawn (no longer in force)', value: 'withdrawn' },
+    { label: 'Proposed (under review)', value: 'proposed' },
+  ],
+  statusDefault: 'draft',
 
-// URI / URL primitives (RFC 3986)
-export {
-  normalizeUrl,
-  buildOrigin,
-  safeParseUrl,
-  getUrlOrigin,
-  ensureProtocol,
-  joinUrl,
-  resolvePublicSiteUrl,
-  getOriginFromHeaders,
-  getServerSideURL,
-  getClientSideURL,
-  resolvePublicSiteUrlFromHeaders,
-  generatePreviewPath,
-  type ServerOriginOptions,
-} from './rfc-3986'
+  fields: () => [
+    referenceField({
+      name: 'standardId',
+      description: 'Canonical standard id — e.g. "IFRS-15", "ISO-19011:2018", "RFC-8259", "EU-Directive-2014/95/EU". Stable across versions; supersession captures version transitions.',
+    }),
 
-// Rate limiting (RFC 6585 §4 / RFC 9110 §15.5.29)
-export {
-  getRateLimitKey,
-  checkRateLimit,
-  clearRateLimit,
-  getRateLimitResetSeconds,
-} from './rfc-6585'
+    // Identity + provenance
+    { name: 'title', type: 'text', required: true,
+      admin: { description: 'Full standard title in its publishing language (or en).' } },
+    {
+      name: 'family',
+      type: 'select',
+      required: true,
+      options: [
+        { label: 'IFRS — International Financial Reporting Standards', value: 'ifrs' },
+        { label: 'US-GAAP — Generally Accepted Accounting Principles (US)', value: 'us_gaap' },
+        { label: 'ISO — International Organization for Standardization', value: 'iso' },
+        { label: 'IEC — International Electrotechnical Commission', value: 'iec' },
+        { label: 'W3C — World Wide Web Consortium', value: 'w3c' },
+        { label: 'IETF / RFC', value: 'rfc' },
+        { label: 'EU Directive / Regulation', value: 'eu' },
+        { label: 'OECD — Tax / Transfer Pricing', value: 'oecd' },
+        { label: 'NIST — Cybersecurity / Crypto', value: 'nist' },
+        { label: 'ETSI — Telecom / eIDAS / PAdES', value: 'etsi' },
+        { label: 'WCAG — Web Content Accessibility', value: 'wcag' },
+        { label: 'SOX — Sarbanes-Oxley Act', value: 'sox' },
+        { label: 'GDPR / Data-protection', value: 'gdpr' },
+        { label: 'UN — UN/EDIFACT / UN-LOCODE / UN-CEFACT', value: 'un' },
+        { label: 'UPU — Universal Postal Union', value: 'upu' },
+        { label: 'EN / CEN', value: 'en' },
+        { label: 'BG / national', value: 'national' },
+        { label: 'Other', value: 'other' },
+      ],
+    },
+    { name: 'publisher', type: 'text',
+      admin: { description: 'Issuing body — "IASB" / "ISO/TC 46" / "W3C TAG" / "ETSI ESI". Free-text; the family already implies the publisher in most cases.' } },
+    { name: 'version', type: 'text',
+      admin: { description: 'Specific edition / year — "2017", "1.1", "rev:2023-09".' } },
+    { name: 'url', type: 'text',
+      admin: { description: 'Canonical URL to the public spec (or a stable mirror).' } },
 
-// HTTP cache adapters (RFC 9110 / RFC 9111)
-export {
-  createCachedPayloadFetcher,
-  getCachedPayloadDocument,
-  getCachedPayloadGlobal,
-  getCachedPayloadCollection,
-  getCachedPayloadCollectionAll,
-  getCachedPayloadById,
-  getCachedPayloadLocalizedDocument,
-  getCachedDocument,
-  getCachedGlobal,
-  getCachedRedirects,
-} from './rfc-9110'
+    // Temporal scope
+    { name: 'effectiveFrom', type: 'date',
+      admin: { description: 'Date the standard is mandatory or generally applicable.' } },
+    { name: 'effectiveUntil', type: 'date',
+      admin: { description: 'Set when the standard is withdrawn or formally superseded.' } },
 
-// Leases (IFRS 16 / ASC 842 lessee model)
-export type {
-  LeaseClassification,
-  LeaseStatus,
-  DiscountRateBasis,
-  PaymentFrequency,
-  PaymentTiming,
-  LeaseModificationKind,
-  UnderlyingAssetCategory,
-  LeasePayment,
-  LeaseModification,
-  RouAsset,
-  LeaseLiability,
-  Lease,
-} from './ifrs-16'
-export {
-  isLeaseClassification,
-  isLeaseStatus,
-  isDiscountRateBasis,
-  isPaymentFrequency,
-  isPaymentTiming,
-  isLeaseModificationKind,
-  qualifiesForShortTermExemption,
-} from './ifrs-16'
+    // Supersession trail (Law 28)
+    { name: 'supersededBy', type: 'relationship', relationTo: 'standards',
+      admin: { description: 'The newer standard that replaces this one. Forms the supersession DAG traversed by erpax.standards.traceSupersession.' } },
+    { name: 'supersedes', type: 'relationship', relationTo: 'standards', hasMany: true,
+      admin: { description: 'Older standards this one replaces (inverse of supersededBy for queryability).' } },
+    { name: 'supersessionRationale', type: 'textarea',
+      admin: { description: 'One-paragraph rationale captured when supersededBy is set.' } },
 
-// Revenue from Contracts with Customers (IFRS 15 / ASC 606 five-step model)
-export type {
-  RecognitionTiming,
-  OverTimeMeasurement,
-  OutputMethodKind,
-  InputMethodKind,
-  VariableConsiderationMethod,
-  Contract,
-  PerformanceObligation,
-  TransactionPrice,
-  VariableConsideration,
-  Allocation,
-  RevenueRecognition,
-  ContractAsset,
-  ContractLiability,
-  RefundLiability,
-} from './ifrs-15'
-export {
-  isRecognitionTiming,
-  isOverTimeMeasurement,
-  isOutputMethodKind,
-  isInputMethodKind,
-  isVariableConsiderationMethod,
-} from './ifrs-15'
+    // Conflict graph
+    {
+      name: 'conflicts',
+      type: 'array',
+      admin: { description: 'Other standards this one materially conflicts with (Law 27). Each conflict carries a one-line rationale + the conservation-law id the conflict triggers.' },
+      fields: [
+        { name: 'otherStandard', type: 'relationship', relationTo: 'standards', required: true },
+        { name: 'rationale', type: 'text', localized: true, required: true },
+        { name: 'lawId', type: 'text',
+          admin: { description: 'Optional Conservation Law id that this conflict trips (e.g. "Law-27").' } },
+        { name: 'severity', type: 'select',
+          options: [
+            { label: 'Informational', value: 'info' },
+            { label: 'Caution — interpret per the more specific standard', value: 'caution' },
+            { label: 'Blocking — cannot cite both in the same context', value: 'block' },
+          ],
+          defaultValue: 'caution',
+        },
+      ],
+    },
 
-// Bank-payment messages (ISO 20022:2022 — camt.053 / pain.001 / pain.008 / pacs.004)
-export type {
-  BankTransactionCode,
-  BookingStatus,
-  CreditDebitIndicator,
-  ChargeBearerCode,
-  PostalAddress,
-  PartyIdentification,
-  AccountIdentification,
-  CreditorReference,
-  RemittanceInformation,
-  Camt053Statement,
-  Camt053Transaction,
-  Pain001Initiation,
-  Pain001Payment,
-  Pain001CreditTransfer,
-  Pain008Initiation,
-  Pain008Payment,
-  Pain008DirectDebit,
-  Pacs004Return,
-  Pacs004ReturnTransaction,
-} from './iso-20022'
-export {
-  isBookingStatus,
-  isCreditDebitIndicator,
-  isChargeBearerCode,
-  isBankTransactionCodeShape,
-} from './iso-20022'
+    // Local citation graph — which platform modules cite this standard
+    {
+      name: 'citingModules',
+      type: 'array',
+      admin: { description: 'Cross-reference index: every src/* file that contains a JSDoc @standard tag pointing at this standardId. Populated by the citation-index gate (Slice QQQQQQQQ companion).' },
+      fields: [
+        { name: 'modulePath', type: 'text', required: true,
+          admin: { description: 'Repo-relative path. Stable across renames via Slice CCCCC JSDoc-as-spec extraction.' } },
+        { name: 'banner', type: 'select',
+          options: [
+            { label: '@standard', value: 'standard' },
+            { label: '@accounting', value: 'accounting' },
+            { label: '@compliance', value: 'compliance' },
+            { label: '@audit', value: 'audit' },
+            { label: '@security', value: 'security' },
+            { label: '@rfc', value: 'rfc' },
+          ],
+        },
+        { name: 'section', type: 'text',
+          admin: { description: 'Optional section pin — "§4.2", "Art.13(1)", "BG-7".' } },
+      ],
+    },
 
-// Peppol BIS Billing 3.0 envelope (UBL profile of EN 16931)
-export type {
-  PeppolProfileId,
-  PeppolDocumentTypeId,
-  PeppolParticipantIdentifierScheme,
-  PeppolParticipantIdentifier,
-  PeppolEndpointId,
-  PeppolEnvelope,
-  PeppolBillingMessage,
-} from './peppol-bis-3'
-export {
-  PEPPOL_BIS_3_CUSTOMIZATION_ID,
-  isPeppolParticipantIdentifierScheme,
-  isPeppolDocumentTypeId,
-  isPeppolProfileId,
-  formatPeppolParticipantId,
-  parsePeppolParticipantId,
-} from './peppol-bis-3'
+    // Per-tenant adoption flag (defaults: required)
+    {
+      name: 'adoptionStatus',
+      type: 'select',
+      defaultValue: 'required',
+      options: [
+        { label: 'Required for this tenant', value: 'required' },
+        { label: 'Recommended (not enforced)', value: 'recommended' },
+        { label: 'Optional / under evaluation', value: 'optional' },
+        { label: 'Exempted (rationale required)', value: 'exempted' },
+      ],
+    },
+    { name: 'exemptionRationale', type: 'textarea',
+      admin: { description: 'Required when adoptionStatus = exempted. Captures the maintainer + reason for audit.' } },
 
-// E-invoice semantic data model (EN 16931:2017+A1:2019)
-export type {
-  InvoiceTypeCode,
-  VatCategoryCode,
-  PaymentMeansCode,
-  ItemPriceDetails,
-  LineVatInformation,
-  InvoiceLine,
-  LineAllowance,
-  LineCharge,
-  DocumentLevelAllowance,
-  DocumentLevelCharge,
-  VatBreakdown,
-  DocumentTotals,
-  InvoiceHeader,
-} from './en-16931'
-export {
-  isInvoiceTypeCode,
-  isVatCategoryCode,
-  isPaymentMeansCode,
-} from './en-16931'
-
-// Security control catalog (ISO 27002:2022 / ISO 27001:2022 Annex A)
-export type { Iso27002Theme, Iso27002ControlId, ControlCoverageRow } from './iso-27002'
-export {
-  iso27002Title,
-  iso27002Theme,
-  ISO_27002_CATALOG,
-  isIso27002ControlId,
-  parseIso27002ControlId,
-  resolveCoverage,
-  coverageByTheme,
-  aggregateCoverage,
-} from './iso-27002'
-
-// UN/EDIFACT D.96A — INVOIC + DESADV + PAYMUL canonical message types
-export type {
-  EdifactSyntaxId,
-  EdifactMessageType,
-  EdifactUNB,
-  EdifactUNH,
-  EdifactUNT,
-  EdifactUNZ,
-  EdifactBGM,
-  EdifactDTM,
-  EdifactNAD,
-  EdifactLIN,
-  EdifactIMD,
-  EdifactQTY,
-  EdifactPRI,
-  EdifactMOA,
-  EdifactTAX,
-  EdifactInvoicLine,
-  EdifactInvoic,
-  EdifactDesadv,
-  EdifactPaymul,
-  EdifactInterchange,
-} from './un-edifact'
-export {
-  isEdifactSyntaxId,
-  isEdifactMessageType,
-  isBalancedInvoicNet,
-} from './un-edifact'
-
-// Tax-authority audit file (OECD SAF-T 2.0)
-export type {
-  SafTAddressStructure,
-  SafTPartyId,
-  SafTAmountStructure,
-  SafTTaxInformation,
-  SafTHeader,
-  SafTGeneralLedgerAccount,
-  SafTCustomer,
-  SafTSupplier,
-  SafTProduct,
-  SafTTaxTableEntry,
-  SafTMasterFiles,
-  SafTLine,
-  SafTTransaction,
-  SafTJournal,
-  SafTGeneralLedgerEntries,
-  SafTSourceDocumentType,
-  SafTSalesInvoiceLine,
-  SafTSalesInvoice,
-  SafTPaymentMechanism,
-  SafTPaymentMethod,
-  SafTPayment,
-  SafTMovementOfGoods,
-  SafTSourceDocuments,
-  SafTAuditFile,
-} from './saf-t'
-export {
-  isSafTSourceDocumentType,
-  isSafTPaymentMechanism,
-  isBalancedGeneralLedger,
-} from './saf-t'
-
-// Audit-trail types (ISO 19011 §6.4.6 audit-evidence)
-export type {
-  AuditOperation,
-  AuditSeverity,
-  AuditChangeRecord,
-  AuditTrailContext,
-  AuditEntry,
-  AuditEntryInput,
-} from './iso-19011'
-
-// Composite security headers (CSP-3 / HSTS / Permissions-Policy / Referrer-Policy)
-export {
-  defaultSecurityHeaders,
-  buildSecurityHeaders,
-  applySecurityHeaders,
-  type SecurityHeadersConfig,
-} from './_security-headers'
-
-// ─── Per-country canonical bundles (ISO-3166-1 alpha-2 dispatch) ────────
-// Adds the per-country merged view of profile + specifics + apis + bank
-// apis. Callers SHOULD import from `@/standards/iso-3166-1/countries`
-// directly; the master barrel re-exports for grep-traceability per
-// docs/MIGRATION_WORKLIST.md "Adding a new slice" §5.
-export {
-  type CountryBundle,
-  BG_COUNTRY_BUNDLE,
-  COUNTRY_BUNDLES,
-  getCountryBundle,
-} from './iso-3166-1/countries'
-
-// ─── ISO 7064 — check-character systems (mod-11 / mod-97-10) ────────────
-// BG ЕГН (Единен граждански номер) personal-id check-digit + birth-date
-// decoder. Adjacent to the IBAN mod-97-10 already handled in iso-13616.
-export { isBgEgn, decodeBgEgn, type EgnDecoded } from './iso-7064'
-
-// ─── ISO 19005 — PDF/A archival profiles ────────────────────────────────
-// XMP packet builder + profile constants for the long-term archival
-// declarations (PDF/A-2b default, PDF/A-3b for hybrid e-invoices).
-export {
-  type PdfAPart,
-  type PdfAConformance,
-  type PdfAProfile,
-  PDF_A_DEFAULT,
-  PDF_A_HYBRID_INVOICE,
-  pdfAProfileToXmp,
-  buildPdfAXmp,
-  type PdfAMetadataInput,
-} from './iso-19005'
-
-// ─── ISO 14289 — PDF/UA accessibility profiles ──────────────────────────
-// `pdfuaid:part` declaration helper combined with PDF/A via the iso-19005
-// metadata builder for the PDF/A-2a + PDF/UA-1 B2G dual baseline.
-export {
-  type PdfUaPart,
-  type PdfUaProfile,
-  PDF_UA_DEFAULT,
-  pdfUaProfileToXmp,
-} from './iso-14289'
-
-// ─── ETSI EN 319 142 — PAdES baseline profiles + signature dictionary ───
-// PDF Advanced Electronic Signatures — eIDAS qualified-signature wire
-// format. Two-pass `/Sig` dictionary builder for the per-country signers.
-export {
-  type PadesLevel,
-  type PadesSubFilter,
-  PADES_DEFAULT_LEVEL,
-  PADES_DEFAULT_SUBFILTER,
-  padesLevelOid,
-  buildPadesSignatureDictionary,
-  type PadesSignatureDictionaryInput,
-  type PadesSignatureDictionary,
-} from './etsi-en-319-142'
+    // Live + federated identifiers (Slice CCCCCC standards-as-live-objects)
+    { name: 'liveContentUuid', type: 'text',
+      admin: { description: 'Content-uuid of the standards-as-vortices live object (Law 27). Lets federation peers verify they have the same canonical record.' } },
+    { name: 'didUri', type: 'text',
+      admin: { description: 'Optional decentralised-identifier URI for the publisher entity (Slice DDDDDD).' } },
+  ],
+})

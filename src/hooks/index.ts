@@ -6,30 +6,30 @@
  */
 
 // Validation Hooks (GL Double-Entry & Fiscal Period)
-export { validateDoubleEntry } from './validateDoubleEntry'
-export { validateFiscalPeriodPosting } from './validateFiscalPeriodPosting'
+export { validateDoubleEntry } from '@/validate/double/entry'
+export { validateFiscalPeriodPosting } from '@/validate/fiscal/period/posting'
 
 // Immutability & Access Enforcement
-export { enforcePostingImmutability } from './enforcePostingImmutability'
+export { enforcePostingImmutability } from '@/enforce/posting/immutability'
 
 // Fiscal Period Lifecycle
-export { updateFiscalCalendarOnPeriodChange } from './updateFiscalCalendarOnPeriodChange'
+export { updateFiscalCalendarOnPeriodChange } from '@/update/fiscal/calendar/on/period/change'
 
 // Period-End Closing (Phase B2)
-export { validateClosingPeriod } from './validateClosingPeriod'
-export { generateReversingEntries } from './generateReversingEntries'
+export { validateClosingPeriod } from '@/validate/closing/period'
+export { generateReversingEntries } from '@/generate/reversing/entry'
 
 // Multi-Currency Closing (Phase B3)
-export { validateMultiCurrencyClosing } from './validateMultiCurrencyClosing'
+export { validateMultiCurrencyClosing } from '@/validate/multi/currency/closing'
 
 // Intercompany Fiscal Alignment (Phase B4)
-export { validateConsolidationReadiness } from './validateConsolidationReadiness'
+export { validateConsolidationReadiness } from '@/validate/consolidation/readiness'
 
 // Tax Period Integration (Phase B5)
-export { validateTaxPeriodClosing } from './validateTaxPeriodClosing'
+export { validateTaxPeriodClosing } from '@/validate/tax/period/closing'
 
 // Audit & Compliance Reporting (Phase B6)
-export { validateAuditComplianceReporting } from './validateAuditComplianceReporting'
+export { validateAuditComplianceReporting } from '@/validate/audit/compliance/reporting'
 
 // Post-Close Analytics (Phase B7)
-export { validatePostCloseAnalytics } from './validatePostCloseAnalytics'
+export { validatePostCloseAnalytics } from '@/validate/post/close/analytics'

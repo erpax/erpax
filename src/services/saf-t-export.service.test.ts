@@ -21,8 +21,8 @@ import {
   buildProducts,
   buildTaxTable,
   buildGeneralLedgerEntries,
-} from '@/services/saf-t-export.service'
-import { isBalancedGeneralLedger } from '@/standards/saf-t'
+} from '@/saf/t/export.service'
+import { isBalancedGeneralLedger } from '@/saf/t'
 
 const mockPayload = (
   fixtures: Record<string, Record<string, unknown>[]>,

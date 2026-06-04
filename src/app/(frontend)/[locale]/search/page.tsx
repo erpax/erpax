@@ -10,14 +10,14 @@
 
 import type { Metadata } from 'next/types'
 
-import { CollectionArchive } from '@/components/CollectionArchive'
+import { CollectionArchive } from '@/collection/archive'
 import configPromise from '@payload-config'
 import { getTranslations } from 'next-intl/server'
 import { getPayload, type TypedLocale } from 'payload'
 import React from 'react'
-import { Search } from '@/components/search/Component'
-import PageClient from './page.client'
-import { CardPostData } from '@/components/Card'
+import { Search } from '@/search/Component'
+import PageClient from '@/app/(frontend)/[locale]/search/page.client'
+import { CardPostData } from '@/card'
 
 type Args = {
   params: Promise<{ locale: TypedLocale }>

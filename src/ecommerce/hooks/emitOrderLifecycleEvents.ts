@@ -31,7 +31,7 @@
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
-import { emitEvent } from '@/services/event-emitter.service'
+import { emitEvent } from '@/event/emitter.service'
 
 const ACTIVE_STATUSES = new Set(['pending', 'processing', 'paid', 'on-hold'])
 

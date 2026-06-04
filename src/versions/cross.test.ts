@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { chainChecks, versionCross, type VersionCrossInput } from './cross'
+import { chainChecks, versionCross, type VersionCrossInput } from '@/versions/cross'
 
 const TS = new Date('2026-06-03T00:00:00.000Z')
 

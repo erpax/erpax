@@ -5,8 +5,8 @@ import type { EmailAdapter } from 'payload'
 import {
   resolveResendApiKeyForMessage,
   resolveResendDefaultsForMessage,
-} from '@/utilities/tenantRemoteSecrets'
-import { apiErr, ERR } from '@/utilities/errors'
+} from '@/tenant/remote/secret'
+import { apiErr, ERR } from '@/error'
 
 /**
  * Tenant-aware Resend email adapter — per-tenant API key + From address.

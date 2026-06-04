@@ -5,7 +5,7 @@
  * (exhale → inhale) and show the ledger balances. @see ./index · ../../uuid/llm
  */
 import { describe, it, expect } from 'vitest'
-import { forge, speak, attests, UTTERANCE_SCHEMA_VERSION, type Forged, type Complete } from './index'
+import { forge, speak, attests, UTTERANCE_SCHEMA_VERSION, type Forged, type Complete } from '@/llm/uuid'
 import { expand } from '@/uuid/llm'
 
 const T = 'tenant-1'

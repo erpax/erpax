@@ -10,10 +10,10 @@
  */
 
 import { createLocalReq, getPayload } from 'payload'
-import { seed } from '@/endpoints/seed'
+import { seed } from '@/seed'
 import config from '@payload-config'
-import { apiErrorResponse, ERR } from '@/utilities/errors'
-import { isSuperAdmin } from '@/access/isSuperAdmin'
+import { apiErrorResponse, ERR } from '@/error'
+import { isSuperAdmin } from '@/is/super/admin'
 import { headers } from 'next/headers'
 
 export const maxDuration = 60 // This function can run for a maximum of 60 seconds

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { AccountingClient } from '@/sdk/accounting-client';
-import Dashboard from './Dashboard';
-import Navigation from './Navigation';
-import AnalyticsPage from './pages/AnalyticsPage';
+import Dashboard from '@/components/Dashboard';
+import Navigation from '@/components/Navigation';
+import AnalyticsPage from '@/page/AnalyticsPage';
 
 interface AppProps {
   tenantId: string;

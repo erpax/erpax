@@ -26,15 +26,15 @@
  * @see ../../services/signal (the color+sound twin this closes the step gap for)
  */
 
-import { decodeIdentity, type DecodedIdentity } from '@/services/localize'
-import { signalForStep, type Signal } from '@/services/signal'
-import { HORO_DIGITS, type HoroStep } from '@/services/horo'
+import { decodeIdentity, type DecodedIdentity } from '@/localize'
+import { signalForStep, type Signal } from '@/signal'
+import { HORO_DIGITS, type HoroStep } from '@/horo'
 import {
   UUID_MATRIX_NODES,
   neighborsOf,
   backlinksOf,
   type MatrixNode,
-} from '@/services/uuid-matrix'
+} from '@/uuid/matrix'
 
 const hexOf = (uuid: string): string => {
   const hex = uuid.replace(/-/g, '')

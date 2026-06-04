@@ -22,8 +22,8 @@ import { EcommerceClientProvider } from '@/components/EcommerceClientProvider'
 import { IntlChrome } from '@/components/IntlChrome'
 import { routing } from '@/i18n/routing'
 import localization from '@/i18n/localization'
-import { resolvePublicSiteUrl } from '@/standards/rfc-3986/get-url'
-import { getTenantFromRequest } from '@/utilities/getTenantFromRequest'
+import { resolvePublicSiteUrl } from '@/rfc/3986/get-url'
+import { getTenantFromRequest } from '@/get/tenant/from/request'
 
 type Args = {
   children: React.ReactNode
