@@ -32,7 +32,7 @@
  * @audit ISO-19011:2018 audit-trail payroll-disbursement
  * @compliance SOX §404 internal-controls
  * @security ISO-27002 §5.4 segregation-of-duties treasury-preparer
- * @see src/plugins/accounting/hooks/payroll-run.hook.ts (status → posted)
+ * @see src/bank/accounts/payroll/runs/hooks/payroll-run.ts (status → posted)
  * @see src/plugins/accounting/collections/PaymentRuns.ts (pain.001 shell)
  * @see docs/adr/0001-event-driven-gl-posting.md
  */

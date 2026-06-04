@@ -3,7 +3,7 @@ import { CollectionConfig } from 'payload'
 // that don't exist in `src/services/` (silent no-ops). Aging is now a
 // service-generated DTO via `financialReportingService`; COGS will fold
 // into `gl-posting.service.ts`'s invoice handler when built.
-import { invoiceAccountingHook } from '@/accounting/hooks'
+import { invoiceAccountingHook } from '@/invoices/hooks'
 import { validateNotLocked } from '@/utility/period-lock'
 import { adminOnly, multiTenantRead } from '@/auth'
 import { authenticated } from '@/authenticated'

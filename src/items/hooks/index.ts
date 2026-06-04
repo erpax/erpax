@@ -10,3 +10,5 @@
 
 export * from '@/items/hooks/afterChange'
 export * from '@/items/hooks/beforeValidate'
+// GL posting hook (dissolved from the former accounting/hooks slice).
+export * from '@/items/hooks/item'

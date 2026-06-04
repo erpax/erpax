@@ -17,11 +17,11 @@
  * @accounting IFRS IAS-19 employee-benefits
  * @accounting US-GAAP ASC-710 compensation-general
  * @audit ISO-19011:2018 audit-trail
- * @see src/plugins/accounting/hooks/payroll-run.hook.ts
+ * @see src/bank/accounts/payroll/runs/hooks/payroll-run.ts
  */
 
 import { describe, it, expect } from 'vitest'
-import { payrollRunPostingHook } from '@/accounting/hooks/payroll-run.hook'
+import { payrollRunPostingHook } from '@/bank/accounts/payroll/runs/hooks/payroll-run'
 import { journalEntryService } from '@/journal/entry.service'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */

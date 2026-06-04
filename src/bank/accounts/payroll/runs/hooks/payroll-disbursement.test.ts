@@ -8,11 +8,11 @@
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard ISO-20022 pain.001 customer-credit-transfer-initiation
  * @audit ISO-19011:2018 audit-trail
- * @see src/plugins/accounting/hooks/payroll-disbursement.hook.ts
+ * @see src/bank/accounts/payroll/runs/hooks/payroll-disbursement.ts
  */
 
 import { describe, it, expect } from 'vitest'
-import { payrollDisbursementHook } from '@/collections/accounting/payroll-disbursement.hook'
+import { payrollDisbursementHook } from '@/bank/accounts/payroll/runs/hooks/payroll-disbursement'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
 type HookArgs = Parameters<typeof payrollDisbursementHook>[0]

@@ -11,3 +11,5 @@
 export * from '@/invoices/payments/hooks/afterChange'
 export * from '@/invoices/payments/hooks/beforeChange'
 export * from '@/invoices/payments/hooks/beforeValidate'
+// GL posting hook (dissolved from the former accounting/hooks slice).
+export * from '@/invoices/payments/hooks/payment'

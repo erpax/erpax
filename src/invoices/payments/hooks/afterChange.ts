@@ -1,7 +1,7 @@
 /**
  * Payments `afterChange` chain — auto-emits cash-flow GL postings.
  *
- * Delegates to `paymentAccountingHook` (`@/accounting/hooks/payment.hook.ts`),
+ * Delegates to `paymentAccountingHook` (`@/invoices/payments/hooks/payment.ts`),
  * which routes through `journalEntryService.createEntry` →
  * `validateDoubleEntry` → `DebitCreditLogic.validateEntry`.
  *
@@ -14,9 +14,9 @@
  * @accounting US-GAAP ASC-230 statement-of-cash-flows
  * @audit ISO-19011:2018 audit-trail double-entry-posting
  * @compliance SOX §404 internal-controls
- * @see src/plugins/accounting/hooks/payment.hook.ts
+ * @see src/invoices/payments/hooks/payment.ts
  */
 
-import { paymentAccountingHook } from '@/accounting/hooks'
+import { paymentAccountingHook } from '@/invoices/payments/hooks/payment'
 
 export const paymentsAfterChange = [paymentAccountingHook]

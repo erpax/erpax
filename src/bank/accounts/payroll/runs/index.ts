@@ -52,8 +52,8 @@ import {
   auditFields,
 } from '@/base/accounting/field'
 import { validateNotLocked } from '@/utility/period-lock'
-import { payrollRunPostingHook } from '@/accounting/hooks/payroll-run.hook'
-import { payrollDisbursementHook } from '@/accounting/hooks/payroll-disbursement.hook'
+import { payrollRunPostingHook } from '@/bank/accounts/payroll/runs/hooks/payroll-run'
+import { payrollDisbursementHook } from '@/bank/accounts/payroll/runs/hooks/payroll-disbursement'
 
 const PayrollRuns: CollectionConfig = {
   slug: 'payroll-runs',

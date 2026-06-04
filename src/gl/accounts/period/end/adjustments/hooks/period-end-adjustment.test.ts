@@ -13,11 +13,11 @@
  * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
  * @audit ISO-19011:2018 audit-trail period-end-evidence
  * @compliance SOX §404 internal-controls four-eyes
- * @see src/plugins/accounting/hooks/period-end-adjustment.hook.ts
+ * @see src/gl/accounts/period/end/adjustments/hooks/period-end-adjustment.ts
  */
 
 import { describe, it, expect } from 'vitest'
-import { periodEndAdjustmentPostingHook } from '@/accounting/hooks/period-end-adjustment.hook'
+import { periodEndAdjustmentPostingHook } from '@/gl/accounts/period/end/adjustments/hooks/period-end-adjustment'
 import { journalEntryService } from '@/journal/entry.service'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */

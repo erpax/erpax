@@ -3137,38 +3137,60 @@ function listTsSources(repoRoot: string): ReadonlyArray<string> {
 
 /**
  * The grouping prefixes the dissolution erased. A surviving `@/<prefix>/…`
- * import is a unit that has NOT yet dropped its prefix — every one of these
- * is a [[merge]] target (`@/collections/invoices` → `@/invoices`).
+ * import OR a surviving `src/<prefix>/` folder is a unit that has NOT yet
+ * dropped its prefix — every one of these is a [[merge]] target
+ * (`@/collections/invoices` → `@/invoices`; `src/services/` dissolves away).
+ * [[coordinate]]: no-prefixes — the grouping organ is gone; each atom is a
+ * single-word folder addressed at `@/<word>`, never `@/<group>/<word>`.
  */
 const GROUPING_PREFIXES: ReadonlyArray<string> = [
   'collections', 'services', 'components', 'fields',
   'hooks', 'access', 'utilities', 'endpoints',
+  'standards', 'accounting',
 ]
 
 /**
- * LOCALITY ([[coordinate]]: "a folder communicates only through its cross —
- * it cannot bypass a neighbour to reach a distant folder"). Two violations:
+ * LOCALITY + NO-PREFIXES ([[coordinate]]: "a folder communicates only through
+ * its cross — it cannot bypass a neighbour to reach a distant folder"; the
+ * dissolution erased the grouping organ). HARD-FAIL — STRICT ([[gate]]: green
+ * means *obeys the law*, not *compiles*). Three violation kinds:
  *
- *   1. a surviving grouping-prefix import `@/collections|@/services|…` — the
- *      prefix the dissolution drops; and
- *   2. a cross-unit relative climb `../<other-unit>` — a sibling reached by
- *      relative path instead of the `@/` address (the locality law says
- *      cross-unit imports are `@/`, only intra-unit may be relative).
+ *   1. a surviving grouping-prefix FOLDER `src/<prefix>/` (prefix ∈
+ *      {collections,services,components,fields,hooks,access,utilities,
+ *      endpoints,standards,accounting}) — the group the dissolution dissolves;
+ *   2. a surviving grouping-prefix IMPORT `@/<prefix>/…` — a unit addressed
+ *      through its dead group instead of its single-word `@/<word>`;
+ *   3. a cross-unit relative climb `../<other-unit>` — a sibling reached by
+ *      relative path instead of the `@/` address (cross-unit is `@/`, only
+ *      intra-unit may be relative).
  *
- * Severity WARN: the dissolution is in progress; these are the precise
- * [[merge]] queue, surfaced as drift, never a hard fail.
+ * Each offender names the LAW, the failing atom's COORDINATE (path · the dead
+ * group), and the derived FIX ([[gate]] message-trinity — teaches the one
+ * grounded cut).
  *
  * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
  * @audit Law 10 referential-harmony
  */
 export function checkLocality(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const srcRoot = join(repoRoot, 'src')
   const files = listTsSources(repoRoot)
-  if (files.length === 0) return warn('entropy', 'locality', 'no source files discovered')
+  if (files.length === 0) return fail('entropy', 'locality', 'LAW no-prefixes/@-locality ([[coordinate]]): no source files discovered under src/ — the corpus cannot be verified')
+
+  // ── (1) grouping-prefix FOLDERS still under src/ ─────────────────────
+  const folderOffenders: string[] = []
+  for (const prefix of GROUPING_PREFIXES) {
+    const dir = join(srcRoot, prefix)
+    if (existsSync(dir)) {
+      folderOffenders.push(
+        `COORDINATE src/${prefix}/ :: LAW no-prefixes ([[coordinate]]) — the grouping organ is dissolved; ` +
+        `FIX: lift each atom out to its own single-word folder src/<word>/ and delete src/${prefix}/`)
+    }
+  }
+
+  // ── (2) grouping-prefix IMPORTS `@/<prefix>/…` ───────────────────────
   const prefixRe = new RegExp(`from\\s+['"]@/(?:${GROUPING_PREFIXES.join('|')})(?:/|['"])`)
-  // A cross-unit relative climb: `../` then a path SEGMENT (i.e. `../x/…`),
-  // not a bare `../something` inside the same unit. The new law: cross-unit
-  // is `@/`, so any `../…/` that escapes the current folder is suspect.
+  // ── (3) cross-unit relative climb `../<segment>/…` (escapes the unit) ─
   const crossUnitRelRe = /from\s+['"](\.\.\/[^'"]+)['"]/
   const prefixOffenders: string[] = []
   const relOffenders: string[] = []
@@ -3179,27 +3201,97 @@ export function checkLocality(ctx: InvariantContext): InvariantResult {
     const rel = f.slice(repoRoot.length + 1)
     for (const line of text.split('\n')) {
       if (prefixRe.test(line)) {
-        const m = line.match(/@\/[\w-]+(?:\/[\w-]+)?/)
-        prefixOffenders.push(`${rel}: ${m ? m[0] : line.trim()}`)
+        const m = line.match(/@\/([\w-]+)(?:\/([\w-]+))?/)
+        const grp = m?.[1] ?? '?'
+        const word = m?.[2] ?? '<word>'
+        prefixOffenders.push(
+          `COORDINATE ${rel} :: LAW @/-locality ([[coordinate]]) — import bypasses the cross via the dead group '@/${grp}/'; ` +
+          `FIX: rewrite '@/${grp}/${word}' → '@/${word}'`)
       }
       const rm = line.match(crossUnitRelRe)
       // `../` escapes the current unit folder (climbs to a sibling unit).
       // A single-level `./x` intra-unit import is fine; `../x` crosses out.
-      if (rm) relOffenders.push(`${rel}: ${rm[1]}`)
+      if (rm) {
+        relOffenders.push(
+          `COORDINATE ${rel} :: LAW @/-locality ([[coordinate]]) — cross-unit relative climb '${rm[1]}' bypasses a neighbour; ` +
+          `FIX: address the sibling unit by '@/<word>', never '../'`)
+      }
     }
   }
-  const total = prefixOffenders.length + relOffenders.length
-  if (total === 0) {
+
+  const offenders = [...folderOffenders, ...prefixOffenders, ...relOffenders]
+  if (offenders.length === 0) {
     return pass('entropy', 'locality',
-      `${files.length} source(s) clean — no grouping-prefix imports, no cross-unit ../ climbs`)
+      `${files.length} source(s) clean — no grouping-prefix folders, no @/<prefix>/ imports, no cross-unit ../ climbs (no-prefixes + @/-locality hold)`)
   }
-  const offenders = [
-    ...prefixOffenders.map((o) => `prefix: ${o}`),
-    ...relOffenders.map((o) => `cross-unit-../: ${o}`),
-  ]
-  return warn('entropy', 'locality',
-    `${prefixOffenders.length} grouping-prefix import(s) + ${relOffenders.length} cross-unit ../ climb(s) — drop the prefix / use @/ (dissolution-in-progress)`,
-    offenders.slice(0, 25))
+  return fail('entropy', 'locality',
+    `LAW no-prefixes + @/-locality ([[coordinate]]) BROKEN: ${folderOffenders.length} grouping-prefix folder(s) + ${prefixOffenders.length} @/<prefix>/ import(s) + ${relOffenders.length} cross-unit ../ climb(s). Drop the dead group; address every atom at @/<word>.`,
+    offenders.slice(0, 30))
+}
+
+/**
+ * SINGLE-WORD FOLDERS ([[coordinate]] · generic-naming-law: "name entities by
+ * generic data-type in one concatenated word"). Every atom folder under `src/`
+ * is ONE concatenated word — lowercase letters/digits only. A `camelCase`,
+ * `hyphen-ated`, `under_scored`, or `dotted.suffix` folder is a leftover of the
+ * old layout and a [[merge]] target. HARD-FAIL — STRICT ([[gate]]).
+ *
+ * Framework-mandated route artifacts are NOT atoms and are excused: Next.js
+ * dynamic segments / route groups (`[slug]`, `[[...all]]`, `(group)`) and the
+ * sitemap/robots route files (`*-sitemap.xml`). Each offender names the LAW,
+ * the COORDINATE (path), and the FIX (the concatenated single word).
+ *
+ * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity (one word)
+ * @audit generic-naming-law — one concatenated word per atom
+ */
+export function checkSingleWordFolders(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const root = join(repoRoot, 'src')
+  if (!existsSync(root)) return fail('entropy', 'single-word-folders', 'LAW generic-naming ([[coordinate]]): src/ not found — the corpus cannot be verified')
+  const skip = (n: string): boolean =>
+    n === 'node_modules' || n === '.git' || n.startsWith('.') || n === '_attic' || n === '_legacy'
+  // Framework route artifacts — not atoms, exempt from the one-word law.
+  const isRouteArtifact = (n: string): boolean =>
+    /[[\]()]/.test(n)            // [slug], [[...all]], (group)
+    || /-sitemap\.xml$/.test(n)  // pages-sitemap.xml / posts-sitemap.xml
+    || /\.(xml|txt|json)$/.test(n)
+  // A single concatenated word: lowercase ASCII letters then optional digits
+  // (e.g. `invoices`, `a432`, `n18`). No upper, hyphen, underscore, or dot.
+  const isSingleWord = (n: string): boolean => /^[a-z][a-z0-9]*$/.test(n)
+  const offenders: string[] = []
+  let wordCount = 0
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try { entries = readdirSync(dir, { withFileTypes: true }) } catch { return }
+    for (const e of entries) {
+      if (!e.isDirectory() || skip(e.name)) continue
+      const full = join(dir, e.name)
+      if (isRouteArtifact(e.name)) { walk(full); continue }
+      if (isSingleWord(e.name)) {
+        wordCount++
+      } else {
+        const fixed = e.name.toLowerCase().replace(/[-_.]+/g, '')
+        const flaw = /[A-Z]/.test(e.name) ? 'camelCase'
+          : e.name.includes('-') ? 'hyphen'
+          : e.name.includes('_') ? 'underscore'
+          : e.name.includes('.') ? 'dotted-suffix'
+          : 'multi-word'
+        offenders.push(
+          `COORDINATE ${full.slice(repoRoot.length + 1)} :: LAW generic-naming ([[coordinate]]) — ` +
+          `'${e.name}' is not single-word (${flaw} leftover); FIX: rename the folder to '${fixed}'`)
+      }
+      walk(full)
+    }
+  }
+  for (const e of readdirSync(root, { withFileTypes: true })) {
+    if (e.isDirectory() && !skip(e.name)) walk(join(root, e.name))
+  }
+  return offenders.length === 0
+    ? pass('entropy', 'single-word-folders',
+        `${wordCount} atom folder(s) each a single concatenated word (generic-naming-law holds)`)
+    : fail('entropy', 'single-word-folders',
+        `LAW generic-naming ([[coordinate]]) BROKEN: ${offenders.length} non-single-word folder(s) (camelCase/hyphen/underscore/dotted leftovers) — rename each to one concatenated word`,
+        offenders.slice(0, 30))
 }
 
 /**
@@ -3208,16 +3300,22 @@ export function checkLocality(ctx: InvariantContext): InvariantResult {
  * collection's `index.ts` lives in MUST be plural (matches the slug's
  * conventional plural form), and its declared `slug` should be plural too.
  *
- * Cheap heuristic: a collection source whose folder name does NOT end in a
- * plural marker (`s`, or known irregulars) is flagged. WARN — the
- * dissolution is renaming folders, and some domain slugs are mass nouns.
+ * Heuristic: a collection source (its `index.ts` declares `slug` + `fields`)
+ * whose folder name does NOT end in a plural marker (`s`, or a known mass-noun
+ * irregular) is a singular folder masquerading as a collection. HARD-FAIL —
+ * STRICT ([[gate]]: green means *obeys the law*). Each offender names the LAW
+ * ([[config]]: plural ⇒ collection, singular ⇒ page/model), the COORDINATE
+ * (path · slug), and the FIX (pluralise the folder + slug, or — if it is truly
+ * a single-doc view — drop the `slug:`/`fields:` collection shape and make it a
+ * dashboard/page).
  *
  * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
+ * @audit [[config]] — collections are plural, models/pages singular
  */
 export function checkSingularModelPluralCollection(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
   const files = listCollectionFiles(repoRoot)
-  if (files.length === 0) return warn('entropy', 'singular-model-plural-collection', 'no collection sources discovered')
+  if (files.length === 0) return fail('entropy', 'singular-model-plural-collection', 'LAW plural-collection ([[config]]): no collection sources discovered — the chart of accounts cannot be verified')
   // Mass-noun / already-plural-without-s slugs that are legitimately not `…s`.
   const ALLOWED_NONPLURAL = new Set([
     'media', 'search', 'header', 'footer', 'data', 'series',
@@ -3228,14 +3326,17 @@ export function checkSingularModelPluralCollection(ctx: InvariantContext): Invar
     const slug = (readSafe(f).match(/slug:\s*['"]([\w-]+)['"]/) ?? [])[1] ?? ''
     const looksPlural = folder.endsWith('s') || ALLOWED_NONPLURAL.has(folder)
     if (!looksPlural) {
-      offenders.push(`${folder}/index.ts (slug '${slug}') — collection folder should be PLURAL`)
+      offenders.push(
+        `COORDINATE ${folder}/index.ts (slug '${slug}') :: LAW plural-collection ([[config]]) — ` +
+        `a CollectionConfig (slug + fields) is data and MUST be plural; ` +
+        `FIX: rename the folder + slug to the plural '${folder}s', or — if it is a single-doc view — drop the collection shape and make it a singular dashboard/page`)
     }
   }
   return offenders.length === 0
     ? pass('entropy', 'singular-model-plural-collection',
-        `${files.length} collection folder(s) plural (singular-model/plural-collection holds)`)
-    : warn('entropy', 'singular-model-plural-collection',
-        `${offenders.length} collection folder(s) not plural — singular-model/plural-collection drift`,
+        `${files.length} collection folder(s) plural (plural-collection / singular-model holds)`)
+    : fail('entropy', 'singular-model-plural-collection',
+        `LAW plural-collection ([[config]]) BROKEN: ${offenders.length} singular folder(s) declare a CollectionConfig — pluralise the data account or demote it to a page`,
         offenders.slice(0, 20))
 }
 

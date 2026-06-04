@@ -27,11 +27,11 @@
  * @accounting IFRS IFRS-16 §29-§31 §36-§38 leases
  * @accounting US-GAAP ASC-842-20-35 lessee-subsequent-measurement
  * @audit ISO-19011:2018 audit-trail
- * @see src/plugins/accounting/hooks/lease-period-posting.hook.ts
+ * @see src/leases/lease/period/postings/hooks/lease-period-posting.ts
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { leasePeriodPostingHook } from '@/accounting/hooks/lease-period-posting.hook'
+import { leasePeriodPostingHook } from '@/leases/lease/period/postings/hooks/lease-period-posting'
 import { journalEntryService } from '@/journal/entry.service'
 import * as glResolver from '@/gl/account/resolver'
 

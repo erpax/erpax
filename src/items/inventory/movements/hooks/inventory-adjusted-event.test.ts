@@ -12,12 +12,12 @@
  * @accounting IFRS IAS-2 §10 §28 §36 inventories
  * @accounting US-GAAP ASC-330 inventory
  * @audit ISO-19011:2018 audit-trail
- * @see src/plugins/accounting/hooks/inventory-movement.hook.ts
+ * @see src/items/inventory/movements/hooks/inventory-movement.ts
  * @see src/services/gl-posting.service.ts postInventoryAdjusted
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { inventoryMovementPostingHook } from '@/accounting/hooks/inventory-movement.hook'
+import { inventoryMovementPostingHook } from '@/items/inventory/movements/hooks/inventory-movement'
 import { eventEmitter } from '@/event/emitter.service'
 import type { InventoryAdjustedEvent } from '@/types/events'
 
