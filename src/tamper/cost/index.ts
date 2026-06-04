@@ -6,17 +6,27 @@
  * property is INTEGRITY, not confidentiality: there is no key to steal, and the
  * only attack is to out-compute the whole. This module quantifies "how much".
  *
- * Two attack paths (all costs in log2 of operations, to avoid Number overflow):
+ * Three attack paths (all costs in log2 of operations, to avoid Number overflow):
  *   1. LOCAL FORGE — change one record but keep its uuid, so verification passes
  *      with no recompute. Needs a SHA-256 second-preimage on the digest bits:
  *      ~2^digestBits operations.
- *   2. GLOBAL REWRITE — recompute instead of collide. Cheap per node, BUT every
+ *   2. CHOSEN-CONTENT COLLISION — author TWO contents that collide on the width
+ *      the external commitment binds, get the benign one anchored, then later
+ *      present the malign one (same committed value ⇒ the anchor cannot tell them
+ *      apart). Cost is a birthday collision: ~2^(commitmentBits/2). This is why
+ *      the Merkle leaf / anchor must commit to the FULL 256-bit content digest
+ *      (services/integrity/content-uuid `computeContentDigest`, collision 2^128),
+ *      NOT the truncated 106-bit uuid — whose collision floor is only 2^53. In
+ *      scope only when the attacker authors content before it is committed.
+ *   3. GLOBAL REWRITE — recompute instead of collide. Cheap per node, BUT every
  *      relation is a content-uuid wired in all directions, so one change cascades
  *      to the transitive closure = the whole store; and the root is externally
  *      ANCHORED (services/anchoring → RFC-3161/eIDAS TSA or a blockchain leaf).
  *      To finish you must also forge that anchor: ~2^anchorStrengthBits.
  *
- * Binding cost = min(localForge, globalRewrite). The all-directions wiring is
+ * Binding cost = min(localForge, chosenCollision, globalRewrite). The chosen-
+ * collision path binds only when `anchorCommitmentBits` is supplied (the
+ * attacker controls pre-commit content). The all-directions wiring is
  * what makes "change one" cost "change all", so the only cheap path (rewrite a
  * *deterministic* store) is closed UNLESS the anchor is absent — then a writer
  * recomputes everything for free and tamper-evidence collapses. The anchor is
@@ -44,6 +54,14 @@
 
 /** erpax v8 content-digest width (uuid-format: 48 + 12 + 46 bits of SHA-256). */
 export const ERPAX_DIGEST_BITS = 106
+
+/**
+ * Full SHA-256 content-digest width — what an anchor / Merkle leaf SHOULD commit
+ * to (services/integrity/content-uuid `computeContentDigest`). Committing this
+ * full digest puts the chosen-content collision floor at 2^128, above the 2^106
+ * uuid second-preimage; committing only the 106-bit uuid drops it to 2^53.
+ */
+export const CONTENT_DIGEST_BITS = 256
 
 /** log2 of the whole Bitcoin network's hashrate (~7×10^20 H/s) — a concrete "all of humanity's hashpower" yardstick. */
 export const BITCOIN_HASHRATE_LOG2 = Math.log2(7e20)
@@ -140,9 +158,11 @@ export const invariantChecks = (checks: number, invariants: number): number =>
 export type CrackVerdict = {
   /** cheapest attack, log2 ops */
   crackCostLog2: number
-  /** which path binds: the digest collision, the external anchor, or an un-anchored free rewrite */
-  binding: 'second-preimage' | 'anchor' | 'free-rewrite'
+  /** which path binds: a post-hoc second-preimage, a chosen-content collision, the external anchor, or an un-anchored free rewrite */
+  binding: 'second-preimage' | 'collision' | 'anchor' | 'free-rewrite'
   secondPreimageLog2: number
+  /** chosen-content birthday-collision cost on the commitment width; +∞ ⇒ that threat model is out of scope (no `anchorCommitmentBits`) */
+  chosenCollisionLog2: number
   birthdayMarginBits: number
   /** log2 years for the whole Bitcoin network to pay crackCost */
   bruteYearsLog2: number
@@ -173,6 +193,13 @@ export function crackVerdict(opts: {
   strongConsistency?: boolean
   /** machine-checked conservation invariants the audit runs (DeepSeek-Prover inhale) — ADDS gates per replica */
   invariants?: number
+  /**
+   * Width (bits) the external commitment (Merkle leaf / anchor) binds. Presence
+   * models the chosen-content collision path (birthday = bits/2): set to
+   * CONTENT_DIGEST_BITS (256) when the leaf commits the FULL content digest;
+   * the bare 106-bit uuid yields a 2^53 floor. Absent ⇒ post-hoc threat only.
+   */
+  anchorCommitmentBits?: number
 }): CrackVerdict {
   const digestBits = opts.digestBits ?? ERPAX_DIGEST_BITS
   const rows = opts.rows ?? 1
@@ -188,6 +215,13 @@ export function crackVerdict(opts: {
   const coverageCost = opts.coverage === undefined ? 0 : coverageCostLog2(opts.coverage, effectiveChecks)
 
   const sp = secondPreimageLog2(digestBits)
+  // Chosen-content collision: in scope only when the commitment width is given
+  // (the attacker authors content before it is committed). Birthday on that
+  // width — 2^53 for the bare 106-bit uuid, 2^128 for the full 256-bit digest.
+  const chosenCollisionLog2 =
+    opts.anchorCommitmentBits === undefined
+      ? Number.POSITIVE_INFINITY
+      : birthdayLog2(opts.anchorCommitmentBits)
   if (!anchored) {
     // No external entropy: a deterministic store is rewritable for free — the
     // cascade is cheap when you control every row. Tamper-evidence collapses.
@@ -195,29 +229,39 @@ export function crackVerdict(opts: {
       crackCostLog2: 0,
       binding: 'free-rewrite',
       secondPreimageLog2: sp,
+      chosenCollisionLog2,
       birthdayMarginBits: birthdayMarginBits(digestBits, rows),
       bruteYearsLog2: Number.NEGATIVE_INFINITY,
       tamperEvident: false,
       note: 'Un-anchored: a writer recomputes the whole deterministic store for free. The external anchor is mandatory.',
     }
   }
-  // Anchored: must beat the cheaper of (collide the digest) / (forge the anchor),
-  // PLUS evade every wired uuid check (the coverage layer — ∞ at 100% coverage).
-  const perRecord = Math.min(sp, anchorStrengthBits)
+  // Anchored: must beat the cheapest of (post-hoc second-preimage) /
+  // (chosen-content collision on the commitment) / (forge the anchor), PLUS evade
+  // every wired uuid check (the coverage layer — ∞ at 100% coverage).
+  const candidates: ReadonlyArray<readonly [number, 'collision' | 'second-preimage' | 'anchor']> = [
+    [chosenCollisionLog2, 'collision'],
+    [sp, 'second-preimage'],
+    [anchorStrengthBits, 'anchor'],
+  ]
+  // Stable argmin: ties keep earlier (collision ≺ second-preimage ≺ anchor).
+  const [perRecord, binding] = candidates.reduce((lo, c) => (c[0] < lo[0] ? c : lo))
   const crackCostLog2 = perRecord + coverageCost
-  const binding = sp <= anchorStrengthBits ? 'second-preimage' : 'anchor'
   return {
     crackCostLog2,
     binding,
     secondPreimageLog2: sp,
+    chosenCollisionLog2,
     birthdayMarginBits: birthdayMarginBits(digestBits, rows),
     bruteYearsLog2: bruteYearsLog2(crackCostLog2, BITCOIN_HASHRATE_LOG2),
     tamperEvident: true,
     note:
       coverageCost === Number.POSITIVE_INFINITY
         ? '100% coverage by architecture (all wired in uuid) — no undetected tamper exists; cost is unbounded.'
-        : binding === 'anchor'
-          ? `Anchor (${anchorStrengthBits}-bit) is weaker than the ${digestBits}-bit digest — widen it or strengthen the anchor.`
-          : `Bound by the ${digestBits}-bit digest second-preimage; the all-directions wiring makes any local tamper a global rewrite, closed by the anchor.`,
+        : binding === 'collision'
+          ? `Chosen-content collision on the ${opts.anchorCommitmentBits}-bit commitment (~2^${perRecord}) is the floor — commit the full ${CONTENT_DIGEST_BITS}-bit content digest, not the ${digestBits}-bit uuid.`
+          : binding === 'anchor'
+            ? `Anchor (${anchorStrengthBits}-bit) is weaker than the ${digestBits}-bit digest — widen it or strengthen the anchor.`
+            : `Bound by the ${digestBits}-bit digest second-preimage; the all-directions wiring makes any local tamper a global rewrite, closed by the anchor.`,
   }
 }

@@ -126,6 +126,19 @@ function bytesToUuidString(bytes: Buffer): string {
 }
 
 /**
+ * The raw SHA-256 (FIPS 180-4) over (namespace ∥ name) — the shared root of
+ * both projections. `nameUuid` truncates its first 16 bytes to a 128-bit uuid
+ * (≈106 binding bits after the version/variant stamp); `nameDigest` keeps all
+ * 256. Factored so the two never drift.
+ */
+function nameHashBytes(namespaceUuid: string, name: string): Buffer {
+  // Strip dashes from namespace to recover 16 bytes
+  const nsBytes = Buffer.from(namespaceUuid.replace(/-/g, ''), 'hex')
+  if (nsBytes.length !== 16) throw new Error(`invalid namespace UUID: ${namespaceUuid}`)
+  return createHash('sha256').update(nsBytes).update(Buffer.from(name, 'utf8')).digest()
+}
+
+/**
  * RFC 9562 §5.8 name-based UUID (version 8, custom/vendor layout).
  * The digest is SHA-256 (FIPS 180-4) over (namespace ∥ name); the
  * first 16 bytes become the raw UUID, then the version (8) and
@@ -134,17 +147,20 @@ function bytesToUuidString(bytes: Buffer): string {
  * nibble is 8, never 5.
  */
 export function nameUuid(namespaceUuid: string, name: string): string {
-  // Strip dashes from namespace to recover 16 bytes
-  const nsBytes = Buffer.from(namespaceUuid.replace(/-/g, ''), 'hex')
-  if (nsBytes.length !== 16) throw new Error(`invalid namespace UUID: ${namespaceUuid}`)
-  const nameBytes = Buffer.from(name, 'utf8')
-  const hash = createHash('sha256').update(nsBytes).update(nameBytes).digest()
-  const bytes = Buffer.from(hash.subarray(0, 16))
+  const bytes = Buffer.from(nameHashBytes(namespaceUuid, name).subarray(0, 16))
   // Set version (8) in the high nibble of byte 6 (RFC 9562 §5.8)
   bytes[6] = (bytes[6]! & 0x0f) | 0x80
   // Set variant (10xxxxxx, RFC 9562 §4.1) in the high two bits of byte 8
   bytes[8] = (bytes[8]! & 0x3f) | 0x80
   return bytesToUuidString(bytes)
+}
+
+/**
+ * The FULL 256-bit SHA-256 over (namespace ∥ name), hex — the un-truncated
+ * digest the uuid is derived from (RFC 9562 §5.8 keeps only the first 128 bits).
+ */
+export function nameDigest(namespaceUuid: string, name: string): string {
+  return nameHashBytes(namespaceUuid, name).toString('hex')
 }
 
 /** Root namespace for ERPax tenant content-uuids — registered ad-hoc. */
@@ -186,6 +202,24 @@ export function computeContentUuid<T extends Record<string, unknown>>(
   const canonical = jcsCanonicalize(stripped)
   const ns = tenantNamespace(tenantId)
   return nameUuid(ns, canonical) as ContentUuid<T>
+}
+
+/**
+ * The FULL 256-bit content digest (64 hex chars) of an object — the SAME
+ * canonical bytes that feed `computeContentUuid`, but WITHOUT the 128-bit
+ * truncation. This is the value an external commitment (Merkle leaf / anchor)
+ * must bind: the chosen-content collision floor on the full digest is 2^128
+ * (birthday on 256 bits), versus only 2^53 for the 106-bit uuid. The uuid stays
+ * the addressing / merge key; this digest is the tamper-evidence commitment.
+ *
+ * @see services/tamper-cost `anchorCommitmentBits` (the collision path this closes)
+ */
+export function computeContentDigest<T extends Record<string, unknown>>(
+  obj: T,
+  tenantId: string,
+): string {
+  const canonical = jcsCanonicalize(stripNonContentFields(obj))
+  return nameDigest(tenantNamespace(tenantId), canonical)
 }
 
 /**

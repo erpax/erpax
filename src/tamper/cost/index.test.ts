@@ -6,6 +6,7 @@
 import { describe, it, expect } from 'vitest'
 import {
   ERPAX_DIGEST_BITS,
+  CONTENT_DIGEST_BITS,
   BITCOIN_HASHRATE_LOG2,
   secondPreimageLog2,
   birthdayLog2,
@@ -95,6 +96,37 @@ describe('tamper-cost: the headline answer', () => {
     expect(v.tamperEvident).toBe(true)
     expect(v.crackCostLog2).toBe(106)
     expect(2 ** v.bruteYearsLog2).toBeGreaterThan(1000) // millennia of global hashpower
+  })
+})
+
+describe('tamper-cost: the chosen-content collision path — the commitment must bind the FULL digest', () => {
+  it('out of scope by default — no attacker-authored pre-commit content modelled (chosenCollision = ∞)', () => {
+    const v = crackVerdict({ anchored: true, anchorStrengthBits: 128 })
+    expect(v.chosenCollisionLog2).toBe(Number.POSITIVE_INFINITY)
+    expect(v.binding).toBe('second-preimage')
+    expect(v.crackCostLog2).toBe(106)
+  })
+  it('committing only the 106-bit uuid exposes a 2^53 collision floor — THE GAP', () => {
+    const v = crackVerdict({ anchorCommitmentBits: ERPAX_DIGEST_BITS })
+    expect(v.chosenCollisionLog2).toBe(53)
+    expect(v.binding).toBe('collision')
+    expect(v.crackCostLog2).toBe(53)
+    expect(v.note).toMatch(/full 256-bit content digest/)
+  })
+  it('committing the FULL 256-bit content digest CLOSES it — collision 2^128 ≥ the 2^106 second-preimage', () => {
+    const v = crackVerdict({ anchorCommitmentBits: CONTENT_DIGEST_BITS })
+    expect(v.chosenCollisionLog2).toBe(128)
+    expect(v.binding).toBe('second-preimage')
+    expect(v.crackCostLog2).toBe(106)
+  })
+  it('the collision path composes with the coverage law (still ∞ at 100% coverage)', () => {
+    const v = crackVerdict({ anchorCommitmentBits: ERPAX_DIGEST_BITS, coverage: 1 })
+    expect(v.crackCostLog2).toBe(Number.POSITIVE_INFINITY)
+  })
+  it('a weak anchor still binds when it is the cheapest path, even with a full-digest commitment', () => {
+    const v = crackVerdict({ anchorCommitmentBits: CONTENT_DIGEST_BITS, anchorStrengthBits: 64 })
+    expect(v.binding).toBe('anchor')
+    expect(v.crackCostLog2).toBe(64)
   })
 })
 

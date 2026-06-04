@@ -118,7 +118,7 @@ export function empiricalProofs(merkleDag?: MerkleDagFacts): EmpiricalProofs {
  */
 export interface TamperCostProof {
   readonly crackCostLog2: number
-  readonly binding: 'second-preimage' | 'anchor' | 'free-rewrite'
+  readonly binding: 'second-preimage' | 'collision' | 'anchor' | 'free-rewrite'
   readonly bruteYearsLog2: number
   readonly tamperEvident: boolean
   readonly invariantsChecked: number

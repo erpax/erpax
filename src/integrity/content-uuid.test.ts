@@ -5,7 +5,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import {
-  computeContentUuid, verifyContentUuid, jcsCanonicalize,
+  computeContentUuid, computeContentDigest, verifyContentUuid, jcsCanonicalize,
   stripNonContentFields, tenantNamespace, NON_CONTENT_FIELDS,
 } from '@/integrity/content-uuid'
 
@@ -125,5 +125,35 @@ describe('verifyContentUuid', () => {
     const result = verifyContentUuid({ amount: 100 }, 'tenant-1')
     expect(result.ok).toBe(false)
     expect((result as { actual?: string }).actual).toBeUndefined()
+  })
+})
+
+describe('computeContentDigest: the FULL 256-bit commitment (anchor/Merkle leaf, collision 2^128)', () => {
+  it('is deterministic and exactly 256 bits (64 hex chars)', () => {
+    const obj = { amount: 100, party: 'acme' }
+    const d = computeContentDigest(obj, 'tenant-1')
+    expect(d).toMatch(/^[0-9a-f]{64}$/)
+    expect(computeContentDigest(obj, 'tenant-1')).toBe(d)
+  })
+  it('any content change yields a different digest (tamper-evident)', () => {
+    expect(computeContentDigest({ amount: 100 }, 'tenant-1'))
+      .not.toBe(computeContentDigest({ amount: 101 }, 'tenant-1'))
+  })
+  it('is tenant-scoped, like the uuid', () => {
+    expect(computeContentDigest({ amount: 100 }, 'tenant-1'))
+      .not.toBe(computeContentDigest({ amount: 100 }, 'tenant-2'))
+  })
+  it('commits strictly MORE bits than the truncated uuid (256 vs the uuid\'s 128)', () => {
+    const obj = { amount: 100 }
+    expect(computeContentDigest(obj, 'tenant-1').length).toBe(64) // 256 bits
+    expect(computeContentUuid(obj, 'tenant-1').replace(/-/g, '').length).toBe(32) // 128 bits
+  })
+  it('strips the same non-content fields as the uuid (id/timestamps do not move it)', () => {
+    const bare = computeContentDigest({ amount: 100 }, 'tenant-1')
+    const withMeta = computeContentDigest(
+      { amount: 100, id: 'x', uuid: 'y', createdAt: 'now', updatedAt: 'later' },
+      'tenant-1',
+    )
+    expect(withMeta).toBe(bare)
   })
 })
