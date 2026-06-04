@@ -18,7 +18,11 @@
  *   - store one compact `scopes` field (an optional deny-list);
  *   - in afterRead, populate `doc[camelCase(slug)] = {create,find,update,delete}`
  *     for every collection/global — default-open (the actor-merge "door opens
- *     onto everything"), narrowed by `scopes.deny`.
+ *     onto everything"), narrowed by `scopes.deny`;
+ *   - likewise repopulate the tool/resource/prompt + experimental namespaces the
+ *     handler reads (`payload-mcp-tool`/`-resource`/`-prompt`, `collections`/
+ *     `jobs`/`config`/`auth`) — computed from the groups the plugin generated, so
+ *     the collapse mirrors the FULL read surface, not just collections/globals.
  *
  * Result: the api-keys table drops from ~825 columns to ~8; enforcement is
  * byte-identical (the handler reads the same shape); per-key narrowing survives,
@@ -39,6 +43,54 @@ export const toCamelCase = (str: string): string =>
 
 const COLLECTION_OPS = ['create', 'find', 'update', 'delete'] as const
 const GLOBAL_OPS = ['find', 'update'] as const
+
+/**
+ * The capability namespaces the handler reads BESIDES collections/globals
+ * (getMcpHandler.js): custom tools/resources/prompts live under these literal
+ * group keys, and the experimental dev-tools under `collections`/`jobs`/`config`/
+ * `auth`. The collapse strips their stored columns like any other matrix, so they
+ * must be repopulated virtually too. The `payload-mcp-*` keys can never collide
+ * with a `camelCase(slug)` (slugs lose their dashes), so name-based detection is
+ * unambiguous for those three.
+ */
+const SPECIAL_CAPABILITY_NAMESPACES: ReadonlySet<string> = new Set([
+  'payload-mcp-tool',
+  'payload-mcp-resource',
+  'payload-mcp-prompt',
+  'collections',
+  'jobs',
+  'config',
+  'auth',
+])
+
+/**
+ * Walk the (pre-strip) field tree and capture every special capability group the
+ * plugin generated: its `name` (the key the handler indexes) → its child checkbox
+ * names (tool/prompt/resource names, or experimental ops). Collection/global
+ * groups are NOT captured here — they're repopulated slug-based (preserving kebab
+ * deny keys); these special groups carry their literal key, so deny uses
+ * `name` / `name:child`.
+ */
+const collectSpecialNamespaces = (
+  fields: ReadonlyArray<Field>,
+): ReadonlyMap<string, ReadonlyArray<string>> => {
+  const found = new Map<string, ReadonlyArray<string>>()
+  const walk = (fs: ReadonlyArray<Field>): void => {
+    for (const f of fs) {
+      const node = f as { type?: string; name?: string; fields?: Field[] }
+      if (node.type === 'group' && node.name && SPECIAL_CAPABILITY_NAMESPACES.has(node.name)) {
+        const children = (node.fields ?? [])
+          .map((c) => (c as { name?: string }).name)
+          .filter((n): n is string => typeof n === 'string')
+        found.set(node.name, children)
+        continue // children are leaf checkboxes — no nested capability groups
+      }
+      if (node.fields) walk(node.fields) // descend collapsible/group wrappers
+    }
+  }
+  walk(fields)
+  return found
+}
 
 /** A compact, optional per-key narrowing: deny entries are `slug` (all ops) or `slug:op`. */
 interface ApiKeyScopes {
@@ -77,6 +129,10 @@ export const collapseApiKeyScopes = (collection: CollectionConfig): CollectionCo
     (f) => !CAPABILITY_CONTAINER_TYPES.has((f as { type?: string }).type ?? ''),
   )
 
+  // Capture the special capability groups BEFORE they're stripped, so afterRead
+  // can repopulate them from exactly what the plugin generated.
+  const specialNamespaces = collectSpecialNamespaces(collection.fields ?? [])
+
   const scopesField: Field = {
     name: 'scopes',
     type: 'json',
@@ -96,6 +152,11 @@ export const collapseApiKeyScopes = (collection: CollectionConfig): CollectionCo
     }
     for (const g of req.payload.config.globals ?? []) {
       d[toCamelCase(g.slug)] = capabilitiesFor(scopes, g.slug, GLOBAL_OPS)
+    }
+    // The tool/resource/prompt + experimental namespaces the handler also reads,
+    // keyed by their literal group name (no-op when none are registered).
+    for (const [namespace, children] of specialNamespaces) {
+      d[namespace] = capabilitiesFor(scopes, namespace, children)
     }
     return doc
   }
