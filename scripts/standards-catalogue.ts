@@ -193,6 +193,17 @@ function emitSkillSection(entries: Entry[]): void {
     }
     out.push('')
   }
+  const uncited = entries.filter((e) => e.count === 0)
+  if (uncited.length) {
+    out.push(
+      `### registered — awaiting citation (${uncited.length})`,
+      '',
+      'Known canonical standards in the registry not yet cited by code — e.g. the upstream permaculture / regenerative-agriculture basis of the agriculture domain. They seed as `proposed` and become cited as the domain grows.',
+      '',
+    )
+    for (const e of uncited) out.push(`- ${dot(e.color)} \`${e.id}\` — ${e.title}`)
+    out.push('')
+  }
   out.push(END)
   const block = out.join('\n')
   let md = readFileSync(SKILL_MD, 'utf8')

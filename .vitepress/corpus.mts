@@ -4,7 +4,7 @@
 // src/, never a parallel one. VitePress is the frontend matter; this is the map
 // it and the backend search both read, so a skill's docs route and its search
 // slug are the same address (the uuid is the router; the route is its name).
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, realpathSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
 // src is the 0: skills live co-located with their matter-twin code, so the docs
@@ -31,7 +31,18 @@ export function routeOf(relDir: string): string {
   return '/' + relative(SKILLS_DIR, relDir).split(/[\\/]/).join('/') + '/SKILL'
 }
 
-export function walk(dir: string): SidebarItem[] {
+export function walk(dir: string, seen: Set<string> = new Set()): SidebarItem[] {
+  // Follow symlinks — they GATEWAY to shared configs; never skip them. But this
+  // walker is intra-dimensional: it enumerates each real node ONCE (realpath dedup).
+  // `src/skills → .` (the harness shim: .claude → src, so skills resolve at
+  // .claude/skills/<word> = src/<word>) re-enters src — not an infinite loop, a
+  // gateway the walker HANDS OFF: the real node is already enumerated on this
+  // plane, so crossing INTO the next dimension (the same atom seen as a skill) is
+  // the HOOKS' job (the vitepress transform / payload beforeChange-afterRead), not
+  // the traversal's. The walk stays in its dimension; the hooks open the next.
+  const real = realpathSync(dir)
+  if (seen.has(real)) return []
+  seen.add(real)
   const items: SidebarItem[] = []
   for (const name of readdirSync(dir).sort()) {
     const full = join(dir, name)
@@ -68,7 +79,7 @@ export function walk(dir: string): SidebarItem[] {
       }
       allSkills.push({ name, route })
     }
-    const children = walk(full)
+    const children = walk(full, seen)
     if (hasSkill) items.push(children.length ? { text: name, link: route, collapsed: true, items: children } : { text: name, link: route })
     else if (children.length) items.push({ text: name, collapsed: true, items: children }) // SKILL-less container: a group header, no page link
   }

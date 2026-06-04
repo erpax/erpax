@@ -156,4 +156,17 @@ export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
   { id: 'ISO-22400-2', family: 'iso', title: 'Manufacturing operations KPIs', match: '22400' },
   { id: 'UPU-S42', family: 'upu', title: 'International postal addressing', match: 'UPU|S42' },
   { id: 'ISO-19160-4', family: 'iso', title: 'Addressing — components & conceptual model', match: '19160' },
+
+  // — Permaculture / regenerative agriculture (upstream inhale; the standards
+  //   basis of the agriculture domain — registered, cited as the domain grows) —
+  { id: 'Permaculture-Principles', family: 'other', title: "Permaculture design principles (Holmgren's 12)", match: 'permaculture.?principle|holmgren' },
+  { id: 'Permaculture-Ethics', family: 'other', title: 'Permaculture ethics — earth care · people care · fair share', match: 'permaculture.?ethic|fair.?share|earth.?care' },
+  { id: 'IFOAM-Norms', family: 'other', title: 'IFOAM Norms for Organic Production & Processing', match: 'IFOAM' },
+  { id: 'EU-2018-848', family: 'eu', title: 'EU Organic Production Regulation', match: '2018/848|2018-848' },
+  { id: 'USDA-NOP', family: 'other', title: 'USDA National Organic Program (7 CFR 205)', match: '\\bNOP\\b|national.organic.program' },
+  { id: 'Demeter-Biodynamic', family: 'other', title: 'Demeter International Biodynamic standard', match: 'demeter|biodynamic' },
+  { id: 'Regenerative-Organic', family: 'other', title: 'Regenerative Organic Certified (ROC)', match: 'regenerative.?organic|\\bROC\\b' },
+  { id: 'GLOBALG.A.P', family: 'other', title: 'GLOBALG.A.P. Integrated Farm Assurance', match: 'globalg' },
+  { id: 'Savory-EOV', family: 'other', title: 'Savory Ecological Outcome Verification (Land to Market)', match: 'savory|ecological.?outcome|\\bEOV\\b' },
+  { id: 'FAO-Agroecology', family: 'un', title: 'FAO 10 Elements of Agroecology', match: 'agroecology' },
 ] as const

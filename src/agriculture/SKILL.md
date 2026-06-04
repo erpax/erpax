@@ -29,6 +29,7 @@ This is **agricultural MRP** — a [[manufacturing|bill-of-materials]] explosion
 - CEFS / NC State — Gruver, *Planning Spreadsheets for CSA and Farmers' Markets* & *Crop Scheduling for Continuous Harvest* (the source artifact's lineage)
 - Southeastern U.S. Vegetable Crop Handbook (regional commercial recommendations)
 - IFRS IAS-41 (biological assets); UN/CEFACT Rec 20 (units); ISO 4217:2015 (currency)
+- Permaculture design — Mollison & Holmgren's principles + ethics (earth care · people care · fair share) — and the regenerative/organic certification the produce can carry: IFOAM Norms, EU Organic Regulation 2018/848, USDA NOP, Demeter (biodynamic), Regenerative Organic Certified, GLOBALG.A.P., Savory EOV (Land to Market), FAO agroecology. Registered upstream in the [[standards]] catalogue; cited as the matter layer grows.
 
 ## Common mistakes
 - Planning by area instead of by market — filling the land then hunting for buyers produces gluts; the backward chain exists to prevent it.
