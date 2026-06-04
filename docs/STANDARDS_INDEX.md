@@ -1634,10 +1634,11 @@ src/items/bills/of/materials/work/orders/routings/index.ts:13: * @standard ISO-2
 src/items/bills/of/materials/work/orders/routings/index.ts:14: * @standard ISO-8601-1:2019 date-time
 src/items/hooks/beforeValidate.ts:10: * @standard GS1 GTIN global-trade-item-number
 src/items/hooks/beforeValidate.ts:9: * @standard UN-CEFACT UNSPSC product-classification
-src/items/index.ts:12: * @standard UN-CEFACT UNSPSC product-classification
-src/items/index.ts:13: * @standard GS1 GTIN global-trade-item-number
-src/items/index.ts:14: * @standard ISO-4217:2015 currency-codes price-currency
-src/items/index.ts:15: * @standard EN-16931:2017 §BG-31 item-information
+src/items/index.ts:18: * @standard UN-CEFACT UNSPSC product-classification
+src/items/index.ts:19: * @standard GS1 GTIN global-trade-item-number
+src/items/index.ts:20: * @standard ISO-4217:2015 currency-codes price-currency
+src/items/index.ts:21: * @standard EN-16931:2017 §BG-31 item-information
+src/items/index.ts:22: * @standard EU-1007/2011 textile-fibre-names + composition-labelling (the `contents` field)
 src/items/inventory/movements/hooks/inventory-adjusted-event.test.ts:11: * @standard ISO/IEC-29119:2022 software-testing
 src/items/inventory/movements/index.ts:11: * @standard ISO-8601-1:2019 date-time movement-at posted-at
 src/items/inventory/movements/index.ts:12: * @standard ISO-3166-1:2020 country-codes via location
@@ -4235,8 +4236,8 @@ src/items/hooks/afterChange.ts:10: * @accounting IFRS IAS-2 inventories
 src/items/hooks/afterChange.ts:11: * @accounting US-GAAP ASC-330 inventory cost-of-goods-sold
 src/items/hooks/item.ts:18: * @accounting IFRS IAS-2 inventories
 src/items/hooks/item.ts:19: * @accounting US-GAAP ASC-330 inventory cost-flow
-src/items/index.ts:16: * @accounting IFRS IAS-2 inventories
-src/items/index.ts:17: * @accounting US-GAAP ASC-330 inventory
+src/items/index.ts:23: * @accounting IFRS IAS-2 inventories
+src/items/index.ts:24: * @accounting US-GAAP ASC-330 inventory
 src/items/inventory/movements/hooks/inventory-adjusted-event.test.ts:12: * @accounting IFRS IAS-2 §10 §28 §36 inventories
 src/items/inventory/movements/hooks/inventory-adjusted-event.test.ts:13: * @accounting US-GAAP ASC-330 inventory
 src/items/inventory/movements/hooks/inventory-movement.ts:17: * @accounting IFRS IAS-2 §10 §36 inventories cost-formulas
