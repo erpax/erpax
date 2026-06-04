@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/confirm.mjs --hook",
+            "timeout": 60,
+            "statusMessage": "confirming edit — payload ⊕ vitepress"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -25,6 +25,8 @@
     "standards:catalogue": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx scripts/standards-catalogue.ts",
     "spec:gen": "cross-env NODE_OPTIONS=\"--no-deprecation --import=tsx/esm\" tsx src/spec/gen.ts",
     "aura:scan": "node .claude/skills/aura/scan.mjs",
+    "confirm": "node scripts/confirm.mjs",
+    "confirm:full": "node scripts/confirm.mjs --full",
     "harmony": "node src/harmony/scan.mjs",
     "atoms:catalogue": "node src/atom/catalogue.mjs",
     "matrix:generate": "node src/uuid/matrix/collide.mjs --emit",
