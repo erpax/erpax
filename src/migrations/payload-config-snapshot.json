@@ -10375,6 +10375,160 @@
       "localizeStatus": false,
       "versions": true
     },
+    "packs": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "number": {
+          "localized": false
+        },
+        "barcode": {
+          "localized": false
+        },
+        "unitsOrdered": {
+          "localized": false
+        },
+        "unitsPacked": {
+          "localized": false
+        },
+        "netWeight": {
+          "localized": false
+        },
+        "tareWeight": {
+          "localized": false
+        },
+        "grossWeight": {
+          "localized": false
+        },
+        "volume": {
+          "localized": false
+        },
+        "productsCount": {
+          "localized": false
+        },
+        "variantsCount": {
+          "localized": false
+        },
+        "itemsCount": {
+          "localized": false
+        },
+        "shippedAt": {
+          "localized": false
+        },
+        "deliveredAt": {
+          "localized": false
+        },
+        "closedAt": {
+          "localized": false
+        },
+        "lot": {
+          "localized": false
+        },
+        "palletCode": {
+          "localized": false
+        },
+        "packagingCode": {
+          "localized": false
+        },
+        "packingListCode": {
+          "localized": false
+        },
+        "clientCode": {
+          "localized": false
+        },
+        "note": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
+    "pack-items": {
+      "autosave": false,
+      "drafts": false,
+      "fields": {
+        "uuid": {
+          "localized": false
+        },
+        "reference": {
+          "localized": false
+        },
+        "pack": {
+          "localized": false
+        },
+        "lotVariant": {
+          "localized": false
+        },
+        "unitsOrdered": {
+          "localized": false
+        },
+        "unitsPacked": {
+          "localized": false
+        },
+        "unitsBackordered": {
+          "localized": false
+        },
+        "options": {
+          "localized": false
+        },
+        "options.label": {
+          "localized": false
+        },
+        "options.ordered": {
+          "localized": false
+        },
+        "options.packed": {
+          "localized": false
+        },
+        "options.unitGrams": {
+          "localized": false
+        },
+        "options.netUnitGrams": {
+          "localized": false
+        },
+        "options.id": {
+          "localized": false
+        },
+        "note": {
+          "localized": false
+        },
+        "createdBy": {
+          "localized": false
+        },
+        "approvedBy": {
+          "localized": false
+        },
+        "approvedAt": {
+          "localized": false
+        },
+        "updatedAt": {
+          "localized": false
+        },
+        "createdAt": {
+          "localized": false
+        }
+      },
+      "localizeStatus": false,
+      "versions": true
+    },
     "tags": {
       "autosave": false,
       "drafts": false,

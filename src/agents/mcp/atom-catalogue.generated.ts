@@ -257,6 +257,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "auth"
   },
   {
+    "atom": "awareness",
+    "name": "awareness",
+    "description": "Use when reasoning about the discovery gate of a market — whether people know the thing exists and that it answers a want they hold. The atom marketing produces and trendsetters amplify; distinct from desire (the want) and distribution (the obtaining). If awareness is the zero atom, trendsetters as taste-amplifiers are the right lever.",
+    "path": "awareness"
+  },
+  {
     "atom": "axis",
     "name": "axis",
     "description": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
@@ -857,6 +863,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "design"
   },
   {
+    "atom": "desire",
+    "name": "desire",
+    "description": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
+    "path": "desire"
+  },
+  {
     "atom": "dev",
     "name": "dev",
     "description": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
@@ -1127,6 +1139,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "compliance/frameworks"
   },
   {
+    "atom": "friction",
+    "name": "friction",
+    "description": "Use when reasoning about the cost-to-act atom of a market — the total effort plus price between wanting and having. 'Convenient' means low friction; it is the lever convenience and engineering play. Coupled to status with opposite sign (the effort is often the signal), so lowering it decays exclusivity — sequence the two, do not try to maximise both.",
+    "path": "friction"
+  },
+  {
     "atom": "functions",
     "name": "internal-audit-function",
     "description": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
@@ -1197,6 +1215,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "government-grants",
     "description": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
     "path": "government/grants"
+  },
+  {
+    "atom": "habit",
+    "name": "habit",
+    "description": "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades.",
+    "path": "habit"
   },
   {
     "atom": "harden",
@@ -1517,6 +1541,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "taxing/jurisdictions/statutory/report/templates/statutory/field/mappings"
   },
   {
+    "atom": "market",
+    "name": "market",
+    "description": "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand.",
+    "path": "market"
+  },
+  {
     "atom": "materiality",
     "name": "materiality",
     "description": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
@@ -1779,6 +1809,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "packages",
     "description": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
     "path": "items/packages"
+  },
+  {
+    "atom": "packitems",
+    "name": "packitems",
+    "description": "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items.",
+    "path": "packitems"
+  },
+  {
+    "atom": "packs",
+    "name": "packs",
+    "description": "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs.",
+    "path": "packs"
   },
   {
     "atom": "pages",

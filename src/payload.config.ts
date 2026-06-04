@@ -169,6 +169,8 @@ const {
   LotVariants,
   LotWorkPhases,
   WorkPhases,
+  Packs,
+  PackItems,
   QualityInspections,
   WipSnapshots,
   Properties,
@@ -642,6 +644,9 @@ export default buildConfig({
     LotVariants,
     LotWorkPhases,
     WorkPhases,
+    // The dispatch layer (cartons + their lines)
+    Packs,
+    PackItems,
     // Tagging system (anything is taggable — less collections, more features)
     Tags,
     Taggings,

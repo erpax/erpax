@@ -186,6 +186,9 @@ export { default as Lots } from '@/lots'
 export { default as LotVariants } from '@/lotvariants'
 export { default as LotWorkPhases } from '@/lotworkphases'
 export { default as WorkPhases } from '@/workphases'
+// The dispatch layer — cartons + their lines (etrima packs/pack_items, 119k/201k rows)
+export { default as Packs } from '@/packs'
+export { default as PackItems } from '@/packitems'
 
 // Tagging system (anything is taggable — less collections, more features)
 export { default as Tags } from '@/tags'

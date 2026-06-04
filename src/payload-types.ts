@@ -180,6 +180,8 @@ export interface Config {
     'lot-variants': LotVariant;
     'lot-work-phases': LotWorkPhase;
     'work-phases': WorkPhase;
+    packs: Pack;
+    'pack-items': PackItem;
     tags: Tag;
     taggings: Tagging;
     properties: Property;
@@ -433,6 +435,8 @@ export interface Config {
     'lot-variants': LotVariantsSelect<false> | LotVariantsSelect<true>;
     'lot-work-phases': LotWorkPhasesSelect<false> | LotWorkPhasesSelect<true>;
     'work-phases': WorkPhasesSelect<false> | WorkPhasesSelect<true>;
+    packs: PacksSelect<false> | PacksSelect<true>;
+    'pack-items': PackItemsSelect<false> | PackItemsSelect<true>;
     tags: TagsSelect<false> | TagsSelect<true>;
     taggings: TaggingsSelect<false> | TaggingsSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
@@ -11551,6 +11555,178 @@ export interface WorkPhase {
   approvedBy?: (string | null) | User;
   approvedAt?: string | null;
   notes?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The shipping carton (118,716-row etrima twin) — units packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "packs".
+ */
+export interface Pack {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Carton number / SSCC (the dispatch identity).
+   */
+  number?: string | null;
+  /**
+   * Scanned barcode (sparse in the data).
+   */
+  barcode?: string | null;
+  /**
+   * Σ pack-items[].unitsOrdered (rollup).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Σ pack-items[].unitsPacked — the carton total (AUDIT: >0 on 99.99% of rows).
+   */
+  unitsPacked?: number | null;
+  /**
+   * Net weight, kg (AUDIT: ~42% weighed).
+   */
+  netWeight?: number | null;
+  /**
+   * Tare (packaging) weight, kg.
+   */
+  tareWeight?: number | null;
+  /**
+   * Gross weight, kg — derived = net + tare when both given (the mass balance).
+   */
+  grossWeight?: number | null;
+  /**
+   * Volume, m³ (UN/CEFACT Rec20).
+   */
+  volume?: number | null;
+  /**
+   * Distinct products in the carton (rollup).
+   */
+  productsCount?: number | null;
+  /**
+   * Distinct variants (rollup).
+   */
+  variantsCount?: number | null;
+  /**
+   * Distinct items (rollup).
+   */
+  itemsCount?: number | null;
+  /**
+   * ISO 8601 — dispatched (→ shipped).
+   */
+  shippedAt?: string | null;
+  /**
+   * ISO 8601 — received by consignee (→ delivered).
+   */
+  deliveredAt?: string | null;
+  /**
+   * ISO 8601 — sealed (→ closed).
+   */
+  closedAt?: string | null;
+  /**
+   * The production lot this carton was packed from.
+   */
+  lot?: (string | null) | Lot;
+  /**
+   * Pallet code (the pallet this carton sits on — collection not yet minted).
+   */
+  palletCode?: string | null;
+  /**
+   * Packaging code (the carton spec — collection not yet minted).
+   */
+  packagingCode?: string | null;
+  /**
+   * Packing-list code (the dispatch document — collection not yet minted).
+   */
+  packingListCode?: string | null;
+  /**
+   * Client code (the consignee — resolved to the unified actor later).
+   */
+  clientCode?: string | null;
+  /**
+   * Free-text note.
+   */
+  note?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * The pack line (200,993-row etrima twin) — units of one produced lot-variant packed into one carton. Header-primary with an optional option breakdown; the double-entry holds when options are supplied.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pack-items".
+ */
+export interface PackItem {
+  id: string;
+  /**
+   * Content-addressable UUID — auto-computed from the row's content (RFC 9562 §5.8 + RFC 8785). Any in-place tamper changes the recomputed uuid, which Conservation Law 8 (checkContentIntegrityProvable) flags. Do not set manually.
+   */
+  uuid?: string | null;
+  /**
+   * Pack-line reference.
+   */
+  reference: string;
+  /**
+   * The carton this line is packed into (AUDIT: 0% null).
+   */
+  pack: string | Pack;
+  /**
+   * The produced lot-variant this line packs (AUDIT: 0% null; the dead item_id was dropped).
+   */
+  lotVariant: string | LotVariant;
+  /**
+   * Units ordered for this line (= Σ options[].ordered when options are supplied).
+   */
+  unitsOrdered?: number | null;
+  /**
+   * Units packed for this line (= Σ options[].packed when options are supplied).
+   */
+  unitsPacked?: number | null;
+  /**
+   * Derived = max(0, ordered − packed) — the unpacked remainder.
+   */
+  unitsBackordered?: number | null;
+  /**
+   * Optional per-option breakdown (the collapse of the 48 fixed `option_1..12_units_{ordered,packed}` + grams columns). AUDIT: used on only ~0.17% of rows — the header carries the rest.
+   */
+  options?:
+    | {
+        /**
+         * Option / variant label (was the `option_N` slot).
+         */
+        label?: string | null;
+        /**
+         * Units ordered for this option.
+         */
+        ordered?: number | null;
+        /**
+         * Units packed for this option.
+         */
+        packed?: number | null;
+        /**
+         * Gross grams per unit (the weighed breakdown; sparse).
+         */
+        unitGrams?: number | null;
+        /**
+         * Net grams per unit (sparse).
+         */
+        netUnitGrams?: number | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Free-text note.
+   */
+  note?: string | null;
+  createdBy?: (string | null) | User;
+  approvedBy?: (string | null) | User;
+  approvedAt?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -24177,6 +24353,67 @@ export interface WorkPhasesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "packs_select".
+ */
+export interface PacksSelect<T extends boolean = true> {
+  uuid?: T;
+  number?: T;
+  barcode?: T;
+  unitsOrdered?: T;
+  unitsPacked?: T;
+  netWeight?: T;
+  tareWeight?: T;
+  grossWeight?: T;
+  volume?: T;
+  productsCount?: T;
+  variantsCount?: T;
+  itemsCount?: T;
+  shippedAt?: T;
+  deliveredAt?: T;
+  closedAt?: T;
+  lot?: T;
+  palletCode?: T;
+  packagingCode?: T;
+  packingListCode?: T;
+  clientCode?: T;
+  note?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pack-items_select".
+ */
+export interface PackItemsSelect<T extends boolean = true> {
+  uuid?: T;
+  reference?: T;
+  pack?: T;
+  lotVariant?: T;
+  unitsOrdered?: T;
+  unitsPacked?: T;
+  unitsBackordered?: T;
+  options?:
+    | T
+    | {
+        label?: T;
+        ordered?: T;
+        packed?: T;
+        unitGrams?: T;
+        netUnitGrams?: T;
+        id?: T;
+      };
+  note?: T;
+  createdBy?: T;
+  approvedBy?: T;
+  approvedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "tags_select".
  */
 export interface TagsSelect<T extends boolean = true> {
@@ -28492,6 +28729,8 @@ export interface TaskCreateCollectionExport {
       | 'lot-variants'
       | 'lot-work-phases'
       | 'work-phases'
+      | 'packs'
+      | 'pack-items'
       | 'tags'
       | 'taggings'
       | 'properties'
