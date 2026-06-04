@@ -7,8 +7,8 @@ import type { CollectionSlug } from 'payload'
  * The old payload.config.ts listed ~201 slugs by hand in the multi-tenant
  * plugin's `collections` map. "Every collection except a few", typed out, is the
  * textbook drift bug: each NEW collection silently defaults to UN-scoped
- * (cross-tenant) until someone remembers to append it. That is exactly what had
- * happened — see {@link TENANT_UNSCOPED_DRIFT}.
+ * (cross-tenant) until someone remembers to append it — and several had silently
+ * fallen out (the etrima lot funnel + dispatch packs + internal messaging).
  *
  * Here the default is inverted: every collection is tenant-scoped UNLESS it is in
  * the small, explicit {@link GLOBAL_SPINE}. A new collection auto-scopes the
@@ -16,7 +16,11 @@ import type { CollectionSlug } from 'payload'
  * `Object.values(allCollections)` derivation the search / import-export / mcp
  * plugins already use — finally applied to the one map that was still hand-written.
  *
- * Proven behaviour-identical to the old hand-list in {@link file://./scope.test.ts}.
+ * The earlier drift has been RESOLVED: the 9 per-tenant operational collections
+ * that had fallen out are now scoped by the rule (they are simply absent from the
+ * spine). Only `cases` stays out, for a principled reason — see
+ * {@link TENANT_PARTY_SCOPED}. Proven against the prior hand-list in
+ * {@link file://./scope.test.ts}.
  */
 
 /**
@@ -27,7 +31,7 @@ import type { CollectionSlug } from 'payload'
  * - `subscription-plans`          the platform's plan catalogue (what is offered)
  * - `sectors`                     industry-sector reference taxonomy
  * - `connections`                 the universal relationship graph (links actors
- *                                  that may live in different tenants)
+ *                                  that may live in different tenants — B2B/C2C)
  */
 export const TENANT_GLOBAL: readonly string[] = [
   'tenants',
@@ -40,30 +44,20 @@ export const TENANT_GLOBAL: readonly string[] = [
 ]
 
 /**
- * DRIFT — collections that silently fell out of the old hand-list and so are
- * currently NOT tenant-scoped, despite holding per-tenant operational data
- * (production lots, dispatch packs, messages, justice cases). Kept here ONLY to
- * make this refactor byte-for-byte behaviour-identical; every entry is a
- * candidate to MOVE INTO scoping (delete it from this array) as a deliberate,
- * migrated step. Asserted, not hidden, in scope.test.ts.
+ * Isolated by ROW-LEVEL party access instead of a tenant field — the judicial
+ * twin of tenant isolation. `cases` (the public-order docket, COFOG-03) carries
+ * parties drawn from many collections that may span tenants, and a party sees
+ * only the matters they are on (`partyRoleAccess`). It is also content-addressed
+ * so identical matters merge across instances — a tenant column would both
+ * duplicate the row-level guard AND break cross-tenant matters + the merge.
+ * Not drift: a deliberate, documented choice (see src/cases, @security A.5.23).
  */
-export const TENANT_UNSCOPED_DRIFT: readonly string[] = [
-  'batches',
-  'lots',
-  'lot-variants',
-  'lot-work-phases',
-  'work-phases',
-  'packs',
-  'pack-items',
-  'packages',
-  'messages',
-  'cases',
-]
+export const TENANT_PARTY_SCOPED: readonly string[] = ['cases']
 
-/** The collections that are NOT tenant-scoped = principled globals ∪ drift. */
+/** The collections that are NOT tenant-scoped — the principled cross-tenant spine. */
 export const GLOBAL_SPINE: ReadonlySet<string> = new Set([
   ...TENANT_GLOBAL,
-  ...TENANT_UNSCOPED_DRIFT,
+  ...TENANT_PARTY_SCOPED,
 ])
 
 /**
