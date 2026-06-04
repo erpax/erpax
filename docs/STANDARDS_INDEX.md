@@ -1913,6 +1913,13 @@ src/oecd/tpg/index.ts:6: * @standard OECD BEPS Action 13 master-file-local-file-
 src/oecd/tpg/index.ts:7: * @standard EU DAC-4 country-by-country-reporting
 src/oecd/tpg/index.ts:8: * @standard OECD Pillar Two GloBE 15% global minimum tax (companion)
 src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО operator-nomenclature
+src/packitems/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/packitems/index.ts:28: * @standard ISA-95:2013 §B.5 production-operations dispatch line
+src/packitems/index.ts:29: * @standard UN/CEFACT Rec20 mass (gram) per-unit
+src/packs/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
+src/packs/index.ts:31: * @standard ISA-95:2013 §B.5 production-operations dispatch
+src/packs/index.ts:32: * @standard UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)
+src/packs/index.ts:33: * @standard GS1 logistics SSCC carton-identity (the `number` / `barcode`)
 src/page/AnalyticsPage.tsx:13: * @standard ECMA-262 ECMAScript-2024 baseline
 src/page/range/index.tsx:6: * @standard ECMA-402 internationalization-api Intl.NumberFormat
 src/page/range/index.tsx:7: * @standard BCP-47 language-tag
@@ -1945,10 +1952,10 @@ src/payload.config.multi-tenant-admin.test.ts:11: * @standard NIST INCITS-359-20
 src/payload.config.sdk-rest.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
 src/payload.config.sdk-rest.test.ts:9: * @standard OpenAPI 3.1 api-description
 src/payload.config.tenant.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing integration-test-level
-src/payload.config.ts:1242:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
-src/payload.config.ts:1260:       * @standard ISO-3166-1:2020 BG country-code
-src/payload.config.ts:1261:       * @standard ISO-4217:2015 currency-codes
-src/payload.config.ts:1280:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
+src/payload.config.ts:1247:       * @standard EN-16931:2017 §BG-3 invoice-status-cascade
+src/payload.config.ts:1265:       * @standard ISO-3166-1:2020 BG country-code
+src/payload.config.ts:1266:       * @standard ISO-4217:2015 currency-codes
+src/payload.config.ts:1285:       * @standard BG Наредба-Н-18 §Приложение-38 standardized-audit-file
 src/payment/methods/hooks/encryptSensitiveFields.ts:8: * @standard NIST SP-800-38D aes-gcm authenticated-encryption
 src/payment/methods/index.ts:15: * @standard ISO-13616-1:2020 iban bank-account-reference
 src/payment/methods/index.ts:16: * @standard ISO-9362:2022 bic bank-routing
@@ -4349,6 +4356,8 @@ src/money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
 src/multi/currency.service/index.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
 src/multi/currency.service/index.ts:17: * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
 src/multi/currency.service/index.ts:18: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
+src/packitems/index.ts:30: * @accounting IFRS IAS-2 §10 finished-goods at dispatch
+src/packs/index.ts:34: * @accounting IFRS IAS-2 §10 finished-goods carried to dispatch
 src/page/AnalyticsPage.tsx:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/party/aging.service.ts:10: * @accounting US-GAAP ASC-326 credit-losses-cecl
 src/party/aging.service.ts:11: * @accounting US-GAAP ASC-310 receivables
@@ -4364,9 +4373,9 @@ src/payable/discounts.service.ts:11: * @accounting US-GAAP ASC-705 cost-of-sales
 src/payable/index.ts:7: * @accounting US-GAAP ASC-405 liabilities
 src/payable/workflow.service.ts:10: * @accounting US-GAAP ASC-405 liabilities
 src/payable/workflow.service.ts:9: * @accounting IFRS IAS-37 provisions-contingent-liabilities
-src/payload.config.ts:1240:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
-src/payload.config.ts:1241:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
-src/payload.config.ts:1262:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
+src/payload.config.ts:1245:       * @accounting IFRS IFRS-9 impairment-and-credit-losses
+src/payload.config.ts:1246:       * @accounting US-GAAP ASC-326 measurement-of-credit-losses
+src/payload.config.ts:1267:       * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates
 src/period/end/adjustment.service/index.ts:23: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/period/end/adjustment.service/index.ts:24: * @accounting IFRS IAS-8 accounting-policies-changes-and-errors
 src/period/end/adjustment.service/index.ts:25: * @accounting IFRS IAS-16 property-plant-and-equipment depreciation
@@ -4906,6 +4915,8 @@ src/nist/sp/800/38/aes-gcm.ts:14: * @security ISO-27001 A.8.24 use-of-cryptograp
 src/nist/sp/800/38/aes-gcm.ts:15: * @security ISO-27002 §8.24 use-of-cryptography
 src/notification/index.ts:22: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/operators/index.ts:15: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/packitems/index.ts:32: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/packs/index.ts:36: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/pages/access/superAdminOrTenantAdmin.ts:7: * @security ISO-27001 A.5.18 access-rights
 src/pages/access/superAdminOrTenantAdmin.ts:8: * @security ISO-27002 §5.15 access-control
 src/pages/hooks/beforeChange.ts:9: * @security ISO-27001 A.5.23 cloud-service-isolation tenant-scope
@@ -5591,6 +5602,8 @@ src/nist/incits/359/payload.ts:7: * @audit ISO-19011:2018 audit-trail role-assig
 src/notification/index.ts:21: * @audit ISO-19011:2018 audit-trail notification-evidence
 src/notification/subscriber.ts:16: * @audit ISO-19011:2018 §6.4.6 audit-evidence-notification
 src/operators/index.ts:14: * @audit ISO-19011:2018 audit-trail
+src/packitems/index.ts:31: * @audit ISO-19011:2018 audit-trail dispatch line
+src/packs/index.ts:35: * @audit ISO-19011:2018 audit-trail dispatch
 src/pages/access/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/pages/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/party/aging.service.ts:13: * @audit ISO-19011:2018 audit-trail
@@ -5598,9 +5611,9 @@ src/party/workflow.service.ts:7: * @audit ISO-19011:2018 audit-trail state-trans
 src/payable/aging.service.ts:12: * @audit ISO-19011:2018 audit-trail
 src/payable/workflow.service.ts:11: * @audit ISO-19011:2018 audit-trail state-transitions
 src/payload.config.multi-tenant-admin.test.ts:17: * @audit ISO-19011:2018 audit-trail
-src/payload.config.ts:1243:       * @audit ISO-19011:2018 audit-trail dunning-cycle
-src/payload.config.ts:1263:       * @audit ISO-19011:2018 audit-trail external-system-evidence
-src/payload.config.ts:1281:       * @audit ISO-19011:2018 §6.4 audit-evidence
+src/payload.config.ts:1248:       * @audit ISO-19011:2018 audit-trail dunning-cycle
+src/payload.config.ts:1268:       * @audit ISO-19011:2018 audit-trail external-system-evidence
+src/payload.config.ts:1286:       * @audit ISO-19011:2018 §6.4 audit-evidence
 src/payment/methods/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/peppol/bis/3/types.test.ts:7: * @audit ISO-19011:2018 audit-trail
 src/peppol/bis/3/types.ts:13: * @audit ISO-19011:2018 audit-trail
