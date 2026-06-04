@@ -93,7 +93,6 @@ for (const f of files) {
     const ex = nodes[idx.get(key)]
     ex.members = [...(ex.members ?? [ex.path]), path]
     ex.uuid = merge(ex.uuid, uuid)
-    ex.bind = merge(ex.bind ?? ex.uuid, toUuid(Buffer.from(path))) // cross each member path in
     ex.path = null // a collection spans paths; no single one
     const p = positionOf(key, ex.dim, ex.uuid) // re-place from the accountable (merged) uuid
     ex.band = p.band
@@ -101,11 +100,27 @@ for (const f of files) {
     continue
   }
   const pos = positionOf(key, dim, uuid)
-  const puid = toUuid(Buffer.from(path)) // path-uuid — WHERE (the [[coordinate]])
-  const bind = merge(uuid, puid) // the cross: pins content to location (tamper-evident)
   idx.set(key, nodes.length)
-  nodes.push({ atom: key, uuid, puid, bind, dim, band: pos.band, horo: pos.horo, path })
+  nodes.push({ atom: key, uuid, dim, band: pos.band, horo: pos.horo, path })
 }
+
+// ── 1b. the [[coordinate]] cross: parent (tree axis) ⊕ prev ⊕ next (sequence ring, the 2 coils) ──
+// Each atom binds to its three neighbour uuids; tampering any atom ripples to parent/prev/next.
+const NIL = '00000000-0000-8000-8000-000000000000'
+const byPath = new Map()
+for (const n of nodes) if (n.path) byPath.set(n.path, n)
+const ordered = [...nodes].sort((a, b) => String(a.path ?? a.atom).localeCompare(String(b.path ?? b.atom)))
+const N = ordered.length
+ordered.forEach((n, i) => {
+  const parent = (n.path && byPath.get(dirname(n.path))?.uuid) || NIL // tree (axis)
+  const prev = ordered[(i - 1 + N) % N].uuid // reverse coil (ring wraps via octave)
+  const next = ordered[(i + 1) % N].uuid // forward coil
+  n.parent = parent
+  n.prev = prev
+  n.next = next
+  n.cross = merge(merge(parent, prev), next) // the trinity
+  n.bind = merge(n.uuid, n.cross) // content ⊕ coordinate — the tamper-evident whole
+})
 
 // ── 2. edges (collisions) ──
 const edges = [] // {f, t, binding, dir}
@@ -186,7 +201,7 @@ if (EMIT) {
     ' * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)',
     ' */',
     '',
-    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly puid?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string | null; readonly members?: readonly string[] }',
+    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly parent?: string; readonly prev?: string; readonly next?: string; readonly cross?: string; readonly bind?: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string | null; readonly members?: readonly string[] }',
     'export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }',
     '',
     `export const UUID_MATRIX_ROOT = ${j(root)} as const`,
