@@ -51,7 +51,7 @@ import {
   notesField,
   auditFields,
 } from '@/base/accounting/field'
-import { validateNotLocked } from '@/accounting/utility/period-lock'
+import { validateNotLocked } from '@/utility/period-lock'
 import { payrollRunPostingHook } from '@/accounting/hooks/payroll-run.hook'
 import { payrollDisbursementHook } from '@/accounting/hooks/payroll-disbursement.hook'
 

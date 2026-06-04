@@ -56,7 +56,7 @@ import { publishSelf, bootFromFederation, type GenomePublication } from '@/cloni
 import { checkout, provisionInstance, listSubscriptions, checkCommerceLifecycle } from '@/commerce'
 import { bookRevenue, bookCost, scheduleFiling, scheduleObligation, checkSelfAccountingComplete } from '@/self/accounting'
 import { createDid, resolveDid, listDids } from '@/did'
-import { publishStandard, resolveStandard, subscribeTenant, tenantSubscriptions, addCitation, listCitations, declareConflict, declareSupersession, traceSupersession, checkStandardCitationsConsistent, checkStandardSupersessionsResolved, familyOf } from '@/standards/registry'
+import { publishStandard, resolveStandard, subscribeTenant, tenantSubscriptions, addCitation, listCitations, declareConflict, declareSupersession, traceSupersession, checkStandardCitationsConsistent, checkStandardSupersessionsResolved, familyOf } from '@/registry'
 import { anchorRoot, listAnchors, NOTARY_STUB_BACKEND } from '@/anchoring'
 import { tenantPins } from '@/archival'
 import { listProposals } from '@/meta/automation'

@@ -42,7 +42,7 @@ import {
   notesField,
   auditFields,
 } from '@/base/accounting/field'
-import { validateNotLocked } from '@/accounting/utility/period-lock'
+import { validateNotLocked } from '@/utility/period-lock'
 import { leasePeriodPostingHook } from '@/accounting/hooks/lease-period-posting.hook'
 
 const LeasePeriodPostings: CollectionConfig = {

@@ -16,9 +16,9 @@
  * @see ./bg-nss.ts
  */
 
-import { buildTemplate } from '@/accounting/seeds/template/build'
-import { BG_NSS_TEMPLATE } from '@/accounting/seeds/template/bg-nss'
-import type { IndustryTemplate, SeedAccount, SeedTransaction } from '@/accounting/seeds/template/types'
+import { buildTemplate } from '@/seeds/template/build'
+import { BG_NSS_TEMPLATE } from '@/seeds/template/bg-nss'
+import type { IndustryTemplate, SeedAccount, SeedTransaction } from '@/seeds/template/types'
 
 /** Minimal IFRS chart covering all five IAS-1 §54 element types. */
 const IFRS_BASE_CHART: ReadonlyArray<SeedAccount> = [

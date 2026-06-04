@@ -1,5 +1,8 @@
 /**
- * @erpax/hooks/factories — hook factory generators.
+ * Accounting Factories — collection + hook factory barrel.
+ *
+ * @see ../index.ts for master citation index
+ * @see docs/STANDARDS.md §4.2
  */
 
-export { createAutoPopulateTenantHook } from '@/factory/auto-populate-tenant'
+export * from '@/factory/collection-factory';

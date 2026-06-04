@@ -4,7 +4,7 @@ import { CollectionConfig } from 'payload'
 // service-generated DTO via `financialReportingService`; COGS will fold
 // into `gl-posting.service.ts`'s invoice handler when built.
 import { invoiceAccountingHook } from '@/accounting/hooks'
-import { validateNotLocked } from '@/accounting/utility/period-lock'
+import { validateNotLocked } from '@/utility/period-lock'
 import { adminOnly, multiTenantRead } from '@/auth'
 import { authenticated } from '@/authenticated'
 import { autoPopulateTenant } from '@/auto/populate/tenant'

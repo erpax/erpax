@@ -21,7 +21,7 @@ import { autoSetTimestamp } from '@/auto/set/timestamp'
 import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
-import { validateNotLocked } from '@/accounting/utility/period-lock'
+import { validateNotLocked } from '@/utility/period-lock'
 import { depreciationSchedulePostingHook } from '@/accounting/hooks/depreciation.hook'
 
 const DepreciationSchedules: CollectionConfig = {

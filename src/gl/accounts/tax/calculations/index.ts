@@ -5,7 +5,7 @@ import { autoPopulateTenant } from '@/auto/populate/tenant';
 import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
 import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
-import { validateNotLocked } from '@/accounting/utility/period-lock';
+import { validateNotLocked } from '@/utility/period-lock';
 
 /**
  * Tax Calculations — computed tax-liability snapshots per period.

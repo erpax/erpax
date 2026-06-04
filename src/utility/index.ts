@@ -6,5 +6,5 @@
  * @see docs/STANDARDS.md §4.2
  */
 
-export * from '@/accounting/utility/calculations';
-export * from '@/accounting/utility/period-lock';
+export * from '@/utility/calculations';
+export * from '@/utility/period-lock';

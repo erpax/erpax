@@ -9,8 +9,8 @@
  */
 
 import { resolveCountryContext } from '@/country/context'
-import { resolveTenantCompliance } from '@/accounting/seeds/template/compliance'
-import type { IndustryTemplate, SeedAccount, SeedTransaction } from '@/accounting/seeds/template/types'
+import { resolveTenantCompliance } from '@/seeds/template/compliance'
+import type { IndustryTemplate, SeedAccount, SeedTransaction } from '@/seeds/template/types'
 
 export interface BuildTemplateArgs {
   readonly id: string

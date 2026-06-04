@@ -35,7 +35,7 @@ import { auditTrailAfterChange } from '@/audit/trail/after/change'
  *   JournalEntries, GLPostings, BankStatements, PeriodEndAdjustments, …) may
  *   write a record whose posting date falls inside [startDate, endDate].
  *   Enforced by `validateNotLocked` from
- *   `@/accounting/utility/period-lock`. Only role 'admin' may
+ *   `@/utility/period-lock`. Only role 'admin' may
  *   transition status to / from 'locked'.
  */
 export const FiscalPeriods: CollectionConfig = {

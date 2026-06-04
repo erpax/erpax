@@ -41,7 +41,7 @@ import {
   notesField,
   auditFields,
 } from '@/base/accounting/field';
-import { validateNotLocked } from '@/accounting/utility/period-lock';
+import { validateNotLocked } from '@/utility/period-lock';
 
 const AccountReconciliations: CollectionConfig = {
   slug: 'account-reconciliations',

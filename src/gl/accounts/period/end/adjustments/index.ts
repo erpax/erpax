@@ -6,7 +6,7 @@ import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
 import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
 import { enforceSegregationOfDuties } from '@/enforce/segregation/of/duty';
-import { validateNotLocked } from '@/accounting/utility/period-lock';
+import { validateNotLocked } from '@/utility/period-lock';
 import { periodEndAdjustmentPostingHook } from '@/accounting/hooks/period-end-adjustment.hook';
 
 /**

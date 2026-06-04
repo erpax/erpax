@@ -32,7 +32,7 @@ import {
   getIndustryTemplate,
   findTemplateByCountry,
   resolveTenantCompliance,
-} from '@/accounting/seeds/template'
+} from '@/seeds/template'
 import { BG_COUNTRY_BUNDLE } from '@/iso/3166/1/country'
 
 const ELEMENT_TYPES = ['asset', 'liability', 'equity', 'revenue', 'expense'] as const

@@ -34,7 +34,7 @@ import { journalEntryService } from '@/journal/entry.service'
 import {
   bucketAgeDays,
   daysBetween,
-} from '@/accounting/utility/calculations'
+} from '@/utility/calculations'
 
 const tenant = 'tenant-recon'
 const user = 'user-recon'

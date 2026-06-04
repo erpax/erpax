@@ -2,7 +2,7 @@ import type { CollectionConfig } from 'payload'
 import { autoPopulateCreatedBy } from '@/auto/populate/created/by';
 import { autoSetTimestamp } from '@/auto/set/timestamp';
 import { auditTrailAfterChange } from '@/audit/trail/after/change';
-import { createAccountingCollection, createGLAccountFields } from '@/accounting/factory';
+import { createAccountingCollection, createGLAccountFields } from '@/factory';
 import { currencyField, statusField, notesField } from '@/fields';
 // Slice PPP: depreciationHook removed — delegated to a `req.payload.services?.depreciation`
 // service that doesn't exist in `src/services/` (silent no-op). Depreciation
@@ -12,7 +12,7 @@ import {
   calculateDepreciableBase,
   calculateStraightLineDepreciation,
   calculateBookValue,
-} from '@/accounting/utility';
+} from '@/utility';
 
 /**
  * Fixed Assets — capitalized PP&E with depreciation and book-value tracking.

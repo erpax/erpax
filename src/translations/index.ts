@@ -44,7 +44,7 @@
  * @see ./McpToolMetadata.ts (platform-default translation layer)
  * @see ../../services/agents/mcp/i18n.ts (runtime resolution order)
  */
-import { createAccountingCollection } from '@/accounting/factory/collection-factory'
+import { createAccountingCollection } from '@/factory/collection-factory'
 import { referenceField } from '@/base/accounting/field'
 
 export default createAccountingCollection({

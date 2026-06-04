@@ -64,11 +64,13 @@ const walk = (dir, out = []) => {
 }
 
 const transform = (rel) => {
-  const segs = rel.split('/')
+  let segs = rel.split('/')
   if (!PREFIXES.has(segs[0])) return null
-  const isCollection = segs[0] === 'collections'
+  // drop ALL leading grouping prefixes (collections/accounting → both gone — all is accountable)
+  let isCollection = false
+  while (segs.length > 1 && PREFIXES.has(segs[0])) { if (segs[0] === 'collections') isCollection = true; segs = segs.slice(1) }
   const filename = segs.pop()
-  const dirSegs = segs.slice(1)
+  const dirSegs = segs
   if (dirSegs.length === 0) return { kind: /^index\.tsx?$/.test(filename) ? 'BARREL' : 'ROOTATOM', to: null }
   const words = dirSegs.flatMap(splitWords)
   // strict naming law: inflect the LAST word (the entity) by kind

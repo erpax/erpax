@@ -38,7 +38,7 @@
  * @see ../factories/collection-factory.ts
  */
 
-import { createAccountingCollection } from '@/accounting/factory/collection-factory'
+import { createAccountingCollection } from '@/factory/collection-factory'
 import { referenceField, unitOfMeasureField } from '@/base/accounting/field'
 
 export default createAccountingCollection({

@@ -12,7 +12,7 @@ import {
   notesField,
   auditFields,
 } from '@/base/accounting/field'
-import { validateNotLocked } from '@/accounting/utility/period-lock'
+import { validateNotLocked } from '@/utility/period-lock'
 
 /**
  * Budget Planning — period-budgets by department / cost-center.

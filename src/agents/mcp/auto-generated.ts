@@ -122,7 +122,7 @@ function toolsForStandardsFamilies(): ErpaxMcpTool[] {
     description: `[generated] Standards family '${family}' — one of the 7 vortex families (slice LLLLLL §0g). Use to enumerate the family's published standards via the standards-as-live-objects registry.`,
     parameters: {} as z.ZodRawShape,
     async handler() {
-      const { familyOf } = await import('@/standards/registry')
+      const { familyOf } = await import('@/registry')
       return json({
         family,
         sample: ['IFRS-15', 'IAS-1', 'PSD2', 'GDPR', 'ISO 27001', 'W3C DID Core'].filter((s) => familyOf(s) === family),

@@ -15,9 +15,9 @@ export type {
   SeedAccount,
   SeedTransaction,
   TenantSeed,
-} from '@/accounting/seeds/template/types'
-export { resolveTenantCompliance, type ResolveComplianceInput } from '@/accounting/seeds/template/compliance'
-export { BG_NSS_TEMPLATE } from '@/accounting/seeds/template/bg-nss'
+} from '@/seeds/template/types'
+export { resolveTenantCompliance, type ResolveComplianceInput } from '@/seeds/template/compliance'
+export { BG_NSS_TEMPLATE } from '@/seeds/template/bg-nss'
 export {
   IFRS_MINIMUM_TEMPLATE,
   IFRS_RETAIL_TEMPLATE,
@@ -29,4 +29,4 @@ export {
   findTemplateByCountry,
   getCuratedComplianceCountries,
   getEInvoicingMandatedTemplates,
-} from '@/accounting/seeds/template/templates'
+} from '@/seeds/template/templates'

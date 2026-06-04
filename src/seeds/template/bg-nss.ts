@@ -22,8 +22,8 @@
  * @see ../../../../standards/iso-3166-1/countries/bg.ts
  */
 
-import { buildTemplate } from '@/accounting/seeds/template/build'
-import type { IndustryTemplate, SeedAccount } from '@/accounting/seeds/template/types'
+import { buildTemplate } from '@/seeds/template/build'
+import type { IndustryTemplate, SeedAccount } from '@/seeds/template/types'
 
 const BG_NSS_CHART: ReadonlyArray<SeedAccount> = [
   // клас 1 — Капитали

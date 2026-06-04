@@ -11,7 +11,7 @@ import {
   statusField,
   auditFields,
 } from '@/base/accounting/field'
-import { validateNotLocked } from '@/accounting/utility/period-lock'
+import { validateNotLocked } from '@/utility/period-lock'
 import { validateBalancedEntry } from '@/accounting/hooks/balanced-entry.hook'
 
 /**
