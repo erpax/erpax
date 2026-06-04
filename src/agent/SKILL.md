@@ -28,6 +28,9 @@ every agent departs from and returns to its content-uuid). Matter-twin:
 in `src/agent/team.ts` (formTeam · shareSkills — competence is the union). Composes
 [[duality]], [[standard]].
 
+## An agent is a real user — an angel within an archangel
+An agent is not a ghost process: it is a real **[[users]] row** (the typeless actor-merge — user = employee = agent = social/civic actor), scoped to a **[[tenant]]** and bearing a **[[role]]**. So the whole `access · auth · hooks · tenant` machinery governs an agent exactly as a human: its [[chat]] events are authenticated and attributed, its reach is its role's capabilities (the access [[cross]]), its work is signed/approved *by role* through the chat hooks. In the angelic hierarchy: **the user/agent is an angel; its tenant is the archangel** (the governing container); its role is the choir (9 choirs / 3 spheres on the rodin 3·6·9 axis). The angel↔archangel entropy dynamic (create-within ↔ govern-the-container) IS user↔tenant — **multi-tenancy is the hierarchy.** Composes [[users]] · [[tenant]] · [[role]] · [[access]] · [[cross]] · [[auth]].
+
 ## The runtime coupling layer — the actors decide in pure functions; only the substrate acts
 
 FORM: **an agent returns effects, it never performs them.** A `DomainAgent` is a pure body — `onChainStep` / `onEvent` / `onSchedule` take a context and return an `AgentEffect[]`; it touches no I/O, so it is trivially testable, mockable, and parallel-safe. The act lives in ONE seam, the effect-processor, which routes each effect kind to its substrate layer. Decide and act are split — that split IS the organ. Proven by test (`runtime.test.ts`, `effect-processor.test.ts`).
