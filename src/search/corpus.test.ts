@@ -38,4 +38,20 @@ describe('search-corpus — code into the content-uuid search surface', () => {
     expect(docs.map((d) => d.doc.value)).toEqual(['ua', 'ub'])
     expect(docs.every((d) => d.doc.relationTo === SKILL_RELATION)).toBe(true)
   })
+
+  it('folds dual partners into the indexed meta — a query for one pole surfaces the other', () => {
+    const doc = corpusAtomToSearchDoc({
+      route: 'give',
+      name: 'give',
+      description: 'the outflow',
+      dual: ['take'],
+      contentUuid: 'u',
+    })
+    expect(doc.meta.description).toBe('the outflow · dual: take')
+  })
+
+  it('a blank-description pole leads with the dual clause (the two-fold law, still indexed)', () => {
+    const doc = corpusAtomToSearchDoc({ route: 'give', name: 'give', dual: ['balance', 'take'], contentUuid: 'u' })
+    expect(doc.meta.description).toBe('dual: balance, take')
+  })
 })

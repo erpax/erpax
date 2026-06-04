@@ -96,6 +96,8 @@ export interface LoadedAtom {
   description?: string
   /** the full SKILL.md text — the content the uuid is computed from. */
   body: string
+  /** dual-partner leaf words — the `[[a]]↔[[b]]` pole-pairs this atom bonds to (symmetric, computed). */
+  dual?: string[]
 }
 
 /**
@@ -119,6 +121,62 @@ export function loadCorpus(): LoadedAtom[] {
       .match(/^description:\s*(.+)$/m)?.[1]
       ?.trim()
       .replace(/^["']|["']$/g, '')
-    return { route: rel, name: fmName || name, description, body }
+    const leaf = rel.split('/').pop() as string
+    return { route: rel, name: fmName || name, description, body, dual: dualOf(leaf) }
   })
+}
+
+// ── Dualities — the two-fold law made an INDEX (computed, never stored) ─────
+// A duality is two atoms bonded as opposites that complete to a trinity ([[duality]]):
+// give↔take, whole↔part, begin↔end, open↔close, flow↔balance, payload⊕vitepress, …
+// Declared in prose as the linked pole-pair operator `[[a]]↔[[b]]` (or `⊕`), it is a
+// CROSS-CUTTING relation (the poles are rarely path-siblings) and SYMMETRIC (a↔b ⇒ b↔a),
+// declarable in EITHER pole's file — so it needs a GLOBAL index, not a per-page body scan.
+// This is the one shared source both faces read: VitePress renders it as a relation row;
+// the Payload `search` mirror folds the partners into each atom's indexed meta.
+export interface Duality {
+  /** the two pole leaf-words, in canonical (sorted) order — first-seen surface forms. */
+  a: string
+  b: string
+}
+const DUAL_OP = /\[\[([a-zA-Z][\w/-]*)(?:\|[^\]]*)?\]\]\s*[↔⊕]\s*\[\[([a-zA-Z][\w/-]*)(?:\|[^\]]*)?\]\]/g
+let _dualMap: Record<string, Set<string>> | null = null // norm(leaf) → set of partner surface leaves
+let _dualities: Duality[] | null = null
+
+/** Scan the corpus once for `[[a]]↔[[b]]` / `[[a]] ⊕ [[b]]` pole-pairs; symmetric + memoized. */
+export function buildDualities(): Duality[] {
+  if (_dualities) return _dualities
+  if (allSkills.length === 0) walk(SKILLS_DIR)
+  const map: Record<string, Set<string>> = {}
+  const pairs = new Map<string, Duality>()
+  const leafOf = (t: string): string => t.split('/').pop() as string
+  for (const { route } of allSkills) {
+    const rel = route.replace(/^\//, '').replace(/\/SKILL$/, '')
+    let body: string
+    try {
+      body = readFileSync(join(SKILLS_DIR, rel, 'SKILL.md'), 'utf8')
+    } catch {
+      continue
+    }
+    for (const m of body.matchAll(DUAL_OP)) {
+      const aw = leafOf(m[1])
+      const bw = leafOf(m[2])
+      const a = norm(aw)
+      const b = norm(bw)
+      if (!a || !b || a === b) continue
+      ;(map[a] ??= new Set()).add(bw)
+      ;(map[b] ??= new Set()).add(aw)
+      const key = a < b ? `${a}|${b}` : `${b}|${a}`
+      if (!pairs.has(key)) pairs.set(key, a < b ? { a: aw, b: bw } : { a: bw, b: aw })
+    }
+  }
+  _dualMap = map
+  _dualities = [...pairs.values()].sort((x, y) => x.a.localeCompare(y.a) || x.b.localeCompare(y.b))
+  return _dualities
+}
+
+/** The dual-partner leaf-words of an atom (looked up by its leaf word), symmetric + sorted. */
+export function dualOf(word: string): string[] {
+  if (!_dualMap) buildDualities()
+  return [...(_dualMap![norm(word)] ?? [])].sort()
 }

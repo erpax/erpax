@@ -36,10 +36,11 @@ process.env.PAYLOAD_DEV_PUSH ??= 'false'
 /** Namespace so a skill's content-uuid never collides with a tenant row's. */
 const SKILL_NS = 'erpax:skill'
 
-const atoms: CorpusAtom[] = loadCorpus().map(({ route, name, description, body }) => ({
+const atoms: CorpusAtom[] = loadCorpus().map(({ route, name, description, body, dual }) => ({
   route,
   name,
   description,
+  dual,
   contentUuid: computeContentUuid({ route, body }, SKILL_NS) as unknown as string,
 }))
 

@@ -5,7 +5,7 @@ import type MarkdownIt from 'markdown-it'
 import { trinityHtml, trinityHead, skillDirOf } from './trinity.mts'
 // The corpus walk (route · wikiMap · sidebar) lives in ONE place, shared with the
 // search ingest (scripts/ingest-corpus-to-search.ts) — DRY, no parallel walk.
-import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm } from './corpus.mts'
+import { SKILLS_DIR, wikiMap, allSkills, routeOf, walk, norm, dualOf } from './corpus.mts'
 
 // ── The fractal skill tree IS the docs structure ──────────────────────────
 // VitePress's directory→sidebar→route mapping is the same path-as-address law
@@ -80,6 +80,7 @@ function relationsFromPath(pageRel: string): {
   siblings: Ref[]
   children: Ref[]
   related: Ref[]
+  duals: Ref[]
 } {
   // pageRel is srcDir-relative (e.g. self/sufficient/SKILL.md); the config's
   // filesystem reads run from the project root, so rebase onto SKILLS_DIR.
@@ -111,7 +112,10 @@ function relationsFromPath(pageRel: string): {
       related.push({ text: word, link: resolveWiki(target) })
     }
   }
-  return { ancestors, siblings, children, related }
+  // duals: the [[a]]↔[[b]] pole-partner(s) from the global dualities index — symmetric and
+  // declarable in either pole's file, so sourced from corpus.mts (not this page's own body).
+  const duals: Ref[] = dualOf(selfWord).map((w) => ({ text: w, link: resolveWiki(w) }))
+  return { ancestors, siblings, children, related, duals }
 }
 
 // Resolve [[word]] / [[a/b]] / [[word|alias]] against the skill tree.
@@ -156,6 +160,7 @@ function skillRelations(md: MarkdownIt): void {
     const order: [string, Ref[]][] = [
       ['ancestors', groups.ancestors],
       ['children', groups.children],
+      ['dual', groups.duals],
       ['siblings', groups.siblings],
       ['related', groups.related],
     ]

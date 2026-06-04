@@ -30,6 +30,8 @@ export interface CorpusAtom {
   description?: string
   /** content-uuid of the SKILL.md (sha256→uuidv8) — the address the query teleports to. */
   contentUuid: string
+  /** dual-partner leaf words (the `[[a]]↔[[b]]` pole-pairs) — folded into the indexed meta so a query for one pole surfaces the other. */
+  dual?: string[]
 }
 
 /** A `search`-collection doc, shaped to the plugin's fields (doc/slug/meta + title/priority). */
@@ -49,13 +51,20 @@ export interface CorpusSearchDoc {
  */
 export function corpusAtomToSearchDoc(atom: CorpusAtom): CorpusSearchDoc {
   const title = atom.name.trim() || atom.route
+  // Fold the dual partners into the indexed description so the two-fold law is searchable
+  // on the Payload `search` face too — a query for one pole surfaces the other (the same
+  // dualities index the VitePress relation renders). No schema change: rides plugin `meta`.
+  const duals = (atom.dual ?? []).filter(Boolean)
+  const description = [(atom.description ?? '').trim(), duals.length ? `dual: ${duals.join(', ')}` : '']
+    .filter(Boolean)
+    .join(' · ')
   return {
     title,
     // code outranks an unenriched DB stub when both match a query; tune per surface.
     priority: 10,
     slug: atom.route,
     doc: { relationTo: SKILL_RELATION, value: atom.contentUuid },
-    meta: { title, description: (atom.description ?? '').trim() },
+    meta: { title, description },
     categories: [],
   }
 }
