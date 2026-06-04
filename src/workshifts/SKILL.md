@@ -7,7 +7,7 @@ description: "Use when modelling the per-actor-day labour aggregate — the effi
 
 The **per-actor-day labour aggregate** made real: one row per `(actor, day)`, and the two numbers everything downstream inherits — `efficiencyPercent` and `wage`. A [[workorders|work order]] does not compute its own efficiency; it rolls **up** into the shift and reads it back **down**. The shift is the *authority*, the order the *contributor* — the same direction a ledger account is the authority its postings sum into ([[accounting]]).
 
-This is the single-folder collection node: `index.ts` (schema + standards banners + the data-true compute hook). One folder per collection ⇒ no scatter ⇒ no drift ([[horo-folder-architecture]]).
+This is the single-folder collection node: `index.ts` (schema + standards banners + the data-true compute hook). One folder per collection ⇒ no scatter ⇒ no drift (horo folder architecture).
 
 ## The lifecycle ([[horo]] ring)
 

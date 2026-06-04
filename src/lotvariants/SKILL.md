@@ -13,7 +13,7 @@ In 20 years of etrima production (N=67 865):
 - `units = Σ option_N_units` holds **100.00%** (67 865/67 865).
 - `units_produced = Σ option_N_units_produced` holds **100.00%**.
 
-So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `options[]` array ([[discriminator]] — many columns ⇒ one array), and the totals are **DERIVED from the options** by `rollUpLotVariantOptions` (beforeChange): when `options[]` is supplied, `units`/`unitsProduced` are computed as the sum, so they can never silently drift from their parts (computed-not-stored).
+So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `options[]` array ([[fields|discriminator]] — many columns ⇒ one array), and the totals are **DERIVED from the options** by `rollUpLotVariantOptions` (beforeChange): when `options[]` is supplied, `units`/`unitsProduced` are computed as the sum, so they can never silently drift from their parts (computed-not-stored).
 
 ## The invariants (data-verified, encoded as `@invariant` + hook)
 - **roll-up** — `units = Σ options[].units` AND `unitsProduced = Σ options[].produced` (100.00% in etrima). `rollUpLotVariantOptions`.
@@ -23,4 +23,4 @@ So the 12 bespoke `option_N_*` column-families fold into ONE context-keyed `opti
 ## The coordinate cross
 `lot`→[[lots]] (the parent funnel head, the axis) ⊕ `productVariant`→`items` (the catalog) ⊕ `workPhase`→[[lotworkphases]] (the routing step it currently sits at). The variant rolls UP into the lot and rides ALONG the routing chain.
 
-Matter-twin: `src/lotvariants/index.ts`. Composes [[accounting]] · [[balance]] · [[discriminator]] · [[coordinate]] · [[lots]] · [[lotworkphases]].
+Matter-twin: `src/lotvariants/index.ts`. Composes [[accounting]] · [[balance]] · [[fields|discriminator]] · [[coordinate]] · [[lots]] · [[lotworkphases]].

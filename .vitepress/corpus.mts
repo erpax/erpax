@@ -47,6 +47,25 @@ export function walk(dir: string): SidebarItem[] {
     const hasSkill = existsSync(join(full, 'SKILL.md'))
     if (hasSkill) {
       wikiMap[norm(name)] = route // normalized leaf-word resolution (case/hyphen-insensitive)
+      // Trailing-suffix aliases — the dissolution split compound names into nested
+      // folders, sometimes under domain containers (gl-accounts → gl/accounts,
+      // SalesOrders → customers/sales/orders). Prose [[links]] still carry the bare
+      // compound name, so register EVERY trailing-suffix concatenation of the path
+      // (orders, salesorders, customerssalesorders) as a fill-in alias. A real leaf
+      // word (set unconditionally above, every walk) always wins over a compound
+      // alias; among aliases the first walked wins (deterministic by sort order).
+      const segs = route.replace(/^\//, '').replace(/\/SKILL$/, '').split('/')
+      const addAlias = (k: string) => { if (k && !(k in wikiMap)) wikiMap[k] = route }
+      for (let i = segs.length - 1; i >= 0; i--) {
+        const key = norm(segs.slice(i).join(''))
+        addAlias(key)
+        // naive singular/plural so the model/collection duality reconciles:
+        // [[tenant]] → tenants, [[architecture-invariants]] → architecture/invariant.
+        addAlias(key.endsWith('s') ? key.slice(0, -1) : key + 's')
+        // …and the -y/-ies class ([[parties]] → party, [[ConsignmentInventory]] → inventories).
+        if (key.endsWith('ies')) addAlias(key.slice(0, -3) + 'y')
+        else if (key.endsWith('y')) addAlias(key.slice(0, -1) + 'ies')
+      }
       allSkills.push({ name, route })
     }
     const children = walk(full)

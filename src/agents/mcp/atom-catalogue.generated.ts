@@ -1153,7 +1153,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "gate",
     "name": "gate",
-    "description": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal): the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
+    "description": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
     "path": "gate"
   },
   {
@@ -1329,6 +1329,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "interview",
     "description": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
     "path": "interview"
+  },
+  {
+    "atom": "invariant",
+    "name": "invariant",
+    "description": "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate.",
+    "path": "architecture/invariant"
   },
   {
     "atom": "inventories",
@@ -1797,6 +1803,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "party",
     "description": "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.",
     "path": "party"
+  },
+  {
+    "atom": "payload",
+    "name": "payload",
+    "description": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
+    "path": "payload"
   },
   {
     "atom": "payment",
@@ -2829,6 +2841,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "versions",
     "description": "Use when enabling or debugging Payload versions, drafts, autosave, or scheduled publish — version history, draft/published status, restoring versions, or controlling how many versions are kept.",
     "path": "versions"
+  },
+  {
+    "atom": "vitepress",
+    "name": "vitepress",
+    "description": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
+    "path": "vitepress"
   },
   {
     "atom": "voting",

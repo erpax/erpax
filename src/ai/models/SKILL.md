@@ -33,4 +33,4 @@ gate + per-tenant featureGuard + audit).
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
 Composes: [[AiSuggestions]] · [[access]] · [[hooks]] · [[fields]] · [[standard]] · [[identity]].
-See also: [[cloudflare-ai]] (`callWorkersAi` — the single gated entrypoint that consumes the registry).
+See also: [[ai|cloudflare-ai]] (`callWorkersAi` — the single gated entrypoint that consumes the registry).
