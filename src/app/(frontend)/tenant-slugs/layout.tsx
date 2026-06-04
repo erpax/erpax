@@ -8,7 +8,7 @@
  * @see src/app/README.md
  */
 
-import { IntlChrome } from '@/components/IntlChrome'
+import { IntlChrome } from '@/intl/chrome'
 import { routing } from '@/i18n/routing'
 import React from 'react'
 

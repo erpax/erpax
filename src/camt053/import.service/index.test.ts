@@ -7,7 +7,7 @@
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard ISO-20022 camt.053 bank-to-customer-statement
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/camt053-import.service.ts
+ * @see ./index.ts
  */
 
 import { describe, it, expect } from 'vitest'

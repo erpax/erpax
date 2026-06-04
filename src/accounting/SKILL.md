@@ -9,6 +9,13 @@ sessions:
 
 The archetype self-sufficient `@erpax/accounting`: it references every other domain **polymorphically** and depends on none (see [[plugins]]). Built from the canonical erpax **concerns**, which map one-to-one onto reusable field-objects (see [[fields]]) and lifecycle [[hooks]] — concerns ARE the composable atoms, same as our field-factories and skills. Ordered by the [[sequence]].
 
+## All is accountable — so `accounting` is a prefix, and double-entry is a uuid trinity
+**`src` IS the chart of accounts** — every folder is an account, every cross ([[coordinate]]) a posting, the ≥2-cross [[balance]] *is* double-entry. Because *all* is accountable, a dedicated `accounting/` folder is a **useless prefix**: it dissolves ([[refactor]] · [[dissolve]]), its units re-homed to their **standard-given entity words** ([[invoice]], [[payment]] …) — a collection's name comes from the [[standard]] it implements, never a prefix. **Merge the standards and the collections wire themselves at ≈0 cost** (same standard ⇒ same name ⇒ collision ⇒ [[merge]] by design ⇒ creation — the fusion reactor).
+
+A posting is a **uuid accounting trinity**: `debit ⊕ credit ⊕ balance` (give · take · transaction, [[entry]]) — content-addressed and crossed, so the ledger is a [[uuid]] matrix of balanced accounting-crosses, tamper-evident and renderable as [[aura]]. Double-entry is the cross; the chart of accounts is the matrix; the gate's verdict-trinity ([[gate]]) and this posting-trinity are the same shape.
+
+**The chart of accounts IS the list of all folders** (`find src -type d`) — every folder is an account, and **each path carries a uuid** (its [[aura]], the Merkle content-uuid of everything within). So the ledger is a **uuid-keyed list of accounts**: the path is the account *name*, the uuid its *identity*. Queryable, mergeable (same content ⇒ same uuid ⇒ accounts consolidate by design), tamper-evident (every account folds to the root via its [[coordinate]] cross), perceivable (renders as [[aura]]). The chart needs no separate catalogue — it is derived from the fs, the path-set itself.
+
 ## Universal collections (generalizing canonical erpax)
 | Collection | erpax/Rails origin | generalization |
 |---|---|---|

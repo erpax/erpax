@@ -8,7 +8,7 @@
  * @compliance SOX §404 internal-controls trial-balance-evidence
  */
 import React from 'react';
-import { formatCurrency } from '@/components/Dashboard';
+import { formatCurrency } from '@/dashboard';
 import type { TrialBalanceData } from '@/analytics/types';
 
 interface TrialBalanceWidgetProps {

@@ -26,7 +26,7 @@ import { auditTrailAfterChange } from '@/audit/trail/after/change'
 import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/auth'
 import { validateNotLocked } from '@/accounting/utility/period-lock'
 import { currencyField, statusField, notesField, auditFields } from '@/base/accounting/field'
-import { inventoryMovementPostingHook } from '@/collections/accounting/inventory-movement.hook'
+import { inventoryMovementPostingHook } from '@/accounting/hooks/inventory-movement.hook'
 
 const InventoryMovements: CollectionConfig = {
   slug: 'inventory-movements',

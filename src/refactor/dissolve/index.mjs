@@ -21,7 +21,9 @@ const ROOT = process.cwd()
 const SRC = join(ROOT, 'src')
 const APPLY = process.argv.includes('--apply')
 
-const PREFIXES = new Set(['services', 'collections', 'hooks', 'fields', 'access', 'components', 'utilities', 'endpoints', 'standards'])
+// domain groupings are prefixes too — all is accountable (src = the chart of accounts), so a dedicated
+// `accounting/` folder is a useless prefix; its units dissolve to their standard-given entity words.
+const PREFIXES = new Set(['services', 'collections', 'hooks', 'fields', 'access', 'components', 'utilities', 'endpoints', 'standards', 'accounting'])
 // generated artefacts: MOVE with their unit (so siblings resolve) but never content-remap
 const GENERATED = [/\.generated\.ts$/, /skills\.index\.ts$/, /installed\.catalogue\.ts$/, /payload-types\.ts$/]
 

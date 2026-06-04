@@ -20,7 +20,9 @@
  *                        notification fan-out reports per-channel result
  *   5. **entropy**     — no duplicate slugs / dbNames / chain ids;
  *                        feature key == feature.id; no inline taxonomy
- *                        literals (must pull from src/standards/<id>/)
+ *                        literals; the dissolved-tree law (locality,
+ *                        singular-model/plural-collection, the ≥2-cross
+ *                        coordinate balance).
  *
  * Static checks run without Payload (file walk + regex). Runtime checks
  * (axis 4) need a live Payload — wrapped in a beforeAll.

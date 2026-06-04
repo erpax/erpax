@@ -60,7 +60,6 @@ const eslintConfig = defineConfig([
       'src/page/**/*.{ts,tsx}',
       'src/widget/**/*.{ts,tsx}',
       'src/dashboard/**/*.{ts,tsx}',
-      'src/components/Dashboard.{ts,tsx}', // prefix-root direct file — dissolves in Stage 1b
     ],
     rules: {
       // Payload website template theme / header sync (React 19 compiler hook noise)

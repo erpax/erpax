@@ -12,7 +12,7 @@ import {
   auditFields,
 } from '@/fields'
 import { validateNotLocked } from '@/accounting/utility/period-lock'
-import { validateBalancedEntry } from '@/collections/accounting/balanced-entry.hook'
+import { validateBalancedEntry } from '@/accounting/hooks/balanced-entry.hook'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.

@@ -17,7 +17,7 @@ import { notFound, redirect } from 'next/navigation'
 import { getPayload } from 'payload'
 import React from 'react'
 
-import { RenderTenantPage } from '@/components/RenderTenantPage'
+import { RenderTenantPage } from '@/render/tenant/page'
 
 export default async function Page({
   params: paramsPromise,

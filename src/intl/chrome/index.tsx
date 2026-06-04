@@ -5,7 +5,7 @@ import { unstable_noStore as noStore } from 'next/cache'
 import React from 'react'
 
 import { AdminBar } from '@/admin/bar'
-import { DocumentHtmlLang } from '@/components/DocumentHtmlLang'
+import { DocumentHtmlLang } from '@/document/html/lang'
 import { Footer } from '@/footer/Component'
 import { Header } from '@/header/Component'
 import type { SupportedLocale } from '@/i18n/localization'

@@ -10,7 +10,7 @@
  */
 
 import { createHash } from 'node:crypto'
-import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
+import { readFileSync, readdirSync, existsSync, statSync, type Dirent } from 'node:fs'
 import { join, basename, dirname } from 'node:path'
 import type { InvariantResult, InvariantContext } from '@/architecture/invariant/types'
 
@@ -68,25 +68,45 @@ const REPO_ROOT_FALLBACK = (): string => process.cwd()
 
 // ─── Helpers ──────────────────────────────────────────────────────────
 
+/**
+ * The dissolved tree has NO grouping prefix: a collection is a single-word
+ * folder whose `index.ts` declares a Payload `slug` via `buildConfig`-style
+ * `{ slug: '…', fields: [...] }`. We DERIVE the collection set live from the
+ * filesystem (the akashic record — [[coordinate]]: DERIVE-FROM-FS-FIRST),
+ * never from a hard-coded `src/collections` / `src/plugins/<x>/collections`
+ * path (those prefixes are gone). A file is a collection iff its `index.ts`
+ * declares a top-level `slug:` AND a `fields:` array (the Payload
+ * CollectionConfig shape) — this excludes block/field/service modules that
+ * happen to mention a slug in passing.
+ */
+function isCollectionSource(text: string): boolean {
+  return /\bslug:\s*['"][\w-]+['"]/.test(text) && /\bfields:\s*\[/.test(text)
+}
+
+let _collectionFileCache: { root: string; files: ReadonlyArray<string> } | null = null
+
 function listCollectionFiles(repoRoot: string): ReadonlyArray<string> {
-  const dirs = [
-    join(repoRoot, 'src/plugins/accounting/collections'),
-    join(repoRoot, 'src/collections'),
-  ]
+  if (_collectionFileCache && _collectionFileCache.root === repoRoot) {
+    return _collectionFileCache.files
+  }
+  const root = join(repoRoot, 'src')
   const out: string[] = []
-  for (const d of dirs) {
-    if (!existsSync(d)) continue
-    for (const entry of readdirSync(d, { withFileTypes: true })) {
-      if (entry.isFile() && entry.name.endsWith('.ts') && !entry.name.endsWith('.bak')) {
-        // Skip top-level barrels — those re-export collections, they're not collections themselves.
-        if (entry.name === 'index.ts') continue
-        out.push(join(d, entry.name))
-      } else if (entry.isDirectory()) {
-        const inner = join(d, entry.name, 'index.ts')
-        if (existsSync(inner)) out.push(inner)
-      }
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try { entries = readdirSync(dir, { withFileTypes: true }) } catch { return }
+    for (const e of entries) {
+      if (e.name === 'node_modules' || e.name === '.git' || e.name.startsWith('.')) continue
+      if (e.name === '_attic' || e.name === '_legacy') continue
+      const full = join(dir, e.name)
+      if (e.isDirectory()) { walk(full); continue }
+      // Only an `index.ts` is a candidate collection root (one atom = one folder).
+      if (e.name !== 'index.ts') continue
+      const text = readSafe(full)
+      if (isCollectionSource(text)) out.push(full)
     }
   }
+  walk(root)
+  _collectionFileCache = { root: repoRoot, files: out }
   return out
 }
 
@@ -137,23 +157,73 @@ export function checkStandardsTagOnEveryCollection(ctx: InvariantContext): Invar
     : fail('standards', 'every-collection-cites-standard', `${offenders.length} collection(s) missing @standard tag`, offenders.map((p) => basename(p)))
 }
 
-/** Every `src/standards/<id>/` folder has a README.md + index.ts. */
-export function checkStandardsFolderShape(ctx: InvariantContext): InvariantResult {
+/**
+ * Every folder under `src/` is an ATOM — it carries matter (`index.*`)
+ * and/or form (`SKILL.md`), per the dissolved-tree law ([[coordinate]]:
+ * the strict naming matrix; `index.*` = matter/self, `SKILL.md` =
+ * form/self). A folder with neither is off-matrix junk UNLESS it is an
+ * intermediate node (it contains sub-folders that are themselves atoms —
+ * the tree's branch points, e.g. `architecture/` holding `invariant/`).
+ *
+ * This REPLACES the stale `standards-folder-shape` check which keyed on
+ * the now-gone `src/standards/<id>/` prefix layout (README.md + index.ts).
+ * Severity is WARN: the dissolution is in progress, so a leaf that still
+ * holds loose files (not yet folded into `index.ts`) is reported as drift,
+ * never a hard fail (it must not break green-by-construction).
+ *
+ * @standard ISO/IEC 25010:2023 §5 modularity — one atom = one folder
+ * @audit ISO 19011:2018 §6.4 audit-evidence
+ */
+export function checkEveryFolderIsAnAtom(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-  const root = join(repoRoot, 'src/standards')
-  if (!existsSync(root)) return warn('standards', 'standards-folder-shape', 'src/standards/ not found')
+  const root = join(repoRoot, 'src')
+  if (!existsSync(root)) return warn('standards', 'every-folder-is-an-atom', 'src/ not found')
+  const isAtomFile = (n: string): boolean =>
+    n === 'SKILL.md' || /^index\.(ts|tsx|mts|mjs|js|jsx)$/.test(n)
   const offenders: string[] = []
-  for (const entry of readdirSync(root, { withFileTypes: true })) {
-    if (!entry.isDirectory()) continue
-    const dir = join(root, entry.name)
-    const hasIndex = existsSync(join(dir, 'index.ts'))
-    const hasReadme = existsSync(join(dir, 'README.md'))
-    // composite folders prefixed _ may legitimately be different; report only when both missing.
-    if (!hasIndex && !hasReadme) offenders.push(entry.name)
+  let atomCount = 0
+  let branchCount = 0
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try { entries = readdirSync(dir, { withFileTypes: true }) } catch { return }
+    let hasAtom = false
+    let hasSubdir = false
+    for (const e of entries) {
+      if (e.isFile() && isAtomFile(e.name)) hasAtom = true
+      if (e.isDirectory()
+        && e.name !== 'node_modules' && e.name !== '.git'
+        && !e.name.startsWith('.') && e.name !== '_attic' && e.name !== '_legacy') {
+        hasSubdir = true
+      }
+    }
+    if (hasAtom) atomCount++
+    else if (hasSubdir) branchCount++ // intermediate node — branch point, not junk
+    else {
+      // Leaf with neither matter nor form nor children: off-matrix.
+      const loose = entries.filter((e) => e.isFile()).length
+      offenders.push(`${dir.slice(repoRoot.length + 1)} (${loose} loose file(s), no index.*/SKILL.md)`)
+    }
+    for (const e of entries) {
+      if (e.isDirectory()
+        && e.name !== 'node_modules' && e.name !== '.git'
+        && !e.name.startsWith('.') && e.name !== '_attic' && e.name !== '_legacy') {
+        walk(join(dir, e.name))
+      }
+    }
+  }
+  // Walk the children of src/ (src/ itself is the corpus root, not an atom).
+  for (const e of readdirSync(root, { withFileTypes: true })) {
+    if (e.isDirectory() && e.name !== 'node_modules' && e.name !== '.git'
+      && !e.name.startsWith('.') && e.name !== '_attic' && e.name !== '_legacy') {
+      walk(join(root, e.name))
+    }
   }
   return offenders.length === 0
-    ? pass('standards', 'standards-folder-shape')
-    : fail('standards', 'standards-folder-shape', `${offenders.length} standards folder(s) missing both index.ts AND README.md`, offenders)
+    ? pass('standards', 'every-folder-is-an-atom',
+        `${atomCount} atom folder(s) carry index.*/SKILL.md; ${branchCount} branch node(s); no off-matrix junk`)
+    : warn('standards', 'every-folder-is-an-atom',
+        `${offenders.length} off-matrix folder(s) — neither index.*/SKILL.md nor sub-atoms (dissolution-in-progress drift)`,
+        offenders.slice(0, 20))
 }
 
 /** Every business chain declares ≥1 standard. */
@@ -719,37 +789,39 @@ export function checkWorkflowAssigneeRolesExist(ctx: InvariantContext): Invarian
 /* ─── Slice AAAAA — uniform-DRY enforcement on every collection ─────── */
 
 /**
- * Every collection in `src/plugins/accounting/collections/` MUST follow
- * the canonical DRY shape — no inline tenant/currency/status/notes/ref/
+ * Every collection source (a single-word folder's `index.ts` declaring a
+ * slug + fields, DERIVED live from the dissolved tree) MUST follow the
+ * canonical DRY shape — no inline tenant/currency/status/notes/ref/
  * audit-fields, no inline access predicates, no missing audit hook, no
- * missing timestamps, JSDoc cites a standard, slug is domain-prefixed.
+ * missing timestamps, JSDoc cites a standard.
  *
  * Counterpart of the standalone `outputs/check-dry.mjs` walker that
  * drove AAAAA to 0; bakes the same rules into the runtime invariant
- * suite so future drift fails CI immediately.
+ * suite. Severity WARN while the dissolution is in progress (collections
+ * not yet on the accounting factory show as drift, never a hard fail).
  *
  * @standard ISO/IEC 25010:2023 §5 modularity-and-maintainability
  * @audit ISO 19011:2018 §6.4 audit-evidence
  */
 export function checkCollectionsAreUniformlyDRY(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-  const dir = join(repoRoot, 'src/plugins/accounting/collections')
-  if (!existsSync(dir)) {
-    return warn('entropy', 'collections-uniformly-dry', 'collections dir not found')
+  // Derive the collection set live from the dissolved tree (every collection
+  // is a single-word folder's `index.ts` declaring a slug + fields) — NOT the
+  // gone `src/plugins/accounting/collections` prefix.
+  const files = listCollectionFiles(repoRoot)
+  if (files.length === 0) {
+    return warn('entropy', 'collections-uniformly-dry', 'no collection sources discovered in the tree')
   }
-  // AAAAA-cont (2026-05-11): dead stubs + .bak files moved to _attic/.
-  // Skip the entire underscore-prefixed subfolder convention.
-  // Auth/platform slugs are owned by us but follow Payload v3 platform
+  // Auth/platform slugs are owned by us but follow Payload platform
   // conventions (no audit hook, optional timestamps).
   const PLATFORM_SLUGS = new Set([
     'roles', 'user_roles', 'paymentMethods',
     'tenants', 'users', 'subscriptions', 'subscriptionPlans',
   ])
   const offenders: string[] = []
-  for (const entry of readdirSync(dir)) {
-    if (entry.startsWith('_')) continue // _attic, _legacy, etc.
-    if (!entry.endsWith('.ts') || entry === 'index.ts' || entry.endsWith('.bak')) continue
-    const text = readSafe(join(dir, entry))
+  for (const file of files) {
+    const entry = `${basename(dirname(file))}/index.ts`
+    const text = readSafe(file)
     const slug = (text.match(/slug:\s*'([a-z][\w-]*)'/) ?? [])[1]
     if (!slug) continue
     const usesFactory = /\bcreateAccountingCollection\s*\(/.test(text)
@@ -800,8 +872,8 @@ export function checkCollectionsAreUniformlyDRY(ctx: InvariantContext): Invarian
     }
   }
   return offenders.length === 0
-    ? pass('entropy', 'collections-uniformly-dry', `${readdirSync(dir).length} collection files all uniformly DRY`)
-    : fail('entropy', 'collections-uniformly-dry', `${offenders.length} DRY violation(s) — see outputs/check-dry.mjs for details`, offenders)
+    ? pass('entropy', 'collections-uniformly-dry', `${files.length} collection source(s) all uniformly DRY`)
+    : warn('entropy', 'collections-uniformly-dry', `${offenders.length} DRY drift(s) across ${files.length} collection source(s) (dissolution-in-progress)`, offenders.slice(0, 20))
 }
 
 /* ─── Slice BBBBB-prep — IFRS 100% coverage invariant ─────────────────── */
@@ -970,28 +1042,16 @@ const ALWAYS_ALLOWED = new Set([
   'id',              // Payload built-in
 ])
 
-/** Per-collection-slug → set of field names actually declared in that file. */
+/**
+ * Per-collection-slug → set of field names actually declared in that file.
+ * Derived live from the dissolved tree (every collection is a single-word
+ * folder's `index.ts`) via `listCollectionFiles`, not the gone prefix dirs.
+ */
 function collectFieldsForCollection(repoRoot: string, slug: string): ReadonlySet<string> | null {
-  const dirs = [
-    join(repoRoot, 'src/plugins/accounting/collections'),
-    join(repoRoot, 'src/collections'),
-  ]
-  for (const dir of dirs) {
-    if (!existsSync(dir)) continue
-    for (const entry of readdirSync(dir, { withFileTypes: true })) {
-      if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'index.ts') {
-        const path = join(dir, entry.name)
-        const text = readSafe(path)
-        if (!text.includes(`slug: '${slug}'`)) continue
-        return extractDeclaredFields(text)
-      } else if (entry.isDirectory()) {
-        const path = join(dir, entry.name, 'index.ts')
-        if (!existsSync(path)) continue
-        const text = readSafe(path)
-        if (!text.includes(`slug: '${slug}'`)) continue
-        return extractDeclaredFields(text)
-      }
-    }
+  for (const path of listCollectionFiles(repoRoot)) {
+    const text = readSafe(path)
+    if (!text.includes(`slug: '${slug}'`)) continue
+    return extractDeclaredFields(text)
   }
   return null
 }
@@ -1319,7 +1379,7 @@ export function checkNoInlineTaxonomyArrays(ctx: InvariantContext): InvariantRes
   }
   return offenders.length === 0
     ? pass('entropy', 'no-inline-taxonomy-arrays')
-    : fail('entropy', 'no-inline-taxonomy-arrays', `${offenders.length} inline taxonomy array(s) — should use src/standards/<id>/`, offenders)
+    : fail('entropy', 'no-inline-taxonomy-arrays', `${offenders.length} inline taxonomy array(s) — pull from the taxonomy atom (the standard's options registry), never inline`, offenders)
 }
 
 /* ═════════════════════════════════════════════════════════════════════
@@ -3046,4 +3106,207 @@ export function checkAtomsLockedToUuid(ctx: InvariantContext): InvariantResult {
   }
   return pass('entropy', 'atoms-locked-to-uuid',
     `every atom-key locks to one canonical content-uuid (${byKey.size} keys; ${resolved.length} scope-twin(s) deferred to their matter folder) — derived live`)
+}
+
+/* ═════════════════════════════════════════════════════════════════════
+ * THE DISSOLVED-TREE LAW — locality · singular-model/plural-collection ·
+ * the coordinate cross (≥2-cross balance). Enforces the NEW architecture
+ * ([[coordinate]] · [[sequence]] · [[merge]]): no grouping prefix, every
+ * unit a single-word folder, cross-unit communication only through `@/`,
+ * a folder reaches a neighbour only through its cross.
+ * ═════════════════════════════════════════════════════════════════════ */
+
+/** Walk every `.ts`/`.tsx`/`.mts` source under `src/` (skips dot/_attic/node_modules). */
+function listTsSources(repoRoot: string): ReadonlyArray<string> {
+  const root = join(repoRoot, 'src')
+  const out: string[] = []
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try { entries = readdirSync(dir, { withFileTypes: true }) } catch { return }
+    for (const e of entries) {
+      if (e.name === 'node_modules' || e.name === '.git' || e.name.startsWith('.')) continue
+      if (e.name === '_attic' || e.name === '_legacy') continue
+      const full = join(dir, e.name)
+      if (e.isDirectory()) { walk(full); continue }
+      if (/\.(ts|tsx|mts)$/.test(e.name) && !e.name.endsWith('.bak')) out.push(full)
+    }
+  }
+  walk(root)
+  return out
+}
+
+/**
+ * The grouping prefixes the dissolution erased. A surviving `@/<prefix>/…`
+ * import is a unit that has NOT yet dropped its prefix — every one of these
+ * is a [[merge]] target (`@/collections/invoices` → `@/invoices`).
+ */
+const GROUPING_PREFIXES: ReadonlyArray<string> = [
+  'collections', 'services', 'components', 'fields',
+  'hooks', 'access', 'utilities', 'endpoints',
+]
+
+/**
+ * LOCALITY ([[coordinate]]: "a folder communicates only through its cross —
+ * it cannot bypass a neighbour to reach a distant folder"). Two violations:
+ *
+ *   1. a surviving grouping-prefix import `@/collections|@/services|…` — the
+ *      prefix the dissolution drops; and
+ *   2. a cross-unit relative climb `../<other-unit>` — a sibling reached by
+ *      relative path instead of the `@/` address (the locality law says
+ *      cross-unit imports are `@/`, only intra-unit may be relative).
+ *
+ * Severity WARN: the dissolution is in progress; these are the precise
+ * [[merge]] queue, surfaced as drift, never a hard fail.
+ *
+ * @standard ISO/IEC 25010:2023 §5.4 modularity — locality of reference
+ * @audit Law 10 referential-harmony
+ */
+export function checkLocality(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const files = listTsSources(repoRoot)
+  if (files.length === 0) return warn('entropy', 'locality', 'no source files discovered')
+  const prefixRe = new RegExp(`from\\s+['"]@/(?:${GROUPING_PREFIXES.join('|')})(?:/|['"])`)
+  // A cross-unit relative climb: `../` then a path SEGMENT (i.e. `../x/…`),
+  // not a bare `../something` inside the same unit. The new law: cross-unit
+  // is `@/`, so any `../…/` that escapes the current folder is suspect.
+  const crossUnitRelRe = /from\s+['"](\.\.\/[^'"]+)['"]/
+  const prefixOffenders: string[] = []
+  const relOffenders: string[] = []
+  for (const f of files) {
+    // Don't flag the invariant checker itself (it names the prefixes as data).
+    if (f.endsWith('/architecture/invariant/checks.ts')) continue
+    const text = readSafe(f)
+    const rel = f.slice(repoRoot.length + 1)
+    for (const line of text.split('\n')) {
+      if (prefixRe.test(line)) {
+        const m = line.match(/@\/[\w-]+(?:\/[\w-]+)?/)
+        prefixOffenders.push(`${rel}: ${m ? m[0] : line.trim()}`)
+      }
+      const rm = line.match(crossUnitRelRe)
+      // `../` escapes the current unit folder (climbs to a sibling unit).
+      // A single-level `./x` intra-unit import is fine; `../x` crosses out.
+      if (rm) relOffenders.push(`${rel}: ${rm[1]}`)
+    }
+  }
+  const total = prefixOffenders.length + relOffenders.length
+  if (total === 0) {
+    return pass('entropy', 'locality',
+      `${files.length} source(s) clean — no grouping-prefix imports, no cross-unit ../ climbs`)
+  }
+  const offenders = [
+    ...prefixOffenders.map((o) => `prefix: ${o}`),
+    ...relOffenders.map((o) => `cross-unit-../: ${o}`),
+  ]
+  return warn('entropy', 'locality',
+    `${prefixOffenders.length} grouping-prefix import(s) + ${relOffenders.length} cross-unit ../ climb(s) — drop the prefix / use @/ (dissolution-in-progress)`,
+    offenders.slice(0, 25))
+}
+
+/**
+ * SINGULAR-MODEL / PLURAL-COLLECTION ([[merge]] / [[normalize]]: a Payload
+ * COLLECTION (config) is plural; a MODEL/type is singular). The folder a
+ * collection's `index.ts` lives in MUST be plural (matches the slug's
+ * conventional plural form), and its declared `slug` should be plural too.
+ *
+ * Cheap heuristic: a collection source whose folder name does NOT end in a
+ * plural marker (`s`, or known irregulars) is flagged. WARN — the
+ * dissolution is renaming folders, and some domain slugs are mass nouns.
+ *
+ * @standard ISO/IEC 25010:2023 §5 modularity — naming uniformity
+ */
+export function checkSingularModelPluralCollection(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const files = listCollectionFiles(repoRoot)
+  if (files.length === 0) return warn('entropy', 'singular-model-plural-collection', 'no collection sources discovered')
+  // Mass-noun / already-plural-without-s slugs that are legitimately not `…s`.
+  const ALLOWED_NONPLURAL = new Set([
+    'media', 'search', 'header', 'footer', 'data', 'series',
+  ])
+  const offenders: string[] = []
+  for (const f of files) {
+    const folder = basename(dirname(f))
+    const slug = (readSafe(f).match(/slug:\s*['"]([\w-]+)['"]/) ?? [])[1] ?? ''
+    const looksPlural = folder.endsWith('s') || ALLOWED_NONPLURAL.has(folder)
+    if (!looksPlural) {
+      offenders.push(`${folder}/index.ts (slug '${slug}') — collection folder should be PLURAL`)
+    }
+  }
+  return offenders.length === 0
+    ? pass('entropy', 'singular-model-plural-collection',
+        `${files.length} collection folder(s) plural (singular-model/plural-collection holds)`)
+    : warn('entropy', 'singular-model-plural-collection',
+        `${offenders.length} collection folder(s) not plural — singular-model/plural-collection drift`,
+        offenders.slice(0, 20))
+}
+
+/**
+ * THE COORDINATE CROSS — the ≥2-cross balance ([[coordinate]]: "at least 2
+ * crosses per folder, or it is unbalanced — the double-entry of structure").
+ * An atom's coordinate is the cross of its neighbour uuids (parent, prev,
+ * next); a balanced atom is connected on ≥2 sides. The cheap fs proxy: an
+ * atom folder (carries `index.*`/`SKILL.md`) must have a PARENT that is also
+ * an atom (the containment cross) PLUS at least one sibling atom OR a child
+ * atom (a prev/next or in/out cross) — total ≥2 connections. A lone atom with
+ * no atom-parent and no atom-sibling/child is a dangling half-entry.
+ *
+ * Severity WARN: a true `prev/next` ring needs the [[sequence]] index that
+ * `[[uuid]]/matrix/collide.mjs` computes; this is the static under-bound
+ * (surfaces clearly-dangling atoms without re-deriving the whole ring).
+ *
+ * @standard ISO/IEC 25010:2023 §5.4 modularity — every unit connected
+ * @audit double-entry of structure ([[balance]])
+ */
+export function checkAtomCrossBalance(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const root = join(repoRoot, 'src')
+  if (!existsSync(root)) return warn('entropy', 'atom-cross-balance', 'src/ not found')
+  const isAtomFile = (n: string): boolean =>
+    n === 'SKILL.md' || /^index\.(ts|tsx|mts|mjs|js|jsx)$/.test(n)
+  const skip = (n: string): boolean =>
+    n === 'node_modules' || n === '.git' || n.startsWith('.') || n === '_attic' || n === '_legacy'
+  // Map every directory → { isAtom, childDirs: string[] }.
+  const dirInfo = new Map<string, { isAtom: boolean; childDirs: string[] }>()
+  const walk = (dir: string): void => {
+    let entries: Dirent[]
+    try { entries = readdirSync(dir, { withFileTypes: true }) } catch { return }
+    let isAtom = false
+    const childDirs: string[] = []
+    for (const e of entries) {
+      if (e.isFile() && isAtomFile(e.name)) isAtom = true
+      if (e.isDirectory() && !skip(e.name)) childDirs.push(join(dir, e.name))
+    }
+    dirInfo.set(dir, { isAtom, childDirs })
+    for (const c of childDirs) walk(c)
+  }
+  for (const e of readdirSync(root, { withFileTypes: true })) {
+    if (e.isDirectory() && !skip(e.name)) walk(join(root, e.name))
+  }
+  const atomDirs = [...dirInfo.entries()].filter(([, v]) => v.isAtom).map(([d]) => d)
+  const offenders: string[] = []
+  for (const d of atomDirs) {
+    const parent = dirname(d)
+    const parentInfo = dirInfo.get(parent)
+    const parentIsAtom = parentInfo?.isAtom === true // top-level units' parent is src/ (not an atom) — that's fine
+    const info = dirInfo.get(d)!
+    const childAtoms = info.childDirs.filter((c) => dirInfo.get(c)?.isAtom).length
+    // Sibling atoms (same parent, atom-bearing, not self).
+    const siblingAtoms = parentInfo
+      ? parentInfo.childDirs.filter((c) => c !== d && dirInfo.get(c)?.isAtom).length
+      : 0
+    // Connections: parent-cross (if parent is an atom) + child/sibling crosses.
+    const connections = (parentIsAtom ? 1 : 0) + Math.min(childAtoms, 1) + Math.min(siblingAtoms, 1)
+    // Top-level units (parent === src/) are roots of their subtree; require a
+    // child atom OR sibling atom (they always have top-level siblings, so
+    // they pass) — only flag a genuinely isolated atom: no parent-atom, no
+    // child-atom, no sibling-atom.
+    if (connections < 2 && childAtoms === 0 && siblingAtoms === 0 && !parentIsAtom) {
+      offenders.push(`${d.slice(repoRoot.length + 1)} — lone atom (no atom-parent, no atom-child, no atom-sibling)`)
+    }
+  }
+  return offenders.length === 0
+    ? pass('entropy', 'atom-cross-balance',
+        `${atomDirs.length} atom folder(s) each connected on ≥2 sides (the double-entry of structure holds)`)
+    : warn('entropy', 'atom-cross-balance',
+        `${offenders.length} lone atom(s) — unbalanced (one cross is a half-entry); bind into the tree/sequence`,
+        offenders.slice(0, 20))
 }

@@ -4,7 +4,7 @@
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard ISO-20022:2022 universal-financial-industry-message-scheme
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/iso20022-export.service.ts
+ * @see ./index.ts
  */
 
 import { describe, it, expect } from 'vitest'

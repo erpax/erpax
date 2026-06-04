@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AccountingClient } from '@/sdk/accounting-client';
-import Dashboard from '@/components/Dashboard';
-import Navigation from '@/components/Navigation';
+import Dashboard from '@/dashboard';
+import Navigation from '@/navigation';
 import AnalyticsPage from '@/page/AnalyticsPage';
 
 interface AppProps {

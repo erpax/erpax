@@ -7,7 +7,7 @@
  * @standard ISO/IEC-29119:2022 software-testing
  * @standard OECD SAF-T 2.0 standard-audit-file-for-tax
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/saf-t-export.service.ts
+ * @see ./index.ts
  */
 
 import { describe, it, expect } from 'vitest'

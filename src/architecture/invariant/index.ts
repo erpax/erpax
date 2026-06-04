@@ -50,7 +50,7 @@ export async function runAllInvariants(
   if (!skip.has('standards')) {
     results.push(C.checkLegislationRuleOfLaw(ctx))  // the society's own law: the rule of law holds
     results.push(C.checkStandardsTagOnEveryCollection(ctx))
-    results.push(C.checkStandardsFolderShape(ctx))
+    results.push(C.checkEveryFolderIsAnAtom(ctx))  // dissolved-tree law: one atom = one folder (index.*/SKILL.md)
     results.push(C.checkChainHasStandards(ctx))
     results.push(C.checkRolesHaveStandards(ctx))
     results.push(C.checkIfrsCoverage100Percent(ctx))
@@ -103,6 +103,12 @@ export async function runAllInvariants(
     results.push(C.checkHarmonicHelixClosure(ctx))
     // Lock all to uuid: every atom-key locks to one content-uuid (fs-derived; warns on duplicate paths).
     results.push(C.checkAtomsLockedToUuid(ctx))
+    // ── The dissolved-tree architecture law ([[coordinate]] · [[merge]]) ──
+    // No grouping prefix; cross-unit imports are @/; collection folders are
+    // plural; every atom is connected on ≥2 sides (the coordinate cross).
+    results.push(C.checkLocality(ctx))                       // locality — no @/collections|@/services|… prefix, no cross-unit ../
+    results.push(C.checkSingularModelPluralCollection(ctx))  // singular-model / plural-collection
+    results.push(C.checkAtomCrossBalance(ctx))               // ≥2-cross balance (parent/prev/next)
     results.push(C.checkNoDuplicateCollectionSlugs(ctx))
     results.push(C.checkNoDuplicateArrayDbNames(ctx))
     results.push(C.checkNoDuplicateChainIds(ctx))

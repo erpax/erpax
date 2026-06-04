@@ -8,7 +8,7 @@
  * @standard UN-EDIFACT D.96A
  * @standard ISO-9735:2002 edifact-syntax-rules
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/edifact-export.service.ts
+ * @see ./index.ts
  */
 
 import { describe, it, expect } from 'vitest'

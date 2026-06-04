@@ -9,7 +9,7 @@
  * @standard Peppol-BIS-3.0 billing
  * @standard EN-16931:2017+A1:2019 semantic-model-electronic-invoice
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/peppol-import.service.ts
+ * @see ./index.ts
  */
 
 import { describe, it, expect } from 'vitest'

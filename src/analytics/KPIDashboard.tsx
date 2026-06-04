@@ -1,6 +1,6 @@
 import React from 'react';
 import { FinancialAnalysisEngine } from '@/accounting/financial-analysis';
-import { formatCurrency } from '@/components/Dashboard';
+import { formatCurrency } from '@/dashboard';
 import type { AccountLine, BalanceSheetData, IncomeStatementData } from '@/analytics/types';
 
 /**

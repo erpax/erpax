@@ -9,7 +9,7 @@
  * @standard Peppol-BIS-3.0 billing
  * @standard UBL-2.1 universal-business-language
  * @audit ISO-19011:2018 audit-trail
- * @see src/services/peppol-export.service.ts
+ * @see ./index.ts
  */
 
 import { describe, it, expect } from 'vitest'
