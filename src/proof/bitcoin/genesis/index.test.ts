@@ -6,7 +6,7 @@
  * it costs ~2^32 hashes, and rewriting the chain costs the cumulative chain-work.
  *
  * Every value asserted here is INDEPENDENTLY recomputable by anyone from the
- * published 80-byte header — no repo, no network, no prover to trust. @see ../../dry-proof.ts
+ * published 80-byte header — no repo, no network, no prover to trust. @see ../../index.ts
  */
 import { describe, it, expect } from 'vitest'
 import { verifyBitcoinGenesis, BITCOIN_GENESIS_HEADER_HEX } from './index'

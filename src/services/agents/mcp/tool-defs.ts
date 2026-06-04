@@ -185,7 +185,7 @@ import { checkTorusBounded, traceTorusRoundTrip, TORUS_DEFAULT_ENVELOPE, TORUS_V
 import {
   buildDryProofBundle, publishDryProofBundle, getCurrentProofBundle,
   checkDryProofPublished, asFederationEnvelope, MAX_PROOF_AGE_HOURS,
-} from '@/services/proof/dry-proof'
+} from '@/proof'
 import {
   LAW_CATALOG, buildAgentLawProfile, buildAllAgentLawProfiles, checkAgentLawCoverage,
 } from '@/services/architecture-invariants/by-agent'

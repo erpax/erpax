@@ -37,7 +37,7 @@
 import { crackVerdict, invariantChecks, replicationChecks, ERPAX_DIGEST_BITS, type CrackVerdict } from '@/services/tamper-cost'
 import { ANCHOR_STRENGTH_BITS, anchoredFloorLog2, type AnchorKind } from '@/services/anchor'
 import { computeTamperReverseCost } from '@/services/integrity/tamper-reverse-cost'
-import { projectionProof, type ProjectionProof } from '@/services/proof/projection'
+import { projectionProof, type ProjectionProof } from '@/proof/projection'
 import { matrixDigest } from '@/services/uuid-matrix'
 
 /** A snapshot of the live network — the hardware that accumulates power. */

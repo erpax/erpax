@@ -4,7 +4,7 @@
  * peer recomputes the exact claim. @see ./dry-proof.ts, src/services/tamper-cost
  */
 import { describe, it, expect } from 'vitest'
-import { proofTamperCost, empiricalProofs } from './dry-proof'
+import { proofTamperCost, empiricalProofs } from './index'
 import { jcsCanonicalize } from '@/services/integrity/content-uuid'
 
 describe('dry-proof: public tamper-cost surfaces the deepseek amplifiers', () => {

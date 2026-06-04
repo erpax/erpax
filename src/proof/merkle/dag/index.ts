@@ -21,7 +21,7 @@
  * @standard Git object model — SHA-1 over `"<type> <len>\0<content>"` (commits include parent)
  * @standard NIST FIPS 180-4 (the underlying hash); RFC 9562 §5.8 (the erpax content-uuid twin)
  * @audit Conservation Law 55 (tamper cost grows with history; audit stays O(N))
- * @see ../../dry-proof.ts ../../bitcoin/genesis
+ * @see ../../index.ts ../../bitcoin/genesis
  */
 
 /** Facts captured at build time by a git collector, where git exists. */

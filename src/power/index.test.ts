@@ -8,7 +8,7 @@
 import { describe, it, expect } from 'vitest'
 import { accumulatePower, coverageFromUsage, usageChecks, powerStrictlyGrows, type UsageSnapshot } from './index'
 import { invariantChecks, replicationChecks, ERPAX_DIGEST_BITS } from '@/services/tamper-cost'
-import { projectionProof } from '@/services/proof/projection'
+import { projectionProof } from '@/proof/projection'
 
 const BASE: UsageSnapshot = { clients: 10, events: 1000, features: 5, streams: 5, dimensions: 10 }
 

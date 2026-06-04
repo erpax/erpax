@@ -6,7 +6,7 @@
  * for free on 64-bit hardware" proof — while forging the past means re-hashing all
  * descendants on every replica. This module is the PURE summarizer over facts the
  * build-time git collector captures where git exists;
- * `buildDryProofBundle` runs at the edge where it does not. @see ../../dry-proof.ts
+ * `buildDryProofBundle` runs at the edge where it does not. @see ../../index.ts
  */
 import { describe, it, expect } from 'vitest'
 import { summarizeMerkleDag, isFsckClean } from './index'

@@ -26,7 +26,7 @@
  * @standard SEC 2 secp256k1 / FIPS 186-4 P-256 (ECDLP — the inverse key recovery)
  * @standard NIST SP 800-57 Part 1 r5 §5.6.1 (anchor key strengths)
  * @audit Conservation Law 55/62 (forge ≫ verify; coverage → ∞ at the anchor)
- * @see ../../dry-proof.ts ../../bitcoin/genesis src/services/anchor src/services/uuid-matrix
+ * @see ../../index.ts ../../bitcoin/genesis src/services/anchor src/services/uuid-matrix
  */
 
 import { computeContentUuid } from '@/services/integrity/content-uuid'

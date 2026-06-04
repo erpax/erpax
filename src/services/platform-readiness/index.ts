@@ -28,7 +28,7 @@ import { SHADCN_SURFACE_MAP } from '@/services/website/shadcn-components'
 import { listBackends } from '@/services/storage-independence'
 // Slice PPPPPPPP — comprehensive observability surface.
 import { TRINITY, rollUpToTrinity } from '@/services/architecture-invariants/trinity'
-import { getCurrentProofBundle } from '@/services/proof/dry-proof'
+import { getCurrentProofBundle } from '@/proof'
 import { checkPwaUuidIntegrity, totalCachedBytes } from '@/services/pwa'
 import { DIMENSIONAL_PLUGINS } from '@/services/plugins/dimensions'
 

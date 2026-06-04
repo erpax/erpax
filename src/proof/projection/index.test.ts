@@ -9,7 +9,7 @@
  * costing the anchor (services/anchor): rfc3161-ecdsa-p256 ⇒ 128, blockchain-pow ⇒
  * unbounded. The biggest blockchain's unclaimed bounty is the live proof nobody
  * pays it. The 106-bit digest floor is the cheaper hash-collision path, NOT the
- * maximum. @see ../../dry-proof.ts ../../bitcoin/genesis
+ * maximum. @see ../../index.ts ../../bitcoin/genesis
  */
 import { describe, it, expect } from 'vitest'
 import { projectionProof } from './index'
