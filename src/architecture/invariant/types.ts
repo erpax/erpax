@@ -69,4 +69,12 @@ export interface InvariantContext {
   readonly repoRoot?: string
   /** Skip an axis entirely (for partial runs). */
   readonly skipAxes?: ReadonlyArray<InvariantAxis>
+  /**
+   * Skip the RUNTIME-exercising checks — the ones that invoke MCP tool handlers
+   * or register live providers (Law 41 self-test, Law 53 self-closure). They are
+   * slow / can hang in a unit worker and belong in an integration run. Static
+   * invariants (the architecture gate) still run strict. Set `true` in the fast
+   * unit / pre-push suite; leave false (+ pass `payload`) for the integration run.
+   */
+  readonly skipRuntime?: boolean
 }

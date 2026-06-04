@@ -459,7 +459,11 @@ export async function checkNotificationFallback(ctx: InvariantContext): Promise<
  * to `fail` once all 10 roles are registered — at which point Law 53
  * becomes a hard gate.
  */
-export async function checkSelfReferentialClosure(_ctx: InvariantContext): Promise<InvariantResult> {
+export async function checkSelfReferentialClosure(ctx: InvariantContext): Promise<InvariantResult> {
+  if (ctx.skipRuntime) {
+    return warn('fallback', 'self-referential-closure',
+      'runtime check (registers live providers) — skipped in fast mode; runs in the integration suite')
+  }
   try {
     const mod = await import('@/self/closure')
     // Side-effect import — registers every provider declared in
@@ -1980,7 +1984,11 @@ export async function checkMcpDryCleanlinessInvariant(_ctx: InvariantContext): P
  * malformed `{content: [{text, type}]}`. DB-dependent tools are
  * skipped.
  */
-export async function checkMcpSelfTestableInvariant(_ctx: InvariantContext): Promise<InvariantResult> {
+export async function checkMcpSelfTestableInvariant(ctx: InvariantContext): Promise<InvariantResult> {
+  if (ctx.skipRuntime) {
+    return warn('fallback', 'mcp-self-testable',
+      'runtime check (invokes every MCP tool handler) — skipped in fast mode; runs in the integration suite')
+  }
   const tools = await loadMcpTools()
   const result = await checkMcpSelfTestable(tools)
   if (result.ok) {
