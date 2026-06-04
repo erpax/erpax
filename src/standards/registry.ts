@@ -169,4 +169,10 @@ export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
   { id: 'GLOBALG.A.P', family: 'other', title: 'GLOBALG.A.P. Integrated Farm Assurance', match: 'globalg' },
   { id: 'Savory-EOV', family: 'other', title: 'Savory Ecological Outcome Verification (Land to Market)', match: 'savory|ecological.?outcome|\\bEOV\\b' },
   { id: 'FAO-Agroecology', family: 'un', title: 'FAO 10 Elements of Agroecology', match: 'agroecology' },
+  // food safety, grading & climate references the agriculture domain cites
+  { id: 'USDA-GAP', family: 'other', title: 'USDA Harmonized GAP / GHP food-safety audit', match: 'harmonized.?gap|GAP.?/.?GHP|\\bGHP\\b' },
+  { id: 'FSMA-PSR', family: 'other', title: 'FDA FSMA Produce Safety Rule (21 CFR 112)', match: 'FSMA|21.?CFR.?112|produce.?safety.?rule' },
+  { id: 'Codex-Alimentarius', family: 'un', title: 'Codex Alimentarius (FAO/WHO food standards)', match: 'codex' },
+  { id: 'USDA-AMS-Grade', family: 'other', title: 'USDA AMS fresh-produce grade standards (US No. 1 / Fancy)', match: 'USDA.?AMS|US.?grade.?standard' },
+  { id: 'USDA-Hardiness-Zones', family: 'other', title: 'USDA Plant Hardiness Zone Map', match: 'hardiness.?zone|plant.?hardiness' },
 ] as const

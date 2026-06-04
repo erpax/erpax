@@ -143,7 +143,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "EU electronic identification & trust services",
     "uuid": "29ccc17c-b37d-81fd-af35-cd6049173405",
     "color": "hsl(260 73% 42%)",
-    "count": 13,
+    "count": 14,
     "modules": [
       {
         "path": "src/agents/registered/legal.agent.ts",
@@ -152,6 +152,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/anchor/index.ts",
         "section": "§2.4"
+      },
+      {
+        "path": "src/anchoring/index.ts",
+        "section": ""
       },
       {
         "path": "src/customers/contracts/contract/signatures/index.ts",
@@ -808,7 +812,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Revenue from Contracts with Customers",
     "uuid": "e0b86948-fc7f-8258-81cf-123c1211891d",
     "color": "hsl(288 55% 38%)",
-    "count": 22,
+    "count": 23,
     "modules": [
       {
         "path": "src/agents/accounting/finance.agent.ts",
@@ -817,6 +821,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/agents/registered/sales.agent.ts",
         "section": "§9"
+      },
+      {
+        "path": "src/agriculture/accountable.ts",
+        "section": ""
       },
       {
         "path": "src/commitments/index.ts",
@@ -3733,6 +3741,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "modules": []
   },
   {
+    "id": "FSMA-PSR",
+    "family": "other",
+    "title": "FDA FSMA Produce Safety Rule (21 CFR 112)",
+    "uuid": "f49adb42-7b9d-8ea6-affb-fcd3d1b040f7",
+    "color": "hsl(338 64% 56%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "GLOBALG.A.P",
     "family": "other",
     "title": "GLOBALG.A.P. Integrated Farm Assurance",
@@ -3783,6 +3800,33 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Savory Ecological Outcome Verification (Land to Market)",
     "uuid": "7fc86dab-67fc-8f9e-b641-d84453d0cb7a",
     "color": "hsl(312 59% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "USDA-AMS-Grade",
+    "family": "other",
+    "title": "USDA AMS fresh-produce grade standards (US No. 1 / Fancy)",
+    "uuid": "81ff193f-146d-8e33-92f1-7eb1fec62e2b",
+    "color": "hsl(159 80% 53%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "USDA-GAP",
+    "family": "other",
+    "title": "USDA Harmonized GAP / GHP food-safety audit",
+    "uuid": "3e26e0c2-1872-8956-9cda-304b3b2f2f9d",
+    "color": "hsl(70 69% 40%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "USDA-Hardiness-Zones",
+    "family": "other",
+    "title": "USDA Plant Hardiness Zone Map",
+    "uuid": "44eabac9-2ace-8616-a5bc-ba3680238eab",
+    "color": "hsl(2 66% 47%)",
     "count": 0,
     "modules": []
   },
@@ -3907,10 +3951,14 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 55,
+    "count": 56,
     "modules": [
       {
         "path": "src/agent/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/agent/research/index.ts",
         "section": "§5.8"
       },
       {
@@ -3999,10 +4047,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/identification/index.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/identity/element/index.ts",
         "section": "§5.8"
       }
     ]
@@ -4525,8 +4569,12 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Universal Business Language",
     "uuid": "91f2143b-c905-8e7e-8b7f-ccc48a2fd117",
     "color": "hsl(282 75% 49%)",
-    "count": 23,
+    "count": 24,
     "modules": [
+      {
+        "path": "src/agriculture/accountable.ts",
+        "section": ""
+      },
       {
         "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
         "section": ""
@@ -4694,6 +4742,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       }
     ]
+  },
+  {
+    "id": "Codex-Alimentarius",
+    "family": "un",
+    "title": "Codex Alimentarius (FAO/WHO food standards)",
+    "uuid": "261ef849-1c9e-89ba-b01c-bda80e345a63",
+    "color": "hsl(38 58% 39%)",
+    "count": 0,
+    "modules": []
   },
   {
     "id": "FAO-Agroecology",
@@ -5668,4 +5725,4 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
   }
 ] as const
 
-export const STANDARDS_COUNT = 113
+export const STANDARDS_COUNT = 118
