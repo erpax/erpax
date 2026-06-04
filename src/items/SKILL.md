@@ -17,6 +17,8 @@ This is the single-folder collection node: `index.ts` (schema + standards banner
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
 One folder per collection ⇒ no scatter ⇒ no drift.
 
+The catalog also holds **agricultural produce**: each [[crop]] is an items row (its sale unit a [[measure]] — bunch/head/quart — its price a [[currency]] amount), and **[[seed]]** is items too (the propagule as purchasable inventory; the [[cropplan]] seed order = computed need − on-hand). The CSA [[share]] box and its [[packs|packing]] draw from this one inventory. Garments, produce, seed — strip the prefix and they [[merge]] into one catalog/inventory model.
+
 ## Standards
 - UN-CEFACT UNSPSC product-classification
 - GS1 GTIN global-trade-item-number
@@ -25,5 +27,6 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - EU-1007/2011 textile-fibre-names + composition-labelling (the `contents` field)
 - IFRS IAS-2 inventories
 - US-GAAP ASC-330 inventory
+- IFRS IAS-41 → IAS-2 transfer at harvest (biological produce becomes inventory)
 
 Composes: [[Batches]] · [[items/bills/of/materials]] · [[items/inventory/movements]] · [[Packages]] · [[items/purchase/orders]] · [[items/quality/inspections]].

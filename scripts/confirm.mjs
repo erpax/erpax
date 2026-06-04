@@ -38,8 +38,11 @@ function loadYaml() {
 const yaml = loadYaml()
 
 // ── the corpus page-set: every dir holding a SKILL.md (the wikiMap targets) ──
+// Resolution matches the aura/VitePress wikilink resolver: case-INSENSITIVE,
+// leaf-or-full-path. The corpus links capitalized leaves ([[Items]], [[Customers]],
+// [[Batches]]) by convention, so a case-sensitive check would false-positive.
 function buildPages() {
-  const pathset = new Set(), leaf = new Map()
+  const pathset = new Set(), leaf = new Set()
   const walk = (dir) => {
     for (const e of readdirSync(dir)) {
       const p = join(dir, e)
@@ -47,10 +50,8 @@ function buildPages() {
       let st; try { st = statSync(p) } catch { continue }
       if (!st.isDirectory()) continue
       if (existsSync(join(p, 'SKILL.md'))) {
-        const rel = relative(SRC, p)
-        pathset.add(rel)
-        const l = basename(p)
-        ;(leaf.get(l) ?? leaf.set(l, []).get(l)).push(rel)
+        pathset.add(relative(SRC, p).toLowerCase())
+        leaf.add(basename(p).toLowerCase())
       }
       walk(p)
     }
@@ -60,7 +61,7 @@ function buildPages() {
 }
 const { pathset, leaf } = buildPages()
 const resolves = (t) => {
-  t = t.trim()
+  t = t.trim().toLowerCase()
   return t.includes('/') ? pathset.has(t) : leaf.has(t)
 }
 
