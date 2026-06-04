@@ -80,6 +80,11 @@ const REPO_ROOT_FALLBACK = (): string => process.cwd()
  * happen to mention a slug in passing.
  */
 function isCollectionSource(text: string): boolean {
+  // A real collection atom declares a `CollectionConfig` (slug + fields). EXCLUDE a
+  // plugin BUILDER (`…(): Plugin`) — e.g. configureEcommercePlugin sets
+  // `customers: { slug: 'users' }` to REUSE the existing users collection (the DRY
+  // merge), which is a config value, not a duplicate/singular collection declaration.
+  if (/\):\s*Plugin\b/.test(text)) return false
   return /\bslug:\s*['"][\w-]+['"]/.test(text) && /\bfields:\s*\[/.test(text)
 }
 
@@ -3326,7 +3331,7 @@ export function checkSingularModelPluralCollection(ctx: InvariantContext): Invar
   if (files.length === 0) return fail('entropy', 'singular-model-plural-collection', 'LAW plural-collection ([[config]]): no collection sources discovered — the chart of accounts cannot be verified')
   // Mass-noun / already-plural-without-s slugs that are legitimately not `…s`.
   const ALLOWED_NONPLURAL = new Set([
-    'media', 'search', 'header', 'footer', 'data', 'series',
+    'media', 'search', 'header', 'footer', 'data', 'series', 'metadata',
   ])
   const offenders: string[] = []
   for (const f of files) {
