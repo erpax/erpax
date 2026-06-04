@@ -13,7 +13,7 @@ import {
   SeedSnapshot,
   TestSeedFactory,
   type SeedResult,
-} from '../../src/testing';
+} from '@/testing';
 import type { Payload } from 'payload';
 
 /**

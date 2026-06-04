@@ -28,9 +28,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { roleScopedAccess, scopedAccess, tenantAdmin } from '../../access/auth'
-import { notesField, auditFields } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { roleScopedAccess, scopedAccess, tenantAdmin } from '@/access/auth'
+import { notesField, auditFields } from '@/fields/base-accounting-fields'
 
 const ApiAuditEvents: CollectionConfig = {
   slug: 'api-audit-events',

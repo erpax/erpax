@@ -17,8 +17,8 @@
  * @see /src/services/uuid-format/index.ts
  */
 import { z } from 'zod'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
-import type { ErpaxMcpTool } from '../tool-defs'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/services/agents/mcp/i18n'
+import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
 import {
   encodeStructured, decodeStructured, verifyStructured,
   SLOT_TAGS, CAPABILITIES,

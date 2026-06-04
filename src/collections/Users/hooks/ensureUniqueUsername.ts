@@ -1,9 +1,9 @@
 import type { FieldHook, Where } from 'payload'
 
-import { ERR, throwRegistryValidation } from '../../../utilities/errors'
-import { tenantLabelForDuplicateAudit } from '../../../utilities/tenantLabelForDuplicateAudit'
+import { ERR, throwRegistryValidation } from '@/utilities/errors'
+import { tenantLabelForDuplicateAudit } from '@/utilities/tenantLabelForDuplicateAudit'
 import { getTenantFromCookie } from '@payloadcms/plugin-multi-tenant/utilities'
-import { getCollectionIDType } from '../../../utilities/getCollectionIDType'
+import { getCollectionIDType } from '@/utilities/getCollectionIDType'
 
 /** Blank / omitted username is allowed for any number of users; uniqueness applies only to non-empty values. */
 function normalizeUsername(value: unknown): string | null {

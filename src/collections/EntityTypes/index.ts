@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '../../access/authenticated'
-import { superAdminOnly } from '../../access/auth'
+import { authenticated } from '@/access/authenticated'
+import { superAdminOnly } from '@/access/auth'
 
 /**
  * Entity Types — classification of legal entity types.

@@ -23,13 +23,13 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../access/auth'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
 import {
   statusField,
   notesField,
   auditFields,
-} from '../../fields/base-accounting-fields'
+} from '@/fields/base-accounting-fields'
 
 const CostCenters: CollectionConfig = {
   slug: 'cost-centers',

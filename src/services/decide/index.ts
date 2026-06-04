@@ -5,8 +5,8 @@
  *
  * @see ../competition (Candidate, correctness) · ../cost (efficiency) · ../logic (harmonic-first) · ./SKILL.md
  */
-import type { Candidate } from '../competition'
-import { efficiency, type Ledger } from '../cost'
+import type { Candidate } from '@/services/competition'
+import { efficiency, type Ledger } from '@/services/cost'
 
 /** A society candidate — a competition Candidate plus its harmony (logic) and its cost ledger (cost). */
 export interface SocietyCandidate extends Candidate {

@@ -23,7 +23,7 @@ export type {
   BgBankStatementRow,
   BgBankStatementParser,
   PdfTextExtractor,
-} from '../bg-bank-statement-pdf'
+} from '@/services/country-clients/bg-bank-statement-pdf'
 export {
   parseBgBankStatementPdf,
   detectBgBankCode,
@@ -33,4 +33,4 @@ export {
   parseBgAmount,
   parseBgDate,
   extractBgIban,
-} from '../bg-bank-statement-pdf'
+} from '@/services/country-clients/bg-bank-statement-pdf'

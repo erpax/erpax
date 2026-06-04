@@ -98,7 +98,7 @@ if (v) {
   // The deepest guarantee: the restored row is Law-8 CONSISTENT — its stored
   // uuid equals hash(its content). (tenants have no parent tenant ⇒ the stamp
   // resolves tenantId to 'unknown'.)
-  const { verifyContentUuid } = await import('../../services/integrity')
+  const { verifyContentUuid } = await import('@/services/integrity')
   const verdict = verifyContentUuid(
     after as unknown as Record<string, unknown> & { uuid?: string },
     'unknown',

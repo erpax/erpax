@@ -28,10 +28,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
-import { accountingCollectionAccess } from '../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '@/fields/base-accounting-fields'
 
 const MaintenanceWorkOrders: CollectionConfig = {
   slug: 'maintenance-work-orders',

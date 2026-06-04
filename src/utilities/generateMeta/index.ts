@@ -11,9 +11,9 @@
 
 import type { Metadata } from 'next'
 
-import type { Media, Page, Post, Product, Config } from '../../payload-types'
+import type { Media, Page, Post, Product, Config } from '@/payload-types'
 
-import { mergeOpenGraph } from '../mergeOpenGraph'
+import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { getServerSideURL } from '@/standards/rfc-3986/get-url'
 
 const getImageURL = (

@@ -1,8 +1,8 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../access/auth'
-import { statusField, auditFields } from '../../fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { statusField, auditFields } from '@/fields'
 
 /**
  * Fiscal Devices (ФУ) — the registry of fiscal units a СУПТО tenant operates.

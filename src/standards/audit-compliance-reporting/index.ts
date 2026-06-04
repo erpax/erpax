@@ -12,4 +12,4 @@
  * @standard NIST SP 800-92 Computer Security Incident Handling
  */
 
-export { AuditComplianceReporting } from '../../services/AuditComplianceReporting'
+export { AuditComplianceReporting } from '@/services/AuditComplianceReporting'

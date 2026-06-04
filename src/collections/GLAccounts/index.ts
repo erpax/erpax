@@ -19,10 +19,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../access/auth'
-import { currencyField, statusField } from '../../fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { currencyField, statusField } from '@/fields'
 
 const GLAccounts: CollectionConfig = {
   slug: 'gl-accounts',

@@ -17,9 +17,9 @@
  */
 
 import { Access, PayloadRequest } from 'payload'
-import type { Subscription } from '../../payload-types'
-import type { Iso27002ControlId } from '../../standards/iso-27002'
-import { getUserContext } from '../auth'
+import type { Subscription } from '@/payload-types'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
+import { getUserContext } from '@/access/auth'
 
 /**
  * Canonical ISO 27002 controls these gates exercise:

@@ -18,7 +18,7 @@
  * @see ./registry.ts — the service catalogue + the `fills` gap-map
  * @see src/services/integrity/content-uuid.ts — computeContentUuid
  */
-import { computeContentUuid } from '../integrity'
+import { computeContentUuid } from '@/services/integrity'
 import type { WorkspaceServiceId } from './registry'
 import { workspaceApi } from './registry'
 

@@ -39,21 +39,21 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
-import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { roleScopedAccess, tenantAdmin } from '../../../access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { roleScopedAccess, tenantAdmin } from '@/access/auth'
 import {
   currencyField,
   statusField,
   notesField,
   auditFields,
-} from '../../../fields/base-accounting-fields'
-import { validateNotLocked } from '../../../services/accounting/utilities/period-lock'
-import { payrollRunPostingHook } from '../../../hooks/collections/accounting/payroll-run.hook'
-import { payrollDisbursementHook } from '../../../hooks/collections/accounting/payroll-disbursement.hook'
+} from '@/fields/base-accounting-fields'
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
+import { payrollRunPostingHook } from '@/hooks/collections/accounting/payroll-run.hook'
+import { payrollDisbursementHook } from '@/hooks/collections/accounting/payroll-disbursement.hook'
 
 const PayrollRuns: CollectionConfig = {
   slug: 'payroll-runs',

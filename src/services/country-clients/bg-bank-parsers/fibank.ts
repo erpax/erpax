@@ -17,7 +17,7 @@ import {
   registerBgBankParser,
   type BgBankStatement,
   type BgBankStatementRow,
-} from '../bg-bank-statement-pdf'
+} from '@/services/country-clients/bg-bank-statement-pdf'
 
 const BANK_CODE = 'FINVBGSF' // SWIFT BIC for Fibank
 const BANK_NAME = 'Първа инвестиционна банка АД'

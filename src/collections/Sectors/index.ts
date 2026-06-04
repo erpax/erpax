@@ -24,9 +24,9 @@
  * @see ../Connections/index.ts · ../Users/index.ts · ../LegalEntities/index.ts
  */
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { statusField, notesField, auditFields, referenceField, naceCodeField } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, referenceField, naceCodeField } from '@/fields/base-accounting-fields'
 
 const Sectors: CollectionConfig = {
   slug: 'sectors',

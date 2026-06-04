@@ -15,10 +15,10 @@
  */
 
 // Re-export CurrencyReconciliation service for grep-traceability
-export { CurrencyReconciliation } from '../../services/CurrencyReconciliation'
+export { CurrencyReconciliation } from '@/services/CurrencyReconciliation'
 
 // Collections are imported from src/collections/* and wired into payload.config.ts
 // They are NOT re-exported here (see src/collections/index.ts for master barrel)
 
 // Type definitions (if needed for external consumption)
-// export type { CurrencyBalance, ExchangeRateRevaluation, MultiCurrencyReconciliation, ... } from '../../services/CurrencyReconciliation'
+// export type { CurrencyBalance, ExchangeRateRevaluation, MultiCurrencyReconciliation, ... } from '@/services/CurrencyReconciliation'

@@ -6,4 +6,4 @@
  * Service (TaxPeriodReconciliation) exported here.
  */
 
-export { TaxPeriodReconciliation } from '../../services/TaxPeriodReconciliation'
+export { TaxPeriodReconciliation } from '@/services/TaxPeriodReconciliation'

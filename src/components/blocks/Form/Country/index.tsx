@@ -13,8 +13,8 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 import { Controller } from 'react-hook-form'
 
-import { Error } from '../Error'
-import { Width } from '../Width'
+import { Error } from '@/components/blocks/Form/Error'
+import { Width } from '@/components/blocks/Form/Width'
 import { countryOptions } from './options'
 
 export const Country: React.FC<

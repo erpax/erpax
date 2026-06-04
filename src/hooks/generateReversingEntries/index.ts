@@ -23,7 +23,7 @@
  */
 
 import type { CollectionAfterChangeHook, RequiredDataFromCollectionSlug } from 'payload'
-import { ClosingPeriodChecker } from '../../services/ClosingPeriodChecker'
+import { ClosingPeriodChecker } from '@/services/ClosingPeriodChecker'
 
 interface ClosingEntryItem {
   journalEntryId?: string | { id: string }

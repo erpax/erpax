@@ -40,11 +40,11 @@ import {
 // slot is registered before ANY test runs, ahead of the framework
 // describes that reset the registry. The locale describe below
 // re-registers via the module re-import path.
-import '../locale-fallback'
+import '@/services/locale-fallback'
 
 describe('production locale slot — delegates to the framework, primary-subtag equality preserved', () => {
   it('still pairs en-GB ↔ en-US as compatible after the framework refactor', async () => {
-    const { localesCompatible, isBlankLocale, resolveLocale, BLANK_LOCALE } = await import('../locale-fallback')
+    const { localesCompatible, isBlankLocale, resolveLocale, BLANK_LOCALE } = await import('@/services/locale-fallback')
     expect(localesCompatible('en-GB', 'en-US')).toBe(true)
     expect(localesCompatible('en', 'fr')).toBe(false)
     expect(localesCompatible('en', 'und')).toBe(true)

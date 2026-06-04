@@ -13,10 +13,10 @@
 
 import { getRequestConfig } from 'next-intl/server'
 
-import { defaultLocale, isValidLocale, nestedMessages } from '../index'
+import { defaultLocale, isValidLocale, nestedMessages } from '@/i18n'
 
 // Re-derive the message shape from one JSON for `useTranslations` typing.
-import type enMessages from '../messages/en.json'
+import type enMessages from '@/i18n/messages/en.json'
 
 type Messages = typeof enMessages
 

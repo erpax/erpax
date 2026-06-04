@@ -6,9 +6,9 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '../../../../access/authenticated'
-import { adminOnly } from '../../../../access/auth'
-import { auditTrailAfterChange } from '../../../../hooks/auditTrailAfterChange'
+import { authenticated } from '@/access/authenticated'
+import { adminOnly } from '@/access/auth'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 export const AuditSamples: CollectionConfig = {
   slug: 'audit-samples',

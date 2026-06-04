@@ -91,10 +91,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
-import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
-import { currencyField, auditFields } from '../../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { currencyField, auditFields } from '@/fields/base-accounting-fields'
 
 const MODIFICATION_REASONS = [
   { label: 'Scope Increase', value: 'scope_increase' },

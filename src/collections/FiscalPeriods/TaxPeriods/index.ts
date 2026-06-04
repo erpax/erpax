@@ -17,8 +17,8 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { validateTaxPeriodClosing } from '../../../hooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { validateTaxPeriodClosing } from '@/hooks'
 
 export const TaxPeriods: CollectionConfig = {
   slug: 'tax-periods',

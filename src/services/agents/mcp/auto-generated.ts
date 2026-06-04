@@ -47,8 +47,8 @@
 
 import { z } from 'zod'
 import type { ErpaxMcpTool } from './tool-defs'
-import type { AgentRegistry } from '../types'
-import { manifestOf } from '../blocks'
+import type { AgentRegistry } from '@/services/agents/types'
+import { manifestOf } from '@/services/agents/blocks'
 import { BUSINESS_CHAINS } from '@/services/business-chains/registry'
 import { listTenantRoles } from '@/services/tenant-roles'
 import { TAMPER_PROOF_COLLECTIONS_REGISTRY } from '@/services/integrity'

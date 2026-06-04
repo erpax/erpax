@@ -19,10 +19,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { statusField, notesField, auditFields, referenceField } from '../../../fields/base-accounting-fields'
-import { emitQcComplete } from '../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, referenceField } from '@/fields/base-accounting-fields'
+import { emitQcComplete } from '@/hooks/chainEventEmitters'
 
 const QualityInspections: CollectionConfig = {
   slug: 'quality-inspections',

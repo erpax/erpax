@@ -9,8 +9,8 @@
  * @see src/standards/nist-incits-359/
  */
 
-import type { Tenant, User } from '../../payload-types'
-import { extractID } from '../extractID'
+import type { Tenant, User } from '@/payload-types'
+import { extractID } from '@/utilities/extractID'
 
 /**
  * Returns array of all tenant IDs assigned to a user.

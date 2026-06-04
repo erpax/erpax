@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest';
-import { getDiscovery, initializeDiscovery, resetDiscovery } from '../../src/testing';
+import { getDiscovery, initializeDiscovery, resetDiscovery } from '@/testing';
 
 /** The field shape the discovery helper reads (a subset of Payload's Field union). */
 type TestField = { name: string; type: string; required?: boolean; relationTo?: string };

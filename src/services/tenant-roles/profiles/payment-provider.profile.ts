@@ -10,7 +10,7 @@
  * @standard PSD2 + PSD3 + EBA RTS + EMD2 + ISO 20022 + Berlin Group +
  *           SEPA + SWIFT + PCI-DSS + DAC8 + CRD V/CRR II-III + AML/AMLD + eIDAS
  */
-import { defineTenantRole } from '../registry'
+import { defineTenantRole } from '@/services/tenant-roles/registry'
 
 defineTenantRole({
   id: 'payment-provider',

@@ -1,5 +1,5 @@
 import { CollectionBeforeChangeHook, CollectionAfterChangeHook } from 'payload'
-import type { Tenant } from '../../../payload-types'
+import type { Tenant } from '@/payload-types'
 
 /**
  * BeforeCreate hook — assign a free / trial plan to a brand-new tenant so

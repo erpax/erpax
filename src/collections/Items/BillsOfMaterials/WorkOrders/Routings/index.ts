@@ -24,10 +24,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../../../access/auth'
-import { referenceField, statusField, auditFields, notesField, unitOfMeasureField } from '../../../../../fields/base-accounting-fields'
-import { emitRoutingCompleted } from '../../../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { referenceField, statusField, auditFields, notesField, unitOfMeasureField } from '@/fields/base-accounting-fields'
+import { emitRoutingCompleted } from '@/hooks/chainEventEmitters'
 
 const Routings: CollectionConfig = {
   slug: 'routings',

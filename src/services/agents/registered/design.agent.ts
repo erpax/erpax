@@ -6,7 +6,7 @@
  * @standard WCAG 2.2 + WAI-ARIA 1.2 + ISO 9241-110 dialogue-principles
  * @feature design_quality
  */
-import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '../types'
+import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/services/agents/types'
 
 export const DesignAgent: DomainAgent = {
   id: 'design',

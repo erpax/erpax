@@ -1,6 +1,6 @@
 import { Access } from 'payload'
-import { isSuperAdmin } from '../isSuperAdmin'
-import { getUserContext } from '../auth'
+import { isSuperAdmin } from '@/access/isSuperAdmin'
+import { getUserContext } from '@/access/auth'
 
 /**
  * Audit trail read access — authenticated users can read audit events,

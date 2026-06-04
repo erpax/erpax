@@ -37,8 +37,8 @@
  * @feature self_closure
  */
 
-import type { InternalProvider, FallbackContext } from '../types'
-import { registerInternalProvider } from '../index'
+import type { InternalProvider, FallbackContext } from '@/services/self-closure/types'
+import { registerInternalProvider } from '@/services/self-closure'
 
 export interface FederationPushParams {
   /** The peer URL the external push targeted (recorded for replay). */

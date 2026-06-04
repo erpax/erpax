@@ -13,7 +13,7 @@ import {
   TestSeedFactory,
   TransactionalSeedFactory,
   type SeedResult,
-} from '../../src/testing';
+} from '@/testing';
 
 /**
  * Mock Payload instance for testing

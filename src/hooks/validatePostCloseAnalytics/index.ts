@@ -25,8 +25,8 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
-import { PostCloseAnalytics } from '../../services/PostCloseAnalytics'
-import type { AuditReport, Consolidation } from '../../payload-types'
+import { PostCloseAnalytics } from '@/services/PostCloseAnalytics'
+import type { AuditReport, Consolidation } from '@/payload-types'
 
 // Import report types from PostCloseAnalytics service
 interface VarianceAnalysisReport {

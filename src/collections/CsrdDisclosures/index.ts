@@ -28,15 +28,15 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { statusField, notesField, auditFields, legalEntityField, taxonomySelect } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, legalEntityField, taxonomySelect } from '@/fields/base-accounting-fields'
 import {
   ESRS_CATEGORY_OPTIONS,
   ESRS_TOPIC_OPTIONS,
   ESRS_MATERIALITY_OPTIONS,
   ESRS_ASSURANCE_OPTIONS,
-} from '../../standards/eu-csrd-esrs'
+} from '@/standards/eu-csrd-esrs'
 
 const CsrdDisclosures: CollectionConfig = {
   slug: 'csrd-disclosures',

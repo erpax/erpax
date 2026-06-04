@@ -18,9 +18,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../access/auth'
-import { statusField, notesField, auditFields } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
 
 const WarehouseLocations: CollectionConfig = {
   slug: 'warehouse-locations',

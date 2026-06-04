@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 
-import { isSuperAdminAccess } from '../../../access/isSuperAdmin'
+import { isSuperAdminAccess } from '@/access/isSuperAdmin'
 
 import { preventDuplicateAssignment } from './hooks/preventDuplicateAssignment'
 

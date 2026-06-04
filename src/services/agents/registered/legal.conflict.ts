@@ -19,7 +19,7 @@
  * @standard ISO 19011 — the verdict is a deterministic function of the party graph
  * @audit ABA Model Rule 1.7 conflict-of-interest (named; the form is the merge law)
  */
-import type { AgentEffect, DomainEvent } from '../types'
+import type { AgentEffect, DomainEvent } from '@/services/agents/types'
 
 /** The event the loop reacts to (a matter is opening for a client party). */
 export const CONFLICT_TRIGGER = 'matter:opening'

@@ -8,9 +8,9 @@
  */
 import './erpax.profile'
 
-import { listTenantRoles } from '../tenant-roles'
-import { collectGenome } from '../cloning'
-import { agentRegistry } from '../agents/bootstrap'
+import { listTenantRoles } from '@/services/tenant-roles'
+import { collectGenome } from '@/services/cloning'
+import { agentRegistry } from '@/services/agents/bootstrap'
 
 /**
  * Conservation Law 23 — `checkErpaxObservesItself`.

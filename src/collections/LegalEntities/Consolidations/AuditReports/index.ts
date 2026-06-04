@@ -17,8 +17,8 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../../../access/auth'
-import { validateAuditComplianceReporting } from '../../../../hooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { validateAuditComplianceReporting } from '@/hooks'
 
 export const AuditReports: CollectionConfig = {
   slug: 'audit-reports',

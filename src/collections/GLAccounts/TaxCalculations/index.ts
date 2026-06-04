@@ -1,11 +1,11 @@
 import type { CollectionConfig } from 'payload'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
-import { notesField } from '../../../fields/base-accounting-fields'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant';
-import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy';
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp';
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange';
-import { validateNotLocked } from '../../../services/accounting/utilities/period-lock';
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { notesField } from '@/fields/base-accounting-fields'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock';
 
 /**
  * Tax Calculations — computed tax-liability snapshots per period.

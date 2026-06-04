@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { totalOutput, efficiency, moreEfficient, wasteFraction, costEntry, type Ledger } from './index'
-import { isBalanced, net } from '../entry'
+import { isBalanced, net } from '@/services/entry'
 
 describe('cost — one efficiency law for every society cost (vs productivity + creativity)', () => {
   it('totalOutput counts both productivity and creativity', () => {

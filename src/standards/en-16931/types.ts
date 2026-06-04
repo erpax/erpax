@@ -50,9 +50,9 @@ export type InvoiceTypeCode =
  * @standard UN-CEFACT 5305 duty-tax-fee-category-code
  * @see ../un-cefact-5305/index.ts
  */
-export { VAT_CATEGORY_CODES, VAT_CATEGORY_LABEL, VAT_CATEGORY_OPTIONS, isVatCategoryCode, requiresVatRate, requiresExemptionReason } from '../un-cefact-5305'
-export type { VatCategoryCode } from '../un-cefact-5305'
-import type { VatCategoryCode } from '../un-cefact-5305'
+export { VAT_CATEGORY_CODES, VAT_CATEGORY_LABEL, VAT_CATEGORY_OPTIONS, isVatCategoryCode, requiresVatRate, requiresExemptionReason } from '@/standards/un-cefact-5305'
+export type { VatCategoryCode } from '@/standards/un-cefact-5305'
+import type { VatCategoryCode } from '@/standards/un-cefact-5305'
 
 /**
  * Payment means code — BT-81. Subset of UN/CEFACT 4461 that EN 16931 admits.

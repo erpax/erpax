@@ -1,8 +1,8 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '../../access/auth'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { classifyTaxId } from '../../hooks/classifyTaxId'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { classifyTaxId } from '@/hooks/classifyTaxId'
 
 /**
  * Customers — sale-side party master.

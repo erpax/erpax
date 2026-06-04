@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '../sdk/accounting-client';
+import { AccountingClient } from '@/sdk/accounting-client';
 import TrialBalanceWidget from './widgets/TrialBalanceWidget';
 import BalanceSheetWidget from './widgets/BalanceSheetWidget';
 import IncomeStatementWidget from './widgets/IncomeStatementWidget';

@@ -1,8 +1,8 @@
 import type { CollectionConfig } from 'payload'
 
-import { authenticated } from '../../access/authenticated'
-import { isSuperAdminAccess, isSuperAdminFieldAccess } from '../../access/isSuperAdmin'
-import { localeRecord } from '../../i18n'
+import { authenticated } from '@/access/authenticated'
+import { isSuperAdminAccess, isSuperAdminFieldAccess } from '@/access/isSuperAdmin'
+import { localeRecord } from '@/i18n'
 import { updateAndDeleteAccess } from './access/updateAndDelete'
 
 const superAdminSecretsAccess = {

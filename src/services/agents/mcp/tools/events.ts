@@ -11,9 +11,9 @@
  */
 import { z } from 'zod'
 import type { Where } from 'payload'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
-import type { ErpaxMcpTool } from '../tool-defs'
-import { createAgentContext } from '../../context'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/services/agents/mcp/i18n'
+import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
+import { createAgentContext } from '@/services/agents/context'
 import { getActorId } from '@/access/auth'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
@@ -149,7 +149,7 @@ export function buildEventsTools(registry: { all: () => ReadonlyArray<{ id: stri
         if (!doc) return text(`audit-event ${String(eventDocId)} not found`)
         const { agentRuntime } = await import('@/services/agents/bootstrap')
         const { createInProcessMcpClient } = await import('@/services/agents/mcp/in-process-client')
-        const { buildErpaxMcpTools } = await import('../tool-defs')
+        const { buildErpaxMcpTools } = await import('@/services/agents/mcp/tool-defs')
         const { conveneAgentSociety } = await import('@/services/agents/coil')
         const tenantId = typeof doc.tenant === 'string' ? doc.tenant : 'unknown'
         const ctx = createAgentContext({

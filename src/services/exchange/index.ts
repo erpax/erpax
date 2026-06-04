@@ -7,7 +7,7 @@
  * @standard GDPR Art.5(1)(c) data-minimisation (release only the granted fields)
  * @see ../receipt (the provenance chain) · ../sandbox (the grant model) · ./SKILL.md
  */
-import { issueReceipt, type Decision, type Receipt } from '../receipt'
+import { issueReceipt, type Decision, type Receipt } from '@/services/receipt'
 
 /** A cross-domain participant — its own domain and content-addressed identity (no shared root). */
 export interface Party {

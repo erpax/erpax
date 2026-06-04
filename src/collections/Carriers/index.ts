@@ -19,10 +19,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { tenantMasterDataAccess } from '../../access/auth'
-import { statusField, notesField, auditFields, taxonomySelect } from '../../fields/base-accounting-fields'
-import { INCOTERM_OPTIONS } from '../../standards/incoterms-2020'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, taxonomySelect } from '@/fields/base-accounting-fields'
+import { INCOTERM_OPTIONS } from '@/standards/incoterms-2020'
 
 const Carriers: CollectionConfig = {
   slug: 'carriers',

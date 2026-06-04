@@ -8,8 +8,8 @@
  * @compliance SOX §404 internal-controls
  */
 import React from 'react';
-import { formatCurrency } from '../Dashboard';
-import type { BalanceSheetData } from '../analytics/types';
+import { formatCurrency } from '@/components/Dashboard';
+import type { BalanceSheetData } from '@/components/analytics/types';
 
 interface BalanceSheetWidgetProps {
   data: BalanceSheetData | null;

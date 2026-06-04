@@ -2,8 +2,8 @@ import type { CollectionBeforeChangeHook } from 'payload'
 import type { Where } from 'payload'
 
 import type { User, Role, UserRole } from '@/payload-types'
-import { extractID } from '../../../../utilities/extractID'
-import { apiErr, ERR } from '../../../../utilities/errors'
+import { extractID } from '@/utilities/extractID'
+import { apiErr, ERR } from '@/utilities/errors'
 
 /**
  * One row per (user, role definition). Uses `overrideAccess` only so the hook can enforce

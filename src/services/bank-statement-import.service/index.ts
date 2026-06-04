@@ -15,7 +15,7 @@
 
 import { v4 as uuid } from 'uuid';
 import { BankStatement, BankTransaction } from '@/types/bank-reconciliation';
-import { bankReconciliationService } from '../bank-reconciliation.service';
+import { bankReconciliationService } from '@/services/bank-reconciliation.service';
 
 export interface ImportResult {
   success: boolean;

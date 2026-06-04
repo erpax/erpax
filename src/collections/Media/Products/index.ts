@@ -1,9 +1,9 @@
-import { CallToAction } from '../../../components/blocks/CallToAction/config'
-import { Content } from '../../../components/blocks/Content/config'
-import { MediaBlock } from '../../../components/blocks/MediaBlock/config'
+import { CallToAction } from '@/components/blocks/CallToAction/config'
+import { Content } from '@/components/blocks/Content/config'
+import { MediaBlock } from '@/components/blocks/MediaBlock/config'
 import { slugField } from 'payload'
 import type { PayloadRequest } from 'payload'
-import { generatePreviewPath } from '../../../standards/rfc-3986/generate-preview-path'
+import { generatePreviewPath } from '@/standards/rfc-3986/generate-preview-path'
 import type { CollectionOverride } from '@payloadcms/plugin-ecommerce/types'
 import {
   MetaDescriptionField,
@@ -20,7 +20,7 @@ import {
   lexicalEditor,
 } from '@payloadcms/richtext-lexical'
 import type { DefaultDocumentIDType, Where } from 'payload'
-import { localeRecord } from '../../../i18n'
+import { localeRecord } from '@/i18n'
 
 import { productsBeforeChange } from './hooks/beforeChange'
 

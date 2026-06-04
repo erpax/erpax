@@ -14,7 +14,7 @@
 
 import { defineRouting } from 'next-intl/routing'
 import { createNavigation } from 'next-intl/navigation'
-import localization from '../localization'
+import localization from '@/i18n/localization'
 
 export const routing = defineRouting({
   locales: localization.locales.map((locale) => locale.code),

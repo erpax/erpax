@@ -6,7 +6,7 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 import { CollectionConfig } from 'payload'
-import { roleBasedAccess } from '../../../access/roleBasedAccess'
+import { roleBasedAccess } from '@/access/roleBasedAccess'
 
 export const PolicyAcknowledgments: CollectionConfig = {
   slug: 'policy-acknowledgments',

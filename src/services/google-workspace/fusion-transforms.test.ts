@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { isBalanced, net } from '../entry'
+import { isBalanced, net } from '@/services/entry'
 import {
   gmailToMessage,
   calendarToBooking,

@@ -1,18 +1,18 @@
 import type { Access, CollectionBeforeChangeHook, CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '../../hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '../../access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin, hasRole, getUserContext } from '@/access/auth'
 import {
   glAccountField,
   currencyField,
   statusField,
   auditFields,
-} from '../../fields'
-import { validateNotLocked } from '../../services/accounting/utilities/period-lock'
-import { validateBalancedEntry } from '../../hooks/collections/accounting/balanced-entry.hook'
+} from '@/fields'
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
+import { validateBalancedEntry } from '@/hooks/collections/accounting/balanced-entry.hook'
 
 /**
  * Journal Entries — double-entry-bookkeeping write target.

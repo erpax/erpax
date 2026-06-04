@@ -22,10 +22,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../../../access/auth'
-import { currencyField, statusField, notesField, auditFields, taxonomySelect, unitOfMeasureField } from '../../../../../fields/base-accounting-fields'
-import { INCOTERM_OPTIONS } from '../../../../../standards/incoterms-2020'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, taxonomySelect, unitOfMeasureField } from '@/fields/base-accounting-fields'
+import { INCOTERM_OPTIONS } from '@/standards/incoterms-2020'
 
 const CustomsDeclarations: CollectionConfig = {
   slug: 'customs-declarations',

@@ -19,11 +19,11 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField, taxonomySelect } from '../../../fields/base-accounting-fields'
-import { INCOTERM_OPTIONS } from '../../../standards/incoterms-2020'
-import { emitRfqReceived, emitRfqAwarded } from '../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField, taxonomySelect } from '@/fields/base-accounting-fields'
+import { INCOTERM_OPTIONS } from '@/standards/incoterms-2020'
+import { emitRfqReceived, emitRfqAwarded } from '@/hooks/chainEventEmitters'
 
 const VendorQuotes: CollectionConfig = {
   slug: 'vendor-quotes',

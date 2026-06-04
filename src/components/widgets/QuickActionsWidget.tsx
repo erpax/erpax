@@ -7,10 +7,10 @@
  * @compliance SOX §404 internal-controls
  */
 import React, { useState } from 'react';
-import { AccountingClient } from '../../sdk/accounting-client';
-import CreateInvoiceModal from '../modals/CreateInvoiceModal';
-import CreateBillModal from '../modals/CreateBillModal';
-import CreateJournalEntryModal from '../modals/CreateJournalEntryModal';
+import { AccountingClient } from '@/sdk/accounting-client';
+import CreateInvoiceModal from '@/components/modals/CreateInvoiceModal';
+import CreateBillModal from '@/components/modals/CreateBillModal';
+import CreateJournalEntryModal from '@/components/modals/CreateJournalEntryModal';
 
 interface QuickActionsWidgetProps {
   client: AccountingClient;

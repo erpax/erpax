@@ -23,7 +23,7 @@ import type { Access, PayloadRequest } from 'payload'
 import { rolesCompatible, type AccessRole } from '@/services/uuid-share'
 import type { UserRole } from '@/types/auth'
 
-import { getUser } from '../auth'
+import { getUser } from '@/access/auth'
 
 export type CrudOp = 'create' | 'read' | 'update' | 'delete'
 

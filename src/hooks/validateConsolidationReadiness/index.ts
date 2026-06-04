@@ -21,7 +21,7 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
-import { IntercompanyReconciliation } from '../../services/IntercompanyReconciliation'
+import { IntercompanyReconciliation } from '@/services/IntercompanyReconciliation'
 
 interface ConsolidationData {
   id?: string

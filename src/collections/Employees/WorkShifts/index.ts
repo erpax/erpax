@@ -21,10 +21,10 @@
  */
 
 import type { CollectionConfig, CollectionBeforeChangeHook } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { referenceField, statusField, auditFields, notesField, currencyField } from '../../../fields/base-accounting-fields'
-import { emitShiftApproved } from '../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { referenceField, statusField, auditFields, notesField, currencyField } from '@/fields/base-accounting-fields'
+import { emitShiftApproved } from '@/hooks/chainEventEmitters'
 
 /**
  * Derive `wage` from run time, rate, and parallelism (machines-per-worker).

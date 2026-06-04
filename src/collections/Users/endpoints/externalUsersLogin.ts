@@ -2,8 +2,8 @@ import type { Collection, Endpoint } from 'payload'
 
 import { headersWithCors } from 'payload'
 import { generatePayloadCookie } from 'payload'
-import { checkRateLimit, clearRateLimit, getRateLimitKey, getRateLimitResetSeconds } from '../../../standards/rfc-6585'
-import { apiErr, ERR, isRegistryCodedApiError } from '../../../utilities/errors'
+import { checkRateLimit, clearRateLimit, getRateLimitKey, getRateLimitResetSeconds } from '@/standards/rfc-6585'
+import { apiErr, ERR, isRegistryCodedApiError } from '@/utilities/errors'
 
 const authLoginFailed = () => apiErr(ERR.AUTH_LOGIN_FAILED)
 

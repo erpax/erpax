@@ -30,8 +30,8 @@ import {
   daysBetween,
 } from '@/services/accounting/utilities/calculations';
 import { DebitCreditLogic, type AccountType } from '@/services/accounting/debit-credit';
-import { journalEntryService } from '../journal-entry.service';
-import { eventEmitter } from '../event-emitter.service';
+import { journalEntryService } from '@/services/journal-entry.service';
+import { eventEmitter } from '@/services/event-emitter.service';
 
 /**
  * Sum a journal entry's debit/credit columns via the canonical DebitCreditLogic.

@@ -4,7 +4,7 @@ import type { FieldErrorsImpl, FieldValues, UseFormRegister } from 'react-hook-f
 import { Textarea as TextAreaComponent } from '@/components/ui/textarea'
 import React from 'react'
 
-import { FormField } from '../FormField'
+import { FormField } from '@/components/blocks/Form/FormField'
 
 export const Textarea: React.FC<
   TextField & {

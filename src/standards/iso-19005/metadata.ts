@@ -15,8 +15,8 @@
 
 import type { PdfAProfile } from './profile'
 import { pdfAProfileToXmp, PDF_A_DEFAULT } from './profile'
-import type { PdfUaProfile } from '../iso-14289'
-import { pdfUaProfileToXmp } from '../iso-14289'
+import type { PdfUaProfile } from '@/standards/iso-14289'
+import { pdfUaProfileToXmp } from '@/standards/iso-14289'
 
 export interface PdfAMetadataInput {
   /** Display title (`dc:title`). */

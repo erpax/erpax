@@ -20,10 +20,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
-import { accountingCollectionAccess } from '../../access/auth'
-import { statusField, notesField, auditFields, referenceField } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, referenceField } from '@/fields/base-accounting-fields'
 
 const MaintenanceRequests: CollectionConfig = {
   slug: 'maintenance-requests',

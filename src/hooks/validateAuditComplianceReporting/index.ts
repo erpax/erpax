@@ -26,8 +26,8 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
-import { AuditComplianceReporting } from '../../services/AuditComplianceReporting'
-import type { Consolidation } from '../../payload-types'
+import { AuditComplianceReporting } from '@/services/AuditComplianceReporting'
+import type { Consolidation } from '@/payload-types'
 
 interface TaxPeriod {
   id: string

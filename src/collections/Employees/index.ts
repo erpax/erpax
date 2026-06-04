@@ -28,16 +28,16 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { competencyLineField } from '../../fields/competency'
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
-import { roleScopedAccess, tenantAdmin } from '../../access/auth'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { competencyLineField } from '@/fields/competency'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { roleScopedAccess, tenantAdmin } from '@/access/auth'
 import {
   currencyField,
   statusField,
   notesField,
   auditFields,
-} from '../../fields/base-accounting-fields'
+} from '@/fields/base-accounting-fields'
 
 const Employees: CollectionConfig = {
   slug: 'employees',

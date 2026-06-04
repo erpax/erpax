@@ -10,7 +10,7 @@
  * @standard ISO/IEC 25010:2023 §5.3 resource-utilisation (output per resource spent)
  * @see ../competition (selects the most efficient) · ../decompression (pay = verified work) · ../entry (account for it) · ./SKILL.md
  */
-import { toDoubleEntry, type Entry } from '../entry'
+import { toDoubleEntry, type Entry } from '@/services/entry'
 
 /** Any cost the society spends — one law applies to all. */
 export type CostKind = 'ai' | 'money' | 'energy' | 'time' | 'labor' | 'entropy'

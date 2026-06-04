@@ -24,7 +24,7 @@
  */
 
 import type { Payload } from 'payload'
-import { lookupEuFallbackRate } from '../../services/country-api-clients'
+import { lookupEuFallbackRate } from '@/services/country-api-clients'
 
 /**
  * Default currency set the job pulls when a tenant has no explicit

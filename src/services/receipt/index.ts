@@ -16,7 +16,7 @@ import {
   verifyUuidLinkedChain,
   type UuidLinkedLeaf,
   type ChainVerifyResult,
-} from '../integrity/uuid-linked-chain'
+} from '@/services/integrity/uuid-linked-chain'
 
 /**
  * A governance decision — the content a receipt records. The `actor` is a keypair-holder uuid

@@ -5,7 +5,7 @@
  * @standard SOX §404 + ISO 19011:2018 §6.4.6 + COSO 2013
  * @feature engineering_quality
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '../types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/services/agents/types'
 import type { SpecChainStep } from '@/services/spec-generator'
 
 export const EngineeringAgent: DomainAgent = {

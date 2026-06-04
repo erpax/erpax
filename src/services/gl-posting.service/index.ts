@@ -14,8 +14,8 @@
  * @see docs/STANDARDS.md §4.2
  */
 
-import { EventEmitterService, eventEmitter } from '../event-emitter.service';
-import { journalEntryService } from '../journal-entry.service';
+import { EventEmitterService, eventEmitter } from '@/services/event-emitter.service';
+import { journalEntryService } from '@/services/journal-entry.service';
 import {
   InvoiceActivatedEvent,
   InvoiceCompletedEvent,
@@ -44,7 +44,7 @@ import {
   MilestoneAchievedEvent,
   WipSnapshotPostedEvent,
 } from '@/types/events';
-import { JournalEntryLine } from '../journal-entry.service';
+import { JournalEntryLine } from '@/services/journal-entry.service';
 
 /**
  * GL Account Code Constants

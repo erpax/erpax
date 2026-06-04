@@ -33,8 +33,8 @@
  * @see ../../services/agents/mcp/i18n.ts (static fallback)
  * @see ../../services/agents/mcp/tool-defs.ts (catalog builder)
  */
-import { createAccountingCollection } from '../../services/accounting/factories/collection-factory'
-import { referenceField } from '../../fields/base-accounting-fields'
+import { createAccountingCollection } from '@/services/accounting/factories/collection-factory'
+import { referenceField } from '@/fields/base-accounting-fields'
 
 export default createAccountingCollection({
   slug: 'mcp-tool-metadata',

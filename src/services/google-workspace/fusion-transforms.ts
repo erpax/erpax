@@ -27,7 +27,7 @@
  */
 
 import { fuseWorkspaceResource, type FusedResource } from './fusion'
-import { toDoubleEntry, type Entry } from '../entry'
+import { toDoubleEntry, type Entry } from '@/services/entry'
 
 // ── Minimal typed shapes of the Google API resources (only the fields used) ──
 

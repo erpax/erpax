@@ -33,8 +33,8 @@
  * @see ../../standards/ — file-based source-of-truth registries
  * @see ../factories/collection-factory.ts
  */
-import { createAccountingCollection } from '../../services/accounting/factories/collection-factory'
-import { referenceField } from '../../fields/base-accounting-fields'
+import { createAccountingCollection } from '@/services/accounting/factories/collection-factory'
+import { referenceField } from '@/fields/base-accounting-fields'
 
 export default createAccountingCollection({
   slug: 'standards',

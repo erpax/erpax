@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
-import { autoPopulateCreatedBy } from '../../hooks/autoPopulateCreatedBy';
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp';
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange';
-import { createAccountingCollection, createGLAccountFields } from '../../services/accounting/factories';
-import { currencyField, statusField, notesField } from '../../fields';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { createAccountingCollection, createGLAccountFields } from '@/services/accounting/factories';
+import { currencyField, statusField, notesField } from '@/fields';
 // Slice PPP: depreciationHook removed — delegated to a `req.payload.services?.depreciation`
 // service that doesn't exist in `src/services/` (silent no-op). Depreciation
 // will fold into a scheduled job (Slice ZZ pattern with `dunningJob`) when
@@ -12,7 +12,7 @@ import {
   calculateDepreciableBase,
   calculateStraightLineDepreciation,
   calculateBookValue,
-} from '../../services/accounting/utilities';
+} from '@/services/accounting/utilities';
 
 /**
  * Fixed Assets — capitalized PP&E with depreciation and book-value tracking.

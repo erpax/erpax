@@ -30,7 +30,7 @@
  */
 
 import type { SpecCorpus, SpecInvariant } from './types'
-import type { BusinessChain } from '../business-chains/types'
+import type { BusinessChain } from '@/services/business-chains/types'
 import { generateChains } from './chain-registry-generator'
 
 export interface GeneratedTest {

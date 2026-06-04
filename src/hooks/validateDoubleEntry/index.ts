@@ -9,7 +9,7 @@
  */
 
 import { CollectionBeforeValidateHook } from 'payload'
-import { DoubleEntryValidator } from '../../services/DoubleEntryValidator'
+import { DoubleEntryValidator } from '@/services/DoubleEntryValidator'
 
 export const validateDoubleEntry: CollectionBeforeValidateHook = async ({ data, operation }) => {
   // Only validate on create and update operations

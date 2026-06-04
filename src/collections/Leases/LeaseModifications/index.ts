@@ -30,10 +30,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField } from '../../../fields/base-accounting-fields'
-import { emitLeaseRemeasured } from '../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField } from '@/fields/base-accounting-fields'
+import { emitLeaseRemeasured } from '@/hooks/chainEventEmitters'
 
 const LeaseModifications: CollectionConfig = {
   slug: 'lease-modifications',

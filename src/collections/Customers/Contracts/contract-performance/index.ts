@@ -91,10 +91,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
-import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
-import { currencyField, auditFields } from '../../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { currencyField, auditFields } from '@/fields/base-accounting-fields'
 
 const CONTROL_TRANSFER_METHODS = [
   { label: 'Point-in-Time Control Transfer (IFRS-15 §38)', value: 'point_in_time' },

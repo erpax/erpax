@@ -37,9 +37,9 @@
  * @see ../services/tags/taggedWith.ts
  */
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { auditFields } from '../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { auditFields } from '@/fields/base-accounting-fields'
 
 const Taggings: CollectionConfig = {
   slug: 'taggings',

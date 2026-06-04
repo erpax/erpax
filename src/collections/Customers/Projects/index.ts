@@ -32,9 +32,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { currencyField, statusField, notesField, auditFields } from '../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
 
 const Projects: CollectionConfig = {
   slug: 'projects',

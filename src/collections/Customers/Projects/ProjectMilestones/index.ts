@@ -18,10 +18,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../../access/auth'
-import { currencyField, statusField, notesField, auditFields } from '../../../../fields/base-accounting-fields'
-import { emitMilestoneAchieved } from '../../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
+import { emitMilestoneAchieved } from '@/hooks/chainEventEmitters'
 
 const ProjectMilestones: CollectionConfig = {
   slug: 'project-milestones',

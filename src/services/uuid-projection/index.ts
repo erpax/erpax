@@ -11,7 +11,7 @@
  * @see src/services/integrity/content-uuid.ts — computeContentUuid / stripNonContentFields
  * @see src/services/multi-search/index.ts — should match searchableText, not a hand-listed field map
  */
-import { computeContentUuid, stripNonContentFields } from '../integrity'
+import { computeContentUuid, stripNonContentFields } from '@/services/integrity'
 
 // ─── the ONE content projection (shared by uuid · search · version · locale) ───
 

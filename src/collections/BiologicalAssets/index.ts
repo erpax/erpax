@@ -24,9 +24,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '@/fields/base-accounting-fields'
 
 const BiologicalAssets: CollectionConfig = {
   slug: 'biological-assets',

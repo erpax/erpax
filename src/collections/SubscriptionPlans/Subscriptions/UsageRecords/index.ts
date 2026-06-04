@@ -26,10 +26,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../../access/auth'
-import { currencyField, statusField, notesField, auditFields } from '../../../../fields/base-accounting-fields'
-import { emitUsageRecorded } from '../../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
+import { emitUsageRecorded } from '@/hooks/chainEventEmitters'
 
 const UsageRecords: CollectionConfig = {
   slug: 'usage-records',

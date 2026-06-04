@@ -1,18 +1,18 @@
 import type { CollectionConfig } from 'payload'
-import { tenantAdminWriteAccess } from '../../../access/auth'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
-import { emitOnStatusTransition } from '../../../hooks/chainEventEmitters'
+import { tenantAdminWriteAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { emitOnStatusTransition } from '@/hooks/chainEventEmitters'
 import {
   glAccountField,
   currencyField,
   statusField,
   auditFields,
-} from '../../../fields/base-accounting-fields'
-import { validateNotLocked } from '../../../services/accounting/utilities/period-lock'
-import { validateBalancedEntry } from '../../../hooks/collections/accounting/balanced-entry.hook'
+} from '@/fields/base-accounting-fields'
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
+import { validateBalancedEntry } from '@/hooks/collections/accounting/balanced-entry.hook'
 
 /**
  * GL Postings — atomic debit/credit lines linked to a journal entry.

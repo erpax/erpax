@@ -54,7 +54,7 @@
  */
 
 import type { Payload } from 'payload'
-import type { ShortUuidKind } from '../integrity/uuid-short'
+import type { ShortUuidKind } from '@/services/integrity/uuid-short'
 
 /** Identifier kinds the resolver can recognise. */
 export type IdentifierKind =
@@ -115,7 +115,7 @@ export async function identifyAny<T = unknown>(
   // 2. JWS compact form — recover the signed contentUuid first.
   if (JWS_RE.test(q)) {
     try {
-      const { fromJws } = await import('../integrity/signatures')
+      const { fromJws } = await import('@/services/integrity/signatures')
       const signed = fromJws<T>(q)
       const uuid = String(signed.uuid)
       if (UUID_V8_RE.test(uuid)) {
@@ -129,7 +129,7 @@ export async function identifyAny<T = unknown>(
   // 3. DID.
   if (DID_RE.test(q)) {
     try {
-      const did = await import('../did')
+      const did = await import('@/services/did')
       const uuid = did.uuidFromDid?.(q)
       if (uuid && UUID_V8_RE.test(uuid)) {
         return await resolveContentUuid<T>(uuid, ctx, 'did:resolved-to-contentUuid')
@@ -178,7 +178,7 @@ async function resolveContentUuid<T>(
   ctx: IdentifyContext,
   matchedRule: string,
 ): Promise<IdentificationResult<T>> {
-  const { resolveByUuid, UUID_REF_REGISTRY } = await import('../integrity/uuid-ref')
+  const { resolveByUuid, UUID_REF_REGISTRY } = await import('@/services/integrity/uuid-ref')
 
   // If the caller hinted a collection, try it first (faster).
   const tryCollections: string[] = []
@@ -228,7 +228,7 @@ async function resolveShortUuid<T>(
   short: string,
   ctx: IdentifyContext,
 ): Promise<IdentificationResult<T>> {
-  const { parseShortUuid, lookupShort } = await import('../integrity/uuid-short')
+  const { parseShortUuid, lookupShort } = await import('@/services/integrity/uuid-short')
   const parsed = parseShortUuid(short)
   if (!parsed || parsed.kind === 'unknown') {
     return { kind: 'short-uuid', row: null, matchedRule: 'short-uuid:unknown-prefix' }

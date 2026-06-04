@@ -30,7 +30,7 @@
  * @see src/config/regional-defaults.ts
  */
 
-import type { SupportedCountry } from '../regional-defaults'
+import type { SupportedCountry } from '@/config/regional-defaults'
 
 /**
  * The canonical address components a format may include.

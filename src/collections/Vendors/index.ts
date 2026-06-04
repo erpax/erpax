@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '../../access/auth'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { classifyTaxId } from '../../hooks/classifyTaxId'
-import { deriveCountryFromIban } from '../../hooks/deriveCountryFromIban'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { classifyTaxId } from '@/hooks/classifyTaxId'
+import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
 
 /**
  * Vendors — purchase-side party master.

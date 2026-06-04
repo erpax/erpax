@@ -22,9 +22,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { tenantAdminWriteAccess } from '../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { tenantAdminWriteAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField } from '@/fields/base-accounting-fields'
 
 const ConsolidationEliminations: CollectionConfig = {
   slug: 'consolidation-eliminations',

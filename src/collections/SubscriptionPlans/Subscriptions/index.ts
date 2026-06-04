@@ -1,11 +1,11 @@
 import { CollectionConfig } from 'payload'
-import { isSuperAdminAccess } from '../../../access/isSuperAdmin'
+import { isSuperAdminAccess } from '@/access/isSuperAdmin'
 import {
   encryptSubscriptionData,
   decryptSubscriptionData,
 } from './hooks/encryptSensitiveFields'
 import { emitSubscriptionLifecycleEvents } from './hooks/emitLifecycleEvents'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 /**
  * Subscriptions — tenant-to-plan binding with period state and Stripe sync.

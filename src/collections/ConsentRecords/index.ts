@@ -15,10 +15,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp'
-import { roleScopedAccess, scopedAccess, adminOnly } from '../../access/auth'
-import { statusField, notesField, auditFields } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { roleScopedAccess, scopedAccess, adminOnly } from '@/access/auth'
+import { statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
 
 const ConsentRecords: CollectionConfig = {
   slug: 'consent-records',

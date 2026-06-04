@@ -68,9 +68,9 @@
  * @see ../multi-search/index.ts  (multi-search wraps its query in this service)
  */
 
-import { computeContentUuid, jcsCanonicalize } from '../integrity/content-uuid'
-import type { ContentUuid } from '../integrity/content-uuid'
-import { NIL_UUID } from '../uuid-format'
+import { computeContentUuid, jcsCanonicalize } from '@/services/integrity/content-uuid'
+import type { ContentUuid } from '@/services/integrity/content-uuid'
+import { NIL_UUID } from '@/services/uuid-format'
 
 /**
  * Type-level brand for a SQL query string. Carries the SQL through the

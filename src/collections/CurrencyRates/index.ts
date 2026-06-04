@@ -1,8 +1,8 @@
 import type { CollectionConfig } from 'payload'
-import { tenantAdminWriteAccess } from '../../access/auth'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { currencyField, notesField } from '../../fields/base-accounting-fields'
+import { tenantAdminWriteAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { currencyField, notesField } from '@/fields/base-accounting-fields'
 
 /**
  * Currency Rates — FX rate master for multi-currency translation.

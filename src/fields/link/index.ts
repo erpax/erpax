@@ -11,8 +11,8 @@
 
 import type { Field, GroupField } from 'payload'
 
-import deepMerge from '../../utilities/deepMerge'
-import { localeRecord } from '../../i18n'
+import deepMerge from '@/utilities/deepMerge'
+import { localeRecord } from '@/i18n'
 
 export type LinkAppearances = 'default' | 'outline'
 

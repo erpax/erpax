@@ -27,15 +27,15 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { statusField, notesField, auditFields, referenceField, legalEntityField, taxonomySelect } from '../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, referenceField, legalEntityField, taxonomySelect } from '@/fields/base-accounting-fields'
 import {
   GHG_SCOPE_OPTIONS,
   GHG_CATEGORY_OPTIONS,
   GHG_METHODOLOGY_OPTIONS,
   GWP_HORIZON_OPTIONS,
-} from '../../../standards/ghg-protocol'
+} from '@/standards/ghg-protocol'
 
 const CarbonEmissions: CollectionConfig = {
   slug: 'carbon-emissions',

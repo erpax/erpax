@@ -15,7 +15,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../access/auth'
+import { accountingCollectionAccess } from '@/access/auth'
 
 export const PeriodLocks: CollectionConfig = {
   slug: 'period-locks',

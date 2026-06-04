@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import type { DomainEvent } from '../types'
+import type { DomainEvent } from '@/services/agents/types'
 import { CONFLICT_EMIT, CONFLICT_TRIGGER, planConflictEffects } from './legal.conflict'
 
 const ev = (payload: Record<string, unknown>): DomainEvent => ({

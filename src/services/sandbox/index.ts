@@ -8,7 +8,7 @@
  * @standard OWASP-ASVS V5 untrusted-input / least-privilege
  * @see ../receipt (the uuid-chained audit) · ./SKILL.md
  */
-import { issueReceipt, type Decision, type Receipt } from '../receipt'
+import { issueReceipt, type Decision, type Receipt } from '@/services/receipt'
 
 /** What an untrusted tool is permitted to do — the content-addressed grant. */
 export interface ToolGrant {

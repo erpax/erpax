@@ -17,10 +17,10 @@
  */
 
 // Re-export FiscalPeriodResolver service for grep-traceability
-export { FiscalPeriodResolver } from '../../services/FiscalPeriodResolver'
+export { FiscalPeriodResolver } from '@/services/FiscalPeriodResolver'
 
 // Collections are imported from src/collections/* and wired into payload.config.ts
 // They are NOT re-exported here (see src/collections/index.ts for master barrel)
 
 // Type definitions (if needed for external consumption)
-// export type { PeriodResolution, FiscalPeriodConfig, ... } from '../../services/FiscalPeriodResolver'
+// export type { PeriodResolution, FiscalPeriodConfig, ... } from '@/services/FiscalPeriodResolver'

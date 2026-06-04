@@ -10,7 +10,7 @@
 
 import type { Payload, CollectionSlug } from 'payload';
 import { beforeEach, afterEach } from 'vitest';
-import { TestSeedFactory, type SeedResult, type CleanupResult } from '../test-seed-factory';
+import { TestSeedFactory, type SeedResult, type CleanupResult } from '@/testing/test-seed-factory';
 
 /**
  * Test environment with isolated database state

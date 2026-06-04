@@ -20,7 +20,7 @@
  */
 
 import type { PayloadRequest } from 'payload'
-import { eventEmitter } from '../event-emitter.service'
+import { eventEmitter } from '@/services/event-emitter.service'
 import { publishEmit, type ChatClient } from '@/services/agent-sync/payload-chat'
 import type { DomainEvent } from '@/types/events'
 

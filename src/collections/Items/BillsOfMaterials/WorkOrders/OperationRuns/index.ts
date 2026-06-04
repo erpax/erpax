@@ -25,10 +25,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../../../access/auth'
-import { referenceField, statusField, auditFields, notesField, unitOfMeasureField } from '../../../../../fields/base-accounting-fields'
-import { emitOpRunCompleted } from '../../../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { referenceField, statusField, auditFields, notesField, unitOfMeasureField } from '@/fields/base-accounting-fields'
+import { emitOpRunCompleted } from '@/hooks/chainEventEmitters'
 
 const OperationRuns: CollectionConfig = {
   slug: 'operation-runs',

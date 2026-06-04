@@ -38,7 +38,7 @@ import {
   calculateUnitsOfActivityDepreciation,
   calculateDepreciableBase,
 } from '@/services/accounting/utilities/calculations';
-import { EventEmitterService, eventEmitter } from '../event-emitter.service';
+import { EventEmitterService, eventEmitter } from '@/services/event-emitter.service';
 import type { DepreciationPostedEvent } from '@/types/events';
 
 /**

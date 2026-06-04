@@ -13,7 +13,7 @@
  */
 
 import type { Access } from 'payload'
-import { getTenantContext } from '../context'
+import { getTenantContext } from '@/plugins/auth/context'
 
 /**
  * Helper: Check if user has super-admin role.

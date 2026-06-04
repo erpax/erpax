@@ -18,9 +18,9 @@
  *   pnpm exec tsx src/run/dev/verify-action-tools.ts
  */
 export {} // module marker — enables top-level `await` under tsc (TS1375)
-const { buildBatchTools } = await import('../../services/agents/mcp/tools/batch')
-const { buildVersionsTools } = await import('../../services/agents/mcp/tools/versions')
-const { checkMcpToolStandardization } = await import('../../services/agents/mcp/standardization')
+const { buildBatchTools } = await import('@/services/agents/mcp/tools/batch')
+const { buildVersionsTools } = await import('@/services/agents/mcp/tools/versions')
+const { checkMcpToolStandardization } = await import('@/services/agents/mcp/standardization')
 
 const tools = [...buildBatchTools(), ...buildVersionsTools()]
 let ok = true

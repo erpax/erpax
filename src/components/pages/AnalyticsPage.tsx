@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '../../sdk/accounting-client';
-import KPIDashboard from '../analytics/KPIDashboard';
-import FinancialRatiosCard from '../analytics/FinancialRatiosCard';
-import BudgetVsActualCard from '../analytics/BudgetVsActualCard';
-import TrendAnalysisCard from '../analytics/TrendAnalysisCard';
-import CostAnalysisCard from '../analytics/CostAnalysisCard';
-import type { BalanceSheetData, IncomeStatementData } from '../analytics/types';
+import { AccountingClient } from '@/sdk/accounting-client';
+import KPIDashboard from '@/components/analytics/KPIDashboard';
+import FinancialRatiosCard from '@/components/analytics/FinancialRatiosCard';
+import BudgetVsActualCard from '@/components/analytics/BudgetVsActualCard';
+import TrendAnalysisCard from '@/components/analytics/TrendAnalysisCard';
+import CostAnalysisCard from '@/components/analytics/CostAnalysisCard';
+import type { BalanceSheetData, IncomeStatementData } from '@/components/analytics/types';
 
 /**
  * Analytics page route — composes balance-sheet + income-statement loaders, renders cards.

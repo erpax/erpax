@@ -60,11 +60,11 @@
  * @see /src/services/integrity/signatures.ts (Slice HHHHHHHHH Cut 1)
  */
 
-import type { InternalProvider, FallbackContext } from '../types'
-import { registerInternalProvider } from '../index'
-import type { ContentUuid } from '../../integrity/content-uuid'
-import type { SignedUuid, SignatureAlg } from '../../integrity/signatures'
-import { signContentUuid } from '../../integrity/signatures'
+import type { InternalProvider, FallbackContext } from '@/services/self-closure/types'
+import { registerInternalProvider } from '@/services/self-closure'
+import type { ContentUuid } from '@/services/integrity/content-uuid'
+import type { SignedUuid, SignatureAlg } from '@/services/integrity/signatures'
+import { signContentUuid } from '@/services/integrity/signatures'
 
 export interface SigningParams<T> {
   readonly uuid: ContentUuid<T>

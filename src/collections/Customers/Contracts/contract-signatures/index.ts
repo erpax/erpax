@@ -87,10 +87,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../hooks/standardCollectionHooks'
-import { enforceSegregationOfDuties } from '../../../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../../access/auth'
-import { auditFields } from '../../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { auditFields } from '@/fields/base-accounting-fields'
 
 const SIGNATORY_ROLES = [
   { label: 'Customer / Client', value: 'customer' },

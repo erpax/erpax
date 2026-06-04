@@ -53,19 +53,19 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
-import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
-import { emitPoCreated } from '../../../hooks/chainEventEmitters'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { emitPoCreated } from '@/hooks/chainEventEmitters'
 import {
   currencyField,
   statusField,
   notesField,
   auditFields,
-} from '../../../fields/base-accounting-fields'
+} from '@/fields/base-accounting-fields'
 
 const PurchaseOrders: CollectionConfig = {
   slug: 'purchase-orders',

@@ -15,10 +15,10 @@
  */
 
 // Re-export ClosingPeriodChecker service for grep-traceability
-export { ClosingPeriodChecker } from '../../services/ClosingPeriodChecker'
+export { ClosingPeriodChecker } from '@/services/ClosingPeriodChecker'
 
 // Collections are imported from src/collections/* and wired into payload.config.ts
 // They are NOT re-exported here (see src/collections/index.ts for master barrel)
 
 // Type definitions (if needed for external consumption)
-// export type { ClosingValidation, ReversalEntry, ... } from '../../services/ClosingPeriodChecker'
+// export type { ClosingValidation, ReversalEntry, ... } from '@/services/ClosingPeriodChecker'

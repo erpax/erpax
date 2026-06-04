@@ -44,8 +44,8 @@
  * @see ./McpToolMetadata.ts (platform-default translation layer)
  * @see ../../services/agents/mcp/i18n.ts (runtime resolution order)
  */
-import { createAccountingCollection } from '../../services/accounting/factories/collection-factory'
-import { referenceField } from '../../fields/base-accounting-fields'
+import { createAccountingCollection } from '@/services/accounting/factories/collection-factory'
+import { referenceField } from '@/fields/base-accounting-fields'
 
 export default createAccountingCollection({
   slug: 'translations',

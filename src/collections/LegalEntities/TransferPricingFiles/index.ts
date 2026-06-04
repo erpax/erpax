@@ -26,10 +26,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField, countryCodeField, taxonomySelect } from '../../../fields/base-accounting-fields'
-import { OECD_TP_METHOD_OPTIONS, BEPS_TP_FILE_TYPE_OPTIONS } from '../../../standards/oecd-tpg'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField, countryCodeField, taxonomySelect } from '@/fields/base-accounting-fields'
+import { OECD_TP_METHOD_OPTIONS, BEPS_TP_FILE_TYPE_OPTIONS } from '@/standards/oecd-tpg'
 
 const TransferPricingFiles: CollectionConfig = {
   slug: 'transfer-pricing-files',

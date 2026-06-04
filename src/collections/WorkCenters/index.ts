@@ -22,9 +22,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { referenceField, statusField, auditFields, notesField, currencyField } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { referenceField, statusField, auditFields, notesField, currencyField } from '@/fields/base-accounting-fields'
 
 const WorkCenters: CollectionConfig = {
   slug: 'work-centers',

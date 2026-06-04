@@ -22,14 +22,14 @@
  * @see /src/services/integrity/tamper-reverse-cost.ts
  */
 import { z } from 'zod'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/services/agents/mcp/i18n'
 import { writeAuditEvent } from '@/services/audit-trail/write-audit-event'
 import {
   computeTamperReverseCost, meetsThreshold,
   type RegulatoryThreshold,
 } from '@/services/integrity/tamper-reverse-cost'
 import { assertAdminOnTenant } from './_guards'
-import type { ErpaxMcpTool } from '../tool-defs'
+import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))

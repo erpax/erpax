@@ -4,7 +4,7 @@
  *
  * @feature plugin_marketplace
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '../types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/services/agents/types'
 import type { SpecChainStep } from '@/services/spec-generator'
 
 export const PluginsAgent: DomainAgent = {

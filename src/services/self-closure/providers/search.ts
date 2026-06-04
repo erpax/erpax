@@ -29,9 +29,9 @@
  * @see ../../multi-search/index.ts (multiSearch)
  */
 
-import type { InternalProvider, FallbackContext } from '../types'
-import { registerInternalProvider } from '../index'
-import type { MultiSearchHit, MultiSearchResult } from '../../multi-search'
+import type { InternalProvider, FallbackContext } from '@/services/self-closure/types'
+import { registerInternalProvider } from '@/services/self-closure'
+import type { MultiSearchHit, MultiSearchResult } from '@/services/multi-search'
 
 export interface SearchParams {
   readonly query: string
@@ -58,7 +58,7 @@ export const InternalSearchProvider: InternalProvider<SearchParams, SearchResult
   ],
 
   async invoke(params: SearchParams, ctx: FallbackContext): Promise<SearchResult> {
-    const { multiSearch } = await import('../../multi-search')
+    const { multiSearch } = await import('@/services/multi-search')
     const result: MultiSearchResult = await multiSearch(
       params.query,
       { payload: ctx.payload, tenantId: ctx.tenantId },

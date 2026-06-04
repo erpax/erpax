@@ -25,7 +25,7 @@
  * @see ../meta-automation/index.ts proposeFixFor
  * @see ../architecture-invariants/checks.ts checkFactoryEmitsAreHooked
  */
-import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '../types'
+import type { DomainAgent, AgentContext, AgentEffect, DomainEvent } from '@/services/agents/types'
 
 const HANDLED_INVARIANTS = new Set([
   'factory-emits-are-hooked',

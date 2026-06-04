@@ -29,8 +29,8 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
 import {
   currencyField,
   measureFields,
@@ -39,7 +39,7 @@ import {
   auditFields,
   referenceField,
   countryCodeField,
-} from '../../../fields/base-accounting-fields'
+} from '@/fields/base-accounting-fields'
 
 const Batches: CollectionConfig = {
   slug: 'batches',

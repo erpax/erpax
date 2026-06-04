@@ -19,10 +19,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { statusField, notesField, auditFields, countryCodeField } from '../../fields/base-accounting-fields'
-import { emitLeadQualified } from '../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, countryCodeField } from '@/fields/base-accounting-fields'
+import { emitLeadQualified } from '@/hooks/chainEventEmitters'
 
 const Leads: CollectionConfig = {
   slug: 'leads',

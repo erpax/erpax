@@ -3,4 +3,4 @@
  * Central export for PostCloseAnalytics service
  */
 
-export { PostCloseAnalytics } from '../../services/PostCloseAnalytics'
+export { PostCloseAnalytics } from '@/services/PostCloseAnalytics'

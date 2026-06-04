@@ -24,7 +24,7 @@ import {
   FinancialReportPackage,
   FinancialRatios,
 } from '@/types/financial-statements';
-import { journalEntryService, type JournalEntryBalance } from '../journal-entry.service';
+import { journalEntryService, type JournalEntryBalance } from '@/services/journal-entry.service';
 import { DebitCreditLogic } from '@/services/accounting/debit-credit';
 
 /**

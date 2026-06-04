@@ -29,19 +29,19 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
-import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy'
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
-import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
 import {
   currencyField,
   statusField,
   notesField,
   auditFields,
-} from '../../../fields/base-accounting-fields'
-import { validateNotLocked } from '../../../services/accounting/utilities/period-lock'
+} from '@/fields/base-accounting-fields'
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock'
 
 const CreditMemos: CollectionConfig = {
   slug: 'credit-memos',

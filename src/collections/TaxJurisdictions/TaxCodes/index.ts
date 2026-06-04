@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '../../../access/auth'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
-import { taxonomySelect } from '../../../fields/base-accounting-fields'
-import { VAT_CATEGORY_OPTIONS } from '../../../standards/un-cefact-5305'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { taxonomySelect } from '@/fields/base-accounting-fields'
+import { VAT_CATEGORY_OPTIONS } from '@/standards/un-cefact-5305'
 
 /**
  * Tax Codes — tax-rate master.

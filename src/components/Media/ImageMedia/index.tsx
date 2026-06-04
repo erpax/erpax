@@ -6,7 +6,7 @@ import { cn } from '@/utilities/ui'
 import NextImage from 'next/image'
 import React from 'react'
 
-import type { Props as MediaProps } from '../types'
+import type { Props as MediaProps } from '@/components/Media/types'
 
 import { cssVariables } from '@/cssVariables'
 import { getMediaUrl } from '@/utilities/getMediaUrl'

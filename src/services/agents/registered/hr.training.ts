@@ -19,7 +19,7 @@
  * @standard SFIA 8 responsibility-levels (the level → M-value depth)
  * @audit ISO 19011 — the plan, the rate and the debt are deterministic functions of the gap
  */
-import type { AgentEffect, DomainEvent } from '../types'
+import type { AgentEffect, DomainEvent } from '@/services/agents/types'
 import { competencyDebt, efficiency, efficiencyRate, isProficient, nextStep, trainingPlan } from '@/train'
 import type { HeldLine, RequiredLine } from '@/services/competency-gap'
 import { ANCHOR } from '@/services/allocation'

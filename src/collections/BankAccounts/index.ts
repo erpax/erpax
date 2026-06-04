@@ -17,13 +17,13 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { tenantAdminWriteAccess } from '../../access/auth'
-import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties'
-import { deriveCountryFromIban } from '../../hooks/deriveCountryFromIban'
-import { currencyField, statusField, notesField, auditFields } from '../../fields/base-accounting-fields'
-import { isValidIban } from '../../utilities/iban'
-import { isSwiftBic } from '../../standards/iso-9362/bic'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { tenantAdminWriteAccess } from '@/access/auth'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { deriveCountryFromIban } from '@/hooks/deriveCountryFromIban'
+import { currencyField, statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
+import { isValidIban } from '@/utilities/iban'
+import { isSwiftBic } from '@/standards/iso-9362/bic'
 
 const BankAccounts: CollectionConfig = {
   slug: 'bank-accounts',

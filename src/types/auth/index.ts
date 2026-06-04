@@ -9,7 +9,7 @@
  * @see docs/STANDARDS.md §4.4
  */
 
-import type { User } from '../../payload-types'
+import type { User } from '@/payload-types'
 
 export const SUPER_ADMIN_ROLE = 'super-admin' as const
 

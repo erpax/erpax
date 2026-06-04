@@ -24,10 +24,10 @@
  * @see ../services/ai/cloudflare-ai.ts (the gated, cached entrypoint)
  */
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { auditFields, notesField, taxonomySelect } from '../../fields/base-accounting-fields'
-import { EU_AI_ACT_RISK_OPTIONS } from '../../standards/eu-ai-act'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { auditFields, notesField, taxonomySelect } from '@/fields/base-accounting-fields'
+import { EU_AI_ACT_RISK_OPTIONS } from '@/standards/eu-ai-act'
 
 const AiModels: CollectionConfig = {
   slug: 'ai-models',

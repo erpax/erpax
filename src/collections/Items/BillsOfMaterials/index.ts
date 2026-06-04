@@ -27,9 +27,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { tenantAdminWriteAccess } from '../../../access/auth'
-import { statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { tenantAdminWriteAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, referenceField, unitOfMeasureField } from '@/fields/base-accounting-fields'
 
 const BillsOfMaterials: CollectionConfig = {
   slug: 'bills-of-materials',

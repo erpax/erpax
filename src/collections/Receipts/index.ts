@@ -1,7 +1,7 @@
 import type { Access, CollectionConfig } from 'payload'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { adminOrAccountant, scopedAccess } from '../../access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { adminOrAccountant, scopedAccess } from '@/access/auth'
 import {
   currencyField,
   statusField,
@@ -10,7 +10,7 @@ import {
   fiscalDeviceNumberField,
   operatorCodeField,
   fiscalQrField,
-} from '../../fields'
+} from '@/fields'
 
 /**
  * Receipts (касови бонове / electronic receipts) — the Наредба Н-18 fiscal

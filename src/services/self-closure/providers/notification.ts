@@ -37,8 +37,8 @@
  * @see /src/services/notifications/index.ts sendNotification
  */
 
-import type { InternalProvider, FallbackContext } from '../types'
-import { registerInternalProvider } from '../index'
+import type { InternalProvider, FallbackContext } from '@/services/self-closure/types'
+import { registerInternalProvider } from '@/services/self-closure'
 
 export interface NotificationParams {
   readonly tenantId: string
@@ -75,7 +75,7 @@ export const InternalNotificationProvider: InternalProvider<NotificationParams, 
   ],
 
   async invoke(params: NotificationParams, ctx: FallbackContext): Promise<NotificationResult> {
-    const { sendNotification } = await import('../../notifications')
+    const { sendNotification } = await import('@/services/notifications')
     const result = await sendNotification(ctx.payload, {
       tenantId: params.tenantId,
       toUserId: params.toUserId,

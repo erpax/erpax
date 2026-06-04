@@ -12,7 +12,7 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { tenantAdmin } from '../../access/auth'
+import { tenantAdmin } from '@/access/auth'
 
 export const GLPostingRules: CollectionConfig = {
   slug: 'gl-posting-rules',

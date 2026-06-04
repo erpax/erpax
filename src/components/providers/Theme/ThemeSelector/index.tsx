@@ -12,7 +12,7 @@ import { useTranslations } from 'next-intl'
 
 import type { Theme } from './types'
 
-import { useTheme } from '..'
+import { useTheme } from '@/components/providers/Theme'
 import { themeLocalStorageKey } from './types'
 
 export const ThemeSelector: React.FC = () => {

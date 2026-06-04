@@ -25,7 +25,7 @@
  */
 
 import { CollectionBeforeChangeHook } from 'payload'
-import { FiscalPeriodResolver, type FiscalPeriodConfig } from '../../services/FiscalPeriodResolver'
+import { FiscalPeriodResolver, type FiscalPeriodConfig } from '@/services/FiscalPeriodResolver'
 import { getUser } from '@/access/auth'
 
 interface FiscalPeriodsData {

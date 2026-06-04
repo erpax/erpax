@@ -14,11 +14,11 @@
  */
 
 import type { Access, PayloadRequest, Where } from 'payload'
-import type { UserContext, UserRole } from '../../types/auth'
-import type { User } from '../../payload-types'
-import { ACCOUNTING_WRITE_ROLES } from '../roles-registry'
+import type { UserContext, UserRole } from '@/types/auth'
+import type { User } from '@/payload-types'
+import { ACCOUNTING_WRITE_ROLES } from '@/access/roles-registry'
 
-export { isSuperAdminAccess as superAdminOnly } from '../isSuperAdmin'
+export { isSuperAdminAccess as superAdminOnly } from '@/access/isSuperAdmin'
 
 /**
  * Narrow `req.user` (the `User | PayloadMcpApiKey` auth union) to the

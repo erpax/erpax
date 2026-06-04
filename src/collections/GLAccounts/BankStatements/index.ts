@@ -1,12 +1,12 @@
 import type { CollectionConfig } from 'payload'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
-import { autoPopulateTenant } from '../../../hooks/autoPopulateTenant';
-import { autoPopulateCreatedBy } from '../../../hooks/autoPopulateCreatedBy';
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp';
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange';
-import { currencyField } from '../../../fields/base-accounting-fields';
-import { validateNotLocked } from '../../../services/accounting/utilities/period-lock';
-import { bankStatementImportedHook } from '../../../hooks/collections/accounting/bank-statement.hook';
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant';
+import { autoPopulateCreatedBy } from '@/hooks/autoPopulateCreatedBy';
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange';
+import { currencyField } from '@/fields/base-accounting-fields';
+import { validateNotLocked } from '@/services/accounting/utilities/period-lock';
+import { bankStatementImportedHook } from '@/hooks/collections/accounting/bank-statement.hook';
 
 /**
  * Bank Statements — imported / matched bank statements feeding reconciliation.

@@ -8,7 +8,7 @@
  * @see docs/STANDARDS.md §3
  */
 
-import type { TenantConfig } from '../types'
+import type { TenantConfig } from '@/config/types'
 
 export const courseBuilderConfig: TenantConfig = {
   name: 'CourseBuilder',

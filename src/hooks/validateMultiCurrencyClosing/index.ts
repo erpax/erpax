@@ -26,8 +26,8 @@
  */
 
 import { CollectionBeforeValidateHook, type TypeWithID } from 'payload'
-import { CurrencyReconciliation } from '../../services/CurrencyReconciliation'
-import type { CurrencyRate, LegalEntity } from '../../payload-types'
+import { CurrencyReconciliation } from '@/services/CurrencyReconciliation'
+import type { CurrencyRate, LegalEntity } from '@/payload-types'
 
 interface ClosingEntryWithCurrency {
   sequenceNumber?: number

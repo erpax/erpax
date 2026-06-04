@@ -48,8 +48,8 @@ import {
   PeriodEndAdjustment,
   PeriodEndConfig,
 } from '@/types/period-end';
-import { journalEntryService, JournalEntryLine } from '../journal-entry.service';
-import { eventEmitter } from '../event-emitter.service';
+import { journalEntryService, JournalEntryLine } from '@/services/journal-entry.service';
+import { eventEmitter } from '@/services/event-emitter.service';
 
 // Mock database
 const fixedAssets = new Map<string, FixedAsset>();

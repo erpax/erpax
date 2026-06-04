@@ -5,7 +5,7 @@
  * @standard PMI PMBOK 7th-edition project-management
  * @feature project_management
  */
-import type { DomainAgent, AgentEffect, DomainEvent } from '../types'
+import type { DomainAgent, AgentEffect, DomainEvent } from '@/services/agents/types'
 import type { SpecChainStep } from '@/services/spec-generator'
 
 export const ProductAgent: DomainAgent = {

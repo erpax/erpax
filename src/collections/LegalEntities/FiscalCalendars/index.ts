@@ -25,7 +25,7 @@
  */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../../access/auth'
+import { accountingCollectionAccess } from '@/access/auth'
 
 export const FiscalCalendars: CollectionConfig = {
   slug: 'fiscal-calendars',

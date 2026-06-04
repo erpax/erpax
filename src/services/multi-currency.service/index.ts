@@ -39,7 +39,7 @@ import {
   isSupportedCurrency,
   getTenantDefaults,
 } from '@/config/regional-defaults';
-import { journalEntryService } from '../journal-entry.service';
+import { journalEntryService } from '@/services/journal-entry.service';
 import { DebitCreditLogic } from '@/services/accounting/debit-credit';
 
 interface _GLBalance {

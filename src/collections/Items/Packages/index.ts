@@ -20,8 +20,8 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
 import {
   statusField,
   notesField,
@@ -29,7 +29,7 @@ import {
   referenceField,
   measureFields,
   unitOfMeasureField,
-} from '../../../fields/base-accounting-fields'
+} from '@/fields/base-accounting-fields'
 
 const Packages: CollectionConfig = {
   slug: 'packages',

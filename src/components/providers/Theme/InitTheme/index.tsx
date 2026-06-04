@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { defaultTheme, themeLocalStorageKey } from '../ThemeSelector/types'
+import { defaultTheme, themeLocalStorageKey } from '@/components/providers/Theme/ThemeSelector/types'
 
 /**
  * Blocking theme script must only exist in the SSR tree. React 19 warns if a

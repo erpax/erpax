@@ -11,9 +11,9 @@
  */
 
 import type { Access } from 'payload'
-import type { Iso27002ControlId } from '../../standards/iso-27002'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
 
-import { wherePublished } from '../../utilities/scopes'
+import { wherePublished } from '@/utilities/scopes'
 
 export const authenticatedOrPublished: Access = ({ req: { user } }) => {
   if (user) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FinancialAnalysisEngine } from '@/services/accounting/financial-analysis';
-import { formatCurrency } from '../Dashboard';
+import { formatCurrency } from '@/components/Dashboard';
 
 import type { IncomeStatementData } from './types';
 

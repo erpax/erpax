@@ -1,5 +1,5 @@
 import type { Payload } from 'payload'
-import type { Sector } from '../../payload-types'
+import type { Sector } from '@/payload-types'
 
 /**
  * Seed `sectors` with the REAL canonical parts of society — not placeholders.

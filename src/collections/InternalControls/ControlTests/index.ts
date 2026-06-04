@@ -9,9 +9,9 @@
  * @audit ISO-19011:2018 audit-trail
  */
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '../../../access/authenticated'
-import { adminOnly } from '../../../access/auth'
-import { auditTrailAfterChange } from '../../../hooks/auditTrailAfterChange'
+import { authenticated } from '@/access/authenticated'
+import { adminOnly } from '@/access/auth'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
 
 export const ControlTests: CollectionConfig = {
   slug: 'control-tests',

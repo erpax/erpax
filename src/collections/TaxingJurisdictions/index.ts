@@ -7,8 +7,8 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
  */
 import type { CollectionConfig } from 'payload'
-import { authenticated } from '../../access/authenticated'
-import { superAdminOnly } from '../../access/auth'
+import { authenticated } from '@/access/authenticated'
+import { superAdminOnly } from '@/access/auth'
 
 export const TaxingJurisdictions: CollectionConfig = {
   slug: 'taxing-jurisdictions',

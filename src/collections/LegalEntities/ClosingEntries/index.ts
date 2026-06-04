@@ -17,8 +17,8 @@
 */
 
 import { CollectionConfig } from 'payload'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { validateClosingPeriod, generateReversingEntries, validateMultiCurrencyClosing } from '../../../hooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { validateClosingPeriod, generateReversingEntries, validateMultiCurrencyClosing } from '@/hooks'
 
 export const ClosingEntries: CollectionConfig = {
   slug: 'closing-entries',

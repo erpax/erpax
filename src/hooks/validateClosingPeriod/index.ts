@@ -19,7 +19,7 @@
  */
 
 import { CollectionBeforeValidateHook } from 'payload'
-import { ClosingPeriodChecker } from '../../services/ClosingPeriodChecker'
+import { ClosingPeriodChecker } from '@/services/ClosingPeriodChecker'
 
 interface ClosingEntryData {
   id: string

@@ -16,10 +16,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../access/auth'
-import { currencyField, statusField, notesField, auditFields } from '../../../fields/base-accounting-fields'
-import { emitOpportunityWon } from '../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
+import { emitOpportunityWon } from '@/hooks/chainEventEmitters'
 
 const Opportunities: CollectionConfig = {
   slug: 'opportunities',

@@ -6,4 +6,4 @@
  * Service (IntercompanyReconciliation) exported here.
  */
 
-export { IntercompanyReconciliation } from '../../services/IntercompanyReconciliation'
+export { IntercompanyReconciliation } from '@/services/IntercompanyReconciliation'

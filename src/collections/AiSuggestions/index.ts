@@ -32,10 +32,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { statusField, notesField, auditFields, taxonomySelect } from '../../fields/base-accounting-fields'
-import { EU_AI_ACT_RISK_OPTIONS } from '../../standards/eu-ai-act'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields, taxonomySelect } from '@/fields/base-accounting-fields'
+import { EU_AI_ACT_RISK_OPTIONS } from '@/standards/eu-ai-act'
 
 const AiSuggestions: CollectionConfig = {
   slug: 'ai-suggestions',

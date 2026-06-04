@@ -4,7 +4,7 @@ import type { FieldErrorsImpl, FieldValues, UseFormRegister } from 'react-hook-f
 import { Input } from '@/components/ui/input'
 import React from 'react'
 
-import { FormField } from '../FormField'
+import { FormField } from '@/components/blocks/Form/FormField'
 
 export const Email: React.FC<
   EmailField & {

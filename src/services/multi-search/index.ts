@@ -44,7 +44,7 @@
  */
 
 import type { Payload } from 'payload'
-import { NON_CONTENT_FIELDS } from '../integrity'
+import { NON_CONTENT_FIELDS } from '@/services/integrity'
 
 /** Field types that hold free-text searchable content. */
 const TEXT_FIELD_TYPES: ReadonlySet<string> = new Set(['text', 'textarea', 'email', 'code'])

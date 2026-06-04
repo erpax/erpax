@@ -22,9 +22,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { statusField, notesField, auditFields } from '../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
 
 const WorkflowDefinitions: CollectionConfig = {
   slug: 'workflow-definitions',

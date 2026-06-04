@@ -20,11 +20,11 @@
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation party-scoped-read
  */
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'
-import { partyRoleAccess, scopedAccess } from '../../access/auth'
-import { auditFields, countryCodeField, referenceField } from '../../fields'
-import { partyRefField, typeField } from '../../fields/discriminators'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { horoStateField, validateHoroStates, type HoroState } from '../../services/horo'
+import { partyRoleAccess, scopedAccess } from '@/access/auth'
+import { auditFields, countryCodeField, referenceField } from '@/fields'
+import { partyRefField, typeField } from '@/fields/discriminators'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { horoStateField, validateHoroStates, type HoroState } from '@/services/horo'
 
 /**
  * The case lifecycle, pinned to the seven-position horo ring `[1,2,4,8,7,5,9]`.

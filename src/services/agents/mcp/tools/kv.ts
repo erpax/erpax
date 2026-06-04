@@ -22,13 +22,13 @@
  * @see /src/services/uuid-kv/index.ts (the runtime surface this exposes)
  */
 import { z } from 'zod'
-import { makeToolI18n, registerToolI18n, type LocalizedString } from '../i18n'
+import { makeToolI18n, registerToolI18n, type LocalizedString } from '@/services/agents/mcp/i18n'
 import {
   computeKvBindingUuid, resolveKeyUuid, toUuidMap,
 } from '@/services/uuid-kv'
 import type { ContentUuid } from '@/services/integrity/content-uuid'
 import { assertTenantMatch } from './_guards'
-import type { ErpaxMcpTool } from '../tool-defs'
+import type { ErpaxMcpTool } from '@/services/agents/mcp/tool-defs'
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))

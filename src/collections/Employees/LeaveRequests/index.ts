@@ -30,8 +30,8 @@
  * @see ../factories/collection-factory.ts
  */
 
-import { createAccountingCollection } from '../../../services/accounting/factories/collection-factory'
-import { referenceField } from '../../../fields/base-accounting-fields'
+import { createAccountingCollection } from '@/services/accounting/factories/collection-factory'
+import { referenceField } from '@/fields/base-accounting-fields'
 
 export default createAccountingCollection({
   slug: 'leave-requests',

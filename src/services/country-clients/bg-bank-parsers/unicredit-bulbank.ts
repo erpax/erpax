@@ -17,7 +17,7 @@ import {
   registerBgBankParser,
   type BgBankStatement,
   type BgBankStatementRow,
-} from '../bg-bank-statement-pdf'
+} from '@/services/country-clients/bg-bank-statement-pdf'
 
 const BANK_CODE = 'UNCRBGSF' // SWIFT BIC for UniCredit Bulbank
 const BANK_NAME = 'UniCredit Bulbank AD'

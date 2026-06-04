@@ -1,7 +1,7 @@
 import type { CollectionBeforeValidateHook } from 'payload'
 
-import { type ScopeResourceCollection, scopeResourceCollections } from '../../../standards/nist-incits-359'
-import { apiErr, ERR } from '../../../utilities/errors'
+import { type ScopeResourceCollection, scopeResourceCollections } from '@/standards/nist-incits-359'
+import { apiErr, ERR } from '@/utilities/errors'
 
 /**
  * Ensures `roles` documents have consistent global / collection / document bindings.

@@ -19,7 +19,7 @@
  * @see src/services/horo (the position ring), src/services/uuid-format (decode)
  */
 
-import { HORO_DIGITS, type HoroStep } from '../horo'
+import { HORO_DIGITS, type HoroStep } from '@/services/horo'
 
 /** The single anchor — Hz for sound, ms for the color-animation period. */
 export const A432 = 432

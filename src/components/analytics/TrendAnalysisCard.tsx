@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '../../sdk/accounting-client';
+import { AccountingClient } from '@/sdk/accounting-client';
 import { FinancialAnalysisEngine } from '@/services/accounting/financial-analysis';
 
 /**

@@ -1,8 +1,8 @@
 import type { CollectionConfig } from 'payload'
-import { tenantMasterDataAccess } from '../../access/auth'
-import { autoPopulateTenant } from '../../hooks/autoPopulateTenant'
-import { auditTrailAfterChange } from '../../hooks/auditTrailAfterChange'
-import { currencyField } from '../../fields/base-accounting-fields'
+import { tenantMasterDataAccess } from '@/access/auth'
+import { autoPopulateTenant } from '@/hooks/autoPopulateTenant'
+import { auditTrailAfterChange } from '@/hooks/auditTrailAfterChange'
+import { currencyField } from '@/fields/base-accounting-fields'
 
 /**
  * Tax Jurisdictions — tax authority master.

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { AccountingClient } from '../../sdk/accounting-client';
+import { AccountingClient } from '@/sdk/accounting-client';
 
 /**
  * Audit log viewer widget — read-only timeline of administrative actions.

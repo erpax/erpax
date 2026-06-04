@@ -200,7 +200,7 @@ export const TENANT_STATUS_COLORS: Record<TenantStatus, string> = {
  * undefined → string runtime errors); now `bg-BG` is present here as
  * the house default per the canonical profile.
  */
-import { COUNTRY_PROFILES } from '../../config/regional-defaults';
+import { COUNTRY_PROFILES } from '@/config/regional-defaults';
 
 export const COUNTRY_TO_STANDARD: Record<string, AccountingStandard> = Object.fromEntries(
   Object.entries(COUNTRY_PROFILES).map(([country, p]) => [country, p.accountingStandard]),

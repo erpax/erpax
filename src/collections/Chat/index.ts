@@ -18,9 +18,9 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../access/auth'
-import { chatBroadcastAfterChange } from '../../services/agent-sync/chat-broadcast'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { chatBroadcastAfterChange } from '@/services/agent-sync/chat-broadcast'
 
 const Chat: CollectionConfig = {
   slug: 'chat',

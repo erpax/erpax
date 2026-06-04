@@ -21,10 +21,10 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../../../hooks/standardCollectionHooks'
-import { accountingCollectionAccess } from '../../../../../access/auth'
-import { currencyField, statusField, notesField, auditFields, referenceField } from '../../../../../fields/base-accounting-fields'
-import { emitProdCompleted } from '../../../../../hooks/chainEventEmitters'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { accountingCollectionAccess } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields, referenceField } from '@/fields/base-accounting-fields'
+import { emitProdCompleted } from '@/hooks/chainEventEmitters'
 
 const ProductionReceipts: CollectionConfig = {
   slug: 'production-receipts',

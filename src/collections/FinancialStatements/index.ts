@@ -1,9 +1,9 @@
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../hooks/standardCollectionHooks'
-import { tenantAdminWriteAccess } from '../../access/auth'
-import { currencyField, notesField } from '../../fields/base-accounting-fields'
-import { autoSetTimestamp } from '../../hooks/autoSetTimestamp';
-import { enforceSegregationOfDuties } from '../../hooks/enforceSegregationOfDuties';
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { tenantAdminWriteAccess } from '@/access/auth'
+import { currencyField, notesField } from '@/fields/base-accounting-fields'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp';
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties';
 
 /**
  * Financial Statements — generated statement records (TB, BS, IS, CF, etc.).

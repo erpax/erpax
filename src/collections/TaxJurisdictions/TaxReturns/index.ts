@@ -11,11 +11,11 @@
  */
 
 import type { CollectionConfig } from 'payload'
-import { standardCollectionHooks } from '../../../hooks/standardCollectionHooks'
-import { autoSetTimestamp } from '../../../hooks/autoSetTimestamp'
-import { enforceSegregationOfDuties } from '../../../hooks/enforceSegregationOfDuties'
-import { adminOrAccountant, scopedAccess, tenantAdmin } from '../../../access/auth'
-import { currencyField, statusField, notesField, auditFields } from '../../../fields/base-accounting-fields'
+import { standardCollectionHooks } from '@/hooks/standardCollectionHooks'
+import { autoSetTimestamp } from '@/hooks/autoSetTimestamp'
+import { enforceSegregationOfDuties } from '@/hooks/enforceSegregationOfDuties'
+import { adminOrAccountant, scopedAccess, tenantAdmin } from '@/access/auth'
+import { currencyField, statusField, notesField, auditFields } from '@/fields/base-accounting-fields'
 
 const TaxReturns: CollectionConfig = {
   slug: 'tax-returns',

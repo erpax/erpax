@@ -15,8 +15,8 @@ import { PayloadSDKError } from '@payloadcms/sdk'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-import type { User } from '../../payload-types'
-import { getPayloadSdk } from '../payloadSdk'
+import type { User } from '@/payload-types'
+import { getPayloadSdk } from '@/utilities/payloadSdk'
 
 export const getMeUser = async (args?: {
   nullUserRedirect?: string

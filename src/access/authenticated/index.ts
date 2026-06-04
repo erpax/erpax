@@ -10,9 +10,9 @@
  */
 
 import type { AccessArgs } from 'payload'
-import type { Iso27002ControlId } from '../../standards/iso-27002'
+import type { Iso27002ControlId } from '@/standards/iso-27002'
 
-import type { User } from '../../payload-types'
+import type { User } from '@/payload-types'
 
 type isAuthenticated = (args: AccessArgs<User>) => boolean
 

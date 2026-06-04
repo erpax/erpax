@@ -26,7 +26,7 @@ import type { MediatorContext } from './index'
 import {
   InMemoryKeyResolver, setDefaultKeyResolver,
   provisionTestSigningKey, provisionTestKek,
-} from '../integrity/tenant-key-registry'
+} from '@/services/integrity/tenant-key-registry'
 
 const TENANT = 'tenant-1'
 const FAKE_ENV = {} as unknown as MediatorContext['env']
