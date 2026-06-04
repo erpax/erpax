@@ -680,6 +680,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "EU-1760-2000",
+    "family": "eu",
+    "title": "EU cattle identification & beef labelling (Reg 1760/2000)",
+    "uuid": "e32563da-8ce8-84bd-b503-97354d4c69e9",
+    "color": "hsl(189 84% 40%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "EU-EUDR",
+    "family": "eu",
+    "title": "EU Deforestation Regulation (2023/1115)",
+    "uuid": "be33d31a-a2de-81b8-babd-7df9c1e24863",
+    "color": "hsl(91 56% 40%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "ISO/IEC-25010",
     "family": "iec",
     "title": "Systems & software quality models",
@@ -2956,6 +2974,15 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ISO-11784",
+    "family": "iso",
+    "title": "RFID animal identification (code structure & protocol)",
+    "uuid": "fea06728-a431-8b4e-9e70-d2e4f1245d4f",
+    "color": "hsl(24 88% 54%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "Naredba-N-18",
     "family": "national",
     "title": "BG fiscal-device & SUPTO ordinance",
@@ -4458,6 +4485,51 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     ]
   },
   {
+    "id": "ASC",
+    "family": "other",
+    "title": "Aquaculture Stewardship Council standard",
+    "uuid": "a2921f3f-304a-8ca0-81ab-8610a4b69d86",
+    "color": "hsl(218 86% 53%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "BAP",
+    "family": "other",
+    "title": "Best Aquaculture Practices (GSA)",
+    "uuid": "7f6f4e43-627a-873c-8631-aac42c6d244c",
+    "color": "hsl(223 63% 57%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "FSC",
+    "family": "other",
+    "title": "Forest Stewardship Council certification",
+    "uuid": "4260db1b-e595-8d60-811d-1d470e07097e",
+    "color": "hsl(72 64% 41%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "PEFC",
+    "family": "other",
+    "title": "Programme for the Endorsement of Forest Certification",
+    "uuid": "36e0c287-a2ab-8210-9ed3-f79d4396cbce",
+    "color": "hsl(8 74% 53%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "WOAH-Codes",
+    "family": "other",
+    "title": "WOAH (OIE) Terrestrial & Aquatic Animal Health Codes",
+    "uuid": "5fbbfe3a-57c4-8ad1-a465-89d0dca31217",
+    "color": "hsl(27 64% 48%)",
+    "count": 0,
+    "modules": []
+  },
+  {
     "id": "BCP-47",
     "family": "rfc",
     "title": "Language tags",
@@ -5444,6 +5516,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§302/404/906"
       }
     ]
+  },
+  {
+    "id": "Codex-Honey",
+    "family": "un",
+    "title": "Codex honey standard / EU Honey Directive 2001/110",
+    "uuid": "d228e455-1b91-8477-a771-5c01261d83cc",
+    "color": "hsl(160 73% 51%)",
+    "count": 0,
+    "modules": []
+  },
+  {
+    "id": "FAO-CCRF",
+    "family": "un",
+    "title": "FAO Code of Conduct for Responsible Fisheries",
+    "uuid": "b26bbb5d-46fc-85f9-a702-145c1e23f683",
+    "color": "hsl(315 67% 59%)",
+    "count": 0,
+    "modules": []
   },
   {
     "id": "UPU-S42",
@@ -6437,4 +6527,4 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
   }
 ] as const
 
-export const STANDARDS_COUNT = 132
+export const STANDARDS_COUNT = 142

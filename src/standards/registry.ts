@@ -191,4 +191,16 @@ export const STANDARDS_REGISTRY: ReadonlyArray<RegisteredStandard> = [
   { id: 'EU-UCC', family: 'eu', title: 'EU Union Customs Code (Regulation 952/2013)', match: 'union.?customs|952/2013' },
   { id: 'NACE', family: 'eu', title: 'EU NACE Rev.2 economic-activity classification', match: '\\bNACE\\b' },
   { id: 'SWIFT-MT', family: 'other', title: 'SWIFT MT financial messages', match: 'SWIFT.?MT|\\bSWIFT\\b' },
+
+  // — livestock · aquaculture · forestry · apiculture (the loop's new domains) —
+  { id: 'ISO-11784', family: 'iso', title: 'RFID animal identification (code structure & protocol)', match: '11784|11785' },
+  { id: 'EU-1760-2000', family: 'eu', title: 'EU cattle identification & beef labelling (Reg 1760/2000)', match: '1760/2000|cattle.?identification|beef.?label' },
+  { id: 'WOAH-Codes', family: 'other', title: 'WOAH (OIE) Terrestrial & Aquatic Animal Health Codes', match: 'WOAH|\\bOIE\\b|animal.?health.?code' },
+  { id: 'ASC', family: 'other', title: 'Aquaculture Stewardship Council standard', match: 'aquaculture.?stewardship' },
+  { id: 'BAP', family: 'other', title: 'Best Aquaculture Practices (GSA)', match: 'best.?aquaculture' },
+  { id: 'FAO-CCRF', family: 'un', title: 'FAO Code of Conduct for Responsible Fisheries', match: 'responsible.?fisheries|\\bCCRF\\b' },
+  { id: 'FSC', family: 'other', title: 'Forest Stewardship Council certification', match: 'forest.?stewardship|\\bFSC\\b' },
+  { id: 'PEFC', family: 'other', title: 'Programme for the Endorsement of Forest Certification', match: 'PEFC' },
+  { id: 'EU-EUDR', family: 'eu', title: 'EU Deforestation Regulation (2023/1115)', match: 'EUDR|2023/1115|deforestation' },
+  { id: 'Codex-Honey', family: 'un', title: 'Codex honey standard / EU Honey Directive 2001/110', match: 'honey|2001/110' },
 ] as const

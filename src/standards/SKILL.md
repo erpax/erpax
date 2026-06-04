@@ -212,4 +212,19 @@ The standards erpax cites are not folders — they are dissolved across `src/` a
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(333 66% 50%)"></span> `W3C-WAI-ARIA-1.2` — Accessible Rich Internet Applications · 51 · `a46dba6c`
 - <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(254 62% 40%)"></span> `WCAG-2.1` — Web Content Accessibility Guidelines · 32 · `852e7032`
 
+### registered — awaiting citation (10)
+
+Known canonical standards in the registry not yet cited by code — e.g. the upstream permaculture / regenerative-agriculture basis of the agriculture domain. They seed as `proposed` and become cited as the domain grows.
+
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(189 84% 40%)"></span> `EU-1760-2000` — EU cattle identification & beef labelling (Reg 1760/2000)
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(91 56% 40%)"></span> `EU-EUDR` — EU Deforestation Regulation (2023/1115)
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(24 88% 54%)"></span> `ISO-11784` — RFID animal identification (code structure & protocol)
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(218 86% 53%)"></span> `ASC` — Aquaculture Stewardship Council standard
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(223 63% 57%)"></span> `BAP` — Best Aquaculture Practices (GSA)
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(72 64% 41%)"></span> `FSC` — Forest Stewardship Council certification
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(8 74% 53%)"></span> `PEFC` — Programme for the Endorsement of Forest Certification
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(27 64% 48%)"></span> `WOAH-Codes` — WOAH (OIE) Terrestrial & Aquatic Animal Health Codes
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(160 73% 51%)"></span> `Codex-Honey` — Codex honey standard / EU Honey Directive 2001/110
+- <span style="display:inline-block;width:0.7em;height:0.7em;border-radius:50%;vertical-align:middle;background:hsl(315 67% 59%)"></span> `FAO-CCRF` — FAO Code of Conduct for Responsible Fisheries
+
 <!-- CATALOGUE:END -->
