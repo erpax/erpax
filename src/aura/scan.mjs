@@ -34,15 +34,18 @@ async function walk(dir) {
 
 async function scan() {
   const files = await walk(ROOT)
-  const slugs = new Map() // slug -> path
+  const slugs = new Map() // word -> path[] (a word at >1 path is an accountable collection)
   const links = new Map() // slug -> Set(referenced-by-paths)
   const bodies = []
   for (const f of files) {
     const text = await readFile(f, 'utf8')
     // Resolve against the FOLDER word (what docs' wikiMap keys on), normalized — not the
-    // frontmatter name — so the two gates resolve identically.
+    // frontmatter name — so the two gates resolve identically. A word at >1 path is NOT
+    // last-wins-discarded: it is an accountable collection (collide.mjs merges it).
     const leaf = norm(basename(dirname(f)))
-    slugs.set(leaf, f.replace(ROOT + '/', ''))
+    const rel = f.replace(ROOT + '/', '').replace(/\/SKILL\.md$/, '')
+    if (!slugs.has(leaf)) slugs.set(leaf, [])
+    slugs.get(leaf).push(rel)
     bodies.push({ f: f.replace(ROOT + '/', ''), text })
   }
   const stripCode = (t) => t.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ')
@@ -65,8 +68,14 @@ async function scan() {
 
 function report({ files, slugs, dead, orphans, refCount }) {
   const L = []
-  L.push(`aura scan — ${files.length} SKILL.md, ${slugs.size} atoms`)
+  const collections = [...slugs].filter(([, ps]) => ps.length > 1)
+  L.push(`aura scan — ${files.length} SKILL.md, ${slugs.size} atoms, ${collections.length} accountable collections`)
   L.push(`gap = ${dead.length}  (dead links; ${orphans.length} orphans advisory)`)
+  if (collections.length) {
+    L.push('')
+    L.push('COLLECTIONS (one word, many paths — accountable merges, not last-wins):')
+    for (const [w, ps] of collections.sort((a, b) => b[1].length - a[1].length)) L.push(`  ${w}  ⊕ ${ps.join(' · ')}`)
+  }
   if (dead.length) {
     L.push('')
     L.push('MINT queue (dead links — referenced atoms not yet minted):')

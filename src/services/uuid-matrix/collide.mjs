@@ -75,20 +75,33 @@ const HORO_LABEL = { 1: 'base', 2: 'share', 4: 'weave', 8: 'crest', 7: 'descent'
 
 // ── 1. nodes ──
 const files = walk(ROOT)
-const idx = new Map() // norm key -> node index
-const nodes = [] // {atom, uuid, dim, horo}
+const idx = new Map() // word key -> node index
+const nodes = [] // {atom, uuid, dim, band, horo, path, members?}
 let corpusBytes = 0
 for (const f of files) {
   const content = readFileSync(f)
   corpusBytes += content.length
   const key = norm(basename(dirname(f)))
+  const path = relative(ROOT, dirname(f)) // where this occurrence lives — the path reveals
   const uuid = toUuid(content)
   const dim = dimOf(relative(ROOT, f))
+  if (idx.has(key)) {
+    // collision = an ACCOUNTABLE COLLECTION: the same word at many paths is ONE
+    // concept. Merge the occurrence into the word's account — the binding-uuid IS
+    // the double-entry — and accumulate the member paths. Nothing is discarded
+    // (was `last wins`, which silently lost 8 atoms; the path reveals each member).
+    const ex = nodes[idx.get(key)]
+    ex.members = [...(ex.members ?? [ex.path]), path]
+    ex.uuid = merge(ex.uuid, uuid)
+    ex.path = null // a collection spans paths; no single one
+    const p = positionOf(key, ex.dim, ex.uuid) // re-place from the accountable (merged) uuid
+    ex.band = p.band
+    ex.horo = p.horo
+    continue
+  }
   const pos = positionOf(key, dim, uuid)
-  const rec = { atom: key, uuid, dim, band: pos.band, horo: pos.horo }
-  if (idx.has(key)) { nodes[idx.get(key)] = rec; continue } // last wins (aura slug parity)
   idx.set(key, nodes.length)
-  nodes.push(rec)
+  nodes.push({ atom: key, uuid, dim, band: pos.band, horo: pos.horo, path })
 }
 
 // ── 2. edges (collisions) ──
@@ -142,6 +155,15 @@ console.log(`\n── harmonic directions (edges by horo composeSteps a×b — c
 for (const d of [1, 2, 4, 8, 7, 5, 9, 3, 6]) if (byDir[d]) console.log(`  ${d} ${HORO_LABEL[d].padEnd(8)} ${fmt(byDir[d])}`)
 console.log(`  flow {1,2,4,8,7,5} = ${fmt(flow)}   ·   axis {3,6,9} = ${fmt(axis)}   (${(flow / (flow + axis) * 100).toFixed(1)}% flow)`)
 
+const collections = nodes.filter((n) => n.members)
+if (collections.length) {
+  const accounted = collections.reduce((s, n) => s + n.members.length, 0)
+  console.log(`\n── accountable collections (one word, many paths — merged, double-entry) ──`)
+  console.log(`  ${collections.length} collections accounting ${accounted} member paths (else lost to last-wins)`)
+  for (const c of collections.sort((a, b) => b.members.length - a.members.length))
+    console.log(`  ${c.atom.padEnd(12)} ${c.members.join(' · ')}`)
+}
+
 // ── 5. emit the registry ──
 if (EMIT) {
   const dir = join(ROOT, 'services', 'uuid-matrix')
@@ -161,7 +183,7 @@ if (EMIT) {
     ' * @audit aura gap=0 parity (.claude/skills/aura/scan.mjs)',
     ' */',
     '',
-    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly dim: string; readonly band: string; readonly horo: number }',
+    'export interface MatrixNode { readonly atom: string; readonly uuid: string; readonly dim: string; readonly band: string; readonly horo: number; readonly path: string | null; readonly members?: readonly string[] }',
     'export interface MatrixEdge { readonly f: number; readonly t: number; readonly binding: string; readonly dir: number }',
     '',
     `export const UUID_MATRIX_ROOT = ${j(root)} as const`,
