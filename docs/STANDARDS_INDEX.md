@@ -2412,9 +2412,16 @@ src/spec/generator/translation-generator.ts:71: * @standard BCP-47 language-tag
 src/spec/generator/translation-generator.ts:72: * @standard W3C i18n key-naming-best-practices
 src/spec/generator/types.ts:12: * @standard ISO/IEC 25010:2023 §5 modularity
 src/spec/generator/types.ts:13: * @standard ISO/IEC 12207 software-life-cycle
+src/standards/catalogue.ts:10: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
+src/standards/catalogue.ts:11: * @standard ISO-19011:2018 §6.4 audit-evidence (the citation index)
+src/standards/index.test.ts:3: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
+src/standards/index.test.ts:4: * @standard ISO-19011:2018 §6.4 audit-evidence (the collection is the citation registry)
 src/standards/index.ts:26: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/standards/index.ts:27: * @standard ISO 19011:2018 §6.4.6 audit-evidence (citation changes audit-trailed)
 src/standards/index.ts:28: * @standard W3C JSON-LD 1.1 (citation as live linked-data)
+src/standards/registry.ts:17: * @standard ISO-19011:2018 audit-evidence (a curated register of cited norms)
+src/standards/registry.ts:18: * @standard ISO/IEC-25010:2023 §5.1 functional-completeness
+src/standards/seed.ts:19: * @standard ISO-19011:2018 §6.4 audit-evidence (citingModules = the trail)
 src/sti/schema-org.ts:19: * @standard schema.org (the universal type vocabulary; Thing + subClassOf)
 src/sti/schema-org.ts:20: * @standard JSON-LD 1.1 W3C-REC (the structured-data serialization)
 src/storage/independence/index.ts:62: * @standard ISO/IEC 27040:2024 — storage security (data integrity)
@@ -3142,6 +3149,7 @@ src/spec/generator/extractor.ts:18: *   @rfc           <id> [free-text]         
 src/spec/generator/i18n-audit.ts:14: * @rfc 8259 json
 src/spec/generator/i18n-keys.ts:33: * @rfc 8259 json
 src/spec/generator/i18n-stub-filler.ts:11: * @rfc 8259 json
+src/standards/catalogue.ts:12: * @rfc 9562 content-uuid (each standard row is content-addressed)
 src/subscription/plans/subscriptions/hooks/encryptSensitiveFields.ts:9: * @rfc 5116 authenticated-encryption-with-associated-data
 src/tenant.service/index.ts:15: * @rfc 9110 http-semantics
 src/testing/config-discovery-advanced.test.ts:6: * @rfc 8259 json
