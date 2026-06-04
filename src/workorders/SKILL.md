@@ -48,7 +48,9 @@ You are paid for what you **produce**, at the phase rate, divided by how many ma
 
 ## The resource cross
 
-A work order sits where three axes meet: the **lot-phase/variant** axis (content-addressed `lotVariantCode` / `lotWorkPhaseCode` / `lotWorkPhaseSort` codes, plus `machineCode` / `teamCode` — the routing collections are not yet minted, codes keep the leaf merge-safe), the **shift** axis (`workShift` → the existing `work-shifts`), and the **unified-actor** axis (`worker` / `supervisor` / `director` → `employees`, since typeless user = employee = actor, the [[party|actor]]-merge law; Rails `EmployeeContract` ⇒ the unified actor). AUDIT cardinalities: worker ~99.99%, supervisor ~91%, director ~21%, machine ~0.26% — so worker is effectively required, the rest optional by data.
+A work order sits where three axes meet: the **lot-phase/variant** axis (content-addressed `lotVariantCode` / `lotWorkPhaseCode` / `lotWorkPhaseSort` codes, plus `machineCode` / `teamCode` — the routing collections are not yet minted, codes keep the leaf merge-safe), the **shift** axis (`workShift` → [[workshifts|work-shifts]]), and the **unified-actor** axis (`worker` / `supervisor` / `director` → `employees`, since typeless user = employee = actor, the [[party|actor]]-merge law; Rails `EmployeeContract` ⇒ the unified actor). AUDIT cardinalities: worker ~99.99%, supervisor ~91%, director ~21%, machine ~0.26% — so worker is effectively required, the rest optional by data.
+
+The **shift axis is the efficiency authority**: a work order does **not** compute its own efficiency. It rolls UP into the shift (its produced minutes) and reads the efficiency back DOWN — `inheritShiftEfficiency` (beforeChange) denormalises `efficiencyPercent` from the related [[workshifts|work-shift]] (the per-actor-day authority, `⌊minutesProduced·100 / presenceMinutes⌋`) on save. The shift is the authority, the order the contributor; `efficiencyPercent` is read-only on the order, never hand-set.
 
 ## Standards
 

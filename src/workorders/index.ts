@@ -221,6 +221,35 @@ export const assertTotalsBalance: CollectionBeforeChangeHook = ({ data }) => {
 }
 
 /**
+ * Inherit efficiency from the work-shift AUTHORITY. A work order does NOT compute its
+ * own efficiency — it rolls UP into the shift (its produced minutes) and reads it back
+ * DOWN: on save, `efficiencyPercent` is denormalised from the related `work-shifts` row
+ * (the per-actor-day authority, ⌊minutesProduced·100 / presenceMinutes⌋). The shift is
+ * the authority, the order the contributor. Best-effort — an absent / unfetchable shift
+ * leaves the prior value untouched, never blocking the booking.
+ */
+export const inheritShiftEfficiency: CollectionBeforeChangeHook = async ({ data, req }) => {
+  const d = data as { workShift?: unknown; efficiencyPercent?: number }
+  const ws = d.workShift
+  if (ws == null) return data
+  // The shift may arrive as an id (depth 0) or an already-populated object (depth ≥ 1).
+  if (typeof ws === 'object' && typeof (ws as { efficiencyPercent?: unknown }).efficiencyPercent === 'number') {
+    d.efficiencyPercent = (ws as { efficiencyPercent: number }).efficiencyPercent
+    return data
+  }
+  const id = typeof ws === 'string' || typeof ws === 'number' ? ws : (ws as { id?: string | number })?.id
+  if (id == null) return data
+  try {
+    const shift = await req.payload.findByID({ collection: 'work-shifts', id, depth: 0, overrideAccess: true, req })
+    const eff = (shift as { efficiencyPercent?: unknown })?.efficiencyPercent
+    if (typeof eff === 'number') d.efficiencyPercent = eff
+  } catch {
+    // The authority may be unreachable mid-transaction; keep the prior value (best-effort).
+  }
+  return data
+}
+
+/**
  * The forward! conveyor — when this phase completes, its produced units become
  * the NEXT phase's ordered units. Resolves the next lot-work-phase by sort order
  * within the same lot-variant and seeds (or tops up) its work order. Production
@@ -356,7 +385,7 @@ export const Workorders: CollectionConfig = {
     { name: 'payPerHour', type: 'number', min: 0,
       admin: { description: 'Pay rate per hour for this assignment (the phase / worker / vendor-order rate).' } },
     { name: 'efficiencyPercent', type: 'number', min: 0,
-      admin: { description: 'Shift efficiency % (denormalised from the work-shift; AUDIT avg ≈ 50.6%).' } },
+      admin: { readOnly: true, description: 'Shift efficiency % — INHERITED from the related work-shift authority on save (inheritShiftEfficiency); the shift is the authority, the order the contributor. Never hand-set. AUDIT avg ≈ 50.6%.' } },
 
     // ── The lifecycle seal timestamps (the state is DERIVED from these + progress) ──
     { name: 'startedAt', type: 'date', admin: { description: 'ISO 8601 — first production booked.' } },
@@ -403,7 +432,7 @@ export const Workorders: CollectionConfig = {
     ...auditFields({ readOnly: true }),
   ],
   hooks: standardCollectionHooks('work-orders', {
-    beforeChange: [assertTotalsBalance],
+    beforeChange: [assertTotalsBalance, inheritShiftEfficiency],
     afterChange: [forwardProducedToNextPhase],
   }),
   timestamps: true,

@@ -14,6 +14,7 @@ import {
   pieceRateWage,
   minutesRemaining,
   assertTotalsBalance,
+  inheritShiftEfficiency,
   WORKORDER_RING,
 } from '@/workorders'
 import { HORO_DIGITS } from '@/horo'
@@ -21,6 +22,10 @@ import { HORO_DIGITS } from '@/horo'
 type HookArgs = Parameters<CollectionBeforeChangeHook>[0]
 const balance = (data: Record<string, unknown>) =>
   assertTotalsBalance({ data, req: {}, collection: undefined, context: {}, operation: 'create' } as unknown as HookArgs)
+
+// inheritShiftEfficiency is async + reads the work-shift authority via req.payload.findByID.
+const inherit = (data: Record<string, unknown>, findByID: (a: { id: unknown }) => Promise<unknown>) =>
+  inheritShiftEfficiency({ data, req: { payload: { findByID } }, collection: undefined, context: {}, operation: 'create' } as unknown as HookArgs)
 
 describe('WORKORDER_RING — the horo lifecycle', () => {
   it('walks the seven-position ring exactly (1·2·4·8·7·5·9)', () => {
@@ -115,5 +120,33 @@ describe('assertTotalsBalance — header = Σ options (double-entry, 100.0000% v
     expect(data.unitsOrdered).toBe(0)
     expect(data.unitsProduced).toBe(0)
     expect(data.unitsBackordered).toBe(0)
+  })
+})
+
+describe('inheritShiftEfficiency — the order reads efficiency back DOWN from the shift authority', () => {
+  const never = async () => { throw new Error('findByID should not be called') }
+
+  it('reads efficiencyPercent off an already-populated workShift (no fetch)', async () => {
+    const data: Record<string, unknown> = { workShift: { id: 'ws1', efficiencyPercent: 73 }, efficiencyPercent: 0 }
+    await inherit(data, never)
+    expect(data.efficiencyPercent).toBe(73)
+  })
+
+  it('fetches the shift by id and inherits its efficiency', async () => {
+    const data: Record<string, unknown> = { workShift: 'ws1' }
+    await inherit(data, async ({ id }) => (id === 'ws1' ? { id, efficiencyPercent: 166 } : null))
+    expect(data.efficiencyPercent).toBe(166)
+  })
+
+  it('leaves the order untouched when there is no shift', async () => {
+    const data: Record<string, unknown> = { efficiencyPercent: 50 }
+    await inherit(data, never)
+    expect(data.efficiencyPercent).toBe(50)
+  })
+
+  it('is best-effort: an unreachable authority keeps the prior value', async () => {
+    const data: Record<string, unknown> = { workShift: 'ws1', efficiencyPercent: 50 }
+    await inherit(data, async () => { throw new Error('db down') })
+    expect(data.efficiencyPercent).toBe(50)
   })
 })
