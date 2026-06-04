@@ -27,6 +27,7 @@ import { collectGenome, computeGenomeUuid } from '@/services/cloning'
 import { checkErpaxObservesItself } from '@/services/self-reference'
 import { listFaces, checkSeoVortexCoupling } from '@/services/website/seo-vortex'
 import { verifyAggregate, checkNoDoubleVoting, listBallots } from '@/services/voting'
+import { ruleOfLawHolds, constitutionalCode } from '@/services/legislation'
 import { checkRegistryCoupling } from '@/services/agents/blocks'
 import { checkWindowCoherence, checkStreamUuidChain, makeStream, type ClockedEvent } from '@/services/streams'
 import { checkStorageIndependence, consensusRead, memoryPut } from '@/services/storage-independence'
@@ -106,6 +107,22 @@ function warn(axis: InvariantResult['axis'], check: string, reason: string, offe
 /* ═════════════════════════════════════════════════════════════════════
  * AXIS 1 — STANDARDS (compatibility, traceability)
  * ═════════════════════════════════════════════════════════════════════ */
+
+/**
+ * Legislation — the rule of law holds. The whole constitution is enrolled in
+ * the legal code with its entrenchment intact, and no ordinary statute usurps
+ * constitutional rank or entrenchment. The same boundary `separation` puts on
+ * the branches, at the scale of the law itself — verified at every boot.
+ *
+ * @standard ISO 37000:2021 governance-of-organizations
+ * @compliance Venice Commission Rule of Law
+ */
+export function checkLegislationRuleOfLaw(_ctx: InvariantContext): InvariantResult {
+  const articles = constitutionalCode()
+  return ruleOfLawHolds()
+    ? pass('standards', 'legislation-rule-of-law', `${articles.length} constitutional articles enrolled; entrenched foundation perpetual; no statute usurps constitutional rank`)
+    : fail('standards', 'legislation-rule-of-law', 'the legal code violates the rule of law: the constitution is incompletely enrolled, an article is mis-ranked, or a statute usurps the entrenched foundation')
+}
 
 /** Every Payload collection file cites at least one `@standard` / `@accounting` / `@compliance` / `@audit` JSDoc tag. */
 export function checkStandardsTagOnEveryCollection(ctx: InvariantContext): InvariantResult {

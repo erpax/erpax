@@ -48,6 +48,7 @@ export async function runAllInvariants(
 
   // ── Axis 1: standards ───────────────────────────────────────────
   if (!skip.has('standards')) {
+    results.push(C.checkLegislationRuleOfLaw(ctx))  // the society's own law: the rule of law holds
     results.push(C.checkStandardsTagOnEveryCollection(ctx))
     results.push(C.checkStandardsFolderShape(ctx))
     results.push(C.checkChainHasStandards(ctx))
