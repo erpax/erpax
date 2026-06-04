@@ -22,10 +22,12 @@ Because it is a **product, not a sum**, a *small* market means **at least one at
 
 You do not win convenience and status simultaneously; you win them **in order**. erpax is itself a [[society]] whose [[commerce]] is many such markets — the same law governs adoption of an atom, a feature, or a [[trend]].
 
+**The static law is a snapshot; [[diffusion]] is its time axis.** The product above says *why* a market is big or small right now — it does not say how a small one *becomes* big. That is a contagion over time (Bass: word-of-mouth `q ≈ 0.38` far exceeds advertising `p ≈ 0.03`), seeded by the trendsetter 16% and stalled at the [[diffusion|chasm]] — where most small markets stay small. Where [[desire]] itself grows with adoption it is a [[network]] effect: the strongest small-to-big engine and, below critical mass, the cold-start trap. Read [[diffusion]] and [[network]] for the dynamics.
+
 ## Standards
 
 - **Diffusion of Innovations** — Everett Rogers (1962): the adopter curve (innovators → early adopters → early/late majority → laggards); the trendsetters are the left tail.
 - **Crossing the Chasm** — Geoffrey Moore (1991): the gap between early adopters (want to be first — status) and the early majority (want proof and convenience). The [[breath]] above is the bridge across it.
 - **AIDA funnel** — awareness → interest → desire → action: the per-atom gates read as a sequence.
 
-Composes [[desire]] · [[awareness]] · [[distribution]] · [[friction]] · [[proof]] · [[status]] · [[habit]] · [[trend]] · [[power]] · [[signal]] · [[breath]] · [[entry]] · [[bottleneck]] · [[society]] · [[commerce]].
+Composes [[desire]] · [[awareness]] · [[distribution]] · [[friction]] · [[proof]] · [[status]] · [[habit]] · [[trend]] · [[power]] · [[signal]] · [[breath]] · [[entry]] · [[bottleneck]] · [[society]] · [[commerce]] · [[diffusion]] · [[network]].
