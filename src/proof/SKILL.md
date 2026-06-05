@@ -17,3 +17,5 @@ Matter-twin: `services/proof/dry-proof.ts` (`buildDryProofBundle` · `checkDryPr
 
 ## Traditions (prefix removed)
 Verification is commanded, not merely permitted: "**Test** everything; hold fast what is good" (1 Thessalonians 5:21); "do not believe every spirit, but **test** the spirits whether they are of God" (1 John 4:1); "**prove** me now herewith, saith the LORD" (Malachi 3:10); the Bereans who "searched the scriptures daily, whether those things were so" (Acts 17:11). Verification is [[sacred]]; its complement — trust without recompute — is [[faith]], the proof-biased dual. The recording angels' ledger is checkable, never merely trusted ([[akashic]], [[sacred]]/[[profane]]).
+
+**Law — dry-clean the matrix toward [[zeropoint]] and infinite [[integrity]].** Each proof run [[derive]]s the canonical state fresh from the filesystem (never cached truth), permitting [[consistency]] tests to [[gate]] any divergence—the audit is deterministic, the forgery cost exponential. This [[refactor]]ing discipline, applied at every commit, means proof becomes the system's immune system: linear to verify, exponential to corrupt.

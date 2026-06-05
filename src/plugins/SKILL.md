@@ -45,3 +45,5 @@ export const erpaxPlugin = (opts: Options = {}): Plugin => (config) => {
 - Mutating the incoming config in place instead of returning a merged copy.
 - Overwriting `config.collections` instead of appending.
 - Version drift between the plugin's `payload` peer range and the host app (keep identical).
+
+**Law — [[law]]: Reference the imports to skills ⇒ DRY, clean, auto-configurable.** The import graph IS the config; the system wires itself. Every plugin is a [[merge]] of its imports into a single `(config) => config` transformer, and the array of plugins in `config.plugins` itself emerges from the import graph—not a hand-maintained list. Each plugin module IS a skill, and plugins compose [[fractal]]ally via [[identity]] entanglement; never declare a plugin's shape except by importing its index.ts, never build the plugin array except by computing it from fs.

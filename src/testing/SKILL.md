@@ -13,3 +13,5 @@ Seeds are identified by content — same input ⇒ same fixture, so two runners 
 
 Matter-twin: `src/testing/config-discovery` (runtime introspection + coercion/validation), `src/testing/test-seed-factory` (3-level seeds + `SEED_VALIDATION_REGISTRY` + transactional cleanup), `src/testing/test-setup` (`IsolatedTestEnvironment` · `ParallelTestRunner` · `SeedSnapshot`).
 Composes: [[config]] · [[schema]] · [[collections]] · [[seed]] · [[spec]] · [[proof]] · [[akashic]] · [[identity]] · [[merge]] · [[fractal]] · [[society]].
+
+**Law — [[gate]]** Testing enforces one consistency-invariant: the instant any field type, access rule, enum, or [[schema]]-to-[[config]] alignment breaks, the test fails. Rather than asserting the happy path (what *should* work), each test is a [[consistency]] tripwire — config-driven, so new fields auto-add to `SEED_VALIDATION_REGISTRY` without hand-kept boilerplate ([[collapse]]). The invariant runs at every [[seed]] level ([[fractal]]), ensuring the moment [[akashic]] diverges from runtime, the gate snaps shut.

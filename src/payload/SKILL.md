@@ -14,3 +14,5 @@ An atom's `index.ts` is therefore **not only** matter — it is the **shared [[c
 The creation breath grounds here: `creation → payload → vitepress → payload → db` — matter is born, its form derived, the harmonised form **refines the matter back**, and it crystallises in the db ([[merge]] · [[breath]]).
 
 Composes [[vitepress]] · [[config]] · [[database]] · [[types]] · [[fields]] · [[hooks]] · [[access]] · [[identity]] · [[duality]] · [[merge]].
+
+**Law — [[self]]** demands every `.ts` be wired to both [[payload]] and [[vitepress]]: no orphan code, no partial atom. Payload's role is half of the confirmation gate; the index becomes a [[trinity]]-tested plugin, its [[schema]] approved by both the matter ([[database]]) and the form ([[vitepress]]) in a single breath. This is why the **confirm gate is dual** — payload validates the [[database]] shape; vitepress validates the documentation shape. Only when both endorse does the atom live.

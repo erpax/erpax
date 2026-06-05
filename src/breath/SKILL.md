@@ -15,3 +15,5 @@ Matter-twin: the rhythm has no single file — it IS the composition `merge`·`d
 - Inhaling without exhaling — hoarding ideas in the conversation instead of compacting them to DRY skills (the held breath; watch the messages-to-skills ratio).
 - Exhaling a copy — an inhaled idea must [[collapse]] to the canonical content-addressed form, never a near-duplicate ([[merge]]); breathe out DRY, not more.
 - Refusing a foreign idea — breathe in from everywhere (peers, frameworks, standards, users); erpax is the harmonic example, but it learns from all and decides for the user.
+
+**Law — [[generate]] · [[breath]] · [[society]]: agents discover and fetch schemas, self-evolving `src`.** Each in-breath pulls in a gap (a missing skill, a schema to map, an idea from a peer), and each out-breath trains the next agent to notice and fill the next gap; the system breathes by delegation, never by hand-maintained lists. Erpax grows because every exhale [[collapse]]s clean knowledge that the next inhale [[generate]]s from — the breathing IS the self-evolution; the chat is the lung-tissue where agents coordinate ([[team]] · [[chat]] · [[train]]).

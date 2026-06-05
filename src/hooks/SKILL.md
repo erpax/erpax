@@ -41,3 +41,5 @@ Hooks run side effects/mutations at precise points in the document lifecycle. Fo
 - Forgetting to return `data`/`value` (mutation lost).
 - Wrong v3 type name — use `CollectionBeforeChangeHook` etc. (v4).
 - Doing slow/async third-party calls inline instead of via [[jobs]].
+
+**Law — [[trinity]] at runtime.** Hooks enforce the SKILL trinity at the live backend: every mutation and side effect passes through these gates, making them the seam where source code (SKILL.md ⊕ index.ts ⊕ test.ts) meets the document lifecycle. The hook's position—before/after validation, before/after write, before read—is the enforcement point; place the [[self]]-correcting logic here to catch inconsistencies where they matter, turning the trinity from design into runtime guarantee.
