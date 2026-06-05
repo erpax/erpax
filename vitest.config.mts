@@ -29,6 +29,11 @@ export default defineConfig({
       // are empty (moved to tests/_attic/ for the local deletion pass).
       // Playwright `*.e2e.spec.ts` lives in tests/e2e/ and runs through
       // playwright.config, NOT vitest.
+      // The architecture's test slot: one `test.ts` per folder (a bare `test.ts`
+      // is NOT matched by `*.test.ts`, so it needs its own glob). The `*.test.ts`
+      // globs stay for folders not yet merged-by-extension to `test.ts`.
+      'src/**/test.ts',
+      'src/**/test.tsx',
       'src/**/*.test.ts',
       'src/**/*.test.tsx',
     ],

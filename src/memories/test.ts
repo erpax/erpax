@@ -1,0 +1,11 @@
+import { describe, it, expect } from 'vitest'
+import createAccountingCollection from '@/memories'
+
+// Unified-node invariant test for the `memories` collection.
+describe('memories collection node', () => {
+  it('exports a valid collection config', () => {
+    expect(createAccountingCollection.slug).toBe('memories')
+    expect(Array.isArray(createAccountingCollection.fields)).toBe(true)
+    expect(createAccountingCollection.fields.length).toBeGreaterThan(0)
+  })
+})
