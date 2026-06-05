@@ -162,7 +162,7 @@ export { default as ProjectMilestones } from '@/customers/projects/project/miles
 // Work orders — the etrima execution leaf (2.05M rows; `units = Σ(options)` double-entry,
 // derived horo lifecycle, the forward! conveyor, piece-rate wage). Supersedes the former
 // 2-field idealized MRP stub; carries the canonical slug `work-orders`.
-export { default as WorkOrders } from '@/workorders'
+export { default as WorkOrders } from '@/work/orders'
 export { default as WorkflowDefinitions } from '@/workflow/definitions'
 export { default as WorkflowInstances } from '@/workflow/definitions/workflow/instances'
 
@@ -176,19 +176,19 @@ export { default as WorkCenters } from '@/work/centers'
 // Work shifts — the etrima per-actor-day labour aggregate (376K rows; the efficiency + wage
 // AUTHORITY: wage = Σ(produced·unitSeconds·payPerHour/3600/mpw), verified €4.68M). Supersedes
 // the former idealized per-order stub; carries the canonical slug `work-shifts`.
-export { default as WorkShifts } from '@/workshifts'
+export { default as WorkShifts } from '@/work/shifts'
 export { default as Operations } from '@/work/centers/operations'
 export { default as Routings } from '@/items/bills/of/materials/work/orders/routings'
 export { default as OperationRuns } from '@/items/bills/of/materials/work/orders/operation/runs'
 
 // Manufacturing — the lot funnel (production order → variant roll-up → routing chain → phase catalog)
 export { default as Lots } from '@/lots'
-export { default as LotVariants } from '@/lotvariants'
-export { default as LotWorkPhases } from '@/lotworkphases'
-export { default as WorkPhases } from '@/workphases'
+export { default as LotVariants } from '@/lot/variants'
+export { default as LotWorkPhases } from '@/lot/work/phases'
+export { default as WorkPhases } from '@/work/phases'
 // The dispatch layer — cartons + their lines (etrima packs/pack_items, 119k/201k rows)
 export { default as Packs } from '@/packs'
-export { default as PackItems } from '@/packitems'
+export { default as PackItems } from '@/pack/items'
 
 // Tagging system (anything is taggable — less collections, more features)
 export { default as Tags } from '@/tags'

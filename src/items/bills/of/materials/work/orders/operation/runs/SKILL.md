@@ -5,7 +5,7 @@ description: Use when recording actual production at one operation × work-cente
 
 # operation-runs
 
-Execution of one routing step on a work-order. The per-operation production record tracked by [[WorkOrders]].
+Execution of one routing step on a work-order. The per-operation production record tracked by [[work/orders|WorkOrders]].
 
 This is the single-folder collection node: `index.ts` (schema + standards banners),
 co-located `seed.ts` (opening data) and `index.test.ts` (invariant checks) live here.
@@ -19,4 +19,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls production-control
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[WorkOrders]].
+Composes: [[work/orders|WorkOrders]].

@@ -21,4 +21,4 @@ One folder per collection ⇒ no scatter ⇒ no drift.
 - SOX §404 internal-controls production-control
 - ISO-27001 A.5.23 cloud-service-tenant-isolation
 
-Composes: [[Operations]] · [[work/centers]] · [[WorkOrders]] · [[accounting]] · [[hooks]] · [[access]].
+Composes: [[Operations]] · [[work/centers]] · [[work/orders|WorkOrders]] · [[accounting]] · [[hooks]] · [[access]].

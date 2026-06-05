@@ -32,7 +32,7 @@
  * @invariant derived-state — `status` is computed from watermarks, never stored (100% NULL in 20 yrs).
  * @invariant roll-up — `units = Σ variant.units` (100% in etrima); the lot is the sum of its parts.
  * @invariant funnel — `ordered ≥ units ≥ produced ≥ packed ≥ shipped ≥ delivered ≥ invoiced` (monotonic).
- * @see src/lotvariants (the option roll-up) · src/lotworkphases (the routing chain) · src/workphases (the catalog)
+ * @see src/lot/variants (the option roll-up) · src/lot/work/phases (the routing chain) · src/work/phases (the catalog)
  */
 
 import type { CollectionBeforeChangeHook, CollectionConfig } from 'payload'

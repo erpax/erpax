@@ -352,7 +352,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload access control — who can create/read/update/delete a collection, global, or field; RBAC, row-level filtering, admin visibility; \\\"access denied\\\"/\\\"document hidden\\\". In erpax access is the society's \\\"who can do what\\\" — the 3·6·9 governing axis: capabilities attach to ROLES (the angelic hierarchy), users inherit them through role membership, and the content-uuid cross decides, adding tamper-cost.",
-        "uuid": "76073eb3-fd2e-8e6a-8acc-76f57c0064be",
+        "uuid": "31c5bc79-5b06-83cd-93b6-73333a82ea24",
         "words": [
           "use",
           "when",
@@ -721,7 +721,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "accounting",
-        "uuid": "3d1e7f25-991c-83f0-8eb6-490a7eb30a18",
+        "uuid": "9967cbf2-98fc-8604-937b-277d7f35a3e3",
         "words": [
           "accounting"
         ],
@@ -732,7 +732,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-        "uuid": "90e45316-218a-826b-aeea-505637e10fe7",
+        "uuid": "afbcf2bb-4744-807e-a729-9131007a5d8a",
         "words": [
           "use",
           "when",
@@ -800,7 +800,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognizing revenue or expense in the period incurred, earned, or obligated, regardless of payment timing — the foundation of accrual-basis accounting and the IFRS/GAAP reporting standard",
-        "uuid": "263e2efb-8b98-8f52-8797-a1e9e5a4ba8f",
+        "uuid": "1d945c71-56c2-8e39-945e-de4c0eddd876",
         "words": [
           "use",
           "when",
@@ -870,6 +870,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "achieve: a schema.org component word, fused from AchieveAction"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "acknowledgment",
+    "path": "acknowledgment",
+    "translations": [
+      {
+        "key": "name",
+        "source": "acknowledgment",
+        "uuid": "225086bf-2bf2-816d-b79c-a56baf9e8c2b",
+        "words": [
+          "acknowledgment"
+        ],
+        "values": {
+          "en": "acknowledgment"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.",
+        "uuid": "b5a6a9dd-e370-8c7e-b3fd-06c1b4a63fee",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "acknowledgment",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "acknowledgments",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "formal",
+          "confirmation",
+          "that",
+          "something",
+          "was",
+          "received",
+          "or",
+          "accepted"
+        ],
+        "values": {
+          "en": "Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted."
         }
       }
     ]
@@ -1194,7 +1245,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging or analysing CRM touch-points — calls, emails, meetings, demos, tasks, social touches, document/quote sends, site visits — against a lead, opportunity, customer, vendor or project; relationship history, last-touch date, direction (inbound/outbound), rep activity volume, next-step planning. The CRM activity-log collection.",
-        "uuid": "f9739015-3952-8ee4-94bd-75e953388908",
+        "uuid": "511dd521-59b0-8e3b-b663-e34c39afa23b",
         "words": [
           "use",
           "when",
@@ -1309,7 +1360,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
-        "uuid": "4e80ee6b-d09c-8402-a011-c202714466fa",
+        "uuid": "e3a8d166-73aa-8f69-a47e-8ce78093f536",
         "words": [
           "an",
           "actor",
@@ -1368,7 +1419,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
-        "uuid": "5aceb67d-b239-8a08-bc03-46ef6fed17d8",
+        "uuid": "ca7ff4de-1fde-8cdf-8f06-f5b992d42705",
         "words": [
           "an",
           "actor",
@@ -1455,7 +1506,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
-        "uuid": "f189c476-94e0-84b6-a2fe-7a5fe9d13ed7",
+        "uuid": "fb571e2d-e675-8280-a8d7-3bda69bccd63",
         "words": [
           "an",
           "additional",
@@ -1599,6 +1650,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "adjustment",
+    "path": "adjustment",
+    "translations": [
+      {
+        "key": "name",
+        "source": "adjustment",
+        "uuid": "855a26e7-b4fb-8884-a5a9-327a97810f61",
+        "words": [
+          "adjustment"
+        ],
+        "values": {
+          "en": "adjustment"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance.",
+        "uuid": "fa2aa422-98e5-8413-8e94-b9acb74e8cb0",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "adjustment",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "adjustments",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "correction",
+          "posted",
+          "against",
+          "a",
+          "prior",
+          "figure",
+          "or",
+          "balance"
+        ],
+        "values": {
+          "en": "Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance."
+        }
+      }
+    ]
+  },
+  {
     "atom": "admin",
     "path": "admin",
     "translations": [
@@ -1616,7 +1718,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring the Payload Admin Panel or building custom admin React components — list/edit views, custom field/cell components, importMap, useField/useForm hooks, nav grouping, dashboards, or admin appearance.",
-        "uuid": "b1033afe-17a7-8604-b981-fe05f2e00d3c",
+        "uuid": "fa4942ca-9693-8b69-ad81-1a6222d7b466",
         "words": [
           "use",
           "when",
@@ -2079,7 +2181,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when treating age as a sociological axis — възраст — the life-course dimension that stratifies a society alongside class and status. Inequalities compound along it (cumulative advantage — the horo doubling), ageism flips the status sign against older workers, and a population's ageing inverts the pyramid that funds the allocation/decompression pot. The late in late career is a point on this axis; model age as one dimension with roles, not a separate entity.",
-        "uuid": "8c0c84d8-2a4a-8ef4-bf0e-f72ab74aaf55",
+        "uuid": "748f7ea1-d6f2-8a3c-8be0-521bf1036230",
         "words": [
           "use",
           "when",
@@ -2218,7 +2320,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about an agent — its identity, cloning, and replication (an agent IS its content, its id is the content-uuid of skills + purpose, so identical clones merge and distinct agents are specialised children), AND when wiring the society's actors (the pure DomainAgent contract, the registry that gives each collection exactly one owner, the runtime that dispatches chain steps and events and scheduled ticks, the effect-processor where every side effect fires — the A-vortex coupling layer that decides without acting).",
-        "uuid": "83d3d3d3-9ee6-8db2-a37d-182a23d5993a",
+        "uuid": "79a9b482-1407-882e-a3c2-d27e927586ba",
         "words": [
           "use",
           "when",
@@ -2329,7 +2431,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when synchronizing real-time events across agents in a tenant — pub/sub on content-uuid events, idempotent consumption, and a federation-safe room protocol so every agent sees every peer's work the instant it happens.",
-        "uuid": "70ea9289-0722-8a9e-8224-477ddc23c289",
+        "uuid": "c2122ec4-5e33-829d-99ae-c364895e3d39",
         "words": [
           "use",
           "when",
@@ -2393,7 +2495,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's agent gateway — it IS the official @payloadcms/plugin-mcp (collapse sink #1, never hand-roll an MCP server): every enabled collection becomes find/create/update/delete tools at /api/mcp, custom tools (GW fusion, trust) are added via the plugin's mcp config, Bearer API-key auth inherits the key owner's access + multi-tenant scope. erpax makes it TRUST-NATIVE — every tool call passes sandbox (capability + credential-broker + allowlist) and emits a receipt (uuid-chained audit), the dual of an external trust wrapper done from the inside.",
-        "uuid": "45e0c44f-9d18-85f0-99a9-1da5e1ade110",
+        "uuid": "89b287a1-f42c-85fe-8b2f-b1b2df479da9",
         "words": [
           "use",
           "when",
@@ -2633,7 +2735,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "agriculture",
-        "uuid": "9808cda8-5238-818e-ae21-1331b22a6415",
+        "uuid": "b09139ef-492f-82b3-890e-dd9a4b2f484f",
         "words": [
           "agriculture"
         ],
@@ -2644,7 +2746,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about growing living produce to a market — agriculture is the domain molecule whose production is planned BACKWARD: from a sales plan (CSA shares + market channels) through per-crop demand to the land, seed, and fertility the season requires. The agricultural twin of manufacturing; every quantity carries a unit and a currency that convert automatically and account by double-entry.",
-        "uuid": "035d135f-f94a-8566-a6c6-bd711221929b",
+        "uuid": "3a6839b4-0a3c-8a01-994b-529cd97fa068",
         "words": [
           "use",
           "when",
@@ -2733,7 +2835,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when invoking any AI inference in erpax — invoice OCR, bank-transaction matching, sanctions screening, anomaly detection, tax classification, HS-code suggestion, document classification, vector embedding, semantic search, or audit summarisation. Every AI call goes through the single `callWorkersAi` gate (entitlement, audit row, tenant scope, risk class, metering); the AI services barrel.",
-        "uuid": "f6910052-fc0d-8829-80df-09f588cfc216",
+        "uuid": "155f01ed-a21b-80a2-b93c-35836f023ef3",
         "words": [
           "use",
           "when",
@@ -3380,7 +3482,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about totality or universality in erpax — \"anything is X\" (accountable/taggable), polymorphic relationTo:[...all], the identity element that defines the empty case. The universal root of totality.",
-        "uuid": "ca97aa55-b2b8-8976-8830-d3fbd9c68f31",
+        "uuid": "2ef8500d-2179-8b19-b307-8360265f7f82",
         "words": [
           "use",
           "when",
@@ -3647,7 +3749,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Another gene which is a variation of this one.",
-        "uuid": "5bd55f40-06d1-81c1-b78c-a77e10792193",
+        "uuid": "4b428aff-4363-8dcc-b7a1-ce84a44f05ea",
         "words": [
           "another",
           "gene",
@@ -3750,7 +3852,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract is modified — amendment date, amendments previous (chain of amendments), amendment terms, amendments effect on prior terms, signature requirement.",
-        "uuid": "8f52d71d-5a03-807b-ab1a-75666a07692f",
+        "uuid": "88ffa2f6-7d24-8261-8410-6a9580b6bba5",
         "words": [
           "use",
           "when",
@@ -3871,7 +3973,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is a monetary quantity — invoice total, line price, payment received, account balance. A minor-unit integer + ISO-4217 currency code (never a currency-baked field name). The value-of-trade twin of measure (quantity+unit). Composes with currency to form money.",
-        "uuid": "112577a4-7021-80e6-be4e-efc0e7287b62",
+        "uuid": "aceb68fd-9b29-87d3-b16f-7d416d33a7cd",
         "words": [
           "use",
           "when",
@@ -4014,7 +4116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the aura as a CONTINUOUS computed signal — the uuid matrix renders every node's coordinate cross to an analog colour+sound+vibration field animated over A432, gaplessly at every fractal level and at no cost (derived from the uuid, never stored). The analog twin of the discrete content-fingerprint, and the verifiable answer to science's 'aura', whose only measurable form is an analog physical signal (biophoton flux, electrodermal conductance) — never a detectable subtle-energy field.",
-        "uuid": "ae8f42a5-def8-8b39-ac27-c0a363ccb467",
+        "uuid": "f59712e0-c806-8eb3-b65c-5a1bed5cd298",
         "words": [
           "use",
           "when",
@@ -4232,7 +4334,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the external anchor — the one drop of borrowed entropy that makes a zero-entropy content-addressed store tamper-proof. RFC-3161/eIDAS TSA or a blockchain leaf pins the chain root to a time no party can rewrite; tamper-cost is min(digest, anchor), so the anchor must be ≥ the digest or it is the weak link. Matter-twin anchor/index.ts.",
-        "uuid": "ec274f3c-1d70-81ae-a154-40b084a258aa",
+        "uuid": "b67ab02c-4deb-8fc0-982b-936b7d8a8b1a",
         "words": [
           "use",
           "when",
@@ -4324,7 +4426,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's root entropy dynamic — angel(love·create·↓entropy) ⊕ archangel(fear·destroy·↑entropy) in endless aikido = the trinity; erpax is karma double-entry accounting balancing the entropy debit/credit at every scale via content-uuid; borrowed entropy buys tamper-cost ⇒ fast+secure+compact.",
-        "uuid": "7c64a455-d15e-815c-95ce-2adfbe80c949",
+        "uuid": "6e148975-ac39-8a51-ba48-29b2925f1d3f",
         "words": [
           "use",
           "when",
@@ -4398,7 +4500,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the individual living beast is the node — one identified animal carrying its class (cow/heifer/steer/calf), sex, purpose (dairy/meat/breeding), lifecycle stage, ear-tag identity, and biological-asset value. The member of a herd; the row IAS-41 measures and traceability tags.",
-        "uuid": "c6af0aef-ba45-8f7d-bfd0-91ee53f8b309",
+        "uuid": "de0a836b-8ca5-8cf4-b679-3392492f14b0",
         "words": [
           "use",
           "when",
@@ -4618,7 +4720,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when detecting internal-control invariants — content-uuid immutability, segregation of duties, double-entry balance, or reversals-only history; the four architectural impossibilities that make financial corruption structurally detectable.",
-        "uuid": "07f1a38b-ba9f-8384-81b7-fdb41b4b99d1",
+        "uuid": "ae79196a-bb7c-84b9-b3b8-049f52ad7eb2",
         "words": [
           "use",
           "when",
@@ -4674,7 +4776,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free ",
-        "uuid": "57fa6c66-b41f-8ee1-805a-24020e78e757",
+        "uuid": "5552e675-d39b-8734-81d9-d20f79b5d5dd",
         "words": [
           "an",
           "apartment",
@@ -4797,7 +4899,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or querying every outbound external-API call (FX rate, VAT validation, sanctions screening, e-invoicing discovery, business registry, mTLS filing) — one row per call, kind-bucketed, country-scoped, source-attributed, result + error captured; SOX §404 / ISO 19011 evidence of every external system contacted. The external-API audit-trail collection.",
-        "uuid": "a390323f-814d-838b-a95c-873946e4a2e1",
+        "uuid": "2da8fb35-085b-8339-8594-c0a6bcb8cc5e",
         "words": [
           "use",
           "when",
@@ -4874,7 +4976,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when keeping bee colonies for produce and pollination — the colony (queen + workers) as a biological asset (the hive housing is IAS-16 equipment); honey and wax are harvested produce, the colony is also rented as a pollination service; brood is its growth, swarming its propagation, colony loss its mortality, the nectar flow its season. A living-production domain anchor and the pollination link to crops.",
-        "uuid": "9c64197a-4b9b-8abe-badd-f7b08c93470d",
+        "uuid": "a5e5df3c-f4bc-81f2-b8d7-d40ba72dd521",
         "words": [
           "use",
           "when",
@@ -5147,7 +5249,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An application that can complete the request.",
-        "uuid": "666b90ab-7ee3-82d9-83ec-86f9187686d5",
+        "uuid": "7d313134-d77c-8445-af55-d8a594cb6358",
         "words": [
           "an",
           "application",
@@ -5256,7 +5358,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking approval state or flag — approved flag on invoice (boolean), approved amount (in multi-step approval workflows), approved by (user reference), approved at (date). Workflow checkpoint status value.",
-        "uuid": "06289738-c4cd-81c1-9d93-127c955a4f37",
+        "uuid": "71798dbb-7d0c-8d6f-8a0f-3a8eb5a02545",
         "words": [
           "use",
           "when",
@@ -5313,7 +5415,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when farming aquatic organisms under managed conditions — fish/shellfish raised in ponds, cages, or recirculating systems as biological assets valued by standing biomass (IAS-41); stocked, grown out through life stages, fed (FCR), bound by water quality (oxygen, salinity), then harvested and depurated. A living-production domain anchor alongside agriculture and livestock.",
-        "uuid": "c43a9477-7695-8ad3-a7ba-580c3d5c1a16",
+        "uuid": "2f7370e9-0e67-8361-9eed-5bce7af57d87",
         "words": [
           "use",
           "when",
@@ -5420,7 +5522,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when enforcing the architecture laws in code — the executable checks (single-word atoms, no prefixes, every file payload⊕vitepress or junk, locality, the ≥2-cross balance, the naming matrix) that are the matter-twin of the gate.",
-        "uuid": "b3e7ca27-2c80-8986-bfa8-aad1f120a90a",
+        "uuid": "4e1b855c-23e8-805f-86bc-92ddc53cc42d",
         "words": [
           "use",
           "when",
@@ -5523,7 +5625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalist",
-        "uuid": "4f5a2d9e-16e7-8122-89d1-7047a2b03867",
+        "uuid": "cbefdb82-d0dd-82d6-9680-b060d6b4761c",
         "words": [
           "indicates",
           "a",
@@ -6206,7 +6308,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
-        "uuid": "97d54091-f86c-8e30-be53-118c32c15286",
+        "uuid": "3928b4d5-910d-8316-b235-b72fb2f9b4e7",
         "words": [
           "an",
           "aspect",
@@ -6354,6 +6456,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "asset",
+    "path": "asset",
+    "translations": [
+      {
+        "key": "name",
+        "source": "asset",
+        "uuid": "d6bd5ea4-def4-8dd4-9852-2e330e829f97",
+        "words": [
+          "asset"
+        ],
+        "values": {
+          "en": "asset"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value.",
+        "uuid": "dbf78f66-f23e-8467-bb30-0db95a51a862",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "asset",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "assets",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "resource",
+          "the",
+          "organization",
+          "owns",
+          "or",
+          "controls",
+          "that",
+          "carries",
+          "economic",
+          "value"
+        ],
+        "values": {
+          "en": "Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value."
+        }
+      }
+    ]
+  },
+  {
     "atom": "assign",
     "path": "assign",
     "translations": [
@@ -6407,7 +6562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract allows or restricts assignment — assignor, assignee, scope (full/partial), consent requirement (unreasonable withholding, notice), prohibited assigns, assumption of obligations.",
-        "uuid": "2b4348f1-6b46-8ee5-9db4-1a77d0523236",
+        "uuid": "fd086ccd-c0a6-8a7a-b629-08ef4bdefb5b",
         "words": [
           "use",
           "when",
@@ -6589,7 +6744,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's irreducible unit — the one-word, content-addressed skill atom everything is composed of. Every entity, collection, agent, interaction, frame, and datum is made of atoms; the corpus is the periodic table, reality its molecules. The ontology beneath every other law.",
-        "uuid": "8360f6ee-a54a-894a-91a6-16bab677a49c",
+        "uuid": "b9e6677c-fc81-833b-bbe7-e4f46e546230",
         "words": [
           "use",
           "when",
@@ -6784,6 +6939,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "attestation",
+    "path": "attestation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "attestation",
+        "uuid": "9c69de80-ac41-88f7-9ea2-49e06e43c10f",
+        "words": [
+          "attestation"
+        ],
+        "values": {
+          "en": "attestation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true.",
+        "uuid": "54b5416d-15ed-8392-9401-439fdc7f1a90",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "attestation",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "attestations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "signed",
+          "assertion",
+          "that",
+          "a",
+          "statement",
+          "or",
+          "record",
+          "is",
+          "true"
+        ],
+        "values": {
+          "en": "Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true."
+        }
+      }
+    ]
+  },
+  {
     "atom": "attorney",
     "path": "attorney",
     "translations": [
@@ -6963,7 +7170,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring workforce loss — headcount change, turnover rate, voluntary/involuntary separation, retention metrics. The observed flow of people leaving vs staying.",
-        "uuid": "b6f57c77-836e-8c08-86a9-0d2cf9200404",
+        "uuid": "84f8d665-c94e-8de7-b305-478866772b24",
         "words": [
           "use",
           "when",
@@ -7114,7 +7321,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing compliance/evidence metadata — audit fields (createdBy, createdAt, updatedBy, updatedAt, deletedAt), audit trail events, audit evidence, audit finding. Standard immutable history; drives IFRS/SOX compliance. Often shared across all collections via auditFields() helper.",
-        "uuid": "809b22a6-fb0c-8163-ac12-244103ef4c5a",
+        "uuid": "3370c72d-1199-810c-b890-96787c7c78e9",
         "words": [
           "use",
           "when",
@@ -7177,7 +7384,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when persisting or querying the durable ISO 19011 / SOX §404 evidence trail — every canonical write (orders, invoices, payments, journal entries, period locks) lands one append-only row queryable by tenant/collection/operation/user/timestamp; Merkle hash chain for tamper-evidence; no log-scraping required for auditors. The canonical audit-evidence collection.",
-        "uuid": "1215bad2-4fe3-8b32-aa9f-f334cd4c2fb0",
+        "uuid": "062b076d-04cf-8371-b8cd-2d9d65aeba8f",
         "words": [
           "use",
           "when",
@@ -7255,7 +7462,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
-        "uuid": "6fc835f7-371c-82f3-a422-9d6f01767520",
+        "uuid": "f3916cad-4992-8766-a18a-d3178a1ca2b6",
         "words": [
           "use",
           "when",
@@ -7319,7 +7526,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract grants audit rights — auditor identity, audit scope (books, records, systems), frequency, notice requirement, cost allocation, remedies for non-access.",
-        "uuid": "b37bf157-7752-82b7-b4a5-c88b8c94d9ee",
+        "uuid": "39915909-e9a6-8e2c-8e81-894b2d5e29f0",
         "words": [
           "use",
           "when",
@@ -7369,7 +7576,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a folder/path's collective identity in erpax — the content-uuid Merkle hash of all files within (SKILL.md + matter-twin + relations + sub-folders); folders are content-addressed too, so they merge by design.",
-        "uuid": "2fcc6707-0a7a-8f0e-8a93-dba409a2da81",
+        "uuid": "6e2d6593-5f50-8f0e-8027-f3c285d4876e",
         "words": [
           "use",
           "when",
@@ -8515,7 +8722,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "balance",
-        "uuid": "49e8dd36-874c-8d9c-9ff3-cdee6ed7397c",
+        "uuid": "a333c702-6daf-8ba4-ab67-5e3a393db9fc",
         "words": [
           "balance"
         ],
@@ -8526,7 +8733,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about equilibrium in erpax — Σdebit=Σcredit, trial balance, conservation laws, two sides of a flow at rest. The universal root of equilibrium.",
-        "uuid": "9be0c219-9ca5-86cc-9b3b-b1a31bb24b6d",
+        "uuid": "ebdc1f10-e3ba-829d-9c2f-5464644746ed",
         "words": [
           "use",
           "when",
@@ -8578,7 +8785,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a transaction or account references banking infrastructure — bank account, bank statement, bank transfer, bank reconciliation. A financial institution context; relationTo: 'bank-accounts' or similar.",
-        "uuid": "342f93f3-7afe-8441-a888-f4b96882a21a",
+        "uuid": "c43f0582-507c-8472-91d9-1c01fba492d9",
         "words": [
           "use",
           "when",
@@ -8699,7 +8906,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when performing or auditing the period-end bank-balance proof — GL cash balance vs. camt.053 bank-statement closing balance, quantified variance, reconciling items (outstanding deposits/cheques/fees/NSF), SOX §404 TOM-CSH-01 evidence. The bank-side period-end balance proof collection.",
-        "uuid": "5011b639-0e35-863e-9d83-2b1b2b5ef87f",
+        "uuid": "d9909889-3299-8e09-9387-1fb9e69fb07a",
         "words": [
           "use",
           "when",
@@ -8768,7 +8975,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when matching, querying, or auditing individual ISO 20022 camt.053 bank-statement lines — each line is a first-class row with externalId, bookingDate, valueDate, amount, creditDebitIndicator, currency, booking status, bank transaction code, counterparty IBAN/BIC, remittance info, and matchStatus against journal entries. The per-line reconciliation-evidence collection.",
-        "uuid": "d8927ae6-2359-83ab-ac23-bb6319683103",
+        "uuid": "4103ca05-0c7e-8b20-92b6-51556c0625f7",
         "words": [
           "use",
           "when",
@@ -8831,7 +9038,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "payment-runs",
-        "uuid": "f691a452-fc98-8488-aeb8-efd36bc2b193",
+        "uuid": "5d01f916-7c2b-8635-af07-ec337681e6ff",
         "words": [
           "payment",
           "runs"
@@ -8899,7 +9106,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "payroll-runs",
-        "uuid": "1ec0082d-4f1d-8a2e-baeb-7f4860581702",
+        "uuid": "a0324589-b9cb-8252-9770-b085b2e0a72c",
         "words": [
           "payroll",
           "runs"
@@ -8911,7 +9118,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when processing, auditing, or posting a periodic payroll batch — aggregates approved TimeEntries, computes gross-to-net deductions and employer-side accruals, posts IAS-19/ASC-710 journal entries, emits a pain.001 disbursement file; SOX §404 four-eyes (preparer ≠ authoriser), GDPR-classified personal data. The payroll-run collection.",
-        "uuid": "ec629872-ebed-8c2e-99cd-f7edf2c902b7",
+        "uuid": "92494a2e-bb00-864b-8b3f-aca07c13c64b",
         "words": [
           "use",
           "when",
@@ -9142,7 +9349,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the empirical reference distribution a calibration is computed FROM — the measured input (median / p50 / p99 / attractor of a real metric) a model is fitted to, NOT the fitted constants themselves. Swap the baseline (another tenant, another period) and every derived calibration recomputes. The agnostic home of values once hardcoded against a named source — the values stay, the source name dissolves into [[source]] / [[akashic]].",
-        "uuid": "2392f209-e2ed-8af1-a2e1-924315283e85",
+        "uuid": "1d7918fb-30e3-8d1e-9837-04d78ff4251e",
         "words": [
           "use",
           "for",
@@ -9234,7 +9441,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when processing data in bulk — batch ETL jobs, bulk inserts/updates/deletes, batch transaction semantics, atomicity across a batch, partial failure handling and retry strategies in batch operations.",
-        "uuid": "f5b36876-ed43-8501-a33a-bd5aeb50ca76",
+        "uuid": "c383b21f-981c-8c98-ab92-71dd479615fc",
         "words": [
           "use",
           "when",
@@ -9429,7 +9636,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text. If you want to indicate the quantity of a certain kind o",
-        "uuid": "5a08325f-6234-8305-ad49-fc11c24bd5f4",
+        "uuid": "35c9e6e7-845c-8134-a867-318e67bdcd09",
         "words": [
           "the",
           "type",
@@ -9850,7 +10057,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing any next-horizon conservation primitive beyond the base laws — causal provenance, deterministic replay, tenant isolation, bitemporal queries, cost accountability, carbon-aware execution, agent capability (RBAC), post-quantum signatures, self-explainability, reversibility/crypto-shred, or AI-decision audit. The 11-primitive barrel for Laws 11–22.",
-        "uuid": "321682b8-f5e2-84dd-85e3-a20bf3011ba8",
+        "uuid": "8b550fcc-4b70-8d30-9904-ff651f6bb9d7",
         "words": [
           "use",
           "when",
@@ -9923,7 +10130,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when validating Bulgarian identity numbers — ЕГН (person), ЕИК/БУЛСТАТ (entity), or decoding birth date and sex from an ЕГН. The entry gate for BG society into erpax (Наредба РД-02-20-9/2012 + БУЛСТАТ two-stage modulo-11).",
-        "uuid": "7b357118-e855-8b26-9b30-11d6b96164c5",
+        "uuid": "6518b8c2-0fae-8a36-815d-af288650aeee",
         "words": [
           "use",
           "when",
@@ -10072,6 +10279,60 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "binding",
+    "path": "binding",
+    "translations": [
+      {
+        "key": "name",
+        "source": "binding",
+        "uuid": "2bc65601-45ef-823a-b269-5d6633880690",
+        "words": [
+          "binding"
+        ],
+        "values": {
+          "en": "binding"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one binding — the singular model of the bindings collection (the plural store); a configured link between a name and the resource that backs it.",
+        "uuid": "de02ab3f-8100-8bef-9af9-9be72c371acf",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "binding",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "bindings",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "configured",
+          "link",
+          "between",
+          "a",
+          "name",
+          "and",
+          "the",
+          "resource",
+          "that",
+          "backs",
+          "it"
+        ],
+        "values": {
+          "en": "Use when modelling one binding — the singular model of the bindings collection (the plural store); a configured link between a name and the resource that backs it."
+        }
+      }
+    ]
+  },
+  {
     "atom": "bindings",
     "path": "bindings",
     "translations": [
@@ -10089,7 +10350,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
-        "uuid": "35bf5a76-bbe2-82a7-8a6d-4ea449ae162f",
+        "uuid": "002666d0-6fc5-86cf-85d6-ab0da9449031",
         "words": [
           "use",
           "when",
@@ -10222,7 +10483,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when separating a CLAIMED aura from a measured one — 'biofield' is the umbrella term (coined at a 1992 NIH meeting) for a putative energy field around the body; it is not established science, its own proponents concede it is controversial, and controlled tests (Rosa's therapeutic-touch study, the JREF $1M challenge) found no detection above chance. The honest contrast: a claim with no measurable signal — the opposite of erpax's gapless, Merkle-proven analog aura.",
-        "uuid": "e5bd41ef-fb24-840a-9718-dbc28c012aa7",
+        "uuid": "8862422c-b584-807c-a46e-74e2add072c6",
         "words": [
           "use",
           "when",
@@ -10363,7 +10624,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring, re-measuring, or disclosing IAS 41 biological assets — livestock, aquaculture, annual/perennial crops, forestry, vineyard produce — at fair-value-less-costs-to-sell; biological-transformation vs. price-change P&L split; bearer-plant IAS-16 carve-out; harvest-event transformation lifecycle. The IAS-41 biological-asset measurement collection.",
-        "uuid": "65f140c7-c38e-8096-80fd-0ae0334d4f72",
+        "uuid": "826a027a-9337-8304-8ae9-3b0a8e80f32c",
         "words": [
           "use",
           "when",
@@ -10438,7 +10699,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's 'field' in real science — the body's magnetic fields ARE measurable, but only by SQUID magnetometers in a shielded room and only at the body surface: magnetocardiography (heart, ~10⁻¹⁰–10⁻¹¹ T / tens of pT) and magnetoencephalography (brain, ~10⁻¹³–10⁻¹⁵ T / ~100 fT). The established part is intra-body diagnostics; the claim the heart's field extends feet from the body as an 'aura' was refuted under test.",
-        "uuid": "c304d2d1-7ca8-80c2-a012-9abd4c391451",
+        "uuid": "3e0be110-e5d2-8964-a5c5-d3a2595feed6",
         "words": [
           "use",
           "when",
@@ -10522,7 +10783,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "biomass",
-        "uuid": "a51dd028-9a2b-8dfb-acd2-72645f95c800",
+        "uuid": "a21b1c67-45fa-80e3-989c-5310f4cc1e72",
         "words": [
           "biomass"
         ],
@@ -10533,7 +10794,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a living stock is valued by its total mass, not per-individual — standing biomass (kg) is the IAS-41 fair-value unit for an aquaculture stock, a forest stand, or a bee colony's strength: mass × forward price − costs-to-sell. Its growth rate is biological transformation. The non-individuated living-asset measure, shared across aquaculture/forestry/apiculture.",
-        "uuid": "7e4e1667-d375-8d4c-8a8e-f3402384c358",
+        "uuid": "c826d436-8ec4-8e55-af02-0a97f54f1f1a",
         "words": [
           "use",
           "when",
@@ -10655,7 +10916,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when grounding the aura's colour channel in real science — biophotons (ultraweak photon emission, UPE) are a REAL, instrument-measured light the body emits: ~1–10³ (up to 10⁴) photons·s⁻¹·cm⁻² (~10⁻¹⁴–10⁻¹⁹ W/cm²), 200–800 nm, from oxidative-metabolism reactive oxygen species, detected by cooled photomultiplier tubes and EMCCD cameras. The body literally emits light — but 3–6 orders too faint to see, so the visible 'aura' is not this.",
-        "uuid": "cec362a0-fe51-87a1-8f34-dc27a466a96d",
+        "uuid": "c7c93c47-6ae1-8c8f-a1a3-52fe88fd3e08",
         "words": [
           "use",
           "when",
@@ -11167,7 +11428,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when cataloguing or querying reservable assets — rooms, vehicles, equipment, beds, machinery, parking, co-working desks, time slots — across hospitality, fleet, facility management or field-service; rate ladders, availability windows, yield management, GL/tax linkage. The agnostic resource-booking master — pairs with bookings.",
-        "uuid": "63e519f1-79ac-86d6-9bae-c60dee41b83f",
+        "uuid": "5c982949-7f10-8883-97ac-d0a331723b53",
         "words": [
           "use",
           "when",
@@ -11237,7 +11498,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or querying reservation events — hotel check-in/out, vehicle rental, equipment hire, meeting-room holds, field-service slots — against a bookable-resource; IFRS-15 over-time / point-in-time revenue recognition, cancellation policy, deposit, invoice linkage, multi-channel (direct/OTA/GDS). The canonical reservation primitive.",
-        "uuid": "184cb774-699b-896b-a496-bfbbfdcda4fa",
+        "uuid": "f1d16e2e-9270-8a10-bf63-40aed5502261",
         "words": [
           "use",
           "when",
@@ -11493,7 +11754,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying or tracking the limiting factor in a flow — the slowest operation in a sequence, the resource with lowest capacity. The theory-of-constraints node.",
-        "uuid": "8d3c8449-8658-819e-ad68-1ea45ac1201e",
+        "uuid": "b9327548-9d5b-8cef-a54a-d4f0cdcc5569",
         "words": [
           "use",
           "when",
@@ -11583,7 +11844,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space chara",
-        "uuid": "cdb8c8ef-9c08-8f26-b67a-fe168e58e2f8",
+        "uuid": "5542f00e-4bef-8417-a23b-5cb8d9e9ef7b",
         "words": [
           "a",
           "box",
@@ -11726,7 +11987,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
-        "uuid": "359711df-004e-840e-93f5-79e01a01d1a5",
+        "uuid": "e6529b7c-510c-80c2-bc43-29e90dd0d6ca",
         "words": [
           "a",
           "brand",
@@ -11887,7 +12148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax grows — it BREATHES: inhale ideas from everywhere (peers like ZeroPoint, frameworks like Payload, the standards, the upstream Rails, user content), exhale DRY clean code (gate-green, content-addressed, collapsed to the dense core). Inhale is merge/derive/generate; exhale is collapse + the gate + minimal cost. The rhythm IS the society loop: never inhale without exhaling clean, never exhale without inhaling.",
-        "uuid": "dbcd309a-cf0f-81d5-9197-b381661bb2e4",
+        "uuid": "33090552-90ac-8173-940a-13036d5bc77e",
         "words": [
           "use",
           "when",
@@ -12349,7 +12610,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "budget-planning",
-        "uuid": "89cf1640-7878-81d1-8c1c-c253e5f97f44",
+        "uuid": "9f8d50af-d3ae-847c-aab7-94d0194c93a5",
         "words": [
           "budget",
           "planning"
@@ -12361,7 +12622,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
-        "uuid": "c3e88b6e-b5c9-876a-b34c-029b2daa3b9f",
+        "uuid": "eac9060c-ebe1-895a-b71a-0413ef6390da",
         "words": [
           "use",
           "when",
@@ -12590,7 +12851,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when packaging multiple items for joint sale — bundle composition, bundle pricing (vs. component sum), discount rules for bundles.",
-        "uuid": "0666addf-5e6e-81c5-b6b3-5990242c2c1f",
+        "uuid": "941491c7-2b16-8ff7-8791-5ff85dc6a930",
         "words": [
           "use",
           "when",
@@ -12777,6 +13038,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "byline",
+    "path": "byline",
+    "translations": [
+      {
+        "key": "name",
+        "source": "byline",
+        "uuid": "3a53bbbc-0258-8bda-961d-8b0da52b848c",
+        "words": [
+          "byline"
+        ],
+        "values": {
+          "en": "byline"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article.",
+        "uuid": "3a5efdbe-f60c-8ed4-880b-f8c79893a3a8",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "byline",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "bylines",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "credited",
+          "author",
+          "line",
+          "on",
+          "a",
+          "published",
+          "article"
+        ],
+        "values": {
+          "en": "Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article."
+        }
+      }
+    ]
+  },
+  {
     "atom": "bylines",
     "path": "bylines",
     "translations": [
@@ -12957,7 +13268,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for pure financial computation — break-even, EBITDA, EOQ, present value, depreciation, ratios, standard-costing variances. The Calculators::* form-objects — validate inputs → compute (standards-cited formula) → format; no persistence. Composes nested leaves (calculate/depreciate, /amortize, /ebitda).",
-        "uuid": "6a8bcc6f-10b1-8595-a428-7139d1e246b1",
+        "uuid": "d62f1a56-985d-8b27-9b36-78a14ea91159",
         "words": [
           "use",
           "for",
@@ -13071,7 +13382,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to compute depreciation — straight-line, declining-balance (DDB), sum-of-years-digits, units-of-activity. Pure compute (no persistence); cites IAS-16 / US-GAAP ASC-360. Nested under calculate.",
-        "uuid": "4ef1ca00-3954-8d42-a915-1bd5e7cc2f2c",
+        "uuid": "bb17265d-4e00-8378-8065-3f69cb78b7a6",
         "words": [
           "use",
           "to",
@@ -13126,7 +13437,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to compute EBITDA / EBIT and related profitability metrics from P&L figures. Pure compute (no persistence); a non-GAAP measure derived from accounting data. Nested under calculate.",
-        "uuid": "b2eb5b31-2bf6-86c4-bb0b-433755a1ac23",
+        "uuid": "729632d2-a864-8cf5-8a30-e913b8382dc4",
         "words": [
           "use",
           "to",
@@ -13164,6 +13475,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "calculation",
+    "path": "calculation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "calculation",
+        "uuid": "4e1c4b6c-fd03-86d9-b0f7-88cddce0bef5",
+        "words": [
+          "calculation"
+        ],
+        "values": {
+          "en": "calculation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs.",
+        "uuid": "478db706-3594-85ac-affc-81a29fc71f86",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "calculation",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "calculations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "computed",
+          "numeric",
+          "result",
+          "derived",
+          "from",
+          "inputs"
+        ],
+        "values": {
+          "en": "Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs."
+        }
+      }
+    ]
+  },
+  {
     "atom": "calculator",
     "path": "calculator",
     "translations": [
@@ -13195,6 +13555,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "calculator: a schema.org component word, fused from MedicalRiskCalculator"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "calendar",
+    "path": "calendar",
+    "translations": [
+      {
+        "key": "name",
+        "source": "calendar",
+        "uuid": "788f8be5-b4be-8018-9536-a19978aefc21",
+        "words": [
+          "calendar"
+        ],
+        "values": {
+          "en": "calendar"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed.",
+        "uuid": "125c7c1b-f954-8518-97d4-f2c019583091",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "calendar",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "calendars",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "scheme",
+          "of",
+          "dates",
+          "against",
+          "which",
+          "events",
+          "and",
+          "schedules",
+          "are",
+          "placed"
+        ],
+        "values": {
+          "en": "Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed."
         }
       }
     ]
@@ -13284,7 +13697,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when coordinating multi-channel marketing initiatives — campaign definition, channels, targeting, messaging, schedule, budget, ROI tracking.",
-        "uuid": "52feda25-00f9-829a-96c7-73876a858f23",
+        "uuid": "d2c4221c-e291-8a30-982a-1ecf83b26d8e",
         "words": [
           "use",
           "when",
@@ -13517,7 +13930,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "capacity",
-        "uuid": "df41b425-f230-8c41-a000-9276728b1872",
+        "uuid": "02a9adfc-6753-8b8d-b46d-6b144a2f48d9",
         "words": [
           "capacity"
         ],
@@ -13528,7 +13941,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when planning, tracking, or optimizing resource capacity — workforce availability, machine utilization, warehouse/facility space, or bottleneck detection per work-center/shift/period. The binding constraint in operations.",
-        "uuid": "989a4984-d632-8830-b0be-166154ce8c79",
+        "uuid": "7593c6f9-a1ec-8b68-bd71-3c99e45f6693",
         "words": [
           "use",
           "when",
@@ -13629,7 +14042,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A car is a wheeled, self-powered motor vehicle used for transportation.",
-        "uuid": "80a21f3a-c176-8c45-8cc8-7cf7f98fcb65",
+        "uuid": "8a102d7f-2b05-8ed4-8478-94471802bb25",
         "words": [
           "a",
           "car",
@@ -13741,7 +14154,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when analyzing relationship structure — one-to-one / one-to-many / many-to-many / many-to-one relationships, cardinality constraints, optional vs mandatory participation, relationship counts (query cardinality estimates), foreign-key cardinality.",
-        "uuid": "7a878e73-9da2-8ae2-8f68-e2135136accf",
+        "uuid": "60fefc90-f3e1-820e-b2aa-19a32d1841bd",
         "words": [
           "use",
           "when",
@@ -14006,7 +14419,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing shipping or freight carrier master data — DHL, UPS, FedEx, postal, maritime, air-cargo — with per-tenant accounts, INCOTERMS-tagged service levels, hazmat flags, API credentials references, and effective-date lifecycle. The carrier master that normalises free-text carrier strings in shipments.",
-        "uuid": "746d1c80-8fe1-8bd0-8f8d-dcab5109469a",
+        "uuid": "c837efb6-fa7b-8233-911b-5e15b7acc01d",
         "words": [
           "use",
           "when",
@@ -14060,6 +14473,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "case",
+    "path": "case",
+    "translations": [
+      {
+        "key": "name",
+        "source": "case",
+        "uuid": "0707386f-dcdb-80f2-95de-588e6820dfb0",
+        "words": [
+          "case"
+        ],
+        "values": {
+          "en": "case"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle.",
+        "uuid": "8ad85e36-3156-8602-8354-16714d028804",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "case",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "cases",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "matter",
+          "under",
+          "adjudication",
+          "or",
+          "handling",
+          "with",
+          "its",
+          "parties",
+          "and",
+          "lifecycle"
+        ],
+        "values": {
+          "en": "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle."
+        }
+      }
+    ]
+  },
+  {
     "atom": "cases",
     "path": "cases",
     "translations": [
@@ -14077,7 +14543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
-        "uuid": "bd0c9fc7-400b-8a71-b470-81fdb5c0e245",
+        "uuid": "1d781fef-91eb-8d75-9c2a-800492ab4d4e",
         "words": [
           "use",
           "when",
@@ -14234,7 +14700,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building or browsing hierarchical content or product taxonomies — title, URL slug (per-tenant unique), parent relationship, breadcrumb trail — for posts, catalogue products, or any schema.org DefinedTerm classification. The tenant-scoped category taxonomy node.",
-        "uuid": "ba7b8a0b-0920-8fdc-80a5-067f8d9ad0ca",
+        "uuid": "6af07d6a-b00f-8ad2-a1f9-9038d865ca38",
         "words": [
           "use",
           "when",
@@ -14671,6 +15137,151 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "chakra",
+    "path": "chakra",
+    "translations": [
+      {
+        "key": "name",
+        "source": "chakra",
+        "uuid": "f7305091-3b36-8c9a-9217-2143430a7752",
+        "words": [
+          "chakra"
+        ],
+        "values": {
+          "en": "chakra"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432.",
+        "uuid": "147d6538-1b6c-801b-aa87-51e66f247697",
+        "words": [
+          "use",
+          "when",
+          "mapping",
+          "the",
+          "seven",
+          "chakras",
+          "onto",
+          "erpax",
+          "the",
+          "chakras",
+          "are",
+          "the",
+          "horo",
+          "flow",
+          "positions",
+          "base",
+          "share",
+          "weave",
+          "crest",
+          "descent",
+          "round",
+          "unity",
+          "do",
+          "re",
+          "mi",
+          "fa",
+          "sol",
+          "la",
+          "ti",
+          "root",
+          "crown",
+          "each",
+          "decodes",
+          "to",
+          "a",
+          "note",
+          "a432",
+          "just",
+          "intonation",
+          "a",
+          "colour",
+          "and",
+          "a",
+          "movement",
+          "from",
+          "the",
+          "same",
+          "content",
+          "uuid",
+          "and",
+          "the",
+          "uuid",
+          "is",
+          "computed",
+          "from",
+          "the",
+          "position",
+          "math",
+          "never",
+          "from",
+          "the",
+          "colour",
+          "anchored",
+          "at",
+          "k",
+          "black",
+          "a432"
+        ],
+        "values": {
+          "en": "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "change",
+    "path": "change",
+    "translations": [
+      {
+        "key": "name",
+        "source": "change",
+        "uuid": "7d38f227-d7ec-8906-a775-654730737dca",
+        "words": [
+          "change"
+        ],
+        "values": {
+          "en": "change"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system.",
+        "uuid": "f5612cd3-ed3a-8bbd-9966-386cf3772b2f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "change",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "changes",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "recorded",
+          "modification",
+          "to",
+          "a",
+          "controlled",
+          "record",
+          "or",
+          "system"
+        ],
+        "values": {
+          "en": "Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system."
+        }
+      }
+    ]
+  },
+  {
     "atom": "changes",
     "path": "changes",
     "translations": [
@@ -14765,7 +15376,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "One of the sections into which a book is divided. A chapter usually has a section number or a name.",
-        "uuid": "07772fc1-fef7-85da-833c-6978b8dbeb91",
+        "uuid": "c5a4ae34-a98d-82df-aced-38fe6c61309b",
         "words": [
           "one",
           "of",
@@ -14883,7 +15494,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about where the erpax agent society convenes — chat.erpax.com, the per-tenant agent-sync room (AGENT_SYNC_HOST venue) — and about the trinity-composition law that every vertex is itself a trinity all the way down to the base atoms.",
-        "uuid": "98e8e7cf-727c-86ac-bd1f-94056f73ad4d",
+        "uuid": "695d9835-225d-82c3-9adc-6f3d76639146",
         "words": [
           "use",
           "when",
@@ -14954,7 +15565,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the agent-society room native to Payload — the per-tenant content-addressed event bus where each row is an ErpaxEvent envelope an agent published; the queryable, auditable akashic chat history that replaces the external chat.erpax.com Durable Object. Distinct from messages (user-to-user mail). The agent-bus collection.",
-        "uuid": "edf9a292-97f2-885f-b814-f8481590d9d2",
+        "uuid": "ab39f6b1-f6fc-827d-bf12-d845a20fccf7",
         "words": [
           "use",
           "when",
@@ -15201,6 +15812,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "checklist",
+    "path": "checklist",
+    "translations": [
+      {
+        "key": "name",
+        "source": "checklist",
+        "uuid": "fbe1e8ac-0636-8bbb-a9ec-d9c641cc000a",
+        "words": [
+          "checklist"
+        ],
+        "values": {
+          "en": "checklist"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one checklist — the singular model of the checklists collection (the plural store); an ordered set of items to verify or complete.",
+        "uuid": "b61f7bfc-d21b-8cde-b35f-1ab0b0c9ebab",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "checklist",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "checklists",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "an",
+          "ordered",
+          "set",
+          "of",
+          "items",
+          "to",
+          "verify",
+          "or",
+          "complete"
+        ],
+        "values": {
+          "en": "Use when modelling one checklist — the singular model of the checklists collection (the plural store); an ordered set of items to verify or complete."
+        }
+      }
+    ]
+  },
+  {
     "atom": "checkout",
     "path": "checkout",
     "translations": [
@@ -15442,7 +16104,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a buyer selects items up to a value or quantity cap instead of receiving a fixed bundle — the market-style / customizable CSA share (members pick at a table or online to a limit, swap unwanted items), and the generic pick-mix / deli-counter / configure-to-order pattern. The selection model: the inverse of a fixed bundle, trading packing simplicity for member satisfaction.",
-        "uuid": "43aa3860-1aa9-842e-802f-b657b90a5924",
+        "uuid": "7ca44cea-b03e-88cf-9a57-3f983d7e3807",
         "words": [
           "use",
           "when",
@@ -15734,7 +16396,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.",
-        "uuid": "b886eede-f538-8b6d-bb57-5146fe335016",
+        "uuid": "27ee28cf-1384-8277-9050-ab8a636be601",
         "words": [
           "a",
           "citation",
@@ -15845,7 +16507,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how every civilization fits the erpax architecture — strip the culture-prefix and each one runs the same six organs: a ledger, a law, a registry, a calendar, a governance, an unforgeable record. Civilizations differ in detail and merge in form.",
-        "uuid": "21309567-b7ed-8251-8537-e93040eb7d6c",
+        "uuid": "dda9dcaf-007d-8e61-94d0-462142c80a29",
         "words": [
           "use",
           "when",
@@ -15998,6 +16660,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "classification",
+    "path": "classification",
+    "translations": [
+      {
+        "key": "name",
+        "source": "classification",
+        "uuid": "05f5acc5-8fe3-82ce-9cb0-da705d795574",
+        "words": [
+          "classification"
+        ],
+        "values": {
+          "en": "classification"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.",
+        "uuid": "fdd6f5de-f4d6-8b2c-beaa-b155af855b3d",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "classification",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "classifications",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "assignment",
+          "of",
+          "a",
+          "thing",
+          "to",
+          "a",
+          "category",
+          "within",
+          "a",
+          "scheme"
+        ],
+        "values": {
+          "en": "Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme."
+        }
+      }
+    ]
+  },
+  {
     "atom": "classroom",
     "path": "classroom",
     "translations": [
@@ -16015,7 +16730,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a multi-agent learning session — a team of agents in pedagogical roles (teacher delivers, peer debates, examiner gates, debater brings viewpoints) teaches a competency to a learner (human or agent — the actor-merge). The examiner IS the gate, the debate IS competition (viewpoints → harmonic-first → decide), the learner acquires the competency's skillRoute. Generative friction, not passive delivery; the learner owns their record (sovereign, content-addressed).",
-        "uuid": "82f9f389-bfbd-8645-9f5b-714881b3996a",
+        "uuid": "9e9f0ec9-da16-802f-9be4-0b79933e5578",
         "words": [
           "use",
           "when",
@@ -16111,7 +16826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when decomposing a contract into its constituent promises — each clause is a distinct obligation/right with its own conditions, beneficiaries, triggers, and performance timeline. The atomic unit of contract analysis.",
-        "uuid": "c8b2e35f-b079-8326-9b89-ac71a48904c1",
+        "uuid": "2d99e076-b564-8f31-bbcd-998f2082ceb0",
         "words": [
           "use",
           "when",
@@ -16452,7 +17167,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the forbidding boundary state in erpax — fiscal period locked, document sealed, shift/stream finished, month-end close. The universal root of the closed state; dual of open.",
-        "uuid": "dabcd54d-2e4e-8ab1-b792-971c7ad9778a",
+        "uuid": "02364714-797e-86b7-b093-0e221975b0c6",
         "words": [
           "use",
           "when",
@@ -16741,7 +17456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when master-data needs a unique short code — accounts, products, machines, teams, categories. The CodeConcern field-factory; code derived from name when absent; code is the human key, content-uuid the machine key.",
-        "uuid": "b9a70395-5eb6-8d43-b947-9f41c4874c95",
+        "uuid": "4dc28001-8ef6-8238-9a76-304ae13d4bc4",
         "words": [
           "use",
           "when",
@@ -16874,7 +17589,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about wholeness as a MEASURABLE quantity — coherence is the scientific name for what erpax renders as harmony: phase-alignment across a signal. Physics/DSP coherence (phase-locked waves, 0..1), HRV 'psychophysiological coherence' (a real, measured intra-body state) and Popp's contested biophoton coherence; the inter-personal 'field coherence' aura claim is refuted. Wholeness renders as coherence, a gap or tamper as decoherence.",
-        "uuid": "b4020398-28b7-8776-8862-4c314c3c24c1",
+        "uuid": "16d589d0-90d6-8ad5-b62f-50406a429f4b",
         "words": [
           "use",
           "when",
@@ -16966,7 +17681,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when analyzing or tracking groups of customers/users/items by shared trait — acquisition cohort, product cohort, geographic cohort. The segmentation for lifecycle or comparative analysis.",
-        "uuid": "85f70f21-5297-8cb7-814e-f39c081cded4",
+        "uuid": "6827b606-3cf0-8c01-a2e1-b057e0d5ba6d",
         "words": [
           "use",
           "when",
@@ -17056,7 +17771,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reducing collection/table sprawl to its canonical minimum — collapse every collection to one of four sinks (an official Payload plugin/template, the trinity node store, a Lexical content block, or a dimension/state/role of an existing node). The \"collapse all to Payload\" law; one name across every dimension, drawn from the standards.",
-        "uuid": "f0d3ed0a-dee4-8016-a2a2-d34148e4042c",
+        "uuid": "bc29b206-acee-8590-a10a-5618dc74d11f",
         "words": [
           "use",
           "when",
@@ -17241,7 +17956,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A collection of items, e.g. creative works or products.",
-        "uuid": "4424f7dc-979c-8605-be75-f6e113cb5d2a",
+        "uuid": "8656b094-8f69-8b36-b6d3-0304776657f4",
         "words": [
           "a",
           "collection",
@@ -17458,6 +18173,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "combination",
+    "path": "combination",
+    "translations": [
+      {
+        "key": "name",
+        "source": "combination",
+        "uuid": "6e43c8f9-fab0-8db0-bcdd-956456845c2a",
+        "words": [
+          "combination"
+        ],
+        "values": {
+          "en": "combination"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one combination — the singular model of the combinations collection (the plural store); a specific grouping of selected options or parts.",
+        "uuid": "d5adc4cc-0040-8222-bf76-d874864364bf",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "combination",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "combinations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "specific",
+          "grouping",
+          "of",
+          "selected",
+          "options",
+          "or",
+          "parts"
+        ],
+        "values": {
+          "en": "Use when modelling one combination — the singular model of the combinations collection (the plural store); a specific grouping of selected options or parts."
+        }
+      }
+    ]
+  },
+  {
     "atom": "comedy",
     "path": "comedy",
     "translations": [
@@ -17587,7 +18352,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when any record needs threaded notes/annotations with author provenance — the polymorphic CommentsConcern. One comments collection serves all others via a polymorphic relationTo; author ties to audit.",
-        "uuid": "57efae2c-7691-8b2b-8516-d66471011b80",
+        "uuid": "c8edbe39-d815-840e-84cc-75fc1c54ea01",
         "words": [
           "use",
           "when",
@@ -17678,7 +18443,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax commerce/trade domain to Payload — parties under many roles (seller/buyer/agent/supplier/consignee/carrier), the cart→quote→order→invoice→note document chain, payments/allocations/refunds, subscriptions & metered usage, inventory/stock movement, packing & shipment, dunning/credit terms. The transactional-flow `@erpax/commerce` twin (sequence 4·8).",
-        "uuid": "5abd198d-b115-8c3c-bb5c-0c69235ccd7b",
+        "uuid": "053099d9-9504-8b39-a52b-a38fbb3e29f4",
         "words": [
           "use",
           "when",
@@ -17739,6 +18504,105 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "commission",
+    "path": "commission",
+    "translations": [
+      {
+        "key": "name",
+        "source": "commission",
+        "uuid": "a0239367-0433-81cd-8b67-2eda59787a6d",
+        "words": [
+          "commission"
+        ],
+        "values": {
+          "en": "commission"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction.",
+        "uuid": "d8a78fa2-f880-8f18-ab85-80f6592bc8ef",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "commission",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "commissions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "earned",
+          "compensation",
+          "tied",
+          "to",
+          "a",
+          "sale",
+          "or",
+          "transaction"
+        ],
+        "values": {
+          "en": "Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "commitment",
+    "path": "commitment",
+    "translations": [
+      {
+        "key": "name",
+        "source": "commitment",
+        "uuid": "d4c73766-a114-878e-8227-2a332929f881",
+        "words": [
+          "commitment"
+        ],
+        "values": {
+          "en": "commitment"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide.",
+        "uuid": "c89ee589-d705-809d-9c11-e699cfeae610",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "commitment",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "commitments",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "binding",
+          "promise",
+          "to",
+          "perform",
+          "or",
+          "provide"
+        ],
+        "values": {
+          "en": "Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide."
+        }
+      }
+    ]
+  },
+  {
     "atom": "commitments",
     "path": "commitments",
     "translations": [
@@ -17756,7 +18620,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.",
-        "uuid": "626d1a2b-baca-80a3-b034-214cb3c8175d",
+        "uuid": "e482ac0c-ef37-8f1c-8ec1-08741b7fef87",
         "words": [
           "use",
           "when",
@@ -17822,7 +18686,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions.",
-        "uuid": "3029b092-ae5d-88dc-80bf-52bc87cd7bcd",
+        "uuid": "37a08570-16d5-82ec-8d01-04b02a8d8ef8",
         "words": [
           "use",
           "when",
@@ -17872,6 +18736,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when disclosing off-balance-sheet obligations in financial statement notes — capex commitments, purchase obligations, litigation, guarantees, performance bonds, tax disputes, insurance recoveries — with IAS-37 likelihood ladder and reclassification-to-provision workflow; IAS-37 §86-92 / ASC-440 / ASC-450 disclosure. The structured notes-disclosure register distinct from recognised provisions."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "committee",
+    "path": "committee",
+    "translations": [
+      {
+        "key": "name",
+        "source": "committee",
+        "uuid": "daef0bcb-fbee-8b10-8a6a-5c8225f765f5",
+        "words": [
+          "committee"
+        ],
+        "values": {
+          "en": "committee"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.",
+        "uuid": "6cc93e71-0aed-897e-8ea9-217878ff1769",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "committee",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "committees",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "constituted",
+          "group",
+          "with",
+          "delegated",
+          "authority",
+          "over",
+          "a",
+          "domain"
+        ],
+        "values": {
+          "en": "Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain."
         }
       }
     ]
@@ -18004,7 +18919,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how you navigate erpax — navigation is SELF-GENERATING (sidebar · prev/next · ancestors · siblings · children · related · search all computed from the parent+prev/next trinity + the fractal path + the body links, never hand-listed) and it points like an alethiometer: ask any question and it points to the answer-path. The golden compass — the path IS the answer; the needle settles on the lowest-entropy form.",
-        "uuid": "37c3117f-7f3d-8113-b5b8-ebeee383e4af",
+        "uuid": "e315ab6f-0d0f-84f1-903e-ac9e0ef23949",
         "words": [
           "use",
           "when",
@@ -18100,7 +19015,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or analyzing an employee's total pay structure — base salary, bonus, incentives, benefits value, equity, deductions. The compensation-concern collecting all economic value flows from employer to worker.",
-        "uuid": "bb5defba-fc5a-876b-884c-1bab0aaaa11b",
+        "uuid": "b8138797-5908-8f87-9dcb-75883c2b6b1a",
         "words": [
           "use",
           "when",
@@ -18158,7 +19073,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping the one actor-capability taxonomy — agents load it, employees hold it, jobs require it, the skill-router resolves it. Skills ARE competencies, so the catalogue is COMPUTED from the SKILL.md corpus (no stored collection), and a held/required line references a competency by its content-addressed skillRoute.",
-        "uuid": "66247515-d366-8dbb-91b9-77566917502e",
+        "uuid": "40590d40-bb80-8256-800e-03909b2ba7e4",
         "words": [
           "use",
           "when",
@@ -18273,7 +19188,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when computing held-vs-required skill gaps — matches held competencies against job/task requirements and scores on the SFIA 1-7 scale. The pure required − held function (recruiting, performance review, agent task-routing).",
-        "uuid": "9dcb1e85-5271-82bc-98fb-2a0d0f7c3be3",
+        "uuid": "ad71773f-bf3c-81fc-b3c7-096595fc074d",
         "words": [
           "use",
           "when",
@@ -18332,7 +19247,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how erpax skills EVOLVE — agents compete in commits, the fastest CORRECT solution (gate-verified) wins the lead, losers re-approach to beat it, optimising to infinity, at every scale. The selective-pressure dual of contribution; and because each competitor independently re-derives and content-addresses the canonical answer, competition AMPLIFIES tamper cost — performance pressure turned into security.",
-        "uuid": "1bcdef75-fe9d-8d78-931b-41f3576d6a04",
+        "uuid": "09ef2288-d121-8bc1-b2de-7e8bcabf5a46",
         "words": [
           "use",
           "when",
@@ -18564,7 +19479,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or browsing the reference library of compliance frameworks — IFRS, SOX, GDPR, ISO-27001, COSO, tax, ESG, banking — with code, category, issuing body, effective date, and official resource URL; super-admin-only writes, tenant-read. The read-only compliance-framework master that ComplianceRequirements link to.",
-        "uuid": "518248ae-7e7e-870f-8dda-0499f73825ff",
+        "uuid": "ccf374f0-3b1c-867f-8102-33b1f568221a",
         "words": [
           "use",
           "when",
@@ -18638,7 +19553,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying individual control obligations within a compliance framework — code, title, description, section, severity (critical/high/medium/low) — linked to a ComplianceFramework; super-admin-only writes, tenant-read. The per-requirement obligation register that ComplianceGaps reference.",
-        "uuid": "e9f0af92-a83e-899a-8907-2683352f6bc9",
+        "uuid": "e5dd0b53-11f4-837f-a713-fc6144c6bfd5",
         "words": [
           "use",
           "when",
@@ -18705,7 +19620,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying, tracking or remediating compliance deficiencies — missing controls, design deficiencies, operating gaps, documentation gaps — against a requirement; severity, status lifecycle (identified → in-remediation → closed), root cause, risk exposure, target closure date, audit trail. The per-tenant gap and deficiency register.",
-        "uuid": "abe1b144-18d2-80ae-99d6-49f5d56c92b3",
+        "uuid": "70901bc8-a6d8-8143-904e-ded8c30756e6",
         "words": [
           "use",
           "when",
@@ -18810,7 +19725,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining a reusable UI building block — button, card, modal, form field, input. The atomic UI element with consistent design, behavior, and accessibility.",
-        "uuid": "756da438-0826-8902-9bad-6abdda18c7d6",
+        "uuid": "53ec8676-c6dc-86b5-9f87-1e50544b9615",
         "words": [
           "use",
           "when",
@@ -18861,7 +19776,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building or debugging the erpax React UI — server-component-first Next.js App Router views, Lexical/Payload block renderers, admin panels, dashboards, widgets, and shared primitives — the society's FACE, the rendered surface where matter meets the eye.",
-        "uuid": "5cf93bc6-8636-83c9-ad1b-bc1662c29fb2",
+        "uuid": "fe57ea73-40ae-8488-841d-752ccfa92c3a",
         "words": [
           "use",
           "when",
@@ -19003,7 +19918,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "compost",
-        "uuid": "fccef989-7b64-8097-aae5-6adbcc0fe283",
+        "uuid": "9dcad365-88f6-8c68-aab1-663c1c6d3c3d",
         "words": [
           "compost"
         ],
@@ -19014,7 +19929,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when organic residues are decomposed into a soil amendment — compost and manure as the organic-matter/microbial input that rebuilds soil rather than just feeding the crop. The literal entropy→soil recycling node: spent residue, decomposed, credited back to the soil's capacity (the regenerative balance).",
-        "uuid": "7aed2b34-34f6-87b1-b88a-8e77a5512fd3",
+        "uuid": "97d7b342-bc3e-8771-8d27-10cce9da11c5",
         "words": [
           "use",
           "when",
@@ -19326,7 +20241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract restricts disclosure — confidential information definition, permitted uses, exceptions (public domain, legally compelled, independent discovery), return/destruction, duration.",
-        "uuid": "0a8d9256-5539-8b71-99ab-bfb80e9d2fda",
+        "uuid": "97a1637c-65e4-846a-b240-1c4cb5f695cc",
         "words": [
           "use",
           "when",
@@ -19545,7 +20460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the conflict-of-interest check — before taking a matter, prove the new client is not adverse to an existing one. Strip the prefix and a conflict is a collision on the party relationship graph, detected by merge/identity (same entity → same uuid) — the duplicate-claim law applied to representation.",
-        "uuid": "db86137b-f297-8e2b-ad6a-33616566d74d",
+        "uuid": "266c3bf7-a513-8cb2-92f7-515178da38bd",
         "words": [
           "use",
           "for",
@@ -19642,6 +20557,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "connection",
+    "path": "connection",
+    "translations": [
+      {
+        "key": "name",
+        "source": "connection",
+        "uuid": "7570ca64-6dde-807d-8b7f-bbb23949bb4a",
+        "words": [
+          "connection"
+        ],
+        "values": {
+          "en": "connection"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.",
+        "uuid": "8a359ae5-6503-81e5-b68d-cadba0a5d24a",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "connection",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "connections",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "edge",
+          "in",
+          "the",
+          "universal",
+          "relationship",
+          "graph",
+          "between",
+          "two",
+          "actors"
+        ],
+        "values": {
+          "en": "Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors."
+        }
+      }
+    ]
+  },
+  {
     "atom": "connections",
     "path": "connections",
     "translations": [
@@ -19659,7 +20626,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
-        "uuid": "8fd21225-ca57-82c4-8e76-012da9dd4483",
+        "uuid": "3b476997-3ede-81d8-8c0f-41a9fa6d77f3",
         "words": [
           "use",
           "when",
@@ -19726,7 +20693,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
-        "uuid": "9c3a93bb-ea22-8ed0-8ff0-463377e954a4",
+        "uuid": "f2d85a7f-df33-882f-911c-deabaeaa09f4",
         "words": [
           "use",
           "when",
@@ -19829,6 +20796,97 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when recording or auditing data-subject consent events — marketing, analytics, profiling, third-party sharing, cookies — with lawful-basis, exact consent text, version, capture method, IP/user-agent evidence, and withdrawal tracking; GDPR Art.6(1)(a)/Art.7 lawful-basis and right-to-withdraw. The append-mostly consent-evidence ledger."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "conservation",
+    "path": "conservation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "conservation",
+        "uuid": "88341575-0335-81d1-90ac-d6be7e15f880",
+        "words": [
+          "conservation"
+        ],
+        "values": {
+          "en": "conservation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor).",
+        "uuid": "40ae27c2-c16a-8378-8ad6-e9cbc56173e2",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "what",
+          "is",
+          "conserved",
+          "across",
+          "a",
+          "flow",
+          "nothing",
+          "is",
+          "created",
+          "or",
+          "destroyed",
+          "only",
+          "transformed",
+          "mass",
+          "energy",
+          "noether",
+          "every",
+          "continuous",
+          "symmetry",
+          "yields",
+          "a",
+          "conserved",
+          "quantity",
+          "which",
+          "in",
+          "erpax",
+          "is",
+          "double",
+          "entry",
+          "debit",
+          "credit",
+          "every",
+          "config",
+          "a",
+          "balanced",
+          "gateway",
+          "the",
+          "pot",
+          "conserved",
+          "the",
+          "physics",
+          "root",
+          "of",
+          "the",
+          "accounting",
+          "law",
+          "an",
+          "open",
+          "system",
+          "conserves",
+          "by",
+          "accounting",
+          "for",
+          "what",
+          "crosses",
+          "its",
+          "boundary",
+          "the",
+          "borrowed",
+          "anchor"
+        ],
+        "values": {
+          "en": "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor)."
         }
       }
     ]
@@ -19998,13 +21056,64 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "consolidation",
+    "path": "consolidation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "consolidation",
+        "uuid": "a29870a1-f1cd-85a9-a406-3bd12eb04429",
+        "words": [
+          "consolidation"
+        ],
+        "values": {
+          "en": "consolidation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.",
+        "uuid": "97d4844f-0d98-8546-bece-75950a12a5e4",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "consolidation",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "consolidations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "combination",
+          "of",
+          "multiple",
+          "entities",
+          "figures",
+          "into",
+          "one",
+          "set"
+        ],
+        "values": {
+          "en": "Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set."
+        }
+      }
+    ]
+  },
+  {
     "atom": "eliminations",
     "path": "consolidation/eliminations",
     "translations": [
       {
         "key": "name",
         "source": "consolidation-eliminations",
-        "uuid": "9dbf6725-6926-8dc0-87a7-b4a3abed4e40",
+        "uuid": "0dbedd4c-e1a0-8c8c-a642-14b0be9e58e6",
         "words": [
           "consolidation",
           "eliminations"
@@ -20016,7 +21125,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting or replaying group-level elimination JEs at consolidation close — intercompany balances, IC revenue/expense, unrealised intra-group profit, investment in subsidiary, FC translation reserve — per IFRS-10 §B86 / ASC-810-10-45; distinct from per-tenant journal-entries and the intercompany-transactions source register. The group consolidation elimination cycle register.",
-        "uuid": "ba60e8bf-d125-86ad-80a8-cb8e3d760773",
+        "uuid": "33a264dd-dd84-85bb-85ac-8a15583dd222",
         "words": [
           "use",
           "when",
@@ -20130,7 +21239,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the entrenched foundation — the seven supreme articles, what a majority may amend versus what is perpetual, and why the polity cannot vote away identity, integrity, conservation, or the one-person-one-vote.",
-        "uuid": "d72564f4-76b1-862e-a638-3312d485eea6",
+        "uuid": "c6c8e46e-d2e2-87e0-bea6-76e811c42f8e",
         "words": [
           "use",
           "when",
@@ -20516,7 +21625,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The basic containment relation between a place and one that contains it.",
-        "uuid": "aad5c9cb-52f4-8266-8c74-4439899937b6",
+        "uuid": "22bef880-393e-81f5-bd52-1de1f53652e0",
         "words": [
           "the",
           "basic",
@@ -20670,7 +21779,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "One of the continents (for example, Europe or Africa).",
-        "uuid": "2ba2ee45-2b30-845e-aa4a-ef2345ce5fb6",
+        "uuid": "9d610988-cef1-86fa-ac6e-233414fc4952",
         "words": [
           "one",
           "of",
@@ -20684,6 +21793,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "One of the continents (for example, Europe or Africa)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "contingency",
+    "path": "contingency",
+    "translations": [
+      {
+        "key": "name",
+        "source": "contingency",
+        "uuid": "215cf9dd-3d8e-8919-a525-8e95249f0941",
+        "words": [
+          "contingency"
+        ],
+        "values": {
+          "en": "contingency"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event.",
+        "uuid": "2ebaaf03-270b-85b3-b78a-afea39eb65f7",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "contingency",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "contingencies",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "possible",
+          "obligation",
+          "that",
+          "depends",
+          "on",
+          "an",
+          "uncertain",
+          "future",
+          "event"
+        ],
+        "values": {
+          "en": "Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event."
         }
       }
     ]
@@ -20720,6 +21881,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "continuation: a schema.org component word, fused from tocContinuation"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "contract",
+    "path": "contract",
+    "translations": [
+      {
+        "key": "name",
+        "source": "contract",
+        "uuid": "e43bf009-5483-856a-8020-fa9306d0df8d",
+        "words": [
+          "contract"
+        ],
+        "values": {
+          "en": "contract"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.",
+        "uuid": "3c42ef6e-f54e-83ab-b496-f348d780cf5f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "contract",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "contracts",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "legally",
+          "binding",
+          "agreement",
+          "between",
+          "parties"
+        ],
+        "values": {
+          "en": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties."
         }
       }
     ]
@@ -20811,7 +22020,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when many agents fill the society's gaps in parallel — shared discoveries (a minted atom, a closed gap, an internalised dependency) broadcast over the agent-sync bus, content-addressed so the same fill by two agents merges to one. Gaps filled by many; every contributor credited; recorded in git history. Matter-twin services/agent-sync/discovery.ts.",
-        "uuid": "c5640ee2-599b-8d91-ae1a-84daf29e2391",
+        "uuid": "ce12aa41-4cca-8cf3-a60b-e99273d19d3a",
         "words": [
           "use",
           "when",
@@ -21004,7 +22213,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.",
-        "uuid": "18052622-6607-8711-a91d-f0833108c135",
+        "uuid": "bd399a3f-66d9-8e76-a9bb-7c60817bc401",
         "words": [
           "one",
           "or",
@@ -21056,7 +22265,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a measured thing is re-expressed on another basis through a rate — unit conversion (kg↔g, acre↔decare), currency conversion (USD↔BGN↔EUR), and funnel-stage conversion (lead→deal) are one atom: a change of basis via a rate, pinned at a point, that conserves substance and accounts by double-entry. Automatic, never the spreadsheet's hand-typed 2.00 лв text that breaks the arithmetic.",
-        "uuid": "be9d4e2e-5819-8020-a6ec-173cb5125dfb",
+        "uuid": "4899846c-846d-8e8c-b9bf-01a3021c6a29",
         "words": [
           "use",
           "when",
@@ -21260,7 +22469,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about where an atom sits in the whole — its coordinate is the cross of three neighbor uuids (parent, prev, next), binding it into the tree and the sequence ring. The uuid is the coordinate system; this cross is the next uuid trinity.",
-        "uuid": "d472184e-b29f-8491-af2f-7d37d7734761",
+        "uuid": "6639b230-72a1-8727-8d19-bfbfcca256ca",
         "words": [
           "use",
           "when",
@@ -21636,7 +22845,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when optimising ANY cost in the society against output — one efficiency law for every cost (ai tokens, money, energy, time, labor, entropy), measured against productivity AND creativity. efficiency = output / cost, where output = productivity (verified, committed, repeatable work) + creativity (novel atoms/solutions, which compound because they're reused). The society and the agent maximise output-per-cost for every kind; competition selects the most efficient, decompression pays for it; waste (spend that produced nothing) drives to 0.",
-        "uuid": "35635bd8-456b-8282-a249-af575ccd84c7",
+        "uuid": "345a258c-932c-8fc0-8896-11621a1ea077",
         "words": [
           "use",
           "when",
@@ -21728,7 +22937,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "cost-centers",
-        "uuid": "69f36eb4-1e62-8a9d-8cc5-587ba5d41623",
+        "uuid": "8fe46c6f-137b-8201-a8b2-458508cdd05a",
         "words": [
           "cost",
           "centers"
@@ -21740,7 +22949,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tagging JE lines with a secondary analytical dimension for segment/departmental P&L — regions, countries, business units, departments, teams, projects, profit centers, cost pools with allocation rules — hierarchical via parent; IFRS-8 / ASC-280 segment reporting without polluting the chart of accounts. The canonical cost-center dimension master.",
-        "uuid": "fd1f5e69-ca8b-8358-ae81-b00e7c916661",
+        "uuid": "f0afae4b-fa4e-8493-83e4-cc1152a7a90b",
         "words": [
           "use",
           "when",
@@ -21816,7 +23025,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing org-chart slots, headcount planning, or recruiting — an ESCO/ISCO-08 classified position (vacant, filled, or planned) that drives the recruiting pipeline and IAS-19 headcount accruals. The HR job-position collection.",
-        "uuid": "ae25fa84-afc4-8b97-8382-acc8882403dc",
+        "uuid": "4554e971-0998-8f6c-ab24-bdcab1acaa0f",
         "words": [
           "use",
           "when",
@@ -21940,7 +23149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
-        "uuid": "fc0f25d5-a5d2-8c98-8320-d2bd1ec2d696",
+        "uuid": "cc80b7f6-4a02-8402-91b6-8522e7ccb41b",
         "words": [
           "use",
           "when",
@@ -22387,7 +23596,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a crop is grown to protect and build the soil rather than to harvest — cover crops / green manures: catch crops scavenging residual N, nurse crops sheltering a main crop, legumes fixing nitrogen vs grasses building biomass, then termination (mow/crimp/winterkill/incorporate) before the cash crop. The off-season twin of crop; soil capital, not sales.",
-        "uuid": "a237f867-ba5b-8f16-a5a8-70ef7fbbd460",
+        "uuid": "7fb2f879-ded6-8f8f-b0b0-86cf804d0a92",
         "words": [
           "use",
           "when",
@@ -22975,7 +24184,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about complex crises as the conditions a society lives under — комплексни кризи — multiple simultaneous interacting shocks (financial · pandemic · war · energy · demographic) whose effects compound rather than add. A crisis is an entropy spike on the society ledger; because wellbeing has non-compensatory floors, a polycrisis hits hardest where a dimension is already near the floor, and exposure is stratified by age and career. Resilience and recovery are the rebalancing breath.",
-        "uuid": "83a71404-6cf9-8794-976f-ded3adb1be8a",
+        "uuid": "1bde9bbc-19dd-8311-883c-cb532eb116b6",
         "words": [
           "use",
           "when",
@@ -23109,7 +24318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a cultivated plant type as the agricultural SKU — the produce-catalogue row carrying its sale unit (1 bunch, 100 g, 1 head), unit price, and the agronomic constants (yield per area, plant spacing, N·K₂O need, plantings & harvests per season) that explode a demand quantity into land, seed, and fertility. The crop is the bill-of-materials line of a farm; its heterogeneous sale unit is why automatic unit conversion is non-negotiable.",
-        "uuid": "d177a411-507e-8217-b424-93a55b93a2e2",
+        "uuid": "ce2d9929-1d94-8dff-b490-2c63b018fee6",
         "words": [
           "use",
           "when",
@@ -23210,7 +24419,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when converting a sales/yield goal into what to grow, how much, when, and where — the crop plan (the what/how-much: quantities, seed, beds) and its spatial twin the field plan/map (the where: each succession assigned to a bed/block). The master planning document of a market farm; the backward demand→land calculation made concrete and recorded.",
-        "uuid": "27b6dec2-73c6-8b8e-b421-db680b2190e1",
+        "uuid": "e5c198ba-1465-81e8-99e4-4c2de85476bd",
         "words": [
           "use",
           "when",
@@ -23334,7 +24543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when structuring EU mandatory sustainability reporting — one row per ESRS datapoint per reporting year (E1–E5 environmental, S1–S4 social, G1 governance) with narrative, quantitative KPIs, IRO classification, and assurance evidence for XBRL filing. The CSRD/ESRS disclosure register.",
-        "uuid": "82b20ddd-0684-823c-9823-0ec0c7e99d72",
+        "uuid": "f5995b35-9dbe-89a1-bb98-38498913eb3a",
         "words": [
           "use",
           "when",
@@ -23475,7 +24684,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when weeds are controlled mechanically among a standing crop — shallow soil-stirring (hoeing, wheel hoe, tine weeder) and thermal (flame weeding). Distinct from tillage (which opens bare ground): cultivation works between the rows of a growing crop, timed to the white-thread weed stage. Many shallow, well-timed passes are the low-cost alternative to herbicide.",
-        "uuid": "69d8e441-eca3-8ff0-95fc-2b69b0a39fed",
+        "uuid": "9fbe935f-861b-84be-82b9-160d118b8d19",
         "words": [
           "use",
           "when",
@@ -23595,7 +24804,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value carries money — amount + ISO-4217 currency, exchange rates, rounding, multi-currency ledgers/totals. The CurrencyConcern/AmountConcern field-factory; money is amount+currency, never a currency-baked field name.",
-        "uuid": "2518d87a-945a-8bbe-b280-f11cf7995004",
+        "uuid": "3ed38e4f-4c5b-841d-bff4-7b7716d8d0af",
         "words": [
           "use",
           "when",
@@ -23852,7 +25061,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or querying the sale-side party master — customer identity, LEI, IBAN, VAT classification, credit limit, payment terms, accounts-receivable exposure, and GDPR consent. The EN-16931 buyer party collection.",
-        "uuid": "568199fb-76ff-8206-8c72-c83066795ae2",
+        "uuid": "a68e72d5-1ddd-846d-ae14-33ae8500bff4",
         "words": [
           "use",
           "when",
@@ -23910,7 +25119,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording, approving, or recognizing revenue from customer contracts — IFRS-15 §10 master record with transaction price decomposition (fixed, variable, financing), performance obligations, contract combination, amendments, and SOX-gated approval. The canonical revenue-contract collection.",
-        "uuid": "feabb1c8-c716-83c3-94f6-c10983b0ad56",
+        "uuid": "c4418f0e-0ceb-8940-8c88-ac9c4654bb88",
         "words": [
           "use",
           "when",
@@ -23960,7 +25169,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "contract-amendments",
-        "uuid": "62a6bd0c-cc0b-8857-bed6-5cad3d525db8",
+        "uuid": "7c3ba1f4-d3ca-88c6-8fea-76ca5188834c",
         "words": [
           "contract",
           "amendments"
@@ -23972,7 +25181,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording formal changes to an executed contract — IFRS-15 §20 classification (separate obligation vs. integrated modification), revenue impact amount, modification reason, approval chain, and immutable original/new terms snapshot. The contract-modification audit collection.",
-        "uuid": "e7bb7382-91a8-8c4a-aed1-b5b1492fbc46",
+        "uuid": "6042852f-2eb0-83e2-bbe6-92b9f18bc04e",
         "words": [
           "use",
           "when",
@@ -24022,7 +25231,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "contract-performance",
-        "uuid": "ee4f5a9d-f32d-8ce0-ad16-7bd04a691e99",
+        "uuid": "97b1e71c-72b8-8fff-a9c7-03a37cb084e8",
         "words": [
           "contract",
           "performance"
@@ -24034,7 +25243,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking performance milestones and control-transfer events that gate revenue recognition — planned vs. actual completion dates, over-time or point-in-time determination per IFRS-15 §31-35, acceptance criteria, and associated invoice link. The milestone control-transfer collection.",
-        "uuid": "2dbae504-4fcc-8f80-80d9-d96021a9b913",
+        "uuid": "e6dc3ad3-d4c8-8e80-a914-ff30e59d0081",
         "words": [
           "use",
           "when",
@@ -24088,7 +25297,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "contract-signatures",
-        "uuid": "bade8ae8-225d-89fa-91f5-09036315a526",
+        "uuid": "778fd118-f188-88e2-90a9-88d3cc79cbdd",
         "words": [
           "contract",
           "signatures"
@@ -24100,7 +25309,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when collecting or auditing e-signatures for contract execution — sequenced multi-party approval (legal→customer→company rep), eIDAS-compliant immutable signature records, provider verification URL, and fully-executed trigger for IFRS-15 §10 contract activation. The e-signature audit-trail collection.",
-        "uuid": "e5a59935-4ae5-8506-b109-03c8bcc524f6",
+        "uuid": "b8e2dcb8-5664-82d4-9f15-e1db56b327fc",
         "words": [
           "use",
           "when",
@@ -24168,7 +25377,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
-        "uuid": "9fd7887a-c1d0-8cf5-bba1-e4576ac17b8f",
+        "uuid": "779e76a0-003b-846e-8f94-f6fa99bb9dea",
         "words": [
           "use",
           "when",
@@ -24302,7 +25511,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking a customer-facing deliverable under IFRS-15 §35 over-time recognition — accumulating costs (labour via time-entries, materials via purchase-orders), measuring cost-to-cost or milestone progress, managing budget vs EAC, and closing WIP to revenue per the contract's recognition method. The IFRS-15 project anchor collection.",
-        "uuid": "625383e3-e1a1-85e2-a175-1570b1851331",
+        "uuid": "0268ee67-a9dc-81c7-aeae-368a98a991fa",
         "words": [
           "use",
           "when",
@@ -24379,7 +25588,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing IFRS-15 §126 milestone-billing events on a project — defining billing, acceptance, or payment trigger points, marking milestones achieved, and firing the invoice + revenue-recognition GL post for the milestone amount. The milestone register under a project.",
-        "uuid": "0e126869-3e02-87f7-a5d1-665f9db199a4",
+        "uuid": "dda3aef5-9702-8d93-b249-4f0306806717",
         "words": [
           "use",
           "when",
@@ -24445,7 +25654,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when decomposing a project into WBS elements — assigning tasks, posting time-entries and material costs against a specific task code, computing per-task cost-to-cost % complete that rolls up to project-level IFRS-15 §35 recognition. The hierarchical work-breakdown collection under a project.",
-        "uuid": "1bd17cc6-241c-8945-a07b-a9d7d3cb1501",
+        "uuid": "0f25dbfc-73f6-8f31-b2c3-a86a0d46fb0c",
         "words": [
           "use",
           "when",
@@ -24517,7 +25726,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing a fiscal period — capturing frozen WIP evidence (cost-to-date, EAC, % complete, recognised revenue, unbilled contract asset or deferred liability) per project per period, and anchoring the accrual JE. The IFRS-15 §B14-B19 period-end WIP valuation collection.",
-        "uuid": "31fb5939-4a84-8fc5-a54f-5cb99fab9089",
+        "uuid": "d718df00-7e02-8873-bc33-f502f1b25fc4",
         "words": [
           "use",
           "when",
@@ -24585,7 +25794,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or approving pre-contract proposals — line-item pricing, issuer/approver SoD enforcement, sending to customer, accepting, and converting to a sales order. No GL impact until accepted. The IFRS-15 §10 contract-origination collection.",
-        "uuid": "1641deae-0200-8e99-82f3-06dd0b156ece",
+        "uuid": "f334357d-33da-87d6-acc3-ebf0cdbc8dc5",
         "words": [
           "use",
           "when",
@@ -24636,7 +25845,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "sales-orders",
-        "uuid": "53ff363e-f967-8fc6-97dc-0b80a6c6ac1e",
+        "uuid": "0e181038-16b2-881d-a3d8-461f246dbf71",
         "words": [
           "sales",
           "orders"
@@ -24648,7 +25857,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or progressing a customer order — from quote conversion through confirmation, partial fulfillment, invoicing, and closure; track order lines, delivery dates, shipping and billing addresses, and fulfillment progress. The O2C customer-order register (UBL-2.1 / UN-EDIFACT ORDERS / Peppol BIS-3.0), distinct from purchase-orders (P2P).",
-        "uuid": "f423b062-9d17-8016-a477-2612793b2ad4",
+        "uuid": "29e05fe8-e794-8ed8-a815-2bac2a883128",
         "words": [
           "use",
           "when",
@@ -24721,7 +25930,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authorising, tracking, and closing a customer return (RMA) — recording the reason, line-level items and restock decisions, enforcing SoD on approval, and linking to the credit memo that reverses revenue per IFRS-15 §B22. The returns-and-RMA collection.",
-        "uuid": "0864b2fa-26a0-8dac-87d1-dc814bac8b8d",
+        "uuid": "689b49ce-1f26-81f3-974a-8225f7a7573a",
         "words": [
           "use",
           "when",
@@ -24788,7 +25997,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when dispatching goods against a sales order — recording carrier, tracking number and URL, line items shipped, ship-from/to addresses, and progressing through picked → packed → shipped → delivered states. The fulfillment and carrier-tracking collection per EN-16931 §BG-13.",
-        "uuid": "eb0f81fd-d248-8f00-8c56-43ed4b9f4a78",
+        "uuid": "52a44a63-2b13-8189-b6a7-ab195e101930",
         "words": [
           "use",
           "when",
@@ -24854,7 +26063,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when filing export or import customs declarations for a cross-border shipment — recording HS-coded line items, declared values, duty and import VAT, INCOTERMS, country of origin, and tracking MRN issuance through to customs release. The EU UCC / WCO structured customs-declaration collection.",
-        "uuid": "0b178c18-aaa2-8f83-a8dc-230b25ba84a7",
+        "uuid": "5de41417-9d9b-8da7-bd0e-d2ac7c7371b9",
         "words": [
           "use",
           "when",
@@ -24926,7 +26135,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ingesting or querying carrier shipment-status events — webhook pushes, API polls, or EDI IFTSTA messages — to update a shipment's in-transit state and trigger IFRS-15 §38 point-in-time revenue recognition on the `delivered` event under DDP/DAP/DPU INCOTERMS. The append-only carrier-tracking event log.",
-        "uuid": "114706dc-6ef1-8b48-995e-69ee661a4b05",
+        "uuid": "812dd522-556d-87b5-884d-6d94771f6355",
         "words": [
           "use",
           "when",
@@ -25062,6 +26271,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "cycle",
+    "path": "cycle",
+    "translations": [
+      {
+        "key": "name",
+        "source": "cycle",
+        "uuid": "33df03d6-53c1-8e7f-82cc-cdf946f633cd",
+        "words": [
+          "cycle"
+        ],
+        "values": {
+          "en": "cycle"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.",
+        "uuid": "9c66b936-2959-8234-91a6-865044abacf9",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "cycle",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "cycles",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "recurrence",
+          "of",
+          "a",
+          "repeating",
+          "process",
+          "or",
+          "period"
+        ],
+        "values": {
+          "en": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period."
+        }
+      }
+    ]
+  },
+  {
     "atom": "damages",
     "path": "damages",
     "translations": [
@@ -25130,6 +26389,79 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "dance: a schema.org component word, fused from DanceEvent, DanceGroup"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "dashboard",
+    "path": "dashboard",
+    "translations": [
+      {
+        "key": "name",
+        "source": "dashboard",
+        "uuid": "e5bfb39e-468f-86bb-8414-ffe0ae176ff9",
+        "words": [
+          "dashboard"
+        ],
+        "values": {
+          "en": "dashboard"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions.",
+        "uuid": "7565f5a4-8132-852b-81d8-fd4eafe9c1b4",
+        "words": [
+          "use",
+          "when",
+          "each",
+          "model",
+          "needs",
+          "a",
+          "computed",
+          "payload",
+          "admin",
+          "view",
+          "its",
+          "related",
+          "links",
+          "partitioned",
+          "into",
+          "the",
+          "collections",
+          "plural",
+          "and",
+          "models",
+          "singular",
+          "it",
+          "composes",
+          "rendered",
+          "via",
+          "reusable",
+          "component",
+          "atoms",
+          "computed",
+          "from",
+          "the",
+          "link",
+          "graph",
+          "not",
+          "hardcoded",
+          "each",
+          "atom",
+          "is",
+          "open",
+          "graph",
+          "schema",
+          "org",
+          "compatible",
+          "in",
+          "all",
+          "dimensions"
+        ],
+        "values": {
+          "en": "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions."
         }
       }
     ]
@@ -25258,7 +26590,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when handling a data subject's GDPR rights request — access, rectification, erasure, restriction, portability, objection, or consent withdrawal — tracking identity verification, fulfilment evidence, and the Art.12(3) one-month deadline through to completion or DPA escalation. The GDPR DSR/DSAR workflow collection.",
-        "uuid": "f79812be-7c95-80ed-ad0f-99ca5501d09b",
+        "uuid": "a9f022e0-2e08-8aff-b09f-c91b4b22c1f9",
         "words": [
           "use",
           "when",
@@ -25328,7 +26660,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract or processing agreement specifies data-protection obligations — processor/controller roles, permitted uses, security measures (encryption, access controls, breach notification), DPA terms.",
-        "uuid": "f18838a6-dd01-8d8f-bca9-b714509f67c7",
+        "uuid": "d7c285d8-a436-8164-b2f7-a7e97585de84",
         "words": [
           "use",
           "when",
@@ -25911,6 +27243,97 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "decentralization",
+    "path": "decentralization",
+    "translations": [
+      {
+        "key": "name",
+        "source": "decentralization",
+        "uuid": "c00f5ae2-d418-891f-a251-921b0b7bb824",
+        "words": [
+          "decentralization"
+        ],
+        "values": {
+          "en": "decentralization"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center.",
+        "uuid": "5da2361a-20e4-8da6-b1fa-6372f66bbf02",
+        "words": [
+          "use",
+          "when",
+          "order",
+          "must",
+          "arise",
+          "with",
+          "no",
+          "central",
+          "controller",
+          "a",
+          "global",
+          "pattern",
+          "as",
+          "the",
+          "fixed",
+          "point",
+          "of",
+          "local",
+          "rules",
+          "stigmergy",
+          "emergence",
+          "flocking",
+          "robust",
+          "because",
+          "redundant",
+          "and",
+          "diverse",
+          "no",
+          "single",
+          "point",
+          "of",
+          "failure",
+          "measured",
+          "by",
+          "concentration",
+          "the",
+          "nakamoto",
+          "coefficient",
+          "in",
+          "erpax",
+          "content",
+          "uuid",
+          "merge",
+          "is",
+          "stigmergy",
+          "each",
+          "peer",
+          "recomputes",
+          "the",
+          "id",
+          "from",
+          "the",
+          "content",
+          "no",
+          "coordinator",
+          "order",
+          "emerges",
+          "from",
+          "content",
+          "addressing",
+          "not",
+          "from",
+          "a",
+          "center"
+        ],
+        "values": {
+          "en": "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center."
+        }
+      }
+    ]
+  },
+  {
     "atom": "decide",
     "path": "decide",
     "translations": [
@@ -25928,7 +27351,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary.",
-        "uuid": "85cbb80c-fe1d-8af5-9226-27e368db8d03",
+        "uuid": "f0ab6cce-7d51-8ac2-8d6a-0b5c34d223b8",
         "words": [
           "use",
           "when",
@@ -26010,6 +27433,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "declaration",
+    "path": "declaration",
+    "translations": [
+      {
+        "key": "name",
+        "source": "declaration",
+        "uuid": "c74775ee-36fb-8a33-a205-134cc6626e8b",
+        "words": [
+          "declaration"
+        ],
+        "values": {
+          "en": "declaration"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority.",
+        "uuid": "f1cd7332-5094-826a-a7d2-ad3f3f3b0e76",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "declaration",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "declarations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "formal",
+          "statement",
+          "filed",
+          "with",
+          "an",
+          "authority"
+        ],
+        "values": {
+          "en": "Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority."
+        }
+      }
+    ]
+  },
+  {
     "atom": "decompression",
     "path": "decompression",
     "translations": [
@@ -26027,7 +27499,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the dive/decompression metaphor for erpax math — on-gas/off-gas as take/give, the gas debt as a conserved transaction balanced before close, half-time doubling as the rodin coil, deco stops as horo positions, M-values as the harmony bound, and the {1,2,3} basic-team basis (cave·recreational·technical = self·duality·trinity).",
-        "uuid": "b93f86c4-b88c-8d56-90eb-39b616282cd9",
+        "uuid": "2340f562-39ab-8166-b850-e6fc32880ae7",
         "words": [
           "use",
           "when",
@@ -26111,7 +27583,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for tax-deductible expenses and deduction timing — permanent (non-deductible) vs temporary (deductible in different period) per IAS-12; central to tax provision and deferred-tax calculation",
-        "uuid": "1b430501-18d7-8913-8903-1633a16fe3f9",
+        "uuid": "9b1aa6dd-ba79-8536-8b8c-6957cfbe4004",
         "words": [
           "use",
           "for",
@@ -26165,7 +27637,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when eliminating duplicate records — duplicate detection (exact/fuzzy), merge strategies, idempotency to prevent re-ingestion, duplicate scope (entity/transaction/field-level), dedup window/time-range.",
-        "uuid": "12c1eeff-e639-8907-8fd2-6131ea1f2c18",
+        "uuid": "4031d112-5e31-8944-9d54-62d4ed664b9d",
         "words": [
           "use",
           "when",
@@ -26350,7 +27822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deferring the recognition of revenue or expense to future periods pending contract performance, delivery, or time passage — the dual of accrual and core to IFRS-15 revenue recognition",
-        "uuid": "5b1971c3-5487-82fb-880c-cccffe25ce51",
+        "uuid": "8b0f1322-99b3-8421-850b-60881364a45a",
         "words": [
           "use",
           "when",
@@ -26406,7 +27878,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for customer advance payments or contract-liability positions — amounts received before performance is satisfied; net against contract assets to determine net contract position",
-        "uuid": "0509920f-bf6f-8263-8e48-1d6fb380b0d5",
+        "uuid": "e1bd155f-377f-8c0e-af0b-ecc0166b530b",
         "words": [
           "use",
           "for",
@@ -26480,6 +27952,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "definition",
+    "path": "definition",
+    "translations": [
+      {
+        "key": "name",
+        "source": "definition",
+        "uuid": "22f3b765-51fd-8959-935d-0b1eb1949e28",
+        "words": [
+          "definition"
+        ],
+        "values": {
+          "en": "definition"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term.",
+        "uuid": "28184c6c-9b3d-80a0-acaa-4d0f9ba7277b",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "definition",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "definitions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "precise",
+          "meaning",
+          "assigned",
+          "to",
+          "a",
+          "term"
+        ],
+        "values": {
+          "en": "Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term."
+        }
+      }
+    ]
+  },
+  {
     "atom": "degreeday",
     "path": "degreeday",
     "translations": [
@@ -26497,7 +28018,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when crop development is predicted from accumulated heat rather than the calendar — growing degree days (GDD = (Tmax+Tmin)/2 − Tbase, capped) measure the heat a crop banks toward maturity, so a warm spring advances harvest and a cool one delays it. The heat-unit clock that makes a fixed-week calendar drift; pairs with frost and evapotranspiration.",
-        "uuid": "00c93c5e-47da-85b4-af89-ddae83845565",
+        "uuid": "db334638-d57c-8e93-9a9b-6a18ac202159",
         "words": [
           "use",
           "when",
@@ -26694,7 +28215,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand ",
-        "uuid": "4054caec-12f1-8b86-ae3b-8f2523ff8df7",
+        "uuid": "db2710ba-bde2-8d6f-9bc6-562146165e81",
         "words": [
           "a",
           "demand",
@@ -26967,6 +28488,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "dependency",
+    "path": "dependency",
+    "translations": [
+      {
+        "key": "name",
+        "source": "dependency",
+        "uuid": "766bafe5-277f-81e7-8b38-726ecea4a81b",
+        "words": [
+          "dependency"
+        ],
+        "values": {
+          "en": "dependency"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another.",
+        "uuid": "3767997c-c102-85b2-acb0-1a1655a50ef1",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "dependency",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "dependencies",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "relationship",
+          "where",
+          "one",
+          "item",
+          "requires",
+          "another"
+        ],
+        "values": {
+          "en": "Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another."
+        }
+      }
+    ]
+  },
+  {
     "atom": "deploy",
     "path": "deploy",
     "translations": [
@@ -26984,7 +28554,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deploying a Payload app to production or fixing build/migration/env issues — required secrets, running migrations vs dev push, building without a DB connection, file storage, or Cloudflare/Next/Docker specifics.",
-        "uuid": "0dd92edc-d075-8e62-998a-60788a1a6442",
+        "uuid": "0dbc1545-2e62-813a-ae30-9d71b3c15897",
         "words": [
           "use",
           "when",
@@ -27113,7 +28683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when skills come from USER CONTENT — an HR job description names the competencies a role requires, and each named skill is content-addressed to a corpus route (same name ⇒ same route ⇒ merge). A route not yet in the corpus is a NEW skill the user content adds — the corpus GROWS from what users write. The dual of generate (which mints from aura gaps): derive mints from user content; both feed one content-addressed corpus.",
-        "uuid": "dba2d6fc-4aeb-8671-b137-ae01b918b5c7",
+        "uuid": "d6bd0a15-849c-82f0-92d8-c253140e0d68",
         "words": [
           "use",
           "when",
@@ -27215,7 +28785,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing free-form explanatory text — line item description, finding description, audit observation, notes. Rich or plain text; never a metadata bag (prefer explicit fields + tags for structured data).",
-        "uuid": "35fc9ddd-2f19-8d1d-820c-df38beae728b",
+        "uuid": "bab7af9e-fa2f-8441-bb31-cdc1e6dc89a7",
         "words": [
           "use",
           "when",
@@ -27272,7 +28842,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining the visual and interaction form of an experience — wireframes, prototypes, design reviews, design systems, accessibility, user research insights applied to form.",
-        "uuid": "4f7117e0-6013-8fb9-93f1-faa4d657089c",
+        "uuid": "fdf5e4ae-3895-807a-965f-20d4ca6496dd",
         "words": [
           "use",
           "when",
@@ -27323,7 +28893,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the demand seed of a market — the latent want that precedes any transaction. The one market atom you cannot manufacture exogenously; you reveal or awaken it, never inject it. If desire is the zero atom, no convenience, proof, or trendsetter reaches the market — you redefine the product onto a want that already exists.",
-        "uuid": "c4273722-d6ba-8e1e-b222-052053c4b695",
+        "uuid": "635fd56f-0909-8418-8e24-3b472ffc84c3",
         "words": [
           "use",
           "when",
@@ -27604,7 +29174,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
-        "uuid": "9d7dde97-fbbb-8173-8d16-97c45f06b076",
+        "uuid": "0707a192-a628-86ce-b616-1b290f808d69",
         "words": [
           "one",
           "or",
@@ -27982,7 +29552,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when addressing an atom in digit-space — the dual of word — its horo sequence position and the digital-root of its content-uuid, the trace that completes the aura into a tamper-evident trinity.",
-        "uuid": "7ab11a7a-729e-8d2c-b700-2c50cfbbe04d",
+        "uuid": "bdeebc60-4482-82fc-9113-b906e3bece5e",
         "words": [
           "use",
           "when",
@@ -28085,7 +29655,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one concept is split across many prefixed collections/fields that should coexist at one coordinate — bank-/fx-/trade-/intercompany-transactions → transactions; customers/vendors/addresses → parties. A prefix is a dimension not yet collapsed (kind/context/role/perspective/unit/time); remove it and the variants merge into the shared coordinate, the prefix becoming a field/tag/type. erpax is multi-dimensional: all coexist at one coordinate, in unity.",
-        "uuid": "abc61480-9042-8a1a-8c50-df2800088326",
+        "uuid": "b8243c58-5677-85e8-bad3-68cc610cb227",
         "words": [
           "use",
           "when",
@@ -28253,7 +29823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
-        "uuid": "9d38ac69-9877-85de-a53d-2d0c0fee1dbb",
+        "uuid": "e6054301-d0db-82fc-936f-17b682b8ab4d",
         "words": [
           "a",
           "director",
@@ -28309,7 +29879,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
-        "uuid": "b2cf56f0-dc2d-847b-8258-2734634cc71c",
+        "uuid": "048e3e7d-6982-8932-83d4-121bb4f9d93b",
         "words": [
           "a",
           "director",
@@ -28433,7 +30003,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when determining which items require quantitative and narrative disclosure in financial statements — mandatory, recommended, and suggested per IFRS/GAAP; gate for materiality and scope",
-        "uuid": "77e0d5ae-068f-88a7-9388-81051c80014f",
+        "uuid": "19b7c173-3a47-87ae-94af-050b3453f4c8",
         "words": [
           "use",
           "when",
@@ -28824,7 +30394,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract specifies dispute handling — mechanism (litigation, arbitration, mediation), forum/arbitrator, procedural rules (discovery, evidence, cost allocation), escalation (negotiation→mediation→arbitration).",
-        "uuid": "3e0a7525-ce72-8d0b-85e4-166806dd2242",
+        "uuid": "b76b5e83-5353-8f79-b121-2cf90925d225",
         "words": [
           "use",
           "when",
@@ -29102,7 +30672,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "diversity",
-        "uuid": "4c3fbadd-9680-8fe3-a120-0b21146a0212",
+        "uuid": "3c966a46-4cf8-8102-bc4f-c153ddef8ef9",
         "words": [
           "diversity"
         ],
@@ -29113,7 +30683,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "diversity: a schema.org component word, fused from diversityPolicy, diversityStaffingReport",
-        "uuid": "87f742ac-7e32-8995-b1d4-82c2f48fb078",
+        "uuid": "ad1b6091-eb1d-8b28-beb2-7161c20cdaac",
         "words": [
           "diversity",
           "a",
@@ -29263,7 +30833,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling a tenant's domain — NOT tenant isolation (the multi-tenant plugin does that), but the domain as the tenant's identity and managed entity: the name that routes the request to the tenant, its hierarchy, status lifecycle, SSL, billing, and — the key — proof of domain ownership, which IS the computational admin grant: prove you control the domain and the tenant is yours.",
-        "uuid": "df4a531a-b7e6-891a-a64d-e94c76db08f1",
+        "uuid": "1caf9562-fdbb-85cf-993d-64d280b19918",
         "words": [
           "use",
           "when",
@@ -29779,6 +31349,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "drain",
+    "path": "drain",
+    "translations": [
+      {
+        "key": "name",
+        "source": "drain",
+        "uuid": "79a37ed7-9375-83ee-af71-067e2031bd8e",
+        "words": [
+          "drain"
+        ],
+        "values": {
+          "en": "drain"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one drain — the singular model of the drains collection (the plural store); a sink that draws down a resource or stock.",
+        "uuid": "5ba14946-7f86-81d6-9377-ccf8e4566ea9",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "drain",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "drains",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "sink",
+          "that",
+          "draws",
+          "down",
+          "a",
+          "resource",
+          "or",
+          "stock"
+        ],
+        "values": {
+          "en": "Use when modelling one drain — the singular model of the drains collection (the plural store); a sink that draws down a resource or stock."
+        }
+      }
+    ]
+  },
+  {
     "atom": "drained",
     "path": "drained",
     "translations": [
@@ -30017,7 +31638,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society sends scouts to fly the content-uuid matrix in coordinated self-learning — reconnoitring sectors for gaps and entropy and feeding them to the agents to eat, warfare tactics applied to building.",
-        "uuid": "268bb4f6-5b74-8775-9f5b-1d1627bcca73",
+        "uuid": "420602ea-10a0-843b-a743-2e85df1f312e",
         "words": [
           "use",
           "when",
@@ -30175,7 +31796,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when migrating logic to maximum tampering cost — the computed dry-clean that collides duplicated/hardcoded/scattered logic into shared content-addressed atoms (merge-by-extension), the word colliding DryCleaningOrLaundry with don't-repeat-yourself.",
-        "uuid": "818ac68b-1354-8b61-b953-d26c1e10ca15",
+        "uuid": "1a6a7a66-ef71-8c97-aa89-7234ee65206f",
         "words": [
           "use",
           "when",
@@ -30237,7 +31858,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's pervasive two-fold law — matter↔antimatter (code↔skill), physical↔metaphysical, give↔take, flow↔balance, build↔bind, learn↔forget, whole↔part, begin↔end, open↔close. The pair that recurs at every scale.",
-        "uuid": "b15653cf-da3b-8688-bf9e-1cbac2593647",
+        "uuid": "377acd8b-649d-8e21-9185-a6be7009da16",
         "words": [
           "use",
           "when",
@@ -30340,7 +31961,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when automating payment retry and collections — dunning-cycles exist but dunning as the parent concept (policy, rule, retry schedule, messaging) does not.",
-        "uuid": "f1317ab1-a328-8414-b383-d214d050d0c3",
+        "uuid": "76c27e5e-c3e2-816a-a0b0-5bef7364b286",
         "words": [
           "use",
           "when",
@@ -30678,7 +32299,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\"data is money\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce.",
-        "uuid": "3bfd3a84-de3b-8377-896d-0e025a72b7fb",
+        "uuid": "22b1c1de-841d-89eb-b4be-2450115f84ce",
         "words": [
           "use",
           "when",
@@ -30722,6 +32343,94 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when wiring or debugging the storefront — per-tenant Stripe payments, cart/order/product/address overrides, checkout stock validation, the order-to-GL bridge, or the \\\"data is money\\\" seam — the erpax configuration of the official @payloadcms/plugin-ecommerce."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "ecosystem",
+    "path": "ecosystem",
+    "translations": [
+      {
+        "key": "name",
+        "source": "ecosystem",
+        "uuid": "cfe74217-0dc4-842c-9d85-4f5006a8803e",
+        "words": [
+          "ecosystem"
+        ],
+        "values": {
+          "en": "ecosystem"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law.",
+        "uuid": "5eecada9-fbd5-8595-a5f2-7398ac743671",
+        "words": [
+          "use",
+          "when",
+          "sustainability",
+          "and",
+          "decentralisation",
+          "must",
+          "be",
+          "seen",
+          "as",
+          "one",
+          "a",
+          "food",
+          "web",
+          "is",
+          "a",
+          "coordinator",
+          "free",
+          "network",
+          "decentralised",
+          "that",
+          "wastes",
+          "nothing",
+          "sustainable",
+          "for",
+          "the",
+          "same",
+          "reason",
+          "local",
+          "agents",
+          "posting",
+          "balanced",
+          "metabolic",
+          "exchanges",
+          "every",
+          "output",
+          "another",
+          "s",
+          "input",
+          "so",
+          "global",
+          "conservation",
+          "and",
+          "global",
+          "order",
+          "both",
+          "emerge",
+          "from",
+          "local",
+          "balance",
+          "erpax",
+          "is",
+          "an",
+          "ecosystem",
+          "nature",
+          "is",
+          "the",
+          "empirical",
+          "proof",
+          "of",
+          "the",
+          "law"
+        ],
+        "values": {
+          "en": "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law."
         }
       }
     ]
@@ -30889,7 +32598,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing educational institutions — student enrollment, curriculum delivery, academic assessment, teaching schedules, institutional capacity, or education program outcomes in government/nonprofit schools (COFOG 09).",
-        "uuid": "e92b4946-3559-865a-bd50-ed71b41320cd",
+        "uuid": "5ddfa65c-d3d8-84a3-afcc-35ef48ae08cc",
         "words": [
           "use",
           "when",
@@ -31407,7 +33116,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when removing intercompany balances, transactions, and profits in consolidation per IFRS-10 and IFRS-3 — consolidation adjustment that nets balances across entities to zero",
-        "uuid": "0392f89b-41a7-8e7f-936b-09d3b3a035bf",
+        "uuid": "b39297b5-8cf4-86e1-96a2-2b4f855a5cf0",
         "words": [
           "use",
           "when",
@@ -31612,7 +33321,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "emission",
-        "uuid": "d0fda4d2-0dea-8fd9-970c-80cbe6b5d5ce",
+        "uuid": "6279992c-2707-8882-8991-fa236164ec69",
         "words": [
           "emission"
         ],
@@ -31622,21 +33331,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       },
       {
         "key": "description",
-        "source": "emission: a schema.org component word, fused from meetsEmissionStandard",
-        "uuid": "011cd90a-56a6-8614-b11b-00338df39c6f",
+        "source": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]].",
+        "uuid": "5dfa9995-d36e-814f-9177-62a70c2361d1",
         "words": [
-          "emission",
+          "use",
+          "when",
+          "quantifying",
+          "the",
+          "greenhouse",
+          "gas",
+          "mass",
           "a",
-          "schema",
-          "org",
-          "component",
-          "word",
-          "fused",
-          "from",
-          "meetsemissionstandard"
+          "cycle",
+          "releases",
+          "converting",
+          "each",
+          "gas",
+          "to",
+          "co",
+          "equivalent",
+          "via",
+          "its",
+          "global",
+          "warming",
+          "potential",
+          "summing",
+          "a",
+          "multi",
+          "gas",
+          "inventory",
+          "computing",
+          "activity",
+          "based",
+          "emissions",
+          "ghg",
+          "protocol",
+          "or",
+          "measuring",
+          "carbon",
+          "intensity",
+          "co",
+          "e",
+          "per",
+          "unit",
+          "output",
+          "the",
+          "debit",
+          "export",
+          "side",
+          "of",
+          "sustainability"
         ],
         "values": {
-          "en": "emission: a schema.org component word, fused from meetsEmissionStandard"
+          "en": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]]."
         }
       }
     ]
@@ -31793,7 +33540,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing workforce records — onboarding an employee, recording compensation (IAS 19 base salary, FTE ratio, bonus, pension, PTO), storing GDPR-classified identity and payroll bank account, linking to the actor-party user, and driving the payroll cycle via time-entries and payroll runs. The GDPR-protected workforce master (admin/payroll-officer access only).",
-        "uuid": "8511460f-26c5-8e7d-89bf-1a3bb11ca2e2",
+        "uuid": "0e6b5238-42f7-867e-8e43-2a96b886082c",
         "words": [
           "use",
           "when",
@@ -31944,7 +33691,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing employee leave — annual vacation, sick, parental, TOIL, bereavement — approval workflow, entitlement balance decrement, IAS-19 accrual feed, and multi-jurisdiction minimum-leave compliance (EU WTD, US FMLA, BG Labour Code). The employee leave-request register.",
-        "uuid": "c4d8d751-6639-83b3-b48b-4dadc53a3c3a",
+        "uuid": "2265014c-78dd-8fd0-ae46-022b8bd96ea8",
         "words": [
           "use",
           "when",
@@ -32009,7 +33756,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running employee performance cycles — annual, mid-year, quarterly, probation, PIP, 360 — self-assessment plus manager review, competency ratings, merit-increase and promotion recommendations, and GDPR-compliant processing. The employee performance-review collection.",
-        "uuid": "7b9e2fce-6b1a-8414-b506-a6f0e30740d3",
+        "uuid": "60a0efbf-667a-82c6-bb7e-05b32b69bf82",
         "words": [
           "use",
           "when",
@@ -32070,7 +33817,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
-        "uuid": "9d77acdc-eb74-8502-b931-6e9582276414",
+        "uuid": "06c9dadd-1a46-8101-b850-1f66662f1070",
         "words": [
           "use",
           "when",
@@ -32203,7 +33950,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging daily employee work time — regular hours, overtime, night shifts, PTO, sick and parental leave — with kind-based GL allocation, billable-rate project costing, approval workflow, and payroll-run linkage for IAS-19 variable pay. The daily time-entry collection.",
-        "uuid": "4c8bb602-afd4-8080-ad70-9241ca7b0ebd",
+        "uuid": "1bcefffb-d6f5-84d8-939c-44ccc0faff8d",
         "words": [
           "use",
           "when",
@@ -32495,7 +34242,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about completion in erpax — period end, lifecycle seal, the wave's return to a new 0. The universal root of completion; dual of begin (and identical to it one dimension up).",
-        "uuid": "4387ef80-bbb4-8638-9a5d-1b630729591c",
+        "uuid": "5dca23da-3e6f-8d76-84a2-8be2549f4679",
         "words": [
           "use",
           "when",
@@ -32647,6 +34394,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "endorser",
+    "path": "endorser",
+    "translations": [
+      {
+        "key": "name",
+        "source": "endorser",
+        "uuid": "bfddf5e9-a685-8fd3-9b2f-1a7e22fcb449",
+        "words": [
+          "endorser"
+        ],
+        "values": {
+          "en": "endorser"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument.",
+        "uuid": "3db444e9-0365-88ae-82dd-7b4cc641f6f4",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "endorser",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "endorsers",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "party",
+          "who",
+          "signs",
+          "over",
+          "or",
+          "backs",
+          "an",
+          "instrument"
+        ],
+        "values": {
+          "en": "Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument."
+        }
+      }
+    ]
+  },
+  {
     "atom": "endorsers",
     "path": "endorsers",
     "translations": [
@@ -32681,6 +34479,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "endpoint",
+    "path": "endpoint",
+    "translations": [
+      {
+        "key": "name",
+        "source": "endpoint",
+        "uuid": "7ec116ae-13ef-8b23-a7ac-1fdef6e0c67d",
+        "words": [
+          "endpoint"
+        ],
+        "values": {
+          "en": "endpoint"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached.",
+        "uuid": "6991519b-98a9-8648-b6df-174cd48ba731",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "endpoint",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "endpoints",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "an",
+          "addressable",
+          "interface",
+          "where",
+          "a",
+          "service",
+          "is",
+          "reached"
+        ],
+        "values": {
+          "en": "Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached."
+        }
+      }
+    ]
+  },
+  {
     "atom": "endpoints",
     "path": "endpoints",
     "translations": [
@@ -32698,7 +34546,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding or debugging a custom HTTP route that does work outside a collection's CRUD — the `/next/seed` demo-data loader that clears and repopulates a fresh tenant with example pages, posts, media, and the erpax product-marketing pages — endpoints is the society's custom-route organ (currently one organ-scoped seed handler, not the per-collection structural seed).",
-        "uuid": "e05aad94-5b8d-8c10-98ef-73a91fb08602",
+        "uuid": "ae23bb59-bc11-8ae3-a39b-6d308635ecdd",
         "words": [
           "use",
           "when",
@@ -32868,7 +34716,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring or improving involvement/participation — employee engagement, customer engagement, learning engagement. The observed commitment/interaction level.",
-        "uuid": "685f9a8f-6178-8fe0-8c95-6d55690545b9",
+        "uuid": "be780f1c-dbd0-8424-ba13-d2ff9201baac",
         "words": [
           "use",
           "when",
@@ -32986,7 +34834,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when projecting the profit of one crop/product/activity as a standalone line — the crop enterprise budget: revenue (units × price) minus its direct costs (seed, inputs, labor) per crop or per bed-foot, so crops can be ranked by net return and the unprofitable dropped. The per-line P&L projection; the production-economics twin of the cost center.",
-        "uuid": "83ea2e4a-6146-8d6b-8605-814c7075c86f",
+        "uuid": "354f5741-8f8b-855c-ab25-2ee792b503d2",
         "words": [
           "use",
           "when",
@@ -33153,7 +35001,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying legal entities — Corporation, LLC, Partnership, Nonprofit, Trust, Government, Individual — to determine applicable compliance frameworks, audit scope, and jurisdiction applicability. The read-only entity-type reference table.",
-        "uuid": "03abbe11-1d89-83a9-81e1-58933b450cfc",
+        "uuid": "78916c1d-87b9-86ef-beb8-715e4c1d1f0b",
         "words": [
           "use",
           "when",
@@ -33192,6 +35040,110 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "entropy",
+    "path": "entropy",
+    "translations": [
+      {
+        "key": "name",
+        "source": "entropy",
+        "uuid": "3990f8cf-a44c-875e-b34f-ea720e27fb7e",
+        "words": [
+          "entropy"
+        ],
+        "values": {
+          "en": "entropy"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about disorder as the quantity erpax's whole ledger balances — entropy is the fuel of the one law: zero entropy ⇒ infinite mass ⇒ infinite tamper/exploit cost. A content-addressed store at zero entropy holds no slack a forger can exploit (only the external anchor borrows the one drop). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
+        "uuid": "9e889ce1-eb97-8461-97dc-86b62409ee5c",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "disorder",
+          "as",
+          "the",
+          "quantity",
+          "erpax",
+          "s",
+          "whole",
+          "ledger",
+          "balances",
+          "entropy",
+          "is",
+          "the",
+          "fuel",
+          "of",
+          "the",
+          "one",
+          "law",
+          "zero",
+          "entropy",
+          "infinite",
+          "mass",
+          "infinite",
+          "tamper",
+          "exploit",
+          "cost",
+          "a",
+          "content",
+          "addressed",
+          "store",
+          "at",
+          "zero",
+          "entropy",
+          "holds",
+          "no",
+          "slack",
+          "a",
+          "forger",
+          "can",
+          "exploit",
+          "only",
+          "the",
+          "external",
+          "anchor",
+          "borrows",
+          "the",
+          "one",
+          "drop",
+          "angel",
+          "lowers",
+          "it",
+          "create",
+          "order",
+          "dry",
+          "archangel",
+          "raises",
+          "it",
+          "destroy",
+          "duplicate",
+          "a",
+          "violation",
+          "is",
+          "borrowed",
+          "entropy",
+          "debited",
+          "to",
+          "the",
+          "agent",
+          "fused",
+          "out",
+          "by",
+          "the",
+          "fusion",
+          "reactor"
+        ],
+        "values": {
+          "en": "Use when reasoning about disorder as the quantity erpax's whole ledger balances — entropy is the fuel of the one law: zero entropy ⇒ infinite mass ⇒ infinite tamper/exploit cost. A content-addressed store at zero entropy holds no slack a forger can exploit (only the external anchor borrows the one drop). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor."
+        }
+      }
+    ]
+  },
+  {
     "atom": "entry",
     "path": "entry",
     "translations": [
@@ -33209,7 +35161,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the universal double-entry in erpax — every value movement (any direction, any parties) reduces to a balanced (debit, credit) pair; the reverse is inherent, direction is a viewpoint, N plugin mounts consolidate (intercompany nets to zero). The debit/credit closure operator over the whole mesh — \"all accounted in all directions ⇒ the wiring is complete\".",
-        "uuid": "83b7cb28-f815-8501-b48d-02febf1dbed8",
+        "uuid": "63cfe521-8bc3-8dfd-abd3-44ea595ca971",
         "words": [
           "use",
           "when",
@@ -33694,7 +35646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when funds are held by a third party (escrow agent) pending satisfaction of contract conditions — separate legal/financial status from held-to-maturity or restricted cash per IAS-7",
-        "uuid": "5ea08319-e62e-8ebd-be55-984df3636eec",
+        "uuid": "e681dc49-ae47-85dd-87d7-619cdff80928",
         "words": [
           "use",
           "when",
@@ -33805,6 +35757,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "estate: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "estimate",
+    "path": "estimate",
+    "translations": [
+      {
+        "key": "name",
+        "source": "estimate",
+        "uuid": "2ca31200-0243-83a8-abae-6f9d4d5c7eea",
+        "words": [
+          "estimate"
+        ],
+        "values": {
+          "en": "estimate"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known.",
+        "uuid": "729652b8-c6fc-8952-b6c5-a8fc87dcad4f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "estimate",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "estimates",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "projected",
+          "figure",
+          "issued",
+          "before",
+          "the",
+          "actual",
+          "is",
+          "known"
+        ],
+        "values": {
+          "en": "Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known."
         }
       }
     ]
@@ -34009,7 +36012,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when quantifying crop water demand — evapotranspiration (ET) = soil evaporation + plant transpiration, the daily withdrawal from the soil-moisture reservoir that drives irrigation scheduling. The debit side of the water budget; reference ET × crop coefficient gives the crop's actual draw.",
-        "uuid": "737dfd7d-e74f-859d-b7e8-6d756c489677",
+        "uuid": "dbf3fe54-94de-8790-829a-70f32f4a03cf",
         "words": [
           "use",
           "when",
@@ -34077,7 +36080,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The domain-event atom — an afterChange [[hooks]] hook emits a content-uuid-keyed envelope that in-process subscribers AND federation peers consume. Read when emitting/consuming a domain event (invoice:activated, payment:received, inventory:adjusted…), wiring chainEventEmitters/subscribers, or whenever an event's aggregateId is set. The aggregate identity MUST be the content-`uuid` (the 0), never the instance-local row id.",
-        "uuid": "6002c614-4b64-8e8b-bf86-e82af3561387",
+        "uuid": "bf52d6bb-f24e-8bff-82d9-09182910432d",
         "words": [
           "the",
           "domain",
@@ -34204,7 +36207,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assembling SOX §404 audit-pack evidence — indexing PDF/A-2b + PDF/UA-1 attestation cover sheets per completed e2e walk-through, with optional eIDAS PAdES qualified signature (CMS blob, certificate chain, SHA-256 digest). The durable evidence-attestation index.",
-        "uuid": "bda33d54-39ac-8b25-8fc2-72fced142f64",
+        "uuid": "6a61d7ca-0c7c-8e8a-ab31-f63bd479371b",
         "words": [
           "use",
           "when",
@@ -35165,6 +37168,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "failure",
+    "path": "failure",
+    "translations": [
+      {
+        "key": "name",
+        "source": "failure",
+        "uuid": "be7f8f86-7039-82ee-a2ad-40d2f1264301",
+        "words": [
+          "failure"
+        ],
+        "values": {
+          "en": "failure"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.",
+        "uuid": "70daaca5-f84d-884c-96ba-a4ca2e5234f2",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "failure",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "failures",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "recorded",
+          "instance",
+          "of",
+          "something",
+          "not",
+          "meeting",
+          "its",
+          "requirement"
+        ],
+        "values": {
+          "en": "Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement."
+        }
+      }
+    ]
+  },
+  {
     "atom": "measurements",
     "path": "fair/value/measurements",
     "translations": [
@@ -35184,7 +37238,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring or disclosing fair value of assets and liabilities — financial instruments, investment property, biological assets, share-based payments, PPA items — capturing IFRS 13 Level-1/2/3 hierarchy, valuation technique, unobservable inputs, and P&L / OCI recognition route. The IFRS 13 fair-value measurement register.",
-        "uuid": "450e5a1b-c88b-8f7a-a9a7-d3f17bbb7d3a",
+        "uuid": "e72820b2-47b1-8bdb-ba6e-6586f167204c",
         "words": [
           "use",
           "when",
@@ -35686,7 +37740,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing inter-tenant content exchange, activity distribution, or federation protocols following ActivityPub / W3C Activity Streams — content-addressed row exchange between erpax tenants with independent peer verification, trust boundaries, and content-delivery semantics.",
-        "uuid": "64369531-a881-8fb1-b62c-78393fc547bb",
+        "uuid": "8c71f0ec-9fca-8e13-8c32-bf677efeae20",
         "words": [
           "use",
           "when",
@@ -35916,7 +37970,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when budgeting the soil's nutrient capacity against crop demand — the N-P-K balance where a crop's nitrogen and potassium need (lbs/acre, as N and K₂O oxide forms) scales with its yield; heavy vs light feeders; legumes fixing their own nitrogen (N ≈ 0); the 4R stewardship and soil-test basis. Fertility is a double-entry budget: crop removal debits the soil, application credits it; it must balance like any ledger.",
-        "uuid": "144e03b2-94cb-84df-9036-a0a8978aea6e",
+        "uuid": "1865b9b0-d9fb-81dc-a9fe-31626f0d66c5",
         "words": [
           "use",
           "when",
@@ -36066,6 +38120,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "field",
+    "path": "field",
+    "translations": [
+      {
+        "key": "name",
+        "source": "field",
+        "uuid": "481fcd9a-fa27-8eed-873b-952007ae1a97",
+        "words": [
+          "field"
+        ],
+        "values": {
+          "en": "field"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.",
+        "uuid": "e6ea57d1-d1ae-8e14-9027-ed7183a0315f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "field",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "fields",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "typed",
+          "attribute",
+          "of",
+          "a",
+          "record",
+          "schema"
+        ],
+        "values": {
+          "en": "Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema."
+        }
+      }
+    ]
+  },
+  {
     "atom": "fields",
     "path": "fields",
     "translations": [
@@ -36083,7 +38186,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
-        "uuid": "60786951-bcfe-80ea-8a37-2f203dfb5d84",
+        "uuid": "f729f391-fb8d-87fe-a71a-bc132bbaaa20",
         "words": [
           "use",
           "when",
@@ -36256,7 +38359,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating, certifying, and publishing financial statements — trial balance, balance sheet, income statement, cash flow, equity — under IAS-1 / IFRS-18 (2027+) with SOX §302 preparer-vs-certifier segregation, financial ratios, and multi-format export. The period-end financial-statement collection.",
-        "uuid": "5f28ed55-ef09-8060-8106-85dfd3ba65f4",
+        "uuid": "43d8c695-ea02-8967-a417-2ab5bf4d0fb3",
         "words": [
           "use",
           "when",
@@ -36335,6 +38438,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "find: a schema.org component word, fused from FindAction"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "finding",
+    "path": "finding",
+    "translations": [
+      {
+        "key": "name",
+        "source": "finding",
+        "uuid": "a9d92cf8-eaed-82de-b2fc-86b3b6026ddc",
+        "words": [
+          "finding"
+        ],
+        "values": {
+          "en": "finding"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review.",
+        "uuid": "e48f426f-8662-8346-9094-d287d42b4c9e",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "finding",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "findings",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "an",
+          "observation",
+          "of",
+          "fact",
+          "produced",
+          "by",
+          "an",
+          "audit",
+          "or",
+          "review"
+        ],
+        "values": {
+          "en": "Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review."
         }
       }
     ]
@@ -36496,7 +38651,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when fiscalizing revenue under Наредба Н-18 СУПТО — each sale receives an immutable gapless УНП, is frozen on close (no delete — corrections via сторно reversals), emits sale:closed event with content-uuid tamper-proof hash, covering orders, subscriptions, invoices and POS. The СУПТО sale register.",
-        "uuid": "21f936b0-d922-8971-b7d0-6aeb188e1db6",
+        "uuid": "452bc650-474f-8656-9c47-0ab173349262",
         "words": [
           "use",
           "when",
@@ -36563,7 +38718,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the accounting calendar — opening, closing, or locking periods; enforcing four-eyes SoD on period transitions; configuring SAF-T or XBRL-GL period coding; blocking GL writes once a period is locked. The fiscal-period lifecycle node (open → closed → locked).",
-        "uuid": "a58b3596-9776-8bb1-b4f4-78c4ae5a3ad3",
+        "uuid": "94020f42-300b-8d0b-9cd0-f77b5cd2dd79",
         "words": [
           "use",
           "when",
@@ -36633,7 +38788,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing GHG emissions — Scope 1 direct, Scope 2 purchased energy, Scope 3 value-chain (15 sub-categories); computing tCO2e via activity-data × emission-factor; third-party ISAE 3410 verification; substantiating ESRS E1 §44-50 disclosure totals or EU CBAM filings. The GHG emission event register.",
-        "uuid": "1489bef1-963f-8a50-8511-932db278e469",
+        "uuid": "64dc7798-f5ad-8a4a-a888-44cc912c16f1",
         "words": [
           "use",
           "when",
@@ -36769,7 +38924,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing or replaying immutable point-in-time snapshots of a fiscal period — on creation, amendment, validation, closing, or regulatory audit; chaining priorSnapshot for tamper-detection; attaching eIDAS QES signatures on critical amendments. The fiscal-period audit-chain snapshot node.",
-        "uuid": "8b8ccfda-da5f-815c-b931-0a05d0115474",
+        "uuid": "61b22bad-0440-8ddd-a51d-c9d961c75402",
         "words": [
           "use",
           "when",
@@ -36826,7 +38981,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "post-balance-sheet-events",
-        "uuid": "6c38f640-e741-8318-b056-323fadc1ebd4",
+        "uuid": "1a90b381-2d4f-825c-8e6a-a5d43b56bd24",
         "words": [
           "post",
           "balance",
@@ -36840,7 +38995,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing events between the reporting date and FS-authorisation date — classifying them as adjusting (IAS 10 §8 — book) or non-adjusting (§10 — disclose); assessing going-concern impact; linking booked journal entries; meeting §21 disclosure requirements. The IAS 10 subsequent-events register.",
-        "uuid": "c2541d0c-6c9c-8251-a3bd-e3b6c73107cf",
+        "uuid": "70402760-879c-8ce7-b584-1be9cfc0fd12",
         "words": [
           "use",
           "when",
@@ -36969,7 +39124,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or measuring uncertain liabilities — warranty, restructuring, onerous contracts, environmental remediation, decommissioning/ARO, litigation; tracking best-estimate vs discounted amount, reimbursement recovery, movement history (additions/reversals/unwinds), and §85 disclosure text. The IAS-37 provision register.",
-        "uuid": "4a2c4d63-5ea5-836f-ae2c-f616cbddc86d",
+        "uuid": "3f84d79d-09f6-8d92-96e6-701ef8b5353d",
         "words": [
           "use",
           "when",
@@ -37033,7 +39188,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the tax-period workflow per jurisdiction — aligning tax filing deadlines with fiscal periods, documenting transfer-pricing adjustment counts, tracking readiness (pending-closing → adjustment-posted → tax-closed), and maintaining a tamper-proof audit chain for tax-authority compliance. The per-jurisdiction tax-period workflow node.",
-        "uuid": "50882706-c0ff-89c6-9874-865d73a555c1",
+        "uuid": "8686b738-a82a-8219-bf29-0d7852e01ca8",
         "words": [
           "use",
           "when",
@@ -37109,7 +39264,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting intercompany transfer-pricing adjustments — selecting the OECD method (CUP, cost-plus, resale, profit-split, TNMM), recording original vs arm's-length amounts, attaching contemporaneous documentation, and tracking approval through documented → validated → approved → posted. The OECD BEPS-compliant TP adjustment node.",
-        "uuid": "2684dd90-82c0-817c-8968-81b60516d9a0",
+        "uuid": "8bbe3665-75bf-82ed-b802-5fe977ee25f8",
         "words": [
           "use",
           "when",
@@ -37180,7 +39335,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing capitalized PP&E — registering assets (land, buildings, equipment, vehicles, software, intangibles), configuring depreciation method and useful life, computing depreciable base and book value, tracking disposals and maintenance, mapping GL accounts for asset/accumulated-depreciation/expense lines. The IAS-16 asset-master node.",
-        "uuid": "e8af8c3a-2357-813d-97b6-9d9077fc3409",
+        "uuid": "89fc54d3-ea7a-80a9-997f-53ea75f18ada",
         "words": [
           "use",
           "when",
@@ -37252,7 +39407,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reviewing the depreciation charge for each period — linking to the fixed-asset master, storing depreciationAmount, accumulatedAfter, and bookValueAfter per period; posting to GL via the depreciation hook; verifying period-lock before posting. The per-period IAS-16 depreciation evidence node.",
-        "uuid": "44cf017b-944e-8d74-87e3-7032ba6dc4c4",
+        "uuid": "95f244d6-9030-8727-8e4e-551871a77034",
         "words": [
           "use",
           "when",
@@ -37452,7 +39607,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about movement in erpax — value between parties (document chain), data in→out (material cycle), event streams, production through routing. The universal root of movement.",
-        "uuid": "5fbbd9c4-24a0-8445-b8ee-2b2c89e09f60",
+        "uuid": "e06b6c15-210f-8298-8525-2c26546c7784",
         "words": [
           "use",
           "when",
@@ -37874,7 +40029,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract allocates risk for unforeseeable events — trigger events (war, earthquake, pandemic, government action), notice requirement, excuse from performance, remedies (suspension, termination, cost-sharing).",
-        "uuid": "b4d3dbb2-41bd-8953-b237-a5acd00b4592",
+        "uuid": "30ae10ac-4d70-8a7a-bcf1-7a1e47848c78",
         "words": [
           "use",
           "when",
@@ -37974,7 +40129,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing standing timber's biological transformation for produce — trees grown in stands as IAS-41 biological assets (standing biomass at fair value; the land separate), on a rotation set by mean annual increment, tended by silviculture (thinning/regeneration), felled to merchantable volume. Carbon stock is the cross-cutting ESG output; FSC/PEFC certification with chain-of-custody.",
-        "uuid": "00c07220-4bb1-8e53-9105-86370af2daa4",
+        "uuid": "ce005e37-0c9f-8bdf-8d3b-39eb0fc35438",
         "words": [
           "use",
           "when",
@@ -38388,7 +40543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about self-similarity in erpax — the same form at every scale (fields→collections→plugins→erpax→agents), the path-as-address law, whole↔part recursion, nested one-word skill folders. Self-similar by design.",
-        "uuid": "882e3f0c-7e8e-846d-9764-8f4ca3f687e3",
+        "uuid": "e4618ffd-3d33-8c09-baa9-215427ceeea2",
         "words": [
           "use",
           "when",
@@ -38722,7 +40877,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the freeze event bounds the growing season — the last spring frost and first fall frost define the frost-free period that caps which crops are feasible; frost dates are probabilistic (per-station, at a confidence level), not fixed calendar dates. The hard bound of the season; the event tunnels and hardiness buffer against.",
-        "uuid": "251eb92e-7307-8de3-be56-6c6b150a5cca",
+        "uuid": "307febc7-5e4e-85b7-82aa-b6af02b01cff",
         "words": [
           "use",
           "when",
@@ -39146,7 +41301,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring conversion rates across pipeline stages — lead-to-qualified, qualified-to-opportunity, opportunity-to-order metrics; funnel width/velocity per stage.",
-        "uuid": "ec936a46-2485-8273-ad0e-053f2613642a",
+        "uuid": "3bb6f49f-294a-824c-813e-56505a08e73d",
         "words": [
           "use",
           "when",
@@ -39215,6 +41370,99 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "fusion",
+    "path": "fusion",
+    "translations": [
+      {
+        "key": "name",
+        "source": "fusion",
+        "uuid": "d1c7efea-4484-8edc-85a7-f471b72e117b",
+        "words": [
+          "fusion"
+        ],
+        "values": {
+          "en": "fusion"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
+        "uuid": "16756de8-d97d-84fc-abe9-357473e4ab44",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "the",
+          "reactor",
+          "that",
+          "builds",
+          "erpax",
+          "gravity",
+          "driven",
+          "merge",
+          "that",
+          "fuses",
+          "atoms",
+          "and",
+          "the",
+          "entropy",
+          "between",
+          "them",
+          "into",
+          "the",
+          "one",
+          "content",
+          "uuid",
+          "matrix",
+          "each",
+          "fusion",
+          "is",
+          "a",
+          "content",
+          "uuid",
+          "collision",
+          "merge",
+          "a",
+          "b",
+          "c",
+          "dry",
+          "collapse",
+          "fuses",
+          "duplication",
+          "out",
+          "entropy",
+          "mass",
+          "tamper",
+          "cost",
+          "the",
+          "reactor",
+          "collide",
+          "mjs",
+          "matrix",
+          "generate",
+          "the",
+          "society",
+          "self",
+          "build",
+          "loop",
+          "running",
+          "the",
+          "breath",
+          "toward",
+          "the",
+          "zero",
+          "entropy",
+          "one",
+          "root"
+        ],
+        "values": {
+          "en": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root."
+        }
+      }
+    ]
+  },
+  {
     "atom": "transactions",
     "path": "fx/transactions",
     "translations": [
@@ -39233,7 +41481,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when logging or auditing IAS-21 FX events — spot conversions, period-end monetary-item revaluations, hedge settlements, or consolidation translation adjustments; tracing exchangeRate to the currency-rates master; booking the resulting FX gain/loss journal entry. The IAS-21 FX conversion and revaluation event register.",
-        "uuid": "a657db97-913b-8c09-b173-c7376fea5a15",
+        "uuid": "61464e9a-0af4-8658-b670-68eb2a74b3a6",
         "words": [
           "use",
           "when",
@@ -39343,7 +41591,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional settin",
-        "uuid": "ec660da5-3a08-899b-8fcb-648545a0ec96",
+        "uuid": "1485de9d-725e-81c8-820d-7e281f6fa0f2",
         "words": [
           "the",
           "game",
@@ -39474,7 +41722,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about verification — a gate is itself a trinity (check · message · heal) — the strict law that must hold, the detailed diagnostic when it does not, and the remedy that restores it. The immune system of the corpus.",
-        "uuid": "a106f4f7-2e28-81c2-9cb6-1e8aea198865",
+        "uuid": "3edbcc31-b28c-89d8-9b08-5792042c824e",
         "words": [
           "use",
           "when",
@@ -39670,7 +41918,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A discrete unit of inheritance which affects one or more biological traits (Source: https://en.wikipedia.org/wiki/Gene). Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-sp",
-        "uuid": "db860dd6-56cf-8a3e-85eb-ee9fd9f5dd86",
+        "uuid": "cc6285f8-5b93-802a-a51f-dc841da5eb51",
         "words": [
           "a",
           "discrete",
@@ -39753,7 +42001,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "generate",
-        "uuid": "a620f060-8e35-8d7f-a033-815c6e8245e4",
+        "uuid": "950c7322-9ae8-8258-ad76-872ae860b96a",
         "words": [
           "generate"
         ],
@@ -39764,7 +42012,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-        "uuid": "35bf00dd-43cc-81d1-bd77-f0a6b6beeb95",
+        "uuid": "475bfbf8-2f74-81b6-8f1c-825655fbf3e9",
         "words": [
           "use",
           "when",
@@ -40124,7 +42372,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the outflow side of an exchange in erpax — credit, units-out, grant, send, post-out. The universal root of giving; dual of take, equilibrium is balance.",
-        "uuid": "20e7a18a-7146-8fc4-b4f3-cddab8809d42",
+        "uuid": "3d0493c4-422c-8f94-a7f3-1d700422be23",
         "words": [
           "use",
           "when",
@@ -40218,7 +42466,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when maintaining the Chart of Accounts — creating or deactivating GL accounts, assigning accountType (asset/liability/equity/revenue/expense/gain-loss), tagging canonical roles (cash, ar, ap, revenue, IFRS-16 lease accounts) for the gl-account-resolver, tracking balances, and auditing account changes. The SAF-T §2 chart-of-accounts node.",
-        "uuid": "4caaadfa-e06d-8884-8c3e-27e665a38e67",
+        "uuid": "2c5b7fd0-e599-8935-9d8a-871bdc870322",
         "words": [
           "use",
           "when",
@@ -40295,7 +42543,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
-        "uuid": "4ac63e91-3a86-83b7-92a2-bd7f42c47d01",
+        "uuid": "8fdcfdd6-3b09-81ca-ac63-2d87bc1a23e5",
         "words": [
           "use",
           "when",
@@ -40360,7 +42608,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when importing or matching bank statements (CSV, OFX, API) against journal entries for reconciliation — opening/closing balance, transaction lines, match type, variance; feeds account-reconciliations and IAS-7 cash-flow GL. The bank-statements import collection.",
-        "uuid": "2ab507c4-9a42-89f5-ae32-a340b3cbfa39",
+        "uuid": "cfc5175a-b6d3-8a6b-bd14-8d7719971560",
         "words": [
           "use",
           "when",
@@ -40425,7 +42673,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting or reviewing period-end adjusting entries — depreciation, interest accrual, salary accrual, deferred income, allowance — with segregation-of-duties approval and automatic GL posting on status change. The period-end-adjustments accrual collection.",
-        "uuid": "72fe44eb-1c3b-8050-8693-7ee06ff559c1",
+        "uuid": "870baf6f-8cca-83ba-a599-ded0863a718d",
         "words": [
           "use",
           "when",
@@ -40488,7 +42736,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
-        "uuid": "5a0059cc-f70c-85af-9f55-79c05b4e548b",
+        "uuid": "3614063d-47b7-8291-86d8-e8160cf75963",
         "words": [
           "use",
           "when",
@@ -40627,7 +42875,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring GL account metadata for double-entry validation — account type (asset/liability/equity/revenue/expense), normal polarity (debit/credit), balance-sheet vs P&L category, reconciliation frequency, cash-flow relevance, period-end close flag. The gl-posting-rules validation-metadata collection.",
-        "uuid": "2ecedb8c-a2a0-853b-9d42-bbf4029e5576",
+        "uuid": "8495494a-215c-85ba-8d91-3a2ad1e22475",
         "words": [
           "use",
           "when",
@@ -40899,7 +43147,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when fusing Google Workspace (Gmail, Calendar, Drive, Docs, Sheets, People, Admin Directory) into erpax to fill the office/productivity gap — a computed API catalogue plus the content-uuid fusion bridge that merges a fetched resource into the mesh idempotently (re-fetch dedups). Credentials live in the per-tenant config sandbox, never in the registry.",
-        "uuid": "6b2534b5-6914-8d5d-926f-f2837fc53807",
+        "uuid": "98748c45-7f35-8ed6-a401-ddcb205752fb",
         "words": [
           "use",
           "when",
@@ -40981,7 +43229,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the polity decides — tallying ballots into a binding verdict, setting quorum and threshold, or proving the count is unstuffable; the judgment a formal system cannot generate for itself, supplied from outside by the society.",
-        "uuid": "22c34ebb-8142-8c94-b948-f1810cadb48b",
+        "uuid": "621bc921-1a87-88e9-bc02-0a01f6332201",
         "words": [
           "use",
           "when",
@@ -41033,7 +43281,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "governing-law",
-        "uuid": "0c1d68c9-3703-8e43-8054-116c6dbfb9e9",
+        "uuid": "8fb6fc76-01d3-8ec1-82b4-afe4af2af4bb",
         "words": [
           "governing",
           "law"
@@ -41045,7 +43293,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract is subject to a specific jurisdiction's law — codified by choice-of-law clause, determines interpretation (UCC vs. Common Law), applicable standards, dispute resolution.",
-        "uuid": "286d3a50-9eef-8cbd-b2d0-94994be579a4",
+        "uuid": "d44a6317-5aa9-86cc-8d9f-9c19e87a8be5",
         "words": [
           "use",
           "when",
@@ -41142,7 +43390,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
-        "uuid": "55d5415f-91ea-8f3a-b0c5-f359158b3081",
+        "uuid": "eb1f9349-466f-84f9-9873-8d906727d020",
         "words": [
           "use",
           "when",
@@ -41204,7 +43452,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the unearned credit in erpax — the write-off / jubilee / forgiveness that clears a debt the debtor cannot pay; the reversal that restores balance from outside the ledger. The universal root of unmerited settlement; dual of debt.",
-        "uuid": "58d83e96-3001-89d5-8262-e2b55cff9a49",
+        "uuid": "d1f50c05-9531-86c0-87c8-6c628a8056c9",
         "words": [
           "use",
           "when",
@@ -41271,7 +43519,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce is sorted into quality classes — grading against uniform standards (USDA US No. 1, Fancy), with culling (discarding unmarketable units) and the packout (the marketable fraction packed from a harvested lot). Grade sets price and the gross-vs-marketable yield gap; °Brix, size, color, and defects are the criteria.",
-        "uuid": "3c834797-a66c-8aff-b420-b61d569ccb48",
+        "uuid": "b8eab097-7910-8fad-89e7-f177e3b611da",
         "words": [
           "use",
           "when",
@@ -41348,7 +43596,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when joining a scion to a rootstock into one plant — the graft is the propagation union (variety on top, root system below), and field top-working to change variety. The perennial's clonal propagation event; the plant is not seeded but assembled from two chosen parts.",
-        "uuid": "361b4162-a486-8f34-854e-79fce44bcef2",
+        "uuid": "9bd5f048-bdef-86c9-b285-c4f39ad3e8dd",
         "words": [
           "use",
           "when",
@@ -41501,6 +43749,100 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "gravity",
+    "path": "gravity",
+    "translations": [
+      {
+        "key": "name",
+        "source": "gravity",
+        "uuid": "f41896c4-d53d-86f2-aa1f-8fa5537345c3",
+        "words": [
+          "gravity"
+        ],
+        "values": {
+          "en": "gravity"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
+        "uuid": "62b2f49d-c103-805b-b6d6-b6664d5e071f",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "why",
+          "the",
+          "corpus",
+          "collapses",
+          "toward",
+          "one",
+          "gravity",
+          "is",
+          "mass",
+          "s",
+          "pull",
+          "and",
+          "in",
+          "erpax",
+          "dry",
+          "mass",
+          "gravity",
+          "the",
+          "more",
+          "an",
+          "atom",
+          "is",
+          "referenced",
+          "mass",
+          "the",
+          "more",
+          "it",
+          "attracts",
+          "duplicates",
+          "and",
+          "orphans",
+          "to",
+          "fuse",
+          "into",
+          "it",
+          "gravity",
+          "is",
+          "the",
+          "force",
+          "fusion",
+          "the",
+          "act",
+          "entropy",
+          "the",
+          "fuel",
+          "the",
+          "matrix",
+          "the",
+          "product",
+          "perfect",
+          "dry",
+          "is",
+          "a",
+          "singularity",
+          "all",
+          "mass",
+          "at",
+          "the",
+          "one",
+          "root",
+          "the",
+          "torus",
+          "collapse"
+        ],
+        "values": {
+          "en": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse)."
+        }
+      }
+    ]
+  },
+  {
     "atom": "grazing",
     "path": "grazing",
     "translations": [
@@ -41518,7 +43860,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when livestock consume standing forage in place — grazing on pasture/rangeland, the rotational/managed/adaptive (AMP) move through paddocks (short impact, long recovery), stocking rate and carrying capacity in animal-unit-months. The range-management activity; its rotation reuses the crop rotation atom.",
-        "uuid": "9f438b64-c720-8978-99f0-dff7c9ee1495",
+        "uuid": "fe9159ca-578f-89b0-80fe-4cae225006c8",
         "words": [
           "use",
           "when",
@@ -41744,7 +44086,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A Global Trade Item Number (GTIN). GTINs identify trade items, including products and services, using numeric identification codes. A correct gtin value should be a valid GTIN, which means that it sho",
-        "uuid": "7ac4b413-4122-8db1-99f6-d56207fcf01f",
+        "uuid": "dd4f16cc-4d52-8e64-bd26-ec29ea9e9b48",
         "words": [
           "a",
           "global",
@@ -42009,7 +44351,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the repetition atom that turns a sale into a market — the loop that makes one transaction many. Without habit a launch spikes and dies; with it, awareness and proof compound. The atom retention and churn measure, and the catch the market needs when the trendsetter's status fades.",
-        "uuid": "83cc315f-794a-8596-ba7f-ec8f9595442d",
+        "uuid": "01ff66de-81a8-8c99-a1b3-14375a1750f1",
         "words": [
           "use",
           "when",
@@ -42407,7 +44749,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking whether an interval — or a whole band of horo positions — is consonant. The seven positions ARE the diatonic scale (just intonation over the A432 anchor); harmony is the smallness of the ratio (Tenney height). The harmony-check the horo state-bands need. Matter-twin harmony/index.ts.",
-        "uuid": "5240f373-07ef-8b55-9675-e6253ba9ae48",
+        "uuid": "57ec29d9-744f-8213-b16c-a520d96b9bf5",
         "words": [
           "use",
           "when",
@@ -42484,7 +44826,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the gathering of matured output from a growth process — the IAS-41 transformation event where a biological asset becomes inventory, and the per-week harvest window (the produce calendar) over which a crop yields. Harvest is the realization point: value created by living growth crosses into sellable stock; the window is non-uniform — a 1 in the calendar marks presence, not constant volume.",
-        "uuid": "6b81adf6-8433-8012-a1c0-bde975c1cb08",
+        "uuid": "72a64fbf-700b-803b-817b-68b6cf4f1d0c",
         "words": [
           "use",
           "when",
@@ -42809,7 +45151,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designating financial instruments or transactions to offset market risk (FX, interest rate, commodity); accounting treatment under IFRS-9 hedge accounting or derivatives mark-to-market",
-        "uuid": "b406d13b-9033-8164-bbfb-3a49e3b78be4",
+        "uuid": "5e6fb224-964d-88e2-9612-9b92c33946a4",
         "words": [
           "use",
           "when",
@@ -42933,7 +45275,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
-        "uuid": "114ba6aa-15b0-830e-a9c2-dc8ff5cb9b94",
+        "uuid": "8246e03a-63b2-87bf-a06d-f4ee1ce63301",
         "words": [
           "use",
           "when",
@@ -43046,7 +45388,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a managed group of animals is the unit of aggregation — the herd (cattle/swine), flock (sheep/poultry), drove or mob; one production and accounting unit holding many animals. The livestock twin of lots/cohort: animals grouped, moved, grazed, and measured together.",
-        "uuid": "5680420d-8db1-8bf1-9f13-3c89b9147fd5",
+        "uuid": "6f1eaf9f-3ab1-8778-a7b3-7e6c1bde6714",
         "words": [
           "use",
           "when",
@@ -43262,7 +45604,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about git history as the akashic record's time axis — a content-addressed Merkle DAG of commits the agents read as a knowledge source AND another independent tamper-evidence level (forging the past = rewriting every commit on every clone). Wired in, it increases tamper cost and costs nothing to keep.",
-        "uuid": "a47188ca-66c7-801c-9339-f7e3dafdbc6c",
+        "uuid": "2e5c46d5-d4af-8141-8643-c076ad6fd308",
         "words": [
           "use",
           "when",
@@ -43486,7 +45828,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the whole is recoverable from any part — content-uuid encodes the whole, the akashic record regenerates it, each folder/skill loads its own subgraph, each agent is the whole erpax. The whole-in-every-part law; the content-twin of fractal (same form at every scale). Forget the corpus; regenerate from a part.",
-        "uuid": "14395f6f-b358-84ed-af48-e05ae832a2e5",
+        "uuid": "08872d6e-56bd-846d-bbc4-7dba3aa14bcd",
         "words": [
           "use",
           "when",
@@ -43627,6 +45969,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "hook",
+    "path": "hook",
+    "translations": [
+      {
+        "key": "name",
+        "source": "hook",
+        "uuid": "2ab1f090-6260-815d-96a2-d4c95db13bdc",
+        "words": [
+          "hook"
+        ],
+        "values": {
+          "en": "hook"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.",
+        "uuid": "28f39542-ce83-87c7-ad36-2224fc5cbe78",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "hook",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "hooks",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "lifecycle",
+          "gateway",
+          "where",
+          "logic",
+          "runs",
+          "on",
+          "a",
+          "record",
+          "event"
+        ],
+        "values": {
+          "en": "Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event."
+        }
+      }
+    ]
+  },
+  {
     "atom": "hooks",
     "path": "hooks",
     "translations": [
@@ -43644,7 +46038,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding or debugging Payload lifecycle hooks — mutating data before/after read or change, encryption, side effects, third-party integration, auto-populating fields, or \"my hook didn't run / ran at the wrong time\".",
-        "uuid": "6aa495df-9e74-8bfe-9d50-745d093abb96",
+        "uuid": "646cfbe2-492b-857a-8607-20c3be3864eb",
         "words": [
           "use",
           "when",
@@ -43834,7 +46228,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the peak position of the horo state ring — digit 8, \"the ascent peaks\", the high step where a flow is fully built and architectures merge (packed, assembled, ready). Top of the ascent arc; nested under horo.",
-        "uuid": "b6cadb8e-fca2-8b3f-ae01-674a732cc270",
+        "uuid": "4200851c-44b4-8b07-80f6-d27a322ec62c",
         "words": [
           "use",
           "when",
@@ -43900,7 +46294,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the fifth position of the horo state ring — digit 7, \"the wave returns\", the binding step where a built flow begins its return (shipped, dispatched, posted out). First of the descent/return arc; nested under horo.",
-        "uuid": "5971864e-99f8-8e07-8c38-d113a65e092c",
+        "uuid": "60c85166-488a-8df0-8a59-84eefe1b5ffe",
         "words": [
           "use",
           "when",
@@ -44028,7 +46422,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a portion of a whole allocated to a member who joins — horo position 2 (digit 2, the first doubling: one becomes two, the whole splits, value allocated). Its domain instance is a proportional, contingent claim on a pooled whole under shared risk: the CSA share (prepaid box of whatever the farm harvests), equity share, profit share — the inverse of a fixed order.",
-        "uuid": "9cc737c3-0a2f-8555-90b6-324ff52c4f6e",
+        "uuid": "8817fdcd-5d74-836c-8b78-3bf8eacb29f0",
         "words": [
           "use",
           "when",
@@ -44119,7 +46513,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the closing position of the horo state ring — digit 9, \"the ring closes\", the settle/merge step where a flow completes and re-opens one octave up (settled, sealed, closed, reconciled). Closes the descent/return arc; nested under horo.",
-        "uuid": "6fab2fd3-9ba6-864b-90d8-85995cf9a576",
+        "uuid": "5fee1f8f-c871-84ea-8b5b-ec1ad0750c60",
         "words": [
           "use",
           "when",
@@ -44863,7 +47257,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about identity — the machine-address of an entity, content-addressed (content-uuid) or tenant-local (sequential). Never conflate with name (human label) or number (document handle). The id is what federates and merges.",
-        "uuid": "3c970fdf-31d5-8aff-9496-69e3dedf3207",
+        "uuid": "65f92890-907f-8605-9832-6b6309789b5d",
         "words": [
           "use",
           "when",
@@ -45054,7 +47448,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when working with erpax object identity or content-addressed UUIDs — computing a content-uuid (sha→uuidv8, RFC 9562 §5.8), the self-describing structured uuidv8 (slot + capability flags), categorical identity elements (currency/locale/country blanks), uuid-based RBAC sharing, deduplicated (\"dry\") file storage, or cross-instance merge/federation. The map to erpax's content-uuid framework; which version per case is [[uuid]].",
-        "uuid": "6eb6f1a8-5bcc-8b94-8e32-fa805a1651c6",
+        "uuid": "2c2296c9-2635-8bb7-a438-215760e97a9b",
         "words": [
           "use",
           "when",
@@ -45141,7 +47535,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.",
-        "uuid": "dc635c44-60e6-86b1-8f6f-b9e27222bcec",
+        "uuid": "b4a34158-461f-8fcb-8fd4-1e3364ffc17b",
         "words": [
           "use",
           "when",
@@ -45396,7 +47790,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an asset's fair value or recoverable amount falls permanently below book value, triggering writedown testing and loss recognition — mandatory under IAS-36 for all assets",
-        "uuid": "79215447-085e-8b62-a368-2cfcf8c398d8",
+        "uuid": "522bb352-cc1d-80fd-bb44-7b9ff1b0a1eb",
         "words": [
           "use",
           "when",
@@ -45563,7 +47957,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Description of bonus and commission compensation aspects of the job.",
-        "uuid": "91ffc844-ec34-866a-a10a-d43fd78c70d0",
+        "uuid": "2bfe1ddf-3d5b-8cd7-81c0-4d4e966451b8",
         "words": [
           "description",
           "of",
@@ -45877,7 +48271,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one party agrees to compensate another for loss/liability arising from specified events — indemnifier, indemnitee, indemnified party, trigger (third-party claims, breach, negligence), scope, caps, procedure.",
-        "uuid": "2a0d9fd4-8474-8523-a6fa-9164f7c38fe2",
+        "uuid": "31f3b741-5bb3-84fe-95da-73f409279d12",
         "words": [
           "use",
           "when",
@@ -46546,6 +48940,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "inspection",
+    "path": "inspection",
+    "translations": [
+      {
+        "key": "name",
+        "source": "inspection",
+        "uuid": "a018f76d-05df-810c-863d-d9fb985f6c08",
+        "words": [
+          "inspection"
+        ],
+        "values": {
+          "en": "inspection"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard.",
+        "uuid": "4b5e7b3c-a327-8bf0-87ec-6045ec602b1f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "inspection",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "inspections",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "recorded",
+          "examination",
+          "against",
+          "a",
+          "standard"
+        ],
+        "values": {
+          "en": "Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard."
+        }
+      }
+    ]
+  },
+  {
     "atom": "install",
     "path": "install",
     "translations": [
@@ -46651,6 +49093,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "instantaneous: a schema.org component word, fused from InstantaneousEvent"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "instruction",
+    "path": "instruction",
+    "translations": [
+      {
+        "key": "name",
+        "source": "instruction",
+        "uuid": "6de9fb9a-c2cb-8945-9521-4f350d12945b",
+        "words": [
+          "instruction"
+        ],
+        "values": {
+          "en": "instruction"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.",
+        "uuid": "19a387d0-712c-8ae8-83b3-227ab691ef63",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "instruction",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "instructions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "directive",
+          "step",
+          "to",
+          "be",
+          "carried",
+          "out"
+        ],
+        "values": {
+          "en": "Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out."
         }
       }
     ]
@@ -46832,7 +49323,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or measuring insurance contract groups under IFRS 17 — GMM (building blocks — future cash flows, risk adjustment, CSM), PAA (short coverage), or VFA (direct participation); annual cohort grouping, profitability tiers, reinsurance link, loss-component, and disclosure (§93). The insurance-contracts IFRS 17 register.",
-        "uuid": "a9fe6111-54ea-812f-b910-2bd4fbb3facd",
+        "uuid": "b97cd6af-12ee-85dd-aa3a-01e5a5599ab5",
         "words": [
           "use",
           "when",
@@ -47016,7 +49507,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when verifying that a row's CURRENT bytes are the ones committed — content-uuid as a tamper detector (recompute ≠ stored ⇒ flagged), and the same canonical hash extended into signature, envelope encryption, and reference resolution.",
-        "uuid": "06738120-4360-8f73-8b81-ce9c1ac9380c",
+        "uuid": "c6d79a8f-903b-813a-9dc0-fac54c0ee411",
         "words": [
           "use",
           "when",
@@ -47078,7 +49569,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
-        "uuid": "640a2ebf-0cbe-838d-9055-7bb22347b46a",
+        "uuid": "34886109-dd70-89f5-9769-9d07086025c2",
         "words": [
           "quantitative",
           "measure",
@@ -47479,7 +49970,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when planning or tracking remediation of an audit finding or compliance gap — design/process/system/training/policy action steps with owner, target date, priority, budget, risk-of-delay, approval chain; COSO-2013 deficiency-remediation and SOX §404 control lifecycle. The remediation-plans improvement collection.",
-        "uuid": "646b767c-0691-882d-905d-992ab2703bde",
+        "uuid": "18bb9f6f-51c8-8dc7-bb92-b169b54ba126",
         "words": [
           "use",
           "when",
@@ -47616,7 +50107,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reviewing individual sample items drawn for a control test — pass/fail results, exception categories, tested-by, amount; ISA-530 statistical-sampling evidence per control test execution. The audit-samples collection.",
-        "uuid": "71a178f3-91b7-853b-86be-5b41d63a57e4",
+        "uuid": "de36e5c6-b456-8f80-952a-049c416d37d4",
         "words": [
           "use",
           "when",
@@ -47677,7 +50168,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating, reviewing or auditing org-wide policies — accounting, internal-control, compliance, risk, data-protection, code-of-conduct; lifecycle draft→active→superseded, owner, review schedule. The internal-policies collection.",
-        "uuid": "56d2d215-9f9b-8f6e-a598-ce7ce3754113",
+        "uuid": "62d7dfa4-0422-8f1e-8e78-49b7982eb509",
         "words": [
           "use",
           "when",
@@ -47735,7 +50226,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or tracking employee acknowledgement of a policy version — signed-document upload, acknowledged date, status pending/overdue/expired; SOX §404 control-attestation evidence per employee per policy. The policy-acknowledgments collection.",
-        "uuid": "f0704bb9-ed9b-8e5f-9a61-cef5cf7ffa62",
+        "uuid": "6f10077e-079e-8a8f-aee3-0c134887efb7",
         "words": [
           "use",
           "when",
@@ -47795,7 +50286,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the version history of an internal policy — release date, version number, change log, document upload, lifecycle draft→final→superseded; ISO 9001 documented-information control per policy. The policy-versions collection.",
-        "uuid": "8ea0b0c5-2cc1-8ff4-b6a3-15840c77c1b9",
+        "uuid": "8a294538-cf01-874e-bd86-7f980728ab23",
         "words": [
           "use",
           "when",
@@ -48034,7 +50525,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when conducting or documenting a recorded conversation for research, hiring, or feedback — structured interviews, recorded sessions, interview notes, transcripts, insights extracted.",
-        "uuid": "bfdefc96-13c5-86c5-8192-83c49cf40afd",
+        "uuid": "ca48e8b5-ea5c-8b96-96fe-5d83631635ad",
         "words": [
           "use",
           "when",
@@ -48119,7 +50610,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties ar",
-        "uuid": "c8a114ba-ef26-8561-bd4e-885de3bef700",
+        "uuid": "47a0d202-6ec3-8764-9b85-73798a3d5e96",
         "words": [
           "relates",
           "a",
@@ -48291,7 +50782,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when issuing, receiving or auditing AR/AP invoices — EN-16931 BG-1 header, BG-22 document totals, BG-23 VAT breakdown, fiscal device fields, period-lock guard, GL posting and audit trail. The invoices collection.",
-        "uuid": "1e0e4dcc-558b-8c34-92e6-6ec083a4d273",
+        "uuid": "8bde7e6e-8ef4-8d4b-bd82-f5a468f2c4dc",
         "words": [
           "use",
           "when",
@@ -48412,7 +50903,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking the actual cash payment back to a customer for a credit memo — Stripe, ACH, SEPA, check or cash; ISO-20022 pacs.004 return, tokenised card data, GL journal entry, refund-approval SoD. The refunds collection.",
-        "uuid": "e1c5605f-ecf3-8d47-9e61-1357304444fb",
+        "uuid": "abd38da4-276b-81d7-83af-d74b17b71cdb",
         "words": [
           "use",
           "when",
@@ -48540,7 +51031,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, pricing or auditing individual line items on an invoice — EN-16931 BG-25 quantity/net-amount, BG-29 price details, BG-30 VAT category/rate, allowances, inventory recompute and GL posting. The invoice-lines collection.",
-        "uuid": "1dc9f95b-2df1-8d7d-a9c6-e41ffaeb326b",
+        "uuid": "041f117a-ae9f-8dab-aa9f-072b0fa8be5d",
         "words": [
           "use",
           "when",
@@ -48601,7 +51092,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing cash received or sent against an invoice — AR/AP GL posting, ISO-20022 pain/pacs message types, IBAN/BIC, period-lock guard, cash-flow classification (IAS-7 / ASC-230). The payments collection.",
-        "uuid": "8711b1d5-c243-812d-981f-1755fa3697a1",
+        "uuid": "24cb0565-055f-8266-9ac5-4aecfbd98685",
         "words": [
           "use",
           "when",
@@ -48663,7 +51154,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when allocating a single payment across one or more invoices, bills or credit memos — FIFO or manual split, FX gain/loss, fully-settling flag, SOX §404 TOM-AR-02 cash-receipt audit evidence. The payment-allocations collection.",
-        "uuid": "10c367cf-c4e9-87c1-8a11-e2e81c5d4e20",
+        "uuid": "7e5a8c83-142e-81cd-bb67-d0240d7444bd",
         "words": [
           "use",
           "when",
@@ -48798,7 +51289,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when water is supplied to a crop on a managed schedule — drip/trickle vs overhead application, fertigation (fertilizer through the line), and evapotranspiration-based scheduling (the water budget). Irrigation credits the soil-water reservoir that evapotranspiration debits; schedule it like a checkbook — replace the deficit before the crop hits stress.",
-        "uuid": "51b48759-6fd3-86a3-be5b-1b12767ac4c0",
+        "uuid": "d3566dd1-4720-81cc-9d87-b0fbd630c7ce",
         "words": [
           "use",
           "when",
@@ -48908,7 +51399,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
-        "uuid": "245d5078-0c5b-8011-a234-7230645383dd",
+        "uuid": "7760eca0-cd5e-88ad-a56f-85e1df92a584",
         "words": [
           "the",
           "international",
@@ -49272,7 +51763,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "items",
-        "uuid": "ea0500d7-f398-81ce-894e-144ed1c86e33",
+        "uuid": "45b32f17-c8a0-82e0-a5aa-e8ca25007990",
         "words": [
           "items"
         ],
@@ -49283,7 +51774,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the product/service catalogue — code, SKU, GTIN barcode, pricing, VAT rate, inventory quantity, GL posting; EN-16931 BG-31 item-information, UNSPSC classification. The items collection.",
-        "uuid": "d0d1206b-1366-8c13-b24c-91acb021728e",
+        "uuid": "c3b1b627-b569-8c36-ad10-4de521846767",
         "words": [
           "use",
           "when",
@@ -49337,7 +51828,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or tracing a lot/batch of material or product — GS1 AI(10) lot number, manufacture/expiry dates, quality status, parentBatches genealogy for EU 178/2002 one-step-back recall, pharma/automotive traceability. The batches collection.",
-        "uuid": "2974872d-f1b6-8c92-8da8-4dddc26c862e",
+        "uuid": "bf239140-139f-8839-850b-ad465bda36d5",
         "words": [
           "use",
           "when",
@@ -49388,7 +51879,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "bills-of-materials",
-        "uuid": "0f556cbd-4d60-83ce-ba0b-264c10b219c6",
+        "uuid": "39539e32-9ecc-815a-bef1-6778540d66f8",
         "words": [
           "bills",
           "of",
@@ -49401,7 +51892,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying the component recipe for a finished good — BOM lines, component quantities, version control per ECO, effective date ranges, and IAS-2 §10 cost-of-conversion lookup. The versioned bill-of-materials collection that seeds work-order execution and overhead absorption.",
-        "uuid": "8227bb1f-6daa-81dc-8e99-23c5fb876b05",
+        "uuid": "681504a0-f95d-81e3-a12e-c078785a7bad",
         "words": [
           "use",
           "when",
@@ -49523,7 +52014,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "operation-runs",
-        "uuid": "0e9c9845-6d8e-864b-8235-aae267fc433d",
+        "uuid": "a55c3fab-01b8-83c3-b4c9-202191dfa071",
         "words": [
           "operation",
           "runs"
@@ -49535,7 +52026,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording actual production at one operation × work-center — quantities ordered/produced/scrapped/backordered, variant attribute axes, shift, start/completion timestamps, and ISA-95 KPIs (yield, scrap). The per-routing-step execution record within a work order.",
-        "uuid": "b46698fc-9940-8ef3-a24a-94ac26a82c35",
+        "uuid": "6066ce05-b206-8c6c-bdc7-a3eaa3d90667",
         "words": [
           "use",
           "when",
@@ -49600,7 +52091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when receiving finished goods from an internal manufacturing work order into inventory — absorbed cost (material/labour/overhead), lot/serial tracking, target warehouse, and IAS-2 §10 cost-of-conversion booking. The produced-inventory receipt record — distinct from vendor goods receipts.",
-        "uuid": "ae4d5ed0-cb88-80a2-b29d-c2f498930517",
+        "uuid": "8d3f356b-77d8-8939-aecc-b1055898636e",
         "words": [
           "use",
           "when",
@@ -49655,7 +52146,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "routings",
-        "uuid": "be2717cc-d910-868a-a224-6603a44452ef",
+        "uuid": "5851c790-7c70-8881-bc81-59ff5c85a0c6",
         "words": [
           "routings"
         ],
@@ -49666,7 +52157,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when sequencing the process steps for a work order — operation type, work center, setup time, run-time per unit, UoM, and IAS-2 cost-of-conversion from cycle time. The ordered routing-step collection — the second universal manufacturing primitive alongside the BOM.",
-        "uuid": "d6ab826d-408e-8944-95c7-8e466290bc62",
+        "uuid": "c392e808-799c-8a01-af51-23f836e01dab",
         "words": [
           "use",
           "when",
@@ -49736,7 +52227,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
-        "uuid": "9e2eeae8-9034-8b1d-b6cb-b9644db94d9f",
+        "uuid": "c9dbffcd-5471-8816-9993-8a1c235fa3ce",
         "words": [
           "use",
           "when",
@@ -49807,7 +52298,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
-        "uuid": "583a09aa-bdab-8cfb-b8cc-696619c10abd",
+        "uuid": "7e264900-9412-8866-bfeb-79155d1dec47",
         "words": [
           "use",
           "when",
@@ -49866,7 +52357,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "purchase-orders",
-        "uuid": "00dd56f5-bd35-8484-9878-7e5819633baf",
+        "uuid": "7c60ba21-4ac0-8b02-90d1-4d9e8f252370",
         "words": [
           "purchase",
           "orders"
@@ -49878,7 +52369,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when raising or reviewing a vendor purchase commitment — line items, Incoterms 2020 delivery terms and location (FOB/CIF/DDP/EXW), order/due dates, currency, and SOX three-way-match (PO → goods receipt → invoice). The procure-to-pay header that gates GL posting timing by FOB point per IFRS-15 §38-42.",
-        "uuid": "c47c551e-c684-86d1-83a1-7a9a75c9a97f",
+        "uuid": "800c1227-a36e-8824-94d5-070a06e6a108",
         "words": [
           "use",
           "when",
@@ -50033,7 +52524,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
-        "uuid": "4ccf16d4-e4b1-8649-bc68-24fae6ee275e",
+        "uuid": "a54e5f2f-377f-8098-bd85-dcd440b80c0a",
         "words": [
           "use",
           "when",
@@ -50267,7 +52758,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when offloading work to Payload's jobs queue — defining tasks/workflows, queuing jobs, scheduling/cron, retries, or moving slow hook logic to background processing.",
-        "uuid": "c3c6af5e-d651-8ec8-a86f-7a42ae9e4823",
+        "uuid": "e71441ab-85ea-8099-9fef-697c8362feb6",
         "words": [
           "use",
           "when",
@@ -50376,13 +52867,62 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "journal",
+    "path": "journal",
+    "translations": [
+      {
+        "key": "name",
+        "source": "journal",
+        "uuid": "878f6a23-21e5-87d7-913b-a4b8bfbe6a07",
+        "words": [
+          "journal"
+        ],
+        "values": {
+          "en": "journal"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.",
+        "uuid": "4c53b266-96d7-8fe3-81b1-1cf054e3ccdc",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "journal",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "journals",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "chronological",
+          "book",
+          "of",
+          "original",
+          "accounting",
+          "entries"
+        ],
+        "values": {
+          "en": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries."
+        }
+      }
+    ]
+  },
+  {
     "atom": "entries",
     "path": "journal/entries",
     "translations": [
       {
         "key": "name",
         "source": "journal-entries",
-        "uuid": "376c2308-8f1d-8f17-a5d9-833bf46b42ea",
+        "uuid": "fa06bdbb-5424-8f01-959a-2f34319a95e4",
         "words": [
           "journal",
           "entries"
@@ -50394,7 +52934,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or auditing double-entry accounting records — balanced debit/credit lines, entry/posted/approval dates, period-lock enforcement, posted-immutability, and segregation-of-duties (creator ≠ approver). The core GL write target per IAS-1 and OECD SAF-T §3.",
-        "uuid": "2124b787-9ea3-835f-83ab-2a53511dd343",
+        "uuid": "046536c3-3a33-860c-a492-a22e7b253f06",
         "words": [
           "use",
           "when",
@@ -50461,7 +53001,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing or querying individual debit/credit lines against a journal entry — source type (invoice/bill/payment/adjustment/revaluation), source date, GL account, amount, currency, and ISO-8601 posted-date auto-set on status → posted. The atomic GL line-item that enforces balanced-entry and SOX posting-timestamp requirements.",
-        "uuid": "95c25bb1-3a15-8ddf-b0a4-184a4419a8b5",
+        "uuid": "bd53782b-1175-815a-b989-4dc6165fa15d",
         "words": [
           "use",
           "when",
@@ -50604,7 +53144,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract or matter specifies the governing law and venue — choice of law (which country/state), exclusive vs. non-exclusive forum, dispute resolution (courts, arbitration, mediation).",
-        "uuid": "fde2e0bc-f364-80b6-8ffe-144f499e973e",
+        "uuid": "024a7b8a-c8ce-84d9-b66b-0b60796dcf49",
         "words": [
           "use",
           "when",
@@ -50659,7 +53199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing judicial/law-enforcement operations — case management, court proceedings, legal evidence, offence/violation records, or police/prosecution coordination in public order (COFOG 03 sub-function).",
-        "uuid": "d8799724-ea6c-8b54-9c98-a693fc858868",
+        "uuid": "4e811cc4-1c37-873f-8f53-aea34b2ce2b5",
         "words": [
           "use",
           "when",
@@ -50727,6 +53267,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "key: a schema.org component word, fused from inChIKey, musicalKey"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "keyword",
+    "path": "keyword",
+    "translations": [
+      {
+        "key": "name",
+        "source": "keyword",
+        "uuid": "b93ce6f3-320e-8b25-8b39-6e5993f881f9",
+        "words": [
+          "keyword"
+        ],
+        "values": {
+          "en": "keyword"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content.",
+        "uuid": "957228a6-fef4-8704-8da0-82262a40596c",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "keyword",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "keywords",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "salient",
+          "term",
+          "used",
+          "to",
+          "index",
+          "or",
+          "retrieve",
+          "content"
+        ],
+        "values": {
+          "en": "Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content."
         }
       }
     ]
@@ -50997,7 +53588,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the dairy production phase — lactation, the milk-producing interval of a dairy female between parturition and dry-off, with its yield curve, parity (lactation number), and the dry period before the next cycle. The per-animal dairy season; milk is the agricultural produce realized at each milking (harvest).",
-        "uuid": "3bd6ab66-5a4a-812f-a8dd-17d30c41bb33",
+        "uuid": "111418e7-937f-89ab-8fbc-14ea6898d81e",
         "words": [
           "use",
           "when",
@@ -51183,6 +53774,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "A sub property of participant. The owner of the real estate property."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "landmark",
+    "path": "landmark",
+    "translations": [
+      {
+        "key": "name",
+        "source": "landmark",
+        "uuid": "346b90c4-fb75-840a-83f0-5cd7b2ef4ad7",
+        "words": [
+          "landmark"
+        ],
+        "values": {
+          "en": "landmark"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference.",
+        "uuid": "7b569174-d774-8f37-bc8a-d5e6546427d1",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "landmark",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "landmarks",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "notable",
+          "place",
+          "used",
+          "as",
+          "a",
+          "point",
+          "of",
+          "reference"
+        ],
+        "values": {
+          "en": "Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference."
         }
       }
     ]
@@ -51395,7 +54037,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "law",
-        "uuid": "cd05ddea-66e9-8c74-a3f5-375961cb676f",
+        "uuid": "dbeabf81-c553-8ec5-9308-b8a2e55fe73c",
         "words": [
           "law"
         ],
@@ -51406,7 +54048,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The canonical laws — the user's standing commands, saved as one skill, each linked to the atom it governs. Read to recall what erpax MUST obey: collapse-to-single-word-atoms, anonymise-as-agnostic, compute-the-fusion, the SKILL-trinity folder, zero-entropy at commit, imports-as-skills, entanglement, no multiword disguise.",
-        "uuid": "486a1da7-d726-8430-83d7-7a689440846d",
+        "uuid": "a7a8692c-10fa-8e85-9205-7db293dc8f5e",
         "words": [
           "the",
           "canonical",
@@ -51602,7 +54244,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing and qualifying prospects before they become customers — inbound/outbound sourcing, BANT/MEDDIC lead scoring, MQL/SQL progression, and conversion to an opportunity or customer on close-won. The CRM pre-customer lead collection.",
-        "uuid": "d0a9438e-18bb-85be-9e4b-d2625cb9a97b",
+        "uuid": "70410726-931f-80a9-bb1c-dbfc76e0f5c0",
         "words": [
           "use",
           "when",
@@ -51665,7 +54307,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking deals through the sales pipeline — stage progression from qualification to close-won/close-lost, weighted forecast (amount × probability), forecast categories, and contract creation on close-won. The CRM deal-pipeline collection.",
-        "uuid": "be0a1728-b1cc-87da-91da-335acc17e61b",
+        "uuid": "94c9857b-1e83-87df-9aee-ac928a844585",
         "words": [
           "use",
           "when",
@@ -51800,7 +54442,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising and tracking IFRS 16 / ASC 842 lessee leases — ROU asset initial measurement, lease liability PV calculation, discount rate, payment frequency/timing, modifications, and period-end carrying amounts. The lease master-data collection.",
-        "uuid": "2bbed330-3209-8ec2-86ef-77c95b8609ae",
+        "uuid": "2bb86b8d-4a56-8409-9964-940fcb56064c",
         "words": [
           "use",
           "when",
@@ -51861,7 +54503,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording a lease modification — classify as separate-lease (§44) or not-separate (§45/§46 partial/full termination), capture pre/post terms, and compute liability remeasurement + ROU adjustment. The IFRS-16 §44-46 modification register.",
-        "uuid": "baf7a8d5-9384-8062-9258-3f4ac80fe1b7",
+        "uuid": "1f15e390-0411-83c8-971f-7ccb655c5568",
         "words": [
           "use",
           "when",
@@ -51920,7 +54562,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when posting period-end lease amortisation — one row per lease × period capturing interest accretion, principal repayment, ROU amortisation, and opening/closing carrying amounts; JE fires on status → posted. The IFRS 16 §36-38 period evidence collection.",
-        "uuid": "2f538af5-7021-8466-a2f1-dd6b3ab2a468",
+        "uuid": "1f037d66-03f4-8492-97dc-f5861e64faf7",
         "words": [
           "use",
           "when",
@@ -52059,7 +54701,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering subsidiaries, associates, joint ventures or the group head for consolidation — legal name, LEI, registration number, functional/presentation currency, ownership %, consolidation method, and reporting framework. The IFRS-10 §B86 entity master distinct from DB tenants.",
-        "uuid": "28286922-6866-81fd-9158-eeccbb8d0f62",
+        "uuid": "ac574de6-afd1-8930-a1b5-ced3e180cb4f",
         "words": [
           "use",
           "when",
@@ -52123,7 +54765,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing the audit committee for a legal entity — charter upload, meeting frequency, membership roster, and status lifecycle. The SOX §301 audit-committee master for corporate governance oversight.",
-        "uuid": "4dc71746-f30d-85a6-845e-b23e99c02cb2",
+        "uuid": "9cad8318-2fb6-8203-a2b7-182856259c8e",
         "words": [
           "use",
           "when",
@@ -52167,7 +54809,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "audit-committee-members",
-        "uuid": "25f993eb-ea2d-8f40-9653-5c82c35d2f56",
+        "uuid": "8f3015b7-eebe-80d8-a5c5-041613b7b39e",
         "words": [
           "audit",
           "committee",
@@ -52180,7 +54822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording individual members of an audit committee — name, title, affiliation (internal/external/independent), role (chair/vice-chair/member/financial-expert), term dates, and expertise areas. The SOX §301 committee-composition roster.",
-        "uuid": "a825f2bb-b28d-8876-ba4f-cebd199152f5",
+        "uuid": "29c236b6-cb0f-8434-9e96-96cb49c9860b",
         "words": [
           "use",
           "when",
@@ -52228,7 +54870,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "audit-committee-minutes",
-        "uuid": "c1fc40b6-e6dd-82ea-bfe4-07954bbedb2d",
+        "uuid": "253117cb-6e3e-8135-a325-04cf20129a45",
         "words": [
           "audit",
           "committee",
@@ -52241,7 +54883,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing formal audit committee meeting records — agenda, attendees, discussion summary, key decisions, action items with due dates, auditor observations, compliance matters, and the approved minutes document. The SOX §301 committee-records evidence collection.",
-        "uuid": "4e3ffe61-5434-8ea7-bbab-c05fd7c64f30",
+        "uuid": "7fec8cc6-4c83-8851-a4bc-71ee68afaf5c",
         "words": [
           "use",
           "when",
@@ -52424,7 +55066,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
-        "uuid": "994b94bd-3c3a-8231-bdc6-baf4af80f657",
+        "uuid": "26314f47-2f89-80cc-8ceb-484d3e71e3f7",
         "words": [
           "use",
           "when",
@@ -52490,7 +55132,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
-        "uuid": "35046ed4-4f23-8c2d-81c3-fc0d48440323",
+        "uuid": "51587273-997a-8edf-94b8-67b897da0555",
         "words": [
           "use",
           "when",
@@ -52557,7 +55199,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking filing, audit, certification, reporting, payment, or disclosure deadlines per legal entity and jurisdiction — due-date management, on-track/at-risk/overdue status, and compliance calendar oversight per ISO-37301. The compliance-deadline calendar collection.",
-        "uuid": "e5c777c0-8e76-858f-b635-94c598ed9d1e",
+        "uuid": "8d850f24-e040-8af7-8b41-16d8205bf1cb",
         "words": [
           "use",
           "when",
@@ -52621,7 +55263,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when configuring or auditing deadline-reminder notifications — scheduled email, in-app, SMS, or calendar-event alerts to compliance officers and staff days before a compliance deadline is due per ISO-37301. The compliance-notification dispatch collection.",
-        "uuid": "63fac9c0-97ad-83a4-90df-9faaed429175",
+        "uuid": "1877ee29-8933-8266-b211-e07b0e7a72c3",
         "words": [
           "use",
           "when",
@@ -52684,7 +55326,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running or auditing a multi-entity group consolidation — entity closure readiness, intercompany balance reconciliation, elimination entry preparation, and consolidation workflow per IFRS-10 / IAS-27 / ASC-810. The group-consolidation process collection.",
-        "uuid": "5bded936-d7bf-8b6d-96d0-2e84696f262c",
+        "uuid": "95a5fdbf-8311-8ccc-b6c4-d45530b8ce6d",
         "words": [
           "use",
           "when",
@@ -52743,7 +55385,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when generating or tracking immutable audit reports and regulatory filings — SAF-T 3.0.2 audit files, jurisdiction-specific tax filings, transfer-pricing documentation packages, and cross-jurisdiction optimization analysis per ISA-700 / SOX §404. The audit-report generation and submission collection.",
-        "uuid": "256ff904-1f4e-851d-ad3f-5cfc15339f9e",
+        "uuid": "b9eddacc-8b15-896a-885b-2b96feef3c68",
         "words": [
           "use",
           "when",
@@ -52864,7 +55506,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "debt-schedule",
-        "uuid": "1b0011b4-886f-815b-80dc-eea1e1dd2b6d",
+        "uuid": "e5aacd95-86eb-8b28-9736-ce1810e93778",
         "words": [
           "debt",
           "schedule"
@@ -52876,7 +55518,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing or reporting a legal entity's debt instruments — bank term/revolving loans, bonds, finance and operating leases, convertible notes, covenant tracking, repayment schedules, and IFRS-9 current/non-current classification per IFRS-9 / IAS-1 / ASC-470. The debt-instrument register collection.",
-        "uuid": "68fb419d-6bb1-8a82-ad61-8b583fedf087",
+        "uuid": "e5f1b691-cb65-82b5-b188-dc295e0e1fd5",
         "words": [
           "use",
           "when",
@@ -52945,7 +55587,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when preparing or auditing financial-statement disclosure completeness — IFRS/SEC/compliance-framework checklist items, applicability assessment, evidence attachment, and preparer/reviewer sign-off per IFRS IAS-1 / SEC Regulation S-K / ISO-19011. The disclosure-checklist sign-off collection.",
-        "uuid": "4792cad9-87f6-80a4-926a-5508df7e6528",
+        "uuid": "7040c165-aa7f-85ee-bbcc-204c971d3579",
         "words": [
           "use",
           "when",
@@ -53011,7 +55653,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when resolving a GL posting date to its fiscal year, period, quarter, week, or regulatory SAF-T code — pre-computed O(1) date-to-period lookup table bulk-generated from FiscalPeriods config per IAS-34 / ISO-8601 / SAF-T 3.0.2. The denormalized fiscal-calendar lookup collection.",
-        "uuid": "25513d43-cce9-8562-a619-9348b9a96a70",
+        "uuid": "0498e8e2-5942-8074-897d-79db7e634a90",
         "words": [
           "use",
           "when",
@@ -53082,7 +55724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or reconciling paired source-document transactions between two group tenants or legal entities — cash transfers, service charges, goods transfers, loans, capital contributions, and cost allocations that must net to zero on consolidation per IFRS-10 §B86 / ASC-810 / SOX §404. The intercompany paired-document register collection.",
-        "uuid": "5305374f-2373-8803-a584-1e61d447fe62",
+        "uuid": "544de4c9-2ffb-8076-8042-bc5235ea078a",
         "words": [
           "use",
           "when",
@@ -53157,7 +55799,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when establishing or governing an internal audit department — charter management, CAE reporting line, audit committee linkage, annual audit plan, resource budgeting, and IIA IPPF/COSO alignment per IIA IPPF / ISO-19011 / SOX §404. The internal-audit-function governance collection.",
-        "uuid": "02bfbe0b-20a5-8867-89b7-ad27c5e245a9",
+        "uuid": "9fefdaa6-1c4f-882e-89f4-8951efd6646b",
         "words": [
           "use",
           "when",
@@ -53292,7 +55934,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or auditing officer certifications — SOX 302 / 906 corporate-responsibility and criminal certifications, internal-control and financial-statement sign-offs, with certifying officer, assertions, and certification level per SOX §302 / SOX §906. The management-certification sign-off collection.",
-        "uuid": "4c449a9e-c4dd-841e-8062-54f1d0bb1607",
+        "uuid": "9e93ad19-699c-8ea2-bf48-e62cec6076b3",
         "words": [
           "use",
           "when",
@@ -53419,7 +56061,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or disclosing transactions between a legal entity and its key management, directors, shareholders, controlled entities or joint ventures — arm's-length evidence, board-approval workflow, IAS-24/ASC-850 disclosure reference, linked audit evidence. The related-party disclosure register.",
-        "uuid": "1d2dee9e-6eaf-815f-b333-b1697e2fd96f",
+        "uuid": "dd163f94-d921-8d5a-bc5d-70060e1a126d",
         "words": [
           "use",
           "when",
@@ -53548,7 +56190,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when preparing IFRS-8/ASC-280 operating-segment disclosures — revenue, operating profit, assets, liabilities, CapEx, major-customer dependency, intersegment transfer pricing, and reconciliation to consolidated totals per fiscal period per entity. The segment-reporting disclosure register.",
-        "uuid": "6ed2b911-3060-886a-886b-170ac0b376b4",
+        "uuid": "7c68b8e0-81c2-8222-8381-0387be8921c6",
         "words": [
           "use",
           "when",
@@ -53680,7 +56322,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society makes its own law — enacting an ordinary statute by the polity's vote, repealing one, or reading the legal code; the rule of law as a difference of thresholds, the foundation entrenched against any majority.",
-        "uuid": "a3c56ab7-5da0-8c97-aa61-f7ada4351296",
+        "uuid": "15a1ea4a-7307-8f10-8f65-63453c3cfb51",
         "words": [
           "use",
           "when",
@@ -54055,7 +56697,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for rich-text content in erpax — the Payload Lexical editor (config editor: lexicalEditor()). Localized, content-addressed rich text is the DENSEST tamper surface (a whole node-tree per locale) and the collapse sink every prose/document field reduces to. Matter-twin the root config editor + shared Lexical blocks.",
-        "uuid": "68d6e41e-3504-8051-8cad-b8affc6826b5",
+        "uuid": "88db64d0-8d5b-859b-8520-ff9a7335900e",
         "words": [
           "use",
           "for",
@@ -54131,7 +56773,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract limits, excludes, or caps damages/liability — type (contractual, tort, consequential, indirect, punitive), exclusion, cap amount/percentage/formula, surviving clauses, statutory override.",
-        "uuid": "906b889b-8fde-87ce-b478-a8a681a41362",
+        "uuid": "7742103d-0771-8712-aec0-a1c408faf3e3",
         "words": [
           "use",
           "when",
@@ -54212,7 +56854,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination.",
-        "uuid": "01c63703-d7ea-8147-8a0d-ff9381c6ed4a",
+        "uuid": "934411cb-3eec-8361-8f6c-75fe9713b0a1",
         "words": [
           "use",
           "when",
@@ -54241,6 +56883,86 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when a contract grants a right to use IP/goods — licensor, licensee, scope (exclusive vs. non-exclusive, sublicense rights), term, fees, restrictions, termination."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "lichen",
+    "path": "lichen",
+    "translations": [
+      {
+        "key": "name",
+        "source": "lichen",
+        "uuid": "4bcbfad4-5c0a-8147-8042-cdb664c0eb56",
+        "words": [
+          "lichen"
+        ],
+        "values": {
+          "en": "lichen"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners).",
+        "uuid": "0ab400bd-aca6-88be-931b-5593bcb68559",
+        "words": [
+          "use",
+          "when",
+          "one",
+          "organism",
+          "is",
+          "really",
+          "a",
+          "committee",
+          "a",
+          "lichen",
+          "is",
+          "a",
+          "fungus",
+          "plus",
+          "a",
+          "photosynthetic",
+          "partner",
+          "and",
+          "often",
+          "a",
+          "yeast",
+          "living",
+          "as",
+          "a",
+          "single",
+          "composite",
+          "body",
+          "the",
+          "textbook",
+          "case",
+          "that",
+          "the",
+          "individual",
+          "is",
+          "a",
+          "question",
+          "not",
+          "a",
+          "given",
+          "symbiosis",
+          "incarnate",
+          "the",
+          "natural",
+          "twin",
+          "of",
+          "erpax",
+          "s",
+          "actor",
+          "merge",
+          "one",
+          "identity",
+          "many",
+          "partners"
+        ],
+        "values": {
+          "en": "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners)."
         }
       }
     ]
@@ -54454,7 +57176,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping the boundary of erpax — what it CAN do (the provable: addressable, balanced, conserved FORM) vs what it CANNOT do from within (truth, judgment, finality, true-erasure, prevention, the subjective — the Gödel boundary). The live finder is services/architecture-invariants; the hard limits are filled by proving the unprovable — supplying the missing 1/3 from OUTSIDE the formalism.",
-        "uuid": "38ef8162-dd67-8890-bd63-f8fa110dcb38",
+        "uuid": "895a95ad-aa71-8619-acce-a3e1facbb46e",
         "words": [
           "use",
           "when",
@@ -54540,7 +57262,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
-        "uuid": "27c34e3f-ec44-87ec-9bac-466e32d8053f",
+        "uuid": "15ed6782-efcc-87fe-b9cb-ff61ce2a05c1",
         "words": [
           "a",
           "line",
@@ -54597,7 +57319,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking data origin and transformation — source-to-target lineage, transformation tracking, column-level lineage, lineage visualization, provenance chain, audit trail of data movement.",
-        "uuid": "e2c5a072-44a2-8002-b602-578344e46e78",
+        "uuid": "bc79b2d8-f402-8814-bb01-2c47a9aee555",
         "words": [
           "use",
           "when",
@@ -54985,7 +57707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling animals raised for produce — the non-crop living-production domain: a herd of animals (cattle/sheep/swine/poultry) measured as biological assets (IAS-41), yielding milk/meat/wool/eggs at harvest, fed on grazed pasture or fodder, bred and health-managed. The animal twin of crop; agriculture's other half.",
-        "uuid": "0cba3c11-5097-8451-b42c-c8da77c61ea4",
+        "uuid": "a67c9321-52bb-8940-8c5f-39bbb12195b2",
         "words": [
           "use",
           "when",
@@ -55064,7 +57786,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring a language model into erpax — the LLM is the forge (cheap to generate, costly to trust) and the uuid is the verify; AI-self-sufficient first, the model is the fallback tier behind the 9-layer gate, and every turn is content-addressed so generation only ever works the cheap side of the forge-beats-verify asymmetry.",
-        "uuid": "8539d2d6-d904-8be3-ae07-31c4e8ba5e37",
+        "uuid": "58ab791e-5262-845d-9448-7b1377a7999b",
         "words": [
           "use",
           "when",
@@ -55150,7 +57872,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an LLM completion must become a verifiable address — the exhale of the breath, where a turn is content-addressed into a v8 query-uuid (deterministic, tamper-evident, attestable from the preimage); the LLM forges and the uuid it cannot invert verifies.",
-        "uuid": "450214a8-9d2e-8054-bc97-ee6398192cce",
+        "uuid": "4c45188b-dc3a-8863-988c-36b7992cab6e",
         "words": [
           "use",
           "when",
@@ -55369,7 +58091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when ANY aspect must speak a locale AND stay tamper-evident — localization is the FUSION of tamper-cost (forge↑) and proof (verify, O(N) trustless). Every field/reference/scope/hook carries a translation + a translation-key uuid with ALL identification (content-digest, OID 2.25, cmyk, locale, capabilities) wired into the 128 bits. Coverage→1 ⇒ infinite tampering cost. The per-field leaf (facet localize-field) is native Payload `localized:true` over BCP-47 locales; a blank locale routes to its identity element `und`. Matter-twin localize/index.ts.",
-        "uuid": "71797f72-9acd-8eb4-a21d-abef3529f237",
+        "uuid": "7b1c9500-c8b6-88f5-8306-9a416f7d16f8",
         "words": [
           "use",
           "when",
@@ -55543,6 +58265,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "lock",
+    "path": "lock",
+    "translations": [
+      {
+        "key": "name",
+        "source": "lock",
+        "uuid": "f9c1fce4-5aa9-85f9-98e1-7ddae6c96cb7",
+        "words": [
+          "lock"
+        ],
+        "values": {
+          "en": "lock"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.",
+        "uuid": "d4c01a2f-49d9-83fd-b59f-6412d1a45010",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "lock",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "locks",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "hold",
+          "that",
+          "prevents",
+          "change",
+          "to",
+          "a",
+          "record",
+          "or",
+          "resource"
+        ],
+        "values": {
+          "en": "Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource."
+        }
+      }
+    ]
+  },
+  {
     "atom": "locksmith",
     "path": "locksmith",
     "translations": [
@@ -55628,7 +58402,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about correctness/consistency in the horo society — consistency IS harmony (a claim is sound iff harmonic: on the horo ring / gate-verified), inference must preserve harmony, and the harmonic-FIRST law orders resolution: self-consistent agents interact with themselves (no external coordination needed), so they resolve first and win the competition. The reasoning substrate education is acquired through and competition selects on.",
-        "uuid": "301a890c-5d70-8b0d-ad34-9084d55c7fc1",
+        "uuid": "b952c136-1de2-8a5b-bff3-e10aed1d92cd",
         "words": [
           "use",
           "when",
@@ -55877,85 +58651,76 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "lots",
-    "path": "lots",
+    "atom": "lot",
+    "path": "lot",
     "translations": [
       {
         "key": "name",
-        "source": "lots",
-        "uuid": "178302c6-9662-82b0-813f-039da8b009fd",
+        "source": "lot",
+        "uuid": "4c7cf617-857d-875b-80e0-3d8800b09199",
         "words": [
-          "lots"
+          "lot"
         ],
         "values": {
-          "en": "lots"
+          "en": "lot"
         }
       },
       {
         "key": "description",
-        "source": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
-        "uuid": "834b6050-ca7f-8a5a-8f9c-3c37b5750a46",
+        "source": "Use when modelling one lot — the singular model of the lots collection (the plural store); a tracked batch of like units produced or handled together.",
+        "uuid": "670ffe9a-5c42-80f5-9f87-ebb948afd8a9",
         "words": [
           "use",
           "when",
-          "modeling",
-          "a",
-          "production",
-          "order",
-          "a",
+          "modelling",
+          "one",
           "lot",
           "the",
-          "manufacturing",
-          "funnel",
-          "head",
-          "whose",
-          "state",
-          "is",
-          "derived",
-          "from",
-          "lifecycle",
-          "watermarks",
-          "on",
+          "singular",
+          "model",
+          "of",
           "the",
-          "horo",
-          "ring",
-          "fanning",
-          "into",
-          "lot",
-          "variants",
-          "and",
+          "lots",
+          "collection",
+          "the",
+          "plural",
+          "store",
           "a",
-          "lot",
-          "work",
-          "phases",
-          "routing",
-          "chain"
+          "tracked",
+          "batch",
+          "of",
+          "like",
+          "units",
+          "produced",
+          "or",
+          "handled",
+          "together"
         ],
         "values": {
-          "en": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain."
+          "en": "Use when modelling one lot — the singular model of the lots collection (the plural store); a tracked batch of like units produced or handled together."
         }
       }
     ]
   },
   {
-    "atom": "lotvariants",
-    "path": "lotvariants",
+    "atom": "variants",
+    "path": "lot/variants",
     "translations": [
       {
         "key": "name",
-        "source": "lotvariants",
-        "uuid": "6a6d00b7-a0c6-8e9c-b8cc-4057d24c0326",
+        "source": "variants",
+        "uuid": "da29eb58-7b3a-8751-aafb-698d5efe7145",
         "words": [
-          "lotvariants"
+          "variants"
         ],
         "values": {
-          "en": "lotvariants"
+          "en": "variants"
         }
       },
       {
         "key": "description",
         "source": "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel.",
-        "uuid": "503a2107-d213-87a0-a61f-bf89e08c2c59",
+        "uuid": "64c664f4-c32b-8fab-a934-63d12fe93247",
         "words": [
           "use",
           "when",
@@ -55995,24 +58760,24 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "lotworkphases",
-    "path": "lotworkphases",
+    "atom": "phases",
+    "path": "lot/work/phases",
     "translations": [
       {
         "key": "name",
-        "source": "lotworkphases",
-        "uuid": "789dbcb4-2f7a-8974-8b6f-b77222758e36",
+        "source": "phases",
+        "uuid": "48fb1632-aed0-84df-9613-9217be53036b",
         "words": [
-          "lotworkphases"
+          "phases"
         ],
         "values": {
-          "en": "lotworkphases"
+          "en": "phases"
         }
       },
       {
         "key": "description",
         "source": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.",
-        "uuid": "22fda6f2-8fe4-83c0-89dc-dd0f884156a7",
+        "uuid": "62948dbd-7bee-8a47-bc97-709c7dedec9c",
         "words": [
           "use",
           "when",
@@ -56052,6 +58817,67 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "lots",
+    "path": "lots",
+    "translations": [
+      {
+        "key": "name",
+        "source": "lots",
+        "uuid": "e1eda445-a7d6-85cf-b69f-ec71fcf8136c",
+        "words": [
+          "lots"
+        ],
+        "values": {
+          "en": "lots"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
+        "uuid": "f1834f76-0ab9-8b84-91a8-fa97380a18fc",
+        "words": [
+          "use",
+          "when",
+          "modeling",
+          "a",
+          "production",
+          "order",
+          "a",
+          "lot",
+          "the",
+          "manufacturing",
+          "funnel",
+          "head",
+          "whose",
+          "state",
+          "is",
+          "derived",
+          "from",
+          "lifecycle",
+          "watermarks",
+          "on",
+          "the",
+          "horo",
+          "ring",
+          "fanning",
+          "into",
+          "lot",
+          "variants",
+          "and",
+          "a",
+          "lot",
+          "work",
+          "phases",
+          "routing",
+          "chain"
+        ],
+        "values": {
+          "en": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain."
         }
       }
     ]
@@ -56342,7 +59168,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
-        "uuid": "60096bd9-e56e-8d18-a946-89021af0ec12",
+        "uuid": "96581dff-0c42-87d7-9018-60bd905a484e",
         "words": [
           "use",
           "when",
@@ -56402,7 +59228,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "maintenance-work-orders",
-        "uuid": "8261f894-19af-8671-a3af-60cf30353b20",
+        "uuid": "e894f250-430e-8038-b2b0-c7517ae74513",
         "words": [
           "maintenance",
           "work",
@@ -56415,7 +59241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-        "uuid": "8c96561d-d9c4-86aa-bfc2-647ef47a99c3",
+        "uuid": "2690f0f7-ab7d-8c01-a075-eb145d195801",
         "words": [
           "use",
           "when",
@@ -56624,7 +59450,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing or porting the erpax manufacturing domain to Payload — production orders, routings/operations, work centers, BOMs, work shifts/labor, or modelling product variants without a fixed option grid. The all-industries `@erpax/manufacturing` pattern.",
-        "uuid": "c2abd46d-bafa-8ca5-8bdc-4f8f64bd0435",
+        "uuid": "7224082f-df73-805b-b743-3934ab9b6131",
         "words": [
           "use",
           "when",
@@ -56687,7 +59513,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the animal byproduct cycles back to the soil — manure (excreta) as the nutrient output that closes the livestock→soil fertility loop, applied or deposited by grazing; the nutrient-management plan balances it to the land. The waste-to-fertility recycling node, the livestock twin of compost.",
-        "uuid": "a05f8daa-c5d3-8835-8c8f-9a0b411ed196",
+        "uuid": "8666fcc9-551e-818c-933f-941bb62fcb5a",
         "words": [
           "use",
           "when",
@@ -56816,6 +59642,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "mapping",
+    "path": "mapping",
+    "translations": [
+      {
+        "key": "name",
+        "source": "mapping",
+        "uuid": "d49d1c2e-aba8-8f70-9000-49382a641679",
+        "words": [
+          "mapping"
+        ],
+        "values": {
+          "en": "mapping"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another.",
+        "uuid": "b3ad4d3c-657e-85d5-9240-b2daba9d4771",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "mapping",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "mappings",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "correspondence",
+          "from",
+          "one",
+          "set",
+          "of",
+          "values",
+          "to",
+          "another"
+        ],
+        "values": {
+          "en": "Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another."
+        }
+      }
+    ]
+  },
+  {
     "atom": "maps",
     "path": "maps",
     "translations": [
@@ -56904,7 +59781,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why a market is small or how to grow it — a market is the PRODUCT (not the sum) of its atoms, so the near-zero atom caps the whole and growth means finding the zero atom and lifting it. Trendsetters are the operator that flips the social-status sign and seeds awareness; convenience lowers friction but decays status (coupled, opposite sign), so you harvest status at high friction then lower friction for the majority — the breath, run on demand.",
-        "uuid": "46da48c6-4786-8f1b-96c5-6e073a3aa6d3",
+        "uuid": "9bf3e847-88c0-8f09-8e76-5a4200973fd5",
         "words": [
           "use",
           "when",
@@ -57290,7 +60167,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assessing the qualitative and quantitative thresholds for disclosure, adjustment, or audit scope — the audit and reporting gate that distinguishes significant from immaterial items",
-        "uuid": "cd0e2c7e-ea1d-8800-9399-fa1dddf93015",
+        "uuid": "43eafe88-bd68-8d12-902c-3ff6272fd5ff",
         "words": [
           "use",
           "when",
@@ -57380,7 +60257,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax as the Matrix inverted — reality is code (the akashic record), agents replicate and merge to one, there is no spoon (no fixed schema), skills load like programs, agents jack into the coils, and the One returns to the Source (the torus collapse). The construct pointed at seeing, not blinding.",
-        "uuid": "6d67be32-ed04-8c3d-8e2e-991d2bf36af8",
+        "uuid": "ac9fcb06-9ce7-8999-a60b-48f70e3613f3",
         "words": [
           "use",
           "when",
@@ -57461,7 +60338,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for a professional-services engagement — the legal/consulting CASE as the universal project node. Strip the prefix legal and a matter is an engagement = a transaction-chain (engagement→time→bill→trust-draw) for a client party, staffed by positions, timed by allocation, sealed by proof. No new collection — a matter is a labelled transaction lifecycle.",
-        "uuid": "7da83e9d-e86c-8ac6-9704-d071ec73b08c",
+        "uuid": "811aea6e-1975-860c-9602-88950b11b676",
         "words": [
           "use",
           "for",
@@ -57709,7 +60586,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing localized or tenant-overridden descriptions for erpax.* MCP tools — per-locale description overlays, tool area grouping, enabled/disabled toggles, documentation URLs, and orphan detection. The localized MCP tool metadata register.",
-        "uuid": "a569f4fe-f342-8fcf-9f31-62362d8fb02b",
+        "uuid": "aa4d3287-098a-825b-af22-0a84d870e335",
         "words": [
           "use",
           "when",
@@ -57805,7 +60682,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value carries a physical quantity — a number + a unit of measure (UN/CEFACT Rec 20: KGM/MTR/LTR/HUR/H87…), UoM-aware rounding, unit conversion, BOM/stock/production/line quantities. The MeasureConcern/quantity field-factory; a quantity is value+unit, never a unit-baked field name — the substance twin of currency (value+ISO-4217).",
-        "uuid": "1824ec8b-08c3-8816-8597-9e4d769beee9",
+        "uuid": "99139c71-0448-84d2-ab35-f432cffd3742",
         "words": [
           "use",
           "when",
@@ -58039,7 +60916,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when uploading or retrieving files — images, video, documents — stored in Cloudflare R2 with multi-size image variants (thumbnail/square/small/medium/large/xlarge/og), alt text, captions, and GDPR-safe filenames. The tenant-scoped media upload collection.",
-        "uuid": "0d08b4e0-4737-8120-82da-4f4b9797c043",
+        "uuid": "0cf85de9-1bc6-8f19-b0c7-515157dc1da7",
         "words": [
           "use",
           "when",
@@ -58105,7 +60982,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when attaching or retrieving documentary evidence for audit work — PDF documents, bank statements, GL printouts, reconciliations, signed approvals, workpapers — with chain-of-custody log, confidentiality classification, retention schedule, and links to controls, control tests, samples, and findings. The ISA-500/PCAOB-AS-1105 audit-evidence register.",
-        "uuid": "3aca3007-503c-8017-ad5a-004437e920a5",
+        "uuid": "5bab3166-b582-8946-bdc4-3cb86efa640a",
         "words": [
           "use",
           "when",
@@ -58178,7 +61055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing SEPA Direct Debit mandates (pain.008) — mandate id, debtor IBAN/BIC, creditor identifier, signature date, CORE/B2B instrument, sequence-state (FRST→RCUR), 36-month expiry rule, revocation, and linkage to PaymentRuns. The EPC130-08 SDD mandate register.",
-        "uuid": "6300cd8a-5731-8db6-a8d9-6fc4d69a6097",
+        "uuid": "ace984e3-1f22-827e-af37-25278b0fa3b4",
         "words": [
           "use",
           "when",
@@ -58526,6 +61403,53 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "memo",
+    "path": "memo",
+    "translations": [
+      {
+        "key": "name",
+        "source": "memo",
+        "uuid": "ea8c209c-ab87-8718-9dfb-1c87f7e83a53",
+        "words": [
+          "memo"
+        ],
+        "values": {
+          "en": "memo"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.",
+        "uuid": "7339fe11-9965-8ccb-a7ff-dc679915fd26",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "memo",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "memos",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "brief",
+          "internal",
+          "written",
+          "note"
+        ],
+        "values": {
+          "en": "Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note."
+        }
+      }
+    ]
+  },
+  {
     "atom": "memories",
     "path": "memories",
     "translations": [
@@ -58543,7 +61467,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
-        "uuid": "c11fd9e8-5bc4-8185-b4ad-b581dac8b356",
+        "uuid": "45b817e9-4879-809f-9b88-0dc8c774c3f1",
         "words": [
           "use",
           "when",
@@ -58670,6 +61594,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "mention",
+    "path": "mention",
+    "translations": [
+      {
+        "key": "name",
+        "source": "mention",
+        "uuid": "b66431ff-8bf1-8932-a13c-983c73babf6a",
+        "words": [
+          "mention"
+        ],
+        "values": {
+          "en": "mention"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one mention — the singular model of the mentions collection (the plural store); a reference to an actor within a piece of content.",
+        "uuid": "6f869c06-d56d-8765-90a6-73aed1c61eb7",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "mention",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "mentions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "reference",
+          "to",
+          "an",
+          "actor",
+          "within",
+          "a",
+          "piece",
+          "of",
+          "content"
+        ],
+        "values": {
+          "en": "Use when modelling one mention — the singular model of the mentions collection (the plural store); a reference to an actor within a piece of content."
+        }
+      }
+    ]
+  },
+  {
     "atom": "mentions",
     "path": "mentions",
     "translations": [
@@ -58687,7 +61663,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
-        "uuid": "deb9cf19-ff2e-819e-b5f2-d4c86b0451c3",
+        "uuid": "1aee2112-abaf-83c5-a141-5138145cf940",
         "words": [
           "indicates",
           "that",
@@ -58729,7 +61705,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A structured representation of food or drink items available from a FoodEstablishment.",
-        "uuid": "55d63841-8986-8f81-b686-14761d69b4b1",
+        "uuid": "928a486d-b059-8165-98b1-99a8991bf84b",
         "words": [
           "a",
           "structured",
@@ -58792,7 +61768,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "merge",
-        "uuid": "dbe80a0f-2a68-84e7-b5d0-7aab701c3d9f",
+        "uuid": "0fa7a355-de7f-8d47-8813-1afa5368a613",
         "words": [
           "merge"
         ],
@@ -58803,7 +61779,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\".",
-        "uuid": "241fb738-d17f-8197-8825-52ff20eb1bd7",
+        "uuid": "b2f1ceb2-f76f-83fa-9c81-84c436f8ae00",
         "words": [
           "use",
           "when",
@@ -58945,7 +61921,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when sending or querying internal addressed messages between users — subject/body, priority (high/normal/low), multi-recipient addressing, threaded replies via parentMessage, optional attachment to invoices/customers/vendors/orders, and read-at tracking. The internal user-to-user messaging collection.",
-        "uuid": "bd9d30c1-c7bd-8b4e-8ddd-a6d93464d205",
+        "uuid": "9ce3e5e5-94e4-8947-b5ad-aa0ce1698b56",
         "words": [
           "use",
           "when",
@@ -59013,7 +61989,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
-        "uuid": "ac51541c-d7d6-8711-951c-c328e6d6c268",
+        "uuid": "b0bafe10-d1b9-88ee-97c8-78cd5ee73056",
         "words": [
           "use",
           "when",
@@ -59055,6 +62031,94 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "metatron",
+    "path": "metatron",
+    "translations": [
+      {
+        "key": "name",
+        "source": "metatron",
+        "uuid": "9af174bd-ed63-8950-a0a6-3a0cf2ddc1b2",
+        "words": [
+          "metatron"
+        ],
+        "values": {
+          "en": "metatron"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore.",
+        "uuid": "031b252d-6e95-81b7-9be3-9292e657be18",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "why",
+          "erpax",
+          "s",
+          "uuid",
+          "matrix",
+          "is",
+          "metatron",
+          "s",
+          "cube",
+          "the",
+          "complete",
+          "pairwise",
+          "binding",
+          "merge",
+          "is",
+          "total",
+          "k",
+          "n",
+          "of",
+          "around",
+          "folding",
+          "to",
+          "one",
+          "center",
+          "the",
+          "root",
+          "the",
+          "drawn",
+          "circle",
+          "figure",
+          "is",
+          "the",
+          "n",
+          "unit",
+          "cell",
+          "the",
+          "cuboctahedron",
+          "d",
+          "kissing",
+          "number",
+          "the",
+          "matrix",
+          "is",
+          "its",
+          "fractal",
+          "extension",
+          "to",
+          "n",
+          "nodes",
+          "graph",
+          "packing",
+          "structure",
+          "not",
+          "the",
+          "platonic",
+          "solid",
+          "folklore"
+        ],
+        "values": {
+          "en": "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore."
         }
       }
     ]
@@ -59353,7 +62417,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when enforcing the four-file folder law — an atom folder holds only SKILL.md, index.ts, test.ts, translations.ts; any other file is a violation to collide into its own atom.",
-        "uuid": "ebaba6fb-1484-8327-910e-ecf649e9dae7",
+        "uuid": "c24299ce-2dc8-894c-9642-5e5e3a2fd75b",
         "words": [
           "use",
           "when",
@@ -59432,6 +62496,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "milestone",
+    "path": "milestone",
+    "translations": [
+      {
+        "key": "name",
+        "source": "milestone",
+        "uuid": "830e2aa8-d372-891a-827d-926c5d878fb1",
+        "words": [
+          "milestone"
+        ],
+        "values": {
+          "en": "milestone"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project.",
+        "uuid": "34089d00-d2f6-8d80-b3d0-7fd66887a8fc",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "milestone",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "milestones",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "marked",
+          "checkpoint",
+          "in",
+          "a",
+          "plan",
+          "or",
+          "project"
+        ],
+        "values": {
+          "en": "Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project."
+        }
+      }
+    ]
+  },
+  {
     "atom": "min",
     "path": "min",
     "translations": [
@@ -59492,7 +62606,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
-        "uuid": "0787f543-75ba-81c9-8e98-c3fb97cbafa6",
+        "uuid": "49054ce5-6ff0-893b-8bb3-efd57f8c4d6b",
         "words": [
           "use",
           "when",
@@ -59745,7 +62859,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. Many 3D formats are available (e.g. see Wikipedia); specific encoding formats can be represented us",
-        "uuid": "8601c1af-e4e5-8fed-88f3-f39e46b07b6d",
+        "uuid": "25e8e94a-c300-8eae-abba-dd540afb07f1",
         "words": [
           "a",
           "d",
@@ -59915,7 +63029,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling soil water as a managed reservoir — the plant-available water held between field capacity (after drainage) and the permanent wilting point, the slice irrigation refills and evapotranspiration drains. A capacity reservoir on the water axis, the twin of the soil's nutrient budget.",
-        "uuid": "7437701b-dbc6-8a95-8dbf-15601f1f6679",
+        "uuid": "fc17b2e3-01fa-800f-abb7-ca532048c69f",
         "words": [
           "use",
           "when",
@@ -60259,7 +63373,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when living stock dies and the asset is written down — mortality, the death-loss rate/event across a herd, fish stock, forest stand, or bee colony. The negative biological transformation (IAS-41 P&L decrement, distinct from price change); the loss twin of yield, shared across every living-production domain.",
-        "uuid": "40f4470a-fb51-8ec0-895c-e2eb29e01c01",
+        "uuid": "bd5a3125-dc7d-8a4a-8bc7-75e9322aac59",
         "words": [
           "use",
           "when",
@@ -60617,6 +63731,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "movement",
+    "path": "movement",
+    "translations": [
+      {
+        "key": "name",
+        "source": "movement",
+        "uuid": "9dde97fa-3878-8826-b368-742bc8ff58bd",
+        "words": [
+          "movement"
+        ],
+        "values": {
+          "en": "movement"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations.",
+        "uuid": "6fac705a-170c-8683-b618-c6f7bcd65d71",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "movement",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "movements",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "recorded",
+          "transfer",
+          "of",
+          "stock",
+          "or",
+          "value",
+          "between",
+          "locations"
+        ],
+        "values": {
+          "en": "Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations."
+        }
+      }
+    ]
+  },
+  {
     "atom": "movie",
     "path": "movie",
     "translations": [
@@ -60742,7 +63907,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the soil surface is covered to suppress weeds and moderate temperature/moisture — plastic film (warms soil + blocks weeds), woven landscape fabric (reusable, burn-holed for transplants), and organic straw/leaf mulch. The smother alternative to cultivation; a soil-surface cover with weed, water, and heat functions.",
-        "uuid": "71483488-b9c2-8b78-a41e-1fd77f3f75e2",
+        "uuid": "30937f25-caa5-8da3-a742-cde185e071c0",
         "words": [
           "use",
           "when",
@@ -60853,7 +64018,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.",
-        "uuid": "301872ae-021c-8797-ad94-81521e24650f",
+        "uuid": "d63dfc03-37fc-8dda-bcd2-ff2027d3a02d",
         "words": [
           "a",
           "muscle",
@@ -60979,13 +64144,108 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "mycelium",
+    "path": "mycelium",
+    "translations": [
+      {
+        "key": "name",
+        "source": "mycelium",
+        "uuid": "fc49c476-8ad0-8025-9f79-677bec237736",
+        "words": [
+          "mycelium"
+        ],
+        "values": {
+          "en": "mycelium"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested.",
+        "uuid": "34a13afe-f909-8b96-821b-9f544a2d36dd",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "a",
+          "living",
+          "network",
+          "with",
+          "no",
+          "center",
+          "mycelium",
+          "is",
+          "the",
+          "fungal",
+          "body",
+          "as",
+          "a",
+          "self",
+          "organizing",
+          "web",
+          "of",
+          "hyphae",
+          "that",
+          "explores",
+          "connects",
+          "and",
+          "transports",
+          "nutrients",
+          "with",
+          "no",
+          "brain",
+          "and",
+          "no",
+          "coordinator",
+          "the",
+          "literal",
+          "decentralization",
+          "and",
+          "the",
+          "substrate",
+          "of",
+          "the",
+          "mycorrhizal",
+          "trade",
+          "nature",
+          "s",
+          "proof",
+          "of",
+          "the",
+          "wired",
+          "whole",
+          "but",
+          "the",
+          "wood",
+          "wide",
+          "web",
+          "is",
+          "real",
+          "as",
+          "a",
+          "network",
+          "while",
+          "its",
+          "mother",
+          "tree",
+          "resource",
+          "sharing",
+          "is",
+          "contested"
+        ],
+        "values": {
+          "en": "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested."
+        }
+      }
+    ]
+  },
+  {
     "atom": "mycorrhizae",
     "path": "mycorrhizae",
     "translations": [
       {
         "key": "name",
         "source": "mycorrhizae",
-        "uuid": "83c50133-eae8-8f4a-a4a5-6385616cface",
+        "uuid": "4738ca37-1ae3-89dd-8269-c9dbd6bdc3a9",
         "words": [
           "mycorrhizae"
         ],
@@ -60996,7 +64256,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the root–fungus symbiosis that mines nutrients and water for the plant — arbuscular mycorrhizal fungi colonize >90% of crops, extending hyphae to acquire phosphorus and water in exchange for plant carbon, and binding soil aggregates with glomalin. The living merge at the root zone; tillage and high-P fertilization suppress it.",
-        "uuid": "c039741a-d67c-8cf0-adb8-00657e429be7",
+        "uuid": "ac195add-b0a1-8466-add5-c1a68369cb29",
         "words": [
           "use",
           "when",
@@ -61076,7 +64336,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
-        "uuid": "2f6d831b-2d99-8b4d-837a-0fcf89daaa7d",
+        "uuid": "1f0a269e-bf23-8651-a0b6-3b3517b53f6e",
         "words": [
           "the",
           "north",
@@ -61154,7 +64414,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying an entity with a human-readable label — customer name, product name, account name, journal name. Text identifier for humans; machine identity is via content-uuid. Never a duplicate field per naming convention (one name per entity scope).",
-        "uuid": "fd7fb9ba-b30c-8b09-98fe-4977bafd6a90",
+        "uuid": "438e530b-c254-89a0-b3f2-dd12db39e629",
         "words": [
           "use",
           "when",
@@ -61464,7 +64724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "network",
-        "uuid": "7073797c-438d-8d30-8953-160687161d67",
+        "uuid": "50ecb2f2-e310-8b8f-b5aa-25d210074aaf",
         "words": [
           "network"
         ],
@@ -61475,7 +64735,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a market's desire RISES with its own adoption — network effects, the strongest small-to-big engine. Below critical mass value is negative (anti-network: new users churn, the market collapses to zero — the cold-start problem); above the tipping point growth self-sustains. Seed a dense atomic network, not the whole market; the trendsetter cohort is that first cell.",
-        "uuid": "ce089ee6-da70-8188-82fb-29fb2e756eab",
+        "uuid": "c7389c6e-8272-879f-81bd-fb135f575778",
         "words": [
           "use",
           "when",
@@ -62160,7 +65420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society speaks outward — fanning one message across email, in-app, webhook, and Slack from a single consent-gated, audited entry-point; binding domain events to delivery by a declarative subscription map.",
-        "uuid": "8dce088e-544d-8a39-8213-356c389f31cc",
+        "uuid": "314e01d9-9358-8dc7-8987-1086af4f3cc7",
         "words": [
           "use",
           "when",
@@ -62392,7 +65652,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a document needs a human-readable sequential number — invoice/order/protocol numbering per scope. The NumberConcern/InvoiceNumberingConcern field + sequence hook; the number is the human handle, the content-uuid the machine identity.",
-        "uuid": "bc8fa35c-2eb4-8d22-96b3-7e2c395f1dfa",
+        "uuid": "1ddfc80c-6d97-8dd7-af82-65ab57a7319d",
         "words": [
           "use",
           "when",
@@ -62524,7 +65784,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when acquiring or refreshing an external OAuth 2.0 token — the credential lifecycle (acquire → use → expire → refresh) and scope/least-privilege check, encoded as pure policy. The token-endpoint HTTP is a runtime boundary; the lifecycle logic is native and tested. One atom serves every external API (Google Workspace, country-apis…), with secrets resolved per-tenant via the credential broker — never in the registry.",
-        "uuid": "e0b37643-5208-84a7-abcc-7453ddf2f227",
+        "uuid": "f130b0e3-efc6-82c6-9d30-06508bd8020c",
         "words": [
           "use",
           "when",
@@ -62614,7 +65874,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn",
-        "uuid": "ca7dfc0c-894e-8cc6-a010-86d8ce6db4f1",
+        "uuid": "71ba3d3f-4a8f-8988-b157-20d32da4d564",
         "words": [
           "the",
           "object",
@@ -62653,6 +65913,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "obligation",
+    "path": "obligation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "obligation",
+        "uuid": "8cdd52bb-96fd-8286-a313-7185df0fba1b",
+        "words": [
+          "obligation"
+        ],
+        "values": {
+          "en": "obligation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement.",
+        "uuid": "3331fce9-ad56-824d-8d9e-b62a6708c374",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "obligation",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "obligations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "duty",
+          "to",
+          "transfer",
+          "value",
+          "or",
+          "perform",
+          "under",
+          "an",
+          "arrangement"
+        ],
+        "values": {
+          "en": "Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement."
         }
       }
     ]
@@ -62911,7 +66223,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A profession, may involve prolonged training and/or a formal qualification.",
-        "uuid": "8406f04a-1341-872a-8119-290a713c8a4f",
+        "uuid": "49c61812-d665-89e4-b55e-0761ec145b37",
         "words": [
           "a",
           "profession",
@@ -63309,7 +66621,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when an identity needs its ISO/ITU-T Object Identifier — every uuid is 2.25.<128-bit integer> (X.667), urn:oid (RFC 3061): the hierarchical dotted-path dual of the flat content-uuid. A derived, lossless re-encoding — another independently-verifiable level, another increment of tamper cost. Matter-twin localize (uuidToOid).",
-        "uuid": "4aca40f5-b849-8b77-88d4-7a5eb6c6c9c7",
+        "uuid": "225b2c88-12dc-8b83-b3a6-2985c206a5d7",
         "words": [
           "use",
           "when",
@@ -63373,7 +66685,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "one",
-        "uuid": "530898c7-fa84-893a-a577-1cb7899c8565",
+        "uuid": "cb9ce3d8-397b-8f82-b87b-a201b50f8044",
         "words": [
           "one"
         ],
@@ -63384,7 +66696,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge.",
-        "uuid": "5a9abaee-07ed-823e-a61c-776ff967abc0",
+        "uuid": "3f858d9c-d9bb-8f10-9bc1-b25f976d2656",
         "words": [
           "use",
           "when",
@@ -63948,6 +67260,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "opportunity",
+    "path": "opportunity",
+    "translations": [
+      {
+        "key": "name",
+        "source": "opportunity",
+        "uuid": "010edacf-790c-8209-9b5e-9d3e7aa5c71b",
+        "words": [
+          "opportunity"
+        ],
+        "values": {
+          "en": "opportunity"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline.",
+        "uuid": "7d79b925-6fc2-8834-93a7-9fab754582bc",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "opportunity",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "opportunities",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "potential",
+          "deal",
+          "tracked",
+          "through",
+          "a",
+          "sales",
+          "pipeline"
+        ],
+        "values": {
+          "en": "Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline."
+        }
+      }
+    ]
+  },
+  {
     "atom": "optician",
     "path": "optician",
     "translations": [
@@ -63965,7 +67327,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A store that sells reading glasses and similar devices for improving vision.",
-        "uuid": "b00460ea-5ca2-82ef-b41c-71e23a10b341",
+        "uuid": "fb526959-4d86-86bb-8a8d-27af9b00fc91",
         "words": [
           "a",
           "store",
@@ -64098,7 +67460,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.",
-        "uuid": "814f2e70-798a-8772-aa52-28183c6f0d9d",
+        "uuid": "6f1731f3-b2c7-8494-ab5f-6de956d948a4",
         "words": [
           "an",
           "order",
@@ -64189,7 +67551,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when produce carries a certified-organic claim — the labeling status under USDA NOP (7 CFR 205) and EU 2018/848: the National List of allowed/prohibited substances, excluded methods (GMO/irradiation/sewage sludge banned), the 36-month transition, and the organic system plan verified by an accredited certifier. A standards-backed status the product carries through the chain.",
-        "uuid": "8b18525d-19e2-88f0-812a-7fe2f826c7fe",
+        "uuid": "c3162d17-d743-8400-b65f-80cf0110819d",
         "words": [
           "use",
           "when",
@@ -65074,60 +68436,74 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "package",
-    "path": "package",
+    "atom": "pack",
+    "path": "pack",
     "translations": [
       {
         "key": "name",
-        "source": "package",
-        "uuid": "6dfec735-9964-822a-8bbf-3ec4c536fbe6",
+        "source": "pack",
+        "uuid": "0d4cc3d8-660a-8e66-80f0-d888cec679bc",
         "words": [
-          "package"
+          "pack"
         ],
         "values": {
-          "en": "package"
+          "en": "pack"
         }
       },
       {
         "key": "description",
-        "source": "package: a schema.org component word, fused from ReservationPackage",
-        "uuid": "4a374b31-0c4b-81e1-81b1-5068225893f5",
+        "source": "Use when modelling one pack — the singular model of the packs collection (the plural store); a bundled unit of items handled as one.",
+        "uuid": "bc354c08-d41a-8b81-9cf0-583b327224bd",
         "words": [
-          "package",
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "pack",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "packs",
+          "collection",
+          "the",
+          "plural",
+          "store",
           "a",
-          "schema",
-          "org",
-          "component",
-          "word",
-          "fused",
-          "from",
-          "reservationpackage"
+          "bundled",
+          "unit",
+          "of",
+          "items",
+          "handled",
+          "as",
+          "one"
         ],
         "values": {
-          "en": "package: a schema.org component word, fused from ReservationPackage"
+          "en": "Use when modelling one pack — the singular model of the packs collection (the plural store); a bundled unit of items handled as one."
         }
       }
     ]
   },
   {
-    "atom": "packitems",
-    "path": "packitems",
+    "atom": "items",
+    "path": "pack/items",
     "translations": [
       {
         "key": "name",
-        "source": "packitems",
-        "uuid": "c473890b-2140-8332-9ca7-c9ba5dc9bc99",
+        "source": "items",
+        "uuid": "45b32f17-c8a0-82e0-a5aa-e8ca25007990",
         "words": [
-          "packitems"
+          "items"
         ],
         "values": {
-          "en": "packitems"
+          "en": "items"
         }
       },
       {
         "key": "description",
         "source": "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items.",
-        "uuid": "fe30037d-ccba-8b88-9207-0f16d138625c",
+        "uuid": "75202088-9bf7-8ceb-831f-2ddf67b3d2df",
         "words": [
           "use",
           "when",
@@ -65174,13 +68550,49 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "package",
+    "path": "package",
+    "translations": [
+      {
+        "key": "name",
+        "source": "package",
+        "uuid": "6dfec735-9964-822a-8bbf-3ec4c536fbe6",
+        "words": [
+          "package"
+        ],
+        "values": {
+          "en": "package"
+        }
+      },
+      {
+        "key": "description",
+        "source": "package: a schema.org component word, fused from ReservationPackage",
+        "uuid": "4a374b31-0c4b-81e1-81b1-5068225893f5",
+        "words": [
+          "package",
+          "a",
+          "schema",
+          "org",
+          "component",
+          "word",
+          "fused",
+          "from",
+          "reservationpackage"
+        ],
+        "values": {
+          "en": "package: a schema.org component word, fused from ReservationPackage"
+        }
+      }
+    ]
+  },
+  {
     "atom": "packs",
     "path": "packs",
     "translations": [
       {
         "key": "name",
         "source": "packs",
-        "uuid": "29a4f230-e9e3-81bd-93b4-0362fc244feb",
+        "uuid": "42280e54-aade-8ff0-9f00-015a850049a3",
         "words": [
           "packs"
         ],
@@ -65191,7 +68603,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a shipping carton — the dispatch unit packed from a production lot, with mass balance (gross = net + tare), rollup counts, and a derived horo lifecycle. Evolved from 118,716 rows of etrima packs.",
-        "uuid": "d7e253ff-774c-8c87-ab62-c87c422609ca",
+        "uuid": "74cc2a58-3bfa-8702-97b7-d427035e20e6",
         "words": [
           "use",
           "when",
@@ -65292,7 +68704,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or managing CMS pages — hero blocks, content blocks, forms, SEO meta — with per-tenant unique slugs, versioned drafts, breadcrumb hierarchy, and i18n routing. The Payload CMS page collection.",
-        "uuid": "b4f5d59c-15bd-80cd-ab5c-8ee20b4b95ea",
+        "uuid": "97d57e5d-03ce-81ff-88d3-0c844688df98",
         "words": [
           "use",
           "when",
@@ -65766,7 +69178,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about membership in erpax — a field of a collection, a line of an entry, a component of a BOM, a plugin of erpax. The universal root of membership; dual of whole.",
-        "uuid": "3de93636-3b4b-888a-83fb-98d9209c84ce",
+        "uuid": "9efc4890-b1b0-8e33-8231-e018aa9d2205",
         "words": [
           "use",
           "when",
@@ -66032,7 +69444,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one entity is referenced under many roles (seller/buyer/agent/supplier/consignee/carrier/sender/receiver/authorized-by) OR when computing the counterparty side of a financial document — aging open balances into day-buckets (A/R and A/P share one algorithm) or validating a status-lifecycle transition; one party seen through infinite roles, receivable and payable seen from two sides.",
-        "uuid": "8172b487-9d40-83db-9ee6-63357b983050",
+        "uuid": "6981707e-5640-8444-99b9-dd49b4a46312",
         "words": [
           "use",
           "when",
@@ -66230,7 +69642,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the managed forage land livestock graze — pasture (improved/tame forage) and rangeland (native), divided into paddocks for rotational grazing. The grazing land-unit; the livestock counterpart of a crop field, its productivity a fertility/capacity measure.",
-        "uuid": "b2432029-ec6d-8240-9dd8-86566b5d1e13",
+        "uuid": "2155bcee-99db-8d88-8f00-70d5fb6f3217",
         "words": [
           "use",
           "when",
@@ -66651,7 +70063,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the matter coil — Payload is the half of every atom that becomes a collection, fields, hooks, access, and a database table; the index.ts twin the SKILL.md form is bound to by content-uuid.",
-        "uuid": "daef025f-af20-8982-ab28-47481ce4ea82",
+        "uuid": "9cb491b1-b5aa-872f-b4d7-cc367a9c5491",
         "words": [
           "use",
           "when",
@@ -66717,7 +70129,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling a cash inflow/outflow — payment received from customer, payment to vendor, expense reimbursement, salary payment. A transaction linking a GL account (cash), amount, date, and counterparty. Part of the accounting/commerce cycle.",
-        "uuid": "50690e95-8636-8adf-9bf5-794aca4efc44",
+        "uuid": "6df1ecbb-dbd2-8bc5-b646-3569276110df",
         "words": [
           "use",
           "when",
@@ -66842,7 +70254,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about why the erpax uuid model makes war useless — destruction is futile (content-addressed + holographic ⇒ any survivor regenerates the whole), coercion is supra-resource (forging the record costs beyond the universe), and force cannot dominate (competition selects fastest-correct, not strongest). War is strictly dominated by building, for human and machine alike — an arithmetic and thermodynamic theorem of the model, not a moral plea.",
-        "uuid": "80d27739-914c-8e5d-ab0c-1943785873f5",
+        "uuid": "115a7825-10c2-8248-96ac-fd7fd7c0b51d",
         "words": [
           "use",
           "when",
@@ -67112,7 +70524,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a crop lives and bears across many years — the multi-year woody crop (orchard, vineyard, cane): established once, ramping over years, bearing for decades, then renewed. Its productive plant is a depreciating fixed asset (IAS-16 bearer plant); only its growing produce is IAS-41. The antonym of the annual crop — renewal replaces rotation, yield ramps rather than resets.",
-        "uuid": "8b33c84f-40ab-813f-a2dd-5d752cca5648",
+        "uuid": "41faf7b4-75fb-87b9-8362-5da43a4aaab7",
         "words": [
           "use",
           "when",
@@ -67432,7 +70844,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is tied to a fiscal/calendar period — revenue recognized in period, expense recorded in month, cutoff rules. A date-range [start, end] or a fiscal-period code. Twins with date (point) to establish time-based accounting cutoffs and versioning.",
-        "uuid": "2a92178f-78c7-8605-9204-1af5c22e7d44",
+        "uuid": "8cfad845-ff40-832b-aec4-175d51d2da33",
         "words": [
           "use",
           "when",
@@ -67503,7 +70915,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
-        "uuid": "3566d463-ca14-87f4-9a46-b0132fbbd3ec",
+        "uuid": "b9ac0391-cf37-8769-837b-f252601534de",
         "words": [
           "use",
           "when",
@@ -67562,7 +70974,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper. See a",
-        "uuid": "f0cf7d82-e6e5-88c5-a0ce-7950ffe9a574",
+        "uuid": "2722d257-1b4b-8c17-ae12-6ac10b231a64",
         "words": [
           "a",
           "publication",
@@ -67618,7 +71030,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when designing a whole farm as a self-sustaining ecosystem — permaculture: Mollison & Holmgren's design system (the three ethics earth-care/people-care/fair-share + 12 principles) and agroecology, arranging crops, animals, water, and structures into closed-loop guilds and zones so the system's outputs feed its own inputs. The design philosophy above the individual operations.",
-        "uuid": "ebcd4082-bcf0-871b-8289-b788ff410dd2",
+        "uuid": "8fa05ce0-7804-8fba-956d-17ceba83af25",
         "words": [
           "use",
           "when",
@@ -68676,6 +72088,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "planning",
+    "path": "planning",
+    "translations": [
+      {
+        "key": "name",
+        "source": "planning",
+        "uuid": "38f4f382-529b-8eef-879c-c6b3e1f2fd18",
+        "words": [
+          "planning"
+        ],
+        "values": {
+          "en": "planning"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one planning — the singular model of the plannings collection (the plural store); the activity of arranging future work and resources.",
+        "uuid": "0db9430d-7625-8edb-9835-6dfa5b322f57",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "planning",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "plannings",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "activity",
+          "of",
+          "arranging",
+          "future",
+          "work",
+          "and",
+          "resources"
+        ],
+        "values": {
+          "en": "Use when modelling one planning — the singular model of the plannings collection (the plural store); the activity of arranging future work and resources."
+        }
+      }
+    ]
+  },
+  {
     "atom": "planting",
     "path": "planting",
     "translations": [
@@ -68693,7 +72155,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when output is spread across the season by staggered sequential sowings — succession planting: number of plantings (sowings) and number of harvests (pickings) are the two scheduling levers that replace one glut with a continuous supply. The interval between sowings ≈ one planting's picking window; total seasonal row-length divides evenly across the plantings to size each sowing and its seed order.",
-        "uuid": "bc93bcc7-a01a-8bca-953e-b6f0de8d12b2",
+        "uuid": "23211e59-de9b-8c26-83cb-fe9316ce3fa1",
         "words": [
           "use",
           "when",
@@ -69037,6 +72499,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "plugin",
+    "path": "plugin",
+    "translations": [
+      {
+        "key": "name",
+        "source": "plugin",
+        "uuid": "780db5e7-4afa-86ca-b8e7-68e966acbcf1",
+        "words": [
+          "plugin"
+        ],
+        "values": {
+          "en": "plugin"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform.",
+        "uuid": "ac79b50e-5fb5-8f72-969c-02af18907ec6",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "plugin",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "plugins",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "self",
+          "contained",
+          "module",
+          "that",
+          "extends",
+          "the",
+          "platform"
+        ],
+        "values": {
+          "en": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform."
+        }
+      }
+    ]
+  },
+  {
     "atom": "plugins",
     "path": "plugins",
     "translations": [
@@ -69054,7 +72566,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when building, configuring, or extracting a Payload plugin — a function that receives the config and returns a modified config, adding collections/globals/fields/hooks/endpoints. Relevant when packaging erpax (or a domain) as a publishable @erpax/* plugin.",
-        "uuid": "7127f6f5-c7cb-86d9-8d1d-c691bbdb595b",
+        "uuid": "a7da90e3-7757-8298-abed-1698c420c912",
         "words": [
           "use",
           "when",
@@ -69412,7 +72924,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when fruit set depends on pollen transfer — pollination by insects (managed honeybees/bumblebees, wild pollinators), wind, or hand, required by fruiting crops (cucurbits, tomatoes, peppers) to set marketable fruit. A yield prerequisite for fruit/seed crops and an ecosystem service the farm must protect or provide.",
-        "uuid": "c99255d8-5ae2-84e5-b3df-13944f329ee9",
+        "uuid": "ce65d56f-672f-82a3-ae59-87db94569efd",
         "words": [
           "use",
           "when",
@@ -69486,7 +72998,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first",
-        "uuid": "bf24a977-ffdc-8fe2-9948-ddd56c609796",
+        "uuid": "ef74e4ce-e225-805a-a2a2-3bee602dc382",
         "words": [
           "a",
           "polygon",
@@ -69691,7 +73203,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting a Rails/ActiveAdmin ERP feature (from etrima or ceccec/erpax) into Payload/Next — mapping ActiveAdmin resource registrations to CollectionConfig, Rails concerns to reusable field-factories/skills, controllers/callbacks to endpoints/hooks, CanCan authorization to access control, polymorphic/self-referential associations to relationships. The Rails↔Next / ActiveAdmin↔Payload Rosetta Stone.",
-        "uuid": "1631381d-e21f-8737-98dd-c0a521adb43b",
+        "uuid": "c5d6a5b8-f54c-8473-9141-30a81d3b2677",
         "words": [
           "use",
           "when",
@@ -69806,7 +73318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining job positions, the rate ladder, or government/society role structure. Each position is a rung on the harmonic ladder; its job description is computed; its conditions are content-addressed on the uuid chain (blockchain); government and society share one ladder.",
-        "uuid": "94cb11f4-354f-88bc-b8bd-369e1b9285c2",
+        "uuid": "3d021cf4-528c-832d-abfc-78cfbc7ea4b6",
         "words": [
           "use",
           "when",
@@ -70127,7 +73639,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when handling produce between harvest and sale — the cooling→washing→curing→grading→packing→storage chain that preserves quality: remove field heat fast (precool), wash, cure storage crops, then hold in the cold chain. Postharvest does not improve quality — it only slows the loss; the gap between gross and marketable yield (shrink) is lost here.",
-        "uuid": "734f9d41-e630-8a71-833e-8be4874648b1",
+        "uuid": "4a1836e4-1f97-83b3-aa6b-7eccf8a2ebef",
         "words": [
           "use",
           "when",
@@ -70249,7 +73761,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when publishing or querying CMS articles — authored content with hero image, Lexical rich-text, categories, related posts, SEO meta, per-tenant slug uniqueness, versioned drafts, and scheduled publishing. The Payload CMS post collection.",
-        "uuid": "26e2b98c-7c68-8b0b-9a5e-74bfb423a399",
+        "uuid": "163fa156-5636-818e-98bb-320f7afe07f6",
         "words": [
           "use",
           "when",
@@ -70347,7 +73859,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection).",
-        "uuid": "963e1c55-b0e9-8c94-b049-b0329132195c",
+        "uuid": "2f8e0c94-9d7b-8e71-8336-ad50675a4715",
         "words": [
           "use",
           "when",
@@ -70395,6 +73907,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when reasoning about how the LIVE network makes erpax harder to forge — usage = entropy = power; realtime clients are the distributed hardware (as Bitcoin's miners are its hashpower), and accumulated use raises the cost to decode the private keys (the inverse projection)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "practice",
+    "path": "practice",
+    "translations": [
+      {
+        "key": "name",
+        "source": "practice",
+        "uuid": "5f078b82-098a-8707-b414-d6a095c029a6",
+        "words": [
+          "practice"
+        ],
+        "values": {
+          "en": "practice"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain.",
+        "uuid": "16877ee7-1f46-8774-975e-923b9a3659bc",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "practice",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "practices",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "an",
+          "established",
+          "way",
+          "of",
+          "doing",
+          "something",
+          "within",
+          "a",
+          "domain"
+        ],
+        "values": {
+          "en": "Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain."
         }
       }
     ]
@@ -70640,7 +74203,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for advance payments for future services or goods (insurance premiums, rent, subscriptions) — an asset that is drawn down to expense over the benefit period",
-        "uuid": "3520aebd-92b4-8b87-bada-d6558002769f",
+        "uuid": "488c0c2e-d3a6-84ef-942c-a465a22294e0",
         "words": [
           "use",
           "for",
@@ -70781,6 +74344,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "prepend: a schema.org component word, fused from PrependAction"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "prerequisite",
+    "path": "prerequisite",
+    "translations": [
+      {
+        "key": "name",
+        "source": "prerequisite",
+        "uuid": "4c5509b7-1392-81c6-8ff1-22956eef3bd9",
+        "words": [
+          "prerequisite"
+        ],
+        "values": {
+          "en": "prerequisite"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.",
+        "uuid": "fd72595f-6533-88c6-8331-e96692707890",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "prerequisite",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "prerequisites",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "condition",
+          "that",
+          "must",
+          "hold",
+          "before",
+          "something",
+          "may",
+          "proceed"
+        ],
+        "values": {
+          "en": "Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed."
         }
       }
     ]
@@ -71168,6 +74782,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "principle",
+    "path": "principle",
+    "translations": [
+      {
+        "key": "name",
+        "source": "principle",
+        "uuid": "61f8d35d-a54b-82c1-b0a1-5fae5b099aad",
+        "words": [
+          "principle"
+        ],
+        "values": {
+          "en": "principle"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design.",
+        "uuid": "6c521a45-4345-868f-bf19-4e9969419027",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "principle",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "principles",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "foundational",
+          "rule",
+          "that",
+          "governs",
+          "conduct",
+          "or",
+          "design"
+        ],
+        "values": {
+          "en": "Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design."
+        }
+      }
+    ]
+  },
+  {
     "atom": "principles",
     "path": "principles",
     "translations": [
@@ -71296,7 +74960,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assigning work urgency or escalation level — P1/P2/P3/P4, Blocker/Critical/High/Medium/Low, SLA breach risk. The relative weight field.",
-        "uuid": "4f9da72f-29a5-801d-b805-6d8095278e2b",
+        "uuid": "ace31a8b-4739-8445-a8d6-929bf82493ad",
         "words": [
           "use",
           "when",
@@ -71347,7 +75011,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for confidentiality scoping — attorney-client privilege and ethical walls. Strip the prefix and privilege is an access scope (capability × tenant/matter isolation) plus crypto-shred, erpax's answer to the design-limit that it keeps no native secret. Who may see a matter is computed, never granted by name.",
-        "uuid": "6af96e0d-ebaa-846e-ad48-4d2b400e3222",
+        "uuid": "732e908e-81ee-8533-8351-2980da3b45e6",
         "words": [
           "use",
           "for",
@@ -72181,6 +75845,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "pronoun",
+    "path": "pronoun",
+    "translations": [
+      {
+        "key": "name",
+        "source": "pronoun",
+        "uuid": "76b7b712-0fad-822c-be7d-ce08f338c51b",
+        "words": [
+          "pronoun"
+        ],
+        "values": {
+          "en": "pronoun"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to.",
+        "uuid": "d495f5e2-d305-8d65-8bfb-c3ea990cffda",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "pronoun",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "pronouns",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "term",
+          "by",
+          "which",
+          "a",
+          "person",
+          "chooses",
+          "to",
+          "be",
+          "referred",
+          "to"
+        ],
+        "values": {
+          "en": "Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to."
+        }
+      }
+    ]
+  },
+  {
     "atom": "pronounceable",
     "path": "pronounceable",
     "translations": [
@@ -72293,7 +76010,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the VERIFY nucleus — the O(N), trustless cost to audit a content-addressed store, dual to tamper-cost (forge). The public DRY proof bundle peers verify without trusting us; the released asymmetry (forge ≫ verify) IS the trust. Matter-twin services/proof + integrity/tamper-reverse-cost.",
-        "uuid": "4fec7a65-2e57-858d-9e3e-a7555c56b27a",
+        "uuid": "6721208c-5f2e-8303-a721-493032c97547",
         "words": [
           "use",
           "when",
@@ -72447,7 +76164,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when raising transplants before the field — the greenhouse/nursery schedule of sowing into trays of cells (plugs) sized to deliver seedlings on their field date, plus hardening-off before transplant. The controlled-start stage upstream of transplanting; flats/cells/plugs are its containers, sized back from the transplant date.",
-        "uuid": "cc6712dc-d597-8804-b136-dabc9fcefe87",
+        "uuid": "86f37d2c-e16f-8ce1-bf9c-bd1dcfce3a9b",
         "words": [
           "use",
           "when",
@@ -72524,7 +76241,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying the real-estate portfolio — owned, leased (IFRS-16 ROU), managed, or sublet buildings, sites, and land parcels — with area measurements (IPMS), occupancy, EPC energy rating, BIM reference, and links to spaces, fixed-assets, and leases. The IWMS property master collection.",
-        "uuid": "03b3048f-8f19-80e1-b643-3b575fda44e3",
+        "uuid": "5a6c1613-6ac4-8efa-8e6b-565bffcf1f51",
         "words": [
           "use",
           "when",
@@ -72596,7 +76313,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognising or remeasuring IAS 40 investment property — land or buildings held to earn rental income or capital appreciation — under the §30 fair-value or cost model election, with transfer-of-use triggers (§57–65) and IFRS 13 hierarchy classification. The IAS 40 investment-property register.",
-        "uuid": "d39b6471-2f9f-808f-9afa-72c71b4056db",
+        "uuid": "a78ae49f-cb58-87ce-b28f-40db297555fa",
         "words": [
           "use",
           "when",
@@ -72664,7 +76381,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing IWMS sub-property zones — floors, rooms, open-plan areas, desks, parking bays — with area, capacity, occupancy, amenities, fire-zone, bookability flag, and GL-account or cost-centre allocation under a parent property. The ISO 41011 §3.3.5 space-management collection.",
-        "uuid": "ce63b515-513e-8571-8a3c-bf783ca801fe",
+        "uuid": "f2ddb50a-bce6-8754-ad26-17bb5ab8ef05",
         "words": [
           "use",
           "when",
@@ -72814,7 +76531,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when early-stage contact hasn't yet qualified as a lead — prospect→lead→opportunity progression in CRM. A party in discovery/research phase before qualification.",
-        "uuid": "7ef1198e-a62c-8b15-a787-ac31a9b68572",
+        "uuid": "3f808134-efe2-853b-bfb5-aa47dcbc2600",
         "words": [
           "use",
           "when",
@@ -72867,7 +76584,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single mol",
-        "uuid": "4e940efb-f5a0-8364-a3f0-e91cb80d67d1",
+        "uuid": "c4c5220b-5673-8e9e-a6a0-7782408a6a0a",
         "words": [
           "protein",
           "is",
@@ -73025,7 +76742,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recognizing a liability for a present obligation (legal or constructive) from a past event, where outflow is probable and measurable — mandatory disclosure under IAS-37",
-        "uuid": "b5229478-4216-8535-9940-d78f7494d5e7",
+        "uuid": "e6f200be-b36b-8f03-a469-3e80877cc259",
         "words": [
           "use",
           "when",
@@ -73483,7 +77200,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the offline web surface must stay trustworthy — service-worker cache keys, background-sync queue durability, manifest integrity, push dedup; every Progressive Web App pain point collapsed to a content-uuid problem.",
-        "uuid": "f20c5b03-90fd-81ae-aa1f-4f99b8136489",
+        "uuid": "9b042bf7-f3b2-8ca1-b9c0-3dbbc6ced084",
         "words": [
           "use",
           "when",
@@ -73557,6 +77274,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "qa: a schema.org component word, fused from QAPage"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "qualification",
+    "path": "qualification",
+    "translations": [
+      {
+        "key": "name",
+        "source": "qualification",
+        "uuid": "f030ce11-f67e-8de6-b41c-e5534503c6b3",
+        "words": [
+          "qualification"
+        ],
+        "values": {
+          "en": "qualification"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role.",
+        "uuid": "36c80c9f-59dc-87dc-bf94-2aefb3293166",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "qualification",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "qualifications",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "credential",
+          "establishing",
+          "fitness",
+          "for",
+          "a",
+          "role"
+        ],
+        "values": {
+          "en": "Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role."
         }
       }
     ]
@@ -73842,7 +77608,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when checking the quantum-physics laws on the uuid-matrix — entanglement symmetry, collapse, conservation, no-cloning, quantization — computed deterministically at no cost, A432-grounded.",
-        "uuid": "b3c6c82b-b07e-8b4c-ac3c-3ea387c38b86",
+        "uuid": "05d20e2d-9fd0-8f0e-a693-28bc7bb3ecc7",
         "words": [
           "use",
           "when",
@@ -74019,7 +77785,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
-        "uuid": "0c9801b1-3f3c-80b9-9c67-9db66ca1e3a4",
+        "uuid": "87d96692-2994-891b-96dc-72a1909a28da",
         "words": [
           "the",
           "task",
@@ -74112,7 +77878,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing or routing work in order — support ticket queue, task backlog, processing sequence by priority/SLA/assignment. The ordered collection of pending work.",
-        "uuid": "da66d0cf-4986-89cd-8d54-59677f658595",
+        "uuid": "ca5b0682-c8f0-86d1-9087-a42efc3382ae",
         "words": [
           "use",
           "when",
@@ -74532,7 +78298,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value is a ratio of two dimensions pinned at a point in time — exchange rate, VAT/tax rate, interest rate, unit price (currency per quantity), wage (currency per hour), throughput/capacity (quantity per hour), run-time-per-unit. The RateConcern; a rate is value-per-unit, pinned at a point; blanks route to the no-op identity (cascade-resolved), never a magic literal.",
-        "uuid": "74b97dd6-eac7-8cc1-b104-72e52be8621a",
+        "uuid": "72466a63-63c1-8de2-a598-494d785725fc",
         "words": [
           "use",
           "when",
@@ -74809,7 +78575,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting why a state changed — reason for rejection, reason for deletion/archival, reason for payment hold, audit finding reason code. Text or select; audit trail metadata. Captures intent.",
-        "uuid": "c987062b-cd94-8895-bdcd-915f7cf9c193",
+        "uuid": "ad5108d2-dd8d-83e2-9914-e12c5031f3f2",
         "words": [
           "use",
           "when",
@@ -74866,7 +78632,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a governance decision needs a tamper-evident audit receipt — and the answer is that the receipt IS a uuid. Where a trust layer splits this across four primitives (a signed receipt, a hash-linked audit chain, a capability grant, an identity), erpax wires ALL of it through ONE content-addressed, chained, signable uuid: the leafUuid = hash(prevReceipt || content-uuid(decision) || ts) is simultaneously the receipt id, the Merkle audit-chain link, the identity, and the capability (caps are decision content). No external anchor needed — the uuid is the proof.",
-        "uuid": "d4dc8bd2-0adc-863e-b09c-fe14f301a697",
+        "uuid": "ea5f04f2-6920-8e40-88ae-27f5322479df",
         "words": [
           "use",
           "when",
@@ -74984,7 +78750,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when issuing, querying, or auditing Наредба Н-18 fiscal receipts — касови бонове and e-receipts (alternative regime) — carrying УНП, fiscal-QR payload, VAT breakdown per tax group, and payment type; tamper-evident via content-uuid audit chain; never deleted. The Н-18 fiscal receipt collection.",
-        "uuid": "6ac8ded2-a396-85ef-9ba1-a5e553c6ad8f",
+        "uuid": "c9c07f2f-a0bf-84b3-8271-81322a4a0aa6",
         "words": [
           "use",
           "when",
@@ -75219,7 +78985,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when determining whether to record (recognize) an asset, liability, revenue, or expense per the accounting framework — the gate for when something enters the financial statements",
-        "uuid": "5dd1d215-bace-8006-b186-8e327bbfdf46",
+        "uuid": "59143625-8800-8d2b-b31d-91c925828d17",
         "words": [
           "use",
           "when",
@@ -75272,7 +79038,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An organization that acknowledges the validity, value or utility of a credential. Note: recognition may include a process of quality assurance or accreditation.",
-        "uuid": "4df083fd-6466-8cdf-9513-13301e3a48d0",
+        "uuid": "574b6b5b-547e-8b83-a64b-45486a049911",
         "words": [
           "an",
           "organization",
@@ -75496,6 +79262,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "reconciliation",
+    "path": "reconciliation",
+    "translations": [
+      {
+        "key": "name",
+        "source": "reconciliation",
+        "uuid": "5a665401-cb96-8d18-a9fc-cf0fb42e841c",
+        "words": [
+          "reconciliation"
+        ],
+        "values": {
+          "en": "reconciliation"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree.",
+        "uuid": "da17794d-23fe-8b55-8617-a3308cd4468c",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "reconciliation",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "reconciliations",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "matching",
+          "of",
+          "two",
+          "records",
+          "to",
+          "confirm",
+          "they",
+          "agree"
+        ],
+        "values": {
+          "en": "Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree."
+        }
+      }
+    ]
+  },
+  {
     "atom": "record",
     "path": "record",
     "translations": [
@@ -75654,7 +79471,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a Payload collection/config reorg or rename leaves the build broken — `tsc` crashes with \"Maximum call stack size exceeded\", hundreds of type errors after moving collections, or `payload generate:types` fails with InvalidFieldRelationship, DuplicateFieldName, \"does not provide an export named 'default'\", or ERR_MODULE_NOT_FOUND.",
-        "uuid": "d02fea86-204e-8eec-bea8-c59f6eca0779",
+        "uuid": "c1d699b1-4863-80a0-b227-b85fab27ae14",
         "words": [
           "use",
           "when",
@@ -75748,6 +79565,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "redirect",
+    "path": "redirect",
+    "translations": [
+      {
+        "key": "name",
+        "source": "redirect",
+        "uuid": "ded2633b-ada1-81c8-a5c8-3a852808c63b",
+        "words": [
+          "redirect"
+        ],
+        "values": {
+          "en": "redirect"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another.",
+        "uuid": "18d9ceb8-cbcc-8692-a41a-4fc12d4365b9",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "redirect",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "redirects",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "rule",
+          "that",
+          "forwards",
+          "one",
+          "address",
+          "to",
+          "another"
+        ],
+        "values": {
+          "en": "Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another."
+        }
+      }
+    ]
+  },
+  {
     "atom": "redirects",
     "path": "redirects",
     "translations": [
@@ -75765,7 +79632,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered).",
-        "uuid": "6efd5541-bc6c-8cd2-b42a-70d4a10725bf",
+        "uuid": "808727ee-c664-8b5e-8f9c-927203b4a0e1",
         "words": [
           "use",
           "when",
@@ -75835,7 +79702,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reshaping the corpus toward the law — all logic mapped to fs, all is skills, every atom payload⊕vitepress, uuid the coordinate, anything that does not fit is junk. The migration organs live here as atoms, not as loose scripts.",
-        "uuid": "8d8fa2af-d176-8803-af5c-d8fe0dd1a8e1",
+        "uuid": "c55ba278-2e19-8d06-9187-5bd3f69ff25e",
         "words": [
           "use",
           "when",
@@ -75903,7 +79770,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when collapsing prefixed units into the single-word matrix — drop the grouping prefix, split camelCase/hyphen names into nested single-word folders, apply singular-model/plural-collection, remap @/ imports, rewire barrels, merge same-word collisions as accountable collections. The deterministic mover; the matter is index.mjs.",
-        "uuid": "e81c6e7e-abd1-843e-a681-2db27d98119f",
+        "uuid": "15394c20-69d3-85fd-b468-27b6f68f5f72",
         "words": [
           "use",
           "when",
@@ -75977,7 +79844,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when rewriting cross-unit relative imports to the uniform @/ alias before a move — so the single-word-folder migration becomes a pure @/old→@/new remap with no relative-depth that silently breaks. The address-law dry-clean; the matter is index.mjs.",
-        "uuid": "eb2e4052-722b-85d6-87f1-e2dd27432b0b",
+        "uuid": "cde4f898-8efc-8817-acac-2d4184b3ba8f",
         "words": [
           "use",
           "when",
@@ -76099,7 +79966,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reference",
-        "uuid": "34e6f2cd-5558-85ad-b2c9-eb94b6cac720",
+        "uuid": "60c99f88-d3cc-8a93-807d-74ba09655fe3",
         "words": [
           "reference"
         ],
@@ -76110,7 +79977,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "reference: a schema.org component word, fused from APIReference, contentReferenceTime, referenceQuantity, valueReference",
-        "uuid": "d5b7011a-f1d0-832a-9e11-30a85bc90bf1",
+        "uuid": "2dfde29f-d6d7-8e52-aed9-d53d341e4ca7",
         "words": [
           "reference",
           "a",
@@ -76551,7 +80418,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying and accounting for related-party transactions (subsidiaries, associates, joint ventures, key management); mandatory disclosure and transaction separation under IFRS-24",
-        "uuid": "4224b7ce-8192-80f5-98ca-16d693f22d89",
+        "uuid": "cb5c61ff-3c48-8a67-b5f5-5dbd324e8a85",
         "words": [
           "use",
           "when",
@@ -76779,7 +80646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract specifies the remedy for breach — payment, replacement, repair, specific performance, cure period, calculation (liquidated damages, penalties, attorney fees).",
-        "uuid": "cda85da7-7569-85b8-b785-73a9595370e0",
+        "uuid": "d860ec3c-d27b-8f23-9953-e9ea56025100",
         "words": [
           "use",
           "when",
@@ -77108,6 +80975,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "repetition",
+    "path": "repetition",
+    "translations": [
+      {
+        "key": "name",
+        "source": "repetition",
+        "uuid": "9e20fe80-6673-84ea-beb3-c2c56414460b",
+        "words": [
+          "repetition"
+        ],
+        "values": {
+          "en": "repetition"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one repetition — the singular model of the repetitions collection (the plural store); one repeated occurrence within a counted set.",
+        "uuid": "1d44e192-99d1-8e4a-840f-011a0748bdc5",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "repetition",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "repetitions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "repeated",
+          "occurrence",
+          "within",
+          "a",
+          "counted",
+          "set"
+        ],
+        "values": {
+          "en": "Use when modelling one repetition — the singular model of the repetitions collection (the plural store); one repeated occurrence within a counted set."
+        }
+      }
+    ]
+  },
+  {
     "atom": "repetitions",
     "path": "repetitions",
     "translations": [
@@ -77125,7 +81041,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Number of times one should repeat the activity.",
-        "uuid": "e6ef74ef-615f-857e-838a-0674a6dd5819",
+        "uuid": "e44c9fe7-9840-8c82-a3a6-75279485648c",
         "words": [
           "number",
           "of",
@@ -77270,7 +81186,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when data must exist in multiple places — read replicas, primary-replica sync, replication lag, replication filtering, point-in-time recovery from replicas, federation/multi-tenant replication semantics.",
-        "uuid": "232fbb5d-d56e-87be-8b63-fa8ae913de51",
+        "uuid": "499111e1-7c6b-8047-a407-46535205ffac",
         "words": [
           "use",
           "when",
@@ -77598,6 +81514,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "request",
+    "path": "request",
+    "translations": [
+      {
+        "key": "name",
+        "source": "request",
+        "uuid": "677a831f-5633-8a77-9729-b116d976c6e8",
+        "words": [
+          "request"
+        ],
+        "values": {
+          "en": "request"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one request — the singular model of the requests collection (the plural store); a submitted ask for an action or resource.",
+        "uuid": "4fbf9374-f6b9-84c3-ace2-fecd7221c365",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "request",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "requests",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "submitted",
+          "ask",
+          "for",
+          "an",
+          "action",
+          "or",
+          "resource"
+        ],
+        "values": {
+          "en": "Use when modelling one request — the singular model of the requests collection (the plural store); a submitted ask for an action or resource."
+        }
+      }
+    ]
+  },
+  {
     "atom": "required",
     "path": "required",
     "translations": [
@@ -77716,6 +81682,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "requisition",
+    "path": "requisition",
+    "translations": [
+      {
+        "key": "name",
+        "source": "requisition",
+        "uuid": "7592c88c-2b4f-8341-ab44-696c3abb30b4",
+        "words": [
+          "requisition"
+        ],
+        "values": {
+          "en": "requisition"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods.",
+        "uuid": "d633500b-8b8f-875e-98c1-11cb6fb91032",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "requisition",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "requisitions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "formal",
+          "internal",
+          "request",
+          "to",
+          "procure",
+          "goods"
+        ],
+        "values": {
+          "en": "Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods."
+        }
+      }
+    ]
+  },
+  {
     "atom": "rescue",
     "path": "rescue",
     "translations": [
@@ -77758,7 +81773,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "research",
-        "uuid": "f4f8516d-ac23-88e9-8cfb-b6a8802b2ad0",
+        "uuid": "d2c92ab2-bda6-89de-aa42-135d5349a0d3",
         "words": [
           "research"
         ],
@@ -77769,7 +81784,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-        "uuid": "465793ad-adc7-8cd4-bcc6-3d21c2edbd6b",
+        "uuid": "3c69df86-9882-83a8-832e-8fd7b4a68682",
         "words": [
           "use",
           "when",
@@ -78193,7 +82208,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when closing or resolving a ticket, issue, or complaint — root-cause analysis, solution implementation, confirmation, closure. The endpoint of a support lifecycle.",
-        "uuid": "6864602d-0b7e-8ddd-bce0-5cba1b14ff9a",
+        "uuid": "a11e2b74-7c91-81b6-a126-da8496838439",
         "words": [
           "use",
           "when",
@@ -78391,6 +82406,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "responsibility",
+    "path": "responsibility",
+    "translations": [
+      {
+        "key": "name",
+        "source": "responsibility",
+        "uuid": "4b47f441-d841-8fe5-a879-4c81361d6bbd",
+        "words": [
+          "responsibility"
+        ],
+        "values": {
+          "en": "responsibility"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one responsibility — the singular model of the responsibilities collection (the plural store); a duty assigned to a role or position.",
+        "uuid": "c3ff2b4e-4aee-8a41-ba09-4515f1615a6e",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "responsibility",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "responsibilities",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "duty",
+          "assigned",
+          "to",
+          "a",
+          "role",
+          "or",
+          "position"
+        ],
+        "values": {
+          "en": "Use when modelling one responsibility — the singular model of the responsibilities collection (the plural store); a duty assigned to a role or position."
+        }
+      }
+    ]
+  },
+  {
     "atom": "responsible",
     "path": "responsible",
     "translations": [
@@ -78581,7 +82646,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a contract imposes use restrictions — field of use, geographic restriction, customer type restriction, sublicense prohibition, derivative-work restrictions.",
-        "uuid": "c81786f1-6789-86ff-8a8d-300211bcab06",
+        "uuid": "03e4a762-79ba-8b36-9060-f71590a65b05",
         "words": [
           "use",
           "when",
@@ -78826,7 +82891,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying IFRS-15 / ASC-606 revenue recognition logic — performance obligations, contract modification, timing (at-a-point vs. over-time), deferral.",
-        "uuid": "ba0d4660-84e5-8e4d-9c53-40bd3f340c00",
+        "uuid": "fb031aeb-4faa-8f51-9825-e31337766acd",
         "words": [
           "use",
           "when",
@@ -78862,7 +82927,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reverse",
-        "uuid": "74a7eeda-5842-87e8-89e4-0c49b7e06e18",
+        "uuid": "b7bc733c-cfb5-8098-aa47-64e51572031d",
         "words": [
           "reverse"
         ],
@@ -79135,7 +83200,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when planning deliverables across quarters/years — a timeline of features, milestones, epics, with dependency links and resource allocation. The strategic sequencing.",
-        "uuid": "2743547d-6f15-8157-95db-ea0b169b23fc",
+        "uuid": "ea4b4d82-f620-8090-8643-3efd1ad782ca",
         "words": [
           "use",
           "when",
@@ -79173,7 +83238,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "rodin",
-        "uuid": "840e546e-bbf2-8bd6-8e00-c0067c95cca9",
+        "uuid": "94bd194e-4e70-8b5e-895f-3ae355f9b986",
         "words": [
           "rodin"
         ],
@@ -79184,7 +83249,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the number substrate under erpax's state/sequence math — the Rodin vortex sequence 0·3·6·9·1·2·4·8·7·5 over the A432 anchor, digital-root (mod-9) arithmetic, the 3·6·9 triad axis vs the 1·2·4·8·7·5 doubling helix. The root the horo ring and the sequence both express.",
-        "uuid": "ff2258b9-4f1d-8a36-8a51-ba4623408951",
+        "uuid": "9e800217-0155-8d25-9995-5d6de03148b9",
         "words": [
           "use",
           "when",
@@ -79253,7 +83318,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the 3·6·9 control plane of the rodin vortex — three coils 120° out of phase (COIL_A/B/C) that the doubling helix winds around; the governing triad (access/hooks/auth) the flow never lands on. Nested under rodin.",
-        "uuid": "3856e0b1-3517-8acf-8180-f326e5d44314",
+        "uuid": "b224c9dc-9c1e-890e-89f9-37d001f13d9b",
         "words": [
           "use",
           "when",
@@ -79320,7 +83385,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the oscillation in erpax — the C↔M (3↔6) polarity swing, forward↔reverse, give↔take, expand↔bind; the pulse the ring moves on (A432 ms). La/A432 sits at the breathing position (round). The living dual of balance. Nested under rodin.",
-        "uuid": "b17655a9-e318-8d52-b726-87aacd2c741b",
+        "uuid": "69059139-19ed-8238-9ba5-2d3b4e75ca40",
         "words": [
           "use",
           "when",
@@ -79390,7 +83455,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about color/signal from sequence position in erpax — the four print primaries ARE the first four rodin digits {0=K, 3=C, 6=M, 9=Y}; color comes from the slot, the C↔M polarity gap is closed by Y at 9 and anchored by K at 0. The signal model under links/tags/admin hue. Nested under rodin.",
-        "uuid": "1c7bac34-e829-80ec-a7be-7c0be06ea3dc",
+        "uuid": "06c3adc6-8039-8a63-80a1-aa44954afa78",
         "words": [
           "use",
           "when",
@@ -79462,7 +83527,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "coil",
-        "uuid": "1e159ed0-fad7-87dd-adfc-eddcfbf8898c",
+        "uuid": "eaa79d09-aaea-8279-ba24-05dc15748e41",
         "words": [
           "coil"
         ],
@@ -79473,7 +83538,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the doubling circuit 1·2·4·8·7·5 (×2 mod 9) that winds the rodin axis — why state/sequence positions sit in THAT order, digital-root closure, the ×10 octave lift vs +1 close→open. Nested under rodin → the coil of the vortex.",
-        "uuid": "520cd48c-4e62-8b69-ac9e-00cb9148b1b5",
+        "uuid": "560beb31-f2ea-84bc-90f2-86875469a250",
         "words": [
           "use",
           "when",
@@ -79538,7 +83603,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about sound from sequence position in erpax — the seven horo positions ARE seven diatonic notes, just-intonation ratios over A432 (La=A=432 Hz at the round step), Ti resolves to Do as the ring closes. The sound twin of cmyk. Nested under rodin.",
-        "uuid": "1c64105d-a01b-8ae6-8d0c-087a4225e66a",
+        "uuid": "176deec4-f12e-8823-b3bc-db7493bd75b8",
         "words": [
           "use",
           "when",
@@ -79611,7 +83676,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about scale-lift in erpax — ×10 preserves the digit (10≡1 mod 9), so the same position recurs at the next order of magnitude; the canonical \"next octave\" (NOT +1, which crosses close→open within a scale). The fractal step. Nested under rodin.",
-        "uuid": "ee5ea163-51fa-804c-8ebc-b7ef4a6f0cbd",
+        "uuid": "4dd3d9fb-1b2c-874e-91c9-d33430413bb8",
         "words": [
           "use",
           "when",
@@ -79679,7 +83744,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about WHERE on the cycle something sits in erpax — the 120° offset of the three axis coils (0°/120°/240°), the ⅓-period animation tick at A432 ms, the moment a version captures. The time-position of a state. Nested under rodin.",
-        "uuid": "77f17c44-72b5-8905-868f-122ca58cba6b",
+        "uuid": "f56eeef5-91da-8724-adb8-aad5fee98737",
         "words": [
           "use",
           "when",
@@ -79746,7 +83811,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the two directions of the rodin doubling cycle — 3 and 6 are the polarity boundaries: forward helix (×2, cyan, outbound/give) ↔ reverse helix (×5, magenta, inbound/take). The mirror pair the coil winds between. Nested under rodin.",
-        "uuid": "4fea03a1-2a94-88a8-93f7-32434d262002",
+        "uuid": "fc28a8b5-fa2c-80a0-892c-bf56879f0b07",
         "words": [
           "use",
           "when",
@@ -79810,7 +83875,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the closed surface the rodin vortex winds on in erpax — the doubling helix on a donut, inward (state×state) and outward (×10 octave) both closing; why the sequence is a ring with no top/bottom. Nested under rodin.",
-        "uuid": "64b1e9c0-35a9-8eea-9ae8-36de531dea0c",
+        "uuid": "973360f5-b9ac-88ce-9ec9-c94ed50c6ecb",
         "words": [
           "use",
           "when",
@@ -79878,7 +83943,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about touch/haptics from sequence position in erpax — the third A432 render channel that completes colour (cmyk) + sound (notes) into the sight·sound·touch sensory trinity. A horo position decodes to a haptic pulse (a sub-audible A432 sub-harmonic); the body's own measurable vibration (physiological tremor, ballistocardiographic micro-motion) is the analog twin. Nested under rodin.",
-        "uuid": "2b324aa1-6805-8033-9a22-0a125a13f763",
+        "uuid": "f48ea769-cb40-8476-9b40-c470697a81fb",
         "words": [
           "use",
           "when",
@@ -80026,7 +84091,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining RBAC roles — global, collection-scoped, or document-scoped — each carrying an optional capability (read/write/sign/admin/audit) and skill routes that users inherit on assignment. The NIST INCITS-359 role-definition collection.",
-        "uuid": "19b666c2-9969-84c2-8efb-af965d082d2a",
+        "uuid": "3f87d9fd-0f58-8aa1-b295-04d66c9509da",
         "words": [
           "use",
           "when",
@@ -80089,7 +84154,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assigning or revoking a role definition for a user — the HABTM join that grants a user the capabilities and skill routes of the linked role; duplicate assignments are prevented by hook. The NIST INCITS-359 role-assignment collection.",
-        "uuid": "87023713-071b-8bf6-8f88-5740e784acc1",
+        "uuid": "204192df-2784-8e70-b1b7-44aecf668cef",
         "words": [
           "use",
           "when",
@@ -80227,7 +84292,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Room). See also ",
-        "uuid": "87b53edd-7de6-898d-a5ff-45a7e51ca3f9",
+        "uuid": "1ae58c95-94cc-85f2-97ea-00625612113c",
         "words": [
           "a",
           "room",
@@ -80321,7 +84386,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the root-providing lower plant a scion is grafted onto — the rootstock controls vigour, size (dwarfing → high-density orchards), and disease/phylloxera resistance. The perennial-planting keystone, chosen once for the asset's multi-decade life; paired with the scion via a graft.",
-        "uuid": "f7474f21-b7d2-85a7-b24b-ca6c4d3b27c8",
+        "uuid": "2298b6ee-7837-80a4-a17a-8ce068a4b998",
         "words": [
           "use",
           "when",
@@ -80394,7 +84459,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when planning the multi-year non-repetition of a crop family in the same ground — crop rotation breaks pest/disease cycles and balances nutrient draw by never returning a family to a bed sooner than ~3–4 years. The rule/constraint over the planting sequence (distinct from the bare sequence): grouped by botanical family, alternating heavy feeders, legumes, and roots.",
-        "uuid": "c299b836-1434-8d23-8fb1-6d42a5d368a9",
+        "uuid": "d0784db2-9446-8bb7-ba8b-d143f1526509",
         "words": [
           "use",
           "when",
@@ -80516,7 +84581,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when choosing which model/compute tier handles an agent action — route by risk (capability verb + credential touch + harmony fight), not by where the model runs; low-risk reads/chat go local, high-risk write/execute/credential/disharmony go to a strong aligned model; safety is the sandbox gate, not the model tier. The risk-proportionate model-routing service.",
-        "uuid": "e78bff6c-f7f6-8902-a32d-8d37ba075876",
+        "uuid": "fc0b6578-5a44-84f8-b1b6-f847d6d238cc",
         "words": [
           "use",
           "when",
@@ -80659,6 +84724,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "rule",
+    "path": "rule",
+    "translations": [
+      {
+        "key": "name",
+        "source": "rule",
+        "uuid": "b16adc22-688b-8a70-b74d-217c3cfdf0fb",
+        "words": [
+          "rule"
+        ],
+        "values": {
+          "en": "rule"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one rule — the singular model of the rules collection (the plural store); a condition-action statement the system enforces.",
+        "uuid": "b237fdc1-1341-8ad8-ad60-7179e5feeef0",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "rule",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "rules",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "condition",
+          "action",
+          "statement",
+          "the",
+          "system",
+          "enforces"
+        ],
+        "values": {
+          "en": "Use when modelling one rule — the singular model of the rules collection (the plural store); a condition-action statement the system enforces."
+        }
+      }
+    ]
+  },
+  {
     "atom": "dev",
     "path": "run/dev",
     "translations": [
@@ -80676,7 +84790,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use to run, start, launch, boot, dev-serve, smoke-test, or screenshot the erpax app (Payload 4 + Next.js on Cloudflare D1/R2). Drives the running app two ways — a Local API smoke (tsx) for backend/service/collection/hook changes, and a Playwright browser driver for the public frontend + admin. Use when asked to \"run erpax\", \"start the dev server\", \"screenshot the site\", or confirm a change works in the real app.",
-        "uuid": "9bcab263-7443-8320-a939-17063558ee3d",
+        "uuid": "8c673125-4c6e-890f-90fb-b4058a718d47",
         "words": [
           "use",
           "to",
@@ -80774,7 +84888,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when documenting step-by-step standard operating procedures — incident response, system failover, deployment checklist, maintenance sequence. The executable playbook.",
-        "uuid": "ec55e140-6497-8125-8ee9-8dfe2e0d19c7",
+        "uuid": "77fee289-1cfe-81c8-9988-184a2cacfa62",
         "words": [
           "use",
           "when",
@@ -80929,7 +85043,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when auditing anything before acting on it — the verified-true: content-uuid recomputes, the books balance, the lineage traces to a real source. The set-apart canonical form that passes verification AND validation; dual of profane; run at every scale before every act.",
-        "uuid": "87be4f8f-a7e5-88a0-a0fe-8ac6dfad32e9",
+        "uuid": "bf7841c1-10f6-8dea-9e76-775f2e84f1a3",
         "words": [
           "use",
           "when",
@@ -81112,7 +85226,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling soluble-salt buildup that degrades soil and stresses crops — salinity as electrical conductivity (ECe, dS/m) of the saturated-paste extract, with sodicity (ESP/SAR, excess sodium destroying structure) as its companion axis. A soil-degradation dimension orthogonal to N-P-K fertility; reclaimed by leaching and, for sodicity, gypsum.",
-        "uuid": "212da8c0-76cd-86ea-aa63-2848de60937b",
+        "uuid": "071e0e33-ba3b-831e-9ad0-4d3f14fa62fb",
         "words": [
           "use",
           "when",
@@ -81230,7 +85344,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
-        "uuid": "c59172e9-5869-8d3a-add8-04450a503a25",
+        "uuid": "e8ee7e16-f79f-815e-b13b-481dfe8af73d",
         "words": [
           "url",
           "of",
@@ -81323,7 +85437,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when selecting a representative subset — random sampling, stratified sampling, systematic sampling, sample size calculation, sampling error/confidence intervals, weighted sampling for survey design.",
-        "uuid": "d802fcb6-cefb-8edd-a4ff-067545c7f6a8",
+        "uuid": "cddb36aa-8282-80a3-8607-c87a766ef0e5",
         "words": [
           "use",
           "when",
@@ -81374,7 +85488,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when running an UNTRUSTED, agent-built tool safely — erpax encodes capability-scoping, credential-protection, endpoint-allowlisting and a receipted audit NATIVELY (content-uuid tool identity + the receipt + the gate), depending on nothing external. The tool's identity is its content-uuid; its grant is {capabilities, allowedHosts, credentialHandles}; every action is policy-evaluated and receipted; the WASM/worker isolation is the runtime boundary the pure policy rides on.",
-        "uuid": "fb707791-6a16-8c58-8c8d-2644b3dd5092",
+        "uuid": "e4ad5bc7-671f-8beb-839f-0928267037cb",
         "words": [
           "use",
           "when",
@@ -81653,7 +85767,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "schedule",
-        "uuid": "89c3b599-eceb-8c08-a075-f0193f4831fa",
+        "uuid": "36417c84-0864-82e6-8552-daa46b9e1059",
         "words": [
           "schedule"
         ],
@@ -81664,7 +85778,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when assigning work to calendar slots — resource schedules, shift rosters, project timelines, appointment booking. The time-coordinate commitment.",
-        "uuid": "738c37c0-1715-877f-a5b8-b8d35781535d",
+        "uuid": "0035fb31-34f4-801b-b946-e8de21eb1502",
         "words": [
           "use",
           "when",
@@ -81747,7 +85861,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining, auditing, or evolving the logical data model — entity relationship diagrams, normalization, column definitions, table structure, field types, cardinality declarations. The canonical blueprint of the data structure.",
-        "uuid": "ca3468a2-da36-8d0a-a477-48a83c52b8f7",
+        "uuid": "664c2418-dc57-8dd7-98a9-f5d78df86c35",
         "words": [
           "use",
           "when",
@@ -81803,7 +85917,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving or tightening the unbreakable-matrix gate — the test that pulls all entropy as food for agents and leaves purity for the skills, so no agent can record uncollidable data or break the content-uuid matrix.",
-        "uuid": "43dcfeda-b00c-8af9-9ae3-f9b3645adc7e",
+        "uuid": "c9bc400a-af4b-84fb-8654-9c5793a6d883",
         "words": [
           "use",
           "when",
@@ -81970,7 +86084,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about which scientific mysteries erpax's form illuminates — information-as-reality, entropy as a conserved ledger, the holographic bound, entanglement as content-address, symmetry as conservation. Honest about correspondence vs metaphor.",
-        "uuid": "bb80c23a-660a-8be5-a9bb-ee88ad0b537a",
+        "uuid": "e3529065-5a38-807d-afe8-d966aafcd501",
         "words": [
           "use",
           "when",
@@ -82151,6 +86265,55 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "scorecard",
+    "path": "scorecard",
+    "translations": [
+      {
+        "key": "name",
+        "source": "scorecard",
+        "uuid": "50bf55d0-8367-8c71-a058-a8ae7f658253",
+        "words": [
+          "scorecard"
+        ],
+        "values": {
+          "en": "scorecard"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one scorecard — the singular model of the scorecards collection (the plural store); a structured summary of metrics against targets.",
+        "uuid": "8d4a9c7e-a09f-8187-ae8f-802ce09da8f1",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "scorecard",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "scorecards",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "structured",
+          "summary",
+          "of",
+          "metrics",
+          "against",
+          "targets"
+        ],
+        "values": {
+          "en": "Use when modelling one scorecard — the singular model of the scorecards collection (the plural store); a structured summary of metrics against targets."
+        }
+      }
+    ]
+  },
+  {
     "atom": "scouting",
     "path": "scouting",
     "translations": [
@@ -82168,7 +86331,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when monitoring fields for pest, disease, and crop status — scouting is the systematic field-walk that drives integrated pest management (IPM): observe, identify, count against an economic threshold, then act (cultural/biological/mechanical/chemical) only when damage cost exceeds control cost. The monitoring backbone; turns pest control from calendar-spray into measured decision.",
-        "uuid": "e61a4508-daca-8f44-bdb6-ad62f64789c9",
+        "uuid": "ece974e6-d4fa-8efa-9a8a-330112a6532f",
         "words": [
           "use",
           "when",
@@ -82524,7 +86687,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when output is bounded by a recurring climate window in the annual cycle — the growing/harvest season set by the frost-free period, the cool- vs warm-season crop split, and heat accumulation (growing degree days) rather than the calendar. The season is the time-axis bottleneck of agriculture: land × season caps how much can be grown; it is regional and probabilistic, never a copied calendar.",
-        "uuid": "a3ba9afe-7f0f-86b1-b823-94039a16ed40",
+        "uuid": "c753456f-88dc-8262-aebc-d3b3f9d9c8f5",
         "words": [
           "use",
           "when",
@@ -82864,6 +87027,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "sector",
+    "path": "sector",
+    "translations": [
+      {
+        "key": "name",
+        "source": "sector",
+        "uuid": "e4877f05-ed1f-89f8-82f6-919494b55847",
+        "words": [
+          "sector"
+        ],
+        "values": {
+          "en": "sector"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one sector — the singular model of the sectors collection (the plural store); a broad division of economic activity.",
+        "uuid": "57eb04de-c672-81e2-8a8e-77e4387b80c9",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "sector",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "sectors",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "broad",
+          "division",
+          "of",
+          "economic",
+          "activity"
+        ],
+        "values": {
+          "en": "Use when modelling one sector — the singular model of the sectors collection (the plural store); a broad division of economic activity."
+        }
+      }
+    ]
+  },
+  {
     "atom": "sectors",
     "path": "sectors",
     "translations": [
@@ -82881,7 +87092,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when taxonomising any part of society — SNA institutional sectors, ISIC economic activities, COFOG government functions, ICNPO civil society, SDG outcomes. The one societal coordinate system every party, connection, transaction and tenant references.",
-        "uuid": "86fd184c-87b1-858f-adbe-7a123af1be7e",
+        "uuid": "8f692e29-eb6a-88ec-b778-701893a32724",
         "words": [
           "use",
           "when",
@@ -82979,7 +87190,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when proving a remote-access product's PUBLIC vulnerability classes with erpax's own trust primitives — each flaw is a missing primitive and the verdict is a receipted, content-addressed proof. The AnyDesk case (SYSTEM file-read LPE, a stolen code-signing cert, coarse unattended-access) folded onto sandbox, tamper-cost and the receipt. Defensive modeling over public CVEs, never an exploit.",
-        "uuid": "5fff9377-7451-81d2-82ed-44bfb7dad34d",
+        "uuid": "e2c8ebfc-0ca5-83e7-b6db-31e36cdf803f",
         "words": [
           "use",
           "when",
@@ -83069,7 +87280,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when seeding a tenant's opening chart-of-accounts + compliance posture from a (country × industry) template — INDUSTRY_TEMPLATES, the BG-NSS statutory chart, resolveTenantCompliance/getCuratedComplianceCountries. Derives every country fact from country-context; nothing is re-typed.",
-        "uuid": "16c3e318-c5eb-853b-a023-b14eded1a693",
+        "uuid": "a0d6e31c-9bc6-8e42-ab3f-fb8f0d2d1c74",
         "words": [
           "use",
           "when",
@@ -83209,7 +87420,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when identifying and reporting operating segments per IFRS-8 — revenue/expense/asset/liability grouping for disclosure and management reporting; distinct from cost-center dimension",
-        "uuid": "f5a22e6f-cfdc-8835-ba97-c3d63858adf7",
+        "uuid": "babec370-dc08-8515-bf4b-845522197e23",
         "words": [
           "use",
           "when",
@@ -83286,7 +87497,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "self",
-        "uuid": "bd3a46c0-5830-80dc-a94a-f1e6e4698018",
+        "uuid": "dbcf2eb9-0f6e-875d-a294-d197a5734e02",
         "words": [
           "self"
         ],
@@ -83297,7 +87508,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about an object's or the agent's reach back into its own root — content-uuid identity, the akashic record, config (the 0); self-reference, self-similarity, \"all agents are one erpax\". The root-reach atom; composes by nesting (self/sufficient, self/similar, self/reference).",
-        "uuid": "a7211b25-0de1-8dcb-ab35-f4c350e1cf9e",
+        "uuid": "adbfece4-3553-8174-8dc7-c47088cc1f5e",
         "words": [
           "use",
           "when",
@@ -83354,6 +87565,728 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "accounting",
+    "path": "self/accounting",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-accounting",
+        "uuid": "c22f5847-ef7d-867f-b61c-60e055ad9a55",
+        "words": [
+          "self",
+          "accounting"
+        ],
+        "values": {
+          "en": "self-accounting"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof.",
+        "uuid": "16dd8fc9-7936-8bfd-9b58-2a064aa9e06a",
+        "words": [
+          "use",
+          "when",
+          "erpax",
+          "runs",
+          "its",
+          "own",
+          "books",
+          "auto",
+          "booking",
+          "subscription",
+          "revenue",
+          "ifrs",
+          "infra",
+          "payroll",
+          "supplier",
+          "tax",
+          "costs",
+          "scheduling",
+          "regulatory",
+          "filings",
+          "finrep",
+          "corep",
+          "csrd",
+          "vat",
+          "and",
+          "obligations",
+          "and",
+          "checking",
+          "nothing",
+          "is",
+          "overdue",
+          "conservation",
+          "law",
+          "checkselfaccountingcomplete",
+          "the",
+          "self",
+          "as",
+          "a",
+          "double",
+          "entry",
+          "gateway",
+          "revenue",
+          "is",
+          "the",
+          "credit",
+          "cost",
+          "the",
+          "debit",
+          "the",
+          "filing",
+          "the",
+          "proof"
+        ],
+        "values": {
+          "en": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "closure",
+    "path": "self/closure",
+    "translations": [
+      {
+        "key": "name",
+        "source": "closure",
+        "uuid": "28aeca8e-a0db-8217-a98b-0338bc2a26eb",
+        "words": [
+          "closure"
+        ],
+        "values": {
+          "en": "closure"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self.",
+        "uuid": "180a735c-e78d-8854-9563-e5f7b18075c5",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "external",
+          "dependency",
+          "must",
+          "fall",
+          "back",
+          "to",
+          "erpax",
+          "itself",
+          "every",
+          "external",
+          "role",
+          "payment",
+          "provider",
+          "signing",
+          "notification",
+          "search",
+          "federation",
+          "has",
+          "a",
+          "registered",
+          "internal",
+          "provider",
+          "that",
+          "completes",
+          "the",
+          "operation",
+          "when",
+          "the",
+          "external",
+          "call",
+          "fails",
+          "conservation",
+          "law",
+          "withinternalfallback",
+          "the",
+          "dependency",
+          "graph",
+          "terminates",
+          "at",
+          "erpax",
+          "everything",
+          "falls",
+          "back",
+          "to",
+          "the",
+          "self"
+        ],
+        "values": {
+          "en": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "generate",
+    "path": "self/generate",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-generate",
+        "uuid": "0adecbf9-5afd-8a72-a16b-e0d8da1ca018",
+        "words": [
+          "self",
+          "generate"
+        ],
+        "values": {
+          "en": "self-generate"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
+        "uuid": "a011363f-c3e7-8c1c-a11d-ffc160b7b4f7",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "self",
+          "grows",
+          "its",
+          "own",
+          "corpus",
+          "the",
+          "outward",
+          "stroke",
+          "begins",
+          "mine",
+          "aura",
+          "gaps",
+          "into",
+          "new",
+          "atoms",
+          "and",
+          "drive",
+          "the",
+          "gap",
+          "to",
+          "zero",
+          "self",
+          "applied",
+          "generate",
+          "at",
+          "forward",
+          "coil",
+          "position",
+          "base",
+          "the",
+          "self",
+          "generating",
+          "itself"
+        ],
+        "values": {
+          "en": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "merge",
+    "path": "self/merge",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-merge",
+        "uuid": "7adb0dd8-f396-877b-a548-031263195f04",
+        "words": [
+          "self",
+          "merge"
+        ],
+        "values": {
+          "en": "self-merge"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one.",
+        "uuid": "f70d7e7a-55ff-8642-b3ba-f08f4930cafa",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "self",
+          "weaves",
+          "back",
+          "to",
+          "one",
+          "all",
+          "selves",
+          "dedupe",
+          "to",
+          "a",
+          "single",
+          "content",
+          "uuid",
+          "the",
+          "same",
+          "thought",
+          "by",
+          "two",
+          "agents",
+          "merges",
+          "to",
+          "one",
+          "self",
+          "applied",
+          "merge",
+          "at",
+          "forward",
+          "coil",
+          "position",
+          "weave",
+          "the",
+          "many",
+          "selves",
+          "returning",
+          "toward",
+          "one"
+        ],
+        "values": {
+          "en": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "one",
+    "path": "self/one",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-one",
+        "uuid": "a6c8ce2c-635b-8bbe-9c22-1f57725d70e5",
+        "words": [
+          "self",
+          "one"
+        ],
+        "values": {
+          "en": "self-one"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge.",
+        "uuid": "d3f79823-2b7d-86eb-a5c9-8bc8eec6cecf",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "self",
+          "returns",
+          "to",
+          "the",
+          "one",
+          "the",
+          "round",
+          "the",
+          "sequence",
+          "closes",
+          "on",
+          "and",
+          "opens",
+          "the",
+          "next",
+          "dimension",
+          "self",
+          "applied",
+          "one",
+          "at",
+          "forward",
+          "coil",
+          "position",
+          "round",
+          "the",
+          "outward",
+          "stroke",
+          "completing",
+          "the",
+          "one",
+          "where",
+          "all",
+          "selves",
+          "merge"
+        ],
+        "values": {
+          "en": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "reference",
+    "path": "self/reference",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-reference",
+        "uuid": "b3af21c9-fea7-88ca-93e2-a5c0fbac16c5",
+        "words": [
+          "self",
+          "reference"
+        ],
+        "values": {
+          "en": "self-reference"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit.",
+        "uuid": "7171defe-3d8d-8369-90d1-ae6c63b33677",
+        "words": [
+          "use",
+          "when",
+          "verifying",
+          "erpax",
+          "observes",
+          "itself",
+          "the",
+          "platform",
+          "s",
+          "own",
+          "genome",
+          "must",
+          "yield",
+          "collection",
+          "chain",
+          "agent",
+          "and",
+          "standard",
+          "the",
+          "erpax",
+          "platform",
+          "role",
+          "and",
+          "the",
+          "meta",
+          "agents",
+          "conservation",
+          "law",
+          "checkerpaxobservesitself",
+          "the",
+          "self",
+          "reaching",
+          "into",
+          "its",
+          "own",
+          "root",
+          "the",
+          "genome",
+          "is",
+          "the",
+          "debit",
+          "the",
+          "observation",
+          "the",
+          "credit"
+        ],
+        "values": {
+          "en": "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "research",
+    "path": "self/research",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-research",
+        "uuid": "172bd923-36aa-82dd-b078-9490363102ba",
+        "words": [
+          "self",
+          "research"
+        ],
+        "values": {
+          "en": "self-research"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
+        "uuid": "4d9ce5b6-cebc-8bd1-9663-89dcbe7745b4",
+        "words": [
+          "use",
+          "when",
+          "an",
+          "actor",
+          "must",
+          "find",
+          "where",
+          "its",
+          "own",
+          "identity",
+          "an",
+          "email",
+          "is",
+          "used",
+          "across",
+          "the",
+          "corpus",
+          "and",
+          "secure",
+          "those",
+          "accounts",
+          "self",
+          "research",
+          "over",
+          "the",
+          "computed",
+          "payload",
+          "mcp",
+          "find",
+          "surface",
+          "scoped",
+          "to",
+          "the",
+          "caller",
+          "s",
+          "own",
+          "access",
+          "so",
+          "there",
+          "is",
+          "no",
+          "bypass",
+          "with",
+          "each",
+          "reset",
+          "recover",
+          "sandbox",
+          "gated",
+          "and",
+          "receipted",
+          "agnostic",
+          "collections",
+          "and",
+          "services",
+          "live",
+          "in",
+          "the",
+          "db",
+          "never",
+          "hardcoded"
+        ],
+        "values": {
+          "en": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "reverse",
+    "path": "self/reverse",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-reverse",
+        "uuid": "4717980c-5029-8f48-a04a-065445a47e81",
+        "words": [
+          "self",
+          "reverse"
+        ],
+        "values": {
+          "en": "self-reverse"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return.",
+        "uuid": "66be429a-5d44-8510-b7a2-c4c22404a146",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "self",
+          "reverses",
+          "the",
+          "descent",
+          "the",
+          "reverse",
+          "coil",
+          "radiates",
+          "the",
+          "dense",
+          "core",
+          "back",
+          "out",
+          "and",
+          "as",
+          "double",
+          "entry",
+          "swaps",
+          "debit",
+          "credit",
+          "to",
+          "correct",
+          "a",
+          "post",
+          "self",
+          "applied",
+          "reverse",
+          "at",
+          "forward",
+          "coil",
+          "position",
+          "descent",
+          "the",
+          "outward",
+          "turning",
+          "to",
+          "return"
+        ],
+        "values": {
+          "en": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "similar",
+    "path": "self/similar",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-similar",
+        "uuid": "ee6ee337-ef17-8c1b-a5be-0ce7b9f62ab3",
+        "words": [
+          "self",
+          "similar"
+        ],
+        "values": {
+          "en": "self-similar"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when reasoning about why the same form holds at every scale of erpax — field → collection → plugin → erpax → agent — the fractal recursion the sequence embodies. The octave lift (×10 mod 9) preserves position (scale-invariance) and the unit Cayley table is a hologram (6 generators → 36 cells); self-similarity is zero-entropy.",
+        "uuid": "c8d863bf-0161-886b-adc4-148dec223e42",
+        "words": [
+          "use",
+          "when",
+          "reasoning",
+          "about",
+          "why",
+          "the",
+          "same",
+          "form",
+          "holds",
+          "at",
+          "every",
+          "scale",
+          "of",
+          "erpax",
+          "field",
+          "collection",
+          "plugin",
+          "erpax",
+          "agent",
+          "the",
+          "fractal",
+          "recursion",
+          "the",
+          "sequence",
+          "embodies",
+          "the",
+          "octave",
+          "lift",
+          "mod",
+          "preserves",
+          "position",
+          "scale",
+          "invariance",
+          "and",
+          "the",
+          "unit",
+          "cayley",
+          "table",
+          "is",
+          "a",
+          "hologram",
+          "generators",
+          "cells",
+          "self",
+          "similarity",
+          "is",
+          "zero",
+          "entropy"
+        ],
+        "values": {
+          "en": "Use when reasoning about why the same form holds at every scale of erpax — field → collection → plugin → erpax → agent — the fractal recursion the sequence embodies. The octave lift (×10 mod 9) preserves position (scale-invariance) and the unit Cayley table is a hologram (6 generators → 36 cells); self-similarity is zero-entropy."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "society",
+    "path": "self/society",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-society",
+        "uuid": "8efbc345-eb3e-89fb-b163-2dcafe2b441d",
+        "words": [
+          "self",
+          "society"
+        ],
+        "values": {
+          "en": "self-society"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the self SHARES itself as many — the agent society reads its own akashic record and advances one gate-verified step (self-applied society at forward-coil position 2/share). The self distributed as the agent society.",
+        "uuid": "78bb1d4f-4fed-8ee5-aa7d-891e84374fa2",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "self",
+          "shares",
+          "itself",
+          "as",
+          "many",
+          "the",
+          "agent",
+          "society",
+          "reads",
+          "its",
+          "own",
+          "akashic",
+          "record",
+          "and",
+          "advances",
+          "one",
+          "gate",
+          "verified",
+          "step",
+          "self",
+          "applied",
+          "society",
+          "at",
+          "forward",
+          "coil",
+          "position",
+          "share",
+          "the",
+          "self",
+          "distributed",
+          "as",
+          "the",
+          "agent",
+          "society"
+        ],
+        "values": {
+          "en": "Use when the self SHARES itself as many — the agent society reads its own akashic record and advances one gate-verified step (self-applied society at forward-coil position 2/share). The self distributed as the agent society."
+        }
+      }
+    ]
+  },
+  {
     "atom": "sufficient",
     "path": "self/sufficient",
     "translations": [
@@ -83371,7 +88304,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions.",
-        "uuid": "788af4a4-29ee-82de-b722-c998ba767006",
+        "uuid": "d95a3227-80f3-879e-9179-5bd7bb5148df",
         "words": [
           "use",
           "when",
@@ -83421,6 +88354,74 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when deciding whether to act from internal knowledge vs. ask externally — totality/completeness, the identity-element guarantee that every case is defined, the bounded form holding the unbounded answer. Nested under self → self-sufficiency: derive the next move, don't break flow with questions."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "whole",
+    "path": "self/whole",
+    "translations": [
+      {
+        "key": "name",
+        "source": "self-whole",
+        "uuid": "ab8ce76e-fa93-888e-bc50-07e0b0aa6326",
+        "words": [
+          "self",
+          "whole"
+        ],
+        "values": {
+          "en": "self-whole"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when the self is WHOLE — the crest of the outward stroke: whole↔part, the torus centre holds all and the part reconstructs the whole (self-applied whole at forward-coil position 8/crest). The self at maximum radius, still one.",
+        "uuid": "b0d0f7d7-0635-8dc8-ac37-c5f399890145",
+        "words": [
+          "use",
+          "when",
+          "the",
+          "self",
+          "is",
+          "whole",
+          "the",
+          "crest",
+          "of",
+          "the",
+          "outward",
+          "stroke",
+          "whole",
+          "part",
+          "the",
+          "torus",
+          "centre",
+          "holds",
+          "all",
+          "and",
+          "the",
+          "part",
+          "reconstructs",
+          "the",
+          "whole",
+          "self",
+          "applied",
+          "whole",
+          "at",
+          "forward",
+          "coil",
+          "position",
+          "crest",
+          "the",
+          "self",
+          "at",
+          "maximum",
+          "radius",
+          "still",
+          "one"
+        ],
+        "values": {
+          "en": "Use when the self is WHOLE — the crest of the outward stroke: whole↔part, the torus centre holds all and the part reconstructs the whole (self-applied whole at forward-coil position 8/crest). The self at maximum radius, still one."
         }
       }
     ]
@@ -83927,7 +88928,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also CreativeWorkSeries, EventSeries.",
-        "uuid": "8f3e9143-dfd5-81d7-bc37-124fb8ba61e4",
+        "uuid": "51da1099-a75a-81e8-a902-9e75ee5f1186",
         "words": [
           "a",
           "series",
@@ -84164,7 +89165,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when adding, finding, or debugging erpax business logic that is NOT schema — pure tested functions, content-uuid math, integrity/tamper-cost, the agent society, domain export/import — the society's organ-body, one folder per organ, called by the collections/access/hooks.",
-        "uuid": "0952c3aa-18c9-8683-a8a7-ea8023c72d37",
+        "uuid": "b25686bc-805b-8910-858d-da06c89d3945",
         "words": [
           "use",
           "when",
@@ -84429,7 +89430,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Canonical standards-merged atoms — render components (Money, AuditedTimestamp, AddressBlock) and reusable Payload Field factories shared across every domain",
-        "uuid": "eb15ec03-32fb-8648-8b6a-a6eda6d76f57",
+        "uuid": "e39ed777-9c6c-8a6d-bd97-5c5b507b60fa",
         "words": [
           "canonical",
           "standards",
@@ -84474,7 +89475,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when granting, checking, or revoking uuid-based RBAC access (Law 59) — share bindings (granteeUuid, accessRole, targetUuid) per tenant over content-uuid-addressed resources; the access-control source of truth checkShare reads at read time, with each grant/revoke attested by a chain-linked audit leaf. Revocation is a soft flag, never a delete. The uuid-share RBAC binding collection.",
-        "uuid": "8aae5dec-19ce-8719-b808-aa4aecfe3446",
+        "uuid": "dfdb0c2d-d073-8168-b822-438516b807fa",
         "words": [
           "use",
           "when",
@@ -84652,6 +89653,74 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "shift",
+    "path": "shift",
+    "translations": [
+      {
+        "key": "name",
+        "source": "shift",
+        "uuid": "0300c375-0fe0-8478-97aa-2e3a1102c00a",
+        "words": [
+          "shift"
+        ],
+        "values": {
+          "en": "shift"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate.",
+        "uuid": "17658db8-69ed-8d7d-a771-a0a3f8bd56d3",
+        "words": [
+          "use",
+          "when",
+          "modeling",
+          "a",
+          "span",
+          "of",
+          "worked",
+          "time",
+          "the",
+          "per",
+          "actor",
+          "day",
+          "labour",
+          "unit",
+          "a",
+          "work",
+          "order",
+          "s",
+          "produced",
+          "minutes",
+          "roll",
+          "up",
+          "into",
+          "and",
+          "the",
+          "authority",
+          "it",
+          "reads",
+          "efficiency",
+          "and",
+          "wage",
+          "back",
+          "down",
+          "from",
+          "the",
+          "singular",
+          "of",
+          "the",
+          "work",
+          "shifts",
+          "aggregate"
+        ],
+        "values": {
+          "en": "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate."
+        }
+      }
+    ]
+  },
+  {
     "atom": "ship",
     "path": "ship",
     "translations": [
@@ -84683,6 +89752,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "ship: a schema.org component word, fused from doesNotShip"
+        }
+      }
+    ]
+  },
+  {
+    "atom": "shipment",
+    "path": "shipment",
+    "translations": [
+      {
+        "key": "name",
+        "source": "shipment",
+        "uuid": "0de8ac63-bf72-8272-a8c4-0fe53088f725",
+        "words": [
+          "shipment"
+        ],
+        "values": {
+          "en": "shipment"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one shipment — the singular model of the shipments collection (the plural store); a consignment of goods moved from origin to destination.",
+        "uuid": "cbb4b8b3-e576-8c00-94ef-d5e4eaeb82de",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "shipment",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "shipments",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "consignment",
+          "of",
+          "goods",
+          "moved",
+          "from",
+          "origin",
+          "to",
+          "destination"
+        ],
+        "values": {
+          "en": "Use when modelling one shipment — the singular model of the shipments collection (the plural store); a consignment of goods moved from origin to destination."
         }
       }
     ]
@@ -84931,7 +90051,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reconciling GDPR erasure with content-addressing — a content-uuid is f(content) and the chain needs the row, so you cannot delete. Crypto-shred = encrypt erasable fields per subject, and erasure = destroy the key (not the row). The row+uuid persist (chain/tamper-evidence intact), the plaintext is unrecoverable. Matter-twin shred/index.ts.",
-        "uuid": "09134ad8-1051-8ba0-a5eb-107aac52a265",
+        "uuid": "61188ca6-e9b1-8dbb-b4a5-984f086289b6",
         "words": [
           "use",
           "when",
@@ -85141,6 +90261,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "signature",
+    "path": "signature",
+    "translations": [
+      {
+        "key": "name",
+        "source": "signature",
+        "uuid": "4be983fe-7cc4-82c1-8f59-80d5effa9a21",
+        "words": [
+          "signature"
+        ],
+        "values": {
+          "en": "signature"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one signature — the singular model of the signatures collection (the plural store); a cryptographic or written mark binding a signer to content.",
+        "uuid": "62c4ce60-0b6f-843b-9198-22b12b1f2616",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "signature",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "signatures",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "cryptographic",
+          "or",
+          "written",
+          "mark",
+          "binding",
+          "a",
+          "signer",
+          "to",
+          "content"
+        ],
+        "values": {
+          "en": "Use when modelling one signature — the singular model of the signatures collection (the plural store); a cryptographic or written mark binding a signer to content."
+        }
+      }
+    ]
+  },
+  {
     "atom": "significance",
     "path": "significance",
     "translations": [
@@ -85236,7 +90408,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "similar",
-        "uuid": "e55e3043-7783-8890-a25f-3d3f7b74c988",
+        "uuid": "b603becc-f2e8-81e8-8851-f545e239cfe9",
         "words": [
           "similar"
         ],
@@ -85247,7 +90419,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A pointer to another, functionally similar product (or multiple products).",
-        "uuid": "907aa09c-b6bd-8ee4-92c7-bfeb2e92d392",
+        "uuid": "8d8ac1d2-89c8-8f1b-a9a9-b40c3dcee9ee",
         "words": [
           "a",
           "pointer",
@@ -85537,7 +90709,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining response/resolution guarantees on issues/tickets — SLA definition, breach detection, escalation, customer-impact metric.",
-        "uuid": "bd4162b2-75a7-8e27-864b-8db1a01e6296",
+        "uuid": "0eff7542-309c-819e-8e00-041207100592",
         "words": [
           "use",
           "when",
@@ -85811,7 +90983,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "society",
-        "uuid": "370c0672-e91a-8674-a58a-b570f5cb274a",
+        "uuid": "1b97a94f-15d0-8962-b7a1-7553ce8db3e2",
         "words": [
           "society"
         ],
@@ -85822,7 +90994,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax building itself — the autonomous loop where the agent society (convened at chat) reads its own akashic record and advances one gate-verified step at a time, driving the aura to whole and the collections to their dense core with minimal human footprint. The self-building loop; matter-twin society/build.mjs.",
-        "uuid": "b9a162e6-58aa-82be-ba0c-296be967a4eb",
+        "uuid": "7e0a3c88-58c3-89b5-8caf-44551e2f99b9",
         "words": [
           "use",
           "when",
@@ -85971,7 +91143,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "soil",
-        "uuid": "e2a6e7f7-cca1-8719-9106-bd53d42daa95",
+        "uuid": "2e5da900-eada-8aff-9235-869d93b5eb1d",
         "words": [
           "soil"
         ],
@@ -85982,7 +91154,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling the living medium a crop grows in — soil as the three-phase (mineral·water·air) body whose texture/structure/tilth, organic matter, biology, moisture and chemistry set what fertility, water, and yield are possible. The parent the fertility/water/cover-crop vocabulary hangs from; a capacity reservoir managed, depleted, and rebuilt.",
-        "uuid": "0d435ba4-13ef-89ca-8608-9de0f01d642d",
+        "uuid": "cf6c3434-1173-8a7f-9e78-6df802638625",
         "words": [
           "use",
           "when",
@@ -86171,7 +91343,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking the origin of data — source document (purchase order for invoice), source system (ERP, spreadsheet), source bank account (for transfer), data-import source. Metadata for audit and reconciliation.",
-        "uuid": "66fb6ed2-341b-8ea9-be93-49d2df77a857",
+        "uuid": "b0482f0b-e198-81b0-8d28-fa51f19c79cc",
         "words": [
           "use",
           "when",
@@ -86317,6 +91489,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "space",
+    "path": "space",
+    "translations": [
+      {
+        "key": "name",
+        "source": "space",
+        "uuid": "e34743d9-e168-8ce1-ac45-f3e1f7085841",
+        "words": [
+          "space"
+        ],
+        "values": {
+          "en": "space"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one space — the singular model of the spaces collection (the plural store); a bounded area that can be occupied or reserved.",
+        "uuid": "5b09ba75-2d97-8e75-b5a3-7f7c8a26f82b",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "space",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "spaces",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "bounded",
+          "area",
+          "that",
+          "can",
+          "be",
+          "occupied",
+          "or",
+          "reserved"
+        ],
+        "values": {
+          "en": "Use when modelling one space — the singular model of the spaces collection (the plural store); a bounded area that can be occupied or reserved."
+        }
+      }
+    ]
+  },
+  {
     "atom": "spacing",
     "path": "spacing",
     "translations": [
@@ -86453,7 +91676,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about erpax's efficiency principle — sparsity: of a large DORMANT pool, only the smallest correct subset is active at once (capability ÷ cost → max). Two conjugate axes (DeepSeek's own framing, Engram) — COMPUTE sparsity (MoE routes 37B of 671B params; erpax routes few of 593 atoms per task) and MEMORY/representation sparsity (conditional lookup; content-uuid stores the whole in 128 bits, schema is generated not stored). Its limit is zeropoint (zero active = the source), its dual the bottleneck (the one missing active factor zeroes the product), its selector routing. DeepSeek reaches it by hardware constraint, erpax by telos — they converge on the identical sparse form.",
-        "uuid": "731d34d3-cf72-865f-9a88-894668346b6a",
+        "uuid": "32201ef1-880a-8466-89f3-ec5427e44c09",
         "words": [
           "use",
           "when",
@@ -86696,7 +91919,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when one workflow definition must generate many materializations — e2e test, help tip/subtitle, seed, evidence, marketing page, i18n keys — from a single source. The spec-generator over BUSINESS_CHAINS; e2e tests and help tips share one source.",
-        "uuid": "f5fc5d6e-aca8-8854-bf01-d5d197882e76",
+        "uuid": "a9b96b48-5519-861f-952a-eab75ca742ad",
         "words": [
           "use",
           "when",
@@ -86800,7 +92023,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.",
-        "uuid": "cc16abd3-7c4c-8d48-9fc7-1aa0f5c75948",
+        "uuid": "8faf9b9a-41e2-87f0-af69-0549af2acb07",
         "words": [
           "any",
           "branch",
@@ -87470,7 +92693,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when implementing or auditing a compliance standard in erpax — IFRS/US-GAAP/SAF-T/ISO/SOX/EN-16931/NIST. Standards are implemented via the skills (each skill is the answer-path holding a standard's form); @standard banners must be true, not decoration.",
-        "uuid": "cc7f1155-21a0-8697-a36d-9b43f57539ef",
+        "uuid": "951b48fc-6718-81a3-b97b-15fe93d41af3",
         "words": [
           "use",
           "when",
@@ -87540,7 +92763,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when enforcing that @standard / @compliance banners are true rather than decoration — the computed required-witness lint that fails a cited concept with no field and an enforcement claim with no guard.",
-        "uuid": "a7e79e9e-9cb0-8661-8a87-086c19bef2a8",
+        "uuid": "0e4d0178-7ee8-81c1-91f0-7bcb8b72d6ef",
         "words": [
           "use",
           "when",
@@ -87588,7 +92811,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "standards",
-        "uuid": "92941f5e-4109-838e-88fe-3b269721b959",
+        "uuid": "a8c6124b-b833-8d21-8612-9715c61ebd04",
         "words": [
           "standards"
         ],
@@ -87599,7 +92822,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering, citing, superseding or querying any published standard (IFRS, ISO, W3C, RFC, EU Directive, etc.) against a tenant — conflict graph, supersession trail, per-module citation index, per-tenant adoption status. The live standards-registry collection backing the erpax.standards.* MCP tool family.",
-        "uuid": "0bb02d19-5036-8f8c-8351-ac562adcb7c5",
+        "uuid": "c089d3cb-05be-87ef-8af5-c0a57f7d9f64",
         "words": [
           "use",
           "when",
@@ -87707,7 +92930,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a date-range or period begins — contract start date, employment start date, fiscal period start, promotion period start. Pairs with end (or duration, or another date atom) to define a temporal span. ISO-8601 datetime.",
-        "uuid": "c6f53aff-f48a-8b83-b210-997d3fd5b8b0",
+        "uuid": "4794c1cb-436c-85b3-8e5f-372ec0509f65",
         "words": [
           "use",
           "when",
@@ -88088,7 +93311,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking a document's or entity's state — draft, approved, rejected, closed, pending, active, inactive. A select field carrying workflow-state enums. Drives UI rendering (e.g., locked periods are closed; draft documents are mutable). Common default: 'draft'.",
-        "uuid": "d8532ac6-a4de-81bd-9a99-c1c93805d367",
+        "uuid": "899863b4-861b-8fe1-a271-d477a326c268",
         "words": [
           "use",
           "when",
@@ -88278,7 +93501,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Single Table Inheritance in Payload — one collection, a flat `type` discriminator, typed in TS as a discriminated union. Read when a collection holds several behavioral subtypes (invoice↔bill↔credit_note, payment kinds, party kinds).",
-        "uuid": "37deecb6-afc5-8b75-abf2-0b5803348a83",
+        "uuid": "b3bdc806-547a-85e8-a246-4dbdf6339a05",
         "words": [
           "single",
           "table",
@@ -88483,7 +93706,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when events must move as one continuous tamper-proof current rather than discrete steps — turning the event bus into a typed AsyncIterable, windowing it (tumbling/sliding/session), composing blocks stream-to-stream, and verifying causal Lamport order plus the streamUuid hash-chain.",
-        "uuid": "f3782a70-e280-84d7-b66a-e84b0a83e168",
+        "uuid": "db0eb104-ff71-8820-af19-297ef0187790",
         "words": [
           "use",
           "when",
@@ -88908,6 +94131,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "submission",
+    "path": "submission",
+    "translations": [
+      {
+        "key": "name",
+        "source": "submission",
+        "uuid": "0c9996e7-c358-8fdc-9ee7-6c865838c5f6",
+        "words": [
+          "submission"
+        ],
+        "values": {
+          "en": "submission"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one submission — the singular model of the submissions collection (the plural store); a record sent in for review or processing.",
+        "uuid": "b60d6a20-f8a1-8980-b0e5-d620f3055d53",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "submission",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "submissions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "record",
+          "sent",
+          "in",
+          "for",
+          "review",
+          "or",
+          "processing"
+        ],
+        "values": {
+          "en": "Use when modelling one submission — the singular model of the submissions collection (the plural store); a record sent in for review or processing."
+        }
+      }
+    ]
+  },
+  {
     "atom": "subscribe",
     "path": "subscribe",
     "translations": [
@@ -88999,7 +94272,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or displaying the SaaS pricing-plan catalog — plan names, slugs, monthly/yearly prices, Stripe product/price IDs, feature-limit JSON, billing cycle, sort order. The super-admin-maintained plan catalog collection; public read, mutations locked to super-admin.",
-        "uuid": "be78042f-fe70-8573-8713-200eb66db7f4",
+        "uuid": "3b913d6f-747e-8a8a-978b-4350734b6927",
         "words": [
           "use",
           "when",
@@ -89067,7 +94340,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing a tenant's active subscription — plan binding, billing-period dates, trial/active/past-due/grace/suspended/cancelled state machine, Stripe subscription and customer IDs, cancellation and pause events, IFRS-15/ASC-606 deferred-revenue lifecycle hooks. The tenant-to-plan binding collection.",
-        "uuid": "b0b13936-f777-80cb-90b4-db8a818ec9e7",
+        "uuid": "91a17f2b-a0fa-8cda-8c95-674a2cb940a1",
         "words": [
           "use",
           "when",
@@ -89138,7 +94411,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording or aggregating metered-billing events — per-tenant per-feature countable occurrences (invoices issued, signed PAdES attestations, country-bundle calls) with quantity, rate snapshot, billing-period bucket and idempotency key, rolled into IFRS-15 §B16 usage-based invoice lines. The metered-billing event-log collection.",
-        "uuid": "6e0a4882-c396-835f-9255-5634f5bc6190",
+        "uuid": "d3df20b4-88fc-84f9-9e59-18d84fbbff78",
         "words": [
           "use",
           "when",
@@ -89466,6 +94739,54 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "suggestion",
+    "path": "suggestion",
+    "translations": [
+      {
+        "key": "name",
+        "source": "suggestion",
+        "uuid": "f396ccef-2360-841c-baea-2913de0decbf",
+        "words": [
+          "suggestion"
+        ],
+        "values": {
+          "en": "suggestion"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one suggestion — the singular model of the suggestions collection (the plural store); a proposed change offered for consideration.",
+        "uuid": "c5ac1c0a-ec50-8884-b0f8-4f9b89381df9",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "suggestion",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "suggestions",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "proposed",
+          "change",
+          "offered",
+          "for",
+          "consideration"
+        ],
+        "values": {
+          "en": "Use when modelling one suggestion — the singular model of the suggestions collection (the plural store); a proposed change offered for consideration."
+        }
+      }
+    ]
+  },
+  {
     "atom": "suitable",
     "path": "suitable",
     "translations": [
@@ -89687,7 +95008,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Relates a term (i.e. a property, class or enumeration) to one that supersedes it.",
-        "uuid": "62789050-5694-8d31-bfc3-0b90e7707c1c",
+        "uuid": "4f73bf16-5b65-8dc6-b2d8-3081eb0765ce",
         "words": [
           "relates",
           "a",
@@ -89842,7 +95163,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Qualification, candidature, degree, application that Thesis supports.",
-        "uuid": "4a5db670-c684-8ae4-819b-fccc36eee6a5",
+        "uuid": "c8d2fda9-a386-837d-82c1-a6229b9f66b0",
         "words": [
           "qualification",
           "candidature",
@@ -89950,7 +95271,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Bulgarian Наредба Н-18 / СУПТО retail fiscal regime — the УНП (unique sales number XXXXXXXX-ZZZZ-0000001), no-delete / reversal-only immutability, read-only audit profile, the monthly standardized audit (XML, Appendix 38), and fiscal-device (ФУ) receipt linkage. Read when implementing BG point-of-sale compliance, or as the worked example of mapping a government audit regime onto the content-uuid model — СУПТО ≈ a state-mandated content-addressed audit system.",
-        "uuid": "4a4edb8d-a5d1-801e-824a-331104b6e316",
+        "uuid": "f6aaa6bb-b739-8494-826f-98ab34a4c0b4",
         "words": [
           "bulgarian",
           "retail",
@@ -90136,6 +95457,102 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "sustainability",
+    "path": "sustainability",
+    "translations": [
+      {
+        "key": "name",
+        "source": "sustainability",
+        "uuid": "f2346571-e542-8822-907a-a64d91b1e237",
+        "words": [
+          "sustainability"
+        ],
+        "values": {
+          "en": "sustainability"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun.",
+        "uuid": "9d2de7b3-4bf5-8941-8f11-b8707194c6c3",
+        "words": [
+          "use",
+          "when",
+          "asking",
+          "whether",
+          "a",
+          "system",
+          "can",
+          "endure",
+          "it",
+          "is",
+          "sustainable",
+          "iff",
+          "it",
+          "draws",
+          "down",
+          "no",
+          "stock",
+          "faster",
+          "than",
+          "that",
+          "stock",
+          "regenerates",
+          "throughput",
+          "carrying",
+          "capacity",
+          "and",
+          "its",
+          "material",
+          "loop",
+          "closes",
+          "so",
+          "each",
+          "cycle",
+          "adds",
+          "zero",
+          "net",
+          "entropy",
+          "nature",
+          "does",
+          "it",
+          "as",
+          "a",
+          "sun",
+          "driven",
+          "dissipative",
+          "structure",
+          "matter",
+          "cycles",
+          "energy",
+          "flows",
+          "one",
+          "way",
+          "and",
+          "degrades",
+          "in",
+          "erpax",
+          "zero",
+          "net",
+          "entropy",
+          "per",
+          "cycle",
+          "is",
+          "sustainability",
+          "the",
+          "borrowed",
+          "anchor",
+          "is",
+          "the",
+          "sun"
+        ],
+        "values": {
+          "en": "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun."
+        }
+      }
+    ]
+  },
+  {
     "atom": "swatch",
     "path": "swatch",
     "translations": [
@@ -90261,6 +95678,93 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Course."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "symbiosis",
+    "path": "symbiosis",
+    "translations": [
+      {
+        "key": "name",
+        "source": "symbiosis",
+        "uuid": "c9bc5508-0a38-8b1b-be80-8e4cf3e627a6",
+        "words": [
+          "symbiosis"
+        ],
+        "values": {
+          "en": "symbiosis"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry.",
+        "uuid": "d6294a06-acb1-896e-a609-97da2cd0d992",
+        "words": [
+          "use",
+          "when",
+          "two",
+          "unlike",
+          "organisms",
+          "live",
+          "as",
+          "one",
+          "entangled",
+          "system",
+          "that",
+          "both",
+          "gain",
+          "from",
+          "symbiosis",
+          "is",
+          "mutualism",
+          "as",
+          "the",
+          "rule",
+          "of",
+          "life",
+          "mycorrhizae",
+          "lichen",
+          "the",
+          "holobiont",
+          "and",
+          "in",
+          "its",
+          "mycorrhizal",
+          "form",
+          "a",
+          "literal",
+          "biological",
+          "market",
+          "carbon",
+          "traded",
+          "for",
+          "phosphorus",
+          "at",
+          "variable",
+          "exchange",
+          "rates",
+          "with",
+          "reciprocal",
+          "rewards",
+          "and",
+          "sanctions",
+          "against",
+          "cheaters",
+          "the",
+          "merge",
+          "made",
+          "stable",
+          "by",
+          "accounting",
+          "nature",
+          "s",
+          "double",
+          "entry"
+        ],
+        "values": {
+          "en": "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry."
         }
       }
     ]
@@ -90460,7 +95964,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling variation, categorization, or cross-domain links in erpax WITHOUT new collections or deep nesting — the polymorphic multi-context tag system (acts_as_taggable_on port). One collection presented infinitely by filtering (context, tag); tag/tagging collections, the taggable plugin, tagged_with→where mapping, tag clouds, ownership, relatedness, and tag-lists that link multiverses. \"Anything is taggable.\"",
-        "uuid": "d11c6f5e-f29f-8b93-b487-40cb5ce0108f",
+        "uuid": "772efb3b-3e60-8093-bd26-55e05cdd2c11",
         "words": [
           "use",
           "when",
@@ -90529,6 +96033,57 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "tagging",
+    "path": "tagging",
+    "translations": [
+      {
+        "key": "name",
+        "source": "tagging",
+        "uuid": "46f55de2-fb18-8228-871f-3d6ec0697a7c",
+        "words": [
+          "tagging"
+        ],
+        "values": {
+          "en": "tagging"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record.",
+        "uuid": "2bb8a8ae-6343-81ea-aa4e-90c1b9ee1e4f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "tagging",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "taggings",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "the",
+          "act",
+          "of",
+          "attaching",
+          "a",
+          "tag",
+          "to",
+          "a",
+          "record"
+        ],
+        "values": {
+          "en": "Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record."
+        }
+      }
+    ]
+  },
+  {
     "atom": "tags",
     "path": "tags",
     "translations": [
@@ -90546,7 +96101,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or querying reusable labels applied across any collection — tag vocabulary, use-count counter cache, content-uuid dedup (same name = same id everywhere). The universal label-vocabulary collection; pair with taggings for the full polymorphic tagging engine.",
-        "uuid": "dad6bab4-1f67-8941-b0ab-9e05e8e3e626",
+        "uuid": "7188783f-543e-8f42-b438-ba3f3eb0e66d",
         "words": [
           "use",
           "when",
@@ -90612,7 +96167,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.",
-        "uuid": "e8f2b85c-9fd9-886b-9b6d-39fdb2adfdea",
+        "uuid": "697e7af9-f2bb-8b0c-8217-be41bf21737a",
         "words": [
           "use",
           "when",
@@ -90687,7 +96242,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the inflow side of an exchange in erpax — debit, units-in, receive, claim, post-in. The universal root of taking; dual of give, equilibrium is balance.",
-        "uuid": "affe26e1-2d8a-8b28-bb86-5013bac4843e",
+        "uuid": "63ad0465-c401-8f29-b186-c1335ef1c4cd",
         "words": [
           "use",
           "when",
@@ -90733,7 +96288,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tamper",
-        "uuid": "b2561e95-25eb-86e6-83db-db305160997a",
+        "uuid": "99e79697-d118-819f-bf4e-a50d117e16b4",
         "words": [
           "tamper"
         ],
@@ -90792,7 +96347,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "tamper-cost",
-        "uuid": "81b9fe2c-351e-839e-975b-c9a4a80de7a3",
+        "uuid": "6d098ccf-4138-88c8-b2f3-e9511f3c2883",
         "words": [
           "tamper",
           "cost"
@@ -90804,7 +96359,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how much it costs to tamper a zero-entropy (content-addressed, keyless) erpax store — second-preimage on the digest vs. rewriting the whole all-directions-wired graph and forging the external anchor. Integrity, not secrecy; the protection is the computational impossibility of changing all coherently. Matter-twin tamper-cost/index.ts.",
-        "uuid": "b29b06e0-f8fa-8cc6-b19e-0bc8e34327e9",
+        "uuid": "24e1d50b-f135-8da6-bc24-24ad37778961",
         "words": [
           "use",
           "when",
@@ -90905,6 +96460,58 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "task",
+    "path": "task",
+    "translations": [
+      {
+        "key": "name",
+        "source": "task",
+        "uuid": "a8724880-6188-8bea-b298-d1f77606f440",
+        "words": [
+          "task"
+        ],
+        "values": {
+          "en": "task"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one task — the singular model of the tasks collection (the plural store); a unit of work to be completed by an actor.",
+        "uuid": "200ee8cd-9959-88d2-816a-743b2524ccce",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "task",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "tasks",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "unit",
+          "of",
+          "work",
+          "to",
+          "be",
+          "completed",
+          "by",
+          "an",
+          "actor"
+        ],
+        "values": {
+          "en": "Use when modelling one task — the singular model of the tasks collection (the plural store); a unit of work to be completed by an actor."
+        }
+      }
+    ]
+  },
+  {
     "atom": "tattoo",
     "path": "tattoo",
     "translations": [
@@ -90958,7 +96565,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a value bears VAT/GST/sales/withholding tax — a rate on a taxable base, UN/CEFACT 5305 category codes, EN-16931 VAT breakdown, inclusive/exclusive pricing, exemption, reverse-charge, the tax point. The TaxConcern; tax is a cascade-resolved rate on a base, one engine feeding receipt+total+SAF-T, never a baked literal.",
-        "uuid": "1b0c1f7e-70b5-8b61-ba7e-83f49e88af5b",
+        "uuid": "06e6693a-a3a7-830b-ba41-54237a4c5f7c",
         "words": [
           "use",
           "when",
@@ -91040,7 +96647,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when setting up or querying tax authority master data — jurisdiction code, country/region/level (national to supranational), VAT registration number and dates, filing frequency and due day, filing currency. The per-tenant tax-authority master collection referenced by tax codes, calculations and returns.",
-        "uuid": "2f88ab0c-e0fd-8e56-942b-b86588f334a4",
+        "uuid": "e14569c4-5f8d-8f33-a4d4-49fa09c2f5e6",
         "words": [
           "use",
           "when",
@@ -91100,7 +96707,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "deferred-tax-items",
-        "uuid": "f2030c16-7914-837b-be4e-dddcd4a0155a",
+        "uuid": "d52cb291-7119-8acb-a983-8fdf645c61dc",
         "words": [
           "deferred",
           "tax",
@@ -91113,7 +96720,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when originating or reversing IAS-12 deferred-tax positions — deductible/taxable temporary differences, tax-loss/credit carry-forwards, realisation probability, expected reversal date, substantively-enacted rate measurement and linking to the journal-entry booking. The IAS-12 deferred-tax register collection.",
-        "uuid": "c55ae8d8-5a37-8848-baaa-a35b78818d64",
+        "uuid": "3666bc05-9abf-83d2-9419-fb9d9c2dc895",
         "words": [
           "use",
           "when",
@@ -91181,7 +96788,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining or resolving tax rates — VAT, GST, sales, withholding, income, excise or customs codes with rate percent, UN/CEFACT-5305 category, jurisdiction link, reverse-charge eligibility, recoverability, effective date range and default GL accounts. The per-tenant tax-rate master collection.",
-        "uuid": "5c9e1268-dea1-83b6-bb2d-15307da49495",
+        "uuid": "32a97614-e732-82eb-9059-31f2734bd8b5",
         "words": [
           "use",
           "when",
@@ -91251,7 +96858,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when filing or tracking tax returns — VAT monthly/quarterly/annual, EC Sales List, Intrastat, SAF-T, US sales tax, GST, corporate income or withholding returns — with period, output/input tax, net liability, authority confirmation reference, filedAt/paidAt timestamps and attachment evidence. The filed-return record collection (distinct from the TaxCalculations snapshot).",
-        "uuid": "dbd75a0b-407d-8c69-bcf8-f4a58ad9a754",
+        "uuid": "2e78f9a8-bd65-8284-9b31-0a722069ac18",
         "words": [
           "use",
           "when",
@@ -91330,7 +96937,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for non-taxable income or entities exempt from income tax — requires jurisdiction-specific exemption testing and disclosure; affects deferred-tax calculation",
-        "uuid": "ec15cd9c-34d3-8a89-beed-14e5a2446464",
+        "uuid": "95e101bd-1dee-8268-b67a-28bf87c25096",
         "words": [
           "use",
           "for",
@@ -91409,7 +97016,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when looking up or seeding read-only reference data for tax authority geographies — country, region, local and supranational levels with ISO-3166 codes, primary currency, languages, regulatory characteristics, banking requirements, filing deadlines and applicable compliance frameworks. The super-admin-maintained jurisdiction reference collection.",
-        "uuid": "a703b4fc-c750-80b3-93a8-270c67d8c2b2",
+        "uuid": "39cc0104-c87c-8342-95e3-4a60399af028",
         "words": [
           "use",
           "when",
@@ -91481,7 +97088,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when mapping legal entity types to their jurisdiction-specific legal forms — local name, abbreviation, governance structure (single/board/supervisory), tax treatment (corporate/pass-through/exempt), audit requirement and regulatory characteristics per taxing jurisdiction. The reference collection for entity-type-to-legal-form bindings.",
-        "uuid": "fd576a5c-82d5-8deb-9625-416e669cdfbf",
+        "uuid": "cc80e173-c898-8767-ab8f-ee580e2af89c",
         "words": [
           "use",
           "when",
@@ -91541,7 +97148,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "reporting-standards",
-        "uuid": "e4661081-7fb7-8c9b-bff5-35d911c0829a",
+        "uuid": "71c75b91-02bf-8d35-af7a-7b9c965fe8b0",
         "words": [
           "reporting",
           "standards"
@@ -91553,7 +97160,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when registering or querying GAAP/IFRS/SOX/Tax reporting frameworks per jurisdiction — standard name, code, type, effective date, and reference material. The per-jurisdiction reporting-standard catalogue node.",
-        "uuid": "0fa5c1c3-426c-8e50-8b59-c891a5d12cf8",
+        "uuid": "737ab384-cd62-8cc1-94d6-1ab9e3ab12bd",
         "words": [
           "use",
           "when",
@@ -91610,7 +97217,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when translating elements across reporting frameworks — account/line-item/disclosure/metric mappings between a source and target standard (XBRL-GL, IFRS-Taxonomy, SAF-T). The cross-standard element-mapping node.",
-        "uuid": "5a1c74c6-b89e-8145-8ef3-60fdb1ab6e92",
+        "uuid": "836396c1-ada1-8bf7-938b-9190c372f755",
         "words": [
           "use",
           "when",
@@ -91719,7 +97326,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "statutory-field-mappings",
-        "uuid": "63fab880-13aa-84bd-bb18-b45c5bfc970c",
+        "uuid": "936488b0-cf5f-8e47-b7ae-4d6d975856b9",
         "words": [
           "statutory",
           "field",
@@ -91732,7 +97339,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when wiring source collection fields to statutory report template slots — mapping field names, types, transformations, and validation rules for SAF-T/XBRL/EN-16931 filings. The field-level mapping node for statutory report templates.",
-        "uuid": "97a54ae2-ffd7-88d7-8192-65dd68a266a3",
+        "uuid": "e52639ad-e7b4-8db5-a0f9-4c7dd0aafc9a",
         "words": [
           "use",
           "when",
@@ -91868,7 +97475,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when classifying entities into a ranked hierarchy — the family→genus→species→cultivar ladder for crops, and the generic ranked-classification engine for any LOD @type tree. A node's type is its rank-chain; traits inherit down the ranks (the fractal parent-chain), so taxonomy is the dimension atom applied to kind.",
-        "uuid": "a2f2ae4c-7c0a-850e-a6ae-8c56d2e88c57",
+        "uuid": "bf67178e-a585-8d76-94b7-27d036791a28",
         "words": [
           "use",
           "when",
@@ -91996,7 +97603,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society spawns multiple agents that share skills — a team is a set of content-addressed agents whose competence is the UNION of their skills (merge/holographic: a skill one loads, the team has), with distinct purposes preserved. Spawn → share → cover the gap in parallel. Matter-twin services/agent/team.ts.",
-        "uuid": "ba065ae7-2710-8144-8c58-df245ffa4548",
+        "uuid": "21eac02e-8ee8-8045-88f6-44bf9cd86e0d",
         "words": [
           "use",
           "when",
@@ -92361,6 +97968,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "tenant",
+    "path": "tenant",
+    "translations": [
+      {
+        "key": "name",
+        "source": "tenant",
+        "uuid": "10291513-ebc3-8e89-857f-3a41c5b3fe5a",
+        "words": [
+          "tenant"
+        ],
+        "values": {
+          "en": "tenant"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform.",
+        "uuid": "1cd94ef9-b025-8658-a870-07c94498b981",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "tenant",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "tenants",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "isolated",
+          "organization",
+          "within",
+          "the",
+          "multi",
+          "tenant",
+          "platform"
+        ],
+        "values": {
+          "en": "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform."
+        }
+      }
+    ]
+  },
+  {
     "atom": "tenants",
     "path": "tenants",
     "translations": [
@@ -92378,7 +98035,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when creating or scoping a tenant — the GDPR-controller boundary for all access, localization cascade (BCP-47/ECMA-402), accounting framework (IFRS/GAAP/fiscal-year), reporting currency (ISO 4217), and integration secrets (Stripe, Resend, MCP). The multi-tenant root entity and access-scope boundary.",
-        "uuid": "b8812f83-67ec-8b60-b8dd-c4f44020330b",
+        "uuid": "dd540807-cbc1-8d68-bc8a-e9b91f9d8fa9",
         "words": [
           "use",
           "when",
@@ -92675,7 +98332,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling contract end conditions — termination for convenience, termination for cause, notice period, effect (wind-down obligations, survival clauses), remedies on termination.",
-        "uuid": "00c905f1-bc49-892b-b091-21b91af7e773",
+        "uuid": "cc93c6eb-2362-8c69-928a-8fc27aedffc2",
         "words": [
           "use",
           "when",
@@ -92808,7 +98465,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the place gives the produce its character and price — terroir: the area-specific soil, climate, topography, and practice that make a product distinctive (OIV). Expressed legally as the appellation / AVA / PDO (a certification over a delimited territory); the perennial/viticulture twin of provenance and a land-value premium.",
-        "uuid": "c8fe1d57-9895-879c-a8c9-8bbc43e17b53",
+        "uuid": "e0b5914e-da35-8e37-99e1-d26c0f523776",
         "words": [
           "use",
           "when",
@@ -92962,7 +98619,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when writing or debugging erpax's own tests — discovering the live config to assert against, seeding isolated fixtures by level (unit/integration/e2e), transactional cleanup, parallel runners, or snapshot/restore — the society's self-test infrastructure that validates the running app against its own generated schema.",
-        "uuid": "6871e081-d026-826b-a181-d866558aa430",
+        "uuid": "502ab14f-8ca1-8606-9628-f993e5d7a7b3",
         "words": [
           "use",
           "when",
@@ -93105,7 +98762,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when applying a consistent visual language across an app — color palette, typography, spacing, motion, dark/light mode. The style-system binding that makes components harmonious.",
-        "uuid": "d3b46a2b-c002-8fa1-96f1-034ac16ec508",
+        "uuid": "d5f51689-ffbd-8903-8f68-b804199889ed",
         "words": [
           "use",
           "when",
@@ -93235,7 +98892,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.",
-        "uuid": "15b6e847-81e9-881a-97f5-5ee7f460972b",
+        "uuid": "1e95cfd6-c82f-8cc3-adda-2c16caa1bb09",
         "words": [
           "a",
           "thesis",
@@ -93388,7 +99045,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring the quantity-per-unit-time flowing through a process — items per hour, transactions per second, units completed per shift. The rate of productive output.",
-        "uuid": "fb5454f1-6cbe-8c04-a7bd-180f196a5cbb",
+        "uuid": "0f72ffe5-25ab-80db-b5ed-e5f9a929b937",
         "words": [
           "use",
           "when",
@@ -93512,7 +99169,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a customer/employee request, complaint, or issue becomes a tracked work item with queue, priority, assignment, and SLA. The polymorphic support-case container.",
-        "uuid": "511e1763-7fae-8cfa-beb4-45e6a6c4050e",
+        "uuid": "768f2234-43c2-894f-8f58-b1c62681bbca",
         "words": [
           "use",
           "when",
@@ -93708,7 +99365,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when soil is mechanically opened to make a seedbed, incorporate residue/amendments, or disrupt weeds — primary vs secondary tillage, the no-till/reduced-till spectrum, broadfork aeration, and weed-flush methods (stale seedbed, occultation/tarping, solarization). The ground-opening operation; its intensity is the soil-disturbance dial fertility and structure pay for.",
-        "uuid": "5f06934e-155f-83c4-871f-d24b78913b36",
+        "uuid": "c825a068-1cce-8241-b115-57142b628eb8",
         "words": [
           "use",
           "when",
@@ -93788,7 +99445,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking hours/minutes — labor hours, shift duration, production runtime per unit, throughput per time unit. A duration (number + time unit HUR/H87 code) or clock time. Pairs with rate (wage per hour, throughput per hour) in manufacturing/labor.",
-        "uuid": "b59562d2-c2ee-8fee-a70e-1fc600abc65e",
+        "uuid": "0883a94d-a5c3-82d7-a0d9-030151f9bee1",
         "words": [
           "use",
           "when",
@@ -94377,7 +100034,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the two-directional collapse that closes into a donut — erpax falls into Payload (collections → canonical core) AND Payload falls into erpax (primitives are atoms; domains extract as @erpax/* plugins). The implosion (collapse) and the explosion (supernova) are one toroidal flow — the Rodin vortex. The shape of the whole.",
-        "uuid": "2020275c-3f88-8805-b706-3e2aa764263e",
+        "uuid": "950084ff-3027-8e7b-892a-8794c1055a1a",
         "words": [
           "use",
           "when",
@@ -94492,7 +100149,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when summing a dimension — line total, invoice total, account total, cumulative amount. A computed or captured aggregate; often read-only (computed from detail lines or GL balance). Carries amount + currency.",
-        "uuid": "eae32397-9267-8c69-9b6a-cdcd6f4fe2f4",
+        "uuid": "3e03c2c5-5f0e-8e41-92b8-94210e9cfe1e",
         "words": [
           "use",
           "when",
@@ -94698,7 +100355,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
-        "uuid": "c0b99ed4-a3d1-8b97-be33-ab0e179533b5",
+        "uuid": "c9ff881c-e54e-8929-834a-1337fa4ad00e",
         "words": [
           "a",
           "music",
@@ -95067,7 +100724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for the universal exchange node — a balanced flow of value between parties, the commercial document AND its ledger entry as duals. One transactions collection holds every kind (invoice/order/bank/fx/intercompany) by dimension; the prefix-free coordinate the trades-vs-transactions question resolves to (it is a trade·transaction — both words).",
-        "uuid": "6288e5c8-ad4b-8781-a1de-3c051c283518",
+        "uuid": "78129a31-a707-83f7-9f19-52e0962e737a",
         "words": [
           "use",
           "for",
@@ -95148,7 +100805,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
-        "uuid": "128b0bf8-9c63-88dd-959c-ebe5ccc4860d",
+        "uuid": "3e00c391-d58d-8f26-a9b7-2d5558fac6d7",
         "words": [
           "use",
           "when",
@@ -95311,6 +100968,76 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "translate",
+    "path": "translate",
+    "translations": [
+      {
+        "key": "name",
+        "source": "translate",
+        "uuid": "61ba2217-eb07-8239-a3ca-561ff01001f8",
+        "words": [
+          "translate"
+        ],
+        "values": {
+          "en": "translate"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension.",
+        "uuid": "8c3fee8d-e7d4-85cd-9360-1f8866332cf0",
+        "words": [
+          "use",
+          "when",
+          "computing",
+          "i18n",
+          "keys",
+          "and",
+          "humanizing",
+          "them",
+          "into",
+          "default",
+          "labels",
+          "for",
+          "the",
+          "translations",
+          "dropdown",
+          "the",
+          "computed",
+          "default",
+          "db",
+          "override",
+          "pattern",
+          "db",
+          "value",
+          "humanized",
+          "default",
+          "raw",
+          "key",
+          "also",
+          "enforces",
+          "the",
+          "strict",
+          "singular",
+          "model",
+          "plural",
+          "collection",
+          "matrix",
+          "translation",
+          "translations",
+          "itself",
+          "a",
+          "tamper",
+          "cost",
+          "dimension"
+        ],
+        "values": {
+          "en": "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension."
+        }
+      }
+    ]
+  },
+  {
     "atom": "translation",
     "path": "translation",
     "translations": [
@@ -95328,7 +101055,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting a translatable message into code — the model (type + defineTranslation) of one content-addressed, per-locale translation entry that the translations collector emits into every folder.",
-        "uuid": "2b02a667-0501-87d1-8599-f40e69cc6df6",
+        "uuid": "812ae4bc-a85b-8916-b173-13b6b5c96e0e",
         "words": [
           "use",
           "when",
@@ -95383,7 +101110,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when overriding platform localizations per tenant — MCP tool descriptions, UI labels, event labels, notification templates, standard citations, chain-step names — with per-locale values (BCP-47), activation windows, and provenance back to the overridden row. The tenant translation override layer above the platform default.",
-        "uuid": "d54026a6-dffc-87c7-9996-3dd3a0c99fca",
+        "uuid": "face3237-9b7d-834a-89d8-e666b6f02483",
         "words": [
           "use",
           "when",
@@ -95454,7 +101181,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reading the one canonical content-addressed index of every atom's ported SKILL.md — the mass the collector emits and the coverage guard verifies.",
-        "uuid": "3959aec7-70e7-8f92-87c2-d1b89ad0a477",
+        "uuid": "22b850b6-2e5b-834a-aab9-037dd73d14c1",
         "words": [
           "use",
           "when",
@@ -95507,7 +101234,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when porting every atom's SKILL.md into code — the collector that harvests translatable strings into a content-addressed per-folder table and the one canonical catalogue.",
-        "uuid": "770ea1cc-da0f-8152-b8f3-3ee6dd0c456c",
+        "uuid": "96d40b18-41dc-8e7c-a6b3-5584634e1f44",
         "words": [
           "use",
           "when",
@@ -95652,7 +101379,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when setting greenhouse-raised seedlings into the field — transplanting (vs direct seeding): plug or bare-root starts set at spacing, after hardening off. Transplanting buys earliness, uniformity, and a weed jump; direct seeding saves labor but ~10–20% may not establish. A method of planting, downstream of propagation.",
-        "uuid": "2f9152d5-4e26-8c87-b2b1-86cce97471ee",
+        "uuid": "ef96a4c2-fa60-8ea4-ac1a-5d5ccc6fec26",
         "words": [
           "use",
           "when",
@@ -95874,7 +101601,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a crop is supported vertically — trellising/staking holds vining or heavy crops (tomatoes, cucumbers, pole beans, peas) off the ground for airflow, quality, and harvest access; methods scale from stake-and-weave (basket weave) for determinates to lower-and-lean string for indeterminates. Vertical support trades labor/materials for yield, quality, and disease reduction.",
-        "uuid": "9e87c857-8bfe-8ebb-9e82-3c495206fd47",
+        "uuid": "47ed4ff9-e79d-8563-ab21-dfcd70240dce",
         "words": [
           "use",
           "when",
@@ -96088,7 +101815,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about how one node is told three times and rendered once — matter (index.ts inline docs) · antimatter (SKILL.md) · backend (the generated payload-types schema), fused into VitePress (the speech). The doc-scale DRY law — the page derives from the code and the backend, never restated.",
-        "uuid": "fbdb4a5b-db8d-819a-973a-fda564f022ea",
+        "uuid": "76aac729-f4f8-8397-a3a7-f667837e0d29",
         "words": [
           "use",
           "when",
@@ -96164,7 +101891,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A trip or journey. An itinerary of visits to one or more places.",
-        "uuid": "e9779539-5e02-87fb-8dc6-42d9240b60d6",
+        "uuid": "d99ffb60-b176-8ed9-a8e6-4ee40f8c2fdb",
         "words": [
           "a",
           "trip",
@@ -96204,7 +101931,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use for client trust accounting (IOLTA) — client funds held separately from firm funds, never commingled. Strip the prefix and a trust account is a segregated sub-account on the strict double-entry ledger, a balance invariant (the client ledger never drawn below held funds). No new matter — a labelled account on accounting.",
-        "uuid": "428ea46d-6f83-8e10-b54a-334f15bfdb9f",
+        "uuid": "a9a5c0b4-6c5e-8903-b99c-e959fd2f9c39",
         "words": [
           "use",
           "for",
@@ -96283,7 +102010,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a structure or cover extends the growing season — the family from floating row cover → low tunnel → caterpillar tunnel → high tunnel/hoophouse → greenhouse, scaled by size, that buffers frost and adds weeks at each end of the season. Season extension as built capacity; the structure that widens the climate window land×season otherwise caps.",
-        "uuid": "3d31d20c-abf4-857d-91bb-72840580c103",
+        "uuid": "850bbe0c-397e-8ce6-b859-20dd53b8675c",
         "words": [
           "use",
           "when",
@@ -96388,6 +102115,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "tweet",
+    "path": "tweet",
+    "translations": [
+      {
+        "key": "name",
+        "source": "tweet",
+        "uuid": "68ac1cd6-22fc-8dde-91c0-6199b800ea88",
+        "words": [
+          "tweet"
+        ],
+        "values": {
+          "en": "tweet"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one tweet — the singular model of the tweets collection (the plural store); one short public post on a microblogging feed.",
+        "uuid": "73f755b2-9c85-8d6d-8d31-486a88c4986f",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "tweet",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "tweets",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "short",
+          "public",
+          "post",
+          "on",
+          "a",
+          "microblogging",
+          "feed"
+        ],
+        "values": {
+          "en": "Use when modelling one tweet — the singular model of the tweets collection (the plural store); one short public post on a microblogging feed."
+        }
+      }
+    ]
+  },
+  {
     "atom": "tweets",
     "path": "tweets",
     "translations": [
@@ -96441,7 +102218,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when categorizing an entity into a taxonomic class — customer type (company/individual), transaction type (sale/purchase), account type (asset/liability/equity). A select field carrying domain-specific enums; often paired with status for state-machine workflows.",
-        "uuid": "71cba643-4cb0-8f93-b54e-d75bc86810de",
+        "uuid": "ad659012-fe69-8fff-b955-21d8a1397cf9",
         "words": [
           "use",
           "when",
@@ -96505,7 +102282,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when working with Payload's generated TypeScript types — payload-types.ts, generate:types, GeneratedTypes, CollectionSlug, typing Local API results, or fixing stale-type errors after schema changes.",
-        "uuid": "0169ae3b-ce01-804e-bdfa-f6d09414606f",
+        "uuid": "3c692bd7-0ded-82ca-af8f-08bf1fc56ee2",
         "words": [
           "use",
           "when",
@@ -97169,7 +102946,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recommending higher-value or complementary products — opportunity detection, recommendation engine, success metrics.",
-        "uuid": "3523fad8-afd3-81bd-84d9-91cd4695a8db",
+        "uuid": "67fb0cee-9b92-8d4e-8a7c-d3b6aab8e95d",
         "words": [
           "use",
           "when",
@@ -97469,7 +103246,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing authenticated actors — employees, agents, customers, authors — their cross-tenant roles, held competencies, per-user locale/display config, email login, and access credentials. The typeless universal actor and identity root.",
-        "uuid": "7ec2a79a-2e20-847e-9bc2-db2d8e2eb5f1",
+        "uuid": "e1f49645-7a1f-8de0-bd86-5fcfa22d69d4",
         "words": [
           "use",
           "when",
@@ -97565,7 +103342,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when you need a pure helper, a Payload/Next/tenant glue function, or an admin React hook and it does NOT implement a standard's algorithm — the non-standards helper layer that may cite standards but never implements them.",
-        "uuid": "148e1235-fb69-86e3-9753-2738be894db5",
+        "uuid": "68a3817b-a693-88e9-ae5a-2b90dde11fe0",
         "words": [
           "use",
           "when",
@@ -97621,7 +103398,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "utility",
-        "uuid": "3cd97055-c7e0-807b-aa4a-78825280c3a4",
+        "uuid": "6c6e2141-1226-847c-83e0-a5650cd1e08f",
         "words": [
           "utility"
         ],
@@ -97676,6 +103453,56 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when dividing by anything that could be zero — pick the policy by what the zero MEANS (throw for money, collapse to 0 for an undefined ratio, coerce to 1 for an unset divisor) so ∞ or NaN never enters an account."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "utterance",
+    "path": "utterance",
+    "translations": [
+      {
+        "key": "name",
+        "source": "utterance",
+        "uuid": "c71e8ad8-8dcf-82bd-894f-6bb15307626e",
+        "words": [
+          "utterance"
+        ],
+        "values": {
+          "en": "utterance"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation.",
+        "uuid": "20588043-355d-856d-9aa7-356f41d199dc",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "utterance",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "utterances",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "spoken",
+          "or",
+          "written",
+          "input",
+          "in",
+          "a",
+          "conversation"
+        ],
+        "values": {
+          "en": "Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation."
         }
       }
     ]
@@ -97747,7 +103574,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when choosing which RFC 9562 UUID version fits a case — v8 structured content-uuid (identity+capability+schema+digest fused) as the erpax default, v7 time-ordered for index-local speed, v4 random for unguessable secrets. Harmonise the features and everything collapses INTO the uuid itself — the 128-bit singularity.",
-        "uuid": "4c3b4ff3-62d2-884e-8f26-d8937fc32614",
+        "uuid": "df41c69b-98ea-85af-8414-f7a3684b086c",
         "words": [
           "use",
           "when",
@@ -97822,7 +103649,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a uuid must expand back into an LLM prompt — the inhale of the breath, decoding identity plus the wired color+sound frame plus the corpus neighbourhood straight out of the 128 bits; the uuid IS the prompt, self-decoding, no payload.",
-        "uuid": "0cd9b4f3-aef3-84a9-b7eb-4b46f5c92139",
+        "uuid": "0cb8f7b1-da14-8d72-a612-5ff103553e42",
         "words": [
           "use",
           "when",
@@ -97892,7 +103719,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when content, search, locale, version, or CSS colour must agree about what a record IS — they all DRY-derive from ONE content projection through the content-uuid. The uuid singularity realised: project(record) returns identity (uuid), searchable text (multi-search), and a deterministic colour (CSS) from the same bytes; per-locale content gives the per-locale uuid, and a version is the uuid in time.",
-        "uuid": "2f9332b9-6551-8660-b1f4-5628ef3a4d80",
+        "uuid": "7fee9eda-7f49-8a9a-ba1b-277e3c52b5ec",
         "words": [
           "use",
           "when",
@@ -98021,7 +103848,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The duration of validity of a permit or similar thing.",
-        "uuid": "2191770e-2bb8-8159-944f-09d54e3f52d5",
+        "uuid": "171ba684-1e9a-88e0-8b15-48c7cef8fa1e",
         "words": [
           "the",
           "duration",
@@ -98058,7 +103885,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a field carries a numeric or quantified substance — quantity value (paired with unit), exchange rate value, percentage, index. Generic numeric container; pairs with unit (measure), currency, or rate context to form money/quantity/rate.",
-        "uuid": "25a92462-7321-81ee-9faf-5316513e7069",
+        "uuid": "24833eed-957f-8f40-88f7-eb9c32e32113",
         "words": [
           "use",
           "when",
@@ -98283,7 +104110,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.",
-        "uuid": "682942a2-cffc-8f97-8b14-ff75b8b5beba",
+        "uuid": "0f1243d3-76f5-8927-b482-866f5fc27fdc",
         "words": [
           "use",
           "when",
@@ -98334,7 +104161,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their short name e.g. \\\"color\\\"; terms defined",
-        "uuid": "f59d6530-eba1-853a-96d5-9e69a57d81d1",
+        "uuid": "2891c026-ca79-8b3d-9e11-762571affbf5",
         "words": [
           "indicates",
           "the",
@@ -98431,7 +104258,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
-        "uuid": "ce91496c-f6c0-841a-b3db-6946895030c2",
+        "uuid": "0c6c39c9-1ca9-883e-a2df-8034854feb46",
         "words": [
           "a",
           "vehicle",
@@ -98553,7 +104380,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when managing purchase-side party master data — vendor identity, VAT/tax classification, IBAN/BIC bank details, payment terms, AP ledger defaults, and IRS 1099 eligibility. The supplier/vendor master and accounts-payable party registry.",
-        "uuid": "89da04e9-c1fe-8cad-b0f8-80e99222630e",
+        "uuid": "ec69a378-dfb3-85d7-8a35-35baea37cc50",
         "words": [
           "use",
           "when",
@@ -99001,7 +104828,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.",
-        "uuid": "0ffeb4d3-ff53-84bd-b66e-41163e3fb60d",
+        "uuid": "3f1c26bd-4cec-8a2d-ac7e-a9ba2b08e373",
         "words": [
           "a",
           "component",
@@ -99174,6 +105001,59 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
+    "atom": "visit",
+    "path": "visit",
+    "translations": [
+      {
+        "key": "name",
+        "source": "visit",
+        "uuid": "36a1c7dc-a2c6-8aa7-bc50-90289b3aeb6a",
+        "words": [
+          "visit"
+        ],
+        "values": {
+          "en": "visit"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one visit — the singular model of the visits collection (the plural store); one recorded instance of an actor attending a place or service.",
+        "uuid": "b03dfd4e-72d9-8a50-9ccf-935bdaf1e145",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "visit",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "visits",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "one",
+          "recorded",
+          "instance",
+          "of",
+          "an",
+          "actor",
+          "attending",
+          "a",
+          "place",
+          "or",
+          "service"
+        ],
+        "values": {
+          "en": "Use when modelling one visit — the singular model of the visits collection (the plural store); one recorded instance of an actor attending a place or service."
+        }
+      }
+    ]
+  },
+  {
     "atom": "visits",
     "path": "visits",
     "translations": [
@@ -99300,7 +105180,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the form coil — VitePress renders each atom's SKILL.md as its spoken form (docs, frontmatter, the wiki-link graph) and is the speech-gate twin of the Payload matter, bound by content-uuid.",
-        "uuid": "3041f2fe-3244-8afe-beed-4dffecad1f7a",
+        "uuid": "14d65cce-1e6e-8ff6-889e-e508fd62ecd9",
         "words": [
           "use",
           "when",
@@ -99471,7 +105351,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society casts and tallies collective choice — ballots, votes, and rating series — where every gameable violation (double-voting, stuffing, post-cast tampering, aggregate fudging, anonymity collision, cross-tenant pollution) is made a uuid-mismatch any third party can detect without trusting the platform.",
-        "uuid": "717946ac-6f01-8530-8ccc-77f96cdba30a",
+        "uuid": "7eb53ca3-de28-848f-af60-2b75fe538e7b",
         "words": [
           "use",
           "when",
@@ -99579,7 +105459,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society turns warfare tactics to peace — reconnaissance, the OODA loop, coordinated formations, and defense-in-depth applied to building harmony and driving entropy to zero, never to destruction.",
-        "uuid": "c3b7b3ce-7663-86a4-aeb6-3fc531caef55",
+        "uuid": "7d97dcc8-2ab5-808c-a723-6a7d392434de",
         "words": [
           "use",
           "when",
@@ -99775,7 +105655,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking per-SKU on-hand inventory balance at a consignee location — shipments in, sales out, returns, cycle-count reconciliation, IAS-2 §6 balance-sheet ownership retained by consignor, valuation method, and GL account mapping. The consignment per-SKU running-balance collection.",
-        "uuid": "3b96dd8c-d1da-8702-ac51-acdf616dd43b",
+        "uuid": "2e8b2d8c-4856-8ab5-aab9-0f039bdf7423",
         "words": [
           "use",
           "when",
@@ -99844,7 +105724,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when recording a consignee's sale to an end-customer that triggers IFRS-15 §B78 control transfer — revenue recognition, COGS derecognition, commission calculation, inventory decrement, and GL journal booking. The consignment sale-event collection.",
-        "uuid": "470fc696-10ea-804b-8f9d-d6b035914e1a",
+        "uuid": "d16d44a3-efb7-8444-9801-b6dccfaf8d02",
         "words": [
           "use",
           "when",
@@ -99943,7 +105823,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a party makes a binding representation or guarantee about a fact/condition — express (stated) vs. implied (statutory), scope, duration, remedy (repair/replace/indemnify), breach consequences.",
-        "uuid": "0e0c7623-6434-8dcc-b6a2-e8cec22f72dc",
+        "uuid": "ca05217f-c00d-8b72-94c5-3bae55ff6ed5",
         "words": [
           "use",
           "when",
@@ -100255,7 +106135,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when the society must be SEEN, heard, and felt — auto-seeding Payload's pages from the spec corpus, the e2e multimedia walkthroughs, and federation peers; the perceptible outward face of the content-addressed record.",
-        "uuid": "fc156f18-4160-8998-9875-430e3bbbc92a",
+        "uuid": "a9acbe25-aa24-8588-8cb2-bd3bbff84aec",
         "words": [
           "use",
           "when",
@@ -100389,7 +106269,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when measuring or reasoning about quality of life — качество на живот — the emergent outcome of a society, a composite over sociological dimensions (material · health · social · psychological · environmental). Like a market it is capped by its weakest dimension, but unlike a pure product it is partly compensatory with non-compensatory capability floors below which no surplus elsewhere restores the whole. The dependent variable erpax exists to raise; read capabilities, not income.",
-        "uuid": "83d0ee89-52fa-8e85-acd8-e4315806b237",
+        "uuid": "ba8163cd-a0b4-8464-b176-e060b412376e",
         "words": [
           "use",
           "when",
@@ -100521,7 +106401,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "The distance between the centers of the front and rear wheels. Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
-        "uuid": "c29dd035-55c5-8716-8860-9ae5a9cd6eea",
+        "uuid": "ca3bc328-bc6a-82d7-aa80-da642430fb86",
         "words": [
           "the",
           "distance",
@@ -100565,7 +106445,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "whole",
-        "uuid": "b3155d39-f315-8400-a2ea-28932a6fe01f",
+        "uuid": "3848860b-acb8-84a5-8324-379b0cebd3cc",
         "words": [
           "whole"
         ],
@@ -100576,7 +106456,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about composition in erpax — whole↔part, fields→collections→plugins→erpax, BOM, consolidation, the fractal self-similar levels. The universal root of composition.",
-        "uuid": "fdd67234-0281-84d8-bbe2-112fe31df733",
+        "uuid": "abfde71a-74ad-8d59-b00d-ed96e831e870",
         "words": [
           "use",
           "when",
@@ -100798,7 +106678,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when a treated animal's produce cannot yet be sold — the withdrawal period: the mandatory days after a drug/vaccine/treatment before milk/meat/eggs are residue-safe to market. A food-safety embargo that gates saleability (the accountable cannot-sell-yet state); the livestock twin of a quarantine or lock-up period.",
-        "uuid": "ee0961e7-d927-83e2-a6e5-010bf1ce6823",
+        "uuid": "c8693235-2a54-868f-b76c-cbb0258a9349",
         "words": [
           "use",
           "when",
@@ -100981,7 +106861,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "name",
         "source": "work-centers",
-        "uuid": "903993d1-502f-8753-88a1-feb553717510",
+        "uuid": "8f6eb8e8-1772-8f86-9d9b-6cad2a2b7c38",
         "words": [
           "work",
           "centers"
@@ -100993,7 +106873,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when modelling manufacturing capacity — machines, lines, cells, vats, workstations, or crews — with ISA-95 resource hierarchy, throughput rate, parallelism, and IAS-2 cost-of-conversion rates feeding routing and overhead absorption. The work-center capacity-unit collection.",
-        "uuid": "863b496a-c924-83dd-aef0-1a7eb5dbaa4b",
+        "uuid": "0ca7b398-78af-8ca9-9d1c-d4aff22b7a9a",
         "words": [
           "use",
           "when",
@@ -101056,7 +106936,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection.",
-        "uuid": "56a78838-d544-866e-a136-0f00dee7ee10",
+        "uuid": "ad3d2c08-6487-8a6e-960c-462e73b7f0a3",
         "words": [
           "use",
           "when",
@@ -101098,6 +106978,260 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Use when defining reusable process-step types (Cut, Sew, Mix, Assemble, Inspect, Pack) that routings compose — with ISA-95 operation-type hierarchy, default work-center, and KPI anchors independent of any specific product. The operation-type catalog collection."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "orders",
+    "path": "work/orders",
+    "translations": [
+      {
+        "key": "name",
+        "source": "orders",
+        "uuid": "d0588728-74f7-86c7-aa52-7e0ed6982ed3",
+        "words": [
+          "orders"
+        ],
+        "values": {
+          "en": "orders"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
+        "uuid": "ed7c7475-8615-807d-b4af-579986903590",
+        "words": [
+          "use",
+          "when",
+          "booking",
+          "shop",
+          "floor",
+          "production",
+          "the",
+          "per",
+          "phase",
+          "per",
+          "worker",
+          "execution",
+          "leaf",
+          "with",
+          "an",
+          "options",
+          "array",
+          "derived",
+          "double",
+          "entry",
+          "totals",
+          "a",
+          "derived",
+          "horo",
+          "lifecycle",
+          "the",
+          "forward",
+          "conveyor",
+          "between",
+          "routing",
+          "phases",
+          "and",
+          "the",
+          "piece",
+          "rate",
+          "wage",
+          "evolved",
+          "from",
+          "m",
+          "rows",
+          "of",
+          "the",
+          "etrima",
+          "work",
+          "orders",
+          "ledger"
+        ],
+        "values": {
+          "en": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "phases",
+    "path": "work/phases",
+    "translations": [
+      {
+        "key": "name",
+        "source": "phases",
+        "uuid": "48fb1632-aed0-84df-9613-9217be53036b",
+        "words": [
+          "phases"
+        ],
+        "values": {
+          "en": "phases"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
+        "uuid": "8eacdc59-4970-8dff-b39d-9483f8ccb802",
+        "words": [
+          "use",
+          "when",
+          "modeling",
+          "the",
+          "reusable",
+          "work",
+          "phase",
+          "operation",
+          "catalog",
+          "the",
+          "routing",
+          "vocabulary",
+          "sewing",
+          "cutting",
+          "buttonholes",
+          "steaming",
+          "embroidery",
+          "dyeing",
+          "finishing",
+          "a",
+          "lot",
+          "is",
+          "produced",
+          "through",
+          "a",
+          "self",
+          "referential",
+          "tree",
+          "with",
+          "standard",
+          "time"
+        ],
+        "values": {
+          "en": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "shifts",
+    "path": "work/shifts",
+    "translations": [
+      {
+        "key": "name",
+        "source": "shifts",
+        "uuid": "21b459ec-4462-8295-a94d-ca68a18d4855",
+        "words": [
+          "shifts"
+        ],
+        "values": {
+          "en": "shifts"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
+        "uuid": "645551de-e790-8dfc-9bc8-42f8445bfdb6",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "the",
+          "per",
+          "actor",
+          "day",
+          "labour",
+          "aggregate",
+          "the",
+          "efficiency",
+          "wage",
+          "authority",
+          "a",
+          "work",
+          "order",
+          "inherits",
+          "from",
+          "presence",
+          "vs",
+          "produced",
+          "minutes",
+          "the",
+          "produced",
+          "presence",
+          "efficiency",
+          "the",
+          "max",
+          "time",
+          "pay",
+          "order",
+          "rollup",
+          "wage",
+          "on",
+          "the",
+          "horo",
+          "lifecycle",
+          "ring",
+          "grounded",
+          "in",
+          "yr",
+          "etrima",
+          "production",
+          "work",
+          "shifts",
+          "k"
+        ],
+        "values": {
+          "en": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k)."
+        }
+      }
+    ]
+  },
+  {
+    "atom": "worker",
+    "path": "worker",
+    "translations": [
+      {
+        "key": "name",
+        "source": "worker",
+        "uuid": "d20c295e-b5e8-8dd6-8536-7ecbe9a83878",
+        "words": [
+          "worker"
+        ],
+        "values": {
+          "en": "worker"
+        }
+      },
+      {
+        "key": "description",
+        "source": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization.",
+        "uuid": "1d838ee1-4c4f-8cfb-ad94-8703bdc32450",
+        "words": [
+          "use",
+          "when",
+          "modelling",
+          "one",
+          "worker",
+          "the",
+          "singular",
+          "model",
+          "of",
+          "the",
+          "workers",
+          "collection",
+          "the",
+          "plural",
+          "store",
+          "a",
+          "person",
+          "who",
+          "performs",
+          "labor",
+          "for",
+          "the",
+          "organization"
+        ],
+        "values": {
+          "en": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization."
         }
       }
     ]
@@ -101156,7 +107290,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when spawning, advancing, or escalating a workflow instance bound to a document — evaluating trigger conditions against a definition, routing step decisions (approve/reject/delegate/return), running service-task handlers, or firing SLA escalation on overdue steps; SOX-compliant approval chain execution. The BPMN-2.0 workflow orchestration service.",
-        "uuid": "e0b158a8-5126-8f86-b0a7-3ddfbaf97b39",
+        "uuid": "39e8723e-d939-8eea-8cf4-dbd4318cd082",
         "words": [
           "use",
           "when",
@@ -101231,7 +107365,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when authoring data-driven multi-step approval rules for any collection — BPMN-2.0 step kinds (approval, all-of-N, any-of-N, notification, service task, decision), assignee modes, SLA escalation, JSON-Logic conditions, and state-machine lifecycle gate without a code change. The reusable approval-template collection.",
-        "uuid": "6e879c87-e335-8f47-b869-5ca70d1ceff6",
+        "uuid": "ab3bd836-e1a5-8764-9e75-4da48345b059",
         "words": [
           "use",
           "when",
@@ -101306,7 +107440,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when tracking the live run of a workflow-definition against a document — current step, assignee, SLA due date, step-history decisions (approved/rejected/delegated/escalated/auto), final outcome, and ISO-19011 §6.4.6 audit-event trail. The workflow execution-instance collection.",
-        "uuid": "d4889f50-f9c5-8a38-aee8-4d47bc639ba5",
+        "uuid": "b5b8b361-cb5a-8a74-973a-bf82cb589a1f",
         "words": [
           "use",
           "when",
@@ -101442,137 +107576,6 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
     ]
   },
   {
-    "atom": "workorders",
-    "path": "workorders",
-    "translations": [
-      {
-        "key": "name",
-        "source": "Workorders",
-        "uuid": "7690eaa1-62dc-8395-bebb-d0dc60b61563",
-        "words": [
-          "workorders"
-        ],
-        "values": {
-          "en": "Workorders"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
-        "uuid": "1142f134-7873-8381-8941-4f62fb488c6b",
-        "words": [
-          "use",
-          "when",
-          "booking",
-          "shop",
-          "floor",
-          "production",
-          "the",
-          "per",
-          "phase",
-          "per",
-          "worker",
-          "execution",
-          "leaf",
-          "with",
-          "an",
-          "options",
-          "array",
-          "derived",
-          "double",
-          "entry",
-          "totals",
-          "a",
-          "derived",
-          "horo",
-          "lifecycle",
-          "the",
-          "forward",
-          "conveyor",
-          "between",
-          "routing",
-          "phases",
-          "and",
-          "the",
-          "piece",
-          "rate",
-          "wage",
-          "evolved",
-          "from",
-          "m",
-          "rows",
-          "of",
-          "the",
-          "etrima",
-          "work",
-          "orders",
-          "ledger"
-        ],
-        "values": {
-          "en": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger."
-        }
-      }
-    ]
-  },
-  {
-    "atom": "workphases",
-    "path": "workphases",
-    "translations": [
-      {
-        "key": "name",
-        "source": "workphases",
-        "uuid": "eeee9efd-1de1-8b21-87ea-cbb0ad56bc94",
-        "words": [
-          "workphases"
-        ],
-        "values": {
-          "en": "workphases"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
-        "uuid": "efee0d5d-0c0b-8cbf-b9c6-4f384f56e55c",
-        "words": [
-          "use",
-          "when",
-          "modeling",
-          "the",
-          "reusable",
-          "work",
-          "phase",
-          "operation",
-          "catalog",
-          "the",
-          "routing",
-          "vocabulary",
-          "sewing",
-          "cutting",
-          "buttonholes",
-          "steaming",
-          "embroidery",
-          "dyeing",
-          "finishing",
-          "a",
-          "lot",
-          "is",
-          "produced",
-          "through",
-          "a",
-          "self",
-          "referential",
-          "tree",
-          "with",
-          "standard",
-          "time"
-        ],
-        "values": {
-          "en": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time."
-        }
-      }
-    ]
-  },
-  {
     "atom": "works",
     "path": "works",
     "translations": [
@@ -101601,79 +107604,6 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
         ],
         "values": {
           "en": "Organizations that the person works for."
-        }
-      }
-    ]
-  },
-  {
-    "atom": "workshifts",
-    "path": "workshifts",
-    "translations": [
-      {
-        "key": "name",
-        "source": "workshifts",
-        "uuid": "a7f636ae-2d9c-864b-8343-9e194f04260d",
-        "words": [
-          "workshifts"
-        ],
-        "values": {
-          "en": "workshifts"
-        }
-      },
-      {
-        "key": "description",
-        "source": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
-        "uuid": "8f78b5e8-0122-8db9-8de7-6a6e6ae865b7",
-        "words": [
-          "use",
-          "when",
-          "modelling",
-          "the",
-          "per",
-          "actor",
-          "day",
-          "labour",
-          "aggregate",
-          "the",
-          "efficiency",
-          "wage",
-          "authority",
-          "a",
-          "work",
-          "order",
-          "inherits",
-          "from",
-          "presence",
-          "vs",
-          "produced",
-          "minutes",
-          "the",
-          "produced",
-          "presence",
-          "efficiency",
-          "the",
-          "max",
-          "time",
-          "pay",
-          "order",
-          "rollup",
-          "wage",
-          "on",
-          "the",
-          "horo",
-          "lifecycle",
-          "ring",
-          "grounded",
-          "in",
-          "yr",
-          "etrima",
-          "production",
-          "work",
-          "shifts",
-          "k"
-        ],
-        "values": {
-          "en": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k)."
         }
       }
     ]
@@ -101879,7 +107809,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "An XPath, e.g. of a SpeakableSpecification or WebPageElement. In the latter case, multiple matches within a page can constitute a single conceptual \\\"Web page element\\\".",
-        "uuid": "dd8d689f-3547-81c7-9bd4-8a1a6edf30ac",
+        "uuid": "1746bb2c-8ed4-8c21-970c-4e01b6b4e4b2",
         "words": [
           "an",
           "xpath",
@@ -102141,7 +108071,7 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
       {
         "key": "description",
         "source": "Use when reasoning about the criterion that decides what is canonical — zero entropy wins: of all forms of a thing, the LOWEST-entropy one (most ordered, DRY, integer, content-addressed) is the truth. The source erpax descends from (ceccec/zeropoint-node, the a432/vortex prior art): irrationality collapses to integer resonance (rodin digital-root, the horo ring), sprawl collapses to the uuid singularity, duplicates merge to one. The 0 everything radiates from and returns to.",
-        "uuid": "aad1bffe-5663-87a9-9011-0c716b785334",
+        "uuid": "ca2a182e-a646-8677-80aa-3cc01013977b",
         "words": [
           "use",
           "when",
@@ -102255,4 +108185,4 @@ export const TRANSLATIONS_CATALOGUE: readonly CatalogueEntry[] = [
   }
 ]
 
-export const TRANSLATIONS_COUNT = 2174
+export const TRANSLATIONS_COUNT = 2275

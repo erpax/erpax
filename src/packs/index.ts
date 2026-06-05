@@ -34,7 +34,7 @@
  * @accounting IFRS IAS-2 §10 finished-goods carried to dispatch
  * @audit ISO-19011:2018 audit-trail dispatch
  * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
- * @see src/packitems/index.ts (the pack lines that roll up into this carton)
+ * @see src/pack/items/index.ts (the pack lines that roll up into this carton)
  * @see src/lots/index.ts (the production lot this carton draws from)
  */
 import type {

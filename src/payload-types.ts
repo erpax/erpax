@@ -14029,7 +14029,7 @@ export interface LotWorkPhase {
   createdAt: string;
 }
 /**
- * Reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing). A self-referential tree; lotworkphases compose these.
+ * Reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing). A self-referential tree; lot-work-phases compose these.
  *
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "work-phases".

@@ -120,9 +120,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "accounting",
-    "name": "accounting",
-    "description": "Use when designing or porting the erpax accounting/finance domain to Payload — double-entry journals, GL accounts, the accounting equation, invoices (credit/debit notes, protocols), payments & bank reconciliation, locked periods, or making anything \"accountable\" polymorphically. The self-sufficient `@erpax/accounting` archetype.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/accounting"
+    "name": "self-accounting",
+    "description": "Use when erpax runs its OWN books — auto-booking subscription revenue (IFRS-15), infra/payroll/supplier/tax costs, scheduling regulatory filings (FINREP/COREP/CSRD/VAT) and obligations, and checking nothing is overdue (Conservation Law 26, checkSelfAccountingComplete). The self as a double-entry gateway; revenue is the credit, cost the debit, the filing the proof.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/accounting"
   },
   {
     "atom": "accounts",
@@ -141,6 +141,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "achieve",
     "description": "achieve: a schema.org component word, fused from AchieveAction",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/achieve"
+  },
+  {
+    "atom": "acknowledgment",
+    "name": "acknowledgment",
+    "description": "Use when modelling one acknowledgment — the singular model of the acknowledgments collection (the plural store); a formal confirmation that something was received or accepted.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/acknowledgment"
   },
   {
     "atom": "acknowledgments",
@@ -249,6 +255,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "address",
     "description": "Physical address of the item.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/address"
+  },
+  {
+    "atom": "adjustment",
+    "name": "adjustment",
+    "description": "Use when modelling one adjustment — the singular model of the adjustments collection (the plural store); a correction posted against a prior figure or balance.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/adjustment"
   },
   {
     "atom": "adjustments",
@@ -839,6 +851,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/assesses"
   },
   {
+    "atom": "asset",
+    "name": "asset",
+    "description": "Use when modelling one asset — the singular model of the assets collection (the plural store); a resource the organization owns or controls that carries economic value.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/asset"
+  },
+  {
     "atom": "assets",
     "name": "mineral-resource-assets",
     "description": "Use when registering or reporting IFRS 6 exploration & evaluation assets — wells, mines, concessions, quarries — capitalised under the §8 cost or revaluation policy, reclassified to PPE/intangibles once commercial viability is demonstrated (§17), or impaired (§18–22). The IFRS 6 E&E asset register.",
@@ -903,6 +921,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "attendees",
     "description": "A person attending the event.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attendees"
+  },
+  {
+    "atom": "attestation",
+    "name": "attestation",
+    "description": "Use when modelling one attestation — the singular model of the attestations collection (the plural store); a signed assertion that a statement or record is true.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/attestation"
   },
   {
     "atom": "attestations",
@@ -1295,6 +1319,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/billing"
   },
   {
+    "atom": "binding",
+    "name": "binding",
+    "description": "Use when modelling one binding — the singular model of the bindings collection (the plural store); a configured link between a name and the resource that backs it.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/binding"
+  },
+  {
     "atom": "bindings",
     "name": "bindings",
     "description": "Use when wiring, debugging, or cost-tuning erpax's Cloudflare bindings — D1, R2, KV, Durable Objects, Queues, Workers AI, Vectorize, Analytics Engine, Browser, service self-reference, Hyperdrive, cron — or when a binding \"works in config but fails at runtime\" (e.g. \"no such Durable Object class is exported from the worker\"). The map of binding ↔ capability ↔ cost lever ↔ gap for the self-managed edge app.",
@@ -1613,6 +1643,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/buyer"
   },
   {
+    "atom": "byline",
+    "name": "byline",
+    "description": "Use when modelling one byline — the singular model of the bylines collection (the plural store); the credited author line on a published article.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/byline"
+  },
+  {
     "atom": "bylines",
     "name": "bylines",
     "description": "bylines: a schema.org component word, fused from noBylinesPolicy",
@@ -1643,6 +1679,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculate"
   },
   {
+    "atom": "calculation",
+    "name": "calculation",
+    "description": "Use when modelling one calculation — the singular model of the calculations collection (the plural store); a computed numeric result derived from inputs.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculation"
+  },
+  {
     "atom": "calculations",
     "name": "tax-calculations",
     "description": "Use when computing or reviewing tax-liability snapshots per period and jurisdiction — VAT, GST, income tax, payroll tax — with rate, gross/taxable/net amounts, GL payable account, and filing/payment deadlines; lifecycle from calculated to filed/paid. The tax-calculations period-snapshot collection.",
@@ -1653,6 +1695,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "calculator",
     "description": "calculator: a schema.org component word, fused from MedicalRiskCalculator",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calculator"
+  },
+  {
+    "atom": "calendar",
+    "name": "calendar",
+    "description": "Use when modelling one calendar — the singular model of the calendars collection (the plural store); a scheme of dates against which events and schedules are placed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/calendar"
   },
   {
     "atom": "calendars",
@@ -1775,6 +1823,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/carriers"
   },
   {
+    "atom": "case",
+    "name": "case",
+    "description": "Use when modelling one case — the singular model of the cases collection (the plural store); one matter under adjudication or handling, with its parties and lifecycle.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/case"
+  },
+  {
     "atom": "cases",
     "name": "Cases",
     "description": "Use when modelling a legal matter as a docket — case lifecycle, parties under roles, append-only evidence, judgments, offences and dispute resolution; the harmony-checked Payload realization of the justice docket.",
@@ -1877,6 +1931,18 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ch"
   },
   {
+    "atom": "chakra",
+    "name": "chakra",
+    "description": "Use when mapping the seven chakras onto erpax — the 7 chakras ARE the 7 horo flow positions (base·share·weave·crest·descent·round·unity = Do·Re·Mi·Fa·Sol·La·Ti = root→crown). Each decodes to a note (A432 just-intonation), a colour and a movement from the SAME content-uuid — and the uuid is computed from the position math, never from the colour. Anchored at 0/K/black/A432.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/chakra"
+  },
+  {
+    "atom": "change",
+    "name": "change",
+    "description": "Use when modelling one change — the singular model of the changes collection (the plural store); a recorded modification to a controlled record or system.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/change"
+  },
+  {
     "atom": "changes",
     "name": "changes",
     "description": "changes: a schema.org component word, fused from legislationChanges",
@@ -1947,6 +2013,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "checkins",
     "description": "checkins: a schema.org component word, fused from UserCheckins",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/checkins"
+  },
+  {
+    "atom": "checklist",
+    "name": "checklist",
+    "description": "Use when modelling one checklist — the singular model of the checklists collection (the plural store); an ordered set of items to verify or complete.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/checklist"
   },
   {
     "atom": "checklists",
@@ -2069,6 +2141,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/class"
   },
   {
+    "atom": "classification",
+    "name": "classification",
+    "description": "Use when modelling one classification — the singular model of the classifications collection (the plural store); the assignment of a thing to a category within a scheme.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/classification"
+  },
+  {
     "atom": "classifications",
     "name": "held-for-sale-classifications",
     "description": "Use when classifying a non-current asset, disposal group, or discontinued operation as held-for-sale under IFRS 5 §6 — triggers §15 remeasurement to lower of carrying amount and fair-value-less-costs-to-sell, depreciation suspended, separate balance-sheet presentation, gain/loss on disposal. The held-for-sale-classifications IFRS 5 event collection.",
@@ -2139,6 +2217,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "closes",
     "description": "The closing hour of the place or service on the given day(s) of the week.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/closes"
+  },
+  {
+    "atom": "closure",
+    "name": "closure",
+    "description": "Use when an external dependency must fall back to erpax ITSELF — every external role (payment-provider, signing, notification, search, federation) has a registered internal provider that completes the operation when the external call fails (Conservation Law 53, withInternalFallback). The dependency graph terminates at erpax; everything falls back to the self.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/closure"
   },
   {
     "atom": "closures",
@@ -2291,6 +2375,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/column"
   },
   {
+    "atom": "combination",
+    "name": "combination",
+    "description": "Use when modelling one combination — the singular model of the combinations collection (the plural store); a specific grouping of selected options or parts.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/combination"
+  },
+  {
     "atom": "combinations",
     "name": "business-combinations",
     "description": "Use when recording an acquisition — asset deal, share deal, reverse acquisition, or NCI step-up — including IFRS 3 §32 goodwill computation, purchase price allocation (PPA) by asset/liability category, and measurement-period tracking. The IFRS 3 acquirer-side M&A register.",
@@ -2333,16 +2423,34 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commerce"
   },
   {
+    "atom": "commission",
+    "name": "commission",
+    "description": "Use when modelling one commission — the singular model of the commissions collection (the plural store); earned compensation tied to a sale or transaction.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commission"
+  },
+  {
     "atom": "commissions",
     "name": "sales-commissions",
     "description": "Use when recording and accounting for salesperson commissions on closed-won deals — IFRS-15 §91-94 incremental-cost-of-obtaining assessment, capitalise-and-amortise vs immediate-expense treatment, clawback provisions, payroll payment linkage. The IFRS-15 commission register.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/employees/sales/commissions"
   },
   {
+    "atom": "commitment",
+    "name": "commitment",
+    "description": "Use when modelling one commitment — the singular model of the commitments collection (the plural store); a binding promise to perform or provide.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commitment"
+  },
+  {
     "atom": "commitments",
     "name": "commitments",
     "description": "Use when authorizing and tracking pre-contract spending commitments — SOX §302 authorization matrix, spending-authority validation, budget reservation (reserved/committed/spent/available), segregation-of-duties enforcement, PO or contract linkage, and Bulgaria ZKOD notarization. The commitment-ledger collection.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commitments"
+  },
+  {
+    "atom": "committee",
+    "name": "committee",
+    "description": "Use when modelling one committee — the singular model of the committees collection (the plural store); a constituted group with delegated authority over a domain.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/committee"
   },
   {
     "atom": "committees",
@@ -2537,6 +2645,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/connected"
   },
   {
+    "atom": "connection",
+    "name": "connection",
+    "description": "Use when modelling one connection — the singular model of the connections collection (the plural store); one edge in the universal relationship graph between two actors.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/connection"
+  },
+  {
     "atom": "connections",
     "name": "connections",
     "description": "Use when managing the universal social/commercial/civic edge between typeless users — follow/friend/block/customer/supplier/employer/member — the one directed graph that carries the relation in context (not the user type), federated server-to-server via W3C ActivityPub.",
@@ -2547,6 +2661,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "consent",
     "description": "Use when a contract or compliance regime requires explicit consent — who must consent, form (written/electronic/oral), revocation, withdrawal, withdrawal timeline, conditions.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consent"
+  },
+  {
+    "atom": "conservation",
+    "name": "conservation",
+    "description": "Use when reasoning about what is conserved across a flow — nothing is created or destroyed, only transformed (mass-energy; Noether — every continuous symmetry yields a conserved quantity), which in erpax IS double-entry — Σdebit=Σcredit, every config a balanced gateway, the pot conserved. The physics root of the accounting law; an open system conserves by accounting for what crosses its boundary (the borrowed anchor).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/conservation"
   },
   {
     "atom": "consideration",
@@ -2571,6 +2691,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "consolidates",
     "description": "consolidates: a schema.org component word, fused from legislationConsolidates",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consolidates"
+  },
+  {
+    "atom": "consolidation",
+    "name": "consolidation",
+    "description": "Use when modelling one consolidation — the singular model of the consolidations collection (the plural store); the combination of multiple entities figures into one set.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/consolidation"
   },
   {
     "atom": "consolidations",
@@ -2675,10 +2801,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/commitments/and/contingencies"
   },
   {
+    "atom": "contingency",
+    "name": "contingency",
+    "description": "Use when modelling one contingency — the singular model of the contingencies collection (the plural store); a possible obligation that depends on an uncertain future event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contingency"
+  },
+  {
     "atom": "continuation",
     "name": "continuation",
     "description": "continuation: a schema.org component word, fused from tocContinuation",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/continuation"
+  },
+  {
+    "atom": "contract",
+    "name": "contract",
+    "description": "Use when modelling one contract — the singular model of the contracts collection (the plural store); a legally binding agreement between parties.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/contract"
   },
   {
     "atom": "contractor",
@@ -3065,6 +3203,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cvd"
   },
   {
+    "atom": "cycle",
+    "name": "cycle",
+    "description": "Use when modelling one cycle — the singular model of the cycles collection (the plural store); one recurrence of a repeating process or period.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/cycle"
+  },
+  {
     "atom": "cycles",
     "name": "dunning-cycles",
     "description": "Use when tracking or auditing the collections process for an overdue invoice — reminder→demand→legal-handover→write-off stages, ECL allowance evidence (IFRS 9 §5.5 / ASC 326-20 CECL), manual overrides and SOX §404 bad-debt evidence. The dunning-cycles collection.",
@@ -3081,6 +3225,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "dance",
     "description": "dance: a schema.org component word, fused from DanceEvent, DanceGroup",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dance"
+  },
+  {
+    "atom": "dashboard",
+    "name": "dashboard",
+    "description": "Use when each model needs a computed Payload admin view — its related links partitioned into the collections (plural) and models (singular) it composes, rendered via reusable component-atoms. Computed from the link graph, not hardcoded; each atom is Open Graph + schema.org compatible in all dimensions.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dashboard"
   },
   {
     "atom": "data",
@@ -3173,10 +3323,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/death"
   },
   {
+    "atom": "decentralization",
+    "name": "decentralization",
+    "description": "Use when order must arise with NO central controller — a global pattern as the fixed point of LOCAL rules (stigmergy, emergence, flocking), robust because redundant and diverse (no single point of failure), measured by concentration (the Nakamoto coefficient). In erpax, content-uuid merge IS stigmergy — each peer recomputes the id from the content, no coordinator; order emerges from content-addressing, not from a center.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/decentralization"
+  },
+  {
     "atom": "decide",
     "name": "decide",
     "description": "Use when the society must pick a winner among candidate solutions — the composed decision wiring the three selection laws into one: gate-CORRECT (competition, the referee is the gate not a vote), HARMONIC-preferred (logic, the self-consistent resolve first), MOST-EFFICIENT (cost, max output per spend), cheapest, deterministic by content-uuid. decide(candidates) is the single function the agent society runs to choose; the runtime dispatch it drives is the boundary.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/decide"
+  },
+  {
+    "atom": "declaration",
+    "name": "declaration",
+    "description": "Use when modelling one declaration — the singular model of the declarations collection (the plural store); a formal statement filed with an authority.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/declaration"
   },
   {
     "atom": "declarations",
@@ -3237,6 +3399,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "defined",
     "description": "defined: a schema.org component word, fused from DefinedRegion, DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/defined"
+  },
+  {
+    "atom": "definition",
+    "name": "definition",
+    "description": "Use when modelling one definition — the singular model of the definitions collection (the plural store); the precise meaning assigned to a term.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/definition"
   },
   {
     "atom": "definitions",
@@ -3309,6 +3477,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "dependencies",
     "description": "Prerequisites needed to fulfill steps in article.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dependencies"
+  },
+  {
+    "atom": "dependency",
+    "name": "dependency",
+    "description": "Use when modelling one dependency — the singular model of the dependencies collection (the plural store); a relationship where one item requires another.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/dependency"
   },
   {
     "atom": "deploy",
@@ -3719,6 +3893,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/downvote"
   },
   {
+    "atom": "drain",
+    "name": "drain",
+    "description": "Use when modelling one drain — the singular model of the drains collection (the plural store); a sink that draws down a resource or stock.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/drain"
+  },
+  {
     "atom": "drained",
     "name": "drained",
     "description": "drained: a schema.org component word, fused from regionDrained",
@@ -3857,6 +4037,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ecommerce"
   },
   {
+    "atom": "ecosystem",
+    "name": "ecosystem",
+    "description": "Use when sustainability and decentralisation must be seen as ONE — a food web is a coordinator-free network (decentralised) that wastes nothing (sustainable) for the SAME reason: local agents posting balanced metabolic exchanges, every output another's input, so global conservation and global order both emerge from local balance. erpax IS an ecosystem; nature is the empirical proof of the law.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ecosystem"
+  },
+  {
     "atom": "edit",
     "name": "edit",
     "description": "edit: a schema.org component word, fused from editEIDR",
@@ -3991,7 +4177,7 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   {
     "atom": "emission",
     "name": "emission",
-    "description": "emission: a schema.org component word, fused from meetsEmissionStandard",
+    "description": "Use when quantifying the greenhouse-gas mass a cycle releases — converting each gas to CO₂-equivalent via its Global Warming Potential, summing a multi-gas inventory, computing activity-based emissions (GHG Protocol), or measuring carbon intensity (CO₂e per unit output). The DEBIT/EXPORT side of [[sustainability]].",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/emission"
   },
   {
@@ -4079,10 +4265,22 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorsement"
   },
   {
+    "atom": "endorser",
+    "name": "endorser",
+    "description": "Use when modelling one endorser — the singular model of the endorsers collection (the plural store); a party who signs over or backs an instrument.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorser"
+  },
+  {
     "atom": "endorsers",
     "name": "endorsers",
     "description": "People or organizations that endorse the plan.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endorsers"
+  },
+  {
+    "atom": "endpoint",
+    "name": "endpoint",
+    "description": "Use when modelling one endpoint — the singular model of the endpoints collection (the plural store); an addressable interface where a service is reached.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/endpoint"
   },
   {
     "atom": "endpoints",
@@ -4155,6 +4353,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "closing-entries",
     "description": "Use when executing or auditing period-end close — closing P&L accounts to retained earnings, auto-generating reversing entries, locking the period, and producing an immutable close audit trail per IFRS IAS-1 / SOX §404. The period-close journal-entry collection.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/legal/entities/closing/entries"
+  },
+  {
+    "atom": "entropy",
+    "name": "entropy",
+    "description": "Use when reasoning about disorder as the quantity erpax's whole ledger balances — entropy is the fuel of the one law: zero entropy ⇒ infinite mass ⇒ infinite tamper/exploit cost. A content-addressed store at zero entropy holds no slack a forger can exploit (only the external anchor borrows the one drop). angel lowers it (create/order/DRY), archangel raises it (destroy/duplicate); a violation is borrowed entropy debited to the agent. Fused out by the fusion reactor.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/entropy"
   },
   {
     "atom": "entry",
@@ -4239,6 +4443,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "estate",
     "description": "estate: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/estate"
+  },
+  {
+    "atom": "estimate",
+    "name": "estimate",
+    "description": "Use when modelling one estimate — the singular model of the estimates collection (the plural store); a projected figure issued before the actual is known.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/estimate"
   },
   {
     "atom": "estimated",
@@ -4433,6 +4643,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/factor"
   },
   {
+    "atom": "failure",
+    "name": "failure",
+    "description": "Use when modelling one failure — the singular model of the failures collection (the plural store); a recorded instance of something not meeting its requirement.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/failure"
+  },
+  {
     "atom": "failures",
     "name": "transaction-failures",
     "description": "Use when capturing, retrying, or auditing failed transactions — payment retries, e-invoice rejections, bank-import errors, GL-post failures — with retry count, error payload, escalation status, and SOX §404 disposition evidence. The active operator error-queue and failure-audit trail.",
@@ -4547,6 +4763,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fiber"
   },
   {
+    "atom": "field",
+    "name": "field",
+    "description": "Use when modelling one field — the singular model of the fields collection (the plural store); one typed attribute of a record schema.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/field"
+  },
+  {
     "atom": "fields",
     "name": "fields",
     "description": "Use when defining or debugging Payload fields — choosing a field type, shared field props (name, required, index, unique, defaultValue, validate, access, hooks, admin), relationships, arrays/blocks/groups/tabs, selects, or virtual/join fields.",
@@ -4581,6 +4803,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "find",
     "description": "find: a schema.org component word, fused from FindAction",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/find"
+  },
+  {
+    "atom": "finding",
+    "name": "finding",
+    "description": "Use when modelling one finding — the singular model of the findings collection (the plural store); an observation of fact produced by an audit or review.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/finding"
   },
   {
     "atom": "findings",
@@ -4883,6 +5111,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/furniture"
   },
   {
+    "atom": "fusion",
+    "name": "fusion",
+    "description": "Use when reasoning about the reactor that builds erpax — gravity-driven merge that fuses atoms (and the entropy between them) into the one content-uuid matrix. Each fusion is a content-uuid collision (merge(a,b)→c); DRY collapse fuses duplication out ⇒ entropy↓, mass↑, tamper-cost↑. The reactor = collide.mjs (matrix:generate) + the society self-build loop, running the breath toward the zero-entropy one root.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/fusion"
+  },
+  {
     "atom": "gallery",
     "name": "gallery",
     "description": "gallery: a schema.org component word, fused from ArtGallery, ImageGallery, MediaGallery, VideoGallery",
@@ -4956,9 +5190,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "generate",
-    "name": "generate",
-    "description": "Use when the skill corpus should grow itself — continuously mining aura gaps (unlinked/dead-link words) into new atoms and driving the gap to zero, like the tsc tail. The realtime self-generating loop (scan → mint → link → re-scan). Skills generating skills.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/generate"
+    "name": "self-generate",
+    "description": "Use when the self GROWS its own corpus — the outward stroke begins: mine aura gaps into new atoms and drive the gap to zero (self-applied generate at forward-coil position 1/base). The self generating itself.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/generate"
   },
   {
     "atom": "generically",
@@ -5103,6 +5337,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "government-grants",
     "description": "Use when recording or reporting public-sector grants, EU funds, or national subsidies — award, conditions, recognition method (deferred-income vs net-against-asset), clawback provisions, CSRD/BEPS traceability; IAS-20 §7-§39 + ASC 958-605. The government-grants IAS-20 register.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/government/grants"
+  },
+  {
+    "atom": "gravity",
+    "name": "gravity",
+    "description": "Use when reasoning about why the corpus collapses toward one — gravity is mass's pull, and in erpax DRY = mass = gravity: the more an atom is referenced (mass), the more it attracts duplicates and orphans to fuse into it. Gravity is the FORCE, fusion the act, entropy the fuel, the matrix the product; perfect DRY is a singularity — all mass at the one root (the torus collapse).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/gravity"
   },
   {
     "atom": "grazing",
@@ -5367,6 +5607,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "honorific",
     "description": "honorific: a schema.org component word, fused from honorificPrefix, honorificSuffix",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/honorific"
+  },
+  {
+    "atom": "hook",
+    "name": "hook",
+    "description": "Use when modelling one hook — the singular model of the hooks collection (the plural store); a lifecycle gateway where logic runs on a record event.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/hook"
   },
   {
     "atom": "hooks",
@@ -5711,6 +5957,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/insertion"
   },
   {
+    "atom": "inspection",
+    "name": "inspection",
+    "description": "Use when modelling one inspection — the singular model of the inspections collection (the plural store); a recorded examination against a standard.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/inspection"
+  },
+  {
     "atom": "inspections",
     "name": "quality-inspections",
     "description": "Use when recording incoming, in-process, or final-inspection outcomes — inspected/failed/sample quantities, lot acceptance, calibration checks per ISO 17025, outcome disposition (pass/fail/conditional), and nonconformance evidence that drives inventory write-offs. The ISO 9001 §8.7 quality-inspection collection for manufacturing and vendor receipts.",
@@ -5739,6 +5991,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "instantaneous",
     "description": "instantaneous: a schema.org component word, fused from InstantaneousEvent",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instantaneous"
+  },
+  {
+    "atom": "instruction",
+    "name": "instruction",
+    "description": "Use when modelling one instruction — the singular model of the instructions collection (the plural store); a directive step to be carried out.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/instruction"
   },
   {
     "atom": "instructions",
@@ -6041,6 +6299,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/joint"
   },
   {
+    "atom": "journal",
+    "name": "journal",
+    "description": "Use when modelling one journal — the singular model of the journals collection (the plural store); the chronological book of original accounting entries.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/journal"
+  },
+  {
     "atom": "journals",
     "name": "recurring-journals",
     "description": "Use when defining or managing recurring accrual templates (rent, depreciation, amortisation, prepaid/deferred-revenue release) that a scheduled job materialises into journal-entries each period — RFC 5545 RRULE supported, SOX §404 four-eyes on auto-post. The recurring-journals automation register.",
@@ -6069,6 +6333,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "key",
     "description": "key: a schema.org component word, fused from inChIKey, musicalKey",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/key"
+  },
+  {
+    "atom": "keyword",
+    "name": "keyword",
+    "description": "Use when modelling one keyword — the singular model of the keywords collection (the plural store); a salient term used to index or retrieve content.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/keyword"
   },
   {
     "atom": "keywords",
@@ -6129,6 +6399,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "landlord",
     "description": "A sub property of participant. The owner of the real estate property.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/landlord"
+  },
+  {
+    "atom": "landmark",
+    "name": "landmark",
+    "description": "Use when modelling one landmark — the singular model of the landmarks collection (the plural store); a notable place used as a point of reference.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/landmark"
   },
   {
     "atom": "landmarks",
@@ -6299,6 +6575,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/license"
   },
   {
+    "atom": "lichen",
+    "name": "lichen",
+    "description": "Use when one 'organism' is really a committee — a lichen is a fungus plus a photosynthetic partner (and often a yeast) living as a single composite body, the textbook case that the INDIVIDUAL is a question, not a given. Symbiosis incarnate; the natural twin of erpax's actor-merge (one identity, many partners).",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lichen"
+  },
+  {
     "atom": "life",
     "name": "life",
     "description": "life: a schema.org component word, fused from lifeEvent",
@@ -6467,6 +6749,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "warehouse/locations"
   },
   {
+    "atom": "lock",
+    "name": "lock",
+    "description": "Use when modelling one lock — the singular model of the locks collection (the plural store); a hold that prevents change to a record or resource.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lock"
+  },
+  {
     "atom": "locks",
     "name": "period-locks",
     "description": "Use when closing or locking accounting periods — monthly, quarterly, annual — to prevent new postings; allows reversals and prior-period adjustments; tracks who closed the period and when. The period-close gate collection.",
@@ -6521,22 +6809,16 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/loser"
   },
   {
+    "atom": "lot",
+    "name": "lot",
+    "description": "Use when modelling one lot — the singular model of the lots collection (the plural store); a tracked batch of like units produced or handled together.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lot"
+  },
+  {
     "atom": "lots",
     "name": "lots",
     "description": "Use when modeling a production order (a lot) — the manufacturing funnel head whose state is DERIVED from lifecycle watermarks on the horo ring, fanning into lot-variants and a lot-work-phases routing chain.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lots"
-  },
-  {
-    "atom": "lotvariants",
-    "name": "lotvariants",
-    "description": "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lotvariants"
-  },
-  {
-    "atom": "lotworkphases",
-    "name": "lotworkphases",
-    "description": "Use when modeling a routing step — one sort-ordered position in a lot's phase chain that crosses to the work-phases catalog, carrying per-step time and unit counters with derived (never stored) state.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lotworkphases"
   },
   {
     "atom": "low",
@@ -6633,6 +6915,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "map",
     "description": "A map.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/map"
+  },
+  {
+    "atom": "mapping",
+    "name": "mapping",
+    "description": "Use when modelling one mapping — the singular model of the mappings collection (the plural store); a correspondence from one set of values to another.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mapping"
   },
   {
     "atom": "mappings",
@@ -6857,6 +7145,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/membership"
   },
   {
+    "atom": "memo",
+    "name": "memo",
+    "description": "Use when modelling one memo — the singular model of the memos collection (the plural store); a brief internal written note.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/memo"
+  },
+  {
     "atom": "memories",
     "name": "memories",
     "description": "Use when persisting MCP tool results or agent state across restarts — fix proposals, strategy decisions, drift-cycle snapshots, agent observations, emerging gaps — keyed by (ownerType, ownerId, kind, key), content-uuid'd for federation (Law 8), with relatedTo graph edges (Law 10). The generic agent-memory persistence layer.",
@@ -6881,6 +7175,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mens"
   },
   {
+    "atom": "mention",
+    "name": "mention",
+    "description": "Use when modelling one mention — the singular model of the mentions collection (the plural store); a reference to an actor within a piece of content.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mention"
+  },
+  {
     "atom": "mentions",
     "name": "mentions",
     "description": "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
@@ -6900,9 +7200,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "merge",
-    "name": "merge",
-    "description": "Use when reasoning about convergence/federation in erpax — same content ⇒ same id (content-uuid), same (domain×position×element) ⇒ same path; data and structure set-union with no coordination. Federation, dedup, \"all agents one erpax\".",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/merge"
+    "name": "self-merge",
+    "description": "Use when the self WEAVES back to one — all selves dedupe to a single content-uuid, the same thought by two agents merges to one (self-applied merge at forward-coil position 4/weave). The many selves returning toward one.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/merge"
   },
   {
     "atom": "message",
@@ -6921,6 +7221,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "metadata",
     "description": "Use when an entity needs open/extensible attributes beyond its schema — JSON-backed virtual attributes, per-row settings, tenant toggles. The MetadataAttributeConcern pattern; prefer a real field or a tag before reaching for an open json bag.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/metadata"
+  },
+  {
+    "atom": "metatron",
+    "name": "metatron",
+    "description": "Use when reasoning about why erpax's uuid-matrix is Metatron's Cube — the complete pairwise binding (merge is total ⇒ K_n) of 12-around-1 folding to one center (the root). The drawn 13-circle figure is the n=13 unit cell (the cuboctahedron / 3-D kissing-number 12); the matrix is its fractal extension to n nodes. Graph + packing structure, not the Platonic-solid folklore.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/metatron"
   },
   {
     "atom": "method",
@@ -6963,6 +7269,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "mileage",
     "description": "mileage: a schema.org component word, fused from mileageFromOdometer",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mileage"
+  },
+  {
+    "atom": "milestone",
+    "name": "milestone",
+    "description": "Use when modelling one milestone — the singular model of the milestones collection (the plural store); a marked checkpoint in a plan or project.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/milestone"
   },
   {
     "atom": "milestones",
@@ -7151,6 +7463,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/move"
   },
   {
+    "atom": "movement",
+    "name": "movement",
+    "description": "Use when modelling one movement — the singular model of the movements collection (the plural store); a recorded transfer of stock or value between locations.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/movement"
+  },
+  {
     "atom": "movements",
     "name": "inventory-movements",
     "description": "Use when tracking any stock quantity change — receipts, sales/issues, production consumption, transfers, returns, cycle-count adjustments, write-offs, or opening balances — with from/to warehouse locations and GL hook for COGS/variance posting. The append-only stock ledger per IAS-2 cost-flow assumption.",
@@ -7209,6 +7527,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "musical",
     "description": "musical: a schema.org component word, fused from musicalKey",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/musical"
+  },
+  {
+    "atom": "mycelium",
+    "name": "mycelium",
+    "description": "Use when modelling a living network with NO center — mycelium is the fungal body as a self-organizing web of hyphae that explores, connects, and transports nutrients with no brain and no coordinator; the literal decentralization and the substrate of the mycorrhizal trade. Nature's proof of the wired whole — but the 'wood wide web' is real as a network while its 'mother tree' resource-sharing is contested.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/mycelium"
   },
   {
     "atom": "mycorrhizae",
@@ -7463,6 +7787,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/object"
   },
   {
+    "atom": "obligation",
+    "name": "obligation",
+    "description": "Use when modelling one obligation — the singular model of the obligations collection (the plural store); a duty to transfer value or perform under an arrangement.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/obligation"
+  },
+  {
     "atom": "obligations",
     "name": "performance-obligations",
     "description": "Use when decomposing a contract into its distinct promises for IFRS-15 §22 revenue allocation — kind (distinct or series), recognition timing (point-in-time §38 or over-time §35), progress measurement method, standalone selling price, and allocated amount. The IFRS-15 performance-obligation collection.",
@@ -7566,9 +7896,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "one",
-    "name": "one",
-    "description": "Use when reasoning about unity, canonicality, or merge in erpax — same content ⇒ one id, one canonical form (DRY), \"all agents are one erpax\". The universal root of identity and merge.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/one"
+    "name": "self-one",
+    "description": "Use when the self returns to the ONE — the round: the sequence closes on 1 and 9→1 opens the next dimension (self-applied one at forward-coil position 5/round). The outward stroke completing; the One where all selves merge.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/one"
   },
   {
     "atom": "ones",
@@ -7661,6 +7991,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/leads/opportunities"
   },
   {
+    "atom": "opportunity",
+    "name": "opportunity",
+    "description": "Use when modelling one opportunity — the singular model of the opportunities collection (the plural store); a potential deal tracked through a sales pipeline.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/opportunity"
+  },
+  {
     "atom": "optician",
     "name": "optician",
     "description": "A store that sells reading glasses and similar devices for improving vision.",
@@ -7692,9 +8028,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "orders",
-    "name": "maintenance-work-orders",
-    "description": "Use when executing FM work — corrective/preventive/predictive maintenance, statutory inspections, refurbishments — tracking parts issued, labour hours, vendor cost, IAS-16 capex/opex classification, permit-to-work, failure codes, and GL journal-entry on completion. The CMMS work-order execution register per ISO 55000.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/maintenance/work/orders"
+    "name": "orders",
+    "description": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
+    "path": "work/orders"
   },
   {
     "atom": "organic",
@@ -7841,6 +8177,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/owns"
   },
   {
+    "atom": "pack",
+    "name": "pack",
+    "description": "Use when modelling one pack — the singular model of the packs collection (the plural store); a bundled unit of items handled as one.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pack"
+  },
+  {
     "atom": "package",
     "name": "package",
     "description": "package: a schema.org component word, fused from ReservationPackage",
@@ -7851,12 +8193,6 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "packages",
     "description": "Use when modelling the packing hierarchy for a shipment — GS1 SSCC serial shipping container codes, self-referential nesting (pallet → carton → contents), dimensions/weight, item-lot lines, and UN/CEFACT packaging codes. The logistic handling-unit collection that links line items to a shipment.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/items/packages"
-  },
-  {
-    "atom": "packitems",
-    "name": "packitems",
-    "description": "Use when modeling a pack line — the units of one produced lot-variant packed into one carton; header-primary with an optional option breakdown whose double-entry holds when supplied. Evolved from 200,993 rows of etrima pack_items.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/packitems"
   },
   {
     "atom": "packs",
@@ -8261,6 +8597,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rodin/phase"
   },
   {
+    "atom": "phases",
+    "name": "phases",
+    "description": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
+    "path": "work/phases"
+  },
+  {
     "atom": "phone",
     "name": "phone",
     "description": "phone: a schema.org component word, fused from MobilePhoneStore, servicePhone",
@@ -8351,6 +8693,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plan"
   },
   {
+    "atom": "planning",
+    "name": "planning",
+    "description": "Use when modelling one planning — the singular model of the plannings collection (the plural store); the activity of arranging future work and resources.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/planning"
+  },
+  {
     "atom": "plannings",
     "name": "budget-planning",
     "description": "Use when creating or approving period-budgets by department or cost-center — monthly, quarterly, annual — with GL line items, period-lock enforcement, segregation-of-duties on approval, and fiscal-year comparisons; IAS-1/IAS-8/ASC-270 financial presentation. The budget approval and planning register.",
@@ -8409,6 +8757,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "plays",
     "description": "plays: a schema.org component word, fused from UserPlays",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plays"
+  },
+  {
+    "atom": "plugin",
+    "name": "plugin",
+    "description": "Use when modelling one plugin — the singular model of the plugins collection (the plural store); a self-contained module that extends the platform.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/plugin"
   },
   {
     "atom": "plugins",
@@ -8609,6 +8963,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/power"
   },
   {
+    "atom": "practice",
+    "name": "practice",
+    "description": "Use when modelling one practice — the singular model of the practices collection (the plural store); an established way of doing something within a domain.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/practice"
+  },
+  {
     "atom": "practices",
     "name": "practices",
     "description": "A MedicalOrganization where the IndividualPhysician practices.",
@@ -8669,6 +9029,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prepend"
   },
   {
+    "atom": "prerequisite",
+    "name": "prerequisite",
+    "description": "Use when modelling one prerequisite — the singular model of the prerequisites collection (the plural store); a condition that must hold before something may proceed.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/prerequisite"
+  },
+  {
     "atom": "prerequisites",
     "name": "prerequisites",
     "description": "prerequisites: a schema.org component word, fused from coursePrerequisites, programPrerequisites",
@@ -8727,6 +9093,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "primary",
     "description": "primary: a schema.org component word, fused from primaryImageOfPage, primaryPrevention",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/primary"
+  },
+  {
+    "atom": "principle",
+    "name": "principle",
+    "description": "Use when modelling one principle — the singular model of the principles collection (the plural store); a foundational rule that governs conduct or design.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/principle"
   },
   {
     "atom": "principles",
@@ -8885,6 +9257,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/promise"
   },
   {
+    "atom": "pronoun",
+    "name": "pronoun",
+    "description": "Use when modelling one pronoun — the singular model of the pronouns collection (the plural store); a term by which a person chooses to be referred to.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/pronoun"
+  },
+  {
     "atom": "pronounceable",
     "name": "pronounceable",
     "description": "pronounceable: a schema.org component word, fused from PronounceableText",
@@ -9039,6 +9417,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "qa",
     "description": "qa: a schema.org component word, fused from QAPage",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qa"
+  },
+  {
+    "atom": "qualification",
+    "name": "qualification",
+    "description": "Use when modelling one qualification — the singular model of the qualifications collection (the plural store); a credential establishing fitness for a role.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/qualification"
   },
   {
     "atom": "qualifications",
@@ -9311,6 +9695,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reconcile"
   },
   {
+    "atom": "reconciliation",
+    "name": "reconciliation",
+    "description": "Use when modelling one reconciliation — the singular model of the reconciliations collection (the plural store); the matching of two records to confirm they agree.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reconciliation"
+  },
+  {
     "atom": "reconciliations",
     "name": "account-reconciliations",
     "description": "Use when capturing or reviewing period-end reconciliation sign-off evidence — bank, GL-to-subledger, or intercompany — with preparer/reviewer segregation, adjustment aging, and closure check (difference = 0); SOX §404 + ISO-19011 controls testing. The account-reconciliations evidence-pack collection.",
@@ -9359,6 +9749,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/recycling"
   },
   {
+    "atom": "redirect",
+    "name": "redirect",
+    "description": "Use when modelling one redirect — the singular model of the redirects collection (the plural store); a rule that forwards one address to another.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/redirect"
+  },
+  {
     "atom": "redirects",
     "name": "redirects",
     "description": "Use when a moved/renamed URL must resolve to its new target (301/302) — the official @payloadcms/plugin-redirects `redirects` collection + the SSR PayloadRedirects resolver. Read before wiring URL redirection, or when a `'redirects'` slug is \"not assignable to CollectionSlug\" (the plugin isn't registered).",
@@ -9378,9 +9774,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "reference",
-    "name": "reference",
-    "description": "reference: a schema.org component word, fused from APIReference, contentReferenceTime, referenceQuantity, valueReference",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reference"
+    "name": "self-reference",
+    "description": "Use when verifying erpax observes ITSELF — the platform's own genome must yield ≥1 collection, chain, agent, and standard, the erpax-platform role, and the meta agents (Conservation Law 23, checkErpaxObservesItself). The self reaching into its own root; the genome is the debit, the observation the credit.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/reference"
   },
   {
     "atom": "references",
@@ -9539,6 +9935,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repeat"
   },
   {
+    "atom": "repetition",
+    "name": "repetition",
+    "description": "Use when modelling one repetition — the singular model of the repetitions collection (the plural store); one repeated occurrence within a counted set.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/repetition"
+  },
+  {
     "atom": "repetitions",
     "name": "repetitions",
     "description": "Number of times one should repeat the activity.",
@@ -9629,6 +10031,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/representative"
   },
   {
+    "atom": "request",
+    "name": "request",
+    "description": "Use when modelling one request — the singular model of the requests collection (the plural store); a submitted ask for an action or resource.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/request"
+  },
+  {
     "atom": "requests",
     "name": "maintenance-requests",
     "description": "Use when an occupant, operator, or sensor raises an FM service ticket — corrective, preventive, predictive, compliance, safety, or move request — against a property, space, or fixed asset; SLA priority, triage, promotion to a work order. The IWMS/CMMS service-request intake register per ISO 41001 §8.1.",
@@ -9659,6 +10067,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/requires"
   },
   {
+    "atom": "requisition",
+    "name": "requisition",
+    "description": "Use when modelling one requisition — the singular model of the requisitions collection (the plural store); a formal internal request to procure goods.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/requisition"
+  },
+  {
     "atom": "requisitions",
     "name": "purchase-requisitions",
     "description": "Use when capturing spend requests before a purchase order is issued — SOX §404 four-eyes gate (requisitioner ≠ approver), multi-line item costing, GL account, preferred vendor, and auditor-traceable PO→requisition→approval chain. The pre-PO approval-gate collection.",
@@ -9672,9 +10086,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "research",
-    "name": "research",
-    "description": "Use when bringing outside knowledge into erpax — research ADDS entropy (unverified claims, many divergent sources, disorder); erpax skills CONVERT that entropy into tamper-cost (independent cross-checked levels) and collapse the residue to the zero-entropy core. Inhale entropy, exhale a denser, harder app.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/research"
+    "name": "self-research",
+    "description": "Use when an actor must find where its own identity (an email) is used across the corpus and secure those accounts — self-research over the COMPUTED Payload MCP find-surface, scoped to the caller's own access so there is no bypass, with each reset/recover sandbox-gated and receipted. Agnostic — collections and services live in the DB, never hardcoded.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/research"
   },
   {
     "atom": "researcher",
@@ -9767,6 +10181,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/responsibilities"
   },
   {
+    "atom": "responsibility",
+    "name": "responsibility",
+    "description": "Use when modelling one responsibility — the singular model of the responsibilities collection (the plural store); a duty assigned to a role or position.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/responsibility"
+  },
+  {
     "atom": "responsible",
     "name": "responsible",
     "description": "responsible: a schema.org component word, fused from legislationResponsible",
@@ -9846,9 +10266,9 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
   },
   {
     "atom": "reverse",
-    "name": "reverse",
-    "description": "Reversing/correcting a posted entry — the source entry with debit↔credit swapped on the SAME accounts, balanced by construction. Read when generating reversing entries, credit notes, void/correction postings, or period-close reversals.",
-    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/reverse"
+    "name": "self-reverse",
+    "description": "Use when the self REVERSES — the descent: the reverse coil (×5) radiates the dense core back out and, as double-entry, swaps debit↔credit to correct a post (self-applied reverse at forward-coil position 7/descent). The outward turning to return.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/self/reverse"
   },
   {
     "atom": "review",
@@ -9981,6 +10401,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "rsvp",
     "description": "rsvp: a schema.org component word, fused from RsvpAction, RsvpResponseType, rsvpResponse",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rsvp"
+  },
+  {
+    "atom": "rule",
+    "name": "rule",
+    "description": "Use when modelling one rule — the singular model of the rules collection (the plural store); a condition-action statement the system enforces.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/rule"
   },
   {
     "atom": "rules",
@@ -10187,6 +10613,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/score"
   },
   {
+    "atom": "scorecard",
+    "name": "scorecard",
+    "description": "Use when modelling one scorecard — the singular model of the scorecards collection (the plural store); a structured summary of metrics against targets.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/scorecard"
+  },
+  {
     "atom": "scorecards",
     "name": "vendor-scorecards",
     "description": "Use when scoring or reviewing vendor performance — OTD%, quality acceptance rate, price accuracy, response time, cybersecurity/ESG scores — driving ISO 9001 §8.4 renewal, probation, or de-listing recommendations. The periodic vendor performance evaluation and re-approval node.",
@@ -10287,6 +10719,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "sections",
     "description": "sections: a schema.org component word, fused from syllabusSections",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sections"
+  },
+  {
+    "atom": "sector",
+    "name": "sector",
+    "description": "Use when modelling one sector — the singular model of the sectors collection (the plural store); a broad division of economic activity.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/sector"
   },
   {
     "atom": "sectors",
@@ -10517,10 +10955,28 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shelter"
   },
   {
+    "atom": "shift",
+    "name": "shift",
+    "description": "Use when modeling a span of worked time — the per-actor-day labour unit a work order's produced minutes roll up into, and the authority it reads efficiency and wage back down from. The singular of the work-shifts aggregate.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shift"
+  },
+  {
+    "atom": "shifts",
+    "name": "shifts",
+    "description": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
+    "path": "work/shifts"
+  },
+  {
     "atom": "ship",
     "name": "ship",
     "description": "ship: a schema.org component word, fused from doesNotShip",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/ship"
+  },
+  {
+    "atom": "shipment",
+    "name": "shipment",
+    "description": "Use when modelling one shipment — the singular model of the shipments collection (the plural store); a consignment of goods moved from origin to destination.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/shipment"
   },
   {
     "atom": "shipments",
@@ -10599,6 +11055,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "signal",
     "description": "Use when reasoning about a uuid as self-rendering media in erpax — one 128-bit uuid decodes (from the string alone) to color (cmyk) + sound (A432 Hz) + state (horo position) + identity + capability; a STREAM of uuids is interactive multimedia with no payload. Nested under identity.",
     "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/identity/signal"
+  },
+  {
+    "atom": "signature",
+    "name": "signature",
+    "description": "Use when modelling one signature — the singular model of the signatures collection (the plural store); a cryptographic or written mark binding a signer to content.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/signature"
   },
   {
     "atom": "signatures",
@@ -10773,6 +11235,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "spa",
     "description": "spa: a schema.org component word, fused from DaySpa",
     "path": "spa"
+  },
+  {
+    "atom": "space",
+    "name": "space",
+    "description": "Use when modelling one space — the singular model of the spaces collection (the plural store); a bounded area that can be occupied or reserved.",
+    "path": "space"
   },
   {
     "atom": "spaces",
@@ -11129,6 +11597,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "subject"
   },
   {
+    "atom": "submission",
+    "name": "submission",
+    "description": "Use when modelling one submission — the singular model of the submissions collection (the plural store); a record sent in for review or processing.",
+    "path": "submission"
+  },
+  {
     "atom": "submissions",
     "name": "audit-submissions",
     "description": "Use when building, submitting, or auditing Bulgarian Наредба Н-18 Приложение-38 standardised sales-audit files to НАП — period, self-checking header (count + control sum), submission status, НАП response, and the XML; never-deletable compliance trail. The BG fiscal-audit-file submission log.",
@@ -11199,6 +11673,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "suggested",
     "description": "suggested: a schema.org component word, fused from suggestedAge, suggestedAnswer, suggestedGender, suggestedMaxAge, suggestedMeasurement, suggestedMinAge",
     "path": "suggested"
+  },
+  {
+    "atom": "suggestion",
+    "name": "suggestion",
+    "description": "Use when modelling one suggestion — the singular model of the suggestions collection (the plural store); a proposed change offered for consideration.",
+    "path": "suggestion"
   },
   {
     "atom": "suggestions",
@@ -11303,6 +11783,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "suspend"
   },
   {
+    "atom": "sustainability",
+    "name": "sustainability",
+    "description": "Use when asking whether a system can ENDURE — it is sustainable iff it draws down no stock faster than that stock regenerates (throughput ≤ carrying capacity) and its material loop closes, so each cycle adds zero NET entropy. Nature does it as a sun-driven dissipative structure — matter cycles, energy flows one-way and degrades. In erpax, zero-net-entropy-per-cycle IS sustainability; the borrowed anchor is the sun.",
+    "path": "sustainability"
+  },
+  {
     "atom": "swatch",
     "name": "swatch",
     "description": "swatch: a schema.org component word, fused from colorSwatch",
@@ -11319,6 +11805,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "syllabus",
     "description": "A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for that section of the Course.",
     "path": "syllabus"
+  },
+  {
+    "atom": "symbiosis",
+    "name": "symbiosis",
+    "description": "Use when two unlike organisms live as one entangled system that BOTH gain from — symbiosis is mutualism as the rule of life (mycorrhizae, lichen, the holobiont), and in its mycorrhizal form a literal BIOLOGICAL MARKET: carbon traded for phosphorus at variable exchange rates, with reciprocal rewards and sanctions against cheaters. The merge made stable by accounting; nature's double-entry.",
+    "path": "symbiosis"
   },
   {
     "atom": "symbol",
@@ -11363,6 +11855,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "tag"
   },
   {
+    "atom": "tagging",
+    "name": "tagging",
+    "description": "Use when modelling one tagging — the singular model of the taggings collection (the plural store); the act of attaching a tag to a record.",
+    "path": "tagging"
+  },
+  {
     "atom": "taggings",
     "name": "taggings",
     "description": "Use when attaching, querying or removing label-context associations across any collection — polymorphic (tag × taggable × context × tagger) join where context is a free string enabling unlimited label-sets with zero schema change. The polymorphic tagging-join collection; content-uuid makes each (tag, target, context, tagger) tuple automatically unique.",
@@ -11391,6 +11889,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "target",
     "description": "Indicates a target EntryPoint, or url, for an Action.",
     "path": "target"
+  },
+  {
+    "atom": "task",
+    "name": "task",
+    "description": "Use when modelling one task — the singular model of the tasks collection (the plural store); a unit of work to be completed by an actor.",
+    "path": "task"
   },
   {
     "atom": "tasks",
@@ -11505,6 +12009,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "temporal",
     "description": "The \"temporal\" property can be used in cases where more specific properties (e.g. temporalCoverage, dateCreated, dateModified, datePublished) are not known to be appropriate.",
     "path": "temporal"
+  },
+  {
+    "atom": "tenant",
+    "name": "tenant",
+    "description": "Use when modelling one tenant — the singular model of the tenants collection (the plural store); one isolated organization within the multi-tenant platform.",
+    "path": "tenant"
   },
   {
     "atom": "tenants",
@@ -11903,6 +12413,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "transit"
   },
   {
+    "atom": "translate",
+    "name": "translate",
+    "description": "Use when computing i18n keys and humanizing them into default labels for the translations dropdown — the computed-default + DB-override pattern (DB value > humanized default > raw key). Also enforces the strict singular-model / plural-collection matrix (translation ↔ translations), itself a tamper-cost dimension.",
+    "path": "translate"
+  },
+  {
     "atom": "translation",
     "name": "translation",
     "description": "Use when porting a translatable message into code — the model (type + defineTranslation) of one content-addressed, per-locale translation entry that the translations collector emits into every folder.",
@@ -12015,6 +12531,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "tv",
     "description": "tv: a schema.org component word, fused from TVClip, TVEpisode, TVSeason, TVSeries, partOfTVSeries",
     "path": "tv"
+  },
+  {
+    "atom": "tweet",
+    "name": "tweet",
+    "description": "Use when modelling one tweet — the singular model of the tweets collection (the plural store); one short public post on a microblogging feed.",
+    "path": "tweet"
   },
   {
     "atom": "tweets",
@@ -12209,6 +12731,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "utility"
   },
   {
+    "atom": "utterance",
+    "name": "utterance",
+    "description": "Use when modelling one utterance — the singular model of the utterances collection (the plural store); one spoken or written input in a conversation.",
+    "path": "utterance"
+  },
+  {
     "atom": "utterances",
     "name": "utterances",
     "description": "Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry.",
@@ -12273,6 +12801,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "variant",
     "description": "Use when modeling product options, SKU expansion, or feature flags — sizes, colors, configurations, market-specific variants without a fixed grid. The unbounded product dimension.",
     "path": "variant"
+  },
+  {
+    "atom": "variants",
+    "name": "variants",
+    "description": "Use when modeling a lot's per-variant line — the size/colour option breakdown whose total IS the sum of its options (100% data-verified), monotonic through the ordered→delivered funnel.",
+    "path": "skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/skills/lot/variants"
   },
   {
     "atom": "varies",
@@ -12375,6 +12909,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "name": "virtual",
     "description": "virtual: a schema.org component word, fused from VirtualLocation, maximumVirtualAttendeeCapacity",
     "path": "virtual"
+  },
+  {
+    "atom": "visit",
+    "name": "visit",
+    "description": "Use when modelling one visit — the singular model of the visits collection (the plural store); one recorded instance of an actor attending a place or service.",
+    "path": "visit"
   },
   {
     "atom": "visits",
@@ -12593,6 +13133,12 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "work"
   },
   {
+    "atom": "worker",
+    "name": "worker",
+    "description": "Use when modelling one worker — the singular model of the workers collection (the plural store); a person who performs labor for the organization.",
+    "path": "worker"
+  },
+  {
     "atom": "workers",
     "name": "workers",
     "description": "workers: a schema.org component word, fused from WorkersUnion",
@@ -12611,28 +13157,10 @@ export const ATOM_CATALOGUE: readonly AtomSkill[] = [
     "path": "workload"
   },
   {
-    "atom": "workorders",
-    "name": "Workorders",
-    "description": "Use when booking shop-floor production — the per-phase per-worker execution leaf with an options array, derived double-entry totals, a derived horo lifecycle, the forward conveyor between routing phases, and the piece-rate wage; evolved from 2.05M rows of the etrima work_orders ledger.",
-    "path": "workorders"
-  },
-  {
-    "atom": "workphases",
-    "name": "workphases",
-    "description": "Use when modeling the reusable work-phase (operation) catalog — the routing vocabulary (sewing/cutting/buttonholes/steaming/embroidery/dyeing/finishing) a lot is produced through, a self-referential tree with standard time.",
-    "path": "workphases"
-  },
-  {
     "atom": "works",
     "name": "works",
     "description": "Organizations that the person works for.",
     "path": "works"
-  },
-  {
-    "atom": "workshifts",
-    "name": "workshifts",
-    "description": "Use when modelling the per-actor-day labour aggregate — the efficiency + wage authority a work order inherits from; presence vs produced minutes, the ⌊produced·100/presence⌋ efficiency, the max(time-pay, order-rollup) wage, on the horo lifecycle ring. Grounded in 20-yr etrima production (work_shifts, 376k).",
-    "path": "workshifts"
   },
   {
     "atom": "workspace",
