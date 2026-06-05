@@ -13,4 +13,4 @@ They are a [[fertility]] mechanism the chemical N-P-K budget misses: a thriving 
 - SARE *Building Soils for Better Crops* (soil biology); peer-reviewed Glomeromycota / AMF symbiosis literature
 - USDA-NRCS — soil biology, glomalin and aggregate stability
 
-Composes [[agriculture]] · [[soil]] · [[fertility]] · [[moisture]] · [[tillage]] · [[covercrop]] · [[merge]] · [[give]] · [[take]].
+Composes [[agriculture]] · [[soil]] · [[fertility]] · [[moisture]] · [[tillage]] · [[covercrop]] · [[merge]] · [[give]] · [[take]] · [[mycelium]] · [[symbiosis]].
