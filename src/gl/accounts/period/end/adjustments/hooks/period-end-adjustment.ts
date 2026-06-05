@@ -37,7 +37,7 @@
  */
 
 import type { CollectionAfterChangeHook } from 'payload'
-import { journalEntryService, type JournalEntryLine } from '@/journal/entry.service'
+import { journalEntryService, type JournalEntryLine } from '@/journal/entry/service'
 
 type AdjustmentDoc = Record<string, unknown> & {
   id: string | number

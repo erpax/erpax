@@ -3,7 +3,7 @@
     {
       "orphan": "abstract",
       "target": "coordinate",
-      "reason": "co-occurrence: coordinate mentions abstract (mass 26)"
+      "reason": "co-occurrence: coordinate mentions abstract (mass 27)"
     },
     {
       "orphan": "acquired",
@@ -13,7 +13,7 @@
     {
       "orphan": "actor",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions actor (mass 1334)"
+      "reason": "co-occurrence: merge mentions actor (mass 1339)"
     },
     {
       "orphan": "actors",
@@ -28,7 +28,7 @@
     {
       "orphan": "after",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions after (mass 1125)"
+      "reason": "co-occurrence: collapse mentions after (mass 1128)"
     },
     {
       "orphan": "models",
@@ -43,7 +43,7 @@
     {
       "orphan": "algorithm",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions algorithm (mass 361)"
+      "reason": "co-occurrence: identity mentions algorithm (mass 363)"
     },
     {
       "orphan": "alternate",
@@ -63,7 +63,7 @@
     {
       "orphan": "applicability",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions applicability (mass 1125)"
+      "reason": "co-occurrence: collapse mentions applicability (mass 1128)"
     },
     {
       "orphan": "archived",
@@ -138,7 +138,7 @@
     {
       "orphan": "before",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions before (mass 1125)"
+      "reason": "co-occurrence: collapse mentions before (mass 1128)"
     },
     {
       "orphan": "beneficiary",
@@ -153,7 +153,7 @@
     {
       "orphan": "brand",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions brand (mass 361)"
+      "reason": "co-occurrence: identity mentions brand (mass 363)"
     },
     {
       "orphan": "bridge",
@@ -173,7 +173,7 @@
     {
       "orphan": "buyer",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions buyer (mass 1125)"
+      "reason": "co-occurrence: collapse mentions buyer (mass 1128)"
     },
     {
       "orphan": "candidate",
@@ -183,17 +183,17 @@
     {
       "orphan": "carrier",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions carrier (mass 1125)"
+      "reason": "co-occurrence: collapse mentions carrier (mass 1128)"
     },
     {
       "orphan": "changes",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions changes (mass 361)"
+      "reason": "co-occurrence: identity mentions changes (mass 363)"
     },
     {
       "orphan": "citation",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions citation (mass 361)"
+      "reason": "co-occurrence: identity mentions citation (mass 363)"
     },
     {
       "orphan": "clause",
@@ -203,7 +203,7 @@
     {
       "orphan": "cloning",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions cloning (mass 1334)"
+      "reason": "co-occurrence: merge mentions cloning (mass 1339)"
     },
     {
       "orphan": "closes",
@@ -214,11 +214,6 @@
       "orphan": "co",
       "target": "assets",
       "reason": "co-occurrence: assets mentions co (mass 56)"
-    },
-    {
-      "orphan": "colleague",
-      "target": "connections",
-      "reason": "co-occurrence: connections mentions colleague (mass 7)"
     },
     {
       "orphan": "competitor",
@@ -243,7 +238,7 @@
     {
       "orphan": "confidentiality",
       "target": "proof",
-      "reason": "co-occurrence: proof mentions confidentiality (mass 170)"
+      "reason": "co-occurrence: proof mentions confidentiality (mass 172)"
     },
     {
       "orphan": "confirmation",
@@ -288,7 +283,7 @@
     {
       "orphan": "corrects",
       "target": "gate",
-      "reason": "co-occurrence: gate mentions corrects (mass 20)"
+      "reason": "co-occurrence: gate mentions corrects (mass 21)"
     },
     {
       "orphan": "correlation",
@@ -298,7 +293,7 @@
     {
       "orphan": "creator",
       "target": "trinity",
-      "reason": "co-occurrence: trinity mentions creator (mass 39)"
+      "reason": "co-occurrence: trinity mentions creator (mass 40)"
     },
     {
       "orphan": "credited",
@@ -308,7 +303,7 @@
     {
       "orphan": "current",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions current (mass 1334)"
+      "reason": "co-occurrence: merge mentions current (mass 1339)"
     },
     {
       "orphan": "signatures",
@@ -318,7 +313,7 @@
     {
       "orphan": "checks",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions checks (mass 1125)"
+      "reason": "co-occurrence: collapse mentions checks (mass 1128)"
     },
     {
       "orphan": "cutoff",
@@ -328,17 +323,17 @@
     {
       "orphan": "default",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions default (mass 1125)"
+      "reason": "co-occurrence: collapse mentions default (mass 1128)"
     },
     {
       "orphan": "deleted",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions deleted (mass 1125)"
+      "reason": "co-occurrence: collapse mentions deleted (mass 1128)"
     },
     {
       "orphan": "demand",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions demand (mass 361)"
+      "reason": "co-occurrence: identity mentions demand (mass 363)"
     },
     {
       "orphan": "dependencies",
@@ -374,11 +369,6 @@
       "orphan": "displacement",
       "target": "rodin",
       "reason": "co-occurrence: rodin mentions displacement (mass 67)"
-    },
-    {
-      "orphan": "dissolution",
-      "target": "merge",
-      "reason": "co-occurrence: merge mentions dissolution (mass 1334)"
     },
     {
       "orphan": "documentation",
@@ -428,12 +418,12 @@
     {
       "orphan": "ecommerce",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions ecommerce (mass 1125)"
+      "reason": "co-occurrence: collapse mentions ecommerce (mass 1128)"
     },
     {
       "orphan": "editor",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions editor (mass 1334)"
+      "reason": "co-occurrence: merge mentions editor (mass 1339)"
     },
     {
       "orphan": "elevation",
@@ -478,7 +468,7 @@
     {
       "orphan": "expressed",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions expressed (mass 361)"
+      "reason": "co-occurrence: identity mentions expressed (mass 363)"
     },
     {
       "orphan": "festival",
@@ -513,7 +503,7 @@
     {
       "orphan": "follows",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions follows (mass 361)"
+      "reason": "co-occurrence: identity mentions follows (mass 363)"
     },
     {
       "orphan": "friendly",
@@ -533,17 +523,17 @@
     {
       "orphan": "given",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions given (mass 361)"
+      "reason": "co-occurrence: identity mentions given (mass 363)"
     },
     {
       "orphan": "good",
       "target": "proof",
-      "reason": "co-occurrence: proof mentions good (mass 170)"
+      "reason": "co-occurrence: proof mentions good (mass 172)"
     },
     {
       "orphan": "grantee",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions grantee (mass 361)"
+      "reason": "co-occurrence: identity mentions grantee (mass 363)"
     },
     {
       "orphan": "gtin",
@@ -608,7 +598,7 @@
     {
       "orphan": "integer",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions integer (mass 361)"
+      "reason": "co-occurrence: identity mentions integer (mass 363)"
     },
     {
       "orphan": "intensity",
@@ -618,7 +608,7 @@
     {
       "orphan": "interact",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions interact (mass 1125)"
+      "reason": "co-occurrence: collapse mentions interact (mass 1128)"
     },
     {
       "orphan": "interactivity",
@@ -638,7 +628,7 @@
     {
       "orphan": "invoice",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions invoice (mass 1125)"
+      "reason": "co-occurrence: collapse mentions invoice (mass 1128)"
     },
     {
       "orphan": "isic",
@@ -648,7 +638,7 @@
     {
       "orphan": "iso",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions iso (mass 361)"
+      "reason": "co-occurrence: identity mentions iso (mass 363)"
     },
     {
       "orphan": "receipts",
@@ -708,12 +698,12 @@
     {
       "orphan": "like",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions like (mass 1125)"
+      "reason": "co-occurrence: collapse mentions like (mass 1128)"
     },
     {
       "orphan": "line",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions line (mass 1125)"
+      "reason": "co-occurrence: collapse mentions line (mass 1128)"
     },
     {
       "orphan": "login",
@@ -758,7 +748,7 @@
     {
       "orphan": "mandates",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions mandates (mass 361)"
+      "reason": "co-occurrence: identity mentions mandates (mass 363)"
     },
     {
       "orphan": "median",
@@ -768,7 +758,12 @@
     {
       "orphan": "memory",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions memory (mass 1334)"
+      "reason": "co-occurrence: merge mentions memory (mass 1339)"
+    },
+    {
+      "orphan": "names",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions names (mass 1128)"
     },
     {
       "orphan": "modified",
@@ -783,7 +778,7 @@
     {
       "orphan": "move",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions move (mass 1125)"
+      "reason": "co-occurrence: collapse mentions move (mass 1128)"
     },
     {
       "orphan": "muscle",
@@ -878,7 +873,7 @@
     {
       "orphan": "pattern",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions pattern (mass 1334)"
+      "reason": "co-occurrence: merge mentions pattern (mass 1339)"
     },
     {
       "orphan": "pay",
@@ -948,7 +943,7 @@
     {
       "orphan": "posted",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions posted (mass 361)"
+      "reason": "co-occurrence: identity mentions posted (mass 363)"
     },
     {
       "orphan": "practices",
@@ -958,7 +953,7 @@
     {
       "orphan": "predecessor",
       "target": "coordinate",
-      "reason": "co-occurrence: coordinate mentions predecessor (mass 26)"
+      "reason": "co-occurrence: coordinate mentions predecessor (mass 27)"
     },
     {
       "orphan": "prep",
@@ -1018,7 +1013,7 @@
     {
       "orphan": "query",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions query (mass 1125)"
+      "reason": "co-occurrence: collapse mentions query (mass 1128)"
     },
     {
       "orphan": "quotation",
@@ -1043,7 +1038,7 @@
     {
       "orphan": "reason",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions reason (mass 361)"
+      "reason": "co-occurrence: identity mentions reason (mass 363)"
     },
     {
       "orphan": "receive",
@@ -1078,7 +1073,7 @@
     {
       "orphan": "released",
       "target": "proof",
-      "reason": "co-occurrence: proof mentions released (mass 170)"
+      "reason": "co-occurrence: proof mentions released (mass 172)"
     },
     {
       "orphan": "rent",
@@ -1098,7 +1093,7 @@
     {
       "orphan": "representation",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions representation (mass 1334)"
+      "reason": "co-occurrence: merge mentions representation (mass 1339)"
     },
     {
       "orphan": "reserve",
@@ -1123,7 +1118,7 @@
     {
       "orphan": "rest",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions rest (mass 1125)"
+      "reason": "co-occurrence: collapse mentions rest (mass 1128)"
     },
     {
       "orphan": "risks",
@@ -1138,7 +1133,7 @@
     {
       "orphan": "dev",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions dev (mass 1125)"
+      "reason": "co-occurrence: collapse mentions dev (mass 1128)"
     },
     {
       "orphan": "sale",
@@ -1148,7 +1143,7 @@
     {
       "orphan": "same",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions same (mass 1334)"
+      "reason": "co-occurrence: merge mentions same (mass 1339)"
     },
     {
       "orphan": "scheduled",
@@ -1188,12 +1183,12 @@
     {
       "orphan": "seller",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions seller (mass 1125)"
+      "reason": "co-occurrence: collapse mentions seller (mass 1128)"
     },
     {
       "orphan": "send",
       "target": "uuid",
-      "reason": "co-occurrence: uuid mentions send (mass 74)"
+      "reason": "co-occurrence: uuid mentions send (mass 76)"
     },
     {
       "orphan": "sender",
@@ -1213,22 +1208,17 @@
     {
       "orphan": "services",
       "target": "merge",
-      "reason": "co-occurrence: merge mentions services (mass 1334)"
+      "reason": "co-occurrence: merge mentions services (mass 1339)"
     },
     {
       "orphan": "sha",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions sha (mass 361)"
-    },
-    {
-      "orphan": "sibling",
-      "target": "sequence",
-      "reason": "co-occurrence: sequence mentions sibling (mass 168)"
+      "reason": "co-occurrence: identity mentions sha (mass 363)"
     },
     {
       "orphan": "siblings",
       "target": "dimension",
-      "reason": "co-occurrence: dimension mentions siblings (mass 32)"
+      "reason": "co-occurrence: dimension mentions siblings (mass 34)"
     },
     {
       "orphan": "similar",
@@ -1248,7 +1238,7 @@
     {
       "orphan": "speed",
       "target": "uuid",
-      "reason": "co-occurrence: uuid mentions speed (mass 74)"
+      "reason": "co-occurrence: uuid mentions speed (mass 76)"
     },
     {
       "orphan": "sponsor",
@@ -1263,7 +1253,7 @@
     {
       "orphan": "state",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions state (mass 1125)"
+      "reason": "co-occurrence: collapse mentions state (mass 1128)"
     },
     {
       "orphan": "statement",
@@ -1273,22 +1263,22 @@
     {
       "orphan": "steps",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions steps (mass 1125)"
+      "reason": "co-occurrence: collapse mentions steps (mass 1128)"
     },
     {
       "orphan": "storage",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions storage (mass 361)"
+      "reason": "co-occurrence: identity mentions storage (mass 363)"
     },
     {
       "orphan": "stream",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions stream (mass 361)"
+      "reason": "co-occurrence: identity mentions stream (mass 363)"
     },
     {
       "orphan": "structured",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions structured (mass 361)"
+      "reason": "co-occurrence: identity mentions structured (mass 363)"
     },
     {
       "orphan": "subscribe",
@@ -1318,17 +1308,22 @@
     {
       "orphan": "table",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions table (mass 1125)"
+      "reason": "co-occurrence: collapse mentions table (mass 1128)"
     },
     {
       "orphan": "tag",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions tag (mass 1125)"
+      "reason": "co-occurrence: collapse mentions tag (mass 1128)"
+    },
+    {
+      "orphan": "tamper",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions tamper (mass 1128)"
     },
     {
       "orphan": "codes",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions codes (mass 361)"
+      "reason": "co-occurrence: identity mentions codes (mass 363)"
     },
     {
       "orphan": "teaches",
@@ -1343,7 +1338,7 @@
     {
       "orphan": "thing",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions thing (mass 1125)"
+      "reason": "co-occurrence: collapse mentions thing (mass 1128)"
     },
     {
       "orphan": "tie",
@@ -1358,7 +1353,7 @@
     {
       "orphan": "timestamp",
       "target": "uuid",
-      "reason": "co-occurrence: uuid mentions timestamp (mass 74)"
+      "reason": "co-occurrence: uuid mentions timestamp (mass 76)"
     },
     {
       "orphan": "track",
@@ -1383,12 +1378,12 @@
     {
       "orphan": "under",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions under (mass 1125)"
+      "reason": "co-occurrence: collapse mentions under (mass 1128)"
     },
     {
       "orphan": "utilities",
       "target": "trinity",
-      "reason": "co-occurrence: trinity mentions utilities (mass 39)"
+      "reason": "co-occurrence: trinity mentions utilities (mass 40)"
     },
     {
       "orphan": "vat",
@@ -1403,7 +1398,7 @@
     {
       "orphan": "vendor",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions vendor (mass 361)"
+      "reason": "co-occurrence: identity mentions vendor (mass 363)"
     },
     {
       "orphan": "view",
@@ -1433,17 +1428,17 @@
     {
       "orphan": "website",
       "target": "collapse",
-      "reason": "co-occurrence: collapse mentions website (mass 1125)"
+      "reason": "co-occurrence: collapse mentions website (mass 1128)"
     },
     {
       "orphan": "width",
       "target": "cost",
-      "reason": "co-occurrence: cost mentions width (mass 82)"
+      "reason": "co-occurrence: cost mentions width (mass 85)"
     },
     {
       "orphan": "win",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions win (mass 361)"
+      "reason": "co-occurrence: identity mentions win (mass 363)"
     },
     {
       "orphan": "winner",
@@ -1458,7 +1453,7 @@
     {
       "orphan": "write",
       "target": "identity",
-      "reason": "co-occurrence: identity mentions write (mass 361)"
+      "reason": "co-occurrence: identity mentions write (mass 363)"
     },
     {
       "orphan": "xpath",

@@ -5,12 +5,13 @@
  *   tsx src/schema/test/index.ts --seed
  */
 export const SCHEMA_TEST_SEED = {
-  "atoms": 2100,
-  "matrixRoot": "7e1eda19-3462-893e-b9c0-cd424de6a946",
-  "entropyTotal": 534,
+  "atoms": 2101,
+  "matrixRoot": "43553069-734b-8716-ae55-8abd0bb022ae",
+  "entropyTotal": 553,
   "byKind": {
-    "uncrosslinked": 481,
+    "uncrosslinked": 482,
     "folder-outside-src": 4,
+    "dotted-folder-bypass": 18,
     "doc-not-skill": 46,
     "uncollidable-data": 1,
     "recorded-junk": 2

@@ -41,7 +41,7 @@ import type { CollectionAfterChangeHook } from 'payload'
 import {
   journalEntryService,
   type JournalEntryLine,
-} from '@/journal/entry.service'
+} from '@/journal/entry/service'
 import {
   resolveGlAccount,
   type GlAccountRole,

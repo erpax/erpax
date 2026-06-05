@@ -36,6 +36,7 @@ export interface Entropy {
     | 'matrix-root-broken'
     | 'atom-unbound'
     | 'society-unconvened'
+    | 'dotted-folder-bypass'
     | 'uncrosslinked'
     | 'duplicate-text'
   /** where it lives (file / atom / the offending text) */
@@ -102,6 +103,34 @@ export const uncollidableInSrc = (files: readonly string[]): Entropy[] => {
     }
   }
   return out
+}
+
+// ── Bypass law: a dotted-compound folder disguises multiword as one coordinate ──
+/**
+ * A folder named `entry.service` is two words disguised as one — it bypasses the
+ * single-word-folder law the matrix collides on (`entry.service` normalizes to one
+ * opaque key instead of the `entry/service` coordinate). Split it at the dot into
+ * nested single-word folders. Next.js app-router routes (`src/app/…` — route
+ * groups `(x)`, dynamic `[x]`, `*.xml` endpoints) are the framework's own
+ * convention, not erpax coordinates — exempt.
+ */
+export const dottedFolderBypass = (files: readonly string[]): Entropy[] => {
+  const dirs = new Set<string>()
+  for (const f of files) {
+    if (!f.startsWith('src/') || f.startsWith('src/app/')) continue
+    const parts = f.split('/')
+    parts.pop() // the filename may carry a dot (SKILL.md, *.test.ts) — only FOLDERS are coordinates
+    let path = ''
+    for (const seg of parts) {
+      path = path ? `${path}/${seg}` : seg
+      if (/[a-z0-9]\.[a-z0-9]/.test(seg)) dirs.add(path)
+    }
+  }
+  return [...dirs].sort().map((d) => ({
+    kind: 'dotted-folder-bypass' as const,
+    where: d,
+    redirect: `split at the dot — ${d} → ${d.replace(/\.([a-z0-9]+)$/, '/$1')} (nested single-word folders; a dotted name bypasses the matrix's single-word coordinate)`,
+  }))
 }
 
 // ── Recorded junk: runtime artifacts that must never be committed ──
@@ -249,6 +278,7 @@ export const pullEntropy = (root: string = process.cwd()): Entropy[] => {
     ...societyConvened(root),
     ...uncrosslinkedAtoms(),
     ...foldersOutsideSrc(files),
+    ...dottedFolderBypass(files),
     ...uncollidableInSrc(files),
     ...recordedJunk(files),
     ...duplicateDescriptions(files, root),

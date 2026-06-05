@@ -30,7 +30,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest'
 import { bankReconciliationService } from '@/bank/reconciliation.service'
-import { journalEntryService } from '@/journal/entry.service'
+import { journalEntryService } from '@/journal/entry/service'
 import {
   bucketAgeDays,
   daysBetween,

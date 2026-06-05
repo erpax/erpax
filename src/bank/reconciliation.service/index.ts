@@ -30,7 +30,7 @@ import {
   daysBetween,
 } from '@/utility/calculations';
 import { DebitCreditLogic, type AccountType } from '@/accounting/debit-credit';
-import { journalEntryService } from '@/journal/entry.service';
+import { journalEntryService } from '@/journal/entry/service';
 import { eventEmitter } from '@/event/emitter.service';
 
 /**

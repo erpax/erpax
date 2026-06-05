@@ -48,7 +48,7 @@ import {
   PeriodEndAdjustment,
   PeriodEndConfig,
 } from '@/types/period-end';
-import { journalEntryService, JournalEntryLine } from '@/journal/entry.service';
+import { journalEntryService, JournalEntryLine } from '@/journal/entry/service';
 import { eventEmitter } from '@/event/emitter.service';
 
 // Mock database

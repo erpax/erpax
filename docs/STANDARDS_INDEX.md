@@ -1687,8 +1687,8 @@ src/journal/entries/hooks/balanced-entry.ts:22: * @standard IEEE-754-2019 binary
 src/journal/entries/index.ts:29: * @standard ISO-8601-1:2019 date-time entry-date posted-date approval-date
 src/journal/entries/rounding/adjustments/index.ts:10: * @standard ISO-4217:2015 currency-codes from-to-currency-pair
 src/journal/entries/rounding/adjustments/index.ts:11: * @standard ISO-8601-1:2019 date-time adjustment-date
-src/journal/entry.service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
-src/journal/entry.service/index.ts:13: * @standard ISO-4217:2015 currency-codes
+src/journal/entry/service/index.ts:12: * @standard ISO-8601-1:2019 date-time entry-date posted-date
+src/journal/entry/service/index.ts:13: * @standard ISO-4217:2015 currency-codes
 src/leads/index.ts:11: * @standard ISO-8601-1:2019 date-time
 src/leads/index.ts:12: * @standard ISO-3166-1:2020 country-codes
 src/leads/opportunities/index.ts:10: * @standard ISO-4217:2015 currency-codes
@@ -3630,7 +3630,7 @@ src/journal/entries/gl/postings/index.ts:30: * @compliance SOX §404 internal-co
 src/journal/entries/hooks/balanced-entry.ts:27: * @compliance SOX §404 internal-controls
 src/journal/entries/index.ts:34: * @compliance SOX §404 internal-controls
 src/journal/entries/rounding/adjustments/index.ts:16: * @compliance SOX §404 internal-controls rounding-control TOM-RND-01
-src/journal/entry.service/index.ts:18: * @compliance SOX §404 internal-controls
+src/journal/entry/service/index.ts:18: * @compliance SOX §404 internal-controls
 src/leads/index.ts:13: * @compliance GDPR Art.5 data-minimisation
 src/leads/index.ts:14: * @compliance GDPR Art.6(1)(f) legitimate-interest (B2B prospecting)
 src/leases/index.ts:56: * @compliance SOX §404 internal-controls capital-asset-register
@@ -4320,11 +4320,11 @@ src/journal/entries/index.ts:32: * @accounting OECD SAF-T §3 journal-entries
 src/journal/entries/rounding/adjustments/index.ts:12: * @accounting IFRS IAS-1 §51(e) level-of-rounding-disclosure
 src/journal/entries/rounding/adjustments/index.ts:13: * @accounting IFRS IAS-21 §39 foreign-currency-translation
 src/journal/entries/rounding/adjustments/index.ts:14: * @accounting US-GAAP ASC-205-10-45 presentation-rounding
-src/journal/entry.service/index.ts:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
-src/journal/entry.service/index.ts:15: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
-src/journal/entry.service/index.ts:16: * @accounting OECD SAF-T §3 journal-entries
-src/journal/entry.service/index.ts:35:   * @accounting IFRS IFRS-8 operating-segments
-src/journal/entry.service/index.ts:36:   * @accounting US-GAAP ASC-280 segment-reporting
+src/journal/entry/service/index.ts:14: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/journal/entry/service/index.ts:15: * @accounting US-GAAP ASC-105 generally-accepted-accounting-principles
+src/journal/entry/service/index.ts:16: * @accounting OECD SAF-T §3 journal-entries
+src/journal/entry/service/index.ts:35:   * @accounting IFRS IFRS-8 operating-segments
+src/journal/entry/service/index.ts:36:   * @accounting US-GAAP ASC-280 segment-reporting
 src/leads/opportunities/index.ts:11: * @accounting IFRS IFRS-15 §9 contract-existence-criteria
 src/lease.service/index.ts:104: * @accounting IFRS IFRS-16 §26 present-value-of-payments
 src/lease.service/index.ts:158: * @accounting IFRS IFRS-16 §22-§24 rou-asset-initial-measurement
@@ -4899,7 +4899,7 @@ src/journal/entries/gl/postings/index.ts:31: * @security ISO-27001 A.5.23 cloud-
 src/journal/entries/index.ts:35: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/journal/entries/index.ts:36: * @security ISO-27002 §5.4 segregation-of-duties
 src/journal/entries/rounding/adjustments/index.ts:17: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
-src/journal/entry.service/index.ts:19: * @security ISO-27002 §5.4 segregation-of-duties
+src/journal/entry/service/index.ts:19: * @security ISO-27002 §5.4 segregation-of-duties
 src/leads/index.ts:16: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/leads/opportunities/index.ts:13: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/leases/index.ts:57: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5601,7 +5601,7 @@ src/journal/entries/gl/postings/index.ts:29: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/hooks/balanced-entry.ts:26: * @audit ISO-19011:2018 audit-trail double-entry-invariant
 src/journal/entries/index.ts:33: * @audit ISO-19011:2018 audit-trail
 src/journal/entries/rounding/adjustments/index.ts:15: * @audit ISO-19011:2018 audit-trail rounding-evidence
-src/journal/entry.service/index.ts:17: * @audit ISO-19011:2018 audit-trail
+src/journal/entry/service/index.ts:17: * @audit ISO-19011:2018 audit-trail
 src/leads/index.ts:15: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/leads/opportunities/index.ts:12: * @audit ISO-19011:2018 audit-trail crm-pipeline
 src/lease.service/index.ts:30: * @audit ISO-19011:2018 audit-trail

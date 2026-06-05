@@ -22,7 +22,7 @@
 
 import { describe, it, expect } from 'vitest'
 import { payrollRunPostingHook } from '@/bank/accounts/payroll/runs/hooks/payroll-run'
-import { journalEntryService } from '@/journal/entry.service'
+import { journalEntryService } from '@/journal/entry/service'
 
 /** Invoke the afterChange hook with a partial args shape (tests supply only the doc/op surface). */
 type HookArgs = Parameters<typeof payrollRunPostingHook>[0]

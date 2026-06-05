@@ -57,7 +57,7 @@ import type { CollectionAfterChangeHook } from 'payload'
 import {
   journalEntryService,
   type JournalEntryLine,
-} from '@/journal/entry.service'
+} from '@/journal/entry/service'
 
 // Canonical GL accounts for the payroll JE. Mirrors the gl-posting
 // service's GL_ACCOUNTS constants — kept inline here so this hook
