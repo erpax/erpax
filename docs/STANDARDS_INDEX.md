@@ -304,6 +304,7 @@ src/app/(frontend)/layout.tsx:4: * @standard W3C HTML5 Living Standard
 src/app/(frontend)/layout.tsx:5: * @standard W3C CSS Living Standard
 src/app/(frontend)/layout.tsx:6: * @standard schema.org WebSite
 src/app/(frontend)/layout.tsx:7: * @standard BCP-47 language-tag html-lang-attribute
+src/app/(frontend)/next/coherence/route.ts:31: * @standard DSP rPPG green-channel pulse extraction (0.7..4 Hz)
 src/app/(frontend)/next/preview/route.ts:9: * @standard HMAC-SHA256 RFC 2104 preview-secret
 src/app/(frontend)/next/seed/route.ts:5: * @standard NIST INCITS-359-2012 role-based-access-control admin-only
 src/app/(frontend)/next/system/health/route.ts:8: * @standard draft-inadarei-api-health-check health-check-response-format
@@ -654,6 +655,7 @@ src/chains/subscription/billing/cycle/subscription-billing-cycle-page.tsx:8: * @
 src/chains/subscription/billing/cycle/subscription-billing-cycle-page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
 src/chains/workflow/approval/cycle/workflow-approval-cycle-page.tsx:8: * @standard W3C-WAI-ARIA-1.2 accessibility-landmarks
 src/chains/workflow/approval/cycle/workflow-approval-cycle-page.tsx:9: * @standard WCAG-2.1-AA contrast text-spacing
+src/chakra/index.ts:15: * @standard ISO-16:1975 a432-tuning-reference (pitch from position)
 src/chats/index.ts:15: * @standard W3C ActivityPub server-to-server activity-distribution (the model)
 src/chats/index.ts:16: * @standard RFC 9562 §5.8 content-uuid event-identity (idempotency key)
 src/chats/index.ts:17: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation (room per tenant)
@@ -674,6 +676,7 @@ src/cloudflare/mediator-uuid-crypto.test.ts:20: * @standard RFC 8032 EdDSA, NIST
 src/cloudflare/plugin-access.ts:41: * @standard ISO 27001 A.5.15 access-control
 src/cloudflare/plugin-access.ts:42: * @standard ISO 27002 §5.4 segregation-of-duties (TypeScript-enforced)
 src/cloudflare/plugin-helper.ts:27: * @standard ISO 27001 A.5.23 cloud-service-tenant-isolation
+src/coherence/index.ts:18: * @standard DSP magnitude-spectrum (DFT) + the 0.7..4 Hz human-pulse band
 src/collection/archive/index.tsx:4: * @standard schema.org ItemList
 src/collection/archive/index.tsx:5: * @standard schema.org CollectionPage
 src/collection/archive/index.tsx:6: * @standard W3C HTML5 section-element
@@ -949,6 +952,7 @@ src/derive/country/from/iban/index.ts:10: * @standard ISO-13616-1:2020 iban
 src/derive/country/from/iban/index.ts:11: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/did/index.ts:8: * @standard W3C DID Core v1.0 — https://www.w3.org/TR/did-core/
 src/did/index.ts:9: * @standard W3C DID Specification Registries
+src/digit/index.ts:19: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring
 src/dimension/index.ts:27: * @standard W3C Web Components composition pattern
 src/dimension/index.ts:28: * @standard ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries
 src/discriminator/index.ts:12: * @standard ECMA-262 ECMAScript-2024 baseline
@@ -1839,7 +1843,8 @@ src/message/index.ts:11: * @standard RFC 9562 §5.8 (the structured uuid carries
 src/messages/index.ts:11: * @standard ISO-8601-1:2019 date-time sent-read-timestamps
 src/messages/index.ts:12: * @standard ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/meta/automation/index.ts:26: * @standard ISO/IEC 25010:2023 §5.7 modifiability (self-modifying with audit)
-src/migrate/quaternary/index.ts:16: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
+src/metatron/index.ts:19: * @standard RFC 9562 §5.8 content-uuid (total merge) + K13 / cuboctahedron
+src/migrate/quaternary/index.ts:19: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness
 src/mineral/resource/assets/index.ts:11: * @standard IFRS IFRS-6 §3 scope-exploration-and-evaluation
 src/mineral/resource/assets/index.ts:12: * @standard IFRS IFRS-6 §8 measurement-policy-cost-or-revaluation
 src/mineral/resource/assets/index.ts:13: * @standard IFRS IFRS-6 §17 reclassification-to-PPE-or-intangibles
@@ -2165,6 +2170,8 @@ src/rfc/9110/get-redirects.test.ts:4: * @standard ISO/IEC-29119:2022 software-te
 src/rich/text/index.tsx:4: * @standard W3C HTML5 Living Standard rich-text-output
 src/rich/text/index.tsx:5: * @standard CommonMark 0.31 markdown-fallback
 src/rich/text/index.tsx:6: * @standard schema.org HTMLRichText
+src/rodin/coil/index.ts:21: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
+src/rodin/index.ts:24: * @standard RFC 9562 §5.8 content-uuid + the horo digital-root ring (mod 9)
 src/roles/hooks/validateRoleDefinition.ts:9: * @standard NIST INCITS-359-2012 role-based-access-control role-binding
 src/roles/index.ts:11: * @standard NIST INCITS-359-2012 role-based-access-control
 src/roles/registry/index.ts:19: * @standard ISO 27002:2022 §5.4 segregation-of-duties
@@ -2303,6 +2310,7 @@ src/security/header/headers.ts:13: * @standard OWASP-ASVS V14 configuration
 src/security/header/headers.ts:14: * @standard OWASP Secure-Headers-Project
 src/security/header/index.ts:5: * @standard W3C CSP-3
 src/security/header/index.ts:6: * @standard W3C Permissions-Policy
+src/security/remote/access/index.ts:19: * @standard NIST SP 800-162 ABAC · NIST SP 800-107r1 §5.1 · CWE-59
 src/seed/erpax-product-pages.ts:31: * @standard schema.org Product
 src/seed/erpax-product-pages.ts:32: * @standard schema.org WebSite breadcrumb
 src/seed/erpax-product-pages.ts:33: * @standard ISO-25010 usability marketing-content
@@ -2350,6 +2358,10 @@ src/self/closure/types.ts:49: * @standard ISO 27001 Annex A.17 information-secur
 src/self/closure/types.ts:50: * @standard NIST SP 800-34 Rev. 1 §3.4 contingency planning
 src/self/closure/types.ts:51: * @standard BCBS 239 §5 IT infrastructure (single-point-of-failure avoidance)
 src/self/reference/erpax.profile.ts:11: * @standard ISO/IEC 25010:2023 §5.1 functional-completeness (self-coherence)
+src/self/research/index.ts:24: * @standard NIST SP 800-162 ABAC — the access scope is the ownership boundary
+src/self/research/index.ts:25: * @standard OWASP ASVS V5 — least-privilege / IDOR-prevention (no cross-actor read)
+src/self/research/index.ts:26: * @standard NIST SP 800-63B §6.1.3 — owner-authorized credential recovery
+src/self/similar/index.ts:15: * @standard the hologram — 6 generators → 36 Cayley cells, 0 free parameters
 src/self/sufficient/index.ts:25: * @standard NIST SP 800-107r1 §5.1 (the digest bound — via tamper-cost)
 src/self/sufficient/index.ts:26: * @standard NIST SP 800-161r1 (supply-chain / external-dependency risk)
 src/shared/AddressBlock.tsx:14: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
@@ -2434,6 +2446,7 @@ src/spec/generator/translation-generator.ts:71: * @standard BCP-47 language-tag
 src/spec/generator/translation-generator.ts:72: * @standard W3C i18n key-naming-best-practices
 src/spec/generator/types.ts:12: * @standard ISO/IEC 25010:2023 §5 modularity
 src/spec/generator/types.ts:13: * @standard ISO/IEC 12207 software-life-cycle
+src/standard/truth/index.ts:25: * @standard ISO-19011:2018 6.4.6 audit-evidence (a citation needs evidence)
 src/standards/catalogue.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing (invariant coverage)
 src/standards/catalogue.test.ts:8: * @standard ISO/IEC-25010:2023 §5.4 reusability (one join, two frontends)
 src/standards/catalogue.ts:11: * @standard ISO/IEC-25010:2023 §5.4 reusability (one scan, two consumers)
@@ -2599,7 +2612,7 @@ src/transaction/failures/index.ts:12: * @standard ISO-8601-1:2019 date-time tran
 src/translation/index.ts:19: * @standard BCP-47 language tags
 src/translation/index.ts:20: * @standard RFC 9562 §5.8 content-uuid (the messaging-uuid)
 src/translation/index.ts:21: * @standard schema.org translationOfWork / workTranslation (collided to one word)
-src/translations/collect.ts:27: * @standard BCP-47 language tags · RFC 9562 §5.8 content-uuid (messaging-uuid)
+src/translations/collect/index.ts:27: * @standard BCP-47 language tags · RFC 9562 §5.8 content-uuid (messaging-uuid)
 src/translations/index.ts:38: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/translations/index.ts:39: * @standard BCP-47 language tags
 src/translations/index.ts:40: * @standard EU 1958/1 official-languages-of-the-european-union
@@ -2969,6 +2982,7 @@ src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx:5: * @rfc 5005 web-
 src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx:6: * @rfc 3986 uniform-resource-identifier page-number-segment
 src/app/(frontend)/[locale]/search/page.tsx:6: * @rfc 3986 uniform-resource-identifier query-component
 src/app/(frontend)/layout.tsx:10: * @rfc 9110 http-semantics
+src/app/(frontend)/next/coherence/route.ts:30: * @rfc 9110 http-semantics  @rfc 8259 json
 src/app/(frontend)/next/exit-preview/route.ts:4: * @rfc 9110 http-semantics
 src/app/(frontend)/next/exit-preview/route.ts:5: * @rfc 6265 cookies draft-mode-cookie
 src/app/(frontend)/next/preview/route.ts:5: * @rfc 9110 http-semantics
@@ -5233,6 +5247,7 @@ src/anti/corruption/index.ts:22: * @audit ISO-19011:2018 audit-trail integrity-v
 src/api/audit/events/index.ts:24: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/subscriptions/create/route.ts:12: * @audit ISO-19011:2018 audit-trail
 src/app/(api)/api/webhooks/stripe/route.ts:12: * @audit ISO-19011:2018 audit-trail
+src/app/(frontend)/next/coherence/route.ts:32: * @audit ISO-19011:2018 reading logged to Analytics Engine (ANALYTICS_AI binding)
 src/app/(frontend)/next/seed/route.ts:8: * @audit ISO-19011:2018 audit-trail seed-runs
 src/architecture/invariant/checks.ts:1165: * @audit ISO-19011:2018 §6.4 audit-evidence-seed-schema-consistency
 src/architecture/invariant/checks.ts:1232: * @audit  registry-vs-implementation traceability
@@ -5278,6 +5293,8 @@ src/audit/trail/write-audit-event.test.ts:18: * @audit Conservation Law 53 self-
 src/audit/trail/write-audit-event.ts:50: * @audit Conservation Law 8 content-addressable integrity
 src/audit/trail/write-audit-event.ts:51: * @audit Conservation Law 53 self-referential-closure (pending-leaf reconciliation)
 src/aura/find-gaps.ts:26: * @audit ISO 19011:2018 §6.4.6 audit-evidence
+src/aura/index.ts:12: * @audit one resolver imported everywhere -- zero duplicated walk/norm/isRealDir
+src/aura/propose/index.ts:12: * @audit no link invented -- every proposal is a co-occurrence the tree witnesses
 src/authenticated/or/published/index.ts:8: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/auto/populate/created/by/index.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
 src/auto/populate/tenant/index.ts:11: * @audit ISO-19011:2018 audit-trail before-validate-hooks
@@ -5336,6 +5353,7 @@ src/chains/record/to/report/record-to-report-page.tsx:10: * @audit ISO 9241-210:
 src/chains/resource/booking/cycle/resource-booking-cycle-page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
 src/chains/subscription/billing/cycle/subscription-billing-cycle-page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
 src/chains/workflow/approval/cycle/workflow-approval-cycle-page.tsx:10: * @audit ISO 9241-210:2019 human-centred-design
+src/chakra/index.ts:16: * @audit note, colour and uuid computed from the position math, never hand-asserted
 src/classify/tax/id/index.ts:13: * @audit ISO-19011:2018 audit-trail tax-id-classification-evidence
 src/cloning/boot.ts:21: * @audit ISO 19011:2018 §6.4.6 (clone provenance preserved)
 src/cloning/index.ts:10: * @audit ISO 19011:2018 §6.4.6 (clone provenance + Conservation Law 24)
@@ -5343,6 +5361,7 @@ src/cloning/verify.ts:11: * @audit ISO 19011:2018 §6.4.6
 src/cloudflare/mediator-uuid-crypto.test.ts:21: * @audit Conservation Law 8 + Law 47 (uuid-anchored crypto)
 src/cloudflare/plugin-access.ts:43: * @audit Conservation Law 38 mcp-tool-standardization
 src/cloudflare/plugin-helper.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
+src/coherence/index.ts:19: * @audit computed from the input trace, never hand-asserted
 src/collections/index.test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
@@ -5413,8 +5432,10 @@ src/data/processing/activities/index.ts:13: * @audit ISO-19011:2018 audit-trail 
 src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-evidence
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
 src/depreciation.service/index.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
+src/digit/index.ts:20: * @audit the digit address is computed from the live matrix, never hand-maintained
 src/dimension/index.ts:29: * @audit ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)
 src/drone/index.ts:14: * @audit ISO 19011:2018 §6.4 reconnaissance is read-only evidence-gathering
+src/dry/index.ts:11: * @audit the dry-clean is computed from the tree, never a hand-run script
 src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/ecommerce/productValidation/index.ts:8: * @audit ISO-19011:2018 audit-trail
 src/ecommerce/stripe/tenantConfirmOrder.ts:14: * @audit ISO-19011:2018 audit-trail
@@ -5434,6 +5455,7 @@ src/en/16931/types.test.ts:9: * @audit ISO-19011:2018 audit-trail
 src/enforce/document/tenant/for/user/index.ts:20: * @audit ISO-19011:2018 audit-trail
 src/enforce/segregation/of/duty/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/ensure/unique/slug/within/tenant/index.ts:19: * @audit ISO-19011:2018 audit-trail
+src/entropy/index.ts:15: * @audit computed from the live matrix, never hand-asserted
 src/error/codedError.ts:11: * @audit ISO-19011:2018 audit-trail
 src/error/index.ts:12: * @audit ISO-19011:2018 audit-trail error-tracing
 src/error/registry.ts:11: * @audit ISO-19011:2018 audit-trail
@@ -5468,6 +5490,7 @@ src/fiscal/periods/provisions/index.ts:22: * @audit ISO-19011:2018 audit-trail p
 src/fixed/assets/depreciation/schedules/hooks/depreciation.ts:24: * @audit ISO-19011:2018 audit-trail period-expense
 src/fixed/assets/depreciation/schedules/index.ts:13: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/fixed/assets/index.ts:29: * @audit ISO-19011:2018 audit-trail
+src/fusion/index.ts:17: * @audit computed from the live matrix, never hand-asserted
 src/fx/transactions/index.ts:19: * @audit ISO-19011:2018 audit-trail fx-revaluation-evidence
 src/gl/account.service/index.ts:8: * @audit ISO-19011:2018 audit-trail
 src/gl/account/resolver/index.ts:27: * @audit ISO-19011:2018 audit-trail account-resolution
@@ -5486,6 +5509,7 @@ src/gl/posting.service/index.ts:585:   * @audit ISO-19011:2018 audit-trail perio
 src/gl/posting.service/index.ts:655:   * @audit ISO-19011:2018 audit-trail stock-ledger
 src/gl/posting.service/index.ts:798:   * @audit ISO-19011:2018 audit-trail reconciliation-evidence
 src/government/grants/index.ts:19: * @audit ISO-19011:2018 audit-trail grant-evidence
+src/gravity/index.ts:16: * @audit computed from the live matrix, never hand-asserted
 src/harmony/index.ts:13: * @audit harmony-checked horo bands (the horo state-ring law)
 src/held/for/sale/classifications/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-disposal-classification
 src/i18n/harvest/index.ts:32: * @audit ISO 19011:2018 §6.4.6 (harvest changes audit-trailed)
@@ -5653,8 +5677,9 @@ src/memories/index.ts:33: * @audit Conservation Law 10 referential-harmony (rela
 src/message/index.ts:12: * @audit the uuid is self-decoding — every channel is an independent verify level
 src/messages/index.ts:13: * @audit ISO-19011:2018 audit-trail message-provenance
 src/meta/automation/index.ts:25: * @audit ISO 19011:2018 §6.4.6 (proposals + their resolution audit-trailed)
+src/metatron/index.ts:20: * @audit counts computed on the live matrix, never hand-asserted
 src/middleware/accounting/tenant-scope.ts:19: * @audit ISO-19011:2018 audit-trail
-src/migrate/quaternary/index.ts:17: * @audit the folder law is computed, never hand-maintained
+src/migrate/quaternary/index.ts:20: * @audit the folder law is computed from the live tree, never hand-maintained
 src/mineral/resource/assets/index.ts:18: * @audit ISO 19011:2018 §6.4.6 audit-evidence-EE-assets
 src/modal/CreateJournalEntryModal.tsx:13: * @audit ISO-19011:2018 audit-trail journal-entry-creation
 src/multi/currency.service/index.ts:19: * @audit ISO-19011:2018 audit-trail
@@ -5701,6 +5726,7 @@ src/properties/index.ts:22: * @audit ISO-19011:2018 audit-trail property-master-
 src/properties/investment/properties/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-investment-property
 src/properties/spaces/index.ts:14: * @audit ISO-19011:2018 audit-trail space-master-changes
 src/pwa/index.ts:49: * @audit ISO 19011:2018 §6.4.6 (PWA cache + queue audit-trailed)
+src/quantum/index.ts:16: * @audit computed from the live matrix, never hand-asserted
 src/query/fingerprint/index.test.ts:20: * @audit Conservation Law 8 + Law 47 (content uuid at the type level)
 src/query/fingerprint/index.ts:60: * @audit Conservation Law 8  content-addressable integrity (the queryUuid itself)
 src/query/fingerprint/index.ts:61: * @audit Conservation Law 47 type uuid (ContentUuid<SqlQuery> is the type-level brand)
@@ -5711,6 +5737,8 @@ src/receivable/allowance.service.ts:8: * @audit ISO-19011:2018 audit-trail
 src/receivable/workflow.service.ts:10: * @audit ISO-19011:2018 audit-trail state-transitions
 src/regulatory/deferral/accounts/index.ts:15: * @audit ISO 19011:2018 §6.4.6 audit-evidence-regulatory-deferral
 src/remote/media/import/index.ts:12: * @audit ISO-19011:2018 audit-trail
+src/rodin/coil/index.ts:22: * @audit every residue computed on (ℤ/9ℤ) via @/horo, never hand-asserted
+src/rodin/index.ts:25: * @audit every quantity computed from the residues / live matrix, never asserted
 src/roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/roles/registry/index.ts:23: * @audit ISO-19011:2018 §6.4.6 audit-evidence-role-traceability
 src/roles/user/roles/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
@@ -5764,6 +5792,7 @@ src/self/closure/provider/search.ts:27: * @audit Conservation Law 53 self-refere
 src/self/closure/provider/signing.ts:58: * @audit Conservation Law 53 self-referential-closure
 src/self/closure/types.ts:52: * @audit Conservation Law 53 self-referential-closure
 src/self/reference/erpax.profile.ts:12: * @audit ISO 19011:2018 §6.4.6 (platform observes itself)
+src/self/similar/index.ts:16: * @audit every quantity computed on (ℤ/9ℤ) via @/horo + @/rodin, never asserted
 src/self/sufficient/index.ts:27: * @audit Conservation Law 53 (self-referential closure — internal fallback can replay)
 src/self/sufficient/index.ts:28: * @audit Conservation Law 54 (universal identity element — every case already defined)
 src/shared/AddressBlock.tsx:19: * @audit ISO-19011:2018 audit-trail consistent-rendering
@@ -5785,6 +5814,7 @@ src/spec/generator/marketing-page-generator.ts:45: * @audit ISO-19011:2018 §6.4
 src/spec/generator/seed-generator.ts:35: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/spec/generator/test-generator.ts:29: * @audit ISO 19011:2018 §6.4.6 audit-evidence-spec-traceability
 src/standard/collection/hook/index.ts:13: * @audit ISO-19011:2018 audit-trail
+src/standard/truth/index.ts:26: * @audit the banner law is computed from the live tree, never hand-maintained
 src/standards/index.ts:29: * @audit Conservation Law 27 standards-as-live-objects
 src/standards/index.ts:30: * @audit Conservation Law 28 standards-supersession-tracking
 src/standards/index.ts:31: * @audit Conservation Law 38 mcp-tool-standardization
@@ -5821,8 +5851,8 @@ src/testing/test-setup/index.ts:7: * @audit ISO-19011:2018 audit-trail seed-clea
 src/topology/torus.ts:52: * @audit ISO 19011:2018 §6.4.6 (every torus traversal audit-trailed)
 src/train/index.ts:26: * @audit ISO 19011 — efficiency, debt and pay are deterministic functions of the gap
 src/transaction/failures/index.ts:14: * @audit ISO-19011:2018 audit-trail failure-evidence
-src/translations/collect.ts:28: * @audit aura gap parity — a non-atom word here is a mint-queue word there
-src/translations/coverage.test.ts:15: * @audit the matrix is never broken — green by construction, recomputed not trusted
+src/translations/collect/index.ts:28: * @audit aura gap parity — a non-atom word here is a mint-queue word there
+src/translations/collect/test.ts:15: * @audit the matrix is never broken — green by construction, recomputed not trusted
 src/translations/index.ts:41: * @audit Conservation Law 8 content-uuid
 src/translations/index.ts:42: * @audit Conservation Law 10 referential-harmony (relatedTo back to the source row)
 src/translations/index.ts:43: * @audit ISO 19011:2018 §6.4.6 (translation changes audit-trailed)

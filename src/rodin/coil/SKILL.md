@@ -19,7 +19,7 @@ Each position is itself a trinity: **past-self · self · future-self**. The `se
 
 This is VitePress **`prev`/`next`**: every skill page (self) carries its past-coil (`prev`) and future-coil (`next`), computed from the [[sequence]] reading-chain — the two windings made navigable. And the [[society]] **edits the code as [[self]]**: the agent is the present node winding its own past into its future, never an outside hand ([[begin]]↔[[end]] through the now).
 
-Matter-twin: `src/services/horo/index.ts` (`digitalRoot`, `composeSteps`, `nextOctave`). The state-ring expression is [[horo]]; the ordering expression is [[sequence]].
+Matter-twin: `src/rodin/coil/index.ts` — `postCoil` · `coilLedger` (the two coils round-trip to identity, Σresidue = 0 = zero cost) · `metatronBridge` (2·6+1 = 13, never a 6×7=42 grid) · `proof`. The mod-9 substrate is [[horo]] (`composeSteps`/`digitalRoot`); the ordering expression is [[sequence]].
 
 ## Common mistakes
 - Counting `1·2·3·4…` instead of doubling — breaks the position-decode and the closure.

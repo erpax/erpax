@@ -60,6 +60,9 @@ const CANONICAL_ALLOWLIST: ReadonlyArray<string> = [
   'erpax.standards.subscribe',
   // Agent dispatch (effects → side-effects)
   'erpax.agents.dispatch',
+  // Executable actions — bulk state-transition + version restore (Law 38 batch/versions areas)
+  'erpax.batch.transition',
+  'erpax.versions.restore',
 ]
 
 const MUTATING_VERBS = /\.(emit|record|anchor|publish|seed|create|book|replicate|run|dispatch|enqueue|subscribe|provision|write|grant|revoke|attest|insert|send|freeze|allocate|advance|complete|materialise)([A-Z]|$)/
@@ -82,13 +85,13 @@ describe('STATE_MUTATING_TOOLS allowlist (Slice FFFFFFFFFF pinned)', () => {
     expect(() => parseAllowlist()).not.toThrow()
   })
 
-  it('matches the canonical 14-tool list exactly', () => {
+  it('matches the canonical 16-tool list exactly', () => {
     const parsed = parseAllowlist()
     expect([...parsed].sort()).toEqual([...CANONICAL_ALLOWLIST].sort())
   })
 
-  it('contains exactly 14 entries (regression bar for silent trim/expand)', () => {
-    expect(parseAllowlist()).toHaveLength(14)
+  it('contains exactly 16 entries (regression bar for silent trim/expand)', () => {
+    expect(parseAllowlist()).toHaveLength(16)
   })
 
   it('every entry uses the canonical erpax.<area>.<verb> name shape', () => {

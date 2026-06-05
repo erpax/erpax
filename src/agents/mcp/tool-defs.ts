@@ -215,6 +215,14 @@ import {
 import { computeContentUuid } from '@/integrity/content-uuid'
 import type { AgentRegistry } from '@/agent/types'
 import { createAgentContext } from '@/agent/context'
+import {
+  planSelfResearch,
+  securingGrant,
+  secureFootprint,
+  type DiscoveredAccount,
+  type SelfIdentity,
+} from '@/self/research'
+import { identityBindings } from '@/self/research/bindings'
 
 export interface ErpaxMcpTool {
   readonly name: string
@@ -228,6 +236,45 @@ export interface ErpaxMcpTool {
 
 const text = (s: string) => ({ content: [{ text: s, type: 'text' as const }] })
 const json = (v: unknown) => text(JSON.stringify(v, null, 2))
+
+/**
+ * Derive the caller's OWN footprint: fan the computed identity-bindings (schema-derived)
+ * through the gateway, each find run in the caller's `PayloadRequest` under
+ * `overrideAccess: false` — so the access scope IS the ownership boundary and no other
+ * actor's rows are ever reached (no bypass). A collection the caller cannot read simply
+ * contributes nothing. Shared by erpax.platform.selfResearch + selfSecure.
+ */
+async function deriveSelfFootprint(
+  req: PayloadRequest,
+): Promise<{ self: SelfIdentity; footprint: DiscoveredAccount[] }> {
+  const u = req.user as { email?: string; id?: string | number } | null | undefined
+  const self: SelfIdentity = { email: u?.email ?? '', userId: u?.id != null ? String(u.id) : '' }
+  const footprint: DiscoveredAccount[] = []
+  if (!self.email && !self.userId) return { self, footprint }
+  const bindings = await identityBindings()
+  const reachable = [...new Set(bindings.map((b) => b.collectionSlug))].map((slug) => ({
+    name: slug,
+    collectionSlug: slug,
+  }))
+  for (const q of planSelfResearch({ self, reachable, bindings })) {
+    try {
+      const res = await req.payload.find({
+        collection: q.collectionSlug as never,
+        where: q.where as never,
+        overrideAccess: false,
+        req,
+        depth: 0,
+        limit: 100,
+      })
+      for (const doc of res.docs as Array<{ id: unknown }>) {
+        footprint.push({ accountUuid: String(doc.id), collectionSlug: q.collectionSlug, provider: q.collectionSlug })
+      }
+    } catch {
+      // caller cannot read this collection — it contributes nothing to the footprint
+    }
+  }
+  return { self, footprint }
+}
 
 const localeEnum = z.enum(supportedLocales as unknown as [string, ...string[]])
 
@@ -449,6 +496,44 @@ export function buildErpaxMcpTools(registry: AgentRegistry): ErpaxMcpTool[] {
           requireScope: requireScope as 'genome' | 'genome+state' | undefined,
         })
         return json(result)
+      },
+    },
+    // ── self/research — any actor finds where its OWN identity is used, and secures it ──
+    {
+      name: 'erpax.platform.selfResearch',
+      description:
+        "Self-research: find where the CALLER'S OWN identity (their email + user id) is used across the corpus. Fans the computed find-surface over every schema-derived identity-binding, each query run in the caller's PayloadRequest under overrideAccess:false — so the access scope IS the ownership boundary and no other actor's rows can be reached (no bypass of the gateway). Read-only. @standard NIST SP 800-162 ABAC; @standard OWASP ASVS V5 (IDOR-prevention).",
+      parameters: {},
+      async handler(_params, req) {
+        const { self, footprint } = await deriveSelfFootprint(req)
+        if (!self.email && !self.userId) return json({ error: 'no authenticated identity on this request' })
+        return json({ identity: self.email || self.userId, count: footprint.length, footprint })
+      },
+    },
+    {
+      name: 'erpax.platform.selfSecure',
+      description:
+        "Self-secure: authorize + receipt the securing (reset/recover) of chosen accounts from the caller's OWN footprint. The securing grant's allowlist IS the footprint, so any accountUuid self-research did not return is BLOCKED and receipted — account-takeover is structurally unreachable. Owner-initiated, exposed-first; emits a uuid-chained receipt ledger. The per-provider credential reset is the effect this receipt authorizes (erpax holds the audit; the credential lives at the provider). @standard NIST SP 800-63B §6.1.3 owner-authorized recovery; @standard NIST SP 800-162 ABAC.",
+      parameters: { accountUuids: z.array(z.string()).min(1) },
+      async handler({ accountUuids }, req) {
+        const { self, footprint } = await deriveSelfFootprint(req)
+        if (!self.email && !self.userId) return json({ error: 'no authenticated identity on this request' })
+        const byUuid = new Map(footprint.map((a) => [a.accountUuid, a]))
+        const chosen = (accountUuids as string[]).map(
+          (u) => byUuid.get(u) ?? { accountUuid: u, collectionSlug: 'unknown', provider: 'unknown' },
+        )
+        const ledger = secureFootprint({
+          chosen,
+          grant: securingGrant({ toolUuid: 'erpax.platform.selfSecure', footprint }),
+          actor: self.email || self.userId,
+          stamp: () => new Date().toISOString(),
+        })
+        return json({
+          secured: ledger.secured.map((a) => ({ accountUuid: a.accountUuid, collection: a.collectionSlug })),
+          refused: ledger.refused.map((a) => a.accountUuid),
+          receipts: ledger.receipts.length,
+          note: 'each authorized securing is receipted; trigger the per-provider reset where the credential lives',
+        })
       },
     },
     // ── Slice JJJJJJ — Commerce: ERPax sells + deploys + bills itself ──
