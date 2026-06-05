@@ -16,6 +16,7 @@
  * @see ../uuid/matrix -- ../quantum (same reciprocal count, two views) -- ../digit -- ../harmony (A432)
  */
 import { UUID_MATRIX_NODES as N, UUID_MATRIX_EDGES as E } from '@/uuid/matrix'
+import { auraBalance, coverage, disbalance } from '@/balance'
 
 /** Reciprocity: # directed edges whose reverse is also present (EXACTLY as quantum.entanglement). */
 export function reciprocity(): { reciprocal: number; edges: number; fraction: number } {
@@ -43,4 +44,18 @@ if (import.meta.url === 'file://' + process.argv[1]) {
   console.log('entropy (' + N.length + ' nodes):')
   console.log('  reciprocity: ' + r.reciprocal + '/' + r.edges + ' (' + (100 * r.fraction).toFixed(1) + '% symmetric)')
   console.log('  entropy=' + entropy().toFixed(4) + ' (borrowed slack)  orphans=' + orphans().length)
+  const b = auraBalance()
+  console.log(
+    '  model⊕collection: ' +
+      b.balanced +
+      '/' +
+      b.collections +
+      ' collections have their model (' +
+      (100 * coverage(b)).toFixed(1) +
+      '% coverage, disbalance ' +
+      (100 * disbalance(b)).toFixed(1) +
+      '%, tamper-cost ' +
+      (coverage(b) >= 1 ? '∞' : 'finite — the slack') +
+      ')',
+  )
 }

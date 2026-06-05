@@ -408,6 +408,7 @@ src/auth/index.ts:190: * @standard NIST INCITS-359-2012 rbac object-scoped-role-
 src/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/auth/index.ts:5: * @standard NIST SP-800-162 attribute-based-access-control
 src/auto/set/timestamp/index.ts:7: * @standard ISO-8601-1:2019 date-time utc-canonical
+src/balance/index.ts:24: * @standard double-entry bookkeeping (Pacioli, 1494) — every credit a debit; imbalance is the bug
 src/bank/accounts/bank/reconciliations/index.ts:14: * @standard ISO-4217:2015 currency-codes
 src/bank/accounts/bank/reconciliations/index.ts:15: * @standard ISO-8601-1:2019 date-time reconciliation-date
 src/bank/accounts/bank/reconciliations/index.ts:16: * @standard ISO-20022 camt.053 bank-to-customer-statement (input)
@@ -5326,6 +5327,7 @@ src/authenticated/or/published/index.ts:8: * @audit ISO-19011:2018 audit-trail d
 src/auto/populate/created/by/index.ts:7: * @audit ISO-19011:2018 audit-trail authorship-attribution
 src/auto/populate/tenant/index.ts:11: * @audit ISO-19011:2018 audit-trail before-validate-hooks
 src/auto/set/timestamp/index.ts:8: * @audit ISO-19011:2018 audit-trail status-transition-timestamp
+src/balance/index.ts:25: * @audit computed on the live uuid-matrix atom names, never hand-asserted
 src/bank/accounts/bank/reconciliations/index.ts:19: * @audit ISO-19011:2018 §6.4.6 audit-evidence-bank-reconciliation
 src/bank/accounts/bank/transactions/index.ts:45: * @audit ISO-19011:2018 audit-trail reconciliation-line-evidence
 src/bank/accounts/index.ts:13: * @audit ISO-19011:2018 audit-trail bank-account-master
