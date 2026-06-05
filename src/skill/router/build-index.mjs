@@ -16,7 +16,7 @@
  * Usage: node src/services/skill-router/build-index.mjs
  */
 
-import { readdirSync, statSync, existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readdirSync, statSync, lstatSync, existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { join, dirname, basename, relative } from 'node:path'
 import { createHash } from 'node:crypto'
 
@@ -29,9 +29,13 @@ const ROOTS = ['src']
 const OUT = 'src/skill/router/skills.index.ts'
 
 const isSkill = (dir) => existsSync(join(dir, 'SKILL.md'))
+// Skip symlinks: the `.claude → src` merge leaves a `src/skills → .` self-symlink,
+// so following links would recurse `src/skills/skills/skills/…` forever (ELOOP).
+// lstat (not stat) so a symlinked dir reads as a link, not the dir it targets.
+const isRealDir = (p) => { try { const s = lstatSync(p); return s.isDirectory() && !s.isSymbolicLink() } catch { return false } }
 const subDirs = (dir) =>
   existsSync(dir)
-    ? readdirSync(dir).map((n) => join(dir, n)).filter((d) => statSync(d).isDirectory()).sort()
+    ? readdirSync(dir).map((n) => join(dir, n)).filter(isRealDir).sort()
     : []
 
 /** Deterministic v5-style uuid from the content (sha-256 → uuid layout). */
@@ -109,8 +113,9 @@ function nodeFor(skillDir, root) {
 function walk(dir, root, out = []) {
   if (!existsSync(dir)) return out
   for (const name of readdirSync(dir).sort()) {
+    if (name === 'node_modules' || name.startsWith('.')) continue
     const full = join(dir, name)
-    if (name === 'node_modules' || !statSync(full).isDirectory()) continue
+    if (!isRealDir(full)) continue // skip non-dirs AND symlinks (the src/skills → . loop)
     if (isSkill(full)) out.push(nodeFor(full, root))
     walk(full, root, out)
   }

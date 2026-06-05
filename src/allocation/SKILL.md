@@ -19,6 +19,8 @@ Pure (no I/O) ⇒ testable; a payroll/settlement [[hooks]] hook and the governan
 
 Sequence position: **1·2** (the material build — `reward` is a [[rate]] at position 1; `distribute` aggregates contributions at position 2), governed by the [[balance]]/[[merge]] conservation laws on the return arc. Composes: [[rate]] · [[balance]] · [[identity]] · [[merge]] · [[generate]] · [[standard]] · [[duality]] · [[positions]] (the ladder filled with job positions).
 
+**The compute twin (EPLB / LPLB).** DeepSeek's expert load-balancers redistribute experts across devices by a fixed rule to even the load; erpax `allocation` redistributes a conserved pot across contributors by a fixed rule (Hamilton largest-remainder), gated by [[bottleneck]]. Deterministic balancing of a conserved resource — value-side here, compute-side there. Ratified by the R&D society (`agent/research`, weave seq 5).
+
 ## Standards
 
 - **SFIA 8 responsibility-levels (1..7)** — job-type categorisation via `competencyWeight`.

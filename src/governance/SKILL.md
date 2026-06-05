@@ -17,6 +17,8 @@ The bar is a dial, not a constant: ordinary [[legislation]] passes at a simple m
 
 Sequence position: **6** (round — the deliberation that returns a binding result), on the ring 0·3·6·9·1·2·4·8·7·5 (see [[sequence]]).
 
+**The reverse (erpax surplus).** This atom IS the surplus a formal system lacks — the judgment it cannot generate for itself, supplied from OUTSIDE the formalism by the vote (`tally(ballots, electorate, rule) → Verdict`). A compute-org is a formalism; it has no analog. The R&D society flagged `governance` as erpax **surplus** over the DeepSeek twins. Ratified by the R&D society (`agent/research`, reverse seq 11).
+
 ## Standards
 
 - **ISO 37000:2021** — governance-of-organizations.

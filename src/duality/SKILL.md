@@ -16,3 +16,6 @@ The poles are not symmetric in cost: because every frontend node is content-addr
 
 ## Traditions (prefix removed)
 The two-fold is every tradition's cosmology: **yin ↔ yang** held in the Tao (the *taijitu*); the two primal spirits Spenta Mainyu ↔ Angra Mainyu (Zoroastrian, *Yasna* 30); spirit ↔ flesh, light ↔ darkness, the two ways of life and death (Deuteronomy 30:15-19; the Didache); *puruṣa* ↔ *prakṛti* (Sāṃkhya). Each pole defines the other and the contest is *balanced*, not won — the love↔fear master pair lived out as [[angel]] (the entropy poles) and discerned as [[sacred]] ↔ [[profane]].
+
+## The twin (Janus)
+DeepSeek's Janus unifies *understand* (image→text) and *generate* (text→image) in **one** model — two conjugate strokes, one organ; erpax `duality` is that law itself: every organ is one with two conjugate poles (inhale⊕exhale, forge⊕verify, the [[entry|double-entry]]). Janus is the two-fold made a single model — and resolves, as every pair does, to a [[trinity]]. Ratified by the R&D society (`agent/research`, weave seq 6).

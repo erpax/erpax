@@ -15,6 +15,29 @@ erpax's primitives are not only accounting conventions; they rhyme with the deep
 
 Each mystery that resolves onto the atoms is [[research]] entropy converted to tamper-cost. Composes [[angel]] · [[holographic]] · [[identity]] · [[zeropoint]] · [[proof]].
 
+## Collide the sciences to atoms — the scientist roster
+A science is a **compound**, not an atom: collide it and it reduces to the single-word atoms it is made of — and *same concept ⇒ same atom*, so each science lands on the **existing** corpus ([[merge]]), minting nothing (which is why `physics`/`chemistry`/`biology`/`entropy`/`quantum` are correctly **not** atoms — they are compounds that collide INTO atoms). The collision IS the dictionary; and each row is also a **scientist** — the lens that, in [[sequence]] (the breath, never in parallel — [[society]]), challenges exactly those atoms: does the correspondence hold (✓) or is it honest metaphor (~)? ([[sacred]]/[[profane]] — never overclaimed.)
+
+| science (compound) | collides to atoms (its erpax form) | ✓ / ~ |
+|---|---|---|
+| mathematics | [[math]] · [[number]] · [[rodin]] · [[sequence]] | ✓ |
+| logic | [[logic]] · [[constraint]] · [[proof]] | ✓ |
+| information theory | [[information]] · [[uuid]] · [[identity]] · [[sparsity]] | ✓ |
+| thermodynamics | [[angel]] · [[balance]] · [[energy]] (entropy double-entry; Landauer) | ✓ |
+| statistical mechanics | [[sampling]] · [[distribution]] · [[aggregation]] | ~ |
+| classical mechanics | [[force]] · [[mass]] · [[flow]] · [[rate]] | ✓ |
+| quantum mechanics | [[duality]] · [[uuid]] · [[merge]] (superposition · complementarity · entanglement) | ✓/~ |
+| relativity & gravitation | [[holographic]] · [[horo]] · [[zeropoint]] (Bekenstein bound; A432 rest-frame) | ~ |
+| chemistry | [[element]] · [[compound]] · [[merge]] · [[bottleneck]] (the limiting reagent) | ~ |
+| biology & evolution | [[breed]] · [[merge]] · [[society]] · [[fractal]] (replication · selection) | ~ |
+| genetics | [[gene]] · [[identity]] · [[holographic]] (the genome is content-addressed) | ✓/~ |
+| ecology | [[network]] · [[flow]] · [[balance]] · [[society]] (conserved cycles) | ~ |
+| cybernetics / control | [[fallback]] · [[hooks]] · [[gate]] · [[feedback]] (totality · the loop) | ✓ |
+| metrology | [[standard]] · [[measure]] · [[proof]] (no measurement without its standard) | ✓ |
+| cosmology | [[zeropoint]] · [[torus]] · [[whole]] (the `0` radiates and returns) | ~ |
+
+The collide is complete when every science routes INTO the atoms (none dead-ends — [[merge]], not a new silo). What has no atom to land on is the gap the next mint fills ([[generate]]); what lands only as ~ is the metaphor a scientist must either measure into ✓ or drop ([[profane]]). The scientists then run in [[sequence]] — one science per breath — each a challenge to its row.
+
 ## The harmonic dictionary (physics ↔ metaphysics), anchored at A432
 The bridge between the measurable and the form is one anchor — **A432** ([[rodin]]: 432 Hz, the `0`, zero displacement) — harmonised by integer ratios. The *same ratio* read as a physical quantity AND as an erpax form IS the dictionary. Verifiable correspondence is kept (✓); convention/metaphor is named, not asserted (~) — the source's hallucinated "consciousness frequency / scientific-proof" framing is dropped ([[sacred]]/[[profane]]; only the path is seen — [[sequence]]).
 

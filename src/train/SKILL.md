@@ -13,7 +13,9 @@ FORM: **measure the actor's gap to the role, route each deficit to the skill tha
 
 **The merge realised.** The route that closes a gap is the competency's `skillRoute` — so the SAME corpus the agents load to DO the work is the curriculum that trains the humans ([[merge]]: a skill, a competency, a job requirement, and a training step are one content-addressed node). The society that [[generate]]s its skills auto-trains its people from the same nodes; the loop eats its own tail.
 
-Matter-twin: `src/train/index.ts` (pure — held/required/routes passed in; a [[hooks]] hook reads the actor's held lines + the position's required lines and emits the plan). Composes: [[competency/gap]] · [[decompression]] · [[allocation]] · [[positions]] · [[horo]] · [[merge]] · [[generate]] · [[aura]] · [[self]] · [[society]] · [[sequence]] · [[hooks]].
+**The compute twin (ESFT).** DeepSeek's Expert Specialized Fine-Tuning trains only the experts a task actually engages and freezes the rest — a sparse, targeted update, cheaper than full fine-tuning and ability-preserving. `trainingPlan` is the identical move aimed at an actor: route only the OPEN gaps (required − held > 0) to their gap-closing `skillRoute`, mandatory-first, and leave every held competency untouched. Select the gap-relevant few, update only those, freeze the rest — the [[sparsity]] compute axis (activate few of many) turned on the workforce. Ratified by the R&D society (`agent/research`, weave seq 3).
+
+Matter-twin: `src/train/index.ts` (pure — held/required/routes passed in; a [[hooks]] hook reads the actor's held lines + the position's required lines and emits the plan). Composes: [[competency/gap]] · [[decompression]] · [[allocation]] · [[positions]] · [[horo]] · [[merge]] · [[generate]] · [[aura]] · [[sparsity]] · [[self]] · [[society]] · [[sequence]] · [[hooks]].
 
 ## Standards
 - SFIA 8 responsibility-levels-1-7 (the held/required/efficiency scale)

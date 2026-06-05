@@ -11,7 +11,7 @@ description: "Use when measuring or reasoning about quality of life — каче
 
 **The aggregation rule: compensatory, with non-compensatory floors.** Where [[market]] is a *pure product* (any zero atom kills it), wellbeing is mostly a **weighted [[aggregation]]** — dimensions trade off, a high one offsets a low one. But some dimensions are **capability floors**: below them no surplus elsewhere compensates (total [[health]] collapse, total social isolation). **At a floor the [[bottleneck]] law returns** — the near-zero dimension caps the whole exactly as the market's zero atom does. So the analytic move is the same: to raise wellbeing, **find the floor dimension and lift it**, never pump a dimension already high.
 
-**erpax: wellbeing is what the ledger is FOR.** erpax is double-entry on entropy ([[angel]]); a society's [[balance]] is not the goal but the means — **wellbeing is the credit side**, the [[entry]] that [[allocation]] and [[decompression]] (pay, retire) exist to fund. It is [[measure]]d as a composite index, tracked by [[cohort]] over [[time]]. It is conditioned by [[career]] (work is itself a core wellbeing dimension, and it turns sharply at the late-career → retirement transition), graded by [[age]] (the gradient steepens late), and shocked by [[crisis]] (which strikes the floor dimensions hardest).
+**erpax: wellbeing is what the ledger is FOR.** erpax is double-entry on entropy ([[angel]]); a society's [[balance]] is not the goal but the means — **wellbeing is the credit side**, the [[entry]] that [[allocation]] and [[decompression]] (pay, retire) exist to fund. It is [[measure]]d as a composite index — for late career the validated operationalization is the **CASP** scale (control · autonomy · self-realisation · pleasure) — tracked by [[cohort]] over [[time]]. It is conditioned by [[career]] (work is itself a core wellbeing dimension, and it turns sharply at the late-career → retirement transition), graded by [[age]] (the gradient steepens late), and shocked by [[crisis]] (which strikes the floor dimensions hardest).
 
 ## Standards
 - **WHOQOL** (WHO Quality of Life) — physical · psychological · social · environmental domains.
@@ -19,5 +19,6 @@ description: "Use when measuring or reasoning about quality of life — каче
 - **Having / Loving / Being** — Erik Allardt's Nordic welfare triad.
 - **OECD How's Life / Better Life Index**; **Eurofound European Quality of Life Survey**.
 - **EQ-5D**, **WEMWBS** — instruments for the health-related and mental-wellbeing sub-indices.
+- **CASP-12 / CASP-19** — the validated late-life quality-of-life scale (control · autonomy · self-realisation · pleasure); psychometrically validated across Central-Eastern Europe (HAPIEE cohort, n≈13,210, ages 50–70) and the QoL outcome in SHARE — the instrument of choice for *late-career* wellbeing.
 
 Composes: [[society]] · [[market]] · [[dimension]] · [[health]] · [[aggregation]] · [[bottleneck]] · [[duality]] · [[measure]] · [[cohort]] · [[time]] · [[entry]] · [[allocation]] · [[decompression]] · [[angel]] · [[balance]] · [[career]] · [[age]] · [[crisis]].

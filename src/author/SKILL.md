@@ -1,0 +1,12 @@
+---
+name: author
+description: "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be us"
+---
+
+# author
+
+The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
+
+Attested in schema.org — author
+
+@standard schema.org — the type vocabulary, collided to single words

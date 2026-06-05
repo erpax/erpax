@@ -1,0 +1,12 @@
+---
+name: backstory
+description: "For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could includ"
+---
+
+# backstory
+
+For an Article, typically a NewsArticle, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc.
+
+Attested in schema.org — backstory
+
+@standard schema.org — the type vocabulary, collided to single words

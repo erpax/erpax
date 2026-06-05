@@ -1,0 +1,12 @@
+---
+name: courthouse
+description: "A courthouse."
+---
+
+# courthouse
+
+A courthouse.
+
+Attested in schema.org — Courthouse
+
+@standard schema.org — the type vocabulary, collided to single words

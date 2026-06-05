@@ -51,6 +51,16 @@ A URL is the external presentation of `(context, tag)` filtering: `https://[host
 - **Caching:** denormalize `cachedTagList` on the taggable via a [[hooks]] beforeChange (matter) so reads need no join — the hook/fallback ↔ matter/antimatter pair (see [[sequence]]).
 - **Dirty tracking / ordered tags:** `<ctx>_list_changed?`; `acts_as_ordered_taggable` preserves creation order.
 
+## The write engine — a text field BECOMES computed taggings (realized matter)
+The read side (`taggedWith`) had no write twin; these matter files complete the port so a free-text label/category/CSV column can be **replaced** by content-addressed taggings (the zero-entropy move: a stored string is entropy, a tagging is canonical):
+
+- **`tag/list.ts`** — `parseTagList` / `toTagListString` (port of `TagList` + `DefaultParser`): the **text↔tags bridge**. A delimited, optionally-quoted string (`a, b, "c,d"`) parses to a clean, lower-cased, deduped name list and renders back for editing. `reconcileTags` is the pure `save_tags` diff (add new, remove dropped) — provable with no DB.
+- **`tag/setTagList.ts`** — `setTagList` (port of `Core#save_tags`) reconciles a record's taggings in a context to a list; `findOrCreateTags` is the content-uuid form of `find_or_create_all_with_like_by_name` (same name ⇒ same id, no race); `tagListOn` is `tag_list_on` (the names a record carries). Stub-tested end to end.
+- **`tags/taggings/counter.ts`** — the `taggingsCount` **counter cache** (the gem's `counter_cache`): a create `+1`s, a delete `-1`s the tag — wired as a taggings afterChange/afterDelete so EVERY write path stays correct. `most_used`/`least_used` are then just `taggingsCount` sorts.
+- **`tag/field.ts` — `tagListField(context)`**: the drop-in REPLACEMENT for `{ name, type: 'text' }`. A **virtual** text field, computed from taggings on read and reconciled into them on change. Swap a label/CSV column for it and the value lives in the shared engine — sliceable, deduped, counted, `taggedWith`-queryable — with **zero stored column** ([[merge]]: the text field collapses into the one tagging engine).
+
+So which text fields are "really another type"? Numbers/dates/emails **retype** (the static-typing gate); **labels, categories, keyword-lists, free-tag columns become `tagListField` / taggings** — text-as-entropy collapsed to content-addressed tags.
+
 ## Quantum-entangled aspects (from the full schema)
 - **Tags are typed (STI `type` column).** A tag's *type/slot* rides in its structured **uuidv8** (SLOT_TAGS; see [[identity]]) — `decodeStructured(tagUuid)` reveals its kind with NO lookup (realtime). Per-context Tag subclasses come from the `find_or_create_tags_from_list_with_context` hook. The tag is self-describing.
 - **Per-context cached lists** (`cached_<context>_list` — string, PG array, or `json`). Denormalize the read projection on the taggable as a `json` map `{context: [tags]}`, maintained by a [[hooks]] beforeChange (matter) so reads (antimatter) skip the join. On D1 use a `json` field; query with json operators.

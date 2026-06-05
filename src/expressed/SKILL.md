@@ -1,0 +1,12 @@
+---
+name: expressed
+description: "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system."
+---
+
+# expressed
+
+Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.
+
+Attested in schema.org — expressedIn
+
+@standard schema.org — the type vocabulary, collided to single words
