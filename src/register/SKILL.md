@@ -1,11 +1,11 @@
 ---
 name: register
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "register: a schema.org component word, fused from RegisterAction, UnRegisterAction"
 ---
 
 # register
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from RegisterAction · UnRegisterAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]] · [[un]]
 

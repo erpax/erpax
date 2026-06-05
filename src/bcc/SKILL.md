@@ -1,11 +1,11 @@
 ---
 name: bcc
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "bcc: a schema.org component word, fused from bccRecipient"
 ---
 
 # bcc
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from bccRecipient ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[recipient]]
 

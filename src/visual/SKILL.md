@@ -1,11 +1,11 @@
 ---
 name: visual
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "visual: a schema.org component word, fused from VisualArtsEvent, VisualArtwork"
 ---
 
 # visual
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from VisualArtsEvent · VisualArtwork ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[arts]] · [[event]] · [[artwork]]
 

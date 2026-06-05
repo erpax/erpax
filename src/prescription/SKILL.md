@@ -1,11 +1,11 @@
 ---
 name: prescription
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "prescription: a schema.org component word, fused from DrugPrescriptionStatus, offersPrescriptionByMail, prescriptionStatus"
 ---
 
 # prescription
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DrugPrescriptionStatus · offersPrescriptionByMail · prescriptionStatus ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[drug]] · [[status]] · [[offers]] · [[mail]]
 

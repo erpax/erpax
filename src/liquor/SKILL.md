@@ -1,11 +1,11 @@
 ---
 name: liquor
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "liquor: a schema.org component word, fused from LiquorStore"
 ---
 
 # liquor
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from LiquorStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]]
 

@@ -1,11 +1,11 @@
 ---
 name: benefit
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "benefit: a schema.org component word, fused from TierBenefitEnumeration, hasTierBenefit"
 ---
 
 # benefit
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from TierBenefitEnumeration · hasTierBenefit ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[tier]] · [[enumeration]] · [[has]]
 

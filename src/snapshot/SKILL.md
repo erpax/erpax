@@ -1,11 +1,11 @@
 ---
 name: snapshot
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "snapshot: a schema.org component word, fused from AudioObjectSnapshot, ImageObjectSnapshot, VideoObjectSnapshot"
 ---
 
 # snapshot
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AudioObjectSnapshot · ImageObjectSnapshot · VideoObjectSnapshot ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[audio]] · [[object]] · [[image]] · [[video]]
 

@@ -1,11 +1,11 @@
 ---
 name: forum
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "forum: a schema.org component word, fused from DiscussionForumPosting"
 ---
 
 # forum
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DiscussionForumPosting ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[discussion]] · [[posting]]
 

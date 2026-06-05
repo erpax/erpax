@@ -1,11 +1,11 @@
 ---
 name: real
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "real: a schema.org component word, fused from RealEstateAgent, RealEstateListing, realEstateAgent"
 ---
 
 # real
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from RealEstateAgent · RealEstateListing · realEstateAgent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[estate]] · [[agent]] · [[listing]]
 

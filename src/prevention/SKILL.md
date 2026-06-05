@@ -1,11 +1,11 @@
 ---
 name: prevention
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "prevention: a schema.org component word, fused from PreventionIndication, diseasePreventionInfo, primaryPrevention, secondaryPrevention"
 ---
 
 # prevention
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PreventionIndication · diseasePreventionInfo · primaryPrevention · secondaryPrevention ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[indication]] · [[disease]] · [[info]] · [[primary]] · [[secondary]]
 

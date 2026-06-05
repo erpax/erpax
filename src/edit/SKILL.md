@@ -1,11 +1,11 @@
 ---
 name: edit
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "edit: a schema.org component word, fused from editEIDR"
 ---
 
 # edit
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from editEIDR ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[eidr]]
 

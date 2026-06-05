@@ -1,11 +1,11 @@
 ---
 name: chem
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "chem: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, isEncodedByBioChemEntity"
 ---
 
 # chem
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BioChemEntity · bioChemInteraction · bioChemSimilarity · encodesBioChemEntity · hasBioChemEntityPart · isEncodedByBioChemEntity · isPartOfBioChemEntity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bio]] · [[entity]] · [[interaction]] · [[similarity]] · [[encodes]] · [[has]] · [[part]] · [[encoded]]
 

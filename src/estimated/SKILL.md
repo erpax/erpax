@@ -1,11 +1,11 @@
 ---
 name: estimated
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "estimated: a schema.org component word, fused from estimatedCost, estimatedFlightDuration, estimatedSalary"
 ---
 
 # estimated
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from estimatedCost · estimatedFlightDuration · estimatedSalary ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cost]] · [[flight]] · [[duration]] · [[salary]]
 

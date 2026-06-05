@@ -1,11 +1,11 @@
 ---
 name: conditions
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "conditions: a schema.org component word, fused from ShippingConditions, conditionsOfAccess, shippingConditions"
 ---
 
 # conditions
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ShippingConditions · conditionsOfAccess · shippingConditions ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[shipping]] · [[access]]
 

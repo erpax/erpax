@@ -1,11 +1,11 @@
 ---
 name: public
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "public: a schema.org component word, fused from AskPublicNewsArticle, PublicSwimmingPool, PublicToilet, publicAccess, publicTransportClosuresInfo"
 ---
 
 # public
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AskPublicNewsArticle · PublicSwimmingPool · PublicToilet · publicAccess · publicTransportClosuresInfo ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[ask]] · [[news]] · [[article]] · [[swimming]] · [[pool]] · [[toilet]] · [[access]] · [[transport]] · [[closures]] · [[info]]
 

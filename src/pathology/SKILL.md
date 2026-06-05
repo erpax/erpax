@@ -1,11 +1,11 @@
 ---
 name: pathology
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "pathology: a schema.org component word, fused from PathologyTest"
 ---
 
 # pathology
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PathologyTest ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[test]]
 

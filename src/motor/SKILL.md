@@ -1,11 +1,11 @@
 ---
 name: motor
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "motor: a schema.org component word, fused from nerveMotor"
 ---
 
 # motor
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from nerveMotor ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[nerve]]
 

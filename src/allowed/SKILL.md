@@ -1,11 +1,11 @@
 ---
 name: allowed
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "allowed: a schema.org component word, fused from petsAllowed, regionsAllowed, smokingAllowed"
 ---
 
 # allowed
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from petsAllowed · regionsAllowed · smokingAllowed ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[pets]] · [[regions]] · [[smoking]]
 

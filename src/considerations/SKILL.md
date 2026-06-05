@@ -1,11 +1,11 @@
 ---
 name: considerations
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "considerations: a schema.org component word, fused from expertConsiderations"
 ---
 
 # considerations
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from expertConsiderations ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[expert]]
 

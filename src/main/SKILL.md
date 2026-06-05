@@ -1,11 +1,11 @@
 ---
 name: main
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "main: a schema.org component word, fused from mainContentOfPage, mainEntity, mainEntityOfPage"
 ---
 
 # main
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from mainContentOfPage · mainEntity · mainEntityOfPage ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[content]] · [[page]] · [[entity]]
 

@@ -1,11 +1,11 @@
 ---
 name: physicians
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "physicians: a schema.org component word, fused from PhysiciansOffice"
 ---
 
 # physicians
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PhysiciansOffice ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[office]]
 

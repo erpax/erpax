@@ -1,11 +1,11 @@
 ---
 name: unit
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "unit: a schema.org component word, fused from UnitPriceSpecification, costPerUnit, doseUnit, drugUnit, employmentUnit, lodgingUnitDescription"
 ---
 
 # unit
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from UnitPriceSpecification · costPerUnit · doseUnit · drugUnit · employmentUnit · lodgingUnitDescription · lodgingUnitType · sensoryUnit · strengthUnit · unitCode · unitText ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[price]] · [[specification]] · [[cost]] · [[dose]] · [[drug]] · [[employment]] · [[lodging]] · [[description]] · [[type]] · [[sensory]] · [[strength]] · [[code]] · [[text]]
 

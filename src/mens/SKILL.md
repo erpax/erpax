@@ -1,11 +1,11 @@
 ---
 name: mens
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "mens: a schema.org component word, fused from MensClothingStore"
 ---
 
 # mens
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MensClothingStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[clothing]] · [[store]]
 

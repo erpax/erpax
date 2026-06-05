@@ -1,11 +1,11 @@
 ---
 name: uk
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "uk: a schema.org component word, fused from UKNonprofitType"
 ---
 
 # uk
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from UKNonprofitType ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[nonprofit]] · [[type]]
 

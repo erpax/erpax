@@ -1,11 +1,11 @@
 ---
 name: radio
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "radio: a schema.org component word, fused from AMRadioChannel, FMRadioChannel, RadioBroadcastService, RadioChannel, RadioClip, RadioEpisode"
 ---
 
 # radio
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AMRadioChannel · FMRadioChannel · RadioBroadcastService · RadioChannel · RadioClip · RadioEpisode · RadioSeason · RadioSeries · RadioStation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[am]] · [[channel]] · [[fm]] · [[broadcast]] · [[service]] · [[clip]] · [[episode]] · [[season]] · [[series]] · [[station]]
 

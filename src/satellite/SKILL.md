@@ -1,11 +1,11 @@
 ---
 name: satellite
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "satellite: a schema.org component word, fused from CableOrSatelliteService"
 ---
 
 # satellite
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CableOrSatelliteService ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cable]] · [[service]]
 

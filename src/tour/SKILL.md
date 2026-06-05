@@ -1,11 +1,11 @@
 ---
 name: tour
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "tour: a schema.org component word, fused from tourBookingPage"
 ---
 
 # tour
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from tourBookingPage ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[booking]] · [[page]]
 

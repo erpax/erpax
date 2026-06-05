@@ -1,11 +1,11 @@
 ---
 name: quantitative
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "quantitative: a schema.org component word, fused from QuantitativeValue, QuantitativeValueDistribution"
 ---
 
 # quantitative
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from QuantitativeValue · QuantitativeValueDistribution ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[value]] · [[distribution]]
 

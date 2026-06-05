@@ -1,11 +1,11 @@
 ---
 name: building
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "building: a schema.org component word, fused from GovernmentBuilding, LegislativeBuilding"
 ---
 
 # building
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GovernmentBuilding · LegislativeBuilding ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[government]] · [[legislative]]
 

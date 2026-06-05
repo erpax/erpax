@@ -1,11 +1,11 @@
 ---
 name: mech
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "mech: a schema.org component word, fused from cvdNumC19MechVentPats, cvdNumC19OFMechVentPats"
 ---
 
 # mech
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from cvdNumC19MechVentPats · cvdNumC19OFMechVentPats ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cvd]] · [[num]] · [[vent]] · [[pats]]
 

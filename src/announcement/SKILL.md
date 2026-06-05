@@ -1,11 +1,11 @@
 ---
 name: announcement
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "announcement: a schema.org component word, fused from SpecialAnnouncement, announcementLocation"
 ---
 
 # announcement
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SpecialAnnouncement · announcementLocation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[special]] · [[location]]
 

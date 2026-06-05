@@ -1,11 +1,11 @@
 ---
 name: overview
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "overview: a schema.org component word, fused from employerOverview"
 ---
 
 # overview
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from employerOverview ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[employer]]
 

@@ -1,11 +1,11 @@
 ---
 name: closures
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "closures: a schema.org component word, fused from publicTransportClosuresInfo, schoolClosuresInfo"
 ---
 
 # closures
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from publicTransportClosuresInfo · schoolClosuresInfo ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[public]] · [[transport]] · [[info]] · [[school]]
 

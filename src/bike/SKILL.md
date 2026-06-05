@@ -1,11 +1,11 @@
 ---
 name: bike
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "bike: a schema.org component word, fused from BikeStore"
 ---
 
 # bike
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BikeStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]]
 

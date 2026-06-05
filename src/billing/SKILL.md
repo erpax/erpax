@@ -1,11 +1,11 @@
 ---
 name: billing
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "billing: a schema.org component word, fused from billingAddress, billingDuration, billingIncrement, billingPeriod, billingStart"
 ---
 
 # billing
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from billingAddress · billingDuration · billingIncrement · billingPeriod · billingStart ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[address]] · [[duration]] · [[increment]] · [[period]] · [[start]]
 

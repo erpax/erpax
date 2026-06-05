@@ -1,11 +1,11 @@
 ---
 name: details
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "details: a schema.org component word, fused from BedDetails, EnergyConsumptionDetails, OfferShippingDetails, hasEnergyConsumptionDetails, labelDetails, shippingDetails"
 ---
 
 # details
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BedDetails · EnergyConsumptionDetails · OfferShippingDetails · hasEnergyConsumptionDetails · labelDetails · shippingDetails ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bed]] · [[energy]] · [[consumption]] · [[offer]] · [[shipping]] · [[has]] · [[label]]
 

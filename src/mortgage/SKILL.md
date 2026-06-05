@@ -1,11 +1,11 @@
 ---
 name: mortgage
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "mortgage: a schema.org component word, fused from MortgageLoan, domiciledMortgage, loanMortgageMandateAmount"
 ---
 
 # mortgage
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MortgageLoan · domiciledMortgage · loanMortgageMandateAmount ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[loan]] · [[domiciled]] · [[mandate]] · [[amount]]
 

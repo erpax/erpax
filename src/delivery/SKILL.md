@@ -1,11 +1,11 @@
 ---
 name: delivery
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "delivery: a schema.org component word, fused from DeliveryChargeSpecification, DeliveryEvent, DeliveryMethod, DeliveryTimeSettings, ParcelDelivery, ShippingDeliveryTime"
 ---
 
 # delivery
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DeliveryChargeSpecification · DeliveryEvent · DeliveryMethod · DeliveryTimeSettings · ParcelDelivery · ShippingDeliveryTime · appliesToDeliveryMethod · availableDeliveryMethod · deliveryAddress · deliveryLeadTime · deliveryMethod · deliveryStatus · deliveryTime · hasDeliveryMethod · orderDelivery ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[charge]] · [[specification]] · [[event]] · [[method]] · [[time]] · [[settings]] · [[parcel]] · [[shipping]] · [[applies]] · [[available]] · [[address]] · [[lead]] · [[status]] · [[has]] · [[order]]
 

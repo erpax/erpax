@@ -1,11 +1,11 @@
 ---
 name: grocery
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "grocery: a schema.org component word, fused from GroceryStore"
 ---
 
 # grocery
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GroceryStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]]
 

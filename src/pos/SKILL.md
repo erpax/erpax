@@ -1,11 +1,11 @@
 ---
 name: pos
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "pos: a schema.org component word, fused from hasPOS"
 ---
 
 # pos
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from hasPOS ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[has]]
 

@@ -1,11 +1,11 @@
 ---
 name: extent
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "extent: a schema.org component word, fused from materialExtent"
 ---
 
 # extent
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from materialExtent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[material]]
 

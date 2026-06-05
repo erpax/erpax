@@ -1,11 +1,11 @@
 ---
 name: marketing
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "marketing: a schema.org component word, fused from healthPlanMarketingUrl"
 ---
 
 # marketing
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from healthPlanMarketingUrl ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[health]] · [[plan]] · [[url]]
 

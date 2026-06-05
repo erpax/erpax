@@ -1,11 +1,11 @@
 ---
 name: node
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "node: a schema.org component word, fused from ConstraintNode, TypeAndQuantityNode"
 ---
 
 # node
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ConstraintNode · TypeAndQuantityNode ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[constraint]] · [[type]] · [[quantity]]
 

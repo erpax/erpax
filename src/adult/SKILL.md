@@ -1,11 +1,11 @@
 ---
 name: adult
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "adult: a schema.org component word, fused from AdultEntertainment, AdultOrientedEnumeration, hasAdultConsideration"
 ---
 
 # adult
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AdultEntertainment · AdultOrientedEnumeration · hasAdultConsideration ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[entertainment]] · [[oriented]] · [[enumeration]] · [[has]] · [[consideration]]
 

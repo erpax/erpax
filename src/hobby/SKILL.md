@@ -1,11 +1,11 @@
 ---
 name: hobby
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "hobby: a schema.org component word, fused from HobbyShop"
 ---
 
 # hobby
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from HobbyShop ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[shop]]
 

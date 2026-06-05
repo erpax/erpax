@@ -1,11 +1,11 @@
 ---
 name: terminal
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "terminal: a schema.org component word, fused from BoatTerminal, arrivalBoatTerminal, arrivalTerminal, departureBoatTerminal, departureTerminal"
 ---
 
 # terminal
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BoatTerminal · arrivalBoatTerminal · arrivalTerminal · departureBoatTerminal · departureTerminal ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[boat]] · [[arrival]] · [[departure]]
 

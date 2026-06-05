@@ -1,11 +1,11 @@
 ---
 name: lodging
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "lodging: a schema.org component word, fused from LodgingBusiness, LodgingReservation, lodgingUnitDescription, lodgingUnitType"
 ---
 
 # lodging
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from LodgingBusiness · LodgingReservation · lodgingUnitDescription · lodgingUnitType ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[business]] · [[reservation]] · [[unit]] · [[description]] · [[type]]
 

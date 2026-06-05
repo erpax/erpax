@@ -1,11 +1,11 @@
 ---
 name: emission
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "emission: a schema.org component word, fused from meetsEmissionStandard"
 ---
 
 # emission
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from meetsEmissionStandard ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[meets]] · [[standard]]
 

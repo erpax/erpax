@@ -1,11 +1,11 @@
 ---
 name: prefix
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "prefix: a schema.org component word, fused from honorificPrefix, postalCodePrefix"
 ---
 
 # prefix
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from honorificPrefix · postalCodePrefix ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[honorific]] · [[postal]] · [[code]]
 

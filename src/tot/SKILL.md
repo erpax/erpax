@@ -1,11 +1,11 @@
 ---
 name: tot
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "tot: a schema.org component word, fused from cvdNumTotBeds"
 ---
 
 # tot
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from cvdNumTotBeds ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cvd]] · [[num]] · [[beds]]
 

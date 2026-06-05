@@ -1,11 +1,11 @@
 ---
 name: arrangement
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "arrangement: a schema.org component word, fused from musicArrangement"
 ---
 
 # arrangement
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from musicArrangement ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[music]]
 

@@ -1,11 +1,11 @@
 ---
 name: receive
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "receive: a schema.org component word, fused from ReceiveAction"
 ---
 
 # receive
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ReceiveAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

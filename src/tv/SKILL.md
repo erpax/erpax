@@ -1,11 +1,11 @@
 ---
 name: tv
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "tv: a schema.org component word, fused from TVClip, TVEpisode, TVSeason, TVSeries, partOfTVSeries"
 ---
 
 # tv
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from TVClip · TVEpisode · TVSeason · TVSeries · partOfTVSeries ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[clip]] · [[episode]] · [[season]] · [[series]] · [[part]]
 

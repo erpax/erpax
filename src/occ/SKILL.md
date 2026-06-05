@@ -1,11 +1,11 @@
 ---
 name: occ
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "occ: a schema.org component word, fused from cvdNumBedsOcc, cvdNumICUBedsOcc"
 ---
 
 # occ
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from cvdNumBedsOcc · cvdNumICUBedsOcc ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cvd]] · [[num]] · [[beds]] · [[icu]]
 

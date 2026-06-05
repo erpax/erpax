@@ -1,11 +1,11 @@
 ---
 name: sign
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "sign: a schema.org component word, fused from MedicalSign, MedicalSignOrSymptom, VitalSign, callSign, distinguishingSign, signDetected"
 ---
 
 # sign
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalSign · MedicalSignOrSymptom · VitalSign · callSign · distinguishingSign · signDetected · signOrSymptom ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[medical]] · [[symptom]] · [[vital]] · [[call]] · [[distinguishing]] · [[detected]]
 

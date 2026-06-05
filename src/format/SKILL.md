@@ -1,11 +1,11 @@
 ---
 name: format
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "format: a schema.org component word, fused from BookFormatType, MusicReleaseFormatType, bookFormat, encodingFormat, fileFormat, musicReleaseFormat"
 ---
 
 # format
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BookFormatType · MusicReleaseFormatType · bookFormat · encodingFormat · fileFormat · musicReleaseFormat · videoFormat ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[book]] · [[type]] · [[music]] · [[release]] · [[encoding]] · [[file]] · [[video]]
 

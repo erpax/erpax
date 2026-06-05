@@ -113,24 +113,38 @@ const validTarget = (k: string): boolean => (allWords.has(k) || foreign.has(k)) 
 const linksOf = (ws: ReadonlySet<string> | undefined, cap: number): string =>
   [...(ws ?? new Set<string>())].filter(validTarget).slice(0, cap).map((k) => `[[${k}]]`).join(' · ')
 
+// Dedup descriptions (a text entered once): a normalized description maps to the
+// FIRST word that used it, so a shared schema comment (e.g. colleague/colleagues)
+// is entered once and every later word REFERENCES it. The 1067-copy placeholder is
+// gone — a component-only word derives a UNIQUE description from the schema terms
+// it fuses into (its forms), so no schema is lost and no text repeats.
+const seenDesc = new Map<string, string>()
+
 const render = (w: string): string => {
   const def = concept.get(w)
-  const desc = yamlSafe(def ?? 'A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise).')
   const ent = linksOf(co.get(w), 40)
-  const compounds = [...(forms.get(w) ?? [])].slice(0, 24).join(' · ')
+  const compoundList = [...(forms.get(w) ?? [])]
+  const compounds = compoundList.slice(0, 24).join(' · ')
+  let base = clean(def ?? `${w}: a schema.org component word, fused from ${compoundList.slice(0, 6).join(', ') || w}`)
+  const key = base.toLowerCase()
+  const firstWord = seenDesc.get(key)
+  const dup = firstWord !== undefined && firstWord !== w
+  if (dup) base = `${base} (see ${firstWord})`
+  else seenDesc.set(key, w)
   const out: string[] = [
     '---',
     `name: ${w}`,
-    `description: "${desc}"`,
+    `description: "${yamlSafe(base)}"`,
     '---',
     '',
     `# ${w}`,
     '',
-    def ?? 'A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).',
+    def ?? `A schema.org component word, collided out of schema.org compounds — fused from ${compounds || w} ([[sti]] · [[collapse]] · [[merge]]).`,
     '',
   ]
   if (ent) out.push(`Entangled with — ${ent}`, '')
   if (compounds) out.push(`Attested in schema.org — ${compounds}`, '')
+  if (dup && firstWord) out.push(`See also [[${firstWord}]].`, '')
   out.push('@standard schema.org — the type vocabulary, collided to single words', '')
   return out.join('\n')
 }

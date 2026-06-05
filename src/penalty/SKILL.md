@@ -1,11 +1,11 @@
 ---
 name: penalty
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "penalty: a schema.org component word, fused from earlyPrepaymentPenalty"
 ---
 
 # penalty
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from earlyPrepaymentPenalty ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[early]] · [[prepayment]]
 

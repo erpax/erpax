@@ -1,11 +1,11 @@
 ---
 name: platform
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "platform: a schema.org component word, fused from DigitalPlatformEnumeration, RuntimePlatform, actionPlatform, arrivalPlatform, departurePlatform, gamePlatform"
 ---
 
 # platform
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DigitalPlatformEnumeration · RuntimePlatform · actionPlatform · arrivalPlatform · departurePlatform · gamePlatform · runtimePlatform · targetPlatform ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[digital]] · [[enumeration]] · [[runtime]] · [[action]] · [[arrival]] · [[departure]] · [[game]] · [[target]]
 

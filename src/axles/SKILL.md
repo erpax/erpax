@@ -1,11 +1,11 @@
 ---
 name: axles
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "axles: a schema.org component word, fused from numberOfAxles"
 ---
 
 # axles
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from numberOfAxles ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[number]]
 

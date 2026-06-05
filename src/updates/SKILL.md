@@ -1,11 +1,11 @@
 ---
 name: updates
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "updates: a schema.org component word, fused from newsUpdatesAndGuidelines"
 ---
 
 # updates
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from newsUpdatesAndGuidelines ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[news]] · [[guidelines]]
 

@@ -1,11 +1,11 @@
 ---
 name: work
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "work: a schema.org component word, fused from CreativeWork, CreativeWorkSeason, CreativeWorkSeries, WorkBasedProgram, creativeWorkStatus, eligibilityToWorkRequirement"
 ---
 
 # work
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CreativeWork · CreativeWorkSeason · CreativeWorkSeries · WorkBasedProgram · creativeWorkStatus · eligibilityToWorkRequirement · encodesCreativeWork · exampleOfWork · translationOfWork · workExample · workFeatured · workHours · workLocation · workPerformed · workPresented · workTranslation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[creative]] · [[season]] · [[series]] · [[based]] · [[program]] · [[status]] · [[eligibility]] · [[requirement]] · [[encodes]] · [[example]] · [[translation]] · [[featured]] · [[hours]] · [[location]] · [[performed]] · [[presented]]
 

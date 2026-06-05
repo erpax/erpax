@@ -1,11 +1,11 @@
 ---
 name: lineup
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "lineup: a schema.org component word, fused from inBroadcastLineup"
 ---
 
 # lineup
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from inBroadcastLineup ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[broadcast]]
 

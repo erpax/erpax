@@ -1,11 +1,11 @@
 ---
 name: encoded
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "encoded: a schema.org component word, fused from isEncodedByBioChemEntity"
 ---
 
 # encoded
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from isEncodedByBioChemEntity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bio]] · [[chem]] · [[entity]]
 

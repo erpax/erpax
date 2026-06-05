@@ -1,11 +1,11 @@
 ---
 name: catholic
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "catholic: a schema.org component word, fused from CatholicChurch"
 ---
 
 # catholic
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CatholicChurch ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[church]]
 

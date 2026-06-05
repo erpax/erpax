@@ -1,11 +1,11 @@
 ---
 name: react
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "react: a schema.org component word, fused from ReactAction"
 ---
 
 # react
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ReactAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

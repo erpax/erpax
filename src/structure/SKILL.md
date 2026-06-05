@@ -1,11 +1,11 @@
 ---
 name: structure
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "structure: a schema.org component word, fused from AnatomicalStructure, BrainStructure, CivicStructure, relatedStructure, subStructure"
 ---
 
 # structure
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AnatomicalStructure · BrainStructure · CivicStructure · relatedStructure · subStructure ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[anatomical]] · [[brain]] · [[civic]] · [[related]] · [[sub]]
 

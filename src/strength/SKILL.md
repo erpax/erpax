@@ -1,11 +1,11 @@
 ---
 name: strength
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "strength: a schema.org component word, fused from DrugStrength, availableStrength, recommendationStrength, strengthUnit, strengthValue"
 ---
 
 # strength
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DrugStrength · availableStrength · recommendationStrength · strengthUnit · strengthValue ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[drug]] · [[available]] · [[recommendation]] · [[unit]] · [[value]]
 

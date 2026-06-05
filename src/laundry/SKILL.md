@@ -1,11 +1,11 @@
 ---
 name: laundry
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "laundry: a schema.org component word, fused from DryCleaningOrLaundry"
 ---
 
 # laundry
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DryCleaningOrLaundry ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[dry]] · [[cleaning]]
 

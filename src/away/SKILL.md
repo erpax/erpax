@@ -1,11 +1,11 @@
 ---
 name: away
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "away: a schema.org component word, fused from awayTeam"
 ---
 
 # away
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from awayTeam ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[team]]
 

@@ -1,11 +1,11 @@
 ---
 name: ski
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ski: a schema.org component word, fused from SkiResort"
 ---
 
 # ski
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SkiResort ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[resort]]
 

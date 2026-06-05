@@ -1,11 +1,11 @@
 ---
 name: co
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "co: a schema.org component word, fused from emissionsCO2"
 ---
 
 # co
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from emissionsCO2 ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[emissions]]
 

@@ -1,11 +1,11 @@
 ---
 name: alternate
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "alternate: a schema.org component word, fused from alternateName"
 ---
 
 # alternate
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from alternateName ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[name]]
 

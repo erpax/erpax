@@ -1,11 +1,11 @@
 ---
 name: auto
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "auto: a schema.org component word, fused from AutoBodyShop, AutoDealer, AutoPartsStore, AutoRental, AutoRepair, AutoWash"
 ---
 
 # auto
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AutoBodyShop · AutoDealer · AutoPartsStore · AutoRental · AutoRepair · AutoWash ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[body]] · [[shop]] · [[dealer]] · [[parts]] · [[store]] · [[rental]] · [[repair]] · [[wash]]
 

@@ -1,11 +1,11 @@
 ---
 name: art
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "art: a schema.org component word, fused from ArtGallery, ComicCoverArt, CoverArt, SequentialArt, artEdition, artMedium"
 ---
 
 # art
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ArtGallery · ComicCoverArt · CoverArt · SequentialArt · artEdition · artMedium ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[gallery]] · [[comic]] · [[cover]] · [[sequential]] · [[edition]] · [[medium]]
 

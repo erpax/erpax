@@ -1,11 +1,11 @@
 ---
 name: analysis
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "analysis: a schema.org component word, fused from AnalysisNewsArticle"
 ---
 
 # analysis
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AnalysisNewsArticle ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[news]] · [[article]]
 

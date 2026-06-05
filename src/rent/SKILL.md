@@ -1,11 +1,11 @@
 ---
 name: rent
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "rent: a schema.org component word, fused from RentAction"
 ---
 
 # rent
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from RentAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

@@ -1,11 +1,11 @@
 ---
 name: login
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "login: a schema.org component word, fused from LoginAction"
 ---
 
 # login
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from LoginAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

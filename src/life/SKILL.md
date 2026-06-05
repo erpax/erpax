@@ -1,11 +1,11 @@
 ---
 name: life
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "life: a schema.org component word, fused from lifeEvent"
 ---
 
 # life
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from lifeEvent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[event]]
 

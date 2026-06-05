@@ -1,11 +1,11 @@
 ---
 name: sodium
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "sodium: a schema.org component word, fused from sodiumContent"
 ---
 
 # sodium
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from sodiumContent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[content]]
 

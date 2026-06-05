@@ -1,11 +1,11 @@
 ---
 name: information
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "information: a schema.org component word, fused from NutritionInformation, TouristInformationCenter"
 ---
 
 # information
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from NutritionInformation · TouristInformationCenter ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[nutrition]] · [[tourist]] · [[center]]
 

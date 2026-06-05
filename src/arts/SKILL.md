@@ -1,11 +1,11 @@
 ---
 name: arts
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "arts: a schema.org component word, fused from PerformingArtsEvent, PerformingArtsTheater, VisualArtsEvent"
 ---
 
 # arts
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PerformingArtsEvent · PerformingArtsTheater · VisualArtsEvent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[performing]] · [[event]] · [[theater]] · [[visual]]
 

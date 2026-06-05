@@ -1,11 +1,11 @@
 ---
 name: buy
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "buy: a schema.org component word, fused from BuyAction"
 ---
 
 # buy
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BuyAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

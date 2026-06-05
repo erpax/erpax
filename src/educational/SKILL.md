@@ -1,11 +1,11 @@
 ---
 name: educational
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "educational: a schema.org component word, fused from EducationalAudience, EducationalOccupationalCredential, EducationalOccupationalProgram, EducationalOrganization, educationalAlignment, educationalC"
 ---
 
 # educational
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from EducationalAudience · EducationalOccupationalCredential · EducationalOccupationalProgram · EducationalOrganization · educationalAlignment · educationalCredentialAwarded · educationalFramework · educationalLevel · educationalProgramMode · educationalRole · educationalUse ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[audience]] · [[occupational]] · [[credential]] · [[program]] · [[organization]] · [[alignment]] · [[awarded]] · [[framework]] · [[level]] · [[mode]] · [[role]] · [[use]]
 

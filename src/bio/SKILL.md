@@ -1,11 +1,11 @@
 ---
 name: bio
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "bio: a schema.org component word, fused from BioChemEntity, bioChemInteraction, bioChemSimilarity, encodesBioChemEntity, hasBioChemEntityPart, hasBioPolymerSequence"
 ---
 
 # bio
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BioChemEntity · bioChemInteraction · bioChemSimilarity · encodesBioChemEntity · hasBioChemEntityPart · hasBioPolymerSequence · isEncodedByBioChemEntity · isPartOfBioChemEntity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[chem]] · [[entity]] · [[interaction]] · [[similarity]] · [[encodes]] · [[has]] · [[part]] · [[polymer]] · [[sequence]] · [[encoded]]
 

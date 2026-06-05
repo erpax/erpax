@@ -1,11 +1,11 @@
 ---
 name: mode
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "mode: a schema.org component word, fused from EventAttendanceModeEnumeration, GamePlayMode, accessMode, accessModeSufficient, courseMode, educationalProgramMode"
 ---
 
 # mode
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from EventAttendanceModeEnumeration · GamePlayMode · accessMode · accessModeSufficient · courseMode · educationalProgramMode · eventAttendanceMode · playMode ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[event]] · [[attendance]] · [[enumeration]] · [[game]] · [[play]] · [[access]] · [[sufficient]] · [[course]] · [[educational]] · [[program]]
 

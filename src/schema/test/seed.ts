@@ -6,14 +6,13 @@
  */
 export const SCHEMA_TEST_SEED = {
   "atoms": 2100,
-  "matrixRoot": "bde53d29-02b8-83f1-923e-f8ed0441f11d",
-  "entropyTotal": 537,
+  "matrixRoot": "7e1eda19-3462-893e-b9c0-cd424de6a946",
+  "entropyTotal": 534,
   "byKind": {
     "uncrosslinked": 481,
     "folder-outside-src": 4,
     "doc-not-skill": 46,
     "uncollidable-data": 1,
-    "recorded-junk": 2,
-    "duplicate-text": 3
+    "recorded-junk": 2
   }
 } as const

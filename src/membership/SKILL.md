@@ -1,11 +1,11 @@
 ---
 name: membership
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "membership: a schema.org component word, fused from ProgramMembership, membershipNumber, membershipPointsEarned, programMembershipUsed"
 ---
 
 # membership
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ProgramMembership · membershipNumber · membershipPointsEarned · programMembershipUsed ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[program]] · [[number]] · [[points]] · [[earned]] · [[used]]
 

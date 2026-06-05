@@ -1,11 +1,11 @@
 ---
 name: condition
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "condition: a schema.org component word, fused from MedicalCondition, MedicalConditionStage, OfferItemCondition, healthCondition, itemCondition, relatedCondition"
 ---
 
 # condition
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalCondition · MedicalConditionStage · OfferItemCondition · healthCondition · itemCondition · relatedCondition ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[medical]] · [[stage]] · [[offer]] · [[item]] · [[health]] · [[related]]
 

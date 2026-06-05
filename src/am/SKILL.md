@@ -1,11 +1,11 @@
 ---
 name: am
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "am: a schema.org component word, fused from AMRadioChannel"
 ---
 
 # am
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AMRadioChannel ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[radio]] · [[channel]]
 

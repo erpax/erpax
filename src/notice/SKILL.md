@@ -1,11 +1,11 @@
 ---
 name: notice
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "notice: a schema.org component word, fused from copyrightNotice"
 ---
 
 # notice
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from copyrightNotice ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[copyright]]
 

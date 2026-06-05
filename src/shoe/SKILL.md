@@ -1,11 +1,11 @@
 ---
 name: shoe
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "shoe: a schema.org component word, fused from ShoeStore"
 ---
 
 # shoe
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ShoeStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]]
 

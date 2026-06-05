@@ -1,11 +1,11 @@
 ---
 name: opening
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "opening: a schema.org component word, fused from OpeningHoursSpecification, openingHours, openingHoursSpecification, specialOpeningHoursSpecification"
 ---
 
 # opening
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from OpeningHoursSpecification · openingHours · openingHoursSpecification · specialOpeningHoursSpecification ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[hours]] · [[specification]] · [[special]]
 

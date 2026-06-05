@@ -1,11 +1,11 @@
 ---
 name: qa
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "qa: a schema.org component word, fused from QAPage"
 ---
 
 # qa
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from QAPage ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[page]]
 

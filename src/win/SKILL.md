@@ -1,11 +1,11 @@
 ---
 name: win
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "win: a schema.org component word, fused from WinAction"
 ---
 
 # win
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from WinAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

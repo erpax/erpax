@@ -1,11 +1,11 @@
 ---
 name: additional
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "additional: a schema.org component word, fused from additionalName, additionalNumberOfGuests, additionalProperty, additionalType, additionalVariable"
 ---
 
 # additional
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from additionalName · additionalNumberOfGuests · additionalProperty · additionalType · additionalVariable ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[name]] · [[number]] · [[guests]] · [[property]] · [[type]] · [[variable]]
 

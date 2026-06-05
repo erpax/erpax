@@ -1,11 +1,11 @@
 ---
 name: row
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "row: a schema.org component word, fused from seatRow"
 ---
 
 # row
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from seatRow ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[seat]]
 

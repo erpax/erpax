@@ -1,11 +1,11 @@
 ---
 name: bus
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "bus: a schema.org component word, fused from BusOrCoach, BusReservation, BusStation, BusStop, BusTrip, arrivalBusStop"
 ---
 
 # bus
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BusOrCoach · BusReservation · BusStation · BusStop · BusTrip · arrivalBusStop · busName · busNumber · departureBusStop ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[coach]] · [[reservation]] · [[station]] · [[stop]] · [[trip]] · [[arrival]] · [[name]] · [[number]] · [[departure]]
 

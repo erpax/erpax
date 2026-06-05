@@ -1,11 +1,11 @@
 ---
 name: anatomy
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "anatomy: a schema.org component word, fused from SuperficialAnatomy, associatedAnatomy, relatedAnatomy"
 ---
 
 # anatomy
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SuperficialAnatomy · associatedAnatomy · relatedAnatomy ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[superficial]] · [[associated]] · [[related]]
 

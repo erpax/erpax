@@ -1,11 +1,11 @@
 ---
 name: openings
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "openings: a schema.org component word, fused from totalJobOpenings"
 ---
 
 # openings
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from totalJobOpenings ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[total]] · [[job]]
 

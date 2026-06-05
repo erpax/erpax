@@ -1,11 +1,11 @@
 ---
 name: possible
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "possible: a schema.org component word, fused from possibleComplication, possibleTreatment"
 ---
 
 # possible
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from possibleComplication · possibleTreatment ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[complication]] · [[treatment]]
 

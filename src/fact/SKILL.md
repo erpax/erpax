@@ -1,11 +1,11 @@
 ---
 name: fact
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "fact: a schema.org component word, fused from verificationFactCheckingPolicy"
 ---
 
 # fact
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from verificationFactCheckingPolicy ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[verification]] · [[checking]] · [[policy]]
 

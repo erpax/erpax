@@ -1,11 +1,11 @@
 ---
 name: ticketed
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ticketed: a schema.org component word, fused from ticketedSeat"
 ---
 
 # ticketed
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ticketedSeat ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[seat]]
 

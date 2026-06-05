@@ -1,11 +1,11 @@
 ---
 name: patients
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "patients: a schema.org component word, fused from isAcceptingNewPatients"
 ---
 
 # patients
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from isAcceptingNewPatients ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[accepting]] · [[new]]
 

@@ -1,11 +1,11 @@
 ---
 name: registration
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "registration: a schema.org component word, fused from companyRegistration"
 ---
 
 # registration
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from companyRegistration ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[company]]
 

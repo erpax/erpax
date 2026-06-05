@@ -1,11 +1,11 @@
 ---
 name: parlor
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "parlor: a schema.org component word, fused from TattooParlor"
 ---
 
 # parlor
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from TattooParlor ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[tattoo]]
 

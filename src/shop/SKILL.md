@@ -1,11 +1,11 @@
 ---
 name: shop
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "shop: a schema.org component word, fused from AutoBodyShop, CafeOrCoffeeShop, HobbyShop, IceCreamShop, PawnShop, TireShop"
 ---
 
 # shop
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AutoBodyShop · CafeOrCoffeeShop · HobbyShop · IceCreamShop · PawnShop · TireShop ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[auto]] · [[body]] · [[cafe]] · [[coffee]] · [[hobby]] · [[ice]] · [[cream]] · [[pawn]] · [[tire]]
 

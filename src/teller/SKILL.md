@@ -1,11 +1,11 @@
 ---
 name: teller
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "teller: a schema.org component word, fused from AutomatedTeller"
 ---
 
 # teller
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AutomatedTeller ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[automated]]
 

@@ -1,11 +1,11 @@
 ---
 name: gs
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "gs: a schema.org component word, fused from hasGS1DigitalLink"
 ---
 
 # gs
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from hasGS1DigitalLink ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[has]] · [[digital]] · [[link]]
 

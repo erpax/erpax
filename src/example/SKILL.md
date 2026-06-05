@@ -1,11 +1,11 @@
 ---
 name: example
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "example: a schema.org component word, fused from exampleOfWork, workExample"
 ---
 
 # example
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from exampleOfWork · workExample ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[work]]
 

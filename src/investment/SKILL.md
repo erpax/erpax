@@ -1,11 +1,11 @@
 ---
 name: investment
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "investment: a schema.org component word, fused from InvestmentFund, InvestmentOrDeposit"
 ---
 
 # investment
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from InvestmentFund · InvestmentOrDeposit ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[fund]] · [[deposit]]
 

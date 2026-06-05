@@ -1,11 +1,11 @@
 ---
 name: bylines
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "bylines: a schema.org component word, fused from noBylinesPolicy"
 ---
 
 # bylines
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from noBylinesPolicy ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[no]] · [[policy]]
 

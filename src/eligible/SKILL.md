@@ -1,11 +1,11 @@
 ---
 name: eligible
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "eligible: a schema.org component word, fused from eligibleCustomerType, eligibleDuration, eligibleQuantity, eligibleRegion, eligibleTransactionVolume, eligibleWithSupplier"
 ---
 
 # eligible
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from eligibleCustomerType · eligibleDuration · eligibleQuantity · eligibleRegion · eligibleTransactionVolume · eligibleWithSupplier · financialAidEligible ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[customer]] · [[type]] · [[duration]] · [[quantity]] · [[region]] · [[transaction]] · [[volume]] · [[supplier]] · [[financial]] · [[aid]]
 

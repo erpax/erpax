@@ -1,11 +1,11 @@
 ---
 name: denominator
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "denominator: a schema.org component word, fused from measurementDenominator"
 ---
 
 # denominator
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from measurementDenominator ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[measurement]]
 

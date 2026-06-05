@@ -1,11 +1,11 @@
 ---
 name: function
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "function: a schema.org component word, fused from BusinessFunction, businessFunction, hasMolecularFunction"
 ---
 
 # function
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BusinessFunction · businessFunction · hasMolecularFunction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[business]] · [[has]] · [[molecular]]
 

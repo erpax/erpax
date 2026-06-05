@@ -1,11 +1,11 @@
 ---
 name: low
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "low: a schema.org component word, fused from lowPrice"
 ---
 
 # low
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from lowPrice ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[price]]
 

@@ -1,11 +1,11 @@
 ---
 name: suitable
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "suitable: a schema.org component word, fused from suitableForDiet"
 ---
 
 # suitable
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from suitableForDiet ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[diet]]
 

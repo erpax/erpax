@@ -1,11 +1,11 @@
 ---
 name: pool
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "pool: a schema.org component word, fused from PublicSwimmingPool"
 ---
 
 # pool
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PublicSwimmingPool ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[public]] · [[swimming]]
 

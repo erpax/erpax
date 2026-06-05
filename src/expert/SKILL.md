@@ -1,11 +1,11 @@
 ---
 name: expert
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "expert: a schema.org component word, fused from expertConsiderations"
 ---
 
 # expert
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from expertConsiderations ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[considerations]]
 

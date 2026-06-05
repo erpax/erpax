@@ -1,11 +1,11 @@
 ---
 name: night
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "night: a schema.org component word, fused from NightClub"
 ---
 
 # night
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from NightClub ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[club]]
 

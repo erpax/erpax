@@ -1,11 +1,11 @@
 ---
 name: superficial
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "superficial: a schema.org component word, fused from SuperficialAnatomy"
 ---
 
 # superficial
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SuperficialAnatomy ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[anatomy]]
 

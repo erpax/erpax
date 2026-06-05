@@ -1,11 +1,11 @@
 ---
 name: fast
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "fast: a schema.org component word, fused from FastFoodRestaurant"
 ---
 
 # fast
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from FastFoodRestaurant ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[food]] · [[restaurant]]
 

@@ -1,11 +1,11 @@
 ---
 name: sports
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "sports: a schema.org component word, fused from SportsActivityLocation, SportsClub, SportsEvent, SportsOrganization, SportsTeam, sportsActivityLocation"
 ---
 
 # sports
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SportsActivityLocation · SportsClub · SportsEvent · SportsOrganization · SportsTeam · sportsActivityLocation · sportsEvent · sportsTeam ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[activity]] · [[location]] · [[club]] · [[event]] · [[organization]] · [[team]]
 

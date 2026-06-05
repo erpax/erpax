@@ -1,11 +1,11 @@
 ---
 name: within
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "within: a schema.org component word, fused from geoWithin"
 ---
 
 # within
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from geoWithin ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[geo]]
 

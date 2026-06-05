@@ -1,11 +1,11 @@
 ---
 name: reported
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "reported: a schema.org component word, fused from ReportedDoseSchedule"
 ---
 
 # reported
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ReportedDoseSchedule ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[dose]] · [[schedule]]
 

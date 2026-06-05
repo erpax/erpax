@@ -1,11 +1,11 @@
 ---
 name: term
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "term: a schema.org component word, fused from DefinedTerm, DefinedTermSet, hasDefinedTerm, inDefinedTermSet, loanTerm, termCode"
 ---
 
 # term
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DefinedTerm · DefinedTermSet · hasDefinedTerm · inDefinedTermSet · loanTerm · termCode · termDuration · typicalCreditsPerTerm ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[defined]] · [[set]] · [[has]] · [[loan]] · [[code]] · [[duration]] · [[typical]] · [[credits]]
 

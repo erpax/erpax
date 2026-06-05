@@ -1,11 +1,11 @@
 ---
 name: founding
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "founding: a schema.org component word, fused from foundingDate, foundingLocation"
 ---
 
 # founding
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from foundingDate · foundingLocation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[date]] · [[location]]
 

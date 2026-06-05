@@ -1,11 +1,11 @@
 ---
 name: advertiser
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "advertiser: a schema.org component word, fused from AdvertiserContentArticle"
 ---
 
 # advertiser
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AdvertiserContentArticle ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[content]] · [[article]]
 

@@ -1,11 +1,11 @@
 ---
 name: fees
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "fees: a schema.org component word, fused from ReturnFeesEnumeration, customerRemorseReturnFees, customerRemorseReturnShippingFeesAmount, feesAndCommissionsSpecification, itemDefectReturnFees, itemDefe"
 ---
 
 # fees
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ReturnFeesEnumeration · customerRemorseReturnFees · customerRemorseReturnShippingFeesAmount · feesAndCommissionsSpecification · itemDefectReturnFees · itemDefectReturnShippingFeesAmount · returnFees · returnShippingFeesAmount ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[return]] · [[enumeration]] · [[customer]] · [[remorse]] · [[shipping]] · [[amount]] · [[commissions]] · [[specification]] · [[item]] · [[defect]]
 

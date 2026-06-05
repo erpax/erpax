@@ -1,11 +1,11 @@
 ---
 name: cc
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "cc: a schema.org component word, fused from ccRecipient"
 ---
 
 # cc
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ccRecipient ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[recipient]]
 

@@ -1,11 +1,11 @@
 ---
 name: intake
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "intake: a schema.org component word, fused from maximumIntake, recommendedIntake"
 ---
 
 # intake
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from maximumIntake · recommendedIntake ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[maximum]] · [[recommended]]
 

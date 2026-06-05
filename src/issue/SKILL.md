@@ -1,11 +1,11 @@
 ---
 name: issue
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "issue: a schema.org component word, fused from ComicIssue, PublicationIssue, issueNumber"
 ---
 
 # issue
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ComicIssue · PublicationIssue · issueNumber ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[comic]] · [[publication]] · [[number]]
 

@@ -1,11 +1,11 @@
 ---
 name: interior
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "interior: a schema.org component word, fused from vehicleInteriorColor, vehicleInteriorType"
 ---
 
 # interior
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from vehicleInteriorColor · vehicleInteriorType ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[vehicle]] · [[color]] · [[type]]
 

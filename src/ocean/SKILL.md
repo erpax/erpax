@@ -1,11 +1,11 @@
 ---
 name: ocean
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ocean: a schema.org component word, fused from OceanBodyOfWater"
 ---
 
 # ocean
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from OceanBodyOfWater ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[body]] · [[water]]
 

@@ -1,11 +1,11 @@
 ---
 name: checkout
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "checkout: a schema.org component word, fused from CheckoutPage, checkoutPageURLTemplate, checkoutTime"
 ---
 
 # checkout
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CheckoutPage · checkoutPageURLTemplate · checkoutTime ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[page]] · [[url]] · [[template]] · [[time]]
 

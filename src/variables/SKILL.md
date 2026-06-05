@@ -1,11 +1,11 @@
 ---
 name: variables
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "variables: a schema.org component word, fused from variablesMeasured"
 ---
 
 # variables
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from variablesMeasured ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[measured]]
 

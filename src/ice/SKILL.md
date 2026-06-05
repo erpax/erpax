@@ -1,11 +1,11 @@
 ---
 name: ice
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ice: a schema.org component word, fused from IceCreamShop"
 ---
 
 # ice
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from IceCreamShop ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cream]] · [[shop]]
 

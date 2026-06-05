@@ -1,11 +1,11 @@
 ---
 name: enrollment
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "enrollment: a schema.org component word, fused from maximumEnrollment, totalHistoricalEnrollment"
 ---
 
 # enrollment
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from maximumEnrollment · totalHistoricalEnrollment ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[maximum]] · [[total]] · [[historical]]
 

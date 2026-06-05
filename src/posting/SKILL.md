@@ -1,11 +1,11 @@
 ---
 name: posting
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "posting: a schema.org component word, fused from BlogPosting, DiscussionForumPosting, JobPosting, LiveBlogPosting, SocialMediaPosting"
 ---
 
 # posting
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BlogPosting · DiscussionForumPosting · JobPosting · LiveBlogPosting · SocialMediaPosting ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[blog]] · [[discussion]] · [[forum]] · [[job]] · [[live]] · [[social]] · [[media]]
 

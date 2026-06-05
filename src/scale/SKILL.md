@@ -1,11 +1,11 @@
 ---
 name: scale
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "scale: a schema.org component word, fused from energyEfficiencyScaleMax, energyEfficiencyScaleMin"
 ---
 
 # scale
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from energyEfficiencyScaleMax · energyEfficiencyScaleMin ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[energy]] · [[efficiency]] · [[max]] · [[min]]
 

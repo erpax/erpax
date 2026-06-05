@@ -1,11 +1,11 @@
 ---
 name: yearly
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "yearly: a schema.org component word, fused from yearlyRevenue"
 ---
 
 # yearly
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from yearlyRevenue ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[revenue]]
 

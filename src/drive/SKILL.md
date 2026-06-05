@@ -1,11 +1,11 @@
 ---
 name: drive
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "drive: a schema.org component word, fused from DriveWheelConfigurationValue, driveWheelConfiguration, hasDriveThroughService"
 ---
 
 # drive
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DriveWheelConfigurationValue · driveWheelConfiguration · hasDriveThroughService ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[wheel]] · [[configuration]] · [[value]] · [[has]] · [[through]] · [[service]]
 

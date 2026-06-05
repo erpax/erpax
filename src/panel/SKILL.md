@@ -1,11 +1,11 @@
 ---
 name: panel
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "panel: a schema.org component word, fused from MedicalTestPanel"
 ---
 
 # panel
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalTestPanel ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[medical]] · [[test]]
 

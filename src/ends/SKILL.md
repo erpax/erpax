@@ -1,11 +1,11 @@
 ---
 name: ends
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ends: a schema.org component word, fused from availabilityEnds"
 ---
 
 # ends
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from availabilityEnds ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[availability]]
 

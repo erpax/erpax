@@ -1,11 +1,11 @@
 ---
 name: override
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "override: a schema.org component word, fused from MerchantReturnPolicySeasonalOverride, returnPolicySeasonalOverride, seasonalOverride"
 ---
 
 # override
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MerchantReturnPolicySeasonalOverride · returnPolicySeasonalOverride · seasonalOverride ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[merchant]] · [[return]] · [[policy]] · [[seasonal]]
 

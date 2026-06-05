@@ -1,11 +1,11 @@
 ---
 name: resource
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "resource: a schema.org component word, fused from LearningResource, learningResourceType"
 ---
 
 # resource
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from LearningResource · learningResourceType ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[learning]] · [[type]]
 

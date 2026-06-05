@@ -1,11 +1,11 @@
 ---
 name: associated
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "associated: a schema.org component word, fused from associatedAnatomy, associatedArticle, associatedClaimReview, associatedDisease, associatedMedia, associatedMediaReview"
 ---
 
 # associated
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from associatedAnatomy · associatedArticle · associatedClaimReview · associatedDisease · associatedMedia · associatedMediaReview · associatedPathophysiology · associatedReview ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[anatomy]] · [[article]] · [[claim]] · [[review]] · [[disease]] · [[media]] · [[pathophysiology]]
 

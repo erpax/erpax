@@ -1,11 +1,11 @@
 ---
 name: pats
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "pats: a schema.org component word, fused from cvdNumC19HOPats, cvdNumC19HospPats, cvdNumC19MechVentPats, cvdNumC19OFMechVentPats, cvdNumC19OverflowPats"
 ---
 
 # pats
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from cvdNumC19HOPats · cvdNumC19HospPats · cvdNumC19MechVentPats · cvdNumC19OFMechVentPats · cvdNumC19OverflowPats ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[cvd]] · [[num]] · [[ho]] · [[hosp]] · [[mech]] · [[vent]] · [[overflow]]
 

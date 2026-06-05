@@ -1,11 +1,11 @@
 ---
 name: due
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "due: a schema.org component word, fused from minimumPaymentDue, paymentDue, paymentDueDate, totalPaymentDue"
 ---
 
 # due
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from minimumPaymentDue · paymentDue · paymentDueDate · totalPaymentDue ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[minimum]] · [[payment]] · [[date]] · [[total]]
 

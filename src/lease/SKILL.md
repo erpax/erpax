@@ -1,11 +1,11 @@
 ---
 name: lease
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "lease: a schema.org component word, fused from OfferForLease, leaseLength"
 ---
 
 # lease
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from OfferForLease · leaseLength ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[offer]] · [[length]]
 

@@ -1,11 +1,11 @@
 ---
 name: floor
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "floor: a schema.org component word, fused from FloorPlan, accommodationFloorPlan, floorLevel, floorLimit, floorSize"
 ---
 
 # floor
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from FloorPlan · accommodationFloorPlan · floorLevel · floorLimit · floorSize ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[plan]] · [[accommodation]] · [[level]] · [[limit]] · [[size]]
 

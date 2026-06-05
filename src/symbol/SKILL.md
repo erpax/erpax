@@ -1,11 +1,11 @@
 ---
 name: symbol
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "symbol: a schema.org component word, fused from tickerSymbol"
 ---
 
 # symbol
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from tickerSymbol ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[ticker]]
 

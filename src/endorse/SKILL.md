@@ -1,11 +1,11 @@
 ---
 name: endorse
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "endorse: a schema.org component word, fused from EndorseAction"
 ---
 
 # endorse
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from EndorseAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

@@ -1,11 +1,11 @@
 ---
 name: holding
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "holding: a schema.org component word, fused from holdingArchive"
 ---
 
 # holding
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from holdingArchive ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[archive]]
 

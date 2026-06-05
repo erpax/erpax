@@ -1,11 +1,11 @@
 ---
 name: infectious
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "infectious: a schema.org component word, fused from InfectiousAgentClass, InfectiousDisease, infectiousAgent, infectiousAgentClass"
 ---
 
 # infectious
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from InfectiousAgentClass · InfectiousDisease · infectiousAgent · infectiousAgentClass ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[agent]] · [[class]] · [[disease]]
 

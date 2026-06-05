@@ -1,11 +1,11 @@
 ---
 name: identification
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "identification: a schema.org component word, fused from certificationIdentification, vehicleIdentificationNumber"
 ---
 
 # identification
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from certificationIdentification · vehicleIdentificationNumber ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[certification]] · [[vehicle]] · [[number]]
 

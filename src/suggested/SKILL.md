@@ -1,11 +1,11 @@
 ---
 name: suggested
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "suggested: a schema.org component word, fused from suggestedAge, suggestedAnswer, suggestedGender, suggestedMaxAge, suggestedMeasurement, suggestedMinAge"
 ---
 
 # suggested
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from suggestedAge · suggestedAnswer · suggestedGender · suggestedMaxAge · suggestedMeasurement · suggestedMinAge ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[age]] · [[answer]] · [[gender]] · [[max]] · [[measurement]] · [[min]]
 

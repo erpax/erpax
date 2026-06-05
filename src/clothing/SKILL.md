@@ -1,11 +1,11 @@
 ---
 name: clothing
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "clothing: a schema.org component word, fused from ClothingStore, MensClothingStore"
 ---
 
 # clothing
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ClothingStore · MensClothingStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]] · [[mens]]
 

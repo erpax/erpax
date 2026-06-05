@@ -1,11 +1,11 @@
 ---
 name: transposes
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "transposes: a schema.org component word, fused from legislationTransposes"
 ---
 
 # transposes
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from legislationTransposes ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[legislation]]
 

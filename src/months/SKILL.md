@@ -1,11 +1,11 @@
 ---
 name: months
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "months: a schema.org component word, fused from monthsOfExperience"
 ---
 
 # months
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from monthsOfExperience ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[experience]]
 

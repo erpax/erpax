@@ -1,11 +1,11 @@
 ---
 name: computer
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "computer: a schema.org component word, fused from ComputerLanguage, ComputerStore"
 ---
 
 # computer
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ComputerLanguage · ComputerStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[language]] · [[store]]
 

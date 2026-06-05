@@ -1,11 +1,11 @@
 ---
 name: enum
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "enum: a schema.org component word, fused from MeasurementMethodEnum"
 ---
 
 # enum
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MeasurementMethodEnum ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[measurement]] · [[method]]
 

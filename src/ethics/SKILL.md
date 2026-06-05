@@ -1,11 +1,11 @@
 ---
 name: ethics
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ethics: a schema.org component word, fused from ethicsPolicy"
 ---
 
 # ethics
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ethicsPolicy ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[policy]]
 

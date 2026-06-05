@@ -1,11 +1,11 @@
 ---
 name: government
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "government: a schema.org component word, fused from GovernmentBenefitsType, GovernmentBuilding, GovernmentOffice, GovernmentOrganization, GovernmentPermit, GovernmentService"
 ---
 
 # government
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GovernmentBenefitsType · GovernmentBuilding · GovernmentOffice · GovernmentOrganization · GovernmentPermit · GovernmentService · governmentBenefitsInfo ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[benefits]] · [[type]] · [[building]] · [[office]] · [[organization]] · [[permit]] · [[service]] · [[info]]
 

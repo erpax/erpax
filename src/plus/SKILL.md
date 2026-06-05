@@ -1,11 +1,11 @@
 ---
 name: plus
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "plus: a schema.org component word, fused from UserPlusOnes"
 ---
 
 # plus
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from UserPlusOnes ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[user]] · [[ones]]
 

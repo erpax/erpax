@@ -1,11 +1,11 @@
 ---
 name: region
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "region: a schema.org component word, fused from DefinedRegion, addressRegion, eligibleRegion, ineligibleRegion, regionDrained"
 ---
 
 # region
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DefinedRegion · addressRegion · eligibleRegion · ineligibleRegion · regionDrained ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[defined]] · [[address]] · [[eligible]] · [[ineligible]] · [[drained]]
 

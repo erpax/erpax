@@ -1,11 +1,11 @@
 ---
 name: breastfeeding
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "breastfeeding: a schema.org component word, fused from breastfeedingWarning"
 ---
 
 # breastfeeding
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from breastfeedingWarning ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[warning]]
 

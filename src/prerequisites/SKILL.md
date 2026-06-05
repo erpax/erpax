@@ -1,11 +1,11 @@
 ---
 name: prerequisites
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "prerequisites: a schema.org component word, fused from coursePrerequisites, programPrerequisites"
 ---
 
 # prerequisites
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from coursePrerequisites · programPrerequisites ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[course]] · [[program]]
 

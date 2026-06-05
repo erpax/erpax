@@ -1,11 +1,11 @@
 ---
 name: includes
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "includes: a schema.org component word, fused from domainIncludes, includesAttraction, includesHealthPlanFormulary, includesHealthPlanNetwork, includesObject, rangeIncludes"
 ---
 
 # includes
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from domainIncludes · includesAttraction · includesHealthPlanFormulary · includesHealthPlanNetwork · includesObject · rangeIncludes ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[domain]] · [[attraction]] · [[health]] · [[plan]] · [[formulary]] · [[network]] · [[object]] · [[range]]
 

@@ -1,11 +1,11 @@
 ---
 name: ask
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "ask: a schema.org component word, fused from AskAction, AskPublicNewsArticle"
 ---
 
 # ask
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AskAction · AskPublicNewsArticle ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]] · [[public]] · [[news]] · [[article]]
 

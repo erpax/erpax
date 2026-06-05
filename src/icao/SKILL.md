@@ -1,11 +1,11 @@
 ---
 name: icao
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "icao: a schema.org component word, fused from icaoCode"
 ---
 
 # icao
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from icaoCode ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[code]]
 

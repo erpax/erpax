@@ -1,11 +1,11 @@
 ---
 name: numbered
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "numbered: a schema.org component word, fused from numberedPosition"
 ---
 
 # numbered
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from numberedPosition ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[position]]
 

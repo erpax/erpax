@@ -1,11 +1,11 @@
 ---
 name: trans
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "trans: a schema.org component word, fused from transFatContent"
 ---
 
 # trans
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from transFatContent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[fat]] · [[content]]
 

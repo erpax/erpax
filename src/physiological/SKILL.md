@@ -1,11 +1,11 @@
 ---
 name: physiological
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "physiological: a schema.org component word, fused from physiologicalBenefits"
 ---
 
 # physiological
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from physiologicalBenefits ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[benefits]]
 

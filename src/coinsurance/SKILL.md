@@ -1,11 +1,11 @@
 ---
 name: coinsurance
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "coinsurance: a schema.org component word, fused from healthPlanCoinsuranceOption, healthPlanCoinsuranceRate"
 ---
 
 # coinsurance
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from healthPlanCoinsuranceOption · healthPlanCoinsuranceRate ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[health]] · [[plan]] · [[option]] · [[rate]]
 

@@ -1,11 +1,11 @@
 ---
 name: dosage
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "dosage: a schema.org component word, fused from dosageForm"
 ---
 
 # dosage
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from dosageForm ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[form]]
 

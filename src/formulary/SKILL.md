@@ -1,11 +1,11 @@
 ---
 name: formulary
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "formulary: a schema.org component word, fused from HealthPlanFormulary, includesHealthPlanFormulary"
 ---
 
 # formulary
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from HealthPlanFormulary · includesHealthPlanFormulary ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[health]] · [[plan]] · [[includes]]
 

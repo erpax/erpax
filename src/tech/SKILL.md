@@ -1,11 +1,11 @@
 ---
 name: tech
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "tech: a schema.org component word, fused from TechArticle"
 ---
 
 # tech
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from TechArticle ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[article]]
 

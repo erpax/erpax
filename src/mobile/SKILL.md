@@ -1,11 +1,11 @@
 ---
 name: mobile
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "mobile: a schema.org component word, fused from MobileApplication, MobilePhoneStore, mobileUrl"
 ---
 
 # mobile
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MobileApplication · MobilePhoneStore · mobileUrl ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[application]] · [[phone]] · [[store]] · [[url]]
 

@@ -1,11 +1,11 @@
 ---
 name: stop
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "stop: a schema.org component word, fused from BusStop, arrivalBusStop, departureBusStop"
 ---
 
 # stop
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BusStop · arrivalBusStop · departureBusStop ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bus]] · [[arrival]] · [[departure]]
 

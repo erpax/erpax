@@ -1,11 +1,11 @@
 ---
 name: community
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "community: a schema.org component word, fused from GatedResidenceCommunity"
 ---
 
 # community
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GatedResidenceCommunity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[gated]] · [[residence]]
 

@@ -1,11 +1,11 @@
 ---
 name: performance
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "performance: a schema.org component word, fused from PerformanceRole, firstPerformance"
 ---
 
 # performance
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PerformanceRole · firstPerformance ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[role]] · [[first]]
 

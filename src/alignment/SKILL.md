@@ -1,11 +1,11 @@
 ---
 name: alignment
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "alignment: a schema.org component word, fused from AlignmentObject, alignmentType, educationalAlignment"
 ---
 
 # alignment
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AlignmentObject · alignmentType · educationalAlignment ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[object]] · [[type]] · [[educational]]
 

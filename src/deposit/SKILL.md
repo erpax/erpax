@@ -1,11 +1,11 @@
 ---
 name: deposit
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "deposit: a schema.org component word, fused from DepositAccount, InvestmentOrDeposit"
 ---
 
 # deposit
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DepositAccount · InvestmentOrDeposit ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[account]] · [[investment]]
 

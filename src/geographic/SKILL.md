@@ -1,11 +1,11 @@
 ---
 name: geographic
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "geographic: a schema.org component word, fused from geographicArea"
 ---
 
 # geographic
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from geographicArea ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[area]]
 

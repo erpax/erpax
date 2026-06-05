@@ -1,11 +1,11 @@
 ---
 name: office
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "office: a schema.org component word, fused from GovernmentOffice, OfficeEquipmentStore, PhysiciansOffice, PostOffice, postOfficeBoxNumber"
 ---
 
 # office
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GovernmentOffice · OfficeEquipmentStore · PhysiciansOffice · PostOffice · postOfficeBoxNumber ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[government]] · [[equipment]] · [[store]] · [[physicians]] · [[post]] · [[box]] · [[number]]
 

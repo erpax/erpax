@@ -1,11 +1,11 @@
 ---
 name: list
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "list: a schema.org component word, fused from BreadcrumbList, ItemList, ItemListOrderType, ListItem, featureList, itemListElement"
 ---
 
 # list
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BreadcrumbList · ItemList · ItemListOrderType · ListItem · featureList · itemListElement · itemListOrder ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[breadcrumb]] · [[item]] · [[order]] · [[type]] · [[feature]] · [[element]]
 

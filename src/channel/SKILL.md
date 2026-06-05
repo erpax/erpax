@@ -1,11 +1,11 @@
 ---
 name: channel
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "channel: a schema.org component word, fused from AMRadioChannel, BroadcastChannel, FMRadioChannel, RadioChannel, ServiceChannel, TelevisionChannel"
 ---
 
 # channel
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AMRadioChannel · BroadcastChannel · FMRadioChannel · RadioChannel · ServiceChannel · TelevisionChannel · availableChannel · broadcastChannelId · broadcastSubChannel · hasBroadcastChannel ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[am]] · [[radio]] · [[broadcast]] · [[fm]] · [[service]] · [[television]] · [[available]] · [[id]] · [[sub]] · [[has]]
 

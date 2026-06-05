@@ -1,11 +1,11 @@
 ---
 name: refund
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "refund: a schema.org component word, fused from RefundTypeEnumeration, refundType"
 ---
 
 # refund
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from RefundTypeEnumeration · refundType ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[type]] · [[enumeration]]
 

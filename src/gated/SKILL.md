@@ -1,11 +1,11 @@
 ---
 name: gated
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "gated: a schema.org component word, fused from GatedResidenceCommunity"
 ---
 
 # gated
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GatedResidenceCommunity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[residence]] · [[community]]
 

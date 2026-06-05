@@ -1,11 +1,11 @@
 ---
 name: amusement
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "amusement: a schema.org component word, fused from AmusementPark"
 ---
 
 # amusement
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AmusementPark ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[park]]
 

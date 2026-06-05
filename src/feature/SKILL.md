@@ -1,11 +1,11 @@
 ---
 name: feature
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "feature: a schema.org component word, fused from LocationFeatureSpecification, accessibilityFeature, amenityFeature, featureList"
 ---
 
 # feature
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from LocationFeatureSpecification · accessibilityFeature · amenityFeature · featureList ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[location]] · [[specification]] · [[accessibility]] · [[amenity]] · [[list]]
 

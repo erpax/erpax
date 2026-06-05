@@ -1,11 +1,11 @@
 ---
 name: film
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "film: a schema.org component word, fused from FilmAction"
 ---
 
 # film
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from FilmAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

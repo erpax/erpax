@@ -1,11 +1,11 @@
 ---
 name: food
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "food: a schema.org component word, fused from FastFoodRestaurant, FoodEstablishment, FoodEstablishmentReservation, FoodEvent, FoodService, foodEstablishment"
 ---
 
 # food
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from FastFoodRestaurant · FoodEstablishment · FoodEstablishmentReservation · FoodEvent · FoodService · foodEstablishment · foodEvent · foodWarning ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[fast]] · [[restaurant]] · [[establishment]] · [[reservation]] · [[event]] · [[service]] · [[warning]]
 

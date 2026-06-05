@@ -1,11 +1,11 @@
 ---
 name: indication
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "indication: a schema.org component word, fused from ApprovedIndication, MedicalIndication, PreventionIndication, TreatmentIndication"
 ---
 
 # indication
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ApprovedIndication · MedicalIndication · PreventionIndication · TreatmentIndication ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[approved]] · [[medical]] · [[prevention]] · [[treatment]]
 

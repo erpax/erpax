@@ -1,11 +1,11 @@
 ---
 name: legal
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "legal: a schema.org component word, fused from DrugLegalStatus, LegalForceStatus, LegalService, LegalValueLevel, legalAddress, legalName"
 ---
 
 # legal
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DrugLegalStatus · LegalForceStatus · LegalService · LegalValueLevel · legalAddress · legalName · legalRepresentative · legalStatus · legislationLegalForce · legislationLegalValue ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[drug]] · [[status]] · [[force]] · [[service]] · [[value]] · [[level]] · [[address]] · [[name]] · [[representative]] · [[legislation]]
 

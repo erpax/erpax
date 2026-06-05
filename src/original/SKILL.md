@@ -1,11 +1,11 @@
 ---
 name: original
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "original: a schema.org component word, fused from originalMediaContextDescription, originalMediaLink"
 ---
 
 # original
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from originalMediaContextDescription · originalMediaLink ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[media]] · [[context]] · [[description]] · [[link]]
 

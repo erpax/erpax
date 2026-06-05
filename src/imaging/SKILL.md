@@ -1,11 +1,11 @@
 ---
 name: imaging
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "imaging: a schema.org component word, fused from ImagingTest, MedicalImagingTechnique, imagingTechnique"
 ---
 
 # imaging
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ImagingTest · MedicalImagingTechnique · imagingTechnique ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[test]] · [[medical]] · [[technique]]
 

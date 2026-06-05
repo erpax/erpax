@@ -1,11 +1,11 @@
 ---
 name: until
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "until: a schema.org component word, fused from expectedArrivalUntil, priceValidUntil, validUntil"
 ---
 
 # until
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from expectedArrivalUntil · priceValidUntil · validUntil ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[expected]] · [[arrival]] · [[price]] · [[valid]]
 

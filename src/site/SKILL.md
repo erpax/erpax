@@ -1,11 +1,11 @@
 ---
 name: site
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "site: a schema.org component word, fused from SiteNavigationElement, WebSite"
 ---
 
 # site
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SiteNavigationElement · WebSite ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[navigation]] · [[element]] · [[web]]
 

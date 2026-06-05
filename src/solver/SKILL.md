@@ -1,11 +1,11 @@
 ---
 name: solver
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "solver: a schema.org component word, fused from MathSolver"
 ---
 
 # solver
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MathSolver ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[math]]
 

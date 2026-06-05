@@ -1,11 +1,11 @@
 ---
 name: money
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "money: a schema.org component word, fused from DatedMoneySpecification, MoneyTransfer"
 ---
 
 # money
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DatedMoneySpecification · MoneyTransfer ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[dated]] · [[specification]] · [[transfer]]
 

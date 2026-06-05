@@ -1,11 +1,11 @@
 ---
 name: renegotiable
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "renegotiable: a schema.org component word, fused from renegotiableLoan"
 ---
 
 # renegotiable
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from renegotiableLoan ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[loan]]
 

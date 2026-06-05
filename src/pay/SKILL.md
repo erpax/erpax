@@ -1,11 +1,11 @@
 ---
 name: pay
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "pay: a schema.org component word, fused from PayAction"
 ---
 
 # pay
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PayAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

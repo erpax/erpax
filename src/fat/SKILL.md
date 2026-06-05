@@ -1,11 +1,11 @@
 ---
 name: fat
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "fat: a schema.org component word, fused from fatContent, saturatedFatContent, transFatContent, unsaturatedFatContent"
 ---
 
 # fat
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from fatContent · saturatedFatContent · transFatContent · unsaturatedFatContent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[content]] · [[saturated]] · [[trans]] · [[unsaturated]]
 

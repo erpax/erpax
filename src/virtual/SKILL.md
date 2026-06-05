@@ -1,11 +1,11 @@
 ---
 name: virtual
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "virtual: a schema.org component word, fused from VirtualLocation, maximumVirtualAttendeeCapacity"
 ---
 
 # virtual
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from VirtualLocation · maximumVirtualAttendeeCapacity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[location]] · [[maximum]] · [[attendee]] · [[capacity]]
 

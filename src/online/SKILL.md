@@ -1,11 +1,11 @@
 ---
 name: online
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "online: a schema.org component word, fused from OnlineBusiness, OnlineMarketplace, OnlineStore, playersOnline"
 ---
 
 # online
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from OnlineBusiness · OnlineMarketplace · OnlineStore · playersOnline ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[business]] · [[marketplace]] · [[store]] · [[players]]
 

@@ -1,11 +1,11 @@
 ---
 name: user
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "user: a schema.org component word, fused from UserBlocks, UserCheckins, UserComments, UserDownloads, UserInteraction, UserLikes"
 ---
 
 # user
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from UserBlocks · UserCheckins · UserComments · UserDownloads · UserInteraction · UserLikes · UserPageVisits · UserPlays · UserPlusOnes · UserReview · UserTweets · userInteractionCount ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[blocks]] · [[checkins]] · [[comments]] · [[downloads]] · [[interaction]] · [[likes]] · [[page]] · [[visits]] · [[plays]] · [[plus]] · [[ones]] · [[review]] · [[tweets]] · [[count]]
 

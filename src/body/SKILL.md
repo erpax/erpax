@@ -1,11 +1,11 @@
 ---
 name: body
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "body: a schema.org component word, fused from AutoBodyShop, BodyMeasurementTypeEnumeration, BodyOfWater, LakeBodyOfWater, OceanBodyOfWater, RiverBodyOfWater"
 ---
 
 # body
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AutoBodyShop · BodyMeasurementTypeEnumeration · BodyOfWater · LakeBodyOfWater · OceanBodyOfWater · RiverBodyOfWater · SeaBodyOfWater · articleBody · bodyLocation · bodyType · reviewBody ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[auto]] · [[shop]] · [[measurement]] · [[type]] · [[enumeration]] · [[water]] · [[lake]] · [[ocean]] · [[river]] · [[sea]] · [[article]] · [[location]] · [[review]]
 

@@ -1,11 +1,11 @@
 ---
 name: processing
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "processing: a schema.org component word, fused from countryOfLastProcessing, processingTime"
 ---
 
 # processing
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from countryOfLastProcessing · processingTime ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[country]] · [[last]] · [[time]]
 

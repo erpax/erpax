@@ -1,11 +1,11 @@
 ---
 name: offset
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "offset: a schema.org component word, fused from endOffset, startOffset"
 ---
 
 # offset
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from endOffset · startOffset ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[end]] · [[start]]
 

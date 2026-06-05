@@ -1,11 +1,11 @@
 ---
 name: sms
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "sms: a schema.org component word, fused from serviceSmsNumber"
 ---
 
 # sms
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from serviceSmsNumber ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[service]] · [[number]]
 

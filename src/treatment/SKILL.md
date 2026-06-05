@@ -1,11 +1,11 @@
 ---
 name: treatment
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "treatment: a schema.org component word, fused from PsychologicalTreatment, TreatmentIndication, possibleTreatment"
 ---
 
 # treatment
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PsychologicalTreatment · TreatmentIndication · possibleTreatment ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[psychological]] · [[indication]] · [[possible]]
 

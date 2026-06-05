@@ -1,11 +1,11 @@
 ---
 name: job
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "job: a schema.org component word, fused from JobPosting, jobBenefits, jobDuration, jobImmediateStart, jobLocation, jobLocationType"
 ---
 
 # job
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from JobPosting · jobBenefits · jobDuration · jobImmediateStart · jobLocation · jobLocationType · jobStartDate · jobTitle · totalJobOpenings ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[posting]] · [[benefits]] · [[duration]] · [[immediate]] · [[start]] · [[location]] · [[type]] · [[date]] · [[title]] · [[total]] · [[openings]]
 

@@ -1,11 +1,11 @@
 ---
 name: composition
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "composition: a schema.org component word, fused from MusicComposition, chemicalComposition, includedComposition, musicCompositionForm"
 ---
 
 # composition
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MusicComposition · chemicalComposition · includedComposition · musicCompositionForm ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[music]] · [[chemical]] · [[included]] · [[form]]
 

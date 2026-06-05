@@ -1,11 +1,11 @@
 ---
 name: players
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "players: a schema.org component word, fused from numberOfPlayers, playersOnline"
 ---
 
 # players
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from numberOfPlayers · playersOnline ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[number]] · [[online]]
 

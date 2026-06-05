@@ -1,11 +1,11 @@
 ---
 name: use
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "use: a schema.org component word, fused from UseAction, cvdNumVentUse, educationalUse, potentialUse"
 ---
 
 # use
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from UseAction · cvdNumVentUse · educationalUse · potentialUse ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]] · [[cvd]] · [[num]] · [[vent]] · [[educational]] · [[potential]]
 

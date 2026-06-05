@@ -1,11 +1,11 @@
 ---
 name: therapy
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "therapy: a schema.org component word, fused from MedicalTherapy, OccupationalTherapy, PhysicalTherapy, RadiationTherapy, duplicateTherapy, relatedTherapy"
 ---
 
 # therapy
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalTherapy · OccupationalTherapy · PhysicalTherapy · RadiationTherapy · duplicateTherapy · relatedTherapy ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[medical]] · [[occupational]] · [[physical]] · [[radiation]] · [[duplicate]] · [[related]]
 

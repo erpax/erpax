@@ -1,11 +1,11 @@
 ---
 name: outlet
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "outlet: a schema.org component word, fused from OutletStore"
 ---
 
 # outlet
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from OutletStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]]
 

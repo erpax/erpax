@@ -1,11 +1,11 @@
 ---
 name: lei
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "lei: a schema.org component word, fused from leiCode"
 ---
 
 # lei
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from leiCode ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[code]]
 

@@ -1,11 +1,11 @@
 ---
 name: destination
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "destination: a schema.org component word, fused from TouristDestination, shippingDestination"
 ---
 
 # destination
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from TouristDestination · shippingDestination ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[tourist]] · [[shipping]]
 

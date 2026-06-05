@@ -1,11 +1,11 @@
 ---
 name: booking
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "booking: a schema.org component word, fused from advanceBookingRequirement, bookingAgent, bookingTime, tourBookingPage"
 ---
 
 # booking
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from advanceBookingRequirement · bookingAgent · bookingTime · tourBookingPage ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[advance]] · [[requirement]] · [[agent]] · [[time]] · [[tour]] · [[page]]
 

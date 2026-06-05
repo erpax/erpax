@@ -1,11 +1,11 @@
 ---
 name: automated
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "automated: a schema.org component word, fused from AutomatedTeller"
 ---
 
 # automated
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AutomatedTeller ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[teller]]
 

@@ -1,11 +1,11 @@
 ---
 name: layout
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "layout: a schema.org component word, fused from layoutImage"
 ---
 
 # layout
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from layoutImage ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[image]]
 

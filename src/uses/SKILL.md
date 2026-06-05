@@ -1,11 +1,11 @@
 ---
 name: uses
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "uses: a schema.org component word, fused from usesDevice, usesHealthPlanIdStandard"
 ---
 
 # uses
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from usesDevice · usesHealthPlanIdStandard ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[device]] · [[health]] · [[plan]] · [[id]] · [[standard]]
 

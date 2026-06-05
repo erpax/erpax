@@ -1,11 +1,11 @@
 ---
 name: credit
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "credit: a schema.org component word, fused from BankOrCreditUnion, CreditCard, LoanOrCredit, creditText"
 ---
 
 # credit
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BankOrCreditUnion · CreditCard · LoanOrCredit · creditText ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bank]] · [[union]] · [[card]] · [[loan]] · [[text]]
 

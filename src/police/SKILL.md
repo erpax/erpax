@@ -1,11 +1,11 @@
 ---
 name: police
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "police: a schema.org component word, fused from PoliceStation"
 ---
 
 # police
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PoliceStation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[station]]
 

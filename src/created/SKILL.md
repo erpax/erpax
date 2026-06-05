@@ -1,11 +1,11 @@
 ---
 name: created
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "created: a schema.org component word, fused from dateCreated, locationCreated"
 ---
 
 # created
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from dateCreated · locationCreated ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[date]] · [[location]]
 

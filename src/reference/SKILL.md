@@ -1,11 +1,11 @@
 ---
 name: reference
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "reference: a schema.org component word, fused from APIReference, contentReferenceTime, referenceQuantity, valueReference"
 ---
 
 # reference
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from APIReference · contentReferenceTime · referenceQuantity · valueReference ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[api]] · [[content]] · [[time]] · [[quantity]] · [[value]]
 

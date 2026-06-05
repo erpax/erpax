@@ -1,11 +1,11 @@
 ---
 name: interpreter
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "interpreter: a schema.org component word, fused from claimInterpreter"
 ---
 
 # interpreter
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from claimInterpreter ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[claim]]
 

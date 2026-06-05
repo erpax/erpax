@@ -1,11 +1,11 @@
 ---
 name: complete
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "complete: a schema.org component word, fused from CompleteDataFeed, timeToComplete"
 ---
 
 # complete
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CompleteDataFeed · timeToComplete ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[data]] · [[feed]] · [[time]]
 

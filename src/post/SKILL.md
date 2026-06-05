@@ -1,11 +1,11 @@
 ---
 name: post
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "post: a schema.org component word, fused from PostOffice, blogPost, postOfficeBoxNumber, postOp"
 ---
 
 # post
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PostOffice · blogPost · postOfficeBoxNumber · postOp ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[office]] · [[blog]] · [[box]] · [[number]] · [[op]]
 

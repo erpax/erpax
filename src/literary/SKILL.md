@@ -1,11 +1,11 @@
 ---
 name: literary
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "literary: a schema.org component word, fused from LiteraryEvent"
 ---
 
 # literary
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from LiteraryEvent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[event]]
 

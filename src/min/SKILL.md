@@ -1,11 +1,11 @@
 ---
 name: min
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "min: a schema.org component word, fused from childMinAge, energyEfficiencyScaleMin, minPrice, minValue, requiredMinAge, suggestedMinAge"
 ---
 
 # min
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from childMinAge · energyEfficiencyScaleMin · minPrice · minValue · requiredMinAge · suggestedMinAge · valueMinLength ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[child]] · [[age]] · [[energy]] · [[efficiency]] · [[scale]] · [[price]] · [[value]] · [[required]] · [[suggested]] · [[length]]
 

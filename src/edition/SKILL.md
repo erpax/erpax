@@ -1,11 +1,11 @@
 ---
 name: edition
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "edition: a schema.org component word, fused from artEdition, bookEdition, gameEdition, printEdition"
 ---
 
 # edition
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from artEdition · bookEdition · gameEdition · printEdition ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[art]] · [[book]] · [[game]] · [[print]]
 

@@ -1,11 +1,11 @@
 ---
 name: single
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "single: a schema.org component word, fused from SingleFamilyResidence"
 ---
 
 # single
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SingleFamilyResidence ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[family]] · [[residence]]
 

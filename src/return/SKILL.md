@@ -1,11 +1,11 @@
 ---
 name: return
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "return: a schema.org component word, fused from MerchantReturnEnumeration, MerchantReturnPolicy, MerchantReturnPolicySeasonalOverride, ProductReturnEnumeration, ProductReturnPolicy, ReturnAction"
 ---
 
 # return
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MerchantReturnEnumeration · MerchantReturnPolicy · MerchantReturnPolicySeasonalOverride · ProductReturnEnumeration · ProductReturnPolicy · ReturnAction · ReturnFeesEnumeration · ReturnLabelSourceEnumeration · ReturnMethodEnumeration · customerRemorseReturnFees · customerRemorseReturnLabelSource · customerRemorseReturnShippingFeesAmount · hasMerchantReturnPolicy · hasProductReturnPolicy · itemDefectReturnFees · itemDefectReturnLabelSource · itemDefectReturnShippingFeesAmount · merchantReturnDays · merchantReturnLink · productReturnDays · productReturnLink · returnFees · returnLabelSource · returnMethod ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[merchant]] · [[enumeration]] · [[policy]] · [[seasonal]] · [[override]] · [[product]] · [[action]] · [[fees]] · [[label]] · [[source]] · [[method]] · [[customer]] · [[remorse]] · [[shipping]] · [[amount]] · [[has]] · [[item]] · [[defect]] · [[days]] · [[link]] · [[category]] · [[country]]
 

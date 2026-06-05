@@ -1,11 +1,11 @@
 ---
 name: siblings
-description: "A sibling of the person."
+description: "The person's siblings — the plural of sibling."
 ---
 
 # siblings
 
-A sibling of the person.
+The person's siblings — see [[sibling]] (the singular). A [[dimension]] of one relation: siblings is the collection, sibling the unit; the text lives once, in [[sibling]].
 
 Attested in schema.org — siblings
 

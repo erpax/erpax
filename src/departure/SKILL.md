@@ -1,11 +1,11 @@
 ---
 name: departure
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "departure: a schema.org component word, fused from departureAirport, departureBoatTerminal, departureBusStop, departureGate, departurePlatform, departureStation"
 ---
 
 # departure
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from departureAirport · departureBoatTerminal · departureBusStop · departureGate · departurePlatform · departureStation · departureTerminal · departureTime ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[airport]] · [[boat]] · [[terminal]] · [[bus]] · [[stop]] · [[gate]] · [[platform]] · [[station]] · [[time]]
 

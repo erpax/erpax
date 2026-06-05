@@ -1,11 +1,11 @@
 ---
 name: download
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "download: a schema.org component word, fused from DataDownload, DownloadAction, downloadUrl"
 ---
 
 # download
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DataDownload · DownloadAction · downloadUrl ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[data]] · [[action]] · [[url]]
 

@@ -1,11 +1,11 @@
 ---
 name: non
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "non: a schema.org component word, fused from nonEqual, nonProprietaryName"
 ---
 
 # non
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from nonEqual · nonProprietaryName ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[equal]] · [[proprietary]] · [[name]]
 

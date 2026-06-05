@@ -1,11 +1,11 @@
 ---
 name: covid
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "covid: a schema.org component word, fused from CovidTestingFacility"
 ---
 
 # covid
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CovidTestingFacility ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[testing]] · [[facility]]
 

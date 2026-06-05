@@ -1,11 +1,11 @@
 ---
 name: storage
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "storage: a schema.org component word, fused from SelfStorage, storageRequirements"
 ---
 
 # storage
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SelfStorage · storageRequirements ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[self]] · [[requirements]]
 

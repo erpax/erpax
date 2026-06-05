@@ -1,11 +1,11 @@
 ---
 name: garden
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "garden: a schema.org component word, fused from GardenStore"
 ---
 
 # garden
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GardenStore ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[store]]
 

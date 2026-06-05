@@ -1,11 +1,11 @@
 ---
 name: touches
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "touches: a schema.org component word, fused from geoTouches"
 ---
 
 # touches
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from geoTouches ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[geo]]
 

@@ -1,11 +1,11 @@
 ---
 name: comments
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "comments: a schema.org component word, fused from UserComments"
 ---
 
 # comments
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from UserComments ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[user]]
 

@@ -1,11 +1,11 @@
 ---
 name: bowling
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "bowling: a schema.org component word, fused from BowlingAlley"
 ---
 
 # bowling
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BowlingAlley ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[alley]]
 

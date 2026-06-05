@@ -1,11 +1,11 @@
 ---
 name: web
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "web: a schema.org component word, fused from MedicalWebPage, WebAPI, WebApplication, WebContent, WebPage, WebPageElement"
 ---
 
 # web
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalWebPage · WebAPI · WebApplication · WebContent · WebPage · WebPageElement · WebSite · webCheckinTime · webFeed ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[medical]] · [[page]] · [[api]] · [[application]] · [[content]] · [[element]] · [[site]] · [[checkin]] · [[time]] · [[feed]]
 

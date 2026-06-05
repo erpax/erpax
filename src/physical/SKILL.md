@@ -1,11 +1,11 @@
 ---
 name: physical
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "physical: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, PhysicalExam, PhysicalTherapy, maximumPhysicalAttendeeCapacity, physicalRequirement"
 ---
 
 # physical
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PhysicalActivity · PhysicalActivityCategory · PhysicalExam · PhysicalTherapy · maximumPhysicalAttendeeCapacity · physicalRequirement ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[activity]] · [[category]] · [[exam]] · [[therapy]] · [[maximum]] · [[attendee]] · [[capacity]] · [[requirement]]
 

@@ -1,11 +1,11 @@
 ---
 name: cholesterol
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "cholesterol: a schema.org component word, fused from cholesterolContent"
 ---
 
 # cholesterol
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from cholesterolContent ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[content]]
 

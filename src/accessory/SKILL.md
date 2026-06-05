@@ -1,11 +1,11 @@
 ---
 name: accessory
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "accessory: a schema.org component word, fused from isAccessoryOrSparePartFor"
 ---
 
 # accessory
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from isAccessoryOrSparePartFor ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[spare]] · [[part]]
 

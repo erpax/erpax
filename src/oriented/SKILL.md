@@ -1,11 +1,11 @@
 ---
 name: oriented
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "oriented: a schema.org component word, fused from AdultOrientedEnumeration"
 ---
 
 # oriented
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AdultOrientedEnumeration ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[adult]] · [[enumeration]]
 

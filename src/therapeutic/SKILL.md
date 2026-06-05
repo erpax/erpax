@@ -1,11 +1,11 @@
 ---
 name: therapeutic
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "therapeutic: a schema.org component word, fused from TherapeuticProcedure"
 ---
 
 # therapeutic
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from TherapeuticProcedure ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[procedure]]
 

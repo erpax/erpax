@@ -1,11 +1,11 @@
 ---
 name: arrival
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "arrival: a schema.org component word, fused from arrivalAirport, arrivalBoatTerminal, arrivalBusStop, arrivalGate, arrivalPlatform, arrivalStation"
 ---
 
 # arrival
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from arrivalAirport · arrivalBoatTerminal · arrivalBusStop · arrivalGate · arrivalPlatform · arrivalStation · arrivalTerminal · arrivalTime · expectedArrivalFrom · expectedArrivalUntil ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[airport]] · [[boat]] · [[terminal]] · [[bus]] · [[stop]] · [[gate]] · [[platform]] · [[station]] · [[time]] · [[expected]] · [[until]]
 

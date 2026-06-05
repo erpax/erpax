@@ -1,11 +1,11 @@
 ---
 name: complex
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "complex: a schema.org component word, fused from ApartmentComplex, TennisComplex"
 ---
 
 # complex
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ApartmentComplex · TennisComplex ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[apartment]] · [[tennis]]
 

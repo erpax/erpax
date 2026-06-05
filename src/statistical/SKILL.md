@@ -1,11 +1,11 @@
 ---
 name: statistical
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "statistical: a schema.org component word, fused from StatisticalPopulation, StatisticalVariable"
 ---
 
 # statistical
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from StatisticalPopulation · StatisticalVariable ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[population]] · [[variable]]
 

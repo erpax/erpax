@@ -1,11 +1,11 @@
 ---
 name: measurement
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "measurement: a schema.org component word, fused from BodyMeasurementTypeEnumeration, MeasurementMethodEnum, MeasurementTypeEnumeration, WearableMeasurementTypeEnumeration, hasMeasurement, measurementD"
 ---
 
 # measurement
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BodyMeasurementTypeEnumeration · MeasurementMethodEnum · MeasurementTypeEnumeration · WearableMeasurementTypeEnumeration · hasMeasurement · measurementDenominator · measurementMethod · measurementQualifier · measurementTechnique · suggestedMeasurement ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[body]] · [[type]] · [[enumeration]] · [[method]] · [[enum]] · [[wearable]] · [[has]] · [[denominator]] · [[qualifier]] · [[technique]] · [[suggested]]
 

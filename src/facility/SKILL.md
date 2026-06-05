@@ -1,11 +1,11 @@
 ---
 name: facility
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "facility: a schema.org component word, fused from CovidTestingFacility, ParkingFacility, cvdFacilityCounty, cvdFacilityId"
 ---
 
 # facility
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from CovidTestingFacility · ParkingFacility · cvdFacilityCounty · cvdFacilityId ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[covid]] · [[testing]] · [[parking]] · [[cvd]] · [[county]] · [[id]]
 

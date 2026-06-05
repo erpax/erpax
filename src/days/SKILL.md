@@ -1,11 +1,11 @@
 ---
 name: days
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "days: a schema.org component word, fused from businessDays, merchantReturnDays, productReturnDays"
 ---
 
 # days
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from businessDays · merchantReturnDays · productReturnDays ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[business]] · [[merchant]] · [[return]] · [[product]]
 

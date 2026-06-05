@@ -1,11 +1,11 @@
 ---
 name: isrc
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "isrc: a schema.org component word, fused from isrcCode"
 ---
 
 # isrc
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from isrcCode ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[code]]
 

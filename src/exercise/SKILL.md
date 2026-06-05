@@ -1,11 +1,11 @@
 ---
 name: exercise
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "exercise: a schema.org component word, fused from ExerciseAction, ExerciseGym, ExercisePlan, exerciseCourse, exercisePlan, exerciseRelatedDiet"
 ---
 
 # exercise
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ExerciseAction · ExerciseGym · ExercisePlan · exerciseCourse · exercisePlan · exerciseRelatedDiet · exerciseType ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]] · [[gym]] · [[plan]] · [[course]] · [[related]] · [[diet]] · [[type]]
 

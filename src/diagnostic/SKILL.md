@@ -1,11 +1,11 @@
 ---
 name: diagnostic
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "diagnostic: a schema.org component word, fused from DiagnosticLab, DiagnosticProcedure"
 ---
 
 # diagnostic
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DiagnosticLab · DiagnosticProcedure ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[lab]] · [[procedure]]
 

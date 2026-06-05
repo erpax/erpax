@@ -1,11 +1,11 @@
 ---
 name: eidr
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "eidr: a schema.org component word, fused from editEIDR, titleEIDR"
 ---
 
 # eidr
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from editEIDR · titleEIDR ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[edit]] · [[title]]
 

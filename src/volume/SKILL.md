@@ -1,11 +1,11 @@
 ---
 name: volume
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "volume: a schema.org component word, fused from PublicationVolume, cargoVolume, eligibleTransactionVolume, volumeNumber"
 ---
 
 # volume
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PublicationVolume · cargoVolume · eligibleTransactionVolume · volumeNumber ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[publication]] · [[cargo]] · [[eligible]] · [[transaction]] · [[number]]
 

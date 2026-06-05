@@ -1,11 +1,11 @@
 ---
 name: postal
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "postal: a schema.org component word, fused from PostalAddress, PostalCodeRangeSpecification, postalCode, postalCodeBegin, postalCodeEnd, postalCodePrefix"
 ---
 
 # postal
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PostalAddress · PostalCodeRangeSpecification · postalCode · postalCodeBegin · postalCodeEnd · postalCodePrefix · postalCodeRange · servicePostalAddress ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[address]] · [[code]] · [[range]] · [[specification]] · [[begin]] · [[end]] · [[prefix]] · [[service]]
 

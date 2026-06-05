@@ -1,11 +1,11 @@
 ---
 name: allocate
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "allocate: a schema.org component word, fused from AllocateAction"
 ---
 
 # allocate
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AllocateAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

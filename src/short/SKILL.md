@@ -1,11 +1,11 @@
 ---
 name: short
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "short: a schema.org component word, fused from ShortStory"
 ---
 
 # short
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ShortStory ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[story]]
 

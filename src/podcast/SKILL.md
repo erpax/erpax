@@ -1,11 +1,11 @@
 ---
 name: podcast
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "podcast: a schema.org component word, fused from PodcastEpisode, PodcastSeason, PodcastSeries"
 ---
 
 # podcast
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PodcastEpisode · PodcastSeason · PodcastSeries ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[episode]] · [[season]] · [[series]]
 

@@ -1,11 +1,11 @@
 ---
 name: mandate
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "mandate: a schema.org component word, fused from loanMortgageMandateAmount"
 ---
 
 # mandate
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from loanMortgageMandateAmount ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[loan]] · [[mortgage]] · [[amount]]
 

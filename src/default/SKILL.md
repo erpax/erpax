@@ -1,11 +1,11 @@
 ---
 name: default
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "default: a schema.org component word, fused from defaultValue"
 ---
 
 # default
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from defaultValue ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[value]]
 

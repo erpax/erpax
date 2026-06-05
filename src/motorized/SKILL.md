@@ -1,11 +1,11 @@
 ---
 name: motorized
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "motorized: a schema.org component word, fused from MotorizedBicycle"
 ---
 
 # motorized
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MotorizedBicycle ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bicycle]]
 

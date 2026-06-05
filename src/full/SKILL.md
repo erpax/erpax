@@ -1,11 +1,11 @@
 ---
 name: full
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "full: a schema.org component word, fused from numberOfFullBathrooms"
 ---
 
 # full
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from numberOfFullBathrooms ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[number]] · [[bathrooms]]
 

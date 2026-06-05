@@ -1,11 +1,11 @@
 ---
 name: purpose
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "purpose: a schema.org component word, fused from MedicalDevicePurpose"
 ---
 
 # purpose
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalDevicePurpose ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[medical]] · [[device]]
 

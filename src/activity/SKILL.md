@@ -1,11 +1,11 @@
 ---
 name: activity
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "activity: a schema.org component word, fused from PhysicalActivity, PhysicalActivityCategory, SportsActivityLocation, activityDuration, activityFrequency, sportsActivityLocation"
 ---
 
 # activity
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from PhysicalActivity · PhysicalActivityCategory · SportsActivityLocation · activityDuration · activityFrequency · sportsActivityLocation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[physical]] · [[category]] · [[sports]] · [[location]] · [[duration]] · [[frequency]]
 

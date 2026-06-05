@@ -1,11 +1,11 @@
 ---
 name: insurance
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "insurance: a schema.org component word, fused from HealthInsurancePlan, InsuranceAgency, includedInHealthInsurancePlan"
 ---
 
 # insurance
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from HealthInsurancePlan · InsuranceAgency · includedInHealthInsurancePlan ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[health]] · [[plan]] · [[agency]] · [[included]]
 

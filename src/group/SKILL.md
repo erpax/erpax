@@ -1,11 +1,11 @@
 ---
 name: group
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "group: a schema.org component word, fused from DanceGroup, MusicGroup, PerformingGroup, ProductGroup, SizeGroupEnumeration, TheaterGroup"
 ---
 
 # group
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DanceGroup · MusicGroup · PerformingGroup · ProductGroup · SizeGroupEnumeration · TheaterGroup · WearableSizeGroupEnumeration · boardingGroup · inProductGroupWithID · musicGroupMember · productGroupID · sizeGroup ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[dance]] · [[music]] · [[performing]] · [[product]] · [[size]] · [[enumeration]] · [[theater]] · [[wearable]] · [[boarding]] · [[id]] · [[member]]
 

@@ -1,11 +1,11 @@
 ---
 name: interpreted
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "interpreted: a schema.org component word, fused from interpretedAsClaim"
 ---
 
 # interpreted
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from interpretedAsClaim ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[claim]]
 

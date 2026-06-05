@@ -1,11 +1,11 @@
 ---
 name: dropoff
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "dropoff: a schema.org component word, fused from dropoffLocation, dropoffTime"
 ---
 
 # dropoff
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from dropoffLocation · dropoffTime ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[location]] · [[time]]
 

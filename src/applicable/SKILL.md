@@ -1,11 +1,11 @@
 ---
 name: applicable
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "applicable: a schema.org component word, fused from applicableCountry, applicableLocation"
 ---
 
 # applicable
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from applicableCountry · applicableLocation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[country]] · [[location]]
 

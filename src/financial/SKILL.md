@@ -1,11 +1,11 @@
 ---
 name: financial
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "financial: a schema.org component word, fused from FinancialIncentive, FinancialProduct, FinancialService, financialAidEligible"
 ---
 
 # financial
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from FinancialIncentive · FinancialProduct · FinancialService · financialAidEligible ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[incentive]] · [[product]] · [[service]] · [[aid]] · [[eligible]]
 

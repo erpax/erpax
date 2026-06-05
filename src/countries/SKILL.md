@@ -1,11 +1,11 @@
 ---
 name: countries
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "countries: a schema.org component word, fused from countriesNotSupported, countriesSupported"
 ---
 
 # countries
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from countriesNotSupported · countriesSupported ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[not]] · [[supported]]
 

@@ -1,11 +1,11 @@
 ---
 name: maximum
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "maximum: a schema.org component word, fused from MaximumDoseSchedule, maximumAttendeeCapacity, maximumEnrollment, maximumIntake, maximumPhysicalAttendeeCapacity, maximumVirtualAttendeeCapacity"
 ---
 
 # maximum
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MaximumDoseSchedule · maximumAttendeeCapacity · maximumEnrollment · maximumIntake · maximumPhysicalAttendeeCapacity · maximumVirtualAttendeeCapacity ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[dose]] · [[schedule]] · [[attendee]] · [[capacity]] · [[enrollment]] · [[intake]] · [[physical]] · [[virtual]]
 

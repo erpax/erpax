@@ -1,11 +1,11 @@
 ---
 name: anatomical
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "anatomical: a schema.org component word, fused from AnatomicalStructure, AnatomicalSystem"
 ---
 
 # anatomical
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AnatomicalStructure · AnatomicalSystem ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[structure]] · [[system]]
 

@@ -1,11 +1,11 @@
 ---
 name: aggregate
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "aggregate: a schema.org component word, fused from AggregateOffer, AggregateRating, EmployerAggregateRating, aggregateElement, aggregateRating"
 ---
 
 # aggregate
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from AggregateOffer · AggregateRating · EmployerAggregateRating · aggregateElement · aggregateRating ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[offer]] · [[rating]] · [[employer]] · [[element]]
 

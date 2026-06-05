@@ -1,11 +1,11 @@
 ---
 name: company
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "company: a schema.org component word, fused from MovingCompany, companyRegistration, productionCompany"
 ---
 
 # company
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MovingCompany · companyRegistration · productionCompany ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[moving]] · [[registration]] · [[production]]
 

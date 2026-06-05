@@ -1,11 +1,11 @@
 ---
 name: station
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "station: a schema.org component word, fused from BusStation, FireStation, GasStation, PoliceStation, RadioStation, SubwayStation"
 ---
 
 # station
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BusStation · FireStation · GasStation · PoliceStation · RadioStation · SubwayStation · TelevisionStation · TrainStation · arrivalStation · departureStation ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[bus]] · [[fire]] · [[gas]] · [[police]] · [[radio]] · [[subway]] · [[television]] · [[train]] · [[arrival]] · [[departure]]
 

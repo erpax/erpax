@@ -1,11 +1,11 @@
 ---
 name: beauty
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "beauty: a schema.org component word, fused from BeautySalon, HealthAndBeautyBusiness"
 ---
 
 # beauty
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from BeautySalon · HealthAndBeautyBusiness ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[salon]] · [[health]] · [[business]]
 

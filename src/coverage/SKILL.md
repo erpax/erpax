@@ -1,11 +1,11 @@
 ---
 name: coverage
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "coverage: a schema.org component word, fused from coverageEndTime, coverageStartTime, missionCoveragePrioritiesPolicy, spatialCoverage, temporalCoverage"
 ---
 
 # coverage
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from coverageEndTime · coverageStartTime · missionCoveragePrioritiesPolicy · spatialCoverage · temporalCoverage ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[end]] · [[time]] · [[start]] · [[mission]] · [[priorities]] · [[policy]] · [[spatial]] · [[temporal]]
 

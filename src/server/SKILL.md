@@ -1,11 +1,11 @@
 ---
 name: server
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "server: a schema.org component word, fused from GameServer, GameServerStatus, gameServer, serverStatus"
 ---
 
 # server
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GameServer · GameServerStatus · gameServer · serverStatus ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[game]] · [[status]]
 

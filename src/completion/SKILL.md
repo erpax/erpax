@@ -1,11 +1,11 @@
 ---
 name: completion
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "completion: a schema.org component word, fused from salaryUponCompletion"
 ---
 
 # completion
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from salaryUponCompletion ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[salary]] · [[upon]]
 

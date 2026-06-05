@@ -1,11 +1,11 @@
 ---
 name: delete
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "delete: a schema.org component word, fused from DeleteAction"
 ---
 
 # delete
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from DeleteAction ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[action]]
 

@@ -1,11 +1,11 @@
 ---
 name: point
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "point: a schema.org component word, fused from ContactPoint, ContactPointOption, EntryPoint, contactPoint"
 ---
 
 # point
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from ContactPoint · ContactPointOption · EntryPoint · contactPoint ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[contact]] · [[option]] · [[entry]]
 

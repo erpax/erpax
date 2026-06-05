@@ -1,11 +1,11 @@
 ---
 name: info
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "info: a schema.org component word, fused from OwnershipInfo, diseasePreventionInfo, gettingTestedInfo, governmentBenefitsInfo, ownershipFundingInfo, prescribingInfo"
 ---
 
 # info
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from OwnershipInfo · diseasePreventionInfo · gettingTestedInfo · governmentBenefitsInfo · ownershipFundingInfo · prescribingInfo · publicTransportClosuresInfo · schoolClosuresInfo · usageInfo ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[ownership]] · [[disease]] · [[prevention]] · [[getting]] · [[tested]] · [[government]] · [[benefits]] · [[funding]] · [[prescribing]] · [[public]] · [[transport]] · [[closures]] · [[school]] · [[usage]]
 

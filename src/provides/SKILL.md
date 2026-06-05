@@ -1,11 +1,11 @@
 ---
 name: provides
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "provides: a schema.org component word, fused from providesBroadcastService, providesService"
 ---
 
 # provides
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from providesBroadcastService · providesService ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[broadcast]] · [[service]]
 

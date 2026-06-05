@@ -1,11 +1,11 @@
 ---
 name: medical
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "medical: a schema.org component word, fused from MedicalAudience, MedicalAudienceType, MedicalBusiness, MedicalCause, MedicalClinic, MedicalCode"
 ---
 
 # medical
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from MedicalAudience · MedicalAudienceType · MedicalBusiness · MedicalCause · MedicalClinic · MedicalCode · MedicalCondition · MedicalConditionStage · MedicalContraindication · MedicalDevice · MedicalDevicePurpose · MedicalEntity · MedicalEnumeration · MedicalEvidenceLevel · MedicalGuideline · MedicalGuidelineContraindication · MedicalGuidelineRecommendation · MedicalImagingTechnique · MedicalIndication · MedicalIntangible · MedicalObservationalStudy · MedicalObservationalStudyDesign · MedicalOrganization · MedicalProcedure ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[audience]] · [[type]] · [[business]] · [[cause]] · [[clinic]] · [[code]] · [[condition]] · [[stage]] · [[contraindication]] · [[device]] · [[purpose]] · [[entity]] · [[enumeration]] · [[evidence]] · [[level]] · [[guideline]] · [[recommendation]] · [[imaging]] · [[technique]] · [[indication]] · [[intangible]] · [[observational]] · [[study]] · [[design]] · [[organization]] · [[procedure]] · [[risk]] · [[calculator]] · [[estimator]] · [[factor]] · [[score]] · [[scholarly]] · [[article]] · [[sign]] · [[symptom]] · [[specialty]] · [[status]] · [[test]] · [[panel]] · [[therapy]]
 

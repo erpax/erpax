@@ -1,11 +1,11 @@
 ---
 name: navigation
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "navigation: a schema.org component word, fused from SiteNavigationElement"
 ---
 
 # navigation
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from SiteNavigationElement ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[site]] · [[element]]
 

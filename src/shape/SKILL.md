@@ -1,11 +1,11 @@
 ---
 name: shape
-description: "A single-word atom, collided out of schema.org compounds (entangled, no multiword disguise)."
+description: "shape: a schema.org component word, fused from GeoShape"
 ---
 
 # shape
 
-A single-word atom — collided out of schema.org compounds (no multiword disguise; [[sti]] · [[collapse]] · [[merge]]).
+A schema.org component word, collided out of schema.org compounds — fused from GeoShape ([[sti]] · [[collapse]] · [[merge]]).
 
 Entangled with — [[geo]]
 
