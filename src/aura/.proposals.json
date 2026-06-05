@@ -1,0 +1,1474 @@
+{
+  "proposals": [
+    {
+      "orphan": "abstract",
+      "target": "coordinate",
+      "reason": "co-occurrence: coordinate mentions abstract (mass 26)"
+    },
+    {
+      "orphan": "acquired",
+      "target": "education",
+      "reason": "co-occurrence: education mentions acquired (mass 13)"
+    },
+    {
+      "orphan": "actor",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions actor (mass 1334)"
+    },
+    {
+      "orphan": "actors",
+      "target": "age",
+      "reason": "co-occurrence: age mentions actors (mass 15)"
+    },
+    {
+      "orphan": "affected",
+      "target": "object",
+      "reason": "co-occurrence: object mentions affected (mass 8)"
+    },
+    {
+      "orphan": "after",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions after (mass 1125)"
+    },
+    {
+      "orphan": "models",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions models (mass 168)"
+    },
+    {
+      "orphan": "airline",
+      "target": "flight",
+      "reason": "co-occurrence: flight mentions airline (mass 4)"
+    },
+    {
+      "orphan": "algorithm",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions algorithm (mass 361)"
+    },
+    {
+      "orphan": "alternate",
+      "target": "rotation",
+      "reason": "co-occurrence: rotation mentions alternate (mass 23)"
+    },
+    {
+      "orphan": "alumni",
+      "target": "inverse",
+      "reason": "co-occurrence: inverse mentions alumni (mass 0)"
+    },
+    {
+      "orphan": "amendment",
+      "target": "standard",
+      "reason": "co-occurrence: standard mentions amendment (mass 189)"
+    },
+    {
+      "orphan": "applicability",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions applicability (mass 1125)"
+    },
+    {
+      "orphan": "archived",
+      "target": "matter",
+      "reason": "co-occurrence: matter mentions archived (mass 25)"
+    },
+    {
+      "orphan": "artist",
+      "target": "item",
+      "reason": "co-occurrence: item mentions artist (mass 28)"
+    },
+    {
+      "orphan": "assesses",
+      "target": "classroom",
+      "reason": "co-occurrence: classroom mentions assesses (mass 2)"
+    },
+    {
+      "orphan": "attachment",
+      "target": "checklists",
+      "reason": "co-occurrence: checklists mentions attachment (mass 5)"
+    },
+    {
+      "orphan": "attendees",
+      "target": "minutes",
+      "reason": "co-occurrence: minutes mentions attendees (mass 1)"
+    },
+    {
+      "orphan": "attorney",
+      "target": "privilege",
+      "reason": "co-occurrence: privilege mentions attorney (mass 6)"
+    },
+    {
+      "orphan": "attrition",
+      "target": "churn",
+      "reason": "co-occurrence: churn mentions attrition (mass 4)"
+    },
+    {
+      "orphan": "audiobook",
+      "target": "read",
+      "reason": "co-occurrence: read mentions audiobook (mass 0)"
+    },
+    {
+      "orphan": "author",
+      "target": "sti",
+      "reason": "co-occurrence: sti mentions author (mass 1076)"
+    },
+    {
+      "orphan": "award",
+      "target": "education",
+      "reason": "co-occurrence: education mentions award (mass 13)"
+    },
+    {
+      "orphan": "away",
+      "target": "akashic",
+      "reason": "co-occurrence: akashic mentions away (mass 93)"
+    },
+    {
+      "orphan": "bakery",
+      "target": "department",
+      "reason": "co-occurrence: department mentions bakery (mass 1)"
+    },
+    {
+      "orphan": "barcode",
+      "target": "search",
+      "reason": "co-occurrence: search mentions barcode (mass 5)"
+    },
+    {
+      "orphan": "batch",
+      "target": "horo",
+      "reason": "co-occurrence: horo mentions batch (mass 116)"
+    },
+    {
+      "orphan": "before",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions before (mass 1125)"
+    },
+    {
+      "orphan": "beneficiary",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions beneficiary (mass 206)"
+    },
+    {
+      "orphan": "boolean",
+      "target": "access",
+      "reason": "co-occurrence: access mentions boolean (mass 103)"
+    },
+    {
+      "orphan": "brand",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions brand (mass 361)"
+    },
+    {
+      "orphan": "bridge",
+      "target": "market",
+      "reason": "co-occurrence: market mentions bridge (mass 27)"
+    },
+    {
+      "orphan": "broker",
+      "target": "oauth",
+      "reason": "co-occurrence: oauth mentions broker (mass 2)"
+    },
+    {
+      "orphan": "browser",
+      "target": "bindings",
+      "reason": "co-occurrence: bindings mentions browser (mass 14)"
+    },
+    {
+      "orphan": "buyer",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions buyer (mass 1125)"
+    },
+    {
+      "orphan": "candidate",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions candidate (mass 168)"
+    },
+    {
+      "orphan": "carrier",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions carrier (mass 1125)"
+    },
+    {
+      "orphan": "changes",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions changes (mass 361)"
+    },
+    {
+      "orphan": "citation",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions citation (mass 361)"
+    },
+    {
+      "orphan": "clause",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions clause (mass 206)"
+    },
+    {
+      "orphan": "cloning",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions cloning (mass 1334)"
+    },
+    {
+      "orphan": "closes",
+      "target": "horo",
+      "reason": "co-occurrence: horo mentions closes (mass 116)"
+    },
+    {
+      "orphan": "co",
+      "target": "assets",
+      "reason": "co-occurrence: assets mentions co (mass 56)"
+    },
+    {
+      "orphan": "colleague",
+      "target": "connections",
+      "reason": "co-occurrence: connections mentions colleague (mass 7)"
+    },
+    {
+      "orphan": "competitor",
+      "target": "competition",
+      "reason": "co-occurrence: competition mentions competitor (mass 19)"
+    },
+    {
+      "orphan": "components",
+      "target": "standard",
+      "reason": "co-occurrence: standard mentions components (mass 189)"
+    },
+    {
+      "orphan": "composer",
+      "target": "music",
+      "reason": "co-occurrence: music mentions composer (mass 16)"
+    },
+    {
+      "orphan": "comprised",
+      "target": "vessel",
+      "reason": "co-occurrence: vessel mentions comprised (mass 1)"
+    },
+    {
+      "orphan": "confidentiality",
+      "target": "proof",
+      "reason": "co-occurrence: proof mentions confidentiality (mass 170)"
+    },
+    {
+      "orphan": "confirmation",
+      "target": "payload",
+      "reason": "co-occurrence: payload mentions confirmation (mass 14)"
+    },
+    {
+      "orphan": "connected",
+      "target": "akashic",
+      "reason": "co-occurrence: akashic mentions connected (mass 93)"
+    },
+    {
+      "orphan": "consolidates",
+      "target": "entry",
+      "reason": "co-occurrence: entry mentions consolidates (mass 35)"
+    },
+    {
+      "orphan": "contributor",
+      "target": "allocation",
+      "reason": "co-occurrence: allocation mentions contributor (mass 38)"
+    },
+    {
+      "orphan": "conversation",
+      "target": "akashic",
+      "reason": "co-occurrence: akashic mentions conversation (mass 93)"
+    },
+    {
+      "orphan": "cooperative",
+      "target": "competition",
+      "reason": "co-occurrence: competition mentions cooperative (mass 19)"
+    },
+    {
+      "orphan": "corporation",
+      "target": "organization",
+      "reason": "co-occurrence: organization mentions corporation (mass 12)"
+    },
+    {
+      "orphan": "correction",
+      "target": "reverse",
+      "reason": "co-occurrence: reverse mentions correction (mass 5)"
+    },
+    {
+      "orphan": "corrects",
+      "target": "gate",
+      "reason": "co-occurrence: gate mentions corrects (mass 20)"
+    },
+    {
+      "orphan": "correlation",
+      "target": "voting",
+      "reason": "co-occurrence: voting mentions correlation (mass 0)"
+    },
+    {
+      "orphan": "creator",
+      "target": "trinity",
+      "reason": "co-occurrence: trinity mentions creator (mass 39)"
+    },
+    {
+      "orphan": "credited",
+      "target": "contribution",
+      "reason": "co-occurrence: contribution mentions credited (mass 12)"
+    },
+    {
+      "orphan": "current",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions current (mass 1334)"
+    },
+    {
+      "orphan": "signatures",
+      "target": "beyond",
+      "reason": "co-occurrence: beyond mentions signatures (mass 3)"
+    },
+    {
+      "orphan": "checks",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions checks (mass 1125)"
+    },
+    {
+      "orphan": "cutoff",
+      "target": "period",
+      "reason": "co-occurrence: period mentions cutoff (mass 15)"
+    },
+    {
+      "orphan": "default",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions default (mass 1125)"
+    },
+    {
+      "orphan": "deleted",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions deleted (mass 1125)"
+    },
+    {
+      "orphan": "demand",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions demand (mass 361)"
+    },
+    {
+      "orphan": "dependencies",
+      "target": "risk",
+      "reason": "co-occurrence: risk mentions dependencies (mass 23)"
+    },
+    {
+      "orphan": "depth",
+      "target": "sti",
+      "reason": "co-occurrence: sti mentions depth (mass 1076)"
+    },
+    {
+      "orphan": "diagram",
+      "target": "drawing",
+      "reason": "co-occurrence: drawing mentions diagram (mass 0)"
+    },
+    {
+      "orphan": "director",
+      "target": "workorders",
+      "reason": "co-occurrence: workorders mentions director (mass 12)"
+    },
+    {
+      "orphan": "directors",
+      "target": "transactions",
+      "reason": "co-occurrence: transactions mentions directors (mass 9)"
+    },
+    {
+      "orphan": "disambiguating",
+      "target": "manufacturing",
+      "reason": "co-occurrence: manufacturing mentions disambiguating (mass 34)"
+    },
+    {
+      "orphan": "displacement",
+      "target": "rodin",
+      "reason": "co-occurrence: rodin mentions displacement (mass 67)"
+    },
+    {
+      "orphan": "dissolution",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions dissolution (mass 1334)"
+    },
+    {
+      "orphan": "documentation",
+      "target": "action",
+      "reason": "co-occurrence: action mentions documentation (mass 118)"
+    },
+    {
+      "orphan": "door",
+      "target": "domain",
+      "reason": "co-occurrence: domain mentions door (mass 9)"
+    },
+    {
+      "orphan": "down",
+      "target": "duality",
+      "reason": "co-occurrence: duality mentions down (mass 122)"
+    },
+    {
+      "orphan": "drains",
+      "target": "moisture",
+      "reason": "co-occurrence: moisture mentions drains (mass 13)"
+    },
+    {
+      "orphan": "draw",
+      "target": "soil",
+      "reason": "co-occurrence: soil mentions draw (mass 43)"
+    },
+    {
+      "orphan": "drawing",
+      "target": "artform",
+      "reason": "co-occurrence: artform mentions drawing (mass 0)"
+    },
+    {
+      "orphan": "drink",
+      "target": "menu",
+      "reason": "co-occurrence: menu mentions drink (mass 4)"
+    },
+    {
+      "orphan": "during",
+      "target": "access",
+      "reason": "co-occurrence: access mentions during (mass 103)"
+    },
+    {
+      "orphan": "eat",
+      "target": "manure",
+      "reason": "co-occurrence: manure mentions eat (mass 6)"
+    },
+    {
+      "orphan": "ecommerce",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions ecommerce (mass 1125)"
+    },
+    {
+      "orphan": "editor",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions editor (mass 1334)"
+    },
+    {
+      "orphan": "elevation",
+      "target": "escalation",
+      "reason": "co-occurrence: escalation mentions elevation (mass 2)"
+    },
+    {
+      "orphan": "email",
+      "target": "config",
+      "reason": "co-occurrence: config mentions email (mass 58)"
+    },
+    {
+      "orphan": "encodings",
+      "target": "model",
+      "reason": "co-occurrence: model mentions encodings (mass 3)"
+    },
+    {
+      "orphan": "endorse",
+      "target": "payload",
+      "reason": "co-occurrence: payload mentions endorse (mass 14)"
+    },
+    {
+      "orphan": "endpoints",
+      "target": "config",
+      "reason": "co-occurrence: config mentions endpoints (mass 58)"
+    },
+    {
+      "orphan": "epidemiology",
+      "target": "aspect",
+      "reason": "co-occurrence: aspect mentions epidemiology (mass 3)"
+    },
+    {
+      "orphan": "estimates",
+      "target": "cardinality",
+      "reason": "co-occurrence: cardinality mentions estimates (mass 1)"
+    },
+    {
+      "orphan": "except",
+      "target": "plugins",
+      "reason": "co-occurrence: plugins mentions except (mass 40)"
+    },
+    {
+      "orphan": "expressed",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions expressed (mass 361)"
+    },
+    {
+      "orphan": "festival",
+      "target": "horo",
+      "reason": "co-occurrence: horo mentions festival (mass 116)"
+    },
+    {
+      "orphan": "film",
+      "target": "mulch",
+      "reason": "co-occurrence: mulch mentions film (mass 14)"
+    },
+    {
+      "orphan": "find",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions find (mass 168)"
+    },
+    {
+      "orphan": "shares",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions shares (mass 168)"
+    },
+    {
+      "orphan": "float",
+      "target": "currency",
+      "reason": "co-occurrence: currency mentions float (mass 55)"
+    },
+    {
+      "orphan": "follow",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions follow (mass 206)"
+    },
+    {
+      "orphan": "follows",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions follows (mass 361)"
+    },
+    {
+      "orphan": "friendly",
+      "target": "duality",
+      "reason": "co-occurrence: duality mentions friendly (mass 122)"
+    },
+    {
+      "orphan": "funder",
+      "target": "grant",
+      "reason": "co-occurrence: grant mentions funder (mass 1)"
+    },
+    {
+      "orphan": "gift",
+      "target": "grace",
+      "reason": "co-occurrence: grace mentions gift (mass 4)"
+    },
+    {
+      "orphan": "given",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions given (mass 361)"
+    },
+    {
+      "orphan": "good",
+      "target": "proof",
+      "reason": "co-occurrence: proof mentions good (mass 170)"
+    },
+    {
+      "orphan": "grantee",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions grantee (mass 361)"
+    },
+    {
+      "orphan": "gtin",
+      "target": "offer",
+      "reason": "co-occurrence: offer mentions gtin (mass 13)"
+    },
+    {
+      "orphan": "guide",
+      "target": "share",
+      "reason": "co-occurrence: share mentions guide (mass 20)"
+    },
+    {
+      "orphan": "handling",
+      "target": "akashic",
+      "reason": "co-occurrence: akashic mentions handling (mass 93)"
+    },
+    {
+      "orphan": "hazard",
+      "target": "salinity",
+      "reason": "co-occurrence: salinity mentions hazard (mass 5)"
+    },
+    {
+      "orphan": "height",
+      "target": "harmony",
+      "reason": "co-occurrence: harmony mentions height (mass 17)"
+    },
+    {
+      "orphan": "iata",
+      "target": "carriers",
+      "reason": "co-occurrence: carriers mentions iata (mass 2)"
+    },
+    {
+      "orphan": "incentives",
+      "target": "leases",
+      "reason": "co-occurrence: leases mentions incentives (mass 7)"
+    },
+    {
+      "orphan": "income",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions income (mass 206)"
+    },
+    {
+      "orphan": "increases",
+      "target": "history",
+      "reason": "co-occurrence: history mentions increases (mass 34)"
+    },
+    {
+      "orphan": "industry",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions industry (mass 206)"
+    },
+    {
+      "orphan": "insertion",
+      "target": "stream",
+      "reason": "co-occurrence: stream mentions insertion (mass 0)"
+    },
+    {
+      "orphan": "instrument",
+      "target": "action",
+      "reason": "co-occurrence: action mentions instrument (mass 118)"
+    },
+    {
+      "orphan": "integer",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions integer (mass 361)"
+    },
+    {
+      "orphan": "intensity",
+      "target": "tillage",
+      "reason": "co-occurrence: tillage mentions intensity (mass 10)"
+    },
+    {
+      "orphan": "interact",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions interact (mass 1125)"
+    },
+    {
+      "orphan": "interactivity",
+      "target": "components",
+      "reason": "co-occurrence: components mentions interactivity (mass 0)"
+    },
+    {
+      "orphan": "interest",
+      "target": "rate",
+      "reason": "co-occurrence: rate mentions interest (mass 54)"
+    },
+    {
+      "orphan": "inverse",
+      "target": "yield",
+      "reason": "co-occurrence: yield mentions inverse (mass 47)"
+    },
+    {
+      "orphan": "invoice",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions invoice (mass 1125)"
+    },
+    {
+      "orphan": "isic",
+      "target": "sectors",
+      "reason": "co-occurrence: sectors mentions isic (mass 1)"
+    },
+    {
+      "orphan": "iso",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions iso (mass 361)"
+    },
+    {
+      "orphan": "receipts",
+      "target": "sandbox",
+      "reason": "co-occurrence: sandbox mentions receipts (mass 16)"
+    },
+    {
+      "orphan": "routings",
+      "target": "manufacturing",
+      "reason": "co-occurrence: manufacturing mentions routings (mass 34)"
+    },
+    {
+      "orphan": "itinerary",
+      "target": "trip",
+      "reason": "co-occurrence: trip mentions itinerary (mass 5)"
+    },
+    {
+      "orphan": "iupac",
+      "target": "element",
+      "reason": "co-occurrence: element mentions iupac (mass 12)"
+    },
+    {
+      "orphan": "join",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions join (mass 168)"
+    },
+    {
+      "orphan": "joint",
+      "target": "transactions",
+      "reason": "co-occurrence: transactions mentions joint (mass 9)"
+    },
+    {
+      "orphan": "keywords",
+      "target": "recipe",
+      "reason": "co-occurrence: recipe mentions keywords (mass 4)"
+    },
+    {
+      "orphan": "latitude",
+      "target": "circle",
+      "reason": "co-occurrence: circle mentions latitude (mass 1)"
+    },
+    {
+      "orphan": "leave",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions leave (mass 168)"
+    },
+    {
+      "orphan": "lei",
+      "target": "customers",
+      "reason": "co-occurrence: customers mentions lei (mass 13)"
+    },
+    {
+      "orphan": "life",
+      "target": "duality",
+      "reason": "co-occurrence: duality mentions life (mass 122)"
+    },
+    {
+      "orphan": "like",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions like (mass 1125)"
+    },
+    {
+      "orphan": "line",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions line (mass 1125)"
+    },
+    {
+      "orphan": "login",
+      "target": "access",
+      "reason": "co-occurrence: access mentions login (mass 103)"
+    },
+    {
+      "orphan": "longitude",
+      "target": "circle",
+      "reason": "co-occurrence: circle mentions longitude (mass 1)"
+    },
+    {
+      "orphan": "lose",
+      "target": "law",
+      "reason": "co-occurrence: law mentions lose (mass 6)"
+    },
+    {
+      "orphan": "loser",
+      "target": "competition",
+      "reason": "co-occurrence: competition mentions loser (mass 19)"
+    },
+    {
+      "orphan": "lyrics",
+      "target": "utterances",
+      "reason": "co-occurrence: utterances mentions lyrics (mass 0)"
+    },
+    {
+      "orphan": "manufacturer",
+      "target": "mpn",
+      "reason": "co-occurrence: mpn mentions manufacturer (mass 0)"
+    },
+    {
+      "orphan": "maps",
+      "target": "sti",
+      "reason": "co-occurrence: sti mentions maps (mass 1076)"
+    },
+    {
+      "orphan": "mechanism",
+      "target": "access",
+      "reason": "co-occurrence: access mentions mechanism (mass 103)"
+    },
+    {
+      "orphan": "mandates",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions mandates (mass 361)"
+    },
+    {
+      "orphan": "median",
+      "target": "distribution",
+      "reason": "co-occurrence: distribution mentions median (mass 14)"
+    },
+    {
+      "orphan": "memory",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions memory (mass 1334)"
+    },
+    {
+      "orphan": "modified",
+      "target": "plugins",
+      "reason": "co-occurrence: plugins mentions modified (mass 40)"
+    },
+    {
+      "orphan": "mountain",
+      "target": "landform",
+      "reason": "co-occurrence: landform mentions mountain (mass 0)"
+    },
+    {
+      "orphan": "move",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions move (mass 1125)"
+    },
+    {
+      "orphan": "muscle",
+      "target": "antagonist",
+      "reason": "co-occurrence: antagonist mentions muscle (mass 0)"
+    },
+    {
+      "orphan": "named",
+      "target": "horo",
+      "reason": "co-occurrence: horo mentions named (mass 116)"
+    },
+    {
+      "orphan": "negative",
+      "target": "age",
+      "reason": "co-occurrence: age mentions negative (mass 15)"
+    },
+    {
+      "orphan": "newspaper",
+      "target": "periodical",
+      "reason": "co-occurrence: periodical mentions newspaper (mass 0)"
+    },
+    {
+      "orphan": "ngo",
+      "target": "organization",
+      "reason": "co-occurrence: organization mentions ngo (mass 12)"
+    },
+    {
+      "orphan": "notification",
+      "target": "definitions",
+      "reason": "co-occurrence: definitions mentions notification (mass 6)"
+    },
+    {
+      "orphan": "occupancy",
+      "target": "spaces",
+      "reason": "co-occurrence: spaces mentions occupancy (mass 1)"
+    },
+    {
+      "orphan": "offset",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions offset (mass 168)"
+    },
+    {
+      "orphan": "opens",
+      "target": "zeropoint",
+      "reason": "co-occurrence: zeropoint mentions opens (mass 64)"
+    },
+    {
+      "orphan": "originates",
+      "target": "sourced",
+      "reason": "co-occurrence: sourced mentions originates (mass 0)"
+    },
+    {
+      "orphan": "owner",
+      "target": "access",
+      "reason": "co-occurrence: access mentions owner (mass 103)"
+    },
+    {
+      "orphan": "owns",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions owns (mass 206)"
+    },
+    {
+      "orphan": "pagination",
+      "target": "queries",
+      "reason": "co-occurrence: queries mentions pagination (mass 26)"
+    },
+    {
+      "orphan": "paint",
+      "target": "drawing",
+      "reason": "co-occurrence: drawing mentions paint (mass 0)"
+    },
+    {
+      "orphan": "painting",
+      "target": "artform",
+      "reason": "co-occurrence: artform mentions painting (mass 0)"
+    },
+    {
+      "orphan": "participant",
+      "target": "recipient",
+      "reason": "co-occurrence: recipient mentions participant (mass 2)"
+    },
+    {
+      "orphan": "passed",
+      "target": "config",
+      "reason": "co-occurrence: config mentions passed (mass 58)"
+    },
+    {
+      "orphan": "patient",
+      "target": "health",
+      "reason": "co-occurrence: health mentions patient (mass 47)"
+    },
+    {
+      "orphan": "pattern",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions pattern (mass 1334)"
+    },
+    {
+      "orphan": "pay",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions pay (mass 206)"
+    },
+    {
+      "orphan": "percentile",
+      "target": "aggregation",
+      "reason": "co-occurrence: aggregation mentions percentile (mass 7)"
+    },
+    {
+      "orphan": "perform",
+      "target": "offers",
+      "reason": "co-occurrence: offers mentions perform (mass 2)"
+    },
+    {
+      "orphan": "performer",
+      "target": "provider",
+      "reason": "co-occurrence: provider mentions performer (mass 1)"
+    },
+    {
+      "orphan": "permissions",
+      "target": "access",
+      "reason": "co-occurrence: access mentions permissions (mass 103)"
+    },
+    {
+      "orphan": "photograph",
+      "target": "artform",
+      "reason": "co-occurrence: artform mentions photograph (mass 0)"
+    },
+    {
+      "orphan": "player",
+      "target": "role",
+      "reason": "co-occurrence: role mentions player (mass 7)"
+    },
+    {
+      "orphan": "playground",
+      "target": "api",
+      "reason": "co-occurrence: api mentions playground (mass 16)"
+    },
+    {
+      "orphan": "political",
+      "target": "peace",
+      "reason": "co-occurrence: peace mentions political (mass 11)"
+    },
+    {
+      "orphan": "pond",
+      "target": "aquaculture",
+      "reason": "co-occurrence: aquaculture mentions pond (mass 9)"
+    },
+    {
+      "orphan": "pos",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions pos (mass 168)"
+    },
+    {
+      "orphan": "positive",
+      "target": "zeropoint",
+      "reason": "co-occurrence: zeropoint mentions positive (mass 64)"
+    },
+    {
+      "orphan": "analytics",
+      "target": "manufacturing",
+      "reason": "co-occurrence: manufacturing mentions analytics (mass 34)"
+    },
+    {
+      "orphan": "posted",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions posted (mass 361)"
+    },
+    {
+      "orphan": "practices",
+      "target": "optimize",
+      "reason": "co-occurrence: optimize mentions practices (mass 12)"
+    },
+    {
+      "orphan": "predecessor",
+      "target": "coordinate",
+      "reason": "co-occurrence: coordinate mentions predecessor (mass 26)"
+    },
+    {
+      "orphan": "prep",
+      "target": "items",
+      "reason": "co-occurrence: items mentions prep (mass 32)"
+    },
+    {
+      "orphan": "preparation",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions preparation (mass 206)"
+    },
+    {
+      "orphan": "processor",
+      "target": "activities",
+      "reason": "co-occurrence: activities mentions processor (mass 14)"
+    },
+    {
+      "orphan": "producer",
+      "target": "provider",
+      "reason": "co-occurrence: provider mentions producer (mass 1)"
+    },
+    {
+      "orphan": "produces",
+      "target": "standard",
+      "reason": "co-occurrence: standard mentions produces (mass 189)"
+    },
+    {
+      "orphan": "project",
+      "target": "matter",
+      "reason": "co-occurrence: matter mentions project (mass 25)"
+    },
+    {
+      "orphan": "promise",
+      "target": "position",
+      "reason": "co-occurrence: position mentions promise (mass 3)"
+    },
+    {
+      "orphan": "pwa",
+      "target": "chat",
+      "reason": "co-occurrence: chat mentions pwa (mass 27)"
+    },
+    {
+      "orphan": "qualifications",
+      "target": "education",
+      "reason": "co-occurrence: education mentions qualifications (mass 13)"
+    },
+    {
+      "orphan": "qualitative",
+      "target": "equal",
+      "reason": "co-occurrence: equal mentions qualitative (mass 3)"
+    },
+    {
+      "orphan": "quantitative",
+      "target": "metric",
+      "reason": "co-occurrence: metric mentions quantitative (mass 9)"
+    },
+    {
+      "orphan": "query",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions query (mass 1125)"
+    },
+    {
+      "orphan": "quotation",
+      "target": "transaction",
+      "reason": "co-occurrence: transaction mentions quotation (mass 64)"
+    },
+    {
+      "orphan": "quote",
+      "target": "commerce",
+      "reason": "co-occurrence: commerce mentions quote (mass 39)"
+    },
+    {
+      "orphan": "react",
+      "target": "media",
+      "reason": "co-occurrence: media mentions react (mass 24)"
+    },
+    {
+      "orphan": "read",
+      "target": "sti",
+      "reason": "co-occurrence: sti mentions read (mass 1076)"
+    },
+    {
+      "orphan": "reason",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions reason (mass 361)"
+    },
+    {
+      "orphan": "receive",
+      "target": "hooks",
+      "reason": "co-occurrence: hooks mentions receive (mass 116)"
+    },
+    {
+      "orphan": "received",
+      "target": "event",
+      "reason": "co-occurrence: event mentions received (mass 49)"
+    },
+    {
+      "orphan": "recognized",
+      "target": "harvest",
+      "reason": "co-occurrence: harvest mentions recognized (mass 61)"
+    },
+    {
+      "orphan": "recorded",
+      "target": "planting",
+      "reason": "co-occurrence: planting mentions recorded (mass 31)"
+    },
+    {
+      "orphan": "referee",
+      "target": "zeropoint",
+      "reason": "co-occurrence: zeropoint mentions referee (mass 64)"
+    },
+    {
+      "orphan": "reject",
+      "target": "harden",
+      "reason": "co-occurrence: harden mentions reject (mass 11)"
+    },
+    {
+      "orphan": "released",
+      "target": "proof",
+      "reason": "co-occurrence: proof mentions released (mass 170)"
+    },
+    {
+      "orphan": "rent",
+      "target": "offer",
+      "reason": "co-occurrence: offer mentions rent (mass 13)"
+    },
+    {
+      "orphan": "repeals",
+      "target": "legislation",
+      "reason": "co-occurrence: legislation mentions repeals (mass 22)"
+    },
+    {
+      "orphan": "replace",
+      "target": "manufacturing",
+      "reason": "co-occurrence: manufacturing mentions replace (mass 34)"
+    },
+    {
+      "orphan": "representation",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions representation (mass 1334)"
+    },
+    {
+      "orphan": "reserve",
+      "target": "eliminations",
+      "reason": "co-occurrence: eliminations mentions reserve (mass 1)"
+    },
+    {
+      "orphan": "reserved",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions reserved (mass 168)"
+    },
+    {
+      "orphan": "reservoir",
+      "target": "soil",
+      "reason": "co-occurrence: soil mentions reservoir (mass 43)"
+    },
+    {
+      "orphan": "responsible",
+      "target": "aquaculture",
+      "reason": "co-occurrence: aquaculture mentions responsible (mass 9)"
+    },
+    {
+      "orphan": "rest",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions rest (mass 1125)"
+    },
+    {
+      "orphan": "risks",
+      "target": "agriculture",
+      "reason": "co-occurrence: agriculture mentions risks (mass 73)"
+    },
+    {
+      "orphan": "rooms",
+      "target": "resources",
+      "reason": "co-occurrence: resources mentions rooms (mass 3)"
+    },
+    {
+      "orphan": "dev",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions dev (mass 1125)"
+    },
+    {
+      "orphan": "sale",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions sale (mass 206)"
+    },
+    {
+      "orphan": "same",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions same (mass 1334)"
+    },
+    {
+      "orphan": "scheduled",
+      "target": "versions",
+      "reason": "co-occurrence: versions mentions scheduled (mass 33)"
+    },
+    {
+      "orphan": "scope",
+      "target": "sti",
+      "reason": "co-occurrence: sti mentions scope (mass 1076)"
+    },
+    {
+      "orphan": "screenshot",
+      "target": "bindings",
+      "reason": "co-occurrence: bindings mentions screenshot (mass 14)"
+    },
+    {
+      "orphan": "sculpture",
+      "target": "artform",
+      "reason": "co-occurrence: artform mentions sculpture (mass 0)"
+    },
+    {
+      "orphan": "seek",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions seek (mass 168)"
+    },
+    {
+      "orphan": "seeks",
+      "target": "element",
+      "reason": "co-occurrence: element mentions seeks (mass 12)"
+    },
+    {
+      "orphan": "sell",
+      "target": "harvest",
+      "reason": "co-occurrence: harvest mentions sell (mass 61)"
+    },
+    {
+      "orphan": "seller",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions seller (mass 1125)"
+    },
+    {
+      "orphan": "send",
+      "target": "uuid",
+      "reason": "co-occurrence: uuid mentions send (mass 74)"
+    },
+    {
+      "orphan": "sender",
+      "target": "commerce",
+      "reason": "co-occurrence: commerce mentions sender (mass 39)"
+    },
+    {
+      "orphan": "sent",
+      "target": "give",
+      "reason": "co-occurrence: give mentions sent (mass 57)"
+    },
+    {
+      "orphan": "serial",
+      "target": "packages",
+      "reason": "co-occurrence: packages mentions serial (mass 1)"
+    },
+    {
+      "orphan": "services",
+      "target": "merge",
+      "reason": "co-occurrence: merge mentions services (mass 1334)"
+    },
+    {
+      "orphan": "sha",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions sha (mass 361)"
+    },
+    {
+      "orphan": "sibling",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions sibling (mass 168)"
+    },
+    {
+      "orphan": "siblings",
+      "target": "dimension",
+      "reason": "co-occurrence: dimension mentions siblings (mass 32)"
+    },
+    {
+      "orphan": "similar",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions similar (mass 168)"
+    },
+    {
+      "orphan": "sku",
+      "target": "crop",
+      "reason": "co-occurrence: crop mentions sku (mass 68)"
+    },
+    {
+      "orphan": "slogan",
+      "target": "zeropoint",
+      "reason": "co-occurrence: zeropoint mentions slogan (mass 64)"
+    },
+    {
+      "orphan": "speed",
+      "target": "uuid",
+      "reason": "co-occurrence: uuid mentions speed (mass 74)"
+    },
+    {
+      "orphan": "sponsor",
+      "target": "grant",
+      "reason": "co-occurrence: grant mentions sponsor (mass 1)"
+    },
+    {
+      "orphan": "sport",
+      "target": "decompression",
+      "reason": "co-occurrence: decompression mentions sport (mass 24)"
+    },
+    {
+      "orphan": "state",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions state (mass 1125)"
+    },
+    {
+      "orphan": "statement",
+      "target": "accounting",
+      "reason": "co-occurrence: accounting mentions statement (mass 206)"
+    },
+    {
+      "orphan": "steps",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions steps (mass 1125)"
+    },
+    {
+      "orphan": "storage",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions storage (mass 361)"
+    },
+    {
+      "orphan": "stream",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions stream (mass 361)"
+    },
+    {
+      "orphan": "structured",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions structured (mass 361)"
+    },
+    {
+      "orphan": "subscribe",
+      "target": "notification",
+      "reason": "co-occurrence: notification mentions subscribe (mass 0)"
+    },
+    {
+      "orphan": "successor",
+      "target": "code",
+      "reason": "co-occurrence: code mentions successor (mass 32)"
+    },
+    {
+      "orphan": "super",
+      "target": "access",
+      "reason": "co-occurrence: access mentions super (mass 103)"
+    },
+    {
+      "orphan": "superseded",
+      "target": "standard",
+      "reason": "co-occurrence: standard mentions superseded (mass 189)"
+    },
+    {
+      "orphan": "support",
+      "target": "plugins",
+      "reason": "co-occurrence: plugins mentions support (mass 40)"
+    },
+    {
+      "orphan": "table",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions table (mass 1125)"
+    },
+    {
+      "orphan": "tag",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions tag (mass 1125)"
+    },
+    {
+      "orphan": "codes",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions codes (mass 361)"
+    },
+    {
+      "orphan": "teaches",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions teaches (mass 168)"
+    },
+    {
+      "orphan": "thesis",
+      "target": "science",
+      "reason": "co-occurrence: science mentions thesis (mass 7)"
+    },
+    {
+      "orphan": "thing",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions thing (mass 1125)"
+    },
+    {
+      "orphan": "tie",
+      "target": "sequence",
+      "reason": "co-occurrence: sequence mentions tie (mass 168)"
+    },
+    {
+      "orphan": "tiers",
+      "target": "code",
+      "reason": "co-occurrence: code mentions tiers (mass 32)"
+    },
+    {
+      "orphan": "timestamp",
+      "target": "uuid",
+      "reason": "co-occurrence: uuid mentions timestamp (mass 74)"
+    },
+    {
+      "orphan": "track",
+      "target": "measure",
+      "reason": "co-occurrence: measure mentions track (mass 65)"
+    },
+    {
+      "orphan": "trade",
+      "target": "measure",
+      "reason": "co-occurrence: measure mentions trade (mass 65)"
+    },
+    {
+      "orphan": "transcript",
+      "target": "akashic",
+      "reason": "co-occurrence: akashic mentions transcript (mass 93)"
+    },
+    {
+      "orphan": "trial",
+      "target": "balance",
+      "reason": "co-occurrence: balance mentions trial (mass 138)"
+    },
+    {
+      "orphan": "under",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions under (mass 1125)"
+    },
+    {
+      "orphan": "utilities",
+      "target": "trinity",
+      "reason": "co-occurrence: trinity mentions utilities (mass 39)"
+    },
+    {
+      "orphan": "vat",
+      "target": "rate",
+      "reason": "co-occurrence: rate mentions vat (mass 54)"
+    },
+    {
+      "orphan": "vein",
+      "target": "drains",
+      "reason": "co-occurrence: drains mentions vein (mass 0)"
+    },
+    {
+      "orphan": "vendor",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions vendor (mass 361)"
+    },
+    {
+      "orphan": "view",
+      "target": "config",
+      "reason": "co-occurrence: config mentions view (mass 58)"
+    },
+    {
+      "orphan": "vote",
+      "target": "legislation",
+      "reason": "co-occurrence: legislation mentions vote (mass 22)"
+    },
+    {
+      "orphan": "want",
+      "target": "access",
+      "reason": "co-occurrence: access mentions want (mass 103)"
+    },
+    {
+      "orphan": "watch",
+      "target": "fields",
+      "reason": "co-occurrence: fields mentions watch (mass 121)"
+    },
+    {
+      "orphan": "waterfall",
+      "target": "analytics",
+      "reason": "co-occurrence: analytics mentions waterfall (mass 0)"
+    },
+    {
+      "orphan": "website",
+      "target": "collapse",
+      "reason": "co-occurrence: collapse mentions website (mass 1125)"
+    },
+    {
+      "orphan": "width",
+      "target": "cost",
+      "reason": "co-occurrence: cost mentions width (mass 82)"
+    },
+    {
+      "orphan": "win",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions win (mass 361)"
+    },
+    {
+      "orphan": "winner",
+      "target": "angel",
+      "reason": "co-occurrence: angel mentions winner (mass 29)"
+    },
+    {
+      "orphan": "works",
+      "target": "akashic",
+      "reason": "co-occurrence: akashic mentions works (mass 93)"
+    },
+    {
+      "orphan": "write",
+      "target": "identity",
+      "reason": "co-occurrence: identity mentions write (mass 361)"
+    },
+    {
+      "orphan": "xpath",
+      "target": "speakable",
+      "reason": "co-occurrence: speakable mentions xpath (mass 1)"
+    },
+    {
+      "orphan": "yearly",
+      "target": "plans",
+      "reason": "co-occurrence: plans mentions yearly (mass 2)"
+    }
+  ]
+}
