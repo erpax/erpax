@@ -703,7 +703,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Systems & software quality models",
     "uuid": "3c2f1991-7fa2-8419-9109-b0150b5780ab",
     "color": "hsl(287 80% 39%)",
-    "count": 94,
+    "count": 97,
     "modules": [
       {
         "path": "src/agent/blocks.ts",
@@ -809,10 +809,22 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Software testing",
     "uuid": "e69bd662-b3ef-8ba7-ac6c-ff5c05fd3db2",
     "color": "hsl(355 59% 40%)",
-    "count": 27,
+    "count": 36,
     "modules": [
       {
         "path": "src/agents/mcp/self-test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/collections/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/config/test.ts",
         "section": ""
       },
       {
@@ -830,6 +842,22 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/internal/controls/audit/findings/court-docket.ts",
         "section": "§1"
+      },
+      {
+        "path": "src/money/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/packitems/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/packs/test.ts",
+        "section": ""
+      },
+      {
+        "path": "src/scope/test.ts",
+        "section": ""
       },
       {
         "path": "src/skill/router/skills.index.ts",
@@ -873,6 +901,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/testing/test-setup/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/workorders/test.ts",
         "section": ""
       }
     ]
@@ -1615,7 +1647,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Currency codes",
     "uuid": "2aa02578-47b5-80bf-ad53-a36e04aaccfb",
     "color": "hsl(112 57% 38%)",
-    "count": 200,
+    "count": 202,
     "modules": [
       {
         "path": "src/accounting/fields-money-fix.ts",
@@ -1698,6 +1730,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": ""
       },
       {
+        "path": "src/billing/test.ts",
+        "section": ""
+      },
+      {
         "path": "src/biological/assets/index.ts",
         "section": ""
       },
@@ -1707,10 +1743,6 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/bookable/resources/index.ts",
-        "section": ""
-      },
-      {
-        "path": "src/budget/plannings/index.ts",
         "section": ""
       }
     ]
@@ -1933,7 +1965,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Auditing management systems",
     "uuid": "85eb43b8-8305-8b77-948c-93e96eba62e4",
     "color": "hsl(83 87% 54%)",
-    "count": 52,
+    "count": 54,
     "modules": [
       {
         "path": "src/agent/memory-writer.ts",
@@ -3496,7 +3528,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Attribute-Based Access Control",
     "uuid": "6610734e-3592-8047-9ea5-ce820cc75918",
     "color": "hsl(208 65% 44%)",
-    "count": 9,
+    "count": 10,
     "modules": [
       {
         "path": "src/agents/mcp/tool/_guards.ts",
@@ -3521,6 +3553,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/sandbox/index.ts",
         "section": ""
+      },
+      {
+        "path": "src/security/remote/access/index.ts",
+        "section": "§5.1"
       },
       {
         "path": "src/shares/index.ts",
@@ -4214,7 +4250,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Floating-point arithmetic",
     "uuid": "e650ec1d-f5b4-816d-ab68-180601cc2415",
     "color": "hsl(280 81% 43%)",
-    "count": 8,
+    "count": 9,
     "modules": [
       {
         "path": "src/accounting/fields-money-fix.ts",
@@ -4226,6 +4262,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       },
       {
         "path": "src/lease.service/index.ts",
+        "section": ""
+      },
+      {
+        "path": "src/money/test.ts",
         "section": ""
       },
       {
@@ -4535,7 +4575,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Language tags",
     "uuid": "766b2cca-d72d-8f02-86bb-6cb2c79717ce",
     "color": "hsl(75 64% 48%)",
-    "count": 67,
+    "count": 70,
     "modules": [
       {
         "path": "src/agents/mcp/i18n.ts",
@@ -4641,7 +4681,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (revised — content/event uuid)",
     "uuid": "01855583-c244-8103-b379-0ad77888d2c4",
     "color": "hsl(29 70% 49%)",
-    "count": 57,
+    "count": 65,
     "modules": [
       {
         "path": "src/agent/index.ts",
@@ -4720,24 +4760,24 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
         "section": "§5.8"
       },
       {
+        "path": "src/digit/SKILL.md",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/digit/index.ts",
+        "section": "§5.8"
+      },
+      {
+        "path": "src/drone/index.ts",
+        "section": "§5.8"
+      },
+      {
         "path": "src/emit/domain/event/index.ts",
         "section": ""
       },
       {
         "path": "src/event/emitter.service/index.ts",
         "section": ""
-      },
-      {
-        "path": "src/google/workspace/fusion-transforms.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/google/workspace/fusion.ts",
-        "section": "§5.8"
-      },
-      {
-        "path": "src/identification/index.ts",
-        "section": "§5.8"
       }
     ]
   },
@@ -4841,7 +4881,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "UUID (original)",
     "uuid": "74e8ac88-dda1-867d-bd72-f5865f098f74",
     "color": "hsl(48 87% 54%)",
-    "count": 9,
+    "count": 10,
     "modules": [
       {
         "path": "src/agent/sync/index.ts",
@@ -4866,6 +4906,10 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
       {
         "path": "src/skill/router/skills.index.ts",
         "section": "§302/404/906"
+      },
+      {
+        "path": "src/tag/setTagList.ts",
+        "section": "§4.3"
       },
       {
         "path": "src/tags/index.ts",
@@ -5683,102 +5727,102 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Linked-data type vocabulary",
     "uuid": "9cff4f7f-f5d5-8924-99c4-0d564a3735fb",
     "color": "hsl(231 64% 45%)",
-    "count": 63,
+    "count": 1600,
     "modules": [
       {
-        "path": "src/agents/mcp/presentation.ts",
+        "path": "src/about/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/[slug]/page.tsx",
+        "path": "src/abridged/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/not-found.tsx",
+        "path": "src/abstract/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/page.tsx",
+        "path": "src/acceleration/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/posts/[slug]/page.tsx",
+        "path": "src/accept/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/posts/page.tsx",
+        "path": "src/acceptance/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/posts/page/[pageNumber]/page.tsx",
+        "path": "src/accepted/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/products/[slug]/page.tsx",
+        "path": "src/accepting/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/products/page.tsx",
+        "path": "src/accepts/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/[locale]/search/page.tsx",
+        "path": "src/accessible/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/layout.tsx",
+        "path": "src/accessory/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/not-found.tsx",
+        "path": "src/accommodation/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/tenant-domains/[tenant]/[...slug]/page.tsx",
+        "path": "src/accountable/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/app/(frontend)/tenant-slugs/[tenant]/[...slug]/page.tsx",
+        "path": "src/achieve/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/architecture/invariant/checks.ts",
+        "path": "src/acquire/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/blocks/archive/block/config.ts",
+        "path": "src/acquired/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/blocks/call/to/action/config.ts",
+        "path": "src/acriss/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/blocks/code/config.ts",
+        "path": "src/action/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/blocks/content/config.ts",
+        "path": "src/actionable/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/blocks/media/block/config.ts",
+        "path": "src/activate/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/card/index.tsx",
+        "path": "src/activity/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/categories/index.ts",
+        "path": "src/actor/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/collection/archive/index.tsx",
+        "path": "src/actors/SKILL.md",
         "section": ""
       },
       {
-        "path": "src/default/lexical/index.ts",
+        "path": "src/ad/SKILL.md",
         "section": ""
       }
     ]
@@ -6319,7 +6363,7 @@ export const STANDARDS_CATALOGUE: ReadonlyArray<CatalogueEntry> = [
     "title": "Accessible Rich Internet Applications",
     "uuid": "a46dba6c-64b6-81af-b328-04d4369fa69b",
     "color": "hsl(333 66% 50%)",
-    "count": 51,
+    "count": 52,
     "modules": [
       {
         "path": "src/admin/bar/index.tsx",
