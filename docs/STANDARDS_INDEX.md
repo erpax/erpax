@@ -752,6 +752,9 @@ src/connections/index.ts:23: * @standard Peppol BIS billing-and-procurement (B2B
 src/connections/index.ts:24: * @standard ISO 20022 financial-business-party-relationships
 src/connections/index.ts:25: * @standard RFC-4122 §4.3 content-uuid edge-identity
 src/consent/records/index.ts:8: * @standard ISO-8601-1:2019 date-time given-at withdrawn-at
+src/conservation/index.ts:12: * @standard Noether's theorem (E. Noether, 1918) — continuous symmetry ⇔ conserved quantity
+src/conservation/index.ts:13: * @standard First Law of Thermodynamics — energy is conserved in an isolated system
+src/conservation/index.ts:14: * @standard Double-entry bookkeeping (Pacioli, 1494) — Σdebit = Σcredit
 src/consistency/apply/consistency-loop.test.ts:19: * @standard ISO/IEC 25010:2023 §5.5 testability — round-trip the agent loop
 src/consistency/apply/index.ts:21: * @standard ISO/IEC 25010:2023 §5.7 modifiability — single deterministic path
 src/consistency/apply/index.ts:355: * @standard ISO/IEC-29119:2022 software-testing system-test-level
@@ -939,6 +942,10 @@ src/dashboard/index.tsx:16: * @standard ECMA-262 ECMAScript-2024 baseline
 src/dashboard/index.tsx:17: * @standard ISO-4217:2015 currency-codes monetary-display
 src/data/processing/activities/index.ts:8: * @standard ISO-8601-1:2019 date-time review-due-at
 src/data/subject/requests/index.ts:8: * @standard ISO-8601-1:2019 date-time submitted-at completed-at
+src/decentralization/index.ts:12: * @standard Nakamoto coefficient (Srinivasan & Lee, 2017)
+src/decentralization/index.ts:13: * @standard Herfindahl–Hirschman Index (HHI)
+src/decentralization/index.ts:14: * @standard Gini coefficient
+src/decentralization/index.ts:15: * @standard Barabási–Albert preferential attachment (1999) — why flat networks re-centralize
 src/decompression/index.ts:44: * @standard Haldane half-time model (idealised compartments double 5·10·20·40)
 src/decompression/index.ts:45: * @standard Bühlmann ZH-L16 — 16 compartments, gradient-factor / M-value theory
 src/decompression/index.ts:46: * @standard SFIA 8 responsibility-levels (1..7) — the M-value depth axis
@@ -956,6 +963,9 @@ src/digit/index.ts:19: * @standard RFC 9562 §5.8 content-uuid + the horo digita
 src/dimension/index.ts:27: * @standard W3C Web Components composition pattern
 src/dimension/index.ts:28: * @standard ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries
 src/discriminator/index.ts:12: * @standard ECMA-262 ECMAScript-2024 baseline
+src/diversity/index.ts:11: * @standard Shannon (1948) A Mathematical Theory of Communication — information entropy
+src/diversity/index.ts:12: * @standard Simpson (1949) Measurement of Diversity — Nature 163:688
+src/diversity/index.ts:13: * @standard Pielou (1966) The Measurement of Diversity in Different Types of Biological Collections
 src/drone/index.ts:13: * @standard RFC 9562 §5.8 content-uuid (the nodes a drone flies)
 src/ecommerce/access/adminOnlyFieldAccess.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/ecommerce/access/customerOnlyFieldAccess.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -975,6 +985,9 @@ src/ecommerce/stripe/tenantAwareInitiatePayment.ts:8: * @standard ISO-4217:2015 
 src/ecommerce/stripe/tenantConfirmOrder.ts:8: * @standard ISO-4217:2015 currency-codes
 src/ecommerce/stripe/tenantConfirmOrder.ts:9: * @standard ISO-8601-1:2019 date-time confirmed-at
 src/ecommerce/stripe/tenantStripeWebhook.ts:9: * @standard HMAC-SHA256 RFC 2104 signature-scheme
+src/ecosystem/index.ts:14: * @standard Tansley (1935) — coined "ecosystem": organisms plus environment as one system
+src/ecosystem/index.ts:15: * @standard Lindeman, The Trophic-Dynamic Aspect of Ecology (1942) — ~10% energy per level
+src/ecosystem/index.ts:16: * @standard Elton (1958) vs May, Will a Large Complex System be Stable? (1972) — diversity–stability debate
 src/edifact/export.service/index.test.ts:7: * @standard ISO/IEC-29119:2022 software-testing
 src/edifact/export.service/index.test.ts:8: * @standard UN-EDIFACT D.96A
 src/edifact/export.service/index.test.ts:9: * @standard ISO-9735:2002 edifact-syntax-rules
@@ -2482,6 +2495,10 @@ src/subscription/plans/subscriptions/index.ts:14: * @standard ISO-8601-1:2019 da
 src/subscription/plans/subscriptions/usage/records/index.ts:15: * @standard ISO-4217:2015 currency-codes
 src/subscription/plans/subscriptions/usage/records/index.ts:16: * @standard ISO-8601-1:2019 date-time event-time billing-period
 src/subscription/plans/subscriptions/usage/records/index.ts:17: * @standard rfc-9562 uuid event-id
+src/sustainability/index.ts:14: * @standard Verhulst logistic growth (1838) — carrying capacity K; dN/dt = r·N·(1 − N/K)
+src/sustainability/index.ts:15: * @standard Prigogine dissipative structures (Nobel Chemistry, 1977) — order by dissipation
+src/sustainability/index.ts:16: * @standard Brundtland Report, Our Common Future (1987) — canonical sustainability definition
+src/sustainability/index.ts:17: * @standard Second Law of Thermodynamics — local order requires entropy export
 src/svg/hero/generator/index.ts:17: * @standard W3C SVG-1.1 scalable-vector-graphics
 src/svg/hero/generator/index.ts:18: * @standard ISO/IEC-29500 office-open-xml media-embedding-target
 src/tag/field.ts:20: * @standard ISO-25964-1:2011 controlled-vocabulary
@@ -5375,6 +5392,7 @@ src/config/iso-4217-special/index.ts:63: * @audit Conservation Law 53 self-refer
 src/config/test.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 src/connections/index.ts:27: * @audit ISO-19011:2018 audit-trail transparent-relationship-ledger
 src/consent/records/index.ts:13: * @audit ISO-19011:2018 audit-trail consent-evidence
+src/conservation/index.ts:15: * @audit computed, never hand-asserted
 src/consistency/apply/consistency-loop.test.ts:20: * @audit ISO 19011:2018 §6.4.6 — synthetic drift + recovery audit-trailable
 src/consistency/apply/index.ts:20: * @audit ISO 19011:2018 §6.4.6 — applied-by-mcp transformations audited
 src/consistency/apply/index.ts:356: * @audit ISO-19011:2018 audit-trail visual-evidence ux-gap-finding
@@ -5432,16 +5450,19 @@ src/customers/sales/orders/shipments/index.ts:7: * @audit ISO-19011:2018 audit-t
 src/customers/sales/orders/shipments/tracking/events/index.ts:15: * @audit ISO-19011:2018 audit-trail shipment-tracking
 src/data/processing/activities/index.ts:13: * @audit ISO-19011:2018 audit-trail ropa-evidence
 src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-evidence
+src/decentralization/index.ts:16: * @audit computed, never hand-asserted
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
 src/depreciation.service/index.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/digit/index.ts:20: * @audit the digit address is computed from the live matrix, never hand-maintained
 src/dimension/index.ts:29: * @audit ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)
+src/diversity/index.ts:14: * @audit computed, never hand-asserted
 src/drone/index.ts:14: * @audit ISO 19011:2018 §6.4 reconnaissance is read-only evidence-gathering
 src/dry/index.ts:11: * @audit the dry-clean is computed from the tree, never a hand-run script
 src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/ecommerce/productValidation/index.ts:8: * @audit ISO-19011:2018 audit-trail
 src/ecommerce/stripe/tenantConfirmOrder.ts:14: * @audit ISO-19011:2018 audit-trail
 src/ecommerce/stripe/tenantStripeWebhook.ts:13: * @audit ISO-19011:2018 audit-trail
+src/ecosystem/index.ts:17: * @audit computed, never hand-asserted
 src/edifact/export.service/index.test.ts:10: * @audit ISO-19011:2018 audit-trail
 src/edifact/export.service/index.ts:18: * @audit ISO-19011:2018 audit-trail
 src/emit/domain/event/index.ts:16: * @audit ISO-19011:2018 audit-trail event-log
@@ -5826,6 +5847,7 @@ src/subscription/plans/hooks/index.ts:11: * @audit ISO-19011:2018 audit-trail
 src/subscription/plans/subscriptions/hooks/emitLifecycleEvents.ts:29: * @audit ISO-19011:2018 audit-trail subscription-lifecycle
 src/subscription/plans/subscriptions/hooks/index.ts:8: * @audit ISO-19011:2018 audit-trail collection-module-boundary
 src/subscription/plans/subscriptions/usage/records/index.ts:20: * @audit ISO-19011:2018 audit-trail usage-evidence
+src/sustainability/index.ts:18: * @audit computed, never hand-asserted
 src/svg/hero/generator/index.ts:20: * @audit ISO-19011:2018 audit-trail seed-media-provenance
 src/tags/index.ts:23: * @audit ISO-19011:2018 audit-trail label-changes
 src/tags/taggings/counter.ts:13: * @audit ISO-19011:2018 audit-trail denormalised-aggregate
