@@ -5,8 +5,8 @@
  *   tsx src/schema/test/index.ts --seed
  */
 export const SCHEMA_TEST_SEED = {
-  "atoms": 2101,
-  "matrixRoot": "43553069-734b-8716-ae55-8abd0bb022ae",
+  "atoms": 2103,
+  "matrixRoot": "b5e58918-9508-8b68-9750-9b737248e66e",
   "entropyTotal": 553,
   "byKind": {
     "uncrosslinked": 482,

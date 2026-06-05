@@ -952,6 +952,7 @@ src/did/index.ts:9: * @standard W3C DID Specification Registries
 src/dimension/index.ts:27: * @standard W3C Web Components composition pattern
 src/dimension/index.ts:28: * @standard ISO/IEC 25010:2023 §5.7 modularity — plugin boundaries
 src/discriminator/index.ts:12: * @standard ECMA-262 ECMAScript-2024 baseline
+src/drone/index.ts:13: * @standard RFC 9562 §5.8 content-uuid (the nodes a drone flies)
 src/ecommerce/access/adminOnlyFieldAccess.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/ecommerce/access/customerOnlyFieldAccess.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/ecommerce/access/isAdmin.ts:6: * @standard NIST INCITS-359-2012 role-based-access-control
@@ -5413,6 +5414,7 @@ src/data/subject/requests/index.ts:16: * @audit ISO-19011:2018 audit-trail dsr-e
 src/decompression/index.ts:47: * @audit ISO 19011 — pay-over-time is a deterministic, auditable curve (no discretion)
 src/depreciation.service/index.ts:27: * @audit ISO-19011:2018 audit-trail depreciation-evidence
 src/dimension/index.ts:29: * @audit ISO 19011:2018 §6.4.6 (every dimensional plugin audit-trailed)
+src/drone/index.ts:14: * @audit ISO 19011:2018 §6.4 reconnaissance is read-only evidence-gathering
 src/ecommerce/hooks/emitOrderLifecycleEvents.ts:26: * @audit ISO-19011:2018 audit-trail order-lifecycle
 src/ecommerce/productValidation/index.ts:8: * @audit ISO-19011:2018 audit-trail
 src/ecommerce/stripe/tenantConfirmOrder.ts:14: * @audit ISO-19011:2018 audit-trail

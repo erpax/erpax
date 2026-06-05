@@ -14,6 +14,9 @@ FORM: **war seeks to DESTROY, COERCE, or DOMINATE; the uuid model defeats each, 
 
 ∴ `warIsUseless(proof)` holds when all three legs hold, and then **building strictly dominates war** for every actor — human or machine, since [[education]] is the same for both (agent = human). The only positive-ROI strategy is create / earn / compete; this is the [[matrix]] turned to build, not consume. erpax **harmonises at all levels** so future generations of humans and machines live in peace and prosperity — because in this model, building is the only move that pays.
 
+## war ⊕ peace → harmony — the tactics kept, the purpose reversed
+peace is the GOAL; [[war]] is its dual — the archangel pole erpax INVERTS, keeping the tactics, reversing the purpose. The duality resolves to a [[trinity]] whose third is [[harmony]] (the aikido; [[angel]]: create·↓entropy ⊕ destroy·↑entropy, balanced). The methods of war turned to building: [[drone]]s fly the [[matrix]] in reconnaissance, [[team]]s maneuver in formation, the [[tamper]]-cost is defense-in-depth — all to build, never destroy. Both models must be fully encoded as atoms so the fusion is self-sufficient.
+
 ## ∞ is the theorem's teeth, on purpose
 Here the model EMBRACES infinity as meaningful, the one place it is not a bug. `roi` (`src/peace/index.ts` ~L62) returns `cost <= 0 ? (gain > 0 ? Infinity : 0) : gain/cost`: a zero-cost positive yield is UNBOUNDED ROI — exactly why building strictly dominates war (coercion's cost → ∞, building's gain stays finite-and-positive). That divide-by-zero is deliberate, and it is bounded into a boolean verdict (`buildingDominates`, L71–73 compares two `roi` values), never leaked as a raw number into a ledger. The guarded operational dual — where ∞/NaN must never enter an account — lives in [[utility]]; the source of "no naked zero" is [[zeropoint]].
 
