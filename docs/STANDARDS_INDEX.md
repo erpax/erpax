@@ -2268,6 +2268,8 @@ src/sandbox/index.ts:8: * @standard OWASP-ASVS V5 untrusted-input / least-privil
 src/scheduled/task/registry.ts:20: * @standard rfc-5545 icalendar (cron-style schedules)
 src/scheduled/task/registry.ts:21: * @standard ISO-8601-1:2019 date-time
 src/scheduled/task/types.ts:4: * @standard rfc-5545 icalendar-cron
+src/schema/test/index.ts:17: * @standard ISO/IEC 25010:2023 quality-model (integrity, modularity)
+src/schema/test/index.ts:18: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) — the collision unit
 src/scope/index.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/sdk/accounting-client/index.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/sectors/index.ts:14: * @standard UN SNA-2008 institutional-sectors (S.11/S.12 corporations · S.13 government · S.14 households · S.15 NPISH)
@@ -5714,6 +5716,7 @@ src/scheduled/task/index.ts:7: * @audit ISO-19011:2018 §6.4.6 audit-evidence-sc
 src/scheduled/task/registry.ts:22: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
 src/scheduled/task/runner.ts:15: * @audit ISO-19011:2018 §6.4.6 audit-evidence-scheduled-actions
 src/scheduled/task/types.ts:5: * @audit ISO-19011:2018 §6.4.6
+src/schema/test/index.ts:19: * @audit ISO 19011:2018 §6.5 (audit-evidence integrity)
 src/scope/collectionScopes.ts:8: * @audit ISO-19011:2018 audit-trail
 src/scope/constants.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
 src/scope/filters.ts:7: * @audit ISO-19011:2018 audit-trail draft-vs-published
