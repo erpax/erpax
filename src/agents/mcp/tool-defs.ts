@@ -219,10 +219,10 @@ import {
   planSelfResearch,
   securingGrant,
   secureFootprint,
+  identityBindings,
   type DiscoveredAccount,
   type SelfIdentity,
 } from '@/self/research'
-import { identityBindings } from '@/self/research/bindings'
 
 export interface ErpaxMcpTool {
   readonly name: string

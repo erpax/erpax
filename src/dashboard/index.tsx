@@ -7,6 +7,7 @@ import QuickActionsWidget from '@/widget/QuickActionsWidget';
 import AuditLogWidget from '@/widget/AuditLogWidget';
 
 import type { AccountLine, BalanceSheetData, IncomeStatementData, TrialBalanceData } from '@/analytics/types';
+import { singularOf } from '@/translate';
 
 /**
  * Accounting Dashboard — top-level renderer for trial balance, balance sheet,
@@ -222,3 +223,37 @@ export function formatCurrency(cents: number): string {
 }
 
 export default Dashboard;
+
+// ── each model's computed dashboard: its related links partitioned into collections (plural) + models (singular) ──
+
+/** A related-collection card: the collection slug (plural) + its model (singular). */
+export interface RelatedCollection {
+  readonly collection: string;
+  readonly model: string;
+}
+
+/** A model's computed dashboard — the related collections + models it links to. */
+export interface ModelDashboard {
+  readonly model: string;
+  readonly relatedCollections: readonly RelatedCollection[];
+  readonly relatedModels: readonly string[];
+}
+
+/**
+ * Compute a model's dashboard from its links: partition the outbound [[links]] into
+ * the registered COLLECTIONS (plural) — each paired with its model — and the
+ * MODELS/atoms (everything else). Self-links are dropped; order is preserved.
+ */
+export function modelDashboard(args: {
+  model: string;
+  links: readonly string[];
+  collectionSlugs: readonly string[];
+}): ModelDashboard {
+  const collections = new Set(args.collectionSlugs);
+  const related = [...new Set(args.links)].filter((l) => l !== args.model);
+  const relatedCollections = related
+    .filter((l) => collections.has(l))
+    .map((collection) => ({ collection, model: singularOf(collection) }));
+  const relatedModels = related.filter((l) => !collections.has(l));
+  return { model: args.model, relatedCollections, relatedModels };
+}

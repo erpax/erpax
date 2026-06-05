@@ -9,7 +9,7 @@
 import { describe, it, expect } from 'vitest'
 import type { CollectionConfig } from 'payload'
 import { verifyReceiptChain } from '@/receipt'
-import { computeIdentityBindings } from '@/self/research/bindings'
+import { computeIdentityBindings } from '@/self/research'
 import {
   planSelfResearch,
   isSelfScoped,

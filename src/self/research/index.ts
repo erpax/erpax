@@ -28,6 +28,7 @@
  */
 import { evaluate, type SandboxEvaluation, type ToolAction, type ToolGrant } from '@/sandbox'
 import type { Decision, Receipt } from '@/receipt'
+import type { CollectionConfig, Field } from 'payload'
 
 /** A computed MCP find-tool the caller can reach — one per ACCESSIBLE collection (from the registry, not hardcoded). */
 export interface FindTool {
@@ -189,4 +190,71 @@ export function secureFootprint(args: {
     head = evaluation.receipt
   }
   return { secured, refused, receipts, decisions }
+}
+
+// ── the computed identity-binding registry (which collections bind the caller's identity) ──
+
+/** The actor/users auth collection — the identity root (an email field + the id others relate to). */
+export const AUTH_SLUG = 'users'
+
+/**
+ * Named fields reachable at the collection's TOP level — descending only through the
+ * presentational containers (row / collapsible / unnamed-tabs) that add NO `where`-path
+ * segment. Named groups / arrays / blocks / tabs are NOT descended (their fields live
+ * under a path prefix, so a flat `{ field: { equals } }` filter would not address them).
+ */
+function topLevelNamedFields(fields: readonly Field[]): Field[] {
+  const out: Field[] = []
+  for (const f of fields) {
+    if (f.type === 'row' || f.type === 'collapsible') {
+      out.push(...topLevelNamedFields(f.fields))
+    } else if (f.type === 'tabs') {
+      for (const tab of f.tabs) {
+        if ('name' in tab) continue // a named tab adds a path segment
+        out.push(...topLevelNamedFields(tab.fields))
+      }
+    } else if ('name' in f && typeof f.name === 'string') {
+      out.push(f)
+    }
+  }
+  return out
+}
+
+/** The identity-bindings a single collection declares (an email field, or a relationship to `users`). */
+function bindingsOf(collection: CollectionConfig): IdentityBinding[] {
+  const out: IdentityBinding[] = []
+  // auth collections always carry an injected `email` — not always present in the raw config.fields
+  if (collection.auth) out.push({ collectionSlug: collection.slug, field: 'email', match: 'email' })
+  for (const f of topLevelNamedFields(collection.fields)) {
+    if (f.type === 'email') {
+      out.push({ collectionSlug: collection.slug, field: f.name, match: 'email' })
+    } else if (f.type === 'relationship') {
+      const rel = Array.isArray(f.relationTo) ? f.relationTo : [f.relationTo]
+      if (rel.includes(AUTH_SLUG)) out.push({ collectionSlug: collection.slug, field: f.name, match: 'user' })
+    }
+  }
+  // dedupe (slug+field+match) — the auth special-case can coincide with a declared email field
+  const seen = new Set<string>()
+  return out.filter((b) => {
+    const k = `${b.collectionSlug} ${b.field} ${b.match}`
+    if (seen.has(k)) return false
+    seen.add(k)
+    return true
+  })
+}
+
+/** Compute the identity-binding registry from a collections config — derived from the schema, hardcoded nowhere. */
+export function computeIdentityBindings(collections: readonly CollectionConfig[]): IdentityBinding[] {
+  return collections.flatMap(bindingsOf)
+}
+
+let cachedBindings: IdentityBinding[] | null = null
+
+/** Memoized registry over the live collections barrel (`@/collections`) — computed once, on first call. */
+export async function identityBindings(): Promise<IdentityBinding[]> {
+  if (cachedBindings === null) {
+    const allCollections = await import('@/collections')
+    cachedBindings = computeIdentityBindings(Object.values(allCollections) as CollectionConfig[])
+  }
+  return cachedBindings
 }

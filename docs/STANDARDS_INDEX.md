@@ -490,37 +490,37 @@ src/beyond/agent-capability.ts:28: * @standard EU AI Act Art. 14 human-oversight
 src/beyond/ai-audit.ts:10: * @standard EU AI Act 2024/1689 Art. 13 + Annex IV (technical documentation)
 src/beyond/ai-audit.ts:11: * @standard ISO/IEC 23894:2023 AI risk management
 src/beyond/ai-audit.ts:12: * @standard NIST AI RMF 1.0 (2023)
-src/beyond/bitemporal.ts:6: * @standard SQL:2011 system-versioned + application-time tables
-src/beyond/bitemporal.ts:7: * @standard ISO/IEC 9075-2:2016 §4.15.10 temporal-tables
-src/beyond/carbon.ts:5: * @standard ESRS E1 climate-change-disclosures
-src/beyond/carbon.ts:6: * @standard EU CSRD 2022/2464 sustainability-reporting-directive
-src/beyond/carbon.ts:7: * @standard GHG Protocol Scope-2 location-based
-src/beyond/erasure.ts:28: * @standard ISO 27040 §6.3 cryptographic-erasure
-src/beyond/erasure.ts:29: * @standard NIST SP 800-88 Rev.1 media-sanitization (cryptographic erase)
-src/beyond/explainability.ts:10: * @standard XBRL inline-XBRL (machine-explainability of values)
-src/beyond/explainability.ts:11: * @standard ISO/IEC 23053 AI-systems-with-machine-learning (explainability)
-src/beyond/explainability.ts:9: * @standard EU AI Act 2024/1689 Art. 13 (transparency for high-risk)
+src/beyond/bitemporal/index.ts:6: * @standard SQL:2011 system-versioned + application-time tables
+src/beyond/bitemporal/index.ts:7: * @standard ISO/IEC 9075-2:2016 §4.15.10 temporal-tables
+src/beyond/carbon/index.ts:5: * @standard ESRS E1 climate-change-disclosures
+src/beyond/carbon/index.ts:6: * @standard EU CSRD 2022/2464 sustainability-reporting-directive
+src/beyond/carbon/index.ts:7: * @standard GHG Protocol Scope-2 location-based
+src/beyond/erasure/index.ts:28: * @standard ISO 27040 §6.3 cryptographic-erasure
+src/beyond/erasure/index.ts:29: * @standard NIST SP 800-88 Rev.1 media-sanitization (cryptographic erase)
+src/beyond/explainability/index.ts:10: * @standard XBRL inline-XBRL (machine-explainability of values)
+src/beyond/explainability/index.ts:11: * @standard ISO/IEC 23053 AI-systems-with-machine-learning (explainability)
+src/beyond/explainability/index.ts:9: * @standard EU AI Act 2024/1689 Art. 13 (transparency for high-risk)
 src/beyond/index.ts:18: * @standard W3C PROV + ESRS E1 + EU AI Act + NIST FIPS 203/204
-src/beyond/pqc.ts:10: * @standard NIST FIPS 203 ML-KEM (Module-Lattice Key Encapsulation)
-src/beyond/pqc.ts:11: * @standard NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)
-src/beyond/pqc.ts:12: * @standard NIST SP 800-208 stateful-hash-based-signatures
-src/beyond/provenance.ts:10: * @standard W3C PROV-DM (Provenance Data Model)
-src/beyond/provenance.ts:11: * @standard W3C PROV-O (PROV Ontology — RDF)
-src/beyond/replay.ts:13: * @standard ISRS 4400 agreed-upon-procedures (replay verification)
-src/beyond/replay.ts:14: * @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 reusability
-src/beyond/reversibility.ts:8: * @standard GDPR Art. 17 right-to-erasure
-src/beyond/reversibility.ts:9: * @standard ISO 19011:2018 §6.4.6 audit-evidence (reversal trail)
+src/beyond/pqc/index.ts:10: * @standard NIST FIPS 203 ML-KEM (Module-Lattice Key Encapsulation)
+src/beyond/pqc/index.ts:11: * @standard NIST FIPS 204 ML-DSA (Module-Lattice Digital Signature)
+src/beyond/pqc/index.ts:12: * @standard NIST SP 800-208 stateful-hash-based-signatures
+src/beyond/provenance/index.ts:10: * @standard W3C PROV-DM (Provenance Data Model)
+src/beyond/provenance/index.ts:11: * @standard W3C PROV-O (PROV Ontology — RDF)
+src/beyond/replay/index.ts:13: * @standard ISRS 4400 agreed-upon-procedures (replay verification)
+src/beyond/replay/index.ts:14: * @standard ISO/IEC 25010:2023 §5.5 testability + §5.7 reusability
+src/beyond/reversibility/index.ts:8: * @standard GDPR Art. 17 right-to-erasure
+src/beyond/reversibility/index.ts:9: * @standard ISO 19011:2018 §6.4.6 audit-evidence (reversal trail)
 src/beyond/tenant-isolation.ts:12: * @standard ISO/IEC 27001 A.5.34 privacy-protection
 src/beyond/tenant-isolation.ts:13: * @standard GDPR Art. 32 security-of-processing
 src/beyond/tenant-isolation.ts:14: * @standard ISO 19944 cloud-services data-flow + jurisdiction
-src/beyond/types.ts:10: * @standard ISRS 4400 agreed-upon-procedures (replay verification)
-src/beyond/types.ts:11: * @standard ESRS E1 (climate change disclosures — gCO2e per activity)
-src/beyond/types.ts:12: * @standard NIST SP 800-208 stateful-hash-based-signatures (PQC)
-src/beyond/types.ts:13: * @standard NIST FIPS 203 ML-KEM + FIPS 204 ML-DSA (PQC, 2024)
-src/beyond/types.ts:14: * @standard ISO 19944 cloud-services data-flow + jurisdiction
-src/beyond/types.ts:15: * @standard XBRL inline-XBRL (machine-explainability of financial values)
-src/beyond/types.ts:8: * @standard W3C PROV (Provenance Data Model)
-src/beyond/types.ts:9: * @standard EU AI Act 2024/1689 (Annex IV — technical documentation)
+src/beyond/types/index.ts:10: * @standard ISRS 4400 agreed-upon-procedures (replay verification)
+src/beyond/types/index.ts:11: * @standard ESRS E1 (climate change disclosures — gCO2e per activity)
+src/beyond/types/index.ts:12: * @standard NIST SP 800-208 stateful-hash-based-signatures (PQC)
+src/beyond/types/index.ts:13: * @standard NIST FIPS 203 ML-KEM + FIPS 204 ML-DSA (PQC, 2024)
+src/beyond/types/index.ts:14: * @standard ISO 19944 cloud-services data-flow + jurisdiction
+src/beyond/types/index.ts:15: * @standard XBRL inline-XBRL (machine-explainability of financial values)
+src/beyond/types/index.ts:8: * @standard W3C PROV (Provenance Data Model)
+src/beyond/types/index.ts:9: * @standard EU AI Act 2024/1689 (Annex IV — technical documentation)
 src/bg/identifier/index.ts:11: * @standard ЕГН regulation (Наредба РД-02-20-9/2012 on the population register)
 src/bg/identifier/index.ts:12: * @standard БУЛСТАТ register law (Закон за регистър БУЛСТАТ) — ЕИК checksum
 src/bg/identifier/index.ts:13: * @standard ISO-7064 check-character-systems (the modulo family these implement)
@@ -935,8 +935,8 @@ src/customers/sales/orders/shipments/index.ts:6: * @standard ISO-3166-1:2020 cou
 src/customers/sales/orders/shipments/tracking/events/index.ts:12: * @standard ISO-8601-1:2019 date-time event-time
 src/customers/sales/orders/shipments/tracking/events/index.ts:13: * @standard INCOTERMS 2020 control-transfer-points
 src/customers/sales/orders/shipments/tracking/events/index.ts:14: * @standard EDIFACT IFTSTA international-multimodal-status-message
-src/dashboard/index.tsx:15: * @standard ECMA-262 ECMAScript-2024 baseline
-src/dashboard/index.tsx:16: * @standard ISO-4217:2015 currency-codes monetary-display
+src/dashboard/index.tsx:16: * @standard ECMA-262 ECMAScript-2024 baseline
+src/dashboard/index.tsx:17: * @standard ISO-4217:2015 currency-codes monetary-display
 src/data/processing/activities/index.ts:8: * @standard ISO-8601-1:2019 date-time review-due-at
 src/data/subject/requests/index.ts:8: * @standard ISO-8601-1:2019 date-time submitted-at completed-at
 src/decompression/index.ts:44: * @standard Haldane half-time model (idealised compartments double 5·10·20·40)
@@ -2617,6 +2617,7 @@ src/translations/collect/index.ts:27: * @standard BCP-47 language tags · RFC 95
 src/translations/index.ts:38: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2)
 src/translations/index.ts:39: * @standard BCP-47 language tags
 src/translations/index.ts:40: * @standard EU 1958/1 official-languages-of-the-european-union
+src/trinity/index.ts:13: * @standard the file is architecture — the detail lives in the folder PATH, never the filename
 src/types/auth/index.ts:4: * @standard NIST INCITS-359-2012 role-based-access-control
 src/types/bank-reconciliation/index.ts:4: * @standard ISO-20022 camt.053 bank-to-customer-statement
 src/types/bank-reconciliation/index.ts:5: * @standard ISO-13616-1:2020 iban
@@ -3357,7 +3358,7 @@ src/bank/reconciliation.service/index.ts:485:   * @compliance SOX §404 internal
 src/bank/reconciliation.service/index.ts:651:   * @compliance SOX §404 internal-controls bank-reconciliation
 src/before/dashboard/index.tsx:7: * @compliance WCAG-2.1 §1.4.3 contrast-minimum
 src/before/login/index.tsx:8: * @compliance WCAG-2.1 §3.3.1 error-identification
-src/beyond/erasure.ts:30: * @compliance GDPR Art. 17 right-to-erasure (irrevocable via key destruction)
+src/beyond/erasure/index.ts:30: * @compliance GDPR Art. 17 right-to-erasure (irrevocable via key destruction)
 src/billing/stripeWebhookHandlers.test.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data tokenized
 src/billing/stripeWebhookHandlers.ts:23: * @compliance SOC-2 CC7.2 system-monitoring-event-logging
 src/billing/stripeWebhookHandlers.ts:434: * @compliance SOX §404 internal-controls refund-control
@@ -4075,7 +4076,7 @@ src/customers/sales/orders/returns/index.ts:6: * @accounting IFRS IAS-2 inventor
 src/customers/sales/orders/returns/index.ts:7: * @accounting US-GAAP ASC-606-10-32-10 variable-consideration
 src/customers/sales/orders/returns/index.ts:8: * @accounting US-GAAP ASC-330 inventory cost-flow
 src/customers/sales/orders/shipments/tracking/events/index.ts:16: * @accounting IFRS IFRS-15 §38 point-in-time-revenue-recognition
-src/dashboard/index.tsx:17: * @accounting IFRS IAS-1 presentation-of-financial-statements
+src/dashboard/index.tsx:18: * @accounting IFRS IAS-1 presentation-of-financial-statements
 src/depreciation.service/index.ts:23: * @accounting IFRS IAS-16 §62 depreciation-methods
 src/depreciation.service/index.ts:24: * @accounting IFRS IAS-36 impairment-of-assets
 src/depreciation.service/index.ts:25: * @accounting US-GAAP ASC-360-10-35 depreciation
@@ -5986,7 +5987,7 @@ src/analytics/KPIDashboard.tsx:13: * @quality ISO-25010 functional-suitability d
 src/analytics/TrendAnalysisCard.tsx:11: * @quality ISO-25010 functional-suitability historical-projection
 src/analytics/types.ts:18: * @quality ISO-25010 maintainability shared-vocabulary
 src/blocks/form/Component.tsx:22: * @quality ISO-25010 usability form-rendering
-src/dashboard/index.tsx:18: * @quality ISO-25010 usability dashboard-presentation
+src/dashboard/index.tsx:19: * @quality ISO-25010 usability dashboard-presentation
 src/discriminator/index.ts:13: * @quality ISO-25010 maintainability single-discriminator-vocabulary
 src/horo/index.ts:21: * @quality ISO-25010 maintainability bounded-stable-state-space
 src/navigation/index.tsx:7: * @quality ISO-25010 usability navigation
