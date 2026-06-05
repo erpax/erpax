@@ -2609,6 +2609,7 @@ src/train/index.ts:24: * @standard SFIA 8 responsibility-levels-1-7 (the held/re
 src/train/index.ts:25: * @standard ISO 30405:2016 essential-vs-optional (mandatory gates the surface)
 src/transaction/failures/index.ts:11: * @standard ISO-4217:2015 currency-codes
 src/transaction/failures/index.ts:12: * @standard ISO-8601-1:2019 date-time transaction-date
+src/translate/index.ts:20: * @standard W3C HTTP Content-Language (RFC 7231 §3.1.3.2) · BCP-47 language tags
 src/translation/index.ts:19: * @standard BCP-47 language tags
 src/translation/index.ts:20: * @standard RFC 9562 §5.8 content-uuid (the messaging-uuid)
 src/translation/index.ts:21: * @standard schema.org translationOfWork / workTranslation (collided to one word)
