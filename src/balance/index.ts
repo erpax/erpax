@@ -52,6 +52,24 @@ export const NON_PLURAL: ReadonlySet<string> = new Set([
   'offers', 'opens', 'overlaps', 'owns', 'plays', 'produces', 'provides', 'recognizes',
   'removes', 'repeals', 'represents', 'requires', 'seeks', 'serves', 'starts', 'supersedes',
   'teaches', 'touches', 'transposes', 'uses', 'varies', 'works',
+  // surfaced by the live audit: more relation-verbs, -ous adjectives, abbreviations,
+  // mass nouns, and Latin/other singulars that the -s rule false-flagged as plurals
+  'does', 'duns', 'electronics', 'encodes', 'expires', 'has', 'icfrs', 'increases',
+  'infectious', 'instantaneous', 'intersects', 'mens', 'naics', 'originates', 'plus',
+  'pos', 'previous', 'serious', 'smiles', 'sms', 'tennis', 'torus', 'trans', 'trellis',
+])
+
+/**
+ * Plural collections that legitimately have NO singular model — pluralia tantum
+ * (English nouns with no singular) and inherently-aggregate stores. Their model-
+ * lessness is the CORRECT state, so they count as BALANCED, never as a gap. This
+ * is an honest classification refinement, not metric-gaming: forcing a singular
+ * model for one of these would be the actual error.
+ */
+export const PLURAL_ONLY: ReadonlySet<string> = new Set([
+  'damages', 'proceeds', 'goods', 'premises', 'belongings', 'earnings', 'savings',
+  'minutes', 'lyrics', 'analytics', 'settings', 'credentials', 'vitals', 'odds',
+  'details', 'hours',
 ])
 
 /** A word is a plural COLLECTION form: ends in -s (not -ss), length > 2, not a known non-plural. */
@@ -64,6 +82,25 @@ export const singularize = (w: string): string => {
   if (/(ses|xes|zes|ches|shes)$/.test(w)) return w.slice(0, -2)
   if (w.endsWith('s')) return w.slice(0, -1)
   return w
+}
+
+/**
+ * All plausible singular MODEL forms of a plural — English plural→singular is
+ * AMBIGUOUS, so a plural is BALANCED when ANY candidate is a real atom. Without
+ * this, `leases` (singular `lease`, ends -se) gets -es stripped to `leas` and is
+ * wrongly flagged model-less. Candidates: -ies→-y, -ves→-f/-fe, sibilant -es→strip
+ * (box·es), and the plain -s strip (item·s, case·s, lease·s).
+ */
+export const candidateSingulars = (w: string): string[] => {
+  const c = new Set<string>()
+  if (w.endsWith('ies') && w.length > 4) c.add(w.slice(0, -3) + 'y') // categories→category
+  if (w.endsWith('ves') && w.length > 3) {
+    c.add(w.slice(0, -3) + 'f') // leaves→leaf
+    c.add(w.slice(0, -3) + 'fe') // knives→knife
+  }
+  if (/(ses|xes|zes|ches|shes)$/.test(w)) c.add(w.slice(0, -2)) // boxes→box, buses→bus
+  if (w.endsWith('s')) c.add(w.slice(0, -1)) // items→item, cases→case, leases→lease
+  return [...c]
 }
 
 export type Distribution = {
@@ -89,7 +126,7 @@ export const classify = (atoms: Iterable<string>): Distribution => {
   for (const a of set) {
     if (isPluralForm(a)) {
       collections++
-      if (set.has(singularize(a))) balanced++
+      if (PLURAL_ONLY.has(a) || candidateSingulars(a).some((s) => set.has(s))) balanced++
       else orphanCollections.push(a)
     } else {
       models++

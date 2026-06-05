@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import {
   isPluralForm,
   singularize,
+  candidateSingulars,
   classify,
   coverage,
   disbalance,
@@ -80,6 +81,36 @@ describe('balance: priced against the real tamper-cost law (coverageCostLog2)', 
     const worse = classify(['ant', 'ants', 'widgets', 'gadgets']) // 1/3 ⇒ cov 0.333
     expect(coverage(better)).toBeGreaterThan(coverage(worse))
     expect(tamperCostLog2(better)).toBeGreaterThan(tamperCostLog2(worse))
+  })
+})
+
+describe('balance: candidateSingulars resolves ambiguous plural→singular', () => {
+  it('offers every plausible singular so -se / -ves plurals can match their model', () => {
+    expect(candidateSingulars('leases')).toContain('lease') // not just "leas"
+    expect(candidateSingulars('boxes')).toContain('box')
+    expect(candidateSingulars('categories')).toContain('category')
+    expect(candidateSingulars('leaves')).toContain('leaf')
+  })
+
+  it('a -se plural is balanced when its true singular exists (no false orphan)', () => {
+    const d = classify(['lease', 'leases'])
+    expect(d.orphanCollections).toEqual([])
+    expect(coverage(d)).toBe(1)
+  })
+})
+
+describe('balance: honest reclassification (NON_PLURAL / PLURAL_ONLY)', () => {
+  it('pluralia tantum count as balanced — no singular model is the correct state', () => {
+    const d = classify(['damages', 'minutes', 'crop']) // no "damage"/"minute" model is a gap
+    expect(d.orphanCollections).toEqual([])
+    expect(coverage(d)).toBe(1)
+  })
+
+  it('NON_PLURAL excludes verbs, adjectives, abbreviations, and singulars from collections', () => {
+    expect(isPluralForm('does')).toBe(false) // verb
+    expect(isPluralForm('serious')).toBe(false) // adjective
+    expect(isPluralForm('sms')).toBe(false) // abbreviation
+    expect(isPluralForm('torus')).toBe(false) // Latin singular
   })
 })
 
