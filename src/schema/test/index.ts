@@ -35,6 +35,7 @@ export interface Entropy {
     | 'recorded-junk'
     | 'matrix-root-broken'
     | 'atom-unbound'
+    | 'society-unconvened'
     | 'uncrosslinked'
     | 'duplicate-text'
   /** where it lives (file / atom / the offending text) */
@@ -141,6 +142,43 @@ export const matrixBreaks = (): Entropy[] => {
   return out
 }
 
+// ── Convening law: the agent society must be live in every session ──
+const readText = (p: string): string => {
+  try {
+    return readFileSync(p, 'utf8')
+  } catch {
+    return ''
+  }
+}
+
+/**
+ * The agent society must be CONVENED, so agents chat in coordinated teams in
+ * EVERY session: the `chat` collection wires the broadcast hook (the cross-session
+ * payload-native bus — a new row dispatches into the shared runtime), AND the
+ * bootstrap registers the domain agents (the reactors). Without both the substrate
+ * is silently dead — a body before breath. Static over the recorded source, so it
+ * LOCKS the wiring: removing the hook or the agent registry breaks the gate.
+ */
+export const societyConvened = (root: string = process.cwd()): Entropy[] => {
+  const out: Entropy[] = []
+  if (!readText(join(root, 'src', 'chats', 'index.ts')).includes('chatBroadcastAfterChange')) {
+    out.push({
+      kind: 'society-unconvened',
+      where: 'src/chats/index.ts',
+      redirect: 'wire chatBroadcastAfterChange() into the chat collection afterChange — the cross-session agent bus (the breath)',
+    })
+  }
+  const registered = (readText(join(root, 'src', 'agent', 'bootstrap.ts')).match(/@\/agents\/registered\//g) ?? []).length
+  if (registered < 10) {
+    out.push({
+      kind: 'society-unconvened',
+      where: `src/agent/bootstrap.ts (${registered} domain agents registered)`,
+      redirect: 'register the domain agents at boot (side-effect imports) — the reactors that react to every chat row',
+    })
+  }
+  return out
+}
+
 // ── Cross-link law: an atom passes only if woven in all computable dimensions ──
 /**
  * An atom must be cross-linked in EVERY computable dimension: OUTgoing [[links]]
@@ -208,6 +246,7 @@ export const pullEntropy = (root: string = process.cwd()): Entropy[] => {
   const files = recordedFiles(root)
   return [
     ...matrixBreaks(),
+    ...societyConvened(root),
     ...uncrosslinkedAtoms(),
     ...foldersOutsideSrc(files),
     ...uncollidableInSrc(files),

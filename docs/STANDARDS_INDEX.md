@@ -531,6 +531,8 @@ src/billing/stripeWebhookHandlers.ts:20: * @standard PCI-DSS v4.0 §4 protect-ca
 src/billing/stripeWebhookHandlers.ts:21: * @standard PCI-DSS v4.0 §10 log-and-monitor-access-to-system-components
 src/billing/stripeWebhookHandlers.ts:429: * @standard ISO-4217:2015 currency-codes refund-amount
 src/billing/stripeWebhookHandlers.ts:430: * @standard ISO-8601-1:2019 date-time refunded-at
+src/billing/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/billing/test.ts:7: * @standard ISO-4217:2015 currency-codes
 src/biological/assets/index.ts:12: * @standard IFRS IAS-41 §10 recognition-criteria
 src/biological/assets/index.ts:13: * @standard IFRS IAS-41 §12 measurement-fair-value-less-costs-to-sell
 src/biological/assets/index.ts:14: * @standard IFRS IAS-41 §13 biological-transformation
@@ -676,6 +678,7 @@ src/collection/archive/index.tsx:4: * @standard schema.org ItemList
 src/collection/archive/index.tsx:5: * @standard schema.org CollectionPage
 src/collection/archive/index.tsx:6: * @standard W3C HTML5 section-element
 src/collections/index.test.ts:10: * @standard ISO/IEC-29119:2022 software-testing (one computed invariant, full coverage)
+src/collections/test.ts:10: * @standard ISO/IEC-29119:2022 software-testing (one computed invariant, full coverage)
 src/commerce/index.ts:21: * @standard Stripe API v2024-10-28-acacia
 src/commerce/index.ts:22: * @standard Cloudflare Workers API (deployments + durable-object namespaces)
 src/commerce/index.ts:23: * @standard W3C Verifiable Credentials Data Model 2.0 (subscription receipts)
@@ -734,6 +737,7 @@ src/config/regional-defaults/index.ts:35: * @standard ISO-4217:2015 currency-cod
 src/config/regional-defaults/index.ts:36: * @standard ISO-3166-1:2020 country-codes alpha-2
 src/config/regional-defaults/index.ts:37: * @standard BCP-47 language-tag locale-identifier
 src/config/regional-defaults/index.ts:58: * @standard ISO-4217:2015 §5 alphabetic-codes
+src/config/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing configuration-test
 src/config/types/index.ts:6: * @standard ISO-3166-1:2020 country-codes
 src/config/types/index.ts:7: * @standard ISO-4217:2015 currency-codes
 src/config/types/index.ts:8: * @standard ISO-17442-1:2020 lei
@@ -1851,6 +1855,9 @@ src/money/money.test.ts:5: * @standard ISO-4217:2015 currency-codes
 src/money/money.test.ts:6: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
 src/money/money.ts:15: * @standard ISO-4217:2015 §5 alphabetic-codes
 src/money/money.ts:4: * @standard ISO-4217:2015 currency-codes
+src/money/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/money/test.ts:5: * @standard ISO-4217:2015 currency-codes
+src/money/test.ts:6: * @standard IEEE-754-2019 binary-floating-point avoid-for-money
 src/multi/currency.service/index.ts:12: * @standard ISO-4217:2015 currency-codes
 src/multi/currency.service/index.ts:13: * @standard ISO-3166-1:2020 country-codes alpha-2 tenant-country
 src/multi/currency.service/index.ts:14: * @standard ISO-8601-1:2019 date-time rate-date
@@ -1926,10 +1933,12 @@ src/operators/index.ts:13: * @standard BG Наредба-Н-18 §СУПТО oper
 src/packitems/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/packitems/index.ts:28: * @standard ISA-95:2013 §B.5 production-operations dispatch line
 src/packitems/index.ts:29: * @standard UN/CEFACT Rec20 mass (gram) per-unit
+src/packitems/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/packs/index.test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/packs/index.ts:31: * @standard ISA-95:2013 §B.5 production-operations dispatch
 src/packs/index.ts:32: * @standard UN/CEFACT Rec20 weight (kilogram) · volume (cubic-metre)
 src/packs/index.ts:33: * @standard GS1 logistics SSCC carton-identity (the `number` / `barcode`)
+src/packs/test.ts:5: * @standard ISO/IEC-29119:2022 software-testing
 src/page/AnalyticsPage.tsx:13: * @standard ECMA-262 ECMAScript-2024 baseline
 src/page/range/index.tsx:6: * @standard ECMA-402 internationalization-api Intl.NumberFormat
 src/page/range/index.tsx:7: * @standard BCP-47 language-tag
@@ -2271,6 +2280,7 @@ src/scheduled/task/types.ts:4: * @standard rfc-5545 icalendar-cron
 src/schema/test/index.ts:17: * @standard ISO/IEC 25010:2023 quality-model (integrity, modularity)
 src/schema/test/index.ts:18: * @standard RFC 9562 §5.8 (uuidv8 content-uuid) — the collision unit
 src/scope/index.test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
+src/scope/test.ts:4: * @standard ISO/IEC-29119:2022 software-testing
 src/sdk/accounting-client/index.ts:8: * @standard ECMA-262 ECMAScript-2024 baseline
 src/sectors/index.ts:14: * @standard UN SNA-2008 institutional-sectors (S.11/S.12 corporations · S.13 government · S.14 households · S.15 NPISH)
 src/sectors/index.ts:15: * @standard UN ISIC Rev.4 international-standard-industrial-classification (economic activity)
@@ -2826,6 +2836,7 @@ src/workflow/index.ts:22: * @standard ISO/IEC 19510:2013 BPMN-2.0
 src/workorders/index.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/workorders/index.ts:64: * @standard ISA-95:2013 §B.5 production-operations-management work-order-execution
 src/workorders/index.ts:65: * @standard ISO-8601-1:2019 date-time started·completed·estimated
+src/workorders/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/workphases/index.ts:23: * @standard ISA-95:2013 / IEC-62264-1 §B.4 operations-definition process-segment
 src/workphases/index.ts:24: * @standard ISO-22400-2:2014 manufacturing-operations KPIs standard-time
 src/workshifts/index.test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
@@ -2833,6 +2844,7 @@ src/workshifts/index.ts:31: * @standard ISA-95:2013 / IEC-62264-1 §B.5 personne
 src/workshifts/index.ts:32: * @standard ISO-22400-2:2014 manufacturing-operations KPIs (labour efficiency / utilisation)
 src/workshifts/index.ts:33: * @standard ISO-8601-1:2019 date-time shift-start/finish/close
 src/workshifts/index.ts:34: * @standard ILO C001 hours-of-work presence-minutes
+src/workshifts/test.ts:6: * @standard ISO/IEC-29119:2022 software-testing
 src/xml/escape/index.ts:8: * @standard XML-1.0 §2.4 predefined-entities
 tests/e2e/admin-evidence.e2e.spec.ts:25: * @standard ISO/IEC-29119:2022 software-testing system-test-level
 tests/e2e/admin-evidence.e2e.spec.ts:26: * @standard ISO/IEC-29119-3:2021 test-documentation
@@ -3001,6 +3013,8 @@ src/billing/stripeWebhookHandlers.ts:15: * @rfc 9110 http-semantics webhook-rece
 src/billing/stripeWebhookHandlers.ts:16: * @rfc 8259 json payload-encoding
 src/billing/stripeWebhookHandlers.ts:17: * @rfc 2104 hmac signature-verification
 src/billing/stripeWebhookHandlers.ts:37: * @rfc 9110 http-semantics
+src/billing/test.ts:5: * @rfc 9110 http-semantics webhook-delivery
+src/billing/test.ts:6: * @rfc 8615 well-known-uri webhook-discovery
 src/blocks/archive/block/config.ts:6: * @rfc 5005 web-feed-paging-and-archiving
 src/blocks/archive/block/config.ts:7: * @rfc 3986 uniform-resource-identifier pagination-links
 src/blocks/call/to/action/config.ts:6: * @rfc 3986 uniform-resource-identifier
@@ -3331,6 +3345,7 @@ src/beyond/erasure.ts:30: * @compliance GDPR Art. 17 right-to-erasure (irrevocab
 src/billing/stripeWebhookHandlers.test.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data tokenized
 src/billing/stripeWebhookHandlers.ts:23: * @compliance SOC-2 CC7.2 system-monitoring-event-logging
 src/billing/stripeWebhookHandlers.ts:434: * @compliance SOX §404 internal-controls refund-control
+src/billing/test.ts:10: * @compliance PCI-DSS-4.0 §3.5 protect-stored-cardholder-data tokenized
 src/biological/assets/index.ts:22: * @compliance SOX §404 internal-controls TOM-AGRI-01
 src/blocks/banner/config.ts:6: * @compliance WCAG-2.1 §1.4.3 contrast-minimum
 src/blocks/banner/config.ts:7: * @compliance WCAG-2.1 §1.3.1 info-and-relationships
@@ -3970,6 +3985,8 @@ src/billing/stripeWebhookHandlers.test.ts:9: * @accounting US-GAAP ASC-606 reven
 src/billing/stripeWebhookHandlers.ts:22: * @accounting IFRS-15 revenue-from-contracts-with-customers
 src/billing/stripeWebhookHandlers.ts:431: * @accounting IFRS IFRS-15 §B22 customer-options-for-refund
 src/billing/stripeWebhookHandlers.ts:432: * @accounting US-GAAP ASC-606-10-25-13 contract-modification-with-refund
+src/billing/test.ts:8: * @accounting IFRS IFRS-15 revenue-from-contracts-with-customers
+src/billing/test.ts:9: * @accounting US-GAAP ASC-606 revenue-from-contracts-with-customers
 src/bookable/resources/bookings/index.ts:17: * @accounting IFRS IFRS-15 §35 over-time-recognition (multi-night stay)
 src/bookable/resources/bookings/index.ts:18: * @accounting IFRS IFRS-15 §38 point-in-time-recognition (single-use)
 src/bookable/resources/bookings/index.ts:19: * @accounting IFRS IFRS-15 §B20-B27 right-of-return cancellation-policy
@@ -4385,6 +4402,7 @@ src/money/index.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/money/money.test.ts:7: * @accounting IFRS IAS-21 foreign-currency-translation
 src/money/money.ts:5: * @accounting IFRS IAS-21 foreign-currency-translation
 src/money/money.ts:6: * @accounting US-GAAP ASC-830 foreign-currency-matters
+src/money/test.ts:7: * @accounting IFRS IAS-21 foreign-currency-translation
 src/multi/currency.service/index.ts:16: * @accounting IFRS IAS-21 effects-of-changes-in-foreign-exchange-rates functional-currency
 src/multi/currency.service/index.ts:17: * @accounting IFRS IAS-29 financial-reporting-in-hyperinflationary-economies
 src/multi/currency.service/index.ts:18: * @accounting US-GAAP ASC-830 foreign-currency-matters reporting-currency
@@ -4712,6 +4730,7 @@ src/base/accounting/field/index.ts:7: * @security ISO-27002 §5.15 access-contro
 src/billing/stripeWebhookHandlers.test.ts:11: * @security ISO-27001 A.5.17 authentication-information webhook-signing-secret
 src/billing/stripeWebhookHandlers.ts:24: * @security ISO-27001 A.5.14 information-transfer
 src/billing/stripeWebhookHandlers.ts:25: * @security ISO-27002 §8.16 monitoring-activities
+src/billing/test.ts:11: * @security ISO-27001 A.5.17 authentication-information webhook-signing-secret
 src/biological/assets/index.ts:23: * @security ISO 27001 A.5.23 cloud-service-tenant-isolation
 src/bookable/resources/bookings/index.ts:24: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/bookable/resources/index.ts:19: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5028,6 +5047,9 @@ src/scope/index.test.ts:7: * @security ISO-27002 §8.3 information-access-restri
 src/scope/index.ts:6: * @security ISO-27001 A.5.23 information-security-for-cloud-services tenant-isolation
 src/scope/index.ts:7: * @security ISO-27002 §5.15 access-control
 src/scope/index.ts:8: * @security ISO-27002 §8.3 information-access-restriction
+src/scope/test.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
+src/scope/test.ts:6: * @security ISO-27002 §5.15 access-control
+src/scope/test.ts:7: * @security ISO-27002 §8.3 information-access-restriction
 src/scope/types.ts:5: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
 src/scope/types.ts:6: * @security ISO-27002 §5.15 access-control
 src/sectors/index.ts:23: * @security ISO-27001 A.5.23 cloud-service-tenant-isolation
@@ -5321,12 +5343,14 @@ src/cloudflare/mediator-uuid-crypto.test.ts:21: * @audit Conservation Law 8 + La
 src/cloudflare/plugin-access.ts:43: * @audit Conservation Law 38 mcp-tool-standardization
 src/cloudflare/plugin-helper.ts:28: * @audit Conservation Law 38 mcp-tool-standardization
 src/collections/index.test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
+src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every registered collection node verified)
 src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
 src/config/appCollections/index.ts:8: * @audit ISO-19011:2018 audit-trail config-completeness
 src/config/appCollectionsRegistry.test.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 src/config/iso-4217-special/index.ts:63: * @audit Conservation Law 53 self-referential-closure (X-codes are
+src/config/test.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 src/connections/index.ts:27: * @audit ISO-19011:2018 audit-trail transparent-relationship-ledger
 src/consent/records/index.ts:13: * @audit ISO-19011:2018 audit-trail consent-evidence
 src/consistency/apply/consistency-loop.test.ts:20: * @audit ISO 19011:2018 §6.4.6 — synthetic drift + recovery audit-trailable

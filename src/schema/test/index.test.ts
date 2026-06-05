@@ -15,8 +15,17 @@
 import { describe, it, expect } from 'vitest'
 
 import { verifyRoot, tamperedAtoms } from '@/uuid/matrix'
-import { matrixBreaks, snapshot } from '@/schema/test'
+import { matrixBreaks, societyConvened, snapshot } from '@/schema/test'
 import { SCHEMA_TEST_SEED } from '@/schema/test/seed'
+
+describe('the agent society is convened — agents chat in coordinated teams, every session', () => {
+  it('the chat collection wires the broadcast hook + the bootstrap registers the agents', () => {
+    // LOCKS the coordination substrate: remove the cross-session bus hook or the
+    // domain-agent registry and this breaks. The behaviour itself is proven by
+    // src/agent/sync/*.test.ts + src/agent/team.test.ts (46 tests).
+    expect(societyConvened()).toEqual([])
+  })
+})
 
 describe('the matrix is unbreakable', () => {
   it('verifyRoot folds every bind to the one UUID_MATRIX_ROOT', () => {
