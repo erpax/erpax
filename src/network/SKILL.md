@@ -20,6 +20,6 @@ In a plain [[market]], [[desire]] is exogenous — fixed before you arrive. Unde
 - **Chen, Andrew (2021)** — *The Cold Start Problem.* Anti-network effects, the Allee threshold / critical mass, the atomic network, the engagement effect.
 - **Metcalfe / Reed** — network value scaling with users (roughly proportional to `n²`, or `2ⁿ` for group-forming networks); the formal root of the compounding above, with the standard caution that realized value saturates well below the `n²` bound.
 
-Composes [[market]] · [[diffusion]] · [[desire]] · [[habit]] · [[engagement]] · [[bottleneck]] · [[competition]] · [[cohort]] · [[merge]] · [[breath]].
+Composes [[market]] · [[diffusion]] · [[desire]] · [[habit]] · [[engagement]] · [[bottleneck]] · [[competition]] · [[cohort]] · [[merge]] · [[breath]] · [[decentralization]] · [[ecosystem]].
 
 **Law — [[network]] is gravitational [[power]]:** the density of [[connections]] IS the engine. Below the Allee threshold, in-degree (adoption, adoption-pull) stays low and the network collapses; above it, each new node raises the in-degree of all others, turning adoption into gravitational [[mass]]. This mirrors how [[links]] in the corpus create pull — the hub (high in-degree) becomes the attractor. The atomic cell wins because it reaches critical density first: in that cell, every adopter connects to every other, maximizing in-degree per user. Seed density, not breadth.

@@ -14,4 +14,4 @@ As a **[[capacity]] reservoir**, soil holds nutrients ([[fertility]]) and water 
 - Cornell Comprehensive Assessment of Soil Health (CASH) — physical/biological/chemical indicators
 - USDA soil texture triangle (particle-size separates); USDA Soil Taxonomy (horizons)
 
-Composes [[agriculture]] · [[fertility]] · [[moisture]] · [[capacity]] · [[balance]] · [[biological/assets]] · [[crop]] · [[covercrop]] · [[compost]] · [[tillage]] · [[mycorrhizae]] · [[salinity]].
+Composes [[agriculture]] · [[fertility]] · [[moisture]] · [[capacity]] · [[balance]] · [[biological/assets]] · [[crop]] · [[covercrop]] · [[compost]] · [[tillage]] · [[mycorrhizae]] · [[salinity]] · [[conservation]] · [[sustainability]] · [[ecosystem]].

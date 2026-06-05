@@ -543,6 +543,8 @@ src/biological/assets/index.ts:17: * @standard IFRS IAS-41 §40 disclosure-by-cl
 src/biological/assets/index.ts:18: * @standard IFRS IFRS-13 fair-value-input-hierarchy
 src/biological/assets/index.ts:19: * @standard ISO-4217:2015 currency-codes
 src/biological/assets/index.ts:20: * @standard ISO-8601-1:2019 date-time
+src/biomass/index.ts:13: * @standard IFRS IAS-41 — biological assets: fair-value-less-costs-to-sell; transformation-vs-price split
+src/biomass/index.ts:14: * @standard FAO — forest growth-and-yield / mean annual increment (MAI)
 src/blocks/archive/block/config.ts:4: * @standard schema.org ItemList
 src/blocks/archive/block/config.ts:5: * @standard schema.org CollectionPage
 src/blocks/banner/config.ts:4: * @standard W3C HTML5 aside-element
@@ -703,6 +705,9 @@ src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:4: * 
 src/compliance/frameworks/compliance/requirements/index.ts:4: * @standard ISO-37301:2021 obligation-register
 src/compliance/frameworks/index.ts:4: * @standard ISO-37301:2021 compliance-management-systems
 src/compliance/frameworks/index.ts:5: * @standard COSO-2013 internal-control-integrated-framework
+src/compost/index.ts:14: * @standard US Composting Council — compost maturity/stability (C:N criteria)
+src/compost/index.ts:15: * @standard SARE, Building Soils for Better Crops — organic-matter management
+src/compost/index.ts:16: * @standard USDA NOP 7 CFR §205.203 — compost and raw-manure rules
 src/config/address-formats/index.ts:23: * @standard ISO-19160-4:2017 addressing components-and-conceptual-model
 src/config/address-formats/index.ts:24: * @standard UPU-S42 international-postal-addressing
 src/config/address-formats/index.ts:25: * @standard ISO-3166-1:2020 country-codes alpha-2
@@ -996,6 +1001,9 @@ src/edifact/export.service/index.ts:17: * @standard ISO-9735:2002 edifact-syntax
 src/element/index.ts:7: * @standard IUPAC periodic table — periods, groups, main-group valence
 src/element/index.ts:8: * @standard Lewis octet rule (duet for period 1) — stability = a full outer shell
 src/email/tenantAwareResendEmailAdapter/index.ts:24: * @standard BCP-47 language-tag email-locale
+src/emission/index.ts:16: * @standard IPCC AR5 (2014) — 100-yr Global Warming Potentials (Table 8.A.1)
+src/emission/index.ts:17: * @standard GHG Protocol Corporate Standard (Scope 1 / 2 / 3)
+src/emission/index.ts:18: * @standard ISO 14064 — Greenhouse gas quantification and reporting
 src/emit/domain/event/index.ts:15: * @standard ISO-8601-1:2019 date-time event-timestamp
 src/employees/expense/reports/index.ts:10: * @standard ISO-4217:2015 currency-codes
 src/employees/expense/reports/index.ts:9: * @standard ISO-8601-1:2019 date-time
@@ -5334,6 +5342,7 @@ src/bank/reconciliation.service/index.ts:650:   * @audit ISO-19011:2018 audit-tr
 src/bank/statement/import.service/index.ts:12: * @audit ISO-19011:2018 audit-trail
 src/billing/stripeWebhookHandlers.ts:433: * @audit ISO-19011:2018 audit-trail refund-cash-leg
 src/biological/assets/index.ts:21: * @audit ISO 19011:2018 §6.4.6 audit-evidence-biological-assets
+src/biomass/index.ts:15: * @audit computed, never hand-asserted
 src/bookable/resources/bookings/index.ts:21: * @audit ISO-19011:2018 audit-trail booking-lifecycle
 src/bookable/resources/index.ts:17: * @audit ISO-19011:2018 audit-trail resource-master-changes
 src/budget/plannings/index.ts:32: * @audit ISO-19011:2018 audit-trail
@@ -5386,6 +5395,7 @@ src/collections/test.ts:11: * @audit ISO-19011:2018 §6.4 audit-evidence (every 
 src/commitments/and/contingencies/index.ts:22: * @audit ISO-19011:2018 audit-trail off-balance-sheet
 src/commitments/index.ts:31: * @audit ISO-19011:2018 audit-trail authorization-evidence
 src/compliance/frameworks/compliance/requirements/compliance/gaps/index.ts:5: * @audit ISO-19011:2018 nonconformity
+src/compost/index.ts:17: * @audit computed, never hand-asserted
 src/config/appCollections/index.ts:8: * @audit ISO-19011:2018 audit-trail config-completeness
 src/config/appCollectionsRegistry.test.ts:6: * @audit ISO-19011:2018 audit-trail config-completeness
 src/config/iso-4217-special/index.ts:63: * @audit Conservation Law 53 self-referential-closure (X-codes are
@@ -5465,6 +5475,7 @@ src/ecommerce/stripe/tenantStripeWebhook.ts:13: * @audit ISO-19011:2018 audit-tr
 src/ecosystem/index.ts:17: * @audit computed, never hand-asserted
 src/edifact/export.service/index.test.ts:10: * @audit ISO-19011:2018 audit-trail
 src/edifact/export.service/index.ts:18: * @audit ISO-19011:2018 audit-trail
+src/emission/index.ts:19: * @audit computed, never hand-asserted
 src/emit/domain/event/index.ts:16: * @audit ISO-19011:2018 audit-trail event-log
 src/employees/expense/reports/index.ts:15: * @audit ISO-19011:2018 audit-trail expense-evidence
 src/employees/index.ts:19: * @audit ISO-19011:2018 audit-trail employee-master

@@ -13,4 +13,17 @@ Compost is the literal **entropy → [[soil]] recycling** node: spent residue (t
 - SARE *Building Soils for Better Crops* (organic-matter management); USDA NOP 7 CFR §205.203 (compost & raw-manure rules)
 - US Composting Council — compost maturity/quality (the C:N and stability criteria)
 
-Composes [[agriculture]] · [[soil]] · [[fertility]] · [[balance]] · [[capacity]] · [[harvest]] · [[breath]] · [[covercrop]].
+Composes [[agriculture]] · [[soil]] · [[fertility]] · [[balance]] · [[capacity]] · [[harvest]] · [[breath]] · [[covercrop]] · [[conservation]] · [[sustainability]] · [[ecosystem]] · [[emission]].
+
+## Matter-twin
+
+Implemented in `index.ts` and verified in `test.ts`. Exported surface:
+
+- `CN_IDEAL` — empirical feedstock C:N sweet-spot constant (~30)
+- `CN_MATURE` — finished/stable compost C:N ceiling constant (~20)
+- `cnRatio(carbon, nitrogen)` — C/N mass ratio
+- `isMature(cn)` — true when cn ≤ `CN_MATURE`
+- `humificationRatio(initialC, humifiedC)` — humified fraction of initial carbon ∈ [0,1]
+- `respiredCarbon(initialC, humifiedC)` — carbon lost as CO₂ (= initialC − humifiedC)
+- `Decompose` — type `{ residue, toSoil, respired }`
+- `loopBalances(d, tol?)` — proves the partial closed loop by delegating to `conservation.boundaryConserves`; residue in = toSoil + respired out
