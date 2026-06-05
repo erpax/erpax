@@ -141,6 +141,23 @@ for (const f of files) {
   }
 }
 
+// ── 2b. SYMMETRIC entangle binding (the wiring law: NO gap in entanglement in ANY direction).
+// For every forward edge f→t add the reverse t→f if absent — merge() is order-independent, so the
+// binding-uuid is identical both ways. This reciprocates the graph (directed-link entropy → 0) and
+// dissolves orphans: any atom with an outbound link gains the reverse inbound. The Merkle root folds
+// over NODES, so reciprocation does not move the matrix root — it only completes the entanglement.
+{
+  const ekey = (f, t) => f + ':' + t
+  const have = new Set(edges.map((e) => ekey(e.f, e.t)))
+  const forward = [...edges]
+  for (const e of forward) {
+    if (!have.has(ekey(e.t, e.f))) {
+      have.add(ekey(e.t, e.f))
+      edges.push({ f: e.t, t: e.f, binding: e.binding, dir: compose(nodes[e.t].horo, nodes[e.f].horo) })
+    }
+  }
+}
+
 // ── 3. root (Merkle fold over the content⊕path BIND — the [[coordinate]] root) ──
 let layer = nodes.map((n) => n.bind ?? n.uuid).sort()
 while (layer.length > 1) {
