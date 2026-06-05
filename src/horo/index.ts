@@ -40,7 +40,8 @@ export function isHoroStep(n: unknown): n is HoroStep {
   return typeof n === 'number' && HORO_DIGIT_SET.has(n)
 }
 
-function digitalRoot(n: number): number {
+/** Digital root (base-10) of an integer → 1..9 (0 only for 0): repeated digit-sum = reduction mod 9. The canonical integer digital root; the uuid form is `@/digit`. */
+export function digitalRoot(n: number): number {
   let dr = Math.abs(Math.trunc(n))
   while (dr >= 10) dr = String(dr).split('').reduce((s, c) => s + Number(c), 0)
   return dr
