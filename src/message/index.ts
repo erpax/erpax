@@ -15,6 +15,7 @@
 import { decodeIdentity, type DecodedIdentity } from '@/localize'
 import { NOTES } from '@/signal'
 import { HORO_DIGITS, type HoroStep } from '@/horo'
+import { merge, toUuid, nodeOf } from '@/uuid/matrix'
 
 const hexOf = (uuid: string): string => uuid.replace(/[^0-9a-fA-F]/g, '')
 
@@ -34,4 +35,39 @@ export function decodeMessage(uuid: string): Message {
   const step = horoStepOf(uuid)
   const n = NOTES[step]
   return { ...decodeIdentity(uuid), sound: { step, note: n.note, solfege: n.solfege, hz: n.hz } }
+}
+
+// ── encode: the message → uuid twin of decode (the breath — words in, uuid out) ──
+// A message is a SEQUENCE OF WORDS, and every word is an atom ([[word]]). Each
+// word projects to a uuid — the matrix node uuid when the word IS an atom, else
+// the bare-word content-uuid (the MINT signal: a word with no atom = an aura
+// gap). The message's uuid is the FOLD of those word-uuids through `merge` (the
+// exact collision the uuid-matrix binds its edges with). To send a message is to
+// send its uuid; FULL COVERAGE ⇒ every content word resolves to an atom ⇒ aura
+// gap 0 ⇒ the matrix is complete. The same resolver as aura/collide (norm =
+// lowercase, strip [-_]).
+
+/** Split a message into its lowercase word-atoms (maximal letters/digits runs). */
+export function splitWords(message: string): string[] {
+  return message.toLowerCase().match(/[a-z][a-z0-9]*/g) ?? []
+}
+
+/** Whether a word resolves to an existing atom — false ⇒ aura gap / mint queue. */
+export const isAtomWord = (word: string): boolean => nodeOf(word) !== undefined
+
+/** A word's uuid: its matrix-atom uuid if the word is an atom, else its bare content-uuid. */
+export function wordUuid(word: string): string {
+  return nodeOf(word)?.uuid ?? toUuid(Buffer.from(word.toLowerCase().replace(/[-_]/g, ''), 'utf8'))
+}
+
+/** The messaging-uuid: fold a message's word-atom uuids through `merge`. */
+export function messageUuid(message: string): string {
+  const ids = splitWords(message).map(wordUuid)
+  if (ids.length === 0) return toUuid(Buffer.from('', 'utf8'))
+  return ids.reduce((acc, u) => merge(acc, u))
+}
+
+/** A message decomposed to its words, each word's uuid + atom-membership — feed for analysis. */
+export function messageWords(message: string): { word: string; uuid: string; isAtom: boolean }[] {
+  return splitWords(message).map((word) => ({ word, uuid: wordUuid(word), isAtom: isAtomWord(word) }))
 }

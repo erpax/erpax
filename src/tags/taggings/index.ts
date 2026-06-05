@@ -40,6 +40,7 @@ import type { CollectionConfig } from 'payload'
 import { standardCollectionHooks } from '@/standard/collection/hook'
 import { accountingCollectionAccess } from '@/auth'
 import { auditFields } from '@/base/accounting/field'
+import { taggingCounterAfterChange, taggingCounterAfterDelete } from '@/tags/taggings/counter'
 
 const Taggings: CollectionConfig = {
   slug: 'taggings',
@@ -83,7 +84,12 @@ const Taggings: CollectionConfig = {
     },
     ...auditFields(),
   ],
-  hooks: standardCollectionHooks('taggings'),
+  hooks: {
+    // The counter cache rides the spine: a create bumps the tag's taggingsCount
+    // (afterChange), a delete drops it (afterDelete) — the gem's counter_cache.
+    ...standardCollectionHooks('taggings', { afterChange: [taggingCounterAfterChange] }),
+    afterDelete: [taggingCounterAfterDelete],
+  },
   timestamps: true,
 }
 

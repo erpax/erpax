@@ -22,7 +22,6 @@
 
 import type { Payload, RequiredDataFromCollectionSlug } from 'payload';
 import { getPayload } from 'payload';
-import config from '@payload-config';
 
 export interface JournalEntryLine {
   id?: string;
@@ -142,6 +141,10 @@ const fromDoc = (d: EntryDoc): JournalEntry => ({
 
 class JournalEntryService {
   private async db(): Promise<Payload> {
+    // Lazy import to break the load-time cycle (payload.config → collections
+    // barrel → journal/entries → entry.service → @payload-config). The config
+    // is only needed at runtime; getPayload caches, so this stays a no-op cost.
+    const { default: config } = await import('@payload-config');
     return getPayload({ config });
   }
 

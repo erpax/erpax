@@ -146,6 +146,7 @@ export async function runAllInvariants(
     results.push(C.checkSoDSymmetric(ctx))
     results.push(C.checkInvoicePaymentCanonicalAccess(ctx))
     results.push(C.checkCollectionsAreUniformlyDRY(ctx))
+    results.push(C.checkTextFieldsAreStronglyTyped(ctx)) // a number/date/email/bool stored as text is entropy — static break
   }
 
   // ─── Slice DDDDD — agent / spec / i18n / event-graph conservation laws ───

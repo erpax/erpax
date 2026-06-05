@@ -885,6 +885,74 @@ export function checkCollectionsAreUniformlyDRY(ctx: InvariantContext): Invarian
     : warn('entropy', 'collections-uniformly-dry', `${offenders.length} DRY drift(s) across ${files.length} collection source(s) (dissolution-in-progress)`, offenders.slice(0, 20))
 }
 
+/**
+ * Strict typing — a `type: 'text'` field whose NAME denotes a number, date,
+ * email, or boolean is MISTYPED. Text is the lazy default that loses the value's
+ * structure: a money amount stored as a string is local entropy and is not
+ * content-addressable as a number. This computed static check derives the live
+ * collection set from the filesystem and BREAKS on any text field whose name
+ * unambiguously implies a stronger type — driving the schema to zero
+ * typing-entropy by construction (and staying there: a future mistype fails CI).
+ *
+ * High precision by design — only suffix/whole-word denotations fire, so
+ * `account` (not a count), `accountNumber` (a code), `emailTemplate`,
+ * `amountWords`, `format` never trip it. An intentional exception opts out with
+ * a `// text-ok` comment on the field's `type:` line.
+ *
+ * Companion remedy: a name that is really a LABEL / category / keyword-list is
+ * not retyped but REPLACED by computed taggings (`tagListField` — see the `tags`
+ * skill); this check owns the scalar half.
+ *
+ * @standard ISO/IEC 25012:2008 §4 data-quality accuracy-and-consistency
+ * @audit ISO 19011:2018 §6.4 audit-evidence
+ */
+const TEXT_FIELD_MANAGED = /^(createdAt|updatedAt|deletedAt|publishedAt|_status)$/
+const TEXT_FIELD_RULES: ReadonlyArray<{ want: string; re: RegExp }> = [
+  { want: 'email', re: /email$/i },
+  { want: 'date', re: /(?:^date$)|(?:[a-z]Date$)|(?:[a-z]At$)/ },
+  { want: 'checkbox', re: /^(?:is|has|can|should)[A-Z]/ },
+  {
+    want: 'number',
+    re: /(?:^(?:amount|total|subtotal|quantity|qty|price|cost|balance|fee|percentage|percent|count)$)|(?:[a-z](?:Amount|Total|Subtotal|Quantity|Qty|Price|Cost|Balance|Fee|Percentage|Percent|Count)$)/,
+  },
+]
+
+/** The stronger type a text field's NAME implies, or null when `text` is fine. */
+export function strongerTypeForTextField(name: string): string | null {
+  if (TEXT_FIELD_MANAGED.test(name)) return null
+  for (const { want, re } of TEXT_FIELD_RULES) if (re.test(name)) return want
+  return null
+}
+
+/** Scan one collection source for `type: 'text'` fields whose name implies a stronger type. */
+export function detectMistypedTextFields(source: string): Array<{ name: string; want: string }> {
+  const out: Array<{ name: string; want: string }> = []
+  for (const m of source.matchAll(/name:\s*'([a-zA-Z][\w]*)',\s*\r?\n?[ \t]*type:\s*'text'([^\n]*)/g)) {
+    const name = m[1]
+    const restOfLine = m[2] ?? ''
+    if (/text-ok/.test(restOfLine)) continue // explicit opt-out
+    const want = strongerTypeForTextField(name)
+    if (want) out.push({ name, want })
+  }
+  return out
+}
+
+export function checkTextFieldsAreStronglyTyped(ctx: InvariantContext): InvariantResult {
+  const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
+  const files = listCollectionFiles(repoRoot)
+  if (files.length === 0) return warn('entropy', 'text-fields-strongly-typed', 'no collection sources discovered')
+  const offenders: string[] = []
+  for (const f of files) {
+    const slug = basename(dirname(f))
+    for (const { name, want } of detectMistypedTextFields(readSafe(f))) {
+      offenders.push(`${slug}/index.ts :: '${name}' is type:'text' — should be '${want}' (or // text-ok)`)
+    }
+  }
+  return offenders.length === 0
+    ? pass('entropy', 'text-fields-strongly-typed', `${files.length} collection source(s): every text field is honestly text`)
+    : fail('entropy', 'text-fields-strongly-typed', `${offenders.length} mistyped text field(s) — a number/date/email/bool stored as text is entropy`, offenders.slice(0, 20))
+}
+
 /* ─── Slice BBBBB-prep — IFRS 100% coverage invariant ─────────────────── */
 
 /**
@@ -911,15 +979,12 @@ const ACTIVE_IFRS_STANDARDS: ReadonlyArray<string> = [
 
 export function checkIfrsCoverage100Percent(ctx: InvariantContext): InvariantResult {
   const repoRoot = ctx.repoRoot ?? REPO_ROOT_FALLBACK()
-  const targets = [
-    'src/plugins/accounting/collections',
-    'src/collections',
-    'src/services',
-    'src/standards',
-    'src/access',
-    'src/hooks',
-    'src/jobs',
-  ]
+  // Scan the WHOLE dissolved tree. The old narrow targets (src/collections,
+  // src/services, src/plugins/accounting/collections …) predate the dissolution,
+  // which moved every collection to its own single-word folder (src/invoices,
+  // src/items …) — so the citations (IFRS 15 ×128, IFRS 16 ×95 …) live OUTSIDE
+  // those stale paths and the check false-reported them uncited.
+  const targets = ['src']
   const cited = new Set<string>()
 
   function walk(dir: string): void {

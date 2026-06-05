@@ -61,6 +61,7 @@ function matchField(expr: string, value: number, lo: number, hi: number): boolea
   for (const part of expr.split(',')) {
     const [base, stepStr] = part.split('/')
     const step = stepStr ? parseInt(stepStr, 10) : 1
+    if (!Number.isFinite(step) || step <= 0) continue // malformed cron step (e.g. */0) — never `% 0`
     let from = lo, to = hi
     if (base !== '*') {
       const range = base.split('-')
