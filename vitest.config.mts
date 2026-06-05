@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig, configDefaults } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 
 /**
@@ -32,6 +32,12 @@ export default defineConfig({
       'src/**/*.test.ts',
       'src/**/*.test.tsx',
     ],
+    // The `src/skills` self-symlink (the .claude→src merge: src/skills → .) aliases
+    // the WHOLE tree, so every test is discovered twice — once via src/skills/… —
+    // and the duplicate payload-integration run collides on the shared D1 store
+    // (e.g. "books a balanced JE" finds the prior run's JE → fails). Exclude the
+    // alias so each test runs exactly once. Keep vitest's own defaults.
+    exclude: [...configDefaults.exclude, 'src/skills/**'],
     // Disable globals to enforce explicit imports (stricter, clearer tests)
     globals: false,
     // Run single-threaded to prevent D1/SQLite lock contention
@@ -40,6 +46,11 @@ export default defineConfig({
     isolate: true,
     // Force exit if teardown takes too long (prevents hanging)
     teardownTimeout: 10_000,
+    // Payload-integration tests boot a real Payload + D1 store per file (~35s cold);
+    // the 5s/10s defaults time out before boot completes. Raise both so a genuine
+    // integration test has room to run (a real hang still fails, just later).
+    testTimeout: 60_000,
+    hookTimeout: 60_000,
     // Fail tests that retry too many times (strict mode)
     maxConcurrency: 1,
     // Clear mocks between tests
